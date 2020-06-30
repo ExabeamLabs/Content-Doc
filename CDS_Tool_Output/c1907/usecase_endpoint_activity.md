@@ -1,0 +1,385 @@
+Use Case: Endpoint Activity
+===========================
+
+### Supported Data Sources
+
+_The following list of Supported Exabeam Data Sources power this use case:_
+
+* [AD Audit](datasource_ad_audit_ad_audit.md)
+* [APC](datasource_apc_apc.md)
+* [AWS](datasource_aws_cloudtrail_aws.md)
+* [AWS GuardDuty](datasource_aws_guardduty_aws_guardduty.md)
+* [Absolute SIEM Connector](datasource_absolute_siem_connector_absolute_siem_connector.md)
+* [Accelion Kiteworks](datasource_accelion_kiteworks_accelion_kiteworks.md)
+* [Airlock](datasource_airlock_airlock.md)
+* [Akamai](datasource_akamai_siem_akamai.md)
+* [Alert Logic](datasource_alert_logic_alert_logic.md)
+* [Palo Alto Networks Aperture](datasource_aperture_palo_alto_networks_aperture.md)
+* [AppSense Application Manager](datasource_appsense_application_manager_appsense_application_manager.md)
+* [Armis](datasource_armis_armis.md)
+* [AssetView](datasource_assetview_assetview.md)
+* [Attivo](datasource_attivo_attivo.md)
+* [Avecto Defendpoint Service](datasource_avecto_defendpoint_service_avecto_defendpoint_service.md)
+* [Avecto Defendpoint](datasource_avecto_defendpoint_avecto_defendpoint.md)
+* [BeyondTrust PasswordSafe](datasource_beyondtrust_passwordsafe_beyondtrust_passwordsafe.md)
+* [BeyondTrust PowerBroker](datasource_beyondtrust_powerbroker_beyondtrust_powerbroker.md)
+* [BitDefender](datasource_bitdefender_gravityzone_bitdefender.md)
+* [BitGlass](datasource_bitglass_bitglass.md)
+* [Symantec Blue Coat Content Analysis System](datasource_blue_coat_content_analysis_system_symantec_blue_coat_content_analysis_system.md)
+* [Box](datasource_box_box.md)
+* [Bro](datasource_bro_bro.md)
+* [Bromium Advanced Endpoint Security](datasource_bromium_advanced_endpoint_security_bromium_advanced_endpoint_security.md)
+* [Bromium Secure Platform](datasource_bromium_secure_platform_bromium_secure_platform.md)
+* [BusinessObject](datasource_businessobject_businessobject.md)
+* [CA Privileged Access Manager Server Control](datasource_ca_privileged_access_manager_server_control_ca_privileged_access_manager_server_control.md)
+* [Carbon Black](datasource_carbon_black_carbon_black.md)
+* [CatoNetworks](datasource_catonetworks_catonetworks.md)
+* [Carbon Black Defense](datasource_cb_defense_carbon_black_defense.md)
+* [Carbon Black Protection](datasource_cb_protection_carbon_black_protection.md)
+* [Centrify Infrastructure Services](datasource_centrify_infrastructure_services_centrify_infrastructure_services.md)
+* [Centrify](datasource_centrify_centrify.md)
+* [CenturyLink Adaptive Threat Intelligence](datasource_centurylink_adaptive_threat_intelligence_centurylink_adaptive_threat_intelligence.md)
+* [Check Point Endpoint Security](datasource_check_point_endpoint_security_check_point_endpoint_security.md)
+* [Check Point NGFW](datasource_check_point_ngfw_check_point_ngfw.md)
+* [Check Point Threat Prevention](datasource_check_point_threat_prevention_check_point_threat_prevention.md)
+* [Cimtrak](datasource_cimtrak_cimtrak.md)
+* [Cisco AMP for Endpoints](datasource_cisco_amp_for_endpoints_cisco_amp_for_endpoints.md)
+* [Cisco Adaptive Security Appliance](datasource_cisco_adaptive_security_appliance_cisco_adaptive_security_appliance.md)
+* [Cisco Advance Malware Protection (AMP)](datasource_cisco_advance_malware_protection_(amp)_cisco_advance_malware_protection_(amp).md)
+* [Cisco AnyConnect](datasource_cisco_anyconnect_cisco_anyconnect.md)
+* [Cisco CloudLock](datasource_cisco_cloudlock_cisco_cloudlock.md)
+* [Cisco Firepower](datasource_cisco_firepower_cisco_firepower.md)
+* [Cisco Meraki MX appliances](datasource_cisco_meraki_mx_appliances_cisco_meraki_mx_appliances.md)
+* [Cisco NPE](datasource_cisco_npe_cisco_npe.md)
+* [Cisco TACACS](datasource_cisco_tacacs_cisco_tacacs.md)
+* [Citrix](datasource_citrix_endpoint_management_citrix.md)
+* [Citrix Netscaler](datasource_citrix_netscaler_citrix_netscaler.md)
+* [Citrix XenDesktop](datasource_citrix_xendesktop_citrix_xendesktop.md)
+* [Code Green Network (Digital Guardian) TrueDLP](datasource_code_green_network_(digital_guardian)_truedlp_code_green_network_(digital_guardian)_truedlp.md)
+* [Code42](datasource_code42_code42.md)
+* [Contrast Security](datasource_contrast_security_contrast_security.md)
+* [Imperva CounterBreach](datasource_counterbreach_imperva_counterbreach.md)
+* [CrowdStrike Falcon](datasource_crowdstrike_falcon_crowdstrike_falcon.md)
+* [CyberArk Privileged Session Manager](datasource_cyberark_privileged_session_manager_cyberark_privileged_session_manager.md)
+* [CyberArk Privileged Threat Analytics](datasource_cyberark_privileged_threat_analytics_cyberark_privileged_threat_analytics.md)
+* [CyberArk Vault](datasource_cyberark_vault_cyberark_vault.md)
+* [Cybereason](datasource_cybereason_cybereason.md)
+* [Cylance PROTECT](datasource_cylance_protect_cylance_protect.md)
+* [Microsoft Windows](datasource_dc_microsoft_windows.md)
+* [Damballa Failsafe](datasource_damballa_failsafe_damballa_failsafe.md)
+* [Darktrace](datasource_darktrace_darktrace.md)
+* [DatalakePortal](datasource_datalakeportal_datalakeportal.md)
+* [Dell EMC](datasource_dell_emc_dell_emc.md)
+* [Dell Quest TPAM](datasource_dell_quest_tpam_dell_quest_tpam.md)
+* [Digital Guardian Endpoint Protection](datasource_digital_guardian_endpoint_protection_digital_guardian_endpoint_protection.md)
+* [Digital Guardian Network DLP](datasource_digital_guardian_network_dlp_digital_guardian_network_dlp.md)
+* [Dropbox](datasource_dropbox_dropbox.md)
+* [Dtex](datasource_dtex_dtex.md)
+* [ESET Endpoint Security](datasource_eset_endpoint_security_eset_endpoint_security.md)
+* [Egnyte](datasource_egnyte_egnyte.md)
+* [EnSilo](datasource_ensilo_ensilo.md)
+* [EndPoint](datasource_endpoint_endpoint.md)
+* [Lieberman](datasource_enterprise_random_password_manager_lieberman.md)
+* [Exabeam DL](datasource_exabeam_dl_exabeam_dl.md)
+* [ExtraHop](datasource_extrahop_extrahop.md)
+* [F-Secure Client Security](datasource_f-secure_client_security_f-secure_client_security.md)
+* [F5 Application Security Manager](datasource_f5_application_security_manager_f5_application_security_manager.md)
+* [F5](datasource_f5_silverline_f5.md)
+* [FTP](datasource_ftp_ftp.md)
+* [Fidelis](datasource_fidelis_fidelis.md)
+* [FileAuditor](datasource_fileauditor_fileauditor.md)
+* [FireEye Endpoint Security (HX)](datasource_fireeye_endpoint_security_(hx)_fireeye_endpoint_security_(hx).md)
+* [FireEye Endpoint Security (Helix)](datasource_fireeye_endpoint_security_(helix)_fireeye_endpoint_security_(helix).md)
+* [FireEye Network Security (NX)](datasource_fireeye_network_security_(nx)_fireeye_network_security_(nx).md)
+* [Forcepoint CASB](datasource_forcepoint_casb_forcepoint_casb.md)
+* [Forcepoint DLP](datasource_forcepoint_dlp_forcepoint_dlp.md)
+* [Forcepoint](datasource_forcepoint_insider_threat_forcepoint.md)
+* [Forescout CounterACT](datasource_forescout_counteract_forescout_counteract.md)
+* [Fortinet UTM](datasource_fortinet_utm_fortinet_utm.md)
+* [GTBInspector](datasource_gtbinspector_gtbinspector.md)
+* [Palo Alto Networks GlobalProtect](datasource_globalprotect_portal_palo_alto_networks_globalprotect.md)
+* [Google](datasource_google_drive_google.md)
+* [Gravityzone](datasource_gravityzone_gravityzone.md)
+* [HP Comware](datasource_hp_comware_hp_comware.md)
+* [Unified Security Gateway](datasource_huawei_unified_security_gateway.md)
+* [IBM DB2](datasource_ibm_db2_ibm_db2.md)
+* [IBM Endpoint Manager](datasource_ibm_endpoint_manager_ibm_endpoint_manager.md)
+* [IBM Infosphere Guardium](datasource_ibm_infosphere_guardium_ibm_infosphere_guardium.md)
+* [IBM Proventia Network IPS](datasource_ibm_proventia_network_ips_ibm_proventia_network_ips.md)
+* [IBM QRadar Network Security](datasource_ibm_qradar_network_security_ibm_qradar_network_security.md)
+* [IBM Sense](datasource_ibm_sense_ibm_sense.md)
+* [IMSS](datasource_imss_imss.md)
+* [IPswitch MoveIt](datasource_ipswitch_moveit_ipswitch_moveit.md)
+* [Imperva File Activity Monitoring (FAM)](datasource_imperva_file_activity_monitoring_(fam)_imperva_file_activity_monitoring_(fam).md)
+* [InfoWatch](datasource_infowatch_infowatch.md)
+* [Infoblox](datasource_infoblox_infoblox.md)
+* [Juniper Networks ATP](datasource_juniper_networks_atp_juniper_networks_atp.md)
+* [Kaspersky AV](datasource_kaspersky_av_kaspersky_av.md)
+* [KiteWorks](datasource_kiteworks_kiteworks.md)
+* [LOGBinder](datasource_logbinder_logbinder.md)
+* [LanScope Cat](datasource_lanscope_cat_lanscope_cat.md)
+* [LanScope](datasource_lanscope_lanscope.md)
+* [Lastline](datasource_lastline_lastline.md)
+* [Logrhythm](datasource_logrhythm_logrhythm.md)
+* [Lumension](datasource_lumension_lumension.md)
+* [McAfee MDAM](datasource_mdam_mcafee_mdam.md)
+* [Malwarebytes Endpoint Protection](datasource_malwarebytes_endpoint_protection_malwarebytes_endpoint_protection.md)
+* [Malwarebytes Incident Response](datasource_malwarebytes_incident_response_malwarebytes_incident_response.md)
+* [MasterSAM PAM](datasource_mastersam_pam_mastersam_pam.md)
+* [McAfee Advanced Threat Defense](datasource_mcafee_advanced_threat_defense_mcafee_advanced_threat_defense.md)
+* [McAfee DLP](datasource_mcafee_dlp_mcafee_dlp.md)
+* [McAfee Endpoint Security](datasource_mcafee_endpoint_security_mcafee_endpoint_security.md)
+* [McAfee Enterprise Security Manager](datasource_mcafee_enterprise_security_manager_mcafee_enterprise_security_manager.md)
+* [McAfee IDPS](datasource_mcafee_idps_mcafee_idps.md)
+* [McAfee Network Security Platform (IPS)](datasource_mcafee_network_security_platform_(ips)_mcafee_network_security_platform_(ips).md)
+* [Microsoft Advanced Threat Analytics (ATA)](datasource_microsoft_advanced_threat_analytics_(ata)_microsoft_advanced_threat_analytics_(ata).md)
+* [Microsoft](datasource_microsoft_advanced_threat_protection_microsoft.md)
+* [Microsoft Azure EventHub](datasource_microsoft_azure_eventhub_microsoft_azure_eventhub.md)
+* [Microsoft Azure](datasource_microsoft_azure_microsoft_azure.md)
+* [Microsoft CAS](datasource_microsoft_cas_microsoft_cas.md)
+* [Microsoft Cloud App Security (MCAS)](datasource_microsoft_cloud_app_security_(mcas)_microsoft_cloud_app_security_(mcas).md)
+* [Microsoft Graph](datasource_microsoft_graph_microsoft_graph.md)
+* [Microsoft Office 365](datasource_microsoft_office_365_microsoft_office_365.md)
+* [Microsoft ScanMail](datasource_microsoft_scanmail_microsoft_scanmail.md)
+* [Sailpoint SIQ](datasource_microsoft_sharepoint_online_sailpoint_siq.md)
+* [Microsoft Web Application Proxy](datasource_microsoft_web_application_proxy_microsoft_web_application_proxy.md)
+* [Microsoft Windows AppLocker](datasource_microsoft_windows_applocker_microsoft_windows_applocker.md)
+* [Microsoft Windows Defender](datasource_microsoft_windows_defender_microsoft_windows_defender.md)
+* [MobileIron EMM](datasource_mobileiron_emm_mobileiron_emm.md)
+* [MobileIron](datasource_mobileiron_mobileiron.md)
+* [Aruba Networks](datasource_mobility_controller_aruba_networks.md)
+* [Morphisec EPTP](datasource_morphisec_eptp_morphisec_eptp.md)
+* [Mvision](datasource_mvision_mvision.md)
+* [Nasuni](datasource_nasuni_nasuni.md)
+* [NetApp](datasource_netapp_netapp.md)
+* [Sailpoint SIQ](datasource_netapp_sailpoint_siq.md)
+* [NetDocs](datasource_netdocs_netdocs.md)
+* [NetWrix](datasource_netwrix_netwrix.md)
+* [Netscaler VPN](datasource_netscaler_vpn_netscaler_vpn.md)
+* [Netskope Active Platform](datasource_netskope_active_platform_netskope_active_platform.md)
+* [Nexthink](datasource_nexthink_nexthink.md)
+* [Novell eDirectory](datasource_novell_edirectory_novell_edirectory.md)
+* [OSSEC](datasource_ossec_ossec.md)
+* [ObserveIT](datasource_observeit_observeit.md)
+* [Microsoft Office 365](datasource_office_365_microsoft_office_365.md)
+* [Okta MFA](datasource_okta_mfa_okta_mfa.md)
+* [Onapsis](datasource_onapsis_onapsis.md)
+* [Sailpoint SIQ](datasource_onedrive_sailpoint_siq.md)
+* [Oracle Solaris](datasource_oracle_solaris_oracle_solaris.md)
+* [Ordr SCE](datasource_ordr_sce_ordr_sce.md)
+* [Palo Alto Networks Aperture](datasource_palo_alto_networks_aperture_palo_alto_networks_aperture.md)
+* [Palo Alto Networks Magnifier](datasource_palo_alto_networks_magnifier_palo_alto_networks_magnifier.md)
+* [Palo Alto Networks NGFW](datasource_palo_alto_networks_ngfw_palo_alto_networks_ngfw.md)
+* [Password Manager Pro](datasource_password_manager_pro_password_manager_pro.md)
+* [Liebsoft](datasource_password_manager_liebsoft.md)
+* [Phishme](datasource_phishme_phishme.md)
+* [Proofpoint Enterprise Protection](datasource_proofpoint_enterprise_protection_proofpoint_enterprise_protection.md)
+* [ProtectWise NDR](datasource_protectwise_ndr_protectwise_ndr.md)
+* [Qualys](datasource_qualys_qualys.md)
+* [Quest Software](datasource_quest_software_change_auditor_quest_software.md)
+* [RSA DLP](datasource_rsa_dlp_rsa_dlp.md)
+* [RSA ECAT](datasource_rsa_ecat_rsa_ecat.md)
+* [RangerAudit](datasource_rangeraudit_rangeraudit.md)
+* [Rapid7 Nexpose](datasource_rapid7_nexpose_rapid7_nexpose.md)
+* [Red Canary](datasource_red_canary_red_canary.md)
+* [LogMeIn](datasource_remotelyanywhere_logmein.md)
+* [SAP](datasource_sap_sap.md)
+* [SFTP](datasource_sftp_sftp.md)
+* [Safend Data Protection Suite (DPS)](datasource_safend_data_protection_suite_(dps)_safend_data_protection_suite_(dps).md)
+* [Sangfor NGAF](datasource_sangfor_ngaf_sangfor_ngaf.md)
+* [Imperva SecureSphere](datasource_securesphere_imperva_securesphere.md)
+* [SecureWorks iSensor IPS](datasource_secureworks_isensor_ips_secureworks_isensor_ips.md)
+* [Sentinel IPS](datasource_sentinel_ips_sentinel_ips.md)
+* [SentinelOne](datasource_sentinelone_sentinelone.md)
+* [ServiceNow](datasource_servicenow_servicenow.md)
+* [SkySea ClientView](datasource_skysea_clientview_skysea_clientview.md)
+* [Skyhigh Networks CASB](datasource_skyhigh_networks_casb_skyhigh_networks_casb.md)
+* [Snort](datasource_snort_snort.md)
+* [Sonicwall](datasource_sonicwall_sonicwall.md)
+* [Sophos Endpoint Protection](datasource_sophos_endpoint_protection_sophos_endpoint_protection.md)
+* [Sophos Invincea](datasource_sophos_invincea_sophos_invincea.md)
+* [StealthBits](datasource_stealthbits_stealthbits.md)
+* [Suricata IDS](datasource_suricata_ids_suricata_ids.md)
+* [Suricata](datasource_suricata_suricata.md)
+* [Symantec Advanced Threat Protection](datasource_symantec_advanced_threat_protection_symantec_advanced_threat_protection.md)
+* [Symantec](datasource_symantec_cloudsoc_symantec.md)
+* [Symantec DLP](datasource_symantec_dlp_symantec_dlp.md)
+* [Symantec Email Security.cloud](datasource_symantec_email_security.cloud_symantec_email_security.cloud.md)
+* [Symantec Endpoint Protection Mobile](datasource_symantec_endpoint_protection_mobile_symantec_endpoint_protection_mobile.md)
+* [Symantec Endpoint Protection](datasource_symantec_endpoint_protection_symantec_endpoint_protection.md)
+* [Symantec Managed Security Services](datasource_symantec_managed_security_services_symantec_managed_security_services.md)
+* [Symantec WSS](datasource_symantec_wss_symantec_wss.md)
+* [Microsoft Sysmon](datasource_sysmon_microsoft_sysmon.md)
+* [Tanium Endpoint Platform](datasource_tanium_endpoint_platform_tanium_endpoint_platform.md)
+* [Tenable.io](datasource_tenable.io_tenable.io.md)
+* [Thycotic Secret Server](datasource_thycotic_secret_server_thycotic_secret_server.md)
+* [TrapX](datasource_trapx_tsoc_trapx.md)
+* [Palo Alto Networks Traps](datasource_traps_palo_alto_networks_traps.md)
+* [Trend Micro Cloud App Security](datasource_trend_micro_cloud_app_security_trend_micro_cloud_app_security.md)
+* [Trend Micro Deep Discovery Inspector](datasource_trend_micro_deep_discovery_inspector_trend_micro_deep_discovery_inspector.md)
+* [Trend Micro OfficeScan](datasource_trend_micro_officescan_trend_micro_officescan.md)
+* [Trend Micro TippingPoint NGIPS](datasource_trend_micro_tippingpoint_ngips_trend_micro_tippingpoint_ngips.md)
+* [Tripwire Enterprise](datasource_tripwire_enterprise_tripwire_enterprise.md)
+* [Fox BoKS ServerControl](datasource_unix_fox_boks_servercontrol.md)
+* [Unix](datasource_unix_unix.md)
+* [Unix](datasource_unix_auditd_unix.md)
+* [Unix](datasource_unix_unix.md)
+* [VBCorp](datasource_vbcorp_vbcorp.md)
+* [VMware ESXi](datasource_vmware_esxi_vmware_esxi.md)
+* [VMware Horizon](datasource_vmware_horizon_vmware_horizon.md)
+* [VMware VDI](datasource_vmware_vdi_vmware_vdi.md)
+* [VMware View](datasource_vmware_view_vmware_view.md)
+* [VMware](datasource_vmware_vmware.md)
+* [VMware ESX](datasource_vmware_vmware_esx.md)
+* [F5 VPN](datasource_vpn_f5_vpn.md)
+* [Varonis Data Security Platform](datasource_varonis_data_security_platform_varonis_data_security_platform.md)
+* [Vectra Networks](datasource_vectra_networks_vectra_networks.md)
+* [Vectra](datasource_vectra_vectra.md)
+* [Kemp](datasource_virtual_load_master_kemp.md)
+* [Vormetric](datasource_vormetric_vormetric.md)
+* [Wazuh](datasource_wazuh_wazuh.md)
+* [Palo Alto Networks WildFire](datasource_wildfire_palo_alto_networks_wildfire.md)
+* [Microsoft Windows Defender](datasource_windows_defender_microsoft_windows_defender.md)
+* [Microsoft Windows](datasource_windows_powershell_microsoft_windows.md)
+* [Microsoft Windows](datasource_windows_microsoft_windows.md)
+* [Windows](datasource_windows_windows.md)
+* [iManage](datasource_imanage_imanage.md)
+* [Unix](datasource_krb5kdc_unix.md)
+* [Unix](datasource_systemd_unix.md)
+* [xsuite](datasource_xsuite_xsuite.md)
+
+
+### Exabeam Event Types
+
+- 
+- account-switch
+- batch-logon
+- database-alert
+- dlp-alert
+- file-alert
+- file-write
+- local-logon
+- network-alert
+- privileged-access
+- privileged-object-access
+- process-alert
+- process-created
+- process-created-failed
+- process-network
+- process-network-failed
+- remote-access
+- remote-logon
+- security-alert
+- sequence-end
+- service-created
+- service-logon
+- task-created
+- usb-read
+- usb-write
+### Exabeam Content Library for this Use Case
+
+
+_Rules_
+- A-EPA-HP-A : Abnormal execution of process on asset
+- A-EPA-HP-F : First execution of process on asset
+- A-EPA-HPP-A : Abnormal parent-process combination on asset
+- A-EPA-HPP-F : First parent-process combination on asset
+- A-EPA-OP-A : Abnormal execution of process for the asset in this organization
+- A-EPA-OP-F : First execution of process for the asset in this organization
+- A-EPA-OPP-A : Abnormal parent-process combination in this organization
+- A-EPA-OPP-F : First parent-process combination in this organization
+- A-EPA-RAT-GI : GoToMyPC remote desktop access agent installed on this asset
+- A-EPA-RAT-GSI : GoToMyPC remote desktop access service installed on this asset
+- A-EPA-RAT-GSS : GoToMyPC remote desktop access service started on this asset
+- A-EPA-RAT-LI : LogMeIn remote desktop access agent installed on this asset
+- A-EPA-RAT-LSI : LogMeIn remote desktop access service installed on this asset
+- A-EPA-RAT-LSS : LogMeIn remote desktop access service started on this asset
+- A-EPA-RAT-SI : Splashtop remote desktop access agent installed on this asset
+- A-EPA-RAT-SSI : Splashtop remote desktop access service installed on this asset
+- A-EPA-RAT-SSS : Splashtop remote desktop access service started on this asset
+- A-EPA-RAT-TI : TeamViewer remote desktop access agent installed on this asset
+- A-EPA-RAT-TSI : TeamViewer remote desktop access service installed on this asset
+- A-EPA-RAT-TSS : TeamViewer remote desktop access service started on this asset
+- A-EPA-ZP-A : Abnormal execution of process for the asset in this zone
+- A-EPA-ZP-F : First execution of process for the asset in this zone
+- EPA-F-CLI : Suspicious Windows process executed
+- EPA-GH-F : First execution of critical windows command on this host in the peer group
+- EPA-GP-A : Abnormal execution of process for this peer group
+- EPA-GP-F : First execution of process for this peer group
+- EPA-HI-COUNT : Abnormal number of IPs were accessed from host
+- EPA-HP : INTERNAL: Host is not new OR it has converged for processes
+- EPA-HP-F : First execution of process on host
+- EPA-NEW-USER : User with no event process execution history
+- EPA-NEW-WC : High number of critical commands executed by a new user in a sequence
+- EPA-OH-CS : First execution of critical windows command on a Domain Controller/Critical System
+- EPA-OH-F : First execution of critical windows command on this host in the organization
+- EPA-OP-A : Abnormal execution of process in this organization
+- EPA-OP-F : First execution of process in this organization
+- EPA-PG-PS-A : Abnormal execution of powershell process for this peer group
+- EPA-PG-PS-F : First execution of powershell process for this peer group
+- EPA-PH-F : First execution of process (vssadmin.exe) on host
+- EPA-PI-F : Process accessed a local network IP address for the first time
+- EPA-PT-F : Process accessed an internet IP address for the first time
+- EPA-PU-PS-A : Abnormal execution of powershell process for user
+- EPA-PU-PS-F : First execution of powershell process for user
+- EPA-RAT-GI : GoToMyPC remote desktop access agent installed by this user
+- EPA-RAT-GSI : GoToMyPC remote desktop access service installed by this user
+- EPA-RAT-GSS : GoToMyPC remote desktop access service started by this user
+- EPA-RAT-LI : LogMeIn remote desktop access agent installed by this user
+- EPA-RAT-LSI : LogMeIn remote desktop access service installed by this user
+- EPA-RAT-LSS : LogMeIn remote desktop access service started by this user
+- EPA-RAT-SI : Splashtop remote desktop access agent installed by this user
+- EPA-RAT-SSI : Splashtop remote desktop access service installed by this user
+- EPA-RAT-SSS : Splashtop remote desktop access service started by this user
+- EPA-RAT-TI : TeamViewer remote desktop access agent installed by this user
+- EPA-RAT-TSI : TeamViewer remote desktop access service installed by this user
+- EPA-RAT-TSS : TeamViewer remote desktop access service started by this user
+- EPA-TEMP-DIRECTORY-A : Abnormal execution of this process from a temporary directory
+- EPA-TEMP-DIRECTORY-A : Abnormal process has been executed from a temporary directory by this user during endpoint activity
+- EPA-TEMP-DIRECTORY-F : First execution of this process from a temporary directory on this asset
+- EPA-TEMP-DIRECTORY-F : First time process has been executed from a temporary directory by this user during endpoint activity
+- EPA-UD-DGA : INTERNAL: User has accessed a domain through network that has been identified as DGA
+- EPA-UD-DGA-A : Abnormal access to this domain through network which has been identified as DGA
+- EPA-UD-DGA-F : First access to this domain through network which has been identified as DGA
+- EPA-UD-DGA-N : Common access to this domain through network which has been identified as DGA
+- EPA-UH-F : First execution of critical windows command on this host by the user
+- EPA-UP-A : Abnormal execution of process for user
+- EPA-UP-ALERT-A : Abnormal security alert for executing this process by the user
+- EPA-UP-ALERT-F : First security alert for executing this process by the user
+- EPA-UP-ALERT-N : Common security alert for executing this process by the user
+- EPA-UP-F : First execution of process for user
+- EXPERT-DISABLE-RECOVERY : A Suspicious command that disables recovery mode has been executed for process
+- EXPERT-POWERSHELL-ENCRYPTED : Encrypted argument in a Powershell command detected
+- EXPERT-SHADOW-COPIES : A Suspicious command that deletes shadow copies has been executed for process
+- EXPERT-TEMP-DIRECTORY : Process has been executed from a temporary directory
+- GROUP-EXISTS : INTERNAL: A peer group exists for the user
+- NORMAL-PROCESS-GROUP : INTERNAL: The process is normal for the peer group
+- NORMAL-PROCESS-ORG : INTERNAL: The process is normal for the organization
+- NORMAL-PROCESS-USER : INTERNAL: The process is normal for the user
+
+
+_Exabeam Models_
+- A-EPA-HP : Processes on this asset
+- A-EPA-HPP : Parent processes per host on this asset
+- A-EPA-OP : Processes in the organization on asset
+- A-EPA-OPP : Parent processes in the organization
+- A-EPA-UP-TEMP : 
+- A-EPA-ZP : Processes in the zone on asset
+- EPA-GH : 
+- EPA-GP : 
+- EPA-GU : 
+- EPA-HI-COUNT : 
+- EPA-HP : 
+- EPA-OH : 
+- EPA-OP : 
+- EPA-PG-PS : 
+- EPA-PH : 
+- EPA-PI : 
+- EPA-PT : 
+- EPA-PU-PS : 
+- EPA-UD-DGA : 
+- EPA-UH : 
+- EPA-UP : 
+- EPA-UP-ALERT : 
+- EPA-UP-TEMP : Processes executed from TEMP directories on this asset
+- FACT : 

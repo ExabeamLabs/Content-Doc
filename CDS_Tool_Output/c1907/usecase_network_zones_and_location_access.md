@@ -1,0 +1,340 @@
+Use Case: Network zones and Location Access
+===========================================
+
+### Supported Data Sources
+
+_The following list of Supported Exabeam Data Sources power this use case:_
+
+* [AD Audit](datasource_ad_audit_ad_audit.md)
+* [APC](datasource_apc_apc.md)
+* [AWS](datasource_aws_cloudtrail_aws.md)
+* [AWS CloudTrail](datasource_aws_cloudtrail_aws_cloudtrail.md)
+* [Adaxes](datasource_adaxes_adaxes.md)
+* [AirWatch](datasource_airwatch_airwatch.md)
+* [Airlock](datasource_airlock_airlock.md)
+* [AssetView](datasource_assetview_assetview.md)
+* [Avecto Defendpoint](datasource_avecto_defendpoint_avecto_defendpoint.md)
+* [Microsoft Azure Active Directory](datasource_azure_active_directory_microsoft_azure_active_directory.md)
+* [Barracuda Firewall](datasource_barracuda_firewall_barracuda_firewall.md)
+* [BeyondTrust](datasource_beyondtrust_beyondtrust.md)
+* [Atlassian BitBucket](datasource_bitbucket_atlassian_bitbucket.md)
+* [BitGlass](datasource_bitglass_bitglass.md)
+* [Box](datasource_box_box.md)
+* [Bro](datasource_bro_bro.md)
+* [Bromium Secure Platform](datasource_bromium_secure_platform_bromium_secure_platform.md)
+* [BusinessObject](datasource_businessobject_businessobject.md)
+* [CA Privileged Access Manager Server Control](datasource_ca_privileged_access_manager_server_control_ca_privileged_access_manager_server_control.md)
+* [CCURE](datasource_ccure_ccure.md)
+* [Carbon Black](datasource_carbon_black_carbon_black.md)
+* [CatoNetworks](datasource_catonetworks_catonetworks.md)
+* [Carbon Black Defense](datasource_cb_defense_carbon_black_defense.md)
+* [Carbon Black Protection](datasource_cb_protection_carbon_black_protection.md)
+* [Centrify](datasource_centrify_centrify.md)
+* [Check Point NGFW](datasource_check_point_ngfw_check_point_ngfw.md)
+* [Check Point Security Gateway Virtual Edition (vSEC)](datasource_check_point_security_gateway_virtual_edition_(vsec)_check_point_security_gateway_virtual_edition_(vsec).md)
+* [Check Point Security Gateway](datasource_check_point_security_gateway_check_point_security_gateway.md)
+* [Check Point](datasource_check_point_check_point.md)
+* [Cimtrak](datasource_cimtrak_cimtrak.md)
+* [Cisco Adaptive Security Appliance](datasource_cisco_adaptive_security_appliance_cisco_adaptive_security_appliance.md)
+* [Cisco AnyConnect](datasource_cisco_anyconnect_cisco_anyconnect.md)
+* [Cisco ISE](datasource_cisco_ise_cisco_ise.md)
+* [Cisco Meraki Firepower](datasource_cisco_meraki_firepower_cisco_meraki_firepower.md)
+* [Cisco Meraki MX appliances](datasource_cisco_meraki_mx_appliances_cisco_meraki_mx_appliances.md)
+* [Cisco](datasource_cisco_cisco.md)
+* [Citrix](datasource_citrix_endpoint_management_citrix.md)
+* [Citrix Gateway ActiveSync Connector](datasource_citrix_gateway_activesync_connector_citrix_gateway_activesync_connector.md)
+* [Citrix Netscaler](datasource_citrix_netscaler_citrix_netscaler.md)
+* [Citrix](datasource_citrix_sharefile_citrix.md)
+* [Citrix XenApp](datasource_citrix_xenapp_citrix_xenapp.md)
+* [Citrix XenDesktop](datasource_citrix_xendesktop_citrix_xendesktop.md)
+* [Clearsense](datasource_clearsense_clearsense.md)
+* [Code42](datasource_code42_code42.md)
+* [CrowdStrike Falcon](datasource_crowdstrike_falcon_crowdstrike_falcon.md)
+* [CyberArk Privileged Session Manager](datasource_cyberark_privileged_session_manager_cyberark_privileged_session_manager.md)
+* [CyberArk Vault](datasource_cyberark_vault_cyberark_vault.md)
+* [Cylance PROTECT](datasource_cylance_protect_cylance_protect.md)
+* [Microsoft Windows](datasource_dc_microsoft_windows.md)
+* [DatalakePortal](datasource_datalakeportal_datalakeportal.md)
+* [Dell EMC](datasource_dell_emc_dell_emc.md)
+* [Dell Quest TPAM](datasource_dell_quest_tpam_dell_quest_tpam.md)
+* [Digital Guardian Endpoint Protection](datasource_digital_guardian_endpoint_protection_digital_guardian_endpoint_protection.md)
+* [Dropbox](datasource_dropbox_dropbox.md)
+* [Dtex](datasource_dtex_dtex.md)
+* [Duo Security](datasource_duo_security_duo_security.md)
+* [EMP](datasource_emp_emp.md)
+* [ESET Endpoint Security](datasource_eset_endpoint_security_eset_endpoint_security.md)
+* [Egnyte](datasource_egnyte_egnyte.md)
+* [Epic](datasource_epic_epic.md)
+* [Exabeam DL](datasource_exabeam_dl_exabeam_dl.md)
+* [ExamWorkspace](datasource_examworkspace_examworkspace.md)
+* [F5 Big-IP Access Policy Manager (APM)](datasource_f5_big-ip_access_policy_manager_(apm)_f5_big-ip_access_policy_manager_(apm).md)
+* [FTP](datasource_ftp_ftp.md)
+* [FileAuditor](datasource_fileauditor_fileauditor.md)
+* [FileSite](datasource_filesite_filesite.md)
+* [Forcepoint CASB](datasource_forcepoint_casb_forcepoint_casb.md)
+* [Fortinet FortiAuthenticator](datasource_fortinet_fortiauthenticator_fortinet_fortiauthenticator.md)
+* [Fortinet UTM](datasource_fortinet_utm_fortinet_utm.md)
+* [Fortinet VPN](datasource_fortinet_vpn_fortinet_vpn.md)
+* [Google](datasource_g_suite_google.md)
+* [Gemalto MFA](datasource_gemalto_mfa_gemalto_mfa.md)
+* [GitHub](datasource_github_github.md)
+* [Palo Alto Networks GlobalProtect](datasource_globalprotect_gateway_portal_palo_alto_networks_globalprotect.md)
+* [Palo Alto Networks GlobalProtect](datasource_globalprotect_portal_palo_alto_networks_globalprotect.md)
+* [Palo Alto Networks GlobalProtect](datasource_globalprotect_palo_alto_networks_globalprotect.md)
+* [Google](datasource_google_admin_google.md)
+* [Google](datasource_google_calendar_google.md)
+* [Google](datasource_google_drive_google.md)
+* [Google](datasource_google_groups_google.md)
+* [Google](datasource_google_mobile_google.md)
+* [Google](datasource_google_token_google.md)
+* [Google Cloud Platform](datasource_google_google_cloud_platform.md)
+* [Gravityzone](datasource_gravityzone_gravityzone.md)
+* [Unified Security Gateway](datasource_huawei_unified_security_gateway.md)
+* [IBM DB2](datasource_ibm_db2_ibm_db2.md)
+* [IBM Racf](datasource_ibm_racf_ibm_racf.md)
+* [IBM Sametime](datasource_ibm_sametime_ibm_sametime.md)
+* [ICDB](datasource_icdb_icdb.md)
+* [IPswitch](datasource_ipswitch_moveit_dmz_ipswitch.md)
+* [IPswitch MoveIt](datasource_ipswitch_moveit_ipswitch_moveit.md)
+* [Webmail OWA](datasource_isa_webmail_owa.md)
+* [Imperva File Activity Monitoring (FAM)](datasource_imperva_file_activity_monitoring_(fam)_imperva_file_activity_monitoring_(fam).md)
+* [Imprivata](datasource_imprivata_imprivata.md)
+* [InfoWatch](datasource_infowatch_infowatch.md)
+* [Infoblox](datasource_infoblox_infoblox.md)
+* [Juniper Networks](datasource_juniper_srx_juniper_networks.md)
+* [KiteWorks](datasource_kiteworks_kiteworks.md)
+* [Sun One](datasource_ldap_sun_one.md)
+* [LEAP](datasource_leap_leap.md)
+* [LOGBinder](datasource_logbinder_logbinder.md)
+* [LanScope Cat](datasource_lanscope_cat_lanscope_cat.md)
+* [LanScope](datasource_lanscope_lanscope.md)
+* [LastPass](datasource_lastpass_lastpass.md)
+* [Liebsoft](datasource_liebsoft_liebsoft.md)
+* [IBM Lotus Mobile Connect](datasource_lotus_mobile_connect_ibm_lotus_mobile_connect.md)
+* [MasterSAM PAM](datasource_mastersam_pam_mastersam_pam.md)
+* [McAfee Endpoint Security](datasource_mcafee_endpoint_security_mcafee_endpoint_security.md)
+* [McAfee Skyhigh](datasource_mcafee_skyhigh_mcafee_skyhigh.md)
+* [Microsoft](datasource_microsoft_advanced_threat_protection_microsoft.md)
+* [Microsoft](datasource_microsoft_azure_active_directory_microsoft.md)
+* [Microsoft Azure EventHub](datasource_microsoft_azure_eventhub_microsoft_azure_eventhub.md)
+* [Microsoft Azure](datasource_microsoft_azure_microsoft_azure.md)
+* [Microsoft CAS](datasource_microsoft_cas_microsoft_cas.md)
+* [Microsoft Exchange](datasource_microsoft_exchange_microsoft_exchange.md)
+* [Microsoft NPS](datasource_microsoft_nps_microsoft_nps.md)
+* [Microsoft RRA](datasource_microsoft_rra_microsoft_rra.md)
+* [Microsoft SQL Server](datasource_microsoft_sql_server_microsoft_sql_server.md)
+* [Sailpoint SIQ](datasource_microsoft_sharepoint_onpremise_sailpoint_siq.md)
+* [Sailpoint SIQ](datasource_microsoft_sharepoint_online_sailpoint_siq.md)
+* [Microsoft Web Application Proxy](datasource_microsoft_web_application_proxy_microsoft_web_application_proxy.md)
+* [Microsoft Windows](datasource_microsoft_windows_microsoft_windows.md)
+* [Mimecast](datasource_mimecast_mimecast.md)
+* [Nasuni](datasource_nasuni_nasuni.md)
+* [NetApp](datasource_netapp_netapp.md)
+* [Sailpoint SIQ](datasource_netapp_sailpoint_siq.md)
+* [NetDocs](datasource_netdocs_netdocs.md)
+* [NetIQ](datasource_netiq_netiq.md)
+* [NetWrix](datasource_netwrix_netwrix.md)
+* [Netscaler VPN](datasource_netscaler_vpn_netscaler_vpn.md)
+* [Netskope Active Platform](datasource_netskope_active_platform_netskope_active_platform.md)
+* [HP Aruba](datasource_network_hp_aruba.md)
+* [Radius](datasource_network_radius.md)
+* [Novell eDirectory](datasource_novell_edirectory_novell_edirectory.md)
+* [Juniper OWA](datasource_owa_juniper_owa.md)
+* [ObserveIT](datasource_observeit_observeit.md)
+* [Microsoft Office 365](datasource_office_365_microsoft_office_365.md)
+* [Microsoft Office 365](datasource_office365_microsoft_office_365.md)
+* [Okta MFA](datasource_okta_mfa_okta_mfa.md)
+* [Onapsis](datasource_onapsis_onapsis.md)
+* [OneDrive](datasource_onedrive_onedrive.md)
+* [Sailpoint SIQ](datasource_onedrive_sailpoint_siq.md)
+* [OneLogin](datasource_onelogin_onelogin.md)
+* [OAM](datasource_oracle_access_manager_oam.md)
+* [Osirium](datasource_osirium_osirium.md)
+* [Palo Alto Networks](datasource_pan_config_palo_alto_networks.md)
+* [Palo Alto Networks Aperture](datasource_palo_alto_networks_aperture_palo_alto_networks_aperture.md)
+* [Palo Alto Networks GlobalProtect](datasource_palo_alto_networks_globalprotect_palo_alto_networks_globalprotect.md)
+* [Palo Alto Networks NGFW](datasource_palo_alto_networks_ngfw_palo_alto_networks_ngfw.md)
+* [Password Manager Pro](datasource_password_manager_pro_password_manager_pro.md)
+* [Liebsoft](datasource_password_manager_liebsoft.md)
+* [Perforce](datasource_perforce_perforce.md)
+* [Azura](datasource_phonefactor_azura.md)
+* [Ping Identity](datasource_ping_identity_ping_identity.md)
+* [Ping Identity](datasource_pingconnect_ping_identity.md)
+* [PingOne](datasource_pingone_pingone.md)
+* [PowerSentry](datasource_powersentry_powersentry.md)
+* [Procad Pro.File DMS](datasource_procad_pro.file_dms_procad_pro.file_dms.md)
+* [ProxySG](datasource_proxysg_proxysg.md)
+* [Pulse Secure](datasource_pulse_secure_pulse_secure.md)
+* [Quest Software](datasource_quest_software_change_auditor_quest_software.md)
+* [Dell EMC RSA Authentication Manager](datasource_rsa_authentication_manager_dell_emc_rsa_authentication_manager.md)
+* [RUID](datasource_ruid_ruid.md)
+* [RangerAudit](datasource_rangeraudit_rangeraudit.md)
+* [LogMeIn](datasource_remotelyanywhere_logmein.md)
+* [Ruckus](datasource_ruckus_ruckus.md)
+* [SAP](datasource_sap_sap.md)
+* [SFTP](datasource_sftp_sftp.md)
+* [Shibboleth SSO](datasource_sso_shibboleth_sso.md)
+* [SVN](datasource_svn_svn.md)
+* [Secure Computing](datasource_safeword_premieraccess_secure_computing.md)
+* [Sailpoint IdentityNow](datasource_sailpoint_identitynow_sailpoint_identitynow.md)
+* [Salesforce](datasource_salesforce_salesforce.md)
+* [SecureAuth](datasource_secureauth_mfa_secureauth.md)
+* [SecureAuth](datasource_secureauth_secureauth.md)
+* [SecureLink](datasource_securelink_securelink.md)
+* [Imperva SecureSphere](datasource_securesphere_imperva_securesphere.md)
+* [Tufin](datasource_securetrack_tufin.md)
+* [SentinelOne](datasource_sentinelone_sentinelone.md)
+* [ServiceNow](datasource_servicenow_servicenow.md)
+* [Shibboleth IdP](datasource_shibboleth_idp_shibboleth_idp.md)
+* [Silverfort](datasource_silverfort_silverfort.md)
+* [SiteMinder](datasource_siteminder_siteminder.md)
+* [SkySea ClientView](datasource_skysea_clientview_skysea_clientview.md)
+* [Slack](datasource_slack_slack.md)
+* [Sonicwall](datasource_sonicwall_sonicwall.md)
+* [Sophos SafeGuard](datasource_sophos_safeguard_sophos_safeguard.md)
+* [Sophos](datasource_sophos_sophos.md)
+* [StealthBits StealthIntercept](datasource_stealthbits_stealthintercept_stealthbits_stealthintercept.md)
+* [StealthBits](datasource_stealthbits_stealthbits.md)
+* [Swift](datasource_swift_swift.md)
+* [Swivel](datasource_swivel_swivel.md)
+* [Symantec](datasource_symantec_cloudsoc_symantec.md)
+* [Symantec Endpoint Protection](datasource_symantec_endpoint_protection_symantec_endpoint_protection.md)
+* [Symantec VIP](datasource_symantec_vip_symantec_vip.md)
+* [Microsoft Sysmon](datasource_sysmon_microsoft_sysmon.md)
+* [TrapX](datasource_tsoc_trapx.md)
+* [Tanium Endpoint Platform](datasource_tanium_endpoint_platform_tanium_endpoint_platform.md)
+* [Thycotic Secret Server](datasource_thycotic_secret_server_thycotic_secret_server.md)
+* [TitanFTP](datasource_titanftp_titanftp.md)
+* [Trend Micro Deep Discovery Inspector](datasource_trend_micro_deep_discovery_inspector_trend_micro_deep_discovery_inspector.md)
+* [Fox BoKS ServerControl](datasource_unix_fox_boks_servercontrol.md)
+* [Unix](datasource_unix_unix.md)
+* [Unix](datasource_unix_auditd_unix.md)
+* [Unix](datasource_unix_unix.md)
+* [VMware ESXi](datasource_vmware_esxi_vmware_esxi.md)
+* [VMware Horizon](datasource_vmware_horizon_vmware_horizon.md)
+* [VMware VDI](datasource_vmware_vdi_vmware_vdi.md)
+* [VMware View](datasource_vmware_view_vmware_view.md)
+* [VMware ESX](datasource_vmware_vmware_esx.md)
+* [VMware vCenter](datasource_vmware_vmware_vcenter.md)
+* [Avaya VPN](datasource_vpn_avaya_vpn.md)
+* [Citrix Netscaler](datasource_vpn_citrix_netscaler.md)
+* [Cognitas CrossLink](datasource_vpn_cognitas_crosslink.md)
+* [Dell Aventail](datasource_vpn_dell_aventail.md)
+* [F5 VPN](datasource_vpn_f5_vpn.md)
+* [Juniper VPN](datasource_vpn_juniper_vpn.md)
+* [NCP](datasource_vpn_ncp.md)
+* [NetMotion Wireless](datasource_vpn_netmotion_wireless.md)
+* [SSL Open VPN](datasource_vpn_ssl_open_vpn.md)
+* [SecureNet](datasource_vpn_securenet.md)
+* [Zscaler](datasource_vpn_zscaler.md)
+* [Varonis Data Security Platform](datasource_varonis_data_security_platform_varonis_data_security_platform.md)
+* [Vectra](datasource_vectra_vectra.md)
+* [Kemp](datasource_virtual_load_master_kemp.md)
+* [Vormetric](datasource_vormetric_vormetric.md)
+* [Microsoft Windows](datasource_windows_microsoft_windows.md)
+* [Sailpoint SIQ](datasource_windows_sailpoint_siq.md)
+* [Workday](datasource_workday_workday.md)
+* [Xceedium](datasource_xceedium_xceedium.md)
+* [Zoom](datasource_zoom_zoom.md)
+* [Zscaler](datasource_zscaler_internet_access_zscaler.md)
+* [eDocs](datasource_edocs_edocs.md)
+* [iManage](datasource_imanage_imanage.md)
+* [Unix](datasource_krb5kdc_unix.md)
+* [oVirt](datasource_ovirt_ovirt.md)
+* [Unix](datasource_systemd_unix.md)
+* [xsuite](datasource_xsuite_xsuite.md)
+
+
+### Exabeam Event Types
+
+- 
+- app-activity
+- app-login
+- authentication-failed
+- authentication-successful
+- failed-app-login
+- failed-vpn-login
+- file-delete
+- file-permission-change
+- file-read
+- file-write
+- kerberos-logon
+- local-logon
+- nac-logon
+- ntlm-logon
+- remote-access
+- remote-logon
+- vpn-login
+- vpn-relogin
+### Exabeam Content Library for this Use Case
+
+
+_Rules_
+- ABNORMAL-DEST-ZONE : INTERNAL: First/Abnormal destination network zone for user
+- ABNORMAL-SOURCE-ZONE : INTERNAL: First or abnormal source network zone for user
+- AL-GZ-A : Abnormal logon to network zone for group
+- AL-GZ-F : First logon to network zone for group
+- AL-UZ-A : Abnormal logon to network zone
+- AL-UZ-F : First logon to network zone
+- AL-ZG : INTERNAL: First or abnormal logon to zone for peer group
+- AL-ZU : INTERNAL: Zone is not new OR it has converged
+- FA-GC-F : First Failed activity in session from country in which group has never had a successful activity
+- FA-GC-F : First Failed activity in session from country in which peer group has never had a successful activity
+- FA-OC-F : First Failed activity in session from country in which organization has never had a successful activity
+- FA-UA-GC-A : Abnormal file activity from country for group
+- FA-UA-GC-F : First file activity from country for group
+- FA-UA-OC-A : Abnormal file activity from country for organization
+- FA-UA-OC-F : First file activity from country for organization
+- FA-UA-UC-A : Abnormal file activity from country for user
+- FA-UA-UC-F : First file activity from country for user
+- FA-UA-UI-F : First file activity from ISP
+- FA-UC-F : Failed activity from a new country
+- FA-UZ-F : First file access from network zone for user
+- NAC-UL-A : Abnormal network location for user
+- NAC-UL-F : First network location for user
+- NAC-UM-A : Abnormal MAC for user
+- NAC-UM-F : First MAC for user
+- UA-GC-A : Abnormal activity from country for group
+- UA-GC-F : First activity from country for group
+- UA-OC-A : Abnormal activity from country for organization
+- UA-OC-F : First activity from country for organization
+- UA-UC-A : Abnormal activity from country for user
+- UA-UC-F : First activity from country for user
+- UA-UI-F : First activity from ISP
+- Z-A : Abnormal inter-zone communication
+- Z-A : Abnormal remote access to asset from first or abnormal zone
+- Z-A : Abnormal remote access to zone from new asset
+- Z-A : Abnormal remote logon to asset from new or abnormal source network zone
+- Z-A : Abnormal source network zone for user
+- Z-A : INTERNAL: Abnormal inter-zone communication
+- Z-F : First inter-zone communication from destination to source
+- Z-F : First inter-zone communication from source to destination
+- Z-F : First remote access to asset from first or abnormal zone
+- Z-F : First remote access to zone from new asset
+- Z-F : First remote logon to asset from new or abnormal source network zone
+- Z-F : First source network zone for user
+
+
+_Exabeam Models_
+- AL-GZ : 
+- AL-UsH : 
+- AL-ZG : 
+- AL-ZU : 
+- FA-UA-GC : 
+- FA-UA-OC : 
+- FA-UA-UC : 
+- FA-UA-UI : 
+- FA-UZ : 
+- NAC-UL : 
+- NAC-UM : 
+- RA-UH : 
+- RL-UH : 
+- RLA-UdZ : 
+- RLA-UsZ : 
+- RLA-dZsZ : 
+- RLA-sZdZ : 
+- TOP_NETWORK_ZONES : 
+- UA-GC : 
+- UA-OC : 
+- UA-UC : 
+- UA-UI : 
