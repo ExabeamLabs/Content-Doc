@@ -15,19 +15,3 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 ### Exabeam Event Types
 
 - netflow-connection
-### Exabeam Content Library for this Use Case
-
-
-_Rules_
-- A-NETFLOW-SERVER : INTERNAL - Source Host is a server
-- A-NETFLOW-SP-F : Service running on port used by asset
-- P-A : Abnormal access to port by this asset
-- P-F : First time access of this port by this asset
-- P-F : INTERNAL: Service port used by this asset
-
-
-_Exabeam Models_
-- A-NETFLOW-OsH : 
-- A-NETFLOW-dHdP : 
-- A-NETFLOW-sHdP : 
-- FACT : 

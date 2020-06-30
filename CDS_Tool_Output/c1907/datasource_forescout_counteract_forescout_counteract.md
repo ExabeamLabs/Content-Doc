@@ -27,6 +27,4 @@ _The following Parsers can be operationalized using log data from this data sour
 * [counteract-config-change](parserContent_counteract-config-change.md)
 * [counteract-network-alert](parserContent_counteract-network-alert.md)
 * [counteract-network-alert-1](parserContent_counteract-network-alert-1.md)
-* [counteract-network-alert-2](parserContent_counteract-network-alert-2.md)
-* [counteract-network-alert-3](parserContent_counteract-network-alert-3.md)
 * [counteract-network-connection](parserContent_counteract-network-connection.md)

@@ -26,7 +26,5 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-pan-auth-failed](parserContent_cef-pan-auth-failed.md)
 * [cef-pan-auth-successful](parserContent_cef-pan-auth-successful.md)
 * [pan-auth-failed](parserContent_pan-auth-failed.md)
-* [pan-auth-failed-1](parserContent_pan-auth-failed-1.md)
 * [pan-auth-successful](parserContent_pan-auth-successful.md)
 * [pan-auth-successful-1](parserContent_pan-auth-successful-1.md)
-* [pan-auth-successful-2](parserContent_pan-auth-successful-2.md)

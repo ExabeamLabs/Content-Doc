@@ -80,95 +80,31 @@ include "./parsers_kiteworks.conf"
 include "./parsers_infowatch.conf"
 include "./parsers_lanscopecat.conf"
 
-SentinelOneParserTemplates = {
+AWSParserTemplates = {
 
-  cef-sentinelone-security-alert = {
-    Vendor = SentinelOne
-    Lms = ArcSight
-    DataType = "alert"
-    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-    Fields = [
-      """CEF:([^\|]*\|){5}({alert_name}[^\|]+)\|({alert_severity}[^\|]+)\|""",
-      """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d+Z\s+({host}\S+)""",
-      """\seventType:(|({alert_type}.+?))(\s+\w+:|\s*$)""",
-      """\sagentId:(|({agent_id}.+?))(\s+\w+:|\s*$)""",
-      """\sagentIp:({dest_ip}[a-fA-F\d.:]+)""",
-      """\sagentName:(|({dest_host}.+?))(\s+\w+:|\s*$)""",
-      """\sagentfileFullNameGroupId:(|({file_path}({file_parent}.*?[\\\/]+)?({file_name}[^\\\/]+?(\.({file_ext}\w+))?)))(\s+\w+:|\s*$)""",
-      """\sprocessName:(|({process_name}.+?))(\s+\w+:|\s*$)""",
-      """\sid:(|({alert_id}.+?))(\s+\w+:|\s*$)""",
-    ]
-  }
-}
-
-AirlockTemplates = {
-  AirlockEvent = {
-    Vendor = Airlock
-    Product = Airlock
-    Lms = Splunk
-    TimeFormat = "M/d/yy h:mm:ss a"
-    Fields = [
-      """\sstart_time="({time}\d+\/\d+\/\d+ \d+:\d+:\d+ \w+)""",
-      """\sseverity="({alert_severity}[^"]+)"""",
-      """\ssystem_name="({host}[^"]+)"""",
-      """\ssession_id="({session_id}[^"]+)"""",
-      """\sremote_port="({src_port}[^"]+)"""",
-      """\sremote_ip="({src_ip}[^"]+)"""",
-      """\sremarks="({activity}[^"]+)"""",
-      """\slocal_port="({dest_port}[^"]+)"""",
-      """\slocal_ip="({dest_ip}[^"]+)"""",
-      """\sevent_type="({event_name}[^"]+)"""",
-      """\sevent_id="({event_id}[^"]+)"""",
-      """\scommand="({action}[^"]+)"""",
-      """\suser_name="(unknown|({user}[^"]+))"""",
-      """\sdomain="(Default|({domain}[^"]+))"""",
-      """\sfile_size="({bytes}[^"]+)"""",
-      """\sfile_path="(\w+:_)?({file_path}({file_parent}(?:[^";]+)?[\\\/;])?({file_name}[^\\\/";]+?(\.({file_ext}[^\\\/\.;"]+))))"""
-      """\sfile_path="(\w+:_)?({file_path}({file_parent}(?:[^";]+)?[\\\/;])?({file_name}[^\\\/";]+(\.({file_ext}[^\\\/\.;"]+))))""" 
-    ]
-    DupFields = ["host->dest_host"]
-  }
-}
-ProWatchParserTemplates = {
-
-prowatch-badge-access = {
-  Vendor = ProWatch
-  Lms = Direct
-  DataType = "physical-access"
-  TimeFormat = "yyyy-MM-dd HH:mm:ss"
+s-aws-cloudtrail-activity-json = {
+  Vendor = AWS CloudTrail
+  Lms = Splunk
+  DataType = "app-activity"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Fields = [
-    """exabeam_host=({host}[\w.\-]+)""",
-    """:f+:({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s+\{""",
-    """"((?i)location)":\s*"\s*({location_building}[^"]+?)\s*"""",
-    """"((?i)descrp)":\s*"\s*({location_door}[^"]+?)\s*"""",
-    """"evnt_dat":\s*"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
-    """"EVNT_DAT":\s*"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """"BADGENO":\s*"({badge_id}[^"]+)""",
-    """"((?i)cardno)":\s*"({badge_id}\d+)""",
-    """"((?i)comp_name)":\s*"\s*({additional_info}[^"]+?)\s*"""",
-    """"((?i)evnt_descrp)":\s*"\s*({outcome}[^"]+?)\s*"""",
-    """"((?i)threat_lev)":({threat_level}\d+)""",
-    """"((?i)fname)":"\s*({first_name}[^"]+?)\s*"""",
-    """"((?i)lname)":"\s*({last_name}[^"]+?)\s*"""",
-    """"((?i)badge_employeeid)":"\s*({employee_id}[^"]+?)\s*"""",
-    """"((?i)cardstatus_descrp)":"\s*({card_status}[^"]+?)\s*""""
+    """"+eventTime"+\s*:\s*"+?(|({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)Z)"+\s*[,\]\}]""",
+    """"+sourceIPAddress"+\s*:\s*"+?(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[^"].+?))"+\s*[,\]\}]""",
+    """"+eventSource"+\s*:\s*"+?(|({host}[^"].+?))"+\s*[,\]\}]""",
+    """"userIdentity".+?"+invokedBy"+\s*:\s*"+?(|({dest_host}[^"].+?))"+\s*[,\]\}]""",
+    """({app}AwsApiCall)""",
+    """"+eventName"+\s*:\s*"+?(|({activity_action}[^"].+?))"+\s*[,\]\}]""",
+    """"userIdentity".+?"+arn"+\s*:\s*"+?(|arn:aws:sts::\d+:([^"]+\/)+({user}(?!\-\d+)[^\/]+?))"+\s*[,\]\}]""",
+    """"+userName"+\s*:\s*"+?(|({user}[^"].+?))"+\s*[,\]\}]""",
+    """"eventSource"\s*:\s*"(|({object}[^"]+))"""",
+    """"sessionIssuer"\s*:\s*.*?"arn"\s*:\s*"(?:|({object}[^"]+))"""",
+    """"bucketName"\s*:\s*"(|({object}[^"]+))"""",
+    """"policyArn"\s*:\s*"(|({object}[^"]+))"""",
+    """"roleName"\s*:\s*"(|({object}[^"]+))"""",
+    """"userAgent"\s*:\s*"(|({user_agent}[^"]+))"""",
+    """"+errorCode"+\s*:\s*"+?(|({activity_outcome}[^"].+?))"+\s*[,\]\}]""",
+    """"+errorMessage"+\s*:\s*"+?(|({additional_info}[^"].+?))"+\s*[,\]\}]""",
+    """"+accountId"+\s*:\s*"+?(|({resource}[^"].+?))"+\s*[,\]\}]""",
   ]
 }
-
-s-prowatch-badge-access = {
-    Vendor = ProWatch
-    Lms = Splunk
-    DataType = "physical-access"
-    TimeFormat =  "yyyy-MM-dd HH:mm:ss"
-    Fields = [
-      """EVNT_DAT="({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d).""",
-      """CARDNO="({badge_id}[^"]+)"""",
-      """LOCATION="({location_door}[^"]+)"""",
-      """FNAME="({first_name}[^"]+)"""",
-      """LNAME="({last_name}[^"]+?)\s*"""",
-      """LOOP_DESCRP="({location_building}[^"]+)"""",
-      """EVNT_DESCRP="({outcome}[^"]+)"""",
-      """exabeam_host=([^=]*@\s*)?({host}[^\s]+)"""
-    ]
-  }
 ```

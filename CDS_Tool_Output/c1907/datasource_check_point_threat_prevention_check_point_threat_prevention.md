@@ -23,12 +23,8 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [cef-checkpoint-network-alert](parserContent_cef-checkpoint-network-alert.md)
 * [checkpoint-firewall-network-alert](parserContent_checkpoint-firewall-network-alert.md)
-* [checkpoint-firewall-network-alert-1](parserContent_checkpoint-firewall-network-alert-1.md)
 * [checkpoint-network-alert](parserContent_checkpoint-network-alert.md)
 * [checkpoint-network-alert-1](parserContent_checkpoint-network-alert-1.md)
 * [checkpoint-network-alert-2](parserContent_checkpoint-network-alert-2.md)
-* [checkpoint-network-alert-3](parserContent_checkpoint-network-alert-3.md)
-* [checkpoint-network-alert-4](parserContent_checkpoint-network-alert-4.md)
-* [checkpoint-vpn-firewall](parserContent_checkpoint-vpn-firewall.md)
 * [leef-checkpoint-alert](parserContent_leef-checkpoint-alert.md)
 * [syslog-checkpoint-network-alert](parserContent_syslog-checkpoint-network-alert.md)

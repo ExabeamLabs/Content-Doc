@@ -34,9 +34,6 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [s-tanium-cli-execution](parserContent_s-tanium-cli-execution.md)
 * [s-tanium-security-alert](parserContent_s-tanium-security-alert.md)
-* [s-tanium-security-alert-2](parserContent_s-tanium-security-alert-2.md)
-* [s-tanium-security-alert-3](parserContent_s-tanium-security-alert-3.md)
-* [s-tanium-security-alert-4](parserContent_s-tanium-security-alert-4.md)
 * [tanium-auth](parserContent_tanium-auth.md)
 * [tanium-dns-response](parserContent_tanium-dns-response.md)
 * [tanium-process-created](parserContent_tanium-process-created.md)

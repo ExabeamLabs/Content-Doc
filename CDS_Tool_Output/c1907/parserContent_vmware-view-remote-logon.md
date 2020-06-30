@@ -9,7 +9,6 @@ Name = vmware-view-remote-logon
   Conditions = [ """ View - """, """AGENT_CONNECTED""" ]
   Fields = [
     """\d\d:\d\d:\d\d\s+({host}[^\s]+)\s+\d+\s+""",
-    """({app}View)""",
     """\s+({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
     """\sUserSID="({user_sid}[^"]+)"""",
     """UserDisplayName="(({domain}[^\\]+)\\+)?({user}[^"]+)"""",

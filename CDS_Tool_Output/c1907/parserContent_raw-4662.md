@@ -1,7 +1,7 @@
 #### Parser Content
 ```Java
 {
-Name = raw-4662-1
+Name = raw-4662
   Vendor = Microsoft
   Product = Microsoft Windows
   Lms = Direct

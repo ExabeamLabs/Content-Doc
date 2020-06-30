@@ -19,6 +19,6 @@ Name = cef-ecat-security-alert
     """\sos=({threat_category}.+?)\s+(\w+=|$)""",
     """\stargetModule=({malware_url}.+?)\s+(\w+=|$)""",
   ]
-  DupFields = [ "dest_host->host" , "malware_url->process_name"]
+  DupFields = [ "dest_host->host" ]
 }
 ```

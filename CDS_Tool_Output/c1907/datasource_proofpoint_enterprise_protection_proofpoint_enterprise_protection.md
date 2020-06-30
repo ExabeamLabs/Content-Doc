@@ -32,5 +32,4 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-proofpoint-email-in-failed](parserContent_cef-proofpoint-email-in-failed.md)
 * [cef-proofpoint-email-out](parserContent_cef-proofpoint-email-out.md)
 * [cef-proofpoint-email-out-failed](parserContent_cef-proofpoint-email-out-failed.md)
-* [json-s-proofpoint-email-alert-2](parserContent_json-s-proofpoint-email-alert-2.md)
 * [s-proofpoint-email-alert-2](parserContent_s-proofpoint-email-alert-2.md)

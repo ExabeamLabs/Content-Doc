@@ -19,6 +19,5 @@ Name = raw-juniper-nwc-vpn-resume
     """\- \[({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]\s+(({domain}[^\\]+)\\)?({user}[^\(]+)\(({realm}[^\)]+)?\)(\[({resource}[^\]]+)\])?""",
     """({event_code}Session resumed)""",
   ] 
-  DupFields = ["user->account"]
 }
 ```

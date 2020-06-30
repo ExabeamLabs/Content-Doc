@@ -25,6 +25,5 @@ Name = cef-symantec-atp-alert
     """"product_name":"({product}[^"]+)"""",
     """"message":"({additional_info}[^"]+)"""",
   ]
-  DupFields = ["host->dest_host", "file_name->process_name"]
 }
 ```

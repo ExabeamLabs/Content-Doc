@@ -22,5 +22,4 @@ _The following Parsers can be operationalized using log data from this data sour
 * [q-unix-dhcp-1](parserContent_q-unix-dhcp-1.md)
 * [raw-unix-dhcp](parserContent_raw-unix-dhcp.md)
 * [raw-unix-dhcp-forwardmap](parserContent_raw-unix-dhcp-forwardmap.md)
-* [raw-unix-dhcp-reversemap](parserContent_raw-unix-dhcp-reversemap.md)
 * [raw-unix-dns-appliedadd](parserContent_raw-unix-dns-appliedadd.md)

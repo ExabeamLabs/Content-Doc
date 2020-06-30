@@ -22,6 +22,4 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [bro-dns](parserContent_bro-dns.md)
 * [bro-dns-response](parserContent_bro-dns-response.md)
-* [bro-dns-response-1](parserContent_bro-dns-response-1.md)
-* [bro-dns-response-2](parserContent_bro-dns-response-2.md)
 * [corelight-dns-query](parserContent_corelight-dns-query.md)

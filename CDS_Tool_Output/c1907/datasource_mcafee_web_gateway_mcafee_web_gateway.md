@@ -24,12 +24,10 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [cisco-w3c-proxy](parserContent_cisco-w3c-proxy.md)
 * [cisco-wsa-squid-proxy](parserContent_cisco-wsa-squid-proxy.md)
-* [elk-cisco-wsa-web-activity](parserContent_elk-cisco-wsa-web-activity.md)
 * [json-mwg-web-activity](parserContent_json-mwg-web-activity.md)
 * [leef-mwg-proxy](parserContent_leef-mwg-proxy.md)
 * [mwg-proxy-1](parserContent_mwg-proxy-1.md)
 * [mwg-proxy-2](parserContent_mwg-proxy-2.md)
-* [mwg-proxy-3](parserContent_mwg-proxy-3.md)
 * [n-mwg-proxy](parserContent_n-mwg-proxy.md)
 * [nitro-mwg-proxy](parserContent_nitro-mwg-proxy.md)
 * [s-mwg-proxy](parserContent_s-mwg-proxy.md)

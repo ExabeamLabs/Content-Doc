@@ -21,4 +21,3 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [bind-dns-query](parserContent_bind-dns-query.md)
 * [bind-dns-query-2](parserContent_bind-dns-query-2.md)
-* [bind-dns-query-3](parserContent_bind-dns-query-3.md)

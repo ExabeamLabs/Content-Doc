@@ -11,10 +11,9 @@ Name = leef-pan-proxy
   Conditions = [ """LEEF:""", """|Palo Alto Networks|PAN-OS Syslog Integration|""", """|cat=THREAT|""", """ubtype=url|""" ]
   Fields = [
     """exabeam_time=({time}\d+)""",
-    """\|\s*ReceiveTime=({time}\d\d\d\d\/\d\d\/\d\d \d\d:\d\d:\d\d)""",
+    """\|ReceiveTime=({time}\d\d\d\d\/\d\d\/\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=(.+?@\s*)?({host}[^\s]+)""",
     """({host}[\w\.-]+)\s+LEEF:""",
-    """usrName=({domain}[^\\\|]+)\\({user}[^\s\|]+)""",
     """\|src=({src_ip}[^\|]+)((\|\w+=|\s*$))""",
     """\|srcPort=({src_port}[^\|]+)((\|\w+=|\s*$))""",
     """\|dst=({dest_ip}[^\|]+)((\|\w+=|\s*$))""",

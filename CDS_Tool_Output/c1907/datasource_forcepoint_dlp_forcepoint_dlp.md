@@ -32,7 +32,5 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-forcepoint-dlp-alert-2](parserContent_cef-forcepoint-dlp-alert-2.md)
 * [cef-forcepoint-dlp-alert-3](parserContent_cef-forcepoint-dlp-alert-3.md)
 * [cef-forcepoint-dlp-email-alert](parserContent_cef-forcepoint-dlp-email-alert.md)
-* [cef-forcepoint-dlp-email-alert-1](parserContent_cef-forcepoint-dlp-email-alert-1.md)
-* [cef-forcepoint-dlp-email-alert-out](parserContent_cef-forcepoint-dlp-email-alert-out.md)
 * [s-dlp-email-out](parserContent_s-dlp-email-out.md)
 * [websense-usb-activity](parserContent_websense-usb-activity.md)

@@ -25,9 +25,6 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [cef-fireeye-hx-security-alert](parserContent_cef-fireeye-hx-security-alert.md)
 * [fireeye-hx-alert](parserContent_fireeye-hx-alert.md)
-* [fireye-security-alert-1](parserContent_fireye-security-alert-1.md)
 * [s-fireeye-hx-alert](parserContent_s-fireeye-hx-alert.md)
 * [s-fireeye-hx-alert-1](parserContent_s-fireeye-hx-alert-1.md)
 * [s-fireeye-hx-alert-2](parserContent_s-fireeye-hx-alert-2.md)
-* [s-fireeye-hx-alert-hx](parserContent_s-fireeye-hx-alert-hx.md)
-* [s-fireeye-hx-alert-s-1](parserContent_s-fireeye-hx-alert-s-1.md)

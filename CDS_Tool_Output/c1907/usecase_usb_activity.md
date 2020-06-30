@@ -18,12 +18,3 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 ### Exabeam Event Types
 
 - usb-write
-### Exabeam Content Library for this Use Case
-
-
-_Rules_
-- UW-PST : A file ending with either pst or ost has been written into USB
-
-
-_Exabeam Models_
-- FACT : 

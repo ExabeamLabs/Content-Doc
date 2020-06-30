@@ -23,4 +23,3 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [cef-juniper-account-deleted](parserContent_cef-juniper-account-deleted.md)
 * [pulsesecure-account-deleted](parserContent_pulsesecure-account-deleted.md)
-* [s-pulsesecure-account-deleted](parserContent_s-pulsesecure-account-deleted.md)

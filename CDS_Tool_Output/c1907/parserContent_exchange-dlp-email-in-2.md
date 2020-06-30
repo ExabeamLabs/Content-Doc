@@ -7,7 +7,7 @@ Name = exchange-dlp-email-in-2
   Lms = Splunk
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:m:ss.SSS"
-  Conditions = [ """,SMTP,SEND,""", """,Incoming,""" ]
+  Conditions = [ """,SMTP,SEND,""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
     """,SMTP,.*?({time}\d\d\d\d-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d+)""",

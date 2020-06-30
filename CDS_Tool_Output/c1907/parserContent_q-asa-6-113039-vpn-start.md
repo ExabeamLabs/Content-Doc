@@ -17,6 +17,6 @@ Name = q-asa-6-113039-vpn-start
     """ IP <({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})>""",
     """ Group\s+<({realm}.+?)>""",
   ]
-  DupFields = [ "dest_host->host" , "user->account"]
+  DupFields = [ "dest_host->host" ]
 }
 ```

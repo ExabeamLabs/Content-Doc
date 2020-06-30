@@ -14,6 +14,5 @@ Name = huawei-vpn-login
      """({src_ip}[^\s;]+?):({src_port}\d+);\s*({src_translated_ip}[^\s;]+?):({src_translated_port}\d+);\s*-->({dest_ip}[^;]+?):({dest_port}\d+);""",
      """\sname:(?!\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(({user_email}[^@;]+@[^@;]+)|({user}[^;]+));"""
   ]
-  DupFields = ["user->account"]
 }
 ```

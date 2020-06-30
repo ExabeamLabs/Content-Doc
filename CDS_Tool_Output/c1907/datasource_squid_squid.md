@@ -24,4 +24,3 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [squid-web-activity](parserContent_squid-web-activity.md)
 * [squid-web-activity-1](parserContent_squid-web-activity-1.md)
-* [squid-web-activity-3](parserContent_squid-web-activity-3.md)
