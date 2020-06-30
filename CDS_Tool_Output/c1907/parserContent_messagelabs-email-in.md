@@ -6,11 +6,11 @@ Name = messagelabs-email-in
   Product = Symantec DLP
   Lms = Direct
   DataType = "dlp-email-alert"
-  TimeFormat = "epoch"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = ["""emailInfo""","""HELOString""",""""isOutbound":false"""]
   Fields = [
     """exabeam_host=([^@=]+@\s*)?({host}[\w.\-]+)""",
-    """"mailProcessingStartTime"+:({time}\d+)""",
+    """exabeam_time=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """"headerFrom":"({sender}[^"@]+@({external_domain}[^@"]+))",""",
     """"subject":"({subject}[^"]+)",""",
     """"messageSize":({bytes}\d+)""",

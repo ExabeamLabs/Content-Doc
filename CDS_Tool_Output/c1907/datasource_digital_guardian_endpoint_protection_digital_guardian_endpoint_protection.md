@@ -43,7 +43,6 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-digitalguardian-file-operation](parserContent_cef-digitalguardian-file-operation.md)
 * [cef-digitalguardian-local-logon](parserContent_cef-digitalguardian-local-logon.md)
 * [cef-digitalguardian-print](parserContent_cef-digitalguardian-print.md)
-* [digitalguardian-process-created](parserContent_digitalguardian-process-created.md)
 * [leef-digitalguardian-file-delete](parserContent_leef-digitalguardian-file-delete.md)
 * [leef-digitalguardian-file-delete-1](parserContent_leef-digitalguardian-file-delete-1.md)
 * [leef-digitalguardian-file-download](parserContent_leef-digitalguardian-file-download.md)

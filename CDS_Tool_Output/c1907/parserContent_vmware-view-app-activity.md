@@ -9,7 +9,6 @@ Name = vmware-view-app-activity
   Conditions = [ """ View - """, """Severity="""", """DesktopId="""" ]
   Fields = [
     """\d\d:\d\d:\d\d\s+({host}[^\s]+)\s+\d+\s+""",
-    """({app}View)""",
     """\s+({dest_host}[^\s]+)\s+View - """,
     """\s+({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
     """UserDisplayName="(({domain}[^\\]+)\\+)?\\*({user}[^"\\]+)"""",

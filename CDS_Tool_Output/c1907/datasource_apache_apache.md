@@ -24,5 +24,5 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [apache-web-activity](parserContent_apache-web-activity.md)
 * [apache-web-activity-1](parserContent_apache-web-activity-1.md)
-* [apache-web-activity-4](parserContent_apache-web-activity-4.md)
+* [apache-web-activity-2](parserContent_apache-web-activity-2.md)
 * [s-apache-web-activity](parserContent_s-apache-web-activity.md)

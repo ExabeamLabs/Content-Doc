@@ -13,16 +13,13 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Cisco AnyConnect](datasource_cisco_anyconnect_cisco_anyconnect.md)
 * [Cisco ISE](datasource_cisco_ise_cisco_ise.md)
 * [Cisco Meraki MX appliances](datasource_cisco_meraki_mx_appliances_cisco_meraki_mx_appliances.md)
-* [Duo Security](datasource_duo_security_duo_security.md)
 * [Fortinet VPN](datasource_fortinet_vpn_fortinet_vpn.md)
 * [Palo Alto Networks GlobalProtect](datasource_globalprotect_palo_alto_networks_globalprotect.md)
 * [Unified Security Gateway](datasource_huawei_unified_security_gateway.md)
 * [IBM Lotus Mobile Connect](datasource_lotus_mobile_connect_ibm_lotus_mobile_connect.md)
 * [Microsoft RRA](datasource_microsoft_rra_microsoft_rra.md)
 * [Microsoft Windows](datasource_microsoft_windows_microsoft_windows.md)
-* [PingOne](datasource_pingone_pingone.md)
 * [Sonicwall](datasource_sonicwall_sonicwall.md)
-* [Sophos](datasource_sophos_sophos.md)
 * [Avaya VPN](datasource_vpn_avaya_vpn.md)
 * [Citrix Netscaler](datasource_vpn_citrix_netscaler.md)
 * [Cognitas CrossLink](datasource_vpn_cognitas_crosslink.md)
@@ -39,17 +36,3 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 ### Exabeam Event Types
 
 - vpn-login
-### Exabeam Content Library for this Use Case
-
-
-_Rules_
-- AE-GA-F-VPN : First VPN connection for Group
-- AE-UA-F-VPN : First VPN connection for user
-- H-A : Abnormal VPN connection from device for peer group
-- H-F : First VPN connection from device for peer group
-
-
-_Exabeam Models_
-- AE-GA : 
-- AE-UA : 
-- VPN-GsH : 

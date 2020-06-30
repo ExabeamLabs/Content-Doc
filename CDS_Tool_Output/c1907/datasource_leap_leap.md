@@ -28,4 +28,3 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [leap-app-activity](parserContent_leap-app-activity.md)
 * [leap-app-activity-1](parserContent_leap-app-activity-1.md)
-* [leap-app-activity-2](parserContent_leap-app-activity-2.md)

@@ -21,9 +21,7 @@ Name = raw-scep-epp-alert
     """((?i)ClassificationSeverity"?:\s*|severity=)"+({alert_severity}[^"]+)""",
     """((?i)ClassificationCategory"?:\s*|category=)"+({alert_type}[^"]+)""",
     """\sfile_path="+({malware_url}[^",]+)""",
-    """(SrcAddress: |src=)"+({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """((?i)TargetProcess)"?(:|=)\s*"+({process_name}[^"]+)""",
+    """(SrcAddress: |src=)"+({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
-  DupFields = ["host->dest_host"]
 }
 ```

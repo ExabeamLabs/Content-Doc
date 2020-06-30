@@ -35,6 +35,5 @@ _The following Parsers can be operationalized using log data from this data sour
 * [pan-cef-alert-5](parserContent_pan-cef-alert-5.md)
 * [pan-cef-alert-6](parserContent_pan-cef-alert-6.md)
 * [pan-cef-alert-7](parserContent_pan-cef-alert-7.md)
-* [pan-flood-alert](parserContent_pan-flood-alert.md)
 * [q-pan-leef-alert](parserContent_q-pan-leef-alert.md)
 * [s-pan-correlation-alert](parserContent_s-pan-correlation-alert.md)

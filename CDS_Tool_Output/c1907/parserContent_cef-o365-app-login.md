@@ -12,7 +12,7 @@ Name = cef-o365-app-login
       """exabeam_host=({host}[^\s]+)""",
       """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+\w) ({host}[\w\-.]+) Skyformation""",
       """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
-      """\Wsuser=(\w+-\w+-\w+-\w+-\w+|({user_email}[^@\s]+?@[^@\s]+?)|({user}[^@\s]+?))\s+(\w+=|$)""",    
+      """\Wsuser=(({user_email}[^@\s]+?@[^@\s]+?)|({user}[^@\s]+?))\s+(\w+=|$)""",    
       """\Wsuser=[^@\s]*?@([\.\w+]+\.)?({email_domain}[^\.\s]+\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|ch))\s+""",
       """\Wrequest=({outcome}[^=]+?)\s+(\w+=|$)""",
       """([^\|]*\|){5}({activity}[^\|]+)""",
@@ -24,7 +24,7 @@ Name = cef-o365-app-login
       """"userDisplayName":"({user_fullname}[^"\s,]+\s+[^",]+)"""",
       """"userDisplayName":"({user_lastname}[^",]+),\s*({user_firstname}[^",]+?)"""",
       """"userPrincipalName":"({user_email}[^"\s@]+@[^"\s@]+)""",
-      """"userPrincipalName":"[^@\s]*?@([\.\w+]+\.)?({email_domain}[^\.\s"]+\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|ch))"""",
+      """"userPrincipalName":"[^@\s]*?@([\.\w+]+\.)?({email_domain}[^\.\s]+\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|ch))"""",
     ]
 }
 ```

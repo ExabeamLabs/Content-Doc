@@ -5,10 +5,8 @@ Use Case: Email Activity
 
 _The following list of Supported Exabeam Data Sources power this use case:_
 
-* [AWS](datasource_aws_cloudtrail_aws.md)
 * [AWS CloudTrail](datasource_aws_cloudtrail_aws_cloudtrail.md)
 * [Adaxes](datasource_adaxes_adaxes.md)
-* [Airlock](datasource_airlock_airlock.md)
 * [Microsoft Azure Active Directory](datasource_azure_active_directory_microsoft_azure_active_directory.md)
 * [BeyondTrust](datasource_beyondtrust_beyondtrust.md)
 * [Atlassian BitBucket](datasource_bitbucket_atlassian_bitbucket.md)
@@ -19,17 +17,10 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [CA Privileged Access Manager Server Control](datasource_ca_privileged_access_manager_server_control_ca_privileged_access_manager_server_control.md)
 * [CCURE](datasource_ccure_ccure.md)
 * [Carbon Black Protection](datasource_cb_protection_carbon_black_protection.md)
-* [Centrify](datasource_centrify_centrify.md)
 * [Check Point NGFW](datasource_check_point_ngfw_check_point_ngfw.md)
-* [Check Point](datasource_check_point_check_point.md)
-* [Cisco](datasource_cisco_email_security_appliance_cisco.md)
 * [Cisco](datasource_cisco_cisco.md)
-* [Citrix](datasource_citrix_endpoint_management_citrix.md)
-* [Citrix Gateway ActiveSync Connector](datasource_citrix_gateway_activesync_connector_citrix_gateway_activesync_connector.md)
 * [Citrix Netscaler](datasource_citrix_netscaler_citrix_netscaler.md)
-* [Citrix](datasource_citrix_sharefile_citrix.md)
 * [Citrix XenApp](datasource_citrix_xenapp_citrix_xenapp.md)
-* [Clearsense](datasource_clearsense_clearsense.md)
 * [Clearswift SEG](datasource_clearswift_seg_clearswift_seg.md)
 * [Code Green Network (Digital Guardian) TrueDLP](datasource_code_green_network_(digital_guardian)_truedlp_code_green_network_(digital_guardian)_truedlp.md)
 * [CrowdStrike Falcon](datasource_crowdstrike_falcon_crowdstrike_falcon.md)
@@ -42,7 +33,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Dropbox](datasource_dropbox_dropbox.md)
 * [Duo Security](datasource_duo_security_duo_security.md)
 * [EMP](datasource_emp_emp.md)
-* [Egnyte](datasource_egnyte_egnyte.md)
 * [Epic](datasource_epic_epic.md)
 * [Exabeam DL](datasource_exabeam_dl_exabeam_dl.md)
 * [FTP](datasource_ftp_ftp.md)
@@ -59,11 +49,9 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Google](datasource_google_mobile_google.md)
 * [Google](datasource_google_token_google.md)
 * [Google Cloud Platform](datasource_google_google_cloud_platform.md)
-* [Gravityzone](datasource_gravityzone_gravityzone.md)
 * [IBM Racf](datasource_ibm_racf_ibm_racf.md)
 * [IBM Sametime](datasource_ibm_sametime_ibm_sametime.md)
 * [ICDB](datasource_icdb_icdb.md)
-* [IMSVA](datasource_imsva_imsva.md)
 * [IPswitch MoveIt](datasource_ipswitch_moveit_ipswitch_moveit.md)
 * [Webmail OWA](datasource_isa_webmail_owa.md)
 * [Imprivata](datasource_imprivata_imprivata.md)
@@ -73,18 +61,14 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [LEAP](datasource_leap_leap.md)
 * [LOGBinder](datasource_logbinder_logbinder.md)
 * [LanScope](datasource_lanscope_lanscope.md)
-* [LastPass](datasource_lastpass_lastpass.md)
 * [Liebsoft](datasource_liebsoft_liebsoft.md)
 * [McAfee DLP](datasource_mcafee_dlp_mcafee_dlp.md)
 * [McAfee Email Protection](datasource_mcafee_email_protection_mcafee_email_protection.md)
 * [McAfee Skyhigh](datasource_mcafee_skyhigh_mcafee_skyhigh.md)
-* [Microsoft](datasource_microsoft_azure_active_directory_microsoft.md)
-* [Microsoft Azure EventHub](datasource_microsoft_azure_eventhub_microsoft_azure_eventhub.md)
 * [Microsoft Azure](datasource_microsoft_azure_microsoft_azure.md)
 * [Microsoft CAS](datasource_microsoft_cas_microsoft_cas.md)
 * [Microsoft Exchange](datasource_microsoft_exchange_microsoft_exchange.md)
 * [Mimecast](datasource_mimecast_mimecast.md)
-* [NetDocs](datasource_netdocs_netdocs.md)
 * [NetIQ](datasource_netiq_netiq.md)
 * [NetWrix](datasource_netwrix_netwrix.md)
 * [Netskope Active Platform](datasource_netskope_active_platform_netskope_active_platform.md)
@@ -111,7 +95,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Dell EMC RSA Authentication Manager](datasource_rsa_authentication_manager_dell_emc_rsa_authentication_manager.md)
 * [RSA DLP](datasource_rsa_dlp_rsa_dlp.md)
 * [RangerAudit](datasource_rangeraudit_rangeraudit.md)
-* [SAP](datasource_sap_sap.md)
 * [SFTP](datasource_sftp_sftp.md)
 * [Shibboleth SSO](datasource_sso_shibboleth_sso.md)
 * [SVN](datasource_svn_svn.md)
@@ -122,36 +105,22 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [SecureLink](datasource_securelink_securelink.md)
 * [Imperva SecureSphere](datasource_securesphere_imperva_securesphere.md)
 * [Unix](datasource_sendmail_unix.md)
-* [SentinelOne](datasource_sentinelone_sentinelone.md)
 * [ServiceNow](datasource_servicenow_servicenow.md)
-* [Silverfort](datasource_silverfort_silverfort.md)
 * [SkySea ClientView](datasource_skysea_clientview_skysea_clientview.md)
-* [Slack](datasource_slack_slack.md)
-* [Sophos SafeGuard](datasource_sophos_safeguard_sophos_safeguard.md)
-* [Swift](datasource_swift_swift.md)
-* [Swivel](datasource_swivel_swivel.md)
 * [Symantec](datasource_symantec_cloudsoc_symantec.md)
 * [Symantec DLP](datasource_symantec_dlp_symantec_dlp.md)
 * [Symantec Email Security.cloud](datasource_symantec_email_security.cloud_symantec_email_security.cloud.md)
-* [Symantec Endpoint Protection](datasource_symantec_endpoint_protection_symantec_endpoint_protection.md)
 * [Symantec](datasource_symantec_symantec.md)
 * [Thycotic Secret Server](datasource_thycotic_secret_server_thycotic_secret_server.md)
 * [TitanFTP](datasource_titanftp_titanftp.md)
 * [Trend Micro Deep Discovery Inspector](datasource_trend_micro_deep_discovery_inspector_trend_micro_deep_discovery_inspector.md)
 * [Trend Micro OfficeScan](datasource_trend_micro_officescan_trend_micro_officescan.md)
-* [Unix](datasource_unix_unix.md)
 * [VMware View](datasource_vmware_view_vmware_view.md)
-* [VMware vCenter](datasource_vmware_vmware_vcenter.md)
 * [SSL Open VPN](datasource_vpn_ssl_open_vpn.md)
-* [Vectra](datasource_vectra_vectra.md)
 * [Kemp](datasource_virtual_load_master_kemp.md)
 * [Microsoft Windows](datasource_windows_microsoft_windows.md)
 * [Workday](datasource_workday_workday.md)
 * [Xceedium](datasource_xceedium_xceedium.md)
-* [Zoom](datasource_zoom_zoom.md)
-* [Zscaler](datasource_zscaler_internet_access_zscaler.md)
-* [eDocs](datasource_edocs_edocs.md)
-* [iManage](datasource_imanage_imanage.md)
 * [oVirt](datasource_ovirt_ovirt.md)
 
 
@@ -161,53 +130,3 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 - app-login
 - dlp-email-alert-out
 - dlp-email-alert-out-failed
-### Exabeam Content Library for this Use Case
-
-
-_Rules_
-- C-A : Abnormal country for email domain
-- C-F : First country for email domain
-- ED-F : New Email-domain found in application
-- EM-DED : Email to a disposable email domain
-- EM-G-EXEC : INTERNAL: User has forwarded an executive email, but peer group model has not converged
-- EM-G-EXEC-A : Abnormal for this peer group has forwarded/sent an email from an executive user
-- EM-G-EXEC-F : First time this peer group has forwarded/sent an email from an executive user
-- EM-GD : INTERNAL: One of the top external domains in the peer group
-- EM-GD-A : Abnormal email domain for group
-- EM-GD-F : First email domain for group
-- EM-GFEXT-A : Abnormal file attachment type in email for peer group
-- EM-OD : INTERNAL: One of the top external domains in the organization
-- EM-OD-A : Abnormal email domain for organization
-- EM-OD-F : First email domain for organization
-- EM-OFEXT-A : Abnormal file attachment type in email for organization
-- EM-UD : INTERNAL: One of the top external domains in the user
-- EM-UD-A : Abnormal email domain for user
-- EM-UD-F : First email domain for user
-- EM-UFEXT-A : Abnormal file attachment type in email for user
-- FEM-AU : Emailing to a previously failed address
-- FEM-FU : Emailing a previously failed attachment
-- FEM-OU : Top user failing to send emails in organization
-- FEM-UD-F : First email failure to domain
-- FEM-UD-R : Repeated email failure to domain
-- G-INTERNAL : INTERNAL:Email sent to more recipients than usual for group, at least one external.
-- N-A : Abnormal for user to give mailbox permissions
-- N-F : First time a user has given mailbox permissions on another mailbox that is not their own
-
-
-_Exabeam Models_
-- APP-AppED : 
-- EM-EdC : 
-- EM-G-EXEC : 
-- EM-GD : 
-- EM-GFEXT : 
-- EM-InB-Perm-N : 
-- EM-OD : 
-- EM-OFEXT : 
-- EM-Recipients-grp : 
-- EM-UD : 
-- EM-UFEXT : 
-- FACT : 
-- FEM-AU : 
-- FEM-FU : 
-- FEM-OU : 
-- FEM-UD : 

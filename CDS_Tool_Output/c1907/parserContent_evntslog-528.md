@@ -16,8 +16,7 @@ Name = evntslog-528
     """Logon Process:\s+({auth_process}.+?)\s+Authentication Package:\s+({auth_package}[^\s]+)""",
     """Workstation Name:\s+({src_host_windows}[\w.\-\$]+)""",
     """Workstation Name:\s+({src_host}[\w.\-\$]+).*?Source Network Address:\s*-\s+""",
-    """Workstation Name:\s+({dest_host}[\w.\-\$]+)""",
-    """Caller User Name:\s+({account}[\w.\-\$]+)""",
+    """Workstation Name:\s+({dest_host}[\w.\-\$]+)"""
   ]
   DupFields = [ "dest_host->host" ]
 }

@@ -13,8 +13,6 @@ Name = cef-aws-guardduty
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ).+?CEF""",
     """\ssrc=({src_ip}\S+)""",
     """\sdst=({dest_ip}\S+)""",
-    """"privateIpAddress":"({dest_ip}[^"]+)""",
-    """\srequestClientApplication=({app}\S+)""",
     """\sdhost=({dest_host}\S+)""",
     """\ssuser=(|Anonymous|({user}.+?))\s+(\w+=|$)""",
     """\sext_type=({alert_type}.+?)(\s+\w+=|\s*$)""",

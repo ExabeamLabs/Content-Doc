@@ -41,4 +41,3 @@ _The following Parsers can be operationalized using log data from this data sour
 * [isilon-file-permission-change](parserContent_isilon-file-permission-change.md)
 * [isilon-file-read](parserContent_isilon-file-read.md)
 * [isilon-file-write](parserContent_isilon-file-write.md)
-* [json-dell-file-operations](parserContent_json-dell-file-operations.md)

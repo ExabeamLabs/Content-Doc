@@ -18,7 +18,7 @@ Name = raw-4719
     """\s+Logon ID:\s+({logon_id}[^\s]+)""",
     """\s+Category:\s+({audit_category}.+?)\s+Subcategory:""",
     """\s+Subcategory:\s+({subcategory}.+?)\s+Subcategory GUID:""",
-    """\s+Changes:\s+({policy}.*?)\s*(\||\d|<)"""
+    """\s+Changes:\s+({policy}.+?)\s+\d+"""
   ]
   DupFields = [ "host->dest_host" ]
 }

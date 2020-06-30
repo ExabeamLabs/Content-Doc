@@ -29,4 +29,3 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [cef-paloalto-firewall-global-protect](parserContent_cef-paloalto-firewall-global-protect.md)
 * [palo-alto-app-activity](parserContent_palo-alto-app-activity.md)
-* [raw-pan-vpn-app-activity](parserContent_raw-pan-vpn-app-activity.md)

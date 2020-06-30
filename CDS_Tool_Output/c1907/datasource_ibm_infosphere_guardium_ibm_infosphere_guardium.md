@@ -36,6 +36,5 @@ _The following Parsers can be operationalized using log data from this data sour
 * [s-db-access](parserContent_s-db-access.md)
 * [s-db-failed-login](parserContent_s-db-failed-login.md)
 * [s-db-login](parserContent_s-db-login.md)
-* [s-guardium-db-access](parserContent_s-guardium-db-access.md)
 * [s-guardium-db-alert](parserContent_s-guardium-db-alert.md)
 * [s-guardium-db-alert-1](parserContent_s-guardium-db-alert-1.md)

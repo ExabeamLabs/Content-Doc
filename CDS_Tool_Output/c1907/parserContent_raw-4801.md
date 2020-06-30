@@ -17,7 +17,6 @@ Name = raw-4801
     """Account Name:\s*({user}.+?)\s*Account Domain""",
     """Account Domain:\s*({domain}.+?)\s*Logon ID""",
     """Logon ID:\s+({logon_id}[^\s]+)\s+Session""",
-    """\d+-\d+-\d+T\d+:\d+:\d+([\+\-]\d+:\d+|Z)\s+({host}[\w\-.]+)\s""",
     """Computer(\w+)?["\s]*(:|=)\s*"?({host}.+?)("|\s)"""
   ]
   DupFields = [ "host->dest_host" ]

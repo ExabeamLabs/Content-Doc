@@ -29,5 +29,3 @@ _The following Parsers can be operationalized using log data from this data sour
 * [graylog-ras-auth-failed](parserContent_graylog-ras-auth-failed.md)
 * [graylog-ras-auth-successful](parserContent_graylog-ras-auth-successful.md)
 * [radius-nac-logon](parserContent_radius-nac-logon.md)
-* [secure-envoy-failed](parserContent_secure-envoy-failed.md)
-* [secure-envoy-successful](parserContent_secure-envoy-successful.md)

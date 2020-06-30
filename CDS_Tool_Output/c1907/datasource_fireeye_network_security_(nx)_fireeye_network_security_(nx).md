@@ -30,7 +30,6 @@ _The following Parsers can be operationalized using log data from this data sour
 * [fireeye-cef-alert](parserContent_fireeye-cef-alert.md)
 * [fireeye-cef-alert-no-connector](parserContent_fireeye-cef-alert-no-connector.md)
 * [fireeye-cef-email-alert](parserContent_fireeye-cef-email-alert.md)
-* [fireeye-json-alert-email](parserContent_fireeye-json-alert-email.md)
 * [fireeye-mps-json-generic-alert](parserContent_fireeye-mps-json-generic-alert.md)
 * [fireeye-mps-json-generic-alert-1](parserContent_fireeye-mps-json-generic-alert-1.md)
 * [fireeye-mps-json-unformatted-alert](parserContent_fireeye-mps-json-unformatted-alert.md)

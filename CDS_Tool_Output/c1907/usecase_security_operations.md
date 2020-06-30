@@ -8,7 +8,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [AD Audit](datasource_ad_audit_ad_audit.md)
 * [BlueCat Networks Adonis](datasource_bluecat_networks_adonis_bluecat_networks_adonis.md)
 * [Bro](datasource_bro_bro.md)
-* [Centrify](datasource_centrify_centrify.md)
 * [Cisco Adaptive Security Appliance](datasource_cisco_adaptive_security_appliance_cisco_adaptive_security_appliance.md)
 * [Cisco Firepower](datasource_cisco_firepower_cisco_firepower.md)
 * [CrowdStrike Falcon](datasource_crowdstrike_falcon_crowdstrike_falcon.md)
@@ -19,20 +18,14 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Cisco Firepower](datasource_dns_cisco_firepower.md)
 * [F5](datasource_dns_f5.md)
 * [Microsoft Windows DNSServer](datasource_dns_microsoft_windows_dnsserver.md)
-* [ExtraHop](datasource_extrahop_extrahop.md)
 * [Palo Alto Networks GlobalProtect](datasource_globalprotect_portal_palo_alto_networks_globalprotect.md)
-* [IPswitch](datasource_ipswitch_moveit_dmz_ipswitch.md)
-* [Infoblox](datasource_infoblox_bloxone_infoblox.md)
 * [Infoblox](datasource_infoblox_infoblox.md)
-* [Microsoft Azure](datasource_microsoft_azure_microsoft_azure.md)
 * [NetWrix](datasource_netwrix_netwrix.md)
 * [Cisco OpenDNS Umbrella](datasource_opendns_umbrella_cisco_opendns_umbrella.md)
-* [SentinelOne](datasource_sentinelone_sentinelone.md)
 * [Splunk Stream](datasource_splunk_stream_splunk_stream.md)
 * [Tanium Endpoint Platform](datasource_tanium_endpoint_platform_tanium_endpoint_platform.md)
 * [Unix](datasource_unix_unix.md)
 * [Unix](datasource_unix_unix.md)
-* [F5 VPN](datasource_vpn_f5_vpn.md)
 * [Microsoft Windows](datasource_windows_microsoft_windows.md)
 * [Unix](datasource_krb5kdc_unix.md)
 
@@ -43,23 +36,3 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 - dns-query
 - dns-response
 - failed-logon
-### Exabeam Content Library for this Use Case
-
-
-_Rules_
-- DNS-DGADOM-QUERY : DNS query for DGA domain from this asset
-- DNS-DGADOM-RESPONSE : DNS query for DGA domain was successful from this asset
-- DNS-MALDOM-QUERY : DNS query for blacklisted domain from this asset
-- DNS-MALDOM-RESPONSE : DNS query for blacklisted domain was successful from this asset
-- FL-MULTI-DEST : Failed logins to multiple destinations from host
-- FL-MULTI-DEST-M : Failed logins to multiple destinations from host (M)
-- FL-MULTI-DEST-S : Failed logins to multiple destinations from host (S)
-- FL-MULTI-USERS : Multiple users failed to login
-- FL-MULTI-USERS-L : Multiple users failed to login (L)
-- FL-MULTI-USERS-M : Multiple users failed to login (M)
-- FL-MULTI-USERS-S : Multiple users failed to login (S)
-- FL-MULTI-USERS-SRC : The same host failed to login to multiple users
-
-
-_Exabeam Models_
-- FACT : 

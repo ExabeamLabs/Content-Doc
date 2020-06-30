@@ -5,10 +5,8 @@ Use Case: Application Activity
 
 _The following list of Supported Exabeam Data Sources power this use case:_
 
-* [AWS](datasource_aws_cloudtrail_aws.md)
 * [AWS CloudTrail](datasource_aws_cloudtrail_aws_cloudtrail.md)
 * [Adaxes](datasource_adaxes_adaxes.md)
-* [Airlock](datasource_airlock_airlock.md)
 * [Microsoft Azure Active Directory](datasource_azure_active_directory_microsoft_azure_active_directory.md)
 * [Barracuda Firewall](datasource_barracuda_firewall_barracuda_firewall.md)
 * [BeyondTrust](datasource_beyondtrust_beyondtrust.md)
@@ -20,7 +18,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [CCURE](datasource_ccure_ccure.md)
 * [CatoNetworks](datasource_catonetworks_catonetworks.md)
 * [Carbon Black Protection](datasource_cb_protection_carbon_black_protection.md)
-* [Centrify](datasource_centrify_centrify.md)
 * [Check Point NGFW](datasource_check_point_ngfw_check_point_ngfw.md)
 * [Check Point Security Gateway](datasource_check_point_security_gateway_check_point_security_gateway.md)
 * [Cisco Adaptive Security Appliance](datasource_cisco_adaptive_security_appliance_cisco_adaptive_security_appliance.md)
@@ -28,12 +25,8 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Cisco ISE](datasource_cisco_ise_cisco_ise.md)
 * [Cisco Meraki MX appliances](datasource_cisco_meraki_mx_appliances_cisco_meraki_mx_appliances.md)
 * [Cisco](datasource_cisco_cisco.md)
-* [Citrix](datasource_citrix_endpoint_management_citrix.md)
-* [Citrix Gateway ActiveSync Connector](datasource_citrix_gateway_activesync_connector_citrix_gateway_activesync_connector.md)
 * [Citrix Netscaler](datasource_citrix_netscaler_citrix_netscaler.md)
-* [Citrix](datasource_citrix_sharefile_citrix.md)
 * [Citrix XenApp](datasource_citrix_xenapp_citrix_xenapp.md)
-* [Clearsense](datasource_clearsense_clearsense.md)
 * [CrowdStrike Falcon](datasource_crowdstrike_falcon_crowdstrike_falcon.md)
 * [CyberArk Privileged Session Manager](datasource_cyberark_privileged_session_manager_cyberark_privileged_session_manager.md)
 * [CyberArk Vault](datasource_cyberark_vault_cyberark_vault.md)
@@ -43,7 +36,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Dropbox](datasource_dropbox_dropbox.md)
 * [Duo Security](datasource_duo_security_duo_security.md)
 * [EMP](datasource_emp_emp.md)
-* [Egnyte](datasource_egnyte_egnyte.md)
 * [Epic](datasource_epic_epic.md)
 * [Exabeam DL](datasource_exabeam_dl_exabeam_dl.md)
 * [FTP](datasource_ftp_ftp.md)
@@ -60,7 +52,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Google](datasource_google_mobile_google.md)
 * [Google](datasource_google_token_google.md)
 * [Google Cloud Platform](datasource_google_google_cloud_platform.md)
-* [Gravityzone](datasource_gravityzone_gravityzone.md)
 * [IBM Racf](datasource_ibm_racf_ibm_racf.md)
 * [IBM Sametime](datasource_ibm_sametime_ibm_sametime.md)
 * [ICDB](datasource_icdb_icdb.md)
@@ -72,18 +63,13 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [LEAP](datasource_leap_leap.md)
 * [LOGBinder](datasource_logbinder_logbinder.md)
 * [LanScope](datasource_lanscope_lanscope.md)
-* [LastPass](datasource_lastpass_lastpass.md)
 * [Liebsoft](datasource_liebsoft_liebsoft.md)
 * [McAfee Skyhigh](datasource_mcafee_skyhigh_mcafee_skyhigh.md)
-* [Microsoft](datasource_microsoft_azure_active_directory_microsoft.md)
-* [Microsoft Azure EventHub](datasource_microsoft_azure_eventhub_microsoft_azure_eventhub.md)
 * [Microsoft Azure](datasource_microsoft_azure_microsoft_azure.md)
 * [Microsoft CAS](datasource_microsoft_cas_microsoft_cas.md)
 * [Microsoft Exchange](datasource_microsoft_exchange_microsoft_exchange.md)
 * [Microsoft SQL Server](datasource_microsoft_sql_server_microsoft_sql_server.md)
-* [Microsoft Windows](datasource_microsoft_windows_microsoft_windows.md)
 * [Mimecast](datasource_mimecast_mimecast.md)
-* [NetDocs](datasource_netdocs_netdocs.md)
 * [NetIQ](datasource_netiq_netiq.md)
 * [NetWrix](datasource_netwrix_netwrix.md)
 * [Netskope Active Platform](datasource_netskope_active_platform_netskope_active_platform.md)
@@ -107,9 +93,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Procad Pro.File DMS](datasource_procad_pro.file_dms_procad_pro.file_dms.md)
 * [Pulse Secure](datasource_pulse_secure_pulse_secure.md)
 * [Dell EMC RSA Authentication Manager](datasource_rsa_authentication_manager_dell_emc_rsa_authentication_manager.md)
-* [RSA SecurID](datasource_rsa_securid_rsa_securid.md)
 * [RangerAudit](datasource_rangeraudit_rangeraudit.md)
-* [SAP](datasource_sap_sap.md)
 * [SFTP](datasource_sftp_sftp.md)
 * [Shibboleth SSO](datasource_sso_shibboleth_sso.md)
 * [SVN](datasource_svn_svn.md)
@@ -118,24 +102,14 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [SecureAuth](datasource_secureauth_secureauth.md)
 * [SecureLink](datasource_securelink_securelink.md)
 * [Imperva SecureSphere](datasource_securesphere_imperva_securesphere.md)
-* [SentinelOne](datasource_sentinelone_sentinelone.md)
 * [ServiceNow](datasource_servicenow_servicenow.md)
-* [Silverfort](datasource_silverfort_silverfort.md)
 * [SkySea ClientView](datasource_skysea_clientview_skysea_clientview.md)
-* [Slack](datasource_slack_slack.md)
 * [Sonicwall](datasource_sonicwall_sonicwall.md)
-* [Sophos SafeGuard](datasource_sophos_safeguard_sophos_safeguard.md)
-* [Sophos](datasource_sophos_sophos.md)
-* [Swift](datasource_swift_swift.md)
-* [Swivel](datasource_swivel_swivel.md)
 * [Symantec](datasource_symantec_cloudsoc_symantec.md)
-* [Symantec Endpoint Protection](datasource_symantec_endpoint_protection_symantec_endpoint_protection.md)
 * [Thycotic Secret Server](datasource_thycotic_secret_server_thycotic_secret_server.md)
 * [TitanFTP](datasource_titanftp_titanftp.md)
 * [Trend Micro Deep Discovery Inspector](datasource_trend_micro_deep_discovery_inspector_trend_micro_deep_discovery_inspector.md)
-* [Unix](datasource_unix_unix.md)
 * [VMware View](datasource_vmware_view_vmware_view.md)
-* [VMware vCenter](datasource_vmware_vmware_vcenter.md)
 * [Citrix Netscaler](datasource_vpn_citrix_netscaler.md)
 * [Dell Aventail](datasource_vpn_dell_aventail.md)
 * [F5 VPN](datasource_vpn_f5_vpn.md)
@@ -146,15 +120,10 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [SSL Open VPN](datasource_vpn_ssl_open_vpn.md)
 * [SecureNet](datasource_vpn_securenet.md)
 * [Zscaler](datasource_vpn_zscaler.md)
-* [Vectra](datasource_vectra_vectra.md)
 * [Kemp](datasource_virtual_load_master_kemp.md)
 * [Microsoft Windows](datasource_windows_microsoft_windows.md)
 * [Workday](datasource_workday_workday.md)
 * [Xceedium](datasource_xceedium_xceedium.md)
-* [Zoom](datasource_zoom_zoom.md)
-* [Zscaler](datasource_zscaler_internet_access_zscaler.md)
-* [eDocs](datasource_edocs_edocs.md)
-* [iManage](datasource_imanage_imanage.md)
 * [oVirt](datasource_ovirt_ovirt.md)
 
 
@@ -165,37 +134,3 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 - failed-app-login
 - session-end
 - vpn-logout
-### Exabeam Content Library for this Use Case
-
-
-_Rules_
-- A-A : Abnormal application activity for peer group
-- A-A : Abnormal application activity for user
-- A-F : First application activity for peer group
-- A-F : First application activity for user
-- APP-AA-A : Abnormal activity in application for the organization
-- APP-AA-F : First application activity in the organization
-- APP-AT-PRIV : Non-privileged user performing privileged application activity
-- APP-F-FL : Failed login to application
-- APP-UFL-COUNT : Abnormal number of failed application logins for user
-- C-F : First activity from country and first os/browser/user agent for user in same session
-- G-F : First login to an application for group
-- H-A : Abnormal source asset for user in application
-- H-F : First source asset for user in application
-- T-PRIV : Non-privileged user accessing privileged application object
-- U-F : First login to an application for a user with no history
-- U-F : Reuse of client Id
-
-
-_Exabeam Models_
-- APP-AA : 
-- APP-AT-PRIV : 
-- APP-AppG : 
-- APP-AppU : 
-- APP-GappA : 
-- APP-IdU : 
-- APP-ObT-PRIV : 
-- APP-UFL-COUNT : 
-- APP-UappA : 
-- APP-UsH : 
-- FACT : 

@@ -10,7 +10,6 @@ Name = vmware-view-login
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """\d\d:\d\d:\d\d\s+({host}[^\s]+)\s+\d+\s+""",
-    """({app}View)""",
     """\s+({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
     """\s+ForwardedClientIpAddress="[^"]*?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
     """\s+({dest_host}[^\s]+)\s+View - """,

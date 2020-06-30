@@ -1,34 +1,28 @@
 #### Parser Content
 ```Java
 {
-Name = raw-4778-1
+Name = raw-4778
     Vendor = Microsoft
     Product = Microsoft Windows
     Lms = Direct
     DataType = "windows-4778"
-    TimeFormat = "yyyy-MM-dd HH:mm:ss"
-    Conditions = [ """EventCategory=""", """EventID=4778""", """Microsoft-Windows-Security-Auditing""" ]
+    TimeFormat = "MMM dd HH:mm:ss yyyy"
+    Conditions = ["A session was reconnected to a Window Station", "Session Name"]
     Fields = [
-      """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
-      """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """EventSource=({event_name}[^\s]+)\s""",
-      """Description=({event_name}[^\.]+).""",
+      """({event_name}A session was reconnected to a Window Station)""",
+      """({host}[\w\-.]+)\s+({time}\d+\/\d+\/\d+\s+\d+:\d+:\d+\s+(am|AM|pm|PM))""",
+      """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
+      """(?i)(((audit|success)( |_)(success|audit))|information)\s*(\s|\t|,|#\d+|<[^>]+>)\s*({host}[^=]+?)\s*(\s|\t|,|#\d+|<[^>]+>)\s*""",
+      """({host}[\w.\-]+)\s*:\s+A session was reconnected to a Window Station""",
+      """({host}[^\s\/]+)\/Microsoft-Windows-Security-Auditing \(4778\)""",
+      """"dhn":"({host}[^-"]+)""",
+      """<Computer>({host}[^<]+)</Computer>""",
+      """Computer(\w+)?["\s]*(:|=)\s*"?({host}.+?)("|\s|;)""",
       """({event_code}4778)""",
-      """WindowsVersion=({os_version}.+?)\s*\w+=""",
-      """({time_created}\d{1,4}-\d{1,2}-\d{1,2} \d{1,2}:\d{1,2}:\d{1,2})\s""",
-      """User=(null|({user}.+?))\s*\w+=""",
-      """Client Address=({src_ip}[^"]+)""""
-      """Client Name=({src_host}[^\s]+)\s"""
-      """Account Name=({user}[^\s]+)\s"""
-      """Message=({additional_info}[^\.]+)."""
-      """Account Domain=({domain}[^\s]+)\s"""
-      """Logon ID=({logon_id}[^\s]+)\s"""
-      """ComputerName=({host}[^\s]+)\s""",
-      """EventType=({outcome}.+?)\s*\w+=""",
-      """Key\[0\]=({user}[^\s]+)\s""",
-      """Key\[5\]=({src_ip}[^"]+)"""",
-      """Key\[4\]=({host}[^\s]+)\s""",
-      """Key\[2\]=({logon_id}[^\s]+)\s""",
+      """Account Name(:|=)\s*({user}[^\s;]+)[\s;]*Account Domain(:|=)""",
+      """Account Domain(:|=)\s*({domain}[^\s;]+)[\s;]*Logon ID(:|=)""",
+      """Service Name(:|=)\s*({dest_host}.+?)[\s;]*Service ID""",
+      """Client Address(:|=)\s*(::[\w]+:)?({src_ip}[a-fA-F:\d.]+)"""
     ]
   }
 ```

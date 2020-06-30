@@ -1,26 +1,28 @@
 #### Parser Content
 ```Java
 {
-Name = cef-securesphere-db-alert-2
+Name = cef-securesphere-db-alert
   Vendor = Imperva
   Product = Imperva SecureSphere
-  Lms = ArcSight
+  Lms = Splunk
   DataType = "database-alert"
   IsHVF = true
   TimeFormat = "MMM dd yyyy HH:mm:ss"
-  Conditions = [ """CEF:""", """|Imperva Inc.|SecureSphere""", """cat=Alert""", """cs1Label=ServerGroup""" ]
+  Conditions = [ """|Imperva Inc.|SecureSphere""", """cat=Alert""", """=ServerGroup""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """\Wrt=({time}\w+ \d+ \d{4} \d\d:\d\d:\d\d)""",
-    """\Wsrc=\s*(0.0.0.0|({src_ip}[A-Fa-f:\d.]+))""",
-    """\Wdst=\s*(0.0.0.0|({dest_ip}[A-Fa-f:\d.]+))""",
-    """\Wduser=(?:n\/a|(({domain}[^\\\s"]+)\\+)?({user}[^\\\s"]+?))\s+(\w+=|$)""",
-    """\Wcs1=(|({server_group}.+?))\s+(\w+=|$)""",
-    """\Wcs2=(|({service_name}.+?))\s+(\w+=|$)""",
-    """\Wcs3=(|({app}.+?))\s+(\w+=|$)""",
-    """CEF:([^\|]*\|){5}({alert_name}[^\|]+)""",
-    """CEF:([^\|]*\|){6}({alert_severity}[^\|]+)""",
+    """\srt=({time}\w+ \d+ \d{4} \d\d:\d\d:\d\d)""",
+    """\d\d:\d\d:\d\d ({host}.+?) CEF:""",
+    """\sduser="*(?:n\/a|(({domain}[^\\\s"]+)\\+)?({user}[^\\\s"]+?))"*\s*\w+=""",
+    """\scs4=(?: |({app}.+?))\s*\w+=""",
+    """\scs3=(?: |({service_name}.+?))\s*\w+=""",
+    """\scs2=(?: |({server_group}.+?))\s*\w+=""",
+    """\stable=(?: |({table_name}[^.,]+))""",
+    """\ssrc=(0.0.0.0|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))""",
+    """\sdst=\s*({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """\scs5=({alert_name}.+?) (from|by|\w+=)""",
+    """\scs1=({alert_type}.+?)\s*\w+=""",
+    """alert_num=({alert_id}\d+)""",
+    """([^|]+\|){8}({alert_severity}[^|]+)"""
   ]
-  DupFields = [ "alert_name->alert_type" ]
 }
 ```

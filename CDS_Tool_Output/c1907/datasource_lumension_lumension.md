@@ -31,7 +31,6 @@ _The following Parsers can be operationalized using log data from this data sour
 * [lumension-failed-usb-activity-3](parserContent_lumension-failed-usb-activity-3.md)
 * [lumension-failed-usb-activity-4](parserContent_lumension-failed-usb-activity-4.md)
 * [lumension-usb-activity](parserContent_lumension-usb-activity.md)
-* [lumension-usb-activity-1](parserContent_lumension-usb-activity-1.md)
 * [lumension-usb-insert-1](parserContent_lumension-usb-insert-1.md)
 * [lumension-usb-insert-2](parserContent_lumension-usb-insert-2.md)
 * [lumension-usb-read](parserContent_lumension-usb-read.md)

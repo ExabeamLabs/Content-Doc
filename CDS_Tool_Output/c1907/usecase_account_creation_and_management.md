@@ -7,20 +7,14 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 
 * [AD Audit](datasource_ad_audit_ad_audit.md)
 * [APC](datasource_apc_apc.md)
-* [ASUPIM](datasource_asupim_asupim.md)
-* [AWS](datasource_aws_cloudtrail_aws.md)
 * [AWS CloudTrail](datasource_aws_cloudtrail_aws_cloudtrail.md)
 * [Adaxes](datasource_adaxes_adaxes.md)
-* [AirWatch](datasource_airwatch_airwatch.md)
-* [Airlock](datasource_airlock_airlock.md)
-* [AssetView](datasource_assetview_assetview.md)
 * [Avecto Defendpoint](datasource_avecto_defendpoint_avecto_defendpoint.md)
 * [Microsoft Azure Active Directory](datasource_azure_active_directory_microsoft_azure_active_directory.md)
 * [AMAG](datasource_badge_amag.md)
 * [CCURE](datasource_badge_ccure.md)
 * [DataWatch](datasource_badge_datawatch.md)
 * [Galaxy](datasource_badge_galaxy.md)
-* [Gallagher](datasource_badge_gallagher.md)
 * [Honeywell](datasource_badge_honeywell.md)
 * [Honeywell WIN-PAK](datasource_badge_honeywell_win-pak.md)
 * [ICPAM](datasource_badge_icpam.md)
@@ -55,22 +49,16 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Cisco Adaptive Security Appliance](datasource_cisco_adaptive_security_appliance_cisco_adaptive_security_appliance.md)
 * [Cisco AnyConnect](datasource_cisco_anyconnect_cisco_anyconnect.md)
 * [Cisco ISE](datasource_cisco_ise_cisco_ise.md)
-* [Cisco Meraki Firepower](datasource_cisco_meraki_firepower_cisco_meraki_firepower.md)
 * [Cisco Meraki MX appliances](datasource_cisco_meraki_mx_appliances_cisco_meraki_mx_appliances.md)
 * [Cisco](datasource_cisco_cisco.md)
-* [Citrix](datasource_citrix_endpoint_management_citrix.md)
-* [Citrix Gateway ActiveSync Connector](datasource_citrix_gateway_activesync_connector_citrix_gateway_activesync_connector.md)
 * [Citrix Netscaler](datasource_citrix_netscaler_citrix_netscaler.md)
-* [Citrix](datasource_citrix_sharefile_citrix.md)
 * [Citrix XenApp](datasource_citrix_xenapp_citrix_xenapp.md)
 * [Citrix XenDesktop](datasource_citrix_xendesktop_citrix_xendesktop.md)
-* [Clearsense](datasource_clearsense_clearsense.md)
 * [CrowdStrike Falcon](datasource_crowdstrike_falcon_crowdstrike_falcon.md)
 * [CyberArk Privileged Session Manager](datasource_cyberark_privileged_session_manager_cyberark_privileged_session_manager.md)
 * [CyberArk Vault](datasource_cyberark_vault_cyberark_vault.md)
 * [Cylance PROTECT](datasource_cylance_protect_cylance_protect.md)
 * [Microsoft Windows](datasource_dc_microsoft_windows.md)
-* [Sailpoint SIQ](datasource_dc_sailpoint_siq.md)
 * [Dell EMC](datasource_dell_emc_dell_emc.md)
 * [Dell Quest TPAM](datasource_dell_quest_tpam_dell_quest_tpam.md)
 * [Digital Guardian Endpoint Protection](datasource_digital_guardian_endpoint_protection_digital_guardian_endpoint_protection.md)
@@ -78,9 +66,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Dtex](datasource_dtex_dtex.md)
 * [Duo Security](datasource_duo_security_duo_security.md)
 * [EMP](datasource_emp_emp.md)
-* [ESET Endpoint Security](datasource_eset_endpoint_security_eset_endpoint_security.md)
 * [KABA EXOS](datasource_exos_kaba_exos.md)
-* [Egnyte](datasource_egnyte_egnyte.md)
 * [Epic](datasource_epic_epic.md)
 * [Exabeam DL](datasource_exabeam_dl_exabeam_dl.md)
 * [F5 Big-IP Access Policy Manager (APM)](datasource_f5_big-ip_access_policy_manager_(apm)_f5_big-ip_access_policy_manager_(apm).md)
@@ -91,8 +77,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Fortinet UTM](datasource_fortinet_utm_fortinet_utm.md)
 * [Fortinet VPN](datasource_fortinet_vpn_fortinet_vpn.md)
 * [Google](datasource_g_suite_google.md)
-* [Gemalto MFA](datasource_gemalto_mfa_gemalto_mfa.md)
-* [Genetec](datasource_genetec_genetec.md)
 * [GitHub](datasource_github_github.md)
 * [Palo Alto Networks GlobalProtect](datasource_globalprotect_gateway_portal_palo_alto_networks_globalprotect.md)
 * [Palo Alto Networks GlobalProtect](datasource_globalprotect_portal_palo_alto_networks_globalprotect.md)
@@ -103,11 +87,9 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Google](datasource_google_mobile_google.md)
 * [Google](datasource_google_token_google.md)
 * [Google Cloud Platform](datasource_google_google_cloud_platform.md)
-* [Gravityzone](datasource_gravityzone_gravityzone.md)
 * [HP SafeCom](datasource_hp_safecom_hp_safecom.md)
 * [HP](datasource_hp_hp.md)
 * [Unified Security Gateway](datasource_huawei_unified_security_gateway.md)
-* [IBM DB2](datasource_ibm_db2_ibm_db2.md)
 * [IBM Racf](datasource_ibm_racf_ibm_racf.md)
 * [IBM Sametime](datasource_ibm_sametime_ibm_sametime.md)
 * [ICDB](datasource_icdb_icdb.md)
@@ -115,7 +97,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Webmail OWA](datasource_isa_webmail_owa.md)
 * [Imprivata](datasource_imprivata_imprivata.md)
 * [InfoWatch](datasource_infowatch_infowatch.md)
-* [Infoblox](datasource_infoblox_infoblox.md)
 * [Juniper Networks](datasource_juniper_srx_juniper_networks.md)
 * [KiteWorks](datasource_kiteworks_kiteworks.md)
 * [Sun One](datasource_ldap_sun_one.md)
@@ -123,18 +104,13 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [LOGBinder](datasource_logbinder_logbinder.md)
 * [LanScope Cat](datasource_lanscope_cat_lanscope_cat.md)
 * [LanScope](datasource_lanscope_lanscope.md)
-* [LastPass](datasource_lastpass_lastpass.md)
 * [Lexmark](datasource_lexmark_lexmark.md)
 * [Liebsoft](datasource_liebsoft_liebsoft.md)
 * [IBM Lotus Mobile Connect](datasource_lotus_mobile_connect_ibm_lotus_mobile_connect.md)
 * [Lyrix](datasource_lyrix_lyrix.md)
-* [MIPS](datasource_mips_mips.md)
 * [MasterSAM PAM](datasource_mastersam_pam_mastersam_pam.md)
 * [McAfee DLP](datasource_mcafee_dlp_mcafee_dlp.md)
 * [McAfee Skyhigh](datasource_mcafee_skyhigh_mcafee_skyhigh.md)
-* [Visma](datasource_megaflex_visma.md)
-* [Microsoft](datasource_microsoft_azure_active_directory_microsoft.md)
-* [Microsoft Azure EventHub](datasource_microsoft_azure_eventhub_microsoft_azure_eventhub.md)
 * [Microsoft Azure](datasource_microsoft_azure_microsoft_azure.md)
 * [Microsoft CAS](datasource_microsoft_cas_microsoft_cas.md)
 * [Microsoft Exchange](datasource_microsoft_exchange_microsoft_exchange.md)
@@ -146,10 +122,8 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Mimecast](datasource_mimecast_mimecast.md)
 * [Paxton](datasource_net2door_paxton.md)
 * [Namespace rDirectory](datasource_namespace_rdirectory_namespace_rdirectory.md)
-* [NetDocs](datasource_netdocs_netdocs.md)
 * [NetIQ](datasource_netiq_netiq.md)
 * [NetWrix](datasource_netwrix_netwrix.md)
-* [Netscaler VPN](datasource_netscaler_vpn_netscaler_vpn.md)
 * [Netskope Active Platform](datasource_netskope_active_platform_netskope_active_platform.md)
 * [HP Aruba](datasource_network_hp_aruba.md)
 * [Radius](datasource_network_radius.md)
@@ -176,19 +150,15 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [PicturePerfect](datasource_pictureperfect_pictureperfect.md)
 * [Ping Identity](datasource_ping_identity_ping_identity.md)
 * [Ping Identity](datasource_pingconnect_ping_identity.md)
-* [PingOne](datasource_pingone_pingone.md)
 * [PostScript](datasource_postscript_postscript.md)
 * [PowerSentry](datasource_powersentry_powersentry.md)
 * [Procad Pro.File DMS](datasource_procad_pro.file_dms_procad_pro.file_dms.md)
 * [Pulse Secure](datasource_pulse_secure_pulse_secure.md)
-* [RS2](datasource_rs2_rs2.md)
 * [Dell EMC RSA Authentication Manager](datasource_rsa_authentication_manager_dell_emc_rsa_authentication_manager.md)
 * [RUID](datasource_ruid_ruid.md)
 * [RangerAudit](datasource_rangeraudit_rangeraudit.md)
-* [LogMeIn](datasource_remotelyanywhere_logmein.md)
 * [Ricoh](datasource_ricoh_ricoh.md)
 * [Ruckus](datasource_ruckus_ruckus.md)
-* [SAP](datasource_sap_sap.md)
 * [SFTP](datasource_sftp_sftp.md)
 * [Shibboleth SSO](datasource_sso_shibboleth_sso.md)
 * [SVN](datasource_svn_svn.md)
@@ -199,27 +169,16 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [SecureAuth](datasource_secureauth_secureauth.md)
 * [SecureLink](datasource_securelink_securelink.md)
 * [Imperva SecureSphere](datasource_securesphere_imperva_securesphere.md)
-* [Tufin](datasource_securetrack_tufin.md)
-* [SecurityExpert](datasource_securityexpert_securityexpert.md)
 * [Sensormatik](datasource_sensormatik_sensormatik.md)
-* [SentinelOne](datasource_sentinelone_sentinelone.md)
 * [ServiceNow](datasource_servicenow_servicenow.md)
 * [Shibboleth IdP](datasource_shibboleth_idp_shibboleth_idp.md)
 * [Shibboleth](datasource_shibboleth_shibboleth.md)
-* [Siemens](datasource_siemens_siemens.md)
-* [Silverfort](datasource_silverfort_silverfort.md)
 * [SiteMinder](datasource_siteminder_siteminder.md)
 * [SkySea ClientView](datasource_skysea_clientview_skysea_clientview.md)
-* [Slack](datasource_slack_slack.md)
 * [Sonicwall](datasource_sonicwall_sonicwall.md)
-* [Sophos SafeGuard](datasource_sophos_safeguard_sophos_safeguard.md)
-* [Sophos](datasource_sophos_sophos.md)
 * [StealthBits StealthIntercept](datasource_stealthbits_stealthintercept_stealthbits_stealthintercept.md)
 * [StealthBits](datasource_stealthbits_stealthbits.md)
-* [Swift](datasource_swift_swift.md)
-* [Swivel](datasource_swivel_swivel.md)
 * [Symantec](datasource_symantec_cloudsoc_symantec.md)
-* [Symantec Endpoint Protection](datasource_symantec_endpoint_protection_symantec_endpoint_protection.md)
 * [Symantec VIP](datasource_symantec_vip_symantec_vip.md)
 * [Symantec](datasource_symantec_symantec.md)
 * [Tanium Endpoint Platform](datasource_tanium_endpoint_platform_tanium_endpoint_platform.md)
@@ -228,14 +187,10 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Trend Micro Deep Discovery Inspector](datasource_trend_micro_deep_discovery_inspector_trend_micro_deep_discovery_inspector.md)
 * [Fox BoKS ServerControl](datasource_unix_fox_boks_servercontrol.md)
 * [Unix](datasource_unix_unix.md)
-* [Unix](datasource_unix_auditd_unix.md)
 * [Unix](datasource_unix_unix.md)
-* [VMware ESXi](datasource_vmware_esxi_vmware_esxi.md)
 * [VMware Horizon](datasource_vmware_horizon_vmware_horizon.md)
-* [VMware VDI](datasource_vmware_vdi_vmware_vdi.md)
 * [VMware View](datasource_vmware_view_vmware_view.md)
 * [VMware ESX](datasource_vmware_vmware_esx.md)
-* [VMware vCenter](datasource_vmware_vmware_vcenter.md)
 * [Avaya VPN](datasource_vpn_avaya_vpn.md)
 * [Citrix Netscaler](datasource_vpn_citrix_netscaler.md)
 * [Cognitas CrossLink](datasource_vpn_cognitas_crosslink.md)
@@ -248,17 +203,11 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [SSL Open VPN](datasource_vpn_ssl_open_vpn.md)
 * [SecureNet](datasource_vpn_securenet.md)
 * [Zscaler](datasource_vpn_zscaler.md)
-* [Vectra](datasource_vectra_vectra.md)
 * [Kemp](datasource_virtual_load_master_kemp.md)
 * [Microsoft Windows](datasource_windows_microsoft_windows.md)
-* [Sailpoint SIQ](datasource_windows_sailpoint_siq.md)
 * [Workday](datasource_workday_workday.md)
 * [Xceedium](datasource_xceedium_xceedium.md)
-* [Xerox](datasource_xerox_xerox.md)
-* [Zoom](datasource_zoom_zoom.md)
 * [Zscaler](datasource_zscaler_internet_access_zscaler.md)
-* [eDocs](datasource_edocs_edocs.md)
-* [iManage](datasource_imanage_imanage.md)
 * [Unix](datasource_krb5kdc_unix.md)
 * [oVirt](datasource_ovirt_ovirt.md)
 * [Unix](datasource_systemd_unix.md)
@@ -290,54 +239,3 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 - remote-logon
 - vpn-login
 - workstation-unlocked
-### Exabeam Content Library for this Use Case
-
-
-_Rules_
-- A-ACCT-CR-DEL : Account created and deleted on asset
-- AM-GA-AC-A : Abnormal account creation activity for peer group
-- AM-GA-AC-F : First account creation activity for peer group
-- AM-GA-MA-F : First account group management activity for peer group
-- AM-GOU-A : Abnormal account OU addition to this group
-- AM-GOU-F : First account OU addition to this group
-- AM-OG-A : Abnormal account addition to this group for the organization
-- AM-OG-F : First member addition to this group for the organization
-- AM-OG-SS-A : Abnormal addition and removal of member from a group in a single session in the peer group
-- AM-OG-SS-F : First addition and removal of member from a group by user in a single session for peer group
-- AM-OH-F : First account management activity from asset
-- AM-OU-SS-A : Abnormal addition and removal of member from a group in a single session in the organization
-- AM-OU-SS-F : First addition and removal of member from a group by user in a single session for organization
-- AM-OZ-A : Abnormal account management activity from zone
-- AM-OZ-F : First account management activity from network zone
-- AM-UA-AC-A : Abnormal account creation activity for user
-- AM-UA-AC-F : First account creation activity for user
-- AM-UA-AD-F : First account deletion activity for user
-- AM-UA-MA-F : First account group management activity for user
-- AM-UD-A : Abnormal account creation on domain for user
-- AM-UD-F : First account creation on domain for user
-- AM-UH-A : Abnormal account management activity from asset for user
-- AM-UH-F : First account management activity from asset for user
-- AM-UT-TOW-A : Abnormal day for user to perform account management activity
-- DORMANT-USER : Dormant User
-- MA-PRIV-A : Abnormal addition to privileged group by user
-- MA-PRIV-F : First addition to privileged group by user
-- MA-SELF : User added themself to a group
-- U-A : Abnormal account management activity by local user
-- U-F : First account management activity by local user
-- U-F : First account password change for local user
-
-
-_Exabeam Models_
-- AE-GA : 
-- AE-UA : 
-- AM-AG : 
-- AM-GOU : 
-- AM-OG-SS : 
-- AM-OH : 
-- AM-OU-PG : 
-- AM-OU-SS : 
-- AM-OZ : 
-- AM-UD : 
-- AM-UH : 
-- AM-UT-TOW : 
-- FACT : 

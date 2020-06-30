@@ -36,8 +36,6 @@ _The following Parsers can be operationalized using log data from this data sour
 * [jun-ui-login-event](parserContent_jun-ui-login-event.md)
 * [juniper-firewall-network-connection-close-1](parserContent_juniper-firewall-network-connection-close-1.md)
 * [juniper-firewall-network-connection-create](parserContent_juniper-firewall-network-connection-create.md)
-* [juniper-firewall-network-connection-create-2](parserContent_juniper-firewall-network-connection-create-2.md)
 * [juniper-firewall-network-connection-deny](parserContent_juniper-firewall-network-connection-deny.md)
-* [juniper-firewall-network-connection-deny-2](parserContent_juniper-firewall-network-connection-deny-2.md)
 * [juniper-firewall-network-connection-failed](parserContent_juniper-firewall-network-connection-failed.md)
 * [juniper-firewall-network-connection-successful](parserContent_juniper-firewall-network-connection-successful.md)

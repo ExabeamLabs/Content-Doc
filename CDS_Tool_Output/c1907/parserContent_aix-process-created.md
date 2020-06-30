@@ -6,7 +6,7 @@ Name = aix-process-created
   Lms = Direct
   DataType = "process-created"
   IsHVF = true
-  TimeFormat = "yyyy-MM-dd HH:mm:ss"
+  TimeFormat = "epoch_sec"
   Conditions = [ """ CMD """, """]: (""" ]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",

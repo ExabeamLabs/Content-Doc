@@ -25,8 +25,7 @@ Name = q-box-app-activity
     """[^\w]item_type"+\s*:\s*"+({file_type}[^",]+)[",\]\}]""",
     """[^\w]parent"+\s*:\s*[^\}]+?[^\w]name"+\s*:\s*"+({file_parent}[^",]+)[",\]\}]""",
     """[^\w]additional_details"+\s*:\s*\{({additional_info}[^\}]+)[",\]\}]""",
-    """[^\w]accessible_by"+\s*:\s*[^\}]+?[^\w]name"+\s*:\s*"+[^":,]*[",\]\}],"login":"({target_user}[^":,]+?)"}""" ,
-    """"role":"({access_type}[^"]+)"""", 
+    """[^\w]accessible_by"+\s*:\s*[^\}]+?[^\w]name"+\s*:\s*"+[^":,]*[",\]\}],"login":"({target_user}[^":,]+?)"}""" 
   ]
   DupFields = [ "user_email->user", "accesses->activity", "host->dest_host" ]
 }

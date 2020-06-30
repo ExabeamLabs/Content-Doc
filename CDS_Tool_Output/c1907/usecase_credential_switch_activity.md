@@ -5,7 +5,6 @@ Use Case: Credential Switch Activity
 
 _The following list of Supported Exabeam Data Sources power this use case:_
 
-* [Airlock](datasource_airlock_airlock.md)
 * [Barracuda Firewall](datasource_barracuda_firewall_barracuda_firewall.md)
 * [BeyondTrust PasswordSafe](datasource_beyondtrust_passwordsafe_beyondtrust_passwordsafe.md)
 * [CA Privileged Access Manager Server Control](datasource_ca_privileged_access_manager_server_control_ca_privileged_access_manager_server_control.md)
@@ -22,12 +21,9 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Dropbox](datasource_dropbox_dropbox.md)
 * [Fortinet VPN](datasource_fortinet_vpn_fortinet_vpn.md)
 * [Palo Alto Networks GlobalProtect](datasource_globalprotect_palo_alto_networks_globalprotect.md)
-* [Microsoft Windows](datasource_microsoft_windows_microsoft_windows.md)
 * [Password Manager Pro](datasource_password_manager_pro_password_manager_pro.md)
 * [Liebsoft](datasource_password_manager_liebsoft.md)
-* [RSA SecurID](datasource_rsa_securid_rsa_securid.md)
 * [Sonicwall](datasource_sonicwall_sonicwall.md)
-* [Sophos](datasource_sophos_sophos.md)
 * [Thycotic Secret Server](datasource_thycotic_secret_server_thycotic_secret_server.md)
 * [Fox BoKS ServerControl](datasource_unix_fox_boks_servercontrol.md)
 * [Unix](datasource_unix_unix.md)
@@ -49,29 +45,3 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 - account-switch
 - session-end
 - vpn-logout
-### Exabeam Content Library for this Use Case
-
-
-_Rules_
-- AS-HA-S : INTERNAL: The user that performs the account switch is a top account switcher on the host
-- AS-PV-OG-F : First password retrieval activity for user in peer group
-- AS-PV-OU-F : First password retrieval activity for user in organization
-- AS-PV-US-A : Abnormal password retrieval using this safe value for user
-- AS-PV-US-F : First password retrieval using this safe value for user
-- AS-PV-USCOUNT-A : Abnormal number of password safes used by user
-- AS-UA-A : Abnormal switch to target account for user
-- AS-UA-F : First switch to target account for user
-- AS-UA-FS : First account switch for user
-- H-F : First password retrieval from asset for user
-- UA-F-PRIV : Account switch to a privileged or executive account
-
-
-_Exabeam Models_
-- AS-HA : 
-- AS-PV-OG : 
-- AS-PV-OU : 
-- AS-PV-US : 
-- AS-PV-USCOUNT : 
-- AS-PV-UsH : 
-- AS-UA : 
-- FACT : 

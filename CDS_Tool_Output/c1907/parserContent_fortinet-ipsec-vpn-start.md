@@ -15,8 +15,6 @@ Name = fortinet-ipsec-vpn-start
     """rem_?ip=({src_ip}[^\s,]+)[\s,]""",
     """tunnel_?ip=(?:N\/A|({src_translated_ip}[^\s,]+))[\s,]""",
     """xauth_?user="(?:N\/A|({user}[^"]+))""""
-    """group="(?:N\/A|({realm}[^"]+))""", 
   ]
-  DupFields = ["user->account"]
 }
 ```

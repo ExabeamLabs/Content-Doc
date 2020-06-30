@@ -12,9 +12,7 @@ Name = checkpoint-connectra-vpn-login
     """\,(U|u)ser=({user}[^\,]+)""",
     """\s+time=({time}\d+\w+\s+\d+:\d+:\d+)""",
     """\,src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """exabeam_host=({host}[^\s]+)""",
-    """\,assigned_IP:=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\,orig=({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """exabeam_host=({host}[^\s]+)"""
   ]
 }
 ```

@@ -9,7 +9,6 @@ Name = s-O365-dlp-email
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
   Conditions = [ """"RecipientAddress": """", """"SenderAddress": """", """"MessageTraceId": """", ]
   Fields = [
-    """exabeam_host=({host}[^\s]+)""",
     """"Received":\s*"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d+)""",
     """"DateReceived":\s*"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\dZ)""",
     """"RecipientAddress":\s*"[^@]+@({external_domain_recipient}[^",]+)""",
@@ -20,7 +19,7 @@ Name = s-O365-dlp-email
     """"SenderAddress":\s*"[^@]+@({external_domain_sender}[^",]+)""",
     """"ToIP":\s*"?(?:null|({dest_ip}[a-fA-F\d.:]+))""",
     """"FromIP":\s*"?(?:null|({src_ip}[a-fA-F\d.:]+))""",
-    """"Subject":\s*"({subject}.+?)\s*",""",
+    """"Subject":\s*"({subject}.+?)",""",
     """"Size":\s*"?({bytes}\d+)""",
     """"Status":\s*"({outcome}[^"]+)""""
   ]
