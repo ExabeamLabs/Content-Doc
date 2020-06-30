@@ -24,6 +24,7 @@ Name = cef-google-file-activity
     """"+parent"+:\{.+?"+name"+:"+({file_parent}[^\"]+)""",
     """"+event_type"+:"+({accesses}[^\"]+)"+""",
     """(\||\s)requestClientApplication=({app}.+?)(\s+\w+=|\s*$)""",
+    """filePermission=({access_type}[^\s]+)""", 
   ]
   DupFields = [ "user_email->user" ]
 }

@@ -16,5 +16,6 @@ Name = evntslog-675
       """Failure Code:\s+({result_code}[\w]+)""",
       """Client Address:\s+(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)"""
     ]
+    DupFields = ["host->dest_host"]
   }
 ```

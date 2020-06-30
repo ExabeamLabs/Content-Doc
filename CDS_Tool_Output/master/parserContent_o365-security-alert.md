@@ -16,7 +16,9 @@ Name = o365-security-alert
    """"(Name|an)":"({alert_name}[^"]+)""",
    """"AlertId":"({alert_id}[^"]+)""""
    """"(sev|Severity)":"({alert_severity}[^"]+)""",
-   """"AlertType":"({alert_type}[^"]+)""""
+   """"AlertType":"({alert_type}[^"]+)"""",
+   """requestClientApplication=({process}.*?)\s\w+="""
   ]
+  DupFields = ["process->process_name"]
 }
 ```

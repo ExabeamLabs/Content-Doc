@@ -18,5 +18,6 @@ Name = mcafee-siem-4768
       """"UserIDSrc":"({user}[^"]+)""",
       """"CommandID":"({result_code}[^"]+)""",
     ]
+    DupFields = ["host->dest_host"]
   }
 ```

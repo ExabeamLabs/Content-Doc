@@ -5,8 +5,8 @@ Use Case: Asset Activity Monitoring
 
 _The following list of Supported Exabeam Data Sources power this use case:_
 
-* [CrowdStrike Falcon](datasource_crowdstrike_falcon.md)
-* [Windows](datasource_windows.md)
+* [CrowdStrike Falcon](datasource_crowdstrike_falcon_crowdstrike_falcon.md)
+* [Microsoft Windows](datasource_windows_microsoft_windows.md)
 
 
 ### Exabeam Event Types
