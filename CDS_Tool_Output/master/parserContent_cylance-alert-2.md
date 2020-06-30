@@ -18,6 +18,7 @@ Name = cylance-alert-2
     """Security Alert Detected by.*?Category \[({alert_type}[^\]\[,]+?)\]"""
     """Security Alert Detected by.*?SubCategory \[({category}[^\]\[,]+?)\]"""
     """\Wfname=(|({malware_url}.+?))(\s+\w+=|\s*$)""",
+    """\Wfname=(|({process}[^\s]+\\({process_name}[^\s]+)))""", 
     """\Wproto=(|({file_name}.+?))(\s+\w+=|\s*$)""",
     """\Wmsg=(|({additional_info}.+?))(\s+\w+=|\s*$)""",
     """\Wsrc=({src_ip}[a-fA-F:\d.]+)""",

@@ -30,6 +30,7 @@ Name = exchange-dlp-email-in-failed
     "sender->external_address",
     "orig_user->user_email",
     "user_email->email_user",
+    "action->outcome"
   ]
 }
 ```

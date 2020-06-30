@@ -6,12 +6,13 @@ Name = json-4770
   Product = Microsoft Windows
   Lms = Direct
   DataType = "windows-4770"
-  TimeFormat = "MM/dd/yyyy H:mm:ss a"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ "4770", """"A Kerberos service ticket was renewed.""", """"TicketEncryptionType""" ]
   Fields = [
     """({event_name}A Kerberos service ticket was renewed)""",
     """"TimeGenerated":"({time}[^"]*)""",
     """"EventTime":\s*"({time}\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})"""",
+    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s({host}[^\s]+)\sSkyformation""",
     """"(MachineName|Hostname|computer_name)":"({host}[^."]+)""",
     """({event_code}4770)""",
     """"TargetDomainName":"({domain}[^."]*)""",

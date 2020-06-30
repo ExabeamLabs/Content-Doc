@@ -26,6 +26,6 @@ Name = s-estreamer-security-alert
     """"fileType":\s*"({file_type}[^"]+)"""",
     """"user":\s*"(No Authentication Required|({user}[^"]+))"""",
   ]
-  DupFields = [ "alert_name->alert_type" ]
+  DupFields = [ "alert_name->alert_type" , "process->process_name"]
 }
 ```

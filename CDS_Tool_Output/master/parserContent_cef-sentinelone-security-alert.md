@@ -29,6 +29,7 @@ Name = cef-sentinelone-security-alert
     """\WsourceAddress=({src_ip}[^\|]+?)((\||\s+)\w+=|\s*$)""",
     """\WsourceNetInterfaceName=({src_interface}[^\|]+?)((\||\s+)\w+=|\s*$)""",
     """\WsourceMacAddress=({src_mac_address}[^\|]+?)((\||\s+)\w+=|\s*$)""",
+    """threatClassification=({alert_type}[^\|]+)""", 
   ]
 }
 ```

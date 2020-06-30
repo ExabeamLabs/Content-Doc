@@ -13,7 +13,7 @@ Name = unix-auditd-account-switch
     """\sacct="({account}[^"]+)"""",
     """\suid=({user_id}\d+)""",
     """\sses=({session_id}\d+)""",
-    """UID=""({user}[^"]+)"""
+    """UID="*({user}[^"]+)"""
   ]
   DupFields = [ "host->dest_host" ]
 }
