@@ -6,7 +6,7 @@ Welcome to Exabeam's Content Documentation repository!
 
 This is a programmatic generation of content documentation from Exabeam's content repository. As new content is committed to the content repo, the Content Documentation is automatically updated to provide fast and easy access.
 
-### [Content "master" branch]
+### [Content "master" branch - latest "canary" content available]
 
 
 - [Exabeam Supported Use Cases](CDS_Tool_Output/master/Exabeam%20Use%20Cases.md)
