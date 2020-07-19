@@ -1,5 +1,7 @@
-Data Source: Symantec Email Security.cloud
-==========================================
+Vendor: Symantec Email Security.cloud
+=====================================
+Product: Symantec Email Security.cloud
+--------------------------------------
 
 ### Use Cases
 

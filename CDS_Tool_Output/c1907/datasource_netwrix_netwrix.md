@@ -1,5 +1,7 @@
-Data Source: NetWrix
-====================
+Vendor: NetWrix
+===============
+Product: NetWrix
+----------------
 
 ### Use Cases
 

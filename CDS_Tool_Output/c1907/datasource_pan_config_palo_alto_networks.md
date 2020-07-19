@@ -1,5 +1,7 @@
-Data Source: PAN Config
-=======================
+Vendor: Palo Alto Networks
+==========================
+Product: PAN Config
+-------------------
 
 ### Use Cases
 

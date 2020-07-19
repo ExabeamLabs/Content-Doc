@@ -1,5 +1,7 @@
-Data Source: Sophos Endpoint Protection
-=======================================
+Vendor: Sophos Endpoint Protection
+==================================
+Product: Sophos Endpoint Protection
+-----------------------------------
 
 ### Use Cases
 

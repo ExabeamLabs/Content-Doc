@@ -1,5 +1,7 @@
-Data Source: Network
-====================
+Vendor: Radius
+==============
+Product: Network
+----------------
 
 ### Use Cases
 

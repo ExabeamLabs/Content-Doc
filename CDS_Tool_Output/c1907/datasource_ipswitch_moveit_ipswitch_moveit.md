@@ -1,5 +1,7 @@
-Data Source: IPswitch MoveIt
-============================
+Vendor: IPswitch MoveIt
+=======================
+Product: IPswitch MoveIt
+------------------------
 
 ### Use Cases
 

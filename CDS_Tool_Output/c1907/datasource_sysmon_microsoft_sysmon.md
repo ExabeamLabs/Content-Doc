@@ -1,5 +1,7 @@
-Data Source: Sysmon
-===================
+Vendor: Microsoft Sysmon
+========================
+Product: Sysmon
+---------------
 
 ### Use Cases
 

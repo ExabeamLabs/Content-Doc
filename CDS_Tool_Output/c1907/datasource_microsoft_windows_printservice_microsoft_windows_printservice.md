@@ -1,5 +1,7 @@
-Data Source: Microsoft Windows PrintService
-===========================================
+Vendor: Microsoft Windows PrintService
+======================================
+Product: Microsoft Windows PrintService
+---------------------------------------
 
 ### Use Cases
 

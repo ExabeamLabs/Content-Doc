@@ -1,5 +1,7 @@
-Data Source: Microsoft ScanMail
-===============================
+Vendor: Microsoft ScanMail
+==========================
+Product: Microsoft ScanMail
+---------------------------
 
 ### Use Cases
 

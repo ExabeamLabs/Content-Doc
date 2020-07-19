@@ -1,5 +1,7 @@
-Data Source: Web Proxy
-======================
+Vendor: IronPort Web Security
+=============================
+Product: Web Proxy
+------------------
 
 ### Use Cases
 

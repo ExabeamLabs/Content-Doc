@@ -1,5 +1,7 @@
-Data Source: Trend Micro Deep Discovery Email Inspector
-=======================================================
+Vendor: Trend Micro Deep Discovery Email Inspector
+==================================================
+Product: Trend Micro Deep Discovery Email Inspector
+---------------------------------------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Badge
-==================
+Vendor: Galaxy
+==============
+Product: Badge
+--------------
 
 ### Use Cases
 

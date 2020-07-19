@@ -1,5 +1,7 @@
-Data Source: IBM QRadar Network Security
-========================================
+Vendor: IBM QRadar Network Security
+===================================
+Product: IBM QRadar Network Security
+------------------------------------
 
 ### Use Cases
 

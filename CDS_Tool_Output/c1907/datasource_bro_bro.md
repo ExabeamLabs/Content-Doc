@@ -1,5 +1,7 @@
-Data Source: Bro
-================
+Vendor: Bro
+===========
+Product: Bro
+------------
 
 ### Use Cases
 

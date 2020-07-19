@@ -1,5 +1,7 @@
-Data Source: Check Point NGFW
-=============================
+Vendor: Check Point NGFW
+========================
+Product: Check Point NGFW
+-------------------------
 
 ### Use Cases
 

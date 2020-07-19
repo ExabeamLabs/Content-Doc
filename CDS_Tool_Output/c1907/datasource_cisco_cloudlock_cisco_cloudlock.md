@@ -1,5 +1,7 @@
-Data Source: Cisco CloudLock
-============================
+Vendor: Cisco CloudLock
+=======================
+Product: Cisco CloudLock
+------------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: IBM Infosphere Guardium
-====================================
+Vendor: IBM Infosphere Guardium
+===============================
+Product: IBM Infosphere Guardium
+--------------------------------
 
 ### Use Cases
 

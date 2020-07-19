@@ -1,5 +1,7 @@
-Data Source: AppSense Application Manager
-=========================================
+Vendor: AppSense Application Manager
+====================================
+Product: AppSense Application Manager
+-------------------------------------
 
 ### Use Cases
 

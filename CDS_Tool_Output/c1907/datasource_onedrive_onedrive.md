@@ -1,5 +1,7 @@
-Data Source: OneDrive
-=====================
+Vendor: OneDrive
+================
+Product: OneDrive
+-----------------
 
 ### Use Cases
 

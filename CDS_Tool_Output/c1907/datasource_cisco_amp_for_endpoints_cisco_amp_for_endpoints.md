@@ -1,5 +1,7 @@
-Data Source: Cisco AMP for Endpoints
-====================================
+Vendor: Cisco AMP for Endpoints
+===============================
+Product: Cisco AMP for Endpoints
+--------------------------------
 
 ### Use Cases
 

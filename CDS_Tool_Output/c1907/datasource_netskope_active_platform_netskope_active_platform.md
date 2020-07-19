@@ -1,5 +1,7 @@
-Data Source: Netskope Active Platform
-=====================================
+Vendor: Netskope Active Platform
+================================
+Product: Netskope Active Platform
+---------------------------------
 
 ### Use Cases
 

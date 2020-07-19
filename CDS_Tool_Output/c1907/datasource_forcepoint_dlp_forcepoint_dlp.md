@@ -1,5 +1,7 @@
-Data Source: Forcepoint DLP
-===========================
+Vendor: Forcepoint DLP
+======================
+Product: Forcepoint DLP
+-----------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Badge
-==================
+Vendor: RedCloud
+================
+Product: Badge
+--------------
 
 ### Use Cases
 

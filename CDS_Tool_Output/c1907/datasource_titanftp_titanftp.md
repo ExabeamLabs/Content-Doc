@@ -1,5 +1,7 @@
-Data Source: TitanFTP
-=====================
+Vendor: TitanFTP
+================
+Product: TitanFTP
+-----------------
 
 ### Use Cases
 

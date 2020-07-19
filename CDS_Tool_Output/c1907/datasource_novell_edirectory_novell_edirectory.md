@@ -1,5 +1,7 @@
-Data Source: Novell eDirectory
-==============================
+Vendor: Novell eDirectory
+=========================
+Product: Novell eDirectory
+--------------------------
 
 ### Use Cases
 

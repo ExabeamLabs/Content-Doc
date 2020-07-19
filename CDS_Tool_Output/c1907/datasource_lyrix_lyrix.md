@@ -1,5 +1,7 @@
-Data Source: Lyrix
-==================
+Vendor: Lyrix
+=============
+Product: Lyrix
+--------------
 
 ### Use Cases
 

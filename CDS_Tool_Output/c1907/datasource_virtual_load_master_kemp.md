@@ -1,5 +1,7 @@
-Data Source: Virtual Load Master
-================================
+Vendor: Kemp
+============
+Product: Virtual Load Master
+----------------------------
 
 ### Use Cases
 

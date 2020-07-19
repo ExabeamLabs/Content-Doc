@@ -1,5 +1,7 @@
-Data Source: Symantec Brightmail
-================================
+Vendor: Symantec Brightmail
+===========================
+Product: Symantec Brightmail
+----------------------------
 
 ### Use Cases
 

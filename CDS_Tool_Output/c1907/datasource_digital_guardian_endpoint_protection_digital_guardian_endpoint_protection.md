@@ -1,5 +1,7 @@
-Data Source: Digital Guardian Endpoint Protection
-=================================================
+Vendor: Digital Guardian Endpoint Protection
+============================================
+Product: Digital Guardian Endpoint Protection
+---------------------------------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Check Point Security Gateway
-=========================================
+Vendor: Check Point Security Gateway
+====================================
+Product: Check Point Security Gateway
+-------------------------------------
 
 ### Use Cases
 

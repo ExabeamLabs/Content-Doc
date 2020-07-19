@@ -1,5 +1,7 @@
-Data Source: Cisco Meraki MX appliances
-=======================================
+Vendor: Cisco Meraki MX appliances
+==================================
+Product: Cisco Meraki MX appliances
+-----------------------------------
 
 ### Use Cases
 

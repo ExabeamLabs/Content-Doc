@@ -1,5 +1,7 @@
-Data Source: Nexthink
-=====================
+Vendor: Nexthink
+================
+Product: Nexthink
+-----------------
 
 ### Use Cases
 

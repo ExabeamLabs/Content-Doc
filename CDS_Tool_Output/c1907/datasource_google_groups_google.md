@@ -1,5 +1,7 @@
-Data Source: Google Groups
-==========================
+Vendor: Google
+==============
+Product: Google Groups
+----------------------
 
 ### Use Cases
 

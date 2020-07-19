@@ -1,5 +1,7 @@
-Data Source: Traps
-==================
+Vendor: Palo Alto Networks Traps
+================================
+Product: Traps
+--------------
 
 ### Use Cases
 

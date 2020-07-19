@@ -1,5 +1,7 @@
-Data Source: NetApp
-===================
+Vendor: NetApp
+==============
+Product: NetApp
+---------------
 
 ### Use Cases
 

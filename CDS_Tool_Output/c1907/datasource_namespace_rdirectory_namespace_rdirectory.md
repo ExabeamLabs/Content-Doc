@@ -1,5 +1,7 @@
-Data Source: Namespace rDirectory
-=================================
+Vendor: Namespace rDirectory
+============================
+Product: Namespace rDirectory
+-----------------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Blue Coat Content Analysis System
-==============================================
+Vendor: Symantec Blue Coat Content Analysis System
+==================================================
+Product: Blue Coat Content Analysis System
+------------------------------------------
 
 ### Use Cases
 

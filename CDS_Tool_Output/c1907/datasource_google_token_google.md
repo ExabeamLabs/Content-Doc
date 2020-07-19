@@ -1,5 +1,7 @@
-Data Source: Google Token
-=========================
+Vendor: Google
+==============
+Product: Google Token
+---------------------
 
 ### Use Cases
 

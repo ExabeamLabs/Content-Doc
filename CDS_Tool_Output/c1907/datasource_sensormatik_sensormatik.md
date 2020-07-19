@@ -1,5 +1,7 @@
-Data Source: Sensormatik
-========================
+Vendor: Sensormatik
+===================
+Product: Sensormatik
+--------------------
 
 ### Use Cases
 

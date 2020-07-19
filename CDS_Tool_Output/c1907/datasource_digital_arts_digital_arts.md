@@ -1,5 +1,7 @@
-Data Source: Digital Arts
-=========================
+Vendor: Digital Arts
+====================
+Product: Digital Arts
+---------------------
 
 ### Use Cases
 

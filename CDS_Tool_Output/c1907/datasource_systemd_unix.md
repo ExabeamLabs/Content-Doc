@@ -1,5 +1,7 @@
-Data Source: systemd
-====================
+Vendor: Unix
+============
+Product: systemd
+----------------
 
 ### Use Cases
 

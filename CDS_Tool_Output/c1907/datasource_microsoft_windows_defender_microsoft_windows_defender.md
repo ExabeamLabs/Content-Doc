@@ -1,5 +1,7 @@
-Data Source: Microsoft Windows Defender
-=======================================
+Vendor: Microsoft Windows Defender
+==================================
+Product: Microsoft Windows Defender
+-----------------------------------
 
 ### Use Cases
 

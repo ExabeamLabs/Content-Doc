@@ -1,5 +1,7 @@
-Data Source: BitBucket
-======================
+Vendor: Atlassian BitBucket
+===========================
+Product: BitBucket
+------------------
 
 ### Use Cases
 

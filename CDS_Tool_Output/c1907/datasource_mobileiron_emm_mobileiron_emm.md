@@ -1,5 +1,7 @@
-Data Source: MobileIron EMM
-===========================
+Vendor: MobileIron EMM
+======================
+Product: MobileIron EMM
+-----------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Badge
-==================
+Vendor: Siemens
+===============
+Product: Badge
+--------------
 
 ### Use Cases
 

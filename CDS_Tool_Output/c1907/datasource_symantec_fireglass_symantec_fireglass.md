@@ -1,5 +1,7 @@
-Data Source: Symantec Fireglass
-===============================
+Vendor: Symantec Fireglass
+==========================
+Product: Symantec Fireglass
+---------------------------
 
 ### Use Cases
 

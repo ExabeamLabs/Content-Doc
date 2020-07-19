@@ -1,5 +1,7 @@
-Data Source: DHCP
-=================
+Vendor: Infoblox
+================
+Product: DHCP
+-------------
 
 ### Use Cases
 

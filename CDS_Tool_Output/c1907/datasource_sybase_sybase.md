@@ -1,5 +1,7 @@
-Data Source: Sybase
-===================
+Vendor: Sybase
+==============
+Product: Sybase
+---------------
 
 ### Use Cases
 

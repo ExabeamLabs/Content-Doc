@@ -1,5 +1,7 @@
-Data Source: Microsoft Web Application Proxy-TLS Gateway
-========================================================
+Vendor: Microsoft Web Application Proxy-TLS Gateway
+===================================================
+Product: Microsoft Web Application Proxy-TLS Gateway
+----------------------------------------------------
 
 ### Use Cases
 

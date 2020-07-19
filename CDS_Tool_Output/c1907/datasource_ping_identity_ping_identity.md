@@ -1,5 +1,7 @@
-Data Source: Ping Identity
-==========================
+Vendor: Ping Identity
+=====================
+Product: Ping Identity
+----------------------
 
 ### Use Cases
 

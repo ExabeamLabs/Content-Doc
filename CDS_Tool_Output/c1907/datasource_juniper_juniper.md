@@ -1,5 +1,7 @@
-Data Source: Juniper
-====================
+Vendor: Juniper
+===============
+Product: Juniper
+----------------
 
 ### Use Cases
 

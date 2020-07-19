@@ -1,5 +1,7 @@
-Data Source: SecureAuth MFA
-===========================
+Vendor: SecureAuth
+==================
+Product: SecureAuth MFA
+-----------------------
 
 ### Use Cases
 

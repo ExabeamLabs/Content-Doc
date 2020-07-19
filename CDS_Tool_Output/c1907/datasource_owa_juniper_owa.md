@@ -1,5 +1,7 @@
-Data Source: OWA
-================
+Vendor: Juniper OWA
+===================
+Product: OWA
+------------
 
 ### Use Cases
 

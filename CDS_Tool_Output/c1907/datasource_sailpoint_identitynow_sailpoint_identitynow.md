@@ -1,5 +1,7 @@
-Data Source: Sailpoint IdentityNow
-==================================
+Vendor: Sailpoint IdentityNow
+=============================
+Product: Sailpoint IdentityNow
+------------------------------
 
 ### Use Cases
 

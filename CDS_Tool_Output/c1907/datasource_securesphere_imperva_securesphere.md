@@ -1,5 +1,7 @@
-Data Source: SecureSphere
-=========================
+Vendor: Imperva SecureSphere
+============================
+Product: SecureSphere
+---------------------
 
 ### Use Cases
 

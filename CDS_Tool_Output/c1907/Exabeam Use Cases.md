@@ -6,6 +6,7 @@ Exabeam Supported Use Cases
 The following are the list of out-of-the-box supported Use Cases as of Content Build C1904
 
 * [Account Creation and Management](usecase_account_creation_and_management.md)
+* [Activity](usecase_activity.md)
 * [Activity Time  and Type](usecase_activity_time__and_type.md)
 * [Application Activity](usecase_application_activity.md)
 * [Asset Activity Monitoring](usecase_asset_activity_monitoring.md)

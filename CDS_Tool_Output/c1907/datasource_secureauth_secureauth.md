@@ -1,5 +1,7 @@
-Data Source: SecureAuth
-=======================
+Vendor: SecureAuth
+==================
+Product: SecureAuth
+-------------------
 
 ### Use Cases
 

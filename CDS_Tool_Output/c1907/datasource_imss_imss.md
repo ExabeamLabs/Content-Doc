@@ -1,5 +1,7 @@
-Data Source: IMSS
-=================
+Vendor: IMSS
+============
+Product: IMSS
+-------------
 
 ### Use Cases
 

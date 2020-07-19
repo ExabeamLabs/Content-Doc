@@ -1,5 +1,7 @@
-Data Source: NET2DOOR
-=====================
+Vendor: Paxton
+==============
+Product: NET2DOOR
+-----------------
 
 ### Use Cases
 

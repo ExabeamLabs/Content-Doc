@@ -1,5 +1,7 @@
-Data Source: McAfee IDPS
-========================
+Vendor: McAfee IDPS
+===================
+Product: McAfee IDPS
+--------------------
 
 ### Use Cases
 

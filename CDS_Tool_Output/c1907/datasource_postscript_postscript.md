@@ -1,5 +1,7 @@
-Data Source: PostScript
-=======================
+Vendor: PostScript
+==================
+Product: PostScript
+-------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Sophos Invincea
-============================
+Vendor: Sophos Invincea
+=======================
+Product: Sophos Invincea
+------------------------
 
 ### Use Cases
 

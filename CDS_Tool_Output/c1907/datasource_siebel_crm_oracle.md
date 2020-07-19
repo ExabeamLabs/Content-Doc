@@ -1,5 +1,7 @@
-Data Source: Siebel CRM
-=======================
+Vendor: Oracle
+==============
+Product: Siebel CRM
+-------------------
 
 ### Use Cases
 

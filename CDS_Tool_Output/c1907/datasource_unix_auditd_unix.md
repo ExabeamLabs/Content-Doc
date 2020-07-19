@@ -1,5 +1,7 @@
-Data Source: Unix Auditd
-========================
+Vendor: Unix
+============
+Product: Unix Auditd
+--------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: LanScope Cat
-=========================
+Vendor: LanScope Cat
+====================
+Product: LanScope Cat
+---------------------
 
 ### Use Cases
 

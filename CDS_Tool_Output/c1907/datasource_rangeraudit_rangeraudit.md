@@ -1,5 +1,7 @@
-Data Source: RangerAudit
-========================
+Vendor: RangerAudit
+===================
+Product: RangerAudit
+--------------------
 
 ### Use Cases
 

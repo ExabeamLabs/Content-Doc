@@ -1,5 +1,7 @@
-Data Source: BeyondTrust
-========================
+Vendor: BeyondTrust
+===================
+Product: BeyondTrust
+--------------------
 
 ### Use Cases
 

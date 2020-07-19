@@ -1,5 +1,7 @@
-Data Source: Check Point Threat Prevention
-==========================================
+Vendor: Check Point Threat Prevention
+=====================================
+Product: Check Point Threat Prevention
+--------------------------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Microsoft Azure
-============================
+Vendor: Microsoft Azure
+=======================
+Product: Microsoft Azure
+------------------------
 
 ### Use Cases
 

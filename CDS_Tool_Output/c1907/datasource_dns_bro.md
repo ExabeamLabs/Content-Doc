@@ -1,5 +1,7 @@
-Data Source: DNS
-================
+Vendor: Bro
+===========
+Product: DNS
+------------
 
 ### Use Cases
 

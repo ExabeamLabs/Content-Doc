@@ -1,5 +1,7 @@
-Data Source: ProxySG
-====================
+Vendor: ProxySG
+===============
+Product: ProxySG
+----------------
 
 ### Use Cases
 

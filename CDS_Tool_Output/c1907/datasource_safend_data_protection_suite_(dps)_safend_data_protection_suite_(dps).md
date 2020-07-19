@@ -1,5 +1,7 @@
-Data Source: Safend Data Protection Suite (DPS)
-===============================================
+Vendor: Safend Data Protection Suite (DPS)
+==========================================
+Product: Safend Data Protection Suite (DPS)
+-------------------------------------------
 
 ### Use Cases
 

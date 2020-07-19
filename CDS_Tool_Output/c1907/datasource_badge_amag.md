@@ -1,5 +1,7 @@
-Data Source: Badge
-==================
+Vendor: AMAG
+============
+Product: Badge
+--------------
 
 ### Use Cases
 

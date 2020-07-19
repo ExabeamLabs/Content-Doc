@@ -1,5 +1,7 @@
-Data Source: Box
-================
+Vendor: Box
+===========
+Product: Box
+------------
 
 ### Use Cases
 

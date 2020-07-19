@@ -1,5 +1,7 @@
-Data Source: Exabeam DL
-=======================
+Vendor: Exabeam DL
+==================
+Product: Exabeam DL
+-------------------
 
 ### Use Cases
 

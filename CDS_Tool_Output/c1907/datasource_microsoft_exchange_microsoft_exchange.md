@@ -1,5 +1,7 @@
-Data Source: Microsoft Exchange
-===============================
+Vendor: Microsoft Exchange
+==========================
+Product: Microsoft Exchange
+---------------------------
 
 ### Use Cases
 

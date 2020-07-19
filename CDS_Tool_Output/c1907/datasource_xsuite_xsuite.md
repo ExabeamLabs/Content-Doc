@@ -1,5 +1,7 @@
-Data Source: xsuite
-===================
+Vendor: xsuite
+==============
+Product: xsuite
+---------------
 
 ### Use Cases
 

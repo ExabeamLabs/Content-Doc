@@ -1,5 +1,7 @@
-Data Source: Palo Alto Networks NGFW
-====================================
+Vendor: Palo Alto Networks NGFW
+===============================
+Product: Palo Alto Networks NGFW
+--------------------------------
 
 ### Use Cases
 

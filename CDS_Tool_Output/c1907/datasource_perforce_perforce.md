@@ -1,5 +1,7 @@
-Data Source: Perforce
-=====================
+Vendor: Perforce
+================
+Product: Perforce
+-----------------
 
 ### Use Cases
 

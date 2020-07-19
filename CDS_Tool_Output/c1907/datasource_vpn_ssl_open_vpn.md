@@ -1,5 +1,7 @@
-Data Source: VPN
-================
+Vendor: SSL Open VPN
+====================
+Product: VPN
+------------
 
 ### Use Cases
 

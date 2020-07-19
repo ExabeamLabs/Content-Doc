@@ -1,5 +1,7 @@
-Data Source: Windows PowerShell
-===============================
+Vendor: Microsoft Windows
+=========================
+Product: Windows PowerShell
+---------------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: RSA Authentication Manager
-=======================================
+Vendor: Dell EMC RSA Authentication Manager
+===========================================
+Product: RSA Authentication Manager
+-----------------------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Apache
-===================
+Vendor: Apache
+==============
+Product: Apache
+---------------
 
 ### Use Cases
 

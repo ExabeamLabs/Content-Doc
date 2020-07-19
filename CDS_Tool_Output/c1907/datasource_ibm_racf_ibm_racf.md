@@ -1,5 +1,7 @@
-Data Source: IBM Racf
-=====================
+Vendor: IBM Racf
+================
+Product: IBM Racf
+-----------------
 
 ### Use Cases
 

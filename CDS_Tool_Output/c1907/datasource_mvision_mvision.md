@@ -1,5 +1,7 @@
-Data Source: Mvision
-====================
+Vendor: Mvision
+===============
+Product: Mvision
+----------------
 
 ### Use Cases
 

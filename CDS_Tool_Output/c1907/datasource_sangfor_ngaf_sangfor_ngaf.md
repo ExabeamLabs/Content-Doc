@@ -1,5 +1,7 @@
-Data Source: Sangfor NGAF
-=========================
+Vendor: Sangfor NGAF
+====================
+Product: Sangfor NGAF
+---------------------
 
 ### Use Cases
 

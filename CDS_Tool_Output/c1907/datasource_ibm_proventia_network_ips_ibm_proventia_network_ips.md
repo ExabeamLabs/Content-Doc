@@ -1,5 +1,7 @@
-Data Source: IBM Proventia Network IPS
-======================================
+Vendor: IBM Proventia Network IPS
+=================================
+Product: IBM Proventia Network IPS
+----------------------------------
 
 ### Use Cases
 

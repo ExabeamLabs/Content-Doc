@@ -1,5 +1,7 @@
-Data Source: ServiceNow
-=======================
+Vendor: ServiceNow
+==================
+Product: ServiceNow
+-------------------
 
 ### Use Cases
 

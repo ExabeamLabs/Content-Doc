@@ -1,5 +1,7 @@
-Data Source: Trend Micro OfficeScan
-===================================
+Vendor: Trend Micro OfficeScan
+==============================
+Product: Trend Micro OfficeScan
+-------------------------------
 
 ### Use Cases
 

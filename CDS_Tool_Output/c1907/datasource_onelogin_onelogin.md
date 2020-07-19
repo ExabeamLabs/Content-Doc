@@ -1,5 +1,7 @@
-Data Source: OneLogin
-=====================
+Vendor: OneLogin
+================
+Product: OneLogin
+-----------------
 
 ### Use Cases
 

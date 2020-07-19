@@ -1,5 +1,7 @@
-Data Source: BrightMail
-=======================
+Vendor: BrightMail
+==================
+Product: BrightMail
+-------------------
 
 ### Use Cases
 

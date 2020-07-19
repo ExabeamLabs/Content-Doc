@@ -1,5 +1,7 @@
-Data Source: Ricoh
-==================
+Vendor: Ricoh
+=============
+Product: Ricoh
+--------------
 
 ### Use Cases
 

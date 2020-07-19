@@ -1,5 +1,7 @@
-Data Source: BlueCat Networks Adonis
-====================================
+Vendor: BlueCat Networks Adonis
+===============================
+Product: BlueCat Networks Adonis
+--------------------------------
 
 ### Use Cases
 

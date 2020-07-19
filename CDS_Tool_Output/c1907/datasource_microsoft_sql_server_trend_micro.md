@@ -1,5 +1,7 @@
-Data Source: Microsoft SQL Server
-=================================
+Vendor: Trend Micro
+===================
+Product: Microsoft SQL Server
+-----------------------------
 
 ### Use Cases
 

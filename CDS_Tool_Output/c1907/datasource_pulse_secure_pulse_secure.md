@@ -1,5 +1,7 @@
-Data Source: Pulse Secure
-=========================
+Vendor: Pulse Secure
+====================
+Product: Pulse Secure
+---------------------
 
 ### Use Cases
 

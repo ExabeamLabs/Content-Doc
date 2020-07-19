@@ -1,5 +1,7 @@
-Data Source: Microsoft SQL Server
-=================================
+Vendor: Microsoft SQL Server
+============================
+Product: Microsoft SQL Server
+-----------------------------
 
 ### Use Cases
 
