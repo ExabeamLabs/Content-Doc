@@ -1,5 +1,7 @@
-Data Source: Linux DHCP
-=======================
+Vendor: Linux
+=============
+Product: Linux DHCP
+-------------------
 
 ### Use Cases
 

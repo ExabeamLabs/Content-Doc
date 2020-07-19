@@ -1,5 +1,7 @@
-Data Source: VMware NSX
-=======================
+Vendor: VMware NSX
+==================
+Product: VMware NSX
+-------------------
 
 ### Use Cases
 

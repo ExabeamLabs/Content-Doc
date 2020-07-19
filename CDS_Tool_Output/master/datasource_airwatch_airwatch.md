@@ -1,5 +1,7 @@
-Data Source: AirWatch
-=====================
+Vendor: AirWatch
+================
+Product: AirWatch
+-----------------
 
 ### Use Cases
 

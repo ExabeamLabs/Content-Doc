@@ -1,5 +1,7 @@
-Data Source: WildFire
-=====================
+Vendor: Palo Alto Networks WildFire
+===================================
+Product: WildFire
+-----------------
 
 ### Use Cases
 

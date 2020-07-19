@@ -21,10 +21,12 @@ Name = s-estreamer-security-alert
     """"clientApplication":\s*"({process}[^"]+)"""",
     """"shaHash":\s*"({md5}[^"]+)"""",
     """"uri":.+?"data":\s*"({malware_url}[^"]+)"""",
-    """"fileName":.+?"data":\s*"({file_name}[^"]+)"""",
+    """"fileName":.+?"data":\s*"({malware_file_name}[^"]+)"""",
     """"direction":\s*({direction}[^,]+),""",
     """"fileType":\s*"({file_type}[^"]+)"""",
-    """"user":\s*"(No Authentication Required|({user}[^"]+))"""",
+    """"user":\s*"(No Authentication Required|Unknown|({user}[^"]+))"""",
+    """"disposition"+:\s*"+(N\/A|({additional_info}[^"]+))"""",
+    """"threatScore"+:\s*({alert_severity}\d+)"""
   ]
   DupFields = [ "alert_name->alert_type" , "process->process_name"]
 }

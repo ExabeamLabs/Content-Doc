@@ -1,5 +1,7 @@
-Data Source: Cisco Firepower
-============================
+Vendor: Cisco
+=============
+Product: Cisco Firepower
+------------------------
 
 ### Use Cases
 

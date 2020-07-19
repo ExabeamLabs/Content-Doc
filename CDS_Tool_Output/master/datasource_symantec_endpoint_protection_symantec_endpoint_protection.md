@@ -1,5 +1,7 @@
-Data Source: Symantec Endpoint Protection
-=========================================
+Vendor: Symantec Endpoint Protection
+====================================
+Product: Symantec Endpoint Protection
+-------------------------------------
 
 ### Use Cases
 

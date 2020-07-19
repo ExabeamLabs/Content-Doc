@@ -1,5 +1,7 @@
-Data Source: VPN
-================
+Vendor: Juniper VPN
+===================
+Product: VPN
+------------
 
 ### Use Cases
 

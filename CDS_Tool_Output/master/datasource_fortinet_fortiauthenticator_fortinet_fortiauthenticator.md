@@ -1,5 +1,7 @@
-Data Source: Fortinet FortiAuthenticator
-========================================
+Vendor: Fortinet FortiAuthenticator
+===================================
+Product: Fortinet FortiAuthenticator
+------------------------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Barracuda Email Security Gateway
-=============================================
+Vendor: Barracuda Email Security Gateway
+========================================
+Product: Barracuda Email Security Gateway
+-----------------------------------------
 
 ### Use Cases
 

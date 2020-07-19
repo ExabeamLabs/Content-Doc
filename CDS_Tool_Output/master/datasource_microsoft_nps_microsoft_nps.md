@@ -1,5 +1,7 @@
-Data Source: Microsoft NPS
-==========================
+Vendor: Microsoft NPS
+=====================
+Product: Microsoft NPS
+----------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: CyberArk Privileged Session Manager
-================================================
+Vendor: CyberArk Privileged Session Manager
+===========================================
+Product: CyberArk Privileged Session Manager
+--------------------------------------------
 
 ### Use Cases
 

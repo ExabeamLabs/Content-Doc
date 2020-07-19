@@ -1,5 +1,7 @@
-Data Source: Lastline
-=====================
+Vendor: Lastline
+================
+Product: Lastline
+-----------------
 
 ### Use Cases
 

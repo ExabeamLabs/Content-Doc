@@ -1,5 +1,7 @@
-Data Source: Cisco NPE
-======================
+Vendor: Cisco NPE
+=================
+Product: Cisco NPE
+------------------
 
 ### Use Cases
 

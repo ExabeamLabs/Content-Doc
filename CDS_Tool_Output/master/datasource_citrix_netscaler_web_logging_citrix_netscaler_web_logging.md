@@ -1,5 +1,7 @@
-Data Source: Citrix Netscaler Web Logging
-=========================================
+Vendor: Citrix Netscaler Web Logging
+====================================
+Product: Citrix Netscaler Web Logging
+-------------------------------------
 
 ### Use Cases
 

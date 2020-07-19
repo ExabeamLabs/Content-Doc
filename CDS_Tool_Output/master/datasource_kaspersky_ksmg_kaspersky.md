@@ -1,5 +1,7 @@
-Data Source: Kaspersky KSMG
-===========================
+Vendor: Kaspersky
+=================
+Product: Kaspersky KSMG
+-----------------------
 
 ### Use Cases
 

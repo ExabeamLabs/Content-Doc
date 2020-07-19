@@ -32,6 +32,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Cisco TACACS](datasource_cisco_tacacs_cisco_tacacs.md)
 * [Citrix Netscaler](datasource_citrix_netscaler_citrix_netscaler.md)
 * [Contrast Security](datasource_contrast_security_contrast_security.md)
+* [Palo Alto Networks Cortex](datasource_cortex_xdr_palo_alto_networks_cortex.md)
 * [Imperva CounterBreach](datasource_counterbreach_imperva_counterbreach.md)
 * [CrowdStrike Falcon](datasource_crowdstrike_falcon_crowdstrike_falcon.md)
 * [CyberArk Privileged Threat Analytics](datasource_cyberark_privileged_threat_analytics_cyberark_privileged_threat_analytics.md)

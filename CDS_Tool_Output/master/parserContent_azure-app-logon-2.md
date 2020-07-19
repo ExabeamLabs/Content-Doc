@@ -19,6 +19,13 @@ Name = azure-app-logon-2
     """\sext_AppDisplayName=({app}[^=]+?)\s+\w+="""
     """\sext_DeviceDetail=\{[^\}]+?"displayName":"({src_host}[^"]+)"""
     """\sext_DeviceDetail=\{[^\}]+?"operatingSystem":"({os}[^"]+)"""
+    """UserDisplayName"+:"+({user_fullname}[^"]+)""",
+    """UserId"+:"+({user_id}[^"]+)""",
+    """"+IPAddress"+:"+({src_ip}[^"]+)""",
+    """"browser\\*"+:\\*"+({browser}[^"]+)\\"+""",
+    """"UserAgent\\*"+:\\*"+({user_agent}[^"]+)""",
+    """src-application-name"+:"+({app}[^"]+)""",
+    """"operatingSystem\\*"+:\\*"+({os}[^"]+)\\"+"""
   ]
 }
 ```

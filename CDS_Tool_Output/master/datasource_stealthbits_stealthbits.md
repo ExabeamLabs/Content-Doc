@@ -1,5 +1,7 @@
-Data Source: StealthBits
-========================
+Vendor: StealthBits
+===================
+Product: StealthBits
+--------------------
 
 ### Use Cases
 

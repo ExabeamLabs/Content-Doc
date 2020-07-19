@@ -1,5 +1,7 @@
-Data Source: SkySea ClientView
-==============================
+Vendor: SkySea ClientView
+=========================
+Product: SkySea ClientView
+--------------------------
 
 ### Use Cases
 

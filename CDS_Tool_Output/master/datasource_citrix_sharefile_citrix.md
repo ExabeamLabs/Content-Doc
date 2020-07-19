@@ -1,5 +1,7 @@
-Data Source: Citrix ShareFile
-=============================
+Vendor: Citrix
+==============
+Product: Citrix ShareFile
+-------------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Symantec VIP
-=========================
+Vendor: Symantec VIP
+====================
+Product: Symantec VIP
+---------------------
 
 ### Use Cases
 

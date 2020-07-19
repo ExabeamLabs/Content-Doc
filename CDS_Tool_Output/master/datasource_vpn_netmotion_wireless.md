@@ -1,5 +1,7 @@
-Data Source: VPN
-================
+Vendor: NetMotion Wireless
+==========================
+Product: VPN
+------------
 
 ### Use Cases
 

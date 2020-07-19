@@ -1,5 +1,7 @@
-Data Source: MobileIron
-=======================
+Vendor: MobileIron
+==================
+Product: MobileIron
+-------------------
 
 ### Use Cases
 

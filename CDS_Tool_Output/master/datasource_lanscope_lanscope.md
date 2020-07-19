@@ -1,5 +1,7 @@
-Data Source: LanScope
-=====================
+Vendor: LanScope
+================
+Product: LanScope
+-----------------
 
 ### Use Cases
 

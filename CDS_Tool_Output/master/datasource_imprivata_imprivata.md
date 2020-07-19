@@ -1,5 +1,7 @@
-Data Source: Imprivata
-======================
+Vendor: Imprivata
+=================
+Product: Imprivata
+------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: PingOne
-====================
+Vendor: PingOne
+===============
+Product: PingOne
+----------------
 
 ### Use Cases
 

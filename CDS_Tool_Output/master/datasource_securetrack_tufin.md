@@ -1,5 +1,7 @@
-Data Source: SecureTrack
-========================
+Vendor: Tufin
+=============
+Product: SecureTrack
+--------------------
 
 ### Use Cases
 

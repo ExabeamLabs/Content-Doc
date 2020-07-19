@@ -1,5 +1,7 @@
-Data Source: Bromium Secure Platform
-====================================
+Vendor: Bromium Secure Platform
+===============================
+Product: Bromium Secure Platform
+--------------------------------
 
 ### Use Cases
 

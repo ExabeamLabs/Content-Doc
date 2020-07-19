@@ -1,5 +1,7 @@
-Data Source: Illumio
-====================
+Vendor: Illumio
+===============
+Product: Illumio
+----------------
 
 ### Use Cases
 

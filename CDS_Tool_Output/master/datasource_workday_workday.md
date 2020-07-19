@@ -1,5 +1,7 @@
-Data Source: Workday
-====================
+Vendor: Workday
+===============
+Product: Workday
+----------------
 
 ### Use Cases
 

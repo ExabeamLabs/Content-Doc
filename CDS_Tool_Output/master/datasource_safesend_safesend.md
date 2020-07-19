@@ -1,5 +1,7 @@
-Data Source: SafeSend
-=====================
+Vendor: SafeSend
+================
+Product: SafeSend
+-----------------
 
 ### Use Cases
 

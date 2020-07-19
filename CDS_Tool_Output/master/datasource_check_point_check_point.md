@@ -1,5 +1,7 @@
-Data Source: Check Point
-========================
+Vendor: Check Point
+===================
+Product: Check Point
+--------------------
 
 ### Use Cases
 

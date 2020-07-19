@@ -1,5 +1,7 @@
-Data Source: McAfee Advanced Threat Defense
-===========================================
+Vendor: McAfee Advanced Threat Defense
+======================================
+Product: McAfee Advanced Threat Defense
+---------------------------------------
 
 ### Use Cases
 

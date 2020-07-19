@@ -1,5 +1,7 @@
-Data Source: Avecto Defendpoint Service
-=======================================
+Vendor: Avecto Defendpoint Service
+==================================
+Product: Avecto Defendpoint Service
+-----------------------------------
 
 ### Use Cases
 

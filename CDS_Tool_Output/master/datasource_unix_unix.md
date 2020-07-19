@@ -1,5 +1,7 @@
-Data Source: Unix
-=================
+Vendor: Unix
+============
+Product: Unix
+-------------
 
 ### Use Cases
 
@@ -75,6 +77,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [unix-failed-logon-7](parserContent_unix-failed-logon-7.md)
 * [unix-failed-logon-8](parserContent_unix-failed-logon-8.md)
 * [unix-failed-logon-9](parserContent_unix-failed-logon-9.md)
+* [unix-local-logon-1](parserContent_unix-local-logon-1.md)
 * [unix-security-alert](parserContent_unix-security-alert.md)
 * [wazuh-sys-auth-fail](parserContent_wazuh-sys-auth-fail.md)
 * [wazuh-unix-chkpwd-fail](parserContent_wazuh-unix-chkpwd-fail.md)

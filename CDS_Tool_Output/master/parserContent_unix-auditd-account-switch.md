@@ -11,6 +11,7 @@ Name = unix-auditd-account-switch
     """exabeam_host=({host}[^\s]+)""",
     """msg=audit\(({time}\d+)\.\d{3}""",
     """\sacct="({account}[^"]+)"""",
+    """\sauid="?({account_used_id}\d+)""",
     """\suid=({user_id}\d+)""",
     """\sses=({session_id}\d+)""",
     """UID="*({user}[^"]+)"""

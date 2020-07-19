@@ -1,5 +1,7 @@
-Data Source: Logrhythm
-======================
+Vendor: Logrhythm
+=================
+Product: Logrhythm
+------------------
 
 ### Use Cases
 

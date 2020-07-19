@@ -1,5 +1,7 @@
-Data Source: Citrix XenApp
-==========================
+Vendor: Citrix XenApp
+=====================
+Product: Citrix XenApp
+----------------------
 
 ### Use Cases
 

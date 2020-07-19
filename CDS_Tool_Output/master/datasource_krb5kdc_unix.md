@@ -1,5 +1,7 @@
-Data Source: krb5kdc
-====================
+Vendor: Unix
+============
+Product: krb5kdc
+----------------
 
 ### Use Cases
 

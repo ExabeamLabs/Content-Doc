@@ -1,5 +1,7 @@
-Data Source: Huawei
-===================
+Vendor: Unified Security Gateway
+================================
+Product: Huawei
+---------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Google
-===================
+Vendor: Google Cloud Platform
+=============================
+Product: Google
+---------------
 
 ### Use Cases
 

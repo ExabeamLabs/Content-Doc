@@ -11,6 +11,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Microsoft Windows](datasource_dc_microsoft_windows.md)
 * [Lieberman](datasource_enterprise_random_password_manager_lieberman.md)
 * [Namespace rDirectory](datasource_namespace_rdirectory_namespace_rdirectory.md)
+* [NetWrix](datasource_netwrix_netwrix.md)
 * [Quest Software](datasource_quest_software_change_auditor_quest_software.md)
 * [StealthBits](datasource_stealthbits_stealthbits.md)
 * [Trend Micro OfficeScan](datasource_trend_micro_officescan_trend_micro_officescan.md)

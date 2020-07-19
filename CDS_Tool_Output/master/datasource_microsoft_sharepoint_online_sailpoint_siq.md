@@ -1,5 +1,7 @@
-Data Source: Microsoft Sharepoint Online
-========================================
+Vendor: Sailpoint SIQ
+=====================
+Product: Microsoft Sharepoint Online
+------------------------------------
 
 ### Use Cases
 

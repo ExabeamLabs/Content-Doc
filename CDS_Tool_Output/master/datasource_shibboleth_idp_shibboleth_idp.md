@@ -1,5 +1,7 @@
-Data Source: Shibboleth IdP
-===========================
+Vendor: Shibboleth IdP
+======================
+Product: Shibboleth IdP
+-----------------------
 
 ### Use Cases
 

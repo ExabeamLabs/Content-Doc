@@ -1,5 +1,7 @@
-Data Source: Bro
-================
+Vendor: Bro
+===========
+Product: Bro
+------------
 
 ### Use Cases
 
@@ -105,5 +107,10 @@ _The following Parsers can be operationalized using log data from this data sour
 * [json-bro-tls](parserContent_json-bro-tls.md)
 * [json-bro-web-activity](parserContent_json-bro-web-activity.md)
 * [json-bro-weird](parserContent_json-bro-weird.md)
+* [json-zeek-kerberos](parserContent_json-zeek-kerberos.md)
+* [json-zeek_dce_rpc](parserContent_json-zeek_dce_rpc.md)
+* [json-zeek_dns](parserContent_json-zeek_dns.md)
+* [json-zeek_files](parserContent_json-zeek_files.md)
+* [json-zeek_weird](parserContent_json-zeek_weird.md)
 * [s-bro-email-in](parserContent_s-bro-email-in.md)
 * [s-bro-web-activity](parserContent_s-bro-web-activity.md)

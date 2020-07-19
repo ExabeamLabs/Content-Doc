@@ -1,5 +1,7 @@
-Data Source: LastPass
-=====================
+Vendor: LastPass
+================
+Product: LastPass
+-----------------
 
 ### Use Cases
 

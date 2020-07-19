@@ -1,5 +1,7 @@
-Data Source: Sophos UTM
-=======================
+Vendor: Sophos UTM
+==================
+Product: Sophos UTM
+-------------------
 
 ### Use Cases
 

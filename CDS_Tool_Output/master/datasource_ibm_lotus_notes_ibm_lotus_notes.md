@@ -1,5 +1,7 @@
-Data Source: IBM Lotus Notes
-============================
+Vendor: IBM Lotus Notes
+=======================
+Product: IBM Lotus Notes
+------------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Cimtrak
-====================
+Vendor: Cimtrak
+===============
+Product: Cimtrak
+----------------
 
 ### Use Cases
 

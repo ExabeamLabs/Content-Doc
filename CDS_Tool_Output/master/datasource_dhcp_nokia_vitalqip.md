@@ -1,5 +1,7 @@
-Data Source: DHCP
-=================
+Vendor: Nokia VitalQIP
+======================
+Product: DHCP
+-------------
 
 ### Use Cases
 

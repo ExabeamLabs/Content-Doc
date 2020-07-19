@@ -1,5 +1,7 @@
-Data Source: InfoWatch
-======================
+Vendor: InfoWatch
+=================
+Product: InfoWatch
+------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Trend Micro Deep Discovery Inspector
-=================================================
+Vendor: Trend Micro Deep Discovery Inspector
+============================================
+Product: Trend Micro Deep Discovery Inspector
+---------------------------------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Cisco Email Security Appliance
-===========================================
+Vendor: Cisco
+=============
+Product: Cisco Email Security Appliance
+---------------------------------------
 
 ### Use Cases
 

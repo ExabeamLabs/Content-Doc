@@ -1,5 +1,7 @@
-Data Source: EnSilo
-===================
+Vendor: EnSilo
+==============
+Product: EnSilo
+---------------
 
 ### Use Cases
 

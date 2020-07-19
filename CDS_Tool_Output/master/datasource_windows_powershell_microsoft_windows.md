@@ -1,5 +1,7 @@
-Data Source: Windows PowerShell
-===============================
+Vendor: Microsoft Windows
+=========================
+Product: Windows PowerShell
+---------------------------
 
 ### Use Cases
 
@@ -24,6 +26,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-powershell-4102](parserContent_cef-powershell-4102.md)
 * [cef-powershell-4104](parserContent_cef-powershell-4104.md)
 * [cef-powershell-600](parserContent_cef-powershell-600.md)
+* [cef-windows-4104](parserContent_cef-windows-4104.md)
 * [powershell-4104](parserContent_powershell-4104.md)
 * [powershell-process-created](parserContent_powershell-process-created.md)
 * [powershell-process-created-1](parserContent_powershell-process-created-1.md)

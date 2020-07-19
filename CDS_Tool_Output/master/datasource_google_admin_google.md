@@ -1,5 +1,7 @@
-Data Source: Google Admin
-=========================
+Vendor: Google
+==============
+Product: Google Admin
+---------------------
 
 ### Use Cases
 

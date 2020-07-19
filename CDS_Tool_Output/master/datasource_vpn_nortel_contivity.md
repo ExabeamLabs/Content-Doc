@@ -1,5 +1,7 @@
-Data Source: VPN
-================
+Vendor: Nortel Contivity
+========================
+Product: VPN
+------------
 
 ### Use Cases
 

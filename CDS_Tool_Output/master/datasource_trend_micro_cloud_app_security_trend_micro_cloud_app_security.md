@@ -1,5 +1,7 @@
-Data Source: Trend Micro Cloud App Security
-===========================================
+Vendor: Trend Micro Cloud App Security
+======================================
+Product: Trend Micro Cloud App Security
+---------------------------------------
 
 ### Use Cases
 

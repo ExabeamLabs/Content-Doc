@@ -1,5 +1,7 @@
-Data Source: Alert Logic
-========================
+Vendor: Alert Logic
+===================
+Product: Alert Logic
+--------------------
 
 ### Use Cases
 

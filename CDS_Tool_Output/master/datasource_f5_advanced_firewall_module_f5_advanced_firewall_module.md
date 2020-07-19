@@ -1,5 +1,7 @@
-Data Source: F5 Advanced Firewall Module
-========================================
+Vendor: F5 Advanced Firewall Module
+===================================
+Product: F5 Advanced Firewall Module
+------------------------------------
 
 ### Use Cases
 

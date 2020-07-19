@@ -1,5 +1,7 @@
-Data Source: Password Manager Pro
-=================================
+Vendor: Password Manager Pro
+============================
+Product: Password Manager Pro
+-----------------------------
 
 ### Use Cases
 

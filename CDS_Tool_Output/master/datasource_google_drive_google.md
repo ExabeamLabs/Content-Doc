@@ -1,5 +1,7 @@
-Data Source: Google Drive
-=========================
+Vendor: Google
+==============
+Product: Google Drive
+---------------------
 
 ### Use Cases
 

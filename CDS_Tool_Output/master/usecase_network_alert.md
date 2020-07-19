@@ -35,6 +35,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [SentinelOne](datasource_sentinelone_sentinelone.md)
 * [Snort](datasource_snort_snort.md)
 * [Sonicwall](datasource_sonicwall_sonicwall.md)
+* [Sophos Endpoint Protection](datasource_sophos_endpoint_protection_sophos_endpoint_protection.md)
 * [Suricata IDS](datasource_suricata_ids_suricata_ids.md)
 * [Symantec DLP](datasource_symantec_dlp_symantec_dlp.md)
 * [Symantec Endpoint Protection](datasource_symantec_endpoint_protection_symantec_endpoint_protection.md)

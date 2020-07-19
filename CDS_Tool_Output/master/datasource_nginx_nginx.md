@@ -1,5 +1,7 @@
-Data Source: NGINX
-==================
+Vendor: NGINX
+=============
+Product: NGINX
+--------------
 
 ### Use Cases
 

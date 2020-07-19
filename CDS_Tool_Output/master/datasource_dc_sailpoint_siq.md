@@ -1,5 +1,7 @@
-Data Source: DC
-===============
+Vendor: Sailpoint SIQ
+=====================
+Product: DC
+-----------
 
 ### Use Cases
 

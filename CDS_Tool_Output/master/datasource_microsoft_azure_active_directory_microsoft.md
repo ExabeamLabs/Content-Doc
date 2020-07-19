@@ -1,5 +1,7 @@
-Data Source: Microsoft Azure Active Directory
-=============================================
+Vendor: Microsoft
+=================
+Product: Microsoft Azure Active Directory
+-----------------------------------------
 
 ### Use Cases
 

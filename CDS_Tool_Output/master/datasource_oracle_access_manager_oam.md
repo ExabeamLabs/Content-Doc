@@ -1,5 +1,7 @@
-Data Source: Oracle Access Manager
-==================================
+Vendor: OAM
+===========
+Product: Oracle Access Manager
+------------------------------
 
 ### Use Cases
 

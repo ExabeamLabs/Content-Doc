@@ -1,5 +1,7 @@
-Data Source: DHCP
-=================
+Vendor: Unix
+============
+Product: DHCP
+-------------
 
 ### Use Cases
 

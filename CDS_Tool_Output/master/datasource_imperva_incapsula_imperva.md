@@ -1,5 +1,7 @@
-Data Source: Imperva Incapsula
-==============================
+Vendor: Imperva
+===============
+Product: Imperva Incapsula
+--------------------------
 
 ### Use Cases
 

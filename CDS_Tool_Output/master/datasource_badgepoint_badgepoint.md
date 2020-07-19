@@ -1,5 +1,7 @@
-Data Source: Badgepoint
-=======================
+Vendor: Badgepoint
+==================
+Product: Badgepoint
+-------------------
 
 ### Use Cases
 

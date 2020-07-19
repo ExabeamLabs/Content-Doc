@@ -1,5 +1,7 @@
-Data Source: Red Canary
-=======================
+Vendor: Red Canary
+==================
+Product: Red Canary
+-------------------
 
 ### Use Cases
 

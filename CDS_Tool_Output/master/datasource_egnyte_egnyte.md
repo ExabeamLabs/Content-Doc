@@ -1,5 +1,7 @@
-Data Source: Egnyte
-===================
+Vendor: Egnyte
+==============
+Product: Egnyte
+---------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: AD Audit
-=====================
+Vendor: AD Audit
+================
+Product: AD Audit
+-----------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Forcepoint CASB
-============================
+Vendor: Forcepoint CASB
+=======================
+Product: Forcepoint CASB
+------------------------
 
 ### Use Cases
 

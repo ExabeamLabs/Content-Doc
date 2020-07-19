@@ -1,5 +1,7 @@
-Data Source: Genetec
-====================
+Vendor: Genetec
+===============
+Product: Genetec
+----------------
 
 ### Use Cases
 

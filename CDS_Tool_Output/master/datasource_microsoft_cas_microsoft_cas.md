@@ -1,5 +1,7 @@
-Data Source: Microsoft CAS
-==========================
+Vendor: Microsoft CAS
+=====================
+Product: Microsoft CAS
+----------------------
 
 ### Use Cases
 

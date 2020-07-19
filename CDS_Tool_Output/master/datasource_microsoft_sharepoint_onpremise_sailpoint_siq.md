@@ -1,5 +1,7 @@
-Data Source: Microsoft Sharepoint OnPremise
-===========================================
+Vendor: Sailpoint SIQ
+=====================
+Product: Microsoft Sharepoint OnPremise
+---------------------------------------
 
 ### Use Cases
 

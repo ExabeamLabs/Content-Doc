@@ -1,5 +1,7 @@
-Data Source: Brivo
-==================
+Vendor: Brivo
+=============
+Product: Brivo
+--------------
 
 ### Use Cases
 

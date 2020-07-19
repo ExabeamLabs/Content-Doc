@@ -1,5 +1,7 @@
-Data Source: Onguard
-====================
+Vendor: Onguard
+===============
+Product: Onguard
+----------------
 
 ### Use Cases
 

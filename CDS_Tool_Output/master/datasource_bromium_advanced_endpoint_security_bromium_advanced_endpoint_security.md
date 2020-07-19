@@ -1,5 +1,7 @@
-Data Source: Bromium Advanced Endpoint Security
-===============================================
+Vendor: Bromium Advanced Endpoint Security
+==========================================
+Product: Bromium Advanced Endpoint Security
+-------------------------------------------
 
 ### Use Cases
 

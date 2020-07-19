@@ -19,7 +19,7 @@ Name = lieberman-erpm
     """sLoginName=\\"({target_user}[^"]+)\\"""",
     """"AccountToElevate\\"\svalue=\\"({target_user}[^"]+)\\"""",
     """ElevationGroup\\"\svalue=\\"({privileges}[^"]+)\\"""",
-    """sEventType=\\"({event_type}[^"]+)\\""""
+    """sEventType=\\"({log_type}[^"]+)\\""""
   ]
   DupFields = ["account->object"]
 }

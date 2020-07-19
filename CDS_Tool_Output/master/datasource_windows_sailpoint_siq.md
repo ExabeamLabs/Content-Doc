@@ -1,5 +1,7 @@
-Data Source: Windows
-====================
+Vendor: Sailpoint SIQ
+=====================
+Product: Windows
+----------------
 
 ### Use Cases
 

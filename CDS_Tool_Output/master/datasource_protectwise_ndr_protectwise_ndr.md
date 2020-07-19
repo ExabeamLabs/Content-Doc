@@ -1,5 +1,7 @@
-Data Source: ProtectWise NDR
-============================
+Vendor: ProtectWise NDR
+=======================
+Product: ProtectWise NDR
+------------------------
 
 ### Use Cases
 

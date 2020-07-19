@@ -1,5 +1,7 @@
-Data Source: Morphisec EPTP
-===========================
+Vendor: Morphisec EPTP
+======================
+Product: Morphisec EPTP
+-----------------------
 
 ### Use Cases
 

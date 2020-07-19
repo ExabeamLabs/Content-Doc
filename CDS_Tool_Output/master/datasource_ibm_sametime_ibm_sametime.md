@@ -1,5 +1,7 @@
-Data Source: IBM Sametime
-=========================
+Vendor: IBM Sametime
+====================
+Product: IBM Sametime
+---------------------
 
 ### Use Cases
 

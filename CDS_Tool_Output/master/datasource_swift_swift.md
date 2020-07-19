@@ -1,5 +1,7 @@
-Data Source: Swift
-==================
+Vendor: Swift
+=============
+Product: Swift
+--------------
 
 ### Use Cases
 

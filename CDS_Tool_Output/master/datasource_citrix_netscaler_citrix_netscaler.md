@@ -1,5 +1,7 @@
-Data Source: Citrix Netscaler
-=============================
+Vendor: Citrix Netscaler
+========================
+Product: Citrix Netscaler
+-------------------------
 
 ### Use Cases
 

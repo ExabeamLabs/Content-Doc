@@ -1,5 +1,7 @@
-Data Source: IPTables
-=====================
+Vendor: IPTables
+================
+Product: IPTables
+-----------------
 
 ### Use Cases
 

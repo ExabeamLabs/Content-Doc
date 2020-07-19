@@ -1,5 +1,7 @@
-Data Source: Phantom
-====================
+Vendor: Phantom
+===============
+Product: Phantom
+----------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: FileSite
-=====================
+Vendor: FileSite
+================
+Product: FileSite
+-----------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: SFTP
-=================
+Vendor: SFTP
+============
+Product: SFTP
+-------------
 
 ### Use Cases
 

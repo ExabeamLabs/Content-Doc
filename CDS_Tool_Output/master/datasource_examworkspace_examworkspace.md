@@ -1,5 +1,7 @@
-Data Source: ExamWorkspace
-==========================
+Vendor: ExamWorkspace
+=====================
+Product: ExamWorkspace
+----------------------
 
 ### Use Cases
 

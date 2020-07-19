@@ -1,5 +1,7 @@
-Data Source: Office365
-======================
+Vendor: Microsoft Office 365
+============================
+Product: Office365
+------------------
 
 ### Use Cases
 

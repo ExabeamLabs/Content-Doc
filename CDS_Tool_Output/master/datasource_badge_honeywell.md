@@ -1,5 +1,7 @@
-Data Source: Badge
-==================
+Vendor: Honeywell
+=================
+Product: Badge
+--------------
 
 ### Use Cases
 

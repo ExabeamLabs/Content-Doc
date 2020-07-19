@@ -1,5 +1,7 @@
-Data Source: VMware
-===================
+Vendor: VMware
+==============
+Product: VMware
+---------------
 
 ### Use Cases
 

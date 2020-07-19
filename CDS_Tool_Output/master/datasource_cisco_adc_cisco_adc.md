@@ -1,5 +1,7 @@
-Data Source: Cisco ADC
-======================
+Vendor: Cisco ADC
+=================
+Product: Cisco ADC
+------------------
 
 ### Use Cases
 

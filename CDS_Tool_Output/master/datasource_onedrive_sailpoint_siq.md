@@ -1,5 +1,7 @@
-Data Source: OneDrive
+Vendor: Sailpoint SIQ
 =====================
+Product: OneDrive
+-----------------
 
 ### Use Cases
 

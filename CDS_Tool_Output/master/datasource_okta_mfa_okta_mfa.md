@@ -1,5 +1,7 @@
-Data Source: Okta MFA
-=====================
+Vendor: Okta MFA
+================
+Product: Okta MFA
+-----------------
 
 ### Use Cases
 

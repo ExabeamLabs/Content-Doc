@@ -1,5 +1,7 @@
-Data Source: Imperva File Activity Monitoring (FAM)
-===================================================
+Vendor: Imperva File Activity Monitoring (FAM)
+==============================================
+Product: Imperva File Activity Monitoring (FAM)
+-----------------------------------------------
 
 ### Use Cases
 

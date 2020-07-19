@@ -1,5 +1,7 @@
-Data Source: Vectra
-===================
+Vendor: Vectra
+==============
+Product: Vectra
+---------------
 
 ### Use Cases
 

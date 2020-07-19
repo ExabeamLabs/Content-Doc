@@ -1,5 +1,7 @@
-Data Source: RS2
-================
+Vendor: RS2
+===========
+Product: RS2
+------------
 
 ### Use Cases
 

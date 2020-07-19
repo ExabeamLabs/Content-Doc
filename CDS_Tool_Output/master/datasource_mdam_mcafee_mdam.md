@@ -1,5 +1,7 @@
-Data Source: MDAM
-=================
+Vendor: McAfee MDAM
+===================
+Product: MDAM
+-------------
 
 ### Use Cases
 

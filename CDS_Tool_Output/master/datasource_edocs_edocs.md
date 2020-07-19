@@ -1,5 +1,7 @@
-Data Source: eDocs
-==================
+Vendor: eDocs
+=============
+Product: eDocs
+--------------
 
 ### Use Cases
 

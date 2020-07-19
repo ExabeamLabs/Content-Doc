@@ -1,5 +1,7 @@
-Data Source: Squid
-==================
+Vendor: Squid
+=============
+Product: Squid
+--------------
 
 ### Use Cases
 

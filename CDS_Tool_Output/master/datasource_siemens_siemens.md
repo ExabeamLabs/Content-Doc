@@ -1,5 +1,7 @@
-Data Source: Siemens
-====================
+Vendor: Siemens
+===============
+Product: Siemens
+----------------
 
 ### Use Cases
 

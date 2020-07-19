@@ -1,5 +1,7 @@
-Data Source: Wazuh
-==================
+Vendor: Wazuh
+=============
+Product: Wazuh
+--------------
 
 ### Use Cases
 

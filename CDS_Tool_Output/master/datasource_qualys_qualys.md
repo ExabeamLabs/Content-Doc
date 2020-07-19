@@ -1,5 +1,7 @@
-Data Source: Qualys
-===================
+Vendor: Qualys
+==============
+Product: Qualys
+---------------
 
 ### Use Cases
 

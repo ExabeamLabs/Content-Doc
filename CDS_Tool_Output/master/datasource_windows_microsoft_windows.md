@@ -1,5 +1,7 @@
-Data Source: Windows
-====================
+Vendor: Microsoft Windows
+=========================
+Product: Windows
+----------------
 
 ### Use Cases
 
@@ -129,6 +131,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-windows-4625](parserContent_cef-windows-4625.md)
 * [cef-windows-4673](parserContent_cef-windows-4673.md)
 * [cef-windows-4674](parserContent_cef-windows-4674.md)
+* [cef-windows-6416](parserContent_cef-windows-6416.md)
 * [cef-windows-dns-query](parserContent_cef-windows-dns-query.md)
 * [cef-windows-dns-query-1](parserContent_cef-windows-dns-query-1.md)
 * [cef-windows-dns-response](parserContent_cef-windows-dns-response.md)

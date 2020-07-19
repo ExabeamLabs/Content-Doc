@@ -1,5 +1,7 @@
-Data Source: Cisco WiFi
-=======================
+Vendor: Cisco
+=============
+Product: Cisco WiFi
+-------------------
 
 ### Use Cases
 

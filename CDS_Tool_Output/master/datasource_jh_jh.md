@@ -1,5 +1,7 @@
-Data Source: JH
-===============
+Vendor: JH
+==========
+Product: JH
+-----------
 
 ### Use Cases
 

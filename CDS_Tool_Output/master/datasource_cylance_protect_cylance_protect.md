@@ -1,5 +1,7 @@
-Data Source: Cylance PROTECT
-============================
+Vendor: Cylance PROTECT
+=======================
+Product: Cylance PROTECT
+------------------------
 
 ### Use Cases
 

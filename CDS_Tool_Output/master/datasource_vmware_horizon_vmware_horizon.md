@@ -1,5 +1,7 @@
-Data Source: VMware Horizon
-===========================
+Vendor: VMware Horizon
+======================
+Product: VMware Horizon
+-----------------------
 
 ### Use Cases
 

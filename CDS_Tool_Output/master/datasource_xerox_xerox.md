@@ -1,5 +1,7 @@
-Data Source: Xerox
-==================
+Vendor: Xerox
+=============
+Product: Xerox
+--------------
 
 ### Use Cases
 

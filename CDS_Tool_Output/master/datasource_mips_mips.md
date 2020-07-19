@@ -1,5 +1,7 @@
-Data Source: MIPS
-=================
+Vendor: MIPS
+============
+Product: MIPS
+-------------
 
 ### Use Cases
 

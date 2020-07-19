@@ -1,5 +1,7 @@
-Data Source: Slack
-==================
+Vendor: Slack
+=============
+Product: Slack
+--------------
 
 ### Use Cases
 

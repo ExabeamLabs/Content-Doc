@@ -1,5 +1,7 @@
-Data Source: IPswitch MoveIt DMZ
-================================
+Vendor: IPswitch
+================
+Product: IPswitch MoveIt DMZ
+----------------------------
 
 ### Use Cases
 

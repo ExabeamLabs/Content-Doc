@@ -1,5 +1,7 @@
-Data Source: DHCP
-=================
+Vendor: Quest InTrust
+=====================
+Product: DHCP
+-------------
 
 ### Use Cases
 

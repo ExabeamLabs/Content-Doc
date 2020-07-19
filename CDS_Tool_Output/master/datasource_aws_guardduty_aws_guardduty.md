@@ -1,5 +1,7 @@
-Data Source: AWS GuardDuty
-==========================
+Vendor: AWS GuardDuty
+=====================
+Product: AWS GuardDuty
+----------------------
 
 ### Use Cases
 

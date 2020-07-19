@@ -1,5 +1,7 @@
-Data Source: VMware VDI
-=======================
+Vendor: VMware VDI
+==================
+Product: VMware VDI
+-------------------
 
 ### Use Cases
 

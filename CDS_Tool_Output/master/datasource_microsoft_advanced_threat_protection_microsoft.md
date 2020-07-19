@@ -1,5 +1,7 @@
-Data Source: Microsoft Advanced Threat Protection
-=================================================
+Vendor: Microsoft
+=================
+Product: Microsoft Advanced Threat Protection
+---------------------------------------------
 
 ### Use Cases
 

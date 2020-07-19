@@ -1,5 +1,7 @@
-Data Source: LEAP
-=================
+Vendor: LEAP
+============
+Product: LEAP
+-------------
 
 ### Use Cases
 

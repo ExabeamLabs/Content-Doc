@@ -1,5 +1,7 @@
-Data Source: Fortinet VPN
-=========================
+Vendor: Fortinet VPN
+====================
+Product: Fortinet VPN
+---------------------
 
 ### Use Cases
 

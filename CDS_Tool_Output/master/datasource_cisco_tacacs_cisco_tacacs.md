@@ -1,5 +1,7 @@
-Data Source: Cisco TACACS
-=========================
+Vendor: Cisco TACACS
+====================
+Product: Cisco TACACS
+---------------------
 
 ### Use Cases
 

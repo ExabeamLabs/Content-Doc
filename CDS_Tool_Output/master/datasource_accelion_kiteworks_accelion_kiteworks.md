@@ -1,5 +1,7 @@
-Data Source: Accelion Kiteworks
-===============================
+Vendor: Accelion Kiteworks
+==========================
+Product: Accelion Kiteworks
+---------------------------
 
 ### Use Cases
 

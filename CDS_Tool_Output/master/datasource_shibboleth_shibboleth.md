@@ -1,5 +1,7 @@
-Data Source: Shibboleth
-=======================
+Vendor: Shibboleth
+==================
+Product: Shibboleth
+-------------------
 
 ### Use Cases
 

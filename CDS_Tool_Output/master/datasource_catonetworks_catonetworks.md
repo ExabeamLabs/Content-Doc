@@ -1,5 +1,7 @@
-Data Source: CatoNetworks
-=========================
+Vendor: CatoNetworks
+====================
+Product: CatoNetworks
+---------------------
 
 ### Use Cases
 

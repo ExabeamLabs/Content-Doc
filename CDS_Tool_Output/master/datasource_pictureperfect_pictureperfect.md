@@ -1,5 +1,7 @@
-Data Source: PicturePerfect
-===========================
+Vendor: PicturePerfect
+======================
+Product: PicturePerfect
+-----------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Badge
-==================
+Vendor: Honeywell WIN-PAK
+=========================
+Product: Badge
+--------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Cybereason
-=======================
+Vendor: Cybereason
+==================
+Product: Cybereason
+-------------------
 
 ### Use Cases
 

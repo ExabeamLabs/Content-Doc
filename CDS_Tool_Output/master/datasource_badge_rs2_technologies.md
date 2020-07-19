@@ -1,5 +1,7 @@
-Data Source: Badge
-==================
+Vendor: RS2 Technologies
+========================
+Product: Badge
+--------------
 
 ### Use Cases
 

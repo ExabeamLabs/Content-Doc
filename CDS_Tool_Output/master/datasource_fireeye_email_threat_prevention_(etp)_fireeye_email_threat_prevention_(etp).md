@@ -1,5 +1,7 @@
-Data Source: FireEye Email Threat Prevention (ETP)
-==================================================
+Vendor: FireEye Email Threat Prevention (ETP)
+=============================================
+Product: FireEye Email Threat Prevention (ETP)
+----------------------------------------------
 
 ### Use Cases
 

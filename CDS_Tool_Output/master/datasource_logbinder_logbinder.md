@@ -1,5 +1,7 @@
-Data Source: LOGBinder
-======================
+Vendor: LOGBinder
+=================
+Product: LOGBinder
+------------------
 
 ### Use Cases
 

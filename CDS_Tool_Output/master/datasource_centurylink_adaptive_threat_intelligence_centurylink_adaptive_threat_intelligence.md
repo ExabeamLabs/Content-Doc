@@ -1,5 +1,7 @@
-Data Source: CenturyLink Adaptive Threat Intelligence
-=====================================================
+Vendor: CenturyLink Adaptive Threat Intelligence
+================================================
+Product: CenturyLink Adaptive Threat Intelligence
+-------------------------------------------------
 
 ### Use Cases
 

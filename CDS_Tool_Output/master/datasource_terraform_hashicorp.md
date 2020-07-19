@@ -1,5 +1,7 @@
-Data Source: Terraform
-======================
+Vendor: HashiCorp
+=================
+Product: Terraform
+------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: CrowdStrike Falcon
-===============================
+Vendor: CrowdStrike Falcon
+==========================
+Product: CrowdStrike Falcon
+---------------------------
 
 ### Use Cases
 

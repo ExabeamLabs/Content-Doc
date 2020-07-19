@@ -1,5 +1,7 @@
-Data Source: Adaxes
-===================
+Vendor: Adaxes
+==============
+Product: Adaxes
+---------------
 
 ### Use Cases
 

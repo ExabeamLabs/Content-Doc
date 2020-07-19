@@ -1,5 +1,7 @@
-Data Source: OSSEC
-==================
+Vendor: OSSEC
+=============
+Product: OSSEC
+--------------
 
 ### Use Cases
 

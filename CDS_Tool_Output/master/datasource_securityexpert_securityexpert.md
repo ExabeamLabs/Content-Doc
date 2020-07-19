@@ -1,5 +1,7 @@
-Data Source: SecurityExpert
-===========================
+Vendor: SecurityExpert
+======================
+Product: SecurityExpert
+-----------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Badge
-==================
+Vendor: Unknown
+===============
+Product: Badge
+--------------
 
 ### Use Cases
 

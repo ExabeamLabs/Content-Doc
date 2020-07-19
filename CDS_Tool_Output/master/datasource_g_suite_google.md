@@ -1,5 +1,7 @@
-Data Source: G Suite
-====================
+Vendor: Google
+==============
+Product: G Suite
+----------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Centrify Infrastructure Services
-=============================================
+Vendor: Centrify Infrastructure Services
+========================================
+Product: Centrify Infrastructure Services
+-----------------------------------------
 
 ### Use Cases
 

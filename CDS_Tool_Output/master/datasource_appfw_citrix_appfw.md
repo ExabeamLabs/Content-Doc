@@ -1,5 +1,7 @@
-Data Source: AppFW
-==================
+Vendor: Citrix AppFW
+====================
+Product: AppFW
+--------------
 
 ### Use Cases
 

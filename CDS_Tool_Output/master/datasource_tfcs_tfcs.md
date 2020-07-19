@@ -1,5 +1,7 @@
-Data Source: TFCS
-=================
+Vendor: TFCS
+============
+Product: TFCS
+-------------
 
 ### Use Cases
 

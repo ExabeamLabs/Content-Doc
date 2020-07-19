@@ -1,5 +1,7 @@
-Data Source: Code42
-===================
+Vendor: Code42
+==============
+Product: Code42
+---------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Badge
-==================
+Vendor: Viscount
+================
+Product: Badge
+--------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Watchguard
-=======================
+Vendor: Watchguard
+==================
+Product: Watchguard
+-------------------
 
 ### Use Cases
 

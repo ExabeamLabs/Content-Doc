@@ -1,5 +1,7 @@
-Data Source: F5 Application Security Manager
-============================================
+Vendor: F5 Application Security Manager
+=======================================
+Product: F5 Application Security Manager
+----------------------------------------
 
 ### Use Cases
 

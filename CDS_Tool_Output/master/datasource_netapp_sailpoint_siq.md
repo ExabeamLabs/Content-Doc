@@ -1,5 +1,7 @@
-Data Source: NetApp
-===================
+Vendor: Sailpoint SIQ
+=====================
+Product: NetApp
+---------------
 
 ### Use Cases
 

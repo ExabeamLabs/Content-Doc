@@ -1,5 +1,7 @@
-Data Source: UNIX
-=================
+Vendor: Fox BoKS ServerControl
+==============================
+Product: UNIX
+-------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Web Proxy
-======================
+Vendor: Cisco Cloud Web Security
+================================
+Product: Web Proxy
+------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Symantec Managed Security Services
-===============================================
+Vendor: Symantec Managed Security Services
+==========================================
+Product: Symantec Managed Security Services
+-------------------------------------------
 
 ### Use Cases
 

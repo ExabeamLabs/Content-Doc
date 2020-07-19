@@ -1,5 +1,7 @@
-Data Source: VPN
-================
+Vendor: F5 VPN
+==============
+Product: VPN
+------------
 
 ### Use Cases
 
