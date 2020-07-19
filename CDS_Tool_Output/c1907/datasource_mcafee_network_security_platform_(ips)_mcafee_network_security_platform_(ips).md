@@ -1,5 +1,7 @@
-Data Source: McAfee Network Security Platform (IPS)
-===================================================
+Vendor: McAfee Network Security Platform (IPS)
+==============================================
+Product: McAfee Network Security Platform (IPS)
+-----------------------------------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: F5
-===============
+Vendor: F5
+==========
+Product: F5
+-----------
 
 ### Use Cases
 

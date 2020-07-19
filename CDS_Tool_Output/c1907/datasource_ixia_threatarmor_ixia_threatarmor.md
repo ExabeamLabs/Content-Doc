@@ -1,5 +1,7 @@
-Data Source: IXIA ThreatArmor
-=============================
+Vendor: IXIA ThreatArmor
+========================
+Product: IXIA ThreatArmor
+-------------------------
 
 ### Use Cases
 

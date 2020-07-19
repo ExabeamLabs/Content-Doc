@@ -1,5 +1,7 @@
-Data Source: FireEye Network Security (NX)
-==========================================
+Vendor: FireEye Network Security (NX)
+=====================================
+Product: FireEye Network Security (NX)
+--------------------------------------
 
 ### Use Cases
 

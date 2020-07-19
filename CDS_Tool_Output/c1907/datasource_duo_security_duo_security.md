@@ -1,5 +1,7 @@
-Data Source: Duo Security
-=========================
+Vendor: Duo Security
+====================
+Product: Duo Security
+---------------------
 
 ### Use Cases
 

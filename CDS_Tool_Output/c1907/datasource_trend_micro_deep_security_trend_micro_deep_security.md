@@ -1,5 +1,7 @@
-Data Source: Trend Micro Deep Security
-======================================
+Vendor: Trend Micro Deep Security
+=================================
+Product: Trend Micro Deep Security
+----------------------------------
 
 ### Use Cases
 

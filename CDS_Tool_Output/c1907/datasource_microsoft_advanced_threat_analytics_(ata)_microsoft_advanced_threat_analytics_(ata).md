@@ -1,5 +1,7 @@
-Data Source: Microsoft Advanced Threat Analytics (ATA)
-======================================================
+Vendor: Microsoft Advanced Threat Analytics (ATA)
+=================================================
+Product: Microsoft Advanced Threat Analytics (ATA)
+--------------------------------------------------
 
 ### Use Cases
 

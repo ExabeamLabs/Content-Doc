@@ -1,5 +1,7 @@
-Data Source: Armis
-==================
+Vendor: Armis
+=============
+Product: Armis
+--------------
 
 ### Use Cases
 

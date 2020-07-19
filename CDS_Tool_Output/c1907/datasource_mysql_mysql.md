@@ -1,5 +1,7 @@
-Data Source: Mysql
-==================
+Vendor: Mysql
+=============
+Product: Mysql
+--------------
 
 ### Use Cases
 

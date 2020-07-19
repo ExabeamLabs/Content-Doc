@@ -1,5 +1,7 @@
-Data Source: Tripwire Enterprise
-================================
+Vendor: Tripwire Enterprise
+===========================
+Product: Tripwire Enterprise
+----------------------------
 
 ### Use Cases
 

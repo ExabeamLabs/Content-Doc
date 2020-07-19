@@ -1,5 +1,7 @@
-Data Source: Snort
-==================
+Vendor: Snort
+=============
+Product: Snort
+--------------
 
 ### Use Cases
 

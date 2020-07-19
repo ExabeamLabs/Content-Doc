@@ -1,5 +1,7 @@
-Data Source: Osirium
-====================
+Vendor: Osirium
+===============
+Product: Osirium
+----------------
 
 ### Use Cases
 

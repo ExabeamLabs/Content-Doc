@@ -1,5 +1,7 @@
-Data Source: VPN
-================
+Vendor: SecureNet
+=================
+Product: VPN
+------------
 
 ### Use Cases
 

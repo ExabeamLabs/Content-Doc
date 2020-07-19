@@ -1,5 +1,7 @@
-Data Source: SVN
-================
+Vendor: SVN
+===========
+Product: SVN
+------------
 
 ### Use Cases
 

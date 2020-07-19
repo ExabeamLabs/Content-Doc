@@ -1,5 +1,7 @@
-Data Source: Procad Pro.File DMS
-================================
+Vendor: Procad Pro.File DMS
+===========================
+Product: Procad Pro.File DMS
+----------------------------
 
 ### Use Cases
 

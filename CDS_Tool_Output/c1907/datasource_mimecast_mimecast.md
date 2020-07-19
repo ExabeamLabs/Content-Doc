@@ -1,5 +1,7 @@
-Data Source: Mimecast
-=====================
+Vendor: Mimecast
+================
+Product: Mimecast
+-----------------
 
 ### Use Cases
 

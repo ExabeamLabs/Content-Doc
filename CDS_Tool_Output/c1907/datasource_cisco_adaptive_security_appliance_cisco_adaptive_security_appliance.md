@@ -1,5 +1,7 @@
-Data Source: Cisco Adaptive Security Appliance
-==============================================
+Vendor: Cisco Adaptive Security Appliance
+=========================================
+Product: Cisco Adaptive Security Appliance
+------------------------------------------
 
 ### Use Cases
 

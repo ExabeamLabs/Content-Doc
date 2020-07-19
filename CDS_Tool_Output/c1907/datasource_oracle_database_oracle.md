@@ -1,5 +1,7 @@
-Data Source: Oracle Database
-============================
+Vendor: Oracle
+==============
+Product: Oracle Database
+------------------------
 
 ### Use Cases
 

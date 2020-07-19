@@ -1,5 +1,7 @@
-Data Source: OpenDNS Umbrella
-=============================
+Vendor: Cisco OpenDNS Umbrella
+==============================
+Product: OpenDNS Umbrella
+-------------------------
 
 ### Use Cases
 

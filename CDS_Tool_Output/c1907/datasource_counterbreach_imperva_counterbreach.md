@@ -1,5 +1,7 @@
-Data Source: CounterBreach
-==========================
+Vendor: Imperva CounterBreach
+=============================
+Product: CounterBreach
+----------------------
 
 ### Use Cases
 

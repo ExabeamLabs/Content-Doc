@@ -1,5 +1,7 @@
-Data Source: Salesforce
-=======================
+Vendor: Salesforce
+==================
+Product: Salesforce
+-------------------
 
 ### Use Cases
 

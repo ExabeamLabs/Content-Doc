@@ -1,5 +1,7 @@
-Data Source: McAfee Skyhigh
-===========================
+Vendor: McAfee Skyhigh
+======================
+Product: McAfee Skyhigh
+-----------------------
 
 ### Use Cases
 

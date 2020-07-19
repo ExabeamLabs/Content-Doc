@@ -1,5 +1,7 @@
-Data Source: AWS CloudWatch
-===========================
+Vendor: AWS CloudWatch
+======================
+Product: AWS CloudWatch
+-----------------------
 
 ### Use Cases
 

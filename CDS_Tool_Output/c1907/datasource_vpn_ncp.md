@@ -1,5 +1,7 @@
-Data Source: VPN
-================
+Vendor: NCP
+===========
+Product: VPN
+------------
 
 ### Use Cases
 

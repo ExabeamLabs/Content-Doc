@@ -1,5 +1,7 @@
-Data Source: HP Comware
-=======================
+Vendor: HP Comware
+==================
+Product: HP Comware
+-------------------
 
 ### Use Cases
 

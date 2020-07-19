@@ -1,5 +1,7 @@
-Data Source: IBM Endpoint Manager
-=================================
+Vendor: IBM Endpoint Manager
+============================
+Product: IBM Endpoint Manager
+-----------------------------
 
 ### Use Cases
 

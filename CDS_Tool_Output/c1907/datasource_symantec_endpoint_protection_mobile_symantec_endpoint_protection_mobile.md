@@ -1,5 +1,7 @@
-Data Source: Symantec Endpoint Protection Mobile
-================================================
+Vendor: Symantec Endpoint Protection Mobile
+===========================================
+Product: Symantec Endpoint Protection Mobile
+--------------------------------------------
 
 ### Use Cases
 

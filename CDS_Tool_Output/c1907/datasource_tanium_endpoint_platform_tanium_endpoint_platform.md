@@ -1,5 +1,7 @@
-Data Source: Tanium Endpoint Platform
-=====================================
+Vendor: Tanium Endpoint Platform
+================================
+Product: Tanium Endpoint Platform
+---------------------------------
 
 ### Use Cases
 

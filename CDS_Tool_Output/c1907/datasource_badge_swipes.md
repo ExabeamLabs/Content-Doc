@@ -1,5 +1,7 @@
-Data Source: Badge
-==================
+Vendor: Swipes
+==============
+Product: Badge
+--------------
 
 ### Use Cases
 

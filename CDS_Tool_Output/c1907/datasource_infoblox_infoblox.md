@@ -1,5 +1,7 @@
-Data Source: Infoblox
-=====================
+Vendor: Infoblox
+================
+Product: Infoblox
+-----------------
 
 ### Use Cases
 

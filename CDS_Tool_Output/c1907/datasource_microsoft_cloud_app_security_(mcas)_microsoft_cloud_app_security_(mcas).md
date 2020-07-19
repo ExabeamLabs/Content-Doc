@@ -1,5 +1,7 @@
-Data Source: Microsoft Cloud App Security (MCAS)
-================================================
+Vendor: Microsoft Cloud App Security (MCAS)
+===========================================
+Product: Microsoft Cloud App Security (MCAS)
+--------------------------------------------
 
 ### Use Cases
 

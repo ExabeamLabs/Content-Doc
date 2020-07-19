@@ -1,5 +1,7 @@
-Data Source: Symantec Secure Web Gateway
-========================================
+Vendor: Symantec Secure Web Gateway
+===================================
+Product: Symantec Secure Web Gateway
+------------------------------------
 
 ### Use Cases
 

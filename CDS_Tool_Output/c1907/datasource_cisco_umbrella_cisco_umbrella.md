@@ -1,5 +1,7 @@
-Data Source: Cisco Umbrella
-===========================
+Vendor: Cisco Umbrella
+======================
+Product: Cisco Umbrella
+-----------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: pfSense
-====================
+Vendor: pfSense
+===============
+Product: pfSense
+----------------
 
 ### Use Cases
 

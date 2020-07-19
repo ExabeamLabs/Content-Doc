@@ -1,5 +1,7 @@
-Data Source: Epic
-=================
+Vendor: Epic
+============
+Product: Epic
+-------------
 
 ### Use Cases
 

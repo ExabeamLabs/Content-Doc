@@ -1,5 +1,7 @@
-Data Source: McAfee DLP
-=======================
+Vendor: McAfee DLP
+==================
+Product: McAfee DLP
+-------------------
 
 ### Use Cases
 

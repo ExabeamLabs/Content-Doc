@@ -1,5 +1,7 @@
-Data Source: EXOS
+Vendor: KABA EXOS
 =================
+Product: EXOS
+-------------
 
 ### Use Cases
 

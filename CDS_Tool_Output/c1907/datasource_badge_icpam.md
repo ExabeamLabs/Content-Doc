@@ -1,5 +1,7 @@
-Data Source: Badge
-==================
+Vendor: ICPAM
+=============
+Product: Badge
+--------------
 
 ### Use Cases
 

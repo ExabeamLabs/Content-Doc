@@ -1,5 +1,7 @@
-Data Source: Dropbox
-====================
+Vendor: Dropbox
+===============
+Product: Dropbox
+----------------
 
 ### Use Cases
 

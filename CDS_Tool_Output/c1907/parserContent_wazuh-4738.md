@@ -1,0 +1,17 @@
+#### Parser Content
+```Java
+{
+Name = wazuh-4738
+  DataType = "account-modification"
+  Conditions = [ """"data.id":"4738"""", """"type":"wazuh-alerts"""", """"decoder.parent":"windows""""  ]
+  Fields = ${WazuhParserTemplates.wazuh-windows-template.Fields} [
+    """({event_name}A user account was changed)""",
+    """Security ID:\s*(|({user_sid}.+?))\s+Account Name:""",
+    """Account Name:\s*(|({user}.+?))\s+Account Domain:\s*(|({domain}.+?))\s+Logon ID:\s*(|({logon_id}.+?))\s+Target Account:""",
+    """Target\sAccount.+?Security ID:\s*({target_sid}.+?)\s""",
+    """Target\sAccount.+?Account Name:\s*({target_user}.+?)\s""",
+    """Target\sAccount.+?Account Domain:\s*({target_domain}.+?)\s""",
+    """Changed Attributes:\s*(|({attribute}.+?))\s+SAM Account Name"""
+  ]
+}
+```

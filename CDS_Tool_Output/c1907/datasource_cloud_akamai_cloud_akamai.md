@@ -1,5 +1,7 @@
-Data Source: Cloud Akamai
-=========================
+Vendor: Cloud Akamai
+====================
+Product: Cloud Akamai
+---------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Clearswift SEG
-===========================
+Vendor: Clearswift SEG
+======================
+Product: Clearswift SEG
+-----------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Digital Guardian Network DLP
-=========================================
+Vendor: Digital Guardian Network DLP
+====================================
+Product: Digital Guardian Network DLP
+-------------------------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: BitGlass
-=====================
+Vendor: BitGlass
+================
+Product: BitGlass
+-----------------
 
 ### Use Cases
 

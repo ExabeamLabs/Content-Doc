@@ -1,5 +1,7 @@
-Data Source: SecureLink
-=======================
+Vendor: SecureLink
+==================
+Product: SecureLink
+-------------------
 
 ### Use Cases
 

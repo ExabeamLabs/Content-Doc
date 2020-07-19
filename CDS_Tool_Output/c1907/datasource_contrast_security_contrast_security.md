@@ -1,5 +1,7 @@
-Data Source: Contrast Security
-==============================
+Vendor: Contrast Security
+=========================
+Product: Contrast Security
+--------------------------
 
 ### Use Cases
 

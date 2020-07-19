@@ -1,5 +1,7 @@
-Data Source: LDAP
-=================
+Vendor: Sun One
+===============
+Product: LDAP
+-------------
 
 ### Use Cases
 

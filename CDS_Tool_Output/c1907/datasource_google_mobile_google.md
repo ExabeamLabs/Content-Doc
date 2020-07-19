@@ -1,5 +1,7 @@
-Data Source: Google Mobile
-==========================
+Vendor: Google
+==============
+Product: Google Mobile
+----------------------
 
 ### Use Cases
 

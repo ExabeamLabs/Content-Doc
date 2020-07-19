@@ -1,5 +1,7 @@
-Data Source: DHCP
-=================
+Vendor: Bro
+===========
+Product: DHCP
+-------------
 
 ### Use Cases
 

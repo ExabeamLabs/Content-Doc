@@ -1,5 +1,7 @@
-Data Source: Skyhigh Networks CASB
-==================================
+Vendor: Skyhigh Networks CASB
+=============================
+Product: Skyhigh Networks CASB
+------------------------------
 
 ### Use Cases
 

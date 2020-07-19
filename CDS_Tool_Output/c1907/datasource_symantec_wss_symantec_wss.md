@@ -1,5 +1,7 @@
-Data Source: Symantec WSS
-=========================
+Vendor: Symantec WSS
+====================
+Product: Symantec WSS
+---------------------
 
 ### Use Cases
 

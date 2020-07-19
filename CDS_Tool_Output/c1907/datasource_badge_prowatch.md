@@ -1,5 +1,7 @@
-Data Source: Badge
-==================
+Vendor: ProWatch
+================
+Product: Badge
+--------------
 
 ### Use Cases
 

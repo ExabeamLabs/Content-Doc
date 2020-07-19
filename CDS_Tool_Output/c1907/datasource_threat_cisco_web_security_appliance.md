@@ -1,5 +1,7 @@
-Data Source: Threat
-===================
+Vendor: Cisco Web Security Appliance
+====================================
+Product: Threat
+---------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Check Point Endpoint Security
-==========================================
+Vendor: Check Point Endpoint Security
+=====================================
+Product: Check Point Endpoint Security
+--------------------------------------
 
 ### Use Cases
 

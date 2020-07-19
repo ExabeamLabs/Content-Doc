@@ -1,5 +1,7 @@
-Data Source: Microsoft RRA
-==========================
+Vendor: Microsoft RRA
+=====================
+Product: Microsoft RRA
+----------------------
 
 ### Use Cases
 

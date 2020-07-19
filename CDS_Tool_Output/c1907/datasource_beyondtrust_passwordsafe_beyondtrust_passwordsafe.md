@@ -1,5 +1,7 @@
-Data Source: BeyondTrust PasswordSafe
-=====================================
+Vendor: BeyondTrust PasswordSafe
+================================
+Product: BeyondTrust PasswordSafe
+---------------------------------
 
 ### Use Cases
 

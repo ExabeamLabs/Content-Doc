@@ -1,5 +1,7 @@
-Data Source: Vectra Networks
-============================
+Vendor: Vectra Networks
+=======================
+Product: Vectra Networks
+------------------------
 
 ### Use Cases
 

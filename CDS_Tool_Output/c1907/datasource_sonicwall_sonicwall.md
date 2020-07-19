@@ -1,5 +1,7 @@
-Data Source: Sonicwall
-======================
+Vendor: Sonicwall
+=================
+Product: Sonicwall
+------------------
 
 ### Use Cases
 

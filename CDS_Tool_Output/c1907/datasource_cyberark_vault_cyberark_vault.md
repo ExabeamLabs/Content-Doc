@@ -1,5 +1,7 @@
-Data Source: CyberArk Vault
-===========================
+Vendor: CyberArk Vault
+======================
+Product: CyberArk Vault
+-----------------------
 
 ### Use Cases
 

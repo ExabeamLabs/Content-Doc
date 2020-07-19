@@ -1,5 +1,7 @@
-Data Source: Badge
-==================
+Vendor: Lenel
+=============
+Product: Badge
+--------------
 
 ### Use Cases
 

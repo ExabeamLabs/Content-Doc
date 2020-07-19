@@ -1,5 +1,7 @@
-Data Source: Symantec DLP
-=========================
+Vendor: Symantec DLP
+====================
+Product: Symantec DLP
+---------------------
 
 ### Use Cases
 

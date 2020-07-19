@@ -1,5 +1,7 @@
-Data Source: Dell EMC
-=====================
+Vendor: Dell EMC
+================
+Product: Dell EMC
+-----------------
 
 ### Use Cases
 

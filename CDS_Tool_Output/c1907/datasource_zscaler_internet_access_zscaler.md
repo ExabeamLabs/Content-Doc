@@ -1,5 +1,7 @@
-Data Source: Zscaler Internet Access
-====================================
+Vendor: Zscaler
+===============
+Product: Zscaler Internet Access
+--------------------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Microsoft Windows AppLocker
-========================================
+Vendor: Microsoft Windows AppLocker
+===================================
+Product: Microsoft Windows AppLocker
+------------------------------------
 
 ### Use Cases
 

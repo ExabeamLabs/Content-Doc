@@ -1,5 +1,7 @@
-Data Source: Network
-====================
+Vendor: HP Aruba
+================
+Product: Network
+----------------
 
 ### Use Cases
 

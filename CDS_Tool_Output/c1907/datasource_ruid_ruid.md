@@ -1,5 +1,7 @@
-Data Source: RUID
-=================
+Vendor: RUID
+============
+Product: RUID
+-------------
 
 ### Use Cases
 

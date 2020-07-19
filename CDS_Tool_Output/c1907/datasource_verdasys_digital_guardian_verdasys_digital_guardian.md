@@ -1,5 +1,7 @@
-Data Source: Verdasys Digital Guardian
-======================================
+Vendor: Verdasys Digital Guardian
+=================================
+Product: Verdasys Digital Guardian
+----------------------------------
 
 ### Use Cases
 

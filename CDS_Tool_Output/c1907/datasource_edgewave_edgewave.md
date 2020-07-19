@@ -1,5 +1,7 @@
-Data Source: EdgeWave
-=====================
+Vendor: EdgeWave
+================
+Product: EdgeWave
+-----------------
 
 ### Use Cases
 

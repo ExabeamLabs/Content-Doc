@@ -1,5 +1,7 @@
-Data Source: SSO
-================
+Vendor: Shibboleth SSO
+======================
+Product: SSO
+------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: PowerSentry
-========================
+Vendor: PowerSentry
+===================
+Product: PowerSentry
+--------------------
 
 ### Use Cases
 

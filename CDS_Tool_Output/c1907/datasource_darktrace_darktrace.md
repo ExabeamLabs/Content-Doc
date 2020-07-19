@@ -1,5 +1,7 @@
-Data Source: Darktrace
-======================
+Vendor: Darktrace
+=================
+Product: Darktrace
+------------------
 
 ### Use Cases
 

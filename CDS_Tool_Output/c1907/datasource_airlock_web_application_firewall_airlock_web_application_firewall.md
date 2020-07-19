@@ -1,5 +1,7 @@
-Data Source: Airlock Web Application Firewall
-=============================================
+Vendor: Airlock Web Application Firewall
+========================================
+Product: Airlock Web Application Firewall
+-----------------------------------------
 
 ### Use Cases
 

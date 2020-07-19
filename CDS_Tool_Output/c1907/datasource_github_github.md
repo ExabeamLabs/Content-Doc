@@ -1,5 +1,7 @@
-Data Source: GitHub
-===================
+Vendor: GitHub
+==============
+Product: GitHub
+---------------
 
 ### Use Cases
 

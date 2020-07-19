@@ -1,5 +1,7 @@
-Data Source: FileAuditor
-========================
+Vendor: FileAuditor
+===================
+Product: FileAuditor
+--------------------
 
 ### Use Cases
 

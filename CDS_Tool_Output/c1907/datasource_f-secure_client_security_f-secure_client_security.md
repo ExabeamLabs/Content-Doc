@@ -1,5 +1,7 @@
-Data Source: F-Secure Client Security
-=====================================
+Vendor: F-Secure Client Security
+================================
+Product: F-Secure Client Security
+---------------------------------
 
 ### Use Cases
 

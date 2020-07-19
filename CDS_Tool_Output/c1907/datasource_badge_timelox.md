@@ -1,5 +1,7 @@
-Data Source: Badge
-==================
+Vendor: TimeLox
+===============
+Product: Badge
+--------------
 
 ### Use Cases
 

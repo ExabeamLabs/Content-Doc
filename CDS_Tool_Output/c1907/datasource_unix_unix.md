@@ -1,5 +1,7 @@
-Data Source: Unix
-=================
+Vendor: Unix
+============
+Product: Unix
+-------------
 
 ### Use Cases
 

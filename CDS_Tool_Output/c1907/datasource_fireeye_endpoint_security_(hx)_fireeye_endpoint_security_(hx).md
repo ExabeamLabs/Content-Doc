@@ -1,5 +1,7 @@
-Data Source: FireEye Endpoint Security (HX)
-===========================================
+Vendor: FireEye Endpoint Security (HX)
+======================================
+Product: FireEye Endpoint Security (HX)
+---------------------------------------
 
 ### Use Cases
 

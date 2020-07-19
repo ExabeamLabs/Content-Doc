@@ -1,5 +1,7 @@
-Data Source: McAfee Endpoint Security
-=====================================
+Vendor: McAfee Endpoint Security
+================================
+Product: McAfee Endpoint Security
+---------------------------------
 
 ### Use Cases
 

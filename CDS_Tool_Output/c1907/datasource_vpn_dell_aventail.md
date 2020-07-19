@@ -1,5 +1,7 @@
-Data Source: VPN
-================
+Vendor: Dell Aventail
+=====================
+Product: VPN
+------------
 
 ### Use Cases
 

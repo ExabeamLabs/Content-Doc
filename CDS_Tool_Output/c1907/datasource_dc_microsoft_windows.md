@@ -1,5 +1,7 @@
-Data Source: DC
-===============
+Vendor: Microsoft Windows
+=========================
+Product: DC
+-----------
 
 ### Use Cases
 

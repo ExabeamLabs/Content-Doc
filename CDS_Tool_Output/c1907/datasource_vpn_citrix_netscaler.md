@@ -1,5 +1,7 @@
-Data Source: VPN
-================
+Vendor: Citrix Netscaler
+========================
+Product: VPN
+------------
 
 ### Use Cases
 

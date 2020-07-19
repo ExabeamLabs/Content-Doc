@@ -1,5 +1,7 @@
-Data Source: GlobalProtect
-==========================
+Vendor: Palo Alto Networks GlobalProtect
+========================================
+Product: GlobalProtect
+----------------------
 
 ### Use Cases
 

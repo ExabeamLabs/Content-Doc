@@ -1,5 +1,7 @@
-Data Source: Ruckus
-===================
+Vendor: Ruckus
+==============
+Product: Ruckus
+---------------
 
 ### Use Cases
 

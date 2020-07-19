@@ -1,5 +1,7 @@
-Data Source: Dell Quest TPAM
-============================
+Vendor: Dell Quest TPAM
+=======================
+Product: Dell Quest TPAM
+------------------------
 
 ### Use Cases
 

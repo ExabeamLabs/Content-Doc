@@ -1,5 +1,7 @@
-Data Source: SiteMinder
-=======================
+Vendor: SiteMinder
+==================
+Product: SiteMinder
+-------------------
 
 ### Use Cases
 

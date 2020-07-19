@@ -1,5 +1,7 @@
-Data Source: Forescout CounterACT
-=================================
+Vendor: Forescout CounterACT
+============================
+Product: Forescout CounterACT
+-----------------------------
 
 ### Use Cases
 

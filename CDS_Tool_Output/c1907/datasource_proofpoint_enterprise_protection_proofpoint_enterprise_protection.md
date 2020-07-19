@@ -1,5 +1,7 @@
-Data Source: Proofpoint Enterprise Protection
-=============================================
+Vendor: Proofpoint Enterprise Protection
+========================================
+Product: Proofpoint Enterprise Protection
+-----------------------------------------
 
 ### Use Cases
 

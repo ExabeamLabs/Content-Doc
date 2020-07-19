@@ -1,5 +1,7 @@
-Data Source: McAfee Email Protection
-====================================
+Vendor: McAfee Email Protection
+===============================
+Product: McAfee Email Protection
+--------------------------------
 
 ### Use Cases
 

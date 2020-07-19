@@ -1,5 +1,7 @@
-Data Source: Arbor Availability Protection System
-=================================================
+Vendor: Arbor
+=============
+Product: Arbor Availability Protection System
+---------------------------------------------
 
 ### Use Cases
 

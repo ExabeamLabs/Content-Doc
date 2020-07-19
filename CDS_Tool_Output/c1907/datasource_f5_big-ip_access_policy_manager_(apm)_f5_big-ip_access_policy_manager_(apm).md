@@ -1,5 +1,7 @@
-Data Source: F5 Big-IP Access Policy Manager (APM)
-==================================================
+Vendor: F5 Big-IP Access Policy Manager (APM)
+=============================================
+Product: F5 Big-IP Access Policy Manager (APM)
+----------------------------------------------
 
 ### Use Cases
 

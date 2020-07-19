@@ -1,5 +1,7 @@
-Data Source: Citrix XenDesktop
-==============================
+Vendor: Citrix XenDesktop
+=========================
+Product: Citrix XenDesktop
+--------------------------
 
 ### Use Cases
 
