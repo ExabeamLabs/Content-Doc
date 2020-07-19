@@ -1,5 +1,7 @@
-Data Source: McAfee Web Gateway
-===============================
+Vendor: McAfee Web Gateway
+==========================
+Product: McAfee Web Gateway
+---------------------------
 
 ### Use Cases
 

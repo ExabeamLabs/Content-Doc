@@ -1,5 +1,7 @@
-Data Source: Silverfort
-=======================
+Vendor: Silverfort
+==================
+Product: Silverfort
+-------------------
 
 ### Use Cases
 

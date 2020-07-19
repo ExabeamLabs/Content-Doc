@@ -1,5 +1,7 @@
-Data Source: Citrix Gateway ActiveSync Connector
-================================================
+Vendor: Citrix Gateway ActiveSync Connector
+===========================================
+Product: Citrix Gateway ActiveSync Connector
+--------------------------------------------
 
 ### Use Cases
 

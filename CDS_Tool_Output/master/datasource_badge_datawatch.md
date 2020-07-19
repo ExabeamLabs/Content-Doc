@@ -1,5 +1,7 @@
-Data Source: Badge
-==================
+Vendor: DataWatch
+=================
+Product: Badge
+--------------
 
 ### Use Cases
 

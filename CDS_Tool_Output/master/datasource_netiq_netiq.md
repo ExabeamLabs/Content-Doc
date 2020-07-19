@@ -1,5 +1,7 @@
-Data Source: NetIQ
-==================
+Vendor: NetIQ
+=============
+Product: NetIQ
+--------------
 
 ### Use Cases
 

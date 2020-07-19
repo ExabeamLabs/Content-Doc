@@ -1,5 +1,7 @@
-Data Source: Cb Defense
-=======================
+Vendor: Carbon Black Defense
+============================
+Product: Cb Defense
+-------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Gravityzone
-========================
+Vendor: Gravityzone
+===================
+Product: Gravityzone
+--------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: AssetView
-======================
+Vendor: AssetView
+=================
+Product: AssetView
+------------------
 
 ### Use Cases
 

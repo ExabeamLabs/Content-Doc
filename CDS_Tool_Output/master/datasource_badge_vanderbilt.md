@@ -1,5 +1,7 @@
-Data Source: Badge
+Vendor: Vanderbilt
 ==================
+Product: Badge
+--------------
 
 ### Use Cases
 

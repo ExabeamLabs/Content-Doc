@@ -1,5 +1,7 @@
-Data Source: Check Point Security Gateway
-=========================================
+Vendor: Check Point Security Gateway
+====================================
+Product: Check Point Security Gateway
+-------------------------------------
 
 ### Use Cases
 
@@ -41,6 +43,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [checkpoint-connectra-vpn-logout](parserContent_checkpoint-connectra-vpn-logout.md)
 * [checkpoint-vpn-login-3](parserContent_checkpoint-vpn-login-3.md)
 * [checkpoint-vpn-logout-1](parserContent_checkpoint-vpn-logout-1.md)
+* [checkpoint-vpn-logout-2](parserContent_checkpoint-vpn-logout-2.md)
 * [connectra-failed-vpn-login](parserContent_connectra-failed-vpn-login.md)
 * [connectra-vpn-end](parserContent_connectra-vpn-end.md)
 * [connectra-vpn-login](parserContent_connectra-vpn-login.md)

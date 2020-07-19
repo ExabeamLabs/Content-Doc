@@ -42,6 +42,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Cloud Akamai](datasource_cloud_akamai_cloud_akamai.md)
 * [Cloudflare](datasource_cloudflare_cloudflare.md)
 * [Contrast Security](datasource_contrast_security_contrast_security.md)
+* [Palo Alto Networks Cortex](datasource_cortex_xdr_palo_alto_networks_cortex.md)
 * [Imperva CounterBreach](datasource_counterbreach_imperva_counterbreach.md)
 * [CrowdStrike Falcon](datasource_crowdstrike_falcon_crowdstrike_falcon.md)
 * [CyberArk Privileged Threat Analytics](datasource_cyberark_privileged_threat_analytics_cyberark_privileged_threat_analytics.md)

@@ -1,5 +1,7 @@
-Data Source: VBCorp
-===================
+Vendor: VBCorp
+==============
+Product: VBCorp
+---------------
 
 ### Use Cases
 

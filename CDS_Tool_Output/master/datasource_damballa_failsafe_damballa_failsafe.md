@@ -1,5 +1,7 @@
-Data Source: Damballa Failsafe
-==============================
+Vendor: Damballa Failsafe
+=========================
+Product: Damballa Failsafe
+--------------------------
 
 ### Use Cases
 

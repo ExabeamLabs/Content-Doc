@@ -1,5 +1,7 @@
-Data Source: RSA ECAT
-=====================
+Vendor: RSA ECAT
+================
+Product: RSA ECAT
+-----------------
 
 ### Use Cases
 

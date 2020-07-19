@@ -1,5 +1,7 @@
-Data Source: SentinelOne
-========================
+Vendor: SentinelOne
+===================
+Product: SentinelOne
+--------------------
 
 ### Use Cases
 

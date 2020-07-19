@@ -1,5 +1,7 @@
-Data Source: Nasuni
-===================
+Vendor: Nasuni
+==============
+Product: Nasuni
+---------------
 
 ### Use Cases
 

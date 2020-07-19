@@ -1,5 +1,7 @@
-Data Source: Fidelis
-====================
+Vendor: Fidelis
+===============
+Product: Fidelis
+----------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: McAfee Enterprise Security Manager
-===============================================
+Vendor: McAfee Enterprise Security Manager
+==========================================
+Product: McAfee Enterprise Security Manager
+-------------------------------------------
 
 ### Use Cases
 

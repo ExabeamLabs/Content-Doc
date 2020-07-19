@@ -24,7 +24,6 @@ Name = exchange-dlp-email-out-failed
 DupFields = [
     "user_email->sender",
     "user_email->orig_user",
-    "user_email->email_user",
     "recipient->external_address",
     "action->outcome"
   ]

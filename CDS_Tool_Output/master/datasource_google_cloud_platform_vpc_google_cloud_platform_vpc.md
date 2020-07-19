@@ -1,5 +1,7 @@
-Data Source: Google Cloud Platform VPC
-======================================
+Vendor: Google Cloud Platform VPC
+=================================
+Product: Google Cloud Platform VPC
+----------------------------------
 
 ### Use Cases
 

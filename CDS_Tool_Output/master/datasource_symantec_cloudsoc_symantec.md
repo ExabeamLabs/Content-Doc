@@ -1,5 +1,7 @@
-Data Source: Symantec CloudSOC
-==============================
+Vendor: Symantec
+================
+Product: Symantec CloudSOC
+--------------------------
 
 ### Use Cases
 

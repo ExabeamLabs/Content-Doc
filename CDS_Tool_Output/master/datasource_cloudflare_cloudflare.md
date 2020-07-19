@@ -1,5 +1,7 @@
-Data Source: Cloudflare
-=======================
+Vendor: Cloudflare
+==================
+Product: Cloudflare
+-------------------
 
 ### Use Cases
 

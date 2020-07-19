@@ -1,5 +1,7 @@
-Data Source: ExtraHop
-=====================
+Vendor: ExtraHop
+================
+Product: ExtraHop
+-----------------
 
 ### Use Cases
 

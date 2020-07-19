@@ -1,5 +1,7 @@
-Data Source: Lumension
-======================
+Vendor: Lumension
+=================
+Product: Lumension
+------------------
 
 ### Use Cases
 

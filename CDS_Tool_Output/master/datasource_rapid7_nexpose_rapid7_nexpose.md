@@ -1,5 +1,7 @@
-Data Source: Rapid7 Nexpose
-===========================
+Vendor: Rapid7 Nexpose
+======================
+Product: Rapid7 Nexpose
+-----------------------
 
 ### Use Cases
 

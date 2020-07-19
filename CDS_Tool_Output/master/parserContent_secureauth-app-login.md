@@ -11,7 +11,7 @@ Name = secureauth-app-login
       """exabeam_raw=.*({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
 	"""<UserHostAddress>({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
 	"""<HostName>({host}[^<]+)""",
-	"""<EventID>({event_id}\d+)</EventID>""",
+	"""<EventID>({event_code}\d+)</EventID>""",
 	"""<UserID>({user}[^<]+)""",
 	"""<Realm>({app}[^<]+)""",
      	"""<UserAgent>(?:-|({browser}[\w\-]+))""",

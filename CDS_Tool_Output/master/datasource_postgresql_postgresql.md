@@ -1,5 +1,7 @@
-Data Source: PostgreSQL
-=======================
+Vendor: PostgreSQL
+==================
+Product: PostgreSQL
+-------------------
 
 ### Use Cases
 

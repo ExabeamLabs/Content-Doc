@@ -1,5 +1,7 @@
-Data Source: Microsoft Windows
-==============================
+Vendor: Microsoft Windows
+=========================
+Product: Microsoft Windows
+--------------------------
 
 ### Use Cases
 

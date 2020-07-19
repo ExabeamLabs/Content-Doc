@@ -1,5 +1,7 @@
-Data Source: Cisco Meraki Firepower
-===================================
+Vendor: Cisco Meraki Firepower
+==============================
+Product: Cisco Meraki Firepower
+-------------------------------
 
 ### Use Cases
 

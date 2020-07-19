@@ -1,5 +1,7 @@
-Data Source: Microsoft Web Application Proxy
-============================================
+Vendor: Microsoft Web Application Proxy
+=======================================
+Product: Microsoft Web Application Proxy
+----------------------------------------
 
 ### Use Cases
 

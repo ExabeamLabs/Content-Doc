@@ -1,5 +1,7 @@
-Data Source: Weblogin
-=====================
+Vendor: Weblogin
+================
+Product: Weblogin
+-----------------
 
 ### Use Cases
 

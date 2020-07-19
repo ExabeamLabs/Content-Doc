@@ -1,5 +1,7 @@
-Data Source: Microsoft Sharepoint
-=================================
+Vendor: Microsoft Sharepoint
+============================
+Product: Microsoft Sharepoint
+-----------------------------
 
 ### Use Cases
 

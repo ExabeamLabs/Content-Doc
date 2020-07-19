@@ -1,5 +1,7 @@
-Data Source: Netscaler VPN
-==========================
+Vendor: Netscaler VPN
+=====================
+Product: Netscaler VPN
+----------------------
 
 ### Use Cases
 

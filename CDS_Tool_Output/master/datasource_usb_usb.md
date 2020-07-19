@@ -1,5 +1,7 @@
-Data Source: USB
-================
+Vendor: USB
+===========
+Product: USB
+------------
 
 ### Use Cases
 

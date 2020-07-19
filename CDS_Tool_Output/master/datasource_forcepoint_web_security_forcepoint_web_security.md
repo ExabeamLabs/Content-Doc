@@ -1,5 +1,7 @@
-Data Source: Forcepoint Web Security
-====================================
+Vendor: Forcepoint Web Security
+===============================
+Product: Forcepoint Web Security
+--------------------------------
 
 ### Use Cases
 

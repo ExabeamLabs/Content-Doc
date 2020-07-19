@@ -1,5 +1,7 @@
-Data Source: Swivel
-===================
+Vendor: Swivel
+==============
+Product: Swivel
+---------------
 
 ### Use Cases
 

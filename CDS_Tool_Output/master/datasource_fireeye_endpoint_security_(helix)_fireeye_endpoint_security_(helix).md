@@ -1,5 +1,7 @@
-Data Source: FireEye Endpoint Security (Helix)
-==============================================
+Vendor: FireEye Endpoint Security (Helix)
+=========================================
+Product: FireEye Endpoint Security (Helix)
+------------------------------------------
 
 ### Use Cases
 

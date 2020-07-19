@@ -1,5 +1,7 @@
-Data Source: NetDocs
-====================
+Vendor: NetDocs
+===============
+Product: NetDocs
+----------------
 
 ### Use Cases
 

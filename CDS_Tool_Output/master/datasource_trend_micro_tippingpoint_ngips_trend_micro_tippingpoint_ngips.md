@@ -1,5 +1,7 @@
-Data Source: Trend Micro TippingPoint NGIPS
-===========================================
+Vendor: Trend Micro TippingPoint NGIPS
+======================================
+Product: Trend Micro TippingPoint NGIPS
+---------------------------------------
 
 ### Use Cases
 

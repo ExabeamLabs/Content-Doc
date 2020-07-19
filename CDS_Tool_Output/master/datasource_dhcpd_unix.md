@@ -1,5 +1,7 @@
-Data Source: dhcpd
-==================
+Vendor: Unix
+============
+Product: dhcpd
+--------------
 
 ### Use Cases
 

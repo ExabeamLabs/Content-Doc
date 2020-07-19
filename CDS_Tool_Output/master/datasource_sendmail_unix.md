@@ -1,5 +1,7 @@
-Data Source: Sendmail
-=====================
+Vendor: Unix
+============
+Product: Sendmail
+-----------------
 
 ### Use Cases
 

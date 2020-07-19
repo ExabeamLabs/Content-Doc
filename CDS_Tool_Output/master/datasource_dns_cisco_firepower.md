@@ -1,5 +1,7 @@
-Data Source: DNS
-================
+Vendor: Cisco Firepower
+=======================
+Product: DNS
+------------
 
 ### Use Cases
 

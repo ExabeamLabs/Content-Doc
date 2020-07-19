@@ -1,5 +1,7 @@
-Data Source: Code Green Network (Digital Guardian) TrueDLP
-==========================================================
+Vendor: Code Green Network (Digital Guardian) TrueDLP
+=====================================================
+Product: Code Green Network (Digital Guardian) TrueDLP
+------------------------------------------------------
 
 ### Use Cases
 

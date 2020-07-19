@@ -1,5 +1,7 @@
-Data Source: ObserveIT
-======================
+Vendor: ObserveIT
+=================
+Product: ObserveIT
+------------------
 
 ### Use Cases
 

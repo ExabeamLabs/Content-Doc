@@ -1,5 +1,7 @@
-Data Source: iManage
-====================
+Vendor: iManage
+===============
+Product: iManage
+----------------
 
 ### Use Cases
 

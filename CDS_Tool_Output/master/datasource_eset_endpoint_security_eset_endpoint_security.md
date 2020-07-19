@@ -1,5 +1,7 @@
-Data Source: ESET Endpoint Security
-===================================
+Vendor: ESET Endpoint Security
+==============================
+Product: ESET Endpoint Security
+-------------------------------
 
 ### Use Cases
 

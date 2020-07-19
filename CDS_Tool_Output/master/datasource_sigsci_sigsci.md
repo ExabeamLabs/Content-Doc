@@ -1,5 +1,7 @@
-Data Source: SIGSCI
-===================
+Vendor: SIGSCI
+==============
+Product: SIGSCI
+---------------
 
 ### Use Cases
 

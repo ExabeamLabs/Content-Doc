@@ -1,5 +1,7 @@
-Data Source: PingConnect
-========================
+Vendor: Ping Identity
+=====================
+Product: PingConnect
+--------------------
 
 ### Use Cases
 

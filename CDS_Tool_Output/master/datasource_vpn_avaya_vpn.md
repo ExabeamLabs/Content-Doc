@@ -1,5 +1,7 @@
-Data Source: VPN
-================
+Vendor: Avaya VPN
+=================
+Product: VPN
+------------
 
 ### Use Cases
 

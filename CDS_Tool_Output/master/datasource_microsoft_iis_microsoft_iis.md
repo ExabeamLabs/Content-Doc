@@ -1,5 +1,7 @@
-Data Source: Microsoft IIS
-==========================
+Vendor: Microsoft IIS
+=====================
+Product: Microsoft IIS
+----------------------
 
 ### Use Cases
 

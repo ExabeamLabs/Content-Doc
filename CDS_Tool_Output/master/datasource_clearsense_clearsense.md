@@ -1,5 +1,7 @@
-Data Source: Clearsense
-=======================
+Vendor: Clearsense
+==================
+Product: Clearsense
+-------------------
 
 ### Use Cases
 

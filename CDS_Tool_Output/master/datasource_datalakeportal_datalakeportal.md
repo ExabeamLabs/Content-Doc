@@ -1,5 +1,7 @@
-Data Source: DatalakePortal
-===========================
+Vendor: DatalakePortal
+======================
+Product: DatalakePortal
+-----------------------
 
 ### Use Cases
 

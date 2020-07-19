@@ -1,5 +1,7 @@
-Data Source: Lexmark
-====================
+Vendor: Lexmark
+===============
+Product: Lexmark
+----------------
 
 ### Use Cases
 

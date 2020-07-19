@@ -1,5 +1,7 @@
-Data Source: Attivo
-===================
+Vendor: Attivo
+==============
+Product: Attivo
+---------------
 
 ### Use Cases
 

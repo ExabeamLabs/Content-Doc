@@ -1,5 +1,7 @@
-Data Source: Fortinet Enterprise Firewall
-=========================================
+Vendor: Fortinet Enterprise Firewall
+====================================
+Product: Fortinet Enterprise Firewall
+-------------------------------------
 
 ### Use Cases
 

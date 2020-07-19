@@ -1,5 +1,7 @@
-Data Source: Barracuda Firewall
-===============================
+Vendor: Barracuda Firewall
+==========================
+Product: Barracuda Firewall
+---------------------------
 
 ### Use Cases
 

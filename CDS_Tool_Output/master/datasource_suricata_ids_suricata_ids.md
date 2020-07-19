@@ -1,5 +1,7 @@
-Data Source: Suricata IDS
-=========================
+Vendor: Suricata IDS
+====================
+Product: Suricata IDS
+---------------------
 
 ### Use Cases
 

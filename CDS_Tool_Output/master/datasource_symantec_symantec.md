@@ -1,5 +1,7 @@
-Data Source: Symantec
-=====================
+Vendor: Symantec
+================
+Product: Symantec
+-----------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Badge
-==================
+Vendor: CCURE
+=============
+Product: Badge
+--------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Office 365
-=======================
+Vendor: Microsoft Office 365
+============================
+Product: Office 365
+-------------------
 
 ### Use Cases
 
@@ -80,6 +82,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-microsoft-app-activity-7](parserContent_cef-microsoft-app-activity-7.md)
 * [cef-microsoft-app-activity-8](parserContent_cef-microsoft-app-activity-8.md)
 * [cef-microsoft-app-activity-9](parserContent_cef-microsoft-app-activity-9.md)
+* [cef-microsoft-graph-activity](parserContent_cef-microsoft-graph-activity.md)
 * [cef-o365-app-activity-1](parserContent_cef-o365-app-activity-1.md)
 * [cef-o365-app-activity-10](parserContent_cef-o365-app-activity-10.md)
 * [cef-o365-app-activity-11](parserContent_cef-o365-app-activity-11.md)

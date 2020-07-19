@@ -1,5 +1,7 @@
-Data Source: IBM Security Access Manager
-========================================
+Vendor: IBM
+===========
+Product: IBM Security Access Manager
+------------------------------------
 
 ### Use Cases
 

@@ -31,7 +31,7 @@ Name = s-proofpoint-email-alert-3
     """"QID_s\\*"+:\s*\\*"+({query_id}[^\\"]+)""",
     """"Type\\*"+:\s*\\*"+({alert_name}[^\\"]+)""",
     """({outcome}MessagesBlocked)""",
-    """"SourceSystem"+:"+({source}[^"]+)"""
+    """"SourceSystem"+:"+({log_source}[^"]+)"""
   ]
   DupFields = [ "recipient->user_email" ]
 }

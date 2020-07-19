@@ -1,5 +1,7 @@
-Data Source: VPN
-================
+Vendor: Cognitas CrossLink
+==========================
+Product: VPN
+------------
 
 ### Use Cases
 

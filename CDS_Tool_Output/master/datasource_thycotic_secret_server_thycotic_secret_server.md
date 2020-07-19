@@ -1,5 +1,7 @@
-Data Source: Thycotic Secret Server
-===================================
+Vendor: Thycotic Secret Server
+==============================
+Product: Thycotic Secret Server
+-------------------------------
 
 ### Use Cases
 

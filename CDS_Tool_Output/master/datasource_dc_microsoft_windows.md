@@ -1,5 +1,7 @@
-Data Source: DC
-===============
+Vendor: Microsoft Windows
+=========================
+Product: DC
+-----------
 
 ### Use Cases
 
@@ -210,6 +212,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [wazuh-4624](parserContent_wazuh-4624.md)
 * [wazuh-4738](parserContent_wazuh-4738.md)
 * [wazuh-4776](parserContent_wazuh-4776.md)
+* [windows-4768-1](parserContent_windows-4768-1.md)
 * [windows-events-4624](parserContent_windows-events-4624.md)
 * [windows-events-4769](parserContent_windows-events-4769.md)
 * [windows-events-4776](parserContent_windows-events-4776.md)

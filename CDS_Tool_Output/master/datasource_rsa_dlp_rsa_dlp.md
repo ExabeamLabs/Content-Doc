@@ -1,5 +1,7 @@
-Data Source: RSA DLP
-====================
+Vendor: RSA DLP
+===============
+Product: RSA DLP
+----------------
 
 ### Use Cases
 

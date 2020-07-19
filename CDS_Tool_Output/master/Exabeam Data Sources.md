@@ -214,6 +214,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Cybereason
 * [Cybereason](datasource_cybereason_cybereason.md)
 #### Cylance PROTECT
+* [Cylance PROTECT Memory Protection](datasource_cylance_protect_memory_protection_cylance_protect.md)
 * [Cylance PROTECT](datasource_cylance_protect_cylance_protect.md)
 #### Damballa Failsafe
 * [Damballa Failsafe](datasource_damballa_failsafe_damballa_failsafe.md)
@@ -255,6 +256,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [EnSilo](datasource_ensilo_ensilo.md)
 #### EndPoint
 * [EndPoint](datasource_endpoint_endpoint.md)
+#### Entrust
+* [Entrust Identityguard](datasource_entrust_identityguard_entrust.md)
 #### Epic
 * [Epic](datasource_epic_epic.md)
 #### Exabeam DL
@@ -561,6 +564,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Microsoft Windows PrintService
 * [Microsoft Windows PrintService](datasource_microsoft_windows_printservice_microsoft_windows_printservice.md)
 #### Mimecast
+* [Mimecast Email Security](datasource_mimecast_email_security_mimecast.md)
 * [Mimecast](datasource_mimecast_mimecast.md)
 #### Mimecast Email Security
 * [Mimecast Email Security](datasource_mimecast_email_security_mimecast_email_security.md)
@@ -594,6 +598,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [VPN](datasource_vpn_netmotion_wireless.md)
 #### NetWrix
 * [NetWrix](datasource_netwrix_netwrix.md)
+* [Windows](datasource_windows_netwrix.md)
 #### Netscaler VPN
 * [Netscaler VPN](datasource_netscaler_vpn_netscaler_vpn.md)
 #### Netskope Active Platform
@@ -636,6 +641,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Palo Alto Networks Aperture
 * [Aperture](datasource_aperture_palo_alto_networks_aperture.md)
 * [Palo Alto Networks Aperture](datasource_palo_alto_networks_aperture_palo_alto_networks_aperture.md)
+#### Palo Alto Networks Cortex
+* [Cortex XDR](datasource_cortex_xdr_palo_alto_networks_cortex.md)
 #### Palo Alto Networks GlobalProtect
 * [GlobalProtect gateway/portal](datasource_globalprotect_gateway_portal_palo_alto_networks_globalprotect.md)
 * [GlobalProtect portal](datasource_globalprotect_portal_palo_alto_networks_globalprotect.md)
@@ -663,6 +670,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Phishme](datasource_phishme_phishme.md)
 #### PicturePerfect
 * [PicturePerfect](datasource_pictureperfect_pictureperfect.md)
+#### Ping Federate
+* [Ping Federate](datasource_ping_federate_ping_federate.md)
 #### Ping Identity
 * [Ping Identity](datasource_ping_identity_ping_identity.md)
 * [PingConnect](datasource_pingconnect_ping_identity.md)

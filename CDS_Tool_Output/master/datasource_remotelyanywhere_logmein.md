@@ -1,5 +1,7 @@
-Data Source: RemotelyAnywhere
-=============================
+Vendor: LogMeIn
+===============
+Product: RemotelyAnywhere
+-------------------------
 
 ### Use Cases
 

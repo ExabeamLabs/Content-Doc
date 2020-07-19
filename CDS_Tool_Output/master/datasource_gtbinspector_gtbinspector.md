@@ -1,5 +1,7 @@
-Data Source: GTBInspector
-=========================
+Vendor: GTBInspector
+====================
+Product: GTBInspector
+---------------------
 
 ### Use Cases
 

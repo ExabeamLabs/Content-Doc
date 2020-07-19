@@ -1,5 +1,7 @@
-Data Source: MasterSAM PAM
-==========================
+Vendor: MasterSAM PAM
+=====================
+Product: MasterSAM PAM
+----------------------
 
 ### Use Cases
 

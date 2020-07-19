@@ -1,5 +1,7 @@
-Data Source: Cisco
-==================
+Vendor: Cisco
+=============
+Product: Cisco
+--------------
 
 ### Use Cases
 

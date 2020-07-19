@@ -1,5 +1,7 @@
-Data Source: Huawei Enterprise Network Firewall
-===============================================
+Vendor: Huawei
+==============
+Product: Huawei Enterprise Network Firewall
+-------------------------------------------
 
 ### Use Cases
 

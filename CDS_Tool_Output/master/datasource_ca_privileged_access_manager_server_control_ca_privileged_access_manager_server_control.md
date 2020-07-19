@@ -1,5 +1,7 @@
-Data Source: CA Privileged Access Manager Server Control
-========================================================
+Vendor: CA Privileged Access Manager Server Control
+===================================================
+Product: CA Privileged Access Manager Server Control
+----------------------------------------------------
 
 ### Use Cases
 

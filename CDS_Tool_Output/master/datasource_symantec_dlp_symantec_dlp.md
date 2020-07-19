@@ -1,5 +1,7 @@
-Data Source: Symantec DLP
-=========================
+Vendor: Symantec DLP
+====================
+Product: Symantec DLP
+---------------------
 
 ### Use Cases
 
@@ -74,6 +76,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [syslog-symantec-dlp-alert-3](parserContent_syslog-symantec-dlp-alert-3.md)
 * [syslog-symantec-dlp-alert-4](parserContent_syslog-symantec-dlp-alert-4.md)
 * [syslog-symantec-dlp-alert-5](parserContent_syslog-symantec-dlp-alert-5.md)
+* [syslog-symantec-dlp-alert-6](parserContent_syslog-symantec-dlp-alert-6.md)
 * [syslog-symantec-usb-write](parserContent_syslog-symantec-usb-write.md)
 * [syslog-vontu-dlp-alert](parserContent_syslog-vontu-dlp-alert.md)
 * [vontu-dlp](parserContent_vontu-dlp.md)

@@ -1,5 +1,7 @@
-Data Source: Quest Software Change Auditor
-==========================================
+Vendor: Quest Software
+======================
+Product: Quest Software Change Auditor
+--------------------------------------
 
 ### Use Cases
 

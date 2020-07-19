@@ -1,5 +1,7 @@
-Data Source: Proofpoint TAP
-===========================
+Vendor: Proofpoint TAP
+======================
+Product: Proofpoint TAP
+-----------------------
 
 ### Use Cases
 

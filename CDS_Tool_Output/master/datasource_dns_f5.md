@@ -1,5 +1,7 @@
-Data Source: DNS
-================
+Vendor: F5
+==========
+Product: DNS
+------------
 
 ### Use Cases
 

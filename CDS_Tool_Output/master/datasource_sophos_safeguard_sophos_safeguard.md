@@ -1,5 +1,7 @@
-Data Source: Sophos SafeGuard
-=============================
+Vendor: Sophos SafeGuard
+========================
+Product: Sophos SafeGuard
+-------------------------
 
 ### Use Cases
 

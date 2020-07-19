@@ -1,5 +1,7 @@
-Data Source: BusinessObject
-===========================
+Vendor: BusinessObject
+======================
+Product: BusinessObject
+-----------------------
 
 ### Use Cases
 

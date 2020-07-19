@@ -1,5 +1,7 @@
-Data Source: SecureWorks iSensor IPS
-====================================
+Vendor: SecureWorks iSensor IPS
+===============================
+Product: SecureWorks iSensor IPS
+--------------------------------
 
 ### Use Cases
 

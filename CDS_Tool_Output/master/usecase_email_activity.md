@@ -37,6 +37,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [CyberArk Privileged Session Manager](datasource_cyberark_privileged_session_manager_cyberark_privileged_session_manager.md)
 * [CyberArk Vault](datasource_cyberark_vault_cyberark_vault.md)
 * [Cylance PROTECT](datasource_cylance_protect_cylance_protect.md)
+* [Darktrace](datasource_darktrace_darktrace.md)
 * [Dell Quest TPAM](datasource_dell_quest_tpam_dell_quest_tpam.md)
 * [Digital Guardian Endpoint Protection](datasource_digital_guardian_endpoint_protection_digital_guardian_endpoint_protection.md)
 * [Digital Guardian Network DLP](datasource_digital_guardian_network_dlp_digital_guardian_network_dlp.md)

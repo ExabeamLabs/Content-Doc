@@ -1,5 +1,7 @@
-Data Source: Sophos
-===================
+Vendor: Sophos
+==============
+Product: Sophos
+---------------
 
 ### Use Cases
 

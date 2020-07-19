@@ -1,5 +1,7 @@
-Data Source: Lotus Mobile Connect
-=================================
+Vendor: IBM Lotus Mobile Connect
+================================
+Product: Lotus Mobile Connect
+-----------------------------
 
 ### Use Cases
 

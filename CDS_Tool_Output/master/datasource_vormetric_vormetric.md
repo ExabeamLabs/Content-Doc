@@ -1,5 +1,7 @@
-Data Source: Vormetric
-======================
+Vendor: Vormetric
+=================
+Product: Vormetric
+------------------
 
 ### Use Cases
 

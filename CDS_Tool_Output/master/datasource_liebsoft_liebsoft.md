@@ -1,5 +1,7 @@
-Data Source: Liebsoft
-=====================
+Vendor: Liebsoft
+================
+Product: Liebsoft
+-----------------
 
 ### Use Cases
 

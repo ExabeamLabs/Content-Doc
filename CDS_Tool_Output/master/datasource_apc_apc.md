@@ -1,5 +1,7 @@
-Data Source: APC
-================
+Vendor: APC
+===========
+Product: APC
+------------
 
 ### Use Cases
 

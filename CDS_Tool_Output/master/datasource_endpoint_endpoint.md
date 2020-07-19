@@ -1,5 +1,7 @@
-Data Source: EndPoint
-=====================
+Vendor: EndPoint
+================
+Product: EndPoint
+-----------------
 
 ### Use Cases
 

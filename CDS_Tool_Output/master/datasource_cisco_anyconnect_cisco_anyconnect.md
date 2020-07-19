@@ -1,5 +1,7 @@
-Data Source: Cisco AnyConnect
-=============================
+Vendor: Cisco AnyConnect
+========================
+Product: Cisco AnyConnect
+-------------------------
 
 ### Use Cases
 

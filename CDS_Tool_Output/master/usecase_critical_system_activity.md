@@ -67,6 +67,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [SkySea ClientView](datasource_skysea_clientview_skysea_clientview.md)
 * [Sonicwall](datasource_sonicwall_sonicwall.md)
 * [Symantec](datasource_symantec_cloudsoc_symantec.md)
+* [Microsoft Sysmon](datasource_sysmon_microsoft_sysmon.md)
 * [TitanFTP](datasource_titanftp_titanftp.md)
 * [Fox BoKS ServerControl](datasource_unix_fox_boks_servercontrol.md)
 * [Unix](datasource_unix_unix.md)

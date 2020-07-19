@@ -1,5 +1,7 @@
-Data Source: Infoblox BloxOne
-=============================
+Vendor: Infoblox
+================
+Product: Infoblox BloxOne
+-------------------------
 
 ### Use Cases
 

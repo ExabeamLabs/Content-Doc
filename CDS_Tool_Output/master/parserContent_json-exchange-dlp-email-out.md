@@ -29,7 +29,7 @@ Name = json-exchange-dlp-email-out
   ]
   DupFields = [
     "alert_name->alert_type",
-    "sender->email_user",
+    "sender->user_email",
     "action->outcome"
   ]
 }

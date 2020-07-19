@@ -1,5 +1,7 @@
-Data Source: Cisco ISE
-======================
+Vendor: Cisco ISE
+=================
+Product: Cisco ISE
+------------------
 
 ### Use Cases
 

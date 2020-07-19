@@ -1,5 +1,7 @@
-Data Source: Dtex
-=================
+Vendor: Dtex
+============
+Product: Dtex
+-------------
 
 ### Use Cases
 

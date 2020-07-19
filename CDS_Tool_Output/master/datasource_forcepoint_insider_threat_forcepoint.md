@@ -1,5 +1,7 @@
-Data Source: Forcepoint Insider Threat
-======================================
+Vendor: Forcepoint
+==================
+Product: Forcepoint Insider Threat
+----------------------------------
 
 ### Use Cases
 

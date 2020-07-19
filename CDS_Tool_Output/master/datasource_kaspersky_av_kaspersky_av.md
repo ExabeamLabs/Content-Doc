@@ -1,5 +1,7 @@
-Data Source: Kaspersky AV
-=========================
+Vendor: Kaspersky AV
+====================
+Product: Kaspersky AV
+---------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Splunk Stream
-==========================
+Vendor: Splunk Stream
+=====================
+Product: Splunk Stream
+----------------------
 
 ### Use Cases
 

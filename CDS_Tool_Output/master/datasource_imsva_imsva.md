@@ -1,5 +1,7 @@
-Data Source: IMSVA
-==================
+Vendor: IMSVA
+=============
+Product: IMSVA
+--------------
 
 ### Use Cases
 

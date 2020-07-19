@@ -1,5 +1,7 @@
-Data Source: Tenable.io
-=======================
+Vendor: Tenable.io
+==================
+Product: Tenable.io
+-------------------
 
 ### Use Cases
 

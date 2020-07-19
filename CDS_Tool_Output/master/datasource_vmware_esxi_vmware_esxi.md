@@ -1,5 +1,7 @@
-Data Source: VMware ESXi
-========================
+Vendor: VMware ESXi
+===================
+Product: VMware ESXi
+--------------------
 
 ### Use Cases
 

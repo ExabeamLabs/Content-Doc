@@ -1,5 +1,7 @@
-Data Source: CyberArk Privileged Threat Analytics
-=================================================
+Vendor: CyberArk Privileged Threat Analytics
+============================================
+Product: CyberArk Privileged Threat Analytics
+---------------------------------------------
 
 ### Use Cases
 

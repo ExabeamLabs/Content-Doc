@@ -1,5 +1,7 @@
-Data Source: CCURE
-==================
+Vendor: CCURE
+=============
+Product: CCURE
+--------------
 
 ### Use Cases
 

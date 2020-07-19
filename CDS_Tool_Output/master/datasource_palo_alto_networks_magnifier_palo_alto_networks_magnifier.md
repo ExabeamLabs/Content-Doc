@@ -1,5 +1,7 @@
-Data Source: Palo Alto Networks Magnifier
-=========================================
+Vendor: Palo Alto Networks Magnifier
+====================================
+Product: Palo Alto Networks Magnifier
+-------------------------------------
 
 ### Use Cases
 

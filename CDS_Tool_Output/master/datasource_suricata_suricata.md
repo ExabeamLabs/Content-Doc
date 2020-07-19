@@ -1,5 +1,7 @@
-Data Source: Suricata
-=====================
+Vendor: Suricata
+================
+Product: Suricata
+-----------------
 
 ### Use Cases
 

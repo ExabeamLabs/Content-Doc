@@ -1,5 +1,7 @@
-Data Source: Fortinet UTM
-=========================
+Vendor: Fortinet UTM
+====================
+Product: Fortinet UTM
+---------------------
 
 ### Use Cases
 

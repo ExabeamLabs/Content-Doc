@@ -1,5 +1,7 @@
-Data Source: IronPort Email
-===========================
+Vendor: IronPort Email
+======================
+Product: IronPort Email
+-----------------------
 
 ### Use Cases
 

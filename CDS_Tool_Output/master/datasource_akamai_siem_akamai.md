@@ -1,5 +1,7 @@
-Data Source: Akamai Siem
-========================
+Vendor: Akamai
+==============
+Product: Akamai Siem
+--------------------
 
 ### Use Cases
 

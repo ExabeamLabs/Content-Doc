@@ -1,5 +1,7 @@
-Data Source: Websense ESG
-=========================
+Vendor: Websense ESG
+====================
+Product: Websense ESG
+---------------------
 
 ### Use Cases
 

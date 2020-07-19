@@ -1,5 +1,7 @@
-Data Source: Citrix Endpoint Management
-=======================================
+Vendor: Citrix
+==============
+Product: Citrix Endpoint Management
+-----------------------------------
 
 ### Use Cases
 

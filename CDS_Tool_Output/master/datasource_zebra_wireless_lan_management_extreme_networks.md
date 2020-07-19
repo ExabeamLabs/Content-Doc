@@ -1,5 +1,7 @@
-Data Source: Zebra wireless LAN management
-==========================================
+Vendor: Extreme Networks
+========================
+Product: Zebra wireless LAN management
+--------------------------------------
 
 ### Use Cases
 

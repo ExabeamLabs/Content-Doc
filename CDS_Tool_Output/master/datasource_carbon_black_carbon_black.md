@@ -1,5 +1,7 @@
-Data Source: Carbon Black
-=========================
+Vendor: Carbon Black
+====================
+Product: Carbon Black
+---------------------
 
 ### Use Cases
 

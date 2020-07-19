@@ -1,5 +1,7 @@
-Data Source: DHCP
-=================
+Vendor: Bro
+===========
+Product: DHCP
+-------------
 
 ### Use Cases
 
@@ -21,4 +23,5 @@ _The following Parsers can be operationalized using log data from this data sour
 * [bro-dhcp-1](parserContent_bro-dhcp-1.md)
 * [bro-dhcp-activity-2](parserContent_bro-dhcp-activity-2.md)
 * [json-bro-dhcp-2](parserContent_json-bro-dhcp-2.md)
+* [json-zeek_dhcp](parserContent_json-zeek_dhcp.md)
 * [s-bro-dhcp](parserContent_s-bro-dhcp.md)

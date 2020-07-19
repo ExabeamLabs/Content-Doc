@@ -1,5 +1,7 @@
-Data Source: Onapsis
-====================
+Vendor: Onapsis
+===============
+Product: Onapsis
+----------------
 
 ### Use Cases
 

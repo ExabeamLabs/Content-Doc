@@ -1,5 +1,7 @@
-Data Source: MariaDB
-====================
+Vendor: MariaDB
+===============
+Product: MariaDB
+----------------
 
 ### Use Cases
 

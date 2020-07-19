@@ -1,5 +1,7 @@
-Data Source: oVirt
-==================
+Vendor: oVirt
+=============
+Product: oVirt
+--------------
 
 ### Use Cases
 

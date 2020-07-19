@@ -1,5 +1,7 @@
-Data Source: DNS
-================
+Vendor: Microsoft Windows DNSServer
+===================================
+Product: DNS
+------------
 
 ### Use Cases
 

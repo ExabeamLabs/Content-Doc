@@ -1,5 +1,7 @@
-Data Source: Palo Alto Networks Aperture
-========================================
+Vendor: Palo Alto Networks Aperture
+===================================
+Product: Palo Alto Networks Aperture
+------------------------------------
 
 ### Use Cases
 

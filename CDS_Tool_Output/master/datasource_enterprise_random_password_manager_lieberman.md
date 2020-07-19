@@ -1,5 +1,7 @@
-Data Source: Enterprise Random Password Manager
-===============================================
+Vendor: Lieberman
+=================
+Product: Enterprise Random Password Manager
+-------------------------------------------
 
 ### Use Cases
 

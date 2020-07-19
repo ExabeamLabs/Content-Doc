@@ -1,5 +1,7 @@
-Data Source: IBM DB2
-====================
+Vendor: IBM DB2
+===============
+Product: IBM DB2
+----------------
 
 ### Use Cases
 

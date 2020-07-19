@@ -1,5 +1,7 @@
-Data Source: Symantec Advanced Threat Protection
-================================================
+Vendor: Symantec Advanced Threat Protection
+===========================================
+Product: Symantec Advanced Threat Protection
+--------------------------------------------
 
 ### Use Cases
 

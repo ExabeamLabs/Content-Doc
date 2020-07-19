@@ -1,5 +1,7 @@
-Data Source: RSA SecurID
-========================
+Vendor: RSA SecurID
+===================
+Product: RSA SecurID
+--------------------
 
 ### Use Cases
 

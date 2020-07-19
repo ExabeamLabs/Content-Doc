@@ -1,5 +1,7 @@
-Data Source: Mimecast Email Security
-====================================
+Vendor: Mimecast Email Security
+===============================
+Product: Mimecast Email Security
+--------------------------------
 
 ### Use Cases
 

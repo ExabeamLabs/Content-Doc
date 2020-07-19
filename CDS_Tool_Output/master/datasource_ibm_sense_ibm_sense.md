@@ -1,5 +1,7 @@
-Data Source: IBM Sense
-======================
+Vendor: IBM Sense
+=================
+Product: IBM Sense
+------------------
 
 ### Use Cases
 

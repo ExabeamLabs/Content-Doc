@@ -1,5 +1,7 @@
-Data Source: Check Point Security Gateway Virtual Edition (vSEC)
-================================================================
+Vendor: Check Point Security Gateway Virtual Edition (vSEC)
+===========================================================
+Product: Check Point Security Gateway Virtual Edition (vSEC)
+------------------------------------------------------------
 
 ### Use Cases
 

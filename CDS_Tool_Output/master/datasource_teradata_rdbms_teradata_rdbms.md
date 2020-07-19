@@ -1,5 +1,7 @@
-Data Source: Teradata RDBMS
-===========================
+Vendor: Teradata RDBMS
+======================
+Product: Teradata RDBMS
+-----------------------
 
 ### Use Cases
 

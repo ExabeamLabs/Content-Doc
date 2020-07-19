@@ -1,5 +1,7 @@
-Data Source: TSOC
-=================
+Vendor: TrapX
+=============
+Product: TSOC
+-------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: jSONAR SonarG
-==========================
+Vendor: jSONAR SonarG
+=====================
+Product: jSONAR SonarG
+----------------------
 
 ### Use Cases
 

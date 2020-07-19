@@ -1,5 +1,7 @@
-Data Source: SafeWord PremierAccess
-===================================
+Vendor: Secure Computing
+========================
+Product: SafeWord PremierAccess
+-------------------------------
 
 ### Use Cases
 

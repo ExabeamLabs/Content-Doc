@@ -1,5 +1,7 @@
-Data Source: Microsoft Graph
-============================
+Vendor: Microsoft Graph
+=======================
+Product: Microsoft Graph
+------------------------
 
 ### Use Cases
 

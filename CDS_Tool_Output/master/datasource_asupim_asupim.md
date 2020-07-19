@@ -1,5 +1,7 @@
-Data Source: ASUPIM
-===================
+Vendor: ASUPIM
+==============
+Product: ASUPIM
+---------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Pharos
-===================
+Vendor: Pharos
+==============
+Product: Pharos
+---------------
 
 ### Use Cases
 

@@ -78,6 +78,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Clearsense](datasource_clearsense_clearsense.md)
 * [Cloudflare](datasource_cloudflare_cloudflare.md)
 * [Contrast Security](datasource_contrast_security_contrast_security.md)
+* [Palo Alto Networks Cortex](datasource_cortex_xdr_palo_alto_networks_cortex.md)
 * [Imperva CounterBreach](datasource_counterbreach_imperva_counterbreach.md)
 * [CrowdStrike Falcon](datasource_crowdstrike_falcon_crowdstrike_falcon.md)
 * [CyberArk Privileged Session Manager](datasource_cyberark_privileged_session_manager_cyberark_privileged_session_manager.md)

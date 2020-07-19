@@ -1,5 +1,7 @@
-Data Source: SAP
-================
+Vendor: SAP
+===========
+Product: SAP
+------------
 
 ### Use Cases
 

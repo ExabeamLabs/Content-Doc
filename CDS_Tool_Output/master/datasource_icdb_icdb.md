@@ -1,5 +1,7 @@
-Data Source: ICDB
-=================
+Vendor: ICDB
+============
+Product: ICDB
+-------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Websense
-=====================
+Vendor: Websense
+================
+Product: Websense
+-----------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Varonis Data Security Platform
-===========================================
+Vendor: Varonis Data Security Platform
+======================================
+Product: Varonis Data Security Platform
+---------------------------------------
 
 ### Use Cases
 

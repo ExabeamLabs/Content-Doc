@@ -1,5 +1,7 @@
-Data Source: Trend Micro InterScan Web Security
-===============================================
+Vendor: Trend Micro InterScan Web Security
+==========================================
+Product: Trend Micro InterScan Web Security
+-------------------------------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Cb Protection
-==========================
+Vendor: Carbon Black Protection
+===============================
+Product: Cb Protection
+----------------------
 
 ### Use Cases
 

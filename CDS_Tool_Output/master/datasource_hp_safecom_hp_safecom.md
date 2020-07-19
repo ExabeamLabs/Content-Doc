@@ -1,5 +1,7 @@
-Data Source: HP SafeCom
-=======================
+Vendor: HP SafeCom
+==================
+Product: HP SafeCom
+-------------------
 
 ### Use Cases
 

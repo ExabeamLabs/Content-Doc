@@ -1,5 +1,7 @@
-Data Source: BeyondTrust PowerBroker
-====================================
+Vendor: BeyondTrust PowerBroker
+===============================
+Product: BeyondTrust PowerBroker
+--------------------------------
 
 ### Use Cases
 

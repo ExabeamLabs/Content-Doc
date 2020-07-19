@@ -1,5 +1,7 @@
-Data Source: F5 Silverline
-==========================
+Vendor: F5
+==========
+Product: F5 Silverline
+----------------------
 
 ### Use Cases
 

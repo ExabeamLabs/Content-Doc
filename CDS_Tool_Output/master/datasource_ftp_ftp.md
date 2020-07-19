@@ -1,5 +1,7 @@
-Data Source: FTP
-================
+Vendor: FTP
+===========
+Product: FTP
+------------
 
 ### Use Cases
 

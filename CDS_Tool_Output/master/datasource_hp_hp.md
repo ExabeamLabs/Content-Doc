@@ -1,5 +1,7 @@
-Data Source: HP
-===============
+Vendor: HP
+==========
+Product: HP
+-----------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: DNS
-================
+Vendor: BIND
+============
+Product: DNS
+------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: PhoneFactor
-========================
+Vendor: Azura
+=============
+Product: PhoneFactor
+--------------------
 
 ### Use Cases
 

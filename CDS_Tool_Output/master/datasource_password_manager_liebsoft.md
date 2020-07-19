@@ -1,5 +1,7 @@
-Data Source: Password Manager
-=============================
+Vendor: Liebsoft
+================
+Product: Password Manager
+-------------------------
 
 ### Use Cases
 

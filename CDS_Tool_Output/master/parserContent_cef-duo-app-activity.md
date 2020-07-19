@@ -31,9 +31,10 @@ Name = cef-duo-app-activity
     """"state":\s*"({state}[^"]+)""",
     """"country":\s*"({country}[^"]+)""",
     """\sext_integration=({service}.*?)(\s\w+=|\s*$)""",
-    """ext_factor=({factor}.*?)(\s\w+=|\s*$)""",
+    """ext_factor=(n/a|({factor}.*?))(\s\w+=|\s*$)""",
     """"reason":\s*"(User approved|Valid passcode|({failure_reason}[^"]+))"""",
     """"context":\s*"({activity}[^"]+)"""",
   ]
+    DupFields = ["object->device"]
 }
 ```

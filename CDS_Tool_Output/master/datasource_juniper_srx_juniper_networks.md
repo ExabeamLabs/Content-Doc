@@ -1,5 +1,7 @@
-Data Source: Juniper SRX
+Vendor: Juniper Networks
 ========================
+Product: Juniper SRX
+--------------------
 
 ### Use Cases
 

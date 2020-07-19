@@ -1,5 +1,7 @@
-Data Source: Centrify
-=====================
+Vendor: Centrify
+================
+Product: Centrify
+-----------------
 
 ### Use Cases
 

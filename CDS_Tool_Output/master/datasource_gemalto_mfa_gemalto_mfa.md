@@ -1,5 +1,7 @@
-Data Source: Gemalto MFA
-========================
+Vendor: Gemalto MFA
+===================
+Product: Gemalto MFA
+--------------------
 
 ### Use Cases
 

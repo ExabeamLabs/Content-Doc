@@ -1,5 +1,7 @@
-Data Source: Sentinel IPS
-=========================
+Vendor: Sentinel IPS
+====================
+Product: Sentinel IPS
+---------------------
 
 ### Use Cases
 

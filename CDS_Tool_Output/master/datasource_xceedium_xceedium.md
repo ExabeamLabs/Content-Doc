@@ -1,5 +1,7 @@
-Data Source: Xceedium
-=====================
+Vendor: Xceedium
+================
+Product: Xceedium
+-----------------
 
 ### Use Cases
 

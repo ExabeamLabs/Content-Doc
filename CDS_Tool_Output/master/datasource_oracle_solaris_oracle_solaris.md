@@ -1,5 +1,7 @@
-Data Source: Oracle Solaris
-===========================
+Vendor: Oracle Solaris
+======================
+Product: Oracle Solaris
+-----------------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: BitDefender Gravityzone
-====================================
+Vendor: BitDefender
+===================
+Product: BitDefender Gravityzone
+--------------------------------
 
 ### Use Cases
 

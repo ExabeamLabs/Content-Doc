@@ -1,5 +1,7 @@
-Data Source: Juniper Networks ATP
-=================================
+Vendor: Juniper Networks ATP
+============================
+Product: Juniper Networks ATP
+-----------------------------
 
 ### Use Cases
 

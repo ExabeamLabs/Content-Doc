@@ -1,5 +1,7 @@
-Data Source: Microsoft Azure EventHub
-=====================================
+Vendor: Microsoft Azure EventHub
+================================
+Product: Microsoft Azure EventHub
+---------------------------------
 
 ### Use Cases
 

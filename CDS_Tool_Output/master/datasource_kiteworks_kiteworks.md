@@ -1,5 +1,7 @@
-Data Source: KiteWorks
-======================
+Vendor: KiteWorks
+=================
+Product: KiteWorks
+------------------
 
 ### Use Cases
 

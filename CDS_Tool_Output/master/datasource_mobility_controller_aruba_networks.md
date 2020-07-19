@@ -1,5 +1,7 @@
-Data Source: Mobility Controller
-================================
+Vendor: Aruba Networks
+======================
+Product: Mobility Controller
+----------------------------
 
 ### Use Cases
 

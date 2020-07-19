@@ -1,5 +1,7 @@
-Data Source: Ordr SCE
-=====================
+Vendor: Ordr SCE
+================
+Product: Ordr SCE
+-----------------
 
 ### Use Cases
 

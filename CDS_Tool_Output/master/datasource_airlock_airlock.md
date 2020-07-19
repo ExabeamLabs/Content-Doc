@@ -1,5 +1,7 @@
-Data Source: Airlock
-====================
+Vendor: Airlock
+===============
+Product: Airlock
+----------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Blue Coat ProxySG Appliance
-========================================
+Vendor: Symantec
+================
+Product: Blue Coat ProxySG Appliance
+------------------------------------
 
 ### Use Cases
 

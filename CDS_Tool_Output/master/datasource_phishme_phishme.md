@@ -1,5 +1,7 @@
-Data Source: Phishme
-====================
+Vendor: Phishme
+===============
+Product: Phishme
+----------------
 
 ### Use Cases
 

@@ -1,5 +1,7 @@
-Data Source: Absolute SIEM Connector
-====================================
+Vendor: Absolute SIEM Connector
+===============================
+Product: Absolute SIEM Connector
+--------------------------------
 
 ### Use Cases
 

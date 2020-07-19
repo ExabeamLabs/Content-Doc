@@ -1,5 +1,7 @@
-Data Source: Megaflex
-=====================
+Vendor: Visma
+=============
+Product: Megaflex
+-----------------
 
 ### Use Cases
 

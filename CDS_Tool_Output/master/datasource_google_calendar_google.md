@@ -1,5 +1,7 @@
-Data Source: Google Calendar
-============================
+Vendor: Google
+==============
+Product: Google Calendar
+------------------------
 
 ### Use Cases
 

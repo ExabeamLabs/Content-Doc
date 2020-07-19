@@ -1,5 +1,7 @@
-Data Source: Badge
-==================
+Vendor: Gallagher
+=================
+Product: Badge
+--------------
 
 ### Use Cases
 

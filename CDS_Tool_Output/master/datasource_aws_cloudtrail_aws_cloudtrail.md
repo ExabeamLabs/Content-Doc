@@ -1,5 +1,7 @@
-Data Source: AWS CloudTrail
-===========================
+Vendor: AWS CloudTrail
+======================
+Product: AWS CloudTrail
+-----------------------
 
 ### Use Cases
 
