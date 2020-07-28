@@ -7,6 +7,7 @@ Product: Proofpoint TAP
 
 _The following Use Cases can be operationalized using log data from this data source_
 
+* [Critical System Activity](../UseCases/usecase_critical_system_activity.md)
 * [Email Activity](../UseCases/usecase_email_activity.md)
 
 

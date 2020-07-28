@@ -7,12 +7,13 @@ Product: Cb Defense
 
 _The following Use Cases can be operationalized using log data from this data source_
 
+* [Activity Time  and Type](../UseCases/usecase_activity_time__and_type.md)
+* [Critical System Activity](../UseCases/usecase_critical_system_activity.md)
 * [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
 * [Executives](../UseCases/usecase_executives.md)
 * [File Activity](../UseCases/usecase_file_activity.md)
 * [Network](../UseCases/usecase_network.md)
 * [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)
-* [Process Activity](../UseCases/usecase_process_activity.md)
 * [Security Alert](../UseCases/usecase_security_alert.md)
 * [Service Account Activity](../UseCases/usecase_service_account_activity.md)
 * [Web Activity](../UseCases/usecase_web_activity.md)

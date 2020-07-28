@@ -177,6 +177,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Juniper VPN](../DataSources/datasource_vpn_juniper_vpn.md)
 * [NCP](../DataSources/datasource_vpn_ncp.md)
 * [NetMotion Wireless](../DataSources/datasource_vpn_netmotion_wireless.md)
+* [Nortel Contivity](../DataSources/datasource_vpn_nortel_contivity.md)
 * [SSL Open VPN](../DataSources/datasource_vpn_ssl_open_vpn.md)
 * [SecureNet](../DataSources/datasource_vpn_securenet.md)
 * [Zscaler](../DataSources/datasource_vpn_zscaler.md)
@@ -212,5 +213,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 - ntlm-logon
 - remote-access
 - remote-logon
+- session-end
 - vpn-login
+- vpn-logout
 - vpn-relogin

@@ -13,7 +13,6 @@ _The following Use Cases can be operationalized using log data from this data so
 * [Credential Switch Activity](../UseCases/usecase_credential_switch_activity.md)
 * [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
 * [Privileged Activity](../UseCases/usecase_privileged_activity.md)
-* [Process Activity](../UseCases/usecase_process_activity.md)
 * [Service Account Activity](../UseCases/usecase_service_account_activity.md)
 
 

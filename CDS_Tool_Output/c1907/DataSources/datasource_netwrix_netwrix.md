@@ -18,6 +18,7 @@ _The following Use Cases can be operationalized using log data from this data so
 * [Failed Logon and Account Lockout](../UseCases/usecase_failed_logon_and_account_lockout.md)
 * [File Activity](../UseCases/usecase_file_activity.md)
 * [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)
+* [Pass The Hash and Golden Ticket](../UseCases/usecase_pass_the_hash_and_golden_ticket.md)
 * [Security Operations](../UseCases/usecase_security_operations.md)
 * [Service Account Activity](../UseCases/usecase_service_account_activity.md)
 

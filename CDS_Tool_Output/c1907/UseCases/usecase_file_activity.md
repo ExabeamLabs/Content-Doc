@@ -16,7 +16,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Code42](../DataSources/datasource_code42_code42.md)
 * [CrowdStrike Falcon](../DataSources/datasource_crowdstrike_falcon_crowdstrike_falcon.md)
 * [CyberArk Vault](../DataSources/datasource_cyberark_vault_cyberark_vault.md)
-* [Cylance PROTECT](../DataSources/datasource_cylance_protect_cylance_protect.md)
 * [Dell EMC](../DataSources/datasource_dell_emc_dell_emc.md)
 * [Digital Guardian Endpoint Protection](../DataSources/datasource_digital_guardian_endpoint_protection_digital_guardian_endpoint_protection.md)
 * [Dropbox](../DataSources/datasource_dropbox_dropbox.md)
@@ -37,19 +36,16 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Netskope Active Platform](../DataSources/datasource_netskope_active_platform_netskope_active_platform.md)
 * [Microsoft Office 365](../DataSources/datasource_office_365_microsoft_office_365.md)
 * [Palo Alto Networks Aperture](../DataSources/datasource_palo_alto_networks_aperture_palo_alto_networks_aperture.md)
-* [Palo Alto Networks NGFW](../DataSources/datasource_palo_alto_networks_ngfw_palo_alto_networks_ngfw.md)
 * [Quest Software](../DataSources/datasource_quest_software_change_auditor_quest_software.md)
 * [RangerAudit](../DataSources/datasource_rangeraudit_rangeraudit.md)
 * [SFTP](../DataSources/datasource_sftp_sftp.md)
 * [ServiceNow](../DataSources/datasource_servicenow_servicenow.md)
 * [SkySea ClientView](../DataSources/datasource_skysea_clientview_skysea_clientview.md)
-* [Sophos Endpoint Protection](../DataSources/datasource_sophos_endpoint_protection_sophos_endpoint_protection.md)
 * [StealthBits](../DataSources/datasource_stealthbits_stealthbits.md)
 * [Symantec](../DataSources/datasource_symantec_cloudsoc_symantec.md)
 * [Microsoft Sysmon](../DataSources/datasource_sysmon_microsoft_sysmon.md)
 * [TrapX](../DataSources/datasource_tsoc_trapx.md)
 * [TitanFTP](../DataSources/datasource_titanftp_titanftp.md)
-* [Tripwire Enterprise](../DataSources/datasource_tripwire_enterprise_tripwire_enterprise.md)
 * [Fox BoKS ServerControl](../DataSources/datasource_unix_fox_boks_servercontrol.md)
 * [Varonis Data Security Platform](../DataSources/datasource_varonis_data_security_platform_varonis_data_security_platform.md)
 * [Vormetric](../DataSources/datasource_vormetric_vormetric.md)
@@ -59,7 +55,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 ### Exabeam Event Types
 
 - 
-- file-alert
 - file-delete
 - file-permission-change
 - file-read

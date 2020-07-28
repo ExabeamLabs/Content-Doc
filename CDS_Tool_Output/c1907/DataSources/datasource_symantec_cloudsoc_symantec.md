@@ -17,7 +17,6 @@ _The following Use Cases can be operationalized using log data from this data so
 * [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
 * [File Activity](../UseCases/usecase_file_activity.md)
 * [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)
-* [Process Activity](../UseCases/usecase_process_activity.md)
 * [Service Account Activity](../UseCases/usecase_service_account_activity.md)
 
 

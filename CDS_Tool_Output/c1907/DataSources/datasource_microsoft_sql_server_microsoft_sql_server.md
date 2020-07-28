@@ -8,6 +8,8 @@ Product: Microsoft SQL Server
 _The following Use Cases can be operationalized using log data from this data source_
 
 * [Application Activity](../UseCases/usecase_application_activity.md)
+* [Asset Logon and Access](../UseCases/usecase_asset_logon_and_access.md)
+* [Critical System Activity](../UseCases/usecase_critical_system_activity.md)
 * [Database Activity](../UseCases/usecase_database_activity.md)
 * [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)
 

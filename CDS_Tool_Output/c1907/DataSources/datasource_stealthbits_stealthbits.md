@@ -10,6 +10,7 @@ _The following Use Cases can be operationalized using log data from this data so
 * [Account Creation and Management](../UseCases/usecase_account_creation_and_management.md)
 * [Activity Time  and Type](../UseCases/usecase_activity_time__and_type.md)
 * [Asset Logon and Access](../UseCases/usecase_asset_logon_and_access.md)
+* [Critical System Activity](../UseCases/usecase_critical_system_activity.md)
 * [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
 * [File Activity](../UseCases/usecase_file_activity.md)
 * [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)

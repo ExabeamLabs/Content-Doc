@@ -38,9 +38,11 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Box](../DataSources/datasource_box_box.md)
 * [Brivo](../DataSources/datasource_brivo_brivo.md)
 * [Bro](../DataSources/datasource_bro_bro.md)
+* [Bromium Secure Platform](../DataSources/datasource_bromium_secure_platform_bromium_secure_platform.md)
 * [CA Privileged Access Manager Server Control](../DataSources/datasource_ca_privileged_access_manager_server_control_ca_privileged_access_manager_server_control.md)
 * [CCURE](../DataSources/datasource_ccure_ccure.md)
 * [CatoNetworks](../DataSources/datasource_catonetworks_catonetworks.md)
+* [Carbon Black Defense](../DataSources/datasource_cb_defense_carbon_black_defense.md)
 * [Carbon Black Protection](../DataSources/datasource_cb_protection_carbon_black_protection.md)
 * [Centrify](../DataSources/datasource_centrify_centrify.md)
 * [Check Point NGFW](../DataSources/datasource_check_point_ngfw_check_point_ngfw.md)
@@ -55,6 +57,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Citrix Netscaler](../DataSources/datasource_citrix_netscaler_citrix_netscaler.md)
 * [Citrix XenApp](../DataSources/datasource_citrix_xenapp_citrix_xenapp.md)
 * [Citrix XenDesktop](../DataSources/datasource_citrix_xendesktop_citrix_xendesktop.md)
+* [Code42](../DataSources/datasource_code42_code42.md)
 * [CrowdStrike Falcon](../DataSources/datasource_crowdstrike_falcon_crowdstrike_falcon.md)
 * [CyberArk Privileged Session Manager](../DataSources/datasource_cyberark_privileged_session_manager_cyberark_privileged_session_manager.md)
 * [CyberArk Vault](../DataSources/datasource_cyberark_vault_cyberark_vault.md)
@@ -70,8 +73,10 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [KABA EXOS](../DataSources/datasource_exos_kaba_exos.md)
 * [Epic](../DataSources/datasource_epic_epic.md)
 * [Exabeam DL](../DataSources/datasource_exabeam_dl_exabeam_dl.md)
+* [ExamWorkspace](../DataSources/datasource_examworkspace_examworkspace.md)
 * [F5 Big-IP Access Policy Manager (APM)](../DataSources/datasource_f5_big-ip_access_policy_manager_(apm)_f5_big-ip_access_policy_manager_(apm).md)
 * [FTP](../DataSources/datasource_ftp_ftp.md)
+* [FileAuditor](../DataSources/datasource_fileauditor_fileauditor.md)
 * [FileSite](../DataSources/datasource_filesite_filesite.md)
 * [Forcepoint CASB](../DataSources/datasource_forcepoint_casb_forcepoint_casb.md)
 * [Fortinet FortiAuthenticator](../DataSources/datasource_fortinet_fortiauthenticator_fortinet_fortiauthenticator.md)
@@ -84,6 +89,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Palo Alto Networks GlobalProtect](../DataSources/datasource_globalprotect_palo_alto_networks_globalprotect.md)
 * [Google](../DataSources/datasource_google_admin_google.md)
 * [Google](../DataSources/datasource_google_calendar_google.md)
+* [Google](../DataSources/datasource_google_drive_google.md)
 * [Google](../DataSources/datasource_google_groups_google.md)
 * [Google](../DataSources/datasource_google_mobile_google.md)
 * [Google](../DataSources/datasource_google_token_google.md)
@@ -94,6 +100,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [ICDB](../DataSources/datasource_icdb_icdb.md)
 * [IPswitch MoveIt](../DataSources/datasource_ipswitch_moveit_ipswitch_moveit.md)
 * [Webmail OWA](../DataSources/datasource_isa_webmail_owa.md)
+* [Imperva File Activity Monitoring (FAM)](../DataSources/datasource_imperva_file_activity_monitoring_(fam)_imperva_file_activity_monitoring_(fam).md)
 * [Imprivata](../DataSources/datasource_imprivata_imprivata.md)
 * [InfoWatch](../DataSources/datasource_infowatch_infowatch.md)
 * [Juniper Networks](../DataSources/datasource_juniper_srx_juniper_networks.md)
@@ -118,6 +125,8 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Mimecast](../DataSources/datasource_mimecast_mimecast.md)
 * [Paxton](../DataSources/datasource_net2door_paxton.md)
 * [Namespace rDirectory](../DataSources/datasource_namespace_rdirectory_namespace_rdirectory.md)
+* [Nasuni](../DataSources/datasource_nasuni_nasuni.md)
+* [NetApp](../DataSources/datasource_netapp_netapp.md)
 * [NetIQ](../DataSources/datasource_netiq_netiq.md)
 * [NetWrix](../DataSources/datasource_netwrix_netwrix.md)
 * [Netskope Active Platform](../DataSources/datasource_netskope_active_platform_netskope_active_platform.md)
@@ -136,6 +145,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [OAM](../DataSources/datasource_oracle_access_manager_oam.md)
 * [Osirium](../DataSources/datasource_osirium_osirium.md)
 * [Palo Alto Networks](../DataSources/datasource_pan_config_palo_alto_networks.md)
+* [Palo Alto Networks Aperture](../DataSources/datasource_palo_alto_networks_aperture_palo_alto_networks_aperture.md)
 * [Palo Alto Networks GlobalProtect](../DataSources/datasource_palo_alto_networks_globalprotect_palo_alto_networks_globalprotect.md)
 * [Palo Alto Networks NGFW](../DataSources/datasource_palo_alto_networks_ngfw_palo_alto_networks_ngfw.md)
 * [Password Manager Pro](../DataSources/datasource_password_manager_pro_password_manager_pro.md)
@@ -148,6 +158,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [PowerSentry](../DataSources/datasource_powersentry_powersentry.md)
 * [Procad Pro.File DMS](../DataSources/datasource_procad_pro.file_dms_procad_pro.file_dms.md)
 * [Pulse Secure](../DataSources/datasource_pulse_secure_pulse_secure.md)
+* [Quest Software](../DataSources/datasource_quest_software_change_auditor_quest_software.md)
 * [Dell EMC RSA Authentication Manager](../DataSources/datasource_rsa_authentication_manager_dell_emc_rsa_authentication_manager.md)
 * [RUID](../DataSources/datasource_ruid_ruid.md)
 * [RangerAudit](../DataSources/datasource_rangeraudit_rangeraudit.md)
@@ -173,6 +184,8 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [StealthBits](../DataSources/datasource_stealthbits_stealthbits.md)
 * [Symantec](../DataSources/datasource_symantec_cloudsoc_symantec.md)
 * [Symantec VIP](../DataSources/datasource_symantec_vip_symantec_vip.md)
+* [Microsoft Sysmon](../DataSources/datasource_sysmon_microsoft_sysmon.md)
+* [TrapX](../DataSources/datasource_tsoc_trapx.md)
 * [Tanium Endpoint Platform](../DataSources/datasource_tanium_endpoint_platform_tanium_endpoint_platform.md)
 * [Thycotic Secret Server](../DataSources/datasource_thycotic_secret_server_thycotic_secret_server.md)
 * [TitanFTP](../DataSources/datasource_titanftp_titanftp.md)
@@ -196,7 +209,9 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [SSL Open VPN](../DataSources/datasource_vpn_ssl_open_vpn.md)
 * [SecureNet](../DataSources/datasource_vpn_securenet.md)
 * [Zscaler](../DataSources/datasource_vpn_zscaler.md)
+* [Varonis Data Security Platform](../DataSources/datasource_varonis_data_security_platform_varonis_data_security_platform.md)
 * [Kemp](../DataSources/datasource_virtual_load_master_kemp.md)
+* [Vormetric](../DataSources/datasource_vormetric_vormetric.md)
 * [Microsoft Windows](../DataSources/datasource_windows_microsoft_windows.md)
 * [Workday](../DataSources/datasource_workday_workday.md)
 * [Xceedium](../DataSources/datasource_xceedium_xceedium.md)
@@ -209,6 +224,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 
 ### Exabeam Event Types
 
+- 
 - account-creation
 - account-deleted
 - account-disabled
@@ -223,6 +239,10 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 - audit-log-clear
 - audit-policy-change
 - authentication-successful
+- file-delete
+- file-permission-change
+- file-read
+- file-write
 - kerberos-logon
 - local-logon
 - member-added
@@ -237,3 +257,4 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 - remote-access
 - remote-logon
 - vpn-login
+- workstation-unlocked
