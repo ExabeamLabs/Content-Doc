@@ -9,7 +9,6 @@ _The following Use Cases can be operationalized using log data from this data so
 
 * [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
 * [Executives](../UseCases/usecase_executives.md)
-* [Process Activity](../UseCases/usecase_process_activity.md)
 * [Security Alert](../UseCases/usecase_security_alert.md)
 * [Service Account Activity](../UseCases/usecase_service_account_activity.md)
 

@@ -9,6 +9,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [APC](../DataSources/datasource_apc_apc.md)
 * [AWS GuardDuty](../DataSources/datasource_aws_guardduty_aws_guardduty.md)
 * [Alert Logic](../DataSources/datasource_alert_logic_alert_logic.md)
+* [AppSense Application Manager](../DataSources/datasource_appsense_application_manager_appsense_application_manager.md)
 * [Armis](../DataSources/datasource_armis_armis.md)
 * [Avecto Defendpoint Service](../DataSources/datasource_avecto_defendpoint_service_avecto_defendpoint_service.md)
 * [BeyondTrust PowerBroker](../DataSources/datasource_beyondtrust_powerbroker_beyondtrust_powerbroker.md)
@@ -128,5 +129,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 
 - 
 - network-alert
+- process-alert
 - process-created
 - security-alert

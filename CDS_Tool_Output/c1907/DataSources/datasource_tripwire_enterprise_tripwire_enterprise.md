@@ -7,8 +7,8 @@ Product: Tripwire Enterprise
 
 _The following Use Cases can be operationalized using log data from this data source_
 
+* [Critical System Activity](../UseCases/usecase_critical_system_activity.md)
 * [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
-* [File Activity](../UseCases/usecase_file_activity.md)
 
 
 ### Event Types

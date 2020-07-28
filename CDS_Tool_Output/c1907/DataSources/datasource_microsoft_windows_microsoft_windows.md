@@ -11,7 +11,9 @@ _The following Use Cases can be operationalized using log data from this data so
 * [Activity Time  and Type](../UseCases/usecase_activity_time__and_type.md)
 * [Asset Logon and Access](../UseCases/usecase_asset_logon_and_access.md)
 * [Badge Access](../UseCases/usecase_badge_access.md)
+* [Executives](../UseCases/usecase_executives.md)
 * [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)
+* [Privileged Activity](../UseCases/usecase_privileged_activity.md)
 * [Service Account Activity](../UseCases/usecase_service_account_activity.md)
 * [VPN Activity](../UseCases/usecase_vpn_activity.md)
 

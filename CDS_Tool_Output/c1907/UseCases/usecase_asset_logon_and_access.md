@@ -125,6 +125,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Microsoft Exchange](../DataSources/datasource_microsoft_exchange_microsoft_exchange.md)
 * [Microsoft NPS](../DataSources/datasource_microsoft_nps_microsoft_nps.md)
 * [Microsoft RRA](../DataSources/datasource_microsoft_rra_microsoft_rra.md)
+* [Microsoft SQL Server](../DataSources/datasource_microsoft_sql_server_microsoft_sql_server.md)
 * [Microsoft Web Application Proxy](../DataSources/datasource_microsoft_web_application_proxy_microsoft_web_application_proxy.md)
 * [Microsoft Windows](../DataSources/datasource_microsoft_windows_microsoft_windows.md)
 * [Mimecast](../DataSources/datasource_mimecast_mimecast.md)
@@ -160,6 +161,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [PowerSentry](../DataSources/datasource_powersentry_powersentry.md)
 * [Procad Pro.File DMS](../DataSources/datasource_procad_pro.file_dms_procad_pro.file_dms.md)
 * [Proofpoint Enterprise Protection](../DataSources/datasource_proofpoint_enterprise_protection_proofpoint_enterprise_protection.md)
+* [ProxySG](../DataSources/datasource_proxysg_proxysg.md)
 * [Pulse Secure](../DataSources/datasource_pulse_secure_pulse_secure.md)
 * [Quest Software](../DataSources/datasource_quest_software_change_auditor_quest_software.md)
 * [Dell EMC RSA Authentication Manager](../DataSources/datasource_rsa_authentication_manager_dell_emc_rsa_authentication_manager.md)
@@ -242,13 +244,18 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 - account-unlocked
 - account-unlocked-dup
 - app-activity
+- app-activity-failed
 - app-login
 - audit-log-clear
 - audit-policy-change
+- authentication-failed
 - authentication-successful
 - batch-logon
 - dlp-email-alert-out
 - ds-access
+- failed-app-login
+- failed-logon
+- failed-vpn-login
 - kerberos-logon
 - local-logon
 - member-added
@@ -263,6 +270,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 - privileged-object-access
 - remote-access
 - remote-logon
+- sequence-end
 - service-logon
 - session-end
 - share-access

@@ -8,6 +8,7 @@ Product: BrightMail
 _The following Use Cases can be operationalized using log data from this data source_
 
 * [Asset Logon and Access](../UseCases/usecase_asset_logon_and_access.md)
+* [Critical System Activity](../UseCases/usecase_critical_system_activity.md)
 * [Email Activity](../UseCases/usecase_email_activity.md)
 
 

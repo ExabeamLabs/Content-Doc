@@ -7,6 +7,7 @@ Product: Quest Software Change Auditor
 
 _The following Use Cases can be operationalized using log data from this data source_
 
+* [Activity Time  and Type](../UseCases/usecase_activity_time__and_type.md)
 * [Asset Logon and Access](../UseCases/usecase_asset_logon_and_access.md)
 * [Critical System Activity](../UseCases/usecase_critical_system_activity.md)
 * [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)

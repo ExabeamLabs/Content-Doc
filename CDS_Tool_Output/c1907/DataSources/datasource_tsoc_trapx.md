@@ -7,6 +7,8 @@ Product: TSOC
 
 _The following Use Cases can be operationalized using log data from this data source_
 
+* [Activity Time  and Type](../UseCases/usecase_activity_time__and_type.md)
+* [Critical System Activity](../UseCases/usecase_critical_system_activity.md)
 * [File Activity](../UseCases/usecase_file_activity.md)
 * [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)
 

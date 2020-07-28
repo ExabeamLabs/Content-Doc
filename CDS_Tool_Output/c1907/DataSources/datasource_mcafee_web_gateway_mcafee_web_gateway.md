@@ -9,6 +9,7 @@ _The following Use Cases can be operationalized using log data from this data so
 
 * [Data Loss Prevention](../UseCases/usecase_data_loss_prevention.md)
 * [Executives](../UseCases/usecase_executives.md)
+* [Network](../UseCases/usecase_network.md)
 * [Web Activity](../UseCases/usecase_web_activity.md)
 
 

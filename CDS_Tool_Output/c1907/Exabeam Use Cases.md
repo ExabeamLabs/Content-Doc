@@ -26,6 +26,7 @@ The following are the list of out-of-the-box supported Use Cases as of Content B
 * [Network](UseCases/usecase_network.md)
 * [Network Alert](UseCases/usecase_network_alert.md)
 * [Network zones and Location Access](UseCases/usecase_network_zones_and_location_access.md)
+* [Pass The Hash and Golden Ticket](UseCases/usecase_pass_the_hash_and_golden_ticket.md)
 * [Privileged Activity](UseCases/usecase_privileged_activity.md)
 * [Process Activity](UseCases/usecase_process_activity.md)
 * [Security Alert](UseCases/usecase_security_alert.md)

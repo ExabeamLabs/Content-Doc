@@ -9,7 +9,6 @@ _The following Use Cases can be operationalized using log data from this data so
 
 * [Data Loss Prevention](../UseCases/usecase_data_loss_prevention.md)
 * [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
-* [Process Activity](../UseCases/usecase_process_activity.md)
 * [USB Activity](../UseCases/usecase_usb_activity.md)
 
 

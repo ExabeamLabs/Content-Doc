@@ -15,3 +15,4 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 ### Exabeam Event Types
 
 - netflow-connection
+- sequence-end

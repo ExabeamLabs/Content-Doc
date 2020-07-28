@@ -11,6 +11,7 @@ _The following Use Cases can be operationalized using log data from this data so
 * [Activity Time  and Type](../UseCases/usecase_activity_time__and_type.md)
 * [Application Activity](../UseCases/usecase_application_activity.md)
 * [Asset Logon and Access](../UseCases/usecase_asset_logon_and_access.md)
+* [Badge Access](../UseCases/usecase_badge_access.md)
 * [Credential Switch Activity](../UseCases/usecase_credential_switch_activity.md)
 * [Critical System Activity](../UseCases/usecase_critical_system_activity.md)
 * [Email Activity](../UseCases/usecase_email_activity.md)
@@ -19,7 +20,8 @@ _The following Use Cases can be operationalized using log data from this data so
 * [Failed Logon and Account Lockout](../UseCases/usecase_failed_logon_and_account_lockout.md)
 * [File Activity](../UseCases/usecase_file_activity.md)
 * [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)
-* [Process Activity](../UseCases/usecase_process_activity.md)
+* [Pass The Hash and Golden Ticket](../UseCases/usecase_pass_the_hash_and_golden_ticket.md)
+* [Privileged Activity](../UseCases/usecase_privileged_activity.md)
 * [Security Operations](../UseCases/usecase_security_operations.md)
 * [Service Account Activity](../UseCases/usecase_service_account_activity.md)
 

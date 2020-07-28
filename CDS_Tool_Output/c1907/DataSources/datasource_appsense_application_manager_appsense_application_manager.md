@@ -8,6 +8,7 @@ Product: AppSense Application Manager
 _The following Use Cases can be operationalized using log data from this data source_
 
 * [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
+* [Security Alert](../UseCases/usecase_security_alert.md)
 
 
 ### Event Types

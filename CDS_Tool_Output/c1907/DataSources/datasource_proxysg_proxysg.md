@@ -7,6 +7,7 @@ Product: ProxySG
 
 _The following Use Cases can be operationalized using log data from this data source_
 
+* [Asset Logon and Access](../UseCases/usecase_asset_logon_and_access.md)
 * [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)
 
 

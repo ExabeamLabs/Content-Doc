@@ -20,7 +20,7 @@ _The following Use Cases can be operationalized using log data from this data so
 * [Network](../UseCases/usecase_network.md)
 * [Network Alert](../UseCases/usecase_network_alert.md)
 * [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)
-* [Process Activity](../UseCases/usecase_process_activity.md)
+* [Privileged Activity](../UseCases/usecase_privileged_activity.md)
 * [Security Alert](../UseCases/usecase_security_alert.md)
 * [Service Account Activity](../UseCases/usecase_service_account_activity.md)
 * [VPN Activity](../UseCases/usecase_vpn_activity.md)
