@@ -1,8 +1,10 @@
 ![Exabeam](banner.png)
 
-# Exabeam Content Documentation
+# Exabeam Content Library
 
-Welcome to Exabeam's Content Documentation repository!
+Welcome to Exabeam's Content Library repository.
+
+The Content Library is an online repository of knowledge and content that organizations can use to deploy new use cases. The initial release allows customers to quickly map data sources to security use cases and to download the necessary parsers.
 
 This is a programmatic generation of content documentation from Exabeam's content repository. As new content is committed to the content repo, the Content Documentation is automatically updated to provide fast and easy access.
 
@@ -34,7 +36,7 @@ This is a programmatic generation of content documentation from Exabeam's conten
 
 ## How can it help me?
 
-The Content Documentation repository helps answer some of the most frequent question regarding Exabeam's rich security content:
+The Content Library helps answer some of the most frequent question regarding Exabeam's rich security content:
 
  - What Use Cases does Exabeam Content support out-of-the-box?
    - What are the Data Sources that can be used to get that content to function? 
@@ -46,7 +48,7 @@ The Content Documentation repository helps answer some of the most frequent ques
 
 ## How do I use it?
 
-The Content Documentation provides navigation from an Exabeam supported Data Source to a Use Case, showing for each Data Source, listing the available Parsers and Event Types for that data source, and the appropriate Use Cases it can help satisfy.
+The Content Library provides navigation from an Exabeam supported Data Source to a Use Case, showing for each Data Source, listing the available Parsers and Event Types for that data source, and the appropriate Use Cases it can help satisfy.
 
 The repo currently allows browsing two Exabeam Content Branches: 
  - content "c1907" branch": the content repo shipped with the latest version of Advanced Analytics I52.7)
