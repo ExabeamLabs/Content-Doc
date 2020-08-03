@@ -6,6 +6,16 @@ Name = checkpoint-network-alert-4
 }
 
 ${CheckpointParserTemplates.checkpoint-auth} {
+  Name = checkpoint-vpn-login-6
+  DataType = "vpn-login"
+  Conditions = [ """CheckPoint""", """product:"""", """action:"Log In"""", """vpn_""" ]
+  Fields = ${CheckpointParserTemplates.checkpoint-auth.Fields}[
+    """action:"+({activity}[^"]+)"""
+  ]
+  DupFields = [ "activity->event_name" ]
+}
+
+${CheckpointParserTemplates.checkpoint-auth} {
   Name = checkpoint-auth-successful
   DataType = "authentication-successful"
   Conditions = [ """CheckPoint""", """product:"""", """action:"Log In"""" ] 

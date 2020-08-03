@@ -76,3 +76,4 @@ _The following Parsers can be operationalized using log data from this data sour
 * [sonicwall-network-alert-8](../Parsers/parserContent_sonicwall-network-alert-8.md)
 * [sonicwall-network-alert-9](../Parsers/parserContent_sonicwall-network-alert-9.md)
 * [sonicwall-network-connection-successful](../Parsers/parserContent_sonicwall-network-connection-successful.md)
+* [sonicwall-network-connection-successful-1](../Parsers/parserContent_sonicwall-network-connection-successful-1.md)

@@ -17,6 +17,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [IPswitch](../DataSources/datasource_ipswitch_moveit_dmz_ipswitch.md)
 * [Microsoft](../DataSources/datasource_microsoft_windows_microsoft.md)
 * [NetWrix](../DataSources/datasource_netwrix_netwrix.md)
+* [Dell EMC RSA Authentication Manager](../DataSources/datasource_rsa_authentication_manager_dell_emc_rsa_authentication_manager.md)
 * [SAP](../DataSources/datasource_sap_sap.md)
 * [Unix](../DataSources/datasource_unix_unix.md)
 * [Unix](../DataSources/datasource_unix_unix.md)

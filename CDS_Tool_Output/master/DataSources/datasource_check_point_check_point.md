@@ -40,3 +40,4 @@ _The following Parsers can be operationalized using log data from this data sour
 * [checkpoint-vpn-login](../Parsers/parserContent_checkpoint-vpn-login.md)
 * [checkpoint-vpn-login-1](../Parsers/parserContent_checkpoint-vpn-login-1.md)
 * [checkpoint-vpn-login-2](../Parsers/parserContent_checkpoint-vpn-login-2.md)
+* [checkpoint-vpn-login-6](../Parsers/parserContent_checkpoint-vpn-login-6.md)

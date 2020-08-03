@@ -2,8 +2,8 @@
 ```Java
 {
 Name = physical-badge-access-2
-    Vendor = Unknown
-  Product = Unknown
+    Vendor = Badge
+  Product = Badge
     Lms = Direct
     DataType = "physical-access"
     TimeFormat = "yyyy-MM-dd HH:mm:ss.S"
