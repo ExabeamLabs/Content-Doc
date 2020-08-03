@@ -23,8 +23,8 @@ This is a programmatic generation of content documentation from Exabeam's conten
 The Content Library provides navigation from an Exabeam supported data source to a use case (or use case to data source) showing the event types and parsers for each.
 
 The Content Library currently allows browsing two Exabeam content branches: 
- - Content "c1907" branch: The content repository shipped with the latest version of Advanced Analytics i52.7
  - Content "master" branch: The master repository of all the latest content developed by the Exabeam content team
+ - Content "c1907" branch: The content repository shipped with the latest version of Advanced Analytics i52.7
 
 Browse the c1907 branch to see the documentation for the content that is available in the product today (Advanced Analytics i52.7) or browse the master repository for a peek into what is coming next ("canary" content). Note that the content in the master may not be QA'd as of yet and should be used carefully. 
 
