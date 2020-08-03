@@ -14,9 +14,9 @@ This is a programmatic generation of content documentation from Exabeam's conten
 - [Exabeam supported data sources](CDS_Tool_Output/master/Exabeam%20Data%20Sources.md)
   - Navigating from data source to use case
 ### [Content "c1907" branch - shipped with Advanced Analytics i52.7]
-- [Exabeam supported use cases](..tree/c1907/CDS_Tool_Output/Exabeam%20Use%20Cases.md)
+- [Exabeam supported use cases](https://github.com/ExabeamLabs/Content-Doc/tree/c1907/CDS_Tool_Output/Exabeam%20Use%20Cases.md)
   - Navigating from Exabeam use case to data source
-- [Exabeam supported data sources](..tree/c1907/CDS_Tool_Output/Exabeam%20Data%20Sources.md)
+- [Exabeam supported data sources](https://github.com/ExabeamLabs/Content-Doc/tree/c1907/CDS_Tool_Output/Exabeam%20Data%20Sources.md)
   - Navigating from data source to use case
 
 ## How do I use it?
