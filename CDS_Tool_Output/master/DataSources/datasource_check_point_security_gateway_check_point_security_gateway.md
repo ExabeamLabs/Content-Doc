@@ -46,6 +46,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [checkpoint-connectra-vpn-login](../Parsers/parserContent_checkpoint-connectra-vpn-login.md)
 * [checkpoint-connectra-vpn-logout](../Parsers/parserContent_checkpoint-connectra-vpn-logout.md)
 * [checkpoint-vpn-login-3](../Parsers/parserContent_checkpoint-vpn-login-3.md)
+* [checkpoint-vpn-logout](../Parsers/parserContent_checkpoint-vpn-logout.md)
 * [checkpoint-vpn-logout-1](../Parsers/parserContent_checkpoint-vpn-logout-1.md)
 * [checkpoint-vpn-logout-2](../Parsers/parserContent_checkpoint-vpn-logout-2.md)
 * [connectra-failed-vpn-login](../Parsers/parserContent_connectra-failed-vpn-login.md)
@@ -53,3 +54,4 @@ _The following Parsers can be operationalized using log data from this data sour
 * [connectra-vpn-login](../Parsers/parserContent_connectra-vpn-login.md)
 * [connectra-vpn-login-1](../Parsers/parserContent_connectra-vpn-login-1.md)
 * [r-syslog-chkpnt-vpn-end](../Parsers/parserContent_r-syslog-chkpnt-vpn-end.md)
+* [r-syslog-chkpnt-vpn-set-ip](../Parsers/parserContent_r-syslog-chkpnt-vpn-set-ip.md)

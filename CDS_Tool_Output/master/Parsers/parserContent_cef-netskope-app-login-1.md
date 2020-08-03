@@ -514,6 +514,12 @@ ${NetskopeParserTemplates.cef-netskope-activity}{
   Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"CompleteMultipartUpload"""" ]
 }
 
+${NetskopeParserTemplates.cef-netskope-activity}{
+  Name = cef-netskope-app-activity-51
+  DataType = "app-activity"
+  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":""""]
+}
+
 {
   Name = cef-netskope-alert-anomaly
   Vendor = Netskope

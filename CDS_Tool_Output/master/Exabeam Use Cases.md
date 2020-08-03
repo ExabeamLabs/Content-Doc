@@ -3,7 +3,7 @@ Exabeam Supported Use Cases
 
 ### Content Build: 
 
-The following are the list of out-of-the-box supported Use Cases as of Content Build C1904
+The following are the list of out-of-the-box supported Use Cases
 
 * [Account Creation and Management](UseCases/usecase_account_creation_and_management.md)
 * [Activity](UseCases/usecase_activity.md)

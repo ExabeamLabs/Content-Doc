@@ -7,6 +7,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 
 * [AD Audit](../DataSources/datasource_ad_audit_ad_audit.md)
 * [APC](../DataSources/datasource_apc_apc.md)
+* [Amag Symmetry Access Control](../DataSources/datasource_amag_symmetry_access_control_amag_symmetry_access_control.md)
 * [Avecto Defendpoint](../DataSources/datasource_avecto_defendpoint_avecto_defendpoint.md)
 * [AMAG](../DataSources/datasource_badge_amag.md)
 * [CCURE](../DataSources/datasource_badge_ccure.md)
@@ -62,6 +63,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [IBM Lotus Mobile Connect](../DataSources/datasource_lotus_mobile_connect_ibm_lotus_mobile_connect.md)
 * [Lyrix](../DataSources/datasource_lyrix_lyrix.md)
 * [MasterSAM PAM](../DataSources/datasource_mastersam_pam_mastersam_pam.md)
+* [McAfee Endpoint Security](../DataSources/datasource_mcafee_endpoint_security_mcafee_endpoint_security.md)
 * [Visma](../DataSources/datasource_megaflex_visma.md)
 * [Microsoft Azure](../DataSources/datasource_microsoft_azure_microsoft_azure.md)
 * [Microsoft RRA](../DataSources/datasource_microsoft_rra_microsoft_rra.md)

@@ -51,6 +51,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [s-estreamer-network-connection](../Parsers/parserContent_s-estreamer-network-connection.md)
 * [s-estreamer-network-connection-1](../Parsers/parserContent_s-estreamer-network-connection-1.md)
 * [s-estreamer-network-connection-2](../Parsers/parserContent_s-estreamer-network-connection-2.md)
+* [s-estreamer-security-alert](../Parsers/parserContent_s-estreamer-security-alert.md)
 * [sourcefire-estreamer-alert](../Parsers/parserContent_sourcefire-estreamer-alert.md)
 * [sourcefire-estreamer-alert-2](../Parsers/parserContent_sourcefire-estreamer-alert-2.md)
 * [sourcefire-network-alert](../Parsers/parserContent_sourcefire-network-alert.md)

@@ -5,6 +5,7 @@ Use Case: USB Activity
 
 _The following list of Supported Exabeam Data Sources power this use case:_
 
+* [Dtex](../DataSources/datasource_dtex_dtex.md)
 * [InfoWatch](../DataSources/datasource_infowatch_infowatch.md)
 * [LanScope Cat](../DataSources/datasource_lanscope_cat_lanscope_cat.md)
 * [Lumension](../DataSources/datasource_lumension_lumension.md)

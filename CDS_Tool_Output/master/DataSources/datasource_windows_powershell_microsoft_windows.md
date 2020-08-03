@@ -33,6 +33,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [powershell-process-created](../Parsers/parserContent_powershell-process-created.md)
 * [powershell-process-created-1](../Parsers/parserContent_powershell-process-created-1.md)
 * [powershell-process-created-2](../Parsers/parserContent_powershell-process-created-2.md)
+* [raw-4104](../Parsers/parserContent_raw-4104.md)
 * [s-windows-event-601](../Parsers/parserContent_s-windows-event-601.md)
 * [win-powershell-command](../Parsers/parserContent_win-powershell-command.md)
 * [xml-powershell-4104](../Parsers/parserContent_xml-powershell-4104.md)

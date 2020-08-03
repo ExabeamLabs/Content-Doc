@@ -51,6 +51,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-540](../Parsers/parserContent_cef-540.md)
 * [cef-672](../Parsers/parserContent_cef-672.md)
 * [cef-673](../Parsers/parserContent_cef-673.md)
+* [cef-netapp-4624](../Parsers/parserContent_cef-netapp-4624.md)
 * [cef-snare-4624](../Parsers/parserContent_cef-snare-4624.md)
 * [cef-snare-4769](../Parsers/parserContent_cef-snare-4769.md)
 * [cef-snare-5136](../Parsers/parserContent_cef-snare-5136.md)

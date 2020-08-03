@@ -46,6 +46,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [LanScope Cat](../DataSources/datasource_lanscope_cat_lanscope_cat.md)
 * [IBM Lotus Mobile Connect](../DataSources/datasource_lotus_mobile_connect_ibm_lotus_mobile_connect.md)
 * [MasterSAM PAM](../DataSources/datasource_mastersam_pam_mastersam_pam.md)
+* [McAfee Endpoint Security](../DataSources/datasource_mcafee_endpoint_security_mcafee_endpoint_security.md)
 * [Microsoft Azure](../DataSources/datasource_microsoft_azure_microsoft_azure.md)
 * [Microsoft RRA](../DataSources/datasource_microsoft_rra_microsoft_rra.md)
 * [Microsoft Web Application Proxy](../DataSources/datasource_microsoft_web_application_proxy_microsoft_web_application_proxy.md)

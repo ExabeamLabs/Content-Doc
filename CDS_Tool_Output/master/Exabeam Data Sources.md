@@ -37,6 +37,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Akamai Siem](DataSources/datasource_akamai_siem_akamai.md)
 #### Alert Logic
 * [Alert Logic](DataSources/datasource_alert_logic_alert_logic.md)
+#### Amag Symmetry Access Control
+* [Amag Symmetry Access Control](DataSources/datasource_amag_symmetry_access_control_amag_symmetry_access_control.md)
 #### Apache
 * [Apache](DataSources/datasource_apache_apache.md)
 #### AppSense Application Manager
@@ -165,6 +167,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Cisco NPE](DataSources/datasource_cisco_npe_cisco_npe.md)
 #### Cisco OpenDNS Umbrella
 * [OpenDNS Umbrella](DataSources/datasource_opendns_umbrella_cisco_opendns_umbrella.md)
+#### Cisco StealthWatch (Lancope)
+* [Cisco StealthWatch (Lancope)](DataSources/datasource_cisco_stealthwatch_(lancope)_cisco_stealthwatch_(lancope).md)
 #### Cisco TACACS
 * [Cisco TACACS](DataSources/datasource_cisco_tacacs_cisco_tacacs.md)
 #### Cisco Umbrella
@@ -193,6 +197,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Clearswift SEG](DataSources/datasource_clearswift_seg_clearswift_seg.md)
 #### Cloud Akamai
 * [Cloud Akamai](DataSources/datasource_cloud_akamai_cloud_akamai.md)
+#### Cloud Application
+* [Cloud Application](DataSources/datasource_cloud_application_cloud_application.md)
 #### Cloudflare
 * [Cloudflare](DataSources/datasource_cloudflare_cloudflare.md)
 #### Code Green Network (Digital Guardian) TrueDLP
@@ -258,6 +264,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [EnSilo](DataSources/datasource_ensilo_ensilo.md)
 #### EndPoint
 * [EndPoint](DataSources/datasource_endpoint_endpoint.md)
+#### Endgame
+* [Endgame EDR](DataSources/datasource_endgame_edr_endgame.md)
 #### Entrust
 * [Entrust Identityguard](DataSources/datasource_entrust_identityguard_entrust.md)
 #### Epic
@@ -302,6 +310,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [FireEye Network Security (NX)](DataSources/datasource_fireeye_network_security_(nx)_fireeye_network_security_(nx).md)
 #### Forcepoint
 * [Forcepoint Insider Threat](DataSources/datasource_forcepoint_insider_threat_forcepoint.md)
+* [Forcepoint](DataSources/datasource_forcepoint_forcepoint.md)
 #### Forcepoint CASB
 * [Forcepoint CASB](DataSources/datasource_forcepoint_casb_forcepoint_casb.md)
 #### Forcepoint DLP
@@ -341,6 +350,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Google Mobile](DataSources/datasource_google_mobile_google.md)
 * [Google Token](DataSources/datasource_google_token_google.md)
 #### Google Cloud Platform
+* [GCP Squid Proxy](DataSources/datasource_gcp_squid_proxy_google_cloud_platform.md)
 * [Google](DataSources/datasource_google_google_cloud_platform.md)
 #### Google Cloud Platform VPC
 * [Google Cloud Platform VPC](DataSources/datasource_google_cloud_platform_vpc_google_cloud_platform_vpc.md)
@@ -443,6 +453,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Kaspersky KSMG](DataSources/datasource_kaspersky_ksmg_kaspersky.md)
 #### Kaspersky AV
 * [Kaspersky AV](DataSources/datasource_kaspersky_av_kaspersky_av.md)
+#### Kaspersky Lab Endpoint Security for Business
+* [Kaspersky Lab Endpoint Security for Business](DataSources/datasource_kaspersky_lab_endpoint_security_for_business_kaspersky_lab_endpoint_security_for_business.md)
 #### Kemp
 * [Virtual Load Master](DataSources/datasource_virtual_load_master_kemp.md)
 #### KiteWorks
@@ -484,6 +496,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Malwarebytes Endpoint Protection](DataSources/datasource_malwarebytes_endpoint_protection_malwarebytes_endpoint_protection.md)
 #### Malwarebytes Incident Response
 * [Malwarebytes Incident Response](DataSources/datasource_malwarebytes_incident_response_malwarebytes_incident_response.md)
+#### ManageEngine
+* [ADManager](DataSources/datasource_admanager_manageengine.md)
 #### MariaDB
 * [MariaDB](DataSources/datasource_mariadb_mariadb.md)
 #### MasterSAM PAM
@@ -736,6 +750,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Ricoh](DataSources/datasource_ricoh_ricoh.md)
 #### Ruckus
 * [Ruckus](DataSources/datasource_ruckus_ruckus.md)
+#### Rundeck
+* [Rundeck](DataSources/datasource_rundeck_rundeck.md)
 #### SAP
 * [SAP](DataSources/datasource_sap_sap.md)
 #### SFTP
@@ -760,6 +776,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [OneDrive](DataSources/datasource_onedrive_sailpoint_siq.md)
 * [Windows](DataSources/datasource_windows_sailpoint_siq.md)
 #### Salesforce
+* [Sales Cloud](DataSources/datasource_sales_cloud_salesforce.md)
 * [Salesforce](DataSources/datasource_salesforce_salesforce.md)
 #### Sangfor NGAF
 * [Sangfor NGAF](DataSources/datasource_sangfor_ngaf_sangfor_ngaf.md)
@@ -869,6 +886,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Symantec VIP](DataSources/datasource_symantec_vip_symantec_vip.md)
 #### Symantec WSS
 * [Symantec WSS](DataSources/datasource_symantec_wss_symantec_wss.md)
+#### Synology NAS
+* [Synology NAS](DataSources/datasource_synology_nas_synology_nas.md)
 #### TFCS
 * [TFCS](DataSources/datasource_tfcs_tfcs.md)
 #### Tanium Endpoint Platform
@@ -982,6 +1001,9 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Zscaler
 * [VPN](DataSources/datasource_vpn_zscaler.md)
 * [Zscaler Internet Access](DataSources/datasource_zscaler_internet_access_zscaler.md)
+* [Zscaler](DataSources/datasource_zscaler_zscaler.md)
+#### Zscaler NSS
+* [Zscaler NSS](DataSources/datasource_zscaler_nss_zscaler_nss.md)
 #### eDocs
 * [eDocs](DataSources/datasource_edocs_edocs.md)
 #### iManage

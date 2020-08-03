@@ -41,6 +41,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Infoblox](../DataSources/datasource_infoblox_infoblox.md)
 * [LanScope Cat](../DataSources/datasource_lanscope_cat_lanscope_cat.md)
 * [MasterSAM PAM](../DataSources/datasource_mastersam_pam_mastersam_pam.md)
+* [McAfee Endpoint Security](../DataSources/datasource_mcafee_endpoint_security_mcafee_endpoint_security.md)
 * [Microsoft Azure](../DataSources/datasource_microsoft_azure_microsoft_azure.md)
 * [Microsoft Web Application Proxy](../DataSources/datasource_microsoft_web_application_proxy_microsoft_web_application_proxy.md)
 * [Microsoft Windows](../DataSources/datasource_microsoft_windows_microsoft_windows.md)

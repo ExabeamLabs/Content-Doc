@@ -12,7 +12,7 @@ Name = nic-member-removed-2008
     """({event_name}A member was removed from a security-enabled [\w\s]+ group)""",
     """({time}\w{3}\s\d{2}\s\d{2}:\d{2}:\d{2}\s\d{4})""",
     """({event_code}\d+)\s+Microsoft-Windows-Security-Auditing""",
-    """\s({host}[^\s]+)\sMSWinEventLog""",
+    """({host}[^\s=]+)\sMSWinEventLog""",
     """Information\s+({host}[\w.\-]+)\s+""",
     """(?:Success|Audit)\s+\w+\s+({host}[^\s]+)""",
     """A member was removed from a security-enabled\s+({group_type}.+?)\s+group.+?Account Name:\s+({user}.+?)\s+Account Domain:\s+({domain}.+?)\s+Logon ID:\s+({logon_id}[^\s]+)\s+Member:""",

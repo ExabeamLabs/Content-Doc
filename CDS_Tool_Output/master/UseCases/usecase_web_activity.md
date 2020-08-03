@@ -37,9 +37,11 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [F5](../DataSources/datasource_f5_f5.md)
 * [FireEye Network Security (NX)](../DataSources/datasource_fireeye_network_security_(nx)_fireeye_network_security_(nx).md)
 * [Forcepoint Web Security](../DataSources/datasource_forcepoint_web_security_forcepoint_web_security.md)
+* [Forcepoint](../DataSources/datasource_forcepoint_forcepoint.md)
 * [Forescout CounterACT](../DataSources/datasource_forescout_counteract_forescout_counteract.md)
 * [Fortinet Enterprise Firewall](../DataSources/datasource_fortinet_enterprise_firewall_fortinet_enterprise_firewall.md)
 * [Fortinet UTM](../DataSources/datasource_fortinet_utm_fortinet_utm.md)
+* [Google Cloud Platform](../DataSources/datasource_gcp_squid_proxy_google_cloud_platform.md)
 * [Google Cloud Platform VPC](../DataSources/datasource_google_cloud_platform_vpc_google_cloud_platform_vpc.md)
 * [Gravityzone](../DataSources/datasource_gravityzone_gravityzone.md)
 * [Huawei](../DataSources/datasource_huawei_enterprise_network_firewall_huawei.md)
@@ -77,6 +79,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Sophos](../DataSources/datasource_sophos_sophos.md)
 * [Squid](../DataSources/datasource_squid_squid.md)
 * [Symantec Blue Coat ProxySG Appliance](../DataSources/datasource_symantec_blue_coat_proxysg_appliance_symantec_blue_coat_proxysg_appliance.md)
+* [Symantec Endpoint Protection](../DataSources/datasource_symantec_endpoint_protection_symantec_endpoint_protection.md)
 * [Symantec Fireglass](../DataSources/datasource_symantec_fireglass_symantec_fireglass.md)
 * [Symantec Secure Web Gateway](../DataSources/datasource_symantec_secure_web_gateway_symantec_secure_web_gateway.md)
 * [Symantec WSS](../DataSources/datasource_symantec_wss_symantec_wss.md)
@@ -96,6 +99,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Websense](../DataSources/datasource_websense_websense.md)
 * [Microsoft Windows](../DataSources/datasource_windows_microsoft_windows.md)
 * [Zscaler](../DataSources/datasource_zscaler_internet_access_zscaler.md)
+* [Zscaler](../DataSources/datasource_zscaler_zscaler.md)
 
 
 ### Exabeam Event Types
