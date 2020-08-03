@@ -23,6 +23,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Airlock Web Application Firewall](DataSources/datasource_airlock_web_application_firewall_airlock_web_application_firewall.md)
 #### Alert Logic
 * [Alert Logic](DataSources/datasource_alert_logic_alert_logic.md)
+#### Amag Symmetry Access Control
+* [Amag Symmetry Access Control](DataSources/datasource_amag_symmetry_access_control_amag_symmetry_access_control.md)
 #### Apache
 * [Apache](DataSources/datasource_apache_apache.md)
 #### AppSense Application Manager
@@ -128,6 +130,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Cisco NPE](DataSources/datasource_cisco_npe_cisco_npe.md)
 #### Cisco OpenDNS Umbrella
 * [OpenDNS Umbrella](DataSources/datasource_opendns_umbrella_cisco_opendns_umbrella.md)
+#### Cisco StealthWatch (Lancope)
+* [Cisco StealthWatch (Lancope)](DataSources/datasource_cisco_stealthwatch_(lancope)_cisco_stealthwatch_(lancope).md)
 #### Cisco Umbrella
 * [Cisco Umbrella](DataSources/datasource_cisco_umbrella_cisco_umbrella.md)
 #### Cisco Web Security Appliance
@@ -145,6 +149,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Clearswift SEG](DataSources/datasource_clearswift_seg_clearswift_seg.md)
 #### Cloud Akamai
 * [Cloud Akamai](DataSources/datasource_cloud_akamai_cloud_akamai.md)
+#### Cloud Application
+* [Cloud Application](DataSources/datasource_cloud_application_cloud_application.md)
 #### Code Green Network (Digital Guardian) TrueDLP
 * [Code Green Network (Digital Guardian) TrueDLP](DataSources/datasource_code_green_network_(digital_guardian)_truedlp_code_green_network_(digital_guardian)_truedlp.md)
 #### Code42
@@ -339,6 +345,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [VPN](DataSources/datasource_vpn_juniper_vpn.md)
 #### KABA EXOS
 * [EXOS](DataSources/datasource_exos_kaba_exos.md)
+#### Kaspersky Lab Endpoint Security for Business
+* [Kaspersky Lab Endpoint Security for Business](DataSources/datasource_kaspersky_lab_endpoint_security_for_business_kaspersky_lab_endpoint_security_for_business.md)
 #### Kemp
 * [Virtual Load Master](DataSources/datasource_virtual_load_master_kemp.md)
 #### KiteWorks
@@ -466,6 +474,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [VPN](DataSources/datasource_vpn_netmotion_wireless.md)
 #### NetWrix
 * [NetWrix](DataSources/datasource_netwrix_netwrix.md)
+#### Netscaler VPN
+* [Netscaler VPN](DataSources/datasource_netscaler_vpn_netscaler_vpn.md)
 #### Netskope Active Platform
 * [Netskope Active Platform](DataSources/datasource_netskope_active_platform_netskope_active_platform.md)
 #### Nexthink
@@ -587,6 +597,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Sailpoint IdentityNow
 * [Sailpoint IdentityNow](DataSources/datasource_sailpoint_identitynow_sailpoint_identitynow.md)
 #### Salesforce
+* [Sales Cloud](DataSources/datasource_sales_cloud_salesforce.md)
 * [Salesforce](DataSources/datasource_salesforce_salesforce.md)
 #### Sangfor NGAF
 * [Sangfor NGAF](DataSources/datasource_sangfor_ngaf_sangfor_ngaf.md)
@@ -621,6 +632,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [SkySea ClientView](DataSources/datasource_skysea_clientview_skysea_clientview.md)
 #### Skyhigh Networks CASB
 * [Skyhigh Networks CASB](DataSources/datasource_skyhigh_networks_casb_skyhigh_networks_casb.md)
+#### Slack
+* [Slack](DataSources/datasource_slack_slack.md)
 #### Snort
 * [Snort](DataSources/datasource_snort_snort.md)
 #### Sonicwall
@@ -676,6 +689,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Symantec VIP](DataSources/datasource_symantec_vip_symantec_vip.md)
 #### Symantec WSS
 * [Symantec WSS](DataSources/datasource_symantec_wss_symantec_wss.md)
+#### Synology NAS
+* [Synology NAS](DataSources/datasource_synology_nas_synology_nas.md)
 #### Tanium Endpoint Platform
 * [Tanium Endpoint Platform](DataSources/datasource_tanium_endpoint_platform_tanium_endpoint_platform.md)
 #### Thycotic Secret Server
@@ -757,6 +772,9 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Zscaler
 * [VPN](DataSources/datasource_vpn_zscaler.md)
 * [Zscaler Internet Access](DataSources/datasource_zscaler_internet_access_zscaler.md)
+* [Zscaler](DataSources/datasource_zscaler_zscaler.md)
+#### Zscaler NSS
+* [Zscaler NSS](DataSources/datasource_zscaler_nss_zscaler_nss.md)
 #### iManage
 * [iManage](DataSources/datasource_imanage_imanage.md)
 #### oVirt

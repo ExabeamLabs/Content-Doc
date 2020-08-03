@@ -12,6 +12,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Microsoft Windows](../DataSources/datasource_dc_microsoft_windows.md)
 * [Palo Alto Networks GlobalProtect](../DataSources/datasource_globalprotect_portal_palo_alto_networks_globalprotect.md)
 * [NetWrix](../DataSources/datasource_netwrix_netwrix.md)
+* [Dell EMC RSA Authentication Manager](../DataSources/datasource_rsa_authentication_manager_dell_emc_rsa_authentication_manager.md)
 * [Unix](../DataSources/datasource_unix_unix.md)
 * [Unix](../DataSources/datasource_unix_unix.md)
 * [Microsoft Windows](../DataSources/datasource_windows_microsoft_windows.md)

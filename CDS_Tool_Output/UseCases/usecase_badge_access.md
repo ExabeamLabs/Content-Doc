@@ -7,6 +7,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 
 * [AD Audit](../DataSources/datasource_ad_audit_ad_audit.md)
 * [APC](../DataSources/datasource_apc_apc.md)
+* [Amag Symmetry Access Control](../DataSources/datasource_amag_symmetry_access_control_amag_symmetry_access_control.md)
 * [Avecto Defendpoint](../DataSources/datasource_avecto_defendpoint_avecto_defendpoint.md)
 * [AMAG](../DataSources/datasource_badge_amag.md)
 * [CCURE](../DataSources/datasource_badge_ccure.md)

@@ -45,6 +45,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [IMSS](../DataSources/datasource_imss_imss.md)
 * [InfoWatch](../DataSources/datasource_infowatch_infowatch.md)
 * [Juniper Networks](../DataSources/datasource_juniper_srx_juniper_networks.md)
+* [Kaspersky Lab Endpoint Security for Business](../DataSources/datasource_kaspersky_lab_endpoint_security_for_business_kaspersky_lab_endpoint_security_for_business.md)
 * [LanScope Cat](../DataSources/datasource_lanscope_cat_lanscope_cat.md)
 * [LanScope](../DataSources/datasource_lanscope_lanscope.md)
 * [Lexmark](../DataSources/datasource_lexmark_lexmark.md)
@@ -101,6 +102,8 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Websense](../DataSources/datasource_websense_websense.md)
 * [Microsoft Windows Defender](../DataSources/datasource_windows_defender_microsoft_windows_defender.md)
 * [Microsoft Windows](../DataSources/datasource_windows_microsoft_windows.md)
+* [Zscaler NSS](../DataSources/datasource_zscaler_nss_zscaler_nss.md)
+* [Zscaler](../DataSources/datasource_zscaler_zscaler.md)
 * [iManage](../DataSources/datasource_imanage_imanage.md)
 
 

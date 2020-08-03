@@ -50,3 +50,4 @@ _The following Parsers can be operationalized using log data from this data sour
 * [connectra-vpn-login](../Parsers/parserContent_connectra-vpn-login.md)
 * [connectra-vpn-login-1](../Parsers/parserContent_connectra-vpn-login-1.md)
 * [r-syslog-chkpnt-vpn-end](../Parsers/parserContent_r-syslog-chkpnt-vpn-end.md)
+* [r-syslog-chkpnt-vpn-set-ip](../Parsers/parserContent_r-syslog-chkpnt-vpn-set-ip.md)
