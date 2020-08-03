@@ -72,6 +72,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Websense](../DataSources/datasource_websense_websense.md)
 * [Microsoft Windows](../DataSources/datasource_windows_microsoft_windows.md)
 * [Zscaler](../DataSources/datasource_zscaler_internet_access_zscaler.md)
+* [Zscaler](../DataSources/datasource_zscaler_zscaler.md)
 * [pfSense](../DataSources/datasource_pfsense_pfsense.md)
 
 

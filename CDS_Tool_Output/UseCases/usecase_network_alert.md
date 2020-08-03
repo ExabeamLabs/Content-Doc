@@ -13,6 +13,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Check Point Threat Prevention](../DataSources/datasource_check_point_threat_prevention_check_point_threat_prevention.md)
 * [Cisco Firepower](../DataSources/datasource_cisco_firepower_cisco_firepower.md)
 * [Cisco Meraki MX appliances](../DataSources/datasource_cisco_meraki_mx_appliances_cisco_meraki_mx_appliances.md)
+* [Cisco StealthWatch (Lancope)](../DataSources/datasource_cisco_stealthwatch_(lancope)_cisco_stealthwatch_(lancope).md)
 * [F5 Application Security Manager](../DataSources/datasource_f5_application_security_manager_f5_application_security_manager.md)
 * [Forescout CounterACT](../DataSources/datasource_forescout_counteract_forescout_counteract.md)
 * [Fortinet UTM](../DataSources/datasource_fortinet_utm_fortinet_utm.md)

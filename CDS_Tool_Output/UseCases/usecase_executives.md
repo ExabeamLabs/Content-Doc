@@ -68,6 +68,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [InfoWatch](../DataSources/datasource_infowatch_infowatch.md)
 * [Juniper Networks ATP](../DataSources/datasource_juniper_networks_atp_juniper_networks_atp.md)
 * [Juniper Networks](../DataSources/datasource_juniper_srx_juniper_networks.md)
+* [Kaspersky Lab Endpoint Security for Business](../DataSources/datasource_kaspersky_lab_endpoint_security_for_business_kaspersky_lab_endpoint_security_for_business.md)
 * [LanScope Cat](../DataSources/datasource_lanscope_cat_lanscope_cat.md)
 * [LanScope](../DataSources/datasource_lanscope_lanscope.md)
 * [Lastline](../DataSources/datasource_lastline_lastline.md)
@@ -162,6 +163,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Palo Alto Networks WildFire](../DataSources/datasource_wildfire_palo_alto_networks_wildfire.md)
 * [Microsoft Windows Defender](../DataSources/datasource_windows_defender_microsoft_windows_defender.md)
 * [Microsoft Windows](../DataSources/datasource_windows_microsoft_windows.md)
+* [Zscaler](../DataSources/datasource_zscaler_zscaler.md)
 * [Unix](../DataSources/datasource_krb5kdc_unix.md)
 * [xsuite](../DataSources/datasource_xsuite_xsuite.md)
 
