@@ -6,6 +6,7 @@ Use Case: Failed Logon and Account Lockout
 _The following list of Supported Exabeam Data Sources power this use case:_
 
 * [AD Audit](../DataSources/datasource_ad_audit_ad_audit.md)
+* [AWS](../DataSources/datasource_aws_bastion_aws.md)
 * [Bro](../DataSources/datasource_bro_bro.md)
 * [Centrify](../DataSources/datasource_centrify_centrify.md)
 * [Cisco Adaptive Security Appliance](../DataSources/datasource_cisco_adaptive_security_appliance_cisco_adaptive_security_appliance.md)
@@ -17,8 +18,10 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [IPswitch](../DataSources/datasource_ipswitch_moveit_dmz_ipswitch.md)
 * [Microsoft](../DataSources/datasource_microsoft_windows_microsoft.md)
 * [NetWrix](../DataSources/datasource_netwrix_netwrix.md)
+* [OneSpan](../DataSources/datasource_onespan_onespan.md)
 * [Dell EMC RSA Authentication Manager](../DataSources/datasource_rsa_authentication_manager_dell_emc_rsa_authentication_manager.md)
 * [SAP](../DataSources/datasource_sap_sap.md)
+* [IBM](../DataSources/datasource_sterling_ibm.md)
 * [Unix](../DataSources/datasource_unix_unix.md)
 * [Unix](../DataSources/datasource_unix_unix.md)
 * [F5 VPN](../DataSources/datasource_vpn_f5_vpn.md)

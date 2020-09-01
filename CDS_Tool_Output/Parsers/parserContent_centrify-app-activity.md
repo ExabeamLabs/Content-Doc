@@ -12,7 +12,7 @@ Name = centrify-app-activity
     """end=({time}\d+)""",
     """exabeam_host=({host}[\w.\-]+)""",
     """suser=(?:system|({user}[^\s]+))""",
-    """suser=({user_email}[^@\s]+@[^\s@]+)""",
+    """suser=({user_email}[^@\s]+@({email_domain}[^\s@]+))""",
     """CEF:([^\|]*\|){5}\s*({activity}[^\|]*?)\s*\|""",
     """destinationServiceName=({app}[^\s]+)""",
     """"CredentialType":"({object}[^"]+)""",

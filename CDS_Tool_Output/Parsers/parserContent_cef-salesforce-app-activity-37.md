@@ -11,7 +11,7 @@ Name = cef-salesforce-app-activity-37
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",  
     """CreatedDate\\=({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
-    """CreatedBy\.Username\\=({user_email}[^\s;]+)""",
+    """CreatedBy\.Username\\=({user_email}[^@]+@({email_domain}[^\s;]+))""",
     """Action\\=({activity}[^;]+)""",
     """Display\\=Unlocked user ({object}.+?)\s*(\w+=|$)""",
     """\Wmsg=({additional_info}.+?)\s+(\w+=|$)""",

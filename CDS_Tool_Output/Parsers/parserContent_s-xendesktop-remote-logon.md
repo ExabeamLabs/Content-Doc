@@ -2,7 +2,8 @@
 ```Java
 {
 Name = s-xendesktop-remote-logon
-  Vendor = Citrix XenDesktop
+  Vendor = Citrix
+  Product = Citrix XenDesktop
   Lms = Splunk
   DataType = "remote-logon"
   TimeFormat = "MM/dd/yyyy HH:mm:ss z"

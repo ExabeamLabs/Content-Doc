@@ -14,6 +14,8 @@ Name = json-4769
       """"EventReceivedTime":\s*({time}\d+)""",
       """"timestamp":\s*({time}\d+)""",
       """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s({host}[^\s]+)\sSkyformation""",
+      """"+created"+:"+({time}[^"]+)""",
+      """"+computer_name"+:"+({host}[^"]+)""",
       """"(Hostname|MachineName)":"({host}[^"]*)""",
       """({event_code}4769)""",
       """"TargetUserName":"({user}[^@"]+)""",

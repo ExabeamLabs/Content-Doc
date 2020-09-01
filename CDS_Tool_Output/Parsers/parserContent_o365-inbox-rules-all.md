@@ -47,6 +47,7 @@ Name = o365-inbox-rules-all
     """destinationServiceName=({app}.+?)\s*filePath"""
     """({app}Office 365)"""
   ]
+  DupFields = ["user_domain->email_domain"]
 }
 
  {
@@ -65,7 +66,7 @@ Name = o365-inbox-rules-all
     """Workload"*:\s*"*({app}[^"]+)"*\}""",
     """ObjectId"*:\s*"*({object}[^"]+)"*""",
     """Operation"*:\s*"*({activity}[^"]+)"*""",
-    """UserId"*:\s*"*({user_email}[^"]+)"*"""
+    """UserId"*:\s*"*({user_email}[^@]+@({email_domain}[^"]+))"*"""
     ]
 }
 ```

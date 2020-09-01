@@ -10,9 +10,5 @@ Name = s-aws-cloudtrail-assumedrole-json
     """\Wext_userIdentity_sessionContext_sessionIssuer_type=(|({activity}.+?))(\s+\w+=|\s*$)""",
     """\WflexString1=(|({activity}.+?))(\s+\w+=|\s*$)""",
     """"+userName"+\s*:\s*"+?(|({target}[^"].+?))"+\s*[,\]\}]""",
-    """"sessionIssuer"\s*:\s*.*?"arn":"[^"]*?role/({role}[^"\\\/]+)""",
-    """requestParameters"+:.+?"+instanceId"+:"+({request_id}[^"]+)","attribute":"({request_action}[^"]+)"""",
-  ]
-  DupFields = [ "role->additional_info", "host->object" ]
-}
+    """"requestParameters":\{"userName":"({target}[^"]+)"\}
 ```

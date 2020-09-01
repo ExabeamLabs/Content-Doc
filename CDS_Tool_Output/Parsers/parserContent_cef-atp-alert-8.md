@@ -202,7 +202,24 @@ ${MicrosoftParserTemplates.defender-atp-events}{
   Fields = ${MicrosoftParserTemplates.defender-atp-events.Fields}[
 ]
 }
-
+${MicrosoftParserTemplates.cef-defender-atp}{
+  Name = cef-defender-atp-member-added
+  DataType = "windows-member-added"
+  Conditions = ["""CEF:""", """|SkyFormation Cloud Apps Security|""", """requestClientApplication=""", """AdvancedHunting-DeviceEvents""","""UserAccountAddedToLocalGroup"""]
+  Fields = ${MicrosoftParserTemplates.cef-defender-atp.Fields}[
+  """"LogonId":(null|"({logon_id}[^"]+))""",
+  """AccountDomain":"({group_domain}[^"]+)"""
+]
+}
+${MicrosoftParserTemplates.cef-defender-atp}{
+  Name = cef-defender-atp-member-removed
+  DataType = "windows-member-removed"
+  Conditions = ["""CEF:""", """|SkyFormation Cloud Apps Security|""", """requestClientApplication=""", """AdvancedHunting-DeviceEvents""","""UserAccountRemovedFromLocalGroup"""]
+  Fields = ${MicrosoftParserTemplates.cef-defender-atp.Fields}[
+  """"LogonId":(null|"({logon_id}[^"]+))""",
+  """AccountDomain":"({group_domain}[^"]+)"""
+]
+}
 ${CASParserTemplates.cas-template}{
   Name = cas-login-failed
   DataType = "failed-app-login"

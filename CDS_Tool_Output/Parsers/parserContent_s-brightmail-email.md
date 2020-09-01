@@ -2,7 +2,8 @@
 ```Java
 {
 Name = s-brightmail-email
-    Vendor = BrightMail
+    Vendor = Symantec
+    Product = Symantec Brightmail
     Lms = Splunk
     DataType = "dlp-email-alert"
     TimeFormat = "epoch_sec"

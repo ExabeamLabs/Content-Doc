@@ -8,6 +8,7 @@ Product: Cisco Firepower
 _The following Use Cases can be operationalized using log data from this data source_
 
 * [Network](../UseCases/usecase_network.md)
+* [Web Activity](../UseCases/usecase_web_activity.md)
 
 
 ### Event Types

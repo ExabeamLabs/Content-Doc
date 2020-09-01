@@ -2,7 +2,7 @@
 ```Java
 {
 Name = websense-proxy-3
-    Vendor = Websense
+    Vendor = Forcepoint
     Product = Websense Secure Gateway
     Lms = Direct
     DataType = "web-activity"

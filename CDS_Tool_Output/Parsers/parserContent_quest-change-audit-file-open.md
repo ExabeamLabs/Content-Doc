@@ -18,7 +18,7 @@ Name = quest-change-audit-file-open
     """exabeam_host=({host}[\w.\-]+)""",
     """date=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d[+-].+?)\|""",
     """\|user=(|({user}.+?))\|""",
-    """\|user=(|({user_email}[^@\|]+@[^@\|]+))\|""",
+    """\|user=(|({user_email}[^@\|]+@({email_domain}[^@\|]+)))\|""",
     """\sApplication:\s*({app}[^,]*)(,|\s*$)""",
     """\|app=(|({app}.+?))\|""",
     """\sIP:\s*({src_ip}[a-fA-F\d.:]+)(,|\s*$)""",

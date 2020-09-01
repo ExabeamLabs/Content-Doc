@@ -2,7 +2,8 @@
 ```Java
 {
 Name = oracle-db-query-3
-  Vendor = Orcale FGA
+  Vendor = Oracle
+  Product = Oracle DB
   Lms = Direct
   DataType = "database-query"
   IsHVF = true

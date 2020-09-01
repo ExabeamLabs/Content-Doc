@@ -21,7 +21,7 @@ Name = cef-duo-app-activity
     """"status":\s*"({status}[^"]+)""",
     """"type":\s*"({alert_type}[^"]+)""",
     """"error":\s*"({failure_reason}[^"]+)""",
-    """"email":\s*"({user_email}[^"]+)""",
+    """"email":\s*"({user_email}[^@]+@({email_domain}[^"]+))""",
     """"ip(_address)?":\s*"({src_ip}[^"]+)""",
     """"result":\s*"({result}[^"]+)""",
     """"description":\s*"\{({additional_info}.+?)\}",""",

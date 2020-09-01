@@ -4,7 +4,7 @@
 Name = s-tanium-security-alert-4
     Vendor = Tanium
     Product = Endpoint Platform
-    Lms = Default
+    Lms = Splunk
     DataType = "alert"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
     Conditions = [ """tanium-trace""", """Timestamp""", """Computer Name""", """Computer IP""" ]

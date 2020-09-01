@@ -25,30 +25,13 @@ Name = exalms-4742
   DupFields = [ "host-> dest_host"]
 }
 
-{
-  Name = exalms-4662
-  Vendor = Microsoft
-  Product = Microsoft Windows
-  Lms = Direct
+${WinParserTemplates.json-windows-events-1}{
+  Name = sk4-json-4662
   DataType = "object-access"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = ["""@timestamp":""", """An operation was performed on an object""" , """ObjectName""", """computer_name"""]
-  Fields = [
+  Conditions = [""""event_id":4662""", """|Skyformation""", """Microsoft-Windows-Security-Auditing""", """An operation was performed on an object"""]
+  Fields = ${WinParserTemplates.json-windows-events-1.Fields}[
     """({event_name}An operation was performed on an object)""",
-    """"@timestamp"\s*:\s*"({time}.+?)"""",
-    """"computer_name"\s*:\s*"({host}.+?)"""",
-    """ObjectServer":"({object_class}.+?)"""",
-    """ObjectName":"({object}[^"]+)"""",
-    """ObjectType":"({activity_type}.+?)"""",
-    """SubjectUserName":"({user}.+?)"""",
-    """SubjectLogonId":"({logon_id}[^"]+)"""",
-    """SubjectDomainName":"({domain}[^"]+)"""",
-    """OperationType":"({action}[^"]+)"""",
-    """Properties":"({properties}[^"]+)"""",
-    """"AdditionalInfo"+:"+(-|({attribute}[^"]+))"""",
-    """"keywords":\["({outcome}[^"]+)"\]""",
-    """({event_code}4662)"""
   ]
-  DupFields = [ "host->dest_host" ]
+  DupFields = [ "host-> dest_host"]
 }
 ```

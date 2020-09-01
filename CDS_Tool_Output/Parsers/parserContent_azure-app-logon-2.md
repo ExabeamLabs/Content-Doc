@@ -12,7 +12,7 @@ Name = azure-app-logon-2
     """exabeam_host=([^=@]+@\s*)?({host}\S+)""",
     """"TimeGenerated":"({time}\d+-\d+-\d+T\d+:\d+:\d+)"""
     """"IPAddress":"({src_ip}[A-Fa-f:\d.]+)"""",
-    """"UserPrincipalName":"({user_email}[^"\s@]+@[^"\s@]+)"""",
+    """"UserPrincipalName":"({user_email}[^"\s@]+@({email_domain}[^"\s@]+))"""",
     """"browser":"({browser}[^"]+)"""",
     """"ConditionalAccessStatus":"({outcome}[^"]+)"""",
     """\sdestinationServiceName=({app}[^=]+?)\s+\w+="""

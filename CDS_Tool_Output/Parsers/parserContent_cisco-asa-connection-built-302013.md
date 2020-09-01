@@ -10,6 +10,7 @@ Name = cisco-asa-connection-built-302013
   Conditions = [ "%ASA-", "-302013", ": Built ", " connection "]
   Fields = [
     """({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d+)""",
+    """exabeam_host=({host}[^\s]+)""",
     """(\w{3} (\d\d| \d) (\d\d\d\d )?(\d\d| \d):\d\d:\d\d)\s+(GMT|({host}[\w.\-:]+?[^:]))\s*:?\s*%ASA-""",
     """<\d+>({host}[\w.\-:]+?[^:])\s+%ASA-""",
     """%ASA-({priority}\d+)-({event_code}\d+)""",

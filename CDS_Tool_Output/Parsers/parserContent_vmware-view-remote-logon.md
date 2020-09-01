@@ -2,7 +2,8 @@
 ```Java
 {
 Name = vmware-view-remote-logon
-  Vendor = VMware View
+  Vendor = VMware
+  Product = VMware View
   Lms = Splunk
   DataType = "remote-logon"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

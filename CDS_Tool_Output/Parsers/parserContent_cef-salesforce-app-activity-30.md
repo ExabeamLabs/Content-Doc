@@ -13,7 +13,7 @@ Name = cef-salesforce-app-activity-30
     """destinationServiceName=({host}.+?)\s*(\w+=|$)""",
     """destinationServiceName=({app}.+?)\s*(\w+=|$)""",
     """CreatedDate\\=({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
-    """CreatedBy\.Username\\=({user_email}[^\s;]+)""",
+    """CreatedBy\.Username\\=({user_email}[^@]+@({email_domain}[^\s;]+))""",
     """Display\\=({additional_info}Created new user ({object}.+?))\s*(\w+=|$)""",
   ]
   DupFields = [ "user_email->user" ]

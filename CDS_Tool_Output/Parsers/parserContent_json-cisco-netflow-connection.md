@@ -24,7 +24,7 @@ Name = json-cisco-netflow-connection
     """"src_port":({src_port}\d+)""",
     """"tcp_flags":({tcp_flags}\d+)""",
   ]
-  DupFields = [ "bytes_in->bytes", "packets_in->packets"  ]
+  DupFields = [ "bytes_in->bytes", "packets_in->packets"]
 }
 
 {

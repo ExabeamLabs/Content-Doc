@@ -13,7 +13,7 @@ Name = s-netskope-activity
     """"timestamp": ({time}\d+)""",
     """"audit_log_event": "({activity}[^"]+)"""",
     """"user": "(?![^\s]+@[^\s]+)({user}[^"\s]+)"""",
-    """"user": "(?=[^\s]+@[^\s]+)({user_email}[^"\s@]+@[^"\s@]+)"""",
+    """"user": "(?=[^\s]+@[^\s]+)({user_email}[^"\s@]+@({email_domain}[^"\s@]+))"""",
   ]
   DupFields = [ "activity->accesses" ]
 }

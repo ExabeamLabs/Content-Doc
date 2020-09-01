@@ -9,6 +9,5 @@ Name = bro-network-alert
     """"name":"({alert_name}[^"]+)""",
     """"peer":"({src_host}[^"]+)"""
   ]
-  DupFields = [ "alert_name->alert_type" ]
 }
 ```

@@ -55,6 +55,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-azure-app-activity-4](../Parsers/parserContent_cef-azure-app-activity-4.md)
 * [cef-azure-app-activity-5](../Parsers/parserContent_cef-azure-app-activity-5.md)
 * [cef-azure-app-login](../Parsers/parserContent_cef-azure-app-login.md)
+* [cef-azure-authentication](../Parsers/parserContent_cef-azure-authentication.md)
 * [cef-azure-failed-app-login](../Parsers/parserContent_cef-azure-failed-app-login.md)
 * [cef-microsoft-app-login](../Parsers/parserContent_cef-microsoft-app-login.md)
 * [cef-microsoft-auth-attempt](../Parsers/parserContent_cef-microsoft-auth-attempt.md)

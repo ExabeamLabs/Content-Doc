@@ -15,7 +15,7 @@ Name = raw-vpn-timeout
     """\d{4}-\d{2}-\d{2} \d\d:\d\d:\d\d\s+-\s+({host}[\w\.-]+)\s+-\s+\[""",
     """\[({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]\s+""",
     """Session timed out for (?:({user_email}[^@\\\/]+@[^@\/\s]+)|({user}[^/]+))""",
-    """({host}[\w\-.]+)\s+\S+\s+PulseSecure:""",
+    """({host}[\w\-.]+)\s+PulseSecure:""",
     """PulseSecure:\s*({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)\s+\-\s+({host}[\w\-.]+)""",
     """PulseSecure:.*?\[({src_ip}[a-fA-F:\d.]+)\]\s+(({domain}[^\\]+)\\)?(?:({user_email}[^@\\\/]+@[^@\(\s]+?)|({user}[^\s]+))\(({realm}[^\)]+)?"""
   ]

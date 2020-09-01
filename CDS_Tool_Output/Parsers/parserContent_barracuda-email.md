@@ -2,8 +2,8 @@
 ```Java
 {
 Name = barracuda-email
-    Vendor = Barracuda Email Security Gateway
-  Product = Barracuda Email Security Gateway
+    Vendor = Barracuda
+    Product = Barracuda Email Security Gateway
     Lms = Syslog
     DataType = "dlp-email-alert"
     TimeFormat = "epoch_sec"

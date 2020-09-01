@@ -25,7 +25,9 @@ Name = cef-mcafee-dlp-email-out
       """(\s|\|)fsize=({bytes}\d+)""",
       """\scs4=({attachment}.+?)\s*(\w+=|$)""",
       """\scs6=({subject}.+?)\s*(\w+=|$)""",
-      """\scn3=({num_recipients}\d+)"""
+      """\scn3=({num_recipients}\d+)""",
+      """\scn2=({num_attachments}\d+)""", 
+      """\sfilePath=(({file_path}[^\s]+\\)?({file_name}[^\s]+\.({file_ext}[^\s]+)))""",
     ]
     DupFields = [ "sender->user" ]
   }

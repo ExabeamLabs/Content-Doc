@@ -4,7 +4,7 @@
 Name = xml-4768
     Vendor = Microsoft
     Product = Microsoft Windows
-    Lms = ElasticSearch
+    Lms = Splunk 
     DataType = "windows-4768"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
     Conditions = ["<EventID>4768</EventID>", "<Data Name='TargetSid'>"]

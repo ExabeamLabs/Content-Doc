@@ -2,7 +2,8 @@
 ```Java
 {
 Name = vmware-view-app-activity
-  Vendor = VMware View
+  Vendor = VMware
+  Product = VMware View
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

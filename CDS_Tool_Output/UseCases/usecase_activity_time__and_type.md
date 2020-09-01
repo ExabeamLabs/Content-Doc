@@ -8,6 +8,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [AD Audit](../DataSources/datasource_ad_audit_ad_audit.md)
 * [ManageEngine](../DataSources/datasource_admanager_manageengine.md)
 * [APC](../DataSources/datasource_apc_apc.md)
+* [AWS](../DataSources/datasource_aws_bastion_aws.md)
 * [AWS](../DataSources/datasource_aws_cloudtrail_aws.md)
 * [AWS CloudTrail](../DataSources/datasource_aws_cloudtrail_aws_cloudtrail.md)
 * [Adaxes](../DataSources/datasource_adaxes_adaxes.md)
@@ -49,6 +50,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [BusinessObject](../DataSources/datasource_businessobject_businessobject.md)
 * [CA Privileged Access Manager Server Control](../DataSources/datasource_ca_privileged_access_manager_server_control_ca_privileged_access_manager_server_control.md)
 * [CCURE](../DataSources/datasource_ccure_ccure.md)
+* [Carbon Black](../DataSources/datasource_carbon_black_edr_carbon_black.md)
 * [Carbon Black](../DataSources/datasource_carbon_black_carbon_black.md)
 * [CatoNetworks](../DataSources/datasource_catonetworks_catonetworks.md)
 * [Carbon Black Defense](../DataSources/datasource_cb_defense_carbon_black_defense.md)
@@ -75,6 +77,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Cloud Application](../DataSources/datasource_cloud_application_cloud_application.md)
 * [Cloudflare](../DataSources/datasource_cloudflare_cloudflare.md)
 * [Code42](../DataSources/datasource_code42_code42.md)
+* [Palo Alto Networks](../DataSources/datasource_cortex_xdr_palo_alto_networks.md)
 * [CrowdStrike Falcon](../DataSources/datasource_crowdstrike_falcon_crowdstrike_falcon.md)
 * [CyberArk](../DataSources/datasource_cyberark_endpoint_privilege_management_cyberark.md)
 * [CyberArk Privileged Session Manager](../DataSources/datasource_cyberark_privileged_session_manager_cyberark_privileged_session_manager.md)
@@ -136,6 +139,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [InfoWatch](../DataSources/datasource_infowatch_infowatch.md)
 * [Infoblox](../DataSources/datasource_infoblox_infoblox.md)
 * [Juniper Networks](../DataSources/datasource_juniper_srx_juniper_networks.md)
+* [Kemp Load Balancer](../DataSources/datasource_kemp_load_balancer_kemp_load_balancer.md)
 * [KiteWorks](../DataSources/datasource_kiteworks_kiteworks.md)
 * [Sun One](../DataSources/datasource_ldap_sun_one.md)
 * [LEAP](../DataSources/datasource_leap_leap.md)
@@ -149,6 +153,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [MasterSAM PAM](../DataSources/datasource_mastersam_pam_mastersam_pam.md)
 * [McAfee Endpoint Security](../DataSources/datasource_mcafee_endpoint_security_mcafee_endpoint_security.md)
 * [McAfee Skyhigh](../DataSources/datasource_mcafee_skyhigh_mcafee_skyhigh.md)
+* [McAfee](../DataSources/datasource_mcafee_mcafee.md)
 * [Visma](../DataSources/datasource_megaflex_visma.md)
 * [Microsoft](../DataSources/datasource_microsoft_advanced_threat_protection_microsoft.md)
 * [Microsoft](../DataSources/datasource_microsoft_azure_active_directory_microsoft.md)
@@ -239,11 +244,14 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Sonicwall](../DataSources/datasource_sonicwall_sonicwall.md)
 * [Sophos SafeGuard](../DataSources/datasource_sophos_safeguard_sophos_safeguard.md)
 * [Sophos](../DataSources/datasource_sophos_sophos.md)
+* [Specops](../DataSources/datasource_specops_password_reset_specops.md)
 * [StealthBits StealthIntercept](../DataSources/datasource_stealthbits_stealthintercept_stealthbits_stealthintercept.md)
 * [StealthBits](../DataSources/datasource_stealthbits_stealthbits.md)
+* [IBM](../DataSources/datasource_sterling_ibm.md)
 * [Swift](../DataSources/datasource_swift_swift.md)
 * [Swivel](../DataSources/datasource_swivel_swivel.md)
 * [Symantec](../DataSources/datasource_symantec_cloudsoc_symantec.md)
+* [Symantec](../DataSources/datasource_symantec_critical_system_protection_symantec.md)
 * [Symantec Endpoint Protection](../DataSources/datasource_symantec_endpoint_protection_symantec_endpoint_protection.md)
 * [Symantec VIP](../DataSources/datasource_symantec_vip_symantec_vip.md)
 * [Microsoft Sysmon](../DataSources/datasource_sysmon_microsoft_sysmon.md)
@@ -285,6 +293,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Sailpoint SIQ](../DataSources/datasource_windows_sailpoint_siq.md)
 * [Workday](../DataSources/datasource_workday_workday.md)
 * [Xceedium](../DataSources/datasource_xceedium_xceedium.md)
+* [Zoom](../DataSources/datasource_zoom_zoom.md)
 * [Zscaler](../DataSources/datasource_zscaler_internet_access_zscaler.md)
 * [eDocs](../DataSources/datasource_edocs_edocs.md)
 * [iManage](../DataSources/datasource_imanage_imanage.md)
@@ -327,4 +336,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 - remote-access
 - remote-logon
 - vpn-login
+- web-meeting-started
+- webconference-login
 - workstation-unlocked
