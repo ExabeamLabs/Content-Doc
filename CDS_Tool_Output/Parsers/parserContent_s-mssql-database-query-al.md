@@ -66,6 +66,10 @@ ${MicrosoftParserTemplates.s-mssql-database-query}{
   Fields = [
     """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{9}Z)""",
     """<Computer>({host}.+?)<\/Computer>""",
+    """<EventID>({event_code}\d+)<\/EventID>""",
+    """<Execution ProcessID='({pid}\d+)""",
+    """<Data Name='XID'>({query_id}\d+)""",
+    """ThreadID='({thread_id}[^\']+)""",
     """<Data Name='InterfaceIP'>({dest_ip}[A-Fa-f:\d.]+)""",
     """<Data Name='Source'>({src_ip}[A-Fa-f:\d.]+)""",
     """<Data Name='Port'>({src_port}\d+)""",

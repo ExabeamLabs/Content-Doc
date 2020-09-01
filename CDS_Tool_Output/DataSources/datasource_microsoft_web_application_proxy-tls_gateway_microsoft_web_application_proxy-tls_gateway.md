@@ -29,6 +29,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [bluecoat-proxy-10](../Parsers/parserContent_bluecoat-proxy-10.md)
 * [bluecoat-proxy-12](../Parsers/parserContent_bluecoat-proxy-12.md)
 * [bluecoat-proxy-13](../Parsers/parserContent_bluecoat-proxy-13.md)
+* [bluecoat-proxy-15](../Parsers/parserContent_bluecoat-proxy-15.md)
 * [bluecoat-proxy-2](../Parsers/parserContent_bluecoat-proxy-2.md)
 * [bluecoat-proxy-3](../Parsers/parserContent_bluecoat-proxy-3.md)
 * [bluecoat-proxy-4](../Parsers/parserContent_bluecoat-proxy-4.md)

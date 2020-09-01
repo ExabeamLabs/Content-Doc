@@ -100,6 +100,7 @@ ${MSParserTemplates.cef-microsoft-app-activity} {
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields} [
     """"ParentFolder":.+?"Path":"\\*({object}[^"]+)"""",
     """"DestFolder":.+?"Path":"\\*({object}[^"]+)"""",
+    """\srequest=({outcome}[^\s]+)\s""",
   ]
 }
 
@@ -123,5 +124,6 @@ ${MSParserTemplates.cef-microsoft-app-activity} {
     """({app}Office 365)"""
     """destinationServiceName=({app}.+?)\sdevice"""
   ]
+  DupFields = ["user_domain->email_domain"]
 }
 ```

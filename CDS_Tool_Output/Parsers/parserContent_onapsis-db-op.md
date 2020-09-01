@@ -32,7 +32,7 @@ Name = onapsis-db-op
       """exabeam_endTime=({time}\d+)""",
       """exabeam_host=({host}[^\s]+)""",
       """connected to Application ({app}[^.]+)""",
-      """AUDIT:.+?\(({user_emailId}[^)]+)\)"""
+      """AUDIT:.+?\(({user_email}[^@]+@({email_domain}[^)]+))\)"""
     ]
   }
 ```

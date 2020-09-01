@@ -17,6 +17,7 @@ Name = sfdc-app-login-1
     """SOURCE_IP="({src_ip}[A-Fa-f:\d.]+)""",
     """USER_ID="({user}[^"\s]+)""",
     """LOGIN_STATUS="({outcome}[^"]+)""",
+    """USER_NAME="({user_email}[^@]+({email_domain}[^"]+))""", 
   ]
 }
 ```

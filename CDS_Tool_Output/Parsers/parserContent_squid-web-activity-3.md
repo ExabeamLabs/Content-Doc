@@ -47,7 +47,7 @@ Name = squid-web-activity-3
   Fields = [
     """\s+({host}[\w\-.]+)\s+CEF:""",
     """rt=({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d.\d\d\d)""",
-    """suser=(({user_email}[^@]+@[^\s]+)|({user}.+?))\ssntdom=""",
+    """suser=(({user_email}[^@]+@({email_domain}[^\s]+))|({user}.+?))\ssntdom=""",
     """sntdom=({domain}[^\s]+)""",
     """shost=(n\/a|({src_host}[^\s]+))""",
     """src=(n\/a|({src_ip}[a-fA-F\d\.:]+))""",

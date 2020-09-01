@@ -36,6 +36,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Clearsense](../DataSources/datasource_clearsense_clearsense.md)
 * [Cloud Application](../DataSources/datasource_cloud_application_cloud_application.md)
 * [Cloudflare](../DataSources/datasource_cloudflare_cloudflare.md)
+* [Palo Alto Networks](../DataSources/datasource_cortex_xdr_palo_alto_networks.md)
 * [CrowdStrike Falcon](../DataSources/datasource_crowdstrike_falcon_crowdstrike_falcon.md)
 * [CyberArk Privileged Session Manager](../DataSources/datasource_cyberark_privileged_session_manager_cyberark_privileged_session_manager.md)
 * [CyberArk Vault](../DataSources/datasource_cyberark_vault_cyberark_vault.md)
@@ -79,6 +80,8 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [LastPass](../DataSources/datasource_lastpass_lastpass.md)
 * [Liebsoft](../DataSources/datasource_liebsoft_liebsoft.md)
 * [McAfee Skyhigh](../DataSources/datasource_mcafee_skyhigh_mcafee_skyhigh.md)
+* [McAfee](../DataSources/datasource_mcafee_mcafee.md)
+* [Microsoft](../DataSources/datasource_microsoft_advanced_threat_protection_microsoft.md)
 * [Microsoft](../DataSources/datasource_microsoft_azure_active_directory_microsoft.md)
 * [Microsoft Azure EventHub](../DataSources/datasource_microsoft_azure_eventhub_microsoft_azure_eventhub.md)
 * [Microsoft Azure](../DataSources/datasource_microsoft_azure_microsoft_azure.md)
@@ -132,6 +135,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Sonicwall](../DataSources/datasource_sonicwall_sonicwall.md)
 * [Sophos SafeGuard](../DataSources/datasource_sophos_safeguard_sophos_safeguard.md)
 * [Sophos](../DataSources/datasource_sophos_sophos.md)
+* [IBM](../DataSources/datasource_sterling_ibm.md)
 * [Swift](../DataSources/datasource_swift_swift.md)
 * [Swivel](../DataSources/datasource_swivel_swivel.md)
 * [Symantec](../DataSources/datasource_symantec_cloudsoc_symantec.md)
@@ -158,6 +162,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Microsoft Windows](../DataSources/datasource_windows_microsoft_windows.md)
 * [Workday](../DataSources/datasource_workday_workday.md)
 * [Xceedium](../DataSources/datasource_xceedium_xceedium.md)
+* [Zoom](../DataSources/datasource_zoom_zoom.md)
 * [Zscaler](../DataSources/datasource_zscaler_internet_access_zscaler.md)
 * [eDocs](../DataSources/datasource_edocs_edocs.md)
 * [iManage](../DataSources/datasource_imanage_imanage.md)
@@ -171,3 +176,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 - failed-app-login
 - session-end
 - vpn-logout
+- web-meeting-updated
+- webconference-login
+- webconference-operations-activity

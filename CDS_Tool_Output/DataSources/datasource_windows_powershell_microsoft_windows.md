@@ -9,6 +9,7 @@ _The following Use Cases can be operationalized using log data from this data so
 
 * [Account Creation and Management](../UseCases/usecase_account_creation_and_management.md)
 * [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
+* [Endpoint Activivty](../UseCases/usecase_endpoint_activivty.md)
 * [Security Alert](../UseCases/usecase_security_alert.md)
 
 
@@ -30,6 +31,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-windows-4104](../Parsers/parserContent_cef-windows-4104.md)
 * [powershell-4104](../Parsers/parserContent_powershell-4104.md)
 * [powershell-800](../Parsers/parserContent_powershell-800.md)
+* [powershell-800-syslog](../Parsers/parserContent_powershell-800-syslog.md)
 * [powershell-process-created](../Parsers/parserContent_powershell-process-created.md)
 * [powershell-process-created-1](../Parsers/parserContent_powershell-process-created-1.md)
 * [powershell-process-created-2](../Parsers/parserContent_powershell-process-created-2.md)

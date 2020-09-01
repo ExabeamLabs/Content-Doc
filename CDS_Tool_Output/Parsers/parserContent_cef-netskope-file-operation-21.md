@@ -144,6 +144,24 @@ ${NetskopeParserTemplates.cef-netskope-activity}{
 }
 
 ${NetskopeParserTemplates.cef-netskope-activity}{
+  Name = json-netskope-app-login
+  DataType = "app-login"
+  Conditions = [ """"appcategory": """, """"type": """, """"activity": "Login Successful"""" ]
+}
+
+${NetskopeParserTemplates.cef-netskope-activity}{
+  Name = json-netskope-failed-app-login
+  DataType = "failed-app-login"
+  Conditions = [ """"appcategory": """, """"type": """, """"activity": "Login Failed"""" ]
+}
+
+${NetskopeParserTemplates.cef-netskope-activity}{
+  Name = json-netskope-app-activity-18
+  DataType = "app-activity"
+  Conditions = [ """"appcategory": """, """"type": """, """"activity": """,  """"app": """ ]
+}
+
+${NetskopeParserTemplates.cef-netskope-activity}{
   Name = cef-netskope-app-activity-18
   DataType = "app-activity"
   Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"View"""" ]

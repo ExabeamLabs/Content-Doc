@@ -19,6 +19,7 @@ The following are the list of out-of-the-box supported Use Cases
 * [Database Alert](UseCases/usecase_database_alert.md)
 * [Email Activity](UseCases/usecase_email_activity.md)
 * [Endpoint Activity](UseCases/usecase_endpoint_activity.md)
+* [Endpoint Activivty](UseCases/usecase_endpoint_activivty.md)
 * [Executives](UseCases/usecase_executives.md)
 * [Failed Logon and Account Lockout](UseCases/usecase_failed_logon_and_account_lockout.md)
 * [File Activity](UseCases/usecase_file_activity.md)

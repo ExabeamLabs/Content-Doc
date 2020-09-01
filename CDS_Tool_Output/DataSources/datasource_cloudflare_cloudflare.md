@@ -48,3 +48,4 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cloudflare-network-alert](../Parsers/parserContent_cloudflare-network-alert.md)
 * [cloudflare-network-alert-2](../Parsers/parserContent_cloudflare-network-alert-2.md)
 * [skyformation-cloudflare-waf](../Parsers/parserContent_skyformation-cloudflare-waf.md)
+* [skyformation-cloudflare-waf-1](../Parsers/parserContent_skyformation-cloudflare-waf-1.md)

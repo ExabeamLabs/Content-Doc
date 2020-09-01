@@ -37,6 +37,8 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-syslog-microsoft-db-impersonate](../Parsers/parserContent_cef-syslog-microsoft-db-impersonate.md)
 * [cef-syslog-microsoft-db-login](../Parsers/parserContent_cef-syslog-microsoft-db-login.md)
 * [exalms-sqlserver-failed-login](../Parsers/parserContent_exalms-sqlserver-failed-login.md)
+* [mssql-database-login](../Parsers/parserContent_mssql-database-login.md)
+* [mssql-database-query-3](../Parsers/parserContent_mssql-database-query-3.md)
 * [s-database-login-18453](../Parsers/parserContent_s-database-login-18453.md)
 * [s-database-login-18454](../Parsers/parserContent_s-database-login-18454.md)
 * [s-failed-app-login](../Parsers/parserContent_s-failed-app-login.md)

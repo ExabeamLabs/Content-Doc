@@ -11,6 +11,7 @@ Name = json-4770
   Fields = [
     """({event_name}A Kerberos service ticket was renewed)""",
     """"TimeGenerated":"({time}[^"]*)""",
+    """"+created"+:"+({time}[^"]+)""",
     """"EventTime":\s*"({time}\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})"""",
     """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s({host}[^\s]+)\sSkyformation""",
     """"(MachineName|Hostname|computer_name)":"({host}[^."]+)""",

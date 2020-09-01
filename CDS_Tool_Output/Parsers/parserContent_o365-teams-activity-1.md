@@ -16,7 +16,7 @@ Name = o365-teams-activity-1
     """Workload"*:\s*"*({app}[^"]+)"*\}""",
     """ObjectId"*:\s*"*({object}[^"]+)"*""",
     """Operation"*:\s*"*({activity}[^"]+)"*""",
-    """UserId"*:\s*"*({user_email}[^"]+)"*"""
+    """UserId"*:\s*"*({user_email}[^@]+@({email_domain}[^"]+))"*"""
     ]
 }
 ```

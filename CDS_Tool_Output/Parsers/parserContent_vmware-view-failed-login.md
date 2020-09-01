@@ -2,7 +2,8 @@
 ```Java
 {
 Name = vmware-view-failed-login
-  Vendor = VMware View
+  Vendor = VMware
+  Product = VMware View
   Lms = Splunk
   DataType = "failed-app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

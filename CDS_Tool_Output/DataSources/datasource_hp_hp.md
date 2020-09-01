@@ -24,4 +24,5 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [cef-hp-print-activity](../Parsers/parserContent_cef-hp-print-activity.md)
 * [gm-print-activity](../Parsers/parserContent_gm-print-activity.md)
+* [hp-print-activity](../Parsers/parserContent_hp-print-activity.md)
 * [s-hp-print-activity](../Parsers/parserContent_s-hp-print-activity.md)

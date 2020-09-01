@@ -18,8 +18,9 @@ Name = messagelabs-email-out
     """"headerTo":\[({recipients}[^\]]+)\],""",
     """"headerTo":\["({recipient}[^"@]+@({external_domain}[^@"]+))"""",
     """"isOutbound":({direction}[^,]+),""",
-    """"senderIp":"({src_ip}[a-fA-F\d.:]+)"""
+    """"senderIp":"({src_ip}[a-fA-F\d.:]+)""",
+    """\[\{"fileNameOrURL":"({file_name}[^\.]+\.({file_ext}[^"]+))""",
   ]
-  DupFields = [ "sender->email_user", "sender->user_email", "recipient->external_address" ]
+  DupFields = [ "sender->email_user", "sender->user_email", "recipient->external_address" , "file_name->attachment"]
 }
 ```

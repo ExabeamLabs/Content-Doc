@@ -25,6 +25,7 @@ Name = s-estreamer-security-alert
     """"direction":\s*({direction}[^,]+),""",
     """"fileType":\s*"({file_type}[^"]+)"""",
     """"user":\s*"(No Authentication Required|Unknown|({user}[^"]+))"""",
+    """"disposition"+:\s*({outcome}\d+)""",
     """"disposition"+:\s*"+(N\/A|({additional_info}[^"]+))"""",
     """"threatScore"+:\s*({alert_severity}\d+)""",
     """"recordType"+:\s*({record_type}\d+)"""

@@ -24,7 +24,7 @@ Name = symantec-epp-network-alert-2
     """({alert_name}The traffic from IP address .+? was blocked)""",
     """MD-5: [^,]*,"*({additional_info}.+?)(\s+|"+),Local:"""
   ]
-  DupFields = [ "alert_name->alert_type" ]
+  DupFields = [ "alert_name->alert_type"]
   SOAR {
     IncidentType = "generic"
     DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->description"]

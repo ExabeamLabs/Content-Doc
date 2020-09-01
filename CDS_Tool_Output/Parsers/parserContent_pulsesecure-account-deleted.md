@@ -2,7 +2,8 @@
 ```Java
 {
 Name = pulsesecure-account-deleted
-  Vendor = Juniper Pulse Secure
+  Vendor = Juniper Networks
+  Product = Juniper Networks Pulse Secure
   Lms = Direct
   DataType = "account-deleted"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

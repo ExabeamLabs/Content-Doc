@@ -52,6 +52,7 @@ Name = mcafee-network-alert
     """\Wsubject\\='({subject}[^']+)""",
     """\Wattachment\(s\)\\='(|({attachments}[^']+))'""",
     """\Wattachment\(s\)\\='(|({attachment}[^,']+)),""",
+    """\Wnumber-attachment\(s\)='({num_attachments}\d+)""", 
   ]
   DupFields = [ "alert_name->alert_type" ]
 }

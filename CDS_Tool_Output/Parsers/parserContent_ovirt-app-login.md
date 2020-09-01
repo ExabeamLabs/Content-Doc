@@ -11,7 +11,7 @@ Name = ovirt-app-login
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d),.+?ovirt""",
-    """USER_VDC_LOGIN.+? User (?:({user_email}[^\s@]+@[^\s@]+)\S*|({user}[^\s]+)) connecting from '({src_ip}[A-Fa-f:\d.]+)""",
+    """USER_VDC_LOGIN.+? User (?:({user_email}[^\s@]+@({email_domain}[^\s@]+))\S*|({user}[^\s]+)) connecting from '({src_ip}[A-Fa-f:\d.]+)""",
     """({app}ovirt)"""
   ]
 }

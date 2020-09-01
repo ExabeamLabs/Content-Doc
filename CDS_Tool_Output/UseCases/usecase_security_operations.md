@@ -6,6 +6,7 @@ Use Case: Security Operations
 _The following list of Supported Exabeam Data Sources power this use case:_
 
 * [AD Audit](../DataSources/datasource_ad_audit_ad_audit.md)
+* [AWS](../DataSources/datasource_aws_bastion_aws.md)
 * [BlueCat Networks Adonis](../DataSources/datasource_bluecat_networks_adonis_bluecat_networks_adonis.md)
 * [Bro](../DataSources/datasource_bro_bro.md)
 * [Centrify](../DataSources/datasource_centrify_centrify.md)
@@ -26,8 +27,10 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Microsoft Azure](../DataSources/datasource_microsoft_azure_microsoft_azure.md)
 * [Microsoft](../DataSources/datasource_microsoft_windows_microsoft.md)
 * [NetWrix](../DataSources/datasource_netwrix_netwrix.md)
+* [OneSpan](../DataSources/datasource_onespan_onespan.md)
 * [SentinelOne](../DataSources/datasource_sentinelone_sentinelone.md)
 * [Splunk Stream](../DataSources/datasource_splunk_stream_splunk_stream.md)
+* [IBM](../DataSources/datasource_sterling_ibm.md)
 * [Unix](../DataSources/datasource_unix_unix.md)
 * [Unix](../DataSources/datasource_unix_unix.md)
 * [F5 VPN](../DataSources/datasource_vpn_f5_vpn.md)

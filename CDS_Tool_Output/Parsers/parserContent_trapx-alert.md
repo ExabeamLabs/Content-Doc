@@ -2,7 +2,7 @@
 ```Java
 {
 Name = trapx-alert
-  Vendor = Trapx
+  Vendor = TrapX
   Product = TrapX
   Lms = Splunk
   DataType = "network-alert"

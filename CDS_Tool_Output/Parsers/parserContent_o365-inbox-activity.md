@@ -11,7 +11,7 @@ Name = o365-inbox-activity
   Fields = [
      """"CreationTime":\s*"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
      """flexString1=({activity}[^\s]*)\srequest""",
-     """\sby\s\[({user_email}[^\]]*)\]""",
+     """\sby\s\[({user_email}[^@]+@({email_domain}[^\]]*))\]""",
      """ObjectId":"({resource}[^"]*)"""",
      """ResultStatus":"({outcome}[^"]*)"""",
      """Name":"AccessRights","Value":"({additional_info}[^"]*)"""",
@@ -133,6 +133,7 @@ ${MSParserTemplates.cef-microsoft-app-activity} {
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields} [
     """"ParentFolder":.+?"Path":"\\*({object}[^"]+)"""",
     """"DestFolder":.+?"Path":"\\*({object}[^"]+)"""",
+    """\srequest=({outcome}[^\s]+)\s""",
   ]
 }
 
@@ -156,5 +157,6 @@ ${MSParserTemplates.cef-microsoft-app-activity} {
     """({app}Office 365)"""
     """destinationServiceName=({app}.+?)\sdevice"""
   ]
+  DupFields = ["user_domain->email_domain"]
 }
 ```
