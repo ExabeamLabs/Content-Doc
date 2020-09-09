@@ -25,7 +25,6 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-microsoft-print-activity](../Parsers/parserContent_cef-microsoft-print-activity.md)
 * [microsoft-print-activity](../Parsers/parserContent_microsoft-print-activity.md)
 * [microsoft-print-activity-1](../Parsers/parserContent_microsoft-print-activity-1.md)
-* [microsoft-print-activity-2](../Parsers/parserContent_microsoft-print-activity-2.md)
 * [q-microsoft-print-activity](../Parsers/parserContent_q-microsoft-print-activity.md)
 * [s-microsoft-print-activity](../Parsers/parserContent_s-microsoft-print-activity.md)
 * [syslog-microsoft-print-activity](../Parsers/parserContent_syslog-microsoft-print-activity.md)

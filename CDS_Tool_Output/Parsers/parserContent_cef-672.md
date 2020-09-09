@@ -15,9 +15,7 @@ Name = cef-672
     """src=({dest_ip}[a-fA-F:\d.]+)""",
     """\ssuser=({user}.+?)\s+\w+=""",
     """\scs4=({result_code}[^\s]+)""",
-    """\sdvchost=({host}[^\s]+)""",
-    """\sdntdom=({domain}[^\s]+)""", 
+    """\sdvchost=({host}[^\s]+)"""
   ]
-  DupFields = ["host->dest_host"]
 }
 ```

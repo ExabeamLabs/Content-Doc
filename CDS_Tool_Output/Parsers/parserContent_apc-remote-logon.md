@@ -3,7 +3,6 @@
 {
 Name = apc-remote-logon
   Vendor = APC
-  Product = APC
   Lms = Direct
   DataType = "remote-logon"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
@@ -19,8 +18,7 @@ Name = apc-remote-logon
 
 {
   Name = q-beyondtrust-process-created
-  Vendor = BeyondTrust
-  Product = BeyondTrust PowerBroker
+  Vendor = BeyondTrust PowerBroker
   Lms = QRadar
   DataType = "process-created"
   IsHVF = true

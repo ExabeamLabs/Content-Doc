@@ -2,8 +2,7 @@
 ```Java
 {
 Name = s-physical-badge-access-4
-    Vendor = Badge
-  Product = Badge
+    Vendor = Unknown
     Lms = Splunk
     DataType = "physical-access"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -22,8 +21,7 @@ Name = s-physical-badge-access-4
 
   {
     Name = syslog-physical-badge-access
-    Vendor = Badge
-  Product = Badge
+    Vendor = Unknown
     Lms = Direct
     DataType = "physical-access"
     TimeFormat = "yyyy-MM-dd HH:mm:ss"

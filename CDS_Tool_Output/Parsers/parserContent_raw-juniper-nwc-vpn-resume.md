@@ -3,7 +3,6 @@
 {
 Name = raw-juniper-nwc-vpn-resume
   Vendor = Juniper Networks
-  Product = Juniper VPN
   Lms = Direct
   DataType = "access-control"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
@@ -20,6 +19,5 @@ Name = raw-juniper-nwc-vpn-resume
     """\- \[({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]\s+(({domain}[^\\]+)\\)?({user}[^\(]+)\(({realm}[^\)]+)?\)(\[({resource}[^\]]+)\])?""",
     """({event_code}Session resumed)""",
   ] 
-  DupFields = ["user->account"]
 }
 ```

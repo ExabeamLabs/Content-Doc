@@ -2,7 +2,6 @@
 ```Java
 {
 Name = cef-onapsis-security-alert
-  Product = Onapsis
   DataType = "alert"
   Conditions = [ """CEF:""", """|Onapsis|OSP|""", """OnapsisOSPPolicy=""" ]
   Fields = ${OnapsisParserTemplates.cef-onapsis-activity.Fields}[

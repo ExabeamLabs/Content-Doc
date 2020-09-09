@@ -6,22 +6,33 @@ Name = cisco-auth-successful
   Conditions = [ """EventType =UserLogging""", """=Login Authentication Successful]""" ]
 }
 
+${CiscoParsersTemplates.cisco-events} {
+  Name = cisco-auth-failed
+  DataType = "authentication-failed"
+  Conditions = [ """EventType =UserLogging""", """=Login Authentication Failed]""" ]
+}
+
+${CiscoParsersTemplates.cisco-events} {
+  Name = cisco-app-activity
+  DataType = "app-activity"
+  Conditions = [ """EventType =UserAccess""", """ResourceAccessed=""", """EventStatus =""" ]
+}
+
 {
-  Name = cisco-auth-successful-1
+  Name = cisco-auth-failed-1
   Vendor = Cisco
   Product = Cisco
   Lms = Direct
-  DataType = "authentication-successful"
+  DataType = "authentication-failed"
   TimeFormat = "MMM dd yyyy HH:mm:ss a"
-  Conditions = [ """[Login Date/Time=""", """[Login IP Address/Hostname=""", """Login Authentication succeeded""" ]
+  Conditions = [ """AuthenticationFailed: """, """Login Authentication failed""", """App ID=""" ]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """Login Date/Time=({time}\d\d/\d\d/\d\d \d+:\d+ (am|pm|AM|PM))""",
     """\s({time}\w+\s+\d+\s+\d+\s+\d+:\d+:\d+\s+(AM|PM|am|pm))""",
-    """Login IP Address/Hostname=({src_ip}[a-fA-F\d.:]+)""",
-    """Login UserID=({user}[^\]]+)""",
-    """Node ID=({dest_host}[^\]]+)""",
-    """Login Interface=({app}[^\]]+)""",
+    """UserID\s*=({user}[^\s\]]+)""",
+    """Login IP Address\/Hostname\s*=(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[\w\-.]+))""",
+    """\]:\s*({additional_info}.+?)\.?\s+$""",
+    """App ID\s*=({app}[^\]]+)""",
   ]
 }
 ```

@@ -3,7 +3,6 @@
 {
 Name = s-duo-failed-app-login
   Vendor = Duo Security
-  Product = Duo Security
   Lms = Splunk
   DataType = "failed-app-login"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSSZ"

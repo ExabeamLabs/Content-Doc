@@ -2,30 +2,25 @@
 ```Java
 {
 Name = s-common-ftp-app-activity-6
-  Product = FTP
   Conditions = [ """]quit """ ]
 }
 
 ${UnixParserTemplates.s-common-ftp-app-activity}{
   Name = s-common-ftp-app-activity-7
-  Product = FTP
   Conditions = [ """]kick """ ]
 }
 
 ${UnixParserTemplates.s-common-ftp-app-activity}{
   Name = s-common-ftp-app-activity-8
-  Product = FTP
   Conditions = [ """]retr """ ]
 }
 ${UnixParserTemplates.cds-user-activity}{
   Name = cds-account-auth
-  Product = CDS
   Conditions = [ """AUDIT:""", """ uid=""", """type=USER_AUTH""" ]
   DataType = "remote-logon"
 }
 ${UnixParserTemplates.cds-user-activity}{
   Name = cds-user-login
-  Product = CDS
   Conditions = [ """AUDIT:""", """ uid=""", """type=USER_LOGIN""" ]
   DataType = "remote-logon"
 }
@@ -33,7 +28,6 @@ ${UnixParserTemplates.cds-user-activity}{
 {
   Name = raw-unix-process-created
   Vendor = Unix
-  Product = Unix
   Lms = Direct
   DataType = "process-created"
   IsHVF = true

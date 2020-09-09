@@ -3,11 +3,10 @@
 {
 Name = arbor-network-fail
   Vendor = Arbor
-  Product = Arbor
   Lms = Splunk
   DataType = "network-connection"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
-  Conditions = ["""arbor-networks-aps:""", """Blocked Host"""]
+  Conditions = ["""arbor-networks-aps: Blocked Host"""]
   Fields = [
      """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d\.\d\d\d)""",
      """\d\d:\d\d:\d\d\s({host}[^\s]*)\s""",
@@ -18,25 +17,22 @@ Name = arbor-network-fail
      """\ssource\sport\s({src_port}\d{1,6})"""
      """\w+\/({dest_port}\d{1,6})\s\("""
      """\/\d{1,6}\s\(({activity}[^\)]*)""",
-     """arbor-networks-aps:\s*({outcome}[^:]*):\s"""
+     """:\s({outcome}[^:]*):\s"""
    ]
 }
 
 ${ArubaParserTemplates.cef-aruba-nac-logon}{
   Name = cef-aruba-nac-logon
-  Product = Aruba Wireless controller
   Conditions = [ """|Aruba Networks|ClearPass|""", """|RADIUS Accounting|""" ]
 }
 
 ${ArubaParserTemplates.cef-aruba-nac-logon}{
   Name = cef-aruba-nac-logon-2
-  Product = Aruba Wireless controller
   Conditions = [ """|Aruba Networks|ClearPass|""", """|Guest Access|""" ]
 }
 
 ${ArubaParserTemplates.cef-aruba-nac-logon}{
   Name = cef-aruba-nac-logon-3
-  Product = Aruba Wireless controller
   Conditions = [ """|Aruba Networks|ClearPass|""", """|Logged in users|""" ]
 }
 

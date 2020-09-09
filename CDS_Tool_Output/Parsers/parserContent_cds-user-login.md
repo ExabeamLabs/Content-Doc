@@ -2,7 +2,6 @@
 ```Java
 {
 Name = cds-user-login
-  Product = CDS
   Conditions = [ """AUDIT:""", """ uid=""", """type=USER_LOGIN""" ]
   DataType = "remote-logon"
 }
@@ -10,7 +9,6 @@ Name = cds-user-login
 {
   Name = raw-unix-process-created
   Vendor = Unix
-  Product = Unix
   Lms = Direct
   DataType = "process-created"
   IsHVF = true

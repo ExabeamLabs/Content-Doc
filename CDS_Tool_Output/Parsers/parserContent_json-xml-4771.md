@@ -19,6 +19,5 @@ Name = json-xml-4771
     """<Data Name='ServiceName'>\w+\/(?=\w)({domain}[^<]+)</Data>""",
     """<Data Name='IpAddress'>(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)</Data>"""
   ]
-  DupFields = ["host->dest_host"]
 }
 ```

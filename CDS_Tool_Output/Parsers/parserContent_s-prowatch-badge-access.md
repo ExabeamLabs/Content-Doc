@@ -2,33 +2,20 @@
 ```Java
 {
 Name = s-prowatch-badge-access
-  Product = ProWatch
-  Conditions = [ """REFID_TYP=""", """EVNT_DESCRP=""", """BADGENO="""" ]
-}
-
-${ProWatchParserTemplates.s-prowatch-badge-access}{
-  Name = s-prowatch-badge-access-2
-  Product = ProWatch
-  Conditions = [ """REFID_TYP=""", """EVNT_DESCRP=""", """CARDNO="""" ]
-}
-
-  {
-    Name = q-prowatch-badge-access
     Vendor = ProWatch
-  Product = ProWatch
-    Lms = QRadar
+    Lms = Splunk
     DataType = "physical-access"
-    TimeFormat =  "yyyy-MM-dd H:mm:ss"
-    Conditions = [ """ EVNT_DESCRP:""", """ LOCATION:""", """ LNAME:""", """ FNAME:""" ]
+    TimeFormat =  "yyyy-MM-dd HH:mm:ss"
+    Conditions = [ """REFID_TYP=""", """EVNT_DESCRP=""", """BADGENO""" ]
     Fields = [
-      """exabeam_host=([^=]*@\s*)?({host}[^\s]+)""",
-      """\sEVNT_DAT:\s*"({time}\d\d\d\d-\d\d-\d\d\s+\d{1,2}:\d\d:\d\d)""",
-      """\sEVNT_DESCRP:\s*"({outcome}[^"].*?)"\s*(\w+:|$)""",
-      """\sFNAME:\s*"({first_name}[^"].*?)"\s*(\w+:|$)""",
-      """\sLNAME:\s*"({last_name}[^"].*?)"\s*(\w+:|$)""",
-      """\sLOCATION:\s*"({location_door}[^"].*?)"\s*(\w+:|$)""",
-      """\sLOOP_DESCRP:\s*"({location_building}[^"].*?)"\s*(\w+:|$)""",
-      """\sCARDNO:\s*"({badge_id}[^"].*?)"\s*(\w+:|$)""",
+      """EVNT_DAT="({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d).""",
+      """CARDNO="({badge_id}[^"]+)"""",
+      """LOCATION="({location_door}[^"]+)"""",
+      """FNAME="({first_name}[^"]+)"""",
+      """LNAME="({last_name}[^"]+)"""",
+      """LOOP_DESCRP="({location_building}[^"]+)"""",
+      """EVNT_DESCRP="({outcome}[^"]+)"""",
+      """exabeam_host=([^=]*@\s*)?({host}[^\s]+)"""
     ]
   }
 ```

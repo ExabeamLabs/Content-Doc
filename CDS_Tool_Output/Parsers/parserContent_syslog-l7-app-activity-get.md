@@ -3,7 +3,6 @@
 {
 Name = syslog-l7-app-activity-get
   Vendor = Kemp
-  Product = Kemp LoadMaster
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "epoch"

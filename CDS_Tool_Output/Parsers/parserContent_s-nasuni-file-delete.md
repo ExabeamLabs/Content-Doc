@@ -2,12 +2,10 @@
 ```Java
 {
 Name = s-nasuni-file-delete
-  Product = Nasuni
     Conditions = [ """,CIFS,""", """,Delete File,""" ]
   }
   ${NasuniParserTemplates.s-nasuni-file-operations}{
     Name = s-nasuni-file-delete-1
-  Product = Nasuni
     Conditions = [ """,CIFS,""", """,Delete Directory,""" ]
   }
 

@@ -3,7 +3,6 @@
 {
 Name = iptables-network-connection-failed
   Vendor = IPTables
-  Product = IPTables
   Lms = Direct
   DataType = "network-connection"
   TimeFormat = "yyyy/MM/dd HH:mm:ss"

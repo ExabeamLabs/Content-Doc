@@ -3,7 +3,6 @@
 {
 Name = cef-oracle-db-delete
   Vendor = Oracle
-  Product = Oracle DB
   Lms = ArcSight
   DataType = "database-delete"
   IsHVF = true

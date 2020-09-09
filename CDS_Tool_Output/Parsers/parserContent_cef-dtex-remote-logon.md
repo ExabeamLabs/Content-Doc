@@ -3,7 +3,6 @@
 {
 Name = cef-dtex-remote-logon
   Vendor = Dtex
-  Product = Dtex
   Lms = ArcSight
   DataType = "remote-logon"
   TimeFormat = "epoch"

@@ -17,7 +17,6 @@ Name = o365-activity-1
     """, User=({object}[^,]+)""",
     """<Data>\{Identity=({resource}[^,]+)""",
     """<EventData><Data>({activity}.+?)<\/Data>""",
-    """User=(({domain}[^\\]+)\\)?({user}[^\s,]+)""", 
   ]
   DupFields = [ "result->outcome" ]
 }

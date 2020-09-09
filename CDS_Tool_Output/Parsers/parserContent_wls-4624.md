@@ -21,9 +21,7 @@ Name = wls-4624
       """TargetUserSid="+({user_sid}[^"]+)"""",
       """TargetDomainName="+({domain}[^"]+)"""",
       """IpAddress="+(?:-|({src_ip}[^"]+))""""
-      """WorkstationName="+([A-Fa-f:\d.]+|({src_host_windows}[^"]+))"""",
-      """SubjectUserName="+({account}[^"]+)"""",
-      """ProcessName="(-|({process}[^"]+))""", 
+      """WorkstationName="+([A-Fa-f:\d.]+|({src_host_windows}[^"]+))""""
     ]
     DupFields = ["host->dest_host"]
   }

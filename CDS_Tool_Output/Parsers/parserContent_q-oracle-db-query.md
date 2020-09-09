@@ -3,11 +3,10 @@
 {
 Name = q-oracle-db-query
   Vendor = Oracle
-  Product = Oracle DB
   Lms = QRadar
   DataType = "database-query"
   IsHVF = true
-  TimeFormat = "yyyy-MM-dd HH:mm:ss"
+  TimeFormat = "epoch"
   Conditions = [ """Oracle Audit""", """ ACTION :""", """ DATABASE USER:""", """CLIENT USER:""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",

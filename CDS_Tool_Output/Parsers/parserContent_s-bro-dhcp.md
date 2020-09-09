@@ -3,7 +3,6 @@
 {
 Name = s-bro-dhcp
   Vendor = Bro
-  Product = Bro
   Lms = Splunk
   DataType = "dhcp"
   TimeFormat = "epoch_sec"

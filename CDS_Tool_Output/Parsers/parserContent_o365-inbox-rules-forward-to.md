@@ -19,6 +19,5 @@ Name = o365-inbox-rules-forward-to
     """destinationServiceName=({app}.+?)\s(device|filePath)""",
     """({app}Office 365)"""
   ]
-  DupFields = ["user_domain->email_domain"]
 }
 ```

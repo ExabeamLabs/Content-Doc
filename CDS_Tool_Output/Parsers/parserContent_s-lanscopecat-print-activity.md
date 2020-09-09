@@ -2,8 +2,7 @@
 ```Java
 {
 Name = s-lanscopecat-print-activity
-  Vendor = LanScope
-  Product = LanScope Cat
+  Vendor = LanScope Cat
   Lms = Splunk
   DataType = "print-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

@@ -18,6 +18,6 @@ Name = q-5158
     """Source Address:\s*({dest_ip}[^\s]*)\s*Source Port:\s*({dest_port}\d*)""",
     """Protocol:\s*({ms_protocol_num}\d*)""",
     """Layer Name:\s*({layer_name}.*?)\s*Layer Run-Time ID"""]
-  DupFields = [ "host->dest_host" , "directory->process_directory"]
+  DupFields = [ "host->dest_host" ]
 }
 ```

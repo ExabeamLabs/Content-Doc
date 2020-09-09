@@ -24,7 +24,7 @@ Name = cef-mcafee-dlp-email-alert-2
       """(\s|\|)cs5=Recipients:[^;]+?<({recipient}[^>]+)>.*?Recipients Cc:""",
       """(\s|\|)cs5=Recipients:\s*({recipients}.+?)\s+Recipients Cc:""",
       """(\s|\|)cs6=({subject}.+?)\s+([\w\.-]+=|$)""",
-      """(\s|\|)fname=({file_name}[^\.]+({file_ext}.+?))\s+([\w\.-]+=|$)""",
+      """(\s|\|)fname=({file_name}.+?)\s+([\w\.-]+=|$)""",
       """(\s|\|)fsize=({bytes}.+?)\s+([\w\.-]+=|$)""",
       """(\s|\|)eventId=({alert_id}\d+)\s""",
       """({direction}OUTGOING)_EMAIL"""

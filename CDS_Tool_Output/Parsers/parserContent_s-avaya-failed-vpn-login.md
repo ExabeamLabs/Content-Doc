@@ -3,7 +3,6 @@
 {
 Name = s-avaya-failed-vpn-login
     Vendor = Avaya VPN
-  Product = Avaya VPN
     Lms = Splunk
     DataType = "failed-vpn-login"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

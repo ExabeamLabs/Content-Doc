@@ -3,7 +3,6 @@
 {
 Name = cef-qip-dhcp
     Vendor = Nokia VitalQIP
-  Product = Nokia VitalQIP
     Lms = ArcSight
     DataType = "dhcp"
     TimeFormat = "epoch"

@@ -3,7 +3,6 @@
 {
 Name = safeword-auth-successful
   Vendor = Secure Computing
-  Product = Secure Computing SafeWord
   Lms = Direct
   DataType = "authentication-successful"
   TimeFormat = "epoch"

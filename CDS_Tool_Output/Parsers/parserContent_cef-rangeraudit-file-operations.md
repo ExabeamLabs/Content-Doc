@@ -3,7 +3,6 @@
 {
 Name = cef-rangeraudit-file-operations
   Vendor = RangerAudit 
-  Product = RangerAudit
   Lms = ArcSight
   DataType = "file-operations"
   IsHVF = true

@@ -21,6 +21,6 @@ Name = syslog-checkpoint-network-alert
     """\WAttack Info:\s*(|({alert_type}.+?));""",
     """\WProtection Type:\s*(|({additional_info}.+?));""",
   ]
-  DupFields = [ "protocol->alert_name", "protocol->alert_type"]
+  #DupFields = [ "protocol->alert_name", "protocol->alert_type" ]
 }
 ```

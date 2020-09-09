@@ -24,26 +24,25 @@ Name = o365-inbox-rules-all-2
     """destinationServiceName=({app}.+?)\s*filePath"""
     """({app}Office 365)"""
   ]
-  DupFields = ["user_domain->email_domain"]
 }
 
- {
-  Name = o365-teams-activity-1
+{
+  Name = o365-security-alert
   Vendor = Microsoft
   Product = Office 365
   Lms = Direct
-  DataType = "app-activity"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """Workload""", """MicrosoftTeams""", """Operation""" ]
+  DataType = "alert"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
+  Conditions = [ """AlertTriggered""", """AlertType=""", """AlertId""", """destinationServiceName=Office 365"""]
   Fields = [
-    """"*CreationTime"*:\s*"*({time}\d+-\d+-\d+T\d+:\d+:\d+)"*""",
-    """({time}\d+-\d+-\d+T\d+:\d+:\d+.\d+Z)\s+({host}[\w\-.]+)\s+Skyformation""",
-    """destinationServiceName=({app}.*?)\s*deviceInboundInterface""",
-    """Workload"*:"*({app}[^"]+)""",
-    """Workload"*:\s*"*({app}[^"]+)"*\}""",
-    """ObjectId"*:\s*"*({object}[^"]+)"*""",
-    """Operation"*:\s*"*({activity}[^"]+)"*""",
-    """UserId"*:\s*"*({user_email}[^@]+@({email_domain}[^"]+))"*"""
-    ]
+   """"(ts|CreationTime)":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
+   """exabeam_host=({host}[^\s]+)""",
+   """"f3u":"({user_email}[^"]+)""",
+   """"ad":"({additional_info}[^"]+)""",
+   """"(Name|an)":"({alert_name}[^"]+)""",
+   """"AlertId":"({alert_id}[^"]+)""""
+   """"(sev|Severity)":"({alert_severity}[^"]+)""",
+   """"AlertType":"({alert_type}[^"]+)""""
+  ]
 }
 ```

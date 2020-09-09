@@ -18,11 +18,10 @@ Name = cyphort-alert
     """\seventId=({alert_id}\d+)""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\sfileName=({file_name}.+?)\s+\w+=""",
+    """\sfileName=({additional_info}.+?)\s+\w+=""",
     """\surl=({malware_url}[^\r\n]+)\s+""",
     """\smalwareSeverity=({alert_severity}.+?)\s+\w+=""",
     """\smalwareCategory=({alert_type}.+?)\s+\w+="""
   ]
-  DupFields = ["file_name->process_name"]
 }
 ```

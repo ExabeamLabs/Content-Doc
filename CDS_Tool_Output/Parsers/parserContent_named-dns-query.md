@@ -15,7 +15,7 @@ Name = named-dns-query
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """({time}\d\d-\w+-\d\d\d\d \d\d:\d\d:\d\d\.\d\d\d)""",
       """client\s*({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})#({src_port}\d+)(?:)""",
-      """query:\s*({query}[^\s]+\.({top_query}\w+\.(?i)(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za)))\s""",
+      """query:\s*({query}[^\s]+)\s""",
       """query:\s*({query}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
       """\sIN\s({query_type}\w{1,5})\s""",
       """\s+IN\s.+?\s+({query_flags}[^\d\w].*?)\s""",

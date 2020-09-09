@@ -14,7 +14,6 @@ Name = falcon-dns-request
       """({host}[\w\-.]+)\s+Skyformation""",
       """"timestamp":"({time}\d+)"""",
       """"DomainName":"({query}[^\"]+)"""",
-      """"DomainName":"({query}[^\"]+\.({top_query}\w+\.(?i)(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za)))"""",
       """"LocalAddressIP6":"({src_ip}[a-fA-F:\d.]+)""",
       """"RemoteAddressIP6":"({dest_ip}[a-fA-F:\d.]+)""",
       """"LocalAddressIP4":"({src_ip}[a-fA-F:\d.]+)""",

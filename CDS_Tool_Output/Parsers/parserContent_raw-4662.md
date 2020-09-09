@@ -1,7 +1,7 @@
 #### Parser Content
 ```Java
 {
-Name = raw-4662-1
+Name = raw-4662
   Vendor = Microsoft
   Product = Microsoft Windows
   Lms = Direct
@@ -15,7 +15,7 @@ Name = raw-4662-1
     """({time}\w+ \d\d \d\d:\d\d:\d\d \d\d\d\d)\s+""",
     """<TimeCreated SystemTime='({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d)\d+Z'/>""",
     """Computer(Name)?\s*\\*"?(=|:|>)\s*"*({host}[\w\.-]+)(\s|,|"|</Computer>|$)""",
-    """({host}[^\s=]+)\sMSWinEventLog""",
+    """\s({host}[^\s]+)\sMSWinEventLog""",
     """Security ID:\s*(|({user_sid}.+?))\s*Account Name:""",
     """Account Name:\s*(|({user}.+?))\s*Account Domain:""",
     """Account Domain:\s*(|({domain}.+?))\s*Logon ID:""",

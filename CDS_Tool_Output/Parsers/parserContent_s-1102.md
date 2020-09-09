@@ -9,7 +9,6 @@ Name = s-1102
     """\sComputerName=({host}[\w.\-]+)""",
     """({time}\d\d/\d\d/\d\d\d\d \d+:\d+:\d+ (am|AM|pm|PM))\s+"""
   ]
-  DupFields = [ "host->dest_host" ]
 }
 
 ${WinParserTemplates.raw-1102} {
@@ -21,31 +20,17 @@ ${WinParserTemplates.raw-1102} {
     """\sComputer=({host}[\w.\-]+)""",
     """\sTimeGenerated=({time}\d+)\s+"""
   ]
-  DupFields = [ "host->dest_host" ]
 }
-
-${WinParserTemplates.raw-1102} {
-  Name = xml-1102
-  Lms = Splunk
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSSZ"
-  Conditions = ["The audit log was cleared", "<EventID>1102" ]
-  Fields = ${WinParserTemplates.raw-1102.Fields} [
-    """SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\d\d\d\d\d\d\dZ)"""
-    """\s+Logon ID:\s+({logon_id}[^<]+)"""
-  ]
-}
-
 
 ${WinParserTemplates.raw-1102} {
   Name = raw-1102
   Lms = Splunk
   TimeFormat = "MMM dd HH:mm:ss yyyy"
-  Conditions = ["The audit log was cleared" ]
+  Conditions = [ "1102", "The audit log was cleared", "MSWinEventLog" ]
   Fields = ${WinParserTemplates.raw-1102.Fields} [
     """\s+(Information|Audit Success|Success Audit)\s+({host}[\w.\-]+)""",
     """\s+({time}\w+\s+\d+\s+\d\d:\d\d:\d\d\s+\d\d\d\d)\s+""",
   ]
-  DupFields = [ "host->dest_host" ]
 }
 
 {

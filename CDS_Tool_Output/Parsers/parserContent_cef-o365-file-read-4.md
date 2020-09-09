@@ -83,36 +83,145 @@ ${MSParserTemplates.o365-dlp-email-out} {
   Conditions = [ """"Workload""", """"ClientProcessName"""", """"Subject"""", """"SendAs"""" ]
 }
 
-${MSParserTemplates.cef-azure-event-hub}{
-  Name = cef-azure-event-hub-security
-  DataType = "alert"
-  Conditions = ["""ext_category=Security""", """Azure Resource"""]
-  Fields = ${MSParserTemplates.cef-azure-event-hub.Fields}[
-    """\W(ext_properties_eventProperties_userName|ext_properties_eventProperties_accountsUsedOnFailedSignInToHostAttempts_1_)=(|({user_fullname}.+?))(\s+\w+=|\s*$)""",
-    """\Wext_properties_eventProperties_compromisedEntity=(|({user_email}.+?))(\s+\w+=|\s*$)""",
-    """\Wext_properties_eventProperties_clientIPAddress=({src_ip}[a-fA-F\d.:]+)""",
-    """\Wext_properties_eventProperties_attackers_0_=({src_ip}[a-fA-F\d.:]+)""",
-    """\Wext_properties_eventProperties_severity=(|({alert_severity}.+?))(\s+\w+=|\s*$)""",
-    """\Wext_properties_operationId=(|({alert_id}.+?))(\s+\w+=|\s*$)""",
-    """\Wext_properties_eventProperties_previousIPAddress=(|({last_known_ip}.+?))(\s+\w+=|\s*$)""",
-    """eventName":"({alert_type}.*?[^\\])"""",
-    """\Wext_properties_eventProperties_malwareName=(|({alert_type}.+?))(\s+\w+=|\s*$)""",
-    """resultDescription":"({alert_name}.*?[^\\])"""",
-    """detailDescription":"({additional_info}.*?[^\\])""""
+{
+  Name = o365-inbox-activity
+  Vendor = Microsoft
+  Product = Office 365
+  Lms = Splunk
+  DataType = "app-activity"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
+  Conditions = ["""destinationServiceName=Office 365""" , """SkyFormation Cloud Apps Security""" , """permissions-updated""", """"ResultStatus"""" , """Add-MailboxPermission"""]
+  Fields = [
+     """"CreationTime":\s*"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
+     """flexString1=({activity}[^\s]*)\srequest""",
+     """\sby\s\[({user_email}[^\]]*)\]""",
+     """ObjectId":"({resource}[^"]*)"""",
+     """ResultStatus":"({outcome}[^"]*)"""",
+     """Name":"AccessRights","Value":"({additional_info}[^"]*)"""",
+     """destinationServiceName=(|({app}.+?))(\s+\w+=|\s*$)""",
+     """ClientIP":"\[?({src_ip}[^"\]]*)?\]?(:\d{5})""",
+     """duser=([^=]+\/)?({object}.+?)(\s+\w+=|\s*$)"""
+   ]
+}
+
+${MSParserTemplates.cef-microsoft-app-activity} {
+  Name = cef-microsoft-app-activity-1
+  Product = Office 365
+  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|authz-group-assigned|""" ]
+}
+
+${MSParserTemplates.cef-microsoft-app-activity} {
+  Name = cef-microsoft-app-activity-2
+  Product = Office 365
+  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|authz-group-created|""" ]
+}
+
+${MSParserTemplates.cef-microsoft-app-activity} {
+  Name = cef-microsoft-app-activity-3
+  Product = Office 365
+  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|authz-group-deleted|""" ]
+}
+
+${MSParserTemplates.cef-microsoft-app-activity} {
+  Name = cef-microsoft-app-activity-4
+  Product = Office 365
+  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|authz-group-renamed|""" ]
+}
+
+${MSParserTemplates.cef-microsoft-app-activity} {
+  Name = cef-microsoft-app-activity-5
+  Product = Office 365
+  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|authz-group-unassigned|""" ]
+}
+${MSParserTemplates.cef-microsoft-app-activity} {
+  Name = cef-microsoft-app-activity-6
+  Product = Office 365
+  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|authz-group-updated|""" ]
+}
+
+${MSParserTemplates.cef-microsoft-app-activity} {
+  Name = cef-microsoft-app-activity-7
+  Product = Office 365
+  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|integration-updated|""" ]
+}
+
+${MSParserTemplates.cef-microsoft-app-activity} {
+  Name = cef-microsoft-app-activity-8
+  Product = Office 365
+  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|permissions-updated|""" ]
+}
+
+${MSParserTemplates.cef-microsoft-app-activity} {
+  Name = cef-microsoft-app-activity-9
+  Product = Office 365
+  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|user-added|""" ]
+}
+
+${MSParserTemplates.cef-microsoft-app-activity} {
+  Name = cef-microsoft-app-activity-10
+  Product = Office 365
+  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|user-deleted|""" ]
+}
+
+${MSParserTemplates.cef-microsoft-app-activity} {
+  Name = cef-microsoft-app-activity-11
+  Product = Office 365
+  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|user-undeleted|""" ]
+}
+
+${MSParserTemplates.cef-microsoft-app-activity} {
+  Name = cef-microsoft-app-activity-12
+  Product = Office 365
+  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|user-updated|""" ]
+}
+
+${MSParserTemplates.cef-microsoft-app-activity} {
+  Name = cef-microsoft-app-activity-13
+  Product = Microsoft Azure
+  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Azure""", """|resource-downloaded|""" ]
+}
+
+${MSParserTemplates.cef-microsoft-app-activity} {
+  Name = cef-microsoft-app-activity-17
+  Product = Office 365
+  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|resource-content-updated|""" ]
+}
+
+${MSParserTemplates.cef-microsoft-app-activity} {
+  Name = cef-microsoft-app-activity-18
+  Product = Office 365
+  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|resource-created|""" ]
+}
+
+${MSParserTemplates.cef-microsoft-app-activity} {
+  Name = cef-microsoft-app-activity-19
+  Product = Office 365
+  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|resource-deleted|""" ]
+  Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields} [
+    """"ParentFolder":.+?"Path":"\\*({object}[^"]+)"""",
+    """"DestFolder":.+?"Path":"\\*({object}[^"]+)"""",
   ]
 }
 
-${MSParserTemplates.cef-azure-event-hub}{
-  Name = azure-event-hub-application-gateway-access-log
+{
+  Name = o365-inbox-rules
+  Vendor = Microsoft
+  Product = Office 365
+  Lms = Direct
   DataType = "app-activity"
-  Conditions = ["""ext_category=ApplicationGatewayAccessLog""" ]
-  Fields = ${MSParserTemplates.cef-azure-event-hub.Fields}[
-    """host":"({app}.*?[^\\])"""",
-    """operationName":"({activity}.*?[^\\])"""",
-    """originalHost":"({src_host}.*?[^\\])"""",
-    """userAgent":"({user_agent}.*?[^\\])"""",
-    """requestUri":"({request_uri}.*?[^\\])"""",
-    """recievedBytes":"({bytes}\d+)""",
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
+  Conditions = ["""Operation":"Set-Mailbox""" , """DeliverToMailboxAndForward""" ]
+  Fields = [
+    """"CreationTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""",
+    """Forward.+?Value":"(smtp:)?({target}[^"]+@({target_domain}[^"]+))""""
+    """"ResultStatus":"({outcome}[^"]+)"""",
+    """"ClientIP":"({src_ip}[^:]+):""",
+    """({activity}DeliverToMailboxAndForward)"""",
+    """msg=({additional_info}.+?)\srequest=""",
+    """"Value":"(smtp:)?.+?@({target_domain}[^"]+)"""",
+    """UserId":"({user_email}[^"\\\s@]+@({user_domain}[^"\\\s@]+))""",
+    """({app}Office 365)"""
+    """destinationServiceName=({app}.+?)\sdevice"""
   ]
 }
 ```

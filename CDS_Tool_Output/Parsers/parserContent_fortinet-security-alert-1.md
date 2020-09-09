@@ -24,6 +24,5 @@ Name = fortinet-security-alert-1
     """\Wcrlevel="*({alert_severity}[^"\s]+)(\s|")""",
     """\Waction="({action}[^"]+)"""",
   ]
-   DupFields = ["malware_url->process_name"]
 }
 ```

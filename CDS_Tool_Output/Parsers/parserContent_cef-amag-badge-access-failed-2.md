@@ -2,13 +2,11 @@
 ```Java
 {
 Name = cef-amag-badge-access-failed-2
-  Product = AMAG
     Conditions = [ """badge '""", """', u'Inactive', u'""" ]
   }
 
   ${AMAGParserTemplates.cef-amag-badge-access}{
     Name = cef-amag-badge-access-failed-3
-  Product = AMAG
     Conditions = [ """badge '""", """', u'Wrong Hand Template', u'""" ]
   }
 

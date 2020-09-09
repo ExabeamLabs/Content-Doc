@@ -176,27 +176,6 @@ ${NetskopeParserTemplates.cef-netskope-activity}{
 }
 
 ${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-file-operation-23
-  DataType = "file-operations"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"FileDeleted""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-file-operation-24
-  DataType = "file-operations"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"FolderDeleted""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-file-operation-25
-  DataType = "file-operations"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"PageViewedExtended"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
   Name = cef-netskope-app-activity-1
   DataType = "app-activity"
   Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"Dislike"""" ]
@@ -299,30 +278,6 @@ ${NetskopeParserTemplates.cef-netskope-activity}{
 }
 
 ${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = json-netskope-app-activity-17
-  DataType = "app-activity"
-  Conditions = [ """"nsdeviceuid": """", """"type": """", """"activity": "Upload"""" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = json-netskope-app-login
-  DataType = "app-login"
-  Conditions = [ """"appcategory": """, """"type": """, """"activity": "Login Successful"""" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = json-netskope-failed-app-login
-  DataType = "failed-app-login"
-  Conditions = [ """"appcategory": """, """"type": """, """"activity": "Login Failed"""" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = json-netskope-app-activity-18
-  DataType = "app-activity"
-  Conditions = [ """"appcategory": """, """"type": """, """"activity": """,  """"app": """ ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
   Name = cef-netskope-app-activity-18
   DataType = "app-activity"
   Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"View"""" ]
@@ -355,202 +310,6 @@ ${NetskopeParserTemplates.cef-netskope-activity}{
   DupFields = [ "activity->accesses", "object->file_name" ]
 }
 
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-23
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"Delete application password for user"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-24
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"Disable Strong Authentication"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-25
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"SearchQueryPerformed"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-26
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"Update StsRefreshTokenValidFrom Timestamp"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-41
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"ALERT_CENTER_GET_SIT_LINK"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-42
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"ALERT_CENTER_LIST_CHANGE"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-43
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"ALERT_CENTER_LIST_FEEDBACK"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-44
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"ALERT_CENTER_LIST_RELATED_ALERTS"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-27
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"ALERT_CENTER_VIEW"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-28
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"ARCHIVE_USER"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-29
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"CHANGE_GMAIL_SETTING"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-30
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"CREATE_ACCESS_LEVEL_V2"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-31
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"CREATE_GMAIL_SETTING"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-32
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"DELETE_ACCESS_LEVEL_V2"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-33
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"DELETE_GMAIL_SETTING"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-34
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"DRIVE_DATA_RESTORE"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-35
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"EMAIL_LOG_SEARCH"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-36
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"GROUP_MEMBERS_DOWNLOAD"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-37
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"Request Data Transfer"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-38
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"SECURITY_INVESTIGATION_QUERY"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-39
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"UPDATE_ACCESS_LEVEL_V2"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-40
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"UPDATE_GROUP_MEMBER"""" ]
-  DupFields = [ "activity->accesses", "object->file_name" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-45
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"PutObject"""" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-46
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"CopyObject"""" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-47
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"CreateMultipartUpload"""" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-48
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"UploadPart"""" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-49
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"DeleteObject"""" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-50
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"CompleteMultipartUpload"""" ]
-}
-
-${NetskopeParserTemplates.cef-netskope-activity}{
-  Name = cef-netskope-app-activity-51
-  DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":""""]
-}
-
 {
   Name = cef-netskope-alert-anomaly
   Vendor = Netskope
@@ -574,6 +333,5 @@ ${NetskopeParserTemplates.cef-netskope-activity}{
     """"risk_level":"({alert_severity}[^"]+)""",
     """"hostname":"({src_host}[^"]+)""",
   ]
-  DupFields = ["process->process_name"]
 }
 ```

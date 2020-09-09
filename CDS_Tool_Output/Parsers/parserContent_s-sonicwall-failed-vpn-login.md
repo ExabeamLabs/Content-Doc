@@ -2,7 +2,6 @@
 ```Java
 {
 Name = s-sonicwall-failed-vpn-login
-  Product = Sonicwall
   DataType = "failed-vpn-login"
   Conditions = [ """msg="User login failed""", "SSLVPN:", "id=sslvpn"]
   Fields = ${SonicwallParserTemplates.sonicwall-vpn-login.Fields} [
@@ -12,35 +11,30 @@ Name = s-sonicwall-failed-vpn-login
 
 ${SonicwallParserTemplates.sonicwall-vpn-login}{
   Name = s-sonicwall-vpn-start
-  Product = Sonicwall
   DataType = "vpn-start"
   Conditions = [ """msg="User login successful"""", "SSLVPN:" , "id=sslvpn"]
 }
 
 ${SonicwallParserTemplates.sonicwall-vpn-login}{
   Name = s-sonicwall-vpn-start-1
-  Product = Sonicwall
   DataType = "vpn-start"
   Conditions = [ """msg="NetExtender connected"""", "SSLVPN:", "id=sslvpn"]
 }
 
 ${SonicwallParserTemplates.sonicwall-vpn-login}{
   Name = s-sonicwall-vpn-end
-  Product = Sonicwall
   DataType = "vpn-end"
   Conditions = [ """msg="NetExtender disconnected""", "SSLVPN:", "id=sslvpn"]
 }
 
 ${SonicwallParserTemplates.sonicwall-vpn-login}{
   Name = s-sonicwall-vpn-end-1
-  Product = Sonicwall
   DataType = "vpn-end"
   Conditions = [ """msg="User logged out""", "SSLVPN:", "id=sslvpn"]
 }
 
 ${SonicwallParserTemplates.sonicwall-vpn-login}{
   Name = s-sonicwall-remote-logon
-  Product = Sonicwall
   DataType = "remote-logon"
   Conditions = [ """msg="RDP""", "SSLVPN:", "id=sslvpn"]
 }
@@ -48,7 +42,6 @@ ${SonicwallParserTemplates.sonicwall-vpn-login}{
   {
     Name = s-swipes-badge-access
     Vendor = Swipes
-  Product = Swipes
     Lms = Splunk
     DataType = "physical-access"
     TimeFormat = "yyyy/MM/dd HH:mm:ss.SSS"

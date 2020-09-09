@@ -7,16 +7,6 @@ Name = q-aruba-failed-nac-logon
 }
 
 ${HPEParserTemplates.q-aruba-nac-logon}{
-  Name = q-aruba-failed-nac-logon-1
-  DataType = "nac-failed-logon"
-  TimeFormat = "yyyy-MM-dd HH:mm:ss-SS"
-  Conditions = [ """ Failed Auth """, """Common.NAS-IP-Address=""" ]
-  Fields = ${HPEParserTemplates.q-aruba-nac-logon.Fields} [
-    """Common\.Request-Timestamp=({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d-\d+)"""
-]
-}
-
-${HPEParserTemplates.q-aruba-nac-logon}{
   Name = q-aruba-nac-logon-1
   DataType = "nac-logon"
   Conditions = [ """ Logs_Guest Access """, """Common.Request-Timestamp=""" ]
@@ -41,7 +31,7 @@ ${HPEParserTemplates.q-aruba-nac-logon}{
   Lms = QRadar
   DataType = "nac-logon"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSSZ"
-  Conditions = [ """ Radius Accounting """, """RADIUS.Acct-Timestamp=""" ]
+  Conditions = [ """ Logs_Radius Accounting """, """RADIUS.Acct-Timestamp=""" ]
   Fields = [
     """RADIUS\.Acct-Timestamp=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d(\.\d+)?[\+\-]\d+)""",
     """\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d,\d+ ({host}[\w\-.]+)""",

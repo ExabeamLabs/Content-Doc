@@ -23,6 +23,4 @@ _The following Parsers can be operationalized using log data from this data sour
 * [n-forwarded-cef-infoblox-dhcp](../Parsers/parserContent_n-forwarded-cef-infoblox-dhcp.md)
 * [s-infoblox-dhcp](../Parsers/parserContent_s-infoblox-dhcp.md)
 * [s-infoblox-dhcp-1](../Parsers/parserContent_s-infoblox-dhcp-1.md)
-* [s-infoblox-dhcp-2](../Parsers/parserContent_s-infoblox-dhcp-2.md)
-* [s-infoblox-dhcp-3](../Parsers/parserContent_s-infoblox-dhcp-3.md)
 * [s-infoblox-dns](../Parsers/parserContent_s-infoblox-dns.md)

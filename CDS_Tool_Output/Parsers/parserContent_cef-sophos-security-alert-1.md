@@ -1,40 +1,69 @@
 #### Parser Content
 ```Java
 {
-Name = cef-sophos-security-alert-19
-  Conditions = [ """CEF:""", """ext_type=Event::Endpoint::WindowsFirewall::Blocked""" ]
-}
-${SophosParserTemplates.cef-sophos-security-alert-1} {
-  Name = cef-sophos-security-alert-30
-  Conditions = [ """CEF:""", """ext_type=Event::Endpoint::Application::Blocked""" ]
+Name = cef-sophos-security-alert-10
+  Conditions = [ """CEF:""", """"type":"Event::Endpoint::CoreCleanFailed"""" ]
 }
 
+${SophosParserTemplates.cef-sophos-security-alert-1} {
+  Name = cef-sophos-security-alert-11
+  Conditions = [ """CEF:""", """"type":"Event::Endpoint::CorePuaCleanFailed"""" ]
+}
+
+${SophosParserTemplates.cef-sophos-security-alert-1} {
+  Name = cef-sophos-security-alert-12
+  Conditions = [ """CEF:""", """"type":"Event::Endpoint::HmpaCredGuard"""" ]
+}
+
+${SophosParserTemplates.cef-sophos-security-alert-1} {
+  Name = cef-sophos-security-alert-13
+  Conditions = [ """CEF:""", """"type":"Event::Endpoint::HmpaSafeBrowsing"""" ]
+}
+
+${SophosParserTemplates.cef-sophos-security-alert-1} {
+  Name = cef-sophos-security-alert-14
+  Conditions = [ """CEF:""", """"type":"Event::Endpoint::Threat::PuaDetected"""" ]
+}
+
+${SophosParserTemplates.cef-sophos-security-alert-1} {
+  Name = cef-sophos-security-alert-15
+  Conditions = [ """CEF:""", """"type":"Event::Endpoint::Threat::Detected"""" ]
+}
+
+${SophosParserTemplates.cef-sophos-security-alert-1} {
+  Name = cef-sophos-security-alert-16
+  Conditions = [ """CEF:""", """"type":"Event::Endpoint::UserAutoCreated"""" ]
+}
+
+  ${SSAParserTemplates.sophos-security-alert}{
+  Name = sophos-security-alert-1
+  Conditions = [ """Event::Endpoint::Threat::""" ]
+  }
+
+  ${SSAParserTemplates.sophos-security-alert}{
+  Name = sophos-security-alert-2
+  Conditions = [ """Event::Endpoint::Application::Detected""" ]
+  }
+
 {
-  Name = sophos-dlp-alert-2
+  Name = sophos-usb-insert
   Vendor = Sophos
   Product = Sophos Endpoint Protection
   Lms = Direct
-  DataType = "dlp-alert"
+  DataType = "usb-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """"Event::Endpoint::Application::Blocked"""", """"Controlled application blocked: """ ]
+  Conditions = [ """"Event::Endpoint::Device::""", """"name": "Peripheral """ ]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
-    """"location":"({host}[^"]+)""",
-    """"when":"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     """"rt":\s*"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
-    """"name":\s*"({alert_name}[^:]+):\s({target}[^"]+)""",
-    """"name":\s*"({additional_info}[^"]+)""",
-    """"type":\s*"({alert_type}[^"]+)""",
+    """"name":\s*"({activity}[^":]+):\s({device_type}[^"]+)""",
+    """"name":\s*"({activity_details}[^"]+)""",
     """"dhost":\s*"({src_host}[^"]+)""",
-    """"severity":\s*"({alert_severity}[^"]+)""",
     """"suser":\s*"(?:n\/a|({user_fullname}[^"\\,]+))"""",
-    """"suser":\s*"({user_lastname}[^",\s]+),\s*({user_firstname}[^,"\s]+)"""",
+    """"suser":\s*"(n\/a|({user_lastname}[^",\\\s]+),\s*({user_firstname}[^,"\\\s]+))""",
+    """"suser":\s*"(?:n\/a|({user}[^",\\\s]+))"""",
     """"suser":\s*"(({domain}[^\\",]+)\\+)?({user}[^",\\\/\s]+)"""",
-    """"source":"({user_fullname}[^",]+)"""",
-    """"source":"({user_lastname}[^",\s]+),\s*({user_firstname}[^,"\s]+)"""",
-    """\\"source_info\\"__ip=({src_ip}[A-Fa-f:\d.]+)""",
-    """"id":\s*"({alert_id}[^"]+)""",
+    """"id":\s*"({device_id}[^"]+)""",
   ]
-  DupFields = [ "host->src_host" ]
 }
 ```

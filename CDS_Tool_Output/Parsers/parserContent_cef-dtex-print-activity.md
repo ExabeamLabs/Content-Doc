@@ -3,7 +3,6 @@
 {
 Name = cef-dtex-print-activity
   Vendor = Dtex
-  Product = Dtex
   Lms = ArcSight
   DataType = "print-activity"
   TimeFormat = "epoch"

@@ -3,7 +3,6 @@
 {
 Name = s-examworkspace-file-read
   Vendor = ExamWorkspace
-  Product = ExamWorkspace
   Lms = Splunk
   DataType = "file-operations"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

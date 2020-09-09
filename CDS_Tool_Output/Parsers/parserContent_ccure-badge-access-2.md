@@ -15,43 +15,29 @@ Name = ccure-badge-access-2
       """"objectname2":"({location_door}[^"]+)"""",
       """<Card>({badge_id}.+?)</Card>""",
       """<StateCode>({outcome}.+?)</StateCode>""",
-      """<Direction.*?>({direction}.+?)</Direction>""",
     ]
   }
-
-${ProWatchParserTemplates.prowatch-badge-access}{
-  Name = prowatch-badge-access
-  Product = ProWatch
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """"evnt_dat":"""", """"evnt_descrp":"""", """"badge_employeeid":"""", """"cardstatus_descrp":"""" ]
-}
-
-${ProWatchParserTemplates.prowatch-badge-access}{
-  Name = prowatch-badge-access-1
-  Product = ProWatch
-  Conditions = [ """"BADGENO":""", """"EVNT_DESCRP":""", """"LOCATION":""" ]
-}
-
+  
   {
-    Name = timelox-badge-access
-    Vendor = TimeLox
-  Product = TimeLox
+    Name = prowatch-badge-access
+    Vendor = ProWatch
     Lms = Direct
     DataType = "physical-access"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-    Conditions = [ """"eventtime":"""", """"doorgroupname":"""", """"issued by":""" ]
+    Conditions = [ """"evnt_dat":"""", """"evnt_descrp":"""", """"badge_employeeid":"""", """"cardstatus_descrp":"""" ]
     Fields = [
       """exabeam_host=({host}[\w.\-]+)""",
-      """"doorgroupname":"({door_group_name}[^"]+)""",
-      """"eventtime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
-      """"registration no\.":({registration_no}\d+)""",
-      """"userid":"({user_id}[^"]+)""",
-      """"event":"({outcome}[^"]+)""",
-      """"issued by":"(n\/a|({user}[^"]+))""",
-      """"door":"({location_door}[^"]+)""",
-      """"blockinggroupname":"(n\/a|({blockinggroupname}[^"]+))""",
-      """"@version":"({version}[^"]+)""",
-      """"user group":"({user_group}[^"]+)"""
+      """"location":"\s*({location_building}[^"]+?)\s*"""",
+      """"descrp":"\s*({location_door}[^"]+?)\s*"""",
+      """"evnt_dat":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+      """"cardno":"({badge_id}\d+)""",
+      """"comp_name":"\s*({additional_info}[^"]+?)\s*"""",
+      """"evnt_descrp":"\s*({outcome}[^"]+?)\s*"""",
+      """"threat_lev":({threat_level}\d+)""",
+      """"fname":"\s*({first_name}[^"]+?)\s*"""",
+      """"lname":"\s*({last_name}[^"]+?)\s*"""",
+      """"badge_employeeid":"\s*({employee_id}[^"]+?)\s*"""",
+      """"cardstatus_descrp":"\s*({card_status}[^"]+?)\s*""""
     ]
   }
 ```

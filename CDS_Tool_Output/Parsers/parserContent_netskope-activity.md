@@ -20,7 +20,7 @@ Name = netskope-activity
     """"os"+: "(unknown|({os}[^"]+))"""",
     """"activity": "({activity}[^"]+)"""",
     """"from_user": "(?![^\s]+@[^\s]+)({user}[^"\s]+)"""",
-    """"from_user": "(?=[^\s]+@[^\s]+)({user_email}[^"\s@]+@({email_domain}[^"\s@]+))"""",
+    """"from_user": "(?=[^\s]+@[^\s]+)({user_email}[^"\s@]+@[^"\s@]+)"""",
     """"object": ["\\:, ]+({file_name}.+?)["\\:, ]+, """",
     """"object_type": "({file_type}[^"]+)"""",
     """"url": "({additional_info}[^"]+)""""

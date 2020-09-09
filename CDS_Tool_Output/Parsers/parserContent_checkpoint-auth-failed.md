@@ -8,6 +8,6 @@ Name = checkpoint-auth-failed
 
 ${CheckpointParserTemplates.checkpoint-firewall-1}{
   Name = checkpoint-network-connection-4
-  Conditions = [ """CheckPoint""", """"SMTP transparent proxy"""" ]
+  Conditions = [ """CheckPoint""", """product:"Security Gateway/Management"""" ]
 }
 ```

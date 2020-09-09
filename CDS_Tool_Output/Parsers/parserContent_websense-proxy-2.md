@@ -2,7 +2,7 @@
 ```Java
 {
 Name = websense-proxy-2
-  Vendor = Forcepoint
+  Vendor = Websense
   Product = Websense Secure Gateway
   Lms = Splunk
   DataType = "web-activity"

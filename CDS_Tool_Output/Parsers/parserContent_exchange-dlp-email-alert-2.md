@@ -10,23 +10,6 @@ ${ExchangeParserTemplates.exchange-dlp-email-alert} {
   Conditions = [ ""","Failed",""" ]
 }
 
-${ExchangeParserTemplates.exchange-dlp-email-alert} {
-  Name = exchange-dlp-email-alert-resolved
-  Conditions = [ ""","Resolved",""" ]
-}
-
-${ExchangeParserTemplates.exchange-dlp-email-alert} {
-  Name = exchange-dlp-alert
-  DataType = "dlp-alert"
-  Conditions = [ ""","FilteredAsSpam",""" ]
-}
-
-${ExchangeParserTemplates.exchange-dlp-email-alert} {
-  Name = exchange-dlp-alert-1
-  DataType = "dlp-alert"
-  Conditions = [ ""","Quarantined",""" ]
-}
-
 {
   Name = cef-dlp-email-out
   Vendor = Microsoft
@@ -41,7 +24,7 @@ ${ExchangeParserTemplates.exchange-dlp-email-alert} {
     """\sdvc=({host}[\d.]+)""",
     """\sdvchost=({host}[^\s]*)""",
     """\scs6=({orig_user}.+?)\s+\w+=""",
-    """\ssuser=({user_email}.+?)\s+\w+=""",
+    """\ssuser=({email_user}.+?)\s+\w+=""",
     """\sduser=({external_address}[^\s]+)""",
     """\sduser=[^@]+@({external_domain}[^\s;]+)""",
     """\sduser=({recipient}[^\s@;,"]+@[^\s@;,"]+)""",

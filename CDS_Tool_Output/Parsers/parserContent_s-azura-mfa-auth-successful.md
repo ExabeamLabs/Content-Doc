@@ -3,7 +3,6 @@
 {
 Name = s-azura-mfa-auth-successful
   Vendor = Azura
-  Product = Multi Factor Auth
   Lms = Splunk
   DataType = "authentication-successful"
   TimeFormat = "epoch"
@@ -21,7 +20,6 @@ Name = s-azura-mfa-auth-successful
 {
   Name = s-azura-mfa-auth-failed
   Vendor = Azura
-  Product = Multi Factor Auth
   Lms = Splunk
   DataType = "authentication-failed"
   TimeFormat = "epoch"
@@ -39,7 +37,6 @@ Name = s-azura-mfa-auth-successful
 {
   Name = s-azura-pri-auth-successful
   Vendor = Azura
-  Product = Multi Factor Auth
   Lms = Splunk
   DataType = "authentication-successful"
   TimeFormat = "epoch"
@@ -56,7 +53,6 @@ Name = s-azura-mfa-auth-successful
 {
   Name = s-azura-pri-auth-failed
   Vendor = Azura
-  Product = Multi Factor Auth
   Lms = Splunk
   DataType = "authentication-failed"
   TimeFormat = "epoch"
@@ -86,7 +82,6 @@ ${MFAParserTemplates.azure-mfa-auth}{
 {
   Name = cef-sonicwall-vpn-start
   Vendor = Sonicwall
-  Product = Sonicwall
   Lms = ArcSight
   DataType = "vpn-start"
   TimeFormat = "epoch"
@@ -102,6 +97,5 @@ ${MFAParserTemplates.azure-mfa-auth}{
     """\scs5Label=Portal\s.*cs5=({realm}.+?)\s+(\w+=|$)""",
     """\scs5=({realm}.+?)\s+(|\w+=.*)cs5Label=Portal\s""",
   ]
-  DupFields = ["user->account"]
 }
 ```

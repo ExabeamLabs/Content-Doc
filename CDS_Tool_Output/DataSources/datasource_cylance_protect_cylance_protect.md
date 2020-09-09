@@ -40,7 +40,6 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cylance-alert](../Parsers/parserContent_cylance-alert.md)
 * [cylance-alert-1](../Parsers/parserContent_cylance-alert-1.md)
 * [cylance-alert-2](../Parsers/parserContent_cylance-alert-2.md)
-* [cylance-alert-3](../Parsers/parserContent_cylance-alert-3.md)
 * [cylance-dlp-alert](../Parsers/parserContent_cylance-dlp-alert.md)
 * [cylance-protect-file-alert](../Parsers/parserContent_cylance-protect-file-alert.md)
 * [cylance-protect-security-alert](../Parsers/parserContent_cylance-protect-security-alert.md)

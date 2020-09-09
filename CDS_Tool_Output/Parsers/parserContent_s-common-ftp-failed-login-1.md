@@ -3,7 +3,6 @@
 {
 Name = s-common-ftp-failed-login-1
   Vendor = FTP
-  Product = FTP
   Lms = Splunk
   DataType = "failed-app-login"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
@@ -22,7 +21,6 @@ Name = s-common-ftp-failed-login-1
 {
   Name = s-common-ftp-upload
   Vendor = FTP
-  Product = FTP
   Lms = Splunk
   DataType = "file-operations"
   IsHVF = true
@@ -46,7 +44,6 @@ Name = s-common-ftp-failed-login-1
 {
   Name = s-common-ftp-upload-1
   Vendor = FTP
-  Product = FTP
   Lms = Splunk
   DataType = "file-operations"
   IsHVF = true
@@ -70,7 +67,6 @@ Name = s-common-ftp-failed-login-1
 {
   Name = s-common-ftp-download
   Vendor = FTP
-  Product = FTP
   Lms = Splunk
   DataType = "file-operations"
   IsHVF = true
@@ -94,7 +90,6 @@ Name = s-common-ftp-failed-login-1
 {
   Name = s-common-ftp-download-1
   Vendor = FTP
-  Product = FTP
   Lms = Splunk
   DataType = "file-operations"
   IsHVF = true
@@ -118,7 +113,6 @@ Name = s-common-ftp-failed-login-1
 {
   Name = s-common-ftp-delete
   Vendor = FTP
-  Product = FTP
   Lms = Splunk
   DataType = "file-operations"
   IsHVF = true
@@ -141,7 +135,6 @@ Name = s-common-ftp-failed-login-1
 {
   Name = s-common-ftp-delete-1
   Vendor = FTP
-  Product = FTP
   Lms = Splunk
   DataType = "file-operations"
   IsHVF = true

@@ -9,21 +9,10 @@ Name = cef-mbmc-security-alert-detection
     Name = cef-mbmc-security-alert-ipblock
     Conditions = [ """|Malwarebytes|MBMC|""", """|IPBLOCK|""" ]
   }
-  
-  ${MBMCParserTemplates.cef-malwarebytes-security-alert} {
-    Name = cef-mbmc-security-alert-detection-1
-    Conditions = [ """CEF:""", """|Malwarebytes|Malwarebytes""", """|Detection|""" ]
-    Fields = ${MBMCParserTemplates.cef-malwarebytes-security-alert.Fields} [
-      """msg=({additional_info}.+?)\s*\w+=""",
-      """filePath=.*?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(:({dest_port}\d+))?)"""
-    ]
-    DupFields = ["src_host->host"]
-  }
 
 {
   Name = watchguard-web-activity
   Vendor = Watchguard
-  Product = Watchguard
   Lms = Direct
   DataType = "web-activity"
   IsHVF = true

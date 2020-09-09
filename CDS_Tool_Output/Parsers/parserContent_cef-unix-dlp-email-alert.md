@@ -3,7 +3,6 @@
 {
 Name = cef-unix-dlp-email-alert
   Vendor = Unix
-  Product = Unix
   Lms = Splunk
   DataType = "dlp-email-alert"
   TimeFormat = "epoch"
@@ -29,20 +28,20 @@ Name = cef-unix-dlp-email-alert
 }
 
 {
-  Name = unix-dlp-email-out
-  Vendor = Unix
-  Product = Unix
-  Lms = Direct
-  DataType = "dlp-email-alert"
+  Name = s-infoblox-dhcp-1
+  Vendor = Infoblox
+  Product = Infoblox
+  Lms = Splunk
+  DataType = "dhcp"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ """ sSMTP[""", """]: Sent mail""" ]
+  Conditions = [ " dhcpd[", ": DHCPACK " ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """Sent mail for ({sender}[^\s]+)""",
-    """outbytes=({bytes}\d+)""",
-    """uid=({email_id}[^\s]+)""",
-    """username=({user}[^\s]+)"""
+    """({host}\S+) dhcpd\[""",
+    """: DHCPACK to ({dest_ip}[A-Fa-f:\d.]+) \(({dest_mac}[^\s\)]+)\)""",
+    """: DHCPACK on ({dest_ip}[A-Fa-f:\d.]+) to ({dest_mac}[^\s]+) \(({dest_host}[\w\-.]+)\)""",
   ]
+  DupFields = [ "dest_host->user" ]
 }
 ```

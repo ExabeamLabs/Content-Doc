@@ -3,7 +3,6 @@
 {
 Name = rdirectory-password-change
   Vendor = Namespace rDirectory
-  Product = Namespace rDirectory
   Lms = Direct
   DataType = "password-change"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

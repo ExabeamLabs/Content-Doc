@@ -3,7 +3,6 @@
 {
 Name = ipsec-vpn-user
   Vendor = SecureNet
-  Product = SecureNet
   Lms = Direct
   DataType = "vpn-user"
   TimeFormat = "yyyy:MM:dd-HH:mm:ss"
@@ -16,7 +15,6 @@ Name = ipsec-vpn-user
     """\Wsrcip="({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
     """\Wvirtual_ip="({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""""
   ]
-  DupFields = ["user->account"]
 }
 
 {
@@ -33,7 +31,7 @@ Name = ipsec-vpn-user
     """\[({host}[\w\-.]+)\]\s*Event Type:""",
     """\sEvent Name:\s*({activity}[^,]+),""",
     """\sMessage:.+?[^,:]+(Assigned|Changed):\s*({additional_info}[^:,;]+)""",
-    """\sUser:\s*(|({user_fullname}.+?))\s*\(({user_email}[^@\s\)]+@({email_domain}[^@\s\)]+))\)""",
+    """\sUser:\s*(|({user_fullname}.+?))\s*\(({user_email}[^@\s\)]+@[^@\s\)]+)\)""",
     """\sSource IP:\s*({src_ip}[a-fA-F\d\.:]+)""",
     """\sProvider:\s*({login_type}[^,]+)""",
     """\sDevice:\s*({object}[^;]+)""",

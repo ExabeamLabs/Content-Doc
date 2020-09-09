@@ -14,19 +14,9 @@ Name = s-pan-incident-alert
       """\Wpolicy_rule_name\s*=\s*"({alert_name}[^"]+)"""",
       """\Witem_type\s*=\s*"({item_type}[^"]+)"""",
       """\Witem_name\s*=\s*"({item_name}[^"]+)"""",
-      """\Witem_owner\s*=\s*"({user_firstname}[^",\s]+)\s+({user_lastname}[^",\s]+)"""",
-      """\Witem_owner\s*=\s*"({user_lastname}[^",\s]+)\s*\,\s*({user_firstname}[^",\s]+)"""",
-      """\Witem_owner\s*=\s*"({user}[^",\s@]+)"""",
+      """\Witem_owner\s*=\s*"({user}({user_firstname}[^",\s]+)\s+({user_lastname}[^",\s]+))"""",
+      """\Witem_owner\s*=\s*"({user}({user_lastname}[^",\s]+)\s*\,\s*({user_firstname}[^",\s]+))"""",
       """\Wcloud_app_instance\s*=\s*"({alert_type}[^"]+)"""",
-      """"policy_rule_name":"({alert_name}[^"]+)""",
-      """"item_type":"({item_type}[^"]+)""",
-      """"item_name":"({item_name}[^"]+)""",
-      """"item_owner":"({user_firstname}[^",\s]+)\s+({user_lastname}[^",\s]+)"""",
-      """"item_owner":"({user}[^",\s@]+)"""",
-      """"cloud_app_instance":"({alert_type}[^"]+)""",
-      """"item_creator":"(|({item_creator}[^"]+))"""",
-      """"item_creator_email":"(|({user_email}[^"]+))"""",
-      """"collaborators":"(|({collaborators}[^"]+))"""",
     ]
     SOAR {
     IncidentType = "dlp"

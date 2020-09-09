@@ -40,29 +40,46 @@ Name = cef-connectra-vpn-changeip
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(\s+[\w\.:]+=|$)""",
     """\smsg=({failure_reason}.+?)(\s+[\w\.:]+=|$)""",
   ]
-  DupFields = [ "host->dest_host" , "user->account"]
+  DupFields = [ "host->dest_host" ]
 }
 
 {
-  Name = checkpoint-vpn-login-2
+  Name = cef-connectra-vpn-logout
+  Vendor = Check Point
+  Product = Check Point Security Gateway
+  Lms = ArcSight
+  DataType = "vpn-end"
+  TimeFormat = "epoch"
+  Conditions = [ """|Check Point|Connectra|""", """|logout|""" ]
+  Fields = [
+    """\srt=({time}\d+)(\s+[\w\.:]+=|$)""",
+    """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(\s+[\w\.:]+=|$)""",
+    """\sdvchost=({host}.+?)(\s+[\w\.:]+=|$)""",
+    """\sduser=({user}.+?)(\s+[\w\.:]+=|$)""",
+    """\sduser=[^=]+?\(({user}[^\(\)]+)\)(\s+[\w\.:]+=|$)""",
+    """\sshost=({src_host}.+?)(\s+[\w\.:]+=|$)""",
+    """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(\s+[\w\.:]+=|$)""",
+    """\sad.duration=({session_duration}.+?)(\s+[\w\.:]+=|$)""",
+  ]
+  DupFields = [ "host->dest_host" ]
+}
+
+{
+  Name = connectra-vpn-login
   Vendor = Check Point
   Product = Check Point Security Gateway
   Lms = Direct
-  DataType = "vpn-login"
-  TimeFormat = "epoch_sec"
-  Conditions = [ """product=Mobile Access""" , """cvpn_category""" , """user="""]
+  DataType = "vpn-start"
+  TimeFormat = "ddMMMyyyy HH:mm:ss"
+  Conditions = [ """|product=Connectra|""", """|event_type=Login|""", """|status=Success|""" ]
   Fields = [
-    """\Wtime=({time}\d+)""",
-    """\Whostname=({host}[\w\-.]+)""",
-    """\Waction=({activity}[^\|]+?)\s*\|""",
-    """\Wstatus=({outcome}[^\|]+?)\s*\|""",
-    """\Wuser=({user_lastname}[^,\|\(\)]+),\s*({user_firstname}[^,\|\(\)]+?)\s*\(({user}[^\|\s\)]+)\)\s*\|""",
-    """\Wreason=({failure_reason}[^\|]+?)\s*\|""",
-    """\Wservice=({dest_port}\d+)\s*\|""",
-    """\Whost_ip=({dest_ip}[A-Fa-f:\d.]+)""",
-    """\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
-    """\Wos_name=({os}[^\|]+?)\s*\|""",
-    """\Wlogin_option=({auth_type}[^\|]+?)\s*\|""",
+    """\|(U|u)ser=({user_firstname}[^,@\|]+),\s*({user_lastname}[^@\|]+)@({domain}[^\s\|]+)\s*\(({user}[^\)\|]+)\)\s*(\||$)""",
+    """\|user_dn=({user_ou}[^\|]+)\|""",
+    """\|user_group=({realm}[^\|]+)""",
+    """\|time=({time}\d+\w+\d\d\d\d \d+:\d+:\d+)""",
+    """\|src=(?:({src_ip}[a-fA-F\d.:]+)|({src_host}[\w.\-]+))\|""",
+    """\|office_mode_ip=({host}[a-fA-F\d.:]+)""",
+    """\|Hostname=({host}[^\|]+)\|"""
   ]
 }
 ```

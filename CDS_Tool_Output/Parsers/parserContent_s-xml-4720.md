@@ -19,6 +19,5 @@ Name = s-xml-4720
     """<Data Name='SubjectDomainName'>(?=\w)({domain}[^<]+)</Data>""",
     """<Data Name='SubjectLogonId'>(?=\w)({logon_id}[^<]+)</Data>""",
   ]
-  DupFields = ["host->dest_host"]
 }
 ```

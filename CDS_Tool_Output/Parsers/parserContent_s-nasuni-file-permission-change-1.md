@@ -2,37 +2,30 @@
 ```Java
 {
 Name = s-nasuni-file-permission-change-1
-  Product = Nasuni
     Conditions = [ """,CIFS,""", """,Set Extended Attributes,""" ]
   }
   ${NasuniParserTemplates.s-nasuni-file-operations}{
     Name = s-nasuni-file-permission-change-2
-  Product = Nasuni
     Conditions = [ """,CIFS,""", """,Set ACL,""" ]
   }
   ${NasuniParserTemplates.s-nasuni-file-operations}{
     Name = s-nasuni-file-write
-  Product = Nasuni
     Conditions = [ """,CIFS,""", """,Write to File,""" ]
   }
   ${NasuniParserTemplates.s-nasuni-file-operations}{
     Name = s-nasuni-file-write-1
-  Product = Nasuni
     Conditions = [ """,CIFS,""", """,Rename,""" ]
   }
   ${NasuniParserTemplates.s-nasuni-file-operations}{
     Name = s-nasuni-file-write-2
-  Product = Nasuni
     Conditions = [ """,CIFS,""", """,Truncate File,""" ]
   }
   ${NasuniParserTemplates.s-nasuni-file-operations}{
     Name = s-nasuni-file-delete
-  Product = Nasuni
     Conditions = [ """,CIFS,""", """,Delete File,""" ]
   }
   ${NasuniParserTemplates.s-nasuni-file-operations}{
     Name = s-nasuni-file-delete-1
-  Product = Nasuni
     Conditions = [ """,CIFS,""", """,Delete Directory,""" ]
   }
 

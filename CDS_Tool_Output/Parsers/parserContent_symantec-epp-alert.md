@@ -21,15 +21,14 @@ Name = symantec-epp-alert
          """\d\d:\d\d:\d\d,\s*({alert_severity}Minor|Info|Critical|Major|Security risk found|Virus found)""",
          """Risk Level:\s*({alert_severity}[^,]+)""",
          """Occurrences:\s*\d+,({malware_url}[^,]+)""",
-         """User(\s+Name)?:\s*(SYSTEM|({user}[^,]+))""",
+         """User:\s*({user}[^,]+)""",
          """Computer name:\s*(?:0+|({src_host}[^,]+))""",
          """Source computer:\s*(?:0+|({dest_host}[^,]+))?,""",
          """Source IP:\s*({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
          """Confidence:\s*({additional_info}[^,]+)""",
          """Actual action:\s*({outcome}[^,]+)""",
          """Application hash:\s*(|({file_hash}[^,]+)),""",
-         """Hash type:\s*(|({hash_type}[^,]+)),""",
-         """Application name:\s"*({process_name}[^"]+)""", 
+         """Hash type:\s*(|({hash_type}[^,]+)),"""
 	]
   SOAR {
     IncidentType = "malware"

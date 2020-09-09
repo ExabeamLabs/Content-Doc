@@ -2,14 +2,12 @@
 ```Java
 {
 Name = s-sonicwall-vpn-end-1
-  Product = Sonicwall
   DataType = "vpn-end"
   Conditions = [ """msg="User logged out""", "SSLVPN:", "id=sslvpn"]
 }
 
 ${SonicwallParserTemplates.sonicwall-vpn-login}{
   Name = s-sonicwall-remote-logon
-  Product = Sonicwall
   DataType = "remote-logon"
   Conditions = [ """msg="RDP""", "SSLVPN:", "id=sslvpn"]
 }
@@ -17,7 +15,6 @@ ${SonicwallParserTemplates.sonicwall-vpn-login}{
   {
     Name = s-swipes-badge-access
     Vendor = Swipes
-  Product = Swipes
     Lms = Splunk
     DataType = "physical-access"
     TimeFormat = "yyyy/MM/dd HH:mm:ss.SSS"

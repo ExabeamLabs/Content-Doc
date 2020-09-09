@@ -25,7 +25,6 @@ Name = fortinet-netflow
      """\Wlast_switched"*:"*\s*({time_end}[^",]*?)\s*("|,)""",
      """\Wpackets"*:\s*({packets}\d+)""",
      """\Wtraffic_locality"*:"*\s*(|({locality}[^",]*?))\s*("|,|$)""",
-     """"src_hostname":"({src_host}[^"]+)""",
   ]
 }
 

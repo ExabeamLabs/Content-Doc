@@ -19,9 +19,7 @@ Name = wls-4720
     """SubjectLogonId="+({logon_id}[^"]+)"""",
     """TargetUserName="+({account_name}[^"]+)"""",
     """TargetDomainName="+({account_domain}[^"]+)"""",
-    """TargetSid="+({account_id}[^"]+)"""",
-    """Enabled.*?'({user_type}[^']+)"""
+    """TargetSid="+({account_id}[^"]+)""""
   ]
-  DupFields = ["host->dest_host"]
 }
 ```

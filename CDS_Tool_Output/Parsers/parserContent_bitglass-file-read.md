@@ -3,7 +3,6 @@
 {
 Name = bitglass-file-read
   Vendor = BitGlass
-  Product = BitGlass
   Lms = Direct
   DataType = "file-read"
   IsHVF = true

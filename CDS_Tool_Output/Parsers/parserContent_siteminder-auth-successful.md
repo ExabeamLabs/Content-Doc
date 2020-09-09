@@ -3,7 +3,6 @@
 {
 Name = siteminder-auth-successful
   Vendor = SiteMinder
-  Product = SiteMinder
   Lms = Direct
   DataType = "authentication-successful"
   TimeFormat = "dd/MMM/yyyy:HH:mm:ss Z"
