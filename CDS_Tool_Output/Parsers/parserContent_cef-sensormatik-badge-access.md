@@ -3,7 +3,6 @@
 {
 Name = cef-sensormatik-badge-access
   Vendor = Sensormatik
-  Product = Sensormatik
   Lms = ArcSight
   DataType = "physical-access"
   TimeFormat = "epoch"

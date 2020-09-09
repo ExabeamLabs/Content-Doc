@@ -1,131 +1,65 @@
 #### Parser Content
 ```Java
 {
-Name = cef-sophos-security-alert-20
-  Conditions = [ """CEF:""", """ext_type=Event::Endpoint::UserAutoCreated""" ]
-   Fields=${SophosParserTemplates.cef-sophos-security-alert-1.Fields}[
-    """"name"*:"*({alert_name}[^":]+)"""
-  ]
-}
-${SophosParserTemplates.cef-sophos-security-alert-1} {
-  Name = cef-sophos-security-alert-21
-  Conditions = [ """CEF:""", """ext_type=Event::Endpoint::UpdateSuccess""" ]
-}
-${SophosParserTemplates.cef-sophos-security-alert-1} {
-  Name = cef-sophos-security-alert-22
-  Conditions = [ """CEF:""", """ext_type=Event::Endpoint::UpdateFailure""" ]
-}
-${SophosParserTemplates.cef-sophos-security-alert-1} {
-  Name = cef-sophos-security-alert-23
-  Conditions = [ """CEF:""", """ext_type=Event::Endpoint::ServiceRestored""" ]
-}
-${SophosParserTemplates.cef-sophos-security-alert-1} {
-  Name = cef-sophos-security-alert-24
-  Conditions = [ """CEF:""", """ext_type=Event::Endpoint::ServiceNotRunning""" ]
-}
-${SophosParserTemplates.cef-sophos-security-alert-1} {
-  Name = cef-sophos-security-alert-25
-  Conditions = [ """CEF:""", """ext_type=Event::Endpoint::SavEnabled""" ]
-}
-${SophosParserTemplates.cef-sophos-security-alert-1} {
-  Name = cef-sophos-security-alert-26
-  Conditions = [ """CEF:""", """ext_type=Event::Endpoint::SavDisabled""" ]
-}
-${SophosParserTemplates.cef-sophos-security-alert-1} {
-  Name = cef-sophos-security-alert-27
-  Conditions = [ """CEF:""", """ext_type=Event::Endpoint::Device::AlertedOnly""" ]
-}
-${SophosParserTemplates.cef-sophos-security-alert-1} {
-  Name = cef-sophos-security-alert-28
-  Conditions = [ """CEF:""", """ext_type=Event::Endpoint::Denc::EncryptionSuspendedEvent""" ]
-}
-${SophosParserTemplates.cef-sophos-security-alert-1} {
-  Name = cef-sophos-security-alert-29
-  Conditions = [ """CEF:""", """ext_type=Event::Endpoint::Application::Detected""" ]
+Name = cef-sophos-security-alert-2
+  Conditions = [ """|sophos|sophos central|""", """|Event::Endpoint::WebFilteringBlocked|""" ]
 }
 
-${SophosParserTemplates.cef-sophos-dlp-alert-1}{
-  Name = cef-sophos-dlp-alert-1
-  Conditions = [ """CEF:""", """"Event::Endpoint::WindowsFirewall::Blocked"""", """"group":"ENDPOINT_FIREWALL"""" ]
+${SophosParserTemplates.cef-sophos-security-alert} {
+  Name = cef-sophos-security-alert-3
+  Conditions = [ """|sophos|sophos central|""", """|Event::Endpoint::Threat::CommandAndControlDetected|""" ]
 }
 
-${SophosParserTemplates.cef-sophos-dlp-alert-1}{
-  Name = cef-sophos-security-alert-32
-  DataType = "alert"
-  Conditions = [ """CEF:""", """"Event::Endpoint::CorePua""", """"group":"PUA"""" ]
+${SophosParserTemplates.cef-sophos-security-alert} {
+  Name = cef-sophos-security-alert-4
+  Conditions = [ """|sophos|sophos central|""", """|Event::Endpoint::CoreDetection|""" ]
 }
 
-${SophosParserTemplates.cef-sophos-dlp-alert-1}{
-  Name = cef-sophos-dlp-alert-8
-  Conditions = [ """CEF:""", """"Event::Endpoint::Core""" ]
+${SophosParserTemplates.cef-sophos-security-alert} {
+  Name = cef-sophos-security-alert-5
+  Conditions = [ """|sophos|sophos central|""", """|Event::Endpoint::HmpaExploitPrevented|""" ]
 }
 
-${SophosParserTemplates.cef-sophos-dlp-alert-1}{
-  Name = cef-sophos-dlp-alert-9
-  Conditions = [ """CEF:""", """"Event::Endpoint::Enc::""" ]
-}
-
-${SophosParserTemplates.cef-sophos-dlp-alert-1}{
-  Name = cef-sophos-dlp-alert-10
-  Conditions = [ """CEF:""", """"Event::Endpoint::HmpaCryptoGuard""" ]
-}
-
-${SophosParserTemplates.cef-sophos-dlp-alert-1}{
-  Name = cef-sophos-dlp-alert-11
-  Conditions = [ """CEF:""", """"Event::Endpoint::Registered""" ]
-}
-
-${SophosParserTemplates.cef-sophos-dlp-alert-1}{
-  Name = cef-sophos-dlp-alert-12
-  Conditions = [ """CEF:""", """"Event::Endpoint::Reprotected""" ]
+${SophosParserTemplates.cef-sophos-security-alert} {
+  Name = cef-sophos-security-alert-6
+  Conditions = [ """|sophos|sophos central|""", """|Event::Endpoint::HmpaBehaviourPrevented|""" ]
 }
 
 {
-  Name = cef-sophos-dlp-alert-13
-  Vendor = Sophos EPP
-  Product = Sophos Endpoint Protection
+  Name = cef-sophos-web-activity
+  Vendor = Sophos
+  Product = Sophos XG Firewall
   Lms = ArcSight
-  DataType = "dlp-alert"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [  """CEF:""", """Event::Endpoint::DataLossPreventionAutomaticallyAllowed""", """group=DATA_LOSS_PREVENTION""" ]
+  DataType = "web-activity"
+  IsHVF = true
+  TimeFormat = "epoch"
+  Conditions = [ """log_type="Content Filtering"""", """ url="""", """status_code""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
-    """"location":"({host}[\w\-.]+)"""",
-    """({host}[\w\-.]+)\s+Skyformation""",
-    """"when":"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
-    """"type":"({alert_type}Event[^"]+)""",
-    """"severity":"({alert_severity}[^"]+)""",
-    """"id":"({alert_id}[^"]+)""",
-    """"location":"({src_host}[^"]+)""",
-    """"name":\s*"({alert_name}.+?)\s+(\w+:)"""
-    """"name":\s*"({additional_info}[^"]+)"""
-    """"name".+?Username:\s*(({domain}[^\\]+)\\+)?({user}[^\s\\]+)\s""",
-    """"name".+?Rule names:\s*′({rule}[^′]+)""",
-    """"name".+?User action:\s*({activity}.+?)\s+(\w+\s+\w+:)""",
-    """"name".+?Application Name:\s+({app}.+?)\s+Data Control action:""",
-    """"name".+?Data Control action:\s*({outcome}[^\s]+)\s""",
-    """"name".+?File type:\s*({file_type}.+?)\s+File size:\s*({bytes}\d+)\s""",
-    """"name".+?Source path:\s*({target}.+?)\s*(\w+\s+\w+:|")"""
-  ]
-}
-
-{
-  Name = cef-sophos-usb-insert-1
-  Vendor = Sophos EPP
-  Product = Sophos Endpoint Protection
-  Lms = ArcSight
-  DataType = "usb-insert"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """CEF:""", """"Event::Endpoint::Device::AlertedOnly"""", """"Peripheral allowed:""" ]
-  Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
-    """"location":"({host}[\w\-.]+)"""",
-    """"when":"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
-    """"type":"({additional_info}[^"]+)""",
-    """"name":"({activity_details}({activity}Peripheral allowed):\s*({device_type}[^"]+))""",
-    """"source":"(n\/a|({user_fullname}[^"\\\(\),]+))"""",
-    """"source":"(n\/a|({user_lastname}[^",\s]+),\s*({user_firstname}[^,"\s]+))""",
-    """"source":"(n\/a|(([^\\\s"]*\s+[^\\"]*|({domain}[^\\"]+))\\+)?({user}[^\\\s"]+))"""",
+    """\Wrt=({time}\d+)""",
+    """\Wdate=({time}\d+-\d+-\d+\s*time=\d+:\d+:\d+)""",
+    """\Wdevice_name="({host}[\w\-.]+)""",
+    """\Wdvc=({host}[A-Fa-f:\d.]+)""",
+    """\Wdvchost=({host}[\w\-.]+)""",
+    """\Wlog_subtype="({action}[^"]+)"""",
+    """\Wuser_name="({user}[^\s@"]+)"""",
+    """\Wuser_name="({user_email}[^\s@"]+@[^\s@"]+)"""",
+    """\Wcategory="(None|({category}[^"]+))"""",
+    """\Wurl="(|({full_url}(({protocol}[^:\\\/\s"]+):[\\\/]+)?({web_domain}[^\\\/\s:"]+)(:\d+)?({uri_path}\/[^\s\?"]*)?({uri_query}\?[^"\s]*)?))"""",
+    """\Wsrc(_ip)?=({src_ip}[A-Fa-f:\d.]+)""",
+    """\Wdst(_ip)?=({dest_ip}[A-Fa-f:\d.]+)""",
+    """\W(spt|src_port)=({src_port}\d+)""",
+    """\W(dpt|dst_port)=({dest_port}\d+)""",
+    """\Wdhost=({dest_host}[\w\-.]+)""",
+    """\Wprotocol="({protocol}[^"]+)"""",
+    """\W(in|recv_bytes)=({bytes_in}\d+)""",
+    """\W(out|sent_bytes)=({bytes_out}\d+)""",
+    """\Wuser_agent\\?="({user_agent}[^"]+)"""",
+    """\Wuser_agent\\?="[^"]*?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)""",
+    """\Wuser_agent\\?="[^"]*?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
+    """\Wstatus_code\\?="({result_code}\d+)""",
+    """\W(dntdom|domain)=({web_domain}[^\s]+)""",
+    """\W(dntdom|domain)=[^\s=]*?({top_domain}(?!(?:\d+\.){3}\d+)[^\.\s\/:]+(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|site|aws))+(\s|\/|$))[^\s\/]+)""",
+    """\W(fname|file_name)="?(|({file_name}[^"]+?))"?\s+(\w+=|$)""",
   ]
 }
 ```

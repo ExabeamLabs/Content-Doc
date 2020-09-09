@@ -19,9 +19,8 @@ Name = cef-bit9-epp-alert
     """dvchost=([^\\]+\\+)?({host}[^\s]+)\s+\w+=""",
     """filePath=({malware_url}.+?)\s+\w+=""",
     """filePath=({malware_url_path}\w+:\/\/.+?)\s+\w+=""",
-    """filePath=(?!\w+:\/\/)({process}.+?)\s+\w+=""",
+    """filePath=(?!\w+:\/\/)({file_path}.+?)\s+\w+=""",
     """msg=({additional_info}.+?)\s+\w+=""",
-    """fname=({process_name}.*?)\s\w+=""",
   ]
   SOAR {
       IncidentType = "malware"

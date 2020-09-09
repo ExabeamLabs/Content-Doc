@@ -19,8 +19,7 @@ Name = mcafee-siem-4723
       """"UserIDSrc":"({user}[^"]+)""",
       """"Security_ID":"({user_sid}[^"]+)""",
       """"Source_Logon_ID":"({logon_id}[^"]+)""",
-      """"UserIDDst":"({target_user}[^"]+)""",
-      """"action":"({outcome}[^"]+)"""
+      """"UserIDDst":"({target_user}[^"]+)"""
     ]
     DupFields = [ "host->dest_host" ]
   }

@@ -3,7 +3,6 @@
 {
 Name = mobileiron-emm-alert
   Vendor = MobileIron EMM
-  Product = MobileIron EMM
   Lms = Direct
   DataType = "alert"
   TimeFormat = "MMM dd',' yyyy',' HH:mm"

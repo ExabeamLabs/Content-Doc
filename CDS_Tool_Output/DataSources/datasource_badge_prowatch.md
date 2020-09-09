@@ -28,7 +28,5 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [cef-prowatch-badge-access](../Parsers/parserContent_cef-prowatch-badge-access.md)
 * [prowatch-badge-access](../Parsers/parserContent_prowatch-badge-access.md)
-* [prowatch-badge-access-1](../Parsers/parserContent_prowatch-badge-access-1.md)
 * [q-prowatch-badge-access](../Parsers/parserContent_q-prowatch-badge-access.md)
 * [s-prowatch-badge-access](../Parsers/parserContent_s-prowatch-badge-access.md)
-* [s-prowatch-badge-access-2](../Parsers/parserContent_s-prowatch-badge-access-2.md)

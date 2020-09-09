@@ -44,4 +44,3 @@ _The following Parsers can be operationalized using log data from this data sour
 * [exa-app-login](../Parsers/parserContent_exa-app-login.md)
 * [exa-cor-rule-alerts](../Parsers/parserContent_exa-cor-rule-alerts.md)
 * [exa-failed-app-login](../Parsers/parserContent_exa-failed-app-login.md)
-* [exa-log-source-added](../Parsers/parserContent_exa-log-source-added.md)

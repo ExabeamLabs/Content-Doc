@@ -3,7 +3,6 @@
 {
 Name = leap-app-activity-1
   Vendor = LEAP
-  Product = LEAP
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyyMMdd:HH.mm.ss"

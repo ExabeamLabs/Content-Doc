@@ -35,7 +35,6 @@ Name = q-process-alert-carbonblack
     """parent_guid=({parent_process_guid}.+?)\s*(\w+=|$)""",
     """parent_name=({parent_process}.+?)\s*(\w+=|$)""",
     """cmdline=({command_line}.+?)\s*(\w+=|$)""",
-    """host_type=(|({host_type}.+?))\s*(\w+=|$)""",
   ]
   DupFields = [ "directory->process_directory" ]
   SOAR {

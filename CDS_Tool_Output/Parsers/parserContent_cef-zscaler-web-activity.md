@@ -3,7 +3,6 @@
 {
 Name = cef-zscaler-web-activity
   Vendor = Zscaler
-  Product = NSS
   Lms = ArcSight
   DataType = "web-activity"
   IsHVF = true

@@ -4,7 +4,7 @@
 Name = xml-4624
     Vendor = Microsoft
     Product = Microsoft Windows
-    Lms = Splunk
+    Lms = ElasticSearch
     DataType = "windows-4624"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
     Conditions = ["<EventID>4624</EventID>", "<Data Name="]
@@ -22,8 +22,7 @@ Name = xml-4624
       """<Data Name=('|")AuthenticationPackageName('|")>({auth_package}[^<]+)</Data>""",
       """<Data Name=('|")TargetLogonId('|")>({logon_id}[^<]+)</Data>""",
       """<Data Name=('|")TargetUserSid('|")>({user_sid}[^<]+)</Data>""",
-      """<Data Name=('|")WorkstationName('|")>([A-Fa-f:\d.]+|-|({src_host_windows}[^<]+))</Data>""",
-      """EventRecordID>({record_id}[^<]+)<""",
+      """<Data Name=('|")WorkstationName('|")>([A-Fa-f:\d.]+|-|({src_host_windows}[^<]+))</Data>"""
     ]
     DupFields = ["host->dest_host"]
   }

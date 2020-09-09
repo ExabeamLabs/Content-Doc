@@ -1,16 +1,31 @@
 #### Parser Content
 ```Java
 {
-Name = s-stealthwatch-network-alert-1
+Name = s-stealthwatch-network-alert
   Vendor = Cisco
   Product = Cisco StealthWatch (Lancope)
   Lms = Splunk
   DataType = "network-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """ StealthWatch[""", """<custom_condition_cont-7162>""" ]
+  Conditions = [ """ stealth-smc StealthWatch[""", """protocol="""" ]
   Fields = [
-    """\w+\s+\d+\s+\d+:\d+:\d+\s+({host}[\w\-.]+)\s+StealthWatch\[\d+\]:\s*({time}\d+-\d+-\d+T\d+:\d+:\d+Z)\s*.*?({alert_name}[A-Z].+?)\.?\s*\d*\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}.*?\s*({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s+.*?({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s*\S*\s+(({bytes_num}[\d\.]+)\s*({bytes_unit}\w+)\s+bytes)?""",
+    """alarm_time="({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\w)""",
+    """id="({alert_id}[^"]+)"""",
+    """sig="({alert_type}[^"]+)"""",
+    """sev="({alert_severity}[^"]+)"""",
+    """details="({additional_info}[^"]+)"""",
+    """src="({src_ip}[a-fA-F\d.:]+)""",
+    """src_name="({src_host}[^"]+)"""",
+    """dest="({dest_ip}[a-fA-F\d.:]+)""",
+    """dest_name="({dest_host}[^"]+)"""",
+    """dest_user="({user}[^"]+)"""",
+    """src_user="({user}[^"]+)"""",
+    """dest_user="({account}[^"]+)"""",
+    """protocol="({protocol}[^"]+)"""",
+    """dvc_ip="({host}[a-fA-F\d.:]+)""",
+    """dvc="({host}[^"]+)"""",
+    """domain="({domain}[^"]+)""""
   ]
-  DupFields = [ "alert_name->alert_type" ]
+  DupFields = [ "alert_type->alert_name" ]
 }
 ```

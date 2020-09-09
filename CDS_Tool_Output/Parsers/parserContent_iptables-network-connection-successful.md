@@ -3,7 +3,6 @@
 {
 Name = iptables-network-connection-successful
   Vendor = IPTables
-  Product = IPTables
   Lms = Direct
   DataType = "network-connection"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

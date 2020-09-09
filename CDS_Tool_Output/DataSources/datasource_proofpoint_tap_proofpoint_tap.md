@@ -26,6 +26,5 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-proofpoint-email-in](../Parsers/parserContent_cef-proofpoint-email-in.md)
 * [proofpoint-skyformation-email-alert](../Parsers/parserContent_proofpoint-skyformation-email-alert.md)
 * [s-proofpoint-email-alert](../Parsers/parserContent_s-proofpoint-email-alert.md)
-* [s-proofpoint-email-alert-3](../Parsers/parserContent_s-proofpoint-email-alert-3.md)
 * [s-proofpoint-email-in](../Parsers/parserContent_s-proofpoint-email-in.md)
 * [s-proofpoint-email-in-1](../Parsers/parserContent_s-proofpoint-email-in-1.md)

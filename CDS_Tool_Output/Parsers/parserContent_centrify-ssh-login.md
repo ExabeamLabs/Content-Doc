@@ -11,56 +11,27 @@ Name = centrify-ssh-login
   Fields = [
     """utc=({time}\d+)""",
     """exabeam_host=({host}[\w.\-]+)""",
-    """\sahost=({host}[^=]+?)\s+\w+=""",
-    """\sclient=(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[^=]+?))\s+\w+=""",
     """user=({user}[^\(\)\s\$]+)"""
     """\d+\|\d+\|({event_name}.+?)\|\d""",
     """status=({outcome}.+?)\s\w+=""",
     """pid=({process_id}\d+)""",
     """service=({process}.+?)\s\w+=""",
+    """client=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """EntityName=(.+\\+)?({dest_host}[^"\s]+)(\s|$)"""
-  ]
-}
-{
-  Name = centrify-ssh-login-failed
-  Vendor = Centrify
-  Product = Centrify
-  Lms = Direct
-  DataType = "authentication-failed"
-  TimeFormat = "epoch"
-  Conditions = ["""Centrify Suite|Centrify""" , """SSHD denied"""]
-  Fields = [
-    """utc=({time}\d+)""",
-    """exabeam_host=({host}[\w.\-]+)""",
-    """\sahost=({host}[^=]+?)\s+\w+=""",
-    """\sclient=(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[^=]+?))\s+\w+=""",
-    """user=({user}[^\(\)\s\$]+)"""
-    """\d+\|\d+\|({event_name}.+?)\|\d""",
-    """status=({outcome}.+?)\s\w+=""",
-    """pid=({process_id}\d+)""",
-    """service=({process}.+?)\s\w+=""",
-    """EntityName=(.+\\+)?({dest_host}[^"\s]+)(\s|$)"""
-    """reason=({failure_reason}[^=\|]+?)(\s+\w+=|\|)"""
   ]
 }
 
 {
-  Name = centrify-local-logon
-  Vendor = Centrify
-  Product = Centrify
+  Name = code42-file-operations
+  Vendor = Code42
+  Product = Code42
   Lms = Direct
-  DataType = "local-logon"
-  TimeFormat = "epoch"
-  Conditions = ["""|Centrify Suite|Trusted Path|""" , """|Trusted path granted|"""]
+  DataType = "file-operations"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+  Conditions= [ """Code42LogCollector,""", """KAFKA_CONNECT_SYSLOG: """]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """utc=({time}\d+)""",
-    """user=({user}[^\(\)\s@]+)\(""",
-    """user=({user}[^\(\)\s@]+)@({domain}[^\(\)\s@]+)\s+(\w+=|$)""",
-    """\|({event_name}Trusted path\s+[^\|]*)\|""",
-    """status=({outcome}.+?)\s+(\w+=|$)""",
-    """pid=({pid}\d+)""",
-    """server=(({protocol}[^\\\/\s]+)[\\\/]+)?({dest_host}[^\\\/\s]+?)\s+(\w+=|$)""",
-  ]
+    """KAFKA_CONNECT_SYSLOG:\s+({host}[^,]+),(|("+({event_id}[^"]+)"+)|({=event_id}[^,]+)),(|("+({accesses}[^"]+)"+)|({=accesses}[^,]+)),(|("+({time}[^"]+)"+)|({=time}[^,]+)),(|("+[^"]+"+)|[^,]+),(|("+({file_path}[^"]+)"+)|({=file_path}[^,]+)),(|("+({file_name}[^"]+)"+)|({=file_name}[^,]+?(\.({file_ext}[^\.,]+))?)),(|("+[^"]+"+)|[^,]+),(|("+({file_type}[^"]+)"+)|({=file_type}[^,]+)),(|("+({bytes}[^"]+)"+)|({=bytes}[^,]+)),(|("+[^"]+"+)|[^,]+),(|("+({md5}[^"]+)"+)|({=md5}[^,]+)),(|("+({sha256}[^"]+)"+)|({=sha256}[^,]+)),(|("+({time_created}[^"]+)"+)|({=time_created}[^,]+)),(|("+({time_modified}[^"]+)"+)|({=time_modified}[^,]+)),(|("+({user_email}[^"]+)"+)|({=user_email}[^,]+)),(|("+[^"]+"+)|[^,]+),(|("+({user_uid}[^"]+)"+)|({=user_uid}[^,]+)),(|("+({src_host}[^"]+)"+)|({=src_host}[^,]+)),(|("+[^"]+"+)|[^,]+),(|("+({src_ip}[^"]+)"+)|({=src_ip}[^,]+)),(|("+({additional_info}[^"]+)"+)|({=additional_info}[^,]+)),(|("+({actor}[^"]+)"+)|({=actor}[^,]+)),(|("+({directory_id}[^"]+)"+)|({=directory_id}[^,]+)),(|("+({app}[^"]+)"+)|({=app}[^,]+)),(|("+({full_url}[^"]+)"+)|({=full_url}[^,]+)),(|("+({shared}[^"]+)"+)|({=shared}[^,]+)),(|("+({shared_with}[^"]+)"+)|({=shared_with}[^,]+)),(|("+({file_exposure_changed_to}[^"]+)"+)|({=file_exposure_changed_to}[^,]+)),(|("+({cloud_drive_id}[^"]+)"+)|({=cloud_drive_id}[^,]+)),(|("+({detection_source_alias}[^"]+)"+)|({=detection_source_alias}[^,]+)),(|("+({file_id}[^"]+)"+)|({=file_id}[^,]+)),(?:|("+({exposure_type}[^"]+)"+)|({=exposure_type}[^,]+)),(|("+({process_owner}[^"]+)"+)|({=process_owner}[^,]+)),(|("+({process_name}[^"]+)"+)|({=process_name}[^,]+)),(|("+({device_vendor}[^"]+)"+)|({=device_vendor}[^,]+)),(|("+({device_name}[^"]+)"+)|({=device_name}[^,]+)),(|("+({device_id}[^"]+)"+)|({=device_id}[^,]+)),(|("+({device_size}[^"]+)"+)|({=device_size}[^,]+)),(|("+({device_type}[^"]+)"+)|({=device_type}[^,]+)),(|("+({sync_destination}[^"]+)"+)|({=sync_destination}[^,]+))"""
+]
+  DupFields = ["file_path->file_parent"]
 }
 ```

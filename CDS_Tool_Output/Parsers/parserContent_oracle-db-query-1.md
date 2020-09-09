@@ -3,7 +3,6 @@
 {
 Name = oracle-db-query-1
   Vendor = Oracle
-  Product = Oracle DB
   Lms = Direct
   DataType = "database-query"
   IsHVF = true
@@ -18,8 +17,7 @@ Name = oracle-db-query-1
     """"terminal\\"+:\\"+({terminal}[^"\\]+)""",
     """"timestamp\\"+:\\"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
     """"username\\"+:\\"+({db_user}[^"\\]+)""",
-    """"os_username\\"+:\\"+({os_user}[^"\\]+)""",
-    """"action_name\\"+:\\"+({db_operation}[^"\\]+)""", 
+    """"os_username\\"+:\\"+({os_user}[^"\\]+)"""
   ]
   DupFields = [ "database_id->database_name", "os_user->user", "db_user->account" ]
 }

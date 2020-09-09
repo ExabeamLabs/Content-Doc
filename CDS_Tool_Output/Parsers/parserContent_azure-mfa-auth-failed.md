@@ -9,7 +9,6 @@ Name = azure-mfa-auth-failed
 {
   Name = cef-sonicwall-vpn-start
   Vendor = Sonicwall
-  Product = Sonicwall
   Lms = ArcSight
   DataType = "vpn-start"
   TimeFormat = "epoch"
@@ -25,6 +24,5 @@ Name = azure-mfa-auth-failed
     """\scs5Label=Portal\s.*cs5=({realm}.+?)\s+(\w+=|$)""",
     """\scs5=({realm}.+?)\s+(|\w+=.*)cs5Label=Portal\s""",
   ]
-  DupFields = ["user->account"]
 }
 ```

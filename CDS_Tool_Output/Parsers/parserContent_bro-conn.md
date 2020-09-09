@@ -3,7 +3,6 @@
 {
 Name = bro-conn
   Vendor = Bro
-  Product = Bro
   Lms = Direct
   DataType = "network-connection"
   TimeFormat = "epoch_sec"

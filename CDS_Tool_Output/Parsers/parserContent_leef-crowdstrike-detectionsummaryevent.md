@@ -9,8 +9,7 @@ Name = leef-crowdstrike-detectionsummaryevent
     """\WfilePath=({malware_url}.+?)(\t|\s+\w+=|\s*\||\s*$|\s*"+\s*$)""",
     """\WfilePath=({file_parent}.+?)(\t|\s+\w+=|\s*\||\s*$|\s*"+\s*$)""",
     """\Wdescription=({additional_info}.+?)(\t|\s+\w+=|\s*\||\s*$|\s*"+\s*$)""",
-    """\WcommandLine="({command_line}[^"]+)"""",
-    """\WfilePath=({process}[^\s]+\\+({process_name}[^\s]+))""",
+    """\WcommandLine="({command_line}[^"]+)""""
   ]
 }
 ```

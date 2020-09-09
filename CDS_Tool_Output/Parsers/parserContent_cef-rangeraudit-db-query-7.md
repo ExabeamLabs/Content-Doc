@@ -2,14 +2,12 @@
 ```Java
 {
 Name = cef-rangeraudit-db-query-7
-  Product = RangerAudit
   Conditions = [ """"RangerAudit"""", """access""", """"MASK_NULL"""" ]
 }
 
 {
   Name = cef-rangeraudit-file-operations
   Vendor = RangerAudit 
-  Product = RangerAudit
   Lms = ArcSight
   DataType = "file-operations"
   IsHVF = true

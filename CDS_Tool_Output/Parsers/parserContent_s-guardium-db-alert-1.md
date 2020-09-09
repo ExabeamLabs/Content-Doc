@@ -15,12 +15,12 @@ Name = s-guardium-db-alert-1
     """rule ID\s*({alert_name}.+?)\s*([#\d\\n]+)?([\w\s]+:)""",
     """rule ID\s*({alert_name}.+?)\s*-\s*Severity""",
     """Severity\s*({alert_severity}[^\s]+)\s""",
-    """Category:\s*({alert_type}\S+)\s*Classification:""",
+    """Category:\s*({alert_type}.+?)\s*Classification:""",
     """SQL:\s*({additional_info}.+?)?\s*SQL""",
     """Client:\s*({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s*(\(({src_host}[\w\d\\]+)\))?""",
     """Server:\s*({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s*(\(({dest_host}[\w\d\\]+)\))?""",
     """Server Type:\s*({server_group}.+?)\s([#\d\\n]+)?Client:""",
-    """DB User:\s*(({domain}\w+)\\)?({db_user}[\w\d]+)(\s+\(.+?\))?([#\d\\n]+)?([\w\s]+:)""",
+    """DB User:\s*({db_user}[\w\d\\]+)([#\d\\n]+)?([\w\s]+:)""",
     """OS User:\s*({user}.+?)\s*([#\d\\n]+)?([\w\s]+:)""",
     """Source Program:\s*({process}({directory}.+)[\\\/]({process_name}.+?))\s([#\d\\n]+)?SQL:"""
   ]

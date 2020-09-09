@@ -15,13 +15,7 @@ Name = l-4740
     """<EventID>({event_code}[^<]+)</EventID>""",
     """Subject:.+?Account Name:\s*({caller_user}.+?)\s*Account Domain:\s*(?=\w)({caller_domain}.+?)\s*Logon ID:\s*({logon_id}.+?)\s*Account That Was""",
     """Account That Was Locked Out:\s*Security ID:\s*({user_sid}.+?)\s*Account Name:\s*({user}.+?)\s*Additional""",
-    """Caller Computer Name:\s*(?:\\+)?({src_host}[\w-\.]+)""",
-    """<Data Name='TargetUserName'>({user}[^<]+)<""",
-    """<Data Name='TargetSid'>({user_sid}[^<]+)<""",
-    """<Data Name='SubjectUserName'>({caller_user}[^<]+)<""",
-    """<Data Name='SubjectDomainName'>({caller_domain}[^<]+)<""",
-    """<Data Name='SubjectLogonId'>({logon_id}[^<]+)<""",
-    """<Data Name='TargetDomainName'>(?:\\+)?({src_host}[^<=\s]+)(<|\s)"""
+    """Caller Computer Name:\s*(?:\\+)?({src_host}[^<]+)"""
   ]
   DupFields = [ "host->dest_host",
                 "caller_domain->domain" ]

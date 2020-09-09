@@ -3,7 +3,6 @@
 {
 Name = onapsis-db-op
     Vendor = Onapsis
-  Product = Onapsis
     Lms = Direct
     DataType = "database-update"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -32,7 +31,7 @@ Name = onapsis-db-op
       """exabeam_endTime=({time}\d+)""",
       """exabeam_host=({host}[^\s]+)""",
       """connected to Application ({app}[^.]+)""",
-      """AUDIT:.+?\(({user_email}[^@]+@({email_domain}[^)]+))\)"""
+      """AUDIT:.+?\(({user_emailId}[^)]+)\)"""
     ]
   }
 ```

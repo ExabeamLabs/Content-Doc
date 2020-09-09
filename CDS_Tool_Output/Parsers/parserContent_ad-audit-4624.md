@@ -25,7 +25,6 @@ Name = ad-audit-4624
     """LOGON_PROCESS\s*=\s*(null|-|({auth_process}[^\s]+))""",
     """AUTHENTICATION_PACKAGE\s*=\s*(null|-|({auth_package}[^\s]+))""",
     """CALLER_PROCESS_NAME\s*=\s*(?:-|null|({process}[\w:\\.\-]+))""",
-    """USER_SAM_ACCOUNT_NAME\s*=\s*(-|null|({account}[^\s\]]+))""",
   ]
 }
 ```

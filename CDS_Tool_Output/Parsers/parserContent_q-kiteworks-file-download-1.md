@@ -2,7 +2,6 @@
 ```Java
 {
 Name = q-kiteworks-file-download-1
-  Product = KiteWorks
   Conditions = [ """Downloaded archive""", """Activity:""" ]
   Fields = ${KiteWorksParserTemplates.q-kiteworks-file-activity.Fields}[
     """({accesses}Downloaded)""",

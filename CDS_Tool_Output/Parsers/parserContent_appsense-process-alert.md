@@ -3,7 +3,6 @@
 {
 Name = appsense-process-alert
     Vendor = AppSense Application Manager
-  Product = AppSense Application Manager
     Lms = Splunk
     DataType = "process-alert"
     IsHVF = true
@@ -20,7 +19,7 @@ Name = appsense-process-alert
       """Message=AppSense Application Manager ({alert_name}.+?)\s+(of [^\w]|\'|for)""",
       """Message=(The file )?\'.+?\'( has had)?\s+({alert_name}.+?)\s*(\.|of|for)""",
       """Message=\'(({domain}[^\\]+)\\+)?({user}[^']+)\'""",
-      """\'({process}({directory}(?:(\w+:)*([\\\/]+[^\\\/'\]"]+)+)?[\\\/]+)({process_name}[^\\\/"\]]*?))(\s+\[\w+:|')""",
+      """\'({process}({directory}(?:(\w+:)*([\\\/]+[^\\\/']+)+)?[\\\/]+)({process_name}.+?))(\'|(\s+\[\w+:))""",
     ]
         DupFields=["process->path",
 		   "dest_host->host",

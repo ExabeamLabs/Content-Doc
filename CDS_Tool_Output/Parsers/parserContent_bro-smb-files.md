@@ -3,7 +3,6 @@
 {
 Name = bro-smb-files
   Vendor = Bro
-  Product = Bro
   Lms = Direct
   DataType = "file-operations"
   IsHVF = true

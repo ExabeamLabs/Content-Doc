@@ -2,7 +2,6 @@
 ```Java
 {
 Name = unix-ssh-login-failed-json
-  Product = Unix
   DataType = "ssh-login"
   Conditions = [ """"ident":"sshd""", """nvalid user""" ]
   Fields = ${UnixParserTemplates.unix-activity-json.Fields}[

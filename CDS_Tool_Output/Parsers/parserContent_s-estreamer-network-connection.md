@@ -27,7 +27,6 @@ Name = s-estreamer-network-connection
     """"recordTypeDescription":\s*"({event_name}[^"]+)"""",
     """"recordTypeCategory":\s"({log_type}[^"]+)"""",
     """"clientUrl":.+?"data":\s*"({additional_info}[^"]+)"""",
-    """"initiatorPort":\s+({src_port}\d+)""",
   ]
 }
 ```

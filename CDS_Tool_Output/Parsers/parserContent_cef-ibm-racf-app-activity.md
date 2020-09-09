@@ -9,7 +9,7 @@ Name = cef-ibm-racf-app-activity
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """|IBM|Racf|""" ]
   Fields = [
-    """CEF:([^\|]*\|){4}({event_code}[^\|]+)\|({activity}[^\|]+)""",
+    """CEF:([^\|]*\|){4}({event_id}[^\|]+)\|({activity}[^\|]+)""",
     """\Wrt=({time}\d+)""",
     """\Wdvc=(|({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}.+?))(\s+\w+=|\s*$)""",
     """\WcategoryOutcome=(|/({outcome}.+?))(\s+\w+=|\s*$)""",

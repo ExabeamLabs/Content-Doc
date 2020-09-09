@@ -3,7 +3,6 @@
 {
 Name = bro-httpeth0
   Vendor = Bro
-  Product = Bro
   Lms = Direct
   DataType = "web-activity"
   TimeFormat = "epoch_sec"
@@ -23,7 +22,6 @@ Name = bro-httpeth0
 {
   Name = bro-ssh
   Vendor = Bro
-  Product = Bro
   Lms = Direct
   DataType = "ssh-login"
   TimeFormat = "epoch_sec"
@@ -37,7 +35,6 @@ Name = bro-httpeth0
 {
   Name = bro-share-access-2
   Vendor = Bro
-  Product = Bro
   Lms = Direct
   DataType = "file-operations"
   TimeFormat = "epoch_sec"

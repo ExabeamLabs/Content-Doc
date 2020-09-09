@@ -31,30 +31,6 @@ ${PingParserTemplates.cef-ping-events-1}{
 }
 
 ${PingParserTemplates.cef-ping-events-1}{
-  Name = cef-ping-auth-successful-2
-  DataType = "authentication-successful"
-  Conditions = [ """CEF:""", """|Ping Identity|PingFederate|""", """|OAuth|OAuth|""", """msg=success""" ]
-}
-
-${PingParserTemplates.cef-ping-events-1}{
-  Name = cef-ping-auth-failed-2
-  DataType = "authentication-failed"
-  Conditions = [ """CEF:""", """|Ping Identity|PingFederate|""", """|OAuth|OAuth|""", """msg=failure""" ]
-}
-
-${PingParserTemplates.cef-ping-events-1}{
-  Name = cef-ping-auth-successful-3
-  DataType = "authentication-successful"
-  Conditions = [ """CEF:""", """|Ping Identity|PingFederate|""", """|STS|STS|""", """msg=success""" ]
-}
-
-${PingParserTemplates.cef-ping-events-1}{
-  Name = cef-ping-auth-failed-3
-  DataType = "authentication-failed"
-  Conditions = [ """CEF:""", """|Ping Identity|PingFederate|""", """|STS|STS|""", """msg=failure""" ]
-}
-
-${PingParserTemplates.cef-ping-events-1}{
   Name = cef-ping-app-login-1
   DataType = "app-login"
   Conditions = [ """CEF:""", """|Ping Identity|PingFederate|""", """|SSO|""", """msg=success""" ]

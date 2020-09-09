@@ -7,7 +7,7 @@ Name = fortinet-network-alert-1
   Lms = Direct
   DataType = "network-alert"
   TimeFormat = "yyyy-MM-dd' time='HH:mm:ss"
-  Conditions = [ """subtype="ips"""", """action=""", """service=""" ]
+  Conditions = [ """subtype="ips"""", """action=""", """service=""", """hostname=""" ]
   Fields = [
     """\Wdate=({time}\d\d\d\d-\d\d-\d\d time\=\d\d:\d\d:\d\d)""",
     """\Wdevname="?({host}[^"]+?)"?(\s+\w+=|\s*$)""",

@@ -17,8 +17,6 @@ Name = asa-svc-vpn-751025-start
       """Remote:({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """IPv4 Address=(?:0\.0\.0\.0|({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))""",
       """IPv6 address=(?:0\.0\.0\.0|({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))""",
-      """Group:({realm}[^\s]+)""",
     ]
-    DupFields = ["user->account"]
   }
 ```

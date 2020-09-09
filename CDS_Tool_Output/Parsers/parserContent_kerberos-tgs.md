@@ -3,7 +3,6 @@
 {
 Name = kerberos-tgs
     Vendor = Unix
-  Product = Unix
     Lms = Splunk
     DataType = "kerberos-kdc"
     TimeFormat = "epoch_sec"

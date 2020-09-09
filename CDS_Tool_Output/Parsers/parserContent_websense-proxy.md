@@ -16,7 +16,7 @@ Name = websense-proxy
   }
   {
     Name = websense-proxy-1
-    Vendor = Forcepoint
+    Vendor = Websense
     Product = Websense Secure Gateway
     Lms = Direct
     DataType = "web-activity"

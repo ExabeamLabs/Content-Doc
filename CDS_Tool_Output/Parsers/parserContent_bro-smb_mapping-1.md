@@ -3,7 +3,6 @@
 {
 Name = bro-smb_mapping-1
   Vendor = Bro
-  Product = Bro
   Lms = Direct
   DataType = "share-access"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"

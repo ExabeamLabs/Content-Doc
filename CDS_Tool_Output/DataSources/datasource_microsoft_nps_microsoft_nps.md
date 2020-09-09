@@ -39,4 +39,3 @@ _The following Parsers can be operationalized using log data from this data sour
 * [q-6272](../Parsers/parserContent_q-6272.md)
 * [q-6273](../Parsers/parserContent_q-6273.md)
 * [s-radius-wireless-nac-logon](../Parsers/parserContent_s-radius-wireless-nac-logon.md)
-* [xml-6272](../Parsers/parserContent_xml-6272.md)

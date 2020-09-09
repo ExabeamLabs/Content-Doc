@@ -12,7 +12,6 @@ Name = crowdstrike-process-created
     Fields = [
       """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
       """({host}[\w\-.]+)\s+Skyformation""",
-      """"aip":"({host}[^"]+)"""
       """"timestamp":"({time}\d+)""",
       """"event_simpleName":"({event_code}[^"]+)""",
       """"aid":"({aid}[^"]+)""",
@@ -24,7 +23,6 @@ Name = crowdstrike-process-created
       """"CommandLine":"\s*({process}({directory}[^,="-]*?[\\\/]+)({process_name}[^\\\/=]*?))(?:\s*-+\w+.*)"+,""",
       """"CommandLine":"\s*(?=\w:[\\])({process}({directory}(?:[^"=]+)?[\\])?({process_name}[^\\\/"\s=]+))""",
       """"CommandLine":"\s*(?=\\"*[^\\]*\\"*)\\"*({process}({directory}(?:[^"=]+)?[\\])?({process_name}[^\\\/"\s=]+))""",
-      """"ImageFileName":"({process}({directory}[^"]*?[\\\/]+)?({process_name}[^"\\\/]+))"""",
       """"id":"({process_guid}[^"]+)""",
       """"MD5HashData":"({md5}[^"]+)""",
       """"ParentProcessId":"({parent_process_guid}[^"]+)""",

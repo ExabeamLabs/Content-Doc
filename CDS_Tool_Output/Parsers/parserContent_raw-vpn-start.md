@@ -3,7 +3,6 @@
 {
 Name = raw-vpn-start
   Vendor = Juniper Networks
-  Product = Juniper VPN
   Lms = Direct
   DataType = "vpn-start"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
@@ -15,12 +14,12 @@ Name = raw-vpn-start
     """exabeam_host=(.+?@\s*)?({host}[^\s]+)""",
     """exabeam_host=(.+?@\s*)?({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|[\w\-\.]+)\s*(Juniper|PulseSecure):""",
+    """\d{4}-\d{2}-\d{2} \d\d:\d\d:\d\d\s+-\s+({host}[\w\.-]+)""",
     """PulseSecure:.*?\[({src_ip}[a-fA-F:\d.]+)\]\s+(({domain}[^\\]+)\\)?(?:({user_email}[^@\s]+@[^@\(]+)|({user}[^\s]+))\(({realm}[^\)]+)?""",
     """Login succeeded for (?:({user_email}[^@\s]+@[^@\s\/]+)|({user}[^\s\/]+))""",
     """Login succeeded for [^/]+/({realm}.+?)\s+\(session:""",
-    """Login succeeded for .+?from ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """PulseSecure:.*?\[({src_ip}[a-fA-F:\d.]+)\]\s+(({domain}[^\\]+)\\)?(?:({user_email}[^@\s]+@[^@\(]+)|({user}[^\s\\]+))\(({realm}[^\)]+)?""",
+    """Login succeeded for .+?from ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
-  DupFields = [ "host->dest_host" , "user->account"]
+  DupFields = [ "host->dest_host" ]
 }
 ```

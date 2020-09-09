@@ -12,7 +12,6 @@ _The following Use Cases can be operationalized using log data from this data so
 * [Asset Logon and Access](../UseCases/usecase_asset_logon_and_access.md)
 * [Badge Access](../UseCases/usecase_badge_access.md)
 * [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
-* [Endpoint Activivty](../UseCases/usecase_endpoint_activivty.md)
 * [Executives](../UseCases/usecase_executives.md)
 * [Network Alert](../UseCases/usecase_network_alert.md)
 * [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)

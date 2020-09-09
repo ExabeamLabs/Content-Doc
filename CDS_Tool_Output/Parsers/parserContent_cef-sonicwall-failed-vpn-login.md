@@ -3,7 +3,6 @@
 {
 Name = cef-sonicwall-failed-vpn-login
   Vendor = Sonicwall
-  Product = Sonicwall
   Lms = ArcSight
   DataType = "failed-vpn-login"
   TimeFormat = "epoch"
@@ -23,7 +22,6 @@ Name = cef-sonicwall-failed-vpn-login
 {
   Name = cef-sonicwall-rdp-logon
   Vendor = Sonicwall
-  Product = Sonicwall
   Lms = ArcSight
   DataType = "remote-logon"
   TimeFormat = "epoch"

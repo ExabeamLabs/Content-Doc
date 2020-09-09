@@ -3,7 +3,6 @@
 {
 Name = cef-juniper-vpn-login
   Vendor = Juniper Networks
-  Product = Juniper VPN
   Lms = ArcSight
   DataType = "vpn-start"
   TimeFormat = "epoch"
@@ -16,6 +15,6 @@ Name = cef-juniper-vpn-login
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sshost=({src_host}.+?)(\s+\w+=|$)""",
   ]
-  DupFields = [ "dest_ip->host", "dest_host->host" , "user->account"]
+  DupFields = [ "dest_ip->host", "dest_host->host" ]
 }
 ```

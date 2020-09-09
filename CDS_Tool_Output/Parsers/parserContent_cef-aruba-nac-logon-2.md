@@ -2,13 +2,11 @@
 ```Java
 {
 Name = cef-aruba-nac-logon-2
-  Product = Aruba Wireless controller
   Conditions = [ """|Aruba Networks|ClearPass|""", """|Guest Access|""" ]
 }
 
 ${ArubaParserTemplates.cef-aruba-nac-logon}{
   Name = cef-aruba-nac-logon-3
-  Product = Aruba Wireless controller
   Conditions = [ """|Aruba Networks|ClearPass|""", """|Logged in users|""" ]
 }
 

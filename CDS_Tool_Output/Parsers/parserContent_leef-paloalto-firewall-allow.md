@@ -7,11 +7,10 @@ Name = leef-paloalto-firewall-allow
   Lms = Direct
   DataType = "network-connection"
   IsHVF = true
-  TimeFormat = "yyyy/MM/dd HH:mm:ss"
+  TimeFormat = "MMM dd yyyy HH:mm:ss z"
   Conditions = ["""LEEF:""","""|Palo Alto Networks|PAN-OS Syslog Integration|""","""|allow|"""]
   Fields = [
     """\s({host}[\w\.-]+)\s+LEEF:""",
-    """ReceiveTime=({time}\d\d\d\d\/\d\d\/\d\d\s\d\d:\d\d:\d\d)""",
     """\|devTime=({time}\w{3}\s+\d+ \d\d\d\d \d\d:\d\d:\d\d \w+)\|""",
     """\|Type=({log_type}\w+)\|""",
     """\|Subtype=({subtype}\w+)\|""",

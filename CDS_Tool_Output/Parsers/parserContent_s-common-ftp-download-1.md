@@ -3,7 +3,6 @@
 {
 Name = s-common-ftp-download-1
   Vendor = FTP
-  Product = FTP
   Lms = Splunk
   DataType = "file-operations"
   IsHVF = true
@@ -27,7 +26,6 @@ Name = s-common-ftp-download-1
 {
   Name = s-common-ftp-delete
   Vendor = FTP
-  Product = FTP
   Lms = Splunk
   DataType = "file-operations"
   IsHVF = true
@@ -50,7 +48,6 @@ Name = s-common-ftp-download-1
 {
   Name = s-common-ftp-delete-1
   Vendor = FTP
-  Product = FTP
   Lms = Splunk
   DataType = "file-operations"
   IsHVF = true

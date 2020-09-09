@@ -25,4 +25,3 @@ _The following Parsers can be operationalized using log data from this data sour
 * [syslog-dhcpd-1](../Parsers/parserContent_syslog-dhcpd-1.md)
 * [syslog-dhcpd-2](../Parsers/parserContent_syslog-dhcpd-2.md)
 * [syslog-dhcpd-3](../Parsers/parserContent_syslog-dhcpd-3.md)
-* [syslog-dhcpd-4](../Parsers/parserContent_syslog-dhcpd-4.md)

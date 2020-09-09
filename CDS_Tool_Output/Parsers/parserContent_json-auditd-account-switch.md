@@ -3,7 +3,6 @@
 {
 Name = json-auditd-account-switch
   Vendor = Unix
-  Product = Unix
   Lms = Direct
   DataType = "unix-account-switch"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

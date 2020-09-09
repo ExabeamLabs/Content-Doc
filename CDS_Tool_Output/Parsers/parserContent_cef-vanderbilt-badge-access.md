@@ -3,7 +3,6 @@
 {
 Name = cef-vanderbilt-badge-access
     Vendor = Vanderbilt
-  Product = Vanderbilt
     Lms = ArcSight
     DataType = "physical-access"
     TimeFormat = "epoch"

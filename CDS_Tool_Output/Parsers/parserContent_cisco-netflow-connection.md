@@ -41,33 +41,29 @@ Name = cisco-netflow-connection
     """"src_port":({src_port}\d+)""",
     """"tcp_flags":({tcp_flags}\d+)""",
   ]
-  DupFields = [ "bytes_in->bytes", "packets_in->packets"]
+  DupFields = [ "bytes_in->bytes", "packets_in->packets"  ]
 }
 
 {
-  Name = cisco-netflow-connection-2
+  Name = q-cisco-dns-response
   Vendor = Cisco
-  Product = Cisco Netflow
-  Lms = Direct
-  DataType = "netflow-connection"
+  Product = OpenDNS Umbrella
+  Lms = QRadar
+  DataType = "dns-response"
+  IsHVF = true
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ """ t_int=""", """ nfc_id=""" ]
+  Conditions = [ """"MostGranularIdentity"""", """"Identities"""", """"QueryType"""", """"ResponseCode"""" ]
   Fields = [
-    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\w+ \d\d \d\d:\d\d:\d\d ({host}[\w.\-]+)""",
-    """\ssrc_ip=({src_ip}[a-fA-F\d.:]+)""",
-    """\ssrc_host=(unknown|({src_host}.+?))(\s+\w+=|\s*$)""",
-    """\ssrc_port=({src_port}\d+)""",
-    """\sdest_ip=({dest_ip}[a-fA-F\d.:]+)""",
-    """\sdest_host=(unknown|({dest_host}.+?))(\s+\w+=|\s*$)""",
-    """\sdest_port=({dest_port}\d+)""",
-    """\stcp_flag="({tcp_flags}[^"]+)""",
-    """\spackets_in=({packets_in}\d+)""",
-    """\sbytes_in=({bytes_in}\d+)""",
-    """\spackets_out=({packets_out}\d+)""",
-    """\sbytes_out=({bytes_out}\d+)""",
-    """\sprotocol=({protocol}\d+)""",
+    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """"Timestamp"*:"*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+    """"Identities"*:"*({identities}[^"]+)""",
+    """"InternalIp"*:"*({dest_ip}[^"]+)""",
+    """"ExternalIp"*:"*({src_ip}[^"]+)""",
+    """"Action"*:"*({outcome}[^"]+)""",
+    """"QueryType"*:"*({query_type}[^"]+)""",
+    """"ResponseCode"*:"*({dns_response_code}[^"]+)""",
+    """"Domain"*:"*({query}[^"]+)""",
+    """"Categories"*:"*({category}[^"]+)""",
   ]
-  DupFields = [ "bytes_in->bytes", "packets_in->packets"  ]
 }
 ```

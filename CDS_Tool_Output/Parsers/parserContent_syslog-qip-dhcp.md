@@ -3,7 +3,6 @@
 {
 Name = syslog-qip-dhcp
     Vendor = Nokia VitalQIP
-  Product = Nokia VitalQIP
     Lms = Syslog
     DataType = "dhcp"
     TimeFormat = "dd/MM/yyyy HH:mm:ss"
@@ -19,8 +18,7 @@ Name = syslog-qip-dhcp
 
  {
     Name = s-brightmail-email
-    Vendor = Symantec
-    Product = Symantec Brightmail
+    Vendor = BrightMail
     Lms = Splunk
     DataType = "dlp-email-alert"
     TimeFormat = "epoch_sec"
@@ -54,7 +52,6 @@ Name = syslog-qip-dhcp
         """"+object_type"+\s*:\s*"+({alert_type}.+?)"+\s*[,\]\}]""",
         """"+threat_level"+\s*:\s*"({alert_severity}.+?)"+\s*[,\]\}]""",
         """"+object"+\s*:\s*"+({malware_url}.+?)"+\s*[,\]\}]""",
-        """"object":"({process}[^"]+\\({process_name}[^"]+))""", 
     ]
   }
 ```

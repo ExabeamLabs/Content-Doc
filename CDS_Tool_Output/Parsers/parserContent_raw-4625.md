@@ -1,17 +1,19 @@
 #### Parser Content
 ```Java
 {
-Name = raw-4625-1
+Name = raw-4625
     Vendor = Microsoft
     Product = Microsoft Windows
     Lms = Direct
     DataType = "windows-failed-logon"
-    TimeFormat = "MM/dd/yyyy HH:mm:ss"
-    Conditions = ["An account failed to log on", "Failure Reason", "Computer"]
+    TimeFormat = "MMM dd HH:mm:ss yyyy"
+    Conditions = ["An account failed to log on", "Failure Reason"]
     Fields = [
       """({event_name}An account failed to log on)""",
-      """({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d)""",
-      """ComputerName=({host}[^\s]+)""",
+      """({time}\d+\/\d+\/\d+\s+\d+:\d+:\d+\s+(am|AM|pm|PM))""",
+      """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
+      """\w+\s+\d+\s+\d+:\d+:\d+\s+({host}[\w\-.]+)\s+""",
+      """Computer(Name|_name)?\s*\\*"?(=|:|>)\s*"*({host}[\w\.-]+)(\s|,|"|<\/Computer>|$)""",
       """({event_code}4625)""",
       """\s*Subject(:|=).+?Account Name(:|=)\s*(-|({caller_user}[^\s@]+?))[\s;]*Account Domain(:|=)""",
       """\s*Subject(:|=).+?Account Domain(:|=)\s*(-|({caller_domain}[^:;]+?))[\s;]*Logon ID(:|=)""",

@@ -3,7 +3,6 @@
 {
 Name = rdirectory-account-enable
   Vendor = Namespace rDirectory
-  Product = Namespace rDirectory
   Lms = Direct
   DataType = "account-enabled"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -15,6 +14,5 @@ Name = rdirectory-account-enable
 	"""Credentials:({account_domain}[^\\]+)\\+([^\s.]+\.)*({account}[^\s.]+)""",
 	"""account:({target_user}.+?)\s+\(({target_domain}[^\/)]+)"""
   ]
-  DupFields = ["host->src_host"]
 }
 ```

@@ -7,9 +7,7 @@ Product: Avecto Defendpoint Service
 
 _The following Use Cases can be operationalized using log data from this data source_
 
-* [Account Creation and Management](../UseCases/usecase_account_creation_and_management.md)
 * [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
-* [Endpoint Activivty](../UseCases/usecase_endpoint_activivty.md)
 * [Security Alert](../UseCases/usecase_security_alert.md)
 
 

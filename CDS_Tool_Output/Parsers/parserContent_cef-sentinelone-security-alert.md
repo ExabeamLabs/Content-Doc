@@ -3,7 +3,6 @@
 {
 Name = cef-sentinelone-security-alert
   Vendor = SentinelOne
-  Product = SentinelOne
   Lms = ArcSight
   DataType = "alert"
   TimeFormat = "MMM dd yyyy HH:mm:ss"
@@ -30,7 +29,6 @@ Name = cef-sentinelone-security-alert
     """\WsourceAddress=({src_ip}[^\|]+?)((\||\s+)\w+=|\s*$)""",
     """\WsourceNetInterfaceName=({src_interface}[^\|]+?)((\||\s+)\w+=|\s*$)""",
     """\WsourceMacAddress=({src_mac_address}[^\|]+?)((\||\s+)\w+=|\s*$)""",
-    """threatClassification=({alert_type}[^\|]+)""", 
   ]
 }
 ```

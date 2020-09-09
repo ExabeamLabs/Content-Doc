@@ -3,7 +3,6 @@
 {
 Name = s-duo-auth-successful
   Vendor = Duo Security
-  Product = Duo Security
   Lms = Splunk
   DataType = "authentication-successful"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

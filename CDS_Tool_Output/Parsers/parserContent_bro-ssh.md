@@ -3,7 +3,6 @@
 {
 Name = bro-ssh
   Vendor = Bro
-  Product = Bro
   Lms = Direct
   DataType = "ssh-login"
   TimeFormat = "epoch_sec"
@@ -17,7 +16,6 @@ Name = bro-ssh
 {
   Name = bro-share-access-2
   Vendor = Bro
-  Product = Bro
   Lms = Direct
   DataType = "file-operations"
   TimeFormat = "epoch_sec"

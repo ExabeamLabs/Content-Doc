@@ -3,7 +3,6 @@
 {
 Name = q-unix-dhcp-1
   Vendor = Unix
-  Product = Unix dhcpd
   Lms = QRadar
   DataType = "dhcp"
   TimeFormat = "epoch"

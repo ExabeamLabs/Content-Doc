@@ -3,7 +3,6 @@
 {
 Name = pfsense-network-connection-failed
   Vendor = pfSense
-  Product = pfSense
   Lms = Direct
   DataType = "network-connection"
   IsHVF = true
@@ -21,7 +20,6 @@ Name = pfsense-network-connection-failed
 {
   Name = s-atlassian-bitbucket-app-activity
   Vendor = Atlassian BitBucket
-  Product = Atlassian BitBucket
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

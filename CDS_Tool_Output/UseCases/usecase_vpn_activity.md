@@ -5,7 +5,6 @@ Use Case: VPN Activity
 
 _The following list of Supported Exabeam Data Sources power this use case:_
 
-* [Airlock](../DataSources/datasource_airlock_airlock.md)
 * [Barracuda Firewall](../DataSources/datasource_barracuda_firewall_barracuda_firewall.md)
 * [CatoNetworks](../DataSources/datasource_catonetworks_catonetworks.md)
 * [Check Point Security Gateway](../DataSources/datasource_check_point_security_gateway_check_point_security_gateway.md)
@@ -15,17 +14,13 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Cisco ISE](../DataSources/datasource_cisco_ise_cisco_ise.md)
 * [Cisco Meraki MX appliances](../DataSources/datasource_cisco_meraki_mx_appliances_cisco_meraki_mx_appliances.md)
 * [Dropbox](../DataSources/datasource_dropbox_dropbox.md)
-* [Duo Security](../DataSources/datasource_duo_security_duo_security.md)
 * [Fortinet VPN](../DataSources/datasource_fortinet_vpn_fortinet_vpn.md)
 * [Palo Alto Networks GlobalProtect](../DataSources/datasource_globalprotect_palo_alto_networks_globalprotect.md)
 * [Unified Security Gateway](../DataSources/datasource_huawei_unified_security_gateway.md)
 * [IBM Lotus Mobile Connect](../DataSources/datasource_lotus_mobile_connect_ibm_lotus_mobile_connect.md)
 * [Microsoft RRA](../DataSources/datasource_microsoft_rra_microsoft_rra.md)
 * [Microsoft Windows](../DataSources/datasource_microsoft_windows_microsoft_windows.md)
-* [PingOne](../DataSources/datasource_pingone_pingone.md)
-* [RSA SecurID](../DataSources/datasource_rsa_securid_rsa_securid.md)
 * [Sonicwall](../DataSources/datasource_sonicwall_sonicwall.md)
-* [Sophos](../DataSources/datasource_sophos_sophos.md)
 * [Avaya VPN](../DataSources/datasource_vpn_avaya_vpn.md)
 * [Citrix Netscaler](../DataSources/datasource_vpn_citrix_netscaler.md)
 * [Cognitas CrossLink](../DataSources/datasource_vpn_cognitas_crosslink.md)

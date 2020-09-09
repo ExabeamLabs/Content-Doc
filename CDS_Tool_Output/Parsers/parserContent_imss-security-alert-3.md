@@ -2,14 +2,12 @@
 ```Java
 {
 Name = imss-security-alert-3
-  Product = IMSS
   Conditions = [ """詐称メールフィルタ""" ]
 }
 
 {
   Name = leap-app-activity
   Vendor = LEAP
-  Product = LEAP
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyyMMdd:HH.mm.ss"

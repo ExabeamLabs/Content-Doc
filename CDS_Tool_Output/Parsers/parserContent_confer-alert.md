@@ -18,10 +18,8 @@ Name = confer-alert
     """incidentId"+:\s*"+({alert_id}[^"]+)"""",
     """score"+:\s*({alert_severity}\d+)""",
     """summary"+:\s*"+({additional_info}[^"]+)"""",
-    """eventDescription"+:\s*"+({additional_info}[^"]+)"""",
     """deviceType"+:\s*"+({os}[^"]+)"""",
     """externalIpAddress"+:\s*"+({dest_ip}[^"]+)"""",
-    """applicationName":\s"({process_name}[^"]+)""",
   ]
 }
 ```

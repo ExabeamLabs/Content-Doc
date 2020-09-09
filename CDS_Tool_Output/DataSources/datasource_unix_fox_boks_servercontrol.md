@@ -14,7 +14,6 @@ _The following Use Cases can be operationalized using log data from this data so
 * [Credential Switch Activity](../UseCases/usecase_credential_switch_activity.md)
 * [Critical System Activity](../UseCases/usecase_critical_system_activity.md)
 * [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
-* [Endpoint Activivty](../UseCases/usecase_endpoint_activivty.md)
 * [Executives](../UseCases/usecase_executives.md)
 * [File Activity](../UseCases/usecase_file_activity.md)
 * [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)

@@ -3,7 +3,6 @@
 {
 Name = q-prowatch-badge-access
     Vendor = ProWatch
-  Product = ProWatch
     Lms = QRadar
     DataType = "physical-access"
     TimeFormat =  "yyyy-MM-dd H:mm:ss"
