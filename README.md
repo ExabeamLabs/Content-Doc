@@ -9,19 +9,19 @@ The Content Library is an online repository of knowledge and content that organi
 This is a programmatic generation of content documentation from Exabeam's content repository. As new content is committed to the content repository, the Content Library is automatically updated to provide fast and easy access.
 
 ### [Content "master" branch - latest "canary" content available]
-- [Exabeam supported use cases](CDS_Tool_Output/Exabeam%20Use%20Cases.md)
+- [Exabeam supported use cases](Exabeam%20Use%20Cases.md)
   - Navigating from Exabeam use case to data source
-- [Exabeam supported data sources](CDS_Tool_Output/Exabeam%20Data%20Sources.md)
+- [Exabeam supported data sources](Exabeam%20Data%20Sources.md)
   - Navigating from data source to use case
 ### [Content "c2002" branch - shipped with Advanced Analytics i53]
-- [Exabeam supported use cases](https://github.com/ExabeamLabs/Content-Doc/tree/c2002/CDS_Tool_Output/Exabeam%20Use%20Cases.md)
+- [Exabeam supported use cases](https://github.com/ExabeamLabs/Content-Doc/tree/c2002/Exabeam%20Use%20Cases.md)
   - Navigating from Exabeam use case to data source
-- [Exabeam supported data sources](https://github.com/ExabeamLabs/Content-Doc/tree/c2002/CDS_Tool_Output/Exabeam%20Data%20Sources.md)
+- [Exabeam supported data sources](https://github.com/ExabeamLabs/Content-Doc/tree/c2002/Exabeam%20Data%20Sources.md)
   - Navigating from data source to use case
 ### [Content "c1907" branch - shipped with Advanced Analytics i52]
-- [Exabeam supported use cases](https://github.com/ExabeamLabs/Content-Doc/tree/c1907/CDS_Tool_Output/Exabeam%20Use%20Cases.md)
+- [Exabeam supported use cases](https://github.com/ExabeamLabs/Content-Doc/tree/c1907/Exabeam%20Use%20Cases.md)
   - Navigating from Exabeam use case to data source
-- [Exabeam supported data sources](https://github.com/ExabeamLabs/Content-Doc/tree/c1907/CDS_Tool_Output/Exabeam%20Data%20Sources.md)
+- [Exabeam supported data sources](https://github.com/ExabeamLabs/Content-Doc/tree/c1907/Exabeam%20Data%20Sources.md)
   - Navigating from data source to use case
 
 ## How do I use it?
