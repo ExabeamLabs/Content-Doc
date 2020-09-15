@@ -3,7 +3,7 @@
 {
 Name = cef-o365-security-alert
   Vendor = Microsoft
-  Product = Office 365
+  Product = Microsoft Office 365
   Lms = ArcSight
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

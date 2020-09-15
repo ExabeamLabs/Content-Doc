@@ -3,7 +3,7 @@
 {
 Name = s-honeywell-physical-badge-access
     Vendor = Honeywell 
-    Product = PROWATCH
+    Product = Honeywell Pro-Watch
     Lms = Splunk
     DataType = "physical-access"
     TimeFormat = "MM/dd/yyyy HH:mm:ss"

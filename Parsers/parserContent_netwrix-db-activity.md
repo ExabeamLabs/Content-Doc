@@ -2,8 +2,8 @@
 ```Java
 {
 Name = netwrix-db-activity
-   Vendor = NetWrix
-  Product = NetWrix Auditor
+   Vendor = Netwrix
+  Product = Netwrix Auditor
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
@@ -25,7 +25,7 @@ Name = netwrix-db-activity
 
 {
   Name = cef-aws-guardduty
-  Vendor = AWS GuardDuty
+  Vendor = AWS
   Product = AWS GuardDuty
   Lms = Direct
   DataType = "alert"

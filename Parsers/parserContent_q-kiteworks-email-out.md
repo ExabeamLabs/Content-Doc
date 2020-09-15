@@ -2,13 +2,13 @@
 ```Java
 {
 Name = q-kiteworks-email-out
-  Product = KiteWorks
+  Product = Kiteworks
   Conditions = [ """Activity: Sent e-mail""", """with files""" ]
 }
 
 ${KiteWorksParserTemplates.q-kiteworks-email}{
   Name = q-kiteworks-email-out-1
-  Product = KiteWorks
+  Product = Kiteworks
   Conditions = [ """Activity: Created draft""", """with files""" ]
 }
 

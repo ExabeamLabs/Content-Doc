@@ -3,7 +3,7 @@
 {
 Name = s-sharepoint-proxy
   Vendor = Microsoft
-  Product = Sharepoint
+  Product = SharePoint
   Lms = Splunk
   DataType = "web-activity"
   IsHVF = true

@@ -41,28 +41,28 @@ s-okta-app-activity-2 {
 
 json-okta-auth = {
   Vendor = Okta
-  Product = Okta
+  Product = Okta MFA
   Lms = Splunk
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields=[
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """"published"+\s*:\s*"+({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
-    """({app}OKTA|Okta)""",
+    """({app}(?i)Okta)""",
     """"city":"({location_city}[^",]+)""",
     """"state":"({location_state}[^",]+)""",
     """"country":"({location_country}[^",]+)""",
     """"ipAddress"+\s*:\s*"+({src_ip}[^",]+)""",
-    """"rawUserAgent"+\s*:\s*"+(Unknown|unknown|UNKNOWN|({user_agent}[^",]+))""",
-    """"browser"+\s*:\s*"+(Unknown|unknown|UNKNOWN|({browser}[^",]+))""",
-    """"os"+\s*:\s*"+(Unknown|unknown|UNKNOWN|({os}[^",]+))""",
+    """"rawUserAgent"+\s*:\s*"+((?i)unknown|({user_agent}[^",]+))""",
+    """"browser"+\s*:\s*"+((?i)unknown|({browser}[^",]+))""",
+    """"os"+\s*:\s*"+((?i)unknown|({os}[^",]+))""",
     """"action"+:.+?"+message"+:"+({event_name}[^",]+)"""
     """"displayMessage"\s*:\s*"({event_name}[^",]+)""",
     """"action"+:.+?"+objectType"+:"+({activity}[^",]+)""",
     """"legacyEventType"+:"+({activity}[^",]+)""",
     """"reason":"({failure_reason}[^"]+)"""
     """"target":.+?"displayName"\s*:\s*"({object}[^"]+[^\s])"""",
-    """request"+:.+?User.+?"+displayName"+:(null|"+(Okta System|Unknown|unknown|UNKNOWN|(?:({user_firstname}[^,"]+),\s*({user_lastname}[^"]+)|({user_fullname}[^"]+)))")""",
-    """"actor"+.+?"+type"+:"+User.+?displayName"+:(null|"+(Okta System|Okta Admin|Unknown|unknown|UNKNOWN|(?:({user_lastname}[^,"]+),\s*({user_firstname}[^"]+)|({user_fullname}[^"]+))))""",
+    """request"+:.+?User.+?"+displayName"+:(null|"+(Okta System|(?i)unknown|(?:({user_firstname}[^,"]+),\s*({user_lastname}[^"]+)|({user_fullname}[^"]+)))")""",
+    """"actor"+.+?"+type"+:"+User.+?displayName"+:(null|"+(Okta System|Okta Admin|(?i)unknown|(?:({user_lastname}[^,"]+),\s*({user_firstname}[^"]+)|({user_fullname}[^"]+))))""",
     """request"+:.+?"+type"+:"+User"+,"+alternateId"+:(null|"+(system@okta\.com|(?:({user_email}[^"@]+@({domain}[^"]+))|({user}[^"]+))))""",
     """"actor"+:[^\]]*?"+type"+:"+User"+,"+alternateId"+\s*:\s*"+(system@okta\.com|(?:({user_email}[^"@]+@({domain}[^"]+))|({user}[^"]+)))"""",
     """"login":\s*"({user_email}[^"\s@]+@[^"\s@]+)"""",

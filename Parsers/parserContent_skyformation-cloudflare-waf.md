@@ -8,7 +8,7 @@ Name = skyformation-cloudflare-waf
   DataType = "web-activity"
   IsHVF = true
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """|Skyformation|""", """requestClientApplication=AWS S3 Bucket""", """destinationServiceName=Custom Application""" ]
+  Conditions = [ """|Skyformation|""", """ResponseStatus"""", """FirewallMatchesActions""", """destinationServiceName=Custom Application""" ]
   Fields = [
     """"EdgeStartTimestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
     """({host}[\w\-.]+)\s+Skyformation""",

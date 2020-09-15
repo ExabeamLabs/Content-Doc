@@ -3,7 +3,7 @@
 {
 Name = cef-o365-app-login
     Vendor = Microsoft
-    Product = Office 365
+    Product = Microsoft Office 365
     Lms = ArcSight
     DataType = "app-login"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

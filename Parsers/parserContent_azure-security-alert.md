@@ -2,7 +2,7 @@
 ```Java
 {
 Name = azure-security-alert
-  Vendor = Microsoft Azure
+  Vendor = Microsoft
   Product = Microsoft Azure 
   Lms = Direct
   DataType = "alert"

@@ -33,7 +33,7 @@ ${WinParserTemplates.windows-vpn-direct-access} {
 }
 {
   Name = xml-4622
-  Vendor = Microsoft Windows
+  Vendor = Microsoft
   Product = Microsoft Windows
   Lms = Syslog
   DataType = "service-created"
@@ -59,7 +59,7 @@ ${WinParserTemplates.windows-vpn-direct-access} {
 
 {
   Name = xml-5478
-  Vendor = Microsoft Windows
+  Vendor = Microsoft
   Product = Microsoft Windows
   Lms = Syslog
   DataType = "service-created"

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = leef-checkpoint-alert
-  Vendor = Check Point Software Technologies
+  Vendor = Check Point Software
   Product = Next Generation Firewall
   Lms = Direct
   DataType = "network-alert"

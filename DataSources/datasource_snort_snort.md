@@ -31,3 +31,4 @@ _The following Parsers can be operationalized using log data from this data sour
 * [snort-alert](../Parsers/parserContent_snort-alert.md)
 * [snort-network-alert](../Parsers/parserContent_snort-network-alert.md)
 * [snort-network-alert-1](../Parsers/parserContent_snort-network-alert-1.md)
+* [snort-network-alert-2](../Parsers/parserContent_snort-network-alert-2.md)

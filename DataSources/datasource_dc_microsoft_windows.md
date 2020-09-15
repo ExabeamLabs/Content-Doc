@@ -230,6 +230,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [wls-4776](../Parsers/parserContent_wls-4776.md)
 * [wls-675](../Parsers/parserContent_wls-675.md)
 * [xml-4624](../Parsers/parserContent_xml-4624.md)
+* [xml-4624-1](../Parsers/parserContent_xml-4624-1.md)
 * [xml-4662](../Parsers/parserContent_xml-4662.md)
 * [xml-4662-jp](../Parsers/parserContent_xml-4662-jp.md)
 * [xml-4738](../Parsers/parserContent_xml-4738.md)

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = vmware-failed-auth
-  Vendor = VMware Horizon
+  Vendor = VMware
   Product = VMware Horizon
   Lms = Direct
   DataType = "authentication-failed"

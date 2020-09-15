@@ -3,7 +3,7 @@
 {
 Name = json-o365-app-login
   Vendor = Microsoft
-  Product =  Office 365
+  Product = Microsoft Office 365
   Lms = Splunk
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"

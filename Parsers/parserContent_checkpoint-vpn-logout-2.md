@@ -2,7 +2,7 @@
 ```Java
 {
 Name = checkpoint-vpn-logout-2
-  Vendor = Checkpoint
+  Vendor = Check Point Software
   Product = Checkpoint Identity Awareness
   Lms = Direct
   DataType = "vpn-logout"

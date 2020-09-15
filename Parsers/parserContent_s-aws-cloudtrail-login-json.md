@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-aws-cloudtrail-login-json
-  Vendor = AWS CloudTrail
+  Vendor = AWS
   Product = AWS CloudTrail
   Lms = Splunk
   DataType = "app-login"

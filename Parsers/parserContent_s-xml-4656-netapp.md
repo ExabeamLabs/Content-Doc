@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-xml-4656-netapp
-   Vendor = Microsoft Windows
+   Vendor = Microsoft
    Product = NetApp
    Lms = Splunk
    DataType = "file-operations"
@@ -32,7 +32,7 @@ Name = s-xml-4656-netapp
 
  {
    Name = s-xml-4660-netapp
-   Vendor = Microsoft Windows
+   Vendor = Microsoft
    Product = NetApp
    Lms = Splunk
    DataType = "file-operations"

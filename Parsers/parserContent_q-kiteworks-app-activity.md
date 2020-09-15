@@ -2,7 +2,7 @@
 ```Java
 {
 Name = q-kiteworks-app-activity
-  Product = KiteWorks
+  Product = Kiteworks
   DataType = "app-activity"
   Conditions = [ """User profile""", """is changed""", """Activity:""" ]
 }

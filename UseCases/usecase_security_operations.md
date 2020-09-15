@@ -7,6 +7,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 
 * [AD Audit](../DataSources/datasource_ad_audit_ad_audit.md)
 * [AWS](../DataSources/datasource_aws_bastion_aws.md)
+* [Auth0](../DataSources/datasource_auth0_auth0.md)
 * [BlueCat Networks Adonis](../DataSources/datasource_bluecat_networks_adonis_bluecat_networks_adonis.md)
 * [Bro](../DataSources/datasource_bro_bro.md)
 * [Centrify](../DataSources/datasource_centrify_centrify.md)
@@ -32,12 +33,11 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Splunk Stream](../DataSources/datasource_splunk_stream_splunk_stream.md)
 * [IBM](../DataSources/datasource_sterling_ibm.md)
 * [Symantec](../DataSources/datasource_symantec_critical_system_protection_symantec.md)
-* [Unix](../DataSources/datasource_unix_unix.md)
-* [Unix](../DataSources/datasource_unix_unix.md)
+* [UNIX](../DataSources/datasource_unix_unix.md)
 * [F5 VPN](../DataSources/datasource_vpn_f5_vpn.md)
 * [Microsoft Windows](../DataSources/datasource_windows_microsoft_windows.md)
 * [Extreme Networks](../DataSources/datasource_zebra_wireless_lan_management_extreme_networks.md)
-* [Unix](../DataSources/datasource_krb5kdc_unix.md)
+* [UNIX](../DataSources/datasource_krb5kdc_unix.md)
 
 
 ### Exabeam Event Types

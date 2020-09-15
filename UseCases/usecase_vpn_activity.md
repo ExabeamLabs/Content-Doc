@@ -6,7 +6,7 @@ Use Case: VPN Activity
 _The following list of Supported Exabeam Data Sources power this use case:_
 
 * [Airlock](../DataSources/datasource_airlock_airlock.md)
-* [Barracuda Firewall](../DataSources/datasource_barracuda_firewall_barracuda_firewall.md)
+* [Barracuda](../DataSources/datasource_barracuda_firewall_barracuda.md)
 * [CatoNetworks](../DataSources/datasource_catonetworks_catonetworks.md)
 * [Check Point Security Gateway](../DataSources/datasource_check_point_security_gateway_check_point_security_gateway.md)
 * [Check Point](../DataSources/datasource_check_point_check_point.md)
@@ -14,6 +14,8 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Cisco AnyConnect](../DataSources/datasource_cisco_anyconnect_cisco_anyconnect.md)
 * [Cisco ISE](../DataSources/datasource_cisco_ise_cisco_ise.md)
 * [Cisco Meraki MX appliances](../DataSources/datasource_cisco_meraki_mx_appliances_cisco_meraki_mx_appliances.md)
+* [Citrix](../DataSources/datasource_citrix_netscaler_vpn_citrix.md)
+* [Dell](../DataSources/datasource_dell_aventail_vpn_dell.md)
 * [Dropbox](../DataSources/datasource_dropbox_dropbox.md)
 * [Duo Security](../DataSources/datasource_duo_security_duo_security.md)
 * [Fortinet VPN](../DataSources/datasource_fortinet_vpn_fortinet_vpn.md)
@@ -27,9 +29,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Sonicwall](../DataSources/datasource_sonicwall_sonicwall.md)
 * [Sophos](../DataSources/datasource_sophos_sophos.md)
 * [Avaya VPN](../DataSources/datasource_vpn_avaya_vpn.md)
-* [Citrix Netscaler](../DataSources/datasource_vpn_citrix_netscaler.md)
 * [Cognitas CrossLink](../DataSources/datasource_vpn_cognitas_crosslink.md)
-* [Dell Aventail](../DataSources/datasource_vpn_dell_aventail.md)
 * [F5 VPN](../DataSources/datasource_vpn_f5_vpn.md)
 * [Juniper VPN](../DataSources/datasource_vpn_juniper_vpn.md)
 * [NCP](../DataSources/datasource_vpn_ncp.md)

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = barracuda-login-peer
-  Vendor = Barracuda Firewall
+  Vendor = Barracuda
   Product = Barracuda Firewall
   Lms = Direct
   DataType = "vpn-login"

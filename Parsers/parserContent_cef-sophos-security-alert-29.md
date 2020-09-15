@@ -43,7 +43,7 @@ ${SophosParserTemplates.cef-sophos-dlp-alert-1}{
 
 {
   Name = cef-sophos-dlp-alert-13
-  Vendor = Sophos EPP
+  Vendor = Sophos
   Product = Sophos Endpoint Protection
   Lms = ArcSight
   DataType = "dlp-alert"
@@ -72,7 +72,7 @@ ${SophosParserTemplates.cef-sophos-dlp-alert-1}{
 
 {
   Name = cef-sophos-usb-insert-1
-  Vendor = Sophos EPP
+  Vendor = Sophos
   Product = Sophos Endpoint Protection
   Lms = ArcSight
   DataType = "usb-insert"

@@ -560,6 +560,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [xml-1102-1](../Parsers/parserContent_xml-1102-1.md)
 * [xml-4622](../Parsers/parserContent_xml-4622.md)
 * [xml-4624](../Parsers/parserContent_xml-4624.md)
+* [xml-4624-1](../Parsers/parserContent_xml-4624-1.md)
 * [xml-4625](../Parsers/parserContent_xml-4625.md)
 * [xml-4625-1](../Parsers/parserContent_xml-4625-1.md)
 * [xml-4648](../Parsers/parserContent_xml-4648.md)

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = checkpoint-vpn-firewall
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point NGFW
   Lms = Direct
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

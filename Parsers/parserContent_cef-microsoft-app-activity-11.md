@@ -2,13 +2,13 @@
 ```Java
 {
 Name = cef-microsoft-app-activity-11
-  Product = Office 365
+  Product = Microsoft Office 365
   Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|user-undeleted|""" ]
 }
 
 ${MSParserTemplates.cef-microsoft-app-activity} {
   Name = cef-microsoft-app-activity-12
-  Product = Office 365
+  Product = Microsoft Office 365
   Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|user-updated|""" ]
 }
 
@@ -20,19 +20,19 @@ ${MSParserTemplates.cef-microsoft-app-activity} {
 
 ${MSParserTemplates.cef-microsoft-app-activity} {
   Name = cef-microsoft-app-activity-17
-  Product = Office 365
+  Product = Microsoft Office 365
   Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|resource-content-updated|""" ]
 }
 
 ${MSParserTemplates.cef-microsoft-app-activity} {
   Name = cef-microsoft-app-activity-18
-  Product = Office 365
+  Product = Microsoft Office 365
   Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|resource-created|""" ]
 }
 
 ${MSParserTemplates.cef-microsoft-app-activity} {
   Name = cef-microsoft-app-activity-39
-  Product = Office 365
+  Product = Microsoft Office 365
   Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """"Operation":"MoveToDeletedItems"""" ]
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields} [
     """"ParentFolder":.+?"Path":"\\*({object}[^"]+)"""",
@@ -48,7 +48,7 @@ ${MSParserTemplates.cef-microsoft-app-activity} {
 
 ${MSParserTemplates.cef-microsoft-app-activity} {
   Name = cef-microsoft-app-activity-19
-  Product = Office 365
+  Product = Microsoft Office 365
   Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|resource-deleted|""" ]
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields} [
     """"ParentFolder":.+?"Path":"\\*({object}[^"]+)"""",
@@ -60,7 +60,7 @@ ${MSParserTemplates.cef-microsoft-app-activity} {
 {
   Name = o365-inbox-rules
   Vendor = Microsoft
-  Product = Office 365
+  Product = Microsoft Office 365
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

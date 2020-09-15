@@ -2,7 +2,7 @@
 ```Java
 {
 Name = checkpoint-web-activity
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point NGFW
   Lms = Direct
   DataType = "web-activity"

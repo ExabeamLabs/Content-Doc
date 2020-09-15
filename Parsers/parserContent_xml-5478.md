@@ -2,7 +2,7 @@
 ```Java
 {
 Name = xml-5478
-  Vendor = Microsoft Windows
+  Vendor = Microsoft
   Product = Microsoft Windows
   Lms = Syslog
   DataType = "service-created"

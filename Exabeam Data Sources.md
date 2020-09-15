@@ -16,12 +16,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### AWS
 * [AWS Bastion](DataSources/datasource_aws_bastion_aws.md)
 * [AWS CloudTrail](DataSources/datasource_aws_cloudtrail_aws.md)
-#### AWS CloudTrail
-* [AWS CloudTrail](DataSources/datasource_aws_cloudtrail_aws_cloudtrail.md)
-#### AWS CloudWatch
-* [AWS CloudWatch](DataSources/datasource_aws_cloudwatch_aws_cloudwatch.md)
-#### AWS GuardDuty
-* [AWS GuardDuty](DataSources/datasource_aws_guardduty_aws_guardduty.md)
+* [AWS CloudWatch](DataSources/datasource_aws_cloudwatch_aws.md)
+* [AWS GuardDuty](DataSources/datasource_aws_guardduty_aws.md)
 #### Absolute SIEM Connector
 * [Absolute SIEM Connector](DataSources/datasource_absolute_siem_connector_absolute_siem_connector.md)
 #### Accelion Kiteworks
@@ -42,6 +38,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Firewall Analyzer](DataSources/datasource_firewall_analyzer_algosec.md)
 #### Amag Symmetry Access Control
 * [Amag Symmetry Access Control](DataSources/datasource_amag_symmetry_access_control_amag_symmetry_access_control.md)
+#### Apache
+* [Apache](DataSources/datasource_apache_apache.md)
 #### AppSense Application Manager
 * [AppSense Application Manager](DataSources/datasource_appsense_application_manager_appsense_application_manager.md)
 #### Arbor
@@ -56,6 +54,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [BitBucket](DataSources/datasource_bitbucket_atlassian_bitbucket.md)
 #### Attivo
 * [Attivo](DataSources/datasource_attivo_attivo.md)
+#### Auth0
+* [Auth0](DataSources/datasource_auth0_auth0.md)
 #### Avaya VPN
 * [VPN](DataSources/datasource_vpn_avaya_vpn.md)
 #### Avecto Defendpoint
@@ -70,16 +70,13 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [DNS](DataSources/datasource_dns_bind.md)
 #### Badgepoint
 * [Badgepoint](DataSources/datasource_badgepoint_badgepoint.md)
-#### Barracuda Email Security Gateway
-* [Barracuda Email Security Gateway](DataSources/datasource_barracuda_email_security_gateway_barracuda_email_security_gateway.md)
-#### Barracuda Firewall
-* [Barracuda Firewall](DataSources/datasource_barracuda_firewall_barracuda_firewall.md)
+#### Barracuda
+* [Barracuda Email Security Gateway](DataSources/datasource_barracuda_email_security_gateway_barracuda.md)
+* [Barracuda Firewall](DataSources/datasource_barracuda_firewall_barracuda.md)
 #### BeyondTrust
+* [BeyondTrust PasswordSafe](DataSources/datasource_beyondtrust_passwordsafe_beyondtrust.md)
+* [BeyondTrust PowerBroker](DataSources/datasource_beyondtrust_powerbroker_beyondtrust.md)
 * [BeyondTrust](DataSources/datasource_beyondtrust_beyondtrust.md)
-#### BeyondTrust PasswordSafe
-* [BeyondTrust PasswordSafe](DataSources/datasource_beyondtrust_passwordsafe_beyondtrust_passwordsafe.md)
-#### BeyondTrust PowerBroker
-* [BeyondTrust PowerBroker](DataSources/datasource_beyondtrust_powerbroker_beyondtrust_powerbroker.md)
 #### BitDefender
 * [BitDefender Gravityzone](DataSources/datasource_bitdefender_gravityzone_bitdefender.md)
 #### BitGlass
@@ -117,9 +114,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### CatoNetworks
 * [CatoNetworks](DataSources/datasource_catonetworks_catonetworks.md)
 #### Centrify
+* [Centrify Infrastructure Services](DataSources/datasource_centrify_infrastructure_services_centrify.md)
 * [Centrify](DataSources/datasource_centrify_centrify.md)
-#### Centrify Infrastructure Services
-* [Centrify Infrastructure Services](DataSources/datasource_centrify_infrastructure_services_centrify_infrastructure_services.md)
 #### CenturyLink Adaptive Threat Intelligence
 * [CenturyLink Adaptive Threat Intelligence](DataSources/datasource_centurylink_adaptive_threat_intelligence_centurylink_adaptive_threat_intelligence.md)
 #### Check Point
@@ -178,21 +174,15 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Cisco Web Security Appliance
 * [Threat](DataSources/datasource_threat_cisco_web_security_appliance.md)
 #### Citrix
+* [Citrix AppFW](DataSources/datasource_citrix_appfw_citrix.md)
 * [Citrix Endpoint Management](DataSources/datasource_citrix_endpoint_management_citrix.md)
+* [Citrix Gateway ActiveSync Connector](DataSources/datasource_citrix_gateway_activesync_connector_citrix.md)
+* [Citrix Netscaler VPN](DataSources/datasource_citrix_netscaler_vpn_citrix.md)
+* [Citrix Netscaler Web Logging](DataSources/datasource_citrix_netscaler_web_logging_citrix.md)
+* [Citrix Netscaler](DataSources/datasource_citrix_netscaler_citrix.md)
 * [Citrix ShareFile](DataSources/datasource_citrix_sharefile_citrix.md)
-#### Citrix AppFW
-* [AppFW](DataSources/datasource_appfw_citrix_appfw.md)
-#### Citrix Gateway ActiveSync Connector
-* [Citrix Gateway ActiveSync Connector](DataSources/datasource_citrix_gateway_activesync_connector_citrix_gateway_activesync_connector.md)
-#### Citrix Netscaler
-* [Citrix Netscaler](DataSources/datasource_citrix_netscaler_citrix_netscaler.md)
-* [VPN](DataSources/datasource_vpn_citrix_netscaler.md)
-#### Citrix Netscaler Web Logging
-* [Citrix Netscaler Web Logging](DataSources/datasource_citrix_netscaler_web_logging_citrix_netscaler_web_logging.md)
-#### Citrix XenApp
-* [Citrix XenApp](DataSources/datasource_citrix_xenapp_citrix_xenapp.md)
-#### Citrix XenDesktop
-* [Citrix XenDesktop](DataSources/datasource_citrix_xendesktop_citrix_xendesktop.md)
+* [Citrix XenApp](DataSources/datasource_citrix_xenapp_citrix.md)
+* [Citrix XenDesktop](DataSources/datasource_citrix_xendesktop_citrix.md)
 #### Clearsense
 * [Clearsense](DataSources/datasource_clearsense_clearsense.md)
 #### Clearswift SEG
@@ -234,14 +224,11 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Badge](DataSources/datasource_badge_datawatch.md)
 #### DatalakePortal
 * [DatalakePortal](DataSources/datasource_datalakeportal_datalakeportal.md)
-#### Dell Aventail
-* [VPN](DataSources/datasource_vpn_dell_aventail.md)
-#### Dell EMC
-* [Dell EMC](DataSources/datasource_dell_emc_dell_emc.md)
-#### Dell EMC RSA Authentication Manager
-* [RSA Authentication Manager](DataSources/datasource_rsa_authentication_manager_dell_emc_rsa_authentication_manager.md)
-#### Dell Quest TPAM
-* [Dell Quest TPAM](DataSources/datasource_dell_quest_tpam_dell_quest_tpam.md)
+#### Dell
+* [Dell Aventail VPN](DataSources/datasource_dell_aventail_vpn_dell.md)
+* [Dell EMC RSA Authentication Manager](DataSources/datasource_dell_emc_rsa_authentication_manager_dell.md)
+* [Dell EMC](DataSources/datasource_dell_emc_dell.md)
+* [Dell Quest TPAM](DataSources/datasource_dell_quest_tpam_dell.md)
 #### Digital Arts
 * [Digital Arts](DataSources/datasource_digital_arts_digital_arts.md)
 #### Digital Guardian Endpoint Protection
@@ -534,6 +521,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Microsoft
 * [Microsoft Advanced Threat Protection](DataSources/datasource_microsoft_advanced_threat_protection_microsoft.md)
 * [Microsoft Azure Active Directory](DataSources/datasource_microsoft_azure_active_directory_microsoft.md)
+* [Microsoft Azure](DataSources/datasource_microsoft_azure_microsoft.md)
 * [Microsoft Office 365](DataSources/datasource_microsoft_office_365_microsoft.md)
 * [Microsoft Windows](DataSources/datasource_microsoft_windows_microsoft.md)
 * [SQL Server](DataSources/datasource_sql_server_microsoft.md)
@@ -560,8 +548,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Microsoft NPS](DataSources/datasource_microsoft_nps_microsoft_nps.md)
 #### Microsoft Office 365
 * [Microsoft Office 365](DataSources/datasource_microsoft_office_365_microsoft_office_365.md)
-* [Office 365](DataSources/datasource_office_365_microsoft_office_365.md)
-* [Office365](DataSources/datasource_office365_microsoft_office_365.md)
 #### Microsoft RRA
 * [Microsoft RRA](DataSources/datasource_microsoft_rra_microsoft_rra.md)
 #### Microsoft SQL Server
@@ -579,6 +565,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Microsoft Windows
 * [DC](DataSources/datasource_dc_microsoft_windows.md)
 * [Microsoft Windows](DataSources/datasource_microsoft_windows_microsoft_windows.md)
+* [Microsoft](DataSources/datasource_microsoft_microsoft_windows.md)
 * [Windows PowerShell](DataSources/datasource_windows_powershell_microsoft_windows.md)
 * [Windows](DataSources/datasource_windows_microsoft_windows.md)
 #### Microsoft Windows AppLocker
@@ -644,6 +631,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [OSSEC](DataSources/datasource_ossec_ossec.md)
 #### ObserveIT
 * [ObserveIT](DataSources/datasource_observeit_observeit.md)
+#### Okta
+* [Okta MFA](DataSources/datasource_okta_mfa_okta.md)
 #### Okta MFA
 * [Okta MFA](DataSources/datasource_okta_mfa_okta_mfa.md)
 #### Onapsis
@@ -943,26 +932,22 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Tripwire Enterprise](DataSources/datasource_tripwire_enterprise_tripwire_enterprise.md)
 #### Tufin
 * [SecureTrack](DataSources/datasource_securetrack_tufin.md)
+#### UNIX
+* [DHCP](DataSources/datasource_dhcp_unix.md)
+* [Sendmail](DataSources/datasource_sendmail_unix.md)
+* [UNIX Auditd](DataSources/datasource_unix_auditd_unix.md)
+* [UNIX](DataSources/datasource_unix_unix.md)
+* [dhcpd](DataSources/datasource_dhcpd_unix.md)
+* [krb5kdc](DataSources/datasource_krb5kdc_unix.md)
+* [systemd](DataSources/datasource_systemd_unix.md)
 #### USB
 * [USB](DataSources/datasource_usb_usb.md)
 #### Unified Security Gateway
 * [Huawei](DataSources/datasource_huawei_unified_security_gateway.md)
-#### Unix
-* [DHCP](DataSources/datasource_dhcp_unix.md)
-* [Sendmail](DataSources/datasource_sendmail_unix.md)
-* [UNIX](DataSources/datasource_unix_unix.md)
-* [Unix Auditd](DataSources/datasource_unix_auditd_unix.md)
-* [Unix](DataSources/datasource_unix_unix.md)
-* [dhcpd](DataSources/datasource_dhcpd_unix.md)
-* [krb5kdc](DataSources/datasource_krb5kdc_unix.md)
-* [systemd](DataSources/datasource_systemd_unix.md)
 #### Unknown
 * [Badge](DataSources/datasource_badge_unknown.md)
 #### VBCorp
 * [VBCorp](DataSources/datasource_vbcorp_vbcorp.md)
-#### VMWare
-* [NSX](DataSources/datasource_nsx_vmware.md)
-* [VMware](DataSources/datasource_vmware_vmware.md)
 #### VMware
 * [NSX](DataSources/datasource_nsx_vmware.md)
 * [VMware](DataSources/datasource_vmware_vmware.md)

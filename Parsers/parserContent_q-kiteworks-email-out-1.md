@@ -2,7 +2,7 @@
 ```Java
 {
 Name = q-kiteworks-email-out-1
-  Product = KiteWorks
+  Product = Kiteworks
   Conditions = [ """Activity: Created draft""", """with files""" ]
 }
 

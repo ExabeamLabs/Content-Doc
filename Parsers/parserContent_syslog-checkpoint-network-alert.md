@@ -2,7 +2,7 @@
 ```Java
 {
 Name = syslog-checkpoint-network-alert
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point Threat Prevention
   Lms = Direct
   DataType = "network-alert"

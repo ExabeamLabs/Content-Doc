@@ -2,7 +2,7 @@
 ```Java
 {
 Name = syslog-symantec-dlp-alert-3
-  Vendor = Symantec DLP
+  Vendor = Symantec
   Product = Symantec DLP
   Lms = Direct
   DataType = "dlp-alert"

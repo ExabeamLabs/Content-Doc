@@ -36,7 +36,7 @@ Name = netscalar-remote-access-1
 
 {
   Name = netscaler-web-activity-1
-  Vendor = Citrix Netscaler
+  Vendor = Citrix
   Product = Web Logging
   Lms = Direct
   DataType = "web-activity"
