@@ -2,7 +2,7 @@
 ```Java
 {
 Name = checkpoint-5599-network-connection
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point NGFW
   Lms = Direct
   DataType = "network-connection"
@@ -29,7 +29,7 @@ Name = checkpoint-5599-network-connection
 
 {
   Name = checkpoint-web-activity-1
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point NGFW
   Lms = Direct
   TimeFormat = "epoch"

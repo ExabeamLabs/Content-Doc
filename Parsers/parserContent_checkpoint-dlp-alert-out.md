@@ -2,7 +2,7 @@
 ```Java
 {
 Name = checkpoint-dlp-alert-out
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point NGFW
   Lms = Direct
   DataType = "dlp-alert"

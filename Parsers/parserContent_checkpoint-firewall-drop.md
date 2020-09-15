@@ -18,7 +18,7 @@ ${CheckpointParserTemplates.s-checkpoint-firewall} {
 
 {
   Name = cef-connectra-vpn-login
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point Security Gateway
   Lms = ArcSight
   DataType = "vpn-start"
@@ -40,7 +40,7 @@ ${CheckpointParserTemplates.s-checkpoint-firewall} {
 
 {
   Name = cef-connectra-vpn-changeip
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point Security Gateway
   Lms = ArcSight
   DataType = "vpn-start"
@@ -62,7 +62,7 @@ ${CheckpointParserTemplates.s-checkpoint-firewall} {
 
 {
   Name = cef-connectra-vpn-login-failed
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point Security Gateway
   Lms = ArcSight
   DataType = "failed-vpn-login"
@@ -83,7 +83,7 @@ ${CheckpointParserTemplates.s-checkpoint-firewall} {
 
 {
   Name = checkpoint-vpn-login-2
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point Security Gateway
   Lms = Direct
   DataType = "vpn-login"

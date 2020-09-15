@@ -25,7 +25,7 @@ ${CheckpointParserTemplates.checkpoint-firewall-3}{
 
 {
   Name = cef-checkpoint-network-alert
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point Threat Prevention
   Lms = ArcSight
   DataType = "network-alert"

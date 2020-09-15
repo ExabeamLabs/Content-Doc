@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-checkpoint-alert
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point Endpoint Security
   Lms = Splunk
   DataType = "alert"

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-checkpoint-alert
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point Endpoint Security
   Lms = ArcSight
   DataType = "alert"

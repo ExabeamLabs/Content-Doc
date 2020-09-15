@@ -3,7 +3,7 @@
 {
 Name = o365-inbox-rules-all-2
   Vendor = Microsoft
-  Product = Office 365
+  Product = Microsoft Office 365
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -30,7 +30,7 @@ Name = o365-inbox-rules-all-2
  {
   Name = o365-teams-activity-1
   Vendor = Microsoft
-  Product = Office 365
+  Product = Microsoft Office 365
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

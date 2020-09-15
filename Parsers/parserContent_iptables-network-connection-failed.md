@@ -25,8 +25,8 @@ Name = iptables-network-connection-failed
 
 {
   Name = netwrix-file-activity
-  Vendor = NetWrix
-  Product = NetWrix Auditor
+  Vendor = Netwrix
+  Product = Netwrix Auditor
   Lms = Direct
   DataType = "file-operations"
   IsHVF = true

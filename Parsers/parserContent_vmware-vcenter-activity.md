@@ -37,7 +37,7 @@ Name = vmware-vcenter-activity
 
 {
   Name = vmware-horizon-logon
-  Vendor = VMware Horizon
+  Vendor = VMware
   Product = VMware Horizon
   Lms = Direct
   DataType = "remote-logon"

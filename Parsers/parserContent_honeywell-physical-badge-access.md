@@ -3,7 +3,7 @@
 {
 Name = honeywell-physical-badge-access
   Vendor = Honeywell 
-  Product = PROWATCH
+  Product = Honeywell Pro-Watch
   Lms = Direct
   DataType = "physical-access"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

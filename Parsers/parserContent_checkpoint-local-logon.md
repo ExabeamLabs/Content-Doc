@@ -2,7 +2,7 @@
 ```Java
 {
 Name = checkpoint-local-logon
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point NGFW
   Lms = Direct
   DataType = "local-logon"

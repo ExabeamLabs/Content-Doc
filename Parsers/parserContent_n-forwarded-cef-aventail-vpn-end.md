@@ -2,7 +2,7 @@
 ```Java
 {
 Name = n-forwarded-cef-aventail-vpn-end
-  Vendor = Dell Aventail
+  Vendor = Dell
   Product = Aventail
   Lms = NitroCefSyslog
   DataType = "vpn-end"

@@ -3,7 +3,7 @@
 {
 Name = json-o365-failed-app-login
   Vendor = Microsoft
-  Product =  Office 365
+  Product = Microsoft Office 365
   Lms = Splunk
   DataType = "failed-app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"

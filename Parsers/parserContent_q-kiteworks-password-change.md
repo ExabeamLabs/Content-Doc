@@ -2,7 +2,7 @@
 ```Java
 {
 Name = q-kiteworks-password-change
-  Product = KiteWorks
+  Product = Kiteworks
   DataType = "password-change"
   Conditions = [ """Updated their password""", """Activity:""" ]
 }

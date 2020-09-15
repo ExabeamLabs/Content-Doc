@@ -3,7 +3,7 @@
 {
 Name = s-O365-dlp-email
   Vendor = Microsoft
-  Product = Office 365
+  Product = Microsoft Office 365
   Lms = Splunk
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = checkpoint-vpn-login-1
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point Security Gateway
   Lms = Direct
   DataType = "vpn-start"

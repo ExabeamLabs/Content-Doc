@@ -2,7 +2,7 @@
 ```Java
 {
 Name = q-kiteworks-app-login
-  Product = KiteWorks
+  Product = Kiteworks
   DataType = "app-login"
   Conditions = [ """Session started""", """Activity:""" ]
 }

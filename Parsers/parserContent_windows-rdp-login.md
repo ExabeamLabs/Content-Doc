@@ -2,7 +2,7 @@
 ```Java
 {
 Name = windows-rdp-login
-  Vendor = Microsoft Windows
+  Vendor = Microsoft
   Product= Windows
   Lms = Splunk
   DataType = "remote-logon"

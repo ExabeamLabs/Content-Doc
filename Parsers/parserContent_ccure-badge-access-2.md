@@ -21,14 +21,14 @@ Name = ccure-badge-access-2
 
 ${ProWatchParserTemplates.prowatch-badge-access}{
   Name = prowatch-badge-access
-  Product = ProWatch
+  Product = Honeywell Pro-Watch
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """"evnt_dat":"""", """"evnt_descrp":"""", """"badge_employeeid":"""", """"cardstatus_descrp":"""" ]
 }
 
 ${ProWatchParserTemplates.prowatch-badge-access}{
   Name = prowatch-badge-access-1
-  Product = ProWatch
+  Product = Honeywell Pro-Watch
   Conditions = [ """"BADGENO":""", """"EVNT_DESCRP":""", """"LOCATION":""" ]
 }
 

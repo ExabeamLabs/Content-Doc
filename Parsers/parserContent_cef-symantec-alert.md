@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-symantec-alert
-  Vendor = Symantec WSS
+  Vendor = Symantec
   Product = Symantec WSS
   Lms = ArcSight
   DataType = "alert"

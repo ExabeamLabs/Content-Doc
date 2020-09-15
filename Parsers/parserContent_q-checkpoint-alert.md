@@ -2,7 +2,7 @@
 ```Java
 {
 Name = q-checkpoint-alert
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point Endpoint Security
   Lms = QRadar
   DataType = "alert"

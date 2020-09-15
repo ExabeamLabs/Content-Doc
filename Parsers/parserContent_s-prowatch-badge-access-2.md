@@ -2,14 +2,14 @@
 ```Java
 {
 Name = s-prowatch-badge-access-2
-  Product = ProWatch
+  Product = Honeywell Pro-Watch
   Conditions = [ """REFID_TYP=""", """EVNT_DESCRP=""", """CARDNO="""" ]
 }
 
   {
     Name = q-prowatch-badge-access
-    Vendor = ProWatch
-  Product = ProWatch
+    Vendor = Honeywell
+  Product = Honeywell Pro-Watch
     Lms = QRadar
     DataType = "physical-access"
     TimeFormat =  "yyyy-MM-dd H:mm:ss"

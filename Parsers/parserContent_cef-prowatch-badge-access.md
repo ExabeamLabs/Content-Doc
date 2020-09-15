@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-prowatch-badge-access
-    Vendor = ProWatch
-  Product = ProWatch
+    Vendor = Honeywell
+  Product = Honeywell Pro-Watch
     Lms = ArcSight
     DataType = "physical-access"
     TimeFormat =  "epoch"

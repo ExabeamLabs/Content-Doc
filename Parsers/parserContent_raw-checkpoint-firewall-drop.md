@@ -8,7 +8,7 @@ Name = raw-checkpoint-firewall-drop
 
 {
   Name = raw-checkpoint-firewall-1
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point NGFW
   Lms = Direct
   DataType = "network-connection"

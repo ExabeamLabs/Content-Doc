@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-aws-vpc-netflow-connection
-  Vendor = Amazon
+  Vendor = AWS
   Product = AWS
   Lms = ArcSight
   DataType = "netflow-connection"

@@ -23,7 +23,7 @@ Name = xml-1102-1
 
 {
   Name = windows-rdp-login
-  Vendor = Microsoft Windows
+  Vendor = Microsoft
   Product= Windows
   Lms = Splunk
   DataType = "remote-logon"

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = ur-authmgr-auth-failed
-  Vendor = Dell EMC
+  Vendor = Dell
   Product = RSA Authentication Manager
   Lms = Sumo
   DataType = "authentication-failed"

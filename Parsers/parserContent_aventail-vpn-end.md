@@ -2,7 +2,7 @@
 ```Java
 {
 Name = aventail-vpn-end
-  Vendor = Dell Aventail
+  Vendor = Dell
   Product = Aventail
   Lms = Splunk
   DataType = "vpn-end"

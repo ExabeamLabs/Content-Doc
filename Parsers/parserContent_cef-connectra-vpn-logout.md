@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-connectra-vpn-logout
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point Security Gateway
   Lms = ArcSight
   DataType = "vpn-end"
@@ -23,7 +23,7 @@ Name = cef-connectra-vpn-logout
 
 {
   Name = connectra-vpn-login
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point Security Gateway
   Lms = Direct
   DataType = "vpn-start"

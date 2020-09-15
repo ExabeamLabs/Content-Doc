@@ -2,8 +2,8 @@
 ```Java
 {
 Name = bitglass-app-login-failed
-  Vendor = BitGlass
-  Product = BitGlass
+  Vendor = Bitglass
+  Product = Bitglass
   Lms = Direct
   DataType = "failed-app-login"
   TimeFormat = "dd MMM yyyy HH:mm:ss"

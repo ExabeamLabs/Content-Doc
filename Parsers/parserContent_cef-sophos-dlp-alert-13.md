@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-sophos-dlp-alert-13
-  Vendor = Sophos EPP
+  Vendor = Sophos
   Product = Sophos Endpoint Protection
   Lms = ArcSight
   DataType = "dlp-alert"
@@ -31,7 +31,7 @@ Name = cef-sophos-dlp-alert-13
 
 {
   Name = cef-sophos-usb-insert-1
-  Vendor = Sophos EPP
+  Vendor = Sophos
   Product = Sophos Endpoint Protection
   Lms = ArcSight
   DataType = "usb-insert"
