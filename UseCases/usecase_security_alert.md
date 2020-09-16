@@ -16,6 +16,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Armis](../DataSources/datasource_armis_armis.md)
 * [AssetView](../DataSources/datasource_assetview_assetview.md)
 * [Attivo](../DataSources/datasource_attivo_attivo.md)
+* [Auth0](../DataSources/datasource_auth0_auth0.md)
 * [Avecto Defendpoint Service](../DataSources/datasource_avecto_defendpoint_service_avecto_defendpoint_service.md)
 * [BeyondTrust](../DataSources/datasource_beyondtrust_powerbroker_beyondtrust.md)
 * [BitDefender](../DataSources/datasource_bitdefender_gravityzone_bitdefender.md)

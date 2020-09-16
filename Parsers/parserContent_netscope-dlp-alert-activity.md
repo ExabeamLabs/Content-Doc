@@ -33,9 +33,4 @@ Name = netscope-dlp-alert-activity
       """ext_url=({full_url}[^ ]+)"""
     ]
 }
-${WatchGuardSParserTemplates.watch-guard-events}{
-  Name = watchguard-event-1
-  DataType = "network-connection"
-  Conditions = [ """msg_id=""", """3000-0148""", """firewall:""" ]
-}
 ```

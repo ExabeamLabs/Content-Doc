@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-cyberark-security-alert
-  Vendor = CyberArk Vault
+  Vendor = CyberArk
   Product = CyberArk Vault
   Lms = ArcSight
   DataType = "alert"

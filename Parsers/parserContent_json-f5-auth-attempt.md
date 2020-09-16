@@ -2,7 +2,7 @@
 ```Java
 {
 Name = json-f5-auth-attempt
-  Vendor = F5
+  Vendor = F5 Networks
   Product = Big-IP Access Policy Manager (APM)
   Lms = Direct
   DataType = "authentication-attempt"

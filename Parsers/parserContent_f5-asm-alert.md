@@ -2,7 +2,7 @@
 ```Java
 {
 Name = f5-asm-alert-1
-  Vendor = F5
+  Vendor = F5 Networks
   Product = F5 Application Security Manager
   Lms = Direct
   DataType = "alert"
