@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-juniper-vpn-timeout-1
-  Vendor = Juniper VPN
+  Vendor = Juniper Networks
   Product = Juniper VPN
   Lms = ArcSight
   DataType = "vpn-end"

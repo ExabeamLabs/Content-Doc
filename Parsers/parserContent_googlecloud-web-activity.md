@@ -2,7 +2,7 @@
 ```Java
 {
 Name = googlecloud-web-activity
-  Vendor = Google Cloud Platform
+  Vendor = Google
   Product = GCP Squid Proxy
   Lms = Direct
   DataType = "web-activity"

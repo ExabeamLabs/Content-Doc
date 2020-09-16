@@ -17,7 +17,6 @@ _The following Use Cases can be operationalized using log data from this data so
 * [Data Loss Prevention](../UseCases/usecase_data_loss_prevention.md)
 * [Email Activity](../UseCases/usecase_email_activity.md)
 * [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
-* [Endpoint Activivty](../UseCases/usecase_endpoint_activivty.md)
 * [Executives](../UseCases/usecase_executives.md)
 * [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)
 * [Pass The Hash and Golden Ticket](../UseCases/usecase_pass_the_hash_and_golden_ticket.md)

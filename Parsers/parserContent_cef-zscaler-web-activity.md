@@ -45,6 +45,7 @@ Name = cef-zscaler-web-activity
     """\scs6=(None|({dlp_engine}.+?))\s*(\w+=|$)""",
     """sourcehost=(NA|None|\$NULL|({src_host}.+?))\s+destinationhost=""",
     """destinationhost=(NA|None|\$NULL|({dest_host}.+?))\s+\w+""",
+    """devicehostname=({src_host}[^\s"]+?)\s*(\w+=|$)""",
   ]
   DupFields = ["ransomware_name->threat_category", "risk_level->suspicious_content"]
 }
