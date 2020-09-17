@@ -2,7 +2,7 @@
 ```Java
 {
 Name = ironport-proxy
-    Vendor = IronPort Web Security
+    Vendor = Cisco
   Product = IronPort Web Security
     Lms = Direct
     DataType = "web-activity"
