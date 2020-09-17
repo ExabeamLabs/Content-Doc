@@ -2,7 +2,7 @@
 ```Java
 {
 Name = suricata-network-alert
-  Vendor = Suricata IDS
+  Vendor = Suricata
   Product = Suricata IDS
   Lms = Direct
   DataType = "network-alert"

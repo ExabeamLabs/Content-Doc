@@ -3,7 +3,7 @@
 {
 Name = netscalar-remote-access-1
  Product =Netscaler VPN
- Vendor =Netscaler VPN
+ Vendor = Citrix
  Lms = Direct
  TimeFormat = "MM/dd/yyyy:HH:mm:ss"
  DataType = "remote-access"

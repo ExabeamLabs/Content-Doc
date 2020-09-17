@@ -2,7 +2,7 @@
 ```Java
 {
 Name = infoblox-bloxone-dns-response 
-  Vendor = Infoblox BloxOne
+  Vendor = Infoblox
   Product = Infoblox BloxOne
   Lms = Direct
   DataType = "dns-response"
