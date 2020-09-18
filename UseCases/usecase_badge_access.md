@@ -62,6 +62,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Unified Security Gateway](../DataSources/datasource_huawei_unified_security_gateway.md)
 * [IBM DB2](../DataSources/datasource_ibm_db2_ibm_db2.md)
 * [Infoblox](../DataSources/datasource_infoblox_infoblox.md)
+* [Johnson Controls](../DataSources/datasource_johnson_controls_p2000_johnson_controls.md)
 * [Kemp Load Balancer](../DataSources/datasource_kemp_load_balancer_kemp_load_balancer.md)
 * [LanScope Cat](../DataSources/datasource_lanscope_cat_lanscope_cat.md)
 * [IBM Lotus Mobile Connect](../DataSources/datasource_lotus_mobile_connect_ibm_lotus_mobile_connect.md)

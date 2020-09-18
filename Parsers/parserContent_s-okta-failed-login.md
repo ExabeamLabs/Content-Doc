@@ -3,7 +3,7 @@
 {
 Name = s-okta-failed-login-4
     Vendor = Okta
-    Product = Okta MFA
+    Product = Okta Adaptive MFA
     Lms = Splunk
     DataType = "failed-app-login"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

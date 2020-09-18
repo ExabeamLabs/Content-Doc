@@ -3,7 +3,7 @@
 {
 Name = iis-owa-web-sync-1
     Vendor = Microsoft
-    Product = Microsoft Owa 
+    Product = Microsoft Outlook on the web
     Lms = Direct
     DataType = "web-activity"
     TimeFormat = "yyyy-MM-dd HH:mm:ss"

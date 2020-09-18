@@ -3,7 +3,7 @@
 {
 Name = leef-checkpoint-alert
   Vendor = Check Point Software
-  Product = Next Generation Firewall
+  Product = Check Point NGFW
   Lms = Direct
   DataType = "network-alert"
   TimeFormat = "epoch_sec"
