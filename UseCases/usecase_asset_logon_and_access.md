@@ -140,6 +140,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [InfoWatch](../DataSources/datasource_infowatch_infowatch.md)
 * [Infoblox](../DataSources/datasource_infoblox_infoblox.md)
 * [IronPort Email](../DataSources/datasource_ironport_email_ironport_email.md)
+* [Johnson Controls](../DataSources/datasource_johnson_controls_p2000_johnson_controls.md)
 * [Juniper Networks](../DataSources/datasource_juniper_srx_juniper_networks.md)
 * [Kemp Load Balancer](../DataSources/datasource_kemp_load_balancer_kemp_load_balancer.md)
 * [KiteWorks](../DataSources/datasource_kiteworks_kiteworks.md)

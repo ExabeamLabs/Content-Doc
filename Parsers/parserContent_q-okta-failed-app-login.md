@@ -3,7 +3,7 @@
 {
 Name = q-okta-failed-app-login
     Vendor = Okta
-    Product = Okta MFA
+    Product = Okta Adaptive MFA
     Lms = QRadar
     DataType = "failed-app-login"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

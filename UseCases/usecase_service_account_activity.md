@@ -150,6 +150,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Imprivata](../DataSources/datasource_imprivata_imprivata.md)
 * [InfoWatch](../DataSources/datasource_infowatch_infowatch.md)
 * [Infoblox](../DataSources/datasource_infoblox_infoblox.md)
+* [Johnson Controls](../DataSources/datasource_johnson_controls_p2000_johnson_controls.md)
 * [Juniper Networks ATP](../DataSources/datasource_juniper_networks_atp_juniper_networks_atp.md)
 * [Juniper Networks](../DataSources/datasource_juniper_srx_juniper_networks.md)
 * [Kaspersky AV](../DataSources/datasource_kaspersky_av_kaspersky_av.md)

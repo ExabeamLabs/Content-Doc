@@ -3,7 +3,7 @@
 {
 Name = windows-rdp-login
   Vendor = Microsoft
-  Product= Windows
+  Product = Microsoft Windows
   Lms = Splunk
   DataType = "remote-logon"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

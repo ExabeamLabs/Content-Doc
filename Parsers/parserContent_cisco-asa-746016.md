@@ -3,7 +3,7 @@
 {
 Name = cisco-asa-746016
   Vendor = Cisco
-  Product = Adaptive Security Appliance
+  Product = Cisco Adaptive Security Appliance
   Lms = Direct
   DataType = "dns-response"
   IsHVF = true

@@ -3,7 +3,7 @@
 {
 Name = s-mimecast-app-login
   Vendor = Mimecast
-  Product = Email Security
+  Product = Mimecast Email Security
   Lms = Splunk
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

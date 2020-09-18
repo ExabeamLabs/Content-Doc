@@ -425,6 +425,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Web Proxy](DataSources/datasource_web_proxy_ironport_web_security.md)
 #### JH
 * [JH](DataSources/datasource_jh_jh.md)
+#### Johnson Controls
+* [Johnson Controls P2000](DataSources/datasource_johnson_controls_p2000_johnson_controls.md)
 #### Juniper
 * [Juniper](DataSources/datasource_juniper_juniper.md)
 #### Juniper Networks

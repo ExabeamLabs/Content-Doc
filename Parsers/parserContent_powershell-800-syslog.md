@@ -3,7 +3,7 @@
 {
 Name = powershell-800-syslog
   Vendor = Microsoft
-  Product = Windows
+  Product = Microsoft Windows
   Lms = Direct
   DataType = "powershell-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
