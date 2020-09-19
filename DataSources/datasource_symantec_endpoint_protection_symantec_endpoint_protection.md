@@ -61,7 +61,6 @@ _The following Parsers can be operationalized using log data from this data sour
 * [symantec-alert-jp-3](../Parsers/parserContent_symantec-alert-jp-3.md)
 * [symantec-edr-alert-1](../Parsers/parserContent_symantec-edr-alert-1.md)
 * [symantec-edr-alert-2](../Parsers/parserContent_symantec-edr-alert-2.md)
-* [symantec-epp-alert](../Parsers/parserContent_symantec-epp-alert.md)
 * [symantec-epp-alert-chinese](../Parsers/parserContent_symantec-epp-alert-chinese.md)
 * [symantec-epp-network-alert](../Parsers/parserContent_symantec-epp-network-alert.md)
 * [symantec-epp-network-alert-1](../Parsers/parserContent_symantec-epp-network-alert-1.md)
