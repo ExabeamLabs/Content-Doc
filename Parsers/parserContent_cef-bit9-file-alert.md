@@ -10,6 +10,7 @@ Name = cef-bit9-file-alert
   TimeFormat = "MM dd yyyy HH:mm:ss"
   Conditions = [ """|Bit9|Security Platform|""", " fname=" ]
   Fields = [
+    """({time}\d\d \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
     """exabeam_\w+=({time}\d\d \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=([^=]+?@\s*)?({host}[^\s]+)""",
     """(\||\s)dvc=(|({host}.+?))\s+(\w+=|$)""",

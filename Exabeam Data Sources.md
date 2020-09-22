@@ -648,6 +648,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Onguard
 * [Onguard](DataSources/datasource_onguard_onguard.md)
 #### Oracle
+* [Oracle Access Manager](DataSources/datasource_oracle_access_manager_oracle.md)
 * [Oracle Database](DataSources/datasource_oracle_database_oracle.md)
 * [Siebel CRM](DataSources/datasource_siebel_crm_oracle.md)
 #### Oracle Solaris

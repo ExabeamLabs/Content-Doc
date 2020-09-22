@@ -7,9 +7,10 @@ Name = securesphere-db-cuseqsv
   Lms = Direct
   DataType = "database-operation"
   IsHVF = true
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
+  TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """imperva_version=""", """event_type=""", """sql_error=""" ]
   Fields = [
+    """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_raw=.*?({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[\w\-.]+)""",
     """(,\s+|,\s*)dest_ip=\s*({host}\S+?)\s*(,|$)""",

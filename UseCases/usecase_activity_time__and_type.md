@@ -197,6 +197,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [OneLogin](../DataSources/datasource_onelogin_onelogin.md)
 * [Onguard](../DataSources/datasource_onguard_onguard.md)
 * [OAM](../DataSources/datasource_oracle_access_manager_oam.md)
+* [Oracle](../DataSources/datasource_oracle_access_manager_oracle.md)
 * [Osirium](../DataSources/datasource_osirium_osirium.md)
 * [Palo Alto Networks](../DataSources/datasource_pan_config_palo_alto_networks.md)
 * [Palo Alto Networks Aperture](../DataSources/datasource_palo_alto_networks_aperture_palo_alto_networks_aperture.md)

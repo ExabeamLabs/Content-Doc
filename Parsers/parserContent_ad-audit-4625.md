@@ -2,7 +2,7 @@
 ```Java
 {
 Name = ad-audit-4625
-  Vendor = AD Audit
+  Vendor = ManageEngine
   Product = AD Audit
   Lms = Direct
   DataType = "windows-failed-logon"

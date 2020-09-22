@@ -7,7 +7,7 @@ Name = cef-zscaler-web-activity
   Lms = ArcSight
   DataType = "web-activity"
   IsHVF = true
-  TimeFormat = "MMM dd yyyy HH:mm:ss"
+  TimeFormat = "epoch"
   Conditions = [ """|Zscaler|NSSWeblog|""", """requestClientApplication=""", """act=""" ]
   Fields = [
     """\srt=({time}\d+)""",

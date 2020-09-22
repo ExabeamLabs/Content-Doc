@@ -6,10 +6,11 @@ Name = securesphere-alert
   Product = Imperva SecureSphere
   Lms = QRadar
   DataType = "alert"
-  TimeFormat = "epoch"
+  TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """|at=Securesphere Alert|""", """|g=""", """|u=""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
+    """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_endTime=({time}\d+)""",
     """\|ad=({alert_name}.+?)( (from|by|in) .+?)?\|""",
     """\|an=({alert_type}[^|]+)""",

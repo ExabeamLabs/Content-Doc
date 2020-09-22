@@ -10,9 +10,10 @@ Name = s-okta-failed-app-login
     Conditions = [ """Sign-in Failure""",""""published":"""]
     Fields = [
       """"published":\s*"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+      """exabeam_host=({host}[\w\-.]+)""",
       """"ipAddress":\s*"({src_ip}[^"]+)"""",
       """"login":\s*"({user}[^"]+)"""",
-    """"login":\s*"[^@]+@({domain}[^"]+)"""",
+      """"login":\s*"[^@]+@({domain}[^"]+)"""",
       """Sign-(I|i)n Failed\s*-\s*({failure_reason}[^"]+)"""",
       """AppInstance[^\}\{]+displayName":\s*"({app}[^"]+)"""",
       """\{.+?displayName":\s*"({app}[^"]+)"[^\}\{]+AppInstance""",
