@@ -16,7 +16,7 @@ Name = cef-asa-svc-vpn-start
     """\sduser=({user_fullname}(\w+\s+)+\w+)\s+(\w+=|$)""",
     """\sduser=({user}[^\s@]+)\s+(\w+=|$)""",
     """\sduser=({user_email}[^\s@]+@[^\s@]+)\s+(\w+=|$)""",
-    """\sdhost=(?: |<?({src_ip}[a-fA-F\d.:]+)>?)\s+\w+=""",
+    """\sdhost=(?: |<?({src_ip}[a-fA-F\d.:]+)|({src_host}[^\s]+)>?)\s+\w+=""",
     """\ssrc=({src_translated_ip}[a-fA-F\d.:]+)""",
     """\sdst=({dst_ip}[a-fA-F\d.:]+)""",
 	"""\sc6a3=(?: |0:0:0:0:0:0:0:0|({src_translated_ip}.+?))\s+\w+="""

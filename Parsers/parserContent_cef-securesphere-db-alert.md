@@ -7,11 +7,12 @@ Name = cef-securesphere-db-alert
   Lms = Splunk
   DataType = "database-alert"
   IsHVF = true
-  TimeFormat = "dd MMMM yyyy HH:mm:ss"
+  TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ """|Imperva Inc.|SecureSphere""", """cat=Alert""", """=ServerGroup""", """Query"""]
   Fields = [
     """exabeam_host=({host}[\w\-.]+)""",
     """cs7=\s*\(({time}\d\d \w+ \d{4} \d\d:\d\d:\d\d)\)\s*cs7Label=EventTime""",
+    """rt=({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
     """\d\d:\d\d:\d\d ({host}.+?) CEF:""",
     """\sduser="*(?:n\/a|(({domain}[^\\\s"]+)\\+)?({user}[^\\\s"]+?))"*\s*\w+=""",
     """\scs4=(?: |({app}.+?))\s*\w+=""",

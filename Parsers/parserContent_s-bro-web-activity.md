@@ -24,7 +24,7 @@ Name = s-bro-web-activity
     """^[^\t]*?\t([^\t]+\t){10}Mozilla\/.+\((({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
     """^[^\t]*?\t([^\t]+\t){13}({result_code}\w+)""",
     """^[^\t]*?\t([^\t]+\t){14}({result}(-|[^\t]+))""",
-    """^[^\t]*?\t([^\t]+\t){25}({mime}[^\t]+)""",
+    """^[^\t]*?\t([^\t]+\t){25}\s*({mime}[^\t]+?)\s*""",
   ]
 }
 ```

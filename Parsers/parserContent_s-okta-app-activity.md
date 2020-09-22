@@ -13,9 +13,7 @@ Name = s-okta-app-activity
 
   """"published":\s*"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
   """"ipAddress":\s*"({src_ip}[^"]+)"""",
-  """"login":\s*"({user}[^"\s@]+)"""",
-  """"login":\s*"({user_email}[^"\s@]+@[^"\s@]+)"""",
-  """"login":\s*"[^@]+@({domain}[^"]+)"""",
+  """targets.+?login":\s*"(({user_email}[^"\s@]+@({domain}[^"\s@,]+))|({user}[^"\s,@]+))""",
         """AppInstance[^\}\{]+displayName":\s*"({app}[^"]+)"""",
         """\{.+?displayName":\s*"({app}[^"]+)"[^\}\{]+AppInstance""",
   """"objectType":\s*"app\.({activity}[^"]+)"""",

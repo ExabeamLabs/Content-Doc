@@ -7,7 +7,7 @@ Name = xml-sysmon-process-created
   Lms = Splunk
   DataType = "process-created"
   IsHVF = true
-  TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSSZ"
   Conditions = [ """<Provider Name='Microsoft-Windows-Sysmon'""", """<EventID>1</EventID>""", """<Channel>Microsoft-Windows-Sysmon/Operational</Channel>""", """<Data Name=""" ]
   Fields = [
     """<Data Name='UtcTime'>({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)</Data>""",

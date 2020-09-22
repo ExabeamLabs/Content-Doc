@@ -20,6 +20,7 @@ Name = s-aws-cloudtrail-login-json
     """"eventType"+\s*:\s*"({app}[^"]+)""""
     """"userAgent"+\s*:\s*"({user_agent}[^"]+)"""",
     """"recipientAccountId"+\s*:\s*"({object}[^"]+)""""
+    """"awsRegion":"({region}[^"]+)"""",
   ]
 }
 ```

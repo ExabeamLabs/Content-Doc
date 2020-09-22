@@ -11,6 +11,7 @@ Name = s-common-ftp-download-1
   Conditions = [ """]sent /""", """ - 226 """ ]
   Fields = [
     """exabeam_host=([^=]+?@\s*)?({host}[^\s]+)""",
+    """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d) """,
     """(exabeam_\w+=|^)({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d) """,
     """({host}[\w\.-]+)\s+(\S+\s+){2}\[\d+\]""",
     """({src_ip}\S+)\s+(\S+\s+){2}\[\d+\]""",

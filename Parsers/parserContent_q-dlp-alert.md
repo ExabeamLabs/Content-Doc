@@ -6,9 +6,10 @@ Name = q-dlp-alert
     Product = Symantec DLP
     Lms = QRadar
     DataType = "dlp-alert"
-    TimeFormat = "epoch"
+    TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = [ "LEEF:", "|Symantec|DLP|", "|subject=" ]
     Fields = [
+      """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
       """exabeam_endTime=({time}\d+)""",
       """\s({host}[\w.\-]+)\s+LEEF:""",
       """\|incidentID=({alert_id}\d+)""",
@@ -22,7 +23,7 @@ Name = q-dlp-alert
       """\|duser=(?=[\w.]+@[\w.])({external_address}[^,\|]+).+?subject=(?!FTP|HTTP|HTTPS|SFTP|TCP)""",
       """\|duser=[^@]+@({external_domain}[^,\|]+).+?subject=(?!FTP|HTTP|HTTPS|SFTP|TCP)""",
       """\|subject=((?!SFTP|HTTP|FTP|TCP|N/A)({subject}[^\|]+))""",
-      """\|rules=({alert_type}[^\|]+)\s*\|""",
+      """\|rules=\s*({alert_type}[^\|]+?)\s*\|""",
       """\|duser=({account}.+?)@({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\|.+?\|subject=({protocol}FTP)""",
       """\|subject=FTP\s+({file_name}.+?)\s+\(({bytes_num}\d+)\s+({bytes_unit}[^\)]+)""",
       """\|duser=({target}[^\|]+)\|.+?\|subject=({protocol}HTTP)""",
