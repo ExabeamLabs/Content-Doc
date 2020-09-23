@@ -3,7 +3,7 @@
 {
 Name = cef-onedrive-file-activity
     Vendor = Microsoft
-    Product = OneDrive
+    Product = Microsoft OneDrive
     Lms = ArcSight
     DataType = "file-operations"
     IsHVF = true

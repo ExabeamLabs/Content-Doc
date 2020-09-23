@@ -2,7 +2,7 @@
 ```Java
 {
 Name = foxt-sshruncmd-process-created
-  Vendor = Fox BoKS ServerControl 
+  Vendor = Fox BoKS ServerControl
   Product = Fox BoKS ServerControl
   Lms = Exabeam
   DataType = "process-created"

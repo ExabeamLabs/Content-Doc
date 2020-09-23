@@ -2,7 +2,7 @@
 ```Java
 {
 Name = securesphere-alert
-  Vendor = Imperva 
+  Vendor = Imperva
   Product = Imperva SecureSphere
   Lms = QRadar
   DataType = "alert"

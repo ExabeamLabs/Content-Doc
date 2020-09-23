@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-honeywell-physical-badge-access
-    Vendor = Honeywell 
+    Vendor = Honeywell
     Product = Honeywell Pro-Watch
     Lms = Splunk
     DataType = "physical-access"

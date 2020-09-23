@@ -27,4 +27,32 @@ Name = pgsql-db-query
   ]
   DupFields = [ "user->db_user" ]
 }
+
+{
+  Name=saas-suricata-json
+  Vendor = Suricata
+  Product= Suricata
+  Lms= Direct
+  TimeFormat= "yyyy-MM-dd'T'HH:mm:ss.SSSSSS+SSSS"
+  DataType="alert"
+  Conditions = [ """suricata_alert_json""","""proto""" ]
+  Fields =[
+    """"+timestamp"+:\s*"+({time}[^"]+)""",
+	""""+suricata_alert_json"+\,"+({host}[^"]+)"""
+    """"+in_iface"+:\s*"+({interface}[^"]+)""",
+    """"+event_type"+:\s*"+({event}[^"]+)""",
+    """"+src_ip"+:\s*"+({src_ip}[^"]+)""",
+    """"+dest_ip"+:\s*"+({dest_ip}[^"]+)""",
+    """"+proto"+:\s*"+({protocol}[^"]+)""",
+    """"+action"+:\s*"+({action}[^"]+)""",
+    """"+signature"+:\s*"+({alert_name}[^"]+)""",
+    """"+category"+:\s*"+({threat_category}[^"]+)""",
+    """"+severity"+:\s*({alert_severity}\d+)""",
+    """"+pkts_toserver"+:\s*({pkts_toserver}\d+)""",
+    """"+pkts_toclient"+:\s*({pkts_toclient}\d+)""",
+    """"+bytes_toserver"+:\s*({bytes_toserver}\d+)""",
+    """"+bytes_toclient"+:\s*({bytes_toclient}\d+)""",
+	""""+policy"+:\["+({alert_type}[^"]+)"+\]"""
+    ]
+}
 ```

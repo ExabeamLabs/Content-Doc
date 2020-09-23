@@ -2,7 +2,7 @@
 ```Java
 {
 Name = securesphere-db-cuseqsv
-  Vendor = Imperva 
+  Vendor = Imperva
   Product = Imperva SecureSphere
   Lms = Direct
   DataType = "database-operation"

@@ -3,7 +3,7 @@
 {
 Name = r-syslog-chkpnt-vpn-start
   Vendor = Check Point Software
-  Product = Check Point Security Gateway 
+  Product = Check Point Security Gateway
   Lms = Direct
   DataType = "vpn-start"
   TimeFormat = "ddMMMyyyy HH:mm:ss"
