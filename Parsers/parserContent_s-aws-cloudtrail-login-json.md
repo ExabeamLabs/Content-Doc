@@ -26,8 +26,8 @@ Name = s-aws-cloudtrail-login-json
 
 {
   Name = ccure-app-activity
-  Vendor = CCURE
-  Product = CCURE
+  Vendor = Tyco
+  Product = CCURE Building Management System
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss a"

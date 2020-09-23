@@ -3,7 +3,7 @@
 {
 Name = centrify-account-switch
   Vendor = Centrify
-  Product = Centrify
+  Product = Centrify Zero Trust Privilege Services
   Lms = Direct
   DataType = "account-switch"
   TimeFormat = "epoch"
@@ -26,7 +26,7 @@ Name = centrify-account-switch
 {
   Name = centrify-file-access
   Vendor = Centrify
-  Product = Centrify
+  Product = Centrify Audit and Monitoring Service
   Lms = Direct
   DataType = "file-operations"
   TimeFormat = "epoch"

@@ -3,7 +3,7 @@
 {
 Name = bitglass-app-login
   Vendor = Bitglass
-  Product = Bitglass
+  Product = Bitglass CASB
   Lms = Direct
   DataType = "app-login"
   TimeFormat = "dd MMM yyyy HH:mm:ss"

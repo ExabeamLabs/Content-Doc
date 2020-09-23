@@ -3,7 +3,7 @@
 {
 Name = centrify-auth-denied
   Vendor = Centrify
-  Product = Centrify
+  Product = Centrify Authentication Service
   Lms = Direct
   DataType = "authentication-failed"
   TimeFormat = "epoch"
@@ -26,7 +26,7 @@ Name = centrify-auth-denied
 {
   Name = centrify-account-switch
   Vendor = Centrify
-  Product = Centrify
+  Product = Centrify Zero Trust Privilege Services
   Lms = Direct
   DataType = "account-switch"
   TimeFormat = "epoch"
@@ -49,7 +49,7 @@ Name = centrify-auth-denied
 {
   Name = centrify-file-access
   Vendor = Centrify
-  Product = Centrify
+  Product = Centrify Audit and Monitoring Service
   Lms = Direct
   DataType = "file-operations"
   TimeFormat = "epoch"

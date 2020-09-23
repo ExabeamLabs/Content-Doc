@@ -2,8 +2,8 @@
 ```Java
 {
 Name = bro-share-access
-  Vendor = Bro
-  Product = Bro
+  Vendor = Zeek
+  Product = Zeek Network Security Monitor
   Lms = Direct
   DataType = "file-operations"
   IsHVF = true

@@ -2,6 +2,7 @@
 ```Java
 {
 Name = cisco-app-activity
+  Product = Cisco Call Manager
   DataType = "app-activity"
   Conditions = [ """EventType =UserAccess""", """ResourceAccessed=""", """EventStatus =""" ]
 }
@@ -9,7 +10,7 @@ Name = cisco-app-activity
 {
   Name = cisco-auth-failed-1
   Vendor = Cisco
-  Product = Cisco
+  Product = Cisco Call Manager
   Lms = Direct
   DataType = "authentication-failed"
   TimeFormat = "MMM dd yyyy HH:mm:ss a"

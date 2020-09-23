@@ -2,6 +2,7 @@
 ```Java
 {
 Name = cisco-auth-successful
+  Product = Cisco Call Manager
   DataType = "authentication-successful"
   Conditions = [ """EventType =UserLogging""", """=Login Authentication Successful]""" ]
 }
@@ -9,7 +10,7 @@ Name = cisco-auth-successful
 {
   Name = cisco-auth-successful-1
   Vendor = Cisco
-  Product = Cisco
+  Product = Cisco Call Manager
   Lms = Direct
   DataType = "authentication-successful"
   TimeFormat = "MMM dd yyyy HH:mm:ss a"

@@ -3,7 +3,7 @@
 {
 Name = q-box-app-activity
   Vendor = Box
-  Product = Box
+  Product = Box Cloud Content Management
   Lms = QRadar
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

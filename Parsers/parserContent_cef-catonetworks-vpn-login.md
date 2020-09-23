@@ -3,7 +3,7 @@
 {
 Name = cef-catonetworks-vpn-login
   Vendor = CatoNetworks
-  Product = CatoNetworks
+  Product = Cato Cloud
   Lms = ArcSight
   DataType = "vpn-login"
   TimeFormat = "EEE MMM dd HH:mm:ss Z yyyy"

@@ -3,7 +3,7 @@
 {
 Name = box-skyformation-file-activity
   Vendor = Box
-  Product = Box
+  Product = Box Cloud Content Management
   Lms = ArcSight
   DataType = "file-operations"
   IsHVF = true

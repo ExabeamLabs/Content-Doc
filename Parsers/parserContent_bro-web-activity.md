@@ -2,8 +2,8 @@
 ```Java
 {
 Name = bro-web-activity
-  Vendor = Bro
-  Product = Bro
+  Vendor = Zeek
+  Product = Zeek Network Security Monitor
   Lms = Direct
   DataType = "web-activity"
   IsHVF = true

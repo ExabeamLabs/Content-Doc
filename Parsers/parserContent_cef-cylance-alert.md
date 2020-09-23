@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-cylance-alert
-  Vendor = Cylance
-  Product = PROTECT
+  Vendor = BlackBerry
+  Product = BlackBerry Protect
   Lms = ArcSight
   DataType = "alert"
   TimeFormat = "epoch"

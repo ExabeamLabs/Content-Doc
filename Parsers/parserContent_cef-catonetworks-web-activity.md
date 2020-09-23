@@ -3,7 +3,7 @@
 {
 Name = cef-catonetworks-web-activity
   Vendor = CatoNetworks
-  Product = CatoNetworks
+  Product = Cato Cloud
   Lms = ArcSight
   DataType = "web-activity"
   IsHVF = true

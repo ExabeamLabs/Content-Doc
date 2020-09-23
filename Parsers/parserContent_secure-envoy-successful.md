@@ -20,7 +20,7 @@ Name = secure-envoy-successful
 {
   Name = cloudflare-app-activity
   Vendor = Cloudflare
-  Product = Cloudflare
+  Product = Cloudflare Insights
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
