@@ -4,7 +4,7 @@
 Name = symantec-account-switch-success
   DataType = "account-switch"
   Vendor = Symantec
-  Product = Symantec Critical System Protection 
+  Product = Symantec Critical System Protection
   Lms = Splunk
   TimeFormat = "yyyy-MM-dd HH:mm:ss.S"
   Conditions = [ """SVA_IP_ADDRESS: """, """ USER_NAME:""", """successful SU to """ ]

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = honeywell-physical-badge-access
-  Vendor = Honeywell 
+  Vendor = Honeywell
   Product = Honeywell Pro-Watch
   Lms = Direct
   DataType = "physical-access"

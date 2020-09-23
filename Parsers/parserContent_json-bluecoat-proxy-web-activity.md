@@ -33,4 +33,9 @@ Name = json-bluecoat-proxy-web-activity
     """"content_type_CF"+:"+(-|({mime}[^"]+))"""",
   ]
 }
+
+${BlueCoatParserTemplates.bluecoat-proxy}{
+  Name = bluecoat-proxy-1
+  Conditions = [ """ OBSERVED """, """ TCP_""" ]
+}
 ```
