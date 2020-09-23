@@ -2,7 +2,7 @@
 ```Java
 {
 Name = bro-radius-1
-  Product = Bro
+  Product = Zeek Network Security Monitor
   DataType = "nac-logon"
   TimeFormat = "epoch_sec"
   Conditions = [ """"id.orig_h""", """"id.resp_h""", """"username""", """"framed_addr""", """"result""", """"ttl""" ]

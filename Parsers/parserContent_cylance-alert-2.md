@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cylance-alert-2
-  Vendor = Cylance
-  Product = PROTECT
+  Vendor = BlackBerry
+  Product = BlackBerry Protect
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

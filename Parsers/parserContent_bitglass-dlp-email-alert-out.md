@@ -3,7 +3,7 @@
 {
 Name = bitglass-dlp-email-alert-out
   Vendor = Bitglass
-  Product = Bitglass
+  Product = Bitglass CASB
   Lms = Direct
   DataType = "dlp-email-alert"
   TimeFormat = "dd MMM yyyy HH:mm:ss"

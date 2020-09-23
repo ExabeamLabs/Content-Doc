@@ -2,8 +2,8 @@
 ```Java
 {
 Name = q-ccure-badge-access
-   Vendor = CCURE
-   Product = CCURE
+   Vendor = Tyco
+   Product = CCURE Building Management System
    Lms = QRadar
    DataType = "physical-access"
    TimeFormat = "yyyy-MM-dd HH:mm:ss"

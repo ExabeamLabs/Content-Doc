@@ -3,7 +3,7 @@
 {
 Name = bitglass-file-read
   Vendor = Bitglass
-  Product = Bitglass
+  Product = Bitglass CASB
   Lms = Direct
   DataType = "file-read"
   IsHVF = true

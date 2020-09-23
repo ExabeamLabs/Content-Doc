@@ -3,7 +3,7 @@
 {
 Name = centrify-process
   Vendor = Centrify
-  Product = Centrify
+  Product = Centrify Infrastructure Services
   Lms = Direct
   DataType = "process-created"
   TimeFormat = "epoch"
@@ -24,7 +24,7 @@ Name = centrify-process
 {
   Name = centrify-auth-success
   Vendor = Centrify
-  Product = Centrify
+  Product = Centrify Authentication Service
   Lms = Direct
   DataType = "authentication-successful"
   TimeFormat = "epoch"
@@ -45,7 +45,7 @@ Name = centrify-process
 {
   Name = centrify-auth-denied
   Vendor = Centrify
-  Product = Centrify
+  Product = Centrify Authentication Service
   Lms = Direct
   DataType = "authentication-failed"
   TimeFormat = "epoch"
@@ -68,7 +68,7 @@ Name = centrify-process
 {
   Name = centrify-account-switch
   Vendor = Centrify
-  Product = Centrify
+  Product = Centrify Zero Trust Privilege Services
   Lms = Direct
   DataType = "account-switch"
   TimeFormat = "epoch"
@@ -91,7 +91,7 @@ Name = centrify-process
 {
   Name = centrify-file-access
   Vendor = Centrify
-  Product = Centrify
+  Product = Centrify Audit and Monitoring Service
   Lms = Direct
   DataType = "file-operations"
   TimeFormat = "epoch"

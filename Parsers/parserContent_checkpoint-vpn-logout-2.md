@@ -3,7 +3,7 @@
 {
 Name = checkpoint-vpn-logout-2
   Vendor = Check Point Software
-  Product = Checkpoint Identity Awareness
+  Product = Check Point Identity Awareness
   Lms = Direct
   DataType = "vpn-logout"
   TimeFormat = "epoch"

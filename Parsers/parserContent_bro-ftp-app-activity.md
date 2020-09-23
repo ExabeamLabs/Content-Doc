@@ -2,8 +2,8 @@
 ```Java
 {
 Name = bro-ftp-app-activity
-  Vendor = Bro
-  Product = Bro
+  Vendor = Zeek
+  Product = Zeek Network Security Monitor
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "epoch_sec"

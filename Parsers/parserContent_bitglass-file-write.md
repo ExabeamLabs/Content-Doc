@@ -3,7 +3,7 @@
 {
 Name = bitglass-file-write
   Vendor = Bitglass
-  Product = Bitglass
+  Product = Bitglass CASB
   Lms = Direct
   DataType = "file-write"
   IsHVF = true

@@ -24,8 +24,8 @@ Name = syslog-morphisec-security-alert
 
 {
   Name = cylance-protect-security-alert
-  Vendor = Cylance
-  Product = PROTECT
+  Vendor = BlackBerry
+  Product = BlackBerry Protect
   Lms = Splunk
   DataType = "alert"
   TimeFormat = "M/d/yyyy H:mm:ss a"

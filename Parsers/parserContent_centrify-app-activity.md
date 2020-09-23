@@ -3,7 +3,7 @@
 {
 Name = centrify-app-activity
   Vendor = Centrify
-  Product = Centrify
+  Product = Centrify Zero Trust Privilege Services
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "epoch"

@@ -21,8 +21,8 @@ Name = ipsec-vpn-user
 
 {
   Name = s-cylance-app-activity
-  Vendor = Cylance
-  Product = PROTECT
+  Vendor = BlackBerry
+  Product = BlackBerry Protect
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"

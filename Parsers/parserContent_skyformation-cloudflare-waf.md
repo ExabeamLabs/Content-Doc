@@ -3,7 +3,7 @@
 {
 Name = skyformation-cloudflare-waf
   Vendor = Cloudflare
-  Product = Cloudflare
+  Product = Cloudflare WAF
   Lms = Direct
   DataType = "web-activity"
   IsHVF = true

@@ -2,8 +2,8 @@
 ```Java
 {
 Name = s-bro-web-activity
-  Vendor = Bro
-  Product = Bro
+  Vendor = Zeek
+  Product = Zeek Network Security Monitor
   Lms = Splunk
   DataType = "web-activity"
   IsHVF = true

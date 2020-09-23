@@ -3,7 +3,7 @@
 {
 Name = raw-asa-113005-1
   Vendor = Cisco
-  Product = Cisco
+  Product = Cisco Adaptive Security Appliance
   Lms = Direct
   DataType = "failed-vpn-login"
   TimeFormat = "yyyy MMM dd HH:mm:ss"
