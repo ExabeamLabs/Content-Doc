@@ -18,7 +18,7 @@ Name = symantec-epp-ntp-alert
     """Local Host IP:\s*({src_ip}[a-fA-F\d.:]+).*?,Outbound,""",
     """Local Host IP:\s*({dest_ip}[a-fA-F\d.:]+).*?,Inbound,""",
     """Begin:\s*({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-    """User:\s*(({user_fullname}[^,\s]+(\s+[^,\s]+)+)|(none|({user}[^,]+))),""",
+    """User( Name)?:\s*(({user_fullname}[^,\s]+(\s+[^,\s]+)+)|(none|({user}[^,]+))),""",
     """Domain:(?:\s+|\s*({domain}[^,]+)),""",
     """Application:(?:\s+|\s*({process}({directory}(?:[^,]+)?[\\\/])?({process_name}[^\\\/,]+?))),""",
     """CIDS Signature ID:\s*({alert_name}\d+),""",
