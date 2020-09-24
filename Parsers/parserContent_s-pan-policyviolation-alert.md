@@ -34,7 +34,4 @@ Name = s-pan-policyviolation-alert
     ProjectName = "SOC"
     EntityFields = [
       {EntityType="user", Name="windows_id", Fields=["user->windows_id"]}
-      ]
-    }
-  }
 ```
