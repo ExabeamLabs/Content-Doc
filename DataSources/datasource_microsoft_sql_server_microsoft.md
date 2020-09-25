@@ -32,3 +32,4 @@ _The following Parsers can be operationalized using log data from this data sour
 * [s-mssql-database-query-dl-xml](../Parsers/parserContent_s-mssql-database-query-dl-xml.md)
 * [s-mssql-database-query-sl](../Parsers/parserContent_s-mssql-database-query-sl.md)
 * [s-mssql-database-query-sl-xml](../Parsers/parserContent_s-mssql-database-query-sl-xml.md)
+* [xml-mssql-database-login](../Parsers/parserContent_xml-mssql-database-login.md)
