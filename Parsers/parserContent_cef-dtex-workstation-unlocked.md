@@ -3,7 +3,7 @@
 {
 Name = cef-dtex-workstation-unlocked
   Vendor = Dtex
-  Product = Dtex
+  Product = DTEX InTERCEPT
   Lms = ArcSight
   DataType = "workstation-unlocked"
   TimeFormat = "epoch"

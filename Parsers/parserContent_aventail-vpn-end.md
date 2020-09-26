@@ -3,7 +3,7 @@
 {
 Name = aventail-vpn-end
   Vendor = Dell
-  Product = Aventail
+  Product = SonicWALL Aventail
   Lms = Splunk
   DataType = "vpn-end"
   TimeFormat = "dd/MMM/yyyy:HH:mm:ss"

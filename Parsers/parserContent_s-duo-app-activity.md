@@ -3,7 +3,7 @@
 {
 Name = s-duo-app-activity
   Vendor = Duo Security
-  Product = Duo Security
+  Product = Duo Access Security
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSSZ"

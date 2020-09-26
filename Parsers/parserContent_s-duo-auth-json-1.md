@@ -3,7 +3,7 @@
 {
 Name = s-duo-auth-json-1
   Vendor = Duo Security
-  Product = Duo Security
+  Product = Duo Access Security
   Lms = Splunk
   DataType = "authentication-attempt"
   TimeFormat = "epoch_sec"

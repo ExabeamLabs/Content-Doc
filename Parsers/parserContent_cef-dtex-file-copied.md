@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-dtex-file-copied
-  Product = Dtex
+  Product = DTEX InTERCEPT
   Conditions = [ "CEF:", """|Dtex|""", """|FileCopied|""" ]
 }
 ```

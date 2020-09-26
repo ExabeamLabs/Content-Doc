@@ -3,7 +3,7 @@
 {
 Name = cef-dtex-process-created
   Vendor = Dtex
-  Product = Dtex
+  Product = DTEX InTERCEPT
   Lms = ArcSight
   DataType = "process-created"
   IsHVF = true

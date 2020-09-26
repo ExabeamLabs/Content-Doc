@@ -3,7 +3,7 @@
 {
 Name = s-dtex
   Vendor = Dtex
-  Product = Dtex
+  Product = DTEX InTERCEPT
   Lms = Splunk
   DataType = "dtex"
   IsHVF = true

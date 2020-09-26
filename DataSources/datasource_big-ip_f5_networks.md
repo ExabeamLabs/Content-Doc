@@ -9,13 +9,10 @@ _The following Use Cases can be operationalized using log data from this data so
 
 * [Account Creation and Management](../UseCases/usecase_account_creation_and_management.md)
 * [Activity Time  and Type](../UseCases/usecase_activity_time__and_type.md)
-* [Application Activity](../UseCases/usecase_application_activity.md)
 * [Asset Logon and Access](../UseCases/usecase_asset_logon_and_access.md)
 * [Badge Access](../UseCases/usecase_badge_access.md)
 * [Credential Switch Activity](../UseCases/usecase_credential_switch_activity.md)
 * [Critical System Activity](../UseCases/usecase_critical_system_activity.md)
-* [Data Loss Prevention](../UseCases/usecase_data_loss_prevention.md)
-* [Email Activity](../UseCases/usecase_email_activity.md)
 * [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
 * [Executives](../UseCases/usecase_executives.md)
 * [Failed Logon and Account Lockout](../UseCases/usecase_failed_logon_and_account_lockout.md)
@@ -37,14 +34,12 @@ UnorderedListItem
 - authentication-failed
 - remote-logon
 - vpn-login
-- vpn-logout
 
 
 ### Parsers
 
 _The following Parsers can be operationalized using log data from this data source_
 
-* [cef-f5-vpn-end](../Parsers/parserContent_cef-f5-vpn-end.md)
 * [cef-f5-vpn-start](../Parsers/parserContent_cef-f5-vpn-start.md)
 * [cef-f5-vpn-start-1](../Parsers/parserContent_cef-f5-vpn-start-1.md)
 * [f5-ssh-failed-logon](../Parsers/parserContent_f5-ssh-failed-logon.md)
@@ -55,5 +50,3 @@ _The following Parsers can be operationalized using log data from this data sour
 * [f5-vpn-login-failed](../Parsers/parserContent_f5-vpn-login-failed.md)
 * [f5-vpn-policy](../Parsers/parserContent_f5-vpn-policy.md)
 * [f5-vpn-session-start](../Parsers/parserContent_f5-vpn-session-start.md)
-* [f5-vpn-user-agent](../Parsers/parserContent_f5-vpn-user-agent.md)
-* [f5-vpn-username](../Parsers/parserContent_f5-vpn-username.md)

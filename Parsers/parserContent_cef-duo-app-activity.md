@@ -3,7 +3,7 @@
 {
 Name = cef-duo-app-activity
   Vendor = Duo Security
-  Product = Duo Security
+  Product = Duo Access Security
   Lms = ArcSight
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

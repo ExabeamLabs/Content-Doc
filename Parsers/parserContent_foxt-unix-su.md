@@ -3,7 +3,7 @@
 {
 Name = foxt-unix-su
   Vendor = Fox BoKS ServerControl
-  Product = Fox BoKS ServerControl
+  Product = Powertech Identity Access Manager (BoKs)
   Lms = Exabeam
   DataType = "unix-account-switch"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

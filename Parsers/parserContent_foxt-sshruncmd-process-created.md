@@ -3,7 +3,7 @@
 {
 Name = foxt-sshruncmd-process-created
   Vendor = Fox BoKS ServerControl
-  Product = Fox BoKS ServerControl
+  Product = Powertech Identity Access Manager (BoKs)
   Lms = Exabeam
   DataType = "process-created"
   IsHVF = true
