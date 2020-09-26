@@ -3,7 +3,7 @@
 {
 Name = f5-vpn-user-agent
   Vendor = F5 Networks
-  Product = Big-IP
+  Product = F5 BIG-IP Access Policy Manager (APM)
   Lms = Splunk
   DataType = "vpn-start"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

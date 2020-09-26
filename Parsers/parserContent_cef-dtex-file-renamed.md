@@ -3,7 +3,7 @@
 {
 Name = cef-dtex-file-renamed
   Vendor = Dtex
-  Product = Dtex
+  Product = DTEX InTERCEPT
   Lms = ArcSight
   DataType = "file-operations"
   IsHVF = true

@@ -3,7 +3,7 @@
 {
 Name = cef-forcepoint-proxy
     Vendor = Forcepoint
-    Product = Forcepoint Web Security
+    Product = Websense Secure Gateway
     Lms = ArcSight
     DataType = "web-activity"
     IsHVF = true

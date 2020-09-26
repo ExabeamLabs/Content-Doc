@@ -3,7 +3,7 @@
 {
 Name = q-duo-app-login
   Vendor = Duo Security
-  Product = Duo Security
+  Product = Duo Access Security
   Lms = QRadar
   DataType = "app-login"
   TimeFormat = "MM/dd/yyyy HH:mm:ss"

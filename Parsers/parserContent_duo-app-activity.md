@@ -3,7 +3,7 @@
 {
 Name = duo-app-activity
   Vendor = Duo Security
-  Product = Duo Security
+  Product = Duo Access Security
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "epoch"

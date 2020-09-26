@@ -3,7 +3,7 @@
 {
 Name = n-forwarded-cef-aventail-vpn-start
   Vendor = Dell
-  Product = Aventail
+  Product = SonicWALL Aventail
   Lms = NitroCefSyslog
   DataType = "vpn-start"
   TimeFormat = "epoch"

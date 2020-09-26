@@ -168,16 +168,17 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Damballa
 * [Failsafe](DataSources/datasource_failsafe_damballa.md)
 #### Darktrace
+* [Darktrace Enterprise Immune System](DataSources/datasource_darktrace_enterprise_immune_system_darktrace.md)
 * [Darktrace](DataSources/datasource_darktrace_darktrace.md)
 #### DataWatch
 * [DataWatch](DataSources/datasource_datawatch_datawatch.md)
 #### DatalakePortal
 * [DatalakePortal](DataSources/datasource_datalakeportal_datalakeportal.md)
 #### Dell
-* [Aventail](DataSources/datasource_aventail_dell.md)
 * [Dell EMC Isilon](DataSources/datasource_dell_emc_isilon_dell.md)
-* [Dell Quest TPAM](DataSources/datasource_dell_quest_tpam_dell.md)
+* [One Identity Manager](DataSources/datasource_one_identity_manager_dell.md)
 * [RSA Authentication Manager](DataSources/datasource_rsa_authentication_manager_dell.md)
+* [SonicWALL Aventail](DataSources/datasource_sonicwall_aventail_dell.md)
 #### Digital Arts
 * [Digital Arts i-FILTER for Business](DataSources/datasource_digital_arts_i-filter_for_business_digital_arts.md)
 #### Digital Guardian
@@ -185,8 +186,9 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Dropbox
 * [Dropbox](DataSources/datasource_dropbox_dropbox.md)
 #### Dtex
-* [Dtex](DataSources/datasource_dtex_dtex.md)
+* [DTEX InTERCEPT](DataSources/datasource_dtex_intercept_dtex.md)
 #### Duo Security
+* [Duo Access Security](DataSources/datasource_duo_access_security_duo_security.md)
 * [Duo Security](DataSources/datasource_duo_security_duo_security.md)
 #### EMP
 * [EMP](DataSources/datasource_emp_emp.md)
@@ -205,13 +207,13 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Entrust
 * [IdentityGuard](DataSources/datasource_identityguard_entrust.md)
 #### Epic
-* [Epic](DataSources/datasource_epic_epic.md)
+* [Epic SIEM](DataSources/datasource_epic_siem_epic.md)
 #### Exabeam
 * [Exabeam DL](DataSources/datasource_exabeam_dl_exabeam.md)
 #### ExamWorkspace
 * [ExamWorkspace](DataSources/datasource_examworkspace_examworkspace.md)
 #### Extrahop
-* [Extrahop](DataSources/datasource_extrahop_extrahop.md)
+* [Reveal(x)](DataSources/datasource_reveal(x)_extrahop.md)
 #### Extreme Networks
 * [Zebra wireless LAN management](DataSources/datasource_zebra_wireless_lan_management_extreme_networks.md)
 #### F-Secure
@@ -228,20 +230,21 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### FTP
 * [FTP](DataSources/datasource_ftp_ftp.md)
 #### Fidelis
-* [Fidelis](DataSources/datasource_fidelis_fidelis.md)
+* [Fidelis XPS](DataSources/datasource_fidelis_xps_fidelis.md)
 #### FileSite
 * [FileSite](DataSources/datasource_filesite_filesite.md)
 #### FireEye
 * [FireEye Email Threat Prevention (ETP)](DataSources/datasource_fireeye_email_threat_prevention_(etp)_fireeye.md)
 * [FireEye Endpoint Security (HX)](DataSources/datasource_fireeye_endpoint_security_(hx)_fireeye.md)
+* [FireEye Helix](DataSources/datasource_fireeye_helix_fireeye.md)
 * [FireEye Network Security (Helix)](DataSources/datasource_fireeye_network_security_(helix)_fireeye.md)
 * [FireEye Network Security (NX)](DataSources/datasource_fireeye_network_security_(nx)_fireeye.md)
 #### Forcepoint
 * [Forcepoint CASB](DataSources/datasource_forcepoint_casb_forcepoint.md)
 * [Forcepoint DLP](DataSources/datasource_forcepoint_dlp_forcepoint.md)
 * [Forcepoint Insider Threat](DataSources/datasource_forcepoint_insider_threat_forcepoint.md)
-* [Forcepoint Web Security](DataSources/datasource_forcepoint_web_security_forcepoint.md)
 * [Websense ESG](DataSources/datasource_websense_esg_forcepoint.md)
+* [Websense Secure Gateway](DataSources/datasource_websense_secure_gateway_forcepoint.md)
 #### Forescout
 * [Forescout CounterACT](DataSources/datasource_forescout_counteract_forescout.md)
 #### Fortinet
@@ -250,7 +253,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Fortinet UTM](DataSources/datasource_fortinet_utm_fortinet.md)
 * [Fortinet VPN](DataSources/datasource_fortinet_vpn_fortinet.md)
 #### Fox BoKS ServerControl
-* [Fox BoKS ServerControl](DataSources/datasource_fox_boks_servercontrol_fox_boks_servercontrol.md)
+* [Powertech Identity Access Manager (BoKs)](DataSources/datasource_powertech_identity_access_manager_(boks)_fox_boks_servercontrol.md)
 #### GTB
 * [GTBInspector](DataSources/datasource_gtbinspector_gtb.md)
 #### Galaxy

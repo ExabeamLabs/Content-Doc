@@ -7,7 +7,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 
 * [AnyConnect](../DataSources/datasource_anyconnect_cisco.md)
 * [Avaya VPN](../DataSources/datasource_avaya_vpn_avaya_vpn.md)
-* [Aventail](../DataSources/datasource_aventail_dell.md)
 * [Barracuda Firewall](../DataSources/datasource_barracuda_firewall_barracuda.md)
 * [Big-IP](../DataSources/datasource_big-ip_f5_networks.md)
 * [Cato Cloud](../DataSources/datasource_cato_cloud_catonetworks.md)
@@ -18,6 +17,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Cisco Meraki MX appliances](../DataSources/datasource_cisco_meraki_mx_appliances_cisco.md)
 * [Citrix Netscaler](../DataSources/datasource_citrix_netscaler_citrix.md)
 * [Cognitas CrossLink](../DataSources/datasource_cognitas_crosslink_cognitas_crosslink.md)
+* [F5 BIG-IP Access Policy Manager (APM)](../DataSources/datasource_f5_big-ip_access_policy_manager_(apm)_f5_networks.md)
 * [Fortinet VPN](../DataSources/datasource_fortinet_vpn_fortinet.md)
 * [GlobalProtect](../DataSources/datasource_globalprotect_palo_alto_networks.md)
 * [Juniper VPN](../DataSources/datasource_juniper_vpn_juniper_networks.md)
@@ -29,6 +29,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [SSL Open VPN](../DataSources/datasource_ssl_open_vpn_ssl_open_vpn.md)
 * [SecurID](../DataSources/datasource_securid_rsa.md)
 * [SecureNet](../DataSources/datasource_securenet_securenet.md)
+* [SonicWALL Aventail](../DataSources/datasource_sonicwall_aventail_dell.md)
 * [Sonicwall](../DataSources/datasource_sonicwall_sonicwall.md)
 * [Sophos XG Firewall](../DataSources/datasource_sophos_xg_firewall_sophos.md)
 * [Unified Security Gateway](../DataSources/datasource_unified_security_gateway_huawei.md)
