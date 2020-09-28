@@ -57,6 +57,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [ClientView](../DataSources/datasource_clientview_skysea.md)
 * [Cloud Application](../DataSources/datasource_cloud_application_cloud_application.md)
 * [Cloudflare Insights](../DataSources/datasource_cloudflare_insights_cloudflare.md)
+* [Code42 Incydr](../DataSources/datasource_code42_incydr_code42.md)
 * [Cognitas CrossLink](../DataSources/datasource_cognitas_crosslink_cognitas_crosslink.md)
 * [Cortex XDR](../DataSources/datasource_cortex_xdr_palo_alto_networks.md)
 * [CyberArk Endpoint Privilege Management](../DataSources/datasource_cyberark_endpoint_privilege_management_cyberark.md)
