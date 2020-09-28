@@ -23,7 +23,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Check Point NGFW](../DataSources/datasource_check_point_ngfw_check_point_software.md)
 * [Check Point Security Gateway Virtual Edition (vSEC)](../DataSources/datasource_check_point_security_gateway_virtual_edition_(vsec)_check_point_software.md)
 * [Check Point Security Gateway](../DataSources/datasource_check_point_security_gateway_check_point_software.md)
-* [Cisco Adaptive Security Appliance](../DataSources/datasource_cisco_adaptive_security_appliance_cisco.md)
 * [Cisco ISE](../DataSources/datasource_cisco_ise_cisco.md)
 * [Cisco Meraki MX appliances](../DataSources/datasource_cisco_meraki_mx_appliances_cisco.md)
 * [Citrix Endpoint Management](../DataSources/datasource_citrix_endpoint_management_citrix.md)

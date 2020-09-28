@@ -34,6 +34,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Clearswift SEG](../DataSources/datasource_clearswift_seg_clearswift_seg.md)
 * [ClientView](../DataSources/datasource_clientview_skysea.md)
 * [Cloudflare Insights](../DataSources/datasource_cloudflare_insights_cloudflare.md)
+* [Code42 Incydr](../DataSources/datasource_code42_incydr_code42.md)
 * [Cortex XDR](../DataSources/datasource_cortex_xdr_palo_alto_networks.md)
 * [CyberArk Vault](../DataSources/datasource_cyberark_vault_cyberark.md)
 * [Darktrace](../DataSources/datasource_darktrace_darktrace.md)

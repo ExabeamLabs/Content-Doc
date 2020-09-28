@@ -29,5 +29,6 @@ _The following Parsers can be operationalized using log data from this data sour
 * [azure-email-notification](../Parsers/parserContent_azure-email-notification.md)
 * [azure-fw-network-connection](../Parsers/parserContent_azure-fw-network-connection.md)
 * [cef-O365-dlp-email](../Parsers/parserContent_cef-o365-dlp-email.md)
+* [o365-email-alert](../Parsers/parserContent_o365-email-alert.md)
 * [q-o365-dlp-email](../Parsers/parserContent_q-o365-dlp-email.md)
 * [s-O365-dlp-email](../Parsers/parserContent_s-o365-dlp-email.md)

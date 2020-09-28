@@ -79,8 +79,8 @@ UnorderedListItem
 - member-removed
 - dlp-email-alert-in-failed
 - usb-insert
-- account-deleted
 - remote-logon
+- account-deleted
 - usb-write
 - web-activity-denied
 - network-connection-failed
@@ -631,11 +631,17 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cisco-ftd-firewall-6](../Parsers/parserContent_cisco-ftd-firewall-6.md)
 * [cisco-ftd-firewall-7](../Parsers/parserContent_cisco-ftd-firewall-7.md)
 * [cisco-ftd-firewall-9](../Parsers/parserContent_cisco-ftd-firewall-9.md)
+* [cisco-ise-nac-ssh-login](../Parsers/parserContent_cisco-ise-nac-ssh-login.md)
+* [cisco-ise-tacacs-login](../Parsers/parserContent_cisco-ise-tacacs-login.md)
 * [cisco-nac-failed-logon](../Parsers/parserContent_cisco-nac-failed-logon.md)
+* [cisco-ssh-login-1](../Parsers/parserContent_cisco-ssh-login-1.md)
 * [cisco-umbrella-network-connection](../Parsers/parserContent_cisco-umbrella-network-connection.md)
 * [cisco-vpn-start](../Parsers/parserContent_cisco-vpn-start.md)
 * [cisco-vpn-start-2](../Parsers/parserContent_cisco-vpn-start-2.md)
 * [cisco-vpn-start-3](../Parsers/parserContent_cisco-vpn-start-3.md)
+* [cise-remote-logon](../Parsers/parserContent_cise-remote-logon.md)
+* [cise-remote-logon-1](../Parsers/parserContent_cise-remote-logon-1.md)
+* [cise-remote-logon-3](../Parsers/parserContent_cise-remote-logon-3.md)
 * [citrix-app-login](../Parsers/parserContent_citrix-app-login.md)
 * [citrix-app-login-2](../Parsers/parserContent_citrix-app-login-2.md)
 * [citrix-app-login-fail](../Parsers/parserContent_citrix-app-login-fail.md)
@@ -1073,6 +1079,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [s-517](../Parsers/parserContent_s-517.md)
 * [s-7045](../Parsers/parserContent_s-7045.md)
 * [s-adfs-auth-failed](../Parsers/parserContent_s-adfs-auth-failed.md)
+* [s-asa-605005](../Parsers/parserContent_s-asa-605005.md)
 * [s-asa-713184-vpn-start](../Parsers/parserContent_s-asa-713184-vpn-start.md)
 * [s-azure-app-activity](../Parsers/parserContent_s-azure-app-activity.md)
 * [s-checkpoint-firewall-block](../Parsers/parserContent_s-checkpoint-firewall-block.md)

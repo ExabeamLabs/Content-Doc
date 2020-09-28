@@ -22,3 +22,5 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [cisco-config-change](../Parsers/parserContent_cisco-config-change.md)
 * [cisco-config-change-1](../Parsers/parserContent_cisco-config-change-1.md)
+* [cise-config-change](../Parsers/parserContent_cise-config-change.md)
+* [cise-config-change-1](../Parsers/parserContent_cise-config-change-1.md)
