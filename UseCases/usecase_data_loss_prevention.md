@@ -109,7 +109,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [WebSafe](../DataSources/datasource_websafe_f5_networks.md)
 * [Weblogin](../DataSources/datasource_weblogin_weblogin.md)
 * [Websense Secure Gateway](../DataSources/datasource_websense_secure_gateway_forcepoint.md)
-* [Windows Defender](../DataSources/datasource_windows_defender_microsoft.md)
 * [XPS](../DataSources/datasource_xps_xps.md)
 * [Xerox](../DataSources/datasource_xerox_xerox.md)
 * [Zeek Network Security Monitor](../DataSources/datasource_zeek_network_security_monitor_zeek.md)

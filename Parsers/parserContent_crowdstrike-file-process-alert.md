@@ -9,6 +9,7 @@ Name = crowdstrike-file-process-alert
       """"SHA256HashData":\s*"({new_hash}[^"]+)""",
       """"ImageFileName":\s*"({file_path}[^"]+)""",
       """"ImageFileName":\s*"({file_parent}[^"]*[\\\/]+)({file_name}[^\\\/"]+?\.({file_ext}[^\\\.\s"]+)?)"""",
+      """"ImageFileName\\*":\\*"({process}[^"]+\\({process_name}[^"\\]+))""",
       """"+event_simpleName"+:\s*"+({alert_name}[^"]+)""",
       """"+id"+:\s*"+({alert_id}[^"]+)""",
       """"+ContextProcessId"+:\s*"+({process_guid}[^"]+)""",

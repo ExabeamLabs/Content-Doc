@@ -27,6 +27,7 @@ Name = s-crowdstrike-security-alert
     """"ComputerName":\s*"({dest_host}[^"]+).*?"LocalAddress":\s*"({dest_ip}[^"]+)","LocalPort":\s*({dest_port}\d+),"RemoteAddress":\s*"({src_ip}[^"]+)","RemotePort":\s*({src_port}\d+),"ConnectionDirection":\s*1""",
     """"MD5String":\s*"(|({md5}[^"]+))"""",
     """"UserName":\s*"(|N/A|({user}[^"]+))"""",
+    """"FalconHostLink":\s*"({additional_info}[^"]+)"""",
   ]
   DupFields = [ "command_line->malware_url" ]
   SOAR {		
