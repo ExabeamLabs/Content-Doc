@@ -42,5 +42,6 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-ccure-badge-access](../Parsers/parserContent_cef-ccure-badge-access.md)
 * [cef-ccure-badge-access-1](../Parsers/parserContent_cef-ccure-badge-access-1.md)
 * [cef-ccure-badge-access-2](../Parsers/parserContent_cef-ccure-badge-access-2.md)
+* [json-ccure-badge-access](../Parsers/parserContent_json-ccure-badge-access.md)
 * [q-ccure-badge-access](../Parsers/parserContent_q-ccure-badge-access.md)
 * [s-ccure-badge-access](../Parsers/parserContent_s-ccure-badge-access.md)
