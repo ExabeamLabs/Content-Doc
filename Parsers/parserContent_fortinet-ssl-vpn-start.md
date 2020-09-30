@@ -1,9 +1,9 @@
 #### Parser Content
 ```Java
 {
-Name = fortinet-ssl-vpn-start-1
+Name = fortinet-ssl-vpn-start
   DataType = "vpn-start"
-  TimeFormat = "yyyy/MM/dd HH:mm:ss"
-  Conditions = [ """action="tunnel-up"""", """subtype="vpn"""" ]
+  TimeFormat = "yyyy-MM-dd 'time='HH:mm:ss"
+  Conditions = [ "SSL tunnel established", "tunnel-up", "user=" ]
 }
 ```

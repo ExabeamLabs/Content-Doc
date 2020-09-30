@@ -1,13 +1,13 @@
 #### Parser Content
 ```Java
 {
-Name = win-enable-device-request
-  DataType = "usb-activity"
-  Conditions = [ """A request was made to enable a device.""" ]
+Name = win-enable-device
+  DataType = "usb-insert"
+  Conditions = [ """A device was enabled.""" ]
   Fields = ${WinParserTemplates.d-xml-windows-device.Fields} [
-    """({event_code}6421)""",
-    """>({event_code}6421)<\/EventID>"""
-    """({event_name}A request was made to enable a device.)"""
+    """({event_code}6422)""",
+    """>({event_code}6422)<\/EventID>"""
+    """({event_name}A device was enabled.)"""
   ]
 }
 ```

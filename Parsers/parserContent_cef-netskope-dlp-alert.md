@@ -1,18 +1,14 @@
 #### Parser Content
 ```Java
 {
-Name = cef-netskope-dlp-alert-1
-  Conditions = [ """CEF:""", """|Skyformation|""", """"alert_type":"DLP"""", """destinationServiceName=Netskope""", """"alert_name":""""  ]
-  Fields = ${NetskopeParserTemplates.cef-netskope-alert.Fields}[
-    """"app":"({app}[^"]+)""",
-    """"malware_id":"({alert_id}[^"]+)""",
-    """"category":"({threat_category}[^"]+)""",
-    """"md5":"({md5}[^"\s]+)"""",
+Name = cef-netskope-dlp-alert
+  DataType = "dlp-alert"
+  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"alert_type":"DLP"""" ]
+  Fields = ${NetskopeParserTemplates.cef-netskope-activity.Fields}[
+    """"policy":"({alert_name}[^"]+)""",
     """"dlp_rule_severity":"({alert_severity}[^"]+)""",
-    """"alert_type":"({alert_type}[^"]+)""",
-    """"policy":"({additional_info}[^"]+)""",
-    """"action":"({outcome}[^"]+)""",
-    """"*hostname"*:"*({src_host}[^"]+)""""
+    """"dlp_incident_id":({alert_id}\d+)""",
   ]
+  DupFields = [ "activity->alert_type", "object->file_name" ]
 }
 ```

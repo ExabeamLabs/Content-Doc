@@ -1,7 +1,7 @@
 #### Parser Content
 ```Java
 {
-Name = cef-sophos-security-alert-19
-  Conditions = [ """CEF:""", """ext_type=Event::Endpoint::WindowsFirewall::Blocked""" ]
+Name = cef-sophos-security-alert-1
+  Conditions = [ """|sophos|sophos central|""", """|Event::Endpoint::Threat::Detected|""" ]
 }
 ```

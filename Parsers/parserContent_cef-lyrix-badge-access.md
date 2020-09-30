@@ -1,25 +1,23 @@
 #### Parser Content
 ```Java
 {
-Name = cef-lyrix-badge-access-1
+Name = cef-lyrix-badge-access
   Vendor = Lyrix
   Product = Lyrix
   Lms = Splunk
   DataType = "physical-access"
   TimeFormat = "epoch"
-  Conditions = [ """CEF:""", """|Lyrix|""", """|SKUD""", """cs3Label=DEPARTMENT""" ]
+  Conditions = [ """CEF:""", """|SKUD|""", """cs2Label=DoorName""" ]
   Fields = [
-    """\Wact=({outcome}.+?)\s+\w+=""",
-    """\Wcs1=({badge_id}.+?)\s+(\w+=|$)""",
-    """\Wcs6=({location_door}.+?)\s+(\w+=|$)""",
-    """\Wcs3=({location_building}.+?)\s+(\w+=|$)""",
-    """ flexString1=({location_city}.+?)\s+\S+=""",
-    """ flexString2=({additional_info}.+?)\s+\S+="""
+    """CEF:([^\|]*\|){5}({outcome}[^\|]+)""",
     """\Wdvc=({host}[A-Fa-f:\d.]+)""",
     """\Wdvchost=({host}[\w\-.]+)""",
     """\Wrt=({time}\d+)""",
-    """\Wsuser=({user}.+?)\s+(\w+=|$)"""
+    """\Wcs3=({direction}.+?)\s+(\w+=|$)""",
+    """\Wcs2=({location_door}.+?)\s+(\w+=|$)""",
+    """\Wcs1=({location_building}.+?)\s+(\w+=|$)""",
+    """\Wsuser=({user}[^\s]+)""",
+    """\Wsuid=({user_fullname}.+?)\s+(\w+=|$)"""
   ]
-  DupFields=[ "user->user_fullname" ]
 }
 ```
