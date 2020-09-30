@@ -1,14 +1,18 @@
 #### Parser Content
 ```Java
 {
-Name = unix-auth-failed-2
+Name = unix-auth-failed
+  Vendor = Unix
   Product = Unix
+  Lms = Direct
   DataType = "authentication-failed"
-  Conditions = [ """[][][""", """ pam_unix(sudo""", """ authentication failure""" ]
-  Fields = ${UnixParserTemplates.unix-events.Fields}[
-    """\sruser=(|({account}.+?))(\s+\w+=|\s*$)""",
-    """\suser=(|({user}.+?))(\s+\w+=|\s*$)""",
-    """\suid=(|({user_id}.+?))(\s+\w+=|\s*$)""",
+  TimeFormat = "yyyy-MM-dd HH:mm:ss"
+  Conditions = [ """ unix_chkpwd[""", """]: password check failed for """ ]
+  Fields = [
+    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """\w+\s+\d+\s+\d+:\d+:\d+\s+({host}[\w\-.]+)\s+""",
+    """password check failed for user \(({user}[^\s\)]+)""",
   ]
 }
 ```

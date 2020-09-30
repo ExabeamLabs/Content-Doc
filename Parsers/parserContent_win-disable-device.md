@@ -1,13 +1,13 @@
 #### Parser Content
 ```Java
 {
-Name = win-disable-device-request
+Name = win-disable-device
   DataType = "usb-activity"
-  Conditions = [ """A request was made to disable a device.""" ]
+  Conditions = [ """A device was disabled.""" ]
   Fields = ${WinParserTemplates.d-xml-windows-device.Fields} [
-    """({event_code}6419)""",
-    """>({event_code}6419)<\/EventID>"""
-    """({event_name}A request was made to disable a device.)"""
+    """({event_code}6420)""",
+    """>({event_code}6420)<\/EventID>"""
+    """({event_name}A device was disabled.)"""
   ]
 }
 ```

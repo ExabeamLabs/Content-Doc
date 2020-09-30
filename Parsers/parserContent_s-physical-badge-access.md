@@ -1,21 +1,23 @@
 #### Parser Content
 ```Java
 {
-Name = s-physical-badge-access-5
+Name = s-physical-badge-access
     Vendor = Badge
   Product = Badge
     Lms = Splunk
     DataType = "physical-access"
-    TimeFormat = "epoch_sec"
-    Conditions = ["BADGE", "Floor"]
+    TimeFormat = "yyyy-MM-dd HH:mm:ss"
+    Conditions = [ "Badge_ID", "Access_Event", "Reader_Description", "exabeam_raw"]
     Fields = [
-      """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+      """exabeam_raw="+({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """exabeam_host=({host}[^\s]+)""",
-      """(?:([^\|]*\|))\s+({time}\d+)""",
-      """(?:([^\|]*\|)){3}\s+({last_name}[^,\|]+),\s+({first_name}[^\|]+)\s+\|""",
-      """(?:([^\|]*\|)){4}\s+({outcome}[^\|]+)\s+\|""",
-      """(?:([^\|]*\|)){5}\s+\d+\s+-\s*({location_city}[^-]+)\s+-({location_door}[^\|]+)\s+\|""",
-      """(?:([^\|]*\|)){6}\s+({location_building}.+?)\s+$"""
+      """Badge_ID=({badge_id}\d+)""",
+      """First_Name="+({first_name}[^"]+)""",
+      """Last_Name="+({last_name}[^"]+)""",
+      """Access_Event="+({outcome}[^"]+)""",
+      """Reader_Description="+({location_building}[^-\s]+)""",
+      """Reader_Description="+({location_door}[^"]+)""",
+      """Location="+({location_city}[^"]+)"""
     ]
   }
 ```
