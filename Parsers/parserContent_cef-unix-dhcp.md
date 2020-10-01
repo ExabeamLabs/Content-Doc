@@ -3,6 +3,7 @@
 {
 Name = cef-unix-dhcp
   Vendor = Unix
+  Product = Unix dhcpd
   Lms = ArcSight
   DataType = "dhcp"
   TimeFormat = "epoch"

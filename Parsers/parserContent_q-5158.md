@@ -3,7 +3,7 @@
 {
 Name = q-5158
   Vendor = Microsoft
-  Product = Windows
+  Product = Microsoft Windows
   Lms = QRadar
   DataType = "process-network-bind"
   TimeFormat = "epoch_sec"
@@ -18,6 +18,6 @@ Name = q-5158
     """Source Address:\s*({dest_ip}[^\s]*)\s*Source Port:\s*({dest_port}\d*)""",
     """Protocol:\s*({ms_protocol_num}\d*)""",
     """Layer Name:\s*({layer_name}.*?)\s*Layer Run-Time ID"""]
-  DupFields = [ "host->dest_host" ]
+  DupFields = [ "host->dest_host" , "directory->process_directory"]
 }
 ```

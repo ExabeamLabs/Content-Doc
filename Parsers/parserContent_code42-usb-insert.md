@@ -3,7 +3,7 @@
 {
 Name = code42-usb-insert
   Vendor = Code42
-  Product = Code42
+  Product = Code42 Incydr
   Lms = Direct
   DataType = "usb-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

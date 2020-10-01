@@ -18,6 +18,7 @@ Name = l-pan-scan-alert
     """,THREAT,([^,]*,){27}(("[^"]*")|[^,]*),({alert_name}[^,]+),""",
     """,THREAT,([^,]*,){27}(("[^"]*")|[^,]*),([^,]*,){2}({alert_severity}[^,]+),""",
     """,THREAT,([^,]*,){27}(("[^"]*")|[^,]*),([^,]*,){4}({alert_id}\d+)""",
+    """,THREAT,([^,]*,){26}({action}[^,]+)"""
     ]
     SOAR {
     IncidentType = "malware"

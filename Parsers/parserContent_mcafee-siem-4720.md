@@ -3,7 +3,7 @@
 {
 Name = mcafee-siem-4720
     Vendor = Microsoft
-    Product = Windows
+    Product = Microsoft Windows
     Lms = Direct
     DataType = "windows-account-created"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
@@ -21,6 +21,7 @@ Name = mcafee-siem-4720
       """"Source_Logon_ID":"({logon_id}[^"]+)""",
       """"UserIDDst":"({account_name}[^"]+)""",
       """"Event_Class":"({additional_info}[^"]+)"""
+      """Enabled,({user_type}.*?)\s-\sEnabled"""
     ]
   }
 ```

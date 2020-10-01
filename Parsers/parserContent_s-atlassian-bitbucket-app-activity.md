@@ -3,6 +3,7 @@
 {
 Name = s-atlassian-bitbucket-app-activity
   Vendor = Atlassian BitBucket
+  Product = Atlassian BitBucket
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

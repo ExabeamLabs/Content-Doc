@@ -12,6 +12,7 @@ Name = raw-windows-account-4726
       """({event_name}A user account was deleted)""",
       """({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|pm|PM))""",
       """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
+      """Security\s+({record_id}[\d]+)""",
       """Security,({record_id}[\d]+),(Mon|Tue|Wed|Thu|Fri|Sat|Sun) ({time}\w+ \d+ \d+:\d+:\d+ \d+)""",
       """({event_code}4726)""",
       """exabeam_host=({host}[\w.\-]+)""",

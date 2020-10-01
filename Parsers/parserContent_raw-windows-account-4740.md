@@ -21,7 +21,7 @@ Name = raw-windows-account-4740
         """Security,?(\srn=|\s+)?({record_id}\d+)""",       
         """Subject:.+?Account Name:\s+({caller_user}.+?)\s+Account Domain:\s+(?=\w)({caller_domain}.+?)\s+Logon ID:\s+({logon_id}[^\s]+)""",
         """Locked Out:\s+Security ID:\s+(%\{)?({user_sid}([\w\d\-]+?)|([^\s]+))\}?\s+Account Name:\s+(?=\w)({user}.+?)\s+Additional""",
-        """Caller Computer Name:\s+(\\+)?({src_host}[^\#\s",]+)"""
+        """Caller Computer Name:\s+(\\+)?({src_host}[^\#\s",<]+)"""
         ]
         DupFields=[ "host->dest_host", "caller_domain->domain" ]
  }

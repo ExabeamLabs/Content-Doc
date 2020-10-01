@@ -1,26 +1,18 @@
 #### Parser Content
 ```Java
 {
-Name = bro-kerberos-1
-  Vendor = Bro
+Name = bro-kerberos
+  Vendor = Zeek
+  Product = Zeek Network Security Monitor
   Lms = Direct
   DataType = "remote-access"
-  IsHVF = true
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
-  Conditions = [ """"id.orig_h":""", """"id.resp_h":""", """"kerberos",""" ]
+  TimeFormat = "epoch_sec"
+  Conditions = ["/kerberos.log" ]
   Fields = [
-    """exabeam_host=([^@=]+@\s*)?({host}\S+)""",
-    """"ts":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3})""",
-    """"uid":"({conn_id}[^"]+)""",
-    """"id\.orig_h":"({src_ip}[a-fA-F\d.:]+)""",
-    """"id\.orig_p":({src_port}\d+)""",
-    """"id\.resp_h":"({dest_ip}[a-fA-F\d.:]+)""",
-    """"id\.resp_p":({dest_port}\d+)""",
-    """"client":"({user}[^"\\\/]+)[\\\/]+({domain}[^"\\\/]+)""",
-    """"service":"({service_name}[^"]+)""",
-    """"success":({outcome}[^,]+)""",
-    """"error_msg":"({result_code}[^"]+)""",
-    """"cipher":"({ticket_encryption_type}[^"]+)""",
+    """exabeam_host=({host}[\w.\-]+)""",
+    """({time}\d{10})\.\d{6}\t({conn_id}[^\t]+)\t(?:-|(({src_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]*:[A-Fa-f0-9%.:]+(th0)?))|[^\t]+))\t(?:-|(({src_port}\d+?)|[^\t]+))\t(?:-|(({dest_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]*:[A-Fa-f0-9%.:]+(th0)?))|[^\t]+))\t(?:-|(({dest_port}\d+?)|[^\t]+))\t(?:-|({request_type}[^\t]+))\t(?:-|([^\t]+))\t(?:-|({service_name}[^\/\t]+)).+?\t(?:-|({outcome}[^\t]+))\t(?:-|({result_code}[^\t]+))\t(?:-|({issue_time}[^\t]+))\t(?:-|({expiry_time}[^\t]+))\t(?:-|({ticket_encryption_type}[^\t]+))\t({ticket_options}[^\t]+\t[^\t]+)\t(?:-|({client_cert_subject}[^\t]+))\t(?:-|([^\t]+))\t(?:-|({server_cert_subject}[^\t]+))\t(?:-|([^\t]+?))\s*$"""
+    """\d{10}\.\d{6}\t([^\t]+\t){6}({user}[^\/]+)\/({domain}[^\t]+)\t""",
+    """\d{10}\.\d{6}\t([^\t]+\t){7}({dest_host}[^\/]+)\$"""
   ]
 }
 ```

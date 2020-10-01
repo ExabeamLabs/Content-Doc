@@ -3,6 +3,7 @@
 {
 Name = raw-unix-account-deleted
   Vendor = Unix
+  Product = Unix
   Lms = Direct
   DataType = "unix-account-deleted"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
@@ -13,6 +14,6 @@ Name = raw-unix-account-deleted
     """\d\d:\d\d:\d\d ({host}[\w.\-]+)""",
     """delete user \'({target_user}[^']+)\'"""
   ]
-  DupFields=["host->dest_host"]
+  DupFields=["host->dest_host", "target_user->account_name"]
 }
 ```

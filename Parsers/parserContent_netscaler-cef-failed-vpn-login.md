@@ -2,7 +2,7 @@
 ```Java
 {
 Name = netscaler-cef-failed-vpn-login
-  Vendor = Citrix Netscaler
+  Vendor = Citrix
   Product = Citrix Netscaler
   Lms = ArcSight
   DataType = "failed-vpn-login"

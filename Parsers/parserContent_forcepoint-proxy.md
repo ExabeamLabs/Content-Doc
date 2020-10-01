@@ -3,7 +3,7 @@
 {
 Name = forcepoint-proxy
     Vendor = Forcepoint
-    Product = Forcepoint Web Security
+    Product = Websense Secure Gateway
     Lms = QRadar
     DataType = "web-activity"
     IsHVF = true
@@ -37,6 +37,7 @@ Name = forcepoint-proxy
       """\suserAgent=(?:-|({browser}[^\/]+).+({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin))""",
       """\suserAgent=(?:-|Mozilla\/.+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
       """\suserAgent=(?:-|Mozilla\/.+\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+Gecko\/\d+\s+({browser}\w+))""",
+      """cat=({category_id}\d+)""", 
     ]
   }
 ```

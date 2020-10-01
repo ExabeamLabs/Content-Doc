@@ -3,7 +3,7 @@
 {
 Name = cef-scbpam-app-activity
   Vendor = Dell
-  Product = Dell Quest TPAM
+  Product = One Identity Manager
   Lms = ArcSight
   DataType = "app-activity"
   TimeFormat = "epoch"

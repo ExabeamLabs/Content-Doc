@@ -17,8 +17,17 @@ Name = s-pan-policyviolation-alert
       """\Witem_name\s*=\s*"({user_email}[^"]+)"(\s*\w+\s*=\s*"[^"]*")*\s*item_type\s*=\s*"user"""",
       """\Wcloud_app_instance\s*=\s*"({alert_type}[^"]+)"""",
       """\Waction_taken\s*=\s*"({additional_info}[^"]+)"""",
+      """"policy_rule_name":"({alert_name}[^"]+)""",
+      """"item_type":"({item_type}[^"]+)""",
+      """"item_type":"user".*?"item_name":"({user_email}[^"]+)""",
+      """"item_name":"({user_email}[^"]+)".*?"item_type":"user"""",
+      """"cloud_app_instance":"({alert_type}[^"]+)""",
+      """"action_taken":"({additional_info}[^"]+)""",
+      """"item_creator":"(|({item_creator}[^"]+))"""",
+      """"item_creator_email":"(|({user_email}[^"]+))"""",
+      """"collaborators":"(|({collaborators}[^"]+))"""",
+      """ext_severity=({alert_severity}[^\s]+)"""
     ]
-    DupFields = [ "user_email->user" ]
     SOAR {
     IncidentType = "dlp"
     DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "user->dlpUser", "alert_name->dlpPolicy", "alert_type->description", "host->dlpDeviceName"]
@@ -26,7 +35,4 @@ Name = s-pan-policyviolation-alert
     ProjectName = "SOC"
     EntityFields = [
       {EntityType="user", Name="windows_id", Fields=["user->windows_id"]}
-      ]
-    }
-  }
 ```

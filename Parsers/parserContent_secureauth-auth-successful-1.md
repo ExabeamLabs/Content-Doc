@@ -3,6 +3,7 @@
 {
 Name = secureauth-auth-successful-1
   Vendor = SecureAuth
+  Product = SecureAuth Login
   Lms = Direct
   DataType = "authentication-successful"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

@@ -24,6 +24,5 @@ Name = windows-dns-query
     """Buf length\s*=\s*\S+\s*\(({bytes}\d+)""",
     """ANSWER SECTION:(\s*empty|.+?DATA\s+({response}\S+))"""
   ]
-  DupFields = ["src_ip->src_host"]
 }
 ```

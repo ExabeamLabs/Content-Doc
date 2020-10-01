@@ -3,6 +3,7 @@
 {
 Name = cef-infowatch-print-activity
   Vendor = InfoWatch
+  Product = InfoWatch
   Lms = ArcSight
   DataType = "print-activity"
   TimeFormat = "epoch"

@@ -3,6 +3,7 @@
 {
 Name = jh-file-download
   Vendor = JH
+  Product = JH
   Lms = Direct
   DataType = "file-operations"
   IsHVF = true

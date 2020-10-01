@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cylance-security-alert-1
-  Vendor = Cylance
-  Product = Cylance
+  Vendor = BlackBerry
+  Product = BlackBerry Protect
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSSZ"
@@ -15,6 +15,7 @@ Name = cylance-security-alert-1
     """Device:\s*({src_host}[\w\-.]+)""",
     """MAC:\s*({src_mac}[^\s,;<]+)""",
     """File path:\s*(|({malware_url}.+?))\s+Process Id:""",
+    """IP:\s({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""", 
   ]
   DupFields = [ "alert_name->alert_type" ]
 }

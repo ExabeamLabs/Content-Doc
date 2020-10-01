@@ -15,5 +15,6 @@ Name = cef-crowdstrike-app-activity
     """CrowdStrike\|([^|]+\|){3}({activity}[^|]+)""",
     """({app}FalconHost)""",
   ]
+  DupFields = ["domain->email_domain"]
 }
 ```

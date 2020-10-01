@@ -3,7 +3,7 @@
 {
 Name = f5-silverline-waf
   Product = F5 Silverline
-  Vendor = F5
+  Vendor = F5 Networks
   Lms = Splunk
   DataType = "network-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

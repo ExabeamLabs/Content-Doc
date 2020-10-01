@@ -2,7 +2,8 @@
 ```Java
 {
 Name = bitglass-file-read
-  Vendor = BitGlass
+  Vendor = Bitglass
+  Product = Bitglass CASB
   Lms = Direct
   DataType = "file-read"
   IsHVF = true

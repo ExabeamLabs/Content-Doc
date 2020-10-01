@@ -3,7 +3,7 @@
 {
 Name = n-forwarded-cef-fidelis-alert
   Vendor = Fidelis
-  Product = Fidelis
+  Product = Fidelis XPS
   Lms = NitroCefSyslog
   DataType = "alert"
   TimeFormat = "epoch"

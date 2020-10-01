@@ -2,7 +2,8 @@
 ```Java
 {
 Name = cef-moveit-app-login
-  Vendor = IPswitch MoveIt
+  Vendor = Ipswitch
+  Product = IPswitch MoveIt
   Lms = Direct
   DataType = "app-login"
   TimeFormat = "epoch"

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-proofpoint-email-alert-3
-  Vendor = Proofpoint TAP
+  Vendor = Proofpoint
   Product = Proofpoint TAP
   Lms = Splunk
   DataType = "dlp-email-alert"

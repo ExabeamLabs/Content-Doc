@@ -3,6 +3,7 @@
 {
 Name = syslog-pulsesecure-vpn-connect
   Vendor = Juniper Networks
+  Product = Juniper VPN
   Lms = Direct
   DataType = "vpn-start"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
@@ -13,6 +14,7 @@ Name = syslog-pulsesecure-vpn-connect
     """(Juniper:|PulseSecure:)\s+\S+\s+\S+\s+-\s+({host}[\w\.\-]+)\s+-""",
     """\stime="+({time}\d+-\d+-\d+ \d+:\d+:\d+)""",
     """(Juniper:|PulseSecure:)\s+({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+    """PulseSecure:.+?({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)\s+\-\s+({host}[\w\-.]+)""",
     """\s+-\s+\[({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]""",
     """\Wuser=([^\\]+\\)?({user}[^\s\|]+)""",
     """\s+-\s+\[[^\]]+\]\s+(({domain}[^\(]+)\\)?({user}.+?)\(({realm}[^\)]+)?\)""",
@@ -38,5 +40,6 @@ Name = syslog-pulsesecure-vpn-connect
     """\sduration=({session_duration}\d+)""",
     """\Wmsg="({additional_info}[^"]+)""",
   ]
+  DupFields = ["user->account"]
 }
 ```

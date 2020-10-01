@@ -3,6 +3,7 @@
 {
 Name = powersentry-app-activity
   Vendor = PowerSentry
+  Product = PowerSentry
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

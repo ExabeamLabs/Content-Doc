@@ -2,7 +2,7 @@
 ```Java
 {
 Name = f5-vpn-session-start
-  Vendor = F5
+  Vendor = F5 Networks
   Product = Big-IP
   Lms = Splunk
   DataType = "vpn-start"

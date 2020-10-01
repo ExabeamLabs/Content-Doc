@@ -2,7 +2,7 @@
 ```Java
 {
 Name = ad-audit-alert
-  Vendor = AD Audit
+  Vendor = ManageEngine
   Product = AD Audit
   Lms = Direct
   DataType = "alert"

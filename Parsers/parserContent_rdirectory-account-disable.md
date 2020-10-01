@@ -3,6 +3,7 @@
 {
 Name = rdirectory-account-disable
   Vendor = Namespace rDirectory
+  Product = Namespace rDirectory
   Lms = Direct
   DataType = "account-disabled"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

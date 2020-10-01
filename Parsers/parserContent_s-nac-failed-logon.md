@@ -1,32 +1,33 @@
 #### Parser Content
 ```Java
 {
-Name = s-nac-failed-logon-1
-  Conditions = [ """Device-Administration: """, """ failed""" ]
-}，
-
-${CiscoParsersTemplates.s-nac-logon}{
-  Name = s-nac-failed-logon-2
-  Conditions = [ """CISE_Failed_Attempts""", """ failed""" ]
-}，
-
-{
-  Name = cef-cisco-ise-nac-logon
+Name = s-nac-failed-logon
   Vendor = Cisco
   Product = Cisco ISE
-  Lms = Direct
-  DataType = "nac-logon"
-  TimeFormat = "epoch"
-  Conditions = [ """|CISCO|ISE|""","""msg=NOTICE Passed-Authentication""","""app=Radius"""  ]
+  Lms = Splunk
+  DataType = "nac-failed-logon"
+  TimeFormat = "yyyy-MM-dd HH:mm:ss"
+  Conditions = [ "CISE_Failed_Attempts", "since user has entered the wrong password" ]
   Fields = [
-    """\srt=({time}\d+)""",
-    """\sdvchost=({host}[^\s]+)""",
-    """\sduser=(?:|(({domain}[^\\=]+)\\+)?({user}(?:({computer_name}([A-F0-9]{2}\-){5}[A-F0-9]{2})|.+?)))\scn1=""",
-    """\sdhost=({dest_host}[^\s]+)""",
-    """\sdst=({dest_ip}[^\s]+)""",
-    """\sdst=({auth_server}[^\s]+)""",
-    """\sshost=({src_host}[^\s]+)""",
-    """\ssrc=({src_ip}[^\s]+)"""
+    """exabeam_host=({host}[^\s]+)""",
+    """({host}[\w\-.]+)\s+CISE_Failed_Attempts""",
+    """\d+\s+({time}\d\d\d\d\-\d\d\-\d\d \d+:\d+:\d+)""",
+    """, UserName=(({user_type}host)\/)?(({domain}[^\s\\]+)\\+)?(({user_email}[^,@]+@[^,@]+)|({user}[^,]+))""",
+    """, Calling-Station-ID=({dest_host}[^,]+)""",
+    """, Called-Station-ID=({src_host}[^,]+):({ssid}[^,]+)""",
+    """, AD-Host-Resolved-Identities=({dest_host}[^@,]+)""",
+    """, AD-Host-Resolved-Identities=({computer_name}[^@,]+)""",
+    """, (NetworkDeviceName|NetworkDeviceProfileName)=({network}[^,]+)""",
+    """, Device IP Address=({auth_server}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """, Device IP Address=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """, Framed-IP-Address=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """, DestinationIPAddress=({dest_ip}[a-fA-F\d.:]+)""",
+    """, NetworkDeviceGroups=Location#All Locations#({location}[^,]+)""",
+    """, FailureReason=({result_code}\d+)""",
+    """, FailureReason=\d+ ({failure_reason}[^,]+)""",
+    """(?i)(MacAddress)=({mac_address}[^,\s]+),""",
+    """, SSID=({ssid}[^,]+)""",
+    """, AuthenticationIdentityStore=({auth_server}[^,]+)""",
   ]
 }
 ```

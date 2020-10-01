@@ -2,7 +2,8 @@
 ```Java
 {
 Name = beyondtrust-passwordsafe
-  Vendor = BeyondTrust PasswordSafe
+  Vendor = BeyondTrust
+  Product = BeyondTrust PasswordSafe
   Lms = Direct
   DataType = "privileged-access"
   TimeFormat = "MM/dd/yyyy HH:mm:ss"

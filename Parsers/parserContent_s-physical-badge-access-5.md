@@ -2,11 +2,12 @@
 ```Java
 {
 Name = s-physical-badge-access-5
-    Vendor = Unknown
+    Vendor = Badge
+  Product = Badge
     Lms = Splunk
     DataType = "physical-access"
     TimeFormat = "epoch_sec"
-    Conditions = ["BADGE", "exabeam_raw"]
+    Conditions = ["BADGE", "Floor"]
     Fields = [
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """exabeam_host=({host}[^\s]+)""",

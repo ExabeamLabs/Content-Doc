@@ -10,5 +10,6 @@ Name = cef-sentinelone-security-alert-2
     """\sprocessCmd:"({process}({directory}[^"]*?[\\\/]+)?({process_name}[^"\\\/]+?))\s*"""",
     """\ssha256:(|({sha256_sum}.+?))(\s+\w+:|\s*$)""",
   ]
+  DupFields = ["directory->process_directory"]
 }
 ```

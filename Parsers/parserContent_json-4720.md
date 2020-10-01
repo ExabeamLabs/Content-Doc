@@ -20,5 +20,6 @@ Name = json-4720
 	      """"0":"({account_name}[^"]+)""",
 	      """"1":"({account_domain}[^"]+)"""
   ]
+  DupFields = ["host->dest_host"]
 }
 ```

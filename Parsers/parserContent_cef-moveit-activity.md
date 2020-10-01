@@ -2,7 +2,8 @@
 ```Java
 {
 Name = cef-moveit-activity
-  Vendor = IPswitch MoveIt
+  Vendor = Ipswitch
+  Product = IPswitch MoveIt
   Lms = Direct
   DataType = "file-operations"
   IsHVF = true

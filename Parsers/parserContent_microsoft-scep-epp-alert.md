@@ -16,7 +16,8 @@ Name = microsoft-scep-epp-alert
     """severity=({alert_severity}[\w]+)\s+category=({alert_type}[^\s]+)\s+action""",
     """detection_id=({alert_id}[^\s]+)\s+""",
     """signature=({alert_name}[^\s]+)\s+""",
-    """exabeam_host=({host}[\w\-.]+)"""
+    """exabeam_host=({host}[\w\-.]+)""",
+    """process="({process}[^"]+\\({process_name}[^"]+))"""",
   ]
   DupFields=[ "dest_ip->src_ip", "dest_host->src_host" ]
 }

@@ -3,6 +3,7 @@
 {
 Name = cef-salesforce-failed-app-login
   Vendor = Salesforce
+  Product = Salesforce
   Lms = ArcSight
   DataType = "failed-app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

@@ -3,6 +3,7 @@
 {
 Name = secureauth-auth-successful
     Vendor = SecureAuth
+  Product = SecureAuth Login
     Lms = ArcSight
     DataType = "authentication-successful"
     TimeFormat = "epoch"

@@ -2,8 +2,8 @@
 ```Java
 {
 Name = ccure-app-login-1
-  Vendor = CCURE
-  Product = CCURE
+  Vendor = Tyco
+  Product = CCURE Building Management System
   Lms = Direct
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

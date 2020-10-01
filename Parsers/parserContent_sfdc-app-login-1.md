@@ -3,6 +3,7 @@
 {
 Name = sfdc-app-login-1
   Vendor = Salesforce
+  Product = Salesforce
   Lms = Splunk
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
@@ -16,6 +17,7 @@ Name = sfdc-app-login-1
     """SOURCE_IP="({src_ip}[A-Fa-f:\d.]+)""",
     """USER_ID="({user}[^"\s]+)""",
     """LOGIN_STATUS="({outcome}[^"]+)""",
+    """USER_NAME="({user_email}[^@]+({email_domain}[^"]+))""", 
   ]
 }
 ```

@@ -3,6 +3,7 @@
 {
 Name = raw-juniper-nwc-vpn-connected
   Vendor = Juniper Networks
+  Product = Juniper VPN
   Lms = Direct
   DataType = "vpn-start"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
@@ -20,6 +21,6 @@ Name = raw-juniper-nwc-vpn-connected
     """user=({user}[^\s]+)""",
     """: User with IP ({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
-  DupFields = [ "host->dest_host" ]
+  DupFields = [ "host->dest_host" , "user->account"]
 }
 ```

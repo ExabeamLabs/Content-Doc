@@ -2,14 +2,15 @@
 ```Java
 {
 Name = websense-proxy-1
-    Vendor = Websense
+    Vendor = Forcepoint
     Product = Websense Secure Gateway
     Lms = Direct
     DataType = "web-activity"
     IsHVF = true
-    TimeFormat = "epoch"
+    TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = [ """|Websense|Security|""","""|transaction:""","""srcBytes=""" ]
     Fields = [
+      """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
       """exabeam_endTime=({time}\d+)""",
       """\d{1,2}:\d{1,2}:\d{1,2}\s+({host}[^\s]+)\s*LEEF:""",
       """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",

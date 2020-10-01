@@ -24,7 +24,4 @@ Name = s-phantom-dlp-email-in
     ProjectName = "SOC"
     EntityFields = [
       {EntityType="user", Name="email", Fields=["recipient->email"]}
-    ]
-  }
-}
 ```

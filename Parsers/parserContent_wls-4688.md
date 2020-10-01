@@ -21,7 +21,8 @@ Name = wls-4688
       """SubjectLogonId="+({logon_id}[^"]+)"""",
       """ProcessId="+({parent_process_guid}[^"]+)"""",
       """NewProcessId="+({process_guid}[^"]+)"""",
-      """CommandLine="+({command_line}[^"]+)""""
+      """CommandLine="+({command_line}[^"]+)"""",
+      """CommandLine="+(|-|(sc|((?:[^"]+)?[\\\/])?sc.exe)\s*(?:\\*[\w.\-]+)?\s*create\s*({service_name}.+?))\s+binPath= ({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+))"""
     ]
     DupFields = [ "process_guid->pid","directory->process_directory" ]
   }

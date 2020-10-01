@@ -12,6 +12,7 @@ Name = s-xml-4723
     """<Computer>({host}[^<]+)</Computer>""",
     """<EventID>({event_code}[^<]+)</EventID>""",
     """<Keywords>({outcome}[^<]+)</Keywords>""",
+    """<Keyword>({outcome}Audit\s[^<]+)</Keyword>""",
     """<Data Name='SubjectUserSid'>({user_sid}[^<]+)</Data>""",
     """<Data Name='SubjectUserName'>({user}[^<]+)</Data>""",
     """<Data Name='SubjectDomainName'>({domain}[^<]+)</Data>""",

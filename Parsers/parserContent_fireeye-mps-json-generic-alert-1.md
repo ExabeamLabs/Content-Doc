@@ -25,6 +25,7 @@ Name = fireeye-mps-json-generic-alert-1
     """"dstport":\s*({dest_port}\d+)""",
     """"detail":.+?"uri":\s*"({malware_url}[^"]+)"""",
     """"description":\s*"({additional_info}[^"]+)""",
+    """"username":\s*"({user}[^"]+)""",
   ]
     SOAR {
         IncidentType = "malware"

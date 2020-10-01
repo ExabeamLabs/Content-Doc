@@ -3,7 +3,7 @@
 {
 Name = o365-inbox-rules-all-2
   Vendor = Microsoft
-  Product = Office 365
+  Product = Microsoft Office 365
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -24,25 +24,6 @@ Name = o365-inbox-rules-all-2
     """destinationServiceName=({app}.+?)\s*filePath"""
     """({app}Office 365)"""
   ]
-}
-
-{
-  Name = o365-security-alert
-  Vendor = Microsoft
-  Product = Office 365
-  Lms = Direct
-  DataType = "alert"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ """AlertTriggered""", """AlertType=""", """AlertId""", """destinationServiceName=Office 365"""]
-  Fields = [
-   """"(ts|CreationTime)":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-   """exabeam_host=({host}[^\s]+)""",
-   """"f3u":"({user_email}[^"]+)""",
-   """"ad":"({additional_info}[^"]+)""",
-   """"(Name|an)":"({alert_name}[^"]+)""",
-   """"AlertId":"({alert_id}[^"]+)""""
-   """"(sev|Severity)":"({alert_severity}[^"]+)""",
-   """"AlertType":"({alert_type}[^"]+)""""
-  ]
+  DupFields = ["user_domain->email_domain"]
 }
 ```

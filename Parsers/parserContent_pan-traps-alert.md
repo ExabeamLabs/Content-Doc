@@ -13,6 +13,7 @@ Name = pan-traps-alert
     """({time}\w+ \d+ \d\d\d\d \d\d:\d\d:\d\d),Traps Agent,""",
     """,Traps Agent,([^,]*,){2}(?:-|({alert_name}[^,]+)),(?:-|({src_host}[^,]+)),(({domain}[^\\]+)\\)?(?:-|({user}[^,]+)),(|({additional_info}.+?))\s*Prevention Key:""",
     """Prevention Key:\s*({alert_id}[^,\s]+),(?:-|({alert_severity}\d+)),(?:-|({alert_type}[^,]+)),(?:-|({malware_url}[^,]+)),([^,]*,){2}(?:-|({dest_ip}(\d{1,3}\.){3}\d{1,3}))""",
+    """Parent process:\s*({process_name}[^\.]+)""",
   ]
   SOAR {
     IncidentType = "malware"

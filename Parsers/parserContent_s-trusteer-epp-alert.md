@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-trusteer-epp-alert
-  Vendor = IBM 
+  Vendor = IBM
   Product = IBM Endpoint Manager
   Lms = Splunk
   DataType = "alert"

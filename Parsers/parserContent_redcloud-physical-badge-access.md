@@ -3,6 +3,7 @@
 {
 Name = redcloud-physical-badge-access
     Vendor = RedCloud
+  Product = RedCloud
     Lms = Direct
     DataType = "physical-access"
     TimeFormat =  "epoch"

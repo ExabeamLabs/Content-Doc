@@ -1,8 +1,8 @@
 #### Parser Content
 ```Java
 {
-Name = vmware-id-manager-oauth2-client
+Name = vmware-id-manager-oauth
   DataType = "app-activity"
-  Conditions = [ """"objectType""", """vidm""", """"organizationId""", """\"OAuth2Client\""""]
+  Conditions = [ """"objectType""", """vidm""", """"organizationId""", """\"OAUTH2\""""]
 }
 ```

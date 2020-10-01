@@ -5,35 +5,35 @@ Use Case: Security Operations
 
 _The following list of Supported Exabeam Data Sources power this use case:_
 
-* [AD Audit](../DataSources/datasource_ad_audit_ad_audit.md)
+* [AD Audit](../DataSources/datasource_ad_audit_manageengine.md)
+* [AWS Bastion](../DataSources/datasource_aws_bastion_aws.md)
+* [BIG-IP DNS](../DataSources/datasource_big-ip_dns_f5_networks.md)
+* [BIND](../DataSources/datasource_bind_bind.md)
+* [Big-IP](../DataSources/datasource_big-ip_f5_networks.md)
 * [BlueCat Networks Adonis](../DataSources/datasource_bluecat_networks_adonis_bluecat_networks_adonis.md)
-* [Bro](../DataSources/datasource_bro_bro.md)
-* [Cisco Adaptive Security Appliance](../DataSources/datasource_cisco_adaptive_security_appliance_cisco_adaptive_security_appliance.md)
-* [Cisco Firepower](../DataSources/datasource_cisco_firepower_cisco_firepower.md)
-* [CrowdStrike Falcon](../DataSources/datasource_crowdstrike_falcon_crowdstrike_falcon.md)
-* [CyberArk Vault](../DataSources/datasource_cyberark_vault_cyberark_vault.md)
-* [Microsoft Windows](../DataSources/datasource_dc_microsoft_windows.md)
-* [BIND](../DataSources/datasource_dns_bind.md)
-* [Bro](../DataSources/datasource_dns_bro.md)
-* [Cisco Firepower](../DataSources/datasource_dns_cisco_firepower.md)
-* [F5](../DataSources/datasource_dns_f5.md)
-* [Microsoft Windows DNSServer](../DataSources/datasource_dns_microsoft_windows_dnsserver.md)
-* [Palo Alto Networks GlobalProtect](../DataSources/datasource_globalprotect_portal_palo_alto_networks_globalprotect.md)
+* [Centrify Authentication Service](../DataSources/datasource_centrify_authentication_service_centrify.md)
+* [Cisco Adaptive Security Appliance](../DataSources/datasource_cisco_adaptive_security_appliance_cisco.md)
+* [Cisco Firepower](../DataSources/datasource_cisco_firepower_cisco.md)
+* [Falcon](../DataSources/datasource_falcon_crowdstrike.md)
+* [GlobalProtect](../DataSources/datasource_globalprotect_palo_alto_networks.md)
+* [IBM Sterling B2B Integrator](../DataSources/datasource_ibm_sterling_b2b_integrator_ibm.md)
 * [Infoblox](../DataSources/datasource_infoblox_infoblox.md)
-* [NetWrix](../DataSources/datasource_netwrix_netwrix.md)
-* [Cisco OpenDNS Umbrella](../DataSources/datasource_opendns_umbrella_cisco_opendns_umbrella.md)
-* [Splunk Stream](../DataSources/datasource_splunk_stream_splunk_stream.md)
-* [Tanium Endpoint Platform](../DataSources/datasource_tanium_endpoint_platform_tanium_endpoint_platform.md)
+* [Microsoft Windows DNSServer](../DataSources/datasource_microsoft_windows_dnsserver_microsoft.md)
+* [Microsoft Windows](../DataSources/datasource_microsoft_windows_microsoft.md)
+* [Netwrix Auditor](../DataSources/datasource_netwrix_auditor_netwrix.md)
+* [OneSpan](../DataSources/datasource_onespan_onespan.md)
+* [Reveal(x)](../DataSources/datasource_reveal(x)_extrahop.md)
+* [SSH](../DataSources/datasource_ssh_linux.md)
+* [Splunk Stream](../DataSources/datasource_splunk_stream_splunk.md)
+* [Sysmon](../DataSources/datasource_sysmon_microsoft.md)
 * [Unix](../DataSources/datasource_unix_unix.md)
-* [Unix](../DataSources/datasource_unix_unix.md)
-* [Microsoft Windows](../DataSources/datasource_windows_microsoft_windows.md)
-* [Unix](../DataSources/datasource_krb5kdc_unix.md)
+* [Zebra wireless LAN management](../DataSources/datasource_zebra_wireless_lan_management_extreme_networks.md)
+* [Zeek Network Security Monitor](../DataSources/datasource_zeek_network_security_monitor_zeek.md)
 
 
 ### Exabeam Event Types
 
 - 
 - dns-query
-- dns-response
 - failed-logon
 - sequence-end

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = netscaler-failed-vpn-login
-  Vendor = Citrix Netscaler
+  Vendor = Citrix
   Product = Citrix Netscaler
   Lms = Direct
   DataType = "failed-vpn-login"

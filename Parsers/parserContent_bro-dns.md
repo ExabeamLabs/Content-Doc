@@ -1,27 +1,17 @@
 #### Parser Content
 ```Java
 {
-Name = bro-dns-response
-  Vendor = Bro
+Name = bro-dns
+  Vendor = Zeek
+  Product = Zeek Network Security Monitor
   Lms = Direct
   DataType = "dns-response"
-  IsHVF = true
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
-  Conditions = [ """"id.orig_h""", """"id.resp_h""", """"rcode""", """"rcode_name""" ]
+  TimeFormat = "epoch_sec"
+  Conditions = [ "/dns.log" ]
   Fields = [
-    """exabeam_host=([^@=]+@\s*)?({host}\S+)""",
-    """"ts\\?"+:\\?"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3})""",
-    """"uid\\?"+:\\?"+({conn_id}[^"]+)""",
-    """"id\.orig_h\\?"+:\\?"+({src_ip}[a-fA-F\d.:]+)""",
-    """"id\.orig_p\\?"+:({src_port}\d+)""",
-    """"id\.resp_h\\?"+:\\?"+({dest_ip}[a-fA-F\d.:]+)""",
-    """"id\.resp_p\\?"+:({dest_port}[a-fA-F\d.:]+)""",
-    """"proto\\?"+:\\?"+({protocol}[^"]+)""",
-    """"query\\?"+:\\?"+({query}[^"]+)""",
-    """"qtype_name\\?"+:\\?"+({query_type}[^"]+)""",
-    """"rcode_name\\?"+:\\?"+({dns_response_code}[^"]+)""",
-    """"answers\\?"+:\[({response}.+?)\]""",
-    """"rejected\\?"+:({outcome}\w+)""",
-  ]
+     """({time}\d{10})\.\d{6}\t({uid}[^\t]+)\t(({id_orig_h}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]*:[A-Fa-f0-9%.:]+(th0)?))|[^\t]+)\t(({id_orig_p}\d+?)|[^\t]+)\t(({id_resp_h}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]*:[A-Fa-f0-9%.:]+(th0)?))|[^\t]+)\t(({id_resp_p}\d+?)|[^\t]+)\t({proto}[^\t]+)\t({trans_id}[^\t]+)\t({rtt}[^\t]+)\t({query}[^\t]+)\t({qclass}[^\t]+)\t({qclass_name}[^\t]+)\t({qtype}[^\t]+)\t({qtype_name}[^\t]+)\t({rcode}[^\t]+)\t({rcode_name}[^\t]+)\t({AA}[^\t]+)\t({TC}[^\t]+)\t({RD}[^\t]+)\t({RA}[^\t]+)\t({Z}[^\t]+)\t({answers}[^\t]+)\t({TTLs}[^\t]+)\t({rejected}[^\t]+?)\s*$""",
+    """\d{10}\.\d{6}\t([^\t]+\t){14}(?:-|({dns_response_code}[^\t]+))\t"""
+    ]
+  DupFields = [ "id_orig_h->src_ip", "id_orig_p->src_port", "id_resp_h->dest_ip", "id_resp_p->dest_port", "proto->protocol", "qtype->query_type", "rejected->outcome" ]
 }
 ```

@@ -17,7 +17,8 @@ Name = cef-4768
       """\scs4=({result_code}\w+)""",
       """\sdvchost=({host}[^\s]+)""",
       """\sdntdom=({domain}[^\s]+)""",
-      """Service_,ID=({user_sid}[^\s]+)\s"""
+      """Service_,ID=({user_sid}[^\s]+)\s""",
     ]
+    DupFields = ["host->dest_host"]
   }
 ```

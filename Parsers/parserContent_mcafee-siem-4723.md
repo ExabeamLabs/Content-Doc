@@ -3,7 +3,7 @@
 {
 Name = mcafee-siem-4723
     Vendor = Microsoft
-    Product = Windows
+    Product = Microsoft Windows
     Lms = Direct
     DataType = "windows-password-change"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
@@ -19,7 +19,8 @@ Name = mcafee-siem-4723
       """"UserIDSrc":"({user}[^"]+)""",
       """"Security_ID":"({user_sid}[^"]+)""",
       """"Source_Logon_ID":"({logon_id}[^"]+)""",
-      """"UserIDDst":"({target_user}[^"]+)"""
+      """"UserIDDst":"({target_user}[^"]+)""",
+      """"action":"({outcome}[^"]+)"""
     ]
     DupFields = [ "host->dest_host" ]
   }

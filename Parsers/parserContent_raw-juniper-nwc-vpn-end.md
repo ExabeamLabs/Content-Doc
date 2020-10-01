@@ -3,6 +3,7 @@
 {
 Name = raw-juniper-nwc-vpn-end
   Vendor = Juniper Networks
+  Product = Juniper VPN
   Lms = Direct
   DataType = "vpn-end"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

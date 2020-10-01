@@ -1,24 +1,19 @@
 #### Parser Content
 ```Java
 {
-Name = cef-kaspersky-security-alert-1
-  Vendor = Kaspersky Lab
-  Product = Kaspersky Endpoint Security for Business
-  Lms = Splunk
-  DataType = "security-alert"
-  TimeFormat =  "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ """CEF""","""|KasperskyLab|SecurityCenter|""","""cs3Label=ProductVersion""", """destinationZoneURI=""" ]
-  Fields = [
-    """dhost=({dest_host}[^\s]+)\s*dst=""",
-    """dst=({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
-    """cs5=({task_name}.+?)\s\w+=.+?cs5Label=TaskName""",
-    """cs5=({group_name}.+?)\s\w+=.+?cs5Label=SrcAdmGroupName""",
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """cs2=({product_name}.+?)\s\w+=""",
-    """dvchost=({host}.+?)\s\w+=""",
-    """dvc=({host}.+?)\s\w+=""",
-    """cs4=({alert_id}.+?)\s\w+=""",
-    """CEF:\s*\d\|([^\|]+\|){3}({alert_type}[^\|]+)\|({alert_name}[^\|]+)\|({alert_severity}[^\|]+)\|"""
-    ]
+Name = cef-kaspersky-security-alert
+  Conditions = [ """CEF:""", """|Kaspersky|Kaspersky Endpoint Security""" ]
+  Fields = ${KasperskyParserTemplates.cef-kaspersky-security-alert.Fields}[
+    """\WcategoryDeviceGroup=(|({alert_type}.+?))(\s+\w+=|\s*$)""",
+    """Action:\s*({action}[^\\]+)""",
+    """fname=({file_path}({file_parent}[^=]*?[\\\/]+)?({file_name}[^\\\/=]+?(\.({file_ext}\w+))?))\s+\w+="""
+    """requestClientApplication=({app}.+?)\s*\w+=""",
+    """\Wdvchost=({src_host}[^\s]+)\s+\w+""",
+    """eventId=({event_code}\d+)""",
+    """externalId=({alert_id}\d+)""",
+    """agt=({src_ip}[a-fA-F\d.:]+)\s""",
+    """User:\s*([^\\]+\\*)?(SYSTEM|({user}[^\s]+))""",
+    """Result\\*Description:\s*({outcome}[^\\]+)"""
+  ]
 }
 ```

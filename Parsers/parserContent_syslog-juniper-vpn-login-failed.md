@@ -3,6 +3,7 @@
 {
 Name = syslog-juniper-vpn-login-failed
   Vendor = Juniper Networks
+  Product = Juniper VPN
   Lms = Syslog
   DataType = "failed-vpn-login"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

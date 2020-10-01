@@ -2,7 +2,7 @@
 ```Java
 {
 Name = securesphere-db-json
-  Vendor = Imperva 
+  Vendor = Imperva
   Product = Imperva SecureSphere
   Lms = Direct
   DataType = "database-operation"
@@ -19,7 +19,7 @@ Name = securesphere-db-json
     """"+db-user"+\s*:\s*"+(?:|({domain}[^"]+))"+(,|})""",
     """"+db-user"+\s*:\s*"+(?:|({user}[^"\\@]+?)(@({domain}[^"]+))?)"+(,|})""",
     """"+db-user"+\s*:\s*"+(?:|({domain}[^"\\@]+?)(\\+({user}[^"]+))?)"+(,|})""",
-    """"+event-type"+\s*:\s*"+(?:|({event_type}[^"]+))"+(,|})""",
+    """"+event-type"+\s*:\s*"+(?:|({log_type}[^"]+))"+(,|})""",
     """"+application-name"+\s*:\s*"+(?:|({app}[^"]+))"+(,|})""",
     """"+service-name"+\s*:\s*"+(?:|({service_name}[^"]+))"+(,|})""",
     """"+server-group"+\s*:\s*"+(?:|({server_group}[^"]+))"+(,|})""",

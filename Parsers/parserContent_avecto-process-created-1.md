@@ -2,7 +2,8 @@
 ```Java
 {
 Name = avecto-process-created-1
-  Vendor = Avecto Defendpoint Service
+  Vendor = Avecto
+  Product = Avecto Defendpoint
   Lms = Splunk
   DataType = "process-created"
   IsHVF = true
@@ -16,7 +17,7 @@ Name = avecto-process-created-1
     """\WEventDescription="({additional_info}[^"]+)""",
     """\WFileName="({process}({directory}(?:(\w+:)?[^:"]+)?[\\\/])?({process_name}.+?))"""",
     """\WCommandLine="({command_line}.+?)",""",
-    """\WProductName="(<None>|({product}[^"]+))""",
+    """\WProductName="(<None>|({product_name}[^"]+))""",
     """\WPublisher="(<None>|({publisher}[^"]+))""",
     """\WReason="(<None>|({reason}[^"]+))""",
     """\WProcessGUID="({process_guid}[^"]+)""",

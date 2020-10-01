@@ -27,3 +27,4 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [ldap-auth-attempt](../Parsers/parserContent_ldap-auth-attempt.md)
 * [q-ldap-auth-attempt](../Parsers/parserContent_q-ldap-auth-attempt.md)
+* [q-ldap-auth-attempt-1](../Parsers/parserContent_q-ldap-auth-attempt-1.md)

@@ -3,6 +3,7 @@
 {
 Name = symantec-dlp-email-alert-in
   Vendor = Symantec
+  Product = Symantec DLP
   Lms = Direct
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
