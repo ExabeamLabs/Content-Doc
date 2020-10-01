@@ -10,7 +10,7 @@ Name = raw-4719
   Conditions = [ "4719", "System audit policy was changed" ]
   Fields = [
     """({event_name}System audit policy was changed)""",
-    """\s({host}[^\s]+)\sMSWinEventLog""",
+    """({host}[^\s=]+)\sMSWinEventLog""",
     """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
     """({event_code}4719)""",
     """\s+Account Name:\s+({user}.+?)\s+Account Domain""",

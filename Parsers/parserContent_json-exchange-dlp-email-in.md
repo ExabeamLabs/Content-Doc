@@ -30,7 +30,7 @@ Name = json-exchange-dlp-email-in
   ]
   DupFields = [
     "alert_name->alert_type",
-    "recipient->email_user"
+    "recipient->user_email"
     "recipient->orig_user"
   ]
 }

@@ -2,20 +2,21 @@
 ```Java
 {
 Name = checkpoint-web-activity-1
-  Vendor = Check Point
+  Vendor = Check Point Software
+  Product = Check Point NGFW
   Lms = Direct
   TimeFormat = "epoch"
   DataType = "web-activity"
-  Conditions = [ """|loguid=""", """|origin=""", """|product=""" ]
+  Conditions = [ """|loguid=""", """|origin=""", """|product=""", """product=URL Filtering""" ]
   Fields = [
-    """"time=({time}\d+)\|""",
+    """time=({time}\d+)\|""",
     """hostname=({host}[^|]+)\|""",
     """app_category=({category}[^|]+)\|""",
     """appi_name=({app}[^|]+)\|""",
     """layer_uuid=({uuid}[^|]+)\|""",
     """rule_action=({action}[^|]+)\|""",
-    """action=({action}[^\|]+)"""
-    """rule_name=({rule_name}[^|]+)\|""",
+    """\|action=({action}[^\|]+)""",
+    """rule_name=({rule_name}[^\|]+)\s*\|""",
     """origin=({origin_ip}[^|]+)\|""",
     """client_type_os=({os}[^|]+)\|""",
     """dst=({dest_ip}[^|]+)\|""",
@@ -31,6 +32,7 @@ Name = checkpoint-web-activity-1
     """\|bytes=({bytes}\d+)""",
     """\|server_inbound_bytes=({bytes_in}\d+)""",
     """\|server_outbound_bytes=({bytes_out}\d+)""",
+    """(U|u)ser=(-|({user_fullname}[^\(]+)\s+\(({user}[^\)]+))""",
   ]
 }
 ```

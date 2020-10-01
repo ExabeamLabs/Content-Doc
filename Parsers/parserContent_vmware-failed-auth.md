@@ -2,7 +2,7 @@
 ```Java
 {
 Name = vmware-failed-auth
-  Vendor = VMware Horizon
+  Vendor = VMware
   Product = VMware Horizon
   Lms = Direct
   DataType = "authentication-failed"
@@ -13,11 +13,5 @@ Name = vmware-failed-auth
     """\w+\s+\d+\s+\d+:\d+:\d+\s+({host}[\w\-.]+)\s+View""",
     """User (?:({domain}[^\\\s]+)\\+)?({user}[^\\\s]+)""",
    ]
-}
-
-${VMWareParserTemplates.vmware-id-manager}{
-  Name = vmware-id-manager-login
-  DataType = "app-login"
-  Conditions = [ """"objectType""", """vidm""", """"organizationId""", """\"LOGIN\""""]
 }
 ```

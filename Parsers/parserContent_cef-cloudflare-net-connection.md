@@ -3,7 +3,7 @@
 {
 Name = cef-cloudflare-net-connection
   Vendor = Cloudflare
-  Product = Cloudflare
+  Product = Cloudflare WAF
   Lms = Direct
   DataType = "network-connection"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
@@ -27,46 +27,12 @@ Name = cef-cloudflare-net-connection
     """dst=({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
     """destinationDnsDomain=({external_domain}.*?)\s*\w+=""",
     """requestClientApplication=({app}.+?)\s*\w+=""",
-    """ext_source=({source}.+?)\s*\w+=""",
+    """ext_source=({log_source}.+?)\s*\w+=""",
     """\sin=({bytes}.+?)\s*\w+=""",
     """ext_method=({method}[^\s]+)""",
     """cat=({category}[^\s]+)\s""",
     """cn2=({bytes}[^\s]+)\s""",
     """destinationServiceName=({dest_host}[^\s]+)\s"""
  ]
-}
-
-${ClearSenseParserTemplates.clesarsense-app-activity}{
-  Name = clearsense-app-login
-  DataType = "app-login"
-  Conditions = [ """SUCCESSFUL_LOGIN""", """Login Successful""", """requestClientApplication=ClearSense Audit""", """CEF""" ]
-}
-${ClearSenseParserTemplates.clesarsense-app-activity}{
-  Name = clearsense-app-activity
-  DataType = "app-activity"
-  Conditions = [ """requestClientApplication=ClearSense Audit""", """CEF""" ]
-}
-
-{
-  Name = infoblox-bloxone-dns-response 
-  Vendor = Infoblox BloxOne
-  Product = Infoblox BloxOne
-  Lms = Direct
-  DataType = "dns-response"
-  TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = ["""|Infoblox|""", """app=DNS""", """InfobloxDNSView=""", """InfobloxDNSQType=""" ]
-  Fields = [
-     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-     """src=(\s|({src_ip}[a-fA-F\d.:]+))""",
-     """dst=(\s|({dest_ip}[a-fA-F\d.:]+))""",
-     """spt=(\s|({src_port}\d+))""",
-     """proto=(\s|({protocol}[^\s]+))""",
-     """app=({app}[^\s]+)""",
-     """InfobloxDNSRCode=({dns_response_code}[^\s]+)\s""",
-     """InfobloxDNSQType=(\s|({query_type}[^\s]+))""",
-     """destinationDnsDomain=(\s|({query}[^\s]+))""",
-     """msg=(\s|({additional_info}.+?));\s\.\s32768""",
-  ]
 }
 ```

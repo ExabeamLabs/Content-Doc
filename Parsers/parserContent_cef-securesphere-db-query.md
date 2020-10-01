@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-securesphere-db-query
-  Vendor = Imperva 
+  Vendor = Imperva
   Product = Imperva SecureSphere
   Lms = ArcSight
   DataType = "database-query"

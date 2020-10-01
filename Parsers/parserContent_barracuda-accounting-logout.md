@@ -2,7 +2,7 @@
 ```Java
 {
 Name = barracuda-accounting-logout
-  Vendor = Barracuda Firewall
+  Vendor = Barracuda
   Product = Barracuda Firewall
   Lms = Direct
   DataType = "logout"

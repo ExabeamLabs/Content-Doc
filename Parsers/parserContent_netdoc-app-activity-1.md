@@ -2,8 +2,8 @@
 ```Java
 {
 Name = netdoc-app-activity-1
- Product = Netdocs
- Vendor = Netdocs
+ Product = NetDocs
+ Vendor = NetDocs
  Lms = Splunk
  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
  DataType = "app-activity"
@@ -34,13 +34,5 @@ Name = netdoc-app-activity-1
    """({app}netdocs)""",
     ]
    DupFields = [ "host->src_ip", "activity->accesses" ]
-}
-
-
-${HashiCorpParserTemplates.hashicorp-login-activity}{
-  Name = hashicorp-password-reset
-  DataType = "account-password-reset"
-  Conditions = [ """"type":"request"""", """"auth":{""", """"operation":"create"""", """"token_type"""", """"ttam_service":"vault"""" ]
-  Fields = ${HashiCorpParserTemplates.hashicorp-login-activity.Fields} []
 }
 ```

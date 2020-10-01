@@ -22,7 +22,7 @@ Name = cef-symantec-atp-alert
     """"severity_id":({alert_severity}\d+)""",
     """"device_ip":"({src_ip}[^"]+)"""",
     """"status_detail":"({alert_type}[^"]+)"""",
-    """"product_name":"({product}[^"]+)"""",
+    """"product_name":"({product_name}[^"]+)"""",
     """"message":"({additional_info}[^"]+)"""",
   ]
   DupFields = ["host->dest_host", "file_name->process_name"]

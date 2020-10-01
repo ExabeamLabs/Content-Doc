@@ -3,6 +3,7 @@
 {
 Name = q-zscaler-web-activity
   Vendor = Zscaler
+  Product = Zscaler
   Lms = QRadar
   DataType = "web-activity"
   IsHVF = true
@@ -13,7 +14,6 @@ Name = q-zscaler-web-activity
     """exabeam_host=({host}[\w.\-]+)""",
     """(\s|\|)src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s+(\w+=|$)""",
     """(\s|\|)dst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s+(\w+=|$)""",
-    """(\s|\|)usrName=({user}[^\s@>]+)\s+(\w+=|$)""",
     """(\s|\|)usrName=({user_email}[^\s@]+@[^\s]+)\s+(\w+=|$)""",
     """(\s|\|)cat=({action}.+?)\s+(\w+=|$)""",
     """(\s|\|)policy=({proxy_action}.+?)\s+(\w+=|$)""",
@@ -26,13 +26,15 @@ Name = q-zscaler-web-activity
     """(\s|\|)srcBytes=({bytes_out}\d+)\s+(\w+=|$)""",
     """(\s|\|)dstBytes=({bytes_in}\d+)\s+(\w+=|$)""",
     """(\s|\|)appproto=({protocol}.+?)\s+(\w+=|$)""",
+    """(\s|\|)appname=({app}.+?)\s+(\w+=|$)""",
     """(\s|\|)useragent=(Unknown|({user_agent}.+?))\s+(\w+=|$)""",
     """(\s|\|)useragent=[^=]*?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)""",
     """(\s|\|)useragent=[^=]*?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
     """(\s|\|)respcode=({result_code}\d+)""",
-    """(\s|\|)reqmethod=({method}.+?)\s+(\w+=|$)""",
+    """(\s|\|)reqmethod=(NA|({method}.+?))\s+(\w+=|$)""",
     """(\s|\|)fileclass=(None|({mime}.+?))\s+(\w+=|$)""",
     """(\s|\|)referer=(None|({referrer}.+?))\s+(\w+=|$)""",
-  ]
+    """(\s|\|)riskscore=({risk_level}.+?)\s+(\w+=|$)""",
+   ]
 }
 ```

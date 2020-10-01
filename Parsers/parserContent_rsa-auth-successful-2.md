@@ -2,7 +2,7 @@
 ```Java
 {
 Name = rsa-auth-successful-2
-  Vendor = Dell EMC
+  Vendor = Dell
   Product = RSA Authentication Manager
   Lms = Direct
   DataType = "authentication-successful"

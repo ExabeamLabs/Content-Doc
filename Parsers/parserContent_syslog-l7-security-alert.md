@@ -3,6 +3,7 @@
 {
 Name = syslog-l7-security-alert
   Vendor = Kemp
+  Product = Kemp LoadMaster
   Lms = Direct
   DataType = "alert"
   TimeFormat = "epoch"

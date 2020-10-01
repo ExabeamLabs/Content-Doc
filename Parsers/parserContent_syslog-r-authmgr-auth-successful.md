@@ -2,7 +2,7 @@
 ```Java
 {
 Name = syslog-r-authmgr-auth-successful
-  Vendor = Dell EMC
+  Vendor = Dell
   Product = RSA Authentication Manager
   Lms = Direct
   DataType = "authentication-successful"

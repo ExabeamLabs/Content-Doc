@@ -2,7 +2,7 @@
 ```Java
 {
 Name = checkpoint-web-activity
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point NGFW
   Lms = Direct
   DataType = "web-activity"
@@ -30,7 +30,7 @@ Name = checkpoint-web-activity
     """\Wappi_name:"(.*?)({top_domain}(?!(?:\d+\.){3}\d+)[^\.\s]+(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+(;|\/))[^;\/]+)""",
     """\Worigin:"({origin_ip}[^"]+)""",
     """\Worigin_sic_name:"CN=({origin_name}[^",]+)""",
-    """\Wproduct:"({product}[^"]+)""",
+    """\Wproduct:"({product_name}[^"]+)""",
     """\Wsrc_machine_name:"({src_host}[^"@]+)@({domain}[^"]+)""",
     """\Wuser:"({user}[^"]+?)\s*"""",
   ]

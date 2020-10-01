@@ -18,7 +18,8 @@ Name = evntslog-528
     """Workstation Name:\s+({src_host}[\w.\-\$]+).*?Source Network Address:\s*-\s+""",
     """Workstation Name:\s+({dest_host}[\w.\-\$]+)""",
     """Caller User Name:\s+({account}[\w.\-\$]+)""",
+    """Source Network Address:\s({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""", 
   ]
-  DupFields = [ "dest_host->host" ]
+  DupFields = [ "dest_host->host"]
 }
 ```

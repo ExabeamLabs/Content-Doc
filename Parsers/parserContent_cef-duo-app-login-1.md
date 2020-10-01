@@ -2,7 +2,8 @@
 ```Java
 {
 Name = cef-duo-app-login-1
-  Vendor = Duo Security
+  Vendor = Cisco
+  Product = Duo Access Security
   Lms = ArcSight
   DataType = "app-login"
   TimeFormat = "epoch"

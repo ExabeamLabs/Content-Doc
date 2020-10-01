@@ -27,6 +27,7 @@ Name = s-pan-incident-alert
       """"item_creator":"(|({item_creator}[^"]+))"""",
       """"item_creator_email":"(|({user_email}[^"]+))"""",
       """"collaborators":"(|({collaborators}[^"]+))"""",
+      """ext_severity=({alert_severity}[^\s]+)"""
     ]
     SOAR {
     IncidentType = "dlp"
@@ -35,7 +36,4 @@ Name = s-pan-incident-alert
     ProjectName = "SOC"
     EntityFields = [
       {EntityType="user", Name="windows_id", Fields=["user->windows_id"]}
-      ]
-    }
-  }
 ```

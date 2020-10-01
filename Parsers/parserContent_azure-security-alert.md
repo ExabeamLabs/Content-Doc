@@ -2,8 +2,8 @@
 ```Java
 {
 Name = azure-security-alert
-  Vendor = Microsoft Azure
-  Product = Microsoft Azure 
+  Vendor = Microsoft
+  Product = Microsoft Azure
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

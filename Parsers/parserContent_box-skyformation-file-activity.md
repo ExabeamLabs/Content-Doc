@@ -3,7 +3,7 @@
 {
 Name = box-skyformation-file-activity
   Vendor = Box
-  Product = Box
+  Product = Box Cloud Content Management
   Lms = ArcSight
   DataType = "file-operations"
   IsHVF = true
@@ -29,7 +29,9 @@ Name = box-skyformation-file-activity
     """"service_name":"({service}[^"]+)""",
     """"shared_link_id":"({resource}[^,"\s]+?)"""",
     """\smsg=({additional_info}.*?)\s\w+=""",
-    """ext_source_owned_by__login=({target_user}.*?)\s"""
+    """owned_by"+:.+?"login"+:"+({target_user}[^\s@"]+@[^\s@"]+)""",
+    """[^\w]created_by"+\s*:\s*[^\}]+?[^\w]name"+\s*:\s*"+({user_fullname}[^":,]+)[",\]\}]""",
+    """[^\w]created_by"+\s*:\s*[^\}]+?[^\w]login"+\s*:\s*"+.*?@([\.\w+]+\.)?({email_domain}[^\.\s]+\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|ch))""",
   ]
 }
 ```

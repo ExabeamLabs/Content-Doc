@@ -15,7 +15,7 @@ Name = cef-mimecast-message-view
     """({activity}Archive Message View Logs)""",
     """"subject":"({object}[^"]+?)"""",
     """"to":"({target}[^"]+?)"""",
-    """"from":"({source}[^"]+?)"""",
+    """"from":"({log_source}[^"]+?)"""",
     """"({result}discoveryCase":\w+)""" 
     """"source":"({resource}[^"]+?)"""",
     """"({additional_info}contentViewed.+?\})"""

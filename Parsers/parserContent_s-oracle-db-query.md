@@ -3,6 +3,7 @@
 {
 Name = s-oracle-db-query
   Vendor = Oracle
+  Product = Oracle DB
   Lms = Splunk
   DataType = "database-query"
   IsHVF = true

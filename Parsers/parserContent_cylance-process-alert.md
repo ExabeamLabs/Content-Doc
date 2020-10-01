@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cylance-process-alert
-  Vendor = Cylance PROTECT
-  Product = Cylance PROTECT Memory Protection
+  Vendor = BlackBerry
+  Product = BlackBerry Protect
   Lms = Direct
   DataType = "process-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

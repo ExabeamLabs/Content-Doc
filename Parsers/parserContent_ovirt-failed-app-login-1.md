@@ -3,6 +3,7 @@
 {
 Name = ovirt-failed-app-login-1
   Vendor = oVirt
+  Product = oVirt
   Lms = Direct
   DataType = "failed-app-login"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

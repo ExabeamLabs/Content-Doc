@@ -2,7 +2,8 @@
 ```Java
 {
 Name = bro-files-analysis
-  Vendor = Bro
+  Vendor = Zeek
+  Product = Zeek Network Security Monitor
   Lms = Direct
   DataType = "file-read"
   IsHVF = true

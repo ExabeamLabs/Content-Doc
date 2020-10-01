@@ -2,7 +2,7 @@
 ```Java
 {
 Name = raw-netscaler-ica-login
-  Vendor = Citrix Netscaler
+  Vendor = Citrix
   Product = Citrix Netscaler
   Lms = Direct
   DataType = "vpn-login"

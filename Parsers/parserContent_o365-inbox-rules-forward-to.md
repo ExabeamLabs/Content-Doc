@@ -3,7 +3,7 @@
 {
 Name = o365-inbox-rules-forward-to
   Vendor = Microsoft
-  Product = Office 365
+  Product = Microsoft Office 365
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -19,5 +19,6 @@ Name = o365-inbox-rules-forward-to
     """destinationServiceName=({app}.+?)\s(device|filePath)""",
     """({app}Office 365)"""
   ]
+  DupFields = ["user_domain->email_domain"]
 }
 ```

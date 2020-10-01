@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-aws-netflow-connection
-  Vendor = AWS CloudWatch
+  Vendor = AWS
   Product = AWS CloudWatch
   Lms = Splunk
   DataType = "netflow-connection"
@@ -10,7 +10,8 @@ Name = s-aws-netflow-connection
   Conditions = [ """ eni-""", """ ACCEPT OK"""]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """({account_id}\S+) ({interface_id}\S+) ({src_ip}[A-Fa-f:\d.]+) ({dest_ip}[A-Fa-f:\d.]+) ({src_port}\d+) ({dest_port}\d+) ({protocol}\S+) ({packets}\S+) ({bytes}\d+) ({time}\d+) \S+ ({action}\S+) ({outcome}[^"\\]+)""",
+    """requestClientApplication=({host}[^\s]+)\s""",
+    """(unknown|({account_id}\S+)) ({interface_id}\S+) ({src_ip}[A-Fa-f:\d.]+) ({dest_ip}[A-Fa-f:\d.]+) ({src_port}\d+) ({dest_port}\d+) ({protocol}\S+) ({packets}\S+) ({bytes}\d+) ({time}\d+) \S+ ({action}\S+) ({outcome}[^"\\\s]+)""",
   ]
 }
 ```

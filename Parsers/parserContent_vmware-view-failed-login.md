@@ -2,7 +2,8 @@
 ```Java
 {
 Name = vmware-view-failed-login
-  Vendor = VMware View
+  Vendor = VMware
+  Product = VMware View
   Lms = Splunk
   DataType = "failed-app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -10,6 +11,7 @@ Name = vmware-view-failed-login
   Fields = [
     """\d\d:\d\d:\d\d\s+({host}[^\s]+)\s+\d+\s+""",
     """\s+({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
+    """({app}View)""",
     """\s+({dest_host}[^\s]+)\s+View - """,
     """\s+ClientIpAddress="({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
     """UserDisplayName="(({domain}[^\\]+)\\+)?({user}[^"]+)"""",

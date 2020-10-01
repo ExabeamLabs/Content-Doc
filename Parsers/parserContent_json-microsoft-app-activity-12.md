@@ -2,12 +2,7 @@
 ```Java
 {
 Name = json-microsoft-app-activity-12
-  Product = Office 365
+  Product = Microsoft Office 365
   Conditions= [ """"activityType":"User"""", """"activityOperationType":"Update"""", """"targetResourceType":"""" ]
-}
-${MSParserTemplates.json-microsoft-app-activity} {
-  Name = json-o365-file-write-7
-  Product = Office 365
-  Conditions= [ """"Operation":"FileUploaded"""", """"Workload":"""", """"SourceFileName":"""" ]
 }
 ```

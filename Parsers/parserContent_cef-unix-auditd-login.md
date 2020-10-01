@@ -3,6 +3,7 @@
 {
 Name = cef-unix-auditd-login
   Vendor = Unix
+  Product = Unix Auditd
   Lms = ArcSight
   DataType = "ssh-login"
   TimeFormat = "epoch"

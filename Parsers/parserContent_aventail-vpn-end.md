@@ -2,8 +2,8 @@
 ```Java
 {
 Name = aventail-vpn-end
-  Vendor = Dell Aventail
-  Product = Aventail
+  Vendor = Dell
+  Product = SonicWALL Aventail
   Lms = Splunk
   DataType = "vpn-end"
   TimeFormat = "dd/MMM/yyyy:HH:mm:ss"

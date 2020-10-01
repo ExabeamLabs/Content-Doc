@@ -2,8 +2,8 @@
 ```Java
 {
 Name = s-honeywell-physical-badge-access
-    Vendor = Honeywell 
-    Product = PROWATCH
+    Vendor = Honeywell
+    Product = Honeywell Pro-Watch
     Lms = Splunk
     DataType = "physical-access"
     TimeFormat = "MM/dd/yyyy HH:mm:ss"

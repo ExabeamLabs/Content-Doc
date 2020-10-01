@@ -2,7 +2,7 @@
 ```Java
 {
 Name = ironport-dlp-email-alert
-  Vendor = IronPort Email
+  Vendor = Cisco
   Product = IronPort Email
   Lms = Direct
   DataType = "dlp-email-alert"

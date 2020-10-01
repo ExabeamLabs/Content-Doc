@@ -3,6 +3,7 @@
 {
 Name = datalakeportal-file-activity
   Vendor = DatalakePortal
+  Product = DatalakePortal
   Lms = Splunk
   DataType = "file-operations"
   IsHVF = true

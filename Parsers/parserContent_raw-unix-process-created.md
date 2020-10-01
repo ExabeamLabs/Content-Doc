@@ -3,6 +3,7 @@
 {
 Name = raw-unix-process-created
   Vendor = Unix
+  Product = Unix
   Lms = Direct
   DataType = "process-created"
   IsHVF = true

@@ -3,6 +3,7 @@
 {
 Name = cef-syslog-oracle-db-login
     Vendor = Oracle
+  Product = Oracle DB
     Lms = ArcSight
     DataType = "database-login"
     IsHVF = true
@@ -11,7 +12,7 @@ Name = cef-syslog-oracle-db-login
     Fields = [ """\srt=({time}\d+)""",
       """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sdvchost=({host}[^\s]+)""",
-      """\seventId=({event_id}\d+)""",
+      """\seventId=({event_code}\d+)""",
       """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sdhost=({src_host}[^\s]+)""",
       """\ssuser=({user}.+?)\s+\w+=""",  

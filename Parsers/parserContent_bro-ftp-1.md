@@ -2,6 +2,7 @@
 ```Java
 {
 Name = bro-ftp-1
+  Product = Zeek Network Security Monitor
   DataType = "app-activity"
   Conditions = [ """"id.orig_h""", """"id.resp_h""", """"command":""", """"user""", """"reply_code""" ]
   Fields = ${BroParserTemplates.json-bro-activity.Fields}[

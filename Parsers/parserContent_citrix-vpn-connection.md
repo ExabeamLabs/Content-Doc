@@ -2,7 +2,8 @@
 ```Java
 {
 Name = citrix-vpn-connection
-    Vendor = Netscaler VPN
+    Vendor = Citrix
+    Product = Citrix Netscaler VPN
     Lms = Direct
     DataType = "vpn-connection"
     TimeFormat = "MM/dd/yyyy:HH:mm:ss"

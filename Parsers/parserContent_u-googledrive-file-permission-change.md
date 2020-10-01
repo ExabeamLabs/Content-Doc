@@ -3,6 +3,7 @@
 {
 Name = u-googledrive-file-permission-change
   Vendor = Google
+  Product = Google Drive
   Lms = Sumo
   DataType = "file-operations"
   IsHVF = true

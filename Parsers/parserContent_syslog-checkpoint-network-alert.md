@@ -2,7 +2,7 @@
 ```Java
 {
 Name = syslog-checkpoint-network-alert
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point Threat Prevention
   Lms = Direct
   DataType = "network-alert"
@@ -21,6 +21,6 @@ Name = syslog-checkpoint-network-alert
     """\WAttack Info:\s*(|({alert_type}.+?));""",
     """\WProtection Type:\s*(|({additional_info}.+?));""",
   ]
-  #DupFields = [ "protocol->alert_name", "protocol->alert_type" ]
+  #DupFields = [ "protocol->alert_name", "protocol->alert_type"]
 }
 ```

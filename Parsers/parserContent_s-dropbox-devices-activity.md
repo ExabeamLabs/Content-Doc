@@ -12,7 +12,7 @@ Name = s-dropbox-devices-activity
       """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
       """"name":\s*"(?:N\/A|({user_fullname}[^"@,]+))"""",
       """"name":\s*"(?:N\/A|(({domain}[^"@\\\s]+)\\+)?({user}[^"@\\\s]+))"""",
-      """"email":\s*"(?:N\/A|({user_email}[^@"\s]+@[^@"\s]+))""",
+      """"email":\s*"(?:N\/A|({user_email}[^@"\s]+@({email_domain}[^@"\s]+)))""",
       """"time":\s*"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d[\d:+-]+)"""",
       """"event_type":\s*"({activity}[^"]+)"""",
       """"event_type_description":\s*"({additional_info}[^"]+)"""",
@@ -22,9 +22,4 @@ Name = s-dropbox-devices-activity
       """"info_dict":\s*\{[^\}]*?"name":\s*"({app}[^"]+)""""
     ]
   }
-
-${DropboxParserTemplates.cef-dropbox-activity}{
-  Name = cef-dropbox-app-activity-1
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """"file_operations"}""" ]
-}
 ```

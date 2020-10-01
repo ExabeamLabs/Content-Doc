@@ -11,7 +11,7 @@ Name = vmware-id-manager-obj-access
   Fields = [
     """"host":"({host}[^"]+)"""",
     """"_time":"({time}[^"]+)"""",
-    """"source":"({source}[^"]+)"""",
+    """"source":"({log_source}[^"]+)"""",
     """"sourcetype":"({source_type}[^"]+)"""",
     """\d+Z\s*({host}[^\s]+)\s""",
     """filepath=\\"({filepath}[^"]+)\\"""",

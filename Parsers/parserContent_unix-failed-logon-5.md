@@ -3,6 +3,7 @@
 {
 Name = unix-failed-logon-5
   Vendor = Unix
+  Product = Unix
   Lms = Direct
   DataType = "failed-logon"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

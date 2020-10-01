@@ -23,5 +23,6 @@ Name = cef-netskope-alert
     """"local_md5":"({md5}[^"]+)""",
     """"malware_severity":"({alert_severity}[^"]+)""",
   ]
+  DupFields = ["process->process_name"]
 }
 ```

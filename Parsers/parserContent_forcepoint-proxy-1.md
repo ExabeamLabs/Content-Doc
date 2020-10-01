@@ -3,7 +3,7 @@
 {
 Name = forcepoint-proxy-1
     Vendor = Forcepoint
-    Product = Forcepoint Web Security
+    Product = Websense Secure Gateway
     Lms = Direct
     DataType = "web-activity"
     IsHVF = true

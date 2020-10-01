@@ -2,7 +2,8 @@
 ```Java
 {
 Name = barracuda-email
-    Vendor = Barracuda Email Security Gateway
+    Vendor = Barracuda
+    Product = Barracuda Email Security Gateway
     Lms = Syslog
     DataType = "dlp-email-alert"
     TimeFormat = "epoch_sec"
@@ -19,18 +20,5 @@ Name = barracuda-email
       """shost=(unknown|UNKNOWN|({external_domain}[^\s]+))""",
       """reason=({alert_name}\d+)""",
     ]
-}
-
-{
-  Name = emp-app-activity
-  Vendor = EMP
-  Lms = Direct
-  DataType = "app-activity"
-  TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ """EMP-LOGS""", """|ICALL|""" ]
-  Fields = [
-    """EMP-LOGS ([^\|]*\|)({location}[^\|]+)\|({app}[^\|]+)\|({host}[^\|]+)\|[^\|]*\|({user}[^\s\|]+)\|({activity}[^\|]+)\|({time}[^\|]+)\|(null|({object}[^\|]+))\|(null|({additional_info}[^\|]+))\|""",
-  ]
-  DupFields = [ "app->app_code" ]
 }
 ```

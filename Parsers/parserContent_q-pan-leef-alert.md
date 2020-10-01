@@ -6,17 +6,20 @@ Name = q-pan-leef-alert
   Product = WildFire
   Lms = QRadar
   DataType = "alert"
-  TimeFormat = "epoch"
+  TimeFormat = "yyyy-MM-dd HH:mm:ss" 
   Conditions = ["LEEF:1.0|Palo Alto Networks", "cat=THREAT|subtype=wildfire" ]
   Fields = [
     """exabeam_host=(.+?@\s*)?({host}[^\s]+)""",
+    """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_endTime=({time}\d{13})""",
-    """subtype=({alert_name}wildfire)""",
+    """subtype=({alert_type}wildfire)""",
     """Severity=({alert_severity}\d+)""",
+    """Severity=({alert_severity}[^\|]+)\|""",
+    """(URLCategory|Severity)=({alert_severity}benign|informational)"""
     """DestinationUser=(?:[^\\/]+[\\/])?({user}[^|]+)\|""",
     """\|src=({src_ip}[^|]+)\|dst=({dest_ip}[^|]+)\|""",
     """SessionID=({alert_id}[^|]+)\|""",
-    """\|({alert_type}[^\|]+)\|cat=THREAT\|""",
+    """LEEF[^|]+?\|([^\|]+\|){3}({alert_name}[^|]+)\|""",
     """\|URLCategory=({category}.*?)\|""",
     """\|Miscellaneous="?({miscellaneous}[^\|"]+)"?\|"""
   ]

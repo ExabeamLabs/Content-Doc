@@ -2,7 +2,7 @@
 ```Java
 {
 Name = syslog-f5-dns-query
-  Vendor = F5
+  Vendor = F5 Networks
   Product = BIG-IP DNS
   Lms = Direct
   DataType = "dns-query"
@@ -16,6 +16,5 @@ Name = syslog-f5-dns-query
     """query:\s*({query}\S+?)\s+IN\s+({query_type}\S+)\s+({query_flags}\S+)\s+(\(({dest_ip}.+?)(%\d+?)\))?""",
     """query:\s*([^.\s]+\.)*({top_query}[^.\s]+\.(?i)(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za)+)"""
   ]
-  DupFields = ["src_ip->src_host"]
 }
 ```

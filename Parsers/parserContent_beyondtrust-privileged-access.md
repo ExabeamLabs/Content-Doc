@@ -2,7 +2,8 @@
 ```Java
 {
 Name = beyondtrust-privileged-access
-  Vendor = BeyondTrust PowerBroker
+  Vendor = BeyondTrust
+  Product = BeyondTrust PowerBroker
   Lms = Direct
   DataType = "privileged-access"
   TimeFormat = "MMM dd yyyy HH:mm:ss"

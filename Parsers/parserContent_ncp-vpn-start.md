@@ -3,6 +3,7 @@
 {
 Name = ncp-vpn-start
   Vendor = NCP
+  Product = NCP
   Lms = Direct
   DataType = "vpn-start"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

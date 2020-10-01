@@ -3,6 +3,7 @@
 {
 Name = rdirectory-account-enable
   Vendor = Namespace rDirectory
+  Product = Namespace rDirectory
   Lms = Direct
   DataType = "account-enabled"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

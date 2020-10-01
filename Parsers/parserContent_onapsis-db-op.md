@@ -3,6 +3,7 @@
 {
 Name = onapsis-db-op
     Vendor = Onapsis
+  Product = Onapsis
     Lms = Direct
     DataType = "database-update"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -17,21 +18,5 @@ Name = onapsis-db-op
       """, request_id=\s*({alert_id}[^,]+?)\s*,""",
     ]
     DupFields = [ "host->dest_host" ]
-  }
- 
-  {
-    Name = securelink-app-login
-    Vendor = SecureLink
-    Product = SecureLink
-    Lms = QRadar
-    DataType = "app-login"
-    TimeFormat = "epoch"
-    Conditions = [ "SecureLink:","AUDIT:","""connected to Application"""]
-    Fields = [
-      """exabeam_endTime=({time}\d+)""",
-      """exabeam_host=({host}[^\s]+)""",
-      """connected to Application ({app}[^.]+)""",
-      """AUDIT:.+?\(({user_emailId}[^)]+)\)"""
-    ]
   }
 ```

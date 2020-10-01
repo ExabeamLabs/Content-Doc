@@ -3,7 +3,7 @@
 {
 Name = confer-alert
   Vendor = Carbon Black
-  Product = Cb Defense
+  Product = CB Defense
   Lms = Splunk
   DataType = "alert"
   TimeFormat = "epoch"
@@ -21,7 +21,7 @@ Name = confer-alert
     """eventDescription"+:\s*"+({additional_info}[^"]+)"""",
     """deviceType"+:\s*"+({os}[^"]+)"""",
     """externalIpAddress"+:\s*"+({dest_ip}[^"]+)"""",
-
+    """applicationName":\s"({process_name}[^"]+)""",
   ]
 }
 ```

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = checkpoint-connectra-vpn-logout
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point Security Gateway
   Lms = Direct
   DataType = "vpn-end"

@@ -2,7 +2,8 @@
 ```Java
 {
 Name = s-ironport-dlp-email-alert
-    Vendor = IronPort Email
+    Vendor = Cisco
+  Product = IronPort Email
     Lms = Splunk
     DataType = "dlp-email-alert"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

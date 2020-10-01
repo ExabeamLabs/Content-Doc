@@ -30,6 +30,7 @@ Name = s-crowdstrike-process-alert
     """"UserName":\s*"({user}[^"]+)"""",
     """"ProcessId":({process_guid}\d+)""",
     """"ParentProcessId":({parent_process_guid}\d+)""",
+    """"FalconHostLink":\s*"({additional_info}[^"]+)"""",
    ]
 }
 ```

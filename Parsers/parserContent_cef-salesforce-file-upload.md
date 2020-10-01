@@ -3,6 +3,7 @@
 {
 Name = cef-salesforce-file-upload
   Vendor = Salesforce
+  Product = Salesforce
   Lms = ArcSight
   DataType = "file-operations"
   IsHVF = true

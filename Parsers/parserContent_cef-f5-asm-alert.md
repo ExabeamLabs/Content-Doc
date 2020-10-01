@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-f5-asm-alert
-  Vendor = F5
+  Vendor = F5 Networks
   Product = F5 Application Security Manager
   Lms = ArcSight
   DataType = "alert"

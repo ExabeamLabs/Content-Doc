@@ -3,7 +3,7 @@
 {
 Name = o365-activity-1
   Vendor = Microsoft
-  Product = Office 365
+  Product = Microsoft Office 365
   Lms = Direct
   DataType = "o365-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -17,6 +17,7 @@ Name = o365-activity-1
     """, User=({object}[^,]+)""",
     """<Data>\{Identity=({resource}[^,]+)""",
     """<EventData><Data>({activity}.+?)<\/Data>""",
+    """User=(({domain}[^\\]+)\\)?({user}[^\s,]+)""", 
   ]
   DupFields = [ "result->outcome" ]
 }

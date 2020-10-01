@@ -3,6 +3,7 @@
 {
 Name = unix-security-alert
   Vendor = Unix
+  Product = Unix
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
