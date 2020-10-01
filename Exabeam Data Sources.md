@@ -28,6 +28,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Airlock Web Application Firewall](DataSources/datasource_airlock_web_application_firewall_airlock.md)
 #### Akamai
 * [Akamai Siem](DataSources/datasource_akamai_siem_akamai.md)
+* [Cloud Akamai](DataSources/datasource_cloud_akamai_akamai.md)
 #### Alert Logic
 * [Alert Logic](DataSources/datasource_alert_logic_alert_logic.md)
 #### AlgoSec
@@ -83,9 +84,9 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### BusinessObject
 * [BusinessObject](DataSources/datasource_businessobject_businessobject.md)
 #### Carbon Black
-* [Cb Defense](DataSources/datasource_cb_defense_carbon_black.md)
-* [Cb Protection](DataSources/datasource_cb_protection_carbon_black.md)
-* [Cb Response](DataSources/datasource_cb_response_carbon_black.md)
+* [CB Defense](DataSources/datasource_cb_defense_carbon_black.md)
+* [CB Protection](DataSources/datasource_cb_protection_carbon_black.md)
+* [CB Response](DataSources/datasource_cb_response_carbon_black.md)
 #### CatoNetworks
 * [Cato Cloud](DataSources/datasource_cato_cloud_catonetworks.md)
 #### Centrify
@@ -123,6 +124,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Cisco Web Security Appliance](DataSources/datasource_cisco_web_security_appliance_cisco.md)
 * [Cisco WiFi](DataSources/datasource_cisco_wifi_cisco.md)
 * [Cisco](DataSources/datasource_cisco_cisco.md)
+* [Duo Access Security](DataSources/datasource_duo_access_security_cisco.md)
 * [IronPort Email](DataSources/datasource_ironport_email_cisco.md)
 * [Meraki Firepower](DataSources/datasource_meraki_firepower_cisco.md)
 * [OpenDNS Umbrella](DataSources/datasource_opendns_umbrella_cisco.md)
@@ -142,8 +144,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Web Logging](DataSources/datasource_web_logging_citrix.md)
 #### Clearswift SEG
 * [Clearswift SEG](DataSources/datasource_clearswift_seg_clearswift_seg.md)
-#### Cloud Akamai
-* [Cloud Akamai](DataSources/datasource_cloud_akamai_cloud_akamai.md)
 #### Cloud Application
 * [Cloud Application](DataSources/datasource_cloud_application_cloud_application.md)
 #### Cloudflare
@@ -153,6 +153,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [TrueDLP](DataSources/datasource_truedlp_code_green_network_(digital_guardian).md)
 #### Code42
 * [Code42 Incydr](DataSources/datasource_code42_incydr_code42.md)
+#### Cofense
+* [Phishme](DataSources/datasource_phishme_cofense.md)
 #### Cognitas CrossLink
 * [Cognitas CrossLink](DataSources/datasource_cognitas_crosslink_cognitas_crosslink.md)
 #### Contrast Security
@@ -170,10 +172,10 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Darktrace
 * [Darktrace Enterprise Immune System](DataSources/datasource_darktrace_enterprise_immune_system_darktrace.md)
 * [Darktrace](DataSources/datasource_darktrace_darktrace.md)
-#### DataWatch
-* [DataWatch](DataSources/datasource_datawatch_datawatch.md)
 #### DatalakePortal
 * [DatalakePortal](DataSources/datasource_datalakeportal_datalakeportal.md)
+#### Datawatch Systems
+* [DataWatch](DataSources/datasource_datawatch_datawatch_systems.md)
 #### Dell
 * [Dell EMC Isilon](DataSources/datasource_dell_emc_isilon_dell.md)
 * [One Identity Manager](DataSources/datasource_one_identity_manager_dell.md)
@@ -185,11 +187,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Digital Guardian Endpoint Protection](DataSources/datasource_digital_guardian_endpoint_protection_digital_guardian.md)
 #### Dropbox
 * [Dropbox](DataSources/datasource_dropbox_dropbox.md)
-#### Dtex
-* [DTEX InTERCEPT](DataSources/datasource_dtex_intercept_dtex.md)
-#### Duo Security
-* [Duo Access Security](DataSources/datasource_duo_access_security_duo_security.md)
-* [Duo Security](DataSources/datasource_duo_security_duo_security.md)
+#### Dtex Systems
+* [DTEX InTERCEPT](DataSources/datasource_dtex_intercept_dtex_systems.md)
 #### EMP
 * [EMP](DataSources/datasource_emp_emp.md)
 #### ESET
@@ -252,8 +251,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Fortinet Enterprise Firewall](DataSources/datasource_fortinet_enterprise_firewall_fortinet.md)
 * [Fortinet UTM](DataSources/datasource_fortinet_utm_fortinet.md)
 * [Fortinet VPN](DataSources/datasource_fortinet_vpn_fortinet.md)
-#### Fox BoKS ServerControl
-* [Powertech Identity Access Manager (BoKs)](DataSources/datasource_powertech_identity_access_manager_(boks)_fox_boks_servercontrol.md)
 #### GTB
 * [GTBInspector](DataSources/datasource_gtbinspector_gtb.md)
 #### Galaxy
@@ -289,6 +286,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Aruba ClearPass Access Control and Policy Management](DataSources/datasource_aruba_clearpass_access_control_and_policy_management_hpe.md)
 #### HashiCorp
 * [Terraform](DataSources/datasource_terraform_hashicorp.md)
+#### HelpSystems
+* [Powertech Identity Access Manager (BoKs)](DataSources/datasource_powertech_identity_access_manager_(boks)_helpsystems.md)
 #### Honeywell
 * [Honeywell Pro-Watch](DataSources/datasource_honeywell_pro-watch_honeywell.md)
 #### Honeywell WIN-PAK
@@ -508,8 +507,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Phantom](DataSources/datasource_phantom_phantom.md)
 #### Pharos
 * [Pharos](DataSources/datasource_pharos_pharos.md)
-#### Phishme
-* [Phishme](DataSources/datasource_phishme_phishme.md)
 #### PicturePerfect
 * [PicturePerfect](DataSources/datasource_pictureperfect_pictureperfect.md)
 #### Ping Identity

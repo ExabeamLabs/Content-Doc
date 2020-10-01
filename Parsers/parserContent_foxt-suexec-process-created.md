@@ -2,7 +2,7 @@
 ```Java
 {
 Name = foxt-suexec-process-created
-  Vendor = Fox BoKS ServerControl
+  Vendor = HelpSystems
   Product = Powertech Identity Access Manager (BoKs)
   Lms = Exabeam
   DataType = "process-created"

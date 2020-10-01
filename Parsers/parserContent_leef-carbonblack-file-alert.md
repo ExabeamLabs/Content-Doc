@@ -3,7 +3,7 @@
 {
 Name = leef-carbonblack-file-alert
   Vendor = Carbon Black
-  Product = Cb Protection
+  Product = CB Protection
   Lms = QRadar
   DataType = "file-alert"
   IsHVF = true

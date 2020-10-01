@@ -2,7 +2,7 @@
 ```Java
 {
 Name = foxt-local-logon
-  Vendor = Fox BoKS ServerControl
+  Vendor = HelpSystems
   Product = Powertech Identity Access Manager (BoKs)
   Lms = Exabeam
   DataType = "local-logon"

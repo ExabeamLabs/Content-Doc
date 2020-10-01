@@ -3,7 +3,7 @@
 {
 Name = cef-bit9-process-alert
   Vendor = Carbon Black
-  Product = Cb Protection
+  Product = CB Protection
   Lms = ArcSight
   DataType = "process-alert"
   IsHVF = true

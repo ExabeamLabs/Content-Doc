@@ -3,7 +3,7 @@
 {
 Name = cef-bit9-epp-alert
   Vendor = Carbon Black
-  Product = Cb Protection
+  Product = CB Protection
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

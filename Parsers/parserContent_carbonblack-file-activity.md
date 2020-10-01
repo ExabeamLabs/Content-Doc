@@ -3,7 +3,7 @@
 {
 Name = carbonblack-file-activity
   Vendor = Carbon Black
-  Product = Cb Protection
+  Product = CB Protection
   Lms = Direct
   DataType = "file-operations"
   IsHVF = true

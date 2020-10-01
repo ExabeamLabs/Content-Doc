@@ -3,7 +3,7 @@
 {
 Name = cef-carbonblack-endpoint-process
   Vendor = Carbon Black
-  Product = Cb Response
+  Product = CB Response
   Lms = Direct
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   DataType = "process-created"

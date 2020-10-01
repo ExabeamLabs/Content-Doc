@@ -2,7 +2,7 @@
 ```Java
 {
 Name = u-duo-auth-json
-  Vendor = Duo Security
+  Vendor = Cisco
   Product = Duo Access Security
   Lms = Sumo
   DataType = "authentication-attempt"

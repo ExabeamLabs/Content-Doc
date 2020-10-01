@@ -2,7 +2,7 @@
 ```Java
 {
 Name = q-duo-app-login
-  Vendor = Duo Security
+  Vendor = Cisco
   Product = Duo Access Security
   Lms = QRadar
   DataType = "app-login"

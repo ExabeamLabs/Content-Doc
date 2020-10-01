@@ -3,7 +3,7 @@
 {
 Name = cef-carbonblack-security-alert
   Vendor = Carbon Black
-  Product = Cb Defense
+  Product = CB Defense
   Lms = ArcSight
   DataType = "alert"
   TimeFormat = "MMM dd yyyy HH:mm:ss"

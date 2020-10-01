@@ -3,7 +3,7 @@
 {
 Name = cef-carbonblack-app-login
   Vendor = Carbon Black
-  Product = Cb Protection
+  Product = CB Protection
   Lms = ArcSight
   DataType = "app-login"
   TimeFormat = "epoch"

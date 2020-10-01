@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-duo-app-activity
-  Vendor = Duo Security
+  Vendor = Cisco
   Product = Duo Access Security
   Lms = ArcSight
   DataType = "app-activity"

@@ -11,7 +11,8 @@ Name = cef-forcepoint-proxy
     Conditions = [ "CEF","""|Forcepoint|""",""" app=""", """ request="""]
     Fields = [
       """\srt=({time}\d{10})""",
-      """\sdvc=({host}[^\s]+)""",
+      """exabeam_host=({host}[^\s]+)""",
+      """\sdvc=(-|({host}[^\s]+))""",
       """\sdvchost=({host}[^\s]+)""",
       """\sshost=({src_host}[^\s]+)""",
       """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
@@ -43,6 +44,7 @@ Name = cef-forcepoint-proxy
       """\srequestClientApplication=(?:-|Mozilla\/[^=]+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
       """\srequestClientApplication=(?:-|Mozilla\/[^=]+\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]+Gecko\/\d+\s+({browser}\w+))""",
       """suser=(-|({user_lastname}[^,]+),\s({user_firstname}([A-Za-z]+){1}(\s\w){0,1}))\s""",
+      """loginID=(-|({user}[^\s=]+?))\s\w+=""",
     ]
   }
 ```
