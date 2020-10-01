@@ -3,7 +3,7 @@
 {
 Name = cef-carbonblack-usb-activity
   Vendor = Carbon Black
-  Product = Cb Protection
+  Product = CB Protection
   Lms = ArcSight
   DataType = "usb-activity"
   TimeFormat = "epoch"

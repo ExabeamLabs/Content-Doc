@@ -3,7 +3,7 @@
 {
 Name = s-process-alert-carbonblack
   Vendor = Carbon Black
-  Product = Cb Protection
+  Product = CB Protection
   Lms = Splunk
   DataType = "process-alert"
   IsHVF = true

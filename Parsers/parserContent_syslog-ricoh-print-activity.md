@@ -3,6 +3,7 @@
 {
 Name = syslog-ricoh-print-activity
   Vendor = Ricoh
+  Product = Ricoh
   Lms = Direct
   DataType = "print-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"

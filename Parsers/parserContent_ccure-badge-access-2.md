@@ -2,8 +2,8 @@
 ```Java
 {
 Name = ccure-badge-access-2
-    Vendor = CCURE
-    Product = CCURE
+    Vendor = Tyco
+    Product = CCURE Building Management System
     Lms = Direct
     DataType = "physical-access"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
@@ -15,39 +15,7 @@ Name = ccure-badge-access-2
       """"objectname2":"({location_door}[^"]+)"""",
       """<Card>({badge_id}.+?)</Card>""",
       """<StateCode>({outcome}.+?)</StateCode>""",
-    ]
-  }
-
-${ProWatchParserTemplates.prowatch-badge-access}{
-  Name = prowatch-badge-access
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """"evnt_dat":"""", """"evnt_descrp":"""", """"badge_employeeid":"""", """"cardstatus_descrp":"""" ]
-}
-
-${ProWatchParserTemplates.prowatch-badge-access}{
-  Name = prowatch-badge-access-1
-  Conditions = [ """"BADGENO":""", """"EVNT_DESCRP":""", """"LOCATION":""" ]
-}
-
-  {
-    Name = timelox-badge-access
-    Vendor = TimeLox
-    Lms = Direct
-    DataType = "physical-access"
-    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-    Conditions = [ """"eventtime":"""", """"doorgroupname":"""", """"issued by":""" ]
-    Fields = [
-      """exabeam_host=({host}[\w.\-]+)""",
-      """"doorgroupname":"({door_group_name}[^"]+)""",
-      """"eventtime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
-      """"registration no\.":({registration_no}\d+)""",
-      """"userid":"({user_id}[^"]+)""",
-      """"event":"({outcome}[^"]+)""",
-      """"issued by":"(n\/a|({user}[^"]+))""",
-      """"door":"({location_door}[^"]+)""",
-      """"blockinggroupname":"(n\/a|({blockinggroupname}[^"]+))""",
-      """"@version":"({version}[^"]+)""",
-      """"user group":"({user_group}[^"]+)"""
+      """<Direction.*?>({direction}.+?)</Direction>""",
     ]
   }
 ```

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = checkpoint-failed-vpn-login
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point Security Gateway
   Lms = Direct
   TimeFormat = "ddMMMyyyy,HH:mm:ss"

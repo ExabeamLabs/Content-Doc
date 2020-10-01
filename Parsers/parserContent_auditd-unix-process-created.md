@@ -3,7 +3,7 @@
 {
 Name = auditd-unix-process-created
   Vendor = Unix
-  Product = Auditd
+  Product = Unix Auditd
   Lms = Direct
   DataType = "process-created"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

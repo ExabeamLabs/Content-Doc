@@ -3,7 +3,7 @@
 {
 Name = carbonblack-security-alert-2
   Vendor = Carbon Black
-  Product = Cb Defense
+  Product = CB Defense
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
@@ -27,19 +27,5 @@ Name = carbonblack-security-alert-2
     """email\\"+:\\s*"+(({domain}[^\\"]+)\\+)?({user}[^"]+)\\""",
     """deviceId\\"+:({sensor_id}[^,]+)"""
   ]
-}
-
-${CarbonBlackParserTemplates.carbonblack-endpoint}{
-  Name = carbonblack-endpoint-process-network
-  DataType = "process-network"
-  IsHVF = true
-  Conditions = [ """netconn""" , """carbonblack""", """sensor_action""" ]
-  Fields = ${CarbonBlackParserTemplates.carbonblack-endpoint.Fields} [
-    """"+local_ip"+:"+({src_ip}[^"]+)""",
-    """"+remote_ip"+:"+({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
-    """"+remote_port"+:({dest_port}\d+)"""
-    """"+local_port"+:({src_port}\d+)"""
-    """netconn_protocol"+:"+(PROTO_)?({protocol}[^"]+)""",
-	]
 }
 ```

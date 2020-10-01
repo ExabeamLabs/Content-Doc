@@ -2,7 +2,8 @@
 ```Java
 {
 Name = xml-4738
-  Vendor = Microsoft Windows
+  Vendor = Microsoft
+  Product = Microsoft Windows
   Lms = Direct
   DataType = "account-modification"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

@@ -2,7 +2,8 @@
 ```Java
 {
 Name = syslog-physical-badge-access
-    Vendor = Unknown
+    Vendor = Badge
+  Product = Badge
     Lms = Direct
     DataType = "physical-access"
     TimeFormat = "yyyy-MM-dd HH:mm:ss"

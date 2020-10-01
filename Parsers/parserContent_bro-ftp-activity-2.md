@@ -2,7 +2,7 @@
 ```Java
 {
 Name = bro-ftp-activity-2
-  Product = Bro
+  Product = Zeek Network Security Monitor
   DataType = "app-activity"
   Conditions = [ """type""", """protocol""", """"ftp"""", """zeek""" ]
   Fields = ${BroParserTemplates.bro-activity-1.Fields}[

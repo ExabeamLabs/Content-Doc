@@ -2,7 +2,8 @@
 ```Java
 {
 Name = bro-dce_rpc
-  Vendor = Bro
+  Vendor = Zeek
+  Product = Zeek Network Security Monitor
   Lms = Direct
   DataType = "remote-access"
   TimeFormat = "epoch_sec"

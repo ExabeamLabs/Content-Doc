@@ -2,7 +2,7 @@
 ```Java
 {
 Name = raw-netscaler-vpn-stop
-  Vendor = Citrix Netscaler
+  Vendor = Citrix
   Product = Citrix Netscaler
   Lms = Direct
   DataType = "vpn-end"

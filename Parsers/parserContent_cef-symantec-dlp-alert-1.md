@@ -19,7 +19,7 @@ Name = cef-symantec-dlp-alert-1
       """"feature_name":"({alert_type}[^"]+)"""",
       """"event_id":({alert_id}\d+)""",
       """"severity_id":({alert_severity}\d+)""",
-      """"product_name":"({product}[^"]+)"""",
+      """"product_name":"({product_name}[^"]+)"""",
     ]
   }
 ```

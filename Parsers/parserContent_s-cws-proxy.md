@@ -10,6 +10,7 @@ Name = s-cws-proxy
     TimeFormat = "epoch_sec"
     Conditions = [ """ wbrs-score=""",""" webcat-code="""]
     Fields = [
+      """exabeam_host=({host}[\w\-.]+)""",
       """(Info|CISCOIPORTWSA\-\d+):\s+({time}\d+)\.\d+\s+\d+\s+({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s+({proxy_action}\w+)\/({result_code}\d+)\s\d+\s({method}[^\s]+)\s({full_url}[^\s]+)""",
       """(Info|CISCOIPORTWSA\-\d+):\s+([^\s]+\s){6}(?:({protocol}\w+):\/{2}({web_domain}[^:\/]+)(:\d+)?({uri_path}\/[^?\s]+)?({uri_query}\?[^\s]+)?)""",
       """(Info|CISCOIPORTWSA\-\d+):\s+([^\s]+\s){6}(.*?)({top_domain}[^.\s\/:]+(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+(\/|:|\s)).+?)(\/|:|\s)""",

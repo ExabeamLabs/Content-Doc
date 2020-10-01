@@ -2,7 +2,8 @@
 ```Java
 {
 Name = syslog-brightmail-email-in
-    Vendor = Symantec Brightmail
+    Vendor = Symantec
+    Product = Symantec Brightmail
     Lms = Syslog
     DataType = "dlp-email-alert"
     TimeFormat = "epoch_sec"

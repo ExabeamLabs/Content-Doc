@@ -20,7 +20,8 @@ Name = siteminder-auth-attempt
 
 {
   Name = q-sendmail-dlp-email-alert
-  Vendor = Sendmail
+  Vendor = Unix
+  Product = Unix Sendmail
   Lms = QRadar
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

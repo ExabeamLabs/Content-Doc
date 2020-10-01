@@ -6,11 +6,11 @@ Name = raw-asa-113004-vpn-start
   Product = Cisco Adaptive Security Appliance
   Lms = Direct
   DataType = "vpn-start"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+  TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ "%ASA" , "-113004", "AAA user " ]
   Fields = [ 
     """exabeam_raw=.*?({time}\w+ \d+ \d\d\d\d \d\d:\d\d:\d\d)""",
-    """({time}\w+ \d+ \d{4} \d\d:\d\d:\d\d)""",
+    """({time}\w{3} \d\d \d{4} \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[^\s,"]+)""",
     """exabeam_host=(.+?@\s*)?({host}[^\s,"]+)""",
     """\d\d:\d\d:\d\d\s+({host}[^\s]+)\s*:""",

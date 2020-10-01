@@ -3,6 +3,7 @@
 {
 Name = cds-process-creation
   Vendor = Unix
+  Product = Unix
   Lms = Splunk
   DataType = "process-created"
   IsHVF = true
@@ -10,6 +11,7 @@ Name = cds-process-creation
   Conditions = [ """type=SYSCALL""", """ uid=""", """syscall=""" , """ exe="""]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """\suid=({user_id}.+?)\s+(\w+=|$)""",
     """\stype=({activity_type}.+?)\s+(\w+=|$)""",
     """\w+ \d\d \d\d:\d\d:\d\d\s+({host}[\w\-.]+)""",

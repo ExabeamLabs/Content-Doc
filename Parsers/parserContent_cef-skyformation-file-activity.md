@@ -3,7 +3,7 @@
 {
 Name = cef-skyformation-file-activity
   Vendor = Box
-  Product = Box
+  Product = Box Cloud Content Management
   Lms = ArcSight
   DataType = "file-operations"
   IsHVF = true
@@ -22,6 +22,9 @@ Name = cef-skyformation-file-activity
     """"service_name":"({process_name}[^",]+)""",
     """"size":({bytes}\d+)""",
     """({app}Box)""",
+    """[^\w]created_by"+\s*:\s*[^\}]+?[^\w]name"+\s*:\s*"+({user_fullname}[^":,]+)[",\]\}]""",
+    """[^\w]created_by"+\s*:\s*[^\}]+?[^\w]login"+\s*:\s*"+.*?@([\.\w+]+\.)?({email_domain}[^\.\s]+\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|ch))""",
+    """owned_by"+:.+?"login"+:"+({target_user}[^\s@"]+@[^\s@"]+)"""
   ]
 }
 ```

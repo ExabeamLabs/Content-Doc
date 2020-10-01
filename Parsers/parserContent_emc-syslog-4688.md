@@ -20,6 +20,7 @@ Name = emc-syslog-4688
     """New Process ID:\s+({process_guid}[^\s]+)\s""",
     """Creator Process ID:\s+({parent_process_guid}[^\s]+)\s""",
     """Process Command Line:\s+"({command_line}[^"]+)"\s""",
+    """Process Command Line:\s+"(|-|(sc|((?:[^"]+)?[\\\/])?sc.exe)\s*(?:\\*[\w.\-]+)?\s*create\s*({service_name}.+?))\s+binPath= ({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?))"\s""",
     """TaskCategory=({activity_type}Process Creation)"""
     ]
   DupFields = [ "host->dest_ip","process_guid->pid","directory->process_directory" ]

@@ -3,6 +3,7 @@
 {
 Name = raw-unix-account-deleted
   Vendor = Unix
+  Product = Unix
   Lms = Direct
   DataType = "unix-account-deleted"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

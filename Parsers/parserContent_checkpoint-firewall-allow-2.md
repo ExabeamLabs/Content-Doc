@@ -2,7 +2,7 @@
 ```Java
 {
 Name = checkpoint-firewall-allow-2
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point NGFW
   Lms = Direct
   DataType = "web-activity"
@@ -20,7 +20,7 @@ Name = checkpoint-firewall-allow-2
     """\Wifdir:\\"({direction}[^"\\]+)""",
     """\Worigin:\\"({origin_ip}[^"\\]+)""",
     """\Worigin_?sic_?name:\\"CN=({origin_name}[^",\\]+)""",
-    """product:\\"({product}[^"\\]+)""",
+    """product:\\"({product_name}[^"\\]+)""",
     """\Wservice:\\"({dest_port}\d+)""",
     """\Wproto:\\"({protocol}[^"\\]+)""",
     """\Wapp_rule_id:\\"\{({rule_id}[^"\}\\]+)""",

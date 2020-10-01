@@ -19,7 +19,11 @@ Name = fortinet-security-alert-2
     """\Wref="({malware_url}[^"]+)"""",
     """\Wmsg="({additional_info}[^"]+)"""",
     """\Wuser="({user}[^"]+)"""",
-    """\Wcrlevel="*({alert_severity}[^"\s]+)(\s|")"""
+    """\Wcrlevel="*({alert_severity}[^"\s]+)(\s|")""",
+    """\Wsrcport=({src_port}\d+)""",
+    """\Wdstport=({dest_port}\d+)""",
+    """\Wservice="({protocol}[^"]+)"""",
+    """\Waction="({action}[^"]+)"""",
   ]
   DupFields = ["malware_url->process_name"]
 }

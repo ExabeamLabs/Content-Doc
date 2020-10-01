@@ -2,7 +2,7 @@
 ```Java
 {
 Name = connectra-vpn-end
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point Security Gateway
   Lms = Direct
   DataType = "vpn-end"

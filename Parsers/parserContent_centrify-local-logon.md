@@ -3,7 +3,7 @@
 {
 Name = centrify-local-logon
   Vendor = Centrify
-  Product = Centrify
+  Product = Centrify Authentication Service
   Lms = Direct
   DataType = "local-logon"
   TimeFormat = "epoch"

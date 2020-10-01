@@ -2,8 +2,8 @@
 ```Java
 {
 Name = s-ccure-badge-access
-  Vendor = CCURE
-  Product = CCURE
+  Vendor = Tyco
+  Product = CCURE Building Management System
   Lms = Splunk
   DataType = "physical-access"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

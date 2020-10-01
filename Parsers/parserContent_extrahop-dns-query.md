@@ -3,7 +3,7 @@
 {
 Name = extrahop-dns-query
   Vendor = Extrahop
-  Product = Extrahop
+  Product = Reveal(x)
   Lms = Direct
   DataType = "dns-query"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS-SS:SS"

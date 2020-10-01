@@ -3,6 +3,7 @@
 {
 Name = cef-xps-print-activity
     Vendor = XPS
+  Product = XPS
     Lms = ArcSight
     DataType = "print-activity"
     TimeFormat = "yyyy-MM-dd\tHH:mm:ss a"

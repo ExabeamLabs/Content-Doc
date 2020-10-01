@@ -3,7 +3,7 @@
 {
 Name = o365-activity-3
   Vendor = Microsoft
-  Product = Office 365
+  Product = Microsoft Office 365
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -26,8 +26,13 @@ Name = o365-activity-3
     """\ssuser=[^=\s]*?@([\.\w+]+\.)?({email_domain}[^\.\s"]+?\.[^\s"\.>]+)""",
     """ext_rawDataJson_ItemName=({subject}.+?)\s\w+="""
     """Sender":"({sender}[^"]+)""",
-    """Receivers":({recipients}.+?\]),""""
-    """Receivers":\["({recipient}[^"]+)"""
+    """Receivers":({recipients}.+?\]),"""",
+    """Receivers":\["({recipient}[^"]+)""",
+    """"ClientIP"+:"+({src_ip}[A-Fa-f:\d.]+)""",
+    """UserAgent"*:\s*"*({user_agent}[^"]+)""",
+    """DatasetName"*:\s*"*({data_set_name}[^"]+)""",
+    """Workload"*:\s*"*({resource}[^"]+)"*""",
+    """"IsSuccess":({outcome}[^\s,]+)"""
   ]
 }
 ```

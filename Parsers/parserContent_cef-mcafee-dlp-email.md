@@ -33,7 +33,8 @@ Name = cef-mcafee-dlp-email
       """\sflexNumber1=({outcome_code}.+?)\s+(?:flexNumber1Label=reason-id|\w+=.*flexNumber1Label=reason-id)""",
       """flexNumber1Label=reason-id.*\sflexNumber1=({outcome_code}.+?)\s+\w+=""",
       """\sfsize=({bytes}\d+)""",
-      """\scn3=({num_recipients}\d+)"""
+      """\scn3=({num_recipients}\d+)"""   
+      """\sfilePath=(({file_path}[^\s]+\\)?({file_name}[^\s]+\.({file_ext}[^\s]+)))""", 
     ]
     DupFields = [ "orig_user->sender", "orig_user->user" ]
   }

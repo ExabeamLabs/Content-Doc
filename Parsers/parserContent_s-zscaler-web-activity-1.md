@@ -3,6 +3,7 @@
 {
 Name = s-zscaler-web-activity-1
   Vendor = Zscaler
+  Product = Zscaler
   Lms = Splunk
   DataType = "web-activity"
   IsHVF = true

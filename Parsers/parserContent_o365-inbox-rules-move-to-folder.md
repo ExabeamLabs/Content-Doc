@@ -3,7 +3,7 @@
 {
 Name = o365-inbox-rules-move-to-folder
   Vendor = Microsoft
-  Product = Office 365
+  Product = Microsoft Office 365
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -20,5 +20,6 @@ Name = o365-inbox-rules-move-to-folder
     """UserId":"(\\.+)?\/({user_fullname}[^,\\"]+)\\"\s*on behalf""",
     """UserId":"(\\.+)?\/({user_lastname}[^,]+),\s*({user_firstname}[^\\"]+)\\"\s*on behalf"""
   ]
+  DupFields = ["user_domain->email_domain"]
 }
 ```

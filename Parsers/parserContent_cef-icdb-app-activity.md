@@ -3,6 +3,7 @@
 {
 Name = cef-icdb-app-activity
   Vendor = ICDB
+  Product = ICDB
   Lms = ArcSight
   DataType = "app-activity"
   TimeFormat =  "epoch"

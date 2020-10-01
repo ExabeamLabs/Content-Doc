@@ -3,7 +3,7 @@
 {
 Name = cef-syslog-sharepoint-activity
   Vendor = Microsoft
-  Product =  Office 365
+  Product = Microsoft Office 365
   Lms = Direct
   DataType = "file-operations"
   IsHVF = true

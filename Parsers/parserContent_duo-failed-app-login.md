@@ -2,7 +2,8 @@
 ```Java
 {
 Name = duo-failed-app-login
-  Vendor = Duo Security
+  Vendor = Cisco
+  Product = Duo Access Security
   Lms = Direct
   DataType = "failed-app-login"
   TimeFormat = "epoch_sec"

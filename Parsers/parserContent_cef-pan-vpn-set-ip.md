@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-pan-vpn-set-ip
-  Vendor = Palo Alto Networks 
+  Vendor = Palo Alto Networks
   Product = GlobalProtect
   Lms = ArcSight
   DataType = "vpn-set-ip"

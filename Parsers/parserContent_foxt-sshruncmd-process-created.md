@@ -2,7 +2,8 @@
 ```Java
 {
 Name = foxt-sshruncmd-process-created
-  Vendor = Fox BoKS ServerControl 
+  Vendor = HelpSystems
+  Product = Powertech Identity Access Manager (BoKs)
   Lms = Exabeam
   DataType = "process-created"
   IsHVF = true

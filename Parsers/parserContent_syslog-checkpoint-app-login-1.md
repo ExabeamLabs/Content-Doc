@@ -2,7 +2,7 @@
 ```Java
 {
 Name = syslog-checkpoint-app-login-1
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point NGFW
   Lms = Direct
   DataType = "app-login"

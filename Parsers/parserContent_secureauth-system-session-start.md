@@ -3,6 +3,7 @@
 {
 Name = secureauth-system-session-start
   Vendor = SecureAuth
+  Product = SecureAuth Login
   Lms = QRadar
   DataType = "authentication-successful"
   TimeFormat = "MMM dd yyyy HH:mm:ss.SSS"

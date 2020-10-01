@@ -2,6 +2,7 @@
 ```Java
 {
 Name = json-bro-files-analysis-2
+  Product = Zeek Network Security Monitor
   DataType = "file-read"
   Conditions = [ """fuid":""", """"tx_hosts":""", """"rx_hosts":"""]
   Fields = ${BroParserTemplates.json-bro-activity.Fields}[
@@ -9,7 +10,7 @@ Name = json-bro-files-analysis-2
     """"fuid":"({file_id}[^"]+)""",
     """"tx_hosts":"({src_ip}\d+.\d+.\d+.\d+)""",
     """"rx_hosts":"({dest_ip}\d+.\d+.\d+.\d+)""",
-    """"source":"({source}[^"]+)""",
+    """"source":"({log_source}[^"]+)""",
     """"total_bytes":({bytes}[^,]+)""",
     """"md5":"({md5}[^"]+)""",
     """"sha1":"({sha1}[^"]+)""",

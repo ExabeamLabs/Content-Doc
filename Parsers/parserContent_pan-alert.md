@@ -10,11 +10,11 @@ Name = pan-alert
   Conditions = [ """,THREAT,wildfire""" ]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-    """\s*\d,\d+/\d+/\d+\s+\d\d:\d\d:\d\d,.+?,.+?,({alert_type}.+?),\d+,({time}\d+/\d+/\d+\s+\d\d:\d\d:\d\d),({src_ip}[^,]*?),({dest_ip}[^,]*?),(("[^"]*?",)|([^,]*,)){22}("",|(("({malware_url}[^"]+)"|({=malware_url}[^,]+)),))({alert_name}[^,]+?),({alert_severity}[^,]+?),({additional_info}.+?),({alert_id}\d+)""",
+    """,THREAT,({alert_type}.+?),\d+,({time}\d+/\d+/\d+\s+\d\d:\d\d:\d\d),({src_ip}[^,]*?),({dest_ip}[^,]*?),(("[^"]*?",)|([^,]*,)){22}("",|(("({malware_url}[^"]+)"|({=malware_url}[^,]+)),))({alert_name}[^,]+?),({alert_severity}[^,]+?),({additional_info}.+?),({alert_id}\d+)""",
     """,THREAT,([^,]*?,){9}(?:\w+\\+)?({user}[^,]+)""",
     """,THREAT,([^,]*?,){8}(?:\w+\\+)?({user}[^,]+)""",
     """,THREAT,(("[^"]*?",)|([^,]*,)){29}any,({alert_severity}low|medium|high|critical),""",
-    """,THREAT,(("[^"]*?",)|([^,]*,)){29}({alert_severity}[^,]+),""",
+    """,THREAT,(("[^"]*?",)|([^,]*,)){30}({alert_severity}[^,]+),""", 
   ]
   SOAR {
     IncidentType = "malware"

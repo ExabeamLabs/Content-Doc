@@ -3,6 +3,7 @@
 {
 Name = cef-cybereason-security-alert
   Vendor = Cybereason
+  Product = Cybereason
   Lms = ArcSight
   DataType = "alert"
   TimeFormat = "epoch"

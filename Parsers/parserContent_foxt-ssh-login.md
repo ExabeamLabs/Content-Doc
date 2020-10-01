@@ -2,7 +2,8 @@
 ```Java
 {
 Name = foxt-ssh-login
-  Vendor = Fox BoKS ServerControl
+  Vendor = HelpSystems
+  Product = Powertech Identity Access Manager (BoKs)
   Lms = Exabeam
   DataType = "ssh-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

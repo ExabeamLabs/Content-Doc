@@ -18,5 +18,6 @@ Name = emc-syslog-4768
     """Result Code:\s+({result_code}[\w]+)""",
     """Supplied Realm Name:\s+({domain}[^\s]+)""",
     """User ID:\s+(?:NULL SID|({user_sid}.+?))\s+Service Information""" ]
+ DupFields = ["host->dest_host"]
 }
 ```

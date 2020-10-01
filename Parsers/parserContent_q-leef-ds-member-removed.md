@@ -3,6 +3,7 @@
 {
 Name = q-leef-ds-member-removed
   Vendor = StealthBits
+  Product = StealthIntercept
   Lms = QRadar
   DataType = "member-removed"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

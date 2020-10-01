@@ -2,7 +2,7 @@
 ```Java
 {
 Name = ad-audit-4740
-  Vendor = AD Audit
+  Vendor = ManageEngine
   Product = AD Audit
   Lms = Direct
   DataType = "windows-account-lockout"

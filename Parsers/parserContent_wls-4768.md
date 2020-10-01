@@ -19,5 +19,6 @@ Name = wls-4768
       """IpAddress="+(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)""",
       """Status="+({result_code}[^"]+)""""
     ]
+    DupFields = ["host->dest_host"]
   }
 ```

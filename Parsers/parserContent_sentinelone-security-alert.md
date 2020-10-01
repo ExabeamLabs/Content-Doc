@@ -1,28 +1,30 @@
 #### Parser Content
 ```Java
 {
-Name = sentinelone-security-alert-1
+Name = sentinelone-security-alert
   Vendor = SentinelOne
+  Product = SentinelOne
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
-  Conditions = [ """ SentinelOne """, """[eventDesc@""", """[eventSeverity@""" ]
+  Conditions = [ """"annotation": """, """"threatName": """", """"fileContentHash": """", """"fileExtensionType": """", """"s1domain": """" ]
   Fields = [
-    """\sdeviceAddress="({host}[a-fA-F\d.:]+)""",
-    """\sdeviceHostName="({host}[^"]+)""",
-    """\seventDesc="({alert_name}[^"]+)""",
-    """\seventSeverity="({alert_severity}[^"]+)""",
-    """\ssourceDnsDomain="({domain}[^"]+)""",
-    """\ssourceUserName="(traps|({user}[^"]+))""",
-    """\ssourceIpAddresses\.0="({src_ip}[^"]+)""",
-    """\ssourceMacAddresses\.0="({src_mac}[^"]+)""",
-    """\sthreatClassification="({alert_type}[^"]+)""",
-    """\sthreatID="({alert_id}[^"]+)""",
-    """\sfileName="({alert_name}[^"]+)""",
-    """\s*fileContentHash="({md5}[^"]+)""",
-    """\s*(D|d)etecting(E|e)ngine="({additional_info}[^"]+)""",
-    """\screatedAt="({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
-    """\Wcat="({category}[^"]+)""",
+    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """"_time":\s*"({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+Z)""",
+    """"username":\s*"(({domain}[^\\\s"]+)\\+)?({user}[^\\\s"]+)"""",
+    """"classification":\s*"({alert_type}[^"]+)""",
+    """"filePath":\s*"({malware_url}[^"]+)""",
+    """"fileContentHash":\s*"({sha1}[^"]+)""",
+    """"rank":\s*(null|({alert_severity}[^",]+))""",
+    """"agentDomain":\s*"({src_domain}[^"]+)""",
+    """"agentComputerName":\s*"({src_host}[^"]+)""",
+    """"fileExtensionType":\s*"(None|Unknown|({file_type}[^"]+))""",
+    """"agentOsType":\s*"({os}[^"]+)""",
+    """"annotation":\s*"({additional_info}[^"]+)""",
+    """"threatName":\s*"({alert_name}[^"]+)""",
+    """"agentIp":\s*"({src_ip}[^"]+)""",
+    """"fileDisplayName":\s"({file_name}[^"]+)""",
   ]
+  DupFields = ["file_name->process_name"]
 }
 ```

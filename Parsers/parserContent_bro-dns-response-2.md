@@ -2,8 +2,8 @@
 ```Java
 {
 Name = bro-dns-response-2
-  Vendor = Bro
-  Product = Bro
+  Vendor = Zeek
+  Product = Zeek Network Security Monitor
   Lms = Direct
   DataType = "dns-query"
   TimeFormat = "epoch"

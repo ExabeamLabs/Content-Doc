@@ -3,6 +3,7 @@
 {
 Name = q-oracle-db-login
   Vendor = Oracle
+  Product = Oracle DB
   Lms = QRadar
   DataType = "database-login"
   IsHVF = true

@@ -3,7 +3,7 @@
 {
 Name = fidelis-leef-alert
   Vendor = Fidelis
-  Product = Fidelis
+  Product = Fidelis XPS
   Lms = QRadar
   DataType = "alert"
   TimeFormat = "epoch"

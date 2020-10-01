@@ -11,12 +11,12 @@ Name = symantec-epp-network-alert-2
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
     """\w+\s+\d{1,2}\s\d{1,2}:\d{1,2}:\d{1,2}\s({host}[\w\.-]+)\s""",
-    """Local:\s*({dest_ip}[a-fA-F:\.\d]+),Local:\s*(?:0+|({dest_host}[^,]+)),.*?Inbound,""",
-    """Remote:\s*({src_ip}[a-fA-F:\.\d]+),Remote:\s*(?:0+|({src_host}[^,]+)),.*?Inbound,""",
-    """Local:\s*({src_ip}[a-fA-F:\.\d]+),Local:\s*(?:0+|({src_host}[^,]+)),.*?Outbound,""",
-    """Remote:\s*({dest_ip}[a-fA-F:\.\d]+),Remote:\s*(?:0+|({dest_host}[^,]+)),.*?Outbound,""",
-    """Local:\s*({dest_ip}[a-fA-F:\.\d]+),Local:\s*(?:0+|({dest_host}[^,]+)),.*?Unknown,""",
-    """Remote:\s*({src_ip}[a-fA-F:\.\d]+),Remote:\s*(?:0+|({src_host}[^,]+)),.*?Unknown,""",
+    """Local:\s*({dest_ip}[a-fA-F:\.\d]+),Local:\s*(?:0+|({dest_host}[^,]+)),([^,]*,){3}Inbound,([^,]*,){9}Local Port ({dest_port}\d+),""",
+    """Remote:\s*({src_ip}[a-fA-F:\.\d]+),Remote:\s*(?:0+|({src_host}[^,]+)),Inbound,""",
+    """Local:\s*({src_ip}[a-fA-F:\.\d]+),Local:\s*(?:0+|({src_host}[^,]+)),([^,]*,){3}Outbound,""",
+    """Remote:\s*({dest_ip}[a-fA-F:\.\d]+),Remote:\s*(?:0+|({dest_host}[^,]+)),Outbound,([^,]*,){10}Remote Port ({dest_port}\d+),""",
+    """Local:\s*({dest_ip}[a-fA-F:\.\d]+),Local:\s*(?:0+|({dest_host}[^,]+)),([^,]*,){3}Unknown,([^,]*,){9}Local Port ({dest_port}\d+),""",
+    """Remote:\s*({src_ip}[a-fA-F:\.\d]+),Remote:\s*(?:0+|({src_host}[^,]+)),([^,]*,){3}Unknown,""",
     """(Inbound|Outbound|Unknown),({protocol}\w+),""",
     """Begin:\s*({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """User:\s*(?:none|({user}[^,]+)),""",
@@ -24,7 +24,7 @@ Name = symantec-epp-network-alert-2
     """({alert_name}The traffic from IP address .+? was blocked)""",
     """MD-5: [^,]*,"*({additional_info}.+?)(\s+|"+),Local:"""
   ]
-  DupFields = [ "alert_name->alert_type" ]
+  DupFields = [ "alert_name->alert_type"]
   SOAR {
     IncidentType = "generic"
     DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->description"]

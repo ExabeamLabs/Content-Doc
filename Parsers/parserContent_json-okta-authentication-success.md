@@ -3,9 +3,9 @@
 {
 Name = json-okta-authentication-success
   DataType = "authentication-successful"
-  Conditions = [ """"core.user.factor.attempt_success"""", """requestClientApplication=""", """cs6=""", """|Skyformation|""" ]
+  Conditions = [ """"core.user.factor.attempt_success"""", """requestClientApplication=Okta""", """|Skyformation|""" ]
   Fields = ${OktaParserTemplates.json-okta-auth.Fields}[
-    """({outcome}SUCCESS|Success|success)"""
+    """({outcome}(?i)success)"""
   ]
 }
 ```
