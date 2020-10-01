@@ -2,7 +2,7 @@
 ```Java
 {
 Name = q-duo-failed-app-login
-  Vendor = Duo Security
+  Vendor = Cisco
   Product = Duo Access Security
   Lms = QRadar
   DataType = "failed-app-login"

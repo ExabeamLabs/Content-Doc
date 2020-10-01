@@ -3,7 +3,7 @@
 {
 Name = cef-bit9-file-alert
   Vendor = Carbon Black
-  Product = Cb Protection
+  Product = CB Protection
   Lms = ArcSight
   DataType = "file-alert"
   IsHVF = true

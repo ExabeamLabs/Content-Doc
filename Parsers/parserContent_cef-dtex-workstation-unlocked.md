@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-dtex-workstation-unlocked
-  Vendor = Dtex
+  Vendor = Dtex Systems
   Product = DTEX InTERCEPT
   Lms = ArcSight
   DataType = "workstation-unlocked"

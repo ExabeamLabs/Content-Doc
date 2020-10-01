@@ -3,7 +3,7 @@
 {
 Name = cef-carbonblack-network-connection
   Vendor = Carbon Black
-  Product = Cb Defense
+  Product = CB Defense
   Lms = ArcSight
   DataType = "network-connection"
   TimeFormat = "epoch"

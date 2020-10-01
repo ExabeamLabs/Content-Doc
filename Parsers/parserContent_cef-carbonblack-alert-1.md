@@ -3,7 +3,7 @@
 {
 Name = cef-carbonblack-alert-1
   Vendor = Carbon Black
-  Product = Cb Protection
+  Product = CB Protection
   Lms = ArcSight
   DataType = "alert"
   TimeFormat = "epoch"

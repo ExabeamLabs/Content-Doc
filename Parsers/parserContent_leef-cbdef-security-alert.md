@@ -3,7 +3,7 @@
 {
 Name = leef-cbdef-security-alert
   Vendor = Carbon Black
-  Product = Cb Defense
+  Product = CB Defense
   Lms = QRadar
   DataType = "alert"
   TimeFormat = "MMM-dd-YYYY HH:mm:ss z"

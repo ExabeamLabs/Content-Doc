@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-dtex-web-activity
-  Vendor = Dtex
+  Vendor = Dtex Systems
   Product = DTEX InTERCEPT
   Lms = ArcSight
   DataType = "web-activity"

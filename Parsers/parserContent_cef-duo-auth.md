@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-duo-auth
-  Vendor = Duo Security
+  Vendor = Cisco
   Product = Duo Access Security
   Lms = ArcSight
   DataType = "authentication-successful"

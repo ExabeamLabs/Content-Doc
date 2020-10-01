@@ -3,7 +3,7 @@
 {
 Name = cef-bit9-usb-activity
   Vendor = Carbon Black
-  Product = Cb Protection
+  Product = CB Protection
   Lms = ArcSight
   DataType = "usb-activity"
   TimeFormat = "MM dd yyyy HH:mm:ss"

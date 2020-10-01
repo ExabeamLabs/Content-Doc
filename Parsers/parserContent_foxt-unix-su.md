@@ -2,7 +2,7 @@
 ```Java
 {
 Name = foxt-unix-su
-  Vendor = Fox BoKS ServerControl
+  Vendor = HelpSystems
   Product = Powertech Identity Access Manager (BoKs)
   Lms = Exabeam
   DataType = "unix-account-switch"
