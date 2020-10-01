@@ -19,7 +19,10 @@ Name = cef-cas-security-alert
     """"URL":"({malware_url}[^"]+)""",
     """"severityValue":({alert_severity}\d+)""",
     """"_id":"({alert_id}[^"]+)""",
-    """"policyType":"({alert_type}[^"]+)"""
+    """"policyType":"({alert_type}[^"]+)""",
+    """"threatScore"+:({threat_score}\d+)""",
+    """shost=({country_code}.+?)\s\w+=""",
+    """\srequestClientApplication=({app}.+?)\s*\w+="""
   ]
 }
 ```

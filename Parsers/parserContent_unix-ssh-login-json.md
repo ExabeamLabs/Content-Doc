@@ -2,6 +2,7 @@
 ```Java
 {
 Name = unix-ssh-login-json
+  Product = Unix
   DataType = "ssh-login"
   Conditions = [ """"ident":"sshd""", """Accepted publickey for""" ]
   Fields = ${UnixParserTemplates.unix-activity-json.Fields}[

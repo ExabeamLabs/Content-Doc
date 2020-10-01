@@ -1,28 +1,29 @@
 #### Parser Content
 ```Java
 {
-Name = s-guardium-db-alert-1
+Name = s-guardium-db-alert
   Vendor = IBM
   Product = Infosphere Guardium
   Lms = Splunk
   DataType = "database-alert"
   IsHVF = true
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ "Alert based on rule ID", "Database Name:", "Protocol Version:" ]
+  Conditions = [ """GUARDIUM_ALERT""" ]
   Fields = [
-    """Session start:\s*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\w+\s+\d{1,2} \d{1,2}:\d{1,2}:\d{1,2}\s*({host}[\w\.-]+)""",
-    """rule ID\s*({alert_name}.+?)\s*([#\d\\n]+)?([\w\s]+:)""",
-    """rule ID\s*({alert_name}.+?)\s*-\s*Severity""",
-    """Severity\s*({alert_severity}[^\s]+)\s""",
-    """Category:\s*({alert_type}.+?)\s*Classification:""",
-    """SQL:\s*({additional_info}.+?)?\s*SQL""",
-    """Client:\s*({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s*(\(({src_host}[\w\d\\]+)\))?""",
-    """Server:\s*({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s*(\(({dest_host}[\w\d\\]+)\))?""",
-    """Server Type:\s*({server_group}.+?)\s([#\d\\n]+)?Client:""",
-    """DB User:\s*({db_user}[\w\d\\]+)([#\d\\n]+)?([\w\s]+:)""",
-    """OS User:\s*({user}.+?)\s*([#\d\\n]+)?([\w\s]+:)""",
-    """Source Program:\s*({process}({directory}.+)[\\\/]({process_name}.+?))\s([#\d\\n]+)?SQL:"""
+    """session-start-time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+    """\w+ \d{1,2} \d{1,2}:\d{1,2}:\d{1,2}\s*({host}[\w\.-]+)""",
+    """rule-desc=({alert_name}[^\^]+)(\^+|$)""",
+    """category=({alert_type}[^\^]+)(\^+|$)""",
+    """severity=({alert_severity}[^\^]+)(\^+|$)""",
+    """sql=({additional_info}[^\^"]+?)(\^+|"|$)""",
+    """client-hostname=([^\\]+\\)?({src_host}[\w\-\.]+)(\^+|$)""",
+    """client-ip=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """server-ip=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """service-name=({service_name}[^\^]+)(\^+|$)""",
+    """server-type=({server_group}[^\^]+)(\^+|$)""",
+    """src-program=({process}({directory}(?:[^\^]+)?[\\\/]+)?({process_name}[^\\\/\^]+))(\^+|$)""",
+    """db-user=([^\\\^]+\\)?({db_user}[^\^]+)(\^+|$)""",
+    """os-user=([^\\\^]+\\)?({user}[^\^]+)(\^+|$)"""
   ]
   DupFields = [ "db_user->account","directory->process_directory" ]
 }

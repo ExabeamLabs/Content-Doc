@@ -7,7 +7,7 @@ Name = bluecoat-proxy-v2
   Lms = Direct
   DataType = "web-activity"
   IsHVF = true
-  TimeFormat = "dd/MM/yyyy: HH:mm:ss z"
+  TimeFormat = "dd/MM/yyyy:HH:mm:ss z"
   Conditions = [ """filter-result=""", """cs-host=""" ]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}[\w.-]+)""",
@@ -19,7 +19,7 @@ Name = bluecoat-proxy-v2
     """\W(c-ip|src)="?(-|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))""",
     """\tr-ip=(-|({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))""",
     """\Wsrcport=(-|({src_port}\d+))""",
-    """\Wdst=(-|({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))""",
+    """\Wdst=(-|({external_dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))""",
     """\Wdstport=(?:-|({dest_port}\d+))""",
     """\W(cs-username|username)="?(-|({user}.+?))\s*("|\||$|\t|\s+[\w\-\(\)]+=)""",
     """\Ws-action="?(-|({proxy_action}.+?))\s*("|\||$|\t|\s+[\w\-\(\)]+=)""",

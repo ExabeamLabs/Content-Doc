@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-xml-4660-netapp
-   Vendor = Microsoft Windows
+   Vendor = Microsoft
    Product = NetApp
    Lms = Splunk
    DataType = "file-operations"
@@ -27,32 +27,5 @@ Name = s-xml-4660-netapp
       """<Data Name="*(HandleID|HandleId)"*>({object_id}.+?)</Data>"""
    ]
     DupFields = ["event_name->activity"]
-}
-
-${SecureLinkParserTemplates.securelink-events}{
-  Name = securelink-login
-  DataType = "app-login"
-  Conditions = [  """ Logged in.""", """SecureLink:""", """User:""" ]
-  Fields = ${SecureLinkParserTemplates.securelink-events.Fields}[
-  """({event_name}Logged in)"""
-  ]
-}
-
-${SecureLinkParserTemplates.securelink-events}{
-  Name = securelink-login-failed
-  DataType = "failed-app-login"
-  Conditions = [  """Login failed:""", """SecureLink:""", """User:""" ]
-  Fields = ${SecureLinkParserTemplates.securelink-events.Fields}[
-  """({event_name}Login failed):\s({failure_reason}[^.]+)""" 
-  ]
-}
-${NetWrixParserTemplates.netwrix-app-activity-2}{
-  Name = netwrix-ad-account-unlocked
-  DataType = "windows-account-enabled"
-  Conditions = [ """CEF:0|Netwrix|Active Directory|""", """|Modified user|""", """msg=User Account Unlocked""" ]
-  Fields = ${NetWrixParserTemplates.netwrix-app-activity-2.Fields}[
-    """CEF:0\|Netwrix\|Active Directory\|[^\|]+\|[^\|]+\|({activity}[^\|]+)\|""",
-    """cat=user.+?filePath=\\+?([^\\]+\\+)*?({target_user}[^\\]+) start=""",
-  ]
 }
 ```

@@ -3,6 +3,7 @@
 {
 Name = cef-juniper-vpn-timeout
   Vendor = Juniper Networks
+  Product = Juniper VPN
   Lms = ArcSight
   DataType = "vpn-end"
   TimeFormat = "epoch"

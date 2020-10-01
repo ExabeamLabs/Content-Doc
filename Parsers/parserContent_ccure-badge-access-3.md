@@ -2,8 +2,8 @@
 ```Java
 {
 Name = ccure-badge-access-3
-  Vendor = CCURE
-  Product = CCURE
+  Vendor = Tyco
+  Product = CCURE Building Management System
   Lms = Syslog
   DataType = "physical-access"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

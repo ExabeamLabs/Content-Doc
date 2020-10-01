@@ -3,6 +3,7 @@
 {
 Name = juniper-nwc-vpn-start
   Vendor = Juniper Networks
+  Product = Juniper VPN
   Lms = Splunk
   DataType = "vpn-start"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
@@ -33,5 +34,6 @@ Name = juniper-nwc-vpn-start
     """\smsg="({additional_info}[^"]+)""",
     """hostname\s+({src_host}[^"]+)"""
   ]
+  DupFields = ["user->account"]
 }
 ```

@@ -2,7 +2,8 @@
 ```Java
 {
 Name = cef-rangeraudit-failed-login
-  Vendor = RangerAudit 
+  Vendor = RangerAudit
+  Product = RangerAudit
   Lms = ArcSight
   DataType = "failed-app-login"
   IsHVF = true

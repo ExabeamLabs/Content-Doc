@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-checkpoint-firewall-accept
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point NGFW
   Lms = Splunk
   DataType = "network-connection"

@@ -19,6 +19,7 @@ Name = q-firesight-alert-3
     """\WfileEventData.destinationPort=({dest_port}\d+)""",
     """\WfileEventData.userRef=({user}[^\s]+)""",
     """\WrecordType=({alert_name}.+?)\s+([\w\.]+=|$)""",
+    """\WfileEventData.threatScore=({alert_severity}\d+)""",
   ]
   DupFields = [ "alert_name->alert_type" ]
 }

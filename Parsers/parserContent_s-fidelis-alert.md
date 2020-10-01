@@ -3,7 +3,7 @@
 {
 Name = s-fidelis-alert
   Vendor = Fidelis
-  Product = Fidelis
+  Product = Fidelis Network
   Lms = Splunk
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

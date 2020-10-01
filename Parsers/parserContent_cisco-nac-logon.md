@@ -1,23 +1,29 @@
 #### Parser Content
 ```Java
 {
-Name = cisco-nac-logon-1
+Name = cisco-nac-logon
   Vendor = Cisco
   Product = Cisco ISE
   Lms = Direct
-  DataType = "nac-logon"
+  DataType = "windows-nac-logon"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS Z"
-  Conditions = [ """Device-Administration: Command Authorization succeeded""", """CSCOacs_Passed_Authentications""" ]
+  Conditions = [ """Acct-Status-Type=Start""", """Acct-Authentic=RADIUS""", """RADIUS Accounting start request""" ]
   Fields = [
-    """({host}[\w.\-]+)\s+CSCOacs_Passed_Authentications(\s+\S+){3}\s+({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d+ (\+|\-)\d\d:\d\d)""",
-    """Device-Administration:\s*({event_name}[^,]+)""",
+    """CISE_RADIUS_Accounting.+?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d [+-]\d\d:\d\d)""",
+    """({host}[\w\-.]+) CISE_RADIUS_Accounting""",
+    """Host:\s*({host}\S+)""",
+    """, NetworkDeviceName=({network}[^,]+),""",
+    """, User-?Name=(host\/)?(({domain}[^\\\/,\s@]+)[\\\/]+)?({user}[^\\\/\s,@]+),""",
+    """, User-?Name=({user_email}[^\\\/\s,@]+@[^\\\/\s,@]+)""",
+    """, NAS-Identifier=({computer_name}[\w\-.]+)""",
     """, Device IP Address=({auth_server}[^,]+)""",
-    """, DestinationIPAddress=({dest_ip}[a-fA-F\d.:]+)""",
-    """, DestinationPort=({dest_port}\d+)""",
-    """, UserName=({user}[^,]+)""",
-    """, Protocol=({protocol}[^,]+)""",
-    """, Remote-Address=({src_ip}[^,]+)""",
-    """, AuthenticationMethod=({auth_type}[^,]+)"""
+    """, Device IP Address=({dest_ip}[a-fA-F\d.:]+)""",
+    """, Framed-IP-Address=({dest_ip}[a-fA-F\d.:]+)""",
+    """, Called-Station-ID=({src_host}[\w\-.]+):({ssid}[^,]+)""",
+    """, Calling-Station-ID=(({src_mac}\w+-\w+-\w+-\w+-\w+-\w+)|({src_ip}[A-Za-z0-9.:]+))""",
+    """, NetworkDeviceGroups=Location#All Locations#({location}[^,]+)""",
+    """(?i)(MacAddress)=({mac_address}[^,\s]+),""",
   ]
+  DupFields = [ "computer_name->dest_host" ]
 }
 ```

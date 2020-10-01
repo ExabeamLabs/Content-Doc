@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-nac-logon-1
-  Conditions = [ """Device-Administration: """, """ succeeded""" ]
+ Conditions = [ """Device-Administration: """, """ succeeded""" , """Protocol="""]
 }，
 
 ${CiscoParsersTemplates.s-nac-logon}{
@@ -16,22 +16,30 @@ ${CiscoParsersTemplates.s-nac-logon}{
 }，
 
 {
-  Name = cef-cisco-ise-nac-logon
+  Name = s-nac-logon-2
   Vendor = Cisco
   Product = Cisco ISE
   Lms = Direct
   DataType = "nac-logon"
   TimeFormat = "epoch"
-  Conditions = [ """|CISCO|ISE|""","""msg=NOTICE Passed-Authentication""","""app=Radius"""  ]
+  Conditions = [ """CISE_Passed_Authentications""", """|Cisco|Cisco ISE|""", """CEF:""" ]
   Fields = [
-    """\srt=({time}\d+)""",
-    """\sdvchost=({host}[^\s]+)""",
-    """\sduser=(?:|(({domain}[^\\=]+)\\+)?({user}(?:({computer_name}([A-F0-9]{2}\-){5}[A-F0-9]{2})|.+?)))\scn1=""",
-    """\sdhost=({dest_host}[^\s]+)""",
-    """\sdst=({dest_ip}[^\s]+)""",
-    """\sdst=({auth_server}[^\s]+)""",
-    """\sshost=({src_host}[^\s]+)""",
-    """\ssrc=({src_ip}[^\s]+)"""
+    """\Wrt=({time}\d+)""",
+    """exabeam_host=({host}[^\s]+)""",
+    """ahost=({host}[^\s]+)"""
+    """shost=({src_host}[^\s]+)""",
+    """({event_name}CISE_Passed_Authentications)""",
+    """suser=({user}[^\s]+)""",
+    """dhost=({dest_host}[^\s]+)""",
+    """dst=({dest_ip}[A-Fa-f:\d.]+)""",
+    """dst=({auth_server}[A-Fa-f:\d.]+)""",
+    """dpt=({dest_port}\d+)""",
+    """Cisco ISE\|(|[^\|]+)\|({event_code}\d+)\|""",
+    """deviceSeverity=({severity}[^\s]+)""",
+    """cs1=({auth_method}[^\s]+)""",
+    """ad.User=({user}[^\s]+)""",
+    """NetworkDeviceName\\*=({network}[^,\s]+)"""
   ]
+  DupFields = ["dest_host->auth_server"]
 }
 ```

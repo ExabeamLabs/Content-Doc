@@ -3,6 +3,7 @@
 {
 Name = cef-tripwire-file-alert
   Vendor = Tripwire Enterprise
+  Product = Tripwire Enterprise
   Lms = Splunk
   DataType = "file-alert"
   IsHVF = true

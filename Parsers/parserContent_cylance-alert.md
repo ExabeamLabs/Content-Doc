@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cylance-alert
-  Vendor = Cylance
-  Product = PROTECT
+  Vendor = BlackBerry
+  Product = BlackBerry Protect
   Lms = QRadar
   DataType = "alert"
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"
@@ -18,7 +18,7 @@ Name = cylance-alert
     """Cylance Score: ({alert_severity}\d+)""",
     """Device Name: ({src_host}[^,]+)""",
     """IP Address: \(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """Path: ({additional_info}[^,]+)""",
+    """Path: ({process}[^,]+\\({process_name}[^,]+))""",
     """Threat Classification:\s*({alert_name}[^,]+),""",
     """Status:\s*({outcome}[^,]+),""",
     """MD5:\s*({md5}[^,]+),""",
@@ -30,7 +30,4 @@ Name = cylance-alert
     ProjectName = "SOC"
     EntityFields = [
       {EntityType="device", Name="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]}
-    ]
-  }
-}
 ```

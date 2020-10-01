@@ -2,7 +2,8 @@
 ```Java
 {
 Name = cef-rangeraudit-app-activity
-  Vendor = RangerAudit 
+  Vendor = RangerAudit
+  Product = RangerAudit
   Lms = ArcSight
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"

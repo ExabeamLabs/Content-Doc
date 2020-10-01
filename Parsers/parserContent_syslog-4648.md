@@ -2,7 +2,7 @@
 ```Java
 {
 Name = syslog-4648
-  Vendor = Microsoft Windows
+  Vendor = Microsoft
   Product = Microsoft Windows
   Lms = Direct
   DataType = "windows-account-switch"

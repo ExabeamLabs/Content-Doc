@@ -3,6 +3,7 @@
 {
 Name = redcanary-security-alert
   Vendor = Red Canary
+  Product = Red Canary
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

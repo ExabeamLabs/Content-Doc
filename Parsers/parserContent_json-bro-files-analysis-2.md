@@ -2,7 +2,7 @@
 ```Java
 {
 Name = json-bro-files-analysis-2
-  Product = Bro
+  Product = Zeek Network Security Monitor
   DataType = "file-read"
   Conditions = [ """fuid":""", """"tx_hosts":""", """"rx_hosts":"""]
   Fields = ${BroParserTemplates.json-bro-activity.Fields}[

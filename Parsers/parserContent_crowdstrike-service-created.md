@@ -7,15 +7,15 @@ Name = crowdstrike-service-created
   Lms = Direct
   DataType = "process-created"
   TimeFormat = "epoch"
-  Conditions = [ """"event_simpleName":"ServiceStarted"""" ]
+  Conditions = [ """"event_simpleName":""", """"ServiceStarted"""" ]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """"timestamp":"({time}\d+)""",
-    """"CommandLine":"(|({process}({directory}(?:(\w+:)?[^:"]+?)?[\\\/])?({process_name}[^"\\\s]+?)))\s""",
-    """"name":"({service_name}[^"]+)""",
-    """"event_simpleName":"({event_name}[^"]+)""",
-    """"UserName":"({user}[^"\s]+)"""",
+    """"timestamp":\s*"({time}\d+)""",
+    """"CommandLine":\s*"(|({process}({directory}(?:(\w+:)?[^:"]+?)?[\\\/])?({process_name}[^"\\\s]+?)))\s""",
+    """"name":\s*"({service_name}[^"]+)""",
+    """"event_simpleName":\s*"({event_name}[^"]+)""",
+    """"UserName":\s*"({user}[^"\s]+)"""",
   ]
-  DupFields = [ "directory->process_directory" ]
+  DupFields = [ "directory->process_directory" , "host->dest_host"]
 }
 ```

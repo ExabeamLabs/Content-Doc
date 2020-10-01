@@ -3,7 +3,7 @@
 {
 Name = mcafee-siem-process-created
     Vendor = Microsoft
-    Product = Windows
+    Product = Microsoft Windows
     Lms = Direct
     DataType = "windows-process-created"
     IsHVF = true

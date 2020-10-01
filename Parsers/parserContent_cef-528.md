@@ -19,8 +19,9 @@ Name = cef-528
     """\sdntdom=({domain}[^\s]+)""",
     """\sduid=\([^,]+,({logon_id}[^\)]+)""",
     """\scn1=({logon_type}\d+)""",
-    """\sdvchost=({host}[^\s]+)"""
+    """\sdvchost=({host}[^\s]+)""",
+    """\sduser=(.*?\\+)?({account}.*?)\s+\w+=""",
   ]
-  DupFields = [ "host->dest_host" ]
+  DupFields = [ "host->dest_host"]
 }
 ```

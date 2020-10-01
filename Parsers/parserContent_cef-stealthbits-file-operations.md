@@ -3,6 +3,7 @@
 {
 Name = cef-stealthbits-file-operations
   Vendor = StealthBits
+  Product = StealthIntercept
   Lms = Direct
   DataType = "file-operations"
   IsHVF = true

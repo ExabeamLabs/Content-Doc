@@ -2,15 +2,15 @@
 ```Java
 {
 Name = q-checkpoint-alert
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point Endpoint Security
   Lms = QRadar
   DataType = "alert"
-  TimeFormat = "epoch_sec"
+  TimeFormat = "epoch" 
   Conditions = [ """__policy_id_tag:""", """;Protection""" ]
   Fields = [
     """date=({time}\d+);""",
-    """exabeam_host=[^@]+@\s*({host}[\w-.]+)""",
+    """exabeam_host=({host}[\w\-.]+)""",
     """;Protection (Name|name):\s*({alert_name}[^;]+);""",
     """;malware_action:\s*({alert_type}[^;]+);""",
     """;file name:\s*({malware_file_name}[^;]+);""",

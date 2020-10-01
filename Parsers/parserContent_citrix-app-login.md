@@ -1,11 +1,13 @@
 #### Parser Content
 ```Java
 {
-Name = citrix-app-login-fail-2
-  DataType = "app-login-fail"
+Name = citrix-app-login
+  DataType = "app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ """SkyFormation""","""Activity":"LoginLocked""","""flexString1Label=application-action""" ]
+  Conditions = ["""destinationServiceName=Citrix ShareFile""",""""Activity":"Login"""", """flexString1Label=application-action"""]
   Fields = ${CitrixParserTemplates.citrix-app-activity.Fields}[
+  	""""Activity"+:"+({activity}[^"]+)"""",
+    """"Date"+:"({time}[^"]+)""",
   ]
 }
 ```

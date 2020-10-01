@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-juniper-vpn-resume
-  Vendor = Juniper VPN
+  Vendor = Juniper Networks
   Product = Juniper VPN
   Lms = ArcSight
   DataType = "access-control"
@@ -17,7 +17,8 @@ Name = cef-juniper-vpn-resume
     """\Wsproc=({realm}.+?)\s+\w+=""",
     """\Wspriv=({resource}.+?)\s+\w+=""",
     """({event_code}Session resumed)""",
+    """dst=({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""", 
   ]
-  DupFields = [ "host->dest_host" ]
+  DupFields = [ "host->dest_host" , "user->account"]
 }
 ```

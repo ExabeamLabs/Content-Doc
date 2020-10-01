@@ -2,7 +2,8 @@
 ```Java
 {
 Name = mobileiron-emm-alert
-  Vendor = MobileIron EMM
+  Vendor = MobileIron
+  Product = MobileIron EMM
   Lms = Direct
   DataType = "alert"
   TimeFormat = "MMM dd',' yyyy',' HH:mm"

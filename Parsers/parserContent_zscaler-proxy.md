@@ -3,6 +3,7 @@
 {
 Name = zscaler-proxy
     Vendor = Zscaler
+  Product = Zscaler
     Lms = Direct
     DataType = "web-activity"
     IsHVF = true

@@ -3,7 +3,7 @@
 {
 Name = o365-activity
   Vendor = Microsoft
-  Product = Office 365
+  Product = Microsoft Office 365
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -17,18 +17,19 @@ Name = o365-activity
     """\Wact=({activity}.+?)\s+(\w+=|$)""",
     """"Operation\\*"+:[\s\\]*"+({activity}[^"\\\.]*)""",
     """"eid\\*"+:[\s\\]*"+(SecurityComplianceAlerts|({user_email}[^"@]+?@[^@"]+?)|({user}[^"]+?))\\*"""",
-    """"UserId\\*"+:[\s\\]*"+(({domain}[^"\\]+)\\+)?(({user_email}[^\s"@]+@[^\s"@]+)|(SecurityComplianceAlerts|(Unknown|({user}[^"@\\\s]*))))"""",
+    """"UserId\\*"+:[\s\\]*"+(({domain}[^"\\]+)\\+)?(({user_email}[^\s"@]+@[^\s"@]+)|(SecurityComplianceAlerts|(Unknown|((\w+?_)?(\w+-)?\w+-\w+-\w+-\w+)|({user}[^"@\\\s]*))))"""",
     """"MailboxOwnerUPN\\*"+:[\s\\]*"+({user_email}[^"@\\]+@[^"@\\]+)""",
-    """\ssuser=[^"@=\s]*?@([\.\w+]+\.)?({email_domain}[^\.\s"]+?\.[^\s"\.\\]+)""",
+    """\ssuser=[^"@=\s]*?@({email_domain}([\.\w+]+\.)*([^\.\s"]+?\.[^\s"\.\\]+))""", 
     """"UserId\\*"+:[\s\\]*"+({user_email}[^"\\@]+?@[^"\\\s@]+)""",
-    """"UserId\\*"+:[\s\\"]*"+[^"]*?@([\.\w+]+\.)?({email_domain}[^\.\s"]+?\.[^\s"\.>]+)>?\s*"+""",
-    """"UserId":"\\*"(?![^@"]+?@[^\s"]+)({domain}[^"\\\/]+)[^"]*?(Unknown|({user}[^"\\\/@\s]+))\\"""",
+    """"UserId\\*"+:[\s\\"]*"+[^"]*?@({email_domain}([\.\w+]+\.)*[^\.\s"]+?\.[^\s"\.>]+)>?\s*"+""",
+    """"UserId":"\\*"(?![^@"]+?@[^\s"]+)({domain}[^"\\\/]+)[^"]*?(Unknown|((\w+?_)?(\w+-)?\w+-\w+-\w+-\w+)|({user}[^"\\\/@\s]+))\\"""",
     """"MailboxOwnerUPN\\*"+:[\s\\]*"+({user_email}[^"\\\s@]+@[^"\\\s@]+)""",
-    """"MailboxOwnerUPN\\*"+:[\s\\"]*"+[^"]*?@([\.\w+]+\.)?({email_domain}[^\.\s"]+?\.[^\s"\.>]+)>?\s*"+""",
+    """"MailboxOwnerUPN\\*"+:[\s\\"]*"+[^"]*?@({email_domain}([\.\w+]+\.)*([^\.\s"]+)*\.[^\s"\.>]+)>?\s*"+""",
     """"ResultStatus\\*"+:[\s\\]*"+({outcome}[^"\\]+)""",
     """"(Workload|Application|Client)\\*"+:[\s\\]*"+({app}[^"\\]*)""",
     """requestClientApplication=({app}.+?)\s+(\w+=|$)""",
-    """"ObjectId\\*"+:"?[\s\\]*"+(Unknown|Not Available|({object}[^"\\]*))""",
+    """sourceServiceName=({app}.+?)\s+(\w+=|$)""",
+    """"ObjectId\\*"+:"?[\s\\]*"+(Unknown|Not Available|({object}[^"\\]*?))\s*"""",
     """"Client\\*"+:[\s\\]*"+({user_agent}[^"]*)""",
     """"UserAgent\\*"+:[\s\\]*"+({user_agent}.*?)\\*"+,""",
     """\{"+Name"+:[\s\\]*"+UserAgent"+,"+Value"+:"+({user_agent}[^"]+)"+\}""",

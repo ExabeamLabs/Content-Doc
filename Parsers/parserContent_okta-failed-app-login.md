@@ -3,7 +3,7 @@
 {
 okta-failed-app-login = {
     Vendor = Okta
-    Product = Okta MFA
+    Product = Okta Adaptive MFA
     Lms = Splunk
     DataType = "failed-app-login"
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
@@ -20,15 +20,5 @@ okta-failed-app-login = {
       """"DisplayName":"({user_fullname}[^"]+?\s[^"]+)""""
       """"DisplayName":\["({user_fullname}[^,"]+?\s[^,"]+)"""
     ]
-}
-
-}
-
-OktaParsers = [
-
-${OktaParserTemplates.s-okta-app-login}{
-  Name = cef-okta-app-login
-  DataType = "app-login"
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """"displayMessage":"User single sign on to app"""", """"result":"SUCCESS"""" ]
 }
 ```

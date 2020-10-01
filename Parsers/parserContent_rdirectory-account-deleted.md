@@ -3,6 +3,7 @@
 {
 Name = rdirectory-account-deleted
   Vendor = Namespace rDirectory
+  Product = Namespace rDirectory
   Lms = Direct
   DataType = "account-deleted"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -12,8 +13,8 @@ Name = rdirectory-account-deleted
 	"""<Computer>({host}[^<]+)""",
 	"""Modified by:({user}.+?)\s+(\(.+?\))?\s+\(({domain}[^\/)]+)""",
 	"""Credentials:({account_domain}[^\\]+)\\+([^\s.]+\.)*({account}[^\s.]+)""",
-	"""Delete:({target_user}.+?)\s+\(({target_domain}[^\/)]+)"""
+	"""Delete:\s*({target_user}.+?)\s+\(({target_domain}[^\/)]+)"""
   ]
-  DupFields = [ "host->dest_host" ]
+  DupFields = [ "host->dest_host" , "target_user->account_name"]
 }
 ```

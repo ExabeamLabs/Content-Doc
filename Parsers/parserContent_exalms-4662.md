@@ -20,7 +20,7 @@ Name = exalms-4662
     """SubjectDomainName":"({domain}[^"]+)"""",
     """OperationType":"({action}[^"]+)"""",
     """Properties":"({properties}[^"]+)"""",
-    """Additional\s*Information:({attribute}[^"]+)""""
+    """"AdditionalInfo"+:"+(-|({attribute}[^"]+))"""",
     """"keywords":\["({outcome}[^"]+)"\]""",
     """({event_code}4662)"""
   ]

@@ -3,7 +3,7 @@
 {
 Name = cef-sourcefire-estreamer-alert
   Vendor = Cisco
-  Product = Cisco Firepower  
+  Product = Cisco Firepower
   Lms = Direct
   DataType = "alert"
   TimeFormat = "epoch"
@@ -20,7 +20,7 @@ Name = cef-sourcefire-estreamer-alert
       """\sexternalId=({alert_id}\d+)""",
       """\|Sourcefire\|[^|]*\|[^|]*\|[^|]*\|[^-|]+\-[^\s]+\s+({alert_name}[^|]+)\|""",
       """\|Sourcefire\|[^|]*\|[^|]*\|[^|]*\|({alert_type}[^-|]+\-[^\s]+)[^|]+\|""",
-      """\|Sourcefire\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|({alert_severity}[^|]+)"""
+      """\|Sourcefire\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|({alert_severity}[^|]+)""",
   ]
   SOAR {
     IncidentType = "malware"

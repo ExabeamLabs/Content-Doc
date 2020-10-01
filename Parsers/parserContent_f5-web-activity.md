@@ -2,7 +2,7 @@
 ```Java
 {
 Name = f5-web-activity
-  Vendor = F5
+  Vendor = F5 Networks
   Product = WebSafe
   Lms = Direct
   DataType = "web-activity"

@@ -3,6 +3,7 @@
 {
 Name = netmotion-vpn-start
     Vendor = NetMotion Wireless
+  Product = NetMotion Wireless
     Lms = Splunk
     DataType = "vpn-start"
     TimeFormat = "epoch"
@@ -15,5 +16,6 @@ Name = netmotion-vpn-start
       """POP_Address="+({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """Virtual_Address="+({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
     ]
+    DupFields = ["user->account"]
   }
 ```

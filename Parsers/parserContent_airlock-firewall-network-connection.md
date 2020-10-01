@@ -2,7 +2,7 @@
 ```Java
 {
 Name = airlock-firewall-network-connection
-  Vendor = Airlock Web Application Firewall
+  Vendor = Airlock
   Product = Airlock Web Application Firewall
   Lms = Direct
   DataType = "network-connection"

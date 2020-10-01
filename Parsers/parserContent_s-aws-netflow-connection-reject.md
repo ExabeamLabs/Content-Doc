@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-aws-netflow-connection-reject
-  Vendor = AWS CloudWatch
+  Vendor = AWS
   Product = AWS CloudWatch
   Lms = Splunk
   DataType = "netflow-connection"

@@ -2,7 +2,8 @@
 ```Java
 {
 Name = s-shibboleth-sso-1
-  Vendor = Shibboleth SSO
+  Vendor = Shibboleth
+  Product = Shibboleth SSO
   Lms = Splunk
   DataType = "app-login"
   TimeFormat = "yyyyMMdd'T'HHmmss"

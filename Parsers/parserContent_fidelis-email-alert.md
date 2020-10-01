@@ -3,7 +3,7 @@
 {
 Name = fidelis-email-alert
   Vendor = Fidelis
-  Product = Fidelis
+  Product = Fidelis XPS
   Lms = Splunk
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
@@ -21,7 +21,7 @@ Name = fidelis-email-alert
         """SrcIP="({src_ip}[^"]+)"""",
         """Severity="({alert_severity}[^"]+)"""",
         """Filename="(?!(<n\/a>))({attachments}[^"]+)"""",
-        """Filename="(?!(<n\/a>))({attachment}[^"]+)("|,)""",
+        """Filename="(?!(<n\/a>))({attachment}[^\.]+({file_ext}[^"]+))("|,)""",
         """Protocol="({protocol}[^"]+)"""",
         """Rule="({alert_type}[^"]+)"""",
         """SrcPort="({src_port}[^"]\d+)"""",

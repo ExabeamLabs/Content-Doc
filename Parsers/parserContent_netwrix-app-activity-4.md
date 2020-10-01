@@ -2,8 +2,8 @@
 ```Java
 {
 Name = netwrix-app-activity-4
-   Vendor = NetWrix
-  Product = NetWrix Auditor
+   Vendor = Netwrix
+  Product = Netwrix Auditor
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

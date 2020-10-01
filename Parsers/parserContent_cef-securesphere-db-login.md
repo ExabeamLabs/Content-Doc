@@ -7,7 +7,7 @@ Name = cef-securesphere-db-login
   Lms = ArcSight
   DataType = "database-login"
   IsHVF = true
-  TimeFormat = "MMM dd yyyy HH:mm:ss"
+  TimeFormat = "epoch"
   Conditions = [ """CEF""", """|SecureSphere|""", """cs6=Login""", """cs8=True""" ]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",

@@ -2,8 +2,8 @@
 ```Java
 {
 Name = n-forwarded-cef-aventail-vpn-start
-  Vendor = Dell Aventail
-  Product = Aventail
+  Vendor = Dell
+  Product = SonicWALL Aventail
   Lms = NitroCefSyslog
   DataType = "vpn-start"
   TimeFormat = "epoch"
@@ -14,6 +14,9 @@ Name = n-forwarded-cef-aventail-vpn-start
     """src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """nitroSource_UserID=({user}[^\r\n]+?)(\s+\w+=|\s*$)""",
     """suser=({user}[^\r\n]+?)(\s+\w+=|\s*$)""",
+    """deviceTranslatedAddress=({src_translated_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""", 
+    """src=({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
   ]
+  DupFields = ["user->account"]
 }
 ```

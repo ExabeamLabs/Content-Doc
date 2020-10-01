@@ -2,7 +2,8 @@
 ```Java
 {
 Name = bro-smb_mapping
-  Vendor = Bro
+  Vendor = Zeek
+  Product = Zeek Network Security Monitor
   Lms = Direct
   DataType = "share-access"
   TimeFormat = "epoch_sec"

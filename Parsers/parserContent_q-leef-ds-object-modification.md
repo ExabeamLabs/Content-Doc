@@ -3,6 +3,7 @@
 {
 Name = q-leef-ds-object-modification
   Vendor = StealthBits
+  Product = StealthIntercept
   Lms = QRadar
   DataType = "ds-access"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

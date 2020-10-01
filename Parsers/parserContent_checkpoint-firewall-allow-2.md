@@ -2,7 +2,7 @@
 ```Java
 {
 Name = checkpoint-firewall-allow-2
-  Vendor = Check Point
+  Vendor = Check Point Software
   Product = Check Point NGFW
   Lms = Direct
   DataType = "web-activity"

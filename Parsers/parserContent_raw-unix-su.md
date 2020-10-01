@@ -1,31 +1,19 @@
 #### Parser Content
 ```Java
 {
-Name = raw-unix-sudo
+Name = raw-unix-su
   Vendor = Unix
+  Product = Unix
   Lms = Direct
   DataType = "unix-account-switch"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """sudo:""", """; USER""","""; COMMAND""" ]
+  TimeFormat = "yyyy-MM-dd HH:mm:ss"
+  Conditions = [ "session opened for user","su:", """(uid=""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d[+-]\d+:\d+) \S+ sudo:""",
-    """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+[+-]\d+)""",
     """exabeam_host=([^=]+@\s*)?({host}[\w.\-]+)""",
-    """({host}[\w\.\-]+)?:?\s*sudo:""",
-    """"agent":\{"id":"({agent_id}\d+)"""",
-    """"agent":\{"name":"[^"]*","id":"({agent_id}\d+)"""",
-    """({event_code}sudo):\s+(?:\[[^]]+\])?\s*(({domain}[^\\:;]+)\\+)?({user}[^\s:]+).+?USER\\*=({account}[^;\s]+)""",
-    """\WPWD=({directory}[^\s;]+)""",
-    """\WCOMMAND=({process}([^\s]+[\\\/]+)?({process_name}[^;\\\/\s]+))\s(?:|;|$)""",
-    """\WCOMMAND=({command_line}[^;"]+)("|\s(?:|;|$))""",
-    """"description":"({event_name}[^"]+)"""",
-    """"level":({level}[^",]+)""",
-    """"groups":\[({groups}[^\]]+)""",
-    """"pci_dss":\[({pci_dss}[^\]]+)""",
-    """"cluster":\{[^\{\}]+?"name":"({cluster_name}[^"]+)"""",
-    """"host":"({wazuh_manager}[^"]+)"""",
+    """\d\d:\d\d:\d\d ({host}[\w.\-]+)\s+su:""",
+    """({event_code}su):.+?for user ({account}[^\s]+) by ({user}[\w\.]+)?\(uid=({user_uid}\d+)\)"""
   ]
-  DupFields=["host->dest_host","directory->process_directory"]
+DupFields=["host->dest_host"]
 }
 ```

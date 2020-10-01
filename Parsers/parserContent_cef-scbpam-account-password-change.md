@@ -3,7 +3,7 @@
 {
 Name = cef-scbpam-account-password-change
   Vendor = Dell
-  Product = Dell Quest TPAM
+  Product = One Identity Manager
   Lms = ArcSight
   DataType = "password-change"
   TimeFormat = "epoch"

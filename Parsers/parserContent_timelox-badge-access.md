@@ -3,6 +3,7 @@
 {
 Name = timelox-badge-access
     Vendor = TimeLox
+  Product = TimeLox
     Lms = Direct
     DataType = "physical-access"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
