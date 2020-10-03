@@ -20,6 +20,7 @@ Name = o365-inbox-rules-all
     """UserId":"({user}.+?@({user_domain}[^"]+).+?)""",
     """destinationServiceName=({app}.+?)\s*filePath""",
     """({app}Office 365)"""
+    """"SubjectOrBodyContainsWords":"({filter_key_words}[^"]+)"""
   ]
 }
 ```
