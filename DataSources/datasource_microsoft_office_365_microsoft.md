@@ -48,6 +48,7 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [O365-email-alert-out](../Parsers/parserContent_o365-email-alert-out.md)
 * [cef-O365-dlp-email-out-1](../Parsers/parserContent_cef-o365-dlp-email-out-1.md)
+* [cef-microsoft-app-activity-inbox-rule](../Parsers/parserContent_cef-microsoft-app-activity-inbox-rule.md)
 * [cef-microsoft-graph-activity](../Parsers/parserContent_cef-microsoft-graph-activity.md)
 * [cef-o365-app-activity-1](../Parsers/parserContent_cef-o365-app-activity-1.md)
 * [cef-o365-app-activity-10](../Parsers/parserContent_cef-o365-app-activity-10.md)
