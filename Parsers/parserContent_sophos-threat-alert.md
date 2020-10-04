@@ -23,4 +23,26 @@ Name = sophos-threat-alert
     """Status=({alert_severity}[^;]+)""",
   ]
 }
+
+{
+  Name = sophos-threat-alert-1
+  Vendor = Sophos
+  Product = Sophos Endpoint Protection
+  Lms = Direct
+  DataType = "alert"
+  TimeFormat = "yyyy-MM-dd HH:mm:ss"
+  Conditions = [ """, ThreatName="""", """, ActionTakenName="""", """, ThreatTypeName="""" ]
+  Fields = [
+    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """EventID="({alert_id}\d+)""",
+    """FirstDetectedAt="({time}\d\d\d\d\-\d\d-\d\d \d\d:\d\d:\d\d)""",
+    """ThreatTypeName="({alert_type}[^"]+)""",
+    """ThreatName="({alert_name}[^"]+)""",
+    """ActionTakenName="({outcome}[^"]+)""",
+    """FullFilePath="C:\\Users\\({user}[^\\]+)""",
+    """UserName="((NT AUTHORITY|({domain}[^\\\s"]+))\\+)?(SYSTEM|({user}[^\\\s"]+))""",
+    """ComputerName="({src_host}[\w\-.]+)""",
+    """FullFilePath="({malware_url}[^"]+?({malware_file_name}[^"\\]+))"""",
+  ]
+}
 ```
