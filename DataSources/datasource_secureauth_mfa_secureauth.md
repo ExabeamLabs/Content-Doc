@@ -26,3 +26,4 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [secureauth-auth-successful](../Parsers/parserContent_secureauth-auth-successful.md)
 * [secureauth-auth-successful-1](../Parsers/parserContent_secureauth-auth-successful-1.md)
+* [secureauth-system-session-start](../Parsers/parserContent_secureauth-system-session-start.md)

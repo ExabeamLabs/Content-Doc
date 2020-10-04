@@ -27,6 +27,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-checkpoint-alert](../Parsers/parserContent_cef-checkpoint-alert.md)
 * [cef-checkpoint-alert-1](../Parsers/parserContent_cef-checkpoint-alert-1.md)
 * [cef-checkpoint-alert-2](../Parsers/parserContent_cef-checkpoint-alert-2.md)
+* [cef-checkpoint-alert-3](../Parsers/parserContent_cef-checkpoint-alert-3.md)
 * [leef-checkpoint-alert-1](../Parsers/parserContent_leef-checkpoint-alert-1.md)
 * [leef-checkpoint-alert-2](../Parsers/parserContent_leef-checkpoint-alert-2.md)
 * [q-checkpoint-alert](../Parsers/parserContent_q-checkpoint-alert.md)

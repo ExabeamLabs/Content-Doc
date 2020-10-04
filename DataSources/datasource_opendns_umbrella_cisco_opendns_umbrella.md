@@ -7,7 +7,6 @@ Product: OpenDNS Umbrella
 
 _The following Use Cases can be operationalized using log data from this data source_
 
-* [Security Operations](../UseCases/usecase_security_operations.md)
 
 
 ### Event Types
@@ -24,6 +23,10 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-cisco-dns-response](../Parsers/parserContent_cef-cisco-dns-response.md)
 * [cef-cisco-dns-response-1](../Parsers/parserContent_cef-cisco-dns-response-1.md)
 * [cef-cisco-dns-response-sk4](../Parsers/parserContent_cef-cisco-dns-response-sk4.md)
+* [cef-cisco-dns-response-sk4-2](../Parsers/parserContent_cef-cisco-dns-response-sk4-2.md)
+* [cef-cisco-dns-response-sk4-3](../Parsers/parserContent_cef-cisco-dns-response-sk4-3.md)
+* [cef-cisco-dns-response-sk4-4](../Parsers/parserContent_cef-cisco-dns-response-sk4-4.md)
+* [cl-cisco-dns-response-sk4-4](../Parsers/parserContent_cl-cisco-dns-response-sk4-4.md)
 * [q-cisco-dns-response](../Parsers/parserContent_q-cisco-dns-response.md)
 * [s-opendns-dns-response](../Parsers/parserContent_s-opendns-dns-response.md)
 * [s-opendns-dns-response-1](../Parsers/parserContent_s-opendns-dns-response-1.md)

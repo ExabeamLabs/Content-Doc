@@ -14,7 +14,6 @@ _The following Use Cases can be operationalized using log data from this data so
 * [Executives](../UseCases/usecase_executives.md)
 * [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)
 * [Security Alert](../UseCases/usecase_security_alert.md)
-* [Security Operations](../UseCases/usecase_security_operations.md)
 * [Service Account Activity](../UseCases/usecase_service_account_activity.md)
 
 
@@ -35,6 +34,9 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [s-tanium-cli-execution](../Parsers/parserContent_s-tanium-cli-execution.md)
 * [s-tanium-security-alert](../Parsers/parserContent_s-tanium-security-alert.md)
+* [s-tanium-security-alert-2](../Parsers/parserContent_s-tanium-security-alert-2.md)
+* [s-tanium-security-alert-3](../Parsers/parserContent_s-tanium-security-alert-3.md)
+* [s-tanium-security-alert-4](../Parsers/parserContent_s-tanium-security-alert-4.md)
 * [tanium-auth](../Parsers/parserContent_tanium-auth.md)
 * [tanium-dns-response](../Parsers/parserContent_tanium-dns-response.md)
 * [tanium-process-created](../Parsers/parserContent_tanium-process-created.md)

@@ -46,3 +46,4 @@ _The following Parsers can be operationalized using log data from this data sour
 * [q-oam-app-login](../Parsers/parserContent_q-oam-app-login.md)
 * [q-oam-auth-successful](../Parsers/parserContent_q-oam-auth-successful.md)
 * [s-oam-app-login](../Parsers/parserContent_s-oam-app-login.md)
+* [s-oam-app-login-1](../Parsers/parserContent_s-oam-app-login-1.md)
