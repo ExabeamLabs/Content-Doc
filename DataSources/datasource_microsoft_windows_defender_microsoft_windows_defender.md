@@ -37,8 +37,3 @@ _The following Parsers can be operationalized using log data from this data sour
 * [rsa-nic-scep-alert](../Parsers/parserContent_rsa-nic-scep-alert.md)
 * [s-scep-alert](../Parsers/parserContent_s-scep-alert.md)
 * [s-scep-epp-alert](../Parsers/parserContent_s-scep-epp-alert.md)
-* [windows-defender-endpoint-1](../Parsers/parserContent_windows-defender-endpoint-1.md)
-* [windows-defender-endpoint-2](../Parsers/parserContent_windows-defender-endpoint-2.md)
-* [windows-defender-endpoint-3](../Parsers/parserContent_windows-defender-endpoint-3.md)
-* [windows-defender-endpoint-4](../Parsers/parserContent_windows-defender-endpoint-4.md)
-* [windows-defender-endpoint-5](../Parsers/parserContent_windows-defender-endpoint-5.md)

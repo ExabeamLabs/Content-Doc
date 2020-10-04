@@ -1,41 +1,36 @@
 #### Parser Content
 ```Java
 {
-Name = cef-vontu-dlp-alert
-  Vendor = Symantec
-  Product = Symantec DLP
-  Lms = ArcSight
-  DataType = "dlp-alert"
-  TimeFormat = "epoch"
-  Conditions = [ """CEF:""", """|Vontu|Monitor""", """catdt=Content Security""" ]
-  Fields = [
-    """([^\|]*\|){5}({alert_name}[^\|]+)""",
-    """\Wrt=({time}\d+)""",
-    """\Wdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\Wdvchost=({host}[\w\-.]+)""",
-    """\WeventId=({alert_id}\d+)""",
-    """\Wmsg=({alert_type}.+?)\s*(\w+=|$)""",
-    """\WdeviceSeverity=({alert_severity}\d+)""",
-    """\WsourceDnsDomain=({domain}.+?)\s*(\w+=|$)""",
-    """\Wcs1=(?:({user}[^\s]+?)|({user_fullname}\w+(?:\s+\w+)+))(\s+\w+=|\s*$)""",
-    """\Wsuser=(?:N\/A|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({user_email}[^\s@]+@[^\s@]+))""",
-    """\Wsuser=\w+:\/+({domain}[^\/\\=]+)[\\\/]+(?:({user}[^\\\/\s]+?)|({user_fullname}\w+(?:\s+\w+)+))(\s+\w+=|\s*$)""",
-    """\WdestinationDnsDomain=({top_domain}.+?)\s*(\w+=|$)""",
-    """\Wduser=(?:N\/A|({target}.+?))\s*(\w+=|$)""",
-    """\Wsrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\Wshost=(?:N\/A|({src_host}.+?))\s*(\w+=|$)""",
-    """\Wfname=(?:N\/A|({file_name}.+?))\s*(\w+=|$)""",
-    """\Wcs2=(None|({action}.+?))(\s+\w+=|\s*$)""",
-    """\Wrequest=(unknown|N/A|({target}.+?))(\s+\w+=|\s*$)""",
-    """\Wapp=(|({protocol}.+?))(\s+\w+=|\s*$)""",
-    """\Wcs4=(|({subject}.+?))(\s+\w+=|\s*$)""",
-  ]
-  DupFields = ["user_email->sender", "target->recipients"]
-  SOAR {
-    IncidentType = "dlp"
-    DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "user->dlpUser", "alert_name->dlpPolicy", "alert_severity->sourceSeverity", "host->dlpDeviceName", "file_name->dlpFileName", "alert_type->dlpActionTaken"]
-    NameTemplate = """Vontu DLP Alert ${alert_name} found"""
-    ProjectName = "SOC"
-    EntityFields = [
-      {EntityType="device", Name="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]}
+Name = cef-vontu-dlp-alert-2
+    Vendor = Symantec
+    Product = Symantec DLP
+    Lms = Direct
+    DataType = "dlp-alert"
+    Conditions = [ """Symantec|DLP""","""POLICY=""" ]
+    TimeFormat = "yyyy-MM-dd HH:mm:ss"
+    Fields = [
+      """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
+      """OCCURRED_ON=({time}\w+\s+\d+,\s*\d+\s+\d+:\d+:\d+\s+(AM|PM|am|pm))""",
+      """exabeam_host=({host}[^\s]+)""",
+      """({host}\S+)\s+\|?Symantec\|DLP""",
+      """INCIDENT=({alert_id}\d+)\|""",
+      """\|\s*POLICY=({alert_name}[^\|]+)""",
+      """\|\s*SEVERITY=({alert_severity}[^\|]+)""",
+      """\|\s*PROTOCOL=({protocol}[^\|]+)""",
+      """\|\s*BLOCKED=(None|({outcome}\w+))""",
+      """\|\s*SENDER=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+      """\|\s*ENDPOINT_USERNAME=(N\/A|(({domain}[^\s\\\|@]+)\\+)?({user}[^\s\\\|@]+))\|""",
+      """\|\s*SENDER=(N\/A|({user_email}[^\\\s\|@]+@[^\\\s\|]+))\|""",
+      """\|\s*RECIPIENTS=+(N\/A|({target}[^\|]+))""",
+      """\|\s*SUBJECT=+\s*(N\/A|({subject}[^\|]+?))\s*\|""",
+      """\|\s*ATTACHMENTS=({file_name}[^\|]+?)\s*(\||$)"""
+    ]
+    DupFields = [ "subject->additional_info" , "user_email->sender", "target->recipients"]
+    SOAR {
+      IncidentType = "dlp"
+      DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "user->dlpUser", "alert_name->dlpPolicy", "alert_severity->sourceSeverity", "protocol->dlpProtocol", "outcome->dlpActionTaken"]
+      NameTemplate = """Symantec DLP Alert ${alert_name} found"""
+      ProjectName = "SOC"
+      EntityFields = [
+        {EntityType="user", Name="windows_id", Fields=["user->windows_id"]}
 ```

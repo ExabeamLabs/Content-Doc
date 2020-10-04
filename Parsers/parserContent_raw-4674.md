@@ -1,20 +1,18 @@
 #### Parser Content
 ```Java
 {
-Name = raw-4674
+Name = raw-4674-1
     Vendor = Microsoft
     Product = Microsoft Windows
     Lms = Direct
     DataType = "windows-privileged-access"
     TimeFormat = "MMM dd HH:mm:ss yyyy"
-    Conditions = ["An operation was attempted on a privileged object"]
+    Conditions = ["An operation was attempted on a privileged object", "dhn"]
     Fields = [
-      """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
       """({event_name}An operation was attempted on a privileged object)""",
-      """({host}[\w\-.]+)\s+({time}\d+\/\d+\/\d+\s+\d+:\d+:\d+\s+(am|AM|pm|PM))""",
       """\scategoryOutcome=(|/({outcome}.+?))(\s+\w+=|\s*$)""",
       """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
-      """({outcome}(?i)(((audit|success|failure)( |_)(success|audit|failure))|information))\s*(\s|\t|,|#\d+|<[^>]+>)\s*({host}[^=]+?)\s*(\s|\t|,|#\d+|<[^>]+>)\s*""",
+      """"dhn":"({host}[^-"]+)""",
       """Event Type\s*:\s*({outcome}.+?)\.\s+Log Type""",
       """Type\s*=\s*"({outcome}[^";]+)"""",
       """Keywords=({outcome}.+?);?\s*Message=""",

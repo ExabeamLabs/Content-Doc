@@ -1,28 +1,28 @@
 #### Parser Content
 ```Java
 {
-Name = cef-symantec-email-alert
+Name = cef-symantec-email-alert-1
     Vendor = Symantec
     Product = Symantec Email Security.cloud
     Lms = ArcSight
-    DataType = "dlp-email-alert"
-    TimeFormat = "epoch"
-    Conditions = [ """CEF""", """|Symantec|Symantec Email Security.cloud|""" ]
+    DataType = "security-alert"
+    TimeFormat = "yyyy-MM-dd HH:mm:ss"
+    Conditions = [ """destinationServiceName=Symantec Email Security.cloud""", """CEF""", """|security-threat-detected|"""]
     Fields = [
-      """"logging_device_ip ":"({host}[^"]+)"""",
-      """\Wrt=({time}\d+)""",
-      """"sender_ip":"({src_ip}[^"]+)"""",
-      """"header_subject":"({subject}[^"]+)""",
-      """"smtp_to":\[({recipients}"({recipient}[^"@]+@({external_domain_recipient}[^"@]+)).*?)\]""",
-      """\Wsuser=({sender}[^=@]+@({external_domain_sender}[^\s]+))""",
-      """"size":"?({bytes}\d+)""",
-      """\Wsuser=({user_email}\S+)""",
-      """"dkim":"({outcome}[^"]+)""",
-      """"event_id":({alert_id}\d+)""",
-      """"severity_id":({alert_severity}\d+)""",
-      """"feature_name":"({alert_type}[^"]+)"""",
-      """"threat":\{"name":"({alert_name}[^"]+)""",
-      """"product_name":"({product_name}[^"]+)"""",
+      """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+      """exabeam_host=({host}[^\s]+)""",
+      """"severity"+:"+({alert_severity}[^"]+)"""",
+      """cat=({alert_type}[^\s]+)\s""",
+      """destinationServiceName=({service}.+?)\s*\w+=""",
+      """dpriv=({alert_type}.+?)\s*\w+=""",
+      """dproc=(N\/A|({process_name}.+?))\s*\w+=""",
+      """msg=({alert_name}.+?)\s*\w+=""",
+      """requestContext=({target}.+?)\s*\w+=""",
+      """requestClientApplication=({app}.+?)\s*\w+=""",
+      """"headerTo":\[({recipients}[^\]]+)\],""",
+      """"headerTo":\["({recipient}[^"]+)"""",
+      """"subject":"({subject}[^"]+)",""",
+      """"messageSize":({bytes}\d+)""",
     ]
     DupFields = [ "recipient->external_address" ]
   }

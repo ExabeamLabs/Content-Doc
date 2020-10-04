@@ -46,6 +46,7 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [cef-checkpoint-auth-successful](../Parsers/parserContent_cef-checkpoint-auth-successful.md)
 * [cef-checkpoint-auth-successful-1](../Parsers/parserContent_cef-checkpoint-auth-successful-1.md)
+* [cef-checkpoint-auth-successful-2](../Parsers/parserContent_cef-checkpoint-auth-successful-2.md)
 * [cef-checkpoint-events](../Parsers/parserContent_cef-checkpoint-events.md)
 * [cef-checkpoint-firewall-accept](../Parsers/parserContent_cef-checkpoint-firewall-accept.md)
 * [checkpoint-5599-network-connection](../Parsers/parserContent_checkpoint-5599-network-connection.md)

@@ -49,6 +49,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [raw-pan-failed-vpn-login](../Parsers/parserContent_raw-pan-failed-vpn-login.md)
 * [raw-pan-vpn-end](../Parsers/parserContent_raw-pan-vpn-end.md)
 * [raw-pan-vpn-end-2](../Parsers/parserContent_raw-pan-vpn-end-2.md)
+* [raw-pan-vpn-login](../Parsers/parserContent_raw-pan-vpn-login.md)
 * [raw-pan-vpn-set-ip](../Parsers/parserContent_raw-pan-vpn-set-ip.md)
 * [raw-pan-vpn-start-2](../Parsers/parserContent_raw-pan-vpn-start-2.md)
 * [s-pan-vpn-end](../Parsers/parserContent_s-pan-vpn-end.md)

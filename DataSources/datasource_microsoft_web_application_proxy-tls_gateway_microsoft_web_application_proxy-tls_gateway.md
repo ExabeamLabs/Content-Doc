@@ -29,6 +29,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [bluecoat-proxy-10](../Parsers/parserContent_bluecoat-proxy-10.md)
 * [bluecoat-proxy-12](../Parsers/parserContent_bluecoat-proxy-12.md)
 * [bluecoat-proxy-13](../Parsers/parserContent_bluecoat-proxy-13.md)
+* [bluecoat-proxy-15](../Parsers/parserContent_bluecoat-proxy-15.md)
 * [bluecoat-proxy-2](../Parsers/parserContent_bluecoat-proxy-2.md)
 * [bluecoat-proxy-3](../Parsers/parserContent_bluecoat-proxy-3.md)
 * [bluecoat-proxy-4](../Parsers/parserContent_bluecoat-proxy-4.md)
@@ -43,4 +44,5 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-iis-web-activity](../Parsers/parserContent_cef-iis-web-activity.md)
 * [iis-web-activity](../Parsers/parserContent_iis-web-activity.md)
 * [iis-web-activity-1](../Parsers/parserContent_iis-web-activity-1.md)
+* [json-bluecoat-proxy-web-activity](../Parsers/parserContent_json-bluecoat-proxy-web-activity.md)
 * [n-cef-bluecoat-proxy](../Parsers/parserContent_n-cef-bluecoat-proxy.md)

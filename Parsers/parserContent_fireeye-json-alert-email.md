@@ -29,4 +29,5 @@ Name = fireeye-json-alert-email
         NameTemplate = """FireEye Email MPS Alert ${alert_name} found"""
         ProjectName = "SOC"
   }
+}
 ```
