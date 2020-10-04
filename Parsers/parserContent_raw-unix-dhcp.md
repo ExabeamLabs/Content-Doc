@@ -1,20 +1,16 @@
 #### Parser Content
 ```Java
 {
-Name = raw-unix-dhcp
+Name = raw-unix-dhcp-forwardmap
   Vendor = Unix
   Product = Unix dhcpd
   Lms = Direct
   DataType = "dhcp"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ "dhcpd","DHCPREQUEST for" ]
-  Fields = [ 
-    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+  Conditions = [ "Added new forward map from " ]
+  Fields = [ """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[\w.\-]+)""",
-    """\w+\s+\d+\s+\d\d:\d\d:\d\d\s+({host}[\w\-.]+)\s+dhcpd""",
-    """DHCPREQUEST for ({dest_ip}[A-Fa-f:\d.]+)""",
-    """from ({dest_mac}[A-Fa-f:\d.]+)( \((?!\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})({dest_host}[^)]+)\))? via ({dest_interface}[^\s"]+)""",
-    """({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),Renewed,({dest_host}[^,]+)"""
+    """Added new forward map from ({dest_host}.+?) to ({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
   DupFields = [ "dest_host->user" ]
 }

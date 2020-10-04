@@ -14,4 +14,10 @@ Name = vmware-failed-auth
     """User (?:({domain}[^\\\s]+)\\+)?({user}[^\\\s]+)""",
    ]
 }
+
+${VMWareParserTemplates.vmware-id-manager}{
+  Name = vmware-id-manager-login
+  DataType = "app-login"
+  Conditions = [ """"objectType""", """vidm""", """"organizationId""", """\"LOGIN\""""]
+}
 ```

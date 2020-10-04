@@ -19,4 +19,27 @@ Name = nas-share-access-1
     """accessed the shared ({file_type}folder) \[({share_name}.+?)\]"""
   ]
 }
+
+{
+  Name = messagelabs-email-in
+  Vendor = Symantec
+  Product = Symantec DLP
+  Lms = Direct
+  DataType = "dlp-email-alert"
+  TimeFormat = "epoch"
+  Conditions = ["""emailInfo""","""HELOString""",""""isOutbound":false"""]
+  Fields = [
+    """exabeam_host=([^@=]+@\s*)?({host}[\w.\-]+)""",
+    """"mailProcessingStartTime"+:({time}\d+)""",
+    """"headerFrom":"({sender}[^"@]+@({external_domain}[^@"]+))",""",
+    """"subject":"({subject}[^"]+)",""",
+    """"messageSize":({bytes}\d+)""",
+    """"messageId":"({alert_id}[^"]+)",""",
+    """"headerTo":\[({recipients}[^\]]+)\],""",
+    """"headerTo":\["({recipient}[^"]+)"""",
+    """"isOutbound":({direction}[^,]+),""",
+    """"senderIp":"({src_ip}[a-fA-F\d.:]+)"""
+  ]
+  DupFields = [ "recipient->email_user", "recipient->user_email", "sender->external_address" ]
+}
 ```

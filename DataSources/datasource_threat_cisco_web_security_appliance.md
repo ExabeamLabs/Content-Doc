@@ -28,5 +28,6 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cisco-w3c-proxy](../Parsers/parserContent_cisco-w3c-proxy.md)
 * [cisco-wsa-squid-proxy](../Parsers/parserContent_cisco-wsa-squid-proxy.md)
 * [cws-proxy](../Parsers/parserContent_cws-proxy.md)
+* [elk-cisco-wsa-web-activity](../Parsers/parserContent_elk-cisco-wsa-web-activity.md)
 * [s-cws-proxy](../Parsers/parserContent_s-cws-proxy.md)
 * [syslog-cisco-wsa-web-activity](../Parsers/parserContent_syslog-cisco-wsa-web-activity.md)

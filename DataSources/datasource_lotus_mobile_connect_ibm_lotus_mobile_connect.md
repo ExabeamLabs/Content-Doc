@@ -34,4 +34,5 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [cef-ibm-auth-failed](../Parsers/parserContent_cef-ibm-auth-failed.md)
 * [cef-ibm-auth-successful](../Parsers/parserContent_cef-ibm-auth-successful.md)
+* [ibm-auth-successful](../Parsers/parserContent_ibm-auth-successful.md)
 * [lmc-vpn-login](../Parsers/parserContent_lmc-vpn-login.md)
