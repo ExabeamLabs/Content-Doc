@@ -20,4 +20,9 @@ Name = huawei-firewall
     """rule-name=({rule}[^.]+)"""
   ]
 }
+
+${HUAWEIParserTemplates.huawei-ids}{
+  Name = huawei-ids
+  Conditions = ["""SignName=""" , """SignId=""" , """Os=""" ,  """IPS/"""]
+}
 ```

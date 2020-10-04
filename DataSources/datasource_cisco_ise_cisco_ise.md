@@ -56,6 +56,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cisco-nac-failed-logon](../Parsers/parserContent_cisco-nac-failed-logon.md)
 * [cisco-nac-logon](../Parsers/parserContent_cisco-nac-logon.md)
 * [cisco-nac-logon-1](../Parsers/parserContent_cisco-nac-logon-1.md)
+* [cisco-nac-logon-3](../Parsers/parserContent_cisco-nac-logon-3.md)
 * [n-forwarded-cef-nac-logon](../Parsers/parserContent_n-forwarded-cef-nac-logon.md)
 * [q-cisco-acs-nac-logon](../Parsers/parserContent_q-cisco-acs-nac-logon.md)
 * [s-cisco-acs-app-activity](../Parsers/parserContent_s-cisco-acs-app-activity.md)

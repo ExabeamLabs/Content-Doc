@@ -74,7 +74,7 @@ ${OAMParserTemplates.oam-app-activity}{
 
 {
   Name = s-oam-app-login
-  Vendor = OAM
+  Vendor = Oracle
   Product = Oracle Access Manager
   Lms = Splunk
   DataType = "app-login"

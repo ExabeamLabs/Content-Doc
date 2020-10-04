@@ -7,6 +7,7 @@ Product: Windows PowerShell
 
 _The following Use Cases can be operationalized using log data from this data source_
 
+* [Account Creation and Management](../UseCases/usecase_account_creation_and_management.md)
 * [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
 * [Security Alert](../UseCases/usecase_security_alert.md)
 
@@ -26,11 +27,14 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-powershell-4102](../Parsers/parserContent_cef-powershell-4102.md)
 * [cef-powershell-4104](../Parsers/parserContent_cef-powershell-4104.md)
 * [cef-powershell-600](../Parsers/parserContent_cef-powershell-600.md)
+* [cef-windows-4104](../Parsers/parserContent_cef-windows-4104.md)
 * [powershell-4104](../Parsers/parserContent_powershell-4104.md)
+* [powershell-800](../Parsers/parserContent_powershell-800.md)
+* [powershell-800-syslog](../Parsers/parserContent_powershell-800-syslog.md)
 * [powershell-process-created](../Parsers/parserContent_powershell-process-created.md)
 * [powershell-process-created-1](../Parsers/parserContent_powershell-process-created-1.md)
 * [powershell-process-created-2](../Parsers/parserContent_powershell-process-created-2.md)
-* [powershell-process-created-3](../Parsers/parserContent_powershell-process-created-3.md)
+* [raw-4104](../Parsers/parserContent_raw-4104.md)
 * [s-windows-event-601](../Parsers/parserContent_s-windows-event-601.md)
 * [win-powershell-command](../Parsers/parserContent_win-powershell-command.md)
 * [xml-powershell-4104](../Parsers/parserContent_xml-powershell-4104.md)

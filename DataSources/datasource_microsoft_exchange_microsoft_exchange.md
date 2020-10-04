@@ -69,6 +69,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [exchange-dlp-email-out-sd](../Parsers/parserContent_exchange-dlp-email-out-sd.md)
 * [json-exchange-dlp-email-in](../Parsers/parserContent_json-exchange-dlp-email-in.md)
 * [json-exchange-dlp-email-out](../Parsers/parserContent_json-exchange-dlp-email-out.md)
+* [json-exchange-email](../Parsers/parserContent_json-exchange-email.md)
 * [outlook-exchange-app-activity-1](../Parsers/parserContent_outlook-exchange-app-activity-1.md)
 * [outlook-exchange-app-activity-2](../Parsers/parserContent_outlook-exchange-app-activity-2.md)
 * [outlook-exchange-app-activity-3](../Parsers/parserContent_outlook-exchange-app-activity-3.md)

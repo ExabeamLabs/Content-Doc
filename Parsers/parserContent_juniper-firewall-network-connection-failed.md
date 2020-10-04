@@ -7,4 +7,9 @@ Name = juniper-firewall-network-connection-failed
     """\Wreason=({failure_reason}.+?)\s+(\w+=|$)""",
   ]
 }
+
+${JuniperParserTemplates.cef-netscreen-network-connection}{
+  Name = cef-netscreen-network-connection-permit
+  Conditions = [ """CEF:""", """|NetScreen Traffic Permit|""" ]
+}
 ```

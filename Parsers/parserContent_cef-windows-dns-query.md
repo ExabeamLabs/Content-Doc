@@ -1,25 +1,11 @@
 #### Parser Content
 ```Java
 {
-Name = cef-windows-dns-query
-  Vendor = Microsoft
-  Product = Microsoft Windows
-  Lms = ArcSight
+Name = cef-windows-dns-query-1
   DataType = "dns-query"
-  IsHVF = true
-  TimeFormat = "epoch"
-  Conditions = [ """CEF:""", """|Microsoft|DNS Server|""", """app=DNS Query""" ]
-  Fields = [
-    """\Wrt=({time}\d+)""",
-    """\Wdvc=({host}[A-Fa-f:\d.]+)""",
-    """\Wdvchost=({host}[\w\-.]+)""",
-    """\Wapp=({event_code}DNS Query)""",
-    """\Wrequest=({query}.+?)\s+(\w+=|$)""",
-    """\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
-    """\Wcs1=({query_type}.+?)\s+(\w+=|$)""",
-    """\Wcs5=({query_flags}.+?)\s+(\w+=|$)""",
-    """\Wproto=({protocol}.+?)\s+(\w+=|$)""",
-    """\WdeviceSeverity=({dns_response_code}.+?)\s+(\w+=|$)""",
+  Conditions = [ """ cat=PACKET """, """   Q [""" ]
+  Fields = ${MicrosoftParserTemplates.cef-windows-dns-query-1.Fields}[
+    """\s+\S+\s+({protocol}\S+)\s+({activity}\S+)\s+({src_ip}[a-fA-F\d.:]+)\s+\S+\s+Q\s+\[\S+\s+(\s|({query_flags}.+?))\s+\S+\]\s+({query_type}\S+)\s+({query}.+?)\s"""
   ]
 }
 ```

@@ -31,3 +31,4 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [cef-symantec-alert](../Parsers/parserContent_cef-symantec-alert.md)
 * [symantec-web-activity](../Parsers/parserContent_symantec-web-activity.md)
+* [symantec-web-activity-1](../Parsers/parserContent_symantec-web-activity-1.md)
