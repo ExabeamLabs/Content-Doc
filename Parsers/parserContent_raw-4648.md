@@ -1,17 +1,17 @@
 #### Parser Content
 ```Java
 {
-Name = raw-4648
+Name = raw-4648-1
     Vendor = Microsoft
     Product = Microsoft Windows
     Lms = Direct
     DataType = "windows-account-switch"
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
-    Conditions = ["A logon was attempted using explicit credentials", "Target Server Name"]
+    Conditions = ["A logon was attempted using explicit credentials", "Target Server Name", "dhn"]
     Fields = [
-      """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
       """({event_name}A logon was attempted using explicit credentials)""",
       """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+      """"dhn":"({host}[^-"]+)""",
       """({event_code}4648)""",
       """Subject(:|=)[\s;]*Security ID(:|=)\s*({user_sid}.*?)[\s;]*Account Name(:|=)""",
       """Subject(:|=).+?Account Name(:|=)\s*(?:-|SYSTEM|({user}[^\s]*?))[\s;]*Account Domain(:|=)""",

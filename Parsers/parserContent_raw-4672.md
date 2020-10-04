@@ -1,24 +1,18 @@
 #### Parser Content
 ```Java
 {
-Name = raw-4672
+Name = raw-4672-1
     Vendor = Microsoft
     Product = Microsoft Windows
     Lms = Direct
     DataType = "windows-privileged-access"
-    TimeFormat = "MMM dd HH:mm:ss yyyy"
-    Conditions = ["Special privileges assigned to new logon", "Privileges"]
+    TimeFormat = "yyyy-MM-DD'T'HH:mm:ss"
+    Conditions = ["Special privileges assigned to new logon", "Privileges", "computer_name"]
     Fields = [
-      """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
-      """"host":"({host}[^"]+)""""
       """({event_name}Special privileges assigned to new logon)""",
-      """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """({host}[\w\-.]+)\s+({time}\d+\/\d+\/\d+\s+\d+:\d+:\d+\s+(am|AM|pm|PM))""",
       """\scategoryOutcome=(|/({outcome}.+?))(\s+\w+=|\s*$)""",
-      """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
-      """({outcome}(?i)(((audit|success|failure)( |_)(success|audit|failure))|information))\s*(\s|\t|,|#\d+|<[^>]+>)\s*({host}[^=]+?)\s*(\s|\t|,|#\d+|<[^>]+>)\s*""",
-      """({host}[^\s\/]+)\/Microsoft-Windows-Security-Auditing \(4672\)""",
-      """"dhn":"({host}[^-"]+)""",
+      """"computer_name\\*":\\*"({host}[^\\"]+)""",
+      """@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """Type\s*=\s*"({outcome}[^";]+)"""",
       """Keywords=({outcome}.+?);?\s*(\w+=)""",
       """<Computer>({host}[^<]+)</Computer>""",

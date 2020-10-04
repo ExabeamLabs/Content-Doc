@@ -5,4 +5,118 @@ Name = cef-ping-auth-failed
   DataType = "authentication-failed"
   Conditions = [ """CEF:""", """|Ping Identity|Ping Federate|""", """|AUTHN_ATTEMPT|""", """cs6=failure""" ]
 }
+
+${PingParserTemplates.cef-ping-events}{
+  Name = cef-ping-app-login
+  DataType = "app-login"
+  Conditions = [ """CEF:""", """|Ping Identity|Ping Federate|""", """|SSO|""", """cs6=success""" ]
+}
+
+${PingParserTemplates.cef-ping-events}{
+  Name = cef-ping-failed-app-login
+  DataType = "failed-app-login"
+  Conditions = [ """CEF:""", """|Ping Identity|Ping Federate|""", """|SSO|""", """cs6=failure""" ]
+}
+
+${PingParserTemplates.cef-ping-events-1}{
+  Name = cef-ping-auth-successful-1
+  DataType = "authentication-successful"
+  Conditions = [ """CEF:""", """|Ping Identity|PingFederate|""", """|AUTHN_ATTEMPT|""", """msg=success""" ]
+}
+
+${PingParserTemplates.cef-ping-events-1}{
+  Name = cef-ping-auth-failed-1
+  DataType = "authentication-failed"
+  Conditions = [ """CEF:""", """|Ping Identity|PingFederate|""", """|AUTHN_ATTEMPT|""", """msg=failure""" ]
+}
+
+${PingParserTemplates.cef-ping-events-1}{
+  Name = cef-ping-auth-successful-2
+  DataType = "authentication-successful"
+  Conditions = [ """CEF:""", """|Ping Identity|PingFederate|""", """|OAuth|OAuth|""", """msg=success""" ]
+}
+
+${PingParserTemplates.cef-ping-events-1}{
+  Name = cef-ping-auth-failed-2
+  DataType = "authentication-failed"
+  Conditions = [ """CEF:""", """|Ping Identity|PingFederate|""", """|OAuth|OAuth|""", """msg=failure""" ]
+}
+
+${PingParserTemplates.cef-ping-events-1}{
+  Name = cef-ping-auth-successful-3
+  DataType = "authentication-successful"
+  Conditions = [ """CEF:""", """|Ping Identity|PingFederate|""", """|STS|STS|""", """msg=success""" ]
+}
+
+${PingParserTemplates.cef-ping-events-1}{
+  Name = cef-ping-auth-failed-3
+  DataType = "authentication-failed"
+  Conditions = [ """CEF:""", """|Ping Identity|PingFederate|""", """|STS|STS|""", """msg=failure""" ]
+}
+
+${PingParserTemplates.cef-ping-events-1}{
+  Name = cef-ping-app-login-1
+  DataType = "app-login"
+  Conditions = [ """CEF:""", """|Ping Identity|PingFederate|""", """|SSO|""", """msg=success""" ]
+}
+
+${PingParserTemplates.cef-ping-events-1}{
+  Name = cef-ping-failed-app-login-1
+  DataType = "failed-app-login"
+  Conditions = [ """CEF:""", """|Ping Identity|PingFederate|""", """|SSO|""", """msg=failure""" ]
+}
+
+${PingParserTemplates.ping-events}{
+  Name = ping-auth-successful-1
+  DataType = "authentication-successful"
+  Conditions = [ """|AUTHN_ATTEMPT|""", """success|""" ]
+}
+
+${PingParserTemplates.ping-events}{
+  Name = ping-auth-failed-1
+  DataType = "authentication-failed"
+  Conditions = [ """|AUTHN_ATTEMPT|""", """failure|""" ]
+  Fields = ${PingParserTemplates.ping-events.Fields} [
+    """(\|\s*(AUTHN_ATTEMPT|OAuth|SSO)\s*\|)\s*([^\|]*\|){9}\s*(|({failure_reason}[^\|]*?))\s*\|""",
+  ]
+}
+
+${PingParserTemplates.ping-events}{
+  Name = ping-auth-successful-2
+  DataType = "authentication-successful"
+  Conditions = [ """|OAuth|""", """success|""" ]
+}
+
+${PingParserTemplates.ping-events}{
+  Name = ping-auth-failed-2
+  DataType = "authentication-failed"
+  Conditions = [ """|OAuth|""", """failure|""" ]
+  Fields = ${PingParserTemplates.ping-events.Fields} [
+    """(\|\s*(AUTHN_ATTEMPT|OAuth|SSO)\s*\|)\s*([^\|]*\|){9}\s*(|({failure_reason}[^\|]*?))\s*\|""",
+  ]
+}
+
+${PingParserTemplates.ping-events}{
+  Name = ping-app-login
+  DataType = "app-login"
+  Conditions = [ """|SSO|""", """success|""" ]
+}
+
+{
+  Name=raw-protectwise-alert
+  Vendor = ProtectWise
+  Product = NDR
+  Lms = Direct
+  DataType = "alert"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+  Conditions = [ """ protectwise-emitter[""" ]
+  Fields = [
+    """({time}\d{1,4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.[^\s.]+)""",
+    """\d\d:\d\d:\d\d\s({host}[^=]+?).\s<""",
+    """src\s-\s({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
+    """dst\s-\s({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
+    """classification:\s({alert_type}[^,]*)""",
+    """description:\s({alert_name}[^,]*)""",
+  ]
+ }
 ```

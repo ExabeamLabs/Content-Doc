@@ -1,17 +1,18 @@
 #### Parser Content
 ```Java
 {
-Name = raw-5145
+Name = raw-5145-1
     Vendor = Microsoft
     Product = Microsoft Windows
     Lms = Direct
     DataType = "share-access"
     TimeFormat = "epoch_sec"
-    Conditions = ["""A network share object was checked to see whether client can be granted desired access""", """Account Name:"""]
+    Conditions = ["""A network share object was checked to see whether client can be granted desired access""", """Account Name:""", "EventTime", "Hostname"]
     Fields = [
       """({event_name}A network share object was checked to see whether client can be granted desired access)""",
       """({event_code}5145)""",
-      """({host}[\w\-.]+)\s+(?i)((audit|success)( |_)(success|audit))""",
+      """"Hostname":"({host}[^"]+)""",
+      """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """Logon ID:\s*((\\)[rnt])*({logon_id}\S+?)((\\)[rnt])*\s*Network Information:""",
       """Account Name:\s*((\\)[rnt])*({user}\S+?)((\\)[rnt])*\s*Account Domain:""",
       """Account Domain:\s*((\\)[rnt])*({domain}\S+?)((\\)[rnt])*\s*Logon ID:""",

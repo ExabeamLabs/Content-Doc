@@ -35,3 +35,4 @@ _The following Parsers can be operationalized using log data from this data sour
 * [carbonblack-edr-filemod](../Parsers/parserContent_carbonblack-edr-filemod.md)
 * [carbonblack-edr-netconn](../Parsers/parserContent_carbonblack-edr-netconn.md)
 * [carbonblack-edr-procstart](../Parsers/parserContent_carbonblack-edr-procstart.md)
+* [carbonblack-edr-procstart-1](../Parsers/parserContent_carbonblack-edr-procstart-1.md)
