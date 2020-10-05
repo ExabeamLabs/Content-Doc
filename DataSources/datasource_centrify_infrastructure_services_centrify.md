@@ -26,5 +26,6 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-unix-exe-1](../Parsers/parserContent_cef-unix-exe-1.md)
 * [cef-unix-process-1](../Parsers/parserContent_cef-unix-process-1.md)
 * [cef-unix-user-cmd-1](../Parsers/parserContent_cef-unix-user-cmd-1.md)
+* [centrify-process](../Parsers/parserContent_centrify-process.md)
 * [unix-priv-command-5](../Parsers/parserContent_unix-priv-command-5.md)
 * [unix-process-created](../Parsers/parserContent_unix-process-created.md)

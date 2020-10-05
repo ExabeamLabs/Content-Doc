@@ -1,20 +1,17 @@
 #### Parser Content
 ```Java
 {
-Name = s-skysea-web-activity-1
+Name = s-skysea-web-activity
   Vendor = SkySea
   Product = ClientView
   Lms = Splunk
   DataType = "web-activity"
+  IsHVF = true
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
-  Conditions = [""",Webアクセス,""", """,Web書き込み,"""]
+  Conditions = [ """,Webアクセス,""" ]
   Fields = [
-    """({host}[^,]+),(({src_ip}[A-Fa-f:\d.]+)|({src_host}[\w\-.]+)),[^,]*,({user}[^,]*),[^,]*,[^,]*,[^,]*,[^,]*,Webアクセス""",
-    """({time}\d\d\d\d\/\d\d\/\d\d \d\d:\d\d:\d\d)""",
-    """,Webアクセス,[^,]*,[^,]*,({full_url}(({protocol}[^:\\\/\s,"]+):[\\\/]+)?({web_domain}[^\\\/\s:,"]+)?(:({dest_port}\d+))?({uri_path}\/[^,]*)?)""",
-    """Web書き込み,([^,]*,){23}({uri_query}[^,]*),""",
-    """({method}Web書き込み)""",
+    """({host}[\w\-.]+),\d+,({src_host}[\w\-.]+),({src_ip}[A-Fa-f:\d.]+),[^,]*,({user}[^\s,]+),({user_fullname}[^,\(\（]+(\（[^\）,]+\）)?)({department}[^,]+)[^,]*,({time}\d+\/\d+\/\d+ \d+:\d+:\d+),Webアクセス,([^,]*,){2}(-|({full_url}(({protocol}[^:\\\/\s,"]+):[\\\/]+)?({web_domain}[^\\\/\s:,"]+)(:\d+)?({uri_path}\/[^\s\?",]*)?({uri_query}\?[^"\s,]*)?)),([^,]*,){5}({action}[^,]+)""",
+    """,Webアクセス,([^,]*,){2}[^\s,"]*?({top_domain}[^\/\.\s]+(?i)(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)""",
   ]
-  DupFields = ["web_domain->top_domain", "method->action"]
 }
 ```
