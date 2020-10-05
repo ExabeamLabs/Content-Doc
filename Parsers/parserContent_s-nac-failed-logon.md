@@ -1,40 +1,33 @@
 #### Parser Content
 ```Java
 {
-Name = s-nac-failed-logon-1
-  Conditions = [ """Device-Administration: """, """ failed""" ]
-}，
-
-${CiscoParsersTemplates.s-nac-logon}{
-  Name = s-nac-failed-logon-2
-  Conditions = [ """CISE_Failed_Attempts""", """ failed""" ]
-}，
-
-{
-  Name = s-nac-logon-2
+Name = s-nac-failed-logon
   Vendor = Cisco
   Product = Cisco ISE
-  Lms = Direct
-  DataType = "nac-logon"
-  TimeFormat = "epoch"
-  Conditions = [ """CISE_Passed_Authentications""", """|Cisco|Cisco ISE|""", """CEF:""" ]
+  Lms = Splunk
+  DataType = "nac-failed-logon"
+  TimeFormat = "yyyy-MM-dd HH:mm:ss"
+  Conditions = [ "CISE_Failed_Attempts", "since user has entered the wrong password" ]
   Fields = [
-    """\Wrt=({time}\d+)""",
     """exabeam_host=({host}[^\s]+)""",
-    """ahost=({host}[^\s]+)"""
-    """shost=({src_host}[^\s]+)""",
-    """({event_name}CISE_Passed_Authentications)""",
-    """suser=({user}[^\s]+)""",
-    """dhost=({dest_host}[^\s]+)""",
-    """dst=({dest_ip}[A-Fa-f:\d.]+)""",
-    """dst=({auth_server}[A-Fa-f:\d.]+)""",
-    """dpt=({dest_port}\d+)""",
-    """Cisco ISE\|(|[^\|]+)\|({event_code}\d+)\|""",
-    """deviceSeverity=({severity}[^\s]+)""",
-    """cs1=({auth_method}[^\s]+)""",
-    """ad.User=({user}[^\s]+)""",
-    """NetworkDeviceName\\*=({network}[^,\s]+)"""
+    """({host}[\w\-.]+)\s+CISE_Failed_Attempts""",
+    """\d+\s+({time}\d\d\d\d\-\d\d\-\d\d \d+:\d+:\d+)""",
+    """, UserName=(({user_type}host)\/)?(({domain}[^\s\\]+)\\+)?(({user_email}[^,@]+@[^,@]+)|({user}[^,]+))""",
+    """, Calling-Station-ID=({dest_host}[^,]+)""",
+    """, Called-Station-ID=({src_host}[^,]+):({ssid}[^,]+)""",
+    """, AD-Host-Resolved-Identities=({dest_host}[^@,]+)""",
+    """, AD-Host-Resolved-Identities=({computer_name}[^@,]+)""",
+    """, (NetworkDeviceName|NetworkDeviceProfileName)=({network}[^,]+)""",
+    """, Device IP Address=({auth_server}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """, Device IP Address=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """, Framed-IP-Address=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """, DestinationIPAddress=({dest_ip}[a-fA-F\d.:]+)""",
+    """, NetworkDeviceGroups=Location#All Locations#({location}[^,]+)""",
+    """, FailureReason=({result_code}\d+)""",
+    """, FailureReason=\d+ ({failure_reason}[^,]+)""",
+    """(?i)(MacAddress)=({mac_address}[^,\s]+),""",
+    """, SSID=({ssid}[^,]+)""",
+    """, AuthenticationIdentityStore=({auth_server}[^,]+)""",
   ]
-  DupFields = ["dest_host->auth_server"]
 }
 ```

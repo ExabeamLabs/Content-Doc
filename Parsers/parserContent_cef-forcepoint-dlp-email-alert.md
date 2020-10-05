@@ -1,36 +1,34 @@
 #### Parser Content
 ```Java
 {
-Name = cef-forcepoint-dlp-email-alert-out
+Name = cef-forcepoint-dlp-email-alert
   Vendor = Forcepoint
   Product = Forcepoint DLP
   Lms = ArcSight
   DataType = "dlp-email-alert"
   TimeFormat = "epoch"
-  Conditions = [ "|Forcepoint|Forcepoint DLP|", "sourceServiceName=", "sourceServiceName=SMTP" ]
+  Conditions = [ """CEF:""", """|Forcepoint|AP-EMAIL|""", """|Message|Message|""" ]
   Fields = [
     """\Wrt=({time}\d+)""",
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """\Wdvc=(N\/A|({host}[A-Fa-f:\d.]+))""",
-    """\Wdvchost=(N\/A|({host}[\w\-.]+))""",
-    """({host}[\w\-.]+)\s+CEF:""",
-    """\Wact=({outcome}.+?)(\s\-\s|\s+[\w\.]+=|$)""",
-    """\Wduser=(N\/A|({recipient}[^\s;@]+@({external_domain}[^\s;@]+)))""",
-    """\Wfname=\s*({attachment}[^;]+?)(;.*?)?\s*([\w\.]+=|$)"""
-    """\Wfname=\s*({attachments}.+?)\s*([\w\.]+=|$)"""
-    """\Wmsg=\s*({subject}.+?)(\s+\-\s|\s+[\w\.]+=|$)""",
-    """\Wcat=({alert_name}.+?)(\s\-\s|\s+[\w\.]+=|$)""",
-    """\WsourceServiceName=({alert_type}.+?)\s+(on |\w+=)""",
-    """\WloginName=(?:N\/A|(({domain}[^\\,]+)\\+)?({user}[^\\\s,]+))(\s\-\s|\s+[\w\.]+=|$)""",
-    """\WsourceIp=(?:N\/A|({src_ip}[A-Fa-f:\d.]+))""",
-    """\WseverityType=({alert_severity}[^\s]+)""",
-    """\WsourceHost=(?:N\/A|({src_host}[\w\-.]+))""",
-    """\WdestinationHosts=(?:N\/A|(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]+)))""",
-    """\Wsuser=(({domain}[^\\\s,@=]+)\\+)?({user}[^\\\s,@=]+)\s+(\w+=|$)""",
-    """\Wsuser=(Executive Inquiry Mailbox|({user_fullname}[^\\\s,@=]+?\s+[^\\,@=]+?))\s+(\w+=|$)""",
-    """\Wsuser=({user_lastname}[^\\,=]+?),\s+({user_firstname}[^\\,=]+?)\s+(\w+=|$)""",
-    """\Wsuser=({user_email}[^\\\s,@=]+?@[^\\\s,@=]+?)\s+(\w+=|$)""",
+    """\Wdvc=({host}[\d.]+)""",
+    """\Wdvchost=({host}[\w\-.]+)""",
+    """\WeventId=({alert_id}\d+)""",
+    """\Wmsg=\s*({subject}.+?)\s+(\w+=|$)""",
+    """\Wout=({bytes}\d+)""",
+    """\Wsuser=({sender}[^\s]+)""",
+    """\Wsuser=({external_address}[^\s]+).+?cs6=Inbound""",
+    """\Wcs6=Inbound.+?suser=({external_address}[^\s]+)""",
+    """\WsourceDnsDomain=({external_domain}[^\s]+).+?cs6=Inbound""",
+    """\Wcs6=Inbound.+?sourceDnsDomain=({external_domain}[^\s]+)""",
+    """\Wduser=({recipients}.+?)\s+(\w+=|$)""",
+    """\Wduser=({recipient}[^\s,]+)""",
+    """\Wduser=({external_address}[^\s,]+).+?cs6=Outbound""",
+    """\Wcs6=Outbound.+?duser=({external_address}[^\s,]+)""",
+    """\WdestinationDnsDomain=({external_domain}[^\s]+).+?cs6=Outbound""",
+    """\Wcs6=Outbound.+?destinationDnsDomain=({external_domain}[^\s]+)""",
+    """\Wfname=({attachments}.*?)\s+(\w+=|$)""",
+    """\Wcs6=({direction}.+?)\s+(\w+=|$)""",
+    """CEF:([^\|]*\|){6}({alert_severity}[^\|]+)""",
   ]
-  DupFields = [ "recipient->external_address" ]
 }
 ```

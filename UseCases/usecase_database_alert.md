@@ -5,10 +5,10 @@ Use Case: Database Alert
 
 _The following list of Supported Exabeam Data Sources power this use case:_
 
-* [Imperva CounterBreach](../DataSources/datasource_counterbreach_imperva_counterbreach.md)
-* [IBM Infosphere Guardium](../DataSources/datasource_ibm_infosphere_guardium_ibm_infosphere_guardium.md)
-* [McAfee MDAM](../DataSources/datasource_mdam_mcafee_mdam.md)
-* [Imperva SecureSphere](../DataSources/datasource_securesphere_imperva_securesphere.md)
+* [CounterBreach](../DataSources/datasource_counterbreach_imperva.md)
+* [Imperva SecureSphere](../DataSources/datasource_imperva_securesphere_imperva.md)
+* [Infosphere Guardium](../DataSources/datasource_infosphere_guardium_ibm.md)
+* [MDAM](../DataSources/datasource_mdam_mcafee.md)
 
 
 ### Exabeam Event Types
