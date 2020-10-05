@@ -1,8 +1,8 @@
 #### Parser Content
 ```Java
 {
-Name = cef-checkpoint-vpn-login-2
-  DataType = "vpn-login"
-  Conditions = [ """CEF:""", """|Check Point|Identity Awareness|""", """act=Log In""", """VPN""", """auth_status=Successful Login""" ]
+Name = cef-checkpoint-vpn-login
+  DataType = "vpn-start"
+  Conditions = [ """CEF:""", """|Check Point|Mobile Access Blade|""", """|RAS Log In|""" ]
 }
 ```

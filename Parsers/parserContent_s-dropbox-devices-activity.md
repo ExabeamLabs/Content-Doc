@@ -22,9 +22,4 @@ Name = s-dropbox-devices-activity
       """"info_dict":\s*\{[^\}]*?"name":\s*"({app}[^"]+)""""
     ]
   }
-
-${DropboxParserTemplates.cef-dropbox-activity}{
-  Name = cef-dropbox-app-activity-1
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """"file_operations"}""" ]
-}
 ```
