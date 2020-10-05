@@ -25,14 +25,4 @@ Name = remotelyanywhere-remote-login
   ]
   DupFields = [ "event_name->event_type" ]
 }
-
-${SymantecParserTemplates.symantec-critical-sys-protection}{
-  Name = symantec-local-logon-failed
-  DataType = "local-logon"
-  Conditions = [ """SVA_IP_ADDRESS: """, """ USER_NAME:""", """Failed Login""" ]
-  Fields = ${SymantecParserTemplates.symantec-critical-sys-protection.Fields} [
-    """({outcome}(F|f)ailed)""",
-    """({event_name}Failed Login)"""
-  ]
-}
 ```

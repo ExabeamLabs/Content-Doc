@@ -1,29 +1,18 @@
 #### Parser Content
 ```Java
 {
-Name = unix-auth-failed-2
-  Product = Unix
-  DataType = "authentication-failed"
-  Conditions = [ """[][][""", """ pam_unix(sudo""", """ authentication failure""" ]
-  Fields = ${UnixParserTemplates.unix-events.Fields}[
-    """\sruser=(|({account}.+?))(\s+\w+=|\s*$)""",
-    """\suser=(|({user}.+?))(\s+\w+=|\s*$)""",
-    """\suid=(|({user_id}.+?))(\s+\w+=|\s*$)""",
-  ]
-}
-
-{
-  Name = unix-failed-logon-7
+Name = unix-auth-failed
   Vendor = Unix
   Product = Unix
   Lms = Direct
-  DataType = "failed-logon"
+  DataType = "authentication-failed"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ """Disconnecting: Too many authentication failures for""" ]
+  Conditions = [ """ unix_chkpwd[""", """]: password check failed for """ ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """({host}[\w.\-]+)\s+sshd\[""",
-    """({event_name}Too many authentication failures for ({user}\S+))""",
+    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """\w+\s+\d+\s+\d+:\d+:\d+\s+({host}[\w\-.]+)\s+""",
+    """password check failed for user \(({user}[^\s\)]+)""",
   ]
 }
 ```

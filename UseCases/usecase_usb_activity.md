@@ -5,15 +5,13 @@ Use Case: USB Activity
 
 _The following list of Supported Exabeam Data Sources power this use case:_
 
-* [Dtex](../DataSources/datasource_dtex_dtex.md)
+* [DTEX InTERCEPT](../DataSources/datasource_dtex_intercept_dtex_systems.md)
+* [Data Protection Suite (DPS)](../DataSources/datasource_data_protection_suite_(dps)_safend.md)
 * [InfoWatch](../DataSources/datasource_infowatch_infowatch.md)
-* [LanScope Cat](../DataSources/datasource_lanscope_cat_lanscope_cat.md)
-* [Lumension](../DataSources/datasource_lumension_lumension.md)
-* [McAfee Endpoint Security](../DataSources/datasource_mcafee_endpoint_security_mcafee_endpoint_security.md)
-* [Safend Data Protection Suite (DPS)](../DataSources/datasource_safend_data_protection_suite_(dps)_safend_data_protection_suite_(dps).md)
-* [Sophos Endpoint Protection](../DataSources/datasource_sophos_endpoint_protection_sophos_endpoint_protection.md)
-* [Symantec DLP](../DataSources/datasource_symantec_dlp_symantec_dlp.md)
-* [Trend Micro OfficeScan](../DataSources/datasource_trend_micro_officescan_trend_micro_officescan.md)
+* [LanScope Cat](../DataSources/datasource_lanscope_cat_lanscope.md)
+* [McAfee DLP](../DataSources/datasource_mcafee_dlp_mcafee.md)
+* [OfficeScan](../DataSources/datasource_officescan_trend_micro.md)
+* [Sophos Endpoint Protection](../DataSources/datasource_sophos_endpoint_protection_sophos.md)
 
 
 ### Exabeam Event Types
