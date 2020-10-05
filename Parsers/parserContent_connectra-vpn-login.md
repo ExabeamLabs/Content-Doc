@@ -1,25 +1,23 @@
 #### Parser Content
 ```Java
 {
-Name = connectra-vpn-login-1
+Name = connectra-vpn-login
   Vendor = Check Point Software
-  Product = Check Point Security Gateway Virtual Edition (vSEC)
+  Product = Check Point Security Gateway
   Lms = Direct
   DataType = "vpn-start"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
-  Conditions = [ """ProductName: Connectra;""", """ip changed""" ]
+  TimeFormat = "ddMMMyyyy HH:mm:ss"
+  Conditions = [ """|product=Connectra|""", """|event_type=Login|""", """|status=Success|""" ]
   Fields = [
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+((\+|\-)\d\d:\d\d)?)""",
-    """({host}[\w.\-]+)\s+CPLogToSyslog:""",
-    """\WOriginSicName:\s*CN=({host}[\w.\-]+),O="""
-    """\WAction:\s*(|({action}[^;]+?));""",
-    """\Wuser:\s*({user}[^;\(\)]+?)\s*;""",
-    """\Wuser:\s*({user_fullname}.+?)\s*\(({account}.+?)\)""",
-    """\Wsrc:\s*(|({src_ip}[a-fA-F\d.:]+));""",
-    """\WProductName:\s*(|({app}[^;]+?));""",
-    """\Wassigned_IP::\s*({dest_ip}[a-fA-F\d.:]+)""",
-    """\,orig=({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """\|(U|u)ser=({user_firstname}[^,@\|]+),\s*({user_lastname}[^@\|]+)@({domain}[^\s\|]+)\s*\(({user}[^\)\|]+)\)\s*(\||$)""",
+    """\|user_dn=({user_ou}[^\|]+)\|""",
+    """\|user_group=({realm}[^\|]+)""",
+    """\|time=({time}\d+\w+\d\d\d\d \d+:\d+:\d+)""",
+    """\|src=(?:({src_ip}[a-fA-F\d.:]+)|({src_host}[\w.\-]+))\|""",
+    """\|office_mode_ip=({host}[a-fA-F\d.:]+)""",
+    """\|Hostname=({host}[^\|]+)\|""",
+    """\|User=({user}[^,]+)""", 
   ]
-   DupFields = [ "action->event_name", "account->user" ]
+  DupFields = ["user->account"]
 }
 ```
