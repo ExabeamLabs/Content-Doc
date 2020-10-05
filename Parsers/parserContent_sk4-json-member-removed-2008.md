@@ -14,15 +14,4 @@ Name = sk4-json-member-removed-2008
     """"+MemberName"+:"+CN\\=({account_dn}[^,"]+)""",
   ]
 }
-${WinParserTemplates.json-windows-events-1}{
-  Name = ad-json-member-removed-2008
-  DataType = "windows-ds-access"
-  Conditions = [""""event_id":""", """Microsoft-Windows-Security-Auditing""", """A member was removed from a security-enabled"""]
-  Fields = ${WinParserTemplates.json-windows-events-1.Fields}[
-    """({event_name}A member was removed from a security-enabled)""",
-    """"+MemberSid"+:"+({account_id}[^"]+)""",
-    """"TargetSid":"({group_id}[^\s"]+)"""
-    """event_id"+:({event_code}\d+)""",
-  ]
-}
 ```
