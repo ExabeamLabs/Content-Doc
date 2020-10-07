@@ -163,7 +163,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Symantec Fireglass](../DataSources/datasource_symantec_fireglass_symantec.md)
 * [Symantec Managed Security Services](../DataSources/datasource_symantec_managed_security_services_symantec.md)
 * [Symantec Secure Web Gateway](../DataSources/datasource_symantec_secure_web_gateway_symantec.md)
-* [Symantec WSS](../DataSources/datasource_symantec_wss_symantec.md)
 * [Targeted Threat Protection - URL](../DataSources/datasource_targeted_threat_protection_-_url_mimecast.md)
 * [Tenable.io](../DataSources/datasource_tenable.io_tenable.io.md)
 * [Terraform](../DataSources/datasource_terraform_hashicorp.md)

@@ -652,7 +652,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Symantec Managed Security Services](DataSources/datasource_symantec_managed_security_services_symantec.md)
 * [Symantec Secure Web Gateway](DataSources/datasource_symantec_secure_web_gateway_symantec.md)
 * [Symantec VIP](DataSources/datasource_symantec_vip_symantec.md)
-* [Symantec WSS](DataSources/datasource_symantec_wss_symantec.md)
 * [Symantec](DataSources/datasource_symantec_symantec.md)
 #### Synology NAS
 * [Synology NAS](DataSources/datasource_synology_nas_synology_nas.md)

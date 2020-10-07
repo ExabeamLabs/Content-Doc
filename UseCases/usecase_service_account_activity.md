@@ -239,7 +239,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Symantec Endpoint Protection](../DataSources/datasource_symantec_endpoint_protection_symantec.md)
 * [Symantec Managed Security Services](../DataSources/datasource_symantec_managed_security_services_symantec.md)
 * [Symantec VIP](../DataSources/datasource_symantec_vip_symantec.md)
-* [Symantec WSS](../DataSources/datasource_symantec_wss_symantec.md)
 * [Symmetry Access Control](../DataSources/datasource_symmetry_access_control_amag.md)
 * [Tenable.io](../DataSources/datasource_tenable.io_tenable.io.md)
 * [Thycotic Secret Server](../DataSources/datasource_thycotic_secret_server_thycotic_secret_server.md)

@@ -581,6 +581,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-sophos-security-alert-7](../Parsers/parserContent_cef-sophos-security-alert-7.md)
 * [cef-sophos-security-alert-8](../Parsers/parserContent_cef-sophos-security-alert-8.md)
 * [cef-sophos-security-alert-9](../Parsers/parserContent_cef-sophos-security-alert-9.md)
+* [cef-symantec-alert](../Parsers/parserContent_cef-symantec-alert.md)
 * [cef-symantec-network-alert](../Parsers/parserContent_cef-symantec-network-alert.md)
 * [cef-syslog-oracle-db-login](../Parsers/parserContent_cef-syslog-oracle-db-login.md)
 * [cef-unix-local-logon](../Parsers/parserContent_cef-unix-local-logon.md)

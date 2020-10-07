@@ -128,7 +128,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Symantec Email Security.cloud](../DataSources/datasource_symantec_email_security.cloud_symantec.md)
 * [Symantec Endpoint Protection](../DataSources/datasource_symantec_endpoint_protection_symantec.md)
 * [Symantec Managed Security Services](../DataSources/datasource_symantec_managed_security_services_symantec.md)
-* [Symantec WSS](../DataSources/datasource_symantec_wss_symantec.md)
 * [Sysmon](../DataSources/datasource_sysmon_microsoft.md)
 * [Tenable.io](../DataSources/datasource_tenable.io_tenable.io.md)
 * [TrapX](../DataSources/datasource_trapx_trapx.md)
