@@ -195,7 +195,6 @@ _The following Parsers can be operationalized using log data from this data sour
 * [azure-ad-member-removed](../Parsers/parserContent_azure-ad-member-removed.md)
 * [azure-event-hub-app-service-http-logs](../Parsers/parserContent_azure-event-hub-app-service-http-logs.md)
 * [azure-event-hub-application-gateway-access-log](../Parsers/parserContent_azure-event-hub-application-gateway-access-log.md)
-* [azure-event-hub-audit-event](../Parsers/parserContent_azure-event-hub-audit-event.md)
 * [azure-event-hub-file-events](../Parsers/parserContent_azure-event-hub-file-events.md)
 * [azure-event-hub-file-read](../Parsers/parserContent_azure-event-hub-file-read.md)
 * [azure-event-hub-member-added](../Parsers/parserContent_azure-event-hub-member-added.md)
