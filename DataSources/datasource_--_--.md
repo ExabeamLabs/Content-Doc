@@ -949,6 +949,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [paloalto-firewall-deny-1](../Parsers/parserContent_paloalto-firewall-deny-1.md)
 * [paloalto-firewall-drop](../Parsers/parserContent_paloalto-firewall-drop.md)
 * [paloalto-firewall-drop-1](../Parsers/parserContent_paloalto-firewall-drop-1.md)
+* [paloalto-network-connection](../Parsers/parserContent_paloalto-network-connection.md)
 * [pam-account-switch-1](../Parsers/parserContent_pam-account-switch-1.md)
 * [pam-account-switch-2](../Parsers/parserContent_pam-account-switch-2.md)
 * [pam-app-login](../Parsers/parserContent_pam-app-login.md)

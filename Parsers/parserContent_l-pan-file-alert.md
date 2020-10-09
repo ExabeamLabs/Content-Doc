@@ -7,19 +7,18 @@ Name = l-pan-file-alert
   Lms = Direct
   DataType = "file-alert"
   IsHVF = true
-  TimeFormat = "yyyy/MM/dd HH:mm:ss"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
   Conditions = [ """,THREAT,file,""" ]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """THREAT,({alert_type}[^,]+),[^,]*,({time}\d\d\d\d/\d\d/\d\d \d\d:\d\d:\d\d),({src_ip}[\da-fA-F\.:]+),({dest_ip}[\da-fA-F\.:]+)(,|$)""",
+    """THREAT,[^,]+,[^,]+,({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+Z),({src_ip}[^,]*?),({dest_ip}[^,]*?),([^,]*?,)""",
     """THREAT,file,((""|".*?[^"]"|[^,]*),){25}({action}[^,]+)""",
     """THREAT,file,((""|".*?[^"]"|[^,]*),){54}({host}[\w\-\.]+)(,|$)""",
     """THREAT,file,([^,]*,){8}(|({domain}[^\\,]+))\\?(|({user}[^\\,]+))(,|$)""",
-    """THREAT,file,([^,]*,){7}(|({domain}[^\\,]+))\\?(|({user}[^\\,]+))(,|$)""",
+    """THREAT,file,([^,]*,){7}({user_email}[^@]+@[^\.]+\.[^,]+|(|({domain}[^\\,]+))\\?(|({user}[^\\,]+)))(,|$)""",
     """THREAT,file,((""|".*?[^"]"|[^,]*),){27}({alert_name}[^,]+)(,|$)""",
     """THREAT,file,((""|".*?[^"]"|[^,]*),){31}({alert_id}\d+)(,|$)""",
     """THREAT,file,([^,]*,){26}(("*[^"]*")|[^,]*),([^,]*,){28}"?({file_path}({file_parent}[^,"]+)\/.+?)\s*$""",
-    ""","?({file_path}({file_parent}[^"][^,]*?[\\\/]+)?({file_name}[^\\\/]*?(\.({file_ext}\w+))?))"?\s*$""",
     """THREAT,file,((""|".*?[^"]"|[^,]*),){26}"?(?:|({file_name}.+?(\.({file_ext}[^,."?_]{1,5}))?))("|,)""",
     """THREAT,file,([^,]*,){26}"?(?:|({file_name}.+?(\.({file_ext}[^,."?_]{1,5}))?))("|,)""",
     """THREAT,file,((""|".*?[^"]"|[^,]*),){26}("(?:|({file_name}.+?[^"](\.({file_ext}[^,."?_]{1,5}))?))",|("")?,)"""

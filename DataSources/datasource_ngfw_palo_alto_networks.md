@@ -53,6 +53,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [leef-pan-proxy](../Parsers/parserContent_leef-pan-proxy.md)
 * [leef-pan-remote-logon](../Parsers/parserContent_leef-pan-remote-logon.md)
 * [paloalto-ngfw-source-stopped](../Parsers/parserContent_paloalto-ngfw-source-stopped.md)
+* [paloalto-web-activity](../Parsers/parserContent_paloalto-web-activity.md)
 * [pan-config-change](../Parsers/parserContent_pan-config-change.md)
 * [pan-leef-network-alert](../Parsers/parserContent_pan-leef-network-alert.md)
 * [pan-proxy](../Parsers/parserContent_pan-proxy.md)
