@@ -62,6 +62,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [pan-auth-successful-1](../Parsers/parserContent_pan-auth-successful-1.md)
 * [pan-auth-successful-2](../Parsers/parserContent_pan-auth-successful-2.md)
 * [pan-azure-auth-successful](../Parsers/parserContent_pan-azure-auth-successful.md)
+* [pan-vpn-logout](../Parsers/parserContent_pan-vpn-logout.md)
 * [q-pan-vpn-end](../Parsers/parserContent_q-pan-vpn-end.md)
 * [q-pan-vpn-set-ip](../Parsers/parserContent_q-pan-vpn-set-ip.md)
 * [q-pan-vpn-start](../Parsers/parserContent_q-pan-vpn-start.md)
