@@ -12,6 +12,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [McAfee DLP](../DataSources/datasource_mcafee_dlp_mcafee.md)
 * [OfficeScan](../DataSources/datasource_officescan_trend_micro.md)
 * [Sophos Endpoint Protection](../DataSources/datasource_sophos_endpoint_protection_sophos.md)
+* [Symantec DLP](../DataSources/datasource_symantec_dlp_symantec.md)
 
 
 ### Exabeam Event Types
