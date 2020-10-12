@@ -40,8 +40,6 @@ UnorderedListItem
 
 _The following Parsers can be operationalized using log data from this data source_
 
-* [cef-f5-vpn-start](../Parsers/parserContent_cef-f5-vpn-start.md)
-* [cef-f5-vpn-start-1](../Parsers/parserContent_cef-f5-vpn-start-1.md)
 * [f5-ssh-failed-logon](../Parsers/parserContent_f5-ssh-failed-logon.md)
 * [f5-ssh-login-successful](../Parsers/parserContent_f5-ssh-login-successful.md)
 * [f5-vpn-additional-info](../Parsers/parserContent_f5-vpn-additional-info.md)

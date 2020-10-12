@@ -27,3 +27,5 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [cef-symantec-web-activity](../Parsers/parserContent_cef-symantec-web-activity.md)
 * [cef-symantec-web-activity-1](../Parsers/parserContent_cef-symantec-web-activity-1.md)
+* [symantec-web-activity](../Parsers/parserContent_symantec-web-activity.md)
+* [symantec-web-activity-1](../Parsers/parserContent_symantec-web-activity-1.md)
