@@ -27,6 +27,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [McAfee Enterprise Security Manager](../DataSources/datasource_mcafee_enterprise_security_manager_mcafee.md)
 * [McAfee IDPS](../DataSources/datasource_mcafee_idps_mcafee.md)
 * [McAfee Network Security Platform (IPS)](../DataSources/datasource_mcafee_network_security_platform_(ips)_mcafee.md)
+* [Microsoft Azure](../DataSources/datasource_microsoft_azure_microsoft.md)
 * [NGAF](../DataSources/datasource_ngaf_sangfor.md)
 * [NGFW](../DataSources/datasource_ngfw_palo_alto_networks.md)
 * [Ordr SCE](../DataSources/datasource_ordr_sce_ordr.md)
