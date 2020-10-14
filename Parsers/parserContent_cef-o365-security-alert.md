@@ -7,7 +7,7 @@ Name = cef-o365-security-alert
   Lms = ArcSight
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """|security-threat-detected|""", """cat=security-alert""", """destinationServiceName=Office 365""","""Security Alert Detected"""]
+  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """|security-threat-detected|""", """cat=security-alert""", """destinationServiceName=Office 365""","""Security Alert Detected""", """act=detect""" ]
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d+Z\s+({host}[\w\-.]+)\s+Skyformation"""
     """({alert_type}({alert_name}IdentityProtection))"""
@@ -41,7 +41,8 @@ Name = cef-o365-security-alert
     """"ms\\*"+:\\*"+({subject}.+?)\s*"+""",
     """"city":"({location_city}[^"]+)""",
     """"countryOrRegion":"({country_code}[^"]+)""",
-    """"state":"({location_state}[^"]+)"""
+    """"state":"({location_state}[^"]+)""",
+    """"suid":"(anonymous|({user_email}[^@=]+@({email_domain}[^"]+?))|({user}[^"]+))"""",
   ]
 }
 ```

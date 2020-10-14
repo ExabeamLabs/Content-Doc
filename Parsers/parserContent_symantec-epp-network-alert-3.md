@@ -19,8 +19,18 @@ Name = symantec-epp-network-alert-3
     """Begin:\s*({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """User:\s*(?:none|({user}[^,]+)),""",
     """Domain:\s*({domain}[^,\s]+),""",
-    """MD-5: [^,]*,"*({alert_name}[^,.]+)[.,]""",
-    """MD-5: [^,]*,"*({additional_info}.+?)(\s+|"+),Local:"""
+    """({alert_name}Unsolicited incoming ARP reply detected)""",
+    """MD-5: [^,]*,"*({additional_info}.+?)(\s+|"+),Local:""",
+    """Domain\s*(Name)?:\s*({domain}[^,\s]+),""",
+    """User\s*(Name)?:\s*(?:none|({user}[^,]+)),""",
+    """(Inbound|Outbound|Unknown),({protocol}\w+),"""
+    """Remote Host Name:\s*({dest_host}[^\s,]+)""",
+    """Remote Host IP:\s*({dest_ip}[A-Fa-f.\d]+)""",
+    """Remote Host MAC:\s*({dest_mac}[A-Fa-f.\d]+)""",
+    """Local Host IP:\s*({src_ip}[A-Fa-f.\d]+)""",
+    """Local Port:\s*({src_port}\d+)""",
+    """Remote Port:\s*({dest_port}\d+)""",
+
   ]
   DupFields = [ "alert_name->alert_type" ]
   SOAR {

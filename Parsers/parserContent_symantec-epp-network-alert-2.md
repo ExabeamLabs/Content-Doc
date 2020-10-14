@@ -5,7 +5,7 @@ Name = symantec-epp-network-alert-2
   Vendor = Symantec
   Product = Symantec Endpoint Protection
   Lms = Direct
-  DataType = "network-alert"
+  DataType = "network-connection-failed"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """CIDS Signature ID""", """traffic from IP address""", """block""" ]
   Fields = [
@@ -21,15 +21,21 @@ Name = symantec-epp-network-alert-2
     """Begin:\s*({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """User:\s*(?:none|({user}[^,]+)),""",
     """Domain:\s*({domain}[^,\s]+),""",
-    """({alert_name}The traffic from IP address .+? was blocked)""",
-    """MD-5: [^,]*,"*({additional_info}.+?)(\s+|"+),Local:"""
+    """MD-5: [^,]*,"*({additional_info}.+?)(\s+|"+),Local:""",
+    """Domain\s*(Name)?:\s*({domain}[^,\s]+),""",
+    """User\s*(Name)?:\s*(?:none|({user}[^,]+)),""",
+    """(Inbound|Outbound|Unknown),({protocol}\w+),"""
+    """Remote Host Name:\s*({dest_host}[^\s,]+)""",
+    """Remote Host IP:\s*({dest_ip}[A-Fa-f.\d:]+)""",
+    """Remote Host MAC:\s*({dest_mac}[^\s,]+)""",
+    """Local Host IP:\s*({src_ip}[A-Fa-f.\d:]+)""",
+    """Local Port:\s*({src_port}\d+)""",
+    """Remote Port:\s*({dest_port}\d+)""",
+    """({outcome}block)""",
+    """({direction}Inbound|Outbound)""",
+    """Event Description:\s+({additional_info}.+?)\s*,Local""",
+    """({activity}The client.+?block traffic)""",
+    """({activity}The traffic from IP address .+? was blocked)""",
   ]
-  DupFields = [ "alert_name->alert_type"]
-  SOAR {
-    IncidentType = "generic"
-    DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->description"]
-    NameTemplate = """Symantec Network Alert ${alert_name} found"""
-    ProjectName = "SOC"
-    EntityFields = [
-      {EntityType="device", Name="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]}
+}
 ```

@@ -524,6 +524,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [OneSpan](DataSources/datasource_onespan_onespan.md)
 #### Onguard
 * [Onguard](DataSources/datasource_onguard_onguard.md)
+#### OpenDJ
+* [OpenDJ LDAP](DataSources/datasource_opendj_ldap_opendj.md)
 #### Oracle
 * [Oracle Access Manager](DataSources/datasource_oracle_access_manager_oracle.md)
 * [Oracle DB](DataSources/datasource_oracle_db_oracle.md)
