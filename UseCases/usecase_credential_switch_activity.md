@@ -10,6 +10,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [AWS Bastion](../DataSources/datasource_aws_bastion_aws.md)
 * [AnyConnect](../DataSources/datasource_anyconnect_cisco.md)
 * [Avecto Defendpoint](../DataSources/datasource_avecto_defendpoint_avecto.md)
+* [Axway SFTP](../DataSources/datasource_axway_sftp_axway.md)
 * [Barracuda Firewall](../DataSources/datasource_barracuda_firewall_barracuda.md)
 * [BeyondTrust PasswordSafe](../DataSources/datasource_beyondtrust_passwordsafe_beyondtrust.md)
 * [Big-IP](../DataSources/datasource_big-ip_f5_networks.md)

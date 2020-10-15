@@ -56,6 +56,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Avaya VPN](DataSources/datasource_avaya_vpn_avaya_vpn.md)
 #### Avecto
 * [Avecto Defendpoint](DataSources/datasource_avecto_defendpoint_avecto.md)
+#### Axway
+* [Axway SFTP](DataSources/datasource_axway_sftp_axway.md)
 #### Azura
 * [Multi Factor Auth](DataSources/datasource_multi_factor_auth_azura.md)
 #### BCN
@@ -234,6 +236,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Epic SIEM](DataSources/datasource_epic_siem_epic_siem.md)
 #### Exabeam
 * [Exabeam DL](DataSources/datasource_exabeam_dl_exabeam.md)
+#### Exabeam Advanced Analytics
+* [Exabeam Advanced Analytics](DataSources/datasource_exabeam_advanced_analytics_exabeam_advanced_analytics.md)
 #### ExamWorkspace
 * [ExamWorkspace](DataSources/datasource_examworkspace_examworkspace.md)
 #### Extrahop
@@ -453,6 +457,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Microsoft Radius](DataSources/datasource_microsoft_radius_microsoft.md)
 * [Microsoft SQL Server](DataSources/datasource_microsoft_sql_server_microsoft.md)
 * [Microsoft ScanMail](DataSources/datasource_microsoft_scanmail_microsoft.md)
+* [Microsoft Sysmon](DataSources/datasource_microsoft_sysmon_microsoft.md)
 * [Microsoft Windows DNSServer](DataSources/datasource_microsoft_windows_dnsserver_microsoft.md)
 * [Microsoft Windows PrintService](DataSources/datasource_microsoft_windows_printservice_microsoft.md)
 * [Microsoft Windows](DataSources/datasource_microsoft_windows_microsoft.md)
@@ -460,7 +465,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [NetApp](DataSources/datasource_netapp_microsoft.md)
 * [SQL Server](DataSources/datasource_sql_server_microsoft.md)
 * [SharePoint](DataSources/datasource_sharepoint_microsoft.md)
-* [Sysmon](DataSources/datasource_sysmon_microsoft.md)
 * [Web Application Proxy-TLS Gateway](DataSources/datasource_web_application_proxy-tls_gateway_microsoft.md)
 * [Web Application Proxy](DataSources/datasource_web_application_proxy_microsoft.md)
 * [Windows Defender](DataSources/datasource_windows_defender_microsoft.md)
@@ -512,8 +516,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [OSSEC](DataSources/datasource_ossec_ossec.md)
 #### ObserveIT
 * [ObserveIT](DataSources/datasource_observeit_observeit.md)
-#### Office 365
-* [Office 365](DataSources/datasource_office_365_office_365.md)
 #### Okta
 * [Okta Adaptive MFA](DataSources/datasource_okta_adaptive_mfa_okta.md)
 #### Onapsis

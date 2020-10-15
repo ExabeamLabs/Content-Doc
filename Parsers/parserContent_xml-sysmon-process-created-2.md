@@ -3,7 +3,7 @@
 {
 Name = xml-sysmon-process-created-2
   Vendor = Microsoft
-  Product = Sysmon
+  Product = Microsoft Sysmon
   Lms = Splunk
   DataType = "process-created"
   IsHVF = true

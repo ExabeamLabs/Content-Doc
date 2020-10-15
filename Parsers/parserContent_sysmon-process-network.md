@@ -3,7 +3,7 @@
 {
 Name = sysmon-process-network
   Vendor = Microsoft
-  Product = Sysmon
+  Product = Microsoft Sysmon
   Lms = Splunk
   DataType = "process-network"
   IsHVF = true

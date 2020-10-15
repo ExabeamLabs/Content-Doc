@@ -3,7 +3,7 @@
 {
 Name = sysmon-registry-set
   Vendor = Microsoft
-  Product = Sysmon
+  Product = Microsoft Sysmon
   Lms = Splunk
   DataType = "file-operations"
   IsHVF = true

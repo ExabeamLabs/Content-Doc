@@ -12,6 +12,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [AnyConnect](../DataSources/datasource_anyconnect_cisco.md)
 * [Avaya VPN](../DataSources/datasource_avaya_vpn_avaya_vpn.md)
 * [Avecto Defendpoint](../DataSources/datasource_avecto_defendpoint_avecto.md)
+* [Axway SFTP](../DataSources/datasource_axway_sftp_axway.md)
 * [Badge](../DataSources/datasource_badge_badge.md)
 * [Badgepoint](../DataSources/datasource_badgepoint_badgepoint.md)
 * [Barracuda Firewall](../DataSources/datasource_barracuda_firewall_barracuda.md)

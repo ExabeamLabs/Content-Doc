@@ -19,6 +19,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Armis](../DataSources/datasource_armis_armis.md)
 * [AssetView](../DataSources/datasource_assetview_assetview.md)
 * [Avaya VPN](../DataSources/datasource_avaya_vpn_avaya_vpn.md)
+* [Axway SFTP](../DataSources/datasource_axway_sftp_axway.md)
 * [BOTsink](../DataSources/datasource_botsink_attivo.md)
 * [Barracuda Firewall](../DataSources/datasource_barracuda_firewall_barracuda.md)
 * [Big-IP](../DataSources/datasource_big-ip_f5_networks.md)
