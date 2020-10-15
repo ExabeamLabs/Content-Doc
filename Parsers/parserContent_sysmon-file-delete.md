@@ -3,7 +3,7 @@
 {
 Name = sysmon-file-delete
   Vendor = Microsoft
-  Product = Sysmon
+  Product = Microsoft Sysmon
   Lms = Direct
   DataType = "file-operations"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"

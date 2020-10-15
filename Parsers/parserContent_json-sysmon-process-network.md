@@ -3,7 +3,7 @@
 {
 Name = json-sysmon-process-network
   Vendor = Microsoft
-  Product = Sysmon
+  Product = Microsoft Sysmon
   Lms = Direct
   DataType = "process-network"
   IsHVF = true

@@ -397,7 +397,6 @@ _The following Parsers can be operationalized using log data from this data sour
 * [exa-app-activity-5](../Parsers/parserContent_exa-app-activity-5.md)
 * [exa-app-activity-6](../Parsers/parserContent_exa-app-activity-6.md)
 * [exa-app-activity-7](../Parsers/parserContent_exa-app-activity-7.md)
-* [exa-app-login](../Parsers/parserContent_exa-app-login.md)
 * [exa-failed-app-login](../Parsers/parserContent_exa-failed-app-login.md)
 * [exa-log-source-added](../Parsers/parserContent_exa-log-source-added.md)
 * [exa-syslog-nac-logon-1](../Parsers/parserContent_exa-syslog-nac-logon-1.md)

@@ -3,7 +3,7 @@
 {
 Name = json-sysmon-file-create
   Vendor = Microsoft
-  Product = Sysmon
+  Product = Microsoft Sysmon
   Lms = Direct
   DataType = "file-operations"
   IsHVF = true

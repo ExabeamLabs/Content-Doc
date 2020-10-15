@@ -3,7 +3,7 @@
 {
 Name = json-sysmon-process-created-1
   Vendor = Microsoft
-  Product = Sysmon
+  Product = Microsoft Sysmon
   Lms = Direct
   DataType = "process-created"
   IsHVF = true

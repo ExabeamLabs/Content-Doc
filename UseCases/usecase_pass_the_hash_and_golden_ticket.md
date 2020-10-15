@@ -8,6 +8,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [AD Audit](../DataSources/datasource_ad_audit_manageengine.md)
 * [APC](../DataSources/datasource_apc_apc.md)
 * [AWS Bastion](../DataSources/datasource_aws_bastion_aws.md)
+* [Axway SFTP](../DataSources/datasource_axway_sftp_axway.md)
 * [Big-IP](../DataSources/datasource_big-ip_f5_networks.md)
 * [CDS](../DataSources/datasource_cds_cds.md)
 * [Centrify Authentication Service](../DataSources/datasource_centrify_authentication_service_centrify.md)
