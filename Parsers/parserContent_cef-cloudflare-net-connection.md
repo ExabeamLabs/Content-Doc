@@ -16,7 +16,7 @@ Name = cef-cloudflare-net-connection
     """ext_ua=({user_agent}.*?)\s*\w+=""",
     """ext_country=({country_code}.*?)\s*\w+=""",
     """deviceInboundInterface=({src_interface}.*?)\s*\w+=""",
-    """dhost=({original_dest_host}.*?)\s+\w+=""",
+    """dhost=({dest_host}.*?)\s+\w+=""",
     """dproc=({process}.*?)\s*\w+=""",
     """ext_proto=({protocol}.*?)\s*\w+=""",
     """reason=({failure_reason}.*?)\s*\w+=""",

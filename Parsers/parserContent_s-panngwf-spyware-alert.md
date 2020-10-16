@@ -16,11 +16,10 @@ Name = s-panngwf-spyware-alert
     """THREAT,({alert_type}\w+),""",
     """,THREAT,.+?,({action}[^,]+),\\?"[^"]*"""",
     """,THREAT,.+?,\\?"(|({malware_url}.+?))\\?",""",
-    """,THREAT,.+?,\\?".*?",({alert_name}[^,]+),""",
+    """,THREAT,.+?,\\?".*?",({alert_name}[^,()]+)(\(({alert_id}\d+)\))?,""",
     """,THREAT,.+?,\\?".*?",[^,]*,({threat_category}[^,]+),""",
     """THREAT,spyware,([^,]*,){29}({alert_severity}\w+)""",
     """THREAT,spyware,.*?,\\?".*?"+,([^,]*,){2}({alert_severity}\w+)""",
-    """THREAT,spyware,([^,]*,){17}({alert_id}\d+)""",
     """THREAT,spyware,([^,]*,){7}(({domain}[^\\\/,]+)[\\\/]+)?({user}[^\\\/,]+),"""
   ]
   SOAR {
