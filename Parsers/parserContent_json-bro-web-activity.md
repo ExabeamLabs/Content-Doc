@@ -4,7 +4,7 @@
 Name = json-bro-web-activity
   Product = Zeek Network Security Monitor
   DataType = "web-activity"
-  Conditions = [ """"status_code":""",  """"trans_depth":""", """"id.resp_h":""" ]
+  Conditions = [ """"status_code":""",  """"trans_depth":""", """"id.resp_h":""",""""resp_mime_types"""" ]
   Fields = ${BroParserTemplates.json-bro-activity.Fields}[
     """"status_code":({result_code}\d+)""",
     """"resp_mime_types":\["({mime}[^"]+)""",
