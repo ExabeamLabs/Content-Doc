@@ -45,8 +45,6 @@ _The following Parsers can be operationalized using log data from this data sour
 * [openvpn-auth-failed-2](../Parsers/parserContent_openvpn-auth-failed-2.md)
 * [openvpn-failed-vpn-login](../Parsers/parserContent_openvpn-failed-vpn-login.md)
 * [openvpn-vpn-end](../Parsers/parserContent_openvpn-vpn-end.md)
-* [openvpn-vpn-end-1](../Parsers/parserContent_openvpn-vpn-end-1.md)
 * [openvpn-vpn-end-2](../Parsers/parserContent_openvpn-vpn-end-2.md)
 * [openvpn-vpn-end-3](../Parsers/parserContent_openvpn-vpn-end-3.md)
 * [openvpn-vpn-login](../Parsers/parserContent_openvpn-vpn-login.md)
-* [openvpn-vpn-login-1](../Parsers/parserContent_openvpn-vpn-login-1.md)

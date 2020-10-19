@@ -40,7 +40,4 @@ _The following Parsers can be operationalized using log data from this data sour
 * [dell-file-operations-3](../Parsers/parserContent_dell-file-operations-3.md)
 * [dell-file-operations-4](../Parsers/parserContent_dell-file-operations-4.md)
 * [dell-file-remote-access](../Parsers/parserContent_dell-file-remote-access.md)
-* [isilon-file-delete](../Parsers/parserContent_isilon-file-delete.md)
-* [isilon-file-read](../Parsers/parserContent_isilon-file-read.md)
-* [isilon-file-write](../Parsers/parserContent_isilon-file-write.md)
 * [json-dell-file-operations](../Parsers/parserContent_json-dell-file-operations.md)

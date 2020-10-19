@@ -26,4 +26,3 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [vectra-alert](../Parsers/parserContent_vectra-alert.md)
 * [vectra-alert-1](../Parsers/parserContent_vectra-alert-1.md)
-* [vectra-alert-3](../Parsers/parserContent_vectra-alert-3.md)

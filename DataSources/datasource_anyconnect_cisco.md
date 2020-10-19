@@ -41,3 +41,8 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-cisco-vpn-end](../Parsers/parserContent_cef-cisco-vpn-end.md)
 * [cef-cisco-vpn-start](../Parsers/parserContent_cef-cisco-vpn-start.md)
 * [cisco-process-network](../Parsers/parserContent_cisco-process-network.md)
+* [cisco-vpn-logout](../Parsers/parserContent_cisco-vpn-logout.md)
+* [cisco-vpn-logout-2](../Parsers/parserContent_cisco-vpn-logout-2.md)
+* [cisco-vpn-start](../Parsers/parserContent_cisco-vpn-start.md)
+* [cisco-vpn-start-2](../Parsers/parserContent_cisco-vpn-start-2.md)
+* [cisco-vpn-start-3](../Parsers/parserContent_cisco-vpn-start-3.md)

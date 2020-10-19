@@ -31,3 +31,5 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [cef-fidelis-alert](../Parsers/parserContent_cef-fidelis-alert.md)
 * [fidelis-email-alert](../Parsers/parserContent_fidelis-email-alert.md)
+* [fidelis-leef-alert](../Parsers/parserContent_fidelis-leef-alert.md)
+* [n-forwarded-cef-fidelis-alert](../Parsers/parserContent_n-forwarded-cef-fidelis-alert.md)

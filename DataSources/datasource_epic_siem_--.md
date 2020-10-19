@@ -40,4 +40,3 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-epic-app-activity-7](../Parsers/parserContent_cef-epic-app-activity-7.md)
 * [cef-epic-app-activity-8](../Parsers/parserContent_cef-epic-app-activity-8.md)
 * [cef-epic-app-activity-9](../Parsers/parserContent_cef-epic-app-activity-9.md)
-* [leef-epic-app-activity](../Parsers/parserContent_leef-epic-app-activity.md)
