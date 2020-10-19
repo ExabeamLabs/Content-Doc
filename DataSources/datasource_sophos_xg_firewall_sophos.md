@@ -45,7 +45,3 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-sophos-web-activity](../Parsers/parserContent_cef-sophos-web-activity.md)
 * [s-sophos-network-connection](../Parsers/parserContent_s-sophos-network-connection.md)
 * [sophos-network-connection](../Parsers/parserContent_sophos-network-connection.md)
-* [sophos-network-connection-2](../Parsers/parserContent_sophos-network-connection-2.md)
-* [sophos-proxy](../Parsers/parserContent_sophos-proxy.md)
-* [sophos-proxy-1](../Parsers/parserContent_sophos-proxy-1.md)
-* [sophos-proxy-2](../Parsers/parserContent_sophos-proxy-2.md)

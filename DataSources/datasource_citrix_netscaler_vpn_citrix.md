@@ -39,8 +39,3 @@ _The following Parsers can be operationalized using log data from this data sour
 * [citrix-device-aaa-user-failed](../Parsers/parserContent_citrix-device-aaa-user-failed.md)
 * [citrix-vpn-connection](../Parsers/parserContent_citrix-vpn-connection.md)
 * [citrix-vpn-logout-1](../Parsers/parserContent_citrix-vpn-logout-1.md)
-* [netscaler-cef-vpn-end](../Parsers/parserContent_netscaler-cef-vpn-end.md)
-* [q-netscaler-vpn-stop](../Parsers/parserContent_q-netscaler-vpn-stop.md)
-* [raw-netscaler-vpn-stop](../Parsers/parserContent_raw-netscaler-vpn-stop.md)
-* [s-netscaler-auth-failed](../Parsers/parserContent_s-netscaler-auth-failed.md)
-* [s-netscaler-vpn-stop](../Parsers/parserContent_s-netscaler-vpn-stop.md)

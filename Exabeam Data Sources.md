@@ -19,12 +19,12 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [AWS GuardDuty](DataSources/datasource_aws_guardduty_aws.md)
 * [AWS SQS](DataSources/datasource_aws_sqs_aws.md)
 * [AWS](DataSources/datasource_aws_aws.md)
-#### AWS CloudTrail
-* [AWS CloudTrail](DataSources/datasource_aws_cloudtrail_aws_cloudtrail.md)
 #### Absolute
 * [Absolute SIEM Connector](DataSources/datasource_absolute_siem_connector_absolute.md)
 #### Accellion
 * [Kiteworks](DataSources/datasource_kiteworks_accellion.md)
+#### AccessIT
+* [Universal.NET](DataSources/datasource_universal.net_accessit.md)
 #### Adaxes
 * [Adaxes](DataSources/datasource_adaxes_adaxes.md)
 #### Airlock
@@ -44,8 +44,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Arbor](DataSources/datasource_arbor_arbor.md)
 #### Armis
 * [Armis](DataSources/datasource_armis_armis.md)
-#### Aruba Wireless controller
-* [Aruba Wireless controller](DataSources/datasource_aruba_wireless_controller_aruba_wireless_controller.md)
 #### AssetView
 * [AssetView](DataSources/datasource_assetview_assetview.md)
 #### Atlassian BitBucket
@@ -74,8 +72,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### BeyondTrust
 * [BeyondTrust PasswordSafe](DataSources/datasource_beyondtrust_passwordsafe_beyondtrust.md)
 * [BeyondTrust PowerBroker](DataSources/datasource_beyondtrust_powerbroker_beyondtrust.md)
-#### BeyondTrust Secure Remote Access
-* [BeyondTrust Secure Remote Access](DataSources/datasource_beyondtrust_secure_remote_access_beyondtrust_secure_remote_access.md)
 #### BitDefender
 * [Gravityzone](DataSources/datasource_gravityzone_bitdefender.md)
 #### Bitglass
@@ -84,11 +80,11 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [BlackBerry Protect](DataSources/datasource_blackberry_protect_blackberry.md)
 #### BlueCat Networks Adonis
 * [BlueCat Networks Adonis](DataSources/datasource_bluecat_networks_adonis_bluecat_networks_adonis.md)
+#### BlueCoat
+* [BlueCoat](DataSources/datasource_bluecoat_bluecoat.md)
 #### Box
 * [Box Cloud Content Management](DataSources/datasource_box_cloud_content_management_box.md)
 * [Box](DataSources/datasource_box_box.md)
-#### Box Cloud Content Management
-* [Box Cloud Content Management](DataSources/datasource_box_cloud_content_management_box_cloud_content_management.md)
 #### Brivo
 * [Brivo](DataSources/datasource_brivo_brivo.md)
 #### Bromium
@@ -96,12 +92,11 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Bromium Secure Platform](DataSources/datasource_bromium_secure_platform_bromium.md)
 #### BusinessObject
 * [BusinessObject](DataSources/datasource_businessobject_businessobject.md)
-#### CDS
-* [CDS](DataSources/datasource_cds_cds.md)
 #### Carbon Black
 * [CB Defense](DataSources/datasource_cb_defense_carbon_black.md)
 * [CB Protection](DataSources/datasource_cb_protection_carbon_black.md)
 * [CB Response](DataSources/datasource_cb_response_carbon_black.md)
+* [Carbon Black](DataSources/datasource_carbon_black_carbon_black.md)
 #### CatoNetworks
 * [Cato Cloud](DataSources/datasource_cato_cloud_catonetworks.md)
 #### Centrify
@@ -125,8 +120,10 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Cisco ADC](DataSources/datasource_cisco_adc_cisco.md)
 * [Cisco Adaptive Security Appliance](DataSources/datasource_cisco_adaptive_security_appliance_cisco.md)
 * [Cisco Advance Malware Protection (AMP)](DataSources/datasource_cisco_advance_malware_protection_(amp)_cisco.md)
+* [Cisco Call Manager](DataSources/datasource_cisco_call_manager_cisco.md)
 * [Cisco Cloud Web Security](DataSources/datasource_cisco_cloud_web_security_cisco.md)
 * [Cisco CloudLock](DataSources/datasource_cisco_cloudlock_cisco.md)
+* [Cisco Console](DataSources/datasource_cisco_console_cisco.md)
 * [Cisco DHCP](DataSources/datasource_cisco_dhcp_cisco.md)
 * [Cisco Email Security Appliance](DataSources/datasource_cisco_email_security_appliance_cisco.md)
 * [Cisco Firepower](DataSources/datasource_cisco_firepower_cisco.md)
@@ -145,14 +142,13 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Meraki Firepower](DataSources/datasource_meraki_firepower_cisco.md)
 * [OpenDNS Umbrella](DataSources/datasource_opendns_umbrella_cisco.md)
 * [Proxy Umbrella](DataSources/datasource_proxy_umbrella_cisco.md)
-#### Cisco Call Manager
-* [Cisco Call Manager](DataSources/datasource_cisco_call_manager_cisco_call_manager.md)
 #### Citrix
 * [Citrix AppFW](DataSources/datasource_citrix_appfw_citrix.md)
 * [Citrix Endpoint Management](DataSources/datasource_citrix_endpoint_management_citrix.md)
 * [Citrix Gateway ActiveSync Connector](DataSources/datasource_citrix_gateway_activesync_connector_citrix.md)
 * [Citrix Netscaler VPN](DataSources/datasource_citrix_netscaler_vpn_citrix.md)
 * [Citrix Netscaler](DataSources/datasource_citrix_netscaler_citrix.md)
+* [Citrix ShareFile](DataSources/datasource_citrix_sharefile_citrix.md)
 * [Citrix XenApp](DataSources/datasource_citrix_xenapp_citrix.md)
 * [Citrix XenDesktop](DataSources/datasource_citrix_xendesktop_citrix.md)
 * [Citrix](DataSources/datasource_citrix_citrix.md)
@@ -183,10 +179,9 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [CyberArk Endpoint Privilege Management](DataSources/datasource_cyberark_endpoint_privilege_management_cyberark.md)
 * [CyberArk Vault](DataSources/datasource_cyberark_vault_cyberark.md)
 * [Privileged Session Manager](DataSources/datasource_privileged_session_manager_cyberark.md)
+* [Privileged Threat Analytics](DataSources/datasource_privileged_threat_analytics_cyberark.md)
 #### Cybereason
 * [Cybereason](DataSources/datasource_cybereason_cybereason.md)
-#### DTEX InTERCEPT
-* [DTEX InTERCEPT](DataSources/datasource_dtex_intercept_dtex_intercept.md)
 #### Damballa
 * [Failsafe](DataSources/datasource_failsafe_damballa.md)
 #### Darktrace
@@ -206,14 +201,10 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Digital Guardian
 * [Digital Guardian Endpoint Protection](DataSources/datasource_digital_guardian_endpoint_protection_digital_guardian.md)
 * [Network DLP](DataSources/datasource_network_dlp_digital_guardian.md)
-#### Digital Guardian Endpoint Protection
-* [Digital Guardian Endpoint Protection](DataSources/datasource_digital_guardian_endpoint_protection_digital_guardian_endpoint_protection.md)
 #### Dropbox
 * [Dropbox](DataSources/datasource_dropbox_dropbox.md)
 #### Dtex Systems
 * [DTEX InTERCEPT](DataSources/datasource_dtex_intercept_dtex_systems.md)
-#### Duo Access Security
-* [Duo Access Security](DataSources/datasource_duo_access_security_duo_access_security.md)
 #### EMP
 * [EMP](DataSources/datasource_emp_emp.md)
 #### ESET
@@ -232,12 +223,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [IdentityGuard](DataSources/datasource_identityguard_entrust.md)
 #### Epic
 * [Epic SIEM](DataSources/datasource_epic_siem_epic.md)
-#### Epic SIEM
-* [Epic SIEM](DataSources/datasource_epic_siem_epic_siem.md)
 #### Exabeam
 * [Exabeam DL](DataSources/datasource_exabeam_dl_exabeam.md)
-#### Exabeam Advanced Analytics
-* [Exabeam Advanced Analytics](DataSources/datasource_exabeam_advanced_analytics_exabeam_advanced_analytics.md)
 #### ExamWorkspace
 * [ExamWorkspace](DataSources/datasource_examworkspace_examworkspace.md)
 #### Extrahop
@@ -253,6 +240,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [F5 Application Security Manager](DataSources/datasource_f5_application_security_manager_f5_networks.md)
 * [F5 BIG-IP Access Policy Manager (APM)](DataSources/datasource_f5_big-ip_access_policy_manager_(apm)_f5_networks.md)
 * [F5 Silverline](DataSources/datasource_f5_silverline_f5_networks.md)
+* [IPI F5](DataSources/datasource_ipi_f5_f5_networks.md)
 * [WAF F5](DataSources/datasource_waf_f5_f5_networks.md)
 * [WebSafe](DataSources/datasource_websafe_f5_networks.md)
 #### FTP
@@ -263,7 +251,9 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### FileSite
 * [FileSite](DataSources/datasource_filesite_filesite.md)
 #### FireEye
+* [FireEye Email Gateway](DataSources/datasource_fireeye_email_gateway_fireeye.md)
 * [FireEye Email Threat Prevention (ETP)](DataSources/datasource_fireeye_email_threat_prevention_(etp)_fireeye.md)
+* [FireEye Endpoint Security (CM)](DataSources/datasource_fireeye_endpoint_security_(cm)_fireeye.md)
 * [FireEye Endpoint Security (HX)](DataSources/datasource_fireeye_endpoint_security_(hx)_fireeye.md)
 * [FireEye Helix](DataSources/datasource_fireeye_helix_fireeye.md)
 * [FireEye Network Security (Helix)](DataSources/datasource_fireeye_network_security_(helix)_fireeye.md)
@@ -274,8 +264,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Forcepoint Insider Threat](DataSources/datasource_forcepoint_insider_threat_forcepoint.md)
 * [Websense ESG](DataSources/datasource_websense_esg_forcepoint.md)
 * [Websense Secure Gateway](DataSources/datasource_websense_secure_gateway_forcepoint.md)
-#### Forcepoint NGFW
-* [Forcepoint NGFW](DataSources/datasource_forcepoint_ngfw_forcepoint_ngfw.md)
 #### Forescout
 * [Forescout CounterACT](DataSources/datasource_forescout_counteract_forescout.md)
 #### Fortinet
@@ -309,6 +297,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Print Server](DataSources/datasource_print_server_hp.md)
 #### HP Aruba
 * [Aruba Wireless controller](DataSources/datasource_aruba_wireless_controller_hp_aruba.md)
+* [HP Aruba](DataSources/datasource_hp_aruba_hp_aruba.md)
 #### HP Comware
 * [HP Comware](DataSources/datasource_hp_comware_hp_comware.md)
 #### HP SafeCom
@@ -328,6 +317,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Enterprise Network Firewall](DataSources/datasource_enterprise_network_firewall_huawei.md)
 * [Unified Security Gateway](DataSources/datasource_unified_security_gateway_huawei.md)
 #### IBM
+* [Guardium](DataSources/datasource_guardium_ibm.md)
 * [IBM DB2](DataSources/datasource_ibm_db2_ibm.md)
 * [IBM Endpoint Manager](DataSources/datasource_ibm_endpoint_manager_ibm.md)
 * [IBM Lotus Notes](DataSources/datasource_ibm_lotus_notes_ibm.md)
@@ -344,8 +334,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [ICDB](DataSources/datasource_icdb_icdb.md)
 #### ICPAM
 * [ICPAM](DataSources/datasource_icpam_icpam.md)
-#### IMSS
-* [IMSS](DataSources/datasource_imss_imss.md)
 #### IMSVA
 * [IMSVA](DataSources/datasource_imsva_imsva.md)
 #### IPTables
@@ -385,8 +373,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Kemp
 * [Kemp LoadMaster](DataSources/datasource_kemp_loadmaster_kemp.md)
 * [Load Balancer](DataSources/datasource_load_balancer_kemp.md)
-#### Kiteworks
-* [Kiteworks](DataSources/datasource_kiteworks_kiteworks.md)
 #### LEAP
 * [LEAP](DataSources/datasource_leap_leap.md)
 #### LOGBinder
@@ -420,10 +406,10 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Lyrix](DataSources/datasource_lyrix_lyrix.md)
 #### MIPS
 * [MIPS](DataSources/datasource_mips_mips.md)
+#### MSDHCP
+* [MSDHCP](DataSources/datasource_msdhcp_msdhcp.md)
 #### Malwarebytes
 * [Malwarebytes Endpoint Protection](DataSources/datasource_malwarebytes_endpoint_protection_malwarebytes.md)
-#### Malwarebytes Incident Response
-* [Malwarebytes Incident Response](DataSources/datasource_malwarebytes_incident_response_malwarebytes_incident_response.md)
 #### ManageEngine
 * [AD Audit](DataSources/datasource_ad_audit_manageengine.md)
 * [ADmanager](DataSources/datasource_admanager_manageengine.md)
@@ -437,6 +423,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [McAfee Endpoint Security](DataSources/datasource_mcafee_endpoint_security_mcafee.md)
 * [McAfee Enterprise Security Manager](DataSources/datasource_mcafee_enterprise_security_manager_mcafee.md)
 * [McAfee IDPS](DataSources/datasource_mcafee_idps_mcafee.md)
+* [McAfee NSM](DataSources/datasource_mcafee_nsm_mcafee.md)
 * [McAfee Network Security Platform (IPS)](DataSources/datasource_mcafee_network_security_platform_(ips)_mcafee.md)
 * [McAfee Web Gateway](DataSources/datasource_mcafee_web_gateway_mcafee.md)
 #### Microsoft
@@ -448,6 +435,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Microsoft Azure](DataSources/datasource_microsoft_azure_microsoft.md)
 * [Microsoft CAS](DataSources/datasource_microsoft_cas_microsoft.md)
 * [Microsoft Cloud App Security (MCAS)](DataSources/datasource_microsoft_cloud_app_security_(mcas)_microsoft.md)
+* [Microsoft Defender ATP](DataSources/datasource_microsoft_defender_atp_microsoft.md)
 * [Microsoft Graph](DataSources/datasource_microsoft_graph_microsoft.md)
 * [Microsoft NPS](DataSources/datasource_microsoft_nps_microsoft.md)
 * [Microsoft Office 365](DataSources/datasource_microsoft_office_365_microsoft.md)
@@ -468,8 +456,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Web Application Proxy-TLS Gateway](DataSources/datasource_web_application_proxy-tls_gateway_microsoft.md)
 * [Web Application Proxy](DataSources/datasource_web_application_proxy_microsoft.md)
 * [Windows Defender](DataSources/datasource_windows_defender_microsoft.md)
-#### Microsoft Office 365
-* [Microsoft Office 365](DataSources/datasource_microsoft_office_365_microsoft_office_365.md)
 #### Mimecast
 * [Mimecast Email Security](DataSources/datasource_mimecast_email_security_mimecast.md)
 * [Mimecast](DataSources/datasource_mimecast_mimecast.md)
@@ -489,8 +475,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [NCP](DataSources/datasource_ncp_ncp.md)
 #### Namespace rDirectory
 * [Namespace rDirectory](DataSources/datasource_namespace_rdirectory_namespace_rdirectory.md)
-#### Nasuni
-* [Nasuni](DataSources/datasource_nasuni_nasuni.md)
 #### NetApp
 * [NetApp](DataSources/datasource_netapp_netapp.md)
 #### NetDocs
@@ -502,8 +486,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Netskope
 * [Netskope Active Platform](DataSources/datasource_netskope_active_platform_netskope.md)
 * [Netskope](DataSources/datasource_netskope_netskope.md)
-#### Network DLP
-* [Network DLP](DataSources/datasource_network_dlp_network_dlp.md)
 #### Netwrix
 * [Netwrix Auditor](DataSources/datasource_netwrix_auditor_netwrix.md)
 #### Nexthink
@@ -606,14 +588,10 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [RedCloud](DataSources/datasource_redcloud_redcloud.md)
 #### Ricoh
 * [Ricoh](DataSources/datasource_ricoh_ricoh.md)
-#### SAP
-* [SAP](DataSources/datasource_sap_sap.md)
 #### SIGSCI
 * [SIGSCI](DataSources/datasource_sigsci_sigsci.md)
 #### SSL Open VPN
 * [SSL Open VPN](DataSources/datasource_ssl_open_vpn_ssl_open_vpn.md)
-#### SVN
-* [SVN](DataSources/datasource_svn_svn.md)
 #### SafeSend
 * [SafeSend](DataSources/datasource_safesend_safesend.md)
 #### Safend
@@ -667,8 +645,10 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Sonicwall](DataSources/datasource_sonicwall_sonicwall.md)
 #### Sophos
 * [Sophos Endpoint Protection](DataSources/datasource_sophos_endpoint_protection_sophos.md)
+* [Sophos Firewall](DataSources/datasource_sophos_firewall_sophos.md)
 * [Sophos Invincea](DataSources/datasource_sophos_invincea_sophos.md)
 * [Sophos SafeGuard](DataSources/datasource_sophos_safeguard_sophos.md)
+* [Sophos UTM](DataSources/datasource_sophos_utm_sophos.md)
 * [Sophos XG Firewall](DataSources/datasource_sophos_xg_firewall_sophos.md)
 #### Specops
 * [Specops Password Reset](DataSources/datasource_specops_password_reset_specops.md)
@@ -683,6 +663,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Sun One
 * [LDAP](DataSources/datasource_ldap_sun_one.md)
 #### Suricata
+* [Suricata IDS](DataSources/datasource_suricata_ids_suricata.md)
 * [Suricata](DataSources/datasource_suricata_suricata.md)
 #### Swift
 * [Swift](DataSources/datasource_swift_swift.md)
@@ -700,6 +681,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Symantec CloudSOC](DataSources/datasource_symantec_cloudsoc_symantec.md)
 * [Symantec Critical System Protection](DataSources/datasource_symantec_critical_system_protection_symantec.md)
 * [Symantec DLP](DataSources/datasource_symantec_dlp_symantec.md)
+* [Symantec EDR](DataSources/datasource_symantec_edr_symantec.md)
 * [Symantec Email Security.cloud](DataSources/datasource_symantec_email_security.cloud_symantec.md)
 * [Symantec Endpoint Protection](DataSources/datasource_symantec_endpoint_protection_symantec.md)
 * [Symantec Fireglass](DataSources/datasource_symantec_fireglass_symantec.md)
@@ -707,8 +689,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Symantec Secure Web Gateway](DataSources/datasource_symantec_secure_web_gateway_symantec.md)
 * [Symantec VIP](DataSources/datasource_symantec_vip_symantec.md)
 * [Symantec](DataSources/datasource_symantec_symantec.md)
-#### Symmetry Access Control
-* [Symmetry Access Control](DataSources/datasource_symmetry_access_control_symmetry_access_control.md)
 #### Synology NAS
 * [Synology NAS](DataSources/datasource_synology_nas_synology_nas.md)
 #### Tanium
@@ -779,18 +759,16 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Watchguard](DataSources/datasource_watchguard_watchguard.md)
 #### Weblogin
 * [Weblogin](DataSources/datasource_weblogin_weblogin.md)
-#### Websense Secure Gateway
-* [Websense Secure Gateway](DataSources/datasource_websense_secure_gateway_websense_secure_gateway.md)
 #### Workday
 * [Workday](DataSources/datasource_workday_workday.md)
+#### XPS
+* [XPS](DataSources/datasource_xps_xps.md)
 #### Xceedium
 * [Xceedium](DataSources/datasource_xceedium_xceedium.md)
 #### Xerox
 * [Xerox](DataSources/datasource_xerox_xerox.md)
 #### Zeek
 * [Zeek Network Security Monitor](DataSources/datasource_zeek_network_security_monitor_zeek.md)
-#### Zeek Network Security Monitor
-* [Zeek Network Security Monitor](DataSources/datasource_zeek_network_security_monitor_zeek_network_security_monitor.md)
 #### Zlock
 * [Zlock](DataSources/datasource_zlock_zlock.md)
 #### Zoom

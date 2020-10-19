@@ -36,7 +36,6 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [cef-mimecast-email-alert](../Parsers/parserContent_cef-mimecast-email-alert.md)
 * [cef-mimecast-failed-app-login](../Parsers/parserContent_cef-mimecast-failed-app-login.md)
-* [cef-mimecast-message-view](../Parsers/parserContent_cef-mimecast-message-view.md)
 * [cef-mimecast-security-alert](../Parsers/parserContent_cef-mimecast-security-alert.md)
 * [s-mimecast-app-activity](../Parsers/parserContent_s-mimecast-app-activity.md)
 * [s-mimecast-app-login](../Parsers/parserContent_s-mimecast-app-login.md)

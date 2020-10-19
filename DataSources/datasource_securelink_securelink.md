@@ -31,4 +31,3 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [securelink-app-activity](../Parsers/parserContent_securelink-app-activity.md)
 * [securelink-app-login](../Parsers/parserContent_securelink-app-login.md)
-* [securelink-login](../Parsers/parserContent_securelink-login.md)
