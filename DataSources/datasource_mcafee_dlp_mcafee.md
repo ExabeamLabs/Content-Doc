@@ -37,7 +37,5 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-mcafee-print-activity-1](../Parsers/parserContent_cef-mcafee-print-activity-1.md)
 * [cef-mcafee-usb](../Parsers/parserContent_cef-mcafee-usb.md)
 * [iguard-dlp-alert](../Parsers/parserContent_iguard-dlp-alert.md)
-* [mcafee-dlp-print](../Parsers/parserContent_mcafee-dlp-print.md)
-* [mcafee-dlp-print-2](../Parsers/parserContent_mcafee-dlp-print-2.md)
 * [s-mcafee-print-activity](../Parsers/parserContent_s-mcafee-print-activity.md)
 * [syslog-mcafee-dlp-email-alert](../Parsers/parserContent_syslog-mcafee-dlp-email-alert.md)

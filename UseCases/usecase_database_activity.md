@@ -14,7 +14,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Mysql](../DataSources/datasource_mysql_mysql.md)
 * [Oracle DB](../DataSources/datasource_oracle_db_oracle.md)
 * [PostgreSQL](../DataSources/datasource_postgresql_postgresql.md)
-* [RangerAudit](../DataSources/datasource_rangeraudit_rangeraudit.md)
 * [SQL Server](../DataSources/datasource_sql_server_microsoft.md)
 * [SonarG](../DataSources/datasource_sonarg_jsonar.md)
 * [Sybase](../DataSources/datasource_sybase_sybase.md)

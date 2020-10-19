@@ -39,6 +39,3 @@ _The following Parsers can be operationalized using log data from this data sour
 * [fortinet-auth-successful](../Parsers/parserContent_fortinet-auth-successful.md)
 * [fortinet-ipsec-vpn-end](../Parsers/parserContent_fortinet-ipsec-vpn-end.md)
 * [fortinet-ipsec-vpn-start](../Parsers/parserContent_fortinet-ipsec-vpn-start.md)
-* [fortinet-ssl-vpn-end-3](../Parsers/parserContent_fortinet-ssl-vpn-end-3.md)
-* [fortinet-ssl-vpn-start](../Parsers/parserContent_fortinet-ssl-vpn-start.md)
-* [fortinet-ssl-vpn-start-1](../Parsers/parserContent_fortinet-ssl-vpn-start-1.md)

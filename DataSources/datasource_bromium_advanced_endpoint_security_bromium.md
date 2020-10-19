@@ -27,4 +27,3 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-bromium-bem-security-alert](../Parsers/parserContent_cef-bromium-bem-security-alert.md)
 * [cef-bromium-bem-security-alert-1](../Parsers/parserContent_cef-bromium-bem-security-alert-1.md)
 * [cef-bromium-security-alert](../Parsers/parserContent_cef-bromium-security-alert.md)
-* [cef-bromium-security-alert-1](../Parsers/parserContent_cef-bromium-security-alert-1.md)

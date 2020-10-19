@@ -33,9 +33,4 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [cef-onedrive-app-activity](../Parsers/parserContent_cef-onedrive-app-activity.md)
 * [cef-onedrive-app-activity-1](../Parsers/parserContent_cef-onedrive-app-activity-1.md)
-* [cef-onedrive-app-activity-2](../Parsers/parserContent_cef-onedrive-app-activity-2.md)
-* [cef-onedrive-app-activity-3](../Parsers/parserContent_cef-onedrive-app-activity-3.md)
-* [cef-onedrive-app-activity-4](../Parsers/parserContent_cef-onedrive-app-activity-4.md)
-* [cef-onedrive-app-activity-5](../Parsers/parserContent_cef-onedrive-app-activity-5.md)
-* [cef-onedrive-app-activity-7](../Parsers/parserContent_cef-onedrive-app-activity-7.md)
 * [cef-onedrive-file-activity](../Parsers/parserContent_cef-onedrive-file-activity.md)

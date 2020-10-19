@@ -13,7 +13,7 @@ Name = eset-scan-activity
   """Scan ID:\s*({scan_id}\d+)""",
   """Computer:\s*({host}[^,]+)""",
   """IP Address:\s*({src_ip}[^,]+)""",
-  """Server Name:\s*({dest_host}[^.]+)""",
+  """Server Name:\s*({dest_host}[^.\s,]+)""",
   """User1:\s*({user}[^,]+)""",
   """Group Name:\s({group}[^,]+)"""
   ]

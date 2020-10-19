@@ -35,6 +35,5 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [s-aws-cloudtrail-activity-access-json](../Parsers/parserContent_s-aws-cloudtrail-activity-access-json.md)
 * [s-aws-cloudtrail-activity-delete-json](../Parsers/parserContent_s-aws-cloudtrail-activity-delete-json.md)
-* [s-aws-cloudtrail-activity-json](../Parsers/parserContent_s-aws-cloudtrail-activity-json.md)
 * [s-aws-cloudtrail-activity-upload-json](../Parsers/parserContent_s-aws-cloudtrail-activity-upload-json.md)
 * [s-aws-cloudtrail-assumedrole-json](../Parsers/parserContent_s-aws-cloudtrail-assumedrole-json.md)
