@@ -34,5 +34,4 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [zscaler-activity](../Parsers/parserContent_zscaler-activity.md)
 * [zscaler-firewall](../Parsers/parserContent_zscaler-firewall.md)
-* [zscaler-firewall-dns](../Parsers/parserContent_zscaler-firewall-dns.md)
 * [zscaler-status](../Parsers/parserContent_zscaler-status.md)

@@ -33,4 +33,3 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-symantec-email-alert](../Parsers/parserContent_cef-symantec-email-alert.md)
 * [cef-symantec-email-alert-1](../Parsers/parserContent_cef-symantec-email-alert-1.md)
 * [s-symantec-email-alert](../Parsers/parserContent_s-symantec-email-alert.md)
-* [symantec-security-alert-1](../Parsers/parserContent_symantec-security-alert-1.md)

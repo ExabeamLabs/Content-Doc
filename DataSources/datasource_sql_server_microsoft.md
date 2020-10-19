@@ -32,5 +32,4 @@ _The following Parsers can be operationalized using log data from this data sour
 * [exalms-sqlserver-failed-login](../Parsers/parserContent_exalms-sqlserver-failed-login.md)
 * [s-database-login-18453](../Parsers/parserContent_s-database-login-18453.md)
 * [s-database-login-18454](../Parsers/parserContent_s-database-login-18454.md)
-* [s-failed-app-login](../Parsers/parserContent_s-failed-app-login.md)
 * [s-microsoft-database-login](../Parsers/parserContent_s-microsoft-database-login.md)

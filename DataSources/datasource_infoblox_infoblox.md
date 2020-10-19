@@ -52,4 +52,3 @@ _The following Parsers can be operationalized using log data from this data sour
 * [s-infoblox-dhcp-1](../Parsers/parserContent_s-infoblox-dhcp-1.md)
 * [s-infoblox-dhcp-2](../Parsers/parserContent_s-infoblox-dhcp-2.md)
 * [s-infoblox-dhcp-3](../Parsers/parserContent_s-infoblox-dhcp-3.md)
-* [s-infoblox-dns](../Parsers/parserContent_s-infoblox-dns.md)
