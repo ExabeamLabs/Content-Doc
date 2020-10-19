@@ -30,7 +30,6 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [counteract-config-change](../Parsers/parserContent_counteract-config-change.md)
 * [counteract-network-alert](../Parsers/parserContent_counteract-network-alert.md)
-* [counteract-network-alert-1](../Parsers/parserContent_counteract-network-alert-1.md)
 * [counteract-network-alert-2](../Parsers/parserContent_counteract-network-alert-2.md)
 * [counteract-network-alert-3](../Parsers/parserContent_counteract-network-alert-3.md)
 * [counteract-network-alert-4](../Parsers/parserContent_counteract-network-alert-4.md)

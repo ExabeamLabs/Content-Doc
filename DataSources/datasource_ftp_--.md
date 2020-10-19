@@ -32,7 +32,6 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [common-ftp-app-login](../Parsers/parserContent_common-ftp-app-login.md)
 * [common-ftp-failed-app-login](../Parsers/parserContent_common-ftp-failed-app-login.md)
-* [s-common-ftp-app-activity](../Parsers/parserContent_s-common-ftp-app-activity.md)
 * [s-common-ftp-app-activity-1](../Parsers/parserContent_s-common-ftp-app-activity-1.md)
 * [s-common-ftp-app-activity-2](../Parsers/parserContent_s-common-ftp-app-activity-2.md)
 * [s-common-ftp-app-activity-3](../Parsers/parserContent_s-common-ftp-app-activity-3.md)

@@ -38,5 +38,3 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [vmware-vcenter-activity](../Parsers/parserContent_vmware-vcenter-activity.md)
 * [vmware-vcenter-login](../Parsers/parserContent_vmware-vcenter-login.md)
-* [vmware-view-app-activity](../Parsers/parserContent_vmware-view-app-activity.md)
-* [vmware-view-remote-logon](../Parsers/parserContent_vmware-view-remote-logon.md)

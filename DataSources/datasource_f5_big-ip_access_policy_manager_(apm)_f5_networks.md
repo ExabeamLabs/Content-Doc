@@ -39,9 +39,7 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [cef-f5-vpn-end](../Parsers/parserContent_cef-f5-vpn-end.md)
 * [cef-f5-vpn-start](../Parsers/parserContent_cef-f5-vpn-start.md)
-* [cef-f5-vpn-start-1](../Parsers/parserContent_cef-f5-vpn-start-1.md)
 * [cef-f5-vpn-user](../Parsers/parserContent_cef-f5-vpn-user.md)
-* [f5-vpn-session-start](../Parsers/parserContent_f5-vpn-session-start.md)
 * [f5-vpn-user-agent](../Parsers/parserContent_f5-vpn-user-agent.md)
 * [f5-vpn-username](../Parsers/parserContent_f5-vpn-username.md)
 * [json-f5-auth-attempt](../Parsers/parserContent_json-f5-auth-attempt.md)

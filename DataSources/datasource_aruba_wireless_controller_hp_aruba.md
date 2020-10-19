@@ -27,5 +27,3 @@ _The following Parsers can be operationalized using log data from this data sour
 * [aruba-controller-failed-nac-logon](../Parsers/parserContent_aruba-controller-failed-nac-logon.md)
 * [cef-aruba-mobile](../Parsers/parserContent_cef-aruba-mobile.md)
 * [cef-aruba-nac-failed-logon](../Parsers/parserContent_cef-aruba-nac-failed-logon.md)
-* [q-aruba-failed-nac-logon](../Parsers/parserContent_q-aruba-failed-nac-logon.md)
-* [q-aruba-failed-nac-logon-1](../Parsers/parserContent_q-aruba-failed-nac-logon-1.md)

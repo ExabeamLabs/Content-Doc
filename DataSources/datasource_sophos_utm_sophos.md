@@ -24,7 +24,6 @@ UnorderedListItem
 
 _The following Parsers can be operationalized using log data from this data source_
 
-* [cef-sophos-web-activity](../Parsers/parserContent_cef-sophos-web-activity.md)
 * [sophos-proxy](../Parsers/parserContent_sophos-proxy.md)
 * [sophos-proxy-1](../Parsers/parserContent_sophos-proxy-1.md)
 * [sophos-proxy-2](../Parsers/parserContent_sophos-proxy-2.md)
