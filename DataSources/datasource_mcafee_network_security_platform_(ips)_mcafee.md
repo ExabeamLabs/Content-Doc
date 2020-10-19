@@ -27,4 +27,3 @@ _The following Parsers can be operationalized using log data from this data sour
 * [mcafee-ips-network-alert](../Parsers/parserContent_mcafee-ips-network-alert.md)
 * [mcafee-ips-network-alert-1](../Parsers/parserContent_mcafee-ips-network-alert-1.md)
 * [mcafee-network-alert](../Parsers/parserContent_mcafee-network-alert.md)
-* [syslog-mcafee-network-alert](../Parsers/parserContent_syslog-mcafee-network-alert.md)

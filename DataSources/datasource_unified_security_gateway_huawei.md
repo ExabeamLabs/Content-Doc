@@ -37,7 +37,6 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [huawei-auth-success](../Parsers/parserContent_huawei-auth-success.md)
 * [huawei-ids](../Parsers/parserContent_huawei-ids.md)
-* [huawei-network-alert](../Parsers/parserContent_huawei-network-alert.md)
 * [huawei-process-created](../Parsers/parserContent_huawei-process-created.md)
 * [huawei-vpn-login](../Parsers/parserContent_huawei-vpn-login.md)
 * [huawei-vpn-login-1](../Parsers/parserContent_huawei-vpn-login-1.md)

@@ -36,5 +36,4 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-onapsis-app-login](../Parsers/parserContent_cef-onapsis-app-login.md)
 * [cef-onapsis-failed-app-login](../Parsers/parserContent_cef-onapsis-failed-app-login.md)
 * [cef-onapsis-security-alert](../Parsers/parserContent_cef-onapsis-security-alert.md)
-* [exalms-sqlserver-failed-login](../Parsers/parserContent_exalms-sqlserver-failed-login.md)
 * [s-failed-app-login](../Parsers/parserContent_s-failed-app-login.md)

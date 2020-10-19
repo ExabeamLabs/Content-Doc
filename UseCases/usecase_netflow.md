@@ -6,6 +6,7 @@ Use Case: Netflow
 _The following list of Supported Exabeam Data Sources power this use case:_
 
 * [AWS CloudWatch](../DataSources/datasource_aws_cloudwatch_aws.md)
+* [Cisco Firepower](../DataSources/datasource_cisco_firepower_cisco.md)
 * [Cisco Netflow](../DataSources/datasource_cisco_netflow_cisco.md)
 * [Fortinet Enterprise Firewall](../DataSources/datasource_fortinet_enterprise_firewall_fortinet.md)
 * [RSA](../DataSources/datasource_rsa_rsa.md)

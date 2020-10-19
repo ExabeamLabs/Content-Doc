@@ -29,5 +29,3 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [cef-kaspersky-dlp-email](../Parsers/parserContent_cef-kaspersky-dlp-email.md)
 * [cef-kaspersky-security-alert](../Parsers/parserContent_cef-kaspersky-security-alert.md)
-* [cef-kaspersky-security-alert-1](../Parsers/parserContent_cef-kaspersky-security-alert-1.md)
-* [s-kaspersky-es-alert-1](../Parsers/parserContent_s-kaspersky-es-alert-1.md)

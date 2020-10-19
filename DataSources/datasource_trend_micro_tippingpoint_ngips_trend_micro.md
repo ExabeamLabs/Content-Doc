@@ -28,5 +28,4 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [cef-tippingPoint-network-alert](../Parsers/parserContent_cef-tippingpoint-network-alert.md)
 * [q-tippingpoint-sms-alert](../Parsers/parserContent_q-tippingpoint-sms-alert.md)
-* [qradar-tippingpoint-sms-alert](../Parsers/parserContent_qradar-tippingpoint-sms-alert.md)
 * [tippingpoint-sms-alert](../Parsers/parserContent_tippingpoint-sms-alert.md)
