@@ -37,6 +37,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Proventia Network IPS](../DataSources/datasource_proventia_network_ips_ibm.md)
 * [QRadar Network Security](../DataSources/datasource_qradar_network_security_ibm.md)
 * [Reveal(x)](../DataSources/datasource_reveal(x)_extrahop.md)
+* [SentinelOne](../DataSources/datasource_sentinelone_sentinelone.md)
 * [Snort](../DataSources/datasource_snort_snort.md)
 * [Sonicwall](../DataSources/datasource_sonicwall_sonicwall.md)
 * [Sophos Endpoint Protection](../DataSources/datasource_sophos_endpoint_protection_sophos.md)
@@ -49,6 +50,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Unified Security Gateway](../DataSources/datasource_unified_security_gateway_huawei.md)
 * [WAF F5](../DataSources/datasource_waf_f5_f5_networks.md)
 * [Zeek Network Security Monitor](../DataSources/datasource_zeek_network_security_monitor_zeek.md)
+* [Zeek Network Security Monitor](../DataSources/datasource_zeek_network_security_monitor_zeek_network_security_monitor.md)
 
 
 ### Exabeam Event Types
