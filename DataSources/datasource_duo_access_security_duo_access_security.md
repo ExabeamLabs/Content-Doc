@@ -36,10 +36,8 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [cef-duo-VPN-login](../Parsers/parserContent_cef-duo-vpn-login.md)
 * [cef-duo-VPN-login-failed](../Parsers/parserContent_cef-duo-vpn-login-failed.md)
-* [duo-app-activity](../Parsers/parserContent_duo-app-activity.md)
 * [q-duo-app-activity-1](../Parsers/parserContent_q-duo-app-activity-1.md)
 * [q-duo-app-activity-2](../Parsers/parserContent_q-duo-app-activity-2.md)
 * [q-duo-app-activity-3](../Parsers/parserContent_q-duo-app-activity-3.md)
 * [q-duo-app-activity-4](../Parsers/parserContent_q-duo-app-activity-4.md)
 * [q-duo-app-activity-5](../Parsers/parserContent_q-duo-app-activity-5.md)
-* [s-duo-app-activity](../Parsers/parserContent_s-duo-app-activity.md)
