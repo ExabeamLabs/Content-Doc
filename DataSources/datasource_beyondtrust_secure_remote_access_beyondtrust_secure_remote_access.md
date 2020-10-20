@@ -33,4 +33,3 @@ _The following Parsers can be operationalized using log data from this data sour
 * [beyondtrust-app-activity](../Parsers/parserContent_beyondtrust-app-activity.md)
 * [beyondtrust-app-login](../Parsers/parserContent_beyondtrust-app-login.md)
 * [beyondtrust-failed-app-login](../Parsers/parserContent_beyondtrust-failed-app-login.md)
-* [beyondtrust-pi-password-access](../Parsers/parserContent_beyondtrust-pi-password-access.md)

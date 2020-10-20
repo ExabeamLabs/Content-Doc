@@ -24,5 +24,6 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-cisco-dns-response-1](../Parsers/parserContent_cef-cisco-dns-response-1.md)
 * [cef-cisco-dns-response-sk4](../Parsers/parserContent_cef-cisco-dns-response-sk4.md)
 * [cisco-dns-response](../Parsers/parserContent_cisco-dns-response.md)
+* [cisco-dns-response-1](../Parsers/parserContent_cisco-dns-response-1.md)
 * [q-cisco-dns-response](../Parsers/parserContent_q-cisco-dns-response.md)
 * [s-opendns-dns-response](../Parsers/parserContent_s-opendns-dns-response.md)
