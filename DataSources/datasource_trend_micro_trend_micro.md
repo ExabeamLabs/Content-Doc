@@ -31,4 +31,8 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [cef-trendmicro-database-failed-login](../Parsers/parserContent_cef-trendmicro-database-failed-login.md)
 * [cef-trendmicro-security-alert](../Parsers/parserContent_cef-trendmicro-security-alert.md)
+* [cef-trendmicro-security-alert-5](../Parsers/parserContent_cef-trendmicro-security-alert-5.md)
+* [cef-trendmicro-security-alert-6](../Parsers/parserContent_cef-trendmicro-security-alert-6.md)
+* [cef-trendmicro-security-alert-7](../Parsers/parserContent_cef-trendmicro-security-alert-7.md)
+* [cef-trendmicro-security-alert-8](../Parsers/parserContent_cef-trendmicro-security-alert-8.md)
 * [trendmicro-network-connection](../Parsers/parserContent_trendmicro-network-connection.md)

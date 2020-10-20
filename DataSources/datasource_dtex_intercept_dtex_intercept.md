@@ -37,4 +37,3 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-dtex-file-modified](../Parsers/parserContent_cef-dtex-file-modified.md)
 * [cef-dtex-file-moved](../Parsers/parserContent_cef-dtex-file-moved.md)
 * [cef-dtex-file-read](../Parsers/parserContent_cef-dtex-file-read.md)
-* [cef-dtex-file-renamed](../Parsers/parserContent_cef-dtex-file-renamed.md)
