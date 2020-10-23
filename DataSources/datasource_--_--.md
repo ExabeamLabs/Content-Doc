@@ -478,6 +478,8 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-microsoft-database-query](../Parsers/parserContent_cef-microsoft-database-query.md)
 * [cef-microsoft-dns-query](../Parsers/parserContent_cef-microsoft-dns-query.md)
 * [cef-microsoft-failed-app-login](../Parsers/parserContent_cef-microsoft-failed-app-login.md)
+* [cef-microsoft-graph-activity](../Parsers/parserContent_cef-microsoft-graph-activity.md)
+* [cef-microsoft-graph-activity-1](../Parsers/parserContent_cef-microsoft-graph-activity-1.md)
 * [cef-microsoft-password-change](../Parsers/parserContent_cef-microsoft-password-change.md)
 * [cef-microsoft-remote-logon](../Parsers/parserContent_cef-microsoft-remote-logon.md)
 * [cef-netapp-4624](../Parsers/parserContent_cef-netapp-4624.md)

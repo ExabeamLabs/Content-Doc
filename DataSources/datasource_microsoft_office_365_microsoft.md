@@ -50,7 +50,6 @@ _The following Parsers can be operationalized using log data from this data sour
 * [azure-process-created](../Parsers/parserContent_azure-process-created.md)
 * [cef-O365-dlp-email](../Parsers/parserContent_cef-o365-dlp-email.md)
 * [cef-O365-dlp-email-out-1](../Parsers/parserContent_cef-o365-dlp-email-out-1.md)
-* [cef-microsoft-graph-activity](../Parsers/parserContent_cef-microsoft-graph-activity.md)
 * [cef-o365-app-login](../Parsers/parserContent_cef-o365-app-login.md)
 * [cef-o365-dlp-alert](../Parsers/parserContent_cef-o365-dlp-alert.md)
 * [cef-o365-dlp-email](../Parsers/parserContent_cef-o365-dlp-email.md)
