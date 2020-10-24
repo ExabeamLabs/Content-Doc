@@ -16,6 +16,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [PostgreSQL](../DataSources/datasource_postgresql_postgresql.md)
 * [RangerAudit](../DataSources/datasource_rangeraudit_rangeraudit.md)
 * [SQL Server](../DataSources/datasource_sql_server_microsoft.md)
+* [Snowflake](../DataSources/datasource_snowflake_snowflake.md)
 * [SonarG](../DataSources/datasource_sonarg_jsonar.md)
 * [Sybase](../DataSources/datasource_sybase_sybase.md)
 * [Teradata RDBMS](../DataSources/datasource_teradata_rdbms_teradata.md)

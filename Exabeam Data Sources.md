@@ -687,6 +687,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Skyhigh Networks CASB](DataSources/datasource_skyhigh_networks_casb_skyhigh_networks.md)
 #### Snort
 * [Snort](DataSources/datasource_snort_snort.md)
+#### Snowflake
+* [Snowflake](DataSources/datasource_snowflake_snowflake.md)
 #### Sonicwall
 * [Sonicwall](DataSources/datasource_sonicwall_sonicwall.md)
 #### Sophos
