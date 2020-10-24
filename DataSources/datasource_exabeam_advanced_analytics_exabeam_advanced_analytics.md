@@ -31,3 +31,4 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [exa-app-activity-aa](../Parsers/parserContent_exa-app-activity-aa.md)
 * [exa-app-login](../Parsers/parserContent_exa-app-login.md)
+* [exa-app-login-aa](../Parsers/parserContent_exa-app-login-aa.md)
