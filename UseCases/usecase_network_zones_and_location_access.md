@@ -48,6 +48,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Cisco Adaptive Security Appliance](../DataSources/datasource_cisco_adaptive_security_appliance_cisco.md)
 * [Cisco Call Manager](../DataSources/datasource_cisco_call_manager_cisco.md)
 * [Cisco Call Manager](../DataSources/datasource_cisco_call_manager_cisco_call_manager.md)
+* [Cisco Fire Power Devices](../DataSources/datasource_cisco_fire_power_devices_cisco.md)
 * [Cisco ISE](../DataSources/datasource_cisco_ise_cisco.md)
 * [Cisco Meraki MX appliances](../DataSources/datasource_cisco_meraki_mx_appliances_cisco.md)
 * [Cisco](../DataSources/datasource_cisco_cisco.md)

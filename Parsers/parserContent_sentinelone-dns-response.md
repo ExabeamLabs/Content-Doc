@@ -3,7 +3,7 @@
 {
 Name = sentinelone-dns-response
   DataType = "dns-response"
-  Conditions = [ """CEF:""", """dproc=Deep Visibility Endpoint""", """destinationServiceName=SentinelOne""", """dns""","""results:""" ]
+  Conditions = [ """CEF:""", """dproc=Deep Visibility Endpoint""", """destinationServiceName=SentinelOne""", """dns {""","""results:""" ]
   Fields = ${SentinelOneParserTemplates.sentinelone-activity.Fields} [
     """({event_name}dns)""",
     """\squery:\s*"+({query}[^"]+)""",

@@ -136,6 +136,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Cisco Console](DataSources/datasource_cisco_console_cisco.md)
 * [Cisco DHCP](DataSources/datasource_cisco_dhcp_cisco.md)
 * [Cisco Email Security Appliance](DataSources/datasource_cisco_email_security_appliance_cisco.md)
+* [Cisco Fire Power Devices](DataSources/datasource_cisco_fire_power_devices_cisco.md)
 * [Cisco Firepower](DataSources/datasource_cisco_firepower_cisco.md)
 * [Cisco ISE](DataSources/datasource_cisco_ise_cisco.md)
 * [Cisco Meraki MX appliances](DataSources/datasource_cisco_meraki_mx_appliances_cisco.md)

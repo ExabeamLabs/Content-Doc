@@ -3,7 +3,7 @@
 {
 Name = sentinelone-task-update
   DataType = "windows-task-created"
-  Conditions = [ """CEF:""", """dproc=Deep Visibility Endpoint""", """destinationServiceName=SentinelOne""", """schedTaskUpdate""" ]
+  Conditions = [ """CEF:""", """dproc=Deep Visibility Endpoint""", """destinationServiceName=SentinelOne""", """schedTaskUpdate {""" ]
   Fields = ${SentinelOneParserTemplates.sentinelone-activity.Fields} [
     """({event_name}schedTaskUpdate)""",
     """\scommandLine:\s*"+(?:\\*)"+({command_line}[^"\\]+)""",
