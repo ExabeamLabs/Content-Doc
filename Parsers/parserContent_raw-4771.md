@@ -6,13 +6,14 @@ Name = raw-4771
   Product = Microsoft Windows
   Lms = Direct
   DataType = "windows-4771"
-  TimeFormat = "MMM dd HH:mm:ss yyyy"
+  TimeFormat = "MM/dd/yyyy HH:mm:ss a"
   Conditions = [ "Kerberos pre-authentication failed" ]
   Fields = [
     """({event_name}Kerberos pre-authentication failed)""",
     """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
     """"event_time":"({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d)""",
+    """({time}\d\d\/\d\d\/\d\d\d\d\s\d\d:\d\d:\d\d\s(AM|PM))""",
     """exabeam_host=({host}[\w.-]+)""",
     """(?i)(((audit|failure)( |_)(audit|failure))|information)(,|s+)({host}[\w.-]+)(\s|,|"|$)""",
     """__li_source_path="*({host}[^"]+)"""",
@@ -20,11 +21,11 @@ Name = raw-4771
     """<?Computer>?(Name)?["\s:=]*({host}[\w\.-]+)(\s|,|"|</Computer>|$)""",
     """Computer(\w+)?["\s]*(:|=)\s*"?({host}.+?)("|\s|;)""",
     """({event_code}4771)""",
-    """Account Information:\s*Security ID:\s*({user_sid}.+?)\s*Account""",
-    """Account Name:\s*({user}.+?)\s*Service Information""",
-    """Service Name:\s*\w+\/(?=\w)({domain}.+?)\s*Network Information""",
-    """Client Address:\s*(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)""",
-    """Failure Code:\s*({result_code}[\w]+)"""
+    """Account Information(:|=)\s*;*Security ID(:|=)\s*({user_sid}.+?)\s*;*Account""",
+    """Account Name(:|=)\s*({user}.+?)\s*;*Service Information""",
+    """Service Name(:|=)\s*\w+\/(?=\w)({domain}.+?)\s*;*Network Information""",
+    """Client Address(:|=)\s*(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)""",
+    """Failure Code(:|=)\s*({result_code}[\w]+)"""
   ]
   DupFields = ["host->dest_host"]
 }

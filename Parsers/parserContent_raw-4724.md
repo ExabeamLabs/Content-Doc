@@ -18,12 +18,13 @@ Name = raw-4724
       """({host}[^\/\s]+)\/Microsoft-Windows-Security-Auditing""",
       """Computer(\w+)?["\s]*(:|=)\s*"?({host}.+?)("|\s)""",
       """Computer : ({host}[\w\-]+)""",
+      """\w+\s*\d+\s\d+:\d+:\d+\s+(::ffff:)?({host}[\w\-.]+)"""
       """Subject:.+?Security ID:\s+({user_sid}.+?)\s+Account Name:""",
       """\s*Source Address:\s*(?:-|({src_ip}[^\s]+))\s*Source Port:""",
       """Subject:.+?Account Name:\s+({user}.+?)\s+Account Domain:\s+({domain}.+?)\s+Logon ID""",
       """Logon ID:\s+({logon_id}[^\s]+)""",
       """Target Account.+?Security ID:\s+(?:|({target_user_sid}.+?))\s+Account Name:\s+(?:|({target_user}.+?))\s+Account Domain:\s+({target_domain}[^",\s]+)"""
+      """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]+))"""
     ]
-    DupFields=[ "host->dest_host" ]
   }
 ```

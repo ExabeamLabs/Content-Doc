@@ -23,11 +23,12 @@ Name = raw-4672
       """Keywords=({outcome}.+?);?\s*(\w+=)""",
       """<Computer>({host}[^<]+)</Computer>""",
       """Computer(\w+)?["\s]*(:|=)\s*"?({host}[^\s";]+)""",
+      """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?({host}[\w\-.]+)"""
       """({event_code}4672)""",
       """Account Name(:|=)\s*(-|SYSTEM|({user}[^\s]+?))[\s;]*Account Domain(:|=)""",
       """Account Domain(:|=)\s*(-|({domain}[^\s]+?))[\s;]*Logon ID(:|=)""",
       """\s*Logon ID(:|=)\s*({logon_id}.+?)[\s;]*Privileges(:|=)\s*({privileges}.+?)(<|\s*User:|\s+\d+|,|\s*"|;|\s*$)"""
+      """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]+))"""
     ]
-    DupFields = ["host->dest_host"]
   }
 ```

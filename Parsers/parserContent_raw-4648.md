@@ -12,6 +12,7 @@ Name = raw-4648
       """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
       """({event_name}A logon was attempted using explicit credentials)""",
       """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+      """\w+\s*\d+\s\d+:\d+:\d+\s+(::ffff:)?({host}[\w\-.]+)""",
       """({event_code}4648)""",
       """Subject(:|=)[\s;]*Security ID(:|=)\s*({user_sid}.*?)[\s;]*Account Name(:|=)""",
       """Subject(:|=).+?Account Name(:|=)\s*(?:-|SYSTEM|({user}[^\s]*?))[\s;]*Account Domain(:|=)""",

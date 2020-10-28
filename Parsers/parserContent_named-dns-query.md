@@ -11,7 +11,7 @@ Name = named-dns-query
     Conditions = [ """: query: """, """named[""" ]
     Fields = [
       """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-      """\d\d:\d\d:\d\d ({host}\S+)""",
+      """\w+\s\d+\s\d+:\d+:\d+\s+(::ffff:)?({host}[\w\-.]+)""",
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """({time}\d\d-\w+-\d\d\d\d \d\d:\d\d:\d\d\.\d\d\d)""",
       """client\s*({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})#({src_port}\d+)(?:)""",

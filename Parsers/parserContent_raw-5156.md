@@ -14,12 +14,13 @@ Name = raw-5156
     """\WComputer\\*=({host}[\w\-.]+)""",
     """\WComputerName:\s*({host}[\w\-.]+)""",
     """({time}\w+ \d\d \d\d:\d\d:\d\d \d\d\d\d)\s+""",
+    """\w+\s*\d+\s*\d+:\d+:\d+\s(::ffff:)?({host}[\w\-.]+)"""
     """({event_code}5156)""",
     """({event_name}The Windows Filtering Platform has permitted a connection)""",
     """Process ID:\s*({pid}\d+)""",
     """Application Name:\s*({process}({directory}.+)[\\\/]({process_name}.+?))\s*Network Information:""",
-    """Direction:\s*({direction}Inbound).*Source Address:\s*({dest_ip}[^\s]*)\s*Source Port:\s*({dest_port}\d*)\s*Destination Address:\s*({src_ip}[^\s]*)\s*Destination Port:\s*({src_port}\d*)""",
-    """Direction:\s*({direction}Outbound).*Source Address:\s*({src_ip}[^\s]*)\s*Source Port:\s*({src_port}\d*)\s*Destination Address:\s*({dest_ip}[^\s]*)\s*Destination Port:\s*({dest_port}\d*)""",
+    """Direction:\s*({direction}Inbound).*Source Address:\s*(::ffff:)?({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s*Source Port:\s*({dest_port}\d*)\s*Destination Address:\s*(::ffff:)?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s*Destination Port:\s*({src_port}\d*)""",
+    """Direction:\s*({direction}Outbound).*Source Address:\s*(::ffff:)?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s*Source Port:\s*({src_port}\d*)\s*Destination Address:\s*(::ffff:)?({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s*Destination Port:\s*({dest_port}\d*)"""
     """Protocol:\s*({ms_protocol_num}\d*)""",
     """Layer Name:\s*({layer_name}[^\s]*)""",
   ]
