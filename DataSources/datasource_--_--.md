@@ -1180,7 +1180,6 @@ _The following Parsers can be operationalized using log data from this data sour
 * [s-checkpoint-firewall-allow](../Parsers/parserContent_s-checkpoint-firewall-allow.md)
 * [s-checkpoint-firewall-block](../Parsers/parserContent_s-checkpoint-firewall-block.md)
 * [s-cisco-amp-alert-1](../Parsers/parserContent_s-cisco-amp-alert-1.md)
-* [s-cisco-amp-alert-10](../Parsers/parserContent_s-cisco-amp-alert-10.md)
 * [s-cisco-amp-alert-11](../Parsers/parserContent_s-cisco-amp-alert-11.md)
 * [s-cisco-amp-alert-13](../Parsers/parserContent_s-cisco-amp-alert-13.md)
 * [s-cisco-amp-alert-14](../Parsers/parserContent_s-cisco-amp-alert-14.md)

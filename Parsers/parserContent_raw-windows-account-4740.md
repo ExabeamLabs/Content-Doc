@@ -18,11 +18,13 @@ Name = raw-windows-account-4740
         """Computer : ({host}[\w\-]+)""",
         """Computer(\w+)?["\s]*(:|=)\s*"?({host}.+?)("|\s)""",
         """"system_name":"({host}[^"]+)"""",
+        """\w+\s*\d+\s\d+:\d+:\d+\s+(::ffff:)?({host}[\w\-.]+)"""
         """Security,?(\srn=|\s+)?({record_id}\d+)""",       
         """Subject:.+?Account Name:\s+({caller_user}.+?)\s+Account Domain:\s+(?=\w)({caller_domain}.+?)\s+Logon ID:\s+({logon_id}[^\s]+)""",
         """Locked Out:\s+Security ID:\s+(%\{)?({user_sid}([\w\d\-]+?)|([^\s]+))\}?\s+Account Name:\s+(?=\w)({user}.+?)\s+Additional""",
-        """Caller Computer Name:\s+(\\+)?({src_host}[^\#\s",<]+)"""
+        """Caller Computer Name:\s+(\\+)?({src_host}[^\#\s",<]+)""",
+        """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]+))"""
         ]
-        DupFields=[ "host->dest_host", "caller_domain->domain" ]
+        DupFields=[ "caller_domain->domain" ]
  }
 ```

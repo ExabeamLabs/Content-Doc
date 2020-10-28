@@ -9,7 +9,7 @@ Name = syslog-5158
   TimeFormat = "EEE MMM dd HH:mm:ss yyyy"
   Conditions = [ """5158""", """The Windows Filtering Platform has permitted a bind to a local port""" ]
   Fields = [
-    """\w+ \d+ \d\d:\d\d:\d\d ({host}[\w\-.]+)""",
+    """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?({host}[\w\-.]+)""",
     """({time}\w+ \w+ \d\d \d\d:\d\d:\d\d \d\d\d\d)\s+""",
     """({event_code}5158)""",
     """\WComputer\\*=({host}[\w\-.]+)""",
@@ -19,8 +19,8 @@ Name = syslog-5158
     """Application Name:\s*({process}({directory}.+)[\\\/]({process_name}.+?))\s*Network Information:""",
     """Source Address:\s*(0\.0\.0\.0|({dest_ip}(?!::)[a-fA-F:\d.]+))?.+?\s*Source Port:\s*({dest_port}\d*)""",
     """Protocol:\s*({ms_protocol_num}\d*)""",
-    """Layer Name:\s*({layer_name}.*?)\s*Layer Run-Time ID"""
+    """Layer Name:\s*({layer_name}.*?)\s*Layer Run-Time ID""",
+    """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]+))""",
   ]
-  DupFields = [ "host->dest_host" ]
 }
 ```

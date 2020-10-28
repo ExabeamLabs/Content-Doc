@@ -15,6 +15,8 @@ Name = raw-4663-4
       """exabeam_host=({host}[\w.\-]+)""",
       """(?i)(((audit|success)( |_)(success|audit))|information)[\s,]({host}[\w\-.]+).*Subject:""",
       """({event_code}4663)""",
+      """({time}\w+\s\d+\s\d+:\d+:\d+\s\d+)""",
+      """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?({host}[\w\-.]+)""",
       """Subject(:|=).*?Security ID(:|=)\s*({user_sid}.+?)[\s;]*Account Name(:|=)\s*({user}.+?)[\s;]*Account Domain(:|=)\s*(NT AUTHORITY|({domain}.+?))[\s;]*Logon ID(:|=)\s*({logon_id}[^\s;]+)[\s;]*Object(:|=)""",
       """Object(:|=).*?Object Type(:|=)\s*({file_type}.+?)[\s;]*Object Name(:|=)\s*({file_path}({file_parent}.*?)({file_name}[^\\\/;]+?(\.({file_ext}[^\.;\\]+?))?))[\s;]*Handle ID(:|=)""",
       """Process Name(:|=)\s*(?:|({process}.+?))[\s;]*Access Request Information(:|=)""",
@@ -28,7 +30,8 @@ Name = raw-4663-4
       """"ObjectName":"(-|({file_path}({file_parent}.*?)({file_name}[^\\\/;]+?(\.({file_ext}[^\.;]+?))?)))\s*"""",
       """"ObjectType":"(-|({file_type}[^\s"]+))""",
       """"ProcessName":"(?: |({process}({directory}(?:[^";]+)?[\\\/])?({process_name}[^\\\/";]+?)))\s*"""",
+      """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]+))"""
     ]
-    DupFields = ["host->dest_host","directory->process_directory"]
+    DupFields = ["directory->process_directory"]
   }
 ```

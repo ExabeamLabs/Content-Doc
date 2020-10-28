@@ -10,7 +10,7 @@ Name = cisco-asa-process-created
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ "-111008", "%ASA-" ]
   Fields = [
-    """exabeam_host=(.+?@\s*)?({host}[\w.\-]+)""",
+    """exabeam_host=(::ffff:)?(.+?@\s*)?({host}[\w.\-]+)""",
     """({time}\w+ \d+ \d{4} \d\d:\d\d:\d\d)""",
     """%ASA\-({priority}\d+)\-({event_code}\d+)""",
     """User\s+'({user}[^']+)'""",
