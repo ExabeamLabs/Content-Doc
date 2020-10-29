@@ -15,7 +15,7 @@ Name = raw-ssh-login
     """<({time}\d+\s+\w+\s+\d+\s+\d+:\d+:\d+)\s""",
     """\s(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\.-]+)):?\s+sshd\[""",
     """\d{2}:\d{2}:\d{2}\s+({dest_host}[\w\.-]+)\s+auth\|""",
-    """sshd.+?Accepted ({auth}\S+) for (({domain}[^\\:]+)\\+)?({user}[\w.'\-\\$]+)""",
+    """sshd.+?Accepted ({auth}\S+) for (({domain}[^\\:]+)\\+)?({user}[\w.'\-\\$]+)(\s|$)""",
     """\s+from\s+({src_ip}[:0-9a-fA-F\.]+)""",
     """\s+from\s+(::[\w]+:)?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """({host}[\w.\-]+) sshd ({logon_id}\d+)""",
