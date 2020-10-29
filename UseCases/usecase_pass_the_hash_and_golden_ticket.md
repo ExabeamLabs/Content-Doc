@@ -44,7 +44,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [VMware ESXi](../DataSources/datasource_vmware_esxi_vmware.md)
 * [VMware Horizon](../DataSources/datasource_vmware_horizon_vmware.md)
 * [VMware VCenter](../DataSources/datasource_vmware_vcenter_vmware.md)
-* [VMware VDI](../DataSources/datasource_vmware_vdi_vmware.md)
 * [VMware View](../DataSources/datasource_vmware_view_vmware.md)
 * [Web Application Proxy](../DataSources/datasource_web_application_proxy_microsoft.md)
 * [Zebra wireless LAN management](../DataSources/datasource_zebra_wireless_lan_management_extreme_networks.md)

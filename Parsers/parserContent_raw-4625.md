@@ -10,6 +10,7 @@ Name = raw-4625
     Conditions = ["An account failed to log on", "Failure Reason"]
     Fields = [
       """({event_name}An account failed to log on)""",
+      """({event_code}4625)""",
       """timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)""""
       """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
       """({time}\d+\/\d+\/\d+\s+\d+:\d+:\d+\s+(am|AM|pm|PM))""",

@@ -126,7 +126,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [OneLogin](../DataSources/datasource_onelogin_onelogin.md)
 * [Oracle Access Manager](../DataSources/datasource_oracle_access_manager_oracle.md)
 * [Osirium](../DataSources/datasource_osirium_osirium.md)
-* [Password Manager Pro](../DataSources/datasource_password_manager_pro_password_manager_pro.md)
 * [Perforce](../DataSources/datasource_perforce_perforce.md)
 * [Phantom](../DataSources/datasource_phantom_phantom.md)
 * [Ping Identity](../DataSources/datasource_ping_identity_ping_identity.md)

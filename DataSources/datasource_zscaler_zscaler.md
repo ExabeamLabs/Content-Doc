@@ -31,4 +31,3 @@ _The following Parsers can be operationalized using log data from this data sour
 * [s-zscaler-web-activity-3](../Parsers/parserContent_s-zscaler-web-activity-3.md)
 * [s-zscaler-web-activity-4](../Parsers/parserContent_s-zscaler-web-activity-4.md)
 * [zscaler-proxy](../Parsers/parserContent_zscaler-proxy.md)
-* [zscaler-web-activity](../Parsers/parserContent_zscaler-web-activity.md)

@@ -23,5 +23,6 @@ Name = win-powershell-command
     """CommandInvocation\(.+?\):\s*\\*"({command_invocation}[^"\\]+)""",
     """Details:.+?CommandInvocation.+?ParameterBinding.+?value=\\"(function\s)?({command_module}[^\s\\,"]+)""",
    ]
+   DupFields = ["directory->process_directory"]
  }
 ```

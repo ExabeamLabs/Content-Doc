@@ -19,6 +19,7 @@ Name = cef-windows-4768
     """"targetUserName":"({user}[^"\s]+?)\s*"""",
     """"targetDomainName":"({domain}[^"\s]+?)\s*"""",
     """"status":"({result_code}[^"]+?)\s*"""",
+    """"ipAddress":"({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"""",
   ]
   DupFields = [ "host->dest_host" ]
 }

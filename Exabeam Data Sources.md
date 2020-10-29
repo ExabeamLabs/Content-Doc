@@ -98,8 +98,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Bromium
 * [Bromium Advanced Endpoint Security](DataSources/datasource_bromium_advanced_endpoint_security_bromium.md)
 * [Bromium Secure Platform](DataSources/datasource_bromium_secure_platform_bromium.md)
-#### BusinessObject
-* [BusinessObject](DataSources/datasource_businessobject_businessobject.md)
 #### CDS
 * [CDS](DataSources/datasource_cds_cds.md)
 #### Carbon Black
@@ -202,8 +200,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Darktrace
 * [Darktrace Enterprise Immune System](DataSources/datasource_darktrace_enterprise_immune_system_darktrace.md)
 * [Darktrace](DataSources/datasource_darktrace_darktrace.md)
-#### DatalakePortal
-* [DatalakePortal](DataSources/datasource_datalakeportal_datalakeportal.md)
 #### Datawatch Systems
 * [DataWatch](DataSources/datasource_datawatch_datawatch_systems.md)
 #### Dell
@@ -275,6 +271,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [FileSite](DataSources/datasource_filesite_filesite.md)
 #### FireEye
 * [FireEye Email Gateway](DataSources/datasource_fireeye_email_gateway_fireeye.md)
+* [FireEye Email Security (EX)](DataSources/datasource_fireeye_email_security_(ex)_fireeye.md)
 * [FireEye Email Threat Prevention (ETP)](DataSources/datasource_fireeye_email_threat_prevention_(etp)_fireeye.md)
 * [FireEye Endpoint Security (CM)](DataSources/datasource_fireeye_endpoint_security_(cm)_fireeye.md)
 * [FireEye Endpoint Security (HX)](DataSources/datasource_fireeye_endpoint_security_(hx)_fireeye.md)
@@ -300,12 +297,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [GTBInspector](DataSources/datasource_gtbinspector_gtb.md)
 #### Galaxy
 * [Galaxy](DataSources/datasource_galaxy_galaxy.md)
-#### Gallagher
-* [Gallagher Badge Access](DataSources/datasource_gallagher_badge_access_gallagher.md)
 #### Gemalto
 * [Gemalto MFA](DataSources/datasource_gemalto_mfa_gemalto.md)
-#### Genetec
-* [Genetec](DataSources/datasource_genetec_genetec.md)
 #### GitHub
 * [GitHub](DataSources/datasource_github_github.md)
 #### Google
@@ -437,8 +430,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Lumension](DataSources/datasource_lumension_lumension.md)
 #### Lyrix
 * [Lyrix](DataSources/datasource_lyrix_lyrix.md)
-#### MIPS
-* [MIPS](DataSources/datasource_mips_mips.md)
 #### MSDHCP
 * [MSDHCP](DataSources/datasource_msdhcp_msdhcp.md)
 #### Malwarebytes
@@ -475,7 +466,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Microsoft NPS](DataSources/datasource_microsoft_nps_microsoft.md)
 * [Microsoft Office 365](DataSources/datasource_microsoft_office_365_microsoft.md)
 * [Microsoft OneDrive](DataSources/datasource_microsoft_onedrive_microsoft.md)
-* [Microsoft Outlook on the web](DataSources/datasource_microsoft_outlook_on_the_web_microsoft.md)
 * [Microsoft RRA](DataSources/datasource_microsoft_rra_microsoft.md)
 * [Microsoft Radius](DataSources/datasource_microsoft_radius_microsoft.md)
 * [Microsoft SQL Server](DataSources/datasource_microsoft_sql_server_microsoft.md)
@@ -487,7 +477,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Microsoft](DataSources/datasource_microsoft_microsoft.md)
 * [NetApp](DataSources/datasource_netapp_microsoft.md)
 * [SQL Server](DataSources/datasource_sql_server_microsoft.md)
-* [SharePoint](DataSources/datasource_sharepoint_microsoft.md)
 * [Web Application Proxy-TLS Gateway](DataSources/datasource_web_application_proxy-tls_gateway_microsoft.md)
 * [Web Application Proxy](DataSources/datasource_web_application_proxy_microsoft.md)
 * [Windows Defender](DataSources/datasource_windows_defender_microsoft.md)
@@ -500,7 +489,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Mimecast](DataSources/datasource_mimecast_mimecast.md)
 * [Targeted Threat Protection - URL](DataSources/datasource_targeted_threat_protection_-_url_mimecast.md)
 #### MobileIron
-* [MobileIron EMM](DataSources/datasource_mobileiron_emm_mobileiron.md)
 * [MobileIron](DataSources/datasource_mobileiron_mobileiron.md)
 #### Morphisec
 * [Morphisec EPTP](DataSources/datasource_morphisec_eptp_morphisec.md)
@@ -584,7 +572,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [PicturePerfect](DataSources/datasource_pictureperfect_pictureperfect.md)
 #### Ping Identity
 * [Ping Identity](DataSources/datasource_ping_identity_ping_identity.md)
-* [PingAccess](DataSources/datasource_pingaccess_ping_identity.md)
 * [PingID](DataSources/datasource_pingid_ping_identity.md)
 * [PingOne](DataSources/datasource_pingone_ping_identity.md)
 #### PostScript
@@ -671,8 +658,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [SentinelOne](DataSources/datasource_sentinelone_sentinelone.md)
 #### ServiceNow
 * [ServiceNow](DataSources/datasource_servicenow_servicenow.md)
-#### SharePoint
-* [SharePoint](DataSources/datasource_sharepoint_sharepoint.md)
 #### Shibboleth
 * [Shibboleth IdP](DataSources/datasource_shibboleth_idp_shibboleth.md)
 * [Shibboleth SSO](DataSources/datasource_shibboleth_sso_shibboleth.md)
@@ -790,7 +775,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [VMware Horizon](DataSources/datasource_vmware_horizon_vmware.md)
 * [VMware NSX](DataSources/datasource_vmware_nsx_vmware.md)
 * [VMware VCenter](DataSources/datasource_vmware_vcenter_vmware.md)
-* [VMware VDI](DataSources/datasource_vmware_vdi_vmware.md)
 * [VMware View](DataSources/datasource_vmware_view_vmware.md)
 #### Vanderbilt
 * [Vanderbilt](DataSources/datasource_vanderbilt_vanderbilt.md)

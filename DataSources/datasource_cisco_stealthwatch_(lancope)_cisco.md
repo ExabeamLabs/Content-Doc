@@ -26,7 +26,6 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-stealthwatch-network-alert](../Parsers/parserContent_cef-stealthwatch-network-alert.md)
 * [leef-stealthwatch-network-alert](../Parsers/parserContent_leef-stealthwatch-network-alert.md)
 * [s-stealthwatch-network-alert](../Parsers/parserContent_s-stealthwatch-network-alert.md)
-* [s-stealthwatch-network-alert-1](../Parsers/parserContent_s-stealthwatch-network-alert-1.md)
 * [stealthwatch-network-alert](../Parsers/parserContent_stealthwatch-network-alert.md)
 * [stealthwatch-network-alert-1](../Parsers/parserContent_stealthwatch-network-alert-1.md)
 * [stealthwatch-network-alert-2](../Parsers/parserContent_stealthwatch-network-alert-2.md)
