@@ -9,7 +9,7 @@ Name = cef-duo-app-activity
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """ destinationServiceName=DUO """ ]
   Fields = [
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z) ({host}.+?) Skyformation """,
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z) .+? Skyformation """,
     """\WdestinationServiceName=(|({app}.+?))(\s+\w+=|\s*$)""",
     """\WflexString1=(|({activity}.+?))(\s+\w+=|\s*$)""",
     """\Wcat=({activity}.+?)(\s+\w+=|\s*$)""",

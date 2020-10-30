@@ -11,7 +11,6 @@ Name = cef-cisco-dns-response-sk4
   Conditions = [ """CEF:""", """|Skyformation""", """requestClientApplication=""", """Umbrella""", """cs6Label=raw-event""", """"queryType":"""", """"responseCode":"""" ]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """({host}[\w\-.]+)\s+Skyformation """,
     """"timestamp":"({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """"mostGranularIdentity":"({user}[^",\(\)\\\s]+)"""",
     """"mostGranularIdentity":"({user_lastname}[^",]+),\s*({user_firstname}[^",]+?)\s*(\(({domain}[^\(\)]+)\))?\s*\((({user_email}[^@"]+@[^@"]+)|({user}[^\(\)]+))\)""",

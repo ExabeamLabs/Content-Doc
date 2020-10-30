@@ -9,7 +9,7 @@ Name = skyformation-security-alert
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """|Skyformation|SkyFormation Cloud Apps Security|""", """cat=security-alert""", """|general-alert|""", """destinationServiceName=Azure""", """requestClientApplication=Azure"""]
   Fields = [
-    """({time}\d+-\d+-\d+T\d+:\d+:\d+.\d+Z)\s+({host}[^\s]+)\s+Skyformation""",   
+    """({time}\d+-\d+-\d+T\d+:\d+:\d+.\d+Z)\s+[^\s]+\s+Skyformation""",   
     """msg=({additional_info}.+?)\s+(\w+=|$)""",
     """flexString1=({activity}.+?)\s*\w+=""",
     """request=({outcome}.+?)\s*\w+=""",

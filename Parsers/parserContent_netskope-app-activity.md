@@ -9,7 +9,6 @@ Name = netskope-app-activity
   TimeFormat = "epoch_sec"
   Conditions = [""""app": """, """"userkey": """, """"category": """, """"browser_session_id": """]
   Fields = [
-    """({host}[\w\-.]+)\s+Skyformation""",
     """"hostname":\s*"({dest_host}[^"]+)""",
     """"timestamp":\s*({time}\d+)""",
     """"app":\s*"\[?({app}[^"\]]+)""",

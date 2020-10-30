@@ -12,7 +12,7 @@ Name = cef-onedrive-file-activity
     Fields = [
     """exabeam_host=({host}[^\s]+)""",
     """"CreationTime\\*"+:\\*\s*"+({time}[^\\"]+)""",
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+\w) ({host}[\w\-.]+) Skyformation""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+\w) [\w\-.]+ Skyformation""",
     """\Wfname=\s*({file_name}.+?(\.({file_ext}[^\.\s]+))?)\s+(\w+=|$)""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
     """\Wsuser=(({user_email}[^\s@]+@[^\s@]+)|({user}[^\s]+?))\s+(\w+=|$)""",

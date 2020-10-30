@@ -35,6 +35,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Badgepoint](../DataSources/datasource_badgepoint_badgepoint.md)
 * [Barracuda Firewall](../DataSources/datasource_barracuda_firewall_barracuda.md)
 * [BeyondTrust PasswordSafe](../DataSources/datasource_beyondtrust_passwordsafe_beyondtrust.md)
+* [BeyondTrust Privileged Identity](../DataSources/datasource_beyondtrust_privileged_identity_beyondtrust.md)
 * [BeyondTrust Secure Remote Access](../DataSources/datasource_beyondtrust_secure_remote_access_beyondtrust_secure_remote_access.md)
 * [Big-IP](../DataSources/datasource_big-ip_f5_networks.md)
 * [Bitglass CASB](../DataSources/datasource_bitglass_casb_bitglass.md)

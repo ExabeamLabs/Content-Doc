@@ -12,7 +12,10 @@ Name = f5-network-alert-2
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\w+ \d+ \d\d:\d\d:\d\d ({host}[\w\-.]+)""",
     """\Wtmm\d+\[\d+\]:\s* \d+:\d+: ({alert_name}.+? SSL) peers ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\.({src_port}\d+):({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\.({dest_port}\d+)""",
+    """\s({alert_type}\w+)\s*tmm""",
+    """({alert_name}SSL Handshake failed)""",
+    """({alert_name}Connection error:[^:]+)""",
+    """({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):({src_port}\d+) -> ({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):({dest_port}\d+)"""
   ]
-  DupFields = [ "alert_name->alert_type" ]
 }
 ```

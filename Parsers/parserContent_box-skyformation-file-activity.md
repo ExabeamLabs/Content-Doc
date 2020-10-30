@@ -11,8 +11,6 @@ Name = box-skyformation-file-activity
   Conditions = [ """|Skyformation|""", """destinationServiceName=Box""", """"item_type":"""", """"item_name":"""" ]
   Fields = [
     """"+created_at"+:"+({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d([\+\-]\d\d:\d\d)?)""",
-    """exabeam_host=({host}[^\s]+)""",
-    """({host}[\w\-.]+) Skyformation""",
     """\ssrc=({src_ip}[^\s]+)""",
     """created_by":.+?"login":"(anonymous|({user}[^\s@"]+))""",
     """created_by":.+?"login":"({user_email}[^\s@"]+@[^\s@"]+)""",

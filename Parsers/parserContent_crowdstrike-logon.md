@@ -10,7 +10,6 @@ Name = crowdstrike-logon
     Conditions = [ """"event_simpleName":"UserLogon"""", """"aid"""" ]
     Fields = [
       """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-      """({host}[\w\-.]+)\s+Skyformation""",
       """"aip":"({dest_ip}[^"]+)""",
       """suser=({user}[^\s]+)""",
       """suid=({sid}[^\s]+)""", 

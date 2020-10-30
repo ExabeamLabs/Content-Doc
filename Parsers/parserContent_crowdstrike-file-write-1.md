@@ -11,7 +11,6 @@ Name = crowdstrike-file-write-1
     Conditions = [ """"event_simpleName":""", """"DirectoryCreate"""" ]
     Fields = [
       """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-      """({host}[\w\-.]+)\s+Skyformation""",
       """"timestamp":\s*"({time}\d+)""",
       """"event_simpleName":\s*"({event_code}[^"]+)""",
       """"aid":\s*"({aid}[^"]+)""",

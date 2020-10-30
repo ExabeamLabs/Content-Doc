@@ -9,7 +9,6 @@ Name = cef-servicenow-file-operation-2
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """CEF:""", """|Skyformation|""", """destinationServiceName=ServiceNow""" ]
   Fields = [
-    """({host}[\w\-.]+)\s+Skyformation""",
     """"sys_created_on":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """requestClientApplication=({app}.+?)\s+(\w+=|$)""",
     """\Wduser=(|({object}.+?))(\s+\w+=|\s*$)""",

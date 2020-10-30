@@ -9,7 +9,6 @@ Name = cef-netskope-alert-1
   TimeFormat = "epoch_sec"
   Conditions = [ """CEF:""", """|Skyformation|""", """destinationServiceName=Netskope""", """"alert":"yes"""" ]
   Fields = [
-    """({host}[\w\-.]+)\s+Skyformation""",
     """"_insertion_epoch_timestamp"":({time}\d+)""",
     """"timestamp":({time}\d+)""",
     """"user":"(({user_email}[^@"\s]+@[^@"\s]+)|(({domain}[^"@\\\/\s]+)[\\\/]+)?({user}[^"@\\\/\s]+))"""",

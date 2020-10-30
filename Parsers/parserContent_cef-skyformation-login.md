@@ -11,9 +11,8 @@ Name = cef-skyformation-login
   Fields = [
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",   
     """\Wend=({time}\d+)""",
-    """exabeam_host=({host}[^\s]+)""",
     """(created_at|eventTime)"+:"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """\d+-\d+-\d+T\d+:\d+:\d+\.\d+\w ({host}[\w\-.]+) Skyformation""",
+    """\d+-\d+-\d+T\d+:\d+:\d+\.\d+\w [\w\-.]+ Skyformation""",
     """([^\|]*\|){5}({activity}[^\|]+)""",
     """\WdestinationServiceName=(|({event_subtype}.+?))(\s+\w+=|\s*$)""",
     """\Wdproc=(|({dproc}.+?))(\s+\w+=|\s*$)""",

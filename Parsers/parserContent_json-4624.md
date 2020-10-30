@@ -9,7 +9,7 @@ Name = json-4624
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
     Conditions = ["""4624""", """"AuthenticationPackageName":""""]
     Fields = [
-      """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s({host}[^\s]+)\sSkyformation""",
+      """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]+\sSkyformation""",
       """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """"@timestamp"*:"*({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d+Z)""",
       """"Computer":"({host}[^"]+)""",

@@ -19,6 +19,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Avecto Defendpoint](../DataSources/datasource_avecto_defendpoint_avecto.md)
 * [Axway SFTP](../DataSources/datasource_axway_sftp_axway.md)
 * [Barracuda Email Security Gateway](../DataSources/datasource_barracuda_email_security_gateway_barracuda.md)
+* [BeyondTrust Privileged Identity](../DataSources/datasource_beyondtrust_privileged_identity_beyondtrust.md)
 * [BeyondTrust Secure Remote Access](../DataSources/datasource_beyondtrust_secure_remote_access_beyondtrust_secure_remote_access.md)
 * [Big-IP](../DataSources/datasource_big-ip_f5_networks.md)
 * [Bitglass CASB](../DataSources/datasource_bitglass_casb_bitglass.md)

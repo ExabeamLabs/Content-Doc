@@ -10,7 +10,6 @@ Name = cylance-alert-2
   Conditions = [ """|Skyformation|""", """destinationServiceName=CylanceProtect""", """externalID="""]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """\s({host}[\w\-.]+)\s+Skyformation""",
     """\d+\s+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3}Z)\s+""",
     """\WexternalID=({src_host}[\w.\-]+)""",
     """\Woutcome=({outcome}[^\s]+)""",

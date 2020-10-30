@@ -9,7 +9,6 @@ Name = cef-tenable-security-alert
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """dpriv=VULNERABILITY""","""destinationServiceName=Tenable.io""", """ cat=security-alert """ ]
   Fields = [
-    """\s({host}[\w\-.]+)\s+Skyformation""",
     """\WflexString1=(|({alert_name}.+?))(\s+\w+=|\s*$)""",
     """\Wext_pluginFamily=(|({alert_type}.+?))(\s+\w+=|\s*$)""",
     """\Wext_pluginName=(|({scan_name}.+?))(\s+\w+=|\s*$)""",

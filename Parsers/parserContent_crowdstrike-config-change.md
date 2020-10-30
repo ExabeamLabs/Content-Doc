@@ -10,7 +10,6 @@ Name = crowdstrike-config-change
     Conditions = [ """"event_simpleName":"Firewall""" ]
     Fields = [
       """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-      """\s({host}[\w\-.]+)\s+Skyformation""",
       """"timestamp":"({time}\d+)""",
       """"event_simpleName":"({activity}[^"]+)""",
       """"aid":"({aid}[^"]+)""",

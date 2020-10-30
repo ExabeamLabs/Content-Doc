@@ -11,7 +11,6 @@ Name = falcon-dns-request
     Conditions = [ """"event_simpleName":""", """"DnsRequest"""", """"RequestType":""" ]
     Fields = [
       """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-      """({host}[\w\-.]+)\s+Skyformation""",
       """"timestamp":\s*"({time}\d+)"""",
       """"DomainName":\s*"({query}[^\"]+)"""",
       """"DomainName":\s*"({query}[^\"]+\.({top_query}\w+\.(?i)(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za)))"""",
