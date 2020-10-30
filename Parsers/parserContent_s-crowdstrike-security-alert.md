@@ -10,7 +10,6 @@ Name = s-crowdstrike-security-alert
   Conditions = [ """"eventType":""", """"DetectionSummaryEvent"""" ]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """\s({host}[\w\-.]+)\s+Skyformation""",
     """"eventCreationTime":\s*({time}\d+)""",
     """"DetectName":\s*"({alert_type}[^"]+)""",
     """"DetectDescription":\s*"({alert_name}[^"]+)""",

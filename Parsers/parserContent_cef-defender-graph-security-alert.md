@@ -9,7 +9,7 @@ Name = cef-defender-graph-security-alert
    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
    Conditions = ["""CEF:""", """|security-threat-detected|""", """dproc=Graph Security Alerts""", """provider":"Microsoft Defender ATP""" ]
    Fields = [
-     """\s({time}\d+-\d+-\d+T\d+:\d+:\d+.\d+Z)\s+({host}[^\s]+)\s+Skyformation""",
+     """\s({time}\d+-\d+-\d+T\d+:\d+:\d+.\d+Z)\s+[^\s]+\s+Skyformation""",
      """"+hostStates"+:.+?fqdn"+:"+({host}[^"]+)""",
      """"+hostStates"+:.+?privateIpAddress"+:"+({src_ip}[^"]+)""",
      """"+hostStates"+:.+?publicIpAddress"+:"+({dest_ip}[^"]+)""",

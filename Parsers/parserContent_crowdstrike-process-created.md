@@ -11,7 +11,6 @@ Name = crowdstrike-process-created
     Conditions = [ """"event_simpleName":""", """"ProcessRollup2"""" ]
     Fields = [
       """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-      """({host}[\w\-.]+)\s+Skyformation""",
       """"aip":\s*"({host}[^"]+)"""
       """"timestamp":\s*"({time}\d+)""",
       """"event_simpleName":\s*"({event_code}[^"]+)""",

@@ -10,7 +10,6 @@ Name = cef-cloudflare-net-connection
   Conditions = [ """CEF:""", """|Skyformation|""", """requestClientApplication=""", """destinationServiceName=Cloudflare""", """dproc=Firewall""" ]
   Fields = [
     """ext__occurred_at_=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
-    """({host}[\w\-.]+)\s+Skyformation""",
     """ext_action=({activity}[^\s]+)\s""",
     """suser=({user}[^\s]+)\s""",
     """ext_ua=({user_agent}.*?)\s*\w+=""",

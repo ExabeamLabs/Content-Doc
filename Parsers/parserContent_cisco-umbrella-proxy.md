@@ -10,7 +10,6 @@ Name = cisco-umbrella-proxy
   Conditions = [ """destinationServiceName=Cisco Umbrella """, """dproc=Proxy """, """ext_url=""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """({host}[\w\-.]+)\s+Skyformation """,
     """\W(destinationServiceName|requestClientApplication)=({app}.+?)(\s+\w+=|\s*$)""",
     """\Wsuser=(anonymous|({user}.+?))(\s+\w+=|\s*$)""",
     """"contentTpe"+:"+({mime}[^",]+)""",  

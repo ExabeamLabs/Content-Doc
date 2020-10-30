@@ -73,6 +73,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [syslog-symantec-dlp-alert-3](../Parsers/parserContent_syslog-symantec-dlp-alert-3.md)
 * [syslog-symantec-dlp-alert-5](../Parsers/parserContent_syslog-symantec-dlp-alert-5.md)
 * [syslog-symantec-dlp-alert-6](../Parsers/parserContent_syslog-symantec-dlp-alert-6.md)
+* [syslog-symantec-dlp-alert-7](../Parsers/parserContent_syslog-symantec-dlp-alert-7.md)
 * [syslog-symantec-usb-write](../Parsers/parserContent_syslog-symantec-usb-write.md)
 * [syslog-vontu-dlp-alert](../Parsers/parserContent_syslog-vontu-dlp-alert.md)
 * [vontu-dlp](../Parsers/parserContent_vontu-dlp.md)

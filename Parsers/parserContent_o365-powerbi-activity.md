@@ -10,7 +10,7 @@ Name = o365-powerbi-activity
   Conditions = [ """Workload""", """PowerBI""", """WorkspaceId""" ]
   Fields = [
     """"*CreationTime"*:\s*"*({time}\d+-\d+-\d+T\d+:\d+:\d+)"*""",
-    """({time}\d+-\d+-\d+T\d+:\d+:\d+.\d+Z)\s+({host}[\w\-.]+)\s+Skyformation""",
+    """({time}\d+-\d+-\d+T\d+:\d+:\d+.\d+Z)\s+[\w\-.]+\s+Skyformation""",
     """destinationServiceName=({app}.*?)\s*deviceInboundInterface""",
     """Workload"*:\s*"*({app}[^"]+)"*""",
     """ObjectId"*:\s*"*({object}[^"]+)"*""",

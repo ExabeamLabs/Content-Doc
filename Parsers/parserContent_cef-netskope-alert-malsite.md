@@ -9,7 +9,6 @@ Name = cef-netskope-alert-malsite
   TimeFormat = "epoch_sec"
   Conditions = [ """CEF:""", """|Skyformation|""", """"alert_type":"malsite"""", """destinationServiceName=Netskope""", """|security-threat-detected|""" ]
   Fields = [
-    """({host}[\w\-.]+)\s+Skyformation""",
     """"timestamp":({time}\d+)""",
     """"user":"(({user_email}[^@"\s]+@[^@"\s]+)|(({domain}[^"@\\\/\s]+)[\\\/]+)?({user}[^"@\\\/\s]+))"""",
     """"app":"({process}[^"]+)""",

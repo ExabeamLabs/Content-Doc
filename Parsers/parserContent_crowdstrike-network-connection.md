@@ -10,7 +10,6 @@ Name = crowdstrike-network-connection
     Conditions = [ """"event_simpleName":"NetworkConnectIP""" ]
     Fields = [
       """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-      """({host}[\w\-.]+)\s+Skyformation""",
       """"timestamp":"({time}\d+)""",
       """"event_simpleName":"({event_code}[^"]+)""",
       """"aid":"({aid}[^"]+)""",

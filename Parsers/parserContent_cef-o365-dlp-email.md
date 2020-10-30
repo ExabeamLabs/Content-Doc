@@ -9,7 +9,7 @@ Name = cef-o365-dlp-email
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """|security-threat-detected|""", """cat=security-alert""", """=Office 365""", """act=send-mail""", """"MessageTraceId":"""", """"EventType":"""" ]
   Fields = [
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d+Z\s+({host}[\w\-.]+)\s+Skyformation"""
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d+Z\s+[\w\-.]+\s+Skyformation"""
     """filePath=<*({file_path}.+?)>*\s\w+=""",
     """fname=({file_name}.+?)\s*\w+=""",
     """"Domain":"({domain}[^"]+)""",

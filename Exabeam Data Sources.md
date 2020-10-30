@@ -76,6 +76,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### BeyondTrust
 * [BeyondTrust PasswordSafe](DataSources/datasource_beyondtrust_passwordsafe_beyondtrust.md)
 * [BeyondTrust PowerBroker](DataSources/datasource_beyondtrust_powerbroker_beyondtrust.md)
+* [BeyondTrust Privileged Identity](DataSources/datasource_beyondtrust_privileged_identity_beyondtrust.md)
 #### BeyondTrust Secure Remote Access
 * [BeyondTrust Secure Remote Access](DataSources/datasource_beyondtrust_secure_remote_access_beyondtrust_secure_remote_access.md)
 #### BitDefender

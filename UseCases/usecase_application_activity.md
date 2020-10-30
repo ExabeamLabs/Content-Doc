@@ -14,6 +14,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Atlassian BitBucket](../DataSources/datasource_atlassian_bitbucket_atlassian_bitbucket.md)
 * [Auditbeat](../DataSources/datasource_auditbeat_unix.md)
 * [Barracuda Firewall](../DataSources/datasource_barracuda_firewall_barracuda.md)
+* [BeyondTrust Privileged Identity](../DataSources/datasource_beyondtrust_privileged_identity_beyondtrust.md)
 * [BeyondTrust Secure Remote Access](../DataSources/datasource_beyondtrust_secure_remote_access_beyondtrust_secure_remote_access.md)
 * [Bitglass CASB](../DataSources/datasource_bitglass_casb_bitglass.md)
 * [BlackBerry Protect](../DataSources/datasource_blackberry_protect_blackberry.md)

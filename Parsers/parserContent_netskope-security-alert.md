@@ -10,7 +10,6 @@ Name = netskope-security-alert
   Conditions = [ """"alert_type": """, """"alert": "yes"""", """"alert_name":"""]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """({host}[\w\-.]+)\s+Skyformation""",
     """"timestamp":\s*({time}\d+)""",
     """"hostname":\s*"({dest_host}[^"]+)""",
     """"policy":\s*"({alert_name}[^"]+)"""",

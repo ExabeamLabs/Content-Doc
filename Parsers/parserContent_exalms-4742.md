@@ -10,7 +10,7 @@ Name = exalms-4742
   Conditions = ["""@timestamp":""", """A computer account was changed.""" , """Service Principal Names:"""]
   Fields = [
     """"@timestamp"\s*:\s*"({time}.+?)"""",
-    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s({host}[^\s]+)\sSkyformation""",
+    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]+\sSkyformation""",
     """"computer_name"\s*:\s*"({host}.+?)"""",
     """({event_code}4742)""",
     """({event_name}A computer account was changed.)""",

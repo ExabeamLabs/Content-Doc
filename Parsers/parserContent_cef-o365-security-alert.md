@@ -9,7 +9,7 @@ Name = cef-o365-security-alert
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """|security-threat-detected|""", """cat=security-alert""", """destinationServiceName=Office 365""","""Security Alert Detected""", """act=detect""" ]
   Fields = [
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d+Z\s+({host}[\w\-.]+)\s+Skyformation"""
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d+Z\s+[\w\-.]+\s+Skyformation"""
     """({alert_type}({alert_name}IdentityProtection))"""
     """({alert_type}({alert_name}graph-identity-protection-risk-detection))"""
     """"source":"(generic|({alert_type}[^"]+))"""",

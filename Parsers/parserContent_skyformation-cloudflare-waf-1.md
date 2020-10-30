@@ -10,7 +10,7 @@ Name = skyformation-cloudflare-waf-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """|Skyformation|""", """destinationServiceName=Cloudflare""", """"ClientIP":"""", """"FirewallMatchesActions":""" ]
   Fields = [
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s+({host}[^\s]+)\s+Skyformation""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s+[^\s]+\s+Skyformation""",
     """"ClientDeviceType":"({device_type}[^"]+)""",
     """"ClientCountry":"({src_country}[^"]+)""",
     """"ClientIP":"(?:["]+|({src_ip}[A-Fa-f:\d.]+))""",

@@ -15,7 +15,6 @@ Name = cylance-process-alert
     """"image_name":"({process}({directory}(\w:)?(?:[^:\]]+)?[\\\/])?({process_name}[^\\\/"\]]+?))"""",
     """"file_hash_id":"({sha256_sum}[^"]+)"""",
     """"groups":"({user_group}[^"]+)"""",
-    """({host}\S+)\s+Skyformation """,
     """"device_id":"({device_id}[^"]+)"""",
     """outcome=({outcome}terminate)""",
     """ Category \[({alert_name}[^\]]+)\]""",

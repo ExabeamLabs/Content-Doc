@@ -10,11 +10,12 @@ Name = cef-sophos-security-alert-17
   Conditions = [ """"Event::Endpoint::WindowsFirewall::Blocked"""" ]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
-    """({host}[\w\-.]+)\s+Skyformation""",
     """"location":"({src_host}[\w\-.]+)"""",
     """"rt":\s*"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     """"when":\s*"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     """"name":\s*"({alert_name}[^:"]+)(:\s({target}[^"]+))?"""",
+    """\s({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+Z)\s""",
+    """host="({host}[^"]+)"""",
     """"name":\s*"({additional_info}[^"]+)""",
     """"type":\s*"({alert_type}[^"]+)""",
     """"dhost":\s*"({src_host}[^"]+)""",
@@ -24,6 +25,13 @@ Name = cef-sophos-security-alert-17
     """"(suser|source)":\s*"(n\/a|(([^\\\s"]*\s+[^\\"]*|({domain}[^\\"]+))\\+)?({user}[^\\\s"]+))"""",
     """"source_info":\s*\{[^\}]*?"ip":\s*"({src_ip}[A-Fa-f:\d.]+)""",
     """"id":\s*"({alert_id}[^"]+)""",
+    """alert_name="({alert_name}[^"]+)"""",
+    """alert_severity="({alert_severity}[^"]+)"""",
+    """alert_id="({alert_id}[^"]+)"""",
+    """alert_type="({alert_type}Event::Endpoint::[^"]+)"""",
+    """user="({user}[^"]+)"""",
+    """src_ip="({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
+    """rule_reason="({additional_info}.+?)\s*"""",
   ]
 }
 ```

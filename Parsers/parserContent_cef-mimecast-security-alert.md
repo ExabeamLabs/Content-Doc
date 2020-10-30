@@ -9,7 +9,7 @@ Name = cef-mimecast-security-alert
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """CEF:""", """destinationServiceName=Mimecast Email Security""" ]
   Fields = [
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z) ({host}[\w.\-]+) Skyformation""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z) [\w.\-]+ Skyformation""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
     """\Wext_identifiers_0_=(|({alert_name}.+?))(\s+\w+=|\s*$)""",
     """\Wext_id=(|({alert_id}.+?))(\s+\w+=|\s*$)""",

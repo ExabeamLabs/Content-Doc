@@ -9,7 +9,7 @@ Name = cef-security-graph-alert
  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
  Conditions = [ """CEF:""", """|sk4-security-threat-detected|security-threat-detected|""", """dproc=Graph Security Alerts"""]
  Fields = [
-   """\s({time}\d+-\d+-\d+T\d+:\d+:\d+.\d+Z)\s+({host}[^\s]+)\s+Skyformation""",
+   """\s({time}\d+-\d+-\d+T\d+:\d+:\d+.\d+Z)\s+[^\s]+\s+Skyformation""",
    """"+description"+:"+({additional_info}[^"]+)\"+""",
    """dpriv=({alert_type}.+?)\s\w+=""",
    """"+subProvider"+:"+({alert_type}[^"]+)""",
