@@ -11,8 +11,8 @@ Name = crowdstrike-security-alert-2
     Fields = [
       """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
       """"ProcessStartTime":({time}\d+)""",
+      """"UserName":"({user}[^"@]+)(@({src_host}[^"]+))?"""",
       """"ComputerName":"({src_host}[^"]+)"""",
-      """"UserName":"({user}[^"]+)"""",
       """"DetectName":"({alert_name}[^"]+)"""",
       """"ExternalApiType":"({alert_type}[^"]+)"""",
       """"DetectDescription":"({additional_info}[^"]+)"""",
