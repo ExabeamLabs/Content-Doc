@@ -24,4 +24,3 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [cef-tripwire-file-alert](../Parsers/parserContent_cef-tripwire-file-alert.md)
 * [tripwire-file-alert-1](../Parsers/parserContent_tripwire-file-alert-1.md)
-* [tripwire-file-alert-2](../Parsers/parserContent_tripwire-file-alert-2.md)
