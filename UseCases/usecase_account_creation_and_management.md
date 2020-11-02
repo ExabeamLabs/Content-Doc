@@ -216,6 +216,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [SSL Open VPN](../DataSources/datasource_ssl_open_vpn_ssl_open_vpn.md)
 * [SVN](../DataSources/datasource_svn_svn.md)
 * [Salesforce](../DataSources/datasource_salesforce_salesforce.md)
+* [SecurID](../DataSources/datasource_securid_rsa.md)
 * [Secure Computing SafeWord](../DataSources/datasource_secure_computing_safeword_secure_computing.md)
 * [Secure Envoy](../DataSources/datasource_secure_envoy_secure_envoy.md)
 * [SecureAuth Login](../DataSources/datasource_secureauth_login_secureauth.md)
