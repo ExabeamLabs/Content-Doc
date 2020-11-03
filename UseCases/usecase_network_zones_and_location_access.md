@@ -20,6 +20,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [AssetView](../DataSources/datasource_assetview_assetview.md)
 * [Atlassian BitBucket](../DataSources/datasource_atlassian_bitbucket_atlassian_bitbucket.md)
 * [Auditbeat](../DataSources/datasource_auditbeat_unix.md)
+* [Avaya Ethernet Routing Switch](../DataSources/datasource_avaya_ethernet_routing_switch_avaya.md)
 * [Avaya VPN](../DataSources/datasource_avaya_vpn_avaya_vpn.md)
 * [Avecto Defendpoint](../DataSources/datasource_avecto_defendpoint_avecto.md)
 * [Axway SFTP](../DataSources/datasource_axway_sftp_axway.md)
