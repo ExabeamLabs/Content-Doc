@@ -103,6 +103,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [McAfee IDPS](../DataSources/datasource_mcafee_idps_mcafee.md)
 * [McAfee NSM](../DataSources/datasource_mcafee_nsm_mcafee.md)
 * [McAfee Network Security Platform (IPS)](../DataSources/datasource_mcafee_network_security_platform_(ips)_mcafee.md)
+* [Mcafee EPO](../DataSources/datasource_mcafee_epo_mcafee.md)
 * [Microsoft Azure](../DataSources/datasource_microsoft_azure_microsoft.md)
 * [Microsoft CAS](../DataSources/datasource_microsoft_cas_microsoft.md)
 * [Microsoft Cloud App Security (MCAS)](../DataSources/datasource_microsoft_cloud_app_security_(mcas)_microsoft.md)

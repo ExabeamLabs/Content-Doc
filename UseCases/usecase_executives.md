@@ -123,6 +123,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Malwarebytes Incident Response](../DataSources/datasource_malwarebytes_incident_response_malwarebytes_incident_response.md)
 * [McAfee Endpoint Security](../DataSources/datasource_mcafee_endpoint_security_mcafee.md)
 * [McAfee Web Gateway](../DataSources/datasource_mcafee_web_gateway_mcafee.md)
+* [Mcafee EPO](../DataSources/datasource_mcafee_epo_mcafee.md)
 * [Microsoft Azure](../DataSources/datasource_microsoft_azure_microsoft.md)
 * [Microsoft CAS](../DataSources/datasource_microsoft_cas_microsoft.md)
 * [Microsoft Cloud App Security (MCAS)](../DataSources/datasource_microsoft_cloud_app_security_(mcas)_microsoft.md)

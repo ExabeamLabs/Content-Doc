@@ -54,6 +54,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Atlassian BitBucket](DataSources/datasource_atlassian_bitbucket_atlassian_bitbucket.md)
 #### Attivo
 * [BOTsink](DataSources/datasource_botsink_attivo.md)
+#### Avaya
+* [Avaya Ethernet Routing Switch](DataSources/datasource_avaya_ethernet_routing_switch_avaya.md)
 #### Avaya VPN
 * [Avaya VPN](DataSources/datasource_avaya_vpn_avaya_vpn.md)
 #### Avecto
@@ -453,6 +455,19 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [McAfee NSM](DataSources/datasource_mcafee_nsm_mcafee.md)
 * [McAfee Network Security Platform (IPS)](DataSources/datasource_mcafee_network_security_platform_(ips)_mcafee.md)
 * [McAfee Web Gateway](DataSources/datasource_mcafee_web_gateway_mcafee.md)
+* [Mcafee EPO](DataSources/datasource_mcafee_epo_mcafee.md)
+#### Mcafee
+* [MDAM](DataSources/datasource_mdam_mcafee.md)
+* [McAfee Advanced Threat Defense](DataSources/datasource_mcafee_advanced_threat_defense_mcafee.md)
+* [McAfee DLP](DataSources/datasource_mcafee_dlp_mcafee.md)
+* [McAfee Email Protection](DataSources/datasource_mcafee_email_protection_mcafee.md)
+* [McAfee Endpoint Security](DataSources/datasource_mcafee_endpoint_security_mcafee.md)
+* [McAfee Enterprise Security Manager](DataSources/datasource_mcafee_enterprise_security_manager_mcafee.md)
+* [McAfee IDPS](DataSources/datasource_mcafee_idps_mcafee.md)
+* [McAfee NSM](DataSources/datasource_mcafee_nsm_mcafee.md)
+* [McAfee Network Security Platform (IPS)](DataSources/datasource_mcafee_network_security_platform_(ips)_mcafee.md)
+* [McAfee Web Gateway](DataSources/datasource_mcafee_web_gateway_mcafee.md)
+* [Mcafee EPO](DataSources/datasource_mcafee_epo_mcafee.md)
 #### Microsoft
 * [Advanced Threat Analytics (ATA)](DataSources/datasource_advanced_threat_analytics_(ata)_microsoft.md)
 * [AppLocker](DataSources/datasource_applocker_microsoft.md)

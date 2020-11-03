@@ -7,6 +7,9 @@ Name = json-s-proofpoint-email-alert-2
     """"threat":\s*"({malware_url}[^"]+)""",
     """threatStatus":"({status}[^"]+)"""",
     """\Woutcome=({outcome}.+?)(\s+\w+=|\s*$)""",
+    """CEF:([^\|]*\|){6}({alert_severity}[^\|]+)""",
+    """"classification":"({alert_name}[^"]+)""",
+    """"threatType":"({alert_type}[^"]+)""",
   ]
   DupFields = [ "attachment->file_name", "sender->external_address", "recipient->user_email" ]
 

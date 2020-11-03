@@ -9,6 +9,7 @@ Name = cef-o365-security-alert
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """|security-threat-detected|""", """cat=security-alert""", """destinationServiceName=Office 365""","""Security Alert Detected""", """act=detect""" ]
   Fields = [
+    """exabeam_host=({host}[^\s]+)""",
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d+Z\s+[\w\-.]+\s+Skyformation"""
     """({alert_type}({alert_name}IdentityProtection))"""
     """({alert_type}({alert_name}graph-identity-protection-risk-detection))"""
@@ -19,7 +20,7 @@ Name = cef-o365-security-alert
     """"riskType":"({threat_category}[^"]+)"""",
     """"ipAddress":"({src_ip}[A-Fa-f:\d.]+)"""",
     """\ssuser=({user_email}[^@]+@[^\s]+)\s""",
-    """"userDisplayName":"({user_fullname}[^"]+)"""",
+    """"userDisplayName":"({user_fullname}[^"]+?)\s*"""",
     """"userPrincipalName":"({user_email}[^"@\s]+@[^"@\s]+)"""",
     """msg=({additional_info}.+?)\s+(\w+=|$)""",
     """activity":"({activity}[^"]+)""",

@@ -179,6 +179,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Malwarebytes Endpoint Protection](../DataSources/datasource_malwarebytes_endpoint_protection_malwarebytes.md)
 * [Malwarebytes Incident Response](../DataSources/datasource_malwarebytes_incident_response_malwarebytes_incident_response.md)
 * [McAfee Endpoint Security](../DataSources/datasource_mcafee_endpoint_security_mcafee.md)
+* [Mcafee EPO](../DataSources/datasource_mcafee_epo_mcafee.md)
 * [Megaflex](../DataSources/datasource_megaflex_visma.md)
 * [Microsoft Azure Active Directory](../DataSources/datasource_microsoft_azure_active_directory_microsoft.md)
 * [Microsoft Azure](../DataSources/datasource_microsoft_azure_microsoft.md)
