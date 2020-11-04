@@ -110,6 +110,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [OneLogin](../DataSources/datasource_onelogin_onelogin.md)
 * [Oracle Access Manager](../DataSources/datasource_oracle_access_manager_oracle.md)
 * [Osirium](../DataSources/datasource_osirium_osirium.md)
+* [Palo Alto Aperture](../DataSources/datasource_palo_alto_aperture_palo_alto_networks.md)
 * [Perforce](../DataSources/datasource_perforce_perforce.md)
 * [Ping Identity](../DataSources/datasource_ping_identity_ping_identity.md)
 * [PingOne](../DataSources/datasource_pingone_ping_identity.md)
