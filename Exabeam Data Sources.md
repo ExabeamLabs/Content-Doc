@@ -62,8 +62,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Avecto Defendpoint](DataSources/datasource_avecto_defendpoint_avecto.md)
 #### Axway
 * [Axway SFTP](DataSources/datasource_axway_sftp_axway.md)
-#### Azura
-* [Multi Factor Auth](DataSources/datasource_multi_factor_auth_azura.md)
 #### BCN
 * [BCN](DataSources/datasource_bcn_bcn.md)
 #### BIND
@@ -474,6 +472,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Exchange](DataSources/datasource_exchange_microsoft.md)
 * [IIS](DataSources/datasource_iis_microsoft.md)
 * [Microsoft Azure Active Directory](DataSources/datasource_microsoft_azure_active_directory_microsoft.md)
+* [Microsoft Azure MFA](DataSources/datasource_microsoft_azure_mfa_microsoft.md)
 * [Microsoft Azure](DataSources/datasource_microsoft_azure_microsoft.md)
 * [Microsoft CAS](DataSources/datasource_microsoft_cas_microsoft.md)
 * [Microsoft Cloud App Security (MCAS)](DataSources/datasource_microsoft_cloud_app_security_(mcas)_microsoft.md)
