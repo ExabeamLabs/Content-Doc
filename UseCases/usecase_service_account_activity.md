@@ -270,7 +270,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Sophos Endpoint Protection](../DataSources/datasource_sophos_endpoint_protection_sophos.md)
 * [Sophos Invincea](../DataSources/datasource_sophos_invincea_sophos.md)
 * [Sophos SafeGuard](../DataSources/datasource_sophos_safeguard_sophos.md)
-* [Sophos XG Firewall](../DataSources/datasource_sophos_xg_firewall_sophos.md)
 * [Suricata](../DataSources/datasource_suricata_suricata.md)
 * [Swift](../DataSources/datasource_swift_swift.md)
 * [Swipes](../DataSources/datasource_swipes_swipes.md)

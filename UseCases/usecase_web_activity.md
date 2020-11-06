@@ -73,6 +73,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [SIGSCI](../DataSources/datasource_sigsci_sigsci.md)
 * [SentinelOne](../DataSources/datasource_sentinelone_sentinelone.md)
 * [Sonicwall](../DataSources/datasource_sonicwall_sonicwall.md)
+* [Sophos Endpoint Protection](../DataSources/datasource_sophos_endpoint_protection_sophos.md)
 * [Sophos Firewall](../DataSources/datasource_sophos_firewall_sophos.md)
 * [Sophos UTM](../DataSources/datasource_sophos_utm_sophos.md)
 * [Sophos XG Firewall](../DataSources/datasource_sophos_xg_firewall_sophos.md)

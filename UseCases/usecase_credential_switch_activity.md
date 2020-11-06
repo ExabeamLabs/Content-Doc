@@ -68,7 +68,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [SecureNet](../DataSources/datasource_securenet_securenet.md)
 * [SonicWALL Aventail](../DataSources/datasource_sonicwall_aventail_dell.md)
 * [Sonicwall](../DataSources/datasource_sonicwall_sonicwall.md)
-* [Sophos XG Firewall](../DataSources/datasource_sophos_xg_firewall_sophos.md)
+* [Sophos Endpoint Protection](../DataSources/datasource_sophos_endpoint_protection_sophos.md)
 * [Symantec Critical System Protection](../DataSources/datasource_symantec_critical_system_protection_symantec.md)
 * [Thycotic Secret Server](../DataSources/datasource_thycotic_secret_server_thycotic_secret_server.md)
 * [Unix Auditd](../DataSources/datasource_unix_auditd_unix.md)
