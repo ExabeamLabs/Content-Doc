@@ -26,4 +26,5 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [mysql-db-activity-json](../Parsers/parserContent_mysql-db-activity-json.md)
 * [syslog-mysql-dbquery](../Parsers/parserContent_syslog-mysql-dbquery.md)
+* [syslog-mysql-dbquery-1](../Parsers/parserContent_syslog-mysql-dbquery-1.md)
 * [syslog-mysql-dbwrite](../Parsers/parserContent_syslog-mysql-dbwrite.md)

@@ -88,7 +88,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Siemens](../DataSources/datasource_siemens_siemens.md)
 * [SonicWALL Aventail](../DataSources/datasource_sonicwall_aventail_dell.md)
 * [Sonicwall](../DataSources/datasource_sonicwall_sonicwall.md)
-* [Sophos XG Firewall](../DataSources/datasource_sophos_xg_firewall_sophos.md)
+* [Sophos Endpoint Protection](../DataSources/datasource_sophos_endpoint_protection_sophos.md)
 * [Swipes](../DataSources/datasource_swipes_swipes.md)
 * [Symmetry Access Control](../DataSources/datasource_symmetry_access_control_amag.md)
 * [Symmetry Access Control](../DataSources/datasource_symmetry_access_control_symmetry_access_control.md)

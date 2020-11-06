@@ -105,7 +105,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [SonicWALL Aventail](../DataSources/datasource_sonicwall_aventail_dell.md)
 * [Sonicwall](../DataSources/datasource_sonicwall_sonicwall.md)
 * [Sophos Endpoint Protection](../DataSources/datasource_sophos_endpoint_protection_sophos.md)
-* [Sophos XG Firewall](../DataSources/datasource_sophos_xg_firewall_sophos.md)
 * [Squid](../DataSources/datasource_squid_squid.md)
 * [Symantec CloudSOC](../DataSources/datasource_symantec_cloudsoc_symantec.md)
 * [Symantec DLP](../DataSources/datasource_symantec_dlp_symantec.md)

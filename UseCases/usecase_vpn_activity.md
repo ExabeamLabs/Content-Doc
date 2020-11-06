@@ -36,7 +36,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [SecureNet](../DataSources/datasource_securenet_securenet.md)
 * [SonicWALL Aventail](../DataSources/datasource_sonicwall_aventail_dell.md)
 * [Sonicwall](../DataSources/datasource_sonicwall_sonicwall.md)
-* [Sophos XG Firewall](../DataSources/datasource_sophos_xg_firewall_sophos.md)
+* [Sophos Endpoint Protection](../DataSources/datasource_sophos_endpoint_protection_sophos.md)
 * [Unified Security Gateway](../DataSources/datasource_unified_security_gateway_huawei.md)
 * [Zscaler Private Access](../DataSources/datasource_zscaler_private_access_zscaler.md)
 

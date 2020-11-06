@@ -27,3 +27,4 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [cef-incapsula-web-activity](../Parsers/parserContent_cef-incapsula-web-activity.md)
 * [cef-incapsula-web-activity-2](../Parsers/parserContent_cef-incapsula-web-activity-2.md)
+* [leef-incapsula-web-activity](../Parsers/parserContent_leef-incapsula-web-activity.md)
