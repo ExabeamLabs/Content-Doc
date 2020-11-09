@@ -73,7 +73,6 @@ _The following Parsers can be operationalized using log data from this data sour
 * [crowdstrike-process-created](../Parsers/parserContent_crowdstrike-process-created.md)
 * [crowdstrike-process-network](../Parsers/parserContent_crowdstrike-process-network.md)
 * [crowdstrike-security-alert](../Parsers/parserContent_crowdstrike-security-alert.md)
-* [crowdstrike-security-alert-1](../Parsers/parserContent_crowdstrike-security-alert-1.md)
 * [crowdstrike-security-alert-2](../Parsers/parserContent_crowdstrike-security-alert-2.md)
 * [crowdstrike-security-alert-3](../Parsers/parserContent_crowdstrike-security-alert-3.md)
 * [crowdstrike-security-alert-4](../Parsers/parserContent_crowdstrike-security-alert-4.md)
