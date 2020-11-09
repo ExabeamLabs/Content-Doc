@@ -6,7 +6,6 @@ Use Case: Web Activity
 _The following list of Supported Exabeam Data Sources power this use case:_
 
 * [AWS CloudWatch](../DataSources/datasource_aws_cloudwatch_aws.md)
-* [Advanced Firewall Module](../DataSources/datasource_advanced_firewall_module_f5_networks.md)
 * [Airlock Web Application Firewall](../DataSources/datasource_airlock_web_application_firewall_airlock.md)
 * [AnyConnect](../DataSources/datasource_anyconnect_cisco.md)
 * [Apache](../DataSources/datasource_apache_apache.md)
@@ -86,6 +85,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Trend Micro](../DataSources/datasource_trend_micro_trend_micro.md)
 * [VMware NSX](../DataSources/datasource_vmware_nsx_vmware.md)
 * [Virtual Private Cloud](../DataSources/datasource_virtual_private_cloud_google.md)
+* [WAF F5](../DataSources/datasource_waf_f5_f5_networks.md)
 * [Watchguard](../DataSources/datasource_watchguard_watchguard.md)
 * [Web Application Proxy-TLS Gateway](../DataSources/datasource_web_application_proxy-tls_gateway_microsoft.md)
 * [Web Application Proxy](../DataSources/datasource_web_application_proxy_microsoft.md)

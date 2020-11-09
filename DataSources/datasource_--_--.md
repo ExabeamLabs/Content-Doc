@@ -53,6 +53,7 @@ UnorderedListItem
 - app-activity-failed
 - vpn-connection
 - file-read
+- physical-access
 - member-added
 - file-download
 - file-permission-change
@@ -69,6 +70,7 @@ UnorderedListItem
 - account-password-reset
 - app-login
 - process-created-failed
+- failed-physical-access
 - config-change
 - failed-usb-activity
 - failed-logon
@@ -596,6 +598,11 @@ _The following Parsers can be operationalized using log data from this data sour
 * [cef-proofpoint-email-in-failed](../Parsers/parserContent_cef-proofpoint-email-in-failed.md)
 * [cef-proofpoint-email-out](../Parsers/parserContent_cef-proofpoint-email-out.md)
 * [cef-proofpoint-email-out-failed](../Parsers/parserContent_cef-proofpoint-email-out-failed.md)
+* [cef-rightcrowd-failed-physical-access](../Parsers/parserContent_cef-rightcrowd-failed-physical-access.md)
+* [cef-rightcrowd-failed-physical-access-1](../Parsers/parserContent_cef-rightcrowd-failed-physical-access-1.md)
+* [cef-rightcrowd-failed-physical-access-2](../Parsers/parserContent_cef-rightcrowd-failed-physical-access-2.md)
+* [cef-rightcrowd-failed-physical-access-3](../Parsers/parserContent_cef-rightcrowd-failed-physical-access-3.md)
+* [cef-rightcrowd-physical-access](../Parsers/parserContent_cef-rightcrowd-physical-access.md)
 * [cef-sophos-dlp-alert-10](../Parsers/parserContent_cef-sophos-dlp-alert-10.md)
 * [cef-sophos-dlp-alert-11](../Parsers/parserContent_cef-sophos-dlp-alert-11.md)
 * [cef-sophos-dlp-alert-12](../Parsers/parserContent_cef-sophos-dlp-alert-12.md)
@@ -1199,6 +1206,8 @@ _The following Parsers can be operationalized using log data from this data sour
 * [s-crowdstrike-app-login-5](../Parsers/parserContent_s-crowdstrike-app-login-5.md)
 * [s-crowdstrike-app-login-6](../Parsers/parserContent_s-crowdstrike-app-login-6.md)
 * [s-crowdstrike-app-login-7](../Parsers/parserContent_s-crowdstrike-app-login-7.md)
+* [s-crowdstrike-app-login-8](../Parsers/parserContent_s-crowdstrike-app-login-8.md)
+* [s-crowdstrike-app-login-9](../Parsers/parserContent_s-crowdstrike-app-login-9.md)
 * [s-crowdstrike-app-ransomware](../Parsers/parserContent_s-crowdstrike-app-ransomware.md)
 * [s-cyberark-account-switch](../Parsers/parserContent_s-cyberark-account-switch.md)
 * [s-cyberark-account-switch-2](../Parsers/parserContent_s-cyberark-account-switch-2.md)

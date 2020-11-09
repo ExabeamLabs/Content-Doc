@@ -254,7 +254,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### F-Secure
 * [F-Secure Client Security](DataSources/datasource_f-secure_client_security_f-secure.md)
 #### F5 Networks
-* [Advanced Firewall Module](DataSources/datasource_advanced_firewall_module_f5_networks.md)
 * [BIG-IP DNS](DataSources/datasource_big-ip_dns_f5_networks.md)
 * [Big-IP](DataSources/datasource_big-ip_f5_networks.md)
 * [F5 Application Security Manager](DataSources/datasource_f5_application_security_manager_f5_networks.md)
