@@ -3,9 +3,9 @@
 {
 Name = ad-audit-4625
   Vendor = ManageEngine
-  Product = AD Audit
+  Product = AD Audit Plus
   Lms = Direct
-  DataType = "windows-failed-logon"
+  DataType = "failed-logon"
   TimeFormat = "epoch_sec"
   Conditions = [ """ADAuditPlus""", """EVENT_NUMBER = 4625""" ]
   Fields = [

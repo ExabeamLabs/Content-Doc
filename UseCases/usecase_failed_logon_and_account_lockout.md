@@ -5,6 +5,7 @@ Use Case: Failed Logon and Account Lockout
 
 _The following list of Supported Exabeam Data Sources power this use case:_
 
+* [AD Audit Plus](../DataSources/datasource_ad_audit_plus_manageengine.md)
 * [AD Audit](../DataSources/datasource_ad_audit_manageengine.md)
 * [AWS Bastion](../DataSources/datasource_aws_bastion_aws.md)
 * [Big-IP](../DataSources/datasource_big-ip_f5_networks.md)

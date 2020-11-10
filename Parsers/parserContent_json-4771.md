@@ -13,13 +13,14 @@ Name = json-4771
     """"EventTime":\s*"({time}\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})"""",
     """"TimeGenerated":"({time}[^"]*)""",
     """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]+\sSkyformation""",
-    """"(Hostname|MachineName|computer_name)":"({host}[^."]*)""",
+    """@timestamp\\?"+:\\?"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+    """"(Hostname|MachineName|computer_name)\\?":\\?"({host}[^."\\]*)""",
     """({event_code}4771)""",
-    """"(TargetSid|TargetDomainName)":"({user_sid}[^"]*)""",
-    """"TargetUserName":"({user}[^"]*)""",
-    """"ServiceName":"[^/]*\/({domain}[^."]*)""",
-    """"(Status|TicketOptions)":"({result_code}[^"]*)""",
-    """"IpAddress":"(?:::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)""""
+    """"(TargetSid|TargetDomainName)\\?":\\?"({user_sid}[^"\\]*)""",
+    """"TargetUserName\\?":\\?"({user}[^"\\]*)""",
+    """"ServiceName\\?":\\?"[^/]*\/({domain}[^."\\]*)""",
+    """"(Status|TicketOptions)\\?":\\?"({result_code}[^"\\]*)""",
+    """"IpAddress\\?":\\?"(?:::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)""""
   ]
   DupFields = ["host->dest_host"]
 }

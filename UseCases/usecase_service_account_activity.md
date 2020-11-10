@@ -5,6 +5,7 @@ Use Case: Service Account Activity
 
 _The following list of Supported Exabeam Data Sources power this use case:_
 
+* [AD Audit Plus](../DataSources/datasource_ad_audit_plus_manageengine.md)
 * [AD Audit](../DataSources/datasource_ad_audit_manageengine.md)
 * [AMAG](../DataSources/datasource_amag_amag.md)
 * [APC](../DataSources/datasource_apc_apc.md)

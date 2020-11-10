@@ -437,6 +437,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Malwarebytes Incident Response
 * [Malwarebytes Incident Response](DataSources/datasource_malwarebytes_incident_response_malwarebytes_incident_response.md)
 #### ManageEngine
+* [AD Audit Plus](DataSources/datasource_ad_audit_plus_manageengine.md)
 * [AD Audit](DataSources/datasource_ad_audit_manageengine.md)
 * [ADmanager](DataSources/datasource_admanager_manageengine.md)
 #### MariaDB

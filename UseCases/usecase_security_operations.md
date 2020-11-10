@@ -5,6 +5,7 @@ Use Case: Security Operations
 
 _The following list of Supported Exabeam Data Sources power this use case:_
 
+* [AD Audit Plus](../DataSources/datasource_ad_audit_plus_manageengine.md)
 * [AD Audit](../DataSources/datasource_ad_audit_manageengine.md)
 * [AWS Bastion](../DataSources/datasource_aws_bastion_aws.md)
 * [BIG-IP DNS](../DataSources/datasource_big-ip_dns_f5_networks.md)
