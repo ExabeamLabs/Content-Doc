@@ -18,6 +18,7 @@ Name = cef-4768
       """\sdvchost=({host}[^\s]+)""",
       """\sdntdom=({domain}[^\s]+)""",
       """Service_,ID=({user_sid}[^\s]+)\s""",
+      """destinationServiceName=({service_name}[^\s]+)""",
     ]
     DupFields = ["host->dest_host"]
   }

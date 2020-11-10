@@ -21,7 +21,10 @@ Name = json-4768
       """"(TargetDomainName|SuppliedRealmName)":"({domain}[^."]+)""",
       """"(UserID|TargetSid)":"({user_sid}[^"]+)""",
       """"(IpAddress|ClientAddress)":"(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)""",
-      """"(Status|ResultCode)":"({result_code}[^"]+)"""
+      """"(Status|ResultCode)":"({result_code}[^"]+)""",
+      """"TicketOptions":"({ticket_options}[^"]+)""",
+      """"TicketEncryptionType":"({ticket_encryption_type}[^"]+)""",
+      """"ServiceName":"({service_name}[^"]+)""",
     ]
   }
 ```

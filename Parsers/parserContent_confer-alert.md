@@ -11,7 +11,7 @@ Name = confer-alert
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
     """eventTime"+:\s*({time}\d+)""",
-    """email"+:\s*"+(({domain}[^\\"]+)\\+)?({user}[^"]+)"""",
+    """email"+:\s*"+(({user_email}[^@"]+@[^"]+)|((({domain}[^\\"]+)\\+)?({user}[^"]+)))"""",
     """deviceName"+:\s*"+([^\\"]+\\+)?({src_host}[^"]+)"""",
     """ruleName"+:\s*"+(Confer - )?({alert_name}[^"]+)"""",
     """type"+:\s*"+({alert_type}[^"]+)"""",

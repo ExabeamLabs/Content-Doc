@@ -20,7 +20,10 @@ Name = raw-4768
       """Client Address:\s*(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)""",
       """Result Code:\s*({result_code}.+?)[\s;]*Ticket Encryption Type""",
       """Supplied Realm Name:\s*(-|({domain}[^\s]+?))[\s;]*User ID""",
-      """Supplied Realm Name:\s*.*?User ID:\s*(?:NULL SID|({user_sid}[^\s]+?))[\s;]*Service Information"""
+      """Supplied Realm Name:\s*.*?User ID:\s*(?:NULL SID|({user_sid}[^\s]+?))[\s;]*Service Information""",
+      """Ticket Options:\s*({ticket_options}[^\s]+?)[\s;]*Result Code:""",
+      """Ticket Encryption Type:\s*({ticket_encryption_type}[^\s]+?)[\s;]*Pre-Authentication Type:""",
+      """Service Name:\s*({service_name}[^\s]+?)[\s;]*Service ID:""",
     ]
     DupFields = ["host->dest_host"]
   }

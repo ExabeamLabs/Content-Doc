@@ -6,6 +6,7 @@ Use Case: Asset Logon and Access
 _The following list of Supported Exabeam Data Sources power this use case:_
 
 * [ACI](../DataSources/datasource_aci_cisco.md)
+* [AD Audit Plus](../DataSources/datasource_ad_audit_plus_manageengine.md)
 * [AD Audit](../DataSources/datasource_ad_audit_manageengine.md)
 * [ADmanager](../DataSources/datasource_admanager_manageengine.md)
 * [AMAG](../DataSources/datasource_amag_amag.md)
