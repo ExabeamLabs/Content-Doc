@@ -7,7 +7,7 @@ Name = s-skysea-share-access
   Lms = Splunk
   DataType = "share-access"
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
-  Conditions = [ ",フォルダ共有," ]
+  Conditions = [ ",??????????????????," ]
   Fields = [
     """^([^\,]*\,){7}({time}\d+\/\d+\/\d+ \d+:\d+:\d+)""",
     """^([^\,]*\,){5}({user}[^\,]+)\,""",

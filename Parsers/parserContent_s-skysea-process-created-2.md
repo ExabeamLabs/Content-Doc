@@ -3,7 +3,7 @@
 {
 Name = s-skysea-process-created-2
     DataType = "process-created"
-    Conditions = [ ",アプリケーション," ]
+    Conditions = [ ",????????????????????????," ]
     Fields = ${SKySeaParserTemplates.s-skysea-dlp.Fields} [
       """^([^\,]*\,){4}({session_id}\d)\,""",
       """^([^\,]*\,){69}({md5}[^\,]+)\,""",

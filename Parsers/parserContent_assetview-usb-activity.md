@@ -7,7 +7,7 @@ Name = assetview-usb-activity
   Lms = Exabeam
   DataType = "usb-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
-  Conditions = [ """ドライブ追加""", """15031""" ]
+  Conditions = [ """??????????????????""", """15031""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
     """("\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d.\d\d\d",)"({time}\d{4}-\d\d-\d\d \d\d:\d\d:\d\d.\d\d\d)",""",

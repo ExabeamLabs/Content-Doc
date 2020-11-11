@@ -7,7 +7,7 @@ Name = s-skysea-print-activity
   Lms = Splunk
   DataType = "print-activity"
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
-  Conditions = [ ",プリント," ]
+  Conditions = [ ",????????????," ]
   Fields = [
     """({host}[\w\-.]+),\d+,""",
     """^([^\,]*\,){2}({src_host}[^\,]+)\,""",

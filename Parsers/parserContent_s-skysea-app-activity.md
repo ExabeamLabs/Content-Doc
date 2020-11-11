@@ -7,7 +7,7 @@ Name = s-skysea-app-activity
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
-  Conditions = [ ",起動・終了," ]
+  Conditions = [ ",???????????????," ]
   Fields = [
     """exabeam_raw=({host}[^\,]+)\,""",
     """^([^\,]*\,){2}({src_host}[^\,]+)\,""",

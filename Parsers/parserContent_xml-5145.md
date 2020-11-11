@@ -22,7 +22,7 @@ Name = xml-5145
       """<Data Name='IpAddress'>({src_ip}[a-fA-F\d.:]+)""",
       """<Data Name='IpPort'>({src_port}\d+)""",
       """<Data Name='ShareName'>(|({share_name}.+?))</Data>""",
-      """<Data Name='RelativeTargetName'>({f_parent}.*?\\+)?(?:|({file_name}[^\\:<]*?(\.\s*({file_ext}[^\\.]+?))?))?\?</Data>"""
+      """<Data Name='RelativeTargetName'>({f_parent}.*?\\+)?(?:|({file_name}[^\\:<]*?(\.\s*({file_ext}[^\\.]+?))?))?\????</Data>"""
       """<Data Name='AccessList'>\s*(|({accesses}.+?))\s*</Data>""",
       """Accesses:.*({accesses}SYNCHRONIZE|Execute|Traverse|Read|READ|WRITE_DAC|WRITE_OWNER|WriteAttributes|WriteEA|WriteData|AppendData|delete|Delete).*Access Check Results:""",
       """<Data Name='ShareLocalPath'>(?:[\\\?]+)?(?:\s*|({share_path}(({d_parent}[^<>]+)\\)?({d_name}\s*\S[^\\<>]+?)?)\\?)<\/Data>"""

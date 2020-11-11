@@ -7,7 +7,7 @@ Name = assetview-security-alert
   Lms = Exabeam
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
-  Conditions = [ """使用禁止USB接続""", """35131""" ]
+  Conditions = [ """????????????USB??????""", """35131""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
     """("\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d.\d\d\d",)"({time}\d{4}-\d\d-\d\d \d\d:\d\d:\d\d.\d\d\d)",""",

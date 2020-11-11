@@ -7,7 +7,7 @@ Name = s-skysea-file-access
   Lms = Splunk
   DataType = "file-operations"
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
-  Conditions = [ ",ファイルアクセス," ]
+  Conditions = [ ",????????????????????????," ]
   Fields = [
     """^([^\,]*\,){7}({time}\d+\/\d+\/\d+ \d+:\d+:\d+)""",
     """^([^\,]*\,){16}({user}[^\,]+)\,""",
