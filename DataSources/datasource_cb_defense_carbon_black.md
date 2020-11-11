@@ -31,6 +31,7 @@ _The following Parsers can be operationalized using log data from this data sour
 
 * [carbonblack-security-alert-2](../Parsers/parserContent_carbonblack-security-alert-2.md)
 * [cef-carbonblack-file-create](../Parsers/parserContent_cef-carbonblack-file-create.md)
+* [cef-carbonblack-file-write-4](../Parsers/parserContent_cef-carbonblack-file-write-4.md)
 * [cef-carbonblack-security-alert](../Parsers/parserContent_cef-carbonblack-security-alert.md)
 * [confer-alert](../Parsers/parserContent_confer-alert.md)
 * [leef-cbdef-security-alert](../Parsers/parserContent_leef-cbdef-security-alert.md)

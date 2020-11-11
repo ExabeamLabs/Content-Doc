@@ -13,7 +13,6 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [AWS CloudTrail](../DataSources/datasource_aws_cloudtrail_aws.md)
 * [AWS CloudTrail](../DataSources/datasource_aws_cloudtrail_aws_cloudtrail.md)
 * [AWS GuardDuty](../DataSources/datasource_aws_guardduty_aws.md)
-* [AWS SQS](../DataSources/datasource_aws_sqs_aws.md)
 * [AWS](../DataSources/datasource_aws_aws.md)
 * [Absolute SIEM Connector](../DataSources/datasource_absolute_siem_connector_absolute.md)
 * [Adaptive Threat Intelligence](../DataSources/datasource_adaptive_threat_intelligence_centurylink.md)

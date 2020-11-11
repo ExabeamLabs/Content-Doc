@@ -6,8 +6,6 @@ Use Case: File Activity
 _The following list of Supported Exabeam Data Sources power this use case:_
 
 * [AD Audit](../DataSources/datasource_ad_audit_manageengine.md)
-* [AWS CloudTrail](../DataSources/datasource_aws_cloudtrail_aws_cloudtrail.md)
-* [AWS SQS](../DataSources/datasource_aws_sqs_aws.md)
 * [AssetView](../DataSources/datasource_assetview_assetview.md)
 * [Bitglass CASB](../DataSources/datasource_bitglass_casb_bitglass.md)
 * [Box Cloud Content Management](../DataSources/datasource_box_cloud_content_management_box.md)
