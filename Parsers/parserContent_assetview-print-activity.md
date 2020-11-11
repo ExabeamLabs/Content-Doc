@@ -7,7 +7,7 @@ Name = assetview-print-activity
   Lms = Exabeam
   DataType = "print-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
-  Conditions = [ """印刷""", """15041""" ]
+  Conditions = [ """??????""", """15041""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
     """("\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d.\d\d\d",)"({time}\d{4}-\d\d-\d\d \d\d:\d\d:\d\d.\d\d\d)",""",

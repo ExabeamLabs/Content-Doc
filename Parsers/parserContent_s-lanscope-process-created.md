@@ -5,9 +5,9 @@ Name = s-lanscope-process-created
   Product = LanScope
   DataType = "process-created"
   IsHVF = true
-  Conditions = [ """"リアルタイムイベントログ"""", """"ACTIVE"""" ]
+  Conditions = [ """"????????????????????????????????????"""", """"ACTIVE"""" ]
   Fields = ${LanScopeParserTemplates.s-lanscope-app-activity.Fields}[
-    ""","*リアルタイムイベントログ"*,"*ACTIVE"*,("*[^"]*"*,){5}"*({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):({dest_port}\d+)\s+\-\s+({account}[^\s@]+)@({dest_host}[^:]+):({command_line}[^"]+)"*,"""
+    ""","*????????????????????????????????????"*,"*ACTIVE"*,("*[^"]*"*,){5}"*({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):({dest_port}\d+)\s+\-\s+({account}[^\s@]+)@({dest_host}[^:]+):({command_line}[^"]+)"*,"""
   ]
   DupFields = [ "app->process_name" ]
 }

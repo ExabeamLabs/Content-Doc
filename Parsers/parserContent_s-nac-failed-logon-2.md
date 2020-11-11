@@ -3,7 +3,7 @@
 {
 Name = s-nac-failed-logon-2
   Conditions = [ """CISE_Failed_Attempts""", """ failed""" ]
-}，
+}???
 
 {
   Name = s-nac-logon-2

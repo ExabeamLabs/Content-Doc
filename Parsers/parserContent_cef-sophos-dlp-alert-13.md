@@ -20,7 +20,7 @@ Name = cef-sophos-dlp-alert-13
     """"name":\s*"({alert_name}.+?)\s+(\w+:)"""
     """"name":\s*"({additional_info}[^"]+)"""
     """"name".+?Username:\s*(({domain}[^\\]+)\\+)?({user}[^\s\\]+)\s""",
-    """"name".+?Rule names:\s*′({rule}[^′]+)""",
+    """"name".+?Rule names:\s*???({rule}[^???]+)""",
     """"name".+?User action:\s*({activity}.+?)\s+(\w+\s+\w+:)""",
     """"name".+?Application Name:\s+({app}.+?)\s+Data Control action:""",
     """"name".+?Data Control action:\s*({outcome}[^\s]+)\s""",
