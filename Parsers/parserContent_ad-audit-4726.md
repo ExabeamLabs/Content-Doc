@@ -7,7 +7,7 @@ Name = ad-audit-4726
   Lms = Direct
   DataType = "windows-account-deleted"
   TimeFormat = "epoch_sec"
-  Conditions = [ """ADAuditPlus""", """EVENT_NUMBER = 4726""", """A user     account was deleted""" ]
+  Conditions = [ """ADAuditPlus""", """EVENT_NUMBER = 4726""", """A user ?? ?? account was deleted""" ]
   Fields = [
     """TIME_GENERATED\s*=\s*({time}\d+)""",
     """({host}[\w\-.]+) ADAuditPlus""",
