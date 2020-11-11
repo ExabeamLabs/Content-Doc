@@ -101,6 +101,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [SecurID](../DataSources/datasource_securid_rsa.md)
 * [SecureNet](../DataSources/datasource_securenet_securenet.md)
 * [SentinelOne](../DataSources/datasource_sentinelone_sentinelone.md)
+* [Skyhigh Networks CASB](../DataSources/datasource_skyhigh_networks_casb_mcafee.md)
 * [Skyhigh Networks CASB](../DataSources/datasource_skyhigh_networks_casb_skyhigh_networks.md)
 * [SonicWALL Aventail](../DataSources/datasource_sonicwall_aventail_dell.md)
 * [Sonicwall](../DataSources/datasource_sonicwall_sonicwall.md)

@@ -17,7 +17,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [AWS CloudTrail](DataSources/datasource_aws_cloudtrail_aws.md)
 * [AWS CloudWatch](DataSources/datasource_aws_cloudwatch_aws.md)
 * [AWS GuardDuty](DataSources/datasource_aws_guardduty_aws.md)
-* [AWS SQS](DataSources/datasource_aws_sqs_aws.md)
 * [AWS](DataSources/datasource_aws_aws.md)
 #### AWS CloudTrail
 * [AWS CloudTrail](DataSources/datasource_aws_cloudtrail_aws_cloudtrail.md)
@@ -454,6 +453,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [McAfee Network Security Platform (IPS)](DataSources/datasource_mcafee_network_security_platform_(ips)_mcafee.md)
 * [McAfee Web Gateway](DataSources/datasource_mcafee_web_gateway_mcafee.md)
 * [Mcafee EPO](DataSources/datasource_mcafee_epo_mcafee.md)
+* [Skyhigh Networks CASB](DataSources/datasource_skyhigh_networks_casb_mcafee.md)
 #### Mcafee
 * [MDAM](DataSources/datasource_mdam_mcafee.md)
 * [McAfee Advanced Threat Defense](DataSources/datasource_mcafee_advanced_threat_defense_mcafee.md)
@@ -466,6 +466,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [McAfee Network Security Platform (IPS)](DataSources/datasource_mcafee_network_security_platform_(ips)_mcafee.md)
 * [McAfee Web Gateway](DataSources/datasource_mcafee_web_gateway_mcafee.md)
 * [Mcafee EPO](DataSources/datasource_mcafee_epo_mcafee.md)
+* [Skyhigh Networks CASB](DataSources/datasource_skyhigh_networks_casb_mcafee.md)
 #### Microsoft
 * [Advanced Threat Analytics (ATA)](DataSources/datasource_advanced_threat_analytics_(ata)_microsoft.md)
 * [AppLocker](DataSources/datasource_applocker_microsoft.md)
