@@ -13,7 +13,7 @@ Name = cef-mimecast-dlp-email
     """request=({outcome}.+?)\s+(\w+=|$)""",
     """suser=(<>|(({user_email}[^\s@]+@[^\s@]+)|({user}[^\s]+)))""",
     """ext_Rcpt=({recipients}({recipient}[^\s@;,]+@[^\s@;,]+)[^=]*?)\s+(\w+=|$)""",
-    """ext_Subject=\s*({subject}[^=]*?)\???\s+(\w+=|$)""",
+    """ext_Subject=\s*({subject}[^=]*?)\ ?\s+(\w+=|$)""",
     """"Subject":"(|({subject}.*?[^\\]))""""
     """requestMethod=({direction}[^=]*?)\s+(\w+=|$)""",
     """"Dir":"({direction}[^"]+?)""""

@@ -12,6 +12,7 @@ The following are the list of out-of-the-box supported Use Cases
 * [Asset Activity Monitoring](UseCases/usecase_asset_activity_monitoring.md)
 * [Asset Logon and Access](UseCases/usecase_asset_logon_and_access.md)
 * [Badge Access](UseCases/usecase_badge_access.md)
+* [Cloud](UseCases/usecase_cloud.md)
 * [Credential Switch Activity](UseCases/usecase_credential_switch_activity.md)
 * [Critical System Activity](UseCases/usecase_critical_system_activity.md)
 * [Data Loss Prevention](UseCases/usecase_data_loss_prevention.md)

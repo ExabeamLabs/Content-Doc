@@ -3,17 +3,17 @@
 {
 Name = s-nac-logon-1
  Conditions = [ """Device-Administration: """, """ succeeded""" , """Protocol="""]
-}???
+}，
 
 ${CiscoParsersTemplates.s-nac-logon}{
   Name = s-nac-failed-logon-1
   Conditions = [ """Device-Administration: """, """ failed""" ]
-}???
+}，
 
 ${CiscoParsersTemplates.s-nac-logon}{
   Name = s-nac-failed-logon-2
   Conditions = [ """CISE_Failed_Attempts""", """ failed""" ]
-}???
+}，
 
 {
   Name = s-nac-logon-2

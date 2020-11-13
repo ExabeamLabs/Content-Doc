@@ -7,7 +7,7 @@ Name = s-skysea-file-operations
   Lms = Splunk
   DataType = "file-operations"
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
-  Conditions = [ ",??????????????????," ]
+  Conditions = [ ",ファイル操作," ]
   Fields = [
     """^([^\,]*\,){7}({time}\d+\/\d+\/\d+ \d+:\d+:\d+)""",
     """^([^\,]*\,){5}(SYSTEM|NETWORK SERVICE|({user}[^\,]+))\,""",

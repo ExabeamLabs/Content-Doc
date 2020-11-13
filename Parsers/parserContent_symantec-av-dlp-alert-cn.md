@@ -7,18 +7,18 @@ Name = symantec-av-dlp-alert-cn
   Lms = Splunk
   DataType = "dlp-alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ssZ"
-  Conditions = [ "??????:", "??????:", "??????:", "??????:" ]
+  Conditions = [ "本地:", "远程:", "规则:", "操作:" ]
   Fields = [
-    """\W??????:\s*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d((\+|\-)\d\d:\d\d)?)""",
+    """\W开始:\s*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d((\+|\-)\d\d:\d\d)?)""",
     """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
     """({host}[\w\-\.]+)\s*SymantecServer:""",
-    """,??????:\s*({src_ip}[a-fA-F:\.\d]+),??????:\s*({src_port}\d+),??????:\s*({src_host}[\w\-\.]+),""",
-    """,??????:\s*({dest_ip}[a-fA-F:\.\d]+),??????:\s*(|({dest_host}[\w\-\.]+)),??????:\s*({dest_port}\d+),""",
-    """({protocol}[^,]+),({direction}[^,]+),??????:""",
-    """\W????????????:\s*({process}.*[\\\/]({process_name}[^\\\/,]+))""",
-    """\W??????:\s*({alert_name}[^,]+)""",
-    """\W??????:\s*({outcome}[^,]+?)"*\s*$""",
-    """\W??????:\s*({user}[^,]+),???:\s*({domain}[^,]+)"""
+    """,本地:\s*({src_ip}[a-fA-F:\.\d]+),本地:\s*({src_port}\d+),本地:\s*({src_host}[\w\-\.]+),""",
+    """,远程:\s*({dest_ip}[a-fA-F:\.\d]+),远程:\s*(|({dest_host}[\w\-\.]+)),远程:\s*({dest_port}\d+),""",
+    """({protocol}[^,]+),({direction}[^,]+),开始:""",
+    """\W应用程序:\s*({process}.*[\\\/]({process_name}[^\\\/,]+))""",
+    """\W规则:\s*({alert_name}[^,]+)""",
+    """\W操作:\s*({outcome}[^,]+?)"*\s*$""",
+    """\W用户:\s*({user}[^,]+),域:\s*({domain}[^,]+)"""
   ]
   DupFields = [ "alert_name->alert_type" ]
   SOAR {

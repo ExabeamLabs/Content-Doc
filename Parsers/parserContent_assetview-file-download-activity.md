@@ -7,7 +7,7 @@ Name = assetview-file-download-activity
   Lms = Exabeam
   DataType = "file-download"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
-  Conditions = [ """WEB??????????????????""", """15091""" ]
+  Conditions = [ """WEBダウンロード""", """15091""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
     """("\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d.\d\d\d",)"({time}\d{4}-\d\d-\d\d \d\d:\d\d:\d\d.\d\d\d)",""",
