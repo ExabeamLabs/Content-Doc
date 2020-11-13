@@ -11,7 +11,7 @@ Name = s-kaspersky-es-alert-1
   Fields = [
     """Usuario:\s*({domain}[^\\]+)\\+({user}[^\s]+)""",
     """Componente:\s*({product_name}[^\\]+)""",
-    """Resultado\\+Descripci??n:\s*({action}[^\\]+)""",
+    """Resultado\\+Descripción:\s*({action}[^\\]+)""",
     """nObjeto:\s*({malware_url}[^\\]+)""",
     """Objeto\\+Tipo:\s*({alert_type}[^\\]+)""",
     """Objeto\\+Nombre:\s*({alert_name}[^\\]+)""",
@@ -20,7 +20,7 @@ Name = s-kaspersky-es-alert-1
     """dhost=({dest_host}[^\s]+)\s*dst=""",
     """dst=({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"""
     """cs6=({protocol}[^\s]+)""",
-    """Aplicaci??n\\+Nombre:\s*({app}[^\\]+)""",
+    """Aplicación\\+Nombre:\s*({app}[^\\]+)""",
     """cs4=({src_ip}[^\s]+)\s*cs4Label=AttackerIPv4""",
     """cs7=({src_port}[^\s]+)\s*cs7Label""",
     """cs8=({dest_ip}[^\s]+)\s*cs8Label=""",

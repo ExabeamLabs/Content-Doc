@@ -7,12 +7,12 @@ Name = s-skysea-file-download
   Lms = Splunk
   DataType = "file-download"
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
-  Conditions = [""",Web????????????,""", """,Web??????????????????,"""]
+  Conditions = [""",Webアクセス,""", """,Webダウンロード,"""]
   Fields = [
-    """({host}[^,]+),(({src_ip}[A-Fa-f:\d.]+)|({src_host}[\w\-.]+)),[^,]*,({user}[^,]*),[^,]*,[^,]*,[^,]*,[^,]*,Web????????????""",
+    """({host}[^,]+),(({src_ip}[A-Fa-f:\d.]+)|({src_host}[\w\-.]+)),[^,]*,({user}[^,]*),[^,]*,[^,]*,[^,]*,[^,]*,Webアクセス""",
     """({time}\d\d\d\d\/\d\d\/\d\d \d\d:\d\d:\d\d)""",
-    """,Web????????????,[^,]*,[^,]*,({download_source}(?:[^:\\\/\s,"]+:[\\\/]+)?({domain}[^\\\/\s:,"]+)[^,]*)""",
-    """Web????????????,([^,]*,){32}(({file_path}[^=]+?)\\+)?({file_name}[^\\]+?),""",
+    """,Webアクセス,[^,]*,[^,]*,({download_source}(?:[^:\\\/\s,"]+:[\\\/]+)?({domain}[^\\\/\s:,"]+)[^,]*)""",
+    """Webアクセス,([^,]*,){32}(({file_path}[^=]+?)\\+)?({file_name}[^\\]+?),""",
   ]
 }
 ```

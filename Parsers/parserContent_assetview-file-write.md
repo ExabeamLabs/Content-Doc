@@ -7,7 +7,7 @@ Name = assetview-file-write
   Lms = Exabeam
   DataType = "file-operations"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
-  Conditions = [ """??????????????????""", """10001""" ]
+  Conditions = [ """ファイル作成""", """10001""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
     """("\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d.\d\d\d",)"({time}\d{4}-\d\d-\d\d \d\d:\d\d:\d\d.\d\d\d)",""",

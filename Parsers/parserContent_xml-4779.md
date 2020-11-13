@@ -12,7 +12,7 @@ Name = xml-4779
     """<TimeCreated SystemTime='({time}\d+-\d+-\d+T\d+:\d+:\d+)""",
     """<Computer>({host}[\w\-.]+)""",
     """({event_code}4779)""",
-    """<Message>({event_name}[^.???]+)""",
+    """<Message>({event_name}[^.。]+)""",
     """<EventRecordID>({record_id}[^<]+)""",
     """'AccountName'>({user}[^"\s<]+)<""",
     """'AccountDomain'>({domain}[^"\s<]+)<""",

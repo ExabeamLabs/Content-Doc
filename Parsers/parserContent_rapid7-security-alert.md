@@ -21,7 +21,7 @@ Name = rapid7-security-alert
     """"cves":\["({cve}[^"]+)"""",
     """"vulnerabilityId":"({resource_type}[^"]+)"""",
     """"severity":({alert_severity}\d+)""",
-    """"title":"({alert_name}[^"]+?)\????"""",
+    """"title":"({alert_name}[^"]+?)\ ?"""",
     """"lastScanDateTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3}Z)""",
     """"assetData":\{[^\{\}]*?"hostName":"({src_host}[^"]+)"""",
     """"assetData":\{[^\{\}]*?"type":"({asset_data_type}[^"]+)"""",

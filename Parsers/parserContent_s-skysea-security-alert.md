@@ -7,7 +7,7 @@ Name = s-skysea-security-alert
   Lms = Splunk
   DataType = "alert"
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
-  Conditions = [ ",?????????TCP??????," ]
+  Conditions = [ ",想定外TCP通信," ]
   Fields = [
     """exabeam_raw=({host}[^\,]+)\,""",
     """^([^\,]*\,){2}({src_host}[^\,]+)\,""",

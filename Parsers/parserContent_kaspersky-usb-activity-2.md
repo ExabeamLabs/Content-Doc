@@ -15,8 +15,8 @@ Name = kaspersky-usb-activity-2
     """Tipo de dispositivo\/Tipo de bus:\s*({device_type}[^"\\]+)""",
     """Id. de dispositivo:\s*({device_id}.+)&\d+""",
     """Usuario:\s*(({domain}[^"\\]+)\\+)?({user}[^\\\s"]+)""",
-    """Resultado\\Decisi??n:\s*({action}[^"\\]+)""",
-    """Operaci??n:\s*({activity}[^\\"]+)""",
+    """Resultado\\Decisión:\s*({action}[^"\\]+)""",
+    """Operación:\s*({activity}[^\\"]+)""",
     """etdn="({activity_details}[^"]+)""",
   ]
   DupFields = [ "activity_details->alert_name","action->alert_type","activity->outcome" ]

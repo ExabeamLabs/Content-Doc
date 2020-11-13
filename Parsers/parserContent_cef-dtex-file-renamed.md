@@ -19,7 +19,7 @@ Name = cef-dtex-file-renamed
     """\WDestination_File_Extension=({file_ext}[^\s]+)\s""",
     """\WDestination_File_Name=(?:\s*|({file_name}.+?)\s+)(\w+=|$)""",
     """\WDestination_File_Directory=(?:\s*|({file_parent}.+?)\s+)(\w+=|$)""",
-    """\|Dtex\|([^\|]*\|){3}.*????\s*({file_path}.+?)\s\(.*?\)\|""",
+    """\|Dtex\|([^\|]*\|){3}.*?➔\s*({file_path}.+?)\s\(.*?\)\|""",
     """Destination_File_Details=\{.*?"Type":\s*"({file_type}[^"]+)"\}""",
     """\WSource_File_Directory=(?:\s*|({src_file_dir}.+?)\s+)(\w+=|$)""",
     """\WSource_File_Name=(?:\s*|({src_file_name}.+?)\s+)(\w+=|$)""",
