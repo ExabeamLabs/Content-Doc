@@ -9,8 +9,8 @@ Name = q-dlp-alert
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = [ "LEEF:", "|Symantec|DLP|", "|subject=" ]
     Fields = [
-      """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
       """exabeam_endTime=({time}\d+)""",
+      """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
       """\s({host}[\w.\-]+)\s+LEEF:""",
       """\|incidentID=({alert_id}\d+)""",
       """\|Symantec\|DLP\|({alert_severity}[^\|]+)\|""",

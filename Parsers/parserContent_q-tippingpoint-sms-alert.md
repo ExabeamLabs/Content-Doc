@@ -2,8 +2,10 @@
 ```Java
 {
 Name = q-tippingpoint-sms-alert
+  TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """00000001-0001-0001-0001-""","\ttcp\t" ]
   Fields = ${TippingPointParserTemplates.tippingpoint-sms-alert-template.Fields} [
+    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """00000001-0001-0001-0001-00000\d+\s+.+?\s+\d+\s+({protocol}tcp)""",
     """00000001-0001-0001-0001-00000\d+\s+.+?\s+\d+\s+tcp(\s+[^\s]+){4}\s+({hit_cnt}\d+)\s+""",
     """00000001-0001-0001-0001-00000\d+\s+.+?\s+\d+\s+tcp(\s+[^\s]+){5}\s+({src_zone_name}[^\s]+)\s+({dest_zone_name}[^\s]+)""",

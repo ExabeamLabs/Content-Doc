@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-carbonblack-security-alert
-  Vendor = Carbon Black
-  Product = CB Defense
+  Vendor = VMware
+  Product = VMware Carbon Black Cloud Endpoint Standard
   Lms = ArcSight
   DataType = "alert"
   TimeFormat = "MMM dd yyyy HH:mm:ss"

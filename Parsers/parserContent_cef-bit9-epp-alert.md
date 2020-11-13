@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-bit9-epp-alert
-  Vendor = Carbon Black
-  Product = CB Protection
+  Vendor = VMware
+  Product = VMware Carbon Black App Control
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

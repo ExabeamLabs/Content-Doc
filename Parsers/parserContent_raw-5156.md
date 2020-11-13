@@ -9,10 +9,10 @@ Name = raw-5156
   TimeFormat = "MMM dd HH:mm:ss yyyy"
   Conditions = [ """5156""", """The Windows Filtering Platform has permitted a connection""" ]
   Fields = [
-    """Microsoft-Windows-Security-Auditing.*?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)\s+({host}[\w.\-]+)""",
-    """\w+ \d+ \d\d:\d\d:\d\d ({host}[\w\-.]+)""",
-    """\WComputer\\*=({host}[\w\-.]+)""",
-    """\WComputerName:\s*({host}[\w\-.]+)""",
+    """Microsoft-Windows-Security-Auditing.*?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)\s+(::ffff:)?({host}[\w.\-]+)""",
+    """\w+ \d+ \d\d:\d\d:\d\d (::ffff:)?({host}[\w\-.]+)""",
+    """\WComputer\\*=(::ffff:)?({host}[\w\-.]+)""",
+    """\WComputerName:\s*(::ffff:)?({host}[\w\-.]+)""",
     """({time}\w+ \d\d \d\d:\d\d:\d\d \d\d\d\d)\s+""",
     """\w+\s*\d+\s*\d+:\d+:\d+\s(::ffff:)?({host}[\w\-.]+)"""
     """({event_code}5156)""",

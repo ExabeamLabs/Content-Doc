@@ -11,8 +11,8 @@ Name = raw-4738
   Fields = [
     """({event_name}A user account was changed)""",
     """({event_code}4738)""",
-    """Computer(Name)?\s*\\*"?(=|:|>)\s*"*({host}[\w\.-]+)(\s|,|"|</Computer>|$)""",
-    """\sComputerName=({host}.+?)(\s+\w+=|\s*$)""",
+    """Computer(Name)?\s*\\*"?(=|:|>)\s*"*(::ffff:)?({host}[\w\.-]+)(\s|,|"|</Computer>|$)""",
+    """\sComputerName=(::ffff:)?({host}.+?)(\s+\w+=|\s*$)""",
     """({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|pm|PM))""",
     """({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+)""",
     """\w+\s*\d+\s\d+:\d+:\d+\s+(::ffff:)?({host}[\w\-.]+)""",

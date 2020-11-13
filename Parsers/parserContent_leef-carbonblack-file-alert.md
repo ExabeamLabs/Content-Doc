@@ -2,8 +2,8 @@
 ```Java
 {
 Name = leef-carbonblack-file-alert
-  Vendor = Carbon Black
-  Product = CB Protection
+  Vendor = VMware
+  Product = VMware Carbon Black App Control
   Lms = QRadar
   DataType = "file-alert"
   IsHVF = true

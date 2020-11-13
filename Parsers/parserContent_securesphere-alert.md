@@ -10,8 +10,8 @@ Name = securesphere-alert
   Conditions = [ """|at=Securesphere Alert|""", """|g=""", """|u=""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_endTime=({time}\d+)""",
+    """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """\|ad=({alert_name}.+?)( (from|by|in) .+?)?\|""",
     """\|an=({alert_type}[^|]+)""",
     """\|s=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",

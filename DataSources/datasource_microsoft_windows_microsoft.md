@@ -338,6 +338,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [raw-4648-4](../Parsers/parserContent_raw-4648-4.md)
 * [raw-4662](../Parsers/parserContent_raw-4662.md)
 * [raw-4662-1](../Parsers/parserContent_raw-4662-1.md)
+* [raw-4662-2](../Parsers/parserContent_raw-4662-2.md)
 * [raw-4663](../Parsers/parserContent_raw-4663.md)
 * [raw-4663-1](../Parsers/parserContent_raw-4663-1.md)
 * [raw-4663-10](../Parsers/parserContent_raw-4663-10.md)

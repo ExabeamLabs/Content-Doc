@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-bit9-usb-activity
-  Vendor = Carbon Black
-  Product = CB Protection
+  Vendor = VMware
+  Product = VMware Carbon Black App Control
   Lms = ArcSight
   DataType = "usb-activity"
   TimeFormat = "MM dd yyyy HH:mm:ss"

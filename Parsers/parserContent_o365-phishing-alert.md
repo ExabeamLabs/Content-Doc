@@ -11,8 +11,8 @@ Name = o365-phishing-alert
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
     """CreationTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""",
-    """Subject":"\s*({alert_name}[^"]+?)\s*"""",
-    """DetectionMethod":"({alert_type}[^"]+)"""",
+    """({alert_type}Phish)""",
+    """DetectionMethod":"({alert_name}[^"]+)"""",
     """Recipients":\["({user_email}[^,;@]+@([^;,"]+))""",
     """Id":"({alert_id}[^"]+)"""",
     """requestClientApplication=({process}.+?)\s*(\w+=|$)""",

@@ -2,8 +2,8 @@
 ```Java
 {
 Name = carbonblack-usb-insert
-  Vendor = Carbon Black
-  Product = CB Protection
+  Vendor = VMware
+  Product = VMware Carbon Black App Control
   Lms = Direct
   DataType = "usb-activity"
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"

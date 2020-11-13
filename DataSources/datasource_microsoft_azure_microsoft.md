@@ -70,4 +70,3 @@ _The following Parsers can be operationalized using log data from this data sour
 * [s-azure-storage-activity](../Parsers/parserContent_s-azure-storage-activity.md)
 * [s-azure-storage-activity-2](../Parsers/parserContent_s-azure-storage-activity-2.md)
 * [s-azure-storage-activity-3](../Parsers/parserContent_s-azure-storage-activity-3.md)
-* [skyformation-security-alert](../Parsers/parserContent_skyformation-security-alert.md)
