@@ -2,8 +2,8 @@
 ```Java
 {
 Name = q-bit9-epp-alert
-  Vendor = Carbon Black
-  Product = CB Protection
+  Vendor = VMware
+  Product = VMware Carbon Black App Control
   Lms = QRadar
   DataType = "alert"
   TimeFormat = "MMM dd yyyy HH:mm:ss"

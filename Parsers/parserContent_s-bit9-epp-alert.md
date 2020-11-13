@@ -2,8 +2,8 @@
 ```Java
 {
 Name = s-bit9-epp-alert
-  Vendor = Carbon Black
-  Product = CB Protection
+  Vendor = VMware
+  Product = VMware Carbon Black App Control
   Lms = Splunk
   DataType = "alert"
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"

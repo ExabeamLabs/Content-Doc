@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-bit9-process-alert
-  Vendor = Carbon Black
-  Product = CB Protection
+  Vendor = VMware
+  Product = VMware Carbon Black App Control
   Lms = ArcSight
   DataType = "process-alert"
   IsHVF = true

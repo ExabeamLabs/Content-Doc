@@ -17,6 +17,7 @@ Name = o365-activity
     """\Wact=({activity}.+?)\s+(\w+=|$)""",
     """"Operation\\*"+:[\s\\]*"+({activity}[^"\\\.]*)""",
     """"eid\\*"+:[\s\\]*"+(SecurityComplianceAlerts|({user_email}[^"@]+?@[^@"]+?)|({user}[^"]+?))\\*"""",
+    """UserKey"*:\s*"*({user_email}[^@"]+@({email_domain}[^"]+))"""",
     """"UserId\\*"+:[\s\\]*"+(({domain}[^"\\]+)\\+)?(({user_email}[^\s"@]+@[^\s"@]+)|(SecurityComplianceAlerts|(Unknown|((\w+?_)?(\w+-)?\w+-\w+-\w+-\w+)|({user}[^"@\\\s]*))))"""",
     """"MailboxOwnerUPN\\*"+:[\s\\]*"+({user_email}[^"@\\]+@[^"@\\]+)""",
     """\ssuser=[^"@=\s]*?@({email_domain}([\.\w+]+\.)*([^\.\s"]+?\.[^\s"\.\\]+))""", 

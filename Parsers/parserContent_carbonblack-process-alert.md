@@ -2,8 +2,8 @@
 ```Java
 {
 Name = carbonblack-process-alert
-  Vendor = Carbon Black
-  Product = CB Protection
+  Vendor = VMware
+  Product = VMware Carbon Black App Control
   Lms = Direct
   DataType = "process-alert"
   IsHVF = true

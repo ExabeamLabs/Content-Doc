@@ -71,6 +71,7 @@ _The following Parsers can be operationalized using log data from this data sour
 * [o365-inbox-rules-all](../Parsers/parserContent_o365-inbox-rules-all.md)
 * [o365-inbox-rules-all-2](../Parsers/parserContent_o365-inbox-rules-all-2.md)
 * [o365-inbox-rules-forward-to](../Parsers/parserContent_o365-inbox-rules-forward-to.md)
+* [o365-inbox-rules-forward-to-1](../Parsers/parserContent_o365-inbox-rules-forward-to-1.md)
 * [o365-inbox-rules-move-to-folder](../Parsers/parserContent_o365-inbox-rules-move-to-folder.md)
 * [o365-mal-url-click](../Parsers/parserContent_o365-mal-url-click.md)
 * [o365-malware-alert](../Parsers/parserContent_o365-malware-alert.md)

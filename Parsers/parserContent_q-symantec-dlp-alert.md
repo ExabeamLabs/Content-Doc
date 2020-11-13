@@ -6,11 +6,12 @@ Name = q-symantec-dlp-alert
   Product = Symantec DLP
   Lms = QRadar
   DataType = "dlp-alert"
-  TimeFormat = "yyyy-MM-dd HH:mm:ss"
+  TimeFormat = "MMM dd, yyyy HH:mm:ss a"
   Conditions = [ """Symantec|DLP|""", """|policy=""", """|incidentSnapshot=""" ]
   Fields = [
     """exabeam_endTime=({time}\d+)""",
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
+    """\|occurredon=({time}\w+ \d+, \d+ \d+:\d+:\d+ \w+)\|""",
     """({host}[\w.\-]+)\s+Symantec\|DLP\|""",
     """\|severity=({alert_severity}[^\|]+)""",
     """\|policy=({alert_name}[^\|]+)""",

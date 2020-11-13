@@ -76,6 +76,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [BeyondTrust PasswordSafe](DataSources/datasource_beyondtrust_passwordsafe_beyondtrust.md)
 * [BeyondTrust PowerBroker](DataSources/datasource_beyondtrust_powerbroker_beyondtrust.md)
 * [BeyondTrust Privileged Identity](DataSources/datasource_beyondtrust_privileged_identity_beyondtrust.md)
+* [BeyondTrust](DataSources/datasource_beyondtrust_beyondtrust.md)
 #### BeyondTrust Secure Remote Access
 * [BeyondTrust Secure Remote Access](DataSources/datasource_beyondtrust_secure_remote_access_beyondtrust_secure_remote_access.md)
 #### BitDefender
@@ -100,11 +101,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Bromium Secure Platform](DataSources/datasource_bromium_secure_platform_bromium.md)
 #### CDS
 * [CDS](DataSources/datasource_cds_cds.md)
-#### Carbon Black
-* [CB Defense](DataSources/datasource_cb_defense_carbon_black.md)
-* [CB Protection](DataSources/datasource_cb_protection_carbon_black.md)
-* [CB Response](DataSources/datasource_cb_response_carbon_black.md)
-* [Carbon Black](DataSources/datasource_carbon_black_carbon_black.md)
 #### CatoNetworks
 * [Cato Cloud](DataSources/datasource_cato_cloud_catonetworks.md)
 #### Centrify
@@ -373,6 +369,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Infoblox
 * [Infoblox BloxOne](DataSources/datasource_infoblox_bloxone_infoblox.md)
 * [Infoblox](DataSources/datasource_infoblox_infoblox.md)
+#### Inky
+* [Inky Anti-Phishing](DataSources/datasource_inky_anti-phishing_inky.md)
 #### Ipswitch
 * [IPswitch MoveIt](DataSources/datasource_ipswitch_moveit_ipswitch.md)
 #### JH
@@ -454,19 +452,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [McAfee Web Gateway](DataSources/datasource_mcafee_web_gateway_mcafee.md)
 * [Mcafee EPO](DataSources/datasource_mcafee_epo_mcafee.md)
 * [Skyhigh Networks CASB](DataSources/datasource_skyhigh_networks_casb_mcafee.md)
-#### Mcafee
-* [MDAM](DataSources/datasource_mdam_mcafee.md)
-* [McAfee Advanced Threat Defense](DataSources/datasource_mcafee_advanced_threat_defense_mcafee.md)
-* [McAfee DLP](DataSources/datasource_mcafee_dlp_mcafee.md)
-* [McAfee Email Protection](DataSources/datasource_mcafee_email_protection_mcafee.md)
-* [McAfee Endpoint Security](DataSources/datasource_mcafee_endpoint_security_mcafee.md)
-* [McAfee Enterprise Security Manager](DataSources/datasource_mcafee_enterprise_security_manager_mcafee.md)
-* [McAfee IDPS](DataSources/datasource_mcafee_idps_mcafee.md)
-* [McAfee NSM](DataSources/datasource_mcafee_nsm_mcafee.md)
-* [McAfee Network Security Platform (IPS)](DataSources/datasource_mcafee_network_security_platform_(ips)_mcafee.md)
-* [McAfee Web Gateway](DataSources/datasource_mcafee_web_gateway_mcafee.md)
-* [Mcafee EPO](DataSources/datasource_mcafee_epo_mcafee.md)
-* [Skyhigh Networks CASB](DataSources/datasource_skyhigh_networks_casb_mcafee.md)
 #### Microsoft
 * [Advanced Threat Analytics (ATA)](DataSources/datasource_advanced_threat_analytics_(ata)_microsoft.md)
 * [AppLocker](DataSources/datasource_applocker_microsoft.md)
@@ -474,6 +459,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [IIS](DataSources/datasource_iis_microsoft.md)
 * [Microsoft Azure Active Directory](DataSources/datasource_microsoft_azure_active_directory_microsoft.md)
 * [Microsoft Azure MFA](DataSources/datasource_microsoft_azure_mfa_microsoft.md)
+* [Microsoft Azure Security Center](DataSources/datasource_microsoft_azure_security_center_microsoft.md)
 * [Microsoft Azure](DataSources/datasource_microsoft_azure_microsoft.md)
 * [Microsoft CAS](DataSources/datasource_microsoft_cas_microsoft.md)
 * [Microsoft Cloud App Security (MCAS)](DataSources/datasource_microsoft_cloud_app_security_(mcas)_microsoft.md)
@@ -784,8 +770,12 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### VBCorp
 * [VBCorp](DataSources/datasource_vbcorp_vbcorp.md)
 #### VMware
+* [Carbon Black](DataSources/datasource_carbon_black_vmware.md)
 * [NSX FW](DataSources/datasource_nsx_fw_vmware.md)
 * [VMWare ID Manager (VIDM)](DataSources/datasource_vmware_id_manager_(vidm)_vmware.md)
+* [VMware Carbon Black App Control](DataSources/datasource_vmware_carbon_black_app_control_vmware.md)
+* [VMware Carbon Black Cloud Endpoint Standard](DataSources/datasource_vmware_carbon_black_cloud_endpoint_standard_vmware.md)
+* [VMware Carbon Black EDR](DataSources/datasource_vmware_carbon_black_edr_vmware.md)
 * [VMware ESX](DataSources/datasource_vmware_esx_vmware.md)
 * [VMware ESXi](DataSources/datasource_vmware_esxi_vmware.md)
 * [VMware Horizon](DataSources/datasource_vmware_horizon_vmware.md)

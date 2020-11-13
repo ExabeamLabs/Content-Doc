@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-carbonblack-file-create
-  Vendor = Carbon Black
-  Product = CB Defense
+  Vendor = VMware
+  Product = VMware Carbon Black Cloud Endpoint Standard
   Lms = ArcSight
   DataType = "file-write"
   TimeFormat = "epoch"

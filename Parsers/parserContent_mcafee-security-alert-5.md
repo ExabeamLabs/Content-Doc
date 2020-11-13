@@ -2,7 +2,7 @@
 ```Java
 {
 Name = mcafee-security-alert-5
-  Vendor = Mcafee
+  Vendor = McAfee
   Product = Mcafee EPO
   Lms = Direct
   DataType = "alert"

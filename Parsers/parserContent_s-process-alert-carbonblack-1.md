@@ -2,8 +2,8 @@
 ```Java
 {
 Name = s-process-alert-carbonblack-1
-  Vendor = Carbon Black
-  Product = CB Protection
+  Vendor = VMware
+  Product = VMware Carbon Black App Control
   Lms = Splunk
   DataType = "process-alert"
   IsHVF = true

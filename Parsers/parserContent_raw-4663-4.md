@@ -12,8 +12,8 @@ Name = raw-4663-4
     Fields = [
       """({event_name}An attempt was made to access an object)""",
       """Microsoft-Windows-Security-Auditing.+?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """exabeam_host=({host}[\w.\-]+)""",
-      """(?i)(((audit|success)( |_)(success|audit))|information)[\s,]({host}[\w\-.]+).*Subject:""",
+      """exabeam_host=(::ffff:)?({host}[\w.\-]+)""",
+      """(?i)(((audit|success)( |_)(success|audit))|information)[\s,](::ffff:)?({host}[\w\-.]+).*Subject:""",
       """({event_code}4663)""",
       """({time}\w+\s\d+\s\d+:\d+:\d+\s\d+)""",
       """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?({host}[\w\-.]+)""",

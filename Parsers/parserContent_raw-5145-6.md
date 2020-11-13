@@ -11,7 +11,7 @@ Name = raw-5145-6
     Fields = [
       """({event_name}A network share object was checked to see whether client can be granted desired access)""",
       """({event_code}5145)""",
-      """({host}[\w\-.]+)\s+(?i)((audit|success)( |_)(success|audit))""",
+      """(::ffff:)?({host}[\w\-.]+)\s+(?i)((audit|success)( |_)(success|audit))""",
       """Microsoft-Windows-Security-Auditing.+?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+)""",
       """\w+\s*\d+\s\d+:\d+:\d+\s+(::ffff:)?({host}[\w\-.]+)""",
@@ -19,7 +19,7 @@ Name = raw-5145-6
       """Account Name:\s*((\\)[rnt])*({user}\S+?)((\\)[rnt])*\s*Account Domain:""",
       """Account Domain:\s*((\\)[rnt])*({domain}\S+?)((\\)[rnt])*\s*Logon ID:""",
       """Object Type:\s*((\\)[rnt])*({file_type}.+?)((\\)[rnt])*\s*Source Address:""",
-      """Source Address:\s*((\\)[rnt])*(::1|({src_ip}[A-Fa-f:\d.]+?))((\\)[rnt])*\s*Source Port:""",
+      """Source Address:\s*((\\)[rnt])*(::1|(::ffff:)?({src_ip}[A-Fa-f:\d.]+?))((\\)[rnt])*\s*Source Port:""",
       """Share Name:\s*((\\)[rnt])*(?:\\\\\*\\)?({share_name}.+?)((\\)[rnt])*\s*Share Path:""",
       """Share Path:\s*((\\)[rnt])*(?:[\\\?]+)?(?:\s*|({share_path}(({d_parent}.+?)\\)?(|({d_name}[^\\]*?)))\\?)((\\)[rnt])*\s*Relative Target Name:""",
       """Relative Target Name:\s*((\\)[rnt])*\\?(?:\s*|(?:({f_parent}.+?)\\)?(|({file_name}[^\\:\/]+?(?:\.({file_ext}[^\.]+?))?))(?:\\HEAD|:.+?|\\|\s|((\\)[rnt])*)\s*)Access Request Information:""",

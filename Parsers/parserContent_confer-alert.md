@@ -2,8 +2,8 @@
 ```Java
 {
 Name = confer-alert
-  Vendor = Carbon Black
-  Product = CB Defense
+  Vendor = VMware
+  Product = VMware Carbon Black Cloud Endpoint Standard
   Lms = Splunk
   DataType = "alert"
   TimeFormat = "epoch"
