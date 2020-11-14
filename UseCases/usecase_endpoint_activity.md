@@ -53,7 +53,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Cisco ISE](../DataSources/datasource_cisco_ise_cisco.md)
 * [Cisco Meraki MX appliances](../DataSources/datasource_cisco_meraki_mx_appliances_cisco.md)
 * [Cisco NPE](../DataSources/datasource_cisco_npe_cisco.md)
-* [Cisco StealthWatch (Lancope)](../DataSources/datasource_cisco_stealthwatch_(lancope)_cisco.md)
+* [Cisco Secure Network Analytics](../DataSources/datasource_cisco_secure_network_analytics_cisco.md)
 * [Cisco TACACS](../DataSources/datasource_cisco_tacacs_cisco.md)
 * [Citrix Endpoint Management](../DataSources/datasource_citrix_endpoint_management_citrix.md)
 * [Citrix Netscaler](../DataSources/datasource_citrix_netscaler_citrix.md)

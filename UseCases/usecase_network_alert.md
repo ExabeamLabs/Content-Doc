@@ -15,7 +15,7 @@ _The following list of Supported Exabeam Data Sources power this use case:_
 * [Check Point Threat Prevention](../DataSources/datasource_check_point_threat_prevention_check_point_software.md)
 * [Cisco Firepower](../DataSources/datasource_cisco_firepower_cisco.md)
 * [Cisco Meraki MX appliances](../DataSources/datasource_cisco_meraki_mx_appliances_cisco.md)
-* [Cisco StealthWatch (Lancope)](../DataSources/datasource_cisco_stealthwatch_(lancope)_cisco.md)
+* [Cisco Secure Network Analytics](../DataSources/datasource_cisco_secure_network_analytics_cisco.md)
 * [Cloudflare CDN](../DataSources/datasource_cloudflare_cdn_cloudflare.md)
 * [Cloudflare WAF](../DataSources/datasource_cloudflare_waf_cloudflare.md)
 * [F5 Silverline](../DataSources/datasource_f5_silverline_f5_networks.md)
