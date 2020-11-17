@@ -2,37 +2,13 @@ Vendor: Badge
 =============
 Product: Badge
 --------------
+|                                 Use-Case                                  | Activity Types            | Event Types/Parsers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | MITRE TTP                  | Content                   |
+|:-------------------------------------------------------------------------:| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ------------------------- |
+| [Compromised Credentials](../UseCases/usecase_compromised_credentials.md) | - Activity Time  and Type |  failed-physical-access<br> -- [s-physical-badge-access](../Parsers/parserContent_s-physical-badge-access.md)<br> -- [s-failed-physical-access-unknown-1](../Parsers/parserContent_s-failed-physical-access-unknown-1.md)<br> -- [s-physical-badge-access-5](../Parsers/parserContent_s-physical-badge-access-5.md)<br> -- [s-physical-badge-access-6](../Parsers/parserContent_s-physical-badge-access-6.md)<br> -- [s-failed-physical-access-unknown](../Parsers/parserContent_s-failed-physical-access-unknown.md)<br> -- [physical-badge-access-2](../Parsers/parserContent_physical-badge-access-2.md)<br><br> physical-access<br> -- [s-physical-access-unknown](../Parsers/parserContent_s-physical-access-unknown.md)<br> -- [s-physical-access-unknown-1](../Parsers/parserContent_s-physical-access-unknown-1.md)<br> -- [s-physical-badge-access](../Parsers/parserContent_s-physical-badge-access.md)<br> -- [s-physical-badge-access-2](../Parsers/parserContent_s-physical-badge-access-2.md)<br> -- [s-physical-badge-access-5](../Parsers/parserContent_s-physical-badge-access-5.md)<br> -- [s-physical-badge-access-6](../Parsers/parserContent_s-physical-badge-access-6.md)<br> -- [s-physical-badge-access-4](../Parsers/parserContent_s-physical-badge-access-4.md)<br> -- [physical-badge-access-2](../Parsers/parserContent_physical-badge-access-2.md)<br> | T1078 - Valid Accounts<br> |  - 1 Rules<br> - 1 Models |
+|        [Lateral Movement](../UseCases/usecase_lateral_movement.md)        | - Badge Access            |  failed-physical-access<br> -- [s-physical-badge-access](../Parsers/parserContent_s-physical-badge-access.md)<br> -- [s-failed-physical-access-unknown-1](../Parsers/parserContent_s-failed-physical-access-unknown-1.md)<br> -- [s-physical-badge-access-5](../Parsers/parserContent_s-physical-badge-access-5.md)<br> -- [s-physical-badge-access-6](../Parsers/parserContent_s-physical-badge-access-6.md)<br> -- [s-failed-physical-access-unknown](../Parsers/parserContent_s-failed-physical-access-unknown.md)<br> -- [physical-badge-access-2](../Parsers/parserContent_physical-badge-access-2.md)<br><br> physical-access<br> -- [s-physical-access-unknown](../Parsers/parserContent_s-physical-access-unknown.md)<br> -- [s-physical-access-unknown-1](../Parsers/parserContent_s-physical-access-unknown-1.md)<br> -- [s-physical-badge-access](../Parsers/parserContent_s-physical-badge-access.md)<br> -- [s-physical-badge-access-2](../Parsers/parserContent_s-physical-badge-access-2.md)<br> -- [s-physical-badge-access-5](../Parsers/parserContent_s-physical-badge-access-5.md)<br> -- [s-physical-badge-access-6](../Parsers/parserContent_s-physical-badge-access-6.md)<br> -- [s-physical-badge-access-4](../Parsers/parserContent_s-physical-badge-access-4.md)<br> -- [physical-badge-access-2](../Parsers/parserContent_physical-badge-access-2.md)<br> | T1078 - Valid Accounts<br> |  - 1 Rules<br>            |
 
-### Use Cases
-
-_The following Use Cases can be operationalized using log data from this data source_
-
-* [Account Creation and Management](../UseCases/usecase_account_creation_and_management.md)
-* [Activity Time  and Type](../UseCases/usecase_activity_time__and_type.md)
-* [Asset Logon and Access](../UseCases/usecase_asset_logon_and_access.md)
-* [Badge Access](../UseCases/usecase_badge_access.md)
-* [Service Account Activity](../UseCases/usecase_service_account_activity.md)
-
-
-### Event Types
-
-_The following list of Event Types can be generated by Data Source Badge_Badge, and power the use cases above:_
-
-- failed-physical-access
-- physical-access
-
-
-### Parsers
-
-_The following Parsers can be operationalized using log data from this data source_
-
-* [physical-badge-access-2](../Parsers/parserContent_physical-badge-access-2.md)
-* [s-failed-physical-access-unknown](../Parsers/parserContent_s-failed-physical-access-unknown.md)
-* [s-failed-physical-access-unknown-1](../Parsers/parserContent_s-failed-physical-access-unknown-1.md)
-* [s-physical-access-unknown](../Parsers/parserContent_s-physical-access-unknown.md)
-* [s-physical-access-unknown-1](../Parsers/parserContent_s-physical-access-unknown-1.md)
-* [s-physical-badge-access](../Parsers/parserContent_s-physical-badge-access.md)
-* [s-physical-badge-access-2](../Parsers/parserContent_s-physical-badge-access-2.md)
-* [s-physical-badge-access-4](../Parsers/parserContent_s-physical-badge-access-4.md)
-* [s-physical-badge-access-5](../Parsers/parserContent_s-physical-badge-access-5.md)
-* [s-physical-badge-access-6](../Parsers/parserContent_s-physical-badge-access-6.md)
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                      | Execution | Persistence                                                         | Privilage escalation                                                | Defense evasion                                                     | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration | Impact |
+| ------------------------------------------------------------------- | --------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ------------------- | ------------ | ------ |
+| [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |           | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   |           |                  |            |                     |              |        |

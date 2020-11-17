@@ -1,0 +1,13 @@
+Vendor: HP
+==========
+Product: Print Server
+---------------------
+|                          Use-Case                           | Activity Types         | Event Types/Parsers                                                                                                                                                                                                                                           | MITRE TTP                                     | Content        |
+|:-----------------------------------------------------------:| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | -------------- |
+| [Lateral Movement](../UseCases/usecase_lateral_movement.md) | - Data Loss Prevention |  print-activity<br> -- [cef-hp-print-activity](../Parsers/parserContent_cef-hp-print-activity.md)<br> -- [hp-print-activity](../Parsers/parserContent_hp-print-activity.md)<br> -- [s-hp-print-activity](../Parsers/parserContent_s-hp-print-activity.md)<br> | T1052 - Exfiltration Over Physical Medium<br> |  - 1 Rules<br> |
+
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access | Execution | Persistence | Privilage escalation | Defense evasion | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration                                                                           | Impact |
+| -------------- | --------- | ----------- | -------------------- | --------------- | ----------------- | --------- | ---------------- | ---------- | ------------------- | -------------------------------------------------------------------------------------- | ------ |
+|                |           |             |                      |                 |                   |           |                  |            |                     | [Exfiltration Over Physical Medium](https://attack.mitre.org/techniques/T1052)<br><br> |        |
