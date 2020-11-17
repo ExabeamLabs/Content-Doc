@@ -2,36 +2,15 @@ Vendor: Zoom
 ============
 Product: Zoom
 -------------
+|                                 Use-Case                                  | Activity Types                                      | Event Types/Parsers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | MITRE TTP                                                                            | Content                   |
+|:-------------------------------------------------------------------------:| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------- |
+| [Compromised Credentials](../UseCases/usecase_compromised_credentials.md) | - Activity Time  and Type<br>- Application Activity |  web-meeting-created<br> -- [zoom-meeting-created](../Parsers/parserContent_zoom-meeting-created.md)<br><br> web-meeting-ended<br> -- [zoom-meeting-ended](../Parsers/parserContent_zoom-meeting-ended.md)<br><br> web-meeting-participant-joined<br> -- [zoom-meeting-participant-joined](../Parsers/parserContent_zoom-meeting-participant-joined.md)<br><br> web-meeting-started<br> -- [zoom-meeting-started](../Parsers/parserContent_zoom-meeting-started.md)<br><br> web-meeting-updated<br> -- [zoom-meeting-updated](../Parsers/parserContent_zoom-meeting-updated.md)<br><br> webconference-login<br> -- [zoom-login](../Parsers/parserContent_zoom-login.md)<br><br> webconference-operations-activity<br> -- [zoom-operations-activity](../Parsers/parserContent_zoom-operations-activity.md)<br> | T1078.004 - Valid Accounts: Cloud Accounts<br>                                       |  - 2 Rules<br> - 1 Models |
+|       [Malware Detection](../UseCases/usecase_malware_detection.md)       | - Application Activity                              |  web-meeting-created<br> -- [zoom-meeting-created](../Parsers/parserContent_zoom-meeting-created.md)<br><br> web-meeting-ended<br> -- [zoom-meeting-ended](../Parsers/parserContent_zoom-meeting-ended.md)<br><br> web-meeting-participant-joined<br> -- [zoom-meeting-participant-joined](../Parsers/parserContent_zoom-meeting-participant-joined.md)<br><br> web-meeting-started<br> -- [zoom-meeting-started](../Parsers/parserContent_zoom-meeting-started.md)<br><br> web-meeting-updated<br> -- [zoom-meeting-updated](../Parsers/parserContent_zoom-meeting-updated.md)<br><br> webconference-login<br> -- [zoom-login](../Parsers/parserContent_zoom-login.md)<br><br> webconference-operations-activity<br> -- [zoom-operations-activity](../Parsers/parserContent_zoom-operations-activity.md)<br> | T1078.004 - Valid Accounts: Cloud Accounts<br>T1090.003 - Proxy: Multi-hop Proxy<br> |  - 2 Rules<br>            |
+|     [Privileged Activity](../UseCases/usecase_privileged_activity.md)     | - Application Activity                              |  web-meeting-created<br> -- [zoom-meeting-created](../Parsers/parserContent_zoom-meeting-created.md)<br><br> web-meeting-ended<br> -- [zoom-meeting-ended](../Parsers/parserContent_zoom-meeting-ended.md)<br><br> web-meeting-participant-joined<br> -- [zoom-meeting-participant-joined](../Parsers/parserContent_zoom-meeting-participant-joined.md)<br><br> web-meeting-started<br> -- [zoom-meeting-started](../Parsers/parserContent_zoom-meeting-started.md)<br><br> web-meeting-updated<br> -- [zoom-meeting-updated](../Parsers/parserContent_zoom-meeting-updated.md)<br><br> webconference-login<br> -- [zoom-login](../Parsers/parserContent_zoom-login.md)<br><br> webconference-operations-activity<br> -- [zoom-operations-activity](../Parsers/parserContent_zoom-operations-activity.md)<br> | T1078.004 - Valid Accounts: Cloud Accounts<br>T1098 - Account Manipulation<br>       |  - 3 Rules<br> - 2 Models |
+|    [Ransomware Detection](../UseCases/usecase_ransomware_detection.md)    | - Application Activity                              |  web-meeting-created<br> -- [zoom-meeting-created](../Parsers/parserContent_zoom-meeting-created.md)<br><br> web-meeting-ended<br> -- [zoom-meeting-ended](../Parsers/parserContent_zoom-meeting-ended.md)<br><br> web-meeting-participant-joined<br> -- [zoom-meeting-participant-joined](../Parsers/parserContent_zoom-meeting-participant-joined.md)<br><br> web-meeting-started<br> -- [zoom-meeting-started](../Parsers/parserContent_zoom-meeting-started.md)<br><br> web-meeting-updated<br> -- [zoom-meeting-updated](../Parsers/parserContent_zoom-meeting-updated.md)<br><br> webconference-login<br> -- [zoom-login](../Parsers/parserContent_zoom-login.md)<br><br> webconference-operations-activity<br> -- [zoom-operations-activity](../Parsers/parserContent_zoom-operations-activity.md)<br> | T1078.004 - Valid Accounts: Cloud Accounts<br>                                       |  - 1 Rules<br>            |
 
-### Use Cases
-
-_The following Use Cases can be operationalized using log data from this data source_
-
-* [Activity Time  and Type](../UseCases/usecase_activity_time__and_type.md)
-* [Application Activity](../UseCases/usecase_application_activity.md)
-
-
-### Event Types
-
-_The following list of Event Types can be generated by Data Source Zoom_Zoom, and power the use cases above:_
-
-- webconference-login
-- webconference-operations-activity
-- web-meeting-participant-joined
-- web-meeting-started
-- web-meeting-updated
-- web-meeting-created
-- web-meeting-ended
-
-
-### Parsers
-
-_The following Parsers can be operationalized using log data from this data source_
-
-* [zoom-login](../Parsers/parserContent_zoom-login.md)
-* [zoom-meeting-created](../Parsers/parserContent_zoom-meeting-created.md)
-* [zoom-meeting-ended](../Parsers/parserContent_zoom-meeting-ended.md)
-* [zoom-meeting-participant-joined](../Parsers/parserContent_zoom-meeting-participant-joined.md)
-* [zoom-meeting-started](../Parsers/parserContent_zoom-meeting-started.md)
-* [zoom-meeting-updated](../Parsers/parserContent_zoom-meeting-updated.md)
-* [zoom-operations-activity](../Parsers/parserContent_zoom-operations-activity.md)
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                                                                                                             | Execution | Persistence                                                                                                                                  | Privilage escalation                                                | Defense evasion                                                     | Credential Access | Discovery | Lateral Movement | Collection | Command and Control                                                                                                                       | Exfiltration | Impact |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
+| [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br>[Valid Accounts: Cloud Accounts](https://attack.mitre.org/techniques/T1078/004)<br><br> |           | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br>[Account Manipulation](https://attack.mitre.org/techniques/T1098)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   |           |                  |            | [Proxy: Multi-hop Proxy](https://attack.mitre.org/techniques/T1090/003)<br><br>[Proxy](https://attack.mitre.org/techniques/T1090)<br><br> |              |        |

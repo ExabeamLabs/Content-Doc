@@ -7,36 +7,40 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 
 #### AMAG
 * [AMAG](DataSources/datasource_amag_amag.md)
-* [Symmetry Access Control](DataSources/datasource_symmetry_access_control_amag.md)
+* [Symmetry Access Control](DataSources/datasource_amag_symmetry_access_control.md)
 #### APC
 * [APC](DataSources/datasource_apc_apc.md)
 #### ASUPIM
 * [ASUPIM](DataSources/datasource_asupim_asupim.md)
 #### AWS
-* [AWS Bastion](DataSources/datasource_aws_bastion_aws.md)
-* [AWS CloudTrail](DataSources/datasource_aws_cloudtrail_aws.md)
-* [AWS CloudWatch](DataSources/datasource_aws_cloudwatch_aws.md)
-* [AWS GuardDuty](DataSources/datasource_aws_guardduty_aws.md)
 * [AWS](DataSources/datasource_aws_aws.md)
+* [AWS Bastion](DataSources/datasource_aws_aws_bastion.md)
+* [AWS CloudTrail](DataSources/datasource_aws_aws_cloudtrail.md)
+* [AWS CloudWatch](DataSources/datasource_aws_aws_cloudwatch.md)
+* [AWS GuardDuty](DataSources/datasource_aws_aws_guardduty.md)
 #### AWS CloudTrail
 * [AWS CloudTrail](DataSources/datasource_aws_cloudtrail_aws_cloudtrail.md)
 #### Absolute
-* [Absolute SIEM Connector](DataSources/datasource_absolute_siem_connector_absolute.md)
+* [Absolute SIEM Connector](DataSources/datasource_absolute_absolute_siem_connector.md)
 #### Accellion
-* [Kiteworks](DataSources/datasource_kiteworks_accellion.md)
+* [Accellion](DataSources/datasource_accellion_accellion.md)
+* [Kiteworks](DataSources/datasource_accellion_kiteworks.md)
 #### AccessIT
-* [Universal.NET](DataSources/datasource_universal.net_accessit.md)
+* [Universal.NET](DataSources/datasource_accessit_universal.net.md)
 #### Adaxes
 * [Adaxes](DataSources/datasource_adaxes_adaxes.md)
+#### AirWatch
+* [AirWatch](DataSources/datasource_airwatch_airwatch.md)
 #### Airlock
-* [Airlock Web Application Firewall](DataSources/datasource_airlock_web_application_firewall_airlock.md)
+* [Airlock](DataSources/datasource_airlock_airlock.md)
+* [Airlock Web Application Firewall](DataSources/datasource_airlock_airlock_web_application_firewall.md)
 #### Akamai
-* [Akamai Siem](DataSources/datasource_akamai_siem_akamai.md)
-* [Cloud Akamai](DataSources/datasource_cloud_akamai_akamai.md)
+* [Akamai Siem](DataSources/datasource_akamai_akamai_siem.md)
+* [Cloud Akamai](DataSources/datasource_akamai_cloud_akamai.md)
 #### Alert Logic
 * [Alert Logic](DataSources/datasource_alert_logic_alert_logic.md)
 #### AlgoSec
-* [Firewall Analyzer](DataSources/datasource_firewall_analyzer_algosec.md)
+* [Firewall Analyzer](DataSources/datasource_algosec_firewall_analyzer.md)
 #### Apache
 * [Apache](DataSources/datasource_apache_apache.md)
 #### AppSense Application Manager
@@ -52,15 +56,15 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Atlassian BitBucket
 * [Atlassian BitBucket](DataSources/datasource_atlassian_bitbucket_atlassian_bitbucket.md)
 #### Attivo
-* [BOTsink](DataSources/datasource_botsink_attivo.md)
+* [BOTsink](DataSources/datasource_attivo_botsink.md)
 #### Avaya
-* [Avaya Ethernet Routing Switch](DataSources/datasource_avaya_ethernet_routing_switch_avaya.md)
+* [Avaya Ethernet Routing Switch](DataSources/datasource_avaya_avaya_ethernet_routing_switch.md)
 #### Avaya VPN
 * [Avaya VPN](DataSources/datasource_avaya_vpn_avaya_vpn.md)
 #### Avecto
-* [Avecto Defendpoint](DataSources/datasource_avecto_defendpoint_avecto.md)
+* [Avecto Defendpoint](DataSources/datasource_avecto_avecto_defendpoint.md)
 #### Axway
-* [Axway SFTP](DataSources/datasource_axway_sftp_axway.md)
+* [Axway SFTP](DataSources/datasource_axway_axway_sftp.md)
 #### BCN
 * [BCN](DataSources/datasource_bcn_bcn.md)
 #### BIND
@@ -70,158 +74,160 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Badgepoint
 * [Badgepoint](DataSources/datasource_badgepoint_badgepoint.md)
 #### Barracuda
-* [Barracuda Email Security Gateway](DataSources/datasource_barracuda_email_security_gateway_barracuda.md)
-* [Barracuda Firewall](DataSources/datasource_barracuda_firewall_barracuda.md)
+* [Barracuda Email Security Gateway](DataSources/datasource_barracuda_barracuda_email_security_gateway.md)
+* [Barracuda Firewall](DataSources/datasource_barracuda_barracuda_firewall.md)
 #### BeyondTrust
-* [BeyondTrust PasswordSafe](DataSources/datasource_beyondtrust_passwordsafe_beyondtrust.md)
-* [BeyondTrust PowerBroker](DataSources/datasource_beyondtrust_powerbroker_beyondtrust.md)
-* [BeyondTrust Privileged Identity](DataSources/datasource_beyondtrust_privileged_identity_beyondtrust.md)
 * [BeyondTrust](DataSources/datasource_beyondtrust_beyondtrust.md)
+* [BeyondTrust PasswordSafe](DataSources/datasource_beyondtrust_beyondtrust_passwordsafe.md)
+* [BeyondTrust PowerBroker](DataSources/datasource_beyondtrust_beyondtrust_powerbroker.md)
+* [BeyondTrust Privileged Identity](DataSources/datasource_beyondtrust_beyondtrust_privileged_identity.md)
 #### BeyondTrust Secure Remote Access
 * [BeyondTrust Secure Remote Access](DataSources/datasource_beyondtrust_secure_remote_access_beyondtrust_secure_remote_access.md)
 #### BitDefender
-* [Gravityzone](DataSources/datasource_gravityzone_bitdefender.md)
+* [Gravityzone](DataSources/datasource_bitdefender_gravityzone.md)
 #### Bitglass
-* [Bitglass CASB](DataSources/datasource_bitglass_casb_bitglass.md)
+* [Bitglass CASB](DataSources/datasource_bitglass_bitglass_casb.md)
 #### BlackBerry
-* [BlackBerry Protect](DataSources/datasource_blackberry_protect_blackberry.md)
+* [BlackBerry Protect](DataSources/datasource_blackberry_blackberry_protect.md)
 #### BlueCat Networks Adonis
 * [BlueCat Networks Adonis](DataSources/datasource_bluecat_networks_adonis_bluecat_networks_adonis.md)
 #### BlueCoat
 * [BlueCoat](DataSources/datasource_bluecoat_bluecoat.md)
 #### Box
-* [Box Cloud Content Management](DataSources/datasource_box_cloud_content_management_box.md)
 * [Box](DataSources/datasource_box_box.md)
+* [Box Cloud Content Management](DataSources/datasource_box_box_cloud_content_management.md)
 #### Box Cloud Content Management
 * [Box Cloud Content Management](DataSources/datasource_box_cloud_content_management_box_cloud_content_management.md)
 #### Brivo
 * [Brivo](DataSources/datasource_brivo_brivo.md)
 #### Bromium
-* [Bromium Advanced Endpoint Security](DataSources/datasource_bromium_advanced_endpoint_security_bromium.md)
-* [Bromium Secure Platform](DataSources/datasource_bromium_secure_platform_bromium.md)
+* [Bromium Advanced Endpoint Security](DataSources/datasource_bromium_bromium_advanced_endpoint_security.md)
+* [Bromium Secure Platform](DataSources/datasource_bromium_bromium_secure_platform.md)
+#### CA Technologies
+* [CA Privileged Access Manager Server Control](DataSources/datasource_ca_technologies_ca_privileged_access_manager_server_control.md)
 #### CDS
 * [CDS](DataSources/datasource_cds_cds.md)
 #### CatoNetworks
-* [Cato Cloud](DataSources/datasource_cato_cloud_catonetworks.md)
+* [Cato Cloud](DataSources/datasource_catonetworks_cato_cloud.md)
 #### Centrify
-* [Centrify Audit and Monitoring Service](DataSources/datasource_centrify_audit_and_monitoring_service_centrify.md)
-* [Centrify Authentication Service](DataSources/datasource_centrify_authentication_service_centrify.md)
-* [Centrify Infrastructure Services](DataSources/datasource_centrify_infrastructure_services_centrify.md)
-* [Centrify Zero Trust Privilege Services](DataSources/datasource_centrify_zero_trust_privilege_services_centrify.md)
+* [Centrify Audit and Monitoring Service](DataSources/datasource_centrify_centrify_audit_and_monitoring_service.md)
+* [Centrify Authentication Service](DataSources/datasource_centrify_centrify_authentication_service.md)
+* [Centrify Infrastructure Services](DataSources/datasource_centrify_centrify_infrastructure_services.md)
+* [Centrify Zero Trust Privilege Services](DataSources/datasource_centrify_centrify_zero_trust_privilege_services.md)
 #### CenturyLink
-* [Adaptive Threat Intelligence](DataSources/datasource_adaptive_threat_intelligence_centurylink.md)
+* [Adaptive Threat Intelligence](DataSources/datasource_centurylink_adaptive_threat_intelligence.md)
 #### Check Point Software
-* [Check Point Endpoint Security](DataSources/datasource_check_point_endpoint_security_check_point_software.md)
-* [Check Point Identity Awareness](DataSources/datasource_check_point_identity_awareness_check_point_software.md)
-* [Check Point NGFW](DataSources/datasource_check_point_ngfw_check_point_software.md)
-* [Check Point Security Gateway Virtual Edition (vSEC)](DataSources/datasource_check_point_security_gateway_virtual_edition_(vsec)_check_point_software.md)
-* [Check Point Security Gateway](DataSources/datasource_check_point_security_gateway_check_point_software.md)
-* [Check Point Threat Prevention](DataSources/datasource_check_point_threat_prevention_check_point_software.md)
+* [Check Point Endpoint Security](DataSources/datasource_check_point_software_check_point_endpoint_security.md)
+* [Check Point Identity Awareness](DataSources/datasource_check_point_software_check_point_identity_awareness.md)
+* [Check Point NGFW](DataSources/datasource_check_point_software_check_point_ngfw.md)
+* [Check Point Security Gateway](DataSources/datasource_check_point_software_check_point_security_gateway.md)
+* [Check Point Security Gateway Virtual Edition (vSEC)](DataSources/datasource_check_point_software_check_point_security_gateway_virtual_edition_(vsec).md)
+* [Check Point Threat Prevention](DataSources/datasource_check_point_software_check_point_threat_prevention.md)
 #### Cisco
-* [ACI](DataSources/datasource_aci_cisco.md)
-* [AnyConnect](DataSources/datasource_anyconnect_cisco.md)
-* [Cisco ACS](DataSources/datasource_cisco_acs_cisco.md)
-* [Cisco ADC](DataSources/datasource_cisco_adc_cisco.md)
-* [Cisco Adaptive Security Appliance](DataSources/datasource_cisco_adaptive_security_appliance_cisco.md)
-* [Cisco Advance Malware Protection (AMP)](DataSources/datasource_cisco_advance_malware_protection_(amp)_cisco.md)
-* [Cisco Call Manager](DataSources/datasource_cisco_call_manager_cisco.md)
-* [Cisco Cloud Web Security](DataSources/datasource_cisco_cloud_web_security_cisco.md)
-* [Cisco CloudLock](DataSources/datasource_cisco_cloudlock_cisco.md)
-* [Cisco Console](DataSources/datasource_cisco_console_cisco.md)
-* [Cisco DHCP](DataSources/datasource_cisco_dhcp_cisco.md)
-* [Cisco Fire Power Devices](DataSources/datasource_cisco_fire_power_devices_cisco.md)
-* [Cisco Firepower](DataSources/datasource_cisco_firepower_cisco.md)
-* [Cisco ISE](DataSources/datasource_cisco_ise_cisco.md)
-* [Cisco Meraki MX appliances](DataSources/datasource_cisco_meraki_mx_appliances_cisco.md)
-* [Cisco NPE](DataSources/datasource_cisco_npe_cisco.md)
-* [Cisco Netflow](DataSources/datasource_cisco_netflow_cisco.md)
-* [Cisco Secure Email](DataSources/datasource_cisco_secure_email_cisco.md)
-* [Cisco Secure Network Analytics](DataSources/datasource_cisco_secure_network_analytics_cisco.md)
-* [Cisco Secure Web Appliance](DataSources/datasource_cisco_secure_web_appliance_cisco.md)
-* [Cisco TACACS](DataSources/datasource_cisco_tacacs_cisco.md)
-* [Cisco Umbrella](DataSources/datasource_cisco_umbrella_cisco.md)
-* [Cisco WiFi](DataSources/datasource_cisco_wifi_cisco.md)
+* [ACI](DataSources/datasource_cisco_aci.md)
+* [AnyConnect](DataSources/datasource_cisco_anyconnect.md)
 * [Cisco](DataSources/datasource_cisco_cisco.md)
-* [Duo Access Security](DataSources/datasource_duo_access_security_cisco.md)
-* [IronPort Email](DataSources/datasource_ironport_email_cisco.md)
-* [Meraki Firepower](DataSources/datasource_meraki_firepower_cisco.md)
-* [OpenDNS Umbrella](DataSources/datasource_opendns_umbrella_cisco.md)
-* [Proxy Umbrella](DataSources/datasource_proxy_umbrella_cisco.md)
+* [Cisco ACS](DataSources/datasource_cisco_cisco_acs.md)
+* [Cisco ADC](DataSources/datasource_cisco_cisco_adc.md)
+* [Cisco Adaptive Security Appliance](DataSources/datasource_cisco_cisco_adaptive_security_appliance.md)
+* [Cisco Advance Malware Protection (AMP)](DataSources/datasource_cisco_cisco_advance_malware_protection_(amp).md)
+* [Cisco Call Manager](DataSources/datasource_cisco_cisco_call_manager.md)
+* [Cisco Cloud Web Security](DataSources/datasource_cisco_cisco_cloud_web_security.md)
+* [Cisco CloudLock](DataSources/datasource_cisco_cisco_cloudlock.md)
+* [Cisco Console](DataSources/datasource_cisco_cisco_console.md)
+* [Cisco DHCP](DataSources/datasource_cisco_cisco_dhcp.md)
+* [Cisco Fire Power Devices](DataSources/datasource_cisco_cisco_fire_power_devices.md)
+* [Cisco Firepower](DataSources/datasource_cisco_cisco_firepower.md)
+* [Cisco ISE](DataSources/datasource_cisco_cisco_ise.md)
+* [Cisco Meraki MX appliances](DataSources/datasource_cisco_cisco_meraki_mx_appliances.md)
+* [Cisco NPE](DataSources/datasource_cisco_cisco_npe.md)
+* [Cisco Netflow](DataSources/datasource_cisco_cisco_netflow.md)
+* [Cisco Secure Email](DataSources/datasource_cisco_cisco_secure_email.md)
+* [Cisco Secure Network Analytics](DataSources/datasource_cisco_cisco_secure_network_analytics.md)
+* [Cisco Secure Web Appliance](DataSources/datasource_cisco_cisco_secure_web_appliance.md)
+* [Cisco TACACS](DataSources/datasource_cisco_cisco_tacacs.md)
+* [Cisco Umbrella](DataSources/datasource_cisco_cisco_umbrella.md)
+* [Cisco WiFi](DataSources/datasource_cisco_cisco_wifi.md)
+* [Duo Access Security](DataSources/datasource_cisco_duo_access_security.md)
+* [IronPort Email](DataSources/datasource_cisco_ironport_email.md)
+* [Meraki Firepower](DataSources/datasource_cisco_meraki_firepower.md)
+* [OpenDNS Umbrella](DataSources/datasource_cisco_opendns_umbrella.md)
+* [Proxy Umbrella](DataSources/datasource_cisco_proxy_umbrella.md)
 #### Cisco Call Manager
 * [Cisco Call Manager](DataSources/datasource_cisco_call_manager_cisco_call_manager.md)
 #### Citrix
-* [Citrix AppFW](DataSources/datasource_citrix_appfw_citrix.md)
-* [Citrix Endpoint Management](DataSources/datasource_citrix_endpoint_management_citrix.md)
-* [Citrix Gateway ActiveSync Connector](DataSources/datasource_citrix_gateway_activesync_connector_citrix.md)
-* [Citrix Netscaler VPN](DataSources/datasource_citrix_netscaler_vpn_citrix.md)
-* [Citrix Netscaler](DataSources/datasource_citrix_netscaler_citrix.md)
-* [Citrix ShareFile](DataSources/datasource_citrix_sharefile_citrix.md)
-* [Citrix XenApp](DataSources/datasource_citrix_xenapp_citrix.md)
-* [Citrix XenDesktop](DataSources/datasource_citrix_xendesktop_citrix.md)
 * [Citrix](DataSources/datasource_citrix_citrix.md)
-* [Netscaler VPN](DataSources/datasource_netscaler_vpn_citrix.md)
-* [Netscaler WAF](DataSources/datasource_netscaler_waf_citrix.md)
-* [Web Logging](DataSources/datasource_web_logging_citrix.md)
+* [Citrix AppFW](DataSources/datasource_citrix_citrix_appfw.md)
+* [Citrix Endpoint Management](DataSources/datasource_citrix_citrix_endpoint_management.md)
+* [Citrix Gateway ActiveSync Connector](DataSources/datasource_citrix_citrix_gateway_activesync_connector.md)
+* [Citrix Netscaler](DataSources/datasource_citrix_citrix_netscaler.md)
+* [Citrix Netscaler VPN](DataSources/datasource_citrix_citrix_netscaler_vpn.md)
+* [Citrix ShareFile](DataSources/datasource_citrix_citrix_sharefile.md)
+* [Citrix XenApp](DataSources/datasource_citrix_citrix_xenapp.md)
+* [Citrix XenDesktop](DataSources/datasource_citrix_citrix_xendesktop.md)
+* [Netscaler VPN](DataSources/datasource_citrix_netscaler_vpn.md)
+* [Netscaler WAF](DataSources/datasource_citrix_netscaler_waf.md)
+* [Web Logging](DataSources/datasource_citrix_web_logging.md)
 #### Clearswift SEG
 * [Clearswift SEG](DataSources/datasource_clearswift_seg_clearswift_seg.md)
 #### Cloud Application
 * [Cloud Application](DataSources/datasource_cloud_application_cloud_application.md)
 #### Cloudflare
-* [Cloudflare CDN](DataSources/datasource_cloudflare_cdn_cloudflare.md)
-* [Cloudflare Insights](DataSources/datasource_cloudflare_insights_cloudflare.md)
-* [Cloudflare WAF](DataSources/datasource_cloudflare_waf_cloudflare.md)
+* [Cloudflare CDN](DataSources/datasource_cloudflare_cloudflare_cdn.md)
+* [Cloudflare Insights](DataSources/datasource_cloudflare_cloudflare_insights.md)
+* [Cloudflare WAF](DataSources/datasource_cloudflare_cloudflare_waf.md)
 #### Code Green Network (Digital Guardian)
-* [TrueDLP](DataSources/datasource_truedlp_code_green_network_(digital_guardian).md)
+* [TrueDLP](DataSources/datasource_code_green_network_(digital_guardian)_truedlp.md)
 #### Code42
-* [Code42 Incydr](DataSources/datasource_code42_incydr_code42.md)
+* [Code42 Incydr](DataSources/datasource_code42_code42_incydr.md)
 #### Cofense
-* [Phishme](DataSources/datasource_phishme_cofense.md)
+* [Phishme](DataSources/datasource_cofense_phishme.md)
 #### Cognitas CrossLink
 * [Cognitas CrossLink](DataSources/datasource_cognitas_crosslink_cognitas_crosslink.md)
 #### Contrast Security
 * [Contrast Security](DataSources/datasource_contrast_security_contrast_security.md)
 #### CrowdStrike
-* [Falcon](DataSources/datasource_falcon_crowdstrike.md)
+* [Falcon](DataSources/datasource_crowdstrike_falcon.md)
 #### CyberArk
-* [CyberArk Endpoint Privilege Management](DataSources/datasource_cyberark_endpoint_privilege_management_cyberark.md)
-* [CyberArk Vault](DataSources/datasource_cyberark_vault_cyberark.md)
-* [Privileged Session Manager](DataSources/datasource_privileged_session_manager_cyberark.md)
-* [Privileged Threat Analytics](DataSources/datasource_privileged_threat_analytics_cyberark.md)
+* [CyberArk Endpoint Privilege Management](DataSources/datasource_cyberark_cyberark_endpoint_privilege_management.md)
+* [CyberArk Vault](DataSources/datasource_cyberark_cyberark_vault.md)
+* [Privileged Session Manager](DataSources/datasource_cyberark_privileged_session_manager.md)
+* [Privileged Threat Analytics](DataSources/datasource_cyberark_privileged_threat_analytics.md)
 #### Cybereason
 * [Cybereason](DataSources/datasource_cybereason_cybereason.md)
 #### DTEX InTERCEPT
 * [DTEX InTERCEPT](DataSources/datasource_dtex_intercept_dtex_intercept.md)
 #### Damballa
-* [Failsafe](DataSources/datasource_failsafe_damballa.md)
+* [Failsafe](DataSources/datasource_damballa_failsafe.md)
 #### Darktrace
-* [Darktrace Enterprise Immune System](DataSources/datasource_darktrace_enterprise_immune_system_darktrace.md)
 * [Darktrace](DataSources/datasource_darktrace_darktrace.md)
+* [Darktrace Enterprise Immune System](DataSources/datasource_darktrace_darktrace_enterprise_immune_system.md)
 #### Datawatch Systems
-* [DataWatch](DataSources/datasource_datawatch_datawatch_systems.md)
+* [DataWatch](DataSources/datasource_datawatch_systems_datawatch.md)
 #### Dell
-* [Dell EMC Isilon](DataSources/datasource_dell_emc_isilon_dell.md)
-* [One Identity Manager](DataSources/datasource_one_identity_manager_dell.md)
-* [RSA Authentication Manager](DataSources/datasource_rsa_authentication_manager_dell.md)
-* [SonicWALL Aventail](DataSources/datasource_sonicwall_aventail_dell.md)
+* [Dell EMC Isilon](DataSources/datasource_dell_dell_emc_isilon.md)
+* [One Identity Manager](DataSources/datasource_dell_one_identity_manager.md)
+* [RSA Authentication Manager](DataSources/datasource_dell_rsa_authentication_manager.md)
+* [SonicWALL Aventail](DataSources/datasource_dell_sonicwall_aventail.md)
 #### Digital Arts
-* [Digital Arts i-FILTER for Business](DataSources/datasource_digital_arts_i-filter_for_business_digital_arts.md)
+* [Digital Arts i-FILTER for Business](DataSources/datasource_digital_arts_digital_arts_i-filter_for_business.md)
 #### Digital Guardian
-* [Digital Guardian Endpoint Protection](DataSources/datasource_digital_guardian_endpoint_protection_digital_guardian.md)
-* [Network DLP](DataSources/datasource_network_dlp_digital_guardian.md)
+* [Digital Guardian Endpoint Protection](DataSources/datasource_digital_guardian_digital_guardian_endpoint_protection.md)
+* [Network DLP](DataSources/datasource_digital_guardian_network_dlp.md)
 #### Digital Guardian Endpoint Protection
 * [Digital Guardian Endpoint Protection](DataSources/datasource_digital_guardian_endpoint_protection_digital_guardian_endpoint_protection.md)
 #### Dropbox
 * [Dropbox](DataSources/datasource_dropbox_dropbox.md)
 #### Dtex Systems
-* [DTEX InTERCEPT](DataSources/datasource_dtex_intercept_dtex_systems.md)
+* [DTEX InTERCEPT](DataSources/datasource_dtex_systems_dtex_intercept.md)
 #### Duo Access Security
 * [Duo Access Security](DataSources/datasource_duo_access_security_duo_access_security.md)
 #### EMP
 * [EMP](DataSources/datasource_emp_emp.md)
 #### ESET
-* [ESET Endpoint Security](DataSources/datasource_eset_endpoint_security_eset.md)
+* [ESET Endpoint Security](DataSources/datasource_eset_eset_endpoint_security.md)
 #### EdgeWave
-* [EdgeWave iPrism](DataSources/datasource_edgewave_iprism_edgewave.md)
+* [EdgeWave iPrism](DataSources/datasource_edgewave_edgewave_iprism.md)
 #### Egnyte
 * [Egnyte](DataSources/datasource_egnyte_egnyte.md)
 #### EnSilo
@@ -229,122 +235,123 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### EndPoint
 * [EndPoint](DataSources/datasource_endpoint_endpoint.md)
 #### Endgame
-* [Endgame EDR](DataSources/datasource_endgame_edr_endgame.md)
+* [Endgame EDR](DataSources/datasource_endgame_endgame_edr.md)
 #### Entrust
-* [IdentityGuard](DataSources/datasource_identityguard_entrust.md)
+* [IdentityGuard](DataSources/datasource_entrust_identityguard.md)
 #### Epic
-* [Epic SIEM](DataSources/datasource_epic_siem_epic.md)
+* [Epic SIEM](DataSources/datasource_epic_epic_siem.md)
 #### Epic SIEM
 * [Epic SIEM](DataSources/datasource_epic_siem_epic_siem.md)
 #### Exabeam
-* [Exabeam DL](DataSources/datasource_exabeam_dl_exabeam.md)
+* [Exabeam DL](DataSources/datasource_exabeam_exabeam_dl.md)
 #### Exabeam Advanced Analytics
 * [Exabeam Advanced Analytics](DataSources/datasource_exabeam_advanced_analytics_exabeam_advanced_analytics.md)
 #### ExamWorkspace
 * [ExamWorkspace](DataSources/datasource_examworkspace_examworkspace.md)
 #### Extrahop
-* [Reveal(x)](DataSources/datasource_reveal(x)_extrahop.md)
+* [Reveal(x)](DataSources/datasource_extrahop_reveal(x).md)
 #### Extreme Networks
-* [Zebra wireless LAN management](DataSources/datasource_zebra_wireless_lan_management_extreme_networks.md)
+* [Zebra wireless LAN management](DataSources/datasource_extreme_networks_zebra_wireless_lan_management.md)
 #### F-Secure
-* [F-Secure Client Security](DataSources/datasource_f-secure_client_security_f-secure.md)
+* [F-Secure Client Security](DataSources/datasource_f-secure_f-secure_client_security.md)
 #### F5 Networks
-* [BIG-IP DNS](DataSources/datasource_big-ip_dns_f5_networks.md)
-* [Big-IP](DataSources/datasource_big-ip_f5_networks.md)
-* [F5 Application Security Manager](DataSources/datasource_f5_application_security_manager_f5_networks.md)
-* [F5 BIG-IP Access Policy Manager (APM)](DataSources/datasource_f5_big-ip_access_policy_manager_(apm)_f5_networks.md)
-* [F5 Silverline](DataSources/datasource_f5_silverline_f5_networks.md)
-* [IPI F5](DataSources/datasource_ipi_f5_f5_networks.md)
-* [WAF F5](DataSources/datasource_waf_f5_f5_networks.md)
-* [WebSafe](DataSources/datasource_websafe_f5_networks.md)
+* [BIG-IP DNS](DataSources/datasource_f5_networks_big-ip_dns.md)
+* [Big-IP](DataSources/datasource_f5_networks_big-ip.md)
+* [F5 Application Security Manager](DataSources/datasource_f5_networks_f5_application_security_manager.md)
+* [F5 BIG-IP Access Policy Manager (APM)](DataSources/datasource_f5_networks_f5_big-ip_access_policy_manager_(apm).md)
+* [F5 Silverline](DataSources/datasource_f5_networks_f5_silverline.md)
+* [IPI F5](DataSources/datasource_f5_networks_ipi_f5.md)
+* [WAF F5](DataSources/datasource_f5_networks_waf_f5.md)
+* [WebSafe](DataSources/datasource_f5_networks_websafe.md)
 #### FTP
 * [FTP](DataSources/datasource_ftp_ftp.md)
 #### Fidelis
-* [Fidelis Network](DataSources/datasource_fidelis_network_fidelis.md)
-* [Fidelis XPS](DataSources/datasource_fidelis_xps_fidelis.md)
+* [Fidelis Network](DataSources/datasource_fidelis_fidelis_network.md)
+* [Fidelis XPS](DataSources/datasource_fidelis_fidelis_xps.md)
 #### FileSite
 * [FileSite](DataSources/datasource_filesite_filesite.md)
 #### FireEye
-* [FireEye Email Gateway](DataSources/datasource_fireeye_email_gateway_fireeye.md)
-* [FireEye Email Security (EX)](DataSources/datasource_fireeye_email_security_(ex)_fireeye.md)
-* [FireEye Email Threat Prevention (ETP)](DataSources/datasource_fireeye_email_threat_prevention_(etp)_fireeye.md)
-* [FireEye Endpoint Security (CM)](DataSources/datasource_fireeye_endpoint_security_(cm)_fireeye.md)
-* [FireEye Endpoint Security (HX)](DataSources/datasource_fireeye_endpoint_security_(hx)_fireeye.md)
-* [FireEye Helix](DataSources/datasource_fireeye_helix_fireeye.md)
-* [FireEye Network Security (Helix)](DataSources/datasource_fireeye_network_security_(helix)_fireeye.md)
-* [FireEye Network Security (NX)](DataSources/datasource_fireeye_network_security_(nx)_fireeye.md)
+* [FireEye Email Gateway](DataSources/datasource_fireeye_fireeye_email_gateway.md)
+* [FireEye Email Security (EX)](DataSources/datasource_fireeye_fireeye_email_security_(ex).md)
+* [FireEye Email Threat Prevention (ETP)](DataSources/datasource_fireeye_fireeye_email_threat_prevention_(etp).md)
+* [FireEye Endpoint Security (CM)](DataSources/datasource_fireeye_fireeye_endpoint_security_(cm).md)
+* [FireEye Endpoint Security (HX)](DataSources/datasource_fireeye_fireeye_endpoint_security_(hx).md)
+* [FireEye Helix](DataSources/datasource_fireeye_fireeye_helix.md)
+* [FireEye Network Security (Helix)](DataSources/datasource_fireeye_fireeye_network_security_(helix).md)
+* [FireEye Network Security (NX)](DataSources/datasource_fireeye_fireeye_network_security_(nx).md)
 #### Forcepoint
-* [Forcepoint CASB](DataSources/datasource_forcepoint_casb_forcepoint.md)
-* [Forcepoint DLP](DataSources/datasource_forcepoint_dlp_forcepoint.md)
-* [Forcepoint Insider Threat](DataSources/datasource_forcepoint_insider_threat_forcepoint.md)
-* [Websense ESG](DataSources/datasource_websense_esg_forcepoint.md)
-* [Websense Secure Gateway](DataSources/datasource_websense_secure_gateway_forcepoint.md)
+* [Forcepoint CASB](DataSources/datasource_forcepoint_forcepoint_casb.md)
+* [Forcepoint DLP](DataSources/datasource_forcepoint_forcepoint_dlp.md)
+* [Forcepoint Insider Threat](DataSources/datasource_forcepoint_forcepoint_insider_threat.md)
+* [Websense ESG](DataSources/datasource_forcepoint_websense_esg.md)
+* [Websense Secure Gateway](DataSources/datasource_forcepoint_websense_secure_gateway.md)
 #### Forcepoint NGFW
 * [Forcepoint NGFW](DataSources/datasource_forcepoint_ngfw_forcepoint_ngfw.md)
 #### Forescout
-* [Forescout CounterACT](DataSources/datasource_forescout_counteract_forescout.md)
+* [Forescout CounterACT](DataSources/datasource_forescout_forescout_counteract.md)
 #### Fortinet
-* [FortiAuthenticator](DataSources/datasource_fortiauthenticator_fortinet.md)
-* [Fortinet Enterprise Firewall](DataSources/datasource_fortinet_enterprise_firewall_fortinet.md)
-* [Fortinet UTM](DataSources/datasource_fortinet_utm_fortinet.md)
-* [Fortinet VPN](DataSources/datasource_fortinet_vpn_fortinet.md)
+* [FortiAuthenticator](DataSources/datasource_fortinet_fortiauthenticator.md)
+* [Fortinet Enterprise Firewall](DataSources/datasource_fortinet_fortinet_enterprise_firewall.md)
+* [Fortinet UTM](DataSources/datasource_fortinet_fortinet_utm.md)
+* [Fortinet VPN](DataSources/datasource_fortinet_fortinet_vpn.md)
 #### GTB
-* [GTBInspector](DataSources/datasource_gtbinspector_gtb.md)
+* [GTBInspector](DataSources/datasource_gtb_gtbinspector.md)
 #### Galaxy
 * [Galaxy](DataSources/datasource_galaxy_galaxy.md)
 #### Gemalto
-* [Gemalto MFA](DataSources/datasource_gemalto_mfa_gemalto.md)
+* [Gemalto MFA](DataSources/datasource_gemalto_gemalto_mfa.md)
 #### GitHub
 * [GitHub](DataSources/datasource_github_github.md)
 #### Google
-* [GCP Squid Proxy](DataSources/datasource_gcp_squid_proxy_google.md)
-* [Google Calendar](DataSources/datasource_google_calendar_google.md)
-* [Google Cloud Platform](DataSources/datasource_google_cloud_platform_google.md)
-* [Google Drive](DataSources/datasource_google_drive_google.md)
+* [GCP Squid Proxy](DataSources/datasource_google_gcp_squid_proxy.md)
 * [Google](DataSources/datasource_google_google.md)
-* [Virtual Private Cloud](DataSources/datasource_virtual_private_cloud_google.md)
+* [Google Calendar](DataSources/datasource_google_google_calendar.md)
+* [Google Cloud Platform](DataSources/datasource_google_google_cloud_platform.md)
+* [Google Drive](DataSources/datasource_google_google_drive.md)
+* [Virtual Private Cloud](DataSources/datasource_google_virtual_private_cloud.md)
 #### Gravityzone
 * [Gravityzone](DataSources/datasource_gravityzone_gravityzone.md)
 #### HP
-* [HP LaserJet Printer](DataSources/datasource_hp_laserjet_printer_hp.md)
-* [Print Server](DataSources/datasource_print_server_hp.md)
+* [HP LaserJet Printer](DataSources/datasource_hp_hp_laserjet_printer.md)
+* [Print Server](DataSources/datasource_hp_print_server.md)
 #### HP Aruba
-* [Aruba Wireless controller](DataSources/datasource_aruba_wireless_controller_hp_aruba.md)
+* [Aruba Wireless controller](DataSources/datasource_hp_aruba_aruba_wireless_controller.md)
 * [HP Aruba](DataSources/datasource_hp_aruba_hp_aruba.md)
 #### HP Comware
 * [HP Comware](DataSources/datasource_hp_comware_hp_comware.md)
 #### HP SafeCom
 * [HP SafeCom](DataSources/datasource_hp_safecom_hp_safecom.md)
 #### HPE
-* [Aruba ClearPass Access Control and Policy Management](DataSources/datasource_aruba_clearpass_access_control_and_policy_management_hpe.md)
+* [Aruba ClearPass Access Control and Policy Management](DataSources/datasource_hpe_aruba_clearpass_access_control_and_policy_management.md)
 #### HashiCorp
-* [Terraform](DataSources/datasource_terraform_hashicorp.md)
+* [HashiCorp Vault](DataSources/datasource_hashicorp_hashicorp_vault.md)
+* [Terraform](DataSources/datasource_hashicorp_terraform.md)
 #### HelpSystems
-* [Powertech Identity Access Manager (BoKs)](DataSources/datasource_powertech_identity_access_manager_(boks)_helpsystems.md)
+* [Powertech Identity Access Manager (BoKs)](DataSources/datasource_helpsystems_powertech_identity_access_manager_(boks).md)
 #### Honeywell
-* [Honeywell Pro-Watch](DataSources/datasource_honeywell_pro-watch_honeywell.md)
 * [Honeywell](DataSources/datasource_honeywell_honeywell.md)
+* [Honeywell Pro-Watch](DataSources/datasource_honeywell_honeywell_pro-watch.md)
 #### Honeywell Pro-Watch
 * [Honeywell Pro-Watch](DataSources/datasource_honeywell_pro-watch_honeywell_pro-watch.md)
 #### Honeywell WIN-PAK
 * [Honeywell WIN-PAK](DataSources/datasource_honeywell_win-pak_honeywell_win-pak.md)
 #### Huawei
-* [Enterprise Network Firewall](DataSources/datasource_enterprise_network_firewall_huawei.md)
-* [Unified Security Gateway](DataSources/datasource_unified_security_gateway_huawei.md)
+* [Enterprise Network Firewall](DataSources/datasource_huawei_enterprise_network_firewall.md)
+* [Unified Security Gateway](DataSources/datasource_huawei_unified_security_gateway.md)
 #### IBM
-* [Guardium](DataSources/datasource_guardium_ibm.md)
-* [IBM DB2](DataSources/datasource_ibm_db2_ibm.md)
-* [IBM Endpoint Manager](DataSources/datasource_ibm_endpoint_manager_ibm.md)
-* [IBM Lotus Notes](DataSources/datasource_ibm_lotus_notes_ibm.md)
-* [IBM Racf](DataSources/datasource_ibm_racf_ibm.md)
-* [IBM Sametime](DataSources/datasource_ibm_sametime_ibm.md)
-* [IBM Security Access Manager](DataSources/datasource_ibm_security_access_manager_ibm.md)
-* [IBM Sense](DataSources/datasource_ibm_sense_ibm.md)
-* [IBM Sterling B2B Integrator](DataSources/datasource_ibm_sterling_b2b_integrator_ibm.md)
-* [Infosphere Guardium](DataSources/datasource_infosphere_guardium_ibm.md)
-* [Lotus Mobile Connect](DataSources/datasource_lotus_mobile_connect_ibm.md)
-* [Proventia Network IPS](DataSources/datasource_proventia_network_ips_ibm.md)
-* [QRadar Network Security](DataSources/datasource_qradar_network_security_ibm.md)
+* [Guardium](DataSources/datasource_ibm_guardium.md)
+* [IBM DB2](DataSources/datasource_ibm_ibm_db2.md)
+* [IBM Endpoint Manager](DataSources/datasource_ibm_ibm_endpoint_manager.md)
+* [IBM Lotus Notes](DataSources/datasource_ibm_ibm_lotus_notes.md)
+* [IBM Racf](DataSources/datasource_ibm_ibm_racf.md)
+* [IBM Sametime](DataSources/datasource_ibm_ibm_sametime.md)
+* [IBM Security Access Manager](DataSources/datasource_ibm_ibm_security_access_manager.md)
+* [IBM Sense](DataSources/datasource_ibm_ibm_sense.md)
+* [IBM Sterling B2B Integrator](DataSources/datasource_ibm_ibm_sterling_b2b_integrator.md)
+* [Infosphere Guardium](DataSources/datasource_ibm_infosphere_guardium.md)
+* [Lotus Mobile Connect](DataSources/datasource_ibm_lotus_mobile_connect.md)
+* [Proventia Network IPS](DataSources/datasource_ibm_proventia_network_ips.md)
+* [QRadar Network Security](DataSources/datasource_ibm_qradar_network_security.md)
 #### ICDB
 * [ICDB](DataSources/datasource_icdb_icdb.md)
 #### ICPAM
@@ -356,53 +363,54 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### IPTables
 * [IPTables](DataSources/datasource_iptables_iptables.md)
 #### IXIA
-* [IXIA ThreatArmor](DataSources/datasource_ixia_threatarmor_ixia.md)
+* [IXIA ThreatArmor](DataSources/datasource_ixia_ixia_threatarmor.md)
 #### Illumio
 * [Illumio](DataSources/datasource_illumio_illumio.md)
 #### Imperva
-* [CounterBreach](DataSources/datasource_counterbreach_imperva.md)
-* [Imperva File Activity Monitoring (FAM)](DataSources/datasource_imperva_file_activity_monitoring_(fam)_imperva.md)
-* [Imperva SecureSphere](DataSources/datasource_imperva_securesphere_imperva.md)
-* [Incapsula](DataSources/datasource_incapsula_imperva.md)
+* [CounterBreach](DataSources/datasource_imperva_counterbreach.md)
+* [Imperva File Activity Monitoring (FAM)](DataSources/datasource_imperva_imperva_file_activity_monitoring_(fam).md)
+* [Imperva SecureSphere](DataSources/datasource_imperva_imperva_securesphere.md)
+* [Incapsula](DataSources/datasource_imperva_incapsula.md)
 #### InfoWatch
 * [InfoWatch](DataSources/datasource_infowatch_infowatch.md)
 #### Infoblox
-* [Infoblox BloxOne](DataSources/datasource_infoblox_bloxone_infoblox.md)
 * [Infoblox](DataSources/datasource_infoblox_infoblox.md)
+* [Infoblox BloxOne](DataSources/datasource_infoblox_infoblox_bloxone.md)
 #### Inky
-* [Inky Anti-Phishing](DataSources/datasource_inky_anti-phishing_inky.md)
+* [Inky Anti-Phishing](DataSources/datasource_inky_inky_anti-phishing.md)
 #### Ipswitch
-* [IPswitch MoveIt](DataSources/datasource_ipswitch_moveit_ipswitch.md)
+* [IPswitch MoveIt](DataSources/datasource_ipswitch_ipswitch_moveit.md)
+* [MoveIt DMZ](DataSources/datasource_ipswitch_moveit_dmz.md)
 #### JH
 * [JH](DataSources/datasource_jh_jh.md)
 #### Johnson Controls
-* [Johnson Controls P2000](DataSources/datasource_johnson_controls_p2000_johnson_controls.md)
+* [Johnson Controls P2000](DataSources/datasource_johnson_controls_johnson_controls_p2000.md)
 #### Juniper Networks
-* [Juniper Networks ATP](DataSources/datasource_juniper_networks_atp_juniper_networks.md)
-* [Juniper Networks Pulse Secure](DataSources/datasource_juniper_networks_pulse_secure_juniper_networks.md)
 * [Juniper Networks](DataSources/datasource_juniper_networks_juniper_networks.md)
-* [Juniper OWA](DataSources/datasource_juniper_owa_juniper_networks.md)
-* [Juniper SRX](DataSources/datasource_juniper_srx_juniper_networks.md)
-* [Juniper VPN](DataSources/datasource_juniper_vpn_juniper_networks.md)
+* [Juniper Networks ATP](DataSources/datasource_juniper_networks_juniper_networks_atp.md)
+* [Juniper Networks Pulse Secure](DataSources/datasource_juniper_networks_juniper_networks_pulse_secure.md)
+* [Juniper OWA](DataSources/datasource_juniper_networks_juniper_owa.md)
+* [Juniper SRX](DataSources/datasource_juniper_networks_juniper_srx.md)
+* [Juniper VPN](DataSources/datasource_juniper_networks_juniper_vpn.md)
 #### Juniper VPN
 * [Juniper VPN](DataSources/datasource_juniper_vpn_juniper_vpn.md)
 #### KABA EXOS
 * [KABA EXOS](DataSources/datasource_kaba_exos_kaba_exos.md)
 #### Kaspersky
-* [Kaspersky AV](DataSources/datasource_kaspersky_av_kaspersky.md)
-* [Kaspersky Endpoint Security for Business](DataSources/datasource_kaspersky_endpoint_security_for_business_kaspersky.md)
+* [Kaspersky AV](DataSources/datasource_kaspersky_kaspersky_av.md)
+* [Kaspersky Endpoint Security for Business](DataSources/datasource_kaspersky_kaspersky_endpoint_security_for_business.md)
 #### Kemp
-* [Kemp LoadMaster](DataSources/datasource_kemp_loadmaster_kemp.md)
-* [Load Balancer](DataSources/datasource_load_balancer_kemp.md)
+* [Kemp LoadMaster](DataSources/datasource_kemp_kemp_loadmaster.md)
+* [Load Balancer](DataSources/datasource_kemp_load_balancer.md)
 #### Kiteworks
 * [Kiteworks](DataSources/datasource_kiteworks_kiteworks.md)
 #### LEAP
 * [LEAP](DataSources/datasource_leap_leap.md)
 #### LOGBinder
-* [SharePoint](DataSources/datasource_sharepoint_logbinder.md)
+* [SharePoint](DataSources/datasource_logbinder_sharepoint.md)
 #### LanScope
-* [LanScope Cat](DataSources/datasource_lanscope_cat_lanscope.md)
 * [LanScope](DataSources/datasource_lanscope_lanscope.md)
+* [LanScope Cat](DataSources/datasource_lanscope_lanscope_cat.md)
 #### LastPass
 * [LastPass](DataSources/datasource_lastpass_lastpass.md)
 #### Lastline
@@ -412,15 +420,15 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Lexmark
 * [Lexmark](DataSources/datasource_lexmark_lexmark.md)
 #### Lieberman
-* [Enterprise Random Password Manager](DataSources/datasource_enterprise_random_password_manager_lieberman.md)
+* [Enterprise Random Password Manager](DataSources/datasource_lieberman_enterprise_random_password_manager.md)
 #### Liebsoft
 * [Liebsoft](DataSources/datasource_liebsoft_liebsoft.md)
 #### Linux
-* [Linux CentOs](DataSources/datasource_linux_centos_linux.md)
-* [Linux DHCP](DataSources/datasource_linux_dhcp_linux.md)
-* [SSH](DataSources/datasource_ssh_linux.md)
+* [Linux CentOs](DataSources/datasource_linux_linux_centos.md)
+* [Linux DHCP](DataSources/datasource_linux_linux_dhcp.md)
+* [SSH](DataSources/datasource_linux_ssh.md)
 #### LogMeIn
-* [RemotelyAnywhere](DataSources/datasource_remotelyanywhere_logmein.md)
+* [RemotelyAnywhere](DataSources/datasource_logmein_remotelyanywhere.md)
 #### LogRhythm
 * [LogRhythm](DataSources/datasource_logrhythm_logrhythm.md)
 #### Lumension
@@ -430,70 +438,72 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### MSDHCP
 * [MSDHCP](DataSources/datasource_msdhcp_msdhcp.md)
 #### Malwarebytes
-* [Malwarebytes Endpoint Protection](DataSources/datasource_malwarebytes_endpoint_protection_malwarebytes.md)
+* [Malwarebytes Endpoint Protection](DataSources/datasource_malwarebytes_malwarebytes_endpoint_protection.md)
 #### Malwarebytes Incident Response
 * [Malwarebytes Incident Response](DataSources/datasource_malwarebytes_incident_response_malwarebytes_incident_response.md)
 #### ManageEngine
-* [AD Audit Plus](DataSources/datasource_ad_audit_plus_manageengine.md)
-* [AD Audit](DataSources/datasource_ad_audit_manageengine.md)
-* [ADmanager](DataSources/datasource_admanager_manageengine.md)
+* [AD Audit](DataSources/datasource_manageengine_ad_audit.md)
+* [AD Audit Plus](DataSources/datasource_manageengine_ad_audit_plus.md)
+* [ADmanager](DataSources/datasource_manageengine_admanager.md)
 #### MariaDB
 * [MariaDB](DataSources/datasource_mariadb_mariadb.md)
+#### MasterSAM
+* [MasterSAM PAM](DataSources/datasource_mastersam_mastersam_pam.md)
 #### McAfee
-* [MDAM](DataSources/datasource_mdam_mcafee.md)
-* [McAfee Advanced Threat Defense](DataSources/datasource_mcafee_advanced_threat_defense_mcafee.md)
-* [McAfee DLP](DataSources/datasource_mcafee_dlp_mcafee.md)
-* [McAfee Email Protection](DataSources/datasource_mcafee_email_protection_mcafee.md)
-* [McAfee Endpoint Security](DataSources/datasource_mcafee_endpoint_security_mcafee.md)
-* [McAfee Enterprise Security Manager](DataSources/datasource_mcafee_enterprise_security_manager_mcafee.md)
-* [McAfee IDPS](DataSources/datasource_mcafee_idps_mcafee.md)
-* [McAfee NSM](DataSources/datasource_mcafee_nsm_mcafee.md)
-* [McAfee Network Security Platform (IPS)](DataSources/datasource_mcafee_network_security_platform_(ips)_mcafee.md)
-* [McAfee Web Gateway](DataSources/datasource_mcafee_web_gateway_mcafee.md)
-* [Mcafee EPO](DataSources/datasource_mcafee_epo_mcafee.md)
-* [Skyhigh Networks CASB](DataSources/datasource_skyhigh_networks_casb_mcafee.md)
+* [MDAM](DataSources/datasource_mcafee_mdam.md)
+* [McAfee Advanced Threat Defense](DataSources/datasource_mcafee_mcafee_advanced_threat_defense.md)
+* [McAfee DLP](DataSources/datasource_mcafee_mcafee_dlp.md)
+* [McAfee Email Protection](DataSources/datasource_mcafee_mcafee_email_protection.md)
+* [McAfee Endpoint Security](DataSources/datasource_mcafee_mcafee_endpoint_security.md)
+* [McAfee Enterprise Security Manager](DataSources/datasource_mcafee_mcafee_enterprise_security_manager.md)
+* [McAfee IDPS](DataSources/datasource_mcafee_mcafee_idps.md)
+* [McAfee NSM](DataSources/datasource_mcafee_mcafee_nsm.md)
+* [McAfee Network Security Platform (IPS)](DataSources/datasource_mcafee_mcafee_network_security_platform_(ips).md)
+* [McAfee Web Gateway](DataSources/datasource_mcafee_mcafee_web_gateway.md)
+* [Mcafee EPO](DataSources/datasource_mcafee_mcafee_epo.md)
+* [Skyhigh Networks CASB](DataSources/datasource_mcafee_skyhigh_networks_casb.md)
 #### Microsoft
-* [Advanced Threat Analytics (ATA)](DataSources/datasource_advanced_threat_analytics_(ata)_microsoft.md)
-* [AppLocker](DataSources/datasource_applocker_microsoft.md)
-* [Exchange](DataSources/datasource_exchange_microsoft.md)
-* [IIS](DataSources/datasource_iis_microsoft.md)
-* [Microsoft Azure Active Directory](DataSources/datasource_microsoft_azure_active_directory_microsoft.md)
-* [Microsoft Azure MFA](DataSources/datasource_microsoft_azure_mfa_microsoft.md)
-* [Microsoft Azure Security Center](DataSources/datasource_microsoft_azure_security_center_microsoft.md)
-* [Microsoft Azure](DataSources/datasource_microsoft_azure_microsoft.md)
-* [Microsoft CAS](DataSources/datasource_microsoft_cas_microsoft.md)
-* [Microsoft Cloud App Security (MCAS)](DataSources/datasource_microsoft_cloud_app_security_(mcas)_microsoft.md)
-* [Microsoft Defender ATP](DataSources/datasource_microsoft_defender_atp_microsoft.md)
-* [Microsoft Graph](DataSources/datasource_microsoft_graph_microsoft.md)
-* [Microsoft NPS](DataSources/datasource_microsoft_nps_microsoft.md)
-* [Microsoft Office 365](DataSources/datasource_microsoft_office_365_microsoft.md)
-* [Microsoft OneDrive](DataSources/datasource_microsoft_onedrive_microsoft.md)
-* [Microsoft RRA](DataSources/datasource_microsoft_rra_microsoft.md)
-* [Microsoft Radius](DataSources/datasource_microsoft_radius_microsoft.md)
-* [Microsoft SQL Server](DataSources/datasource_microsoft_sql_server_microsoft.md)
-* [Microsoft ScanMail](DataSources/datasource_microsoft_scanmail_microsoft.md)
-* [Microsoft Sysmon](DataSources/datasource_microsoft_sysmon_microsoft.md)
-* [Microsoft Windows DNSServer](DataSources/datasource_microsoft_windows_dnsserver_microsoft.md)
-* [Microsoft Windows PrintService](DataSources/datasource_microsoft_windows_printservice_microsoft.md)
-* [Microsoft Windows](DataSources/datasource_microsoft_windows_microsoft.md)
+* [Advanced Threat Analytics (ATA)](DataSources/datasource_microsoft_advanced_threat_analytics_(ata).md)
+* [AppLocker](DataSources/datasource_microsoft_applocker.md)
+* [Exchange](DataSources/datasource_microsoft_exchange.md)
+* [IIS](DataSources/datasource_microsoft_iis.md)
 * [Microsoft](DataSources/datasource_microsoft_microsoft.md)
-* [NetApp](DataSources/datasource_netapp_microsoft.md)
-* [SQL Server](DataSources/datasource_sql_server_microsoft.md)
-* [Web Application Proxy-TLS Gateway](DataSources/datasource_web_application_proxy-tls_gateway_microsoft.md)
-* [Web Application Proxy](DataSources/datasource_web_application_proxy_microsoft.md)
-* [Windows Defender](DataSources/datasource_windows_defender_microsoft.md)
+* [Microsoft Azure](DataSources/datasource_microsoft_microsoft_azure.md)
+* [Microsoft Azure Active Directory](DataSources/datasource_microsoft_microsoft_azure_active_directory.md)
+* [Microsoft Azure MFA](DataSources/datasource_microsoft_microsoft_azure_mfa.md)
+* [Microsoft Azure Security Center](DataSources/datasource_microsoft_microsoft_azure_security_center.md)
+* [Microsoft CAS](DataSources/datasource_microsoft_microsoft_cas.md)
+* [Microsoft Cloud App Security (MCAS)](DataSources/datasource_microsoft_microsoft_cloud_app_security_(mcas).md)
+* [Microsoft Defender ATP](DataSources/datasource_microsoft_microsoft_defender_atp.md)
+* [Microsoft Graph](DataSources/datasource_microsoft_microsoft_graph.md)
+* [Microsoft NPS](DataSources/datasource_microsoft_microsoft_nps.md)
+* [Microsoft Office 365](DataSources/datasource_microsoft_microsoft_office_365.md)
+* [Microsoft OneDrive](DataSources/datasource_microsoft_microsoft_onedrive.md)
+* [Microsoft RRA](DataSources/datasource_microsoft_microsoft_rra.md)
+* [Microsoft Radius](DataSources/datasource_microsoft_microsoft_radius.md)
+* [Microsoft SQL Server](DataSources/datasource_microsoft_microsoft_sql_server.md)
+* [Microsoft ScanMail](DataSources/datasource_microsoft_microsoft_scanmail.md)
+* [Microsoft Sysmon](DataSources/datasource_microsoft_microsoft_sysmon.md)
+* [Microsoft Windows](DataSources/datasource_microsoft_microsoft_windows.md)
+* [Microsoft Windows DNSServer](DataSources/datasource_microsoft_microsoft_windows_dnsserver.md)
+* [Microsoft Windows PrintService](DataSources/datasource_microsoft_microsoft_windows_printservice.md)
+* [NetApp](DataSources/datasource_microsoft_netapp.md)
+* [SQL Server](DataSources/datasource_microsoft_sql_server.md)
+* [Web Application Proxy](DataSources/datasource_microsoft_web_application_proxy.md)
+* [Web Application Proxy-TLS Gateway](DataSources/datasource_microsoft_web_application_proxy-tls_gateway.md)
+* [Windows Defender](DataSources/datasource_microsoft_windows_defender.md)
 #### Microsoft Azure
 * [Microsoft Azure](DataSources/datasource_microsoft_azure_microsoft_azure.md)
 #### Microsoft Office 365
 * [Microsoft Office 365](DataSources/datasource_microsoft_office_365_microsoft_office_365.md)
 #### Mimecast
-* [Mimecast Email Security](DataSources/datasource_mimecast_email_security_mimecast.md)
 * [Mimecast](DataSources/datasource_mimecast_mimecast.md)
-* [Targeted Threat Protection - URL](DataSources/datasource_targeted_threat_protection_-_url_mimecast.md)
+* [Mimecast Email Security](DataSources/datasource_mimecast_mimecast_email_security.md)
+* [Targeted Threat Protection - URL](DataSources/datasource_mimecast_targeted_threat_protection_-_url.md)
 #### MobileIron
 * [MobileIron](DataSources/datasource_mobileiron_mobileiron.md)
 #### Morphisec
-* [Morphisec EPTP](DataSources/datasource_morphisec_eptp_morphisec.md)
+* [Morphisec EPTP](DataSources/datasource_morphisec_morphisec_eptp.md)
 #### Mvision
 * [Mvision](DataSources/datasource_mvision_mvision.md)
 #### Mysql
@@ -515,24 +525,26 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### NetMotion Wireless
 * [NetMotion Wireless](DataSources/datasource_netmotion_wireless_netmotion_wireless.md)
 #### Netskope
-* [Netskope Active Platform](DataSources/datasource_netskope_active_platform_netskope.md)
 * [Netskope](DataSources/datasource_netskope_netskope.md)
+* [Netskope Active Platform](DataSources/datasource_netskope_netskope_active_platform.md)
 #### Network DLP
 * [Network DLP](DataSources/datasource_network_dlp_network_dlp.md)
 #### Netwrix
-* [Netwrix Auditor](DataSources/datasource_netwrix_auditor_netwrix.md)
+* [Netwrix Auditor](DataSources/datasource_netwrix_netwrix_auditor.md)
 #### Nexthink
 * [Nexthink](DataSources/datasource_nexthink_nexthink.md)
 #### Nokia VitalQIP
 * [Nokia VitalQIP](DataSources/datasource_nokia_vitalqip_nokia_vitalqip.md)
 #### Nortel Contivity
-* [Nortel Contivity VPN](DataSources/datasource_nortel_contivity_vpn_nortel_contivity.md)
+* [Nortel Contivity VPN](DataSources/datasource_nortel_contivity_nortel_contivity_vpn.md)
+#### Novell
+* [eDirectory](DataSources/datasource_novell_edirectory.md)
 #### OSSEC
 * [OSSEC](DataSources/datasource_ossec_ossec.md)
 #### ObserveIT
 * [ObserveIT](DataSources/datasource_observeit_observeit.md)
 #### Okta
-* [Okta Adaptive MFA](DataSources/datasource_okta_adaptive_mfa_okta.md)
+* [Okta Adaptive MFA](DataSources/datasource_okta_okta_adaptive_mfa.md)
 #### Onapsis
 * [Onapsis](DataSources/datasource_onapsis_onapsis.md)
 #### OneLogin
@@ -542,28 +554,28 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Onguard
 * [Onguard](DataSources/datasource_onguard_onguard.md)
 #### OpenDJ
-* [OpenDJ LDAP](DataSources/datasource_opendj_ldap_opendj.md)
+* [OpenDJ LDAP](DataSources/datasource_opendj_opendj_ldap.md)
 #### Oracle
-* [Oracle Access Manager](DataSources/datasource_oracle_access_manager_oracle.md)
-* [Oracle DB](DataSources/datasource_oracle_db_oracle.md)
-* [Oracle Solaris](DataSources/datasource_oracle_solaris_oracle.md)
 * [Oracle](DataSources/datasource_oracle_oracle.md)
+* [Oracle Access Manager](DataSources/datasource_oracle_oracle_access_manager.md)
+* [Oracle DB](DataSources/datasource_oracle_oracle_db.md)
+* [Oracle Solaris](DataSources/datasource_oracle_oracle_solaris.md)
 #### Ordr
-* [Ordr SCE](DataSources/datasource_ordr_sce_ordr.md)
+* [Ordr SCE](DataSources/datasource_ordr_ordr_sce.md)
 #### Osirium
 * [Osirium](DataSources/datasource_osirium_osirium.md)
 #### Palo Alto Networks
-* [Cortex XDR](DataSources/datasource_cortex_xdr_palo_alto_networks.md)
-* [GlobalProtect](DataSources/datasource_globalprotect_palo_alto_networks.md)
-* [Magnifier](DataSources/datasource_magnifier_palo_alto_networks.md)
-* [NGFW](DataSources/datasource_ngfw_palo_alto_networks.md)
-* [Palo Alto Aperture](DataSources/datasource_palo_alto_aperture_palo_alto_networks.md)
-* [Traps](DataSources/datasource_traps_palo_alto_networks.md)
-* [WildFire](DataSources/datasource_wildfire_palo_alto_networks.md)
+* [Cortex XDR](DataSources/datasource_palo_alto_networks_cortex_xdr.md)
+* [GlobalProtect](DataSources/datasource_palo_alto_networks_globalprotect.md)
+* [Magnifier](DataSources/datasource_palo_alto_networks_magnifier.md)
+* [NGFW](DataSources/datasource_palo_alto_networks_ngfw.md)
+* [Palo Alto Aperture](DataSources/datasource_palo_alto_networks_palo_alto_aperture.md)
+* [Traps](DataSources/datasource_palo_alto_networks_traps.md)
+* [WildFire](DataSources/datasource_palo_alto_networks_wildfire.md)
 #### Password Manager Pro
 * [Password Manager Pro](DataSources/datasource_password_manager_pro_password_manager_pro.md)
 #### Paxton
-* [NET2DOOR](DataSources/datasource_net2door_paxton.md)
+* [NET2DOOR](DataSources/datasource_paxton_net2door.md)
 #### Perforce
 * [Perforce](DataSources/datasource_perforce_perforce.md)
 #### Phantom
@@ -574,8 +586,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [PicturePerfect](DataSources/datasource_pictureperfect_pictureperfect.md)
 #### Ping Identity
 * [Ping Identity](DataSources/datasource_ping_identity_ping_identity.md)
-* [PingID](DataSources/datasource_pingid_ping_identity.md)
-* [PingOne](DataSources/datasource_pingone_ping_identity.md)
+* [PingID](DataSources/datasource_ping_identity_pingid.md)
+* [PingOne](DataSources/datasource_ping_identity_pingone.md)
 #### PostScript
 * [PostScript](DataSources/datasource_postscript_postscript.md)
 #### PostgreSQL
@@ -583,12 +595,12 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### PowerSentry
 * [PowerSentry](DataSources/datasource_powersentry_powersentry.md)
 #### Procad
-* [Pro.File DMS](DataSources/datasource_pro.file_dms_procad.md)
+* [Pro.File DMS](DataSources/datasource_procad_pro.file_dms.md)
 #### Proofpoint
-* [Proofpoint Enterprise Protection](DataSources/datasource_proofpoint_enterprise_protection_proofpoint.md)
-* [Proofpoint TAP](DataSources/datasource_proofpoint_tap_proofpoint.md)
+* [Proofpoint Enterprise Protection](DataSources/datasource_proofpoint_proofpoint_enterprise_protection.md)
+* [Proofpoint TAP](DataSources/datasource_proofpoint_proofpoint_tap.md)
 #### ProtectWise
-* [NDR](DataSources/datasource_ndr_protectwise.md)
+* [NDR](DataSources/datasource_protectwise_ndr.md)
 #### ProxySG
 * [ProxySG](DataSources/datasource_proxysg_proxysg.md)
 #### Qualys
@@ -596,16 +608,16 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Quest InTrust
 * [Quest InTrust](DataSources/datasource_quest_intrust_quest_intrust.md)
 #### Quest Software
-* [Change Auditor](DataSources/datasource_change_auditor_quest_software.md)
+* [Change Auditor](DataSources/datasource_quest_software_change_auditor.md)
 #### RS2
 * [RS2](DataSources/datasource_rs2_rs2.md)
 #### RS2 Technologies
 * [RS2 Technologies](DataSources/datasource_rs2_technologies_rs2_technologies.md)
 #### RSA
-* [RSA DLP](DataSources/datasource_rsa_dlp_rsa.md)
-* [RSA ECAT](DataSources/datasource_rsa_ecat_rsa.md)
 * [RSA](DataSources/datasource_rsa_rsa.md)
-* [SecurID](DataSources/datasource_securid_rsa.md)
+* [RSA DLP](DataSources/datasource_rsa_rsa_dlp.md)
+* [RSA ECAT](DataSources/datasource_rsa_rsa_ecat.md)
+* [SecurID](DataSources/datasource_rsa_securid.md)
 #### RUID
 * [RUID](DataSources/datasource_ruid_ruid.md)
 #### Radius
@@ -613,7 +625,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### RangerAudit
 * [RangerAudit](DataSources/datasource_rangeraudit_rangeraudit.md)
 #### Rapid7
-* [Nexpose](DataSources/datasource_nexpose_rapid7.md)
+* [Nexpose](DataSources/datasource_rapid7_nexpose.md)
 #### Red Canary
 * [Red Canary](DataSources/datasource_red_canary_red_canary.md)
 #### RedCloud
@@ -631,25 +643,26 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### SafeSend
 * [SafeSend](DataSources/datasource_safesend_safesend.md)
 #### Safend
-* [Data Protection Suite (DPS)](DataSources/datasource_data_protection_suite_(dps)_safend.md)
+* [Data Protection Suite (DPS)](DataSources/datasource_safend_data_protection_suite_(dps).md)
 #### Sailpoint
-* [SecurityIQ](DataSources/datasource_securityiq_sailpoint.md)
+* [IdentityNow](DataSources/datasource_sailpoint_identitynow.md)
+* [SecurityIQ](DataSources/datasource_sailpoint_securityiq.md)
 #### Salesforce
 * [Salesforce](DataSources/datasource_salesforce_salesforce.md)
 #### Sangfor
-* [NGAF](DataSources/datasource_ngaf_sangfor.md)
+* [NGAF](DataSources/datasource_sangfor_ngaf.md)
 #### Secure Computing
-* [Secure Computing SafeWord](DataSources/datasource_secure_computing_safeword_secure_computing.md)
+* [Secure Computing SafeWord](DataSources/datasource_secure_computing_secure_computing_safeword.md)
 #### Secure Envoy
 * [Secure Envoy](DataSources/datasource_secure_envoy_secure_envoy.md)
 #### SecureAuth
-* [SecureAuth Login](DataSources/datasource_secureauth_login_secureauth.md)
+* [SecureAuth Login](DataSources/datasource_secureauth_secureauth_login.md)
 #### SecureLink
 * [SecureLink](DataSources/datasource_securelink_securelink.md)
 #### SecureNet
 * [SecureNet](DataSources/datasource_securenet_securenet.md)
 #### SecureWorks
-* [iSensor IPS](DataSources/datasource_isensor_ips_secureworks.md)
+* [iSensor IPS](DataSources/datasource_secureworks_isensor_ips.md)
 #### SecurityExpert
 * [SecurityExpert](DataSources/datasource_securityexpert_securityexpert.md)
 #### Sensormatik
@@ -658,11 +671,12 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Sentinel IPS](DataSources/datasource_sentinel_ips_sentinel_ips.md)
 #### SentinelOne
 * [SentinelOne](DataSources/datasource_sentinelone_sentinelone.md)
+* [SentinelOne Deep Visibility](DataSources/datasource_sentinelone_sentinelone_deep_visibility.md)
 #### ServiceNow
 * [ServiceNow](DataSources/datasource_servicenow_servicenow.md)
 #### Shibboleth
-* [Shibboleth IdP](DataSources/datasource_shibboleth_idp_shibboleth.md)
-* [Shibboleth SSO](DataSources/datasource_shibboleth_sso_shibboleth.md)
+* [Shibboleth IdP](DataSources/datasource_shibboleth_shibboleth_idp.md)
+* [Shibboleth SSO](DataSources/datasource_shibboleth_shibboleth_sso.md)
 #### Siemens
 * [Siemens](DataSources/datasource_siemens_siemens.md)
 #### Silverfort
@@ -670,9 +684,11 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### SiteMinder
 * [SiteMinder](DataSources/datasource_siteminder_siteminder.md)
 #### SkySea
-* [ClientView](DataSources/datasource_clientview_skysea.md)
+* [ClientView](DataSources/datasource_skysea_clientview.md)
 #### Skyhigh Networks
-* [Skyhigh Networks CASB](DataSources/datasource_skyhigh_networks_casb_skyhigh_networks.md)
+* [Skyhigh Networks CASB](DataSources/datasource_skyhigh_networks_skyhigh_networks_casb.md)
+#### Slack
+* [Slack](DataSources/datasource_slack_slack.md)
 #### Snort
 * [Snort](DataSources/datasource_snort_snort.md)
 #### Snowflake
@@ -680,27 +696,27 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Sonicwall
 * [Sonicwall](DataSources/datasource_sonicwall_sonicwall.md)
 #### Sophos
-* [Sophos Endpoint Protection](DataSources/datasource_sophos_endpoint_protection_sophos.md)
-* [Sophos Firewall](DataSources/datasource_sophos_firewall_sophos.md)
-* [Sophos Invincea](DataSources/datasource_sophos_invincea_sophos.md)
-* [Sophos SafeGuard](DataSources/datasource_sophos_safeguard_sophos.md)
-* [Sophos UTM](DataSources/datasource_sophos_utm_sophos.md)
-* [Sophos XG Firewall](DataSources/datasource_sophos_xg_firewall_sophos.md)
+* [Sophos Endpoint Protection](DataSources/datasource_sophos_sophos_endpoint_protection.md)
+* [Sophos Firewall](DataSources/datasource_sophos_sophos_firewall.md)
+* [Sophos Invincea](DataSources/datasource_sophos_sophos_invincea.md)
+* [Sophos SafeGuard](DataSources/datasource_sophos_sophos_safeguard.md)
+* [Sophos UTM](DataSources/datasource_sophos_sophos_utm.md)
+* [Sophos XG Firewall](DataSources/datasource_sophos_sophos_xg_firewall.md)
 #### Specops
-* [Specops Password Reset](DataSources/datasource_specops_password_reset_specops.md)
+* [Specops Password Reset](DataSources/datasource_specops_specops_password_reset.md)
 #### Splunk
-* [Splunk Stream](DataSources/datasource_splunk_stream_splunk.md)
+* [Splunk Stream](DataSources/datasource_splunk_splunk_stream.md)
 #### Splunk Stream
 * [Splunk Stream](DataSources/datasource_splunk_stream_splunk_stream.md)
 #### Squid
 * [Squid](DataSources/datasource_squid_squid.md)
 #### StealthBits
-* [StealthIntercept](DataSources/datasource_stealthintercept_stealthbits.md)
+* [StealthIntercept](DataSources/datasource_stealthbits_stealthintercept.md)
 #### Sun One
-* [LDAP](DataSources/datasource_ldap_sun_one.md)
+* [LDAP](DataSources/datasource_sun_one_ldap.md)
 #### Suricata
-* [Suricata IDS](DataSources/datasource_suricata_ids_suricata.md)
 * [Suricata](DataSources/datasource_suricata_suricata.md)
+* [Suricata IDS](DataSources/datasource_suricata_suricata_ids.md)
 #### Swift
 * [Swift](DataSources/datasource_swift_swift.md)
 #### Swipes
@@ -710,31 +726,31 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Sybase
 * [Sybase](DataSources/datasource_sybase_sybase.md)
 #### Symantec
-* [Blue Coat Content Analysis System](DataSources/datasource_blue_coat_content_analysis_system_symantec.md)
-* [Blue Coat ProxySG Appliance](DataSources/datasource_blue_coat_proxysg_appliance_symantec.md)
-* [Symantec Advanced Threat Protection](DataSources/datasource_symantec_advanced_threat_protection_symantec.md)
-* [Symantec Brightmail](DataSources/datasource_symantec_brightmail_symantec.md)
-* [Symantec CloudSOC](DataSources/datasource_symantec_cloudsoc_symantec.md)
-* [Symantec Critical System Protection](DataSources/datasource_symantec_critical_system_protection_symantec.md)
-* [Symantec DLP](DataSources/datasource_symantec_dlp_symantec.md)
-* [Symantec EDR](DataSources/datasource_symantec_edr_symantec.md)
-* [Symantec Email Security.cloud](DataSources/datasource_symantec_email_security.cloud_symantec.md)
-* [Symantec Endpoint Protection](DataSources/datasource_symantec_endpoint_protection_symantec.md)
-* [Symantec Fireglass](DataSources/datasource_symantec_fireglass_symantec.md)
-* [Symantec Managed Security Services](DataSources/datasource_symantec_managed_security_services_symantec.md)
-* [Symantec Secure Web Gateway](DataSources/datasource_symantec_secure_web_gateway_symantec.md)
-* [Symantec VIP](DataSources/datasource_symantec_vip_symantec.md)
+* [Blue Coat Content Analysis System](DataSources/datasource_symantec_blue_coat_content_analysis_system.md)
+* [Blue Coat ProxySG Appliance](DataSources/datasource_symantec_blue_coat_proxysg_appliance.md)
 * [Symantec](DataSources/datasource_symantec_symantec.md)
+* [Symantec Advanced Threat Protection](DataSources/datasource_symantec_symantec_advanced_threat_protection.md)
+* [Symantec Brightmail](DataSources/datasource_symantec_symantec_brightmail.md)
+* [Symantec CloudSOC](DataSources/datasource_symantec_symantec_cloudsoc.md)
+* [Symantec Critical System Protection](DataSources/datasource_symantec_symantec_critical_system_protection.md)
+* [Symantec DLP](DataSources/datasource_symantec_symantec_dlp.md)
+* [Symantec EDR](DataSources/datasource_symantec_symantec_edr.md)
+* [Symantec Email Security.cloud](DataSources/datasource_symantec_symantec_email_security.cloud.md)
+* [Symantec Endpoint Protection](DataSources/datasource_symantec_symantec_endpoint_protection.md)
+* [Symantec Fireglass](DataSources/datasource_symantec_symantec_fireglass.md)
+* [Symantec Managed Security Services](DataSources/datasource_symantec_symantec_managed_security_services.md)
+* [Symantec Secure Web Gateway](DataSources/datasource_symantec_symantec_secure_web_gateway.md)
+* [Symantec VIP](DataSources/datasource_symantec_symantec_vip.md)
 #### Symmetry Access Control
 * [Symmetry Access Control](DataSources/datasource_symmetry_access_control_symmetry_access_control.md)
 #### Synology NAS
 * [Synology NAS](DataSources/datasource_synology_nas_synology_nas.md)
 #### Tanium
-* [Endpoint Platform](DataSources/datasource_endpoint_platform_tanium.md)
+* [Endpoint Platform](DataSources/datasource_tanium_endpoint_platform.md)
 #### Tenable.io
 * [Tenable.io](DataSources/datasource_tenable.io_tenable.io.md)
 #### Teradata
-* [Teradata RDBMS](DataSources/datasource_teradata_rdbms_teradata.md)
+* [Teradata RDBMS](DataSources/datasource_teradata_teradata_rdbms.md)
 #### Thycotic Secret Server
 * [Thycotic Secret Server](DataSources/datasource_thycotic_secret_server_thycotic_secret_server.md)
 #### TimeLox
@@ -742,60 +758,60 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### TrapX
 * [TrapX](DataSources/datasource_trapx_trapx.md)
 #### Trend Micro
-* [Cloud App Security](DataSources/datasource_cloud_app_security_trend_micro.md)
-* [Deep Discovery Email Inspector](DataSources/datasource_deep_discovery_email_inspector_trend_micro.md)
-* [Deep Discovery Inspector](DataSources/datasource_deep_discovery_inspector_trend_micro.md)
-* [Deep Security Agent](DataSources/datasource_deep_security_agent_trend_micro.md)
-* [OfficeScan](DataSources/datasource_officescan_trend_micro.md)
-* [Trend Micro TippingPoint NGIPS](DataSources/datasource_trend_micro_tippingpoint_ngips_trend_micro.md)
+* [Cloud App Security](DataSources/datasource_trend_micro_cloud_app_security.md)
+* [Deep Discovery Email Inspector](DataSources/datasource_trend_micro_deep_discovery_email_inspector.md)
+* [Deep Discovery Inspector](DataSources/datasource_trend_micro_deep_discovery_inspector.md)
+* [Deep Security Agent](DataSources/datasource_trend_micro_deep_security_agent.md)
+* [OfficeScan](DataSources/datasource_trend_micro_officescan.md)
 * [Trend Micro](DataSources/datasource_trend_micro_trend_micro.md)
+* [Trend Micro TippingPoint NGIPS](DataSources/datasource_trend_micro_trend_micro_tippingpoint_ngips.md)
 #### Trend Micro Apex One
 * [Trend Micro Apex One](DataSources/datasource_trend_micro_apex_one_trend_micro_apex_one.md)
 #### Tripwire Enterprise
 * [Tripwire Enterprise](DataSources/datasource_tripwire_enterprise_tripwire_enterprise.md)
 #### Tufin
-* [SecureTrack](DataSources/datasource_securetrack_tufin.md)
+* [SecureTrack](DataSources/datasource_tufin_securetrack.md)
 #### Tyco
-* [CCURE Building Management System](DataSources/datasource_ccure_building_management_system_tyco.md)
+* [CCURE Building Management System](DataSources/datasource_tyco_ccure_building_management_system.md)
 #### USB
 * [USB](DataSources/datasource_usb_usb.md)
 #### Unix
-* [Auditbeat](DataSources/datasource_auditbeat_unix.md)
-* [Unix Auditd](DataSources/datasource_unix_auditd_unix.md)
-* [Unix Privilege Management](DataSources/datasource_unix_privilege_management_unix.md)
-* [Unix dhcpd](DataSources/datasource_unix_dhcpd_unix.md)
+* [Auditbeat](DataSources/datasource_unix_auditbeat.md)
 * [Unix](DataSources/datasource_unix_unix.md)
+* [Unix Auditd](DataSources/datasource_unix_unix_auditd.md)
+* [Unix Privilege Management](DataSources/datasource_unix_unix_privilege_management.md)
+* [Unix dhcpd](DataSources/datasource_unix_unix_dhcpd.md)
 #### Unknown
 * [Unknown](DataSources/datasource_unknown_unknown.md)
 #### VBCorp
 * [VBCorp](DataSources/datasource_vbcorp_vbcorp.md)
 #### VMware
-* [Carbon Black](DataSources/datasource_carbon_black_vmware.md)
-* [NSX FW](DataSources/datasource_nsx_fw_vmware.md)
-* [VMWare ID Manager (VIDM)](DataSources/datasource_vmware_id_manager_(vidm)_vmware.md)
-* [VMware Carbon Black App Control](DataSources/datasource_vmware_carbon_black_app_control_vmware.md)
-* [VMware Carbon Black Cloud Endpoint Standard](DataSources/datasource_vmware_carbon_black_cloud_endpoint_standard_vmware.md)
-* [VMware Carbon Black EDR](DataSources/datasource_vmware_carbon_black_edr_vmware.md)
-* [VMware ESX](DataSources/datasource_vmware_esx_vmware.md)
-* [VMware ESXi](DataSources/datasource_vmware_esxi_vmware.md)
-* [VMware Horizon](DataSources/datasource_vmware_horizon_vmware.md)
-* [VMware NSX](DataSources/datasource_vmware_nsx_vmware.md)
-* [VMware VCenter](DataSources/datasource_vmware_vcenter_vmware.md)
-* [VMware View](DataSources/datasource_vmware_view_vmware.md)
+* [Carbon Black](DataSources/datasource_vmware_carbon_black.md)
+* [NSX FW](DataSources/datasource_vmware_nsx_fw.md)
+* [VMWare ID Manager (VIDM)](DataSources/datasource_vmware_vmware_id_manager_(vidm).md)
+* [VMware Carbon Black App Control](DataSources/datasource_vmware_vmware_carbon_black_app_control.md)
+* [VMware Carbon Black Cloud Endpoint Standard](DataSources/datasource_vmware_vmware_carbon_black_cloud_endpoint_standard.md)
+* [VMware Carbon Black EDR](DataSources/datasource_vmware_vmware_carbon_black_edr.md)
+* [VMware ESX](DataSources/datasource_vmware_vmware_esx.md)
+* [VMware ESXi](DataSources/datasource_vmware_vmware_esxi.md)
+* [VMware Horizon](DataSources/datasource_vmware_vmware_horizon.md)
+* [VMware NSX](DataSources/datasource_vmware_vmware_nsx.md)
+* [VMware VCenter](DataSources/datasource_vmware_vmware_vcenter.md)
+* [VMware View](DataSources/datasource_vmware_vmware_view.md)
 #### Vanderbilt
 * [Vanderbilt](DataSources/datasource_vanderbilt_vanderbilt.md)
 #### Varonis
-* [Data Security Platform](DataSources/datasource_data_security_platform_varonis.md)
+* [Data Security Platform](DataSources/datasource_varonis_data_security_platform.md)
 #### Vectra
 * [Vectra](DataSources/datasource_vectra_vectra.md)
 #### Vectra Networks
-* [Vectra](DataSources/datasource_vectra_vectra_networks.md)
+* [Vectra](DataSources/datasource_vectra_networks_vectra.md)
 #### Verdasys Digital Guardian
-* [Digital Guardian Endpoint Protection](DataSources/datasource_digital_guardian_endpoint_protection_verdasys_digital_guardian.md)
+* [Digital Guardian Endpoint Protection](DataSources/datasource_verdasys_digital_guardian_digital_guardian_endpoint_protection.md)
 #### Viscount
 * [Viscount](DataSources/datasource_viscount_viscount.md)
 #### Visma
-* [Megaflex](DataSources/datasource_megaflex_visma.md)
+* [Megaflex](DataSources/datasource_visma_megaflex.md)
 #### Vormetric
 * [Vormetric](DataSources/datasource_vormetric_vormetric.md)
 #### Watchguard
@@ -813,7 +829,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Xerox
 * [Xerox](DataSources/datasource_xerox_xerox.md)
 #### Zeek
-* [Zeek Network Security Monitor](DataSources/datasource_zeek_network_security_monitor_zeek.md)
+* [Zeek Network Security Monitor](DataSources/datasource_zeek_zeek_network_security_monitor.md)
 #### Zeek Network Security Monitor
 * [Zeek Network Security Monitor](DataSources/datasource_zeek_network_security_monitor_zeek_network_security_monitor.md)
 #### Zlock
@@ -821,16 +837,16 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Zoom
 * [Zoom](DataSources/datasource_zoom_zoom.md)
 #### Zscaler
-* [NSS](DataSources/datasource_nss_zscaler.md)
-* [Zscaler Internet Access](DataSources/datasource_zscaler_internet_access_zscaler.md)
-* [Zscaler Private Access](DataSources/datasource_zscaler_private_access_zscaler.md)
+* [NSS](DataSources/datasource_zscaler_nss.md)
 * [Zscaler](DataSources/datasource_zscaler_zscaler.md)
+* [Zscaler Internet Access](DataSources/datasource_zscaler_zscaler_internet_access.md)
+* [Zscaler Private Access](DataSources/datasource_zscaler_zscaler_private_access.md)
 #### eDocs
 * [eDocs](DataSources/datasource_edocs_edocs.md)
 #### iManage
 * [iManage](DataSources/datasource_imanage_imanage.md)
 #### jSONAR
-* [SonarG](DataSources/datasource_sonarg_jsonar.md)
+* [SonarG](DataSources/datasource_jsonar_sonarg.md)
 #### oVirt
 * [oVirt](DataSources/datasource_ovirt_ovirt.md)
 #### pfSense

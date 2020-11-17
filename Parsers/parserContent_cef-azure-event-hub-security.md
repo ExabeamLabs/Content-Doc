@@ -3,7 +3,7 @@
 {
 Name = cef-azure-event-hub-security
   DataType = "alert"
-  Conditions = [""""category":"Security"""", """"eventName""""]
+  Conditions = ["""CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""",""""category":"Security"""", """"eventName"""", """EventHub"""]
   Fields = ${MSParserTemplates.cef-azure-event-hub.Fields}[
     """compromisedEntity":"({user_upn}[^"]+)"""",
     """userName":"(({domain}[^\\"]+)\\+)?({user}[^"]+)"""",
@@ -13,13 +13,11 @@ Name = cef-azure-event-hub-security
     """category":"({azure_category}[^"]+)"""",
     """attackedResourceType":"({azure_resource_type}[^"]+)"""",
     """\Wext_properties_eventProperties_attackers_0_=({src_ip}[a-fA-F\d.:]+)""",
-    """\Wext_properties_eventProperties_previousIPAddress=(|({last_known_ip}.+?))(\s+\w+=|\s*$)""",
-    """eventName":"({alert_type}.+?[^\\])"""",
+    """\Wext_properties_eventProperties_previousIPAddress=(|({last_known_ip}[^=]+))(\s+\w+=|\s*$)""",
+    """eventName":"({alert_type}[^"\\]+)\\*"""",
     """\Wext_properties_eventProperties_malwareName=(|({alert_type}.+?))(\s+\w+=|\s*$)""",
-    """resultDescription":"({alert_name}.+?[^\\])"""",
-    """detailDescription":"({additional_info}.+?[^\\])"""",
-    """Namespace:\s*(|({azure_event_hub_namespace}[^\]]+?))\s*[\];]""",
-    """EventHub name:\s*(|({azure_event_hub_name}[^\]]+?))\s*\]"""
+    """resultDescription":"({alert_name}[^"\\]+)\\*"""",
+    """detailDescription":"({additional_info}[^"\\]+)\\*"""",
   ]
 }
 ```

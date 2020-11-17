@@ -1,0 +1,15 @@
+Vendor: IBM
+===========
+Product: Proventia Network IPS
+------------------------------
+|                              Use-Case                               | Activity Types                            | Event Types/Parsers                                                                              | MITRE TTP                                                                     | Content                   |
+|:-------------------------------------------------------------------:| ----------------------------------------- | ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- | ------------------------- |
+|     [Lateral Movement](../UseCases/usecase_lateral_movement.md)     | - Network Alert<br>- Security Alert       |  network-alert<br> -- [q-ibm-network-alert](../Parsers/parserContent_q-ibm-network-alert.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br> |  - 5 Rules<br> - 3 Models |
+|    [Malware Detection](../UseCases/usecase_malware_detection.md)    | - Endpoint Activity<br>- Process Activity |  network-alert<br> -- [q-ibm-network-alert](../Parsers/parserContent_q-ibm-network-alert.md)<br> | T1204 - User Execution<br>                                                    |  - 4 Rules<br> - 1 Models |
+| [Ransomware Detection](../UseCases/usecase_ransomware_detection.md) | - Endpoint Activity<br>- Process Activity |  network-alert<br> -- [q-ibm-network-alert](../Parsers/parserContent_q-ibm-network-alert.md)<br> | T1204 - User Execution<br>                                                    |  - 4 Rules<br> - 1 Models |
+
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access | Execution                                                           | Persistence | Privilage escalation | Defense evasion                                                                                                                                                                                            | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration | Impact |
+| -------------- | ------------------------------------------------------------------- | ----------- | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ------------------- | ------------ | ------ |
+|                | [User Execution](https://attack.mitre.org/techniques/T1204)<br><br> |             |                      | [Obfuscated Files or Information: Indicator Removal from Tools](https://attack.mitre.org/techniques/T1027/005)<br><br>[Obfuscated Files or Information](https://attack.mitre.org/techniques/T1027)<br><br> |                   |           |                  |            |                     |              |        |

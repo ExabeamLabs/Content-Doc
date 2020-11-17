@@ -18,7 +18,9 @@ Name = azure-app-login
     """"callerIpAddress":"({src_ip}[A-Fa-f:\d.]+)""",
     """"userAgent":"({user_agent}[^"]+)"""",
     """"operationName":"({activity}[^",]+)""",
-    """"userAgent":".+?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin|Ubuntu)"""
+    """"userAgent":".+?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin|Ubuntu)""",
+    """\[Namespace:\s*({event_hub_namespace}\S+) ; EventHub name:\s*({event_hub_name}[\w-]+)""",
   ]
+    DupFields= ["event_hub_namespace->host"]
 }
 ```
