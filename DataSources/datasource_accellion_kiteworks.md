@@ -1,0 +1,15 @@
+Vendor: Accellion
+=================
+Product: Kiteworks
+------------------
+|                              Use-Case                               | Activity Types                                                      | Event Types/Parsers                                                                        | MITRE TTP                                                                    | Content                    |
+|:-------------------------------------------------------------------:| ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------- | -------------------------- |
+|    [Data Exfiltration](../UseCases/usecase_data_exfiltration.md)    | - Data Loss Prevention                                              |  dlp-alert<br> -- [accelion-dlp-alert](../Parsers/parserContent_accelion-dlp-alert.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1204 - User Execution<br> |  - 14 Rules<br> - 3 Models |
+|    [Malware Detection](../UseCases/usecase_malware_detection.md)    | - Data Loss Prevention<br>- Endpoint Activity<br>- Process Activity |  dlp-alert<br> -- [accelion-dlp-alert](../Parsers/parserContent_accelion-dlp-alert.md)<br> | T1204 - User Execution<br>                                                   |  - 5 Rules<br> - 1 Models  |
+| [Ransomware Detection](../UseCases/usecase_ransomware_detection.md) | - Data Loss Prevention<br>- Endpoint Activity<br>- Process Activity |  dlp-alert<br> -- [accelion-dlp-alert](../Parsers/parserContent_accelion-dlp-alert.md)<br> | T1204 - User Execution<br>                                                   |  - 5 Rules<br> - 1 Models  |
+
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access | Execution                                                           | Persistence | Privilage escalation | Defense evasion | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration                                                                                | Impact |
+| -------------- | ------------------------------------------------------------------- | ----------- | -------------------- | --------------- | ----------------- | --------- | ---------------- | ---------- | ------------------- | ------------------------------------------------------------------------------------------- | ------ |
+|                | [User Execution](https://attack.mitre.org/techniques/T1204)<br><br> |             |                      |                 |                   |           |                  |            |                     | [Exfiltration Over Alternative Protocol](https://attack.mitre.org/techniques/T1048)<br><br> |        |

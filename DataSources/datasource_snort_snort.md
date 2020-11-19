@@ -2,33 +2,16 @@ Vendor: Snort
 =============
 Product: Snort
 --------------
+|                                 Use-Case                                  | Activity Types                                                | Event Types/Parsers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | MITRE TTP                                                                              | Content                    |
+|:-------------------------------------------------------------------------:| ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------- |
+| [Compromised Credentials](../UseCases/usecase_compromised_credentials.md) | - Security Alert                                              |  network-alert<br> -- [snort-network-alert-1](../Parsers/parserContent_snort-network-alert-1.md)<br> -- [snort-network-alert](../Parsers/parserContent_snort-network-alert.md)<br> -- [snort-network-alert-2](../Parsers/parserContent_snort-network-alert-2.md)<br> -- [snort-alert](../Parsers/parserContent_snort-alert.md)<br><br> security-alert<br> -- [q-snort-alert-1](../Parsers/parserContent_q-snort-alert-1.md)<br> -- [snort-alert](../Parsers/parserContent_snort-alert.md)<br> -- [q-snort-alert](../Parsers/parserContent_q-snort-alert.md)<br> | T1066 - T1066<br>T1078 - Valid Accounts<br>T1086 - T1086<br>                           |  - 17 Rules<br> - 4 Models |
+|        [Lateral Movement](../UseCases/usecase_lateral_movement.md)        | - Network Alert<br>- Security Alert                           |  network-alert<br> -- [snort-network-alert-1](../Parsers/parserContent_snort-network-alert-1.md)<br> -- [snort-network-alert](../Parsers/parserContent_snort-network-alert.md)<br> -- [snort-network-alert-2](../Parsers/parserContent_snort-network-alert-2.md)<br> -- [snort-alert](../Parsers/parserContent_snort-alert.md)<br><br> security-alert<br> -- [q-snort-alert-1](../Parsers/parserContent_q-snort-alert-1.md)<br> -- [snort-alert](../Parsers/parserContent_snort-alert.md)<br> -- [q-snort-alert](../Parsers/parserContent_q-snort-alert.md)<br> | T1066 - T1066<br>                                                                      |  - 5 Rules<br> - 3 Models  |
+|       [Malware Detection](../UseCases/usecase_malware_detection.md)       | - Endpoint Activity<br>- Process Activity<br>- Security Alert |  network-alert<br> -- [snort-network-alert-1](../Parsers/parserContent_snort-network-alert-1.md)<br> -- [snort-network-alert](../Parsers/parserContent_snort-network-alert.md)<br> -- [snort-network-alert-2](../Parsers/parserContent_snort-network-alert-2.md)<br> -- [snort-alert](../Parsers/parserContent_snort-alert.md)<br><br> security-alert<br> -- [q-snort-alert-1](../Parsers/parserContent_q-snort-alert-1.md)<br> -- [snort-alert](../Parsers/parserContent_snort-alert.md)<br> -- [q-snort-alert](../Parsers/parserContent_q-snort-alert.md)<br> | T1066 - T1066<br>T1078 - Valid Accounts<br>T1086 - T1086<br>T1204 - User Execution<br> |  - 10 Rules<br> - 3 Models |
+|     [Privileged Activity](../UseCases/usecase_privileged_activity.md)     | - Executives                                                  |  network-alert<br> -- [snort-network-alert-1](../Parsers/parserContent_snort-network-alert-1.md)<br> -- [snort-network-alert](../Parsers/parserContent_snort-network-alert.md)<br> -- [snort-network-alert-2](../Parsers/parserContent_snort-network-alert-2.md)<br> -- [snort-alert](../Parsers/parserContent_snort-alert.md)<br><br> security-alert<br> -- [q-snort-alert-1](../Parsers/parserContent_q-snort-alert-1.md)<br> -- [snort-alert](../Parsers/parserContent_snort-alert.md)<br> -- [q-snort-alert](../Parsers/parserContent_q-snort-alert.md)<br> | T1068 - Exploitation for Privilege Escalation<br>                                      |  - 1 Rules<br>             |
+|    [Ransomware Detection](../UseCases/usecase_ransomware_detection.md)    | - Endpoint Activity<br>- Process Activity<br>- Security Alert |  network-alert<br> -- [snort-network-alert-1](../Parsers/parserContent_snort-network-alert-1.md)<br> -- [snort-network-alert](../Parsers/parserContent_snort-network-alert.md)<br> -- [snort-network-alert-2](../Parsers/parserContent_snort-network-alert-2.md)<br> -- [snort-alert](../Parsers/parserContent_snort-alert.md)<br><br> security-alert<br> -- [q-snort-alert-1](../Parsers/parserContent_q-snort-alert-1.md)<br> -- [snort-alert](../Parsers/parserContent_snort-alert.md)<br> -- [q-snort-alert](../Parsers/parserContent_q-snort-alert.md)<br> | T1066 - T1066<br>T1078 - Valid Accounts<br>T1086 - T1086<br>T1204 - User Execution<br> |  - 10 Rules<br> - 3 Models |
 
-### Use Cases
-
-_The following Use Cases can be operationalized using log data from this data source_
-
-* [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
-* [Executives](../UseCases/usecase_executives.md)
-* [Network Alert](../UseCases/usecase_network_alert.md)
-* [Security Alert](../UseCases/usecase_security_alert.md)
-* [Service Account Activity](../UseCases/usecase_service_account_activity.md)
-
-
-### Event Types
-
-_The following list of Event Types can be generated by Data Source Snort_Snort, and power the use cases above:_
-
-- security-alert
-- network-alert
-
-
-### Parsers
-
-_The following Parsers can be operationalized using log data from this data source_
-
-* [q-snort-alert](../Parsers/parserContent_q-snort-alert.md)
-* [q-snort-alert-1](../Parsers/parserContent_q-snort-alert-1.md)
-* [snort-alert](../Parsers/parserContent_snort-alert.md)
-* [snort-network-alert](../Parsers/parserContent_snort-network-alert.md)
-* [snort-network-alert-1](../Parsers/parserContent_snort-network-alert-1.md)
-* [snort-network-alert-2](../Parsers/parserContent_snort-network-alert-2.md)
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                      | Execution                                                           | Persistence                                                         | Privilage escalation                                                                                                                                          | Defense evasion                                                     | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration | Impact |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ------------------- | ------------ | ------ |
+| [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [User Execution](https://attack.mitre.org/techniques/T1204)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br>[Exploitation for Privilege Escalation](https://attack.mitre.org/techniques/T1068)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   |           |                  |            |                     |              |        |
