@@ -10,7 +10,7 @@ Name = cef-azure-process-created
   Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """"ActionType":"ProcessCreated"""" ]
   Fields = [
     """"Timestamp":"({time}\d+-\d+-\d+T\d+:\d+:\d+)""",
-    """"DeviceName":"({host}[\w\-.]+)"""",
+    """DeviceName":\s*"({dest_host}({host}[^"\.]+)?[^"]+)""",
     """"AccountName":"(-|system|({user}[^"\s]+))"""",
     """"AccountDomain":"({domain}[^"\s]+)"""",
     """"AccountSid":"({user_sid}[^"]+)"""",
