@@ -4,8 +4,8 @@ Product: Carbon Black
 ---------------------
 |                              Use-Case                               | Activity Types      | Event Types/Parsers                                                                                                      | MITRE TTP                  | Content                   |
 |:-------------------------------------------------------------------:| ------------------- | ------------------------------------------------------------------------------------------------------------------------ | -------------------------- | ------------------------- |
-|    [Malware Detection](../UseCases/usecase_malware_detection.md)    | - Endpoint Activity |  process-alert<br> -- [cef-carbonblack-process-alert-1](../Parsers/parserContent_cef-carbonblack-process-alert-1.md)<br> | T1204 - User Execution<br> |  - 8 Rules<br> - 4 Models |
-| [Ransomware Detection](../UseCases/usecase_ransomware_detection.md) | - Endpoint Activity |  process-alert<br> -- [cef-carbonblack-process-alert-1](../Parsers/parserContent_cef-carbonblack-process-alert-1.md)<br> | T1204 - User Execution<br> |  - 8 Rules<br> - 4 Models |
+|    [Malware Detection](../UseCases/usecase_malware_detection.md)    | - Endpoint Activity |  process-alert<br> -- [cef-carbonblack-process-alert-1](../Parsers/parserContent_cef-carbonblack-process-alert-1.md)<br> | T1204 - User Execution<br> |  - 9 Rules<br> - 5 Models |
+| [Ransomware Detection](../UseCases/usecase_ransomware_detection.md) | - Endpoint Activity |  process-alert<br> -- [cef-carbonblack-process-alert-1](../Parsers/parserContent_cef-carbonblack-process-alert-1.md)<br> | T1204 - User Execution<br> |  - 9 Rules<br> - 5 Models |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
