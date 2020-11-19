@@ -1,0 +1,15 @@
+Vendor: Imperva
+===============
+Product: CounterBreach
+----------------------
+|                                 Use-Case                                  | Activity Types                          | Event Types/Parsers                                                                                             | MITRE TTP                  | Content                    |
+|:-------------------------------------------------------------------------:| --------------------------------------- | --------------------------------------------------------------------------------------------------------------- | -------------------------- | -------------------------- |
+| [Compromised Credentials](../UseCases/usecase_compromised_credentials.md) | - Database Activity<br>- Database Alert |  database-alert<br> -- [cef-counterbreach-db-alert](../Parsers/parserContent_cef-counterbreach-db-alert.md)<br> | T1078 - Valid Accounts<br> |  - 16 Rules<br> - 5 Models |
+|       [Malware Detection](../UseCases/usecase_malware_detection.md)       | - Endpoint Activity                     |  database-alert<br> -- [cef-counterbreach-db-alert](../Parsers/parserContent_cef-counterbreach-db-alert.md)<br> | T1204 - User Execution<br> |  - 2 Rules<br>             |
+|    [Ransomware Detection](../UseCases/usecase_ransomware_detection.md)    | - Endpoint Activity                     |  database-alert<br> -- [cef-counterbreach-db-alert](../Parsers/parserContent_cef-counterbreach-db-alert.md)<br> | T1204 - User Execution<br> |  - 2 Rules<br>             |
+
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                      | Execution                                                           | Persistence                                                         | Privilage escalation                                                | Defense evasion                                                     | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration | Impact |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ------------------- | ------------ | ------ |
+| [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [User Execution](https://attack.mitre.org/techniques/T1204)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   |           |                  |            |                     |              |        |

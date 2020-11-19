@@ -19,7 +19,10 @@ Name = microsoft-network-alert
     """"category":"({alert_type}[^"]+)""",
     """"action":"({action}[^"]+)""""
     """suser=(anonymous|({user}.+?))\s+\w+=""",
-    """"requestUri":"({full_url}[^"]+)""""
+    """"requestUri":"({full_url}[^"]+)"""",
+    """Namespace:\s*({event_hub_namespace}\S+)""",
+    """EventHub name:\s*({event_hub_name}[^\]\s]+)\s*\]""",
   ]
+   DupFields = ["event_hub_namespace->host"]
 }
 ```

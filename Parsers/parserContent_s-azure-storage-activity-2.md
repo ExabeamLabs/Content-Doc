@@ -27,7 +27,9 @@ Name = s-azure-storage-activity-2
          """roleDefinitionId":"({role}[^"]+)""",
          """"Microsoft.Authorization/policyDefinitions/({policy}[^\/\\"]+)""",
          """resultType":"({outcome}[^"]+)""",
-         """resourceId":".*\/RESOURCEGROUPS\/({account_id}[^\/]+)"""
+         """resourceId":".*\/RESOURCEGROUPS\/({account_id}[^\/]+)""",
+         """\[Namespace:\s*({event_hub_namespace}\S+) ; EventHub name:\s*({event_hub_name}[\w-]+)"""
  ]
+DupFields= ["event_hub_namespace->host"]
 }
 ```

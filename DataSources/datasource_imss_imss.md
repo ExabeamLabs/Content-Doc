@@ -2,33 +2,16 @@ Vendor: IMSS
 ============
 Product: IMSS
 -------------
+|                                 Use-Case                                  | Activity Types                                                                          | Event Types/Parsers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | MITRE TTP                                                                              | Content                    |
+|:-------------------------------------------------------------------------:| --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------- |
+| [Compromised Credentials](../UseCases/usecase_compromised_credentials.md) | - Security Alert                                                                        |  dlp-alert<br> -- [imss-dlp-alert](../Parsers/parserContent_imss-dlp-alert.md)<br> -- [imss-dlp-alert-1](../Parsers/parserContent_imss-dlp-alert-1.md)<br><br> security-alert<br> -- [imss-security-alert-1](../Parsers/parserContent_imss-security-alert-1.md)<br> -- [imss-security-alert-2](../Parsers/parserContent_imss-security-alert-2.md)<br> -- [imss-security-alert-3](../Parsers/parserContent_imss-security-alert-3.md)<br> -- [imss-security-alert](../Parsers/parserContent_imss-security-alert.md)<br> | T1066 - T1066<br>T1078 - Valid Accounts<br>T1086 - T1086<br>                           |  - 17 Rules<br> - 4 Models |
+|       [Data Exfiltration](../UseCases/usecase_data_exfiltration.md)       | - Data Loss Prevention                                                                  |  dlp-alert<br> -- [imss-dlp-alert](../Parsers/parserContent_imss-dlp-alert.md)<br> -- [imss-dlp-alert-1](../Parsers/parserContent_imss-dlp-alert-1.md)<br><br> security-alert<br> -- [imss-security-alert-1](../Parsers/parserContent_imss-security-alert-1.md)<br> -- [imss-security-alert-2](../Parsers/parserContent_imss-security-alert-2.md)<br> -- [imss-security-alert-3](../Parsers/parserContent_imss-security-alert-3.md)<br> -- [imss-security-alert](../Parsers/parserContent_imss-security-alert.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1204 - User Execution<br>           |  - 14 Rules<br> - 3 Models |
+|       [Malware Detection](../UseCases/usecase_malware_detection.md)       | - Data Loss Prevention<br>- Endpoint Activity<br>- Process Activity<br>- Security Alert |  dlp-alert<br> -- [imss-dlp-alert](../Parsers/parserContent_imss-dlp-alert.md)<br> -- [imss-dlp-alert-1](../Parsers/parserContent_imss-dlp-alert-1.md)<br><br> security-alert<br> -- [imss-security-alert-1](../Parsers/parserContent_imss-security-alert-1.md)<br> -- [imss-security-alert-2](../Parsers/parserContent_imss-security-alert-2.md)<br> -- [imss-security-alert-3](../Parsers/parserContent_imss-security-alert-3.md)<br> -- [imss-security-alert](../Parsers/parserContent_imss-security-alert.md)<br> | T1066 - T1066<br>T1078 - Valid Accounts<br>T1086 - T1086<br>T1204 - User Execution<br> |  - 11 Rules<br> - 3 Models |
+|     [Privileged Activity](../UseCases/usecase_privileged_activity.md)     | - Executives                                                                            |  dlp-alert<br> -- [imss-dlp-alert](../Parsers/parserContent_imss-dlp-alert.md)<br> -- [imss-dlp-alert-1](../Parsers/parserContent_imss-dlp-alert-1.md)<br><br> security-alert<br> -- [imss-security-alert-1](../Parsers/parserContent_imss-security-alert-1.md)<br> -- [imss-security-alert-2](../Parsers/parserContent_imss-security-alert-2.md)<br> -- [imss-security-alert-3](../Parsers/parserContent_imss-security-alert-3.md)<br> -- [imss-security-alert](../Parsers/parserContent_imss-security-alert.md)<br> | T1068 - Exploitation for Privilege Escalation<br>                                      |  - 1 Rules<br>             |
+|    [Ransomware Detection](../UseCases/usecase_ransomware_detection.md)    | - Data Loss Prevention<br>- Endpoint Activity<br>- Process Activity<br>- Security Alert |  dlp-alert<br> -- [imss-dlp-alert](../Parsers/parserContent_imss-dlp-alert.md)<br> -- [imss-dlp-alert-1](../Parsers/parserContent_imss-dlp-alert-1.md)<br><br> security-alert<br> -- [imss-security-alert-1](../Parsers/parserContent_imss-security-alert-1.md)<br> -- [imss-security-alert-2](../Parsers/parserContent_imss-security-alert-2.md)<br> -- [imss-security-alert-3](../Parsers/parserContent_imss-security-alert-3.md)<br> -- [imss-security-alert](../Parsers/parserContent_imss-security-alert.md)<br> | T1066 - T1066<br>T1078 - Valid Accounts<br>T1086 - T1086<br>T1204 - User Execution<br> |  - 11 Rules<br> - 3 Models |
 
-### Use Cases
-
-_The following Use Cases can be operationalized using log data from this data source_
-
-* [Data Loss Prevention](../UseCases/usecase_data_loss_prevention.md)
-* [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
-* [Executives](../UseCases/usecase_executives.md)
-* [Security Alert](../UseCases/usecase_security_alert.md)
-* [Service Account Activity](../UseCases/usecase_service_account_activity.md)
-
-
-### Event Types
-
-_The following list of Event Types can be generated by Data Source IMSS_IMSS, and power the use cases above:_
-
-- dlp-alert
-- security-alert
-
-
-### Parsers
-
-_The following Parsers can be operationalized using log data from this data source_
-
-* [imss-dlp-alert](../Parsers/parserContent_imss-dlp-alert.md)
-* [imss-dlp-alert-1](../Parsers/parserContent_imss-dlp-alert-1.md)
-* [imss-security-alert](../Parsers/parserContent_imss-security-alert.md)
-* [imss-security-alert-1](../Parsers/parserContent_imss-security-alert-1.md)
-* [imss-security-alert-2](../Parsers/parserContent_imss-security-alert-2.md)
-* [imss-security-alert-3](../Parsers/parserContent_imss-security-alert-3.md)
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                      | Execution                                                           | Persistence                                                         | Privilage escalation                                                                                                                                          | Defense evasion                                                     | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration                                                                                | Impact |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ------------------- | ------------------------------------------------------------------------------------------- | ------ |
+| [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [User Execution](https://attack.mitre.org/techniques/T1204)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br>[Exploitation for Privilege Escalation](https://attack.mitre.org/techniques/T1068)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   |           |                  |            |                     | [Exfiltration Over Alternative Protocol](https://attack.mitre.org/techniques/T1048)<br><br> |        |
