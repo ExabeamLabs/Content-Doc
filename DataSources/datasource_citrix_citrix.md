@@ -2,35 +2,16 @@ Vendor: Citrix
 ==============
 Product: Citrix
 ---------------
+|                                 Use-Case                                  | Activity Types                                                                                                                                                    | Event Types/Parsers                                                                                                                                                                                                                                                                          | MITRE TTP                                                                                                                                                                 | Content                    |
+|:-------------------------------------------------------------------------:| ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| [Compromised Credentials](../UseCases/usecase_compromised_credentials.md) | - Activity Time  and Type<br>- Asset Logon and Access<br>- Credential Switch Activity<br>- Network zones and Location Access<br>- Pass The Hash and Golden Ticket |  remote-access<br> -- [netscalar-remote-access-2](../Parsers/parserContent_netscalar-remote-access-2.md)<br> -- [netscalar-remote-access-1](../Parsers/parserContent_netscalar-remote-access-1.md)<br> -- [netscalar-remote-access](../Parsers/parserContent_netscalar-remote-access.md)<br> | T1003 - OS Credential Dumping<br>T1021 - Remote Services<br>T1075 - T1075<br>T1078 - Valid Accounts<br>T1208 - T1208<br>T1550 - Use Alternate Authentication Material<br> |  - 23 Rules<br> - 3 Models |
+|        [Lateral Movement](../UseCases/usecase_lateral_movement.md)        | - Asset Logon and Access<br>- Credential Switch Activity<br>- Critical System Activity<br>- Network zones and Location Access                                     |  remote-access<br> -- [netscalar-remote-access-2](../Parsers/parserContent_netscalar-remote-access-2.md)<br> -- [netscalar-remote-access-1](../Parsers/parserContent_netscalar-remote-access-1.md)<br> -- [netscalar-remote-access](../Parsers/parserContent_netscalar-remote-access.md)<br> | T1021 - Remote Services<br>T1078 - Valid Accounts<br>T1208 - T1208<br>T1550 - Use Alternate Authentication Material<br>                                                   |  - 15 Rules<br> - 2 Models |
+|       [Malware Detection](../UseCases/usecase_malware_detection.md)       | - Endpoint Activity<br>- Process Activity                                                                                                                         |  remote-access<br> -- [netscalar-remote-access-2](../Parsers/parserContent_netscalar-remote-access-2.md)<br> -- [netscalar-remote-access-1](../Parsers/parserContent_netscalar-remote-access-1.md)<br> -- [netscalar-remote-access](../Parsers/parserContent_netscalar-remote-access.md)<br> | T1204 - User Execution<br>                                                                                                                                                |  - 4 Rules<br> - 1 Models  |
+|     [Privileged Activity](../UseCases/usecase_privileged_activity.md)     | - Asset Logon and Access<br>- Executives                                                                                                                          |  remote-access<br> -- [netscalar-remote-access-2](../Parsers/parserContent_netscalar-remote-access-2.md)<br> -- [netscalar-remote-access-1](../Parsers/parserContent_netscalar-remote-access-1.md)<br> -- [netscalar-remote-access](../Parsers/parserContent_netscalar-remote-access.md)<br> | T1021 - Remote Services<br>T1068 - Exploitation for Privilege Escalation<br>                                                                                              |  - 2 Rules<br> - 1 Models  |
+|    [Ransomware Detection](../UseCases/usecase_ransomware_detection.md)    | - Endpoint Activity<br>- Process Activity                                                                                                                         |  remote-access<br> -- [netscalar-remote-access-2](../Parsers/parserContent_netscalar-remote-access-2.md)<br> -- [netscalar-remote-access-1](../Parsers/parserContent_netscalar-remote-access-1.md)<br> -- [netscalar-remote-access](../Parsers/parserContent_netscalar-remote-access.md)<br> | T1204 - User Execution<br>                                                                                                                                                |  - 4 Rules<br> - 1 Models  |
 
-### Use Cases
-
-_The following Use Cases can be operationalized using log data from this data source_
-
-* [Account Creation and Management](../UseCases/usecase_account_creation_and_management.md)
-* [Activity Time  and Type](../UseCases/usecase_activity_time__and_type.md)
-* [Asset Logon and Access](../UseCases/usecase_asset_logon_and_access.md)
-* [Credential Switch Activity](../UseCases/usecase_credential_switch_activity.md)
-* [Critical System Activity](../UseCases/usecase_critical_system_activity.md)
-* [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
-* [Executives](../UseCases/usecase_executives.md)
-* [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)
-* [Pass The Hash and Golden Ticket](../UseCases/usecase_pass_the_hash_and_golden_ticket.md)
-* [Privileged Activity](../UseCases/usecase_privileged_activity.md)
-* [Service Account Activity](../UseCases/usecase_service_account_activity.md)
-
-
-### Event Types
-
-_The following list of Event Types can be generated by Data Source Citrix_Citrix, and power the use cases above:_
-
-- remote-access
-
-
-### Parsers
-
-_The following Parsers can be operationalized using log data from this data source_
-
-* [netscalar-remote-access](../Parsers/parserContent_netscalar-remote-access.md)
-* [netscalar-remote-access-1](../Parsers/parserContent_netscalar-remote-access-1.md)
-* [netscalar-remote-access-2](../Parsers/parserContent_netscalar-remote-access-2.md)
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                      | Execution                                                           | Persistence                                                         | Privilage escalation                                                                                                                                          | Defense evasion                                                                                                                                               | Credential Access                                                          | Discovery | Lateral Movement                                                                                                                                               | Collection | Command and Control | Exfiltration | Impact |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------------- | ------------ | ------ |
+| [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [User Execution](https://attack.mitre.org/techniques/T1204)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br>[Exploitation for Privilege Escalation](https://attack.mitre.org/techniques/T1068)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br>[Use Alternate Authentication Material](https://attack.mitre.org/techniques/T1550)<br><br> | [OS Credential Dumping](https://attack.mitre.org/techniques/T1003)<br><br> |           | [Remote Services](https://attack.mitre.org/techniques/T1021)<br><br>[Use Alternate Authentication Material](https://attack.mitre.org/techniques/T1550)<br><br> |            |                     |              |        |
