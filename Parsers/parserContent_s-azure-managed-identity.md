@@ -23,6 +23,8 @@ Name = s-azure-managed-identity
      """Microsoft.Authorization/policyDefinitions/({policy}[^\/\\"]+)""",
      """resultType":"({outcome}[^"]+)"""
      """resourceId":".*\/RESOURCEGROUPS\/({account_id}[^\/]+)"""
+         """\[Namespace:\s*({event_hub_namespace}\S+) ; EventHub name:\s*({event_hub_name}[\w-]+)"""
    ]
+DupFields= ["event_hub_namespace->host"]
 }
 ```

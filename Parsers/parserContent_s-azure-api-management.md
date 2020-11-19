@@ -22,6 +22,8 @@ Name = s-azure-api-management
          """roleDefinitionId":"({role}[^"]+)""",
          """resourceId":".*\/RESOURCEGROUPS\/({account_id}[^\/]+)"""
          """resultType":"({outcome}[^"]+)""",
+         """\[Namespace:\s*({event_hub_namespace}\S+) ; EventHub name:\s*({event_hub_name}[\w-]+)"""
  ]
+DupFields= ["event_hub_namespace->host"]
 }
 ```

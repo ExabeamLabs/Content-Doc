@@ -2,31 +2,16 @@ Vendor: Microsoft Azure
 =======================
 Product: Microsoft Azure
 ------------------------
+|                                 Use-Case                                  | Activity Types                                | Event Types/Parsers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | MITRE TTP                                                          | Content                   |
+|:-------------------------------------------------------------------------:| --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------------- |
+| [Compromised Credentials](../UseCases/usecase_compromised_credentials.md) | - Critical System Activity<br>- File Activity |  file-delete<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br><br> file-download<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br><br> file-read<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br><br> file-upload<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br><br> file-write<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br> | T1078 - Valid Accounts<br>T1083 - File and Directory Discovery<br> |  - 3 Rules<br> - 2 Models |
+|       [Data Exfiltration](../UseCases/usecase_data_exfiltration.md)       | - File Activity                               |  file-delete<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br><br> file-download<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br><br> file-read<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br><br> file-upload<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br><br> file-write<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br> | T1083 - File and Directory Discovery<br>                           |  - 2 Rules<br> - 2 Models |
+|         [Data Extraction](../UseCases/usecase_data_extraction.md)         | - File Activity                               |  file-delete<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br><br> file-download<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br><br> file-read<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br><br> file-upload<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br><br> file-write<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br> | T1083 - File and Directory Discovery<br>                           |  - 1 Rules<br> - 1 Models |
+|       [Malware Detection](../UseCases/usecase_malware_detection.md)       | - Endpoint Activity<br>- File Activity        |  file-delete<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br><br> file-download<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br><br> file-read<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br><br> file-upload<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br><br> file-write<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br> | T1204 - User Execution<br>                                         |  - 3 Rules<br> - 1 Models |
+|    [Ransomware Detection](../UseCases/usecase_ransomware_detection.md)    | - Endpoint Activity<br>- File Activity        |  file-delete<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br><br> file-download<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br><br> file-read<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br><br> file-upload<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br><br> file-write<br> -- [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)<br> | T1204 - User Execution<br>                                         |  - 3 Rules<br> - 1 Models |
 
-### Use Cases
-
-_The following Use Cases can be operationalized using log data from this data source_
-
-* [Activity Time  and Type](../UseCases/usecase_activity_time__and_type.md)
-* [Critical System Activity](../UseCases/usecase_critical_system_activity.md)
-* [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
-* [File Activity](../UseCases/usecase_file_activity.md)
-* [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)
-
-
-### Event Types
-
-_The following list of Event Types can be generated by Data Source Microsoft Azure_Microsoft Azure, and power the use cases above:_
-
-- file-download
-- file-upload
-- file-write
-- file-read
-- file-delete
-
-
-### Parsers
-
-_The following Parsers can be operationalized using log data from this data source_
-
-* [cef-microsoft-app-activity-13](../Parsers/parserContent_cef-microsoft-app-activity-13.md)
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                      | Execution                                                           | Persistence                                                         | Privilage escalation                                                | Defense evasion                                                     | Credential Access | Discovery                                                                         | Lateral Movement | Collection | Command and Control | Exfiltration | Impact |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------------------------------------------------------------------------------- | ---------------- | ---------- | ------------------- | ------------ | ------ |
+| [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [User Execution](https://attack.mitre.org/techniques/T1204)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   | [File and Directory Discovery](https://attack.mitre.org/techniques/T1083)<br><br> |                  |            |                     |              |        |

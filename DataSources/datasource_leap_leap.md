@@ -2,33 +2,18 @@ Vendor: LEAP
 ============
 Product: LEAP
 -------------
+|                                 Use-Case                                  | Activity Types                                                                                                                                                                                         | Event Types/Parsers                                                                                                                                                                                                                                                       | MITRE TTP                                                                                                        | Content                    |
+|:-------------------------------------------------------------------------:| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| [Compromised Credentials](../UseCases/usecase_compromised_credentials.md) | - Activity Time  and Type<br>- Application Activity<br>- Asset Logon and Access<br>- Critical System Activity<br>- Email Activity<br>- Network zones and Location Access<br>- Service Account Activity |  app-activity<br> -- [leap-app-activity-1](../Parsers/parserContent_leap-app-activity-1.md)<br><br> app-login<br> -- [leap-app-activity-2](../Parsers/parserContent_leap-app-activity-2.md)<br> -- [leap-app-activity](../Parsers/parserContent_leap-app-activity.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1078 - Valid Accounts<br>T1133 - External Remote Services<br> |  - 39 Rules<br> - 5 Models |
+|       [Data Exfiltration](../UseCases/usecase_data_exfiltration.md)       | - Email Activity                                                                                                                                                                                       |  app-activity<br> -- [leap-app-activity-1](../Parsers/parserContent_leap-app-activity-1.md)<br><br> app-login<br> -- [leap-app-activity-2](../Parsers/parserContent_leap-app-activity-2.md)<br> -- [leap-app-activity](../Parsers/parserContent_leap-app-activity.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>                                                               |  - 3 Rules<br>             |
+|          [Internal Fraud](../UseCases/usecase_internal_fraud.md)          | - Application Activity                                                                                                                                                                                 |  app-activity<br> -- [leap-app-activity-1](../Parsers/parserContent_leap-app-activity-1.md)<br><br> app-login<br> -- [leap-app-activity-2](../Parsers/parserContent_leap-app-activity-2.md)<br> -- [leap-app-activity](../Parsers/parserContent_leap-app-activity.md)<br> | T1078 - Valid Accounts<br>                                                                                       |  - 13 Rules<br> - 1 Models |
+|        [Lateral Movement](../UseCases/usecase_lateral_movement.md)        | - Activity Time  and Type<br>- Application Activity<br>- Network zones and Location Access                                                                                                             |  app-activity<br> -- [leap-app-activity-1](../Parsers/parserContent_leap-app-activity-1.md)<br><br> app-login<br> -- [leap-app-activity-2](../Parsers/parserContent_leap-app-activity-2.md)<br> -- [leap-app-activity](../Parsers/parserContent_leap-app-activity.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>                                                   |  - 6 Rules<br> - 1 Models  |
+|       [Malware Detection](../UseCases/usecase_malware_detection.md)       | - Asset Logon and Access                                                                                                                                                                               |  app-activity<br> -- [leap-app-activity-1](../Parsers/parserContent_leap-app-activity-1.md)<br><br> app-login<br> -- [leap-app-activity-2](../Parsers/parserContent_leap-app-activity-2.md)<br> -- [leap-app-activity](../Parsers/parserContent_leap-app-activity.md)<br> | T1188 - T1188<br>                                                                                                |  - 3 Rules<br>             |
+|     [Privileged Activity](../UseCases/usecase_privileged_activity.md)     | - Application Activity<br>- Email Activity<br>- Service Account Activity                                                                                                                               |  app-activity<br> -- [leap-app-activity-1](../Parsers/parserContent_leap-app-activity-1.md)<br><br> app-login<br> -- [leap-app-activity-2](../Parsers/parserContent_leap-app-activity-2.md)<br> -- [leap-app-activity](../Parsers/parserContent_leap-app-activity.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1078 - Valid Accounts<br>                                     |  - 5 Rules<br> - 1 Models  |
+|    [Ransomware Detection](../UseCases/usecase_ransomware_detection.md)    | - Asset Logon and Access                                                                                                                                                                               |  app-activity<br> -- [leap-app-activity-1](../Parsers/parserContent_leap-app-activity-1.md)<br><br> app-login<br> -- [leap-app-activity-2](../Parsers/parserContent_leap-app-activity-2.md)<br> -- [leap-app-activity](../Parsers/parserContent_leap-app-activity.md)<br> | T1188 - T1188<br>                                                                                                |  - 3 Rules<br>             |
 
-### Use Cases
-
-_The following Use Cases can be operationalized using log data from this data source_
-
-* [Account Creation and Management](../UseCases/usecase_account_creation_and_management.md)
-* [Activity Time  and Type](../UseCases/usecase_activity_time__and_type.md)
-* [Application Activity](../UseCases/usecase_application_activity.md)
-* [Asset Logon and Access](../UseCases/usecase_asset_logon_and_access.md)
-* [Critical System Activity](../UseCases/usecase_critical_system_activity.md)
-* [Email Activity](../UseCases/usecase_email_activity.md)
-* [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)
-* [Service Account Activity](../UseCases/usecase_service_account_activity.md)
-
-
-### Event Types
-
-_The following list of Event Types can be generated by Data Source LEAP_LEAP, and power the use cases above:_
-
-- app-login
-- app-activity
-
-
-### Parsers
-
-_The following Parsers can be operationalized using log data from this data source_
-
-* [leap-app-activity](../Parsers/parserContent_leap-app-activity.md)
-* [leap-app-activity-1](../Parsers/parserContent_leap-app-activity-1.md)
-* [leap-app-activity-2](../Parsers/parserContent_leap-app-activity-2.md)
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                                                                                                   | Execution | Persistence                                                                                                                                      | Privilage escalation                                                | Defense evasion                                                     | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration                                                                                | Impact |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ------------------- | ------------------------------------------------------------------------------------------- | ------ |
+| [External Remote Services](https://attack.mitre.org/techniques/T1133)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |           | [External Remote Services](https://attack.mitre.org/techniques/T1133)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   |           |                  |            |                     | [Exfiltration Over Alternative Protocol](https://attack.mitre.org/techniques/T1048)<br><br> |        |

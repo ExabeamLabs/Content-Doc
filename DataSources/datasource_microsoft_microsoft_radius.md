@@ -1,0 +1,13 @@
+Vendor: Microsoft
+=================
+Product: Microsoft Radius
+-------------------------
+|                                 Use-Case                                  | Activity Types                                                   | Event Types/Parsers                                                                                          | MITRE TTP                                             | Content                   |
+|:-------------------------------------------------------------------------:| ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------- | ------------------------- |
+| [Compromised Credentials](../UseCases/usecase_compromised_credentials.md) | - Activity Time  and Type<br>- Network zones and Location Access |  nac-logon<br> -- [s-radius-wireless-nac-logon](../Parsers/parserContent_s-radius-wireless-nac-logon.md)<br> | T1021 - Remote Services<br>T1078 - Valid Accounts<br> |  - 4 Rules<br> - 1 Models |
+
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                      | Execution | Persistence                                                         | Privilage escalation                                                | Defense evasion                                                     | Credential Access | Discovery | Lateral Movement                                                     | Collection | Command and Control | Exfiltration | Impact |
+| ------------------------------------------------------------------- | --------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------- | -------------------------------------------------------------------- | ---------- | ------------------- | ------------ | ------ |
+| [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |           | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   |           | [Remote Services](https://attack.mitre.org/techniques/T1021)<br><br> |            |                     |              |        |
