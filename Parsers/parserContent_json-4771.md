@@ -20,7 +20,7 @@ Name = json-4771
     """"TargetUserName\\?":\\?"({user}[^"\\]*)""",
     """"ServiceName\\?":\\?"[^/]*\/({domain}[^."\\]*)""",
     """"(Status|TicketOptions)\\?":\\?"({result_code}[^"\\]*)""",
-    """"IpAddress\\?":\\?"(?:::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)""""
+    """"IpAddress\\?":\\?"(?:::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)\\?""""
   ]
   DupFields = ["host->dest_host"]
 }

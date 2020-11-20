@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-f5-asm-alert
-  Vendor = F5 Networks
-  Product = F5 Application Security Manager
+  Vendor = F5
+  Product = F5 BIG-IP Application Security Manager (ASM)
   Lms = ArcSight
   DataType = "alert"
   TimeFormat = "MMM dd yyyy HH:mm:ss"

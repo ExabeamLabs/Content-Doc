@@ -2,8 +2,8 @@
 ```Java
 {
 Name = f5-network-alert-4
-  Vendor = F5 Networks
-  Product = IPI F5
+  Vendor = F5
+  Product = F5 IP Intelligence
   Lms = Direct
   DataType = "network-alert"
   TimeFormat = "MMM dd yyyy HH:mm:ss"
