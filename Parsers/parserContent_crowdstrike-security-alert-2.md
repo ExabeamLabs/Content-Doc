@@ -20,10 +20,17 @@ Name = crowdstrike-security-alert-2
       """"SeverityName":"({alert_severity}[^"]+?)"""",
       """"FileName":"({file_name}[^"]+?)"""",
       """"FilePath":"({file_path}[^"]+?)\\?"""",
-      """"CommandLine":"({command_line}[^,]+?)",""",
+      """"CommandLine"+:"+\\*"*({command_line}[^,"]+)\\"""",
       """"CommandLine":"\\"({process}({directory}[^",]+\\\\)?({process_name}[^"\\,]+))\\"""",
       """"LocalIP":"({src_ip}[a-fA-F\d.:]+)""",
-      """"RemoteAddress":"({dest_ip}[a-fA-F\d.:]+)"""
+      """"RemoteAddress":"({dest_ip}[a-fA-F\d.:]+)""",
+      """\\*"DetectDescription\\*":\\*"({alert_name}[^"]+)""",
+      """"DetectName":"({alert_name}[^"]+)""",
+      """"Technique":"({alert_type}[^"]+)""",
+      """"LocalAddress":"({src_ip}[^"]+)""",
+      """"DetectId"+:"+({alert_id}[^"]+)"""",
+      """"MD5String"+:"+({md5}[^"]+)"""",
+      """"SHA256String":"({sha256}[^"]+)"""
     ]
     DupFields = [ "directory->process_directory" ]
   }

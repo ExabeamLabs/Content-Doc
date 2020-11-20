@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-f5-vpn-start-1
-  Vendor = F5 Networks
-  Product = Big-IP
+  Vendor = F5
+  Product = F5 BIG-IP
   Lms = ArcSight
   DataType = "vpn-start"
   TimeFormat = "epoch"

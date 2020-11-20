@@ -22,7 +22,7 @@ Name = o365-phishing-alert
     """UserId":"({additional_info}[^"]+)"""",
     """P2Sender":"({additional_info}[^"]+)"""",
     """"Verdict":"({verdict}[^"]+)""",
-    
+    """Subject":"\s*({additional_info}[^"]+?)\s*"""",
   ]
   DupFields = ["process->process_name"]
 }

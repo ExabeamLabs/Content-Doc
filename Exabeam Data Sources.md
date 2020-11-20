@@ -53,8 +53,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Aruba Wireless controller](DataSources/datasource_aruba_wireless_controller_aruba_wireless_controller.md)
 #### AssetView
 * [AssetView](DataSources/datasource_assetview_assetview.md)
-#### Atlassian BitBucket
-* [Atlassian BitBucket](DataSources/datasource_atlassian_bitbucket_atlassian_bitbucket.md)
+#### Atlassian
+* [Atlassian BitBucket](DataSources/datasource_atlassian_atlassian_bitbucket.md)
 #### Attivo
 * [BOTsink](DataSources/datasource_attivo_botsink.md)
 #### Avaya
@@ -254,15 +254,15 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Zebra wireless LAN management](DataSources/datasource_extreme_networks_zebra_wireless_lan_management.md)
 #### F-Secure
 * [F-Secure Client Security](DataSources/datasource_f-secure_f-secure_client_security.md)
-#### F5 Networks
-* [BIG-IP DNS](DataSources/datasource_f5_networks_big-ip_dns.md)
-* [Big-IP](DataSources/datasource_f5_networks_big-ip.md)
-* [F5 Application Security Manager](DataSources/datasource_f5_networks_f5_application_security_manager.md)
-* [F5 BIG-IP Access Policy Manager (APM)](DataSources/datasource_f5_networks_f5_big-ip_access_policy_manager_(apm).md)
-* [F5 Silverline](DataSources/datasource_f5_networks_f5_silverline.md)
-* [IPI F5](DataSources/datasource_f5_networks_ipi_f5.md)
-* [WAF F5](DataSources/datasource_f5_networks_waf_f5.md)
-* [WebSafe](DataSources/datasource_f5_networks_websafe.md)
+#### F5
+* [BIG-IP DNS](DataSources/datasource_f5_big-ip_dns.md)
+* [F5 Advanced Web Application Firewall (WAF)](DataSources/datasource_f5_f5_advanced_web_application_firewall_(waf).md)
+* [F5 BIG-IP](DataSources/datasource_f5_f5_big-ip.md)
+* [F5 BIG-IP Access Policy Manager (APM)](DataSources/datasource_f5_f5_big-ip_access_policy_manager_(apm).md)
+* [F5 BIG-IP Application Security Manager (ASM)](DataSources/datasource_f5_f5_big-ip_application_security_manager_(asm).md)
+* [F5 IP Intelligence](DataSources/datasource_f5_f5_ip_intelligence.md)
+* [F5 Silverline](DataSources/datasource_f5_f5_silverline.md)
+* [WebSafe](DataSources/datasource_f5_websafe.md)
 #### FTP
 * [FTP](DataSources/datasource_ftp_ftp.md)
 #### Fidelis

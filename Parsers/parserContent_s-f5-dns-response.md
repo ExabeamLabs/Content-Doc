@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-f5-dns-response
-  Vendor = F5 Networks
+  Vendor = F5
   Product = BIG-IP DNS
   Lms = Splunk
   DataType = "dns-response"

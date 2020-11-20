@@ -2,7 +2,7 @@
 ```Java
 {
 Name = syslog-f5-dns-query
-  Vendor = F5 Networks
+  Vendor = F5
   Product = BIG-IP DNS
   Lms = Direct
   DataType = "dns-query"

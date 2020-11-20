@@ -2,8 +2,8 @@
 ```Java
 {
 Name = f5-vpn-auth-failed
-  Vendor = F5 Networks
-  Product = Big-IP
+  Vendor = F5
+  Product = F5 BIG-IP
   Lms = Direct
   DataType = "authentication-failed"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
