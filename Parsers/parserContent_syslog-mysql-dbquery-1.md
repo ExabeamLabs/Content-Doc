@@ -3,7 +3,7 @@
 {
 Name = syslog-mysql-dbquery-1
     Vendor = Mysql
-  Product = Mysql
+    Product = Mysql
     Lms = Direct
     DataType = "database-query"
     IsHVF = true
@@ -13,12 +13,12 @@ Name = syslog-mysql-dbquery-1
       """message"+:"+[^,]*,({host}[^,]+)""",
       """message"+:"+({time}\d\d\d\d\d\d\d\d \d\d:\d\d:\d\d)""",
       """({app}mysql)""",
-      """,QUERY,.+?(concat\(.+\))?\s(from|FROM)\s+({database_name}[^.]+)\.({table_name}[^\s]+)""",
+      """,QUERY,[^\}]+?(concat\([^\)]+\))?\s(?i)from\s+\`?({database_name}[^.,\`]+)\`?\.\`?({table_name}\w+)\`?""",
       """message"+:"+([^,]+,){2}({user}[^,]+),""",
       """message"+:"+([^,]+,){3}({src_ip}[^,]+),""",
-      """,QUERY,({database_schema}[^,]+),""",
-      """,QUERY,[^,]*,'\s*({db_operation}\S+)""",
-      """,QUERY,[^,]*,'\s*({db_query}.+?)\s*',({error_code}\d+)?\s*""""
+      """,QUERY,({database_name}[^,]+),""",
+      """,QUERY,[^,]*,'(?:\/\*[^\/]+\/)?\s*({db_operation}\w+)""",
+      """,QUERY,[^,]*,'(?:\/\*[^\/]+\/)?\s*({db_query}[^\}]+?)\s*',({error_code}\d+)?\s*""""
     ]
     DupFields = [ "host->dest_host" ]
   }
