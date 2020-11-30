@@ -808,6 +808,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Vectra](DataSources/datasource_vectra_networks_vectra.md)
 #### Verdasys Digital Guardian
 * [Digital Guardian Endpoint Protection](DataSources/datasource_verdasys_digital_guardian_digital_guardian_endpoint_protection.md)
+#### Virtru
+* [Virtru](DataSources/datasource_virtru_virtru.md)
 #### Viscount
 * [Viscount](DataSources/datasource_viscount_viscount.md)
 #### Visma
