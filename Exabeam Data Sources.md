@@ -315,6 +315,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [HP LaserJet Printer](DataSources/datasource_hp_hp_laserjet_printer.md)
 * [Print Server](DataSources/datasource_hp_print_server.md)
 #### HP Aruba
+* [Aruba Mobility Master](DataSources/datasource_hp_aruba_aruba_mobility_master.md)
 * [Aruba Wireless controller](DataSources/datasource_hp_aruba_aruba_wireless_controller.md)
 * [HP Aruba](DataSources/datasource_hp_aruba_hp_aruba.md)
 #### HP Comware
@@ -594,6 +595,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [PostgreSQL](DataSources/datasource_postgresql_postgresql.md)
 #### PowerSentry
 * [PowerSentry](DataSources/datasource_powersentry_powersentry.md)
+#### Prisma Cloud
+* [Prisma Cloud](DataSources/datasource_prisma_cloud_prisma_cloud.md)
 #### Procad
 * [Pro.File DMS](DataSources/datasource_procad_pro.file_dms.md)
 #### Proofpoint
