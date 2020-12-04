@@ -10,7 +10,7 @@ Name = netscaler-process-created
     TimeFormat = "dd/MMM/yyyy:HH:mm:ss Z"
     Conditions = [ """default """, """ CMD_EXECUTED""", """ Command """ ]
     Fields = [
-      """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+(\+|\-)\d\d:\d\d)\s+({host_ip}[\w.\-]+)(\s+\S+){2}\s+({host}[\w.\-]+)\s+\S+\s*:\s*default .+? CMD_EXECUTED""",
+      """({time}\d+\/\d+\/\d+:\d+:\d+:\d+)(\s*GMT)?\s+({host}[^\s]+)\s+\S+\s*:\s*default\s+\w+\s+CMD_EXECUTED""",
       """\sUser\s+(?:<unknown>|({user}\S+))(\s+\S+){2}\s+({dest_ip}[a-fA-F\d.:]+)""",
       """\sCommand\s+"({command_line}[^"]+?)\s*"""",
       """\sStatus\s+"({outcome}[^"]+)""",
