@@ -23,6 +23,10 @@ Use Case: Internal Fraud
 |                             Product                              | Activity Types | Event Types                                         | MITRE TTP                                                 | Content                   |
 |:----------------------------------------------------------------:| -------------- | --------------------------------------------------- | --------------------------------------------------------- | ------------------------- |
 | [Cloud Akamai](../DataSources/datasource_akamai_cloud_akamai.md) | - Web Activity | - web-activity-allowed<br>- web-activity-denied<br> | T1071.001 - Application Layer Protocol: Web Protocols<br> |  - 3 Rules<br> - 2 Models |
+### Vendor: Apache Subversion
+|                                        Product                                        | Activity Types         | Event Types                                 | MITRE TTP                  | Content                    |
+|:-------------------------------------------------------------------------------------:| ---------------------- | ------------------------------------------- | -------------------------- | -------------------------- |
+| [Apache Subversion](../DataSources/datasource_apache_subversion_apache_subversion.md) | - Application Activity | - app-activity<br>- app-activity-failed<br> | T1078 - Valid Accounts<br> |  - 13 Rules<br> - 1 Models |
 ### Vendor: Apache
 |                       Product                        | Activity Types | Event Types                                         | MITRE TTP                                                 | Content                   |
 |:----------------------------------------------------:| -------------- | --------------------------------------------------- | --------------------------------------------------------- | ------------------------- |
@@ -416,10 +420,6 @@ Use Case: Internal Fraud
 |                                Product                                 | Activity Types         | Event Types                                                                                                                 | MITRE TTP                  | Content                    |
 |:----------------------------------------------------------------------:| ---------------------- | --------------------------------------------------------------------------------------------------------------------------- | -------------------------- | -------------------------- |
 | [SSL Open VPN](../DataSources/datasource_ssl_open_vpn_ssl_open_vpn.md) | - Application Activity | - app-activity<br>- app-activity-failed<br>- authentication-failed<br>- failed-vpn-login<br>- vpn-login<br>- vpn-logout<br> | T1078 - Valid Accounts<br> |  - 14 Rules<br> - 1 Models |
-### Vendor: SVN
-|                   Product                   | Activity Types         | Event Types                                 | MITRE TTP                  | Content                    |
-|:-------------------------------------------:| ---------------------- | ------------------------------------------- | -------------------------- | -------------------------- |
-| [SVN](../DataSources/datasource_svn_svn.md) | - Application Activity | - app-activity<br>- app-activity-failed<br> | T1078 - Valid Accounts<br> |  - 13 Rules<br> - 1 Models |
 ### Vendor: Sailpoint
 |                              Product                              | Activity Types         | Event Types                                                                                                                                                  | MITRE TTP                  | Content                    |
 |:-----------------------------------------------------------------:| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------- | -------------------------- |

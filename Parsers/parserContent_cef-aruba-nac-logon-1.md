@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-aruba-nac-logon-1
-  Vendor = HP Aruba
+  Vendor = HP
   Product = Aruba ClearPass Access Control and Policy Management
   Lms = ArcSight
   DataType = "nac-logon"

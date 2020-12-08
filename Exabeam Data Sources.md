@@ -43,6 +43,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Firewall Analyzer](DataSources/datasource_algosec_firewall_analyzer.md)
 #### Apache
 * [Apache](DataSources/datasource_apache_apache.md)
+#### Apache Subversion
+* [Apache Subversion](DataSources/datasource_apache_subversion_apache_subversion.md)
 #### AppSense Application Manager
 * [AppSense Application Manager](DataSources/datasource_appsense_application_manager_appsense_application_manager.md)
 #### Arbor
@@ -61,12 +63,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Avaya Ethernet Routing Switch](DataSources/datasource_avaya_avaya_ethernet_routing_switch.md)
 #### Avaya VPN
 * [Avaya VPN](DataSources/datasource_avaya_vpn_avaya_vpn.md)
-#### Avecto
-* [Avecto Defendpoint](DataSources/datasource_avecto_avecto_defendpoint.md)
 #### Axway
 * [Axway SFTP](DataSources/datasource_axway_axway_sftp.md)
-#### BCN
-* [BCN](DataSources/datasource_bcn_bcn.md)
 #### BIND
 * [BIND](DataSources/datasource_bind_bind.md)
 #### Badge
@@ -80,6 +78,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [BeyondTrust](DataSources/datasource_beyondtrust_beyondtrust.md)
 * [BeyondTrust PasswordSafe](DataSources/datasource_beyondtrust_beyondtrust_passwordsafe.md)
 * [BeyondTrust PowerBroker](DataSources/datasource_beyondtrust_beyondtrust_powerbroker.md)
+* [BeyondTrust Privilege Management](DataSources/datasource_beyondtrust_beyondtrust_privilege_management.md)
 * [BeyondTrust Privileged Identity](DataSources/datasource_beyondtrust_beyondtrust_privileged_identity.md)
 #### BeyondTrust Secure Remote Access
 * [BeyondTrust Secure Remote Access](DataSources/datasource_beyondtrust_secure_remote_access_beyondtrust_secure_remote_access.md)
@@ -89,6 +88,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Bitglass CASB](DataSources/datasource_bitglass_bitglass_casb.md)
 #### BlackBerry
 * [BlackBerry Protect](DataSources/datasource_blackberry_blackberry_protect.md)
+#### BlueCat Networks
+* [BlueCat Networks DHCP](DataSources/datasource_bluecat_networks_bluecat_networks_dhcp.md)
 #### BlueCat Networks Adonis
 * [BlueCat Networks Adonis](DataSources/datasource_bluecat_networks_adonis_bluecat_networks_adonis.md)
 #### BlueCoat
@@ -312,18 +313,14 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Gravityzone
 * [Gravityzone](DataSources/datasource_gravityzone_gravityzone.md)
 #### HP
+* [Aruba ClearPass Access Control and Policy Management](DataSources/datasource_hp_aruba_clearpass_access_control_and_policy_management.md)
+* [Aruba Mobility Master](DataSources/datasource_hp_aruba_mobility_master.md)
+* [Aruba Wireless controller](DataSources/datasource_hp_aruba_wireless_controller.md)
+* [HP](DataSources/datasource_hp_hp.md)
+* [HP Comware](DataSources/datasource_hp_hp_comware.md)
 * [HP LaserJet Printer](DataSources/datasource_hp_hp_laserjet_printer.md)
+* [HP SafeCom](DataSources/datasource_hp_hp_safecom.md)
 * [Print Server](DataSources/datasource_hp_print_server.md)
-#### HP Aruba
-* [Aruba Mobility Master](DataSources/datasource_hp_aruba_aruba_mobility_master.md)
-* [Aruba Wireless controller](DataSources/datasource_hp_aruba_aruba_wireless_controller.md)
-* [HP Aruba](DataSources/datasource_hp_aruba_hp_aruba.md)
-#### HP Comware
-* [HP Comware](DataSources/datasource_hp_comware_hp_comware.md)
-#### HP SafeCom
-* [HP SafeCom](DataSources/datasource_hp_safecom_hp_safecom.md)
-#### HPE
-* [Aruba ClearPass Access Control and Policy Management](DataSources/datasource_hpe_aruba_clearpass_access_control_and_policy_management.md)
 #### HashiCorp
 * [HashiCorp Vault](DataSources/datasource_hashicorp_hashicorp_vault.md)
 * [Terraform](DataSources/datasource_hashicorp_terraform.md)
@@ -641,8 +638,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [SIGSCI](DataSources/datasource_sigsci_sigsci.md)
 #### SSL Open VPN
 * [SSL Open VPN](DataSources/datasource_ssl_open_vpn_ssl_open_vpn.md)
-#### SVN
-* [SVN](DataSources/datasource_svn_svn.md)
 #### SafeSend
 * [SafeSend](DataSources/datasource_safesend_safesend.md)
 #### Safend

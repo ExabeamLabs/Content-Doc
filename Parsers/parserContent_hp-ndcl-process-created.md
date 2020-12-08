@@ -2,7 +2,7 @@
 ```Java
 {
 Name = hp-ndcl-process-created
-    Vendor = HP Comware
+    Vendor = HP
   Product = HP Comware
     Lms = Direct
     DataType = "process-created"

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-aruba-mobile
-  Vendor = HP Aruba
+  Vendor = HP
   Product = Aruba Wireless controller
   Source = Mobility Controller
   Lms = Direct

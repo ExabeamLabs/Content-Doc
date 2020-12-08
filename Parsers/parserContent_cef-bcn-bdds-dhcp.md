@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-bcn-bdds-dhcp
-    Vendor = BCN
-  Product = BCN
+    Vendor = BlueCat Networks
+    Product = BlueCat Networks DHCP
     Lms = ArcSight
     DataType = "dhcp"
     TimeFormat = "epoch"
