@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-aruba-nac-failed-logon
-  Vendor = HP Aruba
+  Vendor = HP
   Product = Aruba Wireless controller
   Lms = ArcSight
   DataType = "nac-failed-logon"

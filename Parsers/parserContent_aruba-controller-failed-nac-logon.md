@@ -2,7 +2,7 @@
 ```Java
 {
 Name = aruba-controller-failed-nac-logon
-  Vendor = HP Aruba
+  Vendor = HP
   Product = Aruba Wireless controller
   Lms = Splunk
   DataType = "nac-failed-logon"

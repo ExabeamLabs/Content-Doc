@@ -2,8 +2,8 @@
 ```Java
 {
 Name = avecto-local-logon
-    Vendor = Avecto
-    Product = Avecto Defendpoint
+    Vendor = BeyondTrust
+    Product = BeyondTrust Privilege Management
     Lms = Splunk
     DataType = "local-logon"
     TimeFormat = "MM/dd/yyyy HH:mm:ss a"

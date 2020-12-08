@@ -2,7 +2,7 @@
 ```Java
 {
 Name = q-aruba-nac-logon-3
-  Vendor = HPE
+  Vendor = HP
   Product = Aruba ClearPass Access Control and Policy Management
   Lms = QRadar
   DataType = "nac-logon"

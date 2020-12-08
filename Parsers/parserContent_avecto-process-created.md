@@ -2,8 +2,8 @@
 ```Java
 {
 Name = avecto-process-created
-    Vendor = Avecto
-    Product = Avecto Defendpoint
+    Vendor = BeyondTrust
+    Product = BeyondTrust Privilege Management
     Lms = Splunk
     DataType = "process-created"
     IsHVF = true
