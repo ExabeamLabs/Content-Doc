@@ -320,6 +320,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [HP Comware](DataSources/datasource_hp_hp_comware.md)
 * [HP LaserJet Printer](DataSources/datasource_hp_hp_laserjet_printer.md)
 * [HP SafeCom](DataSources/datasource_hp_hp_safecom.md)
+* [HP Virtual Connect Enterprise Manager](DataSources/datasource_hp_hp_virtual_connect_enterprise_manager.md)
 * [Print Server](DataSources/datasource_hp_print_server.md)
 #### HashiCorp
 * [HashiCorp Vault](DataSources/datasource_hashicorp_hashicorp_vault.md)
