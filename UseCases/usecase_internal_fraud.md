@@ -229,6 +229,10 @@ Use Case: Internal Fraud
 |                               Product                               | Activity Types         | Event Types                              | MITRE TTP                  | Content        |
 |:-------------------------------------------------------------------:| ---------------------- | ---------------------------------------- | -------------------------- | -------------- |
 | [Gravityzone](../DataSources/datasource_gravityzone_gravityzone.md) | - Application Activity | - app-login<br>- web-activity-denied<br> | T1078 - Valid Accounts<br> |  - 4 Rules<br> |
+### Vendor: HP
+|                                                    Product                                                     | Activity Types         | Event Types     | MITRE TTP                  | Content        |
+|:--------------------------------------------------------------------------------------------------------------:| ---------------------- | --------------- | -------------------------- | -------------- |
+| [HP Virtual Connect Enterprise Manager](../DataSources/datasource_hp_hp_virtual_connect_enterprise_manager.md) | - Application Activity | - app-login<br> | T1078 - Valid Accounts<br> |  - 4 Rules<br> |
 ### Vendor: HashiCorp
 |                                  Product                                  | Activity Types         | Event Types                                         | MITRE TTP                                                 | Content                   |
 |:-------------------------------------------------------------------------:| ---------------------- | --------------------------------------------------- | --------------------------------------------------------- | ------------------------- |
