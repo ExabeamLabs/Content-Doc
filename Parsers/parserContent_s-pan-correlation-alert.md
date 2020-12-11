@@ -12,7 +12,7 @@ Name = s-pan-correlation-alert
     """exabeam_host=({host}[\w\-.]+)""",
     """\d\d:\d\d:\d\d ({host}[\w\-.]+)""",
     """,CORRELATION,.+?({time}\d\d\d\d\/\d\d\/\d\d \d\d:\d\d:\d\d)""",
-    """,CORRELATION,([^,]*,){4}(({domain}[^\\]+)\\)?({user}[^,]+)""",
+    """,CORRELATION,([^,]*,){4}(|(({domain}[^\\]+)\\)?({user}[^,]+)),""",
     """,CORRELATION,([^,]*,){3}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """,CORRELATION,([^,]*,){15}({alert_type}[^,]+)""",
     """,CORRELATION,([^,]*,){6}({alert_name}[^,]+)""",
