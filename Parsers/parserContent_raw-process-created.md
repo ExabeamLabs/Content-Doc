@@ -7,10 +7,11 @@ Name = raw-process-created
     Lms = Direct
     DataType = "windows-process-created"
     IsHVF = true
-    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
+    TimeFormat = "MMM dd HH:mm:ss yyyy"
     Conditions = ["""A new process has been created""" ]
     Fields = [
       """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
+      """"forwarder":"({host}[^"]+)""",
       """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|pm|PM))""",
       """({event_name}A new process has been created)""",
