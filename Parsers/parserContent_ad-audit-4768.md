@@ -21,9 +21,9 @@ Name = ad-audit-4768
     """USER_SID\s*=\s*\%?\{?({user_sid}[^\}\s\]]+)""",
     """ERROR_CODE\s*=\s*({result_code}[^\s]+)""",
     """EVENT_TYPE_TEXT\s*=\s*({outcome}.+?)\s*\]""",
-    """LOGON_SERVICE\s*=\s*({service_name}[^\s]+?)\s*\]""",
-    """TICKET_ENCRYPTION_TYPE\s*=\s*({ticket_encryption_type}[^\s]+?)\s*\]""",
-    """TICKET_OPTIONS\s*=\s*({ticket_options}[^\s]+?)\s*\]""",
+    """LOGON_SERVICE\s*=\s*(null|-|({service_name}[^\s\]]+))""",
+    """TICKET_OPTIONS\s*=\s*(null|-|({ticket_options}[^\s\]]+))""",
+    """TICKET_ENCRYPTION_TYPE\s*=\s*(null|-|({ticket_encryption_type}[^\s\]]+))""",
   ]
 }
 ```
