@@ -18,7 +18,17 @@ Name = raw-4662-2
     """"4662",("[^"]*",){3}"({logon_id}[^"]+)"""",
     """"4662",("[^"]*",){4}"({target_domain}[^"]+)"""",
     """"4662",("[^"]*",){5}"({target_user}[^"]+)"""",
-    """"4662",("[^"]*",){6}"({target_user_sid}[^"]+)"""" 
+    """"4662",("[^"]*",){6}"({target_user_sid}[^"]+)"""",
+    """"(An operation was performed on an object)",("[^"]+",){2}"({object_class}[^"]+)""",
+    """"(An operation was performed on an object)",("[^"]+",){3}"({object}[^"]+)""",
+    """"(An operation was performed on an object)",("[^"]+",){4}"({activity_type}[^"]+)""",
+    """"(An operation was performed on an object)",("[^"]+",){5}"(LOCAL SERVICE|({user}[^"]+))""",
+    """"(An operation was performed on an object)",("[^"]+",){6}"({logon_id}[^"]+)""",
+    """"(An operation was performed on an object)",("[^"]+",){7}"(NT AUTHORITY|({domain}[^"]+))""",
+    """"(An operation was performed on an object)",("[^"]+",){8}"({activity}[^"]+)""",
+    """"(An operation was performed on an object)",("[^"]+",){9}"[\\ntr-]*(-|({properties}[^"]+))""",
+    """"(An operation was performed on an object)",("[^"]+",){10}"[\\ntr-]*({attribute}[^"]+?)[trn\s\\]*(<\/Message>|")""",
+    """"(An operation was performed on an object)",("[^"]+",){12}"({outcome}[^"]+)"""
   ]
   DupFields = ["host->dest_host"]
 }
