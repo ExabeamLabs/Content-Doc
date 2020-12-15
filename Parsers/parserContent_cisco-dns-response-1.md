@@ -11,6 +11,7 @@ Name = cisco-dns-response-1
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """({host}[\w\-]+)\s+Skyformation\s""",
+    """"mostGranularIdentity":"({host}[^"]+)"""",
     """"timestamp":"({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d)"""",
     """"responseCode":"({dns_response_code}[^"]+)"""",
     """"action":"({outcome}[^"]+)"""",
@@ -22,5 +23,6 @@ Name = cisco-dns-response-1
     """"externalIp":"({src_ip}[a-fA-F:\d.]+)""",
     """"identities":\[({identities}[^\[\]]+)\]"""
   ]
+  DupFields = [ "host->src_host" ]
 }
 ```
