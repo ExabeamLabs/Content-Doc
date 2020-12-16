@@ -17,11 +17,13 @@ Name = cisco-dns-response-1
     """"action":"({outcome}[^"]+)"""",
     """"queryType":"({query_type}[^"]+)"""",
     """"domain":"({query}[^"]+)"""",
+    """"domain":"({query}[^"]+\.({top_query}\w+\.(?i)(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za)))"""",
     """"categories":\[(|""|({categories}[^\]]+))\]""",
     """"categories":\["({category}[^"]+)"""",
     """"internalIp":"({dest_ip}[a-fA-F:\d.]+)""",
     """"externalIp":"({src_ip}[a-fA-F:\d.]+)""",
-    """"identities":\[({identities}[^\[\]]+)\]"""
+    """"identities":\[({identities}[^\[\]]+)\]""",
+    """src-account-name":"({account_name}[^"]+)"""
   ]
   DupFields = [ "host->src_host" ]
 }
