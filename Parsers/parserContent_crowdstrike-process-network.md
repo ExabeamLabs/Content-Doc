@@ -22,6 +22,7 @@ Name = crowdstrike-process-network
     """"name":"({process_name}[^"]+)""",
     """"LocalAddressIP6":"(0.0.0.0|0:0:0:0:0:0:0:0|({dest_ip}[A-Fa-f:\d.]+))""",
     """"RemoteAddressIP6":"(0.0.0.0|0:0:0:0:0:0:0:0|({dest_ip}[A-Fa-f:\d.]+))""",
+    """src-account-name":"({account_name}[^"]+)""",
   ]
 }
 ```

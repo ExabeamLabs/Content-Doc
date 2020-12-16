@@ -2,8 +2,8 @@
 ```Java
 {
 Name = ad-audit-alert
-  Vendor = ManageEngine
-  Product = AD Audit
+  Vendor = Microsoft
+  Product = Microsoft Windows
   Lms = Direct
   DataType = "alert"
   TimeFormat = "epoch_sec"

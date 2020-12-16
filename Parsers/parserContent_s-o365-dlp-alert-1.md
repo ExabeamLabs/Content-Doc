@@ -19,7 +19,8 @@ Name = s-o365-dlp-alert-1
     """"RuleName":\s*"(|({alert_name}[^"]+))"(,|\})""",
     """"FileName":\s*"(|({file_name}[^"]+))"(,|\})""",
     """"From":\s*"({user_email}[^@"]+?@[^@"]+?)"""",
-    """"To":\s*\[({target}[^\]]+)\]"""
+    """"To":\s*\[({target}[^\]]+)\]""",
+    """src-account-name":"({account_name}[^"]+)"""
   ]
 }
 ```

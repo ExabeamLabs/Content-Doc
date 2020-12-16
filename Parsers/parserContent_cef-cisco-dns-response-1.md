@@ -12,6 +12,7 @@ Name = cef-cisco-dns-response-1
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """cs6="({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)","[^"]*","({user_lastname}[^",]+),\s*({user_firstname}[^",\s]+)\s*\(({domain}[^\(\)]+)\)\s*\(({user}[^\(\)]+)\)[^"]*?","(|({dest_ip}[a-fA-F:\d.]+))",("[^"]+",)"(|({outcome}[^"]+))","[^"]+\(({query_type}[^\)]+)\)(",")(|({dns_response_code}[^"]+))(",")(|({query}[^"]+))(",")(|({category}[^"]+))"""",
+    """cs6="({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)","[^"]*","({user_lastname}[^",]+),\s*({user_firstname}[^",\s]+)\s*\(({domain}[^\(\)]+)\)\s*\(({user}[^\(\)]+)\)[^"]*?","(|({dest_ip}[a-fA-F:\d.]+))",("[^"]+",)"(|({outcome}[^"]+))","[^"]+\(({query_type}[^\)]+)\)(",")(|({dns_response_code}[^"]+))(",")(|({query}[^"]+\.({top_query}\w+\.(?i)(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))))(",")(|({category}[^"]+))"""",
   ]
 }
 ```

@@ -18,6 +18,7 @@ Name = cisco-firesight-alert
     """\Wdest_ip=(0|0.0.0.0|({dest_ip}[A-Fa-f:\d.]+))""",
     """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
     """\d\d:\d\d:\d\d\s+({host}[\w-]+)\s"""
+    """\suser=\\?"*(0|No Authentication Required|({user}[^\s"]+))""",
   ]
   SOAR {
     IncidentType = "generic"

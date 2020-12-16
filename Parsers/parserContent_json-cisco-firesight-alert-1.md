@@ -33,6 +33,7 @@ Name = json-cisco-firesight-alert-1
     """"protocol":\s*({protocol}[^,]+)""",
     """Old Disp:\s*({old_disposition}[^,]+)""",
     """New Disp:\s*({new_disposition}[^,]+)""",
+    """threatScore":\s({alert_severity}\d+)""",
   ]
   SOAR {
    IncidentType = "malware"

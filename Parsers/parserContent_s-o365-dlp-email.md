@@ -24,7 +24,8 @@ Name = s-O365-dlp-email
     """"Size"+:\s*"?({bytes}\d+)""",
     """"Status"+:\s*"+({outcome}[^",]+)"""",
     """"Organization"+:"+({host}[^",]+)""",
-    """"MessageTraceId"+:\s*"+({alert_id}[^",]+)"""
+    """"MessageTraceId"+:\s*"+({alert_id}[^",]+)""",
+    """src-account-name":"({account_name}[^"]+)"""
   ]
 }
 ```
