@@ -440,10 +440,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Malwarebytes Endpoint Protection](DataSources/datasource_malwarebytes_malwarebytes_endpoint_protection.md)
 #### Malwarebytes Incident Response
 * [Malwarebytes Incident Response](DataSources/datasource_malwarebytes_incident_response_malwarebytes_incident_response.md)
-#### ManageEngine
-* [AD Audit](DataSources/datasource_manageengine_ad_audit.md)
-* [AD Audit Plus](DataSources/datasource_manageengine_ad_audit_plus.md)
-* [ADmanager](DataSources/datasource_manageengine_admanager.md)
 #### MariaDB
 * [MariaDB](DataSources/datasource_mariadb_mariadb.md)
 #### MasterSAM

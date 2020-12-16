@@ -30,6 +30,7 @@ Name = crowdstrike-process-created
       """"TargetProcessId":\s*"({pid}[^"]+)""",
       """"UserSid":\s*"({user_sid}[^"]+)""",
       """log-severity\\=({log_severity}\S+)""",
+      """src-account-name":"({account_name}[^"]+)""",
     ]
     DupFields = [ "directory->process_directory" ]
   }

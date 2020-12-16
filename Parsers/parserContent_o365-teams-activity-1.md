@@ -19,6 +19,7 @@ Name = o365-teams-activity-1
     """UserKey"*:\s*"*({user_email}[^@"]+@({email_domain}[^"]+))"*""",
     """UserId"*:\s*"*({user_email}[^@"]+@({email_domain}[^"]+))"*""",
     """"ClientIP\\*"+:[\s\\]*"+(::1|\[?({src_ip}[a-fA-F\d.:]+))""",
+    """src-account-name":"({account_name}[^"]+)""",
     ]
 }
 ```

@@ -16,6 +16,7 @@ Name = crowdstrike-network-connection
       """"ConnectionDirection":"({direction}0).*"LocalAddressIP(4|6)":"(0:0:0:0:0:0:0:0|0.0.0.0|({src_ip}[^"]+)).*"LocalPort":"({src_port}\d+).*"RemoteAddressIP(4|6)":"(0:0:0:0:0:0:0:0|0.0.0.0|({dest_ip}[^"]+)).*"RemotePort":"({dest_port}\d+)""",
       """"ConnectionDirection":"({direction}1).*"LocalAddressIP(4|6)":"(0:0:0:0:0:0:0:0|0.0.0.0|({dest_ip}[^"]+)).*"LocalPort":"({dest_port}\d+).*"RemoteAddressIP(4|6)":"(0:0:0:0:0:0:0:0|0.0.0.0|({src_ip}[^"]+)).*"RemotePort":"({src_port}\d+)""",
       """"Protocol":"({protocol}[^"]+)""",
+      """src-account-name":"({account_name}[^"]+)""",
     ]
   }
 ```

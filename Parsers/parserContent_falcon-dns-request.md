@@ -23,6 +23,7 @@ Name = falcon-dns-request
       """"aid":\s*"({aid}[^\"]+)"""",
       """"aip":\s*"({agent_ip}[a-fA-F:\d.]+)""",
       """"event_simpleName":\s*"({event_code}[^\"]+)"""",
+      """src-account-name":"({account_name}[^"]+)""",
     ]
   }
 ```

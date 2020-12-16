@@ -32,6 +32,7 @@ Name = cisco-umbrella-proxy
     """"identityType"+:"+({identity_type}[^",]+)""",
     """"identities"+:\["+({dest_host}[\w-]+)\.""",
     """"identities"+:\["+({user_fullname}.+?)\s*\(({user_email}({user}[^@]+)@[^\)"]+)"""
+    """"categories"+:\["+({categories}[^"]+)"""", 
   ]
 }
 ```
