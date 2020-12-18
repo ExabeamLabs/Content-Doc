@@ -12,6 +12,7 @@ Name = cisco-asa-process-created
   Fields = [
     """exabeam_host=(::ffff:)?(.+?@\s*)?({host}[\w.\-]+)""",
     """({time}\w+ \d+ \d{4} \d\d:\d\d:\d\d)""",
+    """({host}[\w.-]+)\s+:\s*%ASA-""",
     """%ASA\-({priority}\d+)\-({event_code}\d+)""",
     """User\s+'({user}[^']+)'""",
     """({event_name}executed)\s+the\s+'({command_line}[^']+)\s*'"""

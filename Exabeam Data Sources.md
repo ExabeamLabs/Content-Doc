@@ -266,6 +266,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [WebSafe](DataSources/datasource_f5_websafe.md)
 #### FTP
 * [FTP](DataSources/datasource_ftp_ftp.md)
+#### Fast Enterprises
+* [Fast Enterprises GenTax](DataSources/datasource_fast_enterprises_fast_enterprises_gentax.md)
 #### Fidelis
 * [Fidelis Network](DataSources/datasource_fidelis_fidelis_network.md)
 * [Fidelis XPS](DataSources/datasource_fidelis_fidelis_xps.md)
@@ -759,6 +761,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Deep Security Agent](DataSources/datasource_trend_micro_deep_security_agent.md)
 * [OfficeScan](DataSources/datasource_trend_micro_officescan.md)
 * [Trend Micro](DataSources/datasource_trend_micro_trend_micro.md)
+* [Trend Micro Apex One](DataSources/datasource_trend_micro_trend_micro_apex_one.md)
 * [Trend Micro TippingPoint NGIPS](DataSources/datasource_trend_micro_trend_micro_tippingpoint_ngips.md)
 #### Trend Micro Apex One
 * [Trend Micro Apex One](DataSources/datasource_trend_micro_apex_one_trend_micro_apex_one.md)

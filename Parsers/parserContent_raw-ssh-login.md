@@ -13,6 +13,8 @@ Name = raw-ssh-login
     """exabeam_host=([^=]+@\s*)?(::ffff:)?({host}[^\s]+)""",
     """exabeam_host=([^=]+@\s*)?(::ffff:)?(({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})|({dest_host}[^\s]+))""",
     """<({time}\d+\s+\w+\s+\d+\s+\d+:\d+:\d+)\s""",
+    """\d\d:\d\d:\d\d \d\d\d\d ({host}[^\s]+)""",
+    """\d\d:\d\d:\d\d \d\d\d\d ({dest_host}[^\s]+)""",
     """\s(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\.-]+)):?\s+sshd\[""",
     """\d{2}:\d{2}:\d{2}\s+(::ffff:)?({dest_host}[\w\.-]+)\s+auth\|""",
     """Accepted ({auth}\S+) for (({domain}[^\\:]+)\\+)?({user}[\w.'\-\\$]+)(\s|$)""",

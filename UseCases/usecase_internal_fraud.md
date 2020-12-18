@@ -195,6 +195,10 @@ Use Case: Internal Fraud
 |                   Product                   | Activity Types         | Event Types                                                                                             | MITRE TTP                  | Content                    |
 |:-------------------------------------------:| ---------------------- | ------------------------------------------------------------------------------------------------------- | -------------------------- | -------------------------- |
 | [FTP](../DataSources/datasource_ftp_ftp.md) | - Application Activity | - app-activity<br>- app-login<br>- failed-app-login<br>- file-delete<br>- file-read<br>- file-write<br> | T1078 - Valid Accounts<br> |  - 13 Rules<br> - 1 Models |
+### Vendor: Fast Enterprises
+|                                             Product                                              | Activity Types         | Event Types     | MITRE TTP                  | Content        |
+|:------------------------------------------------------------------------------------------------:| ---------------------- | --------------- | -------------------------- | -------------- |
+| [Fast Enterprises GenTax](../DataSources/datasource_fast_enterprises_fast_enterprises_gentax.md) | - Application Activity | - app-login<br> | T1078 - Valid Accounts<br> |  - 4 Rules<br> |
 ### Vendor: FileSite
 |                          Product                           | Activity Types         | Event Types        | MITRE TTP                  | Content                    |
 |:----------------------------------------------------------:| ---------------------- | ------------------ | -------------------------- | -------------------------- |
