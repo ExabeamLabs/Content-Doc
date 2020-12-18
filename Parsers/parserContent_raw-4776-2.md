@@ -23,7 +23,7 @@ Name = raw-4776-2
       """The ({login_type}computer|domain)(\s\w+)? attempted to validate the credentials""",
       """Logon (?:a|A)ccount(:|=)\s*(({user_email}[^@\s]+?@[^\s]+?\.[^\s]+?)|(({user}[^@\s,;=]+?)(?:@({domain}[^\s.;,@=]+).*?)?)|({=user}.+?))[\s;]*Source Workstation(:|=)""",
       """Error Code(:|=)\s*({result_code}[\w\-]+)""",
-      """Source Workstation(:|=)([\s\\]+|(\s*\\*(((::ffff:)?({dest_ip}[A-Fa-f:\d.]+?)(:({dest_port}\d+))?)|(::ffff:)?({dest_host}.+?))[\s;]*))Error Code(:|=)""",
+      """Source Workstation(:|=)([\s\\]+|(\s*\\*(((::ffff:)?({dest_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]*:[A-Fa-f0-9%.:]+))(:({dest_port}\d+))?)|(::ffff:)?({dest_host}[^\s]+?))[\s;]*))Error Code(:|=)"""
     ]
   }
 ```
