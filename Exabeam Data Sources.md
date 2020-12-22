@@ -493,6 +493,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Microsoft Azure](DataSources/datasource_microsoft_azure_microsoft_azure.md)
 #### Microsoft Office 365
 * [Microsoft Office 365](DataSources/datasource_microsoft_office_365_microsoft_office_365.md)
+#### Microsoft Windows
+* [Microsoft Windows](DataSources/datasource_microsoft_windows_microsoft_windows.md)
 #### Mimecast
 * [Mimecast](DataSources/datasource_mimecast_mimecast.md)
 * [Mimecast Email Security](DataSources/datasource_mimecast_mimecast_email_security.md)
@@ -801,9 +803,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Varonis
 * [Data Security Platform](DataSources/datasource_varonis_data_security_platform.md)
 #### Vectra
-* [Vectra](DataSources/datasource_vectra_vectra.md)
-#### Vectra Networks
-* [Vectra](DataSources/datasource_vectra_networks_vectra.md)
+* [Vectra Cognito Detect](DataSources/datasource_vectra_vectra_cognito_detect.md)
+* [Vectra Cognito Stream](DataSources/datasource_vectra_vectra_cognito_stream.md)
 #### Verdasys Digital Guardian
 * [Digital Guardian Endpoint Protection](DataSources/datasource_verdasys_digital_guardian_digital_guardian_endpoint_protection.md)
 #### Virtru
