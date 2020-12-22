@@ -2,7 +2,7 @@
 ```Java
 {
 Name = vectra-alert-3
-  Product = Vectra
+  Product = Vectra Cognito Detect
   Vendor = Vectra
   Lms = Splunk
   DataType = "alert"
