@@ -12,7 +12,7 @@ Name = cef-netskope-alert-policy
     """"hostname":"({src_host}[^"]+)""",
     """"referer":"({referrer}[^"]+)""",
     """"policy":"({additional_info}[^"]+)""",
-    """"page":"({web_domain}[^"]+)""",
+    """"page":"({web_domain}[^\\\/"]+)""",
     """"app":"({process_name}[^"]+)"""",
   ]
 }
