@@ -19,10 +19,17 @@ Name = json-sysmon-process-created
     """"ProcessGuid":"({process_guid}[^"]+)""",
     """"ParentProcessGuid":"({parent_process_guid}[^"]+)""",
     """"LogonId":"({logon_id}[^"]+)""",
-    """Hashes:.*?,?MD5=({md5}[^\s,]+)""",
+    """"Hashes":"MD5=({md5}[^,\s]+),""",
     """"Hostname":"({host}[^"]+)""",
     """"CommandLine":"\s*({command_line}.+?)\s*",""",
     """"ParentImage":"({parent_process}({parent_directory}[^"]*?[\\\/]+)?({parent_process_name}[^"\\\/]+))"""",
+    """"EventID":({event_code}\d+)""",
+    """ProviderGuid":"({provider_guid}[^"]+)""",
+    """"Task":({task}\d+)""",
+    """"OpcodeValue":({opcode_value}\d+)""",
+    """"User":"(((?i)NT AUTHORITY|({domain}[^\\]+))[\\]+)?((?i)SYSTEM|LOCAL SERVICE|NETWORK SERVICE|({user}[^"]+))"""",
+    """"LogonGuid":"({logon_guid}[^"]+)""",
+    """"Hashes":"[^]]+SHA256=({sha256}[^",]+)""",
   ]
   DupFields = [ "host->dest_host", "directory->process_directory", "process->path" ]
 }
