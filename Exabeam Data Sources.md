@@ -466,6 +466,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [IIS](DataSources/datasource_microsoft_iis.md)
 * [Microsoft](DataSources/datasource_microsoft_microsoft.md)
 * [Microsoft Azure](DataSources/datasource_microsoft_microsoft_azure.md)
+* [Microsoft Azure AD Identity Protection](DataSources/datasource_microsoft_microsoft_azure_ad_identity_protection.md)
 * [Microsoft Azure Active Directory](DataSources/datasource_microsoft_microsoft_azure_active_directory.md)
 * [Microsoft Azure MFA](DataSources/datasource_microsoft_microsoft_azure_mfa.md)
 * [Microsoft Azure Security Center](DataSources/datasource_microsoft_microsoft_azure_security_center.md)
