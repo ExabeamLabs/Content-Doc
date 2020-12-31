@@ -16,7 +16,7 @@ box-activity = {
     """"actor":.*?"email":\s*"(?:N\/A|({user_email}[^@"\s]+@[^@"\s]+))"""",
     """"event_type":(\{"\.tag":)?\s*"({activity}[^"]+)"""",
     """"description":\s*"({additional_info}[^"]+)"""",
-    """"ip_address":\s*"({src_ip}[a-fA-F\d.:]+)""",
+    """"ip_address":\s*"({src_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]*:[A-Fa-f0-9%.:]+))""",
     """({app}Dropbox)""",
   ]
 }
