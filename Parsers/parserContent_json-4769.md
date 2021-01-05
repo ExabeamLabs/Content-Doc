@@ -6,7 +6,7 @@ Name = json-4769
     Product = Microsoft Windows
     Lms = Direct
     DataType = "windows-4769"
-    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
     Conditions = ["""4769""", """"TransmittedServices":""""]
     Fields = [
       """({event_name}A Kerberos service ticket was requested)""",
@@ -15,6 +15,8 @@ Name = json-4769
       """"timestamp":\s*({time}\d+)""",
       """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]+\sSkyformation""",
       """"+created"+:"+({time}[^"]+)""",
+      """"TimeCreated"+:"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
+      """"Computer"+:"+({host}[^"]+)""""
       """"+computer_name"+:"+({host}[^"]+)""",
       """"(Hostname|MachineName)":"({host}[^"]*)""",
       """({event_code}4769)""",
