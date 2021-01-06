@@ -493,6 +493,14 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Windows Defender](DataSources/datasource_microsoft_windows_defender.md)
 #### Microsoft Azure
 * [Microsoft Azure](DataSources/datasource_microsoft_azure_microsoft_azure.md)
+#### Microsoft Azure Advanced Threat Protection
+* [Microsoft Azure Advanced Threat Protection](DataSources/datasource_microsoft_azure_advanced_threat_protection_microsoft_azure_advanced_threat_protection.md)
+#### Microsoft Azure Security Center
+* [Microsoft Azure Security Center](DataSources/datasource_microsoft_azure_security_center_microsoft_azure_security_center.md)
+#### Microsoft Cloud App Security (MCAS)
+* [Microsoft Cloud App Security (MCAS)](DataSources/datasource_microsoft_cloud_app_security_(mcas)_microsoft_cloud_app_security_(mcas).md)
+#### Microsoft Defender ATP
+* [Microsoft Defender ATP](DataSources/datasource_microsoft_defender_atp_microsoft_defender_atp.md)
 #### Microsoft Office 365
 * [Microsoft Office 365](DataSources/datasource_microsoft_office_365_microsoft_office_365.md)
 #### Microsoft Windows
