@@ -32,7 +32,6 @@ Name = json-4624
       """"TargetUserSid":"({user_sid}[^"]*)""",
       """Workstation Name:((\\)[rnt])*(([A-Fa-f:\d.]+|-|({src_host_windows}[^\\]+))((\\)[rnt])*)?Source""",
       """"WorkstationName":"(?:|[A-Fa-f:\d.]+|-|({src_host_windows}[^"]+))"""",
-      """SubjectUserName":"(-|({account}[^"]+))""",
     ]
     DupFields = ["host->dest_host"]
   }
