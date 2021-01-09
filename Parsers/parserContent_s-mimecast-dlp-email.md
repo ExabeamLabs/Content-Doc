@@ -6,7 +6,7 @@ Name = s-mimecast-dlp-email
     Product = Mimecast Email Security
     Lms = Splunk
     DataType = "dlp-email-alert"
-    TimeFormat = "yyyy-MM-dd'T'HH: mm:ssZ"
+    TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
     Conditions = [ """|Dir=""", """|Sender=""", """|Rcpt=""" ]
     Fields = [
       """exabeam_host=({host}[\w.\-]+)""",
