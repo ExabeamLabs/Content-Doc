@@ -228,6 +228,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [EMP](DataSources/datasource_emp_emp.md)
 #### ESET
 * [ESET Endpoint Security](DataSources/datasource_eset_eset_endpoint_security.md)
+#### ESector
+* [ESector DEFESA](DataSources/datasource_esector_esector_defesa.md)
 #### EdgeWave
 * [EdgeWave iPrism](DataSources/datasource_edgewave_edgewave_iprism.md)
 #### Egnyte
