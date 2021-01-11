@@ -197,6 +197,10 @@ Use Case: Data Exfiltration
 |                   Product                   | Activity Types   | Event Types                       | MITRE TTP                                                                                                                        | Content        |
 |:-------------------------------------------:| ---------------- | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------- |
 | [EMP](../DataSources/datasource_emp_emp.md) | - Email Activity | - app-activity<br>- app-login<br> | T1098.002 - Account Manipulation: Exchange Email Delegate Permissions<br>T1114.003 - Email Collection: Email Forwarding Rule<br> |  - 3 Rules<br> |
+### Vendor: ESector
+|                                Product                                | Activity Types  | Event Types                     | MITRE TTP                                | Content                   |
+|:---------------------------------------------------------------------:| --------------- | ------------------------------- | ---------------------------------------- | ------------------------- |
+| [ESector DEFESA](../DataSources/datasource_esector_esector_defesa.md) | - File Activity | - file-read<br>- file-write<br> | T1083 - File and Directory Discovery<br> |  - 3 Rules<br> - 3 Models |
 ### Vendor: EdgeWave
 |                                 Product                                  | Activity Types                           | Event Types                                         | MITRE TTP                                                                                                                                                                  | Content        |
 |:------------------------------------------------------------------------:| ---------------------------------------- | --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
