@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-xml-1102
-  Vendor = Microsoft Windows
+  Vendor = Microsoft
   Product = Microsoft Windows
   Lms = Splunk
   DataType = "windows-audit"
