@@ -1,27 +1,22 @@
-Vendor: BitDefender
-===================
-Product: BitDefender Gravityzone
---------------------------------
+Vendor: Bitdefender GravityZone
+===============================
+Product: Bitdefender
+--------------------
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  36   |   5    |     10     |      6      |    6    |
 
-### Use Cases
+|                                 Use-Case                                  | Activity Types                                                                                                                                                                                                    | Event Types/Parsers                                                                                                           | MITRE TTP                                                        | Content                                              |
+|:-------------------------------------------------------------------------:| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------- |
+| [Compromised Credentials](../UseCases/usecase_compromised_credentials.md) | <ul><li>Activity Time  and Type</li><li>Application Activity</li><li>Asset Logon and Access</li><li>Critical System Activity</li><li>Network zones and Location Access</li><li>Service Account Activity</li></ul> |  app-login<br> ↳ [gravityzone-security-alert-new-login](../Parsers/parserContent_gravityzone-security-alert-new-login.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>   | <ul><li>22 Rules</li></ul><ul><li>4 Models</li></ul> |
+|          [Internal Fraud](../UseCases/usecase_internal_fraud.md)          | <ul><li>Application Activity</li></ul>                                                                                                                                                                            |  app-login<br> ↳ [gravityzone-security-alert-new-login](../Parsers/parserContent_gravityzone-security-alert-new-login.md)<br> | T1078 - Valid Accounts<br>                                       | <ul><li>4 Rules</li></ul>                            |
+|        [Lateral Movement](../UseCases/usecase_lateral_movement.md)        | <ul><li>Activity Time  and Type</li><li>Application Activity</li><li>Network zones and Location Access</li></ul>                                                                                                  |  app-login<br> ↳ [gravityzone-security-alert-new-login](../Parsers/parserContent_gravityzone-security-alert-new-login.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>   | <ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>  |
+|       [Malware Detection](../UseCases/usecase_malware_detection.md)       | <ul><li>Asset Logon and Access</li></ul>                                                                                                                                                                          |  app-login<br> ↳ [gravityzone-security-alert-new-login](../Parsers/parserContent_gravityzone-security-alert-new-login.md)<br> | T1078 - Valid Accounts<br>T1090.003 - Proxy: Multi-hop Proxy<br> | <ul><li>3 Rules</li></ul>                            |
+|     [Privileged Activity](../UseCases/usecase_privileged_activity.md)     | <ul><li>Service Account Activity</li></ul>                                                                                                                                                                        |  app-login<br> ↳ [gravityzone-security-alert-new-login](../Parsers/parserContent_gravityzone-security-alert-new-login.md)<br> | T1078 - Valid Accounts<br>                                       | <ul><li>1 Rules</li></ul>                            |
+|    [Ransomware Detection](../UseCases/usecase_ransomware_detection.md)    | <ul><li>Asset Logon and Access</li></ul>                                                                                                                                                                          |  app-login<br> ↳ [gravityzone-security-alert-new-login](../Parsers/parserContent_gravityzone-security-alert-new-login.md)<br> | T1078 - Valid Accounts<br>T1090.003 - Proxy: Multi-hop Proxy<br> | <ul><li>3 Rules</li></ul>                            |
 
-_The following Use Cases can be operationalized using log data from this data source_
-
-* [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
-* [Executives](../UseCases/usecase_executives.md)
-* [Security Alert](../UseCases/usecase_security_alert.md)
-* [Service Account Activity](../UseCases/usecase_service_account_activity.md)
-
-
-### Event Types
-
-_The following list of Event Types can be generated by Data Source BitDefender Gravityzone_BitDefender, and power the use cases above:_
-
-- security-alert
-
-
-### Parsers
-
-_The following Parsers can be operationalized using log data from this data source_
-
-* [cef-bitdefender-gravityzone-alert](../Parsers/parserContent_cef-bitdefender-gravityzone-alert.md)
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                                                                                                   | Execution | Persistence                                                                                                                                      | Privilege Escalation                                                | Defense Evasion                                                     | Credential Access | Discovery | Lateral Movement | Collection | Command and Control                                                                                                                       | Exfiltration | Impact |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
+| [External Remote Services](https://attack.mitre.org/techniques/T1133)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |           | [External Remote Services](https://attack.mitre.org/techniques/T1133)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   |           |                  |            | [Proxy: Multi-hop Proxy](https://attack.mitre.org/techniques/T1090/003)<br><br>[Proxy](https://attack.mitre.org/techniques/T1090)<br><br> |              |        |
