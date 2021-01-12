@@ -2,8 +2,8 @@
 ```Java
 {
 Name = s-liebsoft-app-login
-    Vendor = Liebsoft
-    Product = Liebsoft
+    Vendor = BeyondTrust
+    Product = BeyondTrust Privileged Identity
     Lms = Splunk
     DataType = "app-login"
     TimeFormat = "yyyy-dd-MM'T'HH:mm:ss"

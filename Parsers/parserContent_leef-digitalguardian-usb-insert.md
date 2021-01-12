@@ -2,7 +2,7 @@
 ```Java
 {
 Name = leef-digitalguardian-usb-insert
-  Vendor = Verdasys Digital Guardian
+  Vendor = Digital Guardian
   Product = Digital Guardian Endpoint Protection
   Lms = QRadar
   DataType = "usb-activity"

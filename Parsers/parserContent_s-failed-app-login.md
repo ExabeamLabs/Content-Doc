@@ -3,7 +3,7 @@
 {
 Name = s-failed-app-login
   Vendor = Microsoft
-  Product = SQL Server
+  Product = Microsoft SQL Server
   Lms = Direct 
   DataType = "failed-app-login"
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"

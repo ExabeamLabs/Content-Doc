@@ -3,7 +3,7 @@
 {
 Name = s-lanscope-asset-alert
   Vendor = LanScope
-  Product = LanScope
+  Product = LanScope Cat
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

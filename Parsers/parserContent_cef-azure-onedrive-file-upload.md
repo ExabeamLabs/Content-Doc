@@ -3,7 +3,7 @@
 {
 Name = cef-azure-onedrive-file-upload
   Vendor = Microsoft
-  Product = Microsoft CAS
+  Product = Microsoft Cloud App Security (MCAS)
   Lms = Splunk
   DataType = "file-operations"
   TimeFormat = "epoch"

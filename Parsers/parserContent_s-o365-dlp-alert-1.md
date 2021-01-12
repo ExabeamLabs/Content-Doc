@@ -16,7 +16,7 @@ Name = s-o365-dlp-alert-1
     """"Severity":\s*"({alert_severity}[^"]+)"""",
     """"IncidentId":\s*"({alert_id}[^"]+)"""",
     """"Actions":\s*\["({outcome}[^"]+)"""",
-    """"RuleName":\s*"(|({alert_name}[^"]+))"(,|\})""",
+    """"RuleName":\s*"(|({alert_name}[^",\(]+?)\s*)("|\()""",
     """"FileName":\s*"(|({file_name}[^"]+))"(,|\})""",
     """"From":\s*"({user_email}[^@"]+?@[^@"]+?)"""",
     """"To":\s*\[({target}[^\]]+)\]""",

@@ -3,7 +3,7 @@
 {
 Name = cef-syslog-microsoft-db-impersonate
   Vendor = Microsoft
-  Product = SQL Server
+  Product = Microsoft SQL Server
   Lms = Direct
   DataType = "database-login"
   IsHVF = true

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-lanscope-process-created
-  Product = LanScope
+  Product = LanScope Cat
   DataType = "process-created"
   IsHVF = true
   Conditions = [ """"リアルタイムイベントログ"""", """"ACTIVE"""" ]
