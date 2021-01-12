@@ -2,13 +2,17 @@ Vendor: SecurityExpert
 ======================
 Product: SecurityExpert
 -----------------------
-|                                 Use-Case                                  | Activity Types            | Event Types/Parsers                                                                                                | MITRE TTP                  | Content                   |
-|:-------------------------------------------------------------------------:| ------------------------- | ------------------------------------------------------------------------------------------------------------------ | -------------------------- | ------------------------- |
-| [Compromised Credentials](../UseCases/usecase_compromised_credentials.md) | - Activity Time  and Type |  physical-access<br> -- [securityexpert-badge-access](../Parsers/parserContent_securityexpert-badge-access.md)<br> | T1078 - Valid Accounts<br> |  - 1 Rules<br> - 1 Models |
-|        [Lateral Movement](../UseCases/usecase_lateral_movement.md)        | - Badge Access            |  physical-access<br> -- [securityexpert-badge-access](../Parsers/parserContent_securityexpert-badge-access.md)<br> | T1078 - Valid Accounts<br> |  - 1 Rules<br>            |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   2   |   1    |     2      |      2      |    2    |
+
+|                                 Use-Case                                  | Activity Types                            | Event Types/Parsers                                                                                               | MITRE TTP                  | Content                                             |
+|:-------------------------------------------------------------------------:| ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | -------------------------- | --------------------------------------------------- |
+| [Compromised Credentials](../UseCases/usecase_compromised_credentials.md) | <ul><li>Activity Time  and Type</li></ul> |  physical-access<br> ↳ [securityexpert-badge-access](../Parsers/parserContent_securityexpert-badge-access.md)<br> | T1078 - Valid Accounts<br> | <ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul> |
+|        [Lateral Movement](../UseCases/usecase_lateral_movement.md)        | <ul><li>Badge Access</li></ul>            |  physical-access<br> ↳ [securityexpert-badge-access](../Parsers/parserContent_securityexpert-badge-access.md)<br> | T1078 - Valid Accounts<br> | <ul><li>1 Rules</li></ul>                           |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
-| Initial Access                                                      | Execution | Persistence                                                         | Privilage escalation                                                | Defense evasion                                                     | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration | Impact |
+| Initial Access                                                      | Execution | Persistence                                                         | Privilege Escalation                                                | Defense Evasion                                                     | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration | Impact |
 | ------------------------------------------------------------------- | --------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ------------------- | ------------ | ------ |
 | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |           | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   |           |                  |            |                     |              |        |
