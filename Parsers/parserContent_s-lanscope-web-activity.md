@@ -3,7 +3,7 @@
 {
 Name = s-lanscope-web-activity
   Vendor = LanScope
-  Product = LanScope
+  Product = LanScope Cat
   Lms = Splunk
   DataType = "web-activity"
   IsHVF = true

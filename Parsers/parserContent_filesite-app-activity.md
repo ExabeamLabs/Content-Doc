@@ -2,8 +2,8 @@
 ```Java
 {
 Name = filesite-app-activity
-  Vendor = FileSite
-  Product = FileSite
+  Vendor = iManage
+  Product = iManage
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "dd/MM/yyyy HH:mm:ss"

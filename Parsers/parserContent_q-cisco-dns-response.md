@@ -3,7 +3,7 @@
 {
 Name = q-cisco-dns-response
   Vendor = Cisco
-  Product = OpenDNS Umbrella
+  Product = Cisco Umbrella
   Lms = QRadar
   DataType = "dns-response"
   IsHVF = true

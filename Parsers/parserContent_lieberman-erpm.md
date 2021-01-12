@@ -2,8 +2,8 @@
 ```Java
 {
 Name = lieberman-erpm
-  Vendor = Lieberman
-  Product = Enterprise Random Password Manager
+  Vendor = BeyondTrust
+  Product = BeyondTrust Privileged Identity
   Lms = Splunk
   DataType = "privileged-access"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"

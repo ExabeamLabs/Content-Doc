@@ -3,7 +3,7 @@
 {
 Name = cisco-dns-response-1
   Vendor = Cisco
-  Product = OpenDNS Umbrella
+  Product = Cisco Umbrella
   Lms = Syslog
   DataType = "dns-response"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

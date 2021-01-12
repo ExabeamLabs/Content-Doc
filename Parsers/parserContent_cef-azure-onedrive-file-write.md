@@ -3,7 +3,7 @@
 {
 Name = cef-azure-onedrive-file-write
   Vendor = Microsoft
-  Product = Microsoft CAS
+  Product = Microsoft Cloud App Security (MCAS)
   Lms = Splunk
   DataType = "file-write"
   IsHVF = true
