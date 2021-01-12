@@ -3,7 +3,7 @@
 {
 Name = cisco-ftd-722041
   Vendor = Cisco
-  Product = Cisco Fire Power Devices
+  Product = Cisco Firepower
   Lms = Direct
   DataType = "vpn-start"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
