@@ -292,6 +292,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Fortinet
 * [FortiAuthenticator](DataSources/datasource_fortinet_fortiauthenticator.md)
 * [Fortinet Enterprise Firewall](DataSources/datasource_fortinet_fortinet_enterprise_firewall.md)
+* [Fortinet FortiWeb](DataSources/datasource_fortinet_fortinet_fortiweb.md)
 * [Fortinet UTM](DataSources/datasource_fortinet_fortinet_utm.md)
 * [Fortinet VPN](DataSources/datasource_fortinet_fortinet_vpn.md)
 #### GTB
