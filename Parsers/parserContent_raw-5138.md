@@ -9,6 +9,7 @@ Name = raw-5138
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """Object:""", """Old DN:""", """New DN:""", """Directory Service:""", """A directory service object was undeleted""" ]
   Fields = [
+    """exabeam_host=({host}[\w\-.]+)""",
     """({event_name}A directory service object was undeleted)""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\d\d:\d\d:\d\d\s+({host}[^\s]+)\s+Microsoft-Windows-Security-Auditing""",
