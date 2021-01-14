@@ -5,9 +5,9 @@ Name = cisco-ftd-113004
   Vendor = Cisco
   Product = Cisco Firepower
   Lms = Direct
-  DataType = "vpn-start"
+  DataType = "nac-logon"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """-113004""", """%FTD-""" ]
+  Conditions = [ """-113004""", """%FTD-""" , """AAA user authentication Successful"""]
   Fields = [
     """({time}\d+-\d+-\d+T\d+:\d+:\d+Z)\s({host}[^\s]+)""",
     """%FTD-({priority}\d+)-({event_code}\d+)""",
