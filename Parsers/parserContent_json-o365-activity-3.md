@@ -16,7 +16,7 @@ Name = json-o365-activity-3
     """"Workload":"({app}[^"]+)"""",
     """"ObjectId":"({object}[^"]+)""",
     """"Id":"({object_id}[^"]+)"""",
-    """"UserKey":"({user}[^"]+)"""",
+    """"UserKey":"([^@]+@[^"]+|(({domain}[^\\]+)[\\]+({user}[^"]+))|({=user}[^"]+))"""",
     """"RecordType":({object_type}[^,]+),""",
     """"ClientIP":"({src_ip}[^"]+)"""",
     """"SourceFileName":"({file_name}[^"]+)"""",

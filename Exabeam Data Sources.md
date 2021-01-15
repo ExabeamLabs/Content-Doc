@@ -742,6 +742,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Synology NAS](DataSources/datasource_synology_nas_synology_nas.md)
 #### Tanium
 * [Endpoint Platform](DataSources/datasource_tanium_endpoint_platform.md)
+* [Threat Response](DataSources/datasource_tanium_threat_response.md)
 #### Tenable.io
 * [Tenable.io](DataSources/datasource_tenable.io_tenable.io.md)
 #### Teradata

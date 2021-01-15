@@ -14,7 +14,7 @@ Name = o365-activity
     """\Wdvc=({host}\S+)""",
     """\Wdvchost=(Unknown|({host}[\w\-.]+))""",
     """"host\\*"+:[\s\\]*"+({host}[^"\\]+)""",
-    """\Wact=({activity}.+?)\s+(\w+=|$)""",
+    """\Wact=({activity}[^=]+?)\s+(\w+=|$)""",
     """"Operation\\*"+:[\s\\]*"+({activity}[^"\\\.]*)""",
     """"eid\\*"+:[\s\\]*"+(SecurityComplianceAlerts|({user_email}[^"@]+?@[^@"]+?)|({user}[^"]+?))\\*"""",
     """UserKey"*:\s*"*({user_email}[^@"]+@({email_domain}[^"]+))"""",
@@ -28,11 +28,11 @@ Name = o365-activity
     """"MailboxOwnerUPN\\*"+:[\s\\"]*"+[^"]*?@({email_domain}([\.\w+]+\.)*([^\.\s"]+)*\.[^\s"\.>]+)>?\s*"+""",
     """"ResultStatus\\*"+:[\s\\]*"+({outcome}[^"\\]+)""",
     """"(Workload|Application|Client)\\*"+:[\s\\]*"+({app}[^"\\]*)""",
-    """requestClientApplication=({app}.+?)\s+(\w+=|$)""",
-    """sourceServiceName=({app}.+?)\s+(\w+=|$)""",
+    """requestClientApplication=({app}[^=]+?)\s+(\w+=|$)""",
+    """sourceServiceName=({app}[^=]+?)\s+(\w+=|$)""",
     """"ObjectId\\*"+:"?[\s\\]*"+(Unknown|Not Available|({object}[^"\\]*?))\s*"""",
     """"Client\\*"+:[\s\\]*"+({user_agent}[^"]*)""",
-    """"UserAgent\\*"+:[\s\\]*"+({user_agent}.*?)\\*"+,""",
+    """"UserAgent\\*"+:[\s\\]*"+({user_agent}[^=]*?)\\*"+,""",
     """\{"+Name"+:[\s\\]*"+UserAgent"+,"+Value"+:"+({user_agent}[^"]+)"+\}""",
     """"+Value"+:\s*"+({user_agent}[^"]+)"+,\s*"+Name"+:[\s\\]*"+UserAgent"+\}
 ```
