@@ -14,11 +14,13 @@ Name = xml-4672
     """<Keywords>({outcome}[^<]+)</Keywords>""",
     """<Keywords><Keyword>({outcome}[^<]+)</Keyword></Keywords>""",
     """<EventID>({event_code}[^<]+)</EventID>""",
-    """<Data Name(\\)?='SubjectDomainName'>({domain}[^<]+)""",
     """<Data Name(\\)?='SubjectLogonId'>({logon_id}[^<]+)""",
-    """<Data Name(\\)?='SubjectUserName'>(SYSTEM|({user}[^<]+))</Data>""",
-    """<Data Name(\\)?='SubjectDomainName'>({domain}[^<]+)</Data>""",
+    """<Data Name(\\)?='SubjectUserName'>(SYSTEM|NETWORK SERVICE|({user}[^<]+))</Data>""",
+    """<Data Name(\\)?='SubjectDomainName'>(?:NT AUTHORITY|({domain}[^<]+))</Data>""",
     """<Data Name(\\)?='SubjectLogonId'>({logon_id}[^<]+)</Data>""",
+    """({event_name}Special privileges assigned to new logon)""",
+    """<Data Name(\\)?='PrivilegeList'>({privileges}[^<]+)</Data>""",
+    """<Data Name(\\)?='SubjectUserSid'>({user_sid}[^<\\]+)</Data>"""
   ]
   DupFields = [ "host->dest_host" ]
 }
