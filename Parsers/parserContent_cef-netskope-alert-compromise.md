@@ -18,8 +18,12 @@ Name = cef-netskope-alert-compromise
     """"hostname":"({src_host}[^"]+)""",
     """security-threat-detected\|({alert_severity}\d+)""",
     """"alert_name":"({additional_info}[^"]+)""",
-    """"type":"({alert_type}[^"]+)"""
-	
+    """"type":"({alert_type}[^"]+)""",
+    """"from_user":"({sender}[^",]+)"""",
+    """"to_user":"({recipients}({recipient}[^"\s@;,]+@({external_domain}[^"\s@,]+))[^"]*)"""",
+    """"url":\s*"(?!\w+:\/+)({file_path}(({file_parent}[^",]*?)[\/]+)?({file_name}[^"\/,]+?(\.({file_ext}[^"\/,\.]+))?)?)\s*"""",
+    """"sha256":"({sha256}[^",]+)"""",
+    """"site":"({app}[^",]+)""""
   ]
 }
 ```
