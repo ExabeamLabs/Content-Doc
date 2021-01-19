@@ -23,8 +23,14 @@ Name = cef-netskope-alert-malsite
     """"severity_level":"({alert_severity}[^"]+)""",
     """"hostname":"({src_host}[^"]+)""",
     """"referer":"({referrer}[^"]+)""",
-    """"url":"[^"]+?({top_domain}[^\/\.\s]+(?i)(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)"""
+    """"url":"[^"]+?({top_domain}[^\/\.\s]+(?i)(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)""",
     """"browser":"({process}[^"]+)"""",  
+    """"from_user":"({sender}[^",]+)"""",
+    """"to_user":"({recipients}({recipient}[^"\s@;,]+@({external_domain}[^"\s@,]+))[^"]*)"""",
+    """"url":\s*"(?!\w+:\/+)({file_path}(({file_parent}[^",]*?)[\/]+)?({file_name}[^"\/,]+?(\.({file_ext}[^"\/,\.]+))?)?)\s*"""",
+    """"sha256":"({sha256}[^",]+)"""",
+    """"site":"({app}[^",]+)"""",
+    """"_id":"({alert_id}[^"]+)"""
   ]
   DupFields = ["top_domain->additional_info", "alert_type->threat_category"]
 }
