@@ -3,7 +3,7 @@
 # Exabeam Content Library
 Welcome to the Exabeam Content Library.
 
-The Content Library is an online repository of knowledge and content that organizations can use to deploy new use cases. The initial release allows customers to quickly map data sources to security use cases and to download the necessary parsers.
+The Content Library is an online repository of knowledge and content that organizations can use to learn about available log source integrations and security use cases.
 
 This is a programmatic generation of content documentation from Exabeam's content repository. As new content is committed to the content repository, the Content Library is automatically updated to provide fast and easy access.
 
