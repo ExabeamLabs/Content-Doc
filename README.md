@@ -1,10 +1,9 @@
-
 ![Exabeam](banner.png)
 
 # Exabeam Content Library
 Welcome to the Exabeam Content Library.
 
-The Content Library is an online repository of knowledge and content that organizations can use to deploy new use cases. The initial release allows customers to quickly map data sources to security use cases and to download the necessary parsers.
+The Content Library is an online repository of knowledge and content that organizations can use to learn about available log source integrations and security use cases.
 
 This is a programmatic generation of content documentation from Exabeam's content repository. As new content is committed to the content repository, the Content Library is automatically updated to provide fast and easy access.
 
@@ -34,10 +33,11 @@ The Content Library provides navigation from an Exabeam supported data source to
 
 The Content Library currently allows browsing Exabeam content branches: 
  - Content "master" branch: The master repository of all the latest content developed by the Exabeam content team
+ - Content "c2006.4" branch: The content repository shipped with the latest version of Advanced Analytics i54
  - Content "c2002" branch: The content repository shipped with the latest version of Advanced Analytics i53.7
  - Content "c1907" branch: The content repository shipped with the latest version of Advanced Analytics i52.7
 
-Browse the c2002 branch to see the documentation for the content that is available in the product today (Advanced Analytics i53.7) or browse the master repository for a peek into what is coming next ("canary" content). Note that the content in the master may not be QA'd as of yet and should be used carefully. 
+Browse the specific branches to see the documentation for the content that is available in the product today or browse the master repository for a peek into what is coming next ("canary" content). Note that the content in the master may not be fully tested as of yet and should be used carefully. 
 
 ## How can it help me?
 The Content Library helps answer some of the most frequently asked questions regarding Exabeam's rich security content:
