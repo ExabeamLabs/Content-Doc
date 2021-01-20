@@ -7,8 +7,8 @@ The Content Library is an online repository of knowledge and content that organi
 
 This is a programmatic generation of content documentation from Exabeam's content repository. As new content is committed to the content repository, the Content Library is automatically updated to provide fast and easy access.
 
-### [Content "c2002" branch - shipped with Advanced Analytics i54]
-- [Exabeam supported use cases](https://github.com/ExabeamLabs/Content-Doc/tree/c2006.4/CDS_Tool_Output/Exabeam%20Use%20Cases.md)
+### [Content "c2006.4" branch - shipped with Advanced Analytics i54]
+- [Exabeam supported use cases](https://github.com/ExabeamLabs/Content-Doc/tree/c2006.4/Exabeam%20Use%20Cases.md)
   - Navigating from Exabeam use case to data source
-- [Exabeam supported data sources](https://github.com/ExabeamLabs/Content-Doc/tree/c2006.4/CDS_Tool_Output/Exabeam%20Data%20Sources.md)
+- [Exabeam supported data sources](https://github.com/ExabeamLabs/Content-Doc/tree/c2006.4/Exabeam%20Data%20Sources.md)
   - Navigating from data source to use case
