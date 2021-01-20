@@ -3,7 +3,7 @@
 {
 Name = cloudflare-app-activity
   Vendor = Cloudflare
-  Product = Cloudflare Insights
+  Product = Cloudflare
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

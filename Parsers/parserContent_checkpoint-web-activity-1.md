@@ -2,7 +2,7 @@
 ```Java
 {
 Name = checkpoint-web-activity-1
-  Vendor = Check Point Software
+  Vendor = Check Point
   Product = Check Point NGFW
   Lms = Direct
   TimeFormat = "epoch"

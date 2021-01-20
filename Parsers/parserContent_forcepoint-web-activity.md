@@ -2,7 +2,6 @@
 ```Java
 {
 Name = forcepoint-web-activity
-  Product = Websense Secure Gateway
   DataType = "web-activity"
   Conditions = [ """CEF:""", """|FORCEPOINT|""", """|HTTP_URL-Logged|""" ]
   Fields = ${ForcepointParserTemplates.forcepoint-template.Fields} [

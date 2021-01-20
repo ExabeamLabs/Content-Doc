@@ -2,8 +2,8 @@
 ```Java
 {
 Name = ad-audit-4768
-  Vendor = Microsoft
-  Product = Microsoft Windows
+  Vendor = AD Audit
+  Product = AD Audit
   Lms = Direct
   DataType = "windows-4768"
   TimeFormat = "epoch_sec"
@@ -21,9 +21,6 @@ Name = ad-audit-4768
     """USER_SID\s*=\s*\%?\{?({user_sid}[^\}\s\]]+)""",
     """ERROR_CODE\s*=\s*({result_code}[^\s]+)""",
     """EVENT_TYPE_TEXT\s*=\s*({outcome}.+?)\s*\]""",
-    """LOGON_SERVICE\s*=\s*(null|-|({service_name}[^\s\]]+))""",
-    """TICKET_OPTIONS\s*=\s*(null|-|({ticket_options}[^\s\]]+))""",
-    """TICKET_ENCRYPTION_TYPE\s*=\s*(null|-|({ticket_encryption_type}[^\s\]]+))""",
   ]
 }
 ```

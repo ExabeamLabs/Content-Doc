@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-shibboleth-sso
-    Vendor = Shibboleth
+    Vendor = Shibboleth SSO
   Product = Shibboleth SSO
     Lms = Splunk
     DataType = "app-login"

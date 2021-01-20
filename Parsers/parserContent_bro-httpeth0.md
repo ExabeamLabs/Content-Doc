@@ -2,8 +2,8 @@
 ```Java
 {
 Name = bro-httpeth0
-  Vendor = Zeek
-  Product = Zeek Network Security Monitor
+  Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "web-activity"
   TimeFormat = "epoch_sec"

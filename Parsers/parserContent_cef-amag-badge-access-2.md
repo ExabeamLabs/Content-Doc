@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-amag-badge-access-2
-  Product = Symmetry Access Control
+  Product = AMAG
     Conditions = [ """badge '""", """', u'Floor Access', u'""" ]
   }
 ```

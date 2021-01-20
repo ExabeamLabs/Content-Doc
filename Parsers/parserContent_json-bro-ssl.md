@@ -2,8 +2,8 @@
 ```Java
 {
 Name = json-bro-ssl
-  Vendor = Zeek
-  Product = Zeek Network Security Monitor
+  Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "authentication-successful"
   IsHVF = true

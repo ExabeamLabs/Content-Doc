@@ -2,7 +2,7 @@
 ```Java
 {
 Name = raw-checkpoint-firewall-allow
-  Vendor = Check Point Software
+  Vendor = Check Point
   Product = Check Point NGFW
   Lms = Direct
   TimeFormat = "epoch_sec"

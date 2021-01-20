@@ -2,8 +2,8 @@
 ```Java
 {
 Name = s-azura-pri-auth-successful
-  Vendor = Microsoft
-  Product = Microsoft Azure MFA
+  Vendor = Azura
+  Product = Multi Factor Auth
   Lms = Splunk
   DataType = "authentication-successful"
   TimeFormat = "epoch"

@@ -2,8 +2,8 @@
 ```Java
 {
 Name = confer-alert
-  Vendor = VMware
-  Product = VMware Carbon Black Cloud Endpoint Standard
+  Vendor = Carbon Black
+  Product = Cb Defense
   Lms = Splunk
   DataType = "alert"
   TimeFormat = "epoch"
@@ -11,7 +11,7 @@ Name = confer-alert
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
     """eventTime"+:\s*({time}\d+)""",
-    """email"+:\s*"+(({user_email}[^@"]+@[^"]+)|((({domain}[^\\"]+)\\+)?({user}[^"]+)))"""",
+    """email"+:\s*"+(({domain}[^\\"]+)\\+)?({user}[^"]+)"""",
     """deviceName"+:\s*"+([^\\"]+\\+)?({src_host}[^"]+)"""",
     """ruleName"+:\s*"+(Confer - )?({alert_name}[^"]+)"""",
     """type"+:\s*"+({alert_type}[^"]+)"""",

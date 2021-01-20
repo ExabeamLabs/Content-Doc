@@ -2,8 +2,8 @@
 ```Java
 {
 Name = q-prowatch-badge-access
-    Vendor = Honeywell
-  Product = Honeywell Pro-Watch
+    Vendor = ProWatch
+  Product = ProWatch
     Lms = QRadar
     DataType = "physical-access"
     TimeFormat =  "yyyy-MM-dd H:mm:ss"

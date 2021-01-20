@@ -17,7 +17,7 @@ Name = sophos-leef-epp-virus-alert
           """ReportingName=({alert_type}.+?)\s+(\w+=|$)""",
           """ComputerName=({src_host}.+?)\s+(\w+=|$)""",
           """src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-          """ActionName=({outcome}.*?)\s+\w+=""", 
+          """ActionName=({outcome}.*?)\s\w+=""", 
   ]
 }
 ```

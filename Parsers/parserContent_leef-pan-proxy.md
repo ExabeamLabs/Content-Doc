@@ -7,10 +7,10 @@ Name = leef-pan-proxy
   Lms = QRadar
   DataType = "web-activity"
   IsHVF = true
-  TimeFormat = "yyyy-MM-dd HH:mm:ss"
+  TimeFormat = "yyyy/MM/dd HH:mm:ss"
   Conditions = [ """LEEF:""", """|Palo Alto Networks|PAN-OS Syslog Integration|""", """|cat=THREAT|""", """ubtype=url|""" ]
   Fields = [
-    """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
+    """exabeam_time=({time}\d+)""",
     """\|\s*ReceiveTime=({time}\d\d\d\d\/\d\d\/\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=(.+?@\s*)?({host}[^\s]+)""",
     """({host}[\w\.-]+)\s+LEEF:""",

@@ -3,7 +3,7 @@
 {
 Name = elk-cisco-wsa-web-activity
   Vendor = Cisco
-  Product = Cisco Secure Web Appliance
+  Product = Cisco Web Security Appliance
   Lms = Direct
   DataType = "web-activity"
   IsHVF = true
@@ -18,7 +18,6 @@ Name = elk-cisco-wsa-web-activity
     """\d{10}\.\d{3}\s+([^\s]+\s){5}(?:-|({full_url}(({protocol}[^:]+):\/+)?[^\s:\/]+(:({dest_port}\d+))?\/(?:-|({uri_path}[^?\s]+))?({uri_query}\?[^\s]+)?))""",
     """\d{10}\.\d{3}\s+([^\s]+\s){6}"*(?:-|(({domain}[^\\]+)\\+)?({user}[^@"\s]+))""",
     """\d{10}\.\d{3}\s+([^\s]+\s){5}(\w+:\/+)?({web_domain}(?:({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|[^\s\/:]+))""",
-    """\d{10}\.\d{3}\s+([^\s]+\s){5}(?:-|({full_url}(({protocol}[^:]+):\/+)?[^\s:\/]+(:({dest_port}\d+))?\/(?:-|({uri_path}[^?\s]+))?({uri_query}\?[^\s]+)?))""",
     """\d{10}\.\d{3}\s+([^\s]+\s){9}(?:-|({action}[^\s-]+))""",
     """\d{10}\.\d{3}\s+([^\s]+\s){8}(?:["-]+|({mime}[^\s]+))""",
     """\Wdst\s*({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",

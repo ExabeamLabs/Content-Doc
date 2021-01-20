@@ -32,6 +32,5 @@ Name = cef-sentinelone-security-alert
     """\WsourceMacAddress=({src_mac_address}[^\|]+?)((\||\s+)\w+=|\s*$)""",
     """threatClassification=({alert_type}[^\|]+)""", 
   ]
-  DupFields = ["file_name->process_name", "file_path->process"]
 }
 ```

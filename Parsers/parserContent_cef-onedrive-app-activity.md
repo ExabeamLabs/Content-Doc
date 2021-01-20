@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-onedrive-app-activity
-    Vendor = Microsoft
-    Product = Microsoft OneDrive
+    Vendor = OneDrive
+    Product = OneDrive
     Lms = ArcSight
     DataType = "app-activity"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

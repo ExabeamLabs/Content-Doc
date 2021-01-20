@@ -3,7 +3,7 @@
 {
 Name = sysmon-process-network
   Vendor = Microsoft
-  Product = Microsoft Sysmon
+  Product = Sysmon
   Lms = Splunk
   DataType = "process-network"
   IsHVF = true
@@ -12,7 +12,6 @@ Name = sysmon-process-network
   Fields = [ 
     """UtcTime:\s*({time}\d\d\d\d\-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)""",
     """\sComputer(?:Name)?\s*=\s*"?({host}[^\s"]+)""",
-    """Computer>({host}[^<]+)<\/Computer""",
     """Message\s*=\s*"?({activity_type}[^:]+)""",
     """Task=({activity}.+?)\s+(\w+=|$)""",
     """User=({user}.+?)\s+(\w+=|$)""",

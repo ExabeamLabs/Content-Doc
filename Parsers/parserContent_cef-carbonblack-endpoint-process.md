@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-carbonblack-endpoint-process
-  Vendor = VMware
-  Product = VMware Carbon Black EDR
+  Vendor = Carbon Black
+  Product = Cb Response
   Lms = Direct
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   DataType = "process-created"

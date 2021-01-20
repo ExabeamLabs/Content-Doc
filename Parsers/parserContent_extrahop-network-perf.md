@@ -3,7 +3,7 @@
 {
 Name = extrahop-network-perf
   Vendor = Extrahop
-  Product = Reveal(x)
+  Product = Extrahop
   Lms = Direct
   DataType = "network-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS-SS:SS"

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = q-physical-badge-access
-    Vendor = Datawatch Systems
+    Vendor = DataWatch
   Product = DataWatch
     Lms = QRadar
     DataType = "physical-access"

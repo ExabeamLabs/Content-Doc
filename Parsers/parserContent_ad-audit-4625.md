@@ -2,10 +2,10 @@
 ```Java
 {
 Name = ad-audit-4625
-  Vendor = Microsoft
-  Product = Microsoft Windows
+  Vendor = AD Audit
+  Product = AD Audit
   Lms = Direct
-  DataType = "failed-logon"
+  DataType = "windows-failed-logon"
   TimeFormat = "epoch_sec"
   Conditions = [ """ADAuditPlus""", """EVENT_NUMBER = 4625""" ]
   Fields = [

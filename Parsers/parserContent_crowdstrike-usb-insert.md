@@ -10,6 +10,7 @@ Name = crowdstrike-usb-insert
     Conditions = [ """"event_simpleName":"RemovableMediaVolumeMounted""""]
     Fields = [
       """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
+      """({host}[\w\-.]+)\s+Skyformation""",
       """"+aip"+:"+({host}[^"]+)"+,"""
       """"timestamp":"({time}\d+)""",
       """"event_simpleName":"({event_code}[^"]+)""",

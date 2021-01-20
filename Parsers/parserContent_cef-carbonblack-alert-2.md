@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-carbonblack-alert-2
-  Vendor = VMware
-  Product = VMware Carbon Black EDR
+  Vendor = Carbon Black
+  Product = Cb Response
   Lms = ArcSight
   DataType = "alert"
   TimeFormat = "epoch"

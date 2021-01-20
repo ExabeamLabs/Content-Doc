@@ -3,7 +3,7 @@
 {
 Name = cef-sysmon-process-network
   Vendor = Microsoft
-  Product = Microsoft Sysmon
+  Product = Sysmon
   Lms = ArcSight
   DataType = "process-network"
   IsHVF = true

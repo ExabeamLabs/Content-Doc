@@ -3,7 +3,7 @@
 {
 Name = o365-activity-3
   Vendor = Microsoft
-  Product = Microsoft Office 365
+  Product = Office 365
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -32,7 +32,6 @@ Name = o365-activity-3
     """UserAgent"*:\s*"*({user_agent}[^"]+)""",
     """DatasetName"*:\s*"*({data_set_name}[^"]+)""",
     """Workload"*:\s*"*({resource}[^"]+)"*""",
-    """"IsSuccess":({outcome}[^\s,]+)"""
   ]
 }
 ```

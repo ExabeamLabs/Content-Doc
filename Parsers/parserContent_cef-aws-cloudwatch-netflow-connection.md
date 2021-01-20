@@ -2,14 +2,14 @@
 ```Java
 {
 Name = cef-aws-cloudwatch-netflow-connection
-  Vendor = AWS
+  Vendor = AWS CloudWatch
   Product = AWS CloudWatch
   Lms = ArcSight
   DataType = "netflow-connection"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """CEF:""", """destinationServiceName=AWS""", """dproc=CloudWatch""" ]
   Fields = [
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z) [\w.\-]+ Skyformation""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z) ({host}[\w.\-]+) Skyformation""",
     """\Wcat=(|({category}.+?))(\s+\w+=|\s*$)""",
     """\Wcn2=({bytes}\d+)""",
     """\WdestinationServiceName=(|({service}.+?))(\s+\w+=|\s*$)""",

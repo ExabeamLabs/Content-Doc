@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-proofpoint-email-in
-    Vendor = Proofpoint
+    Vendor = Proofpoint TAP
     Product = Proofpoint TAP
     Lms = ArcSight
     DataType = "dlp-email-alert"

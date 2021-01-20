@@ -3,7 +3,7 @@
 {
 Name = vmware-ssh-login
   Vendor = VMware
-  Product = VMware ESX
+  Product = VMware ESX 
   Lms = QRadar
   DataType = "ssh-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

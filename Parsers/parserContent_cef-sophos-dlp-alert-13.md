@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-sophos-dlp-alert-13
-  Vendor = Sophos
+  Vendor = Sophos EPP
   Product = Sophos Endpoint Protection
   Lms = ArcSight
   DataType = "dlp-alert"
@@ -11,6 +11,7 @@ Name = cef-sophos-dlp-alert-13
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
     """"location":"({host}[\w\-.]+)"""",
+    """({host}[\w\-.]+)\s+Skyformation""",
     """"when":"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     """"type":"({alert_type}Event[^"]+)""",
     """"severity":"({alert_severity}[^"]+)""",

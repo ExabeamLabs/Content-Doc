@@ -3,7 +3,7 @@
 {
 Name = f5-vpn-login-failed
   Vendor = F5
-  Product = F5 BIG-IP
+  Product = Big-IP
   Lms = Direct
   DataType = "vpn-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

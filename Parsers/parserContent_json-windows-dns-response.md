@@ -13,5 +13,6 @@ Name = json-windows-dns-response
     """hostname":"({host}[^"]+)""",
     """message":"({time}\d+\/\d+\/\d\d\d\d \d+:\d+:\d+ (am|AM|pm|PM)) ({thread_id}\S+)\s+(\S+\s+){2}({protocol}\S+)\s+({activity}\S+)\s+(::1|({dest_ip}\S+))\s+({query_id}\S+)\s+R \S+ \[\S+\s+(|({query_flags}.+?))\s+({dns_response_code}\S+)\]\s+({query_type}\S+)\s+({query}[^\s"\n]+?)(\\n)?""""
   ]
+  DupFields = ["dest_ip->dest_host"]
 }
 ```

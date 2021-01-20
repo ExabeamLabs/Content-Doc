@@ -3,7 +3,7 @@
 {
 Name = leef-epic-app-activity
   Vendor = Epic
-  Product = Epic SIEM
+  Product = Epic
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "MMM dd yyyy HH:mm:ss"

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-ironport-dlp-email-alert
-    Vendor = Cisco
+    Vendor = IronPort Email
   Product = IronPort Email
     Lms = Splunk
     DataType = "dlp-email-alert"

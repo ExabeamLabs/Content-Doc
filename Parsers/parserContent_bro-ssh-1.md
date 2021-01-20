@@ -2,8 +2,8 @@
 ```Java
 {
 Name = bro-ssh-1
-  Vendor = Zeek
-  Product = Zeek Network Security Monitor
+  Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "ssh-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"

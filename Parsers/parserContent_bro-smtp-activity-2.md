@@ -2,7 +2,7 @@
 ```Java
 {
 Name = bro-smtp-activity-2
-  Product = Zeek Network Security Monitor
+  Product = Bro
   DataType = "dlp-email-alert"
   Conditions = [ """protocol""", """"smtp"""", """zeek""", """type""" ]
   Fields = ${BroParserTemplates.bro-activity-1.Fields}[

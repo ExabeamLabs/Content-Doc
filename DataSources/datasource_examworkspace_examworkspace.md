@@ -2,13 +2,13 @@ Vendor: ExamWorkspace
 =====================
 Product: ExamWorkspace
 ----------------------
-|                                 Use-Case                                  | Activity Types                                | Event Types/Parsers                                                                                      | MITRE TTP                                                          | Content                   |
-|:-------------------------------------------------------------------------:| --------------------------------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------------- |
-| [Compromised Credentials](../UseCases/usecase_compromised_credentials.md) | - Critical System Activity<br>- File Activity |  file-read<br> -- [s-examworkspace-file-read](../Parsers/parserContent_s-examworkspace-file-read.md)<br> | T1078 - Valid Accounts<br>T1083 - File and Directory Discovery<br> |  - 3 Rules<br> - 2 Models |
-|       [Data Exfiltration](../UseCases/usecase_data_exfiltration.md)       | - File Activity                               |  file-read<br> -- [s-examworkspace-file-read](../Parsers/parserContent_s-examworkspace-file-read.md)<br> | T1083 - File and Directory Discovery<br>                           |  - 3 Rules<br> - 3 Models |
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   0   |   0    |     0      |      1      |    1    |
+
+|  Use-Case  | Activity Types | Event Types/Parsers                                                                                     | MITRE TTP | Content |
+|:----------:| -------------- | ------------------------------------------------------------------------------------------------------- | --------- | ------- |
+| Enrichment | <ul></li></ul> |  file-read<br> ↳ [s-examworkspace-file-read](../Parsers/parserContent_s-examworkspace-file-read.md)<br> |           |         |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
-| Initial Access                                                      | Execution | Persistence                                                         | Privilage escalation                                                | Defense evasion                                                     | Credential Access | Discovery                                                                         | Lateral Movement | Collection | Command and Control | Exfiltration | Impact |
-| ------------------------------------------------------------------- | --------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------------------------------------------------------------------------------- | ---------------- | ---------- | ------------------- | ------------ | ------ |
-| [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |           | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   | [File and Directory Discovery](https://attack.mitre.org/techniques/T1083)<br><br> |                  |            |                     |              |        |

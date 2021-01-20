@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-kaspersky-security-alert-1
-  Vendor = Kaspersky
+  Vendor = Kaspersky Lab
   Product = Kaspersky Endpoint Security for Business
   Lms = Splunk
   DataType = "security-alert"

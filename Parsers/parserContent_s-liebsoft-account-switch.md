@@ -2,8 +2,8 @@
 ```Java
 {
 Name = s-liebsoft-account-switch
-    Vendor = BeyondTrust
-    Product = BeyondTrust
+    Vendor = Liebsoft
+    Product = Liebsoft
     Lms = Splunk
     DataType = "account-switch"
     TimeFormat = "yyyy-dd-MM'T'HH:mm:ss"
@@ -13,7 +13,7 @@ Name = s-liebsoft-account-switch
         """dtPostTime="({time}\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})""",
         """sEventID="({event_code}[^"]+)""",
         """sIpAddress="({src_ip}[a-fA-F\d.:]+)""",
-        """sLoginName="(({domain}[^"\\]+)\\+)?({user}[^"]+)""",
+        """sLoginName="(({domain}[^"]+)\\)?({user}[^"]+)""",
         """key="sNamespace"\s+value="({safe_value}[^"]+)""",
         """key="sSystemName"\s+value="({dest_service}[^"]+)""",
         """key="sAccountName"\s+value="({account}[^"]+)""",

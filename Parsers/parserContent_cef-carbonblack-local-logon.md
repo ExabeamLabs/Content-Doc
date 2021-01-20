@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-carbonblack-local-logon
-  Vendor = VMware
-  Product = VMware Carbon Black App Control
+  Vendor = Carbon Black
+  Product = Cb Protection
   Lms = ArcSight
   DataType = "local-logon"
   TimeFormat = "epoch"

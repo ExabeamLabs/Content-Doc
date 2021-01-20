@@ -10,6 +10,7 @@ Name = zoom-meeting-participant-joined
   Conditions = [ """|Skyformation|""", """"event":"meeting.participant""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
+    """\d+-\d+-\d+T\d+:\d+:\d+\.\d+\w ({host}[\w\-.]+) Skyformation""",
     """\WdestinationServiceName=({app}.+?)(\s+\w+=|\s*$)""",
     """"join_time"\s*:\s*({time}\d+-\d+-\d+T\d+:\d+:\d+Z)"""",
     """"event"\s*:\s*"meeting.({activity}[^"]+)"""",

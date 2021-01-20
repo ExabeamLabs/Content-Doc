@@ -2,8 +2,8 @@
 ```Java
 {
 Name = json-bro-email-in
-  Vendor = Zeek
-  Product = Zeek Network Security Monitor
+  Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "dlp-email-alert"
   TimeFormat = "epoch"

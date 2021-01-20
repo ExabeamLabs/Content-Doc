@@ -3,7 +3,7 @@
 {
 Name = okta-app-login-1
   Vendor = Okta
-  Product = Okta Adaptive MFA
+  Product = Okta Adaptive Multi-Factor Authentication
   Lms = Direct
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

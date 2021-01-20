@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-xml-4656-netapp
-   Vendor = Microsoft
+   Vendor = Microsoft Windows
    Product = NetApp
    Lms = Splunk
    DataType = "file-operations"

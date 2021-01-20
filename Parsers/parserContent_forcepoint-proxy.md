@@ -3,7 +3,7 @@
 {
 Name = forcepoint-proxy
     Vendor = Forcepoint
-    Product = Websense Secure Gateway
+    Product = Forcepoint Web Security
     Lms = QRadar
     DataType = "web-activity"
     IsHVF = true

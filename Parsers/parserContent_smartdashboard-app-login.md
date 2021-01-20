@@ -2,7 +2,7 @@
 ```Java
 {
 Name = smartdashboard-app-login
-  Vendor = Check Point Software
+  Vendor = Check Point
   Product = Check Point NGFW
   Lms = Direct
   DataType = "app-login"

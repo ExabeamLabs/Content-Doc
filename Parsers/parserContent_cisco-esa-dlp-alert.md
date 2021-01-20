@@ -3,7 +3,7 @@
 {
 Name = cisco-esa-dlp-alert
   Vendor = Cisco
-  Product = Cisco Secure Email
+  Product = Cisco Email Security Appliance
   Lms = Direct
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

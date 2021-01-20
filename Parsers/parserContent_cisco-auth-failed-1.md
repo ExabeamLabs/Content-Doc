@@ -3,7 +3,7 @@
 {
 Name = cisco-auth-failed-1
   Vendor = Cisco
-  Product = Cisco Call Manager
+  Product = Cisco
   Lms = Direct
   DataType = "authentication-failed"
   TimeFormat = "MMM dd yyyy HH:mm:ss a"

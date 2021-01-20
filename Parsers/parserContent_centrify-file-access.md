@@ -3,7 +3,7 @@
 {
 Name = centrify-file-access
   Vendor = Centrify
-  Product = Centrify Audit and Monitoring Service
+  Product = Centrify
   Lms = Direct
   DataType = "file-operations"
   TimeFormat = "epoch"

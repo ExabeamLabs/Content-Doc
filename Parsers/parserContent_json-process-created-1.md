@@ -3,7 +3,7 @@
 {
 Name = json-process-created-1
     Vendor = Microsoft
-    Product = Microsoft Windows
+    Product = Windows
     Lms = Direct
     DataType = "windows-process-created"
     IsHVF = true

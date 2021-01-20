@@ -2,8 +2,8 @@
 ```Java
 {
 Name = honeywell-physical-badge-access
-  Vendor = Honeywell
-  Product = Honeywell Pro-Watch
+  Vendor = Honeywell 
+  Product = PROWATCH
   Lms = Direct
   DataType = "physical-access"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

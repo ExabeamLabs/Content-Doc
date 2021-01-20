@@ -7,11 +7,10 @@ Name = websense-proxy-1
     Lms = Direct
     DataType = "web-activity"
     IsHVF = true
-    TimeFormat = "yyyy-MM-dd HH:mm:ss"
+    TimeFormat = "epoch"
     Conditions = [ """|Websense|Security|""","""|transaction:""","""srcBytes=""" ]
     Fields = [
       """exabeam_endTime=({time}\d+)""",
-      """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
       """\d{1,2}:\d{1,2}:\d{1,2}\s+({host}[^\s]+)\s*LEEF:""",
       """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",

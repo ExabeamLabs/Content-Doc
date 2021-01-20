@@ -2,8 +2,8 @@
 ```Java
 {
 Name = bitglass-dlp-email-alert-out
-  Vendor = Bitglass
-  Product = Bitglass CASB
+  Vendor = BitGlass
+  Product = BitGlass
   Lms = Direct
   DataType = "dlp-email-alert"
   TimeFormat = "dd MMM yyyy HH:mm:ss"

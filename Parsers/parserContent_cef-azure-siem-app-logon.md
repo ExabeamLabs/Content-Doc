@@ -3,7 +3,7 @@
 {
 Name = cef-azure-siem-app-logon
   Vendor = Microsoft
-  Product = Microsoft Cloud App Security (MCAS)
+  Product = Microsoft CAS
   Lms = Splunk
   DataType = "app-login"
   TimeFormat = "epoch"

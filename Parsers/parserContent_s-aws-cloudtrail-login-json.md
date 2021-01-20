@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-aws-cloudtrail-login-json
-  Vendor = AWS
+  Vendor = AWS CloudTrail
   Product = AWS CloudTrail
   Lms = Splunk
   DataType = "app-login"
@@ -20,7 +20,6 @@ Name = s-aws-cloudtrail-login-json
     """"eventType"+\s*:\s*"({app}[^"]+)""""
     """"userAgent"+\s*:\s*"({user_agent}[^"]+)"""",
     """"recipientAccountId"+\s*:\s*"({object}[^"]+)""""
-    """"awsRegion":"({region}[^"]+)"""",
   ]
 }
 ```

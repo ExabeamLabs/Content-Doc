@@ -3,7 +3,7 @@
 {
 Name = cef-epic-auth-successful
   Vendor = Epic
-  Product = Epic SIEM
+  Product = Epic
   Lms = ArcSight
   DataType = "authentication-successful"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

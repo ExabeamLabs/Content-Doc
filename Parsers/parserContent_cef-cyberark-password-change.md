@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-cyberark-password-change
-  Vendor = CyberArk
+  Vendor = CyberArk Vault
   Product = CyberArk Vault
   Lms = Splunk
   DataType = "password-change"

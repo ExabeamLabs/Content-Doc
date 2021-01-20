@@ -3,7 +3,7 @@
 {
 Name = cef-epic-failed-app-login
   Vendor = Epic
-  Product = Epic SIEM
+  Product = Epic
   Lms = ArcSight
   DataType = "failed-app-login"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

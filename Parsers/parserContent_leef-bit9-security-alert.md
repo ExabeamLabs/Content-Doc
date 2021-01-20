@@ -2,8 +2,8 @@
 ```Java
 {
 Name = leef-bit9-security-alert
-  Vendor = VMware
-  Product = VMware Carbon Black App Control
+  Vendor = Carbon Black
+  Product = Cb Protection
   Lms = QRadar
   DataType = "alert"
   TimeFormat = "MMM dd yyyy HH:mm:ss.SSS"

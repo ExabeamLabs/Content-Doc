@@ -2,7 +2,7 @@
 ```Java
 {
 Name = connectra-failed-vpn-login
-  Vendor = Check Point Software
+  Vendor = Check Point
   Product = Check Point Security Gateway
   Lms = Direct
   DataType = "failed-vpn-login"

@@ -3,7 +3,7 @@
 {
 Name = f5-network-alert-1
   Vendor = F5
-  Product = F5 Advanced Web Application Firewall (WAF)
+  Product = WAF F5
   Lms = Direct
   DataType = "network-alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

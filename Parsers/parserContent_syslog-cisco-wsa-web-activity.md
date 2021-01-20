@@ -3,7 +3,7 @@
 {
 Name = syslog-cisco-wsa-web-activity
   Vendor = Cisco
-  Product = Cisco Secure Web Appliance
+  Product = Cisco Web Security Appliance
   Lms = Direct
   DataType = "web-activity"
   IsHVF = true

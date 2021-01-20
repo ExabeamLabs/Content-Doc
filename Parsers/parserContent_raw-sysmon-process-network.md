@@ -3,7 +3,7 @@
 {
 Name = raw-sysmon-process-network
   Vendor = Microsoft
-  Product = Microsoft Sysmon
+  Product = Sysmon
   Lms = Direct
   DataType = "process-network"
   IsHVF = true

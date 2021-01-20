@@ -18,9 +18,6 @@ Name = cef-4768
       """\sdvchost=({host}[^\s]+)""",
       """\sdntdom=({domain}[^\s]+)""",
       """Service_,ID=({user_sid}[^\s]+)\s""",
-      """\sdestinationServiceName=({service_name}\S+)""",
-      """ncryption_,Type=({ticket_encryption_type}[^\s]+)""",
-      """Ticket_,Options=({ticket_options}[^\s]+)"""
     ]
     DupFields = ["host->dest_host"]
   }

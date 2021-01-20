@@ -3,7 +3,7 @@
 {
 Name = mcafee-siem-4723
     Vendor = Microsoft
-    Product = Microsoft Windows
+    Product = Windows
     Lms = Direct
     DataType = "windows-password-change"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

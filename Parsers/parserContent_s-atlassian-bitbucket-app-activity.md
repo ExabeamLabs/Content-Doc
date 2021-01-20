@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-atlassian-bitbucket-app-activity
-  Vendor = Atlassian
+  Vendor = Atlassian BitBucket
   Product = Atlassian BitBucket
   Lms = Splunk
   DataType = "app-activity"

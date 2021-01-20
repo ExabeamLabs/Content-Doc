@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-microsoft-app-activity-37
-  Product = Microsoft Office 365
+  Product = Office 365
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """dproc=Graph Directory Audit""" ]
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields}[

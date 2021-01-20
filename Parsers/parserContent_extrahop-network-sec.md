@@ -3,7 +3,7 @@
 {
 Name = extrahop-network-sec
   Vendor = Extrahop
-  Product = Reveal(x)
+  Product = Extrahop
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS-SS:SS"

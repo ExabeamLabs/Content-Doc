@@ -3,11 +3,11 @@
 {
 Name = xml-sysmon-process-created
   Vendor = Microsoft
-  Product = Microsoft Sysmon
+  Product = Sysmon
   Lms = Splunk
   DataType = "process-created"
   IsHVF = true
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSSZ"
+  TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
   Conditions = [ """<Provider Name='Microsoft-Windows-Sysmon'""", """<EventID>1</EventID>""", """<Channel>Microsoft-Windows-Sysmon/Operational</Channel>""", """<Data Name=""" ]
   Fields = [
     """<Data Name='UtcTime'>({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)</Data>""",

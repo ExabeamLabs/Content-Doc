@@ -2,7 +2,7 @@
 ```Java
 {
 Name = palo-alto-cortex-xdr-alert
-  Vendor = Palo Alto Networks
+  Vendor = PA Cortex
   Product = Cortex XDR
   Lms = Direct
   DataType = "alert"

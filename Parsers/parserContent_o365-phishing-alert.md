@@ -3,7 +3,7 @@
 {
 Name = o365-phishing-alert
   Vendor = Microsoft
-  Product = Microsoft Office 365
+  Product = Office 365
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -11,8 +11,8 @@ Name = o365-phishing-alert
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
     """CreationTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""",
-    """({alert_type}Phish)""",
-    """DetectionMethod":"({alert_name}[^"]+)"""",
+    """Subject":"\s*({alert_name}[^"]+?)\s*"""",
+    """DetectionMethod":"({alert_type}[^"]+)"""",
     """Recipients":\["({user_email}[^,;@]+@([^;,"]+))""",
     """Id":"({alert_id}[^"]+)"""",
     """requestClientApplication=({process}.+?)\s*(\w+=|$)""",
@@ -22,7 +22,7 @@ Name = o365-phishing-alert
     """UserId":"({additional_info}[^"]+)"""",
     """P2Sender":"({additional_info}[^"]+)"""",
     """"Verdict":"({verdict}[^"]+)""",
-    """Subject":"\s*({additional_info}[^"]+?)\s*"""",
+    
   ]
   DupFields = ["process->process_name"]
 }

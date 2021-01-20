@@ -3,7 +3,7 @@
 {
 Name = json-f5-auth-attempt
   Vendor = F5
-  Product = F5 BIG-IP Access Policy Manager (APM)
+  Product = Big-IP Access Policy Manager (APM)
   Lms = Direct
   DataType = "authentication-attempt"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

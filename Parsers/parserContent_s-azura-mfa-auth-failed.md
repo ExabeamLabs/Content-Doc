@@ -2,8 +2,8 @@
 ```Java
 {
 Name = s-azura-mfa-auth-failed
-  Vendor = Microsoft
-  Product = Microsoft Azure MFA
+  Vendor = Azura
+  Product = Multi Factor Auth
   Lms = Splunk
   DataType = "authentication-failed"
   TimeFormat = "epoch"

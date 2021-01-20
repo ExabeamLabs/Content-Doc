@@ -2,8 +2,8 @@
 ```Java
 {
 Name = s-codegreen-dlp-alert
-  Vendor = Digital Guardian
-  Product = Digital Guardian Network DLP
+  Vendor = Code Green Network (Digital Guardian)
+  Product = TrueDLP
   Lms = Splunk
   DataType = "dlp-alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss z"

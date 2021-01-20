@@ -3,7 +3,7 @@
 {
 Name = sysmon-file-create
   Vendor = Microsoft
-  Product = Microsoft Sysmon
+  Product = Sysmon
   Lms = Splunk
   DataType = "file-operations"
   IsHVF = true

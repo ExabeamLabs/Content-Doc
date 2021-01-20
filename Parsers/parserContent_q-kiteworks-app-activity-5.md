@@ -2,7 +2,7 @@
 ```Java
 {
 Name = q-kiteworks-app-activity-5
-  Product = Kiteworks
+  Product = KiteWorks
   DataType = "app-activity"
   Conditions = [ """Created draft Subject""", """Activity:""" ]
 }

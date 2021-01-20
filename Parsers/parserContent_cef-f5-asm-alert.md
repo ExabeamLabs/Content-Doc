@@ -3,7 +3,7 @@
 {
 Name = cef-f5-asm-alert
   Vendor = F5
-  Product = F5 BIG-IP Application Security Manager (ASM)
+  Product = F5 Application Security Manager
   Lms = ArcSight
   DataType = "alert"
   TimeFormat = "MMM dd yyyy HH:mm:ss"

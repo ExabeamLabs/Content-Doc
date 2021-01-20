@@ -2,13 +2,14 @@
 ```Java
 {
 Name = cef-aws-guardduty
-  Vendor = AWS
+  Vendor = AWS GuardDuty
   Product = AWS GuardDuty
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """dproc=GuardDuty""", """cat=security-alert""" ]
   Fields = [
+    """({host}[\w\-.]+)\s+Skyformation""",
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ).+?CEF""",
     """\ssrc=({src_ip}\S+)""",
     """\sdst=({dest_ip}\S+)""",

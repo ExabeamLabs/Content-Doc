@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cylance-protect-file-alert
-  Vendor = BlackBerry
-  Product = BlackBerry Protect
+  Vendor = Cylance
+  Product = PROTECT
   Lms = Splunk
   DataType = "file-alert"
   IsHVF = true

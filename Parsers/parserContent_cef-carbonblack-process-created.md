@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-carbonblack-process-created
-  Vendor = VMware
-  Product = VMware Carbon Black Cloud Endpoint Standard
+  Vendor = Carbon Black
+  Product = Cb Defense
   Lms = ArcSight
   DataType = "process-created"
   TimeFormat = "epoch"

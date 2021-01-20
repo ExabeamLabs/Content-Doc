@@ -2,7 +2,7 @@
 ```Java
 {
 Name = q-kiteworks-email-out
-  Product = Kiteworks
+  Product = KiteWorks
   Conditions = [ """Activity: Sent e-mail""", """with files""" ]
 }
 ```

@@ -2,8 +2,8 @@
 ```Java
 {
 Name = bro-kerberos
-  Vendor = Zeek
-  Product = Zeek Network Security Monitor
+  Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "remote-access"
   TimeFormat = "epoch_sec"
