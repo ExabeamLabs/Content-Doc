@@ -8,7 +8,6 @@ The Content Library is an online repository of knowledge and content that organi
 
 This is a programmatic generation of content documentation from Exabeam's content repository. As new content is committed to the content repository, the Content Library is automatically updated to provide fast and easy access.
 
-### [Content "master" branch - latest "canary" content available]
 |Branch|Version|Content|
 |--|--|--|
 |master|canary|[Data Sources](Exabeam%20Data%20Sources.md), [Use Cases](Exabeam%20Use%20Cases.md)|
