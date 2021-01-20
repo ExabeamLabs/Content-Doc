@@ -13,6 +13,11 @@ This is a programmatic generation of content documentation from Exabeam's conten
   - Navigating from Exabeam use case to data source
 - [Exabeam supported data sources](Exabeam%20Data%20Sources.md)
   - Navigating from data source to use case
+### [Content "c2006.4" branch - shipped with Advanced Analytics i54]
+- [Exabeam supported use cases](https://github.com/ExabeamLabs/Content-Doc/tree/c2006.4/Exabeam%20Use%20Cases.md)
+  - Navigating from Exabeam use case to data source
+- [Exabeam supported data sources](https://github.com/ExabeamLabs/Content-Doc/tree/c2006.4/Exabeam%20Data%20Sources.md)
+  - Navigating from data source to use case
 ### [Content "c2002" branch - shipped with Advanced Analytics i53]
 - [Exabeam supported use cases](https://github.com/ExabeamLabs/Content-Doc/tree/c2002/Exabeam%20Use%20Cases.md)
   - Navigating from Exabeam use case to data source
