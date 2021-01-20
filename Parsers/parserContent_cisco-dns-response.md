@@ -24,7 +24,6 @@ Name = cisco-dns-response
     """ResponderBytes:\s*({bytes_in}\d+)""",
     """ACPolicy:\s*({policy}[^,]+)""",
     """DNSQuery:\s*({query}[^,]+)""",
-    """DNSQuery:\s*({query}[^,]+\.({top_query}\w+\.(?i)(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za)))""",
     """DNSRecordType:\s*({query_type}.+?)\s\w+[:=.]""",
     """IngressInterface: ({src_interface}[^\s,]+?),""",
     """EgressInterface: ({dest_interface}[^\s,]+?),""",

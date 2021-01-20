@@ -8,10 +8,6 @@ Name = cef-netskope-dlp-alert
     """"policy":"({alert_name}[^"]+)""",
     """"dlp_rule_severity":"({alert_severity}[^"]+)""",
     """"dlp_incident_id":({alert_id}\d+)""",
-    """"from_user":"({sender}[^",]+)"""",
-    """"to_user":"({recipients}({recipient}[^"\s@;,]+@({external_domain}[^"\s@,]+))[^"]*)"""",
-    """"sha256":"({sha256}[^",]+)"""",
-    """"site":"({app}[^",]+)""""
   ]
   DupFields = [ "activity->alert_type", "object->file_name" ]
 }

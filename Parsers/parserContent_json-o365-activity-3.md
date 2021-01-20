@@ -3,7 +3,7 @@
 {
 Name = json-o365-activity-3
   Vendor = Microsoft
-  Product = Microsoft Office 365
+  Product = Office 365
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -16,7 +16,7 @@ Name = json-o365-activity-3
     """"Workload":"({app}[^"]+)"""",
     """"ObjectId":"({object}[^"]+)""",
     """"Id":"({object_id}[^"]+)"""",
-    """"UserKey":"([^@]+@[^"]+|(({domain}[^\\]+)[\\]+({user}[^"]+))|({=user}[^"]+))"""",
+    """"UserKey":"({user}[^"]+)"""",
     """"RecordType":({object_type}[^,]+),""",
     """"ClientIP":"({src_ip}[^"]+)"""",
     """"SourceFileName":"({file_name}[^"]+)"""",

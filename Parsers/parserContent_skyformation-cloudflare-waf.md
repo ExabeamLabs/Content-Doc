@@ -3,14 +3,15 @@
 {
 Name = skyformation-cloudflare-waf
   Vendor = Cloudflare
-  Product = Cloudflare WAF
+  Product = Cloudflare
   Lms = Direct
   DataType = "web-activity"
   IsHVF = true
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """|Skyformation|""", """ResponseStatus"""", """FirewallMatchesActions""", """destinationServiceName=Custom Application""" ]
+  Conditions = [ """|Skyformation|""", """requestClientApplication=AWS S3 Bucket""", """destinationServiceName=Custom Application""" ]
   Fields = [
     """"EdgeStartTimestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
+    """({host}[\w\-.]+)\s+Skyformation""",
     """"ClientDeviceType":"({device_type}[^"]+)""",
     """"ClientCountry":"({src_country}[^"]+)""",
     """"ClientIP":"(?:["]+|({src_ip}[A-Fa-f:\d.]+))""",

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = checkpoint-network-alert-1
-  Vendor = Check Point Software
+  Vendor = Check Point
   Product = Check Point Threat Prevention
   Lms = Direct
   TimeFormat = "epoch_sec"

@@ -3,7 +3,7 @@
 {
 Name = leef-stealthwatch-network-alert
   Vendor = Cisco
-  Product = Cisco Secure Network Analytics
+  Product = Cisco StealthWatch (Lancope)
   Lms = QRadar
   DataType = "network-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

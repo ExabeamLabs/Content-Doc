@@ -2,8 +2,8 @@
 ```Java
 {
 Name = s-cylance-app-activity
-  Vendor = BlackBerry
-  Product = BlackBerry Protect
+  Vendor = Cylance
+  Product = PROTECT
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"

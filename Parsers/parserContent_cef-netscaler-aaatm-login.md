@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-netscaler-aaatm-login
-  Vendor = Citrix
+  Vendor = Netscaler
   Product = Netscaler VPN
   Lms = Direct
   TimeFormat = "epoch"

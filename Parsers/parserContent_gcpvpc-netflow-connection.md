@@ -2,7 +2,7 @@
 ```Java
 {
 Name = gcpvpc-netflow-connection
-  Vendor = Google
+  Vendor = Google Cloud Platform
   Product = Virtual Private Cloud
   Lms = Direct
   DataType = "netflow-connection"

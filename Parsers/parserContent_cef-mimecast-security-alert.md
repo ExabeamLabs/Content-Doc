@@ -3,28 +3,24 @@
 {
 Name = cef-mimecast-security-alert
   Vendor = Mimecast
-  Product = Mimecast Email Security
+  Product = Email Security
   Lms = ArcSight
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """CEF:""", """Mimecast Email Security""", """dproc=Attachment Protection""", """"recipientAddress":"""" ]
+  Conditions = [ """CEF:""", """destinationServiceName=Mimecast Email Security""" ]
   Fields = [
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)\s*({host}[^\s]+)\s*Skyformation""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z) ({host}[\w.\-]+) Skyformation""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
-    """"(?i)Route":"({direction}[^"]+)""",
-    """"(?:id|aCode)":"({alert_id}[^"]+)""",
-    """"(recipientAddress|Recipient)":"({recipient}[^"]+)""",
-    """(senderAddress|Sender)":"(<>|({sender}[^"]+))""",
-    """"(?i)Subject":"({subject}[^"]+?)\s*"""",
-    """"(messageId|MsgId)":"({message_id}[^"]+)""",
-    """"fileName":"({file_name}[^"]+)""",
-    """"fileType":"({file_type}[^"]+)""",
-    """"fileHash":"({md5}[^"]+)""",
-    """"(?:action|actions)":"({outcome}[^"]+)""",
-    """"actionTriggered":"({outcome}[^"]+)""",
-    """"acc":"({user}[^"]+)""",
-    """"SenderDomain":"(<>|({external_domain}[^"]+))"""",
-    """"SourceIP":"({src_ip}[^"]+)""""
+    """\Wext_identifiers_0_=(|({alert_name}.+?))(\s+\w+=|\s*$)""",
+    """\Wext_id=(|({alert_id}.+?))(\s+\w+=|\s*$)""",
+    """\Wext_action=(|({outcome}.+?))(\s+\w+=|\s*$)""",
+    """\Wext_recipientAddress=(|({recipient}.+?))(\s+\w+=|\s*$)""",
+    """\Wext_senderAddress=(|({sender}.+?))(\s+\w+=|\s*$)""",
+    """\Wext_impersonationResults_0__stringSimilarToDomain=(|({additional_info}.+?))(\s+\w+=|\s*$)""",
+    """ext_subject=(|({subject}.+?))\s+ext_""",
+    """ext_fileName=({file_name}.+?)\sext_senderAddress""",
+    """ext_fileType=({file_type}[^=]+?)\sext_date""",
+    """ext_actionTriggered=({outcome}.+?)\sext_details""",
   ]
 }
 ```

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = vmware-horizon-logon
-  Vendor = VMware
+  Vendor = VMware Horizon
   Product = VMware Horizon
   Lms = Direct
   DataType = "remote-logon"

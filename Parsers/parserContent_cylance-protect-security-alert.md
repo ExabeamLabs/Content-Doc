@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cylance-protect-security-alert
-  Vendor = BlackBerry
-  Product = BlackBerry Protect
+  Vendor = Cylance
+  Product = PROTECT
   Lms = Splunk
   DataType = "alert"
   TimeFormat = "M/d/yyyy H:mm:ss a"

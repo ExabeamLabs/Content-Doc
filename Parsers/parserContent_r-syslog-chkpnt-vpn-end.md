@@ -2,7 +2,7 @@
 ```Java
 {
 Name = r-syslog-chkpnt-vpn-end
-  Vendor = Check Point Software
+  Vendor = Check Point
   Product = Check Point Security Gateway
   Lms = Direct
   DataType = "vpn-end"

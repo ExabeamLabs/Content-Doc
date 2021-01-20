@@ -3,7 +3,7 @@
 {
 Name = s-database-login-18454
   Vendor = Microsoft
-  Product = Microsoft SQL Server
+  Product = SQL Server
   Lms = Splunk
   DataType = "database-login"
   IsHVF = true

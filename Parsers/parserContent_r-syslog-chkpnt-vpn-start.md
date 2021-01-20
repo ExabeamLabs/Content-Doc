@@ -2,8 +2,8 @@
 ```Java
 {
 Name = r-syslog-chkpnt-vpn-start
-  Vendor = Check Point Software
-  Product = Check Point Security Gateway
+  Vendor = Check Point
+  Product = Check Point Security Gateway 
   Lms = Direct
   DataType = "vpn-start"
   TimeFormat = "ddMMMyyyy HH:mm:ss"

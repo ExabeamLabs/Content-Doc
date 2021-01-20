@@ -2,8 +2,8 @@
 ```Java
 {
 Name = json-bro-weird
-  Vendor = Zeek
-  Product = Zeek Network Security Monitor
+  Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "network-alert"
   IsHVF = true

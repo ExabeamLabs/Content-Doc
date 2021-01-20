@@ -3,12 +3,13 @@
 {
 Name = cef-bitglass-dlp-alert
   Vendor = Bitglass
-  Product = Bitglass CASB
+  Product = Bitglass
   Lms = ArcSight
   DataType = "dlp-alert"
   TimeFormat = "dd MMM yyyy HH:mm:ss"
   Conditions = [ """CEF:""", """|Skyformation|""", """"action":"Alert"""" ]
   Fields = [
+    """({host}[\w\-.]+)\s+Skyformation""",
     """ext_time=({time}\d+\s+\w+\s+\d+\s+\d+:\d+:\d+)""",
     """ext_patterns=({alert_name}.+?)\s+(\w+=|$)""",
     """ext_status=({alert_type}.+?)\s+(\w+=|$)""",

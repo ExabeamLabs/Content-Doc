@@ -2,7 +2,7 @@
 ```Java
 {
 Name = connectra-auth-failed
-  Vendor = Check Point Software
+  Vendor = Check Point Software Technologies
   Product = Check Point Security Gateway Virtual Edition (vSEC)
   Lms = Direct
   DataType = "authentication-failed"

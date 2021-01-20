@@ -2,8 +2,8 @@
 ```Java
 {
 Name = windows-rdp-login
-  Vendor = Microsoft
-  Product = Microsoft Windows
+  Vendor = Microsoft Windows
+  Product= Windows
   Lms = Splunk
   DataType = "remote-logon"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

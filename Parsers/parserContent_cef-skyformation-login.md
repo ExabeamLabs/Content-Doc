@@ -6,13 +6,12 @@ Name = cef-skyformation-login
   Product = Cloud Application
   Lms = ArcSight
   DataType = "app-login"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
+  TimeFormat = "epoch"
   Conditions = [ """|Skyformation|""", """|login-success|""" ]
   Fields = [
-    """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",   
     """\Wend=({time}\d+)""",
-    """(created_at|eventTime)"+:"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """\d+-\d+-\d+T\d+:\d+:\d+\.\d+\w [\w\-.]+ Skyformation""",
+    """exabeam_host=({host}[^\s]+)""",
+    """\d+-\d+-\d+T\d+:\d+:\d+\.\d+\w ({host}[\w\-.]+) Skyformation""",
     """([^\|]*\|){5}({activity}[^\|]+)""",
     """\WdestinationServiceName=(|({event_subtype}.+?))(\s+\w+=|\s*$)""",
     """\Wdproc=(|({dproc}.+?))(\s+\w+=|\s*$)""",

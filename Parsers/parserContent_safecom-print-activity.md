@@ -2,7 +2,7 @@
 ```Java
 {
 Name = safecom-print-activity
-  Vendor = HP
+  Vendor = HP SafeCom
   Product = HP SafeCom
   Lms = Direct
   DataType = "print-activity"

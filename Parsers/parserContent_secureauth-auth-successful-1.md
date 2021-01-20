@@ -6,11 +6,10 @@ Name = secureauth-auth-successful-1
   Product = SecureAuth Login
   Lms = Direct
   DataType = "authentication-successful"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """EventID="20000"""", """Authentication Success""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """Timestamp="({time}\d+-\d+-\d+T\d+:\d+:\d+.\d+Z)""",
+    """exabeam_raw=.*?({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """\WUserHostAddress="({src_ip}[a-fA-F:\d.]+)""",
     """\WRealm="({realm}[^"]+)""",
     """\WAppliance="({host}[\w\-.]+)""",

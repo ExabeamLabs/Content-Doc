@@ -3,7 +3,7 @@
 {
 Name = stealthwatch-network-alert-2
   Vendor = Cisco
-  Product = Cisco Secure Network Analytics
+  Product = Cisco StealthWatch (Lancope)
   Lms = Direct
   DataType = "network-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

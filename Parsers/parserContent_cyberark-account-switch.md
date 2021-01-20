@@ -2,18 +2,17 @@
 ```Java
 {
 Name = cyberark-account-switch
-  Vendor = CyberArk
+  Vendor = CyberArk Vault
   Product = CyberArk Vault
   Lms = Direct
   DataType = "account-switch"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+  TimeFormat = "epoch"
   Conditions = [  """|Cyber-Ark|Vault|""", """Action=Retrieve password""", """Safe""" ]
   Fields = [
-    """exabeam_endTime=({time}\d+)""",
     """exabeam_host=({host}[\w\-.]+)""",
     """(\d\d:\d\d:\d\d|\d\d\d\d-\d\d-\d\d\w\d\d:\d\d:\d\d\w) ({host}[\w\-.]+) (LEEF|CEF)""",
     """(LEEF|CEF):([^\|]*?\|){4}({event_code}\d+)""",
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
+    """exabeam_endTime=({time}\d+)""",
     """usrName=(({domain}[^\\=]+)(\\)+)?({user}.+?)\s+\w+=""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sFile=({account}.+?)\s+\w+=""",

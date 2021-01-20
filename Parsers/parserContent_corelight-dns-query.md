@@ -2,8 +2,8 @@
 ```Java
 {
 Name = corelight-dns-query
-  Vendor = Zeek
-  Product = Zeek Network Security Monitor
+  Vendor = Bro
+  Product = Bro
   Lms = ArcSight
   DataType = "dns-query"
   IsHVF = true

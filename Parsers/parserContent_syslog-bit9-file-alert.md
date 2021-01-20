@@ -2,8 +2,8 @@
 ```Java
 {
 Name = syslog-bit9-file-alert
-  Vendor = VMware
-  Product = VMware Carbon Black App Control
+  Vendor = Carbon Black
+  Product = Cb Protection
   Lms = Direct
   DataType = "file-alert"
   IsHVF = true

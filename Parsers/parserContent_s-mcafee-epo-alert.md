@@ -9,18 +9,18 @@ Name = s-mcafee-epo-alert
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = [ "_timestamp=", "signature_id", "threat_handled", "is_laptop" ]
     Fields = [
-      """detected_timestamp="*\s*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+      """timestamp="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """exabeam_host=({host}[\w.\-]+)""",
-      """AutoID="*({alert_id}\d+)""",
-      """event_id="*({alert_id}\d+)""",
+      """(AutoID|event_id)="*({alert_id}\d+)""",
       """signature="*\s*(_|({alert_name}.+?))\s*"*,? threat_type""",
       """signature="*\s*(_|({alert_type}.+?))\s*"*,? threat_type""",
       """threat_type="*(\s|none|({alert_type}.+?))"*,? signature_id""",
       """signature_id="*({signature_id}\d+)""",
       """severity_id="*({alert_severity}\d+)""",
       """event_description="*({additional_info}[^"]+)""",
-      """file_name="*(\s|({malware_url}[^"]+))"""",
-      """\slogon_user="*([^\\]+\\+)?({user}.+?)"+""",
+      """file_name="*(\s*|({malware_url}[^"]+?))"""",
+      """\slogon_user.+?user="*(N\/A|\s+|NULL|([^\\]+\\+)?({user}[^\s,"]+))""",
+      """\slogon_user="*([^\\]+\\+)?({user}.+?)"*\s+user=(?=N\/A|\s+|NULL)""",
       """C:\\Users\\({user}[^\\]+)""",
       """, user="+(N\/A|NULL|({user}[^,]+?))(|,.*?)"+,""",
       """dest_nt_host="*({src_host}[^\s"]+)""",

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = prowatch-badge-access-1
-  Product = Honeywell Pro-Watch
+  Product = ProWatch
   Conditions = [ """"BADGENO":""", """"EVNT_DESCRP":""", """"LOCATION":""" ]
 }
 ```

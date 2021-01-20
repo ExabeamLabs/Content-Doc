@@ -3,7 +3,7 @@
 {
 Name = l-sysmon-process-created
   Vendor = Microsoft
-  Product = Microsoft Sysmon
+  Product = Sysmon
   Lms = Direct
   DataType = "process-created"
   IsHVF = true

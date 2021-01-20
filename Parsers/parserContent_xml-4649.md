@@ -2,7 +2,7 @@
 ```Java
 {
 Name = xml-4649
-  Vendor = Microsoft
+  Vendor = Microsoft Windows
   Product = Microsoft Windows
   Lms = Splunk
   DataType = "alert"

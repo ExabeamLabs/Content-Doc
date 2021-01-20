@@ -2,7 +2,7 @@
 ```Java
 {
 Name = bro-network-connection
-  Product = Zeek Network Security Monitor
+  Product = Bro
   DataType = "network-connection"
   Conditions = [ """"id.orig_h""", """"id.resp_h""", """"conn_state""", """"orig_pkts""" ]
   Fields = ${BroParserTemplates.json-bro-activity.Fields}[

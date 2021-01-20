@@ -3,7 +3,7 @@
 {
 Name = f5-vpn-additional-info
   Vendor = F5
-  Product = F5 BIG-IP
+  Product = Big-IP
   Lms = Splunk
   DataType = "vpn-start"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

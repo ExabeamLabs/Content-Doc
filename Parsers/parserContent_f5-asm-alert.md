@@ -3,7 +3,7 @@
 {
 Name = f5-asm-alert
   Vendor = F5
-  Product = F5 BIG-IP Application Security Manager (ASM)
+  Product = F5 Application Security Manager
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

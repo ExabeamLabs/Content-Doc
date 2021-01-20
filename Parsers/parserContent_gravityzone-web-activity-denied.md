@@ -2,8 +2,8 @@
 ```Java
 {
 Name = gravityzone-web-activity-denied
-  Vendor = Bitdefender
-  Product = Bitdefender GravityZone
+  Vendor = Gravityzone
+  Product = Gravityzone
   Lms = Direct
   DataType = "web-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

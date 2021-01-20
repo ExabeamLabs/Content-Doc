@@ -2,8 +2,8 @@
 ```Java
 {
 Name = leef-cbdef-security-alert
-  Vendor = VMware
-  Product = VMware Carbon Black Cloud Endpoint Standard
+  Vendor = Carbon Black
+  Product = Cb Defense
   Lms = QRadar
   DataType = "alert"
   TimeFormat = "MMM-dd-YYYY HH:mm:ss z"

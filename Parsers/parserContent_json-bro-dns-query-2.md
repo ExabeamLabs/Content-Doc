@@ -2,7 +2,7 @@
 ```Java
 {
 Name = json-bro-dns-query-2
-  Product = Zeek Network Security Monitor
+  Product = Bro
   DataType = "dns-query"
   Conditions = [ """query":""", """"id.resp_h":""", """"id.resp_p":"""]
   Fields = ${BroParserTemplates.json-bro-activity.Fields}[

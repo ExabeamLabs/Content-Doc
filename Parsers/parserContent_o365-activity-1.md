@@ -3,7 +3,7 @@
 {
 Name = o365-activity-1
   Vendor = Microsoft
-  Product = Microsoft Office 365
+  Product = Office 365
   Lms = Direct
   DataType = "o365-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

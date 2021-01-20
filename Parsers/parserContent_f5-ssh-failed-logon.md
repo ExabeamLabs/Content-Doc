@@ -3,7 +3,7 @@
 {
 Name = f5-ssh-failed-logon
   Vendor = F5
-  Product = F5 BIG-IP
+  Product = Big-IP
   Lms = Splunk
   DataType = "failed-logon"
   TimeFormat = "yyyy-MM-dd HH:mm:ss" 

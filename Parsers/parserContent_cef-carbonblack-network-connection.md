@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-carbonblack-network-connection
-  Vendor = VMware
-  Product = VMware Carbon Black Cloud Endpoint Standard
+  Vendor = Carbon Black
+  Product = Cb Defense
   Lms = ArcSight
   DataType = "network-connection"
   TimeFormat = "epoch"

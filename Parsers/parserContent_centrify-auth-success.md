@@ -3,7 +3,7 @@
 {
 Name = centrify-auth-success
   Vendor = Centrify
-  Product = Centrify Authentication Service
+  Product = Centrify
   Lms = Direct
   DataType = "authentication-successful"
   TimeFormat = "epoch"

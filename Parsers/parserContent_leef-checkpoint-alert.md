@@ -2,8 +2,8 @@
 ```Java
 {
 Name = leef-checkpoint-alert
-  Vendor = Check Point Software
-  Product = Check Point NGFW
+  Vendor = Check Point Software Technologies
+  Product = Next Generation Firewall
   Lms = Direct
   DataType = "network-alert"
   TimeFormat = "epoch_sec"

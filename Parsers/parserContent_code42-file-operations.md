@@ -3,7 +3,7 @@
 {
 Name = code42-file-operations
   Vendor = Code42
-  Product = Code42 Incydr
+  Product = Code42
   Lms = Direct
   DataType = "file-operations"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

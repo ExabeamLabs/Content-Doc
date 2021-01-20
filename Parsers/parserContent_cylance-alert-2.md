@@ -2,14 +2,15 @@
 ```Java
 {
 Name = cylance-alert-2
-  Vendor = BlackBerry
-  Product = BlackBerry Protect
+  Vendor = Cylance
+  Product = PROTECT
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """|Skyformation|""", """destinationServiceName=CylanceProtect""", """externalID="""]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """\s({host}[\w\-.]+)\s+Skyformation""",
     """\d+\s+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3}Z)\s+""",
     """\WexternalID=({src_host}[\w.\-]+)""",
     """\Woutcome=({outcome}[^\s]+)""",
@@ -24,8 +25,6 @@ Name = cylance-alert-2
     """"cylance_score":({alert_severity}[^",]+)""",
     """\WdestinationServiceName=(|({device_name}.+?))(\s+\w+=|\s*$)""",
     """"md5":"({md5}[^"]+)""",
-    """"name":"({file_name}[^"]+)"""",
-    """"sha256":"({file_hash}[^"]+)""""
   ]
   DupFields = [ "alert_type->alert_name" ]
 }

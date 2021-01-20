@@ -3,7 +3,7 @@
 {
 Name = cef-f5-vpn-start
   Vendor = F5
-  Product = F5 BIG-IP Access Policy Manager (APM)
+  Product = Access Policy Manager
   Lms = ArcSight
   DataType = "vpn-start"
   TimeFormat = "epoch"

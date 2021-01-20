@@ -3,7 +3,7 @@
 {
 Name = f5-network-alert-4
   Vendor = F5
-  Product = F5 IP Intelligence
+  Product = IPI F5
   Lms = Direct
   DataType = "network-alert"
   TimeFormat = "MMM dd yyyy HH:mm:ss"

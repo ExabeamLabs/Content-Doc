@@ -2,8 +2,8 @@
 ```Java
 {
 Name = vectra-alert-1
-  Vendor = Vectra
-  Product = Vectra Cognito Detect
+  Vendor = Vectra Networks
+  Product = Vectra
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

@@ -3,7 +3,7 @@
 {
 Name = okta-app-activity-ad
   Vendor = Okta
-  Product = Okta Adaptive MFA
+  Product = Okta MFA
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

@@ -3,7 +3,7 @@
 {
 Name = cef-cisco-dns-response
   Vendor = Cisco
-  Product = Cisco Umbrella
+  Product = OpenDNS Umbrella
   Lms = ArcSight
   DataType = "dns-response"
   IsHVF = true
@@ -15,7 +15,6 @@ Name = cef-cisco-dns-response
     """"action":"({outcome}[^"]+)"""",
     """"queryType":"({query_type}[^"]+)"""",
     """"domain":"({query}[^"]+)"""",
-    """"domain":"({query}[^"]+\.({top_query}\w+\.(?i)(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za)))""",
     """"categories":\[(""|({categories}[^]]+))""",
     """"categories":\["({category}[^"]+)""""
     """"timestamp":"({time}[^"]+)"""",

@@ -2,8 +2,8 @@
 ```Java
 {
 Name = q-process-alert-carbonblack
-  Vendor = VMware
-  Product = VMware Carbon Black App Control
+  Vendor = Carbon Black
+  Product = Cb Protection
   Lms = QRadar
   DataType = "process-alert"
   IsHVF = true

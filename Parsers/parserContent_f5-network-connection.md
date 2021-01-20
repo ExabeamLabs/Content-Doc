@@ -3,7 +3,7 @@
 {
 Name = f5-network-connection
   Vendor = F5
-  Product = F5 BIG-IP Advanced Firewall Module (AFM)
+  Product = Advanced Firewall Module
   Lms = Direct
   DataType = "network-connection"
   TimeFormat = "MMM dd yyyy HH:mm:ss"

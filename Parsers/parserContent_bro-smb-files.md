@@ -2,8 +2,8 @@
 ```Java
 {
 Name = bro-smb-files
-  Vendor = Zeek
-  Product = Zeek Network Security Monitor
+  Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "file-operations"
   IsHVF = true

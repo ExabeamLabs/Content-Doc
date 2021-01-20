@@ -2,7 +2,7 @@
 ```Java
 {
 Name = dell-file-operations-1
-  Vendor = Dell
+  Vendor = Dell EMC Isilon
   Product = Dell EMC Isilon
   Lms = Direct
   DataType = "file-operations"

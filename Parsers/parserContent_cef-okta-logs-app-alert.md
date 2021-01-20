@@ -3,7 +3,7 @@
 {
 Name = cef-okta-logs-app-alert
   Vendor = Okta
-  Product = Okta Adaptive MFA
+  Product = Okta MFA
   Lms = ArcSight
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"

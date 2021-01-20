@@ -3,7 +3,7 @@
 {
 Name = exalms-sqlserver-failed-login
   Vendor = Microsoft
-  Product = Microsoft SQL Server
+  Product = SQL Server
   Lms = Direct
   DataType = "failed-app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

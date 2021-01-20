@@ -3,7 +3,7 @@
 {
 Name = f5-vpn-assign-ip
   Vendor = F5
-  Product = F5 BIG-IP
+  Product = Big-IP
   Lms = Splunk
   DataType = "vpn-set-ip"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

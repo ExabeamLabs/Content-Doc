@@ -2,8 +2,8 @@
 ```Java
 {
 Name = syslog-liebsoft-account-switch
-    Vendor = BeyondTrust
-    Product = BeyondTrust Privileged Identity
+    Vendor = Liebsoft
+    Product = Liebsoft
     Lms = Syslog
     DataType = "account-switch"
     TimeFormat = "yyyy-dd-MM'T'HH:mm:ss"

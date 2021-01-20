@@ -1,23 +1,30 @@
 #### Parser Content
 ```Java
 {
-box-activity = {
-  Vendor = Dropbox
-  Product = Dropbox
+Name = box-activity
+  Vendor = Box
+  Product = Box
   Lms = Splunk
-  DataType = "app-activity"
+  DataType = "file-operations"
+  IsHVF = true
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+  Conditions = [ "created_by_login=", "created_by_name=", "source_item_name=", "event_type=" ]
   Fields = [
-    """exabeam_host=({host}[\w.\-]+)""",
-    """\w+\s+\d+\s+\d\d:\d\d:\d\d ({host}[\w\-.]+) \d+ \d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ""",
-    """"timestamp":"({time}[^"]+)""",
-    """"host_name":"({host}[^"]+)""",
-    """"actor":.*?"display_name":\s*"(?:N\/A|({user_fullname}[^"@]+))"""",
-    """"actor":.*?"email":\s*"(?:N\/A|({user_email}[^@"\s]+@[^@"\s]+))"""",
-    """"event_type":(\{"\.tag":)?\s*"({activity}[^"]+)"""",
-    """"description":\s*"({additional_info}[^"]+)"""",
-    """"ip_address":\s*"({src_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]*:[A-Fa-f0-9%.:]+))""",
-    """({app}Dropbox)""",
+    """created_at="+({time}[^"]+)"""",
+    """exabeam_host=({host}[^\s]+)""",
+    """created_by_login="+({user}[^"@]+)""",
+    """accessible_by_login="+({object}[^"@]+)""",
+    """source_user_email="+({object}[^@]+)""",
+    """({file_type}folder)""",
+    """source_item_name="+({file_name}[^"]+)""",
+    """source_item_type="+({file_type}[^"]+)""",
+    """source_folder_name="+({file_name}[^"]+)""",
+    """source_parent_name="+({file_parent}[^"]+)""",
+    """additional_details_size="({bytes}\d+)""",
+    """ip_address="+({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """event_type="+({accesses}[^"]+)""",
+    """created_by_login="({user_email}.*?@([\.\w+]+\.)?({email_domain}[^\.\s]+\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|ch)))"""
   ]
+  DupFields = [ "accesses->event_code" ]
 }
 ```

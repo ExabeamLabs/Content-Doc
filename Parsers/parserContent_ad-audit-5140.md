@@ -2,8 +2,8 @@
 ```Java
 {
 Name = ad-audit-5140
-  Vendor = Microsoft
-  Product = Microsoft Windows
+  Vendor = AD Audit
+  Product = AD Audit
   Lms = Direct
   DataType = "share-access"
   TimeFormat = "epoch_sec"

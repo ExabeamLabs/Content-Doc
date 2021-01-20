@@ -6,11 +6,10 @@ Name = q-vontu-dlp-alert
     Product = Symantec DLP
     Lms = QRadar
     DataType = "dlp-alert"
-    TimeFormat = "yyyy-MM-dd HH:mm:ss"
+    TimeFormat = "epoch"
     Conditions = [ """type=Vontu_""","""|lanid=""","""|rules=""" ]
     Fields = [
       """exabeam_endTime=({time}\d+)""",
-      """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """\d\d:\d\d:\d\d\s+({host}[^\s]+)\s+type=""",
       """\|incidentID=({alert_id}\d+)""",
       """\|policy=({alert_name}[^|]+)\|""",

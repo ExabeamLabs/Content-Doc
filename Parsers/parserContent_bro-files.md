@@ -2,8 +2,8 @@
 ```Java
 {
 Name = bro-files
-  Vendor = Zeek
-  Product = Zeek Network Security Monitor
+  Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "file-read"
   TimeFormat = "epoch_sec"

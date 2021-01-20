@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-moveit-app-failed-login
-  Vendor = Ipswitch
+  Vendor = IPswitch MoveIt
   Product = IPswitch MoveIt
   Lms = Direct
   DataType = "failed-app-login"

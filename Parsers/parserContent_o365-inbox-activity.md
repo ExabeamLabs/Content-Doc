@@ -3,7 +3,7 @@
 {
 Name = o365-inbox-activity
   Vendor = Microsoft
-  Product = Microsoft Office 365
+  Product = Office 365
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

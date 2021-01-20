@@ -3,7 +3,7 @@
 {
 Name = cisco-wsa-squid-proxy
     Vendor = Cisco
-    Product = Cisco Secure Web Appliance
+    Product = Cisco Web Security Appliance
     Lms = Splunk
     DataType = "web-activity"
     IsHVF = true

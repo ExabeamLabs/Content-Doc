@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cyberark-password-change
-  Vendor = CyberArk
+  Vendor = CyberArk Vault
   Product = CyberArk Vault
   Lms = Direct
   DataType = "account-switch"

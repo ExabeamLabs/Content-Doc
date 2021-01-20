@@ -3,7 +3,7 @@
 {
 Name = cef-cas-security-alert
   Vendor = Microsoft
-  Product = Microsoft Cloud App Security (MCAS)
+  Product = Microsoft CAS
   Lms = ArcSight
   DataType = "alert"
   TimeFormat = "epoch"

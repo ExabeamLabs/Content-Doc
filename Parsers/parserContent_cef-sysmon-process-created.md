@@ -3,7 +3,7 @@
 {
 Name = cef-sysmon-process-created
   Vendor = Microsoft
-  Product = Microsoft Sysmon
+  Product = Sysmon
   Lms = ArcSight
   DataType = "process-created"
   IsHVF = true

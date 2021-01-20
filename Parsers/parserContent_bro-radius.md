@@ -2,8 +2,8 @@
 ```Java
 {
 Name = bro-radius
-  Vendor = Zeek
-  Product = Zeek Network Security Monitor
+  Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "nac-logon"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"

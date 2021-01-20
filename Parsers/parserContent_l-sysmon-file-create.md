@@ -3,7 +3,7 @@
 {
 Name = l-sysmon-file-create
   Vendor = Microsoft
-  Product = Microsoft Sysmon
+  Product = Sysmon
   Lms = Direct
   DataType = "file-operations"
   IsHVF = true

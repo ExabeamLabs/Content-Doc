@@ -2,8 +2,8 @@
 ```Java
 {
 Name = checkpoint-vpn-logout-1
-  Vendor = Check Point Software
-  Product = Check Point Identity Awareness
+  Vendor = Checkpoint
+  Product = Checkpoint Identity Awareness
   Lms = Direct
   DataType = "vpn-end"
   TimeFormat = "dMMMyyyy H:mm:ss"

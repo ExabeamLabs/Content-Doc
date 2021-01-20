@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-amag-badge-access-failed-2
-  Product = Symmetry Access Control
+  Product = AMAG
     Conditions = [ """badge '""", """', u'Inactive', u'""" ]
   }
 ```

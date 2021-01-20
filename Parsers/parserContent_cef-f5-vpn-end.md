@@ -3,7 +3,7 @@
 {
 Name = cef-f5-vpn-end
   Vendor = F5
-  Product = F5 BIG-IP Access Policy Manager (APM)
+  Product = Big-IP
   Lms = ArcSight
   DataType = "vpn-end"
   TimeFormat = "epoch"

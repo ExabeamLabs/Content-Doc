@@ -21,7 +21,7 @@ Name = l-4740
     """<Data Name='SubjectUserName'>({caller_user}[^<]+)<""",
     """<Data Name='SubjectDomainName'>({caller_domain}[^<]+)<""",
     """<Data Name='SubjectLogonId'>({logon_id}[^<]+)<""",
-    """<Data Name='TargetDomainName'>(?:\\+)?({src_host}[^<=\s]+)(<|\s)"""
+    """<Data Name='TargetDomainName'>(?:\\+)?({src_host}[^<=]+)<"""
   ]
   DupFields = [ "host->dest_host",
                 "caller_domain->domain" ]

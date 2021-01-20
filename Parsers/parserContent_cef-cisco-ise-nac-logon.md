@@ -6,11 +6,10 @@ Name = cef-cisco-ise-nac-logon
   Product = Cisco ISE
   Lms = Direct
   DataType = "nac-logon"
-  TimeFormat = "MMM dd yyyy HH:mm:ss"
+  TimeFormat = "epoch"
   Conditions = [ """|CISCO|ISE|""","""msg=NOTICE Passed-Authentication""","""app=Radius"""  ]
   Fields = [
     """\srt=({time}\d+)""",
-    """\srt=({time}[A-Za-z]{3} \d\d \d{4} \d\d:\d\d:\d\d)""",
     """\sdvchost=({host}[^\s]+)""",
     """\sduser=(?:|(({domain}[^\\=]+)\\+)?({user}(?:({computer_name}([A-F0-9]{2}\-){5}[A-F0-9]{2})|.+?)))\scn1=""",
     """\sdhost=({dest_host}[^\s]+)""",
