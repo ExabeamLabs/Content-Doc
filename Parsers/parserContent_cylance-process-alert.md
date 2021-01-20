@@ -21,6 +21,8 @@ Name = cylance-process-alert
     """ Category \[({alert_name}[^\]]+)\]""",
     """msg=({alert_type}[^:]+)""",
     """"agent_event_id":"({alert_id}[^"]+)"""",
+    """"file_hash_id":"({file_hash}[^"]+)"""",
+    """\sfname=([^=]*\\)?({file_name}[^\.]+\.({file_ext}[^\\:\s.]+)?)\s+\w+="""
   ]
   DupFields = [ "directory->process_directory" ]
 }

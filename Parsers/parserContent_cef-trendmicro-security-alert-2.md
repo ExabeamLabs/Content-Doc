@@ -8,7 +8,9 @@ Name = cef-trendmicro-security-alert-2
     """\Wcs1=(?:N\/A|({alert_name}[^=]+?))\s+\w+=""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
     """\Wdpt=({dest_port}\d+)""",
-    """CEF:(?:[^\|]*\|){3}({alert_type}[^\|]+)\|({alert_name}[^\|]+)\|(Unknown|({alert_severity}[^\|]+))\|\w+="""
+    """CEF:(?:[^\|]*\|){3}({alert_type}[^\|]+)\|({alert_name}[^\|]+)\|(Unknown|({alert_severity}[^\|]+))\|\w+=""",
+    """cn2=({cn2}[^\s"]+)""",
   ]
+  DupFields = [ "outcome->actn" ]
 }
 ```
