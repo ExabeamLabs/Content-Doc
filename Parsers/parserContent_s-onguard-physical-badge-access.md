@@ -2,8 +2,8 @@
 ```Java
 {
 Name = s-onguard-physical-badge-access
-  Vendor = Onguard
-  Product = Onguard
+  Vendor = Lenel
+  Product = OnGuard
   Lms = Splunk
   DataType = "physical-access"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.S"

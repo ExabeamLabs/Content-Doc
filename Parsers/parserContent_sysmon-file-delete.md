@@ -16,7 +16,7 @@ Name = sysmon-file-delete
     """ProcessId:\s({pid}\d+)""",
     """User:\s(NT|[^\\]+\\({user}[^\s]+))""",
     """Image:\s+({process}({directory}[^"]*?[\\\/]+)?({process_name}[^\s]+))\s+\w+:""",
-    """TargetFilename:\s({file_path}({file_parent}[^"]*?[\\\/]+)?({file_name}[^"\\\/]+?(\.({file_ext}\w+))?))\s\w+:""",
+    """TargetFilename:\s({file_path}({file_parent}[^"]*?[\\\/]+)?({file_name}[^"\\\/]+?(\.({file_ext}\w+))?))\s+\w+:""",
     """MD5=({md5}[^,]+),""",
     """SHA256=({sha256}[^,]+),""",
   ]

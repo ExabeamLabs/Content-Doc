@@ -3,7 +3,7 @@
 {
 Name = s-physical-badge-access-3
     Vendor = Lenel
-  Product = Lenel
+    Product = OnGuard
     Lms = Splunk
     DataType = "physical-access"
     TimeFormat = "yyyy-MM-dd HH:mm:ss"

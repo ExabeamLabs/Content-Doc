@@ -8,7 +8,7 @@ Name = json-sysmon-process-network
   DataType = "process-network"
   IsHVF = true
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ """Microsoft-Windows-Sysmon""", """Network connection detected:""", """"AccountName":"""" ]
+  Conditions = [ """Microsoft-Windows-Sysmon""", """Network connection detected""", """"AccountName":"""" ]
   Fields = [
     """"UtcTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """"TargetFilename":"({file_path}({file_parent}[^"]*?[\\\/]+)?({file_name}[^"\\\/]+?(\.({file_ext}\w+))?))"""",

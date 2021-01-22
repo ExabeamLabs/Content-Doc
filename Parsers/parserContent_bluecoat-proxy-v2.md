@@ -7,11 +7,11 @@ Name = bluecoat-proxy-v2
   Lms = Direct
   DataType = "web-activity"
   IsHVF = true
-  TimeFormat = "dd/MM/yyyy: HH:mm:ss z"
+  TimeFormat = "dd/MM/yyyy:HH:mm:ss z"
   Conditions = [ """filter-result=""", """cs-host=""" ]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}[\w.-]+)""",
-    """\tcs-userdn=(?:-|(({domain}[^\\\t]+)\\)?({user}.+?))\t""",
+    """\tcs-userdn=(?:-|(({domain}[^\\\t]+)\\)?({user}[^\s\t]+))""",
     """\Ws-ip="?(-|({host}[^"|]+))("|\||$|\t|\s+[\w\-\(\)]+=)"""
     """\Ws-computername="?(-|({host}[^"|]))("|\||$|\t|\s+[\w\-\(\)]+=)""",
     """date="?({time}\d\d\d\d-\d\d-\d\d"?(,|\t|\s)time="?\d\d:\d\d:\d\d)""",
@@ -46,7 +46,7 @@ Name = bluecoat-proxy-v2
     """\Wcs\(User-Agent\)="?(-|Mozilla\/[^=]+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
     """\Wcs\(User-Agent\)="?(-|Mozilla\/[^=]+\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]+Gecko\/\d+\s+({browser}\w+))""",
     """\Wcs-usr-agent="?(-|Mozilla\/[^=]+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
-    """\Wcs-host="?(.*?)({top_domain}(?!(?:\d+\.){3}\d+)[^\.\s\t]+(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)\s*("|\||$|\t|\s+[\w\-\(\)]+=)""",
+    """\Wcs-host="?([^"=]+?)({top_domain}(?!(?:\d+\.){3}\d+)[^\.\s\t]+(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)\s*("|\||$|\t|\s+[\w\-\(\)]+=)""",
     """\Wcs\(Referer\)"?=("?-"?|"?({referrer}[^"\|\t]+?)"?)\s*("|\||$|\t|\s+[\w\-\(\)]+=)""",
   ]
 }

@@ -3,7 +3,7 @@
 {
 Name = q-lenel-badge-access
     Vendor = Lenel
-  Product = Lenel
+    Product = OnGuard
     Lms = QRadar
     DataType = "physical-access"
     TimeFormat =  "yyyy-MM-dd HH:mm:ss"
