@@ -9,6 +9,5 @@ Name = s-1102
     """\sComputerName=({host}[\w.\-]+)""",
     """({time}\d\d/\d\d/\d\d\d\d \d+:\d+:\d+ (am|AM|pm|PM))\s+"""
   ]
-  DupFields = [ "host->dest_host" ]
 }
 ```

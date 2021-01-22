@@ -3,7 +3,7 @@
 {
 Name = s-bit9-epp-alert
   Vendor = Carbon Black
-  Product = CB Protection
+  Product = Cb Protection
   Lms = Splunk
   DataType = "alert"
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"

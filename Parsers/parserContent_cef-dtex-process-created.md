@@ -2,8 +2,7 @@
 ```Java
 {
 Name = cef-dtex-process-created
-  Vendor = Dtex Systems
-  Product = DTEX InTERCEPT
+  Vendor = Dtex
   Lms = ArcSight
   DataType = "process-created"
   IsHVF = true

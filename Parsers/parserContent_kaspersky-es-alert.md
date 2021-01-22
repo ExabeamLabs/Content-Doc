@@ -2,7 +2,7 @@
 ```Java
 {
 Name = kaspersky-es-alert
-  Vendor = Kaspersky
+  Vendor = Kaspersky Lab
   Product = Kaspersky Endpoint Security for Business
   Lms = Direct
   DataType = "alert"

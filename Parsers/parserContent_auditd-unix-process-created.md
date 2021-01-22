@@ -3,20 +3,19 @@
 {
 Name = auditd-unix-process-created
   Vendor = Unix
-  Product = Unix Auditd
+  Product = Auditd
   Lms = Direct
   DataType = "process-created"
-  TimeFormat = "yyyy-MM-dd HH:mm:ss"
+  TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
   Conditions = [ """audispd""", """USER_CMD""", """ cmd=""" ]
   Fields = [
-    """node=({host}[^\s\.]+)""",
-    """\s({host}[\w\-.]+)\s+audispd:""",
-    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+    """node=({host}[^\s\.]+)"""
+    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)""",
     """uid=({user_id}[^\s]+)""",
     """auid=({account_used_id}[^\s]+)""",
     """pid=({process_id}[^\s]+)""",
-    """cmd="?({process}[^"]*?)\s*("|\w+=|$)""",
-    """cmd="?({process_directory}[^"]*\/)({process_name}[^"]+?)\s*("|\w+=|$)""",
+    """cmd="({process}[^"]*)"""",
+    """cmd="({process_directory}.+\/)({process_name}.+?)"""",
     """res=({outcome}[^\s'"]+)"""
   ]
   DupFields = ["host->dest_host"]

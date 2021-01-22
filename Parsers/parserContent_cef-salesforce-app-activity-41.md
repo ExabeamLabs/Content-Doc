@@ -3,7 +3,6 @@
 {
 Name = cef-salesforce-app-activity-41
   Vendor = Salesforce
-  Product = Salesforce
   Lms = ArcSight
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

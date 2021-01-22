@@ -3,7 +3,6 @@
 {
 Name = unix-local-logon
   Vendor = Unix
-  Product = Unix
   Lms = Direct
   DataType = "local-logon"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-securesphere-app-login-failed
-  Vendor = Imperva
+  Vendor = Imperva 
   Product = Imperva SecureSphere
   Lms = Direct
   DataType = "failed-app-login"

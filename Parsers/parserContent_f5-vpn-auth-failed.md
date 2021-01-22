@@ -2,7 +2,7 @@
 ```Java
 {
 Name = f5-vpn-auth-failed
-  Vendor = F5 Networks
+  Vendor = F5
   Product = Big-IP
   Lms = Direct
   DataType = "authentication-failed"

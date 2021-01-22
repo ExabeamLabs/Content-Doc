@@ -2,7 +2,7 @@
 ```Java
 {
 Name = amag-badge-access
-  Vendor = AMAG
+  Vendor = Amag
   Product = Symmetry Access Control
   Lms = Direct
   DataType = "physical-access"

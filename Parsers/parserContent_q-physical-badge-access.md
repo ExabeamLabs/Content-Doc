@@ -2,8 +2,7 @@
 ```Java
 {
 Name = q-physical-badge-access
-    Vendor = Datawatch Systems
-  Product = DataWatch
+    Vendor = DataWatch
     Lms = QRadar
     DataType = "physical-access"
     TimeFormat =  "MM/dd/yy HH:mm:ss"

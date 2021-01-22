@@ -3,7 +3,7 @@
 {
 Name = cef-catonetworks-network-alert
   Vendor = CatoNetworks
-  Product = Cato Cloud
+  Product = CatoNetworks
   Lms = ArcSight
   DataType = "network-alert"
   TimeFormat = "EEE MMM dd HH:mm:ss Z yyyy"

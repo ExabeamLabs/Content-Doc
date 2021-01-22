@@ -30,7 +30,6 @@ Name = cef-vontu-dlp-alert
     """\Wapp=(|({protocol}.+?))(\s+\w+=|\s*$)""",
     """\Wcs4=(|({subject}.+?))(\s+\w+=|\s*$)""",
   ]
-  DupFields = ["user_email->sender", "target->recipients"]
   SOAR {
     IncidentType = "dlp"
     DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "user->dlpUser", "alert_name->dlpPolicy", "alert_severity->sourceSeverity", "host->dlpDeviceName", "file_name->dlpFileName", "alert_type->dlpActionTaken"]

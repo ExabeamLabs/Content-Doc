@@ -2,6 +2,6 @@
 ```Java
 {
 Name = checkpoint-network-connection-4
-  Conditions = [ """CheckPoint""", """"SMTP transparent proxy"""" ]
+  Conditions = [ """CheckPoint""", """product:"Security Gateway/Management"""" ]
 }
 ```

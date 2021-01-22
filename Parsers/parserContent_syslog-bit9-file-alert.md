@@ -3,7 +3,7 @@
 {
 Name = syslog-bit9-file-alert
   Vendor = Carbon Black
-  Product = CB Protection
+  Product = Cb Protection
   Lms = Direct
   DataType = "file-alert"
   IsHVF = true

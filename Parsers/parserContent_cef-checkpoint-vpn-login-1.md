@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-checkpoint-vpn-login-1
-  Vendor = Check Point Software
+  Vendor = Check Point
   Product = Check Point Security Gateway
   Lms = ArcSight
   DataType = "vpn-start"
@@ -14,7 +14,6 @@ Name = cef-checkpoint-vpn-login-1
     """\Wduser=({user_lastname}[^\,=]+),\s*({user_firstname}[^\(=]+?)\s*(\(({user}[^\s\)=]+)\))?\s+(\w+=|$)""",
     """\Wsntdom=({domain}[^\s]+)""",
     """\Worigin=({src_ip}[A-Fa-f:\d.]+)""",
-    """\Wsrc=({src_translated_ip}[A-Fa-f:\d.]+)""",
   ]
 }
 ```

@@ -3,7 +3,7 @@
 {
 Name = meraki-firepower-active-dir
   Vendor = Cisco
-  Product = Meraki Firepower
+  Product = Cisco Firepower
   Lms = Syslog
   DataType = "authentication-successful"
   TimeFormat = "epoch_sec"

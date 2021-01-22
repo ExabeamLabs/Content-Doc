@@ -2,8 +2,7 @@
 ```Java
 {
 Name = vmware-view-password-change
-  Vendor = VMware
-  Product = VMware View
+  Vendor = VMware View
   Lms = Splunk
   DataType = "password-change"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

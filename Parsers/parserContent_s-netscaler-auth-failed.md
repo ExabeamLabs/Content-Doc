@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-netscaler-auth-failed
-  Vendor = Citrix
+  Vendor = Citrix Netscaler
   Product = Citrix Netscaler
   Lms = Splunk
   DataType = "authentication-failed"

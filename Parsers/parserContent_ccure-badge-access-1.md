@@ -2,8 +2,8 @@
 ```Java
 {
 Name = ccure-badge-access-1
-  Vendor = Tyco
-  Product = CCURE Building Management System
+  Vendor = CCURE
+  Product = CCURE
   Lms = ArcSight
   DataType = "physical-access"
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"

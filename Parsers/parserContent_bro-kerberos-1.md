@@ -2,8 +2,7 @@
 ```Java
 {
 Name = bro-kerberos-1
-  Vendor = Zeek
-  Product = Zeek Network Security Monitor
+  Vendor = Bro
   Lms = Direct
   DataType = "remote-access"
   IsHVF = true

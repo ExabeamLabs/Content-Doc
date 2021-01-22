@@ -3,7 +3,7 @@
 {
 Name = s-adfs-auth-failed
   Vendor = Microsoft
-  Product = Microsoft Windows
+  Product = Windows
   Lms = Splunk
   DataType = "authentication-failed"
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"

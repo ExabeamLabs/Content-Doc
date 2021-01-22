@@ -6,19 +6,20 @@ Name = o365-teams-activity-1
   Product = Microsoft Office 365
   Lms = Direct
   DataType = "app-activity"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """Workload""", """MicrosoftTeams""", """Operation""" ]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """"*CreationTime"*:\s*"*({time}\d+-\d+-\d+T\d+:\d+:\d+)"*""",
-    """({time}\d+-\d+-\d+T\d+:\d+:\d+.\d+Z)\s+({host}[\w\-.]+)\s+Skyformation""",
+    """"CreationTime\\*"+:[\s\\]*"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """destinationServiceName=({app}.+?)\s*deviceInboundInterface""",
     """Workload"*:"*({app}[^"]+)""",
     """Workload"*:\s*"*({app}[^"]+)"*\}""",
-    """ObjectId"*:\s*"*({object}[^"]+)"*""",
+    """ObjectId"*:\s*"*((?i)(Unknown)|({object}[^"]+))"*""",
     """Operation"*:\s*"*({activity}[^"]+)"*""",
-    """UserId"*:\s*"*({user_email}[^@]+@({email_domain}[^"]+))"*""",
+    """UserKey"*:\s*"*({user_email}[^@"]+@({email_domain}[^"]+))"*""",
+    """UserId"*:\s*"*({user_email}[^@"]+@({email_domain}[^"]+))"*""",
     """"ClientIP\\*"+:[\s\\]*"+(::1|\[?({src_ip}[a-fA-F\d.:]+))""",
+    """src-account-name":"({account_name}[^"]+)""",
     ]
 }
 ```

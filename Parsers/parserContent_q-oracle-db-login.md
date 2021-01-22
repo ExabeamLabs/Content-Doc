@@ -3,7 +3,6 @@
 {
 Name = q-oracle-db-login
   Vendor = Oracle
-  Product = Oracle DB
   Lms = QRadar
   DataType = "database-login"
   IsHVF = true
@@ -17,8 +16,7 @@ Name = q-oracle-db-login
     """COMMENT_TEXT:\s*"+[^"]*?PROTOCOL=({protocol}\w+)""",
     """COMMENT_TEXT:\s*"+[^"]*?HOST=({dest_ip}[a-fA-F\d.:]+)""",
     """SESSIONID:\s*"+({session_id}[^":]+)""",
-    """OS_PROCESS:\s*"+({process_id}\d+)""",
-    """DBID:\s*"+({database_name}\d+)"""
+    """OS_PROCESS:\s*"+({process_id}\d+)"""
   ]
   DupFields = [ "os_user->user", "db_user->account" ]
 }

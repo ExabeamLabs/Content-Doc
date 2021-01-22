@@ -2,7 +2,7 @@
 ```Java
 {
 Name = nsx-network-connection-successful
-  Vendor = VMware
+  Vendor = NSX
   Product = VMware NSX
   Lms = Direct
   DataType = "network-connection"

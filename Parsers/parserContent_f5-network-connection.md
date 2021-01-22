@@ -2,7 +2,7 @@
 ```Java
 {
 Name = f5-network-connection
-  Vendor = F5 Networks
+  Vendor = F5
   Product = Advanced Firewall Module
   Lms = Direct
   DataType = "network-connection"

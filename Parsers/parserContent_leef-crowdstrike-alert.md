@@ -34,7 +34,6 @@ Name = leef-crowdstrike-alert
 		"""\WdstPort=({dest_port}\d+)""",
 		"""\WdnsRequestDomain=(|({dns_request_domain}.+?))(\||\t\w+=|["\s]*$)""",
 		"""\WrequestType=(|({dns_request_type}[^\s]+?))(\||\t\w+=|["\s]*$)"""
-		"""\WfilePath=(|({process}[^\s]+\\+({process_name}[^\s]+)))""", 
     ]
 }
 ```

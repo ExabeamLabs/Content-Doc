@@ -2,8 +2,8 @@
 ```Java
 {
 Name = carbonblack-security-alert-2
-  Vendor = Carbon Black
-  Product = CB Defense
+  Vendor = VMware
+  Product = VMware Carbon Black Cloud Endpoint Standard
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

@@ -7,16 +7,15 @@ Name = cef-cloudflare-net-connection
   Lms = Direct
   DataType = "network-connection"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """CEF:""", """|Skyformation|""", """requestClientApplication=""", """destinationServiceName=Cloudflare""", """dproc=Firewall""" ]
+  Conditions = [ """CEF:""", """|Skyformation|""", """requestClientApplication=""", """destinationServiceName=Cloudflare""", """dproc=Firewall""" , """cat=network-traffic"""]
   Fields = [
     """ext__occurred_at_=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
-    """({host}[\w\-.]+)\s+Skyformation""",
     """ext_action=({activity}[^\s]+)\s""",
     """suser=({user}[^\s]+)\s""",
     """ext_ua=({user_agent}.*?)\s*\w+=""",
     """ext_country=({country_code}.*?)\s*\w+=""",
     """deviceInboundInterface=({src_interface}.*?)\s*\w+=""",
-    """dhost=({original_dest_host}.*?)\s+\w+=""",
+    """dhost=({dest_host}.*?)\s+\w+=""",
     """dproc=({process}.*?)\s*\w+=""",
     """ext_proto=({protocol}.*?)\s*\w+=""",
     """reason=({failure_reason}.*?)\s*\w+=""",

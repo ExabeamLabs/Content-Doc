@@ -3,7 +3,7 @@
 {
 Name = cef-O365-dlp-email-out-1
   Vendor = Microsoft
-  Product = Microsoft Office 365
+  Product = Office 365
   Lms = ArcSight
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"

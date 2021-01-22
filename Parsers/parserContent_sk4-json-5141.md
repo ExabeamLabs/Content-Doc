@@ -8,6 +8,7 @@ Name = sk4-json-5141
     """({event_name}A directory service object was deleted)""",
     """"+ObjectClass"+:"+({object_class}[^"]+)""",
     """"+DSType"+:"+({service_type}[^"]+)""",
+    """"+ObjectDN"+:"+({object_dn}[^"]+)""",
     
   ]
    DupFields = [ "host->dest_host" ]

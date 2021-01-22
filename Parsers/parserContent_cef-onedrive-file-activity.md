@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-onedrive-file-activity
-    Vendor = Microsoft
-    Product = Microsoft OneDrive
+    Vendor = OneDrive
+    Product = OneDrive
     Lms = ArcSight
     DataType = "file-operations"
     IsHVF = true

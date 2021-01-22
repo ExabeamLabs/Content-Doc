@@ -3,7 +3,6 @@
 {
 Name = cef-syslog-oracle-db-query
     Vendor = Oracle
-  Product = Oracle DB
     Lms = ArcSight
     DataType = "database-query"
     IsHVF = true
@@ -12,7 +11,7 @@ Name = cef-syslog-oracle-db-query
     Fields = [ """\srt=({time}\d+)""",
       """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sdvchost=({host}[^\s]+)""",
-      """\seventId=({event_code}\d+)""",
+      """\seventId=({event_id}\d+)""",
       """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sdhost=({src_host}[^\s]+)""",
       """\ssuser=({user}.+?)\s+\w+=""",  

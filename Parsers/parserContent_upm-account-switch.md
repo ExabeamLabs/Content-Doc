@@ -2,8 +2,7 @@
 ```Java
 {
 Name = upm-account-switch
-  Vendor = Unix
-  Product = Unix Privilege Management
+  Vendor = Unix Privilege Management
   Lms = Direct
   DataType = "account-switch"
   TimeFormat = "epoch_sec"

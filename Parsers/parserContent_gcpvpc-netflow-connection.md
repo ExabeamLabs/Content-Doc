@@ -2,14 +2,14 @@
 ```Java
 {
 Name = gcpvpc-netflow-connection
-  Vendor = Google
+  Vendor = Google Cloud Platform
   Product = Virtual Private Cloud
   Lms = Direct
   DataType = "netflow-connection"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ """"jsonPayload":""", """"vm_name":""", """"vpc_name":""", """"gce_subnetwork"""" ]
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+  Conditions = [ """"jsonPayload":""", """"vm_name":""", """"vpc_name":""", """"type":"gce_subnetwork"""" ]
   Fields = [
-    """"start_time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
+    """"start_time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
     """"vpc_name":"({host}[^"]+)""",
     """"src_ip":"({src_ip}[a-fA-F\d.:]+)""",
     """"src_port":({src_port}\d+)""",

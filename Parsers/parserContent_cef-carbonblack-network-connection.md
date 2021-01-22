@@ -3,14 +3,14 @@
 {
 Name = cef-carbonblack-network-connection
   Vendor = Carbon Black
-  Product = CB Defense
+  Product = Cb Defense
   Lms = ArcSight
   DataType = "network-connection"
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """threatIndicators":""", """connection to""" , """sourceAddress="""]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-    """eventTime=({time}\d+)""",
+    """"eventTime=({time}\d+)""",
     """"deviceIpAddress=({src_ip}[A-Fa-f:\d.]+)""",
     """src=({src_ip}[A-Fa-f:\d.]+)""",
     """dst=({dest_ip}[^\s]+)""",

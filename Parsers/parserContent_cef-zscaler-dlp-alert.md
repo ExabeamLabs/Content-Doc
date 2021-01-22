@@ -3,7 +3,7 @@
 {
 Name = cef-zscaler-dlp-alert
   Vendor = Zscaler
-  Product = NSS
+  Product = Zscaler Internet Access
   Lms = ArcSight
   DataType = "dlp-alert"
   IsHVF = true

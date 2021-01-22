@@ -9,8 +9,6 @@ Name = zoom-operations-activity
   TimeFormat = "epoch"
   Conditions = [ """|Skyformation|""", """dproc=Operation Logs""", """destinationServiceName=Zoom""" ]
   Fields = [
-    """exabeam_host=({host}[\w.\-]+)""",
-    """\d+-\d+-\d+T\d+:\d+:\d+\.\d+\w ({host}[\w\-.]+) Skyformation""",
     """\WdestinationServiceName=({app}.+?)(\s+\w+=|\s*$)""",
     """\Wend=({time}\d+)""",
     """\ssuser=([^\s]+\/)?({user_email}[^\s@]+@[^\s@]+)\s+(\w+=|$)""",

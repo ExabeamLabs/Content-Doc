@@ -2,8 +2,8 @@
 ```Java
 {
 Name = ccure-badge-access-2
-    Vendor = Tyco
-    Product = CCURE Building Management System
+    Vendor = CCURE
+    Product = CCURE
     Lms = Direct
     DataType = "physical-access"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
@@ -15,7 +15,6 @@ Name = ccure-badge-access-2
       """"objectname2":"({location_door}[^"]+)"""",
       """<Card>({badge_id}.+?)</Card>""",
       """<StateCode>({outcome}.+?)</StateCode>""",
-      """<Direction.*?>({direction}.+?)</Direction>""",
     ]
   }
 ```

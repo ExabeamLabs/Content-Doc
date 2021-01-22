@@ -2,8 +2,7 @@
 ```Java
 {
 Name = cef-dtex-file-renamed
-  Vendor = Dtex Systems
-  Product = DTEX InTERCEPT
+  Vendor = Dtex
   Lms = ArcSight
   DataType = "file-operations"
   IsHVF = true

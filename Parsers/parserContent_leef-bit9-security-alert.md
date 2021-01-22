@@ -3,7 +3,7 @@
 {
 Name = leef-bit9-security-alert
   Vendor = Carbon Black
-  Product = CB Protection
+  Product = Cb Protection
   Lms = QRadar
   DataType = "alert"
   TimeFormat = "MMM dd yyyy HH:mm:ss.SSS"

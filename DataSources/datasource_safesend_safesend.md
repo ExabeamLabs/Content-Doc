@@ -4,13 +4,11 @@ Product: SafeSend
 -----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  41   |   9    |     3      |      3      |    3    |
+|  30   |   7    |     2      |      1      |    1    |
 
-|                                 Use-Case                                  | Activity Types                             | Event Types/Parsers                                                                                                 | MITRE TTP                                          | Content                                              |
-|:-------------------------------------------------------------------------:| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------- |
-| [Compromised Credentials](../UseCases/usecase_compromised_credentials.md) | <ul><li>Critical System Activity</li></ul> |  dlp-email-alert-out<br> ↳ [s-safesend-dlp-email-alert](../Parsers/parserContent_s-safesend-dlp-email-alert.md)<br> | T1078 - Valid Accounts<br>                         | <ul><li>1 Rules</li></ul>                            |
-|       [Data Exfiltration](../UseCases/usecase_data_exfiltration.md)       | <ul><li>Email Activity</li></ul>           |  dlp-email-alert-out<br> ↳ [s-safesend-dlp-email-alert](../Parsers/parserContent_s-safesend-dlp-email-alert.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br> | <ul><li>33 Rules</li></ul><ul><li>7 Models</li></ul> |
-|                [Phishing](../UseCases/usecase_phishing.md)                | <ul><li>Email Activity</li></ul>           |  dlp-email-alert-out<br> ↳ [s-safesend-dlp-email-alert](../Parsers/parserContent_s-safesend-dlp-email-alert.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br> | <ul><li>7 Rules</li></ul><ul><li>2 Models</li></ul>  |
+|               Use-Case                | Activity Types                                                    | Event Types/Parsers                                                                                                 | MITRE TTP                                                                    | Content                                              |
+|:-------------------------------------:| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------- |
+| [Other](../UseCases/usecase_other.md) | <ul><li>Critical System Activity</li><li>Email Activity</li></ul> |  dlp-email-alert-out<br> ↳ [s-safesend-dlp-email-alert](../Parsers/parserContent_s-safesend-dlp-email-alert.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1078 - Valid Accounts<br> | <ul><li>30 Rules</li></ul><ul><li>7 Models</li></ul> |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

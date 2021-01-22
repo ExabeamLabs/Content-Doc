@@ -3,7 +3,7 @@
 {
 Name = carbonblack-process-alert
   Vendor = Carbon Black
-  Product = CB Protection
+  Product = Cb Protection
   Lms = Direct
   DataType = "process-alert"
   IsHVF = true

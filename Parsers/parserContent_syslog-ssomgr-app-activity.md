@@ -3,7 +3,6 @@
 {
 Name = syslog-ssomgr-app-activity
   Vendor = Kemp
-  Product = Kemp LoadMaster
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "epoch"
@@ -13,7 +12,7 @@ Name = syslog-ssomgr-app-activity
     """\s({host}[\w\-\.]+)\s+\S+\s+\-\s+ssomgr:""",
     """\[host=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\[user=(({domain}[^\\]+)\\)?({user}[^\]]+)\]""",
-    """\[user=({user_email}[^@]+@({email_domain}[^@\]\s]+))\]""",
+    """\[user=({user_email}[^@]+@[^@\]\s]+)\]""",
     """\[user=({user}[^@]+@[^@\]\s]+)\]""",
     """\sssomgr:\s*({activity}.+?)\s*\["""
   ]

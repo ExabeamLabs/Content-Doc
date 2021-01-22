@@ -3,7 +3,6 @@
 {
 Name = brivo-badge-access
   Vendor = Brivo
-  Product = Brivo
   Lms = Direct
   DataType = "physical-access"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

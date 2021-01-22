@@ -8,6 +8,7 @@ Name = sk4-json-member-added-2008
     """({event_name}A member was added to a security-enabled)""",
     """"+MemberName"+:"+CN\\=({account_dn}[^,]+)""",
     """"+MemberSid"+:"+({account_id}[^"]+)""",
+    """"+TargetUserName"+:"+({group_name}[^"]+)""",
 
   ]
    DupFields = [ "host->dest_host" ]

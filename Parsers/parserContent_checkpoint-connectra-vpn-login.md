@@ -2,7 +2,7 @@
 ```Java
 {
 Name = checkpoint-connectra-vpn-login
-  Vendor = Check Point Software
+  Vendor = Check Point
   Product = Check Point Security Gateway
   Lms = Direct
   DataType = "vpn-start"
@@ -12,9 +12,7 @@ Name = checkpoint-connectra-vpn-login
     """\,(U|u)ser=({user}[^\,]+)""",
     """\s+time=({time}\d+\w+\s+\d+:\d+:\d+)""",
     """\,src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """exabeam_host=({host}[^\s]+)""",
-    """\,assigned_IP:=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\,orig=({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """exabeam_host=({host}[^\s]+)"""
   ]
 }
 ```

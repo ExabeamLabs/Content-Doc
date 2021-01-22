@@ -2,8 +2,7 @@
 ```Java
 {
 Name = q-beyondtrust-process-created
-  Vendor = BeyondTrust
-  Product = BeyondTrust PowerBroker
+  Vendor = BeyondTrust PowerBroker
   Lms = QRadar
   DataType = "process-created"
   IsHVF = true

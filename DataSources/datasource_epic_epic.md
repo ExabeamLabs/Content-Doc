@@ -2,50 +2,16 @@ Vendor: Epic
 ============
 Product: Epic
 -------------
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  55   |   6    |     4      |      6      |    6    |
 
-### Use Cases
+|               Use-Case                | Activity Types                                                                                                                                                                                                                           | Event Types/Parsers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | MITRE TTP                                                                                                                         | Content                                              |
+|:-------------------------------------:| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| [Other](../UseCases/usecase_other.md) | <ul><li>Activity Time  and Type</li><li>Application Activity</li><li>Asset Logon and Access</li><li>Critical System Activity</li><li>Email Activity</li><li>Network zones and Location Access</li><li>Service Account Activity</li></ul> |  account-password-change<br> ↳ [leef-epic-app-activity](../Parsers/parserContent_leef-epic-app-activity.md)<br><br> account-password-change-failed<br> ↳ [leef-epic-app-activity](../Parsers/parserContent_leef-epic-app-activity.md)<br><br> app-activity<br> ↳ [cef-epic-app-activity-11](../Parsers/parserContent_cef-epic-app-activity-11.md)<br> ↳ [cef-epic-app-activity-10](../Parsers/parserContent_cef-epic-app-activity-10.md)<br> ↳ [leef-epic-app-activity](../Parsers/parserContent_leef-epic-app-activity.md)<br> ↳ [cef-epic-app-activity-6](../Parsers/parserContent_cef-epic-app-activity-6.md)<br> ↳ [cef-epic-app-activity-9](../Parsers/parserContent_cef-epic-app-activity-9.md)<br><br> app-login<br> ↳ [leef-epic-app-activity](../Parsers/parserContent_leef-epic-app-activity.md)<br> ↳ [cef-epic-app-login](../Parsers/parserContent_cef-epic-app-login.md)<br><br> authentication-successful<br> ↳ [leef-epic-app-activity](../Parsers/parserContent_leef-epic-app-activity.md)<br> ↳ [cef-epic-auth-successful](../Parsers/parserContent_cef-epic-auth-successful.md)<br><br> failed-app-login<br> ↳ [cef-epic-failed-app-login](../Parsers/parserContent_cef-epic-failed-app-login.md)<br> ↳ [leef-epic-app-activity](../Parsers/parserContent_leef-epic-app-activity.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1188 - T1188<br> | <ul><li>55 Rules</li></ul><ul><li>6 Models</li></ul> |
 
-_The following Use Cases can be operationalized using log data from this data source_
-
-* [Account Creation and Management](../UseCases/usecase_account_creation_and_management.md)
-* [Activity Time  and Type](../UseCases/usecase_activity_time__and_type.md)
-* [Application Activity](../UseCases/usecase_application_activity.md)
-* [Asset Logon and Access](../UseCases/usecase_asset_logon_and_access.md)
-* [Critical System Activity](../UseCases/usecase_critical_system_activity.md)
-* [Email Activity](../UseCases/usecase_email_activity.md)
-* [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)
-* [Service Account Activity](../UseCases/usecase_service_account_activity.md)
-
-
-### Event Types
-
-_The following list of Event Types can be generated by Data Source Epic_Epic, and power the use cases above:_
-
-- account-password-change
-- account-password-change-failed
-- app-activity
-- app-login
-- authentication-successful
-- failed-app-login
-
-
-### Parsers
-
-_The following Parsers can be operationalized using log data from this data source_
-
-* [cef-epic-app-activity-1](../Parsers/parserContent_cef-epic-app-activity-1.md)
-* [cef-epic-app-activity-10](../Parsers/parserContent_cef-epic-app-activity-10.md)
-* [cef-epic-app-activity-11](../Parsers/parserContent_cef-epic-app-activity-11.md)
-* [cef-epic-app-activity-12](../Parsers/parserContent_cef-epic-app-activity-12.md)
-* [cef-epic-app-activity-2](../Parsers/parserContent_cef-epic-app-activity-2.md)
-* [cef-epic-app-activity-3](../Parsers/parserContent_cef-epic-app-activity-3.md)
-* [cef-epic-app-activity-4](../Parsers/parserContent_cef-epic-app-activity-4.md)
-* [cef-epic-app-activity-5](../Parsers/parserContent_cef-epic-app-activity-5.md)
-* [cef-epic-app-activity-6](../Parsers/parserContent_cef-epic-app-activity-6.md)
-* [cef-epic-app-activity-7](../Parsers/parserContent_cef-epic-app-activity-7.md)
-* [cef-epic-app-activity-8](../Parsers/parserContent_cef-epic-app-activity-8.md)
-* [cef-epic-app-activity-9](../Parsers/parserContent_cef-epic-app-activity-9.md)
-* [cef-epic-app-login](../Parsers/parserContent_cef-epic-app-login.md)
-* [cef-epic-auth-successful](../Parsers/parserContent_cef-epic-auth-successful.md)
-* [cef-epic-failed-app-login](../Parsers/parserContent_cef-epic-failed-app-login.md)
-* [leef-epic-app-activity](../Parsers/parserContent_leef-epic-app-activity.md)
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                                                                                                   | Execution | Persistence                                                                                                                                      | Privilege Escalation                                                | Defense Evasion                                                     | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration                                                                                | Impact |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ------------------- | ------------------------------------------------------------------------------------------- | ------ |
+| [External Remote Services](https://attack.mitre.org/techniques/T1133)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |           | [External Remote Services](https://attack.mitre.org/techniques/T1133)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   |           |                  |            |                     | [Exfiltration Over Alternative Protocol](https://attack.mitre.org/techniques/T1048)<br><br> |        |

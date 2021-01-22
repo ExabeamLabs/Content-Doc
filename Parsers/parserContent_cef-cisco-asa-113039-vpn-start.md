@@ -14,8 +14,8 @@ Name = cef-cisco-asa-113039-vpn-start
     """\sduser=(?:({domain}[^\s]+?)\\+)?({user}.+?)\s+([\w.]+=|$)""",
     """\sdhost=({dest_host}.+?)\s+([\w.]+=|$)""",
     """\sdst=({dest_ip}[a-fA-F\d.:]+)""",
-    """\sdvchost=({host}.+?)\s+([\w.]+=|$)""",
+    """\sdvchost=({host}.+?)\s+([\w.]+=|$)"""
   ]
-  DupFields = [ "host->dest_host" , "user->account"]
+  DupFields = [ "host->dest_host" ]
 }
 ```

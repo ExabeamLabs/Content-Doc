@@ -9,7 +9,7 @@ Name = cylance-alert-3
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """"src-application-name":"CylanceProtect"""", """ Skyformation """ ]
   Fields = [
-    """\d+\s+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3}Z)\s+({host}[\w\-.]+)\s+Skyformation""",
+    """\d+\s+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3}Z)\s+[\w\-.]+\s+Skyformation""",
     """"event-name":"({alert_name}[^"]+)""",
     """"event-name":"({alert_type}[^"]+)""",
     """"classification":"({alert_type}[^"]+)""",

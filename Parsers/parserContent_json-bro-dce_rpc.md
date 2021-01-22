@@ -2,8 +2,7 @@
 ```Java
 {
 Name = json-bro-dce_rpc
-  Vendor = Zeek
-  Product = Zeek Network Security Monitor
+  Vendor = Bro
   Lms = Direct
   DataType = "remote-access"
   IsHVF = true

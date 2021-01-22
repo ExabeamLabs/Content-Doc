@@ -2,6 +2,6 @@
 ```Java
 {
 Name = bluecoat-proxy-1
-  Conditions = [ """ OBSERVED """, """ TCP_""" ]
+  Conditions = [ """ OBSERVED """, """ TCP_""", """http""" ]
 }
 ```

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = hp-print-activity
-  Vendor = HP SafeCom
+  Vendor = HP
   Product = HP SafeCom
   Lms = Syslog
   DataType = "print-activity"

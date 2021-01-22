@@ -2,7 +2,7 @@
 ```Java
 {
 Name = vectra-activity-1
-  Product = Vectra
+  Product = Vectra Cognito Detect
   Vendor = Vectra
   Lms = Splunk
   DataType = "app-activity"

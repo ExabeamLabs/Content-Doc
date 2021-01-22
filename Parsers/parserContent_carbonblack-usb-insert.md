@@ -3,7 +3,7 @@
 {
 Name = carbonblack-usb-insert
   Vendor = Carbon Black
-  Product = CB Protection
+  Product = Cb Protection
   Lms = Direct
   DataType = "usb-activity"
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"

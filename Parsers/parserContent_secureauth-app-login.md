@@ -3,7 +3,6 @@
 {
 Name = secureauth-app-login
     Vendor = SecureAuth
-  Product = SecureAuth Login
     Lms = Direct
     DataType = "app-login"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -12,7 +11,7 @@ Name = secureauth-app-login
       """exabeam_raw=.*({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
 	"""<UserHostAddress>({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
 	"""<HostName>({host}[^<]+)""",
-	"""<EventID>({event_code}\d+)</EventID>""",
+	"""<EventID>({event_id}\d+)</EventID>""",
 	"""<UserID>({user}[^<]+)""",
 	"""<Realm>({app}[^<]+)""",
      	"""<UserAgent>(?:-|({browser}[\w\-]+))""",

@@ -3,7 +3,7 @@
 {
 Name = o365-phishing-alert
   Vendor = Microsoft
-  Product = Microsoft Office 365
+  Product = Office 365
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -24,6 +24,5 @@ Name = o365-phishing-alert
     """"Verdict":"({verdict}[^"]+)""",
     
   ]
-  DupFields = ["process->process_name"]
 }
 ```

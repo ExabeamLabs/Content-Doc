@@ -2,7 +2,7 @@
 ```Java
 {
 Name = akamai-web-activity
-  Vendor = Akamai
+  Vendor = Cloud Akamai
   Product = Cloud Akamai
   Lms = Direct
   DataType = "web-activity"

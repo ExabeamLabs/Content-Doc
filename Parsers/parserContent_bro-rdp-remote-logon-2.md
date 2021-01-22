@@ -2,8 +2,7 @@
 ```Java
 {
 Name = bro-rdp-remote-logon-2
-  Vendor = Zeek
-  Product = Zeek Network Security Monitor
+  Vendor = Bro
   Lms = Direct
   DataType = "remote-logon"
   TimeFormat = "epoch"

@@ -14,7 +14,7 @@ Name = raw-4648-3
       """<Computer>({host}[^<]+)</Computer>""",
       """Computer(\w+)?["\s]*(:|=)\s*"?({host}.+?)("|\s|;)""",
       """({event_code}4648)""",
-      """Subject(:|=)[\s;]*Security ID(:|=)\s*({user_sid}(?i)(s-[^\s;]+?))[\s;]*Account Name(:|=)""",
+      """Subject(:|=)[\s;]*Security ID(:|=)\s*({user_sid}[^\s;]+?)[\s;]*Account Name(:|=)""",
       """Subject(:|=).+?Account Name(:|=)\s*(?:-|SYSTEM|({user}[^\s;]+?))[\s;]*Account Domain(:|=)""",
       """Subject(:|=).+?Account Domain(:|=)\s*(?:-|NT Service|({domain}[^\s;]+?))[\s;]*Logon ID(:|=)""",
       """Subject(:|=).+?Logon ID(:|=)\s*({logon_id}.+?)[\s;]*Logon GUID(:|=)""",

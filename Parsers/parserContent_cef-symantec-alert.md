@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-symantec-alert
-  Vendor = Symantec
+  Vendor = Symantec WSS
   Product = Symantec WSS
   Lms = ArcSight
   DataType = "alert"
@@ -22,6 +22,5 @@ Name = cef-symantec-alert
     """\Woutcome=(|({outcome}.+?))(\s+\w+=|\s*$)""",
     """\Wdproc=(|({process_name}.+?))(\s+\w+=|\s*$)""",
   ]
-  DupFields = ["host->dest_host"]
 }
 ```

@@ -2,10 +2,10 @@
 ```Java
 {
 Name = raw-netscaler-ica-login
-  Vendor = Citrix
+  Vendor = Citrix Netscaler
   Product = Citrix Netscaler
   Lms = Direct
-  DataType = "vpn-login"
+  DataType = "app-login"
   TimeFormat = "MM/dd/yyyy:HH:mm:ss"
   Conditions = [ "SSLVPN ICASTART", "username:domainname" ]
   Fields = [

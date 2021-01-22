@@ -7,7 +7,7 @@ Name = cef-defender-atp-file
   Fields = ${MicrosoftParserTemplates.cef-defender-atp.Fields} [
      """"FileName"+:\s*"+({process_name}[^"]+)""",
      """"FolderPath"+:\s*"+({file_path}({file_parent}[^"]*?[\\\/]+)?({file_name}[^"\\\/]+?(\.({file_ext}\w+))?))"""",
-     """DeviceName"+:\s*"+({dest_host}[^"]+)""",
+     """DeviceName"+:\s*"+({dest_host}({host}[^"\.]+)?[^"]+)""",
      """MD5"+:"+({md5}[^"]+)""",
 ]
 }

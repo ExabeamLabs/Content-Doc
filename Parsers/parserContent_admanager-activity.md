@@ -2,8 +2,8 @@
 ```Java
 {
 Name = admanager-activity
-  Vendor = ManageEngine
-  Product = ADmanager
+  Vendor = Microsoft
+  Product = Microsoft Windows
   Lms = Direct
   DataType = "member-removed"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

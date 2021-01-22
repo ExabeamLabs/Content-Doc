@@ -3,7 +3,6 @@
 {
 Name = n-forwarded-cef-juniper-vpn-end
   Vendor = Juniper Networks
-  Product = Juniper VPN
   Lms = NitroCefSyslog
   DataType = "vpn-end"
   TimeFormat = "epoch"

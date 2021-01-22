@@ -3,7 +3,7 @@
 {
 Name = q-process-alert-carbonblack
   Vendor = Carbon Black
-  Product = CB Protection
+  Product = Cb Protection
   Lms = QRadar
   DataType = "process-alert"
   IsHVF = true
@@ -35,7 +35,6 @@ Name = q-process-alert-carbonblack
     """parent_guid=({parent_process_guid}.+?)\s*(\w+=|$)""",
     """parent_name=({parent_process}.+?)\s*(\w+=|$)""",
     """cmdline=({command_line}.+?)\s*(\w+=|$)""",
-    """host_type=(|({host_type}.+?))\s*(\w+=|$)""",
   ]
   DupFields = [ "directory->process_directory" ]
   SOAR {

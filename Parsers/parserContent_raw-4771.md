@@ -26,6 +26,5 @@ Name = raw-4771
     """Client Address:\s*(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)""",
     """Failure Code:\s*({result_code}[\w]+)"""
   ]
-  DupFields = ["host->dest_host"]
 }
 ```

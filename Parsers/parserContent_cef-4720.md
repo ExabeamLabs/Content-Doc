@@ -20,6 +20,5 @@ Name = cef-4720
     """\sdvchost=({host}[^\s]+)""",
     """ad.New_,Account:Security_,ID=({account_id}[^\s]+)"""
   ]
-   DupFields = ["host->dest_host"]
 }
 ```

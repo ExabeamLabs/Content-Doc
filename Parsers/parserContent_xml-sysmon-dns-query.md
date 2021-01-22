@@ -3,7 +3,7 @@
 {
 Name = xml-sysmon-dns-query
   Vendor = Microsoft
-  Product = Sysmon
+  Product = Microsoft Sysmon
   Lms = Splunk
   DataType = "dns-query"
   IsHVF = true

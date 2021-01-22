@@ -3,7 +3,7 @@
 {
 Name = cef-carbonblack-workstation-unlocked
   Vendor = Carbon Black
-  Product = CB Protection
+  Product = Cb Protection
   Lms = ArcSight
   DataType = "workstation-unlocked"
   TimeFormat = "epoch"

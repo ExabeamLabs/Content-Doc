@@ -3,7 +3,7 @@
 {
 Name = o365-inbox-rules-all-2
   Vendor = Microsoft
-  Product = Microsoft Office 365
+  Product = Office 365
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -24,6 +24,5 @@ Name = o365-inbox-rules-all-2
     """destinationServiceName=({app}.+?)\s*filePath"""
     """({app}Office 365)"""
   ]
-  DupFields = ["user_domain->email_domain"]
 }
 ```

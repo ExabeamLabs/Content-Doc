@@ -20,8 +20,7 @@ Name = s-panngwf-spyware-alert
     """,THREAT,.+?,\\?".*?",[^,]*,({threat_category}[^,]+),""",
     """THREAT,spyware,([^,]*,){29}({alert_severity}\w+)""",
     """THREAT,spyware,.*?,\\?".*?"+,([^,]*,){2}({alert_severity}\w+)""",
-    """THREAT,spyware,([^,]*,){17}({alert_id}\d+)""",
-    """THREAT,spyware,([^,]*,){7}(({domain}[^\\\/,]+)[\\\/]+)?({user}[^\\\/,]+),"""
+    """THREAT,spyware,([^,]*,){17}({alert_id}\d+)"""
   ]
   SOAR {
     IncidentType = "malware"

@@ -10,7 +10,6 @@ Name = crowdstrike-security-alert-1
     Conditions = [ """"event_simpleName":"SuspiciousDnsRequest"""" ]
     Fields = [
       """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-      """"aip":"({host}[^"]+)"""
       """"timestamp":"({time}\d+)""",
       """"DomainName":"({domain}[^"]+)""",
       """"event_simpleName":"({event_code}[^"]+)""",

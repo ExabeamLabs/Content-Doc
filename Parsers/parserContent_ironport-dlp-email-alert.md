@@ -2,7 +2,7 @@
 ```Java
 {
 Name = ironport-dlp-email-alert
-  Vendor = Cisco
+  Vendor = IronPort Email
   Product = IronPort Email
   Lms = Direct
   DataType = "dlp-email-alert"
@@ -20,12 +20,11 @@ Name = ironport-dlp-email-alert
     """Message finished MID ({alert_id}\d+) ({outcome}aborted|done)""",
     """MID \d+ ready ({bytes}\d+) bytes from """,
     """AMP file reputation verdict\s*:\s*(UNKNOWN|({file_verdict}.+?))\s+\w+\s+\w+\s+\d+\s+\d+:\d+:\d+""",
-    """MID\s*\d+\s*attachment\s*'({attachment}[^']+)""",
+    """MID \d+ attachment '({attachment}[^']+)""",
     """interim AV verdict using.+?({malware_score}\S+)\s+\w+\s+\w+\s+\d+\s+\d+:\d+:\d+""",
     """using engine: GRAYMAIL ({graymail_score}\S+)""",
     """CASE spam ({spam_score}\S+)""",
     """antivirus ({malware_score}\S+)""",
-    """\Wfname=(|({attachment}.*?))\s+(\w+=|$)""",
   ]
 }
 ```

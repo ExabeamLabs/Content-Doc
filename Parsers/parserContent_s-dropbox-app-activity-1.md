@@ -12,7 +12,7 @@ Name = s-dropbox-app-activity-1
       """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
       """"name":\s*"(?:N\/A|({user_fullname}[^"@,]+))"""",
       """"name":\s*"(?:N\/A|(({domain}[^"@\\\s]+)\\+)?({user}[^"@\\\s]+))"""",
-      """"email":\s*"(?:N\/A|({user_email}[^@"\s]+@({email_domain}[^@"\s]+)))""",
+      """"email":\s*"(?:N\/A|({user_email}[^@"\s]+@[^@"\s]+))""",
       """"time":\s*"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d[\d:+-]+)"""",
       """"event_type":\s*"({activity}[^"]+)"""",
       """"event_type_description":\s*"({additional_info}[^"]+)"""",

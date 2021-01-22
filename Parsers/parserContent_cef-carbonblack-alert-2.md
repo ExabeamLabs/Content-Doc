@@ -3,7 +3,7 @@
 {
 Name = cef-carbonblack-alert-2
   Vendor = Carbon Black
-  Product = CB Response
+  Product = Cb Response
   Lms = ArcSight
   DataType = "alert"
   TimeFormat = "epoch"
@@ -19,6 +19,5 @@ Name = cef-carbonblack-alert-2
     """\Wrequest=(|({malware_url}.+?))(\s+\w+=|\s*$)""",
     """\WrequestUrlPort=({dest_port}\d+)""",
   ]
-  DupFields = ["host->dest_host"]
 }
 ```

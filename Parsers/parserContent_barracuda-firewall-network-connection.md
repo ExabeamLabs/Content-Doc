@@ -2,8 +2,7 @@
 ```Java
 {
 Name = barracuda-firewall-network-connection
-  Vendor = Barracuda
-  Product = Barracuda Firewall
+  Vendor = Barracuda Firewall
   Lms = Direct
   DataType = "network-connection"
   IsHVF = true

@@ -2,8 +2,7 @@
 ```Java
 {
 Name = s-adaxes-app-activity
-  Vendor = Adaxes
-  Product = Adaxes
+  Vendor = Adaxes 
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

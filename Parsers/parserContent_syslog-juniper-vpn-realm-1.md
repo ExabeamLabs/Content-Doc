@@ -3,7 +3,6 @@
 {
 Name = syslog-juniper-vpn-realm-1
   Vendor = Juniper Networks
-  Product = Juniper VPN
   Lms = Syslog
   DataType = "vpn-start"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
@@ -35,6 +34,6 @@ Name = syslog-juniper-vpn-realm-1
     """\sduration=({session_duration}\d+)""",
     """\smsg="({additional_info}[^"]+)""",
   ]
-  DupFields = [ "dest_ip->host" , "user->account"]
+  DupFields = [ "dest_ip->host" ]
 }
 ```
