@@ -7,16 +7,18 @@ Name = json-sysmon-file-create
   Lms = Direct
   DataType = "file-operations"
   IsHVF = true
-  TimeFormat = "yyyy-MM-dd HH:mm:ss"
+  TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
   Conditions = [ """Microsoft-Windows-Sysmon""", """File created:""", """"AccountName":"""" ]
   Fields = [
-    """"UtcTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+    """"UtcTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)""",
     """"Image":"({process}({directory}[^"]*?[\\\/]+)?({process_name}[^"\\\/]+))""",
     """"TargetFilename":"({file_path}({file_parent}[^"]*?[\\\/]+)?({file_name}[^"\\\/]+?(\.({file_ext}\w+))?))"""",
-    """"Domain":"({domain}[^"]+)""",
-    """"AccountName":"({user}[^"]+)""",
+    """"Domain":"((?i)NT AUTHORITY|({domain}[^"]+))""",
+    """"AccountName":"((?i)SYSTEM|({user}[^"]+))""",
     """"ProcessID":({pid}\d+)""",
     """"Hostname":"({host}[^"]+)""",
+    """Category":"({event_name}[^"]+)""",
+    """"CreationUtcTime":"({creation_utc_time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d.\d\d\d)""",
   ]
 }
 ```

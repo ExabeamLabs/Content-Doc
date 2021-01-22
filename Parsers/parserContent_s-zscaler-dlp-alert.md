@@ -3,7 +3,7 @@
 {
 Name = s-zscaler-dlp-alert
   Vendor = Zscaler
-  Product = NSS
+  Product = Zscaler Internet Access
   Lms = Splunk
   DataType = "dlp-alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

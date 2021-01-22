@@ -21,10 +21,10 @@ Name = xml-sysmon-process-created-2
     """(?i)<Data Name='TargetProcessGuid'>\{({target_process_guid}[A-F0-9a-f-]+)\}</Data>""",
     """<Data Name='TargetProcessId'>({target_pid}\d+)</Data>""",
     """<Data Name='CommandLine'>({command_line}[^<]+?)\s*</Data>""",
-    """<Data Name='SourceImage'>({path}(({directory}[^<]*)\\+)?({process_name}[^<]+))</Data>""",
-    """<Data Name='TargetImage'>({target_path}(({target_directory}[^<]*)\\+)?({target_process_name}[^<]+))</Data>""",
+    """<Data Name='SourceImage'>({parent_process}(({parent_directory}[^<]*)\\+)?({parent_process_name}[^<]+?))</Data>""",
+    """<Data Name='TargetImage'>({process}(({directory}[^<]*)\\+)?({process_name}[^<]+?))</Data>""",
     """<Data Name='GrantedAccess'>({outcome}[^<]+)</Data>""",
   ]
-  DupFields = [ "host->dest_host","directory->process_directory","path->process" ]
+  DupFields = [ "host->dest_host","directory->process_directory" ]
 }
 ```

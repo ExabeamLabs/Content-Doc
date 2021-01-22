@@ -156,7 +156,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Cisco Call Manager
 * [Cisco Call Manager](DataSources/datasource_cisco_call_manager_cisco_call_manager.md)
 #### Citrix
-* [Citrix](DataSources/datasource_citrix_citrix.md)
 * [Citrix AppFW](DataSources/datasource_citrix_citrix_appfw.md)
 * [Citrix Endpoint Management](DataSources/datasource_citrix_citrix_endpoint_management.md)
 * [Citrix Gateway ActiveSync Connector](DataSources/datasource_citrix_citrix_gateway_activesync_connector.md)
@@ -165,7 +164,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Citrix ShareFile](DataSources/datasource_citrix_citrix_sharefile.md)
 * [Citrix XenApp](DataSources/datasource_citrix_citrix_xenapp.md)
 * [Citrix XenDesktop](DataSources/datasource_citrix_citrix_xendesktop.md)
-* [Netscaler VPN](DataSources/datasource_citrix_netscaler_vpn.md)
 * [Netscaler WAF](DataSources/datasource_citrix_netscaler_waf.md)
 * [Web Logging](DataSources/datasource_citrix_web_logging.md)
 #### Clearswift SEG
@@ -414,7 +412,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Lastline
 * [Lastline](DataSources/datasource_lastline_lastline.md)
 #### Lenel
-* [Lenel](DataSources/datasource_lenel_lenel.md)
+* [OnGuard](DataSources/datasource_lenel_onguard.md)
 #### Lexmark
 * [Lexmark](DataSources/datasource_lexmark_lexmark.md)
 #### Linux
@@ -546,8 +544,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [OneLogin](DataSources/datasource_onelogin_onelogin.md)
 #### OneSpan
 * [OneSpan](DataSources/datasource_onespan_onespan.md)
-#### Onguard
-* [Onguard](DataSources/datasource_onguard_onguard.md)
 #### OpenDJ
 * [OpenDJ LDAP](DataSources/datasource_opendj_opendj_ldap.md)
 #### Oracle
@@ -680,8 +676,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [SiteMinder](DataSources/datasource_siteminder_siteminder.md)
 #### SkySea
 * [ClientView](DataSources/datasource_skysea_clientview.md)
-#### Skyhigh Networks
-* [Skyhigh Networks CASB](DataSources/datasource_skyhigh_networks_skyhigh_networks_casb.md)
 #### Slack
 * [Slack](DataSources/datasource_slack_slack.md)
 #### Snort
@@ -789,7 +783,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [VMware Carbon Black App Control](DataSources/datasource_vmware_vmware_carbon_black_app_control.md)
 * [VMware Carbon Black Cloud Endpoint Standard](DataSources/datasource_vmware_vmware_carbon_black_cloud_endpoint_standard.md)
 * [VMware Carbon Black EDR](DataSources/datasource_vmware_vmware_carbon_black_edr.md)
-* [VMware ESX](DataSources/datasource_vmware_vmware_esx.md)
 * [VMware ESXi](DataSources/datasource_vmware_vmware_esxi.md)
 * [VMware Horizon](DataSources/datasource_vmware_vmware_horizon.md)
 * [VMware NSX](DataSources/datasource_vmware_vmware_nsx.md)
@@ -833,7 +826,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### Zoom
 * [Zoom](DataSources/datasource_zoom_zoom.md)
 #### Zscaler
-* [NSS](DataSources/datasource_zscaler_nss.md)
 * [Zscaler](DataSources/datasource_zscaler_zscaler.md)
 * [Zscaler Internet Access](DataSources/datasource_zscaler_zscaler_internet_access.md)
 * [Zscaler Private Access](DataSources/datasource_zscaler_zscaler_private_access.md)

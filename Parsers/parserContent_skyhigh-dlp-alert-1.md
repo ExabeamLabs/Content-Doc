@@ -2,7 +2,7 @@
 ```Java
 {
 Name = skyhigh-dlp-alert-1
-  Vendor = Skyhigh Networks
+  Vendor = McAfee
   Product = Skyhigh Networks CASB
   Lms = Splunk
   DataType = "dlp-alert"

@@ -3,7 +3,7 @@
 {
 Name = cef-netscaler-aaatm-login
   Vendor = Citrix
-  Product = Netscaler VPN
+  Product = Citrix Netscaler VPN
   Lms = Direct
   TimeFormat = "epoch"
   DataType = "remote-login"

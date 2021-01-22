@@ -2,8 +2,8 @@
 ```Java
 {
 Name = netscalar-remote-access-2
- Product =Netscaler VPN
  Vendor = Citrix
+ Product = Citrix Netscaler VPN
  Lms = Direct
  TimeFormat = "MM/dd/yyyy:HH:mm:ss"
  DataType = "remote-access"
