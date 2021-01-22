@@ -27,5 +27,6 @@ Name = s-O365-dlp-email
     """"MessageTraceId"+:\s*"+({alert_id}[^",]+)""",
     """src-account-name":"({account_name}[^"]+)"""
   ]
+  DupFields = [ "external_domain_recipient->external_domain" ]
 }
 ```
