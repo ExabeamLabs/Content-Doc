@@ -2,8 +2,7 @@
 ```Java
 {
 Name = s-radius-wireless-nac-logon
-  Vendor = Microsoft
-  Product = Microsoft Radius
+  Vendor = Microsoft Radius
   Lms = Splunk
   DataType = "windows-nac-logon"
   TimeFormat = "MM/dd/yyyy hh:mm:ss a"

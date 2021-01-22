@@ -2,8 +2,7 @@
 ```Java
 {
 Name = json-bro-dns-query
-  Vendor = Zeek
-  Product = Zeek Network Security Monitor
+  Vendor = Bro
   Lms = Direct
   DataType = "dns-query"
   IsHVF = true

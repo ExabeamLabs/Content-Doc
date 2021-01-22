@@ -2,8 +2,7 @@
 ```Java
 {
 Name = bro-ntlm
-  Vendor = Zeek
-  Product = Zeek Network Security Monitor
+  Vendor = Bro
   Lms = Direct
   DataType = "ntlm-logon"
   TimeFormat = "epoch_sec"

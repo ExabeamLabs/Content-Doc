@@ -2,8 +2,8 @@
 ```Java
 {
 Name = netwrix-file-activity
-  Vendor = Netwrix
-  Product = Netwrix Auditor
+  Vendor = NetWrix
+  Product = NetWrix Auditor
   Lms = Direct
   DataType = "file-operations"
   IsHVF = true

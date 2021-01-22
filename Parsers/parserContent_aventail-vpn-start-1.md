@@ -2,8 +2,8 @@
 ```Java
 {
 Name = aventail-vpn-start-1
-  Vendor = Dell
-  Product = SonicWALL Aventail
+  Vendor = Dell Aventail
+  Product = Aventail
   Lms = Splunk
   DataType = "vpn-start"
   TimeFormat = "dd/MMM/yyyy:HH:mm:ss.SSSSSS Z"
@@ -15,6 +15,5 @@ Name = aventail-vpn-start-1
     """Src='\[?({src_ip}[A-Fa-f:\d.]+)\]?:({src_port}\d+)'""",
     """Dest='({dest_ip}[A-Fa-f:\d.]+):({dest_port}\d+)'""",
   ]
-  DupFields = ["user->account"]
 }
 ```

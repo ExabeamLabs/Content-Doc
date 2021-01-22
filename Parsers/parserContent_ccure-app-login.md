@@ -2,8 +2,8 @@
 ```Java
 {
 Name = ccure-app-login
-  Vendor = Tyco
-  Product = CCURE Building Management System
+  Vendor = CCURE
+  Product = CCURE
   Lms = ArcSight
   DataType = "app-login"
   TimeFormat = "epoch"

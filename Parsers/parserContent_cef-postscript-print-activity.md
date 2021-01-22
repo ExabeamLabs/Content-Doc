@@ -3,7 +3,6 @@
 {
 Name = cef-postscript-print-activity
   Vendor = PostScript
-  Product = PostScript
   Lms = ArcSight
   DataType = "print-activity"
   TimeFormat = "yyyy-MM-dd  HH:- mm:ss a"

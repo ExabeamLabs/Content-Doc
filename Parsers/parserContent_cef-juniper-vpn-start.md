@@ -3,7 +3,6 @@
 {
 Name = cef-juniper-vpn-start
   Vendor = Juniper Networks
-  Product = Juniper VPN
   Lms = ArcSight
   DataType = "vpn-start"
   TimeFormat = "epoch"
@@ -18,8 +17,6 @@ Name = cef-juniper-vpn-start
     """\sspriv=({resource}.+?)\s+\w+=""",
     """\shostname\s+({src_host}[^\s|]+)""",
     """Session started for user with IP(v4)? address ({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
-    """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""", 
   ]
-  DupFields = ["user->account"]
 }
 ```

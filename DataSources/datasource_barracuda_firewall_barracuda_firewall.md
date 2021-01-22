@@ -2,45 +2,16 @@ Vendor: Barracuda Firewall
 ==========================
 Product: Barracuda Firewall
 ---------------------------
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  31   |   7    |     8      |      6      |    6    |
 
-### Use Cases
+|               Use-Case                | Activity Types                                                                                                                                                                                                                                              | Event Types/Parsers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | MITRE TTP                                                                                                                                                                                                                                               | Content                                              |
+|:-------------------------------------:| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| [Other](../UseCases/usecase_other.md) | <ul><li>Activity Time  and Type</li><li>Application Activity</li><li>Asset Logon and Access</li><li>Credential Switch Activity</li><li>Data Loss Prevention</li><li>Email Activity</li><li>Network zones and Location Access</li><li>VPN Activity</li></ul> |  <br> ↳ [barracuda-accounting-login](../Parsers/parserContent_barracuda-accounting-login.md)<br> ↳ [barracuda-accounting-logout](../Parsers/parserContent_barracuda-accounting-logout.md)<br><br> failed-vpn-login<br> ↳ [barracuda-failed-vpn-login](../Parsers/parserContent_barracuda-failed-vpn-login.md)<br><br> network-connection-failed<br> ↳ [barracuda-firewall-network-connection](../Parsers/parserContent_barracuda-firewall-network-connection.md)<br><br> network-connection-successful<br> ↳ [barracuda-firewall-network-connection](../Parsers/parserContent_barracuda-firewall-network-connection.md)<br><br> vpn-login<br> ↳ [barracuda-vpn-login](../Parsers/parserContent_barracuda-vpn-login.md)<br> ↳ [barracuda-login-peer](../Parsers/parserContent_barracuda-login-peer.md)<br><br> vpn-logout<br> ↳ [barracuda-logout-peer](../Parsers/parserContent_barracuda-logout-peer.md)<br> | T1003 - OS Credential Dumping<br>T1048 - Exfiltration Over Alternative Protocol<br>T1052 - Exfiltration Over Physical Medium<br>T1078 - Valid Accounts<br>T1110 - Brute Force<br>T1133 - External Remote Services<br>T1188 - T1188<br>T1208 - T1208<br> | <ul><li>31 Rules</li></ul><ul><li>7 Models</li></ul> |
 
-_The following Use Cases can be operationalized using log data from this data source_
-
-* [Account Creation and Management](../UseCases/usecase_account_creation_and_management.md)
-* [Activity Time  and Type](../UseCases/usecase_activity_time__and_type.md)
-* [Application Activity](../UseCases/usecase_application_activity.md)
-* [Asset Logon and Access](../UseCases/usecase_asset_logon_and_access.md)
-* [Badge Access](../UseCases/usecase_badge_access.md)
-* [Credential Switch Activity](../UseCases/usecase_credential_switch_activity.md)
-* [Data Loss Prevention](../UseCases/usecase_data_loss_prevention.md)
-* [Email Activity](../UseCases/usecase_email_activity.md)
-* [Executives](../UseCases/usecase_executives.md)
-* [Network](../UseCases/usecase_network.md)
-* [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)
-* [Privileged Activity](../UseCases/usecase_privileged_activity.md)
-* [Service Account Activity](../UseCases/usecase_service_account_activity.md)
-* [VPN Activity](../UseCases/usecase_vpn_activity.md)
-* [Web Activity](../UseCases/usecase_web_activity.md)
-
-
-### Event Types
-
-_The following list of Event Types can be generated by Data Source Barracuda Firewall_Barracuda Firewall, and power the use cases above:_
-
-- failed-vpn-login
-- network-connection-failed
-- network-connection-successful
-- vpn-login
-- vpn-logout
-
-
-### Parsers
-
-_The following Parsers can be operationalized using log data from this data source_
-
-* [barracuda-failed-vpn-login](../Parsers/parserContent_barracuda-failed-vpn-login.md)
-* [barracuda-firewall-network-connection](../Parsers/parserContent_barracuda-firewall-network-connection.md)
-* [barracuda-login-peer](../Parsers/parserContent_barracuda-login-peer.md)
-* [barracuda-logout-peer](../Parsers/parserContent_barracuda-logout-peer.md)
-* [barracuda-vpn-login](../Parsers/parserContent_barracuda-vpn-login.md)
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                                                                                                   | Execution | Persistence                                                                                                                                      | Privilege Escalation                                                | Defense Evasion                                                     | Credential Access                                                                                                                          | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration                                                                                                                                                                      | Impact |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | --------- | ---------------- | ---------- | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| [External Remote Services](https://attack.mitre.org/techniques/T1133)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |           | [External Remote Services](https://attack.mitre.org/techniques/T1133)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [OS Credential Dumping](https://attack.mitre.org/techniques/T1003)<br><br>[Brute Force](https://attack.mitre.org/techniques/T1110)<br><br> |           |                  |            |                     | [Exfiltration Over Alternative Protocol](https://attack.mitre.org/techniques/T1048)<br><br>[Exfiltration Over Physical Medium](https://attack.mitre.org/techniques/T1052)<br><br> |        |

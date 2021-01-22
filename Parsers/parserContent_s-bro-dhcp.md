@@ -2,8 +2,7 @@
 ```Java
 {
 Name = s-bro-dhcp
-  Vendor = Zeek
-  Product = Zeek Network Security Monitor
+  Vendor = Bro
   Lms = Splunk
   DataType = "dhcp"
   TimeFormat = "epoch_sec"

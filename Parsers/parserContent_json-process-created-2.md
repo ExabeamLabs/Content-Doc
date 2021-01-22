@@ -11,7 +11,7 @@ Name = json-process-created-2
     Conditions = [ """"event_id""", """4688""", """A new process has been created""" ]
     Fields = [
       """"EventTime"*:"*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s({host}[^\s]+)\sSkyformation""",
+      """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]+\sSkyformation""",
       """"@timestamp"*:"*({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d+Z)""",
       """"Account"*:"*(({domain}[^"]+?)[\\\/]+)?({user}[^"\\\/]+)"""",
       """({event_code}4688)""",

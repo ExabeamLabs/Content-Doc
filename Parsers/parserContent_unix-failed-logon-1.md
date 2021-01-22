@@ -14,7 +14,6 @@ Name = unix-failed-logon-1
     """({event_code}ssh)""",
     """<Invalid user ({user}[^\s]+)""",
     """ from ({src_ip}[A-Fa-f:\d.]+)""",
-    """\d+\s+\w+\s+\d+\s+\d+:\d+:\d+\s+\w+>\s+<({dest_host}[\w\-.]+)""",
   ]
 }
 ```

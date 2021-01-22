@@ -2,94 +2,16 @@ Vendor: CyberArk Vault
 ======================
 Product: CyberArk Vault
 -----------------------
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  78   |   14   |     8      |     13      |   13    |
 
-### Use Cases
+|               Use-Case                | Activity Types                                                                                                                                                                                                                                                                                                                                                                                 | Event Types/Parsers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | MITRE TTP                                                                                                                                                                                                                                                     | Content                                               |
+|:-------------------------------------:| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| [Other](../UseCases/usecase_other.md) | <ul><li>Activity Time  and Type</li><li>Application Activity</li><li>Asset Logon and Access</li><li>Credential Switch Activity</li><li>Critical System Activity</li><li>Email Activity</li><li>Endpoint Activity</li><li>Executives</li><li>File Activity</li><li>Network zones and Location Access</li><li>Process Activity</li><li>Security Alert</li><li>Service Account Activity</li></ul> |  account-password-change<br> ↳ [cyberark-password-change](../Parsers/parserContent_cyberark-password-change.md)<br> ↳ [cef-cyberark-password-change](../Parsers/parserContent_cef-cyberark-password-change.md)<br> ↳ [s-cyberark-password-change](../Parsers/parserContent_s-cyberark-password-change.md)<br> ↳ [cef-cyberark-password-change-1](../Parsers/parserContent_cef-cyberark-password-change-1.md)<br><br> account-password-change-failed<br> ↳ [s-cyberark-password-change-failed](../Parsers/parserContent_s-cyberark-password-change-failed.md)<br><br> account-password-reset<br> ↳ [s-cyberark-password-reset](../Parsers/parserContent_s-cyberark-password-reset.md)<br><br> account-switch<br> ↳ [cyberark-account-switch](../Parsers/parserContent_cyberark-account-switch.md)<br> ↳ [cef-cyberark-account-switch-1](../Parsers/parserContent_cef-cyberark-account-switch-1.md)<br> ↳ [cyberark-account-switch-1](../Parsers/parserContent_cyberark-account-switch-1.md)<br> ↳ [cef-cyberark-account-switch](../Parsers/parserContent_cef-cyberark-account-switch.md)<br><br> app-activity<br> ↳ [cef-cyberark-app-activity](../Parsers/parserContent_cef-cyberark-app-activity.md)<br> ↳ [leef-cyberark-app-activity](../Parsers/parserContent_leef-cyberark-app-activity.md)<br><br> app-activity-failed<br> ↳ [cef-cyberark-app-activity](../Parsers/parserContent_cef-cyberark-app-activity.md)<br> ↳ [leef-cyberark-app-activity](../Parsers/parserContent_leef-cyberark-app-activity.md)<br><br> app-login<br> ↳ [cef-cyberark-app-login](../Parsers/parserContent_cef-cyberark-app-login.md)<br> ↳ [cyberark-app-login](../Parsers/parserContent_cyberark-app-login.md)<br><br> failed-app-login<br> ↳ [cef-cyberark-failed-app-login](../Parsers/parserContent_cef-cyberark-failed-app-login.md)<br><br> file-delete<br> ↳ [cef-cyberark-app-activity](../Parsers/parserContent_cef-cyberark-app-activity.md)<br> ↳ [s-cyberark-file-delete](../Parsers/parserContent_s-cyberark-file-delete.md)<br> ↳ [leef-cyberark-app-activity](../Parsers/parserContent_leef-cyberark-app-activity.md)<br><br> file-permission-change<br> ↳ [cef-cyberark-app-activity](../Parsers/parserContent_cef-cyberark-app-activity.md)<br> ↳ [leef-cyberark-app-activity](../Parsers/parserContent_leef-cyberark-app-activity.md)<br><br> file-read<br> ↳ [cef-cyberark-app-activity](../Parsers/parserContent_cef-cyberark-app-activity.md)<br> ↳ [s-cyberark-file-read-1](../Parsers/parserContent_s-cyberark-file-read-1.md)<br> ↳ [s-cyberark-file-read-2](../Parsers/parserContent_s-cyberark-file-read-2.md)<br> ↳ [leef-cyberark-app-activity](../Parsers/parserContent_leef-cyberark-app-activity.md)<br><br> file-write<br> ↳ [cef-cyberark-app-activity](../Parsers/parserContent_cef-cyberark-app-activity.md)<br> ↳ [s-cyberark-file-write-1](../Parsers/parserContent_s-cyberark-file-write-1.md)<br> ↳ [s-cyberark-file-write-2](../Parsers/parserContent_s-cyberark-file-write-2.md)<br> ↳ [leef-cyberark-app-activity](../Parsers/parserContent_leef-cyberark-app-activity.md)<br><br> security-alert<br> ↳ [s-cyberark-security-alert-1](../Parsers/parserContent_s-cyberark-security-alert-1.md)<br> ↳ [s-cyberark-security-alert-2](../Parsers/parserContent_s-cyberark-security-alert-2.md)<br> ↳ [cef-cyberark-security-alert](../Parsers/parserContent_cef-cyberark-security-alert.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1066 - T1066<br>T1068 - Exploitation for Privilege Escalation<br>T1078 - Valid Accounts<br>T1098 - Account Manipulation<br>T1133 - External Remote Services<br>T1188 - T1188<br>T1204 - User Execution<br> | <ul><li>78 Rules</li></ul><ul><li>14 Models</li></ul> |
 
-_The following Use Cases can be operationalized using log data from this data source_
-
-* [Account Creation and Management](../UseCases/usecase_account_creation_and_management.md)
-* [Activity Time  and Type](../UseCases/usecase_activity_time__and_type.md)
-* [Application Activity](../UseCases/usecase_application_activity.md)
-* [Asset Logon and Access](../UseCases/usecase_asset_logon_and_access.md)
-* [Badge Access](../UseCases/usecase_badge_access.md)
-* [Credential Switch Activity](../UseCases/usecase_credential_switch_activity.md)
-* [Critical System Activity](../UseCases/usecase_critical_system_activity.md)
-* [Email Activity](../UseCases/usecase_email_activity.md)
-* [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
-* [Executives](../UseCases/usecase_executives.md)
-* [Failed Logon and Account Lockout](../UseCases/usecase_failed_logon_and_account_lockout.md)
-* [File Activity](../UseCases/usecase_file_activity.md)
-* [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)
-* [Pass The Hash and Golden Ticket](../UseCases/usecase_pass_the_hash_and_golden_ticket.md)
-* [Privileged Activity](../UseCases/usecase_privileged_activity.md)
-* [Security Operations](../UseCases/usecase_security_operations.md)
-* [Service Account Activity](../UseCases/usecase_service_account_activity.md)
-
-
-### Event Types
-
-_The following list of Event Types can be generated by Data Source CyberArk Vault_CyberArk Vault, and power the use cases above:_
-
-- account-password-change
-- account-password-change-failed
-- account-password-reset
-- account-switch
-- app-activity
-- app-activity-failed
-- app-login
-- failed-app-login
-- failed-logon
-- file-delete
-- file-permission-change
-- file-read
-- file-write
-- remote-logon
-
-
-### Parsers
-
-_The following Parsers can be operationalized using log data from this data source_
-
-* [cef-cyberark-account-switch](../Parsers/parserContent_cef-cyberark-account-switch.md)
-* [cef-cyberark-account-switch-1](../Parsers/parserContent_cef-cyberark-account-switch-1.md)
-* [cef-cyberark-app-activity](../Parsers/parserContent_cef-cyberark-app-activity.md)
-* [cef-cyberark-app-login](../Parsers/parserContent_cef-cyberark-app-login.md)
-* [cef-cyberark-failed-app-login](../Parsers/parserContent_cef-cyberark-failed-app-login.md)
-* [cef-cyberark-password-change](../Parsers/parserContent_cef-cyberark-password-change.md)
-* [cef-cyberark-password-change-1](../Parsers/parserContent_cef-cyberark-password-change-1.md)
-* [cyberark-account-switch](../Parsers/parserContent_cyberark-account-switch.md)
-* [cyberark-account-switch-1](../Parsers/parserContent_cyberark-account-switch-1.md)
-* [cyberark-app-login](../Parsers/parserContent_cyberark-app-login.md)
-* [cyberark-password-change](../Parsers/parserContent_cyberark-password-change.md)
-* [leef-cyberark-app-activity](../Parsers/parserContent_leef-cyberark-app-activity.md)
-* [s-cyberark-account-switch](../Parsers/parserContent_s-cyberark-account-switch.md)
-* [s-cyberark-account-switch-2](../Parsers/parserContent_s-cyberark-account-switch-2.md)
-* [s-cyberark-account-switch-3](../Parsers/parserContent_s-cyberark-account-switch-3.md)
-* [s-cyberark-activity](../Parsers/parserContent_s-cyberark-activity.md)
-* [s-cyberark-activity-1](../Parsers/parserContent_s-cyberark-activity-1.md)
-* [s-cyberark-activity-4](../Parsers/parserContent_s-cyberark-activity-4.md)
-* [s-cyberark-activity-5](../Parsers/parserContent_s-cyberark-activity-5.md)
-* [s-cyberark-activity-6](../Parsers/parserContent_s-cyberark-activity-6.md)
-* [s-cyberark-activity-7](../Parsers/parserContent_s-cyberark-activity-7.md)
-* [s-cyberark-app-activity](../Parsers/parserContent_s-cyberark-app-activity.md)
-* [s-cyberark-app-activity-1](../Parsers/parserContent_s-cyberark-app-activity-1.md)
-* [s-cyberark-app-activity-2](../Parsers/parserContent_s-cyberark-app-activity-2.md)
-* [s-cyberark-app-activity-3](../Parsers/parserContent_s-cyberark-app-activity-3.md)
-* [s-cyberark-app-activity-4](../Parsers/parserContent_s-cyberark-app-activity-4.md)
-* [s-cyberark-app-activity-5](../Parsers/parserContent_s-cyberark-app-activity-5.md)
-* [s-cyberark-app-activity-6](../Parsers/parserContent_s-cyberark-app-activity-6.md)
-* [s-cyberark-app-activity-7](../Parsers/parserContent_s-cyberark-app-activity-7.md)
-* [s-cyberark-app-activity-8](../Parsers/parserContent_s-cyberark-app-activity-8.md)
-* [s-cyberark-app-activity-9](../Parsers/parserContent_s-cyberark-app-activity-9.md)
-* [s-cyberark-failed-logon](../Parsers/parserContent_s-cyberark-failed-logon.md)
-* [s-cyberark-failed-logon-1](../Parsers/parserContent_s-cyberark-failed-logon-1.md)
-* [s-cyberark-file-delete](../Parsers/parserContent_s-cyberark-file-delete.md)
-* [s-cyberark-file-read-1](../Parsers/parserContent_s-cyberark-file-read-1.md)
-* [s-cyberark-file-read-2](../Parsers/parserContent_s-cyberark-file-read-2.md)
-* [s-cyberark-file-write-1](../Parsers/parserContent_s-cyberark-file-write-1.md)
-* [s-cyberark-file-write-2](../Parsers/parserContent_s-cyberark-file-write-2.md)
-* [s-cyberark-password-change](../Parsers/parserContent_s-cyberark-password-change.md)
-* [s-cyberark-password-change-failed](../Parsers/parserContent_s-cyberark-password-change-failed.md)
-* [s-cyberark-password-reset](../Parsers/parserContent_s-cyberark-password-reset.md)
-* [s-cyberark-remote-logon-1](../Parsers/parserContent_s-cyberark-remote-logon-1.md)
-* [s-cyberark-remote-logon-2](../Parsers/parserContent_s-cyberark-remote-logon-2.md)
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                                                                                                   | Execution                                                           | Persistence                                                                                                                                                                                                               | Privilege Escalation                                                                                                                                          | Defense Evasion                                                     | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration                                                                                | Impact |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ------------------- | ------------------------------------------------------------------------------------------- | ------ |
+| [External Remote Services](https://attack.mitre.org/techniques/T1133)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [User Execution](https://attack.mitre.org/techniques/T1204)<br><br> | [External Remote Services](https://attack.mitre.org/techniques/T1133)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br>[Account Manipulation](https://attack.mitre.org/techniques/T1098)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br>[Exploitation for Privilege Escalation](https://attack.mitre.org/techniques/T1068)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   |           |                  |            |                     | [Exfiltration Over Alternative Protocol](https://attack.mitre.org/techniques/T1048)<br><br> |        |

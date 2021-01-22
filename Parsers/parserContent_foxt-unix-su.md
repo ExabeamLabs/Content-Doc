@@ -2,8 +2,7 @@
 ```Java
 {
 Name = foxt-unix-su
-  Vendor = HelpSystems
-  Product = Powertech Identity Access Manager (BoKs)
+  Vendor = Fox BoKS ServerControl
   Lms = Exabeam
   DataType = "unix-account-switch"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

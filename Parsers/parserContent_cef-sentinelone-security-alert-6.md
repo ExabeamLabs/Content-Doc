@@ -28,5 +28,6 @@ Name = cef-sentinelone-security-alert-6
      """fileHash=({md5}.+?)\s\w+=""",
      """"rank":({alert_severity}\d+)"""
   ]
+  DupFields = ["file_name->process"]
 }
 ```

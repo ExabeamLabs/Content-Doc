@@ -2,7 +2,7 @@
 ```Java
 {
 Name = checkpoint-firewall-network-connection-accept
-  Vendor = Check Point Software
+  Vendor = Check Point
   Product = Check Point NGFW
   Lms = Direct
   DataType = "network-connection"

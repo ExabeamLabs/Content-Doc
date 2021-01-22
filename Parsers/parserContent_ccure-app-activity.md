@@ -2,8 +2,8 @@
 ```Java
 {
 Name = ccure-app-activity
-  Vendor = Tyco
-  Product = CCURE Building Management System
+  Vendor = CCURE
+  Product = CCURE
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss a"

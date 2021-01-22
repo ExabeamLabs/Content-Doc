@@ -2,8 +2,8 @@
 ```Java
 {
 Name = s-cylance-app-activity
-  Vendor = BlackBerry
-  Product = BlackBerry Protect
+  Vendor = Cylance
+  Product = PROTECT
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
@@ -14,7 +14,7 @@ Name = s-cylance-app-activity
     """\[({host}[\w\-.]+)\]\s*Event Type:""",
     """\sEvent Name:\s*({activity}[^,]+),""",
     """\sMessage:.+?[^,:]+(Assigned|Changed):\s*({additional_info}[^:,;]+)""",
-    """\sUser:\s*(|({user_fullname}.+?))\s*\(({user_email}[^@\s\)]+@({email_domain}[^@\s\)]+))\)""",
+    """\sUser:\s*(|({user_fullname}.+?))\s*\(({user_email}[^@\s\)]+@[^@\s\)]+)\)""",
     """\sSource IP:\s*({src_ip}[a-fA-F\d\.:]+)""",
     """\sProvider:\s*({login_type}[^,]+)""",
     """\sDevice:\s*({object}[^;]+)""",

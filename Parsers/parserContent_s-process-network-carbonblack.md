@@ -3,7 +3,7 @@
 {
 Name = s-process-network-carbonblack
   Vendor = Carbon Black
-  Product = CB Protection
+  Product = Cb Protection
   Lms = Splunk
   DataType = "process-network"
   IsHVF = true

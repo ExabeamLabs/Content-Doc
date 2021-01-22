@@ -3,7 +3,7 @@
 {
 Name = mcafee-siem-4768
     Vendor = Microsoft
-    Product = Microsoft Windows
+    Product = Windows
     Lms = Direct
     DataType = "windows-4768"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
@@ -18,6 +18,5 @@ Name = mcafee-siem-4768
       """"UserIDSrc":"({user}[^"]+)""",
       """"CommandID":"({result_code}[^"]+)""",
     ]
-    DupFields = ["host->dest_host"]
   }
 ```

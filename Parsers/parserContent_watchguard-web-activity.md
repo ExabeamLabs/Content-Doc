@@ -3,7 +3,6 @@
 {
 Name = watchguard-web-activity
   Vendor = Watchguard
-  Product = Watchguard
   Lms = Direct
   DataType = "web-activity"
   IsHVF = true

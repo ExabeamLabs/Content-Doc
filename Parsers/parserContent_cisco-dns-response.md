@@ -11,7 +11,6 @@ Name = cisco-dns-response
   Conditions = [ """AccessControlRuleAction: """, """ApplicationProtocol: DNS""", """DNSQuery: """ ]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """\w+\s+\d+ \d\d:\d\d:\d\d ({host}[\w.\-]+)""",
     """({time}\d+-\d+-\d+T\d+:\d+:\d+Z)\s+({host}[\w\-.]+)?\s*(\(|\%)""",
     """SrcIP:\s*({src_ip}[A-Fa-f:\d.]+)""",
     """DstIP:\s*({dest_ip}[A-Fa-f:\d.]+)""",
@@ -19,14 +18,12 @@ Name = cisco-dns-response
     """DstPort:\s*({dest_port}\d+)""",
     """AccessControlRuleAction:\s*({outcome}[^,]+)""",
     """Protocol:\s*({protocol}[^,]+)""",
-    """User:\s*(Unknown|No Authentication Required|({user}[^,\s]+))""",
+    """User:\s*(Unknown|({user}[^,\s]+))""",
     """InitiatorBytes:\s*({bytes_out}\d+)""",
     """ResponderBytes:\s*({bytes_in}\d+)""",
     """ACPolicy:\s*({policy}[^,]+)""",
     """DNSQuery:\s*({query}[^,]+)""",
-    """DNSRecordType:\s*({query_type}.+?)\s\w+[:=.]""",
-    """IngressInterface: ({src_interface}[^\s,]+?),""",
-    """EgressInterface: ({dest_interface}[^\s,]+?),""",
+    """DNSRecordType:\s*({query_type}[^,]+?)\s*(,|$)""",
   ]
 }
 ```

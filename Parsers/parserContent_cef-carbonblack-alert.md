@@ -3,7 +3,7 @@
 {
 Name = cef-carbonblack-alert
   Vendor = Carbon Black
-  Product = CB Protection
+  Product = Cb Protection
   Lms = ArcSight
   DataType = "alert"
   TimeFormat = "epoch"
@@ -21,10 +21,8 @@ Name = cef-carbonblack-alert
     """\sfname=({malware_url}.+?)\s+\w+=""",
     """\sfname=({malware_url_path}\w+:\/\/.+?)\s+\w+=""",
     """\sfname=({file_path}(?!\w+:\/\/).+?)\s+\w+=""",
-    """\sdvchost=({host}[^\s]+)""",
-    """\sdproc=({process_name}.*?)\s\w+=""",
+    """\sdvchost=({host}[^\s]+)"""
   ]
-  DupFields = ["host->dest_host"]
   SOAR {
       IncidentType = "malware"
       DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->malwareName", "alert_severity->sourceSeverity", "src_host->malwareVictimHost", "alert_type->description", "malware_url_path->malwareAttackerUrl", "file_path->malwareAttackerFile", "dest_ip->malwareAttackerIp"]

@@ -10,7 +10,6 @@ Name = zoom-meeting-updated
   Conditions = [ """|Skyformation|""", """"event":"meeting.updated"""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """\d+-\d+-\d+T\d+:\d+:\d+\.\d+\w ({host}[\w\-.]+) Skyformation""",
     """\WdestinationServiceName=({app}.+?)(\s+\w+=|\s*$)""",
     """"operator"\s*:\s*"({user_email}[^\s@"]+@[^\s@"]+)"""",
     """"operator_id"\s*:\s*"({meeting_host_id}[^"]+)"""",

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-phishme-security-alert
-  Vendor = Cofense
+  Vendor = Phishme
   Product = Phishme
   Lms = ArcSight
   DataType = "alert"

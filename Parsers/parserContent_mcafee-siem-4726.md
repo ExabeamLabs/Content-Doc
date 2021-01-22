@@ -3,7 +3,7 @@
 {
 Name = mcafee-siem-4726
     Vendor = Microsoft
-    Product = Microsoft Windows
+    Product = Windows
     Lms = Direct
     DataType = "windows-account-deleted"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
@@ -21,6 +21,6 @@ Name = mcafee-siem-4726
       """"Source_Logon_ID":"({logon_id}[^"]+)""",
       """"UserIDDst":"({target_user}[^"]+)"""
     ]
-    DupFields = [ "host->dest_host", "target_user->account_name" ]
+    DupFields = [ "host->dest_host" ]
   }
 ```

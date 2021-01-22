@@ -2,8 +2,7 @@
 ```Java
 {
 Name = corelight-dns-query
-  Vendor = Zeek
-  Product = Zeek Network Security Monitor
+  Vendor = Bro
   Lms = ArcSight
   DataType = "dns-query"
   IsHVF = true
@@ -17,7 +16,7 @@ Name = corelight-dns-query
     """"id\.resp_h":"({dest_ip}[a-fA-F\d.:]+)""",
     """"id\.resp_p":({dest_port}[a-fA-F\d.:]+)""",
     """"proto":"({protocol}[^"]+)""",
-    """"query":"({query}[^"]+\.({top_query}\w+\.(?i)(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za)))""",
+    """"query":"({query}[^"]+)""",
     """"qtype_name":"({query_type}[^"]+)""",
   ]
 }

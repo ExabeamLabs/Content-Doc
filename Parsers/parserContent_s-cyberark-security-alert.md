@@ -28,6 +28,5 @@ Name = s-cyberark-security-alert
       """\sseverity=({alert_severity}\w+)""",
       """\scef_signature=({alert_id}\d+)""",
     ]
-    DupFields = ["alert_name->alert_type"]
   }
 ```

@@ -19,6 +19,5 @@ Name = logstash-4768
       """"account_information-SuppliedRealmName":"\s*({domain}[^"]+)\s*""""
       """"account_information-UserID":"\s*(?:NULL SID|({user_sid}[^"]+))\s*""""
     ]
-    DupFields = ["host->dest_host"]
   }
 ```

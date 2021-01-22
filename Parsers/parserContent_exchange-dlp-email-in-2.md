@@ -7,7 +7,7 @@ Name = exchange-dlp-email-in-2
   Lms = Splunk
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:m:ss.SSS"
-  Conditions = [ """,SMTP,SEND,""", """,Incoming,""" ]
+  Conditions = [ """,SMTP,SEND,""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
     """,SMTP,.*?({time}\d\d\d\d-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d+)""",
@@ -29,6 +29,6 @@ Name = exchange-dlp-email-in-2
     """,\s*(?:'|")?(|MicrosoftExchange.*?|({external_address}[^\s,;@"']+@({external_domain}[^\s;,"'@]+))(?:'|")?)\s*,(?:(?:\s*'(?:[^']|'')+')\s*,|(?:\s*"(?:[^"]|"")+")\s*,|[^",]+?,|\s*,){2}Incoming,""",
     """,\s*(?:'|")?(?:<>|({return_path}[^,]+?))(?:'|")?\s*,(?:(?:\s*'(?:[^']|'')+')\s*,|(?:\s*"(?:[^"]|"")+")\s*,|[^",]+?,|\s*,)Incoming,""",
   ]
-  DupFields = [ "orig_user->user_email" ]
+  DupFields = [ "orig_user->email_user" ]
 }
 ```

@@ -2,8 +2,7 @@
 ```Java
 {
 Name = s-lanscopecat-logon
-  Vendor = LanScope
-  Product = LanScope Cat
+  Vendor = LanScope Cat
   Lms = Splunk
   DataType = "local-logon"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

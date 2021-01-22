@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-bitdefender-gravityzone-alert
-  Vendor = BitDefender
-  Product = Gravityzone
+  Vendor = Bitdefender
+  Product = Bitdefender GravityZone
   Lms = Direct
   DataType = "alert"
   TimeFormat = "MMM dd yyyy HH:mm:ss"

@@ -15,6 +15,5 @@ Name = evntslog-672
              """Result Code:\s+({result_code}[\w\-]+)""",
              """User ID:\s\%\{({user_sid}[^}]+)\}"""
   ]
-  DupFields = ["host->dest_host"]
 }
 ```

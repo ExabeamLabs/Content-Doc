@@ -21,7 +21,6 @@ Name = symantec-usb-write
     """File size \(bytes\):\s+({bytes}\d+)""",
     """Device ID:\s+({device_id}.*)&\d+""",
     """({device_type}(CD-DVD|USB))"""
-	"""SymantecServer:\s*({workstation}[^,]+?)\s*(,|$)"""
   ]
   DupFields = ["directory->process_directory"]
 }

@@ -31,7 +31,7 @@ Name = exchange-dlp-email-in
   DupFields = [
     "sender->external_address",
     "alert_name->alert_type",
-    "orig_user->user_email",
+    "orig_user->email_user",
     "recipients->recipient"
   ]
 }

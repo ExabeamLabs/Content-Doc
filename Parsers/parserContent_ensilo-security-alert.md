@@ -11,7 +11,7 @@ Name = ensilo-security-alert
   Fields = [
     """\s({host}[\w\-.]+)\s+enSilo""",
     """\WFirst Seen:\s*({time}\d+-\w+-\d+,\s*\d+:\d+:\d+)""",
-    """\WEvent ID:\s*({event_code}[^;]+)""",
+    """\WEvent ID:\s*({event_id}[^;]+)""",
     """\WRaw Data ID:\s*({alert_id}[^;]+)""",
     """\WDevice Name:\s*({src_host}[\w\-.]+)""",
     """\WProcess Name:\s*({process_name}[^;]+)""",

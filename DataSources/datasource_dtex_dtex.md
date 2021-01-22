@@ -2,68 +2,16 @@ Vendor: Dtex
 ============
 Product: Dtex
 -------------
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  121  |   30   |     18     |      9      |    9    |
 
-### Use Cases
+|               Use-Case                | Activity Types                                                                                                                                                                                                                                                                                                                                                               | Event Types/Parsers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | MITRE TTP                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Content                                                |
+|:-------------------------------------:| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| [Other](../UseCases/usecase_other.md) | <ul><li>Activity Time  and Type</li><li>Asset Logon and Access</li><li>Credential Switch Activity</li><li>Critical System Activity</li><li>Data Loss Prevention</li><li>Endpoint Activity</li><li>Executives</li><li>File Activity</li><li>Network zones and Location Access</li><li>Pass The Hash and Golden Ticket</li><li>Process Activity</li><li>Web Activity</li></ul> |  file-write<br> ↳ [cef-dtex-file-renamed](../Parsers/parserContent_cef-dtex-file-renamed.md)<br><br> local-logon<br> ↳ [cef-dtex-local-logon](../Parsers/parserContent_cef-dtex-local-logon.md)<br><br> print-activity<br> ↳ [cef-dtex-print-activity](../Parsers/parserContent_cef-dtex-print-activity.md)<br><br> process-created<br> ↳ [cef-dtex-process-created](../Parsers/parserContent_cef-dtex-process-created.md)<br><br> remote-logon<br> ↳ [cef-dtex-remote-logon](../Parsers/parserContent_cef-dtex-remote-logon.md)<br><br> usb-write<br> ↳ [s-dtex](../Parsers/parserContent_s-dtex.md)<br><br> web-activity-allowed<br> ↳ [cef-dtex-web-activity](../Parsers/parserContent_cef-dtex-web-activity.md)<br><br> workstation-locked<br> ↳ [cef-dtex-workstation-locked](../Parsers/parserContent_cef-dtex-workstation-locked.md)<br><br> workstation-unlocked<br> ↳ [cef-dtex-workstation-unlocked](../Parsers/parserContent_cef-dtex-workstation-unlocked.md)<br> | T1003 - OS Credential Dumping<br>T1021 - Remote Services<br>T1036 - Masquerading<br>T1041 - Exfiltration Over C2 Channel<br>T1048 - Exfiltration Over Alternative Protocol<br>T1052 - Exfiltration Over Physical Medium<br>T1068 - Exploitation for Privilege Escalation<br>T1071 - Application Layer Protocol<br>T1075 - T1075<br>T1078 - Valid Accounts<br>T1102 - Web Service<br>T1133 - External Remote Services<br>T1188 - T1188<br>T1189 - Drive-by Compromise<br>T1204 - User Execution<br>T1208 - T1208<br>T1213 - Data from Information Repositories<br>T1219 - Remote Access Software<br> | <ul><li>121 Rules</li></ul><ul><li>30 Models</li></ul> |
 
-_The following Use Cases can be operationalized using log data from this data source_
-
-* [Account Creation and Management](../UseCases/usecase_account_creation_and_management.md)
-* [Activity Time  and Type](../UseCases/usecase_activity_time__and_type.md)
-* [Asset Logon and Access](../UseCases/usecase_asset_logon_and_access.md)
-* [Badge Access](../UseCases/usecase_badge_access.md)
-* [Credential Switch Activity](../UseCases/usecase_credential_switch_activity.md)
-* [Critical System Activity](../UseCases/usecase_critical_system_activity.md)
-* [Data Loss Prevention](../UseCases/usecase_data_loss_prevention.md)
-* [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
-* [Executives](../UseCases/usecase_executives.md)
-* [File Activity](../UseCases/usecase_file_activity.md)
-* [Network](../UseCases/usecase_network.md)
-* [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)
-* [Pass The Hash and Golden Ticket](../UseCases/usecase_pass_the_hash_and_golden_ticket.md)
-* [Privileged Activity](../UseCases/usecase_privileged_activity.md)
-* [Security Alert](../UseCases/usecase_security_alert.md)
-* [Service Account Activity](../UseCases/usecase_service_account_activity.md)
-* [USB Activity](../UseCases/usecase_usb_activity.md)
-* [Web Activity](../UseCases/usecase_web_activity.md)
-
-
-### Event Types
-
-_The following list of Event Types can be generated by Data Source Dtex_Dtex, and power the use cases above:_
-
-- file-delete
-- file-read
-- file-write
-- local-logon
-- print-activity
-- process-created
-- remote-logon
-- usb-write
-- web-activity-allowed
-- workstation-locked
-- workstation-unlocked
-
-
-### Parsers
-
-_The following Parsers can be operationalized using log data from this data source_
-
-* [cef-dtex-dir-created](../Parsers/parserContent_cef-dtex-dir-created.md)
-* [cef-dtex-dir-delete](../Parsers/parserContent_cef-dtex-dir-delete.md)
-* [cef-dtex-dir-moved](../Parsers/parserContent_cef-dtex-dir-moved.md)
-* [cef-dtex-dir-renamed](../Parsers/parserContent_cef-dtex-dir-renamed.md)
-* [cef-dtex-file-copied](../Parsers/parserContent_cef-dtex-file-copied.md)
-* [cef-dtex-file-created](../Parsers/parserContent_cef-dtex-file-created.md)
-* [cef-dtex-file-delete](../Parsers/parserContent_cef-dtex-file-delete.md)
-* [cef-dtex-file-modified](../Parsers/parserContent_cef-dtex-file-modified.md)
-* [cef-dtex-file-moved](../Parsers/parserContent_cef-dtex-file-moved.md)
-* [cef-dtex-file-read](../Parsers/parserContent_cef-dtex-file-read.md)
-* [cef-dtex-file-renamed](../Parsers/parserContent_cef-dtex-file-renamed.md)
-* [cef-dtex-local-logon](../Parsers/parserContent_cef-dtex-local-logon.md)
-* [cef-dtex-print-activity](../Parsers/parserContent_cef-dtex-print-activity.md)
-* [cef-dtex-process-created](../Parsers/parserContent_cef-dtex-process-created.md)
-* [cef-dtex-remote-logon](../Parsers/parserContent_cef-dtex-remote-logon.md)
-* [cef-dtex-web-activity](../Parsers/parserContent_cef-dtex-web-activity.md)
-* [cef-dtex-workstation-locked](../Parsers/parserContent_cef-dtex-workstation-locked.md)
-* [cef-dtex-workstation-unlocked](../Parsers/parserContent_cef-dtex-workstation-unlocked.md)
-* [s-dtex](../Parsers/parserContent_s-dtex.md)
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                                                                                                                                                                           | Execution                                                           | Persistence                                                                                                                                      | Privilege Escalation                                                                                                                                          | Defense Evasion                                                                                                                      | Credential Access                                                          | Discovery | Lateral Movement                                                     | Collection                                                                              | Command and Control                                                                                                                                                                                                        | Exfiltration                                                                                                                                                                                                                                                       | Impact |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- | --------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
+| [External Remote Services](https://attack.mitre.org/techniques/T1133)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br>[Drive-by Compromise](https://attack.mitre.org/techniques/T1189)<br><br> | [User Execution](https://attack.mitre.org/techniques/T1204)<br><br> | [External Remote Services](https://attack.mitre.org/techniques/T1133)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br>[Exploitation for Privilege Escalation](https://attack.mitre.org/techniques/T1068)<br><br> | [Masquerading](https://attack.mitre.org/techniques/T1036)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [OS Credential Dumping](https://attack.mitre.org/techniques/T1003)<br><br> |           | [Remote Services](https://attack.mitre.org/techniques/T1021)<br><br> | [Data from Information Repositories](https://attack.mitre.org/techniques/T1213)<br><br> | [Web Service](https://attack.mitre.org/techniques/T1102)<br><br>[Remote Access Software](https://attack.mitre.org/techniques/T1219)<br><br>[Application Layer Protocol](https://attack.mitre.org/techniques/T1071)<br><br> | [Exfiltration Over Alternative Protocol](https://attack.mitre.org/techniques/T1048)<br><br>[Exfiltration Over C2 Channel](https://attack.mitre.org/techniques/T1041)<br><br>[Exfiltration Over Physical Medium](https://attack.mitre.org/techniques/T1052)<br><br> |        |

@@ -2,8 +2,7 @@
 ```Java
 {
 Name = json-bro-ntlm
-  Vendor = Zeek
-  Product = Zeek Network Security Monitor
+  Vendor = Bro
   Lms = Direct
   DataType = "ntlm-logon"
   IsHVF = true

@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-f5-vpn-user
-  Vendor = F5 Networks
-  Product = F5 BIG-IP Access Policy Manager (APM)
+  Vendor = F5
+  Product = Access Policy Manager
   Lms = ArcSight
   DataType = "vpn-user"
   TimeFormat = "epoch"

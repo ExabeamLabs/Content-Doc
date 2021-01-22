@@ -2,8 +2,8 @@
 ```Java
 {
 Name = eset-scan-activity
-  Vendor = ESET
-  Product = ESET Endpoint Security
+  Vendor = Symantec
+  Product = Symantec Endpoint Protection
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
@@ -13,9 +13,10 @@ Name = eset-scan-activity
   """Scan ID:\s*({scan_id}\d+)""",
   """Computer:\s*({host}[^,]+)""",
   """IP Address:\s*({src_ip}[^,]+)""",
-  """Server Name:\s*({dest_host}[^.]+)""",
-  """User1:\s*({user}[^,]+)""",
-  """Group Name:\s({group}[^,]+)"""
+  """Server Name:\s*({dest_host}[^.\s,]+)""",
+  """User1:\s*(SYSTEM|({user}[^,]+))""",
+  """Group Name:\s({group}[^,]+)""",
+  """Domain Name:\s*({domain}[^,]+)"""
   ]
 }
 ```

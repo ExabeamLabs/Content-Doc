@@ -18,7 +18,7 @@ Name = azure-app-logon
     """"operatingSystem":"({os}[^"]+)"""",
     """"conditionalAccessStatus":"({outcome}[^"]+)"""",
     """"tokenIssuerType":"({app}[^"]+)"""",
-    """"failureReason":"({failure_reason}.+?)(\.)?"""",
+    """"failureReason":"({failure_reason}[^"]+?)(\.)?"""",
   ]
 }
 ```

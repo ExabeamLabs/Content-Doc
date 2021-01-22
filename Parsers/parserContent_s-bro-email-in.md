@@ -2,8 +2,7 @@
 ```Java
 {
 Name = s-bro-email-in
-  Vendor = Zeek
-  Product = Zeek Network Security Monitor
+  Vendor = Bro
   Lms = Splunk
   DataType = "dlp-email-alert"
   TimeFormat = "epoch_sec"

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-kaspersky-es-alert
-  Vendor = Kaspersky
+  Vendor = Kaspersky Lab
   Product = Kaspersky Endpoint Security for Business
   Lms = Splunk
   DataType = "alert"

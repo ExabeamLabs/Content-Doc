@@ -2,8 +2,7 @@
 ```Java
 {
 Name = bro-smtp
-  Vendor = Zeek
-  Product = Zeek Network Security Monitor
+  Vendor = Bro
   Lms = Direct
   DataType = "dlp-email-alert"
   TimeFormat = "epoch_sec"

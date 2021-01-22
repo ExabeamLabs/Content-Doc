@@ -2,8 +2,7 @@
 ```Java
 {
 Name = q-duo-auth-failed
-  Vendor = Cisco
-  Product = Duo Access Security
+  Vendor = Duo Security
   Lms = QRadar
   DataType = "authentication-failed"
   TimeFormat = "MM/dd/yyyy HH:mm:ss"

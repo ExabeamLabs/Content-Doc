@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-connectra-vpn-login-failed
-  Vendor = Check Point Software
+  Vendor = Check Point
   Product = Check Point Security Gateway
   Lms = ArcSight
   DataType = "failed-vpn-login"
@@ -18,6 +18,6 @@ Name = cef-connectra-vpn-login-failed
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(\s+[\w\.:]+=|$)""",
     """\smsg=({failure_reason}.+?)(\s+[\w\.:]+=|$)""",
   ]
-  DupFields = [ "host->dest_host" , "user->account"]
+  DupFields = [ "host->dest_host" ]
 }
 ```

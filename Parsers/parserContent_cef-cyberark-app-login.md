@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-cyberark-app-login
-  Vendor = CyberArk
+  Vendor = CyberArk Vault
   Product = CyberArk Vault
   Lms = Splunk
   DataType = "app-login"
@@ -12,8 +12,8 @@ Name = cef-cyberark-app-login
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)(z|Z)?""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\srt=({time}\d+)(\s+\w+=|\s*$)""",
-    """\d\d:\d\d:\d\d(z|Z)? ({host}[\w\-.]+) CEF:""",
-    """\d\d:\d\d:\d\d(z|Z)? ({dest_host}[\w\-.]+) CEF:""",
+    """\d\d:\d\d:\d\d ({host}[\w\-.]+) CEF:""",
+    """\d\d:\d\d:\d\d ({dest_host}[\w\-.]+) CEF:""",
     """\sdvc="?({host}[^"\s]+)"?(\s+\w+=|\s*$)""",
     """\sdvchost="?({host}[^"\s]+)"?(\s+\w+=|\s*$)""",
     """\ssrc="?({src_ip}[^"\s]+)"?(\s+\w+=|\s*$)""",

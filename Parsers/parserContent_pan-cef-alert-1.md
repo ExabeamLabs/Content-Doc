@@ -2,8 +2,8 @@
 ```Java
 {
 Name = pan-cef-alert-1
-  TimeFormat = "MMM dd yyyy HH:mm:ss z"
   DataType = "network-alert"
+  TimeFormat = "MMM dd yyyy HH:mm:ss zzz"
   Conditions = [ """|Palo Alto Networks|PAN-OS|""","""file|THREAT|""" ]
 }
 ```

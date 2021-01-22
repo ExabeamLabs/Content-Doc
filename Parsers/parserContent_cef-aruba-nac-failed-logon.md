@@ -3,7 +3,6 @@
 {
 Name = cef-aruba-nac-failed-logon
   Vendor = HP Aruba
-  Product = Aruba Wireless controller
   Lms = ArcSight
   DataType = "nac-failed-logon"
   TimeFormat = "epoch"

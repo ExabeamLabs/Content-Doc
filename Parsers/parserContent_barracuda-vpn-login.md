@@ -2,7 +2,7 @@
 ```Java
 {
 Name = barracuda-vpn-login
-  Vendor = Barracuda
+  Vendor = Barracuda Firewall
   Product = Barracuda Firewall
   Lms = Direct
   DataType = "vpn-login"
@@ -14,6 +14,5 @@ Name = barracuda-vpn-login
     """\Wuser=({user}[^\s\(]+)\s*\(({src_ip}[A-Fa-f:\d.]+?):({src_port}\d+)""",
     """Login\s+'({user}[^\s']+)""",
   ]
-  DupFields = ["user->account"]
 }
 ```

@@ -3,7 +3,7 @@
 {
 Name = mcafee-siem-4625
     Vendor = Microsoft
-    Product = Microsoft Windows
+    Product = Windows
     Lms = Direct
     DataType = "windows-failed-logon"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

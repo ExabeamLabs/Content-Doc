@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-connectra-vpn-login
-  Vendor = Check Point Software
+  Vendor = Check Point
   Product = Check Point Security Gateway
   Lms = ArcSight
   DataType = "vpn-start"
@@ -19,6 +19,6 @@ Name = cef-connectra-vpn-login
     """\sad.os__name=({os}.+?)(\s+[\w\.:]+=|$)""",
     """\sad.office__mode__ip=({src_translated_ipnum}.+?)(\s+[\w\.:]+=|$)""",
   ]
-  DupFields = [ "host->dest_host", "user->account"]
+  DupFields = [ "host->dest_host"]
 }
 ```

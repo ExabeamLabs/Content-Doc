@@ -3,7 +3,7 @@
 {
 Name = cef-stealthwatch-network-alert
   Vendor = Cisco
-  Product = Cisco StealthWatch (Lancope)
+  Product = Cisco Secure Network Analytics
   Lms = Direct
   DataType = "network-alert"
   TimeFormat =  "epoch"

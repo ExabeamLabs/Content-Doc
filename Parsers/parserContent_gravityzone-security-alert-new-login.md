@@ -2,8 +2,8 @@
 ```Java
 {
 Name = gravityzone-security-alert-new-login
-  Product = Gravityzone
-  Vendor = Gravityzone
+  Product = Bitdefender
+  Vendor = Bitdefender GravityZone
   Lms = Direct
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

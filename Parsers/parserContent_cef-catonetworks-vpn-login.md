@@ -3,7 +3,7 @@
 {
 Name = cef-catonetworks-vpn-login
   Vendor = CatoNetworks
-  Product = Cato Cloud
+  Product = CatoNetworks
   Lms = ArcSight
   DataType = "vpn-login"
   TimeFormat = "EEE MMM dd HH:mm:ss Z yyyy"
@@ -17,7 +17,6 @@ Name = cef-catonetworks-vpn-login
     """\Wact=({outcome}.+?)\s+(\w+=|$)""",
     """\Wshost=({user_fullname}.+?)\s+(\w+=|$)""",
     """\Wtunnel_device_type=({os}.+?)\s+(\w+=|$)""",
-    """\Wcs3=({account}.*?)\s\w+=.*?cs3Label=CATOAccountName""",
   ]
 }
 ```

@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cylance-protect-security-alert
-  Vendor = BlackBerry
-  Product = BlackBerry Protect
+  Vendor = Cylance
+  Product = PROTECT
   Lms = Splunk
   DataType = "alert"
   TimeFormat = "M/d/yyyy H:mm:ss a"
@@ -16,9 +16,8 @@ Name = cylance-protect-security-alert
     """"File Status"+\s*:\s*"+({additional_info}([^"\\]|(\\\\)*\\"|\\[^"])+)"+\s*[,\]\}]""",
     """"Cylance Score"+\s*:\s*"+({alert_severity}([^"\\]|(\\\\)*\\"|\\[^"])+)"+\s*[,\]\}]""",
     """"File Path"+\s*:\s*"+({malware_url}([^"\\]|(\\\\)*\\"|\\[^"])+)"+\s*[,\]\}]""",
-    """"File Name":"\s*({file_name}[^"]+)"""",
   ]
-  DupFields = [ "alert_name->alert_type", "host->src_host" , "file_name->process_name"]
+  DupFields = [ "alert_name->alert_type", "host->src_host" ]
   SOAR {
     IncidentType = "malware"
     DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->malwareName", "alert_type->malwareCategory", "src_host->malwareVictimHost", "alert_severity->sourceSeverity", "malware_url->malwareAttackerFile"]

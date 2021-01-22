@@ -2,7 +2,7 @@
 ```Java
 {
 Name = raw-4724
-    Vendor = Microsoft
+    Vendor = Microsoft 
     Product = Microsoft Windows
     Lms = Direct
     DataType = "windows-password-reset"

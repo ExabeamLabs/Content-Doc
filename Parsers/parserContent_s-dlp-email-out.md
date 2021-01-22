@@ -6,10 +6,9 @@ Name = s-dlp-email-out
   Product = Forcepoint DLP
   Lms = Splunk
   DataType = "dlp-email-alert"
-  TimeFormat = "yyyy-MM-dd HH:mm:ss"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ "CEF:","|Websense|Data Security", "sourceServiceName=" ]
   Fields = [
-    """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_raw=.*?({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[^\s]+)""",
     """\ssuser=({user}.+?)\s+(\w+=|$)""",

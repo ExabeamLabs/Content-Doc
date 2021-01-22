@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-cyberark-app-activity
-  Vendor = CyberArk
+  Vendor = CyberArk Vault
   Product = CyberArk Vault
   Lms = Splunk
   DataType = "app-activity"

@@ -3,7 +3,7 @@
 {
 Name = s-process-alert-carbonblack
   Vendor = Carbon Black
-  Product = CB Protection
+  Product = Cb Protection
   Lms = Splunk
   DataType = "process-alert"
   IsHVF = true
@@ -32,7 +32,6 @@ Name = s-process-alert-carbonblack
     """"parent_guid"\s*:\s*"({parent_process_guid}[^"]+)""",
     """"parent_name"\s*:\s*"({parent_process}[^"]+)""",
     """"cmdline"\s*:\s*"\\?"({command_line}[^"]+?)\\?"""",
-    """"host_type"\s*:\s*"({host_type}[^"]+)"""",
   ]
   DupFields = [ "process->path","directory->process_directory" ]
   SOAR {

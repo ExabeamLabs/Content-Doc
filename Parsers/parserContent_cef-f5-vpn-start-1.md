@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-f5-vpn-start-1
-  Vendor = F5 Networks
+  Vendor = F5
   Product = Big-IP
   Lms = ArcSight
   DataType = "vpn-start"
