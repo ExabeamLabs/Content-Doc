@@ -2,7 +2,7 @@
 ```Java
 {
 Name = ad-audit-4729
-  Vendor = ManageEngine
+  Vendor = AD Audit
   Product = AD Audit
   Lms = Direct
   DataType = "windows-member-removed"

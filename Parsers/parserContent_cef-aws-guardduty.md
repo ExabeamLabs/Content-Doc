@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-aws-guardduty
-  Vendor = AWS
+  Vendor = AWS GuardDuty
   Product = AWS GuardDuty
   Lms = Direct
   DataType = "alert"

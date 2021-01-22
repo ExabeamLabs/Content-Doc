@@ -2,7 +2,7 @@
 ```Java
 {
 Name = ad-audit-4724
-  Vendor = ManageEngine
+  Vendor = AD Audit
   Product = AD Audit
   Lms = Direct
   DataType = "windows-password-reset"

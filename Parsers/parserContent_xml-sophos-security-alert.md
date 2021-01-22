@@ -15,7 +15,6 @@ Name = xml-sophos-security-alert
     """<EventData><Data>({alert_name}.+?)</Data><Data>({file_path}({file_parent}[^<>]+?)?({file_name}[^<>\\\/]*?(\.({file_ext}\w+))?))(\\\w+)?</Data><Data>.*?</Data><Data>({alert_type}.+?)</Data><Data>.*?</Data><Data>({outcome}.+?)\.?\s*</Data>""",
     """<Computer>({src_host}.+?)</Computer>""",
     """C:\\Users\\({user}[^\\<>]+)""",
-    """</Message><Level>({alert_severity}[^\<]+)""",
   ]
 }
 ```

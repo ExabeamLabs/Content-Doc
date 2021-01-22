@@ -2,8 +2,7 @@
 ```Java
 {
 Name = trapx-alert
-  Vendor = TrapX
-  Product = TrapX
+  Vendor = Trapx
   Lms = Splunk
   DataType = "network-alert"
   TimeFormat = "MMM dd yyy HH:mm:ss"

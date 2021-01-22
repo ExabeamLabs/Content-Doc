@@ -3,7 +3,7 @@
 {
 Name = syslog-5158
   Vendor = Microsoft
-  Product = Microsoft Windows
+  Product = Windows
   Lms = Direct
   DataType = "process-network-bind"
   TimeFormat = "EEE MMM dd HH:mm:ss yyyy"

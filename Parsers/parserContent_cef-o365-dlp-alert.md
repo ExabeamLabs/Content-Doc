@@ -3,7 +3,7 @@
 {
 Name = cef-o365-dlp-alert
   Vendor = Microsoft
-  Product = Microsoft Office 365
+  Product = Office 365 
   Lms = Direct
   DataType = "dlp-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

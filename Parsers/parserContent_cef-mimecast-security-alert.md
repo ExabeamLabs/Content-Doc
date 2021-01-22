@@ -3,7 +3,7 @@
 {
 Name = cef-mimecast-security-alert
   Vendor = Mimecast
-  Product = Mimecast Email Security
+  Product = Email Security
   Lms = ArcSight
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

@@ -2,8 +2,7 @@
 ```Java
 {
 Name = cef-rangeraudit-app-login
-  Vendor = RangerAudit
-  Product = RangerAudit
+  Vendor = RangerAudit 
   Lms = ArcSight
   DataType = "app-login"
   TimeFormat = "epoch"

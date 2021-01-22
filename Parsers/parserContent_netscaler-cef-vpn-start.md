@@ -2,7 +2,7 @@
 ```Java
 {
 Name = netscaler-cef-vpn-start
-  Vendor = Citrix
+  Vendor = Citrix Netscaler
   Product = Citrix Netscaler
   Lms = ArcSight
   DataType = "vpn-start"

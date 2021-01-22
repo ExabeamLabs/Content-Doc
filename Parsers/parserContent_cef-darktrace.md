@@ -3,7 +3,7 @@
 {
 Name = cef-darktrace
    Vendor = Darktrace
-   Product = Darktrace Enterprise Immune System
+   Product = Darktrace
    Lms = Direct
    DataType = "alert"
    TimeFormat = "epoch"

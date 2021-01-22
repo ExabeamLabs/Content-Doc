@@ -1,6 +1,6 @@
 Vendor: Microsoft
 =================
-Product: SharePoint
+Product: Sharepoint
 -------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|

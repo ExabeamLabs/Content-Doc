@@ -2,7 +2,7 @@
 ```Java
 {
 Name = netscaler-network-connection-3
-  Vendor = Citrix
+  Vendor = Citrix Netscaler
   Product = Netscaler WAF
   Lms = Direct
   DataType = "network-connection"

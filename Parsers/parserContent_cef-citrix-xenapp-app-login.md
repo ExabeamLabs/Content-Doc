@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-citrix-xenapp-app-login
-  Vendor = Citrix
+  Vendor = Citrix XenApp
   Product = Citrix XenApp
   Lms = Direct
   DataType = "app-login"

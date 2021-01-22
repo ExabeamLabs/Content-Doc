@@ -2,7 +2,7 @@
 ```Java
 {
 Name = ad-audit-5140
-  Vendor = ManageEngine
+  Vendor = AD Audit
   Product = AD Audit
   Lms = Direct
   DataType = "share-access"

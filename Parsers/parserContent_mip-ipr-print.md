@@ -3,7 +3,6 @@
 {
 Name = mip-ipr-print
   Vendor = MIPS
-  Product = MIPS
   Lms = Splunk
   DataType = "print-activity"
   IsHVF = true

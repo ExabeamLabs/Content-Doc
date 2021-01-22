@@ -3,7 +3,7 @@
 {
 Name = cef-scbpam-account-switch
   Vendor = Dell
-  Product = One Identity Manager
+  Product = Dell Quest TPAM
   Lms = ArcSight
   DataType = "account-switch"
   TimeFormat = "epoch"

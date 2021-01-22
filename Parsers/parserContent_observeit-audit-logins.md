@@ -3,7 +3,6 @@
 {
 Name = observeit-audit-logins
   Vendor = ObserveIT
-  Product = ObserveIT
   Lms = Direct
   DataType = "app-login"
   TimeFormat = "MM/dd/yyyy HH:mm:ss"

@@ -2,7 +2,6 @@
 ```Java
 {
 Name = s-aws-cloudtrail-activity-delete-json
-  Product = AWS CloudTrail
   DataType = "file-operations"
   Conditions = [  "\"AwsApiCall\"", "\"eventName\"", "\"awsRegion\"", "\"eventName\"", "\"DeleteObject" ]
   Fields = ${AWSParserTemplates.s-aws-cloudtrail-activity-json.Fields} [

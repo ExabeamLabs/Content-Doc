@@ -3,7 +3,7 @@
 {
 Name = centrify-failed-logon
   Vendor = Centrify
-  Product = Centrify Authentication Service
+  Product = Centrify
   Lms = Direct
   DataType = "failed-logon"
   TimeFormat = "epoch"

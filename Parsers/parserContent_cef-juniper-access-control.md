@@ -3,7 +3,6 @@
 {
 Name = cef-juniper-access-control
   Vendor = Juniper Networks
-  Product = Juniper VPN
   Lms = ArcSight
   DataType = "access-control"
   TimeFormat = "epoch"

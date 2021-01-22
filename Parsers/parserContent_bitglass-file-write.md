@@ -2,8 +2,7 @@
 ```Java
 {
 Name = bitglass-file-write
-  Vendor = Bitglass
-  Product = Bitglass CASB
+  Vendor = BitGlass
   Lms = Direct
   DataType = "file-write"
   IsHVF = true

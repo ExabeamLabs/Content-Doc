@@ -22,7 +22,6 @@ Name = xml-4688
     """<Data Name='NewProcessName'>({process}({directory}(?:[^<>]+)?[\\\/])?({process_name}[^\\\/<>]+))</Data>""",
     """<Data Name='NewProcessName'>({path}[^<]+?)</Data>""",
     """<Data Name='CommandLine'>\s*({command_line}[^<]+?)\s*</Data>""",
-    """<Data Name='CommandLine'>\s*(|-|(sc|((?:[^"]+)?[\\\/])?sc.exe)\s*(?:\\*[\w.\-]+)?\s*create\s*({service_name}.+?))\s+binPath= ({process}({directory}(?:[^<>]+)?[\\\/])?({process_name}[^\\\/<>]+))</Data>""",
     """<Data Name='ProcessId'>({parent_process_guid}[x\da-f]+)</Data>""",
   ]
   DupFields = [ "host->dest_host","process_guid->pid","directory->process_directory" ]

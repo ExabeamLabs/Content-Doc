@@ -3,7 +3,7 @@
 {
 Name = mcafee-siem-5136
     Vendor = Microsoft
-    Product = Microsoft Windows
+    Product = Windows
     Lms = Direct
     DataType = "windows-ds-access"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

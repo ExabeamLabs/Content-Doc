@@ -2,8 +2,7 @@
 ```Java
 {
 Name = foxt-file-upload
-  Vendor = HelpSystems
-  Product = Powertech Identity Access Manager (BoKs)
+  Vendor = Fox BoKS ServerControl
   Lms = Exabeam
   DataType = "file-operations"
   IsHVF = true

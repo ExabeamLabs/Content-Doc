@@ -10,7 +10,6 @@ Name = raw-4624
     Conditions = ["An account was successfully logged on", "Account Name:"]
     Fields = [
       """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
-      """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
       """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """<\d+>\s*\w+\s+\d+\s+\d+:\d+:\d+\s+({host}[\w.\-]+)""",
       """({event_name}An account was successfully logged on)""",
@@ -24,7 +23,7 @@ Name = raw-4624
       """Logon Process:\s*({auth_process}[^\s;]+)[\s;]*Authentication Package:\s*({auth_package}[^\s;]+)""",
       """Logon ID:\s*({logon_id}[^\s;]+)[\s;]*(Linked Logon|Logon GUID)""",
       """New Logon:[\s;]*Security ID:\s*({user_sid}[^\s;]+)(\s|;)""",
-      """Account Name:\s*(-|[^\$\s]+\$|({account}[^\s]+))"""
+      """Account Name:\s*(-|({account}[^\s]+))"""
     ]
     DupFields = ["host->dest_host", "directory->process_directory"]
   }

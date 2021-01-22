@@ -2,43 +2,16 @@ Vendor: StealthBits
 ===================
 Product: StealthBits
 --------------------
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  30   |   19   |     6      |      9      |    9    |
 
-### Use Cases
+|               Use-Case                | Activity Types                                                                                                                                                                                                                | Event Types/Parsers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | MITRE TTP                                                                                                                                                                                                      | Content                                               |
+|:-------------------------------------:| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| [Other](../UseCases/usecase_other.md) | <ul><li>Account Creation and Management</li><li>Activity Time  and Type</li><li>Asset Logon and Access</li><li>Critical System Activity</li><li>Endpoint Activity</li><li>File Activity</li><li>Privileged Activity</li></ul> |  account-disabled<br> ↳ [q-leef-ds-account-disabled](../Parsers/parserContent_q-leef-ds-account-disabled.md)<br><br> account-enabled<br> ↳ [q-leef-ds-account-enabled](../Parsers/parserContent_q-leef-ds-account-enabled.md)<br><br> ds-access<br> ↳ [q-leef-ds-object-modification](../Parsers/parserContent_q-leef-ds-object-modification.md)<br><br> failed-ds-access<br> ↳ [q-leef-ds-object-modification](../Parsers/parserContent_q-leef-ds-object-modification.md)<br><br> file-permission-change<br> ↳ [cef-stealthbits-file-operations](../Parsers/parserContent_cef-stealthbits-file-operations.md)<br><br> file-read<br> ↳ [cef-stealthbits-file-operations](../Parsers/parserContent_cef-stealthbits-file-operations.md)<br><br> file-write<br> ↳ [cef-stealthbits-file-operations](../Parsers/parserContent_cef-stealthbits-file-operations.md)<br><br> member-added<br> ↳ [q-leef-ds-member-added](../Parsers/parserContent_q-leef-ds-member-added.md)<br><br> member-removed<br> ↳ [q-leef-ds-member-removed](../Parsers/parserContent_q-leef-ds-member-removed.md)<br> | T1003 - OS Credential Dumping<br>T1068 - Exploitation for Privilege Escalation<br>T1078 - Valid Accounts<br>T1083 - File and Directory Discovery<br>T1098 - Account Manipulation<br>T1204 - User Execution<br> | <ul><li>30 Rules</li></ul><ul><li>19 Models</li></ul> |
 
-_The following Use Cases can be operationalized using log data from this data source_
-
-* [Account Creation and Management](../UseCases/usecase_account_creation_and_management.md)
-* [Activity Time  and Type](../UseCases/usecase_activity_time__and_type.md)
-* [Asset Logon and Access](../UseCases/usecase_asset_logon_and_access.md)
-* [Critical System Activity](../UseCases/usecase_critical_system_activity.md)
-* [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
-* [File Activity](../UseCases/usecase_file_activity.md)
-* [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)
-* [Privileged Activity](../UseCases/usecase_privileged_activity.md)
-
-
-### Event Types
-
-_The following list of Event Types can be generated by Data Source StealthBits_StealthBits, and power the use cases above:_
-
-- account-disabled
-- account-enabled
-- ds-access
-- failed-ds-access
-- file-permission-change
-- file-read
-- file-write
-- member-added
-- member-removed
-
-
-### Parsers
-
-_The following Parsers can be operationalized using log data from this data source_
-
-* [cef-stealthbits-file-operations](../Parsers/parserContent_cef-stealthbits-file-operations.md)
-* [q-leef-ds-account-disabled](../Parsers/parserContent_q-leef-ds-account-disabled.md)
-* [q-leef-ds-account-enabled](../Parsers/parserContent_q-leef-ds-account-enabled.md)
-* [q-leef-ds-member-added](../Parsers/parserContent_q-leef-ds-member-added.md)
-* [q-leef-ds-member-removed](../Parsers/parserContent_q-leef-ds-member-removed.md)
-* [q-leef-ds-object-modification](../Parsers/parserContent_q-leef-ds-object-modification.md)
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                      | Execution                                                           | Persistence                                                                                                                                  | Privilege Escalation                                                                                                                                          | Defense Evasion                                                     | Credential Access                                                          | Discovery                                                                         | Lateral Movement | Collection | Command and Control | Exfiltration | Impact |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ---------------- | ---------- | ------------------- | ------------ | ------ |
+| [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [User Execution](https://attack.mitre.org/techniques/T1204)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br>[Account Manipulation](https://attack.mitre.org/techniques/T1098)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br>[Exploitation for Privilege Escalation](https://attack.mitre.org/techniques/T1068)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [OS Credential Dumping](https://attack.mitre.org/techniques/T1003)<br><br> | [File and Directory Discovery](https://attack.mitre.org/techniques/T1083)<br><br> |                  |            |                     |              |        |

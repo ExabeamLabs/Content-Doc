@@ -3,14 +3,13 @@
 {
 Name = cef-bit9-process-alert
   Vendor = Carbon Black
-  Product = CB Protection
+  Product = Cb Protection
   Lms = ArcSight
   DataType = "process-alert"
   IsHVF = true
   TimeFormat = "MM dd yyyy HH:mm:ss"
   Conditions = [ """|Bit9|Security Platform|""", "|Carbon Black watchlist|" ]
   Fields = [
-    """({time}\d\d \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
     """(exabeam_\w+=|^)({time}\d\d \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
     """(\||\s)cs5=(|({alert_name}.+?))\s+([\w-]+=|$)""",
     """(\||\s)externalId=({alert_id}.+?)(\s+[\w-]+=|\s*$)""",

@@ -3,7 +3,7 @@
 {
 Name = o365-signin-alert
   Vendor = Microsoft
-  Product = Microsoft Office 365
+  Product = Office 365
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -20,6 +20,6 @@ Name = o365-signin-alert
     """({alert_type}anomalous-signin)"""
     """"location":\{"({additional_info}.*?)\}+"""
   ]
-  DupFields = [ "process->vendor_value", "alert_type->alert_name" ] 
+  DupFields = [ "process->vendor_value", "alert_type->alert_name" ]  
 }
 ```

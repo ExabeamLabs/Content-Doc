@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cyberark-app-login
-  Vendor = CyberArk
+  Vendor = CyberArk Vault
   Product = CyberArk Vault
   Lms = Direct
   DataType = "app-login"

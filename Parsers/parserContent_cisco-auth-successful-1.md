@@ -3,7 +3,7 @@
 {
 Name = cisco-auth-successful-1
   Vendor = Cisco
-  Product = Cisco Call Manager
+  Product = Cisco
   Lms = Direct
   DataType = "authentication-successful"
   TimeFormat = "MMM dd yyyy HH:mm:ss a"

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = vmware-esxi-login
-  Vendor = VMware
+  Vendor = VMware ESXi
   Product = VMware ESXi
   Lms = Direct
   DataType = "remote-logon"

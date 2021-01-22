@@ -3,7 +3,6 @@
 {
 Name = syslog-xceedium-failed-login
   Vendor = Xceedium
-  Product = Xceedium
   Lms = Direct
   DataType = "failed-app-login"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

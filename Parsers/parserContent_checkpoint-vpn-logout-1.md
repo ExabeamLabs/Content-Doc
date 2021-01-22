@@ -2,8 +2,8 @@
 ```Java
 {
 Name = checkpoint-vpn-logout-1
-  Vendor = Check Point Software
-  Product = Check Point Identity Awareness
+  Vendor = Checkpoint
+  Product = Checkpoint Identity Awareness
   Lms = Direct
   DataType = "vpn-end"
   TimeFormat = "dMMMyyyy H:mm:ss"
@@ -23,7 +23,7 @@ Name = checkpoint-vpn-logout-1
     """Protocol=(-|({protocol}[^\|]+))\|""",
     """IFDirection=(-|({direction}[^\|]+))\|""",
     """Reason=(-|({reason}[^\|]+))\|""",
-    """(U|u)ser=(-|({user_fullname}[^\(]+)\s+\(({user}[^\)]+))""",
+    """User=(-|({user_fullname}[^\(]+)\s+\(({user}[^\)]+))""",
     """domain_name=(-|({domain}[^\|]+))\|""",
     """termination_reason=(-|({failure_reason}[^\|]+))\|""",
     """duration=(-|({session_duration}[^\|]+))\|""",

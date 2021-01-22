@@ -2,7 +2,7 @@
 ```Java
 {
 Name = netscaler-process-created
-    Vendor = Citrix
+    Vendor = Citrix Netscaler
     Product = Citrix Netscaler
     Lms = Direct
     DataType = "process-created"

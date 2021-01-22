@@ -3,7 +3,7 @@
 {
 Name = carbonblack-security-alert-2
   Vendor = Carbon Black
-  Product = CB Defense
+  Product = Cb Defense
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

@@ -22,7 +22,7 @@ Name = eset-alert
              """ipv4":"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
              """source_address":"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
              """target_address":"({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-             """"processname":"({process}[^"]+\\({process_name}[^"]+))"""", 
+             """"processname":"({process_name}[^"]+)"""", 
 	]
    DupFields = ["host->dest_host"]
    }

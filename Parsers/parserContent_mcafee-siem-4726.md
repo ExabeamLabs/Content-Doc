@@ -3,7 +3,7 @@
 {
 Name = mcafee-siem-4726
     Vendor = Microsoft
-    Product = Microsoft Windows
+    Product = Windows
     Lms = Direct
     DataType = "windows-account-deleted"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

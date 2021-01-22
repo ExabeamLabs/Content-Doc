@@ -6,6 +6,8 @@ Name = sk4-json-4720
   Conditions = [""""event_id":4720""", """|Skyformation""", """Microsoft-Windows-Security-Auditing""", """A user account was created"""]
   Fields = ${WinParserTemplates.json-windows-events-1.Fields}[
     """({event_name}A user account was created)""",
+    """"TargetUserName":"({account_name}[^"]+)"""",
+    """"TargetDomainName":"({target_domain}[^"]+)"""",
     ]
     DupFields = ["host->dest_host"]
 }

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-checkpoint-proxy
-  Vendor = Check Point Software
+  Vendor = Check Point
   Product = Check Point NGFW
   Lms = Splunk
   DataType = "web-activity"

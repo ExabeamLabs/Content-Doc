@@ -3,7 +3,7 @@
 {
 Name = adfs-auth-failed
   Vendor = Microsoft
-  Product = Microsoft Windows
+  Product = Windows
   Lms = Direct
   DataType = "authentication-failed"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"

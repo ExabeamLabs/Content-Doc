@@ -3,7 +3,6 @@
 {
 Name = pfsense-network-connection-failed
   Vendor = pfSense
-  Product = pfSense
   Lms = Direct
   DataType = "network-connection"
   IsHVF = true

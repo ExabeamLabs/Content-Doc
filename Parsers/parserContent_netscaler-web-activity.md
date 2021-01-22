@@ -2,7 +2,7 @@
 ```Java
 {
 Name = netscaler-web-activity
-    Vendor = Citrix
+    Vendor = Citrix Netscaler
     Product = Web Logging
     Lms = Direct
     DataType = "web-activity"

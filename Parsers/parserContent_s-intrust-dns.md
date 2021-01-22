@@ -3,7 +3,6 @@
 {
 Name = s-intrust-dns
     Vendor = Quest InTrust
-  Product = Quest InTrust
     Lms = Splunk
     DataType = "dhcp"
     TimeFormat = "MM/dd/yyyy HH:mm:ss a"

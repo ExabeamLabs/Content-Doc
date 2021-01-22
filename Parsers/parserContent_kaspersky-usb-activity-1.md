@@ -2,7 +2,7 @@
 ```Java
 {
 Name = kaspersky-usb-activity-1
-  Vendor = Kaspersky
+  Vendor = Kaspersky Lab
   Product = Kaspersky Endpoint Security for Business
   Lms = Direct
   DataType = "usb-activity"

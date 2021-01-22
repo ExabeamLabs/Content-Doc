@@ -3,7 +3,7 @@
 {
 Name = o365-activity
   Vendor = Microsoft
-  Product = Microsoft Office 365
+  Product = Office 365
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -17,12 +17,12 @@ Name = o365-activity
     """\Wact=({activity}.+?)\s+(\w+=|$)""",
     """"Operation\\*"+:[\s\\]*"+({activity}[^"\\\.]*)""",
     """"eid\\*"+:[\s\\]*"+(SecurityComplianceAlerts|({user_email}[^"@]+?@[^@"]+?)|({user}[^"]+?))\\*"""",
-    """"UserId\\*"+:[\s\\]*"+(({domain}[^"\\]+)\\+)?(({user_email}[^\s"@]+@[^\s"@]+)|(SecurityComplianceAlerts|(Unknown|((\w+?_)?(\w+-)?\w+-\w+-\w+-\w+)|({user}[^"@\\\s]*))))"""",
+    """"UserId\\*"+:[\s\\]*"+(({domain}[^"\\]+)\\+)?(({user_email}[^\s"@]+@[^\s"@]+)|(SecurityComplianceAlerts|(Unknown|({user}[^"@\\\s]*))))"""",
     """"MailboxOwnerUPN\\*"+:[\s\\]*"+({user_email}[^"@\\]+@[^"@\\]+)""",
     """\ssuser=[^"@=\s]*?@({email_domain}([\.\w+]+\.)*([^\.\s"]+?\.[^\s"\.\\]+))""", 
     """"UserId\\*"+:[\s\\]*"+({user_email}[^"\\@]+?@[^"\\\s@]+)""",
     """"UserId\\*"+:[\s\\"]*"+[^"]*?@({email_domain}([\.\w+]+\.)*[^\.\s"]+?\.[^\s"\.>]+)>?\s*"+""",
-    """"UserId":"\\*"(?![^@"]+?@[^\s"]+)({domain}[^"\\\/]+)[^"]*?(Unknown|((\w+?_)?(\w+-)?\w+-\w+-\w+-\w+)|({user}[^"\\\/@\s]+))\\"""",
+    """"UserId":"\\*"(?![^@"]+?@[^\s"]+)({domain}[^"\\\/]+)[^"]*?(Unknown|({user}[^"\\\/@\s]+))\\"""",
     """"MailboxOwnerUPN\\*"+:[\s\\]*"+({user_email}[^"\\\s@]+@[^"\\\s@]+)""",
     """"MailboxOwnerUPN\\*"+:[\s\\"]*"+[^"]*?@({email_domain}([\.\w+]+\.)*([^\.\s"]+)*\.[^\s"\.>]+)>?\s*"+""",
     """"ResultStatus\\*"+:[\s\\]*"+({outcome}[^"\\]+)""",

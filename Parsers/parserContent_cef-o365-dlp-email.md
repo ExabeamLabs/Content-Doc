@@ -1,29 +1,31 @@
 #### Parser Content
 ```Java
 {
-Name = cef-o365-dlp-email
+Name = cef-O365-dlp-email
   Vendor = Microsoft
-  Product = Microsoft Office 365
+  Product = Office 365
   Lms = ArcSight
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """|security-threat-detected|""", """cat=security-alert""", """=Office 365""", """act=send-mail""", """"MessageTraceId":"""", """"EventType":"""" ]
+  Conditions = [ """"MessageTraceId":"""", """"SenderAddress":"""", """"RecipientAddress":"""", """cs6=""" ]
   Fields = [
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d+Z\s+({host}[\w\-.]+)\s+Skyformation"""
-    """filePath=<*({file_path}.+?)>*\s\w+=""",
-    """fname=({file_name}.+?)\s*\w+=""",
-    """"Domain":"({domain}[^"]+)""",
-    """"Subject":"({subject}.+?)\s*"""",
-    """"MessageSize":({bytes}\d+)""",
-    """"Direction":"({direction}[^"]+)""",
-    """"SenderAddress":"({sender}[^"]+)""",
-    """"SenderAddress":"[^@"]+@({external_domain_sender}[^",]+)"""",
-    """"RecipientAddress":"({recipient}[^"]+)""",
-    """"RecipientAddress":"[^@"]+@({external_domain_recipient}[^",]+)"""",
-    """"TransportRule":"({alert_name}[^"]+)""",
-    """"EventType":"({alert_type}[^"]+)"""
-    	
- ]
-   DupFields=["sender->user_email"]
+    """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
+    """({host}[\w\-.]+) Skyformation""",
+    """cs6=.*?"StartDate":"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
+    """cs6=.*?"Subject":"({subject}.*?\S)\s*",""",
+    """cs6=.*?"Direction":"({direction}[^"]+)"""",
+    """cs6=.*?"SenderAddress":"({sender}[^",]+)"""",
+    """cs6=.*?"SenderAddress":"[^@]+@({external_domain_sender}[^",]+)"""",
+    """cs6=.*?"RecipientAddress":"[^@]+@({external_domain_recipient}[^",]+)"""",
+    """cs6=.*?"RecipientAddress":"({recipients}[^"]+)"""",
+    """cs6=.*?"RecipientAddress":"({recipient}[^"\s,;]+)""",
+    """cs6=.*?"Size":"?({bytes}\d+)""",
+    """cs6=.*?"Status":"({outcome}[^"]+)"""",
+    """cs6=.*?"ToIP":"?(?:null|({dest_ip}[a-fA-F\d.:]+))""",
+    """cs6=.*?"FromIP":"?(?:null|({src_ip}[a-fA-F\d.:]+))""",
+    """cs6=.*?"EventType":"({alert_type}[^"]+)"""",
+    """cs6=.*?"MessageTraceId":"({message_id}[^"]+)"""",
+  ]
+  DupFields = [ "alert_type->alert_name" ]
 }
 ```

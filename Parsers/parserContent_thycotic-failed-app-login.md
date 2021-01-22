@@ -3,7 +3,6 @@
 {
 Name = thycotic-failed-app-login
   Vendor = Thycotic Secret Server
-  Product = Thycotic Secret Server
   Lms = ArcSight
   DataType = "failed-app-login"
   TimeFormat = "epoch"

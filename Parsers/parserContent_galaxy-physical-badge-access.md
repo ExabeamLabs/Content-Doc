@@ -3,7 +3,6 @@
 {
 Name = galaxy-physical-badge-access
   Vendor = Galaxy
-  Product = Galaxy
   Lms = Direct
   DataType = "physical-access"
   TimeFormat =  "MM/dd/yyyy HH:mm:ss"

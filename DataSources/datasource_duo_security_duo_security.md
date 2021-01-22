@@ -2,67 +2,16 @@ Vendor: Duo Security
 ====================
 Product: Duo Security
 ---------------------
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  59   |   8    |     5      |      7      |    7    |
 
-### Use Cases
+|               Use-Case                | Activity Types                                                                                                                                                                                                                                                                   | Event Types/Parsers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | MITRE TTP                                                                                                                                                         | Content                                              |
+|:-------------------------------------:| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| [Other](../UseCases/usecase_other.md) | <ul><li>Account Creation and Management</li><li>Activity Time  and Type</li><li>Application Activity</li><li>Asset Logon and Access</li><li>Critical System Activity</li><li>Email Activity</li><li>Network zones and Location Access</li><li>Service Account Activity</li></ul> |  <br> ↳ [s-duo-auth-successful](../Parsers/parserContent_s-duo-auth-successful.md)<br><br> account-creation<br> ↳ [cef-duo-app-activity](../Parsers/parserContent_cef-duo-app-activity.md)<br><br> app-activity<br> ↳ [s-duo-app-activity](../Parsers/parserContent_s-duo-app-activity.md)<br> ↳ [duo-app-activity](../Parsers/parserContent_duo-app-activity.md)<br><br> app-login<br> ↳ [q-duo-app-login](../Parsers/parserContent_q-duo-app-login.md)<br> ↳ [duo-app-login](../Parsers/parserContent_duo-app-login.md)<br> ↳ [cef-duo-app-login](../Parsers/parserContent_cef-duo-app-login.md)<br> ↳ [s-duo-app-login](../Parsers/parserContent_s-duo-app-login.md)<br> ↳ [cef-duo-app-login-1](../Parsers/parserContent_cef-duo-app-login-1.md)<br><br> authentication-failed<br> ↳ [json-duo-auth-attempt](../Parsers/parserContent_json-duo-auth-attempt.md)<br> ↳ [u-duo-auth-json](../Parsers/parserContent_u-duo-auth-json.md)<br> ↳ [cef-duo-auth](../Parsers/parserContent_cef-duo-auth.md)<br> ↳ [s-duo-auth-json](../Parsers/parserContent_s-duo-auth-json.md)<br> ↳ [s-duo-auth-json-1](../Parsers/parserContent_s-duo-auth-json-1.md)<br> ↳ [q-duo-auth-failed](../Parsers/parserContent_q-duo-auth-failed.md)<br><br> authentication-successful<br> ↳ [json-duo-auth-attempt](../Parsers/parserContent_json-duo-auth-attempt.md)<br> ↳ [u-duo-auth-json](../Parsers/parserContent_u-duo-auth-json.md)<br> ↳ [cef-duo-auth](../Parsers/parserContent_cef-duo-auth.md)<br> ↳ [s-duo-auth-json](../Parsers/parserContent_s-duo-auth-json.md)<br> ↳ [s-duo-auth-json-1](../Parsers/parserContent_s-duo-auth-json-1.md)<br> ↳ [q-duo-auth-successful](../Parsers/parserContent_q-duo-auth-successful.md)<br><br> failed-app-login<br> ↳ [q-duo-failed-app-login](../Parsers/parserContent_q-duo-failed-app-login.md)<br> ↳ [duo-failed-app-login](../Parsers/parserContent_duo-failed-app-login.md)<br> ↳ [s-duo-failed-app-login-1](../Parsers/parserContent_s-duo-failed-app-login-1.md)<br> ↳ [s-duo-failed-app-login](../Parsers/parserContent_s-duo-failed-app-login.md)<br> ↳ [cef-duo-failed-app-login-1](../Parsers/parserContent_cef-duo-failed-app-login-1.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1078 - Valid Accounts<br>T1098 - Account Manipulation<br>T1133 - External Remote Services<br>T1188 - T1188<br> | <ul><li>59 Rules</li></ul><ul><li>8 Models</li></ul> |
 
-_The following Use Cases can be operationalized using log data from this data source_
-
-* [Account Creation and Management](../UseCases/usecase_account_creation_and_management.md)
-* [Activity Time  and Type](../UseCases/usecase_activity_time__and_type.md)
-* [Application Activity](../UseCases/usecase_application_activity.md)
-* [Asset Logon and Access](../UseCases/usecase_asset_logon_and_access.md)
-* [Badge Access](../UseCases/usecase_badge_access.md)
-* [Critical System Activity](../UseCases/usecase_critical_system_activity.md)
-* [Email Activity](../UseCases/usecase_email_activity.md)
-* [Executives](../UseCases/usecase_executives.md)
-* [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)
-* [Privileged Activity](../UseCases/usecase_privileged_activity.md)
-* [Service Account Activity](../UseCases/usecase_service_account_activity.md)
-* [VPN Activity](../UseCases/usecase_vpn_activity.md)
-
-
-### Event Types
-
-_The following list of Event Types can be generated by Data Source Duo Security_Duo Security, and power the use cases above:_
-
-- account-creation
-- app-activity
-- app-login
-- authentication-failed
-- authentication-successful
-- failed-app-login
-- failed-vpn-login
-- vpn-login
-
-
-### Parsers
-
-_The following Parsers can be operationalized using log data from this data source_
-
-* [cef-duo-VPN-login](../Parsers/parserContent_cef-duo-vpn-login.md)
-* [cef-duo-VPN-login-failed](../Parsers/parserContent_cef-duo-vpn-login-failed.md)
-* [cef-duo-app-activity](../Parsers/parserContent_cef-duo-app-activity.md)
-* [cef-duo-app-login](../Parsers/parserContent_cef-duo-app-login.md)
-* [cef-duo-app-login-1](../Parsers/parserContent_cef-duo-app-login-1.md)
-* [cef-duo-auth](../Parsers/parserContent_cef-duo-auth.md)
-* [cef-duo-failed-app-login-1](../Parsers/parserContent_cef-duo-failed-app-login-1.md)
-* [duo-app-activity](../Parsers/parserContent_duo-app-activity.md)
-* [duo-app-login](../Parsers/parserContent_duo-app-login.md)
-* [duo-failed-app-login](../Parsers/parserContent_duo-failed-app-login.md)
-* [json-duo-auth-attempt](../Parsers/parserContent_json-duo-auth-attempt.md)
-* [q-duo-app-activity-1](../Parsers/parserContent_q-duo-app-activity-1.md)
-* [q-duo-app-activity-2](../Parsers/parserContent_q-duo-app-activity-2.md)
-* [q-duo-app-activity-3](../Parsers/parserContent_q-duo-app-activity-3.md)
-* [q-duo-app-activity-4](../Parsers/parserContent_q-duo-app-activity-4.md)
-* [q-duo-app-activity-5](../Parsers/parserContent_q-duo-app-activity-5.md)
-* [q-duo-app-login](../Parsers/parserContent_q-duo-app-login.md)
-* [q-duo-auth-failed](../Parsers/parserContent_q-duo-auth-failed.md)
-* [q-duo-auth-successful](../Parsers/parserContent_q-duo-auth-successful.md)
-* [q-duo-failed-app-login](../Parsers/parserContent_q-duo-failed-app-login.md)
-* [s-duo-app-activity](../Parsers/parserContent_s-duo-app-activity.md)
-* [s-duo-app-login](../Parsers/parserContent_s-duo-app-login.md)
-* [s-duo-auth-json](../Parsers/parserContent_s-duo-auth-json.md)
-* [s-duo-auth-json-1](../Parsers/parserContent_s-duo-auth-json-1.md)
-* [s-duo-failed-app-login](../Parsers/parserContent_s-duo-failed-app-login.md)
-* [s-duo-failed-app-login-1](../Parsers/parserContent_s-duo-failed-app-login-1.md)
-* [u-duo-auth-json](../Parsers/parserContent_u-duo-auth-json.md)
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                                                                                                   | Execution | Persistence                                                                                                                                                                                                               | Privilege Escalation                                                | Defense Evasion                                                     | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration                                                                                | Impact |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ------------------- | ------------------------------------------------------------------------------------------- | ------ |
+| [External Remote Services](https://attack.mitre.org/techniques/T1133)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |           | [External Remote Services](https://attack.mitre.org/techniques/T1133)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br>[Account Manipulation](https://attack.mitre.org/techniques/T1098)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   |           |                  |            |                     | [Exfiltration Over Alternative Protocol](https://attack.mitre.org/techniques/T1048)<br><br> |        |

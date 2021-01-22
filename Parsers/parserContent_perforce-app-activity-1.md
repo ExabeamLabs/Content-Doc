@@ -3,7 +3,6 @@
 {
 Name = perforce-app-activity-1
   Vendor = Perforce
-  Product = Perforce
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy/MM/dd HH:mm:ss"

@@ -3,7 +3,7 @@
 {
 Name = centrify-ssh-login-failed
   Vendor = Centrify
-  Product = Centrify Authentication Service
+  Product = Centrify
   Lms = Direct
   DataType = "authentication-failed"
   TimeFormat = "epoch"

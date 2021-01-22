@@ -12,7 +12,6 @@ Name = raw-4624-7
       """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """({event_name}An account was successfully logged on)""",
       """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
-      """\d\d:\d\d:\d\d.\d+Z\s+({host}[^\s]+)\s+""",
       """({host}[^\s\/]+)\/Microsoft-Windows-Security-Auditing \(4624\)""",
       """({event_code}4624)""",
       """Logon Type(:|=)\s*({logon_type}[\d]+)""",
@@ -24,7 +23,7 @@ Name = raw-4624-7
       """Logon Process(:|=)\s*({auth_process}[^\s;]+)[\s;]*Authentication Package(:|=)\s*({auth_package}[^\s;]+)""",
       """Logon ID(:|=)\s*({logon_id}[^\s;]+)[\s;]*(Linked Logon|Logon GUID)""",
       """New Logon(:|=)[\s;]*Security ID(:|=)\s*({user_sid}[^\s;]+)(\s|;)""".
-      """Account Name:\s*(-|[^\$\s]+\$|({account}[^\s]+))"""
+      """Account Name:\s*(-|({account}[^\s]+))"""
     ]
     DupFields = ["host->dest_host", "directory->process_directory"]
   }

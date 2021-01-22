@@ -2,55 +2,16 @@ Vendor: Citrix Netscaler
 ========================
 Product: Citrix Netscaler
 -------------------------
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  82   |   12   |     14     |      5      |    5    |
 
-### Use Cases
+|               Use-Case                | Activity Types                                                                                                                                                                                                                                                                                                                           | Event Types/Parsers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | MITRE TTP                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Content                                               |
+|:-------------------------------------:| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| [Other](../UseCases/usecase_other.md) | <ul><li>Activity Time  and Type</li><li>Application Activity</li><li>Asset Logon and Access</li><li>Credential Switch Activity</li><li>Data Loss Prevention</li><li>Email Activity</li><li>Endpoint Activity</li><li>Network zones and Location Access</li><li>Privileged Activity</li><li>Security Alert</li><li>VPN Activity</li></ul> |  authentication-failed<br> ↳ [s-netscaler-auth-failed](../Parsers/parserContent_s-netscaler-auth-failed.md)<br><br> failed-vpn-login<br> ↳ [netscaler-failed-vpn-login](../Parsers/parserContent_netscaler-failed-vpn-login.md)<br> ↳ [netscaler-cef-failed-vpn-login](../Parsers/parserContent_netscaler-cef-failed-vpn-login.md)<br><br> process-created<br> ↳ [netscaler-process-created](../Parsers/parserContent_netscaler-process-created.md)<br><br> vpn-login<br> ↳ [raw-netscaler-ica-login](../Parsers/parserContent_raw-netscaler-ica-login.md)<br> ↳ [raw-netscaler-vpn-start](../Parsers/parserContent_raw-netscaler-vpn-start.md)<br> ↳ [netscaler-cef-vpn-start](../Parsers/parserContent_netscaler-cef-vpn-start.md)<br><br> vpn-logout<br> ↳ [raw-netscaler-vpn-stop](../Parsers/parserContent_raw-netscaler-vpn-stop.md)<br> ↳ [netscaler-cef-vpn-end](../Parsers/parserContent_netscaler-cef-vpn-end.md)<br> | T1003 - OS Credential Dumping<br>T1016 - System Network Configuration Discovery<br>T1036 - Masquerading<br>T1048 - Exfiltration Over Alternative Protocol<br>T1052 - Exfiltration Over Physical Medium<br>T1068 - Exploitation for Privilege Escalation<br>T1078 - Valid Accounts<br>T1086 - T1086<br>T1110 - Brute Force<br>T1133 - External Remote Services<br>T1188 - T1188<br>T1204 - User Execution<br>T1208 - T1208<br>T1219 - Remote Access Software<br> | <ul><li>82 Rules</li></ul><ul><li>12 Models</li></ul> |
 
-_The following Use Cases can be operationalized using log data from this data source_
-
-* [Account Creation and Management](../UseCases/usecase_account_creation_and_management.md)
-* [Activity Time  and Type](../UseCases/usecase_activity_time__and_type.md)
-* [Application Activity](../UseCases/usecase_application_activity.md)
-* [Asset Logon and Access](../UseCases/usecase_asset_logon_and_access.md)
-* [Badge Access](../UseCases/usecase_badge_access.md)
-* [Credential Switch Activity](../UseCases/usecase_credential_switch_activity.md)
-* [Critical System Activity](../UseCases/usecase_critical_system_activity.md)
-* [Email Activity](../UseCases/usecase_email_activity.md)
-* [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
-* [Executives](../UseCases/usecase_executives.md)
-* [Network](../UseCases/usecase_network.md)
-* [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)
-* [Pass The Hash and Golden Ticket](../UseCases/usecase_pass_the_hash_and_golden_ticket.md)
-* [Privileged Activity](../UseCases/usecase_privileged_activity.md)
-* [Security Alert](../UseCases/usecase_security_alert.md)
-* [Service Account Activity](../UseCases/usecase_service_account_activity.md)
-* [Web Activity](../UseCases/usecase_web_activity.md)
-
-
-### Event Types
-
-_The following list of Event Types can be generated by Data Source Citrix Netscaler_Citrix Netscaler, and power the use cases above:_
-
-- app-login
-- authentication-failed
-- authentication-success
-- network-connection-failed
-- network-connection-successful
-- process-created
-- remote-logon
-
-
-### Parsers
-
-_The following Parsers can be operationalized using log data from this data source_
-
-* [cef-netscaler-aaatm-login](../Parsers/parserContent_cef-netscaler-aaatm-login.md)
-* [citrix-device-aaa-auth-failed](../Parsers/parserContent_citrix-device-aaa-auth-failed.md)
-* [citrix-device-aaa-auth-success](../Parsers/parserContent_citrix-device-aaa-auth-success.md)
-* [citrix-device-aaa-user-failed](../Parsers/parserContent_citrix-device-aaa-user-failed.md)
-* [netscaler-network-connection](../Parsers/parserContent_netscaler-network-connection.md)
-* [netscaler-network-connection-2](../Parsers/parserContent_netscaler-network-connection-2.md)
-* [netscaler-network-connection-3](../Parsers/parserContent_netscaler-network-connection-3.md)
-* [netscaler-process-created](../Parsers/parserContent_netscaler-process-created.md)
-* [q-netscaler-ica-login](../Parsers/parserContent_q-netscaler-ica-login.md)
-* [s-netscaler-auth-failed](../Parsers/parserContent_s-netscaler-auth-failed.md)
-* [s-netscaler-ica-login](../Parsers/parserContent_s-netscaler-ica-login.md)
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                                                                                                   | Execution                                                           | Persistence                                                                                                                                      | Privilege Escalation                                                                                                                                          | Defense Evasion                                                                                                                      | Credential Access                                                                                                                          | Discovery                                                                                   | Lateral Movement | Collection | Command and Control                                                         | Exfiltration                                                                                                                                                                      | Impact |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- | ---------------- | ---------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| [External Remote Services](https://attack.mitre.org/techniques/T1133)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [User Execution](https://attack.mitre.org/techniques/T1204)<br><br> | [External Remote Services](https://attack.mitre.org/techniques/T1133)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br>[Exploitation for Privilege Escalation](https://attack.mitre.org/techniques/T1068)<br><br> | [Masquerading](https://attack.mitre.org/techniques/T1036)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [OS Credential Dumping](https://attack.mitre.org/techniques/T1003)<br><br>[Brute Force](https://attack.mitre.org/techniques/T1110)<br><br> | [System Network Configuration Discovery](https://attack.mitre.org/techniques/T1016)<br><br> |                  |            | [Remote Access Software](https://attack.mitre.org/techniques/T1219)<br><br> | [Exfiltration Over Alternative Protocol](https://attack.mitre.org/techniques/T1048)<br><br>[Exfiltration Over Physical Medium](https://attack.mitre.org/techniques/T1052)<br><br> |        |

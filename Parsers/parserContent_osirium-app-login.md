@@ -3,7 +3,6 @@
 {
 Name = osirium-app-login
   Vendor = Osirium
-  Product = Osirium
   Lms = Direct
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

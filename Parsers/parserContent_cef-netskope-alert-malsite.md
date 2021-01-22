@@ -24,7 +24,7 @@ Name = cef-netskope-alert-malsite
     """"referer":"({referrer}[^"]+)""",
     """"malsite_category":\["?({alert_name}[^\]]+?)"?\]""",
     """"url":"[^"]+?({top_domain}[^\/\.\s]+(?i)(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)"""
-    """"browser":"({process}[^"]+)"""",  
+    
   ]
   DupFields = ["top_domain->additional_info"]
 }

@@ -3,7 +3,7 @@
 {
 Name = cef-mimecast-failed-app-login
   Vendor = Mimecast
-  Product = Mimecast Email Security
+  Product = Email Security
   Lms = ArcSight
   DataType = "failed-app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

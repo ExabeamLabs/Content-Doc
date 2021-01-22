@@ -3,7 +3,7 @@
 {
 Name = cef-bitglass-dlp-alert
   Vendor = Bitglass
-  Product = Bitglass CASB
+  Product = Bitglass
   Lms = ArcSight
   DataType = "dlp-alert"
   TimeFormat = "dd MMM yyyy HH:mm:ss"

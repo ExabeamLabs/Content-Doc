@@ -2,8 +2,7 @@
 ```Java
 {
 Name = q-4662
-  Vendor = Microsoft
-  Product = Microsoft Windows
+  Vendor = Microsoft Windows
   Lms = QRadar
   DataType = "adobject-operation"
   TimeFormat = "epoch_sec"

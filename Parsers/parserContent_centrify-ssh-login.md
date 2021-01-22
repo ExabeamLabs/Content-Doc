@@ -3,7 +3,7 @@
 {
 Name = centrify-ssh-login
   Vendor = Centrify
-  Product = Centrify Authentication Service
+  Product = Centrify
   Lms = Direct
   DataType = "remote-logon"
   TimeFormat = "epoch"

@@ -3,7 +3,7 @@
 {
 Name = mcafee-siem-4776
     Vendor = Microsoft
-    Product = Microsoft Windows
+    Product = Windows
     Lms = Direct
     DataType = "windows-4776"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

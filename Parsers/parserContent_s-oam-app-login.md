@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-oam-app-login
-  Vendor = Oracle
+  Vendor = OAM
   Product = Oracle Access Manager
   Lms = Splunk
   DataType = "app-login"

@@ -3,7 +3,6 @@
 {
 Name = sfdc-app-login
   Vendor = Salesforce
-  Product = Salesforce
   Lms = Splunk
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

@@ -3,7 +3,7 @@
 {
 Name = json-fireeye-alert-network
   Vendor = FireEye
-  Product = FireEye Helix
+  Product = FireEye Network Security (Helix)
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"

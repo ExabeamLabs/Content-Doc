@@ -3,7 +3,6 @@
 {
 Name = unix-auditd-member-added-3
   Vendor = Unix
-  Product = Unix Auditd
   Lms = Direct
   DataType = "unix-member-added"
   TimeFormat = "epoch_sec"

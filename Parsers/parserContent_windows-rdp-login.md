@@ -2,8 +2,8 @@
 ```Java
 {
 Name = windows-rdp-login
-  Vendor = Microsoft
-  Product = Microsoft Windows
+  Vendor = Microsoft Windows
+  Product= Windows
   Lms = Splunk
   DataType = "remote-logon"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -11,7 +11,7 @@ Name = windows-rdp-login
   Fields = [
     """exabeam_host=({host}[\w\-.]+)""",
     """<TimeCreated SystemTime=('+|"+)({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """<EventID>({event_code}\d+)<""",
+    """<EventID>({event_id}\d+)<""",
     """<Execution ProcessID='({process_id}\d+)'\s+ThreadID='({thread_id}\d+)'""",
     """<Computer>({dest_host}[^<]+)<""",
     """<Security UserID=('+|"+)({user_sid}[^'"]+)'""",

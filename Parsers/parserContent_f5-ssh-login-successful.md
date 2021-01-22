@@ -2,7 +2,7 @@
 ```Java
 {
 Name = f5-ssh-login-successful
-  Vendor = F5 Networks
+  Vendor = F5
   Product = Big-IP
   Lms = Splunk
   DataType = "ssh-login"

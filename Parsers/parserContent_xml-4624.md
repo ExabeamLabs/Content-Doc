@@ -22,8 +22,7 @@ Name = xml-4624
       """<Data Name=('|")AuthenticationPackageName('|")>({auth_package}[^<]+)</Data>""",
       """<Data Name=('|")TargetLogonId('|")>({logon_id}[^<]+)</Data>""",
       """<Data Name=('|")TargetUserSid('|")>({user_sid}[^<]+)</Data>""",
-      """<Data Name=('|")WorkstationName('|")>([A-Fa-f:\d.]+|-|({src_host_windows}[^<]+))</Data>""",
-      """EventRecordID>({record_id}[^<]+)<""",
+      """<Data Name=('|")WorkstationName('|")>([A-Fa-f:\d.]+|-|({src_host_windows}[^<]+))</Data>"""
     ]
     DupFields = ["host->dest_host"]
   }

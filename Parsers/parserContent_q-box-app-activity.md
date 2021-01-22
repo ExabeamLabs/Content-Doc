@@ -3,7 +3,7 @@
 {
 Name = q-box-app-activity
   Vendor = Box
-  Product = Box Cloud Content Management
+  Product = Box
   Lms = QRadar
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
@@ -26,8 +26,7 @@ Name = q-box-app-activity
     """[^\w]parent"+\s*:\s*[^\}]+?[^\w]name"+\s*:\s*"+({file_parent}[^",]+)[",\]\}]""",
     """[^\w]additional_details"+\s*:\s*\{({additional_info}[^\}]+)[",\]\}]""",
     """[^\w]accessible_by"+\s*:\s*[^\}]+?[^\w]name"+\s*:\s*"+[^":,]*[",\]\}],"login":"({target_user}[^":,]+?)"}""" ,
-    """"role":"({access_type}[^"]+)"""",
-     
+    """"role":"({access_type}[^"]+)"""", 
   ]
   DupFields = [ "user_email->user", "accesses->activity", "host->dest_host" ]
 }

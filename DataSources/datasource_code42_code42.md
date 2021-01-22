@@ -2,43 +2,16 @@ Vendor: Code42
 ==============
 Product: Code42
 ---------------
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  13   |   7    |     4      |      7      |    7    |
 
-### Use Cases
+|               Use-Case                | Activity Types                                                                                                          | Event Types/Parsers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | MITRE TTP                                                                                                                                 | Content                                              |
+|:-------------------------------------:| ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| [Other](../UseCases/usecase_other.md) | <ul><li>Critical System Activity</li><li>Data Loss Prevention</li><li>Endpoint Activity</li><li>File Activity</li></ul> |  file-delete<br> ↳ [code42-file-operations-4](../Parsers/parserContent_code42-file-operations-4.md)<br> ↳ [code42-file-operations-2](../Parsers/parserContent_code42-file-operations-2.md)<br> ↳ [code42-file-operations-3](../Parsers/parserContent_code42-file-operations-3.md)<br> ↳ [code42-file-operations](../Parsers/parserContent_code42-file-operations.md)<br><br> file-download<br> ↳ [code42-file-operations-2](../Parsers/parserContent_code42-file-operations-2.md)<br> ↳ [code42-file-operations-3](../Parsers/parserContent_code42-file-operations-3.md)<br><br> file-read<br> ↳ [code42-file-operations-4](../Parsers/parserContent_code42-file-operations-4.md)<br> ↳ [code42-file-operations-3](../Parsers/parserContent_code42-file-operations-3.md)<br> ↳ [code42-file-operations](../Parsers/parserContent_code42-file-operations.md)<br><br> file-upload<br> ↳ [code42-file-operations-2](../Parsers/parserContent_code42-file-operations-2.md)<br> ↳ [code42-file-operations-3](../Parsers/parserContent_code42-file-operations-3.md)<br><br> file-write<br> ↳ [code42-file-operations-4](../Parsers/parserContent_code42-file-operations-4.md)<br> ↳ [code42-file-operations-2](../Parsers/parserContent_code42-file-operations-2.md)<br> ↳ [code42-file-operations-3](../Parsers/parserContent_code42-file-operations-3.md)<br> ↳ [code42-file-operations](../Parsers/parserContent_code42-file-operations.md)<br><br> usb-activity<br> ↳ [code42-usb-removed](../Parsers/parserContent_code42-usb-removed.md)<br><br> usb-insert<br> ↳ [code42-usb-insert](../Parsers/parserContent_code42-usb-insert.md)<br> | T1052 - Exfiltration Over Physical Medium<br>T1078 - Valid Accounts<br>T1083 - File and Directory Discovery<br>T1204 - User Execution<br> | <ul><li>13 Rules</li></ul><ul><li>7 Models</li></ul> |
 
-_The following Use Cases can be operationalized using log data from this data source_
-
-* [Activity Time  and Type](../UseCases/usecase_activity_time__and_type.md)
-* [Asset Logon and Access](../UseCases/usecase_asset_logon_and_access.md)
-* [Critical System Activity](../UseCases/usecase_critical_system_activity.md)
-* [Data Loss Prevention](../UseCases/usecase_data_loss_prevention.md)
-* [Email Activity](../UseCases/usecase_email_activity.md)
-* [Endpoint Activity](../UseCases/usecase_endpoint_activity.md)
-* [File Activity](../UseCases/usecase_file_activity.md)
-* [Network zones and Location Access](../UseCases/usecase_network_zones_and_location_access.md)
-
-
-### Event Types
-
-_The following list of Event Types can be generated by Data Source Code42_Code42, and power the use cases above:_
-
-- dlp-email-alert-out
-- file-delete
-- file-download
-- file-read
-- file-upload
-- file-write
-- usb-activity
-- usb-insert
-
-
-### Parsers
-
-_The following Parsers can be operationalized using log data from this data source_
-
-* [code42-email-out-operations](../Parsers/parserContent_code42-email-out-operations.md)
-* [code42-file-operations](../Parsers/parserContent_code42-file-operations.md)
-* [code42-file-operations-2](../Parsers/parserContent_code42-file-operations-2.md)
-* [code42-file-operations-3](../Parsers/parserContent_code42-file-operations-3.md)
-* [code42-file-operations-4](../Parsers/parserContent_code42-file-operations-4.md)
-* [code42-usb-insert](../Parsers/parserContent_code42-usb-insert.md)
-* [code42-usb-removed](../Parsers/parserContent_code42-usb-removed.md)
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                      | Execution                                                           | Persistence                                                         | Privilege Escalation                                                | Defense Evasion                                                     | Credential Access | Discovery                                                                         | Lateral Movement | Collection | Command and Control | Exfiltration                                                                           | Impact |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------------------------------------------------------------------------------- | ---------------- | ---------- | ------------------- | -------------------------------------------------------------------------------------- | ------ |
+| [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [User Execution](https://attack.mitre.org/techniques/T1204)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   | [File and Directory Discovery](https://attack.mitre.org/techniques/T1083)<br><br> |                  |            |                     | [Exfiltration Over Physical Medium](https://attack.mitre.org/techniques/T1052)<br><br> |        |
