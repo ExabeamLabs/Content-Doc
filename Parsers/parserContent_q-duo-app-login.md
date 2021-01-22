@@ -2,8 +2,8 @@
 ```Java
 {
 Name = q-duo-app-login
-  Vendor = Cisco
-  Product = Duo Access Security
+  Vendor = Duo Security
+  Product = Duo Security
   Lms = QRadar
   DataType = "app-login"
   TimeFormat = "MM/dd/yyyy HH:mm:ss"

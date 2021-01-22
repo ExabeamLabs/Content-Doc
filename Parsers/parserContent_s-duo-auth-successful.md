@@ -2,8 +2,8 @@
 ```Java
 {
 Name = s-duo-auth-successful
-  Vendor = Cisco
-  Product = Duo Access Security
+  Vendor = Duo Security
+  Product = Duo Security
   Lms = Splunk
   DataType = "authentication-successful"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

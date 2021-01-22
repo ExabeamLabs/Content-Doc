@@ -19,9 +19,6 @@ Name = fortinet-dlp-alert
     """\Wuser="({user}[^"]+)"""",
     """\Wfiltertype="({alert_name}[^"]+)"""",
     """\Waction="({action}[^"]+)"""",
-    """\Wsrcport=({src_port}\d+)""",
-    """\Wdstport=({dest_port}\d+)""",
-    """\Wservice="({protocol}[^"]+)"""",
   ]
 }
 ```

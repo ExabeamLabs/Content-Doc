@@ -2,8 +2,8 @@
 ```Java
 {
 Name = duo-app-activity
-  Vendor = Cisco
-  Product = Duo Access Security
+  Vendor = Duo Security
+  Product = Duo Security
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "epoch"

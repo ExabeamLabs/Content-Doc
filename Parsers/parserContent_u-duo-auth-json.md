@@ -2,8 +2,8 @@
 ```Java
 {
 Name = u-duo-auth-json
-  Vendor = Cisco
-  Product = Duo Access Security
+  Vendor = Duo Security
+  Product = Duo Security
   Lms = Sumo
   DataType = "authentication-attempt"
   TimeFormat = "epoch_sec"

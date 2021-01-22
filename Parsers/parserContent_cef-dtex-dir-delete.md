@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-dtex-dir-delete
-  Product = DTEX InTERCEPT
+  Product = Dtex
   Conditions = [ "CEF:", """|Dtex|""", """|DirectoryDeleted|""" ]
 }
 ```

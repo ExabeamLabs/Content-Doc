@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-dtex-web-activity
-  Vendor = Dtex Systems
-  Product = DTEX InTERCEPT
+  Vendor = Dtex
+  Product = Dtex
   Lms = ArcSight
   DataType = "web-activity"
   IsHVF = true
