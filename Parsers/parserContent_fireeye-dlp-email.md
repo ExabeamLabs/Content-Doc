@@ -2,7 +2,7 @@
 ```Java
 {
 Name = fireeye-dlp-email
-  Vendor = FireEye
+  Vendor = FireEye Email Threat Prevention (ETP)
   Product = FireEye Email Threat Prevention (ETP)
   Lms = Direct
   DataType = "dlp-email-alert"

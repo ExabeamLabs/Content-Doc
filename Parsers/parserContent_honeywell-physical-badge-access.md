@@ -2,8 +2,8 @@
 ```Java
 {
 Name = honeywell-physical-badge-access
-  Vendor = Honeywell
-  Product = Honeywell Pro-Watch
+  Vendor = Honeywell 
+  Product = PROWATCH
   Lms = Direct
   DataType = "physical-access"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -13,7 +13,7 @@ Name = honeywell-physical-badge-access
     """"fielddatetime":"({time}\d+-\d+-\d+T\d+:\d+:\d+)""",
     """"source":"({src_host}[\w\-.]+)""",
     """"category":({category}\d+)""",
-    """"eventid":({event_code}\d+)""",
+    """"eventid":({event_id}\d+)""",
     """"cardholderid":({badge_id}\d+)""",
     """"areacode":({area_code}\d+)""",
     """"description":"({additional_info}[^"]+)""",

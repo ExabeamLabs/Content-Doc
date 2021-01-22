@@ -15,7 +15,7 @@ Name = cef-sysmon-process-network
     """\Wdvc=({host}[A-Fa-f:\d]+)""",
     """\Wdvchost=({host}[\w\-.]+)""",
     """\Wrt=({time}\d+)""",
-    """\WeventId=({event_code}\d+)""",
+    """\WeventId=({event_id}\d+)""",
     """\WcategoryOutcome=\/({outcome}.+?)\s+(\w+=|$)""",
     """\Wshost=({src_host}[\w\-.]+)""",
     """\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",

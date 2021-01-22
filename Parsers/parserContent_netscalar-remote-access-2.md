@@ -3,7 +3,7 @@
 {
 Name = netscalar-remote-access-2
  Product =Netscaler VPN
- Vendor = Citrix
+ Vendor =Netscaler VPN
  Lms = Direct
  TimeFormat = "MM/dd/yyyy:HH:mm:ss"
  DataType = "remote-access"
@@ -15,8 +15,7 @@ Name = netscalar-remote-access-2
     """Vserver\s+(127.0.0.1|({host}[^:\s]+))"""
     """SSO is ON\s*:\s*({method}[^\s]+)\s+({object}[^\-\s]+)""",
     """SessionId:\s+({session_id}\d+)"""
-    """({event_name}HTTPREQUEST)""",
-    """ahost=({src_host}[^\s]+)""",
+    """({event_name}HTTPREQUEST)"""
  ]
 }
 ```

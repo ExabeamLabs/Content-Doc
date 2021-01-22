@@ -2,8 +2,7 @@
 ```Java
 {
 Name = xml-4662
-  Vendor = Microsoft
-  Product = Microsoft Windows
+  Vendor = Microsoft Windows
   Lms = Direct
   DataType = "object-access"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

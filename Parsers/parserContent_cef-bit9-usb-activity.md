@@ -3,13 +3,12 @@
 {
 Name = cef-bit9-usb-activity
   Vendor = Carbon Black
-  Product = CB Protection
+  Product = Cb Protection
   Lms = ArcSight
   DataType = "usb-activity"
   TimeFormat = "MM dd yyyy HH:mm:ss"
   Conditions = [ """|Bit9|Security Platform|""", "tached|" ]
   Fields = [
-    """({time}\d\d \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
     """(exabeam_\w+=|^)({time}\d\d \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
     """\|Bit9\|Security Platform\|(.*?\|){2}({activity}[^\|]+)\|""",
     """(\||\s)dst=(|({dest_ip}.+?))(\s+[\w-]+=|\s*$)""",

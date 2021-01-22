@@ -2,8 +2,8 @@
 ```Java
 {
 Name = f5-vpn-username
-  Vendor = F5 Networks
-  Product = F5 BIG-IP Access Policy Manager (APM)
+  Vendor = F5
+  Product = Big-IP
   Lms = Splunk
   DataType = "vpn-start"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

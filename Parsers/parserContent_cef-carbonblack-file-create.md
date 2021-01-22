@@ -3,7 +3,7 @@
 {
 Name = cef-carbonblack-file-create
   Vendor = Carbon Black
-  Product = CB Defense
+  Product = Cb Defense
   Lms = ArcSight
   DataType = "file-write"
   TimeFormat = "epoch"

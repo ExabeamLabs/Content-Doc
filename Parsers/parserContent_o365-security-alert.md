@@ -3,7 +3,7 @@
 {
 Name = o365-security-alert
   Vendor = Microsoft
-  Product = Microsoft Office 365
+  Product = Office 365
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -16,9 +16,7 @@ Name = o365-security-alert
    """"(Name|an)":"({alert_name}[^"]+)""",
    """"AlertId":"({alert_id}[^"]+)""""
    """"(sev|Severity)":"({alert_severity}[^"]+)""",
-   """"AlertType":"({alert_type}[^"]+)"""",
-   """requestClientApplication=({process}.*?)\s\w+="""
+   """"AlertType":"({alert_type}[^"]+)""""
   ]
-  DupFields = ["process->process_name"]
 }
 ```

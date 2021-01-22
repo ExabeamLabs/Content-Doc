@@ -2,8 +2,7 @@
 ```Java
 {
 Name = cef-duo-app-activity
-  Vendor = Cisco
-  Product = Duo Access Security
+  Vendor = Duo Security
   Lms = ArcSight
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
@@ -21,7 +20,7 @@ Name = cef-duo-app-activity
     """"status":\s*"({status}[^"]+)""",
     """"type":\s*"({alert_type}[^"]+)""",
     """"error":\s*"({failure_reason}[^"]+)""",
-    """"email":\s*"({user_email}[^@]+@({email_domain}[^"]+))""",
+    """"email":\s*"({user_email}[^"]+)""",
     """"ip(_address)?":\s*"({src_ip}[^"]+)""",
     """"result":\s*"({result}[^"]+)""",
     """"description":\s*"\{({additional_info}.+?)\}",""",
@@ -32,10 +31,9 @@ Name = cef-duo-app-activity
     """"state":\s*"({state}[^"]+)""",
     """"country":\s*"({country}[^"]+)""",
     """\sext_integration=({service}.*?)(\s\w+=|\s*$)""",
-    """ext_factor=(n/a|({factor}.*?))(\s\w+=|\s*$)""",
+    """ext_factor=({factor}.*?)(\s\w+=|\s*$)""",
     """"reason":\s*"(User approved|Valid passcode|({failure_reason}[^"]+))"""",
     """"context":\s*"({activity}[^"]+)"""",
   ]
-    DupFields = ["object->device"]
 }
 ```

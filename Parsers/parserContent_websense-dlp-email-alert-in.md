@@ -2,8 +2,7 @@
 ```Java
 {
 Name = websense-dlp-email-alert-in
-  Vendor = Forcepoint
-  Product = Websense ESG
+  Vendor = Websense ESG
   Lms = Direct
   DataType = "dlp-email-alert"
   TimeFormat = "epoch"

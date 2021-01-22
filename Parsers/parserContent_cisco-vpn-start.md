@@ -6,14 +6,12 @@ Name = cisco-vpn-start
   Product = AnyConnect
   Lms = Splunk
   DataType = "vpn-login"
-  TimeFormat = "yyyy MMM dd HH:mm:ss"
+  TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """AnyConnect parent session started.""", "-113039", "%FTD-"]
   Fields = [
     """exabeam_host=(.+?@\s*)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w.\-]+))""",
-    """exabeam_host=(.+?@\s*)?({host}[\w.\-]+)""",
     """%FTD-({priority}\d+)-({event_code}\d+)""",
     """({time}\w+ \d+ \d{4} \d\d:\d\d:\d\d)""",
-   """({time}\d+ \w+ \d+ \d+:\d+:\d+)""",
     """User\s+<(?![^\s]+@[^\s]+)({user}[^@>]+)(?:@[^>]+)?>""",
     """User\s+<({user_email}[^@>]+@[^@>]+)>""",
     """ IP <({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})>""",

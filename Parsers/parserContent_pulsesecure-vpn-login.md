@@ -2,8 +2,7 @@
 ```Java
 {
 Name = pulsesecure-vpn-login
-  Vendor = Juniper Networks
-  Product = Juniper Networks Pulse Secure
+  Vendor = Juniper Pulse Secure
   Lms = Direct
   DataType = "vpn-start"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

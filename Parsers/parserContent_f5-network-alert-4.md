@@ -2,7 +2,7 @@
 ```Java
 {
 Name = f5-network-alert-4
-  Vendor = F5 Networks
+  Vendor = F5
   Product = IPI F5
   Lms = Direct
   DataType = "network-alert"

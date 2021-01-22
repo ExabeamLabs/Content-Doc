@@ -3,7 +3,6 @@
 {
 Name = unix-ssh-fail-38
   Vendor = Unix
-  Product = Unix
   Lms = Direct
   DataType = "ssh-login"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

@@ -3,7 +3,7 @@
 {
 Name = o365-inbox-activity
   Vendor = Microsoft
-  Product = Microsoft Office 365
+  Product = Office 365
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -11,7 +11,7 @@ Name = o365-inbox-activity
   Fields = [
      """"CreationTime":\s*"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
      """flexString1=({activity}[^\s]*)\srequest""",
-     """\sby\s\[({user_email}[^@]+@({email_domain}[^\]]*))\]""",
+     """\sby\s\[({user_email}[^\]]*)\]""",
      """ObjectId":"({resource}[^"]*)"""",
      """ResultStatus":"({outcome}[^"]*)"""",
      """Name":"AccessRights","Value":"({additional_info}[^"]*)"""",

@@ -3,7 +3,6 @@
 {
 Name = nas-share-access-1
   Vendor = Synology NAS
-  Product = Synology NAS
   Lms = Direct
   DataType = "share-access"
   IsHVF = true

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = accelion-dlp-alert
-  Vendor = Accellion
+  Vendor = Accelion
   Product = Kiteworks
   Lms = Direct
   DataType = "dlp-alert"

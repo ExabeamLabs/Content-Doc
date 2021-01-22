@@ -3,7 +3,7 @@
 {
 Name = q-5156
   Vendor = Microsoft
-  Product = Microsoft Windows
+  Product = Windows
   Lms = QRadar
   DataType = "process-network"
   TimeFormat = "epoch_sec"

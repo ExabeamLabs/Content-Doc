@@ -29,7 +29,7 @@ Name = exchange-dlp-email-in-failed
   DupFields = [
     "sender->external_address",
     "orig_user->user_email",
-    "action->outcome"
+    "user_email->email_user",
   ]
 }
 ```

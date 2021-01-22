@@ -19,8 +19,7 @@ Name = cef-576
     """\sdhost=({dest_host}.+?)\s+\w+=""",
     """\sdst=({dest_ip}.+?)\s+\w+=""",
     """\sdpriv=({privileges}.+?)\s+\w+=""",
-    """\sdvchost=({host}.+?)\s+\w+=""",
-    """\scategoryOutcome=\/*({outcome}[^\s]+)""", 
+    """\sdvchost=({host}.+?)\s+\w+="""
   ]
 }
 ```

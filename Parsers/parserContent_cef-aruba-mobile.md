@@ -2,8 +2,7 @@
 ```Java
 {
 Name = cef-aruba-mobile
-  Vendor = HP Aruba
-  Product = Aruba Wireless controller
+  Vendor = Aruba Networks
   Source = Mobility Controller
   Lms = Direct
   DataType = "network-alert"

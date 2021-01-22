@@ -3,7 +3,7 @@
 {
 Name = code42-file-operations-4
   Vendor = Code42
-  Product = Code42 Incydr
+  Product = Code42
   Lms = Direct
   DataType = "file-operations"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
@@ -13,7 +13,7 @@ Name = code42-file-operations-4
     """"eventType"+:\s*"+({accesses}MODIFIED|DELETED|READ|CREATED)""",
     """"mimeTypeByExtension"+:\s*"+({mime}[^"]+)"""",
     """"tabUrl"+:\s*"+({full_url}[^"]+)"""",
-    """"exposure"+:\s*\["*({log_source}[^"\]]+)"*\]""",
+    """"exposure"+:\s*\["*({source}[^"\]]+)"*\]""",
     """"processName"+:\s*"+({process_name}[^"]+)"""",
     """"userUid"+:\s*"+({user_uid}[^"]+)"""",
     """"deviceUid"+:\s*"+({device_id}[^"]+)"""",
@@ -31,7 +31,6 @@ Name = code42-file-operations-4
     """"deviceUserName"+:\s*"+({user_email}[^"]+)"""",
     """"osHostName"+:\s*"+({dest_host}[^"]+)"""",
     """"windowTitle"+:\s*\["*({service}[^"\]]+)"*\]""",
-    """"actor"+:"+(({user_email}[^"@]+@[^"@]+)|({user}[^"]+))""",
   ]
   DupFields = ["file_path->file_parent", "dest_host->device_name"]
 }

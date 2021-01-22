@@ -3,7 +3,7 @@
 {
 Name = cef-carbonblack-process-created
   Vendor = Carbon Black
-  Product = CB Defense
+  Product = Cb Defense
   Lms = ArcSight
   DataType = "process-created"
   TimeFormat = "epoch"

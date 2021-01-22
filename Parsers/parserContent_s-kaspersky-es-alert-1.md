@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-kaspersky-es-alert-1
-  Vendor = Kaspersky
+  Vendor = Kaspersky Lab
   Product = Kaspersky Endpoint Security for Business
   Lms = Splunk
   DataType = "alert"
@@ -10,7 +10,7 @@ Name = s-kaspersky-es-alert-1
   Conditions = [ """CEF""","""|KasperskyLab|SecurityCenter|""","""cs3Label=ProductVersion""" ]
   Fields = [
     """Usuario:\s*({domain}[^\\]+)\\+({user}[^\s]+)""",
-    """Componente:\s*({product_name}[^\\]+)""",
+    """Componente:\s*({product}[^\\]+)""",
     """Resultado\\+Descripción:\s*({action}[^\\]+)""",
     """nObjeto:\s*({malware_url}[^\\]+)""",
     """Objeto\\+Tipo:\s*({alert_type}[^\\]+)""",

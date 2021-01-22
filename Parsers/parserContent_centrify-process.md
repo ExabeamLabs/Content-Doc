@@ -3,7 +3,7 @@
 {
 Name = centrify-process
   Vendor = Centrify
-  Product = Centrify Infrastructure Services
+  Product = Centrify
   Lms = Direct
   DataType = "process-created"
   TimeFormat = "epoch"

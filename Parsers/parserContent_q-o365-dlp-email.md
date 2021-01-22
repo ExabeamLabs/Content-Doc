@@ -3,7 +3,7 @@
 {
 Name = q-o365-dlp-email
   Vendor = Microsoft
-  Product = Microsoft Office 365
+  Product = Office 365
   Lms = QRadar
   DataType = "dlp-email-alert"
   TimeFormat = "MM/dd/yyyy HH:mm:ss"

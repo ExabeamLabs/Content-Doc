@@ -3,7 +3,6 @@
 {
 Name = s-oracle-db-logon
   Vendor = Oracle
-  Product = Oracle DB
   Lms = Splunk
   DataType = "database-login"
   IsHVF = true

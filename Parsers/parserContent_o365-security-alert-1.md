@@ -3,16 +3,15 @@
 {
 Name = o365-security-alert-1
   Vendor = Microsoft
-  Product = Microsoft Office 365
+  Product = Office 365
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """"vendor": "Microsoft"""", """"riskScore":""", """"malwareStates":""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """"userPrincipalName":\s*"({user_email}[^"@]+@[^"]+)""",
+    """"userPrincipalName":\s*"({user_email}[^"]+)""",
     """"logonIp":\s*"({src_ip}[^"]+)""",
-    """"userStates":\s*\[.*?accountName":\s*"({user}[^",]+)""",    
     """"accountName":\s*"({user}[^"]+)""",
     """"domainName":\s*"({domain}[^"]+)""",
     """"(eventDateTime|createdDateTime|lastModifiedDateTime)":\s*"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
@@ -23,7 +22,7 @@ Name = o365-security-alert-1
     """"category":\s*"({alert_name}[^"]+)""",
     """"title":\s*"({alert_name}[^"]+?)\s*"""",
     """"category":\s*"({alert_type}[^"]+)""",
-    """"status":\s*"(unknown|({outcome}[^"]+))""",
+    """"status":\s*"({outcome}[^"]+)""",
     """"logonLocation":\s*"({location}[^"]+)""",
   ]
 }

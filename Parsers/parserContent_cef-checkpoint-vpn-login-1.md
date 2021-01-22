@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-checkpoint-vpn-login-1
-  Vendor = Check Point Software
+  Vendor = Check Point
   Product = Check Point Security Gateway
   Lms = ArcSight
   DataType = "vpn-start"

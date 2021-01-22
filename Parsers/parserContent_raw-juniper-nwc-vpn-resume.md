@@ -3,7 +3,6 @@
 {
 Name = raw-juniper-nwc-vpn-resume
   Vendor = Juniper Networks
-  Product = Juniper VPN
   Lms = Direct
   DataType = "access-control"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

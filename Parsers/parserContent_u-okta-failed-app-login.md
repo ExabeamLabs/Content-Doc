@@ -3,7 +3,7 @@
 {
 Name = u-okta-failed-app-login
     Vendor = Okta
-    Product = Okta Adaptive MFA
+    Product = Okta MFA
     Lms = Sumo
     DataType = "failed-app-login"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

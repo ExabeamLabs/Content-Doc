@@ -2,8 +2,8 @@
 ```Java
 {
 Name = n-forwarded-cef-aventail-vpn-start
-  Vendor = Dell
-  Product = SonicWALL Aventail
+  Vendor = Dell Aventail
+  Product = Aventail
   Lms = NitroCefSyslog
   DataType = "vpn-start"
   TimeFormat = "epoch"

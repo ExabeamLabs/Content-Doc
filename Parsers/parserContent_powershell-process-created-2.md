@@ -3,7 +3,7 @@
 {
 Name = powershell-process-created-2
   Vendor = Microsoft
-  Product = Microsoft Windows
+  Product = Windows
   Lms = Direct
   DataType = "process-created"
   IsHVF = true

@@ -19,7 +19,6 @@ Name = xml-5137
     """<Data Name='SubjectLogonId'>(|({logon_id}[^<]+?))</Data>""",
     """<Data Name='ObjectDN'>(|({object_dn}[^<]+?))</Data>""",
     """<Data Name='ObjectClass'>(|({object_class}[^<]+?))</Data>""",
-    """({event_name}A directory service object was created)""",
   ]
 }
 ```

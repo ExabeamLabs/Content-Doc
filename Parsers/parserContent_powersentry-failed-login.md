@@ -3,7 +3,6 @@
 {
 Name = powersentry-failed-login
   Vendor = PowerSentry
-  Product = PowerSentry
   Lms = Direct
   DataType = "failed-app-login"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

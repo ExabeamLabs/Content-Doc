@@ -3,7 +3,6 @@
 {
 Name = unix-auditd-account-deleted
   Vendor = Unix
-  Product = Unix Auditd
   Lms = Direct
   DataType = "unix-account-deleted"
   TimeFormat = "epoch_sec"

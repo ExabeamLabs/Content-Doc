@@ -3,7 +3,7 @@
 {
 Name = s-okta-app-activity
     Vendor = Okta
-    Product = Okta Adaptive MFA
+    Product = Okta MFA
     Lms = Splunk
     DataType = "app-login"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -13,7 +13,9 @@ Name = s-okta-app-activity
 
   """"published":\s*"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
   """"ipAddress":\s*"({src_ip}[^"]+)"""",
-  """targets.+?login":\s*"(({user_email}[^"\s@]+@({domain}[^"\s@,]+))|({user}[^"\s,@]+))""",
+  """"login":\s*"({user}[^"\s@]+)"""",
+  """"login":\s*"({user_email}[^"\s@]+@[^"\s@]+)"""",
+  """"login":\s*"[^@]+@({domain}[^"]+)"""",
         """AppInstance[^\}\{]+displayName":\s*"({app}[^"]+)"""",
         """\{.+?displayName":\s*"({app}[^"]+)"[^\}\{]+AppInstance""",
   """"objectType":\s*"app\.({activity}[^"]+)"""",

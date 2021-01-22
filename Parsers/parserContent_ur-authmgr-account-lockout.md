@@ -2,7 +2,7 @@
 ```Java
 {
 Name = ur-authmgr-account-lockout
-  Vendor = Dell
+  Vendor = Dell EMC
   Product = RSA Authentication Manager
   Lms = Sumo
   DataType = "account-lockout"

@@ -13,6 +13,5 @@ Name = s-windows-4771
       """({event_code}4771)""",
       """summary_windows_4771_data="+\d+:\d+:\d+\s*\d+-\d+-\d+:::({host}[^:::]+)?:::({event_code}[^:::]+)?:::({user_sid}[^:::]+)?:::({domain}[^:::]+)?:::({dest_ip}[^:::]+)?:::([^:::]+):::({result_code}[^:::]+)?:::({user}[^:::]+)?""""
     ]
-    DupFields = ["host->dest_host"]
   }
 ```

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = dell-file-remote-access
-  Vendor = Dell
+  Vendor = Dell EMC Isilon
   Product = Dell EMC Isilon
   Lms = Direct
   DataType = "remote-access"

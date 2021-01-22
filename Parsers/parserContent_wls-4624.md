@@ -23,7 +23,6 @@ Name = wls-4624
       """IpAddress="+(?:-|({src_ip}[^"]+))""""
       """WorkstationName="+([A-Fa-f:\d.]+|({src_host_windows}[^"]+))"""",
       """SubjectUserName="+({account}[^"]+)"""",
-      """ProcessName="(-|({process}[^"]+))""", 
     ]
     DupFields = ["host->dest_host"]
   }

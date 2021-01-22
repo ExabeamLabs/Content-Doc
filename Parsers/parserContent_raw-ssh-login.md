@@ -3,7 +3,6 @@
 {
 Name = raw-ssh-login
   Vendor = Unix
-  Product = Unix
   Lms = Direct
   DataType = "ssh-login"
   TimeFormat = "yyyy MMM dd HH:mm:ss"

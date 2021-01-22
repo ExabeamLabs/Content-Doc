@@ -2,8 +2,7 @@
 ```Java
 {
 Name = xml-5478
-  Vendor = Microsoft
-  Product = Microsoft Windows
+  Vendor = Microsoft Windows
   Lms = Syslog
   DataType = "service-created"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

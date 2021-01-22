@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-azure-auth-failed
-  Vendor = Microsoft
+  Vendor = Microsoft 
   Product = Microsoft Azure Active Directory
   Lms = ArcSight
   DataType = "authentication-failed"

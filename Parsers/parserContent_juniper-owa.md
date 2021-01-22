@@ -2,8 +2,7 @@
 ```Java
 {
 Name = juniper-owa
-  Vendor = Juniper Networks
-  Product = Juniper OWA
+  Vendor = Juniper OWA
   Lms = Splunk
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

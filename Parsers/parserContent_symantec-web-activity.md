@@ -22,8 +22,6 @@ Name = symantec-web-activity
     """\sflexString1=({proxy_action}.+?)\s\w+=""",
     """\ssrc=({src_ip}.+?)\s\w+=""",
     """\Wdproc=(|({process_name}.+?))(\s+\w+=|\s*$)""",
-    """Mozilla\/[^"]+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)""",
-    """Mozilla\/[^"]+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)"""
   ]
 }
 ```

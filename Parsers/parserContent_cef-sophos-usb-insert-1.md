@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-sophos-usb-insert-1
-  Vendor = Sophos
+  Vendor = Sophos EPP
   Product = Sophos Endpoint Protection
   Lms = ArcSight
   DataType = "usb-insert"

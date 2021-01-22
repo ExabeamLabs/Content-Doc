@@ -3,7 +3,7 @@
 {
 Name = q-process-alert-carbonblack
   Vendor = Carbon Black
-  Product = CB Protection
+  Product = Cb Protection
   Lms = QRadar
   DataType = "process-alert"
   IsHVF = true

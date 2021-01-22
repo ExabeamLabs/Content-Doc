@@ -23,7 +23,6 @@ Name = cef-meraki-network-alert
     """\Wext_protocol=(|({protocol}.+?))(\s+\w+=|\s*$)""",
     """\Wdpriv=(|({category}.+?))(\s+\w+=|\s*$)""",
     """\Wdproc=(|({process}.+?))(\s+\w+=|\s*$)""",
-    """destIp":"({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}):({dest_port}\d+)""",
   ]
 }
 ```

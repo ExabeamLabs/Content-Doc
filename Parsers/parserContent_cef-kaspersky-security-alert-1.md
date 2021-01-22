@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-kaspersky-security-alert-1
-  Vendor = Kaspersky
+  Vendor = Kaspersky Lab
   Product = Kaspersky Endpoint Security for Business
   Lms = Splunk
   DataType = "security-alert"
@@ -14,7 +14,7 @@ Name = cef-kaspersky-security-alert-1
     """cs5=({task_name}.+?)\s\w+=.+?cs5Label=TaskName""",
     """cs5=({group_name}.+?)\s\w+=.+?cs5Label=SrcAdmGroupName""",
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """cs2=({product_name}.+?)\s\w+=""",
+    """cs2=({product}.+?)\s\w+=""",
     """dvchost=({host}.+?)\s\w+=""",
     """dvc=({host}.+?)\s\w+=""",
     """cs4=({alert_id}.+?)\s\w+=""",

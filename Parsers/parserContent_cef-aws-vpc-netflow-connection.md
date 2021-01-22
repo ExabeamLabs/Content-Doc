@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-aws-vpc-netflow-connection
-  Vendor = AWS
-  Product = AWS CloudWatch
+  Vendor = Amazon
+  Product = AWS
   Lms = ArcSight
   DataType = "netflow-connection"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

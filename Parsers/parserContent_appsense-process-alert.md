@@ -3,7 +3,6 @@
 {
 Name = appsense-process-alert
     Vendor = AppSense Application Manager
-  Product = AppSense Application Manager
     Lms = Splunk
     DataType = "process-alert"
     IsHVF = true

@@ -3,16 +3,14 @@
 {
 Name = json-process-created-2
     Vendor = Microsoft
-    Product = Microsoft Windows
+    Product = Windows
     Lms = Direct
     DataType = "windows-process-created"
     IsHVF = true
-    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+    TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = [ """"event_id""", """4688""", """A new process has been created""" ]
     Fields = [
       """"EventTime"*:"*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s({host}[^\s]+)\sSkyformation""",
-      """"@timestamp"*:"*({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d+Z)""",
       """"Account"*:"*(({domain}[^"]+?)[\\\/]+)?({user}[^"\\\/]+)"""",
       """({event_code}4688)""",
       """"Activity"*:"*({event_name}[^"]+)""",

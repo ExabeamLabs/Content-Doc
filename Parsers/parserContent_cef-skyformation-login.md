@@ -3,16 +3,13 @@
 {
 Name = cef-skyformation-login
   Vendor = Cloud Application
-  Product = Cloud Application
   Lms = ArcSight
   DataType = "app-login"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
+  TimeFormat = "epoch"
   Conditions = [ """|Skyformation|""", """|login-success|""" ]
   Fields = [
-    """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",   
     """\Wend=({time}\d+)""",
     """exabeam_host=({host}[^\s]+)""",
-    """(created_at|eventTime)"+:"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """\d+-\d+-\d+T\d+:\d+:\d+\.\d+\w ({host}[\w\-.]+) Skyformation""",
     """([^\|]*\|){5}({activity}[^\|]+)""",
     """\WdestinationServiceName=(|({event_subtype}.+?))(\s+\w+=|\s*$)""",
@@ -27,7 +24,7 @@ Name = cef-skyformation-login
     """\ssuser=[^=]*?@([\.\w+]+\.)?({email_domain}[^\.\s]+\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|ch))\s+""",
     """\ssuser=([^\s]+\/)?({user_email}[^\s@]+@[^\s@]+)\s+(\w+=|$)""",
     """\Wsuser=(({user_fullname}\w+(\s+\w+)+)[^\w=]|({user}[^\s]+)\s+\w+=)""",
-    """\Wext_eventType=(|({log_type}.+?))(\s+\w+=|\s*$)""",
+    """\Wext_eventType=(|({event_type}.+?))(\s+\w+=|\s*$)""",
     """"source"\s*:\s*\{.+?"+name"+:"+({user_fullname}[^\"]+)"+""",
     """"user(A|a)gent"\s*:\s*"({user_agent}[^"]+?)"\s*[,\}\]]""",
     """"user(A|a)gent"\s*:\s*"({browser}[\w\-]+)\/[\d\._]+""",

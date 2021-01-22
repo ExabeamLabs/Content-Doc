@@ -23,7 +23,7 @@ Name = raw-4624-3
       """Logon Process(:|=)\s*({auth_process}[^\s;]+)[\s;]*Authentication Package(:|=)\s*({auth_package}[^\s;]+)""",
       """Logon ID(:|=)\s*({logon_id}[^\s;]+)[\s;]*(Linked Logon|Logon GUID)""",
       """New Logon(:|=)[\s;]*Security ID(:|=)\s*({user_sid}[^\s;]+)(\s|;)"""
-      """Account Name:\s*(-|[^\$\s]+\$|({account}[^\s]+))"""
+      """Account Name:\s*(-|({account}[^\s]+))"""
     ]
     DupFields = ["host->dest_host", "directory->process_directory"]
   }

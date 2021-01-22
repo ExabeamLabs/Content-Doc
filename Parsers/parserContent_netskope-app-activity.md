@@ -3,7 +3,7 @@
 {
 Name = netskope-app-activity
   Vendor = Netskope
-  Product = Netskope
+  Product = Netskope 
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "epoch_sec"

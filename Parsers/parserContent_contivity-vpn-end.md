@@ -3,7 +3,6 @@
 {
 Name = contivity-vpn-end
   Vendor = Nortel Contivity
-  Product = Nortel Contivity VPN
   Lms = Splunk
   DataType = "vpn-end"
   TimeFormat = "MM/dd/yyyy HH:mm:ss"
