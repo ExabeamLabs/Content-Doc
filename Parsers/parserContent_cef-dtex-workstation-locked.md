@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-dtex-workstation-locked
-  Vendor = Dtex Systems
-  Product = DTEX InTERCEPT
+  Vendor = Dtex
+  Product = Dtex
   Lms = ArcSight
   DataType = "workstation-locked"
   TimeFormat = "epoch"

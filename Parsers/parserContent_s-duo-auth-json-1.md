@@ -2,8 +2,8 @@
 ```Java
 {
 Name = s-duo-auth-json-1
-  Vendor = Cisco
-  Product = Duo Access Security
+  Vendor = Duo Security
+  Product = Duo Security
   Lms = Splunk
   DataType = "authentication-attempt"
   TimeFormat = "epoch_sec"

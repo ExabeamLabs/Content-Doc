@@ -2,8 +2,8 @@
 ```Java
 {
 Name = s-dtex
-  Vendor = Dtex Systems
-  Product = DTEX InTERCEPT
+  Vendor = Dtex
+  Product = Dtex
   Lms = Splunk
   DataType = "dtex"
   IsHVF = true

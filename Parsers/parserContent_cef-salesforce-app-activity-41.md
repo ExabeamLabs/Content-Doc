@@ -9,7 +9,7 @@ Name = cef-salesforce-app-activity-41
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """CEF:""", """|Skyformation|""", """|resource-property-updated|""", """Sales Cloud""" ]
   Fields = [
-    """({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ) \S+ Skyformation -""",
+    """({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ) ({host}\S+) Skyformation -""",
     """([^\|]*\|){5}({activity}[^\|]+)""",
     """\Wsuser=({user}.+?)\s+(\w+=|$)""",
     """\Wsuser=({user_email}[^@\s;]+?@[^@\s;]+)\s*(\w+=|$)""",

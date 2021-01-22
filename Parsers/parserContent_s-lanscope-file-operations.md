@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-lanscope-file-operations
-  Product = LanScope Cat
+  Product = LanScope
   DataType = "file-operations"
   IsHVF = true
   Conditions = [ """"リアルタイムイベントログ"""" ]

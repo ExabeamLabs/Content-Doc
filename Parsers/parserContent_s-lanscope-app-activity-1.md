@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-lanscope-app-activity-1
-  Product = LanScope Cat
+  Product = LanScope
   Conditions = [ """"アプリケーション稼働ログ"""" ]
 }
 ```

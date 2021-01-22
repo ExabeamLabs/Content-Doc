@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-dtex-dir-moved
-  Product = DTEX InTERCEPT
+  Product = Dtex
   Conditions = [ "CEF:", """|Dtex|""", """|DirectoryMoved|""" ]
 }
 ```

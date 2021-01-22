@@ -3,7 +3,7 @@
 {
 Name = cef-digitalguardian-send-mail
   Vendor = Digital Guardian
-  Product = Digital Guardian Network DLP
+  Product = Network DLP
   Lms = ArcSight
   DataType = "dlp-email-alert"
   TimeFormat = "epoch"

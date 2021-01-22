@@ -2,7 +2,7 @@
 ```Java
 {
 Name = q-duo-app-activity-3
-  Product = Duo Access Security
+  Product = Duo Security
   Conditions = [ """action=phone_update;""", """object=""", """timestamp=""" ]
 }
 ```

@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-dtex-local-logon
-  Vendor = Dtex Systems
-  Product = DTEX InTERCEPT
+  Vendor = Dtex
+  Product = Dtex
   Lms = ArcSight
   DataType = "local-logon"
   TimeFormat = "epoch"

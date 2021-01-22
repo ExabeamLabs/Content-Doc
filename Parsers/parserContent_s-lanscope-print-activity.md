@@ -3,7 +3,7 @@
 {
 Name = s-lanscope-print-activity
   Vendor = LanScope
-  Product = LanScope Cat
+  Product = LanScope
   Lms = Splunk
   DataType = "print-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

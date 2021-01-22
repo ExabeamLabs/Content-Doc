@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-duo-auth
-  Vendor = Cisco
-  Product = Duo Access Security
+  Vendor = Duo Security
+  Product = Duo Security
   Lms = ArcSight
   DataType = "authentication-successful"
   TimeFormat = "epoch"

@@ -2,8 +2,8 @@
 ```Java
 {
 Name = cef-dtex-print-activity
-  Vendor = Dtex Systems
-  Product = DTEX InTERCEPT
+  Vendor = Dtex
+  Product = Dtex
   Lms = ArcSight
   DataType = "print-activity"
   TimeFormat = "epoch"
