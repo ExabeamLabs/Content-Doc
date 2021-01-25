@@ -3,7 +3,6 @@
 {
 Name = raw-unix-account-created
   Vendor = Unix
-  Product = Unix
   Lms = Direct
   DataType = "unix-account-created"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

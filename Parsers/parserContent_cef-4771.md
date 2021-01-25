@@ -20,6 +20,5 @@ Name = cef-4771
     """destinationServiceName=\s*\w+\/(?=\w)({domain}.+?)\s+\w+=""",
     """\scs3=(?:::[\w]+:|({dest_ip}[a-fA-F:\d.]+))"""
   ]
-  DupFields = ["host->dest_host"]
 }
 ```

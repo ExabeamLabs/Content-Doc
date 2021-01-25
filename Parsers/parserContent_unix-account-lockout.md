@@ -2,7 +2,6 @@
 ```Java
 {
 Name = unix-account-lockout
-  Product = Unix
   DataType = "account-lockout"
   Conditions = [ """[][][""", """ pam_faillock(sshd:auth): User unknown: """ ]
   Fields = ${UnixParserTemplates.unix-events.Fields}[

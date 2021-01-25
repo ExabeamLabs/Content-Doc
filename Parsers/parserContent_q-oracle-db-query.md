@@ -3,7 +3,6 @@
 {
 Name = q-oracle-db-query
   Vendor = Oracle
-  Product = Oracle DB
   Lms = QRadar
   DataType = "database-query"
   IsHVF = true

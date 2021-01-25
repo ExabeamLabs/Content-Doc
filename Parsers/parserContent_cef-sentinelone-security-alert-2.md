@@ -2,7 +2,6 @@
 ```Java
 {
 Name = cef-sentinelone-security-alert-2
-  Product = SentinelOne
   DataType = "process-created"
   Conditions = [ """CEF:""", """|Security|SentinelOne|""", """|process|""" ]
   Fields = ${SentinelOneParserTemplates.cef-sentinelone-security-alert.Fields}[

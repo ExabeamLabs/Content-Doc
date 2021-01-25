@@ -3,7 +3,6 @@
 {
 Name = r-syslog-physical-badge-access
     Vendor = Siemens
-  Product = Siemens
     Lms = Direct
     DataType = "physical-access"
     TimeFormat = "yyyy-MM-dd HH:mm:ss"

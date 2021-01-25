@@ -20,7 +20,7 @@ Name = cisco-nac-logon
     """, Device IP Address=({dest_ip}[a-fA-F\d.:]+)""",
     """, Framed-IP-Address=({dest_ip}[a-fA-F\d.:]+)""",
     """, Called-Station-ID=({src_host}[\w\-.]+):({ssid}[^,]+)""",
-    """, Calling-Station-ID=(({src_mac}\w+-\w+-\w+-\w+-\w+-\w+)|({src_ip}[A-Za-z0-9.:]+))""",
+    """, Calling-Station-ID=({src_mac}[^,]+)""",
     """, NetworkDeviceGroups=Location#All Locations#({location}[^,]+)""",
     """(?i)(MacAddress)=({mac_address}[^,\s]+),""",
   ]

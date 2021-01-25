@@ -3,7 +3,6 @@
 {
 Name = u-googledrive-file-activity
   Vendor = Google
-  Product = Google Drive
   Lms = Sumo
   DataType = "file-operations"
   IsHVF = true

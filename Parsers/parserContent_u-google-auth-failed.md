@@ -3,7 +3,6 @@
 {
 Name = u-google-auth-failed
   Vendor = Google
-  Product = Google
   Lms = Sumo
   DataType = "failed-app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

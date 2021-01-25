@@ -2,8 +2,8 @@
 ```Java
 {
 Name = carbonblack-file-activity
-  Vendor = Carbon Black
-  Product = Cb Protection
+  Vendor = VMware
+  Product = VMware Carbon Black App Control
   Lms = Direct
   DataType = "file-operations"
   IsHVF = true

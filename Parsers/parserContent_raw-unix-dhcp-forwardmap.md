@@ -3,7 +3,6 @@
 {
 Name = raw-unix-dhcp-forwardmap
   Vendor = Unix
-  Product = Unix dhcpd
   Lms = Direct
   DataType = "dhcp"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

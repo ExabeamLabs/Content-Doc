@@ -3,7 +3,6 @@
 {
 Name = corelight-dns-query
   Vendor = Bro
-  Product = Bro
   Lms = ArcSight
   DataType = "dns-query"
   IsHVF = true

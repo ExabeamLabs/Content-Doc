@@ -3,7 +3,6 @@
 {
 Name = s-bro-web-activity
   Vendor = Bro
-  Product = Bro
   Lms = Splunk
   DataType = "web-activity"
   IsHVF = true

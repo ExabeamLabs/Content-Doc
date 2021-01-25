@@ -4,13 +4,11 @@ Product: ExamWorkspace
 ----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   6   |   5    |     4      |      3      |    3    |
+|   4   |   3    |     2      |      1      |    1    |
 
-|                                 Use-Case                                  | Activity Types                                                   | Event Types/Parsers                                                                                     | MITRE TTP                                                          | Content                                             |
-|:-------------------------------------------------------------------------:| ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------------------- |
-| [Compromised Credentials](../UseCases/usecase_compromised_credentials.md) | <ul><li>Critical System Activity</li><li>File Activity</li></ul> |  file-read<br> ↳ [s-examworkspace-file-read](../Parsers/parserContent_s-examworkspace-file-read.md)<br> | T1078 - Valid Accounts<br>T1083 - File and Directory Discovery<br> | <ul><li>3 Rules</li></ul><ul><li>2 Models</li></ul> |
-|       [Data Exfiltration](../UseCases/usecase_data_exfiltration.md)       | <ul><li>File Activity</li></ul>                                  |  file-read<br> ↳ [s-examworkspace-file-read](../Parsers/parserContent_s-examworkspace-file-read.md)<br> | T1083 - File and Directory Discovery<br>                           | <ul><li>2 Rules</li></ul><ul><li>2 Models</li></ul> |
-|         [Data Extraction](../UseCases/usecase_data_extraction.md)         | <ul><li>File Activity</li></ul>                                  |  file-read<br> ↳ [s-examworkspace-file-read](../Parsers/parserContent_s-examworkspace-file-read.md)<br> | T1083 - File and Directory Discovery<br>                           | <ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul> |
+|               Use-Case                | Activity Types                                                   | Event Types/Parsers                                                                                     | MITRE TTP                                                          | Content                                             |
+|:-------------------------------------:| ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------------------- |
+| [Other](../UseCases/usecase_other.md) | <ul><li>Critical System Activity</li><li>File Activity</li></ul> |  file-read<br> ↳ [s-examworkspace-file-read](../Parsers/parserContent_s-examworkspace-file-read.md)<br> | T1078 - Valid Accounts<br>T1083 - File and Directory Discovery<br> | <ul><li>4 Rules</li></ul><ul><li>3 Models</li></ul> |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

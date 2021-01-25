@@ -3,7 +3,6 @@
 {
 Name = s-azura-pri-auth-successful
   Vendor = Azura
-  Product = Multi Factor Auth
   Lms = Splunk
   DataType = "authentication-successful"
   TimeFormat = "epoch"

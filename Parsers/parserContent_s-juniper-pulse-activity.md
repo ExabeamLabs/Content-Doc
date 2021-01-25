@@ -2,8 +2,7 @@
 ```Java
 {
 Name = s-juniper-pulse-activity
-  Vendor = Juniper Networks
-  Product = Juniper Networks Pulse Secure
+  Vendor = Pulse Secure
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

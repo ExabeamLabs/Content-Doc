@@ -3,7 +3,6 @@
 {
 Name = syslog-juniper-vpn-connect
   Vendor = Juniper Networks
-  Product = Juniper VPN
   Lms = Direct
   DataType = "vpn-start"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

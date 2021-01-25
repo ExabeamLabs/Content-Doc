@@ -27,7 +27,6 @@ Name = symantec-usb-block
       """({outcome}Blocked)""",
       """File size \(({bytes_unit}[^\)]+)"""
     ]
-    DupFields = ["user->sender"]
     SOAR {
       IncidentType = "dlp"
       DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "user->dlpUser", "alert_name->dlpPolicy", "alert_severity->sourceSeverity", "src_host->dlpDeviceName", "file_name->dlpFileName", "alert_type->dlpActionTaken"]

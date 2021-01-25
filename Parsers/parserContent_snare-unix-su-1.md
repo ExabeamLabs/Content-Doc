@@ -3,7 +3,6 @@
 {
 Name = snare-unix-su-1
   Vendor = Unix
-  Product = Unix
   Lms = Splunk
   DataType = "unix-account-switch"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

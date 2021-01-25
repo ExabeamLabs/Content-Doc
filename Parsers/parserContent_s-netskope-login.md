@@ -12,7 +12,7 @@ Name = s-netskope-login
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """"timestamp": ({time}\d+)""",
     """"user": "(?![^\s]+@[^\s]+)({user}[^"\s]+)"""",
-    """"user": "(?=[^\s]+@[^\s]+)({user_email}[^"\s@]+@({email_domain}[^"\s@]+))"""",
+    """"user": "(?=[^\s]+@[^\s]+)({user_email}[^"\s@]+@[^"\s@]+)"""",
   ]
 }
 ```

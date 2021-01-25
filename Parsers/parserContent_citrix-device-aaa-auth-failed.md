@@ -2,8 +2,7 @@
 ```Java
 {
 Name = citrix-device-aaa-auth-failed
-  Vendor = Citrix
-  Product = Citrix Netscaler VPN
+  Vendor = Netscaler VPN
   Lms = Direct
   DataType = "authentication-failed"
   TimeFormat = "MM/dd/yyyy:HH:mm:ss"

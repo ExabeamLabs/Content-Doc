@@ -3,7 +3,6 @@
 {
 Name = s-shibboleth-sso
     Vendor = Shibboleth SSO
-  Product = Shibboleth SSO
     Lms = Splunk
     DataType = "app-login"
     TimeFormat = "yyyy-MM-dd HH:mm:ss"

@@ -8,7 +8,7 @@ Name = cef-securesphere-db-alert
   DataType = "database-alert"
   IsHVF = true
   TimeFormat = "dd MMMM yyyy HH:mm:ss"
-  Conditions = [ """|Imperva Inc.|SecureSphere""", """cat=Alert""", """=ServerGroup""", """Query"""]
+  Conditions = [ """|Imperva Inc.|SecureSphere""", """cat=Alert""", """=ServerGroup""" ]
   Fields = [
     """exabeam_host=({host}[\w\-.]+)""",
     """cs7=\s*\(({time}\d\d \w+ \d{4} \d\d:\d\d:\d\d)\)\s*cs7Label=EventTime""",

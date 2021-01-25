@@ -6,16 +6,14 @@ Name = json-4768
     Product = Microsoft Windows
     Lms = Direct
     DataType = "windows-4768"
-    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-    Conditions = [""":4768""", """"ServiceName":"""", """Pre-Authentication"""]
+    TimeFormat = "epoch_sec"
+    Conditions = ["""4768""", """"ServiceName":"""", """Pre-Authentication"""]
     Fields = [
       """({event_name}A Kerberos authentication ticket \(TGT\) was requested)""",
       """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """"EventReceivedTime":\s*({time}\d+)""",
       """"timestamp":\s*({time}\d+)""",
-      """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s({host}[^\s]+)\sSkyformation""",
-      """"time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)"""",
-      """"(Hostname|MachineName|computer_name)":"({host}[^"]*)""",
+      """"(Hostname|MachineName)":"({host}[^"]*)""",
       """({event_code}4768)""",
       """"(TargetUserName|AccountName)":"({user}[^"]+)""",
       """"(TargetDomainName|SuppliedRealmName)":"({domain}[^."]+)""",

@@ -3,7 +3,6 @@
 {
 Name = cef-unix-su
   Vendor = Unix
-  Product = Unix
   Lms = ArcSight
   DataType = "unix-account-switch"
   TimeFormat = "epoch"

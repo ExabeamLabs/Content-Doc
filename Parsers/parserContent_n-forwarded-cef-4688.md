@@ -15,8 +15,7 @@ Name = n-forwarded-cef-4688
       """\srt=({time}\d+)""",
       """shost=({host}[^\s]+)""",
       """sntdom=({domain}[^\s]+)""",
-      """suser=({user}.+?)\s+\w+=""",      
-      """nitroProcess_Name=({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?))\s+\w+=""",
+      """suser=({user}.+?)\s+\w+=""",      """nitroProcess_Name=({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?))\s+\w+=""",
       """nitroProcess_Name=({path}.+?)\s+\w+=""",
       """nitroSource_Logon_ID=({logon_id}.+?)(\s|0\|)"""
     ]

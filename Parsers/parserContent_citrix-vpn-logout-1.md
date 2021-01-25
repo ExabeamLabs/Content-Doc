@@ -2,8 +2,7 @@
 ```Java
 {
 Name = citrix-vpn-logout-1
-  Vendor = Citrix
-  Product = Citrix Netscaler VPN
+  Vendor = Netscaler VPN
   Lms = Direct
   DataType = "logout"
   TimeFormat = "MM/dd/yyyy:HH:mm:ss z"

@@ -3,7 +3,6 @@
 {
 Name = bitglass-app-login
   Vendor = BitGlass
-  Product = BitGlass
   Lms = Direct
   DataType = "app-login"
   TimeFormat = "dd MMM yyyy HH:mm:ss"
@@ -14,7 +13,7 @@ Name = bitglass-app-login
     """"instancename":\s*"({host}[^"]+)"""",
     """"user":\s*"({user}[^"\s@]+)"""",
     """"user":\s*"({user_fullname}[^"\s@]+\s+[^"\s@]+)"""",
-    """"email":\s*"({user_email}[^@]+@({email_domain}[^"]+))"""",
+    """"email":\s*"({user_email}[^"]+)"""",
     """"device":\s*"({os}[^"]+)"""",
     """"application":\s*"({app}[^"]+)"""",
     """"ipaddress":\s*"({src_ip}[a-fA-F\d.:]+)"""",

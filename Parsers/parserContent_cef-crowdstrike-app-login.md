@@ -15,6 +15,5 @@ Name = cef-crowdstrike-app-login
     """\Woutcome=({outcome}.+?)\s*(\w+=|$)""",
     """({app}FalconHost)""",
   ]
-  DupFields = ["domain->email_domain"]
 }
 ```

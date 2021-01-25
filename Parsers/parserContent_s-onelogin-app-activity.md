@@ -3,7 +3,6 @@
 {
 Name = s-onelogin-app-activity
   Vendor = OneLogin
-  Product = OneLogin
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

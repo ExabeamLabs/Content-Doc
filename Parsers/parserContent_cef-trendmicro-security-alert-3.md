@@ -6,12 +6,11 @@ Name = cef-trendmicro-security-alert-3
   Product = Deep Security Agent
   Lms = ArcSight
   DataType = "alert"
-  TimeFormat = "yyyy-MM-dd HH:mm:ss"
+  TimeFormat = "yyyy-MM-dd HH:mm:ss.SSSZ"
   Conditions = [ """CEF:""", """|Trend Micro|Deep Security Agent|""", """TrendMicroDsMalwareTargetType=""" ]
   Fields = [
-    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d+(\+|\-)\d+)""",
     """({host}[\w.\-]+)\s+CEF:([^\|]*\|){5}({alert_name}[^\|]+)\|({alert_severity}[^\|]+)""",
-    """CEF:([^\|]*\|){4}({alert_id}\d+)"""
     """\Wdvchost=({src_host}.+?)(\s+\w+=|\s*$)""",
     """\Wcs3=({malware_url}.+?)(\s+\w+=|\s*$)""",
     """\Wact=({outcome}.+?)(\s+\w+=|\s*$)""",

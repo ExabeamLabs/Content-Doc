@@ -3,7 +3,7 @@
 {
 Name = cloudflare-network-alert
   Vendor = Cloudflare
-  Product = Cloudflare
+  Product = Cloudflare WAF
   Lms = Direct
   DataType = "network-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

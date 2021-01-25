@@ -3,7 +3,6 @@
 {
 Name = netmotion-vpn-start
     Vendor = NetMotion Wireless
-  Product = NetMotion Wireless
     Lms = Splunk
     DataType = "vpn-start"
     TimeFormat = "epoch"

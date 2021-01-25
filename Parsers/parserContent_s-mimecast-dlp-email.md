@@ -3,7 +3,6 @@
 {
 Name = s-mimecast-dlp-email
     Vendor = Mimecast
-  Product = Email Security
     Lms = Splunk
     DataType = "dlp-email-alert"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

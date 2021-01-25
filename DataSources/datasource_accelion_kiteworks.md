@@ -4,13 +4,11 @@ Product: Kiteworks
 ------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  24   |   5    |     4      |      3      |    3    |
+|  18   |   4    |     2      |      1      |    1    |
 
-|                              Use-Case                               | Activity Types                                                                            | Event Types/Parsers                                                                       | MITRE TTP                                                                    | Content                                              |
-|:-------------------------------------------------------------------:| ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------- |
-|    [Data Exfiltration](../UseCases/usecase_data_exfiltration.md)    | <ul><li>Data Loss Prevention</li></ul>                                                    |  dlp-alert<br> ↳ [accelion-dlp-alert](../Parsers/parserContent_accelion-dlp-alert.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1204 - User Execution<br> | <ul><li>14 Rules</li></ul><ul><li>3 Models</li></ul> |
-|    [Malware Detection](../UseCases/usecase_malware_detection.md)    | <ul><li>Data Loss Prevention</li><li>Endpoint Activity</li><li>Process Activity</li></ul> |  dlp-alert<br> ↳ [accelion-dlp-alert](../Parsers/parserContent_accelion-dlp-alert.md)<br> | T1204 - User Execution<br>                                                   | <ul><li>5 Rules</li></ul><ul><li>1 Models</li></ul>  |
-| [Ransomware Detection](../UseCases/usecase_ransomware_detection.md) | <ul><li>Data Loss Prevention</li><li>Endpoint Activity</li><li>Process Activity</li></ul> |  dlp-alert<br> ↳ [accelion-dlp-alert](../Parsers/parserContent_accelion-dlp-alert.md)<br> | T1204 - User Execution<br>                                                   | <ul><li>5 Rules</li></ul><ul><li>1 Models</li></ul>  |
+|               Use-Case                | Activity Types                                                                            | Event Types/Parsers                                                                       | MITRE TTP                                                                    | Content                                              |
+|:-------------------------------------:| ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------- |
+| [Other](../UseCases/usecase_other.md) | <ul><li>Data Loss Prevention</li><li>Endpoint Activity</li><li>Process Activity</li></ul> |  dlp-alert<br> ↳ [accelion-dlp-alert](../Parsers/parserContent_accelion-dlp-alert.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1204 - User Execution<br> | <ul><li>18 Rules</li></ul><ul><li>4 Models</li></ul> |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

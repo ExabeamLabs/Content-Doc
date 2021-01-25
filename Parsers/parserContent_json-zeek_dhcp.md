@@ -2,6 +2,7 @@
 ```Java
 {
 Name = json-zeek_dhcp
+  Product = Zeek Network Security Monitor
   DataType = "dhcp"
   Conditions = [ """ zeek_dhcp """, """msg_type""" ]
   Fields = ${BroParserTemplates.json-zeek-activity.Fields}[

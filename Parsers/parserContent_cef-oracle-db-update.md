@@ -3,7 +3,6 @@
 {
 Name = cef-oracle-db-update
   Vendor = Oracle
-  Product = Oracle DB
   Lms = ArcSight
   DataType = "database-update"
   IsHVF = true
