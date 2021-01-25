@@ -3,7 +3,6 @@
 {
 Name = unix-pam-ssh-login
   Vendor = Unix
-  Product = Unix
   Lms = Splunk
   DataType = "ssh-login"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS z"

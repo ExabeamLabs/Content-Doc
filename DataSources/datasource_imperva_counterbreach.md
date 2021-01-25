@@ -4,13 +4,11 @@ Product: CounterBreach
 ----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  20   |   5    |     3      |      3      |    3    |
+|  18   |   5    |     2      |      1      |    1    |
 
-|                                 Use-Case                                  | Activity Types                                             | Event Types/Parsers                                                                                            | MITRE TTP                  | Content                                              |
-|:-------------------------------------------------------------------------:| ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------- | ---------------------------------------------------- |
-| [Compromised Credentials](../UseCases/usecase_compromised_credentials.md) | <ul><li>Database Activity</li><li>Database Alert</li></ul> |  database-alert<br> ↳ [cef-counterbreach-db-alert](../Parsers/parserContent_cef-counterbreach-db-alert.md)<br> | T1078 - Valid Accounts<br> | <ul><li>16 Rules</li></ul><ul><li>5 Models</li></ul> |
-|       [Malware Detection](../UseCases/usecase_malware_detection.md)       | <ul><li>Endpoint Activity</li></ul>                        |  database-alert<br> ↳ [cef-counterbreach-db-alert](../Parsers/parserContent_cef-counterbreach-db-alert.md)<br> | T1204 - User Execution<br> | <ul><li>2 Rules</li></ul>                            |
-|    [Ransomware Detection](../UseCases/usecase_ransomware_detection.md)    | <ul><li>Endpoint Activity</li></ul>                        |  database-alert<br> ↳ [cef-counterbreach-db-alert](../Parsers/parserContent_cef-counterbreach-db-alert.md)<br> | T1204 - User Execution<br> | <ul><li>2 Rules</li></ul>                            |
+|               Use-Case                | Activity Types                                                                       | Event Types/Parsers                                                                                            | MITRE TTP                                            | Content                                              |
+|:-------------------------------------:| ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- |
+| [Other](../UseCases/usecase_other.md) | <ul><li>Database Activity</li><li>Database Alert</li><li>Endpoint Activity</li></ul> |  database-alert<br> ↳ [cef-counterbreach-db-alert](../Parsers/parserContent_cef-counterbreach-db-alert.md)<br> | T1078 - Valid Accounts<br>T1204 - User Execution<br> | <ul><li>18 Rules</li></ul><ul><li>5 Models</li></ul> |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

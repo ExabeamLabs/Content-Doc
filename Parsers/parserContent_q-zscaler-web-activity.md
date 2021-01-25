@@ -3,7 +3,6 @@
 {
 Name = q-zscaler-web-activity
   Vendor = Zscaler
-  Product = Zscaler
   Lms = QRadar
   DataType = "web-activity"
   IsHVF = true

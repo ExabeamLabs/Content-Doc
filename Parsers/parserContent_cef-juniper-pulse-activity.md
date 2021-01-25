@@ -2,8 +2,7 @@
 ```Java
 {
 Name = cef-juniper-pulse-activity
-  Vendor = Juniper Networks
-  Product = Juniper Networks Pulse Secure
+  Vendor = Pulse Secure
   Lms = ArcSight
   DataType = "app-activity"
   TimeFormat = "epoch"

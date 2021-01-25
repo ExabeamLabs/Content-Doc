@@ -3,7 +3,6 @@
 {
 Name = s-mimecast-app-login
   Vendor = Mimecast
-  Product = Email Security
   Lms = Splunk
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
@@ -12,7 +11,7 @@ Name = s-mimecast-app-login
     """exabeam_host=({host}[\w.\-]+)""",
     """date=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d[+-].+?)\|""",
     """\|user=(|({user}.+?))\|""",
-    """\|user=(|({user_email}[^@\|]+@({email_domain}[^@\|]+)))\|""",
+    """\|user=(|({user_email}[^@\|]+@[^@\|]+))\|""",
     """\sApplication:\s*({app}[^,]*)(,|\s*$)""",
     """\|app=(|({app}.+?))\|""",
     """\sIP:\s*({src_ip}[a-fA-F\d.:]+)(,|\s*$)""",

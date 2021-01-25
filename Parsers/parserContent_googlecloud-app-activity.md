@@ -14,7 +14,7 @@ Name = googlecloud-app-activity
     """"callerIp":"({src_ip}[^"]+)""",
     """"callerSuppliedUserAgent":"({user_agent}[^"]+)""",
     """"callerSuppliedUserAgent":"[^"]*?\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^"]+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
-    """"principalEmail":"(?:({user_email}[^"@]+?@({email_domain}[^"@]+))|({user}[^"]+))"""",
+    """"principalEmail":"(?:({user_email}[^"@]+?@[^"@]+)|({user}[^"]+))"""",
     """"methodName":"({activity}[^"]+)""",
     """"resourceName":"({resource}[^"]+?)({object}[^"\/]+)"""",
     """"serviceName":"({app}[^"]+)""",

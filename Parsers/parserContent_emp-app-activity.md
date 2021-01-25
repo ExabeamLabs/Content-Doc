@@ -3,7 +3,6 @@
 {
 Name = emp-app-activity
   Vendor = EMP
-  Product = EMP
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

@@ -11,7 +11,7 @@ Name = raw-sysmon-process-network
   Conditions = [ """<Provider Name='Microsoft-Windows-Sysmon'""", """<EventID>3</EventID>""" ]
   Fields = [
     """<Provider Name='Microsoft-Windows-Sysmon' Guid='\{({process_guid}[^}]+?)\}""",
-    """<EventID>({event_code}\d+)</EventID>""",
+    """<EventID>({event_id}\d+)</EventID>""",
     """<Task>({activity}.*?)</Task>""",
     """<Execution ProcessID='({pid}\d+)""",
     """UtcTime:\s*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)""",

@@ -10,7 +10,7 @@ Name = checkpoint-5599-network-connection
   Conditions = [ """; product:"""",  """ CheckPoint 5599 """ ]
   Fields = [
 	"""({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ) ({host}[\w.\-]+) CheckPoint""",
-	"""product:"({product_name}[^"]+)"""",
+	"""product:"({product}[^"]+)"""",
 	"""received_bytes:"({bytes_in}[^"]+)"""",
 	"""sent_bytes:"({bytes_out}[^"]+)"""",
 	"""origin:"({origin_ip}[^"]+)"""",

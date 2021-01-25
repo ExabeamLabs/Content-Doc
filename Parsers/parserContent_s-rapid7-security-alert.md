@@ -18,6 +18,5 @@ Name = s-rapid7-security-alert
     """\Wsignature="({alert_name}[^"]+)"""",
     """\Wcategory="({alert_type}[^"]+)""""
   ]
-  DupFields = [ "host->dest_host" ]
 }
 ```

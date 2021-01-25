@@ -3,7 +3,6 @@
 {
 Name = unix-auth-failed-4
   Vendor = Unix
-  Product = Unix
   Lms = Direct
   DataType = "authentication-failed"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

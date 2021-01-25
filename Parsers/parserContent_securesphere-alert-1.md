@@ -22,7 +22,6 @@ Name = securesphere-alert-1
     """DestinationIP=({dest_ip}[A-Fa-f:\d.]+)""",
     """DestinationPort=({dest_port}\d+)""",
     """EventNumber=({alert_id}\d+)""",
-    """Alert\.username=(n\/a|({user}[^;]+))""", 
   ]
 }
 ```

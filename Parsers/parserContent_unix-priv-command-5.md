@@ -3,7 +3,6 @@
 {
 Name = unix-priv-command-5
   Vendor = Unix
-  Product = Unix
   Lms = Direct
   DataType = "process-created"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

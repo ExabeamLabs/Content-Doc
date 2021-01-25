@@ -2,7 +2,6 @@
 ```Java
 {
 Name = unix-auth-failed-2
-  Product = Unix
   DataType = "authentication-failed"
   Conditions = [ """[][][""", """ pam_unix(sudo""", """ authentication failure""" ]
   Fields = ${UnixParserTemplates.unix-events.Fields}[

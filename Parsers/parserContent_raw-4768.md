@@ -22,6 +22,5 @@ Name = raw-4768
       """Supplied Realm Name:\s*(-|({domain}[^\s]+?))[\s;]*User ID""",
       """Supplied Realm Name:\s*.*?User ID:\s*(?:NULL SID|({user_sid}[^\s]+?))[\s;]*Service Information"""
     ]
-    DupFields = ["host->dest_host"]
   }
 ```

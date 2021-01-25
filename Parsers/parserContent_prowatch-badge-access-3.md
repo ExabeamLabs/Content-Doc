@@ -3,7 +3,7 @@
 {
 Name = prowatch-badge-access-3
   Vendor = Honeywell
-  Product = PROWATCH
+  Product = Honeywell Pro-Watch
   Lms = Syslog
   DataType = "physical-access"
   TimeFormat = "MM/dd/yyyy hh:mm:ss"

@@ -3,7 +3,6 @@
 {
 Name = s-common-ftp-download
   Vendor = FTP
-  Product = FTP
   Lms = Splunk
   DataType = "file-operations"
   IsHVF = true

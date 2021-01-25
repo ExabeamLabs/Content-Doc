@@ -3,7 +3,6 @@
 {
 Name = cef-moveit-app-login
   Vendor = IPswitch MoveIt
-  Product = IPswitch MoveIt
   Lms = Direct
   DataType = "app-login"
   TimeFormat = "epoch"

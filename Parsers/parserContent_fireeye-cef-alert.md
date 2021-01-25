@@ -27,11 +27,7 @@ Name = fireeye-cef-alert
     """\sduser=<?({user}[^@]+)(@[^\s]+)?\s+\w+=""",
     """\ssuser=({additional_info}.+?)\s+\w+=""",
     """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """proto=({protocol}[^\s]+)""",
-    """smac=({src_mac}[^\s]+)""",
-    """dmac=({dest_mac}[^\s]+)""",
-    """spt=({src_port}\d+)""",
-    """fileHash=({file_hash}[^\s]+)""",
+    """\sdhost=({dest_host}[^\s]+)"""
   ]
   SOAR {
     IncidentType = "malware"

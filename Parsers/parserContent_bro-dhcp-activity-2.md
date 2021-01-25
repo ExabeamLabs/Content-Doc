@@ -2,7 +2,7 @@
 ```Java
 {
 Name = bro-dhcp-activity-2
-  Product = Bro
+  Product = Zeek Network Security Monitor
   DataType = "dhcp"
   Conditions = [ """protocol""", """"dhcp"""", """type""", """zeek""" ]
   Fields = ${BroParserTemplates.bro-activity-1.Fields}[

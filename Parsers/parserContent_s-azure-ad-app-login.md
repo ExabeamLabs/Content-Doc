@@ -11,7 +11,7 @@ Name = s-azure-ad-app-login
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """"createdDateTime":\s*"({time}[^"]+)""",
-    """"userPrincipalName":\s*"({user_email}[^"\s@]+@({email_domain}[^"\s@]+))""",
+    """"userPrincipalName":\s*"({user_email}[^"\s@]+@[^"\s@]+)""",
     """"ipAddress":\s*"({src_ip}[A-Fa-f:\d.]+)""",
     """"browser":\s*"({browser}[^"]+)""",
     """"operatingSystem":\s*"({os}[^"]+)""",

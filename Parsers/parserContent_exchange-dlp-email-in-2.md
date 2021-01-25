@@ -29,6 +29,6 @@ Name = exchange-dlp-email-in-2
     """,\s*(?:'|")?(|MicrosoftExchange.*?|({external_address}[^\s,;@"']+@({external_domain}[^\s;,"'@]+))(?:'|")?)\s*,(?:(?:\s*'(?:[^']|'')+')\s*,|(?:\s*"(?:[^"]|"")+")\s*,|[^",]+?,|\s*,){2}Incoming,""",
     """,\s*(?:'|")?(?:<>|({return_path}[^,]+?))(?:'|")?\s*,(?:(?:\s*'(?:[^']|'')+')\s*,|(?:\s*"(?:[^"]|"")+")\s*,|[^",]+?,|\s*,)Incoming,""",
   ]
-  DupFields = [ "orig_user->user_email" ]
+  DupFields = [ "orig_user->email_user" ]
 }
 ```

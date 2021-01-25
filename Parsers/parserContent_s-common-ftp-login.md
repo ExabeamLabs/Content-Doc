@@ -3,7 +3,6 @@
 {
 Name = s-common-ftp-login
   Vendor = FTP
-  Product = FTP
   Lms = Splunk
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

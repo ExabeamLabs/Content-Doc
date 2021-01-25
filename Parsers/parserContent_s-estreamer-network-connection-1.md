@@ -8,7 +8,7 @@ Name = s-estreamer-network-connection-1
   DataType = "network-connection"
   IsHVF = true
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ """ SFIMS: """, """Protocol:""", """AccessControlRuleName:""", """AccessControlRuleAction:""", """DNSResponseType:""" ]
+  Conditions = [ """ firepower """, """Protocol:""", """AccessControlRuleName:""", """AccessControlRuleAction:""", """DNSResponseType:""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",

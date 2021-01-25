@@ -3,7 +3,6 @@
 {
 Name = clearswift-dlp-email
   Vendor = Clearswift SEG
-  Product = Clearswift SEG
   Lms = Direct
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
@@ -18,7 +17,7 @@ Name = clearswift-dlp-email
     """([^\|]*\|){4}({recipients}[^\|]+)""",
     """([^\|]*\|){5}({subject}[^\|]+)""",
     """([^\|]*\|){6}({outcome}[^\|]+)""",
-    """([^\|]*\|){7}(|({attachment}[^.]+.({file_ext}[^,"|]+)[^\|]+))\|"""
+    """([^\|]*\|){7}(|({attachment}[^\|]+))\|"""
   ]
 }
 ```

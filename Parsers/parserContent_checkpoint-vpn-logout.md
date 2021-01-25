@@ -2,8 +2,8 @@
 ```Java
 {
 Name = checkpoint-vpn-logout
-  Vendor = Check Point Software Technologies
-  Product = Next Generation Firewall
+  Vendor = Check Point Software
+  Product = Check Point NGFW
   Lms = Direct
   DataType = "vpn-logout"
   TimeFormat = "epoch_sec"

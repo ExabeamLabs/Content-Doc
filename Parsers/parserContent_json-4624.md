@@ -6,10 +6,9 @@ Name = json-4624
     Product = Microsoft Windows
     Lms = Direct
     DataType = "windows-4624"
-    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
     Conditions = ["""4624""", """"AuthenticationPackageName":""""]
     Fields = [
-      """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s({host}[^\s]+)\sSkyformation""",
       """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """"Computer":"({host}[^"]+)""",
       """({event_name}An account was successfully logged on)""",

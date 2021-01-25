@@ -4,13 +4,11 @@ Product: BlueCat Networks Adonis
 --------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   6   |   0    |     6      |      3      |    3    |
+|   2   |   0    |     2      |      1      |    1    |
 
-|                              Use-Case                               | Activity Types                        | Event Types/Parsers                                                               | MITRE TTP                                                                                | Content                   |
-|:-------------------------------------------------------------------:| ------------------------------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ------------------------- |
-|    [Malware Detection](../UseCases/usecase_malware_detection.md)    | <ul><li>Security Operations</li></ul> |  dns-query<br> ↳ [leef-dns-query](../Parsers/parserContent_leef-dns-query.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1071 - Application Layer Protocol<br> | <ul><li>2 Rules</li></ul> |
-|             [Phishing](../UseCases/usecase_phishing.md)             | <ul><li>Security Operations</li></ul> |  dns-query<br> ↳ [leef-dns-query](../Parsers/parserContent_leef-dns-query.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1071 - Application Layer Protocol<br> | <ul><li>2 Rules</li></ul> |
-| [Ransomware Detection](../UseCases/usecase_ransomware_detection.md) | <ul><li>Security Operations</li></ul> |  dns-query<br> ↳ [leef-dns-query](../Parsers/parserContent_leef-dns-query.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1071 - Application Layer Protocol<br> | <ul><li>2 Rules</li></ul> |
+|               Use-Case                | Activity Types                        | Event Types/Parsers                                                               | MITRE TTP                                                                                | Content                   |
+|:-------------------------------------:| ------------------------------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ------------------------- |
+| [Other](../UseCases/usecase_other.md) | <ul><li>Security Operations</li></ul> |  dns-query<br> ↳ [leef-dns-query](../Parsers/parserContent_leef-dns-query.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1071 - Application Layer Protocol<br> | <ul><li>2 Rules</li></ul> |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

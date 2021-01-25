@@ -3,7 +3,6 @@
 {
 Name = unix-auditd-login
   Vendor = Unix
-  Product = Unix Auditd
   Lms = Direct
   DataType = "ssh-login"
   TimeFormat = "epoch_sec"

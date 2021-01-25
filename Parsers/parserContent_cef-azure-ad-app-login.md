@@ -17,7 +17,7 @@ Name = cef-azure-ad-app-login
     """\Woutcome=({result_code}[^"\=]+?)\s+(\w+=|$)""",
     """\Wduser=({user}[^"\=\s]+?)\s+(\w+=|$)""",
     """\Wduser=({user_fullname}[^"\=\s]+?\s+[^"\=\s]+?)\s+(\w+=|$)""",
-    """\Wcs6=({user_email}[^"\=\s@]+@({email_domain}[^"\=\s@]+?))\s+(\w+=|$)""",
+    """\Wcs6=({user_email}[^"\=\s@]+@[^"\=\s@]+?)\s+(\w+=|$)""",
     """\Wcs1=({os}[^"\=]+?)\s+(\w+=|$)""",
     """\Wreason=(Other|({failure_reason}[^"\=]+?))\s+(\w+=|$)""",
     """\Wcs4=({location_country}[^"\=]+?)\s+(\w+=|$)""",

@@ -3,7 +3,6 @@
 {
 Name = q-4662
   Vendor = Microsoft Windows
-  Product = Microsoft Windows
   Lms = QRadar
   DataType = "adobject-operation"
   TimeFormat = "epoch_sec"

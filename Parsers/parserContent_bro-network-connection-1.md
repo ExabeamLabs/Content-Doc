@@ -2,7 +2,6 @@
 ```Java
 {
 Name = bro-network-connection-1
-  Product = Bro
   DataType = "network-connection"
   Conditions = [ """"id.orig_h""", """"id.resp_h""", """"mbps""", """"age_of_conn""" ]
   Fields = ${BroParserTemplates.json-bro-activity.Fields}[

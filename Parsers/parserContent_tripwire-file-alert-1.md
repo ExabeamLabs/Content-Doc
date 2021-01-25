@@ -3,7 +3,6 @@
 {
 Name = tripwire-file-alert-1
   Vendor = Tripwire Enterprise
-  Product = Tripwire Enterprise
   Lms = Splunk
   DataType = "file-alert"  
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

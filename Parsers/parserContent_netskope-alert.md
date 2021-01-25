@@ -19,8 +19,7 @@ Name = netskope-alert
     """"alert_type": "({alert_type}[^"]+)"""",
     """"dstip": "({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
     """"srcip": "({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
-    """"url": "({additional_info}[^"]+)"""",
-    """"app":\s*"({process_name}[^"]+)"""",
+    """"url": "({additional_info}[^"]+)""""
   ]
 }
 ```

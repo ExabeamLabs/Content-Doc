@@ -15,7 +15,6 @@ Name = ccure-badge-access-2
       """"objectname2":"({location_door}[^"]+)"""",
       """<Card>({badge_id}.+?)</Card>""",
       """<StateCode>({outcome}.+?)</StateCode>""",
-      """<Direction.*?>({direction}.+?)</Direction>""",
     ]
   }
 ```

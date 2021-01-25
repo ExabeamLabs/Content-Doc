@@ -3,7 +3,6 @@
 {
 Name = cef-kaba-badge-access
   Vendor = KABA EXOS
-  Product = KABA EXOS
   Lms = ArcSight
   DataType = "physical-access"
   TimeFormat = "epoch"

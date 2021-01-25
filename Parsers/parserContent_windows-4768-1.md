@@ -23,6 +23,7 @@ Name = windows-4768-1
     """"TicketOptions"+:"+({ticket_options}[^"]+)""",
     """"Status"+:"+({result_code}[^"]+)""",
     """"IpPort"+:"+({dest_port}\d+)""",
+    """"TicketEncryptionType":"({ticket_encryption_type}[^"]+)""",
   ]
      DupFields = [ "host->dest_host" ]
 }
