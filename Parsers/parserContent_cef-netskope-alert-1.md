@@ -29,5 +29,6 @@ Name = cef-netskope-alert-1
     """duser=({user}[^\s]+)""",
     """"organization_unit":"({user_ou}[^"]+)""""
   ]
+  DupFields = [ "malware_url->full_url" ]
 }
 ```

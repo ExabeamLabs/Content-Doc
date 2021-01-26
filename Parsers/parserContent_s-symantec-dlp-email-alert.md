@@ -3,6 +3,7 @@
 {
 Name = s-symantec-dlp-email-alert
     Vendor = Symantec
+  Product = Symantec DLP
     Lms = Splunk
     DataType = "dlp-email-alert"
     TimeFormat = "yyyy/MM/dd H:mm:ss"

@@ -18,13 +18,16 @@ Name = cef-sentinelone-security-alert-6
      """"agentDomain":\s*"+({src_domain}[^"]+)"""",
      """"agentComputerName":\s*"+({src_host}[^"]+)"""",
      """ msg=({additional_info}.*?)\s+\w+="""
-     """"fileExtensionType":(\s*"+None|null|\s*"+({file_type}[^"]+)")""",
+     """"fileExtensionType":(\s*"+None|null|\s*"+(Unknown|({file_type}[^"]+))")""",
      """outcome=({outcome}[^,*\\\s"*]+)""",
      """dpriv=({alert_type}\w+)\s+\w+="""
-     """ext_rank=({alert_severity}\d+)"""     
-     """ext_username=({user_fullname}\w+\s+\w+)\s+\w+="""
-     """ext_username=({user}\w+)\s+\w+="""
-     """ext_username=({domain}[^\s=]+?)\\({user}[^\\=\s]+?)\s+\w+="""
+     """username"+:"+((NT AUTHORITY|({domain}[^\\"]+))\\+)?(SYSTEM|({user}[^"]+))"+,""",
+     """dproc=({location}.+?)\s+\w+=""",
+     """cat=({category}.+?)\s+\w+=""",
+     """app=({app}.+?)\s+\w+=""",
+     """fileHash=({md5}.+?)\s\w+=""",
+     """"+rank"+:({alert_severity}\d+)""",
+     
   ]
 }
 ```

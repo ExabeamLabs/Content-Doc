@@ -17,6 +17,7 @@ Name = symantec-email-alert-out
     """blocked=({outcome}\w+)""",
     """Attachment_Filename=({attachments}.+?)\s*,(\s+\w+=|\s*$)""",
     """incident_id=({alert_id}\d+)""",
+    """protocol=({protocol}.*?)\s+\w+="""
   ]
   DupFields = [ "recipient->recipients", "recipient->external_address" ]
 }

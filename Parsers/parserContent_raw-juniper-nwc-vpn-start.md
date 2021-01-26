@@ -3,6 +3,7 @@
 {
 Name = raw-juniper-nwc-vpn-start
   Vendor = Juniper Networks
+  Product = Juniper VPN
   Lms = Direct
   DataType = "vpn-start"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

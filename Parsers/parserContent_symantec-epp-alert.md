@@ -28,7 +28,8 @@ Name = symantec-epp-alert
          """Confidence:\s*({additional_info}[^,]+)""",
          """Actual action:\s*({outcome}[^,]+)""",
          """Application hash:\s*(|({file_hash}[^,]+)),""",
-         """Hash type:\s*(|({hash_type}[^,]+)),"""
+         """Hash type:\s*(|({hash_type}[^,]+)),""",
+         """Application name:\s"*({process_name}[^"]+)""", 
 	]
   SOAR {
     IncidentType = "malware"

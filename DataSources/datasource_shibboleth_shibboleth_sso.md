@@ -6,9 +6,9 @@ Product: Shibboleth SSO
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   1    |     1      |      1      |    1    |
 
-|               Use-Case                | Activity Types                            | Event Types/Parsers                                                                                                     | MITRE TTP                  | Content                                             |
-|:-------------------------------------:| ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | -------------------------- | --------------------------------------------------- |
-| [Other](../UseCases/usecase_other.md) | <ul><li>Activity Time  and Type</li></ul> |  account-password-change<br> ↳ [shibboleth-password-change](../Parsers/parserContent_shibboleth-password-change.md)<br> | T1078 - Valid Accounts<br> | <ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul> |
+|                                 Use-Case                                  | Activity Types                            | Event Types/Parsers                                                                                                     | MITRE TTP                  | Content                                             |
+|:-------------------------------------------------------------------------:| ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | -------------------------- | --------------------------------------------------- |
+| [Compromised Credentials](../UseCases/usecase_compromised_credentials.md) | <ul><li>Activity Time  and Type</li></ul> |  account-password-change<br> ↳ [shibboleth-password-change](../Parsers/parserContent_shibboleth-password-change.md)<br> | T1078 - Valid Accounts<br> | <ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul> |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

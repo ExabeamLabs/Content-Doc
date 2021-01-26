@@ -3,6 +3,7 @@
 {
 Name = rs2-badge-access
   Vendor = RS2 Technologies
+  Product = RS2 Technologies
   Lms = Syslog
   DataType = "physical-access"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.S"

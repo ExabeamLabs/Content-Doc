@@ -27,7 +27,7 @@ Name = cef-cloudflare-net-connection
     """dst=({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
     """destinationDnsDomain=({external_domain}.*?)\s*\w+=""",
     """requestClientApplication=({app}.+?)\s*\w+=""",
-    """ext_source=({source}.+?)\s*\w+=""",
+    """ext_source=({log_source}.+?)\s*\w+=""",
     """\sin=({bytes}.+?)\s*\w+=""",
     """ext_method=({method}[^\s]+)""",
     """cat=({category}[^\s]+)\s""",

@@ -2,7 +2,8 @@
 ```Java
 {
 Name = s-xenapp-ica-login
-    Vendor = Citrix XenApp
+    Vendor = Citrix
+    Product = Citrix XenApp
     Lms = Splunk
     DataType = "app-login"
     TimeFormat = "MM/dd/yyyy HH:mm:ss zzz"

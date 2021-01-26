@@ -3,6 +3,7 @@
 {
 Name = cef-attivo-security-alert
   Vendor = Attivo
+  Product = BOTsink
   Lms = ArcSight
   DataType = "alert"
   TimeFormat = "epoch"

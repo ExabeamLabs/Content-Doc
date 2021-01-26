@@ -3,6 +3,7 @@
 {
 Name = syslog-l7-remote-logon
   Vendor = Kemp
+  Product = Kemp LoadMaster
   Lms = Direct
   DataType = "remote-logon"
   TimeFormat = "epoch"

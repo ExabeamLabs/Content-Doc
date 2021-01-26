@@ -24,7 +24,7 @@ Name = s-tanium-security-alert-3
       """"Computer IP":"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
       """"fullpath\\":\\"({malware_url}[^"]+?)\\*"""",
       """"name\\":\\"({file_name}[^"]+?)\\*"""",
-      """"source\\":\\"({source}[^"]+?)\\*"""",
+      """"source\\":\\"({log_source}[^"]+?)\\*"""",
     ]
   }
 ```

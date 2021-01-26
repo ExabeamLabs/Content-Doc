@@ -3,6 +3,7 @@
 {
 Name = u-googlecalendar-app-activity
   Vendor = Google
+  Product = Google Calendar
   Lms = Sumo
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

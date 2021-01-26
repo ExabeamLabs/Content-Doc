@@ -3,6 +3,7 @@
 {
 Name = isi-bo-file-activity
   Vendor = BusinessObject
+  Product = BusinessObject
   Lms = Splunk
   DataType = "file-activity"
   IsHVF = true

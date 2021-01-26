@@ -2,7 +2,8 @@
 ```Java
 {
 Name = s-owa-activity
-    Vendor = Webmail OWA
+    Vendor = Microsoft
+    Product = Exchange
     Lms = Splunk
     DataType = "app-activity"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

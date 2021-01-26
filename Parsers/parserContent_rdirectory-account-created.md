@@ -3,6 +3,7 @@
 {
 Name = rdirectory-account-created
   Vendor = Namespace rDirectory
+  Product = Namespace rDirectory
   Lms = Direct
   DataType = "account-creation"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

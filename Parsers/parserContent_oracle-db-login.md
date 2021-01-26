@@ -3,6 +3,7 @@
 {
 Name = oracle-db-login
   Vendor = Oracle
+  Product = Oracle DB
   Lms = Direct
   DataType = "database-login"
   IsHVF = true

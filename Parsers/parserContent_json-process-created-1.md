@@ -15,7 +15,7 @@ Name = json-process-created-1
       """({event_code}4688)""",
       """"Activity":"({event_name}[^"]+)""",
       """"Hostname":"({host}[^"]+)""",
-      """"CommandLine":"({command_line}[^"]+)""",
+      """"CommandLine":"\s*({command_line}[^"]+)""",
       """"NewProcessId":"({process_guid}[^"]+)""",
       """"NewProcessName":"({process}({directory}[^"]*?[\\\/]+)?({process_name}[^"\\\/]+))"""",
       """"SubjectLogonId":"({login_id}[^"]+)""",

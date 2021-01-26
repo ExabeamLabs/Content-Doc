@@ -3,7 +3,7 @@
 {
 Name = powershell-800
   Vendor = Microsoft
-  Product = Microsoft Windows
+  Product = Windows
   Lms = Direct
   DataType = "powershell-activity"
   TimeFormat = "YYYY-DD-MM'T'HH:mm:ss"

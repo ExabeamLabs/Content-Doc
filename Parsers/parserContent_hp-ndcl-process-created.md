@@ -3,6 +3,7 @@
 {
 Name = hp-ndcl-process-created
     Vendor = HP Comware
+  Product = HP Comware
     Lms = Direct
     DataType = "process-created"
     TimeFormat = "MMM dd HH:mm:ss yyyy"

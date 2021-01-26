@@ -5,9 +5,9 @@ Name = cisco-fpr-113004
   Vendor = Cisco
   Product = Cisco Adaptive Security Appliance
   Lms = Direct
-  DataType = "nac-logon"
+  DataType = "vpn-start"
   TimeFormat = "yyyy MMM dd HH:mm:ss"
-  Conditions = [ """%FTD-auth-6-113004:""", """AAA user authentication Successful""" ]
+  Conditions = [ """%FTD-auth-6-113004:""" ]
   Fields = [
     """exabeam_host=(.+?@\s*)?({host}[\w.\-]+)""",
     """({time}\d+ \w+ \d+ \d+:\d+:\d+)""",

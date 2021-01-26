@@ -2,8 +2,8 @@
 ```Java
 {
 Name = netdoc-app-activity-1
- Product = NetDocs
- Vendor = NetDocs
+ Product = Netdocs
+ Vendor = Netdocs
  Lms = Splunk
  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
  DataType = "app-activity"

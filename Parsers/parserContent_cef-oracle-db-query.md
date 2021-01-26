@@ -3,6 +3,7 @@
 {
 Name = cef-oracle-db-query
   Vendor = Oracle
+  Product = Oracle DB
   Lms = ArcSight
   DataType = "database-query"
   IsHVF = true
@@ -11,7 +12,7 @@ Name = cef-oracle-db-query
   Fields = [ 
     """exabeam_host=([^=]*@\s*)?({host}[^\s]+)""",
     """\|Oracle\|FGA\|([^\|]*\|){2}({db_operation}[^\|]+)""",
-    """\WeventId=({event_id}\d+)""",
+    """\WeventId=({event_code}\d+)""",
     """\Wmsg=\s*({db_query}([^\\=]|(\\\\)*\\=|\\)+)\s+(\w+=|$)""",
     """\Wrt=({time}\d+)""",
     """\Wshost=({src_host}[^\s]+)""",

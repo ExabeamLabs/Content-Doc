@@ -3,6 +3,7 @@
 {
 Name = cef-dtex-web-activity
   Vendor = Dtex
+  Product = Dtex
   Lms = ArcSight
   DataType = "web-activity"
   IsHVF = true

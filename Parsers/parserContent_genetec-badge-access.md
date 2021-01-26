@@ -3,6 +3,7 @@
 {
 Name = genetec-badge-access
   Vendor = Genetec
+  Product = Genetec
   Lms = Direct
   DataType = "physical-access"
   TimeFormat = "M/d/yyyy H:mm:ss a"

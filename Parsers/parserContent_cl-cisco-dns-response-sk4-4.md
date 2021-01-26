@@ -8,7 +8,6 @@ Name = cl-cisco-dns-response-sk4-4
   Fields=${CiscoParsersTemplates.cef-cisco-dns-response-sk4-template.Fields}[
     """TimeGenerated"+:"+({time}[^"]+)""",
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """"Categories_s"+:"+({category}[^,"]+)?"+,""",
   ]
 }
 ```

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = bro-ssl-activity-2
-  Product = Zeek Network Security Monitor
+  Product = Bro
   DataType = "authentication-successful"
   Conditions = [ """dataset""", """"ssl"""", """zeek""", """type""", """established""" ]
   Fields = ${BroParserTemplates.bro-activity-1.Fields}[

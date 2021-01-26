@@ -3,6 +3,7 @@
 {
 Name = syslog-juniper-vpn-realm-1
   Vendor = Juniper Networks
+  Product = Juniper VPN
   Lms = Syslog
   DataType = "vpn-start"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

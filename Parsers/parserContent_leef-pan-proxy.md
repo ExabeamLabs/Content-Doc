@@ -30,6 +30,7 @@ Name = leef-pan-proxy
     """\|Miscellaneous="*([^\/\s"]+)\/({uri_path}[^\s"\?]+)[^\s]*?("+\|\w+=|"+\s*$|\s*$)""",
     """\|Miscellaneous="*([^\s\?"]+)\?(|({uri_query}[^\s]+?))("+\|\w+=|"+\s*$|\s*$)""",
     """\|Miscellaneous="*[^\s"\/\?]*?({top_domain}[^\.]+(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)(\/[^\s]*|\s*)("+\|\w+=|"+\s*$|\s*$)""",
+    """\|ContentType=({mime}[^\|]+)""", 
  ]
 }
 ```

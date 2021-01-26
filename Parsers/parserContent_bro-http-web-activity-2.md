@@ -2,7 +2,7 @@
 ```Java
 {
 Name = bro-http-web-activity-2
-  Product = Zeek Network Security Monitor
+  Product = Bro
   DataType = "web-activity"
   Conditions = [ """fileset""", """"http"""", """type""", """zeek""" ]
   Fields = ${BroParserTemplates.bro-activity-1.Fields}[

@@ -3,6 +3,7 @@
 {
 Name = vormetric-file-operations
   Vendor = Vormetric
+  Product = Vormetric
   Lms = Direct
   DataType = "file-operations"
   IsHVF = true

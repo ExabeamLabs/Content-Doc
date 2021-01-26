@@ -2,7 +2,8 @@
 ```Java
 {
 Name = s-lanscopecat-usb-activity
-  Vendor = LanScope Cat
+  Vendor = LanScope
+  Product = LanScope Cat
   Lms = Splunk
   DataType = "usb-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

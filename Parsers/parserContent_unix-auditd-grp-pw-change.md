@@ -3,6 +3,7 @@
 {
 Name = unix-auditd-grp-pw-change
   Vendor = Unix
+  Product = Unix Auditd
   Lms = Direct
   DataType = "password-change"
   TimeFormat = "epoch_sec"

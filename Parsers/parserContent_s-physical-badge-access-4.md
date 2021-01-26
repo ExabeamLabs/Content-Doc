@@ -2,7 +2,8 @@
 ```Java
 {
 Name = s-physical-badge-access-4
-    Vendor = Unknown
+    Vendor = Badge
+  Product = Badge
     Lms = Splunk
     DataType = "physical-access"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
