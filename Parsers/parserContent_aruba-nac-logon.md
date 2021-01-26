@@ -3,6 +3,7 @@
 {
 Name = aruba-nac-logon
     Vendor = HP Aruba
+  Product = Aruba Wireless controller
     Lms = Splunk
     DataType = "nac-logon"
     TimeFormat = "MMM dd HH:mm:ss yyyy"

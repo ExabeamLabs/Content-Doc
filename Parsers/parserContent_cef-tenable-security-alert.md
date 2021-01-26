@@ -3,6 +3,7 @@
 {
 Name = cef-tenable-security-alert
   Vendor = Tenable.io
+  Product = Tenable.io
   Lms = Splunk
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

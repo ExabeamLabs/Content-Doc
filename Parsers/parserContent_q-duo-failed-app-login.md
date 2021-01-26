@@ -3,6 +3,7 @@
 {
 Name = q-duo-failed-app-login
   Vendor = Duo Security
+  Product = Duo Security
   Lms = QRadar
   DataType = "failed-app-login"
   TimeFormat = "MM/dd/yyyy HH:mm:ss"

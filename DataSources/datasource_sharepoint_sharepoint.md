@@ -6,9 +6,9 @@ Product: SharePoint
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      1      |    1    |
 
-|               Use-Case                | Activity Types                             | Event Types/Parsers                                                                                           | MITRE TTP                  | Content                   |
-|:-------------------------------------:| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------- | -------------------------- | ------------------------- |
-| [Other](../UseCases/usecase_other.md) | <ul><li>Critical System Activity</li></ul> |  file-download<br> ↳ [s-sharepoint-file-download](../Parsers/parserContent_s-sharepoint-file-download.md)<br> | T1078 - Valid Accounts<br> | <ul><li>1 Rules</li></ul> |
+|                                 Use-Case                                  | Activity Types                             | Event Types/Parsers                                                                                           | MITRE TTP                  | Content                   |
+|:-------------------------------------------------------------------------:| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------- | -------------------------- | ------------------------- |
+| [Compromised Credentials](../UseCases/usecase_compromised_credentials.md) | <ul><li>Critical System Activity</li></ul> |  file-download<br> ↳ [s-sharepoint-file-download](../Parsers/parserContent_s-sharepoint-file-download.md)<br> | T1078 - Valid Accounts<br> | <ul><li>1 Rules</li></ul> |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

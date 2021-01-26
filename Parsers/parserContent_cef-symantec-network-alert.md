@@ -26,7 +26,7 @@ Name = cef-symantec-network-alert
       """"src_name":"({src_host}[^"]+)"""",
       """"dst_ip":"({dest_ip}[^"]+)"""",
       """"device_os_name":"({os}[^"]+)"""",
-      """"product_name":"({product}[^"]+)"""",
+      """"product_name":"({product_name}[^"]+)"""",
     ]
   }
 ```

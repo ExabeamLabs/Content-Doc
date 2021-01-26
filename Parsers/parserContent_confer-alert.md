@@ -21,7 +21,7 @@ Name = confer-alert
     """eventDescription"+:\s*"+({additional_info}[^"]+)"""",
     """deviceType"+:\s*"+({os}[^"]+)"""",
     """externalIpAddress"+:\s*"+({dest_ip}[^"]+)"""",
-
+    """applicationName":\s"({process_name}[^"]+)""",
   ]
 }
 ```

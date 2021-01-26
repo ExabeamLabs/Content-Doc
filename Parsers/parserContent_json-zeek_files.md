@@ -2,7 +2,6 @@
 ```Java
 {
 Name = json-zeek_files
-  Product = Zeek Network Security Monitor
   DataType = "file-operations"
   Conditions = [ """"analyzers"""", """ zeek_files """, """"fuid"""" ]
   Fields = ${BroParserTemplates.json-zeek-activity.Fields}[

@@ -3,6 +3,7 @@
 {
 Name = cef-unix-dlp-email-alert
   Vendor = Unix
+  Product = Unix
   Lms = Splunk
   DataType = "dlp-email-alert"
   TimeFormat = "epoch"

@@ -3,6 +3,7 @@
 {
 Name = netiq-app-login
   Vendor = NetIQ
+  Product = NetIQ
   Lms = QRadar
   DataType = "app-login"
   TimeFormat = "epoch"

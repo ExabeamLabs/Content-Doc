@@ -2,8 +2,8 @@
 ```Java
 {
 Name = raw-asa-113005-1
-  Vendor = Cisco
-  Product = Cisco Adaptive Security Appliance
+  Vendor = Cisco FPR
+  Product = Cisco 
   Lms = Direct
   DataType = "failed-vpn-login"
   TimeFormat = "yyyy MMM dd HH:mm:ss"

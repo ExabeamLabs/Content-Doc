@@ -3,6 +3,7 @@
 {
 Name = cds-process-creation
   Vendor = Unix
+  Product = Unix
   Lms = Splunk
   DataType = "process-created"
   IsHVF = true

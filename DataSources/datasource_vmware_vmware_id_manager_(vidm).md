@@ -4,11 +4,13 @@ Product: VMWare ID Manager (VIDM)
 ---------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   5   |   2    |     2      |      1      |    1    |
+|   9   |   3    |     3      |      3      |    3    |
 
-|               Use-Case                | Activity Types                                                                               | Event Types/Parsers                                                                                                          | MITRE TTP                                            | Content                                             |
-|:-------------------------------------:| -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------------- |
-| [Other](../UseCases/usecase_other.md) | <ul><li>Activity Time  and Type</li><li>Endpoint Activity</li><li>Process Activity</li></ul> |  privileged-object-access<br> ↳ [vmware-id-manager-obj-access](../Parsers/parserContent_vmware-id-manager-obj-access.md)<br> | T1078 - Valid Accounts<br>T1204 - User Execution<br> | <ul><li>5 Rules</li></ul><ul><li>2 Models</li></ul> |
+|                                 Use-Case                                  | Activity Types                                               | Event Types/Parsers                                                                                                          | MITRE TTP                  | Content                                             |
+|:-------------------------------------------------------------------------:| ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- | -------------------------- | --------------------------------------------------- |
+| [Compromised Credentials](../UseCases/usecase_compromised_credentials.md) | <ul><li>Activity Time  and Type</li></ul>                    |  privileged-object-access<br> ↳ [vmware-id-manager-obj-access](../Parsers/parserContent_vmware-id-manager-obj-access.md)<br> | T1078 - Valid Accounts<br> | <ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul> |
+|       [Malware Detection](../UseCases/usecase_malware_detection.md)       | <ul><li>Endpoint Activity</li><li>Process Activity</li></ul> |  privileged-object-access<br> ↳ [vmware-id-manager-obj-access](../Parsers/parserContent_vmware-id-manager-obj-access.md)<br> | T1204 - User Execution<br> | <ul><li>4 Rules</li></ul><ul><li>1 Models</li></ul> |
+|    [Ransomware Detection](../UseCases/usecase_ransomware_detection.md)    | <ul><li>Endpoint Activity</li><li>Process Activity</li></ul> |  privileged-object-access<br> ↳ [vmware-id-manager-obj-access](../Parsers/parserContent_vmware-id-manager-obj-access.md)<br> | T1204 - User Execution<br> | <ul><li>4 Rules</li></ul><ul><li>1 Models</li></ul> |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

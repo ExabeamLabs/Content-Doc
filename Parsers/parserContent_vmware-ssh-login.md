@@ -2,7 +2,8 @@
 ```Java
 {
 Name = vmware-ssh-login
-  Vendor = VMware ESX
+  Vendor = VMware
+  Product = VMware ESX 
   Lms = QRadar
   DataType = "ssh-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

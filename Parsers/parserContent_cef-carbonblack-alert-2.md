@@ -19,5 +19,6 @@ Name = cef-carbonblack-alert-2
     """\Wrequest=(|({malware_url}.+?))(\s+\w+=|\s*$)""",
     """\WrequestUrlPort=({dest_port}\d+)""",
   ]
+  DupFields = ["host->dest_host"]
 }
 ```

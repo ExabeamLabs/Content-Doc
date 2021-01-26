@@ -3,6 +3,7 @@
 {
 Name = syslog-juniper-vpn-relogin
   Vendor = Juniper Networks
+  Product = Juniper VPN
   Lms = Syslog
   DataType = "vpn-start"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

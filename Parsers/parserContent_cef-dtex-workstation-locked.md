@@ -3,6 +3,7 @@
 {
 Name = cef-dtex-workstation-locked
   Vendor = Dtex
+  Product = Dtex
   Lms = ArcSight
   DataType = "workstation-locked"
   TimeFormat = "epoch"

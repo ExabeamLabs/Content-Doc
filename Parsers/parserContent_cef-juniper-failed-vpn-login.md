@@ -3,6 +3,7 @@
 {
 Name = cef-juniper-failed-vpn-login
   Vendor = Juniper Networks
+  Product = Juniper VPN
   Lms = ArcSight
   DataType = "failed-vpn-login"
   TimeFormat = "epoch"

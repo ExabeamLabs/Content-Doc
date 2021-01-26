@@ -3,6 +3,7 @@
 {
 Name = s-azura-mfa-auth-failed
   Vendor = Azura
+  Product = Multi Factor Auth
   Lms = Splunk
   DataType = "authentication-failed"
   TimeFormat = "epoch"

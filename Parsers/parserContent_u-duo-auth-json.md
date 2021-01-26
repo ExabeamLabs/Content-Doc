@@ -3,6 +3,7 @@
 {
 Name = u-duo-auth-json
   Vendor = Duo Security
+  Product = Duo Security
   Lms = Sumo
   DataType = "authentication-attempt"
   TimeFormat = "epoch_sec"

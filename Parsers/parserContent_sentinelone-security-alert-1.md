@@ -3,6 +3,7 @@
 {
 Name = sentinelone-security-alert-1
   Vendor = SentinelOne
+  Product = SentinelOne
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"

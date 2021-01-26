@@ -3,6 +3,7 @@
 {
 Name = json-bro-email-in
   Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "dlp-email-alert"
   TimeFormat = "epoch"

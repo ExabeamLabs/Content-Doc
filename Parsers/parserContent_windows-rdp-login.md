@@ -11,7 +11,7 @@ Name = windows-rdp-login
   Fields = [
     """exabeam_host=({host}[\w\-.]+)""",
     """<TimeCreated SystemTime=('+|"+)({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """<EventID>({event_id}\d+)<""",
+    """<EventID>({event_code}\d+)<""",
     """<Execution ProcessID='({process_id}\d+)'\s+ThreadID='({thread_id}\d+)'""",
     """<Computer>({dest_host}[^<]+)<""",
     """<Security UserID=('+|"+)({user_sid}[^'"]+)'""",

@@ -3,6 +3,7 @@
 {
 Name = s-juniper-nwc-vpn-resume
   Vendor = Juniper Networks
+  Product = Juniper VPN
   Lms = Splunk
   DataType = "access-control"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

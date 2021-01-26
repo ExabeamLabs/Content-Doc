@@ -4,11 +4,12 @@ Product: Honeywell WIN-PAK
 --------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   1    |     1      |      1      |    1    |
+|   2   |   1    |     2      |      2      |    2    |
 
-|               Use-Case                | Activity Types                                                 | Event Types/Parsers                                                                                   | MITRE TTP                  | Content                                             |
-|:-------------------------------------:| -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | -------------------------- | --------------------------------------------------- |
-| [Other](../UseCases/usecase_other.md) | <ul><li>Activity Time  and Type</li><li>Badge Access</li></ul> |  physical-access<br> ↳ [q-winpak-badge-access](../Parsers/parserContent_q-winpak-badge-access.md)<br> | T1078 - Valid Accounts<br> | <ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul> |
+|                                 Use-Case                                  | Activity Types                            | Event Types/Parsers                                                                                   | MITRE TTP                  | Content                                             |
+|:-------------------------------------------------------------------------:| ----------------------------------------- | ----------------------------------------------------------------------------------------------------- | -------------------------- | --------------------------------------------------- |
+| [Compromised Credentials](../UseCases/usecase_compromised_credentials.md) | <ul><li>Activity Time  and Type</li></ul> |  physical-access<br> ↳ [q-winpak-badge-access](../Parsers/parserContent_q-winpak-badge-access.md)<br> | T1078 - Valid Accounts<br> | <ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul> |
+|        [Lateral Movement](../UseCases/usecase_lateral_movement.md)        | <ul><li>Badge Access</li></ul>            |  physical-access<br> ↳ [q-winpak-badge-access](../Parsers/parserContent_q-winpak-badge-access.md)<br> | T1078 - Valid Accounts<br> | <ul><li>1 Rules</li></ul>                           |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

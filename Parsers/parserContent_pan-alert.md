@@ -14,7 +14,8 @@ Name = pan-alert
     """,THREAT,([^,]*?,){9}(?:\w+\\+)?({user}[^,]+)""",
     """,THREAT,([^,]*?,){8}(?:\w+\\+)?({user}[^,]+)""",
     """,THREAT,(("[^"]*?",)|([^,]*,)){29}any,({alert_severity}low|medium|high|critical),""",
-    """,THREAT,(("[^"]*?",)|([^,]*,)){29}({alert_severity}[^,]+),""",
+    """,THREAT,(("[^"]*?",)|([^,]*,)){30}({alert_severity}[^,]+),""",
+    """,THREAT,([^,]*,){28}({alert_name}[^,]+)"""
   ]
   SOAR {
     IncidentType = "malware"

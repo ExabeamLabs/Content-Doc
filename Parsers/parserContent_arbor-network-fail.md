@@ -3,6 +3,7 @@
 {
 Name = arbor-network-fail
   Vendor = Arbor
+  Product = Arbor
   Lms = Splunk
   DataType = "network-connection"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"

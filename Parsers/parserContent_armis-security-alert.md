@@ -21,6 +21,7 @@ Name = armis-security-alert
     """"actionType":\s*"({alert_severity}[^"]+)"""",
     """"title":\s*"({alert_name}[^"]+)"""",
     """"timezone":\s*"({time_zone}[^"]+)"""",
+    """"user":\s(null|({user}[^,]+))""", 
   ]
 }
 ```

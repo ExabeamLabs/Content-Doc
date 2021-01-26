@@ -18,6 +18,10 @@ Name = win-powershell-command
       """User = (({domain}[^\\]+?)\\)?({user}[^\s]+)\s+Connected User =""",
       """CommandInvocation\(.+?\):\s*"({command_invocation}[^"]+)""",
       """value="*(?:function\s)?({command_module}[^\s"]+)"""
+    """Host\s*Application\s*=\s*({powershell_image}[^\s]+)\s+EngineVersion""",
+    """Host\s*Application\s*=\s*({command_line}[^\s]+)""""
+    """CommandInvocation\(.+?\):\s*\\*"({command_invocation}[^"\\]+)""",
+    """Details:.+?CommandInvocation.+?ParameterBinding.+?value=\\"(function\s)?({command_module}[^\s\\,"]+)""",
    ]
  }
 ```

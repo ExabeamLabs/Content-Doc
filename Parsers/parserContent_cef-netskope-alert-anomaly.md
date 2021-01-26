@@ -23,5 +23,6 @@ Name = cef-netskope-alert-anomaly
     """"risk_level":"({alert_severity}[^"]+)""",
     """"hostname":"({src_host}[^"]+)""",
   ]
+  DupFields = ["process->process_name"]
 }
 ```

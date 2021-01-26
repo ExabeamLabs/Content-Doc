@@ -10,13 +10,12 @@ Name = citrix-file-share
   Conditions = ["""SkyFormation""","""destinationServiceName=Citrix ShareFile"""]
   Fields = [
       """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d+Z)\s({host}[^ ]+)""",
-      """cat=({category}.+?)\s+\w+=""",
-      """\sfname=({file_path}({file_parent}[^=]*?[\/]+)?({file_name}[^\/=]+?(\.({file_ext}\w+))?))\s+\w+=""",
-      """destinationServiceName=({app}.+?)\s+\w+=""",
+      """cat=({category}[^ ]+)""",
+      """fname=({file_name}[^ ]+)""",
+      """suser=({user_email}[^ ]+)""",
+      """destinationServiceName=({app}.+?)\s*\w+=""",
       """dproc=({activity}[^\s]+)""",
-      """ext_RecipientEmail=({target}[^\s]+)""",
-      """"CreatorEmail":"({user_email}[^@"]+@({email_domain}[^@"]+))"""", 
-      """msg=({additional_info}.+?)\s*\w+=""",
+      """ext_RecipientEmail=({target}[^\s]+)"""
   ]
 }
 ```

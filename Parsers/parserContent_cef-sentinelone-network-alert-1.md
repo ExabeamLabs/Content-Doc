@@ -2,6 +2,7 @@
 ```Java
 {
 Name = cef-sentinelone-network-alert-1
+  Product = SentinelOne
   DataType = "network-connection"
   Conditions = [ """CEF:""", """|Security|SentinelOne|""", """|ip|""" ]
   Fields = ${SentinelOneParserTemplates.cef-sentinelone-security-alert.Fields}[

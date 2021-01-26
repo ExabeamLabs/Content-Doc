@@ -3,6 +3,7 @@
 {
 Name = siebel-db-query
     Vendor = Oracle
+  Product = Oracle DB
     Lms = Direct
     DataType = "database-query"
     IsHVF = true

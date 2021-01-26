@@ -3,6 +3,7 @@
 {
 Name = rdirectory-account-deleted
   Vendor = Namespace rDirectory
+  Product = Namespace rDirectory
   Lms = Direct
   DataType = "account-deleted"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

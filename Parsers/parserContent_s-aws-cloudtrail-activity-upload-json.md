@@ -2,6 +2,7 @@
 ```Java
 {
 Name = s-aws-cloudtrail-activity-upload-json
+  Product = AWS CloudTrail
   DataType = "file-operations"
   Conditions = [  "\"AwsApiCall\"", "\"eventName\"", "\"awsRegion\"", "\"eventName\"", "\"PutObject\"" ]
   Fields = ${AWSParserTemplates.s-aws-cloudtrail-activity-json.Fields} [

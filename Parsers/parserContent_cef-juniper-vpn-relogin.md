@@ -3,6 +3,7 @@
 {
 Name = cef-juniper-vpn-relogin
   Vendor = Juniper Networks
+  Product = Juniper VPN
   Lms = ArcSight
   DataType = "vpn-start"
   TimeFormat = "epoch"

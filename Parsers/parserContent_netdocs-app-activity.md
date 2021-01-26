@@ -11,7 +11,7 @@ Name = netdocs-app-activity
   Conditions = [ """</activity>""", """<activity date="""", """<user id="""", """guid="""", """host="""", """name="""", """custom-condition-CONT-7666"""]
   Fields = [
     """<activity date="({time}\d\d\d\d-\d+-\d+T\d+:\d+:\d+)" name="(|({activity}[^"]+))" host="(|({host}[^"]+))" desc="(|({=activity}[^"]+))""""
-    """<user id="(|({user_email}[^@"]+?@[^"]+)|({user}[^"]+))" guid="(|({guid}[^"]+))" name="(|({user_fullname}[^"]+))""""
+    """<user id="(|({user_email}[^@"]+?@({email_domain}[^"]+))|({user}[^"]+))" guid="(|({guid}[^"]+))" name="(|({user_fullname}[^"]+))""""
   ]
 }
 ```

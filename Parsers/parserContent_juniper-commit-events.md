@@ -2,7 +2,8 @@
 ```Java
 {
 Name = juniper-commit-events
-  Vendor = Juniper
+  Vendor = Juniper Networks
+  Product = Juniper Networks
   Lms = Direct
   DataType = "config-change"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

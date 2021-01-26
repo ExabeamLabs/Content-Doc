@@ -3,6 +3,7 @@
 {
 Name = raw-juniper-failed-vpn-login
   Vendor = Juniper Networks
+  Product = Juniper VPN
   Lms = Direct
   DataType = "failed-vpn-login"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

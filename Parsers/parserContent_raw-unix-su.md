@@ -3,6 +3,7 @@
 {
 Name = raw-unix-su
   Vendor = Unix
+  Product = Unix
   Lms = Direct
   DataType = "unix-account-switch"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

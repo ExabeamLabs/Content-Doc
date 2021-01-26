@@ -3,6 +3,7 @@
 {
 Name = json-duo-auth-attempt
   Vendor = Duo Security
+  Product = Duo Security
   Lms = Direct
   DataType = "authentication-attempt"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"

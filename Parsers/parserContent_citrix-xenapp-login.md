@@ -2,7 +2,8 @@
 ```Java
 {
 Name = citrix-xenapp-login
-    Vendor = Citrix XenApp
+    Vendor = Citrix
+    Product = Citrix XenApp
     Lms = Direct
     DataType = "app-login"
     TimeFormat = "MM/dd/yyyy:HH:mm:ss zzz"
