@@ -4,11 +4,11 @@ Product: AMAG
 -------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   1    |     1      |      2      |    2    |
+|   2   |   1    |     1      |      1      |    1    |
 
-|               Use-Case                | Activity Types                                                 | Event Types/Parsers                                                                                                                                                                                                                                                                                                                                             | MITRE TTP                  | Content                                             |
-|:-------------------------------------:| -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | --------------------------------------------------- |
-| [Other](../UseCases/usecase_other.md) | <ul><li>Activity Time  and Type</li><li>Badge Access</li></ul> |  failed-physical-access<br> ↳ [s-amag-badge-access](../Parsers/parserContent_s-amag-badge-access.md)<br> ↳ [amag-badge-access](../Parsers/parserContent_amag-badge-access.md)<br><br> physical-access<br> ↳ [s-amag-badge-access](../Parsers/parserContent_s-amag-badge-access.md)<br> ↳ [amag-badge-access](../Parsers/parserContent_amag-badge-access.md)<br> | T1078 - Valid Accounts<br> | <ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul> |
+|               Use-Case                | Activity Types                                                 | Event Types/Parsers                                                                                                                                                                                           | MITRE TTP                  | Content                                             |
+|:-------------------------------------:| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | --------------------------------------------------- |
+| [Other](../UseCases/usecase_other.md) | <ul><li>Activity Time  and Type</li><li>Badge Access</li></ul> |  failed-physical-access<br> ↳ [s-amag-badge-access](../Parsers/parserContent_s-amag-badge-access.md)<br><br> physical-access<br> ↳ [s-amag-badge-access](../Parsers/parserContent_s-amag-badge-access.md)<br> | T1078 - Valid Accounts<br> | <ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul> |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
