@@ -9,6 +9,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [AD Audit](DataSources/datasource_ad_audit_ad_audit.md)
 #### AMAG
 * [AMAG](DataSources/datasource_amag_amag.md)
+* [Symmetry Access Control](DataSources/datasource_amag_symmetry_access_control.md)
 #### APC
 * [APC](DataSources/datasource_apc_apc.md)
 #### ASUPIM
@@ -40,6 +41,9 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Akamai Siem](DataSources/datasource_akamai_akamai_siem.md)
 #### Alert Logic
 * [Alert Logic](DataSources/datasource_alert_logic_alert_logic.md)
+#### Amag
+* [AMAG](DataSources/datasource_amag_amag.md)
+* [Symmetry Access Control](DataSources/datasource_amag_symmetry_access_control.md)
 #### Amazon
 * [AWS](DataSources/datasource_amazon_aws.md)
 #### Apache
@@ -110,7 +114,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### CDS
 * [CDS](DataSources/datasource_cds_cds.md)
 #### Carbon Black
-* [Carbon Black](DataSources/datasource_carbon_black_carbon_black.md)
 * [Cb Defense](DataSources/datasource_carbon_black_cb_defense.md)
 * [Cb Protection](DataSources/datasource_carbon_black_cb_protection.md)
 * [Cb Response](DataSources/datasource_carbon_black_cb_response.md)
@@ -120,8 +123,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Centrify](DataSources/datasource_centrify_centrify.md)
 #### Centrify Infrastructure Services
 * [Centrify Infrastructure Services](DataSources/datasource_centrify_infrastructure_services_centrify_infrastructure_services.md)
-#### CenturyLink
-* [Adaptive Threat Intelligence](DataSources/datasource_centurylink_adaptive_threat_intelligence.md)
 #### Check Point
 * [Check Point Endpoint Security](DataSources/datasource_check_point_check_point_endpoint_security.md)
 * [Check Point NGFW](DataSources/datasource_check_point_check_point_ngfw.md)
@@ -129,6 +130,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Check Point Threat Prevention](DataSources/datasource_check_point_check_point_threat_prevention.md)
 #### Check Point Software Technologies
 * [Check Point Security Gateway Virtual Edition (vSEC)](DataSources/datasource_check_point_software_technologies_check_point_security_gateway_virtual_edition_(vsec).md)
+* [Next Generation Firewall](DataSources/datasource_check_point_software_technologies_next_generation_firewall.md)
 #### Checkpoint
 * [Checkpoint Identity Awareness](DataSources/datasource_checkpoint_checkpoint_identity_awareness.md)
 #### Cisco
@@ -332,7 +334,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### HP Aruba
 * [Aruba ClearPass Access Control and Policy Management](DataSources/datasource_hp_aruba_aruba_clearpass_access_control_and_policy_management.md)
 * [Aruba Wireless controller](DataSources/datasource_hp_aruba_aruba_wireless_controller.md)
-* [HP Aruba](DataSources/datasource_hp_aruba_hp_aruba.md)
 #### HP Comware
 * [HP Comware](DataSources/datasource_hp_comware_hp_comware.md)
 #### HP SafeCom
@@ -352,6 +353,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### IBM
 * [B2BI_Sterling_Integrator](DataSources/datasource_ibm_b2bi_sterling_integrator.md)
 * [Guardium](DataSources/datasource_ibm_guardium.md)
+* [IBM](DataSources/datasource_ibm_ibm.md)
 * [IBM DB2](DataSources/datasource_ibm_ibm_db2.md)
 * [IBM Endpoint Manager](DataSources/datasource_ibm_ibm_endpoint_manager.md)
 * [IBM Lotus Notes](DataSources/datasource_ibm_ibm_lotus_notes.md)
@@ -548,17 +550,14 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [NetMotion Wireless](DataSources/datasource_netmotion_wireless_netmotion_wireless.md)
 #### NetWrix
 * [NetWrix Auditor](DataSources/datasource_netwrix_netwrix_auditor.md)
-* [Netwrix Auditor](DataSources/datasource_netwrix_netwrix_auditor.md)
 #### Netdocs
 * [NetDocs](DataSources/datasource_netdocs_netdocs.md)
 * [Netdocs](DataSources/datasource_netdocs_netdocs.md)
 #### Netscaler
 * [Netscaler VPN](DataSources/datasource_netscaler_netscaler_vpn.md)
 #### Netskope
+* [Netskope](DataSources/datasource_netskope_netskope.md)
 * [Netskope Active Platform](DataSources/datasource_netskope_netskope_active_platform.md)
-#### Netwrix
-* [NetWrix Auditor](DataSources/datasource_netwrix_netwrix_auditor.md)
-* [Netwrix Auditor](DataSources/datasource_netwrix_netwrix_auditor.md)
 #### Nexthink
 * [Nexthink](DataSources/datasource_nexthink_nexthink.md)
 #### Nokia VitalQIP
@@ -637,8 +636,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Proofpoint Enterprise Protection](DataSources/datasource_proofpoint_proofpoint_enterprise_protection.md)
 #### Proofpoint TAP
 * [Proofpoint TAP](DataSources/datasource_proofpoint_tap_proofpoint_tap.md)
-#### ProtectWise
-* [NDR](DataSources/datasource_protectwise_ndr.md)
 #### ProxySG
 * [ProxySG](DataSources/datasource_proxysg_proxysg.md)
 #### Qualys
@@ -663,6 +660,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 #### RangerAudit
 * [RangerAudit](DataSources/datasource_rangeraudit_rangeraudit.md)
 #### Rapid7
+* [InsightVM](DataSources/datasource_rapid7_insightvm.md)
 * [Nexpose](DataSources/datasource_rapid7_nexpose.md)
 #### Red Canary
 * [Red Canary](DataSources/datasource_red_canary_red_canary.md)
@@ -705,8 +703,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [SecurityExpert](DataSources/datasource_securityexpert_securityexpert.md)
 #### Sensormatik
 * [Sensormatik](DataSources/datasource_sensormatik_sensormatik.md)
-#### Sentinel IPS
-* [Sentinel IPS](DataSources/datasource_sentinel_ips_sentinel_ips.md)
 #### SentinelOne
 * [SentinelOne](DataSources/datasource_sentinelone_sentinelone.md)
 * [SentinelOne Deep Visibility](DataSources/datasource_sentinelone_sentinelone_deep_visibility.md)
@@ -780,8 +776,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Symantec Endpoint Protection](DataSources/datasource_symantec_symantec_endpoint_protection.md)
 * [Symantec Fireglass](DataSources/datasource_symantec_symantec_fireglass.md)
 * [Symantec Managed Security Services](DataSources/datasource_symantec_symantec_managed_security_services.md)
-* [Symantec Secure Web Gateway](DataSources/datasource_symantec_symantec_secure_web_gateway.md)
 * [Symantec VIP](DataSources/datasource_symantec_symantec_vip.md)
+* [Symantec WSS](DataSources/datasource_symantec_symantec_wss.md)
 #### Symantec DLP
 * [Symantec DLP](DataSources/datasource_symantec_dlp_symantec_dlp.md)
 #### Symantec WSS
@@ -825,8 +821,6 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Unix dhcpd](DataSources/datasource_unix_unix_dhcpd.md)
 #### Unknown
 * [Unknown](DataSources/datasource_unknown_unknown.md)
-#### VBCorp
-* [VBCorp](DataSources/datasource_vbcorp_vbcorp.md)
 #### VMware
 * [VMWare ID Manager (VIDM)](DataSources/datasource_vmware_vmware_id_manager_(vidm).md)
 * [VMware ESX](DataSources/datasource_vmware_vmware_esx.md)
