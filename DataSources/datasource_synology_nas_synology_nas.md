@@ -4,12 +4,12 @@ Product: Synology NAS
 ---------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  13   |   4    |     5      |      3      |    3    |
+|   9   |   3    |     2      |      1      |    1    |
 
 |                                 Use-Case                                  | Activity Types                           | Event Types/Parsers                                                                                                                                                 | MITRE TTP                                                                              | Content                                             |
 |:-------------------------------------------------------------------------:| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------------- |
 | [Compromised Credentials](../UseCases/usecase_compromised_credentials.md) | <ul><li>Asset Logon and Access</li></ul> |  share-access<br> ↳ [nas-share-access-1](../Parsers/parserContent_nas-share-access-1.md)<br> ↳ [nas-share-access](../Parsers/parserContent_nas-share-access.md)<br> | T1021.002 - Remote Services: SMB/Windows Admin Shares<br>T1087 - Account Discovery<br> | <ul><li>2 Rules</li></ul>                           |
-|        [Lateral Movement](../UseCases/usecase_lateral_movement.md)        | <ul><li>Asset Logon and Access</li></ul> |  share-access<br> ↳ [nas-share-access-1](../Parsers/parserContent_nas-share-access-1.md)<br> ↳ [nas-share-access](../Parsers/parserContent_nas-share-access.md)<br> | T1021.002 - Remote Services: SMB/Windows Admin Shares<br>                              | <ul><li>9 Rules</li></ul><ul><li>4 Models</li></ul> |
+|        [Lateral Movement](../UseCases/usecase_lateral_movement.md)        | <ul><li>Asset Logon and Access</li></ul> |  share-access<br> ↳ [nas-share-access-1](../Parsers/parserContent_nas-share-access-1.md)<br> ↳ [nas-share-access](../Parsers/parserContent_nas-share-access.md)<br> | T1021.002 - Remote Services: SMB/Windows Admin Shares<br>                              | <ul><li>7 Rules</li></ul><ul><li>3 Models</li></ul> |
 |     [Privileged Activity](../UseCases/usecase_privileged_activity.md)     | <ul><li>Asset Logon and Access</li></ul> |  share-access<br> ↳ [nas-share-access-1](../Parsers/parserContent_nas-share-access-1.md)<br> ↳ [nas-share-access](../Parsers/parserContent_nas-share-access.md)<br> | T1021.002 - Remote Services: SMB/Windows Admin Shares<br>T1087 - Account Discovery<br> | <ul><li>2 Rules</li></ul>                           |
 
 ATT&CK Matrix for Enterprise
