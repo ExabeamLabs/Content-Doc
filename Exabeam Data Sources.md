@@ -795,6 +795,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [Watchguard](DataSources/datasource_watchguard_watchguard.md)
 #### Weblogin
 * [Weblogin](DataSources/datasource_weblogin_weblogin.md)
+#### Websense Secure Gateway
+* [Websense Secure Gateway](DataSources/datasource_websense_secure_gateway_websense_secure_gateway.md)
 #### Workday
 * [Workday](DataSources/datasource_workday_workday.md)
 #### XPS
