@@ -4,14 +4,11 @@ Product: Forescout CounterACT
 -----------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   3   |   1    |     1      |      3      |    3    |
+|   1   |   1    |     1      |      2      |    2    |
 
-|               Use-Case                | Activity Types                                               | Event Types/Parsers                                                                                                                                                                                                                                                                                                                                           | MITRE TTP                  | Content                                             |
-|:-------------------------------------:| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | --------------------------------------------------- |
-| [Other](../UseCases/usecase_other.md) | <ul><li>Endpoint Activity</li><li>Process Activity</li></ul> |  config-change<br> ↳ [counteract-config-change](../Parsers/parserContent_counteract-config-change.md)<br><br> network-alert<br> ↳ [counteract-network-alert](../Parsers/parserContent_counteract-network-alert.md)<br><br> network-connection-successful<br> ↳ [counteract-network-connection](../Parsers/parserContent_counteract-network-connection.md)<br> | T1204 - User Execution<br> | <ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul> |
+|  Use-Case  | Activity Types | Event Types/Parsers                                                                                                                                                                                                                              | MITRE TTP | Content |
+|:----------:| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- | ------- |
+| Enrichment | <ul></li></ul> |  config-change<br> ↳ [counteract-config-change](../Parsers/parserContent_counteract-config-change.md)<br><br> network-connection-successful<br> ↳ [counteract-network-connection](../Parsers/parserContent_counteract-network-connection.md)<br> |           |         |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
-| Initial Access | Execution                                                           | Persistence | Privilege Escalation | Defense Evasion | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration | Impact |
-| -------------- | ------------------------------------------------------------------- | ----------- | -------------------- | --------------- | ----------------- | --------- | ---------------- | ---------- | ------------------- | ------------ | ------ |
-|                | [User Execution](https://attack.mitre.org/techniques/T1204)<br><br> |             |                      |                 |                   |           |                  |            |                     |              |        |
