@@ -9,6 +9,8 @@ Name = cef-defender-atp-file
      """"FolderPath"+:\s*"+({file_path}({file_parent}[^"]*?[\\\/]+)?({file_name}[^"\\\/]+?(\.({file_ext}\w+))?))"""",
      """DeviceName"+:\s*"+({dest_host}({host}[^"\.]+)?[^"]+)""",
      """MD5"+:"+({md5}[^"]+)""",
+     """"SHA1"+:(null|"+({sha1}[^",]+)"+),""",
+     """"SHA256"+:(null|"+({sha256}[^",]+)"+),"""
 ]
 }
 ```
