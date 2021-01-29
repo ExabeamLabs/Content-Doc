@@ -7,18 +7,27 @@ Name = leef-eset-security-alert
     Lms = QRadar
     DataType = "alert"
     TimeFormat = "MMM dd yyyy HH:mm:ss"
-    Conditions = [ "LEEF:1.0|ESET|RemoteAdministrator|","cat=ESET","threatType=" ]
+    Conditions = [ """LEEF:""", """|ESET|RemoteAdministrator|""","""cat=ESET Threat Event""","""threatType=""" ]
     Fields = [
       """exabeam_host=({host}[\w\-.]+)""",
-      """(\s|\|)cat=({threat_category}.+?)\s*(\w+=|$)""",
-      """(\s|\|)sev=({alert_severity}\d+)""",
-      """(\s|\|)devTime=({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
-      """(\s|\|)src=({src_ip}(\d{1,3}\.){3}\d{1,3})""",
-      """(\s|\|)threatType=({alert_type}.+?)\s*(\w+=|$)""",
-      """(\s|\|)threatName=({alert_name}.+?)\s*(\w+=|$)""",
-      """(\s|\|)objectUri=({malware_url}.+?)\s*(\w+=|$)""",
-      """(\s|\|)actionTaken=({action}.+?)\s*(\w+=|$)""",
-      """(\s|\|)accountName=((({domain}.+?)\\+)?({user}.+?))\s*(\w+=|$)""",
+      """deviceName=({host}[^\s]+)\s""",
+      """\Wcat=({threat_category}[^=]+?)\s*(\w+=|$)""",
+      """\Wsev=({alert_severity}\d+)""",
+      """\WdevTime=({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
+      """\Wsrc=({src_ip}[a-fA-F:\d.]+)""",
+      """threatType=({alert_type}[^=]+?)\s*(\w+=|$)""",
+      """\|ESET\|(?:[^\|]+\|){2}({alert_type}[^\|]+)""",
+      """threatName=({alert_name}[^=]+?)\s*(\w+=|$)""",
+      """eventDesc=({alert_name}[^=]+?)\s*(\w+=|$)""",
+      """objectUri=({malware_url}[^=]+?)\s*(\w+=|$)""",
+      """actionTaken=({action}[^=]+?)\s*(\w+=|$)""",
+      """accountName=((({domain}[^\\=]+?)\\+)?({user}[^=]+?))\s*(\w+=|$)""",
+      """engineVersion=({engine_version}\d+)""",
+      """objectType=({object_type}[^=]+?)\s*(\w+=|$)""",
+      """threatHandled=({threat_handled}\d+)""",
+      """needRestart=({need_restart}\d+)""",
+      """circumstances=({circumstances}[^=]+?)\s*(\w+=|$)""",
+      """firstseen=({firstseen}[^=]+?)\s*(\w+=|$)"""
     ]
     DupFields = ["action->additional_info", "host->dest_host", "malware_url->process_name"]
   }
