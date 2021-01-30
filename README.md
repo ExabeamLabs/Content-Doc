@@ -13,7 +13,7 @@ This is a programmatic generation of content documentation from Exabeam's conten
 |master|canary|[Data Sources](Exabeam%20Data%20Sources.md), [Use Cases](Exabeam%20Use%20Cases.md)|
 |c2006.4|i54|[Data Sources](https://github.com/ExabeamLabs/Content-Doc/tree/c2006.4/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Doc/tree/c2006.4/Exabeam%20Use%20Cases.md)|
 |c2002|i53|[Data Sources](https://github.com/ExabeamLabs/Content-Doc/tree/c2002/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Doc/tree/c2002/Exabeam%20Use%20Cases.md)|
-|c1907|i52|[Data Sources](https://github.com/ExabeamLabs/Content-Doc/tree/c1907/Exabeam%20Use%20Cases.md), [Use Cases](https://github.com/ExabeamLabs/Content-Doc/tree/c1907/Exabeam%20Data%20Sources.md)|
+|c1907|i52|[Data Sources](https://github.com/ExabeamLabs/Content-Doc/tree/c1907/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Doc/tree/c1907/Exabeam%20Use%20Cases.md)|
 
 ## How do I use it?
 The Content Library provides navigation from an Exabeam supported data source to a use case (or use case to data source) showing the event types and parsers for each.
