@@ -602,6 +602,7 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [RSA](DataSources/datasource_rsa_rsa.md)
 * [RSA DLP](DataSources/datasource_rsa_rsa_dlp.md)
 * [RSA ECAT](DataSources/datasource_rsa_rsa_ecat.md)
+* [RSA NetWitness](DataSources/datasource_rsa_rsa_netwitness.md)
 * [SecurID](DataSources/datasource_rsa_securid.md)
 #### RUID
 * [RUID](DataSources/datasource_ruid_ruid.md)
