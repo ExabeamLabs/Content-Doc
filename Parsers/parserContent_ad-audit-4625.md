@@ -23,7 +23,7 @@ Name = ad-audit-4625
     """LOGON_TYPE\s*=\s*({logon_type}\d+)""",
     """LOGON_PROCESS\s*=\s*(null|({auth_process}[^\s]+))""",
     """AUTHENTICATION_PACKAGE\s*=\s*({auth_package}[^\s]+)""",
-    """CALLER_PROCESS_NAME\s*=\s*(null|-||({process}({directory}(\w:)?(?:[^:\]]+)?[\\\/])?({process_name}[^\\\/"\]]+?)))\s*\]""",
+    """CALLER_PROCESS_NAME\s*=\s*(|null|-|({process}({directory}(\w:)?(?:[^:\]]+)?[\\\/])?({process_name}[^\\\/"\]]+?)))\s*\]""",
     """CALLER_USER_NAME\s*=\s*(-|({caller_user}[^\s]+))""",
     """CALLER_USER_DOMAIN\s*=\s*(-|({caller_domain}[^\s]+))""",
   ]

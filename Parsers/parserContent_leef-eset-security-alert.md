@@ -27,7 +27,8 @@ Name = leef-eset-security-alert
       """threatHandled=({threat_handled}\d+)""",
       """needRestart=({need_restart}\d+)""",
       """circumstances=({circumstances}[^=]+?)\s*(\w+=|$)""",
-      """firstseen=({firstseen}[^=]+?)\s*(\w+=|$)"""
+      """firstseen=({firstseen}[^=]+?)\s*(\w+=|$)""",
+      """hash=({sha256}[^\s]+)"""
     ]
     DupFields = ["action->additional_info", "host->dest_host", "malware_url->process_name"]
   }

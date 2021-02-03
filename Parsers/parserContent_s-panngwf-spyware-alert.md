@@ -11,7 +11,7 @@ Name = s-panngwf-spyware-alert
   Fields = [ 
     """exabeam_host=({host}[^\s]+)""",
     """"host":\{.*?"name":"({host}[^"]+)".*?\}""",
-    """,({time}\d\d\d\d\/\d\d\/\d\d \d\d:\d\d:\d\d),({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),""",
+    """,({time}\d\d\d\d\/\d\d\/\d\d \d\d:\d\d:\d\d),({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),""",
     """\d\d:\d\d:\d\d\s+({host}[^\s]+)\s""",
     """THREAT,({alert_type}\w+),""",
     """,THREAT,[^"]+?,({action}[^,]+),\\?"[^"]*"""",
@@ -24,6 +24,7 @@ Name = s-panngwf-spyware-alert
     """THREAT,spyware,([^,]*,){19}(?:|({src_port}\d+)),(?:|({dest_port}\d+)),([^,]*,){3}(?:|({protocol}[^,]+)),(?:|({action}[^,]+)),\\?"""",
     """THREAT,spyware,([^,]*,){9}({app}[^,]+),"""
   ]
+  DupFields = ["action->outcome"] 
   SOAR {
     IncidentType = "malware"
     DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->malwareName", "alert_severity->sourceSeverity", "alert_id->sourceId", "src_ip->malwareVictimHost", "alert_type->description", "dest_ip->malwareAttackerIp"]
