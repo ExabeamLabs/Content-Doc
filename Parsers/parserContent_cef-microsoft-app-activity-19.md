@@ -8,6 +8,10 @@ Name = cef-microsoft-app-activity-19
     """"ParentFolder":[^\}]+?"Path":"\\*({object}[^"]+)"""",
     """"DestFolder":[^\}]+?"Path":"\\*({object}[^"]+)"""",
     """\srequest=({outcome}[^\s]+)\s""",
+    """"ClientIP":"({src_ip}[A-Fa-f:\d.]+)"""",
+    """"Operation":"({activity}[^"]+)"""",
+    """LogonUserSid":"({user_sid}[^"]+)"""",
+    """Subject":"\s*({subject}[^"]+?)\s*"""",
   ]
 }
 ```

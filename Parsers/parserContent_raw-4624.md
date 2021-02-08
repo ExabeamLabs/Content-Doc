@@ -25,6 +25,6 @@ Name = raw-4624
       """Logon ID:\s*({logon_id}[^\s;]+)[\s;]*(Linked Logon|Logon GUID)""",
       """New Logon:[\s;]*Security ID:\s*({user_sid}[^\s;]+)(\s|;)""",
     ]
-    DupFields = ["host->dest_host", "directory->process_directory"]
+    DupFields = ["directory->process_directory"]
   }
 ```
