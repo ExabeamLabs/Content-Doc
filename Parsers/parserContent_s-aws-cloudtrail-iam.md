@@ -13,24 +13,25 @@ Name = s-aws-cloudtrail-iam
      """"+sourceIPAddress"+\s*:\s*"+?(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[^"].+?))"+\s*[,\]\}]""",
      """"+eventSource"+\s*:\s*"+?(|({host}[^"].+?))"+\s*[,\]\}]""",
      """"+eventName"+\s*:\s*"+?(|({activity}[^"].+?))"+\s*[,\]\}]""",
-     """"userIdentity".+?"+arn"+\s*:\s*"+?(|arn:aws:sts::\d+:([^"]+\/)+({identity}(?!\-\d+)[^\/]+?))"+\s*[,\]\}]""",
-     """"userIdentity.+?type":"({identity_type}[^"]+)""",
-     """"sessionIssuer.+?type":"({user_type}[^"]+)""",
-     """"sessionIssuer.+?arn":".+?\/({user}[^"]+)"""
-     """"+userName"+\s*:\s*"+?(|({user}[^"].+?))"+\s*[,\]\}]""",
+     """"userIdentity"[^@]+?"+arn"+\s*:\s*"+?(|arn:aws:sts::\d+:([^"]+\/)+({identity}(?!\-\d+)[^\/]+?))"+\s*[,\]\}]""",
+     """"userIdentity[^@]+?type":"({identity_type}[^"]+)""",
+     """"sessionIssuer[^@]+?type":"({user_type}[^"]+)""",
+     """"sessionIssuer[^@]+?arn":".+?\/({user}[^"]+)"""
+     """"+userName"+\s*:\s*"+?(|({user}[^"]+?))"+\s*[,\]\}]""",
      """({service}iam.amazonaws.com)""",
      """"policyArn.+?policy\/({policy}[^"]+)"""",
      """"roleName"\s*:\s*"(|({role}[^"]+))"""",
      """"userAgent"\s*:\s*"(|({user_agent}[^"]+))"""",
-     """"+errorCode"+\s*:\s*"+?(|({failure_code}[^"].+?))"+\s*[,\]\}]""",
-     """"+errorMessage"+\s*:\s*"+?(|({failure_reason}[^"].+?))"+\s*[,\]\}]""",
-     """"+accountId"+\s*:\s*"+?(|({account_id}[^"].+?))"+\s*[,\]\}]""",
+     """"+errorCode"+\s*:\s*"+?(|({failure_code}[^"]+?))"+\s*[,\]\}]""",
+     """"+errorMessage"+\s*:\s*"+?(|({failure_reason}[^"]+?))"+\s*[,\]\}]""",
+     """"+accountId"+\s*:\s*"+?(|({account_id}[^"]+?))"+\s*[,\]\}]""",
      """"assumed-role\/({role}[^"]+)""",
-     """"requestParameters.+?roleName":"({request_role_name}[^"]+)","policyName":"({request_policy_name}[^"]+)"""
-     """"policyName":"({policy_name}[^"]+)".+?policyDocument.+?Allow.+?Action[\s"\\:]+({policy_action}[^"\\]+)""",
-     """policyName":"({policy_name}[^"]+)".+?policyDocument.+?Resource[\\"\s:]+({policy_resource}[^"\\]+)"""
+     """"requestParameters[^@]+?roleName":"({request_role_name}[^"]+)","policyName":"({request_policy_name}[^"]+)"""
+     """"policyName":"({policy_name}[^"]+)"[^@]+?policyDocument[^@]+?Allow[^@]+?Action[\\"\s:\[]+[^"]+"+({policy_action}[^"\\]+)""",
+     """policyName"+:"+({policy_name}[^"]+)"+[^@]+?policyDocument[^\}]+?Resource[\\"\s:\[]+[^"]+"+({policy_resource}[^"\\]+)\\""""
      """"vpcEndpointId":"({vpc_id}[^"]+)""",
      """"awsRegion":"({region}[^"]+)""",
+     """\srequestClientApplication=({app}[^\s]+)\s""",
  ]
 }
 ```
