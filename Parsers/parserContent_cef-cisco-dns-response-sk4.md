@@ -12,9 +12,10 @@ Name = cef-cisco-dns-response-sk4
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """"timestamp":"({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-    """"mostGranularIdentity":"({user}[^",\(\)\\\s]+)"""",
+    """"mostGranularIdentity":"({user}[^",\(\)\\\s\-\.]+)"""",
     """"mostGranularIdentity":"({user_lastname}[^",]+),\s*({user_firstname}[^",]+?)\s*(\(({domain}[^\(\)]+)\))?\s*\((({user_email}[^@"]+@[^@"]+)|({user}[^\(\)]+))\)""",
-    """"mostGranularIdentity":"({user_fullname}\w+(\s+\w+)+)(\s+\((({user_email}[^@"]+@[^@"]+)|({user}\S+))\))?""",
+    """"mostGranularIdentity":"(({user_fullname}[\w.-]+(\s+[\w-]+)+)|({user}\w+))(\s+\((({user_email}[^@"]+@[^@"]+)|({=user}\S+))\))?"""",
+    """"identities":\["(({user_fullname}[\w.-]+(\s+[\w-]+)+)|({user}\w+))(\s+\(({user_email}[^@"]+@[^@"]+)\))"\,"({host}[\w\-\.]+)"""",
     """identities":\[({identities}[^=]+?)\]""",
     """"identities":\["*({host}[\w\-.]+)"""",
     """"internalIp":"(|({src_ip}[a-fA-F:\d.]+))"""",

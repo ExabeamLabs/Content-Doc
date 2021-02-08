@@ -26,6 +26,6 @@ Name = json-sysmon-process-created-1
     """"SourceImage":"({process}({directory}[^"]*?[\\\/]+)?({process_name}[^"\\\/]+))"""",
     """"Category":"({event_name}[^"]+)""",
   ]
-  DupFields = [ "host->dest_host", "directory->process_directory", "process->path" ]
+  DupFields = [ "host->dest_host", "directory->process_directory", "process->path", "target_process->target_path" ]
 }
 ```

@@ -7,7 +7,7 @@ Name = s-microsoft-dns-update
   Lms = Splunk
   DataType = "dhcp"
   TimeFormat = "MM/dd/yy,HH:mm:ss"
-  Conditions = [ ",DNS Update Successful," ]
+  Conditions = [ """,DNS Update Successful,""", """":"""" ]
   Fields = ["""({time}\d\d/\d\d/\d\d,\d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[\w.\-]+)""",
     """DNS Update Successful,({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),({dest_host}[^,]+),""",
