@@ -7,7 +7,6 @@ Name = unix-process-created-1
   Conditions = [ """"type":"SYSCALL"""", """success\=yes""", """CEF:""", """|Skyformation|SkyFormation""", """Cloud Apps Security|""", """|audit-event|""" ]
   Fields = ${UnixParserTemplates.unix-template.Fields}[
     """\spid\\?=({pid}[^\s]+)\s\w+""",
-    """"type":"({activity_type}[^"]+)"""",
     """ppid\\?=({parent_process_id}[^\s]+)\s+\w+""",
     """exe\\?=\\?"({command_line}[^"]+)""",
     """\ssuccess\\?=({outcome}[^\s]+)\s\w+"""
