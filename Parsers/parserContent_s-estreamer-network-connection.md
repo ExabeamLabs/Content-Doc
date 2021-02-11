@@ -17,7 +17,7 @@ Name = s-estreamer-network-connection
     """"initiatorIpAddress": "({src_ip}[A-Fa-f:\d.]+)""",
     """"responderIpAddress": "({dest_ip}[A-Fa-f:\d.]+)""",
     """"responderPort": ({dest_port}\d+)""",
-    """"clientApplication": "({network_app}[^"]+)"""",
+    """"clientApplication": "(Unknown|({network_app}[^"]+))"""",
     """"transportProtocol": "({protocol}[^"]+)"""",
     """"initiatorTransmittedBytes": ({bytes_out}\d+)""",
     """"responderTransmittedPackets": ({bytes_in}\d+)""",
