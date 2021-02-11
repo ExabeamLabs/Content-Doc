@@ -20,7 +20,7 @@ Name = xml-4673
       """<Data Name(\\)?='ObjectServer'>({object_server}[^<]+?)</Data>""",
       """<Data Name(\\)?='PrivilegeList'>({privileges}[^<]+?)</Data>""",
       """<Data Name(\\)?='ProcessName'>({process}({directory}[^<]*?)({process_name}[^\\<]+?))</Data>""",
-      """<Data Name(\\)?='SubjectLogonId'>({logon_id}[^<]+)"""
+      """<Data Name(\\)?='SubjectLogonId'>({logon_id}[^<>\s=]+)"""
     ]
     DupFields = ["host->dest_host","directory->process_directory"]
   }
