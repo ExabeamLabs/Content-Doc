@@ -17,7 +17,7 @@ Name = json-4769
       """"+created"+:"+({time}[^"]+)""",
       """"TimeCreated"+:"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """"Computer"+:"+({host}[^"]+)""""
-      """"+computer_name"+:"+({host}[^"]+)""",
+      """"+(?:winlog\.)?computer_name"+:"+({host}[^"]+)""",
       """"(Hostname|MachineName)":"({host}[^"]*)""",
       """({event_code}4769)""",
       """"TargetUserName":"({user}[^@"]+)""",

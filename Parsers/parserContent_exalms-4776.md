@@ -11,8 +11,8 @@ Name = exalms-4776
   Fields = [
     """({event_name}The (computer|domain controller) attempted to validate the credentials for an account)""",
     """"@timestamp"\s*:\s*"({time}[^"]+)"""",
-    """"computer_name"+\s*:\s*"+({host}[^"]+)"""",
-    """"computer_name"+\s*:\s*"+[^\.]+\.({domain}[^"]+)""",
+    """"(?:winlog\.)?computer_name"+\s*:\s*"+({host}[^"]+)"""",
+    """"(?:winlog\.)?computer_name"+\s*:\s*"+[^\.]+\.({domain}[^"]+)""",
     """"event_id"\s*:\s*({event_code}\d+)""",
     """"event_data"\s*:\s*\{.*?"Workstation"\s*:\s*"(({dest_ip}[A-Fa-f:\d.]+)|(?:(?!NULL)(\\*({dest_host}[^\s"]+))))"""",
     """"event_data"\s*:\s*\{.*?"Status"\s*:\s*"({result_code}[\w\-]+)"""",

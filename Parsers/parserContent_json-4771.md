@@ -16,7 +16,7 @@ Name = json-4771
     """"Computer":"({host}[^"]+)"""",
     """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]+\sSkyformation""",
     """@timestamp\\?"+:\\?"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
-    """"(Hostname|MachineName|computer_name)\\?":\\?"({host}[^."\\]*)""",
+    """"(Hostname|MachineName|(?:winlog\.)?computer_name)\\?":\\?"({host}[^."\\]*)""",
     """({event_code}4771)""",
     """"(TargetSid|TargetDomainName)\\?":\\?"({user_sid}[^"\\]*)""",
     """"TargetUserName\\?":\\?"({user}[^"\\]*)""",

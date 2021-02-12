@@ -11,6 +11,7 @@ Name = leef-crowdstrike-detectionsummaryevent
     """\Wdescription=({additional_info}.+?)(\t|\s+\w+=|\s*\||\s*$|\s*"+\s*$)""",
     """\WcommandLine="({command_line}[^"]+)"""",
     """\WfilePath=({process}[^\s]+\\+({process_name}[^\s]+))""",
+    """sha256=({sha256}[^|\s]+?)\s*(\||\w+=)"""
   ]
 }
 ```
