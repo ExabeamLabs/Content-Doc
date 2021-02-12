@@ -32,5 +32,6 @@ Name = s-crowdstrike-process-alert
     """"ParentProcessId":({parent_process_guid}\d+)""",
     """"FalconHostLink":\s*"({additional_info}[^"]+)"""",
    ]
+   DupFields = ["additional_info->falcon_host_link"]
 }
 ```

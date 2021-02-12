@@ -15,7 +15,7 @@ Name = json-4768
       """"timestamp":\s*({time}\d+)""",
       """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]+\sSkyformation""",
       """"time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)"""",
-      """"(Hostname|MachineName|computer_name)":"({host}[^"]*)""",
+      """"(Hostname|MachineName|(?:winlog\.)?computer_name)":"({host}[^"]*)""",
       """({event_code}4768)""",
       """"(TargetUserName|AccountName)":"({user}[^"]+)""",
       """"(TargetDomainName|SuppliedRealmName)":"({domain}[^."]+)""",
