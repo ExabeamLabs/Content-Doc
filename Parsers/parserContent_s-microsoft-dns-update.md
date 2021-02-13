@@ -14,7 +14,7 @@ Name = s-microsoft-dns-update
     """"+hostname\\"+:\\"+({host}[^\\"]+)"""
     """"+mac\\"+:\[\\"+({src_mac}[^\\"]+)""",
     """"+ip\\"+:\[\\"+({src_ip}[^\\"]+)""",
-    """"+host\\"+.+?os.+?family\\"+:\\"+({os}[^\\]+)""",
+    """"+host\\"+[^}]+os[^}]+family\\"+:\\"+({os}[^\\]+)""",
     """<Identifier>({host}[^<]+)<\/"""
   ]
   DupFields = [ "dest_host->user" ]
