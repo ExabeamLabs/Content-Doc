@@ -8,7 +8,7 @@ Name = q-process-alert-carbonblack
   DataType = "process-alert"
   IsHVF = true
   TimeFormat = "epoch_sec"
-  Conditions = [ """0|CB|CB|""", "watchlist.hit" ]
+  Conditions = [ """0|CB|CB|""", """watchlist.hit""" ]
   Fields = [
     """exabeam_startTime=({time}\d{10})""",
     """timestamp=({time}\d{10})""",
@@ -19,7 +19,7 @@ Name = q-process-alert-carbonblack
     """interface_ip=(0.0.0.0|({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))""",
     """username=(({domain}[^\\]+)\\+)?({user}[^=]+?)\s+\w+=""",
     """sensor_id=({sensor_id}[^=]+?)\s+\w+=""",
-    """(process_)?md5=({md5}[^=]+?)\s+\w+=""",
+    """\W(process_)?md5=(|({md5}[^=]+?))(\s+\w+=|\s*$)""",
     """cmdline="+(\\+\?+\\+)?({process}({directory}(?:[^=]+)?[\\\/])?({process_name}[^\\\/=]+))"+""",
     """alert_severity=({alert_severity}[^=]+?)\s+\w+=""",
     """alert_type=({alert_type}[^=]+?)\s+\w+=""",

@@ -18,6 +18,8 @@ The following list are the out-of-the-box supported Data Sources. This list is a
 * [AWS GuardDuty](DataSources/datasource_aws_aws_guardduty.md)
 #### AWS CloudTrail
 * [AWS CloudTrail](DataSources/datasource_aws_cloudtrail_aws_cloudtrail.md)
+#### Abnormal Security
+* [Abnormal Security](DataSources/datasource_abnormal_security_abnormal_security.md)
 #### Absolute
 * [Absolute SIEM Connector](DataSources/datasource_absolute_absolute_siem_connector.md)
 #### Accellion

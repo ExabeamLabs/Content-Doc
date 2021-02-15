@@ -10,7 +10,7 @@ Name = xml-4672
   Conditions = [ """<EventID>4672</EventID>""", """'SubjectUserName'>""" ]
   Fields = [    
     """<TimeCreated SystemTime(\\)?='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """<Computer>({host}[\w\-\.]+)</Computer>""",
+    """<Computer>({host}({dest_host}[\w\-]+)[\w\-\.]*)</Computer>""",
     """<Keywords>({outcome}[^<]+)</Keywords>""",
     """<Keywords><Keyword>({outcome}[^<]+)</Keyword></Keywords>""",
     """<EventID>({event_code}[^<]+)</EventID>""",
@@ -22,6 +22,5 @@ Name = xml-4672
     """<Data Name(\\)?='PrivilegeList'>({privileges}[^<]+)</Data>""",
     """<Data Name(\\)?='SubjectUserSid'>({user_sid}[^<\\]+)</Data>"""
   ]
-  DupFields = [ "host->dest_host" ]
 }
 ```

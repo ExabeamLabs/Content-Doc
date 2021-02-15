@@ -35,8 +35,9 @@ Name = q-process-alert-carbonblack-1
     """\Wtype=(|({alert_type}[^"]+?))(\s+\w+=|\s*$)""",
     """\Wreport_score=({alert_severity}\d+)""",
     """\Whost_type=(|({host_type}[^"]+?))(\s+\w+=|\s*$)""",
+    """feed_name=(|({alert_name}[^"]+?))(\s+\w+=|\s*$)"""
   ]
-  DupFields = [ "directory->process_directory", "alert_type->alert_name", "ioc->additional_info" ]
+  DupFields = [ "directory->process_directory", "ioc->additional_info" ]
   SOAR {
     IncidentType = "generic"
     DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->description", "alert_severity->sourceSeverity"]
