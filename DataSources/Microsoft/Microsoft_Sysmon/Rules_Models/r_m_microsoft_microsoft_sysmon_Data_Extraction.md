@@ -1,0 +1,12 @@
+Vendor: Microsoft
+=================
+### Product: [Microsoft Sysmon](../ds_microsoft_microsoft_sysmon.md)
+### Use-Case: [Data Extraction](../../../../UseCases/uc_data_extraction.md)
+
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   5   |   1    |     3      |      6      |    6    |
+
+| Event Type      | Rules                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Models |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| process-created | <b>T1064 - T1064</b><br> ↳ <b>Suspicious-Shell-Child-Process</b>: Windows shell has spawned a suspicious process<br><br><b>T1138 - T1138</b><br> ↳ <b>A-Database-Shim</b>: A shim was loaded into a database, possibly creating persistence on this asset<br> ↳ <b>Database-Shim</b>: A shim was loaded into a database, possibly creating persistence on the host<br><br><b>T1021 - Remote Services</b><br> ↳ <b>A-MSTSC-RDP-Hijack</b>: MSTSC Shadowing, possible RDP session hijack/shadowing of session on this asset<br> ↳ <b>MSTSC-RDP-Hijack</b>: MSTSC Shadowing, possible RDP session hijack/shadowing of session |        |
