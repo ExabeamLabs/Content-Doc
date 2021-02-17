@@ -12,7 +12,8 @@ Name = beyondtrust-privileged-access-1
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """sessionId=({session_id}[^\|]+)""",
     """deviceHost=({host}[^\|]+)""",
-    """dstUser=(({user_email}[^@]+@[^\.]+\.[^\|]+)|({user}[^\|]+))""",
+    """dstUser=({dest_user}[^\|]+)""",
+    """srcUser=({src_user}[^\|]+)""",
     """srcUser=({user_email}[^@]+@[^\.]+\.[^\|]+)\|\w+=""",
     """sessionOwner=({user_fullname}[^\|]+)""",
     """\|BeyondTrust\|Secure Remote Access\|(?:[^\|]+\|){2}({event_name}[^\|]+)\|""",
@@ -25,5 +26,6 @@ Name = beyondtrust-privileged-access-1
     """confMemOs=({os}[^\|]+)""",
     """cmdShellViewUrl=({additional_info}[^\|]+)"""
   ]
+  DupFields = ["dest_user->account"]
 }
 ```

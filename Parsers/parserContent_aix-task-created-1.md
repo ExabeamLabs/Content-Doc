@@ -1,13 +1,13 @@
 #### Parser Content
 ```Java
 {
-Name = aix-task-created
+Name = aix-task-created-1
   Vendor = Unix
   Product = Unix
   Lms = Splunk
   DataType = "task-created"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ """ CMD """, """]: (""", """ CROND[""" ]
+  Conditions = [ """) CMD (""", """ CRON[""", """]: (""" ]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",

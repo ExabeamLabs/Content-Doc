@@ -9,7 +9,8 @@ Name = cef-mimecast-email-alert-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """CEF:""", """Mimecast Email Security""", """dproc=SIEM Logs""", """"acc":"""" ]
   Fields = [
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z) ({host}[\w.\-]+) Skyformation""",
+    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z) ([\w.\-]+) Skyformation""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
     """"(?i)Route":"({direction}[^"]+)""",
     """"(?:id|aCode)":"({alert_id}[^"]+)""",
