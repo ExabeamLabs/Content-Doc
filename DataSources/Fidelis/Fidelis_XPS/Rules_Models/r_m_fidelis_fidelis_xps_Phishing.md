@@ -1,0 +1,12 @@
+Vendor: Fidelis
+===============
+### Product: [Fidelis XPS](../ds_fidelis_fidelis_xps.md)
+### Use-Case: [Phishing](../../../../UseCases/uc_phishing.md)
+
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   7   |   2    |     2      |      3      |    3    |
+
+| Event Type          | Rules                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Models                                                                         |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| dlp-email-alert-out | <b>T1048.003 - Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol</b><br> ↳ <b>EM-country-A</b>: Abnormal email to country for the organization<br> ↳ <b>EM-UD-F</b>: First email domain for user<br> ↳ <b>EM-OD-F</b>: First email domain for organization<br> ↳ <b>EM-OD-A</b>: Abnormal email domain for organization<br> ↳ <b>EM-DED</b>: Email to a disposable email domain<br><br><b>T1048 - Exfiltration Over Alternative Protocol</b><br> ↳ <b>EM-EdC-F</b>: First country for email domain<br> ↳ <b>EM-EdC-A</b>: Abnormal country for email domain |  • <b>EM-OD</b>: Domains per organization<br> • <b>EM-UD</b>: Domains per user |
