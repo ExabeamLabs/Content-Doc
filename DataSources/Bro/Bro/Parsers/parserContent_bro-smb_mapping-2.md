@@ -2,6 +2,7 @@
 ```Java
 {
 Name = bro-smb_mapping-2
+  Product = Bro
   DataType = "share-access"
   Conditions = [ """"id.orig_h""", """"id.resp_h""", """"share_type""", """"path""" ]
   Fields = ${BroParserTemplates.json-bro-activity.Fields}[

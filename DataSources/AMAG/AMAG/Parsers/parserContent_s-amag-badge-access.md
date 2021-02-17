@@ -3,6 +3,7 @@
 {
 Name = s-amag-badge-access
     Vendor = AMAG
+  Product = AMAG
     Lms = Splunk
     DataType = "physical-access"
     TimeFormat = "yyyy-MM-dd HH:mm:ss"

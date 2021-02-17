@@ -9,11 +9,10 @@ Name = symantec-security-alert-2
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """ SymantecServer: """, """Event Description:""", """Web Attack:""" ]
   Fields = [
-    """exabeam_host=({host}[\w.\-]+)""",
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """\d\d:\d\d:\d\d\s({host}[\w.\-]+)\s+SymantecServer:\s*({src_host}[^,]+)""",
+    """({host}[\w.\-]+)\s+SymantecServer:\s*({src_host}[^,]+)""",
     """,\s*Event Description:\s*({event_desc}[^,]+)""",
-    """,\s*User( Name)?:\s*(none|({user}[^,]+))""",
+    """,\s*User:\s*({user}[^,]+)""",
     """,\s*Local Host IP:\s*(0.0.0.0|({local_host_ip}[^,]+))""",
     """,\s*Local Host MAC:\s*({local_host_mac}[^,]+)""",
     """,\s*Remote Host IP:\s*(0.0.0.0|({dest_ip}[^,]+))""",
@@ -21,7 +20,7 @@ Name = symantec-security-alert-2
     """,\s*Occurrences:\s*({occurrences}[^,]+)""",
     """,\s*Application:\s*({process}({directory}[^,]*?[\\\/]+)({process_name}[^,\\\/]+)),""",
     """,\s*Location:\s*({location}[^,]+)""",
-    """,\s*Domain( Name)?:\s*({domain}[^\s,]+)""",
+    """,\s*Domain:\s*({domain}[^,]+)""",
     """,\s*Local Port:\s*(0|({src_port}\d+))""",
     """,\s*Remote Port:\s*(0|({dest_port}\d+))""",
     """,\s*CIDS Signature string:\s*({alert_name}[^,]+)""",

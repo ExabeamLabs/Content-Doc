@@ -20,6 +20,6 @@ Name = raw-vpn-start
     """Login succeeded for [^/]+/({realm}.+?)\s+\(session:""",
     """Login succeeded for .+?from ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
-  DupFields = [ "host->dest_host" ]
+  DupFields = [ "host->dest_host" , "user->account"]
 }
 ```

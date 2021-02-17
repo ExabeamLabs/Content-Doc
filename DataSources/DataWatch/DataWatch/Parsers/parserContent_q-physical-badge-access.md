@@ -3,6 +3,7 @@
 {
 Name = q-physical-badge-access
     Vendor = DataWatch
+  Product = DataWatch
     Lms = QRadar
     DataType = "physical-access"
     TimeFormat =  "MM/dd/yy HH:mm:ss"

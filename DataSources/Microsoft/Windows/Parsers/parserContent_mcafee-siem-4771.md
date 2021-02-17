@@ -21,5 +21,6 @@ Name = mcafee-siem-4771
       """"Service_Name":"({service_name}[^"]+)""",
       """"CommandID":"({result_code}[^"]+)""",
     ]
+    DupFields = ["host->dest_host"]
   }
 ```

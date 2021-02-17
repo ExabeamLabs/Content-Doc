@@ -11,7 +11,7 @@ Name = raw-5140
     Fields = [
       """({event_name}A network share object was accessed)""",
       """({event_code}5140)""",
-      """\s({host}[^\s]+)\sMSWinEventLog""",
+      """({host}[^\s=]+)\sMSWinEventLog""",
       """\sComputer=\s*({host}[^\s]*)""",
       """<Computer>({host}.+?)<\/Computer>""",
       """"system_name":"({host}[^"]+)"""",

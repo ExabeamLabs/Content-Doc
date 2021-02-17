@@ -3,6 +3,7 @@
 {
 Name = ovirt-app-activity-4
   Vendor = oVirt
+  Product = oVirt
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

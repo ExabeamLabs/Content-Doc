@@ -16,6 +16,7 @@ Name = s-oracle-db-logon
     """<OS_Process>({process_id}\d+)</OS_Process>""",
     """<Session_Id>({session_id}\d+)</Session_Id>""",
     """<Returncode>({outcome}.+?)</Returncode>""",
+    """<DBID>({database_name}.+?)</DBID>""",
     """PROTOCOL=({protocol}[^\)]+)""",
     """HOST=({src_ip}[a-fA-F\d.:]+)""",
     """PORT=({src_port}\d+)""",

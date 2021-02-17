@@ -3,6 +3,7 @@
 {
 Name = onapsis-db-op
     Vendor = Onapsis
+  Product = Onapsis
     Lms = Direct
     DataType = "database-update"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

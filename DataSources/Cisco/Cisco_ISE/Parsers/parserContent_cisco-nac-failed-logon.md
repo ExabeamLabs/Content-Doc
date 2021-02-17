@@ -6,9 +6,10 @@ Name = cisco-nac-failed-logon
   Product = Cisco ISE
   Lms = Direct
   DataType = "nac-failed-logon"
-  TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS Z"
+  TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """CISE_Failed_Attempts""", """NAS-Port-Type=""" ]
   Fields = [
+    """exabeam_time=({time}\d+-\d+-\d+ \d+:\d+:\d+)""",
     """Event-Timestamp=({time}\d+)""",
     """CISE_Failed_Attempts.+?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d [+-]\d\d:\d\d)""",
     """({host}[\w\-.]+) CISE_Failed_Attempts""",

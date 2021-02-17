@@ -3,6 +3,7 @@
 {
 Name = cef-netapp-file-read
   Vendor = NetApp
+  Product = NetApp
   Lms = ArcSight
   DataType = "file-operations"
   IsHVF = true

@@ -16,7 +16,6 @@ Name = cisco-vpn-start-2
     """User\s+<({user_email}[^@>]+@[^@>]+)>""",
     """ IP <({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})>""",
     """ Group\s+<({realm}.+?)>""",
-    """Cisco AnyConnect VPN Agent for ({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(X|x)11|(W|w)indows|(L|l)inux|(M|m)acintosh|(D|d)arwin)""", 
   ]
   DupFields = [ "dest_host->host" ]
 }

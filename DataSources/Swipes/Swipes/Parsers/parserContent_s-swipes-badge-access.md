@@ -3,6 +3,7 @@
 {
 Name = s-swipes-badge-access
     Vendor = Swipes
+  Product = Swipes
     Lms = Splunk
     DataType = "physical-access"
     TimeFormat = "yyyy/MM/dd HH:mm:ss.SSS"

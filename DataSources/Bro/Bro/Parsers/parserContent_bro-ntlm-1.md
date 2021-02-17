@@ -3,6 +3,7 @@
 {
 Name = bro-ntlm-1
   Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "ntlm-logon"
   IsHVF = true

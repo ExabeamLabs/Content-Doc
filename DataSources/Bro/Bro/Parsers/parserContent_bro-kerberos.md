@@ -3,6 +3,7 @@
 {
 Name = bro-kerberos
   Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "remote-access"
   TimeFormat = "epoch_sec"

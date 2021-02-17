@@ -17,7 +17,7 @@ Name = fortinet-dlp-alert-email-1
     """\Wmessage_name=({message_name}.*?);\s+(\w+=|$)""",
     """\Wmessage_size=({bytes}\d+)""",
     """\Wfolder_description=({additional_info}.*?);\s+(\w+=|$)""",
-    """\Wfilename=({file_name}.*?);\s+(\w+=|$)""",
+    """\Wfilename=({file_name}[^\.]+\.({file_ext}.*?));\s+(\w+=|$)""",
     """\Wfiletype=({file_type}.*?);\s+(\w+=|$)""",
     """({direction}Outbound|Inbound)""",
     """Sent To:\s*({src_ip}[A-Fa-f:\d.]+)""",

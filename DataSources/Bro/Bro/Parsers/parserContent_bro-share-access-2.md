@@ -3,6 +3,7 @@
 {
 Name = bro-share-access-2
   Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "file-operations"
   TimeFormat = "epoch_sec"

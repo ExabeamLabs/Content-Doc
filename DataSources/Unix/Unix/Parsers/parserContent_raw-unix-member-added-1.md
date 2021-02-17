@@ -3,6 +3,7 @@
 {
 Name = raw-unix-member-added-1
   Vendor = Unix
+  Product = Unix
   Lms = Direct
   DataType = "unix-member-added"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

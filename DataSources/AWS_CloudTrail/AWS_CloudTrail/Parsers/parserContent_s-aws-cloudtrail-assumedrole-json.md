@@ -2,6 +2,8 @@
 ```Java
 {
 Name = s-aws-cloudtrail-assumedrole-json
+  Product = AWS CloudTrail
+  DataType = "app-activity"
   Conditions = [  "\"AwsApiCall\"", "\"eventName\"", "\"awsRegion\"", "type=AssumedRole" ]
   Fields = ${AWSParserTemplates.s-aws-cloudtrail-activity-json.Fields}[
     """\Wsuser=[^=]*?({user}[^\\\/@=]+)@[^=]+?(\s+\w+=|\s*$)""",
@@ -9,7 +11,10 @@ Name = s-aws-cloudtrail-assumedrole-json
     """\WflexString1=(|({activity}.+?))(\s+\w+=|\s*$)""",
     """"+userName"+\s*:\s*"+?(|({target}[^"].+?))"+\s*[,\]\}]""",
     """"sessionIssuer"\s*:\s*.*?"arn":"[^"]*?role/({role}[^"\\\/]+)""",
+    """"UserId":\s"({user_email}[^@]+@({email_domain}[^"]+))"""
+    """requestParameters"+:.+?"+instanceId"+:"+({request_id}[^"]+)","attribute":"({request_action}[^"]+)"""",
+    """\sresource:\s+({additional_info}[^\s"]+)(\s|")""",
   ]
-  DupFields = [ "role->additional_info", "host->object" ]
+  DupFields = [ "host->object" ]
 }
 ```

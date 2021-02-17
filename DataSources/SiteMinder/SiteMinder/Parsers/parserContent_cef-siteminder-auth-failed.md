@@ -3,6 +3,7 @@
 {
 Name = cef-siteminder-auth-failed
   Vendor = SiteMinder
+  Product = SiteMinder
   Lms = ArcSight
   DataType = "authentication-failed"
   TimeFormat = "epoch"

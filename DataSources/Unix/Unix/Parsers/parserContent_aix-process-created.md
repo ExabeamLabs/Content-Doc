@@ -3,10 +3,11 @@
 {
 Name = aix-process-created
   Vendor = Unix
+  Product = Unix
   Lms = Direct
   DataType = "process-created"
   IsHVF = true
-  TimeFormat = "epoch_sec"
+  TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """ CMD """, """]: (""" ]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",

@@ -3,6 +3,7 @@
 {
 Name = json-bro-dns-query
   Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "dns-query"
   IsHVF = true

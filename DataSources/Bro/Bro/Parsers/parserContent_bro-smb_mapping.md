@@ -3,6 +3,7 @@
 {
 Name = bro-smb_mapping
   Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "share-access"
   TimeFormat = "epoch_sec"

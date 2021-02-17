@@ -3,6 +3,7 @@
 {
 Name = ncp-auth-failed
   Vendor = NCP
+  Product = NCP
   Lms = Direct
   DataType = "authentication-failed"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

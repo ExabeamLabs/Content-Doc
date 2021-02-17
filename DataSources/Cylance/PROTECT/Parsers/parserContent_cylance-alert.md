@@ -18,7 +18,7 @@ Name = cylance-alert
     """Cylance Score: ({alert_severity}\d+)""",
     """Device Name: ({src_host}[^,]+)""",
     """IP Address: \(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """Path: ({additional_info}[^,]+)""",
+    """Path: ({process}[^,]+\\({process_name}[^,]+))""",
     """Threat Classification:\s*({alert_name}[^,]+),""",
     """Status:\s*({outcome}[^,]+),""",
     """MD5:\s*({md5}[^,]+),""",

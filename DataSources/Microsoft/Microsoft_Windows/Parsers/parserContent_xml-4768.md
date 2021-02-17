@@ -19,5 +19,6 @@ Name = xml-4768
       """<Data Name='TargetDomainName'>(?=\w)({domain}[^<]+)</Data>""",
       """<Data Name='IpAddress'>(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)"""
     ]
+    DupFields = ["host->dest_host"]
   }
 ```
