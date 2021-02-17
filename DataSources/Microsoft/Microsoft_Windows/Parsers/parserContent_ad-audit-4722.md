@@ -1,0 +1,25 @@
+#### Parser Content
+```Java
+{
+Name = ad-audit-4722
+  Vendor = Microsoft
+  Product = Microsoft Windows
+  Lms = Direct
+  DataType = "windows-account-enabled"
+  TimeFormat = "epoch_sec"
+  Conditions = [ """ADAuditPlus""", """EVENT_NUMBER = 4722""", """A user account was enabled""" ]
+  Fields = [
+    """TIME_GENERATED\s*=\s*({time}\d+)""",
+    """({host}[\w\-.]+) ADAuditPlus""",
+    """CALLER_USER_NAME\s*=\s*({user}[^\s\]]+)""",
+    """CALLER_USER_DOMAIN\s*=\s*({domain}[^\s\]]+)""",
+    """SOURCE\s*=\s*({src_host}[\w\-.]+)""",
+    """RECORD_NUMBER\s*=\s*({record_id}\d+)""",
+    """EVENT_NUMBER\s*=\s*({event_code}\d+)""",
+    """CALLER_USER_SID\s*=\s*({user_sid}[^\s]+)""",
+    """CALLER_LOGON_ID\s*=\s*({logon_id}[^\s]+)""",
+    """ACCOUNT_NAME\s*=\s*({target_user}[^\s]+)""",
+    """ACCOUNT_DOMAIN\s*=\s*({target_domain}[^\s]+)""",
+  ]
+}
+```
