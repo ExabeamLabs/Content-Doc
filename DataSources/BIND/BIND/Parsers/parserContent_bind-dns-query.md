@@ -1,0 +1,18 @@
+#### Parser Content
+```Java
+{
+Name = bind-dns-query
+    Vendor = BIND
+    Product = BIND
+    Lms = Direct
+    DataType = "dns-query"
+    IsHVF = true
+    TimeFormat = "dd-MMM-yyyy HH:mm:ss.SSS"
+    Conditions = [ """ query: """, """ info: client """ ]
+    Fields = [
+      """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+      """({time}\d\d-\w+-\d\d\d\d \d\d:\d\d:\d\d\.\d\d\d) info: client ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})#({src_port}\d+)\s+\((|({query}(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|([^\(\)]+))).*?\):\s*query:\s*({=query}(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|([^\s]+)).*?\s+IN ({query_type}[^\s]+)\s+({query_flags}.+?)\s*\(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+      """query:\s*({query}[^\s]+\.({top_query}\w+\.(?i)(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za)))\s""",
+    ]
+  }
+```
