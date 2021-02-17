@@ -3,6 +3,7 @@
 {
 Name = unix-su-37
   Vendor = Unix
+  Product = Unix
   Lms = Direct
   DataType = "unix-account-switch"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

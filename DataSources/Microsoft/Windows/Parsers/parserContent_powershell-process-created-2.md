@@ -20,7 +20,7 @@ Name = powershell-process-created-2
     """Sid=({user_sid}[\w\-]+)""",
     """<Execution ProcessID='({pid}\d+)""",
     """<Security UserID='({user_sid}[\w\-]+)'/>""",
-    """Context.+?User\s*=\s*(({domain}[^=]+?)[\\\/]+)?({user}[^=\/\\]+?)\s*Connected User =""",
+    """Context.+?User\s*=\s*(({domain}[^=]+?)[\\\/]+)?(SYSTEM|({user}[^=\/\\]+?))\s*Connected User =""",
     """Context.+?Host Application\s*=\s*({command_line}[^=]+?)\s*Engine Version =""",
     """Context.+?Host Application\s*=\s*({process}(({directory}[^\;=]+)[\\\/]+)?({process_name}[^\s\\\/=]+?))\s+""",
     """Context.+?Command Type\s*=\s*(|({command_type}[^=]+?))\s*Script Name =""",

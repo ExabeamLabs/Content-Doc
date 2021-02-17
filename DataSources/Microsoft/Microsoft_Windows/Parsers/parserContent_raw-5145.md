@@ -11,12 +11,7 @@ Name = raw-5145
     Fields = [
       """({event_name}A network share object was checked to see whether client can be granted desired access)""",
       """({event_code}5145)""",
-      """"Hostname":"({host}[^"]+)""",
       """({host}[\w\-.]+)\s+(?i)((audit|success)( |_)(success|audit))""",
-      """Computer(Name)?\s*\\*"?(=|:|>)\s*"*({host}[\w\.-]+)(\s|,|"|</Computer>|$)""",
-      """\sTimeGenerated=({time}\d+)""",
-      """Microsoft-Windows-Security-Auditing.+?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """Logon ID:\s*((\\)[rnt])*({logon_id}\S+?)((\\)[rnt])*\s*Network Information:""",
       """Account Name:\s*((\\)[rnt])*({user}\S+?)((\\)[rnt])*\s*Account Domain:""",
       """Account Domain:\s*((\\)[rnt])*({domain}\S+?)((\\)[rnt])*\s*Logon ID:""",

@@ -7,7 +7,7 @@ Name = q-aruba-nac-logon-3
   Lms = QRadar
   DataType = "nac-logon"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSSZ"
-  Conditions = [ """ Logs_Radius Accounting """, """RADIUS.Acct-Timestamp=""" ]
+  Conditions = [ """ Radius Accounting """, """RADIUS.Acct-Timestamp=""" ]
   Fields = [
     """RADIUS\.Acct-Timestamp=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d(\.\d+)?[\+\-]\d+)""",
     """\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d,\d+ ({host}[\w\-.]+)""",

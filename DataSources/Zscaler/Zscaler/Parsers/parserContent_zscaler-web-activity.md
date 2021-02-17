@@ -3,6 +3,7 @@
 {
 Name = zscaler-web-activity
   Vendor = Zscaler
+  Product = Zscaler
   Lms = Direct
   DataType = "web-activity"
   IsHVF = true

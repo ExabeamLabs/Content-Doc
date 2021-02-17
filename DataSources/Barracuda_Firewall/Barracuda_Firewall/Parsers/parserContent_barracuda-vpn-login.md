@@ -14,5 +14,6 @@ Name = barracuda-vpn-login
     """\Wuser=({user}[^\s\(]+)\s*\(({src_ip}[A-Fa-f:\d.]+?):({src_port}\d+)""",
     """Login\s+'({user}[^\s']+)""",
   ]
+  DupFields = ["user->account"]
 }
 ```

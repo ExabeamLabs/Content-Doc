@@ -10,6 +10,7 @@ Name = f5-vpn-policy
   Conditions = [ """01490102:5:""", """Access policy result:""" ]
   Fields = [
     """\s+01490102:5:\s+({session_id}[^:]+)""",
+    """\s+01490102:5:.*?({session_id}[^\s:]+): Access policy result""",
     """\sAccess policy result:\s*({policy}.+?)\s*$""",
   ]
 }

@@ -6,9 +6,9 @@ Product: JH
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   1    |     1      |      1      |    1    |
 
-|                Use-Case                | Activity Types                             | Event Types/Parsers                                                                    | MITRE TTP                  | Content                                                      |
-|:--------------------------------------:| ------------------------------------------ | -------------------------------------------------------------------------------------- | -------------------------- | ------------------------------------------------------------ |
-| [Other](../../../UseCases/uc_other.md) | <ul><li>Critical System Activity</li></ul> |  file-download<br> ↳ [jh-file-download](Parsers/parserContent_jh-file-download.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_jh_jh_Other.md) |
+|                                  Use-Case                                  | Activity Types                             | Event Types/Parsers                                                                    | MITRE TTP                  | Content                                                                        |
+|:--------------------------------------------------------------------------:| ------------------------------------------ | -------------------------------------------------------------------------------------- | -------------------------- | ------------------------------------------------------------------------------ |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) | <ul><li>Critical System Activity</li></ul> |  file-download<br> ↳ [jh-file-download](Parsers/parserContent_jh-file-download.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_jh_jh_Compromised_Credentials.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

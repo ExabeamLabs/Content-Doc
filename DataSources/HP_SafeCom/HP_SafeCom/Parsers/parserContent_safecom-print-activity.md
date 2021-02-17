@@ -3,6 +3,7 @@
 {
 Name = safecom-print-activity
   Vendor = HP SafeCom
+  Product = HP SafeCom
   Lms = Direct
   DataType = "print-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

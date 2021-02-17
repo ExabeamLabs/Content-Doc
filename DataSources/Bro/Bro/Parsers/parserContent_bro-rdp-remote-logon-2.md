@@ -3,6 +3,7 @@
 {
 Name = bro-rdp-remote-logon-2
   Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "remote-logon"
   TimeFormat = "epoch"

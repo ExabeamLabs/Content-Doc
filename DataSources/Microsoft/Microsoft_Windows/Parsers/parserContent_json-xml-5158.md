@@ -18,7 +18,7 @@ Name = json-xml-5158
     """<Data Name='SourceAddress'>(0\.0\.0\.0|({dest_ip}[a-fA-F:\d.]+))</Data>""",
     """<Data Name='SourcePort'>({dest_port}\d+)""",
     """<Data Name='Protocol'>({ms_protocol_num}.+?)</Data>""",
-    """<Data Name='LayerName'>({layer_name}.+?)</Data>"""
+    """<Data Name='LayerName'>({layer_name}.+?)</Data>""",
   ]
   DupFields = [ "host->dest_host" ]
 }

@@ -3,6 +3,7 @@
 {
 Name = bitglass-file-write
   Vendor = BitGlass
+  Product = BitGlass
   Lms = Direct
   DataType = "file-write"
   IsHVF = true

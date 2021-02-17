@@ -16,7 +16,10 @@ Name = s-5137
     """Subject:.+?Account Name:\s+({user}.+?)\s+Account Domain:\s+({domain}.+?)\s+Logon ID:\s+({logon_id}[^\s]+)""",
     """Object:.+?Class:\s+({object_class}.+?)\s+Operation:""",
     """Object:\s+DN:\s+({object_dn}.+?)\s+GUID:""",
-    """Object:\s+DN:.+?({object_ou}OU.+?)\s+GUID:"""
+    """Object:\s+DN:.+?({object_ou}OU.+?)\s+GUID:""",
+    """Directory Service:\s*Name(:|=)\s*({service_name}[^\s]+)\s*.*?Type(:|=)\s*({service_type}.*?Services)""",
+    """GUID(:|=)\s*\{({guid}[^\}]+)""",
+    """Operation:\s*Correlation ID(:|=)\s*\{({correlation_id}[^\}]+)""",
   ]
   DupFields = [ "host->dest_host" ]
 }

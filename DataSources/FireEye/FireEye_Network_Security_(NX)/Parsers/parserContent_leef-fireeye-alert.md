@@ -17,7 +17,7 @@ Name = leef-fireeye-alert
     """\Wdvchost=({host}[\w\-.]+)""",
     """\WexternalId=({alert_id}\d+)""",
     """\Wduser=({user_email}[^\^\s,]+)""",
-    """\Wlink=({malware_url}[^\^]+)"""
+    """\Wlink=({malware_url}[^\^]+)""",
   ]
   DupFields = [ "user_email->user" ]
   SOAR {

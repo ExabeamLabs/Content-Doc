@@ -16,7 +16,7 @@ Name = xml-4673
       """<Data Name='SubjectUserSid'>\s*(({domain}[^\\]+)\\)?({user}[^<]+)</Data>""",
       """<Data Name='SubjectUserName'>({user}[^<]+?)</Data>""",
       """<Data Name='SubjectDomainName'>({domain}[^<]+?)</Data>""",
-      """<Data Name='SubjectLogonId'>({login_id}[^<]+?)</Data>""",
+      """<Data Name='SubjectLogonId'>({logon_id}[^<>\s=]+?)</Data>""",
       """<Data Name='ObjectServer'>({object_server}[^<]+?)</Data>""",
       """<Data Name='PrivilegeList'>({privileges}[^<]+?)</Data>""",
       """<Data Name='ProcessName'>({process}({directory}[^<]*?)({process_name}[^\\<]+?))</Data>""",

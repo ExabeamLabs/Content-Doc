@@ -3,11 +3,13 @@
 {
 Name = s-ssh-login-failed
   Vendor = Unix
+  Product = Unix
   Lms = Splunk
   DataType = "ssh-login"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """ sshd[""", """nvalid user """ ]
   Fields = [
+    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[\w.\-]+)""",
     """({host}[\w\.-]+):?\s+sshd\[""",
     """({failure_reason}(i|I)nvalid user)\s+(({domain}.+?)\\+)?({user}\S+)""",

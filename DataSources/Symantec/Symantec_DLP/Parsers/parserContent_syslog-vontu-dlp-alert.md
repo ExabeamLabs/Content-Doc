@@ -10,12 +10,15 @@ Name = syslog-vontu-dlp-alert
     Conditions = [ """incident_id="""", """, blocked="""", """, policy="""", """, recipients="""", """, sender="""", """, severity="""", """, subject="""" ]
     Fields = [
     """exabeam_host=({host}\S+)""",
+      """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
       """({host}[\w\.-]+)\s+incident_id""",
       """[\s,]incident_id="({alert_id}\d+)""",
       """[\s,]blocked="(None|({outcome}[^"]+?))"""",
       """[\s,]policy="({alert_name}[^"]+?)"""",
+      """[\s,]occurred_on="({occured_time}[^"]+?)"""",
+      """[\s,]reported_on="({reported_time}[^"]+?)"""",
       """[\s,]policy="({alert_type}[^"]+?)"""",
-      """[\s,]rules="\s*({alert_type}[^\[\s][^"]+?)"""",
+      """[\s,]rules="\s*({alert_type}[^"]+?)"""",
       """[\s,]severity="({alert_severity}[^"]+?)"""",
       """[\s,]sender="\s*({sender}[^\s"@,]+@[^\s"@,]+?)"""",
       """,\sendpoint_username="\s*(?:N\/A|(({domain}[^\\]+)\\+)?({user}[^"\\]+))""",
@@ -29,10 +32,10 @@ Name = syslog-vontu-dlp-alert
       """,\sprotocol=(?:""|("(?:N\/A|({protocol}.*?))\s*")),\s""",
       """[\s,]subject="(?:N\/A|({additional_info}(?:[^"]|"")+?))\s*"""",
       """,\sfile_name=(?:""|("(?:N\/A|({file_name}.*?))\s*")),\s""",
-      """,\sattachment_filename=(?:""|("(?:N\/A|({file_name}.*?))\s*")),\s""",
+      """,\sattachment_filename=(?:""|("(?:N\/A|({file_name}[^.]+\.({file_ext}.*?)))\s*")),\s""",
       """,\sendpoint_machine=(?:""|("(?:N\/A|({device_id}.*?))\s*")),\s"""
     ]
-    DupFields = [ "additional_info->subject", "external_address->recipient", "alert_id->email_id", "sender->user_email" ]
+    DupFields = [ "additional_info->subject", "external_address->recipient", "alert_id->email_id", "sender->user_email" , "file_name->attachment"]
     SOAR {
       IncidentType = "dlp"
       DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "user->dlpUser", "alert_name->dlpPolicy", "alert_severity->sourceSeverity", "protocol->dlpProtocol", "src_ip->dlpDeviceName", "outcome->dlpActionTaken"]

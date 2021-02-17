@@ -20,12 +20,19 @@ Name = vontu-dlp
       """\WSender:\s+(?:N\/A|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({user}[^@,]+))""",
       """\WSender:\s+({os}[^:]+):\/+({domain}[^/]+)\/({user}[^,]+)""",
       """\WSeverity:\s+({alert_severity}.+?)(,\s*\w+:|\s*$)""",
+      """\sPATH:\s+(|({file_path}({file_parent}.*?[\\\/,]+)?({file_name}[^\\\/,]+?(\.({file_ext}\w+))?)))(,\s*\w+:|\s*$)""",
       """\WFilename:\s+(?:N\/A|({file_name}.+?))(,\s*\w+:|\s*$)""",
       """\WProtocol: FTP,.+?Subject:\s+(FTP\s+)?({file_name}.+?)\s*(\(|,)""",
       """\WProtocol: FTP,.+?Subject:.+?\(({bytes}\d+)""",
       """\WEndpoint:\s+(?:N\/A|({src_host}.+?))(,\s*\w+:|\s*$|\s*"|\s+\w+=)""",
       """\WBlocked:\s+({outcome}.+?)(,\s*\w+:|\s*$)""",
+      """ViolatorsName:\s+(({user_fullname}\w+(,\s*\w+)+)|({user}\w+))(,\s*\w+:|\s*$)""",
+      """ViolatorsUserID:\s+({user_id}[^,]+)(,\s*\w+:|\s*$)""",
+      """ViolatorsEmail:\s+({user_email}[^@\s]+@[^\s,]+)(,\s*\w+:|\s*$)""",
+      """\sDEVICE_ID:\s+({device_id}[^,]+)(,\s*\w+:|\s*$)""",
+      """\sApplication_name:\s+({process_name}[^,]+)(,\s*\w+:|\s*$)"""
     ]
+    DupFields = ["user_email->sender", "target->recipients"]
     SOAR {
       IncidentType = "dlp"
       DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "user->dlpUser", "alert_name->dlpPolicy", "alert_severity->sourceSeverity", "protocol->dlpProtocol", "src_host->dlpDeviceName", "file_name->dlpFileName", "bytes->dlpFileSize", "outcome->dlpActionTaken"]

@@ -16,7 +16,7 @@ Name = symantec-epp-cef-alert
              """\sfname=\w:\\+[uU]sers\\+({user}[^\\]+)""",
              """\sfname=[\s ]*({malware_file_name}.+?)\s+(\w+=|$)""",
              """\seventId=({alert_id}\d+)""",
-             """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+             """\sdvc=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
              """\sdvchost=({host}.+?)\s+(\w+=|$)""",
              """\sdhost=({src_host}.+?)\s+(\w+=|$)""",
              """\sdst=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",

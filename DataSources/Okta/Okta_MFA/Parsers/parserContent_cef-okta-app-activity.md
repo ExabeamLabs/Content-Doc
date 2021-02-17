@@ -18,11 +18,11 @@ Name = cef-okta-app-activity
     """"action":.+?"objectType":"({activity}[^"]+)""",
     """"(targets|actors)":[^\]]+?"objectType":"User"[^\]\}]+?"displayName":"({user_fullname}[^"]+)""",
     """"(targets|actors)":[^\]]+?"displayName":"({user_fullname}[^"]+)[^\]\}]+?"objectType":"User"""",
-    """(s|d)?user\\*=({user_email}[^\s@,]+@[^\s@,]+)""",
+    """(s|d)?user\\*=({user_email}[^\s@,]+@({email_domain}[^\s@,]+))""",
     """(s|d)?user\\*=(anonymous|({user}[^\s@,]+))(\s|\||,)""",
 
     """"(targets|actors)":[^\]]+?"objectType":"User"[^\]\}]+?"login":"({user_email}[^"]+)""",
-    """"(targets|actors)":[^\]]+?"login":"({user_email}[^"]+)[^\]\}]+?"objectType":"User"""",
+    """"(targets|actors)":[^\]]+?"login":"({user_email}[^@]+@({email_domain}[^"]+))[^\]\}]+?"objectType":"User"""",
     """"actors":[^\]]+?"objectType":"Client"[^\]\}]+?"displayName":"(UNKNOWN|({browser}[^"]+))""",
     """"actors":[^\]]+?"displayName":"(UNKNOWN|({browser}[^"]+))[^\]\}]+?"objectType":"Client"""",
     """\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
@@ -39,6 +39,5 @@ Name = cef-okta-app-activity
     """"id":"({object}[^"]+)"[^\}\]]*"objectType":"AppInstance"""",
     """"objectType":"AppInstance"[^\}\]]*"id":"({object}[^"]+)"""",
   ]
-  DupFields = [ "additional_info->failure_reason" ]
 }
 ```

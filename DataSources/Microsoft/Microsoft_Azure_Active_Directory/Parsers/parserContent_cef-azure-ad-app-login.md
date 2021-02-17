@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-azure-ad-app-login
-  Vendor = Microsoft
+  Vendor = Microsoft 
   Product = Microsoft Azure Active Directory
   Lms = ArcSight
   DataType = "app-activity"

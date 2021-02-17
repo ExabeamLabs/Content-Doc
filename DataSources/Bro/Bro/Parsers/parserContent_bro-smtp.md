@@ -3,6 +3,7 @@
 {
 Name = bro-smtp
   Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "dlp-email-alert"
   TimeFormat = "epoch_sec"

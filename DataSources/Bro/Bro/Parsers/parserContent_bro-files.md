@@ -3,6 +3,7 @@
 {
 Name = bro-files
   Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "file-read"
   TimeFormat = "epoch_sec"

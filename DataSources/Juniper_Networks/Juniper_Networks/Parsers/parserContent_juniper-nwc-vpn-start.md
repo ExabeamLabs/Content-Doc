@@ -33,5 +33,6 @@ Name = juniper-nwc-vpn-start
     """\smsg="({additional_info}[^"]+)""",
     """hostname\s+({src_host}[^"]+)"""
   ]
+  DupFields = ["user->account"]
 }
 ```

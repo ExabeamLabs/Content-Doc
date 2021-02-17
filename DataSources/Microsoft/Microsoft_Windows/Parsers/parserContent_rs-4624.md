@@ -15,7 +15,8 @@ Name = rs-4624
       """({event_name}An account was successfully logged on)""",
       """({event_code}4624)""",
       """Logon Type:\s+({logon_type}[\d]+)""",
-      """New Logon.*Account Name:\s+({user}.+?)\s+Account Domain:\s+({domain}[\w.\-]+)""",
+      """New Logon.*Account Name:\s+(-|({user}.+?))\s+(Network )?Account Domain:\s+({domain}[\w.\-]+)""",
+
       """Process Name:\s+(?:|(?:-|({process}({directory}.*?)(\\+({process_name}[^\\]+?))?)))\s+Network Information:""",
       """Source Network Address:\s+(?:-|({src_ip}[\w:.]+))\s+Source Port:""",
       """Logon Process:\s+({auth_process}[^\s]+)\s+Authentication Package:\s+({auth_package}[^\s]+)""",

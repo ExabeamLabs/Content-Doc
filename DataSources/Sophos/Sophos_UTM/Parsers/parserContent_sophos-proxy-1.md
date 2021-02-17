@@ -28,6 +28,7 @@ Name = sophos-proxy-1
     """ua="(|({user_agent}[^"]+))"""",
     """ua="(?:-|Mozilla\/.+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
     """category="({category}[^"]+)""",
+    """content-type="({mime}[^"]+)""", 
   ]
 }
 ```

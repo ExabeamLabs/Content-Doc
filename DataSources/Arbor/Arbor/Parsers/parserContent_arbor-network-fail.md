@@ -3,10 +3,11 @@
 {
 Name = arbor-network-fail
   Vendor = Arbor
+  Product = Arbor
   Lms = Splunk
   DataType = "network-connection"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
-  Conditions = ["""arbor-networks-aps: Blocked Host"""]
+  Conditions = ["""arbor-networks-aps:""", """Blocked Host"""]
   Fields = [
      """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d\.\d\d\d)""",
      """\d\d:\d\d:\d\d\s({host}[^\s]*)\s""",
@@ -17,7 +18,7 @@ Name = arbor-network-fail
      """\ssource\sport\s({src_port}\d{1,6})"""
      """\w+\/({dest_port}\d{1,6})\s\("""
      """\/\d{1,6}\s\(({activity}[^\)]*)""",
-     """:\s({outcome}[^:]*):\s"""
+     """arbor-networks-aps:\s*({outcome}[^:]*):\s"""
    ]
 }
 ```

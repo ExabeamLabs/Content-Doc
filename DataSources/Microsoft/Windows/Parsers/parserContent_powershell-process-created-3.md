@@ -15,7 +15,7 @@ Name = powershell-process-created-3
     """<Computer>({host}[^<>]+)</Computer>""",
     """<Execution ProcessID='({pid}\d+)""",
     """<Security UserID='({user_sid}[\w\-]+)'/>""",
-    """\WUserId=(({domain}[^=]+?)[\\\/]+)?({user}[^=\/\\]+?)\s*HostName=""",
+    """\WUserId=(({domain}[^=]+?)[\\\/]+)?(SYSTEM|({user}[^=\/\\]+?))\s*HostName=""",
     """\WHostApplication=({command_line}[^=]+?)\s*EngineVersion=""",
     """\WHostApplication=({process}(({directory}[^\;=]+)[\\\/]+)?({process_name}[^\s\\\/=]+?))\s+""",
     """\WScriptName=({script_name}\S[^=]+?)\s+Command(Path|Line)="""

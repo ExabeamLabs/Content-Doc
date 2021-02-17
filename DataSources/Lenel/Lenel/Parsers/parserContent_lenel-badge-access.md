@@ -3,6 +3,7 @@
 {
 Name = lenel-badge-access
   Vendor = Lenel
+  Product = Lenel
   Lms = Direct
   DataType = "physical-access"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

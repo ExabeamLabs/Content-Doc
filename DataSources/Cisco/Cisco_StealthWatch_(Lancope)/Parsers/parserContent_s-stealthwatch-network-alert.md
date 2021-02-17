@@ -24,7 +24,8 @@ Name = s-stealthwatch-network-alert
     """protocol="({protocol}[^"]+)"""",
     """dvc_ip="({host}[a-fA-F\d.:]+)""",
     """dvc="({host}[^"]+)"""",
-    """domain="({domain}[^"]+)""""
+    """domain="({domain}[^"]+)"""",
+    """port="({dest_port}[^"]+)"""", 
   ]
   DupFields = [ "alert_type->alert_name" ]
 }

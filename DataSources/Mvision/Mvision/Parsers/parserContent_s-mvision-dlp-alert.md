@@ -3,6 +3,7 @@
 {
 Name = s-mvision-dlp-alert
   Vendor = Mvision
+  Product = Mvision
   Lms = Splunk
   DataType = "dlp-alert"
   TimeFormat = "MMM dd yyyy HH:mm:ss.SSS z"

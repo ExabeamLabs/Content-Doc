@@ -15,6 +15,7 @@ Name = cylance-security-alert-1
     """Device:\s*({src_host}[\w\-.]+)""",
     """MAC:\s*({src_mac}[^\s,;<]+)""",
     """File path:\s*(|({malware_url}.+?))\s+Process Id:""",
+    """IP:\s({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""", 
   ]
   DupFields = [ "alert_name->alert_type" ]
 }

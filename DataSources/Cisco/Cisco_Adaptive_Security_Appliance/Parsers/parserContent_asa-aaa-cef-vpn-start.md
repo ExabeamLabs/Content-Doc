@@ -14,7 +14,8 @@ Name = asa-aaa-cef-vpn-start
       """\ssuser=({user}.+?)\s+\w+=""",
       """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-      """\sdvchost=({host}[^\s]+)"""
+      """\sdvchost=({host}[^\s]+)""",
     ]
+    DupFields = ["user->account"]
   }
 ```

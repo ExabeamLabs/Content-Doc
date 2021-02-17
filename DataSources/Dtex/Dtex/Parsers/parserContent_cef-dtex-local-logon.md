@@ -3,6 +3,7 @@
 {
 Name = cef-dtex-local-logon
   Vendor = Dtex
+  Product = Dtex
   Lms = ArcSight
   DataType = "local-logon"
   TimeFormat = "epoch"

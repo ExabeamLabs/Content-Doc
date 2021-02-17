@@ -15,5 +15,6 @@ Name = cisco-asa-vpn-login
       """, Addr ({src_ip}[a-fA-F\d.:]+): Session""",
       """endpoint.device.hostname="*({src_host}[^"\s]+)"""
     ]
+    DupFields = ["user->account"]
   }
 ```

@@ -18,7 +18,7 @@ Name = s-azure-app-login
     """"signinErrorCode":\s*({error_code}\d+)""",
     """"userDisplayName":\s*"({user_firstname}[^,"]+),\s*({user_lastname}[^,"]+)""",
     """"appDisplayName":\s*"({app}[^"]+?)\s*"""",
-    """"userPrincipalName":\s*"({user_email}[^\s"@]+@[^\s"@]+)""",
+    """"userPrincipalName":\s*"({user_email}[^\s"@]+@({email_domain}[^\s"@]+))""",
     """"failureReason":\s*"*(null|({failure_reason}[^,"]+))""",
   ]
 }

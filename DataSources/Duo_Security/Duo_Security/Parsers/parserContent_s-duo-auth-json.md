@@ -3,6 +3,7 @@
 {
 Name = s-duo-auth-json
   Vendor = Duo Security
+  Product = Duo Security
   Lms = Splunk
   DataType = "authentication-attempt"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
@@ -20,6 +21,7 @@ Name = s-duo-auth-json
     """"result"\s*:\s*"({outcome}[^"]+)"""",
     """"reason"\s*:\s*"({failure_reason}[^"]+)"""",
     """"new_enrollment"\s*:\s*({new_enrollment}true|false)""",
+    """"*integration"*:\s*"*({service}[^"]+)"""
   ]
 }
 ```

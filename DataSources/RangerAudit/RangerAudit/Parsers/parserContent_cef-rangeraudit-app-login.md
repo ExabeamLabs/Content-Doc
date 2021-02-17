@@ -3,6 +3,7 @@
 {
 Name = cef-rangeraudit-app-login
   Vendor = RangerAudit 
+  Product = RangerAudit
   Lms = ArcSight
   DataType = "app-login"
   TimeFormat = "epoch"
