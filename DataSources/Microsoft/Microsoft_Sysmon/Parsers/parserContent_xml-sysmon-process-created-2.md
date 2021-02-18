@@ -12,7 +12,7 @@ Name = xml-sysmon-process-created-2
   Fields = [
     """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
     """<Data Name='UtcTime'>({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)</Data>""",
-    """<Computer>({host}[^<]+)</Computer>""",
+    """<Computer>({host}({dest_host}[\w\-]+)[^<]*)</Computer>""",
     """<Data Name='User'>(({domain}[^\\<]+?)\\)?({user}[^<]+)</Data>""",
     """<Security UserID='({user_sid}[^']+)'/>""",
     """<Data Name='Hashes'>.*?MD5=({md5}[A-F0-9a-f]+).*?</Data>""",
@@ -24,7 +24,8 @@ Name = xml-sysmon-process-created-2
     """<Data Name='SourceImage'>({parent_process}(({parent_directory}[^<]*)\\+)?({parent_process_name}[^<]+?))</Data>""",
     """<Data Name='TargetImage'>({process}(({directory}[^<]*)\\+)?({process_name}[^<]+?))</Data>""",
     """<Data Name='GrantedAccess'>({outcome}[^<]+)</Data>""",
+    """<EventID>({event_code}\d+)"""
   ]
-  DupFields = [ "host->dest_host","directory->process_directory" ]
+  DupFields = [ "directory->process_directory" ]
 }
 ```
