@@ -20,7 +20,7 @@ Name = raw-process-created-1
     """New Process ID:\s*({process_guid}[^\s;]+)(\s|;)""",
     """Creator Process ID:\s*({parent_process_guid}[^\s;]+)(\s|;)""",
     """Creator Process Name:\s*({parent_process}((?:[^";]+)?[\\\/])?({parent_process_name}[^\\\/";]+?))[\s;]*Process"""
-    """Process Command Line:\s+"({command_line}.+?)"\s*Token Elevation Type indicates""",
+    """Process Command Line:\s+"?({command_line}.+?)"?\s*Token Elevation Type indicates""",
     """Process Command Line:\s*"*(|-|(sc|((?:[^"]+)?[\\\/])?sc.exe)\s*(?:\\*[\w.\-]+)?\s*create\s*({service_name}.+?))\s+binPath= \s*(|-|({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/\s]+)))"*\s*Token Elevation Type""",
   ]
   DupFields = [ "host->dest_host","process_guid->pid","directory->process_directory","process->path" ]
