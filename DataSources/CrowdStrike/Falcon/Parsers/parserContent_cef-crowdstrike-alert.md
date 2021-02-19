@@ -42,5 +42,6 @@ Name = cef-crowdstrike-alert
       """(\s|\|)cs6=({falcon_host_link}.+?)\s\w+=.*(?=cs6Label=FalconHostLink)""",
       """(?=cs6Label=FalconHostLink).*cs6=({falcon_host_link}.+?)\s+(\w+=|$)"""
     ]
+    DupFields = ["falcon_host_link->additional_info"]
   }
 ```

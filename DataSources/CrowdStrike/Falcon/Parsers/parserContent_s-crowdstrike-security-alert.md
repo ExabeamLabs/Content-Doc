@@ -26,38 +26,8 @@ Name = s-crowdstrike-security-alert
     """"ComputerName":\s*"({dest_host}[^"]+).*?"LocalAddress":\s*"({dest_ip}[^"]+)","LocalPort":\s*({dest_port}\d+),"RemoteAddress":\s*"({src_ip}[^"]+)","RemotePort":\s*({src_port}\d+),"ConnectionDirection":\s*1""",
     """"MD5String":\s*"(|({md5}[^"]+))"""",
     """"UserName":\s*"(|N/A|({user}[^"]+))"""",
-    """"FalconHostLink":\s*"({additional_info}[^"]+)"""",
+    """"FalconHostLink":\s*"({falcon_host_link}[^"]+)"""",
     """"DetectDescription":\s*"({additional_info}[^"]+)""",
     """"GrandparentImageFileName\\*"+:\s*\\*"+({grandparent_image_filename}[^,]+?)\\*"+,""",
-    """"GrandparentCommandLine\\*"+:\s*\\*"+({grandparent_command_line}[^,]+?)\\*"+,""",
-    """"ParentImageFileName\\*"+:\s*\\*"+({parent_image_filename}[^,]+?)\\*"+,""",
-    """"ParentCommandLine\\*"+:\s*\\*"+({parent_command_line}[^,]+?)"+,""",
-    """"((?i)SHA256|SHA256String|SHA256HashData)\\*"+:\s*\\*"+({sha256}[^,]+?)\\*"+,""",
-    """"PatternDispositionDescription\\*"+:\s*\\*"+({pattern_disposition_description}[^"]+)""",
-    """"BootupSafeguardEnabled":\s*({bootup_safeguard_enabled}true|false)""",
-    """"QuarantineFile"+:\s*({quarantine_file}true|false)""",
-    """"QuarantineMachine"+:\s*({quarantine_machine}true|false)""",
-    """"Detect"+:\s*({detect}true|false)""",
-    """"RegistryOperationBlocked"+:\s*({registry_operation_blocked}true|false)""",
-    """"KillParent"+:\s*({kill_parent}true|false)""",
-    """"FsOperationBlocked"+:\s*({fs_operation_blocked}true|false)""",
-    """"OperationBlocked"+:\s*({operation_blocked}true|false)""",
-    """"KillProcess"+:\s*({kill_process}true|false)""",
-    """"ProcessBlocked"+:\s*({process_blocked}true|false)""",
-    """"PolicyDisabled"+:\s*({policy_disabled}true|false)""",
-    """"SensorOnly"+:\s*({sensor_only}true|false)""",
-    """"CriticalProcessDisabled"+:\s*({critical_process_disabled}true|false)""",
-    """"KillSubProcess"+:\s*({kill_sub_process}true|false)""",
-    """"Rooting"+:\s*({rooting}true|false)""",
-    """"InddetMask"+:\s*({inddet_mask}true|false)""",
-    """"Indicator"+:\s*({indicator}true|false)"""
-  ]
-  DupFields = [ "command_line->malware_url" ]
-  SOAR {		
-    IncidentType = "malware"		
-    DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->malwareName", "alert_type->malwareCategory", "alert_severity->sourceSeverity", "src_host->malwareVictimHost", "malware_url->malwareAttackerFile", "dest_ip->malwareAttackerIp"]		
-    NameTemplate = """CrowdStrike Alert ${alert_name} found"""		
-    ProjectName = "SOC"		
-    EntityFields = [		
-      {EntityType="device", Name="src_address", Fields=["src_ip->ip_address"]}
+    """"GrandparentCommandLine\\*"+:\s*\\*"+({grandparent_command_line}[^}
 ```

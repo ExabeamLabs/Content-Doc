@@ -6,6 +6,7 @@ Name = crowdstrike-file-process-alert-2
   Conditions = [ """"event_simpleName\":\"LsassHandleFromUnsignedModule\"""", """"@timestamp"""" ]
   Fields = ${CrowdStrikeParserTemplates.crowdstrike-auth-activity.Fields} [
     """event_simpleName\\":\\"({alert_name}[^"\\]+)""",
+    """"ImageFileName\\*"+:\\*"+({image_file_name}[^"]+?)\\*","""
   ]
 }
 ```
