@@ -55,6 +55,6 @@ Name = crowdstrike-security-alert-6
       """"InddetMask"+:\s*({inddet_mask}true|false)""",
       """"Indicator"+:\s*({indicator}true|false)"""
     ]
-    DupFields = [ "directory->process_directory" ]
+    DupFields = [ "directory->process_directory", "falcon_host_link->additional_info" ]
   }
 ```
