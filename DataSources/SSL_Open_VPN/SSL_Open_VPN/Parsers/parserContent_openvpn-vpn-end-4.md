@@ -11,9 +11,10 @@ Name = openvpn-vpn-end-4
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """openvpn\[({pid}[^\]]+)\]""",
     """openvpn\[[^\]]+\]\:\s({user}[^\/]+)\/({src_ip}[a-fA-F\d.:]+)\:({src_port}\d+)""",
-    """\[[^\]]+\]\s({event_name}Inactivity timeout)""",
-    """Inactivity timeout\s({additional_info}[^\"]+)\s"""",
+    """({event_name}Inactivity timeout)""",
+    """Inactivity timeout\s({additional_info}[^\"]+?)\s*("|$)""",
   ]
 }
 ```
