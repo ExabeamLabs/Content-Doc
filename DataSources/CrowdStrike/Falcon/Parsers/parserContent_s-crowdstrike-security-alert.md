@@ -27,7 +27,7 @@ Name = s-crowdstrike-security-alert
     """"MD5String":\s*"(|({md5}[^"]+))"""",
     """"UserName":\s*"(|N/A|({user}[^"]+))"""",
     """"FalconHostLink":\s*"({falcon_host_link}[^"]+)"""",
-    """"DetectDescription":\s*"({additional_info}[^"]+)""",
+    """"DetectDescription":\s*"({detect_description}[^"]+)""",
     """"GrandparentImageFileName\\*"+:\s*\\*"+({grandparent_image_filename}[^,]+?)\\*"+,""",
     """"GrandparentCommandLine\\*"+:\s*\\*"+({grandparent_command_line}[^}
 ```
