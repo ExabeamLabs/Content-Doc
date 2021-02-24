@@ -25,10 +25,10 @@ Name = raw-process-created
       """Account Name(:|=)\s*(-|SYSTEM|({user}[^\s]+?))[\s;]*Account Domain(:|=)""",
       """Account Domain(:|=)\s*(-|({domain}[^\s]+?))[\s;]*Logon ID(:|=)""",
       """Logon ID(:|=)\s*({logon_id}[^\s;]+)""",
-      """New Process Name(:|=)\s*({process}({directory}(?:[^";]+)?[\\\/])?({process_name}[^\\\/";]+?))[\s;]*Token Elevation Type(:|=)""",
+      """New Process Name(:|=)\s*({process}({directory}[^:]+:[^";:\n]+)[\\\/]+?({process_name}[^\s\\:;]+))""",
       """New Process ID(:|=)\s*({process_guid}[^\s;]+)(\s|;)""",
       """Creator Process ID(:|=)\s*({parent_process_guid}[^\s;]+)(\s|;)""",
-      """Creator Process Name(:|=)\s*({parent_process}((?:[^";]+)?[\\\/])?({parent_process_name}[^\\\/";]+?))[\s;]*Process"""
+      """Creator Process Name(:|=)\s*({parent_process}([^:]+:[^";:\n]+)[\\\/]+?({parent_process_name}[^\\\/";]+?))[\s;]*Process""",
       """Creator Process Name(:|=)\s*(((?:[^";]+)?[\\\/])?({parent_process_name}[^\\\/";]+?))[\s;]*Process""",
       """Process Command Line(:|=)\s{0,2}"?(|({command_line}.+?))(\s*Token Elevation Type indicates|;|\s+$)""",
       """Process Command Line(:|=)\s{0,2}"?(|({command_line}\S[^";]*?))(\s*Token Elevation Type indicates|"\s|;|\s+$)""",

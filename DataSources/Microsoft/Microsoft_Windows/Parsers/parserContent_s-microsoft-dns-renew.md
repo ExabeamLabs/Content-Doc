@@ -15,7 +15,6 @@ Name = s-microsoft-dns-renew
     """Renew,({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),({dest_host}[^,]+),(({src_mac}[\w]{12}),)?""",
     """"+mac\\"+:\[\\"+({src_mac}[^\\"]+)""",
     """"+ip\\"+:\[\\"+({src_ip}[^\\"]+)""",
-    """"+host\\"+.+?os.+?family\\"+:\\"+({os}[^\\]+)""",
     """<Identifier>({host}[^<]+)<\/"""
     
   ]
