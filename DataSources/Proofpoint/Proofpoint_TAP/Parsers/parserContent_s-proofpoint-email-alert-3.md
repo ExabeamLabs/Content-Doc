@@ -33,6 +33,6 @@ Name = s-proofpoint-email-alert-3
     """({outcome}MessagesBlocked)""",
     """"SourceSystem"+:"+({log_source}[^"]+)"""
   ]
-  DupFields = [ "recipient->user_email" ]
+  DupFields = [ "recipients->user_email","sender->from_address_at","recipients->to_address_at","malware_url->threat_url_at" ]
 }
 ```
