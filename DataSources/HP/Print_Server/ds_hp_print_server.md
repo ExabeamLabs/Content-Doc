@@ -6,9 +6,9 @@ Product: Print Server
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   1    |     1      |      1      |    1    |
 
-|                           Use-Case                           | Activity Types                         | Event Types/Parsers                                                                                                                                                         | MITRE TTP         | Content                                                                           |
-|:------------------------------------------------------------:| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | --------------------------------------------------------------------------------- |
-| [Lateral Movement](../../../UseCases/uc_lateral_movement.md) | <ul><li>Data Loss Prevention</li></ul> |  print-activity<br> ↳ [cef-hp-print-activity](Parsers/parserContent_cef-hp-print-activity.md)<br> ↳ [s-hp-print-activity](Parsers/parserContent_s-hp-print-activity.md)<br> | T1086 - T1086<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_hp_print_server_Lateral_Movement.md) |
+|                           Use-Case                           | Event Types/Parsers                                                                                                                                                         | MITRE TTP         | Content                                                                           |
+|:------------------------------------------------------------:| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | --------------------------------------------------------------------------------- |
+| [Lateral Movement](../../../UseCases/uc_lateral_movement.md) |  print-activity<br> ↳ [cef-hp-print-activity](Parsers/parserContent_cef-hp-print-activity.md)<br> ↳ [s-hp-print-activity](Parsers/parserContent_s-hp-print-activity.md)<br> | T1086 - T1086<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_hp_print_server_Lateral_Movement.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

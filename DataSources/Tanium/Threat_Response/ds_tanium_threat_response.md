@@ -4,12 +4,12 @@ Product: Threat Response
 ------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   9   |   5    |     1      |      1      |    1    |
+|   9   |   6    |     1      |      1      |    1    |
 
-|                               Use-Case                               | Activity Types                      | Event Types/Parsers                                                                            | MITRE TTP                  | Content                                                                                                                |
-|:--------------------------------------------------------------------:| ----------------------------------- | ---------------------------------------------------------------------------------------------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-|    [Malware Detection](../../../UseCases/uc_malware_detection.md)    | <ul><li>Endpoint Activity</li></ul> |  process-alert<br> ↳ [tanium-process-alert](Parsers/parserContent_tanium-process-alert.md)<br> | T1204 - User Execution<br> | [<ul><li>9 Rules</li></ul><ul><li>5 Models</li></ul>](Rules_Models/r_m_tanium_threat_response_Malware_Detection.md)    |
-| [Ransomware Detection](../../../UseCases/uc_ransomware_detection.md) | <ul><li>Endpoint Activity</li></ul> |  process-alert<br> ↳ [tanium-process-alert](Parsers/parserContent_tanium-process-alert.md)<br> | T1204 - User Execution<br> | [<ul><li>9 Rules</li></ul><ul><li>5 Models</li></ul>](Rules_Models/r_m_tanium_threat_response_Ransomware_Detection.md) |
+|                               Use-Case                               | Event Types/Parsers                                                                            | MITRE TTP                  | Content                                                                                                                |
+|:--------------------------------------------------------------------:| ---------------------------------------------------------------------------------------------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+|    [Malware Detection](../../../UseCases/uc_malware_detection.md)    |  process-alert<br> ↳ [tanium-process-alert](Parsers/parserContent_tanium-process-alert.md)<br> | T1204 - User Execution<br> | [<ul><li>9 Rules</li></ul><ul><li>6 Models</li></ul>](Rules_Models/r_m_tanium_threat_response_Malware_Detection.md)    |
+| [Ransomware Detection](../../../UseCases/uc_ransomware_detection.md) |  process-alert<br> ↳ [tanium-process-alert](Parsers/parserContent_tanium-process-alert.md)<br> | T1204 - User Execution<br> | [<ul><li>9 Rules</li></ul><ul><li>6 Models</li></ul>](Rules_Models/r_m_tanium_threat_response_Ransomware_Detection.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

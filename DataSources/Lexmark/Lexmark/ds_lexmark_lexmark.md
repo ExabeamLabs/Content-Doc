@@ -6,9 +6,9 @@ Product: Lexmark
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   1    |     1      |      1      |    1    |
 
-|                           Use-Case                           | Activity Types                         | Event Types/Parsers                                                                                 | MITRE TTP         | Content                                                                           |
-|:------------------------------------------------------------:| -------------------------------------- | --------------------------------------------------------------------------------------------------- | ----------------- | --------------------------------------------------------------------------------- |
-| [Lateral Movement](../../../UseCases/uc_lateral_movement.md) | <ul><li>Data Loss Prevention</li></ul> |  print-activity<br> ↳ [lexmark-print-activity](Parsers/parserContent_lexmark-print-activity.md)<br> | T1086 - T1086<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_lexmark_lexmark_Lateral_Movement.md) |
+|                           Use-Case                           | Event Types/Parsers                                                                                 | MITRE TTP         | Content                                                                           |
+|:------------------------------------------------------------:| --------------------------------------------------------------------------------------------------- | ----------------- | --------------------------------------------------------------------------------- |
+| [Lateral Movement](../../../UseCases/uc_lateral_movement.md) |  print-activity<br> ↳ [lexmark-print-activity](Parsers/parserContent_lexmark-print-activity.md)<br> | T1086 - T1086<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_lexmark_lexmark_Lateral_Movement.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
