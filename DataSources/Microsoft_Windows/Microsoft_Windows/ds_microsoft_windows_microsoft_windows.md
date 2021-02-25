@@ -6,9 +6,9 @@ Product: Microsoft Windows
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   2   |   1    |     1      |      1      |    1    |
 
-|                Use-Case                | Activity Types                             | Event Types/Parsers                                            | MITRE TTP                         | Content                                                                                                              |
-|:--------------------------------------:| ------------------------------------------ | -------------------------------------------------------------- | --------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) | <ul><li>Critical System Activity</li></ul> |  ds-access<br> ↳ [q-4662](Parsers/parserContent_q-4662.md)<br> | T1003 - OS Credential Dumping<br> | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](Rules_Models/r_m_microsoft_windows_microsoft_windows_Other.md) |
+|                Use-Case                | Event Types/Parsers                                            | MITRE TTP                         | Content                                                                                                              |
+|:--------------------------------------:| -------------------------------------------------------------- | --------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| [Other](../../../UseCases/uc_other.md) |  ds-access<br> ↳ [q-4662](Parsers/parserContent_q-4662.md)<br> | T1003 - OS Credential Dumping<br> | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](Rules_Models/r_m_microsoft_windows_microsoft_windows_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

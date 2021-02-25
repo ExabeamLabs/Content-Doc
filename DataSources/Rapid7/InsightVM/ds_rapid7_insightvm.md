@@ -4,11 +4,11 @@ Product: InsightVM
 ------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  18   |   5    |     4      |      1      |    1    |
+|  18   |   9    |     4      |      1      |    1    |
 
-|                Use-Case                | Activity Types                                                                                         | Event Types/Parsers                                                                               | MITRE TTP                                                                                                              | Content                                                                                            |
-|:--------------------------------------:| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) | <ul><li>Endpoint Activity</li><li>Executives</li><li>Process Activity</li><li>Security Alert</li></ul> |  security-alert<br> ↳ [rapid7-security-alert](Parsers/parserContent_rapid7-security-alert.md)<br> | T1066 - T1066<br>T1068 - Exploitation for Privilege Escalation<br>T1078 - Valid Accounts<br>T1204 - User Execution<br> | [<ul><li>18 Rules</li></ul><ul><li>5 Models</li></ul>](Rules_Models/r_m_rapid7_insightvm_Other.md) |
+|                Use-Case                | Event Types/Parsers                                                                               | MITRE TTP                                                                                                              | Content                                                                                            |
+|:--------------------------------------:| ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [Other](../../../UseCases/uc_other.md) |  security-alert<br> ↳ [rapid7-security-alert](Parsers/parserContent_rapid7-security-alert.md)<br> | T1066 - T1066<br>T1068 - Exploitation for Privilege Escalation<br>T1078 - Valid Accounts<br>T1204 - User Execution<br> | [<ul><li>18 Rules</li></ul><ul><li>9 Models</li></ul>](Rules_Models/r_m_rapid7_insightvm_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

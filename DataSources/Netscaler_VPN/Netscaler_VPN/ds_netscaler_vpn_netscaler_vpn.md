@@ -6,9 +6,9 @@ Product: Netscaler VPN
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   1    |     1      |      1      |    1    |
 
-|  Use-Case  | Activity Types | Event Types/Parsers                                                                               | MITRE TTP | Content                                                        |
-|:----------:| -------------- | ------------------------------------------------------------------------------------------------- | --------- | -------------------------------------------------------------- |
-| Enrichment | <ul></li></ul> |  vpn-connection<br> ↳ [citrix-vpn-connection](Parsers/parserContent_citrix-vpn-connection.md)<br> |           | [](Rules_Models/r_m_netscaler_vpn_netscaler_vpn_Enrichment.md) |
+|  Use-Case  | Event Types/Parsers                                                                               | MITRE TTP | Content                                                        |
+|:----------:| ------------------------------------------------------------------------------------------------- | --------- | -------------------------------------------------------------- |
+| Enrichment |  vpn-connection<br> ↳ [citrix-vpn-connection](Parsers/parserContent_citrix-vpn-connection.md)<br> |           | [](Rules_Models/r_m_netscaler_vpn_netscaler_vpn_Enrichment.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

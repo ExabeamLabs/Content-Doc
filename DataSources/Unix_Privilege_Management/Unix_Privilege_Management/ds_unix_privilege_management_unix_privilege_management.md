@@ -4,11 +4,11 @@ Product: Unix Privilege Management
 ----------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   8   |   4    |     3      |      1      |    1    |
+|   8   |   6    |     3      |      1      |    1    |
 
-|                Use-Case                | Activity Types                                                                                                                  | Event Types/Parsers                                                                         | MITRE TTP                                                                            | Content                                                                                                                              |
-|:--------------------------------------:| ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
-| [Other](../../../UseCases/uc_other.md) | <ul><li>Activity Time  and Type</li><li>Credential Switch Activity</li><li>Endpoint Activity</li><li>Process Activity</li></ul> |  account-switch<br> ↳ [upm-account-switch](Parsers/parserContent_upm-account-switch.md)<br> | T1078 - Valid Accounts<br>T1098 - Account Manipulation<br>T1204 - User Execution<br> | [<ul><li>8 Rules</li></ul><ul><li>4 Models</li></ul>](Rules_Models/r_m_unix_privilege_management_unix_privilege_management_Other.md) |
+|                Use-Case                | Event Types/Parsers                                                                         | MITRE TTP                                                                            | Content                                                                                                                              |
+|:--------------------------------------:| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| [Other](../../../UseCases/uc_other.md) |  account-switch<br> ↳ [upm-account-switch](Parsers/parserContent_upm-account-switch.md)<br> | T1078 - Valid Accounts<br>T1098 - Account Manipulation<br>T1204 - User Execution<br> | [<ul><li>8 Rules</li></ul><ul><li>6 Models</li></ul>](Rules_Models/r_m_unix_privilege_management_unix_privilege_management_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

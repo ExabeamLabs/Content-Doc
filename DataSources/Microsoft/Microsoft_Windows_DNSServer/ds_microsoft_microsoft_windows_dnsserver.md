@@ -6,9 +6,9 @@ Product: Microsoft Windows DNSServer
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   2   |   1    |     2      |      1      |    1    |
 
-|                Use-Case                | Activity Types                        | Event Types/Parsers                                                                              | MITRE TTP                                                                                | Content                                                                                      |
-|:--------------------------------------:| ------------------------------------- | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) | <ul><li>Security Operations</li></ul> |  dns-query<br> ↳ [xml-microsoft-dns-query](Parsers/parserContent_xml-microsoft-dns-query.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1071 - Application Layer Protocol<br> | [<ul><li>2 Rules</li></ul>](Rules_Models/r_m_microsoft_microsoft_windows_dnsserver_Other.md) |
+|                Use-Case                | Event Types/Parsers                                                                              | MITRE TTP                                                                                | Content                                                                                      |
+|:--------------------------------------:| ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| [Other](../../../UseCases/uc_other.md) |  dns-query<br> ↳ [xml-microsoft-dns-query](Parsers/parserContent_xml-microsoft-dns-query.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1071 - Application Layer Protocol<br> | [<ul><li>2 Rules</li></ul>](Rules_Models/r_m_microsoft_microsoft_windows_dnsserver_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

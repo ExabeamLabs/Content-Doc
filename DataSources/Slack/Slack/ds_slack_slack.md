@@ -6,9 +6,9 @@ Product: Slack
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   1    |     1      |      2      |    2    |
 
-|                Use-Case                | Activity Types                             | Event Types/Parsers                                                                                                                                                                    | MITRE TTP                  | Content                                                            |
-|:--------------------------------------:| ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ------------------------------------------------------------------ |
-| [Other](../../../UseCases/uc_other.md) | <ul><li>Critical System Activity</li></ul> |  file-download<br> ↳ [slack-file-download](Parsers/parserContent_slack-file-download.md)<br><br> file-upload<br> ↳ [slack-file-upload](Parsers/parserContent_slack-file-upload.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_slack_slack_Other.md) |
+|                Use-Case                | Event Types/Parsers                                                                                                                                                                    | MITRE TTP                  | Content                                                            |
+|:--------------------------------------:| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ------------------------------------------------------------------ |
+| [Other](../../../UseCases/uc_other.md) |  file-download<br> ↳ [slack-file-download](Parsers/parserContent_slack-file-download.md)<br><br> file-upload<br> ↳ [slack-file-upload](Parsers/parserContent_slack-file-upload.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_slack_slack_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

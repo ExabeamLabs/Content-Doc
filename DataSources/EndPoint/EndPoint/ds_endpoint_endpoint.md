@@ -4,11 +4,11 @@ Product: EndPoint
 -----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  13   |   3    |     2      |      1      |    1    |
+|  13   |   7    |     2      |      1      |    1    |
 
-|                Use-Case                | Activity Types                                                                            | Event Types/Parsers                                                                        | MITRE TTP                                                                    | Content                                                                                             |
-|:--------------------------------------:| ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) | <ul><li>Data Loss Prevention</li><li>Endpoint Activity</li><li>Process Activity</li></ul> |  dlp-alert<br> ↳ [s-endpoint-dlp-alert](Parsers/parserContent_s-endpoint-dlp-alert.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1204 - User Execution<br> | [<ul><li>13 Rules</li></ul><ul><li>3 Models</li></ul>](Rules_Models/r_m_endpoint_endpoint_Other.md) |
+|                Use-Case                | Event Types/Parsers                                                                        | MITRE TTP                                                                    | Content                                                                                             |
+|:--------------------------------------:| ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| [Other](../../../UseCases/uc_other.md) |  dlp-alert<br> ↳ [s-endpoint-dlp-alert](Parsers/parserContent_s-endpoint-dlp-alert.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1204 - User Execution<br> | [<ul><li>13 Rules</li></ul><ul><li>7 Models</li></ul>](Rules_Models/r_m_endpoint_endpoint_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
