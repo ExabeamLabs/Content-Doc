@@ -6,9 +6,9 @@ Product: IBM
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |  10   |   4    |     3      |      1      |    1    |
 
-|                Use-Case                | Activity Types                                                                                                     | Event Types/Parsers                                                                                      | MITRE TTP                                                                       | Content                                                                                   |
-|:--------------------------------------:| ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) | <ul><li>Activity Time  and Type</li><li>Asset Logon and Access</li><li>Network zones and Location Access</li></ul> |  authentication-successful<br> ↳ [ibm-auth-successful](Parsers/parserContent_ibm-auth-successful.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1188 - T1188<br> | [<ul><li>10 Rules</li></ul><ul><li>4 Models</li></ul>](Rules_Models/r_m_ibm_ibm_Other.md) |
+|                Use-Case                | Event Types/Parsers                                                                                      | MITRE TTP                                                                       | Content                                                                                   |
+|:--------------------------------------:| -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| [Other](../../../UseCases/uc_other.md) |  authentication-successful<br> ↳ [ibm-auth-successful](Parsers/parserContent_ibm-auth-successful.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1188 - T1188<br> | [<ul><li>10 Rules</li></ul><ul><li>4 Models</li></ul>](Rules_Models/r_m_ibm_ibm_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

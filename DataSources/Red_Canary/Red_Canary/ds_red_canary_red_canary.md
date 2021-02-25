@@ -4,11 +4,11 @@ Product: Red Canary
 -------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  26   |   5    |     5      |      1      |    1    |
+|  26   |   11   |     5      |      1      |    1    |
 
-|                Use-Case                | Activity Types                                                                                         | Event Types/Parsers                                                                                     | MITRE TTP                                                                                                                               | Content                                                                                                 |
-|:--------------------------------------:| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) | <ul><li>Endpoint Activity</li><li>Executives</li><li>Process Activity</li><li>Security Alert</li></ul> |  security-alert<br> ↳ [redcanary-security-alert](Parsers/parserContent_redcanary-security-alert.md)<br> | T1066 - T1066<br>T1068 - Exploitation for Privilege Escalation<br>T1078 - Valid Accounts<br>T1086 - T1086<br>T1204 - User Execution<br> | [<ul><li>26 Rules</li></ul><ul><li>5 Models</li></ul>](Rules_Models/r_m_red_canary_red_canary_Other.md) |
+|                Use-Case                | Event Types/Parsers                                                                                     | MITRE TTP                                                                                                                               | Content                                                                                                  |
+|:--------------------------------------:| ------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| [Other](../../../UseCases/uc_other.md) |  security-alert<br> ↳ [redcanary-security-alert](Parsers/parserContent_redcanary-security-alert.md)<br> | T1066 - T1066<br>T1068 - Exploitation for Privilege Escalation<br>T1078 - Valid Accounts<br>T1086 - T1086<br>T1204 - User Execution<br> | [<ul><li>26 Rules</li></ul><ul><li>11 Models</li></ul>](Rules_Models/r_m_red_canary_red_canary_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
