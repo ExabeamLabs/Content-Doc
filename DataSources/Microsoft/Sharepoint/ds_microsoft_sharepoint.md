@@ -6,9 +6,9 @@ Product: Sharepoint
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   1    |     1      |      1      |    1    |
 
-|  Use-Case  | Activity Types | Event Types/Parsers                                                           | MITRE TTP | Content                                                 |
-|:----------:| -------------- | ----------------------------------------------------------------------------- | --------- | ------------------------------------------------------- |
-| Enrichment | <ul></li></ul> |  <br> ↳ [s-sharepoint-proxy](Parsers/parserContent_s-sharepoint-proxy.md)<br> |           | [](Rules_Models/r_m_microsoft_sharepoint_Enrichment.md) |
+|  Use-Case  | Event Types/Parsers                                                           | MITRE TTP | Content                                                 |
+|:----------:| ----------------------------------------------------------------------------- | --------- | ------------------------------------------------------- |
+| Enrichment |  <br> ↳ [s-sharepoint-proxy](Parsers/parserContent_s-sharepoint-proxy.md)<br> |           | [](Rules_Models/r_m_microsoft_sharepoint_Enrichment.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

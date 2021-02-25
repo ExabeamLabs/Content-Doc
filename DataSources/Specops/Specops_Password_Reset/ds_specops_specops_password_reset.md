@@ -6,9 +6,9 @@ Product: Specops Password Reset
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   1    |     1      |      1      |    1    |
 
-|                                  Use-Case                                  | Activity Types                            | Event Types/Parsers                                                                                       | MITRE TTP                  | Content                                                                                                                           |
-|:--------------------------------------------------------------------------:| ----------------------------------------- | --------------------------------------------------------------------------------------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) | <ul><li>Activity Time  and Type</li></ul> |  account-unlocked<br> ↳ [specops-account-unlocked](Parsers/parserContent_specops-account-unlocked.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](Rules_Models/r_m_specops_specops_password_reset_Compromised_Credentials.md) |
+|                                  Use-Case                                  | Event Types/Parsers                                                                                       | MITRE TTP                  | Content                                                                                                                           |
+|:--------------------------------------------------------------------------:| --------------------------------------------------------------------------------------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  account-unlocked<br> ↳ [specops-account-unlocked](Parsers/parserContent_specops-account-unlocked.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](Rules_Models/r_m_specops_specops_password_reset_Compromised_Credentials.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

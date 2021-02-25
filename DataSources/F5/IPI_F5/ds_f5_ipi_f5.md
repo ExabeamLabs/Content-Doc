@@ -4,13 +4,13 @@ Product: IPI F5
 ---------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   9   |   4    |     2      |      1      |    1    |
+|   9   |   6    |     2      |      1      |    1    |
 
-|                               Use-Case                               | Activity Types                                               | Event Types/Parsers                                                                        | MITRE TTP                  | Content                                                                                                   |
-|:--------------------------------------------------------------------:| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | -------------------------- | --------------------------------------------------------------------------------------------------------- |
-|     [Lateral Movement](../../../UseCases/uc_lateral_movement.md)     | <ul><li>Network Alert</li><li>Security Alert</li></ul>       |  network-alert<br> ↳ [f5-network-alert-4](Parsers/parserContent_f5-network-alert-4.md)<br> | T1066 - T1066<br>          | [<ul><li>5 Rules</li></ul><ul><li>3 Models</li></ul>](Rules_Models/r_m_f5_ipi_f5_Lateral_Movement.md)     |
-|    [Malware Detection](../../../UseCases/uc_malware_detection.md)    | <ul><li>Endpoint Activity</li><li>Process Activity</li></ul> |  network-alert<br> ↳ [f5-network-alert-4](Parsers/parserContent_f5-network-alert-4.md)<br> | T1204 - User Execution<br> | [<ul><li>4 Rules</li></ul><ul><li>1 Models</li></ul>](Rules_Models/r_m_f5_ipi_f5_Malware_Detection.md)    |
-| [Ransomware Detection](../../../UseCases/uc_ransomware_detection.md) | <ul><li>Endpoint Activity</li><li>Process Activity</li></ul> |  network-alert<br> ↳ [f5-network-alert-4](Parsers/parserContent_f5-network-alert-4.md)<br> | T1204 - User Execution<br> | [<ul><li>4 Rules</li></ul><ul><li>1 Models</li></ul>](Rules_Models/r_m_f5_ipi_f5_Ransomware_Detection.md) |
+|                               Use-Case                               | Event Types/Parsers                                                                        | MITRE TTP                  | Content                                                                                                   |
+|:--------------------------------------------------------------------:| ------------------------------------------------------------------------------------------ | -------------------------- | --------------------------------------------------------------------------------------------------------- |
+|     [Lateral Movement](../../../UseCases/uc_lateral_movement.md)     |  network-alert<br> ↳ [f5-network-alert-4](Parsers/parserContent_f5-network-alert-4.md)<br> | T1066 - T1066<br>          | [<ul><li>5 Rules</li></ul><ul><li>4 Models</li></ul>](Rules_Models/r_m_f5_ipi_f5_Lateral_Movement.md)     |
+|    [Malware Detection](../../../UseCases/uc_malware_detection.md)    |  network-alert<br> ↳ [f5-network-alert-4](Parsers/parserContent_f5-network-alert-4.md)<br> | T1204 - User Execution<br> | [<ul><li>4 Rules</li></ul><ul><li>2 Models</li></ul>](Rules_Models/r_m_f5_ipi_f5_Malware_Detection.md)    |
+| [Ransomware Detection](../../../UseCases/uc_ransomware_detection.md) |  network-alert<br> ↳ [f5-network-alert-4](Parsers/parserContent_f5-network-alert-4.md)<br> | T1204 - User Execution<br> | [<ul><li>4 Rules</li></ul><ul><li>2 Models</li></ul>](Rules_Models/r_m_f5_ipi_f5_Ransomware_Detection.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
