@@ -7,6 +7,6 @@ Vendor: Zscaler
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   1    |     1      |      2      |    2    |
 
-| Event Type | Rules                                                                                                               | Models |
-| ---------- | ------------------------------------------------------------------------------------------------------------------- | ------ |
-| vpn-logout | <b>T1078 - Valid Accounts</b><br> ↳ <b>APP-UOb-Number</b>: Abnormal number of application objects accessed for user |        |
+| Event Type | Rules                                                                                                               | Models                                                               |
+| ---------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| vpn-logout | <b>T1078 - Valid Accounts</b><br> ↳ <b>APP-UOb-Number</b>: Abnormal number of application objects accessed for user |  • <b>APP-UOb-Number</b>: Count of app objects accessed in a session |

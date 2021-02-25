@@ -6,9 +6,9 @@ Product: Websense ESG
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   1    |     1      |      1      |    1    |
 
-|                                  Use-Case                                  | Activity Types                             | Event Types/Parsers                                                                                               | MITRE TTP                  | Content                                                                                          |
-|:--------------------------------------------------------------------------:| ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------ |
-| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) | <ul><li>Critical System Activity</li></ul> |  dlp-email-alert-in<br> ↳ [websense-dlp-email-alert-in](Parsers/parserContent_websense-dlp-email-alert-in.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_forcepoint_websense_esg_Compromised_Credentials.md) |
+|                                  Use-Case                                  | Event Types/Parsers                                                                                               | MITRE TTP                  | Content                                                                                          |
+|:--------------------------------------------------------------------------:| ----------------------------------------------------------------------------------------------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------ |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  dlp-email-alert-in<br> ↳ [websense-dlp-email-alert-in](Parsers/parserContent_websense-dlp-email-alert-in.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_forcepoint_websense_esg_Compromised_Credentials.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

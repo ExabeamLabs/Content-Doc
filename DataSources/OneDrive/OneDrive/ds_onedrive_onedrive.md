@@ -6,9 +6,9 @@ Product: OneDrive
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   1    |     1      |      1      |    1    |
 
-|                Use-Case                | Activity Types                             | Event Types/Parsers                                                                                    | MITRE TTP                  | Content                                                                  |
-|:--------------------------------------:| ------------------------------------------ | ------------------------------------------------------------------------------------------------------ | -------------------------- | ------------------------------------------------------------------------ |
-| [Other](../../../UseCases/uc_other.md) | <ul><li>Critical System Activity</li></ul> |  file-read<br> ↳ [cef-onedrive-file-activity](Parsers/parserContent_cef-onedrive-file-activity.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_onedrive_onedrive_Other.md) |
+|                Use-Case                | Event Types/Parsers                                                                                    | MITRE TTP                  | Content                                                                  |
+|:--------------------------------------:| ------------------------------------------------------------------------------------------------------ | -------------------------- | ------------------------------------------------------------------------ |
+| [Other](../../../UseCases/uc_other.md) |  file-read<br> ↳ [cef-onedrive-file-activity](Parsers/parserContent_cef-onedrive-file-activity.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_onedrive_onedrive_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

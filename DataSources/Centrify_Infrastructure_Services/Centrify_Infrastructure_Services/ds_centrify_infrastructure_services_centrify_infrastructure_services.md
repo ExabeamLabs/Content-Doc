@@ -4,11 +4,11 @@ Product: Centrify Infrastructure Services
 -----------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  34   |   3    |     3      |      1      |    1    |
+|  34   |   4    |     3      |      1      |    1    |
 
-|                Use-Case                | Activity Types                      | Event Types/Parsers                                                                              | MITRE TTP                                                                            | Content                                                                                                                                             |
-|:--------------------------------------:| ----------------------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) | <ul><li>Endpoint Activity</li></ul> |  process-created<br> ↳ [unix-process-created](Parsers/parserContent_unix-process-created.md)<br> | T1036 - Masquerading<br>T1204 - User Execution<br>T1219 - Remote Access Software<br> | [<ul><li>34 Rules</li></ul><ul><li>3 Models</li></ul>](Rules_Models/r_m_centrify_infrastructure_services_centrify_infrastructure_services_Other.md) |
+|                Use-Case                | Event Types/Parsers                                                                              | MITRE TTP                                                                            | Content                                                                                                                                             |
+|:--------------------------------------:| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Other](../../../UseCases/uc_other.md) |  process-created<br> ↳ [unix-process-created](Parsers/parserContent_unix-process-created.md)<br> | T1036 - Masquerading<br>T1204 - User Execution<br>T1219 - Remote Access Software<br> | [<ul><li>34 Rules</li></ul><ul><li>4 Models</li></ul>](Rules_Models/r_m_centrify_infrastructure_services_centrify_infrastructure_services_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

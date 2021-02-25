@@ -6,9 +6,9 @@ Product: Cognitas CrossLink
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |  11   |   4    |     3      |      1      |    1    |
 
-|                Use-Case                | Activity Types                                                                                                     | Event Types/Parsers                                                                    | MITRE TTP                                                                       | Content                                                                                                                 |
-|:--------------------------------------:| ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) | <ul><li>Activity Time  and Type</li><li>Asset Logon and Access</li><li>Network zones and Location Access</li></ul> |  vpn-login<br> ↳ [cognitas-vpn-start](Parsers/parserContent_cognitas-vpn-start.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1188 - T1188<br> | [<ul><li>11 Rules</li></ul><ul><li>4 Models</li></ul>](Rules_Models/r_m_cognitas_crosslink_cognitas_crosslink_Other.md) |
+|                Use-Case                | Event Types/Parsers                                                                    | MITRE TTP                                                                       | Content                                                                                                                 |
+|:--------------------------------------:| -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| [Other](../../../UseCases/uc_other.md) |  vpn-login<br> ↳ [cognitas-vpn-start](Parsers/parserContent_cognitas-vpn-start.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1188 - T1188<br> | [<ul><li>11 Rules</li></ul><ul><li>4 Models</li></ul>](Rules_Models/r_m_cognitas_crosslink_cognitas_crosslink_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

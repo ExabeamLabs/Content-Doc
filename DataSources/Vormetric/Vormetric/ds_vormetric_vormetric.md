@@ -6,9 +6,9 @@ Product: Vormetric
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   1    |     1      |      1      |    1    |
 
-|                Use-Case                | Activity Types                             | Event Types/Parsers                                                                                  | MITRE TTP                  | Content                                                                    |
-|:--------------------------------------:| ------------------------------------------ | ---------------------------------------------------------------------------------------------------- | -------------------------- | -------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) | <ul><li>Critical System Activity</li></ul> |  file-read<br> ↳ [vormetric-file-operations](Parsers/parserContent_vormetric-file-operations.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_vormetric_vormetric_Other.md) |
+|                Use-Case                | Event Types/Parsers                                                                                  | MITRE TTP                  | Content                                                                    |
+|:--------------------------------------:| ---------------------------------------------------------------------------------------------------- | -------------------------- | -------------------------------------------------------------------------- |
+| [Other](../../../UseCases/uc_other.md) |  file-read<br> ↳ [vormetric-file-operations](Parsers/parserContent_vormetric-file-operations.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_vormetric_vormetric_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

@@ -5,8 +5,8 @@ Vendor: Zoom
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   1    |     1      |      7      |    7    |
+|   2   |   2    |     1      |      7      |    7    |
 
-| Event Type          | Rules                                                                                                                                                                                    | Models                                                |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| webconference-login | <b>T1078.004 - Valid Accounts: Cloud Accounts</b><br> ↳ <b>WCA-Ucountry-A</b>: Abnormal web conference login country for user<br> ↳ <b>WCA-TOW-A</b>: Abnormal web conference login time |  • <b>WCA-TOW</b>: Web conference login time for user |
+| Event Type          | Rules                                                                                                                                                                                    | Models                                                                                                                   |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| webconference-login | <b>T1078.004 - Valid Accounts: Cloud Accounts</b><br> ↳ <b>WCA-Ucountry-A</b>: Abnormal web conference login country for user<br> ↳ <b>WCA-TOW-A</b>: Abnormal web conference login time |  • <b>WCA-TOW</b>: Web conference login time for user<br> • <b>WCA-Ucountry</b>: Web conference login countries for user |

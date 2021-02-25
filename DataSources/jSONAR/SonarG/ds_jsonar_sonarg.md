@@ -6,9 +6,9 @@ Product: SonarG
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   1    |     1      |      1      |    1    |
 
-|  Use-Case  | Activity Types | Event Types/Parsers                                                                               | MITRE TTP | Content                                          |
-|:----------:| -------------- | ------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------ |
-| Enrichment | <ul></li></ul> |  database-login<br> ↳ [jsonar-database-login](Parsers/parserContent_jsonar-database-login.md)<br> |           | [](Rules_Models/r_m_jsonar_sonarg_Enrichment.md) |
+|  Use-Case  | Event Types/Parsers                                                                               | MITRE TTP | Content                                          |
+|:----------:| ------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------ |
+| Enrichment |  database-login<br> ↳ [jsonar-database-login](Parsers/parserContent_jsonar-database-login.md)<br> |           | [](Rules_Models/r_m_jsonar_sonarg_Enrichment.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
