@@ -6,9 +6,9 @@ Product: HP LaserJet Printer
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   1    |     1      |      1      |    1    |
 
-|                           Use-Case                           | Activity Types                         | Event Types/Parsers                                                                       | MITRE TTP                                     | Content                                                                                  |
-|:------------------------------------------------------------:| -------------------------------------- | ----------------------------------------------------------------------------------------- | --------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| [Lateral Movement](../../../UseCases/uc_lateral_movement.md) | <ul><li>Data Loss Prevention</li></ul> |  print-activity<br> ↳ [gm-print-activity](Parsers/parserContent_gm-print-activity.md)<br> | T1052 - Exfiltration Over Physical Medium<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_hp_hp_laserjet_printer_Lateral_Movement.md) |
+|                           Use-Case                           | Event Types/Parsers                                                                       | MITRE TTP                                     | Content                                                                                  |
+|:------------------------------------------------------------:| ----------------------------------------------------------------------------------------- | --------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| [Lateral Movement](../../../UseCases/uc_lateral_movement.md) |  print-activity<br> ↳ [gm-print-activity](Parsers/parserContent_gm-print-activity.md)<br> | T1052 - Exfiltration Over Physical Medium<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_hp_hp_laserjet_printer_Lateral_Movement.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
