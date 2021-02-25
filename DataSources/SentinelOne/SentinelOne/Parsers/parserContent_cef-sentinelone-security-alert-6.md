@@ -22,12 +22,17 @@ Name = cef-sentinelone-security-alert-6
      """outcome=({outcome}[^,*\\\s"*]+)""",
      """dpriv=({alert_type}\w+)\s+\w+=""",
      """username":"((NT AUTHORITY|({domain}[^\\"]+))\\+)?(SYSTEM|({user}[^"]+))",""",
-     """dproc=({location}.+?)\s+\w+=""",
-     """cat=({category}.+?)\s+\w+=""",
-     """app=({app}.+?)\s+\w+=""",
-     """fileHash=({md5}.+?)\s\w+=""",
-     """"rank":({alert_severity}\d+)"""
+     """dproc=({location}[^=]+?)\s+\w+=""",
+     """cat=({category}[^=]+?)\s+\w+=""",
+     """app=({app}[^=]+?)\s+\w+=""",
+     """fileHash=({md5}[^=]+?)\s\w+=""",
+     """"rank":({alert_severity}\d+)""",
   ]
-  DupFields = ["file_name->process"]
-}
+   SOAR {
+    IncidentType = "malware"
+    DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->malwareName", "src_host->malwareVictimHost", "alert_type->description", "malware_url->malwareAttackerUrl","file_name->malwareAttackerFile"]
+    NameTemplate = """SentinelOne Alert ${alert_name} found"""
+    ProjectName = "SOC"
+    EntityFields = [
+      {EntityType="device", Name="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]}
 ```
