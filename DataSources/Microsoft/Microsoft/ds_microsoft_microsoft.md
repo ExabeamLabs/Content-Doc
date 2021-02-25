@@ -6,9 +6,9 @@ Product: Microsoft
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   1    |     1      |      1      |    1    |
 
-|                                  Use-Case                                  | Activity Types                             | Event Types/Parsers                                                                                         | MITRE TTP                  | Content                                                                                      |
-|:--------------------------------------------------------------------------:| ------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | -------------------------- | -------------------------------------------------------------------------------------------- |
-| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) | <ul><li>Critical System Activity</li></ul> |  dlp-email-alert-in<br> ↳ [azure-email-notification](Parsers/parserContent_azure-email-notification.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_microsoft_microsoft_Compromised_Credentials.md) |
+|                                  Use-Case                                  | Event Types/Parsers                                                                                         | MITRE TTP                  | Content                                                                                      |
+|:--------------------------------------------------------------------------:| ----------------------------------------------------------------------------------------------------------- | -------------------------- | -------------------------------------------------------------------------------------------- |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  dlp-email-alert-in<br> ↳ [azure-email-notification](Parsers/parserContent_azure-email-notification.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_microsoft_microsoft_Compromised_Credentials.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

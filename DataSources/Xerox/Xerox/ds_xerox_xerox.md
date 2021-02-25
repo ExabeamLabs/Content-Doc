@@ -6,9 +6,9 @@ Product: Xerox
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   1    |     1      |      1      |    1    |
 
-|  Use-Case  | Activity Types | Event Types/Parsers                                                           | MITRE TTP | Content                                        |
-|:----------:| -------------- | ----------------------------------------------------------------------------- | --------- | ---------------------------------------------- |
-| Enrichment | <ul></li></ul> |  print-activity<br> ↳ [xerox-print](Parsers/parserContent_xerox-print.md)<br> |           | [](Rules_Models/r_m_xerox_xerox_Enrichment.md) |
+|  Use-Case  | Event Types/Parsers                                                           | MITRE TTP | Content                                        |
+|:----------:| ----------------------------------------------------------------------------- | --------- | ---------------------------------------------- |
+| Enrichment |  print-activity<br> ↳ [xerox-print](Parsers/parserContent_xerox-print.md)<br> |           | [](Rules_Models/r_m_xerox_xerox_Enrichment.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

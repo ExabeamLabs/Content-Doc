@@ -6,9 +6,9 @@ Product: Swipes
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   2   |   1    |     1      |      1      |    1    |
 
-|                Use-Case                | Activity Types                                                 | Event Types/Parsers                                                                                | MITRE TTP                  | Content                                                                                        |
-|:--------------------------------------:| -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------- | ---------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) | <ul><li>Activity Time  and Type</li><li>Badge Access</li></ul> |  physical-access<br> ↳ [s-swipes-badge-access](Parsers/parserContent_s-swipes-badge-access.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](Rules_Models/r_m_swipes_swipes_Other.md) |
+|                Use-Case                | Event Types/Parsers                                                                                | MITRE TTP                  | Content                                                                                        |
+|:--------------------------------------:| -------------------------------------------------------------------------------------------------- | -------------------------- | ---------------------------------------------------------------------------------------------- |
+| [Other](../../../UseCases/uc_other.md) |  physical-access<br> ↳ [s-swipes-badge-access](Parsers/parserContent_s-swipes-badge-access.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](Rules_Models/r_m_swipes_swipes_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

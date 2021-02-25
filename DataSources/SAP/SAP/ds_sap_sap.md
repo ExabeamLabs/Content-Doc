@@ -6,9 +6,9 @@ Product: SAP
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   1    |     1      |      1      |    1    |
 
-|                Use-Case                | Activity Types                             | Event Types/Parsers                                                                                | MITRE TTP                  | Content                                                        |
-|:--------------------------------------:| ------------------------------------------ | -------------------------------------------------------------------------------------------------- | -------------------------- | -------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) | <ul><li>Critical System Activity</li></ul> |  file-download<br> ↳ [cef-sap-app-activity-3](Parsers/parserContent_cef-sap-app-activity-3.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_sap_sap_Other.md) |
+|                Use-Case                | Event Types/Parsers                                                                                | MITRE TTP                  | Content                                                        |
+|:--------------------------------------:| -------------------------------------------------------------------------------------------------- | -------------------------- | -------------------------------------------------------------- |
+| [Other](../../../UseCases/uc_other.md) |  file-download<br> ↳ [cef-sap-app-activity-3](Parsers/parserContent_cef-sap-app-activity-3.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_sap_sap_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
