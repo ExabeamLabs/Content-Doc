@@ -12,7 +12,7 @@ Name = json-s-proofpoint-email-alert-2
     """"classification":"({alert_name}[^"]+)""",
     """"threatType":"({alert_type}[^"]+)""",
   ]
-  DupFields = [ "attachment->file_name", "sender->external_address", "recipient->user_email" ]
+  DupFields = [ "attachment->file_name", "sender->external_address", "recipient->user_email", "threat_url->threat_url_at" ]
 
 }
 ```
