@@ -9,6 +9,7 @@ Name = cef-netskope-alert
   TimeFormat = "epoch_sec"
   Conditions = [ """CEF:""", """|Skyformation|""", """"alert_type":"""", """destinationServiceName=Netskope""", """"ns_detection_name":"""",  ]
   Fields = [
+    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """"timestamp":({time}\d+)""",
     """"user":"(({user_email}[^@"\s]+@[^@"\s]+)|(({domain}[^"@\\\/\s]+)[\\\/]+)?({user}[^"@\\\/\s]+))"""",
     """"app":"({process}[^"]+)""",
@@ -21,6 +22,11 @@ Name = cef-netskope-alert
     """"malware_scanner_result":"({outcome}[^"]+)""",
     """"local_md5":"({md5}[^"]+)""",
     """"malware_severity":"({alert_severity}[^"]+)""",
+    """"user":"({from_user_at}[^"]+)"""",
+    """"file_path":"({file_path_at}[^"]+)"""",
+    """"shared_with":\[({shared_with_at}[^\]]+)\]""",
+    """"local_sha256":"({sha_256_at}[^"]+)"""",
+    """"site":"({site_at}[^"]+)""""
   ]
   DupFields = ["process->process_name"]
 }
