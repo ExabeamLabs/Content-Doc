@@ -12,7 +12,13 @@ Name = cef-netskope-dlp-alert-1
     """"alert_type":"({alert_type}[^"]+)""",
     """"policy":"({additional_info}[^"]+)""",
     """"action":"({outcome}[^"]+)""",
-    """"*hostname"*:"*({src_host}[^"]+)""""
+    """"*hostname"*:"*({src_host}[^"]+)"""",
+    """"owner":"({file_owner_at}[^"]+)"""",
+    """"from_user":"({from_user_at}[^"]+)"""",
+    """"dlp_file":"({file_path_at}[^"]+)"""",
+    """"shared_with":"("shared_with_at}[^"]+)"""",
+    """"sha256":"({sha256_at}[^"]+)"""",
+    """"site":"({site_at}[^"]+)""""
   ]
 }
 ```
