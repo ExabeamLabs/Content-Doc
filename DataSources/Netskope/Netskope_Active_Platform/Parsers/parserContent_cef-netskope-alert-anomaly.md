@@ -22,12 +22,9 @@ Name = cef-netskope-alert-anomaly
     """"url":"({malware_url}[^"]+)""",
     """"risk_level":"({alert_severity}[^"]+)""",
     """"hostname":"({src_host}[^"]+)""",
-    """"from_user":"({sender}[^",]+)"""",
-    """"to_user":"({recipients}({recipient}[^"\s@;,]+@({external_domain}[^"\s@,]+))[^"]*)"""",
-    """"url":\s*"(?!\w+:\/+)({file_path}(({file_parent}[^",]*?)[\/]+)?({file_name}[^"\/,]+?(\.({file_ext}[^"\/,\.]+))?)?)\s*"""",
-    """"sha256":"({sha256}[^",]+)"""",
-    """"site":"({app}[^",]+)""""
+    """"user":"({from_user_at}[^"]+)"""",
+    """"site":"({site_at}[^",]+)""""
   ]
-  DupFields = ["process->process_name"]
+  DupFields = ["process->process_name","site_at->app"]
 }
 ```
