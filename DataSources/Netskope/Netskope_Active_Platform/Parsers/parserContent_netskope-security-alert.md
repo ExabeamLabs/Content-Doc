@@ -28,6 +28,12 @@ Name = netskope-security-alert
     """"page":\s*"({web_domain}[^"//]+)""",
     """"dst_location":\s*"(N/A|({location}[^"]+))""",
     """"app":\s*"({app}[^"]+)""",
+    """"md5":\s*"({md5}[^"]+)"""",
+    """"owner":\s*"({file_owner_at}[^"]+)"""",
+    """"from_user":\s*"({from_user_at}[^"]+)"""",
+    """"file_path":\s*"({file_path_at}[^"]+)"""",
+    """"shared_with":\s*"({shared_with_at}[^"]+)"""",
+    """"site":\s*"({site_at}[^"]+)""""
   ]
 }
 ```
