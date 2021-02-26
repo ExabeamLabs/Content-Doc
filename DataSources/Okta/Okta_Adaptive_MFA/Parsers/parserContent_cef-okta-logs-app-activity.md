@@ -22,7 +22,7 @@ Name = cef-okta-logs-app-activity
     """logInfo.request.ipChain.ip="({src_ip}[A-Fa-f\d\.:]+)""",
     """"client":[^\]]*?"ipAddress"\s*:\s*"({src_ip}[^"]+)""",
     """"outcome":[^\]]*?"result"\s*:\s*"(FAILURE|DENY)","reason":"({failure_reason}[^"]+)""",
-    """"outcome":[^\]]*?"result"\s*:\s*"({outcome}[^"]+)"""",
+    """outcome":[^\]]*?"result":"?(null|({outcome_result_at}[^\"]+))"?,"reason":"?(null|({outcome_reason_at}[^"]+))""",    
     """"target(s)?"+:[^\}\]]+?"+displayName"+\s*:\s*"+((?i)unknown|({object}[^"]+[^\s]))"""",
     """"target":[^}\]]+?"type"\s*:\s*"({object_type}[^"]+)"""",
     """({app}(?i)Okta)""",

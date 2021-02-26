@@ -12,12 +12,8 @@ Name = cef-cisco-dns-response-sk4
   Fields = [
     """exabeam_host=({host}\S+)""",
     """"timestamp":"({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-    """"mostGranularIdentity":"({user}[^",\(\)\\\s\-\.]+)"""",
-    """"mostGranularIdentity":"({user_lastname}[^",]+),\s*({user_firstname}[^",]+?)\s*(\(({domain}[^\(\)]+)\))?\s*\((({user_email}[^@"]+@[^@"]+)|({user}[^\(\)]+))\)""",
-    """"mostGranularIdentity":"(({user_fullname}[\w.-]+(\s+[\w-]+)+)|({user}\w+))(\s+\((({user_email}[^@"]+@[^@"]+)|({=user}\S+))\))?"""",
-    """"identities":\["(({user_fullname}[\w.-]+(\s+[\w-]+)+)|({user}\w+))(\s+\(({user_email}[^@"]+@[^@"]+)\))"\,"({host}[\w\-\.]+)"""",
-    """identities":\["*({identities}[^=]+?)"*\]""",
-    """"identities":\["*({host}[\w\-.]+)"""",
+    """"identities":\["(({user}\w+)|({host}[\w\-\.]+))"""",
+    """"identities":\["({user_fullname}[^\("]+?)(?:\s*\(\w+\)\s*)?(\s+\(({user_email}[^@"]+@[^@"]+)\))",("({host}[\w\-\.]+)")?"""
     """"internalIp":"({src_ip}[a-fA-F:\d.]+)"""",
     """"action":"({outcome}[^"]+)"""",
     """"queryType":"[^"]*\(({query_type}[^"\)]+)\)"""",
@@ -25,8 +21,6 @@ Name = cef-cisco-dns-response-sk4
     """"domain":"(|({query}[^"]*?\.({top_query}\w+\.(?i)(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))))\.?"""",
     """"domain":"({query}[^"]*?)\.?"""",
     """"categories":\s*\[({categories}"*({category}[^"\],]+)[^\]]*)\]""",
-    """\Wsuser=(anonymous|({user_email}[^\s@]+@[^\s@]+|({user}[^\s@]+?)))(\s+\w+=|\s*$)""",
-    """"identities":\["({dest_host}[\w\-]+)[^"]*","({user_fullname}[^\("]+?)\s*\(({user_email}({user}[^@",]+)@[^"\),]+)\)""",
     """"externalIp"+:"+({dest_ip}[^"]+)"""
   ]
 }
