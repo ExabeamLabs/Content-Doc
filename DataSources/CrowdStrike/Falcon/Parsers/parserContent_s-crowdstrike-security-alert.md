@@ -18,7 +18,7 @@ Name = s-crowdstrike-security-alert
     """({additional_info_1}"DocumentsAccessed":\s*[^\]]+\]).*?({additional_info_2}"ExecutablesWritten":\s*[^\]]+\])""",
     """"FileName":\s*"(|({process_name}[^"]+))"""",
     """"FilePath":\s*"(|({file_path}[^"]+))"""",
-    """"CommandLine":\s*"(\\")?(|({command_line}[^"]+?))\s*"""",
+    """"CommandLine"+:\s*"+\\*"*({command_line}.+?)\\*\s*"+,""",
     """"SensorId":\s*"({sensor_id}[^"]+)""",
     """"ComputerName":\s*"({src_host}[^"]+)""",
     """"LocalIP":\s*"({src_ip}[^"]+)""",
