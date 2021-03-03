@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-crowdstrike-app-ransomware
-  DataType = "alert"
+  DataType = "file-read"
   Conditions = [ """"event_simpleName":"RansomwareOpenFile"""", """|Skyformation|""" ]
   Fields = ${CrowdStrikeParserTemplates.cef-crowdstrike-app-activity-temp.Fields} [
   """"id":"({alert_id}[\w-]+?)"""",

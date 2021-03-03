@@ -10,9 +10,10 @@ Name = unix-auditd-login
   Conditions = [ """type=USER_AUTH""","""PAM:authentication""","""terminal=ssh""" ]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
+    """({time}\d{2}\/\d{2}\/\d{4}\s+\d{2}:\d{2}:\d{2})""",
     """msg=audit\(({time}\d{10})""",
     """\saddr=(?:\?|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[^\s]+))\s""",
-    """\sacct="({user}[^"]+)"""",
+    """acct="*({user}[^"=]+?)\s*(\w+=|")""", 
     """\sres=({outcome}[^']+)\'""",
     """\sses=({session_id}\d+)""",
     """({event_code}ssh)"""

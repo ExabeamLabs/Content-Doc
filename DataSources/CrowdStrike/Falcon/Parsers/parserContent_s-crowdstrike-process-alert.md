@@ -20,7 +20,7 @@ Name = s-crowdstrike-process-alert
     """"CommandLine":"({process}({directory}[^\s]+)\\\\({process_name}[^\s]+))""",
     """"FileName":\s*"({process_name}[^"]+)"""",
     """"FilePath":\s*"({file_path}[^"]+)"""",
-    """"CommandLine":\s*"({command_line}.+?)",""",
+    """"CommandLine"+:\s*"+\\*"*({command_line}.+?)\\*\s*"+,""",
     """"SensorId":\s*"({sensor_id}[^"]+)"""",
     """"ComputerName":\s*"({src_host}[^"]+)"""",
     """"LocalIP":\s*"({src_ip}[^"]+)"""",
