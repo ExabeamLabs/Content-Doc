@@ -11,7 +11,7 @@ Name = raw-4624-8
     Fields = [
       """({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d)""",
       """({event_name}An account was successfully logged on)""",
-      """ComputerName=({host}[^\s]+)""",
+      """ComputerName=({host}({dest_host}[\w\-]+)[^\s]*)\s""",
       """({event_code}4624)""",
       """Logon Type(:|=)\s*({logon_type}[\d]+)""",
       """New Logon[^\}]*?Account Name(:|=)\s*(-|SYSTEM|({user}[^\s]+?))[\s;]*Account Domain(:|=)""",
@@ -23,6 +23,6 @@ Name = raw-4624-8
       """Logon ID(:|=)\s*({logon_id}[^\s;]+)[\s;]*(Linked Logon|Logon GUID)""",
       """New Logon(:|=)[\s;]*Security ID(:|=)\s*(NT AUTHORITY\\+SYSTEM|({user_sid}[^;:=]+?))(\s+|;)Account Name(:|=)"""
     ]
-    DupFields = ["host->dest_host", "directory->process_directory"]
+    DupFields = ["directory->process_directory"]
   }
 ```
