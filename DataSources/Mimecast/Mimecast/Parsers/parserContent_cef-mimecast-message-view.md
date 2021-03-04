@@ -9,13 +9,13 @@ Name = cef-mimecast-message-view
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """CEF:""", """|SkyFormation Cloud Apps Security|""", """destinationServiceName=Mimecast Email Security dproc=Archive Message View Logs""", """"viewer":"""", """"discoveryCase":""", """"contentViewed":"""]
   Fields = [
-    """({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+Z)\s+({host}[\w\-.]+)\s+Skyformation""",
+    """({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+Z)\s+[\w\-.]+\s+Skyformation""",
     """"viewer":"({user_email}[^"]+?)"""",
     """({app}Mimecast Email Security)""",
     """({activity}Archive Message View Logs)""",
     """"subject":"({object}[^"]+?)"""",
     """"to":"({target}[^"]+?)"""",
-    """"from":"({source}[^"]+?)"""",
+    """"from":"({log_source}[^"]+?)"""",
     """"({result}discoveryCase":\w+)""" 
     """"source":"({resource}[^"]+?)"""",
     """"({additional_info}contentViewed.+?\})"""

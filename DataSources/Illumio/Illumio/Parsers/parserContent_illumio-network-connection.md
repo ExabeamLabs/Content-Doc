@@ -3,6 +3,7 @@
 {
 Name = illumio-network-connection
   Vendor = Illumio
+  Product = Illumio
   Lms = Splunk
   DataType = "network-connection"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

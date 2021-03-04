@@ -12,7 +12,7 @@ Name = cisco-ssh-login
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=([^=]+@\s*)?({host}[\w.\-]+)""",
     """({event_code}%SSH-[^:]+)""",
-    """SSH2_USERAUTH:\s*User '(|({user}[^']+))' authentication for SSH2 Session from ({src_ip}[A-Fa-f:\d.]+)""",
+    """SSH2_USERAUTH:\s*User '(|({user}[^\s']+)) authentication for SSH2 Session from ({src_ip}[A-Fa-f:\d.]+)""",
     """({outcome}Succeeded|Failed)""",
   ]
 }

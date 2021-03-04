@@ -4,11 +4,11 @@ Product: Galaxy
 ---------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   1    |     1      |      1      |    1    |
+|   1   |   1    |     1      |      1      |    1    |
 
 |                Use-Case                | Event Types/Parsers                                                                                                                                                                                                                         | MITRE TTP                  | Content                                                                                        |
 |:--------------------------------------:| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ---------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) |  failed-physical-access<br> ↳ [galaxy-physical-badge-access](Parsers/parserContent_galaxy-physical-badge-access.md)<br><br> physical-access<br> ↳ [galaxy-physical-badge-access](Parsers/parserContent_galaxy-physical-badge-access.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](Rules_Models/r_m_galaxy_galaxy_Other.md) |
+| [Other](../../../UseCases/uc_other.md) |  failed-physical-access<br> ↳ [galaxy-physical-badge-access](Parsers/parserContent_galaxy-physical-badge-access.md)<br><br> physical-access<br> ↳ [galaxy-physical-badge-access](Parsers/parserContent_galaxy-physical-badge-access.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](Rules_Models/r_m_galaxy_galaxy_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

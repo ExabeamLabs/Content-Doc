@@ -4,11 +4,11 @@ Product: McAfee Advanced Threat Defense
 ---------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  19   |   11   |     2      |      1      |    1    |
+|  13   |   7    |     2      |      1      |    1    |
 
-|                Use-Case                | Event Types/Parsers                                                                                                                                                            | MITRE TTP                                                                    | Content                                                                                                                  |
-|:--------------------------------------:| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| [Other](../../../UseCases/uc_other.md) |  dlp-alert<br> ↳ [mcafee-hbss-dlp-alert](Parsers/parserContent_mcafee-hbss-dlp-alert.md)<br> ↳ [mcafee-hbss-dlp-alert-2](Parsers/parserContent_mcafee-hbss-dlp-alert-2.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1204 - User Execution<br> | [<ul><li>19 Rules</li></ul><ul><li>11 Models</li></ul>](Rules_Models/r_m_mcafee_mcafee_advanced_threat_defense_Other.md) |
+|                Use-Case                | Event Types/Parsers                                                                                                                                                            | MITRE TTP                                                                    | Content                                                                                                                 |
+|:--------------------------------------:| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| [Other](../../../UseCases/uc_other.md) |  dlp-alert<br> ↳ [mcafee-hbss-dlp-alert](Parsers/parserContent_mcafee-hbss-dlp-alert.md)<br> ↳ [mcafee-hbss-dlp-alert-2](Parsers/parserContent_mcafee-hbss-dlp-alert-2.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1204 - User Execution<br> | [<ul><li>13 Rules</li></ul><ul><li>7 Models</li></ul>](Rules_Models/r_m_mcafee_mcafee_advanced_threat_defense_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

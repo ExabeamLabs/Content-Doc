@@ -4,11 +4,11 @@ Product: FortiAuthenticator
 ---------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  15   |   4    |     3      |      2      |    2    |
+|  14   |   4    |     3      |      2      |    2    |
 
 |                Use-Case                | Event Types/Parsers                                                                                                                                                                                                                                                          | MITRE TTP                                                                       | Content                                                                                                       |
 |:--------------------------------------:| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) |  authentication-failed<br> ↳ [fortiauthenticator-auth-successful](Parsers/parserContent_fortiauthenticator-auth-successful.md)<br><br> authentication-successful<br> ↳ [fortiauthenticator-auth-successful](Parsers/parserContent_fortiauthenticator-auth-successful.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1188 - T1188<br> | [<ul><li>15 Rules</li></ul><ul><li>4 Models</li></ul>](Rules_Models/r_m_fortinet_fortiauthenticator_Other.md) |
+| [Other](../../../UseCases/uc_other.md) |  authentication-failed<br> ↳ [fortiauthenticator-auth-successful](Parsers/parserContent_fortiauthenticator-auth-successful.md)<br><br> authentication-successful<br> ↳ [fortiauthenticator-auth-successful](Parsers/parserContent_fortiauthenticator-auth-successful.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1188 - T1188<br> | [<ul><li>14 Rules</li></ul><ul><li>4 Models</li></ul>](Rules_Models/r_m_fortinet_fortiauthenticator_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

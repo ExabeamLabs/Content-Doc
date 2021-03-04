@@ -10,12 +10,14 @@ Name = xml-4801
   Conditions = [ "The workstation was unlocked", "<EventID>4801</EventID>" ]
   Fields = [
     """({event_name}The workstation was unlocked)""",
-    """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\d\d\d\d\d\d\d)Z'\/>""",
+    """<TimeCreated SystemTime(\\)?='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\d\d\d\d\d\d\d)Z'\/>""",
     """<Computer>({host}[^<]+)<""",
-    """({event_code}4801)""",
-    """Account Name:\s*({user}.+?)\s*Account Domain""",
-    """Account Domain:\s*({domain}.+?)\s*Logon ID""",
-    """Logon ID:\s+({logon_id}[^\s]+)\s+Session""",
+    """<EventID>({event_code}4801)""",
+    """Data Name(\\)?='TargetUserName'>({user}[^<]+)""",
+    """Data Name(\\)?='TargetDomainName'>({domain}[^<]+)""",
+    """Data Name(\\)?='TargetLogonId'>({logon_id}[^<]+)""",
+    """Data Name(\\)?='TargetUserSid'>({user_sid}[^<]+)""",
+
   ]
   DupFields = [ "host->dest_host" ]
 }

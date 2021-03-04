@@ -14,6 +14,6 @@ Name = rdirectory-account-deleted
 	"""Credentials:({account_domain}[^\\]+)\\+([^\s.]+\.)*({account}[^\s.]+)""",
 	"""Delete:({target_user}.+?)\s+\(({target_domain}[^\/)]+)"""
   ]
-  DupFields = [ "host->dest_host" , "target_user->account_name"]
+  DupFields = [ "host->dest_host" ]
 }
 ```

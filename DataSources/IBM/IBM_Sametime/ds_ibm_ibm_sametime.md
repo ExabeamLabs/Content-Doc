@@ -4,11 +4,11 @@ Product: IBM Sametime
 ---------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  33   |   14   |     3      |      2      |    2    |
+|  32   |   14   |     3      |      2      |    2    |
 
 |                Use-Case                | Event Types/Parsers                                                                                                                                                               | MITRE TTP                                                                       | Content                                                                                             |
 |:--------------------------------------:| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) |  app-login<br> ↳ [ibm-app-login](Parsers/parserContent_ibm-app-login.md)<br><br> failed-app-login<br> ↳ [ibm-failed-app-login](Parsers/parserContent_ibm-failed-app-login.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1188 - T1188<br> | [<ul><li>33 Rules</li></ul><ul><li>14 Models</li></ul>](Rules_Models/r_m_ibm_ibm_sametime_Other.md) |
+| [Other](../../../UseCases/uc_other.md) |  app-login<br> ↳ [ibm-app-login](Parsers/parserContent_ibm-app-login.md)<br><br> failed-app-login<br> ↳ [ibm-failed-app-login](Parsers/parserContent_ibm-failed-app-login.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1188 - T1188<br> | [<ul><li>32 Rules</li></ul><ul><li>14 Models</li></ul>](Rules_Models/r_m_ibm_ibm_sametime_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

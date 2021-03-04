@@ -6,9 +6,10 @@ Product: honeywell siama
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   2   |   1    |     1      |      1      |    1    |
 
-|                Use-Case                | Event Types/Parsers                                                                                                            | MITRE TTP                  | Content                                                                                                    |
-|:--------------------------------------:| ------------------------------------------------------------------------------------------------------------------------------ | -------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) |  physical-access<br> ↳ [cef-honeywell-physical-badge-access](Parsers/parserContent_cef-honeywell-physical-badge-access.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](Rules_Models/r_m_honeywell_honeywell_siama_Other.md) |
+|                                  Use-Case                                  | Event Types/Parsers                                                                                                            | MITRE TTP                  | Content                                                                                                                      |
+|:--------------------------------------------------------------------------:| ------------------------------------------------------------------------------------------------------------------------------ | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  physical-access<br> ↳ [cef-honeywell-physical-badge-access](Parsers/parserContent_cef-honeywell-physical-badge-access.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](Rules_Models/r_m_honeywell_honeywell_siama_Compromised_Credentials.md) |
+|        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  physical-access<br> ↳ [cef-honeywell-physical-badge-access](Parsers/parserContent_cef-honeywell-physical-badge-access.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_honeywell_honeywell_siama_Lateral_Movement.md)                                  |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

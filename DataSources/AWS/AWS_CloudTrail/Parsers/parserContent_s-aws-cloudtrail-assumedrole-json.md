@@ -2,7 +2,6 @@
 ```Java
 {
 Name = s-aws-cloudtrail-assumedrole-json
-  DataType = "app-activity"
   Conditions = [  "\"AwsApiCall\"", "\"eventName\"", "\"awsRegion\"", "type=AssumedRole" ]
   Fields = ${AWSParserTemplates.s-aws-cloudtrail-activity-json.Fields}[
     """\Wsuser=[^=]*?({user}[^\\\/@=]+)@[^=]+?(\s+\w+=|\s*$)""",

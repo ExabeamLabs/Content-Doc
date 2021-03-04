@@ -17,8 +17,7 @@ Name = crowdstrike-file-write-1
       """"aid":"({aid}[^"]+)""",
       """"TargetFileName":"({file_path}[^"]+)""",
       """"TargetFileName":"({file_parent}[^"]*[\\\/]+)({file_name}[^\\\/"]+)""",
-      """({file_type}Directory)""",
-      """suser=(system|({user}[^\s]+))"""
+      """({file_type}Directory)"""
     ]
   }
 ```

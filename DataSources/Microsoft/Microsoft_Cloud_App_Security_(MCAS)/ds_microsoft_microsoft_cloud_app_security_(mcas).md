@@ -4,11 +4,11 @@ Product: Microsoft Cloud App Security (MCAS)
 --------------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  26   |   11   |     5      |      1      |    1    |
+|  18   |   9    |     4      |      1      |    1    |
 
-|                Use-Case                | Event Types/Parsers                                                                                         | MITRE TTP                                                                                                                               | Content                                                                                                                          |
-|:--------------------------------------:| ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) |  security-alert<br> ↳ [q-o365-siem-security-alert](Parsers/parserContent_q-o365-siem-security-alert.md)<br> | T1066 - T1066<br>T1068 - Exploitation for Privilege Escalation<br>T1078 - Valid Accounts<br>T1086 - T1086<br>T1204 - User Execution<br> | [<ul><li>26 Rules</li></ul><ul><li>11 Models</li></ul>](Rules_Models/r_m_microsoft_microsoft_cloud_app_security_(mcas)_Other.md) |
+|                Use-Case                | Event Types/Parsers                                                                                         | MITRE TTP                                                                                                              | Content                                                                                                                         |
+|:--------------------------------------:| ----------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| [Other](../../../UseCases/uc_other.md) |  security-alert<br> ↳ [q-o365-siem-security-alert](Parsers/parserContent_q-o365-siem-security-alert.md)<br> | T1066 - T1066<br>T1068 - Exploitation for Privilege Escalation<br>T1078 - Valid Accounts<br>T1204 - User Execution<br> | [<ul><li>18 Rules</li></ul><ul><li>9 Models</li></ul>](Rules_Models/r_m_microsoft_microsoft_cloud_app_security_(mcas)_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

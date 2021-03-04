@@ -10,7 +10,6 @@ Name = cef-mimecast-web-activity
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """dproc=TTP URL Logs""", """"action":"""" ]
   Fields = [
-    """\s({host}[\w\-.]+)\s+Skyformation""",
     """"date":"({time}\d+-\d+-\d+T\d+:\d+:\d+)""",
     """"userEmailAddress":"({user_email}[^\s@"]+@[^\s@"]+)""",
     """"action":"({action}[^"]+)""",

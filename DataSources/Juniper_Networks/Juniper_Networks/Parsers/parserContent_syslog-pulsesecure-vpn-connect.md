@@ -38,6 +38,5 @@ Name = syslog-pulsesecure-vpn-connect
     """\sduration=({session_duration}\d+)""",
     """\Wmsg="({additional_info}[^"]+)""",
   ]
-  DupFields = ["user->account"]
 }
 ```

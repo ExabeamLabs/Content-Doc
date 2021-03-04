@@ -22,9 +22,8 @@ Name = logstash-4624
       """"detailed_authentication_information-LogonProcess":"\s*({auth_process}[^"]+)\s*""""
       """"detailed_authentication_information-AuthenticationPackage":"\s*({auth_package}[^"]+)\s*""""
       """"new_logon-LogonID":"\s*({logon_id}[^"]+)\s*""""
-      """"new_logon-SecurityID":"\s*({user_sid}[^"]+)\s*"""",
-      """"cmpny.source.ip":"({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
+      """"new_logon-SecurityID":"\s*({user_sid}[^"]+)\s*""""
     ]
-    DupFields = ["src_host_windows->dest_host", "user->account"]
+    DupFields = ["src_host_windows->dest_host"]
   }
 ```

@@ -7,7 +7,7 @@ Name = cef-meraki-network-alert
   Lms = ArcSight
   DataType = "network-alert"
   TimeFormat = "epoch"
-  Conditions = [ """CEF:""", """|SkyFormation Cloud Apps Security|""", """|security-threat-detected|""", """NETWORK""", """Cisco Meraki""" ]
+  Conditions = [ """CEF:""", """|SkyFormation Cloud Apps Security|""", """|security-threat-detected|""", """NETWORK""" ]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """\Wend=({time}\d+)""",

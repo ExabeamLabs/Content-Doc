@@ -4,11 +4,11 @@ Product: RSA DLP
 ----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  52   |   26   |     3      |      2      |    2    |
+|  42   |   19   |     3      |      2      |    2    |
 
 |                Use-Case                | Event Types/Parsers                                                                                                                                                                | MITRE TTP                                                                                              | Content                                                                                        |
 |:--------------------------------------:| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) |  dlp-alert<br> ↳ [rsa-dlp-alert](Parsers/parserContent_rsa-dlp-alert.md)<br><br> dlp-email-alert-out<br> ↳ [rsa-dlp-email-alert](Parsers/parserContent_rsa-dlp-email-alert.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1078 - Valid Accounts<br>T1204 - User Execution<br> | [<ul><li>52 Rules</li></ul><ul><li>26 Models</li></ul>](Rules_Models/r_m_rsa_rsa_dlp_Other.md) |
+| [Other](../../../UseCases/uc_other.md) |  dlp-alert<br> ↳ [rsa-dlp-alert](Parsers/parserContent_rsa-dlp-alert.md)<br><br> dlp-email-alert-out<br> ↳ [rsa-dlp-email-alert](Parsers/parserContent_rsa-dlp-email-alert.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1078 - Valid Accounts<br>T1204 - User Execution<br> | [<ul><li>42 Rules</li></ul><ul><li>19 Models</li></ul>](Rules_Models/r_m_rsa_rsa_dlp_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

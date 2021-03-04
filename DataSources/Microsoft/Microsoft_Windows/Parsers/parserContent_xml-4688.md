@@ -11,7 +11,6 @@ Name = xml-4688
   Conditions = [ "<EventID>4688</EventID>", """<Data Name='SubjectUserSid'>""" ]
   Fields = [
     """SystemTime=\'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """({event_name}A new process has been created)""",
     """<Computer>({host}[^<]+)</Computer>""",
     """<EventID>({event_code}[^<]+)</EventID>""",
     """<Data Name='SubjectUserSid'>({user_sid}[^<]+?)</Data>""",
@@ -21,7 +20,7 @@ Name = xml-4688
     """<Data Name='NewProcessId'>({process_guid}[x\da-f]+)</Data>""",
     """<Data Name='NewProcessName'>({process}({directory}(?:[^<>]+)?[\\\/])?({process_name}[^\\\/<>]+))</Data>""",
     """<Data Name='NewProcessName'>({path}[^<]+?)</Data>""",
-    """<Data Name='CommandLine'>\s*({command_line}[^<]+?)\s*</Data>""",
+    """<Data Name='CommandLine'>({command_line}[^<]+?)</Data>""",
     """<Data Name='ProcessId'>({parent_process_guid}[x\da-f]+)</Data>""",
   ]
   DupFields = [ "host->dest_host","process_guid->pid","directory->process_directory" ]

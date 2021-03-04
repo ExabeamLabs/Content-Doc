@@ -15,7 +15,7 @@ Name = juniper-vpn-close
     """({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|[\w\-\.]+)\s*(Juniper|PulseSecure):""",
     """:\s*({time}\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})\s""",
     """- \[({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]\s+(?:({domain}\w+)\\)?({user}[^\(\[]+?)[\(\[]""",
-    """Closed connection to (?:({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w.\-]+))""",
+    """- Closed connection to (?:({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w.\-]+))""",
     """- Closed connection to \S+\s+port ({dest_port}\d+)""",
     """\stime="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\suser=({user}.+?)(\s+\w+=|\s*$)""",

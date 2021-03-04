@@ -9,6 +9,5 @@ Name = q-1102
     """\sComputer=({host}[\w.\-]+)""",
     """\sTimeGenerated=({time}\d+)\s+"""
   ]
-  DupFields = [ "host->dest_host" ]
 }
 ```

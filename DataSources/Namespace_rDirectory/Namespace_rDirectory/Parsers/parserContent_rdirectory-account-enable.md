@@ -14,6 +14,5 @@ Name = rdirectory-account-enable
 	"""Credentials:({account_domain}[^\\]+)\\+([^\s.]+\.)*({account}[^\s.]+)""",
 	"""account:({target_user}.+?)\s+\(({target_domain}[^\/)]+)"""
   ]
-  DupFields = ["host->src_host"]
 }
 ```

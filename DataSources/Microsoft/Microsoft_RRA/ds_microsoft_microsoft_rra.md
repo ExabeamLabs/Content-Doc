@@ -4,11 +4,11 @@ Product: Microsoft RRA
 ----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  12   |   5    |     3      |      2      |    2    |
+|  11   |   4    |     3      |      2      |    2    |
 
 |                Use-Case                | Event Types/Parsers                                                                                                                                                                                                              | MITRE TTP                                                                       | Content                                                                                                   |
 |:--------------------------------------:| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) |  authentication-successful<br> ↳ [microsoft-rra-auth-successful](Parsers/parserContent_microsoft-rra-auth-successful.md)<br><br> vpn-login<br> ↳ [microsoft-rra-vpn-login](Parsers/parserContent_microsoft-rra-vpn-login.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1188 - T1188<br> | [<ul><li>12 Rules</li></ul><ul><li>5 Models</li></ul>](Rules_Models/r_m_microsoft_microsoft_rra_Other.md) |
+| [Other](../../../UseCases/uc_other.md) |  authentication-successful<br> ↳ [microsoft-rra-auth-successful](Parsers/parserContent_microsoft-rra-auth-successful.md)<br><br> vpn-login<br> ↳ [microsoft-rra-vpn-login](Parsers/parserContent_microsoft-rra-vpn-login.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1188 - T1188<br> | [<ul><li>11 Rules</li></ul><ul><li>4 Models</li></ul>](Rules_Models/r_m_microsoft_microsoft_rra_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
