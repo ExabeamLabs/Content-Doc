@@ -16,6 +16,6 @@ Name = crowdstrike-service-created
     """"event_simpleName":"({event_name}[^"]+)""",
     """"UserName":"({user}[^"\s]+)"""",
   ]
-  DupFields = [ "directory->process_directory" , "host->dest_host"]
+  DupFields = [ "directory->process_directory" ]
 }
 ```

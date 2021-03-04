@@ -13,8 +13,6 @@ Name = graylog-ras-vpn-start
     """"@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     """ openvpn\[\d+\]:\s*({user}[^\s\/]+)\/({src_ip}[A-Fa-f:\d.]+):({src_port}\d+)""",
     """IPv4=({src_translated_ip}[A-Fa-f:\d.]+)""",
-    """hostname":"({host}[^"]+)""", 
   ]
-  DupFields = ["user->account"]
 }
 ```

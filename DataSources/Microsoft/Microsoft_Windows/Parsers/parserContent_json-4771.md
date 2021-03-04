@@ -7,12 +7,12 @@ Name = json-4771
   Lms = Direct
   DataType = "windows-4771"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [  "4771", """"Kerberos pre-authentication failed.""", """"TicketOptions""" ]
+  Conditions = [  "4771", """"Kerberos pre-authentication failed.""", """Category""", """TicketOptions""" ]
   Fields = [
     """({event_name}Kerberos pre-authentication failed)""",
     """"EventTime":\s*"({time}\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})"""",
     """"TimeGenerated":"({time}[^"]*)""",
-    """"(Hostname|MachineName|computer_name)":"({host}[^."]*)""",
+    """"(Hostname|MachineName)":"({host}[^."]*)""",
     """({event_code}4771)""",
     """"(TargetSid|TargetDomainName)":"({user_sid}[^"]*)""",
     """"TargetUserName":"({user}[^"]*)""",

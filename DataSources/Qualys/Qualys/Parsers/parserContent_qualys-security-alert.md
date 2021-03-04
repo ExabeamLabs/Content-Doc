@@ -3,6 +3,7 @@
 {
 Name = qualys-security-alert
   Vendor = Qualys
+  Product = Qualys
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

@@ -3,7 +3,6 @@
 {
 Name = cef-unix-sudo
     Vendor = Unix
-    Product = Unix
     Lms = ArcSight
     DataType = "unix-account-switch"
     TimeFormat = "epoch"
@@ -16,8 +15,8 @@ Name = cef-unix-sudo
       """\sdst=({dest_ip}\S+)(\s+\w+=|\s*$)""",
       """\ssuser=(|({user}.+?))(\s+\w+=|\s*$)""",
       """\ssuid=(|({user_uid}.+?))(\s+\w+=|\s*$)""",
-      """\sfname=((/usr)?/bin/)?su(\s+((-\w*[csgG]\s+("([^"\\]|\\\\|\\")+"|'.+?'|\S+))|-\w+|--(session-command|command|group|supp-group|shell)\s+("([^"\\]|\\\\|\\")+"|'.+?'|\S+)|--\w+|-))*\s+(?!-+)["']?({account}\S+)["']?(\s+\w+=|\s*$)""",
       """\sduser=(|({account}.+?))(\s+\w+=|\s*$)""",
+      """\sfname=((/usr)?/bin/)?su(\s+((-\w*[csgG]\s+("([^"\\]|\\\\|\\")+"|'.+?'|\S+))|-\w+|--(session-command|command|group|supp-group|shell)\s+("([^"\\]|\\\\|\\")+"|'.+?'|\S+)|--\w+|-))*\s+(?!-+)["']?({account}\S+)["']?(\s+\w+=|\s*$)""",
       """({event_code}sudo)"""
     ]
   }

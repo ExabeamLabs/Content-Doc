@@ -20,7 +20,6 @@ Name = s-duo-auth-json
     """"result"\s*:\s*"({outcome}[^"]+)"""",
     """"reason"\s*:\s*"({failure_reason}[^"]+)"""",
     """"new_enrollment"\s*:\s*({new_enrollment}true|false)""",
-    """"*integration"*:\s*"*({service}[^"]+)"""
   ]
 }
 ```

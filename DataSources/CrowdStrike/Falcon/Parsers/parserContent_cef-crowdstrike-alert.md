@@ -11,7 +11,6 @@ Name = cef-crowdstrike-alert
     Fields = [ 
       """exabeam_host=({host}[\w\-.]+)""",
       """\srt=({time}\d+)""",
-      """({host}[\w.\-]+) CEF:""",
       """\s({host}[^\s]+)\s+CrowdStrike Falcon""",
       """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sdvchost=({host}[^\s]+)""",

@@ -20,6 +20,5 @@ Name = syslog-json-4720
 	      """"TargetUserName":"({account_name}[^"]+)""",
 	      """"TargetDomainName":"({account_domain}[^"]+)"""
 	]
-    DupFields = ["host->dest_host"]
 }
 ```

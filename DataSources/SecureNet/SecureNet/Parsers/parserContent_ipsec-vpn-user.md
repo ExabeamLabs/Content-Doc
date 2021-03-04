@@ -15,6 +15,5 @@ Name = ipsec-vpn-user
     """\Wsrcip="({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
     """\Wvirtual_ip="({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""""
   ]
-  DupFields = ["user->account"]
 }
 ```

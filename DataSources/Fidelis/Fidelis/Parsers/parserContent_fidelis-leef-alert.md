@@ -27,7 +27,6 @@ Name = fidelis-leef-alert
        """usrName=(?:(<n\/a>)|({user_email}.+?))(\s+\w+=|\s*$)""",
        """fname=(?:|(<n\/a>)|({process_name}.+?))\s+(\w+=|\s*$)"""
           ]
-  DupFields = ["host->dest_host"]
   SOAR {
     IncidentType = "malware"
     DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->malwareName", "alert_type->malwareCategory", "alert_severity->sourceSeverity", "src_ip->malwareVictimHost", "malware_url->malwareAttackerFile", "dest_ip->malwareAttackerIp"]

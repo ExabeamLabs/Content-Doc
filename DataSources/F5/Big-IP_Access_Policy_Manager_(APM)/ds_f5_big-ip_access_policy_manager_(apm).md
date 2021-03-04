@@ -4,11 +4,11 @@ Product: Big-IP Access Policy Manager (APM)
 -------------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  15   |   4    |     3      |      2      |    2    |
+|  14   |   4    |     3      |      2      |    2    |
 
 |                Use-Case                | Event Types/Parsers                                                                                                                                                                                                  | MITRE TTP                                                                       | Content                                                                                                                 |
 |:--------------------------------------:| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) |  authentication-failed<br> ↳ [json-f5-auth-attempt](Parsers/parserContent_json-f5-auth-attempt.md)<br><br> authentication-successful<br> ↳ [json-f5-auth-attempt](Parsers/parserContent_json-f5-auth-attempt.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1188 - T1188<br> | [<ul><li>15 Rules</li></ul><ul><li>4 Models</li></ul>](Rules_Models/r_m_f5_big-ip_access_policy_manager_(apm)_Other.md) |
+| [Other](../../../UseCases/uc_other.md) |  authentication-failed<br> ↳ [json-f5-auth-attempt](Parsers/parserContent_json-f5-auth-attempt.md)<br><br> authentication-successful<br> ↳ [json-f5-auth-attempt](Parsers/parserContent_json-f5-auth-attempt.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1188 - T1188<br> | [<ul><li>14 Rules</li></ul><ul><li>4 Models</li></ul>](Rules_Models/r_m_f5_big-ip_access_policy_manager_(apm)_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

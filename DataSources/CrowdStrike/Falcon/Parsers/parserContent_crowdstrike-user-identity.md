@@ -16,9 +16,6 @@ Name = crowdstrike-user-identity
       """"aid":"({aid}[^"]+)""",
       """"event_simpleName":"({event_code}[^"]+)""",
       """"LogonType":"({logon_type}\d+)""",
-      """"UserName":"({user}[^"]+)""",
-      """"+AuthenticationPackage"+:"+({auth_package}[^"]+)"+,""",
-      """"+event_platform"+:"+({event_platform}[^"]+)"+"""
     ]
   }
 ```

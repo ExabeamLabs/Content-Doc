@@ -10,15 +10,12 @@ Name = syslog-vontu-dlp-alert
     Conditions = [ """incident_id="""", """, blocked="""", """, policy="""", """, recipients="""", """, sender="""", """, severity="""", """, subject="""" ]
     Fields = [
     """exabeam_host=({host}\S+)""",
-      """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
       """({host}[\w\.-]+)\s+incident_id""",
       """[\s,]incident_id="({alert_id}\d+)""",
       """[\s,]blocked="(None|({outcome}[^"]+?))"""",
       """[\s,]policy="({alert_name}[^"]+?)"""",
-      """[\s,]occurred_on="({occured_time}[^"]+?)"""",
-      """[\s,]reported_on="({reported_time}[^"]+?)"""",
       """[\s,]policy="({alert_type}[^"]+?)"""",
-      """[\s,]rules="\s*({alert_type}[^"]+?)"""",
+      """[\s,]rules="\s*({alert_type}[^\[\s][^"]+?)"""",
       """[\s,]severity="({alert_severity}[^"]+?)"""",
       """[\s,]sender="\s*({sender}[^\s"@,]+@[^\s"@,]+?)"""",
       """,\sendpoint_username="\s*(?:N\/A|(({domain}[^\\]+)\\+)?({user}[^"\\]+))""",

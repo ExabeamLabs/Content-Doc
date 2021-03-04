@@ -34,6 +34,6 @@ Name = syslog-juniper-vpn-realm-1
     """\sduration=({session_duration}\d+)""",
     """\smsg="({additional_info}[^"]+)""",
   ]
-  DupFields = [ "dest_ip->host" , "user->account"]
+  DupFields = [ "dest_ip->host" ]
 }
 ```

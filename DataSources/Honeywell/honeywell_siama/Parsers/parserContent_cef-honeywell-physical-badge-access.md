@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-honeywell-physical-badge-access
-  Vendor = Honeywell 
+  Vendor = Honeywell
   Product = honeywell siama
   Lms = Splunk
   DataType = "physical-access"

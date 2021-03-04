@@ -4,11 +4,11 @@ Product: Sophos UTM
 -------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  34   |   10   |     4      |      1      |    1    |
+|  32   |   10   |     4      |      1      |    1    |
 
 |                Use-Case                | Event Types/Parsers                                                                                                                                                                                                                                                                       | MITRE TTP                                                                                                     | Content                                                                                              |
 |:--------------------------------------:| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) |  <br> ↳ [sophos-proxy](Parsers/parserContent_sophos-proxy.md)<br> ↳ [sophos-proxy-2](Parsers/parserContent_sophos-proxy-2.md)<br><br> web-activity-denied<br> ↳ [sophos-proxy](Parsers/parserContent_sophos-proxy.md)<br> ↳ [sophos-proxy-1](Parsers/parserContent_sophos-proxy-1.md)<br> | T1071 - Application Layer Protocol<br>T1102 - Web Service<br>T1188 - T1188<br>T1189 - Drive-by Compromise<br> | [<ul><li>34 Rules</li></ul><ul><li>10 Models</li></ul>](Rules_Models/r_m_sophos_sophos_utm_Other.md) |
+| [Other](../../../UseCases/uc_other.md) |  <br> ↳ [sophos-proxy](Parsers/parserContent_sophos-proxy.md)<br> ↳ [sophos-proxy-2](Parsers/parserContent_sophos-proxy-2.md)<br><br> web-activity-denied<br> ↳ [sophos-proxy](Parsers/parserContent_sophos-proxy.md)<br> ↳ [sophos-proxy-1](Parsers/parserContent_sophos-proxy-1.md)<br> | T1071 - Application Layer Protocol<br>T1102 - Web Service<br>T1188 - T1188<br>T1189 - Drive-by Compromise<br> | [<ul><li>32 Rules</li></ul><ul><li>10 Models</li></ul>](Rules_Models/r_m_sophos_sophos_utm_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

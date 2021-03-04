@@ -13,9 +13,7 @@ Name = asa-nap-cef-vpn-start
       """\sdst=({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sduser=({user}.+?)\s+\w+=""",
       """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-      """\sdvchost=({host}[^\s]+)""",  
-      """\sad.Group=({realm}\w+)""",
+      """\sdvchost=({host}[^\s]+)"""
     ]
-    DupFields = ["user->account"]
   }
 ```

@@ -16,8 +16,6 @@ Name = raw-windows-account-624
              """({host}[^\/\s]+)\/Security \(624\)""",
              """Computer=({host}[^\s]+)""",
              """New Account Name:\s+({account_name}.+?)\s+New Domain:\s+({account_domain}[^\s]+)\s+New Account ID:\s+(%\{)?({account_id}[^\s\}]+)""",
-             """Caller User Name:\s+({user}.+?)\s+Caller Domain:\s+({domain}[^\s]+)\s+Caller Logon ID:\s+\([^,]+,({logon_id}[^)]+)""" 
-   ]
-   DupFields = ["host->dest_host"]
+             """Caller User Name:\s+({user}.+?)\s+Caller Domain:\s+({domain}[^\s]+)\s+Caller Logon ID:\s+\([^,]+,({logon_id}[^)]+)""" ]
 }
 ```

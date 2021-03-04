@@ -15,10 +15,7 @@ Name = s-4697
     """\sComputerName=(|({host}.+?))(\s+\w+=|\s*$)""",
     """\sKeywords=(|({outcome}.+?))(\s+\w+=|\s*$)""",
     """Security ID:\s*(|({user_sid}.+?))\s*Account Name:\s*(|({user}.+?))\s*Account Domain:\s*(|({domain}.+?))\s*Logon ID:\s*(|({logon_id}.+?))\s*Service Information:""",
-    """\sService Name:\s*(|({service_name}.+?))\s""",
-    """\sService File Name:\s*"*(|({process}({directory}.*?[\\\/]+)?({process_name}[^\\\/"]+?)))"*\s""",
-    """\sService Type:\s*(|({service_type}.+?))\s""",
-    """\sService Start Type:\s*(|({service_start_type}.+?))\s""",
+    """Service Name:\s*(|({service_name}.+?))\s*Service File Name:\s*(|({process}({directory}.*?[\\\/]+)?({process_name}[^\\\/]+?)))\s*Service Type:\s*(|({service_type}.+?))\s*Service Start Type:\s*(|({service_start_type}.+?))\s*Service Account:""",
     """Service Account:\s*(({account_domain}[^\\]+)\\)?({account_name}.+?)\s*$""",
     """Computer(\w+)?["\s]*(:|=)\s*"?({host}.+?)("|\s)""",
   ]

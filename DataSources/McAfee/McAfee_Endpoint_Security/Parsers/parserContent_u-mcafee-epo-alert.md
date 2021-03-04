@@ -7,7 +7,7 @@ Name = u-mcafee-epo-alert
     Lms = Sumo
     DataType = "alert"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-    Conditions = [ """<AnalyzerName>""","""<AnalyzerVersion>""","""<Analyzer>""" ]
+    Conditions = [ """<AnalyzerName>""","""<AnalyzerDetectionMethod>""" ]
     Fields = [
       """<(DetectedUTC|GMTTime)>({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """exabeam_host=({host}[^\s]+)""",
@@ -15,7 +15,7 @@ Name = u-mcafee-epo-alert
       """<TargetHostName>({src_host}[^<]+)""",
       """<MachineName>({src_host}[^<]+)""",
       """<IPAddress>(::1|({src_ip}[^<]+))""",
-      """<SourceUserName>((NT-AUTORITÄT|AUTORIDADE NT|NT AUTHORITY|({domain}[^\\\s]+))\\+)?(S(ystem|YSTEM)|({user}[^<\\\s]+))<\/SourceUserName>""",
+      """<SourceUserName>((NT-AUTORITÄT|AUTORIDADE NT|NT AUTHORITY|({domain}[^\\\s]+))\\+)?(SYSTEM|({user}[^<\\\s]+))<\/SourceUserName>""",
       """<DomainName>({domain}[^<]+)""",
       """<UserName>((NT-AUTORITÄT|AUTORIDADE NT|NT AUTHORITY|({domain}[^\\\s]+))\\+)?(SYSTEM|({user}[^<\\\s]+))<\/UserName>""",
       """<TargetUserName>((NT-AUTORITÄT|AUTORIDADE NT|NT AUTHORITY|({domain}[^\\\s]+))\\+)?(SYSTEM|({user}[^<\\\s]+))<\/TargetUserName>""",

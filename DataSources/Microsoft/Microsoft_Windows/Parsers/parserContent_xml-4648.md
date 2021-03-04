@@ -7,7 +7,7 @@ Name = xml-4648
     Lms = Splunk
     DataType = "windows-account-switch"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-    Conditions = ["<EventID>4648</EventID>", "<Data Name='ProcessName'"]
+    Conditions = ["<EventID>4648</EventID>", "<Data Name='ProcessName'>"]
     Fields = [
       """SystemTime=\'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """<Computer>({host}[^<]+)</Computer>""",

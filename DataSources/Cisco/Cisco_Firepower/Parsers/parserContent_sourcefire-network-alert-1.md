@@ -39,7 +39,7 @@ Name = sourcefire-network-alert-1
     """DNSResponseType:\s*({response_type}[^,]+)""",
     """ReferencedHost:\s*({dest_host}[\w\-.]+)""",
     """URL:\s*({full_url}[^\s"]+)""",
-    """\W({log_type}Connect)Type:\s*({subtype}[^,]+?)(,|\s*$)""",
+    """\W({type}Connect)Type:\s*({subtype}[^,]+?)(,|\s*$)""",
     """\WICMPType:\s*({icmp_type}[^,]+?)(,|\s*$)""",
     """\WICMPCode:\s*({icmp_code}\d)""",
     """\WTCPFlags:\s*({tcp_flags}[^,]+?)(,|\s*$)""",

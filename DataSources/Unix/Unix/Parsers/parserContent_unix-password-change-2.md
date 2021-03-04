@@ -3,6 +3,7 @@
 {
 Name = unix-password-change-2
   Vendor = Unix
+  Product = Unix
   Lms = Direct
   DataType = "password-change"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

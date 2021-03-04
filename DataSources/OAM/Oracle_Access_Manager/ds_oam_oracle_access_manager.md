@@ -4,11 +4,11 @@ Product: Oracle Access Manager
 ------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  33   |   14   |     3      |      2      |    2    |
+|  32   |   14   |     3      |      2      |    2    |
 
-|                Use-Case                | Event Types/Parsers                                                                                                                                                                                                                               | MITRE TTP                                                                       | Content                                                                                                      |
-|:--------------------------------------:| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| [Other](../../../UseCases/uc_other.md) |  app-login<br> ↳ [s-oam-app-login](Parsers/parserContent_s-oam-app-login.md)<br> ↳ [s-oam-app-login-1](Parsers/parserContent_s-oam-app-login-1.md)<br><br> failed-app-login<br> ↳ [s-oam-app-login](Parsers/parserContent_s-oam-app-login.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1188 - T1188<br> | [<ul><li>33 Rules</li></ul><ul><li>14 Models</li></ul>](Rules_Models/r_m_oam_oracle_access_manager_Other.md) |
+|                Use-Case                | Event Types/Parsers                                                                                                                                                         | MITRE TTP                                                                       | Content                                                                                                      |
+|:--------------------------------------:| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| [Other](../../../UseCases/uc_other.md) |  app-login<br> ↳ [s-oam-app-login](Parsers/parserContent_s-oam-app-login.md)<br><br> failed-app-login<br> ↳ [s-oam-app-login](Parsers/parserContent_s-oam-app-login.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1188 - T1188<br> | [<ul><li>32 Rules</li></ul><ul><li>14 Models</li></ul>](Rules_Models/r_m_oam_oracle_access_manager_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

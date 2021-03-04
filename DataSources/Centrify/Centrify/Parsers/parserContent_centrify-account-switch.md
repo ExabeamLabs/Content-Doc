@@ -11,7 +11,6 @@ Name = centrify-account-switch
   Fields = [
     """utc=({time}\d+)""",
     """exabeam_host=({host}[\w.\-]+)""",
-    """\w+\s+\d+\s+\d+:\d+:\d+\s+({host}[\w.\-]+)\s""",
     """user=({user}[^\(\)\s\$]+)"""
     """\d+\|\d+\|({event_name}.+?)\|\d""",
     """status=({outcome}.+?)\s\w+=""",

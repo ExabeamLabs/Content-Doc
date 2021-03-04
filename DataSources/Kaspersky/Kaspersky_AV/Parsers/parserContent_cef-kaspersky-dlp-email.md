@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-kaspersky-dlp-email
-  Vendor = Kaspersky 
+  Vendor = Kaspersky
   Product = Kaspersky AV
   Lms = Direct
   DataType = "dlp-email-alert"

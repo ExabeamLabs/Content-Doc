@@ -13,8 +13,8 @@ Name = xml-nps-logon
      """SystemTime=\'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""" 
      """<EventID>({event_code}[^<]+)<\/EventID>""",
      """Account Name:\s*({user}[^\s]+)(\/?)""",
+     """Account Name:\s*({user_type}.+?)(\/?)({user}[^\s\/.]+)\..+\s*Account Domain""",
      """Account Domain:\s*({domain}[^\s]+)\s*""",
-     """Account Name:\s*({user_type}[^\s:]+?)\/({user}[^\.\s\/:]+?)(\.[^:\.\s]+?)*\s*Account Domain""",
      """Connection Request Policy Name:\s*({policy}.+?)\s*Network Policy""",
      """User:\s*Security ID:\s*({user_sid}.+?)\s*Account Name:""",
      """({event_name}Network Policy Server\s({outcome}\w+)\s.+?)\s*User:""",

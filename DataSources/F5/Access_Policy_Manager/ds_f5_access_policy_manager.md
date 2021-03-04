@@ -4,11 +4,11 @@ Product: Access Policy Manager
 ------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  12   |   5    |     3      |      1      |    1    |
+|  11   |   4    |     3      |      1      |    1    |
 
 |                Use-Case                | Event Types/Parsers                                                                                                                                                                                                             | MITRE TTP                                                                       | Content                                                                                                    |
 |:--------------------------------------:| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) |  <br> ↳ [cef-f5-vpn-user](Parsers/parserContent_cef-f5-vpn-user.md)<br> ↳ [cef-f5-vpn-user](Parsers/parserContent_cef-f5-vpn-user.md)<br><br> vpn-login<br> ↳ [cef-f5-vpn-start](Parsers/parserContent_cef-f5-vpn-start.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1188 - T1188<br> | [<ul><li>12 Rules</li></ul><ul><li>5 Models</li></ul>](Rules_Models/r_m_f5_access_policy_manager_Other.md) |
+| [Other](../../../UseCases/uc_other.md) |  <br> ↳ [cef-f5-vpn-user](Parsers/parserContent_cef-f5-vpn-user.md)<br> ↳ [cef-f5-vpn-user](Parsers/parserContent_cef-f5-vpn-user.md)<br><br> vpn-login<br> ↳ [cef-f5-vpn-start](Parsers/parserContent_cef-f5-vpn-start.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1188 - T1188<br> | [<ul><li>11 Rules</li></ul><ul><li>4 Models</li></ul>](Rules_Models/r_m_f5_access_policy_manager_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

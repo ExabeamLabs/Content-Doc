@@ -28,8 +28,7 @@ Name = json-4624
       """"TargetLogonId":"({logon_id}[^"]*)""",
       """"TargetUserSid":"({user_sid}[^"]*)""",
       """Workstation Name:((\\)[rnt])*(([A-Fa-f:\d.]+|-|({src_host_windows}[^\\]+))((\\)[rnt])*)?Source""",
-      """"WorkstationName":"(?:|[A-Fa-f:\d.]+|-|({src_host_windows}[^"]+))"""",
-      """SubjectUserName":"({account}[^"]+)""",
+      """"WorkstationName":"(?:|[A-Fa-f:\d.]+|-|({src_host_windows}[^"]+))""""
     ]
     DupFields = ["host->dest_host"]
   }

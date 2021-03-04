@@ -4,11 +4,11 @@ Product: McAfee NSM
 -------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   9   |   6    |     2      |      1      |    1    |
+|   3   |   2    |     1      |      1      |    1    |
 
-|                Use-Case                | Event Types/Parsers                                                                                          | MITRE TTP                                   | Content                                                                                            |
-|:--------------------------------------:| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) |  network-alert<br> ↳ [syslog-mcafee-network-alert](Parsers/parserContent_syslog-mcafee-network-alert.md)<br> | T1066 - T1066<br>T1204 - User Execution<br> | [<ul><li>9 Rules</li></ul><ul><li>6 Models</li></ul>](Rules_Models/r_m_mcafee_mcafee_nsm_Other.md) |
+|                Use-Case                | Event Types/Parsers                                                                                          | MITRE TTP                  | Content                                                                                            |
+|:--------------------------------------:| ------------------------------------------------------------------------------------------------------------ | -------------------------- | -------------------------------------------------------------------------------------------------- |
+| [Other](../../../UseCases/uc_other.md) |  network-alert<br> ↳ [syslog-mcafee-network-alert](Parsers/parserContent_syslog-mcafee-network-alert.md)<br> | T1204 - User Execution<br> | [<ul><li>3 Rules</li></ul><ul><li>2 Models</li></ul>](Rules_Models/r_m_mcafee_mcafee_nsm_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

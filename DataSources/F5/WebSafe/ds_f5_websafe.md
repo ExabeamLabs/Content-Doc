@@ -4,11 +4,11 @@ Product: WebSafe
 ----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  47   |   19   |     8      |      2      |    2    |
+|  42   |   18   |     8      |      2      |    2    |
 
 |                Use-Case                | Event Types/Parsers                                                                                                                                                                       | MITRE TTP                                                                                                                                                                                                                                                                       | Content                                                                                       |
 |:--------------------------------------:| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) |  web-activity-allowed<br> ↳ [f5-web-activity](Parsers/parserContent_f5-web-activity.md)<br><br> web-activity-denied<br> ↳ [f5-web-activity](Parsers/parserContent_f5-web-activity.md)<br> | T1041 - Exfiltration Over C2 Channel<br>T1048 - Exfiltration Over Alternative Protocol<br>T1071 - Application Layer Protocol<br>T1078 - Valid Accounts<br>T1102 - Web Service<br>T1188 - T1188<br>T1189 - Drive-by Compromise<br>T1213 - Data from Information Repositories<br> | [<ul><li>47 Rules</li></ul><ul><li>19 Models</li></ul>](Rules_Models/r_m_f5_websafe_Other.md) |
+| [Other](../../../UseCases/uc_other.md) |  web-activity-allowed<br> ↳ [f5-web-activity](Parsers/parserContent_f5-web-activity.md)<br><br> web-activity-denied<br> ↳ [f5-web-activity](Parsers/parserContent_f5-web-activity.md)<br> | T1041 - Exfiltration Over C2 Channel<br>T1048 - Exfiltration Over Alternative Protocol<br>T1071 - Application Layer Protocol<br>T1078 - Valid Accounts<br>T1102 - Web Service<br>T1188 - T1188<br>T1189 - Drive-by Compromise<br>T1213 - Data from Information Repositories<br> | [<ul><li>42 Rules</li></ul><ul><li>18 Models</li></ul>](Rules_Models/r_m_f5_websafe_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

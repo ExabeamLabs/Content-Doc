@@ -19,13 +19,11 @@ Name = symantec-usb-block
       """Rule: [^,]*,\d+,({target}[^,]+),\d+,[^,]*,"?({file_name}.+?)"?,User""",
       """Rule: [^,]*,\d+,({process}.*(\/|\\)({process_name}[^\/\\]+)),\d,""",
       """\| \[[^,]*,\d+,[^,]+,\d+,[^,]+,.*/({file_name}.+?)"?,User""",
-      """User:\s+(SYSTEM|({user}[^\s]+?)),Domain""",
-      """User Name:\s*(SYSTEM|({user}[^\s,]+))""",
+      """User:\s+({user}.+?),Domain""",
       """Domain:\s+({domain}.+?),Action Type""",
       """File size \(({bytes_unit}.+?)\):\s*({bytes_num}\d+)""",
       """Device ID:\s+({device_id}.+)&\d+""",
       """({outcome}Blocked)""",
-      """File size \(({bytes_unit}[^\)]+)"""
     ]
     SOAR {
       IncidentType = "dlp"
