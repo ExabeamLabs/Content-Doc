@@ -8,11 +8,10 @@ Name = citrix-vpn-connection
     TimeFormat = "MM/dd/yyyy:HH:mm:ss"
     Conditions = [""" SSLVPN """, """Access Allowed""", """ Duration """, """ Total_bytes_send """ ]
     Fields = [
-     """exabeam_host=({host}[\w\-.]+)""",
      """exabeam_host=([^=]+@\s*)?({host}\S+)""",
      """\w+\s+\d+\s+\d\d:\d\d:\d\d\s+({host}[\w\-.]+)""",
       """({host}[^\s]+)\s*:\s*SSLVPN \w+\s""",
-      """\sEnd_time(\s*\&quot;)?\s*"?({time}\d+\/\d+\/\d+:\d+:\d+:\d+)""",
+      """\sEnd_time\s*"({time}\d+\/\d+\/\d+:\d+:\d+:\d+)""",
       """\sUser\s*({user}[^\-\s]+)\s*\-""",
       """({event_name}SSLVPN \w+)""",
       """\sSessionId:\s*({session_id}\d+)""",
@@ -24,7 +23,7 @@ Name = citrix-vpn-connection
       """\sTotal_bytes_send\s*({bytes_out}\d+)""",
       """\sTotal_bytes_recv\s*({bytes_in}\d+)""",
       """\sAccess\s*({action}[^\s]+)\s""",
-      """\sGroup\(s\)\s*("|&quot;)({access_group}[^"]+?)(&quot;|")"""
+      """\sGroup\(s\)\s*"({access_group}[^"]+)""""
     ]
 }
 ```

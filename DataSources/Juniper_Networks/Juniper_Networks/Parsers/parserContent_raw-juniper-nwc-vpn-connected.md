@@ -20,6 +20,6 @@ Name = raw-juniper-nwc-vpn-connected
     """user=({user}[^\s]+)""",
     """: User with IP ({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
-  DupFields = [ "host->dest_host" , "user->account"]
+  DupFields = [ "host->dest_host" ]
 }
 ```
