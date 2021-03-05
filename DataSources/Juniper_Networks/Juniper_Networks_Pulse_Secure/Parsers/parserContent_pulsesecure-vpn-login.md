@@ -9,8 +9,8 @@ Name = pulsesecure-vpn-login
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """PulseSecure:""", """Remote address for user""" ]
   Fields = [
-    """PulseSecure: (\S+\s\S+\s\S+\s)?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d) - (::ffff:)?({host}\S+) - \[(::ffff:)?({src_ip}[A-Fa-f:\d.]+)\] (({domain}[^\\]+)\\)?({user}[^\\\/\s\(]+)""",
-    """changed from (::ffff:)?({src_ip}[A-Fa-f:\d.]+) to (::ffff:)?({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """PulseSecure: ({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d) - ({host}\S+) - \[({src_ip}[A-Fa-f:\d.]+)\] (({domain}[^\\]+)\\)?({user}[^\\\/\s\(]+)""",
+    """changed from ({src_ip}[A-Fa-f:\d.]+) to ({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
   DupFields = ["user->account"]
 }

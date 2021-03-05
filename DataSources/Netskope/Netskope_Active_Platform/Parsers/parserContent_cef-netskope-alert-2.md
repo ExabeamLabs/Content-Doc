@@ -16,21 +16,18 @@ Name = cef-netskope-alert-2
     """"+malware_sev"+:"+({alert_severity}[^"]+)""",
     """"malware_id"+:"+({alert_id}[^"]+)""",
     """suser=(({user_email}[^@"\s]+@[^@"\s]+)|(({domain}[^"@\\\/\s]+)[\\\/]+)?({user}[^"@\\\/\s]+))""",
-    """msg=({additional_info}[^=]+?)\s+\w+=""",
-    """"malware_type"+:"+({alert_name}[^"]+)"""",
-    """ext__malware_name_=({malware_filename}[^=]+?)\s\w+=""",
-    """ext__quarantine_file_name_=({file_path}[^=]+?)\s\w+=""",
-    """"alert_type"+:"+({alert_type}[^"]+)"""",
-    """dpriv=({alert_type}[^=]+?)\s\w+=""",
-    """outcome=({outcome}[^=]+?)\s+\w+=""",
-    """ext_category=({category}[^=]+?)\s+\w+=""",
-    """fileHash=({md5}[^=]+?)\s+\w+=""",
-    """ext_url=({malware_url}[^=]+?)\s+\w+=""",
-    """"owner"+:"+({file_owner_at}[^"]+)"""",
-    """suser=({from_user_at}[^=]+?)\s+\w+=""",
-    """"file_path"+:"+({file_path_at}[^"]+)"""",
-    """"q_shared_with"+:"+({shared_with_at}[^"]+)"""",
-    """"app"+:"+({site_at}[^"]+)""""
+    """msg=({additional_info}.+?)\s+\w+=""",
+    """ext__malware_type_=({alert_name}.+?)\s+\w+=""",
+    """ext__malware_name_=({malware_filename}.+?)\s\w+=""",
+    """ext__quarantine_file_name_=({file_path}.+?)\s\w+=""",
+    """ext__alert_type_=({alert_type}.+?)\s\w+=""",
+    """dpriv=({alert_type}.+?)\s\w+=""",
+    """ext_action=({outcome}.+?)\s\w+=""",
+    """outcome=({outcome}.+?)\s+\w+=""",
+    """ext_category=({category}.+?)\s+\w+=""",
+    """ext_md5=({md5}.+?)\s+\w+=""",
+    """ext_url=({malware_url}.+?)\s+\w+="""
+    
   ]
 }
 ```

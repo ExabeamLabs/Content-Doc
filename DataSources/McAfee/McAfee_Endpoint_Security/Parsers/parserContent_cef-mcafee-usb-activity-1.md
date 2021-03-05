@@ -10,7 +10,6 @@ Name = cef-mcafee-usb-activity-1
       Conditions = [ """McAfee|Data Loss Prevention""", """|DLP: Removable Storage Protection|""" ]
       Fields = [
         """(\s|\|)rt=({time}.+?)\s+([\w\.-]+=|$)""",
-        """\d\d:\d\d\s+({host}[^\s]+)\sCEF:""",
         """(\s|\|)cs2=({device_type}.+?)\s+([\w\.-]+=|$)""",
         """(\s|\|)dhost=({dest_host}.+?)\s+([\w\.-]+=|$)""",
         """(\s|\|)dst=({dest_ip}.+?)\s+([\w\.-]+=|$)""",

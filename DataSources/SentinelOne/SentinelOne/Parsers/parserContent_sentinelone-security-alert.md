@@ -25,6 +25,6 @@ Name = sentinelone-security-alert
     """"agentIp":\s*"({src_ip}[^"]+)""",
     """"fileDisplayName":\s"({file_name}[^"]+)""",
   ]
-  DupFields = ["file_name->process_name", "malware_url->process"]
+  DupFields = ["file_name->process_name"]
 }
 ```

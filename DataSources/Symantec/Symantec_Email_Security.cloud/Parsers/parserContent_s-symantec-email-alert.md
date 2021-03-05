@@ -22,7 +22,6 @@ Name = s-symantec-email-alert
     """"action":\s*"({outcome}[^"]+)""",
     """"malwareName":\s*"(null|unknown|({alert_name}[^"]+))""",
     """"malwareCategory":\s*"({threat_category}[^"]+)""",
-    """"messageSize":\s*({bytes}\d+)""",
   ]
 }
 ```

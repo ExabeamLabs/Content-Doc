@@ -6,10 +6,9 @@ Name = s-asa-605005
   Product = Cisco Adaptive Security Appliance
   Lms = Splunk
   DataType = "remote-logon"
-  TimeFormat = "MMM dd yyyy HH:mm:ss"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ "Login permitted from", "-605005", "%ASA-" ]
   Fields = [
-    """({time}[a-zA-Z]{3}\s\d{2}\s\d{4}\s\d{2}:\d{2}:\d{2}):\s+""",
     """exabeam_raw=.*?({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[\w.\-]+)""",
     """%ASA-({priority}\d+)-({event_code}\d+)""",

@@ -12,10 +12,11 @@ Name = s-microsoft-dns-renew
     """({time}\d\d/\d\d/\d\d,\d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[\w.\-]+)""",
     """"+hostname\\"+:\\"+({host}[^\\"]+)"""
-    """Renew,({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),({dest_host}[^,]+),(({src_mac}[\w]{12}),)?""",
+    """Renew,({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),({dest_host}[^,]+),""",
     """"+mac\\"+:\[\\"+({src_mac}[^\\"]+)""",
     """"+ip\\"+:\[\\"+({src_ip}[^\\"]+)""",
-    """<Identifier>({host}[^<]+)<\/"""
+    """"+host\\"+.+?os.+?family\\"+:\\"+({os}[^\\]+)""",
+    
     
   ]
   DupFields = [ "dest_host->user" ]

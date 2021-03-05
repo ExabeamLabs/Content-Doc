@@ -19,7 +19,6 @@ Name = json-cisco-cloudlock-dlp
     """"entity_owner_name":\s*"({user_fullname}[^"]+)"""",
     """"entity_owner_email":\s*"({user_email}[^"]+)"""",
     """"entity_vendor_name":\s*"({process}[^"]+)"""",
-    """"entity_direct_url":\s*"({full_url}[^"]+({top_domain}[^\\\/:\s.]+(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+))"""",
     """"entity_direct_url":\s*"({additional_info}[^"]+)"""",
   ]
 }

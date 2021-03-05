@@ -6,7 +6,7 @@ Name = unix-as
   Product = Unix
   Lms = Direct
   DataType = "unix-account-switch"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
+  TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """pam_unix(""", """session opened for user""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
@@ -17,7 +17,6 @@ Name = unix-as
     """\w+\s+\d+ \d\d:\d\d:\d\d ({host}[\w.\-]+).+?:\s*pam_unix""",
     """session opened for user ({account}.+?) by""",
     """\(uid=({user_uid}\d+)\)""",
-    """session opened for user \S+ by ({user}[^\("=,]+)""",
   ]
   DupFields = [ "host->dest_host", "user_uid->user_id"]
 }
