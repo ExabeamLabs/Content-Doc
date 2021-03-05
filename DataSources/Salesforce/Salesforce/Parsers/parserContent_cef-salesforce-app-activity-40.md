@@ -9,7 +9,7 @@ Name = cef-salesforce-app-activity-40
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """CEF:""", """|Skyformation|""", """|password-reset|""", """Google Apps""" ]
   Fields = [
-    """({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ) \S+ Skyformation -""",
+    """({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ) ({host}\S+) Skyformation -""",
     """([^\|]*\|){5}({activity}[^\|]+)""",
     """\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
     """\Wsuser=({user}.+?)\s+(\w+=|$)""",

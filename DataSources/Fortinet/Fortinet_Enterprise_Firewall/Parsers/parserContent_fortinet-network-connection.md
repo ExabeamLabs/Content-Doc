@@ -21,8 +21,7 @@ Name = fortinet-network-connection
     """\Wservice="?({protocol}\w+)""",
     """\Wsentbyte=({bytes_out}\d+)""",
     """\Wrcvdbyte=({bytes_in}\d+)""",
-    """\Waction="?({outcome}[^"]+?)"?(\s+\w+=|\s*$)""",
-    """\Wsentpkt=({packets_sent}\d+)""",
+    """\Waction="?({outcome}[^"]+?)"?(\s+\w+=|\s*$)"""
   ]
 }
 ```

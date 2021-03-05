@@ -14,6 +14,5 @@ Name = unix-local-logon
     """of user ({user}[^\s\.]+)""",
     """({event_code}Started Session)"""
   ]
-  DupFields = [ "host->dest_host" ]
 }
 ```

@@ -23,8 +23,7 @@ Name = cef-trendmicro-security-alert-1
     """\Wspt=({dest_port}\d+)""",
     """\Wact=({action}.+?)(\s+\w+=|\s*$)""",
     """\Wcn3=({threat_type}.+?)(\s+\w+=|\s*$)""",
-    """\Wcat=({alert_type}.+?)(\s+\w+=|\s*$)""",
-    """CEF:(?:[^\|]*\|){5}({alert_name}[^\|]+)\|(Unknown|({alert_severity}[^\|]+))\|\w+="""
+    """\Wcat=({alert_type}.+?)(\s+\w+=|\s*$)"""
   ]
 }
 ```

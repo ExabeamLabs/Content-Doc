@@ -10,7 +10,6 @@ Name = s-mcafee-security-alert
     Conditions = [ """|Executable Fingerprint""", """|4|""" ]
     Fields = [
       """^[^|]*\|({time}\d+\-\d+\-\d+ \d+:\d+:\d+)""",
-      """exabeam_host=({host}[\w\-.]+)""",     
       """^([^|]*\|){3}({src_host}[^|]+)\|""",
       """^([^|]*\|){4}({src_ip}[a-fA-F0-9.:]+)""",
       """^([^|]*\|){5}(({domain}.+?)\\)?({user}[^\\|]+)\|""",

@@ -11,7 +11,6 @@ Name = s-common-ftp-upload
   Conditions = [ """]created /""", """ - 200 """ ]
   Fields = [
     """exabeam_host=([^=]+?@\s*)?({host}[^\s]+)""",
-    """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d) """,
     """(exabeam_\w+=|^)({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d) """,
     """({host}[\w\.-]+)\s+(\S+\s+){2}\[\d+\]""",
     """({src_ip}\S+)\s+(\S+\s+){2}\[\d+\]""",

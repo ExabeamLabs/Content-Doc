@@ -2,7 +2,7 @@
 ```Java
 {
 Name = syslog-symantec-mss-alert
-  Vendor = Symantec
+  Vendor = Symantec 
   Product = Symantec Managed Security Services
   Lms = Direct
   DataType = "alert"

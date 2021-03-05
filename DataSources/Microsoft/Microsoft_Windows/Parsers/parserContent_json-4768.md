@@ -13,18 +13,15 @@ Name = json-4768
       """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """"EventReceivedTime":\s*({time}\d+)""",
       """"timestamp":\s*({time}\d+)""",
-      """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]+\sSkyformation""",
+      """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s({host}[^\s]+)\sSkyformation""",
       """"time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)"""",
-      """"(Hostname|MachineName|(?:winlog\.)?computer_name)":"({host}[^"]*)""",
+      """"(Hostname|MachineName|computer_name)":"({host}[^"]*)""",
       """({event_code}4768)""",
       """"(TargetUserName|AccountName)":"({user}[^"]+)""",
       """"(TargetDomainName|SuppliedRealmName)":"({domain}[^."]+)""",
       """"(UserID|TargetSid)":"({user_sid}[^"]+)""",
       """"(IpAddress|ClientAddress)":"(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)""",
-      """"(Status|ResultCode)":"({result_code}[^"]+)""",
-      """"TicketOptions":"({ticket_options}[^"]+)""",
-      """"TicketEncryptionType":"({ticket_encryption_type}[^"]+)""",
-      """"ServiceName":"({service_name}[^"]+)""",
+      """"(Status|ResultCode)":"({result_code}[^"]+)"""
     ]
   }
 ```

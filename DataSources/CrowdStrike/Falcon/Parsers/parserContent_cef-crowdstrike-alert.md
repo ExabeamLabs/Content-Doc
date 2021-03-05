@@ -39,9 +39,8 @@ Name = cef-crowdstrike-alert
       """(?=cs1Label=CommandLine).*cs1=("+)?({command_line}.+?)("+)?\s+(\w+=|$)""",
       """(\s|\|)cs5=("+)?({command_line}.+?)("+)?\s\w+=.*(?=cs5Label=CommandLine)""",
       """(?=cs5Label=CommandLine).*cs5=("+)?({command_line}.+?)("+)?\s+(\w+=|$)""",
-      """(\s|\|)cs6=({falcon_host_link}.+?)\s\w+=.*(?=cs6Label=FalconHostLink)""",
-      """(?=cs6Label=FalconHostLink).*cs6=({falcon_host_link}.+?)\s+(\w+=|$)"""
+      """(\s|\|)cs6=({additional_info}.+?)\s\w+=.*(?=cs6Label=FalconHostLink)""",
+      """(?=cs6Label=FalconHostLink).*cs6=({additional_info}.+?)\s+(\w+=|$)"""
     ]
-    DupFields = ["falcon_host_link->additional_info"]
   }
 ```
