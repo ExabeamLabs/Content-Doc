@@ -3,6 +3,7 @@
 {
 Name = sfdc-app-activity
   Vendor = Salesforce
+  Product = Salesforce
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

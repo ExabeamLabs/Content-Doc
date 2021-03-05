@@ -23,5 +23,6 @@ Name = forefront-epp-cef-alert
     """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sdvchost=({host}[^\s]+)"""
   ]
+  DupFields = ["host->dest_host", "malware_url->process_name"]
 }
 ```

@@ -3,6 +3,7 @@
 {
 Name = thycotic-app-login
   Vendor = Thycotic Secret Server
+  Product = Thycotic Secret Server
   Lms = Direct
   DataType = "app-login"
   TimeFormat = "epoch"

@@ -6,11 +6,13 @@ Name = auditd-unix-account-switch
   Product = Auditd
   Lms = Direct
   DataType = "account-switch"
-  TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
+  TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """audispd""", """USER_ROLE_CHANGE""" , """ auid=""" ]
   Fields = [
+    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+    """\s({host}[\w\-.]+)\s+audispd:""",
     """node=({host}[^\s\.]+)"""
-    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)""",
+    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """uid=({user_id}[^\s]+)""",
     """auid=({account_used_id}[^\s]+)""",
     """pid=({process_id}[^\s]+)""",

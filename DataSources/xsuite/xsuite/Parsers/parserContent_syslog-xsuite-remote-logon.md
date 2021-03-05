@@ -3,6 +3,7 @@
 {
 Name = syslog-xsuite-remote-logon
   Vendor = xsuite
+  Product = xsuite
   Lms = Direct
   DataType = "remote-logon"
   TimeFormat = "yyyy-MM-dd HH:mm:ss z"

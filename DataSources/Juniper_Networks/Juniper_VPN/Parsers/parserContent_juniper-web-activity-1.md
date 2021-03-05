@@ -2,7 +2,7 @@
 ```Java
 {
 Name = juniper-web-activity-1
-  Vendor = Juniper Networks
+  Vendor = Juniper VPN
   Product = Juniper VPN
   Lms = Direct
   DataType = "web-activity"

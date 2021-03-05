@@ -18,6 +18,7 @@ Name = connectra-vpn-login-1
     """\Wsrc:\s*(|({src_ip}[a-fA-F\d.:]+));""",
     """\WProductName:\s*(|({app}[^;]+?));""",
     """\Wassigned_IP::\s*({dest_ip}[a-fA-F\d.:]+)""",
+    """\,orig=({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
    DupFields = [ "action->event_name", "account->user" ]
 }

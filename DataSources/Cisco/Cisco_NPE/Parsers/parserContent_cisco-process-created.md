@@ -7,9 +7,10 @@ Name = cisco-process-created
   Lms = Direct
   DataType = "process-created"
   IsHVF = true
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+  TimeFormat = "MMM dd yyyy HH:mm:ss.SSS"
   Conditions = [ """CFGLOG_LOGGEDCMD:""", """logged command:""" ]
   Fields = [
+    """({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d\.\d+)""",
     """({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d(\+|\-)\d\d:\d\d)""",
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """User:\s*({user}[^\s]+)""",

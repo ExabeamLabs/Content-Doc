@@ -3,15 +3,17 @@
 {
 Name = raw-unix-sudo
   Vendor = Unix
+  Product = Unix
   Lms = Direct
   DataType = "unix-account-switch"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """sudo:""", """; USER""","""; COMMAND""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d[+-]\d+:\d+) \S+ sudo:""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+[+-]\d+)""",
     """exabeam_host=([^=]+@\s*)?({host}[\w.\-]+)""",
+    """exabeam_host=([^=]+@\s*)?(({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})|({dest_host}[^\s]+))""",
     """({host}[\w\.\-]+)?:?\s*sudo:""",
     """"agent":\{"id":"({agent_id}\d+)"""",
     """"agent":\{"name":"[^"]*","id":"({agent_id}\d+)"""",
@@ -26,6 +28,6 @@ Name = raw-unix-sudo
     """"cluster":\{[^\{\}]+?"name":"({cluster_name}[^"]+)"""",
     """"host":"({wazuh_manager}[^"]+)"""",
   ]
-  DupFields=["host->dest_host","directory->process_directory"]
+  DupFields=["directory->process_directory"]
 }
 ```

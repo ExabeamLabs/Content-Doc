@@ -22,6 +22,7 @@ Name = cef-member-added-2003
     """\scs6=({account_dn}.+?)\s+\w+=""",
     """\scs6=(.+?CN\\?=.+?,({account_ou}(OU)?.+?DC\\?=[\w-]+))\s\w+=""",
     """\sdvchost=({host}[^\s]+)""",
+    """\sduid=({group_id}.+?)\s+\w+=""",
   ]
   DupFields = [ "host->dest_host" ]
 }

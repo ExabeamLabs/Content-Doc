@@ -13,8 +13,8 @@ Name = raw-pan-vpn-start
     """User name:\s+({user_email}[^@\s]+@[^\s,]+),""",
     """Login from:\s+({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """({time}\d\d\d\d/\d\d/\d\d \d+:\d+:\d+)""",
-    """globalprotectgateway-\S+?,({host}.+?),""",
     """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
+    """globalprotectgateway-\S+?,({host}.+?),""",
     """SYSTEM,({vpn_client}[^,]+),""",
     """Source region:\s*({src_country}[^,]+)"""
   ]

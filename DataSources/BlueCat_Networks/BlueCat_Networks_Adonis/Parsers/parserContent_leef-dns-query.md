@@ -3,6 +3,7 @@
 {
 Name = leef-dns-query
     Vendor = BlueCat Networks Adonis
+  Product = BlueCat Networks Adonis
     Lms = QRadar
     DataType = "dns-query"
     IsHVF = true

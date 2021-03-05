@@ -18,7 +18,7 @@ Name = o365-sharepoint-activity
     """"ObjectId\\*"+:\\*\s*"+({file_parent}[^"]+)[\\\/](?!u\d+)""",
     """"ObjectId\\*"+:\\*\s*"+[^"]*?({file_name}[^\/"]+?(\.({file_ext}[^\\\/\.\s"]+))?)"(?!u\d+)""",
     """"Operation\\*"+:\\*\s*"+({accesses}[^"\\]+)""",
-    """"UserId\\*"+:\\*\s*"+({user_email}[^"@]+@[^@"\\]+)""",
+    """"UserId\\*"+:\\*\s*"+({user_email}[^"@]+@({email_domain}[^@"\\]+))""",
     """"UserId\\*"+:\\*\s*"+(({domain}[^\\\s@"]+)\\+)?({user}[^\\\s@"]+)\s""",
     """"ClientIP\\*"+:\\*\s*"+({src_ip}[a-fA-F:\d.]+)""",
     """"UserAgent\\*"+:\\*\s*"+({user_agent}[^"\\]+)"+,""",

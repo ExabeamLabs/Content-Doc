@@ -3,6 +3,7 @@
 {
 Name = s-pharos-print-activity
   Vendor = Pharos
+  Product = Pharos
   Lms = Splunk
   DataType = "print-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"

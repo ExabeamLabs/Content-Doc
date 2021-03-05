@@ -21,6 +21,6 @@ Name = mcafee-siem-4726
       """"Source_Logon_ID":"({logon_id}[^"]+)""",
       """"UserIDDst":"({target_user}[^"]+)"""
     ]
-    DupFields = [ "host->dest_host" ]
+    DupFields = [ "host->dest_host", "target_user->account_name" ]
   }
 ```

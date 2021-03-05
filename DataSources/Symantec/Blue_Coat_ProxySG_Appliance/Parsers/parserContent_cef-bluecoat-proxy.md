@@ -38,6 +38,7 @@ Name = cef-bluecoat-proxy
     """requestClientApplication=(?:-|({browser}[^=\/]+)\/[^=]+({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin))[^=]*\s\w+=""",
     """requestClientApplication=(?:-|Mozilla\/[^=]+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))[^=]*\s\w+=""",
     """requestClientApplication=(?:-|Mozilla\/[^=]+\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]+Gecko\/\d+\s+({browser}\w+))[^=]*\s\w+=""",
+    """requestContext=(?:-|({referrer}[^\s]+))""",
   ]
   DupFields = [ "user->orig_user" ]
 }

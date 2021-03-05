@@ -3,6 +3,7 @@
 {
 Name = bro-ssh-1
   Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "ssh-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"

@@ -3,6 +3,7 @@
 {
 Name = pmp-account-switch
   Vendor = Password Manager Pro
+  Product = Password Manager Pro
   Lms = Splunk
   DataType = "account-switch"
   TimeFormat = "yyyy/MM/dd HH:mm:ss"

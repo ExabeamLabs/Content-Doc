@@ -3,6 +3,7 @@
 {
 Name = s-common-ftp-delete
   Vendor = FTP
+  Product = FTP
   Lms = Splunk
   DataType = "file-operations"
   IsHVF = true

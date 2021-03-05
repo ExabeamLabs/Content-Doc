@@ -3,6 +3,7 @@
 {
 Name = cef-trendmicro-database-failed-login
   Vendor = Trend Micro
+  Product = Trend Micro
   Lms = ArcSight
   DataType = "database-failed-login"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSSSSSZ"

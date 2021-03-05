@@ -6,9 +6,10 @@ Name = json-4624
     Product = Microsoft Windows
     Lms = Direct
     DataType = "windows-4624"
-    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
+    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
     Conditions = ["""4624""", """"AuthenticationPackageName":""""]
     Fields = [
+      """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s({host}[^\s]+)\sSkyformation""",
       """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """"Computer":"({host}[^"]+)""",
       """({event_name}An account was successfully logged on)""",
@@ -28,7 +29,8 @@ Name = json-4624
       """"TargetLogonId":"({logon_id}[^"]*)""",
       """"TargetUserSid":"({user_sid}[^"]*)""",
       """Workstation Name:((\\)[rnt])*(([A-Fa-f:\d.]+|-|({src_host_windows}[^\\]+))((\\)[rnt])*)?Source""",
-      """"WorkstationName":"(?:|[A-Fa-f:\d.]+|-|({src_host_windows}[^"]+))""""
+      """"WorkstationName":"(?:|[A-Fa-f:\d.]+|-|({src_host_windows}[^"]+))"""",
+      """SubjectUserName":"({account}[^"]+)""",
     ]
     DupFields = ["host->dest_host"]
   }

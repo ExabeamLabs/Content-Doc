@@ -12,7 +12,7 @@ Name = pan-auth-successful
     """\w+\s+\d+\s+\d+:\d+:\d+\s+({host}[\w\-.]+)\s+\d+,({time}\d+\/\d+\/\d+\s+\d+:\d+:\d+),""",
     """,auth-success,({auth_method}[^,]+)""",
     """"authenticated for user '({user}[^\s']+)""",
-    """From:\s*({src_ip}[A-Fa-f:\d.]+?)\.?"""",
+    """From:\s*(({src_ip}[A-Fa-f:\d.]+?)|({src_host}.+?))\.?""""
   ]
 }
 ```

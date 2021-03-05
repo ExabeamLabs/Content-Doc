@@ -3,6 +3,7 @@
 {
 Name = rdirectory-account-created
   Vendor = Namespace rDirectory
+  Product = Namespace rDirectory
   Lms = Direct
   DataType = "account-creation"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -13,7 +14,8 @@ Name = rdirectory-account-created
         """Modified by:({user}.+?)\s+(\(.+?\))?\s+\(({domain}[^\/)]+)""",
 	"""User:({account_name}.+?)\s+\(({account_domain}[^\/)]+)"""
         """\[Principal Name\]\s*Add:({account_name}[^@]+)(@({account_domain}[^.]+))?[^\[]*\[""",
-        """Credentials:({account_used_domain}[^\\]+)\\+([^\s.]+\.)*({account}[^\s.]+)"""
+        """Credentials:({account_used_domain}[^\\]+)\\+([^\s.]+\.)*({account}[^\s.]+)""",
+        """Add:13=({user_type}\d+)\[Employee Type\]"""
   ]
 }
 ```

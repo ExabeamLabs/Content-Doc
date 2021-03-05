@@ -3,6 +3,7 @@
 {
 Name = tripwire-file-alert-2
   Vendor = Tripwire Enterprise
+  Product = Tripwire Enterprise
   Lms = Splunk
   DataType = "file-alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
@@ -30,6 +31,8 @@ Name = tripwire-file-alert-2
     """\sAppType=([^|]+[\\\/]+)?({process_name}[^|]+?)\s+\w+=""",
     """\sEventType=({accesses}.+?)\s+\w+=""",
     """\sLogUser=(({domain}[^\\\s]+)\\)?({user}[^\s]+?)\s+\w+=""",
+    """NodeIp=({dest_ip}[^\s]+) """,
+    """Msg="({additional_info}[^"]+)""""
 ]
 DupFields = [ "directory->process_directory" ]
 SOAR {

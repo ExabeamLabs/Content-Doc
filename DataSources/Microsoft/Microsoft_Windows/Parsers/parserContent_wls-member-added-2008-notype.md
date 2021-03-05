@@ -21,6 +21,8 @@ Name = wls-member-added-2008-notype
     """TargetDomainName="+({group_domain}[^"]+)"""",
     """MemberSid="+({account_id}[^"]+)"""",
     """MemberName="+({account_dn}[^"]+)"""",
+    """MemberName="+.*?OU=({account_ou}[^,]+)?""",
+    """TargetSid="({group_id}[^"]+)""",
   ]
   DupFields = [ "event_code->group_type", "host->dest_host" ]
 }

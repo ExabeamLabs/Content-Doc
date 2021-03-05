@@ -10,6 +10,7 @@ Name = f5-vpn-additional-info
   Conditions = [ """01490005:5:""" ]
   Fields = [
     """\s+01490005:5:\s+({session_id}[^:]+):\s*({additional_info}.+?)\s*$""",
+    """\s+01490005:5:.*?({session_id}[^\s:]+):\s+({additional_info}.+?)\s*$"""
   ]
 }
 ```

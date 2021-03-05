@@ -15,6 +15,8 @@ Name = cef-juniper-account-deleted
 	"""\Wsuser=(System|({user}[^\s]+))""",
 	"""\Wduser=({target_user}[^\s]+)""",
 	"""\Wshost=({src_host}[\w\-.]+)""",
+        """\Wahost=({dest_host}.*?)\s\w+=""",
   ]
+  DupFields = [ "target_user->account_name" ]
 }
 ```

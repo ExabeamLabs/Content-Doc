@@ -16,7 +16,8 @@ Name = o365-failed-sign-in-alert
     """"userPrincipalName":"({user_email}[^@"\s]+?@[^"\s]+?)""""   
     """"id":"({alert_id}[^"]+?)""""
     """"failureReason":"({failure_reason}[^"]+?)""""
-    """"ipAddress":"({src_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]*:[A-Fa-f0-9%.:]+(th0)?))""""
+    """"ipAddress":"({src_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]*:[A-Fa-f0-9%.:]+(th0)?))"""",
+    """"userPrincipalName":"({user_email}[^"]+)""",
   ]
 }
 ```

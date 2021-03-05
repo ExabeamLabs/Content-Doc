@@ -7,14 +7,14 @@ Name = eset-domain-user-failed-login
     Lms = Splunk
     DataType = "authentication-failed"
     TimeFormat = "MMM dd yyyy HH:mm:ss"
-    Conditions = [ """LEEF:""", """|ESET|RemoteAdministrator|""", """cat=ESET RA Audit Event""", """|Failed domain user login|""" ]
+    Conditions = [ "LEEF:1.0|ESET|RemoteAdministrator|", """cat=ESET""", """|Failed domain user login|""" ]
     Fields = [
-      """\Wcat=({category}[^=]+?)\s*(\w+=|$)""",
-      """\Wsev=({alert_severity}\d+)""",
-      """\WdevTime=({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
-      """\Wsrc=({src_ip}[a-fA-F:\d.]+)""",
+      """(\s|\|)cat=({category}.+?)\s*(\w+=|$)""",
+      """(\s|\|)sev=({alert_severity}\d+)""",
+      """(\s|\|)devTime=({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
+      """(\s|\|)src=({src_ip}(\d{1,3}\.){3}\d{1,3})""",
       """\Waction=({activity}[^\s]+)\s""",
-      """\Wresult=({outcome}[^=]+?)\s*(\w+=|$)""",
+      """\Wresult=({outcome}.+?)\s*$""",
       """\WdeviceName=({host}[^\s]+)\s""",
       """\Wtarget=({object}[^\s]+)\s*""",
       """\Wdetail=({additional_info}[^.]+).""",

@@ -6,9 +6,11 @@ Product: BlueCat Networks Adonis
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   2   |   1    |     2      |      1      |    1    |
 
-|                Use-Case                | Event Types/Parsers                                                            | MITRE TTP                                                                                | Content                                                                                         |
-|:--------------------------------------:| ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) |  dns-query<br> ↳ [leef-dns-query](Parsers/parserContent_leef-dns-query.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1071 - Application Layer Protocol<br> | [<ul><li>2 Rules</li></ul>](Rules_Models/r_m_bluecat_networks_bluecat_networks_adonis_Other.md) |
+|                               Use-Case                               | Event Types/Parsers                                                            | MITRE TTP                                                                                | Content                                                                                                        |
+|:--------------------------------------------------------------------:| ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+|    [Malware Detection](../../../UseCases/uc_malware_detection.md)    |  dns-query<br> ↳ [leef-dns-query](Parsers/parserContent_leef-dns-query.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1071 - Application Layer Protocol<br> | [<ul><li>2 Rules</li></ul>](Rules_Models/r_m_bluecat_networks_bluecat_networks_adonis_Malware_Detection.md)    |
+|             [Phishing](../../../UseCases/uc_phishing.md)             |  dns-query<br> ↳ [leef-dns-query](Parsers/parserContent_leef-dns-query.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1071 - Application Layer Protocol<br> | [<ul><li>2 Rules</li></ul>](Rules_Models/r_m_bluecat_networks_bluecat_networks_adonis_Phishing.md)             |
+| [Ransomware Detection](../../../UseCases/uc_ransomware_detection.md) |  dns-query<br> ↳ [leef-dns-query](Parsers/parserContent_leef-dns-query.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1071 - Application Layer Protocol<br> | [<ul><li>2 Rules</li></ul>](Rules_Models/r_m_bluecat_networks_bluecat_networks_adonis_Ransomware_Detection.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

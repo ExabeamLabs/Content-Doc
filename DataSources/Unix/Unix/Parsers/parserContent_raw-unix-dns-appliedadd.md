@@ -3,6 +3,7 @@
 {
 Name = raw-unix-dns-appliedadd
   Vendor = Unix
+  Product = Unix
   Lms = Direct
   DataType = "dhcp"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

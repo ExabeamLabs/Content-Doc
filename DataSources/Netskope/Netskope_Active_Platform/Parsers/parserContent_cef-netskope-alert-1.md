@@ -9,31 +9,26 @@ Name = cef-netskope-alert-1
   TimeFormat = "epoch_sec"
   Conditions = [ """CEF:""", """|Skyformation|""", """destinationServiceName=Netskope""", """"alert":"yes"""" ]
   Fields = [
-    """exabeam_host=({host}[\w.\-]+)""",
+    """({host}[\w\-.]+)\s+Skyformation""",
     """"_insertion_epoch_timestamp"":({time}\d+)""",
     """"timestamp":({time}\d+)""",
     """"user":"(({user_email}[^@"\s]+@[^@"\s]+)|(({domain}[^"@\\\/\s]+)[\\\/]+)?({user}[^"@\\\/\s]+))"""",
-    """duser=({external_address}[^@<]+@?({external_domain}[^\s,>]+))""",
     """"app":"({process}[^"]+)""",
-    """"type":"({alert_type}[^"]+)""",
-    """"category":"(n\/a|({alert_type}[^"]+))""",
+    """"type":"({threat_category}[^"]+)""",
+    """"category":"(n\/a|({threat_category}[^"]+))""",
     """"url":"({malware_url}[^"]+)""",
     """"severity":"({alert_severity}[^"]+)""",
     """"md5":"({md5}[^"]+)""",
     """"policy":"({alert_name}[^"]+)""",
-    """"alert_name":"\s*({additional_info}[^"]+)"""",
-    """"alert_type":"({alert_name}[^"]+)""",
-    """dpriv=({alert_name}[^=]+)\s+\w+=""", 
+    """"alert_name":"\s*({alert_name}[^"]+)"""",
+    """"type":"({alert_type}[^"]+)""",
+    """dpriv=({alert_type}.*?)\s+\w+=""",    
     """"file_path":"({malware_file_name}[^"]+)""",
     """"object":"({object}[^"]+)""",
     """"breach_id":"\s*({alert_id}[^"]+)"""",
     """duser=({user}[^\s]+)""",
-    """"organization_unit":"({user_ou}[^"]+)"""",
-    """"owner":"({file_owner_at}[^"]+)"""",
-    """"user":"({from_user_at}[^"]+)"""",
-    """"shared_with":"({shared_with_at}[^"]+)"""",
-    """"site":"({site_at}[^"]+)""""
+    """"organization_unit":"({user_ou}[^"]+)""""
   ]
-  DupFields = [ "malware_url->full_url", "malware_file_name->file_path_at" ]
+  DupFields = [ "malware_url->full_url" ]
 }
 ```

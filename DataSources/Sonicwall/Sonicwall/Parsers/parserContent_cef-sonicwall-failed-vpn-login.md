@@ -3,6 +3,7 @@
 {
 Name = cef-sonicwall-failed-vpn-login
   Vendor = Sonicwall
+  Product = Sonicwall
   Lms = ArcSight
   DataType = "failed-vpn-login"
   TimeFormat = "epoch"

@@ -2,6 +2,7 @@
 ```Java
 {
 Name = bro-ssh-2
+  Product = Bro
   DataType = "ssh-login"
   Conditions = [ """"id.orig_h""", """"id.resp_h""", """"server":"SSH""" ]
   Fields = ${BroParserTemplates.json-bro-activity.Fields}[
