@@ -10,9 +10,9 @@ Name = pan-auth-failed-1
   Conditions = [ """,SYSTEM,auth,""", """,auth-fail,""" ]
   Fields = [
     """\w+\s+\d+\s+\d+:\d+:\d+\s+({host}[\w\-.]+)\s+\d+,({time}\d+\/\d+\/\d+\s+\d+:\d+:\d+),""",    
-    """"failed authentication for user '(localhost|none|system|({src_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%\.]*:[A-Fa-f0-9%\.:]+))|({user}[^']+))'""",
-    """Reason:\s*({failure_reason}[^\.]+)\.\s""",
-    """From:\s*(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[^"]+?))\.?"""",
+    """"failed authentication for user '({user}[^']+)""",
+    """Reason:\s*({failure_reason}.+?)\.\s""",
+    """From:\s*(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}.+?))\.?"""",
     """auth profile '({service}[^\']+)'""",
   ]
 }

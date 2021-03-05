@@ -3,6 +3,7 @@
 {
 Name = cef-prowatch-badge-access
     Vendor = ProWatch
+  Product = ProWatch
     Lms = ArcSight
     DataType = "physical-access"
     TimeFormat =  "epoch"

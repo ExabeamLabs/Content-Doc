@@ -4,11 +4,13 @@ Product: SafeSend
 -----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  29   |   12   |     2      |      1      |    1    |
+|  33   |   15   |     2      |      1      |    1    |
 
-|                Use-Case                | Event Types/Parsers                                                                                              | MITRE TTP                                                                    | Content                                                                                              |
-|:--------------------------------------:| ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) |  dlp-email-alert-out<br> ↳ [s-safesend-dlp-email-alert](Parsers/parserContent_s-safesend-dlp-email-alert.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1078 - Valid Accounts<br> | [<ul><li>29 Rules</li></ul><ul><li>12 Models</li></ul>](Rules_Models/r_m_safesend_safesend_Other.md) |
+|                                  Use-Case                                  | Event Types/Parsers                                                                                              | MITRE TTP                                          | Content                                                                                                          |
+|:--------------------------------------------------------------------------:| ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  dlp-email-alert-out<br> ↳ [s-safesend-dlp-email-alert](Parsers/parserContent_s-safesend-dlp-email-alert.md)<br> | T1078 - Valid Accounts<br>                         | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_safesend_safesend_Compromised_Credentials.md)                       |
+|       [Data Exfiltration](../../../UseCases/uc_data_exfiltration.md)       |  dlp-email-alert-out<br> ↳ [s-safesend-dlp-email-alert](Parsers/parserContent_s-safesend-dlp-email-alert.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br> | [<ul><li>32 Rules</li></ul><ul><li>15 Models</li></ul>](Rules_Models/r_m_safesend_safesend_Data_Exfiltration.md) |
+|                [Phishing](../../../UseCases/uc_phishing.md)                |  dlp-email-alert-out<br> ↳ [s-safesend-dlp-email-alert](Parsers/parserContent_s-safesend-dlp-email-alert.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br> | [<ul><li>7 Rules</li></ul><ul><li>4 Models</li></ul>](Rules_Models/r_m_safesend_safesend_Phishing.md)            |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

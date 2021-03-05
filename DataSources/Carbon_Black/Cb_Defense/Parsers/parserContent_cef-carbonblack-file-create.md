@@ -10,7 +10,7 @@ Name = cef-carbonblack-file-create
   Conditions = [ """CEF:""", """threatIndicators":""", """fileType=file"""]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-    """"eventTime=({time}\d+)""",
+    """eventTime=({time}\d+)""",
     """"deviceIpAddress=({src_ip}[A-Fa-f:\d.]+)""",
     """src=({src_ip}[A-Fa-f:\d.]+)""",
     """deviceName=(({domain}[^\\\s"]+)\\+)?({src_host}[^\\\s"]+)""",

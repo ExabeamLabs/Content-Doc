@@ -18,7 +18,7 @@ Name = raw-windows-account-4722
      """Computer(\w+)?["\s]*(:|=)\s*"?({host}.+?)("|\s)""",
      """"system_name":"({host}[^"]+)"""",
      """({event_code}4722)""",
-     """Security(,|\srn=)({record_id}\d+)""",
+     """Security(,|\srn=|\s+)({record_id}\d+)""",
      """Account Name:\s*\\?({user}[^\s]+)\s*Account Domain:\s*({domain}[^\s]+).+?Logon ID:\s*({logon_id}[^\s]+)\s*Target.+?Account Name:\s*({target_user}[^\s]+)\s*Account Domain:\s*({target_domain}[^\s"]+)""",
      """"Account":"(({domain}[^\\\s"]+)\\+)?({user}[^\\\s"]+)""",
      """"TargetAccount":"(({target_domain}[^\\\s"]+)\\+)?({target_user}[^\\\s"]+)""",

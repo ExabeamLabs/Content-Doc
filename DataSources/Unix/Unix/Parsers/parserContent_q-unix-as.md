@@ -3,11 +3,13 @@
 {
 Name = q-unix-as
   Vendor = Unix
+  Product = Unix
   Lms = QRadar
   DataType = "unix-account-switch"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+  TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ "session opened for user", "(uid=", "sshd:", "_unix" ]
   Fields = [
+    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """({host}[\w\-.]+)\s+pam_unix""",
     """({time}\d+-\d+-\d+T\d+:\d+:\d+[\+\-]\d+:\d+)""",

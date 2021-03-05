@@ -15,7 +15,7 @@ Name = cef-pan-proxy
     """\sact=({action}[^\s]+)""",
     """\sproto=({protocol}[^\s]+)""",
     """\srt=({time}\d+)""",
-    """\Wrt=({time}\W+ \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
+    """\Wrt=({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
     """\ssrc=({src_ip}[^\s]+)""",
     """\ssuser=(|(({domain}[^\\=]*?)\\+)?({user}.+?))(\s+\w+=|\s*$)""",
     """\sdst=({dest_ip}.+?)(\s+\w+=|\s*$)""",

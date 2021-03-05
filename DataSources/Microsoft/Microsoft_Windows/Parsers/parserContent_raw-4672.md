@@ -10,6 +10,7 @@ Name = raw-4672
     Conditions = ["Special privileges assigned to new logon", "Privileges"]
     Fields = [
       """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
+      """"host":"({host}[^"]+)""""
       """({event_name}Special privileges assigned to new logon)""",
       """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """({host}[\w\-.]+)\s+({time}\d+\/\d+\/\d+\s+\d+:\d+:\d+\s+(am|AM|pm|PM))""",

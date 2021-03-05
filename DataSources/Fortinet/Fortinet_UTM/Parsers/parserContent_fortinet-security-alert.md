@@ -23,7 +23,7 @@ Name = fortinet-security-alert
   ]
   SOAR {
     IncidentType = "malware"
-    DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->malwareName","alert_severity->sourceSeverity", "alert_id->sourceId", "src_ip->malwareVictimHost", "malware_url->malwareAttackerUrl", "alert_type->description", "dest_ip->malwareAttackerIp"]
+    DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->malwareName","alert_severity->sourceSeverity", "alert_id->sourceId", "src_ip->malwareVictimHost", "malware_url->malwareAttackerUrl", "alert_type->description", "dest_ip->malwareAttackerIp", "malware_url->process_name"]
     NameTemplate = """Fortinet Alert ${alert_name} found"""
     ProjectName = "SOC"
     EntityFields = [

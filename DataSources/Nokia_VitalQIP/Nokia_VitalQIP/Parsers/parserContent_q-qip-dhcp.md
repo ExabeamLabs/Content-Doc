@@ -3,6 +3,7 @@
 {
 Name = q-qip-dhcp
     Vendor = Nokia VitalQIP
+  Product = Nokia VitalQIP
     Lms = QRadar
     DataType = "dhcp"
     TimeFormat = "epoch"

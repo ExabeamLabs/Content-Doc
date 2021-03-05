@@ -3,6 +3,7 @@
 {
 Name = json-bro-kerberos
   Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "remote-access"
   IsHVF = true

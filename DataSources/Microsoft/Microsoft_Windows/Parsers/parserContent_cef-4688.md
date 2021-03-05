@@ -25,6 +25,7 @@ Name = cef-4688
     """\Wcs2=({activity_type}.+?)\s*(\w+=|$)""",
     """\Wcs3=({process_guid}[^\s]+)\s*(\w+=|$)""",
     """\Wcs4=({command_line}.+?)\s*(\w+=|$)""",
+    """\Wcs4=\s*(|-|(sc|((?:[^"]+)?[\\\/])?sc.exe)\s*(?:\\*[\w.\-]+)?\s*create\s*({service_name}.+?))\s+binPath= ({process}({directory}(?:[^"]+?)?[\\\/])?({process_name}[^\\\/]+?))\s*(\w+=|$)""",
     """\Wcs5=({parent_process_guid}[^\s]+)\s*(\w+=|$)""",
   ]
   DupFields = [ "host->dest_host", "process_guid->pid","directory->process_directory" ]

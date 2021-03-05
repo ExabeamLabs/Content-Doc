@@ -7,12 +7,12 @@ Name = cef-O365-dlp-email
   Lms = ArcSight
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ """"MessageTraceId":"""", """"SenderAddress":"""", """"RecipientAddress":"""" ]
+  Conditions = [ """"MessageTraceId":"""", """"SenderAddress":"""", """"RecipientAddress":"""", """cs6=""" ]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
     """({host}[\w\-.]+) Skyformation""",
     """cs6=.*?"StartDate":"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
-    """cs6=.*?"Subject":"({subject}.+?)\s*",""",
+    """cs6=.*?"Subject":"({subject}.*?\S)\s*",""",
     """cs6=.*?"Direction":"({direction}[^"]+)"""",
     """cs6=.*?"SenderAddress":"({sender}[^",]+)"""",
     """cs6=.*?"SenderAddress":"[^@]+@({external_domain_sender}[^",]+)"""",

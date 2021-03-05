@@ -3,6 +3,7 @@
 {
 Name = syslog-qip-dhcp
     Vendor = Nokia VitalQIP
+  Product = Nokia VitalQIP
     Lms = Syslog
     DataType = "dhcp"
     TimeFormat = "dd/MM/yyyy HH:mm:ss"

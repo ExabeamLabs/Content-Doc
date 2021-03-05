@@ -14,6 +14,7 @@ Name = cef-checkpoint-vpn-login-1
     """\Wduser=({user_lastname}[^\,=]+),\s*({user_firstname}[^\(=]+?)\s*(\(({user}[^\s\)=]+)\))?\s+(\w+=|$)""",
     """\Wsntdom=({domain}[^\s]+)""",
     """\Worigin=({src_ip}[A-Fa-f:\d.]+)""",
+    """\Wsrc=({src_translated_ip}[A-Fa-f:\d.]+)""",
   ]
 }
 ```

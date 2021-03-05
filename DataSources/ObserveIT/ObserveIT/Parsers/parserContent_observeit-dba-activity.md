@@ -3,6 +3,7 @@
 {
 Name = observeit-dba-activity
   Vendor = ObserveIT
+  Product = ObserveIT
   Lms = Direct
   DataType = "database-access"
   IsHVF = true

@@ -3,6 +3,7 @@
 {
 Name = s-dtex
   Vendor = Dtex
+  Product = Dtex
   Lms = Splunk
   DataType = "dtex"
   IsHVF = true

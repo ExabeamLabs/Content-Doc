@@ -3,6 +3,7 @@
 {
 Name = bitglass-app-login-failed
   Vendor = BitGlass
+  Product = BitGlass
   Lms = Direct
   DataType = "failed-app-login"
   TimeFormat = "dd MMM yyyy HH:mm:ss"

@@ -10,9 +10,11 @@ Name = crowdstrike-host-info
     Conditions = [ """"event_simpleName":"HostInfo"""", """"aid"""" ]
     Fields = [
       """"timestamp":"({time}\d+)""",
-      """"MachineDn":"CN=({dest_host}[^,]+)""",
+      """"+MachineDn"+:"+CN\\*(=|u003d)?({dest_host}[^,]+)""",   
       """"aid":"({aid}[^"]+)""",
-      """"event_simpleName":"({event_code}[^"]+)"""
+      """"event_simpleName":"({event_code}[^"]+)""",
+      """suser=(system|({user}[^\s]+))"""
     ]
+    DupFields = [ "dest_host->host" ] 
   }
 ```

@@ -10,6 +10,7 @@ Name = unix-process-creation-failure
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
     Conditions = [ """type=SYSCALL""", """success=no""", """msg=audit""", """audispd:""" ]
     Fields = [
+      """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
       """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d)""",
       """exe="({process}[^"]*)"""",
       """exe="({process_directory}.+\/)({process_name}.+?)"""",

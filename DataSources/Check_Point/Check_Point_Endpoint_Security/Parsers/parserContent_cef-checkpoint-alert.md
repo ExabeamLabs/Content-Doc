@@ -9,6 +9,7 @@ Name = cef-checkpoint-alert
   TimeFormat = "epoch"
   Conditions = [ """|Check Point|New Anti Virus|""",  """cs4Label=""" ]
   Fields = [
+    """exabeam_host=({host}[\w-.]+)""",
     """({host}[\w.\-]+) CEF:""",
     """\Wcp_severity=(?:|({alert_severity}.+?))(\s+\w+=|\s*$)""",
     """\Wrt=({time}\d+)""",

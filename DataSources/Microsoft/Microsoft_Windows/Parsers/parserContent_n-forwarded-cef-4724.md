@@ -13,6 +13,7 @@ Name = n-forwarded-cef-4724
       """\srt=({time}\d+)""",
       """shost=({host}[^\s]+)""",
       """sntdom=({domain}[^\s]+)""",
+      """dntdom=({target_domain}[^\s]+)""",
       """suser=({user}.+?)\s+\w+=""",
       """duser=({target_user}.+?)\s+\w+=""",
       """nitroSource_Logon_ID=({logon_id}.+?)(\s|0\|)""",

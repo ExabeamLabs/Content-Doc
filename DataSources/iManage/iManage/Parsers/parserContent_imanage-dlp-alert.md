@@ -3,6 +3,7 @@
 {
 Name = imanage-dlp-alert
   Vendor = iManage
+  Product = iManage
   Lms = Direct
   DataType = "dlp-alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.S"
