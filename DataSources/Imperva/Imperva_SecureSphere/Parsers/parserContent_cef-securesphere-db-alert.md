@@ -7,10 +7,11 @@ Name = cef-securesphere-db-alert
   Lms = Splunk
   DataType = "database-alert"
   IsHVF = true
-  TimeFormat = "MMM dd yyyy HH:mm:ss"
-  Conditions = [ """|Imperva Inc.|SecureSphere""", """cat=Alert""", """=ServerGroup""" ]
+  TimeFormat = "dd MMMM yyyy HH:mm:ss"
+  Conditions = [ """|Imperva Inc.|SecureSphere""", """cat=Alert""", """=ServerGroup""", """Query"""]
   Fields = [
-    """\srt=({time}\w+ \d+ \d{4} \d\d:\d\d:\d\d)""",
+    """exabeam_host=({host}[\w\-.]+)""",
+    """cs7=\s*\(({time}\d\d \w+ \d{4} \d\d:\d\d:\d\d)\)\s*cs7Label=EventTime""",
     """\d\d:\d\d:\d\d ({host}.+?) CEF:""",
     """\sduser="*(?:n\/a|(({domain}[^\\\s"]+)\\+)?({user}[^\\\s"]+?))"*\s*\w+=""",
     """\scs4=(?: |({app}.+?))\s*\w+=""",
@@ -22,7 +23,9 @@ Name = cef-securesphere-db-alert
     """\scs5=({alert_name}.+?) (from|by|\w+=)""",
     """\scs1=({alert_type}.+?)\s*\w+=""",
     """alert_num=({alert_id}\d+)""",
-    """([^|]+\|){8}({alert_severity}[^|]+)"""
+    """([^\|]+\|){6}({alert_severity}[^|]+)""",
+    """spt=({src_port}\d+)""",
+    """dpt=({dest_port}\d+)"""
   ]
 }
 ```

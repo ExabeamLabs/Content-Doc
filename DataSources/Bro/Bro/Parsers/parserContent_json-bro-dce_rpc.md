@@ -3,6 +3,7 @@
 {
 Name = json-bro-dce_rpc
   Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "remote-access"
   IsHVF = true

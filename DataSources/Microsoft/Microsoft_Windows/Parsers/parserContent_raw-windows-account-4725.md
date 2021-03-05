@@ -11,7 +11,7 @@ Name = raw-windows-account-4725
     Fields = [
       """({event_name}A user account was disabled)""",
       """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
-      """Security,({record_id}[\d]+),""",
+      """Security(,|\s+)({record_id}[\d]+)""",
       """({event_code}4725)""",
       """exabeam_host=({host}[\w.\-]+)""",
       """(?i)(((audit|success)( |_)(success|audit))|information)(\s+|,)({host}[^,\s\=]+)""",

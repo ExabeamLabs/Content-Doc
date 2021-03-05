@@ -17,12 +17,12 @@ Name = json-mcafee-epo-alert-1
     """"threatcategory":"({threat_category}[^"]+)"""",
     """"sourceprocessname":"({process}(({directory}[^"]+?)\\+)?({process_name}[^"\\]*))"""",
     """"operatingsystem":"({os}[^"]+)"""",
-    """"analyzerdetectionmethod":"({additional_info}[^"]+)"""",
-    """"action":"({alert_name}[^"]+)"""",
+    """"analyzerdetectionmethod":"(\s+|({additional_info}[^"]+))"""",
+    """"action":"(_|({alert_name}[^"]+))"""",
     """"autoid":({alert_id}[^",]+)""",
     """"targetfilename":"({malware_url}.*?[\\\/]?({malware_file_name}[^\\\/]+?))"""",
     """"analyzername":"({event_name}[^"]+)"""",
-    """"threattype":"({alert_type}[^"]+)"""",
+    """"threattype":"(\s+|({alert_type}[^"]+))"""",
     """"mccomputername":"({src_host}[^"]+)"""",
   ]
   DupFields = [ "directory->process_directory" ]

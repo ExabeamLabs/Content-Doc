@@ -7,6 +7,7 @@ Name = cef-microsoft-app-activity-19
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields} [
     """"ParentFolder":.+?"Path":"\\*({object}[^"]+)"""",
     """"DestFolder":.+?"Path":"\\*({object}[^"]+)"""",
+    """\srequest=({outcome}[^\s]+)\s""",
   ]
 }
 ```

@@ -13,7 +13,7 @@ Name = code42-file-operations-4
     """"eventType"+:\s*"+({accesses}MODIFIED|DELETED|READ|CREATED)""",
     """"mimeTypeByExtension"+:\s*"+({mime}[^"]+)"""",
     """"tabUrl"+:\s*"+({full_url}[^"]+)"""",
-    """"exposure"+:\s*\["*({source}[^"\]]+)"*\]""",
+    """"exposure"+:\s*\["*({log_source}[^"\]]+)"*\]""",
     """"processName"+:\s*"+({process_name}[^"]+)"""",
     """"userUid"+:\s*"+({user_uid}[^"]+)"""",
     """"deviceUid"+:\s*"+({device_id}[^"]+)"""",
@@ -31,6 +31,7 @@ Name = code42-file-operations-4
     """"deviceUserName"+:\s*"+({user_email}[^"]+)"""",
     """"osHostName"+:\s*"+({dest_host}[^"]+)"""",
     """"windowTitle"+:\s*\["*({service}[^"\]]+)"*\]""",
+    """"actor"+:"+(({user_email}[^"@]+@[^"@]+)|({user}[^"]+))""",
   ]
   DupFields = ["file_path->file_parent", "dest_host->device_name"]
 }

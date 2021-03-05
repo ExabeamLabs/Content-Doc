@@ -13,7 +13,7 @@ Name = honeywell-physical-badge-access
     """"fielddatetime":"({time}\d+-\d+-\d+T\d+:\d+:\d+)""",
     """"source":"({src_host}[\w\-.]+)""",
     """"category":({category}\d+)""",
-    """"eventid":({event_id}\d+)""",
+    """"eventid":({event_code}\d+)""",
     """"cardholderid":({badge_id}\d+)""",
     """"areacode":({area_code}\d+)""",
     """"description":"({additional_info}[^"]+)""",

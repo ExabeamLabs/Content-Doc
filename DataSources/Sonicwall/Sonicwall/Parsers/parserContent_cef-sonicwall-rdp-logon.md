@@ -3,6 +3,7 @@
 {
 Name = cef-sonicwall-rdp-logon
   Vendor = Sonicwall
+  Product = Sonicwall
   Lms = ArcSight
   DataType = "remote-logon"
   TimeFormat = "epoch"

@@ -7,15 +7,15 @@ Name = cef-carbonblack-security-alert-1
   Lms = ArcSight
   DataType = "alert"
   TimeFormat = "epoch"
-  Conditions = [ """CEF:""", """threatIndicators":""" , """|security-threat-detected"""]
+  Conditions = [ """CEF:""", """threatIndicators""" , """|security-threat-detected""", """targetPriorityType=HIGH""" ]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
     """eventTime=({time}\d+)""",
     """deviceIpAddress=({src_ip}[A-Fa-f:\d.]+)""",
     """src=({src_ip}[A-Fa-f:\d.]+)""",
     """deviceName=(({domain}[^\\\s"]+)\\+)?({src_host}[^\\\s"]+)"?""",
-    """email=(({domain}[^\\\s"]+)\\+)?({user}\w+)"""",
-    """\Wsuser=(({domain}[^\\\/=]+)[\\\/]+)?({user}[^=]+?)(\s+\w+=|\s*$)""",
+    """email=(({domain}[^\\\s"]+)\\+)?(SYSTEM|({user}[^\s"@]+))"""",
+    """\Wsuser=(({domain}[^\\\/=]+)[\\\/]+)?(SYSTEM|({user}[^=\s"@]+?))(\s+\w+=|\s*$)""",
     """flexString1=({alert_name}.+?)\s\w+=""",
     """eventType=({alert_name}.+?)\s\w+="?""",
     """applicationName=({process_name}.+?)\s\w+="""",

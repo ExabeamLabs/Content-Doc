@@ -3,6 +3,7 @@
 {
 Name = cef-skyformation-password-change
   Vendor = Cloud Application
+  Product = Cloud Application
   Lms = ArcSight
   DataType = "password-change"
   TimeFormat = "epoch"

@@ -9,6 +9,7 @@ Name = raw-4778
     TimeFormat = "MMM dd HH:mm:ss yyyy"
     Conditions = ["A session was reconnected to a Window Station", "Session Name"]
     Fields = [
+      """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
       """({event_name}A session was reconnected to a Window Station)""",
       """({host}[\w\-.]+)\s+({time}\d+\/\d+\/\d+\s+\d+:\d+:\d+\s+(am|AM|pm|PM))""",
       """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",

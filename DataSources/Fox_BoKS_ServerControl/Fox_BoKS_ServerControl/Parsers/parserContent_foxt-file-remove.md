@@ -3,6 +3,7 @@
 {
 Name = foxt-file-remove
   Vendor = Fox BoKS ServerControl
+  Product = Fox BoKS ServerControl
   Lms = Exabeam
   DataType = "file-operations"
   IsHVF = true

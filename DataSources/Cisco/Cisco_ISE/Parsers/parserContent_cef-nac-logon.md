@@ -12,13 +12,13 @@ Name = cef-nac-logon
     """\Wrt=({time}\d+)""",
     """\Wdvc=({host}[A-Fa-f:\d.]+)""",
     """\Wdvchost=({host}[\w\-.]+)""",
-    """\Wsuser=({user}[^\s]+)""",
+    """\Wsuser=(({user_type}host)\/)?({user}[^\s]+)""",
     """\Wdhost=({dest_host}[\w\-.]+)""",
     """\Wdst=({dest_ip}[A-Fa-f:\d.]+)""",
     """\Wcs6=Location#All Locations#AL#({location}[^,;]+)"""
     """\Wsource-ip\\=({src_ip}[A-Fa-f:\d.]+)""",
     """\Wad\.NetworkDeviceName=({network}[^,\s]+)"""
   ]
-  DupFields = [ "dest_ip->auth_server" ]
+  DupFields = [ "dest_ip->auth_server" , "dest_host->computer_name"]
 }
 ```

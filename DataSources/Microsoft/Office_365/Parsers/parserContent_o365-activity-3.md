@@ -26,8 +26,12 @@ Name = o365-activity-3
     """\ssuser=[^=\s]*?@([\.\w+]+\.)?({email_domain}[^\.\s"]+?\.[^\s"\.>]+)""",
     """ext_rawDataJson_ItemName=({subject}.+?)\s\w+="""
     """Sender":"({sender}[^"]+)""",
-    """Receivers":({recipients}.+?\]),""""
-    """Receivers":\["({recipient}[^"]+)"""
+    """Receivers":({recipients}.+?\]),"""",
+    """Receivers":\["({recipient}[^"]+)""",
+    """"ClientIP"+:"+({src_ip}[A-Fa-f:\d.]+)""",
+    """UserAgent"*:\s*"*({user_agent}[^"]+)""",
+    """DatasetName"*:\s*"*({data_set_name}[^"]+)""",
+    """Workload"*:\s*"*({resource}[^"]+)"*""",
   ]
 }
 ```

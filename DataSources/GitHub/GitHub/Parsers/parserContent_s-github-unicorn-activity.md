@@ -25,7 +25,8 @@ Name = s-github-unicorn-activity
     """\suser_agent="(?:-|Mozilla\/.+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
     """\suser_agent="(?:-|Mozilla\/.+\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+Gecko\/\d+\s+({browser}\w+))""",
     """\sstatus=({result}\d+)""",
-    """({app}github)"""
+    """({app}github)""",
+    """accept=({mime}[^\s]+)"""
   ]
 }
 ```

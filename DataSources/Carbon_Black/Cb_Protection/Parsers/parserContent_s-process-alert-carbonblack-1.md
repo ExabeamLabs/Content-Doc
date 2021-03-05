@@ -27,6 +27,7 @@ Name = s-process-alert-carbonblack-1
     """"parent_guid"\s*:\s*"({parent_process_guid}[^"]+)""",
     """"parent_name"\s*:\s*"({parent_process}[^"]+)""",
     """"cmdline"\s*:\s*"\\?"({command_line}[^"]+?)\\?"""",
+    """"host_type"\s*:\s*"({host_type}[^"]+)"""",
   ]
   DupFields = [ "process->path", "ioc->alert_name" ]
   SOAR {

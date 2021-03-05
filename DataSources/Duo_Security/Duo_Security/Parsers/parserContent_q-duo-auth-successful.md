@@ -3,6 +3,7 @@
 {
 Name = q-duo-auth-successful
   Vendor = Duo Security
+  Product = Duo Security
   Lms = QRadar
   DataType = "authentication-successful"
   TimeFormat = "MM/dd/yyyy HH:mm:ss"

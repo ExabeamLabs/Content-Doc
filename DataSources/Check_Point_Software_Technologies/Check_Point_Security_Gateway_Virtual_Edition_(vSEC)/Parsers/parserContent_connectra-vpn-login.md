@@ -15,7 +15,9 @@ Name = connectra-vpn-login
     """\|time=({time}\d+\w+\d\d\d\d \d+:\d+:\d+)""",
     """\|src=(?:({src_ip}[a-fA-F\d.:]+)|({src_host}[\w.\-]+))\|""",
     """\|office_mode_ip=({host}[a-fA-F\d.:]+)""",
-    """\|Hostname=({host}[^\|]+)\|"""
+    """\|Hostname=({host}[^\|]+)\|""",
+    """\|User=({user}[^,]+)""", 
   ]
+  DupFields = ["user->account"]
 }
 ```

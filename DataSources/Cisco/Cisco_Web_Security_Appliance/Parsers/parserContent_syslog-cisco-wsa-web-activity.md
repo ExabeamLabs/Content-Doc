@@ -19,7 +19,7 @@ Name = syslog-cisco-wsa-web-activity
     """\d{10}\.\d{3}\s+([^\s]+\s){6}"*(?:-|(({domain}[^\\]+)\\+)?({user}[^@"\s]+))""",
     """\d{10}\.\d{3}\s+([^\s]+\s){5}(\w+:\/+)?({web_domain}(?:({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|[^\s\/:]+))""",
     """\d{10}\.\d{3}\s+([^\s]+\s){9}(?:-|({action}[^\s-]+))""",
-    """\d{10}\.\d{3}\s+([^\s]+\s){8}(?:-|({mime}[^\s]+))""",
+    """\d{10}\.\d{3}\s+([^\s]+\s){8}(?:["-]+|({mime}[^\s]+))""",
     """\Wdst\s*({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\WdstPort\s*({dest_port}\d+)""",
     """\d{10}\.\d{3}\s+([^\s]+\s){9}[^\s]+\s+<(?:-|nc|({category}[^,>]+))""",
@@ -28,7 +28,7 @@ Name = syslog-cisco-wsa-web-activity
     """\Wuserag\s*"*(?:[\s-]|({browser}[\w\-]+)\/[\d\._]+)""",
     """\Wuserag\s*"*(?:[\s-]|({browser}[^\/;]+).+({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin))""",
     """Mozilla\/.+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
-    """\d{10}\.\d{3}\s+(?:[^\s]+\s){5}(\d+\/)?(?:\w+:\/+)(?:-|.*?({top_domain}(?!(?:\d+\.){3}\d+)[^=,"\.\s\/:]+(?=(?:\.(?:com|net|tv|io|info|edu|org|gov|co|us|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|me|jp|ca|cn|uk|my|cc|id|nz|biz|club|gg|fi|au|st|tw|asia|sg|ie|li|za))+(?:\s|:|\/))[^\s\/]+))"""
+    """\d{10}\.\d{3}\s+(?:[^\s]+\s){5}(\d+\/)?(?:\w+:\/+)(?:-|.*?({top_domain}(?!(?:\d+\.){3}\d+)[^\.\s\/:]+(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+(,|\/|\s))[^,\/\s]+))""" 
   ]
 }
 ```

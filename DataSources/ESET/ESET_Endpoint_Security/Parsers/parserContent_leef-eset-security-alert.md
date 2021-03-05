@@ -7,7 +7,7 @@ Name = leef-eset-security-alert
     Lms = QRadar
     DataType = "alert"
     TimeFormat = "MMM dd yyyy HH:mm:ss"
-    Conditions = [ "LEEF:1.0|ESET|RemoteAdministrator|","cat=ESET Threat Event" ]
+    Conditions = [ "LEEF:1.0|ESET|RemoteAdministrator|","cat=ESET","threatType=" ]
     Fields = [
       """exabeam_host=({host}[\w\-.]+)""",
       """(\s|\|)cat=({threat_category}.+?)\s*(\w+=|$)""",
@@ -20,6 +20,6 @@ Name = leef-eset-security-alert
       """(\s|\|)actionTaken=({action}.+?)\s*(\w+=|$)""",
       """(\s|\|)accountName=((({domain}.+?)\\+)?({user}.+?))\s*(\w+=|$)""",
     ]
-    DupFields = ["action->additional_info"]
+    DupFields = ["action->additional_info", "host->dest_host", "malware_url->process_name"]
   }
 ```

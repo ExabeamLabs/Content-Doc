@@ -10,15 +10,16 @@ Name = symantec-cloud-activity
   Conditions = ["""SkyFormation Cloud Apps Security""" , """destinationServiceName=Symantec CloudSOC""" ]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
+    """\s({host}[\w\-.]+)\s+Skyformation""",
     """ext__inserted_timestamp_=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""
-    """suser=({user_email}[^\s]+@.+?)\s\w+=""",
+    """suser=({user_email}[^\s]+@({email_domain}.+?))\s\w+=""",
     """ext__user_name_=({user_fullname}[^\s@]+\s+[^=]+)\s\w+=""",
-    """ext_user=({user_email}[^\s]+@.+?)\s\w+="""
+    """ext_user=({user_email}[^\s]+@({email_domain}.+?))\s\w+="""
     """ext_user=(system|({user}[^\s\@]+))\s\w+=""",
     """ext_service=({app}.+?)\s\w+=""",
-    """ext_browser=({browser}.+?)\s\w+=""",
+    """ext_browser=(Unknown|({browser}.+?))\s\w+=""",
     """ext__user_agent_=({user_agent}.+?)\s\w+=""",
-    """ext__object_name_=({file_path}({file_parent}[^=]*?[\\\/]+)?({file_name}[^\\\/]+?(\.({file_ext}\w+))?))\s+\w+=""",
+    """ext__object_name_=(|({file_path}({file_parent}[^=]*?[\\\/]+)?(|({file_name}[^\\\/=]*?(\.({file_ext}\w*))?)?)))\s+\w+=""",
     """flexString1=({activity}.+?)\s\w+=""",
     """ext_message=({additional_info}.+?)\s\w+=""",
     """fname=({object}.+?)\s\w+=""",

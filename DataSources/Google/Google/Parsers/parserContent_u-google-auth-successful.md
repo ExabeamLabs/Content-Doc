@@ -3,6 +3,7 @@
 {
 Name = u-google-auth-successful
   Vendor = Google
+  Product = Google
   Lms = Sumo
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

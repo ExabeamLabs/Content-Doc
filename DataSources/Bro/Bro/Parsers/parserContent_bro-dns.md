@@ -3,6 +3,7 @@
 {
 Name = bro-dns
   Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "dns-response"
   TimeFormat = "epoch_sec"

@@ -3,6 +3,7 @@
 {
 Name = rdirectory-object-modification
   Vendor = Namespace rDirectory
+  Product = Namespace rDirectory
   Lms = Direct
   DataType = "ds-access"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

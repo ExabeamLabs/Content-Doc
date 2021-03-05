@@ -15,7 +15,7 @@ Name = cef-sysmon-process-created
     """\Wdvc=({host}[A-Fa-f:\d]+)""",
     """\Wdvchost=({host}[\w\-.]+)""",
     """\Wrt=({time}\d+)""",
-    """\WeventId=({event_id}\d+)""",
+    """\WeventId=({event_code}\d+)""",
     """\WcategoryOutcome=\/({outcome}.+?)\s+(\w+=|$)""",
     """\Wdntdom=(NT AUTHORITY|({domain}\S+))""",
     """\Wduser=(SYSTEM|LOCAL|NETWORK SERVICE|({user}[^\s]+))""",

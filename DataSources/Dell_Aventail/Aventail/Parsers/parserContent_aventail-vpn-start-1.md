@@ -15,5 +15,6 @@ Name = aventail-vpn-start-1
     """Src='\[?({src_ip}[A-Fa-f:\d.]+)\]?:({src_port}\d+)'""",
     """Dest='({dest_ip}[A-Fa-f:\d.]+):({dest_port}\d+)'""",
   ]
+  DupFields = ["user->account"]
 }
 ```

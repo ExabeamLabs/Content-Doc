@@ -22,5 +22,6 @@ Name = cef-symantec-alert
     """\Woutcome=(|({outcome}.+?))(\s+\w+=|\s*$)""",
     """\Wdproc=(|({process_name}.+?))(\s+\w+=|\s*$)""",
   ]
+  DupFields = ["host->dest_host"]
 }
 ```
