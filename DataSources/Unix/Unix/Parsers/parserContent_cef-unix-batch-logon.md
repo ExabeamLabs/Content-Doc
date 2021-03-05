@@ -3,6 +3,7 @@
 {
 Name = cef-unix-batch-logon
   Vendor = Unix
+  Product = Unix
   Lms = ArcSight
   DataType = "batch-logon"
   TimeFormat = "epoch"

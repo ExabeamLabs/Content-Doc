@@ -15,6 +15,7 @@ Name = unix-failed-logon-2
     """<Failed password for ({user}[^\s]+)""",
     """ from ({src_ip}[A-Fa-f:\d.]+)""",
     """ port ({src_port}\d+)""",
+    """\d+\s+\w+\s+\d+\s+\d+:\d+:\d+\s+\w+>\s+<({dest_host}[\w\-.]+)""",
   ]
 }
 ```

@@ -8,5 +8,6 @@ Name = json-4768-1
     """"ticket-options":"({ticket_options}[^"]+)""",
     """"ticket-encryption-type":"({ticket_encryption_type}[^"]+)""",
   ]
+  DupFields = ["host->dest_host"]
 }
 ```

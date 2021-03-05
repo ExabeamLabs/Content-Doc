@@ -3,6 +3,7 @@
 {
 Name = siteminder-auth-failed
   Vendor = SiteMinder
+  Product = SiteMinder
   Lms = Direct
   DataType = "authentication-failed"
   TimeFormat = "dd/MMM/yyyy:HH:mm:ss Z"

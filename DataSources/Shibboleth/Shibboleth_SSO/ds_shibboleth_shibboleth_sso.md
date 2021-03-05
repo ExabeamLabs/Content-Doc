@@ -6,9 +6,9 @@ Product: Shibboleth SSO
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   1    |     1      |      1      |    1    |
 
-|                Use-Case                | Event Types/Parsers                                                                                                  | MITRE TTP                  | Content                                                                                                    |
-|:--------------------------------------:| -------------------------------------------------------------------------------------------------------------------- | -------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) |  account-password-change<br> ↳ [shibboleth-password-change](Parsers/parserContent_shibboleth-password-change.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](Rules_Models/r_m_shibboleth_shibboleth_sso_Other.md) |
+|                                  Use-Case                                  | Event Types/Parsers                                                                                                  | MITRE TTP                  | Content                                                                                                                      |
+|:--------------------------------------------------------------------------:| -------------------------------------------------------------------------------------------------------------------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  account-password-change<br> ↳ [shibboleth-password-change](Parsers/parserContent_shibboleth-password-change.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](Rules_Models/r_m_shibboleth_shibboleth_sso_Compromised_Credentials.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

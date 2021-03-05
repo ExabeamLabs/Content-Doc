@@ -3,6 +3,7 @@
 {
 Name = unix-auth-attempt
   Vendor = Unix
+  Product = Unix
   Lms = Direct
   DataType = "authentication-attempt"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

@@ -3,6 +3,7 @@
 {
 Name = observeit-useractivity
   Vendor = ObserveIT
+  Product = ObserveIT
   Lms = Direct
   DataType = "process-created"
   IsHVF = true

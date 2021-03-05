@@ -2,6 +2,7 @@
 ```Java
 {
 Name = json-bro-web-activity
+  Product = Bro
   DataType = "web-activity"
   Conditions = [ """"status_code":""",  """"trans_depth":""", """"id.resp_h":""" ]
   Fields = ${BroParserTemplates.json-bro-activity.Fields}[

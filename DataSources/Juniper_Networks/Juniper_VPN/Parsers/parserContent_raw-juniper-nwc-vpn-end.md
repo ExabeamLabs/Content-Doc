@@ -16,7 +16,6 @@ Name = raw-juniper-nwc-vpn-end
     """({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|[\w\-\.]+)\s*(Juniper|PulseSecure):""",
     """PulseSecure:\s*({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)\s+\-\s+({host}[\w\-.]+)""",
     """exabeam_host=(.+?@\s*)?({host}[^\s]+)""",
-    """\s+({host}[\w-.]+)\s+PulseSecure:""",
     """\suser=(({domain}[^\\]+)\\)?({user}[^\s]+)\s""",
     """src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """with IP(?:v4 address)?\s+({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
@@ -25,7 +24,7 @@ Name = raw-juniper-nwc-vpn-end
     """PulseSecure:\s*\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d\s+\-\s+({dest_host}[\w\-.]+)""",
     """\s(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w.\-]+))\s+(Juniper|PulseSecure):""",
     """\- \[({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]"""
-    """\- \[({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]\s+(\w+\\)?([\w\s]+?::)?({user}[^\(]+)\([^\[]+\)\[(?!Machine Cert)""",
+    """\- \[({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]\s+(\w+\\)?({user}[^\(]+)\([^\[]+\)\[(?!Machine Cert)""",
     """duration=({session_duration}[^\s]+)\s+"""
   ]
   DupFields = [ "host->dest_host" ]

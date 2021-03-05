@@ -20,7 +20,6 @@ Name = cef-powershell-4104
     """message=({script_message}[^:]+)""",
     """"Path"":""(|({path}.+?))"""",
     """"ProcessID"":""({pid}\d+)"""",
-    """duser=({user}[^\s]+)""", 
   ]
 }
 ```

@@ -14,8 +14,8 @@ Name = box-skyformation-file-activity
     """exabeam_host=({host}[^\s]+)""",
     """({host}[\w\-.]+) Skyformation""",
     """\ssrc=({src_ip}[^\s]+)""",
-    """"login":"(anonymous|({user}[^\s@"]+))"""",
-    """"login":"({user_email}[^\s@"]+@[^\s@"]+)"""",
+    """created_by":.+?"login":"(anonymous|({user}[^\s@"]+))""",
+    """created_by":.+?"login":"({user_email}[^\s@"]+@[^\s@"]+)""",
     """\ssuser=(anonymous|({user}[^\s@"]+))\s+(\w+=|$)""",
     """\ssuser=({user_email}[^\s@]+@[^\s@]+)\s+(\w+=|$)""",
     """"item_name":"({file_name}[^\.]+?)",""""

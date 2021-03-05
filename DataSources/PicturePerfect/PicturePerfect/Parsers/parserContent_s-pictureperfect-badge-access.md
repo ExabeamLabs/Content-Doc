@@ -3,6 +3,7 @@
 {
 Name = s-pictureperfect-badge-access
     Vendor = PicturePerfect
+  Product = PicturePerfect
     Lms = Splunk
     DataType = "physical-access"
     TimeFormat =  "yyyyMMdd|HHmmss"

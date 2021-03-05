@@ -32,7 +32,8 @@ Name = q-process-alert-carbonblack-1
     """\Wparent_name=(|({parent_process}.+?))\s*(\w+=|$)""",
     """\Wcmdline=(|({command_line}.+?))\s*(\w+=|$)""",
     """\Wtype=(|({alert_type}[^"]+?))(\s+\w+=|\s*$)""",
-    """\Wreport_score=({alert_severity}\d+)"""
+    """\Wreport_score=({alert_severity}\d+)""",
+    """\Whost_type=(|({host_type}[^"]+?))(\s+\w+=|\s*$)""",
   ]
   DupFields = [ "directory->process_directory", "ioc->alert_name" ]
   SOAR {

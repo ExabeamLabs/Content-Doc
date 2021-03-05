@@ -23,6 +23,8 @@ Name = sentinelone-security-alert
     """"annotation":\s*"({additional_info}[^"]+)""",
     """"threatName":\s*"({alert_name}[^"]+)""",
     """"agentIp":\s*"({src_ip}[^"]+)""",
+    """"fileDisplayName":\s"({file_name}[^"]+)""",
   ]
+  DupFields = ["file_name->process_name"]
 }
 ```

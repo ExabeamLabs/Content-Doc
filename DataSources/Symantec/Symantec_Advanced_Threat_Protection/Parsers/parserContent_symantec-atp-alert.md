@@ -29,6 +29,6 @@ Name = symantec-atp-alert
     """"events":\[.+?"time":"({time}\d+\-\d+\-\d+T\d+:\d+:\d+\.\d+Z)".+?\]""",
     """"atp_incident_id":({alert_id}\d+)"""
   ]
-  DupFields = ["host->dest_host"]
+  DupFields = ["host->dest_host", "file_name->process_name"]
 }
 ```

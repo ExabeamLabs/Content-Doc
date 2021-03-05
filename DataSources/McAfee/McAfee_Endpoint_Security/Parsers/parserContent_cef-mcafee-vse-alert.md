@@ -23,7 +23,8 @@ Name = cef-mcafee-vse-alert
       """\scs1=(?:none|({alert_name}.+?))\s+(\w+=|$)""",
       """\scat=({threat_category}.+?)\s+(\w+=|$)""",
       """\|McAfee\|VirusScan.+?\|.+?\|.+?\|({alert_type}[^.|]+)""",
-      """\|McAfee\|VirusScan.+?\|.+?\|.+?\|.+?\|({alert_severity}[^\|]+)"""
+      """\|McAfee\|VirusScan.+?\|.+?\|.+?\|.+?\|({alert_severity}[^\|]+)""",
+      """\ssproc=({process_name}.*?)\s\w+=""",
     ]
     SOAR {
       IncidentType = "malware"

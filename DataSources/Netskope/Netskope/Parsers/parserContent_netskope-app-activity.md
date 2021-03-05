@@ -3,12 +3,13 @@
 {
 Name = netskope-app-activity
   Vendor = Netskope
-  Product = Netskope
+  Product = Netskope 
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "epoch_sec"
   Conditions = [""""app": """, """"userkey": """, """"category": """, """"browser_session_id": """]
   Fields = [
+    """({host}[\w\-.]+)\s+Skyformation""",
     """"hostname":\s*"({dest_host}[^"]+)""",
     """"timestamp":\s*({time}\d+)""",
     """"app":\s*"\[?({app}[^"\]]+)""",

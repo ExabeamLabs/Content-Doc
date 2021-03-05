@@ -3,6 +3,7 @@
 {
 Name = json-bro-weird
   Vendor = Bro
+  Product = Bro
   Lms = Direct
   DataType = "network-alert"
   IsHVF = true

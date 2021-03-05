@@ -21,6 +21,7 @@ Name = mcafee-vse-epo-alert
       """ThreatType="?(?:|none|({alert_type}[^"\|]+?))("|\||\s\w+=)""",
       """TargetFileName="?(?:|None|({malware_url}.+?\\({malware_file_name}[^\\]+?)))("|\||\s\w+=)""",
       """OSType="({os}[^"]+)"""",
+      """TargetProcessName="?(?:|none|({process_name}[^"\|]+?))("|\||\s\w+=)""",
     ]
     SOAR {
       IncidentType = "malware"

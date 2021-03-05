@@ -6,9 +6,12 @@ Product: Print Server
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   1    |     1      |      1      |    1    |
 
-|  Use-Case  | Event Types/Parsers                                                                                                                                                         | MITRE TTP | Content                                            |
-|:----------:| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | -------------------------------------------------- |
-| Enrichment |  print-activity<br> ↳ [cef-hp-print-activity](Parsers/parserContent_cef-hp-print-activity.md)<br> ↳ [s-hp-print-activity](Parsers/parserContent_s-hp-print-activity.md)<br> |           | [](Rules_Models/r_m_hp_print_server_Enrichment.md) |
+|                           Use-Case                           | Event Types/Parsers                                                                                                                                                         | MITRE TTP         | Content                                                                           |
+|:------------------------------------------------------------:| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | --------------------------------------------------------------------------------- |
+| [Lateral Movement](../../../UseCases/uc_lateral_movement.md) |  print-activity<br> ↳ [cef-hp-print-activity](Parsers/parserContent_cef-hp-print-activity.md)<br> ↳ [s-hp-print-activity](Parsers/parserContent_s-hp-print-activity.md)<br> | T1086 - T1086<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_hp_print_server_Lateral_Movement.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
+| Initial Access | Execution | Persistence | Privilege Escalation | Defense Evasion | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration | Impact |
+| -------------- | --------- | ----------- | -------------------- | --------------- | ----------------- | --------- | ---------------- | ---------- | ------------------- | ------------ | ------ |
+|                |           |             |                      |                 |                   |           |                  |            |                     |              |        |

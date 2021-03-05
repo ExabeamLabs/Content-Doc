@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-estreamer-network-connection-2
-  Vendor = Cisco
+  Vendor = Cisco 
   Product = Cisco Firepower
   Lms = Splunk
   DataType = "network-connection"

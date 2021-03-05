@@ -50,6 +50,6 @@ Name = sourcefire-network-alert
     """"firewallPolicy":\s*"({src_country}[^"]+)""",
     """"blocked":\s*"({blocked}[^"]+)""",
   ]
-  DupFields = [ "host->sensor" ]
+  DupFields = [ "host->sensor"]
 }
 ```

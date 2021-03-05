@@ -4,11 +4,12 @@ Product: RS2 Technologies
 -------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   1    |     1      |      1      |    1    |
+|   2   |   1    |     1      |      1      |    1    |
 
-|                Use-Case                | Event Types/Parsers                                                                                                                                                                         | MITRE TTP                  | Content                                                                                               |
-|:--------------------------------------:| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ----------------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) |  failed-physical-access<br> ↳ [rs2-badge-access](Parsers/parserContent_rs2-badge-access.md)<br><br> physical-access<br> ↳ [rs2-badge-access](Parsers/parserContent_rs2-badge-access.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](Rules_Models/r_m_rs2_rs2_technologies_Other.md) |
+|                                  Use-Case                                  | Event Types/Parsers                                                                                                                                                                         | MITRE TTP                  | Content                                                                                                                 |
+|:--------------------------------------------------------------------------:| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  failed-physical-access<br> ↳ [rs2-badge-access](Parsers/parserContent_rs2-badge-access.md)<br><br> physical-access<br> ↳ [rs2-badge-access](Parsers/parserContent_rs2-badge-access.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](Rules_Models/r_m_rs2_rs2_technologies_Compromised_Credentials.md) |
+|        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  failed-physical-access<br> ↳ [rs2-badge-access](Parsers/parserContent_rs2-badge-access.md)<br><br> physical-access<br> ↳ [rs2-badge-access](Parsers/parserContent_rs2-badge-access.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_rs2_rs2_technologies_Lateral_Movement.md)                                  |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
