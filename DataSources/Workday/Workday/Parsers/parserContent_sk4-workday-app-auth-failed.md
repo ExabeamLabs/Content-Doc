@@ -9,14 +9,15 @@ Name = sk4-workday-app-auth-failed
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """|security-threat-detected|""", """cat=security-alert""", """destinationServiceName=Workday""", """authenticationFailureMessage"""]
   Fields = [
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d+Z\s+({host}[\w\-.]+)\s+Skyformation""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d+Z\s+[\w\-.]+\s+Skyformation""",
+    """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
     """msg=({additional_info}.+?)\s+(\w+=|$)""",
     """authenticationFailureMessage"+:"+({failure_reason}[^"]+)""",
-    """userName"+:"+(Invalid Authentication|({user}[^"]+))""",
+    """userName":"(Invalid Authentication|({user_email}[^@"]+@[^"]+)|({user}[^"]+))""",
     """signonIPAddress"+:"+({dest_ip}[^"]+)""",
     """authenticationType"+:"+({auth_method}[^"]+)""",
-    """dproc=({event_name}.+?)\s+(\w+=|$)""",
-    """requestClientApplication=({app}.+?)\s+(\w+=|$)""",
+    """dproc=({event_name}[^=]+?)\s+(\w+=|$)""",
+    """requestClientApplication=({app}[^=]+?)\s+(\w+=|$)"""
   ]
 }
 ```

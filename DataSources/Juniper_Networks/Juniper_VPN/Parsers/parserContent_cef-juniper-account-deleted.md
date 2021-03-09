@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-juniper-account-deleted
-  Vendor = Juniper VPN
+  Vendor = Juniper Networks
   Product = Juniper VPN
   Lms = ArcSight
   DataType = "account-deleted"

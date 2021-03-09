@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-juniper-vpn-authfailed
-  Vendor = Juniper VPN
+  Vendor = Juniper Networks
   Product = Juniper VPN
   Lms = ArcSight
   DataType = "authentication-failed"

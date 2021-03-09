@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-juniper-proxy
-  Vendor = Juniper VPN
+  Vendor = Juniper Networks
   Product = Juniper VPN
   Lms = ArcSight
   DataType = "web-activity"

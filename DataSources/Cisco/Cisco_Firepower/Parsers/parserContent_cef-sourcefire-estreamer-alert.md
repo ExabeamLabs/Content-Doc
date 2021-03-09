@@ -3,7 +3,7 @@
 {
 Name = cef-sourcefire-estreamer-alert
   Vendor = Cisco
-  Product = Cisco Firepower  
+  Product = Cisco Firepower
   Lms = Direct
   DataType = "alert"
   TimeFormat = "epoch"

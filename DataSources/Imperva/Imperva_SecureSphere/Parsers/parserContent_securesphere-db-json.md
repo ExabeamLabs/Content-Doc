@@ -2,7 +2,7 @@
 ```Java
 {
 Name = securesphere-db-json
-  Vendor = Imperva 
+  Vendor = Imperva
   Product = Imperva SecureSphere
   Lms = Direct
   DataType = "database-operation"

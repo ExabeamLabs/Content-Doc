@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-rangeraudit-file-operations
-  Vendor = RangerAudit 
+  Vendor = RangerAudit
   Product = RangerAudit
   Lms = ArcSight
   DataType = "file-operations"

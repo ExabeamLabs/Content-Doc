@@ -17,7 +17,10 @@ Name = logstash-4768
       """"network_information-ClientAddress":"\s*(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)""""
       """"additional_information-ResultCode":"\s*({result_code}[^"]+)\s*""""
       """"account_information-SuppliedRealmName":"\s*({domain}[^"]+)\s*""""
-      """"account_information-UserID":"\s*(?:NULL SID|({user_sid}[^"]+))\s*""""
+      """"account_information-UserID":"\s*(?:NULL SID|({user_sid}[^"]+))\s*"""",
+      """"service_information-ServiceName":"({service_name}[^"]+)""",
+      """"additional_information-TicketEncryptionType":"({ticket_encryption_type}[^"]+)""",
+      """"additional_information-TicketOptions":"({ticket_options}[^"]+)"""
     ]
     DupFields = ["host->dest_host"]
   }

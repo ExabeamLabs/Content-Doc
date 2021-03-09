@@ -17,7 +17,10 @@ Name = wls-4768
       """TargetDomainName="+({domain}[^"]+)"""",
       """TargetSid="+({user_sid}[^"]+)"""",
       """IpAddress="+(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)""",
-      """Status="+({result_code}[^"]+)""""
+      """Status="+({result_code}[^"]+)"""",
+      """ServiceName="({service_name}[^"]+)""",
+      """TicketEncryptionType="({ticket_encryption_type}[^"]+)""",
+      """TicketOptions="({ticket_options}[^"]+)""",
     ]
     DupFields = ["host->dest_host"]
   }

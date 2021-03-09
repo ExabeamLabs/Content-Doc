@@ -19,7 +19,13 @@ Name = fortinet-security-alert
     """\Wurl="*({malware_url}[^"\s]+)""",
     """\Wref="*({additional_info}[^"\s]+)""",
     """\Wuser="*({user}[^"\s]+)""",
-    """\Wcrlevel=({alert_severity}[^"\s]+)(\s|")"""
+    """\Wcrlevel=({alert_severity}[^"\s]+)(\s|")""",
+    """\Wsrcport=({src_port}\d+)""",
+    """\Wdstport=({dest_port}\d+)""",
+    """\Wservice="({protocol}[^"]+)"""",
+    """\Wfilename="({malware_file_name}[^"]+)"""",
+    """\Waction="({action}[^"]+)"""",
+
   ]
   SOAR {
     IncidentType = "malware"

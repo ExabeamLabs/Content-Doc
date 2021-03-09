@@ -22,10 +22,11 @@ Name = azure-app-logon-2
     """UserDisplayName"+:"+({user_fullname}[^"]+)""",
     """UserId"+:"+({user_id}[^"]+)""",
     """"+IPAddress"+:"+({src_ip}[^"]+)""",
-    """"browser\\*"+:\\*"+({browser}[^"]+)\\"+""",
+    """"browser":"({browser}[^"]+)""", 
     """"UserAgent\\*"+:\\*"+({user_agent}[^"]+)""",
     """src-application-name"+:"+({app}[^"]+)""",
-    """"operatingSystem\\*"+:\\*"+({os}[^"]+)\\"+"""
+    """"operatingSystem":"({os}[^"]+)""", 
+    """"failureReason":"({failure_reason}.+?)(\.)?"""",
   ]
 }
 ```
