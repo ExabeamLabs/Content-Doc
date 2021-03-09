@@ -25,6 +25,8 @@ Name = cisco-netflow-connection-1
     """ConnectionDuration:\s*({connection_duration}[^,]+)""",
     """InitiatorPackets:\s*({packets_in}\d+)""",
     """ResponderPackets:\s*({packets_out}\d+)""",
+    """InitiatorBytes:\s*({bytes_in}\d+)""",
+    """ResponderBytes:\s*({bytes_out}\d+)""",
   ]
 }
 ```

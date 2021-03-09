@@ -26,6 +26,7 @@ Name = s-pan-policyviolation-alert
       """"item_creator":"(|({item_creator}[^"]+))"""",
       """"item_creator_email":"(|({user_email}[^"]+))"""",
       """"collaborators":"(|({collaborators}[^"]+))"""",
+      """ext_severity=({alert_severity}[^\s]+)"""
     ]
     SOAR {
     IncidentType = "dlp"

@@ -14,7 +14,7 @@ Name = json-sentinelone-security-alert
     """"threatName"+:\s*"+({alert_name}[^"]+)""",
     """"(username|lastLoggedInUserName)"+:\s*"+({user}[^"]+)""",
     """"accountName"+:\s*"+({account}[^"]+)""",
-    """"(description|primaryDescription)"+:\s*"+({additional_info}[^"]+)""",
+    """"(description|primaryDescription)"+:\s*"+({alert_type}[^"]+)""",
     """"(computerName|agentComputerName)"+:\s*"+({src_host}[^"]+)""",
     """"(agentIp|externalIp)"+:\s*"+({dest_ip}[^"]+)""",
     """"(agentOsType|osName)"+:\s*"+({os}[^"]+)""",
@@ -23,6 +23,9 @@ Name = json-sentinelone-security-alert
     """"domain"+:\s*"+({domain}[^",]+)""",
     """"uuid"+:\s*"+({uuid}[^"]+)""",
     """"inet":\s*\["({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"]""",
+    """"description":\s"({alert_type}[^"]+)""",
+    """mitigationStatus":\s"({alert_severity}[^"]+)""", 
   ]
+  DupFields = ["file_name->process_name", "file_path->process"]
 }
 ```

@@ -6,10 +6,11 @@ Name = r-syslog-vontu-dlp
   Product = Symantec DLP
   Lms = Direct
   DataType = "dlp-alert"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
+  TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """Vontu Incident: """, """^^""" ]
   Fields = [
     """(exabeam_\w+=|^)({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
+    """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
     """\s({host}[\w\.-]+)\s+Vontu Incident: """,
     """Vontu Incident:\s+({alert_name}.+?)\s*\^\^""",

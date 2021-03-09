@@ -10,7 +10,6 @@ Name = rapid7-security-alert
   Conditions = [ """"vulnerabilityId":""", """"assetData":""", """"severity":""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """({host}[\w\-.]+)\s+Skyformation""",
     """\Wapp=(|({app}.+?))(\s+\w+=|\s*$)""",
     """\WdestinationServiceName=(|({event_subtype}.+?))(\s+\w+=|\s*$)""",
     """\WdeviceNtDomain=(|({os}.+?))(\s+\w+=|\s*$)""",

@@ -22,7 +22,7 @@ Name = cef-azure-authentication
     """"InitiatingProcessMD5":"({md5}[^"]+)"""",
     """"InitiatingProcessId":({pid}[^",]+)""",
     """"InitiatingProcessCommandLine":"\s*({command_line}[^"]+)"""",
-    """"LogonId":({logon_id}[^",]+)""",
+    """"LogonId":(null|({logon_id}[^",]+))""",
     """"DeviceId":"({device_id}[^"]+)"""",
     """"RemoteDeviceName":"(|({src_host}[\w\-.]+))"""",
   ]

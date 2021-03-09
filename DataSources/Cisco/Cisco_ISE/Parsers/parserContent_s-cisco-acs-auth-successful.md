@@ -10,10 +10,10 @@ Name = s-cisco-acs-auth-successful
   Conditions = [ """Message-Type=Authen OK""", """_PassedAuth""" ]
   Fields = [ 
       """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-      """exabeam_host=({host}[^\s]+)""",
-      """Caller-ID=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+      """exabeam_host=(::ffff:)?({host}[^\s]+)""",
+      """Caller-ID=(::ffff:)?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """User-Name=(?!host\/)(?:[a-f0-9]{12}|({user}[^,]+))""",
-      """NAS-IP-Address=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
+      """NAS-IP-Address=(::ffff:)?({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
 	]
 }
 ```

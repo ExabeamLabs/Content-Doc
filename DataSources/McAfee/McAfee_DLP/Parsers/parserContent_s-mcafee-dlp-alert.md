@@ -9,6 +9,7 @@ Name = s-mcafee-dlp-alert
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = [ """Block""", """DEVICE_""" , """EventType_LocalizationKey""", """PLUG"""]
     Fields = [ 
+        """LocalTime="({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)"""   
 	"""exabeam_raw=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
 	"""UTCTime(=|:)\s*"({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
 	"""exabeam_host=({host}[^\s]+)""",

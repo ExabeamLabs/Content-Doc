@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-unix-crypto-1
-  DataType = "remore-logon"
+  DataType = "remote-logon"
   Conditions = [ """CEF""", """Unix|auditd""", """CRYPTO_SESSION""" ]
   Fields = ${UnixParserTemplates.cef-unix-template-1.Fields}[
     """CEF:([^\|]*\|){4}({event_name}[^|]+)\\\|({outcome}[^\|]+)""",

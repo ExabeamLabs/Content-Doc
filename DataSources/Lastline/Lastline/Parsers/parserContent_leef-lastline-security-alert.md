@@ -11,13 +11,11 @@ Name = leef-lastline-security-alert
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """\s({host}[\w\-.]+)\s+LEEF:""",
+    """LEEF:([^\|]*\|){4}({alert_type}[^\|]+)""",
     """devTime=({time}\w+\s+\d+\s+\d+\s+\d+:\d+:\d+\s+\w+)""",
-    """(mailUrl|fname)=({alert_name}.+?)\s+(\w+=|$)""",
-    """desc=({alert_type}.+?)\s+(\w+=|$)""",
-    """sev=({alert_severity}.+?)\s+(\w+=|$)""",
-    """emailSubject=\s*({target}.+?)\s+(\w+=|$)""",
-    """emailSubject=\s*({subject}.+?)\s+(\w+=|$)""",
-    """(sender|Sender)=({target}.+?)\s+(\w+=|$)""",
+    """desc=({alert_name}.+?)\s+(\w+=|$)""",
+    """sev=({alert_severity}.+?)\s+(\w+=|$)""", 
+    """emailSubject=\s*({subject}.+?)\s+(\w+=|$)""", 
     """(sender|Sender)=({sender}.+?)\s+(\w+=|$)""",
     """fname=({file_name}.+?)\s+(\w+=|$)""",
     """EventDetailLink=({additional_info}.+?)\s+(\w+=|$)""",
@@ -25,6 +23,6 @@ Name = leef-lastline-security-alert
     """usrName=({user_email}[^\s@]+@[^\s@]+)""",
     """\Wcat=({activity}.+?)\s+(\w+=|$)""",
   ]
-  DupFields = [ "user_email->recipient" , "host->dest_host"]
+  DupFields = [ "user_email->recipient" , "host->dest_host", "sender->target"]
 }
 ```
