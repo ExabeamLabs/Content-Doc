@@ -30,7 +30,13 @@ Name = netscope-dlp-alert-activity
       """"+request_id"+:({alert_id}[^,]+)""",
       """proto=({protocol}[^"]+)\srequestClientApplication""",
       """outcome=({outcome}[^ ]+)""",
-      """ext_url=({full_url}[^ ]+)"""
+      """ext_url=({full_url}[^ ]+)""",
+      """"owner"+:"+({file_owner_at}[^"]+)"""",
+      """"from_user"+:"+({from_user_at}[^"]+)"""",
+      """"dlp_file"+:"+({file_path_at}[^"]+)"""",
+      """"shared_with"+:"+({shared_with_at}[^"]+)"""",
+      """"sha256"+:"+({sha256_at}[^"]+)"""",
+      """"site"+:"+({site_at}[^"]+)""""
     ]
 }
 ```

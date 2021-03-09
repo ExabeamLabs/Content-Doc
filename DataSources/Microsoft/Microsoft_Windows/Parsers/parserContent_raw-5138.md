@@ -9,7 +9,6 @@ Name = raw-5138
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """Object:""", """Old DN:""", """New DN:""", """Directory Service:""", """A directory service object was undeleted""" ]
   Fields = [
-    """exabeam_host=({host}[\w\-.]+)""",
     """({event_name}A directory service object was undeleted)""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\d\d:\d\d:\d\d\s+({host}[^\s]+)\s+Microsoft-Windows-Security-Auditing""",
@@ -20,7 +19,7 @@ Name = raw-5138
     """Directory Service:\s*Name:\s*({service_name}[^\s]+)\s+Type:\s*({service_type}[^:]*?Services)""",
     """GUID:\s*\{({guid}[^\}]+)""",
     """Operation:\s*Correlation ID:\s*\{({correlation_id}[^\}]+)""",
+    """\d\d:\d\d:\d\d\s+(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^<]+))\s+Microsoft-Windows-Security-Auditing"""
   ]
-  DupFields = [ "host->dest_host" ]
 }
 ```

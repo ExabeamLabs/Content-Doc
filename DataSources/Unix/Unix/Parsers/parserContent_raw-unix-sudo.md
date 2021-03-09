@@ -9,9 +9,8 @@ Name = raw-unix-sudo
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """sudo:""", """; USER""","""; COMMAND""" ]
   Fields = [
-    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+[+-]\d+)""",
+    """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """exabeam_host=([^=]+@\s*)?({host}[\w.\-]+)""",
     """exabeam_host=([^=]+@\s*)?(({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})|({dest_host}[^\s]+))""",
     """({host}[\w\.\-]+)?:?\s*sudo:""",

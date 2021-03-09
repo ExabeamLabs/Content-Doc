@@ -10,7 +10,6 @@ Name = crowdstrike-file-alert
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """|Skyformation|""", """"event_simpleName":"QuarantinedFileState"""" ]
   Fields = [
-    """({host}[\w\-.]+)\s+Skyformation""",
     """"timestamp":"({time}\d+)""",
     """"event_simpleName":"({alert_name}[^"]+)""",
     """"aip":"({src_ip}[A-Fa-f:\d.]+)""",

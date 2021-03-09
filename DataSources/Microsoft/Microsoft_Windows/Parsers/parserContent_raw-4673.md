@@ -17,6 +17,7 @@ Name = raw-4673
       """({host}[\w.\-]+)\s*:\s+A privileged service was called""",
       """({host}[^\s\/]+)\/Microsoft-Windows-Security-Auditing \(4673\)""",
       """"dhn":"({host}[^-"]+)""",
+      """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?({host}[\w\-.]+)"""
       """Event Type\s*:\s*({outcome}.+?)\.\s+Log Type""",
       """Type\s*=\s*"({outcome}[^";]+)"""",
       """Keywords=({outcome}.+?);?\s*Message=""",
@@ -30,7 +31,8 @@ Name = raw-4673
       """\s*Logon ID(:|=)\s*({logon_id}.+?)[\s;]*Service(:|=)""",
       """\s*Server(:|=)\s*({object_server}.+?)[\s;]*Service Name""",
       """\s*Privileges(:|=)\s*({privileges}.+?)(\s*$|\s+\d+|\"|,|;)""",
+      """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]+))"""
     ]
-    DupFields = ["host->dest_host","directory->process_directory"]
+    DupFields = ["directory->process_directory"]
   }
 ```

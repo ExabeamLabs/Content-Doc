@@ -10,7 +10,6 @@ Name = zoom-meeting-created
   Conditions = [ """|Skyformation|""", """"event":"meeting.created"""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """\d+-\d+-\d+T\d+:\d+:\d+\.\d+\w ({host}[\w\-.]+) Skyformation""",
     """\WdestinationServiceName=({app}.+?)(\s+\w+=|\s*$)""",
     """\Wend=({time}\d+)""",
     """"event"\s*:\s*"meeting.({activity}created)"""",

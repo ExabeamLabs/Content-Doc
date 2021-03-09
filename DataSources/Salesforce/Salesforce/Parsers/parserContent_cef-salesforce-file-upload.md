@@ -10,7 +10,7 @@ Name = cef-salesforce-file-upload
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """CEF:""", """|Skyformation|""", """|resource-uploaded|""", """Sales Cloud""" ]
   Fields = [
-    """({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ) ({host}\S+) Skyformation -""",
+    """({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ) \S+ Skyformation -""",
     """([^\|]*\|){5}({accesses}[^\|]+)""",
     """\Wsuser=(({domain}[^\\\s@;=]+)\\+)?(system|({user}[^\\\=\s;@]+))\s+(\w+=|$)""",
     """\Wsuser=({user_email}[^@\s;]+?@[^@\s;]+)\s*(\w+=|$)""",

@@ -10,8 +10,7 @@ Name = crowdstrike-logon
     Conditions = [ """"event_simpleName":"UserLogon"""", """"aid"""" ]
     Fields = [
       """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-      """({host}[\w\-.]+)\s+Skyformation""",
-      """"aip":"({dest_ip}[^"]+)""",
+      """"aip":"({host}[^"]+)""",
       """suser=({user}[^\s]+)""",
       """suid=({sid}[^\s]+)""", 
       """"AuthenticationPackage":"({auth_package}[^"]+)""",
@@ -26,6 +25,6 @@ Name = crowdstrike-logon
       """"event_simpleName":"({event_code}[^"]+)""",
       """"LogonDomain":"({domain}[^"]+)""",
     ]
-    DupFields = ["dest_ip->host", "user->account"]
+    DupFields = ["user->account"]
   }
 ```
