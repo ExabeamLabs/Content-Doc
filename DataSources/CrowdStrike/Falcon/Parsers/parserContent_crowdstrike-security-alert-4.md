@@ -16,5 +16,6 @@ Name = crowdstrike-security-alert-4
       """"event_simpleName":"({alert_name}[^"]+)""",
       """"id":"({alert_id}[^"]+)""",
     ]
+    DupFields = [ "alert_name->alert_type" ]
   }
 ```

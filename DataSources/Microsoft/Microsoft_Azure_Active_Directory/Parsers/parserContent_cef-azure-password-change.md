@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-azure-password-change
-  Vendor = Microsoft 
+  Vendor = Microsoft
   Product = Microsoft Azure Active Directory
   Lms = ArcSight
   DataType = "password-change"

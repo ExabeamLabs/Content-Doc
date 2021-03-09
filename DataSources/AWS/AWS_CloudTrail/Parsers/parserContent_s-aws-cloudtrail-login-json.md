@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-aws-cloudtrail-login-json
-  Vendor = AWS CloudTrail
+  Vendor = AWS
   Product = AWS CloudTrail
   Lms = Splunk
   DataType = "app-login"
@@ -13,13 +13,15 @@ Name = s-aws-cloudtrail-login-json
     """"+sourceIPAddress"+\s*:\s*"+?(|({src_ip}[^"].+?))"+\s*[,\]\}]""",
     """"+eventName"+\s*:\s*"+?(|({activity_action}[^"].+?))"+\s*[,\]\}]""",
     """"+eventSource"+\s*:\s*"+?(|({host}[^"].+?))"+\s*[,\]\}]""",
-    """"userIdentity".+?"+arn"+\s*:\s*"+?(|arn:aws:(sts|iam)::\d+:([^"]+\/)*(({user_email}\w+@\w+\.\w+)|({user}(?!\-\d+)[^\/]+?)))"+\s*[,\]\}]""",
+    """"userIdentity"[^@]+?"+arn"+\s*:\s*"+?(|arn:aws:(sts|iam)::\d+:([^"]+\/)*(({user_email}\w+@\w+\.\w+)|({user}(?!\-\d+)[^\/]+?)))"+\s*[,\]\}]""",
     """"+userName"+\s*:\s*"+?(|({user}[^"].+?))"+\s*[,\]\}]""",
     """"errorMessage"\s*:\s*"({failure_reason}[^"]+)"""",
     """"responseElements"\s*:\s*.+?\s*".+?"\s*:\s*"({outcome}[^"]+)"""",
     """"eventType"+\s*:\s*"({app}[^"]+)""""
     """"userAgent"+\s*:\s*"({user_agent}[^"]+)"""",
     """"recipientAccountId"+\s*:\s*"({object}[^"]+)""""
+    """"awsRegion":"({region}[^"]+)"""",
+    """\srequestClientApplication=({app}[^\s]+)\s""",
   ]
 }
 ```

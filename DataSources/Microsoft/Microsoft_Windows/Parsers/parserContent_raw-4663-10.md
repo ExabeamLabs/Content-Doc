@@ -11,7 +11,7 @@ Name = raw-4663-10
     Conditions = ["An attempt was made to access an object.", "computer_name"]
     Fields = [
       """({event_name}An attempt was made to access an object)""",
-      """"computer_name\\*":\\*"({host}[^\\"]+)""",
+      """"(?:winlog\.)?computer_name\\*":\\*"({host}[^\\"]+)""",
       """@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """({event_code}4663)""",
       """Object(:|=).*?Object Type(:|=)\s*({file_type}.+?)[\s;]*Object Name(:|=)\s*({file_path}({file_parent}.*?)({file_name}[^\\\/;]+?(\.({file_ext}[^\.;\\]+?))?))[\s;]*Handle ID(:|=)""",

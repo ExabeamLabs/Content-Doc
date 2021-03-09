@@ -9,11 +9,11 @@ Name = s-ping-sso
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = [ """event=SSO""", "status=success"," pfhost=" ]
     Fields = [
-    """\sip=(?:|({src_ip}.+?))\s\w+=""",
+    """\sip=(|({src_ip}[a-fA-F\d.:]+))\s\w+=""",
     """exabeam_raw=.*?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\spfhost=(?:|({host}.+?))\s\w+=""",
-    """\ssubject="(?:|({user}[^"]+))"""",
-    """\sapp=(?:|({app}.+?))\s\w+="""
+    """\spfhost=(|({host}[^=\s]+?))\s\w+=""",
+    """\ssubject="(|(({user_email}[^"@\s]+@[^"@\s]+)|({user}[^"]+)))"""",
+    """\sapp=(|({app}[^=]+?))\s\w+="""
     ]
   }
 ```

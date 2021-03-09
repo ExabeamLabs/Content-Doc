@@ -10,6 +10,7 @@ Name = cef-mcafee-print-activity
       Conditions = [ """McAfee|Data Loss Prevention""", """|DLP: Printing Protection|""" ]
       Fields = [
         """(\s|\|)rt=({time}.+?)\s+([\w\.-]+=|$)""",
+        """\d\d:\d\d\s+({host}[^\s]+)\sCEF:""",
         """(\s|\|)cs2=({dest_host}.+?)\s+([\w\.-]+=|$)""",
         """(\s|\|)cs2=\\+.+?(\\+({printer_name}.+?))\s+([\w\.-]+=|$)""",
         """(\s|\|)dhost=({dest_host}.+?)\s+([\w\.-]+=|$)""",

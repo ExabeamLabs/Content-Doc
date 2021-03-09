@@ -12,7 +12,7 @@ Name = exalms-4663
   Fields = [
     """({event_name}An attempt was made to access an object)""",
     """"@timestamp"\s*:\s*"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
-    """"computer_name"\s*:\s*"({host}.+?)"""",
+    """"(?:winlog\.)?computer_name"\s*:\s*"({host}.+?)"""",
     """"record_number"\s*:\s*"({record_id}\d+)""",
     """({event_code}4663)""",
     """"SubjectUserSid"\s*:\s*"({user_sid}[^"]+)""",

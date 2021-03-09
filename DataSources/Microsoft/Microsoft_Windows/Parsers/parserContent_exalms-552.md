@@ -11,7 +11,7 @@ Name = exalms-552
   Fields = [
     """({event_name}Logon attempt using explicit credentials)""",
     """"@timestamp"\s*:\s*"({time}.+?)"""",
-    """"computer_name"\s*:\s*"({host}.+?)"""",
+    """"(?:winlog\.)?computer_name"\s*:\s*"({host}.+?)"""",
     """"(param8|Dest_host)"\s*:\s*"(-|({dest_host}.+?))\s*"""",
     """"(param9|Dest_Service)"\s*:\s*"(-|({dest_service}.+?))\s*"""",
     """({event_code}552)""",

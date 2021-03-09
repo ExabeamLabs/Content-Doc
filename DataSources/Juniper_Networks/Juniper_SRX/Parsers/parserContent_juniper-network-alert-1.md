@@ -6,11 +6,11 @@ Name = juniper-network-alert-1
   Product = Juniper SRX
   Lms = Syslog
   DataType = "alert"
-  TimeFormat = "epoch"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """ - IDP_ATTACK_LOG_EVENT [""", """ message-type=""", """ destination-interface-name="""" ]
   Fields = [
     """ ({host}[^\s]+) [^\s]+ - IDP_ATTACK_LOG_EVENT """,
-    """\sepoch-time="({time}\d+)"""",
+    """({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d\-\d\d:\d\d)\s""",
     """\ssource-address="({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
     """\ssource-port="({src_port}\d+)"""",
     """\sdestination-address="({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
