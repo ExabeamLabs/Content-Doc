@@ -10,7 +10,6 @@ Name = symantec-cloud-dlp-alert
   Conditions = ["""Security Alert Detected by""" , """SkyFormation Cloud Apps Security""" , """destinationServiceName=Symantec CloudSOC""" ]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """\s({host}[\w\-.]+)\s+Skyformation""",
     """ext__inserted_timestamp_=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""
     """suser=({user_email}[^\s]+@.+?)\s\w+=""",
     """ext__user_name_=({user_fullname}[^\s@]+\s+[^=]+)\s\w+=""",

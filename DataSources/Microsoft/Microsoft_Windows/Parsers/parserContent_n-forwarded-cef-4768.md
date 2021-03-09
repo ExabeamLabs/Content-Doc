@@ -16,6 +16,7 @@ Name = n-forwarded-cef-4768
       """src=({dest_ip}[a-fA-F:\d.]+)""",
       """sntdom=({domain}[^\s]+)""",
       """suser=({user}.+?)\s+\w+="""
+      """nitroService_Name=({service_name}\S+)"""
     ]
   }
 ```

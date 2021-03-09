@@ -22,6 +22,7 @@ Name = cef-okta-logs-app-alert
     """"client":[^\]]*?"rawUserAgent"\s*:\s*"({user_agent}[^"]+)""",
     """"client":[^\]]*?"ipAddress"\s*:\s*"({src_ip}[^"]+)""",
     """"outcome":[^\]]*?"result"\s*:\s*"FAILURE","reason":"({failure_reason}[^"]+)""",
+    """"outcome":[^\]]*?"result"\s*:\s*"({outcome}[^"]+)"""",
     """outcome":[^\]]*?"result":"?(null|({outcome_result_at}[^\"]+))"?,"reason":"?(null|({outcome_reason_at}[^"]+))""",
     """"target":.+?"displayName"\s*:\s*"({object}[^"]+[^\s])"""",
     """"target":.+?"type"\s*:\s*"({object_type}[^"]+)"""",

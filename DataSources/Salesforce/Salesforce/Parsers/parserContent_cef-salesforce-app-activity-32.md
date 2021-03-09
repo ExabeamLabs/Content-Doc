@@ -10,7 +10,7 @@ Name = cef-salesforce-app-activity-32
   Conditions = [ """|Skyformation|SkyFormation Cloud Apps Security|""", """|resource-deleted|""", """Sales Cloud""" ]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ) ({host}\S+) Skyformation -""",	
+    """({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ) \S+ Skyformation -""",	
     """LastModifiedDate\\=({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)"""
     """LastModifiedBy\.Username\\=({user_email}[^@]+@({email_domain}[^\s;]+))""",
     """\|SkyFormation Cloud Apps Security\|([^\|]*\|){2}({activity}[^\|]+?)\|""",

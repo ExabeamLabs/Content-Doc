@@ -16,7 +16,10 @@ Name = json-xml-4768
       """<Data Name='Status'>({result_code}[^<]+)</Data>""",
       """<Data Name='TargetUserName'>(?=\w)({user}[^<]+)</Data>""",
       """<Data Name='TargetDomainName'>(?=\w)({domain}[^<]+)</Data>""",
-      """<Data Name='IpAddress'>(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)"""
+      """<Data Name='IpAddress'>(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)""",
+      """<Data Name='TicketEncryptionType'>({ticket_encryption_type}[^<]+)</Data>""",
+      """<Data Name='TicketOptions'>({ticket_options}[^<]+)</Data>""",
+      """<Data Name='ServiceName'>({service_name}[^<]+)</Data>""",
     ]
   }
 ```

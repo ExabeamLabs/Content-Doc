@@ -11,7 +11,6 @@ Name = cef-ata-behavior-alert
   Fields = [
     """exabeam_host=([^=@]+@)?({host}[\w.\-]+)""",
     """CEF:([^\|]*\|){4}({alert_type}[^\|]+)\|({alert_name}[^\|]+)\|({alert_severity}[^\|]+)\|""",
-    """\WexternalId=({alert_id}\d+)""",
     """\Wstart=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """\Wapp=({service}.+?)\s+(\w+=|$)""",
     """\Wmsg=({additional_info}.+?)\s+(\w+=|$)""",

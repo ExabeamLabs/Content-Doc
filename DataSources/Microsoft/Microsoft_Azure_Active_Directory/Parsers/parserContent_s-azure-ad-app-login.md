@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-azure-ad-app-login
-  Vendor = Microsoft 
+  Vendor = Microsoft
   Product = Microsoft Azure Active Directory
   Lms = Splunk
   DataType = "app-login"

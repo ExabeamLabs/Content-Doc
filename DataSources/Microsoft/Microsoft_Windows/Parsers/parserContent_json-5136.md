@@ -24,6 +24,8 @@ Name = json-5136
     """"SubjectUserName"+:"+({user}[^"]+)"""",    
     """"SubjectUserSid"+:"+({user_sid}[^"]+)"""",
     """"SubjectLogonId"+:"+({logon_id}[^"]+)"""",
+    """"ObjectClass":"({object_class}[^"]+)"""",
+    """"ObjectDN":"({object_dn}[^"]+)"""",
   ]
   DupFields = [ "host->dest_host" ]
 }

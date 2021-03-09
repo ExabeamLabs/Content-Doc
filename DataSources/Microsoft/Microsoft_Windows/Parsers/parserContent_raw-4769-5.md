@@ -11,7 +11,7 @@ Name = raw-4769-5
     Fields = [
       """({event_name}A Kerberos service ticket was requested)""",
       """({event_code}4769)""",
-      """"computer_name\\*":\\*"({host}[^\\"]+)""",
+      """"(?:winlog\.)?computer_name\\*":\\*"({host}[^\\"]+)""",
       """@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """Account Name(:|=)\s*({user}[^@:\s;]+)(@({domain}[\w._\-]+))?[\s;]*Account Domain(:|=)""",
       """Service Name(:|=)\s*({dest_host}[^\s;]+\$)[\s;]*Service ID""",

@@ -17,11 +17,12 @@ Name = raw-juniper-nwc-vpn-start
     """({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|[\w\-\.]+)\s*(Juniper|PulseSecure):""",
     """PulseSecure:\s*({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)\s+\-\s+({host}[\w\-.]+)""",
     """exabeam_host=([^=]+?@\s*)?({host}[^\s]+)""",
+    """\s+({host}[\w-.]+)\s+PulseSecure:""",
     """PulseSecure:\s*\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d\s+\-\s+({dest_host}[\w\-.]+)""",
     """,\s+hostname\s+({src_host}[\w.\-]+)""",
     """\s(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w.\-]+))\s+(Juniper|PulseSecure):""",
     """\- \[({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]"""
-    """\- \[({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]\s+(({domain}[^\\]+)\\)?({user}[^\(]+)\(({realm}[^\[]+)?\)\[(?!Machine Cert)""",
+    """\- \[({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]\s+([\w\s]+?::)?(({domain}[^\\]+)\\)?({user}[^\(]+)\(({realm}[^\[]+)?\)\[(?!Machine Cert)""",
     """\suser=(({domain}[^\\=]+)\\)?({user}.+?)\s+\w+=""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s""",
     """with IP(?:v4 address)?\s+({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",

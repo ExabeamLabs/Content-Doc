@@ -17,7 +17,7 @@ Name = s-proofpoint-email-alert-3
     """classification\\*"+:\s*\\*"+({alert_type}[^",]+?)\\*\s*"""",
     """"subject_s"+:\s*"+({subject}[^",]+?)\s*"""",
     """"fromAddress_s"+:\s*"+\[(\\r|\\n)*\s*\\"+({sender}[^",;]+@[^",;]+[^"]*)\\""",
-    """"recipient_s"+:\s*"+\[(\\r|\\n)*\s*\\"+({recipients}[^",;]+@[^",;]+[^"]*)\\""",
+    """"recipient_s"+:\s*"+\[(\\r|\\n)*\s*\\"+({recipient}[^",;]+@[^",;]+[^"]*)\\""",
     """GUID_s"+:\s*"+({alert_id}[^",]+?)\s*"""",
     """senderIP_s"+:\s*"+({src_ip}[a-fA-F\d.:]+)""",
     """"filename\\*"+:\s*\\*"+({attachments}(?!text)[^"\\]+)""",
@@ -33,6 +33,6 @@ Name = s-proofpoint-email-alert-3
     """({outcome}MessagesBlocked)""",
     """"SourceSystem"+:"+({log_source}[^"]+)"""
   ]
-  DupFields = [ "recipients->user_email","sender->from_address_at","recipients->to_address_at","malware_url->threat_url_at" ]
+  DupFields = [ "recipient->user_email" ]
 }
 ```
