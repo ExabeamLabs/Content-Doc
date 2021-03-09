@@ -11,7 +11,7 @@ Name = exalms-4662
   Fields = [
     """({event_name}An operation was performed on an object)""",
     """"@timestamp"\s*:\s*"({time}.+?)"""",
-    """"computer_name"\s*:\s*"({host}.+?)"""",
+    """"(?:winlog\.)?computer_name"\s*:\s*"({host}.+?)"""",
     """ObjectServer":"({object_class}.+?)"""",
     """ObjectName":"({object}[^"]+)"""",
     """ObjectType":"({activity_type}.+?)"""",

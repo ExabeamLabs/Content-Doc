@@ -10,7 +10,7 @@ Name = raw-4768-4
     Conditions = ["A Kerberos authentication ticket (TGT) was requested", "Account Name", "computer_name"]
     Fields = [
       """({event_name}A Kerberos authentication ticket \(TGT\) was requested)""",
-      """"computer_name\\*":\\*"({host}[^\\"]+)""",
+      """"(?:winlog\.)?computer_name\\*":\\*"({host}[^\\"]+)""",
       """@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """({event_code}4768)""",
       """Account Name(:|=)\s*({user}[^@;\s]+?)(?:@.+?)?[\s;]*Supplied Realm Name""",

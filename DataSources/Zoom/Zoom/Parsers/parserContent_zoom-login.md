@@ -10,7 +10,6 @@ Name = zoom-login
   Conditions = [ """|Skyformation|""", """|login-success|""", """destinationServiceName=Zoom""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """\d+-\d+-\d+T\d+:\d+:\d+\.\d+\w ({host}[\w\-.]+) Skyformation""",
     """\WdestinationServiceName=({app}.+?)(\s+\w+=|\s*$)""",
     """\Wend=({time}\d+)""",
     """\WflexString1=(|({activity}.+?))(\s+\w+=|\s*$)""",

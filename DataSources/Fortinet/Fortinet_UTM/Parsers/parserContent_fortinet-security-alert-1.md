@@ -23,6 +23,9 @@ Name = fortinet-security-alert-1
     """\Wuser="({user}[^"]+)"""",
     """\Wcrlevel="*({alert_severity}[^"\s]+)(\s|")""",
     """\Waction="({action}[^"]+)"""",
+    """\Wsrcport=({src_port}\d+)""",
+    """\Wdstport=({dest_port}\d+)""",
+    """\Wservice="({protocol}[^"]+)"""",
   ]
    DupFields = ["malware_url->process_name"]
 }

@@ -19,7 +19,7 @@ Name = raw-4674-3
       """"SubjectUserSid":"({user_sid}[^\s"]+)""",
       """"SubjectLogonId":"({logon_id}[^\s"]+)""",
       """"ObjectServer":"(-|({object_server}[^\s"]+))""",
-      """"ObjectName":"(-||({object}[^\s"]+))""",
+      """"ObjectName":"(-|({object}[^\s"]+))""",
       """"ObjectType":"(-|({object_type}[^\s"]+))""",
       """"ProcessName":"(?: |({process}({directory}(?:[^";]+)?[\\\/])?({process_name}[^\\\/";]+?)))\s*"""",
     ]

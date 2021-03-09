@@ -10,6 +10,7 @@ Name = json-4673-1
     """"ObjectServer"+:"+({object_server}[^"]+)""",
     """"ProcessName"+:"+({process}({directory}(?:[^";]+)?[\\\/])?({process_name}[^\\\/";]+?))"""",
     """"ProcessId"+:"+({pid}[^"]+)""",
+    """"hostname"+:"+(\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}|({dest_host}[^"]+))""",
   ]
 }
 ```

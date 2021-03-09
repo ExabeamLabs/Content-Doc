@@ -12,6 +12,7 @@ Name = xml-4719
     """({event_code}4719)""",
     """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """<Computer>({host}[^<]+)""",
+    """<Computer>(\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}|({dest_host}[^<]+))""",
     """<Data Name='SubjectUserSid'>({user_sid}[^<]+)""",
     """<Data Name='SubjectUserName'>({user}[^<]+)""",
     """<Data Name='SubjectDomainName'>({domain}[^<]+)""",

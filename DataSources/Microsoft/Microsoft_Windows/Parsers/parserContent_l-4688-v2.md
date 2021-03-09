@@ -14,10 +14,10 @@ Name = l-4688-v2
     """SystemTime=\'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """<Computer>({host}[^<]+)</Computer>""",
     """<EventID>({event_code}[^<]+)</EventID>""",
-    """Creator Subject:\s*Security ID:\s*(|-|({user_sid}.+?))\s*Account Name:\s*(|-|({user}.+?))\s*Account Domain:\s*(|-|({domain}.+?))\s*Logon ID:\s*(|-|({logon_id}.+?))\s*Target Subject:""",
+    """Creator Subject:\s*Security ID:\s*(|-|({user_sid}.+?))\s*Account Name:\s*(|-|LOCAL SERVICE|({user}.+?))\s*Account Domain:\s*(|-|NT AUTHORITY|({domain}.+?))\s*Logon ID:\s*(|-|({logon_id}.+?))\s*Target Subject:""",
    """<Data Name='SubjectUserSid'>({user_sid}[^<]+)<\/Data>""",
-   """<Data Name='SubjectUserName'>({user}[^<]+)<\/Data>""",
-   """<Data Name='SubjectDomainName'>({domain}[^<]+)<\/Data>""",
+   """<Data Name='SubjectUserName'>(LOCAL SERVICE|({user}[^<]+))<\/Data>""",
+   """<Data Name='SubjectDomainName'>(NT AUTHORITY|({domain}[^<]+))<\/Data>""",
    """<Data Name='SubjectLogonId'>({logon_id}[^<]+)<\/Data>""",
    """New Process ID:\s*({process_guid}[x\da-f]+)""",
    """<Data Name='NewProcessId'>\s*({process_guid}[x\da-f]+)<\/Data>""",
@@ -31,6 +31,7 @@ Name = l-4688-v2
    """Creator Process ID:\s*({parent_process_guid}[x\da-f]+)""",
    """<Data Name='ProcessId'>\s*({parent_process_guid}[x\da-f]+)<\/Data>""",
    """({activity_type}Process Creation)""",
+   """<Data Name='ParentProcessName'>({parent_process}({parent_directory}[^<]+[\\\/]+)?({parent_process_name}[^<]+))<\/Data>"""
   ]
   DupFields = [ "host->dest_host","process_guid->pid","directory->process_directory" ]
 }

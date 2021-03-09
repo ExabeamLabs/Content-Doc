@@ -21,6 +21,11 @@ Name = netskope-alert
     """"srcip": "({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
     """"url": "({additional_info}[^"]+)"""",
     """"app":\s*"({process_name}[^"]+)"""",
+    """"owner":\s*"({file_owner_at}[^"]+)"""",
+    """"from_user":\s*"({from_user_at}[^"]+)"""",
+    """"dlp_file":\s*"({file_path_at}[^"]+)"""",
+    """"shared_with":\s*"({shared_with_at}[^"]+)"""",
+    """"site":\s*"({site_at}[^"]+)""""
   ]
 }
 ```

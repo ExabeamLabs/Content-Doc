@@ -11,7 +11,7 @@ Name = exalms-4719
   Fields = [
     """({event_name}System audit policy was changed)""",
     """"@timestamp"\s*:\s*"({time}.+?)"""",
-    """"computer_name"\s*:\s*"({host}.+?)"""",
+    """"(?:winlog\.)?computer_name"\s*:\s*"({host}.+?)"""",
     """"event_id"\s*:\s*({event_code}\d+)""",
     """"(SubjectUserName)"\s*:\s*"({user}.+?)\s*"""",
     """"(SubjectDomainName)"\s*:\s*"({domain}.+?)\s*"""",

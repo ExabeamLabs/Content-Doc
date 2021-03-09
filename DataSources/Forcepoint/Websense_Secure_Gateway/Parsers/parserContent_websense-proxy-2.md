@@ -37,7 +37,7 @@ Name = websense-proxy-2
     """\Wcache="*({proxy_action}.+?)"*,?\s*(\w+=|$)""",
     """\WReferer="*({referrer}.+?)"*,?\s*(\w+=|$)""",
     """\Whttp_content_type="?(?:-|({mime}.+?))"?,?\s*(\w+=|$)""",
-    """\Whttp_user_agent="*({user_agent}[^"]+)""",
+    """\Whttp_user_agent="*({user_agent}[^"]+?)(\s"|")""",
     """\Whttp_user_agent="*(?:-|Mozilla\/.+\([^\)]*?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
     """\Wuser="?({user}.+?)"?,?\s*(\w+=|$)""",
     """\Wuser="?LDAP.+?DC\\*=org\/({user}.+?)"?,?\s*(\w+=|$)"""
