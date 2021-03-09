@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-adaxes-app-activity
-  Vendor = Adaxes 
+  Vendor = Adaxes
   Product = Adaxes
   Lms = Splunk
   DataType = "app-activity"

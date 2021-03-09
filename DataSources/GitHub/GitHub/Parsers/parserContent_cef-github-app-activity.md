@@ -9,7 +9,7 @@ Name = cef-github-app-activity
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=GitHub""" ]
   Fields = [
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ) ({host}\S+) Skyformation -""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ) \S+ Skyformation -""",
     """\Wsuser=({user}[^\s]+)""",
     """\WflexString1=({activity}.+?)(?:Event|)\s*(\w+=|$)""",
     """\WrequestClientApplication=({app}.+?)\s*(\w+=|$)""",

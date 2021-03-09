@@ -10,7 +10,6 @@ Name = cef-egnyte-file-operations
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
   Conditions = [ """CEF:""", """|resource-acl-updated|""", """destinationServiceName=Egnyte""", """dproc=permissions-audit-report""", """ACL was""", """with permission""" ]
   Fields = [
-    """\s({host}[\w\-.]+)\s+Skyformation""",
     """"time":"({time}\d+-\d+-\d+T\d+:\d+:\d+Z)""",
     """"assigner":"[^"\(]+\(\s*({user_email}[^\s@\(\)]+@[^\s@\(\)]+)""",
     """"assignee":"({object}[^"]+)""",

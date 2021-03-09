@@ -7,7 +7,7 @@ Name = cisco-process-created
   Lms = Direct
   DataType = "process-created"
   IsHVF = true
-  TimeFormat = "MMM dd yyyy HH:mm:ss.SSS"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
   Conditions = [ """CFGLOG_LOGGEDCMD:""", """logged command:""" ]
   Fields = [
     """({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d\.\d+)""",

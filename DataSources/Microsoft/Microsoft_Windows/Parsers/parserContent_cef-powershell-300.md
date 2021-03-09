@@ -20,6 +20,8 @@ Name = cef-powershell-300
     """message=({script_message}[^:]+)""",
     """"Path"":""(|({path}.+?))"""",
     """"ProcessID"":""({pid}\d+)"""",
+    """-file\s({process}({process_directory}[^\s]+\\\\({process_name}[^\s\\]+)))""",
+    """CommandLine\\*=({command_line}[^\s]+)""",
   ]
 }
 ```

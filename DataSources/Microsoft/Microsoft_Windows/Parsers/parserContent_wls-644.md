@@ -18,6 +18,7 @@ Name = wls-644
       """CallerUserName="+({caller_user}[^"]+)"""",
       """TargetAccountID="+\%\{({user_sid}[^}]+)\}"""",
       """TargetAccountName="+({user}[^"]+)""""
+      """CallerMachineName="+({src_host}[^"]+)"""",
     ]
     DupFields=[ "host->dest_host",
       "caller_domain->domain"]

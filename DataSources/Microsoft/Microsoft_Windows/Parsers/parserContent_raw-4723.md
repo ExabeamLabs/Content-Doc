@@ -6,11 +6,12 @@ Name = raw-4723
     Product = Microsoft Windows
     Lms = Direct
     DataType = "windows-password-change"
-    TimeFormat = "MMM dd HH:mm:ss yyyy"
+    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
     Conditions = [ "An attempt was made to change" ]
     Fields = [
       """({event_name}An attempt was made to change an account's password)""",
       """exabeam_host=({host}[\w.\-]+)""",
+      """timestamp"+:"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d\+\d\d\d\d)""",
       """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
       """\Wrt=({time}\d+)""",
       """Security,(rn=)?({record_id}[\d]+)""",

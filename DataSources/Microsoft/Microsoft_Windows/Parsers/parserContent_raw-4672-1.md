@@ -11,7 +11,7 @@ Name = raw-4672-1
     Fields = [
       """({event_name}Special privileges assigned to new logon)""",
       """\scategoryOutcome=(|/({outcome}.+?))(\s+\w+=|\s*$)""",
-      """"computer_name\\*":\\*"({host}[^\\"]+)""",
+      """"(?:winlog\.)?computer_name\\*":\\*"({host}[^\\"]+)""",
       """@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """Type\s*=\s*"({outcome}[^";]+)"""",
       """Keywords=({outcome}.+?);?\s*(\w+=)""",

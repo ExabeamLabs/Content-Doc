@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-securesphere-db-login-1
-  Vendor = Imperva 
+  Vendor = Imperva
   Product = Imperva SecureSphere
   Lms = Splunk
   DataType = "database-login"
