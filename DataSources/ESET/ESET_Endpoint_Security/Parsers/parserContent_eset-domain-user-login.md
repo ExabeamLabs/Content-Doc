@@ -7,14 +7,14 @@ Name = eset-domain-user-login
     Lms = Splunk
     DataType = "authentication-successful"
     TimeFormat = "MMM dd yyyy HH:mm:ss"
-    Conditions = [ "LEEF:1.0|ESET|RemoteAdministrator|", """cat=ESET""", """|Domain user login|""" ]
+    Conditions = [ """LEEF:""", """|ESET|RemoteAdministrator|""", """cat=ESET RA Audit Event""", """|Domain user login|""" ]
     Fields = [
-      """(\s|\|)cat=({category}.+?)\s*(\w+=|$)""",
-      """(\s|\|)sev=({alert_severity}\d+)""",
-      """(\s|\|)devTime=({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
-      """(\s|\|)src=({src_ip}(\d{1,3}\.){3}\d{1,3})""",
+      """\Wcat=({category}[^=]+?)\s*(\w+=|$)""",
+      """\Wsev=({alert_severity}\d+)""",
+      """\WdevTime=({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
+      """\Wsrc=({src_ip}(\d{1,3}\.){3}\d{1,3})""",
       """\Waction=({activity}[^\s]+)\s""",
-      """\Wresult=({outcome}.+?)\s*$""",
+      """\Wresult=({outcome}[^=]+?)\s*(\w+=|$)""",
       """\WdeviceName=({host}[^\s]+)\s""",
       """\Wtarget=({object}[^\s]+)\s*""",
       """\Wdetail=({additional_info}[^.]+).""",

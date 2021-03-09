@@ -2,7 +2,7 @@
 ```Java
 {
 Name = sigsci-web-activity
-  Vendor = SIGSCI 
+  Vendor = SIGSCI
   Product = SIGSCI
   Lms = Direct 
   DataType = "web-activity"

@@ -11,7 +11,7 @@ Name = exalms-680
   Fields = [
     """({event_name}Logon attempt)""",
     """"@timestamp"\s*:\s*"({time}[^"]+)"""",
-    """"computer_name"\s*:\s*"({host}[\w\-\.]+)"""",
+    """"(?:winlog\.)?computer_name"\s*:\s*"({host}[\w\-\.]+)"""",
     """"event_data"\s*:\s*\{.*?"(param3|SourceWorkstation)"\s*:\s*"({dest_host}[^"]+)"""",
     """"event_data"\s*:\s*\{.*?"(param4|ErrorCode)"\s*:\s*"({result_code}[^"]+)"""",
     """"event_data"\s*:\s*\{.*?"(param2|UserName|User)"\s*:\s*"({user}[^"]+)"""",

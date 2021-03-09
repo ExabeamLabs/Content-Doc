@@ -9,6 +9,7 @@ Name = mcafee-vse-epo-alert
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = [ """AnalyzerName=""","""ThreatCategory=""" ]
     Fields = [
+      """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
       """ReceivedUTC="?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """ServerID="?({host}[^"\|]+?)("|\||\s\w+=)""",
       """TargetHostName="?(?:|None|({src_host}[^"\|]+?)|)("|\||\s\w+=)""",     

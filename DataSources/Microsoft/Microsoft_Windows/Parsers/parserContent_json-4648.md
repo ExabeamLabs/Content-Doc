@@ -11,7 +11,7 @@ Name = json-4648
     Fields = [
       """({event_name}A logon was attempted using explicit credentials)""",
       """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s({host}[^\s]+)\sSkyformation""",
+      """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]+\sSkyformation""",
       """"EventReceivedTime":\s*({time}\d+)""",
       """"timestamp":\s*({time}\d+)""",
       """"(Hostname|MachineName)":"({host}[^"]*)""",

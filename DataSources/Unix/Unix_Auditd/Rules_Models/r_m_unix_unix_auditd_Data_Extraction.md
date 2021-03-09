@@ -5,9 +5,8 @@ Vendor: Unix
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   1    |     1      |     16      |   16    |
+|   3   |   1    |     2      |     16      |   16    |
 
-| Event Type | Rules                                                                                                                             | Models                                                               |
-| ---------- | --------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| file-read  | <b>T1083 - File and Directory Discovery</b><br> ↳ <b>FA-OG-A</b>: Abnormal access to source code files for user in the peer group |  • <b>FA-OG</b>: Users accessing source code files in the peer group |
-| file-write | <b>T1083 - File and Directory Discovery</b><br> ↳ <b>FA-OG-A</b>: Abnormal access to source code files for user in the peer group |  • <b>FA-OG</b>: Users accessing source code files in the peer group |
+| Event Type      | Rules                                                                                                                                                                                                                                                                                                                                                                    | Models |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
+| process-created | <b>T1064 - T1064</b><br> ↳ <b>Suspicious-Shell-Child-Process</b>: Windows shell has spawned a suspicious process<br><br><b>T1021 - Remote Services</b><br> ↳ <b>A-MSTSC-RDP-Hijack</b>: MSTSC Shadowing, possible RDP session hijack/shadowing of session on this asset<br> ↳ <b>MSTSC-RDP-Hijack</b>: MSTSC Shadowing, possible RDP session hijack/shadowing of session |        |
