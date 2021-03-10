@@ -22,9 +22,10 @@ Name = cef-netskope-alert
     """"malware_scanner_result":"({outcome}[^"]+)""",
     """"local_md5":"({md5}[^"]+)""",
     """"malware_severity":"({alert_severity}[^"]+)""",
+    """"user":"({from_user_at}[^"]+)"""",
     """"file_path":"({file_path_at}[^"]+)"""",
     """"shared_with":\[({shared_with_at}[^\]]+)\]""",
-    """"local_sha256":"({sha256_at}[^"]+)"""",
+    """"local_sha256":"({sha_256_at}[^"]+)"""",
     """"site":"({site_at}[^"]+)""""
   ]
   DupFields = ["process->process_name"]

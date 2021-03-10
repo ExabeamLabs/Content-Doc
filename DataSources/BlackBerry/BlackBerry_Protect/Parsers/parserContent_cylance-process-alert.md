@@ -24,6 +24,6 @@ Name = cylance-process-alert
     """"file_hash_id":"({file_hash}[^"]+)"""",
     """\sfname=([^=]*\\)?({file_name}[^\.]+\.({file_ext}[^\\:\s.]+)?)\s+\w+="""
   ]
-  DupFields = [ "directory->process_directory", "file_hash->sha256_at", "file_name->name_at" ]
+  DupFields = [ "directory->process_directory" ]
 }
 ```

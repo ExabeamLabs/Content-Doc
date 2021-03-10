@@ -17,9 +17,7 @@ Name = s-xml-4724
     """<Data Name='SubjectUserSid'>(?:NONE_MAPPED|({user_sid}[^<]+))</Data>""",
     """<Data Name='SubjectUserName'>(?=\w)({user}[^<]+)</Data>""",
     """<Data Name='SubjectDomainName'>(?=\w)({domain}[^<]+)</Data>""",
-    """<Data Name='SubjectLogonId'>(?=\w)({logon_id}[^<]+)</Data>""",
-    """<Keyword>({outcome}[^<]+?)<\/Keyword>""",
-    """({event_name}An attempt was made to reset an account's password)""",
+    """<Data Name='SubjectLogonId'>(?=\w)({logon_id}[^<]+)</Data>"""
   ]
   DupFields = [ "host->dest_host" ]
 }
