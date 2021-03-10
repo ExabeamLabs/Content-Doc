@@ -9,6 +9,6 @@ Name = cef-netskope-dlp-email-alert-1
     """"to_user":"({recipients}({recipient}[^"\s@;,]+@({external_domain}[^"\s@,]+))[^"]*)""",
     """"site":"({site_at}[^"]+)""""
   ]
-  DupFields = [ "object->file_name", "recipient->external_address", "sender->from_user_at" ]
+  DupFields = [ "object->file_name", "recipient->external_address", "sender->from_user_at", "recipients->shared_with_at" ]
 }
 ```

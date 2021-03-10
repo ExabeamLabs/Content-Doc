@@ -11,19 +11,19 @@ Name = crowdstrike-logon
     Fields = [
       """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
       """"aip":"({host}[^"]+)""",
-      """suser=((?i)system|({user}[^\s]+))""",
+      """suser=({user}[^\s]+)""",
       """suid=({sid}[^\s]+)""", 
       """"AuthenticationPackage":"({auth_package}[^"]+)""",
       """"timestamp":"({time}\d+)""",
       """"LogonType":"({logon_type}\d+)""",
-      """"UserName":"((?i)system|({user}[^"]+))""",
+      """"UserName":"({user}[^"]+)""",
       """"LogonServer":"({dest_host}[^"]+)"""
       """"UserName":"({dest_host}[^"$]+)\$""",
       """"UserPrincipal":"({user_email}[^"]+)""",
       """"UserSid":"({user_sid}[^"]+)""",
       """"aid":"({aid}[^"]+)""",
       """"event_simpleName":"({event_code}[^"]+)""",
-      """"LogonDomain":"(NT AUTHORITY|({domain}[^"]+))""",
+      """"LogonDomain":"({domain}[^"]+)""",
     ]
     DupFields = ["user->account"]
   }

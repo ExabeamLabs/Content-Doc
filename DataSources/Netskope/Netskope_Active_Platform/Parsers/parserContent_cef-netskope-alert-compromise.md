@@ -18,7 +18,11 @@ Name = cef-netskope-alert-compromise
     """"hostname":"({src_host}[^"]+)""",
     """security-threat-detected\|({alert_severity}\d+)""",
     """"alert_name":"({additional_info}[^"]+)""",
-    """"type":"({alert_type}[^"]+)"""
+    """"type":"({alert_type}[^"]+)""",
+    """"user":"({from_user_at}[^"]+)"""",
+    """"matched_username":"({shared_with_at}[^"]+)"""",
+    """requestClientApplication=({site_at}[^=]+?)\s+\w+="""
   ]
+  DupFields = [ "site_at->app" ]
 }
 ```

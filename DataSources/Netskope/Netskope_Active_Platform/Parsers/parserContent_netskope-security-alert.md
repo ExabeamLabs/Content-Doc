@@ -29,6 +29,7 @@ Name = netskope-security-alert
     """"dst_location":\s*"(N/A|({location}[^"]+))""",
     """"app":\s*"({app}[^"]+)""",
     """"md5":\s*"({md5}[^"]+)"""",
+    """"owner":\s*"({file_owner_at}[^"]+)"""",
     """"from_user":\s*"({from_user_at}[^"]+)"""",
     """"file_path":\s*"({file_path_at}[^"]+)"""",
     """"shared_with":\s*"({shared_with_at}[^"]+)"""",

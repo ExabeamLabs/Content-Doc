@@ -25,6 +25,7 @@ Name = netskope-dlp-alert
     """"file_path": "({file_path}[^"]+)"""",
     """"file_size": ({bytes}\d+),""",
     """"md5":\s*"({md5}[^"]+)"""",
+    """"owner":\s*"({file_owner_at}[^"]+)"""",
     """"from_user":\s*"({from_user_at}[^"]+)"""",
     """"site":\s*"({site_at}[^"]+)""""
   ]
