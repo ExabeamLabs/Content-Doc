@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-juniper-vpn-resume
-  Vendor = Juniper Networks
+  Vendor = Juniper VPN
   Product = Juniper VPN
   Lms = ArcSight
   DataType = "access-control"

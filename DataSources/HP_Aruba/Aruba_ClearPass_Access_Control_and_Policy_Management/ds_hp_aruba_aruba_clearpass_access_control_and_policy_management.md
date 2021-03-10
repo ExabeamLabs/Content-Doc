@@ -6,9 +6,9 @@ Product: Aruba ClearPass Access Control and Policy Management
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   4   |   3    |     2      |      1      |    1    |
 
-|                                  Use-Case                                  | Event Types/Parsers                                                                          | MITRE TTP                                             | Content                                                                                                                                                          |
-|:--------------------------------------------------------------------------:| -------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  nac-logon<br> ↳ [cef-aruba-nac-logon-1](Parsers/parserContent_cef-aruba-nac-logon-1.md)<br> | T1021 - Remote Services<br>T1078 - Valid Accounts<br> | [<ul><li>4 Rules</li></ul><ul><li>3 Models</li></ul>](Rules_Models/r_m_hp_aruba_aruba_clearpass_access_control_and_policy_management_Compromised_Credentials.md) |
+|                Use-Case                | Event Types/Parsers                                                                          | MITRE TTP                                             | Content                                                                                                                                        |
+|:--------------------------------------:| -------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Other](../../../UseCases/uc_other.md) |  nac-logon<br> ↳ [cef-aruba-nac-logon-1](Parsers/parserContent_cef-aruba-nac-logon-1.md)<br> | T1021 - Remote Services<br>T1078 - Valid Accounts<br> | [<ul><li>4 Rules</li></ul><ul><li>3 Models</li></ul>](Rules_Models/r_m_hp_aruba_aruba_clearpass_access_control_and_policy_management_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

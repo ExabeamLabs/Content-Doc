@@ -7,7 +7,7 @@ Name = raw-member-added-2008
   Lms = Direct
   DataType = "windows-member-added"
   TimeFormat = "MMM dd HH:mm:ss yyyy"
-  Conditions = [ """A member was added to a security-enabled""" ]
+  Conditions = [ "A member was added to a security-enabled" ]
   Fields = [
     """({event_name}A member was added to a security-enabled [\w\s]+ group)""",
     """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
@@ -18,11 +18,10 @@ Name = raw-member-added-2008
     """(?i)(((audit|success)( |_)(success|audit))|information)(\s+|,)({host}[\w.\-]+)""",
     """ComputerName\\=({host}[\w\-.]+)""",
     """Computer(\w+)?["\s]*(:|=)\s*"?({host}.+?)("|\s|;)""",
-    """({event_code}4728|4732|4756)""",
     """({event_code}47\d\d)(\s+|,)Microsoft-Windows-Security-Auditing""",
     """"EventID":"({event_code}\d+)""",
     """EventCode\\=({event_code}\d+)""",
-    """Account Name:\s*({user}[^\s]+)\s*Account Domain:\s*({domain}[^\s]+)\s*Logon ID:""",
+    """Account Name:\s*({user}.+?)\s*Account Domain:\s*({domain}.+?)\s*Logon ID:""",
     """Logon ID:\s*({logon_id}[^\s]+)""",
     """Member:\s*Security ID:\s*({account_id}(?=[^\\]+\\)({sid_domain}[^\\]+)\\+({sid_user}.+?)|(?:.+?))\s*Account Name:""",
     """A member was added to a security-enabled ({group_type}\w+) group""",

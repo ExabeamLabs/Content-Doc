@@ -11,7 +11,7 @@ Name = exalms-576
   Fields = [
     """({event_name}Special privileges assigned to new logon)""",
     """"@timestamp"\s*:\s*"({time}[^"]+)"""",
-    """"(?:winlog\.)?computer_name"\s*:\s*"({host}[\w\-\.]+)""",
+    """"computer_name"\s*:\s*"({host}[\w\-\.]+)""",
     """({event_code}576)""",
     """({ownership_privilege}SeTakeOwnershipPrivilege)""",
     """({environment_privilege}SeSystemEnvironmentPrivilege)""",

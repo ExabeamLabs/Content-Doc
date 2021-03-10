@@ -3,12 +3,11 @@
 {
 Name = appsense-process-alert
     Vendor = AppSense Application Manager
-  Product = AppSense Application Manager
     Lms = Splunk
     DataType = "process-alert"
     IsHVF = true
     TimeFormat = "MM/dd/yyyy hh:mm:ss a"
-    Conditions = [ """AppSense Application Manager""", """SourceName=""", """Message=""", """EventCode=""" ]
+    Conditions = [ """AppSense Application Manager""" ]
     Fields = [
       """({time}\d+/\d+/\d+ \d+:\d+:\d+ (am|AM|pm|PM))""",
       """ComputerName=({dest_host}[^\s]+)""",

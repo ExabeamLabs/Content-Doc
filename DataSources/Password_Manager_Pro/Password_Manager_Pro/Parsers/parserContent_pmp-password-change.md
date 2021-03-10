@@ -3,7 +3,6 @@
 {
 Name = pmp-password-change
   Vendor = Password Manager Pro
-  Product = Password Manager Pro
   Lms = Splunk
   DataType = "password-change"
   TimeFormat = "yyyy/MM/dd HH:mm:ss"

@@ -16,8 +16,7 @@ Name = sourcefire-estreamer-alert-2
 	     """Access Control Rule Action:\s*({alert_severity}[^,]+)""",
 	     """User:\s*(?:Unknown|({user}[^,]+))""",
 	     """({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):({src_port}\d+) -> ({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\:({dest_port}\d+)""",
-	     """URL:\s*({malware_url}[^,]+)""",
-  	     """Web App:\s(Unknown|({process_name}[^,]+))""",
+	     """URL:\s*({malware_url}[^,]+)"""
   ]
   SOAR {
     IncidentType = "malware"

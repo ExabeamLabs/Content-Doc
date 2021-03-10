@@ -32,7 +32,6 @@ Name = vontu-dlp
       """\sDEVICE_ID:\s+({device_id}[^,]+)(,\s*\w+:|\s*$)""",
       """\sApplication_name:\s+({process_name}[^,]+)(,\s*\w+:|\s*$)"""
     ]
-    DupFields = ["user_email->sender", "target->recipients"]
     SOAR {
       IncidentType = "dlp"
       DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "user->dlpUser", "alert_name->dlpPolicy", "alert_severity->sourceSeverity", "protocol->dlpProtocol", "src_host->dlpDeviceName", "file_name->dlpFileName", "bytes->dlpFileSize", "outcome->dlpActionTaken"]

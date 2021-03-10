@@ -3,7 +3,6 @@
 {
 Name = bro-files-analysis
   Vendor = Bro
-  Product = Bro
   Lms = Direct
   DataType = "file-read"
   IsHVF = true

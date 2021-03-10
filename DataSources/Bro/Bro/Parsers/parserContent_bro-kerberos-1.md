@@ -3,7 +3,6 @@
 {
 Name = bro-kerberos-1
   Vendor = Bro
-  Product = Bro
   Lms = Direct
   DataType = "remote-access"
   IsHVF = true

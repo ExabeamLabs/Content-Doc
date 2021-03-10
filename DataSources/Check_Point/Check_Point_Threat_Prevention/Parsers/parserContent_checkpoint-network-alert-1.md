@@ -26,7 +26,7 @@ Name = checkpoint-network-alert-1
     """\Wdestination_dns_hostname:"({destination_dns_hostname}[^"]+)""",
     """\Worigin:"({origin_ip}[^"]+)""",
     """\Worigin_sic_name:"CN=({origin_name}[^",]+)""",
-    """\Wproduct:"({product_name}[^"]+)""",
+    """\Wproduct:"({product}[^"]+)""",
     """\Wrule_uid:"\{({rule_id}[^"\}]+)""",
     """\Wseverity:"({alert_severity}[^"]+)""",
 

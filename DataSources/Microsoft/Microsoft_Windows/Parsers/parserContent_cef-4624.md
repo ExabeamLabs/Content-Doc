@@ -22,7 +22,6 @@ Name = cef-4624
       """cs5=({auth_package}[^\s]+).+?cs5Label=Auth""",
       """\sdeviceProcessName=({auth_process}[^\s]+)""",
       """ src=(?:-|({src_ip}[\w:.]+))\s+\w+=""",
-      """shost=({src_host}[^\s]+)""", 
     ]
     DupFields = ["host->dest_host"]
   }

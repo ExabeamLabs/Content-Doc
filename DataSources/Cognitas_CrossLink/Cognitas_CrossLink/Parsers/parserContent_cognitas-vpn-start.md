@@ -3,7 +3,6 @@
 {
 Name = cognitas-vpn-start
     Vendor = Cognitas CrossLink
-  Product = Cognitas CrossLink
     Lms = Direct
     DataType = "vpn-start"
     TimeFormat = "epoch"

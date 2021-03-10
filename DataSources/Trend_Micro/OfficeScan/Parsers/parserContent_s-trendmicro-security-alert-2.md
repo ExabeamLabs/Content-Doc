@@ -16,8 +16,7 @@ Name = s-trendmicro-security-alert-2
     """\sC&C risk level="({alert_severity}[^"]+)""",
     """\sC&C url="({malware_url}[^"]+)""",
     """\sC&C ip port="({dest_ip}[^"]+)""",
-    """\sC&C channel="({protocol}[^"]+)""", 
-    """Process="({process}[^"]+)""",
+    """\sC&C channel="({protocol}[^"]+)"""
   ]
 }
 ```

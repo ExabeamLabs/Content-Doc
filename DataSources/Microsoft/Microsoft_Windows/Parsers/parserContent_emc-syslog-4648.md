@@ -2,7 +2,7 @@
 ```Java
 {
 Name = emc-syslog-4648
-  Vendor = Microsoft
+  Vendor = Microsoft 
   Product = Microsoft Windows
   Lms = Direct
   DataType = "windows-account-switch"

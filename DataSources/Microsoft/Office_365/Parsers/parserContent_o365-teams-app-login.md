@@ -12,8 +12,8 @@ Name = o365-teams-app-login
     """exabeam_host=({host}[\w.\-]+)""",
     """"CreationTime":"({time}\d+\-\d+\-\d+T\d+:\d+:\d+)"""",
     """"Workload":"({app}[^"]+)"""",
-    """"UserId":"({user_email}[^@]+@({email_domain}[^"]+))"""",
-    """\Wsuser=({user_email}[^@]+@({email_domain}[^\s+?]))\s+(\w+=|$)""",
+    """"UserId":"({user_email}[^"]+)"""",
+    """\Wsuser=({user_email}[^@]+@[^\s+?])\s+(\w+=|$)""",
     """"ObjectId":"(Unknown|({os}[^"\(\)]+[^\s\(\)]))"""
   ]
 }

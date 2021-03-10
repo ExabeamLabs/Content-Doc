@@ -3,7 +3,6 @@
 {
 Name = xml-4662
   Vendor = Microsoft Windows
-  Product = Microsoft Windows
   Lms = Direct
   DataType = "object-access"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

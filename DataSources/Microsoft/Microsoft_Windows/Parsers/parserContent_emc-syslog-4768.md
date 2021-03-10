@@ -17,11 +17,6 @@ Name = emc-syslog-4768
     """Client Address:\s+(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)""",
     """Result Code:\s+({result_code}[\w]+)""",
     """Supplied Realm Name:\s+({domain}[^\s]+)""",
-    """User ID:\s+(?:NULL SID|({user_sid}.+?))\s+Service Information""",
-    """Service Name:\s*({service_name}[^\s]+)""", 
-    """Ticket Options:\s*({ticket_options}[^\s]+)""",
-    """Ticket Encryption Type:\s*({ticket_encryption_type}[^\s]+)""",
-  ]
- DupFields = ["host->dest_host"]
+    """User ID:\s+(?:NULL SID|({user_sid}.+?))\s+Service Information""" ]
 }
 ```

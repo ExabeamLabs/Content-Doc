@@ -3,7 +3,6 @@
 {
 Name = apc-network-alert
   Vendor = APC
-  Product = APC
   Lms = Direct
   DataType = "network-alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

@@ -3,7 +3,6 @@
 {
 Name = observeit-sessions
   Vendor = ObserveIT
-  Product = ObserveIT
   Lms = Direct
   DataType = "remote-logon"
   TimeFormat = "MM/dd/yyyy HH:mm:ss"

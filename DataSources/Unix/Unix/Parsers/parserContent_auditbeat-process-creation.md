@@ -27,7 +27,7 @@ Name = auditbeat-process-creation
     """"host":\{.*?"name":"(|({host}[^"]+))"""",
     """"result":"({outcome}[^"]+)"""",
     """"event":\{.*?"type":"(|({activity_type}[^"]+))"""",
-    """"event":\{.*?"action":"(|({log_type}[^"]+))"""",
+    """"event":\{.*?"action":"(|({event_type}[^"]+))"""",
     """"event":\{.*?"category":"(|({sub_event_type}[^"]+))"""",
     """"event":\{.*?"outcome":"(|({outcome}[^"]+))"""",
     """"hostname":"({src_host}[^"]+)"""",

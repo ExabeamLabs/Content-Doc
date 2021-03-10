@@ -12,7 +12,7 @@ Name = s-azure-ad-app-activity-2
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """"createdDateTime"+:\s*"+({time}[^"]+)""",
     """ms:aad:audit"+,"+({host}[^"]+)""",
-    """"userPrincipalName"+:\s*"+({user_email}[^"\s@]+@({email_domain}[^"\s@]+))""",
+    """"userPrincipalName"+:\s*"+({user_email}[^"\s@]+@[^"\s@]+)""",
     """"ipAddress"+:\s*"+({src_ip}[A-Fa-f:\d.]+)""",
     """"activityDisplayName"+:\s*"+({activity}[^"]+)""",
 	""""result"+:\s*"+"({outcome}[^"]+)"""

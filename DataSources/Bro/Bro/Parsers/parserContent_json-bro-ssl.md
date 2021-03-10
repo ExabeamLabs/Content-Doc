@@ -3,7 +3,6 @@
 {
 Name = json-bro-ssl
   Vendor = Bro
-  Product = Bro
   Lms = Direct
   DataType = "authentication-successful"
   IsHVF = true

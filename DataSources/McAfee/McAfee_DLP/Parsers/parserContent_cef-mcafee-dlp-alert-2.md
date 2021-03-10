@@ -22,9 +22,6 @@ Name = cef-mcafee-dlp-alert-2
         """\Wdvc=(|({host}.+?))(\s+\w+=|\s*$)""",
         """\Wdvchost=(|({host}.+?))(\s+\w+=|\s*$)""",
         """\Wcatdt=(|({alert_type}.+?))(\s+\w+=|\s*$)"""
-        """\WrequestProtocol=(|({protocol}.+?))\s\w+=""", 
-        """\Wdntdom=[^\s]*?\.?({top_domain}[^\/\.\s]+)(?i)(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))""",
       ]
-      DupFields = ["alert_type->alert_name"]
     }
 ```

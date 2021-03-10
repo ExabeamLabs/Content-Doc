@@ -3,7 +3,6 @@
 {
 Name = sentinelone-security-alert-1
   Vendor = SentinelOne
-  Product = SentinelOne
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
@@ -24,7 +23,6 @@ Name = sentinelone-security-alert-1
     """\s*(D|d)etecting(E|e)ngine="({additional_info}[^"]+)""",
     """\screatedAt="({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
     """\Wcat="({category}[^"]+)""",
-    """\sdata.filePath="({process}[^"]+\\({process_name}[^"]+))""",
   ]
 }
 ```

@@ -3,7 +3,6 @@
 {
 Name = cef-duo-app-login
   Vendor = Duo Security
-  Product = Duo Security
   Lms = Splunk
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

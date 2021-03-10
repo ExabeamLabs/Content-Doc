@@ -12,7 +12,6 @@ Name = raw-5145-5
       """({event_name}A network share object was checked to see whether client can be granted desired access)""",
       """({event_code}5145)""",
       """Computer(Name)?\s*\\*"?(=|:|>)\s*"*({host}[\w\.-]+)(\s|,|"|</Computer>|$)""",
-      """TimeGenerated=({time}\d+)""",
       """Microsoft-Windows-Security-Auditing.+?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """Logon ID:\s*((\\)[rnt])*({logon_id}\S+?)((\\)[rnt])*\s*Network Information:""",
       """Account Name:\s*((\\)[rnt])*({user}\S+?)((\\)[rnt])*\s*Account Domain:""",

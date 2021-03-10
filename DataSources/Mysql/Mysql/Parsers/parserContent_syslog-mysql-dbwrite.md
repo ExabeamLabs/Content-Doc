@@ -3,7 +3,6 @@
 {
 Name = syslog-mysql-dbwrite
     Vendor = Mysql
-  Product = Mysql
     Lms = Direct
     DataType = "database-operation"
     IsHVF = true

@@ -12,8 +12,8 @@ Name = juniper-access-control
     """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)\s-\s*({host}[\w\-\.]+)""",
     """exabeam_host=({host}[\w.\-]+)""",
     """\[\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\].+?\[({resource}[^\]]+)\]""",
-    """({event_code}Agent login succeeded) for ({user}[^@\/]+)(?:@({domain}[^\/]+))?.+? from ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """Agent login succeeded for (({domain}[^\\]+)\\+)?({user}[^\\\/\s\@]+)"""
+    """({event_code}Agent login succeeded) for ({user}[^",@\/]+)(?:@({domain}[^\/]+))?.+? from ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """Agent login succeeded for (({domain}[^\\]+)\\+)?({user}[^\\\/\s\@",]+) from """
     """\(({realm}[^\)]+)\)\[REALM\]""",
     """({os}iOS|Android|BlackBerry|iPhone OS|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)"""
   ]

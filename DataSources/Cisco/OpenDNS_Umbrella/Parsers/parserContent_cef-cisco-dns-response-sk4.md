@@ -25,8 +25,6 @@ Name = cef-cisco-dns-response-sk4
     """"categories":\[({categories}"*({category}[^"\],]+)[^\]]*)\]""",
     """\Wsuser=(anonymous|({user}[^\s@]+?))(\s+\w+=|\s*$)""",
     """\Wsuser=(anonymous|({user_email}[^\s@]+@[^\s@]+))(\s+\w+=|\s*$)""",
-    """"identities"+:\["+({dest_host}[^\.]+)[^"]+"+,"+({user_fullname}.+?)\s*\(({user_email}({user}[^@]+)@[^"\)]+)""",
-    """"externalIp"+:"+({dest_ip}[^"]+)"""
   ]
 }
 ```

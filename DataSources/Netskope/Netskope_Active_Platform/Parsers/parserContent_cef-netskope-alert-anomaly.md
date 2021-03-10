@@ -8,8 +8,8 @@ Name = cef-netskope-alert-anomaly
   DataType = "alert"
   TimeFormat = "epoch_sec"
   Conditions = [ """CEF:""", """|Skyformation|""", """"alert_type":"anomaly"""", """destinationServiceName=Netskope""", """|security-threat-detected|""" ]
-  Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+ Fields = [
+    """({host}[\w\-.]+)\s+Skyformation""",
     """"timestamp":({time}\d+)""",
     """"user":"(({user_email}[^@"\s]+@[^@"\s]+)|(({domain}[^"@\\\/\s]+)[\\\/]+)?({user}[^"@\\\/\s]+))"""",
     """"app":"({process}[^"]+)""",
@@ -22,9 +22,6 @@ Name = cef-netskope-alert-anomaly
     """"url":"({malware_url}[^"]+)""",
     """"risk_level":"({alert_severity}[^"]+)""",
     """"hostname":"({src_host}[^"]+)""",
-    """"user":"({from_user_at}[^"]+)"""",
-    """"site":"({site_at}[^",]+)""""
   ]
-  DupFields = ["process->process_name","site_at->app"]
 }
 ```

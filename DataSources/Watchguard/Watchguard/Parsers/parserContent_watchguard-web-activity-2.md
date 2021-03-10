@@ -3,7 +3,6 @@
 {
 Name = watchguard-web-activity-2
   Vendor = Watchguard
-  Product = Watchguard
   Lms = Direct
   DataType = "web-activity"
   IsHVF = true
@@ -21,7 +20,6 @@ Name = watchguard-web-activity-2
     """\srcvd_bytes="({bytes_out}\d+)""",
     """\scats="({category}[^"]+)"""",
     """\ssrc_user="({user_email}({user}[^@]+)[^"]+)"""",   
-    """action="+({proxy_action}[^"]+)"""",
   ]
   
 }

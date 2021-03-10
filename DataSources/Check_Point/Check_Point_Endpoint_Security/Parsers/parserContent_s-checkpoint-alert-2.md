@@ -25,7 +25,6 @@ Name = s-checkpoint-alert-2
     """\|file_md5=({md5}[^\|]+)""",
     """\|malware_action=({additional_info}[^\|]+)""",
     """\|action=({action}[^\|]+)"""
-    """\|file_name=({file_name}[^\|]+)"""
   ]
   SOAR {
     IncidentType = "malware"

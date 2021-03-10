@@ -15,5 +15,6 @@ Name = syslog-juniper-vpn-connect
     """\s+-\s+\[[^\]]+\]\s+(({domain}[^\(]+)\\)?({user}.+?)\(""",
     """\sConnected to\s+(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\.-]+))\s+port""",
   ]
+  DupFields = ["user->account"]
 }
 ```

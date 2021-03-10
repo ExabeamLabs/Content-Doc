@@ -7,7 +7,7 @@ Name = sophos-epp-logwriter-alert
   Lms = Splunk
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """EventType=Virus""", """ReportingName=""","""ComputerIPAddress=""" ]
+  Conditions = [ """ReportingName=""","""ComputerIPAddress=""" ]
   Fields = [
      """;\s+EventID=({alert_id}[\d]+);""",
      """;\s*EventTime=({time}[\d\- T\+:]+);""",

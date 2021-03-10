@@ -6,11 +6,9 @@ Product: Kiteworks
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |  19   |   11   |     2      |      1      |    1    |
 
-|                               Use-Case                               | Event Types/Parsers                                                                    | MITRE TTP                                                                    | Content                                                                                                            |
-|:--------------------------------------------------------------------:| -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-|    [Data Exfiltration](../../../UseCases/uc_data_exfiltration.md)    |  dlp-alert<br> ↳ [accelion-dlp-alert](Parsers/parserContent_accelion-dlp-alert.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1204 - User Execution<br> | [<ul><li>15 Rules</li></ul><ul><li>9 Models</li></ul>](Rules_Models/r_m_accelion_kiteworks_Data_Exfiltration.md)   |
-|    [Malware Detection](../../../UseCases/uc_malware_detection.md)    |  dlp-alert<br> ↳ [accelion-dlp-alert](Parsers/parserContent_accelion-dlp-alert.md)<br> | T1204 - User Execution<br>                                                   | [<ul><li>5 Rules</li></ul><ul><li>3 Models</li></ul>](Rules_Models/r_m_accelion_kiteworks_Malware_Detection.md)    |
-| [Ransomware Detection](../../../UseCases/uc_ransomware_detection.md) |  dlp-alert<br> ↳ [accelion-dlp-alert](Parsers/parserContent_accelion-dlp-alert.md)<br> | T1204 - User Execution<br>                                                   | [<ul><li>5 Rules</li></ul><ul><li>3 Models</li></ul>](Rules_Models/r_m_accelion_kiteworks_Ransomware_Detection.md) |
+|                Use-Case                | Event Types/Parsers                                                                    | MITRE TTP                                                                    | Content                                                                                               |
+|:--------------------------------------:| -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| [Other](../../../UseCases/uc_other.md) |  dlp-alert<br> ↳ [accelion-dlp-alert](Parsers/parserContent_accelion-dlp-alert.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1204 - User Execution<br> | [<ul><li>19 Rules</li></ul><ul><li>11 Models</li></ul>](Rules_Models/r_m_accelion_kiteworks_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

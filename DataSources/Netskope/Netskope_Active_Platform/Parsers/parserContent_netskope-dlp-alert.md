@@ -23,12 +23,7 @@ Name = netskope-dlp-alert
     """"dlp_rule_severity": "({alert_severity}[^"]+)"""",
     """"dlp_file": "({file_name}[^"]+)"""",
     """"file_path": "({file_path}[^"]+)"""",
-    """"file_size": ({bytes}\d+),""",
-    """"md5":\s*"({md5}[^"]+)"""",
-    """"owner":\s*"({file_owner_at}[^"]+)"""",
-    """"from_user":\s*"({from_user_at}[^"]+)"""",
-    """"site":\s*"({site_at}[^"]+)""""
+    """"file_size": ({bytes}\d+),"""
   ]
-  DupFields = [ "file_path->file_path_at", "additional_info->shared_with_at" ]
 }
 ```

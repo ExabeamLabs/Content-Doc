@@ -3,7 +3,6 @@
 {
 Name = s-ssh-login-failed
   Vendor = Unix
-  Product = Unix
   Lms = Splunk
   DataType = "ssh-login"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

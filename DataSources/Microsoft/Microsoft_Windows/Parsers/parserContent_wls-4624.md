@@ -22,7 +22,7 @@ Name = wls-4624
       """TargetDomainName="+({domain}[^"]+)"""",
       """IpAddress="+(?:-|({src_ip}[^"]+))""""
       """WorkstationName="+([A-Fa-f:\d.]+|({src_host_windows}[^"]+))"""",
-      """ProcessName="(-|({process}[^"]+))""", 
+      """SubjectUserName="+({account}[^"]+)"""",
     ]
     DupFields = ["host->dest_host"]
   }

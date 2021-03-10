@@ -11,7 +11,6 @@ Name = xml-5145-1
   Fields = [
     """<TimeCreated SystemTime='({time}\d+-\d+-\d+T\d+:\d+:\d+)""",
     """<Computer>({host}[\w\-.]+)""",
-    """<Computer>(\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}|({host}[\w\-.]+))""",
     """({event_code}5145)""",
     """<EventRecordID>({record_id}[^<]+)""",
     """'SubjectUserSid'>({user_sid}[^"\s<]+)<""",
