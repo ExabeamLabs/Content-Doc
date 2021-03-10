@@ -14,7 +14,7 @@ Name = l-4767
     """<Computer>({host}[\w\-.]+)</Computer>""",
     """<EventID>({event_code}\d+)</EventID>""",
     """Subject:.+?Account Name:\s*({user}.+?)\s*Account Domain:\s*({domain}.+?)\s*Logon ID:\s*({logon_id}.+?)\s*Target Account:""",
-    """Target Account:\s*Security ID:\s*({user_sid}.+?)\s*Account Name:\s*({target_user}.+?)\s*Account Domain:\s*({target_domain}[^=<]+)\s*<"""
+    """Target Account:\s*Security ID:\s*({user_sid}.+?)\s*Account Name:\s*({target_user}.+?)\s*Account Domain:\s*({target_domain}.+?)\s*<"""
   ]
   DupFields = [ "host->dest_host" ]
 }

@@ -3,7 +3,6 @@
 {
 Name = cef-infowatch-usb-write
   Vendor = InfoWatch
-  Product = InfoWatch
   Lms = ArcSight
   DataType = "usb-activity"
   TimeFormat = "epoch"

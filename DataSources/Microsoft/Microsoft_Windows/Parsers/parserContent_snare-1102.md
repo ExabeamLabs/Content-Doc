@@ -9,6 +9,5 @@ Name = snare-1102
     """\s+(Information|Audit Success|Success Audit)\s+({host}[\w.\-]+)""",
     """\s+({time}\w+\s+\d+\s+\d\d:\d\d:\d\d\s+\d\d\d\d)\s+""",
   ]
-  DupFields = [ "host->dest_host" ]
 }
 ```

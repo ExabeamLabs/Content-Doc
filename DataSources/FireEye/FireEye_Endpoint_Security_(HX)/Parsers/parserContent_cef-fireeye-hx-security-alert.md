@@ -18,7 +18,7 @@ Name = cef-fireeye-hx-security-alert
     """\WexternalId=({alert_id}\d+)""",
     """\Wact=({alert_type}.+?)\s*(\w+=|$)""",
     """\Wcs4=({process}.+?)\s*(\w+=|$)""",
-    """\Wcs4=({directory}[^\.]+?)\\+({process_name}[^\\]+?)\s*(\w+=|$)""",
+    """\Wcs4=({directory}.+?)({process_name}[^\\]+?)\s*(\w+=|$)""",
     """\Wcs9=({md5}\S+)""",
     """\Wcs11=({alert_name}.+?)\s*(\w+=|$)""",
     """\Wmsg=({additional_info}.+?)\s*(\w+=|$)"""

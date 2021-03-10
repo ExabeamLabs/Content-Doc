@@ -3,7 +3,6 @@
 {
 Name = s-bro-email-in
   Vendor = Bro
-  Product = Bro
   Lms = Splunk
   DataType = "dlp-email-alert"
   TimeFormat = "epoch_sec"

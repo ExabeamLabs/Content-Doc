@@ -3,7 +3,6 @@
 {
 Name = bro-dce_rpc
   Vendor = Bro
-  Product = Bro
   Lms = Direct
   DataType = "remote-access"
   TimeFormat = "epoch_sec"

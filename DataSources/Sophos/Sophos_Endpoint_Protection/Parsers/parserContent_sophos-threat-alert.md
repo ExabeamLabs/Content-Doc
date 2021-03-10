@@ -18,9 +18,7 @@ Name = sophos-threat-alert
     """ComputerName=({src_host}[^;]*);""",
     """ComputerIPAddress=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """exabeam_host=({host}[\w\-.]+)""",
-    """FullFilePath=({file_path}[^;]+?)\s*(;|$)""",
-    """FullFilePath=({malware_url}[^;]+\\({malware_file_name}[^;]+))""",
-    """Status=({alert_severity}[^;]+)""",
+    """FullFilePath=({file_path}[^;]+?)\s*(;|$)"""
   ]
 }
 ```

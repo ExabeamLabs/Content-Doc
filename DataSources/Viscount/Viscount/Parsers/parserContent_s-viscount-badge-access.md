@@ -3,7 +3,6 @@
 {
 Name = s-viscount-badge-access
   Vendor = Viscount
-  Product = Viscount
   Lms = Splunk
   DataType = "physical-access"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"

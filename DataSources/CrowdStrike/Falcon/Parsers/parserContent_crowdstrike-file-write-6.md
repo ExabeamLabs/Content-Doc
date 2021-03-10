@@ -11,6 +11,7 @@ Name = crowdstrike-file-write-6
     Conditions = [ """"event_simpleName":"CriticalFileModified"""" ]
     Fields = [
       """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
+      """({host}[\w\-.]+)\s+Skyformation""",
       """"timestamp":"({time}\d+)""",
       """"event_simpleName":"({event_code}[^"]+)""",
       """"aid":"({aid}[^"]+)""",

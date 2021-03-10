@@ -3,7 +3,6 @@
 {
 Name = s-common-ftp-failed-login-1
   Vendor = FTP
-  Product = FTP
   Lms = Splunk
   DataType = "failed-app-login"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

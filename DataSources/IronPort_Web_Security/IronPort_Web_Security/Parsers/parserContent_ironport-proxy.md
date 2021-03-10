@@ -3,7 +3,6 @@
 {
 Name = ironport-proxy
     Vendor = IronPort Web Security
-  Product = IronPort Web Security
     Lms = Direct
     DataType = "web-activity"
     IsHVF = true

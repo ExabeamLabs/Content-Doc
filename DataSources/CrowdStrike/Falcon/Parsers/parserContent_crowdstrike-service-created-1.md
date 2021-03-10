@@ -15,7 +15,6 @@ Name = crowdstrike-service-created-1
     """"ServiceDisplayName":"({service_name}[^"]+)""",
     """"UserName":"({user}[^"\s]+)"""",
     """"ServiceDescription":"({additional_info}[^"]+)"""
-    """"aid":"({aid}[^"]+)"""
   ]
   DupFields = [ "directory->process_directory" ]
 }

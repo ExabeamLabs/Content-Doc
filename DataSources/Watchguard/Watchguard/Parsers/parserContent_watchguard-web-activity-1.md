@@ -3,7 +3,6 @@
 {
 Name = watchguard-web-activity-1
   Vendor = Watchguard
-  Product = Watchguard
   Lms = Direct
   DataType = "web-activity"
   IsHVF = true
@@ -21,7 +20,6 @@ Name = watchguard-web-activity-1
     """\sapp_cat_name="({category}[^"]+)"""",
     """\ssrc_user="({user_email}[^"]+)"""",
     #"""\s(?:cn|sni)="(?!\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})[^"]*?({top_domain}[^\s."]+(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)""""
-    """action="+({proxy_action}[^"]+)""""
   ]
   DupFields = [ "user_email->user" ]
 }

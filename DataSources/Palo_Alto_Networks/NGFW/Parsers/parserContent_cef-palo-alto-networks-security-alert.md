@@ -11,16 +11,16 @@ Name = cef-palo-alto-networks-security-alert
   Fields = [
     """\sdvchost=({host}[\w\-.]+)""",
     """\srt=({time}\d+)\s+(\w+=|$)""",
-    """\scat=({alert_name}[^=]+)\s+(\w+=|$)""",
-    """\sshost=({src_host}[^=]+)\s+(\w+=|$)""",
-    """\sdhost=({dest_host}[^=]+)\s+(\w+=|$)""",
-    """\ssrc=({src_ip}[A-Fa-f\d:.]+)\s+(\w+=|$)""",
-    """\sdst=({dest_ip}[A-Fa-f\d:.]+)\s+(\w+=|$)""",
-    """\sdeviceSeverity=({alert_severity}\d+)\s""",
-    """\|spyware\|THREAT\|(Unknown|({alert_severity}[^\|]+))""",
+    """\scat=({alert_name}.+?)\s+(\w+=|$)""",
+    """\sshost=({src_host}.+?)\s+(\w+=|$)""",
+    """\sdhost=({dest_host}.+?)\s+(\w+=|$)""",
+    """\ssrc=({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})\s+(\w+=|$)""",
+    """\sdst=({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})\s+(\w+=|$)""",
+    """\|spyware\|THREAT\|({alert_severity}\d+)""",
+    """\sdeviceSeverity=({alert_severity}.+?)\s+(\w+=|$)""",
     """\seventId=({alert_id}\d+)\s+(\w+=|$)""",
-    """\sapp=({threat_category}[^=]+)\s+(\w+=|$)""",
-    """\ssuser=((({domain}[^\\\/=]+)[\\\/]+)?({user}[^\s]+))"""
+    """\sapp=({threat_category}.+?)\s+(\w+=|$)""",
+    """\ssuser=(|({user}[^\s]+))""",
   ]
   DupFields = [ "alert_name->alert_type" ]
   SOAR {

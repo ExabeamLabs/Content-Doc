@@ -23,6 +23,6 @@ Name = f5-asm-alert
     """(\\r\\n|\s)User-Agent:\s*({user_agent}[^"]+?)(\\r\\n[\w\-]+:|")""",
     """(\\r\\n|\s)User-Agent:\s*Mozilla\/.+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)"""
   ]
-  DupFields = ["protocol->alert_type"]
+  DupFields = ["protocol->alert_type", "browser->process"]
 }
 ```

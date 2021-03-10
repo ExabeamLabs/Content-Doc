@@ -7,7 +7,7 @@ Name = cef-vontu-dlp-alert-2
     Lms = Direct
     DataType = "dlp-alert"
     Conditions = [ """Symantec|DLP""","""POLICY=""" ]
-    TimeFormat = "yyyy-MM-dd HH:mm:ss"
+    TimeFormat = "MMM dd, yyyy HH:mm:ss a"
     Fields = [
       """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
       """OCCURRED_ON=({time}\w+\s+\d+,\s*\d+\s+\d+:\d+:\d+\s+(AM|PM|am|pm))""",
@@ -25,7 +25,7 @@ Name = cef-vontu-dlp-alert-2
       """\|\s*SUBJECT=+\s*(N\/A|({subject}[^\|]+?))\s*\|""",
       """\|\s*ATTACHMENTS=({file_name}[^\|]+?)\s*(\||$)"""
     ]
-    DupFields = [ "subject->additional_info" , "user_email->sender", "target->recipients"]
+    DupFields = [ "subject->additional_info" ]
     SOAR {
       IncidentType = "dlp"
       DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "user->dlpUser", "alert_name->dlpPolicy", "alert_severity->sourceSeverity", "protocol->dlpProtocol", "outcome->dlpActionTaken"]

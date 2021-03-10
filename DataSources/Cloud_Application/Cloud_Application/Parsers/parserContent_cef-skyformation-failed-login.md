@@ -3,7 +3,6 @@
 {
 Name = cef-skyformation-failed-login
   Vendor = Cloud Application
-  Product = Cloud Application
   Lms = ArcSight
   DataType = "failed-app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

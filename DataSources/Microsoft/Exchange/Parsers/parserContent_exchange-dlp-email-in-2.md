@@ -7,17 +7,28 @@ Name = exchange-dlp-email-in-2
   Lms = Splunk
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:m:ss.SSS"
-  Conditions = [ """,SMTP,SEND,""", """,Incoming,""" ]
+  Conditions = [ """,SMTP,SEND,""" ]
   Fields = [
-    """,({time}\d\d\d\d-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d+)""",
-    """\d+:\d+\.\d+Z,[A-Fa-f:\d.]+,({host}[\w\.\-]+),""",
-    """({additional_info}SMTP),({action}[^,]+),({alert_id}\d+),""",
+    """exabeam_host=({host}[\w.\-]+)""",
+    """,SMTP,.*?({time}\d\d\d\d-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d+)""",
+    """,({host}[^\s,]+),(?:(?:\s*"(?:[^"]|"")+")\s*,|[^",]+?,|,){3}SMTP,""",
+    """,[^\s,]+:({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),(?:(?:\s*'(?:[^']|'')+')\s*,|(?:\s*"(?:[^"]|"")+")\s*,|[^",]+?,|\s*,){3}SMTP,""",
+    """,\s*(?:'|")?({host}[\w\.-]+)(?:'|")?\s*,(?:(?:\s*'(?:[^']|'')+')\s*,|(?:\s*"(?:[^"]|"")+")\s*,|[^",]+?,|\s*,){2}SMTP,""",
+    """({additional_info}SMTP),({action}[^,]+),""",
     """({direction}Incoming)""",
-    """,({recipients}({recipient}[^\s@;,"]+@({external_domain}[^\s@;,"]+))[^,]*?),(?:[^",]+?,|,)({bytes}\d+),({num_recipients}\d+),(?:"(?:[^"]|"")+",|[^",]+?,|,){6}Incoming,""",
-    """,\s*({subject}[^,]*?)\s*,(?:[^",]+?,|,){3}Incoming,""",
-    ""","\s*({subject}[^"]+?)\s*",(?:[^",]+?,|,){3}Incoming,""",
-    """,(MicrosoftExchange[^,]+?|({external_address}[^\s,;@"']+@({external_domain}[^\s;,"'@]+))),(?:<>|({return_path}[^,]+?)),(?:[^",]+?,|,)Incoming,"""
+    """,SMTP,[^,]+,\s*({alert_id}\d+)\s*,""",
+    """,\s*(?:'|")?({recipients}({recipient}[^\s@;,"]+@[^\s@;,"]+)[^,]*?)\s*(?:'|")?,(?:(?:\s*'(?:[^']|'')+')\s*,|(?:\s*"(?:[^"]|"")+")\s*,|[^",]+?,|\s*,){9}Incoming,""",
+    """,\s*(?:'|")?({orig_user}[^,;@]+@[^;,"']+)[^,]*?\s*(?:'|")?,(?:(?:\s*'(?:[^']|'')+')\s*,|(?:\s*"(?:[^"]|"")+")\s*,|[^",]+?,|\s*,){9}Incoming,""",
+    """,\s*(?:'|")?[^,;@]+@({external_domain}[^;,"']+)[^,]*?\s*(?:'|")?,(?:(?:\s*'(?:[^']|'')+')\s*,|(?:\s*"(?:[^"]|"")+")\s*,|[^",]+?,|\s*,){9}Incoming,""",
+    """,\s*({bytes}\d+)\s*,(?:(?:\s*'(?:[^']|'')+')\s*,|(?:\s*"(?:[^"]|"")+")\s*,|[^",]+?,|\s*,){7}Incoming,""",
+    """,\s*({num_recipients}\d+)\s*,(?:(?:\s*'(?:[^']|'')+')\s*,|(?:\s*"(?:[^"]|"")+")\s*,|[^",]+?,|\s*,){6}Incoming,""",
+    """,\s*(|({subject}[^,]*?))\s*,(?:(?:\s*'(?:[^']|'')+')\s*,|(?:\s*"(?:[^"]|"")+")\s*,|[^",]+?,|\s*,){3}Incoming,""",
+    """,\s*'({subject}(?:[^']|'')+)'\s*,(?:(?:\s*'(?:[^']|'')+')\s*,|(?:\s*"(?:[^"]|"")+")\s*,|[^",]+?,|\s*,){3}Incoming,""",
+    """,\s*"({subject}(?:[^"]|"")+)"\s*,(?:(?:\s*'(?:[^']|'')+')\s*,|(?:\s*"(?:[^"]|"")+")\s*,|[^",]+?,|\s*,){3}Incoming,""",
+    """,\s*(?:'|")?(|MicrosoftExchange.*?|({sender}[^,]+?)(?:'|")?)\s*,(?:(?:\s*'(?:[^']|'')+')\s*,|(?:\s*"(?:[^"]|"")+")\s*,|[^",]+?,|\s*,){2}Incoming,""",
+    """,\s*(?:'|")?(|MicrosoftExchange.*?|({external_address}[^\s,;@"']+@({external_domain}[^\s;,"'@]+))(?:'|")?)\s*,(?:(?:\s*'(?:[^']|'')+')\s*,|(?:\s*"(?:[^"]|"")+")\s*,|[^",]+?,|\s*,){2}Incoming,""",
+    """,\s*(?:'|")?(?:<>|({return_path}[^,]+?))(?:'|")?\s*,(?:(?:\s*'(?:[^']|'')+')\s*,|(?:\s*"(?:[^"]|"")+")\s*,|[^",]+?,|\s*,)Incoming,""",
   ]
-  DupFields = [ "recipient->orig_user", "recipient->user_email", "external_address->sender" ]
+  DupFields = [ "orig_user->email_user" ]
 }
 ```

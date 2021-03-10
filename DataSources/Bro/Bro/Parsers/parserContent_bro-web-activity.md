@@ -3,7 +3,6 @@
 {
 Name = bro-web-activity
   Vendor = Bro
-  Product = Bro
   Lms = Direct
   DataType = "web-activity"
   IsHVF = true

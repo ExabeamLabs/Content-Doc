@@ -21,7 +21,6 @@ Name = mcafee-siem-4720
       """"Source_Logon_ID":"({logon_id}[^"]+)""",
       """"UserIDDst":"({account_name}[^"]+)""",
       """"Event_Class":"({additional_info}[^"]+)"""
-      """Enabled,({user_type}.*?)\s-\sEnabled"""
     ]
   }
 ```

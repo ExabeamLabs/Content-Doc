@@ -29,8 +29,7 @@ Name = cef-counterbreach-db-alert
     """\scs3=(\[\\*)?(?:|({malware_url}.+?))\]?\s*\w+=""",
     """\|File\|.+?\scs3=(\[\\*)?([^\\]+\\+)*(?: |({file_name}.+?))\]?\s*\w+=""",
     """\sact=(?:|({outcome}.+?))\s\w+=""",
-    """\scs5=({response_size}\d+)""",
-    """\sdhost=({dest_host}[^\s]+)""",
+    """\scs5=({response_size}\d+)"""
   ]
   DupFields = [ "db_user->account" ]
 }

@@ -3,7 +3,6 @@
 {
 Name = salesforce-failed-app-login
   Vendor = Salesforce
-  Product = Salesforce
   Lms = Direct
   DataType = "failed-app-login"
   TimeFormat = "MM/dd/yyyy hh:mm a"

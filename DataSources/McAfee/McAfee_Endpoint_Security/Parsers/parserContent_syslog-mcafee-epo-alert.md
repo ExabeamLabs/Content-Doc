@@ -17,8 +17,7 @@ Name = syslog-mcafee-epo-alert
       """ePOEvents([^,]*,){2}["']*({alert_name}[^"',]+)""",
       """ePOEvents([^,]*,){1}["']*({alert_type}[^"',]+)""",
       """ePOEvents([^,]*,){42}["']*(file:\/+)?({malware_url}[^"',]+)""",
-      """ePOEvents([^,]*,){41}["']*(none|({additional_info}[^"',]+))""",
-      """ePOEvents([^,]*,){43}["']*(none|({process}[^"',]+\\({process_name}[^"',]+)))"""
+      """ePOEvents([^,]*,){41}["']*(none|({additional_info}[^"',]+))"""
     ]
     DupFields = [ "host->src_host" ]
     SOAR {

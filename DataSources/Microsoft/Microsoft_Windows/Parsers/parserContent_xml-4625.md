@@ -7,26 +7,23 @@ Name = xml-4625
     Lms = Splunk
     DataType = "windows-failed-logon"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-    Conditions = ["""<EventID>4625</EventID>""", """'FailureReason'>"""]
+    Conditions = ["<EventID>4625</EventID>", "<Data Name='FailureReason'>"]
     Fields = [
-      """TimeCreated SystemTime(\\)?='({time}\d+-\d+-\d+T\d+:\d+:\d+)""",
-      """<Computer>({host}({dest_host}[\w\-]+)[^<]*)</Computer>""",
-      """<EventID>({event_code}\d+)</EventID>""",
-      """<Data Name(\\)?='SubjectUserName'>(?=\w)?(-|({caller_user}[^<]+))<\/Data>""",
-      """<Data Name(\\)?='SubjectDomainName'>((?=\w))?(-|({caller_domain}[^<]+))<\/Data>""",
-      """<Data Name(\\)?='LogonType'>({logon_type}\d+)<\/Data>""",
-      """<Data Name(\\)?='TargetUserSid'>({user_sid}[^<]+)</Data>""",
-      """<Data Name(\\)?='TargetUserName'>(?=\w)(({user_email}[^@<]+@[^<]+)|({user}[^<]+))</Data>""",
-      """<Data Name(\\)?='TargetDomainName'>(?=\w)({domain}[^<]+)</Data>""",
-      """<Data Name(\\)?='SubStatus'>({result_code}[^<]+)</Data>""",
-      """<Data Name(\\)?='Status'>({result_code}[^<]+)</Data>""",
-      """<Data Name(\\)?='IpAddress'>(?:-|::1|({src_ip}[A-Fa-f\d.:]+))</Data>""",
-      """<Data Name(\\)?='LogonProcessName'>({auth_process}[^\s<]+)""",
-      """<Data Name(\\)?='WorkstationName'>(-|[A-Fa-f\d:.]+|({src_host_windows}[^\s<]+?))\s*</Data>""",
-      """<Data Name(\\)?='AuthenticationPackageName'>({auth_package}[^<]+)</Data>""",
-      """({event_name}An account failed to log on)""",
-      """<Data Name(\\)?='FailureReason'>({failure_reason}[^<]+)</Data>"""
+      """SystemTime=\'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
+      """<Computer>({host}[^<]+)</Computer>""",
+      """<EventID>({event_code}[^<]+)</EventID>""",
+      """<Data Name='SubjectUserName'>(?=\w)({caller_user}[^<]+)</Data>""",
+      """<Data Name='SubjectDomainName'>(?=\w)({caller_domain}[^<]+)</Data>""",
+      """<Data Name='LogonType'>({logon_type}\d+)</Data>""",
+      """<Data Name='TargetUserSid'>({user_sid}[^<]+)</Data>""",
+      """<Data Name='TargetUserName'>(?=\w)({user}[^<]+)</Data>""",
+      """<Data Name='TargetDomainName'>(?=\w)({domain}[^<]+)</Data>""",
+      """<Data Name='SubStatus'>({result_code}[^<]+)</Data>""",
+      """<Data Name='IpAddress'>(?:-|({src_ip}[^<]+))</Data>""",
+      """<Data Name='LogonProcessName'>({auth_process}[^\s<]+)""",
+      """<Data Name='WorkstationName'>({src_host_windows}[^\s<]+)""",
+      """<Data Name='AuthenticationPackageName'>({auth_package}[^<]+)</Data>"""
     ]
-    DupFields = ["src_host_windows->src_host"]
+    DupFields = ["host->dest_host", "src_host_windows->src_host"]
   }
 ```

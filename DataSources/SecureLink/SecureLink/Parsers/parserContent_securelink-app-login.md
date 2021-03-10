@@ -12,7 +12,7 @@ Name = securelink-app-login
       """exabeam_endTime=({time}\d+)""",
       """exabeam_host=({host}[^\s]+)""",
       """connected to Application ({app}[^.]+)""",
-      """AUDIT:.+?\(({user_email}[^@]+@({email_domain}[^)]+))\)"""
+      """AUDIT:.+?\(({user_emailId}[^)]+)\)"""
     ]
   }
 ```

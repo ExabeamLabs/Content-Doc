@@ -9,18 +9,17 @@ Name = cisco-nac-logon
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS Z"
   Conditions = [ """Acct-Status-Type=Start""", """Acct-Authentic=RADIUS""", """RADIUS Accounting start request""" ]
   Fields = [
-    """CISE_RADIUS_Accounting[^,]+?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d [+-]\d\d:\d\d)""",
+    """CISE_RADIUS_Accounting.+?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d [+-]\d\d:\d\d)""",
     """({host}[\w\-.]+) CISE_RADIUS_Accounting""",
     """Host:\s*({host}\S+)""",
     """, NetworkDeviceName=({network}[^,]+),""",
-    """, User-?Name=(host\/)?(({domain}[^\\\/,\s@]+)[\\\/]+)?({user}[^\\\/\s,@]+),""",
-    """, User-?Name=({user_email}[^\\\/\s,@]+@[^\\\/\s,@]+)""",
+    """, User-?Name=(host\/)?(({domain}[^\\\/,]+)[\\\/]+)?({user}[^\\\/\s,]+)""",
     """, NAS-Identifier=({computer_name}[\w\-.]+)""",
     """, Device IP Address=({auth_server}[^,]+)""",
     """, Device IP Address=({dest_ip}[a-fA-F\d.:]+)""",
-    """, Framed-IP-Address=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """, Called-Station-ID=(({src_mac}([a-fA-F\d]{2}[-:]){5}[a-fA-F\d]{2})|({src_host}[\w\-.]+)):({ssid}[^,]+)""",
-    """, Calling-Station-ID=(({src_mac}([a-fA-F\d]{2}[-:]){5}[a-fA-F\d]{2})|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))""",
+    """, Framed-IP-Address=({dest_ip}[a-fA-F\d.:]+)""",
+    """, Called-Station-ID=({src_host}[\w\-.]+):({ssid}[^,]+)""",
+    """, Calling-Station-ID=({src_mac}[^,]+)""",
     """, NetworkDeviceGroups=Location#All Locations#({location}[^,]+)""",
     """(?i)(MacAddress)=({mac_address}[^,\s]+),""",
   ]

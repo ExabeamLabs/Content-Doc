@@ -3,7 +3,6 @@
 {
 Name = aix-auth-successful
   Vendor = Unix
-  Product = Unix
   Lms = Direct
   DataType = "authentication-successful"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
