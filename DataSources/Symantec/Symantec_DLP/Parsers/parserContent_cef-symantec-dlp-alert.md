@@ -34,7 +34,6 @@ Name = cef-symantec-dlp-alert
       """\WENDPOINT_MACHINE=({src_host}[\w\-.]+)\s+(\w+=|$)""",
       """\WPROTOCOL=(N\/A|({protocol}.+?))\s+(\w+=|$)""",
     ]
-    DupFields = ["user_email->sender"]
     SOAR {
       IncidentType = "dlp"
       DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "user->dlpUser", "alert_name->dlpPolicy", "alert_severity->sourceSeverity", "protocol->dlpProtocol", "src_host->dlpDeviceName", "file_name->dlpFileName", "outcome->dlpActionTaken"]

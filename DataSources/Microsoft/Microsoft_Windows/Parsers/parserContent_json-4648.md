@@ -6,12 +6,11 @@ Name = json-4648
     Product = Microsoft Windows
     Lms = Direct
     DataType = "windows-account-switch"
-    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+    TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = ["""4648""", """"TargetServerName":"""]
     Fields = [
       """({event_name}A logon was attempted using explicit credentials)""",
       """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]+\sSkyformation""",
       """"EventReceivedTime":\s*({time}\d+)""",
       """"timestamp":\s*({time}\d+)""",
       """"(Hostname|MachineName)":"({host}[^"]*)""",

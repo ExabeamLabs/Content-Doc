@@ -3,7 +3,6 @@
 {
 Name = syslog-xceedium-login
   Vendor = Xceedium
-  Product = Xceedium
   Lms = Direct
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

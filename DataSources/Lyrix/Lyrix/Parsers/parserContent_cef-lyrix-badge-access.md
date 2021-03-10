@@ -17,7 +17,7 @@ Name = cef-lyrix-badge-access
     """\Wcs2=({location_door}.+?)\s+(\w+=|$)""",
     """\Wcs1=({location_building}.+?)\s+(\w+=|$)""",
     """\Wsuser=({user}[^\s]+)""",
-    """\Wsuid=({user_fullname}.+?)\s+(\w+=|$)"""
+    """\Wsuid=({user_fullname}.+?)\s+(\w+=|$)""",
   ]
 }
 ```

@@ -19,6 +19,5 @@ Name = cef-624
     """\sduser=({account_name}.+?)\s+\w+=""",
     """\sdvchost=({host}[^\s]+)"""
   ]
-  DupFields = ["host->dest_host"]
 }
 ```

@@ -21,9 +21,7 @@ Name = eset-alert
              """object_uri":"\w+:(\/)+({malware_url}[^,"]+)""",
              """ipv4":"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
              """source_address":"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-             """target_address":"({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-             """"processname":"({process}[^"]+\\({process_name}[^"]+))"""", 
+             """target_address":"({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
 	]
-   DupFields = ["host->dest_host"]
    }
 ```

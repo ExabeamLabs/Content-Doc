@@ -16,9 +16,7 @@ Name = cef-cisco-vpn-start
     """\sdvc=({dest_ip}[^\s]+)""",
     """\sdvc=({host}[^\s]+)""",
     """\sdvchost=({dest_host}[^\s]+)"""
-    """\sdvchost=({host}[^\s]+)""",
-    """\scs1=({realm}[^\s]+).*?cs1Label=Group""", 
+    """\sdvchost=({host}[^\s]+)"""
   ]
-  DupFields = ["user->account"]
 }
 ```

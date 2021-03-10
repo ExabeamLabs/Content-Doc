@@ -24,6 +24,5 @@ Name = o365-phishing-alert
     """"Verdict":"({verdict}[^"]+)""",
     
   ]
-  DupFields = ["process->process_name"]
 }
 ```

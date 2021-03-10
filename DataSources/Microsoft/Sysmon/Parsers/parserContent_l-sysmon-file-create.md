@@ -11,7 +11,7 @@ Name = l-sysmon-file-create
   Conditions = [ """<Provider Name='Microsoft-Windows-Sysmon'""", """logrhythm:""", """<EventID>11</EventID>""" ]
   Fields = [
     """<Provider Name='Microsoft-Windows-Sysmon' Guid='\{({process_guid}[^}]+?)\}""",
-    """<EventID>({event_code}\d+)</EventID>""",
+    """<EventID>({event_id}\d+)</EventID>""",
     """<Task>({activity}.*?)</Task>""",
     """<Execution ProcessID='({pid}\d+)""",
     """created:UtcTime:\s*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)""",

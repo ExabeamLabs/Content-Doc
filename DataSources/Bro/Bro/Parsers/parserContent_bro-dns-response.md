@@ -3,7 +3,6 @@
 {
 Name = bro-dns-response
   Vendor = Bro
-  Product = Bro
   Lms = Direct
   DataType = "dns-response"
   IsHVF = true

@@ -21,12 +21,10 @@ Name = cisco-netflow-connection-1
     """EgressInterface:\s*({dest_interface}[^,]+)""",
     """ACPolicy:\s*({policy}[^,]+)""",
     """AccessControlRuleName:\s*({rule}[^,]+)""",
-    """User:\s*(Unknown|No Authentication Required|({user}[^,\s]+))""", 
+    """User:\s*(Unknown|({user}[^,\s]+))""",
     """ConnectionDuration:\s*({connection_duration}[^,]+)""",
     """InitiatorPackets:\s*({packets_in}\d+)""",
     """ResponderPackets:\s*({packets_out}\d+)""",
-    """InitiatorBytes:\s*({bytes_in}\d+)""",
-    """ResponderBytes:\s*({bytes_out}\d+)""",
   ]
 }
 ```

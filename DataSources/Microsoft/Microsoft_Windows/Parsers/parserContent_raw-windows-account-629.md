@@ -7,7 +7,7 @@ Name = raw-windows-account-629
     Lms = Direct
     DataType = "windows-account-disabled"
     TimeFormat = "MMM dd HH:mm:ss yyyy"
-    Conditions = [ """User Account Disabled""", """629""" ]
+    Conditions = [ "User Account Disabled" ]
     Fields = [
       """({event_name}User Account Disabled)""",
       """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",

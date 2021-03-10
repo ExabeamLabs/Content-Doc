@@ -3,7 +3,6 @@
 {
 Name = mysql-db-activity-json
     Vendor = Mysql
-  Product = Mysql
     Lms = Direct
     DataType = "database-operation"
     IsHVF = true

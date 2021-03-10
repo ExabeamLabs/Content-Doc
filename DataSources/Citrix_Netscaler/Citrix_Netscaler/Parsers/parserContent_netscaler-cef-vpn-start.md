@@ -22,13 +22,7 @@ Name = netscaler-cef-vpn-start
     """cn1=({session_id}\d+)""",
     """Browser_type "+({user_agent}[^"]+)""",
     """Browser_type\s*({user_agent}[^\-]+?)\s*\-""",
-    """Browser_type (\")+(?:-|({browser}[^\/]+).+({os}iOS|Android|BlackBerry|iPhone OS|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin))""",
-    """Browser_type (\")+(?:-|Mozilla\/.+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
-    """requestClientApplication=({user_agent}.+?)\s+\w+=""",
-    """SSLVPN_client_type\s*({vpn_client_type}[^\-]+?)\s\-""", 
-    """Group\(s\) "+(N\/A|({realm}[^"]+))""",
-    """ Nat_ip ({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """requestClientApplication=({user_agent}.+?)\s+\w+="""
   ]
-  DupFields = ["user->account"]
 }
 ```

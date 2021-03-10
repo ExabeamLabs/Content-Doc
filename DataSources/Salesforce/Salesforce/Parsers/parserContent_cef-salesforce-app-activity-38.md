@@ -3,7 +3,6 @@
 {
 Name = cef-salesforce-app-activity-38
   Vendor = Salesforce
-  Product = Salesforce
   Lms = ArcSight
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
@@ -11,7 +10,7 @@ Name = cef-salesforce-app-activity-38
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """CreatedDate\\=({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
-    """CreatedBy\.Username\\=({user_email}[^@]+@({email_domain}[^\s;]+))""",
+    """CreatedBy\.Username\\=({user_email}[^\s;]+)""",
     """Display\\=Added ({object}.+?) to .*?delegated group""",
     """Action\\=({activity}[^;]+)""",
     """\Wmsg=({additional_info}.+?)\s+(\w+=|$)""",

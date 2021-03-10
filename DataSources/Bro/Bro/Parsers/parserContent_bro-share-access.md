@@ -3,7 +3,6 @@
 {
 Name = bro-share-access
   Vendor = Bro
-  Product = Bro
   Lms = Direct
   DataType = "file-operations"
   IsHVF = true

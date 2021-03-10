@@ -25,12 +25,11 @@ Name = json-exchange-dlp-email-out
     """recipient_count":"*(?:|({num_recipients}\d+))"*,""",
     """message_subject":"(?:|({subject}[^\"]+))",""",
     """sender_address":"(?:|({sender}[^\"]+))",""",
-    """return_path":"(?:|<>|({return_path}[^\"]+))",""",
+    """return_path":"(?:|<>|({return_path}[^\"]+))","""
   ]
   DupFields = [
     "alert_name->alert_type",
-    "sender->user_email",
-    "action->outcome"
+    "sender->email_user"
   ]
 }
 ```

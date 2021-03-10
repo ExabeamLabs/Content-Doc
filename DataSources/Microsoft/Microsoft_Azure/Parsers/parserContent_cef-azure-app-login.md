@@ -16,9 +16,9 @@ Name = cef-azure-app-login
     """\ssrc=({src_ip}[a-fA-F\d.:]+)""",
     """\Wdvc=({host}\S+)""",
     """\Wdvchost=({host}[\w\-.]+)""",
-    """\Wduser=({user_email}[^@\s]+@({email_domain}[^\s@]+))""",
-    """\Wsuser=({user_email}[^@\s]+@({email_domain}[^\s@]+))""",
-    """\ssuid=(Unknown|({user_email}[^@]+@({email_domain}.+?)))\s+(\w+=|$)""",
+    """\Wduser=({user_email}[^@\s]+@[^\s@]+)""",
+    """\Wsuser=({user_email}[^@\s]+@[^\s@]+)""",
+    """\ssuid=(Unknown|({user_email}.+?))\s+(\w+=|$)""",
     """CEF:([^\|]*\|){2}({app}[^\|]+)""",
   ]
 }

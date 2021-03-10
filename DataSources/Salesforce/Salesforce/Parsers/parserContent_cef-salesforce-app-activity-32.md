@@ -3,16 +3,15 @@
 {
 Name = cef-salesforce-app-activity-32
   Vendor = Salesforce
-  Product = Salesforce
   Lms = ArcSight
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """|Skyformation|SkyFormation Cloud Apps Security|""", """|resource-deleted|""", """Sales Cloud""" ]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ) \S+ Skyformation -""",	
+    """({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ) ({host}\S+) Skyformation -""",	
     """LastModifiedDate\\=({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)"""
-    """LastModifiedBy\.Username\\=({user_email}[^@]+@({email_domain}[^\s;]+))""",
+    """LastModifiedBy\.Username\\=({user_email}[^\s;]+)""",
     """\|SkyFormation Cloud Apps Security\|([^\|]*\|){2}({activity}[^\|]+?)\|""",
     """suser=({user}.+?)\s+(\w+=|$)""",
     """suser=({user_email}[^@\s;]+?@[^@\s;]+)\s*(\w+=|$)""",

@@ -3,7 +3,6 @@
 {
 Name = observeit-alerts
   Vendor = ObserveIT
-  Product = ObserveIT
   Lms = Direct
   DataType = "dlp-alert"
   TimeFormat = "MM/dd/yyyy HH:mm:ss"

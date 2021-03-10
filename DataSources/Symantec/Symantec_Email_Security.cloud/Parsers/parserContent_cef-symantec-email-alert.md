@@ -22,7 +22,7 @@ Name = cef-symantec-email-alert
       """"severity_id":({alert_severity}\d+)""",
       """"feature_name":"({alert_type}[^"]+)"""",
       """"threat":\{"name":"({alert_name}[^"]+)""",
-      """"product_name":"({product_name}[^"]+)"""",
+      """"product_name":"({product}[^"]+)"""",
     ]
     DupFields = [ "recipient->external_address" ]
   }

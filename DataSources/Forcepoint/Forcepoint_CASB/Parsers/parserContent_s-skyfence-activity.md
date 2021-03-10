@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-skyfence-activity
-  Vendor = Forcepoint
+  Vendor = Forcepoint 
   Product = Forcepoint CASB
   Lms = Splunk
   DataType = "app-activity"

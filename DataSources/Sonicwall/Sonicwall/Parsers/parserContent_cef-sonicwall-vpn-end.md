@@ -3,7 +3,6 @@
 {
 Name = cef-sonicwall-vpn-end
   Vendor = Sonicwall
-  Product = Sonicwall
   Lms = ArcSight
   DataType = "vpn-end"
   TimeFormat = "epoch"

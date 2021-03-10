@@ -16,8 +16,7 @@ Name = cef-4724
         """\ssuser=({user}.+?)\s+\w+=""",
         """\sduser=({target_user}.+?)\s+\w+=""",
         """\ssuid=({logon_sid}[^\s]+)"""
-        """Security_,ID=({user_sid}[^\s]+?)(\s|\||$)""",
-        """\sdntdom=({target_domain}.+?)\s+\w+=""",
+        """Security_,ID=({user_sid}[^\s]+?)(\s|\||$)"""
     ]
     DupFields = [ "host->dest_host" ]
     

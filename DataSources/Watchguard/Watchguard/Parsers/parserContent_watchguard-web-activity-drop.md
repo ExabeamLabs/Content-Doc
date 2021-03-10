@@ -3,7 +3,6 @@
 {
 Name = watchguard-web-activity-drop
   Vendor = Watchguard
-  Product = Watchguard
   Lms = Direct
   DataType = "web-activity"
   IsHVF = true
@@ -21,8 +20,7 @@ Name = watchguard-web-activity-drop
     """\srcvd_bytes="({bytes_out}\d+)""",
     """\scats="({category}[^"]+)"""",
     """\ssrc_user="({user_email}[^"]+)"""",
-    """\sdstname="(?!\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})[^"]*?({top_domain}[^\s."]+(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)"""",
-    """msg="+({proxy_action}Proxy[^"]+)"""
+    """\sdstname="(?!\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})[^"]*?({top_domain}[^\s."]+(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)""""
   ]
   DupFields = [ "user_email->user" ]
 }

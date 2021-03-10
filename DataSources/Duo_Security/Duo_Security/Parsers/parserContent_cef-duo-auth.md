@@ -3,7 +3,6 @@
 {
 Name = cef-duo-auth
   Vendor = Duo Security
-  Product = Duo Security
   Lms = ArcSight
   DataType = "authentication-successful"
   TimeFormat = "epoch"

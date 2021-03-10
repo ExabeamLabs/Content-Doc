@@ -24,5 +24,6 @@ Name = windows-dns-response
     """Buf length\s*=\s*\S+\s*\(({bytes}\d+)""",
     """ANSWER SECTION:(\s*empty|.+?DATA\s+({response}\S+))"""
   ]
+  DupFields = ["dest_ip->dest_host"]
 }
 ```

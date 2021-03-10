@@ -14,7 +14,7 @@ Name = exchange-dlp-email-out-failed
     """({additional_info}\w+,FAIL),""",
     """({action}FAIL)""",
     """,FAIL,\s*({alert_id}\d+)""",
-    """,\s*(?:'|")?([^,]+Recipients_cn\=)?({recipients}({recipient}[^,;'"\s@]+@({external_domain}[^,;'"\s@]+))[^,]*?)\s*(?:'|")?,([^,]*,){9}Originating,""",
+    """,\s*(?:'|")?({recipients}({recipient}[^,;'"\s@]+@({external_domain}[^,;'"\s@]+))[^,]*?)\s*(?:'|")?,([^,]*,){9}Originating,""",
     """,\s*(({bytes}\d+)|)\s*,\s*(({num_recipients}\d+)|)\s*,([^,]*,){6}Originating,""",
     """,\s*({subject}[^,]+?)\s*,([^,]*,){3}Originating,""",
     """,\s*'({subject}(?:[^']|'')+?)\s*'\s*,([^,]*,){3}Originating,""",
@@ -24,8 +24,8 @@ Name = exchange-dlp-email-out-failed
 DupFields = [
     "user_email->sender",
     "user_email->orig_user",
-    "recipient->external_address",
-    "action->outcome"
+    "user_email->email_user",
+    "recipient->external_address"
   ]
 }
 ```

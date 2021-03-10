@@ -2,7 +2,6 @@
 ```Java
 {
 Name = ironport-proxy-1
-  Product = IronPort Web Security
   TimeFormat = "dd/MM/yyyy:HH:mm:ss Z"
   Conditions = [ """IronPort-Web:""", """ TCP_""" ]
   Fields = ${IronPortParserTemplates.ironport-proxy.Fields} [

@@ -16,6 +16,5 @@ Name = lmc-vpn-login
     """"action":"({action}[^"]+)""",
     """"userID":"({user}[^"\s]+)""",
   ]
-  DupFields = ["user->account"]
 }
 ```

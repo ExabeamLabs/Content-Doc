@@ -11,10 +11,11 @@ Name = cef-okta-logs-app-activity
   Fields=[
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """"published"\s*:\s*"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\d)""",
-    """"displayMessage"\s*:\s*"({event_name}[^"]+)""",
+    """"displayMessage"\s*:\s*"({additional_info}[^"]+)""",
     """"eventType"\s*:\s*"({activity}[^"]+)""",
-    """request"+:.+?User.+?"+displayName"+:(null|"+(Okta System|(?:({user_firstname}[^,"]+),\s*({user_lastname}[^"]+)|({user_fullname}[^"]+)))")""",
-    """"actor"+.+?"+type"+:"+User.+?displayName"+:(null|"+(Okta System|Okta Admin|(?:({user_lastname}[^,"]+),\s*({user_firstname}[^"]+)|({user_fullname}[^"]+))))""",
+    """"legacyEventType"\s*:\s*"({activity}[^"]+)""",
+    """"actor":\s*[^\]]*?"displayName"\s*:\s*"(?:({user_lastname}[^,"]+),\s*({user_firstname}[^"]+)|({user_fullname}[^"]+))"""",
+    """"actor":[^\]]*?"alternateId"\s*:\s*"(?:({user_email}[^"@]+@({domain}[^"]+))|({user}[^"]+))"""",
     """"client":[^\]]*?"browser"\s*:\s*"(?:UNKNOWN|({browser}[^"]+))""",
     """"client":[^\]]*?"os"\s*:\s*"(Unknown|({os}[^"]+))""",
     """"client":[^\]]*?"rawUserAgent"\s*:\s*"({user_agent}[^"]+)""",
@@ -28,10 +29,6 @@ Name = cef-okta-logs-app-activity
     """"city":"({location_city}[^"]+)""",
     """"state":"({location_state}[^"]+)""",
     """"country":"({location_country}[^"]+)""",
-    """request"+:.+?"+type"+:"+User"+,"+alternateId"+:(null|"+(system@okta\.com|(?:({user_email}[^"@]+@({domain}[^"]+))|({user}[^"]+))))""",
-    """"actor"+:[^\]]*?"+type"+:"+User"+,"+alternateId"+\s*:\s*"+(system@okta\.com|(?:({user_email}[^"@]+@({domain}[^"]+))|({user}[^"]+)))"""",
-    """"privilegeGranted"+\s*:\s*"+({additional_info}[^"]+)""",
   ]
-  DupFields = ["domain->email_domain"]
 }
 ```

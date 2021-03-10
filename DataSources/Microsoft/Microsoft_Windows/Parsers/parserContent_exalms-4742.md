@@ -6,12 +6,11 @@ Name = exalms-4742
   Product = Microsoft Windows
   Lms = Direct
   DataType = "ds-access"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+  TimeFormat = "yyyy-MM-dd HH:mm:ss.SSSSSSZ" 
   Conditions = ["""@timestamp":""", """A computer account was changed.""" , """Service Principal Names:"""]
   Fields = [
     """"@timestamp"\s*:\s*"({time}.+?)"""",
-    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]+\sSkyformation""",
-    """"(?:winlog\.)?computer_name"\s*:\s*"({host}.+?)"""",
+    """"computer_name"\s*:\s*"({host}.+?)"""",
     """({event_code}4742)""",
     """({event_name}A computer account was changed.)""",
     """SubjectDomainName"\s*:\s*"({domain}[^"]+)""",

@@ -7,7 +7,7 @@ Name = raw-windows-account-644
     Lms = Direct
     DataType = "windows-account-lockout"
     TimeFormat = "MMM dd HH:mm:ss yyyy"
-    Conditions = [ """User Account Locked Out""", """644""" ]
+    Conditions = [ "User Account Locked Out" ]
     Fields = [    
       """({event_name}User Account Locked Out)""",
       """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",

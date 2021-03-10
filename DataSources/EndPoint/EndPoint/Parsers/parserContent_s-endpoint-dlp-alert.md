@@ -3,7 +3,6 @@
 {
 Name = s-endpoint-dlp-alert
     Vendor = EndPoint
-  Product = EndPoint
     Lms = Splunk
     DataType = "dlp-alert"
     TimeFormat = "yyyy/MM/dd H:mm:ss"

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = q-leef-securesphere-db-query
-  Vendor = Imperva
+  Vendor = Imperva 
   Product = Imperva SecureSphere
   Lms = QRadar
   DataType = "database-query"

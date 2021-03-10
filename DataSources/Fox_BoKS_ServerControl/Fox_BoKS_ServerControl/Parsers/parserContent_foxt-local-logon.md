@@ -3,7 +3,6 @@
 {
 Name = foxt-local-logon
   Vendor = Fox BoKS ServerControl
-  Product = Fox BoKS ServerControl
   Lms = Exabeam
   DataType = "local-logon"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

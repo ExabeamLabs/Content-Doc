@@ -3,7 +3,6 @@
 {
 Name = json-auditd-process-creation
   Vendor = Unix
-  Product = Unix
   Lms = Direct
   DataType = "process-created"
   IsHVF = true
