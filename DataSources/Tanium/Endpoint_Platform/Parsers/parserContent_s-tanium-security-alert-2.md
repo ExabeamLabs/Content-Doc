@@ -4,7 +4,7 @@
 Name = s-tanium-security-alert-2
     Vendor = Tanium
     Product = Endpoint Platform
-    Lms = Default 
+    Lms = Default
     DataType = "alert"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
     Conditions = [ """trace_process_table_id""", """Timestamp""", """Computer Name""", """Computer IP""" ]

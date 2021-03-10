@@ -6,18 +6,14 @@ Name = json-4769
     Product = Microsoft Windows
     Lms = Direct
     DataType = "windows-4769"
-    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
+    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
     Conditions = ["""4769""", """"TransmittedServices":""""]
     Fields = [
       """({event_name}A Kerberos service ticket was requested)""",
       """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """"EventReceivedTime":\s*({time}\d+)""",
       """"timestamp":\s*({time}\d+)""",
-      """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]+\sSkyformation""",
-      """"+created"+:"+({time}[^"]+)""",
-      """"TimeCreated"+:"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-      """"Computer"+:"+({host}[^"]+)""""
-      """"+(?:winlog\.)?computer_name"+:"+({host}[^"]+)""",
+      """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s({host}[^\s]+)\sSkyformation""",
       """"(Hostname|MachineName)":"({host}[^"]*)""",
       """({event_code}4769)""",
       """"TargetUserName":"({user}[^@"]+)""",

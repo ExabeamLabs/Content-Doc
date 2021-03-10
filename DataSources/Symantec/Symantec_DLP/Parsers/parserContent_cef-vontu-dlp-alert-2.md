@@ -7,7 +7,7 @@ Name = cef-vontu-dlp-alert-2
     Lms = Direct
     DataType = "dlp-alert"
     Conditions = [ """Symantec|DLP""","""POLICY=""" ]
-    TimeFormat = "yyyy-MM-dd HH:mm:ss"
+    TimeFormat = "MMM dd, yyyy HH:mm:ss a"
     Fields = [
       """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
       """OCCURRED_ON=({time}\w+\s+\d+,\s*\d+\s+\d+:\d+:\d+\s+(AM|PM|am|pm))""",

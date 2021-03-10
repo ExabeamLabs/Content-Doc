@@ -10,13 +10,13 @@ Name = s-cisco-acs-app-activity
   Conditions = [ """_TACACSAdmin""", """service=""", """cmd=""" ]
   Fields = [  
       """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-      """exabeam_host=(::ffff:)?({host}[^\s]+)""",
+      """exabeam_host=({host}[^\s]+)""",
       """User-Name=(?!host\/)(?:[a-f0-9]{12}|({user}[^,]+))""",
-      """NAS-IP-Address=(::ffff:)?({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+      """NAS-IP-Address=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """cmd=({activity}[^,]+)""",
       """_({app}TACACSAdmin)""",
       """priv-lvl=({privileges}[^,]+)""",
-      """task_id=\w+@(::ffff:)?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
+      """task_id=\w+@({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
 	]
 }
 ```
