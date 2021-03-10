@@ -3,7 +3,6 @@
 {
 Name = foxt-ssh-login
   Vendor = Fox BoKS ServerControl
-  Product = Fox BoKS ServerControl
   Lms = Exabeam
   DataType = "ssh-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

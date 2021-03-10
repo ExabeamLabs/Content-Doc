@@ -17,8 +17,6 @@ Name = cef-snare-552
       """duser=({account}[\w\-\.]+(?:\w+)?\$?)\s+\w+=""",
       """suser=({user}[\w\-\.\s]+(?:\w+)?\$?)\s+\w+="""
       """dntdom=({domain}.+?)\s+\w+=""",
-      """OriginalAgentAddress=({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
-      """dvc=({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"""
     ]
   }
 ```

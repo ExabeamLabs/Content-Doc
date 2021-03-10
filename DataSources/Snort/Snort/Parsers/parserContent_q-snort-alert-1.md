@@ -14,7 +14,7 @@ Name = q-snort-alert-1
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""
     """\[Classification:\s+({alert_type}[^\]]+)""",
     """\[Priority:\s+({alert_severity}[^\]]+)""",
-    """PROTOCOL-({protocol}[^\s]+)\s+({alert_name}.+?)\s*\[Classification:"""
+    """PROTOCOL-({protocol}[^\s]+)\s+({alert_name}[^\[]+)\s+"""
   ]
 }
 ```

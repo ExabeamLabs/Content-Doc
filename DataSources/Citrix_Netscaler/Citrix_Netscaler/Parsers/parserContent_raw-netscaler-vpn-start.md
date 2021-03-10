@@ -21,9 +21,7 @@ Name = raw-netscaler-vpn-start
      """Browser_type (\")+(?:-|({browser}[\w\-]+)\/[\d\._]+)""",
      """Browser_type (\")+(?:-|({browser}[^\/]+).+({os}iOS|Android|BlackBerry|iPhone OS|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin))""",
      """Browser_type (\")+(?:-|Mozilla\/.+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
-     """Browser_type (\")+(?:-|Mozilla\/.+\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+Gecko\/\d+\s+({browser}\w+))""",
-     """Vserver\s*({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
-     ]
+     """Browser_type (\")+(?:-|Mozilla\/.+\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+Gecko\/\d+\s+({browser}\w+))"""]
  DupFields = [ "vpn_client_type->app" ]
 }
 ```

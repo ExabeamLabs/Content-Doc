@@ -28,6 +28,6 @@ Name = raw-juniper-nwc-vpn-start
     """\sroles=[\\"]*({roles}.+?)[\\"]*(\s+\w+=|\s*")""",
     """\svpn=[\\"]*({vpn}.+?)[\\"]*(\s+\w+=|\s*")""",
   ]
-  DupFields = [ "host->dest_host" ]
+  DupFields = [ "host->dest_host" , "user->account"]
 }
 ```

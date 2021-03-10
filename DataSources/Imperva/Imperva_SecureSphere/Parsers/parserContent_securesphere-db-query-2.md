@@ -19,7 +19,7 @@ Name = securesphere-db-query-2
     """\sprotocol=({protocol}.*?)\s\w+=""",
     """\sservicename=({service_name}.*?)\s\w+=""",
     """\sappname=({app}.*?)\s\w+=""",
-    """\seventtype=({log_type}.*?)\s\w+=""",
+    """\seventtype=({event_type}.*?)\s\w+=""",
     """\soperationname=({db_operation}.*?)\s\w+=""",
     """\ssrchostname=({src_host}[^\s]+)""",
     """\sdbname=({db_name}[^\s]+)""",

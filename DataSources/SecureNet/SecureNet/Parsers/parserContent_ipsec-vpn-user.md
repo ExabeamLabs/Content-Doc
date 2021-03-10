@@ -3,7 +3,6 @@
 {
 Name = ipsec-vpn-user
   Vendor = SecureNet
-  Product = SecureNet
   Lms = Direct
   DataType = "vpn-user"
   TimeFormat = "yyyy:MM:dd-HH:mm:ss"

@@ -3,7 +3,6 @@
 {
 Name = apc-remote-logon
   Vendor = APC
-  Product = APC
   Lms = Direct
   DataType = "remote-logon"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

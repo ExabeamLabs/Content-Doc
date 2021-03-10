@@ -7,32 +7,22 @@ Name = cef-servicenow-file-operation-2
   Lms = ArcSight
   DataType = "file-operations"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ """CEF:""", """|Skyformation|""", """destinationServiceName=ServiceNow""", """cat=""", """"sys_created_on"""", """"sys_created_by""""]
+  Conditions = [ """CEF:""", """|Skyformation|""", """destinationServiceName=ServiceNow""" ]
   Fields = [
-    """exabeam_host=({host}[\w.\-]+)""",
+    """({host}[\w\-.]+)\s+Skyformation""",
     """"sys_created_on":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """requestClientApplication=({app}[^=]+?)\s+(\w+=|$)""",
-    """\Wsuser=(anonymous|system|({user_email}[^\s@]+@({email_domain}[^\s@]+))|({user}[^=]+?))(\s+\w+=|\s*$)""",
+    """requestClientApplication=({app}.+?)\s+(\w+=|$)""",
+    """\Wduser=(|({object}.+?))(\s+\w+=|\s*$)""",
+    """\Wsuser=(|({user_email}[^\s@]+@[^\s@]+)|({user}.+?))(\s+\w+=|\s*$)""",
     """"srcip":"({src_ip}[^"]+)""",
-    """"name":"({object}[^"]+)",""",
-    """\Wfname=(|-|({file_name}[^=]+?(\.({file_ext}\w+))?))(\s+\w+=|\s*$)""",
-    """"user(_name)?":"(anonymous|system|({user}[^"\s@]+))"""",
-    """"user(_name)?":"(anonymous|system|({user_email}[^"\s@]+@({email_domain}[^"\s@]+)))"""",
+    """"name":"({object}[^"]+)""",
+    """\Wfname=(|({file_name}.+?(\.({file_ext}\w+))?))(\s+\w+=|\s*$)""",
+    """"user(_name)?":"({user}[^"\s@]+)"""",
+    """"user(_name)?":"({user_email}[^"\s@]+@[^"\s@]+)"""",
     """CEF:([^\|]*\|){5}({activity}[^\|]+)""",
     """"queue":"({activity}[^"]+)""",
-    """"parm1":"+\s*(|-|({resource}[^"]+?))\s*",""",
-    """"(instance|documentkey)":"({object}[^"]+?)",""",
-    """"tablename":"({table_name}[^"]+)",""",
-    """"table":"({table}[^"]+)",""",
-    """dproc=({event_name}[^=]+?)(\s\w+=|$)""",
-    """msg=({additional_info}[^=]+?)(\s\w+=|$)""",
-    """"parm2":"\s*({action}[^"]+?)\s*",""",
-    """"file_name":"({file_name}[^"]+?(\.({file_ext}[^\."]+))?)",""",
-    """"size_bytes":"({bytes}\d+)""",
-    """"content_type":"({file_type}[^"]+?)",""",
-    """"oldvalue":"\s*({old_value}[^"]+?)\s*",""",
-    """newvalue"+:"\s*({new_value}[^"]+?)\s*",""",
+    """"parm1":"\s*(|-|({resource}.*?[^\\\s])\s*)",""",
   ]
-  DupFields = [ "host->dest_host", "file_name->object", "activity->accesses" ]
+  DupFields = [ "host->dest_host", "file_name->object" ]
 }
 ```

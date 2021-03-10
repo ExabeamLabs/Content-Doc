@@ -3,7 +3,6 @@
 {
 Name = xml-4622
   Vendor = Microsoft Windows
-  Product = Microsoft Windows
   Lms = Syslog
   DataType = "service-created"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"

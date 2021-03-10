@@ -18,7 +18,6 @@ Name = cisco-nac-logon-2
     """,\s*NetworkDeviceProfileName=({network}[^,]+)""",
     """,\s*Location=Location#All Locations#({location}[^,]+)""",
     """,\s*EndPointMACAddress=({mac_addrress}[^\s,]+)""",
-    """, AuthenticationMethod=({auth_type}[^,\s]+)"""
   ]
 }
 ```

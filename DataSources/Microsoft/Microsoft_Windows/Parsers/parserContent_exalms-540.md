@@ -11,7 +11,7 @@ Name = exalms-540
   Fields = [
     """({event_name}Successful Network Logon)""",
     """"@timestamp"\s*:\s*"({time}.+?)"""",
-    """"(?:winlog\.)?computer_name"\s*:\s*"({host}.+?)"""",
+    """"computer_name"\s*:\s*"({host}.+?)"""",
     """"event_id"\s*:\s*({event_code}\d+)""",
     """"user"\s*:\s*\{.*?"domain"\s*:\s*"({domain}.+?)"""",
     """"user"\s*:\s*\{.*?"name"\s*:\s*"({user}.+?)"""",

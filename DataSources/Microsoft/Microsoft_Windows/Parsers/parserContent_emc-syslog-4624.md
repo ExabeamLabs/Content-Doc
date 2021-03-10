@@ -20,7 +20,8 @@ Name = emc-syslog-4624
     """Logon Process:\s*({auth_process}[^\s]+)\s+Authentication Package:\s*({auth_package}[^\s]+)""",
     """Logon ID:\s+({logon_id}[^\s]+)\s+Logon GUID""",
     """New Logon:\s+Security ID:\s+({user_sid}[^\s]+)\s""",
-    """Workstation Name:\s+([A-Fa-f:\d.]+|({src_host_windows}[^\s]+))\s+Source Network"""
+    """Workstation Name:\s+([A-Fa-f:\d.]+|({src_host_windows}[^\s]+))\s+Source Network""",
+    """Account Name.*?Account Name:\s*(?:-|({account}.*?))\s*Account Domain"""
   ]
   DupFields = [ "host->dest_ip" ]
 }

@@ -3,7 +3,6 @@
 {
 Name = cef-moveit-activity
   Vendor = IPswitch MoveIt
-  Product = IPswitch MoveIt
   Lms = Direct
   DataType = "file-operations"
   IsHVF = true

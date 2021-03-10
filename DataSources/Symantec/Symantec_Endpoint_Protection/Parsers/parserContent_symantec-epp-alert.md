@@ -14,21 +14,21 @@ Name = symantec-epp-alert
          """Computer name:\s*(?:0+|({host}[^,]+))""",
          """Event time:\s*({time}[\d\- :]+)""",
          """({alert_type}Virus found)""",
+         """SymantecServer:\s*({alert_type}[^,]+)""",
+         """SymantecServer:\s*({alert_severity}[^,]+)""",
          """IP Address:\s*({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
          """Risk name:\s*({alert_name}[^,]+)""",
          """\d\d:\d\d:\d\d,\s*({alert_severity}Minor|Info|Critical|Major|Security risk found|Virus found)""",
-         """Sensitivity:\s({alert_severity}[^,]+)""",
          """Risk Level:\s*({alert_severity}[^,]+)""",
-         """Occurrences:\s*\d+,(File path:\s+)?({malware_url}[^,]+)""",
-         """User\s*(Name)?:\s*(SYSTEM,|({user}[^,]+))""",
+         """Occurrences:\s*\d+,({malware_url}[^,]+)""",
+         """User(\s+Name)?:\s*(SYSTEM|({user}[^,]+))""",
          """Computer name:\s*(?:0+|({src_host}[^,]+))""",
          """Source computer:\s*(?:0+|({dest_host}[^,]+))?,""",
          """Source IP:\s*({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
          """Confidence:\s*({additional_info}[^,]+)""",
          """Actual action:\s*({outcome}[^,]+)""",
          """Application hash:\s*(|({file_hash}[^,]+)),""",
-         """Hash type:\s*(|({hash_type}[^,]+)),""",
-         """Application name:\s"*({process_name}[^",]+)""", 
+         """Hash type:\s*(|({hash_type}[^,]+)),"""
 	]
   SOAR {
     IncidentType = "malware"

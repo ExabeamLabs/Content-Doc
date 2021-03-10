@@ -13,13 +13,13 @@ Name = l-4673
       """SystemTime=\'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """({outcome}Information|Audit Success|Success Audit|Failure Audit|Audit Failure)""",
       """<Computer>({host}[^<]+)</Computer>""",
-      """<EventID>({event_code}[^<]+)</EventID>""",
+	  """<EventID>({event_code}[^<]+)</EventID>""",
       """Process Name:\s*(?: |({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?)))\s*Service Request Information:""",
-      """Account Name:\s*({user}[^=]+?)\s*Account Domain:""",
-      """Account Domain:\s*({domain}[^=]+?)\s*Logon ID:""",
+      """Account Name:\s*({user}.+?)\s*Account Domain:""",
+      """Account Domain:\s*({domain}.+?)\s*Logon ID:""",
       """Logon ID:\s*({logon_id}.+?)\s*Service:""",
-      """Server:\s*({object_server}[^=]+?)\s*Service Name""",
-      """Privileges:\s*({privileges}[^<>\s"=]+)""",
+      """Server:\s*({object_server}.+?)\s*Service Name""",
+      """Privileges:\s*({privileges}.+?)\s*(<|$)""",
     ]
     DupFields = ["host->dest_host","directory->process_directory"]
   }

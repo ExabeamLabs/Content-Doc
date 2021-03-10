@@ -3,7 +3,6 @@
 {
 Name = q-unix-audispd-logon
   Vendor = Unix
-  Product = Unix
   Lms = Direct
   DataType = "remote-logon"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"

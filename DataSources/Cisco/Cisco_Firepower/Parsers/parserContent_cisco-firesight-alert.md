@@ -11,14 +11,12 @@ Name = cisco-firesight-alert
   Fields = [
     """\Wevent_sec=({time}\d+)""",
     """\Wevent_id=({alert_id}\d+)""",
-    """\W(msg|corr_rule)=\\?"?({alert_name}[^"\\=]+)\\?"?\s+\w+=""",
-    """\W(class_desc|corr_policy)=\\?"?({alert_type}[^"\\=]+)\\?"?\s+\w+=""",
+    """\W(msg|corr_rule)="({alert_name}[^"]+)""",
+    """\W(class_desc|corr_policy)="({alert_type}.+?)"""",
     """\Wpriority=({alert_severity}[^\s]+)""",
     """\Wsrc_ip=(0|0.0.0.0|({src_ip}[A-Fa-f:\d.]+))""",
     """\Wdest_ip=(0|0.0.0.0|({dest_ip}[A-Fa-f:\d.]+))""",
     """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
-    """\d\d:\d\d:\d\d\s+({host}[\w-]+)\s"""
-    """\suser=\\?"*(0|No Authentication Required|({user}[^\s"]+))""",
   ]
   SOAR {
     IncidentType = "generic"

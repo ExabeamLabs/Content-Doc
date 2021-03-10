@@ -21,6 +21,5 @@ Name = o365-inbox-rules-2
     """destinationServiceName=({app}.+?)\s*filePath"""
     """({app}Office 365)"""
   ]
-  DupFields = ["user_domain->email_domain"]
 }
 ```

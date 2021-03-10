@@ -9,7 +9,6 @@ Name = mcafee-vse-epo-alert
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = [ """AnalyzerName=""","""ThreatCategory=""" ]
     Fields = [
-      """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
       """ReceivedUTC="?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """ServerID="?({host}[^"\|]+?)("|\||\s\w+=)""",
       """TargetHostName="?(?:|None|({src_host}[^"\|]+?)|)("|\||\s\w+=)""",     
@@ -22,7 +21,6 @@ Name = mcafee-vse-epo-alert
       """ThreatType="?(?:|none|({alert_type}[^"\|]+?))("|\||\s\w+=)""",
       """TargetFileName="?(?:|None|({malware_url}.+?\\({malware_file_name}[^\\]+?)))("|\||\s\w+=)""",
       """OSType="({os}[^"]+)"""",
-      """TargetProcessName="?(?:|none|({process_name}[^"\|]+?))("|\||\s\w+=)""",
     ]
     SOAR {
       IncidentType = "malware"

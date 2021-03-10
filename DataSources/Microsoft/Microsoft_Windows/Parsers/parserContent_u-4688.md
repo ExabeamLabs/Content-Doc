@@ -20,7 +20,6 @@ Name = u-4688
     """Logon ID:\s+({logon_id}[^\s]+)\s+Process""",
     """Security ID:\s+({user_sid}[^\s]+)\s""",
     """Process Command Line:\s+(?:|({command_line}.+?))\s+Token Elevation Type """,
-    """Process Command Line:\s*(|-|(sc|((?:[^"]+)?[\\\/])?sc.exe)\s*(?:\\*[\w.\-]+)?\s*create\s*({service_name}.+?))\s+binPath= (?:|({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/\s]+)))\s+Token Elevation Type """,
     """Creator Process ID:\s+({parent_process_guid}[^\s]+)\s""",
     """New Process ID:\s+({process_guid}[^\s]+)\s""",
     """({activity_type}Process Creation)"""

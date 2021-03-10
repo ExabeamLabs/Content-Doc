@@ -3,7 +3,6 @@
 {
 Name = cef-infowatch-email-alert
   Vendor = InfoWatch
-  Product = InfoWatch
   Lms = ArcSight
   DataType = "dlp-email-alert"
   TimeFormat = "epoch"

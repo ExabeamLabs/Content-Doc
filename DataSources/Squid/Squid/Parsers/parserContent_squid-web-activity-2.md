@@ -3,7 +3,6 @@
 {
 Name = squid-web-activity-2
   Vendor = Squid
-  Product = Squid
   Lms = Direct
   DataType = "web-activity"
   IsHVF = true

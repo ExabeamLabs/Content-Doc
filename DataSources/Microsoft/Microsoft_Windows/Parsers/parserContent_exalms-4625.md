@@ -11,7 +11,7 @@ Name = exalms-4625
   Fields = [
     """({event_name}An account failed to log on)""",
     """"@timestamp"\s*:\s*"({time}.+?)"""",
-    """"(?:winlog\.)?computer_name"\s*:\s*"({host}.+?)"""",
+    """"computer_name"\s*:\s*"({host}.+?)"""",
     """"event_id"\s*:\s*({event_code}\d+)""",
     """"record_number"\s*:\s*"({record_id}\d+)""",
     """"(SubjectUserSid)"\s*:\s*"(-|({caller_user_sid}.+?))\s*"""",

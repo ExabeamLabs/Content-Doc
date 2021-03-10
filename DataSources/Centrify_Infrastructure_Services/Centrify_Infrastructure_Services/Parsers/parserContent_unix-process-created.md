@@ -3,7 +3,6 @@
 {
 Name = unix-process-created
   Vendor = Centrify Infrastructure Services
-  Product = Centrify Infrastructure Services
   Lms = Direct
   DataType = "process-created"
   IsHVF = true

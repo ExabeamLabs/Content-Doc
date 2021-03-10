@@ -3,7 +3,6 @@
 {
 Name = thycotic-app-activity
   Vendor = Thycotic Secret Server
-  Product = Thycotic Secret Server
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "MMM dd yyyy HH:mm:ss"
@@ -14,13 +13,13 @@ Name = thycotic-app-activity
     """\srt=({time}\w+ \d{2} \d{4} \d{2}:\d{2}:\d{2})""",
     """\sdvc=({host}[^\s]+)""",
     """\sdvchost=({host}[^\s]+)""",
-    """\ssrc=({src_ip}[a-fA-F\d.:]+)\s\w+=""",
-    """\ssuser=(({domain}[^\\=]+)(\\)+)?({user}[^=]+?)\s+\w+=""",
+    """\ssrc=({src_ip}[^\s]+)""",
+    """\ssuser=(({domain}[^\\=]+)(\\)+)?({user}.+?)\s+\w+=""",
     """({app}Thycotic Software)"""
-    """\sfname=({object}[^=]+?)\s+\w+=""",
-    """\sContainer Name:\s*({resource}[^=]+?)\s*(?:\([^\)]*?\))?\s+(\w+=|\w+:|$)""",
+    """\sfname=([^\\=]+\\+)?({object}.+?)\s+\w+=""",
+    """\sContainer Name:\s*({resource}.+?)(?:\(.*?\))?\s+(\w+=|\w+:|$)""",
     """Action: \[({activity}[^\]]+)\]""",
-    """\sfileType=({additional_info}[^=]+?)\s\w+="""
+    """\sfileType=({additional_info}.+?)\s\w+="""
   ]
 }
 ```

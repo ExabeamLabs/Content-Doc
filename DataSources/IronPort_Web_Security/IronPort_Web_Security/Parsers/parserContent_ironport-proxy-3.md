@@ -3,7 +3,6 @@
 {
 Name = ironport-proxy-3
    Vendor = IronPort Web Security
-  Product = IronPort Web Security
    Lms = Syslog
    DataType = "web-activity"
    TimeFormat = "yyyy-dd-MM HH:mm:ss.SSS"

@@ -3,7 +3,6 @@
 {
 Name = cef-bcn-bdds-dhcp
     Vendor = BCN
-  Product = BCN
     Lms = ArcSight
     DataType = "dhcp"
     TimeFormat = "epoch"

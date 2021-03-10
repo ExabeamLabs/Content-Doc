@@ -20,6 +20,6 @@ Name = meraki-network-alert
     """\smessage:\s*({alert_name}.+?)\s*$""",
     """\sdhost=({dest_host}\S+)""",
   ]
-  DupFields = [ "alert_name->alert_type"]
+  DupFields = [ "alert_name->alert_type" ]
 }
 ```

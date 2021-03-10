@@ -3,7 +3,6 @@
 {
 Name = bro-radius
   Vendor = Bro
-  Product = Bro
   Lms = Direct
   DataType = "nac-logon"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"

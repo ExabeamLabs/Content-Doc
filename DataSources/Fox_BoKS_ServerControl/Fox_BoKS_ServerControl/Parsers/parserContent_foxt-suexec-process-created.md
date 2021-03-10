@@ -3,7 +3,6 @@
 {
 Name = foxt-suexec-process-created
   Vendor = Fox BoKS ServerControl
-  Product = Fox BoKS ServerControl
   Lms = Exabeam
   DataType = "process-created"
   IsHVF = true

@@ -18,6 +18,5 @@ Name = gravityzone-security-alert-new-login
     """"browser_name":"({browser}[^"]+)""",
     """"device_ip":"({src_ip}[A-Fa-f:\d.]+)""",
   ]
-  DupFields = ["domain->email_domain"]
 }
 ```

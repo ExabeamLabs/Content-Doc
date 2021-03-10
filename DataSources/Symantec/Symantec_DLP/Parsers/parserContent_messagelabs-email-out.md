@@ -6,11 +6,11 @@ Name = messagelabs-email-out
   Product = Symantec DLP
   Lms = Direct
   DataType = "dlp-email-alert"
-  TimeFormat = "epoch"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = ["""emailInfo""","""HELOString""",""""isOutbound":true"""]
   Fields = [
     """exabeam_host=([^@=]+@\s*)?({host}[\w.\-]+)""",
-    """"mailProcessingStartTime"+:({time}\d+)""",
+    """exabeam_time=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """"headerFrom":"({sender}[^"]+)",""",
     """"subject":"({subject}[^"]+)",""",
     """"messageSize":({bytes}\d+)""",
@@ -18,9 +18,8 @@ Name = messagelabs-email-out
     """"headerTo":\[({recipients}[^\]]+)\],""",
     """"headerTo":\["({recipient}[^"@]+@({external_domain}[^@"]+))"""",
     """"isOutbound":({direction}[^,]+),""",
-    """"senderIp":"({src_ip}[a-fA-F\d.:]+)""",
-    """\[\{"fileNameOrURL":"({file_name}[^\.]+\.({file_ext}[^"]+))""",
+    """"senderIp":"({src_ip}[a-fA-F\d.:]+)"""
   ]
-  DupFields = [ "sender->email_user", "sender->user_email", "recipient->external_address" , "file_name->attachment"]
+  DupFields = [ "sender->email_user", "sender->user_email", "recipient->external_address" ]
 }
 ```

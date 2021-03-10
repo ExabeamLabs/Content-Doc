@@ -3,7 +3,6 @@
 {
 Name = lexmark-print-activity
   Vendor = Lexmark
-  Product = Lexmark
   Lms = Direct
   DataType = "print-activity"
   TimeFormat = "epoch"
