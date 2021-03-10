@@ -11,6 +11,7 @@ Name = cisco-umbrella-network-connection
   Fields = [
     """\W(destinationServiceName|requestClientApplication)=({app}.+?)(\s+\w+=|\s*$)""",
     """"timestamp"+:"+({time}[^",]+)"""",
+    """({host}[\w\-.]+)\s+Skyformation """,
     """\Wsuser=(anonymous|({user}.+?))(\s+\w+=|\s*$)""",
     """"categories"+:\["+({category}[^",]+)""",
     """"sourceIp"+:"+({src_ip}[^"]+)"""",

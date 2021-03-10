@@ -5,8 +5,8 @@ Vendor: ESET
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   1    |     1      |      7      |    7    |
+|   3   |   1    |     1      |      4      |    4    |
 
-| Event Type          | Rules                                                                                                                                              | Models |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| web-activity-denied | <b>T1030 - Data Transfer Size Limits</b><br> ↳ <b>New-File-20-Block</b>: User with no web activity history was blocked from uploading 20MB or more |        |
+| Event Type   | Rules                                                                                                                                                                                                                                                                                                                                                                                                          | Models                                                             |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| app-activity | <b>T1048 - Exfiltration Over Alternative Protocol</b><br> ↳ <b>EM-InRule-EX</b>: User has created an inbox forwarding rule to forward email to an external domain email<br> ↳ <b>EM-InRule-Public</b>: User has created an inbox forwarding rule to forward email to a public email domain<br> ↳ <b>InB-Perm-N-F</b>: First time a user has given mailbox permissions on another mailbox that is not their own |  • <b>EM-InB-Perm-N</b>: Models users who give mailbox permissions |

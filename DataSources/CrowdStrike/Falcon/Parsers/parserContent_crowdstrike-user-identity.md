@@ -7,17 +7,18 @@ Name = crowdstrike-user-identity
     Lms = Direct
     DataType = "logon"
     TimeFormat = "epoch"
-    Conditions = [ """"event_simpleName":""", """"UserIdentity"""", """"aid"""" ]
+    Conditions = [ """"event_simpleName":"UserIdentity"""", """"aid"""" ]
     Fields = [
       """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-      """"timestamp":\s*"({time}\d+)""",
-      """"UserPrincipal":\s*"(?:[^"@]+@)?({dest_host}[^"]+)""",
-      """"aid":\s*"({aid}[^"]+)""",
-      """"event_simpleName":\s*"({event_code}[^"]+)""",
-      """"LogonType":\s*"({logon_type}\d+)""",
-      """"UserName":\s*"({user}[^"]+)""",
-      """"+AuthenticationPackage"+:\s*"+({auth_package}[^"]+)"+,""",
-      """"+event_platform"+:\s*"+({event_platform}[^"]+)"+"""
+      """({host}[\w\-.]+)\s+Skyformation""",
+      """"timestamp":"({time}\d+)""",
+      """"UserPrincipal":"(?:[^"@]+@)?({dest_host}[^"]+)""",
+      """"aid":"({aid}[^"]+)""",
+      """"event_simpleName":"({event_code}[^"]+)""",
+      """"LogonType":"({logon_type}\d+)""",
+      """"UserName":"({user}[^"]+)""",
+      """"+AuthenticationPackage"+:"+({auth_package}[^"]+)"+,""",
+      """"+event_platform"+:"+({event_platform}[^"]+)"+"""
     ]
   }
 ```

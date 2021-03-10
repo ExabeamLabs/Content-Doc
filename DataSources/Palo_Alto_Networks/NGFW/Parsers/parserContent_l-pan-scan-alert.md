@@ -10,7 +10,6 @@ Name = l-pan-scan-alert
   Conditions = [ """,THREAT,scan,""" ]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """\s\d\d:\d\d:\d\d\s({host}[\w.-]+)\s""",
     """THREAT,([^,]*,){27}(("[^"]*")|[^,]*),([^,]*,){27}({host}[\w\-\.]+)(,|$)""",
     """({time}\d\d\d\d\/\d\d\/\d\d \d\d:\d\d:\d\d),[^,]*,THREAT,({alert_type}[^,]+),([^,]*,){2}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),""",
     """,THREAT,([^,]*,){9}(({domain}[^\\,]+)\\+)?({user}[^\\,]+)""",
@@ -19,9 +18,8 @@ Name = l-pan-scan-alert
     """,THREAT,([^,]*,){27}(("[^"]*")|[^,]*),({alert_name}[^,]+),""",
     """,THREAT,([^,]*,){27}(("[^"]*")|[^,]*),([^,]*,){2}({alert_severity}[^,]+),""",
     """,THREAT,([^,]*,){27}(("[^"]*")|[^,]*),([^,]*,){4}({alert_id}\d+)""",
-    """,THREAT,([^,]*,){20}(?:|({src_port}\d+)),(?:|({dest_port}\d+)),(?:[^,]*,){3}(?:|({protocol}[^,]+)),(?:|({action}[^,]*)),"""
-  ]
-  SOAR {
+    ]
+    SOAR {
     IncidentType = "malware"
     DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->malwareName", "alert_severity->sourceSeverity", "alert_id->sourceId", "src_ip->malwareVictimHost", "alert_type->malwareCategory", "malware_url->malwareAttackerUrl", "dest_ip->malwareAttackerIp"]
     NameTemplate = """Palo Alto Alert ${alert_name} found"""

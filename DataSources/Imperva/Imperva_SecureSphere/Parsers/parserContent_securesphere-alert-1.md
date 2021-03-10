@@ -2,7 +2,7 @@
 ```Java
 {
 Name = securesphere-alert-1
-  Vendor = Imperva
+  Vendor = Imperva 
   Product = Imperva SecureSphere
   Lms = Direct
   DataType = "alert"

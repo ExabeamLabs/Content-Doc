@@ -23,21 +23,6 @@ Name = crowdstrike-security-alert-5
       """"show_in_ui":.*?"status":"({outcome}[^"]+)""",
       """"cmdline":"({additional_info}.+?)\s*","""",
       """"tactic":"({category}[^"]+)""",
-      """"((?i)SHA256|SHA256String|SHA256HashData)\\*"+:\s*\\*"+({sha256}[^,]+?)\\*"+,""",
-      """"(?i)Quarantine_File"+:\s*({quarantine_file}true|false)""",
-      """"(?i)Quarantine_Machine"+:\s*({quarantine_machine}true|false)""",
-      """"(?i)Detect"+:\s*({detect}true|false)""",
-      """"(?i)Registry_Operation_Blocked"+:\s*({registry_operation_blocked}true|false)""",
-      """"(?i)Kill_Parent"+:\s*({kill_parent}true|false)""",
-      """"(?i)Operation_Blocked"+:\s*({operation_blocked}true|false)""",
-      """"(?i)Kill_Process"+:\s*({kill_process}true|false)""",
-      """"(?i)Process_Blocked"+:\s*({process_blocked}true|false)""",
-      """"(?i)Policy_Disabled"+:\s*({policy_disabled}true|false)""",
-      """"(?i)Sensor_Only"+:\s*({sensor_only}true|false)""",
-      """"(?i)Kill_SubProcess"+:\s*({kill_sub_process}true|false)""",
-      """"(?i)Rooting"+:\s*({rooting}true|false)""",
-      """"(?i)Inddet_Mask"+:\s*({inddet_mask}true|false)""",
-      """"(?i)Indicator"+:\s*({indicator}true|false)"""
     ]
     DupFields = [ "src_host->host" ]
   }

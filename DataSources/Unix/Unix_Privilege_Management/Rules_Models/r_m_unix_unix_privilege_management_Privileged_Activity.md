@@ -7,6 +7,6 @@ Vendor: Unix
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   2   |   1    |     1      |      1      |    1    |
 
-| Event Type     | Rules                                                                                                                                                                                              | Models                                   |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| account-switch | <b>T1078 - Valid Accounts</b><br> ↳ <b>AS-PV-US-F</b>: First password retrieval using this safe value for user<br> ↳ <b>AS-PV-US-A</b>: Abnormal password retrieval using this safe value for user |  • <b>AS-PV-US</b>: Safe values for user |
+| Event Type     | Rules                                                                                                                                                                                                    | Models                                   |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| account-switch | <b>T1098 - Account Manipulation</b><br> ↳ <b>AS-PV-US-F</b>: First password retrieval using this safe value for user<br> ↳ <b>AS-PV-US-A</b>: Abnormal password retrieval using this safe value for user |  • <b>AS-PV-US</b>: Safe values for user |

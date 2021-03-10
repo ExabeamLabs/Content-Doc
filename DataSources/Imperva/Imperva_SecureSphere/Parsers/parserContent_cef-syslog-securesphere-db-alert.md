@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-syslog-securesphere-db-alert
-  Vendor = Imperva
+  Vendor = Imperva 
   Product = Imperva SecureSphere
   Lms = Direct
   DataType = "database-alert"

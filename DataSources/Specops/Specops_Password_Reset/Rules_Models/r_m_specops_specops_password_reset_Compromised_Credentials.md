@@ -5,9 +5,8 @@ Vendor: Specops
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   1    |     1      |      2      |    2    |
+|   1   |   1    |     1      |      1      |    1    |
 
-| Event Type             | Rules                                                                            | Models                                  |
-| ---------------------- | -------------------------------------------------------------------------------- | --------------------------------------- |
-| account-password-reset | <b>T1078 - Valid Accounts</b><br> ↳ <b>AE-UA-F</b>: First activity type for user |  • <b>AE-UA</b>: All activity for users |
-| account-unlocked       | <b>T1078 - Valid Accounts</b><br> ↳ <b>AE-UA-F</b>: First activity type for user |  • <b>AE-UA</b>: All activity for users |
+| Event Type       | Rules                                                                            | Models                                  |
+| ---------------- | -------------------------------------------------------------------------------- | --------------------------------------- |
+| account-unlocked | <b>T1078 - Valid Accounts</b><br> ↳ <b>AE-UA-F</b>: First activity type for user |  • <b>AE-UA</b>: All activity for users |

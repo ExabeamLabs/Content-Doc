@@ -20,7 +20,7 @@ Name = s-crowdstrike-process-alert
     """"CommandLine":"({process}({directory}[^\s]+)\\\\({process_name}[^\s]+))""",
     """"FileName":\s*"({process_name}[^"]+)"""",
     """"FilePath":\s*"({file_path}[^"]+)"""",
-    """"CommandLine"+:\s*"+\\*"*({command_line}.+?)\\*\s*"+,""",
+    """"CommandLine":\s*"({command_line}.+?)",""",
     """"SensorId":\s*"({sensor_id}[^"]+)"""",
     """"ComputerName":\s*"({src_host}[^"]+)"""",
     """"LocalIP":\s*"({src_ip}[^"]+)"""",
@@ -30,8 +30,6 @@ Name = s-crowdstrike-process-alert
     """"UserName":\s*"({user}[^"]+)"""",
     """"ProcessId":({process_guid}\d+)""",
     """"ParentProcessId":({parent_process_guid}\d+)""",
-    """"FalconHostLink":\s*"({falcon_host_link}[^"]+)"""",
    ]
-   DupFields = ["falcon_host_link->additional_info"]
 }
 ```

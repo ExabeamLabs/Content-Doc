@@ -10,7 +10,7 @@ Name = raw-4624-6
     Conditions = ["An account was successfully logged on", "Account Name", "computer_name"]
     Fields = [
       """({event_name}An account was successfully logged on)""",
-      """"(?:winlog\.)?computer_name\\*":\\*"({host}[^\\"]+)""",
+      """"computer_name\\*":\\*"({host}[^\\"]+)""",
       """({event_code}4624)""",
       """@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """Logon Type(:|=)\s*({logon_type}[\d]+)""",

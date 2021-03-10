@@ -7,6 +7,6 @@ Vendor: Sophos
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   1    |     1      |      1      |    1    |
 
-| Event Type          | Rules                                                                                                                                              | Models |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| web-activity-denied | <b>T1030 - Data Transfer Size Limits</b><br> ↳ <b>New-File-20-Block</b>: User with no web activity history was blocked from uploading 20MB or more |        |
+| Event Type          | Rules                                                                                                                                                           | Models |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| web-activity-denied | <b>T1048 - Exfiltration Over Alternative Protocol</b><br> ↳ <b>New-File-20-Block</b>: User with no web activity history was blocked from uploading 20MB or more |        |
