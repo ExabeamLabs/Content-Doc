@@ -15,9 +15,6 @@ Name = cef-netskope-alert-policy
     """"app":"({process_name}[^"]+)"""",
     """CEF:([^\|]*\|){6}({alert_severity}[^\|]+)\|""",
     """"_id":"({alert_id}[^"]+)""",
-    """"owner":"({file_owner_at}[^"]+)"""",
-    """"user":"({from_user_at}[^"]+)"""",
-    """"object":"({file_path_at}[^"]+)"""",
     """"file_path":"({file_path_at}[^"]+)"""",
     """"site":"({site_at}[^"]+)""""
   ]

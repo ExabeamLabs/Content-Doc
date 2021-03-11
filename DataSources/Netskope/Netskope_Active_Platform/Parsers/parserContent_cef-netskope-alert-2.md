@@ -26,11 +26,8 @@ Name = cef-netskope-alert-2
     """ext_category=({category}[^=]+?)\s+\w+=""",
     """fileHash=({md5}[^=]+?)\s+\w+=""",
     """ext_url=({malware_url}[^=]+?)\s+\w+=""",
-    """"owner"+:"+({file_owner_at}[^"]+)"""",
-    """suser=({from_user_at}[^=]+?)\s+\w+=""",
     """"file_path"+:"+({file_path_at}[^"]+)"""",
-    """"q_shared_with"+:"+({shared_with_at}[^"]+)"""",
-    """"app"+:"+({site_at}[^"]+)""""
+    """"q_shared_with"+:"+({shared_with_at}[^"]+)""""
   ]
 }
 ```

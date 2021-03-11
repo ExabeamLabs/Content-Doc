@@ -44,6 +44,6 @@ Name = cef-okta-logs-app-activity
     """\Wsuid=(anonymous|email|system|({user_email}[^@=]+@[^@=]+?)|({user}[^\s=]+?))(\s+\w+=|\s*$)""",
     """requestUri":\s*"({request_uri}[^"]+?)\s*""""
   ]
-  DupFields = ["domain->email_domain", "outcome->result", "app->object"]
+  DupFields = ["domain->email_domain", "outcome->result", "app->object", "outcome_reason_at->additional_info"]
 }
 ```
