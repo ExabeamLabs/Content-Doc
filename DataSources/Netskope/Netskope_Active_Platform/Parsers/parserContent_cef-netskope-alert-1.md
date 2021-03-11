@@ -29,8 +29,6 @@ Name = cef-netskope-alert-1
     """"breach_id":"\s*({alert_id}[^"]+)"""",
     """duser=({user}[^\s]+)""",
     """"organization_unit":"({user_ou}[^"]+)"""",
-    """"owner":"({file_owner_at}[^"]+)"""",
-    """"user":"({from_user_at}[^"]+)"""",
     """"shared_with":"({shared_with_at}[^"]+)"""",
     """"site":"({site_at}[^"]+)""""
   ]
