@@ -10,7 +10,7 @@ Name = u-googledrive-file-activity
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """"applicationName":""", """"drive"""", """"uniqueQualifier":""",  """"access"""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
+    """exabeam_host=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """"time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     """"ipAddress":"({src_ip}[\da-fA-F\.:]+)""",
     """"profileId":"({user_id}\d+)""",
@@ -23,6 +23,6 @@ Name = u-googledrive-file-activity
     """"events":[^=]*?"name"\s*:\s*"source_folder_title",\s*"value"\s*:\s*"({src_file_dir}[^"]+)"""",
     """"events":[^=]*?"name":"doc_id","value":"({file_id}[^"]+)"[^=]*?"name":"doc_type","value":"(unknown|({file_type}[^"]+))"[^=]*?"name":"doc_title","value":"\s*({file_name}[^"]+?(\.({file_ext}[^."]{1,6}))?)\s*"[^=]*?"name":"visibility","value":"({privileges}[^"]+)"[^=]*?"name":"owner","value":"({file_owner}[^"]+?)\s*"""",
   ]
-  DupFields = [ "file_name->object", "host->dest_host" ]
+  DupFields = [ "file_name->object" ]
 }
 ```

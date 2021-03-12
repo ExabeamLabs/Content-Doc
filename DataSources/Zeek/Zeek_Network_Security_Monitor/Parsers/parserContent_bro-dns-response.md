@@ -11,6 +11,7 @@ Name = bro-dns-response
   Conditions = [ """"id.orig_h""", """"id.resp_h""", """"rcode""", """"rcode_name""" ]
   Fields = [
     """exabeam_host=([^@=]+@\s*)?({host}\S+)""",
+    """"_system_name":"({host}[^"]+)""",
     """"ts\\?"+:\\?"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3})""",
     """"uid\\?"+:\\?"+({conn_id}[^"]+)""",
     """"id\.orig_h\\?"+:\\?"+({src_ip}[a-fA-F\d.:]+)""",

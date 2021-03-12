@@ -11,6 +11,7 @@ Name = bro-files-analysis
   Conditions = [ """files",""",""""fuid":""", """"conn_uids":""" ]
   Fields = [
     """exabeam_host=([^@=]+@\s*)?({host}\S+)""",
+    """"_system_name":"({host}[^"]+)""",
     """"ts":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d)""",
     """"tx_hosts":\["({src_ip}[a-fA-F\d.:]+)"\]""",
     """"rx_hosts":\["({dest_ip}[a-fA-F\d.:]+)"\]""",

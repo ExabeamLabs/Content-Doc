@@ -25,7 +25,7 @@ Name = n-mwg-proxy
       """Mozilla\/.+\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+Gecko\/\d+\s+({browser}\w+)""",
       """\|method=(?:|({method}[^|]+))\|""",
       """\|url=(-|({full_url}.+?))\|""",
-      """\|url=(\w+:\/+)?([^\/.]+\.)*({top_domain}(?!(?:\d+\.){3}\d+)[^\.\s\/]+(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))(||\/))[^|\/]+)""",
+      """\|url=(\w+:\/+)?([^\/.]+\.)*({top_domain}(?!(?:\d+\.){3}\d+)[^\.\s\/]+(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))(\||\/))[^|\/]+)""",
       """\|url=(?:|(\w+:\/+)?({web_domain}(?:({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|[^\/:|]+))[^|]*)\|""",
       """\|url=(?:|(\w+:\/+)?[^|\/:]+(:\d+)?({uri_path}\/[^?|]+)[^|]*)\|""",
       """\|url=(?:|(\w+:\/+)?[^|\/:]+(:\d+)?[^|?]+({uri_query}\?[^|]+))\|""",
