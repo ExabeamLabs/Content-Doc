@@ -7,23 +7,23 @@ Name = l-4674
   Lms = Direct
   DataType = "windows-privileged-access"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS Z"
-  Conditions = [ """An operation was attempted on a privileged object.""", "4674","<EventID>4674</EventID>"]
+  Conditions = [ """An operation was attempted on a privileged object.""", """<EventID>4674</EventID>""" ]
   Fields = [
     """({event_name}An operation was attempted on a privileged object)""",
     """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d*Z+)'/>""",
-    """<Keywords>({outcome}.+?)</Keywords>""",
-    """<Computer>({host}[\w.\-]+)</Computer>""",
+    """<Keywords>({outcome}[^<]+?)</Keywords>""",
+    """<Computer>({host}({dest_host}[\w\-]+)[\w.\-]*)</Computer>""",
     """({event_code}4674)""",
     """Process Name:\s*(?: |({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?)))\s*Requested""",
-    """Account Name:\s*(?:-|({user}.+?))\s*Account Domain:""",
-    """Account Domain:\s*({domain}.+?)\s*Logon ID:""",
-    """Logon ID:\s*({logon_id}.+?)\s*Object:""",
-    """Object Server:\s*({object_server}.+?)\s*Object Type:""",
-    """Object Type:\s*(?:-|({object_type}.+?))\s*Object Name:""",
-    """Object Name:\s*(?:-|({object}.+?))\s*Object Handle""",
-    """Desired Access:\s*({accesses}.+?)\s*Privileges:""",
-    """Privileges:\s*({privileges}.+?)(\s*<|\s*$)"""   
+    """Account Name:\s*(?:-|({user}[^:\s]+?))\s*Account Domain:""",
+    """Account Domain:\s*(?:NT AUTHORITY|({domain}[^:]+?))\s*Logon ID:""",
+    """Logon ID:\s*({logon_id}[^:]+?)\s*Object:""",
+    """Object Server:\s*({object_server}[^:]+?)\s*Object Type:""",
+    """Object Type:\s*(?:-|({object_type}[^:]+?))\s*Object Name:""",
+    """Object Name:\s*(?:|-|({object}[^<>]+?))\s*Object Handle""",
+    """Desired Access:\s*({accesses}[^:]+?)\s*Privileges:""",
+    """Privileges:\s*({privileges}[^:<>]+?)(\s*<|\s*$)"""   
   ]
-  DupFields = ["host->dest_host","directory->process_directory"]
+  DupFields = [ "directory->process_directory" ]
 }
 ```
