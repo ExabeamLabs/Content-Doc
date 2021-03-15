@@ -15,7 +15,7 @@ Name = nnt-ct-app-login
     """CEF:([^|]*\|){5}({event_name}[^|]+)""",
     """msg=({additional_info}[^=]+?)\s*(\w+=|$)""",
     """({app}NNT\|ChangeTracker Gen 7)""",
-    """suser=({user_id}\S+)\s\(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """suser=({user}\S+)\s\(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """({auth_type}AD)"""
   ]
 }
