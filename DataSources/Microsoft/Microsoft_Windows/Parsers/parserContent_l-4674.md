@@ -16,7 +16,7 @@ Name = l-4674
     """({event_code}4674)""",
     """Process Name:\s*(?: |({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?)))\s*Requested""",
     """Account Name:\s*(?:-|({user}[^:\s]+?))\s*Account Domain:""",
-    """Account Domain:\s*(?:NT AUTHORITY|({domain}[^:]+?))\s*Logon ID:""",
+    """Account Domain:\s*({domain}[^:]+?)\s*Logon ID:""",
     """Logon ID:\s*({logon_id}[^:]+?)\s*Object:""",
     """Object Server:\s*({object_server}[^:]+?)\s*Object Type:""",
     """Object Type:\s*(?:-|({object_type}[^:]+?))\s*Object Name:""",
