@@ -11,6 +11,8 @@ Name = raw-4724
     Fields = [
       """exabeam_host=({host}[\w.\-]+)""",
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+      """<\d+>(?i)\w+\s*\d+\s*\d+:\d+:\d+\s+(am\s+|pm\s+)?(::ffff:)?({host}[\w\-.]+)\s"""
+      """<\d+>(?i)\w+\s*\d+\s*\d+:\d+:\d+\s+(am\s+|pm\s+)?(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|10\.\.0\.01|({dest_host}[\w\-.]+))\s"""
       """({event_name}An attempt was made to reset an account's password)""",
       """Security,?\s*(rn=)?({record_id}[\d]+)""",
       """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
@@ -26,7 +28,7 @@ Name = raw-4724
       """Subject:[^=]+?Account Name:\s+({user}[^:]+?)\s+Account Domain:\s+((?i)NT AUTHORITY|({domain}[^:]+?))\s+Logon ID""",
       """Logon ID:\s+({logon_id}[^\s]+)""",
       """Target Account[^=]+?Security ID:\s+(|({target_user_sid}[^:]+?))\s+Account Name:\s+(|({target_user}[^:]+?))\s+Account Domain:\s+({target_domain}[^",\s]+)"""
-      """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(10\.\.0\.01|({dest_host}[\w\-.]+)))"""
     ]
+    DupFields=[ "host->dest_host" ]
   }
 ```
