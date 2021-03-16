@@ -22,5 +22,6 @@ Name = syslog-5158
     """Layer Name:\s*({layer_name}.*?)\s*Layer Run-Time ID""",
     """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]+))""",
   ]
+  DupFields = [ "host->dest_host" ]
 }
 ```

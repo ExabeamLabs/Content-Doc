@@ -28,5 +28,6 @@ Name = raw-5145-6
       """Access Check Results:.*({outcome}Granted|Denied)\s+by""",
       """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]+))"""
     ]
+    DupFields = ["host->dest_host"]
   }
 ```

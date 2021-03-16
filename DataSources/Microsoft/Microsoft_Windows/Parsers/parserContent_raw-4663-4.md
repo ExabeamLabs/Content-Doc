@@ -30,6 +30,6 @@ Name = raw-4663-4
       """"ProcessName":"(?: |({process}({directory}(?:[^";]+)?[\\\/])?({process_name}[^\\\/";]+?)))\s*"""",
       """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]+))"""
     ]
-    DupFields = ["directory->process_directory"]
+    DupFields = ["host->dest_host","directory->process_directory"]
   }
 ```

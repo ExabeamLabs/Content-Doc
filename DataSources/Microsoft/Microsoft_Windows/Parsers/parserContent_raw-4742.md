@@ -21,5 +21,6 @@ Name = raw-4742
     """\sUser Principal Name:\s*(|-|({attribute}.+?))\s*Home Directory:""",
     """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]+))"""
   ]
+  DupFields = [ "host->dest_host"]
 }
 ```

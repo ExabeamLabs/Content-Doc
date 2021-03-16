@@ -32,6 +32,6 @@ Name = raw-4625
       """\s({event_code}4625)\s""",
       """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]+))"""
     ]
-    DupFields = ["src_host_windows->src_host"]
+    DupFields = ["host->dest_host","src_host_windows->src_host"]
   }
 ```

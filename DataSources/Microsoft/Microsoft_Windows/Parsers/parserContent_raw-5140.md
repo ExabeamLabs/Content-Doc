@@ -32,5 +32,6 @@ Name = raw-5140
       """Share Path:\s*((\\)[rnt])*(?:\\+\?+)?(?:\s*|({share_path}(({d_parent}.+?)\\)?(|({d_name}[^\\]+?)))\\?)((\\)[rnt])*\s*Access Request Information:""",
       """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]+))"""
     ]
+    DupFields = ["host->dest_host"]
   }
 ```
