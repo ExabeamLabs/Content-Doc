@@ -11,10 +11,12 @@ Name = l-pan-file-alert
   Conditions = [ """,THREAT,file,""" ]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
+    """THREAT,file,\d+,({time}\d\d\d\d\/\d\d\/\d\d \d\d:\d\d:\d\d)""",
     """THREAT,[^,]+,[^,]+,({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+Z),""",
     """THREAT,([^,]*,){3}({src_ip}[^,]*?),({dest_ip}[^,]*?),""",
     """THREAT,file,((""|".*?[^"]"|[^,]*),){25}({action}[^,]+)""",
     """THREAT,file,((""|".*?[^"]"|[^,]*),){54}({host}[\w\-\.]+)(,|$)""",
+    """:\d\d:\d\d\s+({host}[\w.-]+)\s""",
     """THREAT,file,([^,]*,){8}(|({domain}[^\\,]+))\\?(|({user}[^\\,]+))(,|$)""",
     """THREAT,file,([^,]*,){7}(?:({user_email}[^@,]+@[^\.,]+\.[^,]+)|(?:|({domain}[^\\,]+))\\?(?:|({user}[^\\,]+)))(,|$)""",
     """THREAT,file,([^,]*,){6}({alert_name}[^,]+)""",
