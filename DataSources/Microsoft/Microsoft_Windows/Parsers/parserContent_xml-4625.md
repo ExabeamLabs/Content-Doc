@@ -22,7 +22,7 @@ Name = xml-4625
       """<Data Name(\\)?='Status'>({result_code}[^<]+)</Data>""",
       """<Data Name(\\)?='IpAddress'>(?:-|({src_ip}[A-Fa-f\d.:]+))</Data>""",
       """<Data Name(\\)?='LogonProcessName'>({auth_process}[^\s<]+)""",
-      """<Data Name(\\)?='WorkstationName'>(-|[A-Fa-f\d:.]+|({src_host_windows}[^\s<]+?))\s*</Data>""",
+      """<Data Name(\\)?='WorkstationName'>(-|({src_host_windows}[A-Za-z]+[\w.-]+))\s*</Data>""",
       """<Data Name(\\)?='AuthenticationPackageName'>({auth_package}[^<]+)</Data>""",
       """({event_name}An account failed to log on)""",
       """<Data Name(\\)?='FailureReason'>({failure_reason}[^<]+)</Data>"""

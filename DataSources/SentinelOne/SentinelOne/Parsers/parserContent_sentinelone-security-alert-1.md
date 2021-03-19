@@ -7,7 +7,7 @@ Name = sentinelone-security-alert-1
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
-  Conditions = [ """ SentinelOne """, """[eventDesc@""", """[eventSeverity@""" ]
+  Conditions = [ """ SentinelOne """, """[eventDesc@""", """[eventSeverity@""" ,"""cat="MALWARE"""]
   Fields = [
     """\sdeviceAddress="({host}[a-fA-F\d.:]+)""",
     """\sdeviceHostName="({host}[^"]+)""",

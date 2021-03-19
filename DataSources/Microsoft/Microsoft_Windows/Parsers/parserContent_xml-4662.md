@@ -14,7 +14,7 @@ Name = xml-4662
     """<TimeCreated SystemTime(\\)?='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """<Computer>({host}[^<]+)""",
     """<Data Name(\\)?='SubjectUserSid'>({user_sid}[^<]+)""",
-    """<Data Name(\\)?='SubjectUserName'>(-|({user}[^<\s]+))""",
+    """<Data Name(\\)?='SubjectUserName'>(-|({user}[^<]+))""",
     """<Data Name(\\)?='SubjectDomainName'>(-|({domain}[^<]+))""",
     """<Data Name(\\)?='SubjectLogonId'>({logon_id}[^<]+)""",
     """<Data Name(\\)?='ObjectServer'>({object_class}[^<]+)""",

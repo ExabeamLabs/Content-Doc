@@ -7,7 +7,7 @@ Name = s-quest-directory-access
   Lms = Splunk
   DataType = "ds-access"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ """Quest Software|ChangeAuditor""" , """art""" , """deviceSeverity""" ]
+  Conditions = [ """Quest Software|ChangeAuditor""" , """categoryOutcome=""" , """deviceSeverity=""", """|Custom Attribute """ ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """dvc=({host}\S+)\.\s*(\w+=|$)""",

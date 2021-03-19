@@ -30,6 +30,7 @@ Name = json-sysmon-process-created
     """"User":"(((?i)NT AUTHORITY|({domain}[^\\]+))[\\]+)?((?i)SYSTEM|LOCAL SERVICE|NETWORK SERVICE|({user}[^"]+))"""",
     """"LogonGuid":"({logon_guid}[^"]+)""",
     """"Hashes":"[^]]+SHA256=({sha256}[^",]+)""",
+    """"ParentCommandLine":"\s*({parent_command_line}.*?)\s*",""",
   ]
   DupFields = [ "host->dest_host", "directory->process_directory", "process->path" ]
 }

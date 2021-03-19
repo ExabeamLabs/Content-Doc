@@ -32,6 +32,7 @@ Name = crowdstrike-process-created
       """"UserSid":\s*"({user_sid}[^"]+)""",
       """log-severity\\=({log_severity}\S+)""",
       """src-account-name":"({account_name}[^"]+)""",
+      """"((?i)SHA256String|SHA256HashData)":"({sha256}[^"]+)""""
     ]
     DupFields = [ "directory->process_directory" ]
   }

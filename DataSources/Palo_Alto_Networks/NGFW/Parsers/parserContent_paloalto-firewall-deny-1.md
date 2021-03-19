@@ -6,7 +6,7 @@ Name = paloalto-firewall-deny-1
     Fields = ${PaloAltoParserTemplates.paloalto-firewall.Fields}[
      """TRAFFIC,([^,]*,){42}({outcome}.*?)\s*(,|$)"""
      """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
-     """\s({host}[^\s]+)[\s-]+(\[.*?\]\s+)?\d+,([^,]*,){2}TRAFFIC,""", 
+     """\s({host}[\w.-]+)[\s-]+(\[.*?\]\s+)?\d+,([^,]*,){2}TRAFFIC,""", 
     ]
 }
 ```

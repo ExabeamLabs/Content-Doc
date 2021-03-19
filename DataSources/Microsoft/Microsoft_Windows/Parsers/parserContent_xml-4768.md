@@ -11,13 +11,13 @@ Name = xml-4768
     Fields = [
       """SystemTime=\'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """({event_name}A Kerberos authentication ticket \(TGT\) was requested)""",
-      """<Computer>({host}({dest_host}[\w\-]+)[^<]*)</Computer>""",
+      """<Computer>({host}[\w.-]+)</Computer>""",
       """<EventID>({event_code}\d+)</EventID>""",
       """<Data Name='TargetSid'>(NULL SID|({user_sid}[^<]+))</Data>""",
       """<Data Name='Status'>({result_code}[^<]+)</Data>""",
-      """<Data Name='TargetUserName'>(?=\w)(({user_email}[^@<]+@[^<]+)|({user}[^<=]+))</Data>""",
+      """<Data Name='TargetUserName'>(?=\w)({user}[^<=]+)</Data>""",
       """<Data Name='TargetDomainName'>(?=\w)({domain}[^<]+)</Data>""",
-      """<Data Name='IpAddress'>(::[\w]+:)?(::1|({dest_ip}[a-fA-F:\d.]+))</Data>""",
+      """<Data Name='IpAddress'>(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)</Data>""",
       """<Data Name='TicketEncryptionType'>({ticket_encryption_type}[^<]+)</Data>""",
       """<Data Name='TicketOptions'>({ticket_options}[^<]+)</Data>""",
       """<Data Name='ServiceName'>({service_name}[^<]+)</Data>"""
