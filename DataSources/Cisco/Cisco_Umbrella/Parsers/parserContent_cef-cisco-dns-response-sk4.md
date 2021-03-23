@@ -13,7 +13,8 @@ Name = cef-cisco-dns-response-sk4
     """exabeam_host=({host}\S+)""",
     """"timestamp":"({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """"identities":\["(({user}\w+)|({host}[\w\-\.]+))"""",
-    """"identities":\["({user_fullname}[^\("]+?)(?:\s*\(\w+\)\s*)?(\s+\(({user_email}[^@"]+@[^@"]+)\))",("({host}[\w\-\.]+)")?"""
+    """"identities":\["({user_fullname}[^\("]+?)(?:\s*\(\w+\)\s*)?(\s+\(({user_email}[^@"]+@[^@"]+)\))",("({host}[\w\-\.]+)")?""",
+    """"mostGranularIdentity":"({user_fullname}[^\("]+?)(?:\s*\(\w+\)\s*)?(\s+\((({user_email}[^@"]+@[^@"]+)|({user}[^"]+))\))"""",
     """"internalIp":"({src_ip}[a-fA-F:\d.]+)"""",
     """"action":"({outcome}[^"]+)"""",
     """"queryType":"[^"]*\(({query_type}[^"\)]+)\)"""",

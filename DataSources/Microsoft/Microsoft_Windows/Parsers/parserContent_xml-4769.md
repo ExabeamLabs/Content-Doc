@@ -14,13 +14,13 @@ Name = xml-4769
       """<Computer>({host}[^<]+)</Computer>""",
       """<EventID>({event_code}[^<]+)</EventID>""",
       """<Data Name='Status'>({result_code}[^<]+)</Data>""",
-      """<Data Name='ServiceName'>({dest_host}[^<]+\$)</Data>""",
+      """<Data Name='ServiceName'>({dest_host}[\w-]+)\$</Data>""",
       """<Data Name='ServiceName'>({service_name}[^<]+)</Data>""",
       """<Data Name='TicketOptions'>({ticket_options}[^<]+)</Data>""",
       """<Data Name='TicketEncryptionType'>({ticket_encryption_type}[^<]+)</Data>""",
       """<Data Name='TargetUserName'>(?=\w)({user}[^<@\s]+)(@({domain}[^<@\s]+?))?<\/Data>""",
       """<Data Name='TargetDomainName'>(?=\w)({domain}[^<]+)</Data>""",
-      """<Data Name='IpAddress'>(::[\w]+:)?(::1|({src_ip}[a-fA-F:\d.]+))"""
+      """<Data Name='IpAddress'>(::[\w]+:)?({src_ip}[a-fA-F:\d.]+)</Data>"""
     ]
   }
 ```
