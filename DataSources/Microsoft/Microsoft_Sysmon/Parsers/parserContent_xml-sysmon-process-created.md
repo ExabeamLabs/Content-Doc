@@ -21,9 +21,10 @@ Name = xml-sysmon-process-created
     """<Data Name='ProcessGuid'>\{({process_guid}[A-F0-9a-f-]+)\}</Data>""",
     """<Data Name='ProcessId'>({pid}\d+)</Data>""",
     """<Data Name='ParentProcessGuid'>\{({parent_process_guid}[A-F0-9a-f-]+)\}</Data>""",
-    """<Data Name='CommandLine'>"?\s*({command_line}[^<]+?)\s*"?</Data>""",
+    """<Data Name='CommandLine'>"?\s*({command_line}[^<]+?)\s*</Data>""",
     """<Data Name='Image'>(({directory}[^<]+)\\)?({process_name}[^<]+?)</Data>""",
     """<Data Name='Image'>({path}[^<]+?)</Data>""",
+    """<Data Name='ParentImage'>({parent_process}(({parent_process_directory}[^<]+)\\)?({parent_process_name}[^<]+?))<\/Data>"""
   ]
   DupFields = [ "host->dest_host","directory->process_directory","path->process" ]
 }
