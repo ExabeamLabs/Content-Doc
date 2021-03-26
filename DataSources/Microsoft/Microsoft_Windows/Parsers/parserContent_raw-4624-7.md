@@ -6,11 +6,12 @@ Name = raw-4624-7
     Product = Microsoft Windows
     Lms = Direct
     DataType = "windows-4624"
-    TimeFormat = "MMM dd, yyyy, HH:mm:ss a"
+    TimeFormat = "yyyyy-MM-dd'T'HH:mm:ss"
     Conditions = ["An account was successfully logged on", "Account Name", "Microsoft-Windows-Security-Auditing"]
     Fields = [
       """({event_name}An account was successfully logged on)""",
-      """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2}. \d\d\d\d, \d{1,2}:\d{1,2}:\d{1,2} (?i)(AM|PM))""",
+      """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
+      """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
       """Computer(Name)?=({host}[^\s]+)""",
       """({event_code}4624)""",
       """Logon Type(:|=)\s*({logon_type}[\d]+)""",
@@ -18,12 +19,13 @@ Name = raw-4624-7
       """New Logon[^"]*?Account Domain(:|=)\s*(-|NT AUTHORITY|({domain}[^\s]+))""",
       """Process Name(:|=)\s*(?:-|({process}({directory}[^=]*?)(\\+({process_name}[^\\]+?))?))\s+Network Information:""",
       """Workstation Name(:|=)\s*(-|[A-Fa-f:\d.]+|(::ffff:)?({src_host_windows}[^\s;]+))[\s;]*Source Network Address(:|=)""",
-      """Source Network Address(:|=)\s*(?:-|(::ffff:)?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))[\s;]*Source Port(:|=)""",
+      """Source Network Address(:|=)\s*(?:-|(::ffff:)?({src_ip}[a-fA-F\d.:]+))[\s;]*Source Port(:|=)""",
       """Logon Process(:|=)\s*({auth_process}[^\s;]+)[\s;]*Authentication Package(:|=)\s*({auth_package}[^\s;]+)""",
-      """Logon ID(:|=)\s*({logon_id}[^\s;]+)""",      
+      """Logon ID(:|=)\s*({logon_id}[^\s;]+)""", 
       """New Logon(:|=)[\s;]*Security ID(:|=)\s*(NT AUTHORITY\\SYSTEM|({user_sid}[^;:=]+?))[\s;]*Account Name(:|=)""",
-      """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]+))"""
+      """:\d+:\d+\s+(\d\d\d\d|((?i)AM|PM)|(::ffff:)?(({dest_ip}[a-fA-F0-9.:]+)|({dest_host}[\w\-.]+)))\s""",
+      """:\d+\.\d+(\+|-)\d+:\d+\s+(::ffff:)?(({dest_ip}[a-fA-F0-9.:]+)|({dest_host}[\w\-.]+))\s"""
     ]
-    DupFields = ["host->dest_host", "directory->process_directory"]
+    DupFields = [ "directory->process_directory" ]
   }
 ```

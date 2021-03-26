@@ -8,8 +8,8 @@ Name = symantec-network-connection
   DataType = "network-connection"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """SymantecServer""", """User Name: """, """Rule: """ ]
-  Fields = [ 
-    """SymantecServer:\s*({host}[^,]+?)\s*(,|$)""",
+  Fields = [
+    """\d\d:\d\d:\d\d (({host}[\w-]+)\s+)?SymantecServer: (({=host}[\w-]+),)?({src_host}[^,]+),Local Host IP:"""
     """Local Host IP:\s*({src_ip}[^,]+)""",
     """Local Port:\s*({src_port}\d+)""",
     """Local Host MAC:\s*({src_mac}[^,\s]+)""",
@@ -27,6 +27,5 @@ Name = symantec-network-connection
     """SHA-256:\s*({sha256}[^\s,]+)""",
     """MD-5:\s*({md5}[^\s,]+)""",
   ]
-  DupFields = [ "host->src_host" ]
 }
 ```
