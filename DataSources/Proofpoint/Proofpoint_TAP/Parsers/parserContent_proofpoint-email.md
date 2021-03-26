@@ -7,7 +7,7 @@ Name = proofpoint-email
     Lms = Direct
     DataType = "dlp-email-alert"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
-    Conditions = [ """"subject":""", """"from":""", """"routeDirection":""", """"rcpts":""" ]   
+    Conditions = [ """"subject":""", """"from":""", """"rcpts":""", """"rule":""" ]   
     Fields = [
       """exabeam_host=([^=]+@\s*)?({host}[\w.\-]+)""",
       """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+(\+|\-)\d\d:\d\d)(\s+({host}[^:]+)\s)?""",
@@ -26,5 +26,11 @@ Name = proofpoint-email
       """"host":\s*"\[?({host}[\w\-.]+)\]?"""",
     ]
     DupFields = [ "attachment->attachments" ]
-  }
+  SOAR {
+    IncidentType = "dlp"
+    DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "recipient->dlpUser", "sender->emailFrom", "subject->emailSubject", "recipients->emailTo", "outcome->dlpActionTaken","host->dlpDeviceName"]
+    NameTemplate = """Proofpoint DLP email ${subject} found"""
+    ProjectName = "SOC"
+    EntityFields = [
+      {EntityType="device", Name="src_address", Fields=["src_ip->ip_address"]}
 ```

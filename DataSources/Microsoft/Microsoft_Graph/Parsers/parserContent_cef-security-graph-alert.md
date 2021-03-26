@@ -11,7 +11,7 @@ Name = cef-security-graph-alert
  Fields = [
    """\s({time}\d+-\d+-\d+T\d+:\d+:\d+.\d+Z)\s+[^\s]+\s+Skyformation""",
    """exabeam_host=({host}[^\s]+)""",
-   """"description":"({additional_info}[^"]+)\"+""",
+   """"description":"({additional_info}[^\}]+?)\s*\"+,"+[^"]+"+:""",
    """"subProvider":"({alert_type}[^"]+)""",
    """"sourceAddress":"({src_ip}[^"]+)""",
    """"accountName":"({user}[^"]+)""",
