@@ -1,0 +1,17 @@
+Vendor: BeyondTrust PasswordSafe
+================================
+Product: BeyondTrust PasswordSafe
+---------------------------------
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   8   |   6    |     3      |      2      |    2    |
+
+|                Use-Case                | Event Types/Parsers                                                                                                                                                                                                   | MITRE TTP                                                                            | Content                                                                                                                            |
+|:--------------------------------------:| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| [Other](../../../UseCases/uc_other.md) |  account-switch<br> ↳ [beyondtrust-passwordsafe](Parsers/parserContent_beyondtrust-passwordsafe.md)<br><br> privileged-access<br> ↳ [beyondtrust-passwordsafe](Parsers/parserContent_beyondtrust-passwordsafe.md)<br> | T1078 - Valid Accounts<br>T1098 - Account Manipulation<br>T1204 - User Execution<br> | [<ul><li>8 Rules</li></ul><ul><li>6 Models</li></ul>](Rules_Models/r_m_beyondtrust_passwordsafe_beyondtrust_passwordsafe_Other.md) |
+
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                      | Execution                                                           | Persistence                                                                                                                                  | Privilege Escalation                                                | Defense Evasion                                                     | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration | Impact |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ------------------- | ------------ | ------ |
+| [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [User Execution](https://attack.mitre.org/techniques/T1204)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br>[Account Manipulation](https://attack.mitre.org/techniques/T1098)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   |           |                  |            |                     |              |        |
