@@ -9,4 +9,24 @@ Name = windows-dns-query-2
   ]
   DupFields = [ "dest_ip->dest_host" ]
 }
+windows-dns = {
+  Vendor = Microsoft
+  Product = Microsoft Windows
+  Lms = Direct
+  IsHVF = true
+  TimeFormat = "M/dd/yyyy'\tTime='H:mm:ss a"
+  Fields = [
+    """<\d+>\w+ \d+ \d\d:\d\d:\d\d ({host}[\w.\-]+)""",
+    """\sDate=({time}\d+\/\d+\/\d\d\d\d\t+Time=\d+:\d+:\d+ (am|AM|pm|PM))""",
+    """\sThread ID=({thread_id}[^\t]+)""",
+    """\sUDP\/TCP indicator=({protocol}[^\t]+)""",
+    """\sSend\/Receive indicator=({activity}[^\t]+)""",
+    """\sRemote IP=({dest_ip}[a-fA-F\d.:]+)""",
+    """\sXid \(hex\)=({query_id}[^\t]+)""",
+    """\sFlags \(char codes\)=({query_flags}[^\t]+)""",
+    """\sResponseCode=({dns_response_code}[^\t]+)""",
+    """\sQuestion Type=({query_type}[^\t]+)""",
+    """\sQuestion Name=({query}[^\t"]+)"""
+  ]
+
 ```

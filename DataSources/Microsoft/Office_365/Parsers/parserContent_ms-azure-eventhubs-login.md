@@ -15,4 +15,22 @@ Name = ms-azure-eventhubs-login
     """"+failureReason"+:"+({failure_reason}[^"]+)"+"""
   ]
 }
+ms-azure-eventhubs-activity = {
+  Vendor = Microsoft
+  Product = Microsoft Azure
+  Lms = QRadar
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
+  Fields = [
+    """exabeam_host=({host}[\w.\-]+)""",
+    """"+callerIpAddress"+:"+(<null>|({src_ip}[^"]+))"+""",
+    """"+initiatedBy.*?"+userPrincipalName"+:"+({user_email}[^"]+?)"+"""
+    """"+targetResources.*?"+displayName"+:"+({object}[^"]+?)"+""",
+    """"+targetResources.*?"+userPrincipalName"+:"+({object}[^"]+?)"+"""
+    """"+targetResources.*?"+displayName"+:"+.*?\.DisplayName"+.*?"+newValue"+:[\\"]*(null|({target}[^"\\]+))["\\]*"""
+    """"+time"+:"+({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{7}\w+)"+"""
+    """"+operationName"+:"+({activity}[^"]+)"+""",
+    """"+result"+:"+({outcome}[^"]+)"+""",
+    """({app}eventHubsAzureRecord)""" 
+  ]
+
 ```
