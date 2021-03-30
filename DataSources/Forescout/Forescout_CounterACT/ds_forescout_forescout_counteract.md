@@ -1,0 +1,17 @@
+Vendor: Forescout
+=================
+Product: Forescout CounterACT
+-----------------------------
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  26   |   19   |     4      |      3      |    3    |
+
+|                Use-Case                | Event Types/Parsers                                                                                                                                                                                                                                                                                                                                                                                                                              | MITRE TTP                                                                                          | Content                                                                                                           |
+|:--------------------------------------:| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| [Other](../../../UseCases/uc_other.md) |  config-change<br> ↳ [counteract-config-change](Parsers/parserContent_counteract-config-change.md)<br><br> network-alert<br> ↳ [counteract-network-alert-2](Parsers/parserContent_counteract-network-alert-2.md)<br> ↳ [counteract-network-alert-3](Parsers/parserContent_counteract-network-alert-3.md)<br><br> network-connection-successful<br> ↳ [counteract-network-connection](Parsers/parserContent_counteract-network-connection.md)<br> | T1065 - T1065<br>T1066 - T1066<br>T1071 - Application Layer Protocol<br>T1204 - User Execution<br> | [<ul><li>26 Rules</li></ul><ul><li>19 Models</li></ul>](Rules_Models/r_m_forescout_forescout_counteract_Other.md) |
+
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access | Execution                                                           | Persistence | Privilege Escalation | Defense Evasion | Credential Access | Discovery | Lateral Movement | Collection | Command and Control                                                             | Exfiltration | Impact |
+| -------------- | ------------------------------------------------------------------- | ----------- | -------------------- | --------------- | ----------------- | --------- | ---------------- | ---------- | ------------------------------------------------------------------------------- | ------------ | ------ |
+|                | [User Execution](https://attack.mitre.org/techniques/T1204)<br><br> |             |                      |                 |                   |           |                  |            | [Application Layer Protocol](https://attack.mitre.org/techniques/T1071)<br><br> |              |        |
