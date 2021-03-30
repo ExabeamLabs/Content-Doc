@@ -1,0 +1,19 @@
+Vendor: Kaspersky
+=================
+Product: Kaspersky AV
+---------------------
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   5   |   2    |     2      |      2      |    2    |
+
+|                                  Use-Case                                  | Event Types/Parsers                                                                                                                                                                                              | MITRE TTP                  | Content                                                                                                                |
+|:--------------------------------------------------------------------------:| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  dlp-email-alert-in<br> ↳ [cef-kaspersky-dlp-email](Parsers/parserContent_cef-kaspersky-dlp-email.md)<br><br> file-alert<br> ↳ [cef-kaspersky-file-alert](Parsers/parserContent_cef-kaspersky-file-alert.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>2 Rules</li></ul>](Rules_Models/r_m_kaspersky_kaspersky_av_Compromised_Credentials.md)                        |
+|       [Malware Detection](../../../UseCases/uc_malware_detection.md)       |  dlp-email-alert-in<br> ↳ [cef-kaspersky-dlp-email](Parsers/parserContent_cef-kaspersky-dlp-email.md)<br><br> file-alert<br> ↳ [cef-kaspersky-file-alert](Parsers/parserContent_cef-kaspersky-file-alert.md)<br> | T1204 - User Execution<br> | [<ul><li>3 Rules</li></ul><ul><li>2 Models</li></ul>](Rules_Models/r_m_kaspersky_kaspersky_av_Malware_Detection.md)    |
+|    [Ransomware Detection](../../../UseCases/uc_ransomware_detection.md)    |  dlp-email-alert-in<br> ↳ [cef-kaspersky-dlp-email](Parsers/parserContent_cef-kaspersky-dlp-email.md)<br><br> file-alert<br> ↳ [cef-kaspersky-file-alert](Parsers/parserContent_cef-kaspersky-file-alert.md)<br> | T1204 - User Execution<br> | [<ul><li>3 Rules</li></ul><ul><li>2 Models</li></ul>](Rules_Models/r_m_kaspersky_kaspersky_av_Ransomware_Detection.md) |
+
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                      | Execution                                                           | Persistence                                                         | Privilege Escalation                                                | Defense Evasion                                                     | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration | Impact |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ------------------- | ------------ | ------ |
+| [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [User Execution](https://attack.mitre.org/techniques/T1204)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   |           |                  |            |                     |              |        |

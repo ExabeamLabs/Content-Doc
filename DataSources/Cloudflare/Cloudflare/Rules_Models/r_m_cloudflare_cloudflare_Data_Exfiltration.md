@@ -1,0 +1,14 @@
+Vendor: Cloudflare
+==================
+### Product: [Cloudflare](../ds_cloudflare_cloudflare.md)
+### Use-Case: [Data Exfiltration](../../../../UseCases/uc_data_exfiltration.md)
+
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   6   |   1    |     4      |      9      |    9    |
+
+| Event Type           | Rules                                                                                                                                                                                                                                                                                                                                                                                                          | Models                                                             |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| app-activity         | <b>T1048 - Exfiltration Over Alternative Protocol</b><br> ↳ <b>EM-InRule-EX</b>: User has created an inbox forwarding rule to forward email to an external domain email<br> ↳ <b>EM-InRule-Public</b>: User has created an inbox forwarding rule to forward email to a public email domain<br> ↳ <b>InB-Perm-N-F</b>: First time a user has given mailbox permissions on another mailbox that is not their own |  • <b>EM-InB-Perm-N</b>: Models users who give mailbox permissions |
+| web-activity-allowed | <b>T1041 - Exfiltration Over C2 Channel</b><br> ↳ <b>WEB-New-File-20</b>: User with no web activity history has uploaded 20MB or more<br><br><b>T1048 - Exfiltration Over Alternative Protocol</b><b>T1102 - Web Service</b><br> ↳ <b>A-WEB-EXFIL-ASSET</b>: Large amount of data exfiltrated from host                                                                                                        |                                                                    |
+| web-activity-denied  | <b>T1048 - Exfiltration Over Alternative Protocol</b><br> ↳ <b>New-File-20-Block</b>: User with no web activity history was blocked from uploading 20MB or more                                                                                                                                                                                                                                                |                                                                    |
