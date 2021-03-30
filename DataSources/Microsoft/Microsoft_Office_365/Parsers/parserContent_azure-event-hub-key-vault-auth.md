@@ -16,4 +16,11 @@ Name = azure-event-hub-key-vault-auth
     """"properties":.+?"id":"({object}[^"]+)"""
   ]
 }
+cef-azure-event-hub = {
+  Vendor = Microsoft
+  Product = Microsoft Azure
+  Lms = Direct 
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
+  Conditions = [  """CEF:""",   """|Skyformation|SkyFormation Cloud Apps Security|""",   """destinationServiceName=Azure dproc=EventHub""" ]
+
 ```

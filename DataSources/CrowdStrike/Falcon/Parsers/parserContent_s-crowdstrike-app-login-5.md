@@ -10,4 +10,20 @@ Name = s-crowdstrike-app-login-5
     """destinationServiceName=({app}.+?)\s(\w+=|$)"""
   ]
 }
+s-crowdstrike-app-login = {
+  Vendor = CrowdStrike
+  Product = Falcon
+  Lms = Splunk
+  DataType = "app-login"
+  TimeFormat = "epoch"
+  Fields = [
+    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """"eventCreationTime":\s*({time}\d+)""",
+    """"UserId":\s*"({user_email}[^"@]+@({email_domain}[^"@]+))"""",
+    """"UserId":\s*"({user}[^"@]+)"""",
+    """"UserIp":\s*"({src_ip}[^"]+)""",
+    """"ServiceName":\s*"({app}[^"]+)""",
+    """"Success":\s*({outcome}[^",]+)""",
+  ]
+
 ```

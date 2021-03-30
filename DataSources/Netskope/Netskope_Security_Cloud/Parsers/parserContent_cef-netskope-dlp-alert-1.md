@@ -19,4 +19,20 @@ Name = cef-netskope-dlp-alert-1
     """"site":"({site_at}[^"]+)""""
   ]
 }
+cef-netskope-alert = {
+  Vendor = Netskope
+  Product = Netskope Security Cloud
+  Lms = Direct
+  DataType = "alert"
+  TimeFormat = "epoch_sec"
+  Fields = [
+    """"hostname":"({host}[^",]+)"""",
+    """"timestamp":({time}\d+)""",
+    """"user":"(({user_email}[^@"\s]+@[^@"\s]+)|(({domain}[^"@\\\/\s]+)[\\\/]+)?({user}[^"@\\\/\s]+))"""",
+    """"dstip":"({dest_ip}[A-Fa-f:\d.]+)""",
+    """"alert_name":"({alert_name}[^"]+)""",
+    """"url":"({malware_url}[^"]+)""",
+    """"userip":"({src_ip}[A-Fa-f:\d.]+)"""
+  ]
+
 ```

@@ -8,4 +8,22 @@ Name = racf-db-failed-login
    ]
    DupFields = ["additional_info->reason"]
 }
+ibm-racf-activity = {
+Vendor = IBM
+Product = IBM Racf
+Lms = Splunk
+TimeFormat = "yyyy-MM-dd HH:mm:ss"
+Fields = [
+  """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+  """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+  """APPLSIEMVRM=({host}[^=]+?)\s\w+=""",
+  """APPLHOSTIPADD=({host_ip}[A-Fa-f.:\d]+)""",
+  """EVNTUSERID=({db_user}[^=]+?)\s\w+=""",
+  """EVNTNAME=({event_name}[^=]+?)\s\w+=""",
+  """EVNTUSERNAME=(\-*N\/A\-*|({user}[^=]+?))\s\w+=""",
+  """EVNTTEXT=({additional_info}[^=]+?)\s\w+=""",
+  """EVNTCOMMAND=(\-*N\/A\-*|({db_query}[^=]+?))(\s\w+=|\s*$)""",
+  """EVNTCLASSNAME=(\-*N\/A\-*|({database_object}[^=]+?))\s*\w+="""
+  ]
+
 ```

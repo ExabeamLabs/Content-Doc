@@ -10,4 +10,18 @@ Name = windows-vpn-login-4979
     """Remote Principal Name:\s*(({domain}[^\\]+)\\)?({user}[^\s]+)\s""",
   ]
 }
+windows-vpn-direct-access = {
+  Vendor = Microsoft
+  Product = Microsoft DirectAccess
+  Lms = Syslog
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
+  Fields = [
+    """:\d\d\s+({host}.+?)\s*EvntSLog""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
+    """\(({event_code}\d+)\)""",
+    """({log_type}Microsoft-Windows-Security-Auditing)""",
+    """Local Network Address:\s*({src_ip}[^\s]+)\s""",
+    """Remote Network Address:\s*({dest_ip}[^\s]+)\s""",
+  ]
+
 ```
