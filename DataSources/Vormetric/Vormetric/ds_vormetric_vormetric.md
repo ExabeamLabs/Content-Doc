@@ -1,0 +1,17 @@
+Vendor: Vormetric
+=================
+Product: Vormetric
+------------------
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   7   |   5    |     3      |      2      |    2    |
+
+|                Use-Case                | Event Types/Parsers                                                                                                                                                                                           | MITRE TTP                                                                                    | Content                                                                                              |
+|:--------------------------------------:| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| [Other](../../../UseCases/uc_other.md) |  file-alert<br> ↳ [vormetric-file-operations](Parsers/parserContent_vormetric-file-operations.md)<br><br> file-read<br> ↳ [vormetric-file-operations](Parsers/parserContent_vormetric-file-operations.md)<br> | T1078 - Valid Accounts<br>T1083 - File and Directory Discovery<br>T1204 - User Execution<br> | [<ul><li>7 Rules</li></ul><ul><li>5 Models</li></ul>](Rules_Models/r_m_vormetric_vormetric_Other.md) |
+
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                      | Execution                                                           | Persistence                                                         | Privilege Escalation                                                | Defense Evasion                                                     | Credential Access | Discovery                                                                         | Lateral Movement | Collection | Command and Control | Exfiltration | Impact |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------------------------------------------------------------------------------- | ---------------- | ---------- | ------------------- | ------------ | ------ |
+| [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [User Execution](https://attack.mitre.org/techniques/T1204)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   | [File and Directory Discovery](https://attack.mitre.org/techniques/T1083)<br><br> |                  |            |                     |              |        |
