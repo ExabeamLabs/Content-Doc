@@ -10,4 +10,12 @@ Name = unix-account-lockout
     """({auth_method}pam_faillock)"""
   ]
 }
+unix-events = {
+  Vendor = Unix
+  Lms = Direct
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
+  Fields = [
+    """\[({src_ip}[a-fA-F\d.:]+)\]\[\d+\]\[\w+\]\[\]<\d+>\d+ ({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d+(\+|\-)\d\d:\d\d ({host}[\w.\-]+) ({event_code}\S+)""",
+  ]
+
 ```

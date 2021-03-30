@@ -13,4 +13,18 @@ Name = q-tippingpoint-sms-alert-1
     """00000001-0001-0001-0001-00000\d+\s+.+?\s+\d+\s+http(\s+[^\s]+){12}\s+({alert_id}\d+)"""  
   ]
 }
+tippingpoint-sms-alert-template = {
+    Vendor = Trend Micro
+    Product = Trend Micro TippingPoint NGIPS
+    Lms = Direct
+    DataType = "alert"
+    TimeFormat = "epoch"
+    Fields = [
+          """({alert_severity}\d)\s+([\w\d-])+\s00000001-0001-0001-0001-0000""",
+          """\s+({event_code}[^\s]+)\s+00000001-0001-0001-0001-00000""",
+          """00000001-0001-0001-0001-00000\d+\s+({alert_name}.+?)\s+\d+\s+""",
+          """00000001-0001-0001-0001-00000\d+\s+.+?\s+\d+\s+[^\s]+\s+({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s+({src_port}\d+)""",
+          """00000001-0001-0001-0001-00000\d+\s+.+?\s+\d+\s+([^\s]+\s+){3}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s+({dest_port}\d+)""",
+    ]
+
 ```
