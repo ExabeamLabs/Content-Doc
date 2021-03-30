@@ -10,4 +10,16 @@ Name = q-1102
     """\sTimeGenerated=({time}\d+)\s+"""
   ]
 }
+raw-1102 = {
+  Vendor = Microsoft
+  Product = Microsoft Windows
+  DataType = "windows-audit"
+  Fields = [
+    """({event_code}1102)""",
+    """({event_name}The audit log was cleared)""",
+    """\s+Account Name:\s+({user}.+?)\s+Domain""",
+    """\s+Domain Name:\s+({domain}[^\s]+)""",
+    """\s+Logon ID:\s+({logon_id}[^\s]+)"""
+  ]
+
 ```
