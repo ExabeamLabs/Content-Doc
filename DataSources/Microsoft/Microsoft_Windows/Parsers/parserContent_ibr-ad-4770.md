@@ -8,4 +8,15 @@ Name = ibr-ad-4770
     """,Microsoft-Windows-Security-Auditing,[^\|]+\|(|-|({domain}[^\|]+?))\|(|-|({service_name}[^\|]+?))\|(|-|({service_sid}[^\|]+?))\|(|-|({ticket_options}[^\|]+?))\|(|-|({encryption_type}[^\|]+?))\|(|-|({src_ip}[^\|]+?))\|(({src_port}\d+)|-|)"""
   ]
 }
+ibr-ad-template = {
+  Vendor = Microsoft
+  Product = Microsoft Windows
+  Lms = Splunk
+  TimeFormat = "yyyy-MM-dd HH:mm:ss"
+  Fields = [
+    """exabeam_host=({host}[\w\-.]+)""",
+    """,({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d),({event_code}4\d\d\d),""",
+    """,Microsoft-Windows-Security-Auditing,([^,]*,){2}(({user_sid}S-\d[^,\|]+)|({user}[^@,\|]+)(@({domain}[^,\|]+))?)"""
+  ]
+
 ```

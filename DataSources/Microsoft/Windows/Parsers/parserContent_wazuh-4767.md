@@ -11,4 +11,25 @@ Name = wazuh-4767
     """Target Account:\s*Security ID:\s*({user_sid}.+?)\s*Account Name:\s*({target_user}.+?)\s*Account Domain:\s*({target_domain}[^\s"]+)"""
   ]
 }
+wazuh-windows-template = {
+    Vendor = Microsoft
+    Product = Windows
+    Lms = Direct
+    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+    Fields = [
+      """"data.id":"({event_code}\d+)""""
+      """"@timestamp":"({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)"""
+      """"data.dstuser":"(\(no user\)|({dest_user}[^"]+))"""
+      """"data.status":"({outcome}[^"]+)"""
+      """"location":"({log_location}[^"]+)"""
+      """"data.data":"({data}[^"]+)"""
+      """"path":"({log_path}[^"]+)"""
+      """"data.system_name":"({host}[^"]+)"""
+      """"agent.id":"({agent_id}\d+)"""
+      """"manager.name":"({wazuh_manager}[^"]+)"""
+      """"data.data":"({data}[^"]+)"""
+      """"rule.description":"({description}[^"]+)"""
+      """"decoder.name":"({decoder_name}[^"]+)"""
+    ]
+
 ```

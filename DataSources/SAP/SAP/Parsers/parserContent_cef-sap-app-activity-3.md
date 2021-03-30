@@ -9,4 +9,34 @@ Name = cef-sap-app-activity-3
     """oldFileName=({file_name}.*?)\s\w+="""
   ]
 }
+cef-sap-app-activity = {
+  Vendor = SAP
+  Lms = Direct
+  DataType = "app-activity"
+  TimeFormat = "yyyy-MM-dd HH:mm:ss"
+  Fields = [
+    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
+    """\|Security Audit Log\|6.0\|({activity_id}[^\|]+)\|({activity}[^\|]+)\|({severity}[^\|]+)"""
+    """cat=\/*({category}.*?)\s\w+=""",
+    """categoryOutcome=\/*({outcome}.*?)\s\w+=""",
+    """categoryObject=\/*({object}.*?)\s\w+=""",
+    """ahost=\/*({host}.*?)\s\w+=""",
+    """agt=\/*({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
+    """aid=\/*({aid}[^\\]+)""",
+    """duser=({user}[^\s]+)""",
+    """shost=({host}.*?)\s\w+=""",
+    """src=({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
+    """suser=({user}[^\s]+)""",
+    """filePath=({server}.*?)\s\w+=""",
+    """AttackUserName=({username}.*?)\s\w+=""",
+    """TargetUserName=({username}.*?)\s\w+=""",
+    """DeviceCustomString=({host}.*?)\s\w+=""",
+    """flexString2=({sid}.*?)\s\w+=""",
+    """DeviceCustomString4=({client}.*?)\s\w+=""",
+    """DeviceCustomString2=({transaction}.*?)\s\w+=""",
+    """cs4=({result_code}\d+)""", 
+    """amac=({mac}.*?)\s\w+="""
+  ]
+
 ```
