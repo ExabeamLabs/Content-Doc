@@ -10,4 +10,17 @@ Name = xml-1102
     """\s+Logon ID:\s+({logon_id}[^<>\s=]+)"""
   ]
 }
+raw-1102 = {
+  Vendor = Microsoft
+  Product = Microsoft Windows
+  DataType = "windows-audit"
+  Fields = [
+    """exabeam_host=({host}[\w\-.]+)""",
+    """({event_code}1102)""",
+    """({event_name}The audit log was cleared)""",
+    """\s+Account Name:\s+({user}.+?)\s+Domain""",
+    """\s+Domain Name:\s+({domain}[^\s]+)""",
+    """\s+Logon ID:\s+({logon_id}[^\s]+)""",
+  ]
+
 ```

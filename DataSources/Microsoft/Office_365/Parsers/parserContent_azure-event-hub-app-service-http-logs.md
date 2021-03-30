@@ -17,4 +17,11 @@ Name = azure-event-hub-app-service-http-logs
   ]
   DupFields = ["app->web_domain"]
 }
+cef-azure-event-hub = {
+  Vendor = Microsoft
+  Product = Microsoft Azure
+  Lms = Direct 
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
+  Conditions = [  """CEF:""",   """|Skyformation|SkyFormation Cloud Apps Security|""",   """destinationServiceName=Azure dproc=EventHub""" ]
+
 ```

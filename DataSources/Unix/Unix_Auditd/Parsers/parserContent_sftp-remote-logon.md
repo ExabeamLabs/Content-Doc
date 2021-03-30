@@ -9,4 +9,14 @@ Name = sftp-remote-logon
     """({event_name}session opened)"""
 	]
   }
+sftp-server-activity = {
+    Vendor = Unix
+    Product = Unix
+    Lms = Direct
+    TimeFormat = "yyyy-MM-dd HH:mm:ss"
+    Fields = [
+        """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+        """\d\d:\d\d:\d\d ({host}[^\s]+) sftp-server\[""",
+    ]
+
 ```
