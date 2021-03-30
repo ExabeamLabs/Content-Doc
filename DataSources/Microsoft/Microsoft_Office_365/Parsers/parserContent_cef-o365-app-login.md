@@ -10,7 +10,6 @@ Name = cef-o365-app-login
     Conditions = [ """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|sk4-login-""","""request=""" ]
     Fields = [
       """exabeam_host=({host}[^\s]+)""",
-      """"deviceDetail":\{[^\}]+?"displayName":"({host}[^"]+)"""",
       """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+\w) [\w\-.]+ Skyformation""",
       """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
       """\Wsuser=(\w+-\w+-\w+-\w+-\w+|({user_email}[^@\s]+?@[^@\s]+?)|({user}[^@\s]+?))\s+(\w+=|$)""",    

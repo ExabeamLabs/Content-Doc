@@ -14,7 +14,7 @@ Name = proofpoint-email
       """"ts":\s*"({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+[\+\-]\d+)""",
       """"sizeBytes":\s*({bytes}\d+)""",
       """"from":\s*\[?"?({user_fullname}[^"@\s,<>]+\s+[^"@,<>]+?)?\s*\<?({sender}[^"@\s,<>]+@({external_domain_sender}[^"@\s,<>]+))""",
-      """"subject":\s*\["({subject}[^"]+)""",
+      """"subject":\s*\["({subject}[^"]+?)\s*"""",
       """"rcpts":\s*\["({recipients}({recipient}[^"@]+@({external_domain_recipient}[^"]+)))"\]""",
       """"ip":\s*"({dest_ip}[a-fA-F\d.:]+)""",
       """"filter":[^=]+?"disposition":\s*"({outcome}[^"]+)""",
@@ -24,6 +24,7 @@ Name = proofpoint-email
       """"ip":\s*"({src_ip}[A-Fa-f:\d.]+)""",
       """"x-originating-ip":\s*\["\[({src_ip}[^"\]]+)""",
       """"host":\s*"\[?({host}[\w\-.]+)\]?"""",
+      """"rules":\[[^\]]*"rule":"({rule}[^"]+)""""
     ]
     DupFields = [ "attachment->attachments" ]
   SOAR {
