@@ -1,0 +1,818 @@
+{
+  "failed-logon" : {
+    "description" : "A user failed a logon attempt.",
+    "category" : "Account",
+    "subcategory" : "Login",
+    "required" : [ "dest", "host", "time", "user" ],
+    "extended" : [ "failure_reason", "result_code", "logon_type", "auth_package", "src", "event_code" ],
+    "informational" : [ "process_name", "process", "domain", "event_name", "user_sid" ]
+  },
+  "vpn-login" : {
+    "description" : "Remote access VPN login attempt either from a public IP address or from an internal network address was successful.",
+    "category" : "VPN",
+    "subcategory" : "Login",
+    "required" : [ "host", "src", "time", "user" ],
+    "extended" : [ "dest", "os", "src_translated_ip", "badge_id", "realm", "account" ],
+    "informational" : [ "session_id", "domain", "event_name", "event_code" ]
+  },
+  "process-network-failed" : {
+    "description" : "An endpoint process was blocked from accessing a network",
+    "category" : "Network",
+    "subcategory" : "Security",
+    "required" : [ "process_name", "dest", "host", "src", "time" ],
+    "extended" : [ "process", "user" ],
+    "informational" : [ "domain", "src_port", "event_name", "direction", "process_directory", "bytes", "web_domain", "md5", "pid", "dest_port", "event_code" ]
+  },
+  "process-alert" : {
+    "description" : "A process was executed that triggered an organization's configured endpoint process alert.",
+    "category" : "Endpoint",
+    "subcategory" : "Process (maybe Security)",
+    "required" : [ "process_name", "dest", "host", "alert_name", "time" ],
+    "extended" : [ "command_line", "process", "user" ],
+    "informational" : [ "alert_severity", "alert_id", "domain", "additional_info", "src_port", "alert_type", "event_name", "parent_process", "process_directory", "md5", "dest_port", "src", "event_code" ]
+  },
+  "file-read" : {
+    "description" : "A user opened a file.",
+    "category" : "File",
+    "subcategory" : "Read",
+    "required" : [ "dest", "file_name", "host", "time", "user" ],
+    "extended" : [ "file_ext", "process", "accesses", "src", "file_parent" ],
+    "informational" : [ "src_file_dir", "process_name", "domain", "event_name", "object", "bytes", "src_file_name", "file_path", "app", "file_type", "activity", "event_code", "protocol" ]
+  },
+  "authentication-failed" : {
+    "description" : "An authentication attempt performed either from a public IP address or from an internal network address failed.",
+    "category" : "Account",
+    "subcategory" : "Auth",
+    "required" : [ "dest", "failure_reason", "host", "time", "user" ],
+    "extended" : [ "src_ip" ],
+    "informational" : [ "browser", "src_host", "domain", "additional_info", "os", "event_name", "outcome", "user_agent", "auth_method", "app", "realm", "event_code" ]
+  },
+  "file-delete" : {
+    "description" : "A user deleted a file.",
+    "category" : "File",
+    "subcategory" : "Activity",
+    "required" : [ "dest", "file_name", "host", "time", "user" ],
+    "extended" : [ "file_ext", "accesses", "src", "file_parent" ],
+    "informational" : [ "src_file_dir", "process_name", "process", "domain", "event_name", "object", "bytes", "src_file_name", "file_path", "app", "file_type", "activity", "event_code", "protocol" ]
+  },
+  "service-created" : {
+    "description" : "A service was installed on the system. NOTE: Tied to service creation events, such as Windows 4697.",
+    "category" : "Endpoint",
+    "subcategory" : "Creation",
+    "required" : [ "host", "service_name", "dest_host", "time", "user" ],
+    "extended" : [ "process_name", "process" ],
+    "informational" : [ "account_domain", "domain", "event_name", "process_directory", "dest_ip", "src", "account_name", "service_type", "user_sid", "logon_id", "event_code" ]
+  },
+  "process-network" : {
+    "description" : "A process executing on the endpoint tried to access the network.",
+    "category" : "Endpoint",
+    "subcategory" : "Activity",
+    "required" : [ "process_name", "dest", "host", "src", "time" ],
+    "extended" : [ "process", "process_directory", "web_domain", "dest_port", "user" ],
+    "informational" : [ "domain", "src_port", "event_name", "direction", "bytes", "md5", "pid", "event_code" ]
+  },
+  "dlp-email-alert-in" : {
+    "description" : "Incoming email activity reported by an email monitoring tool.",
+    "category" : "Email",
+    "subcategory" : "Activity",
+    "required" : [ "time", "host", "sender", "recipient" ],
+    "extended" : [ "subject" ],
+    "informational" : [ "dest", "return_path", "recipients", "alert_name", "event_name", "outcome", "direction", "user_email", "bytes", "message_id", "external_domain", "src", "num_recipients", "external_address", "attachments", "user", "event_code" ]
+  },
+  "failed-physical-access" : {
+    "description" : "A user swiped their physical badge to open a door, gate, or other entrance but were denied access.",
+    "category" : "Physical Security",
+    "subcategory" : "Activity",
+    "required" : [ "host", "outcome", "location_door", "badge_id", "time" ],
+    "extended" : [ "location_building", "location_city", "user" ],
+    "informational" : [ "first_name", "employee_id", "dest", "event_name", "direction", "last_name", "src", "event_code" ]
+  },
+  "account-disabled" : {
+    "description" : "An administrator disabled a user's account.",
+    "category" : "Account",
+    "subcategory" : "Management",
+    "required" : [ "time", "host", "user", "target_user" ],
+    "extended" : [ ],
+    "informational" : [ "dest", "domain", "target_domain", "event_name", "outcome", "src", "user_sid", "account", "logon_id", "event_code" ]
+  },
+  "config-change" : {
+    "description" : "A user made a configuration change.",
+    "category" : "",
+    "subcategory" : "",
+    "required" : [ "dest", "host", "object", "time", "activity", "user" ],
+    "extended" : [ ],
+    "informational" : [ "event_name", "outcome", "src", "event_code" ]
+  },
+  "share-access" : {
+    "description" : "This user has accessed a Windows network share.",
+    "category" : "File",
+    "subcategory" : "Activity",
+    "required" : [ "dest", "host", "share_name", "time", "user" ],
+    "extended" : [ "src_port", "file_path", "event_code" ],
+    "informational" : [ "file_name", "domain", "event_name", "outcome", "accesses", "src", "share_path", "file_type", "logon_id" ]
+  },
+  "audit-log-clear" : {
+    "description" : "An audit log was deleted from the system. NOTE: Tied to Windows events indicating audit log clearance, such as Windows 1102 and 517.",
+    "category" : "Audit",
+    "subcategory" : "Change",
+    "required" : [ "dest", "host", "time", "user" ],
+    "extended" : [ "src_host" ],
+    "informational" : [ "domain", "event_name", "src_ip", "logon_id", "audit_category", "policy", "event_code" ]
+  },
+  "batch-logon" : {
+    "description" : "A non-interactive batch logon occurred. NOTE: Tied to Windows events 4624, and 528 with logon type 4.",
+    "category" : "Account",
+    "subcategory" : "Activity",
+    "required" : [ "dest", "host", "time", "user" ],
+    "extended" : [ "process", "src_host", "account", "event_code" ],
+    "informational" : [ "process_name", "domain", "logon_type", "event_name", "src_ip", "auth_package", "logon_id" ]
+  },
+  "member-removed" : {
+    "description" : "A user has been removed from a domain group membership.",
+    "category" : "Account",
+    "subcategory" : "Management",
+    "required" : [ "host", "account_id", "group_name", "time", "user" ],
+    "extended" : [ "src" ],
+    "informational" : [ "dest", "account_domain", "group_type", "domain", "account_ou", "event_name", "group_domain", "account_name", "account", "logon_id", "event_code", "account_dn" ]
+  },
+  "remote-access" : {
+    "description" : "A remote, non-interactive logon occurred. NOTE: Tied to Windows events 4769, or 4624 with logon type 3 or 8.",
+    "category" : "Account",
+    "subcategory" : "Activity",
+    "required" : [ "host", "service_name", "src", "time", "user" ],
+    "extended" : [ "dest", "process", "ticket_options", "domain", "ticket_encryption_type", "auth_package", "account", "event_code" ],
+    "informational" : [ "process_name", "logon_type", "event_name", "logon_id" ]
+  },
+  "account-lockout" : {
+    "description" : "An account has been locked.",
+    "category" : "Account",
+    "subcategory" : "Activity",
+    "required" : [ "dest", "domain", "host", "time", "user" ],
+    "extended" : [ "src_host" ],
+    "informational" : [ "caller_domain", "event_name", "src_ip", "caller_user", "auth_method", "logon_id", "event_code" ]
+  },
+  "database-access" : {
+    "description" : "A user accessed a database.",
+    "category" : "Database",
+    "subcategory" : "Activity",
+    "required" : [ "host", "db_operation", "db_user", "database_name", "time", "user" ],
+    "extended" : [ ],
+    "informational" : [ "process_name", "dest", "table_name", "session_id", "server_group", "process", "domain", "additional_info", "database_schema", "event_name", "reason", "service_name", "src", "app", "account", "database_object", "event_code", "protocol", "sql_count" ]
+  },
+  "audit-policy-change" : {
+    "description" : "An audit policy was changed. NOTE: Tied to Windows events 4719 and 612.",
+    "category" : "",
+    "subcategory" : "",
+    "required" : [ "dest", "domain", "host", "time", "policy", "user" ],
+    "extended" : [ "src_host" ],
+    "informational" : [ "event_name", "src_ip", "subcategory", "logon_id", "audit_category", "event_code" ]
+  },
+  "authentication-successful" : {
+    "description" : "An authentication attempt performed either from a public IP address or from an internal network address was successful.",
+    "category" : "Account",
+    "subcategory" : "Activity",
+    "required" : [ "dest", "host", "time", "user" ],
+    "extended" : [ "src_ip" ],
+    "informational" : [ "browser", "src_host", "domain", "os", "event_name", "outcome", "user_agent", "auth_method", "app", "realm", "event_code" ]
+  },
+  "security-alert" : {
+    "description" : "An alert was reported by a third-party security product, such as FireEye, Palo Alto Networks, or other antivirus software running on the endpoints.",
+    "category" : "Alerts",
+    "subcategory" : "Endpoint",
+    "required" : [ "host", "alert_name", "src", "time" ],
+    "extended" : [ "process_name", "alert_severity", "dest", "process", "alert_type", "user" ],
+    "informational" : [ "malware_url", "alert_id", "file_name", "domain", "additional_info", "src_port", "event_name", "outcome", "md5", "dest_port", "category", "event_code" ]
+  },
+  "network-connection-failed" : {
+    "description" : "A network connection failure occurred.",
+    "category" : "Network",
+    "subcategory" : "Security",
+    "required" : [ "dest", "host", "src_port", "dest_port", "src", "time", "action" ],
+    "extended" : [ ],
+    "informational" : [ "bytes_in", "failure_reason", "dest_mac", "dest_translated_ip", "event_name", "outcome", "rule", "src_translated_ip", "direction", "dest_interface", "bytes", "src_mac", "dest_translated_port", "src_interface", "bytes_out", "src_translated_port", "activity", "user", "event_code", "protocol" ]
+  },
+  "web-activity-denied" : {
+    "description" : "A user was blocked by a restricting policy while attempted to access a web resource via a proxy or other web monitoring gateway",
+    "category" : "Web",
+    "subcategory" : "Activity (or Security)?",
+    "required" : [ "method", "host", "web_domain", "time", "action", "user" ],
+    "extended" : [ "top_domain", "bytes_in", "uri_path", "full_url", "dest_ip", "src", "categories", "category", "uri_query" ],
+    "informational" : [ "failure_reason", "browser", "result_code", "src_port", "os", "event_name", "mime", "user_agent", "dest_host", "dest_port", "proxy_action", "bytes_out", "referrer", "event_code", "protocol" ]
+  },
+  "process-created-failed" : {
+    "description" : "Failed Process Activity",
+    "category" : "Endpoint",
+    "subcategory" : "Process",
+    "required" : [ "process_name", "dest", "host", "time" ],
+    "extended" : [ "user", "process" ],
+    "informational" : [ "command_line", "path", "domain", "event_name", "outcome", "parent_process", "process_directory", "md5", "pid", "src", "logon_id", "event_code" ]
+  },
+  "database-login" : {
+    "description" : "A user logged in to the database.",
+    "category" : "Database",
+    "subcategory" : "Activity",
+    "required" : [ "host", "db_user", "database_name", "time", "user" ],
+    "extended" : [ "src" ],
+    "informational" : [ "process_name", "dest", "server_group", "process", "domain", "event_name", "service_name", "auth_package", "app", "account", "event_code", "protocol" ]
+  },
+  "network-connection-successful" : {
+    "description" : "A network connection attempt was successful.",
+    "category" : "Network",
+    "subcategory" : "Activity",
+    "required" : [ "dest", "host", "src_port", "dest_port", "src", "time" ],
+    "extended" : [ ],
+    "informational" : [ "bytes_in", "failure_reason", "dest_mac", "dest_translated_ip", "event_name", "outcome", "rule", "src_translated_ip", "direction", "dest_interface", "bytes", "src_mac", "dest_translated_port", "src_interface", "bytes_out", "src_translated_port", "activity", "action", "user", "event_code", "protocol" ]
+  },
+  "failed-usb-activity" : {
+    "description" : "USB activity failed. For example, an administrator sets a policy to deny USB activity on machines connected to the company network. Then, a user attempts to copy files to a USB flash drive and is denied by the policy. The activity would be logged as failed-USB-activity.",
+    "category" : "Endpoint",
+    "subcategory" : "Usb",
+    "required" : [ "dest", "device_id", "host", "time", "user" ],
+    "extended" : [ ],
+    "informational" : [ "process_name", "process", "activity_details", "domain", "os", "event_name", "device_type", "bytes", "src", "file_path", "activity", "event_code" ]
+  },
+  "workstation-locked" : {
+    "description" : "A user locked their workstation. NOTE: Tied to Windows event 4800.",
+    "category" : "Endpoint",
+    "subcategory" : "Activity",
+    "required" : [ "dest", "host", "time", "user" ],
+    "extended" : [ ],
+    "informational" : [ "process_name", "domain", "event_name", "src", "account", "event_code" ]
+  },
+  "usb-read" : {
+    "description" : "USB read activity was detected.",
+    "category" : "Endpoint",
+    "subcategory" : "Usb",
+    "required" : [ "dest", "device_id", "file_name", "host", "time", "user" ],
+    "extended" : [ "process" ],
+    "informational" : [ "process_name", "file_ext", "activity_details", "domain", "os", "event_name", "process_directory", "device_type", "bytes", "src", "file_path", "activity", "event_code" ]
+  },
+  "file-download" : {
+    "description" : "A file was downloaded.",
+    "category" : "File",
+    "subcategory" : "Download",
+    "required" : [ "dest", "file_name", "host", "time", "user" ],
+    "extended" : [ ],
+    "informational" : [ "src_file_dir", "process_name", "file_ext", "process", "domain", "event_name", "accesses", "object", "bytes", "src", "src_file_name", "file_path", "app", "file_type", "file_parent", "activity", "event_code", "protocol" ]
+  },
+  "dns-response" : {
+    "description" : "An asset received a response from a DNS server.",
+    "category" : "Network",
+    "subcategory" : "DNS",
+    "required" : [ "dest", "dns_response_code", "host", "query", "time" ],
+    "extended" : [ "category" ],
+    "informational" : [ "response_flags", "result", "query_type", "src_port", "event_name", "outcome", "bytes", "response", "query_id", "dest_port", "src", "activity", "user", "event_code", "protocol" ]
+  },
+  "account-unlocked" : {
+    "description" : "An administrator unlocked a user's account",
+    "category" : "Account",
+    "subcategory" : "Activity",
+    "required" : [ "time", "host", "user", "target_user" ],
+    "extended" : [ ],
+    "informational" : [ "dest", "domain", "target_domain", "event_name", "outcome", "src", "user_sid", "account", "logon_id", "event_code" ]
+  },
+  "file-upload" : {
+    "description" : "A file was uploaded to the web.",
+    "category" : "File",
+    "subcategory" : "Activity",
+    "required" : [ "dest", "file_name", "host", "time", "user" ],
+    "extended" : [ ],
+    "informational" : [ "src_file_dir", "process_name", "file_ext", "process", "domain", "event_name", "accesses", "object", "bytes", "src", "src_file_name", "file_path", "app", "file_type", "file_parent", "activity", "event_code", "protocol" ]
+  },
+  "web-activity-allowed" : {
+    "description" : "A user has accessed a web resources via a proxy or some other web monitoring gateway.",
+    "category" : "Web",
+    "subcategory" : "Activity",
+    "required" : [ "method", "host", "web_domain", "time", "action", "user" ],
+    "extended" : [ "top_domain", "bytes_in", "browser", "os", "uri_path", "full_url", "dest_ip", "src", "categories", "category", "uri_query" ],
+    "informational" : [ "result_code", "src_port", "event_name", "mime", "user_agent", "dest_host", "dest_port", "proxy_action", "bytes_out", "referrer", "event_code", "protocol" ]
+  },
+  "nac-logon" : {
+    "description" : "A user was granted network access.",
+    "category" : "Network",
+    "subcategory" : "Access",
+    "required" : [ "dest", "host", "time", "user" ],
+    "extended" : [ "auth_type", "src_mac" ],
+    "informational" : [ "network", "domain", "auth_server", "event_name", "src", "account", "event_code" ]
+  },
+  "member-added" : {
+    "description" : "A user has been added to a domain group membership.",
+    "category" : "Account",
+    "subcategory" : "Management",
+    "required" : [ "host", "account_id", "group_name", "time", "user" ],
+    "extended" : [ "account_ou", "dest_host", "src", "account_name" ],
+    "informational" : [ "account_domain", "group_type", "domain", "event_name", "group_domain", "dest_ip", "account", "logon_id", "event_code", "account_dn" ]
+  },
+  "usb-insert" : {
+    "description" : "A USB flash drive was connected to the network.",
+    "category" : "Endpoint",
+    "subcategory" : "Usb",
+    "required" : [ "dest", "device_id", "host", "time", "user" ],
+    "extended" : [ ],
+    "informational" : [ "process_name", "process", "activity_details", "domain", "os", "event_name", "device_type", "bytes", "src", "file_path", "activity", "event_code" ]
+  },
+  "dlp-email-alert-out-failed" : {
+    "description" : "An outbound email activity failure occurred. For example, if the recipient email address is wrong or if there is an email server error.",
+    "category" : "Email",
+    "subcategory" : "Activity",
+    "required" : [ "time", "host", "sender", "recipient" ],
+    "extended" : [ "file_name", "bytes", "external_domain", "external_address", "user" ],
+    "informational" : [ "dest", "subject", "return_path", "recipients", "alert_name", "event_name", "outcome", "direction", "user_email", "message_id", "src", "num_recipients", "attachments", "event_code" ]
+  },
+  "winsession-disconnect" : {
+    "description" : "A user disconnected from an existing Terminal Services session. NOTE: Tied to Windows event 4779.",
+    "category" : "Account",
+    "subcategory" : "Activity",
+    "required" : [ "dest", "domain", "host", "time", "user" ],
+    "extended" : [ "src_host" ],
+    "informational" : [ "process_name", "event_name", "src_ip", "account", "logon_id", "event_code" ]
+  },
+  "service-logon" : {
+    "description" : "A non-interactive service logon occurred. NOTE: Tied to Windows events 4624 and 528 with logon type 5.",
+    "category" : "",
+    "subcategory" : "",
+    "required" : [ "dest", "host", "time", "user" ],
+    "extended" : [ "process", "src_host", "account", "event_code" ],
+    "informational" : [ "process_name", "domain", "logon_type", "event_name", "src_ip", "auth_package", "logon_id" ]
+  },
+  "privileged-object-access" : {
+    "description" : "A user obtained special privileges to access a privileged object. NOTE: Tied to Windows events 4674 or 578.",
+    "category" : "Database",
+    "subcategory" : "Activity",
+    "required" : [ "dest", "host", "privileges", "object", "time", "user" ],
+    "extended" : [ "process_name", "process", "src_host" ],
+    "informational" : [ "object_server", "domain", "object_type", "event_name", "debug_privilege", "src_ip", "environment_privilege", "process_directory", "tcb_privilege", "ownership_privilege", "logon_id", "event_code" ]
+  },
+  "failed-vpn-login" : {
+    "description" : "A remote access VPN login attempt performed either from a public IP address or from an internal network address failed.",
+    "category" : "VPN",
+    "subcategory" : "Login",
+    "required" : [ "host", "src", "time", "user" ],
+    "extended" : [ ],
+    "informational" : [ "dest", "failure_reason", "domain", "event_name", "realm", "event_code" ]
+  },
+  "app-login" : {
+    "description" : "A user logged in to an application.",
+    "category" : "Application",
+    "subcategory" : "Login",
+    "required" : [ "time", "host", "user", "app" ],
+    "extended" : [ "browser", "os", "user_agent", "src" ],
+    "informational" : [ "dest", "event_name", "user_email", "event_code", "protocol" ]
+  },
+  "print-activity" : {
+    "description" : "A user printed files, data, or some other form of content.",
+    "category" : "Printer",
+    "subcategory" : "Activity",
+    "required" : [ "dest", "host", "object", "printer_name", "time", "user" ],
+    "extended" : [ ],
+    "informational" : [ "domain", "event_name", "outcome", "bytes", "num_pages", "src", "account", "activity", "event_code" ]
+  },
+  "account-deleted" : {
+    "description" : "A user deleted an account. NOTE: Tied to Windows events 4726 or 630.",
+    "category" : "Account",
+    "subcategory" : "Changes",
+    "required" : [ "time", "host", "user", "target_user" ],
+    "extended" : [ "dest_host", "account_name" ],
+    "informational" : [ "domain", "target_domain", "event_name", "outcome", "dest_ip", "src", "user_sid", "account", "logon_id", "event_code" ]
+  },
+  "account-enabled" : {
+    "description" : "An account was enabled by a user.",
+    "category" : "Account",
+    "subcategory" : "Management",
+    "required" : [ "target_user", "dest", "host", "time", "user" ],
+    "extended" : [ "src_host" ],
+    "informational" : [ "domain", "target_domain", "event_name", "outcome", "src_ip", "account", "logon_id", "event_code" ]
+  },
+  "account-password-change" : {
+    "description" : "A user changed their account password. NOTE: Tied to Windows events 4723 or 627.",
+    "category" : "Account",
+    "subcategory" : "Activity",
+    "required" : [ "time", "host", "user", "target_user" ],
+    "extended" : [ "target_domain", "dest_host" ],
+    "informational" : [ "domain", "event_name", "outcome", "dest_ip", "src", "user_sid", "account", "logon_id", "event_code" ]
+  },
+  "nac-failed-logon" : {
+    "description" : "A logon attempted to a NAC failed.",
+    "category" : "Network",
+    "subcategory" : "Security",
+    "required" : [ "dest", "domain", "host", "time", "user" ],
+    "extended" : [ ],
+    "informational" : [ "network", "auth_server", "event_name", "src_mac", "src", "account", "event_code" ]
+  },
+  "ds-access" : {
+    "description" : "User accessed an active directory object.",
+    "category" : "",
+    "subcategory" : "",
+    "required" : [ "domain", "host", "object", "time", "user" ],
+    "extended" : [ "activity_type", "object_class", "dest_host", "src", "attribute" ],
+    "informational" : [ "object_ou", "event_name", "dest_ip", "new_attribute", "object_dn", "account", "logon_id", "old_attribute", "event_code" ]
+  },
+  "kerberos-logon" : {
+    "description" : "Authentication using the Kerberos protocol occurred. NOTE: Tied to Windows events 4768 or 672. For more precise readings on the nature of the logon, consider collecting Windows events 4624 from the asset.",
+    "category" : "Account",
+    "subcategory" : "Activity",
+    "required" : [ "dest", "domain", "result_code", "host", "time", "user" ],
+    "extended" : [ "ticket_options", "src_host", "ticket_encryption_type", "logon_type", "badge_id", "account", "event_code" ],
+    "informational" : [ "event_name", "src_ip", "service_name", "user_sid" ]
+  },
+  "database-failed-login" : {
+    "description" : "A user attempted and failed to log in to a database.",
+    "category" : "Database",
+    "subcategory" : "",
+    "required" : [ "host", "reason", "db_user", "database_name", "time", "user" ],
+    "extended" : [ ],
+    "informational" : [ "process_name", "dest", "server_group", "process", "domain", "additional_info", "event_name", "outcome", "service_name", "auth_package", "src", "app", "account", "event_code", "protocol" ]
+  },
+  "ntlm-logon" : {
+    "description" : "An NTLM authentication occurred. NOTE: Tied to Microsoft NTLM events such as Windows events 4776 or 680. For more precise readings on the nature of the logon, consider collecting Windows 4624 events from the asset.",
+    "category" : "Account",
+    "subcategory" : "Activity",
+    "required" : [ "dest", "domain", "result_code", "host", "time", "user" ],
+    "extended" : [ "src_host", "badge_id", "account", "event_code" ],
+    "informational" : [ "event_name", "src_ip" ]
+  },
+  "failed-ds-access" : {
+    "description" : "An access attempt to an active directory object failed.",
+    "category" : "",
+    "subcategory" : "",
+    "required" : [ "domain", "host", "object", "time", "user" ],
+    "extended" : [ ],
+    "informational" : [ "object_ou", "dest", "failure_reason", "event_name", "outcome", "activity_type", "object_class", "new_attribute", "src", "object_dn", "attribute", "old_attribute", "event_code" ]
+  },
+  "account-switch" : {
+    "description" : "A user switched their account to impersonate another account. NOTE: Tied to Windows events 4648 and 552. Also tied to Unix SUDO logs.",
+    "category" : "Account",
+    "subcategory" : "Switch",
+    "required" : [ "dest", "host", "account", "time", "user" ],
+    "extended" : [ "process", "src_host", "safe_value" ],
+    "informational" : [ "process_name", "command_line", "account_logon_guid", "account_domain", "domain", "event_name", "src_ip", "process_directory", "user_sid", "user_uid", "logon_id", "user_logon_guid", "event_code", "dest_service" ]
+  },
+  "process-created" : {
+    "description" : "A user has executed an endpoint process on a host.",
+    "category" : "Endpoint",
+    "subcategory" : "Process",
+    "required" : [ "process_name", "dest", "host", "time" ],
+    "extended" : [ "command_line", "process", "src_host", "process_directory", "user", "event_code" ],
+    "informational" : [ "path", "domain", "event_name", "outcome", "src_ip", "parent_process", "md5", "pid", "logon_id" ]
+  },
+  "local-logon" : {
+    "description" : "An interactive local logon occurred. NOTE: Tied to Windows events 4624 or 528 events with logon type 2, 7 or 11 and a process name indicating a local interactive logon. Also tied to Linux local logon events.",
+    "category" : "Account",
+    "subcategory" : "Activity",
+    "required" : [ "dest", "host", "time", "user" ],
+    "extended" : [ "process", "src_host", "domain", "logon_type", "badge_id", "account", "event_code" ],
+    "informational" : [ "process_name", "event_name", "src_ip", "auth_package", "logon_id" ]
+  },
+  "file-alert" : {
+    "description" : "A file integrity product (such as Tripwire) reported a change made to critical and/or system file.",
+    "category" : "File",
+    "subcategory" : "Security",
+    "required" : [ "dest", "file_name", "host", "alert_name", "time" ],
+    "extended" : [ "process", "user" ],
+    "informational" : [ "process_name", "alert_severity", "file_ext", "alert_id", "domain", "os", "alert_type", "event_name", "accesses", "src", "file_path", "file_parent", "action", "event_code" ]
+  },
+  "app-activity" : {
+    "description" : "A user's activity within a specific application.",
+    "category" : "Application",
+    "subcategory" : "Activity",
+    "required" : [ "host", "object", "app", "time", "activity", "user" ],
+    "extended" : [ "browser", "os", "mime", "user_agent", "src" ],
+    "informational" : [ "dest", "result", "additional_info", "event_name", "resource", "target", "event_code" ]
+  },
+  "account-creation" : {
+    "description" : "A user created a new account. NOTE: Tied to Windows events 4720 or 624.",
+    "category" : "Account",
+    "subcategory" : "Create",
+    "required" : [ "dest", "host", "account_name", "time", "user" ],
+    "extended" : [ "account_domain", "src" ],
+    "informational" : [ "domain", "event_name", "account", "logon_id", "event_code" ]
+  },
+  "usb-write" : {
+    "description" : "A user copied files from their machine to a USB flash drive.",
+    "category" : "Enpoint",
+    "subcategory" : "Usb",
+    "required" : [ "dest", "file_name", "host", "time", "user" ],
+    "extended" : [ "device_id", "process" ],
+    "informational" : [ "src_file_dir", "process_name", "file_ext", "activity_details", "domain", "os", "event_name", "process_directory", "device_type", "bytes", "src", "src_file_name", "file_path", "activity", "src_file_ext", "event_code" ]
+  },
+  "workstation-unlocked" : {
+    "description" : "A user unlocked their workstation. NOTE: Tied to Windows event 4801.",
+    "category" : "Endpoint",
+    "subcategory" : "Activity",
+    "required" : [ "dest", "host", "time", "user" ],
+    "extended" : [ ],
+    "informational" : [ "process_name", "domain", "event_name", "src", "account", "event_code" ]
+  },
+  "database-query" : {
+    "description" : "A user queried a database.",
+    "category" : "Database",
+    "subcategory" : "Activity",
+    "required" : [ "host", "db_user", "database_name", "time", "user", "db_query" ],
+    "extended" : [ "response_size", "db_operation", "src" ],
+    "informational" : [ "process_name", "dest", "table_name", "server_group", "process", "domain", "database_schema", "event_name", "service_name", "app", "database_object", "event_code" ]
+  },
+  "dns-query" : {
+    "description" : "An asset queried for a domain in the DNS server.",
+    "category" : "Network",
+    "subcategory" : "DNS",
+    "required" : [ "host", "query", "src", "time" ],
+    "extended" : [ ],
+    "informational" : [ "dest", "dns_response_code", "result", "query_type", "src_port", "event_name", "outcome", "bytes", "response", "query_id", "dest_port", "src_mac", "category", "activity", "user", "event_code", "protocol", "query_flags" ]
+  },
+  "netflow-connection" : {
+    "description" : "A new Netflow connection was detected.",
+    "category" : "Network",
+    "subcategory" : "Activity",
+    "required" : [ "dest", "host", "src_port", "dest_port", "src", "time" ],
+    "extended" : [ "protocol" ],
+    "informational" : [ "bytes_in", "time_end", "event_name", "outcome", "direction", "dest_interface", "end_reason", "bytes", "src_interface", "time_start", "bytes_out", "packets", "user", "event_code" ]
+  },
+  "account-password-reset" : {
+    "description" : "An administrator reset a user's password. NOTE: Tied to Windows events 4724 or 628.",
+    "category" : "Account",
+    "subcategory" : "Management",
+    "required" : [ "time", "host", "user", "target_user" ],
+    "extended" : [ "target_domain", "dest_host" ],
+    "informational" : [ "target_user_sid", "domain", "event_name", "outcome", "dest_ip", "src", "user_sid", "account", "logon_id", "event_code" ]
+  },
+  "network-alert" : {
+    "description" : "Suspicious activity in the network was detected and reported by a network security product, such as an IDS or IPS.",
+    "category" : "Alerts",
+    "subcategory" : "Network",
+    "required" : [ "dest", "host", "alert_name", "src", "time" ],
+    "extended" : [ "process", "dest_port", "user" ],
+    "informational" : [ "process_name", "alert_severity", "alert_id", "domain", "additional_info", "src_port", "alert_type", "event_name", "outcome", "bytes", "policy", "event_code", "protocol" ]
+  },
+  "file-permission-change" : {
+    "description" : "A user has changed the permissions for a file and/or folder.",
+    "category" : "File",
+    "subcategory" : "Activity",
+    "required" : [ "dest", "file_name", "host", "accesses", "time", "user" ],
+    "extended" : [ "file_ext", "src", "file_parent" ],
+    "informational" : [ "src_file_dir", "process_name", "process", "domain", "event_name", "object", "bytes", "src_file_name", "file_path", "app", "file_type", "activity", "event_code", "protocol" ]
+  },
+  "dlp-alert" : {
+    "description" : "An alert was reported by a DLP product running on the endpoints.",
+    "category" : "Data",
+    "subcategory" : "Alert",
+    "required" : [ "host", "alert_name", "src", "time" ],
+    "extended" : [ "process_name", "top_domain", "alert_severity", "dest", "process", "alert_type", "user", "protocol" ],
+    "informational" : [ "device_id", "alert_id", "file_name", "domain", "additional_info", "event_name", "outcome", "target", "event_code" ]
+  },
+  "dlp-email-alert-in-failed" : {
+    "description" : "An inbound email activity failure. For example, if there is an email server error.",
+    "category" : "Email",
+    "subcategory" : "Activity",
+    "required" : [ "time", "host", "sender", "recipient" ],
+    "extended" : [ ],
+    "informational" : [ "dest", "subject", "return_path", "recipients", "alert_name", "event_name", "outcome", "direction", "user_email", "bytes", "message_id", "external_domain", "src", "num_recipients", "external_address", "attachments", "user", "event_code" ]
+  },
+  "remote-logon" : {
+    "description" : "A remote, interactive logon occurred. NOTE: Tied to Windows events 4624 with logon type 10 or 11. Also tied to Unix SSH login events.",
+    "category" : "Account",
+    "subcategory" : "Login",
+    "required" : [ "dest", "host", "src", "time", "user" ],
+    "extended" : [ "process", "ticket_options", "domain", "ticket_encryption_type", "logon_type", "auth_package", "badge_id", "account", "event_code" ],
+    "informational" : [ "process_name", "event_name", "service_name", "logon_id" ]
+  },
+  "vpn-logout" : {
+    "description" : "A user logged off remote access VPN.",
+    "category" : "VPN",
+    "subcategory" : "Login",
+    "required" : [ "time", "host", "user" ],
+    "extended" : [ "dest", "file_name", "alert_name", "service_name", "object", "bytes", "external_domain", "session_duration", "num_pages", "bytes_out", "safe_value" ],
+    "informational" : [ "bytes_in", "session_id", "domain", "os", "event_name", "src_translated_ip", "reason", "src", "realm", "account", "event_code" ]
+  },
+  "computer-logon" : {
+    "description" : "A non-interactive computer logon occurred. This event type is also used for dhcp events",
+    "category" : "Endpoint",
+    "subcategory" : "Activity",
+    "required" : [ "dest", "host", "time", "user" ],
+    "extended" : [ ],
+    "informational" : [ "process_name", "domain", "event_name", "src", "account", "event_code" ]
+  },
+  "failed-app-login" : {
+    "description" : "A user failed to log in to an application.",
+    "category" : "Account",
+    "subcategory" : "Activity",
+    "required" : [ "failure_reason", "host", "app", "time", "user" ],
+    "extended" : [ "src_ip" ],
+    "informational" : [ "dest", "browser", "src_host", "os", "event_name", "outcome", "user_agent", "event_code" ]
+  },
+  "task-created" : {
+    "description" : "A user created a new scheduled task. NOTE: Tied to Windows event 4698.",
+    "category" : "Endpoint",
+    "subcategory" : "Activity",
+    "required" : [ "dest", "host", "task_name", "time", "user" ],
+    "extended" : [ "process_name", "process" ],
+    "informational" : [ "account_domain", "description", "domain", "run_level", "event_name", "process_directory", "src", "account_name", "event_code" ]
+  },
+  "physical-access" : {
+    "description" : "A user successfully opened a door, gate, or other entrance using their badge.",
+    "category" : "Physical Security",
+    "subcategory" : "Activity",
+    "required" : [ "time", "host", "badge_id", "location_door" ],
+    "extended" : [ "location_city", "location_building", "user" ],
+    "informational" : [ "first_name", "employee_id", "dest", "event_name", "outcome", "direction", "last_name", "src", "event_code" ]
+  },
+  "privileged-access" : {
+    "description" : "A user obtained special privileges. For example, if a regular user who does not have administrator privileges attempts to elevate their own privileges to have administrator privileges. NOTE: Tied to events indicating privileged access or service, such as Windows events 4672, 4673, 576, and 577.",
+    "category" : "Account",
+    "subcategory" : "Activity",
+    "required" : [ "dest", "host", "privileges", "time", "user" ],
+    "extended" : [ "process_name", "process", "src", "event_code" ],
+    "informational" : [ "object_server", "domain", "event_name", "debug_privilege", "environment_privilege", "process_directory", "object", "tcb_privilege", "ownership_privilege", "logon_id" ]
+  },
+  "app-activity-failed" : {
+    "description" : "A user successfully logged in to an app but failed to perform an action in the app.",
+    "category" : "Application",
+    "subcategory" : "Activity",
+    "required" : [ "host", "outcome", "app", "time", "activity", "user" ],
+    "extended" : [ "src_ip" ],
+    "informational" : [ "dest", "failure_reason", "src_host", "result", "additional_info", "event_name", "user_agent", "object", "resource", "event_code" ]
+  },
+  "file-write" : {
+    "description" : "A file was created, edited, or moved.",
+    "category" : "File",
+    "subcategory" : "Write",
+    "required" : [ "dest", "file_name", "host", "time", "user" ],
+    "extended" : [ "src_file_dir", "file_ext", "process", "accesses", "src", "src_file_name", "file_path", "file_parent" ],
+    "informational" : [ "process_name", "domain", "event_name", "object", "bytes", "app", "file_type", "activity", "event_code", "protocol" ]
+  },
+  "dlp-email-alert-out" : {
+    "description" : "Outgoing email activity reported by an email monitoring tool.",
+    "category" : "Email",
+    "subcategory" : "Activity",
+    "required" : [ "time", "host", "sender", "recipient" ],
+    "extended" : [ "file_ext", "alert_id", "subject", "file_name", "dest_ip", "bytes", "external_domain", "num_recipients", "external_address", "user" ],
+    "informational" : [ "return_path", "recipients", "alert_name", "event_name", "outcome", "direction", "user_email", "dest_host", "message_id", "src", "attachments", "event_code" ]
+  },
+  "database-alert" : {
+    "description" : "Abnormal activity in the database was detected either by Exabeam or by a third-party monitoring tool.",
+    "category" : "Database",
+    "subcategory" : "Security Alerts",
+    "required" : [ "host", "alert_name", "db_user", "database_name", "time", "user" ],
+    "extended" : [ "dest", "response_size", "process", "src" ],
+    "informational" : [ "process_name", "alert_severity", "table_name", "malware_url", "alert_id", "server_group", "domain", "additional_info", "alert_type", "event_name", "db_operation", "service_name", "app", "account", "database_object", "event_code" ]
+  },
+  "vpn-connection" : {
+    "description" : "Generic VPN network traffic",
+    "category" : "Network",
+    "subcategory" : "VPN",
+    "required" : [ "src", "dest", "time", "host" ],
+    "extended" : [ ],
+    "informational" : [ "user", "src_port", "src_translated_ip", "dest_port", "dest_translated_ip", "src_translated_port", "dest_translated_port", "bytes_in", "bytes_out", "session_duration", "action", "session_id" ]
+  },
+  "database-delete" : {
+    "description" : "One or more records were deleted from the database",
+    "category" : "Database",
+    "subcategory" : "",
+    "required" : [ "host", "time", "user", "database_name" ],
+    "extended" : [ ],
+    "informational" : [ "domain", "db_user", "app", "db_operation", "db_query", "service_name", "server_group", "src", "dest", "response_size", "database_object", "database_schema" ]
+  },
+  "share-access-denied" : {
+    "description" : "Access to a network share was denied",
+    "category" : "File",
+    "subcategory" : "Activity",
+    "required" : [ "dest", "host", "share_name", "time", "user" ],
+    "extended" : [ ],
+    "informational" : [ "src_port", "file_path", "event_code", "file_name", "domain", "event_name", "outcome", "accesses", "src", "share_path", "file_type", "logon_id" ]
+  },
+  "database-update" : {
+    "description" : "A non-specific change to the database system",
+    "category" : "Database",
+    "subcategory" : "",
+    "required" : [ "host", "time", "user", "database_name", "db_operation" ],
+    "extended" : [ ],
+    "informational" : [ "domain", "db_user", "app", "db_query", "service_name", "server_group", "src", "dest", "response_size", "database_object", "database_schema" ]
+  },
+  "account-password-change-failed" : {
+    "description" : "A user attempted to change their account password but failed",
+    "category" : "Account",
+    "subcategory" : "Activity",
+    "required" : [ "time", "host", "user", "target_user" ],
+    "extended" : [ ],
+    "informational" : [ "failure_reason", "domain", "event_name", "outcome", "dest", "src", "user_sid", "logon_id", "event_code", "target_domain" ]
+  },
+  "authentication-attempt" : {
+    "description" : "An authentication whose outcome could not be determined was attempted",
+    "category" : "Account",
+    "subcategory" : "Activity",
+    "required" : [ "dest", "host", "time", "user" ],
+    "extended" : [ ],
+    "informational" : [ "browser", "src", "domain", "os", "event_name", "outcome", "user_agent", "auth_method", "app", "realm", "event_code" ]
+  },
+  "database-activity-failed" : {
+    "description" : "A database query was issued and then failed",
+    "category" : "Database",
+    "subcategory" : "Activity",
+    "required" : [ "host", "db_operation", "db_user", "database_name", "time", "user" ],
+    "extended" : [ ],
+    "informational" : [ "process_name", "dest", "table_name", "session_id", "server_group", "process", "domain", "additional_info", "database_schema", "event_name", "failure_reason", "service_name", "src", "app", "account", "database_object", "event_code", "protocol" ]
+  },
+  "usb-activity" : {
+    "description" : "Unspecified USB activity",
+    "category" : "Endpoint",
+    "subcategory" : "Usb",
+    "required" : [ "dest", "device_id", "host", "time", "user", "activity" ],
+    "extended" : [ ],
+    "informational" : [ "process_name", "process", "activity_details", "domain", "os", "event_name", "device_type", "bytes", "src", "file_path", "event_code" ]
+  },
+  "webconference-login" : {
+     "description" : "Web conference application login", 
+     "category" : "Application",
+     "subcategory" : "Login",
+     "required" : ["user_email", "src_ip", "app"],
+     "extended" : [ ], 
+     "informational": ["client_type", "app_version"]
+  },
+  "webconference-operations-activity" : {
+     "description" : "Web conference application operations",
+     "category" : "Application",
+     "subcategory" : "Activity",
+     "required" : ["user_email", "app", "activity", "object_type"],
+     "extended" : [ ],
+     "informational": ["additional_info", "object"]
+  },
+  "web-meeting-created" : {
+     "description" : "Web conference meeting created",
+     "category" : "Application",
+     "subcategory" : "Activity",
+     "required" : ["user", "has_password", "enforce_login", "join_before_host", "waiting_room"],
+     "extended" : [ ],
+     "informational": ["meeting_number", "meeting_topic", "meeting_type", "meeting_duration", "meeting_timezone"]
+  },
+  "web-meeting-updated" : {
+     "description" : "Web conference meeting updated",
+     "category" : "Application",
+     "subcategory" : "Activity",
+     "required" : ["user", "meeting_id", "type", "start_time", "has_password", "enforce_login", "join_before_host", "waiting_room"],
+     "extended" : [ ],
+     "informational": ["meeting_numer"]
+  },
+  "web-meeting-started" : {
+     "description" : "Web conference meeting started",
+     "category" : "Application",
+     "subcategory" : "Activity",
+     "required" : ["meeting_host_id"],
+     "extended" : [ ],
+     "informational": ["meeting_number", "meeting_topic", "meeting_type", "meeting_timezone"]
+  },
+  "web-meeting-participant-joined" : {
+     "description" : "Web conference meeting participant joined",
+     "category" : "Application",
+     "subcategory" : "Activity",
+     "required" : ["meeting_host_id", "participant_name", "participant_id"],
+     "extended" : [ ],
+     "informational": ["meeting_topic", "meeting_number", "meeting_type", "meeting_timezone"]
+  },
+  "web-meeting-ended" : {
+     "description" : "Web conference meeting ended",
+     "category" : "Application",
+     "subcategory" : "Activity",
+     "required" : ["meeting_host_id"],
+     "extended" : [ ],
+     "informational": ["meeting_topic", "meeting_number", "meeting_type", "meeting_duration", "meeting_timezone"]
+  },
+  "cloud-admin-activity" : {
+     "description" : "Administrative activity against cloud services",
+     "category" : "Cloud",
+     "subcategory" : "Admin",
+     "required" : ["user","service","activity"],
+     "extended" : [ ],
+     "informational" : ["src_ip","user_agent", "role", "policy","account"]
+  },
+  "cloud-admin-activity-failed" : {
+     "description" : "Failed administrative activity against cloud services",
+     "category" : "Cloud",
+     "subcategory" : "Admin",
+     "required" : ["user","service","activity", "failure_reason"],
+     "extended" : [ ],
+     "informational" : ["src_ip","user_agent", "role", "policy","account"]
+  },
+  "storage-activity" : {
+     "description" : "Activity against cloud storage services",
+     "category" : "Cloud",
+     "subcategory" : "Storage",
+     "required" : ["user","service","activity"],
+     "extended" : ["bucket"],
+     "informational" : ["src_ip","user_agent", "role", "policy","account"]
+  },
+  "storage-activity-failed" : {
+     "description" : "Failed activity against cloud storage services",
+     "category" : "Cloud",
+     "subcategory" : "Storage",
+     "required" : ["user","service","activity", "failure_reason"],
+     "extended" : ["bucket"],
+     "informational" : ["src_ip","user_agent", "role", "policy","account"]
+  },
+  "storage-access" : {
+     "description" : "Object access activity from a cloud storage bucket",
+     "category" : "Cloud",
+     "subcategory" : "Storage",
+     "required" : ["user","service","activity", "bucket","file_name"],
+     "extended" : [ ],
+     "informational" : ["src_ip","user_agent"]
+  }
+}
