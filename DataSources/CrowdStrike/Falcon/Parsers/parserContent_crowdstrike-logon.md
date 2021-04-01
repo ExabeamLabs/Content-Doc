@@ -17,7 +17,7 @@ Name = crowdstrike-logon
       """"timestamp":"({time}\d+)""",
       """"LogonType":"({logon_type}\d+)""",
       """"UserName":"((?i)system|({user}[^"]+))""",
-      """"LogonServer":"({dest_host}[^"]+)"""
+      """"LogonServer":"({auth_server}[^"]+)"""
       """"UserName":"({dest_host}[^"$]+)\$""",
       """"UserPrincipal":"({user_email}[^"]+)""",
       """"UserSid":"({user_sid}[^"]+)""",

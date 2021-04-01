@@ -11,6 +11,7 @@ Name = pan-alert
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
     """\d\d:\d\d:\d\d\s({host}[\w.-]+)\s""",
+    """THREAT,([^,]+,){2}({time}\d\d\d\d\/\d\d\/\d\d \d\d:\d\d:\d\d)""",
     """THREAT,({alert_type}[^,]+),[^,]+,({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+Z),({src_ip}[^,]*?),({dest_ip}[^,]*?),([^,]*?,)""",
     """,THREAT,([^,]*?,){9}(?:\w+\\+)?({user}[^,]+)""",
     """,THREAT,([^,]*,){8}(({user_email}[^@,]+@[^\.,]+\.[^,]+)|(({domain}[^\\,]+)\\)?({user}[^,]+)),""",
