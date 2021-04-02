@@ -12,7 +12,7 @@ Name = bluecoat-proxy-v2
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}[\w.-]+)""",
     """\tcs-userdn=(?:-|(({domain}[^\\\t]+)\\)?({user}[^\s\t]+))""",
-    """\Ws-ip="?(-|({host}[^"|]+))("|\||$|\t|\s+[\w\-\(\)]+=)"""
+    """\Ws-ip="?(-|({host}[^"|]+))("|\||$|\t|\s+[\w\-\(\)]+=)""",
     """\Ws-computername="?(-|({host}[^"|]))("|\||$|\t|\s+[\w\-\(\)]+=)""",
     """date="?({time}\d\d\d\d-\d\d-\d\d"?(,|\t|\s)time="?\d\d:\d\d:\d\d)""",
     """\Wdevicetime=\[({time}\d+\/\d+\/\d+:\s*\d+:\d+:\d+ [^\]]+)""",
@@ -29,7 +29,7 @@ Name = bluecoat-proxy-v2
     """\W(sc|rs)-bytes="?(-|({bytes_out}\d+))\s*("|\||$|\t|\s+[\w\-\(\)]+=)""",
     """\Wcs-bytes="?(-|({bytes_in}\d+))\s*("|\||$|\t|\s+[\w\-\(\)]+=)""",
     """\Wcs-uri-scheme="?(-|({protocol}[^"|]+))\s*("|\||$|\t|\s+[\w\-\(\)]+=)""",
-    """\Wcs-host="?(-|({web_domain}[^"+]))\s*("|\||$|\t|\s+[\w\-\(\)]+=)""",
+    """\Wcs-host="?(-|({web_domain}[^"|]+))\s*("|\||$|\t|\s+[\w\-\(\)]+=)""",
     """\Wcs-uri="?(-|({full_url}[^"|]+))\s*(?:"|\||$|\t|\s+[\w\-\(\)]+=)""",
     """\Wcs-uri-path="?(\/|-|({uri_path}[^"|]+))\s*("|\||$|\t|\s+[\w\-\(\)]+=)""",
     """\Wcs-uri-query="?(-|({uri_query}[^"|]+))\s*("|\||$|\t|\s+[\w\-\(\)]+=)""",
@@ -38,7 +38,7 @@ Name = bluecoat-proxy-v2
     """\Wcs\(User-Agent\)="?(-|({user_agent}[^"|]+))\s*("|\||$|\t|\s+[\w\-\(\)]+=)""",
     """\W(sc-)?filter-result="?(-|({action}[^"|]+))\s*("|\||$|\t|\s+[\w\-\(\)]+=)""",
     """\W(sc-)?filter-category="?((?i)none|-|({category}[^"|]+))\s*("|\||$|\t|\s+[\w\-\(\)]+=)""",
-    """\Wcs-categories="?((?i)none|-|({category}[^"|]+))"?\s*("|\||$|\t|;|\s+[\w\-\(\)]+=)"""
+    """\Wcs-categories="?((?i)none|-|({category}[^"|]+))"?\s*("|\||$|\t|;|\s+[\w\-\(\)]+=)""",
     """\Wcs-categories="?((?i)none|-|({categories}[^"|]+))"?\s*("|\||$|\t|\s+[\w\-\(\)]+=)""",
     """\Wcs\(User-Agent\)="?(-|({browser}[\w\-]+))""",
     """\Wcs\(User-Agent\)="?(-|({browser}[\w\-]+)\/[\d\._]+)""",
@@ -47,7 +47,7 @@ Name = bluecoat-proxy-v2
     """\Wcs\(User-Agent\)="?(-|Mozilla\/[^=]+\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]+Gecko\/\d+\s+({browser}\w+))""",
     """\Wcs-usr-agent="?(-|Mozilla\/[^=]+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
     """\Wcs-host="?([^"=]+?)({top_domain}(?!(?:\d+\.){3}\d+)[^\.\s\t]+(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)\s*("|\||$|\t|\s+[\w\-\(\)]+=)""",
-    """\Wcs\(Referer\)"?=("?-"?|"?({referrer}[^"\|\t]+?)"?)\s*("|\||$|\t|\s+[\w\-\(\)]+=)""",
+    """\Wcs\(Referer\)"?=("?-"?|"?({referrer}[^"\|\t]+?)"?)\s*("|\||$|\t|\s+[\w\-\(\)]+=)"""
   ]
 }
 ```

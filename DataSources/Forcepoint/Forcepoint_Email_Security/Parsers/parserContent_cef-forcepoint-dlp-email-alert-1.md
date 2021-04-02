@@ -3,21 +3,24 @@
 {
 Name = cef-forcepoint-dlp-email-alert-1
   Vendor = Forcepoint
-  Product = Forcepoint DLP
+  Product = Forcepoint Email Security
   Lms = ArcSight
   DataType = "dlp-email-alert"
   TimeFormat = "epoch"
-  Conditions = [ """CEF:""", """|Forcepoint|Email Security|""" ]
+  Conditions = [ """CEF:""", """|Forcepoint|Email Security|""", """msg=""" ]
   Fields = [
+    """\Wmsg=({subject}[^=]+?)\s+\w+=""",
     """\Wmsg=\[({subject}[^\]]+)""",
     """\Win=({bytes}\d+)""",
     """\Wrt=({time}\d+)""",
     """\WtrueSrc=({src_ip}[a-fA-F\d.:]+)""",
     """\Wdvc=({host}[a-fA-F\d.:]+)""",
-    """\Wdvchost=(|({host}.+?))(\s+\w+=|\s*$)""",
-    """\WmessageId=(|({alert_id}.+?))(\s+\w+=|\s*$)""",
+    """\Wdvchost=({host}[^\s]+)""",
+    """\WmessageId=({alert_id}[^\s]+)""",
     """\|Forcepoint\|Email Security\|[^\|]*\|({alert_name}[^\|]*)\|({alert_type}[^\|]*)\|({alert_severity}[^\|]*)\|""",
-    """\Wfrom=\s*([^<]+<)?(<)?({sender}[^@=>]+?@({external_domain_sender}[^@=>]+?))(>)?(\s+\w+=|\s*$)"""
+    """from=({sender}[^@]+?@({external_domain_sender}[^\s]+?))(\s|\s*$)""",
+    """\Wfrom=\s*([^<]+<)?(<)?({sender}[^@=>]+?@({external_domain_sender}[^@=>]+?))(>)?(\s+\w+=|\s*$)""",
+    """to=({recipient}[^@]+?@({external_domain_recipient}[^\s]+?))(\s|\s*$)""",
     """\Wto=\s*([^<]+<)?(<)?({recipient}[^@=>]+?@({external_domain_recipient}[^@=>]+?))(>)?(\s+\w+=|\s*$)"""
   ]
 }
