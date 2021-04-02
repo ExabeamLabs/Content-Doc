@@ -8,9 +8,11 @@ Name = q-unix-dhcp-1
   DataType = "dhcp"
   TimeFormat = "epoch"
   Conditions = [ """dhcpd""", """,Renewed,""" ]
-  Fields = [ """\sexabeam_endTime=({time}\d+)""",
+  Fields = [ 
+    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+    """\sexabeam_endTime=({time}\d+)""",
     """\s({host}[^\s]+)\s+dhcpd""",
-    """({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),Renewed,({dest_host}[^,]+)"""
+    """({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),Renewed,(|({dest_host}[^,]+))"""
   ]
   DupFields = [ "dest_host->user" ]
 }

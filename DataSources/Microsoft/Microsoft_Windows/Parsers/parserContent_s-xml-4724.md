@@ -7,9 +7,10 @@ Name = s-xml-4724
   Lms = Splunk
   DataType = "windows-password-reset"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ "<EventID>4724</EventID>", "<Data Name='TargetSid'>"]
-  Fields = [ """SystemTime=\'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """<Computer>({host}[^<]+)</Computer>""",
+  Conditions = [ """<EventID>4724</EventID>""", """<Data Name='TargetSid'>""" ]
+  Fields = [ 
+    """SystemTime=\'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
+    """<Computer>({host}({dest_host}[\w-]+)[^<]*)</Computer>""",
     """<EventID>({event_code}[^<]+)</EventID>""",
     """<Data Name='TargetSid'>(?:NONE_MAPPED|({target_user_sid}[^<]+))</Data>""",
     """<Data Name='TargetUserName'>(?=\w)({target_user}[^<]+)</Data>""",
@@ -19,8 +20,7 @@ Name = s-xml-4724
     """<Data Name='SubjectDomainName'>(?=\w)({domain}[^<]+)</Data>""",
     """<Data Name='SubjectLogonId'>(?=\w)({logon_id}[^<]+)</Data>""",
     """<Keyword>({outcome}[^<]+?)<\/Keyword>""",
-    """({event_name}An attempt was made to reset an account's password)""",
+    """({event_name}An attempt was made to reset an account's password)"""
   ]
-  DupFields = [ "host->dest_host" ]
 }
 ```
