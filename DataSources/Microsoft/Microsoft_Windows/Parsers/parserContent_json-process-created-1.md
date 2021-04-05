@@ -10,6 +10,7 @@ Name = json-process-created-1
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = [ ""","EventID":4688,""", """A new process has been created""" ]
     Fields = [
+      """"EventTime":({time}\d+)""",
       """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """"Account":"(({domain}[^"]+?)[\\\/]+)?({user}[^"\\\/]+)"""",
       """({event_code}4688)""",
@@ -18,8 +19,8 @@ Name = json-process-created-1
       """"CommandLine":"\s*({command_line}[^"]+)""",
       """"NewProcessId":"({process_guid}[^"]+)""",
       """"NewProcessName":"({process}({directory}[^"]*?[\\\/]+)?({process_name}[^"\\\/]+))"""",
-      """"SubjectLogonId":"({login_id}[^"]+)""",
-      """"SubjectUserName":"(-|SYSTEM|({user}[^"]+?))""""
+      """"SubjectLogonId":"({logon_id}[^"]+)""",
+      """"SubjectUserName":"(-|SYSTEM|({user}[^"]+?))"""",
       """"SubjectDomainName":"(-|({domain}[^"]+?))""""
     ]
     DupFields = [ "host->dest_host", "directory->process_directory" ]

@@ -10,8 +10,8 @@ Name = l-pan-scan-alert
   Conditions = [ """,THREAT,scan,""" ]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """\s\d\d:\d\d:\d\d\s({host}[\w.-]+)\s""",
     """THREAT,([^,]*,){27}(("[^"]*")|[^,]*),([^,]*,){27}({host}[\w\-\.]+)(,|$)""",
+    """:\d\d:\d\d\s+({host}[\w.-]+)\s""",
     """({time}\d\d\d\d\/\d\d\/\d\d \d\d:\d\d:\d\d),[^,]*,THREAT,({alert_type}[^,]+),([^,]*,){2}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),""",
     """,THREAT,([^,]*,){9}(({domain}[^\\,]+)\\+)?({user}[^\\,]+)""",
     """,THREAT,([^,]*,){8}(({domain}[^\\,]+)\\+)?({user}[^\\,]+)""",

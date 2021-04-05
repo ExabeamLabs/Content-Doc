@@ -25,6 +25,7 @@ json-windows-events-1 = {
   Lms = Splunk
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
+    """exabeam_host=({host}[\w.\-]+)""",
     """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]+\sSkyformation""",
     """"+created"+:"+({time}[^"]+)""",
     """requestClientApplication=({app}[^=]+?)\s\w+=""",
