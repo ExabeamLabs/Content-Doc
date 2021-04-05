@@ -37,7 +37,9 @@ Name = cef-zscaler-dlp-alert
     """\soutcome=({result_code}\d+)""",
     """\sreason=({alert_name}.+?)\s*(\w+=|$)""",
     """\srequestClientApplication=(?:-|Mozilla\/.+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?([uU]nknown|({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)))""",
+    """({alert_severity}\d+)\|act="""
   ]
+  DupFields = ["alert_name->alert_type"]
     SOAR {
       IncidentType = "dlp"
       DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "user->dlpUser", "alert_name->dlpPolicy", "protocol->dlpProtocol", "src_ip->dlpDeviceName", "outcome->dlpActionTaken"]

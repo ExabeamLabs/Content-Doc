@@ -12,6 +12,7 @@ Name = json-5140
       """({event_name}A network share object was accessed)""",
       """({event_code}5140)""",
       """"Hostname":"({host}[^"]+)"""",
+      """"EventTime":({time}\d+)""",
       """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """"SubjectUserSid":"({user_sid}[^"]+)"""",
       """"SubjectUserName":"({user}[^"]+)"""",

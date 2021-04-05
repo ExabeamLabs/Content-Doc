@@ -10,6 +10,7 @@ Name = json-4770
   Conditions = [ "4770", """"A Kerberos service ticket was renewed.""", """"TicketEncryptionType""" ]
   Fields = [
     """({event_name}A Kerberos service ticket was renewed)""",
+    """"EventTime":\s*({time}\d+)""",
     """"TimeGenerated":"({time}[^"]*)""",
     """"+created"+:"+({time}[^"]+)""",
     """"EventTime":\s*"({time}\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})"""",

@@ -10,14 +10,14 @@ Name = syslog-juniper-vpn-realm-1
   Conditions = [ "Host Checker policy ", " passed on host " ]
   Fields = [
     """passed on host '({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s+PulseSecure:\s+({time}\d\d\d\d\-\d\d-\d\d \d\d:\d\d:\d\d)\s+(\S+\s+){3}\[\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\]\s+({user}[^\s\(\)]+)\((?:unknown|({realm}[^)]+))\)""",
+    """({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s+PulseSecure:((\s\S+){3}\s|\s+)({time}\d\d\d\d\-\d\d-\d\d \d\d:\d\d:\d\d)\s+(\S+\s+){3}\[\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\]\s+({user}[^\s\(\)]+)\((|unknown|({realm}[^)]+))\)""",
     """for user '({user}[^']+)'""",
     """\stime="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\suser=({user}[^\s].*?)(\s+\w+=|\s*$)""",
     """\srealm="({realm}[^"]+)""",
     """\ssrc=({src_ip}[a-fA-F\d.:]+)""",
     """\sdstip=({dest_ip}[a-fA-F\d.:]+)""",
-    """({host}(?!\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})[\w.\-]+) PulseSecure:""",
+    """({host}[\w.\-]+) PulseSecure:""",
     """\sfw=({firewall}[a-fA-F\d.:]+)""",
     """\svpn=({vpn}[^=]+?)(\s+\w+=|\s*$)""",
     """\sroles="({roles}[^"]+)""",
