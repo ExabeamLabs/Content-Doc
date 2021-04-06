@@ -10,7 +10,7 @@ Name = crowdstrike-logon
     Conditions = [ """"event_simpleName":"UserLogon"""", """"aid"""" ]
     Fields = [
       """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-      """"aip":"({host}[^"]+)""",
+      """"aip":"({aip}[^"]+)""",
       """suser=((?i)system|({user}[^\s]+))""",
       """suid=({sid}[^\s]+)""", 
       """"AuthenticationPackage":"({auth_package}[^"]+)""",
@@ -19,6 +19,7 @@ Name = crowdstrike-logon
       """"UserName":"((?i)system|({user}[^"]+))""",
       """"LogonServer":"({auth_server}[^"]+)"""
       """"UserName":"({dest_host}[^"$]+)\$""",
+      """"ClientComputerName\\?"+:\\?"+(-|({dest_host}[^"\\]+))""",
       """"UserPrincipal":"({user_email}[^"]+)""",
       """"UserSid":"({user_sid}[^"]+)""",
       """"aid":"({aid}[^"]+)""",
