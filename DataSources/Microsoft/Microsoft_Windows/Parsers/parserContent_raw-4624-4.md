@@ -10,7 +10,7 @@ Name = raw-4624-4
     Conditions = ["An account was successfully logged on", "Account Name", "TimeGenerated:"]
     Fields = [
       """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
-      """<\d+>\s*\w+\s+\d+\s+\d+:\d+:\d+\s+({host}[\w.\-]+)""",
+      """(?i)<\d+>\s*\w+\s+\d+\s+\d+:\d+:\d+\s+(am|pm|({host}[\w.\-]+))""",
       """({event_name}An account was successfully logged on)""",
       """TimeGenerated:\s*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """(?i)(((audit|success)( |_)(success|audit)))\s*(\s|\t|,|#\d+|<[^>]+>)\s*({host}[^=]+?)\s*(\s|\t|,|#\d+|<[^>]+>)\s*""",

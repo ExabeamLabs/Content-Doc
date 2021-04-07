@@ -22,7 +22,7 @@ Name = raw-4724
       """(::ffff:)?({host}[^\/\s]+)\/Microsoft-Windows-Security-Auditing""",
       """Computer(\w+)?["\s]*(:|=)\s*"?(::ffff:)?({host}[^"\s]+?)("|\s)""",
       """Computer : (::ffff:)?({host}[\w\-]+)""",
-      """\w+\s*\d+\s\d+:\d+:\d+\s+(::ffff:)?(10\.\.0\.01|({host}[\w\-.]+))"""
+      """(?i)\w+\s*\d+\s\d+:\d+:\d+\s+(::ffff:)?(10\.\.0\.01|am|pm|({host}[\w\-.]+))""",
       """Subject:[^=]+?Security ID:\s+(NT AUTHORITY\\SYSTEM|({user_sid}[^:]+?))\s+Account Name:""",
       """\s*Source Address:\s*(?:-|(::ffff:)?({src_ip}[^\s]+))\s*Source Port:""",
       """Subject:[^=]+?Account Name:\s+({user}[^:]+?)\s+Account Domain:\s+((?i)NT AUTHORITY|({domain}[^:]+?))\s+Logon ID""",

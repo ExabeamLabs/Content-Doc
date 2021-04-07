@@ -29,7 +29,7 @@ Name = u-mcafee-epo-alert
       """<TargetFileName>({malware_url}[^=]*?[\\\/]*\s*({malware_file_name}[^\s\\\/<][^\\\/<]*?))\\?<""",
       """<AnalyzerDetectionMethod>({additional_info}[^<]+)""",
       """<OSName>({os}[^<]+)""",
-      """<ThreatActionTaken>(none|([^\._<]+[\.|_])*({outcome}[^<]+))<""",
+      """<ThreatActionTaken>(none|([^\._<]+[\.|_]){0,256}({outcome}[^<]+))<""",
       """<AnalyzerName>(N\/A|({event_name}[^<]+))""",
       """<TaskName>({task_name}[^<]+)""",
       """<TargetPath>({process}({process_directory}[^<]*?)\s*(({process_name}[^\s<\\\/][^<\\\/]*?)?))<""",

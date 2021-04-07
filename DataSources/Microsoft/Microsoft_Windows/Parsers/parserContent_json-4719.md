@@ -19,7 +19,7 @@ Name = json-4719
     """Category:(?:\\t|\\n|\\r|\s)*({audit_category}[^:]+?)(?:\\t|\\n|\\r|\s)*Subcategory:"""
     """Subcategory:(?:\\t|\\n|\\r|\s)*({subcategory}[^:]+?)(?:\\t|\\n|\\r|\s)*Subcategory GUID:""",
     """Changes:(?:\\t)*({policy}[^"]+)""",
-    """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]+))"""
+    """(?i)\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(am|pm|({dest_host}[\w\-.]+)))"""
   ]
   DupFields = [ "host->dest_host" ]
 }

@@ -10,9 +10,12 @@ Name = raw-7045
   Conditions = [ """7045""", """A service was installed in the system.""" ]
   Fields = [
     """({event_name}A service was installed in the system)""",
+    """ComputerName=({host}[\w-.]+)\s""",
     """({host}\S+)\sEvntSLog""",
+    """({time}\d\d\/\d\d\/\d\d\d\d\s+\d\d:\d\d:\d\d\s+(?i)(AM|PM))""",
     """\]\s+\w{3}\s({time}\w{3}\s\d+\s\d\d:\d\d:\d\d\s\d\d\d\d)""",
     """({event_code}7045)""",
+    """User=({user}[^\s]+)""",
     """\w{3}\s\w{3}\s\d\d\s\d\d:\d\d:\d\d\s\d\d\d\d:\s({domain}[^\\]+)\\(\\)?({user}[^\/]+)""",
     """Service Name:\s+({service_name}.+?)\s+Service File Name:""",
     """Service File Name:\s+(|-|({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/\s]+)))\s+Service Type:""",

@@ -9,12 +9,12 @@ Name = raw-5156
   TimeFormat = "MMM dd HH:mm:ss yyyy"
   Conditions = [ """5156""", """The Windows Filtering Platform has permitted a connection""" ]
   Fields = [
-    """Microsoft-Windows-Security-Auditing.*?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)\s+(::ffff:)?({host}[\w.\-]+)""",
-    """\w+ \d+ \d\d:\d\d:\d\d (::ffff:)?({host}[\w\-.]+)""",
+    """Microsoft-Windows-Security-Auditing.*?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)\s+(::ffff:)?(am|AM|pm|PM|({host}[\w.\-]+))""",
+    """(?i)\w+ \d+ \d\d:\d\d:\d\d (::ffff:)?(am|pm|({host}[\w\-.]+))""",
     """\WComputer\\*=(::ffff:)?({host}[\w\-.]+)""",
     """\WComputerName:\s*(::ffff:)?({host}[\w\-.]+)""",
     """({time}\w+ \d\d \d\d:\d\d:\d\d \d\d\d\d)\s+""",
-    """\w+\s*\d+\s*\d+:\d+:\d+\s(::ffff:)?({host}[\w\-.]+)"""
+    """(?i)\w+\s*\d+\s*\d+:\d+:\d+\s(::ffff:)?(am|pm|({host}[\w\-.]+))""",
     """({event_code}5156)""",
     """({event_name}The Windows Filtering Platform has permitted a connection)""",
     """Process ID:\s*({pid}\d+)""",

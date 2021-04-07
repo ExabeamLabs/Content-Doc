@@ -16,7 +16,7 @@ Name = raw-4625
       """({time}\d+\/\d+\/\d+\s+\d+:\d+:\d+\s+(am|AM|pm|PM))""",
       """Audit\s(::ffff:)?({host}[\w\-.]+)\s+""",
       """({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+)""",
-      """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?({host}[\w\-.]+)""",
+      """(?i)\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(am|pm|({host}[\w\-.]+))""",
       """Subject(:|=).+?Account Name(:|=)\s*(-|({caller_user}[^\s@]+?))[\s;]*Account Domain(:|=)""",
       """Subject(:|=).+?Account Domain(:|=)\s*(-|({caller_domain}[^:;]+?))[\s;]*Logon ID(:|=)""",
       """Logon Type(:|=)\s*({logon_type}[\d]+)""",
@@ -30,7 +30,7 @@ Name = raw-4625
       """Logon Process(:|=)\s*({auth_process}[^\s;]+)[\s;]*Authentication Package(:|=)""",
       """Authentication Package(:|=)\s*({auth_package}.+?)[\s;]*Transited Services(:|=)""",
       """\s({event_code}4625)\s""",
-      """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]+))"""
+      """(?i)\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(am|pm|({dest_host}[\w\-.]+)))"""
     ]
     DupFields = ["host->dest_host","src_host_windows->src_host"]
   }

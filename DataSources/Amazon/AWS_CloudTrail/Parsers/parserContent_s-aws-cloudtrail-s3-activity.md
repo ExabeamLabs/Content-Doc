@@ -14,7 +14,7 @@ Name = s-aws-cloudtrail-s3-activity
          """"+eventSource"+\s*:\s*"+?(|({host}[^"].+?))"+\s*[,\]\}]""",
          """"userIdentity"[^@]+?"+invokedBy"+\s*:\s*"+?(|({dest_host}[^"].+?))"+\s*[,\]\}]""",
          """"+eventName"+\s*:\s*"+?(|({activity}[^"].+?))"+\s*[,\]\}]""",
-         """"userIdentity"[^@]+?"+arn"+\s*:\s*"+?(|arn:aws:sts::\d+:([^"]+\/)+({identity}(?!\-\d+)[^\/]+?))"+\s*[,\]\}]""",
+         """"userIdentity"[^@]+?"+arn"+\s*:\s*"+?(|arn:aws:sts::\d+:([^"]+\/){1,256}({identity}(?!\-\d+)[^\/]{1,256}?))"+\s*[,\]\}]""",
          """"userIdentity[^@]+?type":"({identity_type}[^"]+)""",
          """"sessionIssuer[^@]+?type":"({user_type}[^"]+)""",
          """"sessionIssuer[^@]+?arn":".+?\/({user}[^"]+)"""

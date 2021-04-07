@@ -13,7 +13,7 @@ Name = s-aws-cloudtrail-iam
      """"+sourceIPAddress"+\s*:\s*"+?(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[^"].+?))"+\s*[,\]\}]""",
      """"+eventSource"+\s*:\s*"+?(|({host}[^"].+?))"+\s*[,\]\}]""",
      """"+eventName"+\s*:\s*"+?(|({activity}[^"].+?))"+\s*[,\]\}]""",
-     """"userIdentity"[^@]+?"+arn"+\s*:\s*"+?(|arn:aws:sts::\d+:([^"]+\/)+({identity}(?!\-\d+)[^\/]+?))"+\s*[,\]\}]""",
+     """"userIdentity"[^@]+?"+arn"+\s*:\s*"+?(|arn:aws:sts::\d+:([^"]+\/){1,256}({identity}(?!\-\d+)[^\/]{1,256}?))"+\s*[,\]\}]""",
      """"userIdentity[^@]+?type":"({identity_type}[^"]+)""",
      """"sessionIssuer[^@]+?type":"({user_type}[^"]+)""",
      """"sessionIssuer[^@]+?arn":".+?\/({user}[^"]+)"""
