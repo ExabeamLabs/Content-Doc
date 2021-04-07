@@ -19,7 +19,7 @@ Name = raw-4673-1
     """Logon ID:\s*({logon_id}[^:]+?)\s*Service:""",
     """Server:\s*({object_server}[^:]+?)\s*Service Name:""",
     """Privileges:\s*({privileges}[^$]+?)(\s*$|\s+\d+|\"|,|;)""",
-    """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]+))"""
+    """(?i)\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(am|pm|({dest_host}[\w\-.]+)))"""
   ]
   DupFields = ["directory->process_directory"]
 }

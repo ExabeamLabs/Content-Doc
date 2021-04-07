@@ -11,7 +11,7 @@ Name = raw-4624-9
     Fields = [
       """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
       """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """<\d+>\s*\w+\s+\d+\s+\d+:\d+:\d+\s+({host}[\w.\-]+)""",
+      """(?i)<\d+>\s*\w+\s+\d+\s+\d+:\d+:\d+\s+(am|pm|({host}[\w.\-]+i))""",
       """({event_name}An account was successfully logged on)""",
       """({event_code}4624)""",
       """Logon Type=\s*({logon_type}[\d]+)""",

@@ -12,7 +12,7 @@ Name = raw-4624
       """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
       """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
       """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """<\d+>\s*\w+\s+\d+\s+\d+:\d+:\d+\s+({host}[\w.\-]+)""",
+      """(?i)<\d+>\s*\w+\s+\d+\s+\d+:\d+:\d+\s+(am|pm|({host}[\w.\-]+))""",
       """({event_name}An account was successfully logged on)""",
       """({event_code}4624)""",
       """Logon Type:\s*({logon_type}[\d]+)""",

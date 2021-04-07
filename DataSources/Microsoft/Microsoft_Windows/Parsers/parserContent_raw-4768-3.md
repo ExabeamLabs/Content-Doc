@@ -6,9 +6,11 @@ Name = raw-4768-3
     Product = Microsoft Windows
     Lms = Direct
     DataType = "windows-4768"
-    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
+    TimeFormat = "MM/dd/yyyy HH:mm:ss a"
     Conditions = ["A Kerberos authentication ticket (TGT) was requested", "Account Name", "Computer"]
     Fields = [
+      """ComputerName=({host}[\w-.]+)""",
+      """({time}\d\d\/\d\d\/\d\d\d\d\s+\d\d:\d\d:\d\d\s+(?i)(AM|PM))""",
       """({event_name}A Kerberos authentication ticket \(TGT\) was requested)""",
       """({event_code}4768)""",
       """Account Name(:|=)\s*({user}[^@;\s]+?)(?:@.+?)?[\s;]*Supplied Realm Name""",

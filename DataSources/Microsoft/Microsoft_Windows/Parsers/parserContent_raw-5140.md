@@ -21,7 +21,7 @@ Name = raw-5140
       """<TimeCreated SystemTime='({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d)""",
       """\sTimeGenerated=({time}\d+)""",
       """({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+)""",
-      """\w+\s*\d+\s\d+:\d+:\d+\s+(::ffff:)?({host}[\w\-.]+)""",
+      """(?i)\w+\s*\d+\s\d+:\d+:\d+\s+(::ffff:)?(am|pm|({host}[\w\-.]+))""",
       """Logon ID:\s*((\\)[rnt])*({logon_id}\S+?)((\\)[rnt])*\s*Network Information:""",
       """Account Name:\s*((\\)[rnt])*({user}\S+?)((\\)[rnt])*\s*Account Domain:""",
       """Account Domain:\s*((\\)[rnt])*({domain}\S+?)((\\)[rnt])*\s*Logon ID:""",
@@ -30,7 +30,7 @@ Name = raw-5140
       """({accesses}Read)""",
       """Share Name:\s*((\\)[rnt])*(?:\\\\\*\\)?({share_name}.+?)((\\)[rnt])*\s*Share Path:""",
       """Share Path:\s*((\\)[rnt])*(?:\\+\?+)?(?:\s*|({share_path}(({d_parent}.+?)\\)?(|({d_name}[^\\]+?)))\\?)((\\)[rnt])*\s*Access Request Information:""",
-      """\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]+))"""
+      """(?i)\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(am|pm|({dest_host}[\w\-.]+)))"""
     ]
     DupFields = ["host->dest_host"]
   }
