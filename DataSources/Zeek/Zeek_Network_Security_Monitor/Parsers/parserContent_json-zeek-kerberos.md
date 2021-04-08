@@ -16,7 +16,7 @@ Name = json-zeek-kerberos
 }
 json-zeek-activity = {
   Vendor = Zeek
-  Product = Bro
+  Product = Zeek Network Security Monitor
   Lms = Splunk
   TimeFormat = "epoch"
   Fields = [
