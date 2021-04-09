@@ -13,7 +13,7 @@ Name = raw-4800
     """({time}\w{3}\s\d{2}\s\d{2}:\d{2}:\d{2}\s\d{4})""",
     """(Mon|Tue|Wed|Thu|Fri|Sat|Sun) ({time}\w+ \d+ \d+:\d+:\d+ \d+)""",
     """(?i)(((audit|success)( |_)(success|audit))|information)(<\d+>|\s+)({host}[\w\-.]+)""",
-    """Microsoft-Windows-Security-Auditing.*?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)\s+({host}[\w.\-]+)""",
+    """Microsoft-Windows-Security-Auditing.*?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)\s+(am|AM|pm|PM|({host}[\w.\-]+))""",
     """({event_code}4800)""",
     """Account Name:\s*({user}.+?)\s*Account Domain""",
     """Account Domain:\s*({domain}.+?)\s*Logon ID""",
