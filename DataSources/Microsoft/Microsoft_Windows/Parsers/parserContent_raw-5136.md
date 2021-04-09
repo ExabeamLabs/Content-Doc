@@ -16,7 +16,7 @@ Name = raw-5136
     """__li_source_path="*({host}[^"]+)"""",
     """<Computer>({host}[^<]+)</Computer>""",
     """Computer(Name)?\s*\\*"?(=|:|>)\s*"*({host}[\w\.-]+)(\s|,|"|</Computer>|$)""",
-    """Microsoft-Windows-Security-Auditing.*?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)\s+({host}[\w.\-]+)""",
+    """Microsoft-Windows-Security-Auditing.*?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)\s+(am|AM|pm|PM|({host}[\w.\-]+))""",
     """\WTimeGenerated=({time}\d+)""", 
     """({event_code}5136)""",
     """Subject:.+?Account Name:\s+(SYSTEM|({user}.+?))\s+Account Domain:\s+({domain}.+?)\s+Logon ID:\s+({logon_id}[^\s]+)""",
