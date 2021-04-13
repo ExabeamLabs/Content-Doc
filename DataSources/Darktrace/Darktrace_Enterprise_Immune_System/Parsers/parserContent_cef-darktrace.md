@@ -9,15 +9,18 @@ Name = cef-darktrace
    TimeFormat = "epoch"
    Conditions = [ "CEF:","|Darktrace|DCIP|" ]
    Fields = [
+      """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+      """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
       """exabeam_EventTime=({time}\d+)""",
       """\sdst=({dest_ip}[^\s]*)\sdvchost""",
-      """\d{3}\|({alert_type}[^\/]*)\/""",
+      """\|\d+\|({alert_type}[^\/]*)\/""",
       """\/({alert_name}[^\|]*)\|\d""",
-      """\sdvc=({src_ip}[^\s]*)\s""",
+      """\sdvc=(0.0.0.0|({src_ip}[^\s]*))\s""",
       """\d{2}\s({host}[^\s]*)\s<""",
-      """\|externalId=({alert_id}\d{6})\s""",
-      """\sdvchost=({src_host}[^\s]*)\s""",
-      """\|({alert_severity}\d{1})\|external"""
+      """\|externalId=({alert_id}\d+)\s""",
+      """\|Darktrace\|DCIP\|[^\|]+\|({category_id}\d+)\|""",
+      """\sdvchost=(|({src_host}[^\s]*))\s""",
+      """\|({alert_severity}\d+)\|external"""
       ]
  }
 ```
