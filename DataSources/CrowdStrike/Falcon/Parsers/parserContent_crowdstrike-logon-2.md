@@ -7,7 +7,7 @@ Name = crowdstrike-logon-2
   Fields = ${CrowdStrikeParserTemplates.crowdstrike-auth-activity.Fields} [
     """"LogonType\\*"+:\\*"+({logon_type}\d+)""",
     """"LogonDomain\\*"+:\\*"+({domain}[^"\\]+)""",
-    """"ClientComputerName\\*"+:\\*"+({dest_host}[^"\\]+)""",
+    """"ClientComputerName\\*"+:\\*"+(-|({dest_host}[^"\\,]+))"""
   ]
 }
 crowdstrike-auth-activity = {

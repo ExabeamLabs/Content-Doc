@@ -19,7 +19,7 @@ Name = crowdstrike-logon
       """"UserName":"((?i)system|({user}[^"]+))""",
       """"LogonServer":"({auth_server}[^"]+)"""
       """"UserName":"({dest_host}[^"$]+)\$""",
-      """"ClientComputerName\\?"+:\\?"+(-|({dest_host}[^"\\]+))""",
+      """"ClientComputerName\\?"+:\\?"+(-|({dest_host}[^"\\,]+))""",
       """"UserPrincipal":"({user_email}[^"]+)""",
       """"UserSid":"({user_sid}[^"]+)""",
       """"aid":"({aid}[^"]+)""",
