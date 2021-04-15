@@ -40,18 +40,6 @@ Name = raw-process-created
       """"SubjectAccount":"(({domain}[^\\\s"]+)\\+)?({user}[^\\\s"]+)""",
       """"SubjectLogonId":"({logon_id}[^"]+)""",
       """"NewProcessId":"({process_guid}[^"]+)""",
-      """Command\s*Line(:|=)\s*(?:config)\s+({service_name}\S+)""",
-      """binPath=\s*({service_command_line}(?:\"(.+)\")|(?:(\S+)))\s*""",
-      """Command\s*Line(:|=).*\s+({parameter_sct}\S+\.sct)""",
-      """Command\s*Line(:|=).*\s+"({parameter_sct}.+\.sct)"""",
-      """Command\s*Line(:|=).*\s+({parameter_hta}\S+\.hta)""",
-      """Command\s*Line(:|=).*\s+"({parameter_hta}.+\.hta)"""",
-      """Command\s*Line(:|=).*\s+({parameter_xml}\S+\.xml)""",
-      """Command\s*Line(:|=).*\s+\s+"({parameter_xml}.+\.xml)"""",
-      """Command\s*Line(:|=).*\s+({parameter_csproj}\S+\.csproj)""",
-      """Command\s*Line(:|=).*\s+"({parameter_csproj}.+\.csproj)"""",
-      """Command\s*Line(:|=).+?\/u\s*["\s]({parameter_exe}.+?\.exe)""",
-      """Command\s*Line(:|=).+?\/u\s*["\s]({parameter_dll}.+?\.dll)"""
 
     ]
    DupFields = [ "host->dest_host","process_guid->pid","directory->process_directory" ]

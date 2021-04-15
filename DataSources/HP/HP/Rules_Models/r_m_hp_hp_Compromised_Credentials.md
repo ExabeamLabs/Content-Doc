@@ -1,0 +1,12 @@
+Vendor: HP
+==========
+### Product: [HP](../ds_hp_hp.md)
+### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
+
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   6   |   3    |     2      |      2      |    2    |
+
+| Event Type  | Rules                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Models                                                                                                                                               |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| local-logon | <b>T1078 - Valid Accounts</b><br> ↳ <b>AE-UA-F</b>: First activity type for user<br> ↳ <b>AS-PV-UHWoPC</b>: Access to Password Vault managed asset with no password checkout for user<br> ↳ <b>AL-F-MultiWs</b>: Multiple workstations in a single session<br> ↳ <b>NEW-USER-F</b>: User with no event history<br> ↳ <b>DC18-new</b>: Account switch by new user<br><br><b>T1078.003 - Valid Accounts: Local Accounts</b><br> ↳ <b>LL-GH-A-new</b>: Abnormal local logon to asset for group by new user |  • <b>LL-GH</b>: Local logon hosts (peer groups)<br> • <b>AS-PV-OA</b>: Password retrieval based accounts<br> • <b>AE-UA</b>: All activity for users |

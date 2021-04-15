@@ -6,10 +6,9 @@ Product: Barracuda Email Security Gateway
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      1      |    1    |
 
-|                                    Use-Case                                    | Event Types/Parsers                                                                       | MITRE TTP                  | Content                                                                                                               |
-|:------------------------------------------------------------------------------:| ----------------------------------------------------------------------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-|    [Disabled Account Abuse](../../../UseCases/uc_disabled_account_abuse.md)    |  dlp-email-alert-in<br> ↳ [barracuda-email](Parsers/parserContent_barracuda-email.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_barracuda_barracuda_email_security_gateway_Disabled_Account_Abuse.md)    |
-| [Disabled Account Activity](../../../UseCases/uc_disabled_account_activity.md) |  dlp-email-alert-in<br> ↳ [barracuda-email](Parsers/parserContent_barracuda-email.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_barracuda_barracuda_email_security_gateway_Disabled_Account_Activity.md) |
+|                                  Use-Case                                  | Event Types/Parsers                                                                       | MITRE TTP                  | Content                                                                                                             |
+|:--------------------------------------------------------------------------:| ----------------------------------------------------------------------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  dlp-email-alert-in<br> ↳ [barracuda-email](Parsers/parserContent_barracuda-email.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_barracuda_barracuda_email_security_gateway_Compromised_Credentials.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

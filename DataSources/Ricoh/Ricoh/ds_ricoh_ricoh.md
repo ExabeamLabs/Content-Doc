@@ -6,9 +6,9 @@ Product: Ricoh
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      1      |    1    |
 
-|                                Use-Case                                | Event Types/Parsers                                                                                           | MITRE TTP                                     | Content                                                                            |
-|:----------------------------------------------------------------------:| ------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | ---------------------------------------------------------------------------------- |
-| [Data Leak via Printer](../../../UseCases/uc_data_leak_via_printer.md) |  print-activity<br> ↳ [syslog-ricoh-print-activity](Parsers/parserContent_syslog-ricoh-print-activity.md)<br> | T1052 - Exfiltration Over Physical Medium<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_ricoh_ricoh_Data_Leak_via_Printer.md) |
+|                           Use-Case                           | Event Types/Parsers                                                                                           | MITRE TTP                                     | Content                                                                       |
+|:------------------------------------------------------------:| ------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | ----------------------------------------------------------------------------- |
+| [Lateral Movement](../../../UseCases/uc_lateral_movement.md) |  print-activity<br> ↳ [syslog-ricoh-print-activity](Parsers/parserContent_syslog-ricoh-print-activity.md)<br> | T1052 - Exfiltration Over Physical Medium<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_ricoh_ricoh_Lateral_Movement.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

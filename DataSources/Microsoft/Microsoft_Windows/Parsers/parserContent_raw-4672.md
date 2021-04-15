@@ -10,7 +10,6 @@ Name = raw-4672
     Conditions = ["""Special privileges assigned to new logon""", """Privileges"""]
     Fields = [
       """exabeam_host=(::ffff:)?([^=]+?@\s*)?({host}[\w.-]+)""",
-      """\d\d:\d\d:\d\d(\+|-)\d\d:\d\d ({host}[^\s]+)""",
       """<\d+>(?i)\w+\s*\d+\s*\d+:\d+:\d+\s+(am\s+|pm\s+)?(::ffff:)?({host}[\w\-.]+)\s"""
       """<\d+>(?i)\w+\s*\d+\s*\d+:\d+:\d+\s+(am\s+|pm\s+)?(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]+))\s"""
       """"host":"(::ffff:)?({host}[^"]+)""""
@@ -29,9 +28,7 @@ Name = raw-4672
       """({event_code}4672)""",
       """Account Name(:|=)\s*(-|SYSTEM|({user}[^\s]+?))[\s;]*Account Domain(:|=)""",
       """Account Domain(:|=)\s*(-|({domain}[^\s]+?))[\s;]*Logon ID(:|=)""",
-      """\s*Logon ID(:|=)\s*({logon_id}[^=]+?)[\s;]*Privileges(:|=)\s*({privileges}.+?)(<|\s*User:|\s+\d+|,|\s*"|;|\s*$|\s*\(EventID)""",
-      """sourceip="({src_ip}[a-fA-F\d:.]+)"""",
-      """EVENT_TYPE="({outcome}[^"]+)""""
+      """\s*Logon ID(:|=)\s*({logon_id}[^=]+?)[\s;]*Privileges(:|=)\s*({privileges}.+?)(<|\s*User:|\s+\d+|,|\s*"|;|\s*$)"""
     ]
     DupFields = ["host->dest_host"]
   }
