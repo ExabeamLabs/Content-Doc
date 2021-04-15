@@ -1,0 +1,13 @@
+Vendor: Microsoft
+=================
+### Product: [Microsoft Office 365](../ds_microsoft_microsoft_office_365.md)
+### Use-Case: [System Account Activity](../../../../UseCases/uc_system_account_activity.md)
+
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   5   |   3    |     2      |     27      |   27    |
+
+| Event Type      | Rules                                                                                                                                                                                                                                                                                                                                                                                   | Models                                                                                                                                                                   |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| member-added    | <b>T1098 - Account Manipulation</b><br> ↳ <b>GM-DhU-system-F</b>: First group management by system account on asset<br> ↳ <b>AM-DhU-system-F</b>: First account management by system account on asset                                                                                                                                                                                   |  • <b>A-AM-DhU-system</b>: System accounts performing account management activities<br> • <b>A-GM-DhU-system</b>: System accounts performing group management activities |
+| process-created | <b>T1047 - Windows Management Instrumentation</b><b>T1098 - Account Manipulation</b><br> ↳ <b>EXE-RENAME-ORG-F</b>: First time WMIC.exe has been used to rename a user account by this user.<br> ↳ <b>RENAME-GRP-ORG-F</b>: First time WMIC.exe has been used to rename a group by this user.<br> ↳ <b>EXE-RENAME-ORG-A</b>: Abnormal usage of WMIC.exe to rename a group by this user. |  • <b>WMIC-EXE-RENAME-ORG</b>: Using WMIC.exe to rename a user account                                                                                                   |

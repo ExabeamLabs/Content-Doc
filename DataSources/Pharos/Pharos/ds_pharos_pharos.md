@@ -6,9 +6,9 @@ Product: Pharos
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      1      |    1    |
 
-|                           Use-Case                           | Event Types/Parsers                                                                                   | MITRE TTP                                     | Content                                                                         |
-|:------------------------------------------------------------:| ----------------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------------------------- |
-| [Lateral Movement](../../../UseCases/uc_lateral_movement.md) |  print-activity<br> ↳ [s-pharos-print-activity](Parsers/parserContent_s-pharos-print-activity.md)<br> | T1052 - Exfiltration Over Physical Medium<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_pharos_pharos_Lateral_Movement.md) |
+|                                Use-Case                                | Event Types/Parsers                                                                                   | MITRE TTP                                     | Content                                                                              |
+|:----------------------------------------------------------------------:| ----------------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------------------------------ |
+| [Data Leak via Printer](../../../UseCases/uc_data_leak_via_printer.md) |  print-activity<br> ↳ [s-pharos-print-activity](Parsers/parserContent_s-pharos-print-activity.md)<br> | T1052 - Exfiltration Over Physical Medium<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_pharos_pharos_Data_Leak_via_Printer.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

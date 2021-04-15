@@ -1,0 +1,8 @@
+
+Use Case: Remote Workforce
+==========================
+
+### Vendor: Zoom
+|                     Product                      | Event Types                                                                                                                                                                                                                               | MITRE TTP                                                                                                            | Content                                                                                                                        |
+|:------------------------------------------------:| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| [Zoom](../DataSources/Zoom/Zoom/ds_zoom_zoom.md) | <ul><li>web-meeting-created</li><li>web-meeting-ended</li><li>web-meeting-participant-joined</li><li>web-meeting-started</li><li>web-meeting-updated</li><li>webconference-login</li><li>webconference-operations-activity</li></li></ul> | T1078.004 - Valid Accounts: Cloud Accounts<br>T1090.003 - Proxy: Multi-hop Proxy<br>T1098 - Account Manipulation<br> | [<ul><li>8 Rules</li></ul><ul><li>4 Models</li></ul>](../DataSources/Zoom/Zoom/Rules_Models/r_m_zoom_zoom_Remote_Workforce.md) |
