@@ -11,7 +11,7 @@ Name = crowdstrike-user-identity
     Fields = [
       """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
       """"timestamp":\s*"({time}\d+)""",
-      """"UserPrincipal":\s*"(?:[^"@]+@)?({domain}[^"]+)""",
+      """"UserPrincipal":\s*"(?:[^"@]+@)?({dest_host}[^"]+)""",
       """"aid":\s*"({aid}[^"]+)""",
       """"event_simpleName":\s*"({event_code}[^"]+)""",
       """"LogonType":\s*"({logon_type}\d+)""",

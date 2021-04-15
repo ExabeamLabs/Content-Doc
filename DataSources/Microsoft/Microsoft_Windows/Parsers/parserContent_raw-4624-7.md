@@ -12,7 +12,7 @@ Name = raw-4624-7
       """({event_name}An account was successfully logged on)""",
       """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
-      """Computer(Name)?="?({host}[^\s"]+)""",
+      """Computer(Name)?=({host}[^\s]+)""",
       """({event_code}4624)""",
       """Logon Type(:|=)\s*({logon_type}[\d]+)""",
       """New Logon[^"]*?Account Name(:|=)\s*(-|SYSTEM|({user}[^\s]+))""",

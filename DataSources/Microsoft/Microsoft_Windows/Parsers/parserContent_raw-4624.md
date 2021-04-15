@@ -12,7 +12,6 @@ Name = raw-4624
       """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
       """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
       """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """\d\d:\d\d:\d\d(\+|-)\d\d:\d\d\s({host}[^\s]+)""",
       """(?i)<\d+>\s*\w+\s+\d+\s+\d+:\d+:\d+\s+(am|pm|({host}[\w.\-]+))""",
       """({event_name}An account was successfully logged on)""",
       """({event_code}4624)""",
@@ -24,7 +23,7 @@ Name = raw-4624
       """Source Network Address:\s*(?:-|({src_ip}[\w:.]+))[\s;]*Source Port""",
       """Logon Process:\s*({auth_process}[^\s;]+)[\s;]*Authentication Package:\s*({auth_package}[^\s;]+)""",
       """Logon ID:\s*({logon_id}[^\s;]+)[\s;]*(Linked Logon|Logon GUID)""",
-      """New Logon:[\s;]*Security ID:\s*({user_sid}[^;:]+?)(\s+|;)Account Name:""",
+      """New Logon:[\s;]*Security ID:\s*({user_sid}[^\s;]+)(\s|;)""",
     ]
     DupFields = ["directory->process_directory"]
   }

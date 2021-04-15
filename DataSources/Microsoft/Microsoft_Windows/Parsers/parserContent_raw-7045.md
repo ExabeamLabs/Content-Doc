@@ -19,13 +19,9 @@ Name = raw-7045
     """\w{3}\s\w{3}\s\d\d\s\d\d:\d\d:\d\d\s\d\d\d\d:\s({domain}[^\\]+)\\(\\)?({user}[^\/]+)""",
     """Service Name:\s+({service_name}.+?)\s+Service File Name:""",
     """Service File Name:\s+(|-|({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/\s]+)))\s+Service Type:""",
-    """Service File Name:\s*((?:[^";]+)?[\\\/;])?({process_name}[^\\\/";]+?\.[^\\\/\.;"]+?)\s.*?\s*Service Type:""",
     """Service Type:\s+({service_type}.+?)\s+Service Start Type:""",
-    """Service Account:\s+({account_name}[^"\\]+)""",
-    """ComputerName(:|=)\s*({host}[\w.-]+)""",
-    """TimeStamp:\s*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """User:\s*({user}.+?)\s*\w+:"""
+    """Service Account:\s+({account_name}[^"\\]+)"""
   ]
-  DupFields = [ "host->dest_host", "directory->process_directory", "command_line->service_command_line"]
+  DupFields = [ "host->dest_host", "directory->process_directory" ]
 }
 ```
