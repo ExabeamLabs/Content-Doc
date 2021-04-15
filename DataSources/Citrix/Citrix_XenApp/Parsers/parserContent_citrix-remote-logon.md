@@ -11,7 +11,7 @@ Name = citrix-remote-logon
   Fields = [
     """"starttime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)"""",
     """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
-    """"username":"(({user_email}[^@"]+@[^\."]+\.[^"]+)|(({domain}[^\\"]+)\\+)?({user}[^"]+))",""",
+    """"username":"(({user_email}[^@"]+@[^\."]+\.[^"]+)|(({domain}[^\\"]+)\\+)?({user}[^"]+))"""",
     """({event_name}admin-action)""",
     """"text":"({additional_info}[^"]+)",""",
     """"adminaccountname":"(({account_domain}[^\\"]+)\\+)?({account_name}[^"]+)","""

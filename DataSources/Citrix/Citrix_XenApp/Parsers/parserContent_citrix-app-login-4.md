@@ -10,7 +10,7 @@ Name = citrix-app-login-4
   Conditions = [ """"event":"application-start"""", """"system":"Citrix-XenApp"""", """"servername":"""", """"clientname":"""" ]
   Fields = [
     """"startdate":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)"""",
-    """"username":"(({user_email}[^@"]+@[^\."]+\.[^"]+)|(({domain}[^\\"]+)\\+)?({user}[^"]+))",""",
+    """"username":"(({user_email}[^@"]+@[^\."]+\.[^"]+)|(({domain}[^\\"]+)\\+)?({user}[^"]+))"""",
     """({event_name}application-start)""",
     """"servername":"({host}[^"]+)"""",
     """"clientaddress":"(0.0.0.0|({src_ip}[a-fA-F:\d.]+))"""",

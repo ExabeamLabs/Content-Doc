@@ -20,6 +20,10 @@ defender-atp-events = {
       """"AccountName":"({user}[^"]+)"""",
       """"AccountDomain":"({domain}[^"]+)"""",
       """"InitiatingProcessFileName":"({process_name}[^"]+)"""",
+      """"category":"({event_name}[^"]+)"""",
+      """"ActionType":"({outcome}[^"]+)"""",
+      """"RemoteIP":"({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
+      """"Protocol":"({protocol}[^"]+)""""
     ]
 
 ```

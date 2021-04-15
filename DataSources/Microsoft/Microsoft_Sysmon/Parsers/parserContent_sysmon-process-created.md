@@ -8,7 +8,7 @@ Name = sysmon-process-created
   DataType = "process-created"
   IsHVF = true
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ """Microsoft-Windows-Sysmon""", """Process Create:""" ]
+  Conditions = [ """Microsoft-Windows-Sysmon""", """Process Create:""", """Event ID: 1""" ]
   Fields = [ """UtcTime:\s*({time}\d\d\d\d\-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\sComputer(?:Name)?\s*=\s*"?({host}[^\s"]+)""",
     """Message\s*=\s*"?({activity_type}[^:]+)""",
@@ -24,7 +24,22 @@ Name = sysmon-process-created
     """CommandLine:\s*({command_line}.+?)\s*CurrentDirectory:""",
     """\s+Image:\s*({process}({directory}(?:(\w+:)?[^:]+)?[\\\/])?({process_name}.+?))\s+CommandLine:""",
     """\s+Image:\s*({process}({directory}(?:(\w+:)?[^:]+)?[\\\/])?({process_name}.+?))\s+FileVersion:""",
-    """\s+ParentImage:\s*({parent_process}({parent_directory}(?:(\w+:)?[^:]+)?[\\\/])?({parent_process_name}.+?))\s+ParentCommandLine:"""
+    """\s+ParentImage:\s*({parent_process}({parent_directory}(?:(\w+:)?[^:]+)?[\\\/])?({parent_process_name}.+?))\s+ParentCommandLine:""",
+    """ParentImage:\s*({parent_process}({parent_process_directory}.*?)({parent_process_name}[^.\\]+\.exe))\s*\w+:""",
+    """ParentCommandLine:\s*({parent_command_line}.+)\s*""",
+    """CommandLine:.*\s+config\s+({service_name}\S+)""",
+    """binPath=\s*({service_command_line}(?:\"(.+)\")|(?:(\S+)))\s*CurrentDirectory:""",
+    """CommandLine:.*\s+({parameter_sct}\S+\.sct)""",
+    """CommandLine:.*\s+"({parameter_sct}.+\.sct)"""",
+    """CommandLine:.*\s+({parameter_hta}\S+\.hta)""",
+    """CommandLine:.*\s+"({parameter_hta}.+\.hta)"""",
+    """CommandLine:.*\s+({parameter_xml}\S+\.xml)""",
+    """CommandLine:.*\s+"({parameter_xml}.+\.xml)"""",
+    """CommandLine:.*\s+({parameter_csproj}\S+\.csproj)""",
+    """CommandLine:.*\s+"({parameter_csproj}.+\.csproj)"""",
+    """CommandLine:.+?\/u\s*["\s]({parameter_exe}.+?\.exe)\s+CurrentDirectory:""",
+    """CommandLine:.+?\/u\s*["\s]({parameter_dll}.+?\.dll)\s+CurrentDirectory:"""
+    """IntegrityLevel:\s*({integrity}.+?)\s*\w+:"""
   ]
   DupFields = [ "host->dest_host", "directory->process_directory", "process->path" ]
 }
