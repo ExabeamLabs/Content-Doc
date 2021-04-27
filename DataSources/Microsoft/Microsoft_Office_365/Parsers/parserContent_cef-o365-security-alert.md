@@ -22,31 +22,28 @@ Name = cef-o365-security-alert
     """\ssuser=({user_email}[^@]+@[^\s]+)\s""",
     """"userDisplayName":"({user_fullname}[^"]+?)\s*"""",
     """"userPrincipalName":"({user_email}[^"@\s]+@[^"@\s]+)"""",
-    """msg=({additional_info}[^=]+?)\s+(\w+=|$)""",
+    """msg=({additional_info}.+?)\s+(\w+=|$)""",
     """activity":"({activity}[^"]+)""",
     """"+userAgent"+,"+Value"+:"+({user_agent}[^"]+?)\s*"""",
-    """destinationServiceName=({app}[^=]+?)\s*\w+="""
+    """destinationServiceName=({app}.*?)\s*deviceInboundInterface"""
     """"detectedDateTime":"({time}\d+-\d+-\d+T\d+:\d+:\d+)""",
     """"tokenIssuerType":"({token_issuer_type}[^"]+)""",
     """"+activity":"({action}[^"]+)""",
     """"+additionalInfo":"\[\{\\"+({more_info}[^]]+?)\s*\\"*\}\]""",
-    """flexString1=({activity}[^=]+?)\s*\w+=""",
+    """flexString1=({activity}.+?)\s*\w+=""",
     """"Name":"({alert_name}[^"]+)""",
-    """request=({outcome}[^=]+?)\s*\w+=""",
+    """request=({outcome}.+?)\s*\w+=""",
     """"Severity":"({alert_severity}[^"]+)""",
     """"sev":"({alert_severity}[^"]+)""",
     """"riskLevel":"({alert_severity}[^"]+)""",
     """"AlertType":"({alert_type}[^"]+)""",
     """"tsd\\*"+:\\*"+({sender}[^\\"]+)""",
     """"sip\\*"+:\\*"+({src_ip}[^\\"]+)""",
-    """"ms\\*":\\*"({subject}[^",]+?)\s*"""",
+    """"ms\\*"+:\\*"+({subject}.+?)\s*"+""",
     """"city":"({location_city}[^"]+)""",
     """"countryOrRegion":"({country_code}[^"]+)""",
     """"state":"({location_state}[^"]+)""",
     """"suid":"(anonymous|({user_email}[^@=]+@({email_domain}[^"]+?))|({user}[^"]+))"""",
-    """"PolicyName":"({alert_type}[^"]+)"""",
-    """"RuleName":"({alert_name}[^"]+)"""",
-    """"Id":"({alert_id}[^"]+)""""
   ]
 }
 ```

@@ -7,7 +7,7 @@ Name = crowdstrike-logon-2
   Fields = ${CrowdStrikeParserTemplates.crowdstrike-auth-activity.Fields} [
     """"LogonType\\*"+:\\*"+({logon_type}\d+)""",
     """"LogonDomain\\*"+:\\*"+({domain}[^"\\]+)""",
-    """"ClientComputerName\\*"+:\\*"+(-|({dest_host}[^"\\,]+))"""
+    """"ClientComputerName\\*"+:\\*"+({dest_host}[^"\\]+)""",
   ]
 }
 crowdstrike-auth-activity = {
@@ -28,7 +28,7 @@ crowdstrike-auth-activity = {
     """"CommandLine\\*"+:\\*"+\s*({command_line}.+?)\s*["\\]""",
     """"TargetProcessId\\*"+:\\*"+({pid}[^"\\]+)""",
     """"name\\*"+:\\*"+({name}[^"\\]+)""",
-    """"(ImageFileName|TargetFileName)\\*"+:\\*"+(({file_path}[^"]+))""",
+    """"(ImageFileName|TargetFileName)\\*"+:\\*"+({file_path}[^"]+)""",
     """"(ImageFileName|TargetFileName)\\*"+:\\*"+({file_parent}[^"]*[\\\/]+)({file_name}[^\\\/"]+\.({file_ext}[^\\\/"]+))""",
     """"ConfigStateHash\\*"+:\\*"+({old_hash}[^\\"]+)""",
     """"ContextProcessId\\*"+:\\*"+({process_guid}[^\\"]+)""",

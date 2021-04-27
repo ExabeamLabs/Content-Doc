@@ -11,8 +11,7 @@ Name = crowdstrike-process-created
     Conditions = [ """"event_simpleName":""", """"ProcessRollup2"""" ]
     Fields = [
       """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-      """"aip":\s*"({host}[^"]+)""",
-      """"aip":\s*"({dest_ip}[^"]+)"""
+      """"aip":\s*"({host}[^"]+)"""
       """"timestamp":\s*"({time}\d+)""",
       """"event_simpleName":\s*"({event_code}[^"]+)""",
       """"aid":\s*"({aid}[^"]+)""",
@@ -32,7 +31,6 @@ Name = crowdstrike-process-created
       """"UserSid":\s*"({user_sid}[^"]+)""",
       """log-severity\\=({log_severity}\S+)""",
       """src-account-name":"({account_name}[^"]+)""",
-      """"((?i)SHA256String|SHA256HashData)":"({sha256}[^"]+)""""
     ]
     DupFields = [ "directory->process_directory" ]
   }

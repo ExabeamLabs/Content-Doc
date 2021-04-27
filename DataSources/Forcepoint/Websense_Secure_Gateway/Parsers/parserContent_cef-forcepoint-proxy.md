@@ -45,7 +45,6 @@ Name = cef-forcepoint-proxy
       """\srequestClientApplication=(?:-|Mozilla\/[^=]+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
       """\srequestClientApplication=(?:-|Mozilla\/[^=]+\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]+Gecko\/\d+\s+({browser}\w+))""",
       """suser=(-|({user_lastname}[^,]+),\s({user_firstname}([A-Za-z]+){1}(\s\w){0,1}))\s""",
-      """suser=\w+:\/+([^\s]+)?\s*((CN|OU)\\+=[^,]+,){1,2}DC\\=[^,]+,DC\\=[^\/]+\/({user_fullname}({user_lastname}[^\\]+)\\+,\s*({user_firstname}[^=]+?))\s\w+=""",
       """loginID=(-|({user}[^\s=]+?))\s\w+="""
     ]
   }

@@ -21,7 +21,7 @@ Name = s-crowdstrike-security-alert
     """"CommandLine"+:\s*"+\\*"*({command_line}.+?)\\*\s*"+,""",
     """"SensorId":\s*"({sensor_id}[^"]+)""",
     """"ComputerName":\s*"({src_host}[^"]+)""",
-    """"LocalIP":\s*"({src_ip}[^"]+)""",
+    """"LocalIP":\s*"({src_ip}[^"]+)""", 
     """"ComputerName":\s*"({src_host}[^"]+).*?"LocalAddress":\s*"({src_ip}[^"]+)","LocalPort":\s*({src_port}\d+),"RemoteAddress":\s*"({dest_ip}[^"]+)","RemotePort":\s*({dest_port}\d+),"ConnectionDirection":\s*0""",
     """"ComputerName":\s*"({dest_host}[^"]+).*?"LocalAddress":\s*"({dest_ip}[^"]+)","LocalPort":\s*({dest_port}\d+),"RemoteAddress":\s*"({src_ip}[^"]+)","RemotePort":\s*({src_port}\d+),"ConnectionDirection":\s*1""",
     """"MD5String":\s*"(|({md5}[^"]+))"""",

@@ -28,11 +28,5 @@ Name = fireeye-dlp-email-alert
     """sha256:\s+({sha256}[^\s]+)"""
   ]
   DupFields = ["recipient->user_email"]
-  SOAR {
-    IncidentType = "dlp"
-    DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_type->description", "user_email->dlpUser", "alert_name->dlpPolicy", "alert_severity->sourceSeverity", "outcome->dlpActionTaken","host->dlpDeviceName"]
-    NameTemplate = """FireEye DLP Alert ${alert_name} found"""
-    ProjectName = "SOC"
-    EntityFields = [
-      {EntityType="device", Name="src_address", Fields=["src_ip->ip_address"]}
+}
 ```

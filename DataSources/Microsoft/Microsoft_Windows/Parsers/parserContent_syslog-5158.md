@@ -20,7 +20,7 @@ Name = syslog-5158
     """Source Address:\s*(0\.0\.0\.0|(::ffff:)?({dest_ip}(?!::)[a-fA-F:\d.]+))?.+?\s*Source Port:\s*({dest_port}\d*)""",
     """Protocol:\s*({ms_protocol_num}\d*)""",
     """Layer Name:\s*({layer_name}.*?)\s*Layer Run-Time ID""",
-    """(?i)\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(am|pm|({dest_host}[\w\-.]+)))"""
+    """(?i)\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(am|pm|({dest_host}[\w\-.]+)))""",
   ]
   DupFields = [ "host->dest_host" ]
 }

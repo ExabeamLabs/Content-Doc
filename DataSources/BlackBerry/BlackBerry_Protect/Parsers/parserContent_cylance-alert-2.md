@@ -24,9 +24,7 @@ Name = cylance-alert-2
     """"cylance_score":({alert_severity}[^",]+)""",
     """\WdestinationServiceName=(|({device_name}.+?))(\s+\w+=|\s*$)""",
     """"md5":"({md5}[^"]+)""",
-    """"name":"({file_name}[^"]+)"""",
-    """"sha256":"({file_hash}[^"]+)""""
   ]
-  DupFields = [ "alert_type->alert_name", "file_name->name_at", "file_hash->sha256_at" ]
+  DupFields = [ "alert_type->alert_name" ]
 }
 ```

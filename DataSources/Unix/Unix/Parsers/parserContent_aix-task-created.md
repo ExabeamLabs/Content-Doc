@@ -15,6 +15,7 @@ Name = aix-task-created
     """\(({user}[^\)]+)\) CMD""",
     """\sCMD\s+\(({task_name}[^\s\)]+)""",
     """\sCMD \(\s*({command_line}[^\)]+)\)""",
+    """\sCMD \(\s*[^\/]*?({process}({directory}\/.*?)({process_name}[^\/]*?[^\\]))((\\\\)*\s|\))"""
   ]
 }
 ```

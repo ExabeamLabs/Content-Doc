@@ -20,7 +20,7 @@ Name = crowdstrike-security-alert-6
       """"SeverityName":\s*"({alert_severity}[^"]+?)"""",
       """"FileName":\s*"({file_name}[^"]+?)"""",
       """"FilePath":\s*"({file_path}[^"]+?)\\?"""",
-      """"CommandLine"+:\s*"+\\*"*({command_line}.+?)\\*\s*"+,""",
+      """"CommandLine"+:\s*"+\\*"*({command_line}[^,"]+)\\"""",
       """"CommandLine":\s*"\\"({process}({directory}[^",]+\\\\)?({process_name}[^"\\,]+))\\"""",
       """"LocalIP":\s*"({src_ip}[a-fA-F\d.:]+)""",
       """"RemoteAddress":\s*"({dest_ip}[a-fA-F\d.:]+)""",
@@ -30,31 +30,8 @@ Name = crowdstrike-security-alert-6
       """"LocalAddress":\s*"({src_ip}[^"]+)""",
       """"DetectId"+:\s*"+({alert_id}[^"]+)"""",
       """"MD5String"+:\s*"+({md5}[^"]+)"""",
-      """"SHA256String":\s*"({sha256}[^"]+)""",
-      """"GrandparentImageFileName\\*"+:\s*\\*"+({grandparent_image_filename}[^,]+?)\\*"+,""",
-      """"GrandparentCommandLine\\*"+:\s*\\*"+({grandparent_command_line}[^,]+?)\\*"+,""",
-      """"ParentImageFileName\\*"+:\s*\\*"+({parent_image_filename}[^,]+?)\\*"+,""",
-      """"ParentCommandLine\\*"+:\s*\\*"+({parent_command_line}[^,]+?)"+,""",
-      """"PatternDispositionDescription\\*"+:\s*\\*"+({pattern_disposition_description}[^"]+)""",
-      """"FalconHostLink\\*"+:\s*\\*"+({falcon_host_link}[^"]+)""",
-      """"BootupSafeguardEnabled":\s*({bootup_safeguard_enabled}true|false)""",
-      """"QuarantineFile"+:\s*({quarantine_file}true|false)""",
-      """"QuarantineMachine"+:\s*({quarantine_machine}true|false)""",
-      """"Detect"+:\s*({detect}true|false)""",
-      """"RegistryOperationBlocked"+:\s*({registry_operation_blocked}true|false)""",
-      """"KillParent"+:\s*({kill_parent}true|false)""",
-      """"FsOperationBlocked"+:\s*({fs_operation_blocked}true|false)""",
-      """"OperationBlocked"+:\s*({operation_blocked}true|false)""",
-      """"KillProcess"+:\s*({kill_process}true|false)""",
-      """"ProcessBlocked"+:\s*({process_blocked}true|false)""",
-      """"PolicyDisabled"+:\s*({policy_disabled}true|false)""",
-      """"SensorOnly"+:\s*({sensor_only}true|false)""",
-      """"CriticalProcessDisabled"+:\s*({critical_process_disabled}true|false)""",
-      """"KillSubProcess"+:\s*({kill_sub_process}true|false)""",
-      """"Rooting"+:\s*({rooting}true|false)""",
-      """"InddetMask"+:\s*({inddet_mask}true|false)""",
-      """"Indicator"+:\s*({indicator}true|false)"""
+      """"SHA256String":\s*"({sha256}[^"]+)"""
     ]
-    DupFields = [ "directory->process_directory", "falcon_host_link->additional_info" ]
+    DupFields = [ "directory->process_directory" ]
   }
 ```

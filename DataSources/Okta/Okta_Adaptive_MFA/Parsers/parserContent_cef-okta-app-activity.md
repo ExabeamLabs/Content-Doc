@@ -12,13 +12,14 @@ Name = cef-okta-app-activity
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """"published":"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     """\Wfname=({object}(?![\w\-]{25}).+?)\s+(\w+=|$)""",
-    """\Wmsg=({additional_info}[^=]+?)\s+(\w+=|$)""",
-    """"action":[^}]+?"message":"({additional_info}[^"]+)""",
-    """"action":[^}]+?"objectType":"({activity}[^"]+)""",
+    """\Wmsg=({additional_info}.+?)\s+(\w+=|$)""",
+    """"action":.+?"message":"({additional_info}[^"]+)""",
+    """"action":.+?"objectType":"({activity}[^"]+)""",
     """"(targets|actors)":[^\]]+?"objectType":"User"[^\]\}]+?"displayName":"((?i)Unknown|RSA-OKTA Admin|AD-OKTA Admin|({user_fullname}[^"]+))""",
     """"(targets|actors)":[^\]]+?"displayName":"((?i)Unknown|RSA-OKTA Admin|AD-OKTA Admin|({user_fullname}[^"]+))[^\]\}]+?"objectType":"User"""",
     """(s|d)?user\\*=({user_email}[^\s@,]+@({email_domain}[^\s@,]+))""",
     """(s|d)?user\\*=(anonymous|({user}[^\s@,]+))(\s|\||,)""",
+
     """"(targets|actors)":[^\]]+?"objectType":"User"[^\]\}]+?"login":"({user_email}[^"]+)""",
     """"(targets|actors)":[^\]]+?"login":"({user_email}[^@]+@({email_domain}[^"]+))[^\]\}]+?"objectType":"User"""",
     """"actors":[^\]]+?"objectType":"Client"[^\]\}]+?"displayName":"(UNKNOWN|({browser}[^"]+))""",
@@ -36,9 +37,7 @@ Name = cef-okta-app-activity
     """({app}Okta)""",
     """"id":"({object}[^"]+)"[^\}\]]*"objectType":"AppInstance"""",
     """"objectType":"AppInstance"[^\}\]]*"id":"({object}[^"]+)"""",
-    """requestClientApplication=({app}[^=]+?)\s*\w+=""",
-    """\Wsuid=(anonymous|({user_email}[^@=]+@[^@=]+?)|({user}[^\s=]+?))(\s+\w+=|\s*$)""",
-    """requestUri":\s*"({request_uri}[^"]+?)\s*"""",
+    """requestClientApplication=({app}.+?)\s*\w+="""
   ]
 }
 ```

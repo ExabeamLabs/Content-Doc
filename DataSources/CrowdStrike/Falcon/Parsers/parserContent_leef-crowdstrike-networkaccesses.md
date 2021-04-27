@@ -24,13 +24,13 @@ leef-crowdstrike-alert-t = {
       """\Wdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\WsrcPort=({src_port}\d+)""",
       """\WdstPort=({dest_port}\d+)""",
-      """\Wcat=({category}[^\|]+?)\s*(\||\w+=|$|"+\s*$)""",
+      """\Wcat=({additional_info}.+?)\s*(\||\w+=|$|"+\s*$)""",
       """\Wproto=({protocol}[^\s]+?)\s*(\||\w+=|$|"+\s*$)""",
       """\WfileName=({file_name}.+?)\s*(\||\w+=|$|"+\s*$)""",
       """\Wresource=({src_host}.+?)\s*(\||\w+=|$|"+\s*$)""",
       """\Wsev=({alert_severity}.+?)\s*(\||\w+=|$|"+\s*$)""",
       """CrowdStrike\|([^|]+\|){2}({alert_name}[^|]+)""",
-      """\Wurl=({additional_info}[^\|]+?)\s*(\||\w+=|$|"+\s*$)""",
+      """\Wurl=({alert_id}.+?)\s*(\||\w+=|$|"+\s*$)""",
       """\Wmd5=({md5}[^\s]+?)\s*(\||\w+=|$|"+\s*$)""",
       """({app}FalconHost)"""
     ]

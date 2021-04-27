@@ -16,17 +16,10 @@ Name = s-vontu-dlp-alert
       """\|\spolicy="({alert_name}[^"]+)"""",
       """\|\sseverity="({alert_severity}[^"]+)"""",
       """\|\sprotocol="({alert_type}[^"]+)"""",
-      """\|\incident_type="({alert_type}[^"]+)""",
       """\|\ssender="(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({os}\w+):\/+({domain}[^\/]+)\/({user}[^"]+))"""",
       """\|\sprotocol="({protocol}[^"]+)"""",
-      """\|\srecipient="(((({account}[^@]+)@)?({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))|(N/A|(?i)Unknown|({target}[^"]+)))"""",
-      """\|\sBusiness_Unit="({additional_info}[^"]+)"""",
-      """\|\sRR_Action="({outcome}[^"]+)""",
-      """\|\smatch_count="({match_count}\d+)""",
-      """\|\sfilename="(N/A|({file_path}({file_parent}(?:[^"]+)?[\\\/])?({file_name}[^\\\/"]+?)))\s*"""",
-      """\|\sEP_Machine="({src_host}[^"]+)""",
-      """\|\sEP_IP="({src_ip}[a-fA-F:\d.]+)"""
-
+      """\|\srecipient="(((({account}[^@]+)@)?({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))|({target}[^"]+))"""",
+      """\|\sBusiness_Unit="({additional_info}[^"]+)""""
     ]
     SOAR {
       IncidentType = "dlp"

@@ -16,7 +16,7 @@ Name = okta-app-activity-ad
     """label":\s*"({domain}[^"]+)""",
     """name".*?,\s*"id":\s*"({object}[^"]+)""", 
     """type":\s*"({object_type}[^"]+)""",
-    """members":\s*\[({members}[^\]]+?)\s*(\]|$)"""
+    """members":\s*\[({members}[^\]]+)"""
     """assignedApps":\s*\[(:-?|({assigned_apps}[^\]]+))"""
     """"app":\s\{.*?"name":\s*"({app}[^"]+)"""
 

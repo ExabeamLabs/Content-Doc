@@ -7,7 +7,7 @@ Name = cef-sentinelone-security-alert-6
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
-  Conditions = [ """"classification":"Malware"""", """mitigationReport""", """threatName""", """mitigationStatus""", """maliciousGroupId"""]
+  Conditions = [ """SkyFormation Cloud Apps Security""", """security-threat-detected""", """destinationServiceName=SentinelOne""", ]
   Fields = [
      """exabeam_host=({host}[^\s]+)""",
      """"createdAt":\s*"({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+Z)""",
@@ -17,17 +17,17 @@ Name = cef-sentinelone-security-alert-6
      """"filePath":\s*"({malware_url}[^"]+)""",
      """"agentDomain":\s*"(unknown|({src_domain}[^"]+))""",
      """"agentComputerName":\s*"({src_host}[^"]+)""",
+     """\smsg=({additional_info}.*?)\s+\w+=""",
      """"fileExtensionType":(\s*"None|null|\s*"+(Unknown|({file_type}[^"]+))")""",
+     """outcome=({outcome}[^,*\\\s"*]+)""",
+     """dpriv=({alert_type}\w+)\s+\w+=""",
      """username":"((NT AUTHORITY|({domain}[^\\"]+))\\+)?(SYSTEM|({user}[^"]+))",""",
-     """"rank":({alert_severity}\d+)""",
-     """"mitigationReport":\{"({outcome}[^"]+)"""",
-     """"fileContentHash":"({md5}[^"]+)"""",
+     """dproc=({location}.+?)\s+\w+=""",
+     """cat=({category}.+?)\s+\w+=""",
+     """app=({app}.+?)\s+\w+=""",
+     """fileHash=({md5}.+?)\s\w+=""",
+     """"rank":({alert_severity}\d+)"""
   ]
-   SOAR {
-    IncidentType = "malware"
-    DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->malwareName", "src_host->malwareVictimHost", "alert_type->description", "malware_url->malwareAttackerUrl","file_name->malwareAttackerFile"]
-    NameTemplate = """SentinelOne Alert ${alert_name} found"""
-    ProjectName = "SOC"
-    EntityFields = [
-      {EntityType="device", Name="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]}
+  DupFields = ["file_name->process"]
+}
 ```

@@ -12,7 +12,7 @@ Name = json-zeek_dce_rpc
 }
 json-zeek-activity = {
   Vendor = Zeek
-  Product = Zeek Network Security Monitor
+  Product = Bro
   Lms = Splunk
   TimeFormat = "epoch"
   Fields = [

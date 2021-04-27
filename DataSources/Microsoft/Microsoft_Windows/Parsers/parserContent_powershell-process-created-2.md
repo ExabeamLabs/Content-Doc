@@ -20,12 +20,12 @@ Name = powershell-process-created-2
     """Sid=({user_sid}[\w\-]+)""",
     """<Execution ProcessID='({pid}\d+)""",
     """<Security UserID='({user_sid}[\w\-]+)'/>""",
-    """Context[^@]+?User\s*=\s*(({domain}[^=]+?)[\\\/]+)?(SYSTEM|({user}[^=\/\\]+?))\s*Connected User =""",
-    """Context[^@]+?Host Application\s*=\s*({command_line}.+?)\s*Engine Version =""",
-    """Context[^@]+?Host Application\s*=\s*({process}(({directory}[^\;=]+)[\\\/]+)?({process_name}[^\s\\\/=]+?))\s+""",
-    """Context[^@]+?Command Type\s*=\s*(|({command_type}[^=]+?))\s*Script Name =""",
-    """Context[^@]+?Command Name\s*=\s*(|({command_name}[^=]+?))\s*Command Type =""",
-    """Context[^@]+?Script Name\s*=\s+({script_name}\S[^=]+?)\s+Command Path =""",
+    """Context.+?User\s*=\s*(({domain}[^=]+?)[\\\/]+)?(SYSTEM|({user}[^=\/\\]+?))\s*Connected User =""",
+    """Context.+?Host Application\s*=\s*({command_line}[^=]+?)\s*Engine Version =""",
+    """Context.+?Host Application\s*=\s*({process}(({directory}[^\;=]+)[\\\/]+)?({process_name}[^\s\\\/=]+?))\s+""",
+    """Context.+?Command Type\s*=\s*(|({command_type}[^=]+?))\s*Script Name =""",
+    """Context.+?Command Name\s*=\s*(|({command_name}[^=]+?))\s*Command Type =""",
+    """Context.+?Script Name\s*=\s+({script_name}\S[^=]+?)\s+Command Path =""",
   ]
   DupFields = [ "host->dest_host", "directory->process_directory" ]
 }

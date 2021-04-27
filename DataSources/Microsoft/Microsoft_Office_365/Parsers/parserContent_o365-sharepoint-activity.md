@@ -32,8 +32,8 @@ Name = o365-sharepoint-activity
     """\WfileType=({file_type}[^\s]+)""",
     """\Wsproc=(|({user_email}.+?))(\s+\w+=|\s*$)""",
     """\WfilePermission=(|({permission_type}.+?))(\s+\w+=|\s*$)""",
-    """\Wduser=(|({action_performer}[^=]+?))(\s+\w+=|\s*$)""",
-    """\Wsuser=(|({affected_user}[^@\s]+@[^=]+?))(\s+\w+=|\s*$)""",
+    """\Wduser=(|({action_performer}.+?))(\s+\w+=|\s*$)""",
+    """\Wsuser=(|({affected_user}[^@\s]+@.+?))(\s+\w+=|\s*$)""",
     """src-account-name":"({account_name}[^"]+)""",
   ]
   DupFields = [ "accesses->activity" ]

@@ -15,14 +15,14 @@ Name = raw-4738
     """\sComputerName=(::ffff:)?({host}.+?)(\s+\w+=|\s*$)""",
     """({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|pm|PM))""",
     """({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+)""",
-    """(?i)\w+\s*\d+\s\d+:\d+:\d+\s+(::ffff:)?(am|pm|({host}[\w\-.]+))\s""",
+    """(?i)\w+\s*\d+\s\d+:\d+:\d+\s+(::ffff:)?(am|pm|({host}[\w\-.]+))""",
     """Security ID:\s*(|({user_sid}.+?))\s+Account Name:""",
     """Account Name:\s*(|({user}.+?))\s+Account Domain:\s*(|({domain}.+?))\s+Logon ID:\s*(|({logon_id}.+?))\s+Target Account:""",
     """Target\sAccount.+?Security ID:\s*({target_sid}.+?)\s""",
     """Target\sAccount.+?Account Name:\s*({target_user}.+?)\s""",
     """Target\sAccount.+?Account Domain:\s*({target_domain}.+?)\s""",
     """Changed Attributes:\s*(|({attribute}.+?))\s+SAM Account Name""",
-    """(?i)\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(am|pm|({dest_host}[\w\-.]+)))\s"""
+    """(?i)\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(am|pm|({dest_host}[\w\-.]+)))"""
   ]
 }
 ```

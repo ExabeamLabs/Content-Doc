@@ -17,7 +17,7 @@ Name = s-proofpoint-email-alert-3
     """classification\\*"+:\s*\\*"+({alert_type}[^",]+?)\\*\s*"""",
     """"subject_s"+:\s*"+({subject}[^",]+?)\s*"""",
     """"fromAddress_s"+:\s*"+\[(\\r|\\n)*\s*\\"+({sender}[^",;]+@[^",;]+[^"]*)\\""",
-    """"recipient_s"+:\s*"+\[(\\r|\\n)*\s*\\"+({recipient}[^",;]+@[^",;]+[^"]*)\\""",
+    """"recipient_s"+:\s*"+\[(\\r|\\n)*\s*\\"+({recipients}[^",;]+@[^",;]+[^"]*)\\""",
     """GUID_s"+:\s*"+({alert_id}[^",]+?)\s*"""",
     """senderIP_s"+:\s*"+({src_ip}[a-fA-F\d.:]+)""",
     """"filename\\*"+:\s*\\*"+({attachments}(?!text)[^"\\]+)""",

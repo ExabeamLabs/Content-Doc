@@ -6,7 +6,7 @@ Name = crowdstrike-security-alert-2
     Product = Falcon
     Lms = Direct
     DataType = "alert"
-    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"    
     Conditions = [ """"ExternalApiType":"Event_DetectionSummaryEvent"""", """"Severity"""", """"FalconHostLink"""" ]
     Fields = [
       """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
@@ -14,8 +14,6 @@ Name = crowdstrike-security-alert-2
       """({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3}Z)""",
       """"UserName":"(N/A|({user}[^"@]+))(@({src_host}[^"]+))?"""",
       """"ComputerName":"({src_host}[^"]+)"""",
-      """\\*"DetectDescription\\*":\\*"({alert_name}[^"]+?)(\.\s+|")""",
-      """"DetectName":"({alert_name}[^"]+)"""",
       """"ExternalApiType":"({alert_type}[^"]+)"""",
       """"DetectDescription":"({additional_info}[^"]+)"""",
       """"Severity":({alert_severity}\d+)""",
@@ -23,9 +21,11 @@ Name = crowdstrike-security-alert-2
       """"FileName":"({file_name}[^"]+?)"""",
       """"FilePath":"({file_path}[^"]+?)\\?"""",
       """"CommandLine"+:"+\\*"*({command_line}[^,"]+?)\\*"""",
-      """"CommandLine"+:"+\\*"*({process}({directory}[^",]+\\\\)?({process_name}[^"\\,]+))\\*"""",
+      """"CommandLine"+:"+\\*"*({process}({directory}[^",]+\\\\)?({process_name}[^"\\,]+))\\*"""", 
       """"LocalIP":"({src_ip}[a-fA-F\d.:]+)""",
       """"RemoteAddress":"({dest_ip}[a-fA-F\d.:]+)""",
+      """\\*"DetectDescription\\*":\\*"({alert_name}[^"]+?)(\.\s+|")""",
+      """"DetectName":"({alert_name}[^"]+)""",
       """"Technique":"({alert_type}[^"]+)""",
       """"LocalAddress":"({src_ip}[a-fA-F\d.:]+)""",
       """"DetectId"+:"+({alert_id}[^"]+)"""",
@@ -56,6 +56,6 @@ Name = crowdstrike-security-alert-2
       """"InddetMask"+:\s*({inddet_mask}true|false)""",
       """"Indicator"+:\s*({indicator}true|false)"""
     ]
-    DupFields = [ "directory->process_directory", "alert_type->technique", "falcon_host_link->additional_info" ]
+    DupFields = [ "directory->process_directory", "falcon_host_link->additional_info" ]
   }
 ```

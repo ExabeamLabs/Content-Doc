@@ -13,13 +13,9 @@ Name = raw-4104
     """\w{3}\s\d\d\s\d\d:\d\d:\d\d\s({host}[^\s]+)\sMSWinEventLog""",
     """({event_code}4104)""",
     """Microsoft-Windows-PowerShell\s+(SYSTEM|NETWORK SERVICE|({user}.+?))\s+User""",
-    """ComputerName:\s*({host}[\w.-]+)"""
-    """TimeStamp:\s*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""
-    """User:\s*({user}.+?)\s*\w+:""",
     """({event_name}Creating Scriptblock text)""",
     """ScriptBlock ID:\s+({scriptblock_id}[^\s]+)""",
     """({process_name}PowerShell)""",
-    """Process ID:\s*({pid}\d+)""",
     """Creating Scriptblock text\s*\([^\)]+\):\s*({scriptblock_text}.+?)\s*ScriptBlock ID:""",
   ]
 }

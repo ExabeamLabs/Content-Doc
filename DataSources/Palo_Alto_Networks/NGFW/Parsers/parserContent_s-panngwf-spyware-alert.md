@@ -11,21 +11,17 @@ Name = s-panngwf-spyware-alert
   Fields = [ 
     """exabeam_host=({host}[^\s]+)""",
     """"host":\{.*?"name":"({host}[^"]+)".*?\}""",
-    """,({time}\d\d\d\d\/\d\d\/\d\d \d\d:\d\d:\d\d),({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),""",
-    """\d\d:\d\d:\d\d\s+({host}[^\s]+)\s""",
+    """,({time}\d\d\d\d\/\d\d\/\d\d \d\d:\d\d:\d\d),({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),""",
+    """\d\d:\d\d:\d\d\s+({host}[^\s]+)\s+\d+""",
     """THREAT,({alert_type}\w+),""",
-    """,THREAT,[^"]+?,({action}[^,]+),\\?"[^"]*"""",
-    """,THREAT,.+?,\\?"+([^\(]+\()?(|({malware_url}[^"\)]+?))\)?[\\\/]*"+,""",
-    """,THREAT,[^"]+?,\\?"[^\s]*?"+,?({alert_name}[^,\("]+)\s*\(({alert_id}\d+)?""",
-    """,THREAT,[^"]+?,\\?"[^\s]*?",[^,]*,({threat_category}[^,]+),""",
+    """,THREAT,.+?,({action}[^,]+),\\?"[^"]*"""",
+    """,THREAT,.+?,\\?"(|({malware_url}.+?))\\?",""",
+    """,THREAT,.+?,\\?".*?",({alert_name}[^,()]+)(\(({alert_id}\d+)\))?,""",
+    """,THREAT,.+?,\\?".*?",[^,]*,({threat_category}[^,]+),""",
     """THREAT,spyware,([^,]*,){29}({alert_severity}\w+)""",
-    """THREAT,spyware,[^"]+?,\\?"[^\s]*?",([^,]*,){2}({alert_severity}\w+)""",
-    """THREAT,spyware,([^,]*,){7}(({domain}[^\\\/,]+)[\\\/]+)?({user}[^\\\/,]+),""",
-    """THREAT,spyware,([^,]*,){19}(?:|({src_port}\d+)),(?:|({dest_port}\d+)),([^,]*,){3}(?:|({protocol}[^,]+)),(?:|({action}[^,]+)),\\?"""",
-    """THREAT,spyware,([^,]*,){9}({app}[^,]+),""",
-    """,THREAT,[^"]+?,\\?"[^\s]*?"+,?([^"]+)"+,({alert_id}\d+)?"""
+    """THREAT,spyware,.*?,\\?".*?"+,([^,]*,){2}({alert_severity}\w+)""",
+    """THREAT,spyware,([^,]*,){7}(({domain}[^\\\/,]+)[\\\/]+)?({user}[^\\\/,]+),"""
   ]
-  DupFields = ["action->outcome"] 
   SOAR {
     IncidentType = "malware"
     DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->malwareName", "alert_severity->sourceSeverity", "alert_id->sourceId", "src_ip->malwareVictimHost", "alert_type->description", "dest_ip->malwareAttackerIp"]

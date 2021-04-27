@@ -11,7 +11,7 @@ Name = s-digitalguardian-dlp-alert-1
 }
 splunk-digitalguardian-dlp-alert = {
   Vendor = Digital Guardian
-  Product = Digital Guardian Network DLP
+  Product = Network DLP
   Lms = Splunk
   DataType = "dlp-alert"
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"

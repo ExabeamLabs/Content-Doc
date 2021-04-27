@@ -23,7 +23,6 @@ s-okta-app-login = {
     """"userAgent":\s*\{[^\{\}]*?"browser":\s*"((?i)unknown|({browser}[^"]+))""",
     """"userAgent":\s*\{[^\{\}]*?"os":\s*"((?i)unknown|({os}[^"]+))""",
     """"ip":\s*"({src_ip}[^"]+)"""",
-    """"request":\s*\{[^\}]+?"ip":\s*"({src_ip}[a-fA-F:\d.]+)"""",
     """"type":\s*"({app}[^"]+)""",
     """({app}Okta)""",
     """requestClientApplication=({app}.+?)\s*\w+=""",

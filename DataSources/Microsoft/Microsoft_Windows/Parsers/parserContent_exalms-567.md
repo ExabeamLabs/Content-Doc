@@ -12,7 +12,7 @@ Name = exalms-567
   Fields = [
     """({event_name}Object Access Attempt)""",
     """"@timestamp"\s*:\s*"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
-    """"(?:winlog\.)?computer_name"\s*:\s*"({host}.+?)"""",
+    """"computer_name"\s*:\s*"({host}.+?)"""",
     """"record_number"\s*:\s*"({record_id}\d+)""",
     """({event_code}567)""",
     """"user"\s*:\s*\{[^\}]*"identifier"\s*:\s*"({user_sid}[^"]+)""",

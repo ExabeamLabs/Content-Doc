@@ -2,13 +2,13 @@
 ```Java
 {
 Name = leef-crowdstrike-alert
-  Vendor = CrowdStrike
-  Product = Falcon
-  Lms = QRadar
-  DataType = "alert"
-  TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ """LEEF:""", """|CrowdStrike|FalconHost|""" ]
-  Fields = [
+    Vendor = CrowdStrike
+    Product = Falcon
+    Lms = QRadar
+    DataType = "alert"
+    TimeFormat = "yyyy-MM-dd HH:mm:ss"
+    Conditions = [ """LEEF:""", """|CrowdStrike|FalconHost|""" ]
+    Fields = [
     """exabeam_host=({host}[\w\-.]+)""",
     """\WscanResultName=(|({additional_info}.+?))\s*(\||\w+=|["\s]*$)""",
     """\Wdescription=(|({additional_info}.+?))\s*(\||\w+=|["\s]*$)""",
@@ -35,6 +35,6 @@ Name = leef-crowdstrike-alert
     """\WdnsRequestDomain=(|({dns_request_domain}[^=|\s]+?))\s*(\||\w+=|["\s]*$)""",
     """\WrequestType=(|({dns_request_type}[^\s]+?))\s*(\||\w+=|["\s]*$)"""
     """\WfilePath=(|({process}[^\s]+\\+({process_name}[^\s]+)))""",
-  ]
+    ]
 }
 ```

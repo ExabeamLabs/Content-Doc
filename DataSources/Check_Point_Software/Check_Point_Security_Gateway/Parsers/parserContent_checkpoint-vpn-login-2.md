@@ -13,7 +13,7 @@ Name = checkpoint-vpn-login-2
     """\Whostname=({host}[\w\-.]+)""",
     """\Waction=({activity}[^\|]+?)\s*\|""",
     """\Wstatus=({outcome}[^\|]+?)\s*\|""",
-    """\Wuser=(({user_lastname}[^,\|\(\)]+),\s*({user_firstname}[^,\|\(\)]+?)\s*\(({user}[^\|\s\)]+)\)|({=user}[^\|\s\)]+))\s*\|""",
+    """\Wuser=({user_lastname}[^,\|\(\)]+),\s*({user_firstname}[^,\|\(\)]+?)\s*\(({user}[^\|\s\)]+)\)\s*\|""",
     """\Wreason=({failure_reason}[^\|]+?)\s*\|""",
     """\Wservice=({dest_port}\d+)\s*\|""",
     """\Whost_ip=({dest_ip}[A-Fa-f:\d.]+)""",

@@ -33,9 +33,9 @@ Name = symantec-epp-network-alert-2
     """Remote Port:\s*({dest_port}\d+)""",
     """({outcome}block)""",
     """({direction}Inbound|Outbound)""",
-    """Event Description:\s+({additional_info}[^,]+?)\s*,Local""",
-    """({activity}The client[^,]+?block traffic)""",
-    """({activity}The traffic from IP address [^,]+? was blocked)""",
+    """Event Description:\s+({additional_info}.+?)\s*,Local""",
+    """({activity}The client.+?block traffic)""",
+    """({activity}The traffic from IP address .+? was blocked)""",
   ]
 }
 ```

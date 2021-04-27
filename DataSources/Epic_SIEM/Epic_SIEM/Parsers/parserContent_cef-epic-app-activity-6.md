@@ -10,7 +10,7 @@ Name = cef-epic-app-activity-6
 }
 cef-epic-app-activity = {
   Vendor = Epic
-  Product = Epic SIEM
+  Product = Epic
   Lms = ArcSight
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
