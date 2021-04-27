@@ -1,6 +1,6 @@
 ![Exabeam](banner.png)
 
-# Exabeam Content Library
+# Exabeam Content Library - AA i54 (c2006.4)
 Welcome to the Exabeam Content Library.
 
 The Content Library is an online repository of knowledge and content that organizations can use to learn about available log source integrations and security use cases.
@@ -12,3 +12,5 @@ This is a programmatic generation of content documentation from Exabeam's conten
   - Navigating from Exabeam use case to data source
 - [Exabeam supported data sources](https://github.com/ExabeamLabs/Content-Doc/tree/c2006.4/Exabeam%20Data%20Sources.md)
   - Navigating from data source to use case
+
+NOTE: These use cases have been deprecated and changed in future versions.
