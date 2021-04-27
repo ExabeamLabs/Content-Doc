@@ -9,7 +9,7 @@ Name = cisco-nac-logon
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS Z"
   Conditions = [ """Acct-Status-Type=Start""", """Acct-Authentic=RADIUS""", """RADIUS Accounting start request""" ]
   Fields = [
-    """CISE_RADIUS_Accounting[^,]+?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d [+-]\d\d:\d\d)""",
+    """CISE_RADIUS_Accounting.+?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d [+-]\d\d:\d\d)""",
     """({host}[\w\-.]+) CISE_RADIUS_Accounting""",
     """Host:\s*({host}\S+)""",
     """, NetworkDeviceName=({network}[^,]+),""",

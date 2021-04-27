@@ -9,7 +9,8 @@ Name = symantec-network-connection
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """SymantecServer""", """User Name: """, """Rule: """ ]
   Fields = [
-    """\d\d:\d\d:\d\d (({host}[\w-]+)\s+)?SymantecServer: (({=host}[\w-]+),)?({src_host}[^,]+),Local Host IP:"""
+    """\d\d:\d\d:\d\d\s+({host}[^\s]+)\s""",
+    """SymantecServer:\s*({src_host}[^,]+?)\s*(,|$)"""
     """Local Host IP:\s*({src_ip}[^,]+)""",
     """Local Port:\s*({src_port}\d+)""",
     """Local Host MAC:\s*({src_mac}[^,\s]+)""",

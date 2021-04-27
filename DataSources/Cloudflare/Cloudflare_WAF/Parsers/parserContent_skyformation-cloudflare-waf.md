@@ -10,7 +10,6 @@ Name = skyformation-cloudflare-waf
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
   Conditions = [ """|Skyformation|""", """ResponseStatus"""", """FirewallMatchesActions""", """destinationServiceName=Custom Application""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """"EdgeStartTimestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
     """"ClientDeviceType":"({device_type}[^"]+)""",
     """"ClientCountry":"({src_country}[^"]+)""",

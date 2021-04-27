@@ -3,17 +3,16 @@
 {
 Name = cef-defender-atp-alert
   DataType = "alert"
-  Conditions = ["""CEF""", """SkyFormation Cloud Apps Security""", """requestClientApplication=""", """AdvancedHunting-DeviceAlertEvents"""]
+  Conditions = ["""CEF""", """SkyFormation Cloud Apps Security""", """requestClientApplication=Defender ATP""", """AdvancedHunting-DeviceAlertEvents"""]
   Fields = ${MicrosoftParserTemplates.cef-defender-atp.Fields} [ 
-     """Category":\s*"({alert_name}[^"]+)""",
-     """Title":\s*"({additional_info}[^"]+)""",
+     """Category":\s*"({alert_type}[^"]+)""",
+     """Title":\s*"({alert_name}[^"]+)""",
      """FileName":\s*"({process_name}[^"]+)""",
      """Severity":\s*"({alert_severity}[^"]+)""",
      """AlertId":\s*"({alert_id}[^"]+)"""
      """DeviceName":\s*"({src_host}[^"]+)""",
-     """RemoteUrl":\s*"({malware_url}[^"]+)""",
-     """MD5":"({md5}[^"]+)"""
-  ]
-  DupFields = [ "category->alert_type" ]
+     """MD5":"({md5}[^"]+)""",
+
+  ] 
 }
 ```

@@ -15,9 +15,9 @@ Name = xml-mssql-database-login-1
     """<Provider Name='({database_name}[^']+)'""",
     """<Computer>({host}[^<]+)<\/Computer>""",
     """<Message>({additional_info}[^<]+)""",
-    """<Keyword>({outcome}Audit[^<]+)<\/Keyword>""",
-    """<Message>.+?user\s'((({domain}[^\\']+)\\)?({user}[^']+))'""",
-    """\[CLIENT:\s+({src_ip}[a-fA-F\d:\.]+)"""
+    """<Keyword>({outcome}Audit.+?)<\/Keyword>""",
+    """<Message>.+?user\s'({user}[^']+)'""",
+    """\[CLIENT:\s+({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
   DupFields = [ "host->dest_host" ]
 }

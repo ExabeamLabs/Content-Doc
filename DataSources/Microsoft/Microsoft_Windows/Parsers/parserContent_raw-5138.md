@@ -19,7 +19,7 @@ Name = raw-5138
     """Directory Service:\s*Name:\s*({service_name}[^\s]+)\s+Type:\s*({service_type}[^:]*?Services)""",
     """GUID:\s*\{({guid}[^\}]+)""",
     """Operation:\s*Correlation ID:\s*\{({correlation_id}[^\}]+)""",
-    """\d\d:\d\d:\d\d\s+(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^<]+))\s+Microsoft-Windows-Security-Auditing"""
   ]
+  DupFields = [ "host->dest_host" ]
 }
 ```

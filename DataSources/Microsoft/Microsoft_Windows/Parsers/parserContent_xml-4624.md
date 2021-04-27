@@ -7,7 +7,7 @@ Name = xml-4624
     Lms = ElasticSearch
     DataType = "windows-4624"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-    Conditions = ["""<EventID>4624</EventID>""", """<Data Name="""]
+    Conditions = ["<EventID>4624</EventID>", "<Data Name="]
     Fields = [
       """SystemTime=('|")({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """({event_name}An account was successfully logged on)""",

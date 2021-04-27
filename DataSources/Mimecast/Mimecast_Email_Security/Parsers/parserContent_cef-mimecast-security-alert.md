@@ -6,17 +6,15 @@ Name = cef-mimecast-security-alert
   Product = Mimecast Email Security
   Lms = ArcSight
   DataType = "dlp-email-alert"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """CEF:""", """Mimecast Email Security""", """dproc=Attachment Protection""", """"recipientAddress":"""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """"date":"({time}\d+-\d+-\d+T\d+:\d+:\d+\+\d+)""",
-    """dproc=({dproc}[^=]+?)\s+\w+=""", 
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)\s*({host}[^\s]+)\s*Skyformation""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
     """"(?i)Route":"({direction}[^"]+)""",
     """"(?:id|aCode)":"({alert_id}[^"]+)""",
     """"(recipientAddress|Recipient)":"({recipient}[^"]+)""",
-    """(senderAddress|Sender)":"(<>|({sender}[^@"]+@({external_domain}[^"]+)))""",
+    """(senderAddress|Sender)":"(<>|({sender}[^"]+))""",
     """"(?i)Subject":"({subject}[^"]+?)\s*"""",
     """"(messageId|MsgId)":"({message_id}[^"]+)""",
     """"fileName":"({file_name}[^"]+)""",
@@ -26,9 +24,7 @@ Name = cef-mimecast-security-alert
     """"actionTriggered":"({outcome}[^"]+)""",
     """"acc":"({user}[^"]+)""",
     """"SenderDomain":"(<>|({external_domain}[^"]+))"""",
-    """"SourceIP":"({src_ip}[^"]+)"""",
-    """"result":"({outcome}[^"]+)""",
-    """"subject":"({subject}[^"]+)"""
+    """"SourceIP":"({src_ip}[^"]+)""""
   ]
 }
 ```

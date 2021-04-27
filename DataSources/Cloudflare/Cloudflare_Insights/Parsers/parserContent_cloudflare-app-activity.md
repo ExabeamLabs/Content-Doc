@@ -9,7 +9,6 @@ Name = cloudflare-app-activity
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
   Conditions = [ """CEF:""", """destinationServiceName=cloudflare""", """"when":"""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """"when":"({time}[^"]+)"""",
     """suser=({user}[^\s]+)""",
     """destinationServicename=({app}[^\s]+)""",

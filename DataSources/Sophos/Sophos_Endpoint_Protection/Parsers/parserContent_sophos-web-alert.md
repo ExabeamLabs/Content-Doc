@@ -5,7 +5,7 @@ Name = sophos-web-alert
   Vendor = Sophos
   Product = Sophos Endpoint Protection
   Lms = Direct
-  DataType = "web-activity"
+  DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """"Event::Endpoint::Web""" ]
   Fields = [
@@ -15,10 +15,10 @@ Name = sophos-web-alert
     """"name":\s*"(n\/a|({alert_name}[^\:\"\']+(\:\s*\'({target}[^\"\']+))?\'))""",
     """"name":\s*"'({target}[^']+)'\s+({alert_name}[^"']+)\s""",
     """"name":\s*"({alert_name}[^"']+)\sto '({target}[^']+)'\s+""",
+    """"name":\s*"({additional_info}[^"]+)""",
     """"name":\s*"'({malware_url}[^"\'\s]+)'\s+blocked due to""",
     """"name":\s*"[^"]*?block to\s+'({malware_url}[^"\'\s]+)'""",
     """"name":\s*"(n\/a|[^"]*? at \'({additional_info}({malware_url}[^"\']+)))""",
-    """"name":\s*"({additional_info}[^}]+?)("\}|","\w+":)""",
     """"type":\s*"({alert_type}[^"]+)""",
     """"dhost":\s*"({src_host}[^"]+)""",
     """"severity":\s*"({alert_severity}[^"]+)""",

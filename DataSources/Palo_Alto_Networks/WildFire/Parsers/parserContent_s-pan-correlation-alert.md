@@ -11,14 +11,14 @@ Name = s-pan-correlation-alert
   Fields = [
     """exabeam_host=({host}[\w\-.]+)""",
     """\d\d:\d\d:\d\d ({host}[\w\-.]+)""",
-    """,CORRELATION,([^,]*,){2}({time}\d\d\d\d\/\d\d\/\d\d \d\d:\d\d:\d\d)""",
+    """,CORRELATION,.+?({time}\d\d\d\d\/\d\d\/\d\d \d\d:\d\d:\d\d)""",
     """,CORRELATION,([^,]*,){4}(|(({domain}[^\\]+)\\)?({user}[^,]+)),""",
     """,CORRELATION,([^,]*,){3}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """,CORRELATION,([^,]*,){15}({alert_type}[^,]+)""",
     """,CORRELATION,([^,]*,){6}({alert_name}[^,]+)""",
     """,CORRELATION,([^,]*,){7}({alert_severity}[^,]+)""",
     """,CORRELATION,([^,]*,){17}\\?"*({additional_info}[^\.]+?)\.""",
-    """\d\d:\d\d:\d\d,({alert_id}[^,]+),""",
+    """\d\d:\d\d:\d\d,({alert_id}[^,]+)"""
     """Process Name: ({malware_url}[^,]+),"""
   ]
   SOAR {

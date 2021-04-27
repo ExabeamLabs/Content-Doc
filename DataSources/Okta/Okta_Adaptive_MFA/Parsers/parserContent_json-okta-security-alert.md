@@ -40,8 +40,7 @@ json-okta-auth = {
     """"login":\s*"({user_email}[^"\s@]+@[^"\s@]+)"""",
     """"login":\s*"[^@]+@({domain}[^"]+)""""
     """requestUri":\s*"({request_uri}[^"]+?)\s*"""",
-    """"outcome":[^\]]*?"result"\s*:\s*"({outcome}[^"]+)"""",
-    """outcome":[^\]]*?"result":"?(null|({outcome_result_at}[^\"]+))"?,"reason":"?(null|({outcome_reason_at}[^"]+))""",
+    """"outcome":\s*\{[^\{\}]*?"result":\s*"({outcome}[^"]+)"""
   ]
 
 ```

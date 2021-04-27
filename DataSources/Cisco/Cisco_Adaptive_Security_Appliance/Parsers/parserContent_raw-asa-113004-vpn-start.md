@@ -5,9 +5,9 @@ Name = raw-asa-113004-vpn-start
   Vendor = Cisco
   Product = Cisco Adaptive Security Appliance
   Lms = Direct
-  DataType = "nac-logon"
+  DataType = "vpn-start"
   TimeFormat = "MMM dd yyyy HH:mm:ss"
-  Conditions = [ "%ASA" , "-113004", "AAA user ", " Successful" ]
+  Conditions = [ "%ASA" , "-113004", "AAA user " ]
   Fields = [ 
     """exabeam_raw=.*?({time}\w+ \d+ \d\d\d\d \d\d:\d\d:\d\d)""",
     """({time}\w{3} \d\d \d{4} \d\d:\d\d:\d\d)""",
@@ -20,7 +20,6 @@ Name = raw-asa-113004-vpn-start
     """user\s*=\s*({user_firstname}\w+)\.({user_lastname}\w+)""",
     """user\s*=\s*({user}[^"\s]+)""", 
     """server\s*=\s*(::ffff:)?({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
-    """\%ASA-\d+-({event_code}\d+)[:\s]+({event_name}[^:]+)\s"""
  ]
  DupFields = ["user->account"]
 }

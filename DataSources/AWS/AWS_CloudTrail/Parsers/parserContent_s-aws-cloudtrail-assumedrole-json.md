@@ -12,7 +12,7 @@ Name = s-aws-cloudtrail-assumedrole-json
     """"+userName"+\s*:\s*"+?(|({target}[^"].+?))"+\s*[,\]\}]""",
     """"requestParameters":\{"userName":"({target}[^"]+)"\}
 s-aws-cloudtrail-activity-json = {
-  Vendor = Amazon
+  Vendor = AWS
   Lms = Splunk
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Fields = [
@@ -22,12 +22,11 @@ s-aws-cloudtrail-activity-json = {
     """"userIdentity".+?"+invokedBy"+\s*:\s*"+?(|({dest_host}[^"].+?))"+\s*[,\]\}]""",
     """({app}AwsApiCall)""",
     """"+eventName"+\s*:\s*"+?(|({activity_action}[^"].+?))"+\s*[,\]\}]""",
-    """"+eventName"+\s*:\s*"+?(|({activity}[^"].+?))"+\s*[,\]\}]""",
     """"+userName"+\s*:\s*"+?(|({user}[^"].+?))"+\s*[,\]\}]""",
     """"userIdentity".+?"arn"\s*:\s*"?(|arn:aws:sts::\d+:([^"]+\/)+({user}(?!\-\d+)[^\/]+?))(@[\w\.]+)?"\s*[,\]\}]""",
-    """"eventSource"\s*:\s*"(|({service}[^"]+))"""",
+    """"eventSource"\s*:\s*"(|({object}[^"]+))"""",
     """"sessionIssuer"\s*:\s*.*?"arn"\s*:\s*"(?:|({object}[^"]+))"""",
-    """"bucketName"\s*:\s*"(|({bucket}[^"]+))"""",
+    """"bucketName"\s*:\s*"(|({object}[^"]+))"""",
     """"policyArn"\s*:\s*"(|({object}[^"]+))"""",
     """"roleName"\s*:\s*"(|({object}[^"]+))"""",
     """"userAgent"\s*:\s*"\[?(|({user_agent}[^"]+?))\]?"""",
@@ -35,13 +34,7 @@ s-aws-cloudtrail-activity-json = {
     """"+errorMessage"+\s*:\s*"+?(|({additional_info}[^"].+?))"+\s*[,\]\}]""",
     """"+accountId"+\s*:\s*"+?(|({resource}[^"].+?))"+\s*[,\]\}]""",
     """"requestParameters"\s*:[^\}]+?"instanceId"\s*:\s*"({request_id}[^"]+)",("attribute"\s*:\s*"({request_action}[^"]+)")?""",
-    """"awsRegion"\s*:\s*"({region}[^"]+)"""",
-    """ext_userIdentity_type=({account_type}.+?)\s*\w+=""",
-    """userIdentity.+?type":"({user_type}[^"]+)""",
-    """assumed-role"[^:]+?:role\/({role}[^"]+)""",
-    """bytesTransferredOut":\s*({bytes_out}\d+(\.\d+)?)"""
-    """bytesTransferredIn":\s*({bytes_in}\d+(\.\d+)?)""",
-    """\srequestClientApplication=({app}[^\s]+)\s""",
+    """"awsRegion"\s*:\s*"({region}[^"]+)""""
   ]
 
 ```

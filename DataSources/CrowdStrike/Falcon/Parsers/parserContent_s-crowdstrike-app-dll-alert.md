@@ -6,7 +6,7 @@ Name = s-crowdstrike-app-dll-alert
   Conditions = [ """"event_simpleName":"ReflectiveDllLoaded"""", """|Skyformation|""" ]
   Fields = ${CrowdStrikeParserTemplates.cef-crowdstrike-app-activity-temp.Fields} [
   """"id":"({alert_id}[\w-]+?)"""",
-  """"name":"({alert_name}[^"]+?)""""
+  """"name":"({alert_name}[^"]+?)"""",
   """"CommandLine"+:\s*"+\\*"*({command_line}.+?)\\*\s*"+,""",
   """"ImageFileName\\*"+:\\*"+({image_file_name}[^"]+?)\\*","""
   ]

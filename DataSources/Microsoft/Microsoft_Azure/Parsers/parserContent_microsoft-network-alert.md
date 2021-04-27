@@ -15,16 +15,14 @@ Name = microsoft-network-alert
     """"clientPort":"({src_port}\d+)""""
     """"resourceId":"({object}[^"]+)"""
     """"resourceId":"\/([^\/]*\/){7}({dest_host}[^"]+)""",
-    """"ruleName":"({policy}[^"]+)""",
     """"ruleName":"({alert_name}[^"]+)""",
     """"category":"({alert_type}[^"]+)""",
     """"action":"({action}[^"]+)""""
-    """suser=(anonymous|({user}[^=]+?))\s+\w+=""",
-    """"requestUri":"({full_url}.+?)","""",
+    """suser=(anonymous|({user}.+?))\s+\w+=""",
+    """"requestUri":"({full_url}[^"]+)"""",
     """Namespace:\s*({event_hub_namespace}\S+)""",
     """EventHub name:\s*({event_hub_name}[^\]\s]+)\s*\]""",
-    """"msg":"({alert_name}[^"]+)""""
   ]
-   DupFields = ["event_hub_namespace->host", "action->outcome"]
+   DupFields = ["event_hub_namespace->host"]
 }
 ```

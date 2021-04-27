@@ -12,7 +12,7 @@ Name = raw-4776-4
     Fields = [
       """({event_name}The (computer|domain controller) attempted to validate the credentials for an account)""",
       """(?i)(((audit|success|failure)( |_)(success|audit|failure))|information)\s*(\s|\t|,|#\d+|<[^>]+>)\s*(?!(?:[A-Fa-f:\d.]+))[^\t,#<\s.]+\.({domain}[^\s.",]+)""",
-      """"(?:winlog\.)?computer_name\\*":\\*"({host}[^\\"]+)""",
+      """"computer_name\\*":\\*"({host}[^\\"]+)""",
       """@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """({event_code}4776)""",
       """The ({login_type}computer|domain)(\s\w+)? attempted to validate the credentials""",

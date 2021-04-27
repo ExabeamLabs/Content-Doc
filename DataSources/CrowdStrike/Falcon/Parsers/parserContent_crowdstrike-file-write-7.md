@@ -27,8 +27,7 @@ crowdstrike-file-operations = {
       """"TargetFileName":\s*"({file_path}[^"]+)""",
       """"TargetFileName":\s*"({file_parent}[^"]*[\\\/]+)({file_name}[^\\\/"]+\.({file_ext}[^\\\/"]+))""",
       """suser=(system|({user}[^\s]+))""",
-      """src-account-name":"({account_name}[^"]+)""",
-      """"((?i)SHA256String|SHA256HashData)":"({sha256}[^"]+)""""
+      """src-account-name":"({account_name}[^"]+)"""
     ]
 
 ```

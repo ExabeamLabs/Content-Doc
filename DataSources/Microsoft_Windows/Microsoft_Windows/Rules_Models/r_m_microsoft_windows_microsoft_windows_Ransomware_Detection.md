@@ -1,0 +1,12 @@
+Vendor: Microsoft Windows
+=========================
+### Product: [Microsoft Windows](../ds_microsoft_windows_microsoft_windows.md)
+### Use-Case: [Ransomware Detection](../../../../UseCases/uc_ransomware_detection.md)
+
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   1   |   0    |     1      |      1      |    1    |
+
+| Event Type      | Rules                                                                                                                                | Models |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------ |
+| audit-log-clear | <b>T1070.001 - Indicator Removal on Host: Clear Windows Event Logs</b><br> ↳ <b>A-WA-F</b>: Audit log has been cleared on this asset |        |

@@ -7,7 +7,7 @@ Name = cef-sentinelone-security-alert
   Lms = ArcSight
   DataType = "alert"
   TimeFormat = "MMM dd yyyy HH:mm:ss"
-  Conditions = [ "CEF:", "|SentinelOne", "fileName=", "New active threat" ,"""threatClassification=Malware"""]
+  Conditions = [ "CEF:", "|SentinelOne", "fileName=", "New active threat" ]
   Fields = [
     """\WdeviceAddress=({host}[^\|]+?)((\||\s+)\w+=|\s*$)""",
     """\WdeviceHostName=({host}[^\|]+?)((\||\s+)\w+=|\s*$)""",

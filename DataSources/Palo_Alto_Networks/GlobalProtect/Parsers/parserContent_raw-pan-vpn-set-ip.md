@@ -11,14 +11,13 @@ Name = raw-pan-vpn-set-ip
   Fields = [
     """({time}\d\d\d\d/\d\d/\d\d \d+:\d+:\d+)""",
     """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
-    """globalprotect(gateway|portal)-\S+?,({host}[^,]+),""",
+    """globalprotect(gateway|portal)-\S+?,({host}.+?),""",
     """Private IP:\s?({src_translated_ip}[^,\s]+)""",
     """User name:\s+({user}[\w.'\-\\$]+?)\.?(\s|,|"|$)""",
     """User name:\s+({user_email}[^@\s]+@[^\s,]+),""",
     """Client OS( version)?:\s+({os}[^":]+)(,|\.)""",
     """SYSTEM,({vpn_client}[^,]+),""",
-    """Source region:\s*({src_country}[^,]+)""",
-    """Device name:\s({src_host}[^,]+)"""
+    """Source region:\s*({src_country}[^,]+)"""
   ]
 }
 ```

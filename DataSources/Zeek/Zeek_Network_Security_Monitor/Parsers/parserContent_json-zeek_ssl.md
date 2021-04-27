@@ -14,7 +14,7 @@ Name = json-zeek_ssl
 }
 json-zeek-activity = {
   Vendor = Zeek
-  Product = Zeek Network Security Monitor
+  Product = Bro
   Lms = Splunk
   TimeFormat = "epoch"
   Fields = [

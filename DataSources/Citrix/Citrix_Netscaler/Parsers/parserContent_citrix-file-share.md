@@ -9,8 +9,7 @@ Name = citrix-file-share
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = ["""SkyFormation""","""destinationServiceName=Citrix ShareFile"""]
   Fields = [
-      """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-      """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d+Z)\s""",
+      """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d+Z)\s({host}[^ ]+)""",
       """cat=({category}.+?)\s+\w+=""",
       """\sfname=({file_path}({file_parent}[^=]*?[\/]+)?({file_name}[^\/=]+?(\.({file_ext}\w+))?))\s+\w+=""",
       """destinationServiceName=({app}.+?)\s+\w+=""",

@@ -9,7 +9,7 @@ Name = cef-snowflake-db-query
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """ destinationServiceName=Snowflake""", """dproc=QUERY HISTORY""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """\s({host}\w+)\sSkyformation CEF:""",
     """end=({time}\d+)""",
     """"QUERY_ID":"({query_id}[^"]+)"""",
     """"QUERY_TEXT":"({db_query}.+?)",""",

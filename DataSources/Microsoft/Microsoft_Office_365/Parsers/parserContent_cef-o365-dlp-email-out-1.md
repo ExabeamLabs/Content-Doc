@@ -9,7 +9,7 @@ Name = cef-O365-dlp-email-out-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
   Conditions = [ """|resource-event|""", """msg=EmailMessage send by User email""", """act=send""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """({host}\S+)\s+(\S+\s+){4}CEF:""",
     """\Wsuser=({sender}[^@]+@({external_domain_sender}[^@\s]+))""",
     """\Wcs2=({recipient}[^@]+@({external_domain_recipient}[^@=]+?))\s+(\w+=|$)""",
     """ToAddress\\=({to_address}.+?)(;\w+\\=|\s+\w+=|\s*$)""",

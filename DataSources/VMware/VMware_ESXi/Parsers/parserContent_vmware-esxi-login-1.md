@@ -10,7 +10,7 @@ Name = vmware-esxi-login-1
   Conditions = [""" logged in """,""" [User ""","""Event [""",""" vpxd """ ]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """({host}[^\s]+)\s+\d+\s+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
+    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d).+?\s+({host}[^\s]+)\s""",
     """User\s+((({domain}[^\\\s@]+)\\+)?({user}[^\s\\@]+)).+?\s*logged""",
     """\[({event_name}User.+?logged (out|in))""",
     """user agent:\s+({user_agent}[^)]+)"""

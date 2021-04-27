@@ -20,9 +20,9 @@ Name = symantec-epp-network-alert-1
     """Local Host IP:\s*({src_ip}[a-fA-F\d.:]+).*?,Outbound,({protocol}\w+),""",
     """Local Host IP:\s*({dest_ip}[a-fA-F\d.:]+).*?,Inbound,({protocol}\w+),""",
     """Begin:\s*({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-    """User( Name)?:\s*(none|({user}[^,]+)),""",
-    """Domain( Name)?:\s*({domain}[^,\s]+),""",
-    """SymantecServer:\s*.*?({alert_name}Denial of Service[^:]+?)\s*Description:""",
+    """User:\s*({user}[^,]+),""",
+    """Domain:\s*({domain}[^,]+),""",
+    """SymantecServer:\s*.*?({alert_name}Denial of Service.*?)\s*Description:""",
     """\W\s+Description:\s*({additional_info}[^\.:]+)"""
   ]
   DupFields = [ "alert_name->alert_type" ]

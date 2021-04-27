@@ -30,7 +30,7 @@ Name = json-4624
       """"AuthenticationPackageName":"({auth_package}[^"]*)""",
       """"TargetLogonId":"({logon_id}[^"]*)""",
       """"TargetUserSid":"({user_sid}[^"]*)""",
-      """Workstation Name:((\\)[rnt])*\s*(|([A-Fa-f:\d.]+|-|({src_host_windows}[^\\\s]+?))\s*((\\)[rnt])*)?Source""",
+      """Workstation Name:((\\)[rnt])*(([A-Fa-f:\d.]+|-|({src_host_windows}[^\\]+))((\\)[rnt])*)?Source""",
       """"WorkstationName":"(?:|[A-Fa-f:\d.]+|-|({src_host_windows}[^"]+))"""",
     ]
     DupFields = ["host->dest_host"]
