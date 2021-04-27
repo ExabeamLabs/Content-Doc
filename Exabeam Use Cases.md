@@ -1,7 +1,8 @@
 Exabeam Supported Use Cases
 ===========================
 
-The following are the list of out-of-the-box supported Use Cases
+The following are the list of out-of-the-box Use Cases.
+NOTE: These use cases have been deprecated and changed in future versions.
 
 * [Compromised Credentials](UseCases/uc_compromised_credentials.md)
 * [Data Exfiltration](UseCases/uc_data_exfiltration.md)
