@@ -11,6 +11,7 @@ This is a programmatic generation of content documentation from Exabeam's conten
 |Branch|Version|Content|
 |--|--|--|
 |master|canary|[Data Sources](Exabeam%20Data%20Sources.md), [Use Cases](Exabeam%20Use%20Cases.md)|
+|c2010.6|i55|[Data Sources](https://github.com/ExabeamLabs/Content-Doc/tree/c2010.6/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Doc/tree/c2010.6/Exabeam%20Use%20Cases.md)|
 |c2006.4|i54|[Data Sources](https://github.com/ExabeamLabs/Content-Doc/tree/c2006.4/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Doc/tree/c2006.4/Exabeam%20Use%20Cases.md)|
 |c2002|i53|[Data Sources](https://github.com/ExabeamLabs/Content-Doc/tree/c2002/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Doc/tree/c2002/Exabeam%20Use%20Cases.md)|
 |c1907|i52|[Data Sources](https://github.com/ExabeamLabs/Content-Doc/tree/c1907/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Doc/tree/c1907/Exabeam%20Use%20Cases.md)|
@@ -19,10 +20,8 @@ This is a programmatic generation of content documentation from Exabeam's conten
 The Content Library provides navigation from an Exabeam supported data source to a use case (or use case to data source) showing the event types and parsers for each.
 
 The Content Library currently allows browsing Exabeam content branches: 
- - Content "master" branch: The master repository with the latest content developed by the Exabeam content team
- - Content "c2006.4" branch: The content repository shipped with the latest version of Advanced Analytics i54
- - Content "c2002" branch: The content repository shipped with the latest version of Advanced Analytics i53.7
- - Content "c1907" branch: The content repository shipped with the latest version of Advanced Analytics i52.7
+ - "master" branch: The master repository with the latest content developed by the Exabeam content team
+ - "c2xxx" branches: Out-of-the-box content that was shipped with major Advanced Analytics releases
 
 Browse the specific branches to see the documentation for the content that is available in the product today or browse the master repository for a peek into what is coming next ("canary" content). Note that the content in the master may not be fully tested as of yet and should be used carefully. 
 
