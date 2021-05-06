@@ -11,6 +11,8 @@ Name = asa-svc-vpn-716059-start
     Fields = [
       """exabeam_raw=.+?({time}\w+ \d+ \d\d\d\d \d+:\d+:\d\d)""",
       """exabeam_host=(.+?@\s*)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w.\-]+))""",
+      """({host}[^\s]+)\s{1,20}:\s{1,20}%FTD-""",
+      """({time}\d{1,4}-\d{1,2}-\d{1,2}T\d{1,2}:\d{1,2}:\d{1,2}Z?)""",
       """User\s+<({user}[^>]+)>""",
       """IP\s+<({src_ip}[^>]+)>""",
       """%ASA-({priority}\d+)-({event_code}\d+)""",

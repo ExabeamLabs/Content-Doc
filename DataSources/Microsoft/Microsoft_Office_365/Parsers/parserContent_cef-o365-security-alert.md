@@ -46,7 +46,7 @@ Name = cef-o365-security-alert
     """"suid":"(anonymous|({user_email}[^@=]+@({email_domain}[^"]+?))|({user}[^"]+))"""",
     """"PolicyName":"({alert_type}[^"]+)"""",
     """"RuleName":"({alert_name}[^"]+)"""",
-    """"Id":"({alert_id}[^"]+)""""
+    """"Id":"({alert_id}[^"]+)"""",
   ]
 }
 ```

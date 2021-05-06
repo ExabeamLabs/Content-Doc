@@ -31,6 +31,9 @@ Name = xml-4624-1
     """<Data Name\\='AuthenticationPackageName'>({auth_package}[^<]+)<""",
     """<Data Name\\='WorkstationName'>([A-Fa-f:\d.]+|-|({src_host}[^<]+))<""",
     """<Keywords>({outcome}.+?)</Keywords>"""
+    """<Data Name\\=('|")WorkstationName('|")>([A-Fa-f:\d.]+|-|({src_host_windows}[^<]+))</Data>""",
+    """<Data Name\\=('|")SubjectUserSid('|")>({subject_sid}[^<]+)</Data>""",
+    """<Data Name\\=('|")KeyLength('|")>({key_length}[^<]+)</Data>"""
   ]
   DupFields = ["host->dest_host"]
 }

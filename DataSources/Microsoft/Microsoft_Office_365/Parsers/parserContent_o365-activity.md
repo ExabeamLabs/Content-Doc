@@ -26,7 +26,6 @@ Name = o365-activity
     """"UserId":"\\*"(?![^@"]+?@[^\s"]+)(Not Available|({domain}[^"\\\/]+)[^"]*?(Unknown|((\w+?_)?(\w+-)?\w+-\w+-\w+-\w+)|({user}[^"\\\/@\s]+)))""",
     """"MailboxOwnerUPN\\*"+:[\s\\]*"+({user_email}[^"\\\s@]+@[^"\\\s@]+)""",
     """"MailboxOwnerUPN\\*"+:[\s\\"]*"+[^"]*?@({email_domain}([\.\w+]+\.){0,256}([^\.\s"]+){0,256}\.[^\s"\.>]+)>?\s*"+""",
-    """"ResultStatus\\*"+:[\s\\]*"+({outcome}[^"\\]+)""",
     """"(Workload|Application|Client)\\*"+:[\s\\]*"+({app}[^"\\]*)""",
     """requestClientApplication=({app}[^=]+?)\s+(\w+=|$)""",
     """sourceServiceName=({app}[^=]+?)\s+(\w+=|$)""",

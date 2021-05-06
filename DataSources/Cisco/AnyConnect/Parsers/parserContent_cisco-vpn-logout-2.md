@@ -11,6 +11,7 @@ Name = cisco-vpn-logout-2
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[^\s]+)""",
+    """({host}[^\s]+)\s{1,20}:\s{1,20}%FTD-""",
     """User\s<({user}[^>]+)""",
     """IP\s<({src_ip}\d+.\d+.\d+.\d+)""",
   ]

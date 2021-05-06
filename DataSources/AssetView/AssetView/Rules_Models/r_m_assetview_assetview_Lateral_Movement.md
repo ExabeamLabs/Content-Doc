@@ -7,6 +7,6 @@ Vendor: AssetView
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      5      |    5    |
 
-| Event Type     | Rules                                                                                                                       | Models |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------- | ------ |
-| print-activity | <b>T1052 - Exfiltration Over Physical Medium</b><br> ↳ <b>PR-SRC-CODE</b>: Printed document with source code file extension |        |
+| Event Type     | Rules                                                                                                                                                            | Models |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| security-alert | <b>T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools</b><br> ↳ <b>ALERT-DL</b>: DL Correlation rule alert on asset accessed by this user |        |

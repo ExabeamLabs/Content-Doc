@@ -24,6 +24,15 @@ Name = xml-4688
     """<Data Name(\\)?='CommandLine'>"?\s*({command_line}[^<]+?)\s*"?</Data>""",
     """<Data Name(\\)?='CommandLine'>\s*(|-|(sc|((?:[^"]+)?[\\\/])?sc.exe)\s*(?:\\*[\w.\-]+)?\s*create\s*({service_name}.+?))\s+binPath= ({process}({directory}(?:[^<>]+)?[\\\/])?({process_name}[^\\\/<>]+))</Data>""",
     """<Data Name(\\)?='ProcessId'>({parent_process_guid}[x\da-f]+)</Data>""",
+    """<Data Name(\\)?='CommandLine'>"?.*\s+({parameter_sct}\S+\.sct)""",
+    """<Data Name(\\)?='CommandLine'>"?.*\s+"({parameter_sct}.+\.sct)"""",
+    """<Data Name(\\)?='CommandLine'>"?.*\s+({parameter_hta}\S+\.hta)""",
+    """<Data Name(\\)?='CommandLine'>"?.*\s+"({parameter_hta}.+\.hta)"""",
+    """<Data Name(\\)?='CommandLine'>"?.*\s+({parameter_xml}\S+\.xml)""",      """<Data Name(\\)?='CommandLine'>"?.*\s+\s+"({parameter_xml}.+\.xml)"""",
+    """<Data Name(\\)?='CommandLine'>"?.*\s+({parameter_csproj}\S+\.csproj)""",
+    """<Data Name(\\)?='CommandLine'>"?.*\s+"({parameter_csproj}.+\.csproj)"""",
+    """<Data Name(\\)?='CommandLine'>"?.*\s+["\s]({parameter_exe}.+?\.exe)""",
+    """<Data Name(\\)?='CommandLine'>"?.*\s+["\s]({parameter_dll}.+?\.dll)"""
   ]
   DupFields = [ "host->dest_host","process_guid->pid","directory->process_directory" ]
 }

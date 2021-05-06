@@ -23,6 +23,10 @@ Name = fortinet-network-connection
     """\Wrcvdbyte=({bytes_in}\d+)""",
     """\Waction="?({outcome}[^"]+?)"?(\s+\w+=|\s*$)""",
     """\Wsentpkt=({packets_sent}\d+)""",
+    """policyid=({policy_id}\d+)"""
+    """\Wproto=({protocol}\d+)""",
+    """\Wsrcintfrole="(undefined|({src_interface_role}[^"]+))"""",
+    """\Wdstintfrole="(undefined|({dest_interface_role}[^"]+))""""
   ]
 }
 ```

@@ -15,6 +15,8 @@ Name = raw-asa-svc-vpn-start
     """exabeam_source=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """exabeam_host=(.+?@\s*)?({host}[\w.\-]+)""",
     """[\s\t]+\d\d:\d\d:\d\d\s+({host}[\w.\-]+) : %ASA""",
+    """({host}[^\s]+)\s{1,20}:\s{1,20}%FTD-""",
+    """({time}\d{1,4}-\d{1,2}-\d{1,2}T\d{1,2}:\d{1,2}:\d{1,2}Z?)""",
     """User[\s\t]+<(?![^\s]+@[^\s]+)({user}[^>]+)>[\s\t]+IP[\s\t]+<({src_ip}[^>]+)>[\s\t]+(?:IPv4[\s\t])?Address[\s\t]+<({src_translated_ip}[^>]+)>"""
     """User[\s\t]+<({user_email}[^>@]+@[^>@]+)>[\s\t]+IP[\s\t]+<({src_ip}[^>]+)>[\s\t]+(?:IPv4[\s\t])?Address[\s\t]+<({src_translated_ip}[^>]+)>"""
   ]

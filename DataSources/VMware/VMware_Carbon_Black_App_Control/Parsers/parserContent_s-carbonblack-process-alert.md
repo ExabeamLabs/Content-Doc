@@ -16,7 +16,7 @@ Name = s-carbonblack-process-alert
     """"+category"+:\s*"+({category}[^"]+?)"+""",
     """"+threat_id"+:\s*"+({threat_id}[^"]+?)"+""",
     """"+device_username"+:\s*"+(({user_email}[^@,"]+@[^",]+)|(({domain}[^\\"]+?)\\+)?({user}[^"]+))"+""",
-    """"+device_name"+:\s*"+(\w+\\+)?({src_host}[^."]+)""",
+    """"+device_name"+:\s*"+(\w+\\+)?({host}[^."]+)""",
     """"+reason_code"+:\s*"+({alert_name}[^,]+?)",""",
     """"+threat_indicators":[^\}\]]*?"process_name"+:\s*"+({process_name}[^"]+?)"+""",
     """"+reason"+:\s*"+({additional_info}[^"]+?)"+""",
@@ -35,6 +35,12 @@ Name = s-carbonblack-process-alert
     """"+id"+:\s*"+({pid}[^"]+?)"+,"+legacy_alert_id""",
     """"+changed_by"+:\s*"+({process_vendor}[^"]+?)"+""",
     """"+ioc_id"+:\s*"+({ioc}[^"]+?)"+""",
+    """"+report_name"+:\s*"+({alert_name}[^,]+?)",""",
+    """"+report_id"+:\s*"+({alert_id}[^"]+?)"+""",
+    """"process_name"+:"+({process_name}[^"]+)""",
+    """"threat_cause_actor_name"+:"+({process}({process_directory}[^"]+)\\({process_name}[^"]+))"""",
+    """"threat_cause_actor_process_pid"+:"+({pid}[^"]+)""",
+    """device_internal_ip"+:"+({src_ip}[A-Fa-f.:\d]+)"""
   ]
 }
 ```

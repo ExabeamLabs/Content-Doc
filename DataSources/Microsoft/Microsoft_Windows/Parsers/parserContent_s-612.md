@@ -17,7 +17,7 @@ Name = s-612
     """Changed By:.*\s+User Name:\s+({user}[^\s]+)"""
     """\s+Domain Name:\s+({domain}[^\s]+)""",
     """\s+Logon ID:\s+\([^,]+,({logon_id}[^)]+)""",
-    """Policy Change:\s+New Policy:({policy}.*\n+)+Changed By:"""
+    """Policy Change:\s+New Policy:(({policy}[^\n]+)\n+)+\s*Changed By:"""
   ]
   DupFields = [ "host->dest_host" ]
 }

@@ -10,6 +10,7 @@ Name = json-4776
     Conditions = ["""4776""", """"PackageName":"""", """attempted to validate the credentials for an account"""]
     Fields = [
       """({event_name}The (computer|domain controller) attempted to validate the credentials for an account)""",
+      """"EventTime":({time}\d+)""",
       """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """"(Hostname|MachineName)":"({host}[^"]*)""",
       """"Computer"+:"+({host}[^"]+)"""",

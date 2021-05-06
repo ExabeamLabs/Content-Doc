@@ -9,7 +9,7 @@ Name = s-aws-cloudtrail-s3-activity
  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
  Conditions = ["""AwsApiCall""", """s3.amazonaws.com"""]
  Fields = [
-            """"+eventTime"+\s*:\s*"+?(|({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)Z)"+\s*[,\]\}]""",
+            """"+eventTime"+\s*:\s*"+?(|({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)Z?)"+\s*[,\]\}]""",
          """"+sourceIPAddress"+\s*:\s*"+?(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[^=]+?))"+\s*[,\]\}]""",
          """"+eventSource"+\s*:\s*"+?(|({host}[^"].+?))"+\s*[,\]\}]""",
          """"userIdentity"[^@]+?"+invokedBy"+\s*:\s*"+?(|({dest_host}[^"].+?))"+\s*[,\]\}]""",

@@ -22,6 +22,8 @@ Name = rs-4624
       """Logon ID:\s+({logon_id}[^\s]+)\s+Logon GUID""",
       """New Logon:\s+Security ID:\s+({user_sid}[^\s]+)\s""",
       """Workstation Name:\s+({src_host_windows}[^\s]+)\s+Source Network"""
+      """Workstation Name:\s+({src_host_windows}[^\s]+)\s+Source Network""",
+      """Key Length:\s*({key_length}\d+)"""
     ]
     DupFields = [ "dest_host->host", "directory->process_directory" ]
   }

@@ -22,13 +22,19 @@ Name = cef-o365-app-login
       """\WoldFile=({user_agent}[^,]+?)\s+(\w+=|$)""",
       """"failureReason":"({failure_reason}[^"]+)""",
       """"userDisplayName":"({user_fullname}({user_firstname}[^\s"]+?)\s+({user_lastname}[^\s"\(\),]+))\s*[^"]*?"""",
-      """"userDisplayName":"({user_fullname}({user_lastname}[^",\s]+)\s*,\s*({user_firstname}[^",]+?))"""",
+      """"userDisplayName":"({user_fullname}({user_lastname}[^",\s]+)\s*,\s*({user_firstname}[^",]+?))\s{0,20}(\(\w+\))?"""",
       """"userPrincipalName":"({user_email}[^"\s@]+@[^"\s@]+)""",
       """"userPrincipalName":"[^@\s]*?@([\.\w+]+\.)?({email_domain}[^\.\s"]+\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|ch))"""",
       """\sreason=({additional_info}[^=]+?)\s*\w+=""",
       """city":"({location_city}[^"]+)""",
       """state":"({location_state}[^"]+)""",
-      """countryOrRegion":"({country_code}[^"]+)"""
+      """countryOrRegion":"({country_code}[^"]+)""",
+      """"browser":"({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident|IE|Edge)""",
+      """"operatingSystem":"({os}[^"]+)"""",
+      """deviceDetail":\{[^\}]+?displayName":"({src_host}[^"]+)"""",
+      """conditionalAccessStatus":"({status}[^"]+)"""",
+      """"clientAppUsed":"({object}[^"]+)""",
+      """"resourceDisplayName":"({resource}[^"]+)""",
     ]
 }
 ```

@@ -5,8 +5,8 @@ Vendor: RSA
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   1    |     2      |      1      |    1    |
+|   1   |   0    |     1      |      2      |    2    |
 
-| Event Type                | Rules                                                                                                                              | Models                              |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| authentication-successful | <b>T1078 - Valid Accounts</b><b>T1133 - External Remote Services</b><br> ↳ <b>UA-UC-new</b>: Abnormal country for user by new user |  • <b>UA-UC</b>: Countries for user |
+| Event Type     | Rules                                                                                                                                                            | Models |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| security-alert | <b>T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools</b><br> ↳ <b>ALERT-DL</b>: DL Correlation rule alert on asset accessed by this user |        |

@@ -12,15 +12,17 @@ Name = q-pan-leef-alert
     """exabeam_host=(.+?@\s*)?({host}[^\s]+)""",
     """exabeam_endTime=({time}\d{13})""",
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
+    """\s({host}[\w\.-]+)\s+LEEF:""",
     """subtype=({alert_type}wildfire)""",
     """Severity=({alert_severity}\d+)""",
     """Severity=({alert_severity}[^\|]+)\|""",
-    """(URLCategory|Severity)=({alert_severity}benign|informational)"""
-    """DestinationUser=(?:[^\\/]+[\\/])?({user}[^|]+)\|""",
+    """(URLCategory|Severity)=({alert_severity}benign|informational)""",
+    """usrName=(({domain}[^\\]+)\\)?(|({user}[^\|]+))\|(SerialNumber|SourceUser)""",
+    """DestinationUser=(?:[^\\/]+[\\/])?({user}[^|]+)\|Application=""",
     """\|src=({src_ip}[^|]+)\|dst=({dest_ip}[^|]+)\|""",
     """SessionID=({alert_id}[^|]+)\|""",
     """LEEF[^|]+?\|([^\|]+\|){3}({alert_name}[^|]+)\|""",
-    """\|URLCategory=({category}.*?)\|""",
+    """\|URLCategory=({category}[^\|]*)\|""",
     """\|Miscellaneous="?({miscellaneous}[^\|"]+)"?\|"""
   ]
   DupFields = [ "miscellaneous->malware_url" ]

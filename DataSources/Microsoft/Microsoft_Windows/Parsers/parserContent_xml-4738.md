@@ -23,7 +23,7 @@ Name = xml-4738
     """<Data Name='OldUacValue'>({old_attribute}[^<]+)""",
     """<Data Name='NewUacValue'>({new_attribute}[^<]+)""",
     """Changed Attributes:\s*(|({attribute}[^:]+?))\s+SAM Account Name:""",
-    """User Account Control:\s*({additional_info}[^:]+?)\s*User Parameters:"""
+    """User Account Control:\s*({uac_status}[^:]+?)\s*User Parameters:"""
   ]
 }
 ```

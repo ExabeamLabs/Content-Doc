@@ -10,6 +10,7 @@ Name = googlecloud-iam-activity
   Conditions = [ """googleapis.com""",       """"serviceName":"iam"""    ]
   Fields = [
      """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+     """"timestamp":({time}\d+)""",
      """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
      """"callerIp":"({src_ip}[^"]+)""",
      """"({service}iam.googleapis.com)""",
@@ -20,8 +21,8 @@ Name = googlecloud-iam-activity
      """policyDelta.+?"role":"roles\/({role}[^"\\\/]+)""",
      """status.+?"code":\d+,"message":"({failure_reason}[^"]+)""",
      """"logName":".*\/cloudaudit.googleapis.com\/({log_type}[^"]+)""",
-     """"resource".*project_id":"({account}[^"]+)""",
-     """"resource.*"type":"({resource_type}[^"]+)"""
+     """"resource"[^=]*?project_id":"({account}[^"]+)""",
+     """"resource"[^=]*?"type":"({resource_type}[^"]+)"""
   ]
 }
 ```

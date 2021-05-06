@@ -7,6 +7,6 @@ Vendor: Fast Enterprises
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      1      |    1    |
 
-| Event Type | Rules                                                                                             | Models |
-| ---------- | ------------------------------------------------------------------------------------------------- | ------ |
-| app-login  | <b>T1078 - Valid Accounts</b><br> ↳ <b>APP-F-SA-NC</b>: New service account access to application |        |
+| Event Type | Rules                                                                                                         | Models |
+| ---------- | ------------------------------------------------------------------------------------------------------------- | ------ |
+| app-login  | <b>T1078 - Valid Accounts</b><br> ↳ <b>APP-Account-deactivated</b>: Activity from a de-activated user account |        |

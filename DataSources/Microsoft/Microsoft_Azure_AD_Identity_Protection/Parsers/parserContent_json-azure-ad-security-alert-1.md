@@ -18,9 +18,11 @@ Name = json-azure-ad-security-alert-1
      """"eventDateTime":\s*"({time}[^"]+)"""",
      """"accountName":\s*"(({user_fullname}[^"\s]+\s[^"]+)|({user}[^"]+))"""",
      """"logonIp":\s*"({src_ip}[a-fA-F:\d.]+)"""",
-     """"userPrincipalName":\s*"(({user_email}[^@]+@[^"]+)|({user}[^"]+))""",
+     """"userPrincipalName":\s*"(-|({user_email}[^@"]+@[^".]+\.[^"]+)|(({user}[^\s"@]+)(@[^"]+)?))"""",
+
      """"domainName"+:\s*"+({domain}[^"]+)"""",
      """"logonLocation"+:\s*"+({location}[^"]+)""""
+     """"userPrincipalName":\s*"({user_upn}[^"]+?)"""",
   ]
 }
 ```

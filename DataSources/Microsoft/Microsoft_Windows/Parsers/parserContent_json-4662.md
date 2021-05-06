@@ -7,12 +7,12 @@ Name = json-4662
   Lms = Direct
   DataType = "object-access"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = ["""An operation was performed on an object""", """"EventID":4662""", """"OperationType":"Object Access""""]
+  Conditions = ["""An operation was performed on an object""", """"EventID":4662""", """"OperationType":""""]
   Fields = [
     """"Hostname":"({host}[^"]+)""",
     """({event_name}An operation was performed on an object)""",
     """({event_code}4662)""",
-    """"EventTime":({time}\d+)""",
+    """"EventTime":"?({time}[^",]+)""",
     """"EventTime":"({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d)"""",
     """"SubjectUserSid":"({user_sid}[^"]+)"""",
     """"SubjectUserName":"({user}[^"]+)"""",

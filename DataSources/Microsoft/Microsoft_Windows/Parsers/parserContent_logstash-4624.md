@@ -24,6 +24,8 @@ Name = logstash-4624
       """"new_logon-LogonID":"\s*({logon_id}[^"]+)\s*""""
       """"new_logon-SecurityID":"\s*({user_sid}[^"]+)\s*"""",
       """"cmpny.source.ip":"({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
+      """"subject-SecurityID":"\s*({subject_sid}[^"]+)\s*""""
+      """KeyLength":"\s*({key_length}[^"]+)\s*""""
     ]
     DupFields = ["src_host_windows->dest_host", "user->account"]
   }

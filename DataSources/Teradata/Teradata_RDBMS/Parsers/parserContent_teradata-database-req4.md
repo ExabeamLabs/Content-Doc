@@ -10,7 +10,7 @@ Name = teradata-database-req4
   Conditions = ["""teradata""", """[TERADATA]""", """REQ4"""]
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """({task_id}REQ4)[\s(#)]*({site_id}\S+)[\s(#)]*({user}\S+)[\s(#)]*({account}\S+)[\s(#)]*({time}\d\d\d\d-\d\d-\d\d\s*\d\d:\d\d:\d\d)[\s(#)]*(?:Unavailable|({src_ip}[A-Fa-f:\d.]+))[\s(#)]*({query_id}\d+)[\s(#)]*({db_query}[^;]+)[\s;(#)]*(?:\?|({database_name}[^(#)]+))[\s(#)]*(?:[^(#)]+)[\s(#)]*(?:\?|({database_object}[^(#)]+))[\s(#)]*(?:\s|({error_info}[^(#)]+))[\s(#)]*({error_code}[\d]+)"""
+    """({task_id}REQ4)[\s(#)]{0,4}({site_id}\S+)[\s(#)]{0,4}({user}\S+)[\s(#)]{0,4}({account}\S+)[\s(#)]{0,4}({time}\d\d\d\d-\d\d-\d\d\s*\d\d:\d\d:\d\d)[\s(#)]{0,4}(?:Unavailable|({src_ip}[A-Fa-f:\d.]+))[\s(#)]{0,5}({query_id}\d+)[\s(#)]{0,4}({db_query}[^;]+)[\s;(#)]*(?:\?|({database_name}[^(#)]+))[\s(#)]{0,4}(?:[^(#)]+)[\s(#)]{0,4}(?:\?|({database_object}[^(#)]+))[\s(#)]{0,4}(?:\s|({error_info}[^(#)]+))[\s(#)]{0,4}({error_code}[\d]+)"""
   ]
 }
 ```

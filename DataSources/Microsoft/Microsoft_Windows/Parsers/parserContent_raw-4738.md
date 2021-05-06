@@ -21,6 +21,7 @@ Name = raw-4738
     """Target\sAccount.+?Security ID:\s*({target_sid}.+?)\s""",
     """Target\sAccount.+?Account Name:\s*({target_user}.+?)\s""",
     """Target\sAccount.+?Account Domain:\s*({target_domain}.+?)\s""",
+    """User Account Control:\s*.+?\-\s({uac_status}[^\s]+)\s+User Parameters""",
     """Changed Attributes:\s*(|({attribute}.+?))\s+SAM Account Name""",
     """(?i)\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(am|pm|({dest_host}[\w\-.]+)))\s"""
   ]

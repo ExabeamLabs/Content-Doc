@@ -1,17 +1,6 @@
 Exabeam Supported Use Cases
 ===========================
 
-The following are the list of out-of-the-box supported Use Cases
-
-* [Compromised Credentials](UseCases/uc_compromised_credentials.md)
-* [Credentials Access](UseCases/uc_credentials_access.md)
-* [Data Exfiltration](UseCases/uc_data_exfiltration.md)
-* [Data Extraction](UseCases/uc_data_extraction.md)
-* [Defense Evasion](UseCases/uc_defense_evasion.md)
-* [Execution](UseCases/uc_execution.md)
-* [Internal Fraud](UseCases/uc_internal_fraud.md)
-* [Lateral Movement](UseCases/uc_lateral_movement.md)
-* [Malware Detection](UseCases/uc_malware_detection.md)
-* [Phishing](UseCases/uc_phishing.md)
-* [Privileged Activity](UseCases/uc_privileged_activity.md)
-* [Ransomware Detection](UseCases/uc_ransomware_detection.md)
+| Compromised Insiders                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Malicious Insiders                                                                                                                                                                                                                                                                                                                                                                                              | External Threats                                                                                                                                                                                                                  |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Account Manipulation](UseCases/uc_account_manipulation.md)<br>[Cloud Data Protection](UseCases/uc_cloud_data_protection.md)<br>[Compromised Credentials](UseCases/uc_compromised_credentials.md)<br>[Data Exfiltration](UseCases/uc_data_exfiltration.md)<br>[Evasion](UseCases/uc_evasion.md)<br>[Lateral Movement](UseCases/uc_lateral_movement.md)<br>[Privilege Escalation](UseCases/uc_privilege_escalation.md)<br>[Privileged Activity](UseCases/uc_privileged_activity.md)<br> | [Abnormal Authentication & Access](UseCases/uc_abnormal_authentication_&_access.md)<br>[Audit Tampering](UseCases/uc_audit_tampering.md)<br>[Data Access](UseCases/uc_data_access.md)<br>[Data Leak](UseCases/uc_data_leak.md)<br>[Physical Security](UseCases/uc_physical_security.md)<br>[Privilege Abuse](UseCases/uc_privilege_abuse.md)<br>[Workforce Protection](UseCases/uc_workforce_protection.md)<br> | [Brute Force Attack](UseCases/uc_brute_force_attack.md)<br>[Cryptomining](UseCases/uc_cryptomining.md)<br>[Malware](UseCases/uc_malware.md)<br>[Phishing](UseCases/uc_phishing.md)<br>[Ransomware](UseCases/uc_ransomware.md)<br> |

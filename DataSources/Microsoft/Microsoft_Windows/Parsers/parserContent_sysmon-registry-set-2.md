@@ -3,11 +3,15 @@
 {
 Name = sysmon-registry-set-2
   Conditions = [ """Registry value set: """, """ UtcTime: """ ]
-  DataType = "file-operations"
+  DataType = "registry-write"
   Fields = ${MicrosoftParserTemplates.sysmon-process-events.Fields}[
+    """Event ID:\s*({event_code}\d+)""",
     """\s+Image:\s*({file_path}({file_parent}(?:(\w+:)?[^:]+)?[\\\/])?({file_name}.+?))\s+\w+:""",
-    """TargetObject:\s*({object}.+?)\s+(\w+:|$)"""
+    """TargetObject:\s*({object}({reg_path}({reg_key}.*)\\({reg_value}[^\\.]+(\.[^\\.]+?)?)))\s+Details:""",
+    """Details:\s*({reg_details_type}DWORD)?\s*({reg_details}.+?)\s*$""",
+    """ComputerName(:|=)\s*({host}[\w.-]+)""",
   ]
+  DupFields = [ "host->dest_host","directory->process_directory" ]
 }
 sysmon-process-events = {
   Vendor = Microsoft

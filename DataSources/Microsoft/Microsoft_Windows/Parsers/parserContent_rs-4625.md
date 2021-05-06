@@ -25,7 +25,9 @@ Name = rs-4625
       """\s*Logon Failed:.+?Account Domain:\s*(?=\w)({domain}.+?)[\s;]*Failure Information""",
       """\s*Sub Status:\s*({result_code}.+?)[\s;]*Process Information:""",
       """Workstation Name:\s+({src_host_windows}[^\s]+)\s+Source Network""",
-      """Source Network Address:\s+(?:-|({src_ip}[\w:.]+))\s+Source Port:"""]
+      """Source Network Address:\s+(?:-|({src_ip}[\w:.]+))\s+Source Port:"""
+      """Key Length:\s*({key_length}\d+)"""
+    ]
     DupFields = [ "dest_host->host", "src_host_windows->src_host" ]
   }
 ```

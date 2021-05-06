@@ -16,7 +16,7 @@ Name = fortinet-web-activity
     """\Wstatus="*({action}[^"]+)"""",
     """\Wurl="*(?:-|\w+:\/+[^\/]+)?({uri_path}\/[^?\s"]*)""",
     """\Wurl="*(?:[^?]+?(|({uri_query}\?[^\s"]+)))["\s]*(\w+=|$)""",
-    """\Wcatdesc="*({category}[^"]+?)["\s]*(\w+=|$|,)""",
+    """\Wcatdesc="*(\.+|({category}[^"]+?))["\s]*(\w+=|$|,)""",
     """\Wuser="*({user}[^"\s]+)""",
     """\Wsrcip=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\Wdstip=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
@@ -27,13 +27,14 @@ Name = fortinet-web-activity
     """\Wsentbyte=({bytes_out}\d+)(\s|")""",
     """\Wrcvdbyte=({bytes_in}\d+)(\s|")""",
     """\Wdevid="*({host_id}[^"\s]+)"*(\s|")""",
-    """\Wreferralurl="*({referrer}[^"\s]+)""",
-    """\Wgroup="*({user_group}.+?)["\s]*(\w+=|$)""",
-    """\Wmsg="*({additional_info}.+?)["\s]*(\w+=|$)""",
-    """\Waction="*blocked"*.+?\Wmsg="*({reason}.+?)["\s]*(\w+=|$)""",
-    """\Wmsg="*({reason}.+?)["\s]*(\w+=|$).+?\Waction="*blocked"*""",
+    """\Wreferralurl="*(\.+|({referrer}[^"\s]+))""",
+    """\Wgroup="*({user_group}[^=]+?)["\s]*(\w+=|$)""",
+    """\Wmsg="*({additional_info}[^=]+?)["\s]*(\w+=|$)""",
+    """\Waction="*blocked"*[^=]+?\Wmsg="*({reason}[^=]+?)["\s]*(\w+=|$)""",
+    """\Wmsg="*({reason}[^=]+?)["\s]*(\w+=|$)[^=]+?\Waction="*blocked"*""",
     """\Whostname="*(?!\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})([^"\s]*\.)?({top_domain}[^\s\/."]+(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|by|mx))+)""",
     """\Wurl="({full_url}[^"]+)"""",
+    """policyid=({policy_id}\d+)"""
   ]
 }
 ```
