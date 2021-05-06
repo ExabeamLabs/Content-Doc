@@ -15,7 +15,7 @@ Name = leef-guardium-db-failed-login
     """\WruleDesc=({rule_description}[^\|]+)""",
     """\WdevTime=({time}\d\d\d\d-\d+-\d+ \d\d:\d\d:\d\d)""",
     """\WserverType=({server_type}[^\|]+)""",
-    """\WdbUser=(({domain}[^\|\\]+)\\)?({db_user}[^\|\\]+)""",
+    """\WdbUser=(({domain}[^\|\\]+)\\)?(\?|({db_user}[^\|\\]+))""",
     """\WusrName=(|({user}[^\|]+))""",
     """\WsourceProgram=({source_program}[^\|]+)""",
     """\Wdst=({dest_ip}[^\|]+)""",
@@ -23,7 +23,7 @@ Name = leef-guardium-db-failed-login
     """\WdbName=(|({database_name}[^\|]+))""",
     """\Wsrc=({src_ip}[^\|]+)""",
     """\WsrcPort=({src_port}\d+)""",
-    """\Werror=({reason}.+?)"*\s*$"""
+    """\Werror=({reason}[^\|]+?)("|\s{0,20}$)"""
   ]
   DupFields = [ "db_user->account" ]
 }

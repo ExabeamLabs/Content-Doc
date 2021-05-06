@@ -19,10 +19,10 @@ Name = cef-forcepoint-dlp-email-alert-1
     """\Wdvchost=({host}[^\s]+)""",
     """\WmessageId=({alert_id}[^\s]+)""",
     """\|Forcepoint\|Email Security\|[^\|]*\|({alert_name}[^\|]*)\|({alert_type}[^\|]*)\|({alert_severity}[^\|]*)\|""",
-    """from=({sender}[^@]+?@({external_domain_sender}[^\s>]+?))(>)?(\s|\s*$)""",
-    """\Wfrom=\s*([^<]+<)?(<)?({sender}[^@=>]+?@({external_domain_sender}[^@=>]+?))(>)?(\s+\w+=|\s*$)""",
-    """to=({recipient}[^@]+?@({external_domain_recipient}[^\s>]+?))(>)?(\s|\s*$)""",
-    """\Wto=\s*([^<]+<)?(<)?({recipient}[^@=>]+?@({external_domain_recipient}[^@=>]+?))(>)?(\s+\w+=|\s*$)""",
+    """suser=({sender}[^@=]+?@({external_domain_sender}[^\s>]+?))(>)?(\s|\s*$)""",
+    """\Wsuser=\s*([^<]+<)?(<)?({sender}[^@=>]+?@({external_domain_sender}[^@=>]+?))(>)?(\s+\w+=|\s*$)""",
+    """duser=({recipient}[^@=]+?@({external_domain_recipient}[^\s>]+?))(>)?(\s|\s*$)""",
+    """\Wduser=\s*([^<]+<)?(<)?({recipient}[^@=>]+?@({external_domain_recipient}[^@=>]+?))(>)?(\s+\w+=|\s*$)""",
     """ad.fnameAndfileHash=({attachments}[^|]+?)\s*\|\s*({file_hash}[^|\s]+)""",
     """ad.cc=\s*(Email_in_CC|({recipients}[^=]+))\s+[\w.\-]+="""
   ]

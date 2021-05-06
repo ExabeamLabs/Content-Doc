@@ -9,5 +9,6 @@ Name = cc-carbonblack-edr-procstart
     """"device_timestamp"+:"+({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{7})""",
     """"parent_path":"({parent_process}({parent_directory}[^"]+(\\|\/)+)?({parent_process_name}[^"]+))"""",
   ]
+  DupFields = ["activity_type->event_name"]
 }
 ```

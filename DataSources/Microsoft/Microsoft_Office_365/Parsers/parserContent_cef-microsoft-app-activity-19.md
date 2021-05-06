@@ -27,17 +27,18 @@ cef-microsoft-app-activity = {
     """"OriginatingServer":"({host}\w+)\s*(\([^\)]+?\))?(\\r\\n)?"""",
     """CEF:([^\|"]*\|){5}({activity}[^\|"]+)""",
     """\WflexString1=({activity}[^=]+?)\.?\s+(\w+=|$)""",
-    """\WdestinationServiceName=({app}[^=]+?)\s+(\w+=|$)""",
     """"ObjectId":"(Unknown|Not Available|({object}[^"]+?))\s*"""",
     """\Wfname=\s*({object}[^=]+?)\s+(\w+=|$)""",
     """\Wfname=\s*({file_name}[^=]+?)\s+(\w+=|$)""",
     """\Wmsg=({additional_info}[^=]+?)\s+(\w+=|$)""",
-    """\Wsuser=((\w+?_)?(\w+-)?\w+-\w+-\w+-\w+|(Unknown|Microsoft Online Services|Office 365 SharePoint Online|anonymous|EMPTY\.*|(({domain}[^\\\s@]+)\\)?({user}[^@\s]+)|(Sync Client|Office365 Backend Process|Device Registration Service|({user_fullname}[\w,\s]+?))))\s+(\w+=|$)""",
+    """\Wsuser=((\w+?_)?(\w+-)?\w+-\w+-\w+-\w+|(Unknown|Microsoft Intune|Microsoft Teams Services|Microsoft Online Services|Office 365 SharePoint Online|anonymous|EMPTY\.*|(({domain}[^\\\s@]+)\\)?({user}[^@\s]+)|(Sync Client|Office365 Backend Process|Device Registration Service|({user_fullname}[\w,\s]+?))))\s+(\w+=|$)""",
     """\Wsuser=({user_email}[^@\s]+@[^@\s]+)""",
     """"+UserId"+:"+({user_email}[^@\s"]+?@({email_domain}[^@\s"]+?))"+""",
     """"ClientIP":"(::1|\[?({src_ip}[A-Fa-f:\d.]+?)(\]:({src_port}\d+))?)"""",
     """\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
     """"ResultStatus":"({result}[^"]+?)"""",
+    """\WdestinationServiceName\s{0,100}=({app}[^=]+?)\s{1,100}(\w+=|$)""",
+    """\WsourceServiceName=({app}[^=]+?)\s{1,100}(\w+=|$)""",
     """"User-Agent\\?"+:\\?"+({user_agent}[^"\\]+)"""
   ]
 

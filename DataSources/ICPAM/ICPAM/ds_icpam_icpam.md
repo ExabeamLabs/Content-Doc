@@ -6,10 +6,10 @@ Product: ICPAM
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   2   |   1    |     1      |      1      |    1    |
 
-|                                  Use-Case                                  | Event Types/Parsers                                                                              | MITRE TTP                  | Content                                                                                                        |
-|:--------------------------------------------------------------------------:| ------------------------------------------------------------------------------------------------ | -------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  physical-access<br> ↳ [s-icpam-badge-access](Parsers/parserContent_s-icpam-badge-access.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](Rules_Models/r_m_icpam_icpam_Compromised_Credentials.md) |
-|        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  physical-access<br> ↳ [s-icpam-badge-access](Parsers/parserContent_s-icpam-badge-access.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_icpam_icpam_Lateral_Movement.md)                                  |
+|                                           Use-Case                                           | Event Types/Parsers                                                                              | MITRE TTP                  | Content                                                                                                                 |
+|:--------------------------------------------------------------------------------------------:| ------------------------------------------------------------------------------------------------ | -------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  physical-access<br> ↳ [s-icpam-badge-access](Parsers/parserContent_s-icpam-badge-access.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](Rules_Models/r_m_icpam_icpam_Abnormal_Authentication_&_Access.md) |
+|                [Physical Security](../../../UseCases/uc_physical_security.md)                |  physical-access<br> ↳ [s-icpam-badge-access](Parsers/parserContent_s-icpam-badge-access.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_icpam_icpam_Physical_Security.md)                                          |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

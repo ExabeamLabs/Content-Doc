@@ -33,7 +33,7 @@ Name = cef-zscaler-web-activity
     """\scn1=({risk_level}\d+)""",
     """\sout=({bytes_in}\d+)""",
     """\sin=({bytes_out}\d+)""",
-    """\s(ad\.)?ZscalerNSSWeblogURLClass=({category}[^=]+?)\s*(\w+=|$)""",
+    """\scat=({category}[^=]+?)\s{0,20}\w+=""",
     """\sfileType=(None|({mime}[^=]+?))\s*(\w+=|$)""",
     """\soutcome=({result_code}\d+)""",
     """\sreason=({proxy_action}[^=]+?)\s*(\w+=|$)""",
@@ -45,6 +45,7 @@ Name = cef-zscaler-web-activity
     """sourcehost=(NA|None|\$NULL|({src_host}[^=]+?))\s+destinationhost=""",
     """destinationhost=(NA|None|\$NULL|({dest_host}[^=]+?))\s+\w+""",
     """devicehostname=({src_host}[^\s"]+?)\s*(\w+=|$)""",
+    """ZscalerNSSWeblogDLPDictionaries=(None|({web_log_dict}[^=]+?))\s*([\w.]+=|$)"""
   ]
   DupFields = ["ransomware_name->threat_category", "risk_level->suspicious_content"]
 }

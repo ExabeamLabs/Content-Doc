@@ -20,7 +20,7 @@ Name = xml-4672
     """<Data Name(\\)?='SubjectLogonId'>({logon_id}[^<]+)</Data>""",
     """({event_name}Special privileges assigned to new logon)""",
     """<Data Name(\\)?='PrivilegeList'>({privileges}[^<]+)</Data>""",
-    """<Data Name(\\)?='SubjectUserSid'>({user_sid}[^<\\]+)</Data>"""
+    """<Data Name(\\)?='SubjectUserSid'>({user_sid}[^<]+)</Data>"""
   ]
 }
 ```

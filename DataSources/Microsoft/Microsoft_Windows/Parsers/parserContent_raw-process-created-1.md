@@ -25,6 +25,17 @@ Name = raw-process-created-1
     """Creator Process Name:\s*({parent_process}((?:[^";]+)?[\\\/])?({parent_process_name}[^\\\/";]+?))[\s;]*Process"""
     """Process Command Line:\s+"?(\s*|({command_line}.+?))"?\s*Token Elevation Type indicates""",
     """Process Command Line:\s*"*(|-|(sc|((?:[^"]+)?[\\\/])?sc.exe)\s*(?:\\*[\w.\-]+)?\s*create\s*({service_name}.+?))\s+binPath= \s*(|-|({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/\s]+)))"*\s*Token Elevation Type""",
+    """binPath=\s*({service_command_line}(?:\"(.+)\")|(?:(\S+)))\s*""",
+    """Command\s*Line(:|=).*\s+({parameter_sct}\S+\.sct)""",
+    """Command\s*Line(:|=).*\s+"({parameter_sct}.+\.sct)"""",
+    """Command\s*Line(:|=).*\s+({parameter_hta}\S+\.hta)""",
+    """Command\s*Line(:|=).*\s+"({parameter_hta}.+\.hta)"""",
+    """Command\s*Line(:|=).*\s+({parameter_xml}\S+\.xml)""",
+    """Command\s*Line(:|=).*\s+\s+"({parameter_xml}.+\.xml)"""",
+    """Command\s*Line(:|=).*\s+({parameter_csproj}\S+\.csproj)""",
+    """Command\s*Line(:|=).*\s+"({parameter_csproj}.+\.csproj)"""",
+    """Command\s*Line(:|=).+?\/u\s*["\s]({parameter_exe}.+?\.exe)""",
+    """Command\s*Line(:|=).+?\/u\s*["\s]({parameter_dll}.+?\.dll)"""
   ]
   DupFields = [ "host->dest_host","process_guid->pid","directory->process_directory","process->path" ]
 }

@@ -11,6 +11,7 @@ Name = cisco-vpn-start-3
   Fields = [
     """exabeam_host=({host}[\w\-.]+)""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+    """({host}[^\s]+)\s{1,20}:\s{1,20}%FTD-""",
     """User\s({user}[^,]+)""",
     """Addr\s({src_ip}\d+.\d+.\d+.\d+)""",
   ]

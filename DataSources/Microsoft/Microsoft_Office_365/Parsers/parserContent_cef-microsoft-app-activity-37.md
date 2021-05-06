@@ -6,16 +6,9 @@ Name = cef-microsoft-app-activity-37
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """dproc=Graph Directory Audit""" ]
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields}[
-    """\WsourceServiceName=(|({app}.+?))\s+(\w+=|$)""",
-    """\Wext_result=(|({outcome}.+?))\s+(\w+=|$)""",
-    """\Wext_targetResources_0__modifiedProperties_1__newValue=(|(\[|")({object}.+?)(\]|"))\s+(\w+=|$)""",
-    """\Wext_targetResources_0__displayName=(|({target}.+?))\s+(\w+=|$)""",
-    """\WdestinationServiceName=(|({event_subtype}.+?))\s+(\w+=|$)""",
-    """\Wext_category=(|({additional_info}.+?))\s+(\w+=|$)""",
-    """"ipAddress":"({src_ip}[A-Fa-f:\d.]+)"""",
-    """"userPrincipalName":"({user_email}[^"@\s]+@[^"@\s]+)"""",
-  ]
-}
+    """\WsourceServiceName=(|({app}[^=]+?))\s+(\w+=|$)""",
+    """"result"+:"+({result}[^"]+)""",
+    """modifiedProperties"+:\[\{[^\}]+\}
 cef-microsoft-app-activity = {
   Vendor = Microsoft
   Lms = ArcSight
@@ -29,17 +22,18 @@ cef-microsoft-app-activity = {
     """"OriginatingServer":"({host}\w+)\s*(\([^\)]+?\))?(\\r\\n)?"""",
     """CEF:([^\|"]*\|){5}({activity}[^\|"]+)""",
     """\WflexString1=({activity}[^=]+?)\.?\s+(\w+=|$)""",
-    """\WdestinationServiceName=({app}[^=]+?)\s+(\w+=|$)""",
     """"ObjectId":"(Unknown|Not Available|({object}[^"]+?))\s*"""",
     """\Wfname=\s*({object}[^=]+?)\s+(\w+=|$)""",
     """\Wfname=\s*({file_name}[^=]+?)\s+(\w+=|$)""",
     """\Wmsg=({additional_info}[^=]+?)\s+(\w+=|$)""",
-    """\Wsuser=((\w+?_)?(\w+-)?\w+-\w+-\w+-\w+|(Unknown|Microsoft Online Services|Office 365 SharePoint Online|anonymous|EMPTY\.*|(({domain}[^\\\s@]+)\\)?({user}[^@\s]+)|(Sync Client|Office365 Backend Process|Device Registration Service|({user_fullname}[\w,\s]+?))))\s+(\w+=|$)""",
+    """\Wsuser=((\w+?_)?(\w+-)?\w+-\w+-\w+-\w+|(Unknown|Microsoft Intune|Microsoft Teams Services|Microsoft Online Services|Office 365 SharePoint Online|anonymous|EMPTY\.*|(({domain}[^\\\s@]+)\\)?({user}[^@\s]+)|(Sync Client|Office365 Backend Process|Device Registration Service|({user_fullname}[\w,\s]+?))))\s+(\w+=|$)""",
     """\Wsuser=({user_email}[^@\s]+@[^@\s]+)""",
     """"+UserId"+:"+({user_email}[^@\s"]+?@({email_domain}[^@\s"]+?))"+""",
     """"ClientIP":"(::1|\[?({src_ip}[A-Fa-f:\d.]+?)(\]:({src_port}\d+))?)"""",
     """\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
     """"ResultStatus":"({result}[^"]+?)"""",
+    """\WdestinationServiceName\s{0,100}=({app}[^=]+?)\s{1,100}(\w+=|$)""",
+    """\WsourceServiceName=({app}[^=]+?)\s{1,100}(\w+=|$)""",
     """"User-Agent\\?"+:\\?"+({user_agent}[^"\\]+)"""
   ]
 

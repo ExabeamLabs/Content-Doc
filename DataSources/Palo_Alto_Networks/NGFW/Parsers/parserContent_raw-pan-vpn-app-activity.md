@@ -14,17 +14,20 @@ raw-pan-vpn-event = {
   Lms = Direct
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
   Fields = [
+    """,GLOBALPROTECT,([^,]+,){2}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z),""",
     """({time}\d\d\d\d\/\d\d\/\d\d\s\d\d:\d\d:\d\d)""",
     """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
+    """:\d\d:\d\d\s+({host}[\w.-]+)\s""",
     """\d\d:\d\d:\d\d\s({host}[^,]+?)\s*\d*,({time}\d\d\d\d\/\d\d\/\d\d\s\d\d:\d\d:\d\d),""",
     """({vpn_client}GLOBALPROTECT),"+((({domain}[^\\,]+)\\)?(({user_email}[^@,]+@[^@,]+)|({user}[^,]+)))"+,""",
-    """({vpn_client}GLOBALPROTECT),(?:[^,]*,){4}({action}[^,]+)?,({activity}[^,]*)(?:[^,]*,){3}((({domain}[^\\,]+)\\)?(({user_email}[^@,]+@[^@,]+)|({user}[^,]+)))?,({country}[^,]+)?,[^,]*,({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}),[^,]*,(0\.0\.0\.0|({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})),""",
-    """GLOBALPROTECT,([^,]*,){18}((?i)any|({os}[^,]*)),""",
+    """({vpn_client}GLOBALPROTECT),(?:[^,]*,){4}({action}[^,]+)?,({activity}[^,]*)(?:[^,]*,){3}((({domain}[^\\,]+)\\)?(({user_email}[^@,]+@[^@,]+)|({user}[^,]+)))?,({country}[^,]+)?,[^,]*,(|({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})),[^,]*,(|0\.0\.0\.0|({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})),""",
+    """GLOBALPROTECT,([^,]*,){18}(|(?i)any|({os}[^,]*)),""",
     """GLOBALPROTECT,([^,]*,){19}("+,|"+[^"]+"+,)([^,]*,){3}("+,|"+({additional_info}[^"]+)"+,)""",
     """,(|\s*({failure_reason}[^,]+?)"*\s*),(""+|"({additional_info}[^"]+)"),({outcome}failure)""",
     """GLOBALPROTECT,([^,]*,){19}("+,|"+[^"]+"+,)([^,]*,){3}("+,|"+[^"]+"+,)({outcome}failure|success)""",
     """GLOBALPROTECT,([^,]*,){15}({src_mac}([a-fA-F\d]{2}[-:]){5}[a-fA-F\d]{2})""",
-    """GLOBALPROTECT,([^,]*,){19}"*(|({device_type}[^=]+?))"*\s*,"""
+    """GLOBALPROTECT,([^,]*,){19}"*(|({device_type}[^=]+?))"*\s*,""",
+    """GLOBALPROTECT,([^,]*,){10}({src_host}[^,]+)"""
   ]
 
 ```

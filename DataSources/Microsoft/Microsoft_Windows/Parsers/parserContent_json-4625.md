@@ -26,6 +26,8 @@ Name = json-4625
       """"LogonProcessName":"({auth_process}[^."]+?)\s*"""",
       """"AuthenticationPackageName":"({auth_package}[^"]+)""",
       """"IpAddress":"(?:-|({src_ip}[^"]+))"""
+      """"KeyLength":"({key_length}[^"]+)""",
+      """"SubjectUserSid":"({subject_sid}[^"]+)"""
     ]
     DupFields = ["host->dest_host"]
   }

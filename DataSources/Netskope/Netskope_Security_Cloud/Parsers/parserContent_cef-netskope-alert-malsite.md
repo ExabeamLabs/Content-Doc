@@ -23,7 +23,9 @@ Name = cef-netskope-alert-malsite
     """"severity_level":"({alert_severity}[^"]+)""",
     """"hostname":"({src_host}[^"]+)""",
     """"referer":"({referrer}[^"]+)""",
-    """"url":"[^"]+?({top_domain}[^\/\.\s]+(?i)(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)""",
+    """"url":"(\w+\\*:\/+)?(((\d+\.){3}\d+[^\s"]+)|(www\.)?[^"\/]*?({top_domain}[0-9A-Za-z]{2,255}\.[0-9A-Za-z]{2,3}\.[0-9A-Za-z]{2,3}|[0-9A-Za-z]{2,255}\.[0-9A-Za-z]{2,3}))("|\/|\?)"""
+    """"url":"([^"\/]*?)({top_domain}[^.\s\/:]+(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+))("|\/)""",
+
     """"browser":"({process}[^"]+)"""",  
     """"site":"({site_at}[^",]+)"""",
     """"_id":"({alert_id}[^"]+)"""

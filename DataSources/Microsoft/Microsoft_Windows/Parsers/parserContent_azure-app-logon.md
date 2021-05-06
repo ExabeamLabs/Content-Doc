@@ -20,7 +20,14 @@ Name = azure-app-logon
     """"tokenIssuerType"+:"+({app}[^"]+)"""",
     """"failureReason"+:"+({failure_reason}[^"]+?)(\.)?"""",
     """"userAgent"+:"+({user_agent}[^"]+)\s*"""",
-    """"operationName"+:"+({event_name}[^",]+)"""
+    """"operationName"+:"+({event_name}[^",]+)""",
+    """"authenticationMethod":"({auth_method}[^"]+)"""",
+    """"additionalDetails":"({additional_info}[^"]+)"""",
+    """"countryOrRegion":"({country_code}[^"]+)"""",
+    """"appDisplayName":"({resource}[^"]+)"""",
+    """"resultType":"({error_code}\d+)"""",
+    """deviceDetail":\{[^\}]+?displayName":"({src_host}[^"]+)"""",
+    """userId":"({user_id}[^"]+)""""
   ]
 }
 ```

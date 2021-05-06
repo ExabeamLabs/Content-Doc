@@ -11,6 +11,7 @@ Name = carbonblack-endpoint-process-network
     """"+remote_port"+:({dest_port}\d+)"""
     """"+local_port"+:({src_port}\d+)"""
     """netconn_protocol"+:"+(PROTO_)?({protocol}[^"]+)""",
-	]
+    ]
+    DupFields = ["activity_type->event_name"]
 }
 ```

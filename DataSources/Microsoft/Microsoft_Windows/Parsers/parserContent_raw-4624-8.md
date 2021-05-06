@@ -22,6 +22,8 @@ Name = raw-4624-8
       """Logon Process(:|=)\s*({auth_process}[^\s;]+)[\s;]*Authentication Package(:|=)\s*({auth_package}[^\s;]+)""",
       """Logon ID(:|=)\s*({logon_id}[^\s;]+)[\s;]*(Linked Logon|Logon GUID)""",
       """New Logon(:|=)[\s;]*Security ID(:|=)\s*(NT AUTHORITY\\+SYSTEM|({user_sid}[^;:=]+?))(\s+|;)Account Name(:|=)"""
+      """Key Length(:|=)\s*({key_length}\d+)"""
+      """Subject(:|=)[\s;]*Security ID(:|=)\s*({subject_sid}[^;:=]+?)(\s+|;)Account Name(:|=)"""
     ]
     DupFields = ["directory->process_directory"]
   }

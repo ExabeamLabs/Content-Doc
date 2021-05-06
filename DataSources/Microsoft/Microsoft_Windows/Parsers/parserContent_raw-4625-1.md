@@ -26,6 +26,8 @@ Name = raw-4625-1
       """\s*Source Network Address(:|=)\s*(?:-|({src_ip}[^\s;]+))[\s;]*Source Port(:|=)""",
       """\s*Logon Process(:|=)\s*({auth_process}[^\s;]+)[\s;]*Authentication Package(:|=)""",
       """\s*Authentication Package(:|=)\s*({auth_package}.+?)[\s;]*Transited Services(:|=)"""
+      """\s*Key Length(:|=)\s*({key_length}\d+)\s""",
+      """\s*Subject(:|=)[\s;]*Security ID(:|=)\s*({subject_sid}[^;:=]+?)(\s+|;)Account Name(:|=)"""
     ]
     DupFields = ["host->dest_host"]
   }

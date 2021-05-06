@@ -18,11 +18,15 @@ Name = cylance-alert
     """Cylance Score: ({alert_severity}\d+)""",
     """Device Name: ({src_host}[^,]+)""",
     """IP Address: \(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """Path: ({process}[^,]+\\({process_name}[^,]+))""",
+    """Path: ({process_directory}[^,]+)\\({process_name}[^,]+)?""",
     """Threat Classification:\s*({alert_name}[^,]+),""",
     """Status:\s*({outcome}[^,]+),""",
     """MD5:\s*({md5}[^,]+),""",
+    """File Owner:\s*(({domain}[^\\,]+)\\)?({user}[^,]+),""",
+    """SHA256:\s*({sha256}[^,]+),""",
+    """Detected By:\s*({additional_info}[^,]+)"""
   ]
+  DupFields = ["malware_url->process_name"]
   SOAR {
     IncidentType = "malware"
     DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->malwareName", "alert_type->malwareCategory", "src_host->malwareVictimHost", "alert_severity->sourceSeverity", "malware_url->malwareAttackerFile"]

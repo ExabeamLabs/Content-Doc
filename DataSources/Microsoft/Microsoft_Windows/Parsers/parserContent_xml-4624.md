@@ -23,7 +23,9 @@ Name = xml-4624
       """<Data Name=('|")TargetLogonId('|")>({logon_id}[^<]+)</Data>""",
       """<Data Name=('|")TargetUserSid('|")>({user_sid}[^<]+)</Data>""",
       """<Data Name=('|")WorkstationName('|")>([A-Fa-f:\d.]+|-|({src_host_windows}[^<]+?))\s*</Data>""",
-      """EventRecordID>({record_id}[^<]+)<"""
+      """EventRecordID>({record_id}[^<]+)<""",
+      """<Data Name=('|")SubjectUserSid('|")>({subject_sid}[^<]+)</Data>""",
+      """<Data Name=('|")KeyLength('|")>({key_length}[^<]+)</Data>"""
     ]
     DupFields = ["process_directory->directory"]
   }

@@ -6,9 +6,9 @@ Product: XPS
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      1      |    1    |
 
-|                           Use-Case                           | Event Types/Parsers                                                                                 | MITRE TTP                                     | Content                                                                   |
-|:------------------------------------------------------------:| --------------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------------------- |
-| [Lateral Movement](../../../UseCases/uc_lateral_movement.md) |  print-activity<br> ↳ [cef-xps-print-activity](Parsers/parserContent_cef-xps-print-activity.md)<br> | T1052 - Exfiltration Over Physical Medium<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_xps_xps_Lateral_Movement.md) |
+|                    Use-Case                    | Event Types/Parsers                                                                                 | MITRE TTP                                     | Content                                                            |
+|:----------------------------------------------:| --------------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------------ |
+| [Data Leak](../../../UseCases/uc_data_leak.md) |  print-activity<br> ↳ [cef-xps-print-activity](Parsers/parserContent_cef-xps-print-activity.md)<br> | T1052 - Exfiltration Over Physical Medium<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_xps_xps_Data_Leak.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

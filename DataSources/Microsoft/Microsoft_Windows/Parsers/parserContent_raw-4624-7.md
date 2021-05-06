@@ -12,7 +12,7 @@ Name = raw-4624-7
       """({event_name}An account was successfully logged on)""",
       """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
-      """Computer(Name)?=({host}[^\s]+)""",
+      """Computer(Name)?="?({host}[^\s"]+)""",
       """({event_code}4624)""",
       """Logon Type(:|=)\s*({logon_type}[\d]+)""",
       """New Logon[^"]*?Account Name(:|=)\s*(-|SYSTEM|({user}[^\s]+))""",
@@ -25,6 +25,8 @@ Name = raw-4624-7
       """New Logon(:|=)[\s;]*Security ID(:|=)\s*(NT AUTHORITY\\SYSTEM|({user_sid}[^;:=]+?))[\s;]*Account Name(:|=)""",
       """:\d+:\d+\s+(\d\d\d\d|((?i)AM|PM)|(::ffff:)?(({dest_ip}[a-fA-F0-9.:]+)|({dest_host}[\w\-.]+)))\s""",
       """:\d+\.\d+(\+|-)\d+:\d+\s+(::ffff:)?(({dest_ip}[a-fA-F0-9.:]+)|({dest_host}[\w\-.]+))\s"""
+      """Key Length(:|=)\s*({key_length}\d+)"""
+      """Subject(:|=)[\s;]*Security ID(:|=)\s*({subject_sid}[^;:=]+?)(\s+|;)Account Name(:|=)"""
     ]
     DupFields = [ "directory->process_directory" ]
   }

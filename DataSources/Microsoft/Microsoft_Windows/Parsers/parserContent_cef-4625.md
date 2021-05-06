@@ -23,6 +23,7 @@ Name = cef-4625
       """\sdeviceProcessName=({auth_process}[^\s]+)""",
       """Sub_,Status=({result_code}[^\s]+)""",
       """Account locked out.+?flexString1=({result_code}[^\s]+)"""
+      """Key_,Length=({key_length}\d+)"""
     ]
     DupFields = ["host->dest_host"]
   }

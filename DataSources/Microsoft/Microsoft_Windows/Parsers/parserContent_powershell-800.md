@@ -10,11 +10,11 @@ Name = powershell-800
   Conditions = [ """<Provider Name='PowerShell""", """800</EventID>""" ]
   Fields = [
     """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d+Z'/>""",
-    """<Computer>({host}.*?)</Computer>""",
-    """UserId=({domain}.*?)\\({user}.*?)\s+HostName""",
+    """<Computer>({host}[^<]+)</Computer>""",
+    """UserId=({domain}[^\\]+)\\({user}[^\s]+?)\s+HostName""",
     """Host\s*Application\s*=\s*({powershell_image}[^\s]+)\s+EngineVersion""",
-    """ScriptName=\s*({process}({directory}([\w:]+\\)?([^\\]+?\\)*?)({process_name}[^\\]*?))\s+CommandLine""",
-    """CommandLine=({command_line}[^<]+)</Data>""",
+    """ScriptName=\s*(|({process}({directory}([\w:]+\\)?([^\\]+?\\)*?)({process_name}[^\\=]*?)))\s+CommandLine""",
+    """CommandLine=\s*({command_line}[^<]+?)\s*</Data>""",
     """Details:.+?CommandInvocation.+?ParameterBinding.+?value=\\"(function\s)?({command_module}[^\s\\,"]+)""",
     """Details:.+?CommandInvocation\(.+?\):\s*\\*"({command_invocation}[^"\\]+)""",
     """({event_code}800)"""

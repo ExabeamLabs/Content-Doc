@@ -11,11 +11,12 @@ Name = pan-leef-network-alert
   Fields = [
     """Severity=({alert_severity}[^\s|]+)""",
     """DeviceName=({host}[\w\-.]+)""",
-    """LEEF:[^\|]+\|[^\|]+\|[^\|]+\|[^\|]+\|({alert_name}[^\|]+)\|""",
+    """LEEF:([^|]*\|){4}({alert_name}[^\|]+)""",
     """Subtype=({alert_type}[^\s\|]+)\s*\|""",
     """devTime=({time}[^\|]+)\s*\|""",
-    """msg="+({additional_info}[^"]+)"""",
+    """msg="({additional_info}[^"]+)"""",
     """sequence=({alert_id}\d+)""",
+    """msg="(C|c)lient\s'({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})'""",
   ]
 }
 ```

@@ -7,6 +7,7 @@ Vendor: Darktrace
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      2      |    2    |
 
-| Event Type | Rules                                                                                             | Models |
-| ---------- | ------------------------------------------------------------------------------------------------- | ------ |
-| app-login  | <b>T1078 - Valid Accounts</b><br> ↳ <b>APP-F-SA-NC</b>: New service account access to application |        |
+| Event Type       | Rules                                                                                                         | Models |
+| ---------------- | ------------------------------------------------------------------------------------------------------------- | ------ |
+| app-login        | <b>T1078 - Valid Accounts</b><br> ↳ <b>APP-Account-deactivated</b>: Activity from a de-activated user account |        |
+| failed-app-login | <b>T1078 - Valid Accounts</b><br> ↳ <b>APP-Account-deactivated</b>: Activity from a de-activated user account |        |

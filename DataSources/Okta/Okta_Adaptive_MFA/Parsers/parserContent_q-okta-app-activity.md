@@ -12,14 +12,14 @@ Name = q-okta-app-activity
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """"published"+:"+({time}[^",]+)"+""",
     """({app}(?i)Okta)""",
-    """"+actor"+:\{[^\{\}]*?"+alternateId"+:"+(system@okta\.com|({user_email}[^@]+@({domain}[^\.]+\.[^",]+))|({user}[^",]+))"+,""",
-    """"+actor"+:\{[^\{\}]*?"+displayName"+:"+(Okta System|Okta Admin|({user_fullname}[^",]+))"+,""",
+    """"+actor"+:\{[^\{\}]*?"+alternateId"+:"+(system@okta\.com|({user_email}[^@]+@({domain}[^\.]+\.[^",]+))|(unknown|({user}[^",]+)))"+,""",
+    """"+actor"+:\{[^\{\}]*?"+displayName"+:"+(Okta System|Okta Admin|(unknown|({user_fullname}[^",]+)))"+,""",
     """"policyType"+:"+({alert_type}[^",]+)""",
     """"eventType"+:"+({activity}[^",]+)""",
-    """"+result"+:"+({outcome}[^",]+)"+,""",
+    """"+result"+:"+({outcome}[^"]+)"""",
     """"reason"+:"+({additional_info}[^",]+)"+""",
     """"severity"+:"+({alert_severity}[^",]+)"+""",
-    """"+userAgent"+:(null|"+({user_agent}[^",]+))"+""",
+    """"+userAgent"+:(null|"+({user_agent}[^"]+))"+""",
     """"outcome"+:[^\]]*?"+result"+:"+FAILURE"+,"+reason"+:"+({failure_reason}[^"]+)"+""",
     """"displayMessage"+:"+({alert_name}[^"]+)""",
     """"city"+:"+({location_city}[^",]+)""",
@@ -30,7 +30,7 @@ Name = q-okta-app-activity
     """"client"+:[^\]]*?"+ipAddress"+:"+({src_ip}[a-fA-F\d.:]+)"""
     """"client"+:[^\]]*?"+browser"+:"+((?i)unknown|({browser}[^",]+))""",
     """"client"+:[^\]]*?"+os":"+((?i)unknown|({os}[^",]+))""",
-    """"client"+:[^\]]*?"+rawUserAgent"+:"+((?i)unknown|({user_agent}[^",]+))""",
+    """"client"+:[^\]]*?"+rawUserAgent"+:"+((?i)unknown|({user_agent}[^"]+?))"""",
     """"target"+:\[\{[^\}\]]+"+type"+:"+({object_type}[^",]+)""""
   ]
   DupFields = ["activity->event_name", "app->object"]

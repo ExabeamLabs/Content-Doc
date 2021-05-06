@@ -11,8 +11,8 @@ Name = q-okta-app-login-6
   Fields = [
     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
     """"published"+:"+({time}[^",]+)"+""",
-    """"+actor"+:\{[^\{\}]*?"+alternateId"+:"+(system@okta\.com|({user_email}[^@]+@({domain}[^\.]+\.[^",]+))|({user}[^",]+))"+,""",
-    """"+actor"+:\{[^\{\}]*?"+displayName"+:"+(Okta System|Okta Admin|({user_fullname}[^",]+))"+,""",
+    """"+actor"+:\{[^\{\}]*?"+alternateId"+:"+(system@okta\.com|({user_email}[^@]+@({domain}[^\.]+\.[^",]+))|(unknown|({user}[^",]+)))"+,""",
+    """"+actor"+:\{[^\{\}]*?"+displayName"+:"+(Okta System|Okta Admin|unknown|({user_fullname}[^",]+))"+,""",
     """"policyType"+:"+({alert_type}[^",]+)""",
     """"eventType"+:"+({activity}[^",]+)""",
     """"+result"+:"+({outcome}[^",]+)"+,""",

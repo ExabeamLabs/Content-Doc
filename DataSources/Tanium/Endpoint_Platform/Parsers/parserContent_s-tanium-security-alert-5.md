@@ -27,7 +27,7 @@ Name = s-tanium-security-alert-5
       """"source\\*":\\*"({log_source}[^"]+?)\\*"""",
       """"Intel Name"+:"+({alert_name}[^"]+)""",
       """"Intel Type"+:"+({alert_type}[^"]+)""",
-      """"Match Details"+:"+\[({additional_info}[^"\]]+)"""
+      """"Intel Labels":"({additional_info}[^"]+)"""
     ]
 }
 ```

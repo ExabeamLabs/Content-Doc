@@ -15,7 +15,7 @@ Name = syslog-mysql-dbquery-1
       """({app}mysql)""",
       """,QUERY,[^\}]+?(concat\([^\)]+\))?\s(?i)from\s+\`?({database_name}[^.,\`]+)\`?\.\`?({table_name}\w+)\`?""",
       """message"+:"+([^,]+,){2}({user}[^,]+),""",
-      """message"+:"+([^,]+,){2}v(_|-)okta-({user}\w+)(-|_priv_vault)""",
+      """message"+:"+([^,]+,){2}v(_|-)okta-(\w+-)?({user}\w+)(-|_priv_vault)""",
       """message"+:"+([^,]+,){3}({src_ip}[^,]+),""",
       """,QUERY,({database_name}[^,]+),""",
       """,QUERY,[^,]*,'(?:\/\*[^\/]+\/)?\s*({db_operation}\w+)""",

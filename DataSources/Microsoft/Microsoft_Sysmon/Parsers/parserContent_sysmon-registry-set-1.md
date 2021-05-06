@@ -5,7 +5,7 @@ Name = sysmon-registry-set-1
     Vendor = Microsoft
     Product = Microsoft Sysmon
     Lms = Syslog
-    DataType = "file-operations"
+    DataType = "registry-write"
     TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
     Conditions = [ """Microsoft-Windows-Sysmon""", """Registry value set""", """"Task":13""" ]
     Fields = [
@@ -15,7 +15,7 @@ Name = sysmon-registry-set-1
        """"UtcTime":\s*"({time}\d\d\d\d\-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)""",
        """"UserID":\s*"({user_sid}[^"]+)""",
        """"ProcessGuid":\s*"({process_guid}[^"]+)""",
-       """"ProcessID":\s*({pid}\d+)""",
+       """"ProcessID":\s*({process_id}\d+)""",
        """"Task":\s*({event_code}\d+)""",
        """"RuleName":\s*"(-|({accesses}[^"]+))""",
        """"AccountName":\s*"((?i)SYSTEM|({user}[^"]+))""",

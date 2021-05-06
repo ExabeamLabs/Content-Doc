@@ -9,13 +9,14 @@ Name = raw-member-added-2008
   TimeFormat = "MMM dd HH:mm:ss yyyy"
   Conditions = [ """A member was added to a security-enabled""" ]
   Fields = [
+    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """({event_name}A member was added to a security-enabled [\w\s]+ group)""",
     """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
     """({time}\w+ \d+ \d+:\d+:\d+ \d{4})\s+47\d\d\s+Microsoft""",
     """"_raw":"({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d (AM|PM|am|pm))""",
     """exabeam_host=({host}[\w\-.]+)""",
     """exabeam_source=({host}[A-Fa-f:\d.]+)""",
-    """(?i)(((audit|success)( |_)(success|audit))|information)(\s+|,)({host}[\w.\-]+)""",
+    """\s(?i)(((audit|success)( |_)(success|audit))|information)(\s+|,)({host}[\w.\-]+)""",
     """ComputerName\\=({host}[\w\-.]+)""",
     """Computer(\w+)?["\s]*(:|=)\s*"?({host}.+?)("|\s|;)""",
     """({event_code}4728|4732|4756)""",
@@ -28,6 +29,8 @@ Name = raw-member-added-2008
     """A member was added to a security-enabled ({group_type}\w+) group""",
     """Account Name:\s*(?:-|({account_dn}CN=.+?,({account_ou}OU.+?DC=[\w-]+)))?\s*Group:""",
     """Group:\s*Security ID:\s*(None|({group_id}[^\s]+))\s*(Group|Account) Name:\s*(None|({group_name}.+?))?\s*(Group|Account) Domain:\s*(None|({group_domain}[^\s]+))""",
+    """Subject:\s+[^:]+:\s+\S+\s+Account Name:\s+({user}[^:]+?)\s+Account Domain:\s+({domain}[^:]+?)\s+Logon ID:""",
+    """Member:\s+[^:]+:\s+\S+\s+Account Name:\s+CN=({account}[^,]+)""",
     """Security(,|\s+)({record_id}\d+)""",
     """"Account":"(({domain}[^\\\s"]+)\\+)?({user}[^\\\s"]+)""",
     """"MemberName":"(?:-|({account_dn}CN=.+?,({account_ou}OU.+?DC=[\w-]+)))?""",

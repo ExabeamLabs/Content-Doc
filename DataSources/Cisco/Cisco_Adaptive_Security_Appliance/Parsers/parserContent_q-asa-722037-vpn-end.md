@@ -12,6 +12,8 @@ Name = q-asa-722037-vpn-end
    """({time}\w+ \d+ \d\d\d\d \d\d:\d\d:\d\d)""",
    """exabeam_host=(.+?@\s*)?({host}[\w.\-]+)""",
    """[\s\t]+\d\d:\d\d:\d\d\s+({host}[\w.\-]+).+?%ASA""",
+   """({host}[^\s]+)\s{1,20}:\s{1,20}%FTD-""",
+   """({time}\d{1,4}-\d{1,2}-\d{1,2}T\d{1,2}:\d{1,2}:\d{1,2}Z?)""",
    """%ASA-({priority}\d+)-({event_code}\d+)""",
    """Group\s*<({group}.*?)>""",
    """IP\s*<({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})>\s*({event_name}.*?):\s""",
