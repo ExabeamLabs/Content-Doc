@@ -6,7 +6,9 @@ Name = cef-microsoft-failed-app-login
   Conditions = [ """CEF:""", """destinationServiceName=Office 365""", """description":"Failed log on """ ]
   Fields = ${MSParserTemplates.cef-azure-app-activity-1.Fields}[
     """"description":"Failed log on \(({failure_reason}[^\)]+)""",
-    """failedUserData":\{"userName":"(({user_email}[^"@]+[^\."]+\.[^"]+)|({user}[^"]+))"""
+    """"failedUserData":\{"userName":"(({user_email}[^@"]+@[^\.]+\.[^"]+)|({user}[^"]+))"""",
+    """"operatingSystem":\{"name":"((?i)Unknown|({os}[^"]+))"""",
+    """"userAgent":";?({user_agent}[^"]+?)[;]*"""",
   ]
 }
 cef-azure-app-activity-1 = {
