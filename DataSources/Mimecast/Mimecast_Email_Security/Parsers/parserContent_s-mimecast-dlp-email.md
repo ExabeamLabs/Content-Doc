@@ -10,7 +10,7 @@ Name = s-mimecast-dlp-email
     Conditions = [ """|Dir=""", """|Sender=""", """|Rcpt=""" ]
     Fields = [
       """exabeam_host=({host}[\w.\-]+)""",
-      """datetime=({time}\d\d\d\d-\d\d-\d\dT\d\d:\s*\d\d:\d\d[+-].+?)\|""",
+      """datetime=({time}\d\d\d\d-\d\d-\d\dT\d\d:\s{0,100}\d\d:\d\d[+-].+?)\|""",
       """\|aCode=(|({alert_id}[^\|]+?))\|""",
       """\|Dir=(|({direction}[^\|]+?))\|""",
       """\|Act=(|({action}[^\|]+?))\|""",
@@ -23,9 +23,9 @@ Name = s-mimecast-dlp-email
       """\|headerFrom=(|<>|({sender}\S+?@({external_domain_sender}\S+?)))\|""",
       """\|Rcpt=(|<>|({recipient}\S+?@({external_domain_recipient}\S+?)))\|""",
       """\|Rcpt=(|<>|({recipients}\S+?))\|""",
-      """\|Subject=\\?(|({subject}.+?))\s*\\?\|""",
-      """\|Snt=({bytes}\d+)\|""",
-      """\|SpamScore=({spam_score}\d+)""",
+      """\|Subject=\\?(|({subject}.+?))\s{0,100}\\?\|""",
+      """\|Snt=({bytes}\d{1,100})\|""",
+      """\|SpamScore=({spam_score}\d{1,100})""",
       """\|IP=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     ]
 }

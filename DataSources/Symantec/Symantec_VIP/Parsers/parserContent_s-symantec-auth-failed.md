@@ -9,8 +9,8 @@ Name = s-symantec-auth-failed
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS z"
   Conditions = [ """StatusMessage: Authentication Failed""" ]
   Fields = [ 
-    """INFO.*?({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d\.\d\d\d \w+(\+|\-)\d+)\s*"\s+\S+\s+({service}[^":]+)""",
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """INFO.*?({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d\.\d\d\d \w+(\+|\-)\d{1,100})\s{0,100}"\s{1,100}\S+\s{1,100}({service}[^":]+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """for user \[({user}[^\]\s]+)""",
     """({failure_reason}Authentication Failed)"""
   ]

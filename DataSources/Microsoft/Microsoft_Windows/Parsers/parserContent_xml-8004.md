@@ -15,12 +15,12 @@ Name = xml-8004
      """Name='DomainName'>(NULL|({domain}[^<>]+))<""",
      """<EventID>({event_code}[^<>]+)</EventID>""",
      """({event_name}Domain Controller Blocked Audit: Audit NTLM authentication to this domain controller)""",
-     """<Execution ProcessID='({process_id}\d+)'""",
+     """<Execution ProcessID='({process_id}\d{1,100})'""",
      """Name='SChannelName'>({resource}[^<>]+)<""",
      """Name='WorkstationName'>\\*(NULL|({src_host}[^<>]+))<""",
-     """Name='UserName'>(({user_email}[^@\s<>]+@[^@\s<>]+)|({user}[^<>]+?))\s*<""",
+     """Name='UserName'>(({user_email}[^@\s<>]+@[^@\s<>]+)|({user}[^<>]+?))\s{0,100}<""",
      """<Security UserID='({user_sid}[^<>\/']+)""",
-     """security policy Network Security:\s*Restrict NTLM:\s*({policy}[^\.:]+)""",
+     """security policy Network Security:\s{0,100}Restrict NTLM:\s{0,100}({policy}[^\.:]+)""",
   ]
   DupFields = ["resource->dest_host"]
 }

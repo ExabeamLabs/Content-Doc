@@ -13,18 +13,18 @@ Name = q-leef-ds-object-modification
     """devTime=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """dst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """cat=({activity_type}.+?)\s+(\w+=|$)""",
-    """usrName=(({domain}[^\\]+)\\)?({user}.+?)\s+(\w+=|$)""",
-    """AffectedObject=(?:\t|([^\\]+\\)?({object}.+?))\s*(\w+=|$)""",
-    """AttrName=(?:\t|({attribute}.+?))\s+(\w+=|$)""",
-    """AttrOldValue=(?:\t|({old_attribute}.+?))\s+(\w+=|$)""",
-    """AttrNewValue=(?:\t|({new_attribute}.+?))\s+(\w+=|$)""",
-    """Success=({outcome}.+?)\s+(\w+=|$)""",
-    """Success=False.+?Reason=({failure_reason}.+?)\s+(\w+=|$)""",
-    """DistinguishedName=(.+?({object_dn}(CN|cn)=.+?,({object_ou}(OU|ou).+?(DC|dc)=[\w-]+))|(?:.+?))\s+(\w+=|$)""",
-    """DistinguishedName=({object_dn}.+?)\s+(\w+=|$)""",
-    """ClassName=({object_class}.+?)\s+OrigServer=""",
-    """OrigServer=([^\\]+\\)?({dest_host}.+?)\s+(\w+=|$)"""
+    """cat=({activity_type}.+?)\s{1,100}(\w+=|$)""",
+    """usrName=(({domain}[^\\]+)\\)?({user}.+?)\s{1,100}(\w+=|$)""",
+    """AffectedObject=(?:\t|([^\\]+\\)?({object}.+?))\s{0,100}(\w+=|$)""",
+    """AttrName=(?:\t|({attribute}.+?))\s{1,100}(\w+=|$)""",
+    """AttrOldValue=(?:\t|({old_attribute}.+?))\s{1,100}(\w+=|$)""",
+    """AttrNewValue=(?:\t|({new_attribute}.+?))\s{1,100}(\w+=|$)""",
+    """Success=({outcome}.+?)\s{1,100}(\w+=|$)""",
+    """Success=False.+?Reason=({failure_reason}.+?)\s{1,100}(\w+=|$)""",
+    """DistinguishedName=(.+?({object_dn}(CN|cn)=.+?,({object_ou}(OU|ou).+?(DC|dc)=[\w-]+))|(?:.+?))\s{1,100}(\w+=|$)""",
+    """DistinguishedName=({object_dn}.+?)\s{1,100}(\w+=|$)""",
+    """ClassName=({object_class}.+?)\s{1,100}OrigServer=""",
+    """OrigServer=([^\\]+\\)?({dest_host}.+?)\s{1,100}(\w+=|$)"""
   ]
 }
 ```

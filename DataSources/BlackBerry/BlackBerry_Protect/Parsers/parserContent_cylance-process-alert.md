@@ -9,10 +9,10 @@ Name = cylance-process-alert
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """Cylance Protect""", """MEMORY_VIOLATION""", """outcome=terminate""", """|security-threat-detected|""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """created":"({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """"user_name":"({user}[^"]+)"""",
-    """"process_id":({pid}\d+)""",
+    """"process_id":({pid}\d{1,100})""",
     """"image_name":"({process}({directory}(\w:)?(?:[^:\]]+)?[\\\/])?({process_name}[^\\\/"\]]+?))"""",
     """"file_hash_id":"({sha256_sum}[^"]+)"""",
     """"groups":"({user_group}[^"]+)"""",
@@ -22,7 +22,7 @@ Name = cylance-process-alert
     """msg=({alert_type}[^:]+)""",
     """"agent_event_id":"({alert_id}[^"]+)"""",
     """"file_hash_id":"({file_hash}[^"]+)"""",
-    """\sfname=([^=]*\\)?({file_name}[^\.]+\.({file_ext}[^\\:\s.]+)?)\s+\w+="""
+    """\sfname=([^=]*\\)?({file_name}[^\.]+\.({file_ext}[^\\:\s.]+)?)\s{1,100}\w+="""
   ]
   DupFields = [ "directory->process_directory", "file_hash->sha256_at", "file_name->name_at" ]
 }

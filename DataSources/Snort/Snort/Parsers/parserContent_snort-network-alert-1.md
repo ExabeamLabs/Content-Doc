@@ -9,8 +9,8 @@ Name = snort-network-alert-1
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """ snort[""", """[SNORTIDS[""", """ || """ ]
   Fields = [
-    """\s({host}[\w\-.]+)\s+snort\[""",
-    """\[SNORTIDS\[.*?({time}\d+-\d+-\d+\s+\d+:\d+:\d+)\S*\s+\d+\s+\[[^\]]*\]\s+({alert_name}[^\|]+?)\s*\|+\s*({alert_type}[^\|]*?)\s*\|+\s*({alert_severity}\d+)\s+({dest_ip}[A-Fa-f:\d.]+)\s+({src_ip}[A-Fa-f:\d.]+)\s+[^\|]*?\|+[^\|]*?\|+\s*({additional_info}.*?)\s*\|\|""",
+    """\s({host}[\w\-.]+)\s{1,100}snort\[""",
+    """\[SNORTIDS\[.*?({time}\d{1,100}-\d{1,100}-\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100})\S*\s{1,100}\d{1,100}\s{1,100}\[[^\]]*\]\s{1,100}({alert_name}[^\|]+?)\s{0,100}\|+\s{0,100}({alert_type}[^\|]*?)\s{0,100}\|+\s{0,100}({alert_severity}\d{1,100})\s{1,100}({dest_ip}[A-Fa-f:\d.]+)\s{1,100}({src_ip}[A-Fa-f:\d.]+)\s{1,100}[^\|]*?\|+[^\|]*?\|+\s{0,100}({additional_info}.*?)\s{0,100}\|\|""",
   ]
 }
 ```

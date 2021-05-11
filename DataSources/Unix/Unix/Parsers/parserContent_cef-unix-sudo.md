@@ -9,15 +9,15 @@ Name = cef-unix-sudo
     TimeFormat = "epoch"
     Conditions = [ """CEF:""", """|Unix|Unix|""", """|User Executed Command|""", """ deviceProcessName=sudo """ ]
     Fields = [
-      """\srt=({time}\d+)""",
-      """\sdvc=({host}\S+)(\s+\w+=|\s*$)""",
-      """\sdvchost=({host}\S+)(\s+\w+=|\s*$)""",
-      """\sdhost=({dest_host}\S+)(\s+\w+=|\s*$)""",
-      """\sdst=({dest_ip}\S+)(\s+\w+=|\s*$)""",
-      """\ssuser=(|({user}.+?))(\s+\w+=|\s*$)""",
-      """\ssuid=(|({user_uid}.+?))(\s+\w+=|\s*$)""",
-      """\sfname=((/usr)?/bin/)?su(\s+((-\w*[csgG]\s+("([^"\\]|\\\\|\\")+"|'.+?'|\S+))|-\w+|--(session-command|command|group|supp-group|shell)\s+("([^"\\]|\\\\|\\")+"|'.+?'|\S+)|--\w+|-))*\s+(?!-+)["']?({account}\S+)["']?(\s+\w+=|\s*$)""",
-      """\sduser=(|({account}.+?))(\s+\w+=|\s*$)""",
+      """\srt=({time}\d{1,100})""",
+      """\sdvc=({host}\S+)(\s{1,100}\w+=|\s{0,100}$)""",
+      """\sdvchost=({host}\S+)(\s{1,100}\w+=|\s{0,100}$)""",
+      """\sdhost=({dest_host}\S+)(\s{1,100}\w+=|\s{0,100}$)""",
+      """\sdst=({dest_ip}\S+)(\s{1,100}\w+=|\s{0,100}$)""",
+      """\ssuser=(|({user}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+      """\ssuid=(|({user_uid}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+      """\sfname=((/usr)?/bin/)?su(\s{1,100}((-\w*[csgG]\s{1,100}("([^"\\]|\\\\|\\")+"|'.+?'|\S+))|-\w+|--(session-command|command|group|supp-group|shell)\s{1,100}("([^"\\]|\\\\|\\")+"|'.+?'|\S+)|--\w+|-))*\s{1,100}(?!-+)["']?({account}\S+)["']?(\s{1,100}\w+=|\s{0,100}$)""",
+      """\sduser=(|({account}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
       """({event_code}sudo)"""
     ]
   }

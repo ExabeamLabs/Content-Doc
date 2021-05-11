@@ -10,9 +10,9 @@ Name = citrix-appfw-400-resp
   Conditions = [ """ APPFW """, """PPE""", """ AF_400_RESP """ ]
   Fields = [
     """exabeam_host=({host}[\w\-.]+)""",
-    """\s({time}\d\d\/\d\d\/\d\d\d\d:\d\d:\d\d:\d\d)\s+(GMT|({host}\S+))\s+({interface_in}\S+)\s+:\s+(\S+\s+){2}({event_name}\S+)\s+({event_code}\S+)""",
-    """\s\d\d\/\d\d\/\d\d\d\d:\d\d:\d\d:\d\d\s+(\S+\s+){9}({src_ip}[A-Fa-f:\d.]+)\s+({alert_id}\S+)""",
-    """\s\d\d\/\d\d\/\d\d\d\d:\d\d:\d\d:\d\d\s+(\S+\s+){12}({rule}\S+)\s+({full_url}[^\s]+)\s+({result}[^<]+)\s+<({action}[^>]+)>""",
+    """\s({time}\d\d\/\d\d\/\d\d\d\d:\d\d:\d\d:\d\d)\s{1,100}(GMT|({host}\S+))\s{1,100}({interface_in}\S+)\s{1,100}:\s{1,100}(\S+\s{1,100}){2}({event_name}\S+)\s{1,100}({event_code}\S+)""",
+    """\s\d\d\/\d\d\/\d\d\d\d:\d\d:\d\d:\d\d\s{1,100}(\S+\s{1,100}){9}({src_ip}[A-Fa-f:\d.]+)\s{1,100}({alert_id}\S+)""",
+    """\s\d\d\/\d\d\/\d\d\d\d:\d\d:\d\d:\d\d\s{1,100}(\S+\s{1,100}){12}({rule}\S+)\s{1,100}({full_url}[^\s]+)\s{1,100}({result}[^<]+)\s{1,100}<({action}[^>]+)>""",
   ]
   DupFields = ["event_name->alert_name"]
 }

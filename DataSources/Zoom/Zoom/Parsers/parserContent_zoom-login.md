@@ -10,14 +10,14 @@ Name = zoom-login
   Conditions = [ """|Skyformation|""", """|login-success|""", """destinationServiceName=Zoom""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """\WdestinationServiceName=({app}.+?)(\s+\w+=|\s*$)""",
-    """\Wend=({time}\d+)""",
-    """\WflexString1=(|({activity}.+?))(\s+\w+=|\s*$)""",
-    """\ssuser=([^\s]+\/)?({user_email}[^\s@]+@[^\s@]+)\s+(\w+=|$)""",
-    """\Wmsg=({additional_info}.+?)(\s+\w+=|\s*$)""",
+    """\WdestinationServiceName=({app}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wend=({time}\d{1,100})""",
+    """\WflexString1=(|({activity}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\ssuser=([^\s]+\/)?({user_email}[^\s@]+@[^\s@]+)\s{1,100}(\w+=|$)""",
+    """\Wmsg=({additional_info}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
-    """"client_type"\s*:\s*"({client_type}[^"]+)"""",
-    """"version"\s*:\s*"({app_version}[^"]+)""""
+    """"client_type"\s{0,100}:\s{0,100}"({client_type}[^"]+)"""",
+    """"version"\s{0,100}:\s{0,100}"({app_version}[^"]+)""""
   ]
 }
 ```

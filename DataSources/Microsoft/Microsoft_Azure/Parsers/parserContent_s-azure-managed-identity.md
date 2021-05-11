@@ -10,7 +10,7 @@ Name = s-azure-managed-identity
   Conditions = ["""operationName":"MICROSOFT.MANAGEDIDENTITY"""]
   Fields = [
      """time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""
-     """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
+     """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
      """({service}MICROSOFT.MANAGEDIDENTITY)""",
      """"MICROSOFT.MANAGEDIDENTITY\/({activity}[^"]+)""",
      """ipaddr":"({src_ip}[^"]+)""",
@@ -23,7 +23,7 @@ Name = s-azure-managed-identity
      """Microsoft.Authorization/policyDefinitions/({policy}[^\/\\"]+)""",
      """resultType":"({outcome}[^"]+)"""
      """resourceId":".*\/RESOURCEGROUPS\/({account_id}[^\/]+)"""
-         """\[Namespace:\s*({event_hub_namespace}\S+) ; EventHub name:\s*({event_hub_name}[\w-]+)"""
+         """\[Namespace:\s{0,100}({event_hub_namespace}\S+) ; EventHub name:\s{0,100}({event_hub_name}[\w-]+)"""
    ]
 DupFields= ["event_hub_namespace->host"]
 }

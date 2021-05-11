@@ -10,12 +10,12 @@ Name = syslog-sophos-snmp-denied
   TimeFormat = "yyyy-MM-dd HH:mm:ss a"
   Conditions = [ """On-access scanner has denied access to location """, """SOPHOS:""", """SNMP Trap""", """Variable Bindings""" ]
   Fields = [
-    """exabeam_host=([^=]+?@\s*)?({host}[^\s]+)""",
+    """exabeam_host=([^=]+?@\s{0,100})?({host}[^\s]+)""",
     """Address=({host}\S+)""",
-    """({host}[\w\.-]+)\s+MSWinEventLog""",
+    """({host}[\w\.-]+)\s{1,100}MSWinEventLog""",
     """\sReceived Time:({time}\d\d\d\d-\d\d-\d\d \d{1,2}:\d\d:\d\d (AM|PM|am|pm))""",
-    """\sSource:({src_ip}[^\(\s]+)(\s*\(({src_host}[\w\.-]+)\))?""",
-    """:=\s*On-access scanner has denied access to location "({file_path}(({file_parent}.+)[\\\/])?({file_name}.+?))"\s+(for user\s+(({domain}.+?)\\)?({user}.+?)\s+(\S+=|$))?""",
+    """\sSource:({src_ip}[^\(\s]+)(\s{0,100}\(({src_host}[\w\.-]+)\))?""",
+    """:=\s{0,100}On-access scanner has denied access to location "({file_path}(({file_parent}.+)[\\\/])?({file_name}.+?))"\s{1,100}(for user\s{1,100}(({domain}.+?)\\)?({user}.+?)\s{1,100}(\S+=|$))?""",
     """({accesses}access)""",
     """({alert_name}denied access)""",
   ]

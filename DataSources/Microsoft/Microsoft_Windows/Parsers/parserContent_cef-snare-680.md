@@ -11,10 +11,10 @@ Name = cef-snare-680
   Fields = [ 
     """({event_code}680)""",
     """({event_name}Logon attempt)""",
-    """\srt=({time}\d+)""",
+    """\srt=({time}\d{1,100})""",
     """ahost=({host}[^\s]+)""",
-    """suser=({user}.+?)\s+\w+=""",
-    """dhost=({dest_host}.+?)\s+\w+="""
+    """suser=({user}.+?)\s{1,100}\w+=""",
+    """dhost=({dest_host}.+?)\s{1,100}\w+="""
   ]
 }
 ```

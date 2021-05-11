@@ -10,16 +10,16 @@ Name = n-forwarded-cef-4673
   Conditions = [ "|McAfee|ESM", "43-263046730"]
   Fields = [
     """({event_name}A privileged service was called.)""",
-    """\|McAfee\|.+?\|43-2630({event_code}\d+)(0|1)\|""",
-    """\srt=({time}\d+)\s+cnt""",
+    """\|McAfee\|[^|]+?\|[^|]+?\|43-2630({event_code}\d{1,100})(0|1)\|""",
+    """\srt=({time}\d{1,100})\s{1,100}cnt""",
     """shost=({host}[^\s]+)""",
     """src=({src_ip}[a-fA-F:\d.]+)""",
     """sntdom=({domain}[^\s]+)""",
     """suser=({user}[^\s]+)""",
-    """nitroPrivileges=({privileges}.+?)(\s+\w+=|"*\s*$)""",
+    """nitroPrivileges=({privileges}.+?)(\s{1,100}\w+=|"{0,20}\s{0,100}$)""",
     """\sact=({outcome}[^\s]+)""",
-    """nitroSource_Logon_ID=({logon_id}.+?)(\s+\w+=|"*\s*$)""",
-    """nitroSecurity_ID=({user_sid}.+?)(\s+\w+=|"*\s*$)""",
+    """nitroSource_Logon_ID=({logon_id}.+?)(\s{1,100}\w+=|"{0,20}\s{0,100}$)""",
+    """nitroSecurity_ID=({user_sid}.+?)(\s{1,100}\w+=|"{0,20}\s{0,100}$)""",
   ]
   DupFields = ["host->dest_host"]
 }

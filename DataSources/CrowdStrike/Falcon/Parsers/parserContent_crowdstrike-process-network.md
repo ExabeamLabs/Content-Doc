@@ -11,11 +11,11 @@ Name = crowdstrike-process-network
   Conditions = [ """"event_simpleName":"""", """NetworkListenIP""" ]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """"timestamp":"({time}\d+)""",
+    """"timestamp":"({time}\d{1,100})""",
     """"LocalAddressIP4":"(0.0.0.0|0:0:0:0:0:0:0:0|({dest_ip}[A-Fa-f:\d.]+))""",
-    """"LocalPort":"({dest_port}\d+)""",
+    """"LocalPort":"({dest_port}\d{1,100})""",
     """"RemoteAddressIP4":"(0.0.0.0|0:0:0:0:0:0:0:0|({dest_ip}[A-Fa-f:\d.]+))""",
-    """"RemotePort":"({dest_port}\d+)""",
+    """"RemotePort":"({dest_port}\d{1,100})""",
     """"ConnectionDirection":"({direction}[^"]+)""",
     """"ContextProcessId":"({process_guid}[^"]+)""",
     """"event_simpleName":"({event_name}[^"]+)""",

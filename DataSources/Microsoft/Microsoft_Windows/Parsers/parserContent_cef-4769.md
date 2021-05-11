@@ -11,8 +11,8 @@ Name = cef-4769
     Fields = [
       """({event_name}A Kerberos service ticket was requested)""",
       """({event_code}4769)""",
-      """\srt=({time}\d+)""",
-      """\sduser=({user}.+?)(@({domain}.+?))?\s+\w+=""",
+      """\srt=({time}\d{1,100})""",
+      """\sduser=({user}.+?)(@({domain}.+?))?\s{1,100}\w+=""",
       """\sdestinationServiceName=({dest_host}\S+\$)\s""",
       """\sdestinationServiceName=({service_name}\S+)""",
       """\scs3=(::[\w]+:)?({src_ip}[a-fA-F:\d.]+)""",

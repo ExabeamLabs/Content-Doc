@@ -6,24 +6,22 @@ Name = mcafee-dlp-print
   Conditions = [ """(Printer)""", """RulesToDisplay=""", """ViolationUTCTime=""", """Destination=""", """Username=""", """ViolationTimezone=""", """ViolationLocalTime=""" ]
 
   Fields = ${McAfeeParserTemplates.mcafee-dlp-activity.Fields} [
-     """,\sDestination="*({printer_name}[^"]+)*",\s""",
-     """,\sFileName="*({object}.+?)"*,\s"""
-  ]
-}
+     """,\sDestination="{0,20}({printer_name}[^"]+)*",\s""",
+     """,\sFileName="{0,20}({object}.+?)"{0,20}
 mcafee-dlp-activity = {
       Vendor = McAfee
       Product = McAfee DLP
       Lms = Splunk
       TimeFormat = "YYYY-MM-dd HH:mm:ss"
       Fields = [
-        """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
-        """,\sViolationUTCTime="*({time}\d{4}\-\d{2}\-\d{2}\s\d{2}:\d{2}:\d{2})""",
-        """,\sRulesToDisplay="*({alert_name}[^"]+)"*,\s""",
-        """,\sName="*({src_host}[^"]+)"*,\s""",
-        """,\sUsername="*({user}[^"]+)"*,\s""",
-        """,\sFilePath="*({file_path}.+?)"*,\s""",
-        """,\sFileName="*({file_name}.+?)"*,\s""",
-        """,\sFileSize="*({bytes}\d+)"*"""
+        """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
+        """,\sViolationUTCTime="{0,20}({time}\d{4}\-\d{2}\-\d{2}\s\d{2}:\d{2}:\d{2})""",
+        """,\sRulesToDisplay="{0,20}({alert_name}[^"]+)"{0,20},\s""",
+        """,\sName="{0,20}({src_host}[^"]+)"{0,20},\s""",
+        """,\sUsername="{0,20}({user}[^"]+)"{0,20},\s""",
+        """,\sFilePath="{0,20}({file_path}.+?)"{0,20},\s""",
+        """,\sFileName="{0,20}({file_name}.+?)"{0,20},\s""",
+        """,\sFileSize="{0,20}({bytes}\d{1,100})"{0,20}"""
         ]
 
 ```

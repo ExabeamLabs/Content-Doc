@@ -11,15 +11,15 @@ Name = cef-icdb-app-activity
     Fields = [
     """({app}ICDB)""",
     """CEF:([^\|]*\|){5}({activity}[^\|]+)""",
-    """\Wrt=({time}\d+)""",
+    """\Wrt=({time}\d{1,100})""",
     """\Wdvc=({host}[a-fA-F\d.:]+)""",
-    """\Wdvchost=({host}[^=]+?)(\s+\w+=|\s*$)""",
-    """\WrequestContext=[^\s=]*?;({target}[^=]+?)(\s+\w+=|\s*$)""",
-    """\Wshost=({src_host}[^=]+?)(\s+\w+=|\s*$)""",
+    """\Wdvchost=({host}[^=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\WrequestContext=[^\s=]*?;({target}[^=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wshost=({src_host}[^=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
-    """\Wsuser=(({domain}[^=]*?)[\\\/]+)?({user}[^=\\\/]+?)(\s+\w+=|\s*$)""",
-    """\Wduid=({object}[^=]+?)(\s+\w+=|\s*$)""",
-    """\Wfname=({additional_info}[^=]+?)(\s+\w+=|\s*$)""",
+    """\Wsuser=(({domain}[^=]*?)[\\\/]+)?({user}[^=\\\/]+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wduid=({object}[^=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wfname=({additional_info}[^=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
 ```

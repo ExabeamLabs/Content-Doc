@@ -8,13 +8,13 @@ Name = evntslog-675
     DataType = "windows-675"
     TimeFormat = "MMM dd HH:mm:ss yyyy"
     Conditions = ["(675)", "Pre-authentication failed"]
-    Fields = [ """({time}\w+ \d{1,2} [\d:]+ \d+):""",
+    Fields = [ """({time}\w+ \d{1,2} [\d:]+ \d{1,100}):""",
       """({event_name}Pre-authentication failed)""",
       """({host}[^\/\s]+)\/Security \(({event_code}675)\)""",
-      """User Name:\s+({user}.+?)\s+User ID:\s\%\{({user_sid}[^}]+)\}""",
-      """Service Name:\s+\w+\/(?=\w)({domain}.+?)\s+Pre-Authentication""",
-      """Failure Code:\s+({result_code}[\w]+)""",
-      """Client Address:\s+(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)"""
+      """User Name:\s{1,100}({user}.+?)\s{1,100}User ID:\s\%\{({user_sid}[^}]+)\}""",
+      """Service Name:\s{1,100}\w+\/(?=\w)({domain}.+?)\s{1,100}Pre-Authentication""",
+      """Failure Code:\s{1,100}({result_code}[\w]+)""",
+      """Client Address:\s{1,100}(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)"""
     ]
     DupFields = ["host->dest_host"]
   }

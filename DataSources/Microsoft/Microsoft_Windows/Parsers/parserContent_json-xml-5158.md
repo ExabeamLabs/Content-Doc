@@ -16,7 +16,7 @@ Name = json-xml-5158
     """<Data Name='ProcessId'>({pid}.+?)</Data>""",
     """<Data Name='Application'>({process}({directory}[^<>]*?[\\\/]+)?({process_name}[^"\\\/]+))</Data>""",
     """<Data Name='SourceAddress'>(0\.0\.0\.0|({dest_ip}[a-fA-F:\d.]+))</Data>""",
-    """<Data Name='SourcePort'>({dest_port}\d+)""",
+    """<Data Name='SourcePort'>({dest_port}\d{1,100})""",
     """<Data Name='Protocol'>({ms_protocol_num}.+?)</Data>""",
     """<Data Name='LayerName'>({layer_name}.+?)</Data>""",
   ]

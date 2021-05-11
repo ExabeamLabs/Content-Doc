@@ -9,16 +9,16 @@ Name = cef-windows-4776
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """CEF:""", """"eventID":"4776"""", """attempted to validate the credentials for an account""" ]
   Fields = [
-    """"systemTime":"({time}\d+-\d+-\d+T\d+:\d+:\d+)""",
+    """"systemTime":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100})""",
     """"computer":"({host}[\w\-.]+)""",
-    """"message":"({event_name}[^"]+?)\s*"""",
-    """"eventID":"({event_code}\d+)""",
-    """"eventRecordID":"({record_id}\d+)""",
-    """"severityValue":"({outcome}[^"]+?)\s*"""",
-    """"targetUserName":"({user}[^"\s@]+?)\s*"""",
-    """"targetUserName":"({user_email}[^"\s@]+@[^"\s@]+?)\s*"""",
-    """"workstation":"({dest_host}[^"\s]+?)\s*"""",
-    """"status":"({result_code}[^"]+?)\s*"""",
+    """"message":"({event_name}[^"]+?)\s{0,100}"""",
+    """"eventID":"({event_code}\d{1,100})""",
+    """"eventRecordID":"({record_id}\d{1,100})""",
+    """"severityValue":"({outcome}[^"]+?)\s{0,100}"""",
+    """"targetUserName":"({user}[^"\s@]+?)\s{0,100}"""",
+    """"targetUserName":"({user_email}[^"\s@]+@[^"\s@]+?)\s{0,100}"""",
+    """"workstation":"({dest_host}[^"\s]+?)\s{0,100}"""",
+    """"status":"({result_code}[^"]+?)\s{0,100}"""",
   ]
 }
 ```

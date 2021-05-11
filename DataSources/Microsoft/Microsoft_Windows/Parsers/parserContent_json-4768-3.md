@@ -11,8 +11,8 @@ Name = json-4768-3
   Fields =[
     """({event_name}A Kerberos authentication ticket \(TGT\) was requested)""",
     """({event_code}4768)""",
-    """"TimeCreated"+:"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """"Computer"+:"+({host}[^"]+)"""",
+    """"TimeCreated"{1,20}:"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
+    """"Computer"{1,20}:"{1,20}({host}[^"]+)"""",
     """"TicketOptions":"({ticket_options}[^"]+)""",
     """"TicketEncryptionType":"({ticket_encryption_type}[^"]+)""",
     """"ServiceName":"({service_name}[^"]+)""",

@@ -9,7 +9,7 @@ Name = json-mcafee-epo-alert-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """"analyzername":"""", """"threatcategory":"av.detect"""", """"mccomputername":"""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """"generatedtime":"({time}[^"]+)"""",
     """"targetusername":"(({domain}[^"\\]+)\\+)?({user}[^"\\\s]+)"""",
     """"domainname":"({domain}[^"]+)"""",
@@ -17,12 +17,12 @@ Name = json-mcafee-epo-alert-1
     """"threatcategory":"({threat_category}[^"]+)"""",
     """"sourceprocessname":"({process}(({directory}[^"]+?)\\+)?({process_name}[^"\\]*))"""",
     """"operatingsystem":"({os}[^"]+)"""",
-    """"analyzerdetectionmethod":"(\s+|({additional_info}[^"]+))"""",
+    """"analyzerdetectionmethod":"(\s{1,100}|({additional_info}[^"]+))"""",
     """"action":"(_|({alert_name}[^"]+))"""",
     """"autoid":({alert_id}[^",]+)""",
     """"targetfilename":"({malware_url}.*?[\\\/]?({malware_file_name}[^\\\/]+?))"""",
     """"analyzername":"({event_name}[^"]+)"""",
-    """"threattype":"(\s+|({alert_type}[^"]+))"""",
+    """"threattype":"(\s{1,100}|({alert_type}[^"]+))"""",
     """"mccomputername":"({src_host}[^"]+)"""",
   ]
   DupFields = [ "directory->process_directory" ]

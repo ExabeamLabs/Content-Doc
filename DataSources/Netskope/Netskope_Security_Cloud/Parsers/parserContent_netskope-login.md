@@ -9,9 +9,9 @@ Name = netskope-login
   TimeFormat = "epoch_sec"
   Conditions = [ """session_begin""","""activity": "Login Successful""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """"dstip": "({host}[^"]+)"""",
-    """"timestamp": ({time}\d+)""",
+    """"timestamp": ({time}\d{1,100})""",
     """"user": "(?![^\s]+@[^\s]+)({user}[^"\s]+)"""",
     """"user": "(?=[^\s]+@[^\s]+)({user_email}[^"\s@]+@({email_domain}[^"\s@]+))"""",
     """"app": "({app}[^"]+)"""",

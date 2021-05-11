@@ -10,5 +10,5 @@ Name = o365-onedrive-app-activity
   Conditions = [ ""","OneDrive","20""", ""","SharePoint",""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    ""","({app}OneDrive)","\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d+)?Z"(,("[^"]*"|[^,]*)){2}
+    ""","({app}OneDrive)","\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d{1,100})?Z"(,("[^"]*"|[^,]*)){2}
 ```

@@ -9,9 +9,9 @@ Name = citrix-device-aaa-auth-success
   TimeFormat = "MM/dd/yyyy:HH:mm:ss"
   Conditions = [ """ AAA Message """, """Succeeded policy for user""" ]
   Fields = [
-    """({time}\d+\/\d+\/\d+:\d+:\d+:\d+)\s*GMT""",
-    """GMT\s*({host}[^:\s]+)(\s\S+)?\s:\s*({event_code}(\w+\s+){3})[^:]+:\s*"+({event_name}.+)\s*for user\s*({user}[^\s]+)\s*=\s*({auth_method}[^"]+)"+""",
-    """GMT\s*({host}[^:\s]+)(\s\S+)?\s:\s*({event_code}(\w+\s+){2}\w+)\s+[^:]+:\s*"+({event_name}.+)\s+for user\s*({user}[^\s]+)\s*=\s*({auth_method}[^"]+)"+"""
+    """({time}\d{1,100}\/\d{1,100}\/\d{1,100}:\d{1,100}:\d{1,100}:\d{1,100})\s{0,100}GMT""",
+    """GMT\s{0,100}({host}[^:\s]+)(\s\S+)?\s:\s{0,100}({event_code}(\w+\s{1,100}){3})[^:]+:\s{0,100}"{1,20}({event_name}.+)\s{0,100}for user\s{0,100}({user}[^\s]+)\s{0,100}=\s{0,100}({auth_method}[^"]+)"{1,20}""",
+    """GMT\s{0,100}({host}[^:\s]+)(\s\S+)?\s:\s{0,100}({event_code}(\w+\s{1,100}){2}\w+)\s{1,100}[^:]+:\s{0,100}"{1,20}({event_name}.+)\s{1,100}for user\s{0,100}({user}[^\s]+)\s{0,100}=\s{0,100}({auth_method}[^"]+)"{1,20}"""
   ]
   DupFields = ["host->src_host"]
 }

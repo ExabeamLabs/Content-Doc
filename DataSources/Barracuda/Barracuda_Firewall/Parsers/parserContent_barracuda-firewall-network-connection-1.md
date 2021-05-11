@@ -9,10 +9,10 @@ Name = barracuda-firewall-network-connection-1
   TimeFormat = "yyyy MM dd HH:mm:ss"
   Conditions = [ """type=""", """|proto=""", """srcIF=""", """|dstService=""", """|dstIF=""", """|srcNAT=""", """|dstNAT=""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """({time}\d+ \d+ \d+ \d+:\d+:\d+)""",
-    """\s+({action}\w+):\s+type=""",
-    """\s+type=({event_code}[^\|]+)\|proto=""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """({time}\d{1,100} \d{1,100} \d{1,100} \d{1,100}:\d{1,100}:\d{1,100})""",
+    """\s{1,100}({action}\w+):\s{1,100}type=""",
+    """\s{1,100}type=({event_code}[^\|]+)\|proto=""",
     """proto=({protocol}[^\|]+)""",
     """srcIF=({src_interface}[^\|]+)""",
     """srcIP=(0.0.0.0|({src_ip}[^\|]+))""",

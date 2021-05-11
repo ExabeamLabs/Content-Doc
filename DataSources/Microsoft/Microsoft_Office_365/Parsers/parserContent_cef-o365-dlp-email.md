@@ -9,12 +9,12 @@ Name = cef-o365-dlp-email
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """|security-threat-detected|""", """cat=security-alert""", """=Office 365""", """act=send-mail""", """"MessageTraceId":"""", """"EventType":"""" ]
   Fields = [
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d+Z\s+[\w\-.]+\s+Skyformation"""
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d{1,100}Z\s{1,100}[\w\-.]+\s{1,100}Skyformation"""
     """filePath=<*({file_path}.+?)>*\s\w+=""",
-    """fname=({file_name}.+?)\s*\w+=""",
+    """fname=({file_name}.+?)\s{0,100}\w+=""",
     """"Domain":"({domain}[^"]+)""",
-    """"Subject":"({subject}.+?)\s*"""",
-    """"MessageSize":({bytes}\d+)""",
+    """"Subject":"({subject}.+?)\s{0,100}"""",
+    """"MessageSize":({bytes}\d{1,100})""",
     """"Direction":"({direction}[^"]+)""",
     """"SenderAddress":"({sender}[^"]+)""",
     """"SenderAddress":"[^@"]+@({external_domain_sender}[^",]+)"""",

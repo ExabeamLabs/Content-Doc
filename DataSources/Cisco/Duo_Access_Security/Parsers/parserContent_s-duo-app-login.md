@@ -9,14 +9,14 @@ Name = s-duo-app-login
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSSZ"
   Conditions = [ """"action": "admin_login"""", """"username": """, """"description": """" ]
   Fields = [
-    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d(\+|\-)\d+)""",
+    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d(\+|\-)\d{1,100})""",
     """exabeam_host=({host}[^\s]+)""",
-    """"username":\s*"({user_fullname}[^"]+)""",
-    """"username":\s*"({user_firstname}\S+)\s+({user_lastname}[^\s"\\]+)""",
-    """"action":\s*"({activity}[^"]+)"""",
-    """"object":\s*"({object}[^"]+)"""",
-    """"email\\"+:\s*\\"+({user_email}[^"]+?)\\"+""",
-    """"ip_address\\"+:\s*\\"+({src_ip}[^"]+?)\\"+"""
+    """"username":\s{0,100}"({user_fullname}[^"]+)""",
+    """"username":\s{0,100}"({user_firstname}\S+)\s{1,100}({user_lastname}[^\s"\\]+)""",
+    """"action":\s{0,100}"({activity}[^"]+)"""",
+    """"object":\s{0,100}"({object}[^"]+)"""",
+    """"email\\"{1,20}:\s{0,100}\\"{1,20}({user_email}[^"]+?)\\"{1,20}""",
+    """"ip_address\\"{1,20}:\s{0,100}\\"{1,20}({src_ip}[^"]+?)\\"{1,20}"""
   ]
 }
 ```

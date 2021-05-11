@@ -10,7 +10,7 @@ Name = r-nic-540
   Conditions = [ "MSWinEventLog", "Successful Network Logon:", ",540,", "Security", "Success Audit", "rsa_sa_log" ]
   Fields = [
     """({event_name}Successful Network Logon)""",
-    """(Mon|Tue|Wed|Thu|Fri|Sat|Sun) ({time}\w+ \d+ \d+:\d+:\d+ \d+),""",
+    """(Mon|Tue|Wed|Thu|Fri|Sat|Sun) ({time}\w+ \d{1,100} \d{1,100}:\d{1,100}:\d{1,100} \d{1,100}),""",
     """exabeam_source=({host}[A-Fa-f:\d.]+)""",
     """\d{2}:\d{2}:\d{2} \d{4}
 ```

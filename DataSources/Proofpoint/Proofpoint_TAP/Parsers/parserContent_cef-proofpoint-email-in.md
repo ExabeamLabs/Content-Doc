@@ -9,7 +9,7 @@ Name = cef-proofpoint-email-in
     TimeFormat = "epoch"
     Conditions = [ """|Proofpoint|TAP|""" ]
     Fields = [
-      """\srt=({time}\d+)""",
+      """\srt=({time}\d{1,100})""",
       """exabeam_host=({host}[\w.\-]+)""",
       """^([^|]*\|){4}({outcome}[^|]+)""",
       """\ssrc=({src_ip}[a-fA-F\d.:]+)""",

@@ -17,8 +17,8 @@ Name = s-sophos-network-connection
     """\slog_subtype="({subtype}\S+)?"\s""",
     """\sstatus="({action}\S+)?"\s""",
     """\spriority=({priority}\S+)?\s""",
-    """\sduration=({duration}\d+)?\s""",
-    """\sfw_rule_id=({rule_id}\d+)?\s""",
+    """\sduration=({duration}\d{1,100})?\s""",
+    """\sfw_rule_id=({rule_id}\d{1,100})?\s""",
     """\spolicy_type=({policy}\S+)?\s""",
     """\suser_name="(({user}[^"@]+?)|({user_email}[^"@]+@[^"]+))?"\s.*?\s""",
     """\sin_interface="({src_interface}\S+)?"\s""",
@@ -29,12 +29,12 @@ Name = s-sophos-network-connection
     """\sdst_ip=({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})?\s""",
     """\sdst_country_code=({dest_county_code}\S+)?\s""",
     """\sprotocol="({protocol}\S+)?"\s""",
-    """\ssrc_port=({src_port}\d+)?\s""",
-    """\sdst_port=({dest_port}\d+)?\s""",
+    """\ssrc_port=({src_port}\d{1,100})?\s""",
+    """\sdst_port=({dest_port}\d{1,100})?\s""",
     """\stran_src_ip=({src_translated_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})?\s""",
-    """\stran_src_port=({src_translated_port}\d+)?\s""",
+    """\stran_src_port=({src_translated_port}\d{1,100})?\s""",
     """\stran_dst_ip=({dest_translated_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})?\s""",
-    """\stran_dst_port=({dest_translated_port}\d+)?\s""",
+    """\stran_dst_port=({dest_translated_port}\d{1,100})?\s""",
   ]
   DupFields = [ "action->outcome" ]
 }

@@ -11,14 +11,14 @@ Name = cef-pantraps-alert
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
     """\d\d:\d\d:\d\d ({host}[^\s]+)\sCEF""",
-    """(devTime|rt)=({time}\w+ \d+ \d\d\d\d \d\d:\d\d:\d\d)""",
-    """duser=(({domain}[^\\]+)\\)?(?: |({user}.+?))\s*\w+=""",
-    """dhost=(?: |({src_host}.+?))\s*\w+=""",
+    """(devTime|rt)=({time}\w+ \d{1,100} \d\d\d\d \d\d:\d\d:\d\d)""",
+    """duser=(({domain}[^\\]+)\\)?(?: |({user}.+?))\s{0,100}\w+=""",
+    """dhost=(?: |({src_host}.+?))\s{0,100}\w+=""",
     """\|Palo Alto Networks\|([^|]+\|){2}({alert_name}[^|]+)""",
     """\|Palo Alto Networks\|([^|]+\|){4}({alert_severity}[^|]+)""",
-    """(subtype|cs2)=(?: |({alert_type}.+?))\s*\w+=""",
-    """Prevention Key: (?: |({alert_id}.+?))\s*($|\w+=)""",
-    """deviceProcessName=(?: |({malware_url}.+?))\s*\w+=""",
+    """(subtype|cs2)=(?: |({alert_type}.+?))\s{0,100}\w+=""",
+    """Prevention Key: (?: |({alert_id}.+?))\s{0,100}($|\w+=)""",
+    """deviceProcessName=(?: |({malware_url}.+?))\s{0,100}\w+=""",
     """msg=(?: |({additional_info}.+?))(\.|:)"""
   ]
   SOAR {

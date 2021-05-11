@@ -8,13 +8,13 @@ Name = n-forwarded-cef-4725
     DataType = "windows-account-disabled"
     TimeFormat = "epoch"
     Conditions = [ "|McAfee|ESM", "43-26304725"]
-    Fields = [ """\|McAfee\|.+?\|43-2630({event_code}\d+)(0|1)\|""",
+    Fields = [ """\|McAfee\|[^|]+?\|[^|]+?\|43-2630({event_code}\d{1,100})(0|1)\|""",
       """({event_name}A user account was disabled)""",
-      """\srt=({time}\d+)""",
+      """\srt=({time}\d{1,100})""",
       """shost=({host}[^\s]+)""",
       """sntdom=({domain}[^\s]+)""",
-      """suser=({user}.+?)\s+\w+=""",
-      """duser=({target_user}.+?)\s+\w+=""",
+      """suser=({user}.+?)\s{1,100}\w+=""",
+      """duser=({target_user}.+?)\s{1,100}\w+=""",
       """nitroSource_Logon_ID=({logon_id}[^\s]+)""",
       """nitroSecurity_ID=({user_sid}[^\s]+)"""
     ]

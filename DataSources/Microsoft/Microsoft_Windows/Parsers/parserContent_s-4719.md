@@ -11,14 +11,14 @@ Name = s-4719
   Fields = [
     """({event_name}System audit policy was changed)""",
     """ComputerName=({host}[\w.\-]+)""",
-    """({time}\d\d/\d\d/\d\d\d\d \d+:\d+:\d+ (am|AM|pm|PM))\s+""",
-    """EventCode=({event_code}\d+)""",
-    """\s+Account Name:\s+({user}.+?)\s+Account Domain""",
-    """\s+Account Domain:\s+({domain}[^\s]+)""",
-    """\s+Logon ID:\s+({logon_id}[^\s]+)""",
-    """\s+Category:\s+({audit_category}.+?)\s+Subcategory:""",
-    """\s+Subcategory:\s+({subcategory}.+?)\s+Subcategory GUID:""",
-    """\s+Changes:\s+({policy}[^:]+?)(\s+\d+|\s*$)"""
+    """({time}\d\d/\d\d/\d\d\d\d \d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM))\s{1,100}""",
+    """EventCode=({event_code}\d{1,100})""",
+    """\s{1,100}Account Name:\s{1,100}({user}.+?)\s{1,100}Account Domain""",
+    """\s{1,100}Account Domain:\s{1,100}({domain}[^\s]+)""",
+    """\s{1,100}Logon ID:\s{1,100}({logon_id}[^\s]+)""",
+    """\s{1,100}Category:\s{1,100}({audit_category}.+?)\s{1,100}Subcategory:""",
+    """\s{1,100}Subcategory:\s{1,100}({subcategory}.+?)\s{1,100}Subcategory GUID:""",
+    """\s{1,100}Changes:\s{1,100}({policy}[^:]+?)(\s{1,100}\d{1,100}|\s{0,100}$)"""
   ]
   DupFields = [ "host->dest_host" ]
 }

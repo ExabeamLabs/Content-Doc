@@ -11,10 +11,10 @@ Name = s-ssh-login-failed
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[\w.\-]+)""",
-    """({host}[\w\.-]+):?\s+sshd\[""",
-    """({failure_reason}(i|I)nvalid user)\s+(({domain}.+?)\\+)?({user}\S+)""",
-    """\sfrom\s+(::[\w]+:)?(({src_ip}(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|::1))|({src_host}[\w\.\-]+))\s""",
-    """sshd\[({logon_id}\d+)""",
+    """({host}[\w\.-]+):?\s{1,100}sshd\[""",
+    """({failure_reason}(i|I)nvalid user)\s{1,100}(({domain}.+?)\\+)?({user}\S+)""",
+    """\sfrom\s{1,100}(::[\w]+:)?(({src_ip}(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|::1))|({src_host}[\w\.\-]+))\s""",
+    """sshd\[({logon_id}\d{1,100})""",
     """({event_code}ssh)""",
   ]
   DupFields = [ "host->dest_host" ]

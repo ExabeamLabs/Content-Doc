@@ -16,7 +16,7 @@ Name = mcafee-vse-epo-alert
       """TargetIPV4="?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """TargetUserName="?(?:|None|(({domain}[^\\]+)\\+)?({user}[^"\|]+?))("|\||\s\w+=)""",
       """ThreatCategory="?({threat_category}[^"\|]+?)("|\||\s\w+=)""",
-      """AutoGUID="?({alert_id}[^"]+?)("|\s+\w+=|\s*$)""",
+      """AutoGUID="?({alert_id}[^"]+?)("|\s{1,100}\w+=|\s{0,100}$)""",
       """ThreatSeverity="?({alert_severity}[^"\|]+?)("|\||\s\w+=)""",
       """ThreatName="?(?:|none|({alert_name}[^"\|]+?))("|\||\s\w+=)""",
       """ThreatType="?(?:|none|({alert_type}[^"\|]+?))("|\||\s\w+=)""",

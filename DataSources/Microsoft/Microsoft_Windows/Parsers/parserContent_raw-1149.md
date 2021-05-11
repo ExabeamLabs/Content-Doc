@@ -9,12 +9,12 @@ Name = raw-1149
     DataType = "remote-logon"
     Conditions = [ """Event ID: 1149""", """Remote Desktop Services: User authentication succeeded:"""  ]
     Fields = [
-      """Event ID:\s*({event_code}\d+)""",
-      """ComputerName(:|=)\s*({host}[\w.-]+)"""
-      """TimeStamp:\s*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """User authentication succeeded:\s*User:\s*({user}[^\s]+)\s+""",
-      """Domain:\s*({domain}[^\s]+)\s+""",
-      """Source Network Address:\s*({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
+      """Event ID:\s{0,100}({event_code}\d{1,100})""",
+      """ComputerName(:|=)\s{0,100}({host}[\w.-]+)"""
+      """TimeStamp:\s{0,100}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+      """User authentication succeeded:\s{0,100}User:\s{0,100}({user}[^\s]+)\s{1,100}""",
+      """Domain:\s{0,100}({domain}[^\s]+)\s{1,100}""",
+      """Source Network Address:\s{0,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
     ]
     DupFields = [ "host->dest_host" ]
   }

@@ -5,10 +5,10 @@ Name = ssh-vectra-meta-data
   DataType = "remote-logon"
   Conditions = [ """vectra_metadata_ssh""", """METADATA_SSH""" ]
   Fields = ${VectraParserTemplates.vectra-meta-data.Fields} [
-    """server="+({server_version}[^"]+)"+""",
-    """client="+({client_version}[^"]+)"+""",
-    """cipher_alg="+({cipher_algorithm}[^"]+)"+""",
-    """compression_alg="+(none|({compression_algotithm}[^"]+))"+"""
+    """server="{1,20}({server_version}[^"]+)"{1,20}""",
+    """client="{1,20}({client_version}[^"]+)"{1,20}""",
+    """cipher_alg="{1,20}({cipher_algorithm}[^"]+)"{1,20}""",
+    """compression_alg="{1,20}(none|({compression_algotithm}[^"]+))"{1,20}"""
   ]
 }
 vectra-meta-data = {
@@ -18,13 +18,13 @@ vectra-meta-data = {
   TimeFormat = "epoch"
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """ts="+({time}\d+)""",
-    """id.orig_h="+({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"+"""
-    """id.orig_p="+({src_port}\d+)"+""",
-    """id.resp_h="+({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"+""",
-    """id.resp_p="+({dest_port}\d+)"+""",
-    """orig_hostname="+({src_host}[^"]+)"+"""
-    """resp_hostname="+(null|((IP-)*({dest_host}[^"]+)))"""
+    """ts="{1,20}({time}\d{1,100})""",
+    """id.orig_h="{1,20}({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"{1,20}"""
+    """id.orig_p="{1,20}({src_port}\d{1,100})"{1,20}""",
+    """id.resp_h="{1,20}({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"{1,20}""",
+    """id.resp_p="{1,20}({dest_port}\d{1,100})"{1,20}""",
+    """orig_hostname="{1,20}({src_host}[^"]+)"{1,20}"""
+    """resp_hostname="{1,20}(null|((IP-)*({dest_host}[^"]+)))"""
   ]
 
 ```

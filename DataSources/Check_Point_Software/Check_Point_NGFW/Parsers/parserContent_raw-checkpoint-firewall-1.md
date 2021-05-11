@@ -10,21 +10,21 @@ Name = raw-checkpoint-firewall-1
   IsHVF = true
   Conditions = [ """ProductName: VPN-1 & FireWall-1;""" ]
   Fields = [
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+((\+|\-)\d\d:\d\d)?)""",
-    """({host}[\w.\-]+)\s+CPLogToSyslog:""",
-    """\WOriginSicName:\s*CN=({host}[\w.\-]+),O="""
-    """\WAction:\s*(|({action}[^;]+?));""",
-    """\Wservice_id:\s*(|({protocol}[^;]+?));""",
-    """\WIfDir:\s*(|({direction}[^;]+?));""",
-    """\Wuser:\s*(|({user}[^\(\);]+?));""",
-    """\Wuser:\s*({user_fullname}.+?)\s*\(({account}.+?)\)""",
-    """\Wsrc:\s*(|({src_ip}[a-fA-F\d.:]+));""",
-    """\Wdst:\s*(|({dest_ip}[a-fA-F\d.:]+));""",
-    """\Wxlatesrc:\s*(|({src_translated_ip}[a-fA-F\d.:]+));""",
-    """\Wrule_name:\s*(|({rule}[^;]+?));""",
-    """\WProductName:\s*(|({app}[^;]+?));""",
-    """\Wsvc:\s*({dest_port}\d+)""",
-    """\Wsport_svc:\s*({src_port}\d+)""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}((\+|\-)\d\d:\d\d)?)""",
+    """({host}[\w.\-]+)\s{1,100}CPLogToSyslog:""",
+    """\WOriginSicName:\s{0,100}CN=({host}[\w.\-]+),O="""
+    """\WAction:\s{0,100}(|({action}[^;]+?));""",
+    """\Wservice_id:\s{0,100}(|({protocol}[^;]+?));""",
+    """\WIfDir:\s{0,100}(|({direction}[^;]+?));""",
+    """\Wuser:\s{0,100}(|({user}[^\(\);]+?));""",
+    """\Wuser:\s{0,100}({user_fullname}.+?)\s{0,100}\(({account}.+?)\)""",
+    """\Wsrc:\s{0,100}(|({src_ip}[a-fA-F\d.:]+));""",
+    """\Wdst:\s{0,100}(|({dest_ip}[a-fA-F\d.:]+));""",
+    """\Wxlatesrc:\s{0,100}(|({src_translated_ip}[a-fA-F\d.:]+));""",
+    """\Wrule_name:\s{0,100}(|({rule}[^;]+?));""",
+    """\WProductName:\s{0,100}(|({app}[^;]+?));""",
+    """\Wsvc:\s{0,100}({dest_port}\d{1,100})""",
+    """\Wsport_svc:\s{0,100}({src_port}\d{1,100})""",
   ]
    DupFields = [ "action->event_name" ]
 }

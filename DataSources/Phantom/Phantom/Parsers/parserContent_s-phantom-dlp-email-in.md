@@ -9,19 +9,8 @@ Name = s-phantom-dlp-email-in
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
   Conditions = [ """from: """, """,to: """, """,subject: """, """,analysed_time: """, """phantom""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """,analysed_time:\s*({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+Z)""",
-    """from:\s*({sender}[^\s@,]+@[^\s@,]+)""",
-    """,to:\s*({recipients}({recipient}[^\s@,;]+@({external_domain}[^\s@,;]+))[^,]*?)\s*,""",
-    """,subject:\s*({subject}[^,]*?)\s*,""",
-    """,severity:\s*({alert_severity}[^,]*?)\s*,""",
-  ]
-  DupFields = [ "recipient->user_email", "sender->external_address" ]
-  SOAR {
-    IncidentType = "dlp"
-    DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "recipient->dlpUser", "sender->emailFrom", "subject->emailSubject", "recipients->emailTo"]
-    NameTemplate = """Phantom Phishing Email Alert ${subject} found"""
-    ProjectName = "SOC"
-    EntityFields = [
-      {EntityType="user", Name="email", Fields=["recipient->email"]}
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """,analysed_time:\s{0,100}({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}Z)""",
+    """from:\s{0,100}({sender}[^\s@,]+@[^\s@,]+)""",
+    """,to:\s{0,100}({recipients}({recipient}[^\s@,;]+@({external_domain}[^\s@,;]+))[^,]*?)\s{0,100}
 ```

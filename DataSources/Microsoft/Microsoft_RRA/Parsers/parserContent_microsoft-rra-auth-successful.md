@@ -11,7 +11,7 @@ Name = microsoft-rra-auth-successful
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
     """CoID=\{({session_id}[^\{\}]+?)\}""",
-    """:\s*The user (({domain}[^\\\/]+?)[\\\/]+)?({user}[^\\\/]+?) has connected""",
+    """:\s{0,100}The user (({domain}[^\\\/]+?)[\\\/]+)?({user}[^\\\/]+?) has connected""",
   ]
 }
 ```

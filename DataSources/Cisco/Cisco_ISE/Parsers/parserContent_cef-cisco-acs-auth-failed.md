@@ -9,7 +9,7 @@ Name = cef-cisco-acs-auth-failed
   TimeFormat = "epoch"
   Conditions = [ """|CISCO|Cisco Secure ACS|""", """|Authentication failed|""" , """ad.Action=Login""" ]
   Fields = [
-      """\srt=({time}\d+)""",
+      """\srt=({time}\d{1,100})""",
       """\sdvc=({host}[^\s]+)""",
       """\sdvchost=({host}[^\s]+)""",
       """\ssrc=(?:|({src_ip}.+?))\s\w+=""",

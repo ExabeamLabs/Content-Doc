@@ -12,7 +12,7 @@ Name = mcafee-siem-4672
       """({event_name}Special privileges assigned to new logon)""",
       """"src_ip":"({src_ip}[^"]+)""",
       """"dst_ip":"({dest_ip}[^"]+)""",
-      """"id":\d*({event_code}4672)""",
+      """"id":\d{0,100}({event_code}4672)""",
       """"firsttime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
       """"DomainID":"({domain}[^"]+)""",
       """"HostID":"({host}[^"]+)""",

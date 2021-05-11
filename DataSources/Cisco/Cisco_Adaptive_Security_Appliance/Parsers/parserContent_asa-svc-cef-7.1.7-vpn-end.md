@@ -9,17 +9,17 @@ Name = asa-svc-cef-7.1.7-vpn-end
     TimeFormat = "epoch"
     Conditions = [ """|CISCO|""", """|113019|Session disconnected|""" ]
     Fields = [ 
-      """exabeam_EventTime=({eventtime}\d+)""",
-      """\srt=({time}\d+)""",
+      """exabeam_EventTime=({eventtime}\d{1,100})""",
+      """\srt=({time}\d{1,100})""",
       """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-      """\sduser=({user_fullname}(\w+\s+)+\w+)\s+(\w+=|$)""",
-      """\sduser=({user}[^\s@]+)\s+(\w+=|$)""",
-      """\sduser=({user_email}[^\s@]+@[^\s@]+)\s+(\w+=|$)""",
+      """\sduser=({user_fullname}(\w+\s{1,100})+\w+)\s{1,100}(\w+=|$)""",
+      """\sduser=({user}[^\s@]+)\s{1,100}(\w+=|$)""",
+      """\sduser=({user_email}[^\s@]+@[^\s@]+)\s{1,100}(\w+=|$)""",
       """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-      """\sdvchost=({host}.+?)\s+(\w+=|$)""",
-      """\scs6=[^=]*?({session_hour}\d+)h:({session_min}\d+)m:({session_sec}\d+)s""",
-      """\sin=({bytes_in}\d+)""",
-      """\sout=({bytes_out}\d+)""",
+      """\sdvchost=({host}.+?)\s{1,100}(\w+=|$)""",
+      """\scs6=[^=]*?({session_hour}\d{1,100})h:({session_min}\d{1,100})m:({session_sec}\d{1,100})s""",
+      """\sin=({bytes_in}\d{1,100})""",
+      """\sout=({bytes_out}\d{1,100})""",
     ]
   }
 ```

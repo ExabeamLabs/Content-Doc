@@ -11,22 +11,22 @@ Name = raw-552
     Fields = [
       """({event_name}Logon attempt using explicit credentials)""",
       """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
-      """(?i)(((audit|success)( |_)(success|audit))|information)\s*(\s|\t|,|#\d+|<[^>]+>)\s*({host}[^=]+?)\s*(\s|\t|,|#\d+|<[^>]+>)\s*""",
+      """(?i)(((audit|success)( |_)(success|audit))|information)\s{0,100}(\s|\t|,|#\d{1,100}|<[^>]+>)\s{0,100}({host}[^=]+?)\s{0,100}(\s|\t|,|#\d{1,100}|<[^>]+>)\s{0,100}""",
       """({event_code}552)""",
       """({host}[^\s\/]+)\/Security \(552\)""",
       """<Computer>({host}[^<]+)</Computer>""",
-      """Computer(\w+)?["\s]*(:|=)\s*"?({host}.+?)("|\s)""",
+      """Computer(\w+)?["\s]*(:|=)\s{0,100}"?({host}.+?)("|\s)""",
       """ComputerName=({host}[\w.\-]+)""",
-      """User Name:\s*({user}[\w\-\.]+(?:\s*\w+)?\$?)\s*Domain:""",
-      """Domain:\s*({domain}[\w\-\.]+(?:[\s\.\-\w])*?)\s*Logon ID:""",
-      """Logon ID:\s*\(\w+(\,|\s)({logon_id}\w+)\)\s*Logon GUID:""",
-      """Logon GUID:\s*(?:-|\{({user_logon_guid}[^}]+)\})""",
-      """Target User Name:\s*({account}[\w\-\.]+(?:\s\w+)?\$?)\s*Target Domain:""",
-      """Target Domain:\s*({account_domain}[\w\-\.]+(?:[\s\.\-\w])*?)\s*Target Logon GUID:""",
-      """Target Logon GUID:\s*(?:-|\{({account_logon_guid}[^}]+)\})\s*Target Server Name:""",
-      """Target Server Name:\s*({dest_host}.+?)\s*Target Server Info:""",
-      """Target Server Info:\s*({dest_service}.+?)\s*Caller Process ID:""",
-      """Source Network Address:\s+(?:-|({src_ip}[a-fA-F:\d.]+))"""
+      """User Name:\s{0,100}({user}[\w\-\.]+(?:\s{0,100}\w+)?\$?)\s{0,100}Domain:""",
+      """Domain:\s{0,100}({domain}[\w\-\.]+(?:[\s\.\-\w])*?)\s{0,100}Logon ID:""",
+      """Logon ID:\s{0,100}\(\w+(\,|\s)({logon_id}\w+)\)\s{0,100}Logon GUID:""",
+      """Logon GUID:\s{0,100}(?:-|\{({user_logon_guid}[^}]+)\})""",
+      """Target User Name:\s{0,100}({account}[\w\-\.]+(?:\s\w+)?\$?)\s{0,100}Target Domain:""",
+      """Target Domain:\s{0,100}({account_domain}[\w\-\.]+(?:[\s\.\-\w])*?)\s{0,100}Target Logon GUID:""",
+      """Target Logon GUID:\s{0,100}(?:-|\{({account_logon_guid}[^}]+)\})\s{0,100}Target Server Name:""",
+      """Target Server Name:\s{0,100}({dest_host}.+?)\s{0,100}Target Server Info:""",
+      """Target Server Info:\s{0,100}({dest_service}.+?)\s{0,100}Caller Process ID:""",
+      """Source Network Address:\s{1,100}(?:-|({src_ip}[a-fA-F:\d.]+))"""
     ]
   }
 ```

@@ -10,7 +10,7 @@ Name = smartdashboard-app-login
   Conditions = [ """|product=SmartDashboard|""", """|Subject=Administrator Login|""" ]
   Fields = [
     """\|Administrator=({user}[^\|]+)\|""",
-    """\|time=({time}\d+\w+\d\d\d\d \d+:\d+:\d+)""",
+    """\|time=({time}\d{1,100}\w+\d\d\d\d \d{1,100}:\d{1,100}:\d{1,100})""",
     """\|client_ip=(?:({src_ip}[a-fA-F\d.:]+)|({src_host}[\w.\-]+))\|""",
     """\|Machine=({host}[^\|]+)\|"""
     """\|Additional Info=({additional_info}[^\|]+)\|""",

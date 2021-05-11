@@ -9,16 +9,16 @@ Name = centrify-file-access
   TimeFormat = "epoch"
   Conditions = ["""Centrify Suite|""" , """|SFTP"""]
   Fields = [
-    """utc=({time}\d+)""",
+    """utc=({time}\d{1,100})""",
     """exabeam_host=({host}[\w.\-]+)""",
     """user=({user}[^\(\)\s\$]+)"""
-    """\d+\|\d+\|({event_name}.+?)\|\d""",
+    """\d{1,100}\|\d{1,100}\|({event_name}.+?)\|\d""",
     """status=({outcome}.+?)\s\w+=""",
-    """pid=({process_id}\d+)""",
+    """pid=({process_id}\d{1,100})""",
     """service=({protocol}.+?)\s\w+=""",
     """operation=({activity}.+?)\s\w+=""",
-    """arguments=({file_path}({file_parent}.*?)(\/+({file_name}[^\/]+?))?)\s*(\w+=|$)""",
-    """reason=({failure_reason}.+?)\s*$"""
+    """arguments=({file_path}({file_parent}.*?)(\/+({file_name}[^\/]+?))?)\s{0,100}(\w+=|$)""",
+    """reason=({failure_reason}.+?)\s{0,100}$"""
   ]
 }
 ```

@@ -10,7 +10,7 @@ Name = n-forwarded-cef-dns-update
   Conditions = [ """|McAfee|ESM|""", """|272-32|""", """|Win_DHCP DNS dynamic update successful|""" ]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """\srt=({time}\d+)""",
+    """\srt=({time}\d{1,100})""",
     """\sshost=({dest_host}[^.\s]+)""",
     """\ssrc=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]

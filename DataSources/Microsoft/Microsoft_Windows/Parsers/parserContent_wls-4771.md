@@ -11,14 +11,14 @@ Name = wls-4771
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """Computer="+({dest_host}[^"]+)"""",
-    """EventID="+({event_code}[^"]+)"""",
-    """EventRecordID="+({record_id}[^"]+)"""",
-    """IpAddress="+(?:::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)"""",
-    """ServiceName="+\w+\/(?=\w)({domain}[^"]+)"""",
-    """Status="+({result_code}[^"]+)"""",
-    """TargetSid="+({user_sid}[^"]+)"""",
-    """TargetUserName="+(?=\w)({user}[^"]+)""""
+    """Computer="{1,20}({dest_host}[^"]+)"""",
+    """EventID="{1,20}({event_code}[^"]+)"""",
+    """EventRecordID="{1,20}({record_id}[^"]+)"""",
+    """IpAddress="{1,20}(?:::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)"""",
+    """ServiceName="{1,20}\w+\/(?=\w)({domain}[^"]+)"""",
+    """Status="{1,20}({result_code}[^"]+)"""",
+    """TargetSid="{1,20}({user_sid}[^"]+)"""",
+    """TargetUserName="{1,20}(?=\w)({user}[^"]+)""""
   ]
 }
 ```

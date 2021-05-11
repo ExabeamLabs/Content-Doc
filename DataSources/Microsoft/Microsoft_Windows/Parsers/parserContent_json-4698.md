@@ -11,7 +11,7 @@ Name = json-4698
   Fields = [
     """"EventTime":"?({time}[^",]+)""",
     """"Hostname":"({host}[\w.-]+?)"""",
-    """"EventID":({event_code}\d+)""",
+    """"EventID":({event_code}\d{1,100})""",
     """({event_name}A scheduled task was created)""",
     """"SubjectUserName":"({user}[^"]+)""",
     """"SubjectDomainName":"({domain}[^"]+)"""",
@@ -19,14 +19,14 @@ Name = json-4698
     """"TaskName":"({task_name}[^"]+)"""",
     """"SubjectLogonId":"({logon_id}[^"]+)"""",
     """"Keywords":"({outcome}[^,"]+)""",
-    """"ProcessID":({pid}\d+)""",
-    """"ThreadID":({thread_id}\d+)""",
+    """"ProcessID":({pid}\d{1,100})""",
+    """"ThreadID":({thread_id}\d{1,100})""",
     """<UserId>(?=\w)(({account_domain}[^\\<]*)\\)?({account_name}[^<]+)</UserId>""",
-    """<Settings>[\\rnt\s]*({additional_info}[^"]+?)\s*[\\rnt\s]*<\/Settings>""",
+    """<Settings>[\\rnt\s]*({additional_info}[^"]+?)\s{0,100}[\\rnt\s]*<\/Settings>""",
     """<Triggers>[\\rtn\s]*({triggers}[^"]+?)[\\rtn\s]*<\/Triggers>""",
     """<RunLevel>(?=\w)({run_level}[^<]+)</RunLevel>""",
     """<Command>"?({process}({directory}(?:(\w+:)?[^:<"]+)?[\\\/])?({process_name}[^<"]+))""",
-    """<Arguments>("+)?({arg}[^<"]+)"""
+    """<Arguments>("{1,20})?({arg}[^<"]+)"""
   ]
   DupFields = [ "host->dest_host", "directory->process_directory" ]
 }

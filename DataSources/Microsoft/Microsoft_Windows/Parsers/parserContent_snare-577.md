@@ -10,18 +10,18 @@ Name = snare-577
   Conditions = [ "\t577\t", "Privileged Service Called:" ]
   Fields = [ """exabeam_host=({host}[^\s]+)""",
     """({event_name}Privileged Service Called)""",
-    """\s+(Mon|Tue|Wed|Thu|Fri|Sat|Sun) ({time}\w+ \d+ \d+:\d+:\d+ \d+)\s+""",
-    """\s+(Information|Audit Success|Success Audit)\s+({host}[^\s]+)""",
+    """\s{1,100}(Mon|Tue|Wed|Thu|Fri|Sat|Sun) ({time}\w+ \d{1,100} \d{1,100}:\d{1,100}:\d{1,100} \d{1,100})\s{1,100}""",
+    """\s{1,100}(Information|Audit Success|Success Audit)\s{1,100}({host}[^\s]+)""",
     """({event_code}577)""",
     """Security\t([^\s]+\t){2}({outcome}.+?)\t""",
-    """(?:Information|Audit Success|Success Audit).+?Primary User Name:\s+({user}.+?)\s+Primary Domain""",
-    """\s+Primary Domain:\s+({domain}[^\s]+)""",
-    """\s+Primary Logon ID:\s+\([^,]+,({logon_id}[^)]+)""",
-    """\s+Privileges:\s+({privileges}.+?)\s+\d+""",
-    """\s+({ownership_privilege}SeTakeOwnershipPrivilege)""",
-    """\s+({environment_privilege}SeSystemEnvironmentPrivilege)""",
-    """\s+({debug_privilege}SeDebugPrivilege)""",
-    """\s+({tcb_privilege}SeTcbPrivilege)"""
+    """(?:Information|Audit Success|Success Audit).+?Primary User Name:\s{1,100}({user}.+?)\s{1,100}Primary Domain""",
+    """\s{1,100}Primary Domain:\s{1,100}({domain}[^\s]+)""",
+    """\s{1,100}Primary Logon ID:\s{1,100}\([^,]+,({logon_id}[^)]+)""",
+    """\s{1,100}Privileges:\s{1,100}({privileges}.+?)\s{1,100}\d{1,100}""",
+    """\s{1,100}({ownership_privilege}SeTakeOwnershipPrivilege)""",
+    """\s{1,100}({environment_privilege}SeSystemEnvironmentPrivilege)""",
+    """\s{1,100}({debug_privilege}SeDebugPrivilege)""",
+    """\s{1,100}({tcb_privilege}SeTcbPrivilege)"""
   ]
   DupFields = [ "host->dest_host" ]
 }

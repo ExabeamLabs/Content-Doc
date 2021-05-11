@@ -5,7 +5,7 @@ Name = quest-change-account-enabled
      DataType = "windows-account-enabled"
      Conditions = [ """CEF:""", """Quest Software""", """|Change Auditor|""", """|Active Directory|""", """User account unlocked"""  ]	
      Fields = ${QuestParserTemplates.quest-change-auditor-events.Fields}[
-       """msg=Account unlocked for user\s*({account_ou}[^$]+?).\s*description="""
+       """msg=Account unlocked for user\s{0,100}({account_ou}[^$]+?).\s{0,100}description="""
 ] 
 }
 quest-change-auditor-events = {
@@ -23,7 +23,7 @@ quest-change-auditor-events = {
       """suid=({user_sid}\S+)""",
       """suser=(({domain}[^\\]+)\\*)?({user}[^=]+?)\s\w+=""",
       """event=({event_name}[^=]+?)\s\w+=""",
-      """msg=({additional_info}[^=]+?)\s*\w+="""
+      """msg=({additional_info}[^=]+?)\s{0,100}\w+="""
     ]
 
 ```

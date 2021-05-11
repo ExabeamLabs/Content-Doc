@@ -9,14 +9,14 @@ Name = cylance-protect-security-alert
   TimeFormat = "M/d/yyyy H:mm:ss a"
   Conditions = [ """"Cylance Score"""", """"Malware - """, """"Tenant"""" ]
   Fields = [
-    """"Access Time"+\s*:\s*"+({time}\d+\/\d+\/\d+\s+\d+:\d+:\d+\s+(AM|PM|am|pm))"+\s*[,\]\}]""",
-    """"Device\s?Name"+\s*:\s*"+({host}([^"\\]|(\\\\)*\\"|\\[^"])+)"+\s*[,\]\}]""",
-    """"Classification"+\s*:\s*"+({alert_name}([^"\\]|(\\\\)*\\"|\\[^"])+)"+\s*[,\]\}]""",
-    """"File Owner"+\s*:\s*"+((N/A)|(({domain}[^\\]+)\\+({user}.+?)))"+\s*[,\]\}]""",
-    """"File Status"+\s*:\s*"+({additional_info}([^"\\]|(\\\\)*\\"|\\[^"])+)"+\s*[,\]\}]""",
-    """"Cylance Score"+\s*:\s*"+({alert_severity}([^"\\]|(\\\\)*\\"|\\[^"])+)"+\s*[,\]\}]""",
-    """"File Path"+\s*:\s*"+({malware_url}([^"\\]|(\\\\)*\\"|\\[^"])+)"+\s*[,\]\}]""",
-    """"File Name":"\s*({file_name}[^"]+)"""",
+    """"Access Time"{1,20}\s{0,100}:\s{0,100}"{1,20}({time}\d{1,100}\/\d{1,100}\/\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(AM|PM|am|pm))"{1,20}\s{0,100}[,\]\}]""",
+    """"Device\s?Name"{1,20}\s{0,100}:\s{0,100}"{1,20}({host}([^"\\]|(\\\\)*\\"|\\[^"])+)"{1,20}\s{0,100}[,\]\}]""",
+    """"Classification"{1,20}\s{0,100}:\s{0,100}"{1,20}({alert_name}([^"\\]|(\\\\)*\\"|\\[^"])+)"{1,20}\s{0,100}[,\]\}]""",
+    """"File Owner"{1,20}\s{0,100}:\s{0,100}"{1,20}((N/A)|(({domain}[^\\]+)\\+({user}.+?)))"{1,20}\s{0,100}[,\]\}]""",
+    """"File Status"{1,20}\s{0,100}:\s{0,100}"{1,20}({additional_info}([^"\\]|(\\\\)*\\"|\\[^"])+)"{1,20}\s{0,100}[,\]\}]""",
+    """"Cylance Score"{1,20}\s{0,100}:\s{0,100}"{1,20}({alert_severity}([^"\\]|(\\\\)*\\"|\\[^"])+)"{1,20}\s{0,100}[,\]\}]""",
+    """"File Path"{1,20}\s{0,100}:\s{0,100}"{1,20}({malware_url}([^"\\]|(\\\\)*\\"|\\[^"])+)"{1,20}\s{0,100}[,\]\}]""",
+    """"File Name":"\s{0,100}({file_name}[^"]+)"""",
   ]
   DupFields = [ "alert_name->alert_type", "host->src_host" , "file_name->process_name"]
   SOAR {

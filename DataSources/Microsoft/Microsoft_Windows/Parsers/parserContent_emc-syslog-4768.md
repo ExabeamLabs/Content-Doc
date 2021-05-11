@@ -13,14 +13,14 @@ Name = emc-syslog-4768
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """__li_source_path="({host}[^"]+)"""",
     """({event_code}4768)""",
-    """Account Name:\s+({user}[^@]+?)(?:@([^\s]+))?\s+Supplied Realm Name""",
-    """Client Address:\s+(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)""",
-    """Result Code:\s+({result_code}[\w]+)""",
-    """Supplied Realm Name:\s+({domain}[^\s]+)""",
-    """User ID:\s+(?:NULL SID|({user_sid}.+?))\s+Service Information""",
-    """Service Name:\s*({service_name}[^\s]+)""", 
-    """Ticket Options:\s*({ticket_options}[^\s]+)""",
-    """Ticket Encryption Type:\s*({ticket_encryption_type}[^\s]+)""",
+    """Account Name:\s{1,100}({user}[^@]+?)(?:@([^\s]+))?\s{1,100}Supplied Realm Name""",
+    """Client Address:\s{1,100}(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)""",
+    """Result Code:\s{1,100}({result_code}[\w]+)""",
+    """Supplied Realm Name:\s{1,100}({domain}[^\s]+)""",
+    """User ID:\s{1,100}(?:NULL SID|({user_sid}.+?))\s{1,100}Service Information""",
+    """Service Name:\s{0,100}({service_name}[^\s]+)""", 
+    """Ticket Options:\s{0,100}({ticket_options}[^\s]+)""",
+    """Ticket Encryption Type:\s{0,100}({ticket_encryption_type}[^\s]+)""",
   ]
  DupFields = ["host->dest_host"]
 }

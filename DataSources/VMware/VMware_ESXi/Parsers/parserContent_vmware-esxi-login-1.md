@@ -9,11 +9,11 @@ Name = vmware-esxi-login-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [""" logged in """,""" [User ""","""Event [""",""" vpxd """ ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """({host}[^\s]+)\s+\d+\s+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """User\s+((({domain}[^\\\s@]+)\\+)?({user}[^\s\\@]+)).+?\s*logged""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """({host}[^\s]+)\s{1,100}\d{1,100}\s{1,100}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
+    """User\s{1,100}((({domain}[^\\\s@]+)\\+)?({user}[^\s\\@]+)).+?\s{0,100}logged""",
     """\[({event_name}User.+?logged (out|in))""",
-    """user agent:\s+({user_agent}[^)]+)"""
+    """user agent:\s{1,100}({user_agent}[^)]+)"""
     """\w+@(127.\d{1,3}\.\d{1,3}\.\d{1,3}|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))"""
   ]
   DupFields = [ "event_name->activity", "host->dest_host" ]

@@ -10,14 +10,14 @@ Name = zoom-meeting-updated
   Conditions = [ """|Skyformation|""", """"event":"meeting.updated"""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """\WdestinationServiceName=({app}.+?)(\s+\w+=|\s*$)""",
-    """"operator"\s*:\s*"({user_email}[^\s@"]+@[^\s@"]+)"""",
-    """"operator_id"\s*:\s*"({meeting_host_id}[^"]+)"""",
-    """"event"\s*:\s*"meeting.({activity}updated)"""",
-    """"old_object"\s*:\s*\{.*?"password"\s*:\s*"({old_password}[^"]+)"""",
-    """"object"\s*:\s*\{.*?"password"\s*:\s*"({new_password}[^"]+)"""",
-    """"object"\s*:\s*\{"id"\s*:\s*({meeting_number}\d+)""",
-    """"time_stamp"\s*:\s*"({time}\d+)"""
+    """\WdestinationServiceName=({app}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """"operator"\s{0,100}:\s{0,100}"({user_email}[^\s@"]+@[^\s@"]+)"""",
+    """"operator_id"\s{0,100}:\s{0,100}"({meeting_host_id}[^"]+)"""",
+    """"event"\s{0,100}:\s{0,100}"meeting.({activity}updated)"""",
+    """"old_object"\s{0,100}:\s{0,100}\{.*?"password"\s{0,100}:\s{0,100}"({old_password}[^"]+)"""",
+    """"object"\s{0,100}:\s{0,100}\{.*?"password"\s{0,100}:\s{0,100}"({new_password}[^"]+)"""",
+    """"object"\s{0,100}:\s{0,100}\{"id"\s{0,100}:\s{0,100}({meeting_number}\d{1,100})""",
+    """"time_stamp"\s{0,100}:\s{0,100}"({time}\d{1,100})"""
   ]
 }
 ```

@@ -5,10 +5,10 @@ Name = moveit-file-upload
   DataType = "file-upload"
   Conditions = [ """AgentBrand: MOVEit""", """Upload"""]
   Fields = ${MoveITParserTemplates.moveit-activity.Fields} [
-     """\sFileID:\s*({file_id}[^,]+)""",
-     """\sFileName:\s*({file_name}[^,]+)""",
-     """\sFolderPath:\s*({file_path}[^,]+)""",
-     """\sXFerSize:\s*({bytes}[^,]+)""",
+     """\sFileID:\s{0,100}({file_id}[^,]+)""",
+     """\sFileName:\s{0,100}({file_name}[^,]+)""",
+     """\sFolderPath:\s{0,100}({file_path}[^,]+)""",
+     """\sXFerSize:\s{0,100}({bytes}[^,]+)""",
   ]
 }
 moveit-activity = {
@@ -19,10 +19,10 @@ moveit-activity = {
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)"""
     """\s\d\d:\d\d:\d\d\s({host}[^\s]+)""",
-    """\sIPAddress:\s*({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
+    """\sIPAddress:\s{0,100}({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
     """User\s'(({user_email}[^@]+@[^']+)|Automation|({user_fullname}[^']+))?'\s\(({user}[^\)]+)?\)""",
-    """\s:\s+({activity}[^,]+),\s+ID:""",
-    """\sUsername:\s*(Automation|({user}[^,]+))"""
+    """\s:\s{1,100}({activity}[^,]+),\s{1,100}ID:""",
+    """\sUsername:\s{0,100}(Automation|({user}[^,]+))"""
   ]
 
 ```

@@ -12,7 +12,7 @@ Name = mcafee-siem-5136
       """({event_name}A directory service object was modified)""",
       """"src_ip":"({src_ip}[^"]+)""",
       """"dst_ip":"({dest_ip}[^"]+)""",
-      """"id":\d*({event_code}5136)""",
+      """"id":\d{0,100}({event_code}5136)""",
       """"firsttime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
       """"DomainID":"({domain}[^"]+)""",
       """"HostID":"({host}[^"]+)""",

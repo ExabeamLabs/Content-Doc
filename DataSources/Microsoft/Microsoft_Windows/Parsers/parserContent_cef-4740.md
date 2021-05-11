@@ -8,16 +8,16 @@ Name = cef-4740
     DataType = "windows-account-lockout"
     TimeFormat = "epoch"
     Conditions = [ """|Microsoft|Microsoft Windows|""","""|Microsoft-Windows-Security-Auditing:4740|""" ]
-    Fields = [ """exabeam_EventTime=({eventtime}\d+)""",
+    Fields = [ """exabeam_EventTime=({eventtime}\d{1,100})""",
       """({event_name}A user account was locked out)""",
-      """\sexternalId=({event_code}\d+)""",
-      """\srt=({time}\d+)""",
+      """\sexternalId=({event_code}\d{1,100})""",
+      """\srt=({time}\d{1,100})""",
       """\sshost=({src_host}[^\s]+)""",
       """\ssrc=({src_ip}[a-fA-F:\d.]+)""",
       """\ssntdom=({caller_domain}[^\s]+)""",
-      """\ssuser=({caller_user}.+?)\s+\w+=""",
+      """\ssuser=({caller_user}.+?)\s{1,100}\w+=""",
       """\sdntdom=({domain}[^\s]+)""",
-      """\sduser=({user}.+?)\s+\w+=""",
+      """\sduser=({user}.+?)\s{1,100}\w+=""",
       """\sduid=({logon_id}[^\s]+)""",
       """\sdvc=({dest_ip}[a-fA-F:\d.]+)""",
       """\sdvchost=({host}[^\s]+)"""

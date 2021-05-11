@@ -10,18 +10,18 @@ Name = fortinet-security-alert-2
   Conditions = [ """subtype="anomaly"""", """action=""" ]
   Fields = [ 
     """\Wdate=({time}\d\d\d\d-\d\d-\d\d time\=\d\d:\d\d:\d\d)""",
-    """\Wdevname="*({host}[^\s"]+)"*(\s|")""",
+    """\Wdevname="{0,20}({host}[^\s"]+)"{0,20}(\s|")""",
     """\Wsrcip=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\Wdstip=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\Wattack="({alert_name}[^"]+)"""",
     """\Wsubtype="({alert_type}[^"]+)"""",
-    """\Wattackid=({alert_id}\d+)(\s|")""",
+    """\Wattackid=({alert_id}\d{1,100})(\s|")""",
     """\Wref="({malware_url}[^"]+)"""",
     """\Wmsg="({additional_info}[^"]+)"""",
     """\Wuser="({user}[^"]+)"""",
-    """\Wcrlevel="*({alert_severity}[^"\s]+)(\s|")""",
-    """\Wsrcport=({src_port}\d+)""",
-    """\Wdstport=({dest_port}\d+)""",
+    """\Wcrlevel="{0,20}({alert_severity}[^"\s]+)(\s|")""",
+    """\Wsrcport=({src_port}\d{1,100})""",
+    """\Wdstport=({dest_port}\d{1,100})""",
     """\Wservice="({protocol}[^"]+)"""",
     """\Waction="({action}[^"]+)"""",
   ]

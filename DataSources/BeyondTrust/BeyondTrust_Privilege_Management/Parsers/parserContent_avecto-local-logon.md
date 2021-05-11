@@ -11,14 +11,14 @@ Name = avecto-local-logon
     Fields = [
       """exabeam_raw=({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|pm|PM))""",
       """ComputerName=({host}[^\s]+)""",
-      """Message=({activity_type}.+?)\s+Command Line:""",
-      """User Name:\s*(?:[A-F\d\-]{36}|({user}.+?))\s+User Domain SID:""",
-      """User Domain Name:\s*({domain}.*?)\s+User Domain Name""",
-      """User SID:\s*({user_sid}.*?)\s+User Name""",
-      """Administrator:\s*({admin}.*?)\s+Power User""",
-      """Power User:\s*({power_user}.*?)\s+Workstyle""",
-      """Workstyle:\s*({account_info}.*?)\s+Workstyle""",
-      """IP4 Addresses:\s*[^,]+,({src_ip}.+?)(,|$|\s)""",
+      """Message=({activity_type}.+?)\s{1,100}Command Line:""",
+      """User Name:\s{0,100}(?:[A-F\d\-]{36}|({user}.+?))\s{1,100}User Domain SID:""",
+      """User Domain Name:\s{0,100}({domain}.*?)\s{1,100}User Domain Name""",
+      """User SID:\s{0,100}({user_sid}.*?)\s{1,100}User Name""",
+      """Administrator:\s{0,100}({admin}.*?)\s{1,100}Power User""",
+      """Power User:\s{0,100}({power_user}.*?)\s{1,100}Workstyle""",
+      """Workstyle:\s{0,100}({account_info}.*?)\s{1,100}Workstyle""",
+      """IP4 Addresses:\s{0,100}[^,]+,({src_ip}.+?)(,|$|\s)""",
     ]
   DupFields = [ "host->dest_host" ]
   }

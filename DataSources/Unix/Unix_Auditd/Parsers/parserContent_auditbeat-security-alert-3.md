@@ -16,18 +16,18 @@ auditbeat-events = {
   IsHVF = true
   TimeFormat = "epoch_sec"
   Fields = [
-    """"end":({time}\d+)""",
+    """"end":({time}\d{1,100})""",
     """"actor":\{.*?"secondary":"(|({user}[^"]+))""""
     """"actor":\{.*?"primary":"(|({account}[^"]+))""""
-    """"user":\{.*?"uid":"({user_id}\d+)"""",
-    """"user":\{.*?"gid":"({group_id}\d+)"""",
-    """"pid":({pid}\d+)""",
-    """"ppid":({parent_process_id}\d+)""",
+    """"user":\{.*?"uid":"({user_id}\d{1,100})"""",
+    """"user":\{.*?"gid":"({group_id}\d{1,100})"""",
+    """"pid":({pid}\d{1,100})""",
+    """"ppid":({parent_process_id}\d{1,100})""",
     """"process":\{.*?"name":"(|({process_name}[^"]+))"""",
     """"process":\{.*?"args":\[({arg}[^\[\]]+?)\]""",
     """"process":\{.*?"title":"({command_line}.*?)"(\}|,)"""
     """"host":\{.*?"name":"(|({host}[^"]+))"""",
-    """"data":\{.*?"hostname":"(eth\d+\.)?(|({src_host}[^"]+))"""",
+    """"data":\{.*?"hostname":"(eth\d{1,100}\.)?(|({src_host}[^"]+))"""",
     """"result":"({outcome}[^"]+)"""",
     """"event":\{.*?"type":"(|({activity_type}[^"]+))"""",
     """"event":\{.*?"action":"(|({log_type}[^"]+))"""",

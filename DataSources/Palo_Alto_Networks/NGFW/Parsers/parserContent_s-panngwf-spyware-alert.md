@@ -11,29 +11,11 @@ Name = s-panngwf-spyware-alert
   Fields = [ 
     """exabeam_host=({host}[^\s]+)""",
     """"host":\{.*?"name":"({host}[^"]+)".*?\}""",
-    """,THREAT,spyware,[^,]+,({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+    """,THREAT,spyware,[^,]+,({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """,THREAT,spyware,[^,]+,({time}\d\d\d\d\/\d\d\/\d\d \d\d:\d\d:\d\d)""",
     """,THREAT,spyware,([^,]+,){2}({dest_ip}[a-fA-F\d:.]+),({src_ip}[a-fA-F\d:.]+),""",
-    """\d\d:\d\d:\d\d\s+({host}[^\s]+)\s""",
+    """\d\d:\d\d:\d\d\s{1,100}({host}[^\s]+)\s""",
     """THREAT,({alert_type}\w+),""",
     """,THREAT,[^"]+?,({action}[^,]+),\\?"[^"]*"""",
-    """,THREAT,.+?,\\?"+([^\(]+\()?(|({malware_url}[^"\)]+?))\)?[\\\/]*"+,""",
-    """,THREAT,[^"]+?,\\?"[^\s]*?"+,?({alert_name}[^,\("]+?)\s*\(({alert_id}\d+)?""",
-    """,THREAT,[^"]+?,\\?"[^\s]*?",[^,]*,({threat_category}[^,]+),""",
-    """THREAT,spyware,([^,]*,){29}({alert_severity}\w+)""",
-    """THREAT,spyware,[^"]+?,\\?"[^\s]*?",([^,]*,){2}({alert_severity}\w+)""",
-    """THREAT,spyware,([^,]*,){7}(({user_email}[^@,]+@[^\.,]+\.[^,]+)|(({domain}[^\\\/,]+)[\\\/]+)?({user}[^\\\/,]+)),""",
-    """THREAT,spyware,([^,]*,){19}(?:|({src_port}\d+)),(?:|({dest_port}\d+)),([^,]*,){3}(?:|({protocol}[^,]+)),(?:|({action}[^,]+)),\\?"*""",
-    """THREAT,spyware,([^,]*,){9}({app}[^,]+),""",
-    """,THREAT,[^"]+?,\\?"[^\s]*?"+,?([^"]+)"+,({alert_id}\d+)?""",
-    """(?i),THREAT,(("[^"]*?",)|([^,]*,)){30,31}(low|medium|high|critical|informational),({direction}[^,]*),([^,]+,){3}({src_location}[^\d,]+)"""
-  ]
-  DupFields = ["action->outcome"] 
-  SOAR {
-    IncidentType = "malware"
-    DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->malwareName", "alert_severity->sourceSeverity", "alert_id->sourceId", "src_ip->malwareVictimHost", "alert_type->description", "dest_ip->malwareAttackerIp"]
-    NameTemplate = """Palo Alto Alert ${alert_name} found"""
-    ProjectName = "SOC"
-    EntityFields = [
-      {EntityType="device", Name="src_address", Fields=["src_ip->ip_address"]}
+    """,THREAT,.+?,\\?"{1,20}([^\(]+\()?(|({malware_url}[^"\)]+?))\)?[\\\/]*"{1,20}
 ```

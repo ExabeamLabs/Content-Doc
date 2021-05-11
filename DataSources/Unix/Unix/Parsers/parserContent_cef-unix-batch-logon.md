@@ -9,8 +9,8 @@ Name = cef-unix-batch-logon
   TimeFormat = "epoch"
   Conditions = [ """|Unix|Unix|""", """|session opened|""", """cs1=su """, """ by (uid""" ]
   Fields = [
-    """\srt=({time}\d+)""",
-    """\sduser=({user}.+?)\s+\w+=""",
+    """\srt=({time}\d{1,100})""",
+    """\sduser=({user}.+?)\s{1,100}\w+=""",
     """ dst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """ dhost=({dest_host}[^\s]+)""",
   ]

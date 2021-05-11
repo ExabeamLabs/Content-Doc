@@ -10,14 +10,14 @@ Name = cef-syslog-securesphere-db-login
   TimeFormat = "epoch"
   Conditions = [ """|Imperva|SecureSphere DAM|""", """cs5=Login""", """outcome=True""" ]
   Fields = [
-    """\srt=({time}\d+)""",
+    """\srt=({time}\d{1,100})""",
     """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sdvchost=({host}[^\s]+)""",
-    """\sduser=({user}.+?)\s+\w+=""",
-    """\scs4=(?: |({app}.+?))\s+\w+=""",
-    """\scs3=(?: |({service_name}.+?))\s+\w+=""",
-    """\scs2=(?: |({server_group}.+?))\s+\w+=""",
-    """\sflexString1=(?: |({database_name}.+?))\s+\w+=""",
+    """\sduser=({user}.+?)\s{1,100}\w+=""",
+    """\scs4=(?: |({app}.+?))\s{1,100}\w+=""",
+    """\scs3=(?: |({service_name}.+?))\s{1,100}\w+=""",
+    """\scs2=(?: |({server_group}.+?))\s{1,100}\w+=""",
+    """\sflexString1=(?: |({database_name}.+?))\s{1,100}\w+=""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sshost=({src_host}[^\s]+)""",

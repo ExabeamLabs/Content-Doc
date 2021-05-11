@@ -10,11 +10,11 @@ Name = netmotion-vpn-start
     Conditions = [ "POP_Address=", "Log_Date_Time" ]
     Fields = [
       """exabeam_host=({host}[^\s]+)""",
-      """Log_Date_Time=({time}\d+)""",
-      """Device_Name="+({src_host}[^"]+)""",
-      """User_Name="+([^\\]+\\)?({user}[^"]+)""",
-      """POP_Address="+({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-      """Virtual_Address="+({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
+      """Log_Date_Time=({time}\d{1,100})""",
+      """Device_Name="{1,20}({src_host}[^"]+)""",
+      """User_Name="{1,20}([^\\]+\\)?({user}[^"]+)""",
+      """POP_Address="{1,20}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+      """Virtual_Address="{1,20}({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
     ]
     DupFields = ["user->account"]
   }

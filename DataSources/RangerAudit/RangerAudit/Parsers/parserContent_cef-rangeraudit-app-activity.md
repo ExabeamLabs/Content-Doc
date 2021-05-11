@@ -9,16 +9,16 @@ Name = cef-rangeraudit-app-activity
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
   Conditions = [ """"RangerAudit"""", """enforcer""", """"yarn-acl"""" ]
   Fields = [
-    """evtTime"*:"({time}[^"]+)""",
-    """agentHost"*:"({host}[^"]+)""",
-    """repo"*:"({app}[^"]+)""",
-    """reqUser"*:"({user}[^"]+)""",
-    """access"*:"({activity}[^"]+)""",
-    """reqData"*:"({additional_info}[^"]+)""",
-    """resource"*:"({object}[^"\/]+)""",
-    """resType"*:"({resource}[^"]+)""",
-    """cliIP"*:"({src_ip}[^"]+)""",
-    """cluster_name"*:"({dest_host}[^"]+)""",
+    """evtTime"{0,20}:"({time}[^"]+)""",
+    """agentHost"{0,20}:"({host}[^"]+)""",
+    """repo"{0,20}:"({app}[^"]+)""",
+    """reqUser"{0,20}:"({user}[^"]+)""",
+    """access"{0,20}:"({activity}[^"]+)""",
+    """reqData"{0,20}:"({additional_info}[^"]+)""",
+    """resource"{0,20}:"({object}[^"\/]+)""",
+    """resType"{0,20}:"({resource}[^"]+)""",
+    """cliIP"{0,20}:"({src_ip}[^"]+)""",
+    """cluster_name"{0,20}:"({dest_host}[^"]+)""",
   ]
 }
 ```

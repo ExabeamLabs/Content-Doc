@@ -10,20 +10,20 @@ Name = xml-5156
   Conditions = [ """<EventID>5156</EventID>""", """<Event xmlns='""" ]
   Fields = [
     """({event_name}The Windows Filtering Platform has permitted a connection)""",
-    """<TimeCreated SystemTime='({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d)\d+Z'/>""",
+    """<TimeCreated SystemTime='({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d)\d{1,100}Z'/>""",
     """({event_code}5156)""",
     """<Computer>({host}[^<>]+)</Computer>""",
     """<Data Name='ProcessID'>({pid}[^<>]+)<\/Data>""",
     """<Data Name='Application'>({process}({process_directory}(?:[^<]+)?[\\\/])?({process_name}[^\\\/]+?))<\/Data>""",
     """<Data Name='SourceAddress'>({src_ip}[a-fA-F:\d.]+)</Data>""",
-    """<Data Name='SourcePort'>({src_port}\d+)</Data>""",
+    """<Data Name='SourcePort'>({src_port}\d{1,100})</Data>""",
     """<Data Name='DestAddress'>({dest_ip}[a-fA-F:\d.]+)</Data>""",
-    """<Data Name='DestPort'>({dest_port}\d+)</Data>""",
+    """<Data Name='DestPort'>({dest_port}\d{1,100})</Data>""",
     """<Data Name='Protocol'>({protocol}[^<>]+)</Data>""",
     """<RenderingInfo.+?<Task>({activity_type}[^<>]+)</Task>.*?</RenderingInfo>""",
-    """<Computer>({src_host}[^<>]+)</Computer>.+?Direction:\s*({direction}Outbound)""",
-    """<Computer>({dest_host}[^<>]+)</Computer>.+?Direction:\s*({direction}Inbound)""",
-    """Layer Name:\s*({layer_name}[^\s]+)"""
+    """<Computer>({src_host}[^<>]+)</Computer>.+?Direction:\s{0,100}({direction}Outbound)""",
+    """<Computer>({dest_host}[^<>]+)</Computer>.+?Direction:\s{0,100}({direction}Inbound)""",
+    """Layer Name:\s{0,100}({layer_name}[^\s]+)"""
   ]
   DupFields = [ "host->local_asset" ]
 }

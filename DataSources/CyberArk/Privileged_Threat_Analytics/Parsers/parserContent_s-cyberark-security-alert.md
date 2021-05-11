@@ -10,8 +10,8 @@ Name = s-cyberark-security-alert
     Conditions = [ """app="cyberark:pta"""", """deviceCustomDate1=""",  ]
     Fields = [
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d\:\d\d)""",
-      """"deviceCustomDate1(":\s+"|=)({time}\d+).*?"deviceCustomDate1Label(": "|=)DetectionDate"""",
-      """"deviceCustomDate1Label(": "|=)DetectionDate".*?"deviceCustomDate1(":\s+"|=)({time}\d+)""",
+      """"deviceCustomDate1(":\s{1,100}"|=)({time}\d{1,100}).*?"deviceCustomDate1Label(": "|=)DetectionDate"""",
+      """"deviceCustomDate1Label(": "|=)DetectionDate".*?"deviceCustomDate1(":\s{1,100}"|=)({time}\d{1,100})""",
       """\shost_masked="({host}[^",]+)""",
       """\sduser="?(?:None|({user}[^",]+))""",
       """\sdvc_masked="({host}[^",]+)""",
@@ -26,7 +26,7 @@ Name = s-cyberark-security-alert
       """\scategory="({alert_name}[^",]+)""",
       """\scef_severity=({alert_severity}\w+)""",
       """\sseverity=({alert_severity}\w+)""",
-      """\scef_signature=({alert_id}\d+)""",
+      """\scef_signature=({alert_id}\d{1,100})""",
     ]
     DupFields = ["alert_name->alert_type"]
   }

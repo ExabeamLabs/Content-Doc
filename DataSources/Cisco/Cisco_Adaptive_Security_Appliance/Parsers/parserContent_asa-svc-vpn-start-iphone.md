@@ -9,7 +9,7 @@ Name = asa-svc-vpn-start-iPhone
     TimeFormat = "MMM dd yyyy HH:mm:ss"
     Conditions = [ "-iPhone> IP", "-722051" ]
     Fields = [
-      """({time}\w+ \d+ \d\d\d\d \d\d:\d\d:\d\d)""",
+      """({time}\w+ \d{1,100} \d\d\d\d \d\d:\d\d:\d\d)""",
       """exabeam_host=({host}[\w.\-]+)""",
       """User[\s\t]+<({user}.+?)-({src_host}[\w]+-iPhone)>[\s\t]+IP[\s\t]+<({src_ip}[^>]+)>[\s\t]+(?:IPv4[\s\t])?Address[\s\t]+<({src_translated_ip}[^>]+)>"""
     ]

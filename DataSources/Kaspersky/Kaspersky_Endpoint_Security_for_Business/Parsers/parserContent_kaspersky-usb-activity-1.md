@@ -12,11 +12,11 @@ Name = kaspersky-usb-activity-1
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ) ({host}[\w\-.]+) KES\|""",
     """hip="({dest_ip}[A-Fa-f:\d.]+)""",
     """hdn="({dest_host}[^"]+)""",
-    """Device type\/Bus type:\s*({device_type}[^"\\]+)""",
-    """Device ID:\s*({device_id}.+)&\d+""",
-    """User:\s*(({domain}[^"\\]+)\\+)?({user}[^\\\s"]+)""",
-    """Result\\Decision:\s*({action}[^"\\]+)""",
-    """Operation:\s*({activity}[^\\"]+)""",
+    """Device type\/Bus type:\s{0,100}({device_type}[^"\\]+)""",
+    """Device ID:\s{0,100}({device_id}.+)&\d{1,100}""",
+    """User:\s{0,100}(({domain}[^"\\]+)\\+)?({user}[^\\\s"]+)""",
+    """Result\\Decision:\s{0,100}({action}[^"\\]+)""",
+    """Operation:\s{0,100}({activity}[^\\"]+)""",
     """etdn="({activity_details}[^"]+)""",
   ]
   DupFields = [ "activity_details->alert_name","action->alert_type","activity->outcome" ]

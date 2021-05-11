@@ -9,13 +9,13 @@ Name = leef-fireeye-alert
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ """|FireEye|CMS|""", """dvchost=""", """action=""" ]
   Fields = [
-    """\WdevTime=({time}\w+ \d+ \d\d\d\d \d\d:\d\d:\d\d)""",
+    """\WdevTime=({time}\w+ \d{1,100} \d\d\d\d \d\d:\d\d:\d\d)""",
     """\|FireEye\|CMS\|([^\|]*\|){1}({alert_type}[^\|]+)""",
-    """\Wsev=({alert_severity}\d+)""",
+    """\Wsev=({alert_severity}\d{1,100})""",
     """\Wsname=({alert_name}[^\^]+)""",
     """\Wdvc=({host}[a-fA-F:\d.]+)""",
     """\Wdvchost=({host}[\w\-.]+)""",
-    """\WexternalId=({alert_id}\d+)""",
+    """\WexternalId=({alert_id}\d{1,100})""",
     """\Wduser=({user_email}[^\^\s,]+)""",
     """\Wlink=({malware_url}[^\^]+)""",
   ]

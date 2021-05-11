@@ -9,7 +9,7 @@ Name = f5-vpn-auth-failed
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """01490212:4""" ]
   Fields = [
-    """@timestamp"\s*:\s*"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+    """@timestamp"\s{0,100}:\s{0,100}"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """exabeam_host=({host}[\w\.\-]+)""",
     """authenticate with '({user}[^']+)' failed""",
   ]

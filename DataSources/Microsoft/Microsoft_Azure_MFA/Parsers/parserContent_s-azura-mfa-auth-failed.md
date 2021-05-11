@@ -9,11 +9,11 @@ Name = s-azura-mfa-auth-failed
   TimeFormat = "epoch"
   Conditions = [ """pfsvc: Pfauth failed""", """Call status:"""]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
-    """({host}[\w\.-]+)\s+pfsvc:""",
-    """\suser\s+'({user_dn}[^']+)' \(distinguishedName format\)( from ({src_ip}[\d\.:]+?))?\.\s""",
-    """\suser\s+'({user}[^']+)'( from ({src_ip}[\d\.:]+?))?\.\s""",
-    """\WCall status:\s*({call_status}\S+)\s+-\s*"({failure_reason}[^"]+)"\.""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
+    """({host}[\w\.-]+)\s{1,100}pfsvc:""",
+    """\suser\s{1,100}'({user_dn}[^']+)' \(distinguishedName format\)( from ({src_ip}[\d\.:]+?))?\.\s""",
+    """\suser\s{1,100}'({user}[^']+)'( from ({src_ip}[\d\.:]+?))?\.\s""",
+    """\WCall status:\s{0,100}({call_status}\S+)\s{1,100}-\s{0,100}"({failure_reason}[^"]+)"\.""",
     """({auth_method}Pfauth)""",
   ]
 }

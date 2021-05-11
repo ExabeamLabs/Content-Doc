@@ -9,10 +9,10 @@ Name = checkpoint-vpn-login-5
   TimeFormat = "epoch"
   Conditions = [ """product=Identity Awareness""" , """|auth_status=Successful Login|""" ]
   Fields = [
-    """"time=({time}\d+)""",
-    """\|hostname=({host}.+?)\s*\|""",
-    """(U|u)ser=(-|({user_fullname}[^\(]+)\s+\(({user}[^\)]+))""",
-    """\|src_user_group=({user_group}.+?)\s*\|""",
+    """"time=({time}\d{1,100})""",
+    """\|hostname=({host}.+?)\s{0,100}\|""",
+    """(U|u)ser=(-|({user_fullname}[^\(]+)\s{1,100}\(({user}[^\)]+))""",
+    """\|src_user_group=({user_group}.+?)\s{0,100}\|""",
     """\|src_machine_name=({src_host}[^\|]+)""",
     """\|src=({src_ip}[^\|]+)""",
     """\|endpoint_ip=({dest_ip}[^\|]+)""",

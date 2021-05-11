@@ -10,15 +10,15 @@ Name = o365-teams-activity-1
   Conditions = [ """Workload""", """MicrosoftTeams""", """Operation""" ]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """"CreationTime\\*"+:[\s\\]*"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """destinationServiceName=({app}.+?)\s*deviceInboundInterface""",
-    """Workload"*:"*({app}[^"]+)""",
-    """Workload"*:\s*"*({app}[^"]+)"*\}""",
-    """ObjectId"*:\s*"*((?i)(Unknown)|({object}[^"]+))"*""",
-    """Operation"*:\s*"*({activity}[^"]+)"*""",
-    """UserKey"*:\s*"*({user_email}[^@"]+@({email_domain}[^"]+))"*""",
-    """UserId"*:\s*"*({user_email}[^@"]+@({email_domain}[^"]+))"*""",
-    """"ClientIP\\*"+:[\s\\]*"+(::1|\[?({src_ip}[a-fA-F\d.:]+))""",
+    """"CreationTime\\*"{1,20}:[\s\\]*"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
+    """destinationServiceName=({app}.+?)\s{0,100}deviceInboundInterface""",
+    """Workload"{0,20}:"{0,20}({app}[^"]+)""",
+    """Workload"{0,20}:\s{0,100}"{0,20}({app}[^"]+)"{0,20}\}""",
+    """ObjectId"{0,20}:\s{0,100}"{0,20}((?i)(Unknown)|({object}[^"]+))"{0,20}""",
+    """Operation"{0,20}:\s{0,100}"{0,20}({activity}[^"]+)"{0,20}""",
+    """UserKey"{0,20}:\s{0,100}"{0,20}({user_email}[^@"]+@({email_domain}[^"]+))"{0,20}""",
+    """UserId"{0,20}:\s{0,100}"{0,20}({user_email}[^@"]+@({email_domain}[^"]+))"{0,20}""",
+    """"ClientIP\\*"{1,20}:[\s\\]*"{1,20}(::1|\[?({src_ip}[a-fA-F\d.:]+))""",
     """src-account-name":"({account_name}[^"]+)""",
     ]
 }

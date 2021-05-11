@@ -13,22 +13,22 @@ azure-event-hub-network-events = {
     Lms = Direct
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
     Fields = [
-      """@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d+Z)""",
-      """\d+-\d+-\d\dT\d+:\s\d+:\d+\.\d+\+\d+\s({host}[^\s]+)""",
+      """@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d{1,100}Z)""",
+      """\d{1,100}-\d{1,100}-\d\dT\d{1,100}:\s\d{1,100}:\d{1,100}\.\d{1,100}\+\d{1,100}\s({host}[^\s]+)""",
       """subject=({event_name}[^|\s]+)""",
       """category":"({category}[^"]+)""",
       """ActionType":"({outcome}[^"]+)""",
       """DeviceName":"({dest_host}[^"]+)""",
       """sip=({src_ip}[A-Fa-f:\d.]+)""",
       """dip=({dest_ip}[A-Fa-f:\d.]+)""",
-      """sport=({src_port}\d+)""",
-      """dport=({dest_port}\d+)""",
+      """sport=({src_port}\d{1,100})""",
+      """dport=({dest_port}\d{1,100})""",
       """protname=({protocol}[^|]+)""",
-      """"RemoteUrl"+:"+({url}[^",]+)""",
+      """"RemoteUrl"{1,20}:"{1,20}({url}[^",]+)""",
       """domainorigin=({domain}[^|]+)""",
-      """"InitiatingProcessId":({pid}\d+)""",
+      """"InitiatingProcessId":({pid}\d{1,100})""",
       """"InitiatingProcessAccountName":"(system|SYSTEM|NETWORK SERVICE|local service|({user}[^"]+))""",
-      """"InitiatingProcessAccountSid"+:"+({user_sid}[^"]+)""",
+      """"InitiatingProcessAccountSid"{1,20}:"{1,20}({user_sid}[^"]+)""",
     ] 
   }
 
@@ -38,14 +38,14 @@ azure-event-hub-network-events = {
    Lms = QRadar
    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
    Fields = [
-      """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+      """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
       """time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{7}Z)""",
       """initiatedBy":.+?userPrincipalName":"({user_email}[^",]+)""",
       """initiatedBy":.+?id":"({user_uid}[^",]+)""",
       """callerIpAddress":"({src_ip}[^",]+)""",
       """operationName":"({activity}[^",]+)""",
       """result":"(notEnabled|notApplied|({outcome}[^",]+))""",
-      """category":"({category}[^",]+)"*,correlationId"""",
+      """category":"({category}[^",]+)"{0,20},correlationId"""",
       """"app":\{.*?displayName":"({app}[^",]+)""",
       """loggedByService":"({app}[^",]+)"""
    ]

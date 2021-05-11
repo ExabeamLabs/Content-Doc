@@ -11,18 +11,18 @@ Name = q-oracle-db-query
   Conditions = [ """Oracle Audit""", """ ACTION :""", """ DATABASE USER:""", """CLIENT USER:""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\Wrt=({time}\d+)""",
+    """\Wrt=({time}\d{1,100})""",
     """\Wdvc=({host}[A-Fa-f:\d.]+)""",
     """\Wdvchost=({host}[\w\-.]+)""",
-    """({host}[\w\-.]+)\s+Oracle Audit""",
-    """ACTION\s+:\[\d+\]\s+'({db_query}({db_operation}\w+)\s*.*?)\s*'\s+DATABASE USER:""",
-    """ACTION\s+:\[\d+\]\s+'({db_operation}grant \w+)""",
-    """ACTION\s+:\[\d+\]\s+'({db_operation}revoke \w+)""",
-    """ACTION\s+:\[\d+\]\s+'({db_operation}alter \w+)""",
-    """\sCLIENT USER:\[\d+\]\s*'({user}[^']+)'""",
-    """\sDBID:\[\d+\]\s*'(|({database_name}[^']+))'""",
-    """\sDATABASE USER:\[\d+\]\s*'(\/|({account}[^'\\\/\s]+))'""",
-    """\sPRIVILEGE:\[\d+\]\s*'({privilege}[^']+)'""",
+    """({host}[\w\-.]+)\s{1,100}Oracle Audit""",
+    """ACTION\s{1,100}:\[\d{1,100}\]\s{1,100}'({db_query}({db_operation}\w+)\s{0,100}.*?)\s{0,100}'\s{1,100}DATABASE USER:""",
+    """ACTION\s{1,100}:\[\d{1,100}\]\s{1,100}'({db_operation}grant \w+)""",
+    """ACTION\s{1,100}:\[\d{1,100}\]\s{1,100}'({db_operation}revoke \w+)""",
+    """ACTION\s{1,100}:\[\d{1,100}\]\s{1,100}'({db_operation}alter \w+)""",
+    """\sCLIENT USER:\[\d{1,100}\]\s{0,100}'({user}[^']+)'""",
+    """\sDBID:\[\d{1,100}\]\s{0,100}'(|({database_name}[^']+))'""",
+    """\sDATABASE USER:\[\d{1,100}\]\s{0,100}'(\/|({account}[^'\\\/\s]+))'""",
+    """\sPRIVILEGE:\[\d{1,100}\]\s{0,100}'({privilege}[^']+)'""",
   ]
   DupFields = [ "user->os_user", "account->db_user" ]
 }

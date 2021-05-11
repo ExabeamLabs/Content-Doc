@@ -26,7 +26,7 @@ cef-netskope-alert = {
   TimeFormat = "epoch_sec"
   Fields = [
     """"hostname":"({host}[^",]+)"""",
-    """"timestamp":({time}\d+)""",
+    """"timestamp":({time}\d{1,100})""",
     """"user":"(({user_email}[^@"\s]+@[^@"\s]+)|(({domain}[^"@\\\/\s]+)[\\\/]+)?({user}[^"@\\\/\s]+))"""",
     """"dstip":"({dest_ip}[A-Fa-f:\d.]+)""",
     """"alert_name":"({alert_name}[^"]+)""",

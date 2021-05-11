@@ -9,8 +9,8 @@ Name = citrix-remote-logon
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """"text":"Shadow user""", """"event":"admin-action"""", """"system":"Citrix-XenApp""""]
   Fields = [
-    """"starttime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)"""",
-    """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
+    """"starttime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)"""",
+    """exabeam_host=([^=]+?@\s{0,100})?({host}[\w.-]+)""",
     """"username":"(({user_email}[^@"]+@[^\."]+\.[^"]+)|(({domain}[^\\"]+)\\+)?({user}[^"]+))"""",
     """({event_name}admin-action)""",
     """"text":"({additional_info}[^"]+)",""",

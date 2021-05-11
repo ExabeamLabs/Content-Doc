@@ -10,7 +10,7 @@ Name = unix-auth-failed-4
   Conditions = [ """: expired password for user""", """sshd[""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """({host}[\w.\-]+)\s+sshd\[""",
+    """({host}[\w.\-]+)\s{1,100}sshd\[""",
     """expired password for user ({account}.+?) \(({failure_reason}.+?)\)""",
   ]
 }

@@ -9,16 +9,16 @@ Name = n-forwarded-cef-damballa-alert
   TimeFormat = "epoch"
   Conditions = [ "|McAfee|ESM", "|421-" ]
   Fields = [
-    """\srt=({time}\d+)""",
-    """\|McAfee\|ESM\|.+?\|.+?\|({alert_name}.+?)\|""",
-    """\|McAfee\|ESM\|.+?\|.+?\|.+?\|({alert_severity}.+?)\|""",
+    """\srt=({time}\d{1,100})""",
+    """\|McAfee\|ESM\|[^|]+?\|[^|]+?\|({alert_name}.+?)\|""",
+    """\|McAfee\|ESM\|[^|]+?\|[^|]+?\|[^|]+?\|({alert_severity}.+?)\|""",
     """\sdeviceTranslatedAddress=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\sexternalId=({alert_id}\d+)""",
+    """\sexternalId=({alert_id}\d{1,100})""",
     """\sshost=({src_host}[^\s]+)""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\snitroObject_Type=({alert_type}.+?)\s+\w+=""",
-    """\snitroURL=({additional_info}.+?)\s+\w+="""
+    """\snitroObject_Type=({alert_type}.+?)\s{1,100}\w+=""",
+    """\snitroURL=({additional_info}.+?)\s{1,100}\w+="""
   ]
 }
 ```

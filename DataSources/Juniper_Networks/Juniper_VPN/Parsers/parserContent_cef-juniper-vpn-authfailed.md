@@ -9,9 +9,9 @@ Name = cef-juniper-vpn-authfailed
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """|Juniper|""", """|Primary authentication failed|""" ]
   Fields = [
-	"""\Wrt=({time}\d+)""",
+	"""\Wrt=({time}\d{1,100})""",
 	"""\Wdvchost=({host}[\w\-.]+)""",
-    """({failure_reason}(Primary|Secondary) authentication failed) for\s+(({domain}[^\\]+)\\+)?({user}[^@\s\\\/]+)(\/({realm}.+?))\s+from=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """({failure_reason}(Primary|Secondary) authentication failed) for\s{1,100}(({domain}[^\\]+)\\+)?({user}[^@\s\\\/]+)(\/({realm}.+?))\s{1,100}from=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
 	"""\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
 	"""\Wsuser=(System|({user}[^\s]+))""",
   ]

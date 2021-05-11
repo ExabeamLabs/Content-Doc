@@ -15,7 +15,7 @@ Name = syslog-liebsoft-account-switch-1
     """sOriginatingSystem="({host}[^"]+)""",
     """sOriginatingSystem="({dest_host}[^"]+)""",
     """dwAppSpecificEventID="({event_code}[^"]+)""",
-    """sMessage="checked-out password for\s*\([^\)]*\)'(({account_domain}[^\\\s']+)\\+)?({account}[^\\\s']+)""",
+    """sMessage="checked-out password for\s{0,100}\([^\)]*\)'(({account_domain}[^\\\s']+)\\+)?({account}[^\\\s']+)""",
     """sEventID="({event_name}[^"]+)"""
     ]
   }

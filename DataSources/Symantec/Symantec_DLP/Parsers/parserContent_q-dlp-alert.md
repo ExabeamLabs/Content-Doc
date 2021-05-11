@@ -9,30 +9,30 @@ Name = q-dlp-alert
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = [ "LEEF:", "|Symantec|DLP|", "|subject=" ]
     Fields = [
-      """exabeam_endTime=({time}\d+)""",
+      """exabeam_endTime=({time}\d{1,100})""",
       """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-      """\s({host}[\w.\-]+)\s+LEEF:""",
-      """\|incidentID=({alert_id}\d+)""",
+      """\s({host}[\w.\-]+)\s{1,100}LEEF:""",
+      """\|incidentID=({alert_id}\d{1,100})""",
       """\|Symantec\|DLP\|({alert_severity}[^\|]+)\|""",
-      """\|Symantec\|DLP\|[^|]+?\|({alert_name}[^|]+?)\s*\|""",
+      """\|Symantec\|DLP\|[^|]+?\|({alert_name}[^|]+?)\s{0,100}\|""",
       """\|usrName=(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({user_email}[^\|@]+@[^\|@]+)|(N/A|({user}[^\|]+)))""",
       """\|suser=((NT AUTHORITY|({domain}[^\|\\\/]+))[\\\/]+)?(system|N/A|({user}[^\|\\\/]+))\|"""
       """\|usrName=(N/A|({user}[^\|@]+))@""",
       """\|usrName=(?=[\w.]+@[\w.])({sender}[^\|]+)""",
       """\|duser=(?=[\w.]+@[\w.])({recipients}[^\|]+)""",
       """\|duser=(?=[\w.]+@[\w.])({external_address}[^,\|]+)""",
-      """\|duser=[^@]+@({external_domain}[^,\\|]+)\s*[\|,]""",
-      """\|subject=\s*((?!SFTP|HTTP|FTP|TCP|N/A)({subject}[^\|]+?))\s*\|""",
-      """\|rules=\s*({alert_type}[^\|]+?)\s*\|""",
-      """\|duser=({account}.+?)@({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\|.+?\|subject=({protocol}FTP)""",
-      """\|subject=FTP\s+({file_name}.+?)\s+\(({bytes_num}\d+)\s+({bytes_unit}[^\)]+)""",
-      """\|duser=({target}[^\|]+)\|.+?\|subject=({protocol}HTTP)""",
-      """\|duser=\w+:\/+[^\s]*?((?!\d{1,3}\.\d{1,3}\.\d{1,3})({top_domain}[^\/\.\s]+(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+))(\/|\|).+?\|subject=HTTP""",
+      """\|duser=[^@]+@({external_domain}[^,\\|]+)\s{0,100}[\|,]""",
+      """\|subject=\s{0,100}((?!SFTP|HTTP|FTP|TCP|N/A)({subject}[^\|]+?))\s{0,100}\|""",
+      """\|rules=\s{0,100}({alert_type}[^\|]+?)\s{0,100}\|""",
+      """\|duser=({account}.+?)@({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\|[^|]+?\|subject=({protocol}FTP)""",
+      """\|subject=FTP\s{1,100}({file_name}.+?)\s{1,100}\(({bytes_num}\d{1,100})\s{1,100}({bytes_unit}[^\)]+)""",
+      """\|duser=({target}[^\|]+)\|[^|]+?\|subject=({protocol}HTTP)""",
+      """\|duser=\w+:\/+[^\s]*?((?!\d{1,3}\.\d{1,3}\.\d{1,3})({top_domain}[^\/\.\s]+(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+))(\/|\|)[^|]+?\|subject=HTTP""",
       """\|subject=({protocol}TCP:Pop3|SFTP)\|""",
       """\|Protocol=.+?({protocol}SMTP|FTP|HTTP|HTTPS)\|""",
       """\|fileName=(N\/A|({file_name}[^\|]+))""",
       """\|parentPath=(N\/A|({file_path}[^\|]+))""",
-      """\|blocked=(None|({outcome}[^\|]+?))\s*\|""",
+      """\|blocked=(None|({outcome}[^\|]+?))\s{0,100}\|""",
     ]
     SOAR {
       IncidentType = "dlp"

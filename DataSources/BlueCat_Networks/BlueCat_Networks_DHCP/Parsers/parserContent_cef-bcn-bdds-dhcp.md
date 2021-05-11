@@ -9,7 +9,7 @@ Name = cef-bcn-bdds-dhcp
     TimeFormat = "epoch"
     Conditions = [ """CEF:""", """|BCN|BDDS_DHCP|""", """|DHCP_Message|DHCP message|""", """shost=""", """src=""" ]
     Fields = [
-      """\srt=({time}\d+)""",
+      """\srt=({time}\d{1,100})""",
       """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sdvchost=({host}[\w.\-]+)""",
       """\scat=(?:|({category}.+?))\s\w+=""",

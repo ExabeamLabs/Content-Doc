@@ -9,11 +9,11 @@ Name = aventail-vpn-start-1
   TimeFormat = "dd/MMM/yyyy:HH:mm:ss.SSSSSS Z"
   Conditions = [ """ Src='""", """ User='""", """' Dest='""", """EquipmentId='""", """PlatformPrefix='""" ]
   Fields = [
-    """logserver:\s*\[({time}\d+\/\w+\/\d\d\d\d:\d\d:\d\d:\d\d\.\d+ [\+\-]\d+)""",
-    """\w+\s+\d+\s+\d\d:\d\d:\d\d ({host}[\w\-.]+) logserver:""",
+    """logserver:\s{0,100}\[({time}\d{1,100}\/\w+\/\d\d\d\d:\d\d:\d\d:\d\d\.\d{1,100} [\+\-]\d{1,100})""",
+    """\w+\s{1,100}\d{1,100}\s{1,100}\d\d:\d\d:\d\d ({host}[\w\-.]+) logserver:""",
     """User='\(({user}[^\s\)]+)""",
-    """Src='\[?({src_ip}[A-Fa-f:\d.]+)\]?:({src_port}\d+)'""",
-    """Dest='({dest_ip}[A-Fa-f:\d.]+):({dest_port}\d+)'""",
+    """Src='\[?({src_ip}[A-Fa-f:\d.]+)\]?:({src_port}\d{1,100})'""",
+    """Dest='({dest_ip}[A-Fa-f:\d.]+):({dest_port}\d{1,100})'""",
   ]
   DupFields = ["user->account"]
 }

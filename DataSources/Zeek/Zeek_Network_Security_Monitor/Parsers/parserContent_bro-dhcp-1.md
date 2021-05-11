@@ -6,9 +6,9 @@ Name = bro-dhcp-1
   DataType = "dhcp"
   Conditions = [ """"id.orig_h""", """"id.resp_h""", """"assigned_ip""", """"lease_time""" ]
   Fields = ${BroParserTemplates.json-bro-activity.Fields}[
-    """"assigned_ip":\s*"({assigned_ip}[a-fA-F\d.:]+)""",
-    """"lease_time":\s*({lease_time}[\d\.]+)""",
-    """"trans_id":\s*({trans_id}\d+)""",
+    """"assigned_ip":\s{0,100}"({assigned_ip}[a-fA-F\d.:]+)""",
+    """"lease_time":\s{0,100}({lease_time}[\d\.]+)""",
+    """"trans_id":\s{0,100}({trans_id}\d{1,100})""",
   ]
 }
 json-bro-activity = {
@@ -16,15 +16,15 @@ json-bro-activity = {
   Lms = Direct
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
   Fields = [
-    """exabeam_host=([^@=]+@\s*)?({host}\S+)""",
-    """"ts\\?"+:[\[\\]*"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3})"""
-    #""""ts\\?"+:\\?"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3})""",
-    """"uid\\?"+:\\?"+({conn_id}[^"]+)""",
-    """"id\.orig_h\\?"+:\\?"+({src_ip}[a-fA-F\d.:]+)""",
-    """"id\.orig_p\\?"+:({src_port}\d+)""",
-    """"id\.resp_h\\?"+:\\?"+({dest_ip}[a-fA-F\d.:]+)""",
-    """"id\.resp_p\\?"+:({dest_port}\d+)""",
-    """"proto\\?"+:\\?"+({protocol}[^"]+)""",
+    """exabeam_host=([^@=]+@\s{0,100})?({host}\S+)""",
+    """"ts\\?"{1,20}:[\[\\]*"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3})"""
+    #""""ts\\?"{1,20}:\\?"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3})""",
+    """"uid\\?"{1,20}:\\?"{1,20}({conn_id}[^"]+)""",
+    """"id\.orig_h\\?"{1,20}:\\?"{1,20}({src_ip}[a-fA-F\d.:]+)""",
+    """"id\.orig_p\\?"{1,20}:({src_port}\d{1,100})""",
+    """"id\.resp_h\\?"{1,20}:\\?"{1,20}({dest_ip}[a-fA-F\d.:]+)""",
+    """"id\.resp_p\\?"{1,20}:({dest_port}\d{1,100})""",
+    """"proto\\?"{1,20}:\\?"{1,20}({protocol}[^"]+)""",
   ]
 
 ```

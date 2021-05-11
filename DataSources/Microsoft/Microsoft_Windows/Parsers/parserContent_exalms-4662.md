@@ -10,8 +10,8 @@ Name = exalms-4662
   Conditions = ["""@timestamp":""", """An operation was performed on an object""" , """ObjectName""", """computer_name"""]
   Fields = [
     """({event_name}An operation was performed on an object)""",
-    """"@timestamp"\s*:\s*"({time}.+?)"""",
-    """"(?:winlog\.)?computer_name"\s*:\s*"({host}.+?)"""",
+    """"@timestamp"\s{0,100}:\s{0,100}"({time}.+?)"""",
+    """"(?:winlog\.)?computer_name"\s{0,100}:\s{0,100}"({host}.+?)"""",
     """ObjectServer":"({object_class}.+?)"""",
     """ObjectName":"({object}[^"]+)"""",
     """ObjectType":"({activity_type}.+?)"""",
@@ -20,7 +20,7 @@ Name = exalms-4662
     """SubjectDomainName":"({domain}[^"]+)"""",
     """OperationType":"({action}[^"]+)"""",
     """Properties":"({properties}[^"]+)"""",
-    """"AdditionalInfo"+:"+(-|({attribute}[^"]+))"""",
+    """"AdditionalInfo"{1,20}:"{1,20}(-|({attribute}[^"]+))"""",
     """"keywords":\["({outcome}[^"]+)"\]""",
     """({event_code}4662)"""
   ]

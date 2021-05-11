@@ -9,16 +9,16 @@ Name = raw-4929
     DataType = "ds-access"
     Conditions = ["""Event ID: 4929""","""An Active Directory replica source naming context was removed"""]
     Fields = [
-      """ComputerName(:|=)\s*({host}[\w.-]+)""",
-      """TimeStamp:\s*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """Event ID:\s*({event_code}\d+)""",
+      """ComputerName(:|=)\s{0,100}({host}[\w.-]+)""",
+      """TimeStamp:\s{0,100}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+      """Event ID:\s{0,100}({event_code}\d{1,100})""",
       """({activity_type}replica source naming context was removed)""",
-      """Destination DRA:\s*({object}CN=.*?DC=.*?)\s""",
-      """Source DRA:\s*({src_object}CN=.*?DC=.*?)\s""",
-      """Source Address:\s*({src_host}[^\s]+)\s""",
-      """Naming Context:\s*({naming_context}[^\s]+)\s""",
-      """Options:\s*({options}[^\s]+)\s""",
-      """Status Code:\s*({status_code}\d+)"""
+      """Destination DRA:\s{0,100}({object}CN=.*?DC=.*?)\s""",
+      """Source DRA:\s{0,100}({src_object}CN=.*?DC=.*?)\s""",
+      """Source Address:\s{0,100}({src_host}[^\s]+)\s""",
+      """Naming Context:\s{0,100}({naming_context}[^\s]+)\s""",
+      """Options:\s{0,100}({options}[^\s]+)\s""",
+      """Status Code:\s{0,100}({status_code}\d{1,100})"""
     ]
     DupFields = ["host->dest_host"]
   }

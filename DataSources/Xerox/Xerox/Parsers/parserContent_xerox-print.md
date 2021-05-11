@@ -9,18 +9,18 @@ Name = xerox-print
   TimeFormat = "yyyy-MM-dd HH:mm:ss.s"
   Conditions = [ """account_id: ""","""printer_type: ""","""mono_duplex_count""","""color_duplex_count""" ]
   Fields = [
-    """id:\s*"+({printer_id}\d+)"+\s*account_id""",
-    """printed:\s*"+({time}[^"]+)"""",
-    """printer_type:\s*"+({printer_type}\d+)"+""",
-    """printer_name:\s*"+({printer_name}[^"]+)"+""",
-    """object_id:\s*"+({object_id}({object}\d+))"+""",
-    """user_name:\s*"+(({domain}[^"\\]+)\\)?({user}[^"]+)"+""",
-    """source_machine:\s*"+({src_host}[^"]+)"+""",
-    """total_pages:\s*"+({num_pages}[^"]+)"+""",
-    """ip_address:\s*"+0*({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"+""",
-    """department_name:\s*"+({department}[^"]+)"+""",
-    """full_name:\s*"+({user_fullname}[^"]+)"+""",
-    """document_title:\s*"+({document_name}({object}[^"]+))"+"""
+    """id:\s{0,100}"{1,20}({printer_id}\d{1,100})"{1,20}\s{0,100}account_id""",
+    """printed:\s{0,100}"{1,20}({time}[^"]+)"""",
+    """printer_type:\s{0,100}"{1,20}({printer_type}\d{1,100})"{1,20}""",
+    """printer_name:\s{0,100}"{1,20}({printer_name}[^"]+)"{1,20}""",
+    """object_id:\s{0,100}"{1,20}({object_id}({object}\d{1,100}))"{1,20}""",
+    """user_name:\s{0,100}"{1,20}(({domain}[^"\\]+)\\)?({user}[^"]+)"{1,20}""",
+    """source_machine:\s{0,100}"{1,20}({src_host}[^"]+)"{1,20}""",
+    """total_pages:\s{0,100}"{1,20}({num_pages}[^"]+)"{1,20}""",
+    """ip_address:\s{0,100}"{1,20}0*({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"{1,20}""",
+    """department_name:\s{0,100}"{1,20}({department}[^"]+)"{1,20}""",
+    """full_name:\s{0,100}"{1,20}({user_fullname}[^"]+)"{1,20}""",
+    """document_title:\s{0,100}"{1,20}({document_name}({object}[^"]+))"{1,20}"""
   ]
 }
 ```

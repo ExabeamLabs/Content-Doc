@@ -9,21 +9,21 @@ Name = cef-windows-member-removed-2003
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """CEF:""", """"eventID":"4733"""", """Security Enabled""", """ Group Member Removed""" ]
   Fields = [
-    """"systemTime":"({time}\d+-\d+-\d+T\d+:\d+:\d+)""",
+    """"systemTime":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100})""",
     """"computer":"({host}[\w\-.]+)""",
-    """"message":"({event_name}[^"]+?)\s*"""",
-    """"eventID":"({event_code}\d+)""",
-    """"eventRecordID":"({record_id}\d+)""",
-    """"severityValue":"({outcome}[^"]+?)\s*"""",
+    """"message":"({event_name}[^"]+?)\s{0,100}"""",
+    """"eventID":"({event_code}\d{1,100})""",
+    """"eventRecordID":"({record_id}\d{1,100})""",
+    """"severityValue":"({outcome}[^"]+?)\s{0,100}"""",
     """Security Enabled ({group_type}[^\s]+) Group Member""",
-    """"memberSid":"({account_id}[^"\s]+?)\s*"""",
-    """"targetUserName":"({group_name}[^"\s]+?)\s*"""",
-    """"targetDomainName":"({group_domain}[^"\s]+?)\s*"""",
-    """"targetSid":"({group_id}[^"\s]+?)\s*"""",
-    """"subjectUserSid":"({user_sid}[^"\s]+?)\s*"""",
-    """"subjectUserName":"({user}[^"\s]+?)\s*"""",
-    """"subjectDomainName":"({domain}[^"\s]+?)\s*"""",
-    """"subjectLogonId":"({logon_id}[^"\s]+?)\s*""""
+    """"memberSid":"({account_id}[^"\s]+?)\s{0,100}"""",
+    """"targetUserName":"({group_name}[^"\s]+?)\s{0,100}"""",
+    """"targetDomainName":"({group_domain}[^"\s]+?)\s{0,100}"""",
+    """"targetSid":"({group_id}[^"\s]+?)\s{0,100}"""",
+    """"subjectUserSid":"({user_sid}[^"\s]+?)\s{0,100}"""",
+    """"subjectUserName":"({user}[^"\s]+?)\s{0,100}"""",
+    """"subjectDomainName":"({domain}[^"\s]+?)\s{0,100}"""",
+    """"subjectLogonId":"({logon_id}[^"\s]+?)\s{0,100}""""
   ]
    DupFields = ["host->dest_host"]
 }

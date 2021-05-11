@@ -48,8 +48,8 @@ Name = sourcefire-estreamer-alert
   TimeFormat = "epoch_sec"
   Conditions = [ """archive_timestamp=""","""event_usec=""" ]
   Fields = [
-	     """event_sec=({time}\d+)""",
-             """\sevent_id=({alert_id}\d+)\s+.+?class=({alert_name}(6|12|13|17|21))\s+priority=({alert_severity}\d+)\s+src_addr=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s+dst_addr=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+	     """event_sec=({time}\d{1,100})""",
+             """\sevent_id=({alert_id}\d{1,100})\s{1,100}.+?class=({alert_name}(6|12|13|17|21))\s{1,100}priority=({alert_severity}\d{1,100})\s{1,100}src_addr=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s{1,100}dst_addr=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
 	     """exabeam_host=({host}[\w.\-]+)"""
   ]
   DupFields=["alert_name->alert_type"]

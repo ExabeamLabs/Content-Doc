@@ -8,8 +8,8 @@ Name = contivity-vpn-end
   DataType = "vpn-end"
   TimeFormat = "MM/dd/yyyy HH:mm:ss"
   Conditions = [ "Security", "logged out", "tEvtLgMgr" ]
-  Fields = [ """\w+\s+\d+ \d+:\d+:\d+ ({host}[\w.\-]+)""",
-             """({time}\d+/\d+/\d+ \d+:\d+:\d+)""",
-             """\[({user}[\w.'\-]+)\]:({contivity_session_id}\d+) logged out""" ]
+  Fields = [ """\w+\s{1,100}\d{1,100} \d{1,100}:\d{1,100}:\d{1,100} ({host}[\w.\-]+)""",
+             """({time}\d{1,100}/\d{1,100}/\d{1,100} \d{1,100}:\d{1,100}:\d{1,100})""",
+             """\[({user}[\w.'\-]+)\]:({contivity_session_id}\d{1,100}) logged out""" ]
 }
 ```

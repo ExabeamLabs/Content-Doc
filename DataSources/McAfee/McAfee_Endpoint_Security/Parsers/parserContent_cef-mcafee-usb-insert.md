@@ -9,15 +9,15 @@ Name = cef-mcafee-usb-insert
         TimeFormat = "epoch"
         Conditions = [ """|McAfee|DLPE|""", """ Device Plug|""" ]
         Fields = [
-          """\Wcat=\s*Devices:\s*({activity}.+?)(\s+\w+=|\s*$)""",
-          """\Wact=({action}.+?)(\s+\w+=|\s*$)""",
-          """\Wmsg=({activity_details}.+?)(\s+\w+=|\s*$)""",
-          """\Wrt=({time}\d+)""",
-          """\Wsuser=(({domain}[^\\]+)\\+)?({user}[^\\]+)(\s+\w+=|\s*$)""",
-          """\Wsntdom=({domain}.+?)(\s+\w+=|\s*$)""",
-          """\Wshost=({host}.+?)(\s+\w+=|\s*$)""",
-          """\WfilePath=({file_path}.*?[\\\/]*({file_name}[^\\\/]*?))(\s+\w+=|\s*$)""",
-          """\Wfsize=({bytes}\d+)""",
+          """\Wcat=\s{0,100}Devices:\s{0,100}({activity}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+          """\Wact=({action}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+          """\Wmsg=({activity_details}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+          """\Wrt=({time}\d{1,100})""",
+          """\Wsuser=(({domain}[^\\]+)\\+)?({user}[^\\]+)(\s{1,100}\w+=|\s{0,100}$)""",
+          """\Wsntdom=({domain}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+          """\Wshost=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+          """\WfilePath=({file_path}.*?[\\\/]*({file_name}[^\\\/]*?))(\s{1,100}\w+=|\s{0,100}$)""",
+          """\Wfsize=({bytes}\d{1,100})""",
         ]
     }
 ```

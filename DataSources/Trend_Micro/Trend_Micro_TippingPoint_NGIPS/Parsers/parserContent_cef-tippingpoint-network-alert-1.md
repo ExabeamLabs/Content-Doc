@@ -9,18 +9,18 @@ Name = cef-tippingPoint-network-alert-1
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """|TippingPoint|UnityOne|""", """app=""" ]
   Fields = [
-    """\Wdvchost=({host}\S+)\s*(\w+=|$)""",
-    """\Wrt=({time}\d+)""",
-    """CEF:([^\|]*\|){4}({alert_type}[^\|]+)\|(?:\d+:\s*)?({alert_name}[^\|]+)\|({alert_severity}\d+)""",
-    """\Wdhost=({dest_host}\S+)\s*(\w+=|$)""",
+    """\Wdvchost=({host}\S+)\s{0,100}(\w+=|$)""",
+    """\Wrt=({time}\d{1,100})""",
+    """CEF:([^\|]*\|){4}({alert_type}[^\|]+)\|(?:\d{1,100}:\s{0,100})?({alert_name}[^\|]+)\|({alert_severity}\d{1,100})""",
+    """\Wdhost=({dest_host}\S+)\s{0,100}(\w+=|$)""",
     """\Wsrc=(0\.0\.0\.0|({src_ip}[\da-fA-F\.:]+))""",
     """\Wdst=(0\.0\.0\.0|({dest_ip}[\da-fA-F\.:]+))""",
-    """\sdpt=({dest_port}\d+)""",
-    """\sspt=({src_port}\d+)""",
+    """\sdpt=({dest_port}\d{1,100})""",
+    """\sspt=({src_port}\d{1,100})""",
     """\sproto=({protocol}[^\s]+)""",
-    """\scat=({additional_info}[^=]+?)\s*\w+=""",
-    """app=({app}[^=]+?)\s*\w+=""",
-    """\sact=({outcome}[^=\s]+?)\s*\w+="""
+    """\scat=({additional_info}[^=]+?)\s{0,100}\w+=""",
+    """app=({app}[^=]+?)\s{0,100}\w+=""",
+    """\sact=({outcome}[^=\s]+?)\s{0,100}\w+="""
   ]
 }
 ```

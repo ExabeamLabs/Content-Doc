@@ -9,12 +9,12 @@ Name = q-winpak-badge-access
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = ["""Winpak - Access Granted""", """ Name:""", """ FirstName:""", """ LastName:"""]
     Fields = [
-      """exabeam_host=(.+?@\s*)?({host}[^\s]+)""",
-      """\sGenTime:\s*"({time}\d\d\d\d-\d\d-\d\d\s+\d+:\d\d:\d\d)\.\d+"""",
-      """\sParam3:\s*"({badge_id}\d+)"""",
-      """\sName:\s*"({location_door}.+?)"""",
-      """\sFirstName:\s*"({first_name}.+?)"""",
-      """\sLastName:\s*"({last_name}.+?)"""",
+      """exabeam_host=(.+?@\s{0,100})?({host}[^\s]+)""",
+      """\sGenTime:\s{0,100}"({time}\d\d\d\d-\d\d-\d\d\s{1,100}\d{1,100}:\d\d:\d\d)\.\d{1,100}"""",
+      """\sParam3:\s{0,100}"({badge_id}\d{1,100})"""",
+      """\sName:\s{0,100}"({location_door}.+?)"""",
+      """\sFirstName:\s{0,100}"({first_name}.+?)"""",
+      """\sLastName:\s{0,100}"({last_name}.+?)"""",
       """({outcome}Access Granted)""",
     ]
   }

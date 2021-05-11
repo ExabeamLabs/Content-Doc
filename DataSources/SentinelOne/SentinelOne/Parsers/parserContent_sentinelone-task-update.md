@@ -6,8 +6,8 @@ Name = sentinelone-task-update
   Conditions = [ """CEF:""", """dproc=Deep Visibility Endpoint""", """destinationServiceName=SentinelOne""", """schedTaskUpdate {""" ]
   Fields = ${SentinelOneParserTemplates.sentinelone-activity.Fields} [
     """({event_name}schedTaskUpdate)""",
-    """\scommandLine:\s*"+(?:\\*)"+({command_line}[^"\\]+)""",
-    """taskName:\s*"({task_name}[^"]+)"""
+    """\scommandLine:\s{0,100}"{1,20}(?:\\*)"{1,20}({command_line}[^"\\]+)""",
+    """taskName:\s{0,100}"({task_name}[^"]+)"""
   ]
 }
 ```

@@ -5,10 +5,10 @@ Name = azure-event-hub-member-removed
   DataType = "member-removed"
   Conditions = ["""|beatname=eventhubbeat|""", """|device_type=eventhubbeat|""", """|subject=AdvancedHunting-DeviceEvents|""", """vmid=""", """@timestamp""", """@metadata""", """"ActionType":"UserAccountRemovedFromLocalGroup""""]
   Fields = ${MSParserTemplates.azure-event-hub.Fields} [
-    """"AccountName"+:"+({group_name}[^"]+)""",
-    """"AccountDomain"+:"+({group_domain}[^"]+)""",
-    """"AccountSid"+:"+({user_sid}[^"]+)""",
-    """"MemberSid\\"+:\\"+({account_id}[^"]+)""",
+    """"AccountName"{1,20}:"{1,20}({group_name}[^"]+)""",
+    """"AccountDomain"{1,20}:"{1,20}({group_domain}[^"]+)""",
+    """"AccountSid"{1,20}:"{1,20}({user_sid}[^"]+)""",
+    """"MemberSid\\"{1,20}:\\"{1,20}({account_id}[^"]+)""",
   ]
 }
 azure-event-hub = {

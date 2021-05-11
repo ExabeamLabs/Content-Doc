@@ -9,10 +9,10 @@ Name = s-4722-jp
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = [ "4722", "ユーザー アカウントが有効化されました。" ]
     Fields = [
-      """exabeam_raw=({time}\d+/\d+/\d+ \d+:\d+:\d+ (am|AM|pm|PM))""",
+      """exabeam_raw=({time}\d{1,100}/\d{1,100}/\d{1,100} \d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM))""",
       """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d),({event_code}4722),""",
       """({host}[\w.\-]+),ユーザー アカウントが有効化されました。""",
-      """アカウント名:\s*({user}.*?)\s*アカウント ドメイン:\s*({domain}.*?)\s*ログオン ID:\s*({logon_id}.*?)\s*ターゲット.+?アカウント名:\s*({target_user}.*?)\s*アカウント ドメイン:\s*({target_domain}.*?)\s*($|")"""
+      """アカウント名:\s{0,100}({user}.*?)\s{0,100}アカウント ドメイン:\s{0,100}({domain}.*?)\s{0,100}ログオン ID:\s{0,100}({logon_id}.*?)\s{0,100}ターゲット.+?アカウント名:\s{0,100}({target_user}.*?)\s{0,100}アカウント ドメイン:\s{0,100}({target_domain}.*?)\s{0,100}($|")"""
     ]
     DupFields = [ "host->dest_host" ]
   }

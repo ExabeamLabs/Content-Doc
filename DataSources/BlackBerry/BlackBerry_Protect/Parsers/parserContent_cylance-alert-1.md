@@ -10,16 +10,8 @@ Name = cylance-alert-1
   Conditions = [ """CylancePROTECT""", """Event Type: ScriptControl""","""Interpreter: """]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """\[({host}[\w\-.]+)\]\s*Event Type:""",
-    """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{3})\d+""",
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3})\d+""",
-    """Event Type:\s*({alert_type}[^,]+)\s*,""",
-    """Event Name:\s*({additional_info}[^,]+)\s*,""",
-    """Device Name:\s*({src_host}[^,]+)\s*,""",
-    """File Path:\s*({malware_url}[^,]+)\s*,""",
-    """Interpreter:\s*({alert_name}[^,]+)\s*,""",
-    """User Name:\s*(?:SYSTEM|({user}[^,]+?))\s*(,|$)"""
-  ]
-  DupFields = [ "malware_url->malware_file_name" ]
-}
+    """\[({host}[\w\-.]+)\]\s{0,100}Event Type:""",
+    """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{3})\d{1,100}""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3})\d{1,100}""",
+    """Event Type:\s{0,100}({alert_type}[^,]+)\s{0,100}
 ```

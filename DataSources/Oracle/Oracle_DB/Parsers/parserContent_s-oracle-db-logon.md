@@ -10,17 +10,17 @@ Name = s-oracle-db-logon
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
   Conditions = [ """<DB_User>""", """<OS_User>""", """<Userhost>""", """<OS_Process>""", """Authenticated by:""" ]
   Fields = [
-    """<Extended_Timestamp>({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d+\w)</Extended_Timestamp>"""
+    """<Extended_Timestamp>({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d{1,100}\w)</Extended_Timestamp>"""
     """<DB_User>(\/|({db_user}.+?))</DB_User>""",
     """<OS_User>({os_user}.+?)</OS_User>""",
     """<Userhost>({src_host}[^\<]+)</Userhost>""",
-    """<OS_Process>({process_id}\d+)</OS_Process>""",
-    """<Session_Id>({session_id}\d+)</Session_Id>""",
+    """<OS_Process>({process_id}\d{1,100})</OS_Process>""",
+    """<Session_Id>({session_id}\d{1,100})</Session_Id>""",
     """<Returncode>({outcome}.+?)</Returncode>""",
     """<DBID>({database_name}.+?)</DBID>""",
     """PROTOCOL=({protocol}[^\)]+)""",
     """HOST=({src_ip}[a-fA-F\d.:]+)""",
-    """PORT=({src_port}\d+)""",
+    """PORT=({src_port}\d{1,100})""",
   ]
   DupFields = [ "os_user->user", "db_user->account"]
  }

@@ -9,16 +9,16 @@ Name = q-5156
   TimeFormat = "epoch_sec"
   Conditions = [ "EventIDCode=5156" ]
   Fields = [
-    """Computer=\s*({host}[^\s]*)""",
-    """EventID=({event_code}\d+)""",
-    """TimeGenerated=({time}\d+)""",
-    """Message=({event_name}.*?)\s*Application Information:""",
-    """Process ID:\s*({pid}\d+)""",
-    """Application Name:\s*({process}({directory}.+)[\\\/]({process_name}.+?))\s*Network Information:""",
-    """Computer=\s*({dest_host}[^\s]*).*Direction:\s*({direction}Inbound).*Source Address:\s*({dest_ip}[^\s]*)\s*Source Port:\s*({dest_port}\d*)\s*Destination Address:\s*({src_ip}[^\s]*)\s*Destination Port:\s*({src_port}\d*)""",
-    """Computer=\s*({src_host}[^\s]*).*Direction:\s*({direction}Outbound).*Source Address:\s*({src_ip}[^\s]*)\s*Source Port:\s*({src_port}\d*)\s*Destination Address:\s*({dest_ip}[^\s]*)\s*Destination Port:\s*({dest_port}\d*)""",
-    """Protocol:\s*({ms_protocol_num}\d*)""",
-    """Layer Name:\s*({layer_name}[^\s]*)"""
+    """Computer=\s{0,100}({host}[^\s]*)""",
+    """EventID=({event_code}\d{1,100})""",
+    """TimeGenerated=({time}\d{1,100})""",
+    """Message=({event_name}.*?)\s{0,100}Application Information:""",
+    """Process ID:\s{0,100}({pid}\d{1,100})""",
+    """Application Name:\s{0,100}({process}({directory}.+)[\\\/]({process_name}.+?))\s{0,100}Network Information:""",
+    """Computer=\s{0,100}({dest_host}[^\s]*).*Direction:\s{0,100}({direction}Inbound).*Source Address:\s{0,100}({dest_ip}[^\s]*)\s{0,100}Source Port:\s{0,100}({dest_port}\d{0,100})\s{0,100}Destination Address:\s{0,100}({src_ip}[^\s]*)\s{0,100}Destination Port:\s{0,100}({src_port}\d{0,100})""",
+    """Computer=\s{0,100}({src_host}[^\s]*).*Direction:\s{0,100}({direction}Outbound).*Source Address:\s{0,100}({src_ip}[^\s]*)\s{0,100}Source Port:\s{0,100}({src_port}\d{0,100})\s{0,100}Destination Address:\s{0,100}({dest_ip}[^\s]*)\s{0,100}Destination Port:\s{0,100}({dest_port}\d{0,100})""",
+    """Protocol:\s{0,100}({ms_protocol_num}\d{0,100})""",
+    """Layer Name:\s{0,100}({layer_name}[^\s]*)"""
   ]
   DupFields = ["directory->process_directory"]
 }

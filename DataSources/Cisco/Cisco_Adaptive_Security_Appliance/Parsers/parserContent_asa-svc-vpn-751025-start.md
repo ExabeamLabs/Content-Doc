@@ -9,9 +9,9 @@ Name = asa-svc-vpn-751025-start
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
     Conditions = [ "assigned to session", "-751025" ]
     Fields = [
-      """({time}\d+-\d+-\d+T\d+:\d+:\d+)""",
+      """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100})""",
       """exabeam_host=({host}[\w.\-]+)""",
-      """\-\d\d:\d\d\s+({host}[\w.\-]+) : %ASA""",
+      """\-\d\d:\d\d\s{1,100}({host}[\w.\-]+) : %ASA""",
       """Username:({user}.+?) IKEv2 """,
       """Local:({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """Remote:({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",

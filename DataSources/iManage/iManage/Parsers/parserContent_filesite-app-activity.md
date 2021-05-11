@@ -9,15 +9,15 @@ Name = filesite-app-activity
   TimeFormat = "dd/MM/yyyy HH:mm:ss"
   Conditions = [ """ ACTIVITY = """, """ ACTIVITY_DATETIME = """, """ DOCNUM = """ ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """ACTIVITY_DATETIME\s*=\s*({time}\d+\/\d+\/\d\d\d\d \d\d:\d\d:\d\d)""",
-    """DOCNUM\s*=\s*({object}.+?)\s+(\w+\s+=|$)""",
-    """ACTIVITY\s*=\s*({activity}.+?)\s+(\w+\s+=|$)""",
-    """DOCUSER\s*=\s*({user}[^\s]+?)\s+(\w+\s+=|$)""",
-    """APPNAME\s*=\s*({additional_info}.+?)\s+(\w+\s+=|$)""",
-    """LOCATION\s*=\s*({dest_host}[\w\-.]+)\s+(\w+\s+=|$)""",
-    """DOCNAME\s*=\s*({resource}.+?)\s+(\w+\s+=|$)""",
-    """DOCLOC\s*=\s*({file_path}({file_parent}.+?)[\\\/]*({file_name}[^\\\/]+?))\s+(\w+\s+=|$)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """ACTIVITY_DATETIME\s{0,100}=\s{0,100}({time}\d{1,100}\/\d{1,100}\/\d\d\d\d \d\d:\d\d:\d\d)""",
+    """DOCNUM\s{0,100}=\s{0,100}({object}.+?)\s{1,100}(\w+\s{1,100}=|$)""",
+    """ACTIVITY\s{0,100}=\s{0,100}({activity}.+?)\s{1,100}(\w+\s{1,100}=|$)""",
+    """DOCUSER\s{0,100}=\s{0,100}({user}[^\s]+?)\s{1,100}(\w+\s{1,100}=|$)""",
+    """APPNAME\s{0,100}=\s{0,100}({additional_info}.+?)\s{1,100}(\w+\s{1,100}=|$)""",
+    """LOCATION\s{0,100}=\s{0,100}({dest_host}[\w\-.]+)\s{1,100}(\w+\s{1,100}=|$)""",
+    """DOCNAME\s{0,100}=\s{0,100}({resource}.+?)\s{1,100}(\w+\s{1,100}=|$)""",
+    """DOCLOC\s{0,100}=\s{0,100}({file_path}({file_parent}.+?)[\\\/]*({file_name}[^\\\/]+?))\s{1,100}(\w+\s{1,100}=|$)""",
   ]
 }
 ```

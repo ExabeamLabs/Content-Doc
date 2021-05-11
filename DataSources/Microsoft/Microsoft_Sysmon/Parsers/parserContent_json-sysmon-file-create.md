@@ -15,11 +15,11 @@ Name = json-sysmon-file-create
     """"TargetFilename":"({file_path}({file_parent}[^"]*?[\\\/]+)?({file_name}[^"\\\/]+?(\.({file_ext}\w+))?))"""",
     """"Domain":"((?i)NT AUTHORITY|({domain}[^"]+))""",
     """"AccountName":"((?i)SYSTEM|({user}[^"]+))""",
-    """"ProcessID":({pid}\d+)""",
+    """"ProcessID":({pid}\d{1,100})""",
     """"Hostname":"({host}[^"]+)""",
     """Category":"({event_name}[^"]+)""",
     """"CreationUtcTime":"({creation_utc_time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d.\d\d\d)""",
-    """EventID":({event_code}\d+)""",
+    """EventID":({event_code}\d{1,100})""",
   ]
 }
 ```

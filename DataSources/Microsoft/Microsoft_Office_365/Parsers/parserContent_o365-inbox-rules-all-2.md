@@ -18,10 +18,10 @@ Name = o365-inbox-rules-all-2
     """msg=({additional_info}.+?)\s\w+=""",
     """"Value":"(?:smtp:)?.+?@({target_domain}[^"]+)"""",
     """UserId":"({user_email}[^"\\]+@({user_domain}[^"]+)[^"]+)"""",
-    """UserId":"(\\.+)?\/({user_fullname}[^,\\"]+)\\"\s*on behalf""",
-    """UserId":"(\\.+)?\/({user_lastname}[^,]+),\s*({user_firstname}[^\\"]+)\\"\s*on behalf""",
+    """UserId":"(\\.+)?\/({user_fullname}[^,\\"]+)\\"\s{0,100}on behalf""",
+    """UserId":"(\\.+)?\/({user_lastname}[^,]+),\s{0,100}({user_firstname}[^\\"]+)\\"\s{0,100}on behalf""",
     """UserId":"({user_email}[^"\\]+@({user_domain}[^"]+)[^"]+)"""",   
-    """destinationServiceName=({app}.+?)\s*filePath"""
+    """destinationServiceName=({app}.+?)\s{0,100}filePath"""
     """({app}Office 365)"""
     """"SubjectOrBodyContainsWords":"({filter_key_words}[^"]+)"""
   ]

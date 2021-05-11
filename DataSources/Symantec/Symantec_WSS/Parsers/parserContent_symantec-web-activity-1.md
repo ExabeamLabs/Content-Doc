@@ -10,12 +10,12 @@ Name = symantec-web-activity-1
   Conditions = [ """destinationServiceName=Symantec WSS""", """requestClientApplication=Broadcom WSS API""", """|Skyformation|""" ]
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)\s[^\s]+\sSkyformation""",
-    """cs6=.+?\d\d:\d\d:\d\d,\s*({host}[^,\s]+)""",
-    """\s*({failure_reason}[^,]+),\s*({action}OBSERVED|PROXIED|DENIED),\s*(?:-|({category}[^,]+)),\s*(?:-|({referrer}[^,]+)),\s*(?:-|({result_code}\d+)),\s*(?:-|({proxy_action}[^,]+)),\s*(?:-|unknown|({method}[^,]+)),\s*(?:-|({mime}[^,]+)),\s*(?:-|({protocol}[^,]+)),\s*(?:-|({web_domain}[^,]+)),\s*(?:-|({dest_port}[^,]+)),\s*(?:-|({uri_path}[^,\s]+)),.+?,\s[^,]+,\s*(?:-|({user_agent}[^,]+)),\s*""",
+    """cs6=.+?\d\d:\d\d:\d\d,\s{0,100}({host}[^,\s]+)""",
+    """\s{0,100}({failure_reason}[^,]+),\s{0,100}({action}OBSERVED|PROXIED|DENIED),\s{0,100}(?:-|({category}[^,]+)),\s{0,100}(?:-|({referrer}[^,]+)),\s{0,100}(?:-|({result_code}\d{1,100})),\s{0,100}(?:-|({proxy_action}[^,]+)),\s{0,100}(?:-|unknown|({method}[^,]+)),\s{0,100}(?:-|({mime}[^,]+)),\s{0,100}(?:-|({protocol}[^,]+)),\s{0,100}(?:-|({web_domain}[^,]+)),\s{0,100}(?:-|({dest_port}[^,]+)),\s{0,100}(?:-|({uri_path}[^,\s]+)),.+?,\s[^,]+,\s{0,100}(?:-|({user_agent}[^,]+)),\s{0,100}""",
     """Mozilla\/[^"]+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)""",
     """Mozilla\/[^"]+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
-    """cs6=\[.+({user_agent}Mozilla.+?),\s*(?:-|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
-    """\sproto=(-|({protocol}\d+))""",
+    """cs6=\[.+({user_agent}Mozilla.+?),\s{0,100}(?:-|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
+    """\sproto=(-|({protocol}\d{1,100}))""",
     """\ssuid=({uid}[^\s]+)""",
     """\Wsuser=(({domain}[^\\\s]+)\\+)?(non-interactive-user|(-|anonymous|(?i)unauthenticated|({user}[^\\\s]+)))""",
     """\sapp=(-|({category}.+?))\s\w+=""",
@@ -23,7 +23,7 @@ Name = symantec-web-activity-1
     """\sdst=(-|({dest_ip}.+?))\s\w+=""",
     """\sflexString1=(-|({proxy_action}.+?))\s\w+=""",
     """\ssrc=(-|({src_ip}.+?))\s\w+=""",
-    """\Wdproc=(|-|({process_name}.+?))(\s+\w+=|\s*$)""",
+    """\Wdproc=(|-|({process_name}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
 ```

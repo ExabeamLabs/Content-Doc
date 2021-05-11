@@ -9,8 +9,8 @@ Name = aventail-vpn-start
   TimeFormat = "dd/MMM/yyyy:HH:mm:ss"
   Conditions = [ """matched rule #""", """is permitted""", """CSACL""" ]
   Fields = [
-    """exabeam_raw=.*?\[({time}\d\d\/\w+\/\d\d\d\d:\d+:\d+:\d+)""",
-    """:\s.+?\]\s+({host}[^\s]+).+?\sUser.+?\(({user}[^\)]+).+connecting from.+?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):.+access to.+?({dest_host}[\w.-]+)"""
+    """exabeam_raw=.*?\[({time}\d\d\/\w+\/\d\d\d\d:\d{1,100}:\d{1,100}:\d{1,100})""",
+    """:\s.+?\]\s{1,100}({host}[^\s]+).+?\sUser.+?\(({user}[^\)]+).+connecting from.+?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):.+access to.+?({dest_host}[\w.-]+)"""
   ]
 }
 ```

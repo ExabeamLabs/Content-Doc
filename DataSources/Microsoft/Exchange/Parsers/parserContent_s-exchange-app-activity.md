@@ -14,12 +14,12 @@ Name = s-exchange-app-activity
     """\WUser="({user_email}[^@]+@({email_domain}[^"]+))"""",
     """\WCmdlet="({activity}[^"]+)"""",
     """\WServer="({dest_host}[^"]+)"""",
-    """\WParam="-Identity\s*'({resource}[^'"]+)""",
-    """\WParam="-User\s*'({object}[^'"]+)""",
-    """\WParam="-OwaMailboxPolicy\s*'({object}[^'"]+)""",
-    """\WParam="-DomainController\s*'({object}[^'"]+)""",
-    """\WParam="-AccessRights\s*'({object}[^'"]+)""",
-    """\WParam="-Server\s*'({object}[^'"]+)""",
+    """\WParam="-Identity\s{0,100}'({resource}[^'"]+)""",
+    """\WParam="-User\s{0,100}'({object}[^'"]+)""",
+    """\WParam="-OwaMailboxPolicy\s{0,100}'({object}[^'"]+)""",
+    """\WParam="-DomainController\s{0,100}'({object}[^'"]+)""",
+    """\WParam="-AccessRights\s{0,100}'({object}[^'"]+)""",
+    """\WParam="-Server\s{0,100}'({object}[^'"]+)""",
     """\WSuccess="({outcome}[^"]+)""""
   ]
 }

@@ -11,7 +11,7 @@ Name = cisco-nac-logon
   Fields = [
     """CISE_RADIUS_Accounting[^,]+?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d [+-]\d\d:\d\d)""",
     """({host}[\w\-.]+) CISE_RADIUS_Accounting""",
-    """Host:\s*({host}\S+)""",
+    """Host:\s{0,100}({host}\S+)""",
     """, NetworkDeviceName=({network}[^,]+),""",
     """, User-?Name=(host\/)?(({domain}[^\\\/,\s@]+)[\\\/]+)?({user}[^\\\/\s,@]+),""",
     """, User-?Name=({user_email}[^\\\/\s,@]+@[^\\\/\s,@]+)""",

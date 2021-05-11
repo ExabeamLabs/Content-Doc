@@ -10,15 +10,15 @@ Name = n-forwarded-cef-4672
     Conditions = ["CEF:", "|McAfee|ESM", "43-26304672"]
     Fields = [
       """({event_name}Special privileges assigned to new logon)""",
-      """\|McAfee\|.+?\|43-2630({event_code}\d+)(0|1)\|""",
-      """\srt=({time}\d+?)(\s|0\||$)""",
+      """\|McAfee\|[^|]+?\|[^|]+?\|43-2630({event_code}\d{1,100})(0|1)\|""",
+      """\srt=({time}\d{1,100}?)(\s|0\||$)""",
       """\ssrc=({dest_ip}[A-Fa-f:\d.]+?)(\s|0\||$)""",
       """\sshost=({dest_host}[^\s]+?)(\s|0\||$)""",
       """\ssntdom=({domain}[^\s]+?)(\s|0\||$)""",
-      """\ssuser=({user}.+?)(\s+\w+=|0\|\s*$)""",
-      """\sact=({outcome}.+?)(\s+\w+=|0\|\s*$)""",
+      """\ssuser=({user}.+?)(\s{1,100}\w+=|0\|\s{0,100}$)""",
+      """\sact=({outcome}.+?)(\s{1,100}\w+=|0\|\s{0,100}$)""",
       """\snitroSource_Logon_ID=({logon_id}.+?)(\s|0\||$)""",
-      """\snitroPrivileges=({privileges}.+?)(\s+\w+=|0\|\s*$)""",
+      """\snitroPrivileges=({privileges}.+?)(\s{1,100}\w+=|0\|\s{0,100}$)""",
     ]
     DupFields = ["dest_ip->host", "dest_host->host"]
   }

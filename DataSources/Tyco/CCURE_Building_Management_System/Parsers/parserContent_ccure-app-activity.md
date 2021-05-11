@@ -11,10 +11,10 @@ Name = ccure-app-activity
   Fields = [
               """exabeam_raw=({activity}[^,]+)""",
               """exabeam_raw=[^,]*,({user}[^,]+)""",
-              """exabeam_raw=([^,]*,){2}({object}.+?)\s+\('""",
+              """exabeam_raw=([^,]*,){2}({object}.+?)\s{1,100}\('""",
               """exabeam_raw=.+?\('({additional_info}[^']+)""",
               """exabeam_host=({host}[^\s]+)""",
-              """({time}\d\d\d\d\-\d\d\-\d\d \d+:\d+:\d+ (am|AM|PM|pm))"""
+              """({time}\d\d\d\d\-\d\d\-\d\d \d{1,100}:\d{1,100}:\d{1,100} (am|AM|PM|pm))"""
 	]
 }
 ```

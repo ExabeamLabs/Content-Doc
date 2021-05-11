@@ -18,7 +18,7 @@ Name = arbor-network-fail
      """\ssource\sport\s({src_port}\d{1,6})"""
      """\w+\/({dest_port}\d{1,6})\s\("""
      """\/\d{1,6}\s\(({activity}[^\)]*)""",
-     """arbor-networks-aps:\s*({outcome}[^:]*):\s"""
+     """arbor-networks-aps:\s{0,100}({outcome}[^:]*):\s"""
    ]
 }
 ```

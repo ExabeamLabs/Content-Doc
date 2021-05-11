@@ -9,8 +9,8 @@ Name = physical-badge-access
   TimeFormat =  "MM/dd/yyyy HH:mm:ss a"
   Conditions = [ """ Device: """, """ EventCode: """, """ OPR: """ ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """Date:\s*({time}\d+\/\d+\/\d\d\d\d\s+\d+:\d+:\d+\s+(AM|PM|am|pm)) Device:\s*({location_door}.+?)\s+EventCode:\s*({outcome}\d+)\s+Name:\s*(|({user_fullname}[^:]*?))\s+OPR:\s*(|({operation}.*?))\s+$""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """Date:\s{0,100}({time}\d{1,100}\/\d{1,100}\/\d\d\d\d\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(AM|PM|am|pm)) Device:\s{0,100}({location_door}.+?)\s{1,100}EventCode:\s{0,100}({outcome}\d{1,100})\s{1,100}Name:\s{0,100}(|({user_fullname}[^:]*?))\s{1,100}OPR:\s{0,100}(|({operation}.*?))\s{1,100}$""",
   ]
 }
 ```

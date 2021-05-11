@@ -14,20 +14,20 @@ pam-authentication = {
     Lms = Direct
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Fields = [
-      """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-      """\screated\s*=\s*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """\sUser\s*:\s*CN=({user_fullname}[^,]+),\s*({user_ou}.+?),\s*Transaction:""",
-      """\sUser\s*:\s*({user_email}[^,@]+@[^,]+)""",
-      """\sUser\s*:\s*(?:unknown|({user}[^@=,]+)),\s*Transaction:""",
-      """\sUser Group\s*:\s*CN=({group_name}[^,]+),\s*({group_ou}.+?),\s*Port:""",
-      """\sNat\/Proxy IP\s*:\s*({src_ip}[a-fA-F\d.:]+)""",
-      #"""\sDetails:[^;]*:\s+({event_name}[^;]+?)\s*(;|$)""",
-      """\sPrivate IP\s*:\s*({src_ip}[a-fA-F\d.:]+)""",
-      """\sSource IP\s*:\s*({src_ip}[a-fA-F\d.:]+)""",
-      """(?i)\sDevice Name\s*:\s*(?:\- \-|({dest_host}[^,]+))""",
-      """\sPort\s*:\s*({dest_port}\d+)""",
-      """\sAccess/Protocol\s*:\s*(?:\- \-|({protocol}[^,]+))""",
-      """\sService/App\s*:\s*(?:\- \-|({app}[^,]+))""",
+      """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+      """\screated\s{0,100}=\s{0,100}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+      """\sUser\s{0,100}:\s{0,100}CN=({user_fullname}[^,]+),\s{0,100}({user_ou}.+?),\s{0,100}Transaction:""",
+      """\sUser\s{0,100}:\s{0,100}({user_email}[^,@]+@[^,]+)""",
+      """\sUser\s{0,100}:\s{0,100}(?:unknown|({user}[^@=,]+)),\s{0,100}Transaction:""",
+      """\sUser Group\s{0,100}:\s{0,100}CN=({group_name}[^,]+),\s{0,100}({group_ou}.+?),\s{0,100}Port:""",
+      """\sNat\/Proxy IP\s{0,100}:\s{0,100}({src_ip}[a-fA-F\d.:]+)""",
+      #"""\sDetails:[^;]*:\s{1,100}({event_name}[^;]+?)\s{0,100}(;|$)""",
+      """\sPrivate IP\s{0,100}:\s{0,100}({src_ip}[a-fA-F\d.:]+)""",
+      """\sSource IP\s{0,100}:\s{0,100}({src_ip}[a-fA-F\d.:]+)""",
+      """(?i)\sDevice Name\s{0,100}:\s{0,100}(?:\- \-|({dest_host}[^,]+))""",
+      """\sPort\s{0,100}:\s{0,100}({dest_port}\d{1,100})""",
+      """\sAccess/Protocol\s{0,100}:\s{0,100}(?:\- \-|({protocol}[^,]+))""",
+      """\sService/App\s{0,100}:\s{0,100}(?:\- \-|({app}[^,]+))""",
     ]
 
 ```

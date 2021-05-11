@@ -14,7 +14,7 @@ Name = oracle-db-query-3
     """"objName":"({database_object}[^"]+)""",
     """"sqlText":"({db_query}.*?)","""",
     """"objSchema":"({schema}[^"]+)""",
-    """"@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+    """"@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """"srcHostname":"(({domain}[^"\\\/]+)[\\\/]+)?({src_host}[^"]+)""",
     """"action":"({db_operation}[^"]+)""",
     """"instanceName":"({database_name}[^"]+)""",

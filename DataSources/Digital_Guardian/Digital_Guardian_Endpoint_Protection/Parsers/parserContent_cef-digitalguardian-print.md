@@ -9,15 +9,15 @@ Name = cef-digitalguardian-print
   TimeFormat = "epoch"
   Conditions = [ """|Digital Guardian|Digital Guardian|""", """|Print|""" ]
   Fields = [
-    """\srt=({time}\d+)""",
+    """\srt=({time}\d{1,100})""",
     """({event_code}Print)""",
-    """\sshost=(([^\/\\=]+)[\/\\]+)?({host}[^=]+?)\s+(ad\.\S+=|\w+=|$)""",
-    """\ssuser=(({domain}[^\/\\=]+)[\/\\]+)?({user}[^=]+?)\s+(ad\.\S+=|\w+=|$)""",
-    """\ssproc=({process_name}[^=]+?)\s+(ad\.\S+=|\w+=|$)""",
-    """\sfsize=({bytes}\d+)\s+?""",
-    """\sad\.DG__Printer=({printer_name}[^=]+?)\s+(ad\.\S+=|\w+=|$)""",
-    """\sad\.DG__Printer=\\+(.+\|)?({dest_host}\S+?)\\+({printer_name}[^,]+?)\s*(,.*?)?\s+(ad\.\S+=|\w+=|$)""",
-    """\soldFileName=(|({object}.+?))\s+(ad\.\S+=|\w+=|$)""",
+    """\sshost=(([^\/\\=]+)[\/\\]+)?({host}[^=]+?)\s{1,100}(ad\.\S+=|\w+=|$)""",
+    """\ssuser=(({domain}[^\/\\=]+)[\/\\]+)?({user}[^=]+?)\s{1,100}(ad\.\S+=|\w+=|$)""",
+    """\ssproc=({process_name}[^=]+?)\s{1,100}(ad\.\S+=|\w+=|$)""",
+    """\sfsize=({bytes}\d{1,100})\s{1,100}?""",
+    """\sad\.DG__Printer=({printer_name}[^=]+?)\s{1,100}(ad\.\S+=|\w+=|$)""",
+    """\sad\.DG__Printer=\\+(.+\|)?({dest_host}\S+?)\\+({printer_name}[^,]+?)\s{0,100}(,.*?)?\s{1,100}(ad\.\S+=|\w+=|$)""",
+    """\soldFileName=(|({object}.+?))\s{1,100}(ad\.\S+=|\w+=|$)""",
   ]
   DupFields = [ "host->src_host" ]
 }

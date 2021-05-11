@@ -9,8 +9,8 @@ Name = raw-scep-epp-alert-csv
   TimeFormat = "MMM dd yyyy HH:mma"
   Conditions = [ ",SystemCenterEndpointProtection" ]
   Fields = [
-    """exabeam_host=(.+?@\s*)?({host}[^\s]+)""",
-    """({time}\w+\s+\d+\s+\d\d\d\d\s+\d{1,2}:\d\d(AM|am|PM|pm))\,({alert_id}[^\,]+)\,({alert_name}[^\,]+)\,\w+\,({src_host}[^\,]+)\,[^,]+\,({additional_info}[^\,]+)\,(?:NA|({domain}[^\\]+))\\({user}[^\,]+)\,({alert_type}[^\,]+)\,({alert_severity}[^\,]+)\,SystemCenterEndpointProtection"""
+    """exabeam_host=(.+?@\s{0,100})?({host}[^\s]+)""",
+    """({time}\w+\s{1,100}\d{1,100}\s{1,100}\d\d\d\d\s{1,100}\d{1,2}:\d\d(AM|am|PM|pm))\,({alert_id}[^\,]+)\,({alert_name}[^\,]+)\,\w+\,({src_host}[^\,]+)\,[^,]+\,({additional_info}[^\,]+)\,(?:NA|({domain}[^\\]+))\\({user}[^\,]+)\,({alert_type}[^\,]+)\,({alert_severity}[^\,]+)\,SystemCenterEndpointProtection"""
   ]
 }
 ```

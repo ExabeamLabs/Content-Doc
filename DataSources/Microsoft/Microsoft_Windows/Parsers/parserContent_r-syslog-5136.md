@@ -14,11 +14,11 @@ Name = r-syslog-5136
     """exabeam_host=({host}[\w.\-]+)""",
     """(Information|Success Audit|Audit Success),({host}[^,]+)""",
     """({event_code}5136)""",
-    """Subject:.+?Account Name:\s+({user}.+?)\s+Account Domain:\s+({domain}.+?)\s+Logon ID:\s+({logon_id}[^\s]+)""",
-    """Object:.+?Class:\s+({object_class}.+?)\s+Attribute:""",
-    """Attribute:.+?LDAP Display Name:\s+({attribute}.+?)\s+Syntax""",
-    """Object:\s+DN:\s+({object_dn}.+?)\s+GUID:""",
-    """Object:\s+DN:.+?({object_ou}OU.+?)\s+GUID:"""
+    """Subject:.+?Account Name:\s{1,100}({user}.+?)\s{1,100}Account Domain:\s{1,100}({domain}.+?)\s{1,100}Logon ID:\s{1,100}({logon_id}[^\s]+)""",
+    """Object:.+?Class:\s{1,100}({object_class}.+?)\s{1,100}Attribute:""",
+    """Attribute:.+?LDAP Display Name:\s{1,100}({attribute}.+?)\s{1,100}Syntax""",
+    """Object:\s{1,100}DN:\s{1,100}({object_dn}.+?)\s{1,100}GUID:""",
+    """Object:\s{1,100}DN:.+?({object_ou}OU.+?)\s{1,100}GUID:"""
   ]
   DupFields = [ "host->dest_host" ]
 }

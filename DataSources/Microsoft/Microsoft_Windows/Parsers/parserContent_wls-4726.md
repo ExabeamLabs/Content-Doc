@@ -11,16 +11,16 @@ Name = wls-4726
     Fields = [
       """exabeam_host=({host}[\w.\-]+)""",
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """Computer="+({dest_host}[^"]+)"""",
-      """EventID="+({event_code}[^"]+)"""",
-      """EventRecordID="+({record_id}[^"]+)"""",
-      """SubjectUserName="+({user}[^"]+)"""",
-      """SubjectDomainName="+({domain}[^"]+)"""",
-      """SubjectLogonId="+({logon_id}[^"]+)"""",
-      """SubjectUserSid="+({user_sid}[^"]+)"""",
-      """TargetDomainName="+({target_domain}[^"]+)"""",
-      """TargetUserName="+({target_user}[^"]+)""""
-      """TargetSid="+({target_user_sid}[^"]+)""""
+      """Computer="{1,20}({dest_host}[^"]+)"""",
+      """EventID="{1,20}({event_code}[^"]+)"""",
+      """EventRecordID="{1,20}({record_id}[^"]+)"""",
+      """SubjectUserName="{1,20}({user}[^"]+)"""",
+      """SubjectDomainName="{1,20}({domain}[^"]+)"""",
+      """SubjectLogonId="{1,20}({logon_id}[^"]+)"""",
+      """SubjectUserSid="{1,20}({user_sid}[^"]+)"""",
+      """TargetDomainName="{1,20}({target_domain}[^"]+)"""",
+      """TargetUserName="{1,20}({target_user}[^"]+)""""
+      """TargetSid="{1,20}({target_user_sid}[^"]+)""""
     ]
     DupFields = [ "target_user->account_name" ]
   }

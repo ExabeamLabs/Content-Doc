@@ -13,9 +13,9 @@ Name = beyondtrust-pi-app-activity
     """dtPostTime="({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """sEventID="({activity}[^"]+)""",
     """\(running as user (({account_domain}[^\s\\]+)\\+)?({account}[^\s\\\)]+)\)""",
-    """"AccountToElevate"\s+value="(({domain}[^\s\\]+)\\+)?({user}[^\s\\"]+)""",
+    """"AccountToElevate"\s{1,100}value="(({domain}[^\s\\]+)\\+)?({user}[^\s\\"]+)""",
     """group '({object}[^\']+)' on system """,
-    """"TargetSystem"\s+value="({dest_host}[^"]+)""",
+    """"TargetSystem"\s{1,100}value="({dest_host}[^"]+)""",
     """OriginatingApplicationName="({app}[^"]+)"""
   ]
 }

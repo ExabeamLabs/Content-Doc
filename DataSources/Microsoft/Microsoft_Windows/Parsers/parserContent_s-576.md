@@ -11,12 +11,12 @@ Name = s-576
   Fields = [
     """({event_name}Special privileges assigned to new logon)""",
     """({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d (am|AM|pm|PM))""",
-    """\sEventCode=({event_code}\d+)""",
-    """\sType=({outcome}.+?)(\s+\w+=|\s*$)""",
-    """\sComputerName=({host}.+?)(\s+\w+=|\s*$)""",
-    """\sUser=({user}.+?)(\s+\w+=|\s*$)""",
-    """\sSid=({user_sid}.+?)(\s+\w+=|\s*$)""",
-    """\s*Domain:\s*(?:-|({domain}.*?))\s*Logon ID:\s*\(?({logon_id}[^)]*)\)?\s*Privileges:\s*({privileges}.*?)\s*$"""
+    """\sEventCode=({event_code}\d{1,100})""",
+    """\sType=({outcome}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sComputerName=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sUser=({user}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sSid=({user_sid}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\s{0,100}Domain:\s{0,100}(?:-|({domain}.*?))\s{0,100}Logon ID:\s{0,100}\(?({logon_id}[^)]*)\)?\s{0,100}Privileges:\s{0,100}({privileges}.*?)\s{0,100}$"""
   ]
   DupFields = ["host->dest_host"]
 }

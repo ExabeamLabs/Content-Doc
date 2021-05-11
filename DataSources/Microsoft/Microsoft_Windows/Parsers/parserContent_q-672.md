@@ -9,9 +9,9 @@ Name = q-672
   TimeFormat = "epoch_sec"
   Conditions = [ "EventIDCode=672" ]
   Fields = [
-             """EventID=({event_code}\d+).+?Supplied Realm Name:\s+({domain}[^\s]+)""",
-             """TimeGenerated=({time}\d+)""",
+             """EventID=({event_code}\d{1,100}).+?Supplied Realm Name:\s{1,100}({domain}[^\s]+)""",
+             """TimeGenerated=({time}\d{1,100})""",
              """Computer=({host}[^\s]+)""",
-	     """User Name:\s+({user}.+?)\s+Supplied Realm Name:.+?Result Code:\s+({result_code}.+?)\s.+Client Address:\s+({dest_ip}[a-fA-F:\d.]+)""" ]
+	     """User Name:\s{1,100}({user}.+?)\s{1,100}Supplied Realm Name:.+?Result Code:\s{1,100}({result_code}.+?)\s.+Client Address:\s{1,100}({dest_ip}[a-fA-F:\d.]+)""" ]
 }
 ```

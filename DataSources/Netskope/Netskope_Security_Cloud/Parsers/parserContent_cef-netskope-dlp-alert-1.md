@@ -12,7 +12,7 @@ Name = cef-netskope-dlp-alert-1
     """"alert_type":"({alert_type}[^"]+)""",
     """"policy":"({additional_info}[^"]+)""",
     """"action":"({outcome}[^"]+)""",
-    """"*hostname"*:"*({src_host}[^"]+)"""",
+    """"{0,20}hostname"{0,20}:"{0,20}({src_host}[^"]+)"""",
     """"from_user":"({from_user_at}[^"]+)"""",
     """"shared_with":"("shared_with_at}[^"]+)"""",
     """"sha256":"({sha256_at}[^"]+)"""",
@@ -27,7 +27,7 @@ cef-netskope-alert = {
   TimeFormat = "epoch_sec"
   Fields = [
     """"hostname":"({host}[^",]+)"""",
-    """"timestamp":({time}\d+)""",
+    """"timestamp":({time}\d{1,100})""",
     """"user":"(({user_email}[^@"\s]+@[^@"\s]+)|(({domain}[^"@\\\/\s]+)[\\\/]+)?({user}[^"@\\\/\s]+))"""",
     """"dstip":"({dest_ip}[A-Fa-f:\d.]+)""",
     """"alert_name":"({alert_name}[^"]+)""",

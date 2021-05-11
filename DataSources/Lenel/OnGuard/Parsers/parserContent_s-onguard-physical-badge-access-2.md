@@ -9,16 +9,16 @@ Name = s-onguard-physical-badge-access-2
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
   Conditions = [ """"readerdesc"""", """"segmentname"""", """"panelname"""", """"badgekey"""", """"event_time_utc"""", """"changedate"""" ]
   Fields = [
-    """"host"+:\s*"+({host}[^"]+)"""",
-    """"event_time_utc"+:"+({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\d)""",
-    """"lastname"+:\s*"+({last_name}[^"]+)"""",
-    """"firstname"+:\s*"+({first_name}[^"]+)"""",
-    """"cardnum"+:({card_num}\d+)""",
-    """"readerdesc"+:\s*"+({location_door}[^"]+)"""",
-    """"devid"+:({devid}\d+)""",
-    """"panelname"+:\s*"+({location_building}[^"]+)"""",
-    """"emp_id"+:({employee_id}\d+)""",
-    """"badgekey":({badge_id}\d+)"""
+    """"host"{1,20}:\s{0,100}"{1,20}({host}[^"]+)"""",
+    """"event_time_utc"{1,20}:"{1,20}({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\d)""",
+    """"lastname"{1,20}:\s{0,100}"{1,20}({last_name}[^"]+)"""",
+    """"firstname"{1,20}:\s{0,100}"{1,20}({first_name}[^"]+)"""",
+    """"cardnum"{1,20}:({card_num}\d{1,100})""",
+    """"readerdesc"{1,20}:\s{0,100}"{1,20}({location_door}[^"]+)"""",
+    """"devid"{1,20}:({devid}\d{1,100})""",
+    """"panelname"{1,20}:\s{0,100}"{1,20}({location_building}[^"]+)"""",
+    """"emp_id"{1,20}:({employee_id}\d{1,100})""",
+    """"badgekey":({badge_id}\d{1,100})"""
   ]
 }
 ```

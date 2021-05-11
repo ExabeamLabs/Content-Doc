@@ -10,16 +10,16 @@ Name = cylance-security-alert
   Conditions = [ """Event Type: ExploitAttempt""", """Process Name:""", ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d)\d+Z \S+ CylancePROTECT""",
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """Event Type:\s*({alert_type}[^,]+)""",
-    """Violation Type:\s*({alert_name}[^,]+)""",
-    """Device Name:\s*({src_host}[\w\-.]+)""",
-    """IP Address:\s*\(({src_ip}[a-fA-F:\d.]+)""",
-    """Process Name:\s*({process}[^,]+\\({process_name}[^\\,]+))""",
-    """User Name:\s*({user}[^,]+)""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d)\d{1,100}Z \S+ CylancePROTECT""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """Event Type:\s{0,100}({alert_type}[^,]+)""",
+    """Violation Type:\s{0,100}({alert_name}[^,]+)""",
+    """Device Name:\s{0,100}({src_host}[\w\-.]+)""",
+    """IP Address:\s{0,100}\(({src_ip}[a-fA-F:\d.]+)""",
+    """Process Name:\s{0,100}({process}[^,]+\\({process_name}[^\\,]+))""",
+    """User Name:\s{0,100}({user}[^,]+)""",
     """, Action: ({outcome}[^,]+?),"""
-    """, Policy Name: ({additional_info}.+?)(\s*$|,)""" 
+    """, Policy Name: ({additional_info}.+?)(\s{0,100}$|,)""" 
   ]
   SOAR {
     IncidentType = "malware"

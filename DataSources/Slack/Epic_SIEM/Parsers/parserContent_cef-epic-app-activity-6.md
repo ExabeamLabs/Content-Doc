@@ -5,7 +5,7 @@ Name = cef-epic-app-activity-6
   Product = Epic SIEM
   Conditions = [ """CEF:""", """|Epic|Security-SIEM|""", """|IC_SERVICE_AUDIT|""" ]
   Fields = ${EpicParserTemplates.cef-epic-app-activity.Fields} [
-    """SERVICENAME=({object}.+?)\s+(\w+=|$)""",
+    """SERVICENAME=({object}.+?)\s{1,100}(\w+=|$)""",
   ]
 }
 cef-epic-app-activity = {
@@ -15,14 +15,14 @@ cef-epic-app-activity = {
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """({host}[\w\-.]+)\s+CEF:""",
+    """({host}[\w\-.]+)\s{1,100}CEF:""",
     """CEF:([^\|]*\|){5}({activity}[^\|]+)""",
     """workstationID=({dest_host}[\w\-.]+)""",
     """shost=({src_host}[\w\-.]+)""",
-    """flag=({additional_info}.+?)\s+(\w+=|$)""",
-    """MASKMODE=({result}.+?)\s+(\w+=|$)""",
+    """flag=({additional_info}.+?)\s{1,100}(\w+=|$)""",
+    """MASKMODE=({result}.+?)\s{1,100}(\w+=|$)""",
     """PREVUSER=({user}[^\s,]+)""",
     """NEWUSER=({account}[^\s,]+)""",
   ]

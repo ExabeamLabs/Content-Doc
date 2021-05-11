@@ -11,15 +11,15 @@ Name = netwrix-db-activity
   Fields = [
     """When : ({time}[^\s]+)""",
     """exabeam_host=({host}[\w.\-]+)""",
-    """What\s*:\s*(.+?\\+)?({database_name}[^\s]+)""",
-    """Who\s*:\s*(({domain}[^\s]+)\\+)?(system|({user}[^\s]+))"""
-    """Where\s*:\s*({dest_host}[\w\-.]+)""",
-    """Workstation\s*:\s*(|({src_ip}[A-Fa-f:\d.]+))\s*Details\s*:""",
-    """ObjectType\s*:\s*({additional_info}.+?)\s*\w+\s*:\s*""",
-    """Device name:\s*"*({service_name}[^",\s]+)""",
-    """Message\s*:\s*({reason}.+?)\s*\w+\s*:"""
-    """DataSource\s*:\s*({app}.+?)\s*\w+\s*:"""
-    """Application name:\s*({app}.+?)\s*$"""
+    """What\s{0,100}:\s{0,100}(.+?\\+)?({database_name}[^\s]+)""",
+    """Who\s{0,100}:\s{0,100}(({domain}[^\s]+)\\+)?(system|({user}[^\s]+))"""
+    """Where\s{0,100}:\s{0,100}({dest_host}[\w\-.]+)""",
+    """Workstation\s{0,100}:\s{0,100}(|({src_ip}[A-Fa-f:\d.]+))\s{0,100}Details\s{0,100}:""",
+    """ObjectType\s{0,100}:\s{0,100}({additional_info}.+?)\s{0,100}\w+\s{0,100}:\s{0,100}""",
+    """Device name:\s{0,100}"{0,20}({service_name}[^",\s]+)""",
+    """Message\s{0,100}:\s{0,100}({reason}.+?)\s{0,100}\w+\s{0,100}:"""
+    """DataSource\s{0,100}:\s{0,100}({app}.+?)\s{0,100}\w+\s{0,100}:"""
+    """Application name:\s{0,100}({app}.+?)\s{0,100}$"""
   ]
 }
 ```

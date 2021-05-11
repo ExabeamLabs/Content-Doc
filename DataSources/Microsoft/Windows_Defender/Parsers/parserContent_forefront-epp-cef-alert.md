@@ -9,12 +9,12 @@ Name = forefront-epp-cef-alert
   TimeFormat = "epoch"
   Conditions = [ """|Microsoft|Forefront Endpoint Protection|""" ]
   Fields = [
-    """exabeam_EventTime=({eventtime}\d+)""",
+    """exabeam_EventTime=({eventtime}\d{1,100})""",
     """\|Microsoft\|({host}.+?)\|""",
-    """\|Microsoft\|.+?\|.+?\|.+?\|({alert_type}[^\|]+)\|""",
-    """\|Microsoft\|.+?\|.+?\|.+?\|.+?\|({alert_severity}[^\|]+)""",
+    """\|Microsoft\|[^|]+?\|[^|]+?\|[^|]+?\|({alert_type}[^\|]+)\|""",
+    """\|Microsoft\|[^|]+?\|[^|]+?\|[^|]+?\|[^|]+?\|({alert_severity}[^\|]+)""",
     """\seventId=({alert_id}[^\s]+)""",
-    """\srt=({time}\d+)""",
+    """\srt=({time}\d{1,100})""",
     """\scs1=({alert_name}[^\s]+)""",
     """\sdst=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sdhost=({src_host}[^\.\s]+)""",

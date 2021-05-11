@@ -11,13 +11,13 @@ Name = cef-github-app-activity
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ) \S+ Skyformation -""",
     """\Wsuser=({user}[^\s]+)""",
-    """\WflexString1=({activity}.+?)(?:Event|)\s*(\w+=|$)""",
-    """\WrequestClientApplication=({app}.+?)\s*(\w+=|$)""",
-    """\Wdproc=({resource}.+?)\s*(\w+=|$)""",
-    """\Wdproc=({object}.+?)\s*(\w+=|$)""",
-    """\Wfname=({object}.+?)\s*(\w+=|$)""",
-    """\WfileType=({additional_info}.+?)\s*(\w+=|$)""",
-    """\Wmsg=({additional_info}.+?)\s*(\w+=|$)""",
+    """\WflexString1=({activity}.+?)(?:Event|)\s{0,100}(\w+=|$)""",
+    """\WrequestClientApplication=({app}.+?)\s{0,100}(\w+=|$)""",
+    """\Wdproc=({resource}.+?)\s{0,100}(\w+=|$)""",
+    """\Wdproc=({object}.+?)\s{0,100}(\w+=|$)""",
+    """\Wfname=({object}.+?)\s{0,100}(\w+=|$)""",
+    """\WfileType=({additional_info}.+?)\s{0,100}(\w+=|$)""",
+    """\Wmsg=({additional_info}.+?)\s{0,100}(\w+=|$)""",
   ]
 }
 ```

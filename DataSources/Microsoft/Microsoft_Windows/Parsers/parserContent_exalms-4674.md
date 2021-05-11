@@ -10,22 +10,22 @@ Name = exalms-4674
   Conditions = [ """An operation was attempted on a privileged object.""", """"event_id":4674""", """"@timestamp""""]
   Fields = [
     """({event_name}An operation was attempted on a privileged object)""",
-    """"@timestamp"\s*:\s*"({time}.+?)"""",
+    """"@timestamp"\s{0,100}:\s{0,100}"({time}.+?)"""",
     """"hostname":"({host}[^."]*)""",
     """"host":"({src_ip}[A-Fa-f:\d.]+)""",
     """({event_code}4674)""",
     """"keywords":\["({outcome}.+?)"\]""",
     """process_name":"(?: |({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?)))"""",
-    """"(SubjectUserName)"\s*:\s*"(-|({user}.+?))\s*"""",
-    """"(SubjectDomainName)"\s*:\s*"(-|({domain}.+?))\s*"""",
-    """"(SubjectLogonId)"\s*:\s*"(-|({logon_id}.+?))\s*"""",
-    """"(ObjectServer)"\s*:\s*"(-|({object_server}.+?))\s*"""",
-    """"(ObjectType)"\s*:\s*"(-|({object_type}.+?))\s*"""",
-    """"(ObjectName)"\s*:\s*"(-|({object}.+?))\s*"""",
-    """"(AccessMask)"\s*:\s*"(-|({accesses}\d*))\s*"""",
-    """"(PrivilegeList)"\s*:\s*"(-|({privileges}.+?))\s*"""",
+    """"(SubjectUserName)"\s{0,100}:\s{0,100}"(-|({user}.+?))\s{0,100}"""",
+    """"(SubjectDomainName)"\s{0,100}:\s{0,100}"(-|({domain}.+?))\s{0,100}"""",
+    """"(SubjectLogonId)"\s{0,100}:\s{0,100}"(-|({logon_id}.+?))\s{0,100}"""",
+    """"(ObjectServer)"\s{0,100}:\s{0,100}"(-|({object_server}.+?))\s{0,100}"""",
+    """"(ObjectType)"\s{0,100}:\s{0,100}"(-|({object_type}.+?))\s{0,100}"""",
+    """"(ObjectName)"\s{0,100}:\s{0,100}"(-|({object}.+?))\s{0,100}"""",
+    """"(AccessMask)"\s{0,100}:\s{0,100}"(-|({accesses}\d{0,100}))\s{0,100}"""",
+    """"(PrivilegeList)"\s{0,100}:\s{0,100}"(-|({privileges}.+?))\s{0,100}"""",
     """({ownership_privilege}SeTakeOwnershipPrivilege)""",
-    """record_number"\s*:\s*"({record_id}\d+)"""
+    """record_number"\s{0,100}:\s{0,100}"({record_id}\d{1,100})"""
   ]
   DupFields = ["host->dest_host", "directory->process_directory"]
 }

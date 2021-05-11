@@ -10,7 +10,7 @@ Name = s-mcafee-clean-failed-alert
     Conditions = [ " (MD5)", " (Clean failed)"]
     Fields = [ 
       """exabeam_host=({host}[\w.\-]+)""",  
-      """({time}\d+/\d+/\d+\s+\d+:\d+:\d+ (am|AM|pm|PM)+)\t({additional_info}[^\t]+?)\s*\t(({domain}[^\t]+)(\\)+)?({user}[^\t]+)\t(\w+\[({process_id}\d+)\]|({process}[^\t]+))\t({malware_url}.+?\\({malware_file_name}[^\\]+))\t({alert_name}[^\t]+?)\s*\(({alert_type}[^\)]+)\)\t({md5}\S+?)\s*\(MD5\)"""
+      """({time}\d{1,100}/\d{1,100}/\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM)+)\t({additional_info}[^\t]+?)\s{0,100}\t(({domain}[^\t]+)(\\)+)?({user}[^\t]+)\t(\w+\[({process_id}\d{1,100})\]|({process}[^\t]+))\t({malware_url}.+?\\({malware_file_name}[^\\]+))\t({alert_name}[^\t]+?)\s{0,100}\(({alert_type}[^\)]+)\)\t({md5}\S+?)\s{0,100}\(MD5\)"""
     ]
     DupFields=[ "host->src_host" ]
     SOAR {

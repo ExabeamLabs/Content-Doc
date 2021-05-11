@@ -11,9 +11,9 @@ Name = rdirectory-account-disable
   Fields = [
 	"""SystemTime=\'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
 	"""<Computer>({host}[^<]+)""",
-	"""Modified by:({user}.+?)\s+(\(.+?\))?\s+\(({domain}[^\/)]+)""",
+	"""Modified by:({user}.+?)\s{1,100}(\(.+?\))?\s{1,100}\(({domain}[^\/)]+)""",
 	"""Credentials:({account_domain}[^\\]+)\\+([^\s.]+\.)*({account}[^\s.]+)""",
-	"""account:({target_user}.+?)\s+\(({target_domain}[^\/)]+)"""
+	"""account:({target_user}.+?)\s{1,100}\(({target_domain}[^\/)]+)"""
   ]
   DupFields = [ "host->dest_host" ]
 }

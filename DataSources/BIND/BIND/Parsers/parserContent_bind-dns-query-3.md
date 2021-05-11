@@ -10,8 +10,8 @@ Name = bind-dns-query-3
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
   Conditions = [ """[][]""", """<CLIENT_DATA>:""", """ query: """ ]
   Fields = [
-    """<\d+>\d+ ({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d(\+|\-)\d\d:\d\d) ({host}[\w.\-]+)""",
-    """({src_ip}[a-fA-F\d.:]+)\#({src_port}\d+):\s+query:\s+({query}.+?)\s+IN\s+({query_type}\S+)""",
+    """<\d{1,100}>\d{1,100} ({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d(\+|\-)\d\d:\d\d) ({host}[\w.\-]+)""",
+    """({src_ip}[a-fA-F\d.:]+)\#({src_port}\d{1,100}):\s{1,100}query:\s{1,100}({query}.+?)\s{1,100}IN\s{1,100}({query_type}\S+)""",
   ]
 }
 ```

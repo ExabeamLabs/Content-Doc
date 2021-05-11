@@ -9,14 +9,14 @@ Name = netdocs-file-operations
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """<activity date="""", """<user id="""", """<storageObject""", """host="""", """name=""""]
   Fields = [
-    """activity date="+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"+\sname""",
-    """name="+({accesses}[^"]+)"+\shost""",
-    """host="+({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
-    """name="+({user}[^"]+)"+\smemberType""",
-    """user\sid="+({user}[^"]+)"+\sname""",
-    """name="+({file_name}[^"]+)"+\s(version|size)""",
-    """size="+({file_size}[^"]+)"+\sfileExtension""",
-    """fileExtension="+({file_ext}[^"]+)""""
+    """activity date="{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"{1,20}\sname""",
+    """name="{1,20}({accesses}[^"]+)"{1,20}\shost""",
+    """host="{1,20}({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
+    """name="{1,20}({user}[^"]+)"{1,20}\smemberType""",
+    """user\sid="{1,20}({user}[^"]+)"{1,20}\sname""",
+    """name="{1,20}({file_name}[^"]+)"{1,20}\s(version|size)""",
+    """size="{1,20}({file_size}[^"]+)"{1,20}\sfileExtension""",
+    """fileExtension="{1,20}({file_ext}[^"]+)""""
   ]
   DupFields = [ "host->dest_ip" ]
 }

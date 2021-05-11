@@ -10,10 +10,10 @@ Name = unix-failed-logon-10
   Conditions = [ """ sshd[""", """]: Unable to negotiate """ ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """\w+\s+\d+\s+\d+:\d+:\d+\s+({host}[\w\-.]+)\s+""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]+)\s{1,100}""",
     """Unable to negotiate with (({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})|({dest_host}[^\s]+))""",
-    """ port ({src_port}\d+)({failure_reason}.*?)"""",
+    """ port ({src_port}\d{1,100})({failure_reason}.*?)"""",
   ]
 }
 ```

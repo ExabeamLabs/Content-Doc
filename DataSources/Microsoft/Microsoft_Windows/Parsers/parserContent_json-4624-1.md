@@ -14,7 +14,7 @@ json-windows-events = {
   Lms = Direct
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
-    """"@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+    """"@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """"service":".+?","host":"({host}[^"]+)""",
     """"host":"({host}[^"]+)","authentication""",
     """"host":"({host}[^"]+)","service":"""",
@@ -27,10 +27,10 @@ json-windows-events = {
     """"source":\{([^\}]*?\{([^\}]*?\{[^\{\}]*?\})*[^\}]*?\})*[^\}]*?"ipv4":"({src_ip}[a-fA-F\d.:]+)""",
     """"destination":\{([^\}]*?\{([^\}]*?\{[^\{\}]*?\})*[^\}]*?\})*[^\}]*?"host":"({dest_host}[^"]+)""",
     """"destination":\{([^\}]*?\{([^\}]*?\{[^\{\}]*?\})*[^\}]*?\})*[^\}]*?"ipv4":"({dest_ip}[a-fA-F\d.:]+)""",
-    """"logon-type":({logon_type}\d+)""",
+    """"logon-type":({logon_type}\d{1,100})""",
     """"logon-id":"({logon_id}[^"]+)""",
     """"event-type":"({outcome}[^"]+)""",
-    """"event-id":({event_code}\d+)""",
+    """"event-id":({event_code}\d{1,100})""",
     """"message":"({event_name}[^"]+)""",
     """"user-sid":"({user_sid}[^"]+)""",
     """"status":"({result_code}[^"]+)""",

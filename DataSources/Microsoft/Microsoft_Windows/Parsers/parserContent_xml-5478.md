@@ -9,7 +9,7 @@ Name = xml-5478
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """<EventID>5478<""", """<Provider Name='Microsoft-Windows-Security-Auditing'""", """The IPsec Policy Agent service was started""" ]
   Fields = [
-    """<EventID>({event_code}\d+)""",
+    """<EventID>({event_code}\d{1,100})""",
     """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """<Computer>({host}[^<]+)""",
     """<Keyword>({outcome}[^<]+)<\/Keyword>""",

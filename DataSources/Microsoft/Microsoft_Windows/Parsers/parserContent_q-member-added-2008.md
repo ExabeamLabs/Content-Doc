@@ -10,13 +10,13 @@ Name = q-member-added-2008
   Conditions = [ "A member was added to a security-enabled", "EventID=", "EventIDCode=", "TimeGenerated=" ]
   Fields = [
     """({event_name}A member was added to a security-enabled [\w\s]+ group)""",
-    """EventID=({event_code}\d+)""",
+    """EventID=({event_code}\d{1,100})""",
     """TimeGenerated=({time}\d{10})""",
     """Computer=({host}[^\s]+)""",
-    """A member was added to a security-enabled ({group_type}[^\s]+) group.+?Account Name:\s*({user}[^\s]+).+?Account Domain:\s*({domain}[^\s]+).+?Logon ID:\s*({logon_id}[^\s]+)\s+""",
-    """Member:\s*Security ID:\s*({account_id}.+?)\s*Account Name:""",
-    """Member:\s*Security ID:\s*({account_id}(?=[^\\]+\\)({sid_domain}[^\\]+)\\({sid_user}.+?)|(?:[^\s]+))\s*Account Name:""",
-    """Member:.*?Account Name:\s*(?:-|({account_dn}(CN|cn)=.+?,({account_ou}(OU|ou).+?(DC|dc)=[\w-]+)))?\s*Group:\s*Security ID:\s*({group_id}.+?)\s*(Group|Account) Name:\s*({group_name}.+?)?\s*(Group|Account) Domain:\s*({group_domain}.+?)\s*Additional Information:""",
+    """A member was added to a security-enabled ({group_type}[^\s]+) group.+?Account Name:\s{0,100}({user}[^\s]+).+?Account Domain:\s{0,100}({domain}[^\s]+).+?Logon ID:\s{0,100}({logon_id}[^\s]+)\s{1,100}""",
+    """Member:\s{0,100}Security ID:\s{0,100}({account_id}.+?)\s{0,100}Account Name:""",
+    """Member:\s{0,100}Security ID:\s{0,100}({account_id}(?=[^\\]+\\)({sid_domain}[^\\]+)\\({sid_user}.+?)|(?:[^\s]+))\s{0,100}Account Name:""",
+    """Member:.*?Account Name:\s{0,100}(?:-|({account_dn}(CN|cn)=.+?,({account_ou}(OU|ou).+?(DC|dc)=[\w-]+)))?\s{0,100}Group:\s{0,100}Security ID:\s{0,100}({group_id}.+?)\s{0,100}(Group|Account) Name:\s{0,100}({group_name}.+?)?\s{0,100}(Group|Account) Domain:\s{0,100}({group_domain}.+?)\s{0,100}Additional Information:""",
   ]
   DupFields = [ "host->dest_host" ]
 }

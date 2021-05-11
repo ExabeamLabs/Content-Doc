@@ -9,12 +9,12 @@ Name = syslog-sophos-snmp-alert-belongs
   TimeFormat = "yyyy-MM-dd HH:mm:ss a"
   Conditions = [ """ belongs to """, """SOPHOS:""", """SNMP Trap""", """Variable Bindings""" ]
   Fields = [
-    """exabeam_host=([^=]+?@\s*)?({host}[^\s]+)""",
+    """exabeam_host=([^=]+?@\s{0,100})?({host}[^\s]+)""",
     """Address=({host}\S+)""",
-    """({host}[\w\.-]+)\s+MSWinEventLog""",
+    """({host}[\w\.-]+)\s{1,100}MSWinEventLog""",
     """\sReceived Time:({time}\d\d\d\d-\d\d-\d\d \d{1,2}:\d\d:\d\d (AM|PM|am|pm))""",
-    """\sSource:({src_ip}[^\(\s]+)(\s*\(({src_host}[\w\.-]+)\))?""",
-    """:=\s*({additional_info}[^"]+?)\s+"({file_path}(({file_parent}.+)[\\\/])?({file_name}.+?))"\s+belongs to\s+({alert_type}.+?)\s+'({alert_name}.+?)'(\s*\(of type\s+({=alert_type}.+?)\))?""",
+    """\sSource:({src_ip}[^\(\s]+)(\s{0,100}\(({src_host}[\w\.-]+)\))?""",
+    """:=\s{0,100}({additional_info}[^"]+?)\s{1,100}"({file_path}(({file_parent}.+)[\\\/])?({file_name}.+?))"\s{1,100}belongs to\s{1,100}({alert_type}.+?)\s{1,100}'({alert_name}.+?)'(\s{0,100}\(of type\s{1,100}({=alert_type}.+?)\))?""",
   ]
   DupFields = [ "file_path->malware_url" ]
 }

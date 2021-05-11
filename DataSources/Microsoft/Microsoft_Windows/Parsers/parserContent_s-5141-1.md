@@ -11,15 +11,15 @@ Name = s-5141-1
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """({event_name}A directory service object was deleted)""",
-    """DetectTime=({time_created}.+?)\s+\w+=""",
+    """DetectTime=({time_created}.+?)\s{1,100}\w+=""",
     """ComputerName=({host}[\w.\-]+)""",
     """EventID=({event_code}\w+)""",
-    """Account Name=({user}.+?)\s+""",
+    """Account Name=({user}.+?)\s{1,100}""",
     """Account Domain=({domain}.+?)\s""",
     """Logon ID=({logon_id}[^\s]+)\s""",
     """Object:Class=({object_class}.+?)\s""",
-    """Object:DN=({object_dn}.+?)\s*Object:GUID=""",
-    """Object:DN=.+?({object_ou}OU.+?)\s*Object:GUID"""
+    """Object:DN=({object_dn}.+?)\s{0,100}Object:GUID=""",
+    """Object:DN=.+?({object_ou}OU.+?)\s{0,100}Object:GUID"""
   ]
   DupFields = [ "host->dest_host" ]
 }

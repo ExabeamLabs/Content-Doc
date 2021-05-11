@@ -10,14 +10,14 @@ Name = json-ccure-badge-access
   Conditions = [ """"ntid":""", """"personType":""", """"doorName":""" ]
   Fields = [
     """exabeam_host=({host}[\w\-.]+)""",
-    """"serverName":\s*"({host}[^"]+)"""",
-    """"firstName":\s*"({first_name}[^"]+)"""",
-    """"lastName":\s*"({last_name}[^"]+)"""",
-    """"ntid":\s*"({user}[^"]+)"""",
-    """"doorName":\s*"({location_door}[^"]+?)\s*"""",
-    """"direction":\s*"({direction}[^"]+)"""",
-    """"messageDateTime":\s*"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
-    """"admitReject":\s*"({outcome}[^"]+)""""
+    """"serverName":\s{0,100}"({host}[^"]+)"""",
+    """"firstName":\s{0,100}"({first_name}[^"]+)"""",
+    """"lastName":\s{0,100}"({last_name}[^"]+)"""",
+    """"ntid":\s{0,100}"({user}[^"]+)"""",
+    """"doorName":\s{0,100}"({location_door}[^"]+?)\s{0,100}"""",
+    """"direction":\s{0,100}"({direction}[^"]+)"""",
+    """"messageDateTime":\s{0,100}"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
+    """"admitReject":\s{0,100}"({outcome}[^"]+)""""
   ]
   DupFields = [ "location_door->location_full" ]
 }

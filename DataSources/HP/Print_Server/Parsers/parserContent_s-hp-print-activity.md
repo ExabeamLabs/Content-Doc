@@ -9,15 +9,15 @@ Name = s-hp-print-activity
   TimeFormat =  "yyyy-MM-dd HH:mm:ss.S"
   Conditions = [ """PRINTER_lab_LocalName="""", """PRINTER_lab_Type="""", """PRINTER_lab_SerialNumber="""" ]
   Fields = [
-    """JOB_date_Submitted="({time}\d+-\d+-\d+\s+\d+:\d+:\d+\.\d+)""",
+    """JOB_date_Submitted="({time}\d{1,100}-\d{1,100}-\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100})""",
     """MPS_lab_Name="({host}[^"]+)""",
     """PRINTER_lab_LocalName="(Unspecified|({printer_name}[^"]+))""",
     """PRINTER_lab_SerialNumber="(Unspecified|({printer_sn}[^"]+))""",
     """JOB_lab_NTUserName="(Unspecified|({user}[^"]+))""",
-    """Lab_NTFullUserName="({user_lastname}[^",]+),\s*({user_firstname}[^",]+)""",
+    """Lab_NTFullUserName="({user_lastname}[^",]+),\s{0,100}({user_firstname}[^",]+)""",
     """JOB_lab_NTUserMachine="(Unspecified|({src_host}[^"]+))""",
-    """JOB_qty_PrintedPages="({num_pages}\d+)""",
-    """JOB_lab_DocumentName="(Unspecified|[\s-]*({object}[^"]+?))\s*"""",
+    """JOB_qty_PrintedPages="({num_pages}\d{1,100})""",
+    """JOB_lab_DocumentName="(Unspecified|[\s-]*({object}[^"]+?))\s{0,100}"""",
     """PRINTER_lab_Type="(Unspecified|({activity}[^"]+))""",
   ]
 }

@@ -9,15 +9,15 @@ Name = s-duo-auth-json-1
   TimeFormat = "epoch_sec"
   Conditions = [ """"eventtype": "authentication"""",""""result""""]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
-    """"+timestamp"+:\s({time}\d+)""",
-    """"+host"+:\s"+({host}[\w\-\.]+)"""",
-    """"+ip"+:\s"+(0.0.0.0|({src_ip}[a-fA-F:\.\d]+))"""",
-    """"+username"+:\s"+(({domain}[^\\]+)\\+)?({user}[^"]+)"""",
-    """"+integration"+:\s"+({auth_method}[^"]+)"""",
-    """"+device"+:\s(null|"+({device}[^"]+))""",
-    """"+result"+:\s"+({outcome}[^"]+)"""",
-    """"+reason"+:\s"+({failure_reason}[^"]+)""""
+    """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
+    """"{1,20}timestamp"{1,20}:\s({time}\d{1,100})""",
+    """"{1,20}host"{1,20}:\s"{1,20}({host}[\w\-\.]+)"""",
+    """"{1,20}ip"{1,20}:\s"{1,20}(0.0.0.0|({src_ip}[a-fA-F:\.\d]+))"""",
+    """"{1,20}username"{1,20}:\s"{1,20}(({domain}[^\\]+)\\+)?({user}[^"]+)"""",
+    """"{1,20}integration"{1,20}:\s"{1,20}({auth_method}[^"]+)"""",
+    """"{1,20}device"{1,20}:\s(null|"{1,20}({device}[^"]+))""",
+    """"{1,20}result"{1,20}:\s"{1,20}({outcome}[^"]+)"""",
+    """"{1,20}reason"{1,20}:\s"{1,20}({failure_reason}[^"]+)""""
   ]
 }
 ```

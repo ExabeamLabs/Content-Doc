@@ -14,11 +14,11 @@ Name = l-4723
     """<Computer>({host}[^<]+)</Computer>""",
     """<EventID>({event_code}[^<]+)</EventID>""",
     """<Keywords>({outcome}[^<]+)</Keywords>""",
-    """Subject.+?Security ID:\s*({user_sid}.+?)\s*Account Name""",
-    """Subject.+?Account Name:\s*({user}.+?)\s*Account Domain""",
-    """Account Domain:\s*({domain}.+?)\s*Logon ID:\s*({logon_id}.+?)\s*Target Account:""",
-    """Target Account.+?Security ID:\s*({target_user_sid}.+?)\s*Account Name:""",
-    """Target Account.+?Account Name:\s*({target_user}.+?)\s*Account Domain:\s*({target_domain}.+?)\s*Additional"""
+    """Subject.+?Security ID:\s{0,100}({user_sid}.+?)\s{0,100}Account Name""",
+    """Subject.+?Account Name:\s{0,100}({user}.+?)\s{0,100}Account Domain""",
+    """Account Domain:\s{0,100}({domain}.+?)\s{0,100}Logon ID:\s{0,100}({logon_id}.+?)\s{0,100}Target Account:""",
+    """Target Account.+?Security ID:\s{0,100}({target_user_sid}.+?)\s{0,100}Account Name:""",
+    """Target Account.+?Account Name:\s{0,100}({target_user}.+?)\s{0,100}Account Domain:\s{0,100}({target_domain}.+?)\s{0,100}Additional"""
   ]
   DupFields = [ "host->dest_host" ]
 }

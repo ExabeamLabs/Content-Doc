@@ -14,13 +14,13 @@ q-pan-vpn-parser = {
   Lms = QRadar
   TimeFormat = "MMM dd yyyy HH:mm:ss z"
   Fields = [
-    """User name:\s+({user}[\w.'\-\\$]+?)\.?(\s|,|"|$)""",
-    """User name:\s+({user_email}[^@\s]+@[^\s,]+),""",
-    """\|devTime=({time}\w{3}\s+\d+ \d\d\d\d \d\d:\d\d:\d\d \w+)\|""",
-    """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
+    """User name:\s{1,100}({user}[\w.'\-\\$]+?)\.?(\s|,|"|$)""",
+    """User name:\s{1,100}({user_email}[^@\s]+@[^\s,]+),""",
+    """\|devTime=({time}\w{3}\s{1,100}\d{1,100} \d\d\d\d \d\d:\d\d:\d\d \w+)\|""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
     """DeviceName=({host}[\w\-.]+)""",
-    """Client OS( version)?:\s+({os}[^":]+)(,|\.)""",
-    """Login from:\s*({src_ip}[a-fA-F\d.:]+)"""
+    """Client OS( version)?:\s{1,100}({os}[^":]+)(,|\.)""",
+    """Login from:\s{0,100}({src_ip}[a-fA-F\d.:]+)"""
   ]
 
 ```

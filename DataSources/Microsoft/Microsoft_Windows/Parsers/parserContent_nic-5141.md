@@ -12,12 +12,12 @@ Name = nic-5141
     """({event_name}A directory service object was deleted)""",
     """({time}\w{3}\s\d{2}\s\d{2}:\d{2}:\d{2}\s\d{4})""",
     """exabeam_host=({host}[\w.\-]+)""",
-    """(Information|Success Audit|Audit Success)\s+({host}[^\s]+)""",
+    """(Information|Success Audit|Audit Success)\s{1,100}({host}[^\s]+)""",
     """({event_code}5141)""",
-    """Subject:.+?Account Name:\s+({user}.+?)\s+Account Domain:\s+({domain}.+?)\s+Logon ID:\s+({logon_id}[^\s]+)""",
-    """Object:.+?Class:\s+({object_class}.+?)\s+Operation:""",
-    """Object:\s+DN:\s+({object_dn}.+?)\s+GUID:""",
-    """Object:\s+DN:.+?({object_ou}OU.+?)\s+GUID:"""
+    """Subject:.+?Account Name:\s{1,100}({user}.+?)\s{1,100}Account Domain:\s{1,100}({domain}.+?)\s{1,100}Logon ID:\s{1,100}({logon_id}[^\s]+)""",
+    """Object:.+?Class:\s{1,100}({object_class}.+?)\s{1,100}Operation:""",
+    """Object:\s{1,100}DN:\s{1,100}({object_dn}.+?)\s{1,100}GUID:""",
+    """Object:\s{1,100}DN:.+?({object_ou}OU.+?)\s{1,100}GUID:"""
   ]
   DupFields = [ "host->dest_host" ]
 }

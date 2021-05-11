@@ -12,7 +12,7 @@ Name = s-cyberark-app-activity
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """({time}\d\d\d\d\d\-\d\d-\d\dT\d\d:\d\d:\d\dZ) \S+ %CYBERARK""",
     """\d\d:\d\d:\d\d(Z)? ({host}[\w\-.]+) %CYBERARK""",
-    """MessageID="({event_code}\d+)""",
+    """MessageID="({event_code}\d{1,100})""",
     """\d\d:\d\d:\d\d(Z)? ({app}[^\s]+) %CYBERARK:""",
     """;Message="({activity}[^"]+)""",
     """;Issuer="({user}[^"]+)""",

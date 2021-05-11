@@ -13,9 +13,9 @@ Name = s-mimecast-app-login
     """date=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d[+-].+?)\|""",
     """\|user=(|({user}.+?))\|""",
     """\|user=(|({user_email}[^@\|]+@({email_domain}[^@\|]+)))\|""",
-    """\sApplication:\s*({app}[^,]*)(,|\s*$)""",
+    """\sApplication:\s{0,100}({app}[^,]*)(,|\s{0,100}$)""",
     """\|app=(|({app}.+?))\|""",
-    """\sIP:\s*({src_ip}[a-fA-F\d.:]+)(,|\s*$)""",
+    """\sIP:\s{0,100}({src_ip}[a-fA-F\d.:]+)(,|\s{0,100}$)""",
     """\|src=(|({src_ip}[a-fA-F\d.:]+))\|""",
     """\|action=(|({outcome}.+?))\|"""
   ]

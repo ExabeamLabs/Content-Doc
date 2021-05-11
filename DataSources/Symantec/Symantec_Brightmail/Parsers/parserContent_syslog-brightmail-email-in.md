@@ -9,10 +9,10 @@ Name = syslog-brightmail-email-in
     TimeFormat = "epoch_sec"
     Conditions = [ """|VERDICT|""", """|ORCPTS|""", """|ACCEPT|""", """|SENDER|""", """|RECEIVED""" ]
     Fields = [
-      """\s({host}[\w\.-]+)\s+\S+\[\d+\]:""",
-      """\s*({time}\d+)\|(|({alert_id}[^\|]+))\|VERDICT\|""",
+      """\s({host}[\w\.-]+)\s{1,100}\S+\[\d{1,100}\]:""",
+      """\s{0,100}({time}\d{1,100})\|(|({alert_id}[^\|]+))\|VERDICT\|""",
       """\|ORCPTS\|({recipients}({recipient}[^\|]+).*?)\|ACCEPT\|""",
-      """\|ACCEPT\|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):({src_port}\d+)""",
+      """\|ACCEPT\|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):({src_port}\d{1,100})""",
       """\|SENDER\|({sender}[^@\|]+@({external_domain}[^@\|]+))\|"""
     ]
     DupFields = [ "sender->external_address" ]

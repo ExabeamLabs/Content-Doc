@@ -25,7 +25,7 @@ Name = d-juniper-proxy
       """\sreason="({reason}[^"]+)""",
       """\surl="({web_domain}[^"]+)""",
       """\sobj="({uri_path}\/[^\s\?]+)?({uri_query}\?[^\s]+)?""""
-      """\surl=(.*?)({top_domain}(?!(?:\d+\.){3}\d+)[^\.\s\/:"]+(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|tr))+("|\s|\/|:|$))[^\s\/:"]+)""", 
+      """\surl=(.*?)({top_domain}(?!(?:\d{1,100}\.){3}\d{1,100})[^\.\s\/:"]+(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|tr))+("|\s|\/|:|$))[^\s\/:"]+)""", 
  ]
   DupFields = [ "action->outcome" ]
 }

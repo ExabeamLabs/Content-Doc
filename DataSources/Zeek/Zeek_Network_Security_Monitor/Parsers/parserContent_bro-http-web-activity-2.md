@@ -6,11 +6,11 @@ Name = bro-http-web-activity-2
   DataType = "web-activity"
   Conditions = [ """fileset""", """"http"""", """type""", """zeek""" ]
   Fields = ${BroParserTemplates.bro-activity-1.Fields}[
-    """"+http"+.+?request"+:\{"+method"+:"+({method}[^"]+)"""
-    """"+response"+:\{"+status_code"+:({result_code}\d+)""",
-    """"+request.+?referrer"+:"+({referrer}({uri_path}[^?]+)\?({uri_query}[^"]+))""",
-    """"+domain"+:"+({web_domain}[^"]+)""",
-    """"+resp_mime_types"+:\["+({mime}[^"]+)"""	
+    """"{1,20}http"{1,20}.+?request"{1,20}:\{"{1,20}method"{1,20}:"{1,20}({method}[^"]+)"""
+    """"{1,20}response"{1,20}:\{"{1,20}status_code"{1,20}:({result_code}\d{1,100})""",
+    """"{1,20}request.+?referrer"{1,20}:"{1,20}({referrer}({uri_path}[^?]+)\?({uri_query}[^"]+))""",
+    """"{1,20}domain"{1,20}:"{1,20}({web_domain}[^"]+)""",
+    """"{1,20}resp_mime_types"{1,20}:\["{1,20}({mime}[^"]+)"""	
   ]
 }
 bro-activity-1 = {
@@ -18,13 +18,13 @@ bro-activity-1 = {
   Lms = Direct
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
-    """"+hostname"+:"+({host}[^"]+)"+,"+architecture""",
-    """"+session_id"+:"+({session_id}[^"]+)""",
-    """timestamp"+:"+({time}[^"]+)""",
-    """"+user"+:"+({user}[^"]+)""",
-    """"destination":\{"address"+:"+({dest_ip}[^"]+)"+,"+port"+:({dest_port}\d+)""",
-    """"source":\{"address"+:"+({src_ip}[^"]+)"+,"+port"+:({src_port}\d+)""",
-    """"+protocol"+:"+({protocol}[^"]+)"""
+    """"{1,20}hostname"{1,20}:"{1,20}({host}[^"]+)"{1,20},"{1,20}architecture""",
+    """"{1,20}session_id"{1,20}:"{1,20}({session_id}[^"]+)""",
+    """timestamp"{1,20}:"{1,20}({time}[^"]+)""",
+    """"{1,20}user"{1,20}:"{1,20}({user}[^"]+)""",
+    """"destination":\{"address"{1,20}:"{1,20}({dest_ip}[^"]+)"{1,20},"{1,20}port"{1,20}:({dest_port}\d{1,100})""",
+    """"source":\{"address"{1,20}:"{1,20}({src_ip}[^"]+)"{1,20},"{1,20}port"{1,20}:({src_port}\d{1,100})""",
+    """"{1,20}protocol"{1,20}:"{1,20}({protocol}[^"]+)"""
     ]
 
 ```

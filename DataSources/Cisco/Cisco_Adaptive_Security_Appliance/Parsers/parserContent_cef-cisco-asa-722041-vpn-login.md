@@ -10,13 +10,13 @@ Name = cef-cisco-asa-722041-vpn-login
   Conditions = [ """|CISCO|ASA|""", """|722041|""" ]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """\srt=({time}\d*)""",
+    """\srt=({time}\d{0,100})""",
     """\|({event_code}722041)""",
-    """\sUser\s+<(({domain}[^\\]+)\\)?(?:({user_fullname}(\w+\s+)+\w+)|({user_email}[^@\s>]+@[^@\s>]+?)|({user}[^>@\s]+))>""",
-    """\sIP\s+<({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})>""",
-    """\sduser=<?(?:({domain}[^\s]+?)\\+)?(?:({user_fullname}(\w+\s+)+\w+)|({user_email}[^@\s>]+@[^@\s>]+?)|({user}[^>@\s]+))>?\s+([\w.]+=|$)""",
-    """\sad\.Username=<?(?:({domain}[^\s]+?)\\+)?(?:({user_fullname}(\w+\s+)+\w+)|({user_email}[^@\s>]+@[^@\s>]+?)|({user}[^>@\s]+))>?\s+([\w.]+=|$)""",
-    """\sdhost=<?({dest_host}.+?)>?\s+([\w.]+=|$)""",
+    """\sUser\s{1,100}<(({domain}[^\\]+)\\)?(?:({user_fullname}(\w+\s{1,100})+\w+)|({user_email}[^@\s>]+@[^@\s>]+?)|({user}[^>@\s]+))>""",
+    """\sIP\s{1,100}<({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})>""",
+    """\sduser=<?(?:({domain}[^\s]+?)\\+)?(?:({user_fullname}(\w+\s{1,100})+\w+)|({user_email}[^@\s>]+@[^@\s>]+?)|({user}[^>@\s]+))>?\s{1,100}([\w.]+=|$)""",
+    """\sad\.Username=<?(?:({domain}[^\s]+?)\\+)?(?:({user_fullname}(\w+\s{1,100})+\w+)|({user_email}[^@\s>]+@[^@\s>]+?)|({user}[^>@\s]+))>?\s{1,100}([\w.]+=|$)""",
+    """\sdhost=<?({dest_host}.+?)>?\s{1,100}([\w.]+=|$)""",
     """\sdvchost=({host}[^\s]+)""",
     """\sc6a3=({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}).*?c6a3Label=Destination""", 
   ]

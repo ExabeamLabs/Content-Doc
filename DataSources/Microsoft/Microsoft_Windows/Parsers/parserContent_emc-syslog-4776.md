@@ -12,10 +12,10 @@ Name = emc-syslog-4776
     """({event_name}The (computer|domain controller) attempted to validate the credentials for an account)""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """__li_source_path="({host}[^"]+)"""",
-    """Source Workstation:\s*(\\+)?(({dest_ip}[A-Fa-f:\d.]+)|(?:(?!NULL)({dest_host}[^\s]+)))?(:\d+)?\s*Error Code:""",
+    """Source Workstation:\s{0,100}(\\+)?(({dest_ip}[A-Fa-f:\d.]+)|(?:(?!NULL)({dest_host}[^\s]+)))?(:\d{1,100})?\s{0,100}Error Code:""",
     """({event_code}4776)""",
-    """Logon (?:a|A)ccount:\s+({user}[^@]+?)(?:@({domain}[^\s.]+)[^\s]*)?\s+Source Workstation""",
-    """Error Code:\s+({result_code}[\w\-]+)""",
+    """Logon (?:a|A)ccount:\s{1,100}({user}[^@]+?)(?:@({domain}[^\s.]+)[^\s]*)?\s{1,100}Source Workstation""",
+    """Error Code:\s{1,100}({result_code}[\w\-]+)""",
      ]
 }
 ```

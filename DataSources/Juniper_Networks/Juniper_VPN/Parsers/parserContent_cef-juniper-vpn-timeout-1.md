@@ -9,11 +9,11 @@ Name = cef-juniper-vpn-timeout-1
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """|Juniper|""", """|Session timed out|""" ]
   Fields = [
-	"""\Wrt=({time}\d+)""",
+	"""\Wrt=({time}\d{1,100})""",
 	"""\Wdvchost=({host}[\w\-.]+)""",
 	"""\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
 	"""\Wsuser=(System|({user}[^\s]+))""",
-    """\Wsproc=({realm}.+?)\s+\w+=""",
+    """\Wsproc=({realm}.+?)\s{1,100}\w+=""",
   ]
   DupFields = [ "host->dest_host" ]
 }

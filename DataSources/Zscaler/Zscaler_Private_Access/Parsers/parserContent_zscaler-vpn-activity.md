@@ -9,20 +9,20 @@ Name = zscaler-vpn-activity
   TimeFormat = "MMM dd HH:mm:ss yyyy"
   Conditions = [ """ZENBytesRxConnector""" , """ZENTotalBytesTxConnector""" , """ZENBytesTxConnector""", """TimestampZENLastRxClient""", """DoubleEncryption"""]
   Fields = [
-    """Host":\s*"({host}[^"]+)"""",
-    """({time}\w{3}\s\d+\s\d\d:\d\d:\d\d\s\d\d\d\d)""",
-    """Username":\s*"(({user_email}[^@]+@[^"]*)|({user}[^"]+))"""",
-    """IPProtocol":\s*({protocol}[^,]+),"""
-    """ClientPublicIP":\s*"({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"""",
-    """ServerIP":\s*"({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"""",
-    """ConnectorPort":\s*({src_port}\d+),""",
-    """ServerPort":\s*({dest_port}\d+),""",
-    """Application":\s*"\s*({app}[^"]+)"""",
-    """AppGroup":\s*"\s*({activity_type}[^"]+)""""
-    """ZENTotalBytesRxConnector":\s*({bytes_in}\d+),""",
-    """ZENTotalBytesTxConnector":\s*({bytes_out}\d+),""",
-    """Policy":\s*"\s*({policy}[^"]+)"""",
-    """ConnectionStatus":\s*"({outcome}[^"]+)""""
+    """Host":\s{0,100}"({host}[^"]+)"""",
+    """({time}\w{3}\s\d{1,100}\s\d\d:\d\d:\d\d\s\d\d\d\d)""",
+    """Username":\s{0,100}"(({user_email}[^@]+@[^"]*)|({user}[^"]+))"""",
+    """IPProtocol":\s{0,100}({protocol}[^,]+),"""
+    """ClientPublicIP":\s{0,100}"({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"""",
+    """ServerIP":\s{0,100}"({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"""",
+    """ConnectorPort":\s{0,100}({src_port}\d{1,100}),""",
+    """ServerPort":\s{0,100}({dest_port}\d{1,100}),""",
+    """Application":\s{0,100}"\s{0,100}({app}[^"]+)"""",
+    """AppGroup":\s{0,100}"\s{0,100}({activity_type}[^"]+)""""
+    """ZENTotalBytesRxConnector":\s{0,100}({bytes_in}\d{1,100}),""",
+    """ZENTotalBytesTxConnector":\s{0,100}({bytes_out}\d{1,100}),""",
+    """Policy":\s{0,100}"\s{0,100}({policy}[^"]+)"""",
+    """ConnectionStatus":\s{0,100}"({outcome}[^"]+)""""
   ]
 }
 ```

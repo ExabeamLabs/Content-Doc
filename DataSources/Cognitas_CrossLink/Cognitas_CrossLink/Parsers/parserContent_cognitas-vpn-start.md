@@ -8,9 +8,9 @@ Name = cognitas-vpn-start
     DataType = "vpn-start"
     TimeFormat = "epoch"
     Conditions = [ """CEF:""","""|Cognitas|CrossLink|""","""|Authentication Succeeded|"""]
-    Fields = [ """\srt=({time}\d+)""",
+    Fields = [ """\srt=({time}\d{1,100})""",
       """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-      """\ssuser=({user}.+?)\s+\w+=""",
+      """\ssuser=({user}.+?)\s{1,100}\w+=""",
       """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sdvchost=({host}[^\s]+)"""

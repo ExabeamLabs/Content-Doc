@@ -9,11 +9,11 @@ Name = q-quest-directory-access
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ """LEEF:""", """|Quest Software""" , """|Change Auditor|""" , """action=""" ]
   Fields = [
-    """devTime=({time}\w+\s+\d+\s+\d\d\d\d\s+\d\d:\d\d:\d\d)""",
+    """devTime=({time}\w+\s{1,100}\d{1,100}\s{1,100}\d\d\d\d\s{1,100}\d\d:\d\d:\d\d)""",
     """ipAddress=({host_ip}[A-Fa-f:\d.]+)""",
     """computer=({host}[\w\-.]+)""",
     """dst=({dest_ip}[A-Fa-f:\d.]+)""",
-    """dstPort=({dest_port}\d+)""",
+    """dstPort=({dest_port}\d{1,100})""",
     """event=({event_name}[^\^=]+?)\^""",
     """action=({activity_type}[^\^=]+?)\^""",
     """result=({outcome}[^\^=]+?)\^""",

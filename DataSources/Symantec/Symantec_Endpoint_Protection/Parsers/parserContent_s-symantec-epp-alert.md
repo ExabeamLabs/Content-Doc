@@ -9,16 +9,16 @@ Name = s-symantec-epp-alert
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = [ """スキャンが開始されました""", """,スキャン ID:""" ]
     Fields = [
-      """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+      """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
       """({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d),スキャン ID:""",
-      """スキャン ID:\s*({alert_id}\d+)""",
-      """ユーザー 1:\s*(SYSTEM|({user}[^\s,]+))""",
-      """IP アドレス:\s*({src_ip}[A-Fa-f:\d.]+)""",
-      """コンピュータ:\s*({src_host}[\w\-.]+)""",
+      """スキャン ID:\s{0,100}({alert_id}\d{1,100})""",
+      """ユーザー 1:\s{0,100}(SYSTEM|({user}[^\s,]+))""",
+      """IP アドレス:\s{0,100}({src_ip}[A-Fa-f:\d.]+)""",
+      """コンピュータ:\s{0,100}({src_host}[\w\-.]+)""",
       """,({alert_name}[^,]+),スキャン 完了:""",
-      """グループ:\s*({malware_url}[^,]+)""",
-      """脅威:\s*({threat_num}[^,]+)""",
-      """感染:\s*({infection_num}[^,]+)""",
+      """グループ:\s{0,100}({malware_url}[^,]+)""",
+      """脅威:\s{0,100}({threat_num}[^,]+)""",
+      """感染:\s{0,100}({infection_num}[^,]+)""",
     ]
     DupFields = [ "alert_name->alert_type" ]
   }

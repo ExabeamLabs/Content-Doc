@@ -9,21 +9,21 @@ Name = cef-mcafee-vse-alert
     TimeFormat = "epoch"
     Conditions = [ """|McAfee|VirusScan Enterprise|""", " cat=" ]
     Fields = [
-      """\srt=({time}\d+)""",
+      """\srt=({time}\d{1,100})""",
       """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sdvchost=({host}[^\s]+)""",
       """\sdhost=({src_host}[^\s]+)""",
       """\sdst=(?:0.0.0.0|({src_ip}[\da-fA-F.:]+))""",
-      """\sfname=({malware_url}.+?\\+({malware_file_name}[^\\]+?))\s+(\w+=|$)""",
-      """\smsg=({additional_info}.+?)\s+(\w+=|$)""",
-      """\sduser=(({domain}[^=\\]+)\\+)?({user}.+?)\s+(\w+=|$)""",
+      """\sfname=({malware_url}.+?\\+({malware_file_name}[^\\]+?))\s{1,100}(\w+=|$)""",
+      """\smsg=({additional_info}.+?)\s{1,100}(\w+=|$)""",
+      """\sduser=(({domain}[^=\\]+)\\+)?({user}.+?)\s{1,100}(\w+=|$)""",
       """\sdntdom=(?:\(none\)|({domain}[^\s]+))""",
-      """\sexternalId=({alert_id}\d+)""",
-      """\|McAfee\|VirusScan.+?\|.+?\|.+?\|({alert_name}[^.|]+)""",
-      """\scs1=(?:none|({alert_name}.+?))\s+(\w+=|$)""",
-      """\scat=({threat_category}.+?)\s+(\w+=|$)""",
-      """\|McAfee\|VirusScan.+?\|.+?\|.+?\|({alert_type}[^.|]+)""",
-      """\|McAfee\|VirusScan.+?\|.+?\|.+?\|.+?\|({alert_severity}[^\|]+)""",
+      """\sexternalId=({alert_id}\d{1,100})""",
+      """\|McAfee\|VirusScan[^|]+?\|[^|]+?\|[^|]+?\|({alert_name}[^.|]+)""",
+      """\scs1=(?:none|({alert_name}.+?))\s{1,100}(\w+=|$)""",
+      """\scat=({threat_category}.+?)\s{1,100}(\w+=|$)""",
+      """\|McAfee\|VirusScan[^|]+?\|[^|]+?\|[^|]+?\|({alert_type}[^.|]+)""",
+      """\|McAfee\|VirusScan[^|]+?\|[^|]+?\|[^|]+?\|[^|]+?\|({alert_severity}[^\|]+)""",
       """\ssproc=({process_name}.*?)\s\w+=""",
     ]
     SOAR {

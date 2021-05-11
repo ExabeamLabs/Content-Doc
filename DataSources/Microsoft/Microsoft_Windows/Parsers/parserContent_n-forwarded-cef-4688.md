@@ -11,13 +11,13 @@ Name = n-forwarded-cef-4688
     Conditions = [ "|McAfee|ESM", "43-26304688"]
     Fields = [ 
       """({event_name}A new process has been created)""",
-      """\|McAfee\|.+?\|43-2630({event_code}\d+)(0|1)\|""",
-      """\srt=({time}\d+)""",
+      """\|McAfee\|[^|]+?\|[^|]+?\|43-2630({event_code}\d{1,100})(0|1)\|""",
+      """\srt=({time}\d{1,100})""",
       """shost=({host}[^\s]+)""",
       """sntdom=({domain}[^\s]+)""",
-      """suser=({user}.+?)\s+\w+=""",      
-      """nitroProcess_Name=({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?))\s+\w+=""",
-      """nitroProcess_Name=({path}.+?)\s+\w+=""",
+      """suser=({user}.+?)\s{1,100}\w+=""",      
+      """nitroProcess_Name=({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?))\s{1,100}\w+=""",
+      """nitroProcess_Name=({path}.+?)\s{1,100}\w+=""",
       """nitroSource_Logon_ID=({logon_id}.+?)(\s|0\|)"""
     ]
     DupFields=[ "host->dest_host","directory->process_directory" ]

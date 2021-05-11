@@ -23,7 +23,7 @@ Name = s-securesphere-db-alert
     """\salert=({alert_name}[^,]+)""",
     """,\sPolicy=({alert_type}[^,]+)""",
     """\ssev=({alert_severity}[^,]+)"""
-    """\sDescription=({additional_info}.+?)\s+$"""
+    """\sDescription=({additional_info}.+?)\s{1,100}$"""
   ]
   DupFields = [ "db_user->account" ]
 }

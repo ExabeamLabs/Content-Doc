@@ -18,14 +18,14 @@ Name = s-xml-4698
     """<Data Name(\\)?='SubjectLogonId'>(?=\w)({logon_id}[^<]+)</Data>""",
     """<Data Name(\\)?='TaskName'>(?=[\\\w])({task_name}[^<]+)</Data>""",
     """<UserId>(?=\w)(({account_domain}[^\\<]*)\\)?({account_name}[^<]+)</UserId>""",
-    """<Settings>\s*({additional_info}.+?)\s*</Settings>""",
-    """<Triggers>\s*({triggers}.+?)\s*</Triggers>""",
+    """<Settings>\s{0,100}({additional_info}.+?)\s{0,100}</Settings>""",
+    """<Triggers>\s{0,100}({triggers}.+?)\s{0,100}</Triggers>""",
     """<RunLevel>(?=\w)({run_level}[^<]+)</RunLevel>""",
     """<LogonType>(?=\w)({logon_type}[^<]+)</LogonType>""",
     """<RegistrationInfo>.+?<Author>(?=\w)({author}[^<]+)</Author>""",
     """<RegistrationInfo>.+?<Description>(?=\w)({description}[^<]+)</Description>""",
     """<Command>"?({process}({directory}(?:(\w+:)?[^:<"]+)?[\\\/])?({process_name}[^<"]+))""",
-    """<Arguments>("+)?({arg}[^<"]+)"""
+    """<Arguments>("{1,20})?({arg}[^<"]+)"""
   ]
   DupFields = [ "host->dest_host", "directory->process_directory" ]
 }

@@ -5,10 +5,10 @@ Name = symantec-account-switch-failed
   DataType = "account-switch"
   Conditions = [ """SVA_IP_ADDRESS: """, """ USER_NAME:""", """failed SU to """ ]
   Fields = ${SymantecParserTemplates.symantec-critical-sys-protection.Fields} [
-    """To Username:\s*({account}[^"\s]+)""",
+    """To Username:\s{0,100}({account}[^"\s]+)""",
     """({outcome}(F|f)ailed)""",
-    """Event source:\s*({process_name}[^"]+?)\s*From""",
-    """({event_name}failed SU to [^"]+?)\s*Event"""
+    """Event source:\s{0,100}({process_name}[^"]+?)\s{0,100}From""",
+    """({event_name}failed SU to [^"]+?)\s{0,100}Event"""
   ]
 }
 symantec-critical-sys-protection = {
@@ -17,18 +17,18 @@ symantec-critical-sys-protection = {
   Lms = Splunk
   TimeFormat = "yyyy-MM-dd HH:mm:ss.S"
   Fields = [
-    """\sHOSTNAME\s*:\s*"+\s*({host}[^\s"]+)""",
-    """\sEVENT_DT\s*:\s*"+({time}[^"]+)""",
-    """\sUSER_NAME\s*:\s*"+({user}[^"\s]+)""",
-    """\sRULE_NAME\s*:\s*"+({rule}[^"\s]+)""",
-    """\sPOLICY_NAME\s*:\s*"+\s*({policy}[^"]+?)\s*"+?\s[^:]+:"""
-    """\sPROCESS_PATH\s*:\s*"+({process_name}[^"\s]+)""",
-    """SESSION_ID\s*:\s*"+({session_id}\d+)""",
-    """Type of login\s*:\s*"*({logon_type}[^"]+)""",
-    """Parent Name\s*:\s*({parent_process}[^\s"]+)""",
-    """\sEVENT_ID:\s*"+({event_code}\d+)""",
-    """\sHOSTADDR:\s*"+({dest_ip}[^"\s]+)""",
-    """\sSVA_IP_ADDRESS:\s*"+({src_ip}[^"\s]+)""",
+    """\sHOSTNAME\s{0,100}:\s{0,100}"{1,20}\s{0,100}({host}[^\s"]+)""",
+    """\sEVENT_DT\s{0,100}:\s{0,100}"{1,20}({time}[^"]+)""",
+    """\sUSER_NAME\s{0,100}:\s{0,100}"{1,20}({user}[^"\s]+)""",
+    """\sRULE_NAME\s{0,100}:\s{0,100}"{1,20}({rule}[^"\s]+)""",
+    """\sPOLICY_NAME\s{0,100}:\s{0,100}"{1,20}\s{0,100}({policy}[^"]+?)\s{0,100}"{1,20}?\s[^:]+:"""
+    """\sPROCESS_PATH\s{0,100}:\s{0,100}"{1,20}({process_name}[^"\s]+)""",
+    """SESSION_ID\s{0,100}:\s{0,100}"{1,20}({session_id}\d{1,100})""",
+    """Type of login\s{0,100}:\s{0,100}"{0,20}({logon_type}[^"]+)""",
+    """Parent Name\s{0,100}:\s{0,100}({parent_process}[^\s"]+)""",
+    """\sEVENT_ID:\s{0,100}"{1,20}({event_code}\d{1,100})""",
+    """\sHOSTADDR:\s{0,100}"{1,20}({dest_ip}[^"\s]+)""",
+    """\sSVA_IP_ADDRESS:\s{0,100}"{1,20}({src_ip}[^"\s]+)""",
   ]
 
 ```

@@ -17,11 +17,11 @@ Name = azure-security-alert-2
     """"AlertType":"({alert_type}[^"]+)""",
     """"TimeGenerated":"({time}[^"]+)""", 
     """"CompromisedEntity":"({src_host}[^"]+)""",
-    """"Address":\s*"({src_ip}[a-fA-F:\d.]+)""",
-    """"User agent":\s*"({user_agent}[^"]+)""",
-    """"Azure AD user":\s*"(N\/A\s+\(Azure AD authentication was not used\)|({user}[^"]+))""",
-    """"CountryName":\s*"({location_country}[^"]+)""",
-    """"City":\s*"({location_city}[^"]+)""",
+    """"Address":\s{0,100}"({src_ip}[a-fA-F:\d.]+)""",
+    """"User agent":\s{0,100}"({user_agent}[^"]+)""",
+    """"Azure AD user":\s{0,100}"(N\/A\s{1,100}\(Azure AD authentication was not used\)|({user}[^"]+))""",
+    """"CountryName":\s{0,100}"({location_country}[^"]+)""",
+    """"City":\s{0,100}"({location_city}[^"]+)""",
     """"AlertLink":"({malware_url}[^"]+)"""
     ]
 }

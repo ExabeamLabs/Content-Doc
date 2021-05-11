@@ -10,14 +10,14 @@ Name = zoom-meeting-started
   Conditions = [ """|Skyformation|""", """"event":"meeting.started"""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """\WdestinationServiceName=({app}.+?)(\s+\w+=|\s*$)""",
-    """"start_time"\s*:\s*({time}\d+-\d+-\d+T\d+:\d+:\d+Z)"""",
-    """"event"\s*:\s*"meeting.({activity}started)"""",
-    """"id"\s*:\s*"({meeting_number}\d+)"""",
-    """"topic"\s*:\s*"({meeting_topic}[^"]+)"""",
-    """"type"\s*:\s*({meeting_type}\d)""",
-    """"host_id"\s*:\s*"({meeting_host_id}[^"]+)"""",
-    """"timezone"\s*:\s*"({meeting_timezone}[^"]+)""""
+    """\WdestinationServiceName=({app}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """"start_time"\s{0,100}:\s{0,100}({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}Z)"""",
+    """"event"\s{0,100}:\s{0,100}"meeting.({activity}started)"""",
+    """"id"\s{0,100}:\s{0,100}"({meeting_number}\d{1,100})"""",
+    """"topic"\s{0,100}:\s{0,100}"({meeting_topic}[^"]+)"""",
+    """"type"\s{0,100}:\s{0,100}({meeting_type}\d)""",
+    """"host_id"\s{0,100}:\s{0,100}"({meeting_host_id}[^"]+)"""",
+    """"timezone"\s{0,100}:\s{0,100}"({meeting_timezone}[^"]+)""""
   ]
 }
 ```

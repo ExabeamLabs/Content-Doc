@@ -10,14 +10,14 @@ Name = cef-microsoft-database-failed-login
   TimeFormat = "MMM dd yyyy HH:mm:ss z"
   Conditions = [ """CEF:""", """|LOGbinder|SQL|""", """|24003|Login failed|""" ]
   Fields = [
-    """({host}[\w.\-]+)\s+CEF:""",
+    """({host}[\w.\-]+)\s{1,100}CEF:""",
     """\Wrt=({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d \w+)""",
-    """\Wsuser=(n/a|(({domain}[^=\\\/]+)[\\\/]+)?({user}[^=\\\/]+?))(\s+\w+=|\s*$)""",
-    """\WdeviceExternalId=(|({dest_host}.+?))(\s+\w+=|\s*$)""",
+    """\Wsuser=(n/a|(({domain}[^=\\\/]+)[\\\/]+)?({user}[^=\\\/]+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\WdeviceExternalId=(|({dest_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wcs1=({reason}[^;\.]+)""",
-    """Reason:\s*({reason}[^;\.]+)""",
+    """Reason:\s{0,100}({reason}[^;\.]+)""",
     """<address>({src_ip}[a-fA-F\d.:]+)</address>""",
-    """CLIENT:\s*({src_ip}[a-fA-F\d.:]+)""",
+    """CLIENT:\s{0,100}({src_ip}[a-fA-F\d.:]+)""",
   ]
 }
 ```

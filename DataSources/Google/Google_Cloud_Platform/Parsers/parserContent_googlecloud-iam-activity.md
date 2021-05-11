@@ -9,9 +9,9 @@ Name = googlecloud-iam-activity
   TimeFormat = """yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"""
   Conditions = [ """googleapis.com""",       """"serviceName":"iam"""    ]
   Fields = [
-     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-     """"timestamp":({time}\d+)""",
-     """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+     """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+     """"timestamp":({time}\d{1,100})""",
+     """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
      """"callerIp":"({src_ip}[^"]+)""",
      """"({service}iam.googleapis.com)""",
      """"methodName":"({activity}[^"]+)""",
@@ -19,10 +19,5 @@ Name = googlecloud-iam-activity
      """"callerSuppliedUserAgent":"({user_agent}[^"]+)""",
      """"resource".+?location":"({region}[^"]+)""",
      """policyDelta.+?"role":"roles\/({role}[^"\\\/]+)""",
-     """status.+?"code":\d+,"message":"({failure_reason}[^"]+)""",
-     """"logName":".*\/cloudaudit.googleapis.com\/({log_type}[^"]+)""",
-     """"resource"[^=]*?project_id":"({account}[^"]+)""",
-     """"resource"[^=]*?"type":"({resource_type}[^"]+)"""
-  ]
-}
+     """status.+?"code":\d{1,100}
 ```

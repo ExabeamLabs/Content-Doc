@@ -13,7 +13,7 @@ Name = s-4740-2
     """({event_code}4740)""",
     """\sComputerName=({host}[^\s]+)""",
     """Locked Out:Security ID=({user_sid}[^\s]+)""",
-    """\sDetectTime=({time}\d\d\d\d-\d+-\d+ \d+:\d+:\d+)\s""",
+    """\sDetectTime=({time}\d\d\d\d-\d{1,100}-\d{1,100} \d{1,100}:\d{1,100}:\d{1,100})\s""",
     """\sUser=(null|({user}[^\s]+))""",
     """\sEventType=({outcome}[^\s]+)""",
     """Caller Computer Name=({src_host}[^\s]+)""",

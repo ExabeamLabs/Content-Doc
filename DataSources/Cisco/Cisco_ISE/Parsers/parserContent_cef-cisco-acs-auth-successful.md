@@ -9,7 +9,7 @@ Name = cef-cisco-acs-auth-successful
   TimeFormat = "epoch"
   Conditions = [ """|CISCO|Cisco Secure ACS|""", """|Authentication succeeded|""" , """ad.Action=Login""" ]
   Fields = [
-      """\srt=({time}\d+)""",
+      """\srt=({time}\d{1,100})""",
       """\sdvc=({host}[^\s]+)""",
       """\sdvchost=({host}[^\s]+)""",
       """\sshost=(?:|({src_host}.+?))\s\w+=""",

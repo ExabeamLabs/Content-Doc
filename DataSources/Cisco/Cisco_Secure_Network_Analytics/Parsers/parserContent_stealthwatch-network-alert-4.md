@@ -13,7 +13,7 @@ Name = stealthwatch-network-alert-4
     """start=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
     """src=({src_ip}[a-fA-F0-9.:]+)""",
     """dst=(0.0.0.0|({dest_ip}[a-fA-F0-9.:]+))""",
-    """msg=({additional_info}[^=]+)\s+""",
+    """msg=({additional_info}[^=]+)\s{1,100}""",
     """externalId=({alert_id}[^\s]+)""",
     """dvc=({host_ip}[a-fA-F0-9.:]+)""",
     """CEF:([^\|]+\|){4}({event_code}[^\|]+)""",

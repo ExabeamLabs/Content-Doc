@@ -10,16 +10,16 @@ Name = q-cisco-dns-response
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """"MostGranularIdentity"""", """"Identities"""", """"QueryType"""", """"ResponseCode"""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """"Timestamp"*:"*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """"Identities"*:"*({identities}[^"]+)""",
-    """"InternalIp"*:"*({dest_ip}[^"]+)""",
-    """"ExternalIp"*:"*({src_ip}[^"]+)""",
-    """"Action"*:"*({outcome}[^"]+)""",
-    """"QueryType"*:"*({query_type}[^"]+)""",
-    """"ResponseCode"*:"*({dns_response_code}[^"]+)""",
-    """"Domain"*:"*({query}[^"]+)""",
-    """"Categories"*:"*({category}[^"]+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """"Timestamp"{0,20}:"{0,20}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+    """"Identities"{0,20}:"{0,20}({identities}[^"]+)""",
+    """"InternalIp"{0,20}:"{0,20}({dest_ip}[^"]+)""",
+    """"ExternalIp"{0,20}:"{0,20}({src_ip}[^"]+)""",
+    """"Action"{0,20}:"{0,20}({outcome}[^"]+)""",
+    """"QueryType"{0,20}:"{0,20}({query_type}[^"]+)""",
+    """"ResponseCode"{0,20}:"{0,20}({dns_response_code}[^"]+)""",
+    """"Domain"{0,20}:"{0,20}({query}[^"]+)""",
+    """"Categories"{0,20}:"{0,20}({category}[^"]+)""",
   ]
 }
 ```

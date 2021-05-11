@@ -9,9 +9,9 @@ Name = secure-system-login
  DataType = "authentication-successful"
  Conditions = [ """ELM""", """SecureTrack:"""]
  Fields =[
-   """timestamp:({time}\d+.\d+.\d+ \d+:\d+:\d+)""",
-   """({host}[^\s]+)\s+SecureTrack:""",
-   """Login was done by\s+({user}[^,\s].+?)\.,""",
+   """timestamp:({time}\d{1,100}.\d{1,100}.\d{1,100} \d{1,100}:\d{1,100}:\d{1,100})""",
+   """({host}[^\s]+)\s{1,100}SecureTrack:""",
+   """Login was done by\s{1,100}({user}[^,\s].+?)\.,""",
    ]  
 }
 ```

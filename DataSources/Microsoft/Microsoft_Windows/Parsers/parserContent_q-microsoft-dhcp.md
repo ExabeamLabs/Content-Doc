@@ -9,8 +9,8 @@ Name = q-microsoft-dhcp
   TimeFormat = "epoch"
   Conditions = [ "WindowsDHCP", "Description=Assign" ]
   Fields = [
-    """exabeam_host=(.+?@\s*)?({host}[^\s]+)""",
-    """exabeam_endTime=({time}\d+)""",
+    """exabeam_host=(.+?@\s{0,100})?({host}[^\s]+)""",
+    """exabeam_endTime=({time}\d{1,100})""",
     """IP Address=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """Host Name=({dest_host}[^\s]+)"""
   ]

@@ -5,16 +5,16 @@ Name = checkpoint-network-decrypt
   DataType = "network-alert"
   Conditions = [ """CheckPoint""", """product:"""", """action:"accept decrypt"""" ]
   Fields = ${CheckpointParserTemplates.checkpoint-auth.Fields}[
-    """event_name:"+({alert_name}[^"]+)""",
-    """cu_rule_category:"+({alert_type}[^"]+)""",
-    """proto:"+({protocol}[^"]+)""",
-    """cu_rule_id:"+({rule_id}[^"]+)""",
-    """service:"+({service}\d+)"""
-    """cu_action:"+({action}[^"]+)""",
-    """cu_detected_by:"+({src_ip}[^"]+)""",
-    """ src:"+({src_ip}[A-Fa-f:\d.]+)""",
-    """dst:"+({dest_ip}[^"]+)""",
-    """\Wproduct:"({product_name}[^"]+)\s*""",
+    """event_name:"{1,20}({alert_name}[^"]+)""",
+    """cu_rule_category:"{1,20}({alert_type}[^"]+)""",
+    """proto:"{1,20}({protocol}[^"]+)""",
+    """cu_rule_id:"{1,20}({rule_id}[^"]+)""",
+    """service:"{1,20}({service}\d{1,100})"""
+    """cu_action:"{1,20}({action}[^"]+)""",
+    """cu_detected_by:"{1,20}({src_ip}[^"]+)""",
+    """ src:"{1,20}({src_ip}[A-Fa-f:\d.]+)""",
+    """dst:"{1,20}({dest_ip}[^"]+)""",
+    """\Wproduct:"({product_name}[^"]+)\s{0,100}""",
   ]
 }
 checkpoint-auth = {
@@ -23,9 +23,9 @@ checkpoint-auth = {
   Lms = Direct
   TimeFormat = "epoch_sec"
   Fields = [
-    """\Wtime:"({time}\d+)""",
+    """\Wtime:"({time}\d{1,100})""",
     """\W({host}[\w\-.]+) CheckPoint""",
-    """\Wuser:"({user_lastname}[^,]+),\s*({user_firstname}[\w\s]+\S)\s*\(({user}.+?)\)""",
+    """\Wuser:"({user_lastname}[^,]+),\s{0,100}({user_firstname}[\w\s]+\S)\s{0,100}\(({user}.+?)\)""",
     """\Wuser:"({user_fullname}[^,:\("]+)\s\(({user}[^\)]+)\)""",
     """\Wsrc:"({src_ip}[A-Fa-f:\d.]+)""",
     """\Wendpoint_ip:"({dest_ip}[A-Fa-f:\d.]+)""",

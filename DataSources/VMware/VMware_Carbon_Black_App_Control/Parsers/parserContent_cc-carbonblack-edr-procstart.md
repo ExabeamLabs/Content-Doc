@@ -6,7 +6,7 @@ Name = cc-carbonblack-edr-procstart
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSSSSSS"
   Conditions = [ """CEF:""", """|Skyformation|""", """requestClientApplication=""" , """"type":"endpoint.event.procstart"""", """destinationServiceName=""", """"process_username":"""" ]
   Fields = ${CarbonBlackParserTemplates.carbonblack-edr.Fields} [
-    """"device_timestamp"+:"+({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{7})""",
+    """"device_timestamp"{1,20}:"{1,20}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{7})""",
     """"parent_path":"({parent_process}({parent_directory}[^"]+(\\|\/)+)?({parent_process_name}[^"]+))"""",
   ]
   DupFields = ["activity_type->event_name"]

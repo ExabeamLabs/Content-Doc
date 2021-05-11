@@ -9,10 +9,6 @@ Name = palo-alto-app-login-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """ Aperture """, """,admin_audit,""","""sign_in""" ]
   Fields = [
-    """({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+Z)\s({host}[^\s]+)""",
-    """admin_audit,"*({user_email}[^@]+[^,"]+)"*,"""
-    """admin_audit,"*([^,]*,){2}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"*,""",
-    """admin_audit,"*([^,]*,){7}"*({action}[^,"]+)"*,"""
-  ]
-}
+    """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}Z)\s({host}[^\s]+)""",
+    """admin_audit,"{0,20}({user_email}[^@]+[^,"]+)"{0,20}
 ```

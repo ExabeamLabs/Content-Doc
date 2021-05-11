@@ -9,9 +9,9 @@ Name = o365-failed-sign-in-alert
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [""""failureReason":""", """flexString1=sign-in""", """destinationServiceName=Office 365""", """|security-threat-detected|"""]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[\w\-.]+)""",
     """"createdDateTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """requestClientApplication=({app}.+?)\s*(\w+=|$)""",
+    """requestClientApplication=({app}.+?)\s{0,100}(\w+=|$)""",
     """"userPrincipalName":"({user_email}[^@"\s]+?@[^"\s]+?)""""   
     """"id":"({alert_id}[^"]+?)""""
     """"failureReason":"({failure_reason}[^"]+?)""""

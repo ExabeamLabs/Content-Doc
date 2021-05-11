@@ -13,8 +13,8 @@ Name = swivel-authentication-failed
     """user[:\s]*({user}[^\s.,]+)""",
     """({app}PINsafe)""",
     """\d\d:\d\d:\d\d\s({host}[a-fA-F\d.:]+)""",
-    """INFO\s*(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).+?({outcome}failed)[^"]+)""",
-    """error:\s({failure_reason}.+?)\s*$""",
+    """INFO\s{0,100}(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).+?({outcome}failed)[^"]+)""",
+    """error:\s({failure_reason}.+?)\s{0,100}$""",
 	]
 }
 ```

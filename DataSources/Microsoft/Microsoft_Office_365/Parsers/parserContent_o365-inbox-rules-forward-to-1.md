@@ -12,12 +12,12 @@ Name = o365-inbox-rules-forward-to-1
     """"CreationTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[^\s]+)""",
     """"ResultStatus":"({outcome}[^"]+)"""",
-    """"ClientIP":"(\[)?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(\])?(:({src_port}\d+))?""",
+    """"ClientIP":"(\[)?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(\])?(:({src_port}\d{1,100}))?""",
     """UserId":"({user_email}[^"\\]+@({user_domain}[^"]+))""",
     """"ActionType":"({activity}[^"]+)"""",
-    """destinationServiceName=({app}[^=]+?)\s+\w+=""",
+    """destinationServiceName=({app}[^=]+?)\s{1,100}\w+=""",
     """"SubjectOrBodyContainsWords":"({filter_key_words}[^"]+)""",
-    """flexString1=({event_name}[^=]+?)\s+\w+=""",
+    """flexString1=({event_name}[^=]+?)\s{1,100}\w+=""",
     """Forward.+?Recipients\\?":\[?\\?"({target}[^\@]+@({target_domain}[^",;\\]+))"""
   ]
   DupFields = ["user_domain->email_domain"]

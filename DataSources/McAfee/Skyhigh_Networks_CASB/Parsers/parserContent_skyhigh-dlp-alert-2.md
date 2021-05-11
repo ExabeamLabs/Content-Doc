@@ -9,7 +9,7 @@ Name = skyhigh-dlp-alert-2
   TimeFormat = "MMM dd yyyy HH:mm:ss.SSS"
   Conditions = [ """ activityName=""", """MimeType,""", """,userAction=""" ]
   Fields = [
-    """,updatedOn="({time}\w+ \d+ \d\d\d\d \d\d:\d\d:\d\d\.\d+)""",
+    """,updatedOn="({time}\w+ \d{1,100} \d\d\d\d \d\d:\d\d:\d\d\.\d{1,100})""",
     """\d\d:\d\d:\d\d ({host}[^\s]+) activityName=""",
     """,riskSeverity=({alert_severity}[^,]+)""",
     """,activityName=({alert_name}[^,]+)""",

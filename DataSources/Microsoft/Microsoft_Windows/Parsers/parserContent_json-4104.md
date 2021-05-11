@@ -11,12 +11,12 @@ Name = json-4104
   Fields = [
     """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""",
     """"Hostname":"({host}[^"]+)"""",
-    """"EventID":({event_code}\d+)""",
-    """"ProcessID":({pid}\d+)""",
+    """"EventID":({event_code}\d{1,100})""",
+    """"ProcessID":({pid}\d{1,100})""",
     """"Domain":"({domain}[^"]+)"""",
     """"AccountName":"({user}[^"]+)"""",
     """"UserID":"({user_sid}[^"]+)"""",
-    """"Message":"({event_name}[^\(:]+?)\s*\(""",
+    """"Message":"({event_name}[^\(:]+?)\s{0,100}\(""",
     """"ScriptBlockId":"({scriptblock_id}[^"]+)"""",
     """({process_name}PowerShell)"""
   ]

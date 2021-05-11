@@ -10,7 +10,7 @@ Name = json-4723
   Conditions = [ """"TargetAccount":"""", """"EventID":"4723"""", """An attempt was made to change""" ]
   Fields = [
     """({event_name}An attempt was made to change an account's password)""",
-    """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+    """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """"Computer":"({host}[\w\-.]+)""",
     """"Account":"(({domain}[^\\\s"]+)\\+)?({user}[^\\\s"]+)""",
     """"TargetAccount":"(({target_domain}[^\\\s"]+)\\+)?({target_user}[^\\\s"]+)""",

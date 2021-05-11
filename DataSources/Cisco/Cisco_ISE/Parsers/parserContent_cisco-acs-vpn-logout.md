@@ -9,18 +9,18 @@ Name = cisco-acs-vpn-logout
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ "CSCOacs_RADIUS_Accounting", "RADIUS Accounting stop request,", "Acct-Status-Type=Stop", "NAS-Port-Type=Virtual" ]
   Fields = [
-    """\d+\s+({time}\d\d\d\d\-\d\d\-\d\d \d+:\d+:\d+)""",
-    """CSCOacs_RADIUS_Accounting\s+(\d+\s+){3}\s+({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+    """\d{1,100}\s{1,100}({time}\d\d\d\d\-\d\d\-\d\d \d{1,100}:\d{1,100}:\d{1,100})""",
+    """CSCOacs_RADIUS_Accounting\s{1,100}(\d{1,100}\s{1,100}){3}\s{1,100}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[^\s]+)""",
-    """({host}[^\s]+)\s+CSCOacs_RADIUS_Accounting""",
-    """,\s*User-Name=(({domain}[^\s\\\/]+)[\\\/]+)?(?:(\w{2}\-){5}\w{2}|({user}[^,]+))""",
+    """({host}[^\s]+)\s{1,100}CSCOacs_RADIUS_Accounting""",
+    """,\s{0,100}User-Name=(({domain}[^\s\\\/]+)[\\\/]+)?(?:(\w{2}\-){5}\w{2}|({user}[^,]+))""",
     """Tunnel-Client-Endpoint=\(.+?\)\s({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """Framed-IP-Address=({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),"""
-    """\:\d\d\s+({dest_host}.+?)\sCSCOacs""",
-    """,\s*Device IP Address=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """Acct-Output-Octets=({bytes_recieved}\d+),""",
-    """Acct-Input-Octets=({bytes_sent}\d+),""",
-    """Acct-Session-Time=({session_duration}\d+),""",
+    """\:\d\d\s{1,100}({dest_host}.+?)\sCSCOacs""",
+    """,\s{0,100}Device IP Address=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """Acct-Output-Octets=({bytes_recieved}\d{1,100}),""",
+    """Acct-Input-Octets=({bytes_sent}\d{1,100}),""",
+    """Acct-Session-Time=({session_duration}\d{1,100}),""",
     """Acct-Terminate-Cause=({additional_info}.*?),\sNAS-Port""",
   ]
 }

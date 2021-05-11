@@ -10,10 +10,10 @@ Name = cisco-ftd-process-created-2
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ "-111010", "%FTD-" ]
   Fields = [
-    """({time}\w+ \d+ \d\d\d\d \d\d:\d\d:\d\d)\s+({host}[\w\-.]+)\s*:\s*%FTD""",
-    """%FTD\-({priority}\d+)\-({event_code}\d+)""",
-    """User\s+'({user}[^']+)'""",
-    """({event_name}executed)\s+'({command_line}[^']+?)\s*'""",
+    """({time}\w+ \d{1,100} \d\d\d\d \d\d:\d\d:\d\d)\s{1,100}({host}[\w\-.]+)\s{0,100}:\s{0,100}%FTD""",
+    """%FTD\-({priority}\d{1,100})\-({event_code}\d{1,100})""",
+    """User\s{1,100}'({user}[^']+)'""",
+    """({event_name}executed)\s{1,100}'({command_line}[^']+?)\s{0,100}'""",
     """from IP (0.0.0.0|({src_ip}[A-Fa-f:\d.]+))"""
   ]
 }

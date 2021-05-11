@@ -10,7 +10,7 @@ Name = s-mcafee-dlp-alert-1
     Conditions = [ """, classification""", """, dlpAgentVersion=""", """, incidentId=""", """, policyName=""" ]
     Fields = [
       """exabeam_host=({host}[^\s]+)""",
-      """\Wclassification="({pci_hits}\S+)\s+\[({phi_hits}.+?)\](\s+\(({pii_hits}\d+)\))?""",
+      """\Wclassification="({pci_hits}\S+)\s{1,100}\[({phi_hits}.+?)\](\s{1,100}\(({pii_hits}\d{1,100})\))?""",
       """\WincidentId="({alert_id}[^"]+)""",
       """\WinsertionTime="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """\WruleNames="({alert_name}[^"]+)""",

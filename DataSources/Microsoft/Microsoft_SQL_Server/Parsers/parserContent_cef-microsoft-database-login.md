@@ -10,11 +10,11 @@ Name = cef-microsoft-database-login
   TimeFormat = "MMM dd yyyy HH:mm:ss z"
   Conditions = [ """CEF:""", """|LOGbinder|SQL|""", """|24001|Login succeeded""" ]
   Fields = [
-    """({host}[\w.\-]+)\s+CEF:""",
+    """({host}[\w.\-]+)\s{1,100}CEF:""",
     """\Wrt=({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d \w+)""",
-    """\W(d|s)user=(n/a|(({domain}[^=\\\/]+)[\\\/]+)?({user}[^=\\\/]+?))(\s+\w+=|\s*$)""",
-    """\WdeviceExternalId=(|({dest_host}.+?))(\s+\w+=|\s*$)""",
-    """network protocol:\s*({protocol}[^;]+)""",
+    """\W(d|s)user=(n/a|(({domain}[^=\\\/]+)[\\\/]+)?({user}[^=\\\/]+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\WdeviceExternalId=(|({dest_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """network protocol:\s{0,100}({protocol}[^;]+)""",
     """<address>({src_ip}[a-fA-F\d.:]+)</address>""",
   ]
 }

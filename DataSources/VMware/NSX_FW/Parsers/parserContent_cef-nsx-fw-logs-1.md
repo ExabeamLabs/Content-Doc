@@ -9,7 +9,7 @@ Name = cef-nsx-fw-logs-1
   TimeFormat = "epoch"
   Conditions = [ """CEF:""" ,"""|VMware|NSX FW|""", """destinationZoneURI="""]
   Fields = [
-    """rt=({time}\d+)"""
+    """rt=({time}\d{1,100})"""
     """NSX FW\|[^\|]*\|({action}[^\|]+)"""
     """categoryOutcome=\/({outcome}[^\s]*)""",
     """eventId=({event_code}[^\s]+)""",
@@ -17,9 +17,9 @@ Name = cef-nsx-fw-logs-1
     """cs1=({additional_info}[^\s]+)""",
     """cs2=({host}[^\s]+)""",
     """src=({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
-    """spt=({src_port}\d+)""",
+    """spt=({src_port}\d{1,100})""",
     """dst=({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
-    """dpt=({dest_port}\d+)"""
+    """dpt=({dest_port}\d{1,100})"""
     """categoryBehavior=\/({activity}[^\s]+)""",
     """dtz=({dest_country}[^\s]+)"""
   ]

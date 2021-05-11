@@ -11,13 +11,13 @@ Name = cisco-ise-tacacs-login
   Fields = [
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[^\s]+)""",
-    """\Wrt=({time}\d+)""",
+    """\Wrt=({time}\d{1,100})""",
     """ad.NetworkDeviceName=({dest_host}[^\s]+)""",
     """CmdAV\\=({command}.+?)\s\]""",
     """ad.User=({user}[^\s]+)""",
     """ad.Device_,IP_,Address=({src_ip}[A-Fa-f:\d.]+)""",
     """({app}TACACS)""",
-    """ad.Privilege-Level=({privileges}\d+)""",
+    """ad.Privilege-Level=({privileges}\d{1,100})""",
     """ad.Remote-Address=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
         ]
 }

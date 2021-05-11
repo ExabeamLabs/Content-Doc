@@ -9,20 +9,20 @@ Name = json-azure-ad-security-alert-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
   Conditions = [ """"category": "ImpossibleTravel"""", """"title": """, """"vendor": "Microsoft"""", """"provider": "IPC"""" ]
   Fields = [
-     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-     """"id":\s*"({alert_id}[^"]+)"""",
-     """"title":\s*"({alert_name}[^"]+)"""",
-     """"severity":\s*"({alert_severity}[^"]+)"""",
-     """"category":\s*"({alert_type}[^"]+)"""",
-     """"description":\s*"({additional_info}[^"]+)"""",
-     """"eventDateTime":\s*"({time}[^"]+)"""",
-     """"accountName":\s*"(({user_fullname}[^"\s]+\s[^"]+)|({user}[^"]+))"""",
-     """"logonIp":\s*"({src_ip}[a-fA-F:\d.]+)"""",
-     """"userPrincipalName":\s*"(-|({user_email}[^@"]+@[^".]+\.[^"]+)|(({user}[^\s"@]+)(@[^"]+)?))"""",
+     """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+     """"id":\s{0,100}"({alert_id}[^"]+)"""",
+     """"title":\s{0,100}"({alert_name}[^"]+)"""",
+     """"severity":\s{0,100}"({alert_severity}[^"]+)"""",
+     """"category":\s{0,100}"({alert_type}[^"]+)"""",
+     """"description":\s{0,100}"({additional_info}[^"]+)"""",
+     """"eventDateTime":\s{0,100}"({time}[^"]+)"""",
+     """"accountName":\s{0,100}"(({user_fullname}[^"\s]+\s[^"]+)|({user}[^"]+))"""",
+     """"logonIp":\s{0,100}"({src_ip}[a-fA-F:\d.]+)"""",
+     """"userPrincipalName":\s{0,100}"(-|({user_email}[^@"]+@[^".]+\.[^"]+)|(({user}[^\s"@]+)(@[^"]+)?))"""",
 
-     """"domainName"+:\s*"+({domain}[^"]+)"""",
-     """"logonLocation"+:\s*"+({location}[^"]+)""""
-     """"userPrincipalName":\s*"({user_upn}[^"]+?)"""",
+     """"domainName"{1,20}:\s{0,100}"{1,20}({domain}[^"]+)"""",
+     """"logonLocation"{1,20}:\s{0,100}"{1,20}({location}[^"]+)""""
+     """"userPrincipalName":\s{0,100}"({user_upn}[^"]+?)"""",
   ]
 }
 ```

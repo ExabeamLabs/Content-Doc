@@ -16,18 +16,18 @@ cef-bromium-file-operations = {
     IsHVF = true
     TimeFormat = "yyyy-MM-dd HH:mm:ss.SSSZ"
     Fields = [
-      """\Wrt=({time}\w+\s+\d+\s+\d+:\d+:\d+)""",
-      """\s({host}[\w\-.]+)\sCEF:\d+\|Bromium, Inc.\|""",
-      """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d-\d+)""",
-      """\Wshost=({src_host}.+?)\s*(\w+=|$)""",
-      """\Wsuser=({user}[^@=]+?)\s*(\w+=|$)""",
-      """\Wsuser=({user_email}[^@=]+?@[^@=]+?)\s*(\w+=|$)""",
+      """\Wrt=({time}\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100})""",
+      """\s({host}[\w\-.]+)\sCEF:\d{1,100}\|Bromium, Inc.\|""",
+      """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d-\d{1,100})""",
+      """\Wshost=({src_host}.+?)\s{0,100}(\w+=|$)""",
+      """\Wsuser=({user}[^@=]+?)\s{0,100}(\w+=|$)""",
+      """\Wsuser=({user_email}[^@=]+?@[^@=]+?)\s{0,100}(\w+=|$)""",
       """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
-      """\Wrequest=({file_uri}.+?)\s*(\w+=|$)""",
-      """\Wsproc=({process_name}.+?)\s*(\w+=|$)""",
-      """\Wfname=({file_path}.+?)\s*(\w+=|$)""",
-      """\Wfname=({file_parent}[^=]+?)[\\\/]+({file_name}[^\\\/=]+?)\s*(\w+=|$)""",
-      """\Wmsg=({additional_info}.+?)\s*(\w+=|$)"""
+      """\Wrequest=({file_uri}.+?)\s{0,100}(\w+=|$)""",
+      """\Wsproc=({process_name}.+?)\s{0,100}(\w+=|$)""",
+      """\Wfname=({file_path}.+?)\s{0,100}(\w+=|$)""",
+      """\Wfname=({file_parent}[^=]+?)[\\\/]+({file_name}[^\\\/=]+?)\s{0,100}(\w+=|$)""",
+      """\Wmsg=({additional_info}.+?)\s{0,100}(\w+=|$)"""
     ]
 
 ```

@@ -10,15 +10,15 @@ Name = cef-azure-app-login
   Conditions = [ """|Microsoft|Azure""", """UserLoggedIn""", """ suid=""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """\sact=({activity}.+?)\s+(\w+=|$)""",
-    """\srt=({time}\d+)""",
-    """\soutcome=({outcome}.+?)\s+(\w+=|$)""",
+    """\sact=({activity}.+?)\s{1,100}(\w+=|$)""",
+    """\srt=({time}\d{1,100})""",
+    """\soutcome=({outcome}.+?)\s{1,100}(\w+=|$)""",
     """\ssrc=({src_ip}[a-fA-F\d.:]+)""",
     """\Wdvc=({host}\S+)""",
     """\Wdvchost=({host}[\w\-.]+)""",
     """\Wduser=({user_email}[^@\s]+@({email_domain}[^\s@]+))""",
     """\Wsuser=({user_email}[^@\s]+@({email_domain}[^\s@]+))""",
-    """\ssuid=(Unknown|({user_email}[^@]+@({email_domain}.+?)))\s+(\w+=|$)""",
+    """\ssuid=(Unknown|({user_email}[^@]+@({email_domain}.+?)))\s{1,100}(\w+=|$)""",
     """CEF:([^\|]*\|){2}({app}[^\|]+)""",
   ]
 }

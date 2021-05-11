@@ -9,10 +9,10 @@ Name = avaya-switch-auth-successful-1
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = [ """Successful connection""", """ :#6""", """from IP address:""" ]
     Fields = [
-      """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+      """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """({event_name}Successful connection)""",
-      """IP address:\s+({src_ip}[a-fA-F\d.:]+)""",
+      """IP address:\s{1,100}({src_ip}[a-fA-F\d.:]+)""",
     ]
   }
 ```

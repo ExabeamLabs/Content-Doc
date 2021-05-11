@@ -7,7 +7,7 @@ Name = q-1102
   Conditions = [ """EventIDCode=1102""", "The audit log was cleared" ]
   Fields = ${WinParserTemplates.raw-1102.Fields} [
     """\sComputer=({host}[\w.\-]+)""",
-    """\sTimeGenerated=({time}\d+)\s+"""
+    """\sTimeGenerated=({time}\d{1,100})\s{1,100}"""
   ]
   DupFields = [ "host->dest_host" ]
 }
@@ -19,9 +19,9 @@ raw-1102 = {
     """exabeam_host=({host}[\w\-.]+)""",
     """({event_code}1102)""",
     """({event_name}The audit log was cleared)""",
-    """\s+Account Name:\s+({user}.+?)\s+Domain""",
-    """\s+Domain Name:\s+({domain}[^\s]+)""",
-    """\s+Logon ID:\s+({logon_id}[^\s]+)""",
+    """\s{1,100}Account Name:\s{1,100}({user}.+?)\s{1,100}Domain""",
+    """\s{1,100}Domain Name:\s{1,100}({domain}[^\s]+)""",
+    """\s{1,100}Logon ID:\s{1,100}({logon_id}[^\s]+)""",
   ]
 
 ```

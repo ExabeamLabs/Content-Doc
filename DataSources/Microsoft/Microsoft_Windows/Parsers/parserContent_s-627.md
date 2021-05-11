@@ -12,10 +12,10 @@ Name = s-627
       """({event_name}Change Password Attempt)""",
       """({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d (am|AM|pm|PM))""",
       """ComputerName=({host}[\w.\-]+)""",
-      """\sType=({outcome}.+?)\s+\w+=""",
-      """EventCode=({event_code}\d+)""",
-      """Target Account Name:\s+(?=\w)({target_user}.+?)\s+Target Domain:\s+(?=\w)({target_domain}.+?)\s+Target Account ID:\s\%\{({target_user_sid}[^}]+)\}""",
-      """Caller User Name:\s+({user}.+?)\s+Caller Domain:\s+({domain}.+?)\s+Caller Logon ID:\s+\([^,]+,({logon_id}[^\)]+)"""
+      """\sType=({outcome}.+?)\s{1,100}\w+=""",
+      """EventCode=({event_code}\d{1,100})""",
+      """Target Account Name:\s{1,100}(?=\w)({target_user}.+?)\s{1,100}Target Domain:\s{1,100}(?=\w)({target_domain}.+?)\s{1,100}Target Account ID:\s\%\{({target_user_sid}[^}]+)\}""",
+      """Caller User Name:\s{1,100}({user}.+?)\s{1,100}Caller Domain:\s{1,100}({domain}.+?)\s{1,100}Caller Logon ID:\s{1,100}\([^,]+,({logon_id}[^\)]+)"""
     ]
     DupFields = [ "host->dest_host" ]
   }

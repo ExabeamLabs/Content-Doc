@@ -10,21 +10,21 @@ Name = cef-Juniper-network-connection-close
     Conditions = [ """CEF:""", """|RT_FLOW_SESSION_CLOSE|""", """|Session closed|""" ]
     Fields = [
       """\sproto=({protocol}\w+)""",
-      """\sin=({bytes_in}\d+)""",
-      """\sout=({bytes_out}\d+)""",
-      """\srt=({time}\d+)""",
-      """\sshost=(|({src_host}.+?))(\s+\w+=|\s*$)""",
+      """\sin=({bytes_in}\d{1,100})""",
+      """\sout=({bytes_out}\d{1,100})""",
+      """\srt=({time}\d{1,100})""",
+      """\sshost=(|({src_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
       """\ssrc=({src_ip}[a-fA-F\d.:]+)""",
       """\ssourceTranslatedAddress=({src_translated_ip}[a-fA-f\d.:]+)""",
-      """\sspt=({src_port}\d+)""",
+      """\sspt=({src_port}\d{1,100})""",
       """\sdst=({dest_ip}[a-fA-F\d.:]+)""",
       """\sdestinationTranslatedAddress=({dest_translated_ip}[a-fA-F\d.:]+)""",
-      """\sdpt=({dest_port}\d+)""",
-      """\sduser=(|N\/A|({user}.+?))(\s+\w+=|\s*$)""",
-      """\sdvc=(|({host}.+?))(\s+\w+=|\s*$)""",
-      """\sdvchost=(|({host}.+?))(\s+\w+=|\s*$)""",
-      """\sreason=(|({failure_reason}.+?))(\s+\w+=|\s*$)""",
-      """\sdeviceInboundInterface=(|({dest_interface}.+?))(\s+\w+=|\s*$)""",
+      """\sdpt=({dest_port}\d{1,100})""",
+      """\sduser=(|N\/A|({user}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+      """\sdvc=(|({host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+      """\sdvchost=(|({host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+      """\sreason=(|({failure_reason}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+      """\sdeviceInboundInterface=(|({dest_interface}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     ]
   }
 ```

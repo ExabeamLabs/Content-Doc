@@ -8,15 +8,15 @@ Name = cef-4720
   DataType = "windows-account-created"
   TimeFormat = "epoch"
   Conditions = [ """|Microsoft|Microsoft Windows|""","""|Microsoft-Windows-Security-Auditing:4720""" ]
-  Fields = [ """exabeam_EventTime=({eventtime}\d+)""",
+  Fields = [ """exabeam_EventTime=({eventtime}\d{1,100})""",
     """({event_name}A user account was created)""",
     """({event_code}4720)""",
-    """\srt=({time}\d+)""",
+    """\srt=({time}\d{1,100})""",
     """\ssntdom=({domain}[^\s]+)""",
-    """\ssuser=({user}.+?)\s+\w+=""",
+    """\ssuser=({user}.+?)\s{1,100}\w+=""",
     """\ssuid=({logon_id}[^\s]+)""",
     """\sdntdom=({account_domain}[^\s]+)""",
-    """\sduser=({account_name}.+?)\s+\w+=""",
+    """\sduser=({account_name}.+?)\s{1,100}\w+=""",
     """\sdvchost=({host}[^\s]+)""",
     """ad.New_,Account:Security_,ID=({account_id}[^\s]+)"""
   ]

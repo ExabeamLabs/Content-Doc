@@ -12,11 +12,11 @@ Name = raw-windows-account-624
     """({event_name}User Account Created)""",
              """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
              """({event_code}624)""",
-             """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
+             """exabeam_host=([^=]+?@\s{0,100})?({host}[\w.-]+)""",
              """({host}[^\/\s]+)\/Security \(624\)""",
              """Computer=({host}[^\s]+)""",
-             """New Account Name:\s+({account_name}.+?)\s+New Domain:\s+({account_domain}[^\s]+)\s+New Account ID:\s+(%\{)?({account_id}[^\s\}]+)""",
-             """Caller User Name:\s+({user}.+?)\s+Caller Domain:\s+({domain}[^\s]+)\s+Caller Logon ID:\s+\([^,]+,({logon_id}[^)]+)""" 
+             """New Account Name:\s{1,100}({account_name}.+?)\s{1,100}New Domain:\s{1,100}({account_domain}[^\s]+)\s{1,100}New Account ID:\s{1,100}(%\{)?({account_id}[^\s\}]+)""",
+             """Caller User Name:\s{1,100}({user}.+?)\s{1,100}Caller Domain:\s{1,100}({domain}[^\s]+)\s{1,100}Caller Logon ID:\s{1,100}\([^,]+,({logon_id}[^)]+)""" 
    ]
    DupFields = ["host->dest_host"]
 }

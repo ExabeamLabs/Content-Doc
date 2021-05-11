@@ -5,7 +5,7 @@ Name = rdp-vectra-meta-data
   DataType = "remote-logon"
   Conditions = [ """vectra_metadata_rdp""", """METADATA_RDP""" ]
   Fields = ${VectraParserTemplates.vectra-meta-data.Fields} [
-    """result="+({outcome}[^"]+)"+"""
+    """result="{1,20}({outcome}[^"]+)"{1,20}"""
   ]
 }
 vectra-meta-data = {
@@ -15,13 +15,13 @@ vectra-meta-data = {
   TimeFormat = "epoch"
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """ts="+({time}\d+)""",
-    """id.orig_h="+({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"+"""
-    """id.orig_p="+({src_port}\d+)"+""",
-    """id.resp_h="+({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"+""",
-    """id.resp_p="+({dest_port}\d+)"+""",
-    """orig_hostname="+({src_host}[^"]+)"+"""
-    """resp_hostname="+(null|((IP-)*({dest_host}[^"]+)))"""
+    """ts="{1,20}({time}\d{1,100})""",
+    """id.orig_h="{1,20}({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"{1,20}"""
+    """id.orig_p="{1,20}({src_port}\d{1,100})"{1,20}""",
+    """id.resp_h="{1,20}({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"{1,20}""",
+    """id.resp_p="{1,20}({dest_port}\d{1,100})"{1,20}""",
+    """orig_hostname="{1,20}({src_host}[^"]+)"{1,20}"""
+    """resp_hostname="{1,20}(null|((IP-)*({dest_host}[^"]+)))"""
   ]
 
 ```

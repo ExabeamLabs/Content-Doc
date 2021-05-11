@@ -9,13 +9,13 @@ Name = github-audit-failed-login
   TimeFormat = "epoch"
   Conditions = [ "failed_login", "github_audit" ]
   Fields = [
-    """"start":({time}\d+),""",
-    """"+@timestamp"+:({time}\d+)""",
-    """({host}\S+)\s+github_audit:""",
-    """"+host"+:"+({host}[^"]+)""",
-    """"+action"+:"+({activity}[^"]+)""",
-    """"+user"+:"+({user}[^"]+)""",
-    """"+actor_ip"+:"+({src_ip}[^"]+)""",
+    """"start":({time}\d{1,100}),""",
+    """"{1,20}@timestamp"{1,20}:({time}\d{1,100})""",
+    """({host}\S+)\s{1,100}github_audit:""",
+    """"{1,20}host"{1,20}:"{1,20}({host}[^"]+)""",
+    """"{1,20}action"{1,20}:"{1,20}({activity}[^"]+)""",
+    """"{1,20}user"{1,20}:"{1,20}({user}[^"]+)""",
+    """"{1,20}actor_ip"{1,20}:"{1,20}({src_ip}[^"]+)""",
     """({app}github)"""
   ]
 }

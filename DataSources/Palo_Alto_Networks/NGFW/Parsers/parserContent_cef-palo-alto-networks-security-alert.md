@@ -10,16 +10,16 @@ Name = cef-palo-alto-networks-security-alert
   Conditions = [ """|Palo Alto Networks|PAN-OS|""", """|spyware|THREAT|""" ]
   Fields = [
     """\sdvchost=({host}[\w\-.]+)""",
-    """\srt=({time}\d+)\s+(\w+=|$)""",
-    """\scat=({alert_name}[^=]+)\s+(\w+=|$)""",
-    """\sshost=({src_host}[^=]+)\s+(\w+=|$)""",
-    """\sdhost=({dest_host}[^=]+)\s+(\w+=|$)""",
-    """\ssrc=({src_ip}[A-Fa-f\d:.]+)\s+(\w+=|$)""",
-    """\sdst=({dest_ip}[A-Fa-f\d:.]+)\s+(\w+=|$)""",
-    """\sdeviceSeverity=({alert_severity}\d+)\s""",
+    """\srt=({time}\d{1,100})\s{1,100}(\w+=|$)""",
+    """\scat=({alert_name}[^=]+)\s{1,100}(\w+=|$)""",
+    """\sshost=({src_host}[^=]+)\s{1,100}(\w+=|$)""",
+    """\sdhost=({dest_host}[^=]+)\s{1,100}(\w+=|$)""",
+    """\ssrc=({src_ip}[A-Fa-f\d:.]+)\s{1,100}(\w+=|$)""",
+    """\sdst=({dest_ip}[A-Fa-f\d:.]+)\s{1,100}(\w+=|$)""",
+    """\sdeviceSeverity=({alert_severity}\d{1,100})\s""",
     """\|spyware\|THREAT\|(Unknown|({alert_severity}[^\|]+))""",
-    """\seventId=({alert_id}\d+)\s+(\w+=|$)""",
-    """\sapp=({threat_category}[^=]+)\s+(\w+=|$)""",
+    """\seventId=({alert_id}\d{1,100})\s{1,100}(\w+=|$)""",
+    """\sapp=({threat_category}[^=]+)\s{1,100}(\w+=|$)""",
     """\ssuser=((({domain}[^\\\/=]+)[\\\/]+)?({user}[^\s]+))"""
   ]
   DupFields = [ "alert_name->alert_type" ]

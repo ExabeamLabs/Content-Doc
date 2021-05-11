@@ -9,12 +9,12 @@ Name = carbonblack-security-alert-2
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """cb-defense""", """indicatorName""" , """targetPriorityCode""", """targetPriorityType""" ,"""threat""" ]
   Fields = [
-    """eventTime\\?"+:\\?"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)""",
+    """eventTime\\?"{1,20}:\\?"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)""",
     """"externalIpAddress\\":\\"({dest_ip}[^\\]+)\\"""",
     """"internalIpAddress\\":\\"({src_ip}[^\\]+)\\"""",
     """deviceName\\":\\"(({domain}[^\\"]+)\\+)?({src_host}[^"]+)\\"""",
     """deviceType\\":\\"({device_type}[^\\]+)\\"""",
-    """score\\"+:\s*({alert_severity}\d+)""",
+    """score\\"{1,20}:\s{0,100}({alert_severity}\d{1,100})""",
     """agent.type\\":\\"({agent_name}[^"]+)\\"""",
     """host\\":\\"({host}[^"]+)\\"""",
     """type\\":\\"({threat_type}[^"]+)\\"""",
@@ -24,8 +24,8 @@ Name = carbonblack-security-alert-2
     """indicatorName\\":\\"({alert_type}[^"]+)\\"""",
     """ruleName\\":\\"({alert_name}[^"]+)\\"""",
     """summary\\":\\"({addtional_info}[^"]+)\\"""",
-    """email\\"+:\\s*"+(({domain}[^\\"]+)\\+)?({user}[^"]+)\\""",
-    """deviceId\\"+:({sensor_id}[^,]+)"""
+    """email\\"{1,20}:\\s{0,100}"{1,20}(({domain}[^\\"]+)\\+)?({user}[^"]+)\\""",
+    """deviceId\\"{1,20}:({sensor_id}[^,]+)"""
   ]
 }
 ```

@@ -11,10 +11,10 @@ Name = powershell-process-created-1
   Conditions = [ """Provider""", """is Started""", """Provider Lifecycle""" ]
   Fields = [
     """({event_name}A new process has been created)""",
-    """Windows PowerShell\s+\S+\s+({time}\w+ \w+ \d\d \d\d:\d\d:\d\d \d\d\d\d)\s+({event_code}\d+)""",
+    """Windows PowerShell\s{1,100}\S+\s{1,100}({time}\w+ \w+ \d\d \d\d:\d\d:\d\d \d\d\d\d)\s{1,100}({event_code}\d{1,100})""",
     """({host}[\w.\-]+) Provider Lifecycle""",
-    """\sHostApplication=({process}(|({directory}[^\s]+?))({process_name}[^\s\\\/]+)).*?\s+EngineVersion=""",
-    """\sHostApplication=({command_line}.+?)\s+EngineVersion="""
+    """\sHostApplication=({process}(|({directory}[^\s]+?))({process_name}[^\s\\\/]+)).*?\s{1,100}EngineVersion=""",
+    """\sHostApplication=({command_line}.+?)\s{1,100}EngineVersion="""
   ]
   DupFields = [ "host->dest_host", "directory->process_directory" ]
 }

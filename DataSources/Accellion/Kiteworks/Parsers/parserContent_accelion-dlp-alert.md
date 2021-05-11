@@ -9,7 +9,7 @@ Name = accelion-dlp-alert
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """subject=HTTP incident""", """, incident-id=""", """, Sender Email=""", """, recipient-email1=""" ]
   Fields = [
-    """, incident-reported-on=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+(\+|\-)\d+)""",
+    """, incident-reported-on=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}(\+|\-)\d{1,100})""",
     """policy-desc=({alert_name}[^,]+)""",
     """, Employee Code=({user}[^,]+)""",
     """, Sender Email=({user_email}[^,@]+@[^,@]+)""",

@@ -13,7 +13,7 @@ Name = xml-4673
       """<Keyword(s)?>({outcome}[^<]+?)</Keyword(s)?>""",
       """<Computer>({host}[^<]+)</Computer>""",
       """<EventID>({event_code}[^<]+)</EventID>""",
-      """<Data Name(\\)?='SubjectUserSid'>\s*(({domain}[^\\<]+)\\)?({user}[^<]+)</Data>""",
+      """<Data Name(\\)?='SubjectUserSid'>\s{0,100}(({domain}[^\\<]+)\\)?({user}[^<]+)</Data>""",
       """<Data Name(\\)?='SubjectUserName'>({user}[^<]+?)</Data>""",
       """<Data Name(\\)?='SubjectDomainName'>({domain}[^<]+?)</Data>""",
       """<Data Name(\\)?='SubjectLogonId'>({login_id}[^<]+?)</Data>""",

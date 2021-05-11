@@ -10,13 +10,13 @@ Name = squid-web-activity-2
   TimeFormat = "yyyy-MM-dd HH:mm:ssZ"
   Conditions = [ """[EVT_""", """,tk_url=""", """,tk_protocol=""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """\Wtk_date_field=({time}[^,"]+)""",
     """\Wtk_server_ip=({host}[A-Fa-f:\d.]+)""",
     """\Wtk_server=({host}[\w\-.]+)""",
-    """\Wtk_username=(({user_fullname}\w+(\s+\w+)+)|({user}\w+)|({src_ip}[a-fA-F\d.:]+)),""",
+    """\Wtk_username=(({user_fullname}\w+(\s{1,100}\w+)+)|({user}\w+)|({src_ip}[a-fA-F\d.:]+)),""",
     """\Wtk_client_ip=({src_ip}[A-Fa-f:\d.]+)""",
-    """\Wtk_url=(-|({full_url}(({protocol}[^:\\\/\s,]+):[\\\/]+)?({web_domain}[^\\\/\s:,]+)(:\d+)?({uri_path}\/[^\s\?",]*)?({uri_query}\?[^"\s,]*)?))""",
+    """\Wtk_url=(-|({full_url}(({protocol}[^:\\\/\s,]+):[\\\/]+)?({web_domain}[^\\\/\s:,]+)(:\d{1,100})?({uri_path}\/[^\s\?",]*)?({uri_query}\?[^"\s,]*)?))""",
     """\Wtk_protocol=({protocol}[^,"]+)""",
     """\Wtk_category=(0|({categories}({category}[^,";\/]+)[^,]*))""",
     """\Wtk_file_name=({uri_path}[^,"]+)""",
@@ -26,7 +26,7 @@ Name = squid-web-activity-2
     """\Wtk_rule_name=({rule}[^,"]+)""",
     """\Wtk_filter_action=({action}[^,"\s]+)""",
     """\Wtk_url=[^,\s\?]*?({top_domain}[^\\\/:\s.]+(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)""",
-    """\[({outcome}EVT_\w+)\s*\|""",
+    """\[({outcome}EVT_\w+)\s{0,100}\|""",
   ]
 }
 ```

@@ -9,13 +9,13 @@ Name = s-pantraps-alert
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """Palo[Alto] TrapsAgent:""","""event from Computer:""","""Prevention Key:"""]
   Fields = [
-    """\w+ \d\d \d\d:\d\d:\d\d ({host}[^\s]+)\s*Palo""",
+    """\w+ \d\d \d\d:\d\d:\d\d ({host}[^\s]+)\s{0,100}Palo""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """User: (({domain}[^\\]+)\\)?({user}[^,]+)""",
     """from Computer: ({src_host}[^,]+)""",
     """eventID=({alert_name}[^\s]+) \w+="""
     """Module Name: ({alert_type}[^,]+),"""
-    """sev=({alert_severity}\d+)"""
+    """sev=({alert_severity}\d{1,100})"""
     """Prevention Key: ({alert_id}[^\s]+) \w+="""
     """Process Name: ({malware_url}[^,]+),"""
   ]

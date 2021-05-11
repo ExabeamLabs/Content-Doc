@@ -8,10 +8,10 @@ Name = asa-nap-cef-vpn-start
     DataType = "vpn-start"
     TimeFormat = "epoch"
     Conditions = [ "CEF:","""|CISCO|ASA|""", """|Assigned private IP address|""" ]
-    Fields = [ """exabeam_EventTime=({eventtime}\d+)""",
-      """\srt=({time}\d+)""",
+    Fields = [ """exabeam_EventTime=({eventtime}\d{1,100})""",
+      """\srt=({time}\d{1,100})""",
       """\sdst=({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-      """\sduser=({user}.+?)\s+\w+=""",
+      """\sduser=({user}.+?)\s{1,100}\w+=""",
       """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sdvchost=({host}[^\s]+)""",  
       """\sad.Group=({realm}\w+)""",

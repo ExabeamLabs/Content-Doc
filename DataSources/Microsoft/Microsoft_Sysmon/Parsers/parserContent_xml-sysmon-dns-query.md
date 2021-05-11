@@ -11,14 +11,14 @@ Name = xml-sysmon-dns-query
   Conditions = [ """<Provider Name='Microsoft-Windows-Sysmon'""", """<EventID>22</EventID>""", """<Channel>Microsoft-Windows-Sysmon/Operational</Channel>""", """<Data Name=""" ]
   Fields = [
     """<Data Name='UtcTime'>({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)</Data>""",
-    """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
-    """<EventID>({event_code}\d+)</EventID>""",
+    """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
+    """<EventID>({event_code}\d{1,100})</EventID>""",
     """<Computer>({host}.+?)</Computer>""",
     """<Security UserID='({user_sid}.+?)'/>""",
     """(?i)<Data Name='ProcessGuid'>\{({process_guid}[A-F0-9a-f-]+)\}</Data>""",
-    """<Data Name='ProcessId'>({pid}\d+)</Data>""",
-    """<Data Name='QueryName'>({query}.+?)\s*</Data>""",
-    """<Data Name='QueryResults'>({response}.+?)\s*</Data>""",
+    """<Data Name='ProcessId'>({pid}\d{1,100})</Data>""",
+    """<Data Name='QueryName'>({query}.+?)\s{0,100}</Data>""",
+    """<Data Name='QueryResults'>({response}.+?)\s{0,100}</Data>""",
     """<Data Name='Image'>({path}(({directory}[^<]*)\\+)?({process_name}.+?))</Data>""",
   ]
    

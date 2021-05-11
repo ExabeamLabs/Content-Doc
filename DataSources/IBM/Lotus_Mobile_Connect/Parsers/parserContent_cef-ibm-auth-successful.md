@@ -9,8 +9,8 @@ Name = cef-ibm-auth-successful
   TimeFormat = "epoch"
   Conditions = [ """|IBM|HQ_LMC|""", """|LMC_Login_Success|""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-    """rt=({time}\d+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[\w\-.]+)""",
+    """rt=({time}\d{1,100})""",
     """dvc=({host}[a-fA-F:\d.]+)""",
     """dvchost=({host}[\w\-.]+)""",
     """shost=({src_host}[\w\-.]+)""",
@@ -18,7 +18,7 @@ Name = cef-ibm-auth-successful
     """dhost=({dest_host}[\w\-.]+)""",
     """dst=({dest_ip}[a-fA-F:\d.]+)""",
     """suser=({user}\S+)""",
-    """deviceOutboundInterface=({src_network_type}.+?)\s*(\w+=|$)"""
+    """deviceOutboundInterface=({src_network_type}.+?)\s{0,100}(\w+=|$)"""
   ]
 }
 ```

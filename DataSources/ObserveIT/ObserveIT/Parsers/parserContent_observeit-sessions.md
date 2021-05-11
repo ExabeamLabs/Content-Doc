@@ -9,17 +9,17 @@ Name = observeit-sessions
   TimeFormat = "MM/dd/yyyy HH:mm:ss"
   Conditions = [ """EventName=ObserveIT-Sessions;""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """({host}\S+)\s+(\S+\s+){4}EventName=""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """({host}\S+)\s{1,100}(\S+\s{1,100}){4}EventName=""",
     """\sSessionDate=({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d)""",
-    """\sOS=({os}[^;]+?)\s*(;|"*\s*$)""",
-    """\sSessionID=({session_id}[^;]+?)\s*(;|"*\s*$)""",
-    """\sServerName=({dest_host}[^;]+?)\s*(;|"*\s*$)""",
-    """\sDomainName=({domain}[^;]+?)\s*(;|"*\s*$)""",
-    """\sUserName=(?:n\/a|({user}[^;]+?))\s*(;|"*\s*$)""",
-    """\sLoginName=({user}[^;]+?)\s*(;|"*\s*$)""",
+    """\sOS=({os}[^;]+?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
+    """\sSessionID=({session_id}[^;]+?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
+    """\sServerName=({dest_host}[^;]+?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
+    """\sDomainName=({domain}[^;]+?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
+    """\sUserName=(?:n\/a|({user}[^;]+?))\s{0,100}(;|"{0,20}\s{0,100}$)""",
+    """\sLoginName=({user}[^;]+?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
     """\sClientAddress=({src_ip}[a-fA-F\d.:]+)""",
-    """\sViewerURL=({additional_info}[^;]+?)\s*(;|"*\s*$)""",
+    """\sViewerURL=({additional_info}[^;]+?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
   ]
 }
 ```

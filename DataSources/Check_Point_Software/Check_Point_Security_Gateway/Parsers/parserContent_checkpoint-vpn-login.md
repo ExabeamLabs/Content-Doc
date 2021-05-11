@@ -9,7 +9,7 @@ Name = checkpoint-vpn-login
   DataType = "vpn-start"
   Conditions = [ """log,authorize,""", """Sign On""", """Authenticated by RADIUS""" ]
   Fields = [
-    """({time}\d+\w+\d\d\d\d,\d+:\d+:\d+)(\s+(\+|\-)\d+)?,(|({host}[^,]+)),log,authorize,([^,]*,){8}(|({src_ip}[^,]+)),(|({dest_ip}[^,]+)),([^,]*,){14}(|({user}[^,]+)),""",
+    """({time}\d{1,100}\w+\d\d\d\d,\d{1,100}:\d{1,100}:\d{1,100})(\s{1,100}(\+|\-)\d{1,100})?,(|({host}[^,]+)),log,authorize,([^,]*,){8}(|({src_ip}[^,]+)),(|({dest_ip}[^,]+)),([^,]*,){14}(|({user}[^,]+)),""",
   ]
   DupFields = ["user->account"]
 }

@@ -9,8 +9,8 @@ Name = lumension-usb-activity-1
   TimeFormat = "epoch"
   Conditions = ["""CEF:""", """|Lumension|""" , """|Lumension Device Control|"""]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """art=({time}\d+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """art=({time}\d{1,100})""",
     """shost=({src_host}[^\s]+)\s""",
     """msg=({activity}[^\s]+)""",
     """\|Device Control Event\|({priority}[^|]+)\|""",

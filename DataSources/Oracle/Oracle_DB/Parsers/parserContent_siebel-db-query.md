@@ -10,15 +10,15 @@ Name = siebel-db-query
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
     Conditions = [ """<Sql_Text>""","""<DB_User>""" ]
     Fields = [ 
-      """<Extended_Timestamp>({time}\d\d\d\d-\d\d-\d\dT\d\d(:\d\d:\d\d.\d+\w+)?)""",
+      """<Extended_Timestamp>({time}\d\d\d\d-\d\d-\d\dT\d\d(:\d\d:\d\d.\d{1,100}\w+)?)""",
       """<Userhost>({host}[^<]+)</Userhost>""",
       """<DB_User>(\/|({db_user}[^<]+))</DB_User>""",
       """<OS_User>({user}[^<]+)</OS_User>""",
-      """<DBID>({database_id}\d+)</DBID>""",
+      """<DBID>({database_id}\d{1,100})</DBID>""",
       """<Object_Schema>({database_name}[^<]+)</Object_Schema>""",
       """<Object_Name>({table_name}[^<]+)</Object_Name>""",
       """<Sql_Text>({db_operation}(?!with|WITH)[^\s]+)""",
-      """<Sql_Text>({db_query}.+?)\s*</Sql_Text>"""
+      """<Sql_Text>({db_query}.+?)\s{0,100}</Sql_Text>"""
     ]
     DupFields = [ "db_user->account", "database_id->database_name" ]
 }

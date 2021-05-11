@@ -10,12 +10,12 @@ Name = unix-auditd-account-switch
   Conditions = [ """type=USER_START""","""op=PAM:session_open""","""res=success""" ]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """msg=audit\(({time}\d+)\.\d{3}""",
+    """msg=audit\(({time}\d{1,100})\.\d{3}""",
     """\sacct="({account}[^"]+)"""",
-    """\sauid="?({account_used_id}\d+)""",
-    """\suid=({user_id}\d+)""",
-    """\sses=({session_id}\d+)""",
-    """UID="*({user}[^"]+)"""
+    """\sauid="?({account_used_id}\d{1,100})""",
+    """\suid=({user_id}\d{1,100})""",
+    """\sses=({session_id}\d{1,100})""",
+    """UID="{0,20}({user}[^"]+)"""
   ]
   DupFields = [ "host->dest_host" ]
 }

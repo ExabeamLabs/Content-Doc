@@ -11,7 +11,7 @@ Name = ibm-lotus-network-connection
   Fields = [
     """({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d (am|AM|PM|pm))""",
     """exabeam_host=({host}[\w.\-]+)""",
-    """SMTP Server:\s*({dest_host}.+?) \(({dest_ip}[a-fA-F\d.:]+)\)""",
+    """SMTP Server:\s{0,100}({dest_host}.+?) \(({dest_ip}[a-fA-F\d.:]+)\)""",
   ]
 }
 ```

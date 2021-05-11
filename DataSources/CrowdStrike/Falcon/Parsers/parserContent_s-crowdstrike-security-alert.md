@@ -9,25 +9,14 @@ Name = s-crowdstrike-security-alert
   TimeFormat = "epoch"
   Conditions = [ """"eventType":""", """"DetectionSummaryEvent"""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """"eventCreationTime":\s*({time}\d+)""",
-    """"DetectName":\s*"({alert_type}[^"]+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """"eventCreationTime":\s{0,100}({time}\d{1,100})""",
+    """"DetectName":\s{0,100}"({alert_type}[^"]+)""",
     """"Technique":"({alert_name}[^"]+)"""",
-    """"Severity":\s*({alert_severity}[^",]+)""",
-    """"DetectId":\s*"({alert_id}[^"]+)""",
-    """({additional_info_1}"DocumentsAccessed":\s*[^\]]+\]).*?({additional_info_2}"ExecutablesWritten":\s*[^\]]+\])""",
-    """"FileName":\s*"(|({process_name}[^"]+))"""",
-    """"FilePath":\s*"(|({file_path}[^"]+))"""",
-    """"CommandLine"+:\s*"+\\*"*({command_line}.+?)\\*\s*"+,""",
-    """"SensorId":\s*"({sensor_id}[^"]+)""",
-    """"ComputerName":\s*"({src_host}[^"]+)""",
-    """"LocalIP":\s*"({src_ip}[^"]+)""",
-    """"ComputerName":\s*"({src_host}[^"]+).*?"LocalAddress":\s*"({src_ip}[^"]+)","LocalPort":\s*({src_port}\d+),"RemoteAddress":\s*"({dest_ip}[^"]+)","RemotePort":\s*({dest_port}\d+),"ConnectionDirection":\s*0""",
-    """"ComputerName":\s*"({dest_host}[^"]+).*?"LocalAddress":\s*"({dest_ip}[^"]+)","LocalPort":\s*({dest_port}\d+),"RemoteAddress":\s*"({src_ip}[^"]+)","RemotePort":\s*({src_port}\d+),"ConnectionDirection":\s*1""",
-    """"MD5String":\s*"(|({md5}[^"]+))"""",
-    """"UserName":\s*"(|N/A|({user}[^"]+))"""",
-    """"FalconHostLink":\s*"({falcon_host_link}[^"]+)"""",
-    """"DetectDescription":\s*"({detect_description}[^"]+)""",
-    """"GrandparentImageFileName\\*"+:\s*\\*"+({grandparent_image_filename}[^,]+?)\\*"+,""",
-    """"GrandparentCommandLine\\*"+:\s*\\*"+({grandparent_command_line}[^}
+    """"Severity":\s{0,100}({alert_severity}[^",]+)""",
+    """"DetectId":\s{0,100}"({alert_id}[^"]+)""",
+    """({additional_info_1}"DocumentsAccessed":\s{0,100}[^\]]+\]).*?({additional_info_2}"ExecutablesWritten":\s{0,100}[^\]]+\])""",
+    """"FileName":\s{0,100}"(|({process_name}[^"]+))"""",
+    """"FilePath":\s{0,100}"(|({file_path}[^"]+))"""",
+    """"CommandLine"{1,20}:\s{0,100}"{1,20}\\*"{0,20}({command_line}.+?)\\*\s{0,100}"{1,20}
 ```

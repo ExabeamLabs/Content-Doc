@@ -10,7 +10,7 @@ Name = cef-cisco-dns-response
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = ["""requestClientApplication=Cisco_Umbrella""", """ext_action=""","""ext_queryType="""]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """"responseCode":"({dns_response_code}[^"]+)"""",
     """"action":"({outcome}[^"]+)"""",
     """"queryType":"({query_type}[^"]+)"""",

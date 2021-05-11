@@ -12,17 +12,17 @@ Name = unix-auditd-login-2
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """,({time}\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})""",
     """exabeam_host=({host}[^\s]+)""",
-    """({time}\d{2}\/\d{2}\/\d{4}\s+\d{2}:\d{2}:\d{2})""",
+    """({time}\d{2}\/\d{2}\/\d{4}\s{1,100}\d{2}:\d{2}:\d{2})""",
     """msg=audit\(({time}\d{10})""",
-    """\spid=({process_id}\d+)""",
-    """\suid=({user_id}\S+?)\s*(\w+=|")""",
-    """auid=({account_used_id}\S+?)\s*(\w+=|")""",
-    """ses=({session_id}\S+?)\s*(\w+=|")""",
-    """acct="*({user}[^"=]+?)\s*(\w+=|")""",
-    """exe="*({process_directory}[^"=]+?)\s*(\w+=|")""",
-    """res="*({outcome}[^'\s]+)""",
-    """\s*({host}[^\s]+)\sauditlog""",
-    """hostname="*(\?|({host}[^\s]+?))\s*(\w+=|")"""
+    """\spid=({process_id}\d{1,100})""",
+    """\suid=({user_id}\S+?)\s{0,100}(\w+=|")""",
+    """auid=({account_used_id}\S+?)\s{0,100}(\w+=|")""",
+    """ses=({session_id}\S+?)\s{0,100}(\w+=|")""",
+    """acct="{0,20}({user}[^"=]+?)\s{0,100}(\w+=|")""",
+    """exe="{0,20}({process_directory}[^"=]+?)\s{0,100}(\w+=|")""",
+    """res="{0,20}({outcome}[^'\s]+)""",
+    """\s{0,100}({host}[^\s]+)\sauditlog""",
+    """hostname="{0,20}(\?|({host}[^\s]+?))\s{0,100}(\w+=|")"""
  ]
 }
 ```

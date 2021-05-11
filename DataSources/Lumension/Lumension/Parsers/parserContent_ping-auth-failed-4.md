@@ -5,7 +5,7 @@ Name = ping-auth-failed-4
   DataType = "authentication-failed"
   Conditions = [ """| AUTHN_ATTEMPT|""", """failure|""" ]
   Fields = ${PingParserTemplates.ping-events.Fields} [
-    """(\|\s*(AUTHN_ATTEMPT|OAuth|SSO)\s*\|)\s*([^\|]*\|){9}\s*(|({failure_reason}[^\|]*?))\s*\|""",
+    """(\|\s{0,100}(AUTHN_ATTEMPT|OAuth|SSO)\s{0,100}\|)\s{0,100}([^\|]*\|){9}\s{0,100}(|({failure_reason}[^\|]*?))\s{0,100}\|""",
   ]
 }
 ping-events = {
@@ -14,16 +14,16 @@ ping-events = {
   Lms = Splunk
   TimeFormat = "MMM dd yyyy HH:mm:ss.SSS"
   Fields = [
-    """"Time":\s*"*({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d\.\d+)""",
-    """"duid":\s*"(({domain}[^"@\\\/]+)[\\\/]+)?({user}[^@"\\\/]+)"""",
-    """"duid":\s*"({user_email}[^"\s@]+@[^"\s@]+)""""
-    """"SRCIP":\s*"({src_ip}[a-fA-F\d.:]+)""",
-    """"remoteAddr":\s*"({dest_ip}[a-fA-F\d.:]+)""",
-    """"Status":\s*"({outcome}[^"]+)""",
-    """"Protocol":\s*"({protocol}[^"]+)""",
-    """"PingHost":\s*"({host}[^"]+)""",
-    """"EventType":\s*"({activity}[^"]+)""",
-    """"DescriptionFail":\s*"({failure_reason}[^"]+)""",
+    """"Time":\s{0,100}"{0,20}({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d\.\d{1,100})""",
+    """"duid":\s{0,100}"(({domain}[^"@\\\/]+)[\\\/]+)?({user}[^@"\\\/]+)"""",
+    """"duid":\s{0,100}"({user_email}[^"\s@]+@[^"\s@]+)""""
+    """"SRCIP":\s{0,100}"({src_ip}[a-fA-F\d.:]+)""",
+    """"remoteAddr":\s{0,100}"({dest_ip}[a-fA-F\d.:]+)""",
+    """"Status":\s{0,100}"({outcome}[^"]+)""",
+    """"Protocol":\s{0,100}"({protocol}[^"]+)""",
+    """"PingHost":\s{0,100}"({host}[^"]+)""",
+    """"EventType":\s{0,100}"({activity}[^"]+)""",
+    """"DescriptionFail":\s{0,100}"({failure_reason}[^"]+)""",
   ]
 
 ```

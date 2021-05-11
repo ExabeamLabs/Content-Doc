@@ -10,5 +10,5 @@ Name = o365-sharepoint-app-activity
   Conditions = [ ""","SharePoint","20""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    ""","({app}SharePoint)","\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d+)?Z"(,("[^"]*"|[^,]*)){2}
+    ""","({app}SharePoint)","\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d{1,100})?Z"(,("[^"]*"|[^,]*)){2}
 ```

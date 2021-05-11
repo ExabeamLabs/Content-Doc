@@ -10,13 +10,13 @@ Name = aix-process-created
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """ CMD """, """]: (""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """\w+\s+\d+\s+\d\d:\d\d:\d\d\s+({host}[\w\-.]+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """\w+\s{1,100}\d{1,100}\s{1,100}\d\d:\d\d:\d\d\s{1,100}({host}[\w\-.]+)""",
     """\(({account}.+?)\) CMD""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """time:"({time}\d+)""",
-    """\sCMD \(\s*({command_line}.+?)\)""",
-    """\sCMD \(\s*[^\/]*?({process}({directory}\/.*?)({process_name}[^\/]*?[^\\]))((\\\\)*\s|\))"""
+    """time:"({time}\d{1,100})""",
+    """\sCMD \(\s{0,100}({command_line}.+?)\)""",
+    """\sCMD \(\s{0,100}[^\/]*?({process}({directory}\/.*?)({process_name}[^\/]*?[^\\]))((\\\\)*\s|\))"""
   ]
   DupFields = [ "account->user" ]
 }

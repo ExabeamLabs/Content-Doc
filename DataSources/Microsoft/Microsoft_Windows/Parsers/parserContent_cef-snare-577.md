@@ -9,14 +9,14 @@ Name = cef-snare-577
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """|Snare|""", """|Security:577|Privileged Service Called|""" ]
   Fields = [
-    """\srt=({time}\d+)""",
-    """CEF:([^\|]*\|){4}Security:({event_code}\d+)\|({event_name}[^\|]+)""",
-    """\scategoryBehavior=(|({action}.+?))(\s+\w+=|\s*$)""",
-    """\scategoryOutcome=(|/({outcome}.+?))(\s+\w+=|\s*$)""",
-    """\scategoryObject=(|({object}.+?))(\s+\w+=|\s*$)""",
-    """\sdhost=(|({dest_host}.+?))(\s+\w+=|\s*$)""",
+    """\srt=({time}\d{1,100})""",
+    """CEF:([^\|]*\|){4}Security:({event_code}\d{1,100})\|({event_name}[^\|]+)""",
+    """\scategoryBehavior=(|({action}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\scategoryOutcome=(|/({outcome}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\scategoryObject=(|({object}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sdhost=(|({dest_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\sdst=({dest_ip}[a-fA-F\d.:]+)""",
-    """\sduser=(|SYSTEM|({user}.+?))(\s+\w+=|\s*$)""",
+    """\sduser=(|SYSTEM|({user}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """Primary User Name\\=(-|({user}[^=&]+))""",
     """Primary Domain\\=(-|({domain}[^=&]+))""",
     """Primary Logon ID\\=(-|({logon_id}[^=&]+))""",

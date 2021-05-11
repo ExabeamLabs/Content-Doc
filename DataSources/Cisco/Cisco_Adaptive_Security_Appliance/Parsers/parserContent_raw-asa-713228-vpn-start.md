@@ -9,11 +9,11 @@ Name = raw-asa-713228-vpn-start
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ "Assigned private IP address", "-713228","""%ASA-""" ]
   Fields = [
-    """exabeam_time=\s*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """({time}\w+ \d+ (\d\d\d\d )?\d+:\d+:\d+):""",
+    """exabeam_time=\s{0,100}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+    """({time}\w+ \d{1,100} (\d\d\d\d )?\d{1,100}:\d{1,100}:\d{1,100}):""",
     """exabeam_source=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """exabeam_host=(.+?@\s*)?({host}[\w.\-:]+)""",
-    """%ASA-({priority}\d+)-({event_code}\d+): Group =\s*({realm}[^,]+),\s*Username = ({user}[^,@]+?),?\s+IP = ({src_ip}[^\s,]+)[,\s]+Assigned private IP address ({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) to"""
+    """exabeam_host=(.+?@\s{0,100})?({host}[\w.\-:]+)""",
+    """%ASA-({priority}\d{1,100})-({event_code}\d{1,100}): Group =\s{0,100}({realm}[^,]+),\s{0,100}Username = ({user}[^,@]+?),?\s{1,100}IP = ({src_ip}[^\s,]+)[,\s]+Assigned private IP address ({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) to"""
   ]
 }
 ```

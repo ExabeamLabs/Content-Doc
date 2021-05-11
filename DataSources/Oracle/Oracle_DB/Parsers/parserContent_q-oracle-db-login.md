@@ -10,15 +10,15 @@ Name = q-oracle-db-login
   TimeFormat = "yyyy-MM-dd HH:mm:ss.S"
   Conditions = [ """ ACTION_NAME: """, """"LOGON"""", """ COMMENT_TEXT: """, """"Authenticated by:""" ]
   Fields = [
-    """OS_USERNAME:\s*"+({os_user}[^":]+)""",
-    """\sUSERNAME:\s*"+({db_user}[^":]+)""",
-    """USERHOST:\s*"+({dest_host}[^":]+)""",
-    """TIMESTAMP:\s*"+({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d+)""",
-    """COMMENT_TEXT:\s*"+[^"]*?PROTOCOL=({protocol}\w+)""",
-    """COMMENT_TEXT:\s*"+[^"]*?HOST=({dest_ip}[a-fA-F\d.:]+)""",
-    """SESSIONID:\s*"+({session_id}[^":]+)""",
-    """OS_PROCESS:\s*"+({process_id}\d+)""",
-    """DBID:\s*"+({database_name}\d+)"""
+    """OS_USERNAME:\s{0,100}"{1,20}({os_user}[^":]+)""",
+    """\sUSERNAME:\s{0,100}"{1,20}({db_user}[^":]+)""",
+    """USERHOST:\s{0,100}"{1,20}({dest_host}[^":]+)""",
+    """TIMESTAMP:\s{0,100}"{1,20}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{1,100})""",
+    """COMMENT_TEXT:\s{0,100}"{1,20}[^"]*?PROTOCOL=({protocol}\w+)""",
+    """COMMENT_TEXT:\s{0,100}"{1,20}[^"]*?HOST=({dest_ip}[a-fA-F\d.:]+)""",
+    """SESSIONID:\s{0,100}"{1,20}({session_id}[^":]+)""",
+    """OS_PROCESS:\s{0,100}"{1,20}({process_id}\d{1,100})""",
+    """DBID:\s{0,100}"{1,20}({database_name}\d{1,100})"""
   ]
   DupFields = [ "os_user->user", "db_user->account" ]
 }

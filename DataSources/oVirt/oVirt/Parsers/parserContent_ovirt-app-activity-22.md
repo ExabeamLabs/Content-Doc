@@ -9,9 +9,9 @@ Name = ovirt-app-activity-22
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """EVENT_ID: USER_IMPORT_IMAGE_AS_TEMPLATE""", """ovirt""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d),.+?ovirt""",
-    """EVENT_ID:\s*({activity}[^\(\)]+)""",
+    """EVENT_ID:\s{0,100}({activity}[^\(\)]+)""",
     """EVENT_ID:.*?User ({user}[^\s\(\)"]+)""",
     """({app}ovirt)"""
   ]

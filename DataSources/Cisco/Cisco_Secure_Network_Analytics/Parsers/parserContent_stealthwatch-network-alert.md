@@ -13,7 +13,7 @@ Name = stealthwatch-network-alert
     """\Wtime(=|\|)({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """\|target_hostname(=|\|)(|({dest_host}[^|]+))\|""",
     """\|alarm_type_description(=|\|)({additional_info}[^|]+)\|""",
-    """\|port(=|\|)({dest_port}\d+)""",
+    """\|port(=|\|)({dest_port}\d{1,100})""",
     """\|target_ip(=|\|)({dest_ip}[a-fA-F\d.:]+)""",
     """\|target_mac_address(=|\|)({dest_mac}[a-fA-F\d.:]+)""",
     """\|alarm_type_name(=|\|)({alert_name}[^|]+)\|""",
@@ -26,7 +26,7 @@ Name = stealthwatch-network-alert
     """\|device_ip(=|\|)({host_ip}[a-fA-F\d.:]+)""",
     """\|device_name(=|\|)({host}[^|]+)\|""",
     """\|details(=|\|)(|({details}[^|]+))\|""",
-    """\|protocol(=|\|)(|({protocol}[^|\s]+?))\s*\|""",
+    """\|protocol(=|\|)(|({protocol}[^|\s]+?))\s{0,100}\|""",
     """\|alarm_id(=|\|)({alert_id}[^|]+)\|"""
   ]
 }

@@ -9,15 +9,15 @@ Name = s-pharos-print-activity
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
   Conditions = [ """ JobName=""", """ UserName=""", """ DeviceName=""", """ Time_Printed=""",]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
-    """(^|exabeam_\w+=)({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+)\s+(?!exabeam)""",
-    """\sUserName=({user}.+?)(\s+\w+=|\s*$)""",
-    """\sJobName="?({object}.+?)"?(\s+\w+=|\s*$)""",
-    """\sPages=({num_pages}\d+)(\s+\w+=|\s*$)""",
-    """\sFileSize=({bytes}\d+)(\s+\w+=|\s*$)""",
-    """\sDeviceName=({printer_name}.+?)(\s+\w+=|\s*$)""",
-    """\sDeviceName=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(\s+\w+=|\s*$)""",
-    """\sApplicationName=(Unknown|({process_name}.+?))(\s+\w+=|\s*$)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
+    """(^|exabeam_\w+=)({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100})\s{1,100}(?!exabeam)""",
+    """\sUserName=({user}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sJobName="?({object}.+?)"?(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sPages=({num_pages}\d{1,100})(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sFileSize=({bytes}\d{1,100})(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sDeviceName=({printer_name}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sDeviceName=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sApplicationName=(Unknown|({process_name}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
 ```

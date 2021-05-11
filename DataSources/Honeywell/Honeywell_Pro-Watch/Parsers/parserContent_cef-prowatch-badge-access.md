@@ -9,11 +9,8 @@ Name = cef-prowatch-badge-access
     TimeFormat =  "epoch"
     Conditions = [ """|ProWatch|Access System|""", """cs6Label=Location""", """ cs4=""" ]
     Fields = [
-      """exabeam_host=([^=]*@\s*)?({host}[^\s]+)""",
-      """\srt=({time}\d+)""",
+      """exabeam_host=([^=]*@\s{0,100})?({host}[^\s]+)""",
+      """\srt=({time}\d{1,100})""",
       """\|ProWatch\|Access System\|([^\|]*\|){2}({outcome}[^\|]+)\|""",
-      """\sduser=\s*({last_name}[^,]+?)\s*,\s*({first_name}.+?)\s+\w+=""",
-      """\scs6=\s*(Empty|({location_door}\S.*?))\s+\w+=""",
-    ]
-  }
+      """\sduser=\s{0,100}({last_name}[^,]+?)\s{0,100}
 ```

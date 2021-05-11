@@ -10,19 +10,19 @@ Name = cef-infowatch-print-activity
   Conditions = [ """CEF:""", """|Print|""", """|DLP|DLP TM""" ]
   Fields = [
     """({activity}Print)""",
-    """\Wact=({outcome}.+?)(\s+[\w\.]+=|\s*$)""",
-    """\Wrt=({time}\d+)""",
-    """\Wshost=({src_host}.+?)(\s+[\w\.]+=|\s*$)""",
+    """\Wact=({outcome}.+?)(\s{1,100}[\w\.]+=|\s{0,100}$)""",
+    """\Wrt=({time}\d{1,100})""",
+    """\Wshost=({src_host}.+?)(\s{1,100}[\w\.]+=|\s{0,100}$)""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
-    """\Wsntdom=({user}[^@=]+)@({domain}[^@]+?)(\s+[\w\.]+=|\s*$)""",
-    """\Wsuser=({user}.+?)(\s+[\w\.]+=|\s*$)""",
-    """\Wsuid=({user_fullname}.+?)(\s+[\w\.]+=|\s*$)""",
-    """\Wfname=({object}.+?)(\s+[\w\.]+=|\s*$)""",
-    """\Wdvchost=({host}.+?)(\s+[\w\.]+=|\s*$)""",
-    """\Wcs3=({additional_info}.+?)(\s+[\w\.]+=|\s*$)""",
-    """\Wad\.categories=({categories}.+?)(\s+[\w\.]+=|\s*$)""",
-    """\Wad\.fingerprints=({fingerprints}.+?)(\s+[\w\.]+=|\s*$)""",
-    """\Wad\.device__name=({printer_name}.*?({dest_host}[^\\\/]+?))(\s+[\w\.]+=|\s*$)""",
+    """\Wsntdom=({user}[^@=]+)@({domain}[^@]+?)(\s{1,100}[\w\.]+=|\s{0,100}$)""",
+    """\Wsuser=({user}.+?)(\s{1,100}[\w\.]+=|\s{0,100}$)""",
+    """\Wsuid=({user_fullname}.+?)(\s{1,100}[\w\.]+=|\s{0,100}$)""",
+    """\Wfname=({object}.+?)(\s{1,100}[\w\.]+=|\s{0,100}$)""",
+    """\Wdvchost=({host}.+?)(\s{1,100}[\w\.]+=|\s{0,100}$)""",
+    """\Wcs3=({additional_info}.+?)(\s{1,100}[\w\.]+=|\s{0,100}$)""",
+    """\Wad\.categories=({categories}.+?)(\s{1,100}[\w\.]+=|\s{0,100}$)""",
+    """\Wad\.fingerprints=({fingerprints}.+?)(\s{1,100}[\w\.]+=|\s{0,100}$)""",
+    """\Wad\.device__name=({printer_name}.*?({dest_host}[^\\\/]+?))(\s{1,100}[\w\.]+=|\s{0,100}$)""",
   ]
   DupFields = [ object->file_name ]
 }

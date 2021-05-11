@@ -11,17 +11,5 @@ Name = s-lumension-usb
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[^\s]+)""",
-    """\sraw_g_hostname="+({dest_host}[^"]+)"+,""",
-    """\sraw_event_id="+({activity}[^"]+)"+,""",
-    """\sraw_ntuser="+(?:({domain}\w+)\\)?({user}[^"]+?)"""",
-    """\sraw_aduser="+(?=\w)({account_dn}.+?)"""",
-    """\|devicename=({device_id}[^,\|]+)""",
-    """\|devicename=([^,]+),\s+({device_type}[^,;]+),\s+""",
-    """\|filesize=({hex_bytes}[^\|]+)""",
-    """\|path=+(?=\w)({file_path}.+?)\|""",
-    """path=.*\\({file_name}(?:[^\\|]+(?=\.))({file_ext}\.[^\\|]+)?|[^\\|]+)\|\w+=""",
-    """\|processname=+(?=\w)({process_name}.+?)\|""",
-    """\|reason=+(?=\w)({activity_details}.+?)\|"""
-  ]
-}
+    """\sraw_g_hostname="{1,20}({dest_host}[^"]+)"{1,20}
 ```

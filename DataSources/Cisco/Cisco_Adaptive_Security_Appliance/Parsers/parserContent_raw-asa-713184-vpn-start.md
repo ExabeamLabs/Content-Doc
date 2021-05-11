@@ -9,13 +9,13 @@ Name = raw-asa-713184-vpn-start
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ "-713184", "%ASA-" ]
   Fields = [
-    """exabeam_raw=.*?({time}\w+ \d+ \d\d\d\d \d\d:\d\d:\d\d)""",
-    """({time}\w+ \d+ \d{4} \d\d:\d\d:\d\d)""",
-    """%ASA-({priority}\d+)-({event_code}\d+)""",
+    """exabeam_raw=.*?({time}\w+ \d{1,100} \d\d\d\d \d\d:\d\d:\d\d)""",
+    """({time}\w+ \d{1,100} \d{4} \d\d:\d\d:\d\d)""",
+    """%ASA-({priority}\d{1,100})-({event_code}\d{1,100})""",
     """exabeam_host=({host}[\w.\-]+)""",
-    """exabeam_host=(.+?@\s*)?({host}[^\s]+)""",
+    """exabeam_host=(.+?@\s{0,100})?({host}[^\s]+)""",
     """Username = ({user}[^,@]+).+?IP = ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\s+Client Type:\s+({client_system}.+?)\s+Client Application Version:\s+({client_system_version}.+?)\s+$"""
+    """\s{1,100}Client Type:\s{1,100}({client_system}.+?)\s{1,100}Client Application Version:\s{1,100}({client_system_version}.+?)\s{1,100}$"""
   ]
 }
 ```

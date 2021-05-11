@@ -10,10 +10,10 @@ Name = bastion-failed-logon
   Conditions = [ """ bastion""", """denied access""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\d\d:\d\d:\d\d\s+({host}[^\s]+)\s+bastion""",
+    """\d\d:\d\d:\d\d\s{1,100}({host}[^\s]+)\s{1,100}bastion""",
     """({event_name}denied access)""",
-    """bastion\d*:({hostname}[^:]+):({user}[^:]+):\s""",
-    """:\s+({failure_reason}.+?)\s*$"""
+    """bastion\d{0,100}:({hostname}[^:]+):({user}[^:]+):\s""",
+    """:\s{1,100}({failure_reason}.+?)\s{0,100}$"""
   ]
 }
 ```

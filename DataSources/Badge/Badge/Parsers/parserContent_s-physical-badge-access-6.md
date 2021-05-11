@@ -9,7 +9,7 @@ Name = s-physical-badge-access-6
     TimeFormat = "MM/dd/yyyy HH:mm:ss"
     Conditions = ["AccessDescription","PersonnelID"]
     Fields = [
-      """AccessFormatedTime"+:"+({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d)""",
+      """AccessFormatedTime"{1,20}:"{1,20}({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d)""",
       """AccesshostName":"({host}[^"]+)""",
       """PersonnelID":"({user}[^"]+)""",
       """PersonName":"({user_fullname}[^"]+)""",

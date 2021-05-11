@@ -9,12 +9,12 @@ Name = q-pan-leef-alert
   TimeFormat = "yyyy-MM-dd HH:mm:ss" 
   Conditions = ["LEEF:1.0|Palo Alto Networks", "cat=THREAT|subtype=wildfire" ]
   Fields = [
-    """exabeam_host=(.+?@\s*)?({host}[^\s]+)""",
+    """exabeam_host=(.+?@\s{0,100})?({host}[^\s]+)""",
     """exabeam_endTime=({time}\d{13})""",
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-    """\s({host}[\w\.-]+)\s+LEEF:""",
+    """\s({host}[\w\.-]+)\s{1,100}LEEF:""",
     """subtype=({alert_type}wildfire)""",
-    """Severity=({alert_severity}\d+)""",
+    """Severity=({alert_severity}\d{1,100})""",
     """Severity=({alert_severity}[^\|]+)\|""",
     """(URLCategory|Severity)=({alert_severity}benign|informational)""",
     """usrName=(({domain}[^\\]+)\\)?(|({user}[^\|]+))\|(SerialNumber|SourceUser)""",

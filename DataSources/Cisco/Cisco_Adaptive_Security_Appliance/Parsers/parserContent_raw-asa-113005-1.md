@@ -9,11 +9,11 @@ Name = raw-asa-113005-1
   TimeFormat = "yyyy MMM dd HH:mm:ss"
   Conditions = [ "-113005:", "AAA user authentication Rejected :", ": user =", ": reason =" ]
   Fields = [
-    """({time}\d+\s+\w+\s+\d+\s+\d+:\d+:\d+)\s+UTC\s+({host}[^\s]+)\s+:\s+({event_code}[^\s]+):\s+({event_name}.+?)\s+:""",
-    """reason\s+=\s+({failure_reason}.+?)\s+:"""
-    """server\s+=\s+({dest_ip}.+?)\s+:"""
-    """user\s+=\s+(\*+|({user}.+?))\s+:"""
-    """user IP\s+=\s+({src_ip}[A-Za-z\d.:]+)"""
+    """({time}\d{1,100}\s{1,100}\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100})\s{1,100}UTC\s{1,100}({host}[^\s]+)\s{1,100}:\s{1,100}({event_code}[^\s]+):\s{1,100}({event_name}.+?)\s{1,100}:""",
+    """reason\s{1,100}=\s{1,100}({failure_reason}.+?)\s{1,100}:"""
+    """server\s{1,100}=\s{1,100}({dest_ip}.+?)\s{1,100}:"""
+    """user\s{1,100}=\s{1,100}(\*+|({user}.+?))\s{1,100}:"""
+    """user IP\s{1,100}=\s{1,100}({src_ip}[A-Za-z\d.:]+)"""
     ]
 }
 ```

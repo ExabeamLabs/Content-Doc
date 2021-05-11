@@ -11,7 +11,7 @@ Name = crowdstrike-security-alert-5
     Fields = [
       """"scenario":"({alert_name}[^"]+)""",
       """"technique":"({alert_type}[^"]+)""",
-      """"severity":({alert_severity}\d+)""",
+      """"severity":({alert_severity}\d{1,100})""",
       """"detection_id":"({alert_id}[^"]+)""",
       """"user_name":"({user}[^"]+)""",
       """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
@@ -21,24 +21,7 @@ Name = crowdstrike-security-alert-5
       """"filename":"({process_name}[^"]+)""",
       """"hostname":"({src_host}[^"]+)""",
       """"show_in_ui":.*?"status":"({outcome}[^"]+)""",
-      """"cmdline":"({additional_info}.+?)\s*","""",
+      """"cmdline":"({additional_info}.+?)\s{0,100}","""",
       """"tactic":"({category}[^"]+)""",
-      """"((?i)SHA256|SHA256String|SHA256HashData)\\*"+:\s*\\*"+({sha256}[^,]+?)\\*"+,""",
-      """"(?i)Quarantine_File"+:\s*({quarantine_file}true|false)""",
-      """"(?i)Quarantine_Machine"+:\s*({quarantine_machine}true|false)""",
-      """"(?i)Detect"+:\s*({detect}true|false)""",
-      """"(?i)Registry_Operation_Blocked"+:\s*({registry_operation_blocked}true|false)""",
-      """"(?i)Kill_Parent"+:\s*({kill_parent}true|false)""",
-      """"(?i)Operation_Blocked"+:\s*({operation_blocked}true|false)""",
-      """"(?i)Kill_Process"+:\s*({kill_process}true|false)""",
-      """"(?i)Process_Blocked"+:\s*({process_blocked}true|false)""",
-      """"(?i)Policy_Disabled"+:\s*({policy_disabled}true|false)""",
-      """"(?i)Sensor_Only"+:\s*({sensor_only}true|false)""",
-      """"(?i)Kill_SubProcess"+:\s*({kill_sub_process}true|false)""",
-      """"(?i)Rooting"+:\s*({rooting}true|false)""",
-      """"(?i)Inddet_Mask"+:\s*({inddet_mask}true|false)""",
-      """"(?i)Indicator"+:\s*({indicator}true|false)"""
-    ]
-    DupFields = [ "src_host->host" ]
-  }
+      """"((?i)SHA256|SHA256String|SHA256HashData)\\*"{1,20}:\s{0,100}\\*"{1,20}({sha256}[^,]+?)\\*"{1,20}
 ```

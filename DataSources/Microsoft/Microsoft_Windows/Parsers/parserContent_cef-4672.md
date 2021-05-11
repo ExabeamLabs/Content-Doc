@@ -10,14 +10,14 @@ Name = cef-4672
         Conditions = ["CEF:", "|Microsoft|Microsoft Windows|", "externalId=4672"]
         Fields = [
           """({event_name}Special privileges assigned to new logon)""",
-            """\srt=({time}\d+)""",
+            """\srt=({time}\d{1,100})""",
             """\sdeviceSeverity=({outcome}[^\s]+)""",
-            """\sdhost=({host}.+?)(\s+\w+=|\s*$)""",
-            """\sexternalId=({event_code}\d+)""",
-            """\sduser=({user}.+?)(\s+\w+=|\s*$)""",
-            """\sdntdom=({domain}.+?)(\s+\w+=|\s*$)""",
+            """\sdhost=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+            """\sexternalId=({event_code}\d{1,100})""",
+            """\sduser=({user}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+            """\sdntdom=({domain}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
             """\sduid=({login_id}[^\s]+)""",
-            """\sdpriv=({privileges}.+?)(\s+\w+=|\s*$)"""
+            """\sdpriv=({privileges}.+?)(\s{1,100}\w+=|\s{0,100}$)"""
         ]
         DupFields = ["host->dest_host"]
 }

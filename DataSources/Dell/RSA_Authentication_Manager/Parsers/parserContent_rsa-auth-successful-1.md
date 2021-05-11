@@ -9,7 +9,7 @@ Name = rsa-auth-successful-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
   Conditions = [ """ SINGLEPOINT """, """ USER_LOGIN """, """ AUTHN_TYPE="""" ]
   Fields = [
-    """({host}[\w\-.]+) \d+ ({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ) \S+ SINGLEPOINT""",
+    """({host}[\w\-.]+) \d{1,100} ({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ) \S+ SINGLEPOINT""",
     """USERNAME="({user}[^\s"]+)""",
     """REMOTE_IP="({src_ip}[^"]+)""",
     """RESULT="({outcome}[^"]+)""",

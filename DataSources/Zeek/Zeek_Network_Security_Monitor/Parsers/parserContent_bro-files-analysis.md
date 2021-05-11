@@ -10,7 +10,7 @@ Name = bro-files-analysis
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
   Conditions = [ """files",""",""""fuid":""", """"conn_uids":""" ]
   Fields = [
-    """exabeam_host=([^@=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^@=]+@\s{0,100})?({host}\S+)""",
     """"_system_name":"({host}[^"]+)""",
     """"ts":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d)""",
     """"tx_hosts":\["({src_ip}[a-fA-F\d.:]+)"\]""",
@@ -19,8 +19,8 @@ Name = bro-files-analysis
     """"source":"({protocol}[^"]+)""",
     """"analyzers":\[({analyzers}.+?)\]""",
     """"mime_type":"({mime}[^"]+)""",
-    """"seen_bytes":"?({bytes}\d+)""",
-    """"total_bytes":({total_bytes}\d+)""",
+    """"seen_bytes":"?({bytes}\d{1,100})""",
+    """"total_bytes":({total_bytes}\d{1,100})""",
     """"md5":"({md5}[^"]+)""",
     """"sha1":"({sha1}[^"]+)""",
     """"filename":"({file_name}[^"]+?(\.({file_ext}\w+))?)"""",

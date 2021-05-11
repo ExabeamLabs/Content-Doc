@@ -9,7 +9,7 @@ Name = safecom-print-activity
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """ JobName="""", """, JobDateTime="""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """\WPMComputerName="({host}[\w\-.]+)""",
     """\WDocComputerName="({host}[\w\-.]+)""",
     """\WJobDateTime="({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
@@ -19,8 +19,8 @@ Name = safecom-print-activity
     """\WUserLogon="({user}[^\s",]+)""",
     """\WUserFullName="({user}[^\s",]+)""",
     """\WUserEMail="({user_email}[^\s",]+)""",
-    """\WJobSize="({bytes}\d+)""",
-    """\WTrackingPageCount="({num_pages}\d+)"""
+    """\WJobSize="({bytes}\d{1,100})""",
+    """\WTrackingPageCount="({num_pages}\d{1,100})"""
   ]
   DupFields = [ "host->dest_host" ]
 }

@@ -13,14 +13,14 @@ Name = raw-windows-account-644
       """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
       """({event_code}644)""",
       """exabeam_host=({host}[\w.\-]+)""",
-      """(?i)(information)(\s+|,)({host}[\w.\-]+)""",
-      """(?i)(success|failure|audit)\s+\w+(\s+|,)({host}[^\s,]+)""",
+      """(?i)(information)(\s{1,100}|,)({host}[\w.\-]+)""",
+      """(?i)(success|failure|audit)\s{1,100}\w+(\s{1,100}|,)({host}[^\s,]+)""",
       """"dhn":"({host}[^-"]+)""",
       """rn=({record_id}[\d]+)""",
       """({host}[^\/\s]+)\/Security \(644\)""",
-      """Target Account Name:\s+(?=\w)({user}.+?)\s+Target Account ID:\s+(%\{)?({user_sid}([\w\d\-]+?)|([^\s]+))\}?\s+Caller Machine""",
-      """Caller Machine Name:\s+({src_host}.+?)\s+Caller User""",
-      """Caller User Name:\s+({caller_user}.+?)\s+Caller Domain:\s+(?=\w)({caller_domain}.+?)\s+Caller Logon ID:\s+\([^,]+,({logon_id}[^\)]+)"""
+      """Target Account Name:\s{1,100}(?=\w)({user}.+?)\s{1,100}Target Account ID:\s{1,100}(%\{)?({user_sid}([\w\d\-]+?)|([^\s]+))\}?\s{1,100}Caller Machine""",
+      """Caller Machine Name:\s{1,100}({src_host}.+?)\s{1,100}Caller User""",
+      """Caller User Name:\s{1,100}({caller_user}.+?)\s{1,100}Caller Domain:\s{1,100}(?=\w)({caller_domain}.+?)\s{1,100}Caller Logon ID:\s{1,100}\([^,]+,({logon_id}[^\)]+)"""
     ]
     DupFields=["host->dest_host",
       "caller_domain->domain"]

@@ -9,8 +9,8 @@ Name = msnetwork-nac-logon-5
   TimeFormat = "MM/dd/yyyy,HH:mm:ss"
   Conditions = [ ""","IAS",""", """",2,"""" ]
   Fields = [
-    """({host}[^"]+)","IAS",({time}\d\d\/\d\d\/\d\d\d\d,\d\d:\d\d:\d\d),(|({outcome}\d+)),(|"({user}[^"]+)"),([^,]*,){9}(|"({src_ip}[^"]+)"),(|"({src_host}[^"]+)"),""",
-    """"({dest_ip}[^"]+)",[^,]*,\s*$""",
+    """({host}[^"]+)","IAS",({time}\d\d\/\d\d\/\d\d\d\d,\d\d:\d\d:\d\d),(|({outcome}\d{1,100})),(|"({user}[^"]+)"),([^,]*,){9}(|"({src_ip}[^"]+)"),(|"({src_host}[^"]+)"),""",
+    """"({dest_ip}[^"]+)",[^,]*,\s{0,100}$""",
   ]
 }
 ```

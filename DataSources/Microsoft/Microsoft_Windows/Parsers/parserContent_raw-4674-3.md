@@ -11,17 +11,17 @@ Name = raw-4674-3
     Fields = [
       """({event_name}An operation was attempted on a privileged object)""",
       """TimeGenerated=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)""", 
-      """Type\s*=\s*"({outcome}[^";]+)"""",
-      """Computer(\w+)?["\s]*(:|=)\s*"?({host}[^"\s;]+)""",
+      """Type\s{0,100}=\s{0,100}"({outcome}[^";]+)"""",
+      """Computer(\w+)?["\s]*(:|=)\s{0,100}"?({host}[^"\s;]+)""",
       """({event_code}4674)""",
-      """"Account":"((NT AUTHORITY|({domain}[^\\\s"]+))\\+)?(LOCAL SERVICE|({user}[^\\\s"]+))\s*"""",
+      """"Account":"((NT AUTHORITY|({domain}[^\\\s"]+))\\+)?(LOCAL SERVICE|({user}[^\\\s"]+))\s{0,100}"""",
       """"TargetAccount":"(({target_domain}[^\\\s"]+)\\+)?({target_user}[^\\\s"]+)""",
       """"SubjectUserSid":"({user_sid}[^\s"]+)""",
       """"SubjectLogonId":"({logon_id}[^\s"]+)""",
       """"ObjectServer":"(-|({object_server}[^\s"]+))""",
       """"ObjectName":"(-|({object}[^\s"]+))""",
       """"ObjectType":"(-|({object_type}[^\s"]+))""",
-      """"ProcessName":"(?: |({process}({directory}(?:[^";]+)?[\\\/])?({process_name}[^\\\/";]+?)))\s*"""",
+      """"ProcessName":"(?: |({process}({directory}(?:[^";]+)?[\\\/])?({process_name}[^\\\/";]+?)))\s{0,100}"""",
     ]
     DupFields = ["host->dest_host","directory->process_directory"]
   }

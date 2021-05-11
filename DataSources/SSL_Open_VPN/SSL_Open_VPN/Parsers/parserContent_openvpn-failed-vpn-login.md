@@ -9,9 +9,9 @@ Name = openvpn-failed-vpn-login
   TimeFormat = "yyyy-MM-dd HH:mm:ssZ"
   Conditions = [ """] VPN Auth Failed: """ ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d(\+|\-)\d+).*?VPN Auth Failed:""",
-    """VPN Auth Failed:\s*'({failure_reason}[^']+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d(\+|\-)\d{1,100}).*?VPN Auth Failed:""",
+    """VPN Auth Failed:\s{0,100}'({failure_reason}[^']+)""",
     """({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).*?\[({user}[^\s\]]+)\] Peer Connection Initiated with""",
   ]
 }

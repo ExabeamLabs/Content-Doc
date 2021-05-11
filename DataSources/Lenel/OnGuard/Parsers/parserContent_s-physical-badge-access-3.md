@@ -9,11 +9,11 @@ Name = s-physical-badge-access-3
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = ["EVDESCR=","exabeam_raw"]
     Fields = [
-      """exabeam_raw="+({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+      """exabeam_raw="{1,20}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """EVENT_TIME_UTC="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """exabeam_host=({host}[^\s]+)""",
-      """EMPID="*({employee_id}[^,"]*)""",
-      """CARDNUM="*({badge_id}[^,"]*)""",
+      """EMPID="{0,20}({employee_id}[^,"]*)""",
+      """CARDNUM="{0,20}({badge_id}[^,"]*)""",
       """UserID="({user}[^"]*)""",
       """EVDESCR="({outcome}[^"]*)""",
       """LASTNAME="({last_name}[^"]*)""",

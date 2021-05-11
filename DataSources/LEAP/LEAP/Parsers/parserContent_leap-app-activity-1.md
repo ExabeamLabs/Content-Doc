@@ -9,8 +9,8 @@ Name = leap-app-activity-1
   TimeFormat = "yyyyMMdd:HH.mm.ss"
   Conditions = [ """|LEAPAUDIT|""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """({location}\w+)\|({app_code}({app}LEAPS)[^\|]*)\|LEAPAUDIT\|({time}\d{8}:\d\d\.\d\d\.\d\d)\|(|({user}[^\|]+))\|([^\|]*\|){2}(|({object_name}[^\|]+))\|(|({field_name}[^\|]+))\|(|({activity}[^\|]+))\|(|({additional_info}[^\|]*\|[^\|]*))\|(|({primary_key}[^\|]+))\|\s*(|({secondary_key}[^\|]+))\s*\|"""
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """({location}\w+)\|({app_code}({app}LEAPS)[^\|]*)\|LEAPAUDIT\|({time}\d{8}:\d\d\.\d\d\.\d\d)\|(|({user}[^\|]+))\|([^\|]*\|){2}(|({object_name}[^\|]+))\|(|({field_name}[^\|]+))\|(|({activity}[^\|]+))\|(|({additional_info}[^\|]*\|[^\|]*))\|(|({primary_key}[^\|]+))\|\s{0,100}(|({secondary_key}[^\|]+))\s{0,100}\|"""
   ]
 }
 ```

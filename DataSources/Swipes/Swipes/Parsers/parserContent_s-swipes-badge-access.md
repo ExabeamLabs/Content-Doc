@@ -9,7 +9,7 @@ Name = s-swipes-badge-access
     TimeFormat = "yyyy/MM/dd HH:mm:ss.SSS"
     Conditions = [ """exabeam_index=swipes""" ]
     Fields = [
-      """exabeam_host=(.+?@\s*)?({host}[^\s]+)""",
+      """exabeam_host=(.+?@\s{0,100})?({host}[^\s]+)""",
       """exabeam_raw=([^\|]*\|){4}({time}[^\|]+)\|""",
       """exabeam_raw=({department}[^\|]+)\|""",
       """exabeam_raw=([^\|]*\|)({last_name}[^\|]+)\|""",

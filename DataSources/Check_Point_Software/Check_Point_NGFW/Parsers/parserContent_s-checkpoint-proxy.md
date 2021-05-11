@@ -10,7 +10,7 @@ Name = s-checkpoint-proxy
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """ Action="""", """product="URL Filtering"""" ]
   Fields = [
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\-+\d+:\d\d\s+({host}\S+)\s+""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\-+\d{1,100}:\d\d\s{1,100}({host}\S+)\s{1,100}""",
     """\WAction="({action}[^"]+)""",
     """\Wsrc="({src_ip}[A-Fa-f:\d.]+)""",
     """\Wdst="({dest_ip}[A-Fa-f:\d.]+)""",
@@ -22,16 +22,16 @@ Name = s-checkpoint-proxy
     """\Wresource="({full_url}[^"]+)""",
     """\Wresource="({protocol}[^:"]+)""",
     """\Wresource="(?:[^:]+:\/+)({web_domain}[^\/:\s]+)""",
-    """\Wresource="(.*?)({top_domain}(?!(?:\d+\.){3}\d+)[^\.\s\/:]+(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+(\s|\/|$))[^\s\/]+)""",
+    """\Wresource="(.*?)({top_domain}(?!(?:\d{1,100}\.){3}\d{1,100})[^\.\s\/:]+(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+(\s|\/|$))[^\s\/]+)""",
     """\Wresource="(\w+:\/+[^\/]+({uri_path}\/[^?"]+))""",
     """\Wresource="(\w+:\/+[^?]+(|({uri_query}[^"]+)))"""",
     """\Wuser=".+?\(({user}[^)]+)\)""",
     """\Wsrc_user_name=".+?\(({user}[^)]+)\)""",
     """\Wsrc_machine_name="({src_host}[^@"]+)(@({domain}[^@"]+))?""",
-    """\Wservice="({dest_port}\d+)""",
-    """\Ws_port="({src_port}\d+)""",
-    """\Wsent_bytes="({bytes_out}\d+)""",
-    """\Wreceived_bytes="({bytes_in}\d+)""",
+    """\Wservice="({dest_port}\d{1,100})""",
+    """\Ws_port="({src_port}\d{1,100})""",
+    """\Wsent_bytes="({bytes_out}\d{1,100})""",
+    """\Wreceived_bytes="({bytes_in}\d{1,100})""",
   ]
 }
 ```

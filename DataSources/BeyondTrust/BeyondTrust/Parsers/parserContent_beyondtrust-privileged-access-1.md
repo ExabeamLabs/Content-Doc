@@ -19,10 +19,10 @@ Name = beyondtrust-privileged-access-1
     """\|BeyondTrust\|Secure Remote Access\|(?:[^\|]+\|){2}({event_name}[^\|]+)\|""",
     """srcHost=({src_host}[^\|]+)""",
     """srcAddr=({src_ip}[a-fA-F0-9.:]+)\|""",
-    """srcPort=({src_port}\d+)""",
+    """srcPort=({src_port}\d{1,100})""",
     """dstHost=({dest_host}[^\|]+)""",
     """dstAddr=({dest_ip}[a-fA-F0-9.:]+)\|""",
-    """dstPort=({dest_port}\d+)""",
+    """dstPort=({dest_port}\d{1,100})""",
     """confMemOs=({os}[^\|]+)""",
     """cmdShellViewUrl=({additional_info}[^\|]+)"""
   ]

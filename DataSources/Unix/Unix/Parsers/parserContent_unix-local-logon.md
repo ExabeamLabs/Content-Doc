@@ -10,7 +10,7 @@ Name = unix-local-logon
   Conditions = [ """systemd: Started Session""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """({host}[\w\-.]+)\s+systemd: Started Session""",
+    """({host}[\w\-.]+)\s{1,100}systemd: Started Session""",
     """of user ({user}[^\s\.]+)""",
     """({event_code}Started Session)"""
   ]

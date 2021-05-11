@@ -10,7 +10,7 @@ Name = s-rapid7-security-alert
   Conditions = [ """, solution_summary="""", """, signature="""", """, severity="""" ]
   Fields = [
     """\Wdvc="({host}[\w.\-]+)""",
-    """\Wtimestamp="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d+)""",
+    """\Wtimestamp="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{1,100})""",
     """\Wother_references="({additional_info}[^"]+)"""",
     """\Wdest="(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|({src_host}[^"]+))"""",
     """\Wip="({src_ip}[a-fA-F\d.:]+)""",

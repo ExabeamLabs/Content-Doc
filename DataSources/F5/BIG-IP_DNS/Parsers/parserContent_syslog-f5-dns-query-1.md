@@ -11,7 +11,7 @@ Name = syslog-f5-dns-query-1
   Conditions = [ """,F5 DNS """, """,question_name=""", """,question_type=""" ]
   Fields = [
     """exabeam_host=({host}[\w\-.]+)""",
-    """"@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d+:\d+:\d+\.\d+Z)""",
+    """"@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}Z)""",
     """,src_ip=({src_ip}[A-Fa-f:\d.]+)""",
     """,dns_server_ip=({dest_ip}[A-Fa-f:\d.]+)""",
     """,question_name=({query}[^,]+)""",

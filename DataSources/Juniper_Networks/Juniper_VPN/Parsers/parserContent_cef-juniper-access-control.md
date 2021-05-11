@@ -9,15 +9,15 @@ Name = cef-juniper-access-control
   TimeFormat = "epoch"
   Conditions = [ "CEF:", "|Agent login succeeded for" ]
   Fields = [
-    """\srt=({time}\d+)""",
+    """\srt=({time}\d{1,100})""",
     """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sdvchost=({host}[^\s]+)""",
-    """\ssuser=({user}.+?)\s+sproc=""",
+    """\ssuser=({user}.+?)\s{1,100}sproc=""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\sspriv=({resource}.+?)\s+\w+=""",
-    """\sahost=({dest_host}.*?)\s+\w+=""",
+    """\sspriv=({resource}.+?)\s{1,100}\w+=""",
+    """\sahost=({dest_host}.*?)\s{1,100}\w+=""",
     """\sagt=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\scs6=({realm}.*?)\s+\w+=.*?cs6Label=Group Name""",
+    """\scs6=({realm}.*?)\s{1,100}\w+=.*?cs6Label=Group Name""",
   ]
   DupFields = ["user->account"]
 }

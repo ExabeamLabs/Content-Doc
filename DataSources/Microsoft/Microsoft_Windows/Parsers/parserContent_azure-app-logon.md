@@ -9,25 +9,8 @@ Name = azure-app-logon
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """"operationName"""", """"Sign-in activity"""", """"conditionalAccessStatus"""", """"tokenIssuerType"""", """":""""]
   Fields = [
-    """exabeam_host=([^=@]+@\s*)?({host}\S+)""",
-    """"time"+:"+({time}\d+-\d+-\d+T\d+:\d+:\d+)""",
-    """"callerIpAddress"+:"+({src_ip}[A-Fa-f:\d.]+)"""",
-    """"identity"+:"+(({user_id}\w+-\w+-\w+-\w+-\w+)|({user_fullname}({user_lastname}[^",\s]+)\s*,?\s*({user_firstname}[^",]+)))"""",
-    """"userPrincipalName"+:"+({user_email}[^"\s@]+@[^"\s@]+)"""",
-    """"browser"+:"+({browser}[^"]+)"""",
-    """"operatingSystem"+:"+({os}[^"]+)"""",
-    """"conditionalAccessStatus"+:"+({outcome}[^"]+)"""",
-    """"tokenIssuerType"+:"+({app}[^"]+)"""",
-    """"failureReason"+:"+({failure_reason}[^"]+?)(\.)?"""",
-    """"userAgent"+:"+({user_agent}[^"]+)\s*"""",
-    """"operationName"+:"+({event_name}[^",]+)""",
-    """"authenticationMethod":"({auth_method}[^"]+)"""",
-    """"additionalDetails":"({additional_info}[^"]+)"""",
-    """"countryOrRegion":"({country_code}[^"]+)"""",
-    """"appDisplayName":"({resource}[^"]+)"""",
-    """"resultType":"({error_code}\d+)"""",
-    """deviceDetail":\{[^\}]+?displayName":"({src_host}[^"]+)"""",
-    """userId":"({user_id}[^"]+)""""
-  ]
-}
+    """exabeam_host=([^=@]+@\s{0,100})?({host}\S+)""",
+    """"time"{1,20}:"{1,20}({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100})""",
+    """"callerIpAddress"{1,20}:"{1,20}({src_ip}[A-Fa-f:\d.]+)"""",
+    """"identity"{1,20}:"{1,20}(({user_id}\w+-\w+-\w+-\w+-\w+)|({user_fullname}({user_lastname}[^",\s]+)\s{0,100}
 ```

@@ -9,19 +9,19 @@ Name = sigsci-web-activity
   TimeFormat ="yyyy-MM-dd'T'HH:ss:SSZ"
   Conditions = [ """serverHostname""", """remoteHostname""", """serverName""", """uri"""]
   Fields = [
-    """"+serverHostname"+:"+({src_host}[^"]+)""",
-    """"+remoteIP"+:"+({dest_ip}[^"]+)""",
-    """"+remoteHostname"+:"+({dest_host}[^"]+),""",
-    """"+userAgent"+:"+({user_agent}[^"]+)""",
-    """"+timestamp"+:"+({time}[^"]+)""",
-    """"+method"+:"+({method}[^"]+)""",
-    """"+path"+:"+({uri_path}[^"]+)""",
-    """"+responseCode"+:({result_code}\d+)""",
-    """"+Host"+."+({host}[^"]+)""",
-    """BLOCKED"+":\s*\{"+type"+:"+({action}[^"]+)""",
-    """"+protocol"+:"+({protocol}[^"]+)""",
-    """"+Content-Type"+:"+({mime}[^";]+)""",
-    """"+responseSize"+:({bytes_out}\d+)"""
+    """"{1,20}serverHostname"{1,20}:"{1,20}({src_host}[^"]+)""",
+    """"{1,20}remoteIP"{1,20}:"{1,20}({dest_ip}[^"]+)""",
+    """"{1,20}remoteHostname"{1,20}:"{1,20}({dest_host}[^"]+),""",
+    """"{1,20}userAgent"{1,20}:"{1,20}({user_agent}[^"]+)""",
+    """"{1,20}timestamp"{1,20}:"{1,20}({time}[^"]+)""",
+    """"{1,20}method"{1,20}:"{1,20}({method}[^"]+)""",
+    """"{1,20}path"{1,20}:"{1,20}({uri_path}[^"]+)""",
+    """"{1,20}responseCode"{1,20}:({result_code}\d{1,100})""",
+    """"{1,20}Host"{1,20}."{1,20}({host}[^"]+)""",
+    """BLOCKED"{1,20}":\s{0,100}\{"{1,20}type"{1,20}:"{1,20}({action}[^"]+)""",
+    """"{1,20}protocol"{1,20}:"{1,20}({protocol}[^"]+)""",
+    """"{1,20}Content-Type"{1,20}:"{1,20}({mime}[^";]+)""",
+    """"{1,20}responseSize"{1,20}:({bytes_out}\d{1,100})"""
     ]
 }
 ```

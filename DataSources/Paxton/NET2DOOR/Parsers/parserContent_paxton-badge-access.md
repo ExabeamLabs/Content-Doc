@@ -10,7 +10,7 @@ Name = paxton-badge-access
   Conditions = [ """ PaxtonNet2 """, """CardNumber=""", """EventTypeDescription="""" ]
   Fields = [
     """({host}[\w\-.]+) PaxtonNet2""",
-    """EventTime="({time}\d+-\d\d-\d\d\d\d \d\d:\d\d:\d\d)""",
+    """EventTime="({time}\d{1,100}-\d\d-\d\d\d\d \d\d:\d\d:\d\d)""",
     """UserID="({employee_id}[^"]+)"""",
     """FirstName="({first_name}[^"]+)"""",
     """Surname="({last_name}[^"]+)"""",

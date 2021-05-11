@@ -11,9 +11,9 @@ Name = powershell-process-created
   Conditions = [ """Engine state is changed from None to Available""", """Engine Lifecycle""" ]
   Fields = [
     """({event_name}A new process has been created)""",
-    """Windows PowerShell\s+\S+\s+({time}\w+ \w+ \d\d \d\d:\d\d:\d\d \d\d\d\d)\s+({event_code}\d+)""",
+    """Windows PowerShell\s{1,100}\S+\s{1,100}({time}\w+ \w+ \d\d \d\d:\d\d:\d\d \d\d\d\d)\s{1,100}({event_code}\d{1,100})""",
     """({host}[\w.\-]+) Engine Lifecycle""",
-    """\sHostApplication=({process}(|({directory}[^\s]+?))({process_name}[^\s\\\/]+).*?)\s+EngineVersion="""
+    """\sHostApplication=({process}(|({directory}[^\s]+?))({process_name}[^\s\\\/]+).*?)\s{1,100}EngineVersion="""
   ]
   DupFields = [ "host->dest_host", "process->command_line", "directory->process_directory" ]
 }

@@ -11,17 +11,17 @@ Name = cyphort-alert
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
     """lastActivityTime=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\w+\s+\d+\s+\d\d:\d\d:\d\d\s+({host}[^\s]+)""",
-    """\|Cyphort\|.+?\|.+?\|.+?\|({alert_type}.+?)\|""",
-    """\|Cyphort\|.+?\|.+?\|.+?\|({alert_name}.+?)\|""",
-    """\|Cyphort\|.+?\|.+?\|.+?\|.+?\|({alert_severity}.+?)\|""",
-    """\seventId=({alert_id}\d+)""",
+    """\w+\s{1,100}\d{1,100}\s{1,100}\d\d:\d\d:\d\d\s{1,100}({host}[^\s]+)""",
+    """\|Cyphort\|[^|]+?\|[^|]+?\|[^|]+?\|({alert_type}.+?)\|""",
+    """\|Cyphort\|[^|]+?\|[^|]+?\|[^|]+?\|({alert_name}.+?)\|""",
+    """\|Cyphort\|[^|]+?\|[^|]+?\|[^|]+?\|[^|]+?\|({alert_severity}.+?)\|""",
+    """\seventId=({alert_id}\d{1,100})""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\sfileName=({file_name}.+?)\s+\w+=""",
-    """\surl=({malware_url}[^\r\n]+)\s+""",
-    """\smalwareSeverity=({alert_severity}.+?)\s+\w+=""",
-    """\smalwareCategory=({alert_type}.+?)\s+\w+="""
+    """\sfileName=({file_name}.+?)\s{1,100}\w+=""",
+    """\surl=({malware_url}[^\r\n]+)\s{1,100}""",
+    """\smalwareSeverity=({alert_severity}.+?)\s{1,100}\w+=""",
+    """\smalwareCategory=({alert_type}.+?)\s{1,100}\w+="""
   ]
   DupFields = ["file_name->process_name"]
 }

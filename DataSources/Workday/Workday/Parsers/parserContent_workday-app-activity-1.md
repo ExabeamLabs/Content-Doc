@@ -10,16 +10,16 @@ Name = workday-app-activity-1
   Conditions = [ """"activityAction":""", """"tenantHost":""" , """workday"""]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """"userAgent":\s*"({user_agent}[^"]+)""",
-    """"userAgent":\s*"[^"]*({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^"]+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
-    """"requestTime":\s*"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
-    """"deviceType":\s*"({device_type}[^"]+)""",
-    """"systemAccount":\s*";*({user}[^;"]+)""",
-    """"tenantHost":\s*"({host}[^"]+)""",
-    """"activityAction":\s*"({additional_info}[^"]+)""",
-    """"ipAddress":\s*"({src_ip}[^"]+)""",
-    """"target":\s*\{[^\}]*"descriptor":\s*"({object}[^"]+?)"""",
-    """"taskDisplayName":\s*"({activity}[^"]+)"""
+    """"userAgent":\s{0,100}"({user_agent}[^"]+)""",
+    """"userAgent":\s{0,100}"[^"]*({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^"]+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
+    """"requestTime":\s{0,100}"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
+    """"deviceType":\s{0,100}"({device_type}[^"]+)""",
+    """"systemAccount":\s{0,100}";*({user}[^;"]+)""",
+    """"tenantHost":\s{0,100}"({host}[^"]+)""",
+    """"activityAction":\s{0,100}"({additional_info}[^"]+)""",
+    """"ipAddress":\s{0,100}"({src_ip}[^"]+)""",
+    """"target":\s{0,100}\{[^\}]*"descriptor":\s{0,100}"({object}[^"]+?)"""",
+    """"taskDisplayName":\s{0,100}"({activity}[^"]+)"""
     """({app}(W|w)orkday)"""
   ]
 }

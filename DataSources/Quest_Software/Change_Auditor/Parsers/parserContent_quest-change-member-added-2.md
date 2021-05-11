@@ -5,7 +5,7 @@ Name = quest-change-member-added-2
      DataType = "member-added"
      Conditions = [ """CEF:""", """Quest Software""", """|Change Auditor|""", """|Active Directory|""", """User member-of added""" ]
      Fields = ${QuestParserTemplates.quest-change-auditor-events.Fields}[
-       """msg=The user\s*[^\\]+\\*({account_id}[^(]+)[^=]+?was added to the group\s[^\\]+\\*({group_name}[^\s\.]+)"""
+       """msg=The user\s{0,100}[^\\]+\\*({account_id}[^(]+)[^=]+?was added to the group\s[^\\]+\\*({group_name}[^\s\.]+)"""
 ]
 }
 quest-change-auditor-events = {
@@ -23,7 +23,7 @@ quest-change-auditor-events = {
       """suid=({user_sid}\S+)""",
       """suser=(({domain}[^\\]+)\\*)?({user}[^=]+?)\s\w+=""",
       """event=({event_name}[^=]+?)\s\w+=""",
-      """msg=({additional_info}[^=]+?)\s*\w+="""
+      """msg=({additional_info}[^=]+?)\s{0,100}\w+="""
     ]
 
 ```

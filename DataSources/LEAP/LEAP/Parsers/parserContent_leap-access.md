@@ -9,8 +9,6 @@ Name = leap-access
   TimeFormat = "yyyyMMdd:HH.mm.ss"
   Conditions = [ """,LEAPACCESS,""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """({location_country}\w+),({app_code}({app}LEAPS)[^,]*),LEAPACCESS,({time}[^,]+),({user}[^,]+),({url}[^,]+),\s*(?:({dest_ip}[a-fA-F\d.:]+)|({dest_host}.+?))\s*,(NULL|null|({object}.+?))\s*,(NULL|null|({field_name}.+?))\s*,\s*"*({activity}.+?)\s*"*,(?:[^,]+,){2}\s*(NULL|null|({primary_key}.+?)),\s*(NULL|null|({secondary_key}.+?)),(?:[^,]*,){2}\s*"({additional_info}.+?)"(,\s*"(NULL|null|({resource}[^"]+)))?"""
-  ]
-}
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """({location_country}\w+),({app_code}({app}LEAPS)[^,]*),LEAPACCESS,({time}[^,]+),({user}[^,]+),({url}[^,]+),\s{0,100}(?:({dest_ip}[a-fA-F\d.:]+)|({dest_host}.+?))\s{0,100}
 ```

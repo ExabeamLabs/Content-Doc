@@ -9,16 +9,16 @@ Name = cef-mcafee-print-activity
       TimeFormat = "epoch"
       Conditions = [ """McAfee|Data Loss Prevention""", """|DLP: Printing Protection|""" ]
       Fields = [
-        """(\s|\|)rt=({time}.+?)\s+([\w\.-]+=|$)""",
-        """\d\d:\d\d\s+({host}[^\s]+)\sCEF:""",
-        """(\s|\|)cs2=({dest_host}.+?)\s+([\w\.-]+=|$)""",
-        """(\s|\|)cs2=\\+.+?(\\+({printer_name}.+?))\s+([\w\.-]+=|$)""",
-        """(\s|\|)dhost=({dest_host}.+?)\s+([\w\.-]+=|$)""",
-        """(\s|\|)dst=({dest_ip}.+?)\s+([\w\.-]+=|$)""",
-        """(\s|\|)duser=({user}.+?)\s+([\w\.-]+=|$)""",
-        """(\s|\|)dntdom=({domain}.+?)\s+([\w\.-]+=|$)""",
-        """(\s|\|)fname=({object}.+?)\s+([\w\.-]+=|$)""",
-        """(\s|\|)fsize=({bytes}.+?)\s+([\w\.-]+=|$)""",
+        """(\s|\|)rt=({time}.+?)\s{1,100}([\w\.-]+=|$)""",
+        """\d\d:\d\d\s{1,100}({host}[^\s]+)\sCEF:""",
+        """(\s|\|)cs2=({dest_host}.+?)\s{1,100}([\w\.-]+=|$)""",
+        """(\s|\|)cs2=\\+.+?(\\+({printer_name}.+?))\s{1,100}([\w\.-]+=|$)""",
+        """(\s|\|)dhost=({dest_host}.+?)\s{1,100}([\w\.-]+=|$)""",
+        """(\s|\|)dst=({dest_ip}.+?)\s{1,100}([\w\.-]+=|$)""",
+        """(\s|\|)duser=({user}.+?)\s{1,100}([\w\.-]+=|$)""",
+        """(\s|\|)dntdom=({domain}.+?)\s{1,100}([\w\.-]+=|$)""",
+        """(\s|\|)fname=({object}.+?)\s{1,100}([\w\.-]+=|$)""",
+        """(\s|\|)fsize=({bytes}.+?)\s{1,100}([\w\.-]+=|$)""",
         """(\s|\|)({activity}Printing)""",
       ]
     }

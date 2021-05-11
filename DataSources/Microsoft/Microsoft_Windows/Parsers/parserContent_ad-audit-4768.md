@@ -9,21 +9,21 @@ Name = ad-audit-4768
   TimeFormat = "epoch_sec"
   Conditions = [ """ADAuditPlus""", """EVENT_NUMBER = 4768""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-    """TIME_GENERATED\s*=\s*({time}\d+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[\w\-.]+)""",
+    """TIME_GENERATED\s{0,100}=\s{0,100}({time}\d{1,100})""",
     """({host}[\w\-.]+) ADAuditPlus""",
-    """USERNAME\s*=\s*({user}[^\s\]@]+)\s*\]""",
-    """USERNAME\s*=\s*({user_email}[^\s\]@]+@[^\s\]@]+)\s*\]""",
-    """CLIENT_IP_ADDRESS\s*=\s*({dest_ip}[A-Fa-f:\d.]+)""",
-    """DOMAIN\s*=\s*({domain}[^\\\/\]]+?)\s*\]""",
-    """RECORD_NUMBER\s*=\s*({record_id}\d+)""",
-    """EVENT_NUMBER\s*=\s*({event_code}\d+)""",
-    """USER_SID\s*=\s*\%?\{?({user_sid}[^\}\s\]]+)""",
-    """ERROR_CODE\s*=\s*({result_code}[^\s]+)""",
-    """EVENT_TYPE_TEXT\s*=\s*({outcome}.+?)\s*\]""",
-    """LOGON_SERVICE\s*=\s*(null|-|({service_name}[^\s\]]+))""",
-    """TICKET_OPTIONS\s*=\s*(null|-|({ticket_options}[^\s\]]+))""",
-    """TICKET_ENCRYPTION_TYPE\s*=\s*(null|-|({ticket_encryption_type}[^\s\]]+))""",
+    """USERNAME\s{0,100}=\s{0,100}({user}[^\s\]@]+)\s{0,100}\]""",
+    """USERNAME\s{0,100}=\s{0,100}({user_email}[^\s\]@]+@[^\s\]@]+)\s{0,100}\]""",
+    """CLIENT_IP_ADDRESS\s{0,100}=\s{0,100}({dest_ip}[A-Fa-f:\d.]+)""",
+    """DOMAIN\s{0,100}=\s{0,100}({domain}[^\\\/\]]+?)\s{0,100}\]""",
+    """RECORD_NUMBER\s{0,100}=\s{0,100}({record_id}\d{1,100})""",
+    """EVENT_NUMBER\s{0,100}=\s{0,100}({event_code}\d{1,100})""",
+    """USER_SID\s{0,100}=\s{0,100}\%?\{?({user_sid}[^\}\s\]]+)""",
+    """ERROR_CODE\s{0,100}=\s{0,100}({result_code}[^\s]+)""",
+    """EVENT_TYPE_TEXT\s{0,100}=\s{0,100}({outcome}.+?)\s{0,100}\]""",
+    """LOGON_SERVICE\s{0,100}=\s{0,100}(null|-|({service_name}[^\s\]]+))""",
+    """TICKET_OPTIONS\s{0,100}=\s{0,100}(null|-|({ticket_options}[^\s\]]+))""",
+    """TICKET_ENCRYPTION_TYPE\s{0,100}=\s{0,100}(null|-|({ticket_encryption_type}[^\s\]]+))""",
   ]
 }
 ```

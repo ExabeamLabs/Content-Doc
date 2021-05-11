@@ -10,21 +10,17 @@ Name = cisco-file-activity
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
   Conditions = [ """, ApplicationProtocol:""", """, FileDirection: """, """Client: """ ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """({time}\d+-\d+-\d+T\d+:\d+:\d+Z)\s+({host}[\w\-.]+)?\s*(\(|\%)""",
-    """SrcIP:\s*({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """DstIP:\s*({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """DstIP:\s*({web_domain}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """SrcPort:\s*({src_port}\d+)""",
-    """DstPort:\s*({dest_port}\d+)""",
-    """FileAction:\s*({action}[^,]+)""",
-    """User:\s*(Unknown|({user}[^,\s]+))""",
-    """Client:\s*({user_agent}[^,]+)""",
-    """Protocol:\s*({protocol}[^,]+)""",
-    """FileSize:\s*({bytes}[^,]+)""",
-    """FilePolicy:\s*({policy}[^,]+?)\s*,""",
-    """FileDirection:\s*({direction}[^,]+)""",
-    """FileName:\s*(|({file_path}(|({file_parent}[^",]*?))[\\\/]*({file_name}[^\\\/",]+?(\.({file_ext}[^\\\/\.\s",]+))?)))\s*,""",
-  ]
-}
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}Z)\s{1,100}({host}[\w\-.]+)?\s{0,100}(\(|\%)""",
+    """SrcIP:\s{0,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """DstIP:\s{0,100}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """DstIP:\s{0,100}({web_domain}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """SrcPort:\s{0,100}({src_port}\d{1,100})""",
+    """DstPort:\s{0,100}({dest_port}\d{1,100})""",
+    """FileAction:\s{0,100}({action}[^,]+)""",
+    """User:\s{0,100}(Unknown|({user}[^,\s]+))""",
+    """Client:\s{0,100}({user_agent}[^,]+)""",
+    """Protocol:\s{0,100}({protocol}[^,]+)""",
+    """FileSize:\s{0,100}({bytes}[^,]+)""",
+    """FilePolicy:\s{0,100}({policy}[^,]+?)\s{0,100}
 ```

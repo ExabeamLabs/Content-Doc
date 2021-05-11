@@ -9,12 +9,12 @@ Name = s-azura-pri-auth-failed
   TimeFormat = "epoch"
   Conditions = [ """pfsvc: Failed """, """ auth for """ ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
-    """({host}[\w\.-]+)\s+pfsvc:""",
-    """Failed\s+({auth_method}.+?)\s+auth for """,
-    """\suser\s+'({user_dn}[^']+)' \(distinguishedName format\)""",
-    """\suser\s+'({user}[^']+)'""",
-    """Logon failure:\s*({failure_reason}.+?)(\s*\(|$)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
+    """({host}[\w\.-]+)\s{1,100}pfsvc:""",
+    """Failed\s{1,100}({auth_method}.+?)\s{1,100}auth for """,
+    """\suser\s{1,100}'({user_dn}[^']+)' \(distinguishedName format\)""",
+    """\suser\s{1,100}'({user}[^']+)'""",
+    """Logon failure:\s{0,100}({failure_reason}.+?)(\s{0,100}\(|$)""",
   ]
 }
 ```

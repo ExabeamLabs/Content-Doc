@@ -10,7 +10,7 @@ Name = trend-micro-alert-2
   Conditions = [ """ WFBSS-SVC-AC [LogBehaviorMonitoring""", """Security Threat="""" ]
   Fields = [
     """({host}\S+) WFBSS-SVC-AC""",
-    """\d+ ({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d) \d+\.\d+\.\d+\.\d+""",
+    """\d{1,100} ({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d) \d{1,100}\.\d{1,100}\.\d{1,100}\.\d{1,100}""",
     """Device name="({src_host}[^"]+)""",
     """User="({user}[^"]+)""",
     """Security Threat="({alert_name}[^"]+)""",

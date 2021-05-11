@@ -9,10 +9,10 @@ Name = ovirt-app-activity-38
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """EVENT_ID: NETWORK_UPDATE_VM_INTERFACE""", """ovirt""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d),.+?ovirt""",
-    """EVENT_ID:\s*({activity}[^\(\)]+)""",
-    """EVENT_ID:.*?Interface nic1 \(({resource}[^\)]+)\) was updated for VM ({object}[^\s"]+?)\.\s+\(User: ({user}[^\s\(\)"]+)""",
+    """EVENT_ID:\s{0,100}({activity}[^\(\)]+)""",
+    """EVENT_ID:.*?Interface nic1 \(({resource}[^\)]+)\) was updated for VM ({object}[^\s"]+?)\.\s{1,100}\(User: ({user}[^\s\(\)"]+)""",
     """({app}ovirt)"""
   ]
 }

@@ -13,11 +13,11 @@ Name = raw-4779
     """({event_name}A session was disconnected from a Window Station)""",
     """<Computer>({host}[^<]+)</Computer>""",
     """({event_code}4779)""",
-    """Account Name(:|=)\s*({user}[^\s;]+)[\s;]*Account Domain(:|=)""",
-    """Account Domain(:|=)\s*({domain}[^\s;]+)[\s;]*Logon ID(:|=)""",
-    """Logon ID(:|=)\s*({logon_id}[^\s;]+)""",
-    """Service Name(:|=)\s*({dest_host}.+?)[\s;]*Service ID""",
-    """Client Address(:|=)\s*(::[\w]+:)?(0.0.0.0|({src_ip}[a-fA-F:\d.]+))"""
+    """Account Name(:|=)\s{0,100}({user}[^\s;]+)[\s;]*Account Domain(:|=)""",
+    """Account Domain(:|=)\s{0,100}({domain}[^\s;]+)[\s;]*Logon ID(:|=)""",
+    """Logon ID(:|=)\s{0,100}({logon_id}[^\s;]+)""",
+    """Service Name(:|=)\s{0,100}({dest_host}.+?)[\s;]*Service ID""",
+    """Client Address(:|=)\s{0,100}(::[\w]+:)?(0.0.0.0|({src_ip}[a-fA-F:\d.]+))"""
   ]
 }
 ```

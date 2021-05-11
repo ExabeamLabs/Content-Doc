@@ -6,12 +6,12 @@ Name = wazuh-4738
   Conditions = [ """"data.id":"4738"""", """"type":"wazuh-alerts"""", """"decoder.parent":"windows""""  ]
   Fields = ${WazuhParserTemplates.wazuh-windows-template.Fields} [
     """({event_name}A user account was changed)""",
-    """Security ID:\s*(|({user_sid}.+?))\s+Account Name:""",
-    """Account Name:\s*(|({user}.+?))\s+Account Domain:\s*(|({domain}.+?))\s+Logon ID:\s*(|({logon_id}.+?))\s+Target Account:""",
-    """Target\sAccount.+?Security ID:\s*({target_sid}.+?)\s""",
-    """Target\sAccount.+?Account Name:\s*({target_user}.+?)\s""",
-    """Target\sAccount.+?Account Domain:\s*({target_domain}.+?)\s""",
-    """Changed Attributes:\s*(|({attribute}.+?))\s+SAM Account Name"""
+    """Security ID:\s{0,100}(|({user_sid}.+?))\s{1,100}Account Name:""",
+    """Account Name:\s{0,100}(|({user}.+?))\s{1,100}Account Domain:\s{0,100}(|({domain}.+?))\s{1,100}Logon ID:\s{0,100}(|({logon_id}.+?))\s{1,100}Target Account:""",
+    """Target\sAccount.+?Security ID:\s{0,100}({target_sid}.+?)\s""",
+    """Target\sAccount.+?Account Name:\s{0,100}({target_user}.+?)\s""",
+    """Target\sAccount.+?Account Domain:\s{0,100}({target_domain}.+?)\s""",
+    """Changed Attributes:\s{0,100}(|({attribute}.+?))\s{1,100}SAM Account Name"""
   ]
 }
 wazuh-windows-template = {
@@ -20,7 +20,7 @@ wazuh-windows-template = {
     Lms = Direct
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
     Fields = [
-      """"data.id":"({event_code}\d+)""""
+      """"data.id":"({event_code}\d{1,100})""""
       """"@timestamp":"({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)"""
       """"data.dstuser":"(\(no user\)|({dest_user}[^"]+))"""
       """"data.status":"({outcome}[^"]+)"""
@@ -28,7 +28,7 @@ wazuh-windows-template = {
       """"data.data":"({data}[^"]+)"""
       """"path":"({log_path}[^"]+)"""
       """"data.system_name":"({host}[^"]+)"""
-      """"agent.id":"({agent_id}\d+)"""
+      """"agent.id":"({agent_id}\d{1,100})"""
       """"manager.name":"({wazuh_manager}[^"]+)"""
       """"data.data":"({data}[^"]+)"""
       """"rule.description":"({description}[^"]+)"""

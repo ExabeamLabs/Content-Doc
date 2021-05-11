@@ -11,9 +11,9 @@ Name = cisco-nac-logon-3
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d (\+|-)\d\d:\d\d)""",
-    """({host}[^\s]+)\s*CISE_TACACS_Accounting""",
+    """({host}[^\s]+)\s{0,100}CISE_TACACS_Accounting""",
     """({event_name}CISE_TACACS_Accounting)""",
-    """Host:\s*({host}\S+)""",
+    """Host:\s{0,100}({host}\S+)""",
     """, NetworkDeviceName=({network}[^,]+),""",
     """, Device IP Address=({auth_server}[^,]+)""",
     """, Device IP Address=({dest_ip}[a-fA-F\d.:]+)""",
@@ -21,7 +21,7 @@ Name = cisco-nac-logon-3
     """\sService=((?i)None|({service}[^,]+))""",
     """\sUser=(({user_email}[^\s]+?@[^\s]+?)|({user}[^,]+)),""",
     """\sRemote-Address=({src_ip}[^,]+)""",
-    """\sPort=({src_port}\d+)""",
+    """\sPort=({src_port}\d{1,100})""",
     """\sAuthen-Method=({auth_method}[^,]+)""",
     """\sAcsSessionID=({session_id}[^,]+)""",
   ]

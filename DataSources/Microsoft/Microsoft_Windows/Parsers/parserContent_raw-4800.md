@@ -11,14 +11,14 @@ Name = raw-4800
   Fields = [
     """({event_name}The workstation was locked)""",
     """({time}\w{3}\s\d{2}\s\d{2}:\d{2}:\d{2}\s\d{4})""",
-    """(Mon|Tue|Wed|Thu|Fri|Sat|Sun) ({time}\w+ \d+ \d+:\d+:\d+ \d+)""",
-    """(?i)(((audit|success)( |_)(success|audit))|information)(<\d+>|\s+)({host}[\w\-.]+)""",
-    """Microsoft-Windows-Security-Auditing.*?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)\s+(am|AM|pm|PM|({host}[\w.\-]+))""",
+    """(Mon|Tue|Wed|Thu|Fri|Sat|Sun) ({time}\w+ \d{1,100} \d{1,100}:\d{1,100}:\d{1,100} \d{1,100})""",
+    """(?i)(((audit|success)( |_)(success|audit))|information)(<\d{1,100}>|\s{1,100})({host}[\w\-.]+)""",
+    """Microsoft-Windows-Security-Auditing.*?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)\s{1,100}(am|AM|pm|PM|({host}[\w.\-]+))""",
     """({event_code}4800)""",
-    """Account Name:\s*({user}.+?)\s*Account Domain""",
-    """Account Domain:\s*({domain}.+?)\s*Logon ID""",
-    """Logon ID:\s*({logon_id}[^\s]+)\s+Session"""
-    """Computer(\w+)?["\s]*(:|=)\s*"?({host}.+?)("|\s)"""
+    """Account Name:\s{0,100}({user}.+?)\s{0,100}Account Domain""",
+    """Account Domain:\s{0,100}({domain}.+?)\s{0,100}Logon ID""",
+    """Logon ID:\s{0,100}({logon_id}[^\s]+)\s{1,100}Session"""
+    """Computer(\w+)?["\s]*(:|=)\s{0,100}"?({host}.+?)("|\s)"""
   ]
   DupFields = [ "host->dest_host" ]
 }

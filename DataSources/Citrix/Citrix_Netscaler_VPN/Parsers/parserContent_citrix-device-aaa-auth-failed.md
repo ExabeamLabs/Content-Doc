@@ -9,8 +9,8 @@ Name = citrix-device-aaa-auth-failed
   TimeFormat = "MM/dd/yyyy:HH:mm:ss"
   Conditions = [ """ AAA Message """, """Authentication failed""" ]
   Fields = [
-    """({time}\d+\/\d+\/\d+:\d+:\d+:\d+)\s*GMT""",
-    """GMT\s*({host}[^:]+)\s:\s*({event_code}(\w+\s+){3})[^:]+:\s*"+({failure_reason}.+)\s*for user\s*({user}[^\s]+)"""
+    """({time}\d{1,100}\/\d{1,100}\/\d{1,100}:\d{1,100}:\d{1,100}:\d{1,100})\s{0,100}GMT""",
+    """GMT\s{0,100}({host}[^:]+)\s:\s{0,100}({event_code}(\w+\s{1,100}){3})[^:]+:\s{0,100}"{1,20}({failure_reason}.+)\s{0,100}for user\s{0,100}({user}[^\s]+)"""
   ]
 }
 ```

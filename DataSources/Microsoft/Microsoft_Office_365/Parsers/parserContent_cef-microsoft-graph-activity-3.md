@@ -15,10 +15,10 @@ cef-o365-app-login-1 = {
    Lms = Direct
    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
    Fields =[
-     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-     """({time}\d+-\d+-\d+T\d+:\d+:\d+.\d+Z)\s+[^\s]+\s+Skyformation""",
+     """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+     """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}.\d{1,100}Z)\s{1,100}[^\s]+\s{1,100}Skyformation""",
      """"event-name":"({activity}[^"]+)""",
-     """app-user-displayname":"({user_fullname}[^\s"]+\s+[^"]+)""",
+     """app-user-displayname":"({user_fullname}[^\s"]+\s{1,100}[^"]+)""",
      """user-email":"({user_email}[^@"]+@[^"]+)""",
      """app-user-id":"({user_id}[\w-]+)""",
      """appName":"({app}[^"]+)""",
@@ -26,7 +26,7 @@ cef-o365-app-login-1 = {
      """src-ip":"({src_ip}[\da-fA-F\.:]+)""",
      """device":[^}]+?"os":[^}]+?"name":"({os}[^"]+)""",
      """browser":"((?i)(unknown)|({browser}[^"]+))""",
-     """"location"[^}]+?city"+:"+({location_city}[^",]+)""",
+     """"location"[^}]+?city"{1,20}:"{1,20}({location_city}[^",]+)""",
      """"location"[^}]+?countryCode":"({location_country}[^",]+)""",
      """"location"[^}]+?region":"({region}[^",]+)""",
      """activityResult":[^}]+?"isSuccess":({outcome}(?i)(true|false))""",

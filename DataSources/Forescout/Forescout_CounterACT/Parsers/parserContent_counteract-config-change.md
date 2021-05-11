@@ -10,11 +10,11 @@ Name = counteract-config-change
   Conditions = [ """ User """, """ session """, """ Details: """, """ Main Appliance[""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """(\w+\s+\d+ \d+:\d+:\d+)\s+({host}\S+)\s+Main Appliance""",
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
-    """\sUser\s+({user}.+?)\s+session\s+({session_id}\d+)\s+({activity}\w+)\s+({object}.+?)\.""",
-    """\sDetails:\s*({additional_info}.+?)(\s+device\s+({dest_ip}[a-fA-F\d.:]+))?\s*$""",
-    """from\[({src_ip}[a-fA-F\d.:]+)\]\s+to\[({dest_ip}[a-fA-F\d.:]+)\]""",
+    """(\w+\s{1,100}\d{1,100} \d{1,100}:\d{1,100}:\d{1,100})\s{1,100}({host}\S+)\s{1,100}Main Appliance""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
+    """\sUser\s{1,100}({user}.+?)\s{1,100}session\s{1,100}({session_id}\d{1,100})\s{1,100}({activity}\w+)\s{1,100}({object}.+?)\.""",
+    """\sDetails:\s{0,100}({additional_info}.+?)(\s{1,100}device\s{1,100}({dest_ip}[a-fA-F\d.:]+))?\s{0,100}$""",
+    """from\[({src_ip}[a-fA-F\d.:]+)\]\s{1,100}to\[({dest_ip}[a-fA-F\d.:]+)\]""",
   ]
 }
 ```

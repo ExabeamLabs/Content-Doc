@@ -10,15 +10,15 @@ Name = sfdc-app-login
   Conditions = [ """"LoginUrl"""",""""login.salesforce.com"""" ]
   Fields = [
     """({app}salesforce)""",
-    """LoginTime":\s*"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
+    """LoginTime":\s{0,100}"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
     """exabeam_host=({host}\S+)""",
-    """Status":\s*"({outcome}[^"]+)""",
-    """LoginType":\s*"({login_type}[^"]+)""",
-    """Browser":\s*"({browser}[^"]+)""",
-    """UserId":\s*"({user}[^"]+)""",
-    """SourceIp":\s*"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """Platform":\s*"({os}[^"]+)""",
-    """Application":\s*"({protocol}[^"]+)""",
+    """Status":\s{0,100}"({outcome}[^"]+)""",
+    """LoginType":\s{0,100}"({login_type}[^"]+)""",
+    """Browser":\s{0,100}"({browser}[^"]+)""",
+    """UserId":\s{0,100}"({user}[^"]+)""",
+    """SourceIp":\s{0,100}"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """Platform":\s{0,100}"({os}[^"]+)""",
+    """Application":\s{0,100}"({protocol}[^"]+)""",
   ]
 }
 ```

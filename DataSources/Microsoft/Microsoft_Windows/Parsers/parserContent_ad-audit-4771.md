@@ -9,19 +9,19 @@ Name = ad-audit-4771
   TimeFormat = "epoch_sec"
   Conditions = [ """ADAuditPlus""", """EVENT_NUMBER = 4771""", """Kerberos pre-authentication failed""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-    """TIME_GENERATED\s*=\s*({time}\d+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[\w\-.]+)""",
+    """TIME_GENERATED\s{0,100}=\s{0,100}({time}\d{1,100})""",
     """({host}[\w\-.]+) ADAuditPlus""",
-    """USERNAME\s*=\s*({user}[^\s\]]+)""",
-    """CLIENT_IP_ADDRESS\s*=\s*({dest_ip}[A-Fa-f:\d.]+)""",
-    """CLIENT_HOST_NAME\s*=\s*({dest_host}[^\]]+?)\s*\]""",
-    """DOMAIN\s*=\s*([^\/]+\/)?({domain}[^\\\/]+?)\s*\]""",
-    """SOURCE\s*=\s*({src_host}[\w\-.]+)""",
-    """RECORD_NUMBER\s*=\s*({record_id}\d+)""",
-    """EVENT_NUMBER\s*=\s*({event_code}\d+)""",
-    """USER_SID\s*=\s*\%\{({user_sid}[^\}]+)""",
-    """ERROR_CODE\s*=\s*({result_code}[^\s]+)""",
-    """EVENT_TYPE_TEXT\s*=\s*({outcome}.+?)\s*\]""",
+    """USERNAME\s{0,100}=\s{0,100}({user}[^\s\]]+)""",
+    """CLIENT_IP_ADDRESS\s{0,100}=\s{0,100}({dest_ip}[A-Fa-f:\d.]+)""",
+    """CLIENT_HOST_NAME\s{0,100}=\s{0,100}({dest_host}[^\]]+?)\s{0,100}\]""",
+    """DOMAIN\s{0,100}=\s{0,100}([^\/]+\/)?({domain}[^\\\/]+?)\s{0,100}\]""",
+    """SOURCE\s{0,100}=\s{0,100}({src_host}[\w\-.]+)""",
+    """RECORD_NUMBER\s{0,100}=\s{0,100}({record_id}\d{1,100})""",
+    """EVENT_NUMBER\s{0,100}=\s{0,100}({event_code}\d{1,100})""",
+    """USER_SID\s{0,100}=\s{0,100}\%\{({user_sid}[^\}]+)""",
+    """ERROR_CODE\s{0,100}=\s{0,100}({result_code}[^\s]+)""",
+    """EVENT_TYPE_TEXT\s{0,100}=\s{0,100}({outcome}.+?)\s{0,100}\]""",
   ]
 }
 ```

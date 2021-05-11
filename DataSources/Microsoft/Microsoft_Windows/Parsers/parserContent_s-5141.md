@@ -10,13 +10,13 @@ Name = s-5141
   Conditions = [ "EventCode=5141", "A directory service object was deleted" ]
   Fields = [
     """({event_name}A directory service object was deleted)""",
-    """({time}\d+/\d+/\d+ \d+:\d+:\d+ (am|AM|pm|PM))""",
+    """({time}\d{1,100}/\d{1,100}/\d{1,100} \d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM))""",
     """ComputerName=({host}[\w.\-]+)""",
     """EventCode=({event_code}\w+)""",
-    """Subject:.+?Account Name:\s+({user}.+?)\s+Account Domain:\s+({domain}.+?)\s+Logon ID:\s+({logon_id}[^\s]+)""",
-    """Object:.+?Class:\s+({object_class}.+?)\s+Operation:""",
-    """Object:\s+DN:\s+({object_dn}.+?)\s+GUID:""",
-    """Object:\s+DN:.+?({object_ou}OU.+?)\s+GUID:"""
+    """Subject:.+?Account Name:\s{1,100}({user}.+?)\s{1,100}Account Domain:\s{1,100}({domain}.+?)\s{1,100}Logon ID:\s{1,100}({logon_id}[^\s]+)""",
+    """Object:.+?Class:\s{1,100}({object_class}.+?)\s{1,100}Operation:""",
+    """Object:\s{1,100}DN:\s{1,100}({object_dn}.+?)\s{1,100}GUID:""",
+    """Object:\s{1,100}DN:.+?({object_ou}OU.+?)\s{1,100}GUID:"""
   ]
   DupFields = [ "host->dest_host" ]
 }

@@ -10,7 +10,7 @@ Name = unix-auth-failed-1
   Conditions = [ """ su: pam_unix(su:auth)""", """authentication failure;""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\w+\s+\d+\s+\d+:\d+:\d+\s+({host}[\w\-.]+)\s+su:""",
+    """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]+)\s{1,100}su:""",
     """\Wruser=({account}[^\s]+)""",
     """\Wuser=({user}[^\s]+)""",
     """({outcome}failure)""",

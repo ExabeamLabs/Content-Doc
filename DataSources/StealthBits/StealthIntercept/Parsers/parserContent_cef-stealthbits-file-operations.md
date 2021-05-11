@@ -10,16 +10,16 @@ Name = cef-stealthbits-file-operations
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
   Conditions = [ """|STEALTHbits|SBTService|""", """|FileMonitor|""", """Operation=""" ]
   Fields = [
-    """\s+({host}[\w.\-]+)\s+CEF:""",
-    """\Wrt=({time}\d+\-\d+\-\d+ \d+:\d+:\d+\.\d+)""",
+    """\s{1,100}({host}[\w.\-]+)\s{1,100}CEF:""",
+    """\Wrt=({time}\d{1,100}\-\d{1,100}\-\d{1,100} \d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100})""",
     """\Wsntdom=({domain}[^\s]+)""",
     """\Wsuser=(({domain}[^\\]+)\\)?({user}[^\s\\]+)""",
-    """\Wsrc=(|({process_name}.+?))(\s+\w+=|\s*$)""",
-    """\Wduser=(|({file_path}({file_parent}.+?)(\\({file_name}[^\\]+?))?))(\s+\w+=|\s*$)""",
-    """\Wshost=(|({dest_host}.+?))(\s+\w+=|\s*$)""",
-    """\WSuccess=\s*(|({outcome}.+?))(\s+\w+=|\s*$)""",
-    """\WBlocked=\s*(|({blocked}[^\s]+))\sAttribute""",
-    """\WOperation=\s*(|({accesses}.+?))(\s+\w+=|\s*$)"""
+    """\Wsrc=(|({process_name}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wduser=(|({file_path}({file_parent}.+?)(\\({file_name}[^\\]+?))?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wshost=(|({dest_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\WSuccess=\s{0,100}(|({outcome}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\WBlocked=\s{0,100}(|({blocked}[^\s]+))\sAttribute""",
+    """\WOperation=\s{0,100}(|({accesses}.+?))(\s{1,100}\w+=|\s{0,100}$)"""
   ]
 }
 ```

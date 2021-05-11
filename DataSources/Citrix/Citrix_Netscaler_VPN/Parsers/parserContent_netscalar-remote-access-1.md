@@ -9,7 +9,7 @@ Name = netscalar-remote-access-1
  DataType = "remote-access"
  Conditions = [ """ SSLVPN """ , """ HTTPREQUEST """ ]
  Fields =[
-   """({time}\d\d\/\d\d\/\d\d\d\d:\d\d:\d\d:\d\d)\s+({host}[\w.\-]+)(\s+\S+){3}\s+({log_type}SSLVPN HTTPREQUEST)?.*?Context\s*(({user_email}[^@]+@[^@]+)|({user}[^@]+))@({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})\s+-\s*SessionId:\s+({session_id}[^\s]+)\s*-\s*({dest_host}.*?)\s+User.*?\s*Vserver\s*({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}):({dest_port}\d+).*?SSO[^:]+:\s*({method}[^\s]+)\s+({uri_path}\/[^\s\?"]*)?({uri_query}\?[^"\s]*)?\s+""",
+   """({time}\d\d\/\d\d\/\d\d\d\d:\d\d:\d\d:\d\d)\s{1,100}({host}[\w.\-]+)(\s{1,100}\S+){3}\s{1,100}({log_type}SSLVPN HTTPREQUEST)?.*?Context\s{0,100}(({user_email}[^@]+@[^@]+)|({user}[^@]+))@({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})\s{1,100}-\s{0,100}SessionId:\s{1,100}({session_id}[^\s]+)\s{0,100}-\s{0,100}({dest_host}.*?)\s{1,100}User.*?\s{0,100}Vserver\s{0,100}({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}):({dest_port}\d{1,100}).*?SSO[^:]+:\s{0,100}({method}[^\s]+)\s{1,100}({uri_path}\/[^\s\?"]*)?({uri_query}\?[^"\s]*)?\s{1,100}""",
    """({event_name}HTTPREQUEST)"""
  ]
 }

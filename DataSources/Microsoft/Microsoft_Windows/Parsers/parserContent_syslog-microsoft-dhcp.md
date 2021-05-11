@@ -8,7 +8,7 @@ Name = syslog-microsoft-dhcp
   DataType = "dhcp"
   TimeFormat = "epoch"
   Conditions = [ """|Microsoft|DHCP|""", """|Dhcp_Server|""" ]
-  Fields = [ """\srt=({time}\d+)""",
+  Fields = [ """\srt=({time}\d{1,100})""",
     """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sdvchost=({host}[^\s]+)""",
     """\sdhost=({dest_host}[^\s]+)""",

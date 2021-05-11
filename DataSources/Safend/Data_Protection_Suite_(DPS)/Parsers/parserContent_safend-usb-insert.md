@@ -10,13 +10,13 @@ Name = safend-usb-insert
   Conditions = [ """[Safend Data Protection]""", """Action: Allowed,""" ]
   Fields = [
     """exabeam_raw=({time}\d\d \d\d \d\d\d\d \d\d:\d\d:\d\d) ({dest_ip}[A-Fa-f:\d.]+)""",
-    """Action:\s*({activity}[^,]+)""",
-    """User:\s*({user_email}[^,]+)""",
-    """Computer:\s*({host}[^,]+)""",
-    """Operating System:\s*({os}[^,]+)""",
-    """Device Type:\s*({device_type}[^,]+)""",
-    """Distinct ID:\s*(|({device_id}[^,]+)),""",
-    """Policy:\s*({activity_details}[^,]+)""",
+    """Action:\s{0,100}({activity}[^,]+)""",
+    """User:\s{0,100}({user_email}[^,]+)""",
+    """Computer:\s{0,100}({host}[^,]+)""",
+    """Operating System:\s{0,100}({os}[^,]+)""",
+    """Device Type:\s{0,100}({device_type}[^,]+)""",
+    """Distinct ID:\s{0,100}(|({device_id}[^,]+)),""",
+    """Policy:\s{0,100}({activity_details}[^,]+)""",
   ]
 }
 ```

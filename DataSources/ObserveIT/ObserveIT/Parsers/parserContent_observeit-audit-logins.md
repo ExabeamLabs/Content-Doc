@@ -9,15 +9,15 @@ Name = observeit-audit-logins
   TimeFormat = "MM/dd/yyyy HH:mm:ss"
   Conditions = [ """EventName=Audit_logins;""", """; AuditTime=""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """({host}\S+)\s+(\S+\s+){4}EventName=""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """({host}\S+)\s{1,100}(\S+\s{1,100}){4}EventName=""",
     """\sAuditTime=({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d)""",
-    """\sOS=({os}[^;]+?)\s*(;|"*\s*$)""",
-    """\sDomainName=({domain}[^;]+?)\s*(;|"*\s*$)""",
-    """\sConsoleUser=({user}[^;]+?)\s*(;|"*\s*$)""",
+    """\sOS=({os}[^;]+?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
+    """\sDomainName=({domain}[^;]+?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
+    """\sConsoleUser=({user}[^;]+?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
     """\sClientAddress=({src_ip}[a-fA-F\d.:]+)""",
-    """\sLoginStatus=({outcome}[^;]+?)\s*(;|"*\s*$)""",
-    """\sLoginStatusDescrition=({failure_reason}[^;]+?)\s*(;|"*\s*$)""",
+    """\sLoginStatus=({outcome}[^;]+?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
+    """\sLoginStatusDescrition=({failure_reason}[^;]+?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
   ]
 }
 ```

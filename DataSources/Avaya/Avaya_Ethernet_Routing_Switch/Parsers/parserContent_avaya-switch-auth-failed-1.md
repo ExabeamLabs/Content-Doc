@@ -9,11 +9,11 @@ Name = avaya-switch-auth-failed-1
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = [ """:Authentication Failure""", """Server IP""", """Intruder IP""" ]
     Fields = [
-      """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+      """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """({event_name}Authentication Failure)""",
-      """Server IP\s+({dest_ip}[a-fA-F\d.:]+)""",
-      """Intruder IP\s+({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+      """Server IP\s{1,100}({dest_ip}[a-fA-F\d.:]+)""",
+      """Intruder IP\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     ]
   }
 ```

@@ -11,12 +11,12 @@ Name = cef-4776
     Fields = [
       """({event_name}The (computer|domain controller) attempted to validate the credentials for an account)""",
       """({event_code}4776)""",
-      """\srt=({time}\d+)""",
+      """\srt=({time}\d{1,100})""",
       """\sshost=({dest_host}[^\s]+)""",
       """src=({dest_ip}[a-fA-F:\d.]+)""",
       """The ({login_type}computer|domain)(\s\w+)? attempted to validate the credentials""",
       """dvchost=(?!(?:[A-Fa-f:\d.]+))[^\s.]+(\.({domain}[^\s.]+)[^\s]*)"""
-      """\sduser=({user}.+?)(@({domain}[^\s.]+)[^\s]*)?\s+\w+=""",
+      """\sduser=({user}.+?)(@({domain}[^\s.]+)[^\s]*)?\s{1,100}\w+=""",
       """\scs4=({result_code}\w+)""",
       """dvc=({host}[^\s]+)""",
       """dvchost=({host}[^\s]+)""",

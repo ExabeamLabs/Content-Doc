@@ -11,23 +11,23 @@ Name = raw-4663-6
     Conditions = ["An attempt was made to access an object.", "AUDIT_SUCCESS"]
     Fields = [
       """({event_name}An attempt was made to access an object)""",
-      """({host}[\w\-.]+)\s+({time}\d+\/\d+\/\d+\s+\d+:\d+:\d+\s+(am|AM|pm|PM))""",
+      """({host}[\w\-.]+)\s{1,100}({time}\d{1,100}\/\d{1,100}\/\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(am|AM|pm|PM))""",
       """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
       """({host}[\w\-.]+) AUDIT_SUCCESS""",
       """({event_code}4663)""",
-      """Subject(:|=).*?Security ID(:|=)\s*({user_sid}.+?)[\s;]*Account Name(:|=)\s*({user}.+?)[\s;]*Account Domain(:|=)\s*(NT AUTHORITY|({domain}.+?))[\s;]*Logon ID(:|=)\s*({logon_id}[^\s;]+)[\s;]*Object(:|=)""",
-      """Object(:|=).*?Object Type(:|=)\s*({file_type}.+?)[\s;]*Object Name(:|=)\s*({file_path}({file_parent}.*?)({file_name}[^\\\/;]+?(\.({file_ext}[^\.;\\]+?))?))[\s;]*Handle ID(:|=)""",
-      """Process Name(:|=)\s*(?:|({process}.+?))[\s;]*Access Request Information(:|=)""",
+      """Subject(:|=).*?Security ID(:|=)\s{0,100}({user_sid}.+?)[\s;]*Account Name(:|=)\s{0,100}({user}.+?)[\s;]*Account Domain(:|=)\s{0,100}(NT AUTHORITY|({domain}.+?))[\s;]*Logon ID(:|=)\s{0,100}({logon_id}[^\s;]+)[\s;]*Object(:|=)""",
+      """Object(:|=).*?Object Type(:|=)\s{0,100}({file_type}.+?)[\s;]*Object Name(:|=)\s{0,100}({file_path}({file_parent}.*?)({file_name}[^\\\/;]+?(\.({file_ext}[^\.;\\]+?))?))[\s;]*Handle ID(:|=)""",
+      """Process Name(:|=)\s{0,100}(?:|({process}.+?))[\s;]*Access Request Information(:|=)""",
       """Process Name(:|=).*\\({process_name}[^\\;]+?)[\s;]*Access Request Information(:|=)""",
-      """Process Name(:|=)\s*(?:|({process}({directory}(\w:)?(?:[^:;]+)?[\\\/])?({process_name}[^\\\/";]+?)))[\s;]*Access Request Information(:|=)""",
-      """Accesses(:|=)\s*({accesses}.+?)[\s;]*Access Mask(:|=)\s*({access_mask}\w+)""",
-      """"AccessList":"({accesses}[^"]+?)\s*"""",
+      """Process Name(:|=)\s{0,100}(?:|({process}({directory}(\w:)?(?:[^:;]+)?[\\\/])?({process_name}[^\\\/";]+?)))[\s;]*Access Request Information(:|=)""",
+      """Accesses(:|=)\s{0,100}({accesses}.+?)[\s;]*Access Mask(:|=)\s{0,100}({access_mask}\w+)""",
+      """"AccessList":"({accesses}[^"]+?)\s{0,100}"""",
       """"Account":"(({domain}[^\\\s"]+)\\+)?({user}[^\\\s"]+)""",
       """"SubjectUserSid":"({user_sid}[^\s"]+)""",
       """"SubjectLogonId":"({logon_id}[^\s"]+)""",
-      """"ObjectName":"(-|({file_path}({file_parent}.*?)({file_name}[^\\\/;]+?(\.({file_ext}[^\.;]+?))?)))\s*"""",
+      """"ObjectName":"(-|({file_path}({file_parent}.*?)({file_name}[^\\\/;]+?(\.({file_ext}[^\.;]+?))?)))\s{0,100}"""",
       """"ObjectType":"(-|({file_type}[^\s"]+))""",
-      """"ProcessName":"(?: |({process}({directory}(?:[^";]+)?[\\\/])?({process_name}[^\\\/";]+?)))\s*"""",
+      """"ProcessName":"(?: |({process}({directory}(?:[^";]+)?[\\\/])?({process_name}[^\\\/";]+?)))\s{0,100}"""",
     ]
     DupFields = ["host->dest_host","directory->process_directory"]
   }

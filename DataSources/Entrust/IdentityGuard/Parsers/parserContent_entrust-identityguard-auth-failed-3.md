@@ -11,7 +11,7 @@ Name = entrust-identityguard-auth-failed-3
   Fields = [
     """exabeam_time=({time}\d{4}-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[\w.\-]+)""",
-    """\[({time}\d{4}-\d\d-\d\d \d\d:\d\d:\d\d)(\]|,\]|,\d+\])""",
+    """\[({time}\d{4}-\d\d-\d\d \d\d:\d\d:\d\d)(\]|,\]|,\d{1,100}\])""",
     """ user (({user_email}[^\@\s]+@[^\s]+)|(({domain}[^\\\/]+)[\\\/]+)?({user}[^\s]+))\. """,
     """({additional_info}Invalid response to a challenge.[^\.]+)""",
   ]

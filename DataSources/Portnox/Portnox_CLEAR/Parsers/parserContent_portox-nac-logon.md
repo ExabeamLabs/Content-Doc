@@ -14,9 +14,9 @@ portox-logon-events = {
     Lms = Splunk
     TimeFormat = "epoch"
     Fields = [
-      """start=({time}\d+)""",
+      """start=({time}\d{1,100})""",
       """exabeam_host=({host}[^\s]+)""",
-      """CEF:([^|]*\|){4}({event_code}\d+)""",
+      """CEF:([^|]*\|){4}({event_code}\d{1,100})""",
       """CEF:([^|]*\|){5}({event_name}[^|]+)""",
       """src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """dst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",

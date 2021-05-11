@@ -10,7 +10,7 @@ Name = netwrix-ad-ds-access
     """cat=computer.+?filePath=[^\s]+\\({computer_name}[^\s]+?) start=""",
     """cat=user.+?filePath=[^\s]+\\({target_user}[^\s]+?) start=""",
     """cat=group.+?filePath=\\+?([^\\]+\\+)*?({target_group}[^\\]+) start=""",
-    """msg=Object Path changed from "+({old_value}[^"]+)"+ to "+({new_value}[^"]+)"+""",
+    """msg=Object Path changed from "{1,20}({old_value}[^"]+)"{1,20} to "{1,20}({new_value}[^"]+)"{1,20}""",
   ]
 }
 ```

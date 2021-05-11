@@ -9,27 +9,27 @@ Name = proofpoint-email-2
    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
    Conditions = [  """'subject':""",   """'from':""",   """'routeDirection':""",       """'rcpts':"""    ]
    Fields = [
-      """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+(\+|\-)\d\d:\d\d)\s+({host}[^:]+)\s""",
-      """'startTime':\s*'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+(\+|\-)\d+)""",
-      """'sizeBytes':\s*({bytes}\d+)""",
-      """'from':\s*\[?'[^@]*?({sender}[^'@"\s=<\[\]]+@({external_domain_sender}[^'@"\s=>\[\]]+))""",
-      """'subject':\s*\['\s*({subject}.+?)\s*'""",
-      """'envelope':\s*\{.*'rcpts':\s*\['({recipients}({recipient}[^'@]+@({external_domain_recipient}[^']+)).*?)'\]""",
-      """'ip':\s*'({dest_ip}[a-fA-F\d.:]+)""",
-      """'filter'.*?'action':\s*'({outcome}[^']+)'.*?'isFinal':\s*True""",
-      """'filter'.*'isFinal':\s*True,\s*.*'action':\s*'({outcome}[^']+)'""",
-      """'rule':\s*'({rule_name}[^']+)'""",
-      """'isMsgReinjected':\s*({is_consolidated}\w+),""",
-      """'connection':\s*\{.*'country':\s*'({country}[^']+)'""",
-      """'appname':\s*'\s*({app_name}.+?)\s*'""",
-      """'creator':\s*'\s*({creator}.+?)\s*'""",
-      """'pagecount':\s*({page_count}\d+)""",
-      """'folder':\s*'(?:({folder}[^']+))""",
-      """'routeDirection':\s*'({direction}[^']+)""",
-      """'message-id':\s*\['({message_id}[^']+)""",
-      """'detectedName':\s*'({attachment}[^']+)""",
-      """'x-originating-ip':\s*\['\[({src_ip}[A-Fa-f:\d.]+)""",
-      """'host':\s*'\[?({host}[\w\-.]+)"""
+      """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}(\+|\-)\d\d:\d\d)\s{1,100}({host}[^:]+)\s""",
+      """'startTime':\s{0,100}'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}(\+|\-)\d{1,100})""",
+      """'sizeBytes':\s{0,100}({bytes}\d{1,100})""",
+      """'from':\s{0,100}\[?'[^@]*?({sender}[^'@"\s=<\[\]]+@({external_domain_sender}[^'@"\s=>\[\]]+))""",
+      """'subject':\s{0,100}\['\s{0,100}({subject}.+?)\s{0,100}'""",
+      """'envelope':\s{0,100}\{.*'rcpts':\s{0,100}\['({recipients}({recipient}[^'@]+@({external_domain_recipient}[^']+)).*?)'\]""",
+      """'ip':\s{0,100}'({dest_ip}[a-fA-F\d.:]+)""",
+      """'filter'.*?'action':\s{0,100}'({outcome}[^']+)'.*?'isFinal':\s{0,100}True""",
+      """'filter'.*'isFinal':\s{0,100}True,\s{0,100}.*'action':\s{0,100}'({outcome}[^']+)'""",
+      """'rule':\s{0,100}'({rule_name}[^']+)'""",
+      """'isMsgReinjected':\s{0,100}({is_consolidated}\w+),""",
+      """'connection':\s{0,100}\{.*'country':\s{0,100}'({country}[^']+)'""",
+      """'appname':\s{0,100}'\s{0,100}({app_name}.+?)\s{0,100}'""",
+      """'creator':\s{0,100}'\s{0,100}({creator}.+?)\s{0,100}'""",
+      """'pagecount':\s{0,100}({page_count}\d{1,100})""",
+      """'folder':\s{0,100}'(?:({folder}[^']+))""",
+      """'routeDirection':\s{0,100}'({direction}[^']+)""",
+      """'message-id':\s{0,100}\['({message_id}[^']+)""",
+      """'detectedName':\s{0,100}'({attachment}[^']+)""",
+      """'x-originating-ip':\s{0,100}\['\[({src_ip}[A-Fa-f:\d.]+)""",
+      """'host':\s{0,100}'\[?({host}[\w\-.]+)"""
    ]
     DupFields = ["attachment->attachments"]
  }

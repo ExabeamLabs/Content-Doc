@@ -11,7 +11,7 @@ Name = mcafee-siem-4776
     Fields = [
       """({event_name}The (computer|domain controller) attempted to validate the credentials for an account)""",
       """"dst_ip":"({dest_ip}[^"]+)""",
-      """"id":\d*({event_code}4776)""",
+      """"id":\d{0,100}({event_code}4776)""",
       """"firsttime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
       """"DomainID":"({domain}[^"]+)""",
       """"HostID":"({host}[^"]+)""",

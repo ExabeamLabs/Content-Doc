@@ -10,7 +10,7 @@ Name = xml-4662
   Conditions = [ """<EventID>4662<""" ]
   Fields = [
     """({event_name}An operation was performed on an object)""",
-    """<EventID>({event_code}\d+)""",
+    """<EventID>({event_code}\d{1,100})""",
     """<TimeCreated SystemTime(\\)?='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """<Computer>({host}[^<]+)""",
     """<Data Name(\\)?='SubjectUserSid'>({user_sid}[^<]+)""",
@@ -21,7 +21,7 @@ Name = xml-4662
     """<Data Name(\\)?='ObjectType'>({activity_type}[^<]+)""",
     """<Data Name(\\)?='ObjectName'>({object}[^<]+)""",
     """<Data Name(\\)?='OperationType'>({activity}[^<]+)""",
-    """<Data Name(\\)?='Properties'>(-|({properties}[^<]+?))\s*<""",
+    """<Data Name(\\)?='Properties'>(-|({properties}[^<]+?))\s{0,100}<""",
     """<Keyword>({outcome}[^<]+)<"""
   ]
 }

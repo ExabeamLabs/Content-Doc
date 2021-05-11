@@ -9,17 +9,17 @@ Name = q-snort-alert
   TimeFormat = "MMM dd HH:mm:ss yyyy z"
   Conditions = [ """[Classification:""", """[Priority:""", """[Impact:""" ]
   Fields = [
-     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-     """\d\d:\d\d:\d\d\s+({host}[^\s]+)\s\w+:""",
-     """(Mon|Tue|Wed|Thu|Fri|Sat|Sun) ({time}\w+\s+\d+\s+\d\d:\s*\d\d\s*:\d\d \d+ \w+)""",
-     """\[\s*({alert_name}\d+:\d+:\d+)\]""",
-     """\[Classification:\s*({alert_type}[^\]]+)\]""",
-     """\[Priority:\s*({alert_severity}\d+)\]""",
-     """\[\s*\d+:\d+:\d+\]\s+"({additional_info}[^"]+)"""",
+     """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+     """\d\d:\d\d:\d\d\s{1,100}({host}[^\s]+)\s\w+:""",
+     """(Mon|Tue|Wed|Thu|Fri|Sat|Sun) ({time}\w+\s{1,100}\d{1,100}\s{1,100}\d\d:\s{0,100}\d\d\s{0,100}:\d\d \d{1,100} \w+)""",
+     """\[\s{0,100}({alert_name}\d{1,100}:\d{1,100}:\d{1,100})\]""",
+     """\[Classification:\s{0,100}({alert_type}[^\]]+)\]""",
+     """\[Priority:\s{0,100}({alert_severity}\d{1,100})\]""",
+     """\[\s{0,100}\d{1,100}:\d{1,100}:\d{1,100}\]\s{1,100}"({additional_info}[^"]+)"""",
      """ From "(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[^"\s]+))""",
-     """\{\w+\}\s*({src_ip}[^\s]+?)\:+({src_port}\d+)""",
-     """->\s*({dest_ip}[^\s]+?)\:+({dest_port}\d+)""",
-     """\[Impact:\s*(Unknown|({impact}[^\]]+))""",
+     """\{\w+\}\s{0,100}({src_ip}[^\s]+?)\:+({src_port}\d{1,100})""",
+     """->\s{0,100}({dest_ip}[^\s]+?)\:+({dest_port}\d{1,100})""",
+     """\[Impact:\s{0,100}(Unknown|({impact}[^\]]+))""",
   ]
 }
 ```

@@ -10,8 +10,8 @@ Name = f5-vpn-username
   Conditions = [ """01490143:5:""", """username:""" ]
   Fields = [
     """:Common:({session_id}[^:]+)""",
-    """\s+01490143:5:.*?({session_id}[^\s:]+): Logging Agent""",
-    """\susername:\s+({user}\S+)""",
+    """\s{1,100}01490143:5:.*?({session_id}[^\s:]+): Logging Agent""",
+    """\susername:\s{1,100}({user}\S+)""",
   ]
 }
 ```

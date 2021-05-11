@@ -9,9 +9,9 @@ Name = cef-cisco-vpn-end
   TimeFormat = "epoch"
   Conditions = [ "CEF:","""|CISCO|Cisco VPN|""", """|User disconnected|""" ]
   Fields = [
-    """\srt=({time}\d+)""",
+    """\srt=({time}\d{1,100})""",
     """\ssourceTranslatedAddress=({src_ip}[^\s]+)""",
-    """\sduser=(?:({domain}[^\s]+?)\\+)?({user}.+?)\s+(\w+=|$)""",
+    """\sduser=(?:({domain}[^\s]+?)\\+)?({user}.+?)\s{1,100}(\w+=|$)""",
     """\sdvc=({dest_ip}[^\s]+)""",
     """\sdvc=({host}[^\s]+)""",
     """\sdvchost=({dest_host}[^\s]+)"""

@@ -10,13 +10,13 @@ Name = snare-517
   Conditions = [ "\t517\t", "The audit log was cleared" ]
   Fields = [
     """({event_name}The audit log was cleared)""",
-    """\s+(Information|Audit Success|Success Audit)\s+({host}[\w.\-]+)""",
-    """\s+(Mon|Tue|Wed|Thu|Fri|Sat|Sun) ({time}\w+ \d+ \d+:\d+:\d+ \d+)\s+""",
+    """\s{1,100}(Information|Audit Success|Success Audit)\s{1,100}({host}[\w.\-]+)""",
+    """\s{1,100}(Mon|Tue|Wed|Thu|Fri|Sat|Sun) ({time}\w+ \d{1,100} \d{1,100}:\d{1,100}:\d{1,100} \d{1,100})\s{1,100}""",
     """({event_code}517)""",
     """({event_name}The audit log was cleared)""",
-    """\s+Client User Name:\s+({user}.+?)\s+Client Domain""",
-    """\s+Client Domain:\s+({domain}[^\s]+)""",
-    """\s+Client Logon ID:\s+\([^,]+,({logon_id}[^)]+)"""
+    """\s{1,100}Client User Name:\s{1,100}({user}.+?)\s{1,100}Client Domain""",
+    """\s{1,100}Client Domain:\s{1,100}({domain}[^\s]+)""",
+    """\s{1,100}Client Logon ID:\s{1,100}\([^,]+,({logon_id}[^)]+)"""
   ]
   DupFields = [ "host->dest_host" ]
 }

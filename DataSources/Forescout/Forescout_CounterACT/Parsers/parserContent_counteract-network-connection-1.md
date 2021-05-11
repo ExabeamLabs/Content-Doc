@@ -10,9 +10,9 @@ Name = counteract-network-connection-1
   Conditions = [ """]: Log: Connection Status. Details: """,""" Connection Status: ""","""Vendor:""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """(\w+\s+\d+ \d+:\d+:\d+)\s+({host}\S+)\s""",
-    """Connection Status:\s+({action}({outcome}[^\s]+).+?)\.\s+Type""",
-    """Source:\s+({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """(\w+\s{1,100}\d{1,100} \d{1,100}:\d{1,100}:\d{1,100})\s{1,100}({host}\S+)\s""",
+    """Connection Status:\s{1,100}({action}({outcome}[^\s]+).+?)\.\s{1,100}Type""",
+    """Source:\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
 }
 ```

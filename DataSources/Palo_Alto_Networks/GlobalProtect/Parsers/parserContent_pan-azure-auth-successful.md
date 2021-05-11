@@ -9,9 +9,5 @@ Name = pan-azure-auth-successful
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
   Conditions = [ """,SYSTEM,auth,""", """AUTH_PROFILE_AZURE""", """,saml-signature-validated,""" ]
   Fields = [
-    """\w+\s+\d+\s+\d+:\d+:\d+\s+({host}[\w\-.]+)\s+\d+,({time}\d+\/\d+\/\d+\s+\d+:\d+:\d+),""",
-    """(c|C)lient '({src_ip}[A-Fa-f:\d.]+)""",
-    """for user\s*'({user_email}[^']+)""" 
-    ]
-}
+    """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]+)\s{1,100}\d{1,100}
 ```

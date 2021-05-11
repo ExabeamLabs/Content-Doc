@@ -9,9 +9,9 @@ Name = cef-cisco-vpn-start
   TimeFormat = "epoch"
   Conditions = [ "CEF:","""|CISCO|Cisco VPN|""", """|Received remote Proxy Host data in ID Payload|""","""sourceTranslatedAddress="""]
   Fields = [
-    """\srt=({time}\d*)""",
+    """\srt=({time}\d{0,100})""",
     """\ssourceTranslatedAddress=({src_ip}[^\s]+)""",
-    """\sduser=(?:({domain}[^\s]+?)\\+)?({user}.+?)\s+(\w+=|$)""",
+    """\sduser=(?:({domain}[^\s]+?)\\+)?({user}.+?)\s{1,100}(\w+=|$)""",
     """\ssrc=({src_translated_ip}[^\s]+)""",
     """\sdvc=({dest_ip}[^\s]+)""",
     """\sdvc=({host}[^\s]+)""",

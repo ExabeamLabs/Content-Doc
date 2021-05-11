@@ -13,9 +13,9 @@ Name = cef-azure-event-hub-security
     """category":"({azure_category}[^"]+)"""",
     """attackedResourceType":"({azure_resource_type}[^"]+)"""",
     """\Wext_properties_eventProperties_attackers_0_=({src_ip}[a-fA-F\d.:]+)""",
-    """\Wext_properties_eventProperties_previousIPAddress=(|({last_known_ip}[^=]+))(\s+\w+=|\s*$)""",
+    """\Wext_properties_eventProperties_previousIPAddress=(|({last_known_ip}[^=]+))(\s{1,100}\w+=|\s{0,100}$)""",
     """eventName":"({alert_type}[^"\\]+)\\*"""",
-    """\Wext_properties_eventProperties_malwareName=(|({alert_type}.+?))(\s+\w+=|\s*$)""",
+    """\Wext_properties_eventProperties_malwareName=(|({alert_type}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """resultDescription":"({alert_name}[^"\\]+)\\*"""",
     """detailDescription":"({additional_info}[^"\\]+)\\*"""",
   ]

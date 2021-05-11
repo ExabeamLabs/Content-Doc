@@ -11,8 +11,8 @@ Name = l-aruba-failed-nac-logon
   Fields = [
       """({time}\d{4}-\d{2}-\d{2}T\d\d:\d\d:\d\d)\+""",
       """\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\+\d{2}:\d{2}\s({dest_ip}[.:a-fA-F\d]+)""",
-      """\s+({host}[^\s]+)\s+authmgr\[""",
-      """(authmgr|stm)\[({event_code}\d+)\]""",
+      """\s{1,100}({host}[^\s]+)\s{1,100}authmgr\[""",
+      """(authmgr|stm)\[({event_code}\d{1,100})\]""",
       """Authentication result=({event_name}Authentication failed)""",
       """method=({auth_type}[^\,\s]+)""",
       """server=({auth_server}[\w\d]+)""",

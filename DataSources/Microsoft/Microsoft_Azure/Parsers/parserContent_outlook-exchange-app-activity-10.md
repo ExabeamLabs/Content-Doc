@@ -15,7 +15,7 @@ outlook-exchange-app-activity = {
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[\w.\-]+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[\w.\-]+)""",
     """TS=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """WORKLOAD=({app}[^\s]+)""",
     """USER=(({user_email}[^@\s]+@({email_domain}[^\s@]+))|({user}[^\s]+))""",
@@ -25,10 +25,10 @@ outlook-exchange-app-activity = {
     """COMMAND=({activity}[^\s]+)""",
     """RESULTCODE=({outcome}[^\s]+)""",
     """CLIENTPROCESSNAME=({process}[^\s]+)""",
-    """Path":"({path}[^"]+?)\s*"""",
-    """"Subject":"\s*({subject}[^"}]+?)\s*"""",
-    """"Attachments\\*"+:[\s\\]*"+\s*({attachments}[^"\\]+)\s*""",
-    """"Attachments\\*"+:[\s\\]*"+\s*({attachment}[^"\\;]+)\s*""",
+    """Path":"({path}[^"]+?)\s{0,100}"""",
+    """"Subject":"\s{0,100}({subject}[^"}]+?)\s{0,100}"""",
+    """"Attachments\\*"{1,20}:[\s\\]*"{1,20}\s{0,100}({attachments}[^"\\]+)\s{0,100}""",
+    """"Attachments\\*"{1,20}:[\s\\]*"{1,20}\s{0,100}({attachment}[^"\\;]+)\s{0,100}""",
 ]
 
 ```

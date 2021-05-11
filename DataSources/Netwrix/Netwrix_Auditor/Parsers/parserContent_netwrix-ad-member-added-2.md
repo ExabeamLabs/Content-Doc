@@ -7,8 +7,8 @@ Name = netwrix-ad-member-added-2
   Fields = ${NetWrixParserTemplates.netwrix-app-activity-2.Fields}[
     """CEF:0\|Netwrix\|Active Directory\|[^\|]+\|[^\|]+\|({activity}[^\|]+)\|""",
     """cat=group.+?filePath=\\+?([^\\]+\\+)*?({group_name}[^\\]+) start=""",
-    """Added:.+?"+(\\+)?([^\\\/]+[\\\/]+)*?({target_user}[^\\\/]+?)(;|$|")""",
-    """Group Type: "+({group_type}[^"]+)"+""",
+    """Added:.+?"{1,20}(\\+)?([^\\\/]+[\\\/]+)*?({target_user}[^\\\/]+?)(;|$|")""",
+    """Group Type: "{1,20}({group_type}[^"]+)"{1,20}""",
   ]
 }
 ```

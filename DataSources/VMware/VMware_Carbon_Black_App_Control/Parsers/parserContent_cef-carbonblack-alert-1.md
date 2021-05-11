@@ -9,15 +9,15 @@ Name = cef-carbonblack-alert-1
   TimeFormat = "epoch"
   Conditions = [ """|Carbon Black|Carbon Black|""", """ cat=""", """ filePath=[""" ]
   Fields = [
-    """\Wrt=({time}\d+)""",
+    """\Wrt=({time}\d{1,100})""",
     """\Wdvc=({host}[\w\-.]+)""",
     """\Wdvchost=({host}[\w\-.]+)""",
     """([^\|]*\|){5}({alert_name}[^\|]+)""",
-    """\WeventId=({alert_id}\d+)""",
-    """\Wcat=({alert_type}.+?)\s*(\w+=|$)""",
-    """\WdeviceSeverity=({alert_severity}\d+)""",
+    """\WeventId=({alert_id}\d{1,100})""",
+    """\Wcat=({alert_type}.+?)\s{0,100}(\w+=|$)""",
+    """\WdeviceSeverity=({alert_severity}\d{1,100})""",
     """\Wdhost=({src_host}[\w\-.]+)""",
-    """\WfilePath=\[({additional_info}[^\]]+?)\]\s*(\w+=|$)""",
+    """\WfilePath=\[({additional_info}[^\]]+?)\]\s{0,100}(\w+=|$)""",
     """\WfilePath=.+?\\users\\+({user}[^\\\s]+)""",
     """\WfileHash=({md5}[^\s]+)""",
   ]

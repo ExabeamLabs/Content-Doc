@@ -8,13 +8,13 @@ Name = q-4800
   DataType = "windows-4800"
   TimeFormat = "epoch_sec"
   Conditions = [ "EventIDCode=4800", "The workstation was locked"]
-  Fields = [ """EventID=({event_code}\d+)""",
+  Fields = [ """EventID=({event_code}\d{1,100})""",
     """({event_name}The workstation was locked)""",
-    """TimeGenerated=({time}\d+)""",
+    """TimeGenerated=({time}\d{1,100})""",
     """Computer=({host}[^\s]+)""",
-    """Account Name:\s+({user}.+?)\s+Account Domain""",
-    """Account Domain:\s+({domain}.+?)\s+Logon ID""",
-    """Logon ID:\s+({logon_id}[^\s]+)"""
+    """Account Name:\s{1,100}({user}.+?)\s{1,100}Account Domain""",
+    """Account Domain:\s{1,100}({domain}.+?)\s{1,100}Logon ID""",
+    """Logon ID:\s{1,100}({logon_id}[^\s]+)"""
   ]
   DupFields = [ "host->dest_host" ]
 }

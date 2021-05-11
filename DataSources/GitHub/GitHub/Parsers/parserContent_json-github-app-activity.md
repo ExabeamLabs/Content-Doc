@@ -9,8 +9,8 @@ Name = json-github-app-activity
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ ""","action":"""", ""","remote_ip":"""", """"key":"namespace_id",""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """"action":"({activity}[^"]+)""",
     """"remote_ip":"({src_ip}[^"]+)""",
     """"username":"({user}[^"]+)""",

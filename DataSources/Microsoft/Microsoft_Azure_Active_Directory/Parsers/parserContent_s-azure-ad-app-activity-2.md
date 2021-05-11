@@ -9,13 +9,7 @@ Name = s-azure-ad-app-activity-2
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
   Conditions = [ """activityDisplayName""","""ms:aad:audit""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """"createdDateTime"+:\s*"+({time}[^"]+)""",
-    """ms:aad:audit"+,"+({host}[^"]+)""",
-    """"userPrincipalName"+:\s*"+({user_email}[^"\s@]+@({email_domain}[^"\s@]+))""",
-    """"ipAddress"+:\s*"+({src_ip}[A-Fa-f:\d.]+)""",
-    """"activityDisplayName"+:\s*"+({activity}[^"]+)""",
-	""""result"+:\s*"+"({outcome}[^"]+)"""
-    ]
-}
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """"createdDateTime"{1,20}:\s{0,100}"{1,20}({time}[^"]+)""",
+    """ms:aad:audit"{1,20}
 ```

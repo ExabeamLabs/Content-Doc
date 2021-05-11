@@ -9,15 +9,15 @@ Name = cisco-esa-dlp-alert
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """CEF""" , """Email Security Virtual Appliance""", """suser=""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """suser=({sender}[^\s]+)""",
     """\ssourceHostName=({external_domain_sender}[^\s]+)""",
-    """\sduser=({recipients}[^\s]+)\s+(\w+=|$)""",
+    """\sduser=({recipients}[^\s]+)\s{1,100}(\w+=|$)""",
     """\sduser=({recipient}[^,\s;]+)""",
     """sourceAddress=({src_ip}[^\s]+)""",
     """msg='({subject}[^']+)'""",
-    """ESAMID=({alert_id}\d+)""",
+    """ESAMID=({alert_id}\d{1,100})""",
     """cfp1=(not enabled|({alert_severity}[^\s]+))""",
     """\|Cisco\|([^\|]*\|){2}({alert_type}[^\|]+)""",
     """\|Cisco\|([^\|]*\|){3}({alert_name}[^\|]+)""",

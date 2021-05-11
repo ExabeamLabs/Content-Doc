@@ -9,15 +9,12 @@ Name = symantec-dlp-alert
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """, violatedPolicyRuleName: """, """,[CA Name: Risk Severity],""", """,[CA Name: SIFT Timestamp],""" ]
   Fields = [
-    """\[CA Name: SIFT Timestamp\], \[CA value:\s*({time}\d+-\d+-\d+\s+\d+:\d+:\d+)""",
-    """\[CA Name: Detection Server\], \[CA value:\s*({host}[\w\-.]+)""",
-    """\[CA Name: First Name\], \[CA value:\s*(|({user_firstname}[^\]]+?))\s*\]""",
-    """\[CA Name: Last Name\], \[CA value:\s*({user_lastname}[^\]]+)""",
-    """\[CA Name: Account Name\], \[CA value:\s*({user}[^\]\s]+)""",
-    """\[CA Name: Email\], \[CA value:\s*({user_email}[^\]\s@]+@[^\]\s@]+)""",
-    """\[CA Name: Risk Severity\], \[CA value:\s*(|({alert_severity}[^\]]+?))\s*\]""",
-    """, violatedPolicyRuleName:\s*({alert_name}[^\],]+?)\s*,""",
-  ]
-  DupFields = [ "alert_name->alert_type" ]
-}
+    """\[CA Name: SIFT Timestamp\], \[CA value:\s{0,100}({time}\d{1,100}-\d{1,100}-\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100})""",
+    """\[CA Name: Detection Server\], \[CA value:\s{0,100}({host}[\w\-.]+)""",
+    """\[CA Name: First Name\], \[CA value:\s{0,100}(|({user_firstname}[^\]]+?))\s{0,100}\]""",
+    """\[CA Name: Last Name\], \[CA value:\s{0,100}({user_lastname}[^\]]+)""",
+    """\[CA Name: Account Name\], \[CA value:\s{0,100}({user}[^\]\s]+)""",
+    """\[CA Name: Email\], \[CA value:\s{0,100}({user_email}[^\]\s@]+@[^\]\s@]+)""",
+    """\[CA Name: Risk Severity\], \[CA value:\s{0,100}(|({alert_severity}[^\]]+?))\s{0,100}\]""",
+    """, violatedPolicyRuleName:\s{0,100}({alert_name}[^\],]+?)\s{0,100}
 ```

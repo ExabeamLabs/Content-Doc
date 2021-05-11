@@ -9,16 +9,16 @@ Name = cef-vanderbilt-badge-access
     TimeFormat = "epoch"
     Conditions = ["""|Vanderbilt|SMS|"""]
     Fields = [
-      """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+      """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
       """([^\|]*\|){5}({outcome}[^\|]+)"""
-      """\Wrt=({time}\d+)""",
+      """\Wrt=({time}\d{1,100})""",
       """\Wsuid=({user}[^\s]+)""",
-      """\Wcs2=({location_building}.+?)\s*(\w+=|$)""",
-      """\Wcs5=(\s+|({first_name}.+?))\s*(\w+=|$)""",
-      """\Wcs4=(\s+|({last_name}.+?))\s*(\w+=|$)""",
-      """\Wad.DeviceCaption=({location_door}.+?)\s*([^\s]+=|$)""",
-      """\Wad.CardholderID.l=({badge_id}\d+)""",
-      """\Wreason=({outcome_reason}.+?)\s*(\w+=|$)"""
+      """\Wcs2=({location_building}.+?)\s{0,100}(\w+=|$)""",
+      """\Wcs5=(\s{1,100}|({first_name}.+?))\s{0,100}(\w+=|$)""",
+      """\Wcs4=(\s{1,100}|({last_name}.+?))\s{0,100}(\w+=|$)""",
+      """\Wad.DeviceCaption=({location_door}.+?)\s{0,100}([^\s]+=|$)""",
+      """\Wad.CardholderID.l=({badge_id}\d{1,100})""",
+      """\Wreason=({outcome_reason}.+?)\s{0,100}(\w+=|$)"""
     ]
   }
 ```

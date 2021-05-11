@@ -9,13 +9,13 @@ Name = s-trendmicro-epp-alert-2
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"
   Conditions = [ "Spyware/Grayware:" , "SourceName=Trend Micro OfficeScan Server" ]
   Fields = [
-    """exabeam_raw=.*?({time}\d+\/\d+\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|PM|pm))""",
+    """exabeam_raw=.*?({time}\d{1,100}\/\d{1,100}\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|PM|pm))""",
     """ComputerName=({host}[^\s\n]+)""",
     """\sType=({alert_severity}[^\s\n]+)""",
     """User=(?:SYSTEM|NOT_TRANSLATED|({user}[^\s\n]+))""",
-    """RecordNumber=({alert_id}\d+)""",
-    """Spyware/Grayware:\s({alert_name}.+?)\s+Computer:""",
-    """(Endpoint|Computer):\s+({src_host}[^\s\n]+)"""
+    """RecordNumber=({alert_id}\d{1,100})""",
+    """Spyware/Grayware:\s({alert_name}.+?)\s{1,100}Computer:""",
+    """(Endpoint|Computer):\s{1,100}({src_host}[^\s\n]+)"""
   ]
   DupFields = [ "alert_name->alert_type" ]
 }

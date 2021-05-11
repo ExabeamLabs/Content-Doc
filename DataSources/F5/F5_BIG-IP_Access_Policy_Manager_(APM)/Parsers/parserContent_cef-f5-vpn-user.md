@@ -9,11 +9,11 @@ Name = cef-f5-vpn-user
   TimeFormat = "epoch"
   Conditions = [ """|F5|APM|""", """Username|""" ]
   Fields = [
-    """\srt=({time}\d+)""",
-    """\sduser=({user}.+?)(?:\s+[\w.]+=|\s*$)""",
-    """\scs4=({session_id}.+?)(?:\s+[\w.]+=|\s*$)""",
+    """\srt=({time}\d{1,100})""",
+    """\sduser=({user}.+?)(?:\s{1,100}[\w.]+=|\s{0,100}$)""",
+    """\scs4=({session_id}.+?)(?:\s{1,100}[\w.]+=|\s{0,100}$)""",
     """\sdvc=({host}[a-fA-F\d.:]+)""",
-    """\sdvchost=({host}.+?)(?:\s+[\w.]+=|\s*$)"""
+    """\sdvchost=({host}.+?)(?:\s{1,100}[\w.]+=|\s{0,100}$)"""
   ]
 }
 ```

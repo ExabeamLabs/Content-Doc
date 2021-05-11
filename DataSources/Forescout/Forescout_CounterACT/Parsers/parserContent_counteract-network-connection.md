@@ -10,9 +10,9 @@ Name = counteract-network-connection
   Conditions = [ """Connection has been established:""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """(\w+\s+\d+ \d+:\d+:\d+)\s+({host}\S+)\s""",
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
-    """from\[({src_ip}[a-fA-F\d.:]+)\](\s+to\[({dest_ip}[a-fA-F\d.:]+)\])?""",
+    """(\w+\s{1,100}\d{1,100} \d{1,100}:\d{1,100}:\d{1,100})\s{1,100}({host}\S+)\s""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
+    """from\[({src_ip}[a-fA-F\d.:]+)\](\s{1,100}to\[({dest_ip}[a-fA-F\d.:]+)\])?""",
     """({event_name}Connection has been established)"""
   ]
 }

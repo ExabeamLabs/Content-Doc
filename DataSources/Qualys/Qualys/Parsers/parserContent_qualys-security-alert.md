@@ -13,7 +13,7 @@ Name = qualys-security-alert
     """\sIP="({src_ip}[^"]+)""",
     """\sOS="({os}[^"]+)""",
     """\sNETBIOS="({src_host}[^"]+)""",
-    """\sSEVERITY=({alert_severity}\d+)""",
+    """\sSEVERITY=({alert_severity}\d{1,100})""",
     """\sTAGS="({alert_name}[^",]+)""",
     """\sTAGS="({additional_info}[^"]+)""",
   ]

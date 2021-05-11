@@ -11,7 +11,7 @@ Name = cef-4768
     Fields = [
       """({event_name}A Kerberos authentication ticket \(TGT\) was requested)""",
       """({event_code}4768)""",
-      """\srt=({time}\d+)""",
+      """\srt=({time}\d{1,100})""",
       """\sduser=({user}[^\s]+)""",
       """\scs3=(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)""",
       """\scs4=({result_code}\w+)""",

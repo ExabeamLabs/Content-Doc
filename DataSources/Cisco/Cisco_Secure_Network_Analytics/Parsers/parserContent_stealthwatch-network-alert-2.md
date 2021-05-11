@@ -9,7 +9,7 @@ Name = stealthwatch-network-alert-2
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
   Conditions = [ """StealthWatch[""", """]: """ , """Z;""" ]
   Fields = [
-    """({time}\d+-\d+-\d+T\d+:\d+:\d+Z);[^;]*;(|({alert_name}[^;]+));[^;]*;(|({alert_type}[^;]+));({alert_severity}[^;]+);[^;]*;(|({additional_info}[^;]+));(|0.0.0.0|({src_ip}[A-Fa-f:\d.]+));(|({src_host}[\w\-.]+));(|0.0.0.0|({dest_ip}[A-Fa-f:\d.]+));(|({dest_host}[\w\-.]+));([^;]*;){3}(|({host}[A-Fa-f:\d.]+));(|({=host}[\w\-.]+));""",
+    """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}Z);[^;]*;(|({alert_name}[^;]+));[^;]*;(|({alert_type}[^;]+));({alert_severity}[^;]+);[^;]*;(|({additional_info}[^;]+));(|0.0.0.0|({src_ip}[A-Fa-f:\d.]+));(|({src_host}[\w\-.]+));(|0.0.0.0|({dest_ip}[A-Fa-f:\d.]+));(|({dest_host}[\w\-.]+));([^;]*;){3}(|({host}[A-Fa-f:\d.]+));(|({=host}[\w\-.]+));""",
   ]
 }
 ```

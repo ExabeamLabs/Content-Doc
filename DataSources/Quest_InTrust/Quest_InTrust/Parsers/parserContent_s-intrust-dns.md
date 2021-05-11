@@ -8,8 +8,8 @@ Name = s-intrust-dns
     DataType = "dhcp"
     TimeFormat = "MM/dd/yyyy HH:mm:ss a"
     Conditions = [ """Message=DNS record was""","""DNS Record Data:""" ]
-    Fields = [ """exabeam_raw=({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d (AM|PM|am|pm))\s*LogName=""",
-      """ComputerName=({host}.+?)\s*Category""",
+    Fields = [ """exabeam_raw=({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d (AM|PM|am|pm))\s{0,100}LogName=""",
+      """ComputerName=({host}.+?)\s{0,100}Category""",
       """DNS Record Name[:\s]*({dest_host}[^\s.]+)""",
       """\s(New )?DNS Record Data[:\s]*({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
     ]

@@ -9,14 +9,14 @@ Name = chcom-web-activity
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """chcom_access_log""", """apache_access_log""", """"request":"""", """"response":"""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
-    """host"*:"*\{"*name"*:"*({host}[^"]+)"""",
-    """remote_addr":"(?:-|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}\S+))"*""",
+    """host"{0,20}:"{0,20}\{"{0,20}name"{0,20}:"{0,20}({host}[^"]+)"""",
+    """remote_addr":"(?:-|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}\S+))"{0,20}""",
     """verb":"({method}[^"]+)"""",
     """request":"({uri_path}[^"\?\s]+)(?:\?({uri_query}[^?\s"]+))?"""",
-    """response":"({result_code}\d+)""",
-    """bytes":"(-|({bytes_out}\d+))""",
+    """response":"({result_code}\d{1,100})""",
+    """bytes":"(-|({bytes_out}\d{1,100}))""",
     """referrer":"(-|({referrer}[^"]+))"""",
     """user_agent":"(-|({user_agent}[^"]+))"""",
     """Mozilla\/[^"]+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)""",

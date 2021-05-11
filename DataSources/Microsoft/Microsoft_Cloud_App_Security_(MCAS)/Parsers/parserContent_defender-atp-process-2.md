@@ -13,7 +13,7 @@ defender-atp-events = {
     Lms = Splunk
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
     Fields = [
-      """"time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+      """"time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
       """"DeviceName":"({host}[^"]+)""""
       """"LogonType":"({logon_type}[^"]+)"""",
       """"AccountName":"({user}[^"]+)"""",

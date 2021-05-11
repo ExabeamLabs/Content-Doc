@@ -9,13 +9,13 @@ Name = visma-physical-access
   TimeFormat = "epoch"
   Conditions = [ """"decision":"""", """accessPoint""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """"decision":"({outcome}[^"]+)"""",
     """"eventTime":({time}[^,]+),""",
-    """"person".*?"id":({user_id}\d+)""",
+    """"person".*?"id":({user_id}\d{1,100})""",
     """"firstName":"({first_name}[^"]+)"""",
     """"lastName":"({last_name}[^"]+)"""",
-    """"token".*?"id":({badge_id}\d+)""",
+    """"token".*?"id":({badge_id}\d{1,100})""",
     """"destinationArea".*?"type":"({location_area}[^"]+)"""",
     """"destinationArea".*?"id":({location_door_id}[^,]+),""",
     """"destinationArea".*?"name":"({location_full}[^"]+)"""",

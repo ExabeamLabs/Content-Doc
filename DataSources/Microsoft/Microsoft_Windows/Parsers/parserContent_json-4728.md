@@ -6,11 +6,11 @@ Name = json-4728
   Conditions = [ """A member was added to a security-enabled""", """event_id\":4728""", """computer_name""" ]
   Fields = ${WinParserTemplates.json-windows-events-2.Fields}[
     """A member was added to a security-enabled ({group_type}\w+) group""",
-    """MemberName\\?"+:\\?"+(-|({account_dn}CN=.+?,({account_ou}OU.+?DC=[\w-\\]+?)))\\?"""",
-    """MemberSid\\?"+:\\?"+({account_id}[^\\]+)\\?"""",
-    """TargetSid\\?"+:\\?"+({group_id}[^\\]+)\\?"""",
-    """TargetUserName\\?"+:\\?"+({group_name}[^\\]+)\\?"""",
-    """TargetDomainName\\?"+:\\?"+({group_domain}[^\\]+)\\?""""
+    """MemberName\\?"{1,20}:\\?"{1,20}(-|({account_dn}CN=.+?,({account_ou}OU.+?DC=[\w-\\]+?)))\\?"""",
+    """MemberSid\\?"{1,20}:\\?"{1,20}({account_id}[^\\]+)\\?"""",
+    """TargetSid\\?"{1,20}:\\?"{1,20}({group_id}[^\\]+)\\?"""",
+    """TargetUserName\\?"{1,20}:\\?"{1,20}({group_name}[^\\]+)\\?"""",
+    """TargetDomainName\\?"{1,20}:\\?"{1,20}({group_domain}[^\\]+)\\?""""
   ]
   DupFields = [ "host->dest_host" ]
 }
@@ -20,19 +20,19 @@ json-windows-events-2 = {
   Lms = Direct
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
-    """@timestamp\\?"+:\\?"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
-    """(?:winlog\.)?computer_name\\?"+:\\?"+({host}[^\\]+)""",
-    """SubjectUserName\\?"+:\\?"+(?:-|(?i)(LOCAL SYSTEM|anonymous logon|LOCAL SERVICE|SYSTEM)|({user}[^\\]+))\\?"""",
-    """SubjectUserSid\\?"+:\\?"+({user_sid}[^\\]+)\\?"""",
-    """SubjectDomainName\\?"+:\\?"+(|-|NT Service|NT AUTHORITY|({domain}[^\\]+))\\?"""",
-    """SubjectLogonId\\?"+:\\?"+({logon_id}[^\\]+)\\?"""",
-    """event_id\\?"+:({event_code}\d+)""",
-    """ProcessName\\?"+:\\?"+(?:|-|({process}({directory}(?:[^";]+)?[\\\/])?({process_name}[^\\\/":;\s]+?)))\\?"""",
-    """WorkstationName\\?"+:\\?"+(?:-|({src_host_windows}[^\s\\]+))\\?"""",
-    """Status\\?"+:\\?"+({result_code}[^\\]+)\\?"""",
-    """ProcessId\\?"+:\\?"+({process_id}[^:\\]+?)\\?"""",
-    """LogonProcessName\\?"+:\\?"+({auth_process}[^\s\\]+)\s*\\?"""",
-    """AuthenticationPackageName\\?"+:\\?"+({auth_package}[^\s\\]+)\\?""""
+    """@timestamp\\?"{1,20}:\\?"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
+    """(?:winlog\.)?computer_name\\?"{1,20}:\\?"{1,20}({host}[^\\]+)""",
+    """SubjectUserName\\?"{1,20}:\\?"{1,20}(?:-|(?i)(LOCAL SYSTEM|anonymous logon|LOCAL SERVICE|SYSTEM)|({user}[^\\]+))\\?"""",
+    """SubjectUserSid\\?"{1,20}:\\?"{1,20}({user_sid}[^\\]+)\\?"""",
+    """SubjectDomainName\\?"{1,20}:\\?"{1,20}(|-|NT Service|NT AUTHORITY|({domain}[^\\]+))\\?"""",
+    """SubjectLogonId\\?"{1,20}:\\?"{1,20}({logon_id}[^\\]+)\\?"""",
+    """event_id\\?"{1,20}:({event_code}\d{1,100})""",
+    """ProcessName\\?"{1,20}:\\?"{1,20}(?:|-|({process}({directory}(?:[^";]+)?[\\\/])?({process_name}[^\\\/":;\s]+?)))\\?"""",
+    """WorkstationName\\?"{1,20}:\\?"{1,20}(?:-|({src_host_windows}[^\s\\]+))\\?"""",
+    """Status\\?"{1,20}:\\?"{1,20}({result_code}[^\\]+)\\?"""",
+    """ProcessId\\?"{1,20}:\\?"{1,20}({process_id}[^:\\]+?)\\?"""",
+    """LogonProcessName\\?"{1,20}:\\?"{1,20}({auth_process}[^\s\\]+)\s{0,100}\\?"""",
+    """AuthenticationPackageName\\?"{1,20}:\\?"{1,20}({auth_package}[^\s\\]+)\\?""""
   ]
 
 ```

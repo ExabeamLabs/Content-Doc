@@ -10,7 +10,7 @@ Name = lumension-failed-usb-activity-4
   Conditions = [ ""","READ-DENIED",""" ]
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)","[^"]*","(({domain}[^"\\\/]+)[\\\/]+)?({user}[^"\\\/]+)?","({user_ou}[^"]+)","({activity}READ-DENIED)","({host}[^"]+)",("[^"]*",){2}"({file_path}[^"]+)",""",
-    ""","({process_name}[^"]+)"\s*$""",
+    ""","({process_name}[^"]+)"\s{0,100}$""",
   ]
 }
 ```

@@ -10,22 +10,22 @@ Name = cef-mcafee-dlp-email-alert
   Conditions = [ """CEF:""", """|McAfee|Secure Internet Gateway|""", """|smtp:Email Delivered|""" ]
   Fields = [
     """CEF:([^\|]*\|){4}({alert_name}[^\|]+)""",
-    """\Wrt=({time}\d+)""",
+    """\Wrt=({time}\d{1,100})""",
     """\Wdvchost=({host}[\w\-.]+)""",
-    """\WeventId=({alert_id}\d+)""",
-    """\Wact=({outcome}.+?)\s+([\w\\]+=|$)""",
+    """\WeventId=({alert_id}\d{1,100})""",
+    """\Wact=({outcome}.+?)\s{1,100}([\w\\]+=|$)""",
     """\Wshost=({src_host}[\w\-.]+)""",
     """\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
     """\WFrom\\=<({sender}[^\s>]+)""",
     """\WFrom\\=<[^@]+@({external_domain_sender}[^\s>]+)""",
-    """\Wsize=({bytes}\d+)""",
+    """\Wsize=({bytes}\d{1,100})""",
     """\Wto\\=<({recipients}[^>]+)""",
     """\Wto\\=<({recipient}[^\s>,;]+)""",
     """\Wto\\=<[^@]+@({external_domain_recipient}[^\s>]+)""",
     """\Wsubject\\='({subject}[^']+)""",
     """\Wattachment\(s\)\\='(|({attachments}[^']+))'""",
     """\Wattachment\(s\)\\='(|({attachment}[^,']+)),""",
-    """\Wnumber-attachment\(s\)='({num_attachments}\d+)""", 
+    """\Wnumber-attachment\(s\)='({num_attachments}\d{1,100})""", 
   ]
   DupFields = [ "alert_name->alert_type" ]
 }

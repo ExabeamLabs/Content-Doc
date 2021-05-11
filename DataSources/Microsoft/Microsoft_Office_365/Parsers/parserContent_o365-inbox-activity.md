@@ -9,15 +9,15 @@ Name = o365-inbox-activity
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = ["""destinationServiceName=Office 365""" , """SkyFormation Cloud Apps Security""" , """permissions-updated""", """"ResultStatus"""" , """Add-MailboxPermission"""]
   Fields = [
-     """"CreationTime":\s*"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
+     """"CreationTime":\s{0,100}"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
      """flexString1=({activity}[^\s]*)\srequest""",
      """\sby\s\[({user_email}[^@]+@({email_domain}[^\]]*))\]""",
      """ObjectId":"({resource}[^"]*)"""",
      """ResultStatus":"({outcome}[^"]*)"""",
      """Name":"AccessRights","Value":"({additional_info}[^"]*)"""",
-     """destinationServiceName=(|({app}.+?))(\s+\w+=|\s*$)""",
+     """destinationServiceName=(|({app}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
      """ClientIP":"\[?({src_ip}[^"\]]*)?\]?(:\d{5})""",
-     """duser=([^=]+\/)?({object}.+?)(\s+\w+=|\s*$)"""
+     """duser=([^=]+\/)?({object}.+?)(\s{1,100}\w+=|\s{0,100}$)"""
    ]
 }
 ```

@@ -10,10 +10,10 @@ Name = s-azure-authentication
   Conditions = [ """ Access """, """ for user """, """ Azure MFA response: """ ]
   Fields = [
     """({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|pm|PM))""",
-    """\sComputerName=({host}.+?)\s+\w+=""",
-    """\sUser=(NOT_TRANSLATED|({user}.+?))\s+\w+=""",
+    """\sComputerName=({host}.+?)\s{1,100}\w+=""",
+    """\sUser=(NOT_TRANSLATED|({user}.+?))\s{1,100}\w+=""",
     """Access ({action}.+?) for user ({user_email}[^\s@]+@[^\s@]+)""",
-    """Azure MFA response:\s*({failure_reason}\w+)""",
+    """Azure MFA response:\s{0,100}({failure_reason}\w+)""",
   ]
 }
 ```

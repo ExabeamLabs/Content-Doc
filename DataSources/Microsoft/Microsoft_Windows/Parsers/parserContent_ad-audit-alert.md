@@ -10,19 +10,19 @@ Name = ad-audit-alert
   Conditions = [ """ADAuditPlus""", """Category = ADAPAlerts""", """ALERT_PROFILE =""" ]
   Fields = [
     """({host}[\w\-.]+) ADAuditPlus""",
-    """\WUNIQUE_ID\s*=\s*({alert_id}\d+)""",
-    """\WTIME_GENERATED\s*=\s*({time}\d+)""",
-    """\WSOURCE\s*=\s*(?:User Behaviour Analytics|({src_host}[\w\-.]+))""",
-    """\WALERT_PROFILE\s*=\s*({alert_type}.+?)\s*\]""",
-    """\WSEVERITY\s*=\s*({alert_severity}\d+)""",
-    """\WFORMAT_MESSAGE\s*=\s*.+?\soccured for\s+({user}[^\s]+)\s""",
-    """\WFORMAT_MESSAGE\s*=.+?host:(?:({dest_ip}[A-Fa-f:\d.]+)|({dest_host}[^\s]+))\s+was accessed by user:({user}[^\s]+)\s""",
-    """\WFORMAT_MESSAGE\s*=.+?\sfor User\s*'({user}[^']+)'\s*in\s*'(?:({dest_ip}[A-Fa-f:\d.]+)|({dest_host}[^\s']+))'""",
-    """\WFORMAT_MESSAGE\s*=.+?\swas done by\s+({user}[^\s]+)\s""",
-    """\WFORMAT_MESSAGE\s*=.+?was modified by\s+'(({domain}[^'\\]+)\\)?({user}[^\s\\']+)'""",
-    """\WFORMAT_MESSAGE\s*=.+?\s+occured on\s+(?:({dest_ip}[A-Fa-f:\d.]+)|({dest_host}[^\s]+))\s+""",
-    """\WDOMAIN\s*=\s*({domain}[^\s\]]+)""",
-    """\WFORMAT_MESSAGE\s*=\s*({additional_info}.+?)\s*\]"""
+    """\WUNIQUE_ID\s{0,100}=\s{0,100}({alert_id}\d{1,100})""",
+    """\WTIME_GENERATED\s{0,100}=\s{0,100}({time}\d{1,100})""",
+    """\WSOURCE\s{0,100}=\s{0,100}(?:User Behaviour Analytics|({src_host}[\w\-.]+))""",
+    """\WALERT_PROFILE\s{0,100}=\s{0,100}({alert_type}.+?)\s{0,100}\]""",
+    """\WSEVERITY\s{0,100}=\s{0,100}({alert_severity}\d{1,100})""",
+    """\WFORMAT_MESSAGE\s{0,100}=\s{0,100}.+?\soccured for\s{1,100}({user}[^\s]+)\s""",
+    """\WFORMAT_MESSAGE\s{0,100}=.+?host:(?:({dest_ip}[A-Fa-f:\d.]+)|({dest_host}[^\s]+))\s{1,100}was accessed by user:({user}[^\s]+)\s""",
+    """\WFORMAT_MESSAGE\s{0,100}=.+?\sfor User\s{0,100}'({user}[^']+)'\s{0,100}in\s{0,100}'(?:({dest_ip}[A-Fa-f:\d.]+)|({dest_host}[^\s']+))'""",
+    """\WFORMAT_MESSAGE\s{0,100}=.+?\swas done by\s{1,100}({user}[^\s]+)\s""",
+    """\WFORMAT_MESSAGE\s{0,100}=.+?was modified by\s{1,100}'(({domain}[^'\\]+)\\)?({user}[^\s\\']+)'""",
+    """\WFORMAT_MESSAGE\s{0,100}=.+?\s{1,100}occured on\s{1,100}(?:({dest_ip}[A-Fa-f:\d.]+)|({dest_host}[^\s]+))\s{1,100}""",
+    """\WDOMAIN\s{0,100}=\s{0,100}({domain}[^\s\]]+)""",
+    """\WFORMAT_MESSAGE\s{0,100}=\s{0,100}({additional_info}.+?)\s{0,100}\]"""
   ]
   DupFields=[ "alert_type->alert_name" ]
 }

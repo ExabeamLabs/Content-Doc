@@ -9,15 +9,9 @@ Name = cef-carbonblack-endpoint-process
   DataType = "process-created"
   Conditions = [ """CEF:""", """event_type_cd""" , """|SkyFormation Cloud Apps Security""", """sensor_product_cd":"cb_response"""", """requestClientApplication=RedCanary""", """destinationServiceName=Custom Application""", """process_path""" ]
   Fields =[
-    """({time}\d+-\d+-\d+T\d+:\d+:\d+.\d+Z).*?Skyformation""",
-    """"sensor_id"+:"+({sensor_id}[^"]+)""",
-    """"+process_path"+:"+({process}({directory}[^"]+(\\|\/)+)?({process_name}[^"]+))""",
-    """"host_name"+:"+({host}[^"]+)""",
-    """"process_command_line"+:"+({command_line}[^"]+)"*,""",
-    """"process_md5"+:"+({md5}[^"]+)"*,""",
-    """"user_username"+:"+({user}[^"]+)"*,""",
-    """"user_domain"+:"+({domain}[^"]+)"*,"""
-    ]
-    DupFields = ["host->dest_host"]
-}
+    """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}.\d{1,100}Z).*?Skyformation""",
+    """"sensor_id"{1,20}:"{1,20}({sensor_id}[^"]+)""",
+    """"{1,20}process_path"{1,20}:"{1,20}({process}({directory}[^"]+(\\|\/)+)?({process_name}[^"]+))""",
+    """"host_name"{1,20}:"{1,20}({host}[^"]+)""",
+    """"process_command_line"{1,20}:"{1,20}({command_line}[^"]+)"{0,20}
 ```

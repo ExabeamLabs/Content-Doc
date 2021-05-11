@@ -9,9 +9,9 @@ Name = meraki-firepower-active-dir
   TimeFormat = "epoch_sec"
   Conditions = [ """Original Address=""", """Active Directory""", """connected to server""" ]
   Fields = [
-    """\s({time}\d+).\d+\s""",
+    """\s({time}\d{1,100}).\d{1,100}\s""",
     """Original Address=({host}[^\s]+)\s""",
-    """events\s*({event_name}.*?)\s*$""",
+    """events\s{0,100}({event_name}.*?)\s{0,100}$""",
     """connected to server ({dest_host}[^\s]+) \(({dest_ip}.*?)\)\sas ({domain}[^\/]+)\/({user}[^\s]+)""",
   ]
 }

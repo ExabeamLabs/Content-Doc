@@ -11,17 +11,8 @@ Name = q-microsoft-print-activity
   Fields = [
     """\sTimeGenerated=({time}\d{10})""",
     """\sComputer=({host}\S+)""",
-    """\sUser=({user}.+?)\s+\w+=""",
-    """\sDomain=({domain}.+?)\s+\w+=""",
-    """\sEventIDCode=({event_code}\d+)""",
-    """Message=({activity_1}.*?\s*(?i)Document) \d+,""",
-    """owned by [^\s]+\s*.*?( on [^\s]+)?({activity_2}.+?) on ({printer_name}.+?)(\.\s+|\s+through)""",
-    """Message=[^,]+,\s+({object}.+?) owned by""",
-    """owned by ({user}.+?) (to|on|was) """,
-    """owned by.+? on \\*(?:({src_ip}[A-Fa-f:\d.]+)|({src_host}.+?)) was """,
-    """through port (\w+_)?(?:({dest_ip}[A-Fa-f:\d.]+)[_\w]*|\\*({dest_host}.+?))\.\s+""",
-    """Size in bytes:\s+({bytes}\d+)""",
-    """Pages printed:\s+({num_pages}\d+)""",
-  ]
-}
+    """\sUser=({user}.+?)\s{1,100}\w+=""",
+    """\sDomain=({domain}.+?)\s{1,100}\w+=""",
+    """\sEventIDCode=({event_code}\d{1,100})""",
+    """Message=({activity_1}.*?\s{0,100}(?i)Document) \d{1,100}
 ```

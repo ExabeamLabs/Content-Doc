@@ -12,16 +12,16 @@ Name = mcafee-dlp-email-alert-1
       """(?i)({time}\d\d \d\d \d\d\d\d \d\d:\d\d:\d\d)\s({host}\S+)\s<mail:info>""",
       """\sfrom=<({sender}[^>,;]+)""",
       """\sfrom=<[^@]+?@({external_domain_sender}[^>,;]+)""",
-      """\ssize=({bytes}\d+)""",
+      """\ssize=({bytes}\d{1,100})""",
       """\ssource=({src_host}[^(,]+?)?\(({src_ip}[a-fA-F\d.:]+)""",
-      """\snrcpts=({num_recipients}\d+)""",
+      """\snrcpts=({num_recipients}\d{1,100})""",
       """\sto=<({recipient}[^>,;]+)""",
       """\sto=<[^@]+?@({external_domain_recipient}[^>,;]+)""",
       """\sto=<({recipients}[^>]+?)>""",
       """\sstatus='({outcome}[^']+?)'""",
       """\ssubject='({subject}[^']+?)'""",
       """\sattachment\(s\)='({attachments}[^']+?)'""",
-      """\snumber-attachment\(s\)='({num_attachments}\d+)"""
+      """\snumber-attachment\(s\)='({num_attachments}\d{1,100})"""
     ]
   }
 ```

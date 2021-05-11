@@ -10,7 +10,7 @@ Name = oracle-db-query
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """"action_name":"""", """"object_schema":"""", """"return_code":"""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """"event_timestamp":"({time}[^"]+)""",
     """"action_name":"({db_operation}[^"]+)""",
     """"sql_text":"({db_query}.*?)","""",

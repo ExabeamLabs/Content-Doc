@@ -9,7 +9,7 @@ Name = ovirt-failed-app-login-1
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """Unable to log in.""", """ovirt""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d),.+?ovirt""",
     """Cannot authenticate user '({user}[^\s']+)' connecting from '({src_ip}[A-Fa-f:\d.]+)""",
     """({app}ovirt)"""

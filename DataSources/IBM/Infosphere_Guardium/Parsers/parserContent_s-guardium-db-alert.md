@@ -11,7 +11,7 @@ Name = s-guardium-db-alert
   Conditions = [ """GUARDIUM_ALERT""" ]
   Fields = [
     """session-start-time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\w+ \d{1,2} \d{1,2}:\d{1,2}:\d{1,2}\s*({host}[\w\.-]+)""",
+    """\w+ \d{1,2} \d{1,2}:\d{1,2}:\d{1,2}\s{0,100}({host}[\w\.-]+)""",
     """rule-desc=({alert_name}[^\^]+)(\^+|$)""",
     """category=({alert_type}[^\^]+)(\^+|$)""",
     """severity=({alert_severity}[^\^]+)(\^+|$)""",

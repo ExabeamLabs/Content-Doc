@@ -9,11 +9,11 @@ Name = cisco-ftd-722041
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
   Conditions = [ """-722041""", """%FTD-""" ]
   Fields = [
-    """({time}\d+-\d+-\d+T\d+:\d+:\d+Z)\s({host}[^\s]+)""",
-    """%FTD-({priority}\d+)-({event_code}\d+)""",
-    """User\s*<({user}[^@>\\]+)(?:@({domain}[^>]+))?>""",
-    """\sIP\s+<({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})>""",
-    """ Group\s+<({group}.+?)>"""
+    """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}Z)\s({host}[^\s]+)""",
+    """%FTD-({priority}\d{1,100})-({event_code}\d{1,100})""",
+    """User\s{0,100}<({user}[^@>\\]+)(?:@({domain}[^>]+))?>""",
+    """\sIP\s{1,100}<({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})>""",
+    """ Group\s{1,100}<({group}.+?)>"""
   ]
 }
 ```

@@ -10,7 +10,7 @@ Name = syslog-json-member-added-2008
   Conditions = [ """"Message":"A member was added to a security-enabled """, """"SourceModuleType":""" ]
   Fields = [
     """({event_name}A member was added to a security-enabled [\w\s]+ group)""",
-    """"EventTime":\s*"({time}\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})"""",
+    """"EventTime":\s{0,100}"({time}\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})"""",
     """"Hostname":"({host}[^."]*)""",
     """"EventID":({event_code}[^,]+)""",
     """"RecordNumber":({record_id}[^,]+)""",

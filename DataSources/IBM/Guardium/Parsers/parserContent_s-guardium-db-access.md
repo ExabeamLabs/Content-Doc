@@ -10,11 +10,11 @@ Name = s-guardium-db-access
   Conditions = [ """|IBM|Guardium|""", """Object/Field=""", """App User Name="""]
   Fields = [
     """exabeam_host=({host}[^"]+)""",
-    """:\d+\s*({host}[^\s]+)\s*\w+:""",
-    """\d\d:\d\d:\d\d\s*({host}[^\.]+)\.({domain}[^\.]+)\..*?(?=\sauditprocess)""",
+    """:\d{1,100}\s{0,100}({host}[^\s]+)\s{0,100}\w+:""",
+    """\d\d:\d\d:\d\d\s{0,100}({host}[^\.]+)\.({domain}[^\.]+)\..*?(?=\sauditprocess)""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """Start\sTime=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """({process_name}[^\|]+)\|App\sUser\sName=({user}[^\|]+)\|Service\sName=({service_name}[^\|]+)\|Object\/Field=({database_object}[^\|]+)\|Sum\sOf\sRecord\sAffected=({sql_count}\d+)""",
+    """({process_name}[^\|]+)\|App\sUser\sName=({user}[^\|]+)\|Service\sName=({service_name}[^\|]+)\|Object\/Field=({database_object}[^\|]+)\|Sum\sOf\sRecord\sAffected=({sql_count}\d{1,100})""",
   ]
   DupFields = ["user->db_user"]
 }

@@ -10,14 +10,14 @@ Name = s-4719-1
   Conditions = [ " 4719 ", "System audit policy was changed", "AUDIT_SUCCESS" ]
   Fields = [
     """({event_name}System audit policy was changed)""",
-    """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)\s+({host}[\w\-.]+)\s+AUDIT_SUCCESS""",
+    """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)\s{1,100}({host}[\w\-.]+)\s{1,100}AUDIT_SUCCESS""",
     """({event_code}4719)""",
-    """\sAccount Name:\s*({user}.+?)\s+Account Domain""",
-    """\sAccount Domain:\s*({domain}[^\s]+)""",
-    """\sLogon ID:\s*({logon_id}[^\s]+)""",
-    """\sCategory:\s*({audit_category}.+?)\s+Subcategory:""",
-    """\sSubcategory:\s*({subcategory}.+?)\s+Subcategory GUID:""",
-    """\sChanges:\s*({policy}.+?)\s*(\w+:|$)"""
+    """\sAccount Name:\s{0,100}({user}.+?)\s{1,100}Account Domain""",
+    """\sAccount Domain:\s{0,100}({domain}[^\s]+)""",
+    """\sLogon ID:\s{0,100}({logon_id}[^\s]+)""",
+    """\sCategory:\s{0,100}({audit_category}.+?)\s{1,100}Subcategory:""",
+    """\sSubcategory:\s{0,100}({subcategory}.+?)\s{1,100}Subcategory GUID:""",
+    """\sChanges:\s{0,100}({policy}.+?)\s{0,100}(\w+:|$)"""
   ]
   DupFields = [ "host->dest_host" ]
 }

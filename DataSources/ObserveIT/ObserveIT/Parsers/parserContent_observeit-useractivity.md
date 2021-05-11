@@ -10,19 +10,19 @@ Name = observeit-useractivity
   TimeFormat = "MM/dd/yyyy HH:mm:ss"
   Conditions = [ """EventName=ObserveIT-UserActivity;""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """({host}\S+)\s+(\S+\s+){4}EventName=""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """({host}\S+)\s{1,100}(\S+\s{1,100}){4}EventName=""",
     """\sActivityTime=({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d)""",
-    """\sSessionID=({session_id}[^;]+?)\s*(;|"*\s*$)""",
-    """\sOS=({os}[^;]+?)\s*(;|"*\s*$)""",
-    """\sServerName=({dest_host}[^;]+?)\s*(;|"*\s*$)""",
-    """\sDomainName=({domain}[^;]+?)\s*(;|"*\s*$)""",
-    """\sUserName=(?:n\/a|({user}[^;]+?))\s*(;|"*\s*$)""",
-    """\sLoginName=({user}[^;]+?)\s*(;|"*\s*$)""",
-    """\sClientName=(?:\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|({src_host}[^;]+?))\s*(;|"*\s*$)""",
+    """\sSessionID=({session_id}[^;]+?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
+    """\sOS=({os}[^;]+?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
+    """\sServerName=({dest_host}[^;]+?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
+    """\sDomainName=({domain}[^;]+?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
+    """\sUserName=(?:n\/a|({user}[^;]+?))\s{0,100}(;|"{0,20}\s{0,100}$)""",
+    """\sLoginName=({user}[^;]+?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
+    """\sClientName=(?:\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|({src_host}[^;]+?))\s{0,100}(;|"{0,20}\s{0,100}$)""",
     """\sClientAddress=({src_ip}[a-fA-F\d.:]+)""",
-    """\sProcessName=({process_name}[^;]+?)\s*(;|"*\s*$)""",
-    """\sViewerURL=({additional_info}[^;]+?)\s*(;|"*\s*$)""",
+    """\sProcessName=({process_name}[^;]+?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
+    """\sViewerURL=({additional_info}[^;]+?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
   ]
 }
 ```

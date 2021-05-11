@@ -10,11 +10,11 @@ Name = googlecloud-web-activity
   Conditions = [ """"jsonPayload":""", """"gce_instance"""", """googleapis.com""", """resource_name""" ]
   Fields = [
     """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """"bytes":"({bytes}\d+)""",
+    """"bytes":"({bytes}\d{1,100})""",
     """"client":"(-|({src_ip}[^"]+))""",
     """"method":"(-|({method}[^"]+))""",
     """"cache":"({proxy_action}[^"]+)""",
-    """"status":"({result_code}\d+)""",
+    """"status":"({result_code}\d{1,100})""",
     """"url":"({full_url}[^"]+)""",
     """"user":"({user}[^"]+)""",
     """"project_id":"({project_id}[^"]+)""",

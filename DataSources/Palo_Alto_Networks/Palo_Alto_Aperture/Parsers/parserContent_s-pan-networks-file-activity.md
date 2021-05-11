@@ -12,12 +12,12 @@ Name = s-pan-networks-file-activity
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)Z""",
     """exabeam_host=({host}[\w\-.]+)""",
-    """\Wuser"?\s*(=|:)\s*"({user_email}[^"]+)"""",
-    """\Wcloud_app_instance"?\s*(=|:)\s*"({app}[^"]+)"""",
-    """\Wsource_ip"?\s*(=|:)\s*"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
-    """\Witem_name"?\s*(=|:)\s*"({file_name}[^"]+?(\.\s*({file_ext}[^\."]+?))?)"""",
-    """\Waction"?\s*(=|:)\s*"({accesses}[^"]+)"""",
-    """\Witem_type"?\s*(=|:)\s*"({file_type}[^"]+)"""",
+    """\Wuser"?\s{0,100}(=|:)\s{0,100}"({user_email}[^"]+)"""",
+    """\Wcloud_app_instance"?\s{0,100}(=|:)\s{0,100}"({app}[^"]+)"""",
+    """\Wsource_ip"?\s{0,100}(=|:)\s{0,100}"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
+    """\Witem_name"?\s{0,100}(=|:)\s{0,100}"({file_name}[^"]+?(\.\s{0,100}({file_ext}[^\."]+?))?)"""",
+    """\Waction"?\s{0,100}(=|:)\s{0,100}"({accesses}[^"]+)"""",
+    """\Witem_type"?\s{0,100}(=|:)\s{0,100}"({file_type}[^"]+)"""",
   ]
   DupFields = [ "host->dest_host" ]
 }

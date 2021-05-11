@@ -18,7 +18,7 @@ Name = o365-inbox-rules-all
     """msg=({additional_info}.+?)\s\w+=""",
     """"Value":"(?:smtp:)?.+?@({target_domain}[^"]+)"""",
     """UserId":"({user}.+?@({user_domain}[^"]+).+?)""",
-    """destinationServiceName=({app}.+?)\s*filePath""",
+    """destinationServiceName=({app}.+?)\s{0,100}filePath""",
     """({app}Office 365)"""
     """"SubjectOrBodyContainsWords":"({filter_key_words}[^"]+)"""
   ]

@@ -10,7 +10,7 @@ Name = carbonblack-file-operations
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"
   Conditions = [ """Cb Protection event:""", """subtype="""", """file_threat=""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """({host}[\w.\-]+)\s(\-\s)+Cb Protection event:"""
     """\sdate="({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|PM|pm))""",
     """\stext="({additional_info}[^"]+)"""",

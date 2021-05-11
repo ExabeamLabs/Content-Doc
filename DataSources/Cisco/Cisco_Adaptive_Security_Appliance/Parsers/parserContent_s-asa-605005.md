@@ -9,16 +9,16 @@ Name = s-asa-605005
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ "Login permitted from", "-605005", "%ASA-" ]
   Fields = [
-    """({time}[a-zA-Z]{3}\s\d{2}\s\d{4}\s\d{2}:\d{2}:\d{2}):\s+""",
+    """({time}[a-zA-Z]{3}\s\d{2}\s\d{4}\s\d{2}:\d{2}:\d{2}):\s{1,100}""",
     """exabeam_raw=.*?({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[\w.\-]+)""",
-    """%ASA-({priority}\d+)-({event_code}\d+)""",
-    """\w+ \d+ \d+:\d+:\d+ ({host}[\w.\-]+)""",
+    """%ASA-({priority}\d{1,100})-({event_code}\d{1,100})""",
+    """\w+ \d{1,100} \d{1,100}:\d{1,100}:\d{1,100} ({host}[\w.\-]+)""",
     """Login permitted from ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """Login permitted from .+? to ({domain}[^:]+)""",
     """Login permitted from .+?:({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """Login permitted from .+? to .+?/({auth}.+?) for user""",
-    """user "+({user}[^"]+)"""
+    """user "{1,20}({user}[^"]+)"""
   ]
 }
 ```

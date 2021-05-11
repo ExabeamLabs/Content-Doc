@@ -9,11 +9,11 @@ Name = cef-trendmicro-app-login
   TimeFormat = "MMM dd yyyy HH:mm:ss zZ"
   Conditions = [ """CEF:""", """|Trend Micro|Deep Discovery Inspector|""", """dvc=""", """User logged on""" ]
   Fields = [
-    """\Wdvc=({host}.+?)(\s+\w+=|\s*$)""",
-    """\Wdvchost=({host}.+?)(\s+\w+=|\s*$)""",
-    """\Wrt=({time}\w+\s+\d\d \d\d\d\d \d\d:\d\d:\d\d \S+)""",
+    """\Wdvc=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wdvchost=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wrt=({time}\w+\s{1,100}\d\d \d\d\d\d \d\d:\d\d:\d\d \S+)""",
     """\Wduser=({user}[^\s]+)""",
-    """\Woutcome=({outcome}.+?)\s+(\w+=|$)""",
+    """\Woutcome=({outcome}.+?)\s{1,100}(\w+=|$)""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
   ]
 }

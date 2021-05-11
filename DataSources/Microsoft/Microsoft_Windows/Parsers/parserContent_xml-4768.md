@@ -12,7 +12,7 @@ Name = xml-4768
       """SystemTime=\'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """({event_name}A Kerberos authentication ticket \(TGT\) was requested)""",
       """<Computer>({host}[\w.-]+)</Computer>""",
-      """<EventID>({event_code}\d+)</EventID>""",
+      """<EventID>({event_code}\d{1,100})</EventID>""",
       """<Data Name='TargetSid'>(NULL SID|({user_sid}[^<]+))</Data>""",
       """<Data Name='Status'>({result_code}[^<]+)</Data>""",
       """<Data Name='TargetUserName'>(?=\w)({user}[^<=]+)</Data>""",

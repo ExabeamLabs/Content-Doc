@@ -14,14 +14,14 @@ Name = s-member-added-2008
     """ComputerName=({host}[\w.\-]+)""",
     """EventCode=({event_code}[\w]+)""",
     """A member was added to a security-enabled ({group_type}[^\s]+) group""",
-    """Subject:.+?Account Name:\s+({user}[^\s]+)""",
-    """Account Domain:\s+({domain}[^\s]+)""",
-    """Logon ID:\s+({logon_id}[^\s]+)\s+""",
-    """Member:\s+Security ID:\s+({account_id}(?=[^\\]+\\)({sid_domain}[^\\]+)\\({sid_user}.+?)|(?:.+?))\s+Account Name:""",
-    """Member:(.+?({account_dn}CN=.+?,({account_ou}OU.+?DC=[\w-]+))|(?:.+?))\s+Group:""",
-    """Group:\s+Security ID:\s+({group_id}[^\s]+)""",
-    """Group:.+?(Group|Account) Name:\s+({group_name}.+?)?\s+(Group|Account) Domain:""",
-    """Group:.+?(Group|Account) Domain:\s+({group_domain}[^\s]+)""",
+    """Subject:.+?Account Name:\s{1,100}({user}[^\s]+)""",
+    """Account Domain:\s{1,100}({domain}[^\s]+)""",
+    """Logon ID:\s{1,100}({logon_id}[^\s]+)\s{1,100}""",
+    """Member:\s{1,100}Security ID:\s{1,100}({account_id}(?=[^\\]+\\)({sid_domain}[^\\]+)\\({sid_user}.+?)|(?:.+?))\s{1,100}Account Name:""",
+    """Member:(.+?({account_dn}CN=.+?,({account_ou}OU.+?DC=[\w-]+))|(?:.+?))\s{1,100}Group:""",
+    """Group:\s{1,100}Security ID:\s{1,100}({group_id}[^\s]+)""",
+    """Group:.+?(Group|Account) Name:\s{1,100}({group_name}.+?)?\s{1,100}(Group|Account) Domain:""",
+    """Group:.+?(Group|Account) Domain:\s{1,100}({group_domain}[^\s]+)""",
   ]
   DupFields = [ "host->dest_host" ]
 }

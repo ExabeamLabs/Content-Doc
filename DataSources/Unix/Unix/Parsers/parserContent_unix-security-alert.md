@@ -13,7 +13,7 @@ Name = unix-security-alert
     """({alert_name}POSSIBLE BREAK-IN ATTEMPT!)""",
     """ Address ({src_ip}[a-fA-F\d.:]+) maps to ({src_host}[^,]+)""",
     """({host}[\w.\-]+) ({process}sshd)\[""",
-    """({additional_info}Address .+?- POSSIBLE BREAK-IN ATTEMPT!)\s*$"""
+    """({additional_info}Address .+?- POSSIBLE BREAK-IN ATTEMPT!)\s{0,100}$"""
   ]
   DupFields = [ "alert_name->alert_type" ]
 }

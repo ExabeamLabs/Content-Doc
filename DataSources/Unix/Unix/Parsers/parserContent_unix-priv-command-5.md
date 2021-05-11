@@ -13,7 +13,7 @@ Name = unix-priv-command-5
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """Message forwarded from (::ffff:)?({host}[^\s:]+)""",
     """The privilege command ({command_line}({process}({directory}.+?)({process_name}[^\/]+?))), is executed"""
-    """executed by user with id ({user_id}\d+)"""
+    """executed by user with id ({user_id}\d{1,100})"""
   ]
   DupFields = ["directory->process_directory"]
 }

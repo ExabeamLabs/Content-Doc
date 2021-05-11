@@ -9,15 +9,15 @@ Name = cef-infowatch-web-activity-1
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """|Mail in Browser|""", """|DLP|DLP TM""" ]
   Fields = [
-    """\Wact=({action}.+?)(\s+[\w\.]+=|\s*$)""",
-    """\Wrt=({time}\d+)""",
+    """\Wact=({action}.+?)(\s{1,100}[\w\.]+=|\s{0,100}$)""",
+    """\Wrt=({time}\d{1,100})""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
-    """\Wsntdom=({user_email}.+?)(\s+[\w\.]+=|\s*$)""",
-    """\Wduser=({web_domain}.+?)(\s+[\w\.]+=|\s*$)""",
-    """\Wrequest=({full_url}(\w+:\/\/)?[^\/]+?({uri_path}\/[^\?\s]*?)({uri_query}\?.*?)?)(\s+[\w\.]+=|\s*$)""",
-    """\Wduser=[^=]*?({top_domain}[^\/\.\s]+(?i)(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)(\s+[\w\.]+=|\s*$)""",
-    """\Wdvchost=({host}.+?)(\s+[\w\.]+=|\s*$)""",
-    """\Wdvc=({host}.+?)(\s+[\w\.]+=|\s*$)""",   
+    """\Wsntdom=({user_email}.+?)(\s{1,100}[\w\.]+=|\s{0,100}$)""",
+    """\Wduser=({web_domain}.+?)(\s{1,100}[\w\.]+=|\s{0,100}$)""",
+    """\Wrequest=({full_url}(\w+:\/\/)?[^\/]+?({uri_path}\/[^\?\s]*?)({uri_query}\?.*?)?)(\s{1,100}[\w\.]+=|\s{0,100}$)""",
+    """\Wduser=[^=]*?({top_domain}[^\/\.\s]+(?i)(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)(\s{1,100}[\w\.]+=|\s{0,100}$)""",
+    """\Wdvchost=({host}.+?)(\s{1,100}[\w\.]+=|\s{0,100}$)""",
+    """\Wdvc=({host}.+?)(\s{1,100}[\w\.]+=|\s{0,100}$)""",   
   ]
 }
 ```

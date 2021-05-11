@@ -10,12 +10,12 @@ Name = amag-badge-access
   Conditions= [ """"access_badge"""", """"txnconditionname":"""", """"cardnumber":""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """"datetimeoftxn":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+    """"datetimeoftxn":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """"txnconditionname":"({outcome}[^"]+)""",
     """"wherename":"({location_door}[^"]+)""",
     """"firstname":"({user_firstname}[^"]+)""",
     """"lastname":"({user_lastname}[^"]+)""",
-    """"cardnumber":({badge_id}\d+)""",
+    """"cardnumber":({badge_id}\d{1,100})""",
     """"db_name":"({direction}[^"]+)""",
     """"db_ip":"({dest_ip}[a-fA-F\d.:]+)""",
   ]

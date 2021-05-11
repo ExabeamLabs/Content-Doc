@@ -16,7 +16,7 @@ Name = adfs-auth-failed
     """ProcessID='({process_id}[^\']+)""",
     """ThreadID='({thread_id}[^\']+)""",
     """UserID='({user_id}[^\']+)""",
-    """<\/Data><Data>({user_email}[^\s]+?)\s*\-({failure_reason}.+?)<\/Data><Data>""",
+    """<\/Data><Data>({user_email}[^\s]+?)\s{0,100}\-({failure_reason}.+?)<\/Data><Data>""",
   ]
 }
 ```

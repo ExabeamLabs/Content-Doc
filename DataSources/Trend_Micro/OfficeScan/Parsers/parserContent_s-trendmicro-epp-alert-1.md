@@ -9,14 +9,14 @@ Name = s-trendmicro-epp-alert-1
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"
   Conditions = [ "C&C callback detected" , "SourceName=Trend Micro OfficeScan Server" ]
   Fields = [
-    """exabeam_raw=.*?({time}\d+\/\d+\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|PM|pm))""",
+    """exabeam_raw=.*?({time}\d{1,100}\/\d{1,100}\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|PM|pm))""",
     """ComputerName=({host}[^\s\n]+)""",
     """\sType=({alert_severity}[^\s\n]+)""",
     """User=(?:SYSTEM|NOT_TRANSLATED|({user}[^\s\n]+))""",
-    """RecordNumber=({alert_id}\d+)""",
-    """C\&C\s+({alert_name}.+?)\s+Compromised Host:""",
-    """(Endpoint|Computer|Compromised Host):\s+({src_host}[^\s\n]+)""",
-    """IP Address:\s*({src_ip}[A-Fa-f:\d.]+)""",
+    """RecordNumber=({alert_id}\d{1,100})""",
+    """C\&C\s{1,100}({alert_name}.+?)\s{1,100}Compromised Host:""",
+    """(Endpoint|Computer|Compromised Host):\s{1,100}({src_host}[^\s\n]+)""",
+    """IP Address:\s{0,100}({src_ip}[A-Fa-f:\d.]+)""",
   ]
   DupFields = [ "alert_name->alert_type" ]
 }

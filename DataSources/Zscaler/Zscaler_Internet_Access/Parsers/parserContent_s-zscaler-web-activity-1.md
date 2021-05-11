@@ -10,8 +10,8 @@ Name = s-zscaler-web-activity-1
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ ""","ologin":"""", ""","cip":"""", ""","url":"""", ""","urlsupercat":"""", ""","reqdatasize":""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """"time":"({time}\d\d\d\d-\d\d-\d\d \d+:\d+:\d+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """"time":"({time}\d\d\d\d-\d\d-\d\d \d{1,100}:\d{1,100}:\d{1,100})""",
     """"ologin":"({user_email}({user}[^@\s"]+)@[^@\s"]+)"""",
     """"cip":"({src_ip}[A-Fa-f:\d.]+)""",
     """"proto":"({protocol}[^"]+)""",
@@ -28,8 +28,8 @@ Name = s-zscaler-web-activity-1
     """"ua":"(?:-|Mozilla\/[^"]+?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
     """"referer":"({referrer}[^"]+)""",
     """"fileclass":"({mime}[^"]+)""",
-    """"reqdatasize":({bytes_out}\d+)""",
-    """"respdatasize":({bytes_in}\d+)""",
+    """"reqdatasize":({bytes_out}\d{1,100})""",
+    """"respdatasize":({bytes_in}\d{1,100})""",
   ]
 }
 ```

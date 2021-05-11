@@ -9,8 +9,8 @@ Name = sfdc-app-activity
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """SFDCLogType=""", """SFDCLogId=""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """SFDCLogDate="({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d.\d\d\d(\-|\+)\d+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """SFDCLogDate="({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d.\d\d\d(\-|\+)\d{1,100})""",
     """PAGE_NAME="?({object}[^",]+)""",
     """ENTITY_NAME="?({object}[^",]+)""",
     """object="?({object}[^",]+)""",
@@ -21,7 +21,7 @@ Name = sfdc-app-activity
     """CLIENT_IP="?({src_ip}[A-Fa-f:\d.]+)""",
     """Username="?({user_email}[^"\s,@]+@[^"\s,]+)""",
     """USER_ID="?({user}[^"\s,]+)""",
-    """REQUEST_SIZE="?({bytes}\d+)""",
+    """REQUEST_SIZE="?({bytes}\d{1,100})""",
   ]
 }
 ```

@@ -9,15 +9,15 @@ Name = vectra-alert-1
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """vectra_standard_account_detection""", """: DETECT """, """detection@"""]
   Fields = [
-	"""({host}[\w.\-]+)\s+vectra_standard_account_detection""",
+	"""({host}[\w.\-]+)\s{1,100}vectra_standard_account_detection""",
 	"""\saccount="({user_email}[^"]+)"""",
 	"""\sthreat="({alert_severity}[^"]+)""",
 	"""\stype="({alert_name}[^"]+)""",
 	"""\scategory="({category}[^"]+)""",
 	"""\sDesetinationIP="(0\.0\.0\.0|({dest_ip}[a-fA-F\d.:]+))""",
-	"""\sdest_port="({dest_port}\d+)""",
-	"""\sBytesSent="({bytes_out}\d+)""",
-	"""\sBytesRcvd="({bytes_in}\d+)""",
+	"""\sdest_port="({dest_port}\d{1,100})""",
+	"""\sBytesSent="({bytes_out}\d{1,100})""",
+	"""\sBytesRcvd="({bytes_in}\d{1,100})""",
 	"""\sUTCTimeStart="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""
   ]
 }

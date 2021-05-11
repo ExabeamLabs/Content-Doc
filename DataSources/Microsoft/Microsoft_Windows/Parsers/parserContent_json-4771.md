@@ -10,13 +10,13 @@ Name = json-4771
   Conditions = [  "4771", """"Kerberos pre-authentication failed.""", """"TicketOptions""" ]
   Fields = [
     """({event_name}Kerberos pre-authentication failed)""",
-    """"EventTime":\s*({time}\d+)""",
-    """"EventTime":\s*"({time}\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})"""",
+    """"EventTime":\s{0,100}({time}\d{1,100})""",
+    """"EventTime":\s{0,100}"({time}\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})"""",
     """"TimeGenerated":"({time}[^"]*)""",
-    """"TimeCreated"+:"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
+    """"TimeCreated"{1,20}:"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """"Computer":"({host}[^"]+)"""",
     """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]+\sSkyformation""",
-    """@timestamp\\?"+:\\?"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+    """@timestamp\\?"{1,20}:\\?"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """"(Hostname|MachineName|(?:winlog\.)?computer_name)\\?":\\?"({host}[^."\\]*)""",
     """({event_code}4771)""",
     """"(TargetSid|TargetDomainName)\\?":\\?"({user_sid}[^"\\]*)""",

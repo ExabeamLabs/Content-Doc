@@ -12,7 +12,7 @@ Name = mcafee-siem-4648
       """({event_name}A logon was attempted using explicit credentials)""",
       """"src_ip":"({src_ip}[^"]+)""",
       """"dst_ip":"({dest_ip}[^"]+)""",
-      """"id":\d*({event_code}4648)""",
+      """"id":\d{0,100}({event_code}4648)""",
       """"firsttime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
       """"DomainID":"({domain}[^"]+)""",
       """"HostID":"({host}[^"]+)""",

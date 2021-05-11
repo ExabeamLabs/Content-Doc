@@ -9,13 +9,13 @@ Name = cef-azure-password-change
   TimeFormat = "epoch"
   Conditions = [ """|Microsoft|Azure Active Directory|""", """|Change user password|""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """\Wrt=({time}\d+)""",
-    """\Wact=({event_code}.+?)\s*(\w+=|$)""",
-    """\Woutcome=({outcome}.+?)\s*(\w+=|$)""",
-    """\Wsuid=(?!\S+@\S+)({user}[^\s]+)\s*(\w+=|$)""",
-    """\Wsuid=({user_email}({user}[^\s@]+)@[^\s]+)\s*(\w+=|$)""",
-    """\Wcs5=.+?\|/Target/ID:"({target_user}[^"]+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """\Wrt=({time}\d{1,100})""",
+    """\Wact=({event_code}.+?)\s{0,100}(\w+=|$)""",
+    """\Woutcome=({outcome}.+?)\s{0,100}(\w+=|$)""",
+    """\Wsuid=(?!\S+@\S+)({user}[^\s]+)\s{0,100}(\w+=|$)""",
+    """\Wsuid=({user_email}({user}[^\s@]+)@[^\s]+)\s{0,100}(\w+=|$)""",
+    """\Wcs5=.+?\|/Target/ID:"({target_user}[^"]+)"""
   ]
 }
 ```

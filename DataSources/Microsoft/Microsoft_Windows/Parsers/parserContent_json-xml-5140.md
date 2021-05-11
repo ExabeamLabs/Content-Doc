@@ -18,7 +18,7 @@ Name = json-xml-5140
       """<Data Name='ObjectType'>({file_type}.+?)</Data>""",
       """<Data Name='IpAddress'>({src_ip}.+?)</Data>""",
       """<Data Name='ShareName'>(?:\\\\\*\\)?({share_name}.+?)</Data>""",
-      """<Data Name='ShareLocalPath'>(?:[\\\?]+)?(?:\s*|({share_path}(({d_parent}.+)\\)?({d_name}\s*\S[^\\<]+?))\\?)</Data>""",
+      """<Data Name='ShareLocalPath'>(?:[\\\?]+)?(?:\s{0,100}|({share_path}(({d_parent}.+)\\)?({d_name}\s{0,100}\S[^\\<]+?))\\?)</Data>""",
       """({accesses_code}4416)""",
     ]
     DupFields = ["host->dest_host", "accesses_code->accesses"]

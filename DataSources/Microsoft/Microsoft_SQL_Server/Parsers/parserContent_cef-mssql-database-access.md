@@ -10,12 +10,12 @@ Name = cef-mssql-database-access
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """|Microsoft|SQL Server|""", """fileType=Security Audit""" ]
   Fields = [
-    """\ssuser=(({domain}[^=\\\/]+)[\\\/]+)?({user}[^\\\/=]+?)(\s+\w+=|\s*$)""",
+    """\ssuser=(({domain}[^=\\\/]+)[\\\/]+)?({user}[^\\\/=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """CEF:([^\|]*\|){5}({reason}[^\|]+)""",
     """cs3=({service_name}[^\s]+)"""
-    """\sdestinationServiceName=(|({service_name}.+?))(\s+\w+=|\s*$)""",
-    """\sshost=(|({host}.+?))(\s+\w+=|\s*$)""",
-    """\srt=({time}\d+)""",
+    """\sdestinationServiceName=(|({service_name}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sshost=(|({host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\srt=({time}\d{1,100})""",
   ]
 }
 ```

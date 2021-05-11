@@ -12,8 +12,8 @@ Name = json-4648
       """({event_name}A logon was attempted using explicit credentials)""",
       """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]+\sSkyformation""",
-      """"EventReceivedTime":\s*({time}\d+)""",
-      """"timestamp":\s*({time}\d+)""",
+      """"EventReceivedTime":\s{0,100}({time}\d{1,100})""",
+      """"timestamp":\s{0,100}({time}\d{1,100})""",
       """"(Hostname|MachineName)":"({host}[^"]*)""",
       """({event_code}4648)""",
       """"SubjectUserSid":"({user_sid}[^"]*)""",
@@ -24,7 +24,7 @@ Name = json-4648
       """"TargetDomainName":"({account_domain}[^\s"]*)""",
       """"TargetServerName":"({dest_host}[^"]*)""",
       """"TargetInfo":"({dest_service}[^"]*)""",
-      """"(?i)(ProcessId)":"*({process_id}[^",]*)""",
+      """"(?i)(ProcessId)":"{0,20}({process_id}[^",]*)""",
       """"ProcessName":"(?: |({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?)))"""",
       """"IpAddress":"(?:-|({src_ip}[^"]*))"""
     ]

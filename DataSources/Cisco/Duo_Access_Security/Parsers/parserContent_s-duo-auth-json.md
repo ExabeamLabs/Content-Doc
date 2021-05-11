@@ -10,18 +10,18 @@ Name = s-duo-auth-json
   Conditions = [ """"new_enrollment"""",""""ip"""",""""result""""]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """"device":\s*"*(null\}?|({host}[\w\-.]+))"""",
-    """"ip"\s*:\s*"({src_ip}[^"]+)"""",
-    """"username"\s*:\s*"(?:({domain}[^\\"]+)\\)?({user}[^"]+)"""",
-    """"factor"\s*:\s*"(?:n\/a|({auth_method}[^"]+))"""",
-    """"os"\s*:\s*"({os}[^"]+)"""",
-    """"os_version"\s*:\s*"({os_version}[^"]+)"""",
-    """"browser"\s*:\s*"({browser}[^"]+)"""",
-    """"browser_version"\s*:\s*"({browser_version}[^"]+)"""",
-    """"result"\s*:\s*"({outcome}[^"]+)"""",
-    """"reason"\s*:\s*"({failure_reason}[^"]+)"""",
-    """"new_enrollment"\s*:\s*({new_enrollment}true|false)""",
-    """"*integration"*:\s*"*({service}[^"]+)"""
+    """"device":\s{0,100}"{0,20}(null\}?|({host}[\w\-.]+))"""",
+    """"ip"\s{0,100}:\s{0,100}"({src_ip}[^"]+)"""",
+    """"username"\s{0,100}:\s{0,100}"(?:({domain}[^\\"]+)\\)?({user}[^"]+)"""",
+    """"factor"\s{0,100}:\s{0,100}"(?:n\/a|({auth_method}[^"]+))"""",
+    """"os"\s{0,100}:\s{0,100}"({os}[^"]+)"""",
+    """"os_version"\s{0,100}:\s{0,100}"({os_version}[^"]+)"""",
+    """"browser"\s{0,100}:\s{0,100}"({browser}[^"]+)"""",
+    """"browser_version"\s{0,100}:\s{0,100}"({browser_version}[^"]+)"""",
+    """"result"\s{0,100}:\s{0,100}"({outcome}[^"]+)"""",
+    """"reason"\s{0,100}:\s{0,100}"({failure_reason}[^"]+)"""",
+    """"new_enrollment"\s{0,100}:\s{0,100}({new_enrollment}true|false)""",
+    """"{0,20}integration"{0,20}:\s{0,100}"{0,20}({service}[^"]+)"""
   ]
 }
 ```

@@ -10,8 +10,8 @@ Name = n-forwarded-cef-4770
   Conditions = [ "|McAfee|ESM", "43-26304770"]
   Fields = [
     """({event_name}A Kerberos service ticket was renewed)""",
-    """\|McAfee\|.+?\|43-2630({event_code}\d+)(0|1)\|""",
-    """\srt=({time}\d+)\s+cnt""",
+    """\|McAfee\|[^|]+?\|[^|]+?\|43-2630({event_code}\d{1,100})(0|1)\|""",
+    """\srt=({time}\d{1,100})\s{1,100}cnt""",
     """shost=({host}[^\s]+)""",
     """src=({src_ip}[a-fA-F:\d.]+)""",
     """sntdom=({domain}[^\s]+)""",

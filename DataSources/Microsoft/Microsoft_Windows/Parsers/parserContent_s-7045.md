@@ -10,14 +10,14 @@ Name = s-7045
   Conditions = [ " EventCode=7045", "A service was installed in the system." ]
   Fields = [
     """({event_name}A service was installed in the system)""",
-    """({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|pm|PM))\s+LogName=""",
+    """({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|pm|PM))\s{1,100}LogName=""",
     """({event_code}7045)""",
     """ComputerName=({host}[^\s]+)""",
-    """User=\s*({user}.+?)\s+Sid=({user_sid}[^\s]+)""",
-    """Service Name:\s+({service_name}.+?)\s+Service File Name:""",
-    """Service File Name:\s+(|-|({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/\s]+)))\s+Service Type:""",
-    """Service Type:\s+({service_type}.+?)\s+Service Start Type:""",
-    """Service Account:\s+({account_name}.+?)\s*(\w+=|$)"""
+    """User=\s{0,100}({user}.+?)\s{1,100}Sid=({user_sid}[^\s]+)""",
+    """Service Name:\s{1,100}({service_name}.+?)\s{1,100}Service File Name:""",
+    """Service File Name:\s{1,100}(|-|({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/\s]+)))\s{1,100}Service Type:""",
+    """Service Type:\s{1,100}({service_type}.+?)\s{1,100}Service Start Type:""",
+    """Service Account:\s{1,100}({account_name}.+?)\s{0,100}(\w+=|$)"""
   ]
   DupFields = [ "host->dest_host" ]
 }

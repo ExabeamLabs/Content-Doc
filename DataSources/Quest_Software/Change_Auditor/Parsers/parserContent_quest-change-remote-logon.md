@@ -5,7 +5,7 @@ Name = quest-change-remote-logon
      DataType = "remote-logon"
      Conditions = [ """CEF:""", """Quest Software""", """|Change Auditor|""", """|Logon Activity|""", """User logged on interactively from a remote computer""", """logonType=10"""  ]
      Fields = ${QuestParserTemplates.quest-change-auditor-events.Fields}[
-       """logonType=({logon_type}\d+)"""
+       """logonType=({logon_type}\d{1,100})"""
 ]	   
 }
 quest-change-auditor-events = {
@@ -23,7 +23,7 @@ quest-change-auditor-events = {
       """suid=({user_sid}\S+)""",
       """suser=(({domain}[^\\]+)\\*)?({user}[^=]+?)\s\w+=""",
       """event=({event_name}[^=]+?)\s\w+=""",
-      """msg=({additional_info}[^=]+?)\s*\w+="""
+      """msg=({additional_info}[^=]+?)\s{0,100}\w+="""
     ]
 
 ```

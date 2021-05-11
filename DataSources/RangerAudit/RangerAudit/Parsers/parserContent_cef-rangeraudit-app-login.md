@@ -10,7 +10,7 @@ Name = cef-rangeraudit-app-login
   Conditions = [ """ranger""", """Login Success:""", """requestId=""" ]
   Fields = [
     """\[({host}[^\]]+)""",
-    """epoch=({time}\d+)""",
+    """epoch=({time}\d{1,100})""",
     """requestId=({src_ip}[A-Fa-f:\d.]+)""",
     """loginId=({user}[^\s,]+)""",
     """({app}ranger)""",

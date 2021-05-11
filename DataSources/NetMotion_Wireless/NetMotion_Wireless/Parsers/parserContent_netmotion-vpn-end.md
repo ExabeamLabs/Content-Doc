@@ -9,10 +9,10 @@ Name = netmotion-vpn-end
     TimeFormat = "epoch"
     Conditions = [ "Disconnect", "Log_Date_Time" ]
     Fields = [
-      """Log_Date_Time=({time}\d+)""",
+      """Log_Date_Time=({time}\d{1,100})""",
       """exabeam_host=({host}[^\s]+)""",
-      """Device_Name="+({src_host}[^"]+)""",
-      """User_Name="+([^\\]+\\)?({user}[^"]+)"""
+      """Device_Name="{1,20}({src_host}[^"]+)""",
+      """User_Name="{1,20}([^\\]+\\)?({user}[^"]+)"""
     ]
   }
 ```

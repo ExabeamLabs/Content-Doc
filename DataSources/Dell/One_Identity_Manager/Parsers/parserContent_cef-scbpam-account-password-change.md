@@ -9,13 +9,13 @@ Name = cef-scbpam-account-password-change
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """|SCB|PAM|""", """|Force Change|""" ]
   Fields = [
-    """\ssuser=({user}.+?)(\s+\w+=|\s*$)""",
-    """\sdhost=({dest_host}.+?)(\s+\w+=|\s*$)""",
-    """\sduser=({target_user}.+?)(\s+\w+=|\s*$)""",
-    """\sdvc=({host}.+?)(\s+\w+=|\s*$)""",
-    """\sdvchost=({host}.+?)(\s+\w+=|\s*$)""",
-    """\srt=({time}\d+)""",
-    """\sOtherInfo:\s*({outcome}.+?)(\s+\w+=|\s*$)"""
+    """\ssuser=({user}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sdhost=({dest_host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sduser=({target_user}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sdvc=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sdvchost=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\srt=({time}\d{1,100})""",
+    """\sOtherInfo:\s{0,100}({outcome}.+?)(\s{1,100}\w+=|\s{0,100}$)"""
   ]
 }
 ```

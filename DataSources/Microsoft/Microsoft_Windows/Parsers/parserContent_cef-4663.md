@@ -9,19 +9,19 @@ Name = cef-4663
   IsHVF = true
   TimeFormat = "epoch"
   Conditions = [ """|Microsoft|Microsoft Windows|""","""|Microsoft-Windows-Security-Auditing:4663|""" ]
-  Fields = [ """exabeam_EventTime=({eventtime}\d+)""",
+  Fields = [ """exabeam_EventTime=({eventtime}\d{1,100})""",
     """({event_name}An attempt was made to access an object)""",
-    """\sexternalId=({event_code}\d+)""",
-    """\srt=({time}\d+)""",
+    """\sexternalId=({event_code}\d{1,100})""",
+    """\srt=({time}\d{1,100})""",
     """\sdntdom=({domain}[^\s]+)""",
-    """\sduser=({user}.+?)\s+\w+=""",
+    """\sduser=({user}.+?)\s{1,100}\w+=""",
     """\sduid=({logon_id}[^\s]+)""",
-    """\scs1=({accesses}.+?)\s+\w+=""",
+    """\scs1=({accesses}.+?)\s{1,100}\w+=""",
     """\sdvc=({host}[a-fA-F:\d.]+)""",
     """\sdvchost=({host}[^\s]+)""",
-    """\sfname=({file_path}.+?)\s+(?:$|\w+=)""",
-    """\sfname=({file_parent}.+?)\\+(?:[^\\=]+?)\s+(?:$|\w+=)""",
-    """\sfname=[^=]*\\({file_name}.*?({file_ext}\.[^\\:\s.]+)?)\s+(?:$|\w+=)""",
+    """\sfname=({file_path}.+?)\s{1,100}(?:$|\w+=)""",
+    """\sfname=({file_parent}.+?)\\+(?:[^\\=]+?)\s{1,100}(?:$|\w+=)""",
+    """\sfname=[^=]*\\({file_name}.*?({file_ext}\.[^\\:\s.]+)?)\s{1,100}(?:$|\w+=)""",
     """\scs3=({access_mask}\w+)"""
   ]
   DupFields = [ "host->dest_host" ]

@@ -10,7 +10,7 @@ Name = microsoft-nps-6272
   Conditions = [ """<EventID>6272</EventID>""", """<Message>Network Policy Server granted access to a user""" ]
   Fields = [
     """SystemTime='({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
-    """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[\w\-.]+)""",
     """<Computer>({host}[\w\-.]+)""",
     """({event_code}6272)""",
     """'SubjectUserName'>(?:({user_type}host)/)?(({domain}[^\\]+)\\+)?({user}[^<]+)""",

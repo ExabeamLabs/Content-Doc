@@ -10,8 +10,8 @@ Name = barracuda-accounting-login
   Conditions = [ """ CP-FW Session """, """ Accounting LOGIN """ ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """\sCP-FW Session\s+\S*?({user}[^\-:]+):""",
-    """\suser=(|({user}.+?))(\s+\w+=|\s*$)""",
+    """\sCP-FW Session\s{1,100}\S*?({user}[^\-:]+):""",
+    """\suser=(|({user}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\sIP=({src_ip}[a-fA-F\d.:]+)""",
     """\sstart="({time}\d\d\d\d/\d\d/\d\d \d\d:\d\d:\d\d)""",
   ]

@@ -10,9 +10,9 @@ Name = s-mcafee-process-alert
     TimeFormat = "MM/dd/yyyy\thh:mm:ss a"
     Conditions = [ "\tAction blocked","\tWould be blocked by Access Protection rule " ]
     Fields = [
-      """exabeam_host=([^=]+@\s*)?({host}[\w.\-]+)""",
-      """({time}\d+\/\d+\/\d+\t\d+:\d+:\d+ (am|AM|pm|PM))\t({alert_name}[^\t]+?)\s*\t(({domain}[^\\]+)\\)?({user}[^\\]+)\s*\t({process}({directory}[^\t]+?)({process_name}[^\\\t]+))\s*\t""",
-      """\t({alert_type}[^\t]+?)\s*$""",
+      """exabeam_host=([^=]+@\s{0,100})?({host}[\w.\-]+)""",
+      """({time}\d{1,100}\/\d{1,100}\/\d{1,100}\t\d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM))\t({alert_name}[^\t]+?)\s{0,100}\t(({domain}[^\\]+)\\)?({user}[^\\]+)\s{0,100}\t({process}({directory}[^\t]+?)({process_name}[^\\\t]+))\s{0,100}\t""",
+      """\t({alert_type}[^\t]+?)\s{0,100}$""",
     ]
     DupFields = [ "host->dest_host","directory->process_directory" ]
   }

@@ -9,7 +9,7 @@ Name = u-duo-auth-json
   TimeFormat = "epoch_sec"
   Conditions = [ """eventtype="authentication"""", """newenrollment="""", """ip="""", """result=""""]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
     """host="({host}[\w\-\.]+)"""",
     """(^|exabeam_\w+=)({time}\d{10}),""",
     """\Wip="(0.0.0.0|({src_ip}[a-fA-F:\.\d]+))"""",

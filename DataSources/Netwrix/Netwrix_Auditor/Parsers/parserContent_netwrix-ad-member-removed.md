@@ -7,8 +7,8 @@ Name = netwrix-ad-member-removed
   Fields = ${NetWrixParserTemplates.netwrix-app-activity-2.Fields}[
     """CEF:0\|Netwrix\|Active Directory\|[^\|]+\|[^\|]+\|({activity}[^\|]+)\|""",
     """cat=group.+?filePath=\\+?([^\\]+\\+)*?({group_name}[^\\]+) start=""",
-    """Removed:.+?"+(\\+)?([^\\\/]+[\\\/]+)*?({target_user}[^\\\/]+?)(;|$|")""",
-    """Group Type: "+({group_type}[^"]+)"+""",
+    """Removed:.+?"{1,20}(\\+)?([^\\\/]+[\\\/]+)*?({target_user}[^\\\/]+?)(;|$|")""",
+    """Group Type: "{1,20}({group_type}[^"]+)"{1,20}""",
   ]
 }
 ```

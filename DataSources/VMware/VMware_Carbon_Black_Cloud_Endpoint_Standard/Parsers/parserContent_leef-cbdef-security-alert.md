@@ -13,11 +13,11 @@ Name = leef-cbdef-security-alert
         """\sdeviceName=(({domain}[^\s\\]+)\\)?({src_host}[^\s\\]+)\s""",
         """\sinternalIpAddress=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s""",
         """\sexternalIpAddress=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s""",
-        """\ssev=({alert_severity}\d+)\s""",
-        """\ssummary=({additional_info}.+?)\s+groupName=""",
+        """\ssev=({alert_severity}\d{1,100})\s""",
+        """\ssummary=({additional_info}.+?)\s{1,100}groupName=""",
         """\ssignature=({alert_type}[^\s]+)""",
         """\sincidentId=({alert_id}[^\s]+)""",
-        """\sapplicationName=({process_name}.+?)\s+indicatorName=""",
+        """\sapplicationName=({process_name}.+?)\s{1,100}indicatorName=""",
         """\|CarbonBlack\|CbDefense\|(.*?)\|({alert_name}.*?)\|""",
         """\semail=(({domain}[^\\]+)\\+)?({user}[^\\\s]+)"""        
   ]

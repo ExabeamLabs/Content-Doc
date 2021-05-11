@@ -13,12 +13,12 @@ Name = raw-4719
     """({host}[^\s=]+)\sMSWinEventLog""",
     """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
     """({event_code}4719)""",
-    """\s+Account Name:\s+({user}.+?)\s+Account Domain""",
-    """\s+Account Domain:\s+({domain}[^\s]+)""",
-    """\s+Logon ID:\s+({logon_id}[^\s]+)""",
-    """\s+Category:\s+({audit_category}.+?)\s+Subcategory:""",
-    """\s+Subcategory:\s+({subcategory}.+?)\s+Subcategory GUID:""",
-    """\s+Changes:\s+({policy}.*?)\s*(\||\d|<)"""
+    """\s{1,100}Account Name:\s{1,100}({user}.+?)\s{1,100}Account Domain""",
+    """\s{1,100}Account Domain:\s{1,100}({domain}[^\s]+)""",
+    """\s{1,100}Logon ID:\s{1,100}({logon_id}[^\s]+)""",
+    """\s{1,100}Category:\s{1,100}({audit_category}.+?)\s{1,100}Subcategory:""",
+    """\s{1,100}Subcategory:\s{1,100}({subcategory}.+?)\s{1,100}Subcategory GUID:""",
+    """\s{1,100}Changes:\s{1,100}({policy}.*?)\s{0,100}(\||\d|<)"""
   ]
   DupFields = [ "host->dest_host" ]
 }

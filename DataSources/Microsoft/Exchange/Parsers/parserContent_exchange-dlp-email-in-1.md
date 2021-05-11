@@ -10,7 +10,7 @@ Name = exchange-dlp-email-in-1
   Conditions = [ """archive[""", """ inbound """ ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """archive\[\d+\]:\s+({message_id}\S+)\s+({time}\d+).*?<({sender}[^\s@]+@({external_domain}.+?))>\s+({recipient}\S+)\s+\S+\s+({direction}inbound)"""
+    """archive\[\d{1,100}\]:\s{1,100}({message_id}\S+)\s{1,100}({time}\d{1,100}).*?<({sender}[^\s@]+@({external_domain}.+?))>\s{1,100}({recipient}\S+)\s{1,100}\S+\s{1,100}({direction}inbound)"""
   ]
   DupFields = [ "recipient->recipients" ]
 }

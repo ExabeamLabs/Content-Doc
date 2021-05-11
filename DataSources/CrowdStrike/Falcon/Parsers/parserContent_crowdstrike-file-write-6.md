@@ -10,8 +10,8 @@ Name = crowdstrike-file-write-6
     TimeFormat = "epoch"
     Conditions = [ """"event_simpleName":"CriticalFileModified"""" ]
     Fields = [
-      """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-      """"timestamp":"({time}\d+)""",
+      """exabeam_host=([^=]+@\s{0,100})?({host}[\w\-.]+)""",
+      """"timestamp":"({time}\d{1,100})""",
       """"event_simpleName":"({event_code}[^"]+)""",
       """"aid":"({aid}[^"]+)""",
       """"TargetFileName":"({file_path}[^"]+)""",

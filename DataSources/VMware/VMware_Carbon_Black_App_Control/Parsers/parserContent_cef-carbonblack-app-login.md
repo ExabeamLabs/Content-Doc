@@ -9,13 +9,13 @@ Name = cef-carbonblack-app-login
   TimeFormat = "epoch"
   Conditions = [ """|Carbon Black|Protection|""", "|Console user login|" ]
   Fields = [
-    """\srt=({time}\d+)""",
-    """(\||\s)dst=(|({dest_ip}.+?))(\s+[\w-]+=|\s*$)""",
-    """(\||\s)dvc=(|({host_ip}.+?))\s+(\w+=|$)""",
-    """(\||\s)duser=(|({domain}[^\s\\]+)\\+)?({user}.+?)(\s+\w+=|\s*$)""",
+    """\srt=({time}\d{1,100})""",
+    """(\||\s)dst=(|({dest_ip}.+?))(\s{1,100}[\w-]+=|\s{0,100}$)""",
+    """(\||\s)dvc=(|({host_ip}.+?))\s{1,100}(\w+=|$)""",
+    """(\||\s)duser=(|({domain}[^\s\\]+)\\+)?({user}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """msg=User\s'({user_email}[^@]+@({email_domain}[^']+))""",
-    """(\||\s)dvchost=(|({host}.+?))(\s\w+=|\s*$)""",
-    """(\||\s)msg=.+from\s+({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """(\||\s)dvchost=(|({host}.+?))(\s\w+=|\s{0,100}$)""",
+    """(\||\s)msg=.+from\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
 }
 ```

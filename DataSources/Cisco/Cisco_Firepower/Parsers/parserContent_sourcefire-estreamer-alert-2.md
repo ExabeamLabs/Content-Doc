@@ -9,14 +9,14 @@ Name = sourcefire-estreamer-alert-2
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """Access Control Rule Name:""","""[Primary Detection Engine""" ]
   Fields = [
-	     """exabeam_time=({time}\d+-\d+-\d+ \d+:\d+:\d+)""",
+	     """exabeam_time=({time}\d{1,100}-\d{1,100}-\d{1,100} \d{1,100}:\d{1,100}:\d{1,100})""",
 	     """exabeam_host=({host}[\w.\-]+)""",
-	     """Access Control Rule Name:\s*({alert_name}[^,]+)""",
-	     """Application Protocol:\s*({alert_type}[^,]+)""",
-	     """Access Control Rule Action:\s*({alert_severity}[^,]+)""",
-	     """User:\s*(?:Unknown|({user}[^,]+))""",
-	     """({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):({src_port}\d+) -> ({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\:({dest_port}\d+)""",
-	     """URL:\s*({malware_url}[^,]+)""",
+	     """Access Control Rule Name:\s{0,100}({alert_name}[^,]+)""",
+	     """Application Protocol:\s{0,100}({alert_type}[^,]+)""",
+	     """Access Control Rule Action:\s{0,100}({alert_severity}[^,]+)""",
+	     """User:\s{0,100}(?:Unknown|({user}[^,]+))""",
+	     """({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):({src_port}\d{1,100}) -> ({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\:({dest_port}\d{1,100})""",
+	     """URL:\s{0,100}({malware_url}[^,]+)""",
   	     """Web App:\s(Unknown|({process_name}[^,]+))""",
   ]
   SOAR {

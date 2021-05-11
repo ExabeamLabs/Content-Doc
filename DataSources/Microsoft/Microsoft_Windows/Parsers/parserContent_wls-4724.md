@@ -11,16 +11,16 @@ Name = wls-4724
     Fields = [
       """exabeam_host=({host}[\w.\-]+)""",
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """Computer="+({dest_host}[^"]+)"""",
-      """EventID="+({event_code}[^"]+)"""",
-      """EventRecordID="+({record_id}[^"]+)"""",
-      """SubjectUserSid="+({user_sid}[^"]+)"""",
-      """SubjectUserName="+({user}[^"]+)"""",
-      """SubjectDomainName="+({domain}[^"]+)"""",
-      """SubjectLogonId="+({logon_id}[^"]+)"""",
-      """TargetSid="+({target_user_sid}[^"]+)"""",
-      """TargetDomainName="+({target_domain}[^"]+)"""",
-      """TargetUserName="+({target_user}[^"]+)""""
+      """Computer="{1,20}({dest_host}[^"]+)"""",
+      """EventID="{1,20}({event_code}[^"]+)"""",
+      """EventRecordID="{1,20}({record_id}[^"]+)"""",
+      """SubjectUserSid="{1,20}({user_sid}[^"]+)"""",
+      """SubjectUserName="{1,20}({user}[^"]+)"""",
+      """SubjectDomainName="{1,20}({domain}[^"]+)"""",
+      """SubjectLogonId="{1,20}({logon_id}[^"]+)"""",
+      """TargetSid="{1,20}({target_user_sid}[^"]+)"""",
+      """TargetDomainName="{1,20}({target_domain}[^"]+)"""",
+      """TargetUserName="{1,20}({target_user}[^"]+)""""
     ]
   }
 ```

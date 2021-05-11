@@ -9,20 +9,12 @@ Name = wls-windows-privileged-access
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
     Conditions = ["""LogType="WLS"""", """EventID="467"""]
     Fields = [
-      """Computer="+({host}[^".]+)""",
+      """Computer="{1,20}({host}[^".]+)""",
       """"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-      """EventID="+({event_code}[^"]+)"""",
-      """Keywords="+({outcome}[^"]+)"""",
-      """SubjectUserName="+({user}[^"]+)"""",
-      """SubjectDomainName="+({domain}[^"]+)"""",
-      """SubjectLogonId="+({logon_id}[^"]+)"""",
-      """ProcessName="+(?: |({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^"]+)))"+,""",
-      """PrivilegeList="+({privileges}[^"]+)"""",
-      """AccessMask="+({accesses}[^"]+)"""",
-      """ObjectName="+(?:-|({object}[^"]+))"""",
-      """ObjectType="+(?:-|({object_type}[^"]+))"""",
-      """ObjectServer="+(?:-|({object_server}[^"]+))""""
-    ]
-    DupFields = ["host->dest_host","directory->process_directory"]
-  }
+      """EventID="{1,20}({event_code}[^"]+)"""",
+      """Keywords="{1,20}({outcome}[^"]+)"""",
+      """SubjectUserName="{1,20}({user}[^"]+)"""",
+      """SubjectDomainName="{1,20}({domain}[^"]+)"""",
+      """SubjectLogonId="{1,20}({logon_id}[^"]+)"""",
+      """ProcessName="{1,20}(?: |({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^"]+)))"{1,20}
 ```

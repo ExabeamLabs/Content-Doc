@@ -12,7 +12,7 @@ Name = mcafee-siem-4778
       """({event_name}A session was reconnected to a Window Station)""",
       """"src_ip":"({src_ip}[^"]+)""",
       """"dst_ip":"({dest_ip}[^"]+)""",
-      """"id":\d*({event_code}4778)""",
+      """"id":\d{0,100}({event_code}4778)""",
       """"firsttime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
       """"DomainID":"({domain}[^"]+)""",
       """"HostID":"({host}[^"]+)""",

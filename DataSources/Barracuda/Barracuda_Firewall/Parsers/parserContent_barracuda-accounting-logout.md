@@ -10,13 +10,13 @@ Name = barracuda-accounting-logout
   Conditions = [ """ CP-FW Session """, """ Accounting LOGOUT """ ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """\sCP-FW Session\s+\S*?({user}[^\-:]+):""",
-    """\suser=(|({user}.+?))(\s+\w+=|\s*$)""",
+    """\sCP-FW Session\s{1,100}\S*?({user}[^\-:]+):""",
+    """\suser=(|({user}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\sIP=({src_ip}[a-fA-F\d.:]+)""",
     """\sstart="({time}\d\d\d\d/\d\d/\d\d \d\d:\d\d:\d\d)""",
-    """\sduration=(|({duration}.+?))(\s+\w+=|\s*$)""",
-    """\sinBytes=({bytes_in}\d+)""",
-    """\soutBytes=({bytes_out}\d+)""",
+    """\sduration=(|({duration}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sinBytes=({bytes_in}\d{1,100})""",
+    """\soutBytes=({bytes_out}\d{1,100})""",
   ]
 }
 ```

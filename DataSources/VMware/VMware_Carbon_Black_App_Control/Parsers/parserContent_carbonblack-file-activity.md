@@ -10,7 +10,7 @@ Name = carbonblack-file-activity
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"
   Conditions = [ """Cb Protection event:""", """subtype="""", """type=""", """policy=""", """file_name=""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """\sdate="({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|PM|pm))""",
     """({host}[\w.\-]+)\s(\-\s)+Cb Protection event:"""
     """\stext="({additional_info}[^"]+)"""",
@@ -19,7 +19,7 @@ Name = carbonblack-file-activity
     """\shostname="(({domain}[^"\\]+)\\)?({dest_host}[^"\\]+)"""",
     """\susername="(({domain}[^"\\]+)\\)?({user}[^"\\]+)"""",
     """\sip_address="({dest_ip}[a-fA-F\d.:]+)""",
-    """\spolicy="+({policy}[^"]+)"""",
+    """\spolicy="{1,20}({policy}[^"]+)"""",
     """\sfile_path="({file_path}({file_parent}[^"]+?)(\\({file_name}[^"\\]+?))?)"""",
     """\sfile_name="({file_name}[^"]+?(\.({file_ext}[^".]+?))?)"""",
     """\sprocess="({process}(({directory}[^"]+?)\\)?({process_name}[^"\\]+?))""""

@@ -11,10 +11,10 @@ Name = cef-fortinet-auth-successful
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
     """date\\=({time}\d\d\d\d-\d\d-\d\d time\\=\d\d:\d\d:\d\d)""",
-    """devname\\="*({host}[^"]+?)"*(\s+\w+\\=|\s*$)""",
+    """devname\\="{0,20}({host}[^"]+?)"{0,20}(\s{1,100}\w+\\=|\s{0,100}$)""",
     """\ssrcip\\="?({src_ip}[a-fA-F\d.:]+)""",
     """\sdstip\\="?({dest_ip}[a-fA-F\d.:]+)""",
-    """\suser\\="*(N\/A|({user}[^"]+?))"*(\s+\w+\\=|\s*$)""",
+    """\suser\\="{0,20}(N\/A|({user}[^"]+?))"{0,20}(\s{1,100}\w+\\=|\s{0,100}$)""",
     """\slogdesc\\="({event_name}[^"]+)""",
     """\sdevid\\="({dest_host}[^"]+)""",
   ]

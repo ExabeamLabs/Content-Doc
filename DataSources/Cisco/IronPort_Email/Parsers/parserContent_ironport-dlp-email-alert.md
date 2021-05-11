@@ -9,23 +9,23 @@ Name = ironport-dlp-email-alert
   TimeFormat = "MM/dd/yyyy HH:mm:ss Z"
   Conditions = [ """ Info: MID """, """From:""", """To:""", """Subject""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
-    """\srt=({time}\d+)""",
-    """({time}\w+ \d+ \d\d:\d\d:\d\d) mail_logs:""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
+    """\srt=({time}\d{1,100})""",
+    """({time}\w+ \d{1,100} \d\d:\d\d:\d\d) mail_logs:""",
     """direction=({direction}[^,]+)""",
-    """From:\s*<({sender}[^\s@>]+@[^\s@>]+)""",
-    """To:\s*<({recipients}({recipient}[^\s@>;,]+@[^\s@>;,]+)[^>]*)""",
+    """From:\s{0,100}<({sender}[^\s@>]+@[^\s@>]+)""",
+    """To:\s{0,100}<({recipients}({recipient}[^\s@>;,]+@[^\s@>;,]+)[^>]*)""",
     """(?i)(Subject)[\s\\=]*"({subject}[^"]+)""",
-    """({time}\d+\/\d+\/\d\d\d\d\s+\d\d:\d\d:\d\d\s+[\+\-]\d+)""",
-    """Message finished MID ({alert_id}\d+) ({outcome}aborted|done)""",
-    """MID \d+ ready ({bytes}\d+) bytes from """,
-    """AMP file reputation verdict\s*:\s*(UNKNOWN|({file_verdict}.+?))\s+\w+\s+\w+\s+\d+\s+\d+:\d+:\d+""",
-    """MID\s*\d+\s*attachment\s*'({attachment}[^']+)""",
-    """interim AV verdict using.+?({malware_score}\S+)\s+\w+\s+\w+\s+\d+\s+\d+:\d+:\d+""",
+    """({time}\d{1,100}\/\d{1,100}\/\d\d\d\d\s{1,100}\d\d:\d\d:\d\d\s{1,100}[\+\-]\d{1,100})""",
+    """Message finished MID ({alert_id}\d{1,100}) ({outcome}aborted|done)""",
+    """MID \d{1,100} ready ({bytes}\d{1,100}) bytes from """,
+    """AMP file reputation verdict\s{0,100}:\s{0,100}(UNKNOWN|({file_verdict}.+?))\s{1,100}\w+\s{1,100}\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}""",
+    """MID\s{0,100}\d{1,100}\s{0,100}attachment\s{0,100}'({attachment}[^']+)""",
+    """interim AV verdict using.+?({malware_score}\S+)\s{1,100}\w+\s{1,100}\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}""",
     """using engine: GRAYMAIL ({graymail_score}\S+)""",
     """CASE spam ({spam_score}\S+)""",
     """antivirus ({malware_score}\S+)""",
-    """\Wfname=(|({attachment}.*?))\s+(\w+=|$)""",
+    """\Wfname=(|({attachment}.*?))\s{1,100}(\w+=|$)""",
   ]
 }
 ```

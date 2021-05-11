@@ -9,16 +9,16 @@ Name = centrify-auth-denied
   TimeFormat = "epoch"
   Conditions = ["""Centrify Suite""", """|PAM|""" , """denied|"""]
   Fields = [
-    """utc=({time}\d+)""",
+    """utc=({time}\d{1,100})""",
     """exabeam_host=({host}[\w.\-]+)""",
-    """\sahost=({host}[^=]+?)\s+\w+=""",
-    """\sclient=(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[^=]+?))\s+\w+=""",
+    """\sahost=({host}[^=]+?)\s{1,100}\w+=""",
+    """\sclient=(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[^=]+?))\s{1,100}\w+=""",
     """user=({user}[^\(\)\s\$]+)"""
-    """\d+\|\d+\|({event_name}.+?)\|\d""",
+    """\d{1,100}\|\d{1,100}\|({event_name}.+?)\|\d""",
     """status=({outcome}.+?)\s\w+=""",
-    """pid=({process_id}\d+)""",
+    """pid=({process_id}\d{1,100})""",
     """service=({protocol}.+?)\s\w+=""",
-    """reason=({failure_reason}[^=\|]+?)(\s+\w+=|\|)"""
+    """reason=({failure_reason}[^=\|]+?)(\s{1,100}\w+=|\|)"""
 
   ]
 }

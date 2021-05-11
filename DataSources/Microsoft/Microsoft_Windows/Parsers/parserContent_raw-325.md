@@ -9,12 +9,9 @@ Name = raw-325
     DataType = "file-write" 
     Conditions = [ """Event ID: 325""","""The database engine created a new database""" ]
     Fields = [
-      """ComputerName(:|=)\s*({host}[\w.-]+)\s+({process_name}[^\s]+)\s+""",
-      """TimeStamp:\s*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """Event ID:\s*({event_code}\d+)""",
-      """\(({process_id}\d+).*\)""",
-      """({activity}The database engine created a new database)\s+\(\d+,\s+({file_path}({file_parent}(?:[^";]+)?[\\\/;])?({file_name}[^\\\/";]+?(\.({file_ext}[^\\\/\.;"]+))))\)\."""
-    ]
-    DupFields = [ "host->dest_host" ]
-  }
+      """ComputerName(:|=)\s{0,100}({host}[\w.-]+)\s{1,100}({process_name}[^\s]+)\s{1,100}""",
+      """TimeStamp:\s{0,100}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+      """Event ID:\s{0,100}({event_code}\d{1,100})""",
+      """\(({process_id}\d{1,100}).*\)""",
+      """({activity}The database engine created a new database)\s{1,100}\(\d{1,100}
 ```

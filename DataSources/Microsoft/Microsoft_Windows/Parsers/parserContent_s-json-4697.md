@@ -19,11 +19,11 @@ Name = s-json-4697
     """"SubjectDomainName":"({domain}[^"]+)"""",
     """"SubjectLogonId":"({logon_id}[^"]+)"""",
     """"ServiceName":"({service_name}[^"]+)"""",
-    """"ServiceFileName":"\s*(|({process}({directory}.*?[\\\/]+)?({process_name}[^\\\/]+?)))"""",
+    """"ServiceFileName":"\s{0,100}(|({process}({directory}.*?[\\\/]+)?({process_name}[^\\\/]+?)))"""",
     """"ServiceType":"({service_type}[^"]+)"""",
     """"ServiceStartType":"({service_start_type}[^"]+)"""",
     """"ServiceAccount":"({account_domain}[^"]+)"""",
-    """"ProcessID":({process_id}\d+)"""
+    """"ProcessID":({process_id}\d{1,100})"""
   ]
   DupFields = [ "host->dest_host", "directory->process_directory" ]
 }

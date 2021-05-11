@@ -9,9 +9,9 @@ Name = ovirt-app-activity-18
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """EVENT_ID: ENTITY_RENAMED""", """ovirt""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d),.+?ovirt""",
-    """EVENT_ID:\s*({activity}[^\(\)]+)""",
+    """EVENT_ID:\s{0,100}({activity}[^\(\)]+)""",
     """EVENT_ID:.*? by ({user}[^\s\(\)]+?)(\)|\s|\.\s|\.$)""",
     """({app}ovirt)"""
   ]

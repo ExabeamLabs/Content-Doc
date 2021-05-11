@@ -8,9 +8,9 @@ Name = safeword-auth-successful
   DataType = "authentication-successful"
   TimeFormat = "epoch"
   Conditions = [ """|SecureComputing|SafeWord PremierAccess|""","""categoryBehavior=/Authentication/Verify"""]
-  Fields = [ """\srt=({time}\d+)""",
-    """cs4=\d+/\d+/\d+ \d+:\d+:\d+.\d+ \(\w+\) ({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\ssuser=({user}.+?)\s+\w+=""",
+  Fields = [ """\srt=({time}\d{1,100})""",
+    """cs4=\d{1,100}/\d{1,100}/\d{1,100} \d{1,100}:\d{1,100}:\d{1,100}.\d{1,100} \(\w+\) ({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """\ssuser=({user}.+?)\s{1,100}\w+=""",
     """\sshost=({src_host}[^\s]+)""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]

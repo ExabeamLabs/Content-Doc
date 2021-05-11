@@ -5,7 +5,7 @@ Name = checkpoint-vpn-login-6
   DataType = "vpn-login"
   Conditions = [ """CheckPoint""", """product:"""", """action:"Log In"""", """vpn_""" ]
   Fields = ${CheckpointParserTemplates.checkpoint-auth.Fields}[
-    """action:"+({activity}[^"]+)"""
+    """action:"{1,20}({activity}[^"]+)"""
   ]
   DupFields = [ "activity->event_name" ]
 }
@@ -15,9 +15,9 @@ checkpoint-auth = {
   Lms = Direct
   TimeFormat = "epoch_sec"
   Fields = [
-    """\Wtime:"({time}\d+)""",
+    """\Wtime:"({time}\d{1,100})""",
     """\W({host}[\w\-.]+) CheckPoint""",
-    """\Wuser:"({user_lastname}[^,]+),\s*({user_firstname}[\w\s]+\S)\s*\(({user}.+?)\)""",
+    """\Wuser:"({user_lastname}[^,]+),\s{0,100}({user_firstname}[\w\s]+\S)\s{0,100}\(({user}.+?)\)""",
     """\Wuser:"({user_fullname}[^,:\("]+)\s\(({user}[^\)]+)\)""",
     """\Wsrc:"({src_ip}[A-Fa-f:\d.]+)""",
     """\Wendpoint_ip:"({dest_ip}[A-Fa-f:\d.]+)""",

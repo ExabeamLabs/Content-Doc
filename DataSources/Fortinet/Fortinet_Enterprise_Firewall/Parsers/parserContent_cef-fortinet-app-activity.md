@@ -10,19 +10,19 @@ Name = cef-fortinet-app-activity
   Conditions = [ """CEF:""", """|Fortinet|Fortigate|""", """cn1Label=Duration""", """|utm: app-ctrl|""" ]
   Fields = [
     """\Wproto=({protocol}\w+)""",
-    """\Wact=(|({activity}.+?))(\s+\w+=|\s*$)""",
-    """\Wrt=({time}\d+)""",
-    """\Wshost=(|({src_host}.+?))(\s+\w+=|\s*$)""",
+    """\Wact=(|({activity}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wrt=({time}\d{1,100})""",
+    """\Wshost=(|({src_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
-    """\Wspt=({src_port}\d+)""",
-    """\Wdhost=(|({dest_host}.+?))(\s+\w+=|\s*$)""",
+    """\Wspt=({src_port}\d{1,100})""",
+    """\Wdhost=(|({dest_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdst=({dest_ip}[a-fA-F\d.:]+)""",
-    """\Wdpt=({dest_port}\d+)""",
-    """\WdestinationServiceName=(|({service}.+?))(\s+\w+=|\s*$)""",
-    """\Wdvchost=(|({host}.+?))(\s+\w+=|\s*$)""",
-    """\Wcat=({event_subtype}.+?)(\s+\w+=|\s*$)""",
+    """\Wdpt=({dest_port}\d{1,100})""",
+    """\WdestinationServiceName=(|({service}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wdvchost=(|({host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wcat=({event_subtype}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wapp\\?="({app}[^"]+)"""",
-    """\Wmsg=({additional_info}.+?),?(\s+\w+=|\s*$)""",
+    """\Wmsg=({additional_info}.+?),?(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
 ```

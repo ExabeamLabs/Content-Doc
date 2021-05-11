@@ -10,10 +10,10 @@ Name = duo-app-activity
   Conditions = [ """"object":""", """"timestamp":""", """"event_time":""", """"username":""" ]
   Fields = [
     """object":"({object}[^"]+)"""",
-    """timestamp":({time}\d+)""",
+    """timestamp":({time}\d{1,100})""",
     """username":"({user}[^"]+)"""",
     """action":"({activity}[^"]+)"""",
-    """exabeam_raw=({additional_info}.*?)\s*$"""
+    """exabeam_raw=({additional_info}.*?)\s{0,100}$"""
   ]
 }
 ```

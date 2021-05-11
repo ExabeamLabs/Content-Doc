@@ -10,7 +10,7 @@ Name = skyhigh-dlp-alert-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
     """,created_on_date=({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
-    """\d\d:\d\d:\d\d\s+({host}[\w\-.]+)\s+(\w+=|$)""",
+    """\d\d:\d\d:\d\d\s{1,100}({host}[\w\-.]+)\s{1,100}(\w+=|$)""",
     """,policy_name=({alert_name}[^,]+)""",
     """,type=({alert_type}[^,]+)""",
     """,riskLevel=({alert_severity}[^,]+)""",
@@ -20,7 +20,7 @@ Name = skyhigh-dlp-alert-1
     """,serviceName=({additional_info}[^,]+)""",
     """,response=({outcome}[^,]+)"""
     """,userDisplayName=({user}[^\s@,]+)""",
-    """,size=({bytes}\d+)"""
+    """,size=({bytes}\d{1,100})"""
   ]
 }
 ```

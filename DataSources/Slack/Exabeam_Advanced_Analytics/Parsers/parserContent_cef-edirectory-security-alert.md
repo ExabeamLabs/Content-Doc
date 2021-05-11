@@ -17,15 +17,15 @@ cef-edirectory-events = {
   Lms = ArcSight
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Fields = [
-    """\Wrt=({time}\w+\s+\d+\s+\d+ \d\d:\d\d:\d\d)""",
+    """\Wrt=({time}\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100} \d\d:\d\d:\d\d)""",
     """\Wdvc=({host}[A-Fa-f:\d.]+)""",
     """\Wdvchost=({host}[\w\-.]+)""",
     """\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
-    """\Wspt=({src_port}\d+)""",
+    """\Wspt=({src_port}\d{1,100})""",
     """\Wsuser=CN\\=({src_host}[\w\-.]+)""",
-    """\Wduser=CN\\=({user_fullname}[^,]+),({user_ou}OU\\=.+?)\s+(\w+=|$)""",
+    """\Wduser=CN\\=({user_fullname}[^,]+),({user_ou}OU\\=.+?)\s{1,100}(\w+=|$)""",
     """\Woutcome=({outcome}\w+)""",
-    """\Wcs1=(({protocol}\w+):\s*)?({dest_ip}[A-Fa-f:\d.]+?):({dest_port}\d+)""",
+    """\Wcs1=(({protocol}\w+):\s{0,100})?({dest_ip}[A-Fa-f:\d.]+?):({dest_port}\d{1,100})""",
   ]
 
 ```

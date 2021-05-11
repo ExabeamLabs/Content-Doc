@@ -9,7 +9,7 @@ Name = xml-4779
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """<EventID>4779<""" ]
   Fields = [
-    """<TimeCreated SystemTime(\\)?='({time}\d+-\d+-\d+T\d+:\d+:\d+)""",
+    """<TimeCreated SystemTime(\\)?='({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100})""",
     """<Computer>({host}[\w\-.]+)""",
     """({event_code}4779)""",
     """<Message>({event_name}[^.。]+)""",

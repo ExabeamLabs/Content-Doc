@@ -9,13 +9,13 @@ Name = cef-juniper-vpn-resume
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """|Juniper|""", """|Session resumed|""" ]
   Fields = [
-	"""\Wrt=({time}\d+)""",
+	"""\Wrt=({time}\d{1,100})""",
 	"""\Wdvchost=({host}[\w\-.]+)""",
 	"""\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
 	"""\Wsuser=(System|({user}[^\s]+))""",
 	"""\Wshost=({src_host}[\w\-.]+)""",
-    """\Wsproc=({realm}.+?)\s+\w+=""",
-    """\Wspriv=({resource}.+?)\s+\w+=""",
+    """\Wsproc=({realm}.+?)\s{1,100}\w+=""",
+    """\Wspriv=({resource}.+?)\s{1,100}\w+=""",
     """({event_code}Session resumed)""",
     """dst=({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""", 
   ]

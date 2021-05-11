@@ -13,7 +13,7 @@ Name = xml-4674
     """<Keywords>({outcome}.+?)</Keywords>""",
     """<Computer>({host}[\w.\-]+)</Computer>""",
     """({event_code}4674)""",
-    """<Data Name='SubjectUserSid'>\s*(({domain}[^\\]+)\\)?({user}[^<]+)</Data>""",
+    """<Data Name='SubjectUserSid'>\s{0,100}(({domain}[^\\]+)\\)?({user}[^<]+)</Data>""",
     """<Data Name='SubjectUserName'>({user}[^<]+?)</Data>""",
     """<Data Name='SubjectDomainName'>({domain}[^<]+?)</Data>""",
     """<Data Name='SubjectLogonId'>({login_id}[^<]+?)</Data>""",

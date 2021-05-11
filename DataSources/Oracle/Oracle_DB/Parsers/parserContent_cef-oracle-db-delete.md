@@ -10,8 +10,8 @@ Name = cef-oracle-db-delete
   TimeFormat = "epoch"
   Conditions = [ """|Oracle|FGA|""", """|DELETE|""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """\Wrt=({time}\d+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """\Wrt=({time}\d{1,100})""",
     """\Wshost=({src_host}[\w\-.]+)""",
     """\Wdhost=({dest_host}[\w\-.]+)""",
     """\Wsuser=({user}[^\s]+)""",

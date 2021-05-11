@@ -10,20 +10,20 @@ Name = json-bro-files-analysis
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
   Conditions = [ """/files.log""",""""fuid\":""", """"conn_uids\":""" ]
   Fields = [
-    """"HOST"+:\s*"+({host}[^"]+)"""",
-    """"TAGS"+:\s*"+({event_code}[^"]+)"""",
-    """"ts\\?"+:\\?"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3})""",
-    """"tx_hosts\\?"+:\[\\*"*({src_ip}[a-fA-F\d.:]+)\\*"*\]""",
-    """"rx_hosts\\?"+:\[\\*"*({dest_ip}[a-fA-F\d.:]+)\\*"*\]""",
-    """"conn_uids\\?"+:\[\\*"*({conn_uids}.+?)\\*"*\]""",
-    """"source\\?"+:\\?"+({protocol}[^"\\]+)""",
-    """"analyzers\\?"+:\[({analyzers}.+?)\]""",
-    """"mime_type\\?"+:\\?"+({mime}[^"\\]+)""",
-    """"filename\\?"+:\\?"+({file_path}({file_parent}[^"]*?(\\u005c|[\\\/])*)({file_name}[^"\\\/]+?(\.({file_ext}[^"\\\/\.]+))?))\s*\\?"""",
-    """"seen_bytes\\?"+:({bytes}\d+)""",
-    """"total_bytes\\?"+:({total_bytes}\d+)""",
-    """"md5\\?"+:\\?"+({md5}[^"\\]+)""",
-    """"sha1\\?"+:\\?"+({sha1}[^"\\]+)"""
+    """"HOST"{1,20}:\s{0,100}"{1,20}({host}[^"]+)"""",
+    """"TAGS"{1,20}:\s{0,100}"{1,20}({event_code}[^"]+)"""",
+    """"ts\\?"{1,20}:\\?"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3})""",
+    """"tx_hosts\\?"{1,20}:\[\\*"{0,20}({src_ip}[a-fA-F\d.:]+)\\*"{0,20}\]""",
+    """"rx_hosts\\?"{1,20}:\[\\*"{0,20}({dest_ip}[a-fA-F\d.:]+)\\*"{0,20}\]""",
+    """"conn_uids\\?"{1,20}:\[\\*"{0,20}({conn_uids}.+?)\\*"{0,20}\]""",
+    """"source\\?"{1,20}:\\?"{1,20}({protocol}[^"\\]+)""",
+    """"analyzers\\?"{1,20}:\[({analyzers}.+?)\]""",
+    """"mime_type\\?"{1,20}:\\?"{1,20}({mime}[^"\\]+)""",
+    """"filename\\?"{1,20}:\\?"{1,20}({file_path}({file_parent}[^"]*?(\\u005c|[\\\/])*)({file_name}[^"\\\/]+?(\.({file_ext}[^"\\\/\.]+))?))\s{0,100}\\?"""",
+    """"seen_bytes\\?"{1,20}:({bytes}\d{1,100})""",
+    """"total_bytes\\?"{1,20}:({total_bytes}\d{1,100})""",
+    """"md5\\?"{1,20}:\\?"{1,20}({md5}[^"\\]+)""",
+    """"sha1\\?"{1,20}:\\?"{1,20}({sha1}[^"\\]+)"""
   ]
 }
 ```

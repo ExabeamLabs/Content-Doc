@@ -10,15 +10,8 @@ Name = symantec-email-alert-out
   Conditions = [ """protocol=SMTP""","""incident_id=""", """sender=""", """recipient=""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """({host}[\w.\-]+)\s+incident_id=""",
+    """({host}[\w.\-]+)\s{1,100}incident_id=""",
     """recipient=({recipient}[^,@]+@({external_domain}[^,]+)),""",
     """sender=({sender}[^,]+),""",
-    """Subject=({subject}.+?)\s*,(\s+\w+=|\s*$)""",
-    """blocked=({outcome}\w+)""",
-    """Attachment_Filename=({attachments}.+?)\s*,(\s+\w+=|\s*$)""",
-    """incident_id=({alert_id}\d+)""",
-    """protocol=({protocol}.*?)\s+\w+="""
-  ]
-  DupFields = [ "recipient->recipients", "recipient->external_address" ]
-}
+    """Subject=({subject}.+?)\s{0,100}
 ```

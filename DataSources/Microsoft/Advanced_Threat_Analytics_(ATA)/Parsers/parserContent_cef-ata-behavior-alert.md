@@ -12,10 +12,10 @@ Name = cef-ata-behavior-alert
     """exabeam_host=([^=@]+@)?({host}[\w.\-]+)""",
     """CEF:([^\|]*\|){4}({alert_type}[^\|]+)\|({alert_name}[^\|]+)\|({alert_severity}[^\|]+)\|""",
     """\Wstart=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """\Wapp=({service}.+?)\s+(\w+=|$)""",
-    """\Wmsg=({additional_info}.+?)\s+(\w+=|$)""",
-    """\Wmsg=(?:(({user_lastname}[\w\']+), ({user_firstname}\w+))|({user}\w+))\s+""",
-    """\Wsuser=(?:(({user_lastname}[\w\']+), ({user_firstname}\w+))|({user}[^\s]+))\s+(\w+=|$)"""
+    """\Wapp=({service}.+?)\s{1,100}(\w+=|$)""",
+    """\Wmsg=({additional_info}.+?)\s{1,100}(\w+=|$)""",
+    """\Wmsg=(?:(({user_lastname}[\w\']+), ({user_firstname}\w+))|({user}\w+))\s{1,100}""",
+    """\Wsuser=(?:(({user_lastname}[\w\']+), ({user_firstname}\w+))|({user}[^\s]+))\s{1,100}(\w+=|$)"""
   ]
 }
 ```

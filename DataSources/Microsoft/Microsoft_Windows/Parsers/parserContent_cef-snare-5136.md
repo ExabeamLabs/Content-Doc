@@ -11,18 +11,18 @@ Name = cef-snare-5136
   Fields = [
     """({event_name}A directory service object was modified)""",
     """({event_code}5136)""",
-    """\Wrt=({time}\d+)""",
+    """\Wrt=({time}\d{1,100})""",
     """\Wsrc=({src_ip}[A-Fa-f0-9.:]+)""",
-    """\Wdhost=({dest_host}.+?)(\s+(\w+|\w+\.\w+)=|\s*$)""",
-    """\Wdvchost=({host}.+?)(\s+(\w+|\w+\.\w+)=|\s*$)""",
+    """\Wdhost=({dest_host}.+?)(\s{1,100}(\w+|\w+\.\w+)=|\s{0,100}$)""",
+    """\Wdvchost=({host}.+?)(\s{1,100}(\w+|\w+\.\w+)=|\s{0,100}$)""",
     """\Wdst=({dest_ip}[A-Fa-f0-9.:]+)""",
-    """\Wdntdom=({domain}.+?)(\s+(\w+|\w+\.\w+)=|\s*$)""",
-    """\Wduser=({user}.+?)(\s+(\w+|\w+\.\w+)=|\s*$)""",
-    """\Wduid=({login_id}.+?)(\s+(\w+|\w+\.\w+)=|\s*$)""",
-    """\WcategoryOutcome=\/?({outcome}.+?)\s+(\w+=|$)""",
-    """\Wcs5=(|({object_class}.+?))(\s+(\w+|\w+\.\w+)=|\s*$)""",
-    """\Wcs6=(|({object_dn}.+?))(\s+(\w+|\w+\.\w+)=|\s*$)""",
-    """\Wcs6=(|[^=]*?({object_ou}OU.+?))(\s+(\w+|\w+\.\w+)=|\s*$)""",
+    """\Wdntdom=({domain}.+?)(\s{1,100}(\w+|\w+\.\w+)=|\s{0,100}$)""",
+    """\Wduser=({user}.+?)(\s{1,100}(\w+|\w+\.\w+)=|\s{0,100}$)""",
+    """\Wduid=({login_id}.+?)(\s{1,100}(\w+|\w+\.\w+)=|\s{0,100}$)""",
+    """\WcategoryOutcome=\/?({outcome}.+?)\s{1,100}(\w+=|$)""",
+    """\Wcs5=(|({object_class}.+?))(\s{1,100}(\w+|\w+\.\w+)=|\s{0,100}$)""",
+    """\Wcs6=(|({object_dn}.+?))(\s{1,100}(\w+|\w+\.\w+)=|\s{0,100}$)""",
+    """\Wcs6=(|[^=]*?({object_ou}OU.+?))(\s{1,100}(\w+|\w+\.\w+)=|\s{0,100}$)""",
   ]
 }
 ```

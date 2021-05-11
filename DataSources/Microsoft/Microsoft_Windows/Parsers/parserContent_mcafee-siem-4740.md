@@ -12,7 +12,7 @@ Name = mcafee-siem-4740
       """({event_name}A user account was locked out)""",
       """"src_ip":"({src_ip}[^"]+)""",
       """"dst_ip":"({dest_ip}[^"]+)""",
-      """"id":\d*({event_code}4740)""",
+      """"id":\d{0,100}({event_code}4740)""",
       """"firsttime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
       """"DomainID":"({caller_domain}[^"]+)""",
       """"HostID":"({host}[^"]+)""",

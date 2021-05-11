@@ -13,9 +13,9 @@ Name = raw-4700
     """<Computer>({host}[^<]+?)</Computer>""",
     """({event_code}4700)""",
     """({event_name}A scheduled task was enabled)""",
-    """\sAccount Name:\s*(|({user}[^:]+?))\s*Account Domain:\s*(|({domain}[^:]+?))\s*Logon ID:\s*(|({logon_id}[^:]+?))\s*Task Information:""",
-    """Task Name:\s*({task_name}[^:]+?)\s*Task Content:""",
-    """Task Content:\s*({additional_info}[^<]+?)\s*<"""
+    """\sAccount Name:\s{0,100}(|({user}[^:]+?))\s{0,100}Account Domain:\s{0,100}(|({domain}[^:]+?))\s{0,100}Logon ID:\s{0,100}(|({logon_id}[^:]+?))\s{0,100}Task Information:""",
+    """Task Name:\s{0,100}({task_name}[^:]+?)\s{0,100}Task Content:""",
+    """Task Content:\s{0,100}({additional_info}[^<]+?)\s{0,100}<"""
   ]
 }
 ```

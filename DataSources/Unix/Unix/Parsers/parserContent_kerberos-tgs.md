@@ -9,8 +9,8 @@ Name = kerberos-tgs
     TimeFormat = "epoch_sec"
     Conditions = [ "krb5kdc", "TGS_REQ", ": ISSUE:" ]
     Fields = [
-      """\sauthtime ({time}\d+)""",
-      """\w+ \d+ \d+:\d+:\d+ ({host}[^\s]+)""",
+      """\sauthtime ({time}\d{1,100})""",
+      """\w+ \d{1,100} \d{1,100}:\d{1,100}:\d{1,100} ({host}[^\s]+)""",
       """TGS_REQ .+? ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """}
 ```

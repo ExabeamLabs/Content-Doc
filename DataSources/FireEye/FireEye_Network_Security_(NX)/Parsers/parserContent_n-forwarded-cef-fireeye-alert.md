@@ -8,16 +8,16 @@ Name = n-forwarded-cef-fireeye-alert
   DataType = "alert"
   TimeFormat = "epoch"
   Conditions = [ "|McAfee|ESM", "|444-2835433003|" ]
-  Fields = [ """\srt=({time}\d+)""",
-    """\|McAfee\|ESM\|.+?\|.+?\|({alert_name}.+?)\|""",
-    """\|McAfee\|ESM\|.+?\|.+?\|.+?\|({alert_severity}.+?)\|""",
+  Fields = [ """\srt=({time}\d{1,100})""",
+    """\|McAfee\|ESM\|[^|]+?\|[^|]+?\|({alert_name}.+?)\|""",
+    """\|McAfee\|ESM\|[^|]+?\|[^|]+?\|[^|]+?\|({alert_severity}.+?)\|""",
     """\sdeviceTranslatedAddress=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\sexternalId=({alert_id}\d+)""",
+    """\sexternalId=({alert_id}\d{1,100})""",
     """\sshost=({src_host}[^\s]+)""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\snitroObjectID=({alert_type}.+?)\s+nitroAttacker_IP""",
-    """\snitroURL=({additional_info}[^\r\n]+)\s+"""
+    """\snitroObjectID=({alert_type}.+?)\s{1,100}nitroAttacker_IP""",
+    """\snitroURL=({additional_info}[^\r\n]+)\s{1,100}"""
   ]
   SOAR {
     IncidentType = "malware"

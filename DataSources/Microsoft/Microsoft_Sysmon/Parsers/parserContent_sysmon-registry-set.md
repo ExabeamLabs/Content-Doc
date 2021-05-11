@@ -10,17 +10,17 @@ Name = sysmon-registry-set
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
   Conditions = [ """=Microsoft-Windows-Sysmon""", """Message=Registry value set:""" ]
   Fields = [ 
-    """UtcTime:\s*({time}\d\d\d\d\-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)""",
+    """UtcTime:\s{0,100}({time}\d\d\d\d\-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)""",
     """\sComputer(?:Name)?=({host}[^\s]+)""",
     """Message=({activity_type}[^:]+)""",
-    """Task=({activity}.+?)\s+(\w+=|$)""",
-    """User=({user}.+?)\s+(\w+=|$)""",
-    """Domain=({domain}.+?)\s+(\w+=|$)""",
-    """User:\s*(?:({domain}[^\\]+)\\)?({user}.+?)\s+\w+:""",
-    """ProcessGuid:\s*\{({process_guid}[^\s\}]+)""",
-    """ProcessId:\s*({process_id}\d+)""",
-    """\s+Image:\s*({process}({process_directory}(?:(\w+:)?[^:]+)?[\\\/])?({process_name}.+?))\s+\w+:""",
-    """\s+Image:\s*({file_path}({file_parent}(?:(\w+:)?[^:]+)?[\\\/])?({file_name}.+?))\s+\w+:"""
+    """Task=({activity}.+?)\s{1,100}(\w+=|$)""",
+    """User=({user}.+?)\s{1,100}(\w+=|$)""",
+    """Domain=({domain}.+?)\s{1,100}(\w+=|$)""",
+    """User:\s{0,100}(?:({domain}[^\\]+)\\)?({user}.+?)\s{1,100}\w+:""",
+    """ProcessGuid:\s{0,100}\{({process_guid}[^\s\}]+)""",
+    """ProcessId:\s{0,100}({process_id}\d{1,100})""",
+    """\s{1,100}Image:\s{0,100}({process}({process_directory}(?:(\w+:)?[^:]+)?[\\\/])?({process_name}.+?))\s{1,100}\w+:""",
+    """\s{1,100}Image:\s{0,100}({file_path}({file_parent}(?:(\w+:)?[^:]+)?[\\\/])?({file_name}.+?))\s{1,100}\w+:"""
   ]
   DupFields = [ "directory->process_directory", "host->dest_host" ]
 }

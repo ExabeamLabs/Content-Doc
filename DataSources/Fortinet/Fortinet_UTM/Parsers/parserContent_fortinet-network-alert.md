@@ -10,17 +10,17 @@ Name = fortinet-network-alert
   Conditions = [ """subtype=ips""", """action=detected""", """service=""", """date=""" ]
   Fields = [
     """\Wdate=({time}\d\d\d\d-\d\d-\d\d time\=\d\d:\d\d:\d\d)""",
-    """\Wdevname="?({host}[^"]+?)"?(\s+\w+=|\s*$)""",
+    """\Wdevname="?({host}[^"]+?)"?(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wprofile="({alert_type}[^"]+)"""",
     """\Wsrcip=({src_ip}[a-fA-F\d.:]+)""",
     """\Wdstip=({dest_ip}[a-fA-F\d.:]+)""",
     """\Wseverity="?({alert_severity}\w+)""",
-    """\Wsrcport=({src_port}\d+)""",
-    """\Wdstport=({dest_port}\d+)""",
+    """\Wsrcport=({src_port}\d{1,100})""",
+    """\Wdstport=({dest_port}\d{1,100})""",
     """\Wservice="?({protocol}\w+)""",
     """\Wattack="({alert_name}[^"]+)"""",
     """\Wmsg="({additional_info}[^"]+)"""",
-    """\Waction="?({action}[^"]+?)"?(\s+\w+=|\s*$)""",
+    """\Waction="?({action}[^"]+?)"?(\s{1,100}\w+=|\s{0,100}$)""",
   ]
   SOAR {
     IncidentType = "generic"

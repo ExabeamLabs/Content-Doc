@@ -9,11 +9,11 @@ Name = messagelabs-email-out
   TimeFormat = "epoch"
   Conditions = ["""emailInfo""","""HELOString""",""""isOutbound":true"""]
   Fields = [
-    """exabeam_host=([^@=]+@\s*)?({host}[\w.\-]+)""",
-    """"mailProcessingStartTime"+:({time}\d+)""",
+    """exabeam_host=([^@=]+@\s{0,100})?({host}[\w.\-]+)""",
+    """"mailProcessingStartTime"{1,20}:({time}\d{1,100})""",
     """"headerFrom":"({sender}[^"]+)",""",
     """"subject":"({subject}[^"]+)",""",
-    """"messageSize":({bytes}\d+)""",
+    """"messageSize":({bytes}\d{1,100})""",
     """"messageId":"({alert_id}[^"]+)",""",
     """"headerTo":\[({recipients}[^\]]+)\],""",
     """"headerTo":\["({recipient}[^"@]+@({external_domain}[^@"]+))"""",

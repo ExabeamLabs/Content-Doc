@@ -17,10 +17,10 @@ Name = s-mcafee-vse-epo-dlp-alert
       """SourceProcessName="({process}[^"]+?[\\\/]({process_name}[^"\\\/]*))"""",
       """TargetUserName="(({domain}[^"\\\/]+?)[\\\/]+)?({user}[^"]+)"""",
       """SourceUserName="(({domain}[^"\\\/]+?)[\\\/]+)?({user}[^"]+)"""",
-      """ThreatSeverity="({alert_severity}\d+)""",
+      """ThreatSeverity="({alert_severity}\d{1,100})""",
       """ThreatName="({alert_name}[^"]+?)"""",
       """ThreatType="({alert_type}[^"]+?)"""",
-      """ThreatEventID="({alert_id}\d+)""",
+      """ThreatEventID="({alert_id}\d{1,100})""",
       """SourceIPV4="({src_ip}[^"]+)""",
       """TargetIPV4="({dest_ip}[^"]+)"""
     ]

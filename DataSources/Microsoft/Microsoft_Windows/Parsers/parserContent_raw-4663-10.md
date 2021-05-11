@@ -14,17 +14,17 @@ Name = raw-4663-10
       """"(?:winlog\.)?computer_name\\*":\\*"({host}[^\\"]+)""",
       """@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """({event_code}4663)""",
-      """Object(:|=).*?Object Type(:|=)\s*({file_type}.+?)[\s;]*Object Name(:|=)\s*({file_path}({file_parent}.*?)({file_name}[^\\\/;]+?(\.({file_ext}[^\.;\\]+?))?))[\s;]*Handle ID(:|=)""",
-      """Process Name(:|=)\s*(?:|({process}.+?))[\s;]*Access Request Information(:|=)""",
+      """Object(:|=).*?Object Type(:|=)\s{0,100}({file_type}.+?)[\s;]*Object Name(:|=)\s{0,100}({file_path}({file_parent}.*?)({file_name}[^\\\/;]+?(\.({file_ext}[^\.;\\]+?))?))[\s;]*Handle ID(:|=)""",
+      """Process Name(:|=)\s{0,100}(?:|({process}.+?))[\s;]*Access Request Information(:|=)""",
       """Process Name(:|=).*\\({process_name}[^\\;]+?)[\s;]*Access Request Information(:|=)""",
-      """Accesses(:|=)\s*({accesses}.+?)[\s;]*Access Mask(:|=)\s*({access_mask}\w+)""",
-      """"AccessList\\*":\\*"({accesses}[^"]+?)\s*"""",
+      """Accesses(:|=)\s{0,100}({accesses}.+?)[\s;]*Access Mask(:|=)\s{0,100}({access_mask}\w+)""",
+      """"AccessList\\*":\\*"({accesses}[^"]+?)\s{0,100}"""",
       """"Account\\*":\\*"(({domain}[^\\\s"]+)\\+)?({user}[^\\\s"]+)""",
       """"SubjectUserSid\\*":\\*"({user_sid}[^\s"]+)""",
       """"SubjectLogonId\\*":\\*"({logon_id}[^\s"]+)""",
-      """"ObjectName\\*":\\*"(-|({file_path}({file_parent}.*?)({file_name}[^\\\/;]+?(\.({file_ext}[^\.;]+?))?)))\s*"""",
+      """"ObjectName\\*":\\*"(-|({file_path}({file_parent}.*?)({file_name}[^\\\/;]+?(\.({file_ext}[^\.;]+?))?)))\s{0,100}"""",
       """"ObjectType":"(-|({file_type}[^\s"]+))""",
-      """"ProcessName":"(?: |({process}({directory}(?:[^";]+)?[\\\/])?({process_name}[^\\\/";]+?)))\s*"""",
+      """"ProcessName":"(?: |({process}({directory}(?:[^";]+)?[\\\/])?({process_name}[^\\\/";]+?)))\s{0,100}"""",
     ]
     DupFields = ["host->dest_host","directory->process_directory"]
   }

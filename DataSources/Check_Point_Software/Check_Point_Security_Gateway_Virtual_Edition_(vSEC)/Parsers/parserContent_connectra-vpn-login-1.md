@@ -9,15 +9,15 @@ Name = connectra-vpn-login-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
   Conditions = [ """ProductName: Connectra;""", """ip changed""" ]
   Fields = [
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+((\+|\-)\d\d:\d\d)?)""",
-    """({host}[\w.\-]+)\s+CPLogToSyslog:""",
-    """\WOriginSicName:\s*CN=({host}[\w.\-]+),O="""
-    """\WAction:\s*(|({action}[^;]+?));""",
-    """\Wuser:\s*({user}[^;\(\)]+?)\s*;""",
-    """\Wuser:\s*({user_fullname}.+?)\s*\(({account}.+?)\)""",
-    """\Wsrc:\s*(|({src_ip}[a-fA-F\d.:]+));""",
-    """\WProductName:\s*(|({app}[^;]+?));""",
-    """\Wassigned_IP::\s*({dest_ip}[a-fA-F\d.:]+)""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}((\+|\-)\d\d:\d\d)?)""",
+    """({host}[\w.\-]+)\s{1,100}CPLogToSyslog:""",
+    """\WOriginSicName:\s{0,100}CN=({host}[\w.\-]+),O="""
+    """\WAction:\s{0,100}(|({action}[^;]+?));""",
+    """\Wuser:\s{0,100}({user}[^;\(\)]+?)\s{0,100};""",
+    """\Wuser:\s{0,100}({user_fullname}.+?)\s{0,100}\(({account}.+?)\)""",
+    """\Wsrc:\s{0,100}(|({src_ip}[a-fA-F\d.:]+));""",
+    """\WProductName:\s{0,100}(|({app}[^;]+?));""",
+    """\Wassigned_IP::\s{0,100}({dest_ip}[a-fA-F\d.:]+)""",
     """\,orig=({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
    DupFields = [ "action->event_name", "account->user" ]

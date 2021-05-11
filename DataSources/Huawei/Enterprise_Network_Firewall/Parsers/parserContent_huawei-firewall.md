@@ -9,9 +9,9 @@ Name = huawei-firewall
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
   Conditions = ["""rule-name=""" , """vsys=""" , """destination-ip""" , """POLICY/""" , """/POLICY"""]
   Fields = [
-    """time=({time}\d\d\d\d\/\d+\/\d+\s*\d\d:\d\d:\d\d)"""
+    """time=({time}\d\d\d\d\/\d{1,100}\/\d{1,100}\s{0,100}\d\d:\d\d:\d\d)"""
     """\s({host}[^\s]+)\s%""",
-    """%*\d*POLICY\/\d\/POLICY({outcome}\w+)""",
+    """%*\d{0,100}POLICY\/\d\/POLICY({outcome}\w+)""",
     """protocol=({protocol}[^,]+)""",
     """source-ip=({src_ip}[^,]+)""",
     """source-port=({src_port}[^,]+)""",

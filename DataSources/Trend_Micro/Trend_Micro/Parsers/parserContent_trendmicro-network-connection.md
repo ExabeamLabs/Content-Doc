@@ -12,9 +12,9 @@ Name = trendmicro-network-connection
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """\|dvchost=({host}[^\|\s"]+)""",
     """\|dst=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\|dpt=({src_port}\d+)""",
+    """\|dpt=({src_port}\d{1,100})""",
     """\|src=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\|spt=({dest_port}\d+)""",
+    """\|spt=({dest_port}\d{1,100})""",
     """\|proto=({protocol}[^\|]+)"""
     """\|smac=({source_mac}[^\|]+)""",
     """\|in=({bytes}[^\|]+)""",

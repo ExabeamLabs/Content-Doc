@@ -9,16 +9,16 @@ Name = syslog-checkpoint-app-login-1
   TimeFormat = "ddMMMyyyy HH:mm:ss"
   Conditions = [ """CP_FireWall:""", "ProductName: Application Control;", "appi_name" ]
   Fields = [
-    """CP_FireWall:\s+({time}\d+\w{3}\d+\s+\d+:\d+:\d+)(\s+\S+){4}\s+({host}[^\s]+)""",
-    """;\s*appi_name:\s+({app}[^;]+);""",
-    """;\s*web_client_type:\s+(Other: )?({user_agent}.+?);\s*($|web_server_type:)""",
-    """\sdst:\s+({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\ssrc:\s+({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """;\s*web_client_type:.*?({browser}Trident/7.0|Safari|Firefox|Chrome|Microsoft IE)""",
-    """;\s*web_client_type:.*?({os}Windows[^;)]*)""",
-    """;\s*web_client_type:.*?Mozilla[^\s]+\s*\(({os}[^\)]+).*({browser}[\d.]+\s+(mobile )?Safari)""",
-    """;\s*web_client_type:\s+[^\s]+\s+\(((windows|x11|macintosh|u|compatible);( (u|i);)?\s+)?({os}[^;\)]+).*\s({browser}(Chrome|Firefox)/\d+)""",
-    """;\s*web_client_type.*({browser}msie\s+\d[^\s,;\)]+)"""
+    """CP_FireWall:\s{1,100}({time}\d{1,100}\w{3}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100})(\s{1,100}\S+){4}\s{1,100}({host}[^\s]+)""",
+    """;\s{0,100}appi_name:\s{1,100}({app}[^;]+);""",
+    """;\s{0,100}web_client_type:\s{1,100}(Other: )?({user_agent}.+?);\s{0,100}($|web_server_type:)""",
+    """\sdst:\s{1,100}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """\ssrc:\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """;\s{0,100}web_client_type:.*?({browser}Trident/7.0|Safari|Firefox|Chrome|Microsoft IE)""",
+    """;\s{0,100}web_client_type:.*?({os}Windows[^;)]*)""",
+    """;\s{0,100}web_client_type:.*?Mozilla[^\s]+\s{0,100}\(({os}[^\)]+).*({browser}[\d.]+\s{1,100}(mobile )?Safari)""",
+    """;\s{0,100}web_client_type:\s{1,100}[^\s]+\s{1,100}\(((windows|x11|macintosh|u|compatible);( (u|i);)?\s{1,100})?({os}[^;\)]+).*\s({browser}(Chrome|Firefox)/\d{1,100})""",
+    """;\s{0,100}web_client_type.*({browser}msie\s{1,100}\d[^\s,;\)]+)"""
   ]
 }
 ```

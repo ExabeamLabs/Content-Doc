@@ -9,30 +9,30 @@ Name = juniper-nwc-vpn-start
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ " id=", "NWC23464", "Session started" ]
   Fields = [
-    """({host}[\w\-\.]+)\s*(PulseSecure|Juniper):""",
-    """\stime="+({time}\d+-\d+-\d+ \d+:\d+:\d+).+?user""",
-    """user=([^\\]+\\)?({user}.+?)\s+realm""",
+    """({host}[\w\-\.]+)\s{0,100}(PulseSecure|Juniper):""",
+    """\stime="{1,20}({time}\d{1,100}-\d{1,100}-\d{1,100} \d{1,100}:\d{1,100}:\d{1,100}).+?user""",
+    """user=([^\\]+\\)?({user}.+?)\s{1,100}realm""",
     """src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s""",
-    """with IP(v4 address)?\s+({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """with IP(v4 address)?\s{1,100}({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sfw=({firewall}[a-fA-F\d.:]+)""",
-    """\svpn=({vpn}[^=]+?)(\s+\w+=|\s*$)""",
+    """\svpn=({vpn}[^=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\srealm="({realm}[^"]+)""",
     """\sroles="({roles}[^"]+)""",
-    """\sproto=({protocol}[^=]+?)(\s+\w+=|\s*$)""",
-    """\ssrcport=({src_port}\d+)""",
+    """\sproto=({protocol}[^=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\ssrcport=({src_port}\d{1,100})""",
     """\sdstip=({dest_ip}[a-fA-F\d.:]+)""",
-    """\sdstname=({dest_host}[^=]+?)(\s+\w+=|\s*$)""",
-    """\sport=({dest_port}\d+)""",
-    """\stype=({vpn_type}[^=]+?)(\s+\w+=|\s*$)""",
-    """\sop=({op}[^=]+?)(\s+\w+=|\s*$)""",
+    """\sdstname=({dest_host}[^=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sport=({dest_port}\d{1,100})""",
+    """\stype=({vpn_type}[^=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sop=({op}[^=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\sarg="({arg}[^"]+)""",
-    """\sresult=({result}[^=]+?)(\s+\w+=|\s*$)""",
-    """\ssent=({bytes_out}\d+)""",
-    """\srcvd=({bytes_in}\d+)""",
+    """\sresult=({result}[^=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\ssent=({bytes_out}\d{1,100})""",
+    """\srcvd=({bytes_in}\d{1,100})""",
     """\sagent="({agent}[^"]+)""",
-    """\sduration=({session_duration}\d+)""",
+    """\sduration=({session_duration}\d{1,100})""",
     """\smsg="({additional_info}[^"]+)""",
-    """hostname\s+({src_host}[^"]+)"""
+    """hostname\s{1,100}({src_host}[^"]+)"""
   ]
   DupFields = ["user->account"]
 }

@@ -11,7 +11,7 @@ Name = jsonar-database-login
   Conditions = [ """ sonarw """, """"$date":""", """"OS User":""", """"Database Name":""" ]
   Fields = [
 	"""({host}[\w.\-]+) sonarw """,
-	""""\$date":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+	""""\$date":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
         """"DB User Name":"(({db_domain}[^\\"]+)\\+)?(SYSTEM|({db_user}[^\\"]+))""",
         """"OS User":"(({domain}[^\\"]+)\\+)?(SYSTEM|({user}[^\\"]+))""",
 	""""Server IP":"({dest_ip}[^"]+)""",

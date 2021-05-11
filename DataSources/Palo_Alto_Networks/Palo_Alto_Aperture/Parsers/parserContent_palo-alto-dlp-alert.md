@@ -9,12 +9,6 @@ Name = palo-alto-dlp-alert
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """ Aperture """, """,incident,""" ]
   Fields = [
-    """({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+Z)\s({host}[\w\-.]+)\s"""
-    """incident,"*({app}[^",]+)",({alert_severity}\d(\.\d)?)"*,({alert_id}[\dA-Fa-f]+)"*"*,"""
-    """\d+:\d+Z,([^,]*,){3}"?({user_email}[^@]+@[^\.]+[^,"]+)""",
-    """"+({alert_name}[^"]+)"+,EXTERNAL,""",
-    """,incident,"?({alert_type}[^",]+)""",
-    """incident,"*({app}[^",]+)",({alert_severity}\d(\.\d)?)"*,({alert_id}[\dA-Fa-f]+)"*,[\dA-Fa-f]+"*,"*\s*({additional_info}[^,\s"]+)\s*"*,([^,]*,)"""
-  ]
-}
+    """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}Z)\s({host}[\w\-.]+)\s"""
+    """incident,"{0,20}({app}[^",]+)",({alert_severity}\d(\.\d)?)"{0,20}
 ```

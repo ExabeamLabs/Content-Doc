@@ -5,7 +5,7 @@ Name = cef-microsoft-graph-activity
   DataType = "failed-app-login"
   Conditions = [ """appDisplayName":""", """"src-endpoint":"Graph Sign-In logs"""","""failureReason":""", """event-name":"login-failed""" ]
   Fields = ${MSParserTemplates.cef-o365-app-login.Fields} [
-    """"+status"+.+?failureReason":"+({failure_reason}[^"]+)""",
+    """"{1,20}status"{1,20}.+?failureReason":"{1,20}({failure_reason}[^"]+)""",
   ]
 }
 cef-o365-app-login = {
@@ -15,27 +15,27 @@ cef-o365-app-login = {
    Lms = Direct
    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
    Fields =[
-     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-     """"+time"+:"+({time}[^"]+)""",
-     """({time}\d+-\d+-\d+T\d+:\d+:\d+.\d+Z)\s+[^\s]+\s+Skyformation""",
-     """"+event-name"+:"+({event_name}[^"]+)""",
-     """"+userDisplayName"+:"+(({user_fullname}[^\s"]+\s+[^"]+)|({user_id}[^"]+))""",
-     """"+userPrincipalName"+:"+(({user_email}[^@"]+@[^"]+)|({user_id}[^"]+))""",
-     """"+userId"+:"+({user_id}[^"]+)""",
-     """"+appDisplayName"+:"+({app}[^"]+)""",
-     """"+ipAddress"+:"+({src_ip}[^"]+)""",
-     """"+clientAppUsed"+:"+({object}[^"]+)""",
-     """"+resourceDisplayName"+:"+({resource}[^"]+)""",
-     """"+additionalDetails":"+({additional_info}[^"]+)""",
-     """"+deviceDetail".+?operatingSystem"+:"+({os}[^"]+)""",
-     """"+location".+?city"+:"+({location_city}[^",]+)""",
-     """"+location".+?state"+:"+({location_state}[^",]+)""",
-     """"+location".+?countryOrRegion"+:"+({location_country}[^",]+)""",
-     """"+application-action"+:"+({activity}[^"]+)""",
-     """"+application-action".+?status"+.+?code":"+({outcome}[^"]+)""",
-     """"+src-endpoint"+:"+({endpoint}[^"]+)""",
-     """"+src-account-name"+:"+({account}[^"]+)""",
-     """"+src-account-name"+:"+({account_name}[^"]+)""",
+     """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+     """"{1,20}time"{1,20}:"{1,20}({time}[^"]+)""",
+     """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}.\d{1,100}Z)\s{1,100}[^\s]+\s{1,100}Skyformation""",
+     """"{1,20}event-name"{1,20}:"{1,20}({event_name}[^"]+)""",
+     """"{1,20}userDisplayName"{1,20}:"{1,20}(({user_fullname}[^\s"]+\s{1,100}[^"]+)|({user_id}[^"]+))""",
+     """"{1,20}userPrincipalName"{1,20}:"{1,20}(({user_email}[^@"]+@[^"]+)|({user_id}[^"]+))""",
+     """"{1,20}userId"{1,20}:"{1,20}({user_id}[^"]+)""",
+     """"{1,20}appDisplayName"{1,20}:"{1,20}({app}[^"]+)""",
+     """"{1,20}ipAddress"{1,20}:"{1,20}({src_ip}[^"]+)""",
+     """"{1,20}clientAppUsed"{1,20}:"{1,20}({object}[^"]+)""",
+     """"{1,20}resourceDisplayName"{1,20}:"{1,20}({resource}[^"]+)""",
+     """"{1,20}additionalDetails":"{1,20}({additional_info}[^"]+)""",
+     """"{1,20}deviceDetail".+?operatingSystem"{1,20}:"{1,20}({os}[^"]+)""",
+     """"{1,20}location".+?city"{1,20}:"{1,20}({location_city}[^",]+)""",
+     """"{1,20}location".+?state"{1,20}:"{1,20}({location_state}[^",]+)""",
+     """"{1,20}location".+?countryOrRegion"{1,20}:"{1,20}({location_country}[^",]+)""",
+     """"{1,20}application-action"{1,20}:"{1,20}({activity}[^"]+)""",
+     """"{1,20}application-action".+?status"{1,20}.+?code":"{1,20}({outcome}[^"]+)""",
+     """"{1,20}src-endpoint"{1,20}:"{1,20}({endpoint}[^"]+)""",
+     """"{1,20}src-account-name"{1,20}:"{1,20}({account}[^"]+)""",
+     """"{1,20}src-account-name"{1,20}:"{1,20}({account_name}[^"]+)""",
    ]
 
 ```

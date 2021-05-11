@@ -9,7 +9,7 @@ Name = syslog-mcafee-epo-dlp-alert
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
     Conditions = [ """"analyzername":"Data Loss Prevention"""",""""threatname":""" ]
     Fields = [
-      """"detectedutc":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+      """"detectedutc":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
       """"db_ip":"({dest_ip}[^"]+)""",
       """"threatname":"({alert_name}[^"]+?)"""",
       """"analyzername":"({alert_type}[^"]+?)"""",

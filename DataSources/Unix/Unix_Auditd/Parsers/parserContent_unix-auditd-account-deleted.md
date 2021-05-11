@@ -10,11 +10,11 @@ Name = unix-auditd-account-deleted
   Conditions = [ """type=DEL_USER""","""op=delete-user""","""res=success""" ]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """msg=audit\(({time}\d+)\.\d{3}""",
-    """\sauid=({account_used_id}\d+)\s""",
-    """\sid=({target_user_id}\d+)""",
-    """\suid=({user_id}\d+)""",
-    """\sses=({session_id}\d+)""",
+    """msg=audit\(({time}\d{1,100})\.\d{3}""",
+    """\sauid=({account_used_id}\d{1,100})\s""",
+    """\sid=({target_user_id}\d{1,100})""",
+    """\suid=({user_id}\d{1,100})""",
+    """\sses=({session_id}\d{1,100})""",
   ]
   DupFields = [ "host->dest_host" ]
 }

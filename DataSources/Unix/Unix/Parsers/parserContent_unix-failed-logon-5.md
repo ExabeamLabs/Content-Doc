@@ -9,10 +9,10 @@ Name = unix-failed-logon-5
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
   Conditions = [ """][""", """ sshd """, """ Failed publickey for """ ]
   Fields = [
-    """<\d+>\d+ ({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d(\+|\-)\d\d:\d\d) ({host}[\w.\-]+) ({event_code}sshd)""",
+    """<\d{1,100}>\d{1,100} ({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d(\+|\-)\d\d:\d\d) ({host}[\w.\-]+) ({event_code}sshd)""",
     """({failure_reason}Failed publickey) for (({domain}[^\\]+?)\\+)?({user}[^\\]+?) from """,
     """\sfrom ({src_ip}[a-fA-F\d.:]+)""",
-    """\sport ({src_port}\d+)""",
+    """\sport ({src_port}\d{1,100})""",
   ]
 }
 ```

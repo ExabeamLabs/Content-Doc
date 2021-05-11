@@ -9,9 +9,9 @@ Name = connectra-vpn-end
   TimeFormat = "ddMMMyyyy HH:mm:ss"
   Conditions = [ """|product=Connectra|""", """|event_type=Logout|""" ]
   Fields = [
-    """\|(U|u)ser=({user_firstname}[^,@\|]+),\s*({user_lastname}[^@\|]+)@({domain}[^\s\|]+)\s*\(({user}[^\)\|]+)\)""",
+    """\|(U|u)ser=({user_firstname}[^,@\|]+),\s{0,100}({user_lastname}[^@\|]+)@({domain}[^\s\|]+)\s{0,100}\(({user}[^\)\|]+)\)""",
     """\|user_dn=({user_ou}[^\|]+)\|""",
-    """\|time=({time}\d+\w+\d\d\d\d \d+:\d+:\d+)""",
+    """\|time=({time}\d{1,100}\w+\d\d\d\d \d{1,100}:\d{1,100}:\d{1,100})""",
     """\|src=(?:({src_ip}[a-fA-F\d.:]+)|({src_host}[\w.\-]+))\|""",
     """\|reason=({failure_reason}[^\|]+)\|"""
   ]
