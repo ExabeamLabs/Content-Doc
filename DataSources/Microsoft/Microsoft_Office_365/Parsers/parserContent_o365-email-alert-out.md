@@ -15,13 +15,13 @@ O365-email-alert = {
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """"_time":"({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+[\+\-]\d+)""",
-    """"name":"({subject}[^"]+?)\s*"""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """"_time":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}[\+\-]\d{1,100})""",
+    """"name":"({subject}[^"]+?)\s{0,100}"""",
     """"activity_type":"({activity}Receive|Send)""",
     """"user":"({user_email}[^"\s@]+@[^"\s@]+)""",
-    """"user_name":"({user_fullname}[^"\s]+\s+[^"]+)""",
-    """"message":"({additional_info}.+?)\s*",""",
+    """"user_name":"({user_fullname}[^"\s]+\s{1,100}[^"]+)""",
+    """"message":"({additional_info}.+?)\s{0,100}",""",
     """"(internal|external)_recipients":"({recipients}({recipient}[^"\s@;,]+@[^"\s@;,]+)[^"]*)"""",
     """ from ({sender}[^"\s@]+@[^"\s@]+)""",
   ]

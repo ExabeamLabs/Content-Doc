@@ -9,13 +9,13 @@ Name = github-audit-hook-activity
   TimeFormat = "epoch"
   Conditions = [ "github_audit", """action":"hook""" ]
   Fields = [
-    """"start":({time}\d+),""",
+    """"start":({time}\d{1,100}),""",
     """exabeam_host=({host}[\w.\-]+)""",
-    """({host}\S+)\s+github_audit:""",
-    """"+actor"+:"+({user}[^"]+)""",
-    """"+action"+:"+({activity}[^"]+)""",
-    """"+repo"+:"+({resource}[^"]+)""",
-    """({object}"+hook_id"+:[^,]+)""",
-    """"+actor_ip"+:"+({src_ip}[^"]+)""",
-    """"+config"+:\{({additional_info}.+?)\}
+    """({host}\S+)\s{1,100}github_audit:""",
+    """"{1,20}actor"{1,20}:"{1,20}({user}[^"]+)""",
+    """"{1,20}action"{1,20}:"{1,20}({activity}[^"]+)""",
+    """"{1,20}repo"{1,20}:"{1,20}({resource}[^"]+)""",
+    """({object}"{1,20}hook_id"{1,20}:[^,]+)""",
+    """"{1,20}actor_ip"{1,20}:"{1,20}({src_ip}[^"]+)""",
+    """"{1,20}config"{1,20}:\{({additional_info}.+?)\}
 ```

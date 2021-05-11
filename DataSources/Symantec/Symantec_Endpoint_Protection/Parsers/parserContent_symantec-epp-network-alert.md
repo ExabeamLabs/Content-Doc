@@ -10,14 +10,14 @@ Name = symantec-epp-network-alert
   Conditions = [ """CIDS Signature string""", """Somebody is scanning your computer""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """\w+\s+\d{1,2}\s\d{1,2}:\d{1,2}:\d{1,2}\s({host}[\w\.-]+)\s""",
-    """Local:\s*({dest_ip}[a-fA-F:\.\d]+),Local:\s*(?:0+|({dest_host}[^,]+)),([^,]*,){3}Inbound,({protocol}\w+),([^,]*,){8}Local Port ({dest_port}\d+),""",
-    """Remote:\s*({src_ip}[a-fA-F:\.\d]+),Remote:\s*(?:0+|({src_host}[^,]+)),Inbound,""",
-    """Local:\s*({src_ip}[a-fA-F:\.\d]+),Local:\s*(?:0+|({src_host}[^,]+)),([^,]*,){3}Outbound,({protocol}\w+),""",
-    """Remote:\s*({dest_ip}[a-fA-F:\.\d]+),Remote:\s*(?:0+|({dest_host}[^,]+)),Outbound,([^,]*,){10}Remote Port ({dest_port}\d+),""",
-    """Begin:\s*({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-    """User:\s*({user}[^,]+),""",
-    """Domain:\s*({domain}[^,]+),""",
+    """\w+\s{1,100}\d{1,2}\s\d{1,2}:\d{1,2}:\d{1,2}\s({host}[\w\.-]+)\s""",
+    """Local:\s{0,100}({dest_ip}[a-fA-F:\.\d]+),Local:\s{0,100}(?:0+|({dest_host}[^,]+)),([^,]*,){3}Inbound,({protocol}\w+),([^,]*,){8}Local Port ({dest_port}\d{1,100}),""",
+    """Remote:\s{0,100}({src_ip}[a-fA-F:\.\d]+),Remote:\s{0,100}(?:0+|({src_host}[^,]+)),Inbound,""",
+    """Local:\s{0,100}({src_ip}[a-fA-F:\.\d]+),Local:\s{0,100}(?:0+|({src_host}[^,]+)),([^,]*,){3}Outbound,({protocol}\w+),""",
+    """Remote:\s{0,100}({dest_ip}[a-fA-F:\.\d]+),Remote:\s{0,100}(?:0+|({dest_host}[^,]+)),Outbound,([^,]*,){10}Remote Port ({dest_port}\d{1,100}),""",
+    """Begin:\s{0,100}({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
+    """User:\s{0,100}({user}[^,]+),""",
+    """Domain:\s{0,100}({domain}[^,]+),""",
     """({alert_name}Somebody is scanning your computer)""",
     """[^"]+"({additional_info}[^"\.]+)"""
   ]

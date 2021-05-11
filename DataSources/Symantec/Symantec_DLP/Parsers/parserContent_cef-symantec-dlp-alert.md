@@ -10,14 +10,14 @@ Name = cef-symantec-dlp-alert
     Conditions = [ """CEF""","""|Symantec|DLP|""" ]
     Fields = [
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """({host}[\w\-.]+)\s+CEF:""",
-      """\srt=({time}\d+)""",
+      """({host}[\w\-.]+)\s{1,100}CEF:""",
+      """\srt=({time}\d{1,100})""",
       """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sdvchost=({host}[\w.\-]+)""",
       """\ssuser=(({domain}[^\\=]+)\\+)?({user}.+?)\s\w+=""",
       """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\shost=({src_host}.+?)\s\w+=""",
-      """\W(externalId|INCIDENT_ID)=({alert_id}\d+)""",
+      """\W(externalId|INCIDENT_ID)=({alert_id}\d{1,100})""",
       """\|Symantec\|DLP\|([^|]*\|){3}({alert_severity}[^|]+)\|""",
       """\|Symantec\|DLP\|([^|]*\|){2}({alert_name}[^|]+)\|""",
       """\|Symantec\|DLP\|([^|]*\|){2}({alert_type}[^|]+)\|""",
@@ -29,10 +29,10 @@ Name = cef-symantec-dlp-alert
       """\sfilePath=(?:N\/A|({directory}.+?))\s\w+=""",
       """\smsg=(?:N\/A|({additional_info}.+?))\s\w+=""",
       """\W(act|BLOCKED)=(?:None|({outcome}.+?))\s\w+=""",
-      """\WSENDER=({user_email}[^\s@]+@[^\s@]+)\s+(\w+=|$)""",
-      """\WSENDER=(N\/A|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|[^\s@]*?(({domain}[^\\\/\s@]+)[\\\/]+)?({user}[^\\\/\s@]+))\s+(\w+=|$)""",
-      """\WENDPOINT_MACHINE=({src_host}[\w\-.]+)\s+(\w+=|$)""",
-      """\WPROTOCOL=(N\/A|({protocol}.+?))\s+(\w+=|$)""",
+      """\WSENDER=({user_email}[^\s@]+@[^\s@]+)\s{1,100}(\w+=|$)""",
+      """\WSENDER=(N\/A|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|[^\s@]*?(({domain}[^\\\/\s@]+)[\\\/]+)?({user}[^\\\/\s@]+))\s{1,100}(\w+=|$)""",
+      """\WENDPOINT_MACHINE=({src_host}[\w\-.]+)\s{1,100}(\w+=|$)""",
+      """\WPROTOCOL=(N\/A|({protocol}.+?))\s{1,100}(\w+=|$)""",
     ]
     DupFields = ["user_email->sender"]
     SOAR {

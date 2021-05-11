@@ -9,11 +9,11 @@ Name = cisco-ftd-113004
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
   Conditions = [ """-113004""", """%FTD-""" , """AAA user authentication Successful"""]
   Fields = [
-    """({time}\d+-\d+-\d+T\d+:\d+:\d+Z)\s({host}[^\s]+)""",
-    """%FTD-({priority}\d+)-({event_code}\d+)""",
-    """server\s*=\s*({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """-113004:\s*({event_name}AAA user authentication Successful)"""
-    """user\s*=\s*(({user_email}[^@]+@[^\s]+)|({user}[^\s]+))"""
+    """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}Z)\s({host}[^\s]+)""",
+    """%FTD-({priority}\d{1,100})-({event_code}\d{1,100})""",
+    """server\s{0,100}=\s{0,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """-113004:\s{0,100}({event_name}AAA user authentication Successful)"""
+    """user\s{0,100}=\s{0,100}(({user_email}[^@]+@[^\s]+)|({user}[^\s]+))"""
   ]
 }
 ```

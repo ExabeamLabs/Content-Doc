@@ -9,26 +9,26 @@ Name = mcafee-ips-network-alert
   TimeFormat = "yyyy-MM-dd HH:mm:ss z"
   Conditions = [ """SyslogAlertForwarder:""", """Attack Name:""", """Sensor Name:""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """\WAttack ID:\s*({attack_id}[^;\s]+);""",
-    """\WAttack Name:\s*({alert_name}[^;]+);""",
-    """\WResult Status:\s*(?:n\/a|({outcome}[^;]+));""",
-    """\WAdmin Domain:\s*({domain}[^;]+);""",
-    """\WSensor Name:\s*({sensor}[^;]+);""",
-    """\WAttack Time:\s*({time}\d+\-\d+\-\d+ \d+:\d+:\d+ \w+)""",
-    """\WInterface:\s*({interface}[^;]+);""",
-    """\WDirection:\s*({direction}[^;]+);""",
-    """Direction:\s*Outbound;.*?SIP:\s*({src_ip}[A-Fa-f:\d.]+);\s*SPort:\s*(?:N/A|({src_port}\d+));\s*DIP:\s*({dest_ip}[A-Fa-f:\d.]+);\s*DPort:\s*(?:N/A|({dest_port}\d+));""",
-    """Direction:\s*Inbound;.*?SIP:\s*({dest_ip}[A-Fa-f:\d.]+);\s*SPort:\s*(?:N/A|({dest_port}\d+));\s*DIP:\s*({src_ip}[A-Fa-f:\d.]+);\s*DPort:\s*(?:N/A|({src_port}\d+));""",
-    """\WApp Proto:\s*(?:N/A|({app_protocol}[^;]+));""",
-    """\WNet Proto:\s*({protocol}[^;]+);""",
-    """\WAlert ID:\s*({alert_id}\d+)""",
-    """\WAlert Type:\s*({alert_type}[^;]+);""",
-    """\WAttack Severity:\s*({alert_severity}[^;]+);""",
-    """\WAttack Conf:\s*({attack_conf}[^;]+);""",
-    """\WCat:\s*({category}[^;]+);""",
-    """\WSub-Cat:\s*({sub_category}[^;]+);""",
-    """\WDetection Mech:\s*({detection_mech}[^;]+);"""
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """\WAttack ID:\s{0,100}({attack_id}[^;\s]+);""",
+    """\WAttack Name:\s{0,100}({alert_name}[^;]+);""",
+    """\WResult Status:\s{0,100}(?:n\/a|({outcome}[^;]+));""",
+    """\WAdmin Domain:\s{0,100}({domain}[^;]+);""",
+    """\WSensor Name:\s{0,100}({sensor}[^;]+);""",
+    """\WAttack Time:\s{0,100}({time}\d{1,100}\-\d{1,100}\-\d{1,100} \d{1,100}:\d{1,100}:\d{1,100} \w+)""",
+    """\WInterface:\s{0,100}({interface}[^;]+);""",
+    """\WDirection:\s{0,100}({direction}[^;]+);""",
+    """Direction:\s{0,100}Outbound;.*?SIP:\s{0,100}({src_ip}[A-Fa-f:\d.]+);\s{0,100}SPort:\s{0,100}(?:N/A|({src_port}\d{1,100}));\s{0,100}DIP:\s{0,100}({dest_ip}[A-Fa-f:\d.]+);\s{0,100}DPort:\s{0,100}(?:N/A|({dest_port}\d{1,100}));""",
+    """Direction:\s{0,100}Inbound;.*?SIP:\s{0,100}({dest_ip}[A-Fa-f:\d.]+);\s{0,100}SPort:\s{0,100}(?:N/A|({dest_port}\d{1,100}));\s{0,100}DIP:\s{0,100}({src_ip}[A-Fa-f:\d.]+);\s{0,100}DPort:\s{0,100}(?:N/A|({src_port}\d{1,100}));""",
+    """\WApp Proto:\s{0,100}(?:N/A|({app_protocol}[^;]+));""",
+    """\WNet Proto:\s{0,100}({protocol}[^;]+);""",
+    """\WAlert ID:\s{0,100}({alert_id}\d{1,100})""",
+    """\WAlert Type:\s{0,100}({alert_type}[^;]+);""",
+    """\WAttack Severity:\s{0,100}({alert_severity}[^;]+);""",
+    """\WAttack Conf:\s{0,100}({attack_conf}[^;]+);""",
+    """\WCat:\s{0,100}({category}[^;]+);""",
+    """\WSub-Cat:\s{0,100}({sub_category}[^;]+);""",
+    """\WDetection Mech:\s{0,100}({detection_mech}[^;]+);"""
   ]
 }
 ```

@@ -10,9 +10,9 @@ Name = fireeye-mps-json-generic-alert
     Conditions = [""""msg": """",""""product": "Web MPS"""",""""alert": {"""]
     Fields = [
             """"appliance": "({host}[^"]+)"""",
-            """"src":\s\{\s*(?:"\w+": "[^"]+",\s*)*"ip": "({src_ip}[^"]+)"""",
-            """"src":\s\{\s*(?:"\w+": "[^"]+",\s*)*"host": "({src_host}[^"]+)"""",
-    """"explanation":\s\{\s*(?:"\w+": "[^"]+",\s*)*"({alert_type}[^"]+)": \{\s*[^\{]+\{\s*(?:"\w+": "[^"]+",\s*)*"name": "({alert_name}[^"]+)"""",
+            """"src":\s\{\s{0,100}(?:"\w+": "[^"]+",\s{0,100})*"ip": "({src_ip}[^"]+)"""",
+            """"src":\s\{\s{0,100}(?:"\w+": "[^"]+",\s{0,100})*"host": "({src_host}[^"]+)"""",
+    """"explanation":\s\{\s{0,100}(?:"\w+": "[^"]+",\s{0,100})*"({alert_type}[^"]+)": \{\s{0,100}[^\{]+\{\s{0,100}(?:"\w+": "[^"]+",\s{0,100})*"name": "({alert_name}[^"]+)"""",
             """"severity": "({alert_severity}[^"]+)"""", 
         """"occurred": "({time}\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})""",
     """"id": "({alert_id}[^"]+)","""

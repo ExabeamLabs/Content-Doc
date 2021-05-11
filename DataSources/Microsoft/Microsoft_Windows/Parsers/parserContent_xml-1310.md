@@ -16,8 +16,8 @@ Name = xml-1310
    """<EventRecordID>({record_id}[^<]+)""",
    """<Computer>({host}[^<]+)""",
    """status=([^:]+:)({result_code}[^:]+):"""
-   """Failed NTLM Authentication for user:\s+'({domain}[^\\]+)\\({user}[^']+)""",
-   """<Message>({event_name}.+?)\s*<"""
+   """Failed NTLM Authentication for user:\s{1,100}'({domain}[^\\]+)\\({user}[^']+)""",
+   """<Message>({event_name}.+?)\s{0,100}<"""
    """status=([^:]+:){2}({failure_reason}.+?)\s<"""
    ]
    DupFields = ["host->dest_host"]

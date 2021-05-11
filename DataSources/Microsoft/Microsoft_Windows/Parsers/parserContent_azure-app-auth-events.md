@@ -9,27 +9,27 @@ Name = azure-app-auth-events
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """"OperationName":"Sign-in activity"""", """"ConditionalAccessStatus":"""", """"enforcedGrantControls":["RequireDuoMfa"]""" ]
   Fields = [
-    """exabeam_host=([^=@]+@\s*)?({host}\S+)""",
-    """"TimeGenerated":"({time}\d+-\d+-\d+T\d+:\d+:\d+)"""
+    """exabeam_host=([^=@]+@\s{0,100})?({host}\S+)""",
+    """"TimeGenerated":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100})"""
     """"IPAddress":"({src_ip}[A-Fa-f:\d.]+)"""",
     """"UserPrincipalName":"({user_email}[^"\s@]+@({email_domain}[^"\s@]+))"""",
     """"browser":"({browser}[^"]+)"""",
     """"ConditionalAccessStatus":"({outcome}[^"]+)"""",
     """\sext_DeviceDetail=\{[^\}]+?"displayName":"({src_host}[^"]+)"""
     """\sext_DeviceDetail=\{[^\}]+?"operatingSystem":"({os}[^"]+)"""
-    """UserDisplayName"+:"+({user_fullname}[^"]+)""",
-    """UserId"+:"+({user_id}[^"]+)""",
-    """"+IPAddress"+:"+({src_ip}[^"]+)""",
-    """"browser\\*"+:\\*"+({browser}[^"]+)\\"+""",
-    """"UserAgent\\*"+:\\*"+({user_agent}[^"]+)""",
-    """"operatingSystem\\*"+:\\*"+({os}[^"]+)\\"+""",
+    """UserDisplayName"{1,20}:"{1,20}({user_fullname}[^"]+)""",
+    """UserId"{1,20}:"{1,20}({user_id}[^"]+)""",
+    """"{1,20}IPAddress"{1,20}:"{1,20}({src_ip}[^"]+)""",
+    """"browser\\*"{1,20}:\\*"{1,20}({browser}[^"]+)\\"{1,20}""",
+    """"UserAgent\\*"{1,20}:\\*"{1,20}({user_agent}[^"]+)""",
+    """"operatingSystem\\*"{1,20}:\\*"{1,20}({os}[^"]+)\\"{1,20}""",
     """"ResourceDisplayName":"({app}[^"]+)""",
-    """"SourceSystem"+:"+({dest_host}[^"]+)""",
-    """"ClientAppUsed"+:"+({category}[^"]+)""",
-    """"AppDisplayName"+:"+({resource}[^"]+)""",
-    """"countryOrRegion\\*"+:\\*"+({country}[^"]+)\\"+""",
-    """"city\\*"+:\\*"+({city}[^"]+)\\"+""",
-    """"\$table"+:"+({database_name}[^"]+)""",
+    """"SourceSystem"{1,20}:"{1,20}({dest_host}[^"]+)""",
+    """"ClientAppUsed"{1,20}:"{1,20}({category}[^"]+)""",
+    """"AppDisplayName"{1,20}:"{1,20}({resource}[^"]+)""",
+    """"countryOrRegion\\*"{1,20}:\\*"{1,20}({country}[^"]+)\\"{1,20}""",
+    """"city\\*"{1,20}:\\*"{1,20}({city}[^"]+)\\"{1,20}""",
+    """"\$table"{1,20}:"{1,20}({database_name}[^"]+)""",
   ]
 }
 ```

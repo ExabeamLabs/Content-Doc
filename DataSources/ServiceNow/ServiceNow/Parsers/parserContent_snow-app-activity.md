@@ -9,7 +9,7 @@ Name = snow-app-activity
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [  """,sys_created_on="""", """,dv_sys_class_name="""", """,dv_number="""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """,sys_created_on="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """,dv_sys_class_name="({activity}[^"]+)""",
     """,dv_number="({object}[^"]+)""",

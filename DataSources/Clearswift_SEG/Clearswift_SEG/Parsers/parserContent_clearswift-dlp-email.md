@@ -10,7 +10,7 @@ Name = clearswift-dlp-email
   Conditions = [ """msgs IACPT|""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """([^\|]*\|){3}({sender}[^\|]+)""",
     """([^\|]*\|){3}[^@]+@({external_domain_sender}[^@\|]+)""",
     """([^\|]*\|){4}({recipient}[^\|,]+)""",

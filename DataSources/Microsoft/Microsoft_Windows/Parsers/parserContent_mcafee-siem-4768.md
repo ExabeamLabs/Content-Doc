@@ -11,7 +11,7 @@ Name = mcafee-siem-4768
     Fields = [
       """({event_name}A Kerberos authentication ticket \(TGT\) was requested)""",
       """"dst_ip":"({dest_ip}[^"]+)""",
-      """"id":\d*({event_code}4768)""",
+      """"id":\d{0,100}({event_code}4768)""",
       """"firsttime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
       """"DomainID":"({domain}[^"]+)""",
       """"HostID":"({host}[^"]+)""",

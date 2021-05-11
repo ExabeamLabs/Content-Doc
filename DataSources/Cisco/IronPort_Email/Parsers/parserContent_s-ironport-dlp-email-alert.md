@@ -9,19 +9,19 @@ Name = s-ironport-dlp-email-alert
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
     Conditions = [ """Message done DCID""", """'from'""", """'to'""" ]
     Fields = [
-      """\srt=({time}\d+)""",
+      """\srt=({time}\d{1,100})""",
       """\W({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\-\d\d:\d\d)\s({host}[^\s]+)\s""",
-      """\WMessage done DCID \d+ MID ({alert_id}\d+)\s""",
-      """\('from',\s*'({user}.*?)'\)""",
-      """\('from',\s*'.*?<({user}.*?)>'\)""",
-      """\('to',\s*'({recipients}.*?)'\)""",
-      """\('to',\s*'.*?<({recipients}.*?)>'\)""",
-      """\('to',\s*'[\<]?({recipient}[^>,\';]+)""",
-      """\('to',\s*'[\"][^\<]+[\<]?({recipient}[^>,\';]+)""",
-      """\('to',\s*'({external_address}[^@<>]+@({external_domain}[^>,<']+)).*?'\)""",
-      """\('to',\s*'.*?<({external_address}[^@><]+@({external_domain}[^>,<']+)).*?'\)""",
-      """\('(subject|Subject)',\s*'({subject}.*?)'\)""",
-      """\('(x-fr({direction}o)m-mailhub|X-Fr({=direction}o)m-MailHub)',\s*'true'\)"""
+      """\WMessage done DCID \d{1,100} MID ({alert_id}\d{1,100})\s""",
+      """\('from',\s{0,100}'({user}.*?)'\)""",
+      """\('from',\s{0,100}'.*?<({user}.*?)>'\)""",
+      """\('to',\s{0,100}'({recipients}.*?)'\)""",
+      """\('to',\s{0,100}'.*?<({recipients}.*?)>'\)""",
+      """\('to',\s{0,100}'[\<]?({recipient}[^>,\';]+)""",
+      """\('to',\s{0,100}'[\"][^\<]+[\<]?({recipient}[^>,\';]+)""",
+      """\('to',\s{0,100}'({external_address}[^@<>]+@({external_domain}[^>,<']+)).*?'\)""",
+      """\('to',\s{0,100}'.*?<({external_address}[^@><]+@({external_domain}[^>,<']+)).*?'\)""",
+      """\('(subject|Subject)',\s{0,100}'({subject}.*?)'\)""",
+      """\('(x-fr({direction}o)m-mailhub|X-Fr({=direction}o)m-MailHub)',\s{0,100}'true'\)"""
     ]
     DupFields = [ "user->sender" ]
   }

@@ -9,16 +9,16 @@ Name = gm-print-activity
  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
  Conditions = ["""LaserJet""", """job_lab_ntusername"""]
  Fields = [ 
-   """@timestamp"+:"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
-   """host"+:"+({host}[^"]+)""",
-   """job_lab_ntusername"+:"+(?:Unspecified|({user}[^"]+))""",
-   """job_lab_documentname"+:"+(?:Unspecified|({object}[^"]+))""",
-   """job_qty_size"+:({bytes}\d+)""",
-   """job_qty_printedpages"+:({num_pages}\d+)""",
-   """printer_lab_localname"+:"+({printer_name}[^"]+)""", 
-   """printer_lab_ipaddress"+:["\s]*({src_ip}[a-fA-F\d.:]+)""",
-   """port"*:({src_port}[\d]+)""",
-   """job_lab_ntusermachine"+:"+(?:Unspecified|({src_host}[^"]+))""",
+   """@timestamp"{1,20}:"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
+   """host"{1,20}:"{1,20}({host}[^"]+)""",
+   """job_lab_ntusername"{1,20}:"{1,20}(?:Unspecified|({user}[^"]+))""",
+   """job_lab_documentname"{1,20}:"{1,20}(?:Unspecified|({object}[^"]+))""",
+   """job_qty_size"{1,20}:({bytes}\d{1,100})""",
+   """job_qty_printedpages"{1,20}:({num_pages}\d{1,100})""",
+   """printer_lab_localname"{1,20}:"{1,20}({printer_name}[^"]+)""", 
+   """printer_lab_ipaddress"{1,20}:["\s]*({src_ip}[a-fA-F\d.:]+)""",
+   """port"{0,20}:({src_port}[\d]+)""",
+   """job_lab_ntusermachine"{1,20}:"{1,20}(?:Unspecified|({src_host}[^"]+))""",
  ]
 }
 ```

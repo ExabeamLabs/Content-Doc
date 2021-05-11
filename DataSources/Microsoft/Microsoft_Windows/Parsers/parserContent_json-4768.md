@@ -11,8 +11,8 @@ Name = json-4768
     Fields = [
       """({event_name}A Kerberos authentication ticket \(TGT\) was requested)""",
       """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """"EventReceivedTime":\s*({time}\d+)""",
-      """"timestamp":\s*({time}\d+)""",
+      """"EventReceivedTime":\s{0,100}({time}\d{1,100})""",
+      """"timestamp":\s{0,100}({time}\d{1,100})""",
       """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]+\sSkyformation""",
       """"time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)"""",
       """"(Hostname|MachineName|(?:winlog\.)?computer_name)":"({host}[^"]*)""",

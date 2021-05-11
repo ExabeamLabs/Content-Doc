@@ -10,14 +10,14 @@ Name = xml-4767
   Conditions = [ """<EventID>4767</EventID>""", """<Event xmlns='"""  ]
   Fields = [
     """<Computer>({host}.+?)</Computer>""",
-    """<TimeCreated SystemTime='({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d)\d+Z'/>""",
-    """<Data Name='SubjectLogonId'>\s*({logon_id}.+?)\s*</Data>""",
-    """<Data Name='SubjectUserName'>\s*(SYSTEM|({user}[^\s]+?))\s*</Data>""",
-    """<Data Name='SubjectDomainName'>\s*({domain}[^\s]+?)\s*</Data>""",
-    """<Data Name='SubjectUserSid'>\s*({user_sid}[^\s]+?)\s*</Data>""",
-    """<Data Name='TargetDomainName'>\s*({target_domain}[^\s]+?)\s*</Data>""",
-    """<Data Name='TargetUserName'>\s*({target_user}[^\s]+?)\s*</Data>""",
-    """<Data Name='TargetSid'>\s*({target_user_sid}.+?)</Data>\s*""",
+    """<TimeCreated SystemTime='({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d)\d{1,100}Z'/>""",
+    """<Data Name='SubjectLogonId'>\s{0,100}({logon_id}.+?)\s{0,100}</Data>""",
+    """<Data Name='SubjectUserName'>\s{0,100}(SYSTEM|({user}[^\s]+?))\s{0,100}</Data>""",
+    """<Data Name='SubjectDomainName'>\s{0,100}({domain}[^\s]+?)\s{0,100}</Data>""",
+    """<Data Name='SubjectUserSid'>\s{0,100}({user_sid}[^\s]+?)\s{0,100}</Data>""",
+    """<Data Name='TargetDomainName'>\s{0,100}({target_domain}[^\s]+?)\s{0,100}</Data>""",
+    """<Data Name='TargetUserName'>\s{0,100}({target_user}[^\s]+?)\s{0,100}</Data>""",
+    """<Data Name='TargetSid'>\s{0,100}({target_user_sid}.+?)</Data>\s{0,100}""",
     """({event_code}4767)""",
     ]
   DupFields = [ "host->dest_host" ]

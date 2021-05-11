@@ -13,10 +13,10 @@ Name = emc-syslog-4723
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """__li_source_path="({host}[^"]+)"""",
     """({event_code}4723)""",
-    """Subject.+?Security ID:\s+({user_sid}.+?)\s+Account Name""",
-    """Subject.+?Account Name:\s+({user}.+?)\s+Account Domain""",
-    """Account Domain:\s+({domain}.+?)\s+Logon ID:\s+({logon_id}[^\s]+)""",
-    """Target Account.+?Account Name:\s+({target_user}.+?)\s+Account Domain:\s+({target_domain}.+?)\s+Additional""",
+    """Subject.+?Security ID:\s{1,100}({user_sid}.+?)\s{1,100}Account Name""",
+    """Subject.+?Account Name:\s{1,100}({user}.+?)\s{1,100}Account Domain""",
+    """Account Domain:\s{1,100}({domain}.+?)\s{1,100}Logon ID:\s{1,100}({logon_id}[^\s]+)""",
+    """Target Account.+?Account Name:\s{1,100}({target_user}.+?)\s{1,100}Account Domain:\s{1,100}({target_domain}.+?)\s{1,100}Additional""",
     """keywords="({outcome}[^"]+)""""]
   DupFields = [ "host->dest_ip" ]
 }

@@ -9,7 +9,7 @@ Name = json-exchange-scanmail-alert
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"
   Conditions = [ """has been detected""", """has been taken on""", """Message details:""" ]
   Fields = [
-    """(|({alert_name}[^"]+?))\s+has been detected,and\s+(|({outcome}.+?))\s+has been taken on\s+({time}\d+\/\d+\/\d+\s+\d+:\d+:\d+\s+(PM|AM|pm|am)).\\nMessage details:\\nServer:\s*(|({host}[\w.\-]+))\\nFound in:\s*(|({alert_type}.+?))\\nSender:\s*(|({malware_url}.+?));\\nRecipient:\s*(|({user_email}.+?));\\nSubject:\s*(|({additional_info}.+?))\s*\\nAttachment name:\s*(|({file_name}[^"]+?))("|\s*$)""",
+    """(|({alert_name}[^"]+?))\s{1,100}has been detected,and\s{1,100}(|({outcome}.+?))\s{1,100}has been taken on\s{1,100}({time}\d{1,100}\/\d{1,100}\/\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(PM|AM|pm|am)).\\nMessage details:\\nServer:\s{0,100}(|({host}[\w.\-]+))\\nFound in:\s{0,100}(|({alert_type}.+?))\\nSender:\s{0,100}(|({malware_url}.+?));\\nRecipient:\s{0,100}(|({user_email}.+?));\\nSubject:\s{0,100}(|({additional_info}.+?))\s{0,100}\\nAttachment name:\s{0,100}(|({file_name}[^"]+?))("|\s{0,100}$)""",
    """"hostname":"({src_host}[^"]+)""", 
    """"level":"({alert_severity}[^"]+)""", 
   ]

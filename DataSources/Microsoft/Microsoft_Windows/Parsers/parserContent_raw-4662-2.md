@@ -11,7 +11,7 @@ Name = raw-4662-2
   Fields = [
     """({event_name}An operation was performed on an object)""",
     """"({event_code}4662)"""",
-    """"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)","({host}[^"]+)"""",
+    """"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)","({host}[^"]+)"""",
     """"4662"",""({user_sid}[^"]+)"""",
     """"4662",("[^"]*",){1}"({user}[^"]+)"""",
     """"4662",("[^"]*",){2}"({domain}[^"]+)"""",

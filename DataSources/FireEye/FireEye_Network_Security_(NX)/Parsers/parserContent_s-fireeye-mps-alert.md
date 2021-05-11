@@ -11,7 +11,7 @@ Name = s-fireeye-mps-alert
   Fields = [ 
     """,occurred=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """dvchost=({host}[^,]+)""",
-    """alertid=({alert_id}\d+)""",
+    """alertid=({alert_id}\d{1,100})""",
     """alertType=({alert_type}[^,]+)""",
     """alertType=({alert_name}[^,]+)""",
     """sev=({alert_severity}[^,]+)""",
@@ -21,7 +21,7 @@ Name = s-fireeye-mps-alert
     """cnchost=(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^,]+))""",
     """dst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """dhost=({dest_host}[^,]+)""",
-    """~+User-Agent:\s+({user_agent}.+?)::""",
+    """~+User-Agent:\s{1,100}({user_agent}.+?)::""",
     """mwurl=({malware_url}[^,]+)"""
   ]
   SOAR {

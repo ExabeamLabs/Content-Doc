@@ -12,7 +12,7 @@ Name = cef-moveit-activity
   Fields = [
     """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sdvchost=({host}[^\s]+)\s\w+=""",
-    """\srt=({time}\d+)""",
+    """\srt=({time}\d{1,100})""",
     """\ssuser=({account_id}.+?)\s(\w+=|$)""",
     """\ssrc=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sshost=({dest_host}[^\s]+)\s\w+=""",
@@ -20,9 +20,9 @@ Name = cef-moveit-activity
     """fname=({file_name}.+?)\s\w+=""",
     """fname=[^.]+({file_ext}.+?)\s\w+=""",
     """filePath=({file_parent}.+?)\s\w+=""",
-    """fileId=({file_id}\d+)\s\w+=""",
+    """fileId=({file_id}\d{1,100})\s\w+=""",
     """\s({file_type}file|File)""",
-    """\|IPswitch\|MoveIt\|([^|]*\|){2}({activity}.+?)( at \d+\/\d+\/\d+ \d+:\d+:\d+|\|)""",
+    """\|IPswitch\|MoveIt\|([^|]*\|){2}({activity}.+?)( at \d{1,100}\/\d{1,100}\/\d{1,100} \d{1,100}:\d{1,100}:\d{1,100}|\|)""",
     """({app}MoveIt)"""
     """\smsg=({additional_info}.+?)\sart=""",
   ]

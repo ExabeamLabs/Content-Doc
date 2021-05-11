@@ -12,10 +12,10 @@ Name = lastpass-app-activity
                 """\s({time}\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})"""
                 """src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
                 """destinationServiceName=({app}.+?)\s\w+=""",
-                """"+Action"+:"+({action}[^"]+)"+""",
+                """"{1,20}Action"{1,20}:"{1,20}({action}[^"]+)"{1,20}""",
                 """msg=({additional_info}.+?)\s\w+="""
                 """fileType=({file_type}[^\s]+)""",
-                """"Username"+:"+API:\s*({user}[^"]+)"""
+                """"Username"{1,20}:"{1,20}API:\s{0,100}({user}[^"]+)"""
                 """flexString1=({activity}[^\s]+)"""
       ]
 }

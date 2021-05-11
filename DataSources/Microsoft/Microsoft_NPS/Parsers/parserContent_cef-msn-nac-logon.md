@@ -9,17 +9,17 @@ Name = cef-msn-nac-logon
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """|Microsoft|Microsoft NPS""", """ act=Access-Request""" ]
   Fields = [
-    """\srt=({time}\d+)""",
+    """\srt=({time}\d{1,100})""",
     """\sdvc=({host}[a-fA-F\d.:]+)""",
     """\ssrc=({src_ip}[a-fA-F\d.:]+)""",
     """\sdst=({auth_server}[a-fA-F\d.:]+)""",
-    """\sdvchost=({host}.+?)(\s+\w+=|\s*$)""",
-    """\sshost=({src_host}.+?)(\s+\w+=|\s*$)""",
-    """\sdhost=({auth_server}.+?)(\s+\w+=|\s*$)""",
+    """\sdvchost=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sshost=({src_host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sdhost=({auth_server}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\ssourceTranslatedAddress=({dest_ip}[a-fA-F\d.:]+)""",
-    """\ssuser=({user}.+?)(\s+\w+=|\s*$)""",
-    """\sdntdom=({domain}.+?)(\s+\w+=|\s*$)""",
-    """\sapp=({protocol}.+?)(\s+\w+=|\s*$)""",
+    """\ssuser=({user}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sdntdom=({domain}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sapp=({protocol}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\ssourceGeoCountryCode=({src_country_code}\w+)"""
   ]
 }

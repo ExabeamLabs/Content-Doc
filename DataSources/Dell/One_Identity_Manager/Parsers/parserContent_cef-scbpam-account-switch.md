@@ -9,12 +9,12 @@ Name = cef-scbpam-account-switch
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """|SCB|PAM|""", """|Retrieve Password|""" ]
   Fields = [
-    """\ssuser=({user}.+?)(\s+\w+=|\s*$)""",
-    """\sdhost=({dest_host}.+?)(\s+\w+=|\s*$)""",
-    """\sduser=({account}.+?)(\s+\w+=|\s*$)""",
-    """\sdvc=({host}.+?)(\s+\w+=|\s*$)""",
-    """\sdvchost=({host}.+?)(\s+\w+=|\s*$)""",
-    """\srt=({time}\d+)""",
+    """\ssuser=({user}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sdhost=({dest_host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sduser=({account}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sdvc=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sdvchost=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\srt=({time}\d{1,100})""",
   ]
 }
 ```

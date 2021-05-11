@@ -9,7 +9,7 @@ Name = json-o365-failed-app-login
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
   Conditions = [ """CEF:""", """|skyformation|""", """failed to login""", """"userPrincipalName":"""" ]
   Fields = [
-    """exabeam_host=(.+?@\s*)?({host}[^\s]+)""",
+    """exabeam_host=(.+?@\s{0,100})?({host}[^\s]+)""",
     """"userDisplayName":"({user_fullname}[^"]+)""",
     """"userPrincipalName":"({user_email}[^@]+@[^"]+)""",
     """"userId":"({user_sid}[^"]+)""",

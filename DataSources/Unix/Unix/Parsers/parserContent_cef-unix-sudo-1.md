@@ -9,14 +9,14 @@ Name = cef-unix-sudo-1
     TimeFormat = "epoch"
     Conditions = [ """CEF:""", """|Unix|Unix|""", """; COMMAND""", """ deviceProcessName=sudo """ ]
     Fields = [
-      """\srt=({time}\d+)""",
-      """\sdvc=({host}\S+)(\s+\w+=|\s*$)""",
-      """\sdvchost=({host}\S+)(\s+\w+=|\s*$)""",
-      """\sdhost=({dest_host}\S+)(\s+\w+=|\s*$)""",
-      """\sdst=({dest_ip}\S+)(\s+\w+=|\s*$)""",
-      """\ssuser=({user}.+?)(\s+\w+=|\s*$)""",
-      """\ssuid=({user_uid}.+?)(\s+\w+=|\s*$)""",
-      """\sduser=({account}.+?)(\s+\w+=|\s*$)""",
+      """\srt=({time}\d{1,100})""",
+      """\sdvc=({host}\S+)(\s{1,100}\w+=|\s{0,100}$)""",
+      """\sdvchost=({host}\S+)(\s{1,100}\w+=|\s{0,100}$)""",
+      """\sdhost=({dest_host}\S+)(\s{1,100}\w+=|\s{0,100}$)""",
+      """\sdst=({dest_ip}\S+)(\s{1,100}\w+=|\s{0,100}$)""",
+      """\ssuser=({user}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+      """\ssuid=({user_uid}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+      """\sduser=({account}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
       """({event_code}sudo)"""
     ]
     DupFields = [ "event_code->process_name" ]

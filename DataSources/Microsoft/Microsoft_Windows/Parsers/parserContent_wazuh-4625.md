@@ -5,18 +5,18 @@ Name = wazuh-4625
   DataType = "windows-failed-logon"
   Conditions = [ """"data.id":"4625"""", """"type":"wazuh-alerts"""", """"decoder.parent":"windows""""  ]
     Fields = ${WazuhParserTemplates.wazuh-windows-template.Fields} [
-    """Type d\\u2019ouverture de session\\u00A0:\s*({logon_type}\d+)"""
-    """Nom de la station de travail\\u00A0:\s*(-|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|({src_host_windows}[^\s]+))\s*Adresse du r\\u00E9seau source\\u00A0:"""
-    """Nom de la station de travail\\u00A0:\s*(-|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|({src_host}[^\s]+))\s*Adresse du r\\u00E9seau source\\u00A0:\s*-\s+"""
-    """Adresse du r\\u00E9seau source\\u00A0:\s*(?:-|({src_ip}[\w:.]+))\s*Port source\\u00A0:"""
-    """Processus d\\u2019ouverture de session\\u00A0:\s*({auth_process}[^\s]+)\s*Package d\\u2019authentification\\u00A0:\s*({auth_package}[^\s]+)"""
-    """\s*Compte pour lequel l\\u2019ouverture de session a \\u00E9chou\\u00E9\\u00A0:\s*ID de s\\u00E9curit\\u00E9\\u00A0:\s*(?:\/?NULL SID|({user_sid}.+?))\s*Nom du compte\\u00A0"""
-    """ouverture de session a \\u00E9chou\\u00E9\\u00A0:.+?Domaine du compte\\u00A0:\s*(?=\w)({domain}.+?)\s*Informations sur l\\u2019\\u00E9chec\\u00A0"""
-    """ouverture de session a \\u00E9chou\\u00E9\\u00A0:.+?Nom du compte\\u00A0:\s*(?=\w)({user}.+?)\s*Domaine du compte\\u00A0:"""
-    """Raison de l\\u2019\\u00E9chec\\u00A0:\s*({failure_reason}.+?)\s*\\u00C9tat\\u00A0:"""
-    """Sujet.+?Nom du compte\\u00A0:\s*(?=\w)({caller_user}.+?)\s*Domaine du compte\\u00A0:"""
-    """Sujet.+?Domaine du compte\\u00A0:\s*(?=\w)({caller_domain}[^:]+?)\\s*ID d\\u2019ouverture de session\\u00A0:"""
-    """\s*Sous-\\u00E9tat\\u00A0:\s*({result_code}.+?)\s*Informations sur le processus\\u00A0:"""
+    """Type d\\u2019ouverture de session\\u00A0:\s{0,100}({logon_type}\d{1,100})"""
+    """Nom de la station de travail\\u00A0:\s{0,100}(-|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|({src_host_windows}[^\s]+))\s{0,100}Adresse du r\\u00E9seau source\\u00A0:"""
+    """Nom de la station de travail\\u00A0:\s{0,100}(-|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|({src_host}[^\s]+))\s{0,100}Adresse du r\\u00E9seau source\\u00A0:\s{0,100}-\s{1,100}"""
+    """Adresse du r\\u00E9seau source\\u00A0:\s{0,100}(?:-|({src_ip}[\w:.]+))\s{0,100}Port source\\u00A0:"""
+    """Processus d\\u2019ouverture de session\\u00A0:\s{0,100}({auth_process}[^\s]+)\s{0,100}Package d\\u2019authentification\\u00A0:\s{0,100}({auth_package}[^\s]+)"""
+    """\s{0,100}Compte pour lequel l\\u2019ouverture de session a \\u00E9chou\\u00E9\\u00A0:\s{0,100}ID de s\\u00E9curit\\u00E9\\u00A0:\s{0,100}(?:\/?NULL SID|({user_sid}.+?))\s{0,100}Nom du compte\\u00A0"""
+    """ouverture de session a \\u00E9chou\\u00E9\\u00A0:.+?Domaine du compte\\u00A0:\s{0,100}(?=\w)({domain}.+?)\s{0,100}Informations sur l\\u2019\\u00E9chec\\u00A0"""
+    """ouverture de session a \\u00E9chou\\u00E9\\u00A0:.+?Nom du compte\\u00A0:\s{0,100}(?=\w)({user}.+?)\s{0,100}Domaine du compte\\u00A0:"""
+    """Raison de l\\u2019\\u00E9chec\\u00A0:\s{0,100}({failure_reason}.+?)\s{0,100}\\u00C9tat\\u00A0:"""
+    """Sujet.+?Nom du compte\\u00A0:\s{0,100}(?=\w)({caller_user}.+?)\s{0,100}Domaine du compte\\u00A0:"""
+    """Sujet.+?Domaine du compte\\u00A0:\s{0,100}(?=\w)({caller_domain}[^:]+?)\\s{0,100}ID d\\u2019ouverture de session\\u00A0:"""
+    """\s{0,100}Sous-\\u00E9tat\\u00A0:\s{0,100}({result_code}.+?)\s{0,100}Informations sur le processus\\u00A0:"""
     ]
 }
 wazuh-windows-template = {
@@ -25,7 +25,7 @@ wazuh-windows-template = {
     Lms = Direct
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
     Fields = [
-      """"data.id":"({event_code}\d+)""""
+      """"data.id":"({event_code}\d{1,100})""""
       """"@timestamp":"({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)"""
       """"data.dstuser":"(\(no user\)|({dest_user}[^"]+))"""
       """"data.status":"({outcome}[^"]+)"""
@@ -33,7 +33,7 @@ wazuh-windows-template = {
       """"data.data":"({data}[^"]+)"""
       """"path":"({log_path}[^"]+)"""
       """"data.system_name":"({host}[^"]+)"""
-      """"agent.id":"({agent_id}\d+)"""
+      """"agent.id":"({agent_id}\d{1,100})"""
       """"manager.name":"({wazuh_manager}[^"]+)"""
       """"data.data":"({data}[^"]+)"""
       """"rule.description":"({description}[^"]+)"""

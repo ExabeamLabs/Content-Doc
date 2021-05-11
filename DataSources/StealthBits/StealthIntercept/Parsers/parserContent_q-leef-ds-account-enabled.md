@@ -13,9 +13,9 @@ Name = q-leef-ds-account-enabled
     """devTime=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """dst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """usrName=(({domain}[^\\]+)\\)?({user}.+?)\s+\w+=""",
-    """AffectedObject=(({target_domain}[^\\]+)\\)?({target_user}.+?)\s+\w+=""",
-    """OrigServer=([^\\]+\\)?({dest_host}.+?)\s+\w+="""
+    """usrName=(({domain}[^\\]+)\\)?({user}.+?)\s{1,100}\w+=""",
+    """AffectedObject=(({target_domain}[^\\]+)\\)?({target_user}.+?)\s{1,100}\w+=""",
+    """OrigServer=([^\\]+\\)?({dest_host}.+?)\s{1,100}\w+="""
   ]
 }
 ```

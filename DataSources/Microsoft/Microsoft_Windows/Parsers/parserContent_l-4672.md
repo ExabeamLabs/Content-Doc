@@ -14,9 +14,9 @@ Name = l-4672
     """<Computer>({host}[\w\-\.]+)</Computer>""",
     """<Keywords>({outcome}[^<]+)</Keywords>""",
     """<EventID>({event_code}[^<]+)</EventID>""",
-    """\s*Account Name:\s*({user}.+?)\s*Account Domain:\s*({domain}[^\s]+)\s*Logon ID:""",
-    """\s*Logon ID:\s*({logon_id}.+?)\s*Privileges:""",
-    """\s*Privileges:\s*({privileges}.+?)</EventData>"""
+    """\s{0,100}Account Name:\s{0,100}({user}.+?)\s{0,100}Account Domain:\s{0,100}({domain}[^\s]+)\s{0,100}Logon ID:""",
+    """\s{0,100}Logon ID:\s{0,100}({logon_id}.+?)\s{0,100}Privileges:""",
+    """\s{0,100}Privileges:\s{0,100}({privileges}.+?)</EventData>"""
   ]
   DupFields = [ "host->dest_host" ]
 }

@@ -10,7 +10,7 @@ Name = cisco-authentication-successful
   Conditions = ["""ACI""","""login,session""","""Success"""]
   Fields = [
         """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-        """\d+:\d+:\d+(.\d+)?\s({host}[^\s]+)""",
+        """\d{1,100}:\d{1,100}:\d{1,100}(.\d{1,100})?\s({host}[^\s]+)""",
 	"""remoteuser-({user}[^\]]+)""",
 	"""From-({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
 	"""({outcome}Success)"""

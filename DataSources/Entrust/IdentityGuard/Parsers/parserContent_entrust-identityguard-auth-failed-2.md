@@ -11,7 +11,7 @@ Name = entrust-identityguard-auth-failed-2
   Fields = [
     """exabeam_time=({time}\d{4}-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[\w.\-]+)""",
-    """\[({time}\d{4}-\d\d-\d\d \d\d:\d\d:\d\d)(\]|,\]|,\d+\])""",
+    """\[({time}\d{4}-\d\d-\d\d \d\d:\d\d:\d\d)(\]|,\]|,\d{1,100}\])""",
     """ User (({user_email}[^\@\s]+@[^\s]+)|(({domain}[^\\\/]+)[\\\/]+)?({user}[^\s]+)) failed authentication""",
     """Authentication Type: ({auth_method}[^,]+),""",
     """Application Name: ({app}[^,]+),""",

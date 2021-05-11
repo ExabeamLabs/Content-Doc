@@ -9,21 +9,7 @@ Name = cef-security-graph-alert
  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
  Conditions = [ """CEF:""", """|sk4-security-threat-detected|security-threat-detected|""", """dproc=Graph Security Alerts"""]
  Fields = [
-   """\s({time}\d+-\d+-\d+T\d+:\d+:\d+.\d+Z)\s+[^\s]+\s+Skyformation""",
+   """\s({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}.\d{1,100}Z)\s{1,100}[^\s]+\s{1,100}Skyformation""",
    """exabeam_host=({host}[^\s]+)""",
-   """"description":"({additional_info}[^\}]+?)\s*\"+,"+[^"]+"+:""",
-   """"subProvider":"({alert_type}[^"]+)""",
-   """"sourceAddress":"({src_ip}[^"]+)""",
-   """"accountName":"({user}[^"]+)""",
-   """"severity":"({alert_severity}[^"]+)""",
-   """"id":"({alert_id}[^"]+)""",  
-   """"sourceMaterials":\["({malware_url}[^"]+)""",
-   """"protocol":"({protocol}[^"]+)""",
-   """"category":"({alert_type}[^"]+)""",
-   """dpriv=({alert_type}[^\s]+)""",
-   """"title":"({alert_name}[^"]+)""",
-   """"domainName":"({domain}[^"]+)"""",
-   """CEF:[^\|]\|([^|]*\|){4}({event_name}[^\|]+)""",
-   ] 
-}
+   """"description":"({additional_info}[^\}]+?)\s{0,100}\"{1,20}
 ```

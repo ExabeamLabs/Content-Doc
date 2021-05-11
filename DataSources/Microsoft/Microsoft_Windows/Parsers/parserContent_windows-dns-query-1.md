@@ -10,9 +10,9 @@ Name = windows-dns-query-1
   TimeFormat = "M/d/yyyy H:mm:ss a"
   Conditions = [ """ PACKET """, """   Q [""", """M """ ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-    """({time}\d+\/\d+\/\d\d\d\d \d{1,2}:\d{1,2}:\d{1,2}((\+|\-)\d\d:\d\d)? (am|AM|pm|PM))\s+\S+\s+PACKET\s+\S+\s+({protocol}\S+)\s+({activity}\S+)\s+({src_ip}[a-fA-F\d.:]+)\s+\S+\s+Q\s+\[\S+\s+(\s|({query_flags}.+?))\s+\S+\]\s+({query_type}\S+)\s+({query}.+?)\s""",
-    """<Identifier>\S+\s+({host}\S+?)<\/Identifier>"""
+    """exabeam_host=([^=]+@\s{0,100})?({host}[\w\-.]+)""",
+    """({time}\d{1,100}\/\d{1,100}\/\d\d\d\d \d{1,2}:\d{1,2}:\d{1,2}((\+|\-)\d\d:\d\d)? (am|AM|pm|PM))\s{1,100}\S+\s{1,100}PACKET\s{1,100}\S+\s{1,100}({protocol}\S+)\s{1,100}({activity}\S+)\s{1,100}({src_ip}[a-fA-F\d.:]+)\s{1,100}\S+\s{1,100}Q\s{1,100}\[\S+\s{1,100}(\s|({query_flags}.+?))\s{1,100}\S+\]\s{1,100}({query_type}\S+)\s{1,100}({query}.+?)\s""",
+    """<Identifier>\S+\s{1,100}({host}\S+?)<\/Identifier>"""
   ]
 }
 ```

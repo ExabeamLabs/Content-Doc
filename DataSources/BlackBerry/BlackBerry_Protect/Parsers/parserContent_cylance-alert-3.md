@@ -9,7 +9,7 @@ Name = cylance-alert-3
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """"src-application-name":"CylanceProtect"""", """ Skyformation """ ]
   Fields = [
-    """\d+\s+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3}Z)\s+[\w\-.]+\s+Skyformation""",
+    """\d{1,100}\s{1,100}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3}Z)\s{1,100}[\w\-.]+\s{1,100}Skyformation""",
     """"event-name":"({alert_name}[^"]+)""",
     """"event-name":"({alert_type}[^"]+)""",
     """"classification":"({alert_type}[^"]+)""",
@@ -20,7 +20,7 @@ Name = cylance-alert-3
     """"source-device":\{[^\{\}]*?"mac-address":"({dest_mac}[^\s"]+)""",
 
     """"hash-value":"({sha256_sum}[^"]+)""",
-    """"file_size":({bytes}\d+)""",
+    """"file_size":({bytes}\d{1,100})""",
   ]
   DupFields = [ "file_name->malware_file_name" ]
 }

@@ -17,7 +17,7 @@ Name = symantec-dlp-cit-alert
     """\sSENDER\s({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\sRECIPIENTS\s""",
     """\sBLOCKED\s(?:N\/A|({outcome}.+?))\sURL\s""",
     """\sSEVERITY\s(?:N\/A|({alert_severity}.*?))\sBLOCKED\s""",
-    """\sINCIDENT\s(?:N\/A|({alert_id}\d+?))\sPOLICY\s""",
+    """\sINCIDENT\s(?:N\/A|({alert_id}\d{1,100}?))\sPOLICY\s""",
     """\sPOLICY\s(?:N\/A|({alert_type}.+?))\sMATCHES\s""",
     """\sPROTOCOL\s(?:N\/A|({protocol}.+?))\sINCIDENT\s""",
     """\sRECIPIENTS\s({target}(http:\/\/|https:\/\/).+?)\/.*?\sFILE_NAME\s""",

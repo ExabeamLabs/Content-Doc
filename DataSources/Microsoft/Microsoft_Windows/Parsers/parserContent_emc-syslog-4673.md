@@ -14,15 +14,15 @@ Name = emc-syslog-4673
       """__li_source_path="({host}[^"]+)"""",
     """({event_code}4673)""",
     """(K|k)eywords="({outcome}[^"]+)"""",
-    """Process Name:\s+(?: |({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?)))\s+Service""",
-    """\s+Account Domain:\s+({domain}.+?)\s+Logon ID:\s+({logon_id}[^\s]+)""",
-    """(?:Information|Success Audit|Audit Success).+?Account Name:\s+({user}.+?)\s+Account Domain:""",
-    """Server:\s+({object_server}.+?)\s+Service Name""",
-    """Privileges:\s+({privileges}.+?)(,\d+|\s*$)""",
-    """\s+({ownership_privilege}SeTakeOwnershipPrivilege)""",
-    """\s+({environment_privilege}SeSystemEnvironmentPrivilege)""",
-    """\s+({debug_privilege}SeDebugPrivilege)""",
-    """\s+({tcb_privilege}SeTcbPrivilege)"""
+    """Process Name:\s{1,100}(?: |({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?)))\s{1,100}Service""",
+    """\s{1,100}Account Domain:\s{1,100}({domain}.+?)\s{1,100}Logon ID:\s{1,100}({logon_id}[^\s]+)""",
+    """(?:Information|Success Audit|Audit Success).+?Account Name:\s{1,100}({user}.+?)\s{1,100}Account Domain:""",
+    """Server:\s{1,100}({object_server}.+?)\s{1,100}Service Name""",
+    """Privileges:\s{1,100}({privileges}.+?)(,\d{1,100}|\s{0,100}$)""",
+    """\s{1,100}({ownership_privilege}SeTakeOwnershipPrivilege)""",
+    """\s{1,100}({environment_privilege}SeSystemEnvironmentPrivilege)""",
+    """\s{1,100}({debug_privilege}SeDebugPrivilege)""",
+    """\s{1,100}({tcb_privilege}SeTcbPrivilege)"""
   ]
   DupFields = [ "host->dest_ip","directory->process_directory" ]
 }

@@ -12,9 +12,9 @@ Name = s-cyberark-tpm-account-switch
         	"""Operation: ({activity}.*?) ObjectType""",
 		"""({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
 		"""(AdminName|UserName):\s({user}.+)\sOperation""",
-    """Target:\s*(?:({account_domain}[^\\\/]+)[\\\/]+)?({account}.+?)\s*Role:""",
+    """Target:\s{0,100}(?:({account_domain}[^\\\/]+)[\\\/]+)?({account}.+?)\s{0,100}Role:""",
 		""":\d\d\s({host}[^=]+)\sPAR""",
-		"""PAR\[({event_code}\d+)"""
+		"""PAR\[({event_code}\d{1,100})"""
     ]
     DupFields = [ "host->dest_host" ]
 }

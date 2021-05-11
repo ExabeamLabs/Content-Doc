@@ -9,9 +9,9 @@ Name = physical-badge-access-1
   TimeFormat =  "yyyy-MM-dd HH:mm:ss.S"
   Conditions = [ """, txnconditionName="""", """, cardNumber="""", """, employeeNumber="""", """, datetimeoftxn="""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """({host}[\w\-.]+)\s+\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d+""",
-    """\Wdatetimeoftxn="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """({host}[\w\-.]+)\s{1,100}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{1,100}""",
+    """\Wdatetimeoftxn="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{1,100})""",
     """\Wwherename="({location_door}[^"]+)""",
     """\WtxnconditionName="({outcome}[^"]+)""",
     """\Wlastname="({last_name}[^"]+)""",

@@ -25,8 +25,8 @@ Name = s-tanium-security-alert-5
       """"fullpath\\*":\\*"({malware_url}[^"]+?)\\*"""",
       """"name\\*":\\*"({file_name}[^"]+?)\\*"""",
       """"source\\*":\\*"({log_source}[^"]+?)\\*"""",
-      """"Intel Name"+:"+({alert_name}[^"]+)""",
-      """"Intel Type"+:"+({alert_type}[^"]+)""",
+      """"Intel Name"{1,20}:"{1,20}({alert_name}[^"]+)""",
+      """"Intel Type"{1,20}:"{1,20}({alert_type}[^"]+)""",
       """"Intel Labels":"({additional_info}[^"]+)"""
     ]
 }

@@ -10,11 +10,11 @@ Name = q-628
     Conditions = [ "EventIDCode=628" ]
     Fields = [
       """({event_name}User Account password set)""",
-      """TimeGenerated=({time}\d+)""",
+      """TimeGenerated=({time}\d{1,100})""",
       """Computer=({host}[^\s]+)""",
-      """EventID=({event_code}\d+)""",
-      """Target Account Name:\s+({target_user}.+?)\s+Target Domain:\s+({target_domain}.+?)\s+Target Account ID:\s*({target_user_sid}.+?)\s+Caller User""",
-      """Caller User Name:\s+(?=\w)({user}.+?)\s+Caller Domain:\s+(?=\w)({domain}.+?)\s+Caller Logon ID:\s+\([^,]+,({logon_id}[^\)]+)"""
+      """EventID=({event_code}\d{1,100})""",
+      """Target Account Name:\s{1,100}({target_user}.+?)\s{1,100}Target Domain:\s{1,100}({target_domain}.+?)\s{1,100}Target Account ID:\s{0,100}({target_user_sid}.+?)\s{1,100}Caller User""",
+      """Caller User Name:\s{1,100}(?=\w)({user}.+?)\s{1,100}Caller Domain:\s{1,100}(?=\w)({domain}.+?)\s{1,100}Caller Logon ID:\s{1,100}\([^,]+,({logon_id}[^\)]+)"""
     ]
     DupFields=["host->dest_host" ]
   }

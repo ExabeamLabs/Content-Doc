@@ -11,22 +11,15 @@ Name = wls-4663
   Conditions = [ """LogType="WLS"""", """EventID="4663"""" ]
   Fields = [
     """({event_name}An attempt was made to access an object)""",
-    """Computer="+({host}[^"]+)"""",
-    """"({time}\d\d\d\d\-\d+\-\d+T\d\d:\d\d:\d\d)""",
-    """EventID="+({event_code}[^"]+)"""",
-    """EventRecordID="+({record_id}[^"]+)"""",
-    """SubjectUserName="+({user}[^"]+)"""",
-    """SubjectUserSid="+({user_sid}[^"]+)"""",
-    """SubjectDomainName="+({domain}[^"]+)"""",
-    """SubjectLogonId="+({logon_id}[^"]+)"""",
-    """ObjectType="+({file_type}[^"]+)""",
-    """ObjectName="+({file_path}[^"]+)""",
-    """ObjectName="+.*\\({file_name}(?:[^\\:]+(?=\.))({file_ext}\.[^\\:]+)?|[^\\:]+)"+,\s*ObjectServer=""",
-    """ObjectName="+(?:({file_parent}.+?)\\+[^\\]+)",""",
-    """ProcessName="+({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+))"""",
-    """AccessList="({accesses}[^"]+)""",
-    """AccessMask="({access_mask}[^"]+)"""
-  ]
-  DupFields = [ "host->dest_host","directory->process_directory" ]
-}
+    """Computer="{1,20}({host}[^"]+)"""",
+    """"({time}\d\d\d\d\-\d{1,100}\-\d{1,100}T\d\d:\d\d:\d\d)""",
+    """EventID="{1,20}({event_code}[^"]+)"""",
+    """EventRecordID="{1,20}({record_id}[^"]+)"""",
+    """SubjectUserName="{1,20}({user}[^"]+)"""",
+    """SubjectUserSid="{1,20}({user_sid}[^"]+)"""",
+    """SubjectDomainName="{1,20}({domain}[^"]+)"""",
+    """SubjectLogonId="{1,20}({logon_id}[^"]+)"""",
+    """ObjectType="{1,20}({file_type}[^"]+)""",
+    """ObjectName="{1,20}({file_path}[^"]+)""",
+    """ObjectName="{1,20}.*\\({file_name}(?:[^\\:]+(?=\.))({file_ext}\.[^\\:]+)?|[^\\:]+)"{1,20}
 ```

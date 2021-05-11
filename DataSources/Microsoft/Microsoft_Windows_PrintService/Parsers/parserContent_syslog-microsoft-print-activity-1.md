@@ -9,19 +9,11 @@ Name = syslog-microsoft-print-activity-1
   TimeFormat = "epoch_sec"
   Conditions = [ """Source=Microsoft-Windows-PrintService""", """EventID=307""", """ owned by """, """ was printed on """]
   Fields = [
-    """TimeGenerated=({time}\d+)""",
+    """TimeGenerated=({time}\d{1,100})""",
     """Computer=({host}[\w\-.]+)""",
     """User=({user}[^\s]+)""",
     """Domain=({domain}[^\s]+)""",
-    """EventID=({event_code}\d+)""",
-    """Opcode=({outcome}.+?)\s*(\w+=|$)""",
-    """Message=({activity_1}.*?\s*(?i)Document) \d+,""",
-    """Message=.+?owned by [^\s]+\s*.*?( on [^\s]+)?({activity_2}.+?) on ({printer_name}.+?)(\.\s+|\s+through)""",
-    """Message=[^,]+,\s+({object}.+?) owned by""",
-    """Message=.+?owned by.+? on \\*(?:({src_ip}[A-Fa-f:\d.]+)|({src_host}.+?)) was """,
-    """Message=.+?through port (\w+_)?(?:({dest_ip}[A-Fa-f:\d.]+)|\\*({dest_host}.+?))\.\s+""",
-    """Message=.+?Size in bytes:\s*({bytes}\d+)""",
-    """Message=.+?Pages printed:\s*({num_pages}\d+)""",
-  ]
-}
+    """EventID=({event_code}\d{1,100})""",
+    """Opcode=({outcome}.+?)\s{0,100}(\w+=|$)""",
+    """Message=({activity_1}.*?\s{0,100}(?i)Document) \d{1,100}
 ```

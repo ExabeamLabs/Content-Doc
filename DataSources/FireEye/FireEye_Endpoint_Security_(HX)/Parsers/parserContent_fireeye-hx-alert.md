@@ -9,14 +9,14 @@ Name = fireeye-hx-alert
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """"FireEyeHX"""", """"HX"""", """"malwarePath":"""", """"malwareMD5":"""" ]
   Fields = [
-    """"@timestamp":"({time}\d\d\d\d\-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+    """"@timestamp":"({time}\d\d\d\d\-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """"deviceIP":"({host}[A-Fa-f:\d.]+)""",
     """"deviceHostname":"({host}[\w\-.]+)""",
     """"srcIP":"({src_ip}[A-Fa-f:\d.]+)""",
     """"malwarePath":"({malware_url}[^"]+)""",
     """"userID":"(({domain}[^"\\\s]+)\\+)?({user}[^"\\\s]+)""",
     """"srcOS":"({os}[^"]+)""",
-    """"process":\s*"({alert_name}[^"]+)""",
+    """"process":\s{0,100}"({alert_name}[^"]+)""",
     """"log_type":"({alert_type}[^"]+)""",
     """"srcHostname":"({src_host}[\w\-.]+)""",
     """"malwareMD5":"({md5}[^"]+)""",

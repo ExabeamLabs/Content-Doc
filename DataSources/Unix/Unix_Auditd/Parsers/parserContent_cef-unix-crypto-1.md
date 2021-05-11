@@ -7,8 +7,8 @@ Name = cef-unix-crypto-1
   Fields = ${UnixParserTemplates.cef-unix-template-1.Fields}[
     """CEF:([^\|]*\|){4}({event_name}[^|]+)\\\|({outcome}[^\|]+)""",
     """src=({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
-    """spt=({src_port}\d+)""",
-    """dpt=({dest_port}\d+)"""
+    """spt=({src_port}\d{1,100})""",
+    """dpt=({dest_port}\d{1,100})"""
     ]
 }
 cef-unix-template-1 = {
@@ -17,23 +17,23 @@ cef-unix-template-1 = {
     Lms = Direct
     TimeFormat = epoch
     Fields = [
-      """\srt=({time}\d+)""",
+      """\srt=({time}\d{1,100})""",
       """\Wagt=({host}[A-Fa-f:\d.]+)""",
       """\sdvc(host)?=({host}[^\s]+)"""
-      """\sduid=({user_id}\d+)""",
-      """\ssuid=({user_id}\d+)""",
-      """auid=({account_id}\d+)""",
+      """\sduid=({user_id}\d{1,100})""",
+      """\ssuid=({user_id}\d{1,100})""",
+      """auid=({account_id}\d{1,100})""",
       """cat=({activity}[^\|\s]+)""",
       """destinationServiceName=({service_name}[^\s]+)""",
-      """\WeventId=({log_id}\d+)"""
-      """\Wcs4=({pid}\d+)""",
-      """\sdproc=({process}({directory}[^\s]*?[\\\/]+)?({process_name}[^\s\\\/]+))\s+\w+=""",
+      """\WeventId=({log_id}\d{1,100})"""
+      """\Wcs4=({pid}\d{1,100})""",
+      """\sdproc=({process}({directory}[^\s]*?[\\\/]+)?({process_name}[^\s\\\/]+))\s{1,100}\w+=""",
       """categoryOutcome=\/({outcome}[^\s]+)""",
       """src=({src_ip}[^\s]+)"""
       """dst=({dest_ip}[^\s]+)"""
-      """spt=({src_port}\d+)""",
-      """dpt=({dest_port}\d+)""",
-      """\sduser=(\(unknown\)|({user}.+?))\s+\w+=""",
+      """spt=({src_port}\d{1,100})""",
+      """dpt=({dest_port}\d{1,100})""",
+      """\sduser=(\(unknown\)|({user}.+?))\s{1,100}\w+=""",
       """dhost=({dest_host}[^\s]+)""",
       """shost=({src_host}[^\s]+)"""
       ]

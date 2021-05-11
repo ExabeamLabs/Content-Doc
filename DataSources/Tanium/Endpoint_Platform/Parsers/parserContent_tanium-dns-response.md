@@ -9,9 +9,9 @@ Name = tanium-dns-response
     TimeFormat = "yyyy-MM-dd HH:mm:ss.SSSZ"
     Conditions = [ """ Tanium """, """Question="Exabeam-DNS-Connect-Test"""", """ Time-(UTC)="2""" ]
     Fields = [
-      """({host}[\w.\-]+)\s+Tanium """,
+      """({host}[\w.\-]+)\s{1,100}Tanium """,
       """\sEndpoint-Name="(-|({src_host}[\w.\-]+))"""",
-      """\sTime-\(UTC\)="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d+(\+|\-)\d\d:\d\d)""",
+      """\sTime-\(UTC\)="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{1,100}(\+|\-)\d\d:\d\d)""",
       """\sUsername="(-|({user}[^"]+))"""",
       """\sQuery="(-|({query}[^"]+))"""",
       """\sOperation="(-|({activity}[^"]+))"""",

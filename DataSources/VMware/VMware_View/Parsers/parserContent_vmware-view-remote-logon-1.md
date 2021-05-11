@@ -10,10 +10,10 @@ Name = vmware-view-remote-logon-1
   Conditions = [ """View User""", """has logged in to a new session on machine""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\d\d:\d\d:\d\d\s+({host}[^\s]+)\s+View User""",
-    """View User\s+(({domain}[^\\\s]+)\\+)?({user}[^\s]+)""",
+    """\d\d:\d\d:\d\d\s{1,100}({host}[^\s]+)\s{1,100}View User""",
+    """View User\s{1,100}(({domain}[^\\\s]+)\\+)?({user}[^\s]+)""",
     """({app}View)""",
-    """new session on machine\s+({dest_host}[\w.-]+)"""
+    """new session on machine\s{1,100}({dest_host}[\w.-]+)"""
    ]
 }
 ```

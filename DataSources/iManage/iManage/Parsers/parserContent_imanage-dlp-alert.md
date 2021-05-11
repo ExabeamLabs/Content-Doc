@@ -9,12 +9,12 @@ Name = imanage-dlp-alert
   TimeFormat = "yyyy-MM-dd HH:mm:ss.S"
   Conditions = [ """DOCNUM:""", """DOCUSER:""" ]
   Fields = [
-    """"\s*DOCNUM:\s*"+({file_name}[^"\s]+)"+""",
-    """"\s*ACTIVITY:\s*"+({alert_type}[^"\s]+)"+""",
-    """"\s*ACTIVITY_DATETIME:\s*"+({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d)""",
-    """"\s*DOCUSER:\s*"+({user}[^":]+)"+""",
-    """"\s*APPNAME:\s*"+({app}[^":]+)"+""",
-    """"\s*LOCATION:\s*"+({host}[^":]+)"+"""
+    """"\s{0,100}DOCNUM:\s{0,100}"{1,20}({file_name}[^"\s]+)"{1,20}""",
+    """"\s{0,100}ACTIVITY:\s{0,100}"{1,20}({alert_type}[^"\s]+)"{1,20}""",
+    """"\s{0,100}ACTIVITY_DATETIME:\s{0,100}"{1,20}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d)""",
+    """"\s{0,100}DOCUSER:\s{0,100}"{1,20}({user}[^":]+)"{1,20}""",
+    """"\s{0,100}APPNAME:\s{0,100}"{1,20}({app}[^":]+)"{1,20}""",
+    """"\s{0,100}LOCATION:\s{0,100}"{1,20}({host}[^":]+)"{1,20}"""
   ]
 }
 ```

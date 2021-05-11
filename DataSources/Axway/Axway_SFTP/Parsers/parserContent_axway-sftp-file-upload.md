@@ -10,7 +10,7 @@ Name = axway-sftp-file-upload
   Conditions = ["""TransferStatus.Id:""", """message=Transfer start logged""", """user=""", """Client Hostname=""", """Transferred File="""]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """\d\d:\d\d:\d\d\s({src_ip}[\dA-Fa-f.:]+)""",
     """Transferred File=({file_name}[^\=]+\.({file_ext}\w+)),""",
     """user=({user}[^,]+)""",

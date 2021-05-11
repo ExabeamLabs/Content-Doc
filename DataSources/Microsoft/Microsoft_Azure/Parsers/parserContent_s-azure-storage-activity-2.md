@@ -10,7 +10,7 @@ Name = s-azure-storage-activity-2
  Conditions = ["""operationName":"MICROSOFT.STORAGE"""]
  Fields = [
          """time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-         """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
+         """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
          """({service}MICROSOFT.STORAGE)""",
          """"MICROSOFT.STORAGE\/[^\/]+\/({activity}[^\/"]+)""",
          """operationName":"MICROSOFT.STORAGE.+?\/CONTAINERS\/({activity}[["\\\/]+)""",
@@ -28,7 +28,7 @@ Name = s-azure-storage-activity-2
          """"Microsoft.Authorization/policyDefinitions/({policy}[^\/\\"]+)""",
          """resultType":"({outcome}[^"]+)""",
          """resourceId":".*\/RESOURCEGROUPS\/({account_id}[^\/]+)""",
-         """\[Namespace:\s*({event_hub_namespace}\S+) ; EventHub name:\s*({event_hub_name}[\w-]+)"""
+         """\[Namespace:\s{0,100}({event_hub_namespace}\S+) ; EventHub name:\s{0,100}({event_hub_name}[\w-]+)"""
  ]
 DupFields= ["event_hub_namespace->host"]
 }

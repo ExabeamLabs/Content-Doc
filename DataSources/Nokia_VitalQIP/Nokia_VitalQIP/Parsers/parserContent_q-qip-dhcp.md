@@ -9,7 +9,7 @@ Name = q-qip-dhcp
     TimeFormat = "epoch"
     Conditions = [ "qip", "DHCP", " Host=", " Domain=" ]
     Fields = [
-      """exabeam_endTime=({time}\d+)""",
+      """exabeam_endTime=({time}\d{1,100})""",
       """exabeam_host=({host}[\w\-.]+)""",
       """: Host=({dest_host}[^\s]+)""",
       """ IP=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",

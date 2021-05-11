@@ -10,16 +10,16 @@ Name = iptables-network-connection-successful
   Conditions = [ """ kernel: """, """ ACCEPT """ ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """"@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
-    """({host}[\w.\-]+)\s+kernel:\s""",
-    """\sIN=({src_interface}[^=]+?)\s+\w+=""",
-    """\sOUT=({dest_interface}[^=]+?)\s+\w+=""",
-    """\sMAC=({src_mac}[^=]+?)(\s+\w+=|\s*$)""",
+    """"@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
+    """({host}[\w.\-]+)\s{1,100}kernel:\s""",
+    """\sIN=({src_interface}[^=]+?)\s{1,100}\w+=""",
+    """\sOUT=({dest_interface}[^=]+?)\s{1,100}\w+=""",
+    """\sMAC=({src_mac}[^=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\sSRC=({src_ip}[a-fA-F\d.:]+)""",
     """\sDST=({dest_ip}[a-fA-F\d.:]+)""",
-    """\sPROTO=({protocol}[^=]+?)\s+\w+=""",
-    """\sSPT=({src_port}\d+)""",
-    """\sDPT=({dest_port}\d+)""",
+    """\sPROTO=({protocol}[^=]+?)\s{1,100}\w+=""",
+    """\sSPT=({src_port}\d{1,100})""",
+    """\sDPT=({dest_port}\d{1,100})""",
   ]
 }
 ```

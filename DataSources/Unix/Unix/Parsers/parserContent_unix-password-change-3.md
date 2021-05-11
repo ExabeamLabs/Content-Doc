@@ -10,7 +10,7 @@ Name = unix-password-change-3
   Conditions = [ """couldn't change password for""", """keyring:""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """({host}[\w.\-]+)\s+passwd:""",
+    """({host}[\w.\-]+)\s{1,100}passwd:""",
     """couldn't change password for '({account}[^']+)""",
   ]
 }

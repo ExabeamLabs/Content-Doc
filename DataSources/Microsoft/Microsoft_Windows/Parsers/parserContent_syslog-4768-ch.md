@@ -11,13 +11,13 @@ Name = syslog-4768-ch
   Fields = [
     """({time}\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3})""",
     """\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{6}[\-\+]\d\d:\d\d ({host}[\w.\-]+)\s""",
-    """(Information|Audit Success|Success Audit|Failure Audit|Audit Failure)\s*({host}[\w.\-]+?)\s""",
+    """(Information|Audit Success|Success Audit|Failure Audit|Audit Failure)\s{0,100}({host}[\w.\-]+?)\s""",
     """({event_code}4768)""",
-    """\s帳戶名稱:\s*({user}[^@]+?)(?:@([^\s]+))?\s""",
-    """\s支援領域名稱:\s*({domain}\S+)""",
-    """\s使用者識別碼:\s*(?:NULL SID|({user_sid}.+?))\s*服務資訊:""",
-    """\s用戶端位址:\s*(::[\w]+:)?({dest_ip}(?!::1)[a-fA-F:\d.]+)""",
-    """\s結果碼:\s*({result_code}[\w\-]+)"""
+    """\s帳戶名稱:\s{0,100}({user}[^@]+?)(?:@([^\s]+))?\s""",
+    """\s支援領域名稱:\s{0,100}({domain}\S+)""",
+    """\s使用者識別碼:\s{0,100}(?:NULL SID|({user_sid}.+?))\s{0,100}服務資訊:""",
+    """\s用戶端位址:\s{0,100}(::[\w]+:)?({dest_ip}(?!::1)[a-fA-F:\d.]+)""",
+    """\s結果碼:\s{0,100}({result_code}[\w\-]+)"""
   ]
 }
 ```

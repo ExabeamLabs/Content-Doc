@@ -10,11 +10,11 @@ Name = beyondtrust-privileged-access
   Conditions = [  """|BeyondTrust|""","""Application Requested Elevation""","""BeyondTrustBeyondInsightEventTypeID=28691""" ]
   Fields = [
     """\d\d:\d\d:\d\d ({host}[\w\-.]+) CEF""",
-    """\|rt=({time}\w+ \d+ \d{4} \d\d:\d\d:\d\d)""",
-    """BeyondTrustBeyondInsightUserName=(?: |({user}.+?)\s+\w+=)""",
-    """BeyondTrustBeyondInsightPath=(?: |({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?))\s+\w+=)""",
-    """BeyondTrustBeyondInsightAssetName=(?: |({dest_host}.+?)\s+\w+=)""",
-    """BeyondTrustBeyondInsightUserType=(?: |({privileges}.+?)\s*$)""",
+    """\|rt=({time}\w+ \d{1,100} \d{4} \d\d:\d\d:\d\d)""",
+    """BeyondTrustBeyondInsightUserName=(?: |({user}.+?)\s{1,100}\w+=)""",
+    """BeyondTrustBeyondInsightPath=(?: |({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?))\s{1,100}\w+=)""",
+    """BeyondTrustBeyondInsightAssetName=(?: |({dest_host}.+?)\s{1,100}\w+=)""",
+    """BeyondTrustBeyondInsightUserType=(?: |({privileges}.+?)\s{0,100}$)""",
     """deviceExternalId=({event_code}pbw|pbmac)""",
   ]
   DupFields = [ "directory->process_directory" ]

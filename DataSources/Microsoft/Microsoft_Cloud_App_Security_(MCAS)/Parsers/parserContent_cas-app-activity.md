@@ -14,12 +14,12 @@ cas-template = {
     TimeFormat = "EEE MMM dd HH:mm:ss zzz yyyy"
     Fields = [
       """exabeam_host=({host}[\w\-.]+)""",
-      """WHEN: ({time}\w+ \w+ \d\d \d\d:\d\d:\d\d \w+ \d+)"""
+      """WHEN: ({time}\w+ \w+ \d\d \d\d:\d\d:\d\d \w+ \d{1,100})"""
       """CLIENT IP ADDRESS: ({src_ip}[a-fA-F:\d.]+)"""
       """SERVER IP ADDRESS: ({dest_ip}[a-fA-F:\d.]+)"""
-      """APPLICATION: ({app}[^#]+)(\s+|#)?\w+:"""
+      """APPLICATION: ({app}[^#]+)(\s{1,100}|#)?\w+:"""
       """WHO: (audit:unknown|({user}[^#\s@]+)(@({domain}[^#\s]+))?)"""
-      """WHAT: ({additional_info}.*?)(\s+|#\d+)?ACTION:"""
+      """WHAT: ({additional_info}.*?)(\s{1,100}|#\d{1,100})?ACTION:"""
       """ACTION: ({activity}[^#\s]+)"""
       """service=({object}[^,]+)"""
     ]

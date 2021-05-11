@@ -10,8 +10,8 @@ Name = skyformation-prisma-security-alert
  TimeFormat = """yyyy-MM-dd'T'HH:mm:ss.SSSZ"""
  Conditions = ["""|Skyformation|""", """destinationServiceName=""", """"source":"Prisma Cloud"""", """"policyName":"""]
  Fields = [
-   """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-   """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d+Z)\s[\w\-.]+\s+Skyformation""",
+   """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+   """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d{1,100}Z)\s[\w\-.]+\s{1,100}Skyformation""",
    """"privateIpAddresses":\[.+?"privateIpAddress":"({src_ip}[A-Fa-f:\d.]+)"""",
    """"policyName":"({alert_name}[^"]+)"""",
    """"severity":"({alert_severity}[^"]+)"""",

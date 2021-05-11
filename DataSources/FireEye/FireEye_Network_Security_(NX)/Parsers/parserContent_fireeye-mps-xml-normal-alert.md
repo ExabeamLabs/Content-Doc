@@ -11,9 +11,9 @@ Name = fireeye-mps-xml-normal-alert
   Fields = [
              """<occurred>({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
              """exabeam_host=({host}\S+)""",
-             """ fenotify-({alert_id}\d+)""",
+             """ fenotify-({alert_id}\d{1,100})""",
              """<alert id="({alert_id}[^"]+)""",
-             """<src vlan=\".+\">\s*<ip>({src_ip}[\d\.]+)""",
+             """<src vlan=\".+\">\s{0,100}<ip>({src_ip}[\d\.]+)""",
              """<src .+?<host>({src_host}[^<]+)""",
              """xsi:schemaLocation=.+?name="({alert_type}[^"]+)".*severity="({alert_severity}[^"]+)"""",
              """<malware name="({alert_name}[^"]+)"""",

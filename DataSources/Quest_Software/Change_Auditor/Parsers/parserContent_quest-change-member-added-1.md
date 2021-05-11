@@ -23,7 +23,7 @@ quest-change-auditor-events = {
       """suid=({user_sid}\S+)""",
       """suser=(({domain}[^\\]+)\\*)?({user}[^=]+?)\s\w+=""",
       """event=({event_name}[^=]+?)\s\w+=""",
-      """msg=({additional_info}[^=]+?)\s*\w+="""
+      """msg=({additional_info}[^=]+?)\s{0,100}\w+="""
     ]
 
 ```

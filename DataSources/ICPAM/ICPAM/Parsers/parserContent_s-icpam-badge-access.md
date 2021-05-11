@@ -9,13 +9,11 @@ Name = s-icpam-badge-access
     TimeFormat = "MM/dd/yyyy HH:mm:ss"
     Conditions = [ """[Connected Physical Access Manager]""", """Trigger:""" ]
     Fields = [
-      """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-      """\w+\s+\d+\s+\d\d:\d\d:\d\d\s+({host}[^\s]+)""",
-      """Time:\s*({time}\d+/\d+/\d\d\d\d \d\d:\d\d:\d\d)""",
-      """Trigger:\s*({outcome}.+?)\s*(#012|Time)""",
-      """Device:\s*({location_door}.+?)\s+(#012|Personnel)""",
-      """Badge Id\s*:\s*({badge_id}\d+\s*\d+)""",
-      """Personnel record:\s*({last_name}.+?)\s*,\s+({first_name}.+?)\s*(#012|Credential)"""
-    ]
-  }
+      """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+      """\w+\s{1,100}\d{1,100}\s{1,100}\d\d:\d\d:\d\d\s{1,100}({host}[^\s]+)""",
+      """Time:\s{0,100}({time}\d{1,100}/\d{1,100}/\d\d\d\d \d\d:\d\d:\d\d)""",
+      """Trigger:\s{0,100}({outcome}.+?)\s{0,100}(#012|Time)""",
+      """Device:\s{0,100}({location_door}.+?)\s{1,100}(#012|Personnel)""",
+      """Badge Id\s{0,100}:\s{0,100}({badge_id}\d{1,100}\s{0,100}\d{1,100})""",
+      """Personnel record:\s{0,100}({last_name}.+?)\s{0,100}
 ```

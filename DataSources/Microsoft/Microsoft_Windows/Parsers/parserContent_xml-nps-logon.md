@@ -12,16 +12,16 @@ Name = xml-nps-logon
      """<Computer>({host}[^<]+)<"""
      """SystemTime=\'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""" 
      """<EventID>({event_code}[^<]+)<\/EventID>""",
-     """Account Name:\s*({user}[^\s]+)(\/?)""",
-     """Account Domain:\s*({domain}[^\s]+)\s*""",
-     """Account Name:\s*({user_type}[^\s:]+?)\/({user}[^\.\s\/:]+?)(\.[^:\.\s]+?)*\s*Account Domain""",
-     """Connection Request Policy Name:\s*({policy}.+?)\s*Network Policy""",
-     """User:\s*Security ID:\s*({user_sid}.+?)\s*Account Name:""",
-     """({event_name}Network Policy Server\s({outcome}\w+)\s.+?)\s*User:""",
-     """Reason:\s*({failure_reason}[^<]+)\.\s""",
-     """NAS IPv4 Address:\s*({dest_ip}[^\s-]+)\s""",
-     """NAS IPv6 Address:\s*({dest_ip}[^\s-]+)\s""",
-     """NAS Identifier:\s*({location}[^\s]]+)\s"""
+     """Account Name:\s{0,100}({user}[^\s]+)(\/?)""",
+     """Account Domain:\s{0,100}({domain}[^\s]+)\s{0,100}""",
+     """Account Name:\s{0,100}({user_type}[^\s:]+?)\/({user}[^\.\s\/:]+?)(\.[^:\.\s]+?)*\s{0,100}Account Domain""",
+     """Connection Request Policy Name:\s{0,100}({policy}.+?)\s{0,100}Network Policy""",
+     """User:\s{0,100}Security ID:\s{0,100}({user_sid}.+?)\s{0,100}Account Name:""",
+     """({event_name}Network Policy Server\s({outcome}\w+)\s.+?)\s{0,100}User:""",
+     """Reason:\s{0,100}({failure_reason}[^<]+)\.\s""",
+     """NAS IPv4 Address:\s{0,100}({dest_ip}[^\s-]+)\s""",
+     """NAS IPv6 Address:\s{0,100}({dest_ip}[^\s-]+)\s""",
+     """NAS Identifier:\s{0,100}({location}[^\s]]+)\s"""
   ]
 }
 ```

@@ -12,9 +12,9 @@ Name = l-4767
     """({event_name}A user account was unlocked)""",
     """SystemTime=\'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """<Computer>({host}[\w\-.]+)</Computer>""",
-    """<EventID>({event_code}\d+)</EventID>""",
-    """Subject:.+?Account Name:\s*({user}.+?)\s*Account Domain:\s*({domain}.+?)\s*Logon ID:\s*({logon_id}.+?)\s*Target Account:""",
-    """Target Account:\s*Security ID:\s*({user_sid}.+?)\s*Account Name:\s*({target_user}.+?)\s*Account Domain:\s*({target_domain}[^=<]+)\s*<"""
+    """<EventID>({event_code}\d{1,100})</EventID>""",
+    """Subject:.+?Account Name:\s{0,100}({user}.+?)\s{0,100}Account Domain:\s{0,100}({domain}.+?)\s{0,100}Logon ID:\s{0,100}({logon_id}.+?)\s{0,100}Target Account:""",
+    """Target Account:\s{0,100}Security ID:\s{0,100}({user_sid}.+?)\s{0,100}Account Name:\s{0,100}({target_user}.+?)\s{0,100}Account Domain:\s{0,100}({target_domain}[^=<]+)\s{0,100}<"""
   ]
   DupFields = [ "host->dest_host" ]
 }

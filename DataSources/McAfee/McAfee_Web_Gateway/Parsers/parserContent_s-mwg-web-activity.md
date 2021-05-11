@@ -11,12 +11,12 @@ Name = s-mwg-web-activity
   Conditions = [ """mwg:""", """datetime="""", """authentication_method="""" ]
   Fields = [
     """\Wdatetime="\[({time}[^\[\]]+)""",
-    """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
-    """({host}[\w\-\.]+)\s*mwg:""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
+    """({host}[\w\-\.]+)\s{0,100}mwg:""",
     """\Wuser="({user}[^"]+)""",
     """\Wsrc="({src_ip}[a-fA-F:\d\.]+)""",
     """\Wdest="({dest_ip}[a-fA-F:\d\.]+)""",
-    """\Wstatus="({result_code}\d+)""",
+    """\Wstatus="({result_code}\d{1,100})""",
     """\Wrisk="({risk_level}[^"]+)""",
     """\Whttp_protocol="({protocol}[^"]+)""",
     """\Whttp_method="({method}[^"]+)""",
@@ -29,13 +29,13 @@ Name = s-mwg-web-activity
     """\Waction="({action}[^"]+)""",
     """\Wblock_reason="({failure_reason}[^"]+)"""",
     """\Wreferrer="({referrer}[^"]+)""",
-    """\Wdomain="(.*?)({top_domain}(?!(?:\d+\.){3}\d+)[^\.\s]+(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+(\"|\/))[^"\/]+)""",
+    """\Wdomain="(.*?)({top_domain}(?!(?:\d{1,100}\.){3}\d{1,100})[^\.\s]+(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+(\"|\/))[^"\/]+)""",
     """\Wurl="({full_url}[^"]+)""",
     """\Wurl="(\w+:\/+)?({web_domain}[^\/]+)({uri_path}[^"]+)""",
-    """\Wurl="(\w+:\/+)?[^\|\/:]+(:\d+)?[^|?]+({uri_query}\?[^\s"]+)""",
-    """\Whttp_port="({dest_port}\d+)""",
-    """\Wbytes_to_client="({bytes_in}\d+)""",
-    """\Wbytes_from_client="({bytes_out}\d+)""",
+    """\Wurl="(\w+:\/+)?[^\|\/:]+(:\d{1,100})?[^|?]+({uri_query}\?[^\s"]+)""",
+    """\Whttp_port="({dest_port}\d{1,100})""",
+    """\Wbytes_to_client="({bytes_in}\d{1,100})""",
+    """\Wbytes_from_client="({bytes_out}\d{1,100})""",
   ]
 }
 ```

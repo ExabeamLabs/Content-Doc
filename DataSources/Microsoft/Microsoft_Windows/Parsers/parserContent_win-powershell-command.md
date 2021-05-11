@@ -14,13 +14,13 @@ Name = win-powershell-command
       """>({event_code}4103)<\/EventID>""",
       """<Computer>({dest_host}.*?)<\/Computer>""",
       """<Security UserID='({user_sid}[\w-]+)'""",
-      """Script Name =\s+({process}({directory}([\w:]+\\)?([^\\]+?\\)*?)({process_name}[^\\]*?))\s+Command Path =""",
-      """User = (({domain}[^\\]+?)\\)?({user}[^\s]+)\s+Connected User =""",
-      """CommandInvocation\(.+?\):\s*"({command_invocation}[^"]+)""",
-      """value="*(?:function\s)?({command_module}[^\s"]+)""",
-    """Host\s*Application\s*=\s*({powershell_image}[^\s]+)\s+EngineVersion""",
-    """Host\s*Application\s*=\s*({command_line}[^\s]+)""""
-    """CommandInvocation\(.+?\):\s*\\*"({command_invocation}[^"\\]+)""",
+      """Script Name =\s{1,100}({process}({directory}([\w:]+\\)?([^\\]+?\\)*?)({process_name}[^\\]*?))\s{1,100}Command Path =""",
+      """User = (({domain}[^\\]+?)\\)?({user}[^\s]+)\s{1,100}Connected User =""",
+      """CommandInvocation\(.+?\):\s{0,100}"({command_invocation}[^"]+)""",
+      """value="{0,20}(?:function\s)?({command_module}[^\s"]+)""",
+    """Host\s{0,100}Application\s{0,100}=\s{0,100}({powershell_image}[^\s]+)\s{1,100}EngineVersion""",
+    """Host\s{0,100}Application\s{0,100}=\s{0,100}({command_line}[^\s]+)""""
+    """CommandInvocation\(.+?\):\s{0,100}\\*"({command_invocation}[^"\\]+)""",
     """Details:.+?CommandInvocation.+?ParameterBinding.+?value=\\"(function\s)?({command_module}[^\s\\,"]+)""",
    ]
    DupFields = ["directory->process_directory"]

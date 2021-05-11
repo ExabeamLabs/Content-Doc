@@ -12,7 +12,7 @@ Name = symantec-cloud-dlp-alert
     """exabeam_host=({host}[^\s]+)""",
     """ext__inserted_timestamp_=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""
     """suser=({user_email}[^\s]+@.+?)\s\w+=""",
-    """ext__user_name_=({user_fullname}[^\s@]+\s+[^=]+)\s\w+=""",
+    """ext__user_name_=({user_fullname}[^\s@]+\s{1,100}[^=]+)\s\w+=""",
     """ext_user=({user_email}[^\s]+@.+?)\s\w+="""
     """ext_user=({user}[^\s\@]+)\s\w+=""",
     """ext_service=({process}.+?)\s\w+=""",

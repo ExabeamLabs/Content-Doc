@@ -10,7 +10,7 @@ Name = exchange-dlp-email-internal
   Conditions = [ """archive[""", """ internal """ ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """archive\[\d+\]:\s+({message_id}\S+)\s+({time}\d+).*?<({sender}[^\s@]+@({external_domain_sender}.+?))>\s+({recipient}[^\s@]+@({external_domain_recipient}.+?))\s+\S+\s+({direction}internal)"""
+    """archive\[\d{1,100}\]:\s{1,100}({message_id}\S+)\s{1,100}({time}\d{1,100}).*?<({sender}[^\s@]+@({external_domain_sender}.+?))>\s{1,100}({recipient}[^\s@]+@({external_domain_recipient}.+?))\s{1,100}\S+\s{1,100}({direction}internal)"""
   ]
   DupFields = [ "recipient->recipients" ]
 }

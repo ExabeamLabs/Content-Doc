@@ -17,17 +17,17 @@ xml-sysmon-activity = {
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
   Fields = [
     """<Provider Name='Microsoft-Windows-Sysmon' Guid='\{({process_guid}[^}]+?)\}""",
-    """<Data Name='UtcTime'>({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d+)""",
-    """<EventID>({event_code}\d+)</EventID>""",
+    """<Data Name='UtcTime'>({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{1,100})""",
+    """<EventID>({event_code}\d{1,100})</EventID>""",
     """<Task>({activity}.*?)</Task>""",
-    """<Execution ProcessID='({pid}\d+)""",
+    """<Execution ProcessID='({pid}\d{1,100})""",
     """<Computer>({host}.+?)</Computer>""",
     """<Security UserID='({user_sid}[^']+)'""",
     """<Data Name='Image'>({process}(({directory}[^<>]+?)[\\\/]+)?({process_name}[^\\\/<>]+?))<\/Data>""",
-    """<Data Name='TargetFilename'>({file_path}(({file_parent}[^<>]+?)[\\\/]+)?\s*({file_name}[^\\\/<>]*?(\.({file_ext}\w+))?))<\/Data>""",
+    """<Data Name='TargetFilename'>({file_path}(({file_parent}[^<>]+?)[\\\/]+)?\s{0,100}({file_name}[^\\\/<>]*?(\.({file_ext}\w+))?))<\/Data>""",
     """<Keywords>({outcome}.+?)<\/Keywords>""",
     """<Data Name='ProcessGuid'>\{({process_guid}.+?)\}<\/Data>""",
-    """<Data Name='ProcessId'>({pid}\d+)""",
+    """<Data Name='ProcessId'>({pid}\d{1,100})""",
   ]
 
 ```

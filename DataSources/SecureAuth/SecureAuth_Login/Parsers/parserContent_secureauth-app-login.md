@@ -12,14 +12,14 @@ Name = secureauth-app-login
       """exabeam_raw=.*({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
 	"""<UserHostAddress>({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
 	"""<HostName>({host}[^<]+)""",
-	"""<EventID>({event_code}\d+)</EventID>""",
+	"""<EventID>({event_code}\d{1,100})</EventID>""",
 	"""<UserID>({user}[^<]+)""",
 	"""<Realm>({app}[^<]+)""",
      	"""<UserAgent>(?:-|({browser}[\w\-]+))""",
      	"""<UserAgent>(?:-|({browser}[\w\-]+)\/[\d\._]+)""",
      	"""<UserAgent>(?:-|({browser}[^\/]+).+({os}iOS|Android|BlackBerry|iPhone OS|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin))""",
       	"""<UserAgent\>(?:-|Mozilla\/.+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
-      	"""<UserAgent>(?:-|Mozilla\/.+\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+Gecko\/\d+\s+({browser}\w+))"""
+      	"""<UserAgent>(?:-|Mozilla\/.+\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+Gecko\/\d{1,100}\s{1,100}({browser}\w+))"""
     ]
   }
 ```

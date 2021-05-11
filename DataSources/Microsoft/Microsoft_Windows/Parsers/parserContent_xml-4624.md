@@ -13,7 +13,7 @@ Name = xml-4624
       """({event_name}An account was successfully logged on)""",
       """<Computer>([^<>]+?[\\\/]+)?({host}({dest_host}[\w\-]+)[^<]*)</Computer>""",
       """<EventID>({event_code}[^<]+)</EventID>""",
-      """<Data Name=('|")LogonType('|")>({logon_type}\d+)</Data>""",
+      """<Data Name=('|")LogonType('|")>({logon_type}\d{1,100})</Data>""",
       """<Data Name=('|")TargetUserName('|")>({user}[^<]+)</Data>""",
       """<Data Name=('|")TargetDomainName('|")>(-|({domain}[^<]+))<\/Data>""",
       """<Data Name=('|")ProcessName('|")>(?:-|({process}({process_directory}[^<>]*?[\\\/]+)?({process_name}[^<>\\\/]+)))</Data>""",
@@ -22,7 +22,7 @@ Name = xml-4624
       """<Data Name=('|")AuthenticationPackageName('|")>({auth_package}[^<]+)</Data>""",
       """<Data Name=('|")TargetLogonId('|")>({logon_id}[^<]+)</Data>""",
       """<Data Name=('|")TargetUserSid('|")>({user_sid}[^<]+)</Data>""",
-      """<Data Name=('|")WorkstationName('|")>([A-Fa-f:\d.]+|-|({src_host_windows}[^<]+?))\s*</Data>""",
+      """<Data Name=('|")WorkstationName('|")>([A-Fa-f:\d.]+|-|({src_host_windows}[^<]+?))\s{0,100}</Data>""",
       """EventRecordID>({record_id}[^<]+)<""",
       """<Data Name=('|")SubjectUserSid('|")>({subject_sid}[^<]+)</Data>""",
       """<Data Name=('|")KeyLength('|")>({key_length}[^<]+)</Data>"""

@@ -9,9 +9,9 @@ Name = tanium-process-created
     TimeFormat = "yyyy-MM-dd HH:mm:ss.SSSZ"
     Conditions = [ """ Tanium """, """Question="Exabeam-Process-Creations-Test"""", """ Start-Time="2""" ]
     Fields = [
-      """({host}[\w.\-]+)\s+Tanium """,
+      """({host}[\w.\-]+)\s{1,100}Tanium """,
       """\sEndpoint-Name="(-|({dest_host}[\w.\-]+))"""",
-      """\sStart-Time="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d+(\+|\-)\d\d:\d\d)""",
+      """\sStart-Time="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{1,100}(\+|\-)\d\d:\d\d)""",
       """\sUsername="(-|({user}[^"]+))"""",
       """\sDomain="(-|({domain}[^"]+))"""",
       """\sMD5="(-|({md5}[^"]+))"""",

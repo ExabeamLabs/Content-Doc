@@ -8,7 +8,7 @@ Name = n-forwarded-cef-mcafee-epo
     DataType = "alert"
     TimeFormat = "epoch"
     Conditions = [ """|McAfee|ESM|""", """|367-""" ]
-    Fields = [ """\send=({time}\d+).*\snitroThreat_Category=(?!ops\.task\.cancel|hip\.file|None)""",
+    Fields = [ """\send=({time}\d{1,100}).*\snitroThreat_Category=(?!ops\.task\.cancel|hip\.file|None)""",
       """\sdeviceTranslatedAddress=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sshost=({src_host}[^\s]+)""",

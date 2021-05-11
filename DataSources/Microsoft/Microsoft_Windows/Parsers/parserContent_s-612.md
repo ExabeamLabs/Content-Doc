@@ -14,10 +14,10 @@ Name = s-612
     """exabeam_host=({host}[^\s]+)""",
     """ComputerName=({host}[\w.\-]+)""",
     """({event_code}612)""",
-    """Changed By:.*\s+User Name:\s+({user}[^\s]+)"""
-    """\s+Domain Name:\s+({domain}[^\s]+)""",
-    """\s+Logon ID:\s+\([^,]+,({logon_id}[^)]+)""",
-    """Policy Change:\s+New Policy:(({policy}[^\n]+)\n+)+\s*Changed By:"""
+    """Changed By:.*\s{1,100}User Name:\s{1,100}({user}[^\s]+)"""
+    """\s{1,100}Domain Name:\s{1,100}({domain}[^\s]+)""",
+    """\s{1,100}Logon ID:\s{1,100}\([^,]+,({logon_id}[^)]+)""",
+    """Policy Change:\s{1,100}New Policy:(({policy}[^\n]+)\n+)+\s{0,100}Changed By:"""
   ]
   DupFields = [ "host->dest_host" ]
 }

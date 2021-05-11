@@ -9,7 +9,7 @@ Name = raw-104
   TimeFormat = "MMM dd HH:mm:ss yyyy"
   Conditions = [ """ 104 """, """Microsoft-Windows-Eventlog""", """log file was cleared.""" ]
   Fields = [
-    """({host}\S+)\s+MSWinEventLog\s+\S+\s+\S+\s+\S+\s+\S+\s+({time}\w+ \d+ \d\d:\d\d:\d\d \d+)\s+({event_code}104)\s+Microsoft-Windows-Eventlog\s+(({domain}[^\\]+?)\\+)?({user}[^\s]+)"""
+    """({host}\S+)\s{1,100}MSWinEventLog\s{1,100}\S+\s{1,100}\S+\s{1,100}\S+\s{1,100}\S+\s{1,100}({time}\w+ \d{1,100} \d\d:\d\d:\d\d \d{1,100})\s{1,100}({event_code}104)\s{1,100}Microsoft-Windows-Eventlog\s{1,100}(({domain}[^\\]+?)\\+)?({user}[^\s]+)"""
     """({event_name}The.*?log file was cleared.)""",
   ]
   DupFields = [ "host->dest_host" ]

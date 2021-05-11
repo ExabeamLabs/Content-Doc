@@ -11,7 +11,7 @@ Name = q-leef-securesphere-db-query
   Conditions = [ """Authenticated=True""", """Event Type=Query""", """LEEF:""", """|SecureSphere|""", """User Type=Valid|""" ]
   Fields = [
     """exabeam_host=({host}[\w\-.]+)""",
-    """\|devTime=({time}\d+ \w+ \d+ \d\d:\d\d:\d\d)""",
+    """\|devTime=({time}\d{1,100} \w+ \d{1,100} \d\d:\d\d:\d\d)""",
     """usrName=(({domain}[^\\|]+)(\\))?({user}[^|]+)""",
     """ApplicationName=({app}[^|]+)""",
     """Service Name=({service_name}[^|]+)""",
@@ -20,7 +20,7 @@ Name = q-leef-securesphere-db-query
     """src=((?=0\.0\.0\.0)|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))""",
     """dst=((?=0\.0\.0\.0)|({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))""",
     """\|Operation=(?: |({db_operation}[^|]+))""",
-    """\|Response Size=({response_size}\d+)"""
+    """\|Response Size=({response_size}\d{1,100})"""
   ]
   DupFields = [ "src_ip->host" ]
 }

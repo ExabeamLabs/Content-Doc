@@ -9,12 +9,12 @@ Name = cef-kaba-badge-access
   TimeFormat = "epoch"
   Conditions = [ """|KABA|EXOS 9300|""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """([^\|]*\|){5}({outcome}[^\|]+)"""
-    """\Wrt=({time}\d+)""",
+    """\Wrt=({time}\d{1,100})""",
     """\Wduser=({user}[^\s]+)""",
-    """\Wmsg=({location_door}.+?)\s*(\w+=|$)""",
-    """\Wcs2=({badge_id}\d+)"""
+    """\Wmsg=({location_door}.+?)\s{0,100}(\w+=|$)""",
+    """\Wcs2=({badge_id}\d{1,100})"""
   ]
 }
 ```

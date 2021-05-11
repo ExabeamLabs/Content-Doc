@@ -12,7 +12,7 @@ Name = mcafee-siem-4720
       """({event_name}A user account was created)""",
       """"src_ip":"({src_ip}[^"]+)""",
       """"dst_ip":"({dest_ip}[^"]+)""",
-      """"id":\d*({event_code}4720)""",
+      """"id":\d{0,100}({event_code}4720)""",
       """"firsttime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
       """"DomainID":"({domain}[^"]+)""",
       """"HostID":"({host}[^"]+)""",

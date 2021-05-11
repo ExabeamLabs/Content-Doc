@@ -11,7 +11,7 @@ Name = cisco-ftd-721016
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[^\s]+)""",
-    """%FTD-({priority}\d)-({event_code}\d+)""",
+    """%FTD-({priority}\d)-({event_code}\d{1,100})""",
     """user\s(({domain}[^\\]+)\\+)?({user}[^,]+),""",
     """IP\s({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]

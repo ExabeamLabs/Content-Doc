@@ -9,7 +9,7 @@ Name = q-ldap-auth-attempt-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """"authentication":""", """"status":"""", """"network":"""", """"type":"ldap"""", """LDAP bind without requesting signing""" ]
   Fields = [
-    """"@timestamp":"({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+Z)""",
+    """"@timestamp":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}Z)""",
     """"index":"[^\{\}]*?"host":"({host}[\w\-.]+)""",
     """"host":"({host}[\w\-.]+)"[^\{\}]*?"index":"""",
     """"status":"({outcome}[^"]+)""",

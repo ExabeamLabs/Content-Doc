@@ -11,11 +11,11 @@ Name = cef-phishme-security-alert
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
     """({alert_type}Rule Match)""",
-    """\Wrt=({time}\w+ \d+ \d\d\d\d \d\d:\d\d:\d\d)""",
-    """\Wduser=(|({user_email}.+?))(\s+\w+=|\s*$)""",
-    """\Wsuser=(|({malware_url}.+?))(\s+\w+=|\s*$)""",
-    """\Wcs2=(|({alert_name}.+?))(\s+\w+=|\s*$)""",
-    """\Wcs4=(|({additional_info}.+?))(\s+\w+=|\s*$)""",
+    """\Wrt=({time}\w+ \d{1,100} \d\d\d\d \d\d:\d\d:\d\d)""",
+    """\Wduser=(|({user_email}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wsuser=(|({malware_url}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wcs2=(|({alert_name}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wcs4=(|({additional_info}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
 ```

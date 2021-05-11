@@ -9,14 +9,14 @@ Name = s-unix-auth-event
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
   Conditions = [ """: Authentication <""", """> user: <""", """> account: <""", """> service: <""" ]
   Fields = [
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d[\+\-]\d+:\d+)\s+({host}[\w\-.]+)""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d[\+\-]\d{1,100}:\d{1,100})\s{1,100}({host}[\w\-.]+)""",
     """\d\d:\d\d:\d\d\s({host}[^\s]+)""",
-    """\sAuthentication\s*<({outcome}[^\s>]+)>""",
-    """\sAuthentication\s*<({outcome}[^\s>]+)\s+({auth_method}[^>]+)>""",
-    """\suser:\s*<({user}[^\s\>]+)>""",
-    """\saccount:\s*<(({domain}[^\\\s>]+)\\+)?({account}[^\\\s>]+)>""",
-    """\sservice:\s*<({event_code}[^>]+)>""",
-    """Caused by:\s*({failure_reason}[^\s\(:>]+)"""
+    """\sAuthentication\s{0,100}<({outcome}[^\s>]+)>""",
+    """\sAuthentication\s{0,100}<({outcome}[^\s>]+)\s{1,100}({auth_method}[^>]+)>""",
+    """\suser:\s{0,100}<({user}[^\s\>]+)>""",
+    """\saccount:\s{0,100}<(({domain}[^\\\s>]+)\\+)?({account}[^\\\s>]+)>""",
+    """\sservice:\s{0,100}<({event_code}[^>]+)>""",
+    """Caused by:\s{0,100}({failure_reason}[^\s\(:>]+)"""
   ]
   DupFields = [ "host->dest_host" ]
 }

@@ -9,7 +9,7 @@ Name = physical-badge-access-3
   TimeFormat = "yyyy-MM-dd' 'HH:mm:ss.S"
   Conditions = [ """MessageType="""", """MessageLocaleOffset="""", """CardNumber="""", """EmployeeID="""", """Direction="""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """EmployeeID="({user_id}[^"]+)"""",
     """FirstName="({user_firstname}[^"]+)"""",
     """LastName="({user_lastname}[^"]+)"""",

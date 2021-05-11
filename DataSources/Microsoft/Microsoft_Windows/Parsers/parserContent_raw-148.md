@@ -9,9 +9,9 @@ Name = raw-148
     DataType = "logout-remote"
     Conditions = [ """Event ID: 148""", """has been closed between the server"""  ]
     Fields = [ 
-      """Event ID:\s*({event_code}\d+)""",
-      """ComputerName(:|=)\s*({host}[\w.-]+)""" 
-      """TimeStamp:\s*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+      """Event ID:\s{0,100}({event_code}\d{1,100})""",
+      """ComputerName(:|=)\s{0,100}({host}[\w.-]+)""" 
+      """TimeStamp:\s{0,100}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """({app}Rdp)CoreTS""",
       """({activity}Channel ({channel}[^\s]+) has been closed between the server and the client)"""
     ]

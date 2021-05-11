@@ -9,7 +9,7 @@ Name = cef-aws-netflow-connection
   TimeFormat = "epoch_sec"
   Conditions = [ """CEF:""", """|Skyformation|""", """ eni-""", """requestClientApplication=AWS-FlowLogs""" ]
   Fields = [
-    """cs6=\d+\s+(unknown|({account_id}\S+))\s+({interface_id}\S+)\s+(-|({src_ip}[A-Fa-f:\d.]+))\s+(-|({dest_ip}[A-Fa-f:\d.]+))\s+(-|({src_port}\d+))\s+(-|({dest_port}\d+))\s+(-|({protocol}\S+))\s+(-|({packets}\S+))\s+(-|({bytes}\d+))\s+({time}\d+)\s+\S+\s+(-|({action}\S+))\s+(-|({outcome}\S+))""",
+    """cs6=\d{1,100}\s{1,100}(unknown|({account_id}\S+))\s{1,100}({interface_id}\S+)\s{1,100}(-|({src_ip}[A-Fa-f:\d.]+))\s{1,100}(-|({dest_ip}[A-Fa-f:\d.]+))\s{1,100}(-|({src_port}\d{1,100}))\s{1,100}(-|({dest_port}\d{1,100}))\s{1,100}(-|({protocol}\S+))\s{1,100}(-|({packets}\S+))\s{1,100}(-|({bytes}\d{1,100}))\s{1,100}({time}\d{1,100})\s{1,100}\S+\s{1,100}(-|({action}\S+))\s{1,100}(-|({outcome}\S+))""",
   ]
 }
 ```

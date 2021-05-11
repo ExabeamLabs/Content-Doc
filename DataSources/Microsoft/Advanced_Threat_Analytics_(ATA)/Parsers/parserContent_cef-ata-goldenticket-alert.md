@@ -11,11 +11,11 @@ Name = cef-ata-goldenticket-alert
   Fields = [
     """exabeam_host=([^=@]+@)?({host}[\w.\-]+)""",
     """CEF:([^\|]*\|){4}({alert_type}[^\|]+)\|({alert_name}[^\|]+)\|({alert_severity}[^\|]+)\|""",
-    """\WexternalId=({alert_id}\d+)""",
+    """\WexternalId=({alert_id}\d{1,100})""",
     """\Wstart=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """\Wapp=({service}.+?)\s+(\w+=|$)""",
-    """\Wmsg=({additional_info}.+?)\s+(\w+=|$)""",
-    """\Wsuser=(?:(({user_lastname}[\w\']+), ({user_firstname}\w+))|({user}[^\s]+))\s+(\w+=|$)"""
+    """\Wapp=({service}.+?)\s{1,100}(\w+=|$)""",
+    """\Wmsg=({additional_info}.+?)\s{1,100}(\w+=|$)""",
+    """\Wsuser=(?:(({user_lastname}[\w\']+), ({user_firstname}\w+))|({user}[^\s]+))\s{1,100}(\w+=|$)"""
   ]
 }
 ```

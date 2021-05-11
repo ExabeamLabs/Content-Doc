@@ -9,11 +9,11 @@ Name = cef-salesforce-app-activity-23
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """Action\=SetupEntityAccessAudit_Profile_ConnectedApplication_DisabledCustom;""", """Sales Cloud""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",  
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",  
     """CreatedDate\\=({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     """CreatedBy\.Username\\=({user_email}[^@]+@({email_domain}[^\s;]+))""",
     """Action\\=({activity}[^;]+)""",
-    """Display\\=({additional_info}.+?)\s*(\w+=|$)""",
+    """Display\\=({additional_info}.+?)\s{0,100}(\w+=|$)""",
     """Display\\=Changed profile ({object}.+?): ({resource}.+?) connected""",
     """({app}Sales Cloud)""",
   ]

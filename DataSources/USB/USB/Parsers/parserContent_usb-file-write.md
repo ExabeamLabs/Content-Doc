@@ -11,7 +11,5 @@ Name = usb-file-write
   Fields = [
     """exabeam_host=({host}[^,\s]+)""",
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-    """({device_id}USB[^"]+)",\d+,"({dest_host}[^"]+)","*({user}[^",]+)"*,"*({file_name}[^"]+)"*,"*({bytes}[^",]+)"*,\d+,"({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d)""", 
-  ]
-}
+    """({device_id}USB[^"]+)",\d{1,100}
 ```

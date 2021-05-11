@@ -10,17 +10,17 @@ Name = juniper-owa
   Conditions = [ "AUT22670", "Login succeeded for" ]
   Fields = [
     """\sfw=({host}[\w\-\.]+)""",
-    """\w+\s*\d+\s*\d\d:\d\d:\d\d\s+({host}[\w.\-]+)\s*\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d""",
-    """\stime="+({time}\d+-\d+-\d+ \d+:\d+:\d+).+?user""",
+    """\w+\s{0,100}\d{1,100}\s{0,100}\d\d:\d\d:\d\d\s{1,100}({host}[\w.\-]+)\s{0,100}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d""",
+    """\stime="{1,20}({time}\d{1,100}-\d{1,100}-\d{1,100} \d{1,100}:\d{1,100}:\d{1,100}).+?user""",
     """src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s""",
-    """user=({user}.+?)\s+realm=""",
-    """realm="+({app}[^"]+)""",
+    """user=({user}.+?)\s{1,100}realm=""",
+    """realm="{1,20}({app}[^"]+)""",
     """agent=.*?({browser}Trident/7.0)""",
-    """agent="+({user_agent}[^"]+)"""",
+    """agent="{1,20}({user_agent}[^"]+)"""",
     """agent=.*?({os}Windows[^;)]*)""",
-    """agent=.*?Mozilla[^\s]+\s*\(({os}[^\)]+).*({browser}[\d.]+\s+(Mobile )?Safari)""",
-    """agent=[^\s]+\s+\(((Windows|X11|Macintosh|U|compatible);( (U|I);)?\s+)?({os}[^;\)]+).*\s({browser}(Chrome|Firefox)/\d+)""",
-    """agent=.*({browser}MSIE\s+\d[^\s,;\)]+)"""
+    """agent=.*?Mozilla[^\s]+\s{0,100}\(({os}[^\)]+).*({browser}[\d.]+\s{1,100}(Mobile )?Safari)""",
+    """agent=[^\s]+\s{1,100}\(((Windows|X11|Macintosh|U|compatible);( (U|I);)?\s{1,100})?({os}[^;\)]+).*\s({browser}(Chrome|Firefox)/\d{1,100})""",
+    """agent=.*({browser}MSIE\s{1,100}\d[^\s,;\)]+)"""
   ]
 }
 ```

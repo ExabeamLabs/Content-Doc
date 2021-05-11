@@ -6,9 +6,7 @@ Name = cl-cisco-dns-response-sk4-4
   Lms = Direct
   Conditions = ["""TenantId""", """UmbrellaDNSLogs_CL""", """Identites_s"""]
   Fields=${CiscoParsersTemplates.cef-cisco-dns-response-sk4-template.Fields}[
-    """TimeGenerated"+:"+({time}[^"]+)""",
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """"Categories_s"+:"+({category}[^,"]+)?"+,""",
-  ]
-}
+    """TimeGenerated"{1,20}:"{1,20}({time}[^"]+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """"Categories_s"{1,20}:"{1,20}({category}[^,"]+)?"{1,20}
 ```

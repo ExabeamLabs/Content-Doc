@@ -12,15 +12,15 @@ Name = symantec-usb-insert
     """exabeam_host=({host}[^,\s]+)""",
     """(\s|,)({dest_host}[^,\s]+),Device Manager Message""",
     """,Local: (0\.0\.0\.0|({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))""",
-    """Begin:\s+({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """User:\s+({user}.+?),Domain""",
+    """Begin:\s{1,100}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+    """User:\s{1,100}({user}.+?),Domain""",
     """(?i)({activity}device was allowed successfully)""",
-    """Domain:\s+({domain}[^,]+),""",
-    """\[class\]:(?:\?|({device_type}.+?))\s+\[guid\]:""",
-    """Device ID:\s+({device_id}.+)&\d+""",
-    """\[deviceID\]:({device_id}.+)&\d+""",
-    """The device was allowed successfully\.\s+({activity_details}.*?)\s+\[guid""",
-    """The device was Allowed successfully\.\s+({activity_details}[^,]+?),"""
+    """Domain:\s{1,100}({domain}[^,]+),""",
+    """\[class\]:(?:\?|({device_type}.+?))\s{1,100}\[guid\]:""",
+    """Device ID:\s{1,100}({device_id}.+)&\d{1,100}""",
+    """\[deviceID\]:({device_id}.+)&\d{1,100}""",
+    """The device was allowed successfully\.\s{1,100}({activity_details}.*?)\s{1,100}\[guid""",
+    """The device was Allowed successfully\.\s{1,100}({activity_details}[^,]+?),"""
   ]
   SOAR {
     IncidentType = "generic"

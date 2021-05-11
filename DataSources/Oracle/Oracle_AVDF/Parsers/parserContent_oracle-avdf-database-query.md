@@ -7,7 +7,7 @@ Name = oracle-avdf-database-query
   Fields = ${Oracle-AVDFParserTemplates.s-oracle-avdf-events.Fields}[
     """TARGET_OBJECT="({table_name}[^"]+)"""",
     """COMMAND_CLASS="({db_operation}[^"]+)"""",
-    """COMMAND_TEXT="(\s+|({db_query}[^"]+?))\s*("|$)""",
+    """COMMAND_TEXT="(\s{1,100}|({db_query}[^"]+?))\s{0,100}("|$)""",
   ]
 }
 s-oracle-avdf-events = {

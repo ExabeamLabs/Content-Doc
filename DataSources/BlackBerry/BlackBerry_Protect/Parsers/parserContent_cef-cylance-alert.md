@@ -10,18 +10,18 @@ Name = cef-cylance-alert
   Conditions = [ """CEF:""", """|Cylance|PROTECT|""", """eventId="""]
   Fields = [
     """\Wdvchost=({host}[\w\-.]+)""",
-    """\Wrt=({time}\d+)""",
-    """\WeventId=({alert_id}\d+)""",
+    """\Wrt=({time}\d{1,100})""",
+    """\WeventId=({alert_id}\d{1,100})""",
     """\Wdhost=({dest_host}[\w\-.]+)""",
     """\Wdst=({dest_ip}[A-Fa-f:\d.]+)""",
     """\Wduser=\(?((({domain}[^\\\s\(\),]+)\\+)?(SYSTEM|({user}[^\\\s\(\),]+)))[^\)]*\)?\s""",
     """CEF:([^\|]*\|){6}(Unknown|({alert_severity}[^\|]+))""",
     """CEF:([^\|]*\|){5}({alert_name}[^\|]+)""",
-    """\Wcs4=({alert_name}.+?)\s+(\w+=|$)""",
-    """\WfilePath=(|({malware_url}.+?))\s+(\w+=|$)""",
-    """\Wmsg=(|({additional_info}.+?))\s+(\w+=|$)""",
-    """\Wact=(|({outcome}.+?))\s+(\w+=|$)""",
-    """\Wad\.Process_,Name=(|({process}({directory}(?:(\w+:)*([\\\/]+[^\\\/"]+?)+?)?[\\\/]+)({process_name}[^"\\\/]+?)))\s+(\w+=|$)""",
+    """\Wcs4=({alert_name}.+?)\s{1,100}(\w+=|$)""",
+    """\WfilePath=(|({malware_url}.+?))\s{1,100}(\w+=|$)""",
+    """\Wmsg=(|({additional_info}.+?))\s{1,100}(\w+=|$)""",
+    """\Wact=(|({outcome}.+?))\s{1,100}(\w+=|$)""",
+    """\Wad\.Process_,Name=(|({process}({directory}(?:(\w+:)*([\\\/]+[^\\\/"]+?)+?)?[\\\/]+)({process_name}[^"\\\/]+?)))\s{1,100}(\w+=|$)""",
   ]
   DupFields = [ "alert_name->alert_type" ]
 }

@@ -11,7 +11,7 @@ Name = kemp-lb-remote-login
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[\w.\-]+)""",
-    """User\s+({user}.+?)\s+\(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\)""",
+    """User\s{1,100}({user}.+?)\s{1,100}\(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\)""",
     """({event_name}Logged in)""",
     """({log_type}logger)"""
   ]

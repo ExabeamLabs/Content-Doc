@@ -10,11 +10,11 @@ Name = unix-local-logon-1
   Conditions = [ """type=LOGIN""", """auid""" ]
   Fields = [
     """,({time}\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})""",
-    """pid=({process_id}\d+)""",
-    """\suid=({user_id}\d+)""",
-    """\sses=({session_id}\d+)""",
-    """\sauid=({account_used_id}\d+)""",
-    """\d\d:\d\d:\d\d\s+({host}[^\s]+)\s"""
+    """pid=({process_id}\d{1,100})""",
+    """\suid=({user_id}\d{1,100})""",
+    """\sses=({session_id}\d{1,100})""",
+    """\sauid=({account_used_id}\d{1,100})""",
+    """\d\d:\d\d:\d\d\s{1,100}({host}[^\s]+)\s"""
   ]
 }
 ```

@@ -10,7 +10,7 @@ Name = cef-tripwire-file-alert
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ """|Tripwire|Enterprise|""", "elementOIDLabel" ]
   Fields = [
-    """\|rt=({time}\w+ \d+ \d\d\d\d \d\d:\d\d:\d\d)""",
+    """\|rt=({time}\w+ \d{1,100} \d\d\d\d \d\d:\d\d:\d\d)""",
     """\|dvchost=({host}[^|]+)\|""",
     """\|duser=(?:not available|(({domain}[^\\]+)\\)?({user}[^|]+))\|""",
     """\|Tripwire\|([^|]*\|){3}({alert_name}[^|]+)\|""",

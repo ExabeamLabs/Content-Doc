@@ -6,8 +6,8 @@ Name = sentinelone-dns-response-1
   Conditions = [ """"SentinelOne"""", """Deep Visibility Endpoint""", """dns {""","""results:""" ]
   Fields = ${SentinelOneParserTemplates.sentinelone-activity.Fields} [
     """({event_name}dns)""",
-    """query:\s*\\?"+({query}[^"]+?)\.?\\?"""",
-    """results:\s*\\?"+({response}[^"]+?)\\?""""
+    """query:\s{0,100}\\?"{1,20}({query}[^"]+?)\.?\\?"""",
+    """results:\s{0,100}\\?"{1,20}({response}[^"]+?)\\?""""
   ]
 }
 ```

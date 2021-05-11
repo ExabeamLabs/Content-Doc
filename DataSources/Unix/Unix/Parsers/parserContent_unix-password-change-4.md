@@ -10,9 +10,9 @@ Name = unix-password-change-4
   Conditions = [ """couldn't update the""", """keyring password:""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """({host}[\w.\-]+)\s+passwd:""",
+    """({host}[\w.\-]+)\s{1,100}passwd:""",
     """couldn't update the '({account}[^']+)""",
-    """keyring password: ({failure_reason}.+?)\s*$""",
+    """keyring password: ({failure_reason}.+?)\s{0,100}$""",
   ]
 }
 ```

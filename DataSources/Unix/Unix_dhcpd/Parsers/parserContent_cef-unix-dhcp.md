@@ -8,7 +8,7 @@ Name = cef-unix-dhcp
   DataType = "dhcp"
   TimeFormat = "epoch"
   Conditions = [ """|Unix|Unix||arcsight:""", "dhcpd" ]
-  Fields = [ """\srt=({time}\d+)""",
+  Fields = [ """\srt=({time}\d{1,100})""",
     """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sdvchost=({host}[\w.\-]+)""",
     """DHCPREQUEST for ({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) from.+?\(({dest_host}[^\)]+)""",

@@ -10,10 +10,10 @@ Name = s-windows-process-created
   TimeFormat = "yyyyMMddHHmmss.SSSSSS"
   Conditions = [ """ProcessName="""", """ProcessId=""", """CommandLine="""" ]
   Fields = [
-    """StartTime="({time}\d+\.\d+)""",
+    """StartTime="({time}\d{1,100}\.\d{1,100})""",
     """Host="({host}[^"]+)""",
-    """ProcessId=({process_guid}.+?)\s+(\w+=|$)""",
-    """CommandLine="*({command_line}[^"]+?)\s*"""",
+    """ProcessId=({process_guid}.+?)\s{1,100}(\w+=|$)""",
+    """CommandLine="{0,20}({command_line}[^"]+?)\s{0,100}"""",
     """Path="({path}[^"]+)""",
     """Path="({process}({directory}[^"]+?)({process_name}[^"\\]+))"""",
     """ProcessName="({process_name}[^"]+)""",

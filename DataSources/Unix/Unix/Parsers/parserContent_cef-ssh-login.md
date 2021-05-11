@@ -9,14 +9,14 @@ Name = cef-ssh-login
   TimeFormat = "epoch"
   Conditions = [ """|Unix|Unix|""", """|Accepted""" ]
   Fields = [
-    """exabeam_EventTime=({eventtime}\d+)""",
-    """\srt=({time}\d+)""",
+    """exabeam_EventTime=({eventtime}\d{1,100})""",
+    """\srt=({time}\d{1,100})""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\sduser=({user}.+?)\s+\w+=""",
+    """\sduser=({user}.+?)\s{1,100}\w+=""",
     """\sdvc(host)?=({host}[^\s]+)""",
     """ dst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """ dhost=({dest_host}[^\s]+)""",
-    """ cs4=({logon_id}\d+)""",
+    """ cs4=({logon_id}\d{1,100})""",
     """\|Accepted ({auth}.+?)\|""",
     """({event_code}ssh)"""
   ]

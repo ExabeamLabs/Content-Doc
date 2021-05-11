@@ -11,11 +11,11 @@ Name = cef-forcepoint-it-dlp-alert
   Fields = [
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """\d\d:\d\d:\d\d ({host}[\w\-.]+) CEF:""",
-    """\|SIEM Notification\|(?:[^\|]+\|){10}\s+((NT AUTHORITY|({domain}[^\/\s]+))\/)?(SYSTEM|({user}[^\s\|]+))\s+\|""",
-    """SIEM Notification\|(?:[^\|]+\|){7}\s+([^\\]*\\)?({src_host}[^\s\|\$]+)\$?\s*""",
-    """SIEM Notification\|(?:[^\|]+\|){3}\s+({alert_name}[^\|]+)\s+\|""",
-    """SIEM Notification\|(?:[^\|]+\|){4}\s+({alert_type}[^\|]+)\s+\|""",
-    """SIEM Notification\|(?:[^\|]+\|){6}\s+({target}[^\|]+)\s+\|"""
+    """\|SIEM Notification\|(?:[^\|]+\|){10}\s{1,100}((NT AUTHORITY|({domain}[^\/\s]+))\/)?(SYSTEM|({user}[^\s\|]+))\s{1,100}\|""",
+    """SIEM Notification\|(?:[^\|]+\|){7}\s{1,100}([^\\]*\\)?({src_host}[^\s\|\$]+)\$?\s{0,100}""",
+    """SIEM Notification\|(?:[^\|]+\|){3}\s{1,100}({alert_name}[^\|]+)\s{1,100}\|""",
+    """SIEM Notification\|(?:[^\|]+\|){4}\s{1,100}({alert_type}[^\|]+)\s{1,100}\|""",
+    """SIEM Notification\|(?:[^\|]+\|){6}\s{1,100}({target}[^\|]+)\s{1,100}\|"""
   ]
 }
 ```

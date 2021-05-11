@@ -9,12 +9,12 @@ Name = aix-task-created-1
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """) CMD (""", """ CRON[""", """]: (""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\w+\s+\d+\s+\d\d:\d\d:\d\d\s+({host}[\w\-.]+)""",
+    """\w+\s{1,100}\d{1,100}\s{1,100}\d\d:\d\d:\d\d\s{1,100}({host}[\w\-.]+)""",
     """\(({user}[^\)]+)\) CMD""",
-    """\sCMD\s+\(({task_name}[^\s\)]+)""",
-    """\sCMD \(\s*({command_line}[^\)]+)\)""",
+    """\sCMD\s{1,100}\(({task_name}[^\s\)]+)""",
+    """\sCMD \(\s{0,100}({command_line}[^\)]+)\)""",
   ]
 }
 ```

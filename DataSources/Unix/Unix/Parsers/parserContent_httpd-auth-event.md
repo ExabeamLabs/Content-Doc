@@ -10,10 +10,10 @@ Name = httpd-auth-event
   Conditions = [ """pam_""", """ httpd: """, """(httpd:auth):""", """: authentication""", """tty=""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """({host}[\w\-.]+)\s+httpd:""",
-    """\Wuser=({user}.+?)(\s+\w+=|\s*$)""",
+    """({host}[\w\-.]+)\s{1,100}httpd:""",
+    """\Wuser=({user}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wrhost=(|(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[\w\-.]+)))\s""",
-    """pam_(sss|unix)\(httpd:auth\):\s+authentication\s+({outcome}success|failure);""",
+    """pam_(sss|unix)\(httpd:auth\):\s{1,100}authentication\s{1,100}({outcome}success|failure);""",
     """({event_code}httpd)""",
   ]
 }

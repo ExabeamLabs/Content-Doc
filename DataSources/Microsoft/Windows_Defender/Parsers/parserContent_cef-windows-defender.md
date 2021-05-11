@@ -12,7 +12,7 @@ Name = cef-windows-defender
      """Hostname":"({host}[^"]+)""",
      """EventTime":"({time}[^"]+)""",
      """Category Name":"({alert_name}[^"]+)""",
-     """SeverityValue":({alert_severity}\d+)""",
+     """SeverityValue":({alert_severity}\d{1,100})""",
      """Category ID":"({alert_type}[^"]+)""",
      """Threat Name":"({category}[^"]+)""",
      """Domain":"({domain}[^"]+)""",
@@ -20,14 +20,14 @@ Name = cef-windows-defender
      """Detection User":"([^\\]+)\\*({user}[^"]+)""",
      """Detection ID":"\{*({alert_id}[^"\}]+)""",
      """Path":"(\w+:_)?({file_path}({file_parent}(?:[^";]+)?[\\\/;])?({file_name}[^\\\/";]+?(\.({file_ext}[^\\\/\.;"]+))))""",
-     """"Path"\s*:\s*"({file_path}[^";]+)""",
-     """"Path"\s*:\s*"(?:({file_parent}[^"]+?)\\+[^"\\;]+)""",
-     """"Path"\s*:\s*"[^"]+\\({file_name}[^";,\s\&]+(\.({file_ext}[^"\\.;\s\&\-]+)))"""
+     """"Path"\s{0,100}:\s{0,100}"({file_path}[^";]+)""",
+     """"Path"\s{0,100}:\s{0,100}"(?:({file_parent}[^"]+?)\\+[^"\\;]+)""",
+     """"Path"\s{0,100}:\s{0,100}"[^"]+\\({file_name}[^";,\s\&]+(\.({file_ext}[^"\\.;\s\&\-]+)))"""
      """UserID":"({user_sid}[^"]+)""",
      """Action Name":"({outcome}[^"]+)""",
      """Additional Actions String":"({additional_info}[^".]+)""",
      """Process Name":"(?:Unknown|({process}({directory}[^"]*?)(\\+({process_name}[^"\\]+?))?))"""",
-     """Error Description":"({failure_reason}[^"]+)(\s*")+""",
+     """Error Description":"({failure_reason}[^"]+)(\s{0,100}")+""",
      
   ]
 }

@@ -9,14 +9,14 @@ Name = q-trendmicro-dlp-alert
   TimeFormat = "MM/dd/yyyy HH:mm:ss"
   Conditions = [ "Digital asset transmission detected" ," Template:" ]
   Fields = [
-        """exabeam_host=(.+?@\s*)?({host}[^\s]+)""",
-	"""Date\/Time:\s*({time}\d+\/\d+\/\d\d\d\d \d\d:\d\d:\d\d)""",
-	"""Endpoint:\s*({src_host}[^\s]+)""",
-        """User:\s*({user}.+?)\s+\w+:""",
-        """Domain:\s*({domain}[^\\]+)\\""",
-        """Channel:\s*({alert_type}.+?)\s+\w+:""",
-        """Channel:\s*({protocol}.+?)\s+\w+:""",
-        """Rule:\s*({alert_name}.+?)\s*$"""
+        """exabeam_host=(.+?@\s{0,100})?({host}[^\s]+)""",
+	"""Date\/Time:\s{0,100}({time}\d{1,100}\/\d{1,100}\/\d\d\d\d \d\d:\d\d:\d\d)""",
+	"""Endpoint:\s{0,100}({src_host}[^\s]+)""",
+        """User:\s{0,100}({user}.+?)\s{1,100}\w+:""",
+        """Domain:\s{0,100}({domain}[^\\]+)\\""",
+        """Channel:\s{0,100}({alert_type}.+?)\s{1,100}\w+:""",
+        """Channel:\s{0,100}({protocol}.+?)\s{1,100}\w+:""",
+        """Rule:\s{0,100}({alert_name}.+?)\s{0,100}$"""
        ]
 }
 ```

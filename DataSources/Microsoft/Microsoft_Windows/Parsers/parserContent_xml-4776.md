@@ -14,7 +14,7 @@ Name = xml-4776
       """<Data Name(\\)?='Workstation'>(\\+)?(({dest_ip}(((\d{1,3}\.){1,3}\d{1,3})|([A-Fa-f0-9]*:[A-Fa-f0-9:.]+)))|(?:(?!NULL)({dest_host}[^\s.]+)(\.[^\s]+)?))</Data>""",
       """<Computer>({host}[^<]+)</Computer>""",
       """The ({login_type}computer|domain)(\s\w+)? attempted to validate the credentials""",
-      """<EventID>({event_code}\d+)</EventID>""",
+      """<EventID>({event_code}\d{1,100})</EventID>""",
       """<Computer>(?!(?:[A-Fa-f:\d.]+))[^<.]+(\.({domain}[^<.]+)[^<]*)?</Computer>""",
       """<Data Name(\\)?='TargetUserName'>({user}[^@<]+?)(?:@({domain}[^<.]+)[^<]*)?</Data>""",
       """<Data Name(\\)?='Status'>({result_code}[^<]+)</Data>"""

@@ -9,15 +9,15 @@ Name = cef-carbonblack-usb-activity
   TimeFormat = "epoch"
   Conditions = [ """|Carbon Black|Protection|""", "tached|" ]
   Fields = [
-    """\srt=({time}\d+)""",
+    """\srt=({time}\d{1,100})""",
     """\|Carbon Black\|Protection\|(.*?\|){2}({activity}[^\|]+)\|""",
-    """(\||\s)dst=(|({dest_ip}.+?))(\s+[\w-]+=|\s*$)""",
-    """(\||\s)dhost=(|(\S+\\+)?({dest_host}.+?))\s+(\w+=|$)""",
-    """(\||\s)dvc=(|({host_ip}.+?))\s+(\w+=|$)""",
-    """(\||\s)dvchost=(|({host}.+?))(\s\w+=|\s*$)""",
+    """(\||\s)dst=(|({dest_ip}.+?))(\s{1,100}[\w-]+=|\s{0,100}$)""",
+    """(\||\s)dhost=(|(\S+\\+)?({dest_host}.+?))\s{1,100}(\w+=|$)""",
+    """(\||\s)dvc=(|({host_ip}.+?))\s{1,100}(\w+=|$)""",
+    """(\||\s)dvchost=(|({host}.+?))(\s\w+=|\s{0,100}$)""",
     """(\||\s)msg=({activity_details}.+?)\.\s""",
-    """(\||\s)msg=Device\s+'({device_id}.+?)'""",
-    """(\||\s)msg=Device\s+'({device_id}[^']+?)\s*\([^']+'""",
+    """(\||\s)msg=Device\s{1,100}'({device_id}.+?)'""",
+    """(\||\s)msg=Device\s{1,100}'({device_id}[^']+?)\s{0,100}\([^']+'""",
   ]
 }
 ```

@@ -11,17 +11,17 @@ Name = cef-snare-4624
     Fields = [
       """({event_name}An account was successfully logged on)""",
       """({event_code}4624)""",
-      """\srt=({time}\d+)""",
+      """\srt=({time}\d{1,100})""",
       """\sdntdom=({domain}[^\s]+)""",
-      """\sduser=({user}.+?)\s+\w+=""",
+      """\sduser=({user}.+?)\s{1,100}\w+=""",
       """\sduid=({logon_id}[^\s]+)""",
-      """\scn1=({logon_type}\d+)""",
+      """\scn1=({logon_type}\d{1,100})""",
       """\sdvchost=({host}[^\s]+)""",
       """\sdproc=(?:-|({process}[\w:\\.\-]+))""",
       """Service_,ID=({user_sid}[^\s]+)\s""",
       """cs5=({auth_package}[^\s]+).+?cs5Label=Auth""",
       """\sdeviceProcessName=({auth_process}[^\s]+)""",
-      """ src=(?:-|({src_ip}[\w:.]+))\s+\w+="""
+      """ src=(?:-|({src_ip}[\w:.]+))\s{1,100}\w+="""
     ]
     DupFields = ["host->dest_host"]
   }

@@ -12,14 +12,5 @@ Name = raw-672
     """({event_name}Account Logon)""",
     """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
     """exabeam_source=({host}[A-Fa-f:\d.]+)""",
-    """(?i)(((audit|success|failure)( |_)(success|audit|failure))|information)(\s+|\s*,\s*)({host}[\w.\-]+)""",
-    """({event_code}672)""",
-    """User Name:\s*({user}[^@\s]+)""",
-    """Security(,|\srn=|\s+)({record_id}\d+)""",
-    """Supplied Realm Name:\s*({domain}[^\s]+)\s""",
-    """Client Address:\s*({dest_ip}[a-fA-F:\d.]+)""",
-    """Result Code:\s*({result_code}[\w\-]+)""",
-    """User ID:\s*\%\{({user_sid}[^}]+)\}""",
-  ]
-}
+    """(?i)(((audit|success|failure)( |_)(success|audit|failure))|information)(\s{1,100}|\s{0,100}
 ```

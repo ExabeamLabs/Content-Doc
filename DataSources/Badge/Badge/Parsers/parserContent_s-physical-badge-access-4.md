@@ -11,12 +11,12 @@ Name = s-physical-badge-access-4
     Fields = [
       """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """exabeam_host=({host}[^\s]+)""",
-      """WorkerID=({employee_id}\d+)""",
-      """FirstName=({first_name}.+?)\s+LastName=""",
-      """LastName=({last_name}.+?)\s+WorkerID=""",
-      """MessageType=({outcome}.+?)\s+Door=""",
-      """Location="+({location_building}[^"]+)""",
-      """Door="+({location_door}[^"]+)"""
+      """WorkerID=({employee_id}\d{1,100})""",
+      """FirstName=({first_name}.+?)\s{1,100}LastName=""",
+      """LastName=({last_name}.+?)\s{1,100}WorkerID=""",
+      """MessageType=({outcome}.+?)\s{1,100}Door=""",
+      """Location="{1,20}({location_building}[^"]+)""",
+      """Door="{1,20}({location_door}[^"]+)"""
     ]
   }
 ```

@@ -10,13 +10,13 @@ Name = sysmon-windows-dns-query
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
   Conditions = [ """QueryName:""", """QueryResults:""", """ProcessGuid:""", """Image:""" ]
   Fields = [
-    """UtcTime:\s*({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d\.\d\d\d)\s""",
+    """UtcTime:\s{0,100}({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d\.\d\d\d)\s""",
     """exabeam_host=({host}[\w.\-]+)""",
-    """QueryName:\s*({query}[^\s]+)""",
-    """ProcessGuid:\s*\{({process_guid}[A-F0-9a-f-]+)\}""",
-    """ProcessId:\s*({pid}\d+)""",
+    """QueryName:\s{0,100}({query}[^\s]+)""",
+    """ProcessGuid:\s{0,100}\{({process_guid}[A-F0-9a-f-]+)\}""",
+    """ProcessId:\s{0,100}({pid}\d{1,100})""",
     """QueryResults:\s({response}.+?)\sImage:""",
-    """Image:\s*(?:<unknown process>|({process}({directory}[^"]*[\\\/]+)?({process_name}[^"\\\/]+)))\s""",
+    """Image:\s{0,100}(?:<unknown process>|({process}({directory}[^"]*[\\\/]+)?({process_name}[^"\\\/]+)))\s""",
 	]
 }
 ```

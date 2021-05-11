@@ -9,17 +9,17 @@ Name = cef-stealthwatch-network-alert
   TimeFormat =  "epoch"
   Conditions = [ """CEF:""", """|Lancope|StealthWatch|""" ]
   Fields = [
-    """\sahost=({host}.+?)\s+\w+="""
-    """\sdvchost=({dest_host}.+?)\s+\w+="""
-    """\sshost=({src_host}.+?)\s+\w+="""
-    """CEF:\s*\d+\|Lancope\|StealthWatch\|.*?\|.*?\|({alert_name}[^\|]+)\|({alert_severity}[^\|]+)\|"""
-    """\srt=({time}\d+)""",
+    """\sahost=({host}.+?)\s{1,100}\w+="""
+    """\sdvchost=({dest_host}.+?)\s{1,100}\w+="""
+    """\sshost=({src_host}.+?)\s{1,100}\w+="""
+    """CEF:\s{0,100}\d{1,100}\|Lancope\|StealthWatch\|.*?\|.*?\|({alert_name}[^\|]+)\|({alert_severity}[^\|]+)\|"""
+    """\srt=({time}\d{1,100})""",
     """\Wsrc=(0.0.0.0|({src_ip}[A-Fa-f:\d.]+))""",
     """\Wdst=(0.0.0.0|({dest_ip}[A-Fa-f:\d.]+))""",
-    """\WdstPort=({dest_port}\d+)""",
-    """\smsg=({additional_info}.+?)\s+\w+="""
-    """\scatdt=({alert_type}.+?)\s+\w+="""
-    """\sexternalId=({alert_id}.+?)\s+\w+="""
+    """\WdstPort=({dest_port}\d{1,100})""",
+    """\smsg=({additional_info}.+?)\s{1,100}\w+="""
+    """\scatdt=({alert_type}.+?)\s{1,100}\w+="""
+    """\sexternalId=({alert_id}.+?)\s{1,100}\w+="""
   ]
 }
 ```

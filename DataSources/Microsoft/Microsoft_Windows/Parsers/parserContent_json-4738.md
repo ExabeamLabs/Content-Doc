@@ -13,7 +13,7 @@ Name = json-4738
     """({event_code}4738)""",
     """"EventTime":"({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d)"""",
     """"Host(N|n)ame":"({host}[^"]+)"""",
-    """"+EventTime"+:"+({time}\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2})"+""",
+    """"{1,20}EventTime"{1,20}:"{1,20}({time}\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2})"{1,20}""",
     """"SeverityValue":({severity}[^,]+)"""", 
     """"TargetUserName":"({target_user}[^"]+)"""",
     """"TargetDomainName":"({target_domain}[^"]+)"""",
@@ -22,9 +22,9 @@ Name = json-4738
     """"SubjectUserName":"({user}[^"]+)"""",
     """"SubjectDomainName":"({domain}[^"]+)"""",
     """"SubjectLogonId":"({logon_id}[^"]+)"""",
-    """"+Category"+:"+({category}[^"]+)"+""",
-    """"+Message"+:"+({additional_info}[^"]+)"+""",
-    """"+EventType"+:"+({outcome}[^"]+)"+""",
+    """"{1,20}Category"{1,20}:"{1,20}({category}[^"]+)"{1,20}""",
+    """"{1,20}Message"{1,20}:"{1,20}({additional_info}[^"]+)"{1,20}""",
+    """"{1,20}EventType"{1,20}:"{1,20}({outcome}[^"]+)"{1,20}""",
  ] 
 }
 ```

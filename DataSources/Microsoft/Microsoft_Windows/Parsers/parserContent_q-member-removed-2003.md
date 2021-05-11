@@ -10,12 +10,12 @@ Name = q-member-removed-2003
   Conditions = [ "Security Enabled", " Group Member Removed" ]
   Fields = [
     """({event_name}Security Enabled [\w\s]+ Group Member Removed)""",
-    """EventID=({event_code}\d+)""",
-    """TimeGenerated=({time}\d+)""",
+    """EventID=({event_code}\d{1,100})""",
+    """TimeGenerated=({time}\d{1,100})""",
     """Computer=({host}[^\s]+)""",
     """Security Enabled ({group_type}[^\s]+) Group Member""",
-    """Group Member.+?Member ID:\s+(%\{)?({account_id}(?=[^\\]+\\)({sid_domain}[^\\]+)\\({sid_user}[^\s]+)|(?:[^\s}]+)).+Target Account Name:\s+({group_name}.+?)\s+Target Domain:\s+({group_domain}[^\s]+).+?Target Account ID:\s+%\{({group_id}[\w\-]+).+Caller User Name:\s+({user}.+?)\s+Caller Domain:\s+({domain}.+?)\s+Caller Logon ID:\s+\([^,]+,({logon_id}[^)]+)""",
-    """Group Member.+?Member Name:\s+({account_dn}CN=.+?,({account_ou}OU.+?DC=[\w-]+))\s+Member ID""",
+    """Group Member.+?Member ID:\s{1,100}(%\{)?({account_id}(?=[^\\]+\\)({sid_domain}[^\\]+)\\({sid_user}[^\s]+)|(?:[^\s}]+)).+Target Account Name:\s{1,100}({group_name}.+?)\s{1,100}Target Domain:\s{1,100}({group_domain}[^\s]+).+?Target Account ID:\s{1,100}%\{({group_id}[\w\-]+).+Caller User Name:\s{1,100}({user}.+?)\s{1,100}Caller Domain:\s{1,100}({domain}.+?)\s{1,100}Caller Logon ID:\s{1,100}\([^,]+,({logon_id}[^)]+)""",
+    """Group Member.+?Member Name:\s{1,100}({account_dn}CN=.+?,({account_ou}OU.+?DC=[\w-]+))\s{1,100}Member ID""",
   ]
   DupFields = [ "host->dest_host" ]
 }

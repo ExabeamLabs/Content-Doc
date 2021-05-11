@@ -14,14 +14,14 @@ Name = unix-process-creation-failure
       """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d)""",
       """exe="({process}[^"]*)"""",
       """exe="({process_directory}.+\/)({process_name}.+?)"""",
-      """\d\d:\d\d\s+({host}[\w\-.]+)\s+""",
-      """\sppid=({parent_process_id}.+?)\s+(\w+=|$)""",
-      """\spid=({pid}.+?)\s+(\w+=|$)""",
-      """\suid=({user_id}.+?)\s+(\w+=|$)""",
-      """\sgid=({group_id}.+?)\s+(\w+=|$)""",
-      """\sauid=({account_used_id}.+?)\s+(\w+=|$)""",
-      """\sses=({session_id}\d+)\s+(\w+=|$)""",
-      """\stype=({activity_type}.+?)\s+(\w+=|$)"""
+      """\d\d:\d\d\s{1,100}({host}[\w\-.]+)\s{1,100}""",
+      """\sppid=({parent_process_id}.+?)\s{1,100}(\w+=|$)""",
+      """\spid=({pid}.+?)\s{1,100}(\w+=|$)""",
+      """\suid=({user_id}.+?)\s{1,100}(\w+=|$)""",
+      """\sgid=({group_id}.+?)\s{1,100}(\w+=|$)""",
+      """\sauid=({account_used_id}.+?)\s{1,100}(\w+=|$)""",
+      """\sses=({session_id}\d{1,100})\s{1,100}(\w+=|$)""",
+      """\stype=({activity_type}.+?)\s{1,100}(\w+=|$)"""
     ]
         DupFields=[ "host->dest_host", "process_directory->directory" ]
   }

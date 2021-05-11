@@ -10,14 +10,14 @@ Name = cef-scbpam-app-activity
   Conditions = [ """CEF:""", """|SCB|PAM|""" ]
   Fields = [
     """\|SCB\|PAM\|([^\|]*\|){2}({activity}[^\|]+)""",
-    """\ssuser=({user}.+?)(\s+\w+=|\s*$)""",
-    """\sdhost=({dest_host}.+?)(\s+\w+=|\s*$)""",
-    """\sOtherInfo:\s*({object}[^\s]+?)(\s+\w+=|\s*$)""",
-    """\sduser=({object}.+?)(\s+\w+=|\s*$)""",
-    """\sdvc=({host}.+?)(\s+\w+=|\s*$)""",
-    """\sdvchost=({host}.+?)(\s+\w+=|\s*$)""",
-    """\srt=({time}\d+)""",
-    """\sOtherInfo:\s*({additional_info}.+?)(\s+\w+=|\s*$)""",
+    """\ssuser=({user}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sdhost=({dest_host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sOtherInfo:\s{0,100}({object}[^\s]+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sduser=({object}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sdvc=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sdvchost=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\srt=({time}\d{1,100})""",
+    """\sOtherInfo:\s{0,100}({additional_info}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """({app}PAM)""",
   ]
 }

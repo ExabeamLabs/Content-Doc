@@ -10,9 +10,9 @@ Name = barracuda-logout-peer
   Conditions = [ """ CP-FW Session """, """ Logout peer=""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """\sCP-FW Session\s+\S*?({user}[^\-:]+):""",
+    """\sCP-FW Session\s{1,100}\S*?({user}[^\-:]+):""",
     """\speer=({src_translated_ip}[a-fA-F\d.:]+)""",
-    """\sserver=(|({dest_host}.+?))(\s+\w+=|\s*$)""",
+    """\sserver=(|({dest_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
 ```

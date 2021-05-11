@@ -11,12 +11,12 @@ Name = syslog-ricoh-print-activity
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d)""",
     """({host}[\w\-.]+)\sUSER_NAME=""",
-    """\WUSER_NAME=({user}[^,]+)(,|\s*$)""",
-    """\WJOB_NAME=({object}[^,]+)(,|\s*$)""",
-    """\WCLIENT_MACHINE=({src_host}[^,]+)(,|\s*$)""",
-    """\WDATA_SIZE=({bytes}\d+)""",
-    """\WBEFORE_PAGES=({num_pages}\d+)""",
-    """\WSTORED_HOST=({printer_name}[^,]+)(,|\s*$)"""
+    """\WUSER_NAME=({user}[^,]+)(,|\s{0,100}$)""",
+    """\WJOB_NAME=({object}[^,]+)(,|\s{0,100}$)""",
+    """\WCLIENT_MACHINE=({src_host}[^,]+)(,|\s{0,100}$)""",
+    """\WDATA_SIZE=({bytes}\d{1,100})""",
+    """\WBEFORE_PAGES=({num_pages}\d{1,100})""",
+    """\WSTORED_HOST=({printer_name}[^,]+)(,|\s{0,100}$)"""
   ]
 }
 ```

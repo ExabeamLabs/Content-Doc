@@ -9,13 +9,6 @@ Name = palo-alto-dlp-alert-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """ Aperture """, """,policy_violation,""" ]
   Fields = [
-    """({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+Z)\s({host}[^\s]+)""",
-    """,policy_violation,"*({app}[^,"]+)"*,""",
-    """,policy_violation,"*([^,]*,){1}({alert_severity}\d+(\.\d)?)"""
-    """,policy_violation,"*([^,]*,){2}({alert_id}[^,]+)"*,"""
-    """,policy_violation,"*([^,]*,){4}"*({user_email}[^@]+@[^,"]+)"*,([^,]*,){3}"*({additional_info}[^",]+)\s*"*,""",
-    """({alert_name}policy_violation)"""
-  ]
-  DupFields = ["alert_name->alert_type"]
-}
+    """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}Z)\s({host}[^\s]+)""",
+    """,policy_violation,"{0,20}({app}[^,"]+)"{0,20}
 ```

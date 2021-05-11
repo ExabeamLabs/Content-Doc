@@ -10,12 +10,12 @@ Name = cef-aruba-nac-logon-1
   Conditions = [ """|Aruba Networks|ClearPass|""", """|13003|""", ]
   Fields = [
     """\Wrt=({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
-    """\Wdvc=({host}.+?)(\s+\w+=|\s*$)""",
+    """\Wdvc=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
-    """\Wduser=(({domain}[^\\]+)\\+)?({user}[^\s\\\/:]+)(\s+\w+=|\s*$)""",
-    """\Wdmac=({dest_mac}.+?)(\s+\w+=|\s*$)""",
-    """\Wdst=({dest_ip}.+?)(\s+\w+=|\s*$)""",
-    """\WdestinationServiceName=({network}.+?)(\s+\w+=|\s*$)""",
+    """\Wduser=(({domain}[^\\]+)\\+)?({user}[^\s\\\/:]+)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wdmac=({dest_mac}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wdst=({dest_ip}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\WdestinationServiceName=({network}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
 ```

@@ -10,7 +10,7 @@ Name = s-bro-email-in
   Conditions = [ """bro_smtp""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """.*?({time}\d+)\.\d{6}""",
+    """.*?({time}\d{1,100})\.\d{6}""",
     """(?:[^\t]+\t){11}.*?<({sender}[^\t>]+)""",
     """(?:[^\t]+\t){12}.*?<({user}[^>\t"]+)""",
     """(?:[^\t]+\t){12}({recipients}[^\t]+)""",

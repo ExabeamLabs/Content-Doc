@@ -11,13 +11,13 @@ Name = cef-snare-4719
     Fields = [
       """({event_name}System audit policy was changed)""",
       """({event_code}4719)"""
-      """rt=({time}\d+)""",
+      """rt=({time}\d{1,100})""",
       """ahost=({host}[^\s]+)"""
       """dvchost=({dest_host}[^\s]+)""",
-      """duser=({user}[\w\-\.\s]+(?:\w+)?\$?)\s+\w+="""
-      """dntdom=({domain}.+?)\s+\w+=""",
-      """cs5=({subcategory}.+?)\s+\w+="""
-      """cs6=({audit_category}.+?)\s+\w+="""
+      """duser=({user}[\w\-\.\s]+(?:\w+)?\$?)\s{1,100}\w+="""
+      """dntdom=({domain}.+?)\s{1,100}\w+=""",
+      """cs5=({subcategory}.+?)\s{1,100}\w+="""
+      """cs6=({audit_category}.+?)\s{1,100}\w+="""
     ]
   }
 ```

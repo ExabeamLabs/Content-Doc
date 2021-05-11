@@ -17,7 +17,7 @@ Name = s-pan-correlation-alert
     """,CORRELATION,([^,]*,){15}({alert_type}[^,]+)""",
     """,CORRELATION,([^,]*,){6}({alert_name}[^,]+)""",
     """,CORRELATION,([^,]*,){7}({alert_severity}[^,]+)""",
-    """,CORRELATION,([^,]*,){17}\\?"*({additional_info}[^\.]+?)\.""",
+    """,CORRELATION,([^,]*,){17}\\?"{0,20}({additional_info}[^\.]+?)\.""",
     """\d\d:\d\d:\d\d,({alert_id}[^,]+),""",
     """Process Name: ({malware_url}[^,]+),"""
   ]

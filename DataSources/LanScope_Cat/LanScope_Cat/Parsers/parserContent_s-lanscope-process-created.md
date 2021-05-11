@@ -7,17 +7,14 @@ Name = s-lanscope-process-created
   IsHVF = true
   Conditions = [ """"リアルタイムイベントログ"""", """"ACTIVE"""" ]
   Fields = ${LanScopeParserTemplates.s-lanscope-app-activity.Fields}[
-    ""","*リアルタイムイベントログ"*,"*ACTIVE"*,("*[^"]*"*,){5}"*({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):({dest_port}\d+)\s+\-\s+({account}[^\s@]+)@({dest_host}[^:]+):({command_line}[^"]+)"*,"""
-  ]
-  DupFields = [ "app->process_name" ]
-}
+    ""","{0,20}リアルタイムイベントログ"{0,20}
 s-lanscope-app-activity = {
   Vendor = LanScope
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Fields = [
-    ""","*(|({host}[^"]+))"*,"*(|({user}[^"]+))"*,"*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"*,"*[^"]*"*,"*(|({activity}[^"]+))"*,("*[^"]*"*,){2}"*(|({app}[^"]+))"*,("*[^"]*"*,){2}"*(|({file_path}({file_parent}[^"]+?[\\\/]+)?({file_name}[^"\\\/]+?(\.({file_ext}\w+))?)))"*,"*[^"]*"*,"*(|({bytes_num}\d+)({bytes_unit}\w+))"*,"""
+    ""","{0,20}(|({host}[^"]+))"{0,20},"{0,20}(|({user}[^"]+))"{0,20},"{0,20}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"{0,20},"{0,20}[^"]*"{0,20},"{0,20}(|({activity}[^"]+))"{0,20},("{0,20}[^"]*"{0,20},){2}"{0,20}(|({app}[^"]+))"{0,20},("{0,20}[^"]*"{0,20},){2}"{0,20}(|({file_path}({file_parent}[^"]+?[\\\/]+)?({file_name}[^"\\\/]+?(\.({file_ext}\w+))?)))"{0,20},"{0,20}[^"]*"{0,20},"{0,20}(|({bytes_num}\d{1,100})({bytes_unit}\w+))"{0,20},"""
   ]
 
 ```

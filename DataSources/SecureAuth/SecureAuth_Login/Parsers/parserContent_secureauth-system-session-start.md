@@ -13,12 +13,12 @@ Name = secureauth-system-session-start
     """exabeam_host=({host}[^\s]+)""",
     """cat=({category}[^\s]+)""",
     """usrName=({user}[^\s]+)""",
-    """processId=({pid}\d+)""",
+    """processId=({pid}\d{1,100})""",
     """src=({src_ip}[A-Fa-f:\d.]+)""",
     """dst=({dest_ip}[A-Fa-f:\d.]+)""",
     """url=({domain}[^\s]+)""",
-    """sev=({severity}\d+)""",
-    """resource=({event_name}.+?)(\s+\w+=|\s*$)""",
+    """sev=({severity}\d{1,100})""",
+    """resource=({event_name}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
 ```

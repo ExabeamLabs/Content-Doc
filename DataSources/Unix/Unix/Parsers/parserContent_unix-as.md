@@ -10,13 +10,13 @@ Name = unix-as
   Conditions = [ """pam_unix(""", """session opened for user""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\[({src_ip}[a-fA-F\d.:]+)\]\[\d+\]\[\w+\]\[\]<\d+>\d+ ({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d+(\+|\-)\d\d:\d\d ({host}[\w.\-]+) ({event_code}\S+)""",
-    """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2}\s+20\d{2}\s+\d{1,2}:\d{1,2}:\d{1,2})""",
-    """\w+\s\d+\s\d\d:\d\d:\d\d\s({src_ip}\d+\.\d+\.\d+\.\d+)"""
+    """\[({src_ip}[a-fA-F\d.:]+)\]\[\d{1,100}\]\[\w+\]\[\]<\d{1,100}>\d{1,100} ({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d{1,100}(\+|\-)\d\d:\d\d ({host}[\w.\-]+) ({event_code}\S+)""",
+    """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s{1,100}\d{1,2}\s{1,100}20\d{2}\s{1,100}\d{1,2}:\d{1,2}:\d{1,2})""",
+    """\w+\s\d{1,100}\s\d\d:\d\d:\d\d\s({src_ip}\d{1,100}\.\d{1,100}\.\d{1,100}\.\d{1,100})"""
     """"@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """\w+\s+\d+ \d\d:\d\d:\d\d ({host}[\w.\-]+).+?:\s*pam_unix""",
+    """\w+\s{1,100}\d{1,100} \d\d:\d\d:\d\d ({host}[\w.\-]+).+?:\s{0,100}pam_unix""",
     """session opened for user ({account}.+?) by""",
-    """\(uid=({user_uid}\d+)\)""",
+    """\(uid=({user_uid}\d{1,100})\)""",
     """session opened for user \S+ by ({user}[^\("=,]+)""",
   ]
   DupFields = [ "host->dest_host", "user_uid->user_id"]

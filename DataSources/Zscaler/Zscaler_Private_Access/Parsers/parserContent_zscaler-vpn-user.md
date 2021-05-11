@@ -9,8 +9,8 @@ Name = zscaler-vpn-user
   TimeFormat = "MMM dd HH:mm:ss yyyy"
   Conditions = [ """ User Activity zpa-lss:""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """\w+ ({time}\w+ \d+ \d\d:\d\d:\d\d \d\d\d\d) User Activity zpa-lss:([^,]*,){2}({session_id}[^,]+),({connection_id}[^,]+),([^,]*,){2}({connection_status}[^,]+),({protocol}[^,]+),[^,]*,({user_email}[^\s,]+),({src_port}\d+),({src_ip}[A-Fa-f:\d.]+)"""
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """\w+ ({time}\w+ \d{1,100} \d\d:\d\d:\d\d \d\d\d\d) User Activity zpa-lss:([^,]*,){2}({session_id}[^,]+),({connection_id}[^,]+),([^,]*,){2}({connection_status}[^,]+),({protocol}[^,]+),[^,]*,({user_email}[^\s,]+),({src_port}\d{1,100}),({src_ip}[A-Fa-f:\d.]+)"""
   ]
 }
 ```

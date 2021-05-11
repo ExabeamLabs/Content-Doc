@@ -9,14 +9,14 @@ Name = cef-juniper-pulse-activity
   TimeFormat = "epoch"
   Conditions = [ """|Juniper|Pulse Secure""", """|Request Completed|""" ]
   Fields = [
-    """\srt=({time}\d+)""",
+    """\srt=({time}\d{1,100})""",
     """\sdvc=({host}[\w.\-]+)""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\ssuser=({user}[^\s]+)""",
-    """\sspriv=({app}.+?)\s+\w+=""",
+    """\sspriv=({app}.+?)\s{1,100}\w+=""",
     """\sdhost=({dest_host}[^\s]+)""",
     """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\sout=({bytes}\d+)""",
+    """\sout=({bytes}\d{1,100})""",
     """&Cmd\\=({activity}[^\s&]+)""",
     """&DeviceType\\=({additional_info}[^&]+)"""
   ]

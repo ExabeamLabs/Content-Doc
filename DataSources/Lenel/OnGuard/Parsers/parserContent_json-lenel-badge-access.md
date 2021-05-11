@@ -11,7 +11,7 @@ Name = json-lenel-badge-access
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
     """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d(\+|\-)\d\d:\d\d)""",
-    """"badge_id":({badge_id}\d+)""",
+    """"badge_id":({badge_id}\d{1,100})""",
     """"cardholder_first_name":"({first_name}[^"]+)""",
     """"cardholder_last_name":"({last_name}[^"]+)""",
     """"device_name":"({location_door}[^"]+)""",

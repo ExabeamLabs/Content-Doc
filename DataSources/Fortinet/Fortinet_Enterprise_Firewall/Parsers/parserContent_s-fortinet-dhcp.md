@@ -10,7 +10,7 @@ Name = s-fortinet-dhcp
   Conditions = [ """ logver=""", """ logdesc="""", """ dhcp_msg="""" ]
   Fields = [
     """\Wdate=({time}\d\d\d\d\-\d\d\-\d\d time\=\d\d:\d\d:\d\d)""",
-    """\w+ \d+ \d\d:\d\d:\d\d ({host}[\w\-.]+)""",
+    """\w+ \d{1,100} \d\d:\d\d:\d\d ({host}[\w\-.]+)""",
     """\Wip=({dest_ip}[a-fA-F:\d.]+)""",
     """\Whostname="({dest_host}[\w\-.]+)""",
     """\Whostname="({user}[^"\s]+)"""

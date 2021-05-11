@@ -9,18 +9,18 @@ Name = sophos-security-alert
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """"Event::Endpoint::WebControlViolation"""", """"User bypassed category block """ ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
-    """"rt":\s*"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
-    """"name":\s*"({alert_name}[^'"]+) to '({malware_url}[^'"]+)""",
-    """"name":\s*"({additional_info}[^"]+)""",
-    """"type":\s*"({alert_type}[^"]+)""",
-    """"dhost":\s*"({src_host}[^"]+)""",
-    """"severity":\s*"({alert_severity}[^"]+)""",
-    """"(suser|source)":\s*"(n\/a|(({domain}[^\\"]+)\\+)?({user_fullname}[^\\\(\)\s",]+\s+[^\\\(\)",]+))"""",
-    """"(suser|source)":\s*"(n\/a|({user_lastname}[^",\\\s]+),\s*({user_firstname}[^,"\\\s]+))""",
-    """"(suser|source)":\s*"(?:n\/a|({user}[^",\\\s]+))"""",
-    """"(suser|source)":\s*"(({domain}[^\\",]+)\\+)?({user}[^",\\\/\s]+)"""",
-    """"id":\s*"({alert_id}[^"]+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
+    """"rt":\s{0,100}"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
+    """"name":\s{0,100}"({alert_name}[^'"]+) to '({malware_url}[^'"]+)""",
+    """"name":\s{0,100}"({additional_info}[^"]+)""",
+    """"type":\s{0,100}"({alert_type}[^"]+)""",
+    """"dhost":\s{0,100}"({src_host}[^"]+)""",
+    """"severity":\s{0,100}"({alert_severity}[^"]+)""",
+    """"(suser|source)":\s{0,100}"(n\/a|(({domain}[^\\"]+)\\+)?({user_fullname}[^\\\(\)\s",]+\s{1,100}[^\\\(\)",]+))"""",
+    """"(suser|source)":\s{0,100}"(n\/a|({user_lastname}[^",\\\s]+),\s{0,100}({user_firstname}[^,"\\\s]+))""",
+    """"(suser|source)":\s{0,100}"(?:n\/a|({user}[^",\\\s]+))"""",
+    """"(suser|source)":\s{0,100}"(({domain}[^\\",]+)\\+)?({user}[^",\\\/\s]+)"""",
+    """"id":\s{0,100}"({alert_id}[^"]+)""",
   ]
 }
 ```

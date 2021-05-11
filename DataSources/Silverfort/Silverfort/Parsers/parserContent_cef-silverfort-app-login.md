@@ -9,7 +9,7 @@ Name = cef-silverfort-app-login
   TimeFormat ="dd/MM/yyyy HH:mm:ss.SSS"
   Conditions = [ """ CEF:""", """|Silverfort|Admin Console|""", """|Authentication|Authentication request|""" ]
   Fields = [
-    """\s+({host}[\w\-.]+)\s+CEF:""",
+    """\s{1,100}({host}[\w\-.]+)\s{1,100}CEF:""",
     """rt=({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d.\d\d\d)""",
     """suser=(({user_email}[^@]+@({email_domain}[^\s]+))|({user}.+?))\ssntdom=""",
     """sntdom=({domain}[^\s]+)""",

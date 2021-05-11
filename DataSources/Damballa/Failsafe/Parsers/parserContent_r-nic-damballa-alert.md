@@ -9,15 +9,15 @@ Name = r-nic-damballa-alert
   TimeFormat = "epoch"
   Conditions = [ """Damballa|Failsafe|""", """msg=infected""" ]
   Fields = [
-    """\|start=({time}\d+)""",
-    """\s+({host}[^\s]+)\s+Failsafe\s+\d+""",
-    """Damballa\|Failsafe\|.+?\|({alert_name}[^|]+)\|""",
-    """Damballa\|Failsafe\|.+?\|({alert_type}[^|]+)\|""",
+    """\|start=({time}\d{1,100})""",
+    """\s{1,100}({host}[^\s]+)\s{1,100}Failsafe\s{1,100}\d{1,100}""",
+    """Damballa\|Failsafe\|[^|]+?\|({alert_name}[^|]+)\|""",
+    """Damballa\|Failsafe\|[^|]+?\|({alert_type}[^|]+)\|""",
     """\|cs2=({alert_type}[^|]+)""",
     """\|msg=({alert_name}[^|]+)""",
     """\|cfp1=({alert_severity}[^\|]+)""",
     """\|src=({src_ip}[^\|]+)""",
-    """\|shost=(?:((\d+\.){3}\d+)|({src_host}[^\|]+))""",
+    """\|shost=(?:((\d{1,100}\.){3}\d{1,100})|({src_host}[^\|]+))""",
     """\|cs6=({alert_id}[^\|]+)"""
   ]
 }

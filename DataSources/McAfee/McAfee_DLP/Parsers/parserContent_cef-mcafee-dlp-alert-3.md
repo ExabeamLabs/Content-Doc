@@ -10,19 +10,19 @@ Name = cef-mcafee-dlp-alert-3
       Conditions = [ """CEF:""", """|McAfee|IntruShield|""" ]
       Fields = [
         """exabeam_host=({host}[^\s]+)""",
-        """\WeventId=(|({alert_id}.+?))(\s+\w+=|\s*$)""",
-        """\WcategoryOutcome=(|/({action}.+?))(\s+\w+=|\s*$)""",
-        """\WcategoryObject=(|({target}.+?))(\s+\w+=|\s*$)""",
-        """\Wseverity=({alert_severity}\d+)""",
-        """\Wact=(|({outcome}.+?))(\s+\w+=|\s*$)""",
-        """\Wrt=({time}\d+)(\s+\w+=|\s*$)""",
-        """\Wsuid=(\d+|(({domain}[^\\\/=]+?)[\\\/]+)?({user}[^\\\/=]+?))(\s+\w+=|\s*$)""",
-        """\Wsntdom=(|({domain}.+?))(\s+\w+=|\s*$)""",
-        """\Wrequest=(|({malware_url}.+?))(\s+\w+=|\s*$)""",
-        """\Wdvc=(|({host}.+?))(\s+\w+=|\s*$)""",
-        """\Wdvchost=(|({host}.+?))(\s+\w+=|\s*$)""",
+        """\WeventId=(|({alert_id}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+        """\WcategoryOutcome=(|/({action}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+        """\WcategoryObject=(|({target}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+        """\Wseverity=({alert_severity}\d{1,100})""",
+        """\Wact=(|({outcome}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+        """\Wrt=({time}\d{1,100})(\s{1,100}\w+=|\s{0,100}$)""",
+        """\Wsuid=(\d{1,100}|(({domain}[^\\\/=]+?)[\\\/]+)?({user}[^\\\/=]+?))(\s{1,100}\w+=|\s{0,100}$)""",
+        """\Wsntdom=(|({domain}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+        """\Wrequest=(|({malware_url}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+        """\Wdvc=(|({host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+        """\Wdvchost=(|({host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
         """\|McAfee\|IntruShield\|([^|]+?\|){2}({alert_name}[^|]+)\|""",
-        """\Wcatdt=(|({alert_type}.+?))(\s+\w+=|\s*$)"""
+        """\Wcatdt=(|({alert_type}.+?))(\s{1,100}\w+=|\s{0,100}$)"""
       ]
     }
 ```

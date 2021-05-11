@@ -10,16 +10,16 @@ Name = raw-4673-1
   Conditions = ["A privileged service was called", "Privileges", "Account Name:"]
   Fields = [
     """({event_name}A privileged service was called)""",
-    """({time}\w+\s+\d+\s+\d+:\d+:\d+\s+\d+)\s+4673""",
-    """({outcome}(?i)(((audit|success|failure)( |_)(success|audit|failure))|information))\s*(\s|\t|,|#\d+|<[^>]+>)\s*({host}[^=]+?)\s*(\s|\t|,|#\d+|<[^>]+>)\s*""",
+    """({time}\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}\d{1,100})\s{1,100}4673""",
+    """({outcome}(?i)(((audit|success|failure)( |_)(success|audit|failure))|information))\s{0,100}(\s|\t|,|#\d{1,100}|<[^>]+>)\s{0,100}({host}[^=]+?)\s{0,100}(\s|\t|,|#\d{1,100}|<[^>]+>)\s{0,100}""",
     """({event_code}4673)""",
-    """Process Name:\s*(?: |({process}({directory}(?:[^";]+)?[\\\/])?({process_name}[^\\\/";]+?)))[\s;]*Service Request Information:""",
-    """Account Name:\s*({user}[^:]+?)\s*Account Domain:""",
-    """Account Domain:\s*({domain}[^:]+?)\s*Logon ID:""",
-    """Logon ID:\s*({logon_id}[^:]+?)\s*Service:""",
-    """Server:\s*({object_server}[^:]+?)\s*Service Name:""",
-    """Privileges:\s*({privileges}[^$]+?)(\s*$|\s+\d+|\"|,|;)""",
-    """(?i)\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(am|pm|({dest_host}[\w\-.]+)))"""
+    """Process Name:\s{0,100}(?: |({process}({directory}(?:[^";]+)?[\\\/])?({process_name}[^\\\/";]+?)))[\s;]*Service Request Information:""",
+    """Account Name:\s{0,100}({user}[^:]+?)\s{0,100}Account Domain:""",
+    """Account Domain:\s{0,100}({domain}[^:]+?)\s{0,100}Logon ID:""",
+    """Logon ID:\s{0,100}({logon_id}[^:]+?)\s{0,100}Service:""",
+    """Server:\s{0,100}({object_server}[^:]+?)\s{0,100}Service Name:""",
+    """Privileges:\s{0,100}({privileges}[^$]+?)(\s{0,100}$|\s{1,100}\d{1,100}|\"|,|;)""",
+    """(?i)\w+\s{0,100}\d{1,100}\s{0,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(am|pm|({dest_host}[\w\-.]+)))"""
   ]
   DupFields = ["directory->process_directory"]
 }

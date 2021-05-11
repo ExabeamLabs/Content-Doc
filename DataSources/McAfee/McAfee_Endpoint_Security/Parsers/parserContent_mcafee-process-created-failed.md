@@ -12,7 +12,7 @@ Name = mcafee-process-created-failed
   Fields = [
     """<GMTTime>({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)</GMTTime>""",
     """exabeam_host=({host}[^\s]+)""",
-    """({host}[\w\-.]+)\s+EPOEvents""",
+    """({host}[\w\-.]+)\s{1,100}EPOEvents""",
     """<SCORuser_name>(({domain}[^\\\/<>]+)[\\\/]+)?({user}[^\\\/<>]+)</SCORuser_name>""",
     """<SCORfile_name>({file_path}({file_parent}[^<>]*?[\\\/<>]+)?({file_name}[^\\\/<>]+?(\.({file_ext}\w+))?))</SCORfile_name>""",
     """<SCORprocess_name>({process}({directory}[^<>]*?[\\\/]+)?({process_name}[^\\\/<>]+))</SCORprocess_name>""",

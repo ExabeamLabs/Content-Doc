@@ -10,11 +10,11 @@ Name = q-680
   Conditions = [ "EventIDCode=680" ]
   Fields = [
     """({event_name}Logon attempt)""",
-             """EventID=({event_code}\d+)""",
-             """TimeGenerated=({time}\d+)""",
+             """EventID=({event_code}\d{1,100})""",
+             """TimeGenerated=({time}\d{1,100})""",
              """Computer=({host}[^\s]+)""",
-	     """Domain=({domain}[\w\-]+)\s+EventID=""",
-             """Logon account:\s*({user}[^@]+?)(@[^\s]*)?\s+Source Workstation:\s*(\\+)?({dest_host}[^\s.]+).+?Error Code:\s*({result_code}[^\s]+)""",
+	     """Domain=({domain}[\w\-]+)\s{1,100}EventID=""",
+             """Logon account:\s{0,100}({user}[^@]+?)(@[^\s]*)?\s{1,100}Source Workstation:\s{0,100}(\\+)?({dest_host}[^\s.]+).+?Error Code:\s{0,100}({result_code}[^\s]+)""",
              """Computer=[^\s.]+(\.({domain}[^\s.]+)[^\s]*)?"""]
 }
 ```

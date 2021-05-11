@@ -10,7 +10,7 @@ Name = bluecoat-web-activity
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
   Conditions = [ ""","Query_Response":"""", ""","CommandID":"""", """"Response_Code":"""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """"firsttime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
     """"host":"(|({host}[\w\-.]+))"""",
     """"DomainID":"({web_domain}[^"]+)""",
@@ -19,16 +19,16 @@ Name = bluecoat-web-activity
     """"User_Agent":"(?:-|Mozilla.+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
     """"CommandID":"({method}[^"]+)""",
     """"UserIDSrc":"({user}[^"]+)""",
-    """"Response_Code":"({result_code}\d+)""",
+    """"Response_Code":"({result_code}\d{1,100})""",
     """"Category":"({category}[^"]+)""",
     """"src_ip":"({src_ip}[A-Fa-f:\d.]+)""",
     """"dst_ip":"({dest_ip}[A-Fa-f:\d.]+)""",
-    """"src_port":({dest_port}\d+)""",
+    """"src_port":({dest_port}\d{1,100})""",
     """"Query_Response":"({action}[^"]+)""",
     """"sig":.+?"name":"({proxy_action}[^"]+)""",
     """"URL":"({uri_path}[^"]+)""",
-    """"Bytes_Sent":({bytes_out}\d+)""",
-    """"Bytes_Received":({bytes_in}\d+)""",
+    """"Bytes_Sent":({bytes_out}\d{1,100})""",
+    """"Bytes_Received":({bytes_in}\d{1,100})""",
     """"AppID":"({mime}[^"]+)""",
     """"Destination_Logon_ID":"({app_user}[^"]+)""",
   ]

@@ -11,18 +11,18 @@ Name = cef-vontu-dlp-alert-3
     Fields = [
       """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
       """exabeam_host=({host}[^\s]+)""",
-      """({host}\S+)\s+CEF:""",
-      """\WINCIDENT_ID=({alert_id}\d+)""",
+      """({host}\S+)\s{1,100}CEF:""",
+      """\WINCIDENT_ID=({alert_id}\d{1,100})""",
       """\WPOLICY=({alert_name}[^=]+)\s\w+=""",
-      """\WSEVERITY=\d+:({alert_severity}[^=]+)\s\w+=""",
+      """\WSEVERITY=\d{1,100}:({alert_severity}[^=]+)\s\w+=""",
       """\WPROTOCOL=({protocol}[^=]+)\s\w+=""",
       """\WBLOCKED=(None|({outcome}[^=]+))\s\w+=""",
-      """\WSENDER=({src_ip}[A-Fa-f.:\d]+)\s+\w+=""",
+      """\WSENDER=({src_ip}[A-Fa-f.:\d]+)\s{1,100}\w+=""",
       """\WENDPOINT_MACHINE=(N\/A|({src_host}[^=]+))\s\w+="""
       """\WRECIPIENTS=(N\/A|({target}[^=]+))\s\w+=""",
       """\WRECIPIENTS=(N\/A|({recipients}[^@]+@[^=]+))\s\w+=""",
-      """\WSUBJECT=+\s*(N\/A|({subject}[^=]+))\s\w+=""",
-      """\WATTACHMENT_FILENAME=\s*(N\/A|({file_name}[^=]+?))\s*\w+=""",
+      """\WSUBJECT=+\s{0,100}(N\/A|({subject}[^=]+))\s\w+=""",
+      """\WATTACHMENT_FILENAME=\s{0,100}(N\/A|({file_name}[^=]+?))\s{0,100}\w+=""",
       """\WSENDER=((WinNT:\/+({domain}[^\/]+)\/({user}[^=]+))|({user_email}[^@]+@[^=]+))\s\w+=""",
     ]
     DupFields = [ "subject->additional_info" , "user_email->sender"]

@@ -14,15 +14,15 @@ Name = emc-syslog-4674
       """__li_source_path="({host}[^"]+)"""",
     """({event_code}4674)""",
     """(K|k)eywords="({outcome}[^"]+)"""",
-    """Process Name:\s+(?: |({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?)))\s+Requested""",
-    """(?:Information|Success Audit|Audit Success).+?Account Name:\s+({user}.+?)\s+Account Domain:""",
-    """\s+Account Domain:\s+({domain}.+?)\s+Logon ID:\s+({logon_id}[^\s]+)""",
-    """Object Server:\s+({object_server}.+?)\s+Object Type:\s+(?:-|({object_type}.+?))\s+Object Name:\s+(?:-|({object}.+?))\s+Object Handle""",
-    """Desired Access:\s+({accesses}.+?)\s+Privileges:\s+({privileges}.+?)(,\d+|\s*$)""",
-    """\s+({ownership_privilege}SeTakeOwnershipPrivilege)""",
-    """\s+({environment_privilege}SeSystemEnvironmentPrivilege)""",
-    """\s+({debug_privilege}SeDebugPrivilege)""",
-    """\s+({tcb_privilege}SeTcbPrivilege)"""
+    """Process Name:\s{1,100}(?: |({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?)))\s{1,100}Requested""",
+    """(?:Information|Success Audit|Audit Success).+?Account Name:\s{1,100}({user}.+?)\s{1,100}Account Domain:""",
+    """\s{1,100}Account Domain:\s{1,100}({domain}.+?)\s{1,100}Logon ID:\s{1,100}({logon_id}[^\s]+)""",
+    """Object Server:\s{1,100}({object_server}.+?)\s{1,100}Object Type:\s{1,100}(?:-|({object_type}.+?))\s{1,100}Object Name:\s{1,100}(?:-|({object}.+?))\s{1,100}Object Handle""",
+    """Desired Access:\s{1,100}({accesses}.+?)\s{1,100}Privileges:\s{1,100}({privileges}.+?)(,\d{1,100}|\s{0,100}$)""",
+    """\s{1,100}({ownership_privilege}SeTakeOwnershipPrivilege)""",
+    """\s{1,100}({environment_privilege}SeSystemEnvironmentPrivilege)""",
+    """\s{1,100}({debug_privilege}SeDebugPrivilege)""",
+    """\s{1,100}({tcb_privilege}SeTcbPrivilege)"""
   ]
   DupFields = [ "host->dest_ip","directory->process_directory" ]
 }

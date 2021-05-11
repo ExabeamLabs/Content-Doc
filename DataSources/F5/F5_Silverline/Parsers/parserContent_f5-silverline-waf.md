@@ -9,7 +9,7 @@ Name = f5-silverline-waf
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
   Conditions = [ """ type=waf""", """attack_type=""", """x_forwarded_for_header_value=""", """policy_apply_date=""" ]
   Fields = [
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)\s+({host}\S+)\s+""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)\s{1,100}({host}\S+)\s{1,100}""",
     """attack_type="({alert_type}[^"]+)"""",
     """dest_ip="({dest_ip}[^"]+)"""",
     """dest_port="({dest_port}[^"]+)"""",

@@ -9,7 +9,7 @@ Name = s-digitalguardian-usb-write
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"
   Conditions = ["""Agent_UTC_Time=""","""Was_Destination_Removable="True"""", """Destination_Drive_Type="Removable"""", """Operation="File Copy"""" ]
   Fields = [
-    """Agent_UTC_Time="({time}\d+\/\d+\/\d\d\d\d \d+:\d+:\d+ (am|AM|pm|PM))""",
+    """Agent_UTC_Time="({time}\d{1,100}\/\d{1,100}\/\d\d\d\d \d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM))""",
     """exabeam_host=({host}[^\s]+)""",
     """Computer_Name="([^\\]+\\)?({src_host}[^"]+)"""",
     """User_Name="(({domain}[^\\]+)\\)?({user}[^"]+)"""",

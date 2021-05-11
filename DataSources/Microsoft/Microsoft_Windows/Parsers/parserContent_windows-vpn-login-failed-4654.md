@@ -15,12 +15,12 @@ windows-vpn-direct-access = {
   Lms = Syslog
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Fields = [
-    """:\d\d\s+({host}.+?)\s*EvntSLog""",
+    """:\d\d\s{1,100}({host}.+?)\s{0,100}EvntSLog""",
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """\(({event_code}\d+)\)""",
+    """\(({event_code}\d{1,100})\)""",
     """({log_type}Microsoft-Windows-Security-Auditing)""",
-    """Local Network Address:\s*({src_ip}[^\s]+)\s""",
-    """Remote Network Address:\s*({dest_ip}[^\s]+)\s""",
+    """Local Network Address:\s{0,100}({src_ip}[^\s]+)\s""",
+    """Remote Network Address:\s{0,100}({dest_ip}[^\s]+)\s""",
   ]
 
 ```

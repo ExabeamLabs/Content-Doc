@@ -9,10 +9,10 @@ Name = raw-cisco-vpnconcentrator-start
   TimeFormat = "MM/dd/yyyy HH:mm:ss"
   Conditions = [ " connected, Session Type:", "AUTH/22" ]
   Fields = [
-    """({time}\d+\/\d+\/\d+ \d+:\d+:\d+)""",
-    """exabeam_host=(.+?@\s*)?({host}[\w.\-]+)""",
-    """RPT=\d+\s+({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """User\s+\[({user}[^\]]+)"""
+    """({time}\d{1,100}\/\d{1,100}\/\d{1,100} \d{1,100}:\d{1,100}:\d{1,100})""",
+    """exabeam_host=(.+?@\s{0,100})?({host}[\w.\-]+)""",
+    """RPT=\d{1,100}\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """User\s{1,100}\[({user}[^\]]+)"""
   ]
 }
 ```

@@ -13,7 +13,7 @@ Name = cisco-vpn-start-3
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """({host}[^\s]+)\s{1,20}:\s{1,20}%FTD-""",
     """User\s({user}[^,]+)""",
-    """Addr\s({src_ip}\d+.\d+.\d+.\d+)""",
+    """Addr\s({src_ip}\d{1,100}.\d{1,100}.\d{1,100}.\d{1,100})""",
   ]
 }
 ```

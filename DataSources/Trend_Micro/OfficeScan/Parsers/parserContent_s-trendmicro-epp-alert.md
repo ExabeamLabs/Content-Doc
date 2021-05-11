@@ -9,14 +9,14 @@ Name = s-trendmicro-epp-alert
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"
   Conditions = [ "Virus/Malware:" , "SourceName=Trend Micro OfficeScan Server" ]
   Fields = [
-    """exabeam_raw=.*?({time}\d+\/\d+\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|PM|pm))""",
+    """exabeam_raw=.*?({time}\d{1,100}\/\d{1,100}\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|PM|pm))""",
     """ComputerName=({host}[^\s\n]+)""",
     """\sType=({alert_severity}[^\s\n]+)""",
     """User=(?:SYSTEM|NOT_TRANSLATED|({user}[^\s\n]+))""",
-    """RecordNumber=({alert_id}\d+)""",
-    """Virus/Malware:\s({alert_name}.+?)\s+(Endpoint|Computer):""",
-    """(Endpoint|Computer):\s+({src_host}[^\s\n]+)""",
-    """File:\s+({malware_url}.+?)\s+Date"""
+    """RecordNumber=({alert_id}\d{1,100})""",
+    """Virus/Malware:\s({alert_name}.+?)\s{1,100}(Endpoint|Computer):""",
+    """(Endpoint|Computer):\s{1,100}({src_host}[^\s\n]+)""",
+    """File:\s{1,100}({malware_url}.+?)\s{1,100}Date"""
   ]
   DupFields = [ "alert_name->alert_type" ]
 }

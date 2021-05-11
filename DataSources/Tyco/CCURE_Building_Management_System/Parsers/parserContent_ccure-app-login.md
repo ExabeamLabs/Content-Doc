@@ -10,7 +10,7 @@ Name = ccure-app-login
   Conditions = [ """CEF:""", """|C-CURE|""", """|Operator Login"""]
   Fields = [
      """src=({host}[^\s]+)""",
-     """\|start=({time}\d+)""",
+     """\|start=({time}\d{1,100})""",
      """({app}C-CURE)""",
      """\ssuid=(?:Unknown|(({domain}[^\\]+)\\?)?({user}.+?))\s(\w+=|$)""",
      """\ssuser=(?:|({user_fullname}.+?))\s(\w+=|$)"""

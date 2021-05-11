@@ -11,17 +11,17 @@ Name = xml-sysmon-process-created
   Conditions = [ """<Provider Name='Microsoft-Windows-Sysmon'""", """<EventID>1</EventID>""", """<Channel>Microsoft-Windows-Sysmon/Operational</Channel>""", """<Data Name=""" ]
   Fields = [
     """<Data Name='UtcTime'>({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)</Data>""",
-    """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+    """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """<Computer>({host}[^<]+?)</Computer>""",
     """<Data Name='User'>((NT AUTHORITY|NT-AUTORITÄT|({domain}[^\\<]+?))\\)?(SYSTEM|(NETWORK|LOCAL) SERVICE|({user}[^<]+?))</Data>""",
-    """<EventID>({event_code}\d+)""",
+    """<EventID>({event_code}\d{1,100})""",
     """<Security UserID='({user_sid}[^>]+?)'/>""",
     """<Data Name='LogonId'>({logon_id}[^<]+?)</Data>""",
     """<Data Name='Hashes'>[^=]*?MD5=({md5}[A-F0-9a-f]+)[^<]*?<\/Data>""",
     """<Data Name='ProcessGuid'>\{({process_guid}[A-F0-9a-f-]+)\}</Data>""",
-    """<Data Name='ProcessId'>({pid}\d+)</Data>""",
+    """<Data Name='ProcessId'>({pid}\d{1,100})</Data>""",
     """<Data Name='ParentProcessGuid'>\{({parent_process_guid}[A-F0-9a-f-]+)\}</Data>""",
-    """<Data Name='CommandLine'>"?\s*({command_line}[^<]+?)\s*</Data>""",
+    """<Data Name='CommandLine'>"?\s{0,100}({command_line}[^<]+?)\s{0,100}</Data>""",
     """<Data Name='Image'>(({directory}[^<]+)\\)?({process_name}[^<]+?)</Data>""",
     """<Data Name='Image'>({path}[^<]+?)</Data>""",
     """<Data Name='ParentImage'>({parent_process}(({parent_process_directory}[^<]+)\\)?({parent_process_name}[^<]+?))<\/Data>"""

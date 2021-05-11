@@ -10,7 +10,7 @@ Name = cisco-authentication-failed
   Conditions = ["""ACI""","""login,session""","""Failure"""]
   Fields = [
         """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-	"""\d+:\d+:\d+(.\d+)?\s({host}[^\s]+)""",
+	"""\d{1,100}:\d{1,100}:\d{1,100}(.\d{1,100})?\s({host}[^\s]+)""",
 	"""From-({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
 	"""({outcome}Failure)"""
   ]

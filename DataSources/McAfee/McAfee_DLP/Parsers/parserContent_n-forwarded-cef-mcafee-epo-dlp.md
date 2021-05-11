@@ -9,7 +9,7 @@ Name = n-forwarded-cef-mcafee-epo-dlp
     TimeFormat = "epoch"
     Conditions = [ """|McAfee|ESM|""", """|359-""", """act=alert""" ]
     Fields = [ 
-      """\send=({time}\d+)""",
+      """\send=({time}\d{1,100})""",
       """\sdeviceTranslatedAddress=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sshost=({src_host}[^\s]+)""",

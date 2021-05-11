@@ -12,7 +12,7 @@ Name = raw-unix-member-removed
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[\w.\-]+)""",
     """\d\d:\d\d:\d\d ({host}[\w.\-]+)""",
-    """user ({account_name}.+?) removed by ({user}.+?) from group ({group_name}.+?)\s*$""",
+    """user ({account_name}.+?) removed by ({user}.+?) from group ({group_name}.+?)\s{0,100}$""",
   ]
   DupFields=["host->dest_host"]
 }

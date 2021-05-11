@@ -12,14 +12,14 @@ Name = leef-digitalguardian-usb-insert
     """devTime=({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
     """({host}[\w\-.]+) LEEF:""",
     """\|Digital Guardian\|([^\|]*\|){2}({event_code}[^\|]+)""",
-    """accountName=(({domain}[^\\\s]+)\s*\\+)?({user}[^\\\s]+?)\s*(\w+=|$)""",
-    """IdentHostName=([^\\]+\\+)?({dest_host}[\w\-.]+?)\s*(\w+=|$)""",
+    """accountName=(({domain}[^\\\s]+)\s{0,100}\\+)?({user}[^\\\s]+?)\s{0,100}(\w+=|$)""",
+    """IdentHostName=([^\\]+\\+)?({dest_host}[\w\-.]+?)\s{0,100}(\w+=|$)""",
     """src=({src_ip}[A-Fa-f:\d.]+)""",
     """dst=({dest_ip}[A-Fa-f:\d.]+)""",
-    """DestinationFile=(|({file_name}.+?(\.({file_ext}[^\.]+?))?))\s*(\w+=|$)""",
-    """SourceDriveType=(|({device_type}.+?))\s*(\w+=|$)""",
-    """SourceDeviceID=(|({device_id}.+?))\s*(\w+=|$)""",
-    """SourceDeviceFriendlyName=(|({activity_details}.+?))\s*(\w+=|$)""",
+    """DestinationFile=(|({file_name}.+?(\.({file_ext}[^\.]+?))?))\s{0,100}(\w+=|$)""",
+    """SourceDriveType=(|({device_type}.+?))\s{0,100}(\w+=|$)""",
+    """SourceDeviceID=(|({device_id}.+?))\s{0,100}(\w+=|$)""",
+    """SourceDeviceFriendlyName=(|({activity_details}.+?))\s{0,100}(\w+=|$)""",
   ]
 }
 ```

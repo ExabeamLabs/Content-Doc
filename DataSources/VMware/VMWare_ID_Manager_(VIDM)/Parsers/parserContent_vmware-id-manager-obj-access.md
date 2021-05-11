@@ -13,10 +13,10 @@ Name = vmware-id-manager-obj-access
     """"_time":"({time}[^"]+)"""",
     """"source":"({log_source}[^"]+)"""",
     """"sourcetype":"({source_type}[^"]+)"""",
-    """\d+Z\s*({host}[^\s]+)\s""",
+    """\d{1,100}Z\s{0,100}({host}[^\s]+)\s""",
     """filepath=\\"({filepath}[^"]+)\\"""",
-    """Thread-({thread_id}\d+)""",
-    """CN=(Not Available|({user_fullname}\w+(\s+\w+)+)|({user}[^,]+)),(?:OU|DC|CN)=""",
+    """Thread-({thread_id}\d{1,100})""",
+    """CN=(Not Available|({user_fullname}\w+(\s{1,100}\w+)+)|({user}[^,]+)),(?:OU|DC|CN)=""",
     """product=\\*"({app}[^\\"=:]+)\\*"""",
   ]
 }

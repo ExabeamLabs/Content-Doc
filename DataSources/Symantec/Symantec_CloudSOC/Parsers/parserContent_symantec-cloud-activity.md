@@ -12,13 +12,13 @@ Name = symantec-cloud-activity
     """exabeam_host=({host}[^\s]+)""",
     """ext__inserted_timestamp_=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""
     """suser=({user_email}[^\s]+@({email_domain}.+?))\s\w+=""",
-    """ext__user_name_=({user_fullname}[^\s@]+\s+[^=]+)\s\w+=""",
+    """ext__user_name_=({user_fullname}[^\s@]+\s{1,100}[^=]+)\s\w+=""",
     """ext_user=({user_email}[^\s]+@({email_domain}.+?))\s\w+="""
     """ext_user=(system|({user}[^\s\@]+))\s\w+=""",
     """ext_service=({app}.+?)\s\w+=""",
     """ext_browser=(Unknown|({browser}.+?))\s\w+=""",
     """ext__user_agent_=({user_agent}.+?)\s\w+=""",
-    """ext__object_name_=(|({file_path}({file_parent}[^=]*?[\\\/]+)?(|({file_name}[^\\\/=]*?(\.({file_ext}\w*))?)?)))\s+\w+=""",
+    """ext__object_name_=(|({file_path}({file_parent}[^=]*?[\\\/]+)?(|({file_name}[^\\\/=]*?(\.({file_ext}\w*))?)?)))\s{1,100}\w+=""",
     """flexString1=({activity}.+?)\s\w+=""",
     """ext_message=({additional_info}.+?)\s\w+=""",
     """fname=({object}.+?)\s\w+=""",

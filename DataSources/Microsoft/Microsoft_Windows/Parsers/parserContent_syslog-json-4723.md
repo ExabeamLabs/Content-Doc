@@ -10,7 +10,7 @@ Name = syslog-json-4723
   Conditions = [ """"EventID":4723""",""""SourceModuleType":""" ]
   Fields = [        
     """({event_name}An attempt was made to change an account's password)""",
-        """"EventTime":\s*"({time}\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})"""",
+        """"EventTime":\s{0,100}"({time}\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})"""",
               """"Hostname":"({host}[^."]*)""",
         """"SubjectUserSid":"({user_sid}[^"]+)""",
         """"EventType":"({outcome}[^"]+)""",

@@ -9,15 +9,15 @@ Name = sourcefire-security-alert
   TimeFormat = "MMM dd HH:mm:ss yyyy z"
   Conditions = [ """[Classification:""", """[Priority:""", """[Impact:""", """message":"[""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """(Mon|Tue|Wed|Thu|Fri|Sat|Sun) ({time}\w+\s+\d+\s+\d\d:\d\d:\d\d \d\d\d\d \w+)""",
-    """\[({alert_name}\d+:\d+:\d+)\]""",
-    """\[Classification:\s*({alert_type}[^\]]+)\]""",
-    """\[Priority:\s*({alert_severity}\d+)\] \{({protocol}[^\}]+)\}""",
-    """\[\d+:\d+:\d+\]\s+\\*"({additional_info}[^"]+?)\\*"""",
-    """\{\w+\}\s*({src_ip}[^\s]+?)\:+({src_port}\d+) \((unknown|({src_country}[^\)]+))""",
-    """->\s*({dest_ip}[^\s]+?)\:+({dest_port}\d+) \((unknown|({dest_country}[^\)]+))""",
-    """\[Impact:\s*(Unknown|({impact}[^\]]+))""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """(Mon|Tue|Wed|Thu|Fri|Sat|Sun) ({time}\w+\s{1,100}\d{1,100}\s{1,100}\d\d:\d\d:\d\d \d\d\d\d \w+)""",
+    """\[({alert_name}\d{1,100}:\d{1,100}:\d{1,100})\]""",
+    """\[Classification:\s{0,100}({alert_type}[^\]]+)\]""",
+    """\[Priority:\s{0,100}({alert_severity}\d{1,100})\] \{({protocol}[^\}]+)\}""",
+    """\[\d{1,100}:\d{1,100}:\d{1,100}\]\s{1,100}\\*"({additional_info}[^"]+?)\\*"""",
+    """\{\w+\}\s{0,100}({src_ip}[^\s]+?)\:+({src_port}\d{1,100}) \((unknown|({src_country}[^\)]+))""",
+    """->\s{0,100}({dest_ip}[^\s]+?)\:+({dest_port}\d{1,100}) \((unknown|({dest_country}[^\)]+))""",
+    """\[Impact:\s{0,100}(Unknown|({impact}[^\]]+))""",
     """ From \\"({src_host}[\w\-.]+)\\""",
   ]
 }

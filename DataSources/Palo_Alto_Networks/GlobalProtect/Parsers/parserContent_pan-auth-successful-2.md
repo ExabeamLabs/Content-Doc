@@ -9,9 +9,5 @@ Name = pan-auth-successful-2
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
   Conditions = [ """panorama-auth-success""", """,SYSTEM,tls,""" ]
   Fields = [
-    """\w+\s+\d+\s+\d+:\d+:\d+\s+({host}[\w\-.]+)\s+\d+,({time}\d+\/\d+\/\d+\s+\d+:\d+:\d+),""",
-    """Client IP:\s*({src_ip}[A-Fa-f:\d.]+)""",
-    """Server IP:\s*({dest_ip}[A-Fa-f:\d.]+)""",
-    ]
-}
+    """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]+)\s{1,100}\d{1,100}
 ```

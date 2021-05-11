@@ -10,13 +10,13 @@ Name = vectra-alert
   Conditions = [ """currentIP=""","""detection@""","""certainty="""]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """UTCTimeStart="+({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""",
-    """category="+({alert_type}[^"]+)"""",
-    """type="+({alert_name}[^"]+)"""",
-    """threat="+({alert_severity}[^"]+)"""",
-    """hostname="+(?:IP-[\d.]+|({src_host}[^"]+))"""",
-    """currentIP="+({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
-    """DestinationIP="+({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""""
+    """UTCTimeStart="{1,20}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""",
+    """category="{1,20}({alert_type}[^"]+)"""",
+    """type="{1,20}({alert_name}[^"]+)"""",
+    """threat="{1,20}({alert_severity}[^"]+)"""",
+    """hostname="{1,20}(?:IP-[\d.]+|({src_host}[^"]+))"""",
+    """currentIP="{1,20}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
+    """DestinationIP="{1,20}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""""
   ]
 }
 ```

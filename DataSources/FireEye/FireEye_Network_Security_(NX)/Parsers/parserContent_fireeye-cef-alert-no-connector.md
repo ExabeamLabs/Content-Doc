@@ -11,7 +11,7 @@ Name = fireeye-cef-alert-no-connector
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """rt=({time}[a-zA-Z]{3} \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
-    """externalId=({alert_id}\d+)""",
+    """externalId=({alert_id}\d{1,100})""",
     """\|FireEye\|([^\|]+\|){3}({alert_type}[^\|]+)\|({alert_severity}[^\|]+)\|""",
     """\|FireEye\|([^\|]+\|){3}({alert_name}[^\|]+)\|""",
     """\ssrc=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
@@ -22,7 +22,7 @@ Name = fireeye-cef-alert-no-connector
     """\srequest=({malware_url}[^\s]+)""",
     """\sdst=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sdhost=({src_host}\S+)""",
-    """\sduser=({user}[^@]+)(@[^\s]+)?\s+cn1Label""",
+    """\sduser=({user}[^@]+)(@[^\s]+)?\s{1,100}cn1Label""",
     """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sdvchost=({host}[^\s]+)"""
   ]

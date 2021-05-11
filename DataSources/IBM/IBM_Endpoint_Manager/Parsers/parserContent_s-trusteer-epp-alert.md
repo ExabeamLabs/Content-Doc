@@ -10,13 +10,13 @@ Name = s-trusteer-epp-alert
   Conditions = [ """IBM Security Trusteer Apex Advanced Malware Protection""" ]
   Fields = [ """exabeam_host=({host}[^\s]+)""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """event_name=({alert_name}.+?)\s+event_id=({alert_id}[^\s]+)""",
-    """severity=({alert_severity}\d+)""",
+    """event_name=({alert_name}.+?)\s{1,100}event_id=({alert_id}[^\s]+)""",
+    """severity=({alert_severity}\d{1,100})""",
     """local_ip=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """computer_name=({src_host}[\w.\-]+)""",
     """external_ip=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """username=(?=\w+)({user}.+?)\s+(digitally_signed_by|target_ip)""",
-    """suspicious_(item_details|process_path|file_path)=({malware_url}.+?)\s+suspicious_(item|process|file)"""
+    """username=(?=\w+)({user}.+?)\s{1,100}(digitally_signed_by|target_ip)""",
+    """suspicious_(item_details|process_path|file_path)=({malware_url}.+?)\s{1,100}suspicious_(item|process|file)"""
   ]
 }
 ```

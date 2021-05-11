@@ -13,7 +13,7 @@ Name = swivel-authentication-success
     """user[:\s]*({user}[^\s.,]+)""",
     """({app}PINsafe)""",
     """\d\d:\d\d:\d\d\s({host}[a-fA-F\d.:]+)""",
-    """INFO\s*({additional_info}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).+?({outcome}successful).+?)\.?\s*$""",
+    """INFO\s{0,100}({additional_info}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).+?({outcome}successful).+?)\.?\s{0,100}$""",
 	]
 }
 ```

@@ -10,13 +10,13 @@ Name = lenel-badge-access-2
   Conditions = [ """ Event_Time_CST:""", """ Emp_Id:""", """ Lnl_Emp_Id:"""]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """Event_Time_CST:\s*"*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d+)"*""",
-    """First_Name:\s*"*(|({first_name}.+?))"+(\s+\w+:|\s*"*$)""",
-    """Last_Name:\s*"*(|({last_name}.+?))"+(\s+\w+:|\s*"*$)""",
-    """Event_Desc:\s*"*(|({outcome}.+?))"+(\s+\w+:|\s*"*$)""",
-    """Lnl_Emp_Id:\s*"+(|({badge_id}.+?))"+(\s+\w+:|\s*"*$)""",
-    """\sEmp_Id:\s*"+(|({user}.+?))"+(\s+\w+:|\s*"*$)""",
-    """Reader_Desc:\s*"+(|({location_door}[^"]+))"+(\s+\w+:|\s*"*$)""",
+    """Event_Time_CST:\s{0,100}"{0,20}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{1,100})"{0,20}""",
+    """First_Name:\s{0,100}"{0,20}(|({first_name}.+?))"{1,20}(\s{1,100}\w+:|\s{0,100}"{0,20}$)""",
+    """Last_Name:\s{0,100}"{0,20}(|({last_name}.+?))"{1,20}(\s{1,100}\w+:|\s{0,100}"{0,20}$)""",
+    """Event_Desc:\s{0,100}"{0,20}(|({outcome}.+?))"{1,20}(\s{1,100}\w+:|\s{0,100}"{0,20}$)""",
+    """Lnl_Emp_Id:\s{0,100}"{1,20}(|({badge_id}.+?))"{1,20}(\s{1,100}\w+:|\s{0,100}"{0,20}$)""",
+    """\sEmp_Id:\s{0,100}"{1,20}(|({user}.+?))"{1,20}(\s{1,100}\w+:|\s{0,100}"{0,20}$)""",
+    """Reader_Desc:\s{0,100}"{1,20}(|({location_door}[^"]+))"{1,20}(\s{1,100}\w+:|\s{0,100}"{0,20}$)""",
   ]
 }
 ```

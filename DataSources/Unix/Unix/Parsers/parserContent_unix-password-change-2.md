@@ -10,7 +10,7 @@ Name = unix-password-change-2
   Conditions = [ """changed password expiry for""", """chage[""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """({host}[\w.\-]+)\s+chage\[""",
+    """({host}[\w.\-]+)\s{1,100}chage\[""",
     """changed password expiry for ({account}\S+)""",
   ]
 }

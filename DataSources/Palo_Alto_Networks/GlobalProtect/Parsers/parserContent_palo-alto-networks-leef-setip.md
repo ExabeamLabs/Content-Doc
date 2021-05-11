@@ -11,8 +11,8 @@ Name = palo-alto-networks-leef-setip
   Fields = [
     """\|ReceiveTime=({time}\d\d\d\d\/\d\d\/\d\d\s\d\d:\d\d:\d\d)""",
     """DeviceName=({host}[^\s"]+)"""
-    """Private IP:\s*({src_translated_ip}[a-fA-F\d.:]+[^\."])""",
-    """User name:\s+({user}[^,\s@]+)""",
+    """Private IP:\s{0,100}({src_translated_ip}[a-fA-F\d.:]+[^\."])""",
+    """User name:\s{1,100}({user}[^,\s@]+)""",
     """Severity=({severity}[^\s|]+)""",
     """cat=({category}[^\s|]+)""",
     """Client OS ( version)?.+?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)"""

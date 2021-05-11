@@ -9,9 +9,9 @@ Name = s-windows-4776
     TimeFormat = "yyyy-MM-dd HH:mm:ss.SSSZ"
     Conditions = [ "Exabeam Windows 4776", "summary_windows_4776_data" ]
     Fields = [
-      """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d+[+-]\d+)""",
+      """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{1,100}[+-]\d{1,100})""",
       """({event_code}4776)""",
-      """summary_windows_4776_data="+\d+:\d+:\d+\s*\d+-\d+-\d+:::({host}[^:::]+)?:::({event_code}[^:::]+)?:::({dest_host}[^:::]+)?:::({result_code}[^:::]+)?:::({user}[^:::]+)?:::([^:::]+):::"""
+      """summary_windows_4776_data="{1,20}\d{1,100}:\d{1,100}:\d{1,100}\s{0,100}\d{1,100}-\d{1,100}-\d{1,100}:::({host}[^:::]+)?:::({event_code}[^:::]+)?:::({dest_host}[^:::]+)?:::({result_code}[^:::]+)?:::({user}[^:::]+)?:::([^:::]+):::"""
     ]
   }
 ```

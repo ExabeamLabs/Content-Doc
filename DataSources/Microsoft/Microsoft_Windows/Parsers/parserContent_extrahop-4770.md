@@ -16,7 +16,7 @@ Name = extrahop-4770
     """"user":(null|"({user}[^"]+))""",
     """"user":(null|"({user_email}({user}[^"@]+)@[^"]+))""",
     """"domain":"({domain}[^"]+)""",
-    """"event_code":({event_code}\d+)""",
+    """"event_code":({event_code}\d{1,100})""",
     """"dest_ip":"(::1|({dest_ip}[a-fA-F:\d.]+))""",
   ]
 }

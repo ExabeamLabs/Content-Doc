@@ -9,7 +9,7 @@ Name = cef-dtex-workstation-locked
   TimeFormat = "epoch"
   Conditions = [ "CEF:", """|Dtex|""", """|SessionLocked|""" ]
   Fields = [
-    """\Wstart=({time}\d+)""",
+    """\Wstart=({time}\d{1,100})""",
     """\WDevice_Name=(({domain}[^\\]+)\\+)?({host}[^\\\s]+)""",
     """\WUser_Name=(({domain}[^\\]+)\\+)?({user}[^\\\s]+)\s""",
     """\|Dtex\|([^\|]*\|){2}(SessionActivity\|)?({event_code}[^\|]+)\|""",

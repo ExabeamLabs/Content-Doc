@@ -17,20 +17,5 @@ Name = json-exchange-dlp-email-out
     """server_hostname":"(?:|({dest_host}[^\"]+))",""",
     """exchange_source":"(?:|({alert_name}[^\"]+))",""",
     """event_id":"(?:|({action}[^\"]+))",""",
-    """internal_message_id":"*(?:|({alert_id}[^",]+))"*,""",
-    """recipient_address":"(?:|({recipients}[^\"]+))",""",
-    """recipient_address":"(?:|({external_address}[^,;@]+@[^;,"']+))",""",
-    """recipient_address":"[^@]+@({external_domain}[^";,]+)""",
-    """total_bytes":"*(?:|({bytes}\d+))"*,""",
-    """recipient_count":"*(?:|({num_recipients}\d+))"*,""",
-    """message_subject":"(?:|({subject}[^\"]+))",""",
-    """sender_address":"(?:|({sender}[^\"]+))",""",
-    """return_path":"(?:|<>|({return_path}[^\"]+))",""",
-  ]
-  DupFields = [
-    "alert_name->alert_type",
-    "sender->user_email",
-    "action->outcome"
-  ]
-}
+    """internal_message_id":"{0,20}(?:|({alert_id}[^",]+))"{0,20}
 ```

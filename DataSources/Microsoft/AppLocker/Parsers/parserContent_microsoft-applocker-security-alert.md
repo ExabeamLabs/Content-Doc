@@ -9,7 +9,7 @@ Name = microsoft-applocker-security-alert
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSSZ"
   Conditions = [ """<Channel>Microsoft-Windows-AppLocker""", """<PolicyName>""", """<Message>""" ]
   Fields = [
-    """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+    """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """<Computer>({host}.+?)</Computer>""",
     """<Data Name='User'>(({domain}[^\\<]+?)\\)?({user}.+?)</Data>""",
     """<Security UserID='({user_sid}.+?)'/>""",

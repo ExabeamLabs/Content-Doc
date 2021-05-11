@@ -10,17 +10,17 @@ Name = raw-4672-1
     Conditions = ["Special privileges assigned to new logon", "Privileges", "computer_name"]
     Fields = [
       """({event_name}Special privileges assigned to new logon)""",
-      """\scategoryOutcome=(|/({outcome}.+?))(\s+\w+=|\s*$)""",
+      """\scategoryOutcome=(|/({outcome}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
       """"(?:winlog\.)?computer_name\\*":\\*"({host}[^\\"]+)""",
       """@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-      """Type\s*=\s*"({outcome}[^";]+)"""",
-      """Keywords=({outcome}.+?);?\s*(\w+=)""",
+      """Type\s{0,100}=\s{0,100}"({outcome}[^";]+)"""",
+      """Keywords=({outcome}.+?);?\s{0,100}(\w+=)""",
       """<Computer>({host}[^<]+)</Computer>""",
-      """Computer(\w+)?["\s]*(:|=)\s*"?({host}[^\s";]+)""",
+      """Computer(\w+)?["\s]*(:|=)\s{0,100}"?({host}[^\s";]+)""",
       """({event_code}4672)""",
-      """Account Name(:|=)\s*(-|SYSTEM|({user}[^\s]+?))[\s;]*Account Domain(:|=)""",
-      """Account Domain(:|=)\s*(-|({domain}[^\s]+?))[\s;]*Logon ID(:|=)""",
-      """\s*Logon ID(:|=)\s*({logon_id}.+?)[\s;]*Privileges(:|=)\s*({privileges}.+?)(<|\s*User:|\s+\d+|,|\s*"|;|\s*$)"""
+      """Account Name(:|=)\s{0,100}(-|SYSTEM|({user}[^\s]+?))[\s;]*Account Domain(:|=)""",
+      """Account Domain(:|=)\s{0,100}(-|({domain}[^\s]+?))[\s;]*Logon ID(:|=)""",
+      """\s{0,100}Logon ID(:|=)\s{0,100}({logon_id}.+?)[\s;]*Privileges(:|=)\s{0,100}({privileges}.+?)(<|\s{0,100}User:|\s{1,100}\d{1,100}|,|\s{0,100}"|;|\s{0,100}$)"""
     ]
     DupFields = ["host->dest_host"]
   }

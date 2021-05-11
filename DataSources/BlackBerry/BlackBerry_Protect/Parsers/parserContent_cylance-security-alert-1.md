@@ -9,12 +9,12 @@ Name = cylance-security-alert-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSSZ"
   Conditions = [ """<Event xmlns=""", """<Provider Name='CylanceSvc'""", """>32</EventID>""" ]
   Fields = [
-    """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+    """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """<Computer>({host}.+?)<\/Computer>""",
     """({alert_name}A potentially malicious Active script was Detected)""",
-    """Device:\s*({src_host}[\w\-.]+)""",
-    """MAC:\s*({src_mac}[^\s,;<]+)""",
-    """File path:\s*(|({malware_url}.+?))\s+Process Id:""",
+    """Device:\s{0,100}({src_host}[\w\-.]+)""",
+    """MAC:\s{0,100}({src_mac}[^\s,;<]+)""",
+    """File path:\s{0,100}(|({malware_url}.+?))\s{1,100}Process Id:""",
     """IP:\s({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""", 
   ]
   DupFields = [ "alert_name->alert_type" ]

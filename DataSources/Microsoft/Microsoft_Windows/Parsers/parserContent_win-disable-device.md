@@ -19,13 +19,13 @@ d-xml-windows-device = {
     """exabeam_host=({host}[\w\-.]+)""",
     """<TimeCreated SystemTime=\'({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{9}Z)\'\/>"""
     """<Computer>({dest_host}.*?)<\/Computer>"""
-    """Security ID:\s+({user_sid}[^\s]+?)\s+Account Name:"""
-    """Account Name:\s+(-\s*|({user}.*?)\s+)Account Domain:"""
-    """Device Name:\s+({device_name}.*?)\s+Class ID:"""
-    """Device ID:\s+({device_id}.*?)\s+Device Name:"""    
-    """Account Domain:\s+(-\s*|({domain}.*?)\s+)Logon ID:"""    
-    """Location Information:\s+(-|({additional_info}[^\s]*?)\s+)"""  
-    """Class Name:\s+({device_type}.*?)\s+(Vendor IDs:|Hardware IDs:)"""   
+    """Security ID:\s{1,100}({user_sid}[^\s]+?)\s{1,100}Account Name:"""
+    """Account Name:\s{1,100}(-\s{0,100}|({user}.*?)\s{1,100})Account Domain:"""
+    """Device Name:\s{1,100}({device_name}.*?)\s{1,100}Class ID:"""
+    """Device ID:\s{1,100}({device_id}.*?)\s{1,100}Device Name:"""    
+    """Account Domain:\s{1,100}(-\s{0,100}|({domain}.*?)\s{1,100})Logon ID:"""    
+    """Location Information:\s{1,100}(-|({additional_info}[^\s]*?)\s{1,100})"""  
+    """Class Name:\s{1,100}({device_type}.*?)\s{1,100}(Vendor IDs:|Hardware IDs:)"""   
   ]
 
 ```

@@ -9,14 +9,14 @@ Name = github-audit-org-activity
   TimeFormat = "epoch"
   Conditions = [ "github_audit", """action":"org""" ]
   Fields = [
-    """"start":({time}\d+),""",
+    """"start":({time}\d{1,100}),""",
     """exabeam_host=({host}[\w.\-]+)""",
-    """({host}\S+)\s+github_audit:""",
-    """"+actor"+:"+({user}[^"]+)""",
-    """"+user"+:"+({resource}[^"]+)""",
-    """"+action"+:"+({activity}[^"]+)""",
-    """"+actor_ip"+:"+({src_ip}[^"]+)""",
-    """"+org"+:"+({object}[^"]+)""",
+    """({host}\S+)\s{1,100}github_audit:""",
+    """"{1,20}actor"{1,20}:"{1,20}({user}[^"]+)""",
+    """"{1,20}user"{1,20}:"{1,20}({resource}[^"]+)""",
+    """"{1,20}action"{1,20}:"{1,20}({activity}[^"]+)""",
+    """"{1,20}actor_ip"{1,20}:"{1,20}({src_ip}[^"]+)""",
+    """"{1,20}org"{1,20}:"{1,20}({object}[^"]+)""",
     """({app}github)"""
   ]
 }

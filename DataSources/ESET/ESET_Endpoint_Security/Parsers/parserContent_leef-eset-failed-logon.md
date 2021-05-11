@@ -5,7 +5,7 @@ Name = leef-eset-failed-logon
   DataType = "failed-logon"
   Conditions = [ """LEEF:""", """|ESET|RemoteAdministrator|""", """cat=ESET RA Audit Event""", """Failed native user""" ]
   Fields = ${ESETParserTemplates.eset-activity.Fields}[
-    """\Wtarget=({object}[^\s]+)\s*"""
+    """\Wtarget=({object}[^\s]+)\s{0,100}"""
   ]
 }
 eset-activity = {
@@ -17,23 +17,23 @@ eset-activity = {
       """\WdevTime=({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d [^\s]+)""",
       """dst=({dest_ip}[a-fA-F:\d.]+)""",
       """src=({src_ip}[a-fA-F:\d.]+)""",
-      """srcPort=({src_port}\d+)""",
-      """dstPort=({dest_port}\d+)""",
+      """srcPort=({src_port}\d{1,100})""",
+      """dstPort=({dest_port}\d{1,100})""",
       """\|ESET\|(?:[^\|]+\|){2}({event_name}[^\|]+)""",
-      """actionTaken=({action}[^=]+?)\s*(\w+=|$)""",
-      """\Wresult=({outcome}[^=]+?)\s*(\w+=|$)""",
+      """actionTaken=({action}[^=]+?)\s{0,100}(\w+=|$)""",
+      """\Wresult=({outcome}[^=]+?)\s{0,100}(\w+=|$)""",
       """\Wdetail=({additional_info}[^.]+)\.""",
-      """objectUri=({full_url}[^\s]+?)\s*(\w+=|$)""",
+      """objectUri=({full_url}[^\s]+?)\s{0,100}(\w+=|$)""",
       """deviceName=({host}[^\s]+)""",
       """hash=({sha256}[^\s]+)""",
-      """inbound=({direction}\d+)""",
+      """inbound=({direction}\d{1,100})""",
       """\Waction=({activity}[^\s]+)\s""",
-      """\Wcat=({category}[^=]+?)\s*(\w+=|$)""",
-      """\Wuser=({user}[^\s=]+?)\s*(\w+=|$)""",
-      """processName=({process}({directory}(?:(\w+:)*([\\\/]+[^=\\\/"]+)+)?[\\\/]+)({process_name}[^=\,\\\/]+?))\s*(\w+=|$)""",
+      """\Wcat=({category}[^=]+?)\s{0,100}(\w+=|$)""",
+      """\Wuser=({user}[^\s=]+?)\s{0,100}(\w+=|$)""",
+      """processName=({process}({directory}(?:(\w+:)*([\\\/]+[^=\\\/"]+)+)?[\\\/]+)({process_name}[^=\,\\\/]+?))\s{0,100}(\w+=|$)""",
       """proto=({protocol}[^\s]+)""",
       """\Wuser '(({domain}[^\s\\]+)\\)?({user}[^\s]+)'.""",
-      """accountName=(NT AUTHORITY\\+|({domain}[^\\]+?)\\+)?(SYSTEM|({user}[^=\s]+?))\s*(\w+=|$)"""
+      """accountName=(NT AUTHORITY\\+|({domain}[^\\]+?)\\+)?(SYSTEM|({user}[^=\s]+?))\s{0,100}(\w+=|$)"""
     ]
 
 ```

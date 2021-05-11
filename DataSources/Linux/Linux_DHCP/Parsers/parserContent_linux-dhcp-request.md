@@ -10,7 +10,7 @@ Name = linux-dhcp-request
   Conditions = [ """ DHCPREQUEST for """ , """ from """, """ via """ ]
   Fields = [
     """exabeam_time=({time}\d{4}-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\d\d:\d\d:\d\d\s+({host}[^\s]+)\s+dhcpd(\[\d+\])?:\s+DHCPREQUEST for ({dest_ip}[a-fA-F\d\.:]+)\s.*?from ({dest_mac}[a-fA-F\d\.:]+)(\s\(({dest_host}\S+)\))?( via (({src_ip}[\d.:a-fA-F]+[\da-fA-F]):?|({dest_interface}[\w-]+)))\s*""",
+    """\d\d:\d\d:\d\d\s{1,100}({host}[^\s]+)\s{1,100}dhcpd(\[\d{1,100}\])?:\s{1,100}DHCPREQUEST for ({dest_ip}[a-fA-F\d\.:]+)\s.*?from ({dest_mac}[a-fA-F\d\.:]+)(\s\(({dest_host}\S+)\))?( via (({src_ip}[\d.:a-fA-F]+[\da-fA-F]):?|({dest_interface}[\w-]+)))\s{0,100}""",
   ]
   DupFields = [ "host->auth_server" ]
 }

@@ -10,7 +10,7 @@ Name = crowdstrike-service-created-1
   Conditions = [ """"event_simpleName":"CreateService"""" ]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """"timestamp":"({time}\d+)""",
+    """"timestamp":"({time}\d{1,100})""",
     """"(ServiceImagePath|CommandLine)":"(|({process}({directory}(?:(\w+:)?[^:"]+?)?[\\\/])?({process_name}[^"\\\s]+?)))\s""",
     """"ServiceDisplayName":"({service_name}[^"]+)""",
     """"UserName":"({user}[^"\s]+)"""",

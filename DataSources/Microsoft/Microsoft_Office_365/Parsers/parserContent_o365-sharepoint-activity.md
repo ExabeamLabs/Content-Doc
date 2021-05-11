@@ -10,32 +10,16 @@ Name = o365-sharepoint-activity
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """Workload""", """SharePoint""", """ItemType""" ]
   Fields = [
-    """"CreationTime\\*"+:\\*\s*"+({time}[^\\"]+)""",
+    """"CreationTime\\*"{1,20}:\\*\s{0,100}"{1,20}({time}[^\\"]+)""",
     """exabeam_host=({host}[^\s]+)""",
-    """"host\\*"+:\\*\s*"+({host}[^"\\]+)""",
-    """"SourceRelativeUrl\\*"+:\\*\s*"+({file_parent}[^"]+)""",
-    """"ObjectId\\*"+:\\*\s*"+({file_path}[^"]+)[\\"](?!\\u\d+)""",
-    """"ObjectId\\*"+:\\*\s*"+({file_parent}[^"]+)[\\\/](?!u\d+)""",
-    """"ObjectId\\*"+:\\*\s*"+[^"]*?({file_name}[^\/"]+?(\.({file_ext}[^\\\/\.\s"]+))?)"(?!u\d+)""",
-    """"Operation\\*"+:\\*\s*"+({accesses}[^"\\]+)""",
-    """"UserId\\*"+:\\*\s*"+({user_email}[^"@]+@({email_domain}[^@"\\]+))""",
-    """"UserId\\*"+:\\*\s*"+(Teams Meeting Anonymous Participant|(({domain}[^\\\s@"]+)\\+)?({user}[^\\\s@"]+)\s)""",
-    """"ClientIP\\*"+:\\*\s*"+({src_ip}[a-fA-F:\d.]+)""",
-    """"UserAgent\\*"+:\\*\s*"+({user_agent}[^"\\]+)"+,""",
-    """"UserSharedWith\\*"+:\\*\s*"+({object}[^"@\\]+)""",
-    """"SourceFileName\\*"+:\\*\s*"+\s*({file_name}[^"\\]+?)\s*"""",
-    """"SourceFileExtension\\*"+:\\*\s*"+({file_ext}[^"\\,]+)"""",
-    """"ItemType\\*"+:\\*\s*"+({file_type}[^"\\]+)""",
-    """"Workload\\*"+:\\*\s*"+({app}[^"\\]+)""",
-    """"NewValue\\*"+:\\*\s*"+({object}[^"@\\]+)""",
-    """\WfilePath=\{.*?"ObjectUrl":"({file_path}[^"]+)"""",
-    """\WfileType=({file_type}[^\s]+)""",
-    """\Wsproc=(|({user_email}.+?))(\s+\w+=|\s*$)""",
-    """\WfilePermission=(|({permission_type}.+?))(\s+\w+=|\s*$)""",
-    """\Wduser=(|({action_performer}[^=]+?))(\s+\w+=|\s*$)""",
-    """\Wsuser=(|({affected_user}[^@\s]+@[^=]+?))(\s+\w+=|\s*$)""",
-    """src-account-name":"({account_name}[^"]+)""",
-  ]
-  DupFields = [ "accesses->activity" ]
-}
+    """"host\\*"{1,20}:\\*\s{0,100}"{1,20}({host}[^"\\]+)""",
+    """"SourceRelativeUrl\\*"{1,20}:\\*\s{0,100}"{1,20}({file_parent}[^"]+)""",
+    """"ObjectId\\*"{1,20}:\\*\s{0,100}"{1,20}({file_path}[^"]+)[\\"](?!\\u\d{1,100})""",
+    """"ObjectId\\*"{1,20}:\\*\s{0,100}"{1,20}({file_parent}[^"]+)[\\\/](?!u\d{1,100})""",
+    """"ObjectId\\*"{1,20}:\\*\s{0,100}"{1,20}[^"]*?({file_name}[^\/"]+?(\.({file_ext}[^\\\/\.\s"]+))?)"(?!u\d{1,100})""",
+    """"Operation\\*"{1,20}:\\*\s{0,100}"{1,20}({accesses}[^"\\]+)""",
+    """"UserId\\*"{1,20}:\\*\s{0,100}"{1,20}({user_email}[^"@]+@({email_domain}[^@"\\]+))""",
+    """"UserId\\*"{1,20}:\\*\s{0,100}"{1,20}(Teams Meeting Anonymous Participant|(({domain}[^\\\s@"]+)\\+)?({user}[^\\\s@"]+)\s)""",
+    """"ClientIP\\*"{1,20}:\\*\s{0,100}"{1,20}({src_ip}[a-fA-F:\d.]+)""",
+    """"UserAgent\\*"{1,20}:\\*\s{0,100}"{1,20}({user_agent}[^"\\]+)"{1,20}
 ```

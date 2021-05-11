@@ -10,15 +10,15 @@ Name = cef-rangeraudit-file-operations
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
   Conditions = [ """"RangerAudit"""", """resType""", """"path"""" ]
   Fields = [
-    """evtTime"*:"({time}[^"]+)""",
-    """agentHost"*:"({host}[^"]+)""",
-    """repo"*:"({app}[^"]+)""",
-    """reqUser"*:"({user}[^"]+)""",
-    """access"*:"({accesses}[^"]+)""",
-    """resource"*:"({file_path}[^"]+)""",
-    """action"*:"({action}[^"]+)""",
-    """cliIP"*:"({src_ip}[^"]+)""",
-    """cluster_name"*:"({dest_host}[^"]+)""",
+    """evtTime"{0,20}:"({time}[^"]+)""",
+    """agentHost"{0,20}:"({host}[^"]+)""",
+    """repo"{0,20}:"({app}[^"]+)""",
+    """reqUser"{0,20}:"({user}[^"]+)""",
+    """access"{0,20}:"({accesses}[^"]+)""",
+    """resource"{0,20}:"({file_path}[^"]+)""",
+    """action"{0,20}:"({action}[^"]+)""",
+    """cliIP"{0,20}:"({src_ip}[^"]+)""",
+    """cluster_name"{0,20}:"({dest_host}[^"]+)""",
   ]
 }
 ```

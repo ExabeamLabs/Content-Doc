@@ -13,9 +13,9 @@ Name = json-4800
     """"Hostname":"({host}[^"]+)""",
     """({event_name}The workstation was locked)""",
     """({event_code}4800)""",
-    """Account Name:\s*((\\)[rnt])*({user}.+?)((\\)[rnt])*\s*Account Domain""",
-    """Account Domain:\s*((\\)[rnt])*({domain}.+?)((\\)[rnt])*\s*Logon ID""",
-    """Logon ID:\s*((\\)[rnt])*({logon_id}.+?)((\\)[rnt])*\s*Session"""
+    """Account Name:\s{0,100}((\\)[rnt])*({user}.+?)((\\)[rnt])*\s{0,100}Account Domain""",
+    """Account Domain:\s{0,100}((\\)[rnt])*({domain}.+?)((\\)[rnt])*\s{0,100}Logon ID""",
+    """Logon ID:\s{0,100}((\\)[rnt])*({logon_id}.+?)((\\)[rnt])*\s{0,100}Session"""
   ]
   DupFields = [ "host->dest_host" ]
 }

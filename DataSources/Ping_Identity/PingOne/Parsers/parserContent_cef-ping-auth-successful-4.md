@@ -10,7 +10,7 @@ Name = cef-ping-auth-successful-4
   Conditions = [ """destinationServiceName=Ping""", """flexString2=SSO""", """request=Success""" ]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """end=({time}\d+)""",
+    """end=({time}\d{1,100})""",
     """cat=({category}[^\s]+)"""
     """request=({outcome}[^\s]+)""",
     """requestClientApplication=({app}.*?)\s\w+=""",

@@ -10,7 +10,7 @@ Name = syslog-json-4740
   Conditions = [ """"EventID":""", """4740""","""A user account was locked out""" ]
   Fields = [ 
     """({event_name}A user account was locked out)""",
-    """"EventTime":\s*"({time}\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})"""",
+    """"EventTime":\s{0,100}"({time}\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})"""",
     """"Hostname":"({host}[\w\-.]+)""",
     """({event_code}4740)""",
     """"SubjectUserName":"({caller_user}[^"]+)""",

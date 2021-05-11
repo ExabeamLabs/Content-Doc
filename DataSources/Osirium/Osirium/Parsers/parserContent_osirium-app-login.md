@@ -10,9 +10,9 @@ Name = osirium-app-login
   Conditions = [ """:User u'""", """ logged """ ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[\w\-.]+)""",
     """:User u\'({user}[^\s\']+)""",
-    """address\s*\'({src_ip}[a-fA-F:\d.]+)\'\s*logged""",
+    """address\s{0,100}\'({src_ip}[a-fA-F:\d.]+)\'\s{0,100}logged""",
     """({app}osirium)"""
   ]
 }

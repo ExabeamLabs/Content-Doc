@@ -9,11 +9,11 @@ Name = o365-url-click-alert
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [""""Operation":"TIUrlClickData"""", """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|audit-event|"""]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[\w\-.]+)""",
     """"CreationTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""",
     """"Id":"({alert_id}[^"]+)"""",
-    """requestClientApplication=({process}.+?)\s*(\w+=|$)""",
-    """"EventDeepLink":"\s*({additional_info}[^"]+)"""",
+    """requestClientApplication=({process}.+?)\s{0,100}(\w+=|$)""",
+    """"EventDeepLink":"\s{0,100}({additional_info}[^"]+)"""",
     """"Workload":"({alert_type}[^"]+)""",
     """"Operation":"({alert_name}[^"]+)""",
     """"UserId":"({user_email}[^@"\s]+?@[^"\s]+?)""""   

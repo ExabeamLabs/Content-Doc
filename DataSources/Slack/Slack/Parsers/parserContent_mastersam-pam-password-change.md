@@ -14,14 +14,14 @@ mastersam-pam-events = {
   Lms = Direct
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
   Fields = [
-    """({host}[\w\-.]+)\s+Event Time:\s*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d+)""",
-    """\WUser:\s*(({domain}[^\\\s]+)\\+)?({user}[^\\\s]+)""",
-    """\Wname=({dest_host}[\w\-.]+)\s+(\w+=|$)""",
+    """({host}[\w\-.]+)\s{1,100}Event Time:\s{0,100}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{1,100})""",
+    """\WUser:\s{0,100}(({domain}[^\\\s]+)\\+)?({user}[^\\\s]+)""",
+    """\Wname=({dest_host}[\w\-.]+)\s{1,100}(\w+=|$)""",
     """\Whost=({dest_ip}[A-Fa-f:\d.]+)""",
-    """\Wprotocol=({protocol}.+?)\s+(\w+=|$)""",
-    """\Wstatus=({outcome}.+?)\s+(\w+=|$)""",
-    """\Wfailed_message=({failure_reason}.+?)\s+(\w+=|$)""",
-    """\WActivity:\s*({activity}.+?)\s+User:""",
+    """\Wprotocol=({protocol}.+?)\s{1,100}(\w+=|$)""",
+    """\Wstatus=({outcome}.+?)\s{1,100}(\w+=|$)""",
+    """\Wfailed_message=({failure_reason}.+?)\s{1,100}(\w+=|$)""",
+    """\WActivity:\s{0,100}({activity}.+?)\s{1,100}User:""",
   ]
 
 ```

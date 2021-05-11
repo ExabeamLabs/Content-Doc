@@ -9,7 +9,7 @@ Name = q-exchange-dlp-email-in-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """message-subject=""", """TOTAL-HUB=""", """directionality=Incoming""" ]
   Fields = [
-    """exabeam_host=([^@=]+@)?\s*({host}[\w-.]+)""",
+    """exabeam_host=([^@=]+@)?\s{0,100}({host}[\w-.]+)""",
     """client-ip=({src_ip}[a-fA-F\d.:]+)""",
     """SourceIp=({src_ip}[a-fA-F\d.:]+)""",
     """server-ip=({dest_ip}[a-fA-F\d.:]+)""",
@@ -21,9 +21,9 @@ Name = q-exchange-dlp-email-in-1
     """\tinternal-message-id=(?:|({alert_id}.+?))\t[\w\-]+=""",
     """recipient-address=({recipients}\S+)""",
     """recipient-address=({recipient}[^\s;]+)""",
-    """total-bytes=({bytes}\d+)""",
-    """recipient-count=({num_recipients}\d+)""",
-    """message-subject="*({subject}.+?)"*\s+((\w+-)*\w+=|$)""",
+    """total-bytes=({bytes}\d{1,100})""",
+    """recipient-count=({num_recipients}\d{1,100})""",
+    """message-subject="{0,20}({subject}.+?)"{0,20}\s{1,100}((\w+-)*\w+=|$)""",
     """sender-address=({sender}[^\s@]+@({external_domain}[^@\s]+))""",
     """directionality=({direction}\w+)"""
   ]

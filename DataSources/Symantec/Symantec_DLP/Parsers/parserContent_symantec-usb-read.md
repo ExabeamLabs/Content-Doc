@@ -9,20 +9,12 @@ Name = symantec-usb-read
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """,Rule:""", """,File Read,Begin:""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-    """Begin:\s*({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-    """\w+ \d+ \d\d:\d\d:\d\d\s+({host}[\w\-.]+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[\w\-.]+)""",
+    """Begin:\s{0,100}({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
+    """\w+ \d{1,100} \d\d:\d\d:\d\d\s{1,100}({host}[\w\-.]+)""",
     """,(0.0.0.0|({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^,]*)),([^,]*,){2}File Read""",
-    """Rule:[^\|]*\|\s*({activity_details}[^,]+)""",
-    """User:\s*(SYSTEM|({user}[^\s,]+))""",
-    """Domain:\s*({domain}[^,]+)""",
-    """,File Read,([^,]*,){3}\d+,"?(?: |({process}({directory}(?:[^,"]+)?[\\\/])?({process_name}[^\\\/,"]+?))),\d+,[^,]+,"?({file_path}[^"]*?)"?\s*,User""",
-    """,File Read,([^,]*,){3}\d+,[^,]*,\d+,[^,]+,.*/(|({file_name}[^"]*?))"?\s*,User""",
-    """File size \(bytes\):\s*({bytes}\d+)""",
-    """({activity}File Read)""",
-    """({device_type}(CD-DVD|USB))""",
-    """Device ID:\s*({device_id}.*)&\d+""",
-  ]
-  DupFields = ["directory->process_directory"]
-}
+    """Rule:[^\|]*\|\s{0,100}({activity_details}[^,]+)""",
+    """User:\s{0,100}(SYSTEM|({user}[^\s,]+))""",
+    """Domain:\s{0,100}({domain}[^,]+)""",
+    """,File Read,([^,]*,){3}\d{1,100}
 ```

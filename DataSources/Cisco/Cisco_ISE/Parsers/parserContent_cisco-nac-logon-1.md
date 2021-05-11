@@ -9,11 +9,11 @@ Name = cisco-nac-logon-1
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS Z"
   Conditions = [ """Device-Administration: Command Authorization succeeded""", """CSCOacs_Passed_Authentications""" ]
   Fields = [
-    """({host}[\w.\-]+)\s+CSCOacs_Passed_Authentications(\s+\S+){3}\s+({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d+ (\+|\-)\d\d:\d\d)""",
-    """Device-Administration:\s*({event_name}[^,]+)""",
+    """({host}[\w.\-]+)\s{1,100}CSCOacs_Passed_Authentications(\s{1,100}\S+){3}\s{1,100}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{1,100} (\+|\-)\d\d:\d\d)""",
+    """Device-Administration:\s{0,100}({event_name}[^,]+)""",
     """, Device IP Address=({auth_server}[^,]+)""",
     """, DestinationIPAddress=({dest_ip}[a-fA-F\d.:]+)""",
-    """, DestinationPort=({dest_port}\d+)""",
+    """, DestinationPort=({dest_port}\d{1,100})""",
     """, UserName=({user}[^,]+)""",
     """, Protocol=({protocol}[^,]+)""",
     """, Remote-Address=({src_ip}[^,]+)""",

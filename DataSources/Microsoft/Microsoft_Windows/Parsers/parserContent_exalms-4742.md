@@ -9,18 +9,18 @@ Name = exalms-4742
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = ["""@timestamp":""", """A computer account was changed.""" , """Service Principal Names:"""]
   Fields = [
-    """"@timestamp"\s*:\s*"({time}.+?)"""",
+    """"@timestamp"\s{0,100}:\s{0,100}"({time}.+?)"""",
     """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]+\sSkyformation""",
-    """"(?:winlog\.)?computer_name"\s*:\s*"({host}.+?)"""",
+    """"(?:winlog\.)?computer_name"\s{0,100}:\s{0,100}"({host}.+?)"""",
     """({event_code}4742)""",
     """({event_name}A computer account was changed.)""",
-    """SubjectDomainName"\s*:\s*"({domain}[^"]+)""",
-    """SubjectUserName"\s*:\s*"({user}[^"]+)""" 
-    """SubjectLogonId"\s*:\s*"({logon_id}[^"]+)""",
-    """TargetUserName"\s*:\s*"({target_user}[^"]+)""",
-    """ServicePrincipalNames"\s*:\s*"({attribute}[^"]+)"""
-    """TargetDomainName"\s*:\s*"({object_dn}[^"]+)""",
-    """TargetUserName"\s*:\s*"({src_host}[^\s$]+)\$"""
+    """SubjectDomainName"\s{0,100}:\s{0,100}"({domain}[^"]+)""",
+    """SubjectUserName"\s{0,100}:\s{0,100}"({user}[^"]+)""" 
+    """SubjectLogonId"\s{0,100}:\s{0,100}"({logon_id}[^"]+)""",
+    """TargetUserName"\s{0,100}:\s{0,100}"({target_user}[^"]+)""",
+    """ServicePrincipalNames"\s{0,100}:\s{0,100}"({attribute}[^"]+)"""
+    """TargetDomainName"\s{0,100}:\s{0,100}"({object_dn}[^"]+)""",
+    """TargetUserName"\s{0,100}:\s{0,100}"({src_host}[^\s$]+)\$"""
   ]
   DupFields = [ "host-> dest_host"]
 }

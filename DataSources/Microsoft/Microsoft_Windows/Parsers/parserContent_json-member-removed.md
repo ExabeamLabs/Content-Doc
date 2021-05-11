@@ -9,9 +9,9 @@ Name = json-member-removed
   TimeFormat = "epoch"
   Conditions = [ """"EventID":""", """A member was removed from a security-enabled""", """"MemberSid":""", """"MemberName":""" ]
   Fields = [
-    """"EventTime":({time}\d+)""",
+    """"EventTime":({time}\d{1,100})""",
     """"Hostname":"({host}[\w.-]+?)"""",
-    """"EventID":({event_code}\d+)""",
+    """"EventID":({event_code}\d{1,100})""",
     """({event_name}A member was removed from a security-enabled ({group_type}[\w\s]+) group)""",
     """"SubjectUserName":"({user}[^"]+)""",
     """"SubjectDomainName":"({domain}[^"]+)"""",

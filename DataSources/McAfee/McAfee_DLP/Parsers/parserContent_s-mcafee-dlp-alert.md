@@ -11,15 +11,15 @@ Name = s-mcafee-dlp-alert
     Fields = [ 
         """LocalTime="({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)"""   
 	"""exabeam_raw=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-	"""UTCTime(=|:)\s*"({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
+	"""UTCTime(=|:)\s{0,100}"({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
 	"""exabeam_host=({host}[^\s]+)""",
-	"""ComputerName(=|:)\s*"({src_host}[^"]+)"""",
-	"""UserName(=|:)\s*"(({domain}[^\\]+)\\)?({user}[^"]+)"""",
-	"""ReactionSet_DisplayName(=|:)\s*"([^"\?]+\?)?({alert_type}\w+)""",
-	"""Policy_Name(=|:)\s*"({alert_name}[^"]+)"""",
-	"""Evidence(=|:)\s*"([^,]*,){4}\s*({device_id}.+?)(\"|&\d|,)""",
-	"""Evidence(=|:)\s*"([^,]*,)\s*({device_type}[^,]+)""",
-	"""EventTypeDisplayName(=|:)\s*"({additional_info}[^"]+)""""
+	"""ComputerName(=|:)\s{0,100}"({src_host}[^"]+)"""",
+	"""UserName(=|:)\s{0,100}"(({domain}[^\\]+)\\)?({user}[^"]+)"""",
+	"""ReactionSet_DisplayName(=|:)\s{0,100}"([^"\?]+\?)?({alert_type}\w+)""",
+	"""Policy_Name(=|:)\s{0,100}"({alert_name}[^"]+)"""",
+	"""Evidence(=|:)\s{0,100}"([^,]*,){4}\s{0,100}({device_id}.+?)(\"|&\d|,)""",
+	"""Evidence(=|:)\s{0,100}"([^,]*,)\s{0,100}({device_type}[^,]+)""",
+	"""EventTypeDisplayName(=|:)\s{0,100}"({additional_info}[^"]+)""""
     ]
     SOAR {
       IncidentType = "dlp"

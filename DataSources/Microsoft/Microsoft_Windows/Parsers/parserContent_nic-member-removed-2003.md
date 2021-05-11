@@ -11,14 +11,14 @@ Name = nic-member-removed-2003
   Fields = [
     """({event_name}Security Enabled [\w\s]+ Group Member Removed)""",
     """({time}\w{3}\s\d{2}\s\d{2}:\d{2}:\d{2}\s\d{4})""",
-    """\d\d:\d\d:\d\d\s+\d\d\d\d\s+({event_code}\d+)\s+Security""",
-    """(?:Success|Failure|Audit)\s+\w+\s+({host}[^\s]+)""",
-    """Information\s+({host}[\w.\-]+)\s+""",
-    """Security Enabled\s+({group_type}.+?)\s+Group Member""",
-    """Member ID:\s+%\{({account_id}[\w\-]+)""",
-    """Target Account Name:\s+({group_name}.+?)\s+Target Domain:\s+({group_domain}.+?)\s+Target Account ID:\s+%\{({group_id}[\w\-]+)""",
-    """Caller User Name:\s+({user}.+?)\s+Caller Domain:\s+({domain}.+?)\s+Caller Logon ID:\s+\(\w+(\s|,)({logon_id}[^)]+)""",
-    """Group Member.+?Member Name:\s+(?:-|({account_dn}CN=.+?,({account_ou}OU.+?DC=[\w-]+)))\s+Member ID""",
+    """\d\d:\d\d:\d\d\s{1,100}\d\d\d\d\s{1,100}({event_code}\d{1,100})\s{1,100}Security""",
+    """(?:Success|Failure|Audit)\s{1,100}\w+\s{1,100}({host}[^\s]+)""",
+    """Information\s{1,100}({host}[\w.\-]+)\s{1,100}""",
+    """Security Enabled\s{1,100}({group_type}.+?)\s{1,100}Group Member""",
+    """Member ID:\s{1,100}%\{({account_id}[\w\-]+)""",
+    """Target Account Name:\s{1,100}({group_name}.+?)\s{1,100}Target Domain:\s{1,100}({group_domain}.+?)\s{1,100}Target Account ID:\s{1,100}%\{({group_id}[\w\-]+)""",
+    """Caller User Name:\s{1,100}({user}.+?)\s{1,100}Caller Domain:\s{1,100}({domain}.+?)\s{1,100}Caller Logon ID:\s{1,100}\(\w+(\s|,)({logon_id}[^)]+)""",
+    """Group Member.+?Member Name:\s{1,100}(?:-|({account_dn}CN=.+?,({account_ou}OU.+?DC=[\w-]+)))\s{1,100}Member ID""",
   ]
   DupFields = [ "host->dest_host" ]
 }

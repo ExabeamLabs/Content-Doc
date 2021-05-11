@@ -10,19 +10,19 @@ Name = skyformation-cloudflare-waf
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
   Conditions = [ """|Skyformation|""", """ResponseStatus"""", """FirewallMatchesActions""", """destinationServiceName=Custom Application""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """"EdgeStartTimestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
     """"ClientDeviceType":"({device_type}[^"]+)""",
     """"ClientCountry":"({src_country}[^"]+)""",
     """"ClientIP":"(?:["]+|({src_ip}[A-Fa-f:\d.]+))""",
-    """"ClientSrcPort":({src_port}\d+)""",
+    """"ClientSrcPort":({src_port}\d{1,100})""",
     """"ClientRequestUserAgent":"({user_agent}[^"]+)""",
-    """"ClientRequestBytes":({bytes_in}\d+)""",
-    """"EdgeResponseBytes":({bytes_out}\d+)""",
+    """"ClientRequestBytes":({bytes_in}\d{1,100})""",
+    """"EdgeResponseBytes":({bytes_out}\d{1,100})""",
     """"EdgeResponseStatus":({result_code}({edge_response_status}\d\d\d))"""
     """"OriginResponseStatus":({result_code}({origin_response_status}\d\d\d))"""
     """"EdgeServerIP":"({dest_ip}[A-Fa-f:\d.]+)""",
-    """"OriginIP":"({dest_ip}[A-Fa-f:\d.]+)"*.*OriginResponseBytes":({bytes_out}\d+)""",
+    """"OriginIP":"({dest_ip}[A-Fa-f:\d.]+)"{0,20}.*OriginResponseBytes":({bytes_out}\d{1,100})""",
     """"OriginIP":"(?:["]+|({dest_ip}[A-Fa-f:\d.]+))""",
     """"ClientRequestMethod":"({method}[^"]+)""",
     """"FirewallMatchesActions[":\[]+(?:["\]]+|({action}[^,"]+))""",

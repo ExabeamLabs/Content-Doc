@@ -9,9 +9,9 @@ Name = json-4778
     TimeFormat = "epoch"
     Conditions = ["""A session was reconnected to a Window Station""", """"EventID":4778"""]
     Fields = [
-      """"EventTime":({time}\d+)""",
+      """"EventTime":({time}\d{1,100})""",
       """"Hostname":"({host}[\w.-]+?)"""",
-      """"EventID":({event_code}\d+)""",
+      """"EventID":({event_code}\d{1,100})""",
       """({event_name}A session was reconnected to a Window Station)""",
       """"AccountName":"({user}[^"]+)""",
       """"AccountDomain":"({domain}[^"]+)""",

@@ -9,15 +9,15 @@ Name = cef-logrhythm-process-created
     TimeFormat = "MM/dd/yyyy HH:mm:ss"
     Conditions = ["""TIMESTAMP=""", """PNAME=""", """PID=""" ]
     Fields = [
-      """TIMESTAMP=({time}\d+\/\d+\/\d\d\d\d\s\d+:\d+:\d+)""",
+      """TIMESTAMP=({time}\d{1,100}\/\d{1,100}\/\d\d\d\d\s\d{1,100}:\d{1,100}:\d{1,100})""",
       """EVENT=({event_name}[^\s]+)""",
-      """PID=({process_id}\d+)""",
+      """PID=({process_id}\d{1,100})""",
       """PNAME=({process_name}[^\s]+)""",
       """PROTOCOL=({protocol}[^\s]+)""",
       """ORIGIN=({host}[^\s]+)""",
       """OWNER=(({domain}[^\\]+?)\\+)?({user}[^\s,]+)""",
       """logonusers=(({domain}[^\\]+?)\\+)?({user}[^\s,]+)""",
-      """LOCALIP=({src_ip}[A-Fa-f:\d.]+)\sLOCALPORT=({src_port}\d+)\sREMOTEIP=({dest_ip}[A-Fa-f:\d.]+)\sREMOTEPORT=({dest_port}\d+)""",
+      """LOCALIP=({src_ip}[A-Fa-f:\d.]+)\sLOCALPORT=({src_port}\d{1,100})\sREMOTEIP=({dest_ip}[A-Fa-f:\d.]+)\sREMOTEPORT=({dest_port}\d{1,100})""",
           ]
 }
 ```

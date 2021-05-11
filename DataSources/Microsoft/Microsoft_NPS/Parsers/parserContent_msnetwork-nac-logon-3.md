@@ -10,8 +10,5 @@ Name = msnetwork-nac-logon-3
   Conditions = [ ""","IAS",""", """win_nps""" ]
   Fields = [
     """"({host}[^,"]+)","IAS",({time}\d\d\/\d\d\/\d\d\d\d,\d\d:\d\d:\d\d)""",
-    """\d\d:\d\d:\d\d,\d*,("host\/({src_host}[^,"]+?)"|[,]*),("({domain}[^\\]+)\\+({user}[^"]+)"|[^,]*),([^,]*,){8}("({src_ip}[a-fA-F\d.:]+)"|[^,]*),""",
-    """({dest_host}[\w.\-]+)\s+\d\d\/\d\d\/\d\d\d\d\s"""
-  ]
-}
+    """\d\d:\d\d:\d\d,\d{0,100}
 ```

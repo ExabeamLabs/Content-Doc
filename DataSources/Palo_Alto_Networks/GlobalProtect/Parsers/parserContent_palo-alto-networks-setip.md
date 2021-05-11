@@ -9,9 +9,5 @@ Name = palo-alto-networks-setip
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
   Conditions = [ """,globalprotectgateway-switch-succ,""", """gateway client switch to SSL tunnel mode succeeded""" ]
   Fields = [
-    """({host}[\w.\-]+)\s+\d+,({time}\d\d\d\d\/\d\d\/\d\d \d\d:\d\d:\d\d),[^,]*,SYSTEM,globalprotect,""",
-    """Private IP:\s*({src_translated_ip}[a-fA-F\d.:]+[^\."])""",
-    """User name:\s+({user}[^,]+)"""
-  ]
-}
+    """({host}[\w.\-]+)\s{1,100}\d{1,100}
 ```

@@ -10,15 +10,15 @@ Name = snare-4719
   Conditions = [ "\t4719\t", "System audit policy was changed" ]
   Fields = [
     """({event_name}System audit policy was changed)""",
-    """\s+(Information|Audit Success|Success Audit)\s+({host}[\w.\-]+)""",
-    """\s+(Mon|Tue|Wed|Thu|Fri|Sat|Sun) ({time}\w+ \d+ \d+:\d+:\d+ \d+)\s+""",
+    """\s{1,100}(Information|Audit Success|Success Audit)\s{1,100}({host}[\w.\-]+)""",
+    """\s{1,100}(Mon|Tue|Wed|Thu|Fri|Sat|Sun) ({time}\w+ \d{1,100} \d{1,100}:\d{1,100}:\d{1,100} \d{1,100})\s{1,100}""",
     """({event_code}4719)""",
-    """\s+Account Name:\s+({user}.+?)\s+Account Domain""",
-    """\s+Account Domain:\s+({domain}[^\s]+)""",
-    """\s+Logon ID:\s+({logon_id}[^\s]+)""",
-    """\s+Category:\s+({audit_category}.+?)\s+Subcategory:""",
-    """\s+Subcategory:\s+({subcategory}.+?)\s+Subcategory GUID:""",
-    """\s+Changes:\s+({policy}.+?)\s+\d+"""
+    """\s{1,100}Account Name:\s{1,100}({user}.+?)\s{1,100}Account Domain""",
+    """\s{1,100}Account Domain:\s{1,100}({domain}[^\s]+)""",
+    """\s{1,100}Logon ID:\s{1,100}({logon_id}[^\s]+)""",
+    """\s{1,100}Category:\s{1,100}({audit_category}.+?)\s{1,100}Subcategory:""",
+    """\s{1,100}Subcategory:\s{1,100}({subcategory}.+?)\s{1,100}Subcategory GUID:""",
+    """\s{1,100}Changes:\s{1,100}({policy}.+?)\s{1,100}\d{1,100}"""
   ]
   DupFields = [ "host->dest_host" ]
 }

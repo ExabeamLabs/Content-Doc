@@ -10,7 +10,7 @@ Name = cef-digitalguardian-file-operation
   TimeFormat = "epoch"
   Conditions = [ """|Digital Guardian|Digital Guardian|""" ]
   Fields = [
-    """\srt=({time}\d+)""",
+    """\srt=({time}\d{1,100})""",
     """\ssrc=({host}\S+)""",
     """\ssrc=({dest_host}\S+)""",
     """\sshost=(([^\/\\=]+)[\/\\]+)?({host}\S+)""",
@@ -25,18 +25,18 @@ Name = cef-digitalguardian-file-operation
     """\sshost=(([^\/\\=]+)[\/\\]+)?({src_host}\S+)""",
     """\sdst=({dest_host}\S+)""",
     """\sdhost=(([^\/\\=]+)[\/\\]+)?({dest_host}\S+)""",
-    """\ssuser=(({domain}[^\/\\=]+)[\/\\]+)?({user}[^=]+?)\s+(ad\.\S+=|\w+=|$)""",
-    """\ssproc=({process_name}.+?)\s+(ad\.\S+=|\w+=|$)""",
+    """\ssuser=(({domain}[^\/\\=]+)[\/\\]+)?({user}[^=]+?)\s{1,100}(ad\.\S+=|\w+=|$)""",
+    """\ssproc=({process_name}.+?)\s{1,100}(ad\.\S+=|\w+=|$)""",
     """\|Digital Guardian\|(.*?\|){2}({event_code}.+?)\|""",
-    """\soldFilePath=(|\?:\\+|({src_file_dir}.+?))\\*\s+(ad\.\S+=|\w+=|$)""",   
-    """\sfilePath=(|\?:\\+|({file_parent}.+?))\\*\s+(ad\.\S+=|\w+=|$)""",
-    """\soldFileName=(|({src_file_name}.+?))\s+(ad\.\S+=|\w+=|$)""",
-    """\sfname=(|({file_name}.+?(\.({file_ext}[^\.]+?))?))\s+(ad\.\S+=|\w+=|$)""",
-    """\sfileType=(|({file_ext}.+?))\s+(ad\.\S+=|\w+=|$)""",
-    """\|(File Recycle|File Delete)\|.*\soldFilePath=(|({file_parent}.+?))\\*\s+(ad\.\S+=|\w+=|$)""",
-    """\|(File Recycle|File Delete)\|.*\soldFileName=(|({file_name}.+?(\.({file_ext}[^\.]+?))?))\s+(ad\.\S+=|\w+=|$)""",
-    """\sad\.DG__ProductName=(|({app}.+?))\s+(ad\.\S+=|\w+=|$)""",
-    """\sad\.DG__BytesWritten=(0|({bytes}\d+))\s+(ad\.\S+=|\w+=|$)""",
+    """\soldFilePath=(|\?:\\+|({src_file_dir}.+?))\\*\s{1,100}(ad\.\S+=|\w+=|$)""",   
+    """\sfilePath=(|\?:\\+|({file_parent}.+?))\\*\s{1,100}(ad\.\S+=|\w+=|$)""",
+    """\soldFileName=(|({src_file_name}.+?))\s{1,100}(ad\.\S+=|\w+=|$)""",
+    """\sfname=(|({file_name}.+?(\.({file_ext}[^\.]+?))?))\s{1,100}(ad\.\S+=|\w+=|$)""",
+    """\sfileType=(|({file_ext}.+?))\s{1,100}(ad\.\S+=|\w+=|$)""",
+    """\|(File Recycle|File Delete)\|.*\soldFilePath=(|({file_parent}.+?))\\*\s{1,100}(ad\.\S+=|\w+=|$)""",
+    """\|(File Recycle|File Delete)\|.*\soldFileName=(|({file_name}.+?(\.({file_ext}[^\.]+?))?))\s{1,100}(ad\.\S+=|\w+=|$)""",
+    """\sad\.DG__ProductName=(|({app}.+?))\s{1,100}(ad\.\S+=|\w+=|$)""",
+    """\sad\.DG__BytesWritten=(0|({bytes}\d{1,100}))\s{1,100}(ad\.\S+=|\w+=|$)""",
   ]
 }
 ```

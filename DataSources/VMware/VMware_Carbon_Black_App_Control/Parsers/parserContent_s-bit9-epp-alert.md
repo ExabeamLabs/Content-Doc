@@ -9,17 +9,17 @@ Name = s-bit9-epp-alert
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"
   Conditions = [ """"Bit9Server"""", """"ProcessHashType"""" ]
   Fields = [
-    """Timestamp"+:\s+"+({time}[^"]+)""",
-    """Bit9Server"+:\s+"+({host}[^"]+)""",
-    """EventType"+:\s+"+({alert_type}[^"]+)""",
-    """EventSubType"+:\s+"+({alert_name}[^"]+)""",
-    """HostName"+:\s+"+(({domain}[^\\]+)\\+)?({src_host}[^"]+)""",
-    """HostIP"+:\s+"+({src_ip}[^"]+)""",
-    """Priority"+:\s+"+({alert_severity}[^"]+)""",
-    """ABId"+:\s+"+({alert_id}[^"]+)""",
-    """Message"+:\s+"+({additional_info}[^"]+)""",
-    """PathName"+:\s+"+({malware_url}[^"]+)""",
-    """UserName"+:\s+"+({user}[^"]+)""",
+    """Timestamp"{1,20}:\s{1,100}"{1,20}({time}[^"]+)""",
+    """Bit9Server"{1,20}:\s{1,100}"{1,20}({host}[^"]+)""",
+    """EventType"{1,20}:\s{1,100}"{1,20}({alert_type}[^"]+)""",
+    """EventSubType"{1,20}:\s{1,100}"{1,20}({alert_name}[^"]+)""",
+    """HostName"{1,20}:\s{1,100}"{1,20}(({domain}[^\\]+)\\+)?({src_host}[^"]+)""",
+    """HostIP"{1,20}:\s{1,100}"{1,20}({src_ip}[^"]+)""",
+    """Priority"{1,20}:\s{1,100}"{1,20}({alert_severity}[^"]+)""",
+    """ABId"{1,20}:\s{1,100}"{1,20}({alert_id}[^"]+)""",
+    """Message"{1,20}:\s{1,100}"{1,20}({additional_info}[^"]+)""",
+    """PathName"{1,20}:\s{1,100}"{1,20}({malware_url}[^"]+)""",
+    """UserName"{1,20}:\s{1,100}"{1,20}({user}[^"]+)""",
     """c:\\+users\\+({user}[^"\\]+)""",
   ]
 }

@@ -10,13 +10,13 @@ Name = cef-mssql-database-login
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """|Microsoft|SQL Server|""", """categoryBehavior=/Authentication/Verify""" ]
   Fields = [
-    """\sduser=(({domain}[^=\\\/]+)[\\\/]+)?({user}[^\\\/=]+?)(\s+\w+=|\s*$)""",
+    """\sduser=(({domain}[^=\\\/]+)[\\\/]+)?({user}[^\\\/=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\ssrc=({src_ip}[a-fA-F\d.:]+)""",
     """cs3=({service_name}[^\s]+)"""
-    """\sdestinationServiceName=(|({service_name}.+?))(\s+\w+=|\s*$)""",
-    """\sshost=(|({host}.+?))(\s+\w+=|\s*$)""",
-    """\srt=({time}\d+)""",
-    """\scategoryOutcome=/({outcome}.+?)(\s+\w+=|\s*$)""",
+    """\sdestinationServiceName=(|({service_name}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sshost=(|({host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\srt=({time}\d{1,100})""",
+    """\scategoryOutcome=/({outcome}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
 ```

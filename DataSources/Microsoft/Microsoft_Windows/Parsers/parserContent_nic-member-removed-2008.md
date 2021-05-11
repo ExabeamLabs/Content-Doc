@@ -11,13 +11,13 @@ Name = nic-member-removed-2008
   Fields = [
     """({event_name}A member was removed from a security-enabled [\w\s]+ group)""",
     """({time}\w{3}\s\d{2}\s\d{2}:\d{2}:\d{2}\s\d{4})""",
-    """({event_code}\d+)\s+Microsoft-Windows-Security-Auditing""",
+    """({event_code}\d{1,100})\s{1,100}Microsoft-Windows-Security-Auditing""",
     """({host}[^\s=]+)\sMSWinEventLog""",
-    """Information\s+({host}[\w.\-]+)\s+""",
-    """(?:Success|Audit)\s+\w+\s+({host}[^\s]+)""",
-    """A member was removed from a security-enabled\s+({group_type}.+?)\s+group.+?Account Name:\s+({user}.+?)\s+Account Domain:\s+({domain}.+?)\s+Logon ID:\s+({logon_id}[^\s]+)\s+Member:""",
-    """Member:\s+Security ID:\s+({account_id}[^\s]+)\s+Account Name:\s*(-|({account_dn}CN=.+?OU.+?DC.+?))?\s*Group:\s+Security ID:\s+({group_id}[^\s]+)\s+(Group|Account) Name:\s*({group_name}.+?)?\s+(Group|Account) Domain:\s+({group_domain}.+?)\s+Additional""",
-    """Member:.+?Account Name:\s*CN=.+?({account_ou}OU.+?DC.+?)\s+Group:""",
+    """Information\s{1,100}({host}[\w.\-]+)\s{1,100}""",
+    """(?:Success|Audit)\s{1,100}\w+\s{1,100}({host}[^\s]+)""",
+    """A member was removed from a security-enabled\s{1,100}({group_type}.+?)\s{1,100}group.+?Account Name:\s{1,100}({user}.+?)\s{1,100}Account Domain:\s{1,100}({domain}.+?)\s{1,100}Logon ID:\s{1,100}({logon_id}[^\s]+)\s{1,100}Member:""",
+    """Member:\s{1,100}Security ID:\s{1,100}({account_id}[^\s]+)\s{1,100}Account Name:\s{0,100}(-|({account_dn}CN=.+?OU.+?DC.+?))?\s{0,100}Group:\s{1,100}Security ID:\s{1,100}({group_id}[^\s]+)\s{1,100}(Group|Account) Name:\s{0,100}({group_name}.+?)?\s{1,100}(Group|Account) Domain:\s{1,100}({group_domain}.+?)\s{1,100}Additional""",
+    """Member:.+?Account Name:\s{0,100}CN=.+?({account_ou}OU.+?DC.+?)\s{1,100}Group:""",
   ]
   DupFields = [ "host->dest_host" ]
 }

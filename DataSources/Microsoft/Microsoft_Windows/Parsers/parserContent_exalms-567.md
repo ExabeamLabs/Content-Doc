@@ -11,18 +11,18 @@ Name = exalms-567
   Conditions = [ """"event_id":567,""", "Object Access Attempt:" ,""""@timestamp"""" ]
   Fields = [
     """({event_name}Object Access Attempt)""",
-    """"@timestamp"\s*:\s*"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
-    """"(?:winlog\.)?computer_name"\s*:\s*"({host}.+?)"""",
-    """"record_number"\s*:\s*"({record_id}\d+)""",
+    """"@timestamp"\s{0,100}:\s{0,100}"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
+    """"(?:winlog\.)?computer_name"\s{0,100}:\s{0,100}"({host}.+?)"""",
+    """"record_number"\s{0,100}:\s{0,100}"({record_id}\d{1,100})""",
     """({event_code}567)""",
-    """"user"\s*:\s*\{[^\}]*"identifier"\s*:\s*"({user_sid}[^"]+)""",
-    """"user"\s*:\s*\{[^\}]*"name"\s*:\s*"({user}[^"]+)""",
-    """"user"\s*:\s*\{[^\}]*"domain"\s*:\s*"({domain}[^"]+)""",
-    """"(param3|ObjectType)"\s*:\s*"({file_type}[^"]+)""",
-    """"(param5|ObjectName)"\s*:\s*"({file_path}[^"]+)""",
-    """"(param5|ObjectName)"\s*:\s*"([^"]*\\)?({file_name}[^\\\."]+(\.({file_ext}[^\.\\"]+))?)"""",
-    """"(param5|ObjectName)"\s*:\s*"({file_parent}.+?)\\+[^\\]+"""",
-    """"(param6|Accesses)"\s*:\s*"({accesses}.+?)"""",
+    """"user"\s{0,100}:\s{0,100}\{[^\}]*"identifier"\s{0,100}:\s{0,100}"({user_sid}[^"]+)""",
+    """"user"\s{0,100}:\s{0,100}\{[^\}]*"name"\s{0,100}:\s{0,100}"({user}[^"]+)""",
+    """"user"\s{0,100}:\s{0,100}\{[^\}]*"domain"\s{0,100}:\s{0,100}"({domain}[^"]+)""",
+    """"(param3|ObjectType)"\s{0,100}:\s{0,100}"({file_type}[^"]+)""",
+    """"(param5|ObjectName)"\s{0,100}:\s{0,100}"({file_path}[^"]+)""",
+    """"(param5|ObjectName)"\s{0,100}:\s{0,100}"([^"]*\\)?({file_name}[^\\\."]+(\.({file_ext}[^\.\\"]+))?)"""",
+    """"(param5|ObjectName)"\s{0,100}:\s{0,100}"({file_parent}.+?)\\+[^\\]+"""",
+    """"(param6|Accesses)"\s{0,100}:\s{0,100}"({accesses}.+?)"""",
   ]
   DupFields = [ "host->dest_host" ]
 }

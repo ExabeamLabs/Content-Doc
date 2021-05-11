@@ -9,9 +9,9 @@ Name = raw-netscaler-vpn-stop
   TimeFormat = "MM/dd/yyyy:HH:mm:ss"
   Conditions = [ "SSLVPN LOGOUT", " Client_ip " ]
   Fields = [ 
-    """exabeam_host=(.+?@\s*)?({host}[^\s]+)""",
-   """\w+\s+\d+\s+\d\d:\d\d:\d\d\s+({host}[\w\-.]+)""",
-    """exabeam_host=(.+?@\s*)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^\s]+))""",
+    """exabeam_host=(.+?@\s{0,100})?({host}[^\s]+)""",
+   """\w+\s{1,100}\d{1,100}\s{1,100}\d\d:\d\d:\d\d\s{1,100}({host}[\w\-.]+)""",
+    """exabeam_host=(.+?@\s{0,100})?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^\s]+))""",
     """({time}\d\d/\d\d/\d\d\d\d:\d\d:\d\d:\d\d)""",
     """User ({user_email}[^@\s]+@[^@\s]+) - Client_ip ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """User ({user}[^@\s]+) - Client_ip ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",

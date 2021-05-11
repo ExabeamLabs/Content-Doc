@@ -9,17 +9,17 @@ Name = ad-audit-4722
   TimeFormat = "epoch_sec"
   Conditions = [ """ADAuditPlus""", """EVENT_NUMBER = 4722""", """A user account was enabled""" ]
   Fields = [
-    """TIME_GENERATED\s*=\s*({time}\d+)""",
+    """TIME_GENERATED\s{0,100}=\s{0,100}({time}\d{1,100})""",
     """({host}[\w\-.]+) ADAuditPlus""",
-    """CALLER_USER_NAME\s*=\s*({user}[^\s\]]+)""",
-    """CALLER_USER_DOMAIN\s*=\s*({domain}[^\s\]]+)""",
-    """SOURCE\s*=\s*({src_host}[\w\-.]+)""",
-    """RECORD_NUMBER\s*=\s*({record_id}\d+)""",
-    """EVENT_NUMBER\s*=\s*({event_code}\d+)""",
-    """CALLER_USER_SID\s*=\s*({user_sid}[^\s]+)""",
-    """CALLER_LOGON_ID\s*=\s*({logon_id}[^\s]+)""",
-    """ACCOUNT_NAME\s*=\s*({target_user}[^\s]+)""",
-    """ACCOUNT_DOMAIN\s*=\s*({target_domain}[^\s]+)""",
+    """CALLER_USER_NAME\s{0,100}=\s{0,100}({user}[^\s\]]+)""",
+    """CALLER_USER_DOMAIN\s{0,100}=\s{0,100}({domain}[^\s\]]+)""",
+    """SOURCE\s{0,100}=\s{0,100}({src_host}[\w\-.]+)""",
+    """RECORD_NUMBER\s{0,100}=\s{0,100}({record_id}\d{1,100})""",
+    """EVENT_NUMBER\s{0,100}=\s{0,100}({event_code}\d{1,100})""",
+    """CALLER_USER_SID\s{0,100}=\s{0,100}({user_sid}[^\s]+)""",
+    """CALLER_LOGON_ID\s{0,100}=\s{0,100}({logon_id}[^\s]+)""",
+    """ACCOUNT_NAME\s{0,100}=\s{0,100}({target_user}[^\s]+)""",
+    """ACCOUNT_DOMAIN\s{0,100}=\s{0,100}({target_domain}[^\s]+)""",
   ]
 }
 ```

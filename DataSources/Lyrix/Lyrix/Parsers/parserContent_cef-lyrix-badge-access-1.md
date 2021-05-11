@@ -9,16 +9,16 @@ Name = cef-lyrix-badge-access-1
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """|Lyrix|""", """|SKUD""", """cs3Label=DEPARTMENT""" ]
   Fields = [
-    """\Wact=({outcome}.+?)\s+\w+=""",
-    """\Wcs1=({badge_id}.+?)\s+(\w+=|$)""",
-    """\Wcs6=({location_door}.+?)\s+(\w+=|$)""",
-    """\Wcs3=({location_building}.+?)\s+(\w+=|$)""",
-    """ flexString1=({location_city}.+?)\s+\S+=""",
-    """ flexString2=({additional_info}.+?)\s+\S+="""
+    """\Wact=({outcome}.+?)\s{1,100}\w+=""",
+    """\Wcs1=({badge_id}.+?)\s{1,100}(\w+=|$)""",
+    """\Wcs6=({location_door}.+?)\s{1,100}(\w+=|$)""",
+    """\Wcs3=({location_building}.+?)\s{1,100}(\w+=|$)""",
+    """ flexString1=({location_city}.+?)\s{1,100}\S+=""",
+    """ flexString2=({additional_info}.+?)\s{1,100}\S+="""
     """\Wdvc=({host}[A-Fa-f:\d.]+)""",
     """\Wdvchost=({host}[\w\-.]+)""",
-    """\Wrt=({time}\d+)""",
-    """\Wsuser=({user}.+?)\s+(\w+=|$)"""
+    """\Wrt=({time}\d{1,100})""",
+    """\Wsuser=({user}.+?)\s{1,100}(\w+=|$)"""
   ]
   DupFields=[ "user->user_fullname" ]
 }

@@ -9,7 +9,7 @@ Name = counteract-nac-logon-successful
   TimeFormat= "epoch"
   Conditions = [ """CEF:""", """|ForeScout Technologies|CounterAct""", """|COMPLIANCE|host is compliant|""", """Interactive Logon Events""", """Logon Event """ ]
   Fields = [
-    """rt=({time}\d+)""",
+    """rt=({time}\d{1,100})""",
     """dvchost=({host}[^\s]+)\s\w+=""",
     """dvc=({host_ip}[a-fA-F\d:\.]+)""",
     """dhost=({dest_host}[^\s]+)""",

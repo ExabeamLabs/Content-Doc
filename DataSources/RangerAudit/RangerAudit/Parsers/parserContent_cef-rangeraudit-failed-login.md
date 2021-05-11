@@ -12,7 +12,7 @@ Name = cef-rangeraudit-failed-login
   Fields = [
     """\[({host}[^\]]+)""",
     """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """Ip Address:({src_ip}[A-Fa-f:\d.]+)\s*\|\s*({failure_reason}.+?)\s*$""",
+    """Ip Address:({src_ip}[A-Fa-f:\d.]+)\s{0,100}\|\s{0,100}({failure_reason}.+?)\s{0,100}$""",
     """({app}ranger)""",
   ]
 }

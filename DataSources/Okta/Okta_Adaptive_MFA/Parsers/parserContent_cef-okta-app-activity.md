@@ -9,10 +9,10 @@ Name = cef-okta-app-activity
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Okta""", """cs6=""", """"targets":""", """"eventId":""" ]
   Fields=[
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """"published":"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
-    """\Wfname=({object}(?![\w\-]{25}).+?)\s+(\w+=|$)""",
-    """\Wmsg=({additional_info}[^=]+?)\s+(\w+=|$)""",
+    """\Wfname=({object}(?![\w\-]{25}).+?)\s{1,100}(\w+=|$)""",
+    """\Wmsg=({additional_info}[^=]+?)\s{1,100}(\w+=|$)""",
     """"action":[^}]+?"message":"({additional_info}[^"]+)""",
     """"action":[^}]+?"objectType":"({activity}[^"]+)""",
     """"(targets|actors)":[^\]]+?"objectType":"User"[^\]\}]+?"displayName":"((?i)Unknown|RSA-OKTA Admin|AD-OKTA Admin|({user_fullname}[^"]+))""",
@@ -36,9 +36,9 @@ Name = cef-okta-app-activity
     """({app}Okta)""",
     """"id":"({object}[^"]+)"[^\}\]]*"objectType":"AppInstance"""",
     """"objectType":"AppInstance"[^\}\]]*"id":"({object}[^"]+)"""",
-    """requestClientApplication=({app}[^=]+?)\s*\w+=""",
-    """\Wsuid=(anonymous|({user_email}[^@=]+@[^@=]+?)|({user}[^\s=]+?))(\s+\w+=|\s*$)""",
-    """requestUri":\s*"({request_uri}[^"]+?)\s*"""",
+    """requestClientApplication=({app}[^=]+?)\s{0,100}\w+=""",
+    """\Wsuid=(anonymous|({user_email}[^@=]+@[^@=]+?)|({user}[^\s=]+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """requestUri":\s{0,100}"({request_uri}[^"]+?)\s{0,100}"""",
   ]
 }
 ```

@@ -10,12 +10,12 @@ Name = unix-auditd-member-added-3
   Conditions = [ """type=USER_MGMT""","""op=add-user-to-shadow-group""","""res=success""" ]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """msg=audit\(({time}\d+)\.\d{3}""",
+    """msg=audit\(({time}\d{1,100})\.\d{3}""",
     """\sacct="({account_name}[^"]+)"""",
-    """\sauid="?({account_used_id}\d+)""",
+    """\sauid="?({account_used_id}\d{1,100})""",
     """\sgrp="({group_name}[^"]+)"""",
-    """\suid=({user_id}\d+)""",
-    """\sses=({session_id}\d+)""",
+    """\suid=({user_id}\d{1,100})""",
+    """\sses=({session_id}\d{1,100})""",
   ]
   DupFields = [ "host->dest_host" ]
 }

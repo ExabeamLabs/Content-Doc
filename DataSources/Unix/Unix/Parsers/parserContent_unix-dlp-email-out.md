@@ -10,9 +10,9 @@ Name = unix-dlp-email-out
   Conditions = [ """ sSMTP[""", """]: Sent mail""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """Sent mail for ({sender}[^\s]+)""",
-    """outbytes=({bytes}\d+)""",
+    """outbytes=({bytes}\d{1,100})""",
     """uid=({email_id}[^\s]+)""",
     """username=({user}[^\s]+)"""
   ]

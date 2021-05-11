@@ -9,9 +9,9 @@ Name = xml-104
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSSZ"
   Conditions = [ """<EventID>104<""", """log file was cleared.""" ]
   Fields = [
-    """<EventID>({event_code}\d+)""",
+    """<EventID>({event_code}\d{1,100})""",
     """<Keywords>({outcome}[^<]+)""",
-    """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+    """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """<Computer>({host}[^<]+)""",
     """<Security UserID='({user_sid}[^'<\/]+)""",
     """<SubjectUserName>(SYSTEM|({user}[^<]+))""",

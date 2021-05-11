@@ -9,8 +9,8 @@ Name = f5-vpn-additional-info
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """01490005:5:""" ]
   Fields = [
-    """\s+01490005:5:\s+({session_id}[^:]+):\s*({additional_info}.+?)\s*$""",
-    """\s+01490005:5:.*?({session_id}[^\s:]+):\s+({additional_info}.+?)\s*$"""
+    """\s{1,100}01490005:5:\s{1,100}({session_id}[^:]+):\s{0,100}({additional_info}.+?)\s{0,100}$""",
+    """\s{1,100}01490005:5:.*?({session_id}[^\s:]+):\s{1,100}({additional_info}.+?)\s{0,100}$"""
   ]
 }
 ```

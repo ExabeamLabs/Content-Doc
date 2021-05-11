@@ -5,14 +5,14 @@ Name = ms-azure-eventhubs-login
   DataType = "app-login"
   Conditions = [ """eventHubsAzureRecord""", """Sign-in activity""" ]
   Fields = ${MSParserTemplates.ms-azure-eventhubs-activity.Fields} [
-    """"+identity"+:"+({user_fullname}[^",]+)"+""",
-    """"+identity"+:"+({user_lastname}[^",]+),\s*({user_firstname}[^",\/]+)(\/[^"]*)?"""",
-    """"+userId"+:"+({user_id}[^"]+)"+""",
-    """"+appDisplayName"+:"+({app}[^"]+)"+""",
-    """"+operatingSystem"+:"+({os}[^"]+)"+""",
-    """"+browser"+:"+({browser}[^"]+)"+""",
-    """"+location"+:(\{"+geoCoordinates"+:\{\}\}|({additional_info}\{.*?\}))"""
-    """"+failureReason"+:"+({failure_reason}[^"]+)"+"""
+    """"{1,20}identity"{1,20}:"{1,20}({user_fullname}[^",]+)"{1,20}""",
+    """"{1,20}identity"{1,20}:"{1,20}({user_lastname}[^",]+),\s{0,100}({user_firstname}[^",\/]+)(\/[^"]*)?"""",
+    """"{1,20}userId"{1,20}:"{1,20}({user_id}[^"]+)"{1,20}""",
+    """"{1,20}appDisplayName"{1,20}:"{1,20}({app}[^"]+)"{1,20}""",
+    """"{1,20}operatingSystem"{1,20}:"{1,20}({os}[^"]+)"{1,20}""",
+    """"{1,20}browser"{1,20}:"{1,20}({browser}[^"]+)"{1,20}""",
+    """"{1,20}location"{1,20}:(\{"{1,20}geoCoordinates"{1,20}:\{\}\}|({additional_info}\{.*?\}))"""
+    """"{1,20}failureReason"{1,20}:"{1,20}({failure_reason}[^"]+)"{1,20}"""
   ]
 }
 ms-azure-eventhubs-activity = {
@@ -22,14 +22,14 @@ ms-azure-eventhubs-activity = {
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """"+callerIpAddress"+:"+(<null>|({src_ip}[^"]+))"+""",
-    """"+initiatedBy.*?"+userPrincipalName"+:"+({user_email}[^@]+@({email_domain}[^"]+))"+"""
-    """"+targetResources.*?"+displayName"+:"+({object}[^"]+?)"+""",
-    """"+targetResources.*?"+userPrincipalName"+:"+({object}[^"]+?)"+"""
-    """"+targetResources.*?"+displayName"+:"+.*?\.DisplayName"+.*?"+newValue"+:[\\"]*(null|({target}[^"\\]+))["\\]*"""
-    """"+time"+:"+({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{7}\w+)"+"""
-    """"+operationName"+:"+({activity}[^"]+)"+""",
-    """"+result"+:"+({outcome}[^"]+)"+""",
+    """"{1,20}callerIpAddress"{1,20}:"{1,20}(<null>|({src_ip}[^"]+))"{1,20}""",
+    """"{1,20}initiatedBy.*?"{1,20}userPrincipalName"{1,20}:"{1,20}({user_email}[^@]+@({email_domain}[^"]+))"{1,20}"""
+    """"{1,20}targetResources.*?"{1,20}displayName"{1,20}:"{1,20}({object}[^"]+?)"{1,20}""",
+    """"{1,20}targetResources.*?"{1,20}userPrincipalName"{1,20}:"{1,20}({object}[^"]+?)"{1,20}"""
+    """"{1,20}targetResources.*?"{1,20}displayName"{1,20}:"{1,20}.*?\.DisplayName"{1,20}.*?"{1,20}newValue"{1,20}:[\\"]*(null|({target}[^"\\]+))["\\]*"""
+    """"{1,20}time"{1,20}:"{1,20}({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{7}\w+)"{1,20}"""
+    """"{1,20}operationName"{1,20}:"{1,20}({activity}[^"]+)"{1,20}""",
+    """"{1,20}result"{1,20}:"{1,20}({outcome}[^"]+)"{1,20}""",
     """({app}eventHubsAzureRecord)""" 
   ]
 

@@ -10,16 +10,16 @@ Name = zoom-meeting-created
   Conditions = [ """|Skyformation|""", """"event":"meeting.created"""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """\WdestinationServiceName=({app}.+?)(\s+\w+=|\s*$)""",
-    """\Wend=({time}\d+)""",
-    """"event"\s*:\s*"meeting.({activity}created)"""",
-    """"operator"\s*:\s*"({user_email}[^\s@"]+@[^\s@"]+)"""",
-    """"operator_id"\s*:\s*"({meeting_host_id}[^"]+)"""", 
-    """"id"\s*:\s*({meeting_number}\d+)""",
-    """"topic"\s*:\s*"({meeting_topic}[^"]+)"""",
-    """"type"\s*:\s*({meeting_type}\d)""",
-    """"duration"\s*:\s*({meeting_duration}\d+)""",
-    """"timezone"\s*:\s*"({meeting_timezone}[^"]+)""""
+    """\WdestinationServiceName=({app}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wend=({time}\d{1,100})""",
+    """"event"\s{0,100}:\s{0,100}"meeting.({activity}created)"""",
+    """"operator"\s{0,100}:\s{0,100}"({user_email}[^\s@"]+@[^\s@"]+)"""",
+    """"operator_id"\s{0,100}:\s{0,100}"({meeting_host_id}[^"]+)"""", 
+    """"id"\s{0,100}:\s{0,100}({meeting_number}\d{1,100})""",
+    """"topic"\s{0,100}:\s{0,100}"({meeting_topic}[^"]+)"""",
+    """"type"\s{0,100}:\s{0,100}({meeting_type}\d)""",
+    """"duration"\s{0,100}:\s{0,100}({meeting_duration}\d{1,100})""",
+    """"timezone"\s{0,100}:\s{0,100}"({meeting_timezone}[^"]+)""""
   ]
 }
 ```

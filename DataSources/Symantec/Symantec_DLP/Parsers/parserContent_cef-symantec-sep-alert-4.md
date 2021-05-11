@@ -4,7 +4,7 @@
 Name = cef-symantec-sep-alert-4
   Conditions = [ """CEF:""", """|Symantec|""", """|sep_proxy_ips_event|""" ]
   Fields = ${SymantecParserTemplates.cef-symantec-sep-alert.Fields}[
-    """({host}[\w.\-]+)\s+sep_proxy_ips_event:""",
+    """({host}[\w.\-]+)\s{1,100}sep_proxy_ips_event:""",
     """"file":.*?"name":"({malware_file_name}[^"]+)""",
     """"data_source_url_domain":"({additional_info}[^"]+)""",
   ]
@@ -17,12 +17,12 @@ cef-symantec-sep-alert = {
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
     """CEF:([^\|]*\|){5}({alert_name}[^\|]+)""",
-    """"device_time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
-    """\WinternalHost=(({src_ip}[a-fA-F\d.:]+)|({src_host}[^=]+?))(\s+\w+=|\s*$)""",
+    """"device_time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
+    """\WinternalHost=(({src_ip}[a-fA-F\d.:]+)|({src_host}[^=]+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\WinternalIP=({src_ip}[a-fA-F\d.:]+)""",
-    """\Wmd5(=|":")({md5}[^="]+?)("|\s+\w+=|\s*$)""",
-    """\Wuser_name=({user}[^=]+?)(\s+\w+=|\s*$)""",
-    """\Wfname=({malware_file_name}[^=]+?)(\s+\w+=|\s*$)""",
+    """\Wmd5(=|":")({md5}[^="]+?)("|\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wuser_name=({user}[^=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wfname=({malware_file_name}[^=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """"feature_name":"({alert_type}[^"]+)""",
   ]
 

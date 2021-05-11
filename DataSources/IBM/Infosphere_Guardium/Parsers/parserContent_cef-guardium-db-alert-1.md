@@ -11,17 +11,17 @@ Name = cef-guardium-db-alert-1
   Fields=[
      """exabeam_host=({host}[^\s]+)""",
      """\|IBM\|Guardium\|[^|]+\|({alert_name}[^|]+)""",
-     """Severity=({alert_severity}[^=]+?)(?:\s*\w+=|\s*$)""",
-     """Category=({alert_type}[^=]+?)(?:\s*\w+=|\s*$)""",
-     """DatabaseName=({database_name}[^=]+?)(?:\s*\w+=|\s*$)""",
-     """DBUser=\s*(?:|(({domain}[^\\=]+)\\+)?({db_user}[^=\\\/]+?))(?:\s*\w+=|\s*$)""",
+     """Severity=({alert_severity}[^=]+?)(?:\s{0,100}\w+=|\s{0,100}$)""",
+     """Category=({alert_type}[^=]+?)(?:\s{0,100}\w+=|\s{0,100}$)""",
+     """DatabaseName=({database_name}[^=]+?)(?:\s{0,100}\w+=|\s{0,100}$)""",
+     """DBUser=\s{0,100}(?:|(({domain}[^\\=]+)\\+)?({db_user}[^=\\\/]+?))(?:\s{0,100}\w+=|\s{0,100}$)""",
      """ServerIP=({dest_ip}[A-Fa-f:\d.]+)""",
-     """ServerHostname=({host}[^=]+?)(?:\s*\w+=|\s*$)""",
-     """ServerType=({server_group}[^=]+?)(?:\s*\w+=|\s*$)""",
+     """ServerHostname=({host}[^=]+?)(?:\s{0,100}\w+=|\s{0,100}$)""",
+     """ServerType=({server_group}[^=]+?)(?:\s{0,100}\w+=|\s{0,100}$)""",
      """ClientIP=({src_ip}[A-Fa-f:\d.]+)""",
-     """rt=({time}\d+)""",
-     """OSUser=\s*(?:|(({domain}[^\\=]+)\\+)?({user}[^=\\\/]+?))(?:\s*\w+=|\s*$)""",
-     """AlertDetails=(\s+|({db_query}[^$]+?))(?:\s*\w+=|\s*$)"""
+     """rt=({time}\d{1,100})""",
+     """OSUser=\s{0,100}(?:|(({domain}[^\\=]+)\\+)?({user}[^=\\\/]+?))(?:\s{0,100}\w+=|\s{0,100}$)""",
+     """AlertDetails=(\s{1,100}|({db_query}[^$]+?))(?:\s{0,100}\w+=|\s{0,100}$)"""
   ]
 }
 ```

@@ -8,14 +8,14 @@ Name = n-forwarded-cef-680
     DataType = "windows-680"
     TimeFormat = "epoch"
     Conditions = [ "|McAfee|ESM", "43-21100680"]
-    Fields = [ """\|McAfee\|.+?\|43-21100({event_code}\d+)(0|1)\|""",
+    Fields = [ """\|McAfee\|[^|]+?\|[^|]+?\|43-21100({event_code}\d{1,100})(0|1)\|""",
       """({event_name}Logon attempt)""",
-      """\srt=({time}\d+)""",
+      """\srt=({time}\d{1,100})""",
       """src=({host}[a-fA-F:\d.]+)""",
-      """nitroCommandID=({result_code}.+?)\s+\w+=""",
+      """nitroCommandID=({result_code}.+?)\s{1,100}\w+=""",
       """sntdom=({domain}[^\s]+)""",
-      """suser=({user}.+?)\s+\w+=""",
-      """shost=({dest_host}.+?)\s+\w+="""
+      """suser=({user}.+?)\s{1,100}\w+=""",
+      """shost=({dest_host}.+?)\s{1,100}\w+="""
     ]
   }
 ```

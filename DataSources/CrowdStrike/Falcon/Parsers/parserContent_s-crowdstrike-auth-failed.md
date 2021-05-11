@@ -9,14 +9,14 @@ Name = s-crowdstrike-auth-failed
   TimeFormat = "epoch"
   Conditions = [ """"event_simpleName":"UserLogonFailed""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """"timestamp":"({time}\d+)""",
-    """"UserName":\s*"({user_email}[^"@]+@[^"@]+)"""",
-    """"UserName":\s*"({user}[^"@]+)"""",
-    """"UserSid":\s*"({user_sid}[^"]+)"""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """"timestamp":"({time}\d{1,100})""",
+    """"UserName":\s{0,100}"({user_email}[^"@]+@[^"@]+)"""",
+    """"UserName":\s{0,100}"({user}[^"@]+)"""",
+    """"UserSid":\s{0,100}"({user_sid}[^"]+)"""",
     """"event_simpleName":"({event_code}[^"]+)""",
     """"aid":"({aid}[^"]+)""",
-    """"aip":\s*"({aip}[^"]+)"""
+    """"aip":\s{0,100}"({aip}[^"]+)"""
   ]
 }
 ```

@@ -9,9 +9,9 @@ Name = q-microsoft-dhcp-update
   TimeFormat = "epoch"
   Conditions = [ "Description=DNS Update Successful", "Host Name=", """QResult=""" ]
   Fields = [
-    """<.*?>\w+ \d+ \d+:\d+:\d+\s+({host}[^\s]+)""",
-    """exabeam_host=(.+?@\s*)?({host}[^\s]+)""",
-    """exabeam_endTime=({time}\d+)""",
+    """<.*?>\w+ \d{1,100} \d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[^\s]+)""",
+    """exabeam_host=(.+?@\s{0,100})?({host}[^\s]+)""",
+    """exabeam_endTime=({time}\d{1,100})""",
     """\sIP Address=({dest_ip}[a-fA-F\d.:]+)""",
     """\sHost Name=({dest_host}[\w.\-]+)""",
   ]

@@ -11,12 +11,12 @@ Name = syslog-liebsoft-account-switch
     Fields = [
     """dtPostTime="({time}\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})""",
     """sLoginName="(({domain}[^"]+)\\)?({user}[^"]+)""",
-    """sAccountName"\s+value="({account}[^"]+)""",
+    """sAccountName"\s{1,100}value="({account}[^"]+)""",
     """sIpAddress="({src_ip}[^"]+)""",
     """sOriginatingSystem="({host}[^"]+)""",
     """sOriginatingSystem="({dest_host}[^"]+)""",
     """dwAppSpecificEventID="({event_code}[^"]+)""",
-    """sNamespace"\s+value="({account_domain}[^"]+)"""
+    """sNamespace"\s{1,100}value="({account_domain}[^"]+)"""
     ]
   }
 ```

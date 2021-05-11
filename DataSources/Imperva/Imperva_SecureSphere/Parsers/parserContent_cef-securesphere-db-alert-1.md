@@ -10,22 +10,22 @@ Name = cef-securesphere-db-alert-1
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ """|SecureSphere|""", """cat=Alert""", """cs12Label=HostName""", """cs3Label=ServiceName""" ]
   Fields = [
-    """\Wrt=({time}\w+ \d+ \d+ \d+:\d+:\d+)""",
+    """\Wrt=({time}\w+ \d{1,100} \d{1,100} \d{1,100}:\d{1,100}:\d{1,100})""",
     """exabeam_host=({host}[^\s]+)""",
-    """\s({host}[\w\.-]+)\s+CEF:""",
-    """\Wduser=(|({user}.+?))\s*(\w+=|\||$)""",
-    """\Wcs1=(|({alert_name}[^=]+?))\s*(\w+=|\||$)""",
-    """\Wcs13=({database_name}[^=\s]+?)\s*(\w+=|\||$)""",
-    """\Wcs4=(|({app}[^=]+?))\s*(\w+=|\||$)""",
-    """\Wcs3=(|({service_name}[^=]+?))\s*(\w+=|\||$)""",
-    """\Wcs2=(|({server_group}[^=]+?))\s*(\w+=|\||$)""",
+    """\s({host}[\w\.-]+)\s{1,100}CEF:""",
+    """\Wduser=(|({user}.+?))\s{0,100}(\w+=|\||$)""",
+    """\Wcs1=(|({alert_name}[^=]+?))\s{0,100}(\w+=|\||$)""",
+    """\Wcs13=({database_name}[^=\s]+?)\s{0,100}(\w+=|\||$)""",
+    """\Wcs4=(|({app}[^=]+?))\s{0,100}(\w+=|\||$)""",
+    """\Wcs3=(|({service_name}[^=]+?))\s{0,100}(\w+=|\||$)""",
+    """\Wcs2=(|({server_group}[^=]+?))\s{0,100}(\w+=|\||$)""",
     """\Wsrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\Wdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\Wcs12=(|({dest_host}.+?))\s*(\w+=|\||$)""",
-    """\Wsev=(|({alert_severity}.+?))\s*(\w+=|\||$)""",
-    """\Wcs16=(|({additional_info}.+?))\s*(\w+=|\||$)""",
-    """\Wcs16=N/A\s*\(({additional_info}.+?)\)""",
-    """\Wcs14=(|({database_schema}.+?))\s*(\w+=|\||$)"""
+    """\Wcs12=(|({dest_host}.+?))\s{0,100}(\w+=|\||$)""",
+    """\Wsev=(|({alert_severity}.+?))\s{0,100}(\w+=|\||$)""",
+    """\Wcs16=(|({additional_info}.+?))\s{0,100}(\w+=|\||$)""",
+    """\Wcs16=N/A\s{0,100}\(({additional_info}.+?)\)""",
+    """\Wcs14=(|({database_schema}.+?))\s{0,100}(\w+=|\||$)"""
   ]
   DupFields = [ "alert_name->alert_type" ]
 }

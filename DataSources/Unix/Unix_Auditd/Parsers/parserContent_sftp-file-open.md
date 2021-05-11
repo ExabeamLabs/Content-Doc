@@ -5,7 +5,7 @@ Name = sftp-file-open
   DataType = "file-operations"
   Conditions = [ """sftp-server[""",""" open """]
   Fields = ${UnixParserTemplates.sftp-server-activity.Fields}[
-    """({activity}open) "+({file_path}({file_parent}[^"]*?[\\\/]+)?\s*({file_name}[^"\\\/]*?(\.({file_ext}\w+))?))"+""",
+    """({activity}open) "{1,20}({file_path}({file_parent}[^"]*?[\\\/]+)?\s{0,100}({file_name}[^"\\\/]*?(\.({file_ext}\w+))?))"{1,20}""",
     """flags ({accesses}.+?) mode"""
 	]
   }

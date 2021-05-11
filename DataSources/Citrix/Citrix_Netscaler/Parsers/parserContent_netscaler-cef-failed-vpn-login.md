@@ -9,7 +9,7 @@ Name = netscaler-cef-failed-vpn-login
   TimeFormat = "epoch"
   Conditions = [ """|Citrix|NetScaler|""", """|LOGIN_FAILED|""" ]
   Fields = [
-    """\Wrt=({time}\d+)""",
+    """\Wrt=({time}\d{1,100})""",
     """\Wdvc=({host}[a-fA-F:\d.]+)""",
     """\Wdvchost=({host}[\w\-.]+)""",
     """\Wshost=({src_host}[\w\-.]+)""",
@@ -17,7 +17,7 @@ Name = netscaler-cef-failed-vpn-login
     """\Wdst=({dest_ip}[a-fA-F:\d.]+)""",
     """\Wdhost=({dest_host}[\w\-.]+)""",
     """\Wsuser=({user}\S+)""",
-    """\Wreason=({failure_reason}.+?)\s*(\w+=|$)""",
+    """\Wreason=({failure_reason}.+?)\s{0,100}(\w+=|$)""",
   ]
 }
 ```

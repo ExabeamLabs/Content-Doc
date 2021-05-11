@@ -9,14 +9,14 @@ Name = centrify-failed-logon
   TimeFormat = "epoch"
   Conditions = ["""|Centrify Suite|Trusted Path|""" , """|Trusted path denied|"""]
   Fields = [
-    """utc=({time}\d+)""",
+    """utc=({time}\d{1,100})""",
     """user=({user}[^\(\)\s@]+)\(""",
-    """user=({user}[^\(\)\s@]+)@({domain}[^\(\)\s@]+)\s+(\w+=|$)""",
-    """\|({event_name}Trusted path\s+[^\|]*)\|""",
-    """status=({outcome}.+?)\s+(\w+=|$)""",
-    """pid=({pid}\d+)""",
-    """server=(({protocol}[^\\\/\s]+)[\\\/]+)?({dest_host}[^\\\/\s]+?)\s+(\w+=|$)""",
-    """reason=:?\s*({failure_reason}.+?)\s+(\w+=|$)""",
+    """user=({user}[^\(\)\s@]+)@({domain}[^\(\)\s@]+)\s{1,100}(\w+=|$)""",
+    """\|({event_name}Trusted path\s{1,100}[^\|]*)\|""",
+    """status=({outcome}.+?)\s{1,100}(\w+=|$)""",
+    """pid=({pid}\d{1,100})""",
+    """server=(({protocol}[^\\\/\s]+)[\\\/]+)?({dest_host}[^\\\/\s]+?)\s{1,100}(\w+=|$)""",
+    """reason=:?\s{0,100}({failure_reason}.+?)\s{1,100}(\w+=|$)""",
   ]
 }
 ```

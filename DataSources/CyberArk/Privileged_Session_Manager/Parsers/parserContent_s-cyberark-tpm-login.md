@@ -10,12 +10,12 @@ Name = s-cyberark-tpm-login
     Conditions = [ """Operation: Login ObjectType:""" ]
     Fields = [
 		""":\d\d\s({host}[^=]+)\sPAR""",
-                """({src_ip}\d+\.\d+\.\d+\.\d+)""",
+                """({src_ip}\d{1,100}\.\d{1,100}\.\d{1,100}\.\d{1,100})""",
 		"""({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
                 """(AdminName|UserName): ({user}[^\s]*)\s""",
                 """TargetURL=({app}.+?).\s""",
-                """OtherInfo: ({protocol}.*?)\s+TargetURL""",
-		"""PAR\[({event_code}\d+)""",
+                """OtherInfo: ({protocol}.*?)\s{1,100}TargetURL""",
+		"""PAR\[({event_code}\d{1,100})""",
 		"""ObjectType:\s({event_subtype}.+)\sTarget:"""
     ]
 }

@@ -11,13 +11,13 @@ Name = win-def-mal-detect
   Fields = [
     """exabeam_host=({host}[\w\-.]+)""",    
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\s+Name:\s*({alert_name}.*?)\s+ID:""",
-    """\s+Category:\s*({alert_type}.*?)\s+Path:""",
-    """\s+Severity:\s*({alert_severity}\w+?)\s+Category:""",
-    """\s+User:\s*(({domain}[^\\=]+)\\+)?({user}.+?)\s+Process Name:""",
-    """\s+Process Name:\s*({process}({directory}(?:[^,]+)?[\\\/])?({process_name}[^\\\/,]+?))\s+Signature Version:""",
-    """\s+Action:\s*({outcome}.*?)\s+Action Status:""",
-    """\s+Path:\s*(file:_)?({file_path}.*?)\s+Detection Origin:"""
+    """\s{1,100}Name:\s{0,100}({alert_name}.*?)\s{1,100}ID:""",
+    """\s{1,100}Category:\s{0,100}({alert_type}.*?)\s{1,100}Path:""",
+    """\s{1,100}Severity:\s{0,100}({alert_severity}\w+?)\s{1,100}Category:""",
+    """\s{1,100}User:\s{0,100}(({domain}[^\\=]+)\\+)?({user}.+?)\s{1,100}Process Name:""",
+    """\s{1,100}Process Name:\s{0,100}({process}({directory}(?:[^,]+)?[\\\/])?({process_name}[^\\\/,]+?))\s{1,100}Signature Version:""",
+    """\s{1,100}Action:\s{0,100}({outcome}.*?)\s{1,100}Action Status:""",
+    """\s{1,100}Path:\s{0,100}(file:_)?({file_path}.*?)\s{1,100}Detection Origin:"""
   ]
   DupFields = ["directory->process_directory"]
   SOAR {

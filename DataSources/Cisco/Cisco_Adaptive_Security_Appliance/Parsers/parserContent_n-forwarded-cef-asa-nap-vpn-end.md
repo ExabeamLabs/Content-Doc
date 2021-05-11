@@ -8,10 +8,10 @@ Name = n-forwarded-cef-asa-nap-vpn-end
     DataType = "vpn-end"
     TimeFormat = "epoch"
     Conditions = [ "Session is being torn down", "|278-713259|" ]
-    Fields = [ """\srt=({time}\d+)""",
+    Fields = [ """\srt=({time}\d{1,100})""",
       """\sshost=({host}[^\s]+)""",
       """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-      """\ssuser=({user}[^\r\n]+)\s+"""
+      """\ssuser=({user}[^\r\n]+)\s{1,100}"""
     ]
   }
 ```

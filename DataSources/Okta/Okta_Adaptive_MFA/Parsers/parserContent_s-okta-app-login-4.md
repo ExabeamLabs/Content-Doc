@@ -5,9 +5,9 @@ Name = s-okta-app-login-4
   DataType = "app-login"
   Conditions = [ """"eventType": "app.oauth2.signon"""" ]
   Fields = ${OktaParserTemplates.s-okta-app-login.Fields}[
-    """"country":\s*"({location_country}[^"]+)""",
-    """"state":\s*"({location_state}[^"]+)""",
-    """"city":\s*"({location_city}[^"]+)""",
+    """"country":\s{0,100}"({location_country}[^"]+)""",
+    """"state":\s{0,100}"({location_state}[^"]+)""",
+    """"city":\s{0,100}"({location_city}[^"]+)""",
   ]
 }
 s-okta-app-login = {
@@ -17,30 +17,30 @@ s-okta-app-login = {
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
     """exabeam_host=({host}[^\s]+)"""   
-    """"published":\s*"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
-    """({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
-    """"userAgent":\s*\{[^\{\}]*?"rawUserAgent":\s*"((?i)unknown|({user_agent}[^"]+))""",
-    """"userAgent":\s*\{[^\{\}]*?"browser":\s*"((?i)unknown|({browser}[^"]+))""",
-    """"userAgent":\s*\{[^\{\}]*?"os":\s*"((?i)unknown|({os}[^"]+))""",
-    """"ip":\s*"({src_ip}[^"]+)"""",
-    """"request":\s*\{[^\}]+?"ip":\s*"({src_ip}[a-fA-F:\d.]+)"""",
-    """"type":\s*"({app}[^"]+)""",
+    """"published":\s{0,100}"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
+    """({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
+    """"userAgent":\s{0,100}\{[^\{\}]*?"rawUserAgent":\s{0,100}"((?i)unknown|({user_agent}[^"]+))""",
+    """"userAgent":\s{0,100}\{[^\{\}]*?"browser":\s{0,100}"((?i)unknown|({browser}[^"]+))""",
+    """"userAgent":\s{0,100}\{[^\{\}]*?"os":\s{0,100}"((?i)unknown|({os}[^"]+))""",
+    """"ip":\s{0,100}"({src_ip}[^"]+)"""",
+    """"request":\s{0,100}\{[^\}]+?"ip":\s{0,100}"({src_ip}[a-fA-F:\d.]+)"""",
+    """"type":\s{0,100}"({app}[^"]+)""",
     """({app}Okta)""",
-    """requestClientApplication=({app}.+?)\s*\w+=""",
-    """"target":\s*\[.*?\{.*?"displayName":\s*"({app}[^"]+)"[^\{\}]*?"type":\s*"AppInstance"""",
-    """"type":"AppInstance"[^\}\]]*"displayName":"({app}[^"]+?)\s*"""",
-    """"actor":\s*\{[^\{\}]*?"displayName":\s*"((?i)okta[^"]*|unknown|({user_fullname}[^",]+))"[^\{\}]*?"type":\s*"User"""",
-    """"actor":\s*\{[^\{\}]*?"type":\s*"User"[^\{\}]*?"displayName":\s*"((?i)okta[^"]*|unknown|({user_fullname}[^",]+))"""",
-    """"actor"":\s*\{[^\{\}]*?""type"":\s*""User""[^\{\}]*?""displayName"":\s*""((?i)okta[^"]*|unknown|({user_lastname}[^,]+),\s*({user_firstname}[^,"\}\]]+))""""
-    """"actor":\s*\{[^\{\}]*?"alternateId":\s*"(?:({user_email}[^@"]+@({email_domain}[^@"]+))|({user}[^"@]+))"""",
-    """"userName":\s*"({user_email}[^@"]+@({email_domain}[^@"]+))"""",
-    """"outcome":\s*\{[^\{\}]*?"result":\s*"({outcome}[^"]+)""",
-    """"outcome":\s*\{[^\{\}]*?"reason":\s*"({additional_info}[^"]+)""",
-    """"redirectUri":\s*"({object}[^"]+)"""",
-    """"displayMessage":\s*"({activity}[^"]+)"""",
-    """"city":\s*"({location_city}[^"]+)""",
-    """"state":\s*"({location_state}[^"]+)""",
-    """"country":\s*"({location_country}[^"]+)"""
+    """requestClientApplication=({app}.+?)\s{0,100}\w+=""",
+    """"target":\s{0,100}\[.*?\{.*?"displayName":\s{0,100}"({app}[^"]+)"[^\{\}]*?"type":\s{0,100}"AppInstance"""",
+    """"type":"AppInstance"[^\}\]]*"displayName":"({app}[^"]+?)\s{0,100}"""",
+    """"actor":\s{0,100}\{[^\{\}]*?"displayName":\s{0,100}"((?i)okta[^"]*|unknown|({user_fullname}[^",]+))"[^\{\}]*?"type":\s{0,100}"User"""",
+    """"actor":\s{0,100}\{[^\{\}]*?"type":\s{0,100}"User"[^\{\}]*?"displayName":\s{0,100}"((?i)okta[^"]*|unknown|({user_fullname}[^",]+))"""",
+    """"actor"":\s{0,100}\{[^\{\}]*?""type"":\s{0,100}""User""[^\{\}]*?""displayName"":\s{0,100}""((?i)okta[^"]*|unknown|({user_lastname}[^,]+),\s{0,100}({user_firstname}[^,"\}\]]+))""""
+    """"actor":\s{0,100}\{[^\{\}]*?"alternateId":\s{0,100}"(?:({user_email}[^@"]+@({email_domain}[^@"]+))|({user}[^"@]+))"""",
+    """"userName":\s{0,100}"({user_email}[^@"]+@({email_domain}[^@"]+))"""",
+    """"outcome":\s{0,100}\{[^\{\}]*?"result":\s{0,100}"({outcome}[^"]+)""",
+    """"outcome":\s{0,100}\{[^\{\}]*?"reason":\s{0,100}"({additional_info}[^"]+)""",
+    """"redirectUri":\s{0,100}"({object}[^"]+)"""",
+    """"displayMessage":\s{0,100}"({activity}[^"]+)"""",
+    """"city":\s{0,100}"({location_city}[^"]+)""",
+    """"state":\s{0,100}"({location_state}[^"]+)""",
+    """"country":\s{0,100}"({location_country}[^"]+)"""
   ]
 
 ```

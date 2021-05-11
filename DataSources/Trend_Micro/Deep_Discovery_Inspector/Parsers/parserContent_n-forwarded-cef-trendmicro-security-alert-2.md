@@ -10,16 +10,16 @@ Name = n-forwarded-cef-trendmicro-security-alert-2
   Conditions = [ "|McAfee|ESM", "|473-" ]
   Fields = [
     """CEF:([^\|]*\|){5}({alert_name}[^\|]+)\|({alert_severity}[^\|]+)""",
-    """\WeventId=({alert_id}\d+)""",
-    """\WnitroDestination_Hostname=({host}.+?)(\s+\w+=|\s*$)""",
-    """\Wrt=({time}\d+)""",
+    """\WeventId=({alert_id}\d{1,100})""",
+    """\WnitroDestination_Hostname=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wrt=({time}\d{1,100})""",
     """\Wdst=({src_ip}[a-fA-F\d.:]+)""",
-    """\Wdpt=({src_port}\d+)""",
+    """\Wdpt=({src_port}\d{1,100})""",
     """\Wsrc=({dest_ip}[a-fA-F\d.:]+)""",
-    """\Wspt=({dest_port}\d+)""",
-    """\Wshost=({dest_host}.+?)(\s+\w+=|\s*$)""",
-    """\Wact=({action}.+?)(\s+\w+=|\s*$)""",
-    """\Wcat=({alert_type}.+?)(\s+\w+=|\s*$)""",
+    """\Wspt=({dest_port}\d{1,100})""",
+    """\Wshost=({dest_host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wact=({action}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wcat=({alert_type}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
 ```

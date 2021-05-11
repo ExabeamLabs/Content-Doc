@@ -10,14 +10,14 @@ Name = cef-skyformation-login-2
   Conditions = [ """|Skyformation|""", """"Action":"Login"""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """\WdestinationServiceName=({app}.+?)(\s+\w+=|\s*$)""",
-    """\Wend=({time}\d+)""",
-    """\Wdproc=({process_name}.+?)(\s+\w+=|\s*$)""",
-    """\Wfname=(?:({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}.+?))(\s+\w+=|\s*$)""",
-    """\Wmsg=({additional_info}.+?)(\s+\w+=|\s*$)""",
+    """\WdestinationServiceName=({app}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wend=({time}\d{1,100})""",
+    """\Wdproc=({process_name}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wfname=(?:({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wmsg=({additional_info}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
     """\Wsuser=({user_email}[^@\s]+@({email_domain}[^@\s]+))""",
-    """\Wsuser=({user_fullname}\w+(\s+\w+)+)""",
+    """\Wsuser=({user_fullname}\w+(\s{1,100}\w+)+)""",
   ]
 }
 ```

@@ -5,7 +5,7 @@ Name = cef-kaspersky-file-alert
   DataType = "file-alert"
   Conditions = [ """CEF:""", """|Kaspersky|""", """flexString1=Постоянная защита файлов""" ]
   Fields = ${KasperskyParserTemplates.cef-kaspersky-security-alert.Fields}[
-    """\Wmsg=[^=]*?Имя объекта:\s*({file_path}({file_parent}[^=]*?[\\\/]+)?({file_name}[^=\\\/]*?(\.({file_ext}\w+))?)?)(\s+\w+=|\s*$)""",
+    """\Wmsg=[^=]*?Имя объекта:\s{0,100}({file_path}({file_parent}[^=]*?[\\\/]+)?({file_name}[^=\\\/]*?(\.({file_ext}\w+))?)?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
 cef-kaspersky-security-alert = {
@@ -16,13 +16,13 @@ cef-kaspersky-security-alert = {
   TimeFormat = "epoch"
   Fields = [
     """\Wdvc=({host}[a-fA-F\d.:]+)""",
-    """\Wrt=({time}\d+)""",
-    """\WdeviceNtDomain=(|({domain}.+?))(\s+\w+=|\s*$)""",
+    """\Wrt=({time}\d{1,100})""",
+    """\WdeviceNtDomain=(|({domain}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """CEF:([^\|]*\|){5}({alert_name}[^\|]+)\|({alert_severity}[^\|]+)""",
-    """\Wcat=(|({alert_type}.+?))(\s+\w+=|\s*$)""",
-    """\Wdhost=(|({dest_host}.+?))(\s+\w+=|\s*$)""",
+    """\Wcat=(|({alert_type}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wdhost=(|({dest_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdst=({dest_ip}[a-fA-F\d.:]+)""",
-    """\Wmsg=(|({additional_info}.+?))(\s+\w+=|\s*$)""",
+    """\Wmsg=(|({additional_info}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
    ]
 
 ```

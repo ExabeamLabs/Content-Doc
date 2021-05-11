@@ -9,12 +9,12 @@ Name = cef-f5-vpn-start
   TimeFormat = "epoch"
   Conditions = [ """|F5|APM|""", """|New session from client|""", """01490500:5:""" ]
   Fields = [
-    """\srt=({time}\d+)""",
+    """\srt=({time}\d{1,100})""",
     """\smsg=[^=]*? from client IP ({src_ip}[a-fA-F\d.:]+) [^=]*? at VIP ({src_translated_ip}[a-fA-F\d.:]+)""",
     """\ssrc=({src_ip}[a-fA-F\d.:]+)""",
-    """\scs4=({session_id}.+?)(?:\s+[\w.]+=|\s*$)""",
+    """\scs4=({session_id}.+?)(?:\s{1,100}[\w.]+=|\s{0,100}$)""",
     """\sdvc=({host}[a-fA-F\d.:]+)""",
-    """\sdvchost=({host}.+?)(?:\s+[\w.]+=|\s*$)""",
+    """\sdvchost=({host}.+?)(?:\s{1,100}[\w.]+=|\s{0,100}$)""",
     """\sad\.VIPAddress=({src_translated_ip}[a-fA-F\d.:]+)"""
   ]
 }

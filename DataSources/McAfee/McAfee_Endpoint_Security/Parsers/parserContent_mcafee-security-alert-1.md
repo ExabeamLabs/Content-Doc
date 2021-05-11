@@ -6,7 +6,7 @@ Name = mcafee-security-alert-1
   Conditions = [ """DetectingProductName=McAfee Host Intrusion Prevention""" ]
   Fields = ${McAfeeParserTemplates.mcafee-dlp-alert.Fields}[
     """\WWorkstation Name=({host}[^,]+)""",
-    """\WThreatEventID=({alert_id}\d+)""",
+    """\WThreatEventID=({alert_id}\d{1,100})""",
     """\WThreatType=({alert_type}[^,]+)""",
       """,ThreatSourceUserName=(({domain}[^,\\\/]+)[\\\/]+)?({user}[^,\\\/]+),""",
     """\WThreatSourceURL=({malware_url}[^,]+)""",
@@ -18,7 +18,7 @@ mcafee-dlp-alert = {
     Lms = Direct
     TimeFormat = "epoch"
     Fields = [
-      """(t|T)ime=({time}\d+)""",
+      """(t|T)ime=({time}\d{1,100})""",
       """processname=({process}({directory}[^,]*[\\\/]+)?({process_name}[^,\\\/]+))""",
       """username=(({domain}[^,\\\/]+)[\\\/]+)?({user}[^,\\\/]+),""",
       """,sourcehostname=({dest_host}[^,]+)""",

@@ -10,20 +10,20 @@ Name = cef-fortinet-network-connection
   Conditions = [ """CEF:""", """|Fortinet|Fortigate|""", """cn1Label=Duration""", """|traffic: """ ]
   Fields = [
     """\Wproto=({protocol}\w+)""",
-    """\Wact=(|({action}.+?))(\s+\w+=|\s*$)""",
-    """\Wrt=({time}\d+)""",
-    """\Wshost=(|({src_host}.+?))(\s+\w+=|\s*$)""",
+    """\Wact=(|({action}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wrt=({time}\d{1,100})""",
+    """\Wshost=(|({src_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
-    """\Wspt=({src_port}\d+)""",
-    """\Wdhost=(|({dest_host}.+?))(\s+\w+=|\s*$)""",
+    """\Wspt=({src_port}\d{1,100})""",
+    """\Wdhost=(|({dest_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdst=({dest_ip}[a-fA-F\d.:]+)""",
-    """\Wdpt=({dest_port}\d+)""",
-    """\WdestinationServiceName=(|({service}.+?))(\s+\w+=|\s*$)""",
-    """\Wdvchost=(|({host}.+?))(\s+\w+=|\s*$)""",
-    """\WdeviceOutboundInterface=({dest_interface}.+?)(\s+\w+=|\s*$)""",
-    """\WdeviceInboundInterface=({src_interface}.+?)(\s+\w+=|\s*$)""",
-    """\Wout=({bytes_out}\d+)""",
-    """\Win=({bytes_in}\d+)""",
+    """\Wdpt=({dest_port}\d{1,100})""",
+    """\WdestinationServiceName=(|({service}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wdvchost=(|({host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\WdeviceOutboundInterface=({dest_interface}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\WdeviceInboundInterface=({src_interface}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wout=({bytes_out}\d{1,100})""",
+    """\Win=({bytes_in}\d{1,100})""",
   ]
   DupFields = [ "action->outcome" ]
 }

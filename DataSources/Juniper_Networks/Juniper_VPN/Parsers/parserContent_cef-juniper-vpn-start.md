@@ -9,14 +9,14 @@ Name = cef-juniper-vpn-start
   TimeFormat = "epoch"
   Conditions = [ "CEF:", "VPN Tunneling: Session started for user" ]
   Fields = [
-    """\srt=({time}\d+)""",
+    """\srt=({time}\d{1,100})""",
     """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sdvchost=({host}[^\s]+)""",
-    """\ssuser=({user}.+?)\s+\w+=""",
+    """\ssuser=({user}.+?)\s{1,100}\w+=""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\ssproc=({realm}.+?)\s+\w+=""",
-    """\sspriv=({resource}.+?)\s+\w+=""",
-    """\shostname\s+({src_host}[^\s|]+)""",
+    """\ssproc=({realm}.+?)\s{1,100}\w+=""",
+    """\sspriv=({resource}.+?)\s{1,100}\w+=""",
+    """\shostname\s{1,100}({src_host}[^\s|]+)""",
     """Session started for user with IP(v4)? address ({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
     """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""", 
   ]

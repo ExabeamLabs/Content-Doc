@@ -15,8 +15,8 @@ windows-dns = {
   IsHVF = true
   TimeFormat = "M/dd/yyyy'\tTime='H:mm:ss a"
   Fields = [
-    """<\d+>\w+ \d+ \d\d:\d\d:\d\d ({host}[\w.\-]+)""",
-    """\sDate=({time}\d+\/\d+\/\d\d\d\d\t+Time=\d+:\d+:\d+ (am|AM|pm|PM))""",
+    """<\d{1,100}>\w+ \d{1,100} \d\d:\d\d:\d\d ({host}[\w.\-]+)""",
+    """\sDate=({time}\d{1,100}\/\d{1,100}\/\d\d\d\d\t+Time=\d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM))""",
     """\sThread ID=({thread_id}[^\t]+)""",
     """\sUDP\/TCP indicator=({protocol}[^\t]+)""",
     """\sSend\/Receive indicator=({activity}[^\t]+)""",

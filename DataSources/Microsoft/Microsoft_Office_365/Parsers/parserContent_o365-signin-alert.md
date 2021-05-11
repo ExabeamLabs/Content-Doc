@@ -9,9 +9,9 @@ Name = o365-signin-alert
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|anomalous-signin|""", """"riskEventType":"""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[\w\-.]+)""",
     """"riskEventDateTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """requestClientApplication=({process}.+?)\s*(\w+=|$)""",
+    """requestClientApplication=({process}.+?)\s{0,100}(\w+=|$)""",
     """"userPrincipalName":"({user_email}[^@"\s]+?@[^"\s]+?)""""
     """"id":"({alert_id}[^"]+?)""""
     """"riskLevel":"({alert_severity}[^"]+?)""""

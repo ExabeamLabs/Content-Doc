@@ -9,7 +9,7 @@ Name = mcafee-hbss-dlp-alert
   TimeFormat = "MMM dd, YYYY HH:mm:ss a"
   Conditions = ["""occurred_endpoint""" , """device_class_name""" , """DLP for Windows"""]
   Fields = [
-    """"occurred_endpoint":"({time}\w+\s\d\d,\s\d\d\d\d\s\d+:\d\d:\d\d\s(am|AM|pm|PM))""",
+    """"occurred_endpoint":"({time}\w+\s\d\d,\s\d\d\d\d\s\d{1,100}:\d\d:\d\d\s(am|AM|pm|PM))""",
     """"severity":"({alert_severity}[^"]+)"""",
     """"incident_type":"({alert_type}[^"]+)"""",
     """"computer_ip":"({host}[^"]+)"""",

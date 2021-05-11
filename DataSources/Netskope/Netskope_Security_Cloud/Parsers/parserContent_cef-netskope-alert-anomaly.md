@@ -9,8 +9,8 @@ Name = cef-netskope-alert-anomaly
   TimeFormat = "epoch_sec"
   Conditions = [ """CEF:""", """|Skyformation|""", """"alert_type":"anomaly"""", """destinationServiceName=Netskope""", """|security-threat-detected|""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """"timestamp":({time}\d+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """"timestamp":({time}\d{1,100})""",
     """"user":"(({user_email}[^@"\s]+@[^@"\s]+)|(({domain}[^"@\\\/\s]+)[\\\/]+)?({user}[^"@\\\/\s]+))"""",
     """"app":"({process}[^"]+)""",
     """"dstip":"({dest_ip}[A-Fa-f:\d.]+)""",

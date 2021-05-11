@@ -9,8 +9,8 @@ Name = sophos-threat-alert-1
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """, ThreatName="""", """, ActionTakenName="""", """, ThreatTypeName="""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """EventID="({alert_id}\d+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """EventID="({alert_id}\d{1,100})""",
     """FirstDetectedAt="({time}\d\d\d\d\-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """ThreatTypeName="({alert_type}[^"]+)""",
     """ThreatName="({alert_name}[^"]+)""",

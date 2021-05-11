@@ -27,7 +27,7 @@ Name = s-stream-dhcp
     """"transaction_id":({trans_id}[^,]+),""",
     """({protocol}dhcp)""",
     """"yiaddr":"({assigned_ip}[^"]+)"""",
-    """"ip_lease_time":({ip_lease_time}\d+),""",
+    """"ip_lease_time":({ip_lease_time}\d{1,100}),""",
     """"host_name":"({host}[^"]+)"""",
   ]
 }

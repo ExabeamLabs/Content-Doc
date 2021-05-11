@@ -10,7 +10,7 @@ Name = s-oracle-db-login-1
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
   Conditions = [ """exabeam_sourcetype=dbx:audit:sql""", """Authenticated by""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """exabeam_sourcetype=dbx:audit:sql:({database_name}[^",\s]+)""",
     """NTIMESTAMP\#="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)""",
     """USERID="({db_user}[^"]+)""",

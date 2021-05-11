@@ -10,8 +10,8 @@ Name = s-nac-failed-logon
   Conditions = [ "CISE_Failed_Attempts", "since user has entered the wrong password" ]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """({host}[\w\-.]+)\s+CISE_Failed_Attempts""",
-    """\d+\s+({time}\d\d\d\d\-\d\d\-\d\d \d+:\d+:\d+)""",
+    """({host}[\w\-.]+)\s{1,100}CISE_Failed_Attempts""",
+    """\d{1,100}\s{1,100}({time}\d\d\d\d\-\d\d\-\d\d \d{1,100}:\d{1,100}:\d{1,100})""",
     """, UserName=(({user_type}host)\/)?(({domain}[^\s\\]+)\\+)?(({user_email}[^,@]+@[^,@]+)|({user}[^,]+))""",
     """, Calling-Station-ID=({dest_host}[^,]+)""",
     """, Called-Station-ID=({src_host}[^,]+):({ssid}[^,]+)""",
@@ -23,8 +23,8 @@ Name = s-nac-failed-logon
     """, Framed-IP-Address=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """, DestinationIPAddress=({dest_ip}[a-fA-F\d.:]+)""",
     """, NetworkDeviceGroups=Location#All Locations#({location}[^,]+)""",
-    """, FailureReason=({result_code}\d+)""",
-    """, FailureReason=\d+ ({failure_reason}[^,]+)""",
+    """, FailureReason=({result_code}\d{1,100})""",
+    """, FailureReason=\d{1,100} ({failure_reason}[^,]+)""",
     """(?i)(MacAddress)=({mac_address}[^,\s]+),""",
     """, SSID=({ssid}[^,]+)""",
     """, AuthenticationIdentityStore=({auth_server}[^,]+)""",

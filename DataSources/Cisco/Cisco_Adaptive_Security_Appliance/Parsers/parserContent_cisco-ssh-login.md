@@ -10,9 +10,9 @@ Name = cisco-ssh-login
   Conditions = [ """%SSH-""", """SSH2_USERAUTH:""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=([^=]+@\s*)?({host}[\w.\-]+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[\w.\-]+)""",
     """({event_code}%SSH-[^:]+)""",
-    """SSH2_USERAUTH:\s*User '(|({user}[^']+))' authentication for SSH2 Session from ({src_ip}[A-Fa-f:\d.]+)""",
+    """SSH2_USERAUTH:\s{0,100}User '(|({user}[^']+))' authentication for SSH2 Session from ({src_ip}[A-Fa-f:\d.]+)""",
     """({outcome}Succeeded|Failed)""",
   ]
 }

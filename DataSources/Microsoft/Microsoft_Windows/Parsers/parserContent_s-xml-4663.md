@@ -10,7 +10,7 @@ Name = s-xml-4663
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """<EventID>4663</EventID>""", """<Data Name"""]
   Fields = [ 
-    """<TimeCreated SystemTime(\\)?='({time}\d+-\d+-\d+T\d+:\d+:\d+)"""
+    """<TimeCreated SystemTime(\\)?='({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100})"""
     """<Computer>([^<>]+?[\\\/]+)?({host}[^<]+)</Computer>""",
     """<EventID>({event_code}[^<]+)</EventID>""",
     """<Data Name(\\)?=('|")SubjectUserSid('|")>(?:NONE_MAPPED|({user_sid}[^<]+))<\/Data>""",

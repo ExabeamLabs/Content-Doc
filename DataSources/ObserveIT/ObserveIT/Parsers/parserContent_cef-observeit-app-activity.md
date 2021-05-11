@@ -9,19 +9,19 @@ Name = cef-observeit-app-activity
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """|ObserveIT|ObserveIT|""" ]
   Fields = [
-    """\Wmsg=(|({additional_info}.+?))(\s+\w+=|\s*$)""",
-    """\Wcat=(|({activity}.+?))(\s+\w+=|\s*$)""",
-    """\Wrt=({time}\d+)""",
+    """\Wmsg=(|({additional_info}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wcat=(|({activity}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wrt=({time}\d{1,100})""",
     """({app}ObserveIT)""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
-    """\Wdvc=(|({host}.+?))(\s+\w+=|\s*$)""",
-    """\Wdvchost=(|({host}.+?))(\s+\w+=|\s*$)""",
-    """\Wcs2=(|({os}.+?))(\s+\w+=|\s*$)""",
-    """\WdestinationServiceName=(|({object}.+?))(\s+\w+=|\s*$)""",
-    """\Wdhost=(|({dest_host}.+?))(\s+\w+=|\s*$)""",
-    """\Wshost=\(?(|({src_host}[\w\-.]+))\)?(\s+\w+=|\s*$)""",
-    """\Wduser=(|({user}.+?))(\s+\w+=|\s*$)""",
-    """\Wdntdom=(|({domain}.+?))(\s+\w+=|\s*$)""",
+    """\Wdvc=(|({host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wdvchost=(|({host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wcs2=(|({os}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\WdestinationServiceName=(|({object}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wdhost=(|({dest_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wshost=\(?(|({src_host}[\w\-.]+))\)?(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wduser=(|({user}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wdntdom=(|({domain}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdst=({dest_ip}[a-fA-F\d.:]+)""",
   ]
 }

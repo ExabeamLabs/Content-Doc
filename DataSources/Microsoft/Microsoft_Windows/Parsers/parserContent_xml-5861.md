@@ -14,8 +14,8 @@ Name = xml-5861
     """<Computer>({host}[^<]+)</Computer>""",
     """<Security UserID='({user_sid}[^']+)""",
     """({process_name}WMI)""",
-    """Query\s*=\s*"*({command_line}[^";]+)""",
-    """Consumer:\s* instance of\s*({process}.+?)\s*\{"""
+    """Query\s{0,100}=\s{0,100}"{0,20}({command_line}[^";]+)""",
+    """Consumer:\s{0,100} instance of\s{0,100}({process}.+?)\s{0,100}\{"""
   ]
   DupFields = [ "host->dest_host" ]
 }

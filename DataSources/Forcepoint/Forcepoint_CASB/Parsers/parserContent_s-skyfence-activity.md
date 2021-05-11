@@ -9,20 +9,20 @@ Name = s-skyfence-activity
   TimeFormat = "epoch"
   Conditions = [ "CEF", "Skyfence", """|Activity|""" ]
   Fields = [
-    """\sdvc="+({host}[^"]+)""",
-    """\sdvchost="+({host}[^"]+)""",
-    """\srt="+({time}\d+)""",
-    """\sduser="+({user}[^"]+)""",
-    """\sduser="+[^@]+@({domain}[^".]+)""",
-    """\sreason="+({activity}[^"]+)""",
+    """\sdvc="{1,20}({host}[^"]+)""",
+    """\sdvchost="{1,20}({host}[^"]+)""",
+    """\srt="{1,20}({time}\d{1,100})""",
+    """\sduser="{1,20}({user}[^"]+)""",
+    """\sduser="{1,20}[^@]+@({domain}[^".]+)""",
+    """\sreason="{1,20}({activity}[^"]+)""",
     """\sdestinationServiceName="({app}[^"]+)"""",
     """\sapp="({app}[^"]+)"""",
     """\srequestClientApplication=({user_agent}.+?)\s\w+=""",
-    """\sdst="+({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\ssrc="+({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\sdpriv="+({privileges}[^"]+)""",
-    """\sdeviceProcessName="({object}[^"]+)"+\s\w+=""",
-    """\smsg="+({additional_info}[^"]+)"""
+    """\sdst="{1,20}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """\ssrc="{1,20}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """\sdpriv="{1,20}({privileges}[^"]+)""",
+    """\sdeviceProcessName="({object}[^"]+)"{1,20}\s\w+=""",
+    """\smsg="{1,20}({additional_info}[^"]+)"""
   ]
 }
 ```

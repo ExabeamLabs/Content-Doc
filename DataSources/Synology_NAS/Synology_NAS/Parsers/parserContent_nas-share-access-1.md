@@ -11,10 +11,10 @@ Name = nas-share-access-1
   Conditions = [ """ Connection """, """accessed the shared folder""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """>\w+ \d\d \d\d:\d\d:\d\d\s+({host}\S+)""",
+    """>\w+ \d\d \d\d:\d\d:\d\d\s{1,100}({host}\S+)""",
     """exabeam_indexTime=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d)""",
-    """Connection\s+(({domain}[^\\]+)\\)?({user}[^\\,]+),""",
-    """({protocol}\S+)\s+client\s+\[(({domain}[^\\]+)\\)?({user}[^\\]+?)\]""",
+    """Connection\s{1,100}(({domain}[^\\]+)\\)?({user}[^\\,]+),""",
+    """({protocol}\S+)\s{1,100}client\s{1,100}\[(({domain}[^\\]+)\\)?({user}[^\\]+?)\]""",
     """from .*?IP:({src_ip}[a-fA-F\d.:]+)""",
     """accessed the shared ({file_type}folder) \[({share_name}.+?)\]"""
   ]

@@ -7,8 +7,8 @@ Name = json-unix-ssh-login-failed
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """"ident":"sshd""", """error: connect_to""", """failed""" ]
   Fields = ${UnixParserTemplates.unix-activity-json.Fields}[
-    """"timestamp":"({time}\d+-\d+-\d+T\d+:\d+:\d+.\d+Z)""",
-    """error: connect_to\s+(({dest_ip}\d+.\d+.\d+.\d+)|({dest_host}\S+))\s+port\s+({dest_port}\d+):""",
+    """"timestamp":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}.\d{1,100}Z)""",
+    """error: connect_to\s{1,100}(({dest_ip}\d{1,100}.\d{1,100}.\d{1,100}.\d{1,100})|({dest_host}\S+))\s{1,100}port\s{1,100}({dest_port}\d{1,100}):""",
     """({outcome}failed)"""
 
   ]
@@ -20,7 +20,7 @@ unix-activity-json = {
     Fields = [
       """"host":"({host}[^"]+)""",
       """"ident":"({event_code}[^"]+)""",
-      """"pid":"({pid}\d+)""",
+      """"pid":"({pid}\d{1,100})""",
       """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
     ]
 

@@ -9,9 +9,9 @@ Name = ovirt-app-activity-28
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """EVENT_ID: USER_STOP_VM""", """ovirt""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d),.+?ovirt""",
-    """EVENT_ID:\s*({activity}[^\(\)]+)""",
+    """EVENT_ID:\s{0,100}({activity}[^\(\)]+)""",
     """EVENT_ID:.*? VM ({object}[^\s"]+) powered off by ({user}[^\s\(\)]+?) \(({resource}[^\)]+)""",
     """({app}ovirt)"""
   ]

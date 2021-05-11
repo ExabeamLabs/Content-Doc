@@ -20,9 +20,9 @@ Name = sentinelone-security-alert-1
     """\sthreatClassification="({alert_type}[^"]+)""",
     """\sthreatID="({alert_id}[^"]+)""",
     """\sfileName="({alert_name}[^"]+)""",
-    """\s*fileContentHash="({md5}[^"]+)""",
-    """\s*(D|d)etecting(E|e)ngine="({additional_info}[^"]+)""",
-    """\screatedAt="({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+    """\s{0,100}fileContentHash="({md5}[^"]+)""",
+    """\s{0,100}(D|d)etecting(E|e)ngine="({additional_info}[^"]+)""",
+    """\screatedAt="({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """\Wcat="({category}[^"]+)""",
     """\sdata.filePath="({process}[^"]+\\({process_name}[^"]+))""",
   ]

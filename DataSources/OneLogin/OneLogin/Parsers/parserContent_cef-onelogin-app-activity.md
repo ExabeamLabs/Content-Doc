@@ -9,20 +9,20 @@ Name = cef-onelogin-app-activity
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """CEF:""", """assuming_acting_user_id":""", """app_name":""", """user_name":""", """event_type_id":""" ]
   Fields = [
-    """"created_at":\s*"({time}\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z)""",
+    """"created_at":\s{0,100}"({time}\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z)""",
     """CEF:([^\|]*\|){5}({activity}[^\|]+)""",
-    """exabeam_host=([^=]+?@\s*)?({host}[^\s]+)""",
+    """exabeam_host=([^=]+?@\s{0,100})?({host}[^\s]+)""",
     """\WdestinationServiceName=({app}\w+)""",
-    """"app_name":\s*"\s*({app}([^\\"]|(\\\\)*\\"|\\\\)+?)\s*"""",
-    """"event_type_id":\s*({activity_code}\d+)""",
-    """"user_name":\s*"\s*({user_fullname}([^\\"]|(\\\\)*\\"|\\\\)+?)\s*"""",
-    """"ipaddr":\s*"({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
+    """"app_name":\s{0,100}"\s{0,100}({app}([^\\"]|(\\\\)*\\"|\\\\)+?)\s{0,100}"""",
+    """"event_type_id":\s{0,100}({activity_code}\d{1,100})""",
+    """"user_name":\s{0,100}"\s{0,100}({user_fullname}([^\\"]|(\\\\)*\\"|\\\\)+?)\s{0,100}"""",
+    """"ipaddr":\s{0,100}"({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
-    """"notes":\s*"\s*({failure_reason}([^\\"]|(\\\\)*\\"|\\\\)+?)\s*"""",
-    """"notes":\s*"\s*({additional_info}([^\\"]|(\\\\)*\\"|\\\\)+?)\s*"""",
-    """"custom_message":\s*"\s*({additional_info}([^\\"]|(\\\\)*\\"|\\\\)+?)\s*"""",
-    """"error_description":\s*"\s*({additional_info}([^\\"]|(\\\\)*\\"|\\\\)+?)\s*"""",
-    """\Wmsg=\s*({additional_info}.+?)(\s+\w+=|\s*$)""",
+    """"notes":\s{0,100}"\s{0,100}({failure_reason}([^\\"]|(\\\\)*\\"|\\\\)+?)\s{0,100}"""",
+    """"notes":\s{0,100}"\s{0,100}({additional_info}([^\\"]|(\\\\)*\\"|\\\\)+?)\s{0,100}"""",
+    """"custom_message":\s{0,100}"\s{0,100}({additional_info}([^\\"]|(\\\\)*\\"|\\\\)+?)\s{0,100}"""",
+    """"error_description":\s{0,100}"\s{0,100}({additional_info}([^\\"]|(\\\\)*\\"|\\\\)+?)\s{0,100}"""",
+    """\Wmsg=\s{0,100}({additional_info}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
 ```

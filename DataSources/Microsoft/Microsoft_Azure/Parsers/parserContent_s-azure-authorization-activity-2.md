@@ -10,7 +10,7 @@ Name = s-azure-authorization-activity-2
  Conditions = ["""operationName":"MICROSOFT.AUTHORIZATION"""]
  Fields = [
          """time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-         """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
+         """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
          """({service}MICROSOFT.AUTHORIZATION)""",
          """"MICROSOFT.AUTHORIZATION\/[^\/]+\/({activity}[^\/"]+)""",
          """"MICROSOFT.AUTHORIZATION\/({activity}[^"]+)"""
@@ -24,7 +24,7 @@ Name = s-azure-authorization-activity-2
          """resourceId":".*\/RESOURCEGROUPS\/({account_id}[^\/]+)"""
          """Microsoft.Authorization/policyDefinitions/({policy}[^\/\\"]+)""",
          """resultType":"({outcome}[^"]+)""",
-         """\[Namespace:\s*({event_hub_namespace}\S+) ; EventHub name:\s*({event_hub_name}[\w-]+)"""
+         """\[Namespace:\s{0,100}({event_hub_namespace}\S+) ; EventHub name:\s{0,100}({event_hub_name}[\w-]+)"""
  ]
 DupFields= ["event_hub_namespace->host"]
 }

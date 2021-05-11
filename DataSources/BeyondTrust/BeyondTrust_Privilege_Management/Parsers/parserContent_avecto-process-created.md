@@ -12,17 +12,17 @@ Name = avecto-process-created
     Fields = [
       """exabeam_raw=({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|pm|PM))""",
       """ComputerName=({host}[^\s]+)""",
-      """Message=({activity_type}.+?)\s+Command Line:""",
-      """User Name:\s*(?:[A-F\d\-]{36}|({user}.+?))\s+User Domain SID:""",
-      """User Domain Name:\s*({domain}.*?)\s+User Domain Name""",
-      """User SID:\s*({user_sid}.*?)\s+User Name""",
-      """Token:\s*({token}.*?)\s+Token Description:""",
-      """MD5:\s*({md5}[^\s]+)""",
-      """Command Line:\s*({command_line}.+?)\s*Process Id:""",
-      """Message Description:\s*(<.+?>)?\s+(Unique Process ID:)?\s*({process_guid}[^\s]+)\s+Workstyle ID:""",
-      """Parent Process Unique ID:\s*(?:<None>|({parent_process_guid}[^\s]+))\s+Parent Process File Name:""",
-      """File Name:\s*({process}({directory}(?:(\w+:)?[^:]+)?[\\\/])?({process_name}.+?))\s+Hash:"""
-      """Parent Process File Name:\s*({parent_process}({parent_process_directory}(?:(\w+:)?[^:]+)?[\\\/])?({parent_process_name}.+?))\s+COM CLSID:"""
+      """Message=({activity_type}.+?)\s{1,100}Command Line:""",
+      """User Name:\s{0,100}(?:[A-F\d\-]{36}|({user}.+?))\s{1,100}User Domain SID:""",
+      """User Domain Name:\s{0,100}({domain}.*?)\s{1,100}User Domain Name""",
+      """User SID:\s{0,100}({user_sid}.*?)\s{1,100}User Name""",
+      """Token:\s{0,100}({token}.*?)\s{1,100}Token Description:""",
+      """MD5:\s{0,100}({md5}[^\s]+)""",
+      """Command Line:\s{0,100}({command_line}.+?)\s{0,100}Process Id:""",
+      """Message Description:\s{0,100}(<.+?>)?\s{1,100}(Unique Process ID:)?\s{0,100}({process_guid}[^\s]+)\s{1,100}Workstyle ID:""",
+      """Parent Process Unique ID:\s{0,100}(?:<None>|({parent_process_guid}[^\s]+))\s{1,100}Parent Process File Name:""",
+      """File Name:\s{0,100}({process}({directory}(?:(\w+:)?[^:]+)?[\\\/])?({process_name}.+?))\s{1,100}Hash:"""
+      """Parent Process File Name:\s{0,100}({parent_process}({parent_process_directory}(?:(\w+:)?[^:]+)?[\\\/])?({parent_process_name}.+?))\s{1,100}COM CLSID:"""
     ]
   DupFields = [ "host->dest_host","process_guid->pid","directory->process_directory" ]
   }

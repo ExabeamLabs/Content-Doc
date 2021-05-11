@@ -5,7 +5,7 @@ Name = cef-windows-dns-query-1
   DataType = "dns-query"
   Conditions = [ """ cat=PACKET """, """   Q [""" ]
   Fields = ${MicrosoftParserTemplates.cef-windows-dns-query-1.Fields}[
-    """\s+\S+\s+({protocol}\S+)\s+({activity}\S+)\s+({src_ip}[a-fA-F\d.:]+)\s+\S+\s+Q\s+\[\S+\s+(\s|({query_flags}.+?))\s+\S+\]\s+({query_type}\S+)\s+({query}.+?)\s"""
+    """\s{1,100}\S+\s{1,100}({protocol}\S+)\s{1,100}({activity}\S+)\s{1,100}({src_ip}[a-fA-F\d.:]+)\s{1,100}\S+\s{1,100}Q\s{1,100}\[\S+\s{1,100}(\s|({query_flags}.+?))\s{1,100}\S+\]\s{1,100}({query_type}\S+)\s{1,100}({query}.+?)\s"""
   ]
 }
 cef-windows-dns-query-1 = {
@@ -15,7 +15,7 @@ cef-windows-dns-query-1 = {
   IsHVF = true
   TimeFormat = "epoch"
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[\w\-.]+)""",
     """\srt=({time}\d{10})""",
     """\scs4=({dns_response_code}[^\s]+)\s""",
     """\srequest=({query}[^\s]+)\s""",

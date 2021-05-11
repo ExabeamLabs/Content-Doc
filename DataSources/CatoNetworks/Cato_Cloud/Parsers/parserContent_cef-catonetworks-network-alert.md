@@ -9,19 +9,19 @@ Name = cef-catonetworks-network-alert
   TimeFormat = "EEE MMM dd HH:mm:ss Z yyyy"
   Conditions = [ """CEF:""", """|CatoNetworks|""", """|Security|IPS|""", """internalType=SECURITY""", """ act=""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """CEF:([^\|]*\|){6}({alert_severity}[^\|]+)""",
-    """\Wrt=({time}\w+\s+\w+\s+\d+\s+\d\d:\d\d:\d\d\s+\w+\s+\d\d\d\d)""",
-    """\Wsuser=({user}[^\s]+)\s+(\w+=|$)""",
-    """\Wmsg=({alert_name}.+?)\s+(\w+=|$)""",
-    """\WinternalType=({alert_type}.+?)\s+(\w+=|$)""",
-    """\WflexString2=({alert_type}.+?)\s+(\w+=|$)""",
+    """\Wrt=({time}\w+\s{1,100}\w+\s{1,100}\d{1,100}\s{1,100}\d\d:\d\d:\d\d\s{1,100}\w+\s{1,100}\d\d\d\d)""",
+    """\Wsuser=({user}[^\s]+)\s{1,100}(\w+=|$)""",
+    """\Wmsg=({alert_name}.+?)\s{1,100}(\w+=|$)""",
+    """\WinternalType=({alert_type}.+?)\s{1,100}(\w+=|$)""",
+    """\WflexString2=({alert_type}.+?)\s{1,100}(\w+=|$)""",
     """\Wdst=({dest_ip}[A-Fa-f:\d.]+)""",
-    """\Wdpt=({dest_port}\d+)""",
-    """\Wclient_port=({src_port}\d+)""",
-    """\Wdhost=({dest_host}.+?)\s+(\w+=|$)""",
-    """\Wshost=({user_fullname}.+?)\s+(\w+=|$)""",
-    """\Wurl=({malware_url}.+?)\s+(\w+=|$)""",
+    """\Wdpt=({dest_port}\d{1,100})""",
+    """\Wclient_port=({src_port}\d{1,100})""",
+    """\Wdhost=({dest_host}.+?)\s{1,100}(\w+=|$)""",
+    """\Wshost=({user_fullname}.+?)\s{1,100}(\w+=|$)""",
+    """\Wurl=({malware_url}.+?)\s{1,100}(\w+=|$)""",
   ]
 }
 ```

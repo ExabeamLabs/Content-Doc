@@ -9,9 +9,9 @@ Name = q-gemalto-auth-success
   TimeFormat = "MM/d/yyyy H:mm:ss a"
   Conditions = [ """ resulting in AUTH_SUCCESS. """ ]
   Fields = [
-    """""<\d+>\w+\s+\d+:\d+:\d+\s+({host}\S+)""",
-    """At\s+({time}\d+/\d+/\d\d\d\d \d+:\d+:\d+ (am|AM|PM|pm)),\s*({user}[^\s\(]+)\S*\s+from\s+({src_ip}[a-fA-F\d.:]+)\s+did\s+({action}\S+)""",
-    """using\s+({auth_method}\S+)""",
+    """""<\d{1,100}>\w+\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}\S+)""",
+    """At\s{1,100}({time}\d{1,100}/\d{1,100}/\d\d\d\d \d{1,100}:\d{1,100}:\d{1,100} (am|AM|PM|pm)),\s{0,100}({user}[^\s\(]+)\S*\s{1,100}from\s{1,100}({src_ip}[a-fA-F\d.:]+)\s{1,100}did\s{1,100}({action}\S+)""",
+    """using\s{1,100}({auth_method}\S+)""",
     """resulting in ({outcome}AUTH_SUCCESS)""",
   ]
 }

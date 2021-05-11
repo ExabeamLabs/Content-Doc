@@ -9,10 +9,10 @@ Name = cef-digitalguardian-local-logon
   TimeFormat = "epoch"
   Conditions = [ """|Digital Guardian|Digital Guardian|""", """|User Logon|""" ]
   Fields = [
-    """\srt=({time}\d+)""",
+    """\srt=({time}\d{1,100})""",
     """\sshost=(([^\/\\=]+)[\/\\]+)?({host}\S+)""",
-    """\ssuser=(({domain}[^\/\\=]+)[\/\\]+)?({user}[^=]+?)\s+(ad\.\S+=|\w+=|$)""",
-    """\ssproc=({process_name}.+?)\s+(ad\.\S+=|\w+=|$)""",
+    """\ssuser=(({domain}[^\/\\=]+)[\/\\]+)?({user}[^=]+?)\s{1,100}(ad\.\S+=|\w+=|$)""",
+    """\ssproc=({process_name}.+?)\s{1,100}(ad\.\S+=|\w+=|$)""",
     """({event_code}User Logon)""",
   ]
   DupFields = [ "host->dest_host" ]

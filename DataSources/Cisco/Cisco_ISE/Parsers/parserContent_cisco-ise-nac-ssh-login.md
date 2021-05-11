@@ -9,10 +9,10 @@ Name = cisco-ise-nac-ssh-login
   TimeFormat = "epoch"
   Conditions = [ """A SSH CLI user has successfully logged in""", """|Cisco|Cisco ISE|""", """CEF:""" ]
   Fields = [
-    """\Wrt=({time}\d+)""",
+    """\Wrt=({time}\d{1,100})""",
     """dvchost=({host}[^\s]+)""",
     """({event_name}A SSH CLI user has successfully logged in)""",
-    """Cisco ISE\|*({event_code}\d+)\|""",
+    """Cisco ISE\|*({event_code}\d{1,100})\|""",
     """destinationServiceName=({app}[^\s]+)""",
     """cat=({category}[^\s]+)\s""",
     """deviceSeverity=({severity}[^\s]+)""",

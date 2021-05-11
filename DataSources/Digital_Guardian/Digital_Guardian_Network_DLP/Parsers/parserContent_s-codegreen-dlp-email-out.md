@@ -10,7 +10,7 @@ Name = s-codegreen-dlp-email-out
   Conditions = [ """protocol="SMTP"""", """email_subject=""", "exabeam_raw" ]
   Fields = [
     """timestamp="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d \w+)"""",
-    """\d\d:\d\d ({host}[^\s]+)\s+\d+\s+\d{4}\-\d\d\-\d\d""",
+    """\d\d:\d\d ({host}[^\s]+)\s{1,100}\d{1,100}\s{1,100}\d{4}\-\d\d\-\d\d""",
     """source="(?:\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|({user}[^"\\;]+))"""",
     """email_sender="(?:|({sender}[^"\\]+))"""",
     """email_recipients="({external_address}[^";]+)""",

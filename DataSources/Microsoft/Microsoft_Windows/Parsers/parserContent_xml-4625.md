@@ -9,12 +9,12 @@ Name = xml-4625
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
     Conditions = ["""<EventID>4625</EventID>""", """'FailureReason'>"""]
     Fields = [
-      """TimeCreated SystemTime(\\)?='({time}\d+-\d+-\d+T\d+:\d+:\d+)""",
+      """TimeCreated SystemTime(\\)?='({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100})""",
       """<Computer>({host}({dest_host}[\w\-]+)[^<]*)</Computer>""",
-      """<EventID>({event_code}\d+)</EventID>""",
+      """<EventID>({event_code}\d{1,100})</EventID>""",
       """<Data Name(\\)?='SubjectUserName'>(?=\w)?(-|({caller_user}[^<]+))<\/Data>""",
       """<Data Name(\\)?='SubjectDomainName'>((?=\w))?(-|({caller_domain}[^<]+))<\/Data>""",
-      """<Data Name(\\)?='LogonType'>({logon_type}\d+)<\/Data>""",
+      """<Data Name(\\)?='LogonType'>({logon_type}\d{1,100})<\/Data>""",
       """<Data Name(\\)?='TargetUserSid'>({user_sid}[^<]+)</Data>""",
       """<Data Name(\\)?='TargetUserName'>(?=\w)({user}[^<]+)</Data>""",
       """<Data Name(\\)?='TargetDomainName'>(?=\w)({domain}[^<]+)</Data>""",
@@ -22,7 +22,7 @@ Name = xml-4625
       """<Data Name(\\)?='Status'>({result_code}[^<]+)</Data>""",
       """<Data Name(\\)?='IpAddress'>(?:-|({src_ip}[A-Fa-f\d.:]+))</Data>""",
       """<Data Name(\\)?='LogonProcessName'>({auth_process}[^\s<]+)""",
-      """<Data Name(\\)?='WorkstationName'>(-|({src_host_windows}[A-Za-z]+[\w.-]+))\s*</Data>""",
+      """<Data Name(\\)?='WorkstationName'>(-|({src_host_windows}[A-Za-z]+[\w.-]+))\s{0,100}</Data>""",
       """<Data Name(\\)?='AuthenticationPackageName'>({auth_package}[^<]+)</Data>""",
       """({event_name}An account failed to log on)""",
       """<Data Name(\\)?='FailureReason'>({failure_reason}[^<]+)</Data>"""

@@ -14,12 +14,12 @@ Name = cef-powershell-4104
     """"Computer"":""({host}.+?)"""",
     """"ScriptBlockId"":""({scriptblock_id}.+?)"""",
     """"ScriptBlockText"":""({scriptblock_text}.+?)"""",
-    """-Function\s+'({function}[^']+)""",
+    """-Function\s{1,100}'({function}[^']+)""",
     """"MessageTotal"":""(|({message_total}.+?))"""",
     """"MessageNumber"":""(|({message_number}.+?))"""",
     """message=({script_message}[^:]+)""",
     """"Path"":""(|({path}.+?))"""",
-    """"ProcessID"":""({pid}\d+)"""",
+    """"ProcessID"":""({pid}\d{1,100})"""",
     """duser=({user}[^\s]+)""", 
   ]
 }

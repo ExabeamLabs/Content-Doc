@@ -10,11 +10,7 @@ Name = counteract-network-alert-4
   Conditions = [ """, Rule:""", """, Details:""", """ Source:""", """]: NAC Policy Log:""","""Duration:""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """(\w+\s+\d+ \d+:\d+:\d+)\s+({host}[^\s]+)""",
-    """Source:\s*({dest_ip}[a-fA-F\d.:]+)""",
-    """Rule:\s*(|({alert_name}Policy\s+"*[^"]+?\s*"*))\s*,""",
-    """Details:\s*({additional_info}.+?)\s*(\.\s+\w+:|$)""",
-  ]
-  DupFields = [ "alert_name->alert_type" ]
-}
+    """(\w+\s{1,100}\d{1,100} \d{1,100}:\d{1,100}:\d{1,100})\s{1,100}({host}[^\s]+)""",
+    """Source:\s{0,100}({dest_ip}[a-fA-F\d.:]+)""",
+    """Rule:\s{0,100}(|({alert_name}Policy\s{1,100}"{0,20}[^"]+?\s{0,100}"{0,20}))\s{0,100}
 ```

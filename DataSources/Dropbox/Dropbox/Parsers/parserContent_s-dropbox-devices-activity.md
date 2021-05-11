@@ -9,17 +9,17 @@ Name = s-dropbox-devices-activity
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
     Conditions = [ """"event_category": "devices"""", """"info_dict":""", """"event_type_description":""" ]
     Fields = [
-      """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-      """"name":\s*"(?:N\/A|({user_fullname}[^"@,]+))"""",
-      """"name":\s*"(?:N\/A|(({domain}[^"@\\\s]+)\\+)?({user}[^"@\\\s]+))"""",
-      """"email":\s*"(?:N\/A|({user_email}[^@"\s]+@({email_domain}[^@"\s]+)))""",
-      """"time":\s*"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d[\d:+-]+)"""",
-      """"event_type":\s*"({activity}[^"]+)"""",
-      """"event_type_description":\s*"({additional_info}[^"]+)"""",
-      """"ip_address":\s*"({src_ip}[a-fA-F\d.:]+)""",
-      """"display_name":\s*"({src_host}[\w\-.]+)\s*"""",
-      """"platform":\s*"({os}[^"]+)"""",
-      """"info_dict":\s*\{[^\}]*?"name":\s*"({app}[^"]+)""""
+      """exabeam_host=([^=]+@\s{0,100})?({host}[\w\-.]+)""",
+      """"name":\s{0,100}"(?:N\/A|({user_fullname}[^"@,]+))"""",
+      """"name":\s{0,100}"(?:N\/A|(({domain}[^"@\\\s]+)\\+)?({user}[^"@\\\s]+))"""",
+      """"email":\s{0,100}"(?:N\/A|({user_email}[^@"\s]+@({email_domain}[^@"\s]+)))""",
+      """"time":\s{0,100}"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d[\d:+-]+)"""",
+      """"event_type":\s{0,100}"({activity}[^"]+)"""",
+      """"event_type_description":\s{0,100}"({additional_info}[^"]+)"""",
+      """"ip_address":\s{0,100}"({src_ip}[a-fA-F\d.:]+)""",
+      """"display_name":\s{0,100}"({src_host}[\w\-.]+)\s{0,100}"""",
+      """"platform":\s{0,100}"({os}[^"]+)"""",
+      """"info_dict":\s{0,100}\{[^\}]*?"name":\s{0,100}"({app}[^"]+)""""
     ]
   }
 ```

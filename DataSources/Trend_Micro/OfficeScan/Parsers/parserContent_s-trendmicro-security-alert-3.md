@@ -9,8 +9,8 @@ Name = s-trendmicro-security-alert-3
   TimeFormat = "M/dd/yyyy HH:mm:ss"
   Conditions = [ """TMCM:EVT_URL_CONTENT_FILTERING""" ]
   Fields = [
-    """\sEvent time \(local\)="({time}\d+\/\d+\/\d\d\d\d \d\d:\d\d:\d\d)""",
-    """({host}[\w.\-]+)\s+TMCM:({alert_type}\w+)""",
+    """\sEvent time \(local\)="({time}\d{1,100}\/\d{1,100}\/\d\d\d\d \d\d:\d\d:\d\d)""",
+    """({host}[\w.\-]+)\s{1,100}TMCM:({alert_type}\w+)""",
     """\sURL="({malware_url}[^"]+)""",
     """\sDestination IP="({dest_ip}[^"]+)""",
     """\sDomain="({domain}[^"]+)""",

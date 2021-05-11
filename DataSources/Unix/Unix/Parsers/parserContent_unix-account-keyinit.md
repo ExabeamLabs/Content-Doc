@@ -6,8 +6,8 @@ Name = unix-account-keyinit
   DataType = "unix-account-switch"
   Conditions = [ """[][][""", """ pam_keyinit(sudo""" ]
   Fields = ${UnixParserTemplates.unix-events.Fields}[
-    """\sUser unknown:\s*(({domain}[^\\]+?)\\+)?({user}[^\\]+)\s*$""",
-    """pam_keyinit\S*?:\s*({event_name}.*?change UID to ({account_used_id}\d+).*?)\s*$"""
+    """\sUser unknown:\s{0,100}(({domain}[^\\]+?)\\+)?({user}[^\\]+)\s{0,100}$""",
+    """pam_keyinit\S*?:\s{0,100}({event_name}.*?change UID to ({account_used_id}\d{1,100}).*?)\s{0,100}$"""
   ]
 }
 unix-events = {
@@ -15,7 +15,7 @@ unix-events = {
   Lms = Direct
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Fields = [
-    """\[({src_ip}[a-fA-F\d.:]+)\]\[\d+\]\[\w+\]\[\]<\d+>\d+ ({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d+(\+|\-)\d\d:\d\d ({host}[\w.\-]+) ({event_code}\S+)""",
+    """\[({src_ip}[a-fA-F\d.:]+)\]\[\d{1,100}\]\[\w+\]\[\]<\d{1,100}>\d{1,100} ({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d{1,100}(\+|\-)\d\d:\d\d ({host}[\w.\-]+) ({event_code}\S+)""",
   ]
 
 ```

@@ -10,12 +10,12 @@ Name = json-duo-auth-attempt
   Conditions = [""""server_section":""", """"auth_stage":""", """authentication"""]
   Fields = [
     """exabeam_host=({host}[\w\-\.]+)""",
-    """"username":\s*"(|({user}[^"]+))"""",
-    """"status":\s*"(|({outcome}[^"]+))"""",
-    """"client_ip":\s*"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """(?:("msg":\s*"(|({additional_info}[^"]+))")|("status":\s*"Reject".+?"msg":\s*"(|({failure_reason}[^"]+))"))""",
-    """"timestamp":\s*"({time}\d+\-\d+\-\d+T\d+:\d+:\d+\.\d+Z)""",
-    """"auth_stage":\s*"(|({auth_method}[^"]+))"""",
+    """"username":\s{0,100}"(|({user}[^"]+))"""",
+    """"status":\s{0,100}"(|({outcome}[^"]+))"""",
+    """"client_ip":\s{0,100}"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """(?:("msg":\s{0,100}"(|({additional_info}[^"]+))")|("status":\s{0,100}"Reject".+?"msg":\s{0,100}"(|({failure_reason}[^"]+))"))""",
+    """"timestamp":\s{0,100}"({time}\d{1,100}\-\d{1,100}\-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}Z)""",
+    """"auth_stage":\s{0,100}"(|({auth_method}[^"]+))"""",
     """({service}\w+[^\-"]*?) authentication succeeded"""
   ]
 }

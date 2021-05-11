@@ -9,7 +9,7 @@ Name = egnyte-failed-app-login
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """|Skyformation|""", """|login-failed|""", """destinationServiceName=Egnyte""", """CEF:""", """sk4-login-failure""", """"event":"Failed Login"""" ]
   Fields = [
-    """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
+    """exabeam_host=([^=]+?@\s{0,100})?({host}[\w.-]+)""",
     """"time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)Z"""",
     """msg=({additional_info}[^=]+?)\s\w+=""",
     """requestClientApplication=({app}[^=]+?)\s\w+=""",
@@ -19,7 +19,7 @@ Name = egnyte-failed-app-login
     """destinationServiceName=({event_subtype}[^=]+)\s\w+=""",
     """dtz=({dtz}[^=]+)\s\w+=""",
     """([^\|]*\|){5}({activity}[^\|]+)\|""",
-    """"username":"({user_fullname}[^\(]+)\s\(\s*({user_email}[^@]+@({email_domain}[^\s\)]+))\s*\)"""",	
+    """"username":"({user_fullname}[^\(]+)\s\(\s{0,100}({user_email}[^@]+@({email_domain}[^\s\)]+))\s{0,100}\)"""",	
     """cat=({category}[^=]+)\s\w+=""",
     """"event":"({event_name}[^"]+)""""
   ]

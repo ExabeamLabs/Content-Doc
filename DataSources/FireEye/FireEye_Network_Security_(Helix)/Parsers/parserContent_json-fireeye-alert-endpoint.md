@@ -10,12 +10,12 @@ Name = json-fireeye-alert-endpoint
   Conditions = [ """"type":"fireeye_rule"""", """"threat_type":""", """"category":"Host"""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """"created_at":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+    """"created_at":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """"iocnames":"({alert_name}[^"]+)""",
     """"description":"({additional_info}[^"]+)""",
     """virus.+?"description":"({alert_name}[^"]+)""",
     """"severity":"({alert_severity}[^"]+)""",
-    """"threat_type":({alert_type}\d+)""",
+    """"threat_type":({alert_type}\d{1,100})""",
     """"source":"({dest_host}[^"]+)""",
     """"destination":"({dest_ip}[a-fA-F\d.:]+)""",
     """details.+?"username":"([\w\s]+\\+)?(system|({user}[^"]+))""",

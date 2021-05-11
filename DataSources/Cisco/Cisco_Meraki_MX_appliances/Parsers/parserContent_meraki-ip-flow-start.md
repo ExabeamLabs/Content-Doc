@@ -11,15 +11,15 @@ Name = meraki-ip-flow-start
   Conditions = [ """ ip_flow_start""", """ src=""", """ dst=""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """(<\d+>[^\s]+)?\s+({time}\d+)\.\d+\s({event_name}[^\s]+?)\ssrc=""",
+    """(<\d{1,100}>[^\s]+)?\s{1,100}({time}\d{1,100})\.\d{1,100}\s({event_name}[^\s]+?)\ssrc=""",
     """\ssrc=({src_ip}[a-fA-F\d.:]+)""",
     """\sdst=({dest_ip}[a-fA-F\d.:]+)""",
     """\sprotocol=({protocol}\w+)""",
-    """\ssport=({src_port}\d+)""",
-    """\sdport=({dest_port}\d+)""",
+    """\ssport=({src_port}\d{1,100})""",
+    """\sdport=({dest_port}\d{1,100})""",
     """\smac=({src_mac}[a-fA-F\d.:]+)""",
-    """\stranslated_src_ip=({src_translated_ip}[a-fA-F\d.:]+)\stranslated_port=({src_translated_port}\d+)""",
-    """\stranslated_dst_ip=({dest_translated_ip}[a-fA-F\d.:]+)\stranslated_port=({dest_translated_port}\d+)""",
+    """\stranslated_src_ip=({src_translated_ip}[a-fA-F\d.:]+)\stranslated_port=({src_translated_port}\d{1,100})""",
+    """\stranslated_dst_ip=({dest_translated_ip}[a-fA-F\d.:]+)\stranslated_port=({dest_translated_port}\d{1,100})""",
   ]
 }
 ```

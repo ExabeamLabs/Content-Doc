@@ -10,7 +10,7 @@ Name = cef-ping-failed-app-login-2
   Conditions = [ """destinationServiceName=Ping""", """|login-failed|"""]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """end=({time}\d+)""",
+    """end=({time}\d{1,100})""",
     """cat=({category}[^\s]+)"""
     """request=({outcome}[^\s]+)""",
     """requestClientApplication=({app}.*?)\s\w+=""",

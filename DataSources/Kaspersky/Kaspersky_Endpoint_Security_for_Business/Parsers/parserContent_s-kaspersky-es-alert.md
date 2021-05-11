@@ -10,14 +10,14 @@ Name = s-kaspersky-es-alert
   Conditions = [ """Kaspersky Event Log""","""Result\Name:""" ]
   Fields = [
 	   """ComputerName=({host}[\w.\-]+)""",
-           """exabeam_raw=({time}\d+/\d+/\d+ \d+:\d+:\d+ (am|AM|pm|PM))""",
-	   """Message=({src_host}.+?)\s*\[""",
-           """User:\s+({domain}[^\\]*)\\({user}.+?)\s*\(""",
-	   """Object:\s+({malware_url}.+?)\s*(Result|Object)\\""",
-	   """Result\\Name:\s*({alert_type}.+?)\s*Result\\""",
-           """Result\\Type:\s*({alert_type}.+?)\s*Result\\""",
-           """Result\\Name:\s*({alert_name}.+?)\s*Result\\""",
-	   """Result\\Threat level:\s*({alert_severity}.+?)\s*Result\\"""
+           """exabeam_raw=({time}\d{1,100}/\d{1,100}/\d{1,100} \d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM))""",
+	   """Message=({src_host}.+?)\s{0,100}\[""",
+           """User:\s{1,100}({domain}[^\\]*)\\({user}.+?)\s{0,100}\(""",
+	   """Object:\s{1,100}({malware_url}.+?)\s{0,100}(Result|Object)\\""",
+	   """Result\\Name:\s{0,100}({alert_type}.+?)\s{0,100}Result\\""",
+           """Result\\Type:\s{0,100}({alert_type}.+?)\s{0,100}Result\\""",
+           """Result\\Name:\s{0,100}({alert_name}.+?)\s{0,100}Result\\""",
+	   """Result\\Threat level:\s{0,100}({alert_severity}.+?)\s{0,100}Result\\"""
            ]
 }
 ```

@@ -11,7 +11,7 @@ Name = mcafee-siem-4770
     Fields = [
       """({event_name}A Kerberos service ticket was renewed)""",
       """"dst_ip":"({src_ip}[^"]+)""",
-      """"id":\d*({event_code}4770)""",
+      """"id":\d{0,100}({event_code}4770)""",
       """"firsttime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
       """"DomainID":"({domain}[^"]+)""",
       """"HostID":"({host}[^"]+)""",

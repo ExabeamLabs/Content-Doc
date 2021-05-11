@@ -16,8 +16,8 @@ Name = rs2-badge-access
     """\sEventDescription="({outcome}[^"]+)""",
     """\sEID="({user}[^"]+)""",
     """\sCardNumber="({badge_id}[^"]+)""",
-    """\sFirstName="\s*({first_name}[^"]+?)\s*"""",
-    """\sLastName="\s*({last_name}[^"]+?)\s*"""",
+    """\sFirstName="\s{0,100}({first_name}[^"]+?)\s{0,100}"""",
+    """\sLastName="\s{0,100}({last_name}[^"]+?)\s{0,100}"""",
   ]
 }
 ```

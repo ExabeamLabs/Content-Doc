@@ -9,14 +9,14 @@ Name = raw-asa-113005
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ """%ASA""" , """-113005""", """ AAA user """ ]
   Fields = [ 
-    """exabeam_time=\s*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\w+\s+\d+ \d\d:\d\d:\d\d\s+(::ffff:)?({host}\S+)\s*:*\s+%ASA""",
+    """exabeam_time=\s{0,100}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+    """\w+\s{1,100}\d{1,100} \d\d:\d\d:\d\d\s{1,100}(::ffff:)?({host}\S+)\s{0,100}:*\s{1,100}%ASA""",
     """\s({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
-    """reason\s*=\s*({failure_reason}[^;=]+?)\s*:""",
-    """server\s*=\s*(::ffff:)?({dest_ip}[a-fA-F\d.:]+)""",
-    """user\s*=\s*(?:|({user}[^:]+))\s+:""",
-    """user IP\s*=\s*(::ffff:)?({src_ip}[a-fA-F\d.:]+)""",
-    """%ASA-\d+-({event_code}113005)""",
+    """reason\s{0,100}=\s{0,100}({failure_reason}[^;=]+?)\s{0,100}:""",
+    """server\s{0,100}=\s{0,100}(::ffff:)?({dest_ip}[a-fA-F\d.:]+)""",
+    """user\s{0,100}=\s{0,100}(?:|({user}[^:]+))\s{1,100}:""",
+    """user IP\s{0,100}=\s{0,100}(::ffff:)?({src_ip}[a-fA-F\d.:]+)""",
+    """%ASA-\d{1,100}-({event_code}113005)""",
     """({event_name}AAA user authentication Rejected)""",
  ]
 }

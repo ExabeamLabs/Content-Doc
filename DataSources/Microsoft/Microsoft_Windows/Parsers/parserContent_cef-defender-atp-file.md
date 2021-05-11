@@ -5,12 +5,12 @@ Name = cef-defender-atp-file
   DataType = "file-operations"
   Conditions = ["""CEF""", """SkyFormation Cloud Apps Security""", """requestClientApplication=""", """AdvancedHunting-DeviceFileEvents"""]
   Fields = ${MicrosoftParserTemplates.cef-defender-atp.Fields} [
-     """"FileName"+:\s*"+({process_name}[^"]+)""",
-     """"FolderPath"+:\s*"+({file_path}({file_parent}[^"]*?[\\\/]+)?({file_name}[^"\\\/]+?(\.({file_ext}\w+))?))"""",
-     """DeviceName"+:\s*"+({dest_host}({host}[^"\.]+)?[^"]+)""",
-     """MD5"+:"+({md5}[^"]+)""",
-     """"SHA1"+:(null|"+({sha1}[^",]+)"+),""",
-     """"SHA256"+:(null|"+({sha256}[^",]+)"+),"""
+     """"FileName"{1,20}:\s{0,100}"{1,20}({process_name}[^"]+)""",
+     """"FolderPath"{1,20}:\s{0,100}"{1,20}({file_path}({file_parent}[^"]*?[\\\/]+)?({file_name}[^"\\\/]+?(\.({file_ext}\w+))?))"""",
+     """DeviceName"{1,20}:\s{0,100}"{1,20}({dest_host}({host}[^"\.]+)?[^"]+)""",
+     """MD5"{1,20}:"{1,20}({md5}[^"]+)""",
+     """"SHA1"{1,20}:(null|"{1,20}({sha1}[^",]+)"{1,20}),""",
+     """"SHA256"{1,20}:(null|"{1,20}({sha256}[^",]+)"{1,20}),"""
 ]
 }
 ```

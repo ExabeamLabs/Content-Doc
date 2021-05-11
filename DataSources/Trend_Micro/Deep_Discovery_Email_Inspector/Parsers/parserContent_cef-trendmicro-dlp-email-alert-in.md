@@ -9,17 +9,17 @@ Name = cef-trendmicro-dlp-email-alert-in
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """CEF:""", """|Trend Micro|""", """|TMES|""" , """|DETECTION|"""]
   Fields = [
-    """\Wrt=({time}\d+-\d+-\d+\s+\d\d:\d\d:\d\d)""",
-    """\w+\s+\d+\s+\d+:\d+:\d+\s+({host}[\w\-.]+)\s""",
-    """\Wcs1=({alert_type}.+?)\s+(\w+=|$)""",
-    """\Wcs2=({domain}.+?)\s+(\w+=|$)""",
+    """\Wrt=({time}\d{1,100}-\d{1,100}-\d{1,100}\s{1,100}\d\d:\d\d:\d\d)""",
+    """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]+)\s""",
+    """\Wcs1=({alert_type}.+?)\s{1,100}(\w+=|$)""",
+    """\Wcs2=({domain}.+?)\s{1,100}(\w+=|$)""",
     """\Wsuser=({sender}[^\s@]+@({external_domain}[^\s@]+))""",
-    """\Wduser=({recipients}({recipient}[^\s@;,]+@[^\s@;,]+).*?)\s+(\w+=|$)""",
-    """\Wcs3=({direction}.+?)\s+(\w+=|$)""",
-    """\Wmsg=\s*({subject}.+?)\s+(\w+=|$)""",
-    """\Wcn1=({bytes}.+?)\s+(\w+=|$)""",
-    """\Wact=({outcome}.+?)\s+(\w+=|$)""",
-    """\Wcs5=({alert_name}.+?)\s+(\w+=|$)""",
+    """\Wduser=({recipients}({recipient}[^\s@;,]+@[^\s@;,]+).*?)\s{1,100}(\w+=|$)""",
+    """\Wcs3=({direction}.+?)\s{1,100}(\w+=|$)""",
+    """\Wmsg=\s{0,100}({subject}.+?)\s{1,100}(\w+=|$)""",
+    """\Wcn1=({bytes}.+?)\s{1,100}(\w+=|$)""",
+    """\Wact=({outcome}.+?)\s{1,100}(\w+=|$)""",
+    """\Wcs5=({alert_name}.+?)\s{1,100}(\w+=|$)""",
   ]
   DupFields = [ "sender->external_address" ]
 }

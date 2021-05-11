@@ -16,17 +16,17 @@ Name = s-estreamer-network-connection
     """"firewallRule": "({rule}[^"]+)"""",
     """"initiatorIpAddress": "({src_ip}[A-Fa-f:\d.]+)""",
     """"responderIpAddress": "({dest_ip}[A-Fa-f:\d.]+)""",
-    """"responderPort": ({dest_port}\d+)""",
+    """"responderPort": ({dest_port}\d{1,100})""",
     """"clientApplication": "(Unknown|({network_app}[^"]+))"""",
     """"transportProtocol": "({protocol}[^"]+)"""",
-    """"initiatorTransmittedBytes": ({bytes_out}\d+)""",
-    """"responderTransmittedPackets": ({bytes_in}\d+)""",
+    """"initiatorTransmittedBytes": ({bytes_out}\d{1,100})""",
+    """"responderTransmittedPackets": ({bytes_in}\d{1,100})""",
     """"ingressInterface": "({src_interface}[^"]+)"""",
     """"egressInterface": "({dest_interface}[^"]+)"""",
     """"user": "(No Authentication Required|(?i)Unknown|({user}[^"]+))"""",
     """"recordTypeDescription": "({event_name}[^"]+)"""",
     """"clientUrl":[^\]]+?"data": "({additional_info}[^"]+)"""",
-    """"initiatorPort": ({src_port}\d+)""",
+    """"initiatorPort": ({src_port}\d{1,100})""",
   ]
 }
 ```

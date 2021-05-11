@@ -11,7 +11,7 @@ Name = xml-5140
     Fields = [
       """<EventID>({event_code}5140)""",
       """<Computer>({host}({dest_host}[\w-]+)[^<]*)</Computer>""",
-      """<TimeCreated SystemTime(\\)?='({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d)\d*Z'/>""",
+      """<TimeCreated SystemTime(\\)?='({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d)\d{0,100}Z'/>""",
       """<Data Name(\\)?='SubjectLogonId'>({logon_id}[^<]+?)</Data>""",
       """<Data Name(\\)?='SubjectUserName'>(-|({user}[^<]+?))</Data>""",
       """<Data Name(\\)?='SubjectDomainName'>({domain}[^<]+?)</Data>""",

@@ -9,8 +9,8 @@ Name = sfdc-app-login-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """SFDCLogType="""", """SFDCLogId="""", """EVENT_TYPE="Login"""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """SFDCLogDate="({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d.\d\d\d(\-|\+)\d+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """SFDCLogDate="({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d.\d\d\d(\-|\+)\d{1,100})""",
     """BROWSER_TYPE="({user_agent}[^"]+)""",
     """BROWSER_TYPE=".+?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)""",
     """TLS_PROTOCOL="({protocol}[^"]+)""",

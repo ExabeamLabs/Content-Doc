@@ -9,7 +9,7 @@ Name = netscaler-failed-vpn-login
   TimeFormat = "MM/dd/yyyy:HH:mm:ss z"
   Conditions = [ "LOGIN_FAILED", " Client_ip " ]
   Fields = [
-    """\w+\s+\d+\s+\d\d:\d\d:\d\d\s+({host}[\w\-.]+)""",
+    """\w+\s{1,100}\d{1,100}\s{1,100}\d\d:\d\d:\d\d\s{1,100}({host}[\w\-.]+)""",
     """({time}\d\d/\d\d/\d\d\d\d:\d\d:\d\d:\d\d \w+)""",
     """User ({user_email}[^@\s]+@[^@\s]+) - Client_ip ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """User (({domain}[^\s\\]+)\\+)?({user}[^@\s\\]+) - Client_ip ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",

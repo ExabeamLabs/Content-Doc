@@ -10,14 +10,14 @@ Name = vmware-horizon-logon
   Conditions = [ """ View """ , """ Severity""" , """ Module""" , """EventType=""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\w+\s+\d+\s+\d+:\d+:\d+\s+({host}[\w\-.]+)""",
+    """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]+)""",
     """({app}View)""",
-    """EventType="*({event_name}[^"]+)"""
-    """UserDisplayName="*(({domain}[^\\"]+)\\+)?({user}[^\\"]+)"""",
-    """SessionType="*({activity}[^"]+)""",
-    """UserSID="*({user_sid}[^"]+)""",
-    """Module="*({resource}[^"]+)""",
-    """ApplicationId="*({object}[^"]+)"""
+    """EventType="{0,20}({event_name}[^"]+)"""
+    """UserDisplayName="{0,20}(({domain}[^\\"]+)\\+)?({user}[^\\"]+)"""",
+    """SessionType="{0,20}({activity}[^"]+)""",
+    """UserSID="{0,20}({user_sid}[^"]+)""",
+    """Module="{0,20}({resource}[^"]+)""",
+    """ApplicationId="{0,20}({object}[^"]+)"""
   ]
 }
 ```

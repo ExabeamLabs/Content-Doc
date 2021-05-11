@@ -9,13 +9,13 @@ Name = cef-unix-su
   TimeFormat = "epoch"
   Conditions = [ """|Unix|Unix|""", """|session opened|""", """cs1=su """ ]
   Fields = [
-    """\srt=({time}\d+)""",
-    """\sduser=({user}.+?)\s+\w+=""",
+    """\srt=({time}\d{1,100})""",
+    """\sduser=({user}.+?)\s{1,100}\w+=""",
     """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sdhost=({dest_host}[^\s]+)""",
     """session opened for user ({account}.+?) by""",
     """session opened for user.+?by ({user}[^(]+)""",
-    """\(uid\\+=({user_uid}\d+)\)""",
+    """\(uid\\+=({user_uid}\d{1,100})\)""",
     """({event_code}su)"""
   ]
   DupFields = [ "dest_host->host"]

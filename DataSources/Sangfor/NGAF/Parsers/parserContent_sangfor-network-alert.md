@@ -10,18 +10,18 @@ Name = sangfor-network-alert
   Conditions = [ """type: IPS""", """<Identifier>ZC01_NTTDHK-FWL-002</Identifier>""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\w+\s+\d+\s+\d+:\d+:\d+[\+\-]\d+:\d+\s+({host}[\w\-.]+)""",
-    """, policy name:\s*({policy}[^,]+)""",
-    """, vulnerability ID:\s*({alert_id}[^,]+)""",
-    """, vulnerability name:\s*({alert_name}[^,]+)""",
-    """, Src IP:\s*({src_ip}[A-Fa-f:\d.]+)""",
-    """, Src port:\s*({src_port}\d+)""",
-    """, dst IP:\s*({dest_ip}[A-Fa-f:\d.]+)""",
-    """, Dst port:\s*({dest_port}\d+)""",
-    """, protocol:\s*({protocol}[^,]+)""",
-    """, attack type:\s*({alert_type}[^,]+)""",
-    """, threat level:\s*({alert_severity}[^,]+)""",
-    """, action:\s*({outcome}[^,\s]+)""",
+    """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}[\+\-]\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]+)""",
+    """, policy name:\s{0,100}({policy}[^,]+)""",
+    """, vulnerability ID:\s{0,100}({alert_id}[^,]+)""",
+    """, vulnerability name:\s{0,100}({alert_name}[^,]+)""",
+    """, Src IP:\s{0,100}({src_ip}[A-Fa-f:\d.]+)""",
+    """, Src port:\s{0,100}({src_port}\d{1,100})""",
+    """, dst IP:\s{0,100}({dest_ip}[A-Fa-f:\d.]+)""",
+    """, Dst port:\s{0,100}({dest_port}\d{1,100})""",
+    """, protocol:\s{0,100}({protocol}[^,]+)""",
+    """, attack type:\s{0,100}({alert_type}[^,]+)""",
+    """, threat level:\s{0,100}({alert_severity}[^,]+)""",
+    """, action:\s{0,100}({outcome}[^,\s]+)""",
   ]
 }
 ```

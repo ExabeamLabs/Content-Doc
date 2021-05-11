@@ -10,21 +10,21 @@ Name = safend-usb-read
   Conditions = [ """[Safend Data Protection]""", """Action: Read""" ]
   Fields = [
     """exabeam_raw=({time}\d\d \d\d \d\d\d\d \d\d:\d\d:\d\d) ({dest_ip}[A-Fa-f:\d.]+)""",
-    """Client GMT:\s+({time}\d+/\d+/\d\d\d\d \d\d:\d\d:\d\d (AM|PM|am|pm))""",
-    """Action:\s*({activity}[^,]+?)\s*$""",
-    """User:\s*({user}[^@,\s]+)(@({domain}[^@,.\s]+))?""",
-    """User:\s*({user_email}[^,\s]+)""",
-    """Computer:\s*({host}[^,]+)""",
-    """Operating System:\s*({os}[^,]+)""",
-    """Device Type:\s*({device_type}[^,]+)""",
-    """Device Info:\s*({device_type}[^,]+),""",
-    """Distinct ID:\s*(|({device_id}[^,]+)),""",
-    """({activity_details}Policy:\s*[^,]+)""",
-    """File Name:\s*({file_path}[^,]+)""",
-    """File Name:\s*.+?\\({file_name}[^\\,]+),""",
+    """Client GMT:\s{1,100}({time}\d{1,100}/\d{1,100}/\d\d\d\d \d\d:\d\d:\d\d (AM|PM|am|pm))""",
+    """Action:\s{0,100}({activity}[^,]+?)\s{0,100}$""",
+    """User:\s{0,100}({user}[^@,\s]+)(@({domain}[^@,.\s]+))?""",
+    """User:\s{0,100}({user_email}[^,\s]+)""",
+    """Computer:\s{0,100}({host}[^,]+)""",
+    """Operating System:\s{0,100}({os}[^,]+)""",
+    """Device Type:\s{0,100}({device_type}[^,]+)""",
+    """Device Info:\s{0,100}({device_type}[^,]+),""",
+    """Distinct ID:\s{0,100}(|({device_id}[^,]+)),""",
+    """({activity_details}Policy:\s{0,100}[^,]+)""",
+    """File Name:\s{0,100}({file_path}[^,]+)""",
+    """File Name:\s{0,100}.+?\\({file_name}[^\\,]+),""",
     """File Name:[^,]+\.({file_ext}\w+),""",
-    """File Type:\s*({file_ext}\w+)""",
-    """File Size:\s*({bytes}[^,]+)"""
+    """File Type:\s{0,100}({file_ext}\w+)""",
+    """File Size:\s{0,100}({bytes}[^,]+)"""
   ]
 }
 ```

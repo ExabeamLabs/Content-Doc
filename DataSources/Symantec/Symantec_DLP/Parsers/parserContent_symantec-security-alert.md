@@ -9,8 +9,8 @@ Name = symantec-security-alert
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """type":"""", ""","virusSrc":"""", ""","virusName":"""" ]
   Fields = [
-    """\d+-\d+-\d+T\d+:\d+:\d+\.\d+[\+\-]\d+:\d+\s+({host}[\w\-.]+)\s""",
-    """"@timestamp":"({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+Z)""",
+    """\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}[\+\-]\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]+)\s""",
+    """"@timestamp":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}Z)""",
     """"srcHostname":"({src_host}[^"]+)""",
     """"srcIP":"(0.0.0.0|({src_ip}[A-Fa-f:\d.]+))""",
     """"virusSrc":"({alert_type}[^"]+)""",

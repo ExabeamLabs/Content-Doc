@@ -10,22 +10,22 @@ Name = citrix-vpn-connection
     Conditions = [""" SSLVPN """, """Access Allowed""", """ Duration """, """ Total_bytes_send """ ]
     Fields = [
      """exabeam_host=({host}[\w\-.]+)""",
-     """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-     """\w+\s+\d+\s+\d\d:\d\d:\d\d\s+({host}[\w\-.]+)""",
-      """({host}[^\s]+)\s*:\s*SSLVPN \w+\s""",
-      """\sEnd_time(\s*\&quot;)?\s*"?({time}\d+\/\d+\/\d+:\d+:\d+:\d+)""",
-      """\sUser\s*({user}[^\-\s]+)\s*\-""",
+     """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+     """\w+\s{1,100}\d{1,100}\s{1,100}\d\d:\d\d:\d\d\s{1,100}({host}[\w\-.]+)""",
+      """({host}[^\s]+)\s{0,100}:\s{0,100}SSLVPN \w+\s""",
+      """\sEnd_time(\s{0,100}\&quot;)?\s{0,100}"?({time}\d{1,100}\/\d{1,100}\/\d{1,100}:\d{1,100}:\d{1,100}:\d{1,100})""",
+      """\sUser\s{0,100}({user}[^\-\s]+)\s{0,100}\-""",
       """({event_name}SSLVPN \w+)""",
-      """\sSessionId:\s*({session_id}\d+)""",
-      """\sSource\s*({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}):({src_port}\d+)""",
-      """\sNat_ip\s*({src_translated_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
-      """\sVserver\s*({dest_translated_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}):({dest_translated_port}\d+)""",
-      """\sDestination\s*({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}):({dest_port}\d+)""",
-      """\sDuration\s*({duration}\d{2}:\d{2}:\d{2})""",
-      """\sTotal_bytes_send\s*({bytes_out}\d+)""",
-      """\sTotal_bytes_recv\s*({bytes_in}\d+)""",
-      """\sAccess\s*({action}[^\s]+)\s""",
-      """\sGroup\(s\)\s*("|&quot;)({access_group}[^"]+?)(&quot;|")"""
+      """\sSessionId:\s{0,100}({session_id}\d{1,100})""",
+      """\sSource\s{0,100}({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}):({src_port}\d{1,100})""",
+      """\sNat_ip\s{0,100}({src_translated_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
+      """\sVserver\s{0,100}({dest_translated_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}):({dest_translated_port}\d{1,100})""",
+      """\sDestination\s{0,100}({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}):({dest_port}\d{1,100})""",
+      """\sDuration\s{0,100}({duration}\d{2}:\d{2}:\d{2})""",
+      """\sTotal_bytes_send\s{0,100}({bytes_out}\d{1,100})""",
+      """\sTotal_bytes_recv\s{0,100}({bytes_in}\d{1,100})""",
+      """\sAccess\s{0,100}({action}[^\s]+)\s""",
+      """\sGroup\(s\)\s{0,100}("|&quot;)({access_group}[^"]+?)(&quot;|")"""
     ]
 }
 ```

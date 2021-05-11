@@ -10,7 +10,7 @@ Name = unix-failed-logon-7
   Conditions = [ """Disconnecting: Too many authentication failures for""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """({host}[\w.\-]+)\s+sshd\[""",
+    """({host}[\w.\-]+)\s{1,100}sshd\[""",
     """({event_name}Too many authentication failures for ({user}\S+))""",
   ]
 }

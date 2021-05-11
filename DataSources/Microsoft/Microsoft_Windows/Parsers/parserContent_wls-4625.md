@@ -9,22 +9,22 @@ Name = wls-4625
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
     Conditions = ["""LogType="WLS"""", """EventID="4625""""]
     Fields = [
-      """Computer="+({host}[^"]+)"""",
+      """Computer="{1,20}({host}[^"]+)"""",
       """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-      """EventID="+({event_code}[^"]+)"""",
-      """IpAddress="+(?:-|({src_ip}[^"]+))"""",
-      """LogonProcessName="+({auth_process}[^"]+)"""",
-      """LogonType="+({logon_type}[^"]+)"""",
-      """AuthenticationPackageName="+({auth_package}[^"]+)"""",
-      """EventRecordID="+({record_id}[^"]+)"""",
-      """SubStatus="+({result_code}[^"]+)"""",
-      """SubjectUserName="+(?=\w)({caller_user}[^"]+)"""",
-      """SubjectDomainName="+(?=\w)({caller_domain}[^"]+)"""",
+      """EventID="{1,20}({event_code}[^"]+)"""",
+      """IpAddress="{1,20}(?:-|({src_ip}[^"]+))"""",
+      """LogonProcessName="{1,20}({auth_process}[^"]+)"""",
+      """LogonType="{1,20}({logon_type}[^"]+)"""",
+      """AuthenticationPackageName="{1,20}({auth_package}[^"]+)"""",
+      """EventRecordID="{1,20}({record_id}[^"]+)"""",
+      """SubStatus="{1,20}({result_code}[^"]+)"""",
+      """SubjectUserName="{1,20}(?=\w)({caller_user}[^"]+)"""",
+      """SubjectDomainName="{1,20}(?=\w)({caller_domain}[^"]+)"""",
       """TargetDomainName="(?:-|({domain}[^"]+))""",
-      """TargetUserName="+(?=\w)({user}[^"@]+)(?:@({domain}[^\s]+))?"""",
-      """TargetUserSid="+({user_sid}[^"]+)"""",
-      """WorkstationName="+(-|({src_host_windows}[^"]+))"""",
-      """FailureReason="+({failure_reason}[^"]+)"""",
+      """TargetUserName="{1,20}(?=\w)({user}[^"@]+)(?:@({domain}[^\s]+))?"""",
+      """TargetUserSid="{1,20}({user_sid}[^"]+)"""",
+      """WorkstationName="{1,20}(-|({src_host_windows}[^"]+))"""",
+      """FailureReason="{1,20}({failure_reason}[^"]+)"""",
     ]
     DupFields = ["host->dest_host"]
   }

@@ -10,10 +10,10 @@ Name = tacacs-process-created
   TimeFormat = "epoch_sec"
   Conditions = [ """[TACACS]""", """start_time=""", """cmd=""" ]
   Fields = [
-    """\w+\s+\d+\s+\d\d:\d\d:\d\d\s+({host}[\w\-.]+)\s+\S+\s+({user}[^\s]+)\s+\S+\s+({src_ip}[A-Fa-f:\d.]+)\s+""",
-    """start_time=({time}\d+)""",
-    """cmd=\S+\s+({command_line}.+?)\s+$""",
-    """cmd=\S+\s+({process_name}[^\s]+)"""
+    """\w+\s{1,100}\d{1,100}\s{1,100}\d\d:\d\d:\d\d\s{1,100}({host}[\w\-.]+)\s{1,100}\S+\s{1,100}({user}[^\s]+)\s{1,100}\S+\s{1,100}({src_ip}[A-Fa-f:\d.]+)\s{1,100}""",
+    """start_time=({time}\d{1,100})""",
+    """cmd=\S+\s{1,100}({command_line}.+?)\s{1,100}$""",
+    """cmd=\S+\s{1,100}({process_name}[^\s]+)"""
   ]
 }
 ```

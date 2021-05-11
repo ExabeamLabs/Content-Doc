@@ -11,7 +11,7 @@ Name = microsoft-rra-vpn-login
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
     """CoID=\{({session_id}[^\{\}]+?)\}""",
-    """:\s*The user (({domain}[^\\\/]+?)[\\\/]+)?({user}[^\\\/]+?) connected on port""",
+    """:\s{0,100}The user (({domain}[^\\\/]+?)[\\\/]+)?({user}[^\\\/]+?) connected on port""",
     """has been assigned address ({src_translated_ip}[a-fA-F\d.:]+)""",
   ]
 }

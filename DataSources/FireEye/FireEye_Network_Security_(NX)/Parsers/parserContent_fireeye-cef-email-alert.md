@@ -11,19 +11,19 @@ Name = fireeye-cef-email-alert
   Fields = [
     """\|FireEye\|([^|]*\|){3}({alert_type}[^|]+)""",
     """\|FireEye\|([^|]*\|){4}({alert_severity}[^|]+)""",
-    """\Wrt=({time}\w+ \d+ \d\d\d\d \d\d:\d\d:\d\d \w+)""",
-    """\WfilePath=({additional_info}.+?)(\s+\w+=|\s*$)""",
-    """\Wrequest=({malware_url}.+?)(\s+\w+=|\s*$)""",
-    """\Wcs5=({malware_url}.+?)(\s+\w+=|\s*$)""",
+    """\Wrt=({time}\w+ \d{1,100} \d\d\d\d \d\d:\d\d:\d\d \w+)""",
+    """\WfilePath=({additional_info}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wrequest=({malware_url}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wcs5=({malware_url}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   	"""\Wdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
-    """\Wdvchost=({host}.+?)(\s+\w+=|\s*$)""",
+    """\Wdvchost=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   	"""\Wsuser=({src_user}[^@\s]+)""",
   	"""\Wduser=({dst_user}[^@\s]+)""",
     """\Wduser=({user_email}[^@\s,]+@[^@\s,]+)""",
     """\Wduser=({user}[^@\s,]+)""",
-    """\Wcn2=({alert_id}\d+)""",
-    """\Wcs1=({alert_name}.+?)(\s+\w+=|\s*$)""",
-    """\Wsproc=({process_name}.+?)(\s+\w+=|\s*$)"""
+    """\Wcn2=({alert_id}\d{1,100})""",
+    """\Wcs1=({alert_name}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wsproc=({process_name}.+?)(\s{1,100}\w+=|\s{0,100}$)"""
   ]
   SOAR {
     IncidentType = "malware"

@@ -10,13 +10,13 @@ Name = windows-rdp-login
   Conditions = [ """Microsoft-Windows-TerminalServices-LocalSessionManager""", """<EventID>21<""" ]
   Fields = [
     """exabeam_host=({host}[\w\-.]+)""",
-    """<TimeCreated SystemTime=('+|"+)({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """<EventID>({event_code}\d+)<""",
-    """<Execution ProcessID='({process_id}\d+)'\s+ThreadID='({thread_id}\d+)'""",
+    """<TimeCreated SystemTime=('+|"{1,20})({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
+    """<EventID>({event_code}\d{1,100})<""",
+    """<Execution ProcessID='({process_id}\d{1,100})'\s{1,100}ThreadID='({thread_id}\d{1,100})'""",
     """<Computer>({dest_host}[^<]+)<""",
-    """<Security UserID=('+|"+)({user_sid}[^'"]+)'""",
+    """<Security UserID=('+|"{1,20})({user_sid}[^'"]+)'""",
     """<User>(({domain}\S+)\\+)?({user}[^<]+)<""",
-    """<SessionID>({session_id}\d+)<""",
+    """<SessionID>({session_id}\d{1,100})<""",
     """<Address>({src_ip}[a-fA-F\d.-]+)<""",
   ]
 }

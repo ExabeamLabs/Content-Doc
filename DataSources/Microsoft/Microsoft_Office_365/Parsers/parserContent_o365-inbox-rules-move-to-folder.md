@@ -17,8 +17,8 @@ Name = o365-inbox-rules-move-to-folder
     """msg=({additional_info}.+?)\srequest=""",
     """UserId":"({user_email}[^"\\]+@({user_domain}[^"]+))""",
     """destinationServiceName=({app}.+?)\sdevice""",
-    """UserId":"(\\.+)?\/({user_fullname}[^,\\"]+)\\"\s*on behalf""",
-    """UserId":"(\\.+)?\/({user_lastname}[^,]+),\s*({user_firstname}[^\\"]+)\\"\s*on behalf"""
+    """UserId":"(\\.+)?\/({user_fullname}[^,\\"]+)\\"\s{0,100}on behalf""",
+    """UserId":"(\\.+)?\/({user_lastname}[^,]+),\s{0,100}({user_firstname}[^\\"]+)\\"\s{0,100}on behalf"""
     """"SubjectOrBodyContainsWords":"({filter_key_words}[^"]+)"""
   ]
   DupFields = ["user_domain->email_domain"]

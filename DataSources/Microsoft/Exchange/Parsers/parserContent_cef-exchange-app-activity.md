@@ -10,14 +10,14 @@ Name = cef-exchange-app-activity
     Conditions = [ """|Skyformation|SkyFormation Cloud Apps Security|""", """flexString1=HardDelete """, """request=Success""" ]
     Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+\w)""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}\w)""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
-    """\Wsuser=({user}.+?)\s+(\w+=|$)""",
-    """\Wfname=({object}.+?)\s+(\w+=|$)""",
-    """\WsourceServiceName=({app}.+?)\s+(\w+=|$)""",
-    """\WflexString1=({activity}.+?)\s+(\w+=|$)""",
-    """\Wmsg=({additional_info}.+?)\s+(\w+=|$)""",
-    """\WdestinationServiceName =({event_subtype}.+?)\s+(\w+=|$)""",
+    """\Wsuser=({user}.+?)\s{1,100}(\w+=|$)""",
+    """\Wfname=({object}.+?)\s{1,100}(\w+=|$)""",
+    """\WsourceServiceName=({app}.+?)\s{1,100}(\w+=|$)""",
+    """\WflexString1=({activity}.+?)\s{1,100}(\w+=|$)""",
+    """\Wmsg=({additional_info}.+?)\s{1,100}(\w+=|$)""",
+    """\WdestinationServiceName =({event_subtype}.+?)\s{1,100}(\w+=|$)""",
   ]
   DupFields = [ "user->user_email" ]
 }

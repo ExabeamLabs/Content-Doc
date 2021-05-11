@@ -14,7 +14,7 @@ Name = fireeye-mps-json-unformatted-alert
     """src:[\s\w:\-\.]+?host:\s({src_host}[\w\-\.]+)""",
     """dst:[\s\w:\-\.]+?ip:\s({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """dst:[\s\w:\-\.]+?host:\s({dest_host}[\w\-\.]+)""",
-    """alert\s\(id:({alert_id}\d+)\,\s+?name:({alert_type}[^)]+)""",
+    """alert\s\(id:({alert_id}\d{1,100})\,\s{1,100}?name:({alert_type}[^)]+)""",
     """malware\s\(name:({alert_name}[^)]+)""",
     """severity:\s({alert_severity}\w+)""",
     """occurred:\s({time}\d{4}-\d{2}-\d{2}( |T)\d{2}:\d{2}:\d{2}Z?)"""

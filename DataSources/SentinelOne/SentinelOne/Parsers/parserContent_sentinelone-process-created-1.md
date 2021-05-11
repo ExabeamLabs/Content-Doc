@@ -6,7 +6,7 @@ Name = sentinelone-process-created-1
   Conditions = [ """"SentinelOne"""", """Deep Visibility Endpoint""", """processCreation {""" ]
   Fields = ${SentinelOneParserTemplates.sentinelone-activity.Fields} [
     """({event_name}processCreation)""",
-    """commandLine:\s*\\?["\\]*"+({command_line}[^"]+?)\\*"""",
+    """commandLine:\s{0,100}\\?["\\]*"{1,20}({command_line}[^"]+?)\\*"""",
   ]
 }
 ```

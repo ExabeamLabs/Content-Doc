@@ -5,7 +5,7 @@ Name = s-cyberark-activity-1
   DataType = "remote-logon"
   Conditions = [ """|Window Title|""", """|Operating System|""" ]
   Fields = ${CyberArkParserTemplates.cyberark-events-1.Fields} [
-    """({time}\d+-\d+-\d+T\d+:\d+:\d+Z)\s+({host}[^\s]+)\s+\|({user}[^\|]+)"""
+    """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}Z)\s{1,100}({host}[^\s]+)\s{1,100}\|({user}[^\|]+)"""
     ]
  }
 ```

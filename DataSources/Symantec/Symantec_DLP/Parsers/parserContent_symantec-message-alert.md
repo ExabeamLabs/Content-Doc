@@ -11,7 +11,7 @@ Name = symantec-message-alert
   Fields = [
     """ocurred_on=({time}.+)\s(PM|AM|am|pm|Am|Pm), reported""",
     """sender=(?!\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(N\/A|({user_email}[^,]+))""",
-    """incident_id=({alert_id}\d+)""",
+    """incident_id=({alert_id}\d{1,100})""",
     """\sprotocol=({alert_type}[^,]+)""",
     """\spolicy=({alert_type}[^,]+)""",
     """\sseverity=({alert_severity}[^,]+)""",
@@ -19,7 +19,7 @@ Name = symantec-message-alert
     """\sdlp_host=({host}[^,]+)""",
     """blocked=({outcome}[^,]+)""",
     """recipients=({target}.+), severity=""",
-    """file_name=({file_name}[^,]+)\s*""",
+    """file_name=({file_name}[^,]+)\s{0,100}""",
     """endpoint_machine_ip=({src_ip}[^,]+)""",
     """endpoint_user_id=({domain}[^\\]+)\\({user}[^,]+)"""
    ]

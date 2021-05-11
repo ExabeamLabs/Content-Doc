@@ -13,17 +13,17 @@ Name = cef-cas-security-alert
     """type":"discovery_ip","label":"({src_ip}[a-fA-F\d.:]+)"""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
     """type":"discovery_user","label":"(|({user_email}[^@",]+?@[^@",]+?)|(({domain}[^"\/]+)\/)?({user}[^",]+?))"""",
-    """\Wsuser=(|({user_email}[^@=]+?@[^@=]+)|({uid}(\w+\-){4}\w+)|({user}[^=]+?))(\s+\w+=|\s*$)""",
-    """"timestamp":({time}\d+)""",
-    """"description":"(|\s*({additional_info}[^\}]+?))\s*",""",
+    """\Wsuser=(|({user_email}[^@=]+?@[^@=]+)|({uid}(\w+\-){4}\w+)|({user}[^=]+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """"timestamp":({time}\d{1,100})""",
+    """"description":"(|\s{0,100}({additional_info}[^\}]+?))\s{0,100}",""",
     """"title":"({alert_name}[^"]+)""",
     """"URL":"({malware_url}[^"]+)""",
-    """"severityValue":({alert_severity}\d+)""",
+    """"severityValue":({alert_severity}\d{1,100})""",
     """"_id":"({alert_id}[^"]+)""",
     """"policyType":"({alert_type}[^"]+)""",
-    """"threatScore"+:({threat_score}\d+)""",
+    """"threatScore"{1,20}:({threat_score}\d{1,100})""",
     """shost=({country_code}[^=]+?)\s\w+=""",
-    """\srequestClientApplication=({app}[^=]+?)\s*\w+="""
+    """\srequestClientApplication=({app}[^=]+?)\s{0,100}\w+="""
   ]
 }
 ```

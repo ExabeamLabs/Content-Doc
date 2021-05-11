@@ -13,14 +13,14 @@ Name = emc-syslog-4648
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """__li_source_path="({host}[^"]+)"""",
     """({event_code}4648)""",
-    """Subject:\s+Security ID:\s+({user_sid}[^\s]+)""",
-    """Subject:.+?Account\sName:\s+(?:-|({user}.+?))\s+Account\sDomain:\s+(?:-|({domain}[^\s]+))\s+Logon\sID:\s+({logon_id}[^\s]+)\s+""",
-    """Used:\s+Account\sName:\s+({account}[^\s]+)\s+Account\sDomain:\s+({account_domain}[^\s]+)\s+"""
-    """Target\sServer\sName:\s+({dest_host}[^\s+]+)""",
-    """Process ID:\s+({process_id}\w+)\s+Process Name:""",
-    """Process Name:\s+(?: |({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?)))\s+Network Information:""",
-    """Network Address:\s+(?:-|({src_ip}[\d\.]+))""",
-    """Additional Information:\s+({dest_service}[^\s]+)\s+Process Information:"""
+    """Subject:\s{1,100}Security ID:\s{1,100}({user_sid}[^\s]+)""",
+    """Subject:.+?Account\sName:\s{1,100}(?:-|({user}.+?))\s{1,100}Account\sDomain:\s{1,100}(?:-|({domain}[^\s]+))\s{1,100}Logon\sID:\s{1,100}({logon_id}[^\s]+)\s{1,100}""",
+    """Used:\s{1,100}Account\sName:\s{1,100}({account}[^\s]+)\s{1,100}Account\sDomain:\s{1,100}({account_domain}[^\s]+)\s{1,100}"""
+    """Target\sServer\sName:\s{1,100}({dest_host}[^\s]+)""",
+    """Process ID:\s{1,100}({process_id}\w+)\s{1,100}Process Name:""",
+    """Process Name:\s{1,100}(?: |({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?)))\s{1,100}Network Information:""",
+    """Network Address:\s{1,100}(?:-|({src_ip}[\d\.]+))""",
+    """Additional Information:\s{1,100}({dest_service}[^\s]+)\s{1,100}Process Information:"""
   ]
   DupFields = ["directory->process_directory"]
 }

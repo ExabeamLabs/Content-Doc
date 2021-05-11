@@ -9,7 +9,7 @@ Name = azure-app-activity-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
   Conditions = [""""activityDisplayName":"Update user"""", """"operationType":"Update"""", """"activityDateTime":"""", """StrongAuthenticationUserDetails""", """VoiceOnlyPhoneNumber""" ]
   Fields = [
-    """"activityDateTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+[+-]\d\d:\d\d)"""",
+    """"activityDateTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}[+-]\d\d:\d\d)"""",
     """exabeam_host=({host}[^\s]+)""",
     """"result":"({outcome}[^"]+)"""",
     """"activityDisplayName":"({event_name}[^"]+)"""",

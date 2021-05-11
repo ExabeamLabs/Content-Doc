@@ -6,7 +6,5 @@ Name = sentinelone-file-modify-1
   Conditions = [ """"SentinelOne"""", """Deep Visibility Endpoint""", """fileModification {""" ]
   Fields = ${SentinelOneParserTemplates.sentinelone-activity.Fields} [
     """({event_name}fileModification)""",
-    """type"+:"+file"+,"+name"+:"+({file_path}({file_parent}[^"]+?)[\\\/]*({file_name}[^\\\/"]+?(\.({file_ext}[^\.\s"\\\/]+))?))"""",
-  ]
-}
+    """type"{1,20}:"{1,20}file"{1,20}
 ```

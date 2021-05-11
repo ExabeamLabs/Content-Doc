@@ -9,10 +9,10 @@ Name = opendj-auth-uid
   TimeFormat = "dd/MMM/yyyy:HH:mm:ss Z"
   Conditions = [ """uid=""", """ REQ conn=""", """op=""", """msgID=""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """\[({time}\d\d\/\w+\/\d\d\d\d:\d\d:\d\d:\d\d [-\+]\d+)\]""",
-    """conn=({conn_id}\d+)""",
-    """uid=({user_uid}\d+)"""
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """\[({time}\d\d\/\w+\/\d\d\d\d:\d\d:\d\d:\d\d [-\+]\d{1,100})\]""",
+    """conn=({conn_id}\d{1,100})""",
+    """uid=({user_uid}\d{1,100})"""
   ]
 }
 ```

@@ -18,8 +18,8 @@ Name = cef-cyberark-security-alert-1
       """dhost=((None)|({dest_host}[^\s]+))""",
       """duser=((None)|({additional_info}[^\s\(]+))""",
       """cs2=({alert_id}[^\s]+)""",
-      """CEF.+?\|.+?\|({alert_type}[^\|]+)""",
-      """CEF.+?\|.+?\|.+?\|.+?\|.+?\|({alert_name}[^\|]+)\|({alert_severity}[^\|]+)"""
+      """CEF[^|]+?\|[^|]+?\|({alert_type}[^\|]+)""",
+      """CEF[^|]+?\|[^|]+?\|[^|]+?\|[^|]+?\|[^|]+?\|({alert_name}[^\|]+)\|({alert_severity}[^\|]+)"""
    ]
 }
 ```

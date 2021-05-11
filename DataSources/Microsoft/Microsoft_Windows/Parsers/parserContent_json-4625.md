@@ -11,8 +11,8 @@ Name = json-4625
     Fields = [
       """({event_name}An account failed to log on)""",
       """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """"EventReceivedTime":\s*({time}\d+)""",
-      """"timestamp":\s*({time}\d+)""",
+      """"EventReceivedTime":\s{0,100}({time}\d{1,100})""",
+      """"timestamp":\s{0,100}({time}\d{1,100})""",
       """"(Hostname|MachineName)":"({host}[^"]*)""",
       """({event_code}4625)""",
       """"SubjectUserSid":"({user_sid}[^"]+)""",
@@ -23,7 +23,7 @@ Name = json-4625
       """"TargetDomainName":"({domain}[^."]+)""",
       """"SubStatus":"({result_code}[^"]+)""",
       """"WorkstationName":"({src_host_windows}[^"]+)""",
-      """"LogonProcessName":"({auth_process}[^."]+?)\s*"""",
+      """"LogonProcessName":"({auth_process}[^."]+?)\s{0,100}"""",
       """"AuthenticationPackageName":"({auth_package}[^"]+)""",
       """"IpAddress":"(?:-|({src_ip}[^"]+))"""
       """"KeyLength":"({key_length}[^"]+)""",

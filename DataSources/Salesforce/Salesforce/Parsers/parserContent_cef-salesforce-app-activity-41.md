@@ -11,12 +11,12 @@ Name = cef-salesforce-app-activity-41
   Fields = [
     """({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ) \S+ Skyformation -""",
     """([^\|]*\|){5}({activity}[^\|]+)""",
-    """\Wsuser=({user}.+?)\s+(\w+=|$)""",
-    """\Wsuser=({user_email}[^@\s;]+?@[^@\s;]+)\s*(\w+=|$)""",
-    """\Wfname=({object}.+?)\s+(\w+=|$)""",
+    """\Wsuser=({user}.+?)\s{1,100}(\w+=|$)""",
+    """\Wsuser=({user_email}[^@\s;]+?@[^@\s;]+)\s{0,100}(\w+=|$)""",
+    """\Wfname=({object}.+?)\s{1,100}(\w+=|$)""",
     """\Wcs1=\{({new_value}[^\}]+)""",
     """\Wcs2=\{({old_value}[^\}]+)""",
-    """\WdestinationServiceName=({app}.+?)\s*(\w+=|$)""",
+    """\WdestinationServiceName=({app}.+?)\s{0,100}(\w+=|$)""",
   ]
   DupFields = [ "object->resource" ]
 }

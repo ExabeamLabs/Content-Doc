@@ -9,8 +9,8 @@ Name = ordr-json-alert
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """: WARNING [""", """] The device (""", """) with severity level """, """"dstIp":""", """"peerId":""" ]
   Fields = [
-    """"timestamp":\s*"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """"timestamp":\s{0,100}"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """"srcHost": "([\d\w:]+|({host}[^"]+))"""",
     """"severityLevel":\s"({alert_severity}[^"]+)"""",
     """"alarmHash":\s"({md5_sum}[^"]+)"""",
@@ -18,9 +18,9 @@ Name = ordr-json-alert
     """"alarmCategory":\s"({alert_type}[^"]+)"""",
     """"dstIp":\s"({dest_ip}[^"]+)"""",
     """"clientId":\s"({dest_mac}[^"]+)"""",
-    """"dstPort":\s*({dest_port}\d+)""",
-    """"srcPort":\s*({src_port}\d+)""",
-    """"protocol":\s({protocol}\d+)""",
+    """"dstPort":\s{0,100}({dest_port}\d{1,100})""",
+    """"srcPort":\s{0,100}({src_port}\d{1,100})""",
+    """"protocol":\s({protocol}\d{1,100})""",
     """"srcIp":\s"({src_ip}[^"]+)"""",
     """"srcMac":\s"({src_mac}[^"]+)""""
   ]

@@ -11,11 +11,11 @@ Name = s-azure-pim-activity
  Fields = [
     """({service}PIM)""",
     """activityDateTime": "({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
     """operationType": "({activity}[^"]+)""",
     """Microsoft.Authorization/roleDefinitions/({role}[^"\/]+)""",
     """activityDisplayName": "({additional_info}[^"]+)""",
-    """"user": ["\w\s\{\:\-\,]+displayName": "({user_lastname}[^,":]+),\s*({user_firstname}[^"]+)""",
+    """"user": ["\w\s\{\:\-\,]+displayName": "({user_lastname}[^,":]+),\s{0,100}({user_firstname}[^"]+)""",
     """"user": ["\w\s\{\:\-\,]+userPrincipalName": "({user_email}.+?@[^"]+)""""
     """"user": \{.+?"id": "({user}[^"]+)""",
     """Microsoft.Authorization/roleDefinitions/({role}[^"\/\\]+)""",

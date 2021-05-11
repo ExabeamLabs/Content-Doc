@@ -9,23 +9,23 @@ Name = logstash-4624
     TimeFormat = "MM/dd/yyyy hh:mm:ss a"
     Conditions = ["An account was successfully logged on", """"event_id":"4624"""", """"new_logon-LogonID":""""]
     Fields = [
-      """"time":"({time}\d+/\d+/\d+ \d+:\d+:\d+ (am|AM|pm|PM))""""
-      """"host":"({host}[^"]+)\s*"""
+      """"time":"({time}\d{1,100}/\d{1,100}/\d{1,100} \d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM))""""
+      """"host":"({host}[^"]+)\s{0,100}"""
       """({event_name}An account was successfully logged on)""",
       """({event_code}4624)""",
-      """"logon_type":"\s*({logon_type}\d+)""",
-      """"new_logon-AccountName":"\s*({user}[^"]+)\s*""""
-      """"new_logon-AccountDomain":"\s*({domain}[^"]+)\s*""""
-      """"process_information-ProcessName":"(-|\s*({process}[^"]+))\s*""""
-      """"network_information-WorkstationName":"\s*(-|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|({src_host_windows}[^"]+))\s*""""
-      """"network_information-SourceNetworkAddress":"\s*(?:-|({src_ip}[\w:.]+))\s*""""
-      """"detailed_authentication_information-LogonProcess":"\s*({auth_process}[^"]+)\s*""""
-      """"detailed_authentication_information-AuthenticationPackage":"\s*({auth_package}[^"]+)\s*""""
-      """"new_logon-LogonID":"\s*({logon_id}[^"]+)\s*""""
-      """"new_logon-SecurityID":"\s*({user_sid}[^"]+)\s*"""",
+      """"logon_type":"\s{0,100}({logon_type}\d{1,100})""",
+      """"new_logon-AccountName":"\s{0,100}({user}[^"]+)\s{0,100}""""
+      """"new_logon-AccountDomain":"\s{0,100}({domain}[^"]+)\s{0,100}""""
+      """"process_information-ProcessName":"(-|\s{0,100}({process}[^"]+))\s{0,100}""""
+      """"network_information-WorkstationName":"\s{0,100}(-|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|({src_host_windows}[^"]+))\s{0,100}""""
+      """"network_information-SourceNetworkAddress":"\s{0,100}(?:-|({src_ip}[\w:.]+))\s{0,100}""""
+      """"detailed_authentication_information-LogonProcess":"\s{0,100}({auth_process}[^"]+)\s{0,100}""""
+      """"detailed_authentication_information-AuthenticationPackage":"\s{0,100}({auth_package}[^"]+)\s{0,100}""""
+      """"new_logon-LogonID":"\s{0,100}({logon_id}[^"]+)\s{0,100}""""
+      """"new_logon-SecurityID":"\s{0,100}({user_sid}[^"]+)\s{0,100}"""",
       """"cmpny.source.ip":"({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
-      """"subject-SecurityID":"\s*({subject_sid}[^"]+)\s*""""
-      """KeyLength":"\s*({key_length}[^"]+)\s*""""
+      """"subject-SecurityID":"\s{0,100}({subject_sid}[^"]+)\s{0,100}""""
+      """KeyLength":"\s{0,100}({key_length}[^"]+)\s{0,100}""""
     ]
     DupFields = ["src_host_windows->dest_host", "user->account"]
   }

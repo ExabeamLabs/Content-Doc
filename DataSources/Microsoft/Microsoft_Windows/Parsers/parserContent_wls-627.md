@@ -12,14 +12,14 @@ Name = wls-627
       """({event_name}Change Password Attempt)""",
       """exabeam_host=({host}[\w.\-]+)""",
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """EventID="+({event_code}[^"]+)"""",
-      """EventRecordID="+({record_id}[^"]+)"""",
-      """CallerDomain="+({domain}[^"]+)"""",
-      """CallerLogonId="+\([^,]+,({logon_id}[^\)]+)"""",
-      """CallerUserName="+({user}[^"]+)"""",
-      """TargetAccountID="+\%\{({target_user_sid}[^}]+)\}"""",
-      """TargetAccountName="+({target_user}[^"]+)"""",
-      """TargetDomain="+({target_domain}[^"]+)""""
+      """EventID="{1,20}({event_code}[^"]+)"""",
+      """EventRecordID="{1,20}({record_id}[^"]+)"""",
+      """CallerDomain="{1,20}({domain}[^"]+)"""",
+      """CallerLogonId="{1,20}\([^,]+,({logon_id}[^\)]+)"""",
+      """CallerUserName="{1,20}({user}[^"]+)"""",
+      """TargetAccountID="{1,20}\%\{({target_user_sid}[^}]+)\}"""",
+      """TargetAccountName="{1,20}({target_user}[^"]+)"""",
+      """TargetDomain="{1,20}({target_domain}[^"]+)""""
     ]
     DupFields=[ "host->dest_host" ]
   }

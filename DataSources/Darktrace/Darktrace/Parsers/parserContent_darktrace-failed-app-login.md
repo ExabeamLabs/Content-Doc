@@ -11,12 +11,12 @@ Name = darktrace-failed-app-login
  Fields =[
    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
    """exabeam_host=({host}[^\s]+)""",
-   """"+username"+:"+({user}[^"]+)""",
-   """"+endpoint"+:"+\/*({activity}[^"]+)""",
-   """"+method"+:"+({method}[^"]+)"""
-   """"+ip"+:"+\/*({src_ip}[^"]+)""",
-   """"+status"+:({result_code}\d+)""",
-   """"+description"+:"+({additional_info}[^"]+)"""
+   """"{1,20}username"{1,20}:"{1,20}({user}[^"]+)""",
+   """"{1,20}endpoint"{1,20}:"{1,20}\/*({activity}[^"]+)""",
+   """"{1,20}method"{1,20}:"{1,20}({method}[^"]+)"""
+   """"{1,20}ip"{1,20}:"{1,20}\/*({src_ip}[^"]+)""",
+   """"{1,20}status"{1,20}:({result_code}\d{1,100})""",
+   """"{1,20}description"{1,20}:"{1,20}({additional_info}[^"]+)"""
    ]
 }
 ```

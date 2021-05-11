@@ -10,15 +10,15 @@ Name = cef-cyberark-password-change-1
   Conditions = [  """|Cyber-Ark|Vault|""", """|CPM Change Password|""", """Safe""" ]
   Fields = [
     """\d\d:\d\d:\d\dZ? ({host}[\w\-.]+) CEF""",
-    """\srt=({time}\d+)(\s+\w+=|\s*$)""",
-    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)\s\w+\s+CEF:""",
-    """\sdvc="?({host}[^"\s]+)"?(\s+\w+=|\s*$)""",
-    """\sdvchost="?({host}[^"\s]+)"?(\s+\w+=|\s*$)""",
-    """\ssrc="?({src_ip}[^"\s]+)"?(\s+\w+=|\s*$)""",
-    """\sshost="?(?:({src_ip}[A-Fa-f:\d.]+)|({src_host}[^"\s\=]+))"?(\s+\w+=|\s*$)""",
+    """\srt=({time}\d{1,100})(\s{1,100}\w+=|\s{0,100}$)""",
+    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)\s\w+\s{1,100}CEF:""",
+    """\sdvc="?({host}[^"\s]+)"?(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sdvchost="?({host}[^"\s]+)"?(\s{1,100}\w+=|\s{0,100}$)""",
+    """\ssrc="?({src_ip}[^"\s]+)"?(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sshost="?(?:({src_ip}[A-Fa-f:\d.]+)|({src_host}[^"\s\=]+))"?(\s{1,100}\w+=|\s{0,100}$)""",
     """\sfname="?({domain}[^"\\]+)\\+[^"]+"""",
-    """\ssuser="?(({domain}[^\\="]+)(\\)+)?({user}[^"]+?)"?(\s+\w+=|\s*$)""",
-    """\sduser="?(({domain}[^\\="]+)(\\)+)?({user}[^"]+?)"?\s+\w+=""",
+    """\ssuser="?(({domain}[^\\="]+)(\\)+)?({user}[^"]+?)"?(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sduser="?(({domain}[^\\="]+)(\\)+)?({user}[^"]+?)"?\s{1,100}\w+=""",
     """({app}Cyber-Ark)"""
   ]
 }

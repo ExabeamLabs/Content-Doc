@@ -9,10 +9,10 @@ Name = o365-mal-url-click
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """"Workload""", """"ResultStatus""", """"Operation""", """MaliciousUrlClick""", """AlertEntityGenerated""", """dproc=management-general""" ]
   Fields = [
-    """"CreationTime\\*"+:[\s\\]*"+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
+    """"CreationTime\\*"{1,20}:[\s\\]*"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[^\s]+)""",
-    """"Operation\\*"+:[\s\\]*"+({activity}[^"\\\.]*)""",
-    """requestClientApplication=({app}.+?)\s+(\w+=|$)""",
+    """"Operation\\*"{1,20}:[\s\\]*"{1,20}({activity}[^"\\\.]*)""",
+    """requestClientApplication=({app}.+?)\s{1,100}(\w+=|$)""",
     """"AlertEntityId[\\"]+:[\\"]+({malware_url}[^"]+)""" 
     """"ResultStatus[\\"]+:[\\"]+({outcome}[^"\\\}\{,:]+)""" 
     """"Category[\\"]+:[\\"]+({category}[^"\\\}\{,:]+)""" 

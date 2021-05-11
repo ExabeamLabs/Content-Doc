@@ -9,12 +9,12 @@ Name = cef-netscaler-aaatm-login
   DataType = "remote-login"
   Conditions = [ """AAATM LOGIN""" ]
   Fields = [
-    """User\s+({domain}[^\\]+)\\+({user}[^\s]+)"""
-    """Client_ip\s+({src_ip}[^\s]+)""",
-    """Vserver\s+(127.0.0.1|({host}[^:\s]+))"""
-    """Browser_type\s+"+({user_agent}[^"]+)""",
-    """SessionId:\s+({session_id}\d+)"""
-    """rt=({time}\d+)"""
+    """User\s{1,100}({domain}[^\\]+)\\+({user}[^\s]+)"""
+    """Client_ip\s{1,100}({src_ip}[^\s]+)""",
+    """Vserver\s{1,100}(127.0.0.1|({host}[^:\s]+))"""
+    """Browser_type\s{1,100}"{1,20}({user_agent}[^"]+)""",
+    """SessionId:\s{1,100}({session_id}\d{1,100})"""
+    """rt=({time}\d{1,100})"""
   ]
   DupFields = ["host->dest_host"]
 }

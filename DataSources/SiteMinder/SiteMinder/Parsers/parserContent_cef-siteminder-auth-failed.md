@@ -9,7 +9,7 @@ Name = cef-siteminder-auth-failed
   TimeFormat = "epoch"
   Conditions = [ """|Computer Associates|""", """SiteMinder|""", """categoryOutcome=/Failure""" ]
   Fields = [
-    """rt=({time}\d+)""",
+    """rt=({time}\d{1,100})""",
     """dvc=({host}[a-fA-F:\d.]+)""",
     """dvchost=({host}[\w\-.]+)""",
     """shost=({src_host}[\w\-.]+)""",

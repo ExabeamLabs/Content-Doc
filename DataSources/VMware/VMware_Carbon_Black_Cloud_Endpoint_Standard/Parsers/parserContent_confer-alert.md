@@ -10,17 +10,17 @@ Name = confer-alert
   Conditions = [ """"threatInfo"""",""""indicators"""",""""summary"""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """eventTime"+:\s*({time}\d+)""",
-    """email"+:\s*"+(({user_email}[^@"]+@[^"]+)|((({domain}[^\\"]+)\\+)?({user}[^"]+)))"""",
-    """deviceName"+:\s*"+([^\\"]+\\+)?({src_host}[^"]+)"""",
-    """ruleName"+:\s*"+(Confer - )?({alert_name}[^"]+)"""",
-    """type"+:\s*"+({alert_type}[^"]+)"""",
-    """incidentId"+:\s*"+({alert_id}[^"]+)"""",
-    """score"+:\s*({alert_severity}\d+)""",
-    """summary"+:\s*"+({additional_info}[^"]+)"""",
-    """eventDescription"+:\s*"+({additional_info}[^"]+)"""",
-    """deviceType"+:\s*"+({os}[^"]+)"""",
-    """externalIpAddress"+:\s*"+({dest_ip}[^"]+)"""",
+    """eventTime"{1,20}:\s{0,100}({time}\d{1,100})""",
+    """email"{1,20}:\s{0,100}"{1,20}(({user_email}[^@"]+@[^"]+)|((({domain}[^\\"]+)\\+)?({user}[^"]+)))"""",
+    """deviceName"{1,20}:\s{0,100}"{1,20}([^\\"]+\\+)?({src_host}[^"]+)"""",
+    """ruleName"{1,20}:\s{0,100}"{1,20}(Confer - )?({alert_name}[^"]+)"""",
+    """type"{1,20}:\s{0,100}"{1,20}({alert_type}[^"]+)"""",
+    """incidentId"{1,20}:\s{0,100}"{1,20}({alert_id}[^"]+)"""",
+    """score"{1,20}:\s{0,100}({alert_severity}\d{1,100})""",
+    """summary"{1,20}:\s{0,100}"{1,20}({additional_info}[^"]+)"""",
+    """eventDescription"{1,20}:\s{0,100}"{1,20}({additional_info}[^"]+)"""",
+    """deviceType"{1,20}:\s{0,100}"{1,20}({os}[^"]+)"""",
+    """externalIpAddress"{1,20}:\s{0,100}"{1,20}({dest_ip}[^"]+)"""",
     """applicationName":\s"({process_name}[^"]+)""",
   ]
 }

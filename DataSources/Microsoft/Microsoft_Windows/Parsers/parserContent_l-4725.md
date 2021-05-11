@@ -13,11 +13,11 @@ Name = l-4725
     	      """SystemTime=\'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
               """<Computer>({host}[^<]+)</Computer>""",
               """<EventID>({event_code}[^<]+)</EventID>""",
-              """Subject:.+?Security ID:\s*({user_sid}.+?)\s*Account Name:""",
-              """Subject:.+?Account Name:\s*({user}.+?)\s*Account Domain:\s*({domain}.+?)\s*Logon ID""",
-              """Logon ID:\s*({logon_id}.+?)\s*Target Account:""",
-              """Target Account:\s*Security ID:\s*({target_user_sid}.+?)\s*Account Name:\s*(?=\w)({target_user}.+?)\s*Account Domain""",
-              """Target Account.+?Account Domain:\s*(?=\w)({target_domain}.+?)\s*</EventData>"""
+              """Subject:.+?Security ID:\s{0,100}({user_sid}.+?)\s{0,100}Account Name:""",
+              """Subject:.+?Account Name:\s{0,100}({user}.+?)\s{0,100}Account Domain:\s{0,100}({domain}.+?)\s{0,100}Logon ID""",
+              """Logon ID:\s{0,100}({logon_id}.+?)\s{0,100}Target Account:""",
+              """Target Account:\s{0,100}Security ID:\s{0,100}({target_user_sid}.+?)\s{0,100}Account Name:\s{0,100}(?=\w)({target_user}.+?)\s{0,100}Account Domain""",
+              """Target Account.+?Account Domain:\s{0,100}(?=\w)({target_domain}.+?)\s{0,100}</EventData>"""
   ]
   DupFields = [ "host->dest_host" ]
 }

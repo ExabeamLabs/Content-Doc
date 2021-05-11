@@ -10,15 +10,15 @@ Name = json-ccure-badge-access-2
     Conditions = [""""badge_id":""", """"user":""", """"location_city":""", """"location_building":""", """"location_door":""", """"location_full":""", """"outcome":""", """"transaction_time_gmt":""", """"direction":"""]
     Fields = [
       """exabeam_host=({host}[\w.\-]+)""",
-      """"transaction_time_gmt":({time}\d+)""",
-      """"user":\s*"({user}[^"]+)"""
-      """"location_door":({location_door}\d+)""",
-      """"location_building":\s*"({location_building}[^"]+)""",
-      """"location_city":\s*"({location_city}[^"]+)""",
-      """"location_full":\s*"({location_full}[^"]+)""",
-      """"outcome":\s*"({outcome}[^"]+)""",
-      """"badge_id":({badge_id}\d+)""",
-      """"direction":\s*"({direction}[^"]+)"""",
+      """"transaction_time_gmt":({time}\d{1,100})""",
+      """"user":\s{0,100}"({user}[^"]+)"""
+      """"location_door":({location_door}\d{1,100})""",
+      """"location_building":\s{0,100}"({location_building}[^"]+)""",
+      """"location_city":\s{0,100}"({location_city}[^"]+)""",
+      """"location_full":\s{0,100}"({location_full}[^"]+)""",
+      """"outcome":\s{0,100}"({outcome}[^"]+)""",
+      """"badge_id":({badge_id}\d{1,100})""",
+      """"direction":\s{0,100}"({direction}[^"]+)"""",
     ]
   }
 ```

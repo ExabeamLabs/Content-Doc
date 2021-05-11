@@ -11,11 +11,11 @@ Name = unix-ssh-login
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\d\d:\d\d:\d\d ({host}[^\s]+) SSH:""",
-    """Listener=({dest_ip}[\da-fA-F:\.]+):({dest_port}\d+),""",
-    """Client=({src_ip}[\da-fA-F:\.]+):({src_port}\d+),""",
+    """Listener=({dest_ip}[\da-fA-F:\.]+):({dest_port}\d{1,100}),""",
+    """Client=({src_ip}[\da-fA-F:\.]+):({src_port}\d{1,100}),""",
     """User=({user}[^>]+)""",
     """Host=({dest_host}[^,]+)""",
-    """SSH: ({event_name}[^<]+)\s+<""",
+    """SSH: ({event_name}[^<]+)\s{1,100}<""",
     """({event_code}SSH)"""
   ]
 }

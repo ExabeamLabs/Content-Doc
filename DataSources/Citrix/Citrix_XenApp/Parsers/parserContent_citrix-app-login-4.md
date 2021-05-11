@@ -9,7 +9,7 @@ Name = citrix-app-login-4
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """"event":"application-start"""", """"system":"Citrix-XenApp"""", """"servername":"""", """"clientname":"""" ]
   Fields = [
-    """"startdate":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)"""",
+    """"startdate":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)"""",
     """"username":"(({user_email}[^@"]+@[^\."]+\.[^"]+)|(({domain}[^\\"]+)\\+)?({user}[^"]+))"""",
     """({event_name}application-start)""",
     """"servername":"({host}[^"]+)"""",

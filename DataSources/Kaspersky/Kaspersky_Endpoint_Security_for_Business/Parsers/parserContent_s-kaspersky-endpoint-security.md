@@ -9,8 +9,8 @@ Name = s-kaspersky-endpoint-security
   TimeFormat = "YYYY-MM-DD HH:mm:ssZ"
   Conditions = [ """Kaspersky Endpoint Security 10 for Windows""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """Result:\s*({outcome}[^:]+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """Result:\s{0,100}({outcome}[^:]+)""",
     """<Row>(<Cell ss:StyleID="TableData"><Data ss:Type=[^\<]+?>(<\/Cell>|[^\<]+?<\/Data><\/Cell>)){5}<Cell ss:StyleID="TableData"><Data ss:Type=[^\<]+?>(({file_parent}[^\<]+?)\\+)?({file_name}[^\<\\]+?(\.({file_ext}[^\<\.\s]+)))<\/Data><\/Cell>""", 
     """<Row>(<Cell ss:StyleID="TableData"><Data ss:Type=[^\<]+?>(<\/Cell>|[^\<]+?<\/Data><\/Cell>)){8}<Cell ss:StyleID="TableData"><Data ss:Type=[^\<]+?>(({domain}[^\<]+)\\+)?({user}[^\<]+)<\/Data><\/Cell>""",
     """<Row>(<Cell ss:StyleID="TableData"><Data ss:Type=[^\<]+?>(<\/Cell>|[^\<]+?<\/Data><\/Cell>)){1}<Cell ss:StyleID="TableData"><Data ss:Type=[^\<]+?>({group}[^\<]+?)<\/Data><\/Cell>""",

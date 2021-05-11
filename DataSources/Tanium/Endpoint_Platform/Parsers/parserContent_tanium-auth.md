@@ -9,9 +9,9 @@ Name = tanium-auth
     TimeFormat = "yyyy-MM-dd HH:mm:ss.SSSZ"
     Conditions = [ """ Tanium """, """Question="Exabeam-Logon-Even-Test"""" ]
     Fields = [
-      """({host}[\w.\-]+)\s+Tanium """,
+      """({host}[\w.\-]+)\s{1,100}Tanium """,
       """\sEndpoint-Name="(-|({dest_host}[^"]+))"""",
-      """\sTimestamp="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d+(\+|\-)\d\d:\d\d)""",
+      """\sTimestamp="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{1,100}(\+|\-)\d\d:\d\d)""",
       """\sTarget-User="(-|({user}[^"]+))"""",
       """\sTarget-Domain="(-|({domain}[^"]+))"""",
       """\sLogon-Result="(-|({outcome}[^"]+))"""",

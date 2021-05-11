@@ -6,7 +6,7 @@ Name = q-aruba-failed-nac-logon-1
   TimeFormat = "yyyy-MM-dd HH:mm:ss-SS"
   Conditions = [ """ Failed Auth """, """Common.NAS-IP-Address=""" ]
   Fields = ${HPEParserTemplates.q-aruba-nac-logon.Fields} [
-    """Common\.Request-Timestamp=({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d-\d+)"""
+    """Common\.Request-Timestamp=({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d-\d{1,100})"""
 ]
 }
 q-aruba-nac-logon = {
@@ -15,8 +15,8 @@ q-aruba-nac-logon = {
   Lms = QRadar
   TimeFormat = "yyyy-MM-dd HH:mm:ssZ"
   Fields = [
-    """Common\.Request-Timestamp=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d(\.\d+)?[\+\-]\d+)""",
-    """\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d,\d+ ({host}[\w\-.]+)""",
+    """Common\.Request-Timestamp=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d(\.\d{1,100})?[\+\-]\d{1,100})""",
+    """\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d,\d{1,100} ({host}[\w\-.]+)""",
     """Common\.Username=(?:({user_type}host)/)?(({domain}[^\\\s,]+)\\+)?(anonymous|({user}[^\\\s,@]+))""",
     """Common\.Username=({user_email}[^\\\s,@]+@[^\\\s,@]+)""",
     """Common\.Service=({network}[^,]+)""",

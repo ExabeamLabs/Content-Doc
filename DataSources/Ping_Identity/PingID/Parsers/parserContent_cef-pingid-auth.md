@@ -10,20 +10,20 @@ Name = cef-pingid-auth
   Conditions= [ """CEF:""", """|GlobalAuth|SSAA|""", """responsetime=""" ]
   Fields=[
     """CEF:([^\|]*\|){3}(|({auth_method}[^\|]+))\|(|({protocol}[^\|]+))\|""",
-    """\Wrt=({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d\.\d+)""",
+    """\Wrt=({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d\.\d{1,100})""",
     """\Wcs3=\(({role}[^=:]+?):({protocol}[^=:]+?)\)""",
-    """\Wresponsetime=({response_time}\d+)""",
-    """\Wduid=(|({subject}.+?))(\s+\w+=|\s*$)""",
+    """\Wresponsetime=({response_time}\d{1,100})""",
+    """\Wduid=(|({subject}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
-    """\Wmsg=(|({outcome}.+?))(\s+\w+=|\s*$)""",
-    """\Wcs1=(|({app}.+?))(\s+\w+=|\s*$)""",
-    """\Wcs2=(|({connection_id}.+?))(\s+\w+=|\s*$)""",
-    """\Wdvchost=(|({host}.+?))(\s+\w+=|\s*$)""",
-    """\Wcs4=(|({adopter_id}.+?))(\s+\w+=|\s*$)""",
-    """\WexternalId=(|tid:({tracking_id}.+?))(\s+\w+=|\s*$)""",
-    """\Wcs5=(|({local_user_id}.+?))(\s+\w+=|\s*$)""",
-    """\Wcs6=(|({attributes}.+?))(\s+\w+=|\s*$)""",
-    """\WSAML_SUBJECT\\=(|({user_email}[^=@]+?@[^=@]+?),?|({user}.+?))(\s+\w+\\=|\s*$)""",
+    """\Wmsg=(|({outcome}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wcs1=(|({app}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wcs2=(|({connection_id}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wdvchost=(|({host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wcs4=(|({adopter_id}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\WexternalId=(|tid:({tracking_id}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wcs5=(|({local_user_id}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wcs6=(|({attributes}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\WSAML_SUBJECT\\=(|({user_email}[^=@]+?@[^=@]+?),?|({user}.+?))(\s{1,100}\w+\\=|\s{0,100}$)""",
   ]
   DupFields = [ "auth_method->activity" ]
 }

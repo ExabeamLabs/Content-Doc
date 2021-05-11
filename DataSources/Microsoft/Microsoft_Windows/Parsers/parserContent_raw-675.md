@@ -12,14 +12,7 @@ Name = raw-675
       """({event_name}Pre-authentication failed)""",
       """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
       """({event_code}675)""",
-      """rn=({record_id}\d+)""",
+      """rn=({record_id}\d{1,100})""",
       """exabeam_host=({host}[\w.\-]+)""",
-      """(?i)(((audit|success|failure)( |_)(success|audit|failure))|information)(\s+|\s*,\s*)({host}[\w.\-]+)""",
-      """({host}[^\/\s]+)\/Security \(675\)""",
-      """User Name:\s*({user}.+?)\s+User ID:\s*(\%\{)?({user_sid}[^\}\s]+)\}?""",
-      """Service Name:\s*\w+\/(?=\w)({domain}.+?)\s+Pre-Authentication""",
-      """Failure Code:\s*({result_code}[\w]+)""",
-      """Client Address:\s*(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)""",
-    ]
-  }
+      """(?i)(((audit|success|failure)( |_)(success|audit|failure))|information)(\s{1,100}|\s{0,100}
 ```

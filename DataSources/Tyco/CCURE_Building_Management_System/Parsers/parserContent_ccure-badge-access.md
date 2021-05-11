@@ -9,12 +9,9 @@ Name = ccure-badge-access
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """"messagetype":"Card""", """"statecode":"""", """"primaryobjectname":""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """"messageutc":"({time}[^"]+)""",
     """"statecode":"({event_name}[^"]+)""",
     """"messagetype":"({outcome}[^"]+)""",
-    """"primaryobjectname":"*(null|({last_name}[^",]+?)\s*,\s*({first_name}[^",]+?))\s*"""",
-    """"secondaryobjectname":"*(null|({location_door}[^"]+))""",
-  ]
-}
+    """"primaryobjectname":"{0,20}(null|({last_name}[^",]+?)\s{0,100}
 ```

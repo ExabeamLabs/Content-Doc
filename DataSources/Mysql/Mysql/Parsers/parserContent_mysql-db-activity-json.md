@@ -10,7 +10,7 @@ Name = mysql-db-activity-json
     TimeFormat = "epoch"
     Conditions = [ """"msg-type":"activity"""", """"query":""" ]
     Fields = [
-      """"date":"({time}\d+)""",
+      """"date":"({time}\d{1,100})""",
       """"user":"({db_user}[^"]+)""",
       """"ip":"({dest_ip}[a-fA-F\d.:]+)""",
       """"host":"({dest_host}[^"]+)""",

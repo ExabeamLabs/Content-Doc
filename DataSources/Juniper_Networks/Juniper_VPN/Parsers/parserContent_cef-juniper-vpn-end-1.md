@@ -9,14 +9,14 @@ Name = cef-juniper-vpn-end-1
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """|Juniper|""", """|Connection not authenticated yet|""" ]
   Fields = [
-	"""\Wrt=({time}\d+)""",
+	"""\Wrt=({time}\d{1,100})""",
 	"""\Wdvchost=({host}[\w\-.]+)""",
 	"""\Wdhost=({dest_host}[\w\-.]+)""",
 	"""\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
 	"""\Wdst=({dest_ip}[A-Fa-f:\d.]+)""",
 	"""\Wsuser=(System|({user}[^\s]+))""",
 	"""\Wshost=({src_host}[\w\-.]+)""",
-    """\Wmsg=({additional_info}.+?)\s+end=""",
+    """\Wmsg=({additional_info}.+?)\s{1,100}end=""",
   ]
 }
 ```

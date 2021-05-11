@@ -9,18 +9,18 @@ Name = cef-trendmicro-dlp-email-alert
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """|Trend Micro|Apex Central|""", """filePath=SMTP""" ]
   Fields = [
-    """rt=({time}\d+)""",
-    """dvc=({host}[^=]+?)\s+\w+=""",
-    """dvchost=+({host}[^=]+?)\s+\w+=""",
-    """ahost=({host}[^=]+?)\s+\w+=""",
-    """src=({src_ip}[a-fA-F\d.:]+?)\s+\w+=""",
-    """agt=({src_ip}[a-fA-F\d.:]+?)\s+\w+=""",
-    """dst=({dest_ip}[a-fA-F\d.:]+?)\s+\w+=""",
-    """dhost=({dest_host}[^=]+?)\s+\w+=""",
+    """rt=({time}\d{1,100})""",
+    """dvc=({host}[^=]+?)\s{1,100}\w+=""",
+    """dvchost=+({host}[^=]+?)\s{1,100}\w+=""",
+    """ahost=({host}[^=]+?)\s{1,100}\w+=""",
+    """src=({src_ip}[a-fA-F\d.:]+?)\s{1,100}\w+=""",
+    """agt=({src_ip}[a-fA-F\d.:]+?)\s{1,100}\w+=""",
+    """dst=({dest_ip}[a-fA-F\d.:]+?)\s{1,100}\w+=""",
+    """dhost=({dest_host}[^=]+?)\s{1,100}\w+=""",
     """suser=({sender}[^@=]+@[^\s;=]+)""",
     """shost=({recipient}[^@=]+@[^\s;=]+)""",
-    """act=(Unknown|({outcome}[^=]+?))\s+\w+=""",
-    """fname=({attachments}[^=]+)\s+\w+="""
+    """act=(Unknown|({outcome}[^=]+?))\s{1,100}\w+=""",
+    """fname=({attachments}[^=]+)\s{1,100}\w+="""
   ]
   DupFields = [ "sender->user_email" ]
 }

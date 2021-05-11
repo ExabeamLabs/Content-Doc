@@ -10,11 +10,11 @@ Name = code42-usb-removed
   Conditions= [ """formattedTimestamp""", """deviceAddress""", """deviceRemoteAddress""", """operatingSystemUser""", """"modular_input_consumption_time":""", """DEVICE_DISAPPEARED""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """"deviceAddress":\s*"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """"deviceAddress":\s*"({src_ip}\w{0,4}:\w{0,4}:\w{0,4}:\w{0,4}:\w{0,4}:\w{0,4}:\w{0,4}:\w{0,4})""",
-    """"deviceRemoteAddress":\s*"({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """"deviceRemoteAddress":\s*"({src_translated_ip}\w{0,4}:\w{0,4}:\w{0,4}:\w{0,4}:\w{0,4}:\w{0,4}:\w{0,4}:\w{0,4})""",
-    """"timestamp":\s*({time}\d\d\d\d\d\d\d\d\d\d)""",
+    """"deviceAddress":\s{0,100}"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """"deviceAddress":\s{0,100}"({src_ip}\w{0,4}:\w{0,4}:\w{0,4}:\w{0,4}:\w{0,4}:\w{0,4}:\w{0,4}:\w{0,4})""",
+    """"deviceRemoteAddress":\s{0,100}"({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """"deviceRemoteAddress":\s{0,100}"({src_translated_ip}\w{0,4}:\w{0,4}:\w{0,4}:\w{0,4}:\w{0,4}:\w{0,4}:\w{0,4}:\w{0,4})""",
+    """"timestamp":\s{0,100}({time}\d\d\d\d\d\d\d\d\d\d)""",
     """"userUid":\s"({user_uid}[^"]+)""",
     """"eventType":\s"({activity}[^"]+)""",
     """"busType":\s"({device_type}[^"]+)""",

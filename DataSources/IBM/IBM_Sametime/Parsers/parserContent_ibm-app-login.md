@@ -9,7 +9,7 @@ Name = ibm-app-login
   TimeFormat = "MMM/dd/yyyy HH:mm:ss a"
   Conditions = [ """ sametime-auth """, ""","SUCCESS",""" ]
   Fields = [
-    """({host}[\w\-.]+)\s+sametime-auth\s+[^"]*"({user}[^\s"]+)","({time}\d+\/\d+\/\d\d\d\d\s+\d+:\d+:\d+\s+(am|AM|pm|PM))","({outcome}[^"]+)","({app}[^"]+)","({src_ip}[A-Fa-f:\d.]+)""",
+    """({host}[\w\-.]+)\s{1,100}sametime-auth\s{1,100}[^"]*"({user}[^\s"]+)","({time}\d{1,100}\/\d{1,100}\/\d\d\d\d\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(am|AM|pm|PM))","({outcome}[^"]+)","({app}[^"]+)","({src_ip}[A-Fa-f:\d.]+)""",
   ]
 }
 ```

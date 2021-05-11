@@ -11,11 +11,11 @@ Name = f5-vpn-user
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\s({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)\s""",
-    """\d\d:\d\d\s+({host}[^\s]+)\s([^\s]+\s)?[^\s]+\[\d+\]""",
+    """\d\d:\d\d\s{1,100}({host}[^\s]+)\s([^\s]+\s)?[^\s]+\[\d{1,100}\]""",
     """hostname="({host}[\w\-.]+)""",
     """"host":\{"name":"({host}[^"]+)""",
-    """\s01490\d+:5:.*?({session_id}[^\s:]+): (Username|Retry)""",
-    """\sUsername\s+'(?:[^\\]+\\+)?({user}[^'\\]+)'"""
+    """\s01490\d{1,100}:5:.*?({session_id}[^\s:]+): (Username|Retry)""",
+    """\sUsername\s{1,100}'(?:[^\\]+\\+)?({user}[^'\\]+)'"""
   ]
 }
 ```

@@ -15,7 +15,7 @@ cef-sap-app-activity = {
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """\|Security Audit Log\|6.0\|({activity_id}[^\|]+)\|({activity}[^\|]+)\|({severity}[^\|]+)"""
     """cat=\/*({category}.*?)\s\w+=""",
@@ -35,7 +35,7 @@ cef-sap-app-activity = {
     """flexString2=({sid}.*?)\s\w+=""",
     """DeviceCustomString4=({client}.*?)\s\w+=""",
     """DeviceCustomString2=({transaction}.*?)\s\w+=""",
-    """cs4=({result_code}\d+)""", 
+    """cs4=({result_code}\d{1,100})""", 
     """amac=({mac}.*?)\s\w+="""
   ]
 

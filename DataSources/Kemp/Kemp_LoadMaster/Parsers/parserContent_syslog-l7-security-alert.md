@@ -10,10 +10,10 @@ Name = syslog-l7-security-alert
   Conditions = [ """ l7log:""", """ Attempted """, """ attack on """ ]
   Fields = [
     """exabeam_host=({host}[\w\.\-]+)""",
-    """\s({host}[\w\.\-]+)\s+\S+\s+\S+\s+l7log:""",
-    """attack on\s+({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\s+from\s+({malware_url}[^\(\s]+)\s+\(({additional_info}.+?)\)""",
-    """\sAttempted\s+({alert_name}.+?)\s+on""",
+    """\s({host}[\w\.\-]+)\s{1,100}\S+\s{1,100}\S+\s{1,100}l7log:""",
+    """attack on\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """\s{1,100}from\s{1,100}({malware_url}[^\(\s]+)\s{1,100}\(({additional_info}.+?)\)""",
+    """\sAttempted\s{1,100}({alert_name}.+?)\s{1,100}on""",
   ]
   DupFields = [ alert_name->alert_type ]
 }

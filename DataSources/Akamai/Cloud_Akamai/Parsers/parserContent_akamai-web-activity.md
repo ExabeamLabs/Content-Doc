@@ -10,19 +10,19 @@ Name = akamai-web-activity
   TimeFormat = "epoch_sec"
   Conditions = [ """"message":{"""", """"reqHost":"""", """"status":"""", """"reqPath":"""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """"start":"({time}\d+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """"start":"({time}\d{1,100})""",
     """"proto":"({protocol}[^"]+)""",
-    """"status":"({result_code}\d+)""",
+    """"status":"({result_code}\d{1,100})""",
     """"cliIP":"({src_ip}[A-Fa-f:\d.]+)""",
-    """"reqPort":"({dest_port}\d+)""",
+    """"reqPort":"({dest_port}\d{1,100})""",
     """"reqHost":"({web_domain}[^"\s]+)""",
     """"reqHost":"[^"\s]*?({top_domain}[^\/\.\s]+(?i)(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)""",
     """"reqMethod":"({method}[^"]+)""",
     """"reqPath":"({uri_path}[^"]+)""",
     """"reqQuery":"({uri_query}[^"]+)""",
     """"edgeIP":"({dest_ip}[A-Fa-f:\d.]+)""",
-    """"bytes":"({bytes}\d+)""",
+    """"bytes":"({bytes}\d{1,100})""",
   ]
 }
 ```

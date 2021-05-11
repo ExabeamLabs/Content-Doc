@@ -9,11 +9,11 @@ Name = unix-failed-logon-12
   TimeFormat = "MMM dd HH:mm:ss yyyy"
   Conditions = [ """Authentication failed for""", """ from """, """SSHS_LOG: """ ]
   Fields = [
-    """({time}\w+\s+\d+ \d\d:\d\d:\d\d \d\d\d\d)""",
+    """({time}\w+\s{1,100}\d{1,100} \d\d:\d\d:\d\d \d\d\d\d)""",
     """\d\d:\d\d:\d\d \d\d\d\d ({host}[^\s]+)""",
     """({event_name}SSHS_LOG)""",
     """Authentication failed for ({user}[^\s]+) from ({src_ip}[a-fA-F:\d\.]+)""",
-    """because of ({failure_reason}[^.]+)\s+"""
+    """because of ({failure_reason}[^.]+)\s{1,100}"""
   ]
   DupFields = [ "host->dest_host" ]
 }

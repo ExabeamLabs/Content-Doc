@@ -11,9 +11,9 @@ Name = s-physical-badge-access-2
     Fields = [
       """exabeam_raw=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """exabeam_host=({host}[^\s]+)""",
-      """exabeam_raw=[^\s]+\s+[^\s]+\s+\d+\s+({employee_id}\d+)\s+({user}[^\s]+)\s+({location_door}.+?)\s+({badge_id}\d+)\s+""",
-      """exabeam_raw=[^\s]+\s+[^\s]+\s+\d+\s+\d+\s+[^\s]+\s+({location_building}[^\s]+)\s+""",
-      """exabeam_raw=[^\s]+\s+[^\s]+\s+\d+\s+\d+\s+[^\s]+\s+[^\s]+\s+({location_city}.+?)\s+\w+-\w+""",
+      """exabeam_raw=[^\s]+\s{1,100}[^\s]+\s{1,100}\d{1,100}\s{1,100}({employee_id}\d{1,100})\s{1,100}({user}[^\s]+)\s{1,100}({location_door}.+?)\s{1,100}({badge_id}\d{1,100})\s{1,100}""",
+      """exabeam_raw=[^\s]+\s{1,100}[^\s]+\s{1,100}\d{1,100}\s{1,100}\d{1,100}\s{1,100}[^\s]+\s{1,100}({location_building}[^\s]+)\s{1,100}""",
+      """exabeam_raw=[^\s]+\s{1,100}[^\s]+\s{1,100}\d{1,100}\s{1,100}\d{1,100}\s{1,100}[^\s]+\s{1,100}[^\s]+\s{1,100}({location_city}.+?)\s{1,100}\w+-\w+""",
       """({outcome}CardAdmitted)"""
     ]
   }

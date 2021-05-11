@@ -9,16 +9,16 @@ Name = cef-sourcefire-estreamer-alert
   TimeFormat = "epoch"
   Conditions = [ """CEF:""","""|Sourcefire|Sourcefire Management Console eStreamer|""" ]
   Fields = [
-      """\srt=({time}\d+)""",
+      """\srt=({time}\d{1,100})""",
       """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sdhost=({src_host}[^\s]+)""",
       """\sshost=({dest_host}[^\s]+)""",
       """\sdst=(?:0.0.0.0|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))""",
       """\ssrc=(?:0.0.0.0|({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))""",
-      """\scategory=({additional_info}.+?)\s+(\w+=|$)""",
-      """\sduser=({user}.+?)\s+(\w+=|$)""",
-      """\sexternalId=({alert_id}\d+)""",
-      """\|Sourcefire\|[^|]*\|[^|]*\|[^|]*\|[^-|]+\-[^\s]+\s+({alert_name}[^|]+)\|""",
+      """\scategory=({additional_info}.+?)\s{1,100}(\w+=|$)""",
+      """\sduser=({user}.+?)\s{1,100}(\w+=|$)""",
+      """\sexternalId=({alert_id}\d{1,100})""",
+      """\|Sourcefire\|[^|]*\|[^|]*\|[^|]*\|[^-|]+\-[^\s]+\s{1,100}({alert_name}[^|]+)\|""",
       """\|Sourcefire\|[^|]*\|[^|]*\|[^|]*\|({alert_type}[^-|]+\-[^\s]+)[^|]+\|""",
       """\|Sourcefire\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|({alert_severity}[^|]+)""",
   ]

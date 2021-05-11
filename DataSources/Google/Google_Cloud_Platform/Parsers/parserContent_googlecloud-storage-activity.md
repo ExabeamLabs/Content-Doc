@@ -9,8 +9,8 @@ Name = googlecloud-storage-activity
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
   Conditions = [ """googleapis.com""", """"serviceName":"storage""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """"callerIp":"({src_ip}[^"]+)""",
     """"({service}storage.googleapis.com)""",
     """"methodName":"({activity}[^"]+)""",
@@ -18,9 +18,5 @@ Name = googlecloud-storage-activity
     """"callerSuppliedUserAgent":"({user_agent}[^"]+)""",
     """"resource".+?location":"({region}[^"]+)""",
     """policyDelta.+?"role":"roles\/({role}[^"\\\/]+)""",
-    """status.+?"code":\d+,"message":"({failure_reason}[^"]+)""",
-    """"resource".+?bucket_name":"({bucket}[^"]+)""",
-    """resource":"[^"]+objects\/({object}[^"\\\/]+)"""
-    ]
-}
+    """status.+?"code":\d{1,100}
 ```

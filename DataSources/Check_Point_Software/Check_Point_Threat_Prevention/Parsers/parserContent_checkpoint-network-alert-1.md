@@ -9,15 +9,15 @@ Name = checkpoint-network-alert-1
   DataType = "network-alert"
   Conditions = [ """CheckPoint""", """product:"""", """action:"Prevent"""" ]
   Fields = [
-    """\Wtime:"({time}\d+)""",
+    """\Wtime:"({time}\d{1,100})""",
     """\W({host}[\w\-.]+) CheckPoint""",
     """\Wsrc:"({src_ip}[A-Fa-f:\d.]+)""",
     """\Wdst:"({dest_ip}[A-Fa-f:\d.]+)""",
     """\Waction:"({action}[^"]+)""",
     """\Wmalware_action:"({malware_action}[^"]+)""",
     """\Wmalware_family:"({malware_family}[^"]+)""",
-    """\Ws_port:"({src_port}\d+)""",
-    """\Wservice:"({dest_port}\d+)""",
+    """\Ws_port:"({src_port}\d{1,100})""",
+    """\Wservice:"({dest_port}\d{1,100})""",
     """\Wproto:"({protocol}[^"]+)""",
     """\Wconfidence_level:"({confidence_level}[A-Fa-f:\d.]+)""",
     """\Wifdir:"({direction}[^"]+)""",

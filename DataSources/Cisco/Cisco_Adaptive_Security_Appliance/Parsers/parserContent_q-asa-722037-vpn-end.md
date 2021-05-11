@@ -9,15 +9,15 @@ Name = q-asa-722037-vpn-end
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ "SVC closing connection:", "-722037" ]
   Fields = [ 
-   """({time}\w+ \d+ \d\d\d\d \d\d:\d\d:\d\d)""",
-   """exabeam_host=(.+?@\s*)?({host}[\w.\-]+)""",
-   """[\s\t]+\d\d:\d\d:\d\d\s+({host}[\w.\-]+).+?%ASA""",
+   """({time}\w+ \d{1,100} \d\d\d\d \d\d:\d\d:\d\d)""",
+   """exabeam_host=(.+?@\s{0,100})?({host}[\w.\-]+)""",
+   """[\s\t]+\d\d:\d\d:\d\d\s{1,100}({host}[\w.\-]+).+?%ASA""",
    """({host}[^\s]+)\s{1,20}:\s{1,20}%FTD-""",
    """({time}\d{1,4}-\d{1,2}-\d{1,2}T\d{1,2}:\d{1,2}:\d{1,2}Z?)""",
-   """%ASA-({priority}\d+)-({event_code}\d+)""",
-   """Group\s*<({group}.*?)>""",
-   """IP\s*<({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})>\s*({event_name}.*?):\s""",
-   """User\s*<({user}[^@>]+)(?:@({domain}[^>]+))?>"""
+   """%ASA-({priority}\d{1,100})-({event_code}\d{1,100})""",
+   """Group\s{0,100}<({group}.*?)>""",
+   """IP\s{0,100}<({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})>\s{0,100}({event_name}.*?):\s""",
+   """User\s{0,100}<({user}[^@>]+)(?:@({domain}[^>]+))?>"""
 ]
 }
 ```

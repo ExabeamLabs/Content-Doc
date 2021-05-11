@@ -9,8 +9,8 @@ Name = aventail-vpn-end
   TimeFormat = "dd/MMM/yyyy:HH:mm:ss"
   Conditions = [ """Info System Session End:""",]
   Fields = [
-    """exabeam_raw=.*?\[({time}\d\d\/\w+\/\d\d\d\d:\d+:\d+:\d+)""",
-    """:\s.+?\]\s+({host}[^\s]+).+?\sEnd:.+?\(({user}[^\)]+)"""
+    """exabeam_raw=.*?\[({time}\d\d\/\w+\/\d\d\d\d:\d{1,100}:\d{1,100}:\d{1,100})""",
+    """:\s.+?\]\s{1,100}({host}[^\s]+).+?\sEnd:.+?\(({user}[^\)]+)"""
   ]
 }
 ```

@@ -10,7 +10,7 @@ Name = syslog-json-4725
   Conditions = [ """"EventID":4725""",""""SourceModuleType":""" ]
   Fields = [ 
     """({event_name}A user account was disabled)""",
-	      """"EventTime":\s*"({time}\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})"""",
+	      """"EventTime":\s{0,100}"({time}\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})"""",
               """"Hostname":"({host}[^."]*)""",
               """({event_code}4725)""",
 	      """"SubjectUserSid":"({user_sid}[^"]+)""",

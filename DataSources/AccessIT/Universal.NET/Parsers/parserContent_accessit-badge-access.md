@@ -11,7 +11,7 @@ Name = accessit-badge-access
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
     """"globallyuniqueeventid":"({time}\d\d\d\d.\d\d.\d\d.\d\d.\d\d.\d\d)""",
-    """"cardnumber":({badge_id}\d+)""",
+    """"cardnumber":({badge_id}\d{1,100})""",
     """"accountname":"({user}[^"]+)""",
     """"cardholder":"({last_name}[^,]+),\s({first_name}[^"]+)""",
     """"eventlocation":"({location_door}[^"]+)""",

@@ -9,18 +9,18 @@ Name = mobileiron-security-alert
   TimeFormat = "epoch_sec"
   Conditions = [ """CEF:""", """|Mobile Iron|""", """deviceSeverity=""", """dtz=""" ]
   Fields = [
-    """ start=({time}\d+) """,
-    """ eventId=({alert_id}\d+)""",
+    """ start=({time}\d{1,100}) """,
+    """ eventId=({alert_id}\d{1,100})""",
     """ cat=({alert_name}[^\s]+) """,
-    """ suser=({user}.+?)\s+\w+=""",
-    """ act=({action}.+?)\s+\w+=""",
+    """ suser=({user}.+?)\s{1,100}\w+=""",
+    """ act=({action}.+?)\s{1,100}\w+=""",
     """ platform\\=({os}.+?)(\}|\w+=)""",
     """ dvc=({host}.+?) """,
     """ agt=({src_ip}.+?) """,
-    """ act=({alert_name}.+?)\s+\w+=""",
-    """ cat=({alert_type}.+?)\s+\w+=""",
-    """ cs1=({additional_info}.+?)\s+\w+=""",
-    """ cs3=\{({src_host}.+?)\}\s+\w+=""",
+    """ act=({alert_name}.+?)\s{1,100}\w+=""",
+    """ cat=({alert_type}.+?)\s{1,100}\w+=""",
+    """ cs1=({additional_info}.+?)\s{1,100}\w+=""",
+    """ cs3=\{({src_host}.+?)\}\s{1,100}\w+=""",
   ]
 }
 ```

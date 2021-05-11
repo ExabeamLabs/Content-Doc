@@ -10,13 +10,13 @@ Name = s-vontu-dlp-email-alert
   Conditions = [ """,blocked="""", """,rules="""", """,subject="""", """incident_id="""", """,mtchcnt="""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-    """({host}[\w\-.]+)\s+incident_id=""",
-    """\Wincident_id="({alert_id}\d+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[\w\-.]+)""",
+    """({host}[\w\-.]+)\s{1,100}incident_id=""",
+    """\Wincident_id="({alert_id}\d{1,100})""",
     """\Wblocked="({outcome}[^",]+)"""
     """\Wpolicy="({alert_name}[^"]+)""",
-    """\Wpolicy="[^"\-]+\-\s*({alert_type}[^"]+)""",
-    """\Wpolicy="[^"\-]+\-\s*({protocol}[^"]+)""",
+    """\Wpolicy="[^"\-]+\-\s{0,100}({alert_type}[^"]+)""",
+    """\Wpolicy="[^"\-]+\-\s{0,100}({protocol}[^"]+)""",
     """\Wrecipients="({recipients}[^"]+)""",
     """\Wrecipients="({external_address}[^,"]+)""",
     """\Wrecipients="[^@]+@({external_domain}[^,"]+)""",

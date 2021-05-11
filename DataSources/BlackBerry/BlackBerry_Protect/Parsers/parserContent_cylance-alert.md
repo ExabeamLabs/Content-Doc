@@ -10,21 +10,21 @@ Name = cylance-alert
   Conditions = [ """Event Type: Threat""","""Is Running: ""","""Cylance Score: """]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """\[({host}[\w\-.]+)\]\s*Event Type:""",
-    """Date: ({time}\d+\/\d+\/\d+ \d+:\d+:\d+ \w+)""",
+    """\[({host}[\w\-.]+)\]\s{0,100}Event Type:""",
+    """Date: ({time}\d{1,100}\/\d{1,100}\/\d{1,100} \d{1,100}:\d{1,100}:\d{1,100} \w+)""",
     """File Name: ({malware_url}[^,]+)""",
-    """Event Type:\s*({alert_type}[^,]+)""",
+    """Event Type:\s{0,100}({alert_type}[^,]+)""",
     """Event Name: ({alert_name}[^,]+)""",
-    """Cylance Score: ({alert_severity}\d+)""",
+    """Cylance Score: ({alert_severity}\d{1,100})""",
     """Device Name: ({src_host}[^,]+)""",
     """IP Address: \(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """Path: ({process_directory}[^,]+)\\({process_name}[^,]+)?""",
-    """Threat Classification:\s*({alert_name}[^,]+),""",
-    """Status:\s*({outcome}[^,]+),""",
-    """MD5:\s*({md5}[^,]+),""",
-    """File Owner:\s*(({domain}[^\\,]+)\\)?({user}[^,]+),""",
-    """SHA256:\s*({sha256}[^,]+),""",
-    """Detected By:\s*({additional_info}[^,]+)"""
+    """Threat Classification:\s{0,100}({alert_name}[^,]+),""",
+    """Status:\s{0,100}({outcome}[^,]+),""",
+    """MD5:\s{0,100}({md5}[^,]+),""",
+    """File Owner:\s{0,100}(({domain}[^\\,]+)\\)?({user}[^,]+),""",
+    """SHA256:\s{0,100}({sha256}[^,]+),""",
+    """Detected By:\s{0,100}({additional_info}[^,]+)"""
   ]
   DupFields = ["malware_url->process_name"]
   SOAR {

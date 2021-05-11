@@ -5,7 +5,7 @@ Name = azure-event-hub-network-security-group-event
   DataType = "network-connection"
   Conditions = ["""ext_category=NetworkSecurityGroupEvent""" ]
   Fields = ${MSParserTemplates.cef-azure-event-hub.Fields}[
-     """\WrequestClientApplication=(|({app}.+?))(\s+\w+=|\s*$)""",
+     """\WrequestClientApplication=(|({app}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """category":"({activity}.*?[^\\])"""",
     """type":"({outcome}.*?[^\\])"""",
     """rule":"({ruleName}.*?[^\\])"""",

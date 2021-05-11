@@ -9,8 +9,8 @@ Name = damballa-leef-alert
   TimeFormat = "epoch"
   Conditions = [ """|Damballa|Failsafe|""" ]
   Fields = [
-    """devTime=({time}\d+)""",
-    """exabeam_host=(.+?@\s*)?({host}[^\s]+)""",
+    """devTime=({time}\d{1,100})""",
+    """exabeam_host=(.+?@\s{0,100})?({host}[^\s]+)""",
     """LEEF:1.0\|Damballa\|Failsafe\|[^\|]+\|({alert_type}[^\|]+)""",
     """LEEF:1.0\|Damballa\|Failsafe\|[^\|]+\|({alert_name}[^\|]+)""",
     """fsIndustryName=({alert_name}[^\t]+)""",

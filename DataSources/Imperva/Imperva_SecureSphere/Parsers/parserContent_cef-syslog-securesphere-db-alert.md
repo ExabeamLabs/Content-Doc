@@ -10,19 +10,19 @@ Name = cef-syslog-securesphere-db-alert
   TimeFormat = "epoch"
   Conditions = [ """|Imperva|SecureSphere DAM|""", """cat=Alert""", """=ServerGroup""" ]
   Fields = [
-    """\srt=({time}\d+)""",
+    """\srt=({time}\d{1,100})""",
     """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sdvchost=({host}[^\s]+)""",
-    """\sduser=(?:n\/a|({user}.+?))\s*\w+=""",
-    """\scs4=(?: |({app}.+?))\s*\w+=""",
-    """\scs3=(?: |({service_name}.+?))\s*\w+=""",
-    """\scs2=(?: |({server_group}.+?))\s*\w+=""",
-    """\sflexString1=(?: |({database_name}.+?))\s+\w+=""",
+    """\sduser=(?:n\/a|({user}.+?))\s{0,100}\w+=""",
+    """\scs4=(?: |({app}.+?))\s{0,100}\w+=""",
+    """\scs3=(?: |({service_name}.+?))\s{0,100}\w+=""",
+    """\scs2=(?: |({server_group}.+?))\s{0,100}\w+=""",
+    """\sflexString1=(?: |({database_name}.+?))\s{1,100}\w+=""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\scs5=({alert_name}.+?)(\s*\(\+\)| from| by| \w+=)""",
+    """\scs5=({alert_name}.+?)(\s{0,100}\(\+\)| from| by| \w+=)""",
     """\scs1=({alert_type}.+?)\s\w+=""",
-    """\seventId=({alert_id}\d+)""",
+    """\seventId=({alert_id}\d{1,100})""",
     """([^|]+\|){6}({alert_severity}[^|]+)""",
     """\sshost=({src_host}[^\s]+)""",
     """\sdhost=({dest_host}[^\s]+)"""

@@ -9,13 +9,13 @@ Name = s-common-ftp-login-1
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """]pass ******""", """ - 200 - - - """ ]
   Fields = [
-    """exabeam_host=([^=]+?@\s*)?({host}[^\s]+)""",
+    """exabeam_host=([^=]+?@\s{0,100})?({host}[^\s]+)""",
     """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d) """,
     """(exabeam_\w+=|^)({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d) """,
-    """({host}[\w\.-]+)\s+(\S+\s+){2}\[\d+\]""",
-    """({src_ip}\S+)\s+(\S+\s+){2}\[\d+\]""",
-    """(-|(({domain}\S+)[\/\\])?({user}\S+))\s+\[\d+\]""",
-    """\]pass\s+(\S+\s+){2}({outcome}\d+)""",
+    """({host}[\w\.-]+)\s{1,100}(\S+\s{1,100}){2}\[\d{1,100}\]""",
+    """({src_ip}\S+)\s{1,100}(\S+\s{1,100}){2}\[\d{1,100}\]""",
+    """(-|(({domain}\S+)[\/\\])?({user}\S+))\s{1,100}\[\d{1,100}\]""",
+    """\]pass\s{1,100}(\S+\s{1,100}){2}({outcome}\d{1,100})""",
   ]
   DupFields = [ "host->dest_host" ]
 }

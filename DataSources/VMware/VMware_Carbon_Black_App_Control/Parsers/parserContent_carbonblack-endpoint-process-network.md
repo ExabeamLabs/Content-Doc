@@ -6,11 +6,11 @@ Name = carbonblack-endpoint-process-network
   IsHVF = true
   Conditions = [ """netconn""" , """carbonblack""", """sensor_action""" ]
   Fields = ${CarbonBlackParserTemplates.carbonblack-endpoint.Fields} [
-    """"+local_ip"+:"+({src_ip}[^"]+)""",
-    """"+remote_ip"+:"+({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
-    """"+remote_port"+:({dest_port}\d+)"""
-    """"+local_port"+:({src_port}\d+)"""
-    """netconn_protocol"+:"+(PROTO_)?({protocol}[^"]+)""",
+    """"{1,20}local_ip"{1,20}:"{1,20}({src_ip}[^"]+)""",
+    """"{1,20}remote_ip"{1,20}:"{1,20}({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
+    """"{1,20}remote_port"{1,20}:({dest_port}\d{1,100})"""
+    """"{1,20}local_port"{1,20}:({src_port}\d{1,100})"""
+    """netconn_protocol"{1,20}:"{1,20}(PROTO_)?({protocol}[^"]+)""",
     ]
     DupFields = ["activity_type->event_name"]
 }

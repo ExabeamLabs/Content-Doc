@@ -10,17 +10,17 @@ Name = bitglass-app-login-failed
   Conditions = [ """"activity":""", """"Failure, Login"""", """api.bitglass.com""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """"time":\s*"({time}\d+ \w+ \d\d\d\d \d\d:\d\d:\d\d)""",
-    """"instancename":\s*"({host}[^"]+)"""",
-    """"user":\s*"({user}[^"\s@]+)"""",
-    """"user":\s*"({user_fullname}[^"\s@]+\s+[^"\s@]+)"""",
-    """"email":\s*"({user_email}[^"]+)"""",
-    """"device":\s*"({os}[^"]+)"""",
-    """"application":\s*"({app}[^"]+)"""",
-    """"ipaddress":\s*"({src_ip}[a-fA-F\d.:]+)"""",
-    """"useragent":\s*"({user_agent}.+?)",""",
-    """"useragent":\s*".+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)"""",
-    """"details":\s*"({failure_reason}.+?)","""
+    """"time":\s{0,100}"({time}\d{1,100} \w+ \d\d\d\d \d\d:\d\d:\d\d)""",
+    """"instancename":\s{0,100}"({host}[^"]+)"""",
+    """"user":\s{0,100}"({user}[^"\s@]+)"""",
+    """"user":\s{0,100}"({user_fullname}[^"\s@]+\s{1,100}[^"\s@]+)"""",
+    """"email":\s{0,100}"({user_email}[^"]+)"""",
+    """"device":\s{0,100}"({os}[^"]+)"""",
+    """"application":\s{0,100}"({app}[^"]+)"""",
+    """"ipaddress":\s{0,100}"({src_ip}[a-fA-F\d.:]+)"""",
+    """"useragent":\s{0,100}"({user_agent}.+?)",""",
+    """"useragent":\s{0,100}".+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)"""",
+    """"details":\s{0,100}"({failure_reason}.+?)","""
   ]
 }
 ```

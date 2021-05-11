@@ -5,7 +5,7 @@ Name = authmgr-authentication-failed-2
   DataType = "authentication-failed"
   Conditions = [ """client_ip_address=""", """result_action=User Token Failed""" ]
   Fields = ${RSAParserTemplates.authmgr-authentication.Fields} [
-    """,result_reason=({failure_reason}[^,]+?)(\s*$|,)""",
+    """,result_reason=({failure_reason}[^,]+?)(\s{0,100}$|,)""",
   ]
 }
 authmgr-authentication = {
@@ -14,15 +14,15 @@ authmgr-authentication = {
     Lms = Direct
     TimeFormat = "yyyy-MM-dd HH:mm:ss:SSS zzz"
     Fields = [
-      """({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d:\d+ \w+),""",
+      """({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d:\d{1,100} \w+),""",
       """,remote_client=({host}[^,]+),""",
-      """RSA:\s*({host}[^\s,]+),""",
+      """RSA:\s{0,100}({host}[^\s,]+),""",
       """,user=({user}[^,\s]+)""",
-      """,Resource=({additional_info}[^,]+?)(\s*$|,)""",
+      """,Resource=({additional_info}[^,]+?)(\s{0,100}$|,)""",
       """,client_ip_address=({src_ip}[A-Fa-f:\d.]+)""",
       """,browser_ip_address=({dest_ip}[A-Fa-f:\d.]+)""",
-      """,client_port=({src_port}\d+)""",
-      """,result_code=({result_code}\d+)"""
+      """,client_port=({src_port}\d{1,100})""",
+      """,result_code=({result_code}\d{1,100})"""
     ]
 
 ```

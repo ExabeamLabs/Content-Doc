@@ -10,7 +10,7 @@ Name = netskope-dlp-alert
   Conditions = [ """"alert_type": "DLP"""", """"alert": "yes""""]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """"timestamp": ({time}\d+)""",
+    """"timestamp": ({time}\d{1,100})""",
     """"user": "(?![^\s]+@[^\s]+)({user}[^"\s]+)"""",
     """"user": "(?=[^\s]+@[^\s]+)({user_email}[^"\s@]+@[^"\s@]+)"""",
     """"policy": "({alert_name}[^"]+)"""",
@@ -23,10 +23,10 @@ Name = netskope-dlp-alert
     """"dlp_rule_severity": "({alert_severity}[^"]+)"""",
     """"dlp_file": "({file_name}[^"]+)"""",
     """"file_path": "({file_path}[^"]+)"""",
-    """"file_size": ({bytes}\d+),""",
-    """"md5":\s*"({md5}[^"]+)"""",
-    """"from_user":\s*"({from_user_at}[^"]+)"""",
-    """"site":\s*"({site_at}[^"]+)""""
+    """"file_size": ({bytes}\d{1,100}),""",
+    """"md5":\s{0,100}"({md5}[^"]+)"""",
+    """"from_user":\s{0,100}"({from_user_at}[^"]+)"""",
+    """"site":\s{0,100}"({site_at}[^"]+)""""
   ]
   DupFields = [ "file_path->file_path_at", "additional_info->shared_with_at" ]
 }

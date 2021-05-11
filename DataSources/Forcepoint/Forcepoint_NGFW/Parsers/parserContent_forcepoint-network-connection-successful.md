@@ -6,7 +6,7 @@ Name = forcepoint-network-connection-successful
   DataType = "network-connection-successful"
   Conditions = [ """CEF:""", """|FORCEPOINT|""", """|Connection_Allowed|""" ]
   Fields = ${ForcepointParserTemplates.forcepoint-template.Fields} [
-    """proto=\s*({protocol}.+?)(\s\w+=)""",
+    """proto=\s{0,100}({protocol}.+?)(\s\w+=)""",
     ]
 }
 forcepoint-template = {
@@ -15,22 +15,22 @@ forcepoint-template = {
   Lms = ArcSight
   TimeFormat = "epoch"
   Fields=[
-    """CEF:\s+\d+\|([^\|]+\|){4}({activity}[^\|]+)""",
-    """ahost=\s*({host}.+?)(\s\w+=)""",
-    """\Wrt=({time}\d+)""",
-    """src=\s*({src_ip}[A-Za-z\d.:]+)""".
-    """dhost=\s*({dest_host}.+?)(\s\w+=)""",
-    """dst=\s*({dest_ip}.+?)(\s\w+=)""",
-    """amac=\s*({mac}.+?)(\s\w+=)""",
-    """dvc=\s*({src_host}.+?)(\s\w+=)""",
-    """app=\s*({protocol}.+?)(\s\w+=)""",
-    """\Win=({bytes_in}\d+)""",
-    """\Wout=({bytes_out}\d+)""",
-    """\Wspt=({src_port}\d+)""",
-    """\Wdpt=({dest_port}\d+)""",
-    """\sdeviceInboundInterface=({src_interface}.+?)\s*\w+=""",
-    """\sdeviceOutboundInterface=({dest_interface}.+?)\s*\w+=""",
-    """\sproto=({protocol}.+?)\s*\w+=""",
+    """CEF:\s{1,100}\d{1,100}\|([^\|]+\|){4}({activity}[^\|]+)""",
+    """ahost=\s{0,100}({host}.+?)(\s\w+=)""",
+    """\Wrt=({time}\d{1,100})""",
+    """src=\s{0,100}({src_ip}[A-Za-z\d.:]+)""".
+    """dhost=\s{0,100}({dest_host}.+?)(\s\w+=)""",
+    """dst=\s{0,100}({dest_ip}.+?)(\s\w+=)""",
+    """amac=\s{0,100}({mac}.+?)(\s\w+=)""",
+    """dvc=\s{0,100}({src_host}.+?)(\s\w+=)""",
+    """app=\s{0,100}({protocol}.+?)(\s\w+=)""",
+    """\Win=({bytes_in}\d{1,100})""",
+    """\Wout=({bytes_out}\d{1,100})""",
+    """\Wspt=({src_port}\d{1,100})""",
+    """\Wdpt=({dest_port}\d{1,100})""",
+    """\sdeviceInboundInterface=({src_interface}.+?)\s{0,100}\w+=""",
+    """\sdeviceOutboundInterface=({dest_interface}.+?)\s{0,100}\w+=""",
+    """\sproto=({protocol}.+?)\s{0,100}\w+=""",
     ]
 
 ```

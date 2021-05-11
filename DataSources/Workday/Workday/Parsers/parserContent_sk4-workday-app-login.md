@@ -15,15 +15,15 @@ sk4-workday-login-template = {
       """exabeam_host=({host}[\w.\-]+)""",
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """destinationServiceName=({app}[^ ]+)""",
-      """dproc=({host}[^\s]+)\s+\w+=""",
+      """dproc=({host}[^\s]+)\s{1,100}\w+=""",
       """msg=({additional_info}[^=]+?)\s\w+=.""",
       """src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """suser=;?({user}[^\s;]+)""",
-      """"+authenticationType"+:"+({auth_method}[^"]+)"+""",
-      """"authenticationChannel"+:"+({auth_method}[^"]+)""",
-      """"signonDateTime"+:({time}\d+)""",
+      """"{1,20}authenticationType"{1,20}:"{1,20}({auth_method}[^"]+)"{1,20}""",
+      """"authenticationChannel"{1,20}:"{1,20}({auth_method}[^"]+)""",
+      """"signonDateTime"{1,20}:({time}\d{1,100})""",
       """([^\|]*\|){5}({activity}[^\|]+)""",
-      """\Wdproc=(|({dproc}[^=]+?))(\s+\w+=|\s*$)""",
+      """\Wdproc=(|({dproc}[^=]+?))(\s{1,100}\w+=|\s{0,100}$)""",
     ]
 
 ```

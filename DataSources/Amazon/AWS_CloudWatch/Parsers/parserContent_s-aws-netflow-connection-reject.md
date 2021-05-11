@@ -9,9 +9,9 @@ Name = s-aws-netflow-connection-reject
   TimeFormat = "epoch"
   Conditions = [ """ eni-""", """ REJECT OK"""]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """requestClientApplication=({host}[^\s]+)\s""",
-    """(unknown|({account_id}\S+)) ({interface_id}\S+) ({src_ip}[A-Fa-f:\d.]+) ({dest_ip}[A-Fa-f:\d.]+) ({src_port}\d+) ({dest_port}\d+) ({protocol}\S+) ({packets}\S+) ({bytes}\d+) ({time}\d+) \S+ ({action}\S+) ({outcome}[^"\\\s]+)""",
+    """(unknown|({account_id}\S+)) ({interface_id}\S+) ({src_ip}[A-Fa-f:\d.]+) ({dest_ip}[A-Fa-f:\d.]+) ({src_port}\d{1,100}) ({dest_port}\d{1,100}) ({protocol}\S+) ({packets}\S+) ({bytes}\d{1,100}) ({time}\d{1,100}) \S+ ({action}\S+) ({outcome}[^"\\\s]+)""",
   ]
 }
 ```

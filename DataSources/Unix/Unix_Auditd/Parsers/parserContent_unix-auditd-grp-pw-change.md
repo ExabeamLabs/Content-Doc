@@ -10,10 +10,10 @@ Name = unix-auditd-grp-pw-change
   Conditions = [ """type=GRP_MGMT""","""op=changing-group-passwd""","""res=success""" ]
   Fields = [
     """exabeam_host=({host}[^\s]+)""",
-    """msg=audit\(({time}\d+)\.\d{3}""",
+    """msg=audit\(({time}\d{1,100})\.\d{3}""",
     """\sacct="({account_name}[^"]+)"""",
-    """\sses=({session_id}\d+)""",
-    """\spid=({process_id}\d+)""",
+    """\sses=({session_id}\d{1,100})""",
+    """\spid=({process_id}\d{1,100})""",
     """\sgrp="({group_name}[^"]+)"""",
   ]
   DupFields = ["group_name->group"]

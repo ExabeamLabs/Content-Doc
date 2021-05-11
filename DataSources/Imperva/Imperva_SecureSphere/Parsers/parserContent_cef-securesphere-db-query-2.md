@@ -10,17 +10,17 @@ Name = cef-securesphere-db-query-2
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ """CEF:""", """|SecureSphere|""", """|Audit CounterBreach for Database""", """|Informative|""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """\Wrt=({time}\w+\s+\d+\s+\d+\s+\d+:\d+:\d+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """\Wrt=({time}\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100})""",
     """\Wsuser=({user}[^\\\s]+)""",
     """\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
     """\Wdst=({dest_ip}[A-Fa-f:\d.]+)""",
-    """\Wdpt=({dest_port}\d+)""",
-    """\Wsntdom=({domain}[^\s]+)\s+(\w+=|$)""",
-    """\Wcat=({db_operation}.+?)\s+(\w+=|$)""",
-    """\Wmsg=({db_query}.+?)\s+(\w+=|$)""",
-    """\Wdproc=({database_name}.+?)\s+(\w+=|$)""",
-    """\Wcn2=({response_size}.+?)\s+(\w+=|$)""",
+    """\Wdpt=({dest_port}\d{1,100})""",
+    """\Wsntdom=({domain}[^\s]+)\s{1,100}(\w+=|$)""",
+    """\Wcat=({db_operation}.+?)\s{1,100}(\w+=|$)""",
+    """\Wmsg=({db_query}.+?)\s{1,100}(\w+=|$)""",
+    """\Wdproc=({database_name}.+?)\s{1,100}(\w+=|$)""",
+    """\Wcn2=({response_size}.+?)\s{1,100}(\w+=|$)""",
   ]
 }
 ```

@@ -9,17 +9,17 @@ Name = sail-file-operation
  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
  Conditions=["""action type\""", """object name\""", """samaccountname\""", """creation_timestamp\""", """application type\""" ]
  Fields=[
-   """creation_timestamp\\"+:\\"+({time}\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3})""",
-   """message"+:\s*"+[^\s]+\s+({host}[^\s]+)""",
-   """"+samaccountname\\"+:\\"+({user}[^\\"]+)""",
-   """"+userprincipalname\\"+:\\"+({user_email}[^\\"]+)""",
-   """"+object name\\"+:\\"+({file_name}[^\\"]+)""",
-   """"+file extension\\"+:\\"+({file_extension}[^\\"]+)""",
-   """"+ip address\\"+:\\"+({src_ip}[^\\"]+)""",
-   """"+domain\\"+:\\"+({domain}[^\\"]+)""",
-   """"+application type\\"+:\\"+({app}[^\\"]+)""",
-   """"+path\\"+:\\"+\\+({path}[^"]+)\\"+""",
-   """"+action type\\"+:\\"+({activity}[^\\"]+)"""
+   """creation_timestamp\\"{1,20}:\\"{1,20}({time}\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3})""",
+   """message"{1,20}:\s{0,100}"{1,20}[^\s]+\s{1,100}({host}[^\s]+)""",
+   """"{1,20}samaccountname\\"{1,20}:\\"{1,20}({user}[^\\"]+)""",
+   """"{1,20}userprincipalname\\"{1,20}:\\"{1,20}({user_email}[^\\"]+)""",
+   """"{1,20}object name\\"{1,20}:\\"{1,20}({file_name}[^\\"]+)""",
+   """"{1,20}file extension\\"{1,20}:\\"{1,20}({file_extension}[^\\"]+)""",
+   """"{1,20}ip address\\"{1,20}:\\"{1,20}({src_ip}[^\\"]+)""",
+   """"{1,20}domain\\"{1,20}:\\"{1,20}({domain}[^\\"]+)""",
+   """"{1,20}application type\\"{1,20}:\\"{1,20}({app}[^\\"]+)""",
+   """"{1,20}path\\"{1,20}:\\"{1,20}\\+({path}[^"]+)\\"{1,20}""",
+   """"{1,20}action type\\"{1,20}:\\"{1,20}({activity}[^\\"]+)"""
  ]
 }
 ```

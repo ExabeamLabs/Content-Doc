@@ -10,7 +10,7 @@ Name = auditd-unix-account-switch
   Conditions = [ """audispd""", """USER_ROLE_CHANGE""" , """ auid=""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\s({host}[\w\-.]+)\s+audispd:""",
+    """\s({host}[\w\-.]+)\s{1,100}audispd:""",
     """node=({host}[^\s\.]+)"""
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """uid=({user_id}[^\s]+)""",

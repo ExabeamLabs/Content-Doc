@@ -11,19 +11,19 @@ Name = raw-4738
   Fields = [
     """({event_name}A user account was changed)""",
     """({event_code}4738)""",
-    """Computer(Name)?\s*\\*"?(=|:|>)\s*"*(::ffff:)?({host}[\w\.-]+)(\s|,|"|</Computer>|$)""",
-    """\sComputerName=(::ffff:)?({host}.+?)(\s+\w+=|\s*$)""",
+    """Computer(Name)?\s{0,100}\\*"?(=|:|>)\s{0,100}"{0,20}(::ffff:)?({host}[\w\.-]+)(\s|,|"|</Computer>|$)""",
+    """\sComputerName=(::ffff:)?({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|pm|PM))""",
-    """({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+)""",
-    """(?i)\w+\s*\d+\s\d+:\d+:\d+\s+(::ffff:)?(am|pm|({host}[\w\-.]+))\s""",
-    """Security ID:\s*(|({user_sid}.+?))\s+Account Name:""",
-    """Account Name:\s*(|({user}.+?))\s+Account Domain:\s*(|({domain}.+?))\s+Logon ID:\s*(|({logon_id}.+?))\s+Target Account:""",
-    """Target\sAccount.+?Security ID:\s*({target_sid}.+?)\s""",
-    """Target\sAccount.+?Account Name:\s*({target_user}.+?)\s""",
-    """Target\sAccount.+?Account Domain:\s*({target_domain}.+?)\s""",
-    """User Account Control:\s*.+?\-\s({uac_status}[^\s]+)\s+User Parameters""",
-    """Changed Attributes:\s*(|({attribute}.+?))\s+SAM Account Name""",
-    """(?i)\w+\s*\d+\s*\d+:\d+:\d+\s+(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(am|pm|({dest_host}[\w\-.]+)))\s"""
+    """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100})""",
+    """(?i)\w+\s{0,100}\d{1,100}\s\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(::ffff:)?(am|pm|({host}[\w\-.]+))\s""",
+    """Security ID:\s{0,100}(|({user_sid}.+?))\s{1,100}Account Name:""",
+    """Account Name:\s{0,100}(|({user}.+?))\s{1,100}Account Domain:\s{0,100}(|({domain}.+?))\s{1,100}Logon ID:\s{0,100}(|({logon_id}.+?))\s{1,100}Target Account:""",
+    """Target\sAccount.+?Security ID:\s{0,100}({target_sid}.+?)\s""",
+    """Target\sAccount.+?Account Name:\s{0,100}({target_user}.+?)\s""",
+    """Target\sAccount.+?Account Domain:\s{0,100}({target_domain}.+?)\s""",
+    """User Account Control:\s{0,100}.+?\-\s({uac_status}[^\s]+)\s{1,100}User Parameters""",
+    """Changed Attributes:\s{0,100}(|({attribute}.+?))\s{1,100}SAM Account Name""",
+    """(?i)\w+\s{0,100}\d{1,100}\s{0,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(am|pm|({dest_host}[\w\-.]+)))\s"""
   ]
 }
 ```

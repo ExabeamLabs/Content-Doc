@@ -12,7 +12,7 @@ Name = mcafee-siem-4624
       """({event_name}An account was successfully logged on)""",
       """"src_ip":"({src_ip}[^"]+)""",
       """"dst_ip":"({dest_ip}[^"]+)""",
-      """"id":\d*({event_code}4624)""",
+      """"id":\d{0,100}({event_code}4624)""",
       """"firsttime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
       """"DomainID":"({domain}[^"]+)""",
       """"HostID":"({host}[^"]+)""",

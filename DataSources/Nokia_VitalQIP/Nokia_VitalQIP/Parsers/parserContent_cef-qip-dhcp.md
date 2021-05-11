@@ -9,11 +9,11 @@ Name = cef-qip-dhcp
     TimeFormat = "epoch"
     Conditions = [ """CEF:""", """|QIP|DHCP|""" ]
     Fields = [
-      """\srt=({time}\d+)""",
-      """\sshost=({dest_host}.+?)\s+([\w\.]+=|$)""",
+      """\srt=({time}\d{1,100})""",
+      """\sshost=({dest_host}.+?)\s{1,100}([\w\.]+=|$)""",
       """\ssrc=({dest_ip}[a-fA-F\d.:]+)""",
-      """\sdvc=({host}.+?)\s+([\w\.]+=|$)""",
-      """\ssntdom=({domain}.+?)\s+([\w\.]+=|$)"""
+      """\sdvc=({host}.+?)\s{1,100}([\w\.]+=|$)""",
+      """\ssntdom=({domain}.+?)\s{1,100}([\w\.]+=|$)"""
     ]
     DupFields = [ "dest_host->user" ]
   }

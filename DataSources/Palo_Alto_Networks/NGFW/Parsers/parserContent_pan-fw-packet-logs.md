@@ -17,8 +17,8 @@ Name = pan-fw-packet-logs
       """\sreason=({additional_info}.*?)(,\s\w+=|$)"""
       """\ssrc=(({src_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]*:[A-Fa-f0-9%.:]+(th0)?))|({src_host}[^\s]+?))(,\s\w+=|$)"""
       """\sdst=(({dest_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]*:[A-Fa-f0-9%.:]+(th0)?))|({dest_host}[^\s]+?))(,\s\w+=|$)"""
-      """\ssrc_port=({src_port}\d+)"""
-      """\sdst_port=({dest_port}\d+)"""
+      """\ssrc_port=({src_port}\d{1,100})"""
+      """\sdst_port=({dest_port}\d{1,100})"""
     ]
   }
 ```

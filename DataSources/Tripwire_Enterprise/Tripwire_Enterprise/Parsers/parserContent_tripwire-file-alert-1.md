@@ -12,13 +12,13 @@ Name = tripwire-file-alert-1
   Fields = [
    """\s({time}\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2})\s""",
    """(\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2})\s({host}[^\s]+?)\sModify:""",
-   """\s+Modify:\s+({accesses}[A-Za-z]+?)\s+""",
+   """\s{1,100}Modify:\s{1,100}({accesses}[A-Za-z]+?)\s{1,100}""",
    """\sModified\s({file_path}[^|]+?)\son\s""",
    """\sModified\s({file_parent}[^|]+?)[\\\/]+[^\\\/]+\son\s""",
    """\sModified\s([^|]*?[\\\/]+)?({file_name}[^\\\/|]+)\son\s""",
    """\sModified\s[^|]+?[\\\/]+[^\\\/|.]+\.({file_ext}[^\\\/|]+)(\son\s)""",
    """\son\s({dest_host}[^\s]+?)\sby\s""",
-   """\sby\s({alert_name}.+?)\s*$""",
+   """\sby\s({alert_name}.+?)\s{0,100}$""",
    """({alert_type}Modify)"""
    ]
 SOAR {

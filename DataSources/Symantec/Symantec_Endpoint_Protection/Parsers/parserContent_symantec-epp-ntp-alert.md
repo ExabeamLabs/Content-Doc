@@ -9,37 +9,19 @@ Name = symantec-epp-ntp-alert
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """CIDS Signature string""", """Intrusion ID:""" ]
   Fields = [
-    """Local:\s*({dest_ip}[a-fA-F:\.\d]+),(Local:\s*(?:0+|({dest_host}[^,]+)))?.*?,Inbound,""",
-    """Remote:\s*({src_ip}[a-fA-F:\.\d]+),(Remote:\s*(?:0+|({src_host}[^,]+)))?.*?,Inbound,""",
-    """Local:\s*({src_ip}[a-fA-F:\.\d]+),(Local:\s*(?:0+|({src_host}[^,]+)))?.*?,Outbound,""",
-    """Remote:\s*({dest_ip}[a-fA-F:\.\d]+),(Remote:\s*(?:0+|({dest_host}[^,]+)))?.*?,Outbound,""",
-    """Remote Host Name:\s*(|({src_host}[\w\-.]+)),(Remote Host IP:\s*(?:0+|({src_ip}[A-Fa-f:\d.]+)),)?.*?,Inbound,""",
-    """Remote Host Name:\s*(|({dest_host}[\w\-.]+)),(Remote Host IP:\s*(?:0+|({dest_ip}[A-Fa-f:\d.]+)),)?.*?,Outbound,""",
-    """Local Host IP:\s*({src_ip}[a-fA-F\d.:]+).*?,Outbound,""",
-    """Local Host IP:\s*({dest_ip}[a-fA-F\d.:]+).*?,Inbound,""",
-    """Begin:\s*({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-    """User( Name)?:\s*(({user_fullname}[^,\s]+(\s+[^,\s]+)+)|(none|({user}[^,]+))),""",
-    """Domain:(?:\s+|\s*({domain}[^,]+)),""",
-    """Application:(?:\s+|\s*({process}({directory}(?:[^,]+)?[\\\/])?({process_name}[^\\\/,]+?))),""",
-    """CIDS Signature ID:\s*({alert_name}\d+),""",
-    """Intrusion ID:\s*({alert_id}\d+),""",
-    """CIDS Signature string:\s*(|({alert_type}[^:,]+?))\s*,""",
-    """CIDS Signature string:\s*(|({alert_name}[^:,]+)),""",
-    """CIDS Signature string:\s*({alert_type}[^:,]+?)\s*:\s*({alert_name}[^,]+)""",
-    """Intrusion URL:(?:\s+|\s*({malware_url}[^,]+)),""",
-    """CIDS Signature ID:\s*({alert_id}\d+),""",
-    """\d\d:\d\d:\d\d,\s*({alert_severity}Minor|Info|Critical|Major|Security risk found|Virus found)""",
-    """Attack:\s*({additional_info}[^\.:]+)""",
-    """exabeam_host=({host}[\w.\-]+)""",
-    """\w{3}\s+\d{1,2}\s\d{1,2}:\d{1,2}:\d{1,2}\s({host}[\w\.-]+)\s""",
-    """({host}[^\s,]+),SHA-256:""",
-  ]
-  DupFields = ["directory->process_directory"]
-  SOAR {
-    IncidentType = "malware"
-    DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->malwareName", "alert_id->sourceId", "src_ip->malwareVictimHost", "malware_url->malwareAttackerUrl", "dest_ip->malwareAttackerIp"]
-    NameTemplate = """Symantec Alert ${alert_name} found"""
-    ProjectName = "SOC"
-    EntityFields = [
-      {EntityType="device", Name="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]}
+    """Local:\s{0,100}({dest_ip}[a-fA-F:\.\d]+),(Local:\s{0,100}(?:0+|({dest_host}[^,]+)))?.*?,Inbound,""",
+    """Remote:\s{0,100}({src_ip}[a-fA-F:\.\d]+),(Remote:\s{0,100}(?:0+|({src_host}[^,]+)))?.*?,Inbound,""",
+    """Local:\s{0,100}({src_ip}[a-fA-F:\.\d]+),(Local:\s{0,100}(?:0+|({src_host}[^,]+)))?.*?,Outbound,""",
+    """Remote:\s{0,100}({dest_ip}[a-fA-F:\.\d]+),(Remote:\s{0,100}(?:0+|({dest_host}[^,]+)))?.*?,Outbound,""",
+    """Remote Host Name:\s{0,100}(|({src_host}[\w\-.]+)),(Remote Host IP:\s{0,100}(?:0+|({src_ip}[A-Fa-f:\d.]+)),)?.*?,Inbound,""",
+    """Remote Host Name:\s{0,100}(|({dest_host}[\w\-.]+)),(Remote Host IP:\s{0,100}(?:0+|({dest_ip}[A-Fa-f:\d.]+)),)?.*?,Outbound,""",
+    """Local Host IP:\s{0,100}({src_ip}[a-fA-F\d.:]+).*?,Outbound,""",
+    """Local Host IP:\s{0,100}({dest_ip}[a-fA-F\d.:]+).*?,Inbound,""",
+    """Begin:\s{0,100}({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
+    """User( Name)?:\s{0,100}(({user_fullname}[^,\s]+(\s{1,100}[^,\s]+)+)|(none|({user}[^,]+))),""",
+    """Domain:(?:\s{1,100}|\s{0,100}({domain}[^,]+)),""",
+    """Application:(?:\s{1,100}|\s{0,100}({process}({directory}(?:[^,]+)?[\\\/])?({process_name}[^\\\/,]+?))),""",
+    """CIDS Signature ID:\s{0,100}({alert_name}\d{1,100}),""",
+    """Intrusion ID:\s{0,100}({alert_id}\d{1,100}),""",
+    """CIDS Signature string:\s{0,100}(|({alert_type}[^:,]+?))\s{0,100}
 ```

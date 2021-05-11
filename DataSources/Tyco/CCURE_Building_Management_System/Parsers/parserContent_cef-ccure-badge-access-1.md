@@ -11,7 +11,7 @@ Name = cef-ccure-badge-access-1
    Fields = [
      """src=({host}[^\s]+)""",
      """({outcome}Card (Rejected|Admitted))""",
-     """\|start=({time}\d+)""",
+     """\|start=({time}\d{1,100})""",
      """\ssuid=(?:Unknown|(({domain}[^\\]+)\\?)?({user}.+?))\s(\w+=|$)""",
      """\ssuser=(?:|({user_fullname}.+?))\s(\w+=|$)""",
      """\scs1=(?:|({location_door}.+?))\s(\w+=|$)""",

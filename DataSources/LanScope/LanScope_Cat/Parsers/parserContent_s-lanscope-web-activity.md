@@ -10,7 +10,5 @@ Name = s-lanscope-web-activity
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """"Webアクセスログ"""" ]
   Fields = [
-    ""","*(|({host}[^"]+))"*,"*(|({user}[^"]+))"*,"*({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"*,"*[^"]*"*,"*(|({activity}[^"]+))"*,("*[^"]*"*,){5}"*(|({window_title}[^"]+))"*,"*(|({full_url}(\w+:\/+)?({web_domain}[^"\/]*?({top_domain}[^"\.\/]+(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+))({uri_path}\/[^"\?]*)?({uri_query}\?[^"]*)?))"*,""""
-  ]
-}
+    ""","{0,20}(|({host}[^"]+))"{0,20}
 ```

@@ -5,7 +5,7 @@ Name = symantec-epp-cef-alert-2
   Conditions = ["""|Symantec|Endpoint Protection|""", """|Intrusion Detected"""]
   Fields = ${SymantecParserTemplates.symantec-epp-cef-alert-1.Fields} [
     """\|Symantec\|Endpoint Protection\|([^|]*?\|){2}({alert_name}[^|]+?)\|""",
-    """\smsg=({additional_info}[^=]+?)\s+\w+=""",
+    """\smsg=({additional_info}[^=]+?)\s{1,100}\w+=""",
     """\sact=({outcome}[^\s]+)""",
   ]
   SOAR {
@@ -22,25 +22,25 @@ symantec-epp-cef-alert-1 = {
     DataType = "alert"
     TimeFormat = "epoch"
     Fields = [
-      """\srt=({time}\d+)""",
-      """\scs1=({alert_name}[^=]+?)\s+(\w+=|$)""",
-      """\sduser=((?i)(system|none)|({user}[^=]+?))\s+(\w+=|$)""",
-      """\ssuser=((?i)(system|none)|({user}[^=]+?))\s+(\w+=|$)""",
+      """\srt=({time}\d{1,100})""",
+      """\scs1=({alert_name}[^=]+?)\s{1,100}(\w+=|$)""",
+      """\sduser=((?i)(system|none)|({user}[^=]+?))\s{1,100}(\w+=|$)""",
+      """\ssuser=((?i)(system|none)|({user}[^=]+?))\s{1,100}(\w+=|$)""",
       """\sfname=\w:\\+[uU]sers\\+({user}[^\\]+)""",
-      """\sfname=[\s ]*({malware_file_name}[^=]+?)\s+(\w+=|$)""",
-      """\seventId=({alert_id}\d+)""",
+      """\sfname=[\s ]*({malware_file_name}[^=]+?)\s{1,100}(\w+=|$)""",
+      """\seventId=({alert_id}\d{1,100})""",
       """\sdvc=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sahost=({host}[^\s]+)""",
       """\sdvchost=({host}[^\s]+)""",
       """\sdhost=({src_host}[^\s]+)""",
       """\sdst=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-      """\|Symantec\|Endpoint Protection\|([^|]*?\|){2}({alert_type}[^|(]+?)\s*(\([^|]*?)?\|(Unknown|({alert_severity}[^|]+))\|""",
-      """\scat=({scan_type}[^=]+?)\s+(\w+=|$)""",
-      """\sfilePath=({malware_url}[^=]+?)\s+\w+=""",
+      """\|Symantec\|Endpoint Protection\|([^|]*?\|){2}({alert_type}[^|(]+?)\s{0,100}(\([^|]*?)?\|(Unknown|({alert_severity}[^|]+))\|""",
+      """\scat=({scan_type}[^=]+?)\s{1,100}(\w+=|$)""",
+      """\sfilePath=({malware_url}[^=]+?)\s{1,100}\w+=""",
       """\sfileHash=({md5}[^\s]+)""",
-      """\scs2=({outcome}[^=]+?)\s+(\w+=|$)""",
-      """\scs3=({secondary_action}[^=]+?)\s+(\w+=|$)""",
-      """\scs5=((?i)(\(Unknown\) \[-1\])|({process_name}[^=]+?))\s+(\w+=|$)""",
+      """\scs2=({outcome}[^=]+?)\s{1,100}(\w+=|$)""",
+      """\scs3=({secondary_action}[^=]+?)\s{1,100}(\w+=|$)""",
+      """\scs5=((?i)(\(Unknown\) \[-1\])|({process_name}[^=]+?))\s{1,100}(\w+=|$)""",
     ]
 
 ```

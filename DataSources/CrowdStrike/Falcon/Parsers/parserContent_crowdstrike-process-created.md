@@ -10,30 +10,11 @@ Name = crowdstrike-process-created
     TimeFormat = "epoch"
     Conditions = [ """"event_simpleName":""", """"ProcessRollup2"""" ]
     Fields = [
-      """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-      """"aip":\s*"({host}[^"]+)""",
-      """"aip":\s*"({dest_ip}[^"]+)"""
-      """"timestamp":\s*"({time}\d+)""",
-      """"event_simpleName":\s*"({event_code}[^"]+)""",
-      """"aid":\s*"({aid}[^"]+)""",
-      """"CommandLine":\s*"\s*({command_line}[^,]+?)\s*"*,""",
-      """"CommandLine":\s*"\s*({process}({directory}[^,="]*?[\\\/]+)({process_name}[^\\\/=]*?))\s*",""",
-      """"CommandLine":\s*"\s*[^",]*"({process}({directory}[^"=]*[\\\/]+?)({process_name}[^\\\/"=]+))""",
-      """"CommandLine":\s*"\s*(?=[\\\/\w.]+\s+)(({directory}[^"=]*[\\\/]+?)({process_name}[^\s"=]+))""",
-      """"CommandLine":\s*"\s*(?=[\w.]+\s+)({process_name}[^\s"=]+)""",
-      """"CommandLine":\s*"\s*({process}({directory}[^,="-]*?[\\\/]+)({process_name}[^\\\/=]*?))(?:\s*-+\w+.*)"+,""",
-      """"CommandLine":\s*"\s*(?=\w:[\\])({process}({directory}(?:[^"=]+)?[\\])?({process_name}[^\\\/"\s=]+))""",
-      """"CommandLine":\s*"\s*(?=\\"*[^\\]*\\"*)\\"*({process}({directory}(?:[^"=]+)?[\\])?({process_name}[^\\\/"\s=]+))""",
-      """"ImageFileName":\s*"({process}({directory}[^"]*?[\\\/]+)?({process_name}[^"\\\/]+))"""",
-      """"id":\s*"({process_guid}[^"]+)""",
-      """"MD5HashData":\s*"({md5}[^"]+)""",
-      """"ParentProcessId":\s*"({parent_process_guid}[^"]+)""",
-      """"TargetProcessId":\s*"({pid}[^"]+)""",
-      """"UserSid":\s*"({user_sid}[^"]+)""",
-      """log-severity\\=({log_severity}\S+)""",
-      """src-account-name":"({account_name}[^"]+)""",
-      """"((?i)SHA256String|SHA256HashData)":"({sha256}[^"]+)""""
-    ]
-    DupFields = [ "directory->process_directory" ]
-  }
+      """exabeam_host=([^=]+@\s{0,100})?({host}[\w\-.]+)""",
+      """"aip":\s{0,100}"({host}[^"]+)""",
+      """"aip":\s{0,100}"({dest_ip}[^"]+)"""
+      """"timestamp":\s{0,100}"({time}\d{1,100})""",
+      """"event_simpleName":\s{0,100}"({event_code}[^"]+)""",
+      """"aid":\s{0,100}"({aid}[^"]+)""",
+      """"CommandLine":\s{0,100}"\s{0,100}({command_line}[^,]+?)\s{0,100}"{0,20}
 ```

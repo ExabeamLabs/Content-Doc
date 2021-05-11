@@ -9,9 +9,9 @@ Name = gentax-app-login
  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
  Conditions = [ """,WEB.GENTAX,""", """,AccessLogs,""" ]
  Fields = [
-   """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+   """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
    """({app}WEB\.GENTAX),({log_type}AccessLogs)""",
-   """,AccessLogs,({category}[^,]+),({user_id}[^,]+),({user}[^,]+),({time}\d+-\d+-\d+T\d+:\d+:\d+)"""
+   """,AccessLogs,({category}[^,]+),({user_id}[^,]+),({user}[^,]+),({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100})"""
 ] 
 }
 ```

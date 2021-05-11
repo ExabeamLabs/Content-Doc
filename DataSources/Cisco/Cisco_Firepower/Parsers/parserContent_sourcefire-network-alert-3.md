@@ -10,16 +10,16 @@ Name = sourcefire-network-alert-3
   Conditions = [ """IngressInterface:""", """ACPolicy:""", """IntrusionPolicy:""" ]
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ) ({host}[\w.\-]+)""",
-    """\sSrcIP:\s*({src_ip}[a-fA-F\d.:]+)""",
-    """\sDstIP:\s*({dest_ip}[a-fA-F\d.:]+)""",
-    """\sSrcPort:\s*({src_port}\d+)""",
-    """\sDstPort:\s*({dest_port}\d+)""",
-    """\sProtocol:\s*({protocol}[^,]+?)(,|\s*$)""",
-    """\sUser:\s*(Unknown|({user}[^,]+?))(,|\s*$)""",
-    """\sIngressInterface:\s*({ingress_interface}[^,]+?)(,|\s*$)""",
-    """\sEgressInterface:\s*({egress_interface}[^,]+?)(,|\s*$)""",
-    """\sClassification:\s*({alert_type}[^,]+?)(,|\s*$)""",
-    """\sIntrusionPolicy:\s*({alert_name}[^,]+?)(,|\s*$)""",
+    """\sSrcIP:\s{0,100}({src_ip}[a-fA-F\d.:]+)""",
+    """\sDstIP:\s{0,100}({dest_ip}[a-fA-F\d.:]+)""",
+    """\sSrcPort:\s{0,100}({src_port}\d{1,100})""",
+    """\sDstPort:\s{0,100}({dest_port}\d{1,100})""",
+    """\sProtocol:\s{0,100}({protocol}[^,]+?)(,|\s{0,100}$)""",
+    """\sUser:\s{0,100}(Unknown|({user}[^,]+?))(,|\s{0,100}$)""",
+    """\sIngressInterface:\s{0,100}({ingress_interface}[^,]+?)(,|\s{0,100}$)""",
+    """\sEgressInterface:\s{0,100}({egress_interface}[^,]+?)(,|\s{0,100}$)""",
+    """\sClassification:\s{0,100}({alert_type}[^,]+?)(,|\s{0,100}$)""",
+    """\sIntrusionPolicy:\s{0,100}({alert_name}[^,]+?)(,|\s{0,100}$)""",
   ]
 }
 ```

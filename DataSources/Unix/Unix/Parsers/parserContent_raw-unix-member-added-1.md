@@ -12,7 +12,7 @@ Name = raw-unix-member-added-1
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[\w.\-]+)""",
     """\d\d:\d\d:\d\d ({host}[\w.\-]+)""",
-    """user ({account_name}.+?) added by ({user}.+?) to group ({group_name}.+?)\s*$""",
+    """user ({account_name}.+?) added by ({user}.+?) to group ({group_name}.+?)\s{0,100}$""",
   ]
   DupFields=["host->dest_host"]
 }

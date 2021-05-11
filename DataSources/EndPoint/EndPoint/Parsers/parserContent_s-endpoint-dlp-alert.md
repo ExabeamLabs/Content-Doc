@@ -22,8 +22,8 @@ Name = s-endpoint-dlp-alert
       """\s\[jyudaido="({alert_severity}[^"]+)""",
       """\s\[soushinsya="(N\/A|({src_ip}[^"]+))""",
       """\s\[taisyou_ip="(N\/A|({dest_ip}[^"]+))""",
-      """\s\[tenpu_file_name="[^"]*?({malware_file_name}[^"\\\/]+?)\s*"""",
-      """\s\[hasseibi="({time}\d\d\d\d\/\d\d\/\d\d \d+:\d+:\d+)""",
+      """\s\[tenpu_file_name="[^"]*?({malware_file_name}[^"\\\/]+?)\s{0,100}"""",
+      """\s\[hasseibi="({time}\d\d\d\d\/\d\d\/\d\d \d{1,100}:\d{1,100}:\d{1,100})""",
     ]
   }
 ```

@@ -9,16 +9,6 @@ Name = crowdstrike-usb-insert
     TimeFormat = "epoch"
     Conditions = [ """"event_simpleName":"RemovableMediaVolumeMounted""""]
     Fields = [
-      """exabeam_host=([^=]+@\s*)?({host}[\w\-.]+)""",
-      """"+aip"+:"+({host}[^"]+)"+,"""
-      """"timestamp":"({time}\d+)""",
-      """"event_simpleName":"({event_code}[^"]+)""",
-      """"aid":"({aid}[^"]+)""",
-      """"VolumeRealDeviceName":"({device_type}[^"]+)""",
-      """VolumeMountPoint":"\\\\\?\?\\\\Volume\{({device_id}[^}]+)""",
-      """suser=(system|({user}[^\s]+))""",
-      """DiskParentDeviceInstanceId"+:"+USB\\+VID_({vendor_id}[^&]+)&PID_({pid}[^\\&]+).*?\\+({device_id}[^"]+)""",
-    ]
-    DupFields = [ "pid->process_name", "device_type->volume_name" ]
-  }
+      """exabeam_host=([^=]+@\s{0,100})?({host}[\w\-.]+)""",
+      """"{1,20}aip"{1,20}:"{1,20}({host}[^"]+)"{1,20}
 ```

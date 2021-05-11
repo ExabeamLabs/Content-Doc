@@ -9,20 +9,20 @@ Name = cylance-alert-2
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """|Skyformation|""", """destinationServiceName=CylanceProtect""", """externalID="""]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """\d+\s+({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3}Z)\s+""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """\d{1,100}\s{1,100}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3}Z)\s{1,100}""",
     """\WexternalID=({src_host}[\w.\-]+)""",
     """\Woutcome=({outcome}[^\s]+)""",
-    """\Wcat=(|({alert_type}.+?))(\s+\w+=|\s*$)""",
+    """\Wcat=(|({alert_type}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """Security Alert Detected by.*?Category \[({alert_type}[^\]\[,]+?)\]"""
     """Security Alert Detected by.*?SubCategory \[({category}[^\]\[,]+?)\]"""
-    """\Wfname=(|({malware_url}.+?))(\s+\w+=|\s*$)""",
-    """\Wfname=(|({process}({process_directory}(?:(\w+:)*([\\\/]+[^\\\/"]+?)+?)?[\\\/]+)({process_name}[^"\\\/]+?)))\s+(\w+=|$)""",
-    """\Wproto=(|({file_name}.+?))(\s+\w+=|\s*$)""",
-    """\Wmsg=(|({additional_info}.+?))(\s+\w+=|\s*$)""",
+    """\Wfname=(|({malware_url}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wfname=(|({process}({process_directory}(?:(\w+:)*([\\\/]+[^\\\/"]+?)+?)?[\\\/]+)({process_name}[^"\\\/]+?)))\s{1,100}(\w+=|$)""",
+    """\Wproto=(|({file_name}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wmsg=(|({additional_info}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wsrc=({src_ip}[a-fA-F:\d.]+)""",
     """"cylance_score":({alert_severity}[^",]+)""",
-    """\WdestinationServiceName=(|({device_name}.+?))(\s+\w+=|\s*$)""",
+    """\WdestinationServiceName=(|({device_name}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """"md5":"({md5}[^"]+)""",
     """"name":"({file_name}[^"]+)"""",
     """"sha256":"({file_hash}[^"]+)""""

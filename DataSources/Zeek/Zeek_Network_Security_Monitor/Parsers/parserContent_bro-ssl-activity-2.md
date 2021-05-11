@@ -6,23 +6,21 @@ Name = bro-ssl-activity-2
   DataType = "authentication-successful"
   Conditions = [ """dataset""", """"ssl"""", """zeek""", """type""", """established""" ]
   Fields = ${BroParserTemplates.bro-activity-1.Fields}[
-    """"+server"+.+?name"+:"+({server}[^"]+)""",
-    """zeek"+.+?established"+:({outcome}[^,]+)""",
-    """zeek"+.+?version"+:"+({version}[^"]+)"+,"+cipher"+:"+({auth_method}[^"]+)"""
-    ]
-}
+    """"{1,20}server"{1,20}.+?name"{1,20}:"{1,20}({server}[^"]+)""",
+    """zeek"{1,20}.+?established"{1,20}:({outcome}[^,]+)""",
+    """zeek"{1,20}.+?version"{1,20}:"{1,20}({version}[^"]+)"{1,20}
 bro-activity-1 = {
   Vendor = Zeek
   Lms = Direct
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
-    """"+hostname"+:"+({host}[^"]+)"+,"+architecture""",
-    """"+session_id"+:"+({session_id}[^"]+)""",
-    """timestamp"+:"+({time}[^"]+)""",
-    """"+user"+:"+({user}[^"]+)""",
-    """"destination":\{"address"+:"+({dest_ip}[^"]+)"+,"+port"+:({dest_port}\d+)""",
-    """"source":\{"address"+:"+({src_ip}[^"]+)"+,"+port"+:({src_port}\d+)""",
-    """"+protocol"+:"+({protocol}[^"]+)"""
+    """"{1,20}hostname"{1,20}:"{1,20}({host}[^"]+)"{1,20},"{1,20}architecture""",
+    """"{1,20}session_id"{1,20}:"{1,20}({session_id}[^"]+)""",
+    """timestamp"{1,20}:"{1,20}({time}[^"]+)""",
+    """"{1,20}user"{1,20}:"{1,20}({user}[^"]+)""",
+    """"destination":\{"address"{1,20}:"{1,20}({dest_ip}[^"]+)"{1,20},"{1,20}port"{1,20}:({dest_port}\d{1,100})""",
+    """"source":\{"address"{1,20}:"{1,20}({src_ip}[^"]+)"{1,20},"{1,20}port"{1,20}:({src_port}\d{1,100})""",
+    """"{1,20}protocol"{1,20}:"{1,20}({protocol}[^"]+)"""
     ]
 
 ```

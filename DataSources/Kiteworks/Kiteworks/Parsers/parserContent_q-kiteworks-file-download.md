@@ -5,7 +5,7 @@ Name = q-kiteworks-file-download
   Product = Kiteworks
   Conditions = [ """Downloaded file""", """Activity:""", """File: id=""" ]
   Fields = ${KiteWorksParserTemplates.q-kiteworks-file-activity.Fields}[
-    """({accesses}Downloaded) file ({file_path}({file_parent}.*?[\\\/]+)?({file_name}[^\\\/]+?(\.({file_ext}[^\.]+))?))\.\s+File:\s""",
+    """({accesses}Downloaded) file ({file_path}({file_parent}.*?[\\\/]+)?({file_name}[^\\\/]+?(\.({file_ext}[^\.]+))?))\.\s{1,100}File:\s""",
   ]
 }
 q-kiteworks-file-activity = {
@@ -15,14 +15,14 @@ q-kiteworks-file-activity = {
     IsHVF = true
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Fields = [
-      """\w+\s+\d+ \d+:\d+:\d+\s+({host}[\w.\-]+)\s+""",
-      """({host}[\w.\-]+)\s+rest_server.py:""",
-      """exabeam_endTime=({time}\d+)""",
+      """\w+\s{1,100}\d{1,100} \d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w.\-]+)\s{1,100}""",
+      """({host}[\w.\-]+)\s{1,100}rest_server.py:""",
+      """exabeam_endTime=({time}\d{1,100})""",
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """\ssize=({bytes}\d+)""",
-      """({user_email}[^@\s]+@({email_domain}[^\s]+))\s+id=[^,]+,\s*({src_ip}[a-fA-F\d.:]+),\s*Activity:?""",
-      """Activity:\s*({activity}.+?)\."*\s*$""",
-      """Activity Type:\s+({activity}[^\s,]+)"""
+      """\ssize=({bytes}\d{1,100})""",
+      """({user_email}[^@\s]+@({email_domain}[^\s]+))\s{1,100}id=[^,]+,\s{0,100}({src_ip}[a-fA-F\d.:]+),\s{0,100}Activity:?""",
+      """Activity:\s{0,100}({activity}.+?)\."{0,20}\s{0,100}$""",
+      """Activity Type:\s{1,100}({activity}[^\s,]+)"""
     ]
 
 ```

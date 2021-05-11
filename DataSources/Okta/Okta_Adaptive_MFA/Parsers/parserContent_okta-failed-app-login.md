@@ -11,7 +11,7 @@ okta-failed-app-login = {
       """"IPAddress":"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """"user":"({user_email}[^@"\s]+?@[^@"\s]+)""",
       """"EventDetails":(\[|")({failure_reason}.*?)(\]|"),"\w+":"""
-      """Sign-in Failed\s+-\s+({failure_reason}[^":,]+)""",
+      """Sign-in Failed\s{1,100}-\s{1,100}({failure_reason}[^":,]+)""",
       """"Source":"({additional_info}[^"]+?)"""",
       """"Source":\[({additional_info}[^\]]+)""",
       """"Host":"({host}[^"]+?)"""",

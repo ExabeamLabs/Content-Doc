@@ -10,12 +10,12 @@ Name = cef-mimecast-dlp-email
   Conditions = [ """CEF:""", """|SkyFormation Cloud Apps Security|""", """destinationServiceName=Mimecast Email Security""", """"Dir":"""", """"Sender":"""", """"Rcpt":"""" ]
   Fields = [
     """"acc":"({host}[^",]+)"""",
-    """({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+Z)\s+[\w\-.]+\s+Skyformation""",
-    """request=({outcome}[^=]+?)\s+(\w+=|$)""",
+    """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}Z)\s{1,100}[\w\-.]+\s{1,100}Skyformation""",
+    """request=({outcome}[^=]+?)\s{1,100}(\w+=|$)""",
     """suser=(<>|(({user_email}[^\s@]+@[^\s@]+)|({user}[^\s]+)))""",
     """"Rcpt":"({recipients}({recipient}[^\s@;,"]+@[^\s@;,"]+)[^"]*)"""",
     """"Subject":"(|({subject}[^"]+))""""
-    """requestMethod=({direction}[^=]*?)\s+(\w+=|$)""",
+    """requestMethod=({direction}[^=]*?)\s{1,100}(\w+=|$)""",
     """"Dir":"({direction}[^"]+?)""""
     """src=({src_ip}[A-Fa-f:\d.]+)""",
     """"aCode":"(|({alert_id}[^"]+?))"""",

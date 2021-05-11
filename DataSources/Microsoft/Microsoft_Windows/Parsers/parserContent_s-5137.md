@@ -10,16 +10,16 @@ Name = s-5137
   Conditions = [ "EventCode=5137", "A directory service object was created" ]
   Fields = [
     """({event_name}A directory service object was created)""",
-    """({time}\d+/\d+/\d+ \d+:\d+:\d+ (am|AM|pm|PM))""",
+    """({time}\d{1,100}/\d{1,100}/\d{1,100} \d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM))""",
     """ComputerName=({host}[\w.\-]+)""",
     """EventCode=({event_code}\w+)""",
-    """Subject:.+?Account Name:\s+({user}.+?)\s+Account Domain:\s+({domain}.+?)\s+Logon ID:\s+({logon_id}[^\s]+)""",
-    """Object:.+?Class:\s+({object_class}.+?)\s+Operation:""",
-    """Object:\s+DN:\s+({object_dn}.+?)\s+GUID:""",
-    """Object:\s+DN:.+?({object_ou}OU.+?)\s+GUID:""",
-    """Directory Service:\s*Name(:|=)\s*({service_name}[^\s]+)\s*.*?Type(:|=)\s*({service_type}.*?Services)""",
-    """GUID(:|=)\s*\{({guid}[^\}]+)""",
-    """Operation:\s*Correlation ID(:|=)\s*\{({correlation_id}[^\}]+)""",
+    """Subject:.+?Account Name:\s{1,100}({user}.+?)\s{1,100}Account Domain:\s{1,100}({domain}.+?)\s{1,100}Logon ID:\s{1,100}({logon_id}[^\s]+)""",
+    """Object:.+?Class:\s{1,100}({object_class}.+?)\s{1,100}Operation:""",
+    """Object:\s{1,100}DN:\s{1,100}({object_dn}.+?)\s{1,100}GUID:""",
+    """Object:\s{1,100}DN:.+?({object_ou}OU.+?)\s{1,100}GUID:""",
+    """Directory Service:\s{0,100}Name(:|=)\s{0,100}({service_name}[^\s]+)\s{0,100}.*?Type(:|=)\s{0,100}({service_type}.*?Services)""",
+    """GUID(:|=)\s{0,100}\{({guid}[^\}]+)""",
+    """Operation:\s{0,100}Correlation ID(:|=)\s{0,100}\{({correlation_id}[^\}]+)""",
   ]
   DupFields = [ "host->dest_host" ]
 }

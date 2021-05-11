@@ -10,8 +10,8 @@ Name = cef-oracle-db-update
   TimeFormat = "epoch"
   Conditions = [ """|Oracle|FGA|""", """|UPDATE|""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """\Wrt=({time}\d+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """\Wrt=({time}\d{1,100})""",
     """\Wshost=({src_host}[\w\-.]+)""",
     """\Wdhost=({dest_host}[\w\-.]+)""",
     """\Wsuser=({user}[^\s]+)""",

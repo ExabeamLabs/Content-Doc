@@ -9,10 +9,10 @@ Name = s-azura-pri-auth-successful
   TimeFormat = "epoch"
   Conditions = [ """pfsvc: Primary auth succeeded for """ ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
-    """({host}[\w\.-]+)\s+pfsvc:""",
-    """\suser\s+'({user_dn}[^']+)' \(distinguishedName format\)""",
-    """\suser\s+'({user}[^']+)'""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
+    """({host}[\w\.-]+)\s{1,100}pfsvc:""",
+    """\suser\s{1,100}'({user_dn}[^']+)' \(distinguishedName format\)""",
+    """\suser\s{1,100}'({user}[^']+)'""",
     """({auth_method}Primary auth)""",
   ]
 }

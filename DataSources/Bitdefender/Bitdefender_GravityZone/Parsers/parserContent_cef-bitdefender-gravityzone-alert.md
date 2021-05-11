@@ -11,7 +11,7 @@ Name = cef-bitdefender-gravityzone-alert
   Fields = [
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """BitdefenderGZDetectionTime=({time}(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} 20\d{2} \d{1,2}:\d{1,2}:\d{1,2})""",
-    """CEF:0\|Bitdefender\|GravityZone\|.*?\|\d+\|({activity}[^\|]+)\|"""
+    """CEF:0\|Bitdefender\|GravityZone\|.*?\|\d{1,100}\|({activity}[^\|]+)\|"""
     """\d\d:\d\d:\d\d ({host}[\w\-.]+) \w+: CEF:""",
     """dvchost=({dest_host}.*?)\s\w+=""",
     """dvc=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",

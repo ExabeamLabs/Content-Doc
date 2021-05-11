@@ -9,15 +9,15 @@ Name = json-alertlogic-network-alert
   TimeFormat = "epoch_sec"
   Conditions = [ """"source_keyword":""", """"IDS"""", """"account_deployments":""", """"associatedEventCount":""" ]
   Fields = [
-    """"generator":\s*\{[^\}]*"time":\s*({time}\d+)""",
-    """"generator":\s*\{[^\}]*"hostName":\s*"({host}[\w\-.]+)""",
-    """"victims":\s*\["({dest_ip}[A-Fa-f:\d.]+)""",
-    """"attacker":\s*\[\{[^\}]*"ip":\s*"({src_ip}[A-Fa-f:\d.]+)""",
-    """"incidentId":\s*"({alert_id}[^"]+)""",
-    """"summary":\s*"({alert_name}[^"]+?)\s+from [A-Fa-f:\d.]+""",
-    """"threatRating":\s*"({alert_severity}[^"]+)""",
-    """"incident":\s*\{.*?"type":\s*"({alert_type}[^"]+)""",
-    """"facts_url":\s*"({additional_info}[^"]+)""",
+    """"generator":\s{0,100}\{[^\}]*"time":\s{0,100}({time}\d{1,100})""",
+    """"generator":\s{0,100}\{[^\}]*"hostName":\s{0,100}"({host}[\w\-.]+)""",
+    """"victims":\s{0,100}\["({dest_ip}[A-Fa-f:\d.]+)""",
+    """"attacker":\s{0,100}\[\{[^\}]*"ip":\s{0,100}"({src_ip}[A-Fa-f:\d.]+)""",
+    """"incidentId":\s{0,100}"({alert_id}[^"]+)""",
+    """"summary":\s{0,100}"({alert_name}[^"]+?)\s{1,100}from [A-Fa-f:\d.]+""",
+    """"threatRating":\s{0,100}"({alert_severity}[^"]+)""",
+    """"incident":\s{0,100}\{.*?"type":\s{0,100}"({alert_type}[^"]+)""",
+    """"facts_url":\s{0,100}"({additional_info}[^"]+)""",
   ]
 }
 ```

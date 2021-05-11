@@ -9,7 +9,7 @@ Name = badgepoint-physical-badge-access
   TimeFormat =  "dd/MM/yyyy:HH:mm:ss z"
   Conditions = [ """<badgepoint_conditions>""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """([^\|]*\|){6}({time}\d\d\/\d\d\/\d\d\d\d:\d\d:\d\d:\d\d \w+)""",
     """({badge_id}[^\|\s=]+)\|""",
     """([^\|]*\|){1}({last_name}[^\|]+)\|({first_name}[^\|]+)""",

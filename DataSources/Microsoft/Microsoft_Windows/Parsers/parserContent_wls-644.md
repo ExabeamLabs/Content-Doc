@@ -11,14 +11,14 @@ Name = wls-644
     Fields = [
       """exabeam_host=({host}[\w.\-]+)""",
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """EventID="+({event_code}[^"]+)"""",
-      """EventRecordID="+({record_id}[^"]+)"""",
-      """CallerDomain="+({caller_domain}[^"]+)"""",
-      """CallerLogonId="+\([^,]+,({logon_id}[^\)]+)"""",
-      """CallerUserName="+({caller_user}[^"]+)"""",
-      """TargetAccountID="+\%\{({user_sid}[^}]+)\}"""",
-      """TargetAccountName="+({user}[^"]+)""""
-      """CallerMachineName="+({src_host}[^"]+)"""",
+      """EventID="{1,20}({event_code}[^"]+)"""",
+      """EventRecordID="{1,20}({record_id}[^"]+)"""",
+      """CallerDomain="{1,20}({caller_domain}[^"]+)"""",
+      """CallerLogonId="{1,20}\([^,]+,({logon_id}[^\)]+)"""",
+      """CallerUserName="{1,20}({caller_user}[^"]+)"""",
+      """TargetAccountID="{1,20}\%\{({user_sid}[^}]+)\}"""",
+      """TargetAccountName="{1,20}({user}[^"]+)""""
+      """CallerMachineName="{1,20}({src_host}[^"]+)"""",
     ]
     DupFields=[ "host->dest_host",
       "caller_domain->domain"]

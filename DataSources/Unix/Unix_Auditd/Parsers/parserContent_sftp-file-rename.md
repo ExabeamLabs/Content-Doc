@@ -6,7 +6,7 @@ Name = sftp-file-rename
    Conditions = [ """sftp-server[""",""" rename """]
    Fields = ${UnixParserTemplates.sftp-server-activity.Fields}[
      """({activity}rename)""",
-      """old "+({src_file_dir}(\/[^\/]+)*\/)?({src_file_name}[^\/"]+)"+\snew\s"+({file_path}({file_parent}[^"]*?[\\\/]+)?\s*({file_name}[^"\\\/]*?(\.({file_ext}\w+))?))"+""",
+      """old "{1,20}({src_file_dir}(\/[^\/]+)*\/)?({src_file_name}[^\/"]+)"{1,20}\snew\s"{1,20}({file_path}({file_parent}[^"]*?[\\\/]+)?\s{0,100}({file_name}[^"\\\/]*?(\.({file_ext}\w+))?))"{1,20}""",
 	]
   }
 sftp-server-activity = {

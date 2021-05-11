@@ -9,18 +9,18 @@ Name = cef-windows-4673
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """CEF:""", """"eventID":"4673"""", """A privileged service was called""" ]
   Fields = [
-    """"systemTime":"({time}\d+-\d+-\d+T\d+:\d+:\d+)""",
+    """"systemTime":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100})""",
     """"computer":"({host}[\w\-.]+)""",
-    """"message":"({event_name}[^"]+?)\s*"""",
-    """"eventID":"({event_code}\d+)""",
-    """"eventRecordID":"({record_id}\d+)""",
-    """"severityValue":"({outcome}[^"]+?)\s*"""",
-    """"subjectUserSid":"({user_sid}[^"\s]+?)\s*"""",
-    """"subjectUserName":"({user}[^"\s]+?)\s*"""",
-    """"subjectDomainName":"({domain}[^"\s]+?)\s*"""",
-    """"subjectLogonId":"({logon_id}[^"\s]+?)\s*"""",
-    """"objectServer":"({object_server}[^"]+?)\s*"""",
-    """"privilegeList":"({privileges}[^"]+?)\s*"""",
+    """"message":"({event_name}[^"]+?)\s{0,100}"""",
+    """"eventID":"({event_code}\d{1,100})""",
+    """"eventRecordID":"({record_id}\d{1,100})""",
+    """"severityValue":"({outcome}[^"]+?)\s{0,100}"""",
+    """"subjectUserSid":"({user_sid}[^"\s]+?)\s{0,100}"""",
+    """"subjectUserName":"({user}[^"\s]+?)\s{0,100}"""",
+    """"subjectDomainName":"({domain}[^"\s]+?)\s{0,100}"""",
+    """"subjectLogonId":"({logon_id}[^"\s]+?)\s{0,100}"""",
+    """"objectServer":"({object_server}[^"]+?)\s{0,100}"""",
+    """"privilegeList":"({privileges}[^"]+?)\s{0,100}"""",
   ]
   DupFields = [ "host->dest_host" ]
 }

@@ -10,17 +10,17 @@ Name = q-varonis-file-activity
   TimeFormat = "MM/dd/yyyy hh:mm:ss a"
   Conditions = [ """LEEF:""", """|Varonis|DatAdvantage|""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}[^\s]+)""",
-    """devTime=({time}\d+/\d+/\d+ \d+:\d+:\d+ (am|AM|pm|PM))""",
-    """accountName=({user}.+?)\s+(\w+=|$)""",
-    """domain=(|({domain}.+?))\s+(\w+=|$)""",
-    """src=({dest_ip}[A-Fa-f:\d.]+)\s+(\w+=|$)""",
-    """Event_Type=({accesses}.+?)\s+(\w+=|$)""",
-    """Event_Status=({outcome}.+?)\s+(\w+=|$)""",
-    """Affected_Object=(|({file_path}.+?))\s+(\w+=|$)""",
-    """Affected_Object=(({file_parent}[^=]+?)\\+)?({file_name}[^\\]+?(\.({file_ext}[^\.\s]+))?)\s+(\w+=|$)""",
-    """Affected_Object_Path=(|({file_path}.+?))\s+(\w+=|$)""",
-    """Affected_Object_Path=({file_parent}.+?)\\[^\\]+\s+(\w+=|$)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
+    """devTime=({time}\d{1,100}/\d{1,100}/\d{1,100} \d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM))""",
+    """accountName=({user}.+?)\s{1,100}(\w+=|$)""",
+    """domain=(|({domain}.+?))\s{1,100}(\w+=|$)""",
+    """src=({dest_ip}[A-Fa-f:\d.]+)\s{1,100}(\w+=|$)""",
+    """Event_Type=({accesses}.+?)\s{1,100}(\w+=|$)""",
+    """Event_Status=({outcome}.+?)\s{1,100}(\w+=|$)""",
+    """Affected_Object=(|({file_path}.+?))\s{1,100}(\w+=|$)""",
+    """Affected_Object=(({file_parent}[^=]+?)\\+)?({file_name}[^\\]+?(\.({file_ext}[^\.\s]+))?)\s{1,100}(\w+=|$)""",
+    """Affected_Object_Path=(|({file_path}.+?))\s{1,100}(\w+=|$)""",
+    """Affected_Object_Path=({file_parent}.+?)\\[^\\]+\s{1,100}(\w+=|$)""",
   ]
   DupFields = [ "accesses->event_code" ]
 }

@@ -9,7 +9,7 @@ Name = sophos-safeguard-activity
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """EVT_LOG_MESSAGE_ID=""", """EVT_APPLICATION_ID=""", """EVT_MACHINE_GUID=""", """EVT_USER_GUID=""", """EVT_LOG_MESSAGE_PREV=""", """EVT_LOG_MESSAGE_SEQ=""" ]
   Fields = [
-    """EVT_ID="({alert_id}\d+)""",
+    """EVT_ID="({alert_id}\d{1,100})""",
     """EVT_APPLICATION_ID="({app}[^"]+)""",
     """EVT_MACHINE_NAME="({host}[^"]+)""",
     """EVT_MACHINE_DOMAIN="({domain}[^"]+)""",

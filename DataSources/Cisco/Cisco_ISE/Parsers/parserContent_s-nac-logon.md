@@ -29,7 +29,7 @@ ${CiscoParsersTemplates.s-nac-logon}{
   TimeFormat = "epoch"
   Conditions = [ """CISE_Passed_Authentications""", """|Cisco|Cisco ISE|""", """CEF:""" ]
   Fields = [
-    """\Wrt=({time}\d+)""",
+    """\Wrt=({time}\d{1,100})""",
     """exabeam_host=({host}[^\s]+)""",
     """ahost=({host}[^\s]+)"""
     """shost=({src_host}[^\s]+)""",
@@ -38,8 +38,8 @@ ${CiscoParsersTemplates.s-nac-logon}{
     """dhost=({dest_host}[^\s]+)""",
     """dst=({dest_ip}[A-Fa-f:\d.]+)""",
     """dst=({auth_server}[A-Fa-f:\d.]+)""",
-    """dpt=({dest_port}\d+)""",
-    """Cisco ISE\|(|[^\|]+)\|({event_code}\d+)\|""",
+    """dpt=({dest_port}\d{1,100})""",
+    """Cisco ISE\|(|[^\|]+)\|({event_code}\d{1,100})\|""",
     """deviceSeverity=({severity}[^\s]+)""",
     """cs1=({auth_method}[^\s]+)""",
     """ad.User=({user}[^\s]+)""",

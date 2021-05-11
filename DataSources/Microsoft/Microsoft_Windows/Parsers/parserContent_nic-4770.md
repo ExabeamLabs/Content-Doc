@@ -12,15 +12,15 @@ Name = nic-4770
     """({event_name}A Kerberos service ticket was renewed)""",
     """({time}\w{3}\s\d{2}\s\d{2}:\d{2}:\d{2}\s\d{4})""",
     """({event_code}4770)""",
-    """(Information|Audit Success|Success Audit)\s+({host}[\w.\-]+)\s+""",
-    """Microsoft-Windows-Security-Auditing\s+(({domain}[^\\]+)\\+)?({user}[^@\s]+)""",
-    """Account Name:\s+(?=\w)({user}.+?)(@({domain}.+?))?\s+Account Domain:""",
-    """Account Domain:\s+(?=\w)({domain}.+?)\s+Service Information:""",
-    """Client Address:\s+(::[\w]+:)?({src_ip}.+?)\s+Client Port""",
-    """Service Name:\s+(?=\w)({service_name}.+?)\s+Service ID:""",
-    """Service Name:\s+(?=\w)({dest_host}.+?\$)\s+Service ID:""",
-    """Ticket Options:\s+({ticket_options}.+?)\s+Ticket Encryption Type:""",
-    """Ticket Encryption Type:\s+({ticket_encryption_type}[^\s]+)"""
+    """(Information|Audit Success|Success Audit)\s{1,100}({host}[\w.\-]+)\s{1,100}""",
+    """Microsoft-Windows-Security-Auditing\s{1,100}(({domain}[^\\]+)\\+)?({user}[^@\s]+)""",
+    """Account Name:\s{1,100}(?=\w)({user}.+?)(@({domain}.+?))?\s{1,100}Account Domain:""",
+    """Account Domain:\s{1,100}(?=\w)({domain}.+?)\s{1,100}Service Information:""",
+    """Client Address:\s{1,100}(::[\w]+:)?({src_ip}.+?)\s{1,100}Client Port""",
+    """Service Name:\s{1,100}(?=\w)({service_name}.+?)\s{1,100}Service ID:""",
+    """Service Name:\s{1,100}(?=\w)({dest_host}.+?\$)\s{1,100}Service ID:""",
+    """Ticket Options:\s{1,100}({ticket_options}.+?)\s{1,100}Ticket Encryption Type:""",
+    """Ticket Encryption Type:\s{1,100}({ticket_encryption_type}[^\s]+)"""
   ]
 }
 ```

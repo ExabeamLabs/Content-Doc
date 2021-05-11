@@ -10,10 +10,10 @@ Name = json-4672
     Conditions = ["""4672""", """"PrivilegeList":""""]
     Fields = [
       """({event_name}Special privileges assigned to new logon)""", 
-      """"EventReceivedTime":\s*({time}\d+)""",
+      """"EventReceivedTime":\s{0,100}({time}\d{1,100})""",
       """"TimeCreated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """"Computer":"({host}[^"]+)"""",
-      """"timestamp":\s*({time}\d+)""",
+      """"timestamp":\s{0,100}({time}\d{1,100})""",
       """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """"(Hostname|MachineName)":"({host}[^"]*)""",
       """({event_code}4672)""",

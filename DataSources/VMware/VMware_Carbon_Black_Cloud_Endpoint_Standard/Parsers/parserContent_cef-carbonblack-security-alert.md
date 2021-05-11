@@ -15,7 +15,7 @@ Name = cef-carbonblack-security-alert
     """(\s|\|)duser=({user}[^\s]+)""",
     """([^\|]*\|){5}({alert_type}[^\|]+)""",
     """([^\|]*\|){6}({alert_name}[^\|]+)""",
-    """([^\|]*\|){7}({alert_severity}\d+)""",
+    """([^\|]*\|){7}({alert_severity}\d{1,100})""",
     """(\s|\|)cs4="({alert_id}[^"]+)"""
   ]
   DupFields = [ "host->dest_host" ]

@@ -10,15 +10,15 @@ Name = q-microsoft-4719
   Conditions = [ "EventIDCode=4719", "System audit policy was changed" ]
   Fields = [
     """({event_name}System audit policy was changed)""",
-    """TimeGenerated=({time}\d+)""",
-    """EventIDCode=({event_code}\d+)""",
-    """\s+Account Name:\s+(({domain}[^\\]+)\\+)?({user}[^\s\\]+)\s+Account Domain""",
-    """\s+Account Domain:\s+({domain}[^\s]+)""",
-    """\s+Logon ID:\s+({logon_id}[^\s]+)""",
-    """\s+Category:\s+({audit_category}.+?)\s+Subcategory:""",
-    """\s+Subcategory:\s+({subcategory}.+?)\s+Subcategory GUID:""",
-    """\s+Changes:\s+({policy}.+?)\s*(\w+:|$)""",
-    """\s+Computer=({host}[\w.\-]+)"""
+    """TimeGenerated=({time}\d{1,100})""",
+    """EventIDCode=({event_code}\d{1,100})""",
+    """\s{1,100}Account Name:\s{1,100}(({domain}[^\\]+)\\+)?({user}[^\s\\]+)\s{1,100}Account Domain""",
+    """\s{1,100}Account Domain:\s{1,100}({domain}[^\s]+)""",
+    """\s{1,100}Logon ID:\s{1,100}({logon_id}[^\s]+)""",
+    """\s{1,100}Category:\s{1,100}({audit_category}.+?)\s{1,100}Subcategory:""",
+    """\s{1,100}Subcategory:\s{1,100}({subcategory}.+?)\s{1,100}Subcategory GUID:""",
+    """\s{1,100}Changes:\s{1,100}({policy}.+?)\s{0,100}(\w+:|$)""",
+    """\s{1,100}Computer=({host}[\w.\-]+)"""
   ]
   DupFields = [ "host->dest_host" ]
 }

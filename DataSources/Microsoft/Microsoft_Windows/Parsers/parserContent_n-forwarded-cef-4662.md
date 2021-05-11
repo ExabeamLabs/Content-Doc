@@ -10,17 +10,17 @@ Name = n-forwarded-cef-4662
   Conditions = [ """|McAfee|ESM|""", """|43-263046620|""", """|An operation was performed on an object|""" ]
   Fields = [
     """({event_name}An operation was performed on an object)""",
-    """\Wrt=({time}\d+)""",
-    """({host}\S+)\s+CEF:\d+\|"""
+    """\Wrt=({time}\d{1,100})""",
+    """({host}\S+)\s{1,100}CEF:\d{1,100}\|"""
     """\|43-2630({event_code}4662)0\|""",
-    """\Wact=({outcome}.+?)\s+(\w+=|$)""",
+    """\Wact=({outcome}.+?)\s{1,100}(\w+=|$)""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
-    """\Wsntdom=({domain}.+?)\s+(\w+=|$)""",
-    """\Wshost=({src_host}.+?)\s+(\w+=|$)""",
-    """\Wsuser=({user}.+?)\s+(\w+=|$)""",
-    """\WnitroSecurity_ID=({user_sid}.+?)\s+(\w+=|$)""",
-    """\WnitroSource_Logon_ID=({logon_id}.+?)\s+(\w+=|$)""",
-    """\WnitroLogon_Type=({logon_type}.+?)\s+(\w+=|$)"""
+    """\Wsntdom=({domain}.+?)\s{1,100}(\w+=|$)""",
+    """\Wshost=({src_host}.+?)\s{1,100}(\w+=|$)""",
+    """\Wsuser=({user}.+?)\s{1,100}(\w+=|$)""",
+    """\WnitroSecurity_ID=({user_sid}.+?)\s{1,100}(\w+=|$)""",
+    """\WnitroSource_Logon_ID=({logon_id}.+?)\s{1,100}(\w+=|$)""",
+    """\WnitroLogon_Type=({logon_type}.+?)\s{1,100}(\w+=|$)"""
   ]
 }
 ```

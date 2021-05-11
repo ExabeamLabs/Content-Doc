@@ -9,15 +9,15 @@ Name = n-forwarded-cef-symantec-epp-alert
   TimeFormat = "epoch"
   Conditions = [ "|McAfee|ESM", "|310-2771385440|" ]
   Fields = [ 
-    """\srt=({time}\d+)""",
-    """\|McAfee\|ESM\|.+?\|.+?\|({alert_type}.+?)\|""",
-    """\|McAfee\|ESM\|.+?\|.+?\|.+?\|({alert_severity}.+?)\|""",
+    """\srt=({time}\d{1,100})""",
+    """\|McAfee\|ESM\|[^|]+?\|[^|]+?\|({alert_type}.+?)\|""",
+    """\|McAfee\|ESM\|[^|]+?\|[^|]+?\|[^|]+?\|({alert_severity}.+?)\|""",
     """\sdeviceTranslatedAddress=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\sexternalId=({alert_id}\d+)""",
-    """\sshost=({src_host}.+?)\s+\w+=""",
+    """\sexternalId=({alert_id}\d{1,100})""",
+    """\sshost=({src_host}.+?)\s{1,100}\w+=""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\snitroThreat_Name=({alert_name}.+?)\s+\w+=""",
-    """\snitroDestination_Filename=({malware_url}.+?)\s+\w+="""
+    """\snitroThreat_Name=({alert_name}.+?)\s{1,100}\w+=""",
+    """\snitroDestination_Filename=({malware_url}.+?)\s{1,100}\w+="""
   ]
   SOAR {
     IncidentType = "malware"

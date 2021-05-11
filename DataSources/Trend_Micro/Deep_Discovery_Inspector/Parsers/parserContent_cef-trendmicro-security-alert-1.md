@@ -10,20 +10,20 @@ Name = cef-trendmicro-security-alert-1
   Conditions = [ """CEF:""", """|Trend Micro|Deep Discovery Inspector|""", """dvc=""" ]
   Fields = [
     """CEF:([^\|]*\|){5}({alert_name}[^\|]+)\|({alert_severity}[^\|]+)""",
-    """\WeventId=({alert_id}\d+)""",
-    """\Wdvc=({host}.+?)(\s+\w+=|\s*$)""",
-    """\Wdvchost=({host}.+?)(\s+\w+=|\s*$)""",
-    """\Wrt=({time}\w+\s+\d\d \d\d\d\d \d\d:\d\d:\d\d \S+)""",
+    """\WeventId=({alert_id}\d{1,100})""",
+    """\Wdvc=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wdvchost=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wrt=({time}\w+\s{1,100}\d\d \d\d\d\d \d\d:\d\d:\d\d \S+)""",
     """\Wshost=({src_host}[^\s]+)""",
     """\Wdhost=({dest_host}[^\s]+)""",
-    """\Wapp=({app}.+?)(\s+\w+=|\s*$)""",
+    """\Wapp=({app}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdst=({src_ip}[a-fA-F\d.:]+)""",
-    """\Wdpt=({src_port}\d+)""",
+    """\Wdpt=({src_port}\d{1,100})""",
     """\Wsrc=({dest_ip}[a-fA-F\d.:]+)""",
-    """\Wspt=({dest_port}\d+)""",
-    """\Wact=({action}.+?)(\s+\w+=|\s*$)""",
-    """\Wcn3=({threat_type}.+?)(\s+\w+=|\s*$)""",
-    """\Wcat=({alert_type}.+?)(\s+\w+=|\s*$)""",
+    """\Wspt=({dest_port}\d{1,100})""",
+    """\Wact=({action}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wcn3=({threat_type}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wcat=({alert_type}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """CEF:(?:[^\|]*\|){5}({alert_name}[^\|]+)\|(Unknown|({alert_severity}[^\|]+))\|\w+="""
   ]
 }

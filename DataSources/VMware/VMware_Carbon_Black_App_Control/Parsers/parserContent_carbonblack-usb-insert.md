@@ -17,8 +17,8 @@ Name = carbonblack-usb-insert
     """\susername="(({domain}[^"\\]+)\\)?({user}[^"\\]+)"""",
     """\sip_address="({dest_ip}[a-fA-F\d.:]+)""",
     """\sprocess="({process}(({directory}[^"]+?)\\)?({process_name}[^"\\]+?))"""",
-    """Device '({device_type}[^'(]+?)\s*\(""",
-    """\(S\/N:\s*({device_id}[^)]+)\)"""
+    """Device '({device_type}[^'(]+?)\s{0,100}\(""",
+    """\(S\/N:\s{0,100}({device_id}[^)]+)\)"""
   ]
   DupFields = [ "directory->process_directory" ]
 }

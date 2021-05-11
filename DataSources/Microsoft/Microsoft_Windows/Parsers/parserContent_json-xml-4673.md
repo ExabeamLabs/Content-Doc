@@ -11,8 +11,8 @@ Name = json-xml-4673
     Fields = [
       """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """"Computer":"({host}[^"]+)""",
-      """"EventID":"({event_code}\d+)""",
-      """<Data Name='SubjectUserSid'>\s*(({domain}[^\\]+)\\)?({user}[^<]+)</Data>""",
+      """"EventID":"({event_code}\d{1,100})""",
+      """<Data Name='SubjectUserSid'>\s{0,100}(({domain}[^\\]+)\\)?({user}[^<]+)</Data>""",
       """<Data Name='SubjectUserName'>({user}[^<]+?)</Data>""",
       """<Data Name='SubjectDomainName'>({domain}[^<]+?)</Data>""",
       """<Data Name='SubjectLogonId'>({login_id}[^<]+?)</Data>""",

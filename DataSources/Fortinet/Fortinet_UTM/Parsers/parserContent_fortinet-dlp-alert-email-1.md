@@ -9,18 +9,18 @@ Name = fortinet-dlp-alert-email-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """from=""", """to=""", """subject=""", """message_name=""", """folder_description=""", """action=""" ]
   Fields = [
-    """({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+Z)\s+({host}[\w\-.]+)""",
+    """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}Z)\s{1,100}({host}[\w\-.]+)""",
     """\Waction=({action}[^;]+)""",
     """\Wfrom=({sender}[^\s@;]+@({external_domain_sender}[^\s@;]+))""",
     """\Wto=({recipients}({recipient}[^\s@;,]+@({external_domain_recipient}[^\s@;,]+))[^;]*)""",
-    """\Wsubject=({subject}.*?);\s+(\w+=|$)""",
-    """\Wmessage_name=({message_name}.*?);\s+(\w+=|$)""",
-    """\Wmessage_size=({bytes}\d+)""",
-    """\Wfolder_description=({additional_info}.*?);\s+(\w+=|$)""",
-    """\Wfilename=({file_name}[^\.]+\.({file_ext}.*?));\s+(\w+=|$)""",
-    """\Wfiletype=({file_type}.*?);\s+(\w+=|$)""",
+    """\Wsubject=({subject}.*?);\s{1,100}(\w+=|$)""",
+    """\Wmessage_name=({message_name}.*?);\s{1,100}(\w+=|$)""",
+    """\Wmessage_size=({bytes}\d{1,100})""",
+    """\Wfolder_description=({additional_info}.*?);\s{1,100}(\w+=|$)""",
+    """\Wfilename=({file_name}[^\.]+\.({file_ext}.*?));\s{1,100}(\w+=|$)""",
+    """\Wfiletype=({file_type}.*?);\s{1,100}(\w+=|$)""",
     """({direction}Outbound|Inbound)""",
-    """Sent To:\s*({src_ip}[A-Fa-f:\d.]+)""",
+    """Sent To:\s{0,100}({src_ip}[A-Fa-f:\d.]+)""",
   ]
   DupFields = [ "file_name->attachments" ]
 }

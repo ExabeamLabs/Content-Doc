@@ -9,16 +9,16 @@ Name = q-ccure-badge-access
    TimeFormat = "yyyy-MM-dd HH:mm:ss"
    Conditions = [ """XmlMessage:""", """MessageType: "Card""", """PrimaryPartitionName:"""]
    Fields = [
-     """exabeam_host=(?:.*@\s*)?({host}[^\s]+)""",
-     """ServerUTC:\s*"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-     """MessageType:\s*"({outcome}[^"]+)""",
-     """<Direction>\s*({direction}.+)\s*</Direction>""",
-     """<Card>\s*({badge_id}\d+)\s*</Card>""",
-     """<PrimaryObjectName>\s*({last_name}[^,]+?),\s*({first_name}.*?)\s*</PrimaryObjectName>""",
-     """<SecondaryObjectName>\s*({location_door}.+?)\s*</SecondaryObjectName>""",
-     """PrimaryPartitionName:\s*"({user_city}[^"]+)""",
-     """<AdmitCode>\s*({outcome_reason}.+?)\s*</AdmitCode>""",
-     """<RejectCode>\s*({outcome_reason}.+?)\s*</RejectCode>"""
+     """exabeam_host=(?:.*@\s{0,100})?({host}[^\s]+)""",
+     """ServerUTC:\s{0,100}"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+     """MessageType:\s{0,100}"({outcome}[^"]+)""",
+     """<Direction>\s{0,100}({direction}.+)\s{0,100}</Direction>""",
+     """<Card>\s{0,100}({badge_id}\d{1,100})\s{0,100}</Card>""",
+     """<PrimaryObjectName>\s{0,100}({last_name}[^,]+?),\s{0,100}({first_name}.*?)\s{0,100}</PrimaryObjectName>""",
+     """<SecondaryObjectName>\s{0,100}({location_door}.+?)\s{0,100}</SecondaryObjectName>""",
+     """PrimaryPartitionName:\s{0,100}"({user_city}[^"]+)""",
+     """<AdmitCode>\s{0,100}({outcome_reason}.+?)\s{0,100}</AdmitCode>""",
+     """<RejectCode>\s{0,100}({outcome_reason}.+?)\s{0,100}</RejectCode>"""
    ]
  }
 ```

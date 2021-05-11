@@ -10,16 +10,16 @@ Name = varonis-file-activity
     TimeFormat = "MM/dd/yyyy hh:mm:ss a"
     Conditions = [ """Acting Object SAM Account Name:""","""Changed Permissions:""" ]
     Fields = [
-      """Event Time:\s*({time}\d+/\d+/\d+ \d+:\d+:\d+ (am|AM|pm|PM))""",
+      """Event Time:\s{0,100}({time}\d{1,100}/\d{1,100}/\d{1,100} \d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM))""",
       """exabeam_host=({host}[^\s]+)""",
-      """\sActing Object:\s*({domain}[^\\\s]+)\\""",
-      """\sActing Object SAM Account Name:\s*({user}.+?)\s+File Server""",
-      """\sIP Address/Host:\s*(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^\s]+))""",
-      """\sEvent Type:\s*({accesses}.+?)\s*IP Address""",
-      """\sAffected Object:\s*({file_name}.+?)\s*Event Type:""",
-      """\sAffected Object:\s*.*(?=\.)({file_ext}.+?)\s*Event Type:""",
-      """\sPath:\s*({file_path}.+?)\s*Affected Object:""",
-      """\sPath:\s*({file_parent}.+?)\\[^\\]+\s+Affected Object:"""
+      """\sActing Object:\s{0,100}({domain}[^\\\s]+)\\""",
+      """\sActing Object SAM Account Name:\s{0,100}({user}.+?)\s{1,100}File Server""",
+      """\sIP Address/Host:\s{0,100}(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^\s]+))""",
+      """\sEvent Type:\s{0,100}({accesses}.+?)\s{0,100}IP Address""",
+      """\sAffected Object:\s{0,100}({file_name}.+?)\s{0,100}Event Type:""",
+      """\sAffected Object:\s{0,100}.*(?=\.)({file_ext}.+?)\s{0,100}Event Type:""",
+      """\sPath:\s{0,100}({file_path}.+?)\s{0,100}Affected Object:""",
+      """\sPath:\s{0,100}({file_parent}.+?)\\[^\\]+\s{1,100}Affected Object:"""
     ]
     DupFields = [ "accesses->event_code" ]
   }

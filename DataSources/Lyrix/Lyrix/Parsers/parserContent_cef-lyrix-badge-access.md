@@ -12,12 +12,12 @@ Name = cef-lyrix-badge-access
     """CEF:([^\|]*\|){5}({outcome}[^\|]+)""",
     """\Wdvc=({host}[A-Fa-f:\d.]+)""",
     """\Wdvchost=({host}[\w\-.]+)""",
-    """\Wrt=({time}\d+)""",
-    """\Wcs3=({direction}.+?)\s+(\w+=|$)""",
-    """\Wcs2=({location_door}.+?)\s+(\w+=|$)""",
-    """\Wcs1=({location_building}.+?)\s+(\w+=|$)""",
+    """\Wrt=({time}\d{1,100})""",
+    """\Wcs3=({direction}.+?)\s{1,100}(\w+=|$)""",
+    """\Wcs2=({location_door}.+?)\s{1,100}(\w+=|$)""",
+    """\Wcs1=({location_building}.+?)\s{1,100}(\w+=|$)""",
     """\Wsuser=({user}[^\s]+)""",
-    """\Wsuid=({user_fullname}.+?)\s+(\w+=|$)"""
+    """\Wsuid=({user_fullname}.+?)\s{1,100}(\w+=|$)"""
   ]
 }
 ```

@@ -11,8 +11,8 @@ Name = json-auditd-account-switch
   Fields = [
     """"@timestamp":"({time}[^"]+)""",
     """"name_map":\{.*?"uid":"(|({user}[^"]+))"""",
-    """"user":\{.*?"uid":"({user_id}\d+)"""",
-    """"pid":"({pid}\d+)""",
+    """"user":\{.*?"uid":"({user_id}\d{1,100})"""",
+    """"pid":"({pid}\d{1,100})""",
     """"process":\{.*?"exe":"(|({command_line}({directory}[^"]+\/).*?))"""",
     """"data":\{.*?"acct":"(|({account}[^"]+))"""",
     """"host":\{.*?"name":"(|({host}[^"]+))""""

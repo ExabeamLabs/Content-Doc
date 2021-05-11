@@ -10,9 +10,9 @@ Name = jun-ui-login-event
     Conditions = [ """UI_LOGIN_EVENT""" ]
     Fields = [
         """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)(?:z|Z)?""",
-        """\s({host}[^\s]*)\s(\w+|-)\s(\d+|-)\sUI_LOGIN_EVENT""",
+        """\s({host}[^\s]*)\s(\w+|-)\s(\d{1,100}|-)\sUI_LOGIN_EVENT""",
         """username="(?!N\/A)({user}[^"]+)"\s""",
-        """ssh-connection="({src_ip}(\d{1,3}\.){3}\d{1,3})\s({src_port}\d+)\s({dest_ip}(\d{1,3}\.){3}\d{1,3})\s({dest_port}\d+)"\s""",
+        """ssh-connection="({src_ip}(\d{1,3}\.){3}\d{1,3})\s({src_port}\d{1,100})\s({dest_ip}(\d{1,3}\.){3}\d{1,3})\s({dest_port}\d{1,100})"\s""",
         """({event_name}UI_LOGIN_EVENT)"""
     ]
 }

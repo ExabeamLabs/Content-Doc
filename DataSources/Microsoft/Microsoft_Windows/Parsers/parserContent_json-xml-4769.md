@@ -10,7 +10,7 @@ Name = json-xml-4769
     Conditions = [ """"EventID":"4769"""", """<Data Name='""" ]
     Fields = [
       """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-      """"EventID":"({event_code}\d+)""",
+      """"EventID":"({event_code}\d{1,100})""",
       """"Computer":"({host}[^"]+)""",
       """<Data Name='Status'>({result_code}[^<]+)</Data>""",
       """<Data Name='ServiceName'>({dest_host}[^<]+\$)</Data>""",

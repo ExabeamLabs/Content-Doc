@@ -10,16 +10,16 @@ Name = xml-powershell-4104
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSSZ"
   Conditions = [ """<EventID>4104<""", """Microsoft-Windows-PowerShell""", """ScriptBlockText""" ]
   Fields = [
-    """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)'""",
+    """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)'""",
     """<Security UserID='({user_sid}[^']+)""",
     """<Computer>({host}[^<]+)</Computer>""",
     """<Data Name='ScriptBlockId'>({scriptblock_id}[^<]+)</Data>""",
-    """Function\s+'({function}[^']+)""",
-    """<Data Name='MessageTotal'>({message_total}\d+)""",
-    """<Data Name='MessageNumber'>({message_number}\d+)""",
+    """Function\s{1,100}'({function}[^']+)""",
+    """<Data Name='MessageTotal'>({message_total}\d{1,100})""",
+    """<Data Name='MessageNumber'>({message_number}\d{1,100})""",
     """<Message>({script_message}[^:]+)""",
     """<Data Name='Path'>({path}[^<]+)</Data>""",
-    """<Execution ProcessID='({pid}\d+)""",
+    """<Execution ProcessID='({pid}\d{1,100})""",
     """({event_code}4104)""",
     """({event_name}Creating Scriptblock text)""",
     """({process_name}PowerShell)""",

@@ -15,11 +15,11 @@ Name = auditbeat-process-creation
     """"actor":\{[^\}]+?"secondary":"(|({user}[^"]+))""""
     """"actor":\{[^\}]+?"primary":"(|({account}[^"]+))""""
     """"name_map":\{.*?"suid":"(|({account}[^"]+))"""",
-    """"user":\{.*?"uid":"({user_id}\d+)"""",
-    """"user":\{.*?"auid":"({account_used_id}\d+)"""",
-    """"user":\{.*?"gid":"({group_id}\d+)"""",
-    """"pid":"({pid}\d+)""",
-    """"ppid":"({parent_process_id}\d+)""",
+    """"user":\{.*?"uid":"({user_id}\d{1,100})"""",
+    """"user":\{.*?"auid":"({account_used_id}\d{1,100})"""",
+    """"user":\{.*?"gid":"({group_id}\d{1,100})"""",
+    """"pid":"({pid}\d{1,100})""",
+    """"ppid":"({parent_process_id}\d{1,100})""",
     """"process":\{.*?"name":"(|({process_name}[^"]+))"""",
     """"process":\{.*?"exe":"(|({process}({process_directory}[^"]+\/).*?))"""",
     """"process":\{.*?"args":\[({arg}[^\[\]]+?)\]""",

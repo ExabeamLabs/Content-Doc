@@ -6,7 +6,5 @@ Name = sentinelone-file-delete-1
   Conditions = [ """"SentinelOne"""", """Deep Visibility Endpoint""", """fileDeletion {""" ]
   Fields = ${SentinelOneParserTemplates.sentinelone-activity.Fields} [
     """({event_name}fileDeletion)""",
-    """type"+:"+file"+,"+name"+:"+({file_path}({file_parent}[^"]+?)[\\\/]*({file_name}[^\\\/"]+?(\.({file_ext}[^\.\s"\\\/]+))?))"""",
-  ]
-}
+    """type"{1,20}:"{1,20}file"{1,20}
 ```

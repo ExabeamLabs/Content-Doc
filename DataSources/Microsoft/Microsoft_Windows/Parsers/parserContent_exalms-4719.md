@@ -10,12 +10,12 @@ Name = exalms-4719
   Conditions = [ """"event_id":4719""", """System audit policy was changed.""", """"@timestamp"""" ]
   Fields = [
     """({event_name}System audit policy was changed)""",
-    """"@timestamp"\s*:\s*"({time}.+?)"""",
-    """"(?:winlog\.)?computer_name"\s*:\s*"({host}.+?)"""",
-    """"event_id"\s*:\s*({event_code}\d+)""",
-    """"(SubjectUserName)"\s*:\s*"({user}.+?)\s*"""",
-    """"(SubjectDomainName)"\s*:\s*"({domain}.+?)\s*"""",
-    """"(SubjectLogonId|logon_id)"\s*:\s*"({logon_id}.+?)\s*"""",
+    """"@timestamp"\s{0,100}:\s{0,100}"({time}.+?)"""",
+    """"(?:winlog\.)?computer_name"\s{0,100}:\s{0,100}"({host}.+?)"""",
+    """"event_id"\s{0,100}:\s{0,100}({event_code}\d{1,100})""",
+    """"(SubjectUserName)"\s{0,100}:\s{0,100}"({user}.+?)\s{0,100}"""",
+    """"(SubjectDomainName)"\s{0,100}:\s{0,100}"({domain}.+?)\s{0,100}"""",
+    """"(SubjectLogonId|logon_id)"\s{0,100}:\s{0,100}"({logon_id}.+?)\s{0,100}"""",
     """(\\t|\\n|\s)Category:(\\t|\\n|\s)*({audit_category}.+?)(\\t|\\n|\s)+Subcategory:""",
     """(\\t|\\n|\s)Subcategory:(\\t|\\n|\s)*({subcategory}.+?)(\\t|\\n|\s)+Subcategory GUID:""",
     """(\\t|\\n|\s)Changes:(\\t|\\n|\s)*({policy}.+?)(\\t|\\n|")""",

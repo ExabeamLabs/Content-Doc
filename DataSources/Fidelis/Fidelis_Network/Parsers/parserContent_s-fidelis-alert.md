@@ -10,7 +10,7 @@ Name = s-fidelis-alert
   Conditions = [ """Product="Fidelis network"""", """AlertId=""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\d\d:\d\d:\d\d ({host}[^\s]+)\s+Product=""",
+    """\d\d:\d\d:\d\d ({host}[^\s]+)\s{1,100}Product=""",
     """\sPolicy="({alert_name}[^"]+)"""",
     """\sProtocol="({alert_type}[^"]+)"""",
     """\sSeverity="({alert_severity}[^"]+)"""",
@@ -18,7 +18,7 @@ Name = s-fidelis-alert
     """\sSrcPort="({src_port}[^"]+)"""",
     """\sDestIP="({dest_ip}[^"]+)"""",
     """\sDestPort="({dest_port}[^"]+)"""",
-    """\sMessage="({additional_info}.+?)"\s+MD5="""",
+    """\sMessage="({additional_info}.+?)"\s{1,100}MD5="""",
     """\sTarget="(?:(<n\/a>)|({malware_url}[^"]+))"""",
     """\sMalware="(?:(<n\/a> <n\/a>)|({malware_url}[^"]+))"""",
     """\sSubject="(?:(<n\/a>)|({malware_url}[^"]+))""""

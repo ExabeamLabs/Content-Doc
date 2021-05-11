@@ -10,16 +10,16 @@ Name = q-4697
   Conditions = [ """EventID=4697""", """Service File Name:"""]
   Fields = [ 
     """\WComputer=({host}[\w\.\-]+)""",
-    """\WEventID=({event_code}\d+)""",
-    """\WTimeGenerated=({time}\d+)""",
-    """\WSecurity ID:\s*(|({user_sid}.+?))\s+Account Name:""",
-    """\WAccount Name:\s*({user}[^\s]+)""",
-    """\WAccount Domain:\s*({domain}[^\s]+)""",
-    """\WLogon ID:\s*({logon_id}[^\s]+)""",
-    """\WService Name:\s*(|({service_name}.+?))\s+Service File Name:""",
-    """\WService File Name:\s*(|({process}({directory}(?:(\w+:)?[^:]+)?[\\\/])?({process_name}.+?)))\s+Service Type:""",
-    """\WService Type:\s*(|({service_type}.+?))\s+Service Start Type:""",
-    """\WService Account:\s*(({account_domain}[^\\]+)\\)?({account_name}.+?)\s*$"""
+    """\WEventID=({event_code}\d{1,100})""",
+    """\WTimeGenerated=({time}\d{1,100})""",
+    """\WSecurity ID:\s{0,100}(|({user_sid}.+?))\s{1,100}Account Name:""",
+    """\WAccount Name:\s{0,100}({user}[^\s]+)""",
+    """\WAccount Domain:\s{0,100}({domain}[^\s]+)""",
+    """\WLogon ID:\s{0,100}({logon_id}[^\s]+)""",
+    """\WService Name:\s{0,100}(|({service_name}.+?))\s{1,100}Service File Name:""",
+    """\WService File Name:\s{0,100}(|({process}({directory}(?:(\w+:)?[^:]+)?[\\\/])?({process_name}.+?)))\s{1,100}Service Type:""",
+    """\WService Type:\s{0,100}(|({service_type}.+?))\s{1,100}Service Start Type:""",
+    """\WService Account:\s{0,100}(({account_domain}[^\\]+)\\)?({account_name}.+?)\s{0,100}$"""
   ]
   DupFields = [ "host->dest_host", "directory->process_directory" ]
 }

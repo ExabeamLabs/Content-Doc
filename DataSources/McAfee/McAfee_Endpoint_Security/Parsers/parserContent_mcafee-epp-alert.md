@@ -9,8 +9,8 @@ Name = mcafee-epp-alert
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = ["%ePolicy-", "VIRUSCAN" ]
     Fields = [
-      """({alert_id}[^\s\^]+)[\s\^]+({host}[^\^\s]+)[\s\^]+({time}\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}).+?({alert_type}(?:hip|av|fw)\.\w+)[\s\^]+\d+[\s\^]+\d+[\s\^]+({alert_name}BO\:(Stack|Writable BO:Heap|Image|Memory)|[^\:\^]+)""",
-      """VIRUSCAN\d+[\s\^]+VirusScan Enterprise[\s\^]+\d+\.\d+[\s\^]+({src_host}[^\s\^]+)[\s\^]+(?:(?!\(null\))({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))?""",
+      """({alert_id}[^\s\^]+)[\s\^]+({host}[^\^\s]+)[\s\^]+({time}\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}).+?({alert_type}(?:hip|av|fw)\.\w+)[\s\^]+\d{1,100}[\s\^]+\d{1,100}[\s\^]+({alert_name}BO\:(Stack|Writable BO:Heap|Image|Memory)|[^\:\^]+)""",
+      """VIRUSCAN\d{1,100}[\s\^]+VirusScan Enterprise[\s\^]+\d{1,100}\.\d{1,100}[\s\^]+({src_host}[^\s\^]+)[\s\^]+(?:(?!\(null\))({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))?""",
       """(?:OAS|ODS)(?:[\^\s]+[^\^\s]+){4}[\s\^]+(?:[\s\w]+\\)?({user}[^\^\s]+)"""
     ]
     SOAR {

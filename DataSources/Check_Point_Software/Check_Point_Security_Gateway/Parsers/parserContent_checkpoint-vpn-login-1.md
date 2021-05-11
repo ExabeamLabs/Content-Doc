@@ -9,15 +9,15 @@ Name = checkpoint-vpn-login-1
   TimeFormat = "ddMMMyyyy-HH:mm:ss"
   Conditions = [ """product=VPN-1 & FireWall-1""", """['vpn_feature_name': """, """['origin_sic_name': """ ]
   Fields = [
-    """Time:\s*({time}\d\d\w+\d\d\d\d-\d\d:\d\d:\d\d)""",
-    """'user':\s*"({user}[^"]+)""",
-    """'origin_sic_name':\s*"(CN=)?({host}[^",]+)""",
-    """Direction:\s*({direction}\w+)\s+Connection""",
-    """Action:\s*(|({action}.+?))\s*OriginSicName:""",
-    """'src':\s*({src_ip}[a-fA-F\d.:]+)""",
-    """'dst':\s*({dest_ip}[a-fA-F\d.:]+)""",
-    """'s_port':\s*({src_port}\d+)""",
-    """'service':\s*({dest_port}\d+)""",
+    """Time:\s{0,100}({time}\d\d\w+\d\d\d\d-\d\d:\d\d:\d\d)""",
+    """'user':\s{0,100}"({user}[^"]+)""",
+    """'origin_sic_name':\s{0,100}"(CN=)?({host}[^",]+)""",
+    """Direction:\s{0,100}({direction}\w+)\s{1,100}Connection""",
+    """Action:\s{0,100}(|({action}.+?))\s{0,100}OriginSicName:""",
+    """'src':\s{0,100}({src_ip}[a-fA-F\d.:]+)""",
+    """'dst':\s{0,100}({dest_ip}[a-fA-F\d.:]+)""",
+    """'s_port':\s{0,100}({src_port}\d{1,100})""",
+    """'service':\s{0,100}({dest_port}\d{1,100})""",
   ]
 }
 ```

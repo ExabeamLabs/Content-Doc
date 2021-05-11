@@ -10,16 +10,16 @@ Name = n-cef-mcafee-alert
   Conditions = [ """|McAfee|ESM|""", """deviceExternalId=McAfee_NSM_OPMNSMP3""" ]
   Fields = [
     """\|McAfee\|ESM\|([^|]+?\|){2}({alert_name}[^|]+)\|""",
-    """\Wrt=({time}\d+)""",
-    """\Wproto=({protocol}.*?)\s+(\w+=|$)""",
-    """\Wcat=({alert_type}.*?)\s+(\w+=|$)""",
-    """\Wdpt=({dest_port}\d+)""",
+    """\Wrt=({time}\d{1,100})""",
+    """\Wproto=({protocol}.*?)\s{1,100}(\w+=|$)""",
+    """\Wcat=({alert_type}.*?)\s{1,100}(\w+=|$)""",
+    """\Wdpt=({dest_port}\d{1,100})""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
-    """\Wspt=({src_port}\d+)""",
+    """\Wspt=({src_port}\d{1,100})""",
     """\Wdst=({dest_ip}[a-fA-F\d.:]+)""",
-    """\Wshost=({src_host}.*?)\s+(\w+=|$)""",
-    """\WnitroCategory=({threat_category}.*?)\s+(\w+=|$)""",
-    """\Wsntdom=({domain}.*?)\s+(\w+=|$)"""
+    """\Wshost=({src_host}.*?)\s{1,100}(\w+=|$)""",
+    """\WnitroCategory=({threat_category}.*?)\s{1,100}(\w+=|$)""",
+    """\Wsntdom=({domain}.*?)\s{1,100}(\w+=|$)"""
   ]
 }
 ```

@@ -9,15 +9,15 @@ Name = netskope-activity
   TimeFormat = "epoch_sec"
   Conditions = [  """"session_begin"""",""""activity"""",""""object_id"""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """"dstip": "({host}[^"]+)"""",
-    """"timestamp": ({time}\d+)""",
+    """"timestamp": ({time}\d{1,100})""",
     """"user": "({account}[^"]+)"""",
     """"app": "({app}[^"]+)"""",
     """"dstip": "({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
     """"srcip": "({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
     """"browser": "(unknown|({browser}[^"]+))"""",
-    """"os"+: "(unknown|({os}[^"]+))"""",
+    """"os"{1,20}: "(unknown|({os}[^"]+))"""",
     """"activity": "({activity}[^"]+)"""",
     """"from_user": "(?![^\s]+@[^\s]+)({user}[^"\s]+)"""",
     """"from_user": "(?=[^\s]+@[^\s]+)({user_email}[^"\s@]+@({email_domain}[^"\s@]+))"""",

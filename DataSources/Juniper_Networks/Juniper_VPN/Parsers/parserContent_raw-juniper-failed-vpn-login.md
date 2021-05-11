@@ -11,17 +11,17 @@ Name = raw-juniper-failed-vpn-login
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\stime="({time}[^"]+)"""",
-    """\w+\s*\d+\s*\d\d:\d\d:\d\d\s*({host}[\w\-\.]+)\s*:\s*\(""",
+    """\w+\s{0,100}\d{1,100}\s{0,100}\d\d:\d\d:\d\d\s{0,100}({host}[\w\-\.]+)\s{0,100}:\s{0,100}\(""",
     """\svpn=({host}[\w\-\.]+)\s""",
     """exabeam_host=({host}[\w.\-]+)""",
-    """\s+({host}[\w-.]+)\s+PulseSecure:""",
-    """\d\d:\d\d:\d\d\s+-\s+\[({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]\s+(({domain}[^\\]+)\\)?(?:({user_email}[^@]+@[^@(]+)|({user}.+?))\(""",
-    """Reason:\s+({failure_reason}[^"]+?)\s*("|$)""",
+    """\s{1,100}({host}[\w-.]+)\s{1,100}PulseSecure:""",
+    """\d\d:\d\d:\d\d\s{1,100}-\s{1,100}\[({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]\s{1,100}(({domain}[^\\]+)\\)?(?:({user_email}[^@]+@[^@(]+)|({user}.+?))\(""",
+    """Reason:\s{1,100}({failure_reason}[^"]+?)\s{0,100}("|$)""",
     """src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """user=(({domain}[^\\]+)\\)?(?:({user_email}[^@\s]+@[^@\s]+)|({user}.+?))\s+\w+=""",
-    """\s+({host}[\w\-.]+)\s+\S+\s+PulseSecure:""",
-    """PulseSecure:\s*({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)\s+\-\s+({host}[\w\-.]+)""",
-    """PulseSecure:[^\[]+\[({src_ip}[A-Fa-f.\d:]+)\]\s+([\w\s]+?::)?(({domain}[^\s\\]+)\\+)?(\?|(?:({user_email}[^@\s]+@[^@\s\(]+)|({user}[^\\\s\(]+)))\(({realm}[^\[]+)?\)\[([^\-]*)\-\s*({failure_reason}[^\-\.]+)?\s*"""
+    """user=(({domain}[^\\]+)\\)?(?:({user_email}[^@\s]+@[^@\s]+)|({user}.+?))\s{1,100}\w+=""",
+    """\s{1,100}({host}[\w\-.]+)\s{1,100}\S+\s{1,100}PulseSecure:""",
+    """PulseSecure:\s{0,100}({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)\s{1,100}\-\s{1,100}({host}[\w\-.]+)""",
+    """PulseSecure:[^\[]+\[({src_ip}[A-Fa-f.\d:]+)\]\s{1,100}([\w\s]+?::)?(({domain}[^\s\\]+)\\+)?(\?|(?:({user_email}[^@\s]+@[^@\s\(]+)|({user}[^\\\s\(]+)))\(({realm}[^\[]+)?\)\[([^\-]*)\-\s{0,100}({failure_reason}[^\-\.]+)?\s{0,100}"""
   ]
   DupFields = [ "host->dest_host" ]
 }

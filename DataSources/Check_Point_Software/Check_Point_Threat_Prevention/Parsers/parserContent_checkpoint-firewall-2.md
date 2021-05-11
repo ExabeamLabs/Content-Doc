@@ -21,19 +21,19 @@ Name = checkpoint-firewall-2
   Conditions = [ """|Check Point|SmartDefense""", """cp_severity=""" ]
   Fields = [
     """({host}[\w.\-]+) CEF:""",
-    """\Wcp_severity=(?:|({alert_severity}.+?))(\s+\w+=|\s*$)""",
-    """\Wrt=({time}\d+)""",
+    """\Wcp_severity=(?:|({alert_severity}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wrt=({time}\d{1,100})""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
     """\Wdst=({dest_ip}[a-fA-F\d.:]+)""",
-    """\Woriginsicname=(?:|({user_ou}.+?))(\s+\w+=|\s*$)""",
-    """\Wmsg=(?:|({alert_type}.+?))(\s+\w+=|\s*$)""",
-    """\Wdescription_url=(?:|({malware_url}.+?))(\s+\w+=|\s*$)""",
-    """\Wcs4=(?:|({alert_name}.+?))(\s+\w+=|\s*$)""",
-    """\Winspection_information=(?:|({alert_name}.+?))(\s+\w+=|\s*$)""",
-    """\WflexString2=(?:|({additional_info}.+?))(\s+\w+=|\s*$)""",
-    """\Wproto=(?:|({protocol}.+?))(\s+\w+=|\s*$)""",
-    """\Wspt=({src_port}\d+)""",
-    """\Wdpt=({dest_port}\d+)""",
+    """\Woriginsicname=(?:|({user_ou}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wmsg=(?:|({alert_type}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wdescription_url=(?:|({malware_url}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wcs4=(?:|({alert_name}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Winspection_information=(?:|({alert_name}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\WflexString2=(?:|({additional_info}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wproto=(?:|({protocol}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wspt=({src_port}\d{1,100})""",
+    """\Wdpt=({dest_port}\d{1,100})""",
   ]
 }
 ```

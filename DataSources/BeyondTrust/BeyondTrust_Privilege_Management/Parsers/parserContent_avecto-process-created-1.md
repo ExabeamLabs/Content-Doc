@@ -10,9 +10,9 @@ Name = avecto-process-created-1
   TimeFormat = "yyyy-MM-dd HH:mm:ss.S"
   Conditions = [ """, ProcessStartTime="""", """, ProcessStartTimeMs="""" ]
   Fields = [
-    """\WProcessStartTime="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d+)""",
+    """\WProcessStartTime="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{1,100})""",
     """\WHostName="({host}[^"]+)""",
-    """\WEventNumber="({event_code}\d+)""",
+    """\WEventNumber="({event_code}\d{1,100})""",
     """\WUserName="(({domain}[^\\"]+)\\)?({user}[^\\"]+)""",
     """\WEventDescription="({additional_info}[^"]+)""",
     """\WFileName="({process}({directory}(?:(\w+:)?[^:"]+)?[\\\/])?({process_name}.+?))"""",

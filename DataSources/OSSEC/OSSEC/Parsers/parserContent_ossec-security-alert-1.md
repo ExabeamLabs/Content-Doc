@@ -10,13 +10,13 @@ Name = ossec-security-alert-1
   Conditions = [ """ ossec""", """Alert Level:""", """->syscheck; """, """ Location: """ ]
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d(\+|\-)\d\d:\d\d) ({host}[\w.\-]+) ossec """,
-    """\sAlert Level:\s*({alert_severity}\d+)""",
-    """\sRule:\s*({alert_name}[^;]+)""",
-    """\sLocation:\s*\(({dest_host}[^\)]+)""",
-    """Location:(\s*\([^;]*?\))?\s*(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^;\-]+))""",
-    """\sfor:\s*'({file_path}({file_parent}[^']*?[\\\/]+)?({file_name}[^'\\\/]+?(\.({file_ext}\w+))?))'""",
-    """\sCurrent SHA1:\s*'({sha1_sum}[^;']+)""",
-    """\sCurrent MD5:\s*'({md5_sum}[^;']+)"""
+    """\sAlert Level:\s{0,100}({alert_severity}\d{1,100})""",
+    """\sRule:\s{0,100}({alert_name}[^;]+)""",
+    """\sLocation:\s{0,100}\(({dest_host}[^\)]+)""",
+    """Location:(\s{0,100}\([^;]*?\))?\s{0,100}(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^;\-]+))""",
+    """\sfor:\s{0,100}'({file_path}({file_parent}[^']*?[\\\/]+)?({file_name}[^'\\\/]+?(\.({file_ext}\w+))?))'""",
+    """\sCurrent SHA1:\s{0,100}'({sha1_sum}[^;']+)""",
+    """\sCurrent MD5:\s{0,100}'({md5_sum}[^;']+)"""
   ]
 }
 ```

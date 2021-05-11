@@ -9,8 +9,8 @@ Name = fireeye-dlp-email
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
   Conditions = [ """"alert_type":""", """"malware_md5":"""", """"rcpt_to":"""", """"mail_from":"""", """"subject":"""", """FireEyeETP""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """"timestamp":"({time}\d+-\d+-\d+T\d+:\d+:\d+\.\d+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """"timestamp":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100})""",
     """"alert_type":\[?"({alert_type}[^"]+)""",
     """"product":"({alert_name}[^"]+)""",
     """"malware_md5":"({md5}[^"]+)""",

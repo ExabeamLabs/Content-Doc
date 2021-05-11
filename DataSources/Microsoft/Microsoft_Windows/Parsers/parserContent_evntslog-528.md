@@ -10,14 +10,14 @@ Name = evntslog-528
   Conditions = [ "EvntSLog", "(528)" ]
   Fields = [
     """({event_name}Successful Logon)""",
-    """\s+({time}\w+ \w+ \d+ \d+:\d+:\d+ \d+):.+?/Security\s+\(({event_code}\d+)\)""",
-    """Successful Logon:\s+User Name:\s+({user}.+?)\s+Domain:\s+({domain}[\w.\-]+)\s+Logon ID:\s+\([^,]+,({logon_id}[^\)]+)""",
-    """Logon Type:\s+({logon_type}[\d]+)""",
-    """Logon Process:\s+({auth_process}.+?)\s+Authentication Package:\s+({auth_package}[^\s]+)""",
-    """Workstation Name:\s+({src_host_windows}[\w.\-\$]+)""",
-    """Workstation Name:\s+({src_host}[\w.\-\$]+).*?Source Network Address:\s*-\s+""",
-    """Workstation Name:\s+({dest_host}[\w.\-\$]+)""",
-    """Caller User Name:\s+({account}[\w.\-\$]+)""",
+    """\s{1,100}({time}\w+ \w+ \d{1,100} \d{1,100}:\d{1,100}:\d{1,100} \d{1,100}):.+?/Security\s{1,100}\(({event_code}\d{1,100})\)""",
+    """Successful Logon:\s{1,100}User Name:\s{1,100}({user}.+?)\s{1,100}Domain:\s{1,100}({domain}[\w.\-]+)\s{1,100}Logon ID:\s{1,100}\([^,]+,({logon_id}[^\)]+)""",
+    """Logon Type:\s{1,100}({logon_type}[\d]+)""",
+    """Logon Process:\s{1,100}({auth_process}.+?)\s{1,100}Authentication Package:\s{1,100}({auth_package}[^\s]+)""",
+    """Workstation Name:\s{1,100}({src_host_windows}[\w.\-\$]+)""",
+    """Workstation Name:\s{1,100}({src_host}[\w.\-\$]+).*?Source Network Address:\s{0,100}-\s{1,100}""",
+    """Workstation Name:\s{1,100}({dest_host}[\w.\-\$]+)""",
+    """Caller User Name:\s{1,100}({account}[\w.\-\$]+)""",
     """Source Network Address:\s({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""", 
   ]
   DupFields = [ "dest_host->host"]

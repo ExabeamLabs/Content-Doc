@@ -9,11 +9,11 @@ Name = ovirt-app-activity-failed
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """ failed for user """, """ovirt""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d),.+?ovirt""",
     """Validation of action '({activity}[^']+)""",
     """failed for user ({user}[^\s\(\)]+?)\.?\sReasons:""",
-    """Reasons:\s*({failure_reason}[^"]+?)\s*$""",
+    """Reasons:\s{0,100}({failure_reason}[^"]+?)\s{0,100}$""",
     """({app}ovirt)"""
   ]
 }

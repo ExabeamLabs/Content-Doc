@@ -12,19 +12,19 @@ Name = cef-guardium-database-alert
   Fields = [
     """CEF:([^|]*\|){5}({alert_name}[^|]+)""",
     """CEF:([^|]*\|){6}({alert_severity}[^|]+)""",
-    """\Wrt=({time}\d+)""",
+    """\Wrt=({time}\d{1,100})""",
     """\Wdvc=({host}[A-Fa-f:\d.]+)""",
     """\Wdvchost=({host}[\w\-.]+)""",
     """\Wsuser=({user}[^\s]+)""",
-    """\Wcs3=(|({database_name}.+?))\s*(\w+=|$)""",
-    """\Wcs2=({server_group}.+?)\s*(\w+=|$)""",
+    """\Wcs3=(|({database_name}.+?))\s{0,100}(\w+=|$)""",
+    """\Wcs2=({server_group}.+?)\s{0,100}(\w+=|$)""",
     """\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
     """\Wdst=({dest_ip}[A-Fa-f:\d.]+)""",
     """\Wshost=(({domain}[^\\]+)\\+)?({src_host}[^\\\s]+)""",
     """\Wdhost=({dest_host}[\w\-.]+)""",
-    """\WeventId=({alert_id}\d+)""",
-    """\Wcn1=({response_size}\d+)""",
-    """\WdeviceSeverity=({device_severity}\d+)"""
+    """\WeventId=({alert_id}\d{1,100})""",
+    """\Wcn1=({response_size}\d{1,100})""",
+    """\WdeviceSeverity=({device_severity}\d{1,100})"""
   ]
   DupFields = [ "alert_name->alert_type" ]
 }

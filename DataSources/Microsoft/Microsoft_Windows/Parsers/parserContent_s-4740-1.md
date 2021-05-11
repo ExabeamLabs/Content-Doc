@@ -9,7 +9,7 @@ Name = s-4740-1
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"
   Conditions = [ """EventCode=4740""", """EventType=""", """A user account was locked out""" ]
   Fields = [
-    """({host}[\w\-.]+)\s+({time}\d+\/\d+\/\d+\s+\d+:\d+:\d+\s+(am|AM|pm|PM))""",
+    """({host}[\w\-.]+)\s{1,100}({time}\d{1,100}\/\d{1,100}\/\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(am|AM|pm|PM))""",
     """ComputerName=({dest_host}[\w\-.]+)""",
     """({event_code}4740)""",
     """({event_name}A user account was locked out)"""

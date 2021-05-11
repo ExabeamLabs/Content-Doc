@@ -9,12 +9,7 @@ Name = counteract-network-alert-2
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """ forescout Forescout """, """, Rule:""", """, Details:""", """ Source:""" ]
   Fields = [
-    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\S*\s+({host}[\w\-.]+)\s+Forescout""",
-    """Source:\s*({dest_ip}[a-fA-F\d.:]+)""",
-    """Rule:\s*(|({alert_name}Policy\s+"[^"]+?\s*"))\s*,""",
-    """Details:\s*({additional_info}.+?)\s*(\.\s+\w+:|$)""",
-    """Reason:\s*(|({outcome}[^\.:]+?))\s*\.""",
-  ]
-  DupFields = [ "alert_name->alert_type" ]
-}
+    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\S*\s{1,100}({host}[\w\-.]+)\s{1,100}Forescout""",
+    """Source:\s{0,100}({dest_ip}[a-fA-F\d.:]+)""",
+    """Rule:\s{0,100}(|({alert_name}Policy\s{1,100}"[^"]+?\s{0,100}"))\s{0,100}
 ```

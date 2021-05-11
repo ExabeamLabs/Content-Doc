@@ -9,9 +9,9 @@ Name = huawei-vpn-login
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
   Conditions = [ """SEC/""", """/SESSION""", """DevIP=""", """ VPN ID:""" ]
   Fields = [
-     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+(\+|\-)\d\d:\d\d),\S+\s+({host}[\w\.\-]+)""",
+     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}(\+|\-)\d\d:\d\d),\S+\s{1,100}({host}[\w\.\-]+)""",
      """Protocol:({protocol}[^;]+)""",
-     """({src_ip}[^\s;]+?):({src_port}\d+);\s*({src_translated_ip}[^\s;]+?):({src_translated_port}\d+);\s*-->({dest_ip}[^;]+?):({dest_port}\d+);""",
+     """({src_ip}[^\s;]+?):({src_port}\d{1,100});\s{0,100}({src_translated_ip}[^\s;]+?):({src_translated_port}\d{1,100});\s{0,100}-->({dest_ip}[^;]+?):({dest_port}\d{1,100});""",
      """\sname:(?!\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(({user_email}[^@;]+@[^@;]+)|({user}[^;]+));"""
   ]
   DupFields = ["user->account"]

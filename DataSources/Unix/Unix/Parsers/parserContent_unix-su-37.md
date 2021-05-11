@@ -12,7 +12,7 @@ Name = unix-su-37
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """Message forwarded from (::ffff:)?({host}[^\s:]+)""",
     """({event_code}su)""",
-    """su: from ({user}\w+) to ({account}\w+) at ({process_directory}.*?)\?*\s*$"""
+    """su: from ({user}\w+) to ({account}\w+) at ({process_directory}.*?)\?*\s{0,100}$"""
   ]
 }
 ```

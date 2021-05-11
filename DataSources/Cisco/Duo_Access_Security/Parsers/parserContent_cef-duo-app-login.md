@@ -10,8 +10,8 @@ Name = cef-duo-app-login
   Conditions = [ """|Duo Security|Two-factor|""" , """outcome=SUCCESS"""]
   Fields = [
     """\s\d\d:\d\d:\d\d ({host}[^\s=]+)""",
-    """\sduser=({user}.+?)\s+\w+=""",
-    """\sintegration=({app}.+?)\s+\w+=""",
+    """\sduser=({user}.+?)\s{1,100}\w+=""",
+    """\sintegration=({app}.+?)\s{1,100}\w+=""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
 }

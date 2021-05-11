@@ -9,10 +9,10 @@ Name = citrix-xenapp-login
     TimeFormat = "MM/dd/yyyy:HH:mm:ss zzz"
     Conditions = [ "SSLVPN","XenApp","CTX_Application"]
     Fields = [
-      """exabeam_raw=.*?({time}\d+/\d+/\d+:\d\d:\d\d:\d\d \w{3})""",
-      """exabeam_raw=.*?\d+/\d+/\d+:\d\d:\d\d:\d\d \w{3}\s+({host}[^\s]+)""",
-      """\s+({domain}[^\s]+)\s+User\s+""",
-      """User\s+({user}.+?)\s+:""",
+      """exabeam_raw=.*?({time}\d{1,100}/\d{1,100}/\d{1,100}:\d\d:\d\d:\d\d \w{3})""",
+      """exabeam_raw=.*?\d{1,100}/\d{1,100}/\d{1,100}:\d\d:\d\d:\d\d \w{3}\s{1,100}({host}[^\s]+)""",
+      """\s{1,100}({domain}[^\s]+)\s{1,100}User\s{1,100}""",
+      """User\s{1,100}({user}.+?)\s{1,100}:""",
       """Context.+?@({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """CTX_Application=({app}.+?)&CT""",
       """CTX_AppFriendlyNameURLENcoded=({app}.+?)&CT"""

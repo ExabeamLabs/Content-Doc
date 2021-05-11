@@ -10,20 +10,20 @@ Name = exalms-576
   Conditions = [ """"Special privileges assigned to new logon""", """"event_id":576""", """"@timestamp""""]
   Fields = [
     """({event_name}Special privileges assigned to new logon)""",
-    """"@timestamp"\s*:\s*"({time}[^"]+)"""",
-    """"(?:winlog\.)?computer_name"\s*:\s*"({host}[\w\-\.]+)""",
+    """"@timestamp"\s{0,100}:\s{0,100}"({time}[^"]+)"""",
+    """"(?:winlog\.)?computer_name"\s{0,100}:\s{0,100}"({host}[\w\-\.]+)""",
     """({event_code}576)""",
     """({ownership_privilege}SeTakeOwnershipPrivilege)""",
     """({environment_privilege}SeSystemEnvironmentPrivilege)""",
     """({debug_privilege}SeDebugPrivilege)""",
     """({tcb_privilege}SeTcbPrivilege)""",
-    """"record_number"\s*:\s*"({record_id}\d+)"""",
-    """"user"\s*:\s*\{.*?"identifier"\s*:\s*"({user_sid}[^"]+)"""",
-    """"user"\s*:\s*\{.*?"domain":"({domain}[^"]+)"""",
-    """"user"\s*:\s*\{.*?"name":"({user}[^"]+)"""",
-    """"(param4|Privileges)"\s*:\s*"({privileges}[^"]+)"""",
-    """"(param3|LogonID|logon_id)"\s*:\s*"(-|({logon_id}.+?))\s*"""",
-    """"(param3|LogonID|logon_id)"\s*:\s*"\(([^,\s]+(,|\s))?(-|({logon_id}.+?)\))"""",
+    """"record_number"\s{0,100}:\s{0,100}"({record_id}\d{1,100})"""",
+    """"user"\s{0,100}:\s{0,100}\{.*?"identifier"\s{0,100}:\s{0,100}"({user_sid}[^"]+)"""",
+    """"user"\s{0,100}:\s{0,100}\{.*?"domain":"({domain}[^"]+)"""",
+    """"user"\s{0,100}:\s{0,100}\{.*?"name":"({user}[^"]+)"""",
+    """"(param4|Privileges)"\s{0,100}:\s{0,100}"({privileges}[^"]+)"""",
+    """"(param3|LogonID|logon_id)"\s{0,100}:\s{0,100}"(-|({logon_id}.+?))\s{0,100}"""",
+    """"(param3|LogonID|logon_id)"\s{0,100}:\s{0,100}"\(([^,\s]+(,|\s))?(-|({logon_id}.+?)\))"""",
   ]
   DupFields = ["host->dest_host"]
 }

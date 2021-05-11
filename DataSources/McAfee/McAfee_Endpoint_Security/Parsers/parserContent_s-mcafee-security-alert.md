@@ -9,14 +9,14 @@ Name = s-mcafee-security-alert
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = [ """|Executable Fingerprint""", """|4|""" ]
     Fields = [
-      """^[^|]*\|({time}\d+\-\d+\-\d+ \d+:\d+:\d+)""",
+      """^[^|]*\|({time}\d{1,100}\-\d{1,100}\-\d{1,100} \d{1,100}:\d{1,100}:\d{1,100})""",
       """exabeam_host=({host}[\w\-.]+)""",     
       """^([^|]*\|){3}({src_host}[^|]+)\|""",
       """^([^|]*\|){4}({src_ip}[a-fA-F0-9.:]+)""",
       """^([^|]*\|){5}(({domain}.+?)\\)?({user}[^\\|]+)\|""",
       """^([^|]*\|){6}({malware_url}.+?\\+({malware_file_name}[^\\|]+))\|""",
       """^([^|]*\|){11}({alert_type}[^|]+)\|""",
-      """^([^|]*\|){12}({alert_type_id}\d+)""",
+      """^([^|]*\|){12}({alert_type_id}\d{1,100})""",
       """^([^|]*\|){13}({alert_name}[^|]+)\|""",
     ]
     SOAR {

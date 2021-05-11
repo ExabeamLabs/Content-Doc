@@ -9,14 +9,14 @@ Name = cef-catonetworks-vpn-login
   TimeFormat = "EEE MMM dd HH:mm:ss Z yyyy"
   Conditions = [ """CEF:""", """|CatoNetworks|""", """internalType=CONNECTION""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """\Wdvc=({host}[A-Fa-f:\d.]+)""",
-    """\Wrt=({time}\w+\s+\w+\s+\d+\s+\d\d:\d\d:\d\d\s+\w+\s+\d\d\d\d)""",
+    """\Wrt=({time}\w+\s{1,100}\w+\s{1,100}\d{1,100}\s{1,100}\d\d:\d\d:\d\d\s{1,100}\w+\s{1,100}\d\d\d\d)""",
     """\Wdst=({dest_ip}[A-Fa-f:\d.]+)""",
     """\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
-    """\Wact=({outcome}.+?)\s+(\w+=|$)""",
-    """\Wshost=({user_fullname}.+?)\s+(\w+=|$)""",
-    """\Wtunnel_device_type=({os}.+?)\s+(\w+=|$)""",
+    """\Wact=({outcome}.+?)\s{1,100}(\w+=|$)""",
+    """\Wshost=({user_fullname}.+?)\s{1,100}(\w+=|$)""",
+    """\Wtunnel_device_type=({os}.+?)\s{1,100}(\w+=|$)""",
     """\Wcs3=({account}.*?)\s\w+=.*?cs3Label=CATOAccountName""",
   ]
 }

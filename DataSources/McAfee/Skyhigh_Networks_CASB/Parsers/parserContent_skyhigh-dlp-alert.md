@@ -9,8 +9,8 @@ Name = skyhigh-dlp-alert
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ "anomaly.timeupdated=",",activityName=", ",MimeType="]
   Fields = [
-            """\d+:\d+:\d+\s({host}[^\s]+)\s\w+=""",
-            """,timestamp=({time}\d\d\d\d\-\d\d\-\d\dT\d+:\d+:\d+)""",
+            """\d{1,100}:\d{1,100}:\d{1,100}\s({host}[^\s]+)\s\w+=""",
+            """,timestamp=({time}\d\d\d\d\-\d\d\-\d\dT\d{1,100}:\d{1,100}:\d{1,100})""",
             """\sriskLevel=({alert_severity}[^,]+)""",
             """,userAction=({alert_name}[^,]+)""",
             """,destinationHost=({dest_host}[^,]+)""",

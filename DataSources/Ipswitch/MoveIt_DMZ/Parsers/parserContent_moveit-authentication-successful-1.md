@@ -5,7 +5,7 @@ Name = moveit-authentication-successful-1
   DataType = "authentication-successful"
   Conditions = [ """MOVEitDMZ""", """Signed on"""]
   Fields = ${MoveITParserTemplates.moveit-activity.Fields} [
-     """\sMessage:\s*({additional_info}.+?)\s*$""",
+     """\sMessage:\s{0,100}({additional_info}.+?)\s{0,100}$""",
   ]
 }
 moveit-activity = {
@@ -16,10 +16,10 @@ moveit-activity = {
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)"""
     """\s\d\d:\d\d:\d\d\s({host}[^\s]+)""",
-    """\sIPAddress:\s*({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
+    """\sIPAddress:\s{0,100}({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
     """User\s'(({user_email}[^@]+@[^']+)|Automation|({user_fullname}[^']+))?'\s\(({user}[^\)]+)?\)""",
-    """\s:\s+({activity}[^,]+),\s+ID:""",
-    """\sUsername:\s*(Automation|({user}[^,]+))"""
+    """\s:\s{1,100}({activity}[^,]+),\s{1,100}ID:""",
+    """\sUsername:\s{0,100}(Automation|({user}[^,]+))"""
   ]
 
 ```

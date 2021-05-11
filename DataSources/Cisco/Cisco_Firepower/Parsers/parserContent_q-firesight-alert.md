@@ -13,7 +13,7 @@ Name = q-firesight-alert
       """\sDeviceAddress=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\simpactAlertData.sourceAddress=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\simpactAlertData.destinationAddress=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-      """\s\[Priority: ({alert_severity}\d+)\]""",
+      """\s\[Priority: ({alert_severity}\d{1,100})\]""",
       """\simpactAlertData.description=\[[^\]]+\] "({alert_name}[^"]+)""",
       """\s\[Classification: ({alert_type}[^\]]+)\]"""
   ]

@@ -12,17 +12,5 @@ Name = raw-567
     Fields = [
       """({event_name}Object Access Attempt)""",
 	"""({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d (am|AM|pm|PM))""",
-	"""(?i)(((audit|success)( |_)(success|audit))|information)\s*,\s*({host}[^,]+)""",
-        """Computer(\w+)?["\s]*(:|=)\s*"?({host}.+?)("|\s)""",
-        """User=(?:SYSTEM|NOT_TRANSLATED|({user}.+?))\s+Sid=""",
-        """({event_code}567)""",
-        """Object Type:\s+({file_type}.+?)\s+Process ID:""",
-        """Image File Name:\s+({file_path}.+?)\s+Accesses:""",
-        """Accesses:\s+({accesses}.+?)\s+Access Mask:""",
-        """Image File Name:\s*.*?\\?({file_name}([^\\]*?)({file_ext}\.[^\\]*?)?|[^\\]+)\s+Accesses:""",
-        """Image File Name:\s*({file_parent}.+?)\\(?:[^\\]+?)\s+Accesses:""",
-        """\s+Client Address:\s+(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)"""
-     ]
-  DupFields = [ "host->dest_host" ]
- }
+	"""(?i)(((audit|success)( |_)(success|audit))|information)\s{0,100}
 ```

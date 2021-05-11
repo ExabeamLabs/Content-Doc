@@ -9,14 +9,14 @@ Name = cef-mcafee-epo-alert-1
   TimeFormat = "epoch"
   Conditions = [ """CEF""", """|McAfee|Rogue System Sensor|""", """|Rogue System|""", """Detected Rogue System""" ]
   Fields = [
-    """\Wrt=({time}\d+)""",
-    """\Wagt=({host}.+?)\s+(\w+=|$)""",
-    """\Wcs6=({additional_info}.+?)\s+(\w+=|$)""",
+    """\Wrt=({time}\d{1,100})""",
+    """\Wagt=({host}.+?)\s{1,100}(\w+=|$)""",
+    """\Wcs6=({additional_info}.+?)\s{1,100}(\w+=|$)""",
     """\Wdhost=({dest_host}[\w\-.]+)""",
     """\Wdst=(0.0.0.0|({dest_ip}[A-Fa-f:\d.]+))""",
-    """\Wcs4=({os}.+?)\s+(\w+=|$)""",
-    """\Wseverity=({alert_severity}.+?)\s+(\w+=|$)""",
-    """\WcategoryTechnique=({threat_category}.+?)\s+(\w+=|$)""",
+    """\Wcs4=({os}.+?)\s{1,100}(\w+=|$)""",
+    """\Wseverity=({alert_severity}.+?)\s{1,100}(\w+=|$)""",
+    """\WcategoryTechnique=({threat_category}.+?)\s{1,100}(\w+=|$)""",
     """CEF:([^\|]*\|){4}({alert_name}[^\|]+)""",
     """CEF:([^\|]*\|){5}({alert_type}[^\|]+)""",
   ]

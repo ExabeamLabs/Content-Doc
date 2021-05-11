@@ -9,7 +9,7 @@ Name = cisco-dns-response-1
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """Skyformation""", """"src-endpoint":"DNS"""", """"src-application-name":"Cisco Umbrella"""", """"action":""", """"queryType":""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
     """"mostGranularIdentity":"({host}[^"]+)"""",
     """"timestamp":"({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d)"""",
     """"responseCode":"({dns_response_code}[^"]+)"""",

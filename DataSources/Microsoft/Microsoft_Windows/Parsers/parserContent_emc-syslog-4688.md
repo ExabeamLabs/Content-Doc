@@ -14,13 +14,13 @@ Name = emc-syslog-4688
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """__li_source_path="({host}[^"]+)"""",
     """({event_code}4688)""",
-    """Process Name:\s+({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?))\s+Token Elevation Type:""",
-    """Process Name:\s+({path}.+?)\s+Token Elevation Type:""",
-    """Account Name:\s+({user}.+?)\s+Account Domain:\s+({domain}.+?)\s+Logon ID:\s+({logon_id}[^\s]+)""",
-    """New Process ID:\s+({process_guid}[^\s]+)\s""",
-    """Creator Process ID:\s+({parent_process_guid}[^\s]+)\s""",
-    """Process Command Line:\s+"({command_line}[^"]+)"\s""",
-    """Process Command Line:\s+"(|-|(sc|((?:[^"]+)?[\\\/])?sc.exe)\s*(?:\\*[\w.\-]+)?\s*create\s*({service_name}.+?))\s+binPath= ({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?))"\s""",
+    """Process Name:\s{1,100}({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?))\s{1,100}Token Elevation Type:""",
+    """Process Name:\s{1,100}({path}.+?)\s{1,100}Token Elevation Type:""",
+    """Account Name:\s{1,100}({user}.+?)\s{1,100}Account Domain:\s{1,100}({domain}.+?)\s{1,100}Logon ID:\s{1,100}({logon_id}[^\s]+)""",
+    """New Process ID:\s{1,100}({process_guid}[^\s]+)\s""",
+    """Creator Process ID:\s{1,100}({parent_process_guid}[^\s]+)\s""",
+    """Process Command Line:\s{1,100}"({command_line}[^"]+)"\s""",
+    """Process Command Line:\s{1,100}"(|-|(sc|((?:[^"]+)?[\\\/])?sc.exe)\s{0,100}(?:\\*[\w.\-]+)?\s{0,100}create\s{0,100}({service_name}.+?))\s{1,100}binPath= ({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?))"\s""",
     """TaskCategory=({activity_type}Process Creation)"""
     ]
   DupFields = [ "host->dest_ip","process_guid->pid","directory->process_directory" ]

@@ -9,10 +9,10 @@ Name = syslog-symantec-dlp-alert-2
   TimeFormat = "MMM dd, yyyy HH:mm:ss a"
   Conditions = ["""Endpoint-Insider Threat  ITP - Monitor C&P printing"""]
   Fields = [
-    """exabeam_\w+=\s*({host}[\w\-\.]+)\s+({alert_id}\d+)\s+({src_host}[\w\-\.]+)\s+({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s+(({domain}[^\\\s]+)\\)?({user}[^\s]+)\s+\S+\s+({time}\w+ \d\d, \d\d\d\d \d+:\d+:\d+ (PM|pm|AM|am))\s+""",
+    """exabeam_\w+=\s{0,100}({host}[\w\-\.]+)\s{1,100}({alert_id}\d{1,100})\s{1,100}({src_host}[\w\-\.]+)\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s{1,100}(({domain}[^\\\s]+)\\)?({user}[^\s]+)\s{1,100}\S+\s{1,100}({time}\w+ \d\d, \d\d\d\d \d{1,100}:\d{1,100}:\d{1,100} (PM|pm|AM|am))\s{1,100}""",
     """({alert_name}Endpoint-Insider Threat  ITP - Monitor C&P printing)""",
-    """,\s+({file_name}[^,]+?)\s+On the Corporate Network""",
-    """,\s+.*N\/A\s+({file_name}[^,]+?)\s+On the Corporate Network"""
+    """,\s{1,100}({file_name}[^,]+?)\s{1,100}On the Corporate Network""",
+    """,\s{1,100}.*N\/A\s{1,100}({file_name}[^,]+?)\s{1,100}On the Corporate Network"""
   ]
   DupFields = [ "alert_name->alert_type" ]
 }

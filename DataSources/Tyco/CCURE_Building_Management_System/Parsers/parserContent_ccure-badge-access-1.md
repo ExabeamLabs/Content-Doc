@@ -9,11 +9,11 @@ Name = ccure-badge-access-1
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"
   Conditions = [ """<JournalLogMessageType>""", """<OperatorName>ccure<""", """<MessageText>""", """<PrimaryObjectName>""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s*)?({host}\S+)""",
-    """<MessageLocalDateTime>({time}\d+\/\d+\/\d+\s+\d+:\d+:\d+\s+(AM|PM|am|pm))""",
+    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """<MessageLocalDateTime>({time}\d{1,100}\/\d{1,100}\/\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(AM|PM|am|pm))""",
     """<JournalLogMessageType>({outcome}[^<]+)""",
-    """<MessageText>[^<]*?\(Card:\s*({badge_id}[^\)]+)""",
-    """<PrimaryObjectName>({last_name}[^<,]+),\s*({first_name}[^<,]+)""",
+    """<MessageText>[^<]*?\(Card:\s{0,100}({badge_id}[^\)]+)""",
+    """<PrimaryObjectName>({last_name}[^<,]+),\s{0,100}({first_name}[^<,]+)""",
     """<SecondaryObjectName>({location_door}[^<]+)""",
   ]
 }

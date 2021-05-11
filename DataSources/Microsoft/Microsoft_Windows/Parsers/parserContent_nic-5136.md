@@ -13,14 +13,14 @@ Name = nic-5136
     """({time}\w{3}\s\d{2}\s\d{2}:\d{2}:\d{2}\s\d{4})""",
     """"event_time":"({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[\w.\-]+)""",
-    """(Information|Success Audit|Audit Success)\s+({host}[^\s]+)""",
+    """(Information|Success Audit|Audit Success)\s{1,100}({host}[^\s]+)""",
     """"ComputerName":"({host}[\w\-.]+)""",
     """({event_code}5136)""",
-    """Subject:.+?Account Name:\s*({user}.+?)\s*Account Domain:\s*({domain}.+?)\s*Logon ID:\s*({logon_id}[^\s]+)""",
-    """Object:.+?Class:\s*({object_class}.+?)\s*Attribute:""",
-    """Attribute:.+?LDAP Display Name:\s*({attribute}.+?)\s*Syntax""",
-    """Object:\s*DN:\s*({object_dn}.+?)\s*GUID:""",
-    """Object:\s*DN:.+?({object_ou}OU.+?)\s*GUID:"""
+    """Subject:.+?Account Name:\s{0,100}({user}.+?)\s{0,100}Account Domain:\s{0,100}({domain}.+?)\s{0,100}Logon ID:\s{0,100}({logon_id}[^\s]+)""",
+    """Object:.+?Class:\s{0,100}({object_class}.+?)\s{0,100}Attribute:""",
+    """Attribute:.+?LDAP Display Name:\s{0,100}({attribute}.+?)\s{0,100}Syntax""",
+    """Object:\s{0,100}DN:\s{0,100}({object_dn}.+?)\s{0,100}GUID:""",
+    """Object:\s{0,100}DN:.+?({object_ou}OU.+?)\s{0,100}GUID:"""
   ]
   DupFields = [ "host->dest_host" ]
 }

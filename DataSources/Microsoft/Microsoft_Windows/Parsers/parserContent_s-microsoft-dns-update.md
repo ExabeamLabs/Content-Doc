@@ -11,10 +11,10 @@ Name = s-microsoft-dns-update
   Fields = ["""({time}\d\d/\d\d/\d\d,\d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[\w.\-]+)""",
     """DNS Update Successful,({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),({dest_host}[^,]+),""",
-    """"+hostname\\"+:\\"+({host}[^\\"]+)"""
-    """"+mac\\"+:\[\\"+({src_mac}[^\\"]+)""",
-    """"+ip\\"+:\[\\"+({src_ip}[^\\"]+)""",
-    """"+host\\"+[^}]+os[^}]+family\\"+:\\"+({os}[^\\]+)""",
+    """"{1,20}hostname\\"{1,20}:\\"{1,20}({host}[^\\"]+)"""
+    """"{1,20}mac\\"{1,20}:\[\\"{1,20}({src_mac}[^\\"]+)""",
+    """"{1,20}ip\\"{1,20}:\[\\"{1,20}({src_ip}[^\\"]+)""",
+    """"{1,20}host\\"{1,20}[^}]+os[^}]+family\\"{1,20}:\\"{1,20}({os}[^\\]+)""",
     """<Identifier>({host}[^<]+)<\/"""
   ]
   DupFields = [ "dest_host->user" ]

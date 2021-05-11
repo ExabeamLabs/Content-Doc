@@ -11,8 +11,8 @@ Name = timelox-badge-access
     Fields = [
       """exabeam_host=({host}[\w.\-]+)""",
       """"doorgroupname":"({door_group_name}[^"]+)""",
-      """"eventtime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d+Z)""",
-      """"registration no\.":({registration_no}\d+)""",
+      """"eventtime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
+      """"registration no\.":({registration_no}\d{1,100})""",
       """"userid":"({user_id}[^"]+)""",
       """"event":"({outcome}[^"]+)""",
       """"issued by":"(n\/a|({user}[^"]+))""",

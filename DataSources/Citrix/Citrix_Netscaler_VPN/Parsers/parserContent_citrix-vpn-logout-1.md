@@ -9,14 +9,14 @@ Name = citrix-vpn-logout-1
   TimeFormat = "MM/dd/yyyy:HH:mm:ss z"
   Conditions = [ """ SSLVPN ICAEND_CONNSTAT """ ]
   Fields = [
-    """({time}\d\d/\d\d/\d\d\d\d:\d\d:\d\d:\d\d \w+)\s+({host}[\w.\-]+)(\s+\S+){3}\s+SSLVPN ({event_name}ICAEND_CONNSTAT)\s""",
-    """\sSource\s+({src_ip}[a-fA-F\d.:]+?)(:({src_port}\d+))?\s""",
-    """\sDestination\s+({dest_ip}[a-fA-F\d.:]+?)(:({dest_port}\d+))?\s""",
-    """\susername:domainname\s+({user}[^\s:]+):({domain}[^\s]+)""",
+    """({time}\d\d/\d\d/\d\d\d\d:\d\d:\d\d:\d\d \w+)\s{1,100}({host}[\w.\-]+)(\s{1,100}\S+){3}\s{1,100}SSLVPN ({event_name}ICAEND_CONNSTAT)\s""",
+    """\sSource\s{1,100}({src_ip}[a-fA-F\d.:]+?)(:({src_port}\d{1,100}))?\s""",
+    """\sDestination\s{1,100}({dest_ip}[a-fA-F\d.:]+?)(:({dest_port}\d{1,100}))?\s""",
+    """\susername:domainname\s{1,100}({user}[^\s:]+):({domain}[^\s]+)""",
     """\sDuration ({duration}\S+)""",
-    """\sTotal_bytes_send\s+({bytes_out}\d+)""",
-    """\sTotal_bytes_recv\s+({bytes_in}\d+)""",
-    """\sconnectionId\s+({sconnection_id}\S+)""",
+    """\sTotal_bytes_send\s{1,100}({bytes_out}\d{1,100})""",
+    """\sTotal_bytes_recv\s{1,100}({bytes_in}\d{1,100})""",
+    """\sconnectionId\s{1,100}({sconnection_id}\S+)""",
   ]
 }
 ```

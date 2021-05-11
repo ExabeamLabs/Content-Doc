@@ -11,18 +11,18 @@ Name = bitglass-file-read
   Conditions = [ """"activity":""", """, Downloaded""", """ api.bitglass.com """ ]
   Fields = [
     """exabeam_host=({host}[\w.\-]+)""",
-    """"time":\s*"({time}\d+ \w+ \d\d\d\d \d\d:\d\d:\d\d)""",
-    """"instancename":\s*"({host}[^"]+)"""",
-    """"user":\s*"({user}[^"]+)"""",
-    """"email":\s*"({user_email}[^"]+)"""",
-    """"device":\s*"({os}[^"]+)"""",
-    """"application":\s*"({app}[^"]+)"""",
-    """"ipaddress":\s*"({src_ip}[a-fA-F\d.:]+)"""",
-    """"filename":\s*"({file_name}[^"]+?(\.({file_ext}[^."]+))?)",""",
-    """"activity":\s*"({accesses}[^"]+)",""",
-    """"useragent":\s*"({user_agent}.+?)",""",
-    """"url":\s*"({file_uri}.+?)",""",
-    """"useragent":\s*".+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)"""
+    """"time":\s{0,100}"({time}\d{1,100} \w+ \d\d\d\d \d\d:\d\d:\d\d)""",
+    """"instancename":\s{0,100}"({host}[^"]+)"""",
+    """"user":\s{0,100}"({user}[^"]+)"""",
+    """"email":\s{0,100}"({user_email}[^"]+)"""",
+    """"device":\s{0,100}"({os}[^"]+)"""",
+    """"application":\s{0,100}"({app}[^"]+)"""",
+    """"ipaddress":\s{0,100}"({src_ip}[a-fA-F\d.:]+)"""",
+    """"filename":\s{0,100}"({file_name}[^"]+?(\.({file_ext}[^."]+))?)",""",
+    """"activity":\s{0,100}"({accesses}[^"]+)",""",
+    """"useragent":\s{0,100}"({user_agent}.+?)",""",
+    """"url":\s{0,100}"({file_uri}.+?)",""",
+    """"useragent":\s{0,100}".+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)"""
   ]
 }
 ```

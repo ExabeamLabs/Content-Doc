@@ -9,15 +9,15 @@ Name = cef-ixia-network-connection
   TimeFormat = "epoch"
   Conditions= [ """CEF:""", """|IXIA|""", """src=""", """dst=""" ]
   Fields=[
-    """\Wrt=({time}\d+)""",
-    """\Wdvchost=(|({host}.+?))(\s+\w+=|\s*$)""",
+    """\Wrt=({time}\d{1,100})""",
+    """\Wdvchost=(|({host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
     """\Wdst=({dest_ip}[a-fA-F\d.:]+)""",
-    """\Wspt=({src_port}\d+)""",
-    """\Wdpt=({dest_port}\d+)""",
-    """\Wproto=(|({protocol}.+?))(\s+\w+=|\s*$)""",
-    """\Wreason=(|({failure_reason}.+?))(\s+\w+=|\s*$)""",
-    """\Wact=(|({outcome}.+?))(\s+\w+=|\s*$)""",
+    """\Wspt=({src_port}\d{1,100})""",
+    """\Wdpt=({dest_port}\d{1,100})""",
+    """\Wproto=(|({protocol}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wreason=(|({failure_reason}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wact=(|({outcome}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
 ```

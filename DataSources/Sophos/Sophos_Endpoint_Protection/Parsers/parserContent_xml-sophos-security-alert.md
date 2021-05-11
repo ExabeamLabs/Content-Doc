@@ -12,7 +12,7 @@ Name = xml-sophos-security-alert
     """exabeam_host=({host}[\w.\-]+)""",
     """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3})""",
     """<Computer>({src_host}.+?)</Computer>""",
-    """<EventData><Data>({alert_name}.+?)</Data><Data>({file_path}({file_parent}[^<>]+?)?({file_name}[^<>\\\/]*?(\.({file_ext}\w+))?))(\\\w+)?</Data><Data>.*?</Data><Data>({alert_type}.+?)</Data><Data>.*?</Data><Data>({outcome}.+?)\.?\s*</Data>""",
+    """<EventData><Data>({alert_name}.+?)</Data><Data>({file_path}({file_parent}[^<>]+?)?({file_name}[^<>\\\/]*?(\.({file_ext}\w+))?))(\\\w+)?</Data><Data>.*?</Data><Data>({alert_type}.+?)</Data><Data>.*?</Data><Data>({outcome}.+?)\.?\s{0,100}</Data>""",
     """<Computer>({src_host}.+?)</Computer>""",
     """C:\\Users\\({user}[^\\<>]+)""",
     """</Message><Level>({alert_severity}[^\<]+)""",
