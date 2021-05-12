@@ -7,9 +7,11 @@ Name = zebra-wlm-ssh-failed
  Lms = Direct
  DataType = "failed-logon"
  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
- Conditions = [ """%25SYSTEM-3-LOGIN_FAIL:""", """Log-in failed""" ]
+ Conditions = [ """%""", """SYSTEM-3-LOGIN_FAIL:""", """Log-in failed""" ]
  Fields =[
-   """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}).\d[^\s]+\s{1,100}({host}[^\s]+)\s{1,100}({event_code}[^:]+):\s{1,100}Log-in ({outcome}failed) for user '({user}[^']+)'\s{1,100}from '({protocol}[^']+)*"""
+    """({time}\d{1,4}-\d{1,2}-\d{1,2}T\d{1,2}:\d{1,2}:\d{1,2})""",
+    """({time}\w{1,20}\s{1,99}\d{1,2}\s{1,99}\d{1,2}\:\d{1,2}\:\d{1,2})""",
+    """\s{1,100}({host}[^\s]+)\s{1,100}({event_code}%\d{0,20}SYSTEM-3-LOGIN_FAIL):\s{1,100}Log-in ({outcome}failed) for user '({user}[^']+)'\s{1,100}from '({protocol}[^']+)\'"""
   ]
 }
 ```

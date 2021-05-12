@@ -6,7 +6,7 @@ Name = powershell-800
   Product = Microsoft Windows
   Lms = Direct
   DataType = "powershell-activity"
-  TimeFormat = "YYYY-DD-MM'T'HH:mm:ss"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """<Provider Name='PowerShell""", """800</EventID>""" ]
   Fields = [
     """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d{1,100}Z'/>""",
