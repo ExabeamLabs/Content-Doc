@@ -7,8 +7,8 @@ Name = sysmon-registry-set-2
   Fields = ${MicrosoftParserTemplates.sysmon-process-events.Fields}[
     """Event ID:\s{0,100}({event_code}\d{1,100})""",
     """\s{1,100}Image:\s{0,100}({file_path}({file_parent}(?:(\w+:)?[^:]+)?[\\\/])?({file_name}.+?))\s{1,100}\w+:""",
-    """TargetObject:\s{0,100}({object}({reg_path}({reg_key}.*)\\({reg_value}[^\\.]+(\.[^\\.]+?)?)))\s{1,100}Details:""",
-    """Details:\s{0,100}({reg_details_type}DWORD)?\s{0,100}({reg_details}.+?)\s{0,100}$""",
+    """TargetObject:\s{0,100}({object}({registry_path}({registry_key}.*)\\({registry_value}[^\\.]+(\.[^\\.]+?)?)))\s{1,100}Details:""",
+    """Details:\s{0,100}({registry_details_type}DWORD)?\s{0,100}({registry_details}.+?)\s{0,100}$""",
     """ComputerName(:|=)\s{0,100}({host}[\w.-]+)""",
   ]
   DupFields = [ "host->dest_host","directory->process_directory" ]

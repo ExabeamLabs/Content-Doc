@@ -19,7 +19,7 @@ ATT&CK Matrix for Enterprise
 | T1021     | [Remote Services](https://attack.mitre.org/techniques/T1021)<br><br>                                                                                      | 20    |
 | T1021.001 | [Remote Services: Remote Desktop Protocol](https://attack.mitre.org/techniques/T1021/001)<br><br>                                                         | 3     |
 | T1021.002 | [Remote Services: SMB/Windows Admin Shares](https://attack.mitre.org/techniques/T1021/002)<br><br>                                                        | 13    |
-| T1021.003 | [T1021.003](https://attack.mitre.org/techniques/T1021/003)<br><br>                                                                                        | 6     |
+| T1021.003 | [T1021.003](https://attack.mitre.org/techniques/T1021/003)<br><br>                                                                                        | 4     |
 | T1027     | [Obfuscated Files or Information](https://attack.mitre.org/techniques/T1027)<br><br>                                                                      | 6     |
 | T1027.004 | [Obfuscated Files or Information: Compile After Delivery](https://attack.mitre.org/techniques/T1027/004)<br><br>                                          | 2     |
 | T1027.005 | [Obfuscated Files or Information: Indicator Removal from Tools](https://attack.mitre.org/techniques/T1027/005)<br><br>                                    | 8     |
