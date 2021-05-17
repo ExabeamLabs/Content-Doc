@@ -9,6 +9,6 @@ Name = palo-alto-dlp-alert-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """ Aperture """, """,policy_violation,""" ]
   Fields = [
-    """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}Z)\s({host}[^\s]+)""",
-    """,policy_violation,"{0,20}({app}[^,"]+)"{0,20}
+    """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}Z)\s({host}[^\s]{1,2000})""",
+    """,policy_violation,"{0,20}({app}[^,"]{1,2000})"{0,20}
 ```

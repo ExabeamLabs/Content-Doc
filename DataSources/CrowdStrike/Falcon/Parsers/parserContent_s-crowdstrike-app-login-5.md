@@ -4,9 +4,9 @@
 Name = s-crowdstrike-app-login-5
   Conditions = [ """"eventType":""", """"RemoteResponseSessionStartEvent"""", """UserName""" ]
   Fields = ${CrowdStrikeParserTemplates.s-crowdstrike-app-login.Fields} [
-    """"UserName":\s{0,100}"({user_email}[^"@]+@[^"@]+)"""",
-    """"UserName":\s{0,100}"({user}[^"@]+)"""",
-    """"HostnameField":\s{0,100}"({host}[^"@]+)"""",
+    """"UserName":\s{0,100}"({user_email}[^"@]{1,2000}@[^"@]{1,2000})"""",
+    """"UserName":\s{0,100}"({user}[^"@]{1,2000})"""",
+    """"HostnameField":\s{0,100}"({host}[^"@]{1,2000})"""",
     """destinationServiceName=({app}.+?)\s(\w+=|$)"""
   ]
 }
@@ -17,13 +17,13 @@ s-crowdstrike-app-login = {
   DataType = "app-login"
   TimeFormat = "epoch"
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"eventCreationTime":\s{0,100}({time}\d{1,100})""",
-    """"UserId":\s{0,100}"({user_email}[^"@]+@({email_domain}[^"@]+))"""",
-    """"UserId":\s{0,100}"({user}[^"@]+)"""",
-    """"UserIp":\s{0,100}"({src_ip}[^"]+)""",
-    """"ServiceName":\s{0,100}"({app}[^"]+)""",
-    """"Success":\s{0,100}({outcome}[^",]+)""",
+    """"UserId":\s{0,100}"({user_email}[^"@]{1,2000}@({email_domain}[^"@]{1,2000}))"""",
+    """"UserId":\s{0,100}"({user}[^"@]{1,2000})"""",
+    """"UserIp":\s{0,100}"({src_ip}[^"]{1,2000})""",
+    """"ServiceName":\s{0,100}"({app}[^"]{1,2000})""",
+    """"Success":\s{0,100}({outcome}[^",]{1,2000})""",
   ]
 
 ```

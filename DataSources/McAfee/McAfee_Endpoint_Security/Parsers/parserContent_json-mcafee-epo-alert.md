@@ -10,19 +10,19 @@ Name = json-mcafee-epo-alert
   Conditions = [ """"analyzername""", """"threatcategory""" ]
   Fields = [
     """"receivedutc\\*":\\*"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
-    """"serverid\\*":\\*"({host}[^,"\\]+)""",
-    """"threatseverity\\*":({alert_severity}[^,"]+)""",
-    """"threatcategory\\*":\\*"({threat_category}[^,"\\]+)""",
-    """"threatactiontaken\\*":\\*"({action}[^,"\\]+)""",
-    """"sourceusername\\*":\\*"?((NT AUTHORITY|({domain}[^\\",]+))\\+)?(null|SYSTEM|({user}[^,"\\\s]+))""",
-    """"targetusername\\*":(null|SYSTEM|({user}[^\\\s",]+))""",
-    """"threatname\\*":\\*"(_|({alert_name}[^,"\\]+))\s{0,100}\\*"""",
-    """"threattype\\*":\\*"(\s{1,100}|({alert_type}[^,"\\]+))""",
-    """"targethostname\\*":\\*"({src_host}[^,"\\]+)""",
-    """"targetfilename\\*":\\*"(?:|null|({malware_url}.*?[\\\/]?({malware_file_name}[^\\\/]+?)))\\*"""",
-    """"analyzerdetectionmethod\\*":\\*"(\s{1,100}|({additional_info}[^,"\\]+))""",
-    """"threateventid\\*":({alert_id}[^,"\\]+)""",
-    """"targetprocessname\\*":\\*"(null|({process}(({directory}[^"]+?)\/+)?({process_name}[^"\/\\]*?)))\\*"""",
+    """"serverid\\*":\\*"({host}[^,"\\]{1,2000})""",
+    """"threatseverity\\*":({alert_severity}[^,"]{1,2000})""",
+    """"threatcategory\\*":\\*"({threat_category}[^,"\\]{1,2000})""",
+    """"threatactiontaken\\*":\\*"({action}[^,"\\]{1,2000})""",
+    """"sourceusername\\*":\\*"?((NT AUTHORITY|({domain}[^\\",]{1,2000}))\\+)?(null|SYSTEM|({user}[^,"\\\s]{1,2000}))""",
+    """"targetusername\\*":(null|SYSTEM|({user}[^\\\s",]{1,2000}))""",
+    """"threatname\\*":\\*"(_|({alert_name}[^,"\\]{1,2000}))\s{0,100}\\*"""",
+    """"threattype\\*":\\*"(\s{1,100}|({alert_type}[^,"\\]{1,2000}))""",
+    """"targethostname\\*":\\*"({src_host}[^,"\\]{1,2000})""",
+    """"targetfilename\\*":\\*"(?:|null|({malware_url}.*?[\\\/]?({malware_file_name}[^\\\/]{1,2000}?)))\\*"""",
+    """"analyzerdetectionmethod\\*":\\*"(\s{1,100}|({additional_info}[^,"\\]{1,2000}))""",
+    """"threateventid\\*":({alert_id}[^,"\\]{1,2000})""",
+    """"targetprocessname\\*":\\*"(null|({process}(({directory}[^"]{1,2000}?)\/+)?({process_name}[^"\/\\]{0,2000}?)))\\*"""",
   ]
   DupFields = [ "directory->process_directory" ]
   SOAR {

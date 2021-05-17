@@ -11,15 +11,15 @@ Name = xml-4719
   Fields = [
     """({event_code}4719)""",
     """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """<Computer>({host}[^<]+)""",
-    """<Computer>(\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}|({dest_host}[^<]+))""",
-    """<Data Name='SubjectUserSid'>({user_sid}[^<]+)""",
-    """<Data Name='SubjectUserName'>({user}[^<]+)""",
-    """<Data Name='SubjectDomainName'>({domain}[^<]+)""",
-    """<Data Name='SubjectLogonId'>({logon_id}[^<]+)""",
-    """<Data Name='CategoryId'>({category_id}[^<]+)""",
-    """<Data Name='SubcategoryId'>({sub_category_id}[^<]+)""",
-    """<Data Name='AuditPolicyChanges'>({policy}[^<]+)""",
+    """<Computer>({host}[^<]{1,2000})""",
+    """<Computer>(\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}|({dest_host}[^<]{1,2000}))""",
+    """<Data Name='SubjectUserSid'>({user_sid}[^<]{1,2000})""",
+    """<Data Name='SubjectUserName'>({user}[^<]{1,2000})""",
+    """<Data Name='SubjectDomainName'>({domain}[^<]{1,2000})""",
+    """<Data Name='SubjectLogonId'>({logon_id}[^<]{1,2000})""",
+    """<Data Name='CategoryId'>({category_id}[^<]{1,2000})""",
+    """<Data Name='SubcategoryId'>({sub_category_id}[^<]{1,2000})""",
+    """<Data Name='AuditPolicyChanges'>({policy}[^<]{1,2000})""",
   ]
 }
 ```

@@ -13,16 +13,16 @@ Name = xml-sysmon-process-created-1
     """<Data Name='UtcTime'>({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)</Data>""",
     """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """<Computer>({host}.+?)</Computer>""",
-    """<Data Name='User'>(({domain}[^\\<]+?)\\)?({user}.+?)</Data>""",
+    """<Data Name='User'>(({domain}[^\\<]{1,2000}?)\\)?({user}.+?)</Data>""",
     """<Security UserID='({user_sid}.+?)'/>""",
-    """<Data Name='Hashes'>.*?MD5=({md5}[A-F0-9a-f]+).*?</Data>""",
-    """(?i)<Data Name='SourceProcessGuid'>\{({process_guid}[A-F0-9a-f-]+)\}</Data>""",
+    """<Data Name='Hashes'>.*?MD5=({md5}[A-F0-9a-f]{1,2000}).*?</Data>""",
+    """(?i)<Data Name='SourceProcessGuid'>\{({process_guid}[A-F0-9a-f-]{1,2000})\}</Data>""",
     """<Data Name='SourceProcessId'>({pid}\d{1,100})</Data>""",
-    """(?i)<Data Name='TargetProcessGuid'>\{({target_process_guid}[A-F0-9a-f-]+)\}</Data>""",
+    """(?i)<Data Name='TargetProcessGuid'>\{({target_process_guid}[A-F0-9a-f-]{1,2000})\}</Data>""",
     """<Data Name='TargetProcessId'>({target_pid}\d{1,100})</Data>""",
     """<Data Name='CommandLine'>({command_line}.+?)\s{0,100}</Data>""",
-    """<Data Name='SourceImage'>({path}(({directory}[^<]*)\\+)?({process_name}.+?))</Data>""",
-    """<Data Name='TargetImage'>({target_path}(({target_directory}[^<]*)\\+)?({target_process_name}.+?))</Data>""",
+    """<Data Name='SourceImage'>({path}(({directory}[^<]{0,2000})\\+)?({process_name}.+?))</Data>""",
+    """<Data Name='TargetImage'>({target_path}(({target_directory}[^<]{0,2000})\\+)?({target_process_name}.+?))</Data>""",
   ]
   DupFields = [ "host->dest_host","directory->process_directory","path->process" ]
 }

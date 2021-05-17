@@ -9,7 +9,7 @@ Name = s-pharos-print-activity
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
   Conditions = [ """ JobName=""", """ UserName=""", """ DeviceName=""", """ Time_Printed=""",]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[^\s]{1,2000})""",
     """(^|exabeam_\w+=)({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100})\s{1,100}(?!exabeam)""",
     """\sUserName=({user}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\sJobName="?({object}.+?)"?(\s{1,100}\w+=|\s{0,100}$)""",

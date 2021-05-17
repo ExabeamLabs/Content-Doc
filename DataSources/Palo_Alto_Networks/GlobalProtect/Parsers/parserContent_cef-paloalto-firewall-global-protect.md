@@ -12,7 +12,7 @@ Name = cef-paloalto-firewall-global-protect
    Fields = [
      """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d).""",
      """Protect\sPortal\s({activity}.+?)\|"""
-     """src=({src_ip}[^\s]*)\s""",
+     """src=({src_ip}[^\s]{0,2000})\s""",
      """suser=({user}.+?)\s""",
      """cat=({object}.+?)\snitro"""
    ]

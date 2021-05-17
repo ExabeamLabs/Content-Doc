@@ -9,10 +9,10 @@ Name = ovirt-app-activity-3
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """EVENT_ID: USER_STARTED_VM""", """ovirt""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d),.+?ovirt""",
-    """EVENT_ID:\s{0,100}({activity}[^\(\)]+)""",
-    """EVENT_ID:.*? VM ({object}[^\s"]+) was started by ({user}[^\s\(\)]+) \(Host: ({resource}[^\)]+)""",
+    """EVENT_ID:\s{0,100}({activity}[^\(\)]{1,2000})""",
+    """EVENT_ID:.*? VM ({object}[^\s"]{1,2000}) was started by ({user}[^\s\(\)]{1,2000}) \(Host: ({resource}[^\)]{1,2000})""",
     """({app}ovirt)"""
   ]
 }

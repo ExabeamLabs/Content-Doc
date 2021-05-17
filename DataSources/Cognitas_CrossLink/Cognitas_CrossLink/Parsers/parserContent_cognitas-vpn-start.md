@@ -13,7 +13,7 @@ Name = cognitas-vpn-start
       """\ssuser=({user}.+?)\s{1,100}\w+=""",
       """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-      """\sdvchost=({host}[^\s]+)"""
+      """\sdvchost=({host}[^\s]{1,2000})"""
     ]
   }
 ```

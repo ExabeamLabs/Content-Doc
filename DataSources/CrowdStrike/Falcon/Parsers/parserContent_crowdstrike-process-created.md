@@ -10,11 +10,11 @@ Name = crowdstrike-process-created
     TimeFormat = "epoch"
     Conditions = [ """"event_simpleName":""", """"ProcessRollup2"""" ]
     Fields = [
-      """exabeam_host=([^=]+@\s{0,100})?({host}[\w\-.]+)""",
-      """"aip":\s{0,100}"({host}[^"]+)""",
-      """"aip":\s{0,100}"({dest_ip}[^"]+)"""
+      """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
+      """"aip":\s{0,100}"({host}[^"]{1,2000})""",
+      """"aip":\s{0,100}"({dest_ip}[^"]{1,2000})"""
       """"timestamp":\s{0,100}"({time}\d{1,100})""",
-      """"event_simpleName":\s{0,100}"({event_code}[^"]+)""",
-      """"aid":\s{0,100}"({aid}[^"]+)""",
-      """"CommandLine":\s{0,100}"\s{0,100}({command_line}[^,]+?)\s{0,100}"{0,20}
+      """"event_simpleName":\s{0,100}"({event_code}[^"]{1,2000})""",
+      """"aid":\s{0,100}"({aid}[^"]{1,2000})""",
+      """"CommandLine":\s{0,100}"\s{0,100}({command_line}[^,]{1,2000}?)\s{0,100}"{0,20}
 ```

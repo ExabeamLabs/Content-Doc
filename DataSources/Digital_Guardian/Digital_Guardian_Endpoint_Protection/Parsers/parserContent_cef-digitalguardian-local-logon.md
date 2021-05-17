@@ -10,8 +10,8 @@ Name = cef-digitalguardian-local-logon
   Conditions = [ """|Digital Guardian|Digital Guardian|""", """|User Logon|""" ]
   Fields = [
     """\srt=({time}\d{1,100})""",
-    """\sshost=(([^\/\\=]+)[\/\\]+)?({host}\S+)""",
-    """\ssuser=(({domain}[^\/\\=]+)[\/\\]+)?({user}[^=]+?)\s{1,100}(ad\.\S+=|\w+=|$)""",
+    """\sshost=(([^\/\\=]{1,2000})[\/\\]{1,2000})?({host}\S+)""",
+    """\ssuser=(({domain}[^\/\\=]{1,2000})[\/\\]{1,2000})?({user}[^=]{1,2000}?)\s{1,100}(ad\.\S+=|\w+=|$)""",
     """\ssproc=({process_name}.+?)\s{1,100}(ad\.\S+=|\w+=|$)""",
     """({event_code}User Logon)""",
   ]

@@ -10,14 +10,14 @@ Name = leef-fireeye-alert
   Conditions = [ """|FireEye|CMS|""", """dvchost=""", """action=""" ]
   Fields = [
     """\WdevTime=({time}\w+ \d{1,100} \d\d\d\d \d\d:\d\d:\d\d)""",
-    """\|FireEye\|CMS\|([^\|]*\|){1}({alert_type}[^\|]+)""",
+    """\|FireEye\|CMS\|([^\|]{0,2000}\|){1}({alert_type}[^\|]{1,2000})""",
     """\Wsev=({alert_severity}\d{1,100})""",
-    """\Wsname=({alert_name}[^\^]+)""",
-    """\Wdvc=({host}[a-fA-F:\d.]+)""",
-    """\Wdvchost=({host}[\w\-.]+)""",
+    """\Wsname=({alert_name}[^\^]{1,2000})""",
+    """\Wdvc=({host}[a-fA-F:\d.]{1,2000})""",
+    """\Wdvchost=({host}[\w\-.]{1,2000})""",
     """\WexternalId=({alert_id}\d{1,100})""",
-    """\Wduser=({user_email}[^\^\s,]+)""",
-    """\Wlink=({malware_url}[^\^]+)""",
+    """\Wduser=({user_email}[^\^\s,]{1,2000})""",
+    """\Wlink=({malware_url}[^\^]{1,2000})""",
   ]
   DupFields = [ "user_email->user" ]
   SOAR {

@@ -10,8 +10,8 @@ Name = cisco-asa-746016
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ "-746016", "%ASA-" ]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}[\w\-.]+)""",
-    """({host}[\w\-.]+)\s{1,100}({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d):\s{0,100}%ASA-({priority}\d{1,100})""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
+    """({host}[\w\-.]{1,2000})\s{1,100}({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d):\s{0,100}%ASA-({priority}\d{1,100})""",
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d(\+|\-)\d\d:\d\d)\s{1,100}({host}\S+)\s{1,100}:\s{0,100}%ASA-({priority}\d{1,100})""",
     """({event_code}746016)""",
     """({event_name}DNS lookup) for ({query}\S+)""",

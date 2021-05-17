@@ -16,7 +16,7 @@ unix-events = {
   Lms = Direct
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Fields = [
-    """\[({src_ip}[a-fA-F\d.:]+)\]\[\d{1,100}\]\[\w+\]\[\]<\d{1,100}>\d{1,100} ({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d{1,100}(\+|\-)\d\d:\d\d ({host}[\w.\-]+) ({event_code}\S+)""",
+    """\[({src_ip}[a-fA-F\d.:]{1,2000})\]\[\d{1,100}\]\[\w+\]\[\]<\d{1,100}>\d{1,100} ({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d{1,100}(\+|\-)\d\d:\d\d ({host}[\w.\-]{1,2000}) ({event_code}\S+)""",
   ]
 
 ```

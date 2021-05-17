@@ -12,9 +12,9 @@ Name = unix-process-creation-failure
     Fields = [
       """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
       """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d)""",
-      """exe="({process}[^"]*)"""",
+      """exe="({process}[^"]{0,2000})"""",
       """exe="({process_directory}.+\/)({process_name}.+?)"""",
-      """\d\d:\d\d\s{1,100}({host}[\w\-.]+)\s{1,100}""",
+      """\d\d:\d\d\s{1,100}({host}[\w\-.]{1,2000})\s{1,100}""",
       """\sppid=({parent_process_id}.+?)\s{1,100}(\w+=|$)""",
       """\spid=({pid}.+?)\s{1,100}(\w+=|$)""",
       """\suid=({user_id}.+?)\s{1,100}(\w+=|$)""",

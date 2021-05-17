@@ -11,19 +11,19 @@ Name = mysql-db-activity-json
     Conditions = [ """"msg-type":"activity"""", """"query":""" ]
     Fields = [
       """"date":"({time}\d{1,100})""",
-      """"user":"({db_user}[^"]+)""",
-      """"ip":"({dest_ip}[a-fA-F\d.:]+)""",
-      """"host":"({dest_host}[^"]+)""",
-      """"_os":"({os}[^"]+)""",
-      """"_client_name":"({app}[^"]+)""",
-      """"rows":"({response_size}[^"]+)""",
-      """"pid":"({pid}[^"]+)""",
-      """"os_user":"({user}[^"]+)""",
-      """"status":"({outcome}[^"]+)""",
-      """"cmd":"({db_operation}[^"]+)""",
-      """"db":"({database_name}[^"]+)""",
-      """"name":"({database_object}[^"]+)""",
-      """"query":"({db_query}[^"]+)""",
+      """"user":"({db_user}[^"]{1,2000})""",
+      """"ip":"({dest_ip}[a-fA-F\d.:]{1,2000})""",
+      """"host":"({dest_host}[^"]{1,2000})""",
+      """"_os":"({os}[^"]{1,2000})""",
+      """"_client_name":"({app}[^"]{1,2000})""",
+      """"rows":"({response_size}[^"]{1,2000})""",
+      """"pid":"({pid}[^"]{1,2000})""",
+      """"os_user":"({user}[^"]{1,2000})""",
+      """"status":"({outcome}[^"]{1,2000})""",
+      """"cmd":"({db_operation}[^"]{1,2000})""",
+      """"db":"({database_name}[^"]{1,2000})""",
+      """"name":"({database_object}[^"]{1,2000})""",
+      """"query":"({db_query}[^"]{1,2000})""",
     ]
     DupFields = [ "dest_host->host" ]
   }

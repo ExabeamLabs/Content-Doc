@@ -9,8 +9,8 @@ Name = ccure-app-login-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """"messagetype":"""", """"statecode":"LoggedIn"""", """"primaryobjectname":"""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
-    """"messageutc":"({time}[^"]+)""",
-    """"statecode":"({event_name}[^"]+)""",
-    """"primaryobjectname":"{0,20}(null|({last_name}[^",]+?)\s{0,100}
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """"messageutc":"({time}[^"]{1,2000})""",
+    """"statecode":"({event_name}[^"]{1,2000})""",
+    """"primaryobjectname":"{0,20}(null|({last_name}[^",]{1,2000}?)\s{0,100}
 ```

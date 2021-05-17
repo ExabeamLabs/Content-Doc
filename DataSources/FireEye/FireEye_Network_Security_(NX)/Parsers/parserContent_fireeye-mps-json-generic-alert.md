@@ -9,13 +9,13 @@ Name = fireeye-mps-json-generic-alert
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = [""""msg": """",""""product": "Web MPS"""",""""alert": {"""]
     Fields = [
-            """"appliance": "({host}[^"]+)"""",
-            """"src":\s\{\s{0,100}(?:"\w+": "[^"]+",\s{0,100})*"ip": "({src_ip}[^"]+)"""",
-            """"src":\s\{\s{0,100}(?:"\w+": "[^"]+",\s{0,100})*"host": "({src_host}[^"]+)"""",
-    """"explanation":\s\{\s{0,100}(?:"\w+": "[^"]+",\s{0,100})*"({alert_type}[^"]+)": \{\s{0,100}[^\{]+\{\s{0,100}(?:"\w+": "[^"]+",\s{0,100})*"name": "({alert_name}[^"]+)"""",
-            """"severity": "({alert_severity}[^"]+)"""", 
+            """"appliance": "({host}[^"]{1,2000})"""",
+            """"src":\s\{\s{0,100}(?:"\w+": "[^"]{1,2000}",\s{0,100})*"ip": "({src_ip}[^"]{1,2000})"""",
+            """"src":\s\{\s{0,100}(?:"\w+": "[^"]{1,2000}",\s{0,100})*"host": "({src_host}[^"]{1,2000})"""",
+    """"explanation":\s\{\s{0,100}(?:"\w+": "[^"]{1,2000}",\s{0,100})*"({alert_type}[^"]{1,2000})": \{\s{0,100}[^\{]{1,2000}\{\s{0,100}(?:"\w+": "[^"]{1,2000}",\s{0,100})*"name": "({alert_name}[^"]{1,2000})"""",
+            """"severity": "({alert_severity}[^"]{1,2000})"""", 
         """"occurred": "({time}\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})""",
-    """"id": "({alert_id}[^"]+)","""
+    """"id": "({alert_id}[^"]{1,2000})","""
     ]
     SOAR {
         IncidentType = "malware"

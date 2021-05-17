@@ -11,9 +11,9 @@ Name = cisco-acs-vpn-logout
   Fields = [
     """\d{1,100}\s{1,100}({time}\d\d\d\d\-\d\d\-\d\d \d{1,100}:\d{1,100}:\d{1,100})""",
     """CSCOacs_RADIUS_Accounting\s{1,100}(\d{1,100}\s{1,100}){3}\s{1,100}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=({host}[^\s]+)""",
-    """({host}[^\s]+)\s{1,100}CSCOacs_RADIUS_Accounting""",
-    """,\s{0,100}User-Name=(({domain}[^\s\\\/]+)[\\\/]+)?(?:(\w{2}\-){5}\w{2}|({user}[^,]+))""",
+    """exabeam_host=({host}[^\s]{1,2000})""",
+    """({host}[^\s]{1,2000})\s{1,100}CSCOacs_RADIUS_Accounting""",
+    """,\s{0,100}User-Name=(({domain}[^\s\\\/]{1,2000})[\\\/]{1,2000})?(?:(\w{2}\-){5}\w{2}|({user}[^,]{1,2000}))""",
     """Tunnel-Client-Endpoint=\(.+?\)\s({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """Framed-IP-Address=({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),"""
     """\:\d\d\s{1,100}({dest_host}.+?)\sCSCOacs""",

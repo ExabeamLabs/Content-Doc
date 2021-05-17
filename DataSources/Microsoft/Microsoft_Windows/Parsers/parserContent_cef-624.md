@@ -12,13 +12,7 @@ Name = cef-624
     """({event_name}User Account Created)""",
     """({event_code}624)""",
     """\srt=({time}\d{1,100})""",
-    """\ssntdom=({domain}[^\s]+)""",
+    """\ssntdom=({domain}[^\s]{1,2000})""",
     """\ssuser=({user}.+?)\s{1,100}\w+=""",
-    """\ssuid=\([^,]+,({logon_id}[^\)]+)""",
-    """\sdntdom=({account_domain}.+?)\s{1,100}\w+=""",
-    """\sduser=({account_name}.+?)\s{1,100}\w+=""",
-    """\sdvchost=({host}[^\s]+)"""
-  ]
-  DupFields = ["host->dest_host"]
-}
+    """\ssuid=\([^,]{1,2000}
 ```

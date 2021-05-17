@@ -10,13 +10,13 @@ Name = cef-carbonblack-security-alert
   Conditions = [ """|CarbonBlack|CbDefense_Syslog_Connector|""", """|Active_Threat|""" ]
   Fields = [
     """(\s|\|)rt="({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
-    """(\s|\|)dvc=({src_ip}[A-Fa-f:\d.]+)""",
-    """(\s|\|)dvchost=({host}[\w\-.]+)""",
-    """(\s|\|)duser=({user}[^\s]+)""",
-    """([^\|]*\|){5}({alert_type}[^\|]+)""",
-    """([^\|]*\|){6}({alert_name}[^\|]+)""",
-    """([^\|]*\|){7}({alert_severity}\d{1,100})""",
-    """(\s|\|)cs4="({alert_id}[^"]+)"""
+    """(\s|\|)dvc=({src_ip}[A-Fa-f:\d.]{1,2000})""",
+    """(\s|\|)dvchost=({host}[\w\-.]{1,2000})""",
+    """(\s|\|)duser=({user}[^\s]{1,2000})""",
+    """([^\|]{0,2000}\|){5}({alert_type}[^\|]{1,2000})""",
+    """([^\|]{0,2000}\|){6}({alert_name}[^\|]{1,2000})""",
+    """([^\|]{0,2000}\|){7}({alert_severity}\d{1,100})""",
+    """(\s|\|)cs4="({alert_id}[^"]{1,2000})"""
   ]
   DupFields = [ "host->dest_host" ]
   SOAR {

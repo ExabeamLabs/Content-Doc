@@ -9,21 +9,21 @@ Name = s-tanium-security-alert-2
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
     Conditions = [ """trace_process_table_id""", """Timestamp""", """Computer Name""", """Computer IP""" ]
     Fields = [
-      """exabeam_host=({host}[\w.\-]+)""",
+      """exabeam_host=({host}[\w.\-]{1,2000})""",
       """"Timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)"""", 
-      """"User Name":"({user}[^"]+?)"""",
-      """"User Id":"({user}[^"]+?)"""",
-      """"User Domain":"({domain}[^"]+?)"""",
-      """"user\\":\\"(({domain}[^"\\]+)\\+)?({user}[^"]+?)\\*"""",
-      """"Priority":"({alert_severity}[^"]+)"""",
-      """"Event Name":"({alert_name}[^"]+)"""",
-      """"Event Name":"({alert_type}[^"]+)"""",
-      """"Event Id":"({alert_id}[^"]+)"""",
-      """"Computer Name":"({src_host}[^"]+?)"""",
+      """"User Name":"({user}[^"]{1,2000}?)"""",
+      """"User Id":"({user}[^"]{1,2000}?)"""",
+      """"User Domain":"({domain}[^"]{1,2000}?)"""",
+      """"user\\":\\"(({domain}[^"\\]{1,2000})\\+)?({user}[^"]{1,2000}?)\\*"""",
+      """"Priority":"({alert_severity}[^"]{1,2000})"""",
+      """"Event Name":"({alert_name}[^"]{1,2000})"""",
+      """"Event Name":"({alert_type}[^"]{1,2000})"""",
+      """"Event Id":"({alert_id}[^"]{1,2000})"""",
+      """"Computer Name":"({src_host}[^"]{1,2000}?)"""",
       """"Computer IP":"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
-      """"fullpath\\":\\"({malware_url}[^"]+?)\\*"""",
-      """"name\\":\\"({file_name}[^"]+?)\\*"""",
-      """"md5\\":\\"({md5}[^"]+?)\\*"""",
+      """"fullpath\\":\\"({malware_url}[^"]{1,2000}?)\\*"""",
+      """"name\\":\\"({file_name}[^"]{1,2000}?)\\*"""",
+      """"md5\\":\\"({md5}[^"]{1,2000}?)\\*"""",
       """"payload=\{({additional_info}.+?[^\\]")\}"""
     ]
   }

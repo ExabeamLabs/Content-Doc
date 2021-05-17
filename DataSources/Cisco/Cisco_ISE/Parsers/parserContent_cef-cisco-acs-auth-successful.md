@@ -10,13 +10,13 @@ Name = cef-cisco-acs-auth-successful
   Conditions = [ """|CISCO|Cisco Secure ACS|""", """|Authentication succeeded|""" , """ad.Action=Login""" ]
   Fields = [
       """\srt=({time}\d{1,100})""",
-      """\sdvc=({host}[^\s]+)""",
-      """\sdvchost=({host}[^\s]+)""",
+      """\sdvc=({host}[^\s]{1,2000})""",
+      """\sdvchost=({host}[^\s]{1,2000})""",
       """\sshost=(?:|({src_host}.+?))\s\w+=""",
       """\ssrc=(?:|({src_ip}.+?))\s\w+=""",
-      """\ssuser=(({domain}[^\\]+)\\+)?({user}[^=]+)\s\w+=""",
+      """\ssuser=(({domain}[^\\]{1,2000})\\+)?({user}[^=]{1,2000})\s\w+=""",
       """\sdst=(?:|({dest_ip}.+?))\s\w+=""",
-      """AuthenticationMethod=(?:|({auth_method}.+?))\s[\w.]+="""
+      """AuthenticationMethod=(?:|({auth_method}.+?))\s[\w.]{1,2000}="""
 	]
 }
 ```

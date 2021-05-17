@@ -11,10 +11,10 @@ Name = cef-bcn-bdds-dhcp
     Fields = [
       """\srt=({time}\d{1,100})""",
       """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-      """\sdvchost=({host}[\w.\-]+)""",
+      """\sdvchost=({host}[\w.\-]{1,2000})""",
       """\scat=(?:|({category}.+?))\s\w+=""",
-      """\sshost=({dest_host}[^\s]+)""",
-      """\ssrc=({dest_ip}[^\s]+)"""
+      """\sshost=({dest_host}[^\s]{1,2000})""",
+      """\ssrc=({dest_ip}[^\s]{1,2000})"""
     ]
     DupFields = [ "dest_host->user" ]
   }

@@ -9,14 +9,14 @@ Name = cef-azure-auth-failed
   TimeFormat = "epoch"
   Conditions = [ """|Microsoft|Azure Active Directory|""", """|PasswordLogonInitialAuthUsingPassword|""", """LoginError""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """\Wrt=({time}\d{1,100})""",
     """\Wact=({event_code}.+?)\s{0,100}(\w+=|$)""",
     """\Woutcome=({outcome}.+?)\s{0,100}(\w+=|$)""",
-    """\Wsuid=(?!\S+@\S+)({user}[^\s]+)\s{0,100}(\w+=|$)""",
-    """\Wsuid=({user_email}({user}[^\s@]+)@[^\s]+)\s{0,100}(\w+=|$)""",
-    """\Wshost=({src_host}[\w\-.]+)""",
-    """\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
+    """\Wsuid=(?!\S+@\S+)({user}[^\s]{1,2000})\s{0,100}(\w+=|$)""",
+    """\Wsuid=({user_email}({user}[^\s@]{1,2000})@[^\s]{1,2000})\s{0,100}(\w+=|$)""",
+    """\Wshost=({src_host}[\w\-.]{1,2000})""",
+    """\Wsrc=({src_ip}[A-Fa-f:\d.]{1,2000})""",
   ]
 }
 ```

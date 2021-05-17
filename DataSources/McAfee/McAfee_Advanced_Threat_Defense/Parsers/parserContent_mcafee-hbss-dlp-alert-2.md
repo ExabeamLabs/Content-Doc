@@ -10,15 +10,15 @@ Name = mcafee-hbss-dlp-alert-2
   Conditions = [""""detecting_product_name":"MSME"""" , """threat_source_process_name""" , """threat_handled"""]
   Fields = [
     """event_generated_time":"({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d)""",
-    """"threat_source_user_name":"({user_email}[^"]+)"""",
-    """"threat_target_user_name":"({target}[^"]+)"""",
-    """"detecting_product_ip_address":"({host}[^"]+)"""",
-    """"detecting_product_host_name":"({host}[^"]+)"""",
-    """"threat_severity":"({alert_severity}[^"]+)"""",
-    """"event_category":"({alert_type}[^"]+)"""",
-    """"threat_source_process_name":"({process}[^"]+)"""",
-    """"action_taken":"({outcome}[^"]+)"""",
-    """"threat_type":"({alert_name}[^"]+)"""",
+    """"threat_source_user_name":"({user_email}[^"]{1,2000})"""",
+    """"threat_target_user_name":"({target}[^"]{1,2000})"""",
+    """"detecting_product_ip_address":"({host}[^"]{1,2000})"""",
+    """"detecting_product_host_name":"({host}[^"]{1,2000})"""",
+    """"threat_severity":"({alert_severity}[^"]{1,2000})"""",
+    """"event_category":"({alert_type}[^"]{1,2000})"""",
+    """"threat_source_process_name":"({process}[^"]{1,2000})"""",
+    """"action_taken":"({outcome}[^"]{1,2000})"""",
+    """"threat_type":"({alert_name}[^"]{1,2000})"""",
   ]
 }
 ```

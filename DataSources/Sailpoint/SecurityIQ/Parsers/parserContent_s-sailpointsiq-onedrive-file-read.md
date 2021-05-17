@@ -6,7 +6,7 @@ Name = s-sailpointsiq-onedrive-file-read
   Conditions = ["""| applicationtype : OneDrive """, """actiontype : File Previewed"""]
   
   Fields = ${SailPointSIQOneDriveTemplates.s-sailpointsiqonedrive-activity.Fields} [
-    """actiontype\s:\sFile\s({activity}[^|]+)\s\|"""
+    """actiontype\s:\sFile\s({activity}[^|]{1,2000})\s\|"""
   ]
   DupFields = [ "host->dest_ip" ]
 }
@@ -17,12 +17,12 @@ s-sailpointsiqonedrive-activity = {
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
   Fields = [
     """creation_timestamp\s:\s({time}\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3})""",
-    """ipaddress\s:\s({host}[^|]+)\s\|""",
-    """applicationtype\s:\s({app}[^|]+)\s\|""",
-    """fileextension\s:\s({file_ext}[^|]+)\s\|""",
-    """userfullname\s:\s({user_email}[^|]+)\s\|""",
-    """objectname\s:\s({file_name}[^|]+) \|""",
-    """\spath\s:\s({file_parent}[^|]+)\s\|"""
+    """ipaddress\s:\s({host}[^|]{1,2000})\s\|""",
+    """applicationtype\s:\s({app}[^|]{1,2000})\s\|""",
+    """fileextension\s:\s({file_ext}[^|]{1,2000})\s\|""",
+    """userfullname\s:\s({user_email}[^|]{1,2000})\s\|""",
+    """objectname\s:\s({file_name}[^|]{1,2000}) \|""",
+    """\spath\s:\s({file_parent}[^|]{1,2000})\s\|"""
   ]
 
 ```

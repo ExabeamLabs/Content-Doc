@@ -15,8 +15,8 @@ Name = cef-lyrix-badge-access-1
     """\Wcs3=({location_building}.+?)\s{1,100}(\w+=|$)""",
     """ flexString1=({location_city}.+?)\s{1,100}\S+=""",
     """ flexString2=({additional_info}.+?)\s{1,100}\S+="""
-    """\Wdvc=({host}[A-Fa-f:\d.]+)""",
-    """\Wdvchost=({host}[\w\-.]+)""",
+    """\Wdvc=({host}[A-Fa-f:\d.]{1,2000})""",
+    """\Wdvchost=({host}[\w\-.]{1,2000})""",
     """\Wrt=({time}\d{1,100})""",
     """\Wsuser=({user}.+?)\s{1,100}(\w+=|$)"""
   ]

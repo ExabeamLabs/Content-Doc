@@ -10,16 +10,16 @@ Name = wls-675
     Conditions = [ """LogType="WLS"""", """EventID="675"""" ]
     Fields = [
       """({event_name}Pre-authentication failed)""",
-      """exabeam_host=({host}[\w.\-]+)""",
+      """exabeam_host=({host}[\w.\-]{1,2000})""",
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """Computer="{1,20}({dest_host}[^"]+)"""",
-      """EventID="{1,20}({event_code}[^"]+)"""",
-      """EventRecordID="{1,20}({record_id}[^"]+)"""",
-      """IpAddress="{1,20}(?:::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)"""",
-      """ServiceName="{1,20}\w+\/(?=\w)({domain}[^"]+)"""",
-      """Status="{1,20}({result_code}[^"]+)"""",
-      """TargetSid="{1,20}({user_sid}[^"]+)"""",
-      """TargetUserName="{1,20}(?=\w)({user}[^"]+)""""
+      """Computer="{1,20}({dest_host}[^"]{1,2000})"""",
+      """EventID="{1,20}({event_code}[^"]{1,2000})"""",
+      """EventRecordID="{1,20}({record_id}[^"]{1,2000})"""",
+      """IpAddress="{1,20}(?:::[\w]{1,2000}:)?({dest_ip}[a-fA-F:\d.]{1,2000})"""",
+      """ServiceName="{1,20}\w+\/(?=\w)({domain}[^"]{1,2000})"""",
+      """Status="{1,20}({result_code}[^"]{1,2000})"""",
+      """TargetSid="{1,20}({user_sid}[^"]{1,2000})"""",
+      """TargetUserName="{1,20}(?=\w)({user}[^"]{1,2000})""""
     ]
   }
 ```

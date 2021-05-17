@@ -9,15 +9,15 @@ Name = amag-badge-access
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions= [ """"access_badge"""", """"txnconditionname":"""", """"cardnumber":""" ]
   Fields = [
-    """exabeam_host=({host}[\w.\-]+)""",
+    """exabeam_host=({host}[\w.\-]{1,2000})""",
     """"datetimeoftxn":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
-    """"txnconditionname":"({outcome}[^"]+)""",
-    """"wherename":"({location_door}[^"]+)""",
-    """"firstname":"({user_firstname}[^"]+)""",
-    """"lastname":"({user_lastname}[^"]+)""",
+    """"txnconditionname":"({outcome}[^"]{1,2000})""",
+    """"wherename":"({location_door}[^"]{1,2000})""",
+    """"firstname":"({user_firstname}[^"]{1,2000})""",
+    """"lastname":"({user_lastname}[^"]{1,2000})""",
     """"cardnumber":({badge_id}\d{1,100})""",
-    """"db_name":"({direction}[^"]+)""",
-    """"db_ip":"({dest_ip}[a-fA-F\d.:]+)""",
+    """"db_name":"({direction}[^"]{1,2000})""",
+    """"db_ip":"({dest_ip}[a-fA-F\d.:]{1,2000})""",
   ]
 }
 ```

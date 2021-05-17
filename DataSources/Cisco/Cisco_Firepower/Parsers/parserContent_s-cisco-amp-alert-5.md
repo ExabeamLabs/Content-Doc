@@ -5,7 +5,7 @@ Name = s-cisco-amp-alert-5
   Conditions = [ """"event_type"""", """"Vulnerable Application Detected"""", """"trajectory":""", """"timestamp_nanoseconds":""" ]
   DupFields = [ "alert_type->alert_name" ]
   Fields=${CiscoParsersTemplates.s-cisco-amp-alert.Fields}[
-    """file_name":"({process_name}[^\.]+\.exe)"""
+    """file_name":"({process_name}[^\.]{1,2000}\.exe)"""
   ]
 }
 s-cisco-amp-alert = {
@@ -15,40 +15,40 @@ s-cisco-amp-alert = {
   DataType = "alert"
   TimeFormat = "epoch_sec"
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """\Wact=(|({action}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wext_detection=(|({alert_name}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdproc=(|({process}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Woutcome=(|({outcome}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """timestamp":\s{0,100}({time}\d{1,100})""",
-    """detection":\s{0,100}"({alert_name}[^"]+)""",
-    """event_type":\s{0,100}"({alert_type}[^"]+)""",
-    """\Wsuser=((?i)(anonymous|system)|({user}[^\\\s@]+?))(\s{1,100}\w+=|\s{0,100}$)""",
-    """\Wsuser=((?i)(anonymous|system)|({user_email}[^@\s]+?@[^@\s\.=]+?\.[^@\s\.=]+?)|({user}[^@\s=]+?@(NT AUTHORITY|({domain}[^@\s\.=]+?))))(\s{1,100}\w+=|\s{0,100}$)""",
-    """user":\s{0,100}"((?i)(anonymous|system)|({user}[^"@\s]+))"""",
-    """user"{1,20}:\s{0,100}"{1,20}((?i)(anonymous|system)|({user_email}[^@]+@[^@"]+\.[^"]+)|({user}[^@]+)@(NT AUTHORITY|({domain}[^"]+)))""",
-    """hostname":\s{0,100}"({src_host}[^"]+)""",
-    """file_path":\s{0,100}"(\\+\?\\+)?({file_path}[^"]+)""",
-    """external_ip":\s{0,100}"({dest_ip}[^"]+)""",
-    """"network_addresses":.+?"ip":\s{0,100}"({src_ip}[^"]+)""",
-    """"trajectory":\s{0,100}"({additional_info}[^"]+)""",
-    """,\s{0,100}"disposition":\s{0,100}"(Unknown|({alert_severity}[^"\s]+))"""",
-    """"file":\{([^\{\}]*?\{([^\{\}]*?\{([^\{\}]*?\{[^\{\}]*?\})*[^\{\}]*?\})*[^\{\}]*?\})*[^\{\}]*?"disposition":"(Unknown|({alert_severity}[^"\s]+))"""",
-    """"severity":\s{0,100}"({alert_severity}[^"]+)""",
-    """"file_name":\s{0,100}"({file_name}[^"]+)"([^\{\}]*?\{([^\{\}]*?\{[^\{\}]*?\})*[^\{\}]*?\})*[^\{\}]*?"disposition":""",
-    """,\s{0,100}"disposition":.+?file_name":\s{0,100}"({file_name}[^"]+)""",
-    """"sha256":\s{0,100}"({sha256}[^"]+)""",
-    """"sha1":\s{0,100}"({sha1}[^"]+)""",
-    """"md5":\s{0,100}"({md5}[^"]+)""",
-    """"file_name":\s{0,100}"({file_name}[^"]+)[^\}]+?"disposition"""",
-    """\s{0,100}"disposition":[^\{]+?file_name":\s{0,100}"({file_name}[^"]+)""",
-    """,\s{0,100}"disposition":.+?md5":\s{0,100}"({md5}[^"]+)""",
+    """detection":\s{0,100}"({alert_name}[^"]{1,2000})""",
+    """event_type":\s{0,100}"({alert_type}[^"]{1,2000})""",
+    """\Wsuser=((?i)(anonymous|system)|({user}[^\\\s@]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wsuser=((?i)(anonymous|system)|({user_email}[^@\s]{1,2000}?@[^@\s\.=]{1,2000}?\.[^@\s\.=]{1,2000}?)|({user}[^@\s=]{1,2000}?@(NT AUTHORITY|({domain}[^@\s\.=]{1,2000}?))))(\s{1,100}\w+=|\s{0,100}$)""",
+    """user":\s{0,100}"((?i)(anonymous|system)|({user}[^"@\s]{1,2000}))"""",
+    """user"{1,20}:\s{0,100}"{1,20}((?i)(anonymous|system)|({user_email}[^@]{1,2000}@[^@"]{1,2000}\.[^"]{1,2000})|({user}[^@]{1,2000})@(NT AUTHORITY|({domain}[^"]{1,2000})))""",
+    """hostname":\s{0,100}"({src_host}[^"]{1,2000})""",
+    """file_path":\s{0,100}"(\\+\?\\+)?({file_path}[^"]{1,2000})""",
+    """external_ip":\s{0,100}"({dest_ip}[^"]{1,2000})""",
+    """"network_addresses":.+?"ip":\s{0,100}"({src_ip}[^"]{1,2000})""",
+    """"trajectory":\s{0,100}"({additional_info}[^"]{1,2000})""",
+    """,\s{0,100}"disposition":\s{0,100}"(Unknown|({alert_severity}[^"\s]{1,2000}))"""",
+    """"file":\{([^\{\}]{0,2000}?\{([^\{\}]{0,2000}?\{([^\{\}]{0,2000}?\{[^\{\}]{0,2000}?\})*[^\{\}]{0,2000}?\})*[^\{\}]{0,2000}?\})*[^\{\}]{0,2000}?"disposition":"(Unknown|({alert_severity}[^"\s]{1,2000}))"""",
+    """"severity":\s{0,100}"({alert_severity}[^"]{1,2000})""",
+    """"file_name":\s{0,100}"({file_name}[^"]{1,2000})"([^\{\}]{0,2000}?\{([^\{\}]{0,2000}?\{[^\{\}]{0,2000}?\})*[^\{\}]{0,2000}?\})*[^\{\}]{0,2000}?"disposition":""",
+    """,\s{0,100}"disposition":.+?file_name":\s{0,100}"({file_name}[^"]{1,2000})""",
+    """"sha256":\s{0,100}"({sha256}[^"]{1,2000})""",
+    """"sha1":\s{0,100}"({sha1}[^"]{1,2000})""",
+    """"md5":\s{0,100}"({md5}[^"]{1,2000})""",
+    """"file_name":\s{0,100}"({file_name}[^"]{1,2000})[^\}]{1,2000}?"disposition"""",
+    """\s{0,100}"disposition":[^\{]{1,2000}?file_name":\s{0,100}"({file_name}[^"]{1,2000})""",
+    """,\s{0,100}"disposition":.+?md5":\s{0,100}"({md5}[^"]{1,2000})""",
     """\sdestinationServiceName=({product_name}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
-    """"ip":\s{0,100}"({src_ip}[a-fA-F\d.:]+)""",
-    """src=({src_ip}[\da-fA-F.:]+)""",
-    """"mac":\s{0,100}"({mac}[^"]+)""",
+    """"ip":\s{0,100}"({src_ip}[a-fA-F\d.:]{1,2000})""",
+    """src=({src_ip}[\da-fA-F.:]{1,2000})""",
+    """"mac":\s{0,100}"({mac}[^"]{1,2000})""",
     """\Woutcome=(|({outcome}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-    """"connector_guid":"({connector_guid}[^"]+)""",
+    """"connector_guid":"({connector_guid}[^"]{1,2000})""",
   ]
 
 ```

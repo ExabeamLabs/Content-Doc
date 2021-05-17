@@ -9,18 +9,18 @@ Name = symantec-usb-insert
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ "Device Manager Message", "device was", "successfully", "User: " ]
   Fields = [
-    """exabeam_host=({host}[^,\s]+)""",
-    """(\s|,)({dest_host}[^,\s]+),Device Manager Message""",
+    """exabeam_host=({host}[^,\s]{1,2000})""",
+    """(\s|,)({dest_host}[^,\s]{1,2000}),Device Manager Message""",
     """,Local: (0\.0\.0\.0|({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))""",
     """Begin:\s{1,100}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """User:\s{1,100}({user}.+?),Domain""",
     """(?i)({activity}device was allowed successfully)""",
-    """Domain:\s{1,100}({domain}[^,]+),""",
+    """Domain:\s{1,100}({domain}[^,]{1,2000}),""",
     """\[class\]:(?:\?|({device_type}.+?))\s{1,100}\[guid\]:""",
     """Device ID:\s{1,100}({device_id}.+)&\d{1,100}""",
     """\[deviceID\]:({device_id}.+)&\d{1,100}""",
     """The device was allowed successfully\.\s{1,100}({activity_details}.*?)\s{1,100}\[guid""",
-    """The device was Allowed successfully\.\s{1,100}({activity_details}[^,]+?),"""
+    """The device was Allowed successfully\.\s{1,100}({activity_details}[^,]{1,2000}?),"""
   ]
   SOAR {
     IncidentType = "generic"

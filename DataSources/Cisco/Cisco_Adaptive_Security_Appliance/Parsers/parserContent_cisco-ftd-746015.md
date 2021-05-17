@@ -9,9 +9,9 @@ Name = cisco-ftd-746015
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ """%FTD-""", """-746015""", """ resolved""" ]
   Fields = [
-    """({time}\w+\s\d\d\s\d\d\d\d\s\d\d:\d\d:\d\d)\s({host}[\w\-.]+)\s:\s{0,100}%FTD-""",
-    """%FTD-({priority}\d)-({event_code}[^:]+)""",
-    """\]\s({response}({query}\S+)\s({dns_response_code}resolved)[^=]+?)\s{0,100}$"""
+    """({time}\w+\s\d\d\s\d\d\d\d\s\d\d:\d\d:\d\d)\s({host}[\w\-.]{1,2000})\s:\s{0,100}%FTD-""",
+    """%FTD-({priority}\d)-({event_code}[^:]{1,2000})""",
+    """\]\s({response}({query}\S+)\s({dns_response_code}resolved)[^=]{1,2000}?)\s{0,100}$"""
   ]
 }
 ```

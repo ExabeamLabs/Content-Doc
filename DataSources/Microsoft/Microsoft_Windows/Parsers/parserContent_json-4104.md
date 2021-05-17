@@ -10,14 +10,14 @@ Name = json-4104
   Conditions = [ """"EventID":4104""", """Microsoft-Windows-PowerShell[""", """"Category":"""", """"ScriptBlockId":""""  ]
   Fields = [
     """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""",
-    """"Hostname":"({host}[^"]+)"""",
+    """"Hostname":"({host}[^"]{1,2000})"""",
     """"EventID":({event_code}\d{1,100})""",
     """"ProcessID":({pid}\d{1,100})""",
-    """"Domain":"({domain}[^"]+)"""",
-    """"AccountName":"({user}[^"]+)"""",
-    """"UserID":"({user_sid}[^"]+)"""",
-    """"Message":"({event_name}[^\(:]+?)\s{0,100}\(""",
-    """"ScriptBlockId":"({scriptblock_id}[^"]+)"""",
+    """"Domain":"({domain}[^"]{1,2000})"""",
+    """"AccountName":"({user}[^"]{1,2000})"""",
+    """"UserID":"({user_sid}[^"]{1,2000})"""",
+    """"Message":"({event_name}[^\(:]{1,2000}?)\s{0,100}\(""",
+    """"ScriptBlockId":"({scriptblock_id}[^"]{1,2000})"""",
     """({process_name}PowerShell)"""
   ]
 }

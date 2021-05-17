@@ -10,16 +10,16 @@ Name = leef-cbdef-security-alert
   Conditions = [ """|CarbonBlack|CbDefense|""", """LEEF:""", """Active_Threat""" ]
   Fields = [
         """\sdevTime=({time}\w+\-\d{1,2}\-\d{4} \d\d:\d\d:\d\d \w+)""",
-        """\sdeviceName=(({domain}[^\s\\]+)\\)?({src_host}[^\s\\]+)\s""",
+        """\sdeviceName=(({domain}[^\s\\]{1,2000})\\)?({src_host}[^\s\\]{1,2000})\s""",
         """\sinternalIpAddress=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s""",
         """\sexternalIpAddress=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s""",
         """\ssev=({alert_severity}\d{1,100})\s""",
         """\ssummary=({additional_info}.+?)\s{1,100}groupName=""",
-        """\ssignature=({alert_type}[^\s]+)""",
-        """\sincidentId=({alert_id}[^\s]+)""",
+        """\ssignature=({alert_type}[^\s]{1,2000})""",
+        """\sincidentId=({alert_id}[^\s]{1,2000})""",
         """\sapplicationName=({process_name}.+?)\s{1,100}indicatorName=""",
         """\|CarbonBlack\|CbDefense\|(.*?)\|({alert_name}.*?)\|""",
-        """\semail=(({domain}[^\\]+)\\+)?({user}[^\\\s]+)"""        
+        """\semail=(({domain}[^\\]{1,2000})\\+)?({user}[^\\\s]{1,2000})"""        
   ]
   SOAR {
     IncidentType = "malware"

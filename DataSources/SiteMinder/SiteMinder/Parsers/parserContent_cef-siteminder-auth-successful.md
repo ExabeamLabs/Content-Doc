@@ -10,13 +10,13 @@ Name = cef-siteminder-auth-successful
   Conditions = [ """|Computer Associates|""", """SiteMinder|""", """categoryOutcome=/Success""" ]
   Fields = [
     """rt=({time}\d{1,100})""",
-    """dvc=({host}[a-fA-F:\d.]+)""",
-    """dvchost=({host}[\w\-.]+)""",
-    """shost=({src_host}[\w\-.]+)""",
-    """src=({src_ip}[a-fA-F:\d.]+)""",
-    """dhost=({dest_host}[\w\-.]+)""",
-    """dst=({dest_ip}[a-fA-F:\d.]+)""",
-    """duser=(uid\\=)?({user}[^=\\\s,]+)""",
+    """dvc=({host}[a-fA-F:\d.]{1,2000})""",
+    """dvchost=({host}[\w\-.]{1,2000})""",
+    """shost=({src_host}[\w\-.]{1,2000})""",
+    """src=({src_ip}[a-fA-F:\d.]{1,2000})""",
+    """dhost=({dest_host}[\w\-.]{1,2000})""",
+    """dst=({dest_ip}[a-fA-F:\d.]{1,2000})""",
+    """duser=(uid\\=)?({user}[^=\\\s,]{1,2000})""",
     """suser=({user}\S+)"""
   ]
 }

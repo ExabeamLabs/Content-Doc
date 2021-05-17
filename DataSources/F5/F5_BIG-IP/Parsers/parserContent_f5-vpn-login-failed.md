@@ -10,8 +10,8 @@ Name = f5-vpn-login-failed
   Conditions = [ """01490106:4""" ]
   Fields = [
     """@timestamp"\s{0,100}:\s{0,100}"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
-    """exabeam_host=({host}[\w\.\-]+)""",
-    """\sprincipal name:\s{0,100}({user}[^@\.]+)(@({domain}.+?))?\.\s{1,100}({failure_reason}[^\.]+)""",
+    """exabeam_host=({host}[\w\.\-]{1,2000})""",
+    """\sprincipal name:\s{0,100}({user}[^@\.]{1,2000})(@({domain}.+?))?\.\s{1,100}({failure_reason}[^\.]{1,2000})""",
   ]
 }
 ```

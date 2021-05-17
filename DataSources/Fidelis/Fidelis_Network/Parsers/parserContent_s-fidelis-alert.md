@@ -10,19 +10,19 @@ Name = s-fidelis-alert
   Conditions = [ """Product="Fidelis network"""", """AlertId=""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\d\d:\d\d:\d\d ({host}[^\s]+)\s{1,100}Product=""",
-    """\sPolicy="({alert_name}[^"]+)"""",
-    """\sProtocol="({alert_type}[^"]+)"""",
-    """\sSeverity="({alert_severity}[^"]+)"""",
-    """\sSrcIP="({src_ip}[^"]+)"""",
-    """\sSrcPort="({src_port}[^"]+)"""",
-    """\sDestIP="({dest_ip}[^"]+)"""",
-    """\sDestPort="({dest_port}[^"]+)"""",
+    """\d\d:\d\d:\d\d ({host}[^\s]{1,2000})\s{1,100}Product=""",
+    """\sPolicy="({alert_name}[^"]{1,2000})"""",
+    """\sProtocol="({alert_type}[^"]{1,2000})"""",
+    """\sSeverity="({alert_severity}[^"]{1,2000})"""",
+    """\sSrcIP="({src_ip}[^"]{1,2000})"""",
+    """\sSrcPort="({src_port}[^"]{1,2000})"""",
+    """\sDestIP="({dest_ip}[^"]{1,2000})"""",
+    """\sDestPort="({dest_port}[^"]{1,2000})"""",
     """\sMessage="({additional_info}.+?)"\s{1,100}MD5="""",
-    """\sTarget="(?:(<n\/a>)|({malware_url}[^"]+))"""",
-    """\sMalware="(?:(<n\/a> <n\/a>)|({malware_url}[^"]+))"""",
-    """\sSubject="(?:(<n\/a>)|({malware_url}[^"]+))""""
-    """\sFilename="(?:(<n\/a>)|({malware_url}[^"]+))""""
+    """\sTarget="(?:(<n\/a>)|({malware_url}[^"]{1,2000}))"""",
+    """\sMalware="(?:(<n\/a> <n\/a>)|({malware_url}[^"]{1,2000}))"""",
+    """\sSubject="(?:(<n\/a>)|({malware_url}[^"]{1,2000}))""""
+    """\sFilename="(?:(<n\/a>)|({malware_url}[^"]{1,2000}))""""
   ]
   SOAR {
     IncidentType = "malware"

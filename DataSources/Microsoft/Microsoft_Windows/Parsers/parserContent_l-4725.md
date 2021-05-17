@@ -11,8 +11,8 @@ Name = l-4725
   Fields = [
     """({event_name}A user account was disabled)""",
     	      """SystemTime=\'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-              """<Computer>({host}[^<]+)</Computer>""",
-              """<EventID>({event_code}[^<]+)</EventID>""",
+              """<Computer>({host}[^<]{1,2000})</Computer>""",
+              """<EventID>({event_code}[^<]{1,2000})</EventID>""",
               """Subject:.+?Security ID:\s{0,100}({user_sid}.+?)\s{0,100}Account Name:""",
               """Subject:.+?Account Name:\s{0,100}({user}.+?)\s{0,100}Account Domain:\s{0,100}({domain}.+?)\s{0,100}Logon ID""",
               """Logon ID:\s{0,100}({logon_id}.+?)\s{0,100}Target Account:""",

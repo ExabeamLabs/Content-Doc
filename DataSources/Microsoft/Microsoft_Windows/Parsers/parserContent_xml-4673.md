@@ -10,17 +10,17 @@ Name = xml-4673
     Conditions = [ "<EventID>4673</EventID>", """<Data Name""", """<Event xmlns""" ]
     Fields = [
       """<TimeCreated SystemTime(\\)?='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-      """<Keyword(s)?>({outcome}[^<]+?)</Keyword(s)?>""",
-      """<Computer>({host}[^<]+)</Computer>""",
-      """<EventID>({event_code}[^<]+)</EventID>""",
-      """<Data Name(\\)?='SubjectUserSid'>\s{0,100}(({domain}[^\\<]+)\\)?({user}[^<]+)</Data>""",
-      """<Data Name(\\)?='SubjectUserName'>({user}[^<]+?)</Data>""",
-      """<Data Name(\\)?='SubjectDomainName'>({domain}[^<]+?)</Data>""",
-      """<Data Name(\\)?='SubjectLogonId'>({login_id}[^<]+?)</Data>""",
-      """<Data Name(\\)?='ObjectServer'>({object_server}[^<]+?)</Data>""",
-      """<Data Name(\\)?='PrivilegeList'>({privileges}[^<]+?)</Data>""",
-      """<Data Name(\\)?='ProcessName'>({process}({directory}[^<]*?)({process_name}[^\\<]+?))</Data>""",
-      """<Data Name(\\)?='SubjectLogonId'>({logon_id}[^<>\s=]+)"""
+      """<Keyword(s)?>({outcome}[^<]{1,2000}?)</Keyword(s)?>""",
+      """<Computer>({host}[^<]{1,2000})</Computer>""",
+      """<EventID>({event_code}[^<]{1,2000})</EventID>""",
+      """<Data Name(\\)?='SubjectUserSid'>\s{0,100}(({domain}[^\\<]{1,2000})\\)?({user}[^<]{1,2000})</Data>""",
+      """<Data Name(\\)?='SubjectUserName'>({user}[^<]{1,2000}?)</Data>""",
+      """<Data Name(\\)?='SubjectDomainName'>({domain}[^<]{1,2000}?)</Data>""",
+      """<Data Name(\\)?='SubjectLogonId'>({login_id}[^<]{1,2000}?)</Data>""",
+      """<Data Name(\\)?='ObjectServer'>({object_server}[^<]{1,2000}?)</Data>""",
+      """<Data Name(\\)?='PrivilegeList'>({privileges}[^<]{1,2000}?)</Data>""",
+      """<Data Name(\\)?='ProcessName'>({process}({directory}[^<]{0,2000}?)({process_name}[^\\<]{1,2000}?))</Data>""",
+      """<Data Name(\\)?='SubjectLogonId'>({logon_id}[^<>\s=]{1,2000})"""
     ]
     DupFields = ["host->dest_host","directory->process_directory"]
   }

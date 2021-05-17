@@ -11,7 +11,7 @@ Name = cef-o365-dlp-alert
   Fields = [
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """ext_CreationTime=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """exabeam_host=({host}[^\s]+)""",
+    """exabeam_host=({host}[^\s]{1,2000})""",
     """suser=({user_email}.*?)\s\w+=""", 
     """suid=({user_id}.*?)\s\w+=""", 
     """dpriv=({alert_type}.*?)\s\w+=""",

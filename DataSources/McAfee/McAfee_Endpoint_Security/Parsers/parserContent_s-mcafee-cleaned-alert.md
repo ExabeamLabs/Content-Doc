@@ -9,8 +9,8 @@ Name = s-mcafee-cleaned-alert
     TimeFormat = "M/d/yyyy\tH:mm:ss a"
     Conditions = [ " (MD5)", "\tCleaned"]
     Fields = [ 
-      """exabeam_host=({host}[\w.\-]+)""",  
-      """({time}\d{1,100}/\d{1,100}/\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM)+)\t({additional_info}[^\t]+?)\s{0,100}\t(({domain}[^\t]+)(\\)+)?({user}[^\t]+)\t({process}[^\t]+)\t({malware_url}.+?\\({malware_file_name}[^\\]+))\t({alert_name}[^\t]+?)\s{0,100}\(({alert_type}[^\)]+)\)\t({md5}\S+?)\s{0,100}\(MD5\)"""
+      """exabeam_host=({host}[\w.\-]{1,2000})""",  
+      """({time}\d{1,100}/\d{1,100}/\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM)+)\t({additional_info}[^\t]{1,2000}?)\s{0,100}\t(({domain}[^\t]{1,2000})(\\)+)?({user}[^\t]{1,2000})\t({process}[^\t]{1,2000})\t({malware_url}.+?\\({malware_file_name}[^\\]{1,2000}))\t({alert_name}[^\t]{1,2000}?)\s{0,100}\(({alert_type}[^\)]{1,2000})\)\t({md5}\S+?)\s{0,100}\(MD5\)"""
     ]
     DupFields=[ "host->src_host" ]
     SOAR {

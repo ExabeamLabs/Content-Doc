@@ -9,6 +9,6 @@ Name = pan-config-change
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
   Conditions = [ ",CONFIG," ]
   Fields = [
-    """exabeam_host=(.+?@\s{0,100})?({host}[^\s]+)""",
-    """\d\d:\d\d:\d\d\s(?:-|({host}[^:\s]+))\s\d{1,100}
+    """exabeam_host=(.+?@\s{0,100})?({host}[^\s]{1,2000})""",
+    """\d\d:\d\d:\d\d\s(?:-|({host}[^:\s]{1,2000}))\s\d{1,100}
 ```

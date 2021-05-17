@@ -10,10 +10,10 @@ Name = estreamer-dns-query
     TimeFormat = "epoch"
     Conditions = [ """DeviceType=Estreamer""", """flowStatistics.dnsQuery=""" ]
     Fields = [
-      """\sDeviceAddress=({host}[\w.\-]+)""",
+      """\sDeviceAddress=({host}[\w.\-]{1,2000})""",
       """\sCurrentTime=({time}\d{1,100})""",
-      """\sflowStatistics\.initiatorIPAddress=({src_ip}[a-fA-F\d.:]+)""",
-      """\sflowStatistics\.responderIPAddress=({dest_ip}[a-fA-F\d.:]+)""",
+      """\sflowStatistics\.initiatorIPAddress=({src_ip}[a-fA-F\d.:]{1,2000})""",
+      """\sflowStatistics\.responderIPAddress=({dest_ip}[a-fA-F\d.:]{1,2000})""",
       """\sflowStatistics\.initiatorPort=({src_port}\d{1,100})""",
       """\sflowStatistics\.responderPort=({dest_port}\d{1,100})""",
       """\sflowStatistics\.dnsQuery=({query}.+?)(\s{1,100}flowStatistics\.|\s{0,100}$)""",

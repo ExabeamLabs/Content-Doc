@@ -13,7 +13,7 @@ Name = n-forwarded-cef-nac-logon
     """deviceTranslatedAddress=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """src=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """suser=({user}.+?)\s{1,100}nitroSensor_Name""",
-    """nitroSensor_Name=({auth_server}[^\s]+)"""
+    """nitroSensor_Name=({auth_server}[^\s]{1,2000})"""
   ]
 }
 ```

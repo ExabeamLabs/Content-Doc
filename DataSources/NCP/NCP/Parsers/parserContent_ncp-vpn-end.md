@@ -11,7 +11,7 @@ Name = ncp-vpn-end
   Fields = [
     """<.+?>\w+ \d{1,100} \d\d:\d\d:\d\d ({host}\S+)\s{1,100}disconnect""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """incoming\s{0,100}:\s{0,100}({user}[^\s@]+)(@({domain}[^\s@]+)\s{0,100}:)"""
+    """incoming\s{0,100}:\s{0,100}({user}[^\s@]{1,2000})(@({domain}[^\s@]{1,2000})\s{0,100}:)"""
   ]
 }
 ```

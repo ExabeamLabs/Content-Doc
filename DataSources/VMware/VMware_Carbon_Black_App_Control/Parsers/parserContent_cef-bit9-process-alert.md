@@ -12,18 +12,18 @@ Name = cef-bit9-process-alert
   Fields = [
     """({time}\d\d \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
     """(exabeam_\w+=|^)({time}\d\d \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
-    """(\||\s)cs5=(|({alert_name}.+?))\s{1,100}([\w-]+=|$)""",
-    """(\||\s)externalId=({alert_id}.+?)(\s{1,100}[\w-]+=|\s{0,100}$)""",
+    """(\||\s)cs5=(|({alert_name}.+?))\s{1,100}([\w-]{1,2000}=|$)""",
+    """(\||\s)externalId=({alert_id}.+?)(\s{1,100}[\w-]{1,2000}=|\s{0,100}$)""",
     """(\||\s)cat=(|({alert_type}.+?))\s{1,100}(\w+=|$)""",
-    """(\||\s)deviceProcessName=({process}.+?)\s{1,100}?([\w-]+=|$)""",
-    """(\||\s)deviceProcessName=.+?({process_name}[^\\]+?)\s{1,100}([\w-]+=|$)""",
-    """(\||\s)deviceProcessName=({directory}.+?)\\+[^\\]+\s{1,100}([\w-]+=|$)""",
-    """(\||\s)dst=(|({dest_ip}.+?))(\s{1,100}[\w-]+=|\s{0,100}$)""",
+    """(\||\s)deviceProcessName=({process}.+?)\s{1,100}?([\w-]{1,2000}=|$)""",
+    """(\||\s)deviceProcessName=.+?({process_name}[^\\]{1,2000}?)\s{1,100}([\w-]{1,2000}=|$)""",
+    """(\||\s)deviceProcessName=({directory}.+?)\\+[^\\]{1,2000}\s{1,100}([\w-]{1,2000}=|$)""",
+    """(\||\s)dst=(|({dest_ip}.+?))(\s{1,100}[\w-]{1,2000}=|\s{0,100}$)""",
     """(\||\s)dhost=(|(\S+\\+)?({dest_host}.+?))\s{1,100}(\w+=|$)""",
-    """(\||\s)duser=(|(({domain}[^\s\\]+)\\+)?({user}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """(\||\s)duser=(|(({domain}[^\s\\]{1,2000})\\+)?({user}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """(\||\s)dvchost=(|({host}.+?))(\s\w+=|\s{0,100}$)""",
-    """(\||\s)msg=.+?for process\s{1,100}'.+?'\s{1,100}\[({md5}[a-fA-F0-9]+)\]""",
-    """(\||\s)sproc=({process_guid}.+?)(\s{1,100}[\w-]+=|\s{0,100}$)""",
+    """(\||\s)msg=.+?for process\s{1,100}'.+?'\s{1,100}\[({md5}[a-fA-F0-9]{1,2000})\]""",
+    """(\||\s)sproc=({process_guid}.+?)(\s{1,100}[\w-]{1,2000}=|\s{0,100}$)""",
   ]
   DupFields = [ "process->path","directory->process_directory" ]
   SOAR {

@@ -10,22 +10,22 @@ Name = s-checkpoint-alert-2
   Conditions = [ """product=Threat Emulation""", """|malware_action=""" ]
   Fields = [
     """time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=({host}[\w-.]+)""",
-    """\|orig=({host}[^\|]+)\|""",
-    """\|Protection Name=({alert_name}[^\|]+)\|""",
+    """exabeam_host=({host}[\w-.]{1,2000})""",
+    """\|orig=({host}[^\|]{1,2000})\|""",
+    """\|Protection Name=({alert_name}[^\|]{1,2000})\|""",
     """Malware signature matched \(\s{0,100}({alert_name}.+?)\s{0,100}\)""",
-    """\|Protection Type=({alert_type}[^\|]+)\|""",
-    """\|severity=({alert_severity}[^\|]+)\|""",
+    """\|Protection Type=({alert_type}[^\|]{1,2000})\|""",
+    """\|severity=({alert_severity}[^\|]{1,2000})\|""",
     """\|src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\|s_port=({src_port}\d{1,100})""",
     """\|dst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\|service=({dest_port}\d{1,100})""",
-    """\|action=({action}[^\|]+)""",
-    """\|proto=({protocol}[^\|]+)""",
-    """\|file_md5=({md5}[^\|]+)""",
-    """\|malware_action=({additional_info}[^\|]+)""",
-    """\|action=({action}[^\|]+)"""
-    """\|file_name=({file_name}[^\|]+)"""
+    """\|action=({action}[^\|]{1,2000})""",
+    """\|proto=({protocol}[^\|]{1,2000})""",
+    """\|file_md5=({md5}[^\|]{1,2000})""",
+    """\|malware_action=({additional_info}[^\|]{1,2000})""",
+    """\|action=({action}[^\|]{1,2000})"""
+    """\|file_name=({file_name}[^\|]{1,2000})"""
   ]
   SOAR {
     IncidentType = "malware"

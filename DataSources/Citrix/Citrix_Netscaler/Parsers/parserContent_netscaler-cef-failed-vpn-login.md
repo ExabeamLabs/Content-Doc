@@ -10,12 +10,12 @@ Name = netscaler-cef-failed-vpn-login
   Conditions = [ """|Citrix|NetScaler|""", """|LOGIN_FAILED|""" ]
   Fields = [
     """\Wrt=({time}\d{1,100})""",
-    """\Wdvc=({host}[a-fA-F:\d.]+)""",
-    """\Wdvchost=({host}[\w\-.]+)""",
-    """\Wshost=({src_host}[\w\-.]+)""",
-    """\Wsrc=({src_ip}[a-fA-F:\d.]+)""",
-    """\Wdst=({dest_ip}[a-fA-F:\d.]+)""",
-    """\Wdhost=({dest_host}[\w\-.]+)""",
+    """\Wdvc=({host}[a-fA-F:\d.]{1,2000})""",
+    """\Wdvchost=({host}[\w\-.]{1,2000})""",
+    """\Wshost=({src_host}[\w\-.]{1,2000})""",
+    """\Wsrc=({src_ip}[a-fA-F:\d.]{1,2000})""",
+    """\Wdst=({dest_ip}[a-fA-F:\d.]{1,2000})""",
+    """\Wdhost=({dest_host}[\w\-.]{1,2000})""",
     """\Wsuser=({user}\S+)""",
     """\Wreason=({failure_reason}.+?)\s{0,100}(\w+=|$)""",
   ]

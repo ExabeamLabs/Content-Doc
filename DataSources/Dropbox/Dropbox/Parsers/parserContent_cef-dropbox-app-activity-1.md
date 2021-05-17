@@ -4,8 +4,8 @@
 Name = cef-dropbox-app-activity-1
   Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """"file_operations"}""" ]
   Fields = ${DropboxParserTemplates.cef-dropbox-activity.Fields}[
-    """"assets":\[[^\]]*?"display_name":"({object}[^",]+)"""",
-    """"assets":\[[^\]]*?"contextual":"({resource}[^",]+)""""
+    """"assets":\[[^\]]{0,2000}?"display_name":"({object}[^",]{1,2000})"""",
+    """"assets":\[[^\]]{0,2000}?"contextual":"({resource}[^",]{1,2000})""""
   ]
 }
 cef-dropbox-activity = {
@@ -15,15 +15,15 @@ cef-dropbox-activity = {
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
   Fields = [
-    """exabeam_host=({host}[\w.\-]+)""",
-    """\w+\s{1,100}\d{1,100}\s{1,100}\d\d:\d\d:\d\d ({host}[\w\-.]+) \d{1,100} \d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ""",
-    """"timestamp":"({time}[^"]+)""",
-    """"host_name":"({host}[^"]+)""",
-    """"actor":[^\}]*?"display_name":\s{0,100}"(?:N\/A|({user_fullname}[^"@]+))"""",
-    """"actor":[^\}]*?"email":\s{0,100}"(?:N\/A|({user_email}[^@"\s]+@[^@"\s]+))"""",
-    """"event_type":(\{"\.tag":)?\s{0,100}"({activity}[^"]+)"""",
-    """"description":\s{0,100}"({additional_info}[^"]+)"""",
-    """"ip_address":\s{0,100}"({src_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]*:[A-Fa-f0-9%.:]+))""",
+    """exabeam_host=({host}[\w.\-]{1,2000})""",
+    """\w+\s{1,100}\d{1,100}\s{1,100}\d\d:\d\d:\d\d ({host}[\w\-.]{1,2000}) \d{1,100} \d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ""",
+    """"timestamp":"({time}[^"]{1,2000})""",
+    """"host_name":"({host}[^"]{1,2000})""",
+    """"actor":[^\}]{0,2000}?"display_name":\s{0,100}"(?:N\/A|({user_fullname}[^"@]{1,2000}))"""",
+    """"actor":[^\}]{0,2000}?"email":\s{0,100}"(?:N\/A|({user_email}[^@"\s]{1,2000}@[^@"\s]{1,2000}))"""",
+    """"event_type":(\{"\.tag":)?\s{0,100}"({activity}[^"]{1,2000})"""",
+    """"description":\s{0,100}"({additional_info}[^"]{1,2000})"""",
+    """"ip_address":\s{0,100}"({src_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]{0,2000}:[A-Fa-f0-9%.:]{1,2000}))""",
     """({app}Dropbox)""",
   ]
 

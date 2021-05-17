@@ -13,15 +13,15 @@ Name = cef-4663
     """({event_name}An attempt was made to access an object)""",
     """\sexternalId=({event_code}\d{1,100})""",
     """\srt=({time}\d{1,100})""",
-    """\sdntdom=({domain}[^\s]+)""",
+    """\sdntdom=({domain}[^\s]{1,2000})""",
     """\sduser=({user}.+?)\s{1,100}\w+=""",
-    """\sduid=({logon_id}[^\s]+)""",
+    """\sduid=({logon_id}[^\s]{1,2000})""",
     """\scs1=({accesses}.+?)\s{1,100}\w+=""",
-    """\sdvc=({host}[a-fA-F:\d.]+)""",
-    """\sdvchost=({host}[^\s]+)""",
+    """\sdvc=({host}[a-fA-F:\d.]{1,2000})""",
+    """\sdvchost=({host}[^\s]{1,2000})""",
     """\sfname=({file_path}.+?)\s{1,100}(?:$|\w+=)""",
-    """\sfname=({file_parent}.+?)\\+(?:[^\\=]+?)\s{1,100}(?:$|\w+=)""",
-    """\sfname=[^=]*\\({file_name}.*?({file_ext}\.[^\\:\s.]+)?)\s{1,100}(?:$|\w+=)""",
+    """\sfname=({file_parent}.+?)\\+(?:[^\\=]{1,2000}?)\s{1,100}(?:$|\w+=)""",
+    """\sfname=[^=]{0,2000}\\({file_name}.*?({file_ext}\.[^\\:\s.]{1,2000})?)\s{1,100}(?:$|\w+=)""",
     """\scs3=({access_mask}\w+)"""
   ]
   DupFields = [ "host->dest_host" ]

@@ -10,13 +10,13 @@ Name = xml-1102-1
   Conditions = ["""<EventID>1102""", """LogFileCleared""" ]
   Fields = [
     """SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\d\d\d\d\d\d\dZ)""",
-    """<Computer>({host}[^<]+)""",
-    """<SubjectLogonId>({logon_id}[^<]+)""",
+    """<Computer>({host}[^<]{1,2000})""",
+    """<SubjectLogonId>({logon_id}[^<]{1,2000})""",
     """({event_code}1102)""",
     """({event_name}LogFileCleared)""",
-    """<SubjectUserName>({user}[^<]+)""",
-    """<SubjectUserSid>({user_sid}[^<]+)""",
-    """<SubjectDomainName>({domain}[^<]+)""",
+    """<SubjectUserName>({user}[^<]{1,2000})""",
+    """<SubjectUserSid>({user_sid}[^<]{1,2000})""",
+    """<SubjectDomainName>({domain}[^<]{1,2000})""",
   ]
   DupFields = [ "host->dest_host" ]
 }

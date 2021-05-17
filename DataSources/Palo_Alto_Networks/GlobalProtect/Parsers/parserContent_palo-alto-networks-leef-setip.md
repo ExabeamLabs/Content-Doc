@@ -10,11 +10,11 @@ Name = palo-alto-networks-leef-setip
   Conditions = [ """LEEF:""", """Private IP:""", """User name:""", """globalprotect""", """Device name:"""] 
   Fields = [
     """\|ReceiveTime=({time}\d\d\d\d\/\d\d\/\d\d\s\d\d:\d\d:\d\d)""",
-    """DeviceName=({host}[^\s"]+)"""
-    """Private IP:\s{0,100}({src_translated_ip}[a-fA-F\d.:]+[^\."])""",
-    """User name:\s{1,100}({user}[^,\s@]+)""",
-    """Severity=({severity}[^\s|]+)""",
-    """cat=({category}[^\s|]+)""",
+    """DeviceName=({host}[^\s"]{1,2000})"""
+    """Private IP:\s{0,100}({src_translated_ip}[a-fA-F\d.:]{1,2000}[^\."])""",
+    """User name:\s{1,100}({user}[^,\s@]{1,2000})""",
+    """Severity=({severity}[^\s|]{1,2000})""",
+    """cat=({category}[^\s|]{1,2000})""",
     """Client OS ( version)?.+?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)"""
   ]
 }

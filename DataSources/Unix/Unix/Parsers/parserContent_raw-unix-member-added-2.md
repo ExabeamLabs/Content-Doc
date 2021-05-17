@@ -10,9 +10,9 @@ Name = raw-unix-member-added-2
   Conditions = [ "to group", "add", "usermod", """]:""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=({host}[\w.\-]+)""",
-    """\d\d:\d\d:\d\d ({host}[\w.\-]+)""",
-    """add \'({account_name}[^']+)\' to group \'({group_name}[^']+)\'""",
+    """exabeam_host=({host}[\w.\-]{1,2000})""",
+    """\d\d:\d\d:\d\d ({host}[\w.\-]{1,2000})""",
+    """add \'({account_name}[^']{1,2000})\' to group \'({group_name}[^']{1,2000})\'""",
   ]
   DupFields=["host->dest_host"]
 }

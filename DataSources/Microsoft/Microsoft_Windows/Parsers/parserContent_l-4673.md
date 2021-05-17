@@ -12,14 +12,14 @@ Name = l-4673
       """({event_name}A privileged service was called)""",
       """SystemTime=\'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """({outcome}Information|Audit Success|Success Audit|Failure Audit|Audit Failure)""",
-      """<Computer>({host}[^<]+)</Computer>""",
-      """<EventID>({event_code}[^<]+)</EventID>""",
-      """Process Name:\s{0,100}(?: |({process}({directory}(?:[^"]+)?[\\\/])?({process_name}[^\\\/"]+?)))\s{0,100}Service Request Information:""",
-      """Account Name:\s{0,100}({user}[^=]+?)\s{0,100}Account Domain:""",
-      """Account Domain:\s{0,100}({domain}[^=]+?)\s{0,100}Logon ID:""",
+      """<Computer>({host}[^<]{1,2000})</Computer>""",
+      """<EventID>({event_code}[^<]{1,2000})</EventID>""",
+      """Process Name:\s{0,100}(?: |({process}({directory}(?:[^"]{1,2000})?[\\\/])?({process_name}[^\\\/"]{1,2000}?)))\s{0,100}Service Request Information:""",
+      """Account Name:\s{0,100}({user}[^=]{1,2000}?)\s{0,100}Account Domain:""",
+      """Account Domain:\s{0,100}({domain}[^=]{1,2000}?)\s{0,100}Logon ID:""",
       """Logon ID:\s{0,100}({logon_id}.+?)\s{0,100}Service:""",
-      """Server:\s{0,100}({object_server}[^=]+?)\s{0,100}Service Name""",
-      """Privileges:\s{0,100}({privileges}[^<>\s"=]+)""",
+      """Server:\s{0,100}({object_server}[^=]{1,2000}?)\s{0,100}Service Name""",
+      """Privileges:\s{0,100}({privileges}[^<>\s"=]{1,2000})""",
     ]
     DupFields = ["host->dest_host","directory->process_directory"]
   }

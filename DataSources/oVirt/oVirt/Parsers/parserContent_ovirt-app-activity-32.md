@@ -9,10 +9,10 @@ Name = ovirt-app-activity-32
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """EVENT_ID: USER_FINISHED_REMOVE_DISK_ATTACHED_TO_VMS""", """ovirt""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d),.+?ovirt""",
-    """EVENT_ID:\s{0,100}({activity}[^\(\)]+)""",
-    """EVENT_ID:.*? Disk ({object}[^\s"]+).*? was successfully removed from domain ({resource}[^\s]+) \(User ({user}[^\s\(\)]+)""",
+    """EVENT_ID:\s{0,100}({activity}[^\(\)]{1,2000})""",
+    """EVENT_ID:.*? Disk ({object}[^\s"]{1,2000}).*? was successfully removed from domain ({resource}[^\s]{1,2000}) \(User ({user}[^\s\(\)]{1,2000})""",
     """({app}ovirt)"""
   ]
 }

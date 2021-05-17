@@ -12,7 +12,7 @@ Name = cef-syslog-securesphere-db-query
   Fields = [
     """\srt=({time}\d{1,100})""",
     """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\sdvchost=({host}[^\s]+)""",
+    """\sdvchost=({host}[^\s]{1,2000})""",
     """\sduser=({user}.+?)\s{1,100}\w+=""",
     """\scs4=(?: |({app}.+?))\s{1,100}\w+=""",
     """\scs3=(?: |({service_name}.+?))\s{1,100}\w+=""",
@@ -22,8 +22,8 @@ Name = cef-syslog-securesphere-db-query
     """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sflexString2=(?: |({db_operation}.+?))\s{1,100}\w+=""",
     """\scn2=({response_size}\d{1,100})""",
-    """\sshost=({src_host}[^\s]+)""",
-    """\sdhost=({dest_host}[^\s]+)"""
+    """\sshost=({src_host}[^\s]{1,2000})""",
+    """\sdhost=({dest_host}[^\s]{1,2000})"""
   ]
 }
 ```

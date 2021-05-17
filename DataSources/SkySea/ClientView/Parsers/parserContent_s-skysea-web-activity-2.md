@@ -9,11 +9,5 @@ Name = s-skysea-web-activity-2
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
   Conditions = [""",Webアクセス,""", """,,Webアクセス,"""]
   Fields = [
-    """({host}[^,]+),(({src_ip}[A-Fa-f:\d.]+)|({src_host}[\w\-.]+)),[^,]*,({user}[^,]*),[^,]*,[^,]*,[^,]*,[^,]*,Webアクセス""",
-    """({time}\d\d\d\d\/\d\d\/\d\d \d\d:\d\d:\d\d)""",
-    """,Webアクセス,[^,]*,[^,]*,({full_url}(({protocol}[^:\\\/\s,"]+):[\\\/]+)?({web_domain}[^\\\/\s:,"]+)?(:({dest_port}\d{1,100}))?({uri_path}\/[^,]*)?)""",
-    """({method}Webアクセス)""",
-  ]
-  DupFields = ["web_domain->top_domain", "method->action"]
-}
+    """({host}[^,]{1,2000}),(({src_ip}[A-Fa-f:\d.]{1,2000})|({src_host}[\w\-.]{1,2000})),[^,]{0,2000}
 ```

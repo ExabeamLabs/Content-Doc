@@ -11,7 +11,7 @@ Name = juniper-commit-events
   Fields = [
     """<\d{1,100}>\d{1,100}\s{1,100}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d(\+|\-)\d\d:\d\d)""",
     """({host}\S+)\s{1,100}mgd\s""",
-    """\sUser '({user}[^']+)' requested '({activity}[^']+)' """
+    """\sUser '({user}[^']{1,2000})' requested '({activity}[^']{1,2000})' """
   ]
   DupFields = [ "host->dest_host" ]
 }

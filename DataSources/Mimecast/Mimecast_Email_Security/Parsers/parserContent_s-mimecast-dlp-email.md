@@ -9,12 +9,12 @@ Name = s-mimecast-dlp-email
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
     Conditions = [ """|Dir=""", """|Sender=""", """|Rcpt=""" ]
     Fields = [
-      """exabeam_host=({host}[\w.\-]+)""",
+      """exabeam_host=({host}[\w.\-]{1,2000})""",
       """datetime=({time}\d\d\d\d-\d\d-\d\dT\d\d:\s{0,100}\d\d:\d\d[+-].+?)\|""",
-      """\|aCode=(|({alert_id}[^\|]+?))\|""",
-      """\|Dir=(|({direction}[^\|]+?))\|""",
-      """\|Act=(|({action}[^\|]+?))\|""",
-      """\|Delivered=(|({action}[^\|]+?))\|""",
+      """\|aCode=(|({alert_id}[^\|]{1,2000}?))\|""",
+      """\|Dir=(|({direction}[^\|]{1,2000}?))\|""",
+      """\|Act=(|({action}[^\|]{1,2000}?))\|""",
+      """\|Delivered=(|({action}[^\|]{1,2000}?))\|""",
       """\|RejType=\\(|({outcome_type}.+?))\\\|""",
       """\|Err=\\?(|({outcome}.+?))\\?\|""",
       """\|Error=\\?(|({outcome}.+?))\\?\|""",

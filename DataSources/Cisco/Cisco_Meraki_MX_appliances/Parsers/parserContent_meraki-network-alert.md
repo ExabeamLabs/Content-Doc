@@ -9,7 +9,7 @@ Name = meraki-network-alert
   TimeFormat = "epoch_sec"
   Conditions = [ """ security_event """, """ ids_alerted """, """ timestamp=""" ]
   Fields = [
-    """({host}[\w.\-]+)\s{1,100}(\S+\s{1,100}){2}security_event""",
+    """({host}[\w.\-]{1,2000})\s{1,100}(\S+\s{1,100}){2}security_event""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):({src_port}\d{1,100})""",
     """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):({dest_port}\d{1,100})""",
     """\sprotocol=({protocol}\w+)""",

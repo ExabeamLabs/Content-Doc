@@ -10,12 +10,12 @@ Name = cef-aruba-mobile
   TimeFormat = "epoch"
   Conditions = ["""|Aruba Networks""" , """Mobility Controller""" , """catdt=Wireless Security"""]
   Fields = [
-     """rt=({time}[^\s]+)""",
-     """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
-     """Mobility Controller\|?.*?\|.*?\|({src_host}[^\|]+)\|"""
+     """rt=({time}[^\s]{1,2000})""",
+     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+     """Mobility Controller\|?.*?\|.*?\|({src_host}[^\|]{1,2000})\|"""
      """cat=({alert_name}.+?)\srt""",
-     """catdt=({alert_type}[^\s]+)""",
-     """\s{1,100}at=({activity}[^\s]+)""",
+     """catdt=({alert_type}[^\s]{1,2000})""",
+     """\s{1,100}at=({activity}[^\s]{1,2000})""",
   ]
 }
 ```

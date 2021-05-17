@@ -10,10 +10,10 @@ Name = proxysg-auth-failed-1
   Conditions = [ """ProxySG:""", """LDAP: invalid credentials:""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
-    """reason:\s{0,100}'({failure_reason}[^']+)""",
-    """dn:\s{0,100}'CN=({user_fullname}[^=]+?),\s{0,100}({user_ou}OU=[^\s']+)""",
-    """realm:\s{0,100}'({realm}[^']+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """reason:\s{0,100}'({failure_reason}[^']{1,2000})""",
+    """dn:\s{0,100}'CN=({user_fullname}[^=]{1,2000}?),\s{0,100}({user_ou}OU=[^\s']{1,2000})""",
+    """realm:\s{0,100}'({realm}[^']{1,2000})""",
   ]
 }
 ```

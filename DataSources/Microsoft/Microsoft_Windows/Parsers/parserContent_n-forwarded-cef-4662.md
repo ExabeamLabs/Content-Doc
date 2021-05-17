@@ -14,7 +14,7 @@ Name = n-forwarded-cef-4662
     """({host}\S+)\s{1,100}CEF:\d{1,100}\|"""
     """\|43-2630({event_code}4662)0\|""",
     """\Wact=({outcome}.+?)\s{1,100}(\w+=|$)""",
-    """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
+    """\Wsrc=({src_ip}[a-fA-F\d.:]{1,2000})""",
     """\Wsntdom=({domain}.+?)\s{1,100}(\w+=|$)""",
     """\Wshost=({src_host}.+?)\s{1,100}(\w+=|$)""",
     """\Wsuser=({user}.+?)\s{1,100}(\w+=|$)""",

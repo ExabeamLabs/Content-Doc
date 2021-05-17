@@ -11,19 +11,19 @@ Name = ssh-remote-logon
   Fields = [
     """EVENT_DT:\s"{1,20}({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d\.\d)"""",
     """\sHOSTADDR:\s"{1,20}({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"""",
-    """\sHOSTNAME:\s{1,100}"{1,20}({host}[^"]+)"{1,20}\s""",
+    """\sHOSTNAME:\s{1,100}"{1,20}({host}[^"]{1,2000})"{1,20}\s""",
     """Remote From:\s{0,100}({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
-    """\sDESCRIPTION:\s"{1,20}({description}[^"]+)"""",
-    """OSTYPE_D:\s"{1,20}({os}[^"]+)"{1,20}\s""",
+    """\sDESCRIPTION:\s"{1,20}({description}[^"]{1,2000})"""",
+    """OSTYPE_D:\s"{1,20}({os}[^"]{1,2000})"{1,20}\s""",
     """Session id:\s{0,100}({session_id}\d{1,100})""",
     """Process Name:\s{0,100}(null|unknown|({process_name}\S+))""",
     """Parent Name:\s{0,100}(null|unknown|({parent_process_name}\S+))""",
     """Username:\s{0,100}({user}\S+)""",
     """Port:\s{0,100}({src_port}\d{1,100})""",
-    """\sRULE_NAME: "{0,20}({rule_name}[^"]+)"""",
-    """EVENT_TYPE_D:\s{1,100}"{1,20}({event_name}[^"]+)"{1,20}\s""",
-    """EVENT_ID:\s{1,100}"{1,20}({logon_id}[^"]+)"{1,20}\s""",
-    """PROCESS_ID:\s{1,100}"{1,20}(null|unknown|({pid}[^"]+))"{1,20}\s"""
+    """\sRULE_NAME: "{0,20}({rule_name}[^"]{1,2000})"""",
+    """EVENT_TYPE_D:\s{1,100}"{1,20}({event_name}[^"]{1,2000})"{1,20}\s""",
+    """EVENT_ID:\s{1,100}"{1,20}({logon_id}[^"]{1,2000})"{1,20}\s""",
+    """PROCESS_ID:\s{1,100}"{1,20}(null|unknown|({pid}[^"]{1,2000}))"{1,20}\s"""
   ]
   DupFields = [ "event_name->event_type" ]
 }

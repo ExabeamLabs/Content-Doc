@@ -9,7 +9,7 @@ Name = s-azure-ad-app-login-2
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
   Conditions = [ """authenticationMethod""", """riskLevelDuringSignIn""", """ms:aad:signin""","""tokenIssuerType""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
-    """"createdDateTime"{1,20}:\s{0,100}"{1,20}({time}[^"]+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """"createdDateTime"{1,20}:\s{0,100}"{1,20}({time}[^"]{1,2000})""",
     """ms:aad:signin"{1,20}
 ```

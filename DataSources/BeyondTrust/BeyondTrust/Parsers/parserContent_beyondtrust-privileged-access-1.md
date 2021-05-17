@@ -10,21 +10,21 @@ Name = beyondtrust-privileged-access-1
   Conditions = [  """|BeyondTrust|Secure Remote Access|""", """|deviceHost=""", """|sessionId=""", """|externalKeyLabel=""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """sessionId=({session_id}[^\|]+)""",
-    """deviceHost=({host}[^\|]+)""",
-    """dstUser=({dest_user}[^\|]+)""",
-    """srcUser=({src_user}[^\|]+)""",
-    """srcUser=({user_email}[^@]+@[^\.]+\.[^\|]+)\|\w+=""",
-    """sessionOwner=({user_fullname}[^\|]+)""",
-    """\|BeyondTrust\|Secure Remote Access\|(?:[^\|]+\|){2}({event_name}[^\|]+)\|""",
-    """srcHost=({src_host}[^\|]+)""",
-    """srcAddr=({src_ip}[a-fA-F0-9.:]+)\|""",
+    """sessionId=({session_id}[^\|]{1,2000})""",
+    """deviceHost=({host}[^\|]{1,2000})""",
+    """dstUser=({dest_user}[^\|]{1,2000})""",
+    """srcUser=({src_user}[^\|]{1,2000})""",
+    """srcUser=({user_email}[^@]{1,2000}@[^\.]{1,2000}\.[^\|]{1,2000})\|\w+=""",
+    """sessionOwner=({user_fullname}[^\|]{1,2000})""",
+    """\|BeyondTrust\|Secure Remote Access\|(?:[^\|]{1,2000}\|){2}({event_name}[^\|]{1,2000})\|""",
+    """srcHost=({src_host}[^\|]{1,2000})""",
+    """srcAddr=({src_ip}[a-fA-F0-9.:]{1,2000})\|""",
     """srcPort=({src_port}\d{1,100})""",
-    """dstHost=({dest_host}[^\|]+)""",
-    """dstAddr=({dest_ip}[a-fA-F0-9.:]+)\|""",
+    """dstHost=({dest_host}[^\|]{1,2000})""",
+    """dstAddr=({dest_ip}[a-fA-F0-9.:]{1,2000})\|""",
     """dstPort=({dest_port}\d{1,100})""",
-    """confMemOs=({os}[^\|]+)""",
-    """cmdShellViewUrl=({additional_info}[^\|]+)"""
+    """confMemOs=({os}[^\|]{1,2000})""",
+    """cmdShellViewUrl=({additional_info}[^\|]{1,2000})"""
   ]
   DupFields = ["dest_user->account"]
 }

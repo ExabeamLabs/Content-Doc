@@ -11,14 +11,14 @@ Name = microsoft-applocker-security-alert
   Fields = [
     """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """<Computer>({host}.+?)</Computer>""",
-    """<Data Name='User'>(({domain}[^\\<]+?)\\)?({user}.+?)</Data>""",
+    """<Data Name='User'>(({domain}[^\\<]{1,2000}?)\\)?({user}.+?)</Data>""",
     """<Security UserID='({user_sid}.+?)'/>""",
-    """<Level>({alert_severity}[^"<]+)""",
-    """<FilePath>({malware_url}[^"<]+)""",
-    """<PolicyName>({alert_type}[^"<]+)""",
-    """<PolicyName>({alert_name}[^"<]+)""",
-    """<Message>({additional_info}[^"<]+)""",
-    """<FileHash>({md5}[^"<]+)""",
+    """<Level>({alert_severity}[^"<]{1,2000})""",
+    """<FilePath>({malware_url}[^"<]{1,2000})""",
+    """<PolicyName>({alert_type}[^"<]{1,2000})""",
+    """<PolicyName>({alert_name}[^"<]{1,2000})""",
+    """<Message>({additional_info}[^"<]{1,2000})""",
+    """<FileHash>({md5}[^"<]{1,2000})""",
   ]
   DupFields = ["malware_url->process_name"]
 }

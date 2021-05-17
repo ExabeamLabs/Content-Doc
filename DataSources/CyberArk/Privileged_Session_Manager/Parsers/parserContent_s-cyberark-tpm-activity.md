@@ -10,7 +10,7 @@ Name = s-cyberark-tpm-activity
     Conditions = [ """Operation:""", """ObjectType:""", """OtherInfo:""" ]
     Fields = [
 		"""Operation: ({activity}.*?) ObjectType""",
-                """:\d\d\s({host}[^=]+)\sPAR""",
+                """:\d\d\s({host}[^=]{1,2000})\sPAR""",
 		"""({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
                 """(AdminName|UserName): ({user}[^\s].+)\sOperation""",
                 """Failed\?\s({event_subtype}\d)\s""",

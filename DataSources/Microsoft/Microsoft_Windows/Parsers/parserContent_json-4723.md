@@ -11,12 +11,12 @@ Name = json-4723
   Fields = [
     """({event_name}An attempt was made to change an account's password)""",
     """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
-    """"Computer":"({host}[\w\-.]+)""",
-    """"Account":"(({domain}[^\\\s"]+)\\+)?({user}[^\\\s"]+)""",
-    """"TargetAccount":"(({target_domain}[^\\\s"]+)\\+)?({target_user}[^\\\s"]+)""",
-    """"SubjectUserSid":"({user_sid}[^\s"]+)""",
-    """"SubjectLogonId":"({logon_id}[^\s"]+)""",
-    """"TargetSid":"({target_user_sid}[^\s"]+)""",
+    """"Computer":"({host}[\w\-.]{1,2000})""",
+    """"Account":"(({domain}[^\\\s"]{1,2000})\\+)?({user}[^\\\s"]{1,2000})""",
+    """"TargetAccount":"(({target_domain}[^\\\s"]{1,2000})\\+)?({target_user}[^\\\s"]{1,2000})""",
+    """"SubjectUserSid":"({user_sid}[^\s"]{1,2000})""",
+    """"SubjectLogonId":"({logon_id}[^\s"]{1,2000})""",
+    """"TargetSid":"({target_user_sid}[^\s"]{1,2000})""",
   ]
 }
 ```

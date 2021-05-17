@@ -10,24 +10,24 @@ Name = s-pan-incident-alert
     Conditions = [ """"incident"""", "cloud_app_instance" ]
     Fields = [
       """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)Z""",
-      """exabeam_host=({host}[^\s]+)""",
-      """\Wpolicy_rule_name\s{0,100}=\s{0,100}"({alert_name}[^"]+)"""",
-      """\Witem_type\s{0,100}=\s{0,100}"({item_type}[^"]+)"""",
-      """\Witem_name\s{0,100}=\s{0,100}"({item_name}[^"]+)"""",
-      """\Witem_owner\s{0,100}=\s{0,100}"({user_firstname}[^",\s]+)\s{1,100}({user_lastname}[^",\s]+)"""",
-      """\Witem_owner\s{0,100}=\s{0,100}"({user_lastname}[^",\s]+)\s{0,100}\,\s{0,100}({user_firstname}[^",\s]+)"""",
-      """\Witem_owner\s{0,100}=\s{0,100}"({user}[^",\s@]+)"""",
-      """\Wcloud_app_instance\s{0,100}=\s{0,100}"({alert_type}[^"]+)"""",
-      """"policy_rule_name":"({alert_name}[^"]+)""",
-      """"item_type":"({item_type}[^"]+)""",
-      """"item_name":"({item_name}[^"]+)""",
-      """"item_owner":"({user_firstname}[^",\s]+)\s{1,100}({user_lastname}[^",\s]+)"""",
-      """"item_owner":"({user}[^",\s@]+)"""",
-      """"cloud_app_instance":"({alert_type}[^"]+)""",
-      """"item_creator":"(|({item_creator}[^"]+))"""",
-      """"item_creator_email":"(|({user_email}[^"]+))"""",
-      """"collaborators":"(|({collaborators}[^"]+))"""",
-      """ext_severity=({alert_severity}[^\s]+)"""
+      """exabeam_host=({host}[^\s]{1,2000})""",
+      """\Wpolicy_rule_name\s{0,100}=\s{0,100}"({alert_name}[^"]{1,2000})"""",
+      """\Witem_type\s{0,100}=\s{0,100}"({item_type}[^"]{1,2000})"""",
+      """\Witem_name\s{0,100}=\s{0,100}"({item_name}[^"]{1,2000})"""",
+      """\Witem_owner\s{0,100}=\s{0,100}"({user_firstname}[^",\s]{1,2000})\s{1,100}({user_lastname}[^",\s]{1,2000})"""",
+      """\Witem_owner\s{0,100}=\s{0,100}"({user_lastname}[^",\s]{1,2000})\s{0,100}\,\s{0,100}({user_firstname}[^",\s]{1,2000})"""",
+      """\Witem_owner\s{0,100}=\s{0,100}"({user}[^",\s@]{1,2000})"""",
+      """\Wcloud_app_instance\s{0,100}=\s{0,100}"({alert_type}[^"]{1,2000})"""",
+      """"policy_rule_name":"({alert_name}[^"]{1,2000})""",
+      """"item_type":"({item_type}[^"]{1,2000})""",
+      """"item_name":"({item_name}[^"]{1,2000})""",
+      """"item_owner":"({user_firstname}[^",\s]{1,2000})\s{1,100}({user_lastname}[^",\s]{1,2000})"""",
+      """"item_owner":"({user}[^",\s@]{1,2000})"""",
+      """"cloud_app_instance":"({alert_type}[^"]{1,2000})""",
+      """"item_creator":"(|({item_creator}[^"]{1,2000}))"""",
+      """"item_creator_email":"(|({user_email}[^"]{1,2000}))"""",
+      """"collaborators":"(|({collaborators}[^"]{1,2000}))"""",
+      """ext_severity=({alert_severity}[^\s]{1,2000})"""
     ]
     SOAR {
     IncidentType = "dlp"

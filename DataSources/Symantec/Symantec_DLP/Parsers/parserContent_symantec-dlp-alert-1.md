@@ -11,15 +11,15 @@ Name = symantec-dlp-alert-1
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """,severity=({alert_severity}\d{1})""",
-    """protocol=Endpoint\s({protocol}[^,]*),""",
+    """protocol=Endpoint\s({protocol}[^,]{0,2000}),""",
     """dest_host=({target}.*?),incident""",
-    """src_host=({src_host}[^,]*),subject""",
-    """user=[^@]*@({domain}[^,]+)""",
+    """src_host=({src_host}[^,]{0,2000}),subject""",
+    """user=[^@]{0,2000}@({domain}[^,]{1,2000})""",
     """event_id=({alert_id}\d{6})""",
-    """signature=({alert_name}[^,]*)""",
-    """subject=({additional_info}[^,]*)""",
-    """protocol=({alert_type}[^,]*),""",
-    """user=({user_email}[^,]+),"""
+    """signature=({alert_name}[^,]{0,2000})""",
+    """subject=({additional_info}[^,]{0,2000})""",
+    """protocol=({alert_type}[^,]{0,2000}),""",
+    """user=({user_email}[^,]{1,2000}),"""
   ]
 }
 ```

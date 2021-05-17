@@ -9,5 +9,5 @@ Name = s-skysea-print-activity
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
   Conditions = [ ",プリント," ]
   Fields = [
-    """({host}[\w\-.]+),\d{1,100}
+    """({host}[\w\-.]{1,2000}),\d{1,100}
 ```

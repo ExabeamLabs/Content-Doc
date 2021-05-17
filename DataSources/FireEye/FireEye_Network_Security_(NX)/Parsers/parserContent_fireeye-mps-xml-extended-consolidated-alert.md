@@ -12,12 +12,12 @@ Name = fireeye-mps-xml-extended-consolidated-alert
              """<occurred>({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
              """exabeam_host=({host}\S+)""",
              """ fenotify-({alert_id}\d{1,100})""",
-             """<alert id="({alert_id}[^"]+)""",
+             """<alert id="({alert_id}[^"]{1,2000})""",
              """<src vlan=\".+\">\s{0,100}<ip>({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-             """<src .+?<host>({src_host}[^<]+)""",
-             """xsi:schemaLocation=.+?name="({alert_type}[^"]+)".*severity="({alert_severity}[^"]+)"""",
-             """<malware name="({alert_name}[^"]+)"""",
-             """<dst>.+?<ip>({dest_ip}[^<]+)</ip""",
+             """<src .+?<host>({src_host}[^<]{1,2000})""",
+             """xsi:schemaLocation=.+?name="({alert_type}[^"]{1,2000})".*severity="({alert_severity}[^"]{1,2000})"""",
+             """<malware name="({alert_name}[^"]{1,2000})"""",
+             """<dst>.+?<ip>({dest_ip}[^<]{1,2000})</ip""",
         ]
   SOAR {
     IncidentType = "malware"

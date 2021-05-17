@@ -12,13 +12,13 @@ Name = cef-4800
     """({event_name}The workstation was locked)""",
     """\sexternalId=({event_code}\d{1,100})""",
     """\srt=({time}\d{1,100})""",
-    """\sdvc=({host}[a-fA-F:\d.]+)""",
-    """\sdvchost=({host}[^\s]+)""",
-    """\sdst=({dest_ip}[a-fA-F:\d.]+)""",
-    """\sdhost=({dest_host}[^\s]+)""",
+    """\sdvc=({host}[a-fA-F:\d.]{1,2000})""",
+    """\sdvchost=({host}[^\s]{1,2000})""",
+    """\sdst=({dest_ip}[a-fA-F:\d.]{1,2000})""",
+    """\sdhost=({dest_host}[^\s]{1,2000})""",
     """\sduser=({user}.+?)\s{1,100}\w+=""",
-    """\sdntdom=({domain}[^\s]+)""",
-    """\sduid=({logon_id}[^\s]+)""",
+    """\sdntdom=({domain}[^\s]{1,2000})""",
+    """\sduid=({logon_id}[^\s]{1,2000})""",
     ]
   }
 ```

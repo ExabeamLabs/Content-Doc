@@ -10,7 +10,7 @@ Name = secure-system-login
  Conditions = [ """ELM""", """SecureTrack:"""]
  Fields =[
    """timestamp:({time}\d{1,100}.\d{1,100}.\d{1,100} \d{1,100}:\d{1,100}:\d{1,100})""",
-   """({host}[^\s]+)\s{1,100}SecureTrack:""",
+   """({host}[^\s]{1,2000})\s{1,100}SecureTrack:""",
    """Login was done by\s{1,100}({user}[^,\s].+?)\.,""",
    ]  
 }

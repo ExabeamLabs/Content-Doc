@@ -10,9 +10,9 @@ Name = kiteworks-account-unlocked-1
   Conditions = [ """, Activity Group:""", """Activity Type: reactivate_user""", """Activity: User reactivated:""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\w+\s+\d+\s\d\d:\d\d:\d\d\s({host}[^\s]+?)\s""",
-    """:\d\d:\d\d\s(\S+\s){2}({user_email}[^@]+@({email_domain}[^\s]+))""",
-    """id=\d+\s[^\s]+\s({src_ip}[a-fA-F\d\.:]+)""",
+    """\w+\s+\d+\s\d\d:\d\d:\d\d\s({host}[^\s]{1,2000}?)\s""",
+    """:\d\d:\d\d\s(\S+\s){2}({user_email}[^@]{1,2000}@({email_domain}[^\s]{1,2000}))""",
+    """id=\d+\s[^\s]{1,2000}\s({src_ip}[a-fA-F\d\.:]{1,2000})""",
     """Activity Type:\s({event_name}reactivate_user)""",
     """Activity:\s({additional_info}User reactivated)""",
   ]

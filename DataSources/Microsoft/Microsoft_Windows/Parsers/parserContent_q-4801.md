@@ -11,10 +11,10 @@ Name = q-4801
   Fields = [ """EventID=({event_code}\d{1,100})""",
     """({event_name}The workstation was unlocked)""",
     """TimeGenerated=({time}\d{1,100})""",
-    """Computer=({host}[^\s]+)""",
+    """Computer=({host}[^\s]{1,2000})""",
     """Account Name:\s{1,100}({user}.+?)\s{1,100}Account Domain""",
     """Account Domain:\s{1,100}({domain}.+?)\s{1,100}Logon ID""",
-    """Logon ID:\s{1,100}({logon_id}[^\s]+)"""
+    """Logon ID:\s{1,100}({logon_id}[^\s]{1,2000})"""
   ]
   DupFields = [ "host->dest_host" ]
 }

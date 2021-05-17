@@ -11,7 +11,7 @@ Name = paloalto-ngfw-source-stopped
   Conditions = ["""A device has stopped emitting events""", """'PaSeries @"""]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """'PaSeries @ ({src_host}[^\s']+)( \(({src_ip}[^\)]+)\))?'"""
+    """'PaSeries @ ({src_host}[^\s']{1,2000})( \(({src_ip}[^\)]{1,2000})\))?'"""
     """({alert_name}A device has stopped emitting events)"""
   ]
 }

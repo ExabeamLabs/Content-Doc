@@ -9,16 +9,16 @@ Name = tanium-auth
     TimeFormat = "yyyy-MM-dd HH:mm:ss.SSSZ"
     Conditions = [ """ Tanium """, """Question="Exabeam-Logon-Even-Test"""" ]
     Fields = [
-      """({host}[\w.\-]+)\s{1,100}Tanium """,
-      """\sEndpoint-Name="(-|({dest_host}[^"]+))"""",
+      """({host}[\w.\-]{1,2000})\s{1,100}Tanium """,
+      """\sEndpoint-Name="(-|({dest_host}[^"]{1,2000}))"""",
       """\sTimestamp="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{1,100}(\+|\-)\d\d:\d\d)""",
-      """\sTarget-User="(-|({user}[^"]+))"""",
-      """\sTarget-Domain="(-|({domain}[^"]+))"""",
-      """\sLogon-Result="(-|({outcome}[^"]+))"""",
-      """\sLogon-Type="(-|({logon_type}[^"]+))"""",
-      """\sLogon-Provider="(-|({auth_method}[^"]+))"""",
-      """\sProcess="(-|({process}({directory}[^"]*?[\\\/]+)?({process_name}[^"\\\/]+)))"""",
-      """\sSource-IP-Address="(::1|({src_ip}[a-fA-F\d.:]+))"""",
+      """\sTarget-User="(-|({user}[^"]{1,2000}))"""",
+      """\sTarget-Domain="(-|({domain}[^"]{1,2000}))"""",
+      """\sLogon-Result="(-|({outcome}[^"]{1,2000}))"""",
+      """\sLogon-Type="(-|({logon_type}[^"]{1,2000}))"""",
+      """\sLogon-Provider="(-|({auth_method}[^"]{1,2000}))"""",
+      """\sProcess="(-|({process}({directory}[^"]{0,2000}?[\\\/]{1,2000})?({process_name}[^"\\\/]{1,2000})))"""",
+      """\sSource-IP-Address="(::1|({src_ip}[a-fA-F\d.:]{1,2000}))"""",
     ]
   }
 ```

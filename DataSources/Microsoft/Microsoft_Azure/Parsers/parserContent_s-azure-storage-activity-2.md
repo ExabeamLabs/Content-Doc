@@ -10,25 +10,25 @@ Name = s-azure-storage-activity-2
  Conditions = ["""operationName":"MICROSOFT.STORAGE"""]
  Fields = [
          """time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-         """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
+         """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[^\s]{1,2000})""",
          """({service}MICROSOFT.STORAGE)""",
-         """"MICROSOFT.STORAGE\/[^\/]+\/({activity}[^\/"]+)""",
-         """operationName":"MICROSOFT.STORAGE.+?\/CONTAINERS\/({activity}[["\\\/]+)""",
-         """resourceId":".+?DEFAULT\/CONTAINERS\/({bucket}[^\\\/"]+)""",
+         """"MICROSOFT.STORAGE\/[^\/]{1,2000}\/({activity}[^\/"]{1,2000})""",
+         """operationName":"MICROSOFT.STORAGE.+?\/CONTAINERS\/({activity}[["\\\/]{1,2000})""",
+         """resourceId":".+?DEFAULT\/CONTAINERS\/({bucket}[^\\\/"]{1,2000})""",
          """operationName":".+?({activity}FILESERVICES\/\w+)""",
-         """operationName":"MICROSOFT.STORAGE/({activity}STORAGEACCOUNTS\/[^"]+)""",
-         """ipaddr":"({src_ip}[^"]+)""",
-         """callerIpAddress":"({src_ip}[^"]+)""",
-         """surname":"({user_lastname}[^"]+)""",
-         """givenname":"({user_firstname}[^"]+)""",
-         """claims\/name":"({user_email}[^@]+@[^"]+)""",
-         """identity/claims/nameidentifier":"({user}[^"]+)""",
-         """"Microsoft.Storage\/storageAccounts\/({resource}[^"\/\\]+).*"action"""",
-         """roleDefinitionId":"({role}[^"]+)""",
-         """"Microsoft.Authorization/policyDefinitions/({policy}[^\/\\"]+)""",
-         """resultType":"({outcome}[^"]+)""",
-         """resourceId":".*\/RESOURCEGROUPS\/({account_id}[^\/]+)""",
-         """\[Namespace:\s{0,100}({event_hub_namespace}\S+) ; EventHub name:\s{0,100}({event_hub_name}[\w-]+)"""
+         """operationName":"MICROSOFT.STORAGE/({activity}STORAGEACCOUNTS\/[^"]{1,2000})""",
+         """ipaddr":"({src_ip}[^"]{1,2000})""",
+         """callerIpAddress":"({src_ip}[^"]{1,2000})""",
+         """surname":"({user_lastname}[^"]{1,2000})""",
+         """givenname":"({user_firstname}[^"]{1,2000})""",
+         """claims\/name":"({user_email}[^@]{1,2000}@[^"]{1,2000})""",
+         """identity/claims/nameidentifier":"({user}[^"]{1,2000})""",
+         """"Microsoft.Storage\/storageAccounts\/({resource}[^"\/\\]{1,2000}).*"action"""",
+         """roleDefinitionId":"({role}[^"]{1,2000})""",
+         """"Microsoft.Authorization/policyDefinitions/({policy}[^\/\\"]{1,2000})""",
+         """resultType":"({outcome}[^"]{1,2000})""",
+         """resourceId":".*\/RESOURCEGROUPS\/({account_id}[^\/]{1,2000})""",
+         """\[Namespace:\s{0,100}({event_hub_namespace}\S+) ; EventHub name:\s{0,100}({event_hub_name}[\w-]{1,2000})"""
  ]
 DupFields= ["event_hub_namespace->host"]
 }

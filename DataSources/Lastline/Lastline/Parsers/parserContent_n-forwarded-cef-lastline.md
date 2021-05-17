@@ -9,7 +9,7 @@ Name = n-forwarded-cef-lastline
   TimeFormat = "epoch"
   Conditions = [ "CEF:", "|McAfee|", "deviceExternalId=Lastline Manager" ]
   Fields = [
-    """exabeam_host=({host}[^\s]+)""",
+    """exabeam_host=({host}[^\s]{1,2000})""",
     """\srt=({time}\d{1,100})""",
     """\sshost=({src_host}.+?)(\s{1,100}\w+=|"{0,20}\s{0,100}$)""",
     """\ssuser=({user}.+?)(\s{1,100}\w+=|"{0,20}\s{0,100}$)""",
@@ -21,9 +21,9 @@ Name = n-forwarded-cef-lastline
     """\snitroThreat_Category=({alert_type}.+?)(\s{1,100}\w+=|"{0,20}\s{0,100}$)""",
     """\sproto=({protocol}.+?)(\s{1,100}\w+=|"{0,20}\s{0,100}$)""",
     """\sdpt=({dest_port}\d{1,100})""",
-    """nitro({hash_type}SHA1)=({file_hash}[^\s]+?)(\s{1,100}\w+=|"{0,20}\s{0,100}$)""",
+    """nitro({hash_type}SHA1)=({file_hash}[^\s]{1,2000}?)(\s{1,100}\w+=|"{0,20}\s{0,100}$)""",
     """\snitroUniqueId=({alert_id}\d{1,100})(\s{1,100}\w+=|"{0,20}\s{0,100}$)""",
-    """\snitroDevice_URL=({additional_info}[^\s]+?)(\s{1,100}\w+=|"{0,20}\s{0,100}$)"""
+    """\snitroDevice_URL=({additional_info}[^\s]{1,2000}?)(\s{1,100}\w+=|"{0,20}\s{0,100}$)"""
   ]
   DupFields = ["host->dest_host"]
 }

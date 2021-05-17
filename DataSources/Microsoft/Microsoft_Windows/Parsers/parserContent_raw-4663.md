@@ -11,17 +11,17 @@ Name = raw-4663
     Conditions = ["An attempt was made to access an object.", "Account Name:"]
     Fields = [
       """({event_name}An attempt was made to access an object)""",
-      """({host}[\w\-.]+)\s{1,100}({time}\d{1,100}\/\d{1,100}\/\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(am|AM|pm|PM))""",
+      """({host}[\w\-.]{1,2000})\s{1,100}({time}\d{1,100}\/\d{1,100}\/\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(am|AM|pm|PM))""",
       """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
-      """exabeam_host=({host}[\w.\-]+)""",
-      """(?i)(((audit|success)( |_)(success|audit))|information)[\s,]({host}[\w\-.]+).*Subject:""",
+      """exabeam_host=({host}[\w.\-]{1,2000})""",
+      """(?i)(((audit|success)( |_)(success|audit))|information)[\s,]({host}[\w\-.]{1,2000}).*Subject:""",
       """({event_code}4663)""",
-      """Subject:.*?Security ID:\s{0,100}({user_sid}.+?)[\s;]*Account Name:\s{0,100}({user}.+?)[\s;]*Account Domain:\s{0,100}(NT AUTHORITY|({domain}.+?))[\s;]*Logon ID:\s{0,100}({logon_id}[^\s;]+)[\s;]*Object""",
-      """Object:.*?Object Type:\s{0,100}({file_type}.+?)[\s;]*Object Name:\s{0,100}({file_path}({file_parent}.*?)({file_name}[^\\\/;]+?(\.({file_ext}[^\.;\\]+?))?))[\s;]*Handle ID""",
-      """Process Name:\s{0,100}(?:|({process}.+?))[\s;]*Access Request Information:""",
-      """Process Name:.*\\({process_name}[^\\;]+?)[\s;]*Access Request Information:""",
-      """Process Name:\s{0,100}(?:|({process}({directory}(\w:)?(?:[^:;]+)?[\\\/])?({process_name}[^\\\/";]+?)))[\s;]*Access Request Information:""",
-      """Accesses:\s{0,100}({accesses}.+?)[\s;]*Access Mask:\s{0,100}({access_mask}\w+)""",
+      """Subject:.*?Security ID:\s{0,100}({user_sid}.+?)[\s;]{0,2000}Account Name:\s{0,100}({user}.+?)[\s;]{0,2000}Account Domain:\s{0,100}(NT AUTHORITY|({domain}.+?))[\s;]{0,2000}Logon ID:\s{0,100}({logon_id}[^\s;]{1,2000})[\s;]{0,2000}Object""",
+      """Object:.*?Object Type:\s{0,100}({file_type}.+?)[\s;]{0,2000}Object Name:\s{0,100}({file_path}({file_parent}.*?)({file_name}[^\\\/;]{1,2000}?(\.({file_ext}[^\.;\\]{1,2000}?))?))[\s;]{0,2000}Handle ID""",
+      """Process Name:\s{0,100}(?:|({process}.+?))[\s;]{0,2000}Access Request Information:""",
+      """Process Name:.*\\({process_name}[^\\;]{1,2000}?)[\s;]{0,2000}Access Request Information:""",
+      """Process Name:\s{0,100}(?:|({process}({directory}(\w:)?(?:[^:;]{1,2000})?[\\\/])?({process_name}[^\\\/";]{1,2000}?)))[\s;]{0,2000}Access Request Information:""",
+      """Accesses:\s{0,100}({accesses}.+?)[\s;]{0,2000}Access Mask:\s{0,100}({access_mask}\w+)""",
     ]
     DupFields = ["host->dest_host","directory->process_directory"]
   }

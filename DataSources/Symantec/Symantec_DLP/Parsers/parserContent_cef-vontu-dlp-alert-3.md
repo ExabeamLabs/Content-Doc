@@ -10,20 +10,20 @@ Name = cef-vontu-dlp-alert-3
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Fields = [
       """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-      """exabeam_host=({host}[^\s]+)""",
+      """exabeam_host=({host}[^\s]{1,2000})""",
       """({host}\S+)\s{1,100}CEF:""",
       """\WINCIDENT_ID=({alert_id}\d{1,100})""",
-      """\WPOLICY=({alert_name}[^=]+)\s\w+=""",
-      """\WSEVERITY=\d{1,100}:({alert_severity}[^=]+)\s\w+=""",
-      """\WPROTOCOL=({protocol}[^=]+)\s\w+=""",
-      """\WBLOCKED=(None|({outcome}[^=]+))\s\w+=""",
-      """\WSENDER=({src_ip}[A-Fa-f.:\d]+)\s{1,100}\w+=""",
-      """\WENDPOINT_MACHINE=(N\/A|({src_host}[^=]+))\s\w+="""
-      """\WRECIPIENTS=(N\/A|({target}[^=]+))\s\w+=""",
-      """\WRECIPIENTS=(N\/A|({recipients}[^@]+@[^=]+))\s\w+=""",
-      """\WSUBJECT=+\s{0,100}(N\/A|({subject}[^=]+))\s\w+=""",
-      """\WATTACHMENT_FILENAME=\s{0,100}(N\/A|({file_name}[^=]+?))\s{0,100}\w+=""",
-      """\WSENDER=((WinNT:\/+({domain}[^\/]+)\/({user}[^=]+))|({user_email}[^@]+@[^=]+))\s\w+=""",
+      """\WPOLICY=({alert_name}[^=]{1,2000})\s\w+=""",
+      """\WSEVERITY=\d{1,100}:({alert_severity}[^=]{1,2000})\s\w+=""",
+      """\WPROTOCOL=({protocol}[^=]{1,2000})\s\w+=""",
+      """\WBLOCKED=(None|({outcome}[^=]{1,2000}))\s\w+=""",
+      """\WSENDER=({src_ip}[A-Fa-f.:\d]{1,2000})\s{1,100}\w+=""",
+      """\WENDPOINT_MACHINE=(N\/A|({src_host}[^=]{1,2000}))\s\w+="""
+      """\WRECIPIENTS=(N\/A|({target}[^=]{1,2000}))\s\w+=""",
+      """\WRECIPIENTS=(N\/A|({recipients}[^@]{1,2000}@[^=]{1,2000}))\s\w+=""",
+      """\WSUBJECT=+\s{0,100}(N\/A|({subject}[^=]{1,2000}))\s\w+=""",
+      """\WATTACHMENT_FILENAME=\s{0,100}(N\/A|({file_name}[^=]{1,2000}?))\s{0,100}\w+=""",
+      """\WSENDER=((WinNT:\/+({domain}[^\/]{1,2000})\/({user}[^=]{1,2000}))|({user_email}[^@]{1,2000}@[^=]{1,2000}))\s\w+=""",
     ]
     DupFields = [ "subject->additional_info" , "user_email->sender"]
     SOAR {

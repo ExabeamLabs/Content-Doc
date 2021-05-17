@@ -11,7 +11,7 @@ Name = hp-virtual-connect-login
   Fields = [
      """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
      """\d\d:\d\d:\d\d\s({host}\S+)\svcmd:""",
-     """VCM user login : ({auth_type}\w+)\s({domain}[^\\]+)\\({user}[^@]+)@({src_ip}[A-Fa-f:\d.]+)""",
+     """VCM user login : ({auth_type}\w+)\s({domain}[^\\]{1,2000})\\({user}[^@]{1,2000})@({src_ip}[A-Fa-f:\d.]{1,2000})""",
      """({event_name}user login)""",
      """({app}VCM)"""
   ]

@@ -10,16 +10,16 @@ Name = corelight-dns-query
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
   Conditions = [ """"id.orig_h":""", """"id.resp_h":""", """"dns",""", """"qtype_name":""" ]
   Fields = [
-    """exabeam_host=([^@=]+@\s{0,100})?({host}\S+)""",
-    """"_system_name":"({host}[^"]+)""",
+    """exabeam_host=([^@=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """"_system_name":"({host}[^"]{1,2000})""",
     """"ts":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3})""",
-    """"id\.orig_h":"({src_ip}[a-fA-F\d.:]+)""",
+    """"id\.orig_h":"({src_ip}[a-fA-F\d.:]{1,2000})""",
     """"id\.orig_p":({src_port}\d{1,100})""",
-    """"id\.resp_h":"({dest_ip}[a-fA-F\d.:]+)""",
-    """"id\.resp_p":({dest_port}[a-fA-F\d.:]+)""",
-    """"proto":"({protocol}[^"]+)""",
-    """"query":"({query}[^"]+\.(({top_query}\w+\.(?i)(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za)))|[^"]+)"""",
-    """"qtype_name":"({query_type}[^"]+)""",
+    """"id\.resp_h":"({dest_ip}[a-fA-F\d.:]{1,2000})""",
+    """"id\.resp_p":({dest_port}[a-fA-F\d.:]{1,2000})""",
+    """"proto":"({protocol}[^"]{1,2000})""",
+    """"query":"({query}[^"]{1,2000}\.(({top_query}\w+\.(?i)(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za)))|[^"]{1,2000})"""",
+    """"qtype_name":"({query_type}[^"]{1,2000})""",
   ]
 }
 ```

@@ -5,7 +5,7 @@ Name = checkpoint-firewall-2
   DataType = "alert"
   Conditions = [ """|Check Point|VPN-1|""", """/Access"""]
   Fields = ${CheckpointParserTemplates.checkpoint-firewall-3.Fields} [
-    """originsicname=CN\\=({host}[^\s,;\\]+)""",
+    """originsicname=CN\\=({host}[^\s,;\\]{1,2000})""",
     """act=({result}.+?)\s\w+=""",
     """categoryOutcome=(\/)?({outcome}.+?)\s\w+="""
   ]
@@ -20,11 +20,11 @@ Name = checkpoint-firewall-2
   TimeFormat = "epoch"
   Conditions = [ """|Check Point|SmartDefense""", """cp_severity=""" ]
   Fields = [
-    """({host}[\w.\-]+) CEF:""",
+    """({host}[\w.\-]{1,2000}) CEF:""",
     """\Wcp_severity=(?:|({alert_severity}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wrt=({time}\d{1,100})""",
-    """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
-    """\Wdst=({dest_ip}[a-fA-F\d.:]+)""",
+    """\Wsrc=({src_ip}[a-fA-F\d.:]{1,2000})""",
+    """\Wdst=({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """\Woriginsicname=(?:|({user_ou}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wmsg=(?:|({alert_type}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdescription_url=(?:|({malware_url}.+?))(\s{1,100}\w+=|\s{0,100}$)""",

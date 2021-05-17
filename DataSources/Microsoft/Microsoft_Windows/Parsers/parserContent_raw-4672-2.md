@@ -9,19 +9,19 @@ Name = raw-4672-2
    TimeFormat = "yyyy-MM-dd HH:mm:ss"
    Conditions = [ """EventID=4672""", """Special privileges assigned to new logon""", """Privileges=""", """ComputerName=""" ]
    Fields = [
-      """exabeam_host=([^=]+?@\s{0,100})?({host}[\w.-]+)""",
+      """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
       """({event_code}4672)""",
       """({event_name}Special privileges assigned to new logon)""",
       """DetectTime=({time}\d{1,100}-\d{1,100}-\d{1,100}\s\d{1,100}:\d{1,100}:\d{1,100})""",
-      """ComputerName=({host}[^\s\=]+)\s{1,100}\w+=""",
+      """ComputerName=({host}[^\s\=]{1,2000})\s{1,100}\w+=""",
       """EventType=({outcome}\w.+?)\s{0,100}\w+=""",
-      """Account Name=\s{0,100}(-|SYSTEM|({user}[^\s\:\=]+?))[\s;]+""",
-      """User=(?:(?i)null|({user}[^\s\=]+))\s{1,100}""",
-      """Account Domain=\s{0,100}(-|({domain}[^\s\:\=]+?))[\s;]+""",
-      """Security ID=\s{0,100}(|(({domain}[^\\\s\:\=]+)[\\]({user}[^\s\:\=]+))|({user_sid}[^\s\:\=]+?))\s{1,100}""",
+      """Account Name=\s{0,100}(-|SYSTEM|({user}[^\s\:\=]{1,2000}?))[\s;]{1,2000}""",
+      """User=(?:(?i)null|({user}[^\s\=]{1,2000}))\s{1,100}""",
+      """Account Domain=\s{0,100}(-|({domain}[^\s\:\=]{1,2000}?))[\s;]{1,2000}""",
+      """Security ID=\s{0,100}(|(({domain}[^\\\s\:\=]{1,2000})[\\]({user}[^\s\:\=]{1,2000}))|({user_sid}[^\s\:\=]{1,2000}?))\s{1,100}""",
       """Privileges=\s{0,100}({privileges}.+?)(,|\s{0,100}"|;|\s{0,100}$)""",
-      """Logon ID=\s{0,100}({logon_id}[^\s\=]+)\s{1,100}""",
-      """EventSource=({log_source}[^\s\=]+)\s{0,100}\w+="""
+      """Logon ID=\s{0,100}({logon_id}[^\s\=]{1,2000})\s{1,100}""",
+      """EventSource=({log_source}[^\s\=]{1,2000})\s{0,100}\w+="""
    ]
     DupFields = ["host->dest_host"]
  }

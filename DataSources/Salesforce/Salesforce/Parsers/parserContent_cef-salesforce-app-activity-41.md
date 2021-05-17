@@ -10,12 +10,12 @@ Name = cef-salesforce-app-activity-41
   Conditions = [ """CEF:""", """|Skyformation|""", """|resource-property-updated|""", """Sales Cloud""" ]
   Fields = [
     """({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ) \S+ Skyformation -""",
-    """([^\|]*\|){5}({activity}[^\|]+)""",
+    """([^\|]{0,2000}\|){5}({activity}[^\|]{1,2000})""",
     """\Wsuser=({user}.+?)\s{1,100}(\w+=|$)""",
-    """\Wsuser=({user_email}[^@\s;]+?@[^@\s;]+)\s{0,100}(\w+=|$)""",
+    """\Wsuser=({user_email}[^@\s;]{1,2000}?@[^@\s;]{1,2000})\s{0,100}(\w+=|$)""",
     """\Wfname=({object}.+?)\s{1,100}(\w+=|$)""",
-    """\Wcs1=\{({new_value}[^\}]+)""",
-    """\Wcs2=\{({old_value}[^\}]+)""",
+    """\Wcs1=\{({new_value}[^\}]{1,2000})""",
+    """\Wcs2=\{({old_value}[^\}]{1,2000})""",
     """\WdestinationServiceName=({app}.+?)\s{0,100}(\w+=|$)""",
   ]
   DupFields = [ "object->resource" ]

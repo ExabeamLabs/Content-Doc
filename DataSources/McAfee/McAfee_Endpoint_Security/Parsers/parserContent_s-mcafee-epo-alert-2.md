@@ -18,8 +18,8 @@ Name = s-mcafee-epo-alert-2
           """category="({alert_type}.+?)",""",
           """signature_id="({signature_id}\d{1,100})""",
           """severity="({alert_severity}\d{1,100})""",
-          """parameter_name="({additional_info}[^"]+)""",
-          """user="(({domain}[^\\]+)\\+)?(?: |({user}[^"]+))""",
+          """parameter_name="({additional_info}[^"]{1,2000})""",
+          """user="(({domain}[^\\]{1,2000})\\+)?(?: |({user}[^"]{1,2000}))""",
         ]
         SOAR {
             IncidentType = "malware"

@@ -13,11 +13,11 @@ Name = s-oracle-db-query
   """<Extended_Timestamp>({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d{1,100}\w)</Extended_Timestamp>"""
     """<DB_User>(\/|({db_user}.+?))</DB_User>""",
     """<OS_User>({os_user}.+?)</OS_User>""",
-    """<Userhost>({src_host}[^\<]+)</Userhost>""",
+    """<Userhost>({src_host}[^\<]{1,2000})</Userhost>""",
     """<OS_Process>({process_id}\d{1,100})</OS_Process>""",
     """<Session_Id>({session_id}\d{1,100})</Session_Id>""",
     """<Returncode>({outcome}.+?)</Returncode>""",
-    """PROTOCOL=({protocol}[^\)]+)""",
+    """PROTOCOL=({protocol}[^\)]{1,2000})""",
     """PORT=({src_port}.+?)""",
     """<DBID>({database_id}\d{1,100})</DBID>""",
     """<Sql_Text>\s{0,100}({db_query}({db_operation}\w+)\s.+?)\s{0,100}</Sql_Text>""",

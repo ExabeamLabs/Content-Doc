@@ -12,12 +12,5 @@ Name = ur-authmgr-account-lockout
     """exabeam_raw=.*?({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """,({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),AUTHN_LOCKOUT_EVENT""",
     """,({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),AUTHN_LOCKOUT_EVENT""",
-    """,({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),[^,]*,AUTHN_LOCKOUT_EVENT""",
-    """AUTHN_LOCKOUT_EVENT,([^,]*,){7}({user}[^,]+)""",
-    """AUTHN_LOCKOUT_EVENT,([^,]*,){12}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """AUTHN_LOCKOUT_EVENT,([^,]*,){13}({dest_host}[^.,]+)""",
-    """AUTHN_LOCKOUT_EVENT,([^,]*,){13}[^.,]+\.({domain}[^.,]+)""",
-    """AUTHN_LOCKOUT_EVENT,([^,]*,){16}({auth_method}[^.,]+)"""
-  ]
-}
+    """,({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),[^,]{0,2000}
 ```

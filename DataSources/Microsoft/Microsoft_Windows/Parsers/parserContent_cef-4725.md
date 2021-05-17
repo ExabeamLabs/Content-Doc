@@ -12,16 +12,16 @@ Name = cef-4725
       """({event_name}A user account was disabled)""",
       """\sexternalId=({event_code}\d{1,100})""",
       """\srt=({time}\d{1,100})""",
-      """\sdvc=({host}[a-fA-F:\d.]+)""",
-      """\sdvchost=({host}[^\s]+)""",
-      """\sdhost=({dest_host}[^\s]+)""",
-      """\sdst=({dest_ip}[a-fA-F:\d.]+)""",
+      """\sdvc=({host}[a-fA-F:\d.]{1,2000})""",
+      """\sdvchost=({host}[^\s]{1,2000})""",
+      """\sdhost=({dest_host}[^\s]{1,2000})""",
+      """\sdst=({dest_ip}[a-fA-F:\d.]{1,2000})""",
       """\ssuser=({user}.+?)\s{1,100}\w+=""",
       """\ssntdom=({domain}.+?)\s\w+=""",
-      """\ssuid=({logon_id}[^\s]+)""",
+      """\ssuid=({logon_id}[^\s]{1,2000})""",
       """\sduser=({target_user}.+?)\s{1,100}\w+=""",
       """\sdntdom=({target_domain}.+?)\s\w+=""",
-      """Security_,ID=({target_user_sid}[^\s]+)"""
+      """Security_,ID=({target_user_sid}[^\s]{1,2000})"""
     ]
   }
 ```

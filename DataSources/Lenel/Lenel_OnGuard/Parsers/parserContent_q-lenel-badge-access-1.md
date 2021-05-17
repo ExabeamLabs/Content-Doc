@@ -10,13 +10,13 @@ Name = q-lenel-badge-access-1
   Conditions = [ """ EVDESCR: """", """ USERID: """", """ PANELNAME: """", """ READERDESC: """" ]
   Fields = [
     """EVENT_TIME_UTC:\s{0,100}"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=({host}[\w.\-]+)""",
-    """\sLASTNAME:\s{0,100}"({last_name}[^"]+)""",
-    """FIRSTNAME:\s{0,100}"({first_name}[^"]+)""",
-    """\sEVDESCR:\s{0,100}"({outcome}[^"]+)""",
-    """\sUSERID:\s{0,100}"({badge_id}[^"]+)""",
-    """\sREADERDESC:\s{0,100}"({location_door}[^"]+)""",
-    """PANELNAME:\s{0,100}"({location_building}[^"]+)"""
+    """exabeam_host=({host}[\w.\-]{1,2000})""",
+    """\sLASTNAME:\s{0,100}"({last_name}[^"]{1,2000})""",
+    """FIRSTNAME:\s{0,100}"({first_name}[^"]{1,2000})""",
+    """\sEVDESCR:\s{0,100}"({outcome}[^"]{1,2000})""",
+    """\sUSERID:\s{0,100}"({badge_id}[^"]{1,2000})""",
+    """\sREADERDESC:\s{0,100}"({location_door}[^"]{1,2000})""",
+    """PANELNAME:\s{0,100}"({location_building}[^"]{1,2000})"""
   ]
 }
 ```

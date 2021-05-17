@@ -14,14 +14,14 @@ Name = cef-powershell-300
     """"Computer"":""({host}.+?)"""",
     """"ScriptBlockId"":""({scriptblock_id}.+?)"""",
     """"ScriptBlockText"":""({scriptblock_text}.+?)"""",
-    """-Function\s{1,100}'({function}[^']+)""",
+    """-Function\s{1,100}'({function}[^']{1,2000})""",
     """"MessageTotal"":""(|({message_total}.+?))"""",
     """"MessageNumber"":""(|({message_number}.+?))"""",
-    """message=({script_message}[^:]+)""",
+    """message=({script_message}[^:]{1,2000})""",
     """"Path"":""(|({path}.+?))"""",
     """"ProcessID"":""({pid}\d{1,100})"""",
-    """-file\s({process}({process_directory}[^\s]+\\\\({process_name}[^\s\\]+)))""",
-    """CommandLine\\*=({command_line}[^\s]+)""",
+    """-file\s({process}({process_directory}[^\s]{1,2000}\\\\({process_name}[^\s\\]{1,2000})))""",
+    """CommandLine\\*=({command_line}[^\s]{1,2000})""",
   ]
 }
 ```

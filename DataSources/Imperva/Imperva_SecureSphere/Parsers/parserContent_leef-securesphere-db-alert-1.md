@@ -11,9 +11,9 @@ Name = leef-securesphere-db-alert-1
   Conditions = [ """|Imperva|SecureSphere|""", """AlertNumber=""", """AlertType=""", """Description=""" ]
   Fields = [
     """(\s|\||\\t)CreateTime=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """(\s|\||\\t)SourceIP=({src_ip}[a-fA-F:\d\.]+)""",
+    """(\s|\||\\t)SourceIP=({src_ip}[a-fA-F:\d\.]{1,2000})""",
     """(\s|\||\\t)SourcePort=({src_port}\d{1,100})""",
-    """(\s|\||\\t)ServerIP=({dest_ip}[a-fA-F:\d\.]+)""",
+    """(\s|\||\\t)ServerIP=({dest_ip}[a-fA-F:\d\.]{1,2000})""",
     """(\s|\||\\t)ServerPort=({dest_port}\d{1,100})""",
     """(\s|\||\\t)Username=(|({user}.+?))(\\t\w+=|\s{0,100}$)""",
     """(\s|\||\\t)AlertType=(|({alert_type}.+?))(\\t\w+=|\s{0,100}$)""",

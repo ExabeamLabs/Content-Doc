@@ -13,15 +13,15 @@ Name = exalms-4662
     """"@timestamp"\s{0,100}:\s{0,100}"({time}.+?)"""",
     """"(?:winlog\.)?computer_name"\s{0,100}:\s{0,100}"({host}.+?)"""",
     """ObjectServer":"({object_class}.+?)"""",
-    """ObjectName":"({object}[^"]+)"""",
+    """ObjectName":"({object}[^"]{1,2000})"""",
     """ObjectType":"({activity_type}.+?)"""",
     """SubjectUserName":"({user}.+?)"""",
-    """SubjectLogonId":"({logon_id}[^"]+)"""",
-    """SubjectDomainName":"({domain}[^"]+)"""",
-    """OperationType":"({action}[^"]+)"""",
-    """Properties":"({properties}[^"]+)"""",
-    """"AdditionalInfo"{1,20}:"{1,20}(-|({attribute}[^"]+))"""",
-    """"keywords":\["({outcome}[^"]+)"\]""",
+    """SubjectLogonId":"({logon_id}[^"]{1,2000})"""",
+    """SubjectDomainName":"({domain}[^"]{1,2000})"""",
+    """OperationType":"({action}[^"]{1,2000})"""",
+    """Properties":"({properties}[^"]{1,2000})"""",
+    """"AdditionalInfo"{1,20}:"{1,20}(-|({attribute}[^"]{1,2000}))"""",
+    """"keywords":\["({outcome}[^"]{1,2000})"\]""",
     """({event_code}4662)"""
   ]
   DupFields = [ "host->dest_host" ]

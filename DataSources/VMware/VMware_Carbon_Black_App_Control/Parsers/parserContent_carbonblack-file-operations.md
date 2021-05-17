@@ -10,18 +10,18 @@ Name = carbonblack-file-operations
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"
   Conditions = [ """Cb Protection event:""", """subtype="""", """file_threat=""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
-    """({host}[\w.\-]+)\s(\-\s)+Cb Protection event:"""
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """({host}[\w.\-]{1,2000})\s(\-\s)+Cb Protection event:"""
     """\sdate="({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|PM|pm))""",
-    """\stext="({additional_info}[^"]+)"""",
-    """\stype="({file_type}[^"]+)"""",
-    """\ssubtype="({event_code}[^"]+)"""",
-    """\shostname="(({domain}[^"\\]+)\\)?({dest_host}[^"\\]+)"""",
-    """\susername="(({domain}[^"\\]+)\\)?({user}[^"\\]+)"""",
-    """\sip_address="({dest_ip}[a-fA-F\d.:]+)""",
-    """\sfile_path="({file_path}({file_parent}[^"]+?)(\\({file_name}[^"\\]+?))?)"""",
-    """\sfile_name="({file_name}[^"]+?(\.({file_ext}[^".]+?))?)"""",
-    """\sprocess="({process}(({directory}[^"]+?)\\)?({process_name}[^"\\]+?))""""
+    """\stext="({additional_info}[^"]{1,2000})"""",
+    """\stype="({file_type}[^"]{1,2000})"""",
+    """\ssubtype="({event_code}[^"]{1,2000})"""",
+    """\shostname="(({domain}[^"\\]{1,2000})\\)?({dest_host}[^"\\]{1,2000})"""",
+    """\susername="(({domain}[^"\\]{1,2000})\\)?({user}[^"\\]{1,2000})"""",
+    """\sip_address="({dest_ip}[a-fA-F\d.:]{1,2000})""",
+    """\sfile_path="({file_path}({file_parent}[^"]{1,2000}?)(\\({file_name}[^"\\]{1,2000}?))?)"""",
+    """\sfile_name="({file_name}[^"]{1,2000}?(\.({file_ext}[^".]{1,2000}?))?)"""",
+    """\sprocess="({process}(({directory}[^"]{1,2000}?)\\)?({process_name}[^"\\]{1,2000}?))""""
     """\sfile_hash="({file_hash}\w+)"""
   ]
   DupFields = [ "event_code->accesses","directory->process_directory" ]

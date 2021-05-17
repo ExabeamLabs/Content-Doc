@@ -11,14 +11,14 @@ Name = json-4779
   Fields = [
     """"EventTime":"({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d)"""",
     """({event_name}A session was disconnected from a Window Station)""",
-    """"HostName":"({host}[^"]+)"""",
+    """"HostName":"({host}[^"]{1,2000})"""",
     """({event_code}4779)""",
-    """"AccountName":"({user}[^"]+)"""",
-    """"AccountDomain":"({domain}[^"]+)"""",
-    """"LogonID":"({logon_id}[^"]+)"""",
-    """"SeverityValue":({severity}[^,]+)""", 
-    """"ClientName":"({dest_host}[^"]+)"""",
-    """"ClientAddress":"({dest_ip}[^"]+)"""",
+    """"AccountName":"({user}[^"]{1,2000})"""",
+    """"AccountDomain":"({domain}[^"]{1,2000})"""",
+    """"LogonID":"({logon_id}[^"]{1,2000})"""",
+    """"SeverityValue":({severity}[^,]{1,2000})""", 
+    """"ClientName":"({dest_host}[^"]{1,2000})"""",
+    """"ClientAddress":"({dest_ip}[^"]{1,2000})"""",
 
   ]
 }

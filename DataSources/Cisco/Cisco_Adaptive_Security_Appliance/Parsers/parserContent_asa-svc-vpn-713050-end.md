@@ -10,9 +10,9 @@ Name = asa-svc-vpn-713050-end
   Conditions = [ " Connection terminated for " , "-713050" ]
   Fields = [
     """exabeam_raw=.+?({time}\w+ \d{1,100} \d\d\d\d \d{1,100}:\d{1,100}:\d\d)""",
-    """exabeam_host=({host}[\w.\-]+)""",
-    """[\s\t]+\d\d:\d\d:\d\d\s{1,100}({host}[\w.\-]+).+?%ASA""",
-    """IP\s{0,100}=\s{0,100}({src_ip}[A-Fa-f:\d.]+)""",
+    """exabeam_host=({host}[\w.\-]{1,2000})""",
+    """[\s\t]{1,2000}\d\d:\d\d:\d\d\s{1,100}({host}[\w.\-]{1,2000}).+?%ASA""",
+    """IP\s{0,100}=\s{0,100}({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """%ASA-({priority}\d{1,100})-({event_code}\d{1,100})""",
    ]
 }

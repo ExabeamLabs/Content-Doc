@@ -9,7 +9,7 @@ Name = q-prowatch-badge-access
     TimeFormat =  "yyyy-MM-dd H:mm:ss"
     Conditions = [ """ EVNT_DESCRP:""", """ LOCATION:""", """ LNAME:""", """ FNAME:""" ]
     Fields = [
-      """exabeam_host=([^=]*@\s{0,100})?({host}[^\s]+)""",
+      """exabeam_host=([^=]{0,2000}@\s{0,100})?({host}[^\s]{1,2000})""",
       """\sEVNT_DAT:\s{0,100}"({time}\d\d\d\d-\d\d-\d\d\s{1,100}\d{1,2}:\d\d:\d\d)""",
       """\sEVNT_DESCRP:\s{0,100}"({outcome}[^"].*?)"\s{0,100}(\w+:|$)""",
       """\sFNAME:\s{0,100}"({first_name}[^"].*?)"\s{0,100}(\w+:|$)""",

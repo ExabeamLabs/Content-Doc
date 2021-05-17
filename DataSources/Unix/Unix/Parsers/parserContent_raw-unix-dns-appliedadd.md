@@ -9,8 +9,8 @@ Name = raw-unix-dns-appliedadd
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ " applied ADD for ", "IN A" ]
   Fields = [ """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=({host}[\w.\-]+)""",
-    """applied ADD for '({dest_host}[^']+).+? IN A ({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
+    """exabeam_host=({host}[\w.\-]{1,2000})""",
+    """applied ADD for '({dest_host}[^']{1,2000}).+? IN A ({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
   DupFields = [ "dest_host->user" ]
 }

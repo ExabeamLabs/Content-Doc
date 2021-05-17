@@ -10,8 +10,8 @@ Name = unix-local-logon
   Conditions = [ """systemd: Started Session""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """({host}[\w\-.]+)\s{1,100}systemd: Started Session""",
-    """of user ({user}[^\s\.]+)""",
+    """({host}[\w\-.]{1,2000})\s{1,100}systemd: Started Session""",
+    """of user ({user}[^\s\.]{1,2000})""",
     """({event_code}Started Session)"""
   ]
   DupFields = [ "host->dest_host" ]

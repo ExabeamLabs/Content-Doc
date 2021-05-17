@@ -13,15 +13,15 @@ Name = cef-fortinet-app-activity
     """\Wact=(|({activity}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wrt=({time}\d{1,100})""",
     """\Wshost=(|({src_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-    """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
+    """\Wsrc=({src_ip}[a-fA-F\d.:]{1,2000})""",
     """\Wspt=({src_port}\d{1,100})""",
     """\Wdhost=(|({dest_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-    """\Wdst=({dest_ip}[a-fA-F\d.:]+)""",
+    """\Wdst=({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """\Wdpt=({dest_port}\d{1,100})""",
     """\WdestinationServiceName=(|({service}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdvchost=(|({host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wcat=({event_subtype}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
-    """\Wapp\\?="({app}[^"]+)"""",
+    """\Wapp\\?="({app}[^"]{1,2000})"""",
     """\Wmsg=({additional_info}.+?),?(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }

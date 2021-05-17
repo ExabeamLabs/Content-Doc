@@ -9,8 +9,7 @@ Name = palo-alto-app-activity-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = ["""activity_monitoring""",""" Aperture """]
   Fields = [
-    """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}Z)\s({host}[^\s]+)""",
-    """activity_monitoring,"?({app}[^,"]+)""",
-    """activity_monitoring,"{0,20}([^,]*,){5}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),""",
-    """,activity_monitoring,([^,]*,){4}"{0,20}([\w\s]+|({user_email}[^@]+@[^",]+))"{0,20}
+    """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}Z)\s({host}[^\s]{1,2000})""",
+    """activity_monitoring,"?({app}[^,"]{1,2000})""",
+    """activity_monitoring,"{0,20}([^,]{0,2000}
 ```

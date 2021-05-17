@@ -9,10 +9,10 @@ Name = ovirt-app-activity-37
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """EVENT_ID: USER_ADD_VDS""", """ovirt""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d),.+?ovirt""",
-    """EVENT_ID:\s{0,100}({activity}[^\(\)]+)""",
-    """EVENT_ID:.*? Host ({object}[^\s"]+) was added by ({user}[^\s\(\)]+?)(\)|\s|\.\s|\.$)""",
+    """EVENT_ID:\s{0,100}({activity}[^\(\)]{1,2000})""",
+    """EVENT_ID:.*? Host ({object}[^\s"]{1,2000}) was added by ({user}[^\s\(\)]{1,2000}?)(\)|\s|\.\s|\.$)""",
     """({app}ovirt)"""
   ]
 }

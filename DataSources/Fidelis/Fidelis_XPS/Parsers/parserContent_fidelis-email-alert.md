@@ -10,20 +10,20 @@ Name = fidelis-email-alert
   Conditions = [  """Fidelis XPS""" , """Protocol=""" , """Sensor="""]
   Fields = [
         """Time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""
-        """\w+ \d{1,100} \d\d:\d\d:\d\d\s({host}[\w\-.]+)\sProduct""",
+        """\w+ \d{1,100} \d\d:\d\d:\d\d\s({host}[\w\-.]{1,2000})\sProduct""",
         """\sDestIP="({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
-        """From=({sender}[^\s]+)\s""",
-        """From=[^@]+@({external_domain_sender}.+?)\s{1,100}(\w+=|$)"""
-        """User=(?!(<n\/a>))({email_user}[^\s]+)\s""",
-        """To=({recipient}[^,\n\s]+)""",
-        """To=({recipients}[^\n\s]+)"""
-        """To=[^@]+@({external_domain_recipient}.+?)\s{1,100}(\w+=|$)"""
-        """SrcIP="({src_ip}[^"]+)"""",
-        """Severity="({alert_severity}[^"]+)"""",
-        """Filename="(?!(<n\/a>))({attachments}[^"]+)"""",
-        """Filename="(?!(<n\/a>))({attachment}[^\.]+({file_ext}[^"]+))("|,)""",
-        """Protocol="({protocol}[^"]+)"""",
-        """Rule="({alert_type}[^"]+)"""",
+        """From=({sender}[^\s]{1,2000})\s""",
+        """From=[^@]{1,2000}@({external_domain_sender}.+?)\s{1,100}(\w+=|$)"""
+        """User=(?!(<n\/a>))({email_user}[^\s]{1,2000})\s""",
+        """To=({recipient}[^,\n\s]{1,2000})""",
+        """To=({recipients}[^\n\s]{1,2000})"""
+        """To=[^@]{1,2000}@({external_domain_recipient}.+?)\s{1,100}(\w+=|$)"""
+        """SrcIP="({src_ip}[^"]{1,2000})"""",
+        """Severity="({alert_severity}[^"]{1,2000})"""",
+        """Filename="(?!(<n\/a>))({attachments}[^"]{1,2000})"""",
+        """Filename="(?!(<n\/a>))({attachment}[^\.]{1,2000}({file_ext}[^"]{1,2000}))("|,)""",
+        """Protocol="({protocol}[^"]{1,2000})"""",
+        """Rule="({alert_type}[^"]{1,2000})"""",
         """SrcPort="({src_port}[^"]\d{1,100})"""",
         """DestPort="({dest_port}[^"]\d{1,100})""""
           ]

@@ -10,7 +10,7 @@ Name = securesphere-db-query-2
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """Imperva |""", """rawdata=""", """eventtype=Query""" ]
   Fields = [
-    """exabeam_host=({host}[\w\-.]+)""",
+    """exabeam_host=({host}[\w\-.]{1,2000})""",
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """\ssrc=({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
     """\sspt=({src_port}\d{1,100})""",
@@ -21,14 +21,14 @@ Name = securesphere-db-query-2
     """\sappname=({app}.*?)\s\w+=""",
     """\seventtype=({log_type}.*?)\s\w+=""",
     """\soperationname=({db_operation}.*?)\s\w+=""",
-    """\ssrchostname=({src_host}[^\s]+)""",
-    """\sdbname=({db_name}[^\s]+)""",
-    """\sschemaname=({db_schema}[^\s]+)"""
+    """\ssrchostname=({src_host}[^\s]{1,2000})""",
+    """\sdbname=({db_name}[^\s]{1,2000})""",
+    """\sschemaname=({db_schema}[^\s]{1,2000})"""
     """\sresponsesize=({response_size}.*?)\s\w+=""",
-    """\sosuser=({os_user}[^\s]+)""",
-    """\sduser=({db_user}[^\s]+)""", 
-    """\sobjectname=({object_name}[^\s]+)""",
-    """\srawdata=#\(({db_query}[^\)]+)""",
+    """\sosuser=({os_user}[^\s]{1,2000})""",
+    """\sduser=({db_user}[^\s]{1,2000})""", 
+    """\sobjectname=({object_name}[^\s]{1,2000})""",
+    """\srawdata=#\(({db_query}[^\)]{1,2000})""",
   ]
   DupFields = [ "db_user->account", "os_user->user" ]
 }

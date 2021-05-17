@@ -10,10 +10,10 @@ Name = rdirectory-account-enable
   Conditions = [ "rdirectoryEnable account:", "Modified by:" ]
   Fields = [
 	"""SystemTime=\'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-	"""<Computer>({host}[^<]+)""",
-	"""Modified by:({user}.+?)\s{1,100}(\(.+?\))?\s{1,100}\(({domain}[^\/)]+)""",
-	"""Credentials:({account_domain}[^\\]+)\\+([^\s.]+\.)*({account}[^\s.]+)""",
-	"""account:({target_user}.+?)\s{1,100}\(({target_domain}[^\/)]+)"""
+	"""<Computer>({host}[^<]{1,2000})""",
+	"""Modified by:({user}.+?)\s{1,100}(\(.+?\))?\s{1,100}\(({domain}[^\/)]{1,2000})""",
+	"""Credentials:({account_domain}[^\\]{1,2000})\\+([^\s.]{1,2000}\.)*({account}[^\s.]{1,2000})""",
+	"""account:({target_user}.+?)\s{1,100}\(({target_domain}[^\/)]{1,2000})"""
   ]
   DupFields = ["host->src_host"]
 }

@@ -9,7 +9,7 @@ Name = usb-file-write
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """cs:usb:activity""", """"USB\""" ]
   Fields = [
-    """exabeam_host=({host}[^,\s]+)""",
+    """exabeam_host=({host}[^,\s]{1,2000})""",
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-    """({device_id}USB[^"]+)",\d{1,100}
+    """({device_id}USB[^"]{1,2000})",\d{1,100}
 ```

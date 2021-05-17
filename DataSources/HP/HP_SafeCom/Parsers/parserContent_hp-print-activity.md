@@ -10,8 +10,8 @@ Name = hp-print-activity
   Conditions = [ """"run_id"""",""""print_size"""",""""userid"""", """"employee_cms_code"""", """"day_of_week"""" ]
   Fields = [
     """"date_part":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}Z)"""
-    """exabeam_host=({host}[^\s]+)""",
-    """"userid":"({user}[^"]+)""",
+    """exabeam_host=({host}[^\s]{1,2000})""",
+    """"userid":"({user}[^"]{1,2000})""",
     """"printer_name":"({printer_name}.+?)\s{0,100}"""",
     """"pages_printed":({num_pages}\d{1,100})""",
     """"document_details":"({object}.+?)\s{0,100}"""",

@@ -9,19 +9,19 @@ Name = cef-carbonblack-alert
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """|Carbon Black|Carbon Black|""", """|reason=""", """dhost=""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """\|reason=({alert_type}.+?)\|({alert_name}.+?)\|({alert_severity}\d{1,100})?""",
     """\srt=({time}\d{1,100})""",
-    """\sdhost=({src_host}[^\s]+)""",
-    """\s(dst|local_ip)=({src_ip}[^\s]+)""",
+    """\sdhost=({src_host}[^\s]{1,2000})""",
+    """\s(dst|local_ip)=({src_ip}[^\s]{1,2000})""",
     """\sdeviceSeverity=({alert_severity}\d{1,100})""",
     """\sdirection:({direction}(Inbound|Outbound))""",
-    """\sremote_ip:({dest_ip}[A-Fa-f:\d.]+)""",
-    """\salliance_link_[^\s:]+:({additional_info}[^\s]+)""",
+    """\sremote_ip:({dest_ip}[A-Fa-f:\d.]{1,2000})""",
+    """\salliance_link_[^\s:]{1,2000}:({additional_info}[^\s]{1,2000})""",
     """\sfname=({malware_url}.+?)\s{1,100}\w+=""",
     """\sfname=({malware_url_path}\w+:\/\/.+?)\s{1,100}\w+=""",
     """\sfname=({file_path}(?!\w+:\/\/).+?)\s{1,100}\w+=""",
-    """\sdvchost=({host}[^\s]+)""",
+    """\sdvchost=({host}[^\s]{1,2000})""",
     """\sdproc=({process_name}.*?)\s\w+=""",
   ]
   DupFields = ["host->dest_host"]

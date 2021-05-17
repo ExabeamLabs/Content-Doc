@@ -9,15 +9,15 @@ Name = s-pantraps-alert
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """Palo[Alto] TrapsAgent:""","""event from Computer:""","""Prevention Key:"""]
   Fields = [
-    """\w+ \d\d \d\d:\d\d:\d\d ({host}[^\s]+)\s{0,100}Palo""",
+    """\w+ \d\d \d\d:\d\d:\d\d ({host}[^\s]{1,2000})\s{0,100}Palo""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """User: (({domain}[^\\]+)\\)?({user}[^,]+)""",
-    """from Computer: ({src_host}[^,]+)""",
-    """eventID=({alert_name}[^\s]+) \w+="""
-    """Module Name: ({alert_type}[^,]+),"""
+    """User: (({domain}[^\\]{1,2000})\\)?({user}[^,]{1,2000})""",
+    """from Computer: ({src_host}[^,]{1,2000})""",
+    """eventID=({alert_name}[^\s]{1,2000}) \w+="""
+    """Module Name: ({alert_type}[^,]{1,2000}),"""
     """sev=({alert_severity}\d{1,100})"""
-    """Prevention Key: ({alert_id}[^\s]+) \w+="""
-    """Process Name: ({malware_url}[^,]+),"""
+    """Prevention Key: ({alert_id}[^\s]{1,2000}) \w+="""
+    """Process Name: ({malware_url}[^,]{1,2000}),"""
   ]
   SOAR {
     IncidentType = "malware"

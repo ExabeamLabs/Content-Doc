@@ -10,15 +10,15 @@ Name = raw-pan-vpn-set-ip
   Conditions = [ """,globalprotect,""", "client configuration generated" ]
   Fields = [
     """({time}\d\d\d\d/\d\d/\d\d \d{1,100}:\d{1,100}:\d{1,100})""",
-    """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
-    """globalprotect(gateway|portal)-\S+?,({host}[^,]+),""",
-    """Private IP:\s?({src_translated_ip}[^,\s]+)""",
-    """User name:\s{1,100}({user}[\w.'\-\\$]+?)\.?(\s|,|"|$)""",
-    """User name:\s{1,100}({user_email}[^@\s]+@[^\s,]+),""",
-    """Client OS( version)?:\s{1,100}({os}[^":]+)(,|\.)""",
-    """SYSTEM,({vpn_client}[^,]+),""",
-    """Source region:\s{0,100}({src_country}[^,]+)""",
-    """Device name:\s({src_host}[^,]+)"""
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[^\s]{1,2000})""",
+    """globalprotect(gateway|portal)-\S+?,({host}[^,]{1,2000}),""",
+    """Private IP:\s?({src_translated_ip}[^,\s]{1,2000})""",
+    """User name:\s{1,100}({user}[\w.'\-\\$]{1,2000}?)\.?(\s|,|"|$)""",
+    """User name:\s{1,100}({user_email}[^@\s]{1,2000}@[^\s,]{1,2000}),""",
+    """Client OS( version)?:\s{1,100}({os}[^":]{1,2000})(,|\.)""",
+    """SYSTEM,({vpn_client}[^,]{1,2000}),""",
+    """Source region:\s{0,100}({src_country}[^,]{1,2000})""",
+    """Device name:\s({src_host}[^,]{1,2000})"""
   ]
 }
 ```

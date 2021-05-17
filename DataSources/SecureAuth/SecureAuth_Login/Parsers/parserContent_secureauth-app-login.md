@@ -11,13 +11,13 @@ Name = secureauth-app-login
     Fields = [
       """exabeam_raw=.*({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
 	"""<UserHostAddress>({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-	"""<HostName>({host}[^<]+)""",
+	"""<HostName>({host}[^<]{1,2000})""",
 	"""<EventID>({event_code}\d{1,100})</EventID>""",
-	"""<UserID>({user}[^<]+)""",
-	"""<Realm>({app}[^<]+)""",
-     	"""<UserAgent>(?:-|({browser}[\w\-]+))""",
-     	"""<UserAgent>(?:-|({browser}[\w\-]+)\/[\d\._]+)""",
-     	"""<UserAgent>(?:-|({browser}[^\/]+).+({os}iOS|Android|BlackBerry|iPhone OS|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin))""",
+	"""<UserID>({user}[^<]{1,2000})""",
+	"""<Realm>({app}[^<]{1,2000})""",
+     	"""<UserAgent>(?:-|({browser}[\w\-]{1,2000}))""",
+     	"""<UserAgent>(?:-|({browser}[\w\-]{1,2000})\/[\d\._]{1,2000})""",
+     	"""<UserAgent>(?:-|({browser}[^\/]{1,2000}).+({os}iOS|Android|BlackBerry|iPhone OS|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin))""",
       	"""<UserAgent\>(?:-|Mozilla\/.+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
       	"""<UserAgent>(?:-|Mozilla\/.+\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+Gecko\/\d{1,100}\s{1,100}({browser}\w+))"""
     ]

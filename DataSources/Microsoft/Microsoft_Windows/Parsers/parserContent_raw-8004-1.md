@@ -11,14 +11,14 @@ Name = raw-8004-1
     Fields = [
       """({event_name}Domain Controller Blocked Audit: Audit NTLM authentication to this domain controller)""",
       """({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d)""",
-      """ComputerName=({host}[^\s]+)""",
+      """ComputerName=({host}[^\s]{1,2000})""",
       """({event_code}8004)""",
-      """User name:\s{1,100}({user}[^\s]+)""",
-      """Domain name:\s{1,100}(NULL|({domain}[^\s]+))""",
+      """User name:\s{1,100}({user}[^\s]{1,2000})""",
+      """Domain name:\s{1,100}(NULL|({domain}[^\s]{1,2000}))""",
       """RecordNumber=({record_id}\d{1,100})""",
       """Channel name:\s{0,100}({resource}.*?)\s{1,100}User name:""",
-      """Workstation name:\s{0,100}\\?(NULL|({src_host}[\w\-.]+))\s{1,100}Secure Channel type:""",
-      """security policy Network Security:\s{0,100}Restrict NTLM:\s{0,100}({policy}[^\.]+)""",
+      """Workstation name:\s{0,100}\\?(NULL|({src_host}[\w\-.]{1,2000}))\s{1,100}Secure Channel type:""",
+      """security policy Network Security:\s{0,100}Restrict NTLM:\s{0,100}({policy}[^\.]{1,2000})""",
     ]
     DupFields = ["host->dest_host"]
   }

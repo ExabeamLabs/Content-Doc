@@ -4,7 +4,7 @@
 Name = symantec-usb-write-2
   Conditions = [ """type":"""", ""","device":"""", """"action":"File Write"""" ]
   Fields = ${SymantecParserTemplates.symantec-usb-activity.Fields}[
-     """device":"({device_id}[^"]+)""",
+     """device":"({device_id}[^"]{1,2000})""",
   ]
 }
 symantec-usb-activity = {
@@ -14,14 +14,14 @@ symantec-usb-activity = {
   DataType = "usb-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
-    """\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}[\+\-]\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]+)\s""",
+    """\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}[\+\-]\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]{1,2000})\s""",
     """"@timestamp":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}Z)""",
-    """"hostname":"({dest_host}[\w\-.]+)""",
-    """"action":"({activity}[^"]+)""",
-    """"user":\{"name":"(system|({user}[^"\s]+))"""",
-    """"ip":"(0.0.0.0|({dest_ip}[A-Fa-f:\d.]+))""",
-    """"executable":"({process}({directory}(?:[^,"]+)?[\\\/])?({process_name}[^\\\/,"]+?))"""",
-    """"path":"(|({file_path}({file_parent}[^"]*?[\\\/]*)(|({file_name}[^\\\/"]*?(\.({file_ext}[^\\\/\.\s"]*))?))))\s{0,100}"""",
+    """"hostname":"({dest_host}[\w\-.]{1,2000})""",
+    """"action":"({activity}[^"]{1,2000})""",
+    """"user":\{"name":"(system|({user}[^"\s]{1,2000}))"""",
+    """"ip":"(0.0.0.0|({dest_ip}[A-Fa-f:\d.]{1,2000}))""",
+    """"executable":"({process}({directory}(?:[^,"]{1,2000})?[\\\/])?({process_name}[^\\\/,"]{1,2000}?))"""",
+    """"path":"(|({file_path}({file_parent}[^"]{0,2000}?[\\\/]{0,2000})(|({file_name}[^\\\/"]{0,2000}?(\.({file_ext}[^\\\/\.\s"]{0,2000}))?))))\s{0,100}"""",
     """"size":({bytes}\d{1,100})""",
     """({device_type}(CD-DVD|USB))""",
   ]

@@ -12,7 +12,7 @@ Name = s-azure-authentication
     """({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|pm|PM))""",
     """\sComputerName=({host}.+?)\s{1,100}\w+=""",
     """\sUser=(NOT_TRANSLATED|({user}.+?))\s{1,100}\w+=""",
-    """Access ({action}.+?) for user ({user_email}[^\s@]+@[^\s@]+)""",
+    """Access ({action}.+?) for user ({user_email}[^\s@]{1,2000}@[^\s@]{1,2000})""",
     """Azure MFA response:\s{0,100}({failure_reason}\w+)""",
   ]
 }

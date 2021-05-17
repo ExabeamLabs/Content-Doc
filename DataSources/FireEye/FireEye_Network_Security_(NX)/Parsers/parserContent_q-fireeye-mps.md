@@ -10,13 +10,13 @@ Name = q-fireeye-mps
   Conditions = ["LEEF:", "FireEye|MPS"]
   Fields = [
     """devTime=({time}\w+ \d{1,100} \d{1,100} \d\d:\d\d:\d\d)""",
-    """src=({src_ip}[^\^]+)\^""",
-    """dst=({dest_ip}[^\^]+)\^""",
-    """dvchost=({host}[^\^]+)\^""",
-    """shost=({src_host}[^\^]+)\^""",
-    """sname=({alert_name}[^\^]+)\^""",
-    """FireEye\|MPS\|[^\|]+\|({alert_type}[^\|]+)\|sev=({alert_severity}[^\^]+)\^""",
-    """externalId=({alert_id}[^\^]+)\^"""
+    """src=({src_ip}[^\^]{1,2000})\^""",
+    """dst=({dest_ip}[^\^]{1,2000})\^""",
+    """dvchost=({host}[^\^]{1,2000})\^""",
+    """shost=({src_host}[^\^]{1,2000})\^""",
+    """sname=({alert_name}[^\^]{1,2000})\^""",
+    """FireEye\|MPS\|[^\|]{1,2000}\|({alert_type}[^\|]{1,2000})\|sev=({alert_severity}[^\^]{1,2000})\^""",
+    """externalId=({alert_id}[^\^]{1,2000})\^"""
   ]
   SOAR {
     IncidentType = "malware"

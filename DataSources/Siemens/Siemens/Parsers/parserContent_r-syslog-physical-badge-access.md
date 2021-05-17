@@ -9,7 +9,7 @@ Name = r-syslog-physical-badge-access
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = ["""%SIEMENS_FUSION_AC:""","""exabeam_raw"""]
     Fields = [
-      """exabeam_host=({host}[^\s]+)""",
+      """exabeam_host=({host}[^\s]{1,2000})""",
       """%SIEMENS_FUSION_AC:(.+?(\^){2}){1}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """%SIEMENS_FUSION_AC:(.+?(\^){2}){4}({employee_id}(NE-)?\d{1,100})""",
       """%SIEMENS_FUSION_AC:(.+?(\^){2}){6}({badge_id}\d{1,100})""",

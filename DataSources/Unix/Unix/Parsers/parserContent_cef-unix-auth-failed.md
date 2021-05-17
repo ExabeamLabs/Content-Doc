@@ -10,13 +10,13 @@ Name = cef-unix-auth-failed
   Conditions = [ """CEF:""", """Unix|Unix""", """|password check failed|""", """categoryOutcome=/Failure""", """unix_chkpwd""" ]
   Fields = [
     """\Wrt=({time}\d{1,100})""",
-    """\Wdvc=({host}[A-Fa-f:\d.]+)""",
-    """\Wdvchost=({host}[\w\-.]+)""",
-    """\Wsuser=({user}[^\s]+?)\s{1,100}(\w+=|$)""",
-    """\Wdhost=({dest_host}[\w\-.]+)""",
-    """\Wdst=({dest_ip}[A-Fa-f:\d.]+)""",
-    """\Wahost=(({src_ip}[A-Fa-f:\d.]+)|({src_host}[\w\-.]+))""",
-    """\Wagt=({src_ip}[A-Fa-f:\d.]+)""",
+    """\Wdvc=({host}[A-Fa-f:\d.]{1,2000})""",
+    """\Wdvchost=({host}[\w\-.]{1,2000})""",
+    """\Wsuser=({user}[^\s]{1,2000}?)\s{1,100}(\w+=|$)""",
+    """\Wdhost=({dest_host}[\w\-.]{1,2000})""",
+    """\Wdst=({dest_ip}[A-Fa-f:\d.]{1,2000})""",
+    """\Wahost=(({src_ip}[A-Fa-f:\d.]{1,2000})|({src_host}[\w\-.]{1,2000}))""",
+    """\Wagt=({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """\WcategoryOutcome=\/?({outcome}.+?)\s{1,100}(\w+=|$)""",
   ]
 }

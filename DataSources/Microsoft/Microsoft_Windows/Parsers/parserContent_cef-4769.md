@@ -15,11 +15,11 @@ Name = cef-4769
       """\sduser=({user}.+?)(@({domain}.+?))?\s{1,100}\w+=""",
       """\sdestinationServiceName=({dest_host}\S+\$)\s""",
       """\sdestinationServiceName=({service_name}\S+)""",
-      """\scs3=(::[\w]+:)?({src_ip}[a-fA-F:\d.]+)""",
-      """\scs4=({result_code}[^\s]+)""",
-      """\sdvchost=({host}[^\s]+)""",
-      """ncryption_,Type=({ticket_encryption_type}[^\s]+)""",
-      """Ticket_,Options=({ticket_options}[^\s]+)"""
+      """\scs3=(::[\w]{1,2000}:)?({src_ip}[a-fA-F:\d.]{1,2000})""",
+      """\scs4=({result_code}[^\s]{1,2000})""",
+      """\sdvchost=({host}[^\s]{1,2000})""",
+      """ncryption_,Type=({ticket_encryption_type}[^\s]{1,2000})""",
+      """Ticket_,Options=({ticket_options}[^\s]{1,2000})"""
     ]
   }
 ```

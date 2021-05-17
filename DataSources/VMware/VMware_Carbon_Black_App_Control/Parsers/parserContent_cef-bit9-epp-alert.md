@@ -10,13 +10,13 @@ Name = cef-bit9-epp-alert
   Conditions = [ """|Bit9|""", """|Security alert|""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-    """\|Bit9(\|[^\|]+){3}\|({alert_name}[^\|]+)\|""",
+    """\|Bit9(\|[^\|]{1,2000}){3}\|({alert_name}[^\|]{1,2000})\|""",
     """cat=({alert_type}.+?)\s{1,100}\w+=""",
-    """\|({alert_severity}[^\|]+)\|\w+=""",
+    """\|({alert_severity}[^\|]{1,2000})\|\w+=""",
     """externalId=({alert_id}\d{1,100})""",
     """dst=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """dhost=([^\\]+\\+)?({src_host}[\w\-.]+)\s{0,100}(\w+=|$)""",
-    """dvchost=([^\\]+\\+)?({host}[^\s]+)\s{1,100}\w+=""",
+    """dhost=([^\\]{1,2000}\\+)?({src_host}[\w\-.]{1,2000})\s{0,100}(\w+=|$)""",
+    """dvchost=([^\\]{1,2000}\\+)?({host}[^\s]{1,2000})\s{1,100}\w+=""",
     """filePath=({malware_url}.+?)\s{1,100}\w+=""",
     """filePath=({malware_url_path}\w+:\/\/.+?)\s{1,100}\w+=""",
     """filePath=(?!\w+:\/\/)({process}.+?)\s{1,100}\w+=""",

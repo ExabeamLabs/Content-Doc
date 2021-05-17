@@ -10,9 +10,9 @@ Name = unix-failed-logon-11
   Conditions = [ """ sshd[""", """]: No authentication methods succeeded for user""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
-    """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]+)\s{1,100}""",
-    """No authentication methods succeeded for user ({user}[^""]+)"""
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]{1,2000})\s{1,100}""",
+    """No authentication methods succeeded for user ({user}[^""]{1,2000})"""
   ]
 }
 ```

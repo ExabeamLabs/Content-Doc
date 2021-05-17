@@ -10,8 +10,8 @@ Name = ibm-lotus-database-update
   Conditions = ["""  Updating '""", """' into database '""", """' from template '"""]
   Fields = [
     """({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d (am|AM|PM|pm))""",
-    """exabeam_host=({host}[\w.\-]+)""",
-    """Updating .*? into database '({database_name}[^']+)"""
+    """exabeam_host=({host}[\w.\-]{1,2000})""",
+    """Updating .*? into database '({database_name}[^']{1,2000})"""
   ]
 }
 ```

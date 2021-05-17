@@ -10,13 +10,13 @@ Name = cef-msn-nac-logon
   Conditions = [ """CEF:""", """|Microsoft|Microsoft NPS""", """ act=Access-Request""" ]
   Fields = [
     """\srt=({time}\d{1,100})""",
-    """\sdvc=({host}[a-fA-F\d.:]+)""",
-    """\ssrc=({src_ip}[a-fA-F\d.:]+)""",
-    """\sdst=({auth_server}[a-fA-F\d.:]+)""",
+    """\sdvc=({host}[a-fA-F\d.:]{1,2000})""",
+    """\ssrc=({src_ip}[a-fA-F\d.:]{1,2000})""",
+    """\sdst=({auth_server}[a-fA-F\d.:]{1,2000})""",
     """\sdvchost=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\sshost=({src_host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\sdhost=({auth_server}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
-    """\ssourceTranslatedAddress=({dest_ip}[a-fA-F\d.:]+)""",
+    """\ssourceTranslatedAddress=({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """\ssuser=({user}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\sdntdom=({domain}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\sapp=({protocol}.+?)(\s{1,100}\w+=|\s{0,100}$)""",

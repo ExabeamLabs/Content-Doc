@@ -11,13 +11,13 @@ Name = cef-cisco-ise-nac-logon
   Fields = [
     """\srt=({time}\d{1,100})""",
     """\srt=({time}[A-Za-z]{3} \d\d \d{4} \d\d:\d\d:\d\d)""",
-    """\sdvchost=({host}[^\s]+)""",
-    """\sduser=(?:|(({domain}[^\\=]+)\\+)?({user}(?:({computer_name}([A-F0-9]{2}\-){5}[A-F0-9]{2})|.+?)))\scn1=""",
-    """\sdhost=({dest_host}[^\s]+)""",
-    """\sdst=({dest_ip}[^\s]+)""",
-    """\sdst=({auth_server}[^\s]+)""",
-    """\sshost=({src_host}[^\s]+)""",
-    """\ssrc=({src_ip}[^\s]+)"""
+    """\sdvchost=({host}[^\s]{1,2000})""",
+    """\sduser=(?:|(({domain}[^\\=]{1,2000})\\+)?({user}(?:({computer_name}([A-F0-9]{2}\-){5}[A-F0-9]{2})|.+?)))\scn1=""",
+    """\sdhost=({dest_host}[^\s]{1,2000})""",
+    """\sdst=({dest_ip}[^\s]{1,2000})""",
+    """\sdst=({auth_server}[^\s]{1,2000})""",
+    """\sshost=({src_host}[^\s]{1,2000})""",
+    """\ssrc=({src_ip}[^\s]{1,2000})"""
   ]
 }
 ```

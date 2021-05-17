@@ -10,10 +10,10 @@ Name = raw-unix-account-created
   Conditions = [ "new user:", "useradd", "UID" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=({host}[\w.\-]+)""",
-    """\d\d:\d\d:\d\d ({host}[\w.\-]+)""",
-    """new user: name=({account_name}[^,]+),""",
-    """new user: .+?UID=({account_id}[^,]+),""",
+    """exabeam_host=({host}[\w.\-]{1,2000})""",
+    """\d\d:\d\d:\d\d ({host}[\w.\-]{1,2000})""",
+    """new user: name=({account_name}[^,]{1,2000}),""",
+    """new user: .+?UID=({account_id}[^,]{1,2000}),""",
   ]
   DupFields=["host->dest_host"]
 }

@@ -9,5 +9,5 @@ Name = checkpoint-failed-vpn-login
   DataType = "failed-vpn-login"
   Conditions = [ """,alert,reject,""" ]
   Fields = [
-    """({time}\d{1,100}\w+\d\d\d\d,\d{1,100}:\d{1,100}:\d{1,100})(\s{1,100}(\+|\-)\d{1,100})?,(|({host}[^,]+)),alert,reject,([^,]*,){8}(|({src_ip}[^,]+)),(|({dest_ip}[^,]+)),([^,]*,){14}(|({user}[^,]+)),(|({failure_reason}[^,]+?))\s{0,100}
+    """({time}\d{1,100}\w+\d\d\d\d,\d{1,100}:\d{1,100}:\d{1,100})(\s{1,100}(\+|\-)\d{1,100})?,(|({host}[^,]{1,2000})),alert,reject,([^,]{0,2000}
 ```

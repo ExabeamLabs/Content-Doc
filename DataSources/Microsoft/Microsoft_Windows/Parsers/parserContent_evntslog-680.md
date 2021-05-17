@@ -10,12 +10,12 @@ Name = evntslog-680
   Conditions = [ """(680)""", """Logon attempt by:""" ]
   Fields = [ 
     """({event_name}Logon attempt)""",
-	"""exabeam_host=({host}[\w.\-]+)""",
-        """({time}\w+ \d{1,2} [\d:]+ \d{1,100}):""",
-	"""\d{4}:[\s/]([^/]+)\/Security""",
+	"""exabeam_host=({host}[\w.\-]{1,2000})""",
+        """({time}\w+ \d{1,2} [\d:]{1,2000} \d{1,100}):""",
+	"""\d{4}:[\s/]([^/]{1,2000})\/Security""",
 	"""/Security \(({event_code}680)\)""",
-	"""Logon account:\s{1,100}({user}[^@]+?)(?:@({domain}[^\s.]+)[^\s]*)?\s{1,100}Source Workstation:\s{1,100}({dest_host}[^\s.]+)""",
-	"""Error Code:\s{1,100}({result_code}[^\s]+)"""
+	"""Logon account:\s{1,100}({user}[^@]{1,2000}?)(?:@({domain}[^\s.]{1,2000})[^\s]{0,2000})?\s{1,100}Source Workstation:\s{1,100}({dest_host}[^\s.]{1,2000})""",
+	"""Error Code:\s{1,100}({result_code}[^\s]{1,2000})"""
   ]
 }
 ```

@@ -10,13 +10,13 @@ Name = syslog-liebsoft-account-switch
     Conditions = [ """sEventID="EVENT_ID_PASSWORD_RETRIEVED"""","""<Event"""]
     Fields = [
     """dtPostTime="({time}\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})""",
-    """sLoginName="(({domain}[^"]+)\\)?({user}[^"]+)""",
-    """sAccountName"\s{1,100}value="({account}[^"]+)""",
-    """sIpAddress="({src_ip}[^"]+)""",
-    """sOriginatingSystem="({host}[^"]+)""",
-    """sOriginatingSystem="({dest_host}[^"]+)""",
-    """dwAppSpecificEventID="({event_code}[^"]+)""",
-    """sNamespace"\s{1,100}value="({account_domain}[^"]+)"""
+    """sLoginName="(({domain}[^"]{1,2000})\\)?({user}[^"]{1,2000})""",
+    """sAccountName"\s{1,100}value="({account}[^"]{1,2000})""",
+    """sIpAddress="({src_ip}[^"]{1,2000})""",
+    """sOriginatingSystem="({host}[^"]{1,2000})""",
+    """sOriginatingSystem="({dest_host}[^"]{1,2000})""",
+    """dwAppSpecificEventID="({event_code}[^"]{1,2000})""",
+    """sNamespace"\s{1,100}value="({account_domain}[^"]{1,2000})"""
     ]
   }
 ```

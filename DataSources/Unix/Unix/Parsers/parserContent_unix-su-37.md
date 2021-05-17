@@ -10,7 +10,7 @@ Name = unix-su-37
   Conditions = [ """ su: from """, """ Message forwarded from """]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """Message forwarded from (::ffff:)?({host}[^\s:]+)""",
+    """Message forwarded from (::ffff:)?({host}[^\s:]{1,2000})""",
     """({event_code}su)""",
     """su: from ({user}\w+) to ({account}\w+) at ({process_directory}.*?)\?*\s{0,100}$"""
   ]

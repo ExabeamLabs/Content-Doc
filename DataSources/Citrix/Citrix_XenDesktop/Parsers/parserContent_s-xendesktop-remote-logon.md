@@ -9,17 +9,17 @@ Name = s-xendesktop-remote-logon
   TimeFormat = "MM/dd/yyyy HH:mm:ss z"
   Conditions = [ """ DNSName="""", """ HostedMachineName="""", """ MachineSummaryState=""""]
   Fields = [
-    """\sStartTime="({time}[^"]+?)"""",
-    """\sDNSName="({dest_host}[^"]+?)"""",
-    """\sIPAddress="({dest_ip}[^"]+?)"""",
-    """\sLaunchedViaHostName="({src_host}[^"]+?)"""",
-    """\sLaunchedViaIP="({src_ip}[^"]+?)"""",
-    """\sClientName="({src_host}(?!HTML-)[^"]+?)"""",
-    """\sClientAddress="({src_ip}(?!127\.0\.0\.1|0\.0\.0\.0|::0)[^"]+?)"""",
-    """\sProtocol="({logon_type_text}[^"]+?)"""",
-    """\sCatalogName="({catalog}[^"]+?)"""",
-    """\sUserName="(({domain}[^"]+)\\)?({user}[^"]+?)"""",
-    """\sUserSID="({user_sid}[^"]+?)"""",
+    """\sStartTime="({time}[^"]{1,2000}?)"""",
+    """\sDNSName="({dest_host}[^"]{1,2000}?)"""",
+    """\sIPAddress="({dest_ip}[^"]{1,2000}?)"""",
+    """\sLaunchedViaHostName="({src_host}[^"]{1,2000}?)"""",
+    """\sLaunchedViaIP="({src_ip}[^"]{1,2000}?)"""",
+    """\sClientName="({src_host}(?!HTML-)[^"]{1,2000}?)"""",
+    """\sClientAddress="({src_ip}(?!127\.0\.0\.1|0\.0\.0\.0|::0)[^"]{1,2000}?)"""",
+    """\sProtocol="({logon_type_text}[^"]{1,2000}?)"""",
+    """\sCatalogName="({catalog}[^"]{1,2000}?)"""",
+    """\sUserName="(({domain}[^"]{1,2000})\\)?({user}[^"]{1,2000}?)"""",
+    """\sUserSID="({user_sid}[^"]{1,2000}?)"""",
   ]
   DupFields = ["dest_ip->host", "dest_host->host"]
 }

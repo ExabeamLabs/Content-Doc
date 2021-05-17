@@ -9,14 +9,14 @@ Name = securityexpert-badge-access
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """UserID="""", """EventID=""", """EventName="""", """LoggedTime="""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """LoggedTime="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """DoorName="({location_door}[^"]+)""",
-    """UserID="({badge_id}[^"]+)""",
-    """UserName="({user}[^"\s]+)"""",
-    """UserName="({user_fullname}[^"\s,]+\s{1,100}[^",]+)"""",
-    """EventName="({event_name}[^"]+?)\s{0,100}"""",
-    """ControllerName="({device_name}[^"]+)""",
+    """DoorName="({location_door}[^"]{1,2000})""",
+    """UserID="({badge_id}[^"]{1,2000})""",
+    """UserName="({user}[^"\s]{1,2000})"""",
+    """UserName="({user_fullname}[^"\s,]{1,2000}\s{1,100}[^",]{1,2000})"""",
+    """EventName="({event_name}[^"]{1,2000}?)\s{0,100}"""",
+    """ControllerName="({device_name}[^"]{1,2000})""",
   ]
 }
 ```

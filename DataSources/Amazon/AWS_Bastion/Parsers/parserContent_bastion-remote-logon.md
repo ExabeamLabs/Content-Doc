@@ -10,10 +10,8 @@ Name = bastion-remote-logon
   Conditions = [ """bastion:""", """logging onto""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\d\d:\d\d:\d\d\s{1,100}({host}[^\s]+)\s{1,100}bastion:""",
+    """\d\d:\d\d:\d\d\s{1,100}({host}[^\s]{1,2000})\s{1,100}bastion:""",
     """({event_name}logging onto)""",
-    """bastion:({hostname}[^:]+):({user}[^:]+):\s""",
-    """([^,]+,){2}\s{0,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""" 
-  ]
-}
+    """bastion:({hostname}[^:]{1,2000}):({user}[^:]{1,2000}):\s""",
+    """([^,]{1,2000}
 ```

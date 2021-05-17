@@ -9,17 +9,17 @@ Name = s-4740-1
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"
   Conditions = [ """EventCode=4740""", """EventType=""", """A user account was locked out""" ]
   Fields = [
-    """({host}[\w\-.]+)\s{1,100}({time}\d{1,100}\/\d{1,100}\/\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(am|AM|pm|PM))""",
-    """ComputerName=({dest_host}[\w\-.]+)""",
+    """({host}[\w\-.]{1,2000})\s{1,100}({time}\d{1,100}\/\d{1,100}\/\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(am|AM|pm|PM))""",
+    """ComputerName=({dest_host}[\w\-.]{1,2000})""",
     """({event_code}4740)""",
     """({event_name}A user account was locked out)"""
-    """RecordNumber=({record_id}[^;"]+)""",
-    """Keywords=({outcome}[^;"]+)""",
-    """Subject=.*?Account Name=({caller_user}[^;"\s]+)""",
-    """Subject=.*?Account Domain=({caller_domain}[^;"\s]+)""",
-    """Logon ID=({logon_id}[^;"\s]+)""",
-    """Security ID=({user_sid}[^;"]+);Account Name=({user}[^;"\s]+);Additional Information=""",
-    """Caller Computer Name=\\*({src_host}[\w\-.]+)""",
+    """RecordNumber=({record_id}[^;"]{1,2000})""",
+    """Keywords=({outcome}[^;"]{1,2000})""",
+    """Subject=.*?Account Name=({caller_user}[^;"\s]{1,2000})""",
+    """Subject=.*?Account Domain=({caller_domain}[^;"\s]{1,2000})""",
+    """Logon ID=({logon_id}[^;"\s]{1,2000})""",
+    """Security ID=({user_sid}[^;"]{1,2000});Account Name=({user}[^;"\s]{1,2000});Additional Information=""",
+    """Caller Computer Name=\\*({src_host}[\w\-.]{1,2000})""",
   ]
   DupFields=[ "caller_domain->domain" ]
 }

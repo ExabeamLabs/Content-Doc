@@ -10,9 +10,9 @@ Name = securelink-app-login
     Conditions = [ "SecureLink:","AUDIT:","""connected to Application"""]
     Fields = [
       """exabeam_endTime=({time}\d{1,100})""",
-      """exabeam_host=({host}[^\s]+)""",
-      """connected to Application ({app}[^.]+)""",
-      """AUDIT:.+?\(({user_email}[^@]+@({email_domain}[^)]+))\)"""
+      """exabeam_host=({host}[^\s]{1,2000})""",
+      """connected to Application ({app}[^.]{1,2000})""",
+      """AUDIT:.+?\(({user_email}[^@]{1,2000}@({email_domain}[^)]{1,2000}))\)"""
     ]
   }
 ```

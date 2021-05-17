@@ -10,16 +10,16 @@ Name = oracle-db-query-3
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """"OracleFGA"""", """"sqlText":""" ]
   Fields = [
-    """exabeam_host=({host}[\w.\-]+)""",
-    """"objName":"({database_object}[^"]+)""",
+    """exabeam_host=({host}[\w.\-]{1,2000})""",
+    """"objName":"({database_object}[^"]{1,2000})""",
     """"sqlText":"({db_query}.*?)","""",
-    """"objSchema":"({schema}[^"]+)""",
+    """"objSchema":"({schema}[^"]{1,2000})""",
     """"@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
-    """"srcHostname":"(({domain}[^"\\\/]+)[\\\/]+)?({src_host}[^"]+)""",
-    """"action":"({db_operation}[^"]+)""",
-    """"instanceName":"({database_name}[^"]+)""",
-    """"suUserID":"({os_user}[^"]+)""",
-    """"userID":"({db_user}[^"]+)""",
+    """"srcHostname":"(({domain}[^"\\\/]{1,2000})[\\\/]{1,2000})?({src_host}[^"]{1,2000})""",
+    """"action":"({db_operation}[^"]{1,2000})""",
+    """"instanceName":"({database_name}[^"]{1,2000})""",
+    """"suUserID":"({os_user}[^"]{1,2000})""",
+    """"userID":"({db_user}[^"]{1,2000})""",
   ]
   DupFields = [ "os_user->user" ]
 }

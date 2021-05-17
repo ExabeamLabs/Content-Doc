@@ -11,13 +11,13 @@ Name = raw-4779
   Fields = [
     """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """({event_name}A session was disconnected from a Window Station)""",
-    """<Computer>({host}[^<]+)</Computer>""",
+    """<Computer>({host}[^<]{1,2000})</Computer>""",
     """({event_code}4779)""",
-    """Account Name(:|=)\s{0,100}({user}[^\s;]+)[\s;]*Account Domain(:|=)""",
-    """Account Domain(:|=)\s{0,100}({domain}[^\s;]+)[\s;]*Logon ID(:|=)""",
-    """Logon ID(:|=)\s{0,100}({logon_id}[^\s;]+)""",
-    """Service Name(:|=)\s{0,100}({dest_host}.+?)[\s;]*Service ID""",
-    """Client Address(:|=)\s{0,100}(::[\w]+:)?(0.0.0.0|({src_ip}[a-fA-F:\d.]+))"""
+    """Account Name(:|=)\s{0,100}({user}[^\s;]{1,2000})[\s;]{0,2000}Account Domain(:|=)""",
+    """Account Domain(:|=)\s{0,100}({domain}[^\s;]{1,2000})[\s;]{0,2000}Logon ID(:|=)""",
+    """Logon ID(:|=)\s{0,100}({logon_id}[^\s;]{1,2000})""",
+    """Service Name(:|=)\s{0,100}({dest_host}.+?)[\s;]{0,2000}Service ID""",
+    """Client Address(:|=)\s{0,100}(::[\w]{1,2000}:)?(0.0.0.0|({src_ip}[a-fA-F:\d.]{1,2000}))"""
   ]
 }
 ```

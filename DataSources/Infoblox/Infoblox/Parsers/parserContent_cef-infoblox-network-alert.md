@@ -10,15 +10,15 @@ Name = cef-infoblox-network-alert
   Conditions = [ """CEF:""", """|Infoblox|""", """ act="ALERT""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """CEF:([^\|]*\|){4}({rule_id}[^\|]+)\|({alert_name}[^\|]+)\|({alert_severity}[^\|]+)""",
-    """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]+)\s""",
-    """act="({outcome}[^"]+)""",
-    """cat="({activity}[^"]+)""",
+    """CEF:([^\|]{0,2000}\|){4}({rule_id}[^\|]{1,2000})\|({alert_name}[^\|]{1,2000})\|({alert_severity}[^\|]{1,2000})""",
+    """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]{1,2000})\s""",
+    """act="({outcome}[^"]{1,2000})""",
+    """cat="({activity}[^"]{1,2000})""",
     """spt=({src_port}\d{1,100})""",
     """dpt=({dest_port}\d{1,100})""",
-    """src=({src_ip}[A-Fa-f:\d.]+)""",
-    """dst=({dest_ip}[A-Fa-f:\d.]+)""",
-    """fqdn=({src_host}[\w\-.]+)""",
+    """src=({src_ip}[A-Fa-f:\d.]{1,2000})""",
+    """dst=({dest_ip}[A-Fa-f:\d.]{1,2000})""",
+    """fqdn=({src_host}[\w\-.]{1,2000})""",
   ]
 }
 ```

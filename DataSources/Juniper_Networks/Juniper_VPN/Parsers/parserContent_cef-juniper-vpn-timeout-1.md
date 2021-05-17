@@ -10,9 +10,9 @@ Name = cef-juniper-vpn-timeout-1
   Conditions = [ """CEF:""", """|Juniper|""", """|Session timed out|""" ]
   Fields = [
 	"""\Wrt=({time}\d{1,100})""",
-	"""\Wdvchost=({host}[\w\-.]+)""",
-	"""\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
-	"""\Wsuser=(System|({user}[^\s]+))""",
+	"""\Wdvchost=({host}[\w\-.]{1,2000})""",
+	"""\Wsrc=({src_ip}[A-Fa-f:\d.]{1,2000})""",
+	"""\Wsuser=(System|({user}[^\s]{1,2000}))""",
     """\Wsproc=({realm}.+?)\s{1,100}\w+=""",
   ]
   DupFields = [ "host->dest_host" ]

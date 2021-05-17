@@ -10,20 +10,20 @@ Name = varonis-dlp-alert-1
   Conditions = [ """|Varonis Inc.|""", """|DatAdvantage|""", """cat=Alert""" ]
   Fields = [
     """\|rt=({time}\w+ \d{1,100} \d\d\d\d \d\d:\d\d:\d\d)""",
-    """({host}[\w.\-]+)\s{1,100}CEF:""",
-    """\d\d:\d\d\s({host}[^\s]+)\sVaronis-DatAlert:""",
-    """\sdvchost=(?:|({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]+))\s\w+=""",
-    """\sduser=(?:|((Abstract|({domain}[^\\]+))\\+)?(Nobody|SYSTEM|({user}[^\\\s,]+?)))\s{1,100}\w+=""",
-    """\sduser=(?:|((Abstract|({domain}[^\\]+))\\+)?(Nobody|SYSTEM|({user_fullname}[^\\\s,=]+\s{1,100}[^\\,=]+?)))\s{1,100}\w+=""",
-    """\sduser=(?:|(({domain}[^\\]+)\\+)?({user_lastname}[^\\,=]+?),\s{0,100}({user_firstname}[^\\,=]+))\s{1,100}\w+=""",
-    """\|Varonis Inc.\|([^|]*\|){3}({accesses}[^|]+)\|""",
+    """({host}[\w.\-]{1,2000})\s{1,100}CEF:""",
+    """\d\d:\d\d\s({host}[^\s]{1,2000})\sVaronis-DatAlert:""",
+    """\sdvchost=(?:|({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]{1,2000}))\s\w+=""",
+    """\sduser=(?:|((Abstract|({domain}[^\\]{1,2000}))\\+)?(Nobody|SYSTEM|({user}[^\\\s,]{1,2000}?)))\s{1,100}\w+=""",
+    """\sduser=(?:|((Abstract|({domain}[^\\]{1,2000}))\\+)?(Nobody|SYSTEM|({user_fullname}[^\\\s,=]{1,2000}\s{1,100}[^\\,=]{1,2000}?)))\s{1,100}\w+=""",
+    """\sduser=(?:|(({domain}[^\\]{1,2000})\\+)?({user_lastname}[^\\,=]{1,2000}?),\s{0,100}({user_firstname}[^\\,=]{1,2000}))\s{1,100}\w+=""",
+    """\|Varonis Inc.\|([^|]{0,2000}\|){3}({accesses}[^|]{1,2000})\|""",
     """\Wact=({accesses}.+?)\s{1,100}(\w+=|$)""",
     """\scs2=\s{0,100}(?:|({alert_name}.+?))(\s{1,100}likely|\s{1,100}\w+=)""",
     """\sfilePath=(?:|({additional_info}.+?))\s{1,100}\w+=""",
-    """\s(fname|filePath)=({file_path}({file_parent}[^=]*?[\\\/]+)?({file_name}[^\\\/=]+?(\.({file_ext}\w+))?))\s{1,100}\w+=""",
-    """\sdhost=(?:|({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]+))\s{1,100}\w+=""",
+    """\s(fname|filePath)=({file_path}({file_parent}[^=]{0,2000}?[\\\/]{1,2000})?({file_name}[^\\\/=]{1,2000}?(\.({file_ext}\w+))?))\s{1,100}\w+=""",
+    """\sdhost=(?:|({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]{1,2000}))\s{1,100}\w+=""",
     """\soutcome=(?:|({outcome}.+?))\s{1,100}\w+=""",
-    """\|Varonis Inc.\|([^\|]+\|){4}({alert_severity}\d{1,100})\|"""
+    """\|Varonis Inc.\|([^\|]{1,2000}\|){4}({alert_severity}\d{1,100})\|"""
   ]
     DupFields = [ "alert_name->alert_type" ]
   SOAR {

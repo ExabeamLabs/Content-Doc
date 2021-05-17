@@ -10,20 +10,20 @@ Name = s-azure-managed-identity
   Conditions = ["""operationName":"MICROSOFT.MANAGEDIDENTITY"""]
   Fields = [
      """time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""
-     """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
+     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[^\s]{1,2000})""",
      """({service}MICROSOFT.MANAGEDIDENTITY)""",
-     """"MICROSOFT.MANAGEDIDENTITY\/({activity}[^"]+)""",
-     """ipaddr":"({src_ip}[^"]+)""",
-     """callerIpAddress":"({src_ip}[^"]+)""",
-     """surname":"({user_lastname}[^"]+)""",
-     """givenname":"({user_firstname}[^"]+)""",
-     """claims\/name":"({user_email}[^@]+@[^"]+)""",
-     """identity/claims/nameidentifier":"({user}[^"]+)"""
-     """roleDefinitionId":"({role}[^"]+)""",
-     """Microsoft.Authorization/policyDefinitions/({policy}[^\/\\"]+)""",
-     """resultType":"({outcome}[^"]+)"""
-     """resourceId":".*\/RESOURCEGROUPS\/({account_id}[^\/]+)"""
-         """\[Namespace:\s{0,100}({event_hub_namespace}\S+) ; EventHub name:\s{0,100}({event_hub_name}[\w-]+)"""
+     """"MICROSOFT.MANAGEDIDENTITY\/({activity}[^"]{1,2000})""",
+     """ipaddr":"({src_ip}[^"]{1,2000})""",
+     """callerIpAddress":"({src_ip}[^"]{1,2000})""",
+     """surname":"({user_lastname}[^"]{1,2000})""",
+     """givenname":"({user_firstname}[^"]{1,2000})""",
+     """claims\/name":"({user_email}[^@]{1,2000}@[^"]{1,2000})""",
+     """identity/claims/nameidentifier":"({user}[^"]{1,2000})"""
+     """roleDefinitionId":"({role}[^"]{1,2000})""",
+     """Microsoft.Authorization/policyDefinitions/({policy}[^\/\\"]{1,2000})""",
+     """resultType":"({outcome}[^"]{1,2000})"""
+     """resourceId":".*\/RESOURCEGROUPS\/({account_id}[^\/]{1,2000})"""
+         """\[Namespace:\s{0,100}({event_hub_namespace}\S+) ; EventHub name:\s{0,100}({event_hub_name}[\w-]{1,2000})"""
    ]
 DupFields= ["event_hub_namespace->host"]
 }

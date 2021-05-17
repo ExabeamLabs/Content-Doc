@@ -10,8 +10,8 @@ Name = foxt-local-logon
   Conditions = [ "login - login_ok", "Successful login" ]
   Fields = [
     """clientTime="{0,20}({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)Z"{0,20}""",
-    """authHost="{0,20}({host}[^"]+)"""",
-    """user="{0,20}({user}[^"]+)""""
+    """authHost="{0,20}({host}[^"]{1,2000})"""",
+    """user="{0,20}({user}[^"]{1,2000})""""
   ]
   DupFields = [ "host->dest_host" ]
 }

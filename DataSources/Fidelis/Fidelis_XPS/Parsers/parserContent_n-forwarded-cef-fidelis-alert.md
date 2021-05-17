@@ -10,12 +10,12 @@ Name = n-forwarded-cef-fidelis-alert
   Conditions = [ """|McAfee|ESM|""", """|429-""" ]
   Fields = [
 	"""\srt=({time}\d{1,100})""",
-	"""\|McAfee\|ESM\|[^|]+?\|[^|]+?\|({alert_name}.+?)\|""",
-	"""\|McAfee\|ESM\|[^|]+?\|[^|]+?\|[^|]*\s({alert_type}[^\s]+)\s({alert_name}(FSS_|Malware|DNS).+?)\|""",
-	"""\|McAfee\|ESM\|[^|]+?\|[^|]+?\|[^|]+?\|({alert_severity}.+?)\|""",
+	"""\|McAfee\|ESM\|[^|]{1,2000}?\|[^|]{1,2000}?\|({alert_name}.+?)\|""",
+	"""\|McAfee\|ESM\|[^|]{1,2000}?\|[^|]{1,2000}?\|[^|]{0,2000}\s({alert_type}[^\s]{1,2000})\s({alert_name}(FSS_|Malware|DNS).+?)\|""",
+	"""\|McAfee\|ESM\|[^|]{1,2000}?\|[^|]{1,2000}?\|[^|]{1,2000}?\|({alert_severity}.+?)\|""",
 	"""\sdeviceTranslatedAddress=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
 	"""\sexternalId=({alert_id}\d{1,100})""",
-	"""\sshost=({src_host}[^\s|]+)""",
+	"""\sshost=({src_host}[^\s|]{1,2000})""",
 	"""\sspt=({src_port}\d{1,100})""",
 	"""\sdpt=({dest_port}\d{1,100})""",
 	"""\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",

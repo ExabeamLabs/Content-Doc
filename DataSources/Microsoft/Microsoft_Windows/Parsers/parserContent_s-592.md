@@ -10,7 +10,7 @@ Name = s-592
     TimeFormat = "MM/dd/yyyy HH:mm:ss a"
     Conditions = [ """EventCode=592""", """EventType=""", """A new process has been created""" ]
     Fields = [
-      """exabeam_host=({host}[\w.\-]+)""",
+      """exabeam_host=({host}[\w.\-]{1,2000})""",
       """({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d (am|AM|pm|PM))""",
       """ComputerName=({dest_host}.+?)\s""",
       """({event_code}592)""",
@@ -19,7 +19,7 @@ Name = s-592
       """Logon\s{0,100}ID:\s{0,100}(?:-|({logon_id}.+?))\s{0,100}$""",
       """New\s{0,100}Process\s{0,100}ID:\s{0,100}(?:-|({process_guid}\d{1,100}))\s""",
       """Creator\s{0,100}Process\s{0,100}ID:\s{0,100}(?:-|({parent_process_guid}\d{1,100}))\s""",
-      """Image\s{0,100}File\s{0,100}Name:\s{0,100}({process}({directory}(?:[^\s]+)?[\\\/])?({process_name}[^\\\/\s]+))\s""",
+      """Image\s{0,100}File\s{0,100}Name:\s{0,100}({process}({directory}(?:[^\s]{1,2000})?[\\\/])?({process_name}[^\\\/\s]{1,2000}))\s""",
       """Image\s{0,100}File\s{0,100}Name:\s{0,100}(?:-|({path}.+?))\s{1,100}Creator"""
       """({event_name}A new process has been created)"""
     ]

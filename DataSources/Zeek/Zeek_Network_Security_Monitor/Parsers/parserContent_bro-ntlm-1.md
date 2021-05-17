@@ -10,16 +10,16 @@ Name = bro-ntlm-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
   Conditions = [ """"ntlm",""", """"id.orig_h":""", """"id.resp_h":""" ]
   Fields = [
-    """exabeam_host=([^@=]+@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^@=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"ts":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3})""",
-    """"uid":"({conn_id}[^"]+)""",
-    """"id\.orig_h":"({src_ip}[a-fA-F\d.:]+)""",
+    """"uid":"({conn_id}[^"]{1,2000})""",
+    """"id\.orig_h":"({src_ip}[a-fA-F\d.:]{1,2000})""",
     """"id\.orig_p":({src_port}\d{1,100})""",
-    """"id\.resp_h":"({dest_ip}[a-fA-F\d.:]+)""",
+    """"id\.resp_h":"({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """"id\.resp_p":({dest_port}\d{1,100})""",
-    """"hostname":"?({src_host}[^,"]+)""",
-    """"username":"?({user}[^,"]+)""",
-    """"success":({outcome}[^,]+)""",
+    """"hostname":"?({src_host}[^,"]{1,2000})""",
+    """"username":"?({user}[^,"]{1,2000})""",
+    """"success":({outcome}[^,]{1,2000})""",
   ]
 }
 ```

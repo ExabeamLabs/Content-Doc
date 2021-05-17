@@ -9,8 +9,6 @@ Name = paloalto-network-connection
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
   Conditions = [ """,THREAT,url,"""]
   Fields = [
-    """exabeam_host=({host}[^\s]+)""",
-    """THREAT,[^,]+,[^,]+,({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}Z),({src_ip}[^,]*?),({dest_ip}[^,]*?),({src_translated_ip}[^,]+),({dest_translated_ip}[^,]+)""",
-    """THREAT,url,([^,]*,){26}("{1,20})?.+?({web_domain}[a-z0-9\-]+\.[a-z0-9\-]{2,})[\\\/\s:"]"""
-    """THREAT,([^,]*,){7}({rule}.+?)\s{0,100}
+    """exabeam_host=({host}[^\s]{1,2000})""",
+    """THREAT,[^,]{1,2000}
 ```

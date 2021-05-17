@@ -10,7 +10,7 @@ Name = cef-github-app-activity
   Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=GitHub""" ]
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ) \S+ Skyformation -""",
-    """\Wsuser=({user}[^\s]+)""",
+    """\Wsuser=({user}[^\s]{1,2000})""",
     """\WflexString1=({activity}.+?)(?:Event|)\s{0,100}(\w+=|$)""",
     """\WrequestClientApplication=({app}.+?)\s{0,100}(\w+=|$)""",
     """\Wdproc=({resource}.+?)\s{0,100}(\w+=|$)""",

@@ -9,11 +9,11 @@ Name = cef-securesphere-app-login-failed
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ """|Imperva Inc.|SecureSphere""", """cat=SystemEvent""", """|Login failed|""" ]
   Fields = [
-    """exabeam_host=({host}[\w\-.]+)""",
+    """exabeam_host=({host}[\w\-.]{1,2000})""",
     """\srt=({time}\w+ \d{1,100} \d{4} \d\d:\d\d:\d\d)""",
     """\ssuser=({user}.+?)\s{0,100}(\w+=|$)""",
-    """\|Login failed for user ({user}[^\s\(\)]+)""",
-    """\|Login failed for user.*?\(IP: ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\) Reason: ({failure_reason}[^\|]+)\|"""
+    """\|Login failed for user ({user}[^\s\(\)]{1,2000})""",
+    """\|Login failed for user.*?\(IP: ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\) Reason: ({failure_reason}[^\|]{1,2000})\|"""
   ]
 }
 ```

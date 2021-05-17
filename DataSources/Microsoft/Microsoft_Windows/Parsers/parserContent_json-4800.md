@@ -10,7 +10,7 @@ Name = json-4800
   Conditions = [ """"EventID":4800""", """The workstation was locked""" ]
   Fields = [
     """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """"Hostname":"({host}[^"]+)""",
+    """"Hostname":"({host}[^"]{1,2000})""",
     """({event_name}The workstation was locked)""",
     """({event_code}4800)""",
     """Account Name:\s{0,100}((\\)[rnt])*({user}.+?)((\\)[rnt])*\s{0,100}Account Domain""",

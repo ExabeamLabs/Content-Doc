@@ -5,7 +5,7 @@ Name = cef-palo-alto-networks-setip
   DataType = "vpn-set-ip"
   Conditions = [ """|Palo Alto Networks|PAN-OS|""", """|client switch to SSL tunnel mode succeeded|""" ]
   Fields = ${PaloAltoParserTemplates.cef-palo-alto-networks-firewall.Fields}[
-    """Private IP:\s{0,100}({src_translated_ip}[a-fA-F\d.:]+[^\.\s])""",
+    """Private IP:\s{0,100}({src_translated_ip}[a-fA-F\d.:]{1,2000}[^\.\s])""",
   ]
 }
 cef-palo-alto-networks-firewall = {
@@ -18,12 +18,12 @@ cef-palo-alto-networks-firewall = {
     """\sdvchost=({host}.+?)\s{1,100}(\w+=|$)""",
     """\Wrt=({time}\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}\w+)""",
     """\srt=({time}\d{1,100})\s{1,100}(\w+=|$)""",
-    """\sduser=(?=[^\s]+@[^\s]+)({user}[^\s@]+)@({domain}[^\s@]+)\s{1,100}(\w+=|$)""",
-    """\sduser=(?!\S+@\S+)(({domain}[^\\\s]+)?\\+)?(|({user}[^\\\s]+))\s{1,100}(\w+=|$)""",
-    """\ssuser=(?=[^\s]+@[^\s]+)({user}[^\s@]+)@({domain}[^\s@]+)\s{1,100}(\w+=|$)""",
-    """\ssuser=(?!\S+@\S+)(({domain}[^\\\s]+)?\\+)?(|({user}[^\\\s]+))\s{1,100}(\w+=|$)""",
+    """\sduser=(?=[^\s]{1,2000}@[^\s]{1,2000})({user}[^\s@]{1,2000})@({domain}[^\s@]{1,2000})\s{1,100}(\w+=|$)""",
+    """\sduser=(?!\S+@\S+)(({domain}[^\\\s]{1,2000})?\\+)?(|({user}[^\\\s]{1,2000}))\s{1,100}(\w+=|$)""",
+    """\ssuser=(?=[^\s]{1,2000}@[^\s]{1,2000})({user}[^\s@]{1,2000})@({domain}[^\s@]{1,2000})\s{1,100}(\w+=|$)""",
+    """\ssuser=(?!\S+@\S+)(({domain}[^\\\s]{1,2000})?\\+)?(|({user}[^\\\s]{1,2000}))\s{1,100}(\w+=|$)""",
     """({log_type}TRAFFIC)""",
-    """\|({subtype}[^\|]+)\|TRAFFIC""",
+    """\|({subtype}[^\|]{1,2000})\|TRAFFIC""",
     """\scs1=({rule}.+?)\s{1,100}(\w+=|$)""",
     """\sshost=({src_host}.+?)\s{1,100}(\w+=|$)""",
     """\sdhost=({dest_host}.+?)\s{1,100}(\w+=|$)""",
@@ -40,8 +40,8 @@ cef-palo-alto-networks-firewall = {
     """\scs5=({dest_network_zone}.+?)\s{1,100}(\w+=|$)""",
     """\scs6=({profile}.+?)\s{1,100}(\w+=|$)""",
     """\sproto=({protocol}.+?)\s{1,100}(\w+=|$)""",
-    """\sin=({bytes_in}[\d.]+)\s{1,100}(\w+=|$)""",
-    """\sout=({bytes_out}[\d.]+)\s{1,100}(\w+=|$)""",
+    """\sin=({bytes_in}[\d.]{1,2000})\s{1,100}(\w+=|$)""",
+    """\sout=({bytes_out}[\d.]{1,2000})\s{1,100}(\w+=|$)""",
     """\scs2=({category}.+?)\s{1,100}(\w+=|$)""",
     """\sseverity=({severity}.+?)\s{1,100}(\w+=|$)""",
     """\sdeviceDirection=({direction}.+?)\s{1,100}(\w+=|$)""",

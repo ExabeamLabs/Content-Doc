@@ -10,9 +10,9 @@ Name = cef-rangeraudit-failed-login
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """ranger""", """Login Unsuccessful:""", """Ip Address:""" ]
   Fields = [
-    """\[({host}[^\]]+)""",
+    """\[({host}[^\]]{1,2000})""",
     """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """Ip Address:({src_ip}[A-Fa-f:\d.]+)\s{0,100}\|\s{0,100}({failure_reason}.+?)\s{0,100}$""",
+    """Ip Address:({src_ip}[A-Fa-f:\d.]{1,2000})\s{0,100}\|\s{0,100}({failure_reason}.+?)\s{0,100}$""",
     """({app}ranger)""",
   ]
 }

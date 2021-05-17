@@ -9,15 +9,15 @@ Name = s-mcafee-email-dlp-alert-out
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """OUTGOING_EMAIL""", """DLP: Email Protection""" ]
   Fields = [
-     """UserName="({domain}[^\\]+)\\({user}[^"]+)"""",
-     """ComputerName="({src_host}[^"]+)"""",
-     """EMAIL_RECIPIENT.+?>({recipient}[^<]+)<""",
-     """EMAIL_SUBJECT.+?>({subject}[^<]+)<""",
-     """FILE_NAME.+?>({attachment}[^<]+)<""",
-     """FILE_NAME.+?size="({bytes}[^"]+)""",
+     """UserName="({domain}[^\\]{1,2000})\\({user}[^"]{1,2000})"""",
+     """ComputerName="({src_host}[^"]{1,2000})"""",
+     """EMAIL_RECIPIENT.+?>({recipient}[^<]{1,2000})<""",
+     """EMAIL_SUBJECT.+?>({subject}[^<]{1,2000})<""",
+     """FILE_NAME.+?>({attachment}[^<]{1,2000})<""",
+     """FILE_NAME.+?size="({bytes}[^"]{1,2000})""",
      """UTCTime="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-     """Evidence="({recipients}[^=]+@[^,]+),""",
-     """exabeam_host=({host}[^\s]+)"""
+     """Evidence="({recipients}[^=]{1,2000}@[^,]{1,2000}),""",
+     """exabeam_host=({host}[^\s]{1,2000})"""
   ]
 }
 ```

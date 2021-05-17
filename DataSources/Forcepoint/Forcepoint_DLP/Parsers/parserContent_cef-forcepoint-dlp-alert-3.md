@@ -9,15 +9,15 @@ Name = cef-forcepoint-dlp-alert-3
   TimeFormat = "dd MMM'.' yyyy',' HH:mm:ss"
   Conditions = ["""|Forcepoint|Forcepoint DLP|""" , """|DLP Syslog|""", """caseClassification="""]
   Fields = [
-     """caseDescription=({additional_info}({user_lastname}[^,<]+),\s{0,100}({user_firstname}[^\s,]+).+?)\scaseDate""",
+     """caseDescription=({additional_info}({user_lastname}[^,<]{1,2000}),\s{0,100}({user_firstname}[^\s,]{1,2000}).+?)\scaseDate""",
      """caseDescription=({additional_info}({user}^((?!Unknown source).)*<.+?>).+?)\scaseDate""",
-     """({host}[\w\-.]+)\s{1,100}CEF:""",
+     """({host}[\w\-.]{1,2000})\s{1,100}CEF:""",
      """caseDateAndTime=({time}\d\d\s{0,100}\w{3}\.\s{0,100}\d\d\d\d,\s{0,100}\d\d:\d\d:\d\d)""",
      """caseClassification=({alert_type}.+?)\s{0,100}numberOfI""",
-     """riskScore=({alert_severity}[^\s]+)\s""",
-     """content to\s{0,100}({target}[^\s]+)""",
+     """riskScore=({alert_severity}[^\s]{1,2000})\s""",
+     """content to\s{0,100}({target}[^\s]{1,2000})""",
      """sent.+?content.+?to\s{0,100}({target}.+?)\."""
-     """content(\s\(.+?\))? to\s{0,100}({target}[^\s]+)(\sin|\.\s)""",
+     """content(\s\(.+?\))? to\s{0,100}({target}[^\s]{1,2000})(\sin|\.\s)""",
      """content(\s\(.+?\))? to\s{0,100}({target}printer\s{0,100}.+?)(\.|\sin\s)"""
      """to ({target}multiple destinations),""",
      """sent\s({file_name}.+?)\scontent""",
