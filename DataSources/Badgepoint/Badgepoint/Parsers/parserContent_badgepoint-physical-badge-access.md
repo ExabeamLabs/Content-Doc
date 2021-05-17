@@ -9,12 +9,12 @@ Name = badgepoint-physical-badge-access
   TimeFormat =  "dd/MM/yyyy:HH:mm:ss z"
   Conditions = [ """<badgepoint_conditions>""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
-    """([^\|]*\|){6}({time}\d\d\/\d\d\/\d\d\d\d:\d\d:\d\d:\d\d \w+)""",
-    """({badge_id}[^\|\s=]+)\|""",
-    """([^\|]*\|){1}({last_name}[^\|]+)\|({first_name}[^\|]+)""",
-    """([^\|]*\|){3}({location_door}[^\|]+\|[^\|]+)""",
-    """([^\|]*\|){5}({outcome}[^\|]+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """([^\|]{0,2000}\|){6}({time}\d\d\/\d\d\/\d\d\d\d:\d\d:\d\d:\d\d \w+)""",
+    """({badge_id}[^\|\s=]{1,2000})\|""",
+    """([^\|]{0,2000}\|){1}({last_name}[^\|]{1,2000})\|({first_name}[^\|]{1,2000})""",
+    """([^\|]{0,2000}\|){3}({location_door}[^\|]{1,2000}\|[^\|]{1,2000})""",
+    """([^\|]{0,2000}\|){5}({outcome}[^\|]{1,2000})""",
   ]
 }
 ```

@@ -6,7 +6,7 @@ Name = s-1102
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"
   Conditions = [ """EventCode=1102""", "The audit log was cleared" ]
   Fields = ${WinParserTemplates.raw-1102.Fields} [
-    """\sComputerName=({host}[\w.\-]+)""",
+    """\sComputerName=({host}[\w.\-]{1,2000})""",
     """({time}\d\d/\d\d/\d\d\d\d \d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM))\s{1,100}"""
   ]
   DupFields = [ "host->dest_host" ]
@@ -16,12 +16,12 @@ raw-1102 = {
   Product = Microsoft Windows
   DataType = "windows-audit"
   Fields = [
-    """exabeam_host=({host}[\w\-.]+)""",
+    """exabeam_host=({host}[\w\-.]{1,2000})""",
     """({event_code}1102)""",
     """({event_name}The audit log was cleared)""",
     """\s{1,100}Account Name:\s{1,100}({user}.+?)\s{1,100}Domain""",
-    """\s{1,100}Domain Name:\s{1,100}({domain}[^\s]+)""",
-    """\s{1,100}Logon ID:\s{1,100}({logon_id}[^\s]+)""",
+    """\s{1,100}Domain Name:\s{1,100}({domain}[^\s]{1,2000})""",
+    """\s{1,100}Logon ID:\s{1,100}({logon_id}[^\s]{1,2000})""",
   ]
 
 ```

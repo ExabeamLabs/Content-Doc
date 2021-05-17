@@ -15,12 +15,5 @@ Name = cef-540
     """\srt=({time}\d{1,100})""",
     """\ssproc=({auth_process}.+?)\s{1,100}\w+=""",
     """\sduser=({user}.+?)\s{1,100}\w+=""",
-    """\sduid=\([^,]+,({logon_id}[^\)]+)""",
-    """\scn1=({logon_type}\d{1,100})""",
-    """\sdvchost=({host}[^\s]+)""",
-    """ dntdom=({domain}[^\s]+)""",
-    """ src=(?:-|({src_ip}[\w:.]+))\s{1,100}\w+="""
-  ]
-  DupFields = [ "host->dest_host" ]
-}
+    """\sduid=\([^,]{1,2000}
 ```

@@ -9,7 +9,7 @@ Name = raw-327
     DataType = "file-close" 
     Conditions = [ """Event ID: 327""","""The database engine detached a database""" ]
     Fields = [
-      """ComputerName(:|=)\s{0,100}({host}[\w.-]+)\s{1,100}({process_name}[^\s]+)\s{1,100}""",
+      """ComputerName(:|=)\s{0,100}({host}[\w.-]{1,2000})\s{1,100}({process_name}[^\s]{1,2000})\s{1,100}""",
       """TimeStamp:\s{0,100}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """Event ID:\s{0,100}({event_code}\d{1,100})""",
       """\(({process_id}\d{1,100}).*\)""",

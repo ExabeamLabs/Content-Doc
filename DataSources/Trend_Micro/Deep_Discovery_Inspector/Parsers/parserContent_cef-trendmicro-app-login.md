@@ -12,9 +12,9 @@ Name = cef-trendmicro-app-login
     """\Wdvc=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdvchost=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wrt=({time}\w+\s{1,100}\d\d \d\d\d\d \d\d:\d\d:\d\d \S+)""",
-    """\Wduser=({user}[^\s]+)""",
+    """\Wduser=({user}[^\s]{1,2000})""",
     """\Woutcome=({outcome}.+?)\s{1,100}(\w+=|$)""",
-    """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
+    """\Wsrc=({src_ip}[a-fA-F\d.:]{1,2000})""",
   ]
 }
 ```

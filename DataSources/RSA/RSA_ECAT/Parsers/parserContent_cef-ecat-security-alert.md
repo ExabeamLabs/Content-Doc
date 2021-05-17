@@ -9,9 +9,9 @@ Name = cef-ecat-security-alert
   TimeFormat = "M/d/yyyy HH:mm:ss a"
   Conditions = [ """|RSA|RSA ECAT|""", """|EcatAlert|""" ]
   Fields = [
-    """CEF([^\|]*\|){4}({alert_type}[^\|]+)""",
+    """CEF([^\|]{0,2000}\|){4}({alert_type}[^\|]{1,2000})""",
     """\sshost=({dest_host}.+?)\s{1,100}(\w+=|$)""",
-    """\ssrc=({dest_ip}[a-fA-F\d.:]+)""",
+    """\ssrc=({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """\sfname=({process_name}.+?)\s{1,100}(\w+=|$)""",
     """\sinstantIOCName=({alert_name}.+?)\s{1,100}(\w+=|$)""",
     """\smachineScore=({alert_severity}\d{1,100})""",

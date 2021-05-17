@@ -10,11 +10,11 @@ Name = symantec-usb-activity
   Conditions = [ """Endpoint Name:""","""Endpoint Server:""", """Policy Violated:""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """Message\s{0,100}=\s{0,100}The user\s{0,100} (?:[^\\]+\\)?({user}[^\s]+)\s{0,100}has""",
-    """\d\d:\d\d:\dd\s{0,100}({host}[^\s]+)""",
-    """\s{0,100}Endpoint Name:\s{0,100}({dest_host}[^\s]+)""",
-    """\s{0,100}Endpoint IP:\s{0,100}\(({dest_ip}[^\)]+)""",
-    """\s{0,100}filename:\s{0,100}({file_name}[^,]+)""",
+    """Message\s{0,100}=\s{0,100}The user\s{0,100} (?:[^\\]{1,2000}\\)?({user}[^\s]{1,2000})\s{0,100}has""",
+    """\d\d:\d\d:\dd\s{0,100}({host}[^\s]{1,2000})""",
+    """\s{0,100}Endpoint Name:\s{0,100}({dest_host}[^\s]{1,2000})""",
+    """\s{0,100}Endpoint IP:\s{0,100}\(({dest_ip}[^\)]{1,2000})""",
+    """\s{0,100}filename:\s{0,100}({file_name}[^,]{1,2000})""",
     """\s{0,100}dir:\s{0,100}({file_parent}.+?)\s{0,100}Device Instance ID:""",
     """\s{0,100}Device Instance ID:\s{0,100}({device_id}.+?)\s{1,100}(\w+=|$)""",
     """\s{0,100}Policy Violated:\s{0,100}({alert_name}.+?),\s{0,100}Date""",

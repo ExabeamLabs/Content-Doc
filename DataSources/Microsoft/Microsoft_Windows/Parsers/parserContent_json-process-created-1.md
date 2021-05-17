@@ -12,16 +12,16 @@ Name = json-process-created-1
     Fields = [
       """"EventTime":({time}\d{1,100})""",
       """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """"Account":"(({domain}[^"]+?)[\\\/]+)?({user}[^"\\\/]+)"""",
+      """"Account":"(({domain}[^"]{1,2000}?)[\\\/]{1,2000})?({user}[^"\\\/]{1,2000})"""",
       """({event_code}4688)""",
-      """"Activity":"({event_name}[^"]+)""",
-      """"Hostname":"({host}[^"]+)""",
-      """"CommandLine":"\s{0,100}({command_line}[^"]+)""",
-      """"NewProcessId":"({process_guid}[^"]+)""",
-      """"NewProcessName":"({process}({directory}[^"]*?[\\\/]+)?({process_name}[^"\\\/]+))"""",
-      """"SubjectLogonId":"({logon_id}[^"]+)""",
-      """"SubjectUserName":"(-|SYSTEM|({user}[^"]+?))"""",
-      """"SubjectDomainName":"(-|({domain}[^"]+?))""""
+      """"Activity":"({event_name}[^"]{1,2000})""",
+      """"Hostname":"({host}[^"]{1,2000})""",
+      """"CommandLine":"\s{0,100}({command_line}[^"]{1,2000})""",
+      """"NewProcessId":"({process_guid}[^"]{1,2000})""",
+      """"NewProcessName":"({process}({directory}[^"]{0,2000}?[\\\/]{1,2000})?({process_name}[^"\\\/]{1,2000}))"""",
+      """"SubjectLogonId":"({logon_id}[^"]{1,2000})""",
+      """"SubjectUserName":"(-|SYSTEM|({user}[^"]{1,2000}?))"""",
+      """"SubjectDomainName":"(-|({domain}[^"]{1,2000}?))""""
     ]
     DupFields = [ "host->dest_host", "directory->process_directory" ]
   }

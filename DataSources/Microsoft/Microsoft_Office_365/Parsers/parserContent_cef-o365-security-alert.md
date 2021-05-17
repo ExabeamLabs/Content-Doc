@@ -9,20 +9,20 @@ Name = cef-o365-security-alert
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """|security-threat-detected|""", """cat=security-alert""", """destinationServiceName=Office 365""","""Security Alert Detected""", """act=detect""" ]
   Fields = [
-    """exabeam_host=({host}[^\s]+)""",
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d{1,100}Z\s{1,100}[\w\-.]+\s{1,100}Skyformation"""
+    """exabeam_host=({host}[^\s]{1,2000})""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d{1,100}Z\s{1,100}[\w\-.]{1,2000}\s{1,100}Skyformation"""
     """({alert_type}({alert_name}IdentityProtection))"""
     """({alert_type}({alert_name}graph-identity-protection-risk-detection))"""
-    """"source":"(generic|({alert_type}[^"]+))"""",
-    """"riskType":"(generic|({alert_name}[^"]+))"""",
-    """"requestId":"({alert_id}[^"]+)"""",
-    """"riskLevel":"({alert_severity}[^"]+)"""",
-    """"riskType":"({threat_category}[^"]+)"""",
-    """"ipAddress":"({src_ip}[A-Fa-f:\d.]+)"""",
-    """\ssuser=({user_email}[^@]+@[^\s]+)\s""",
-    """"userDisplayName":"({user_fullname}[^"]+?)\s{0,100}"""",
-    """"userPrincipalName":"({user_email}[^"@\s]+@[^"@\s]+)"""",
-    """msg=({additional_info}[^=]+?)\s{1,100}(\w+=|$)""",
-    """activity":"({activity}[^"]+)""",
+    """"source":"(generic|({alert_type}[^"]{1,2000}))"""",
+    """"riskType":"(generic|({alert_name}[^"]{1,2000}))"""",
+    """"requestId":"({alert_id}[^"]{1,2000})"""",
+    """"riskLevel":"({alert_severity}[^"]{1,2000})"""",
+    """"riskType":"({threat_category}[^"]{1,2000})"""",
+    """"ipAddress":"({src_ip}[A-Fa-f:\d.]{1,2000})"""",
+    """\ssuser=({user_email}[^@]{1,2000}@[^\s]{1,2000})\s""",
+    """"userDisplayName":"({user_fullname}[^"]{1,2000}?)\s{0,100}"""",
+    """"userPrincipalName":"({user_email}[^"@\s]{1,2000}@[^"@\s]{1,2000})"""",
+    """msg=({additional_info}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
+    """activity":"({activity}[^"]{1,2000})""",
     """"{1,20}userAgent"{1,20}
 ```

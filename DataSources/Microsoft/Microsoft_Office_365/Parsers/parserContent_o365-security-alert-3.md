@@ -10,16 +10,16 @@ Name = o365-security-alert-3
   Conditions = [""""src-application-name":"Office 365"""","""event-name":"security-threat-detected"""",""""src-event-id"""" ]
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)\s""",
-    """exabeam_host=({host}[^\s]+)""",
-    """"event-name":"({event_name}[^"]+)"""",
-    """"riskType":"({alert_name}[^"]+)""",
+    """exabeam_host=({host}[^\s]{1,2000})""",
+    """"event-name":"({event_name}[^"]{1,2000})"""",
+    """"riskType":"({alert_name}[^"]{1,2000})""",
     """"ipAddress":"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
-    """"userDisplayName":"({user}[^"]+)"""",
-    """"userPrincipalName":"({user_email}[^@]+@({email_domain}[^"]+))"""",
+    """"userDisplayName":"({user}[^"]{1,2000})"""",
+    """"userPrincipalName":"({user_email}[^@]{1,2000}@({email_domain}[^"]{1,2000}))"""",
     """"severity":({alert_severity}\d{1,100})""",
-    """"requestId":"({alert_id}[^"]+)"""",
-    """"is-violating":({outcome}[^,]+)""",
-    """"riskEventTypes":\["({alert_name}[^"]+)"""",
+    """"requestId":"({alert_id}[^"]{1,2000})"""",
+    """"is-violating":({outcome}[^,]{1,2000})""",
+    """"riskEventTypes":\["({alert_name}[^"]{1,2000})"""",
   ]
   DupFields = ["alert_name->alert_type"]
 }

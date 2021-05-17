@@ -10,9 +10,9 @@ Name = vmware-vcenter-login
   Conditions = [ """ VIEWCENTER """ , """Authenticated user""" ]
   Fields = [
       """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-      """host":"({host}[^"]+)"""
-      """vim.event.({activity}[^\s\]]+)""",
-      """Authenticated user ({user}[^\s@]+)""",
+      """host":"({host}[^"]{1,2000})"""
+      """vim.event.({activity}[^\s\]]{1,2000})""",
+      """Authenticated user ({user}[^\s@]{1,2000})""",
       """({app}VM_VCenter)"""
   ]
 }

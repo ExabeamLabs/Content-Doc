@@ -9,7 +9,7 @@ Name = q-4662
   TimeFormat = "epoch_sec"
   Conditions = [ "EventIDCode=4662" ]
   Fields = [
-    """Computer=\s{0,100}({host}[^\s]*)""",
+    """Computer=\s{0,100}({host}[^\s]{0,2000})""",
     """EventID=({event_code}\d{1,100})""",
     """TimeGenerated=({time}\d{1,100})""",
     """Message=({event_name}.*?)\s{1,100}Subject:""",

@@ -9,13 +9,13 @@ Name = unix-auditd-account-switch
   TimeFormat = "epoch_sec"
   Conditions = [ """type=USER_START""","""op=PAM:session_open""","""res=success""" ]
   Fields = [
-    """exabeam_host=({host}[^\s]+)""",
+    """exabeam_host=({host}[^\s]{1,2000})""",
     """msg=audit\(({time}\d{1,100})\.\d{3}""",
-    """\sacct="({account}[^"]+)"""",
+    """\sacct="({account}[^"]{1,2000})"""",
     """\sauid="?({account_used_id}\d{1,100})""",
     """\suid=({user_id}\d{1,100})""",
     """\sses=({session_id}\d{1,100})""",
-    """UID="{0,20}({user}[^"]+)"""
+    """UID="{0,20}({user}[^"]{1,2000})"""
   ]
   DupFields = [ "host->dest_host" ]
 }

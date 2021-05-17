@@ -9,6 +9,6 @@ Name = siteminder-auth-attempt
     TimeFormat = "MMM dd',' yyyy',' HH:mm:ss a"
     Conditions = [""""CA SiteMinder@""", """Authentication"""]
     Fields = [
-      """"({auth_type}[^"]+?)","CA SiteMinder@"""
-      """"CA SiteMinder@.*?",("[^"]+?",){1}"({time}\w+ \d{1,100}
+      """"({auth_type}[^"]{1,2000}?)","CA SiteMinder@"""
+      """"CA SiteMinder@.*?",("[^"]{1,2000}?",){1}"({time}\w+ \d{1,100}
 ```

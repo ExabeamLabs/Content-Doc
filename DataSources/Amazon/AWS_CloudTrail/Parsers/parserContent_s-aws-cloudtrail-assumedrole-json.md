@@ -6,11 +6,11 @@ Name = s-aws-cloudtrail-assumedrole-json
   DataType = "app-activity"
   Conditions = [  "\"AwsApiCall\"", "\"eventName\"", "\"awsRegion\"", "type=AssumedRole" ]
   Fields = ${AWSParserTemplates.s-aws-cloudtrail-activity-json.Fields}[
-    """\Wsuser=[^=]*?({user}[^\\\/@=]+)@[^=]+?(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wsuser=[^=]{0,2000}?({user}[^\\\/@=]{1,2000})@[^=]{1,2000}?(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wext_userIdentity_sessionContext_sessionIssuer_type=(|({activity}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\WflexString1=(|({activity}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """"{1,20}userName"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({target}[^"].+?))"{1,20}\s{0,100}[,\]\}]""",
-    """"requestParameters":\{"userName":"({target}[^"]+)"\}
+    """"requestParameters":\{"userName":"({target}[^"]{1,2000})"\}
 s-aws-cloudtrail-activity-json = {
   Vendor = Amazon
   Lms = Splunk
@@ -24,27 +24,27 @@ s-aws-cloudtrail-activity-json = {
     """"{1,20}eventName"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({activity_action}[^"].+?))"{1,20}\s{0,100}[,\]\}]""",
     """"{1,20}eventName"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({activity}[^"].+?))"{1,20}\s{0,100}[,\]\}]""",
     """"{1,20}userName"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({user}[^"].+?))"{1,20}\s{0,100}[,\]\}]""",
-    """"userIdentity".+?"arn"\s{0,100}:\s{0,100}"?(|arn:aws:sts::\d{1,100}:([^"]+\/){1,256}({user}(?!\-\d{1,100})[^\/]+?))(@[\w\.]+)?"\s{0,100}[,\]\}]""",
-    """"eventSource"\s{0,100}:\s{0,100}"(|({service}[^"]+))"""",
-    """"sessionIssuer"\s{0,100}:\s{0,100}.*?"arn"\s{0,100}:\s{0,100}"(?:|({object}[^"]+))"""",
-    """"bucketName"\s{0,100}:\s{0,100}"(|({bucket}[^"]+))"""",
-    """"policyArn"\s{0,100}:\s{0,100}"(|({object}[^"]+))"""",
-    """"roleName"\s{0,100}:\s{0,100}"(|({object}[^"]+))"""",
-    """"userAgent"\s{0,100}:\s{0,100}"\[?(|({user_agent}[^"]+?))\]?"""",
+    """"userIdentity".+?"arn"\s{0,100}:\s{0,100}"?(|arn:aws:sts::\d{1,100}:([^"]{1,2000}\/){1,256}({user}(?!\-\d{1,100})[^\/]{1,2000}?))(@[\w\.]{1,2000})?"\s{0,100}[,\]\}]""",
+    """"eventSource"\s{0,100}:\s{0,100}"(|({service}[^"]{1,2000}))"""",
+    """"sessionIssuer"\s{0,100}:\s{0,100}.*?"arn"\s{0,100}:\s{0,100}"(?:|({object}[^"]{1,2000}))"""",
+    """"bucketName"\s{0,100}:\s{0,100}"(|({bucket}[^"]{1,2000}))"""",
+    """"policyArn"\s{0,100}:\s{0,100}"(|({object}[^"]{1,2000}))"""",
+    """"roleName"\s{0,100}:\s{0,100}"(|({object}[^"]{1,2000}))"""",
+    """"userAgent"\s{0,100}:\s{0,100}"\[?(|({user_agent}[^"]{1,2000}?))\]?"""",
     """"{1,20}errorCode"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({activity_outcome}[^"].+?))"{1,20}\s{0,100}[,\]\}]""",
     """"{1,20}errorMessage"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({additional_info}[^"].+?))"{1,20}\s{0,100}[,\]\}]""",
     """"{1,20}accountId"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({resource}[^"].+?))"{1,20}\s{0,100}[,\]\}]""",
-    """"requestParameters"\s{0,100}:[^\}]+?"instanceId"\s{0,100}:\s{0,100}"({request_id}[^"]+)",("attribute"\s{0,100}:\s{0,100}"({request_action}[^"]+)")?""",
-    """"awsRegion"\s{0,100}:\s{0,100}"({region}[^"]+)"""",
+    """"requestParameters"\s{0,100}:[^\}]{1,2000}?"instanceId"\s{0,100}:\s{0,100}"({request_id}[^"]{1,2000})",("attribute"\s{0,100}:\s{0,100}"({request_action}[^"]{1,2000})")?""",
+    """"awsRegion"\s{0,100}:\s{0,100}"({region}[^"]{1,2000})"""",
     """ext_userIdentity_type=({account_type}.+?)\s{0,100}\w+=""",
-    """userIdentity.+?type":"({user_type}[^"]+)""",
-    """assumed-role"[^:]+?:role\/({role}[^"]+)""",
+    """userIdentity.+?type":"({user_type}[^"]{1,2000})""",
+    """assumed-role"[^:]{1,2000}?:role\/({role}[^"]{1,2000})""",
     """bytesTransferredOut":\s{0,100}({bytes_out}\d{1,100}(\.\d{1,100})?)"""
     """bytesTransferredIn":\s{0,100}({bytes_in}\d{1,100}(\.\d{1,100})?)""",
-    """\srequestClientApplication=({app}[^\s]+)\s""",
-    """items":\[[^\]]+?fromPort":({src_port}\d{1,100}),""",
-    """items":\[[^\]]+?toPort":({dest_port}\d{1,100}),""",
-    """items":\[[^\]]+?ipProtocol":"({protocol}[^"]+)""""
+    """\srequestClientApplication=({app}[^\s]{1,2000})\s""",
+    """items":\[[^\]]{1,2000}?fromPort":({src_port}\d{1,100}),""",
+    """items":\[[^\]]{1,2000}?toPort":({dest_port}\d{1,100}),""",
+    """items":\[[^\]]{1,2000}?ipProtocol":"({protocol}[^"]{1,2000})""""
   ]
 
 ```

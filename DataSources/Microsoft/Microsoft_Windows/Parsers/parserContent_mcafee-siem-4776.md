@@ -10,14 +10,14 @@ Name = mcafee-siem-4776
     Conditions = [ """McAfee_SIEM:""", """The domain controller attempted to validate the credentials for an account""" ]
     Fields = [
       """({event_name}The (computer|domain controller) attempted to validate the credentials for an account)""",
-      """"dst_ip":"({dest_ip}[^"]+)""",
+      """"dst_ip":"({dest_ip}[^"]{1,2000})""",
       """"id":\d{0,100}({event_code}4776)""",
       """"firsttime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
-      """"DomainID":"({domain}[^"]+)""",
-      """"HostID":"({host}[^"]+)""",
-      """"UserIDSrc":"({user}[^"]+)""",
-      """"Status":"({result_code}[^"]+)""",
-      """"src_ip":"({src_ip}[^"]+)""",
+      """"DomainID":"({domain}[^"]{1,2000})""",
+      """"HostID":"({host}[^"]{1,2000})""",
+      """"UserIDSrc":"({user}[^"]{1,2000})""",
+      """"Status":"({result_code}[^"]{1,2000})""",
+      """"src_ip":"({src_ip}[^"]{1,2000})""",
     ]
     DupFields = [ "host->dest_host" ]
   }

@@ -11,14 +11,14 @@ Name = syslog-json-4722
   Fields = [ 
     """({event_name}A user account was enabled)""",
 	      """"EventTime":\s{0,100}"({time}\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})"""",
-              """"Hostname":"({host}[^."]*)""",
+              """"Hostname":"({host}[^."]{0,2000})""",
               """({event_code}4722)""",
-	      """"RecordNumber":({record_id}[^,]+)""",
-	      """"SubjectUserName":"({user}[^"]+)""",
-	      """"SubjectDomainName":"({domain}[^"]+)""",
-	      """"SubjectLogonId":"({logon_id}[^"]+)""",
-	      """"TargetUserName":"({target_user}[^"]+)""",
-	      """"TargetDomainName":"({target_domain}[^"]+)"""
+	      """"RecordNumber":({record_id}[^,]{1,2000})""",
+	      """"SubjectUserName":"({user}[^"]{1,2000})""",
+	      """"SubjectDomainName":"({domain}[^"]{1,2000})""",
+	      """"SubjectLogonId":"({logon_id}[^"]{1,2000})""",
+	      """"TargetUserName":"({target_user}[^"]{1,2000})""",
+	      """"TargetDomainName":"({target_domain}[^"]{1,2000})"""
 	]
 }
 ```

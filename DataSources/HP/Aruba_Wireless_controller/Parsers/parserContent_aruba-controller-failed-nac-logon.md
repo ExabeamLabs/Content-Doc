@@ -11,14 +11,14 @@ Name = aruba-controller-failed-nac-logon
   Fields = [
    """({time}\w{3}\s\d\d\s\d\d:\d\d:\d\d\s\d\d\d\d)""",
    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\+""",
-   """\d\d\d\d\s{1,100}({host}[^\s]+)\s(authmgr|stm)\[({event_code}\d{1,100})\]""",
-   """username=(({domain}[^\\\s]+)\\)?({user}[^\s]+)"""   
-   """userip=(0.0.0.0|({src_ip}[a-f0-9.]+))""",
-   """usermac=({src_mac}[a-f0-9:]+)""",
-   """bssid=({dest_host}[a-f0-9:]+)""",
-   """serverip=({auth_server}[a-f0-9.]+)""",
-   """authmethod=({auth_method}[^\s]+)""",
-   """User\sAuthentication\s({outcome}[\w]+)"""
+   """\d\d\d\d\s{1,100}({host}[^\s]{1,2000})\s(authmgr|stm)\[({event_code}\d{1,100})\]""",
+   """username=(({domain}[^\\\s]{1,2000})\\)?({user}[^\s]{1,2000})"""   
+   """userip=(0.0.0.0|({src_ip}[a-f0-9.]{1,2000}))""",
+   """usermac=({src_mac}[a-f0-9:]{1,2000})""",
+   """bssid=({dest_host}[a-f0-9:]{1,2000})""",
+   """serverip=({auth_server}[a-f0-9.]{1,2000})""",
+   """authmethod=({auth_method}[^\s]{1,2000})""",
+   """User\sAuthentication\s({outcome}[\w]{1,2000})"""
   ]
 }
 ```

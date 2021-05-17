@@ -11,8 +11,8 @@ Name = l-4722
   Fields = [
 	 """({event_name}A user account was enabled)""",
    """SystemTime=\'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-   """<Computer>({host}[^<]+)</Computer>""",
-   """<EventID>({event_code}[^<]+)</EventID>""",
+   """<Computer>({host}[^<]{1,2000})</Computer>""",
+   """<EventID>({event_code}[^<]{1,2000})</EventID>""",
    """Subject:.+?Account Name:\s{0,100}({user}.+?)\s{0,100}Account Domain:\s{0,100}({domain}.+?)\s{0,100}Logon ID:\s{0,100}({logon_id}.+?)\s{0,100}Target Account:""",
    """Target Account:\s{0,100}Security ID:\s{0,100}({account_id}.+?)\s{0,100}Account Name:\s{0,100}({target_user}.+?)\s{0,100}Account Domain:\s{0,100}({target_domain}.+?)\s{0,100}<""",
    """<Data Name='TargetUserName'>({target_user}.+?)\s{0,100}</Data>""",

@@ -50,7 +50,7 @@ Name = sourcefire-estreamer-alert
   Fields = [
 	     """event_sec=({time}\d{1,100})""",
              """\sevent_id=({alert_id}\d{1,100})\s{1,100}.+?class=({alert_name}(6|12|13|17|21))\s{1,100}priority=({alert_severity}\d{1,100})\s{1,100}src_addr=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s{1,100}dst_addr=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-	     """exabeam_host=({host}[\w.\-]+)"""
+	     """exabeam_host=({host}[\w.\-]{1,2000})"""
   ]
   DupFields=["alert_name->alert_type"]
   SOAR {

@@ -11,12 +11,12 @@ Name = raw-juniper-nwc-vpn-terminated
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)\s-\s""",
     """\stime="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=(.+?@\s{0,100})?({host}[^\s]+)""",
-    """\sfw=({host}[\w\-\.]+)""",
-    """({host}[\w\-\.]+)\s{1,100}(Juniper|PulseSecure):""",
-    """PulseSecure:\s{0,100}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d\s{1,100}\-\s{1,100}({dest_host}[\w\-.]+)""",
-    """\s(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-\.]+))\s{1,100}(Juniper|PulseSecure):""",
-    """Session for user\s{1,100}(({domain}[^\\]+)\\)?({user}.+?)\s{1,100}on host ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) has been terminated""",
+    """exabeam_host=(.+?@\s{0,100})?({host}[^\s]{1,2000})""",
+    """\sfw=({host}[\w\-\.]{1,2000})""",
+    """({host}[\w\-\.]{1,2000})\s{1,100}(Juniper|PulseSecure):""",
+    """PulseSecure:\s{0,100}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d\s{1,100}\-\s{1,100}({dest_host}[\w\-.]{1,2000})""",
+    """\s(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-\.]{1,2000}))\s{1,100}(Juniper|PulseSecure):""",
+    """Session for user\s{1,100}(({domain}[^\\]{1,2000})\\)?({user}.+?)\s{1,100}on host ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) has been terminated""",
   ]
 }
 ```

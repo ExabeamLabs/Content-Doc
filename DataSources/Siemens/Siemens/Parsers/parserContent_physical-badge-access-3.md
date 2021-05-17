@@ -9,14 +9,14 @@ Name = physical-badge-access-3
   TimeFormat = "yyyy-MM-dd' 'HH:mm:ss.S"
   Conditions = [ """MessageType="""", """MessageLocaleOffset="""", """CardNumber="""", """EmployeeID="""", """Direction="""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
-    """EmployeeID="({user_id}[^"]+)"""",
-    """FirstName="({user_firstname}[^"]+)"""",
-    """LastName="({user_lastname}[^"]+)"""",
-    """CardNumber="({badge_id}[^"]+)"""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """EmployeeID="({user_id}[^"]{1,2000})"""",
+    """FirstName="({user_firstname}[^"]{1,2000})"""",
+    """LastName="({user_lastname}[^"]{1,2000})"""",
+    """CardNumber="({badge_id}[^"]{1,2000})"""",
     """MessageUTC="({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d.\d)"""",
-    """MessageType="({outcome}[^"]+)"""",
-    """DoorName="({location_door}[^"]+)""""
+    """MessageType="({outcome}[^"]{1,2000})"""",
+    """DoorName="({location_door}[^"]{1,2000})""""
   ]
 }
 ```

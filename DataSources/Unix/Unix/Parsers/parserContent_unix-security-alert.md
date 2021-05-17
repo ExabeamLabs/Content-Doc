@@ -11,8 +11,8 @@ Name = unix-security-alert
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """({alert_name}POSSIBLE BREAK-IN ATTEMPT!)""",
-    """ Address ({src_ip}[a-fA-F\d.:]+) maps to ({src_host}[^,]+)""",
-    """({host}[\w.\-]+) ({process}sshd)\[""",
+    """ Address ({src_ip}[a-fA-F\d.:]{1,2000}) maps to ({src_host}[^,]{1,2000})""",
+    """({host}[\w.\-]{1,2000}) ({process}sshd)\[""",
     """({additional_info}Address .+?- POSSIBLE BREAK-IN ATTEMPT!)\s{0,100}$"""
   ]
   DupFields = [ "alert_name->alert_type" ]

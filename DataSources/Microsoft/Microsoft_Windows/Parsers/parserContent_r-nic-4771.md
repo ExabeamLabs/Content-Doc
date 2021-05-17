@@ -11,7 +11,7 @@ Name = r-nic-4771
   Fields = [
     """({event_name}Kerberos pre-authentication failed)""",
     """(Mon|Tue|Wed|Thu|Fri|Sat|Sun) ({time}\w+ \d{1,100} \d{1,100}:\d{1,100}:\d{1,100} \d{1,100})""",
-    """Security,(rn=)?({record_id}[\d]+)""",
-    """Failure Audit,({host}[^,]+)""",
+    """Security,(rn=)?({record_id}[\d]{1,2000})""",
+    """Failure Audit,({host}[^,]{1,2000})""",
     """\d{2}:\d{2}:\d{2} \d{4}
 ```

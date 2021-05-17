@@ -5,7 +5,7 @@ Name = cef-microsoft-graph-activity-3
   DataType = "failed-app-login"
   Conditions = [ """"event-name":""", """"src-endpoint":"mcas-activities"""", """"activityResult":""", """event-name":"login-failed""" ]
   Fields = ${MSParserTemplates.cef-o365-app-login-1.Fields} [
-    """activityResult":[^}]+?message":"({failure_reason}[^"]+)""",  
+    """activityResult":[^}]{1,2000}?message":"({failure_reason}[^"]{1,2000})""",  
   ]
 }
 cef-o365-app-login-1 = {
@@ -15,25 +15,25 @@ cef-o365-app-login-1 = {
    Lms = Direct
    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
    Fields =[
-     """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
-     """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}.\d{1,100}Z)\s{1,100}[^\s]+\s{1,100}Skyformation""",
-     """"event-name":"({activity}[^"]+)""",
-     """app-user-displayname":"({user_fullname}[^\s"]+\s{1,100}[^"]+)""",
-     """user-email":"({user_email}[^@"]+@[^"]+)""",
-     """app-user-id":"({user_id}[\w-]+)""",
-     """appName":"({app}[^"]+)""",
-     """ApplicationName":"({app}[^"]+)""",
-     """src-ip":"({src_ip}[\da-fA-F\.:]+)""",
-     """device":[^}]+?"os":[^}]+?"name":"({os}[^"]+)""",
-     """browser":"((?i)(unknown)|({browser}[^"]+))""",
-     """"location"[^}]+?city"{1,20}:"{1,20}({location_city}[^",]+)""",
-     """"location"[^}]+?countryCode":"({location_country}[^",]+)""",
-     """"location"[^}]+?region":"({region}[^",]+)""",
-     """activityResult":[^}]+?"isSuccess":({outcome}(?i)(true|false))""",
-     """"application-action":"({event_name}[^"]+)""",
-     """"src-endpoint":"({endpoint}[^"]+)""",
-     """"src-account-name":"({account}[^"]+)""",
-     """"src-account-name":"({account_name}[^"]+)""",
+     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+     """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}.\d{1,100}Z)\s{1,100}[^\s]{1,2000}\s{1,100}Skyformation""",
+     """"event-name":"({activity}[^"]{1,2000})""",
+     """app-user-displayname":"({user_fullname}[^\s"]{1,2000}\s{1,100}[^"]{1,2000})""",
+     """user-email":"({user_email}[^@"]{1,2000}@[^"]{1,2000})""",
+     """app-user-id":"({user_id}[\w-]{1,2000})""",
+     """appName":"({app}[^"]{1,2000})""",
+     """ApplicationName":"({app}[^"]{1,2000})""",
+     """src-ip":"({src_ip}[\da-fA-F\.:]{1,2000})""",
+     """device":[^}]{1,2000}?"os":[^}]{1,2000}?"name":"({os}[^"]{1,2000})""",
+     """browser":"((?i)(unknown)|({browser}[^"]{1,2000}))""",
+     """"location"[^}]{1,2000}?city"{1,20}:"{1,20}({location_city}[^",]{1,2000})""",
+     """"location"[^}]{1,2000}?countryCode":"({location_country}[^",]{1,2000})""",
+     """"location"[^}]{1,2000}?region":"({region}[^",]{1,2000})""",
+     """activityResult":[^}]{1,2000}?"isSuccess":({outcome}(?i)(true|false))""",
+     """"application-action":"({event_name}[^"]{1,2000})""",
+     """"src-endpoint":"({endpoint}[^"]{1,2000})""",
+     """"src-account-name":"({account}[^"]{1,2000})""",
+     """"src-account-name":"({account_name}[^"]{1,2000})""",
    ]
 
 ```

@@ -9,15 +9,15 @@ Name = centrify-authentication-failed-2
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"
   Conditions = [ """SourceName=Centrify AuditTrail""", """AUDIT_TRAIL|Centrify Suite|MFA|""" , """|MFA challenge failed|""", """EventCode=54201""" ]
   Fields = [
-    """exabeam_host=({host}[\w.\-]+)""",
+    """exabeam_host=({host}[\w.\-]{1,2000})""",
     """:\d\d\s\w+\s({time}\d\d\/\d\d\/\d\d\d\d\s\d\d:\d\d:\d\d\s(?i)(AM|PM))""",
-    """ComputerName=({dest_host}[^\.]+)\.({domain}[^\s]+)""",
-    """User=(NULL|NOT_TRANSLATED|({user}[^\s]+))""",
-    """Sid=({user_sid}[^\s]+?)\sSidType""",
+    """ComputerName=({dest_host}[^\.]{1,2000})\.({domain}[^\s]{1,2000})""",
+    """User=(NULL|NOT_TRANSLATED|({user}[^\s]{1,2000}))""",
+    """Sid=({user_sid}[^\s]{1,2000}?)\sSidType""",
     """EventCode=({event_code}54201)""",
-    """AUDIT_TRAIL\|Centrify Suite\|MFA\|[^=]+({event_name}MFA challenge failed)""",
-    """reason=({failure_reason}[^=]+)\.""",
-    """Message:\s*({additional_info}[^:]+)\s+\.\s+""",
+    """AUDIT_TRAIL\|Centrify Suite\|MFA\|[^=]{1,2000}({event_name}MFA challenge failed)""",
+    """reason=({failure_reason}[^=]{1,2000})\.""",
+    """Message:\s*({additional_info}[^:]{1,2000})\s+\.\s+""",
   ]
 }
 ```

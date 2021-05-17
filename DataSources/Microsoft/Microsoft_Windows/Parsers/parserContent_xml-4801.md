@@ -11,12 +11,12 @@ Name = xml-4801
   Fields = [
     """({event_name}The workstation was unlocked)""",
     """<TimeCreated SystemTime(\\)?='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\d\d\d\d\d\d\d)Z'\/>""",
-    """<Computer>({host}[^<]+)<""",
+    """<Computer>({host}[^<]{1,2000})<""",
     """<EventID>({event_code}4801)""",
-    """Data Name(\\)?='TargetUserName'>({user}[^<]+)""",
-    """Data Name(\\)?='TargetDomainName'>({domain}[^<]+)""",
-    """Data Name(\\)?='TargetLogonId'>({logon_id}[^<]+)""",
-    """Data Name(\\)?='TargetUserSid'>({user_sid}[^<]+)""",
+    """Data Name(\\)?='TargetUserName'>({user}[^<]{1,2000})""",
+    """Data Name(\\)?='TargetDomainName'>({domain}[^<]{1,2000})""",
+    """Data Name(\\)?='TargetLogonId'>({logon_id}[^<]{1,2000})""",
+    """Data Name(\\)?='TargetUserSid'>({user_sid}[^<]{1,2000})""",
 
   ]
   DupFields = [ "host->dest_host" ]

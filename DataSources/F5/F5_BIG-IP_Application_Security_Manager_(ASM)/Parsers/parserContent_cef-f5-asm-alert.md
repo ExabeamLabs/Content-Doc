@@ -10,10 +10,10 @@ Name = cef-f5-asm-alert
   Conditions = [ """CEF:""", """ ASM:""", """|F5|ASM|""", """HTTP""" ]
   Fields = [
     """\Wrt=({time}\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100})""",
-    """\Wdvc=({host}[A-Fa-f:\d.]+)""",
-    """\Wdvchost=({host}[\w\-.]+)""",
-    """\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
-    """\Wdst=({dest_ip}[A-Fa-f:\d.]+)""",
+    """\Wdvc=({host}[A-Fa-f:\d.]{1,2000})""",
+    """\Wdvchost=({host}[\w\-.]{1,2000})""",
+    """\Wsrc=({src_ip}[A-Fa-f:\d.]{1,2000})""",
+    """\Wdst=({dest_ip}[A-Fa-f:\d.]{1,2000})""",
     """\Wspt=({src_port}\d{1,100})""",
     """\Wdpt=({dest_port}\d{1,100})""",
     """\Wact=({outcome}.+?)\s{1,100}(\w+=|$)""",
@@ -21,10 +21,10 @@ Name = cef-f5-asm-alert
     """\Wapp=({protocol}.+?)\s{1,100}(\w+=|$)""",
     """\Wrequest=({malware_url}.+?)\s{1,100}(\w+=|$)""",
     """\WexternalId=({alert_id}.+?)\s{1,100}(\w+=|$)""",
-    """(\\r\\n|\s)Host:\s{0,100}({domain}[^"]+?)((\\r\\n|\s{1,100})[\w\-]+:|")""",
-    """(\\r\\n|\s)User-Agent:\s{0,100}({user_agent}[^"]+?)(\\r\\n[\w\-]+:|")""",
+    """(\\r\\n|\s)Host:\s{0,100}({domain}[^"]{1,2000}?)((\\r\\n|\s{1,100})[\w\-]{1,2000}:|")""",
+    """(\\r\\n|\s)User-Agent:\s{0,100}({user_agent}[^"]{1,2000}?)(\\r\\n[\w\-]{1,2000}:|")""",
     """(\\r\\n|\s)User-Agent:\s{0,100}Mozilla\/.+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
-    """CEF:([^\|]*\|){4}({alert_type}[^\|]+)""",
+    """CEF:([^\|]{0,2000}\|){4}({alert_type}[^\|]{1,2000})""",
   ]
   DupFields = [ "browser->process" ]
   SOAR {

@@ -13,7 +13,7 @@ Name = cef-bitglass-dlp-alert
     """ext_patterns=({alert_name}.+?)\s{1,100}(\w+=|$)""",
     """ext_status=({alert_type}.+?)\s{1,100}(\w+=|$)""",
     """ext_folder=({target}.+?)\s{1,100}(\w+=|$)""",
-    """ext_filename=\s{0,100}(|({file_name}.+?(\.({file_ext}[^\.\s"]+))?))\s{1,100}(\w+=|$)""",
+    """ext_filename=\s{0,100}(|({file_name}.+?(\.({file_ext}[^\.\s"]{1,2000}))?))\s{1,100}(\w+=|$)""",
     """ext_application=({process}.+?)\s{1,100}(\w+=|$)""",
     """ext_owner=({user_email}.+?)\s{1,100}(\w+=|$)""",
     """ext_filelink=({additional_info}.+?)\s{1,100}(\w+=|$)""",

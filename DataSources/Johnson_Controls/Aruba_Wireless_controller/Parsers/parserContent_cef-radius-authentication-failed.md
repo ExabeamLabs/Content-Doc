@@ -15,7 +15,7 @@ cef-aruba-nac-logon-1 = {
   DataType = "nac-logon"
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """({time}\w+ \d{1,100} \d{1,100} \d{1,100}:\d{1,100}:\d{1,100})""",
     """dvc=({host}.+?)\s\w+=""",
     """duser=({user}.+?)\s\w+=""",

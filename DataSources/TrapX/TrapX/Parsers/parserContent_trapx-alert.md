@@ -18,7 +18,7 @@ Name = trapx-alert
      """spt=({src_port}\d{1,100})\s""",
      """proto=({protocol}\w+)\s""",
      """\sexternalId=({alert_id}\d{1,100})""",
-     """exabeam_host=({host}[^\s]+)""",
+     """exabeam_host=({host}[^\s]{1,2000})""",
   ]
 }
 ```

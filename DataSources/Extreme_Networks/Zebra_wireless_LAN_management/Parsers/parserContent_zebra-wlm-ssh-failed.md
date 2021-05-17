@@ -11,7 +11,7 @@ Name = zebra-wlm-ssh-failed
  Fields =[
     """({time}\d{1,4}-\d{1,2}-\d{1,2}T\d{1,2}:\d{1,2}:\d{1,2})""",
     """({time}\w{1,20}\s{1,99}\d{1,2}\s{1,99}\d{1,2}\:\d{1,2}\:\d{1,2})""",
-    """\s{1,100}({host}[^\s]+)\s{1,100}({event_code}%\d{0,20}SYSTEM-3-LOGIN_FAIL):\s{1,100}Log-in ({outcome}failed) for user '({user}[^']+)'\s{1,100}from '({protocol}[^']+)\'"""
+    """\s{1,100}({host}[^\s]{1,2000})\s{1,100}({event_code}%\d{0,20}SYSTEM-3-LOGIN_FAIL):\s{1,100}Log-in ({outcome}failed) for user '({user}[^']{1,2000})'\s{1,100}from '({protocol}[^']{1,2000})\'"""
   ]
 }
 ```

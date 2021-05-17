@@ -9,12 +9,12 @@ Name = crowdstrike-security-alert-4
     TimeFormat = "epoch"
     Conditions = [ """"event_simpleName":"DllInjection"""", """"timestamp":"""" ]
     Fields = [
-      """exabeam_host=([^=]+@\s{0,100})?({host}[\w\-.]+)""",
+      """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
       """"timestamp":"({time}\d{1,100})""",
       """\Whostname=(|({host}.+?)),?(\s{1,100}\w+=|\s{0,100}\})""",
-      """"InjectedDll":"({malware_file_name}[^"]+)""",
-      """"event_simpleName":"({alert_name}[^"]+)""",
-      """"id":"({alert_id}[^"]+)""",
+      """"InjectedDll":"({malware_file_name}[^"]{1,2000})""",
+      """"event_simpleName":"({alert_name}[^"]{1,2000})""",
+      """"id":"({alert_id}[^"]{1,2000})""",
     ]
     DupFields = [ "alert_name->alert_type" ]
   }

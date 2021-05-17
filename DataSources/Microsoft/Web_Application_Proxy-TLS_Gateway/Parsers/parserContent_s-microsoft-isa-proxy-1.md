@@ -10,13 +10,11 @@ Name = s-microsoft-isa-proxy-1
   TimeFormat = "yyyy-MM-dd\tHH:mm:ss"
   Conditions = [ """\tInet\t""", """\tReq ID:""" ]
   Fields = [
-    """exabeam_raw=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})[\t\,]+(?:anonymous|({user}[\w\\]+))[\t\,]+(?:-|({user_agent}.+?))[\t\,]+({time}\d{4}-\d{2}-\d{2}[\s]+\d{2}:\d{2}:\d{2})(?:[\t\,]+(?:Y|N))?[\t\,]+({host}[\w-_]+)[\t\,]+[^\t\,]+[\s\,]+(?:-|({dest_host}[\w-_]+))[\t\,]+(?:-|({dest_ip}[^\t\,]+))[\t\,]+({dest_port}\d{1,100})[\t\,]+\d{1,100}[\t\,]+(?:-|({bytes_out}\d{1,100}))[\t\,]+(?:-|({bytes_in}\d{1,100}))[\t\,]+({protocol}[\w-]+)[\t\,]+(?:-|({method}\w+))[\t\,]+(?:\w+:\/{2}[^\/]+({uri_path}\/[^?\s]+)?({uri_query}\?[^\t\s\,]+)?)[\t\,]+(?:-|({mime}[^\t\,]+))[\t\,]+(?:Inet|VFInet|0)[\t\,]+(?:-|({response_code}\d{1,100})).+[\t\,]+Req ID.+\s({error_id}0x\d{1,100})[\t\,]+({action}\w+)""",
-    """(?:-|({dest_ip}[\d\.]+))[\s\,]+[\w\s]+[\t\,]+(?:None|Web Proxy)[\t\,]+({web_domain}[^\t\,]+)""",
-    """(?:[^\t\,]+[\s\,]+){2}.*({browser}[\w\-]+)\/[\d\._]+""",
-    """(?:[^\t\,]+[\s\,]+){2}.*({browser}[^\/]+).+({os}iOS|Android|BlackBerry|Windows Phone|BeOS|Windows|Linux|Macintosh|Darwin)""",
-    """(?:[^\t\,]+[\s\,]+){2}.*Mozilla\/.+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|X11|Linux|Windows|Macintosh).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
-    """(?:[^\t\,]+[\s\,]+){2}.*Mozilla\/.+\((?:BeOS|X11|Linux|Windows|Macintosh).+Gecko\/\d{1,100}\s{1,100}({browser}\w+)""",
-    """(?:[^,]+,){11}(.*?)({top_domain}(?!(?:\d{1,100}\.){3}\d{1,100})[^\.\s]+?(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)[^\/\,]+)(?:\/[^,]+)?,"""
-  ]
-}
+    """exabeam_raw=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})[\t\,]{1,2000}(?:anonymous|({user}[\w\\]{1,2000}))[\t\,]{1,2000}(?:-|({user_agent}.+?))[\t\,]{1,2000}({time}\d{4}-\d{2}-\d{2}[\s]{1,2000}\d{2}:\d{2}:\d{2})(?:[\t\,]{1,2000}(?:Y|N))?[\t\,]{1,2000}({host}[\w-_]{1,2000})[\t\,]{1,2000}[^\t\,]{1,2000}[\s\,]{1,2000}(?:-|({dest_host}[\w-_]{1,2000}))[\t\,]{1,2000}(?:-|({dest_ip}[^\t\,]{1,2000}))[\t\,]{1,2000}({dest_port}\d{1,100})[\t\,]{1,2000}\d{1,100}[\t\,]{1,2000}(?:-|({bytes_out}\d{1,100}))[\t\,]{1,2000}(?:-|({bytes_in}\d{1,100}))[\t\,]{1,2000}({protocol}[\w-]{1,2000})[\t\,]{1,2000}(?:-|({method}\w+))[\t\,]{1,2000}(?:\w+:\/{2}[^\/]{1,2000}({uri_path}\/[^?\s]{1,2000})?({uri_query}\?[^\t\s\,]{1,2000})?)[\t\,]{1,2000}(?:-|({mime}[^\t\,]{1,2000}))[\t\,]{1,2000}(?:Inet|VFInet|0)[\t\,]{1,2000}(?:-|({response_code}\d{1,100})).+[\t\,]{1,2000}Req ID.+\s({error_id}0x\d{1,100})[\t\,]{1,2000}({action}\w+)""",
+    """(?:-|({dest_ip}[\d\.]{1,2000}))[\s\,]{1,2000}[\w\s]{1,2000}[\t\,]{1,2000}(?:None|Web Proxy)[\t\,]{1,2000}({web_domain}[^\t\,]{1,2000})""",
+    """(?:[^\t\,]{1,2000}[\s\,]{1,2000}){2}.*({browser}[\w\-]{1,2000})\/[\d\._]{1,2000}""",
+    """(?:[^\t\,]{1,2000}[\s\,]{1,2000}){2}.*({browser}[^\/]{1,2000}).+({os}iOS|Android|BlackBerry|Windows Phone|BeOS|Windows|Linux|Macintosh|Darwin)""",
+    """(?:[^\t\,]{1,2000}[\s\,]{1,2000}){2}.*Mozilla\/.+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|X11|Linux|Windows|Macintosh).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
+    """(?:[^\t\,]{1,2000}[\s\,]{1,2000}){2}.*Mozilla\/.+\((?:BeOS|X11|Linux|Windows|Macintosh).+Gecko\/\d{1,100}\s{1,100}({browser}\w+)""",
+    """(?:[^,]{1,2000}
 ```

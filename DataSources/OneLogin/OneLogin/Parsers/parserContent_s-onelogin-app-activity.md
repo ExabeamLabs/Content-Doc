@@ -10,7 +10,7 @@ Name = s-onelogin-app-activity
   Conditions = [ """assuming_acting_user_id":""", """app_name":""", """user_name":""", """event_type_id":""" ]
   Fields = [
     """"created_at":\s{0,100}"({time}\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z)""",
-    """exabeam_host=([^=]+?@\s{0,100})?({host}[^\s]+)""",
+    """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[^\s]{1,2000})""",
     """"app_name":\s{0,100}"\s{0,100}({app}([^\\"]|(\\\\)*\\"|\\\\)+?)\s{0,100}"""",
     """"event_type_id":\s{0,100}({activity_code}\d{1,100})""",
     """"user_name":\s{0,100}"({user_fullname}([^\\"]|(\\\\)*\\"|\\\\)+)"""",

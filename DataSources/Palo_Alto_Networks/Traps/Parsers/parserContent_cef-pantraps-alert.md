@@ -9,13 +9,13 @@ Name = cef-pantraps-alert
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ """|Palo Alto Networks|Traps Agent|""","""Prevention Key:""" ]
   Fields = [
-    """exabeam_host=({host}[\w.\-]+)""",
-    """\d\d:\d\d:\d\d ({host}[^\s]+)\sCEF""",
+    """exabeam_host=({host}[\w.\-]{1,2000})""",
+    """\d\d:\d\d:\d\d ({host}[^\s]{1,2000})\sCEF""",
     """(devTime|rt)=({time}\w+ \d{1,100} \d\d\d\d \d\d:\d\d:\d\d)""",
-    """duser=(({domain}[^\\]+)\\)?(?: |({user}.+?))\s{0,100}\w+=""",
+    """duser=(({domain}[^\\]{1,2000})\\)?(?: |({user}.+?))\s{0,100}\w+=""",
     """dhost=(?: |({src_host}.+?))\s{0,100}\w+=""",
-    """\|Palo Alto Networks\|([^|]+\|){2}({alert_name}[^|]+)""",
-    """\|Palo Alto Networks\|([^|]+\|){4}({alert_severity}[^|]+)""",
+    """\|Palo Alto Networks\|([^|]{1,2000}\|){2}({alert_name}[^|]{1,2000})""",
+    """\|Palo Alto Networks\|([^|]{1,2000}\|){4}({alert_severity}[^|]{1,2000})""",
     """(subtype|cs2)=(?: |({alert_type}.+?))\s{0,100}\w+=""",
     """Prevention Key: (?: |({alert_id}.+?))\s{0,100}($|\w+=)""",
     """deviceProcessName=(?: |({malware_url}.+?))\s{0,100}\w+=""",

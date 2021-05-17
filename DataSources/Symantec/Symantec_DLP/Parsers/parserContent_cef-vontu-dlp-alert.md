@@ -9,17 +9,17 @@ Name = cef-vontu-dlp-alert
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """|Vontu|Monitor""", """catdt=Content Security""" ]
   Fields = [
-    """([^\|]*\|){5}({alert_name}[^\|]+)""",
+    """([^\|]{0,2000}\|){5}({alert_name}[^\|]{1,2000})""",
     """\Wrt=({time}\d{1,100})""",
     """\Wdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\Wdvchost=({host}[\w\-.]+)""",
+    """\Wdvchost=({host}[\w\-.]{1,2000})""",
     """\WeventId=({alert_id}\d{1,100})""",
     """\Wmsg=({alert_type}.+?)\s{0,100}(\w+=|$)""",
     """\WdeviceSeverity=({alert_severity}\d{1,100})""",
     """\WsourceDnsDomain=({domain}.+?)\s{0,100}(\w+=|$)""",
-    """\Wcs1=(?:({user}[^\s]+?)|({user_fullname}\w+(?:\s{1,100}\w+)+))(\s{1,100}\w+=|\s{0,100}$)""",
-    """\Wsuser=(?:N\/A|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({user_email}[^\s@]+@[^\s@]+))""",
-    """\Wsuser=\w+:\/+({domain}[^\/\\=]+)[\\\/]+(?:({user}[^\\\/\s]+?)|({user_fullname}\w+(?:\s{1,100}\w+)+))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wcs1=(?:({user}[^\s]{1,2000}?)|({user_fullname}\w+(?:\s{1,100}\w+)+))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wsuser=(?:N\/A|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({user_email}[^\s@]{1,2000}@[^\s@]{1,2000}))""",
+    """\Wsuser=\w+:\/+({domain}[^\/\\=]{1,2000})[\\\/]{1,2000}(?:({user}[^\\\/\s]{1,2000}?)|({user_fullname}\w+(?:\s{1,100}\w+)+))(\s{1,100}\w+=|\s{0,100}$)""",
     """\WdestinationDnsDomain=({top_domain}.+?)\s{0,100}(\w+=|$)""",
     """\Wduser=(?:N\/A|({target}.+?))\s{0,100}(\w+=|$)""",
     """\Wsrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",

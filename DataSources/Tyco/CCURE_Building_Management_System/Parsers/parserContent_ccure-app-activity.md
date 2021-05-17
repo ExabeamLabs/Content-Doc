@@ -9,12 +9,6 @@ Name = ccure-app-activity
   TimeFormat = "yyyy-MM-dd HH:mm:ss a"
   Conditions = [ """<CCure App Activity Conditions>""" ]
   Fields = [
-              """exabeam_raw=({activity}[^,]+)""",
-              """exabeam_raw=[^,]*,({user}[^,]+)""",
-              """exabeam_raw=([^,]*,){2}({object}.+?)\s{1,100}\('""",
-              """exabeam_raw=.+?\('({additional_info}[^']+)""",
-              """exabeam_host=({host}[^\s]+)""",
-              """({time}\d\d\d\d\-\d\d\-\d\d \d{1,100}:\d{1,100}:\d{1,100} (am|AM|PM|pm))"""
-	]
-}
+              """exabeam_raw=({activity}[^,]{1,2000})""",
+              """exabeam_raw=[^,]{0,2000}
 ```

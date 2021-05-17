@@ -11,16 +11,16 @@ Name = s-azure-pim-activity
  Fields = [
     """({service}PIM)""",
     """activityDateTime": "({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
-    """operationType": "({activity}[^"]+)""",
-    """Microsoft.Authorization/roleDefinitions/({role}[^"\/]+)""",
-    """activityDisplayName": "({additional_info}[^"]+)""",
-    """"user": ["\w\s\{\:\-\,]+displayName": "({user_lastname}[^,":]+),\s{0,100}({user_firstname}[^"]+)""",
-    """"user": ["\w\s\{\:\-\,]+userPrincipalName": "({user_email}.+?@[^"]+)""""
-    """"user": \{.+?"id": "({user}[^"]+)""",
-    """Microsoft.Authorization/roleDefinitions/({role}[^"\/\\]+)""",
-    """Microsoft.Authorization/policyDefinitions/({policy}[^"\/\\]+)""",
-    """"result": "({outcome}[^"]+)", "resultReason""""
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[^\s]{1,2000})""",
+    """operationType": "({activity}[^"]{1,2000})""",
+    """Microsoft.Authorization/roleDefinitions/({role}[^"\/]{1,2000})""",
+    """activityDisplayName": "({additional_info}[^"]{1,2000})""",
+    """"user": ["\w\s\{\:\-\,]{1,2000}displayName": "({user_lastname}[^,":]{1,2000}),\s{0,100}({user_firstname}[^"]{1,2000})""",
+    """"user": ["\w\s\{\:\-\,]{1,2000}userPrincipalName": "({user_email}.+?@[^"]{1,2000})""""
+    """"user": \{.+?"id": "({user}[^"]{1,2000})""",
+    """Microsoft.Authorization/roleDefinitions/({role}[^"\/\\]{1,2000})""",
+    """Microsoft.Authorization/policyDefinitions/({policy}[^"\/\\]{1,2000})""",
+    """"result": "({outcome}[^"]{1,2000})", "resultReason""""
  ]
 }
 ```

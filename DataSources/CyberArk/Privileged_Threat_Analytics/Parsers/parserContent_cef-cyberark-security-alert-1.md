@@ -9,17 +9,17 @@ Name = cef-cyberark-security-alert-1
    TimeFormat = "epoch"
    Conditions = [ """CyberArk|PTA""" , """suser=""" ]
    Fields = [
-      """deviceCustomDate1=({time}[^\s]+)"""
-      """\s({host}[^\s]+)\sCEF"""
-      """shost=((None)|({src_host}[^\s]+))""",
-      """src=((None)|({src_ip}[^\s]+))""",
-      """dst=((None)|({dest_ip}[^\s]+))""",
-      """suser=((None)|({user}[^\s\(]+))""",
-      """dhost=((None)|({dest_host}[^\s]+))""",
-      """duser=((None)|({additional_info}[^\s\(]+))""",
-      """cs2=({alert_id}[^\s]+)""",
-      """CEF[^|]+?\|[^|]+?\|({alert_type}[^\|]+)""",
-      """CEF[^|]+?\|[^|]+?\|[^|]+?\|[^|]+?\|[^|]+?\|({alert_name}[^\|]+)\|({alert_severity}[^\|]+)"""
+      """deviceCustomDate1=({time}[^\s]{1,2000})"""
+      """\s({host}[^\s]{1,2000})\sCEF"""
+      """shost=((None)|({src_host}[^\s]{1,2000}))""",
+      """src=((None)|({src_ip}[^\s]{1,2000}))""",
+      """dst=((None)|({dest_ip}[^\s]{1,2000}))""",
+      """suser=((None)|({user}[^\s\(]{1,2000}))""",
+      """dhost=((None)|({dest_host}[^\s]{1,2000}))""",
+      """duser=((None)|({additional_info}[^\s\(]{1,2000}))""",
+      """cs2=({alert_id}[^\s]{1,2000})""",
+      """CEF[^|]{1,2000}?\|[^|]{1,2000}?\|({alert_type}[^\|]{1,2000})""",
+      """CEF[^|]{1,2000}?\|[^|]{1,2000}?\|[^|]{1,2000}?\|[^|]{1,2000}?\|[^|]{1,2000}?\|({alert_name}[^\|]{1,2000})\|({alert_severity}[^\|]{1,2000})"""
    ]
 }
 ```

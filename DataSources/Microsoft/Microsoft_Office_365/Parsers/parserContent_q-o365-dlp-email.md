@@ -9,12 +9,12 @@ Name = q-o365-dlp-email
   TimeFormat = "MM/dd/yyyy HH:mm:ss"
   Conditions = [ """@{Status=""", """; SenderAddress=""" ]
   Fields = [
-    """({host}[\w.\-]+)\s{1,100}(\S+\s{1,100}){4}@\{Status=""",
-    """Status=({outcome}[^;]+)""",
+    """({host}[\w.\-]{1,2000})\s{1,100}(\S+\s{1,100}){4}@\{Status=""",
+    """Status=({outcome}[^;]{1,2000})""",
     """Received=({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d)""",
-    """SenderAddress=({sender}[^;@]+@({external_domain_sender}[^;]+))""",
-    """RecipientAddress=({recipient}[^;@]+@({external_domain_recipient}[^;]+))""",
-    """RecipientAddress=({recipients}[^;]+)""",
+    """SenderAddress=({sender}[^;@]{1,2000}@({external_domain_sender}[^;]{1,2000}))""",
+    """RecipientAddress=({recipient}[^;@]{1,2000}@({external_domain_recipient}[^;]{1,2000}))""",
+    """RecipientAddress=({recipients}[^;]{1,2000})""",
     """Size=({bytes}\d{1,100})""",
     """Subject=({subject}.+?)\s{0,100}\}""",
   ]

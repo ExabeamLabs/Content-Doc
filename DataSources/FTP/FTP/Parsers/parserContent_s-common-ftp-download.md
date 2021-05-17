@@ -10,15 +10,15 @@ Name = s-common-ftp-download
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """]sent /""", """ - 200 """ ]
   Fields = [
-    """exabeam_host=([^=]+?@\s{0,100})?({host}[^\s]+)""",
+    """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[^\s]{1,2000})""",
     """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d) """,
     """(exabeam_\w+=|^)({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d) """,
-    """({host}[\w\.-]+)\s{1,100}(\S+\s{1,100}){2}\[\d{1,100}\]""",
+    """({host}[\w\.-]{1,2000})\s{1,100}(\S+\s{1,100}){2}\[\d{1,100}\]""",
     """({src_ip}\S+)\s{1,100}(\S+\s{1,100}){2}\[\d{1,100}\]""",
     """(-|(({domain}\S+)[\/\\])?({user}\S+))\s{1,100}\[\d{1,100}\]""",
     """\]sent\s{1,100}(-|({file_name}\S+))\s""",
     """\]sent\s{1,100}(-|({file_path}({file_parent}\/(\S+\/)?)({file_name}\S+)))\s""",
-    """\]sent\s{1,100}\/\S+\.({file_ext}[^\/\.\s]+)\s""",
+    """\]sent\s{1,100}\/\S+\.({file_ext}[^\/\.\s]{1,2000})\s""",
     """\]sent\s{1,100}(\S+\s{1,100}){2}({outcome}\d{1,100})""",
     """\]sent\s{1,100}(\S+\s{1,100}){3}({bytes}\d{1,100})""",
   ]

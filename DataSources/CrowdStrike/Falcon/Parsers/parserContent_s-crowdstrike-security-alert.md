@@ -9,14 +9,14 @@ Name = s-crowdstrike-security-alert
   TimeFormat = "epoch"
   Conditions = [ """"eventType":""", """"DetectionSummaryEvent"""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"eventCreationTime":\s{0,100}({time}\d{1,100})""",
-    """"DetectName":\s{0,100}"({alert_type}[^"]+)""",
-    """"Technique":"({alert_name}[^"]+)"""",
-    """"Severity":\s{0,100}({alert_severity}[^",]+)""",
-    """"DetectId":\s{0,100}"({alert_id}[^"]+)""",
-    """({additional_info_1}"DocumentsAccessed":\s{0,100}[^\]]+\]).*?({additional_info_2}"ExecutablesWritten":\s{0,100}[^\]]+\])""",
-    """"FileName":\s{0,100}"(|({process_name}[^"]+))"""",
-    """"FilePath":\s{0,100}"(|({file_path}[^"]+))"""",
+    """"DetectName":\s{0,100}"({alert_type}[^"]{1,2000})""",
+    """"Technique":"({alert_name}[^"]{1,2000})"""",
+    """"Severity":\s{0,100}({alert_severity}[^",]{1,2000})""",
+    """"DetectId":\s{0,100}"({alert_id}[^"]{1,2000})""",
+    """({additional_info_1}"DocumentsAccessed":\s{0,100}[^\]]{1,2000}\]).*?({additional_info_2}"ExecutablesWritten":\s{0,100}[^\]]{1,2000}\])""",
+    """"FileName":\s{0,100}"(|({process_name}[^"]{1,2000}))"""",
+    """"FilePath":\s{0,100}"(|({file_path}[^"]{1,2000}))"""",
     """"CommandLine"{1,20}:\s{0,100}"{1,20}\\*"{0,20}({command_line}.+?)\\*\s{0,100}"{1,20}
 ```

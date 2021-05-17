@@ -5,15 +5,15 @@ Name = checkpoint-network-encrypt
   DataType = "network-alert"
   Conditions = [ """CheckPoint""", """product:"""", """action:"accept encrypt"""" ]
   Fields = ${CheckpointParserTemplates.checkpoint-auth.Fields}[
-    """event_name:"{1,20}({alert_name}[^"]+)""",
-    """cu_rule_category:"{1,20}({alert_type}[^"]+)""",
-    """proto:"{1,20}({protocol}[^"]+)""",
-    """cu_rule_id:"{1,20}({rule_id}[^"]+)""",
+    """event_name:"{1,20}({alert_name}[^"]{1,2000})""",
+    """cu_rule_category:"{1,20}({alert_type}[^"]{1,2000})""",
+    """proto:"{1,20}({protocol}[^"]{1,2000})""",
+    """cu_rule_id:"{1,20}({rule_id}[^"]{1,2000})""",
     """service:"{1,20}({service}\d{1,100})"""
-    """cu_action:"{1,20}({action}[^"]+)""",
-    """cu_detected_by:"{1,20}({src_ip}[^"]+)""",
-    """ src:"{1,20}({src_ip}[A-Fa-f:\d.]+)""",
-    """dst:"{1,20}({dest_ip}[^"]+)""",
+    """cu_action:"{1,20}({action}[^"]{1,2000})""",
+    """cu_detected_by:"{1,20}({src_ip}[^"]{1,2000})""",
+    """ src:"{1,20}({src_ip}[A-Fa-f:\d.]{1,2000})""",
+    """dst:"{1,20}({dest_ip}[^"]{1,2000})""",
    
    ]
 }
@@ -24,22 +24,22 @@ checkpoint-auth = {
   TimeFormat = "epoch_sec"
   Fields = [
     """\Wtime:"({time}\d{1,100})""",
-    """\W({host}[\w\-.]+) CheckPoint""",
-    """\Wuser:"({user_lastname}[^,]+),\s{0,100}({user_firstname}[\w\s]+\S)\s{0,100}\(({user}.+?)\)""",
-    """\Wuser:"({user_fullname}[^,:\("]+)\s\(({user}[^\)]+)\)""",
-    """\Wsrc:"({src_ip}[A-Fa-f:\d.]+)""",
-    """\Wendpoint_ip:"({dest_ip}[A-Fa-f:\d.]+)""",
-    """host_ip:"({dest_ip}[^"]+)""",
-    """\Wauth_method:"({auth_method}[^"]+)""",
-    """\Wauth_status:"({outcome}[^"]+)""",
-    """\sstatus:"({outcome}[^"]+)""",
-    """\Wdomain_name:"({domain}[^"]+)""",
-    """\Worigin:"({origin_ip}[^"]+)""",
-    """\Worigin_sic_name:"CN=({origin_name}[^",]+)""",
-    """\Wproduct:"({product_name}[^"]+)""",
-    """reason:"({failure_reason}[^"]+)""",
-    """\Wsrc_machine_name:"({src_host}[\w\-.]+)""",
-    """\Wifdir:"({direction}[^"]+)""",
+    """\W({host}[\w\-.]{1,2000}) CheckPoint""",
+    """\Wuser:"({user_lastname}[^,]{1,2000}),\s{0,100}({user_firstname}[\w\s]{1,2000}\S)\s{0,100}\(({user}.+?)\)""",
+    """\Wuser:"({user_fullname}[^,:\("]{1,2000})\s\(({user}[^\)]{1,2000})\)""",
+    """\Wsrc:"({src_ip}[A-Fa-f:\d.]{1,2000})""",
+    """\Wendpoint_ip:"({dest_ip}[A-Fa-f:\d.]{1,2000})""",
+    """host_ip:"({dest_ip}[^"]{1,2000})""",
+    """\Wauth_method:"({auth_method}[^"]{1,2000})""",
+    """\Wauth_status:"({outcome}[^"]{1,2000})""",
+    """\sstatus:"({outcome}[^"]{1,2000})""",
+    """\Wdomain_name:"({domain}[^"]{1,2000})""",
+    """\Worigin:"({origin_ip}[^"]{1,2000})""",
+    """\Worigin_sic_name:"CN=({origin_name}[^",]{1,2000})""",
+    """\Wproduct:"({product_name}[^"]{1,2000})""",
+    """reason:"({failure_reason}[^"]{1,2000})""",
+    """\Wsrc_machine_name:"({src_host}[\w\-.]{1,2000})""",
+    """\Wifdir:"({direction}[^"]{1,2000})""",
   ]
 
 ```

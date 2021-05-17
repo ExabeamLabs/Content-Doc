@@ -10,9 +10,9 @@ Name = unix-authentication-fail
   Conditions = [ """ httpd:""", """AD authentication for user""", """failed""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
-    """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]+)\s{1,100}""",
-    """AD authentication for user ({user}[^\s]+) failed"""
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]{1,2000})\s{1,100}""",
+    """AD authentication for user ({user}[^\s]{1,2000}) failed"""
   ]
 }
 ```

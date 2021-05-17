@@ -10,10 +10,10 @@ Name = fortinet-ipsec-vpn-end
   Conditions = [ "IPsec connection status change", "tunnel-down", "user=" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """devname="{0,20}({host}[^\s"]+)""",
-    """\d\s({host}[^\s]+)\sdate=""",
-    """rem_?ip=(?:N\/A|({src_ip}[^\s,]+))[\s,]""",
-    """xauth_?user="(?:N\/A|({user}[^"]+))""""
+    """devname="{0,20}({host}[^\s"]{1,2000})""",
+    """\d\s({host}[^\s]{1,2000})\sdate=""",
+    """rem_?ip=(?:N\/A|({src_ip}[^\s,]{1,2000}))[\s,]""",
+    """xauth_?user="(?:N\/A|({user}[^"]{1,2000}))""""
   ]
 }
 ```

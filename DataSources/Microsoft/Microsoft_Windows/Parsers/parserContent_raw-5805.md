@@ -11,12 +11,12 @@ Name = raw-5805
   Fields = [
     """SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """<EventID Qualifiers='0'>({event_code}5805)<\/EventID>""",
-    """<Computer>({host}[^<]+)<\/Computer>""",
-    """<Message>({additional_info}[^<]+)<\/Message>""",
-    """ComputerName(:|=)\s{0,100}({host}[\w.-]+)""",
+    """<Computer>({host}[^<]{1,2000})<\/Computer>""",
+    """<Message>({additional_info}[^<]{1,2000})<\/Message>""",
+    """ComputerName(:|=)\s{0,100}({host}[\w.-]{1,2000})""",
     """Event ID: ({event_code}\d{1,100})""",
-    """({event_name}The session setup from the computer ({src_host}[^\s]+)\sfailed to authenticate)""",
-    """The following error occurred:\s{1,100}({failure_reason}[^<]+)\.<\/Message>"""
+    """({event_name}The session setup from the computer ({src_host}[^\s]{1,2000})\sfailed to authenticate)""",
+    """The following error occurred:\s{1,100}({failure_reason}[^<]{1,2000})\.<\/Message>"""
   ]
 }
 ```

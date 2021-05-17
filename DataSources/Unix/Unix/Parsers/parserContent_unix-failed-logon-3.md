@@ -10,11 +10,11 @@ Name = unix-failed-logon-3
   Conditions = [ """sshd[""", """]: Failed password for """ ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=([^\=]+@\s{0,100})?({host}\S+)""",
-    """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]+)\s{1,100}""",
-    """Message forwarded from ({host}[^\s:]+)""",
+    """exabeam_host=([^\=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]{1,2000})\s{1,100}""",
+    """Message forwarded from ({host}[^\s:]{1,2000})""",
     """({event_code}ssh)""",
-    """Failed password for ({user}[^\s]+) from ({src_ip}[A-Fa-f:\d.]+)""",
+    """Failed password for ({user}[^\s]{1,2000}) from ({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """ port ({src_port}\d{1,100})""",
   ]
 }

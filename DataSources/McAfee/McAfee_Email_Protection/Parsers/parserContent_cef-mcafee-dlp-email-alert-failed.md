@@ -9,21 +9,21 @@ Name = cef-mcafee-dlp-email-alert-failed
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """|McAfee|Secure Internet Gateway|""", """|smtp:Email Rejected|""" ]
   Fields = [
-    """CEF:([^\|]*\|){4}({alert_name}[^\|]+)""",
+    """CEF:([^\|]{0,2000}\|){4}({alert_name}[^\|]{1,2000})""",
     """\Wrt=({time}\d{1,100})""",
-    """\Wdvchost=({host}[\w\-.]+)""",
+    """\Wdvchost=({host}[\w\-.]{1,2000})""",
     """\WeventId=({alert_id}\d{1,100})""",
-    """\Wact=({outcome}.+?)\s{1,100}([\w\\]+=|$)""",
-    """\Wshost=({src_host}[\w\-.]+)""",
-    """\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
-    """\WFrom\\=<({sender}[^\s>]+)""",
-    """\WFrom\\=<[^@]+@({external_domain_sender}[^\s>]+)""",
+    """\Wact=({outcome}.+?)\s{1,100}([\w\\]{1,2000}=|$)""",
+    """\Wshost=({src_host}[\w\-.]{1,2000})""",
+    """\Wsrc=({src_ip}[A-Fa-f:\d.]{1,2000})""",
+    """\WFrom\\=<({sender}[^\s>]{1,2000})""",
+    """\WFrom\\=<[^@]{1,2000}@({external_domain_sender}[^\s>]{1,2000})""",
     """\Wsize=(|({bytes}\d{1,100}))""",
-    """\Wto\\=<(unknown|({recipients}[^>]+))""",
-    """\Wto\\=<(unknown|({recipient}[^\s>,;]+))""",
-    """\Wto\\=<[^@]+@({external_domain_recipient}[^\s>]+)""",
-    """\Wattachment\(s\)\\='(|({attachments}[^']+))'""",
-    """\Wattachment\(s\)\\='(|({attachment}[^,']+)),""",
+    """\Wto\\=<(unknown|({recipients}[^>]{1,2000}))""",
+    """\Wto\\=<(unknown|({recipient}[^\s>,;]{1,2000}))""",
+    """\Wto\\=<[^@]{1,2000}@({external_domain_recipient}[^\s>]{1,2000})""",
+    """\Wattachment\(s\)\\='(|({attachments}[^']{1,2000}))'""",
+    """\Wattachment\(s\)\\='(|({attachment}[^,']{1,2000})),""",
   ]
   DupFields = [ "alert_name->alert_type" ]
 }

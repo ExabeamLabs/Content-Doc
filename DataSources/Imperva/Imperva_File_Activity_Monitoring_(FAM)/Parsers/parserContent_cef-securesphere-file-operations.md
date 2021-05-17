@@ -10,17 +10,17 @@ Name = cef-securesphere-file-operations
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ """CEF""", """|SecureSphere|""", """|Audit.FAM|""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """\Wrt=({time}\w+ \d{1,100} \d\d\d\d \d\d:\d\d:\d\d)""",
-    """\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
-    """\Wdst=({dest_ip}[A-Fa-f:\d.]+)""",
+    """\Wsrc=({src_ip}[A-Fa-f:\d.]{1,2000})""",
+    """\Wdst=({dest_ip}[A-Fa-f:\d.]{1,2000})""",
     """\Wspt=({src_port}\d{1,100})""",
     """\Wproto=({protocol}.+?)\s{1,100}(\w+=|$)""",
     """\Wduser=({account}.+?)\s{1,100}(\w+=|$)""",
     """\Wcs9=({outcome}.+?)\s{1,100}(\w+=|$)""",
     """\Wcs8=({accesses}.+?)\s{1,100}(\w+=|$)""",
     """\Wcs7=({file_path}.+?)\s{1,100}(\w+=|$)""",
-    """\Wcs7=\\+({dest_host}[^\\]+)\\+({file_parent}([^\\]+\\)+?)({file_name}[^\\]+?(\.({file_ext}\w+))?)\s{1,100}(\w+=|$)""",
+    """\Wcs7=\\+({dest_host}[^\\]{1,2000})\\+({file_parent}([^\\]{1,2000}\\)+?)({file_name}[^\\]{1,2000}?(\.({file_ext}\w+))?)\s{1,100}(\w+=|$)""",
     """\Wcs6=({user}.+?)\s{1,100}(\w+=|$)""",
     """\Wcs5=({domain}.+?)\s{1,100}(\w+=|$)""",
     """\Wcs4=({event_code}.+?)\s{1,100}(\w+=|$)""",

@@ -9,6 +9,6 @@ Name = msnetwork-nac-logon-2
   TimeFormat = "MM/dd/yyyy,HH:mm:ss"
   Conditions = [ ""","IAS",""", """,13,"""]
   Fields = [
-    """"({host}[^\,]+)","IAS",({time}\d\d\/\d\d\/\d\d\d\d,\d\d:\d\d:\d\d)""",
+    """"({host}[^\,]{1,2000})","IAS",({time}\d\d\/\d\d\/\d\d\d\d,\d\d:\d\d:\d\d)""",
     """\d\d:\d\d:\d\d,\d{0,100}
 ```

@@ -5,8 +5,8 @@ Name = cef-okta-account-password-reset
   DataType = "account-password-reset"
   Conditions = ["""CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Okta""", """"eventType":"system.email.password_reset.sent_message""""]
   Fields = ${OktaParserTemplates.json-okta-auth.Fields}[
-    """target(s)?"{1,20}:[^\]]+?"{1,20}type"{1,20}:"{1,20}User"{1,20}[^\]\}]+?"{1,20}(alternateId|emailAddress)"{1,20}:(null|"{1,20}({target_user}[^"@]+@({target_domain}[^"]+)))""",
-    """target(s)?"{1,20}:[^\]]+?"{1,20}type"{1,20}:"{1,20}User"{1,20}[^\]\}]+?"{1,20}(alternateId|emailAddress)"{1,20}:(null|"{1,20}(({target_domain}[^\\\/]+)[\/\\]+)?({target_user}[^"]+))"""
+    """target(s)?"{1,20}:[^\]]{1,2000}?"{1,20}type"{1,20}:"{1,20}User"{1,20}[^\]\}]{1,2000}?"{1,20}(alternateId|emailAddress)"{1,20}:(null|"{1,20}({target_user}[^"@]{1,2000}@({target_domain}[^"]{1,2000})))""",
+    """target(s)?"{1,20}:[^\]]{1,2000}?"{1,20}type"{1,20}:"{1,20}User"{1,20}[^\]\}]{1,2000}?"{1,20}(alternateId|emailAddress)"{1,20}:(null|"{1,20}(({target_domain}[^\\\/]{1,2000})[\/\\]{1,2000})?({target_user}[^"]{1,2000}))"""
   ]
 }
 json-okta-auth = {
@@ -15,32 +15,32 @@ json-okta-auth = {
   Lms = Splunk
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields=[
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"published"{1,20}\s{0,100}:\s{0,100}"{1,20}({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     """({app}(?i)Okta)""",
-    """requestClientApplication=({app}[^=]+?)\s{0,100}\w+=""",
-    """"city":"({location_city}[^",]+)""",
-    """"state":"({location_state}[^",]+)""",
-    """"country":"({location_country}[^",]+)""",
-    """"ipAddress"{1,20}\s{0,100}:\s{0,100}"{1,20}({src_ip}[^",]+)""",
-    """"rawUserAgent"{1,20}\s{0,100}:\s{0,100}"{1,20}((?i)unknown|({user_agent}[^",]+))""",
-    """"browser"{1,20}\s{0,100}:\s{0,100}"{1,20}((?i)unknown|({browser}[^",]+))""",
-    """"os"{1,20}\s{0,100}:\s{0,100}"{1,20}((?i)unknown|({os}[^",]+))""",
-    """"action"{1,20}:.+?"{1,20}message"{1,20}:"{1,20}({event_name}[^",]+)"""
-    """"displayMessage"\s{0,100}:\s{0,100}"({event_name}[^",]+)""",
-    """"action"{1,20}:.+?"{1,20}objectType"{1,20}:"{1,20}({activity}[^",]+)""",
-    """"legacyEventType"{1,20}:"{1,20}({activity}[^",]+)""",
-    """"reason":"({failure_reason}[^"]+)"""
-    """"target(s)?"{1,20}:[^\}\]]+?"{1,20}displayName"{1,20}\s{0,100}:\s{0,100}"{1,20}((?i)unknown|({object}[^"]+[^\s]))"""",
-    """request"{1,20}:.+?User.+?"{1,20}displayName"{1,20}:(null|"{1,20}(Okta System|(?i)unknown|(?:({user_firstname}[^,"]+),\s{0,100}({user_lastname}[^"]+)|({user_fullname}[^"]+)))")""",
-    """"actor"{1,20}.+?"{1,20}type"{1,20}:"{1,20}User.+?displayName"{1,20}:(null|"{1,20}(Okta System|Okta Admin|(?i)unknown|(?:({user_lastname}[^,"]+),\s{0,100}({user_firstname}[^"]+)|({user_fullname}[^"]+))))""",
-    """request"{1,20}:.+?"{1,20}type"{1,20}:"{1,20}User"{1,20},"{1,20}alternateId"{1,20}:(null|"{1,20}(system@okta\.com|(?:({user_email}[^"@]+@({domain}[^"]+))|(({=domain}[^\\\/]+)[\/\\]+)?({user}[^"]+))))""",
-    """"actor"{1,20}:[^\]]*?"{1,20}type"{1,20}:"{1,20}User"{1,20},"{1,20}alternateId"{1,20}\s{0,100}:\s{0,100}"{1,20}(system@okta\.com|(?:({user_email}[^"@]+@({domain}[^"]+))|({user}[^"]+)))"""",
-    """"login":\s{0,100}"({user_email}[^"\s@]+@[^"\s@]+)"""",
-    """"login":\s{0,100}"[^@]+@({domain}[^"]+)""""
-    """requestUri":\s{0,100}"({request_uri}[^"]+?)\s{0,100}"""",
-    """"outcome":[^\]]*?"result"\s{0,100}:\s{0,100}"({outcome}[^"]+)"""",
-    """outcome":[^\]]*?"result":"?(null|({outcome_result_at}[^\"]+))"?,"reason":"?(null|({outcome_reason_at}[^"]+))""",
+    """requestClientApplication=({app}[^=]{1,2000}?)\s{0,100}\w+=""",
+    """"city":"({location_city}[^",]{1,2000})""",
+    """"state":"({location_state}[^",]{1,2000})""",
+    """"country":"({location_country}[^",]{1,2000})""",
+    """"ipAddress"{1,20}\s{0,100}:\s{0,100}"{1,20}({src_ip}[^",]{1,2000})""",
+    """"rawUserAgent"{1,20}\s{0,100}:\s{0,100}"{1,20}((?i)unknown|({user_agent}[^",]{1,2000}))""",
+    """"browser"{1,20}\s{0,100}:\s{0,100}"{1,20}((?i)unknown|({browser}[^",]{1,2000}))""",
+    """"os"{1,20}\s{0,100}:\s{0,100}"{1,20}((?i)unknown|({os}[^",]{1,2000}))""",
+    """"action"{1,20}:.+?"{1,20}message"{1,20}:"{1,20}({event_name}[^",]{1,2000})"""
+    """"displayMessage"\s{0,100}:\s{0,100}"({event_name}[^",]{1,2000})""",
+    """"action"{1,20}:.+?"{1,20}objectType"{1,20}:"{1,20}({activity}[^",]{1,2000})""",
+    """"legacyEventType"{1,20}:"{1,20}({activity}[^",]{1,2000})""",
+    """"reason":"({failure_reason}[^"]{1,2000})"""
+    """"target(s)?"{1,20}:[^\}\]]{1,2000}?"{1,20}displayName"{1,20}\s{0,100}:\s{0,100}"{1,20}((?i)unknown|({object}[^"]{1,2000}[^\s]))"""",
+    """request"{1,20}:.+?User.+?"{1,20}displayName"{1,20}:(null|"{1,20}(Okta System|(?i)unknown|(?:({user_firstname}[^,"]{1,2000}),\s{0,100}({user_lastname}[^"]{1,2000})|({user_fullname}[^"]{1,2000})))")""",
+    """"actor"{1,20}.+?"{1,20}type"{1,20}:"{1,20}User.+?displayName"{1,20}:(null|"{1,20}(Okta System|Okta Admin|(?i)unknown|(?:({user_lastname}[^,"]{1,2000}),\s{0,100}({user_firstname}[^"]{1,2000})|({user_fullname}[^"]{1,2000}))))""",
+    """request"{1,20}:.+?"{1,20}type"{1,20}:"{1,20}User"{1,20},"{1,20}alternateId"{1,20}:(null|"{1,20}(system@okta\.com|(?:({user_email}[^"@]{1,2000}@({domain}[^"]{1,2000}))|(({=domain}[^\\\/]{1,2000})[\/\\]{1,2000})?({user}[^"]{1,2000}))))""",
+    """"actor"{1,20}:[^\]]{0,2000}?"{1,20}type"{1,20}:"{1,20}User"{1,20},"{1,20}alternateId"{1,20}\s{0,100}:\s{0,100}"{1,20}(system@okta\.com|(?:({user_email}[^"@]{1,2000}@({domain}[^"]{1,2000}))|({user}[^"]{1,2000})))"""",
+    """"login":\s{0,100}"({user_email}[^"\s@]{1,2000}@[^"\s@]{1,2000})"""",
+    """"login":\s{0,100}"[^@]{1,2000}@({domain}[^"]{1,2000})""""
+    """requestUri":\s{0,100}"({request_uri}[^"]{1,2000}?)\s{0,100}"""",
+    """"outcome":[^\]]{0,2000}?"result"\s{0,100}:\s{0,100}"({outcome}[^"]{1,2000})"""",
+    """outcome":[^\]]{0,2000}?"result":"?(null|({outcome_result_at}[^\"]{1,2000}))"?,"reason":"?(null|({outcome_reason_at}[^"]{1,2000}))""",
   ]
 
 ```

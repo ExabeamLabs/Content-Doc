@@ -11,14 +11,14 @@ Name = cylance-security-alert
   Fields = [
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d)\d{1,100}Z \S+ CylancePROTECT""",
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
-    """Event Type:\s{0,100}({alert_type}[^,]+)""",
-    """Violation Type:\s{0,100}({alert_name}[^,]+)""",
-    """Device Name:\s{0,100}({src_host}[\w\-.]+)""",
-    """IP Address:\s{0,100}\(({src_ip}[a-fA-F:\d.]+)""",
-    """Process Name:\s{0,100}({process}[^,]+\\({process_name}[^\\,]+))""",
-    """User Name:\s{0,100}({user}[^,]+)""",
-    """, Action: ({outcome}[^,]+?),"""
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """Event Type:\s{0,100}({alert_type}[^,]{1,2000})""",
+    """Violation Type:\s{0,100}({alert_name}[^,]{1,2000})""",
+    """Device Name:\s{0,100}({src_host}[\w\-.]{1,2000})""",
+    """IP Address:\s{0,100}\(({src_ip}[a-fA-F:\d.]{1,2000})""",
+    """Process Name:\s{0,100}({process}[^,]{1,2000}\\({process_name}[^\\,]{1,2000}))""",
+    """User Name:\s{0,100}({user}[^,]{1,2000})""",
+    """, Action: ({outcome}[^,]{1,2000}?),"""
     """, Policy Name: ({additional_info}.+?)(\s{0,100}$|,)""" 
   ]
   SOAR {

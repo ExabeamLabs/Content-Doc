@@ -10,11 +10,11 @@ Name = cef-juniper-account-deleted
   Conditions = [ """CEF:""", """|Juniper|""", """|User deleted|""" ]
   Fields = [
 	"""\Wrt=({time}\d{1,100})""",
-	"""\Wdvchost=({host}[\w\-.]+)""",
-	"""\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
-	"""\Wsuser=(System|({user}[^\s]+))""",
-	"""\Wduser=({target_user}[^\s]+)""",
-	"""\Wshost=({src_host}[\w\-.]+)""",
+	"""\Wdvchost=({host}[\w\-.]{1,2000})""",
+	"""\Wsrc=({src_ip}[A-Fa-f:\d.]{1,2000})""",
+	"""\Wsuser=(System|({user}[^\s]{1,2000}))""",
+	"""\Wduser=({target_user}[^\s]{1,2000})""",
+	"""\Wshost=({src_host}[\w\-.]{1,2000})""",
         """\Wahost=({dest_host}.*?)\s\w+=""",
   ]
   DupFields = [ "target_user->account_name" ]

@@ -13,15 +13,9 @@ Name = cef-528
     """exabeam_EventTime=({eventtime}\d{1,100})""",
     """({event_code}528)""",
     """\srt=({time}\d{1,100})""",
-    """\ssrc=({src_ip}[a-fA-F:\d.]+)""",
+    """\ssrc=({src_ip}[a-fA-F:\d.]{1,2000})""",
     """\ssuser=({user}.+?)\s{1,100}\w+=""",
     """\ssproc=({auth_process}.+?)\s{1,100}\w+=""",
-    """\sdntdom=({domain}[^\s]+)""",
-    """\sduid=\([^,]+,({logon_id}[^\)]+)""",
-    """\scn1=({logon_type}\d{1,100})""",
-    """\sdvchost=({host}[^\s]+)""",
-    """\sduser=(.*?\\+)?({account}.*?)\s{1,100}\w+=""",
-  ]
-  DupFields = [ "host->dest_host"]
-}
+    """\sdntdom=({domain}[^\s]{1,2000})""",
+    """\sduid=\([^,]{1,2000}
 ```

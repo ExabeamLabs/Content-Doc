@@ -11,12 +11,12 @@ Name = cef-egnyte-file-operations
   Conditions = [ """CEF:""", """|resource-acl-updated|""", """destinationServiceName=Egnyte""", """dproc=permissions-audit-report""", """ACL was""", """with permission""" ]
   Fields = [
     """"time":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}Z)""",
-    """"assigner":"[^"\(]+\(\s{0,100}({user_email}[^\s@\(\)]+@[^\s@\(\)]+)""",
-    """"assignee":"({object}[^"]+)""",
-    """"folder":"(|({file_path}({file_parent}[^"]*?)[\\\/]*({file_name}[^"\\\/]+[\\\/](\.({file_ext}[^\\\/\.\s"]+))?)))\s{0,100}"""",
-    """({accesses}ACL was.*?with permission\s{1,100}\[[^\]]*\])""",
-    """destinationServiceName=({service}[^"]+?)\s{1,100}(\w+=|$)""",
-    """msg=({additional_info}[^"]+?)\s{1,100}(\w+=|$)""",
+    """"assigner":"[^"\(]{1,2000}\(\s{0,100}({user_email}[^\s@\(\)]{1,2000}@[^\s@\(\)]{1,2000})""",
+    """"assignee":"({object}[^"]{1,2000})""",
+    """"folder":"(|({file_path}({file_parent}[^"]{0,2000}?)[\\\/]{0,2000}({file_name}[^"\\\/]{1,2000}[\\\/](\.({file_ext}[^\\\/\.\s"]{1,2000}))?)))\s{0,100}"""",
+    """({accesses}ACL was.*?with permission\s{1,100}\[[^\]]{0,2000}\])""",
+    """destinationServiceName=({service}[^"]{1,2000}?)\s{1,100}(\w+=|$)""",
+    """msg=({additional_info}[^"]{1,2000}?)\s{1,100}(\w+=|$)""",
   ]
 }
 ```

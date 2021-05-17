@@ -11,8 +11,8 @@ Name = cisco-dhcp
   Fields = [
 		"""({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d)""",
 		"""exabeam_host=({host}\S+)""",
-		"""\shn="({dest_host}[^"]+?)""""
-		"""\sip="({dest_ip}[a-fA-F0-9.:]+)"""
+		"""\shn="({dest_host}[^"]{1,2000}?)""""
+		"""\sip="({dest_ip}[a-fA-F0-9.:]{1,2000})"""
   	]
     DupFields = [ "dest_host->user" ]
 }

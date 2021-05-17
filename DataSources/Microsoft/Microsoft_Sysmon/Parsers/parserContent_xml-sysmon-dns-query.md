@@ -15,11 +15,11 @@ Name = xml-sysmon-dns-query
     """<EventID>({event_code}\d{1,100})</EventID>""",
     """<Computer>({host}.+?)</Computer>""",
     """<Security UserID='({user_sid}.+?)'/>""",
-    """(?i)<Data Name='ProcessGuid'>\{({process_guid}[A-F0-9a-f-]+)\}</Data>""",
+    """(?i)<Data Name='ProcessGuid'>\{({process_guid}[A-F0-9a-f-]{1,2000})\}</Data>""",
     """<Data Name='ProcessId'>({pid}\d{1,100})</Data>""",
     """<Data Name='QueryName'>({query}.+?)\s{0,100}</Data>""",
     """<Data Name='QueryResults'>({response}.+?)\s{0,100}</Data>""",
-    """<Data Name='Image'>({path}(({directory}[^<]*)\\+)?({process_name}.+?))</Data>""",
+    """<Data Name='Image'>({path}(({directory}[^<]{0,2000})\\+)?({process_name}.+?))</Data>""",
   ]
    
 }

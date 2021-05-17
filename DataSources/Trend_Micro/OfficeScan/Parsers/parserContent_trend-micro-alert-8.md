@@ -10,12 +10,12 @@ Name = trend-micro-alert-8
   Conditions = [ """[LogNetworkVirus""", """Network Virus Name=""", """Victim IP=""" ]
   Fields = [
     """\d{1,100} ({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-    """Network Virus Name="({alert_name}[^"]+)"""",
-    """Domain="({domain}[^"]+)""",
-    """User="({user}[^"]+)""",
-    """Attacker IP="({dest_ip}[a-fA-F\d.:]+)""",
-    """Device name="({src_host}[^"]+)""",
-    """Victim IP="({src_ip}[a-fA-F\d.:]+)"""
+    """Network Virus Name="({alert_name}[^"]{1,2000})"""",
+    """Domain="({domain}[^"]{1,2000})""",
+    """User="({user}[^"]{1,2000})""",
+    """Attacker IP="({dest_ip}[a-fA-F\d.:]{1,2000})""",
+    """Device name="({src_host}[^"]{1,2000})""",
+    """Victim IP="({src_ip}[a-fA-F\d.:]{1,2000})"""
   ]
   DupFields = [ "alert_name->alert_type", "src_host->host" ]
 }

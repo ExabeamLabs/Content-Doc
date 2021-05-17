@@ -15,7 +15,7 @@ Name = exalms-552
     """"(param8|Dest_host)"\s{0,100}:\s{0,100}"(-|({dest_host}.+?))\s{0,100}"""",
     """"(param9|Dest_Service)"\s{0,100}:\s{0,100}"(-|({dest_service}.+?))\s{0,100}"""",
     """({event_code}552)""",
-    """"host":"({dest_ip}[A-Fa-f:\d.]+)""",
+    """"host":"({dest_ip}[A-Fa-f:\d.]{1,2000})""",
     """"(param11|SourceNetworkAddress|source_ip)"\s{0,100}:\s{0,100}"(-|({src_ip}.+?))\s{0,100}"""",
     """"user"\s{0,100}:\s{0,100}\{.*?"domain"\s{0,100}:\s{0,100}"({domain}.+?)"""",
     """"(param1|UserName)"\s{0,100}:\s{0,100}"(-|({user}.+?))\s{0,100}"""",
@@ -25,9 +25,5 @@ Name = exalms-552
     """"(param5|Target User Name)"\s{0,100}:\s{0,100}"(-|({account}.+?))\s{0,100}"""",
     """"(param6|Target Domain)"\s{0,100}:\s{0,100}"(-|({account_domain}.+?))\s{0,100}"""",
     """"(param3|Logon ID|logon_id)"\s{0,100}:\s{0,100}"(-|({logon_id}.+?))\s{0,100}"""",
-    """"(param3|Logon ID|logon_id)"\s{0,100}:\s{0,100}"\(([\dxA-F]+,)?(-|({logon_id}.+?)\))\s{0,100}"""",
-    """"(param4|Logon GUID)"\s{0,100}:\s{0,100}"(-|({user_logon_guid}.+?))"""",
-    """record_number"\s{0,100}:\s{0,100}"({record_id}\d{1,100})"""
-  ]
-}
+    """"(param3|Logon ID|logon_id)"\s{0,100}:\s{0,100}"\(([\dxA-F]{1,2000}
 ```

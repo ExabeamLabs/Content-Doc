@@ -9,7 +9,7 @@ Name = pan-virus-alert
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
   Conditions = [ """,THREAT,virus,""" ]
   Fields = [
-    """exabeam_host=({host}[^\s]+)""",
-    """"host":\{.*?"name":"({host}[^"]+)".*?\}""",
-    """({host}[\w\-\.]+)\s{1,100}\d{1,100}
+    """exabeam_host=({host}[^\s]{1,2000})""",
+    """"host":\{.*?"name":"({host}[^"]{1,2000})".*?\}""",
+    """({host}[\w\-\.]{1,2000})\s{1,100}\d{1,100}
 ```

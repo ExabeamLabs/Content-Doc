@@ -10,15 +10,12 @@ Name = n-forwarded-cef-540
   Conditions = [ "|McAfee|ESM", "43-21100540"]
   Fields = [
     """({event_name}Successful Network Logon)""",
-    """\|McAfee\|[^|]+?\|[^|]+?\|43-21100({event_code}\d{1,100})(0|1)\|""",
+    """\|McAfee\|[^|]{1,2000}?\|[^|]{1,2000}?\|43-21100({event_code}\d{1,100})(0|1)\|""",
     """\srt=({time}\d{1,100})""",
-    """shost=({host}[^\s]+)""",
-    """src=(?:-|({src_ip}[\w:.]+))\s{1,100}\w+=""",
-    """sntdom=({domain}[^\s]+)""",
-    """suser=({user}.+?)\s{1,100}nitro[\w]+=""",
+    """shost=({host}[^\s]{1,2000})""",
+    """src=(?:-|({src_ip}[\w:.]{1,2000}))\s{1,100}\w+=""",
+    """sntdom=({domain}[^\s]{1,2000})""",
+    """suser=({user}.+?)\s{1,100}nitro[\w]{1,2000}=""",
     """nitroLogon_Type=({logon_type}\d{1,100})""",
-    """nitroDestination_Logon_ID=\([^,]+,({logon_id}[^\)]+)"""
-  ]
-  DupFields = [ "host->dest_host" ]
-}
+    """nitroDestination_Logon_ID=\([^,]{1,2000}
 ```

@@ -10,10 +10,10 @@ Name = json-ping-id-auth-failed
   Conditions = [ """"application-msg":""", """SSO Invalid SMS Passcode""", """"triggered-by":""", """Ping""" ]
   Fields = [
     """time"{1,20}:"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""
-    """"{1,20}hostname"{1,20}:"{1,20}({host}[^"]+)""",
-    """app-username"{1,20}:"{1,20}(({user_email}[^@\s"]+@[^"\s]+)|({user}[^"\s]+))""",
-    """"src-application-name"{1,20}:"{1,20}({app}[^"]+)""",
-    """"application-msg"{1,20}:"{1,20}({failure_reason}[^}\]]+?)\s{0,100}"[,\]}]"""
+    """"{1,20}hostname"{1,20}:"{1,20}({host}[^"]{1,2000})""",
+    """app-username"{1,20}:"{1,20}(({user_email}[^@\s"]{1,2000}@[^"\s]{1,2000})|({user}[^"\s]{1,2000}))""",
+    """"src-application-name"{1,20}:"{1,20}({app}[^"]{1,2000})""",
+    """"application-msg"{1,20}:"{1,20}({failure_reason}[^}\]]{1,2000}?)\s{0,100}"[,\]}]"""
   ]
 }
 ```

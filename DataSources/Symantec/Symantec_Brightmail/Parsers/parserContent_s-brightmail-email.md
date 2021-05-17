@@ -9,11 +9,11 @@ Name = s-brightmail-email
     TimeFormat = "epoch_sec"
     Conditions = [ """[Brightmail]""", """ A message from """, """ returned Disposition:""" ]
     Fields = [
-      """\s({host}[\w\.-]+)\s{1,100}bmserver""",
-      """A message from\s{1,100}<({sender}[^\s@]+@({external_domain_sender}[^\s@>]+))>?\s{1,100}source""",
+      """\s({host}[\w\.-]{1,2000})\s{1,100}bmserver""",
+      """A message from\s{1,100}<({sender}[^\s@]{1,2000}@({external_domain_sender}[^\s@>]{1,2000}))>?\s{1,100}source""",
       """source\s{1,100}<?({direction}\w+)+>?\s{1,100}to""",
-      """to\s{1,100}<?({recipients}[^<>]+)>?\s{1,100}using""",
-      """to\s{1,100}<?({recipient}[^\s@<]+@({external_domain_recipient}[^\s@>]+))>?\s{1,100}using""",
+      """to\s{1,100}<?({recipients}[^<>]{1,2000})>?\s{1,100}using""",
+      """to\s{1,100}<?({recipient}[^\s@<]{1,2000}@({external_domain_recipient}[^\s@>]{1,2000}))>?\s{1,100}using""",
     ]
   }
 ```

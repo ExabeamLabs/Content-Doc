@@ -5,9 +5,9 @@ Name = json-4769-1
   DataType = "windows-4769"
   Conditions = [ """"event-id":4769""", """"message":"A Kerberos service ticket was requested""" ]
   Fields = ${WinParserTemplates.json-windows-events.Fields}[
-    """"ticket-options":"({ticket_options}[^"]+)""",
-    """"ticket-encryption-type":"({ticket_encryption_type}[^"]+)""",
-    """"service-name":"({src_host}[^\$"]+)""",
+    """"ticket-options":"({ticket_options}[^"]{1,2000})""",
+    """"ticket-encryption-type":"({ticket_encryption_type}[^"]{1,2000})""",
+    """"service-name":"({src_host}[^\$"]{1,2000})""",
     """"ip-address":"(::f+:)?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
 }
@@ -18,27 +18,27 @@ json-windows-events = {
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
     """"@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
-    """"service":".+?","host":"({host}[^"]+)""",
-    """"host":"({host}[^"]+)","authentication""",
-    """"host":"({host}[^"]+)","service":"""",
-    """"host":"({host}[^"]+)","ad"""",
-    """"host":"({host}[^"]+)","index"""",
-    """"user":\{[^\}]*?"uid":"({user}[^"@]+)""",
-    """"country_code2":"({src_external_country}[^"]+)""",
-    """"domain":"({domain}[^"]+)""",
-    """"source":\{([^\}]*?\{([^\}]*?\{[^\{\}]*?\})*[^\}]*?\})*[^\}]*?"host":"({src_host}[^"]+)""",
-    """"source":\{([^\}]*?\{([^\}]*?\{[^\{\}]*?\})*[^\}]*?\})*[^\}]*?"ipv4":"({src_ip}[a-fA-F\d.:]+)""",
-    """"destination":\{([^\}]*?\{([^\}]*?\{[^\{\}]*?\})*[^\}]*?\})*[^\}]*?"host":"({dest_host}[^"]+)""",
-    """"destination":\{([^\}]*?\{([^\}]*?\{[^\{\}]*?\})*[^\}]*?\})*[^\}]*?"ipv4":"({dest_ip}[a-fA-F\d.:]+)""",
+    """"service":".+?","host":"({host}[^"]{1,2000})""",
+    """"host":"({host}[^"]{1,2000})","authentication""",
+    """"host":"({host}[^"]{1,2000})","service":"""",
+    """"host":"({host}[^"]{1,2000})","ad"""",
+    """"host":"({host}[^"]{1,2000})","index"""",
+    """"user":\{[^\}]{0,2000}?"uid":"({user}[^"@]{1,2000})""",
+    """"country_code2":"({src_external_country}[^"]{1,2000})""",
+    """"domain":"({domain}[^"]{1,2000})""",
+    """"source":\{([^\}]{0,2000}?\{([^\}]{0,2000}?\{[^\{\}]{0,2000}?\})*[^\}]{0,2000}?\})*[^\}]{0,2000}?"host":"({src_host}[^"]{1,2000})""",
+    """"source":\{([^\}]{0,2000}?\{([^\}]{0,2000}?\{[^\{\}]{0,2000}?\})*[^\}]{0,2000}?\})*[^\}]{0,2000}?"ipv4":"({src_ip}[a-fA-F\d.:]{1,2000})""",
+    """"destination":\{([^\}]{0,2000}?\{([^\}]{0,2000}?\{[^\{\}]{0,2000}?\})*[^\}]{0,2000}?\})*[^\}]{0,2000}?"host":"({dest_host}[^"]{1,2000})""",
+    """"destination":\{([^\}]{0,2000}?\{([^\}]{0,2000}?\{[^\{\}]{0,2000}?\})*[^\}]{0,2000}?\})*[^\}]{0,2000}?"ipv4":"({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """"logon-type":({logon_type}\d{1,100})""",
-    """"logon-id":"({logon_id}[^"]+)""",
-    """"event-type":"({outcome}[^"]+)""",
+    """"logon-id":"({logon_id}[^"]{1,2000})""",
+    """"event-type":"({outcome}[^"]{1,2000})""",
     """"event-id":({event_code}\d{1,100})""",
-    """"message":"({event_name}[^"]+)""",
-    """"user-sid":"({user_sid}[^"]+)""",
-    """"status":"({result_code}[^"]+)""",
-    """"service-name":"({dest_host}[^"]+\$)""",
-    """"service-name":"({service_name}[^"]+)"""
+    """"message":"({event_name}[^"]{1,2000})""",
+    """"user-sid":"({user_sid}[^"]{1,2000})""",
+    """"status":"({result_code}[^"]{1,2000})""",
+    """"service-name":"({dest_host}[^"]{1,2000}\$)""",
+    """"service-name":"({service_name}[^"]{1,2000})"""
   ]
 
 ```

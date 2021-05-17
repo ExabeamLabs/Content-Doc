@@ -9,14 +9,14 @@ Name = raw-5157-1
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """Layer Name:""", """The Windows Filtering Platform has blocked a connection""", """Network Information:""" ]
   Fields = [
-    """exabeam_host=([^=]+?@\s{0,100})?({host}[\w.-]+)""",
+    """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """({event_name}The Windows Filtering Platform has blocked a connection)""",
-    """Process ID:\s{1,100}({pid}[^\s]+)\s{1,100}Application""",
-    """Direction:\s{1,100}({direction}[^\s]+)\s{1,100}Source Address:""",
-    """Source Address:\s{1,100}({src_ip}[a-fA-F\d:\.]+)""",
+    """Process ID:\s{1,100}({pid}[^\s]{1,2000})\s{1,100}Application""",
+    """Direction:\s{1,100}({direction}[^\s]{1,2000})\s{1,100}Source Address:""",
+    """Source Address:\s{1,100}({src_ip}[a-fA-F\d:\.]{1,2000})""",
     """Source Port:\s{1,100}({src_port}\d{1,100})""",
-    """Destination Address:\s{1,100}({dest_ip}[a-fA-F\d:\.]+)""",
+    """Destination Address:\s{1,100}({dest_ip}[a-fA-F\d:\.]{1,2000})""",
     """Destination Port:\s{1,100}({dest_port}\d{1,100})"""
   ]
 }

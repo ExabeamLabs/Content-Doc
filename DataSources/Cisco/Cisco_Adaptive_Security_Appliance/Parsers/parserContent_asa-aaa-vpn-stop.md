@@ -10,6 +10,6 @@ Name = asa-aaa-vpn-stop
     DataType = "vpn-end"
     TimeFormat = "MMM dd yyyy HH:mm:ss"
     Conditions = [ "Authen Session End:" ]
-    Fields = [ """\s({host}[^\s]+)\s({time}[a-zA-Z]{3} \d\d \d\d\d\d \d\d:\d\d:\d\d).+Authen Session End: user '({user}[^']+)'""" ]
+    Fields = [ """\s({host}[^\s]{1,2000})\s({time}[a-zA-Z]{3} \d\d \d\d\d\d \d\d:\d\d:\d\d).+Authen Session End: user '({user}[^']{1,2000})'""" ]
   }
 ```

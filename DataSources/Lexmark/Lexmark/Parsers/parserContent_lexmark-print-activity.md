@@ -9,7 +9,7 @@ Name = lexmark-print-activity
   TimeFormat = "epoch"
   Conditions = [ """|Lexmark|Print Release|""", """|Print Job|"""]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[^\s]{1,2000})""",
     """\sstart=(?:|({time}\d{1,100}))(\s{1,100}\w+=|\s{0,100}$)""",
     """\ssuid=(?:|({user}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\sduid=(?:|({account}.+?))(\s{1,100}\w+=|\s{0,100}$)""",

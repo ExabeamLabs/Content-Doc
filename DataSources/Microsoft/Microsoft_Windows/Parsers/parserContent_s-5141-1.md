@@ -12,11 +12,11 @@ Name = s-5141-1
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """({event_name}A directory service object was deleted)""",
     """DetectTime=({time_created}.+?)\s{1,100}\w+=""",
-    """ComputerName=({host}[\w.\-]+)""",
+    """ComputerName=({host}[\w.\-]{1,2000})""",
     """EventID=({event_code}\w+)""",
     """Account Name=({user}.+?)\s{1,100}""",
     """Account Domain=({domain}.+?)\s""",
-    """Logon ID=({logon_id}[^\s]+)\s""",
+    """Logon ID=({logon_id}[^\s]{1,2000})\s""",
     """Object:Class=({object_class}.+?)\s""",
     """Object:DN=({object_dn}.+?)\s{0,100}Object:GUID=""",
     """Object:DN=.+?({object_ou}OU.+?)\s{0,100}Object:GUID"""

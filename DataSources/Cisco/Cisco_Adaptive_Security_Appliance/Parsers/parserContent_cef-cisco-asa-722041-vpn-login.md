@@ -9,15 +9,15 @@ Name = cef-cisco-asa-722041-vpn-login
   TimeFormat = "epoch"
   Conditions = [ """|CISCO|ASA|""", """|722041|""" ]
   Fields = [
-    """exabeam_host=({host}[^\s]+)""",
+    """exabeam_host=({host}[^\s]{1,2000})""",
     """\srt=({time}\d{0,100})""",
     """\|({event_code}722041)""",
-    """\sUser\s{1,100}<(({domain}[^\\]+)\\)?(?:({user_fullname}(\w+\s{1,100})+\w+)|({user_email}[^@\s>]+@[^@\s>]+?)|({user}[^>@\s]+))>""",
+    """\sUser\s{1,100}<(({domain}[^\\]{1,2000})\\)?(?:({user_fullname}(\w+\s{1,100})+\w+)|({user_email}[^@\s>]{1,2000}@[^@\s>]{1,2000}?)|({user}[^>@\s]{1,2000}))>""",
     """\sIP\s{1,100}<({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})>""",
-    """\sduser=<?(?:({domain}[^\s]+?)\\+)?(?:({user_fullname}(\w+\s{1,100})+\w+)|({user_email}[^@\s>]+@[^@\s>]+?)|({user}[^>@\s]+))>?\s{1,100}([\w.]+=|$)""",
-    """\sad\.Username=<?(?:({domain}[^\s]+?)\\+)?(?:({user_fullname}(\w+\s{1,100})+\w+)|({user_email}[^@\s>]+@[^@\s>]+?)|({user}[^>@\s]+))>?\s{1,100}([\w.]+=|$)""",
-    """\sdhost=<?({dest_host}.+?)>?\s{1,100}([\w.]+=|$)""",
-    """\sdvchost=({host}[^\s]+)""",
+    """\sduser=<?(?:({domain}[^\s]{1,2000}?)\\+)?(?:({user_fullname}(\w+\s{1,100})+\w+)|({user_email}[^@\s>]{1,2000}@[^@\s>]{1,2000}?)|({user}[^>@\s]{1,2000}))>?\s{1,100}([\w.]{1,2000}=|$)""",
+    """\sad\.Username=<?(?:({domain}[^\s]{1,2000}?)\\+)?(?:({user_fullname}(\w+\s{1,100})+\w+)|({user_email}[^@\s>]{1,2000}@[^@\s>]{1,2000}?)|({user}[^>@\s]{1,2000}))>?\s{1,100}([\w.]{1,2000}=|$)""",
+    """\sdhost=<?({dest_host}.+?)>?\s{1,100}([\w.]{1,2000}=|$)""",
+    """\sdvchost=({host}[^\s]{1,2000})""",
     """\sc6a3=({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}).*?c6a3Label=Destination""", 
   ]
   DupFields = ["user->account"]

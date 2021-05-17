@@ -10,15 +10,15 @@ Name = cef-fireeye-hx-security-alert
   Conditions = [ """|fireeye|hx|""", """|Malware Hit Found|""", """ categoryTupleDescription=""", """ cs11=""" ]
   Fields = [
     """\Wrt=({time}\w+ \d{1,100} \d\d\d\d \d\d:\d\d:\d\d)""",
-    """\Wdvchost=({host}[\w\-.]+)""",
-    """CEF:([^\|]*\|){6}({alert_severity}\d{1,100})""",
-    """\Wdst=({src_ip}[A-Fa-f:\d.]+)""",
-    """\Wdhost=({src_host}[\w\-.]+)""",
-    """\Wdntdom=({domain}[^\s]+)""",
+    """\Wdvchost=({host}[\w\-.]{1,2000})""",
+    """CEF:([^\|]{0,2000}\|){6}({alert_severity}\d{1,100})""",
+    """\Wdst=({src_ip}[A-Fa-f:\d.]{1,2000})""",
+    """\Wdhost=({src_host}[\w\-.]{1,2000})""",
+    """\Wdntdom=({domain}[^\s]{1,2000})""",
     """\WexternalId=({alert_id}\d{1,100})""",
     """\Wact=({alert_type}.+?)\s{0,100}(\w+=|$)""",
     """\Wcs4=({process}.+?)\s{0,100}(\w+=|$)""",
-    """\Wcs4=({directory}[^\.]+?)\\+({process_name}[^\\]+?)\s{0,100}(\w+=|$)""",
+    """\Wcs4=({directory}[^\.]{1,2000}?)\\+({process_name}[^\\]{1,2000}?)\s{0,100}(\w+=|$)""",
     """\Wcs9=({md5}\S+)""",
     """\Wcs11=({alert_name}.+?)\s{0,100}(\w+=|$)""",
     """\Wmsg=({additional_info}.+?)\s{0,100}(\w+=|$)"""

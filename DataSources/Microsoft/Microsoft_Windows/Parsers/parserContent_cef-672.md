@@ -12,11 +12,11 @@ Name = cef-672
     """({event_name}Account Logon)""",
     """({event_code}672)""",
     """\srt=({time}\d{1,100})""",
-    """src=({dest_ip}[a-fA-F:\d.]+)""",
+    """src=({dest_ip}[a-fA-F:\d.]{1,2000})""",
     """\ssuser=({user}.+?)\s{1,100}\w+=""",
-    """\scs4=({result_code}[^\s]+)""",
-    """\sdvchost=({host}[^\s]+)""",
-    """\sdntdom=({domain}[^\s]+)""", 
+    """\scs4=({result_code}[^\s]{1,2000})""",
+    """\sdvchost=({host}[^\s]{1,2000})""",
+    """\sdntdom=({domain}[^\s]{1,2000})""", 
   ]
   DupFields = ["host->dest_host"]
 }

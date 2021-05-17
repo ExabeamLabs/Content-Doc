@@ -10,8 +10,8 @@ Name = vmware-failed-auth
   Conditions = [ """ View """, """failed to authenticate because of a bad username or password""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]+)\s{1,100}View""",
-    """User (?:({domain}[^\\\s]+)\\+)?({user}[^\\\s]+)""",
+    """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]{1,2000})\s{1,100}View""",
+    """User (?:({domain}[^\\\s]{1,2000})\\+)?({user}[^\\\s]{1,2000})""",
    ]
 }
 ```

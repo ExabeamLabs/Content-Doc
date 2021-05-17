@@ -13,7 +13,7 @@ Name = cisco-asa-113015
     """({event_name}AAA user authentication Rejected)""",
     """\sreason\s{0,100}=\s{0,100}({failure_reason}.+?)\s{0,100}:""",
     """\suser\s{0,100}=\s{0,100}({user}.+?)\s{0,100}:""",
-    """\suser IP\s{0,100}=\s{0,100}({src_ip}[a-fA-F\d.:]+)""",
+    """\suser IP\s{0,100}=\s{0,100}({src_ip}[a-fA-F\d.:]{1,2000})""",
   ]
 }
 ```

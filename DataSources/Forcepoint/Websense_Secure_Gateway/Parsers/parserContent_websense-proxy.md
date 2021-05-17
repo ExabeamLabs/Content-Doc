@@ -5,12 +5,12 @@ Name = websense-proxy
   Conditions = [ """|Websense|Security|""","""cs3Label=ContentType"""]
   Fields = ${WPParserTemplates.wp-web-activity.Fields} [
       """\ssuser=(-|(?!LDAP:)({user}.+?))\s\w+=""",
-      """\ssuser=LDAP:\/\/\S+\s{1,100}({user_ou}[^\/]+?)\/(System|({user_fullname}[^,]+?))\s{1,100}\w+=""",
-      """\ssuser=LDAP:\/\/\S+\s{1,100}({user_ou}[^\/]+?)\/({user_lastname}[^,\\]+?)\\?,\s{0,100}({user_firstname}[^\\,]+?)\s{1,100}\w+=""",
+      """\ssuser=LDAP:\/\/\S+\s{1,100}({user_ou}[^\/]{1,2000}?)\/(System|({user_fullname}[^,]{1,2000}?))\s{1,100}\w+=""",
+      """\ssuser=LDAP:\/\/\S+\s{1,100}({user_ou}[^\/]{1,2000}?)\/({user_lastname}[^,\\]{1,2000}?)\\?,\s{0,100}({user_firstname}[^\\,]{1,2000}?)\s{1,100}\w+=""",
       """\sdhost=(?:-|({web_domain}.+?))\s\w+=""",
       """\scs4=({category}.+?)\s{1,100}\w+=""",
-      """\|Websense\|([^|]+\|){2}({category_id}[^|]+)""",
-      """\sdhost=(.*?)({top_domain}[^.\s\/:]+(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|ms))+\s\w+=).+?)\s{1,100}(\w+=|$)""",
+      """\|Websense\|([^|]{1,2000}\|){2}({category_id}[^|]{1,2000})""",
+      """\sdhost=(.*?)({top_domain}[^.\s\/:]{1,2000}(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|ms))+\s\w+=).+?)\s{1,100}(\w+=|$)""",
   ]
   DupFields = [ "user->orig_user" ]
   }
@@ -30,18 +30,18 @@ wp-web-activity = {
       """\sspt=({src_port}\d{1,100})\s\w+=""",
       """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sdpt=({dest_port}\d{1,100})\s\w+=""",
-      """\srequest=(-|({full_url}(({protocol}[^:\\\/\s,"]+):[\\\/]+)?({web_domain}[^\\\/\s:,"]+)(:\d{1,100})?({uri_path}\/[^\s\?"]*)?({uri_query}\?[^"\s]*)?))\s{1,100}(\w+=|$)""",
+      """\srequest=(-|({full_url}(({protocol}[^:\\\/\s,"]{1,2000}):[\\\/]{1,2000})?({web_domain}[^\\\/\s:,"]{1,2000})(:\d{1,100})?({uri_path}\/[^\s\?"]{0,2000})?({uri_query}\?[^"\s]{0,2000})?))\s{1,100}(\w+=|$)""",
       """\srequestUrlFileName=(?:(-|)|({uri_path}.+?))\s\w+=""",
       """\srequestUrlQuery=(?:-|({uri_query}.+?))\s\w+=""",
       """\srequestMethod=({method}.+?)\s\w+=""",
       """\srequestClientApplication=(?:-|({user_agent}.+?))\s\w+=""",
-      """requestClientApplication=[^=]*?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)[^=]*?\s{1,100}(\w+=|$)""",
-      """requestClientApplication=[^=]*?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]*?\s{1,100}(\w+=|$)""",
+      """requestClientApplication=[^=]{0,2000}?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)[^=]{0,2000}?\s{1,100}(\w+=|$)""",
+      """requestClientApplication=[^=]{0,2000}?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]{0,2000}?\s{1,100}(\w+=|$)""",
       """\scs3=(?:-|({mime}.+?))\s\w+=""",
-      """\scs6=(.*?)({top_domain}[^.\s\/:]+(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|tr))+\s\w+=).+?)\s\w+=""",
+      """\scs6=(.*?)({top_domain}[^.\s\/:]{1,2000}(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|tr))+\s\w+=).+?)\s\w+=""",
       """\s(requestProtocol|app)=(?:-|({protocol}.+?))\s\w+=""",
       """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-      """\sdvchost=({host}[^\s]+)"""
+      """\sdvchost=({host}[^\s]{1,2000})"""
   ]
 
 ```

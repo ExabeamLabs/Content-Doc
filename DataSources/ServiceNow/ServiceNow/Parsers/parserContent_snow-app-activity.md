@@ -9,14 +9,14 @@ Name = snow-app-activity
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [  """,sys_created_on="""", """,dv_sys_class_name="""", """,dv_number="""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """,sys_created_on="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """,dv_sys_class_name="({activity}[^"]+)""",
-    """,dv_number="({object}[^"]+)""",
-    """,incident_state="({resource}[^"]+)""",
-    """,dv_assignment_group="({additional_info}[^"]+)""",
-    """,sys_created_by="({user}[^"]+)""",
-    """,dv_assigned_to="(|({user}[^"]+))""",
+    """,dv_sys_class_name="({activity}[^"]{1,2000})""",
+    """,dv_number="({object}[^"]{1,2000})""",
+    """,incident_state="({resource}[^"]{1,2000})""",
+    """,dv_assignment_group="({additional_info}[^"]{1,2000})""",
+    """,sys_created_by="({user}[^"]{1,2000})""",
+    """,dv_assigned_to="(|({user}[^"]{1,2000}))""",
     """({app}ServiceNow)""",
   ]
 }

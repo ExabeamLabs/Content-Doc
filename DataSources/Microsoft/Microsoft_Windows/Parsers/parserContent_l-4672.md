@@ -11,10 +11,10 @@ Name = l-4672
   Fields = [
     """({event_name}Special privileges assigned to new logon)""",
     """\WSystemTime=\'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """<Computer>({host}[\w\-\.]+)</Computer>""",
-    """<Keywords>({outcome}[^<]+)</Keywords>""",
-    """<EventID>({event_code}[^<]+)</EventID>""",
-    """\s{0,100}Account Name:\s{0,100}({user}.+?)\s{0,100}Account Domain:\s{0,100}({domain}[^\s]+)\s{0,100}Logon ID:""",
+    """<Computer>({host}[\w\-\.]{1,2000})</Computer>""",
+    """<Keywords>({outcome}[^<]{1,2000})</Keywords>""",
+    """<EventID>({event_code}[^<]{1,2000})</EventID>""",
+    """\s{0,100}Account Name:\s{0,100}({user}.+?)\s{0,100}Account Domain:\s{0,100}({domain}[^\s]{1,2000})\s{0,100}Logon ID:""",
     """\s{0,100}Logon ID:\s{0,100}({logon_id}.+?)\s{0,100}Privileges:""",
     """\s{0,100}Privileges:\s{0,100}({privileges}.+?)</EventData>"""
   ]

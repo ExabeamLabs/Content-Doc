@@ -9,12 +9,12 @@ Name = vectra-alert-1
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """vectra_standard_account_detection""", """: DETECT """, """detection@"""]
   Fields = [
-	"""({host}[\w.\-]+)\s{1,100}vectra_standard_account_detection""",
-	"""\saccount="({user_email}[^"]+)"""",
-	"""\sthreat="({alert_severity}[^"]+)""",
-	"""\stype="({alert_name}[^"]+)""",
-	"""\scategory="({category}[^"]+)""",
-	"""\sDesetinationIP="(0\.0\.0\.0|({dest_ip}[a-fA-F\d.:]+))""",
+	"""({host}[\w.\-]{1,2000})\s{1,100}vectra_standard_account_detection""",
+	"""\saccount="({user_email}[^"]{1,2000})"""",
+	"""\sthreat="({alert_severity}[^"]{1,2000})""",
+	"""\stype="({alert_name}[^"]{1,2000})""",
+	"""\scategory="({category}[^"]{1,2000})""",
+	"""\sDesetinationIP="(0\.0\.0\.0|({dest_ip}[a-fA-F\d.:]{1,2000}))""",
 	"""\sdest_port="({dest_port}\d{1,100})""",
 	"""\sBytesSent="({bytes_out}\d{1,100})""",
 	"""\sBytesRcvd="({bytes_in}\d{1,100})""",

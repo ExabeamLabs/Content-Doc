@@ -9,22 +9,22 @@ Name = leef-epic-app-activity
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ """LEEF:""", """|Epic|Security-SIEM|""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
-    """({host}[\w.\-]+) LEEF:([^\|]*\|)({app}[^\|]+)\|([^\|]*\|){2}({activity}[^\|]+)""",
-    """({host}[\w.\-]+),"{1,20}LEEF:[^\|]+\|({app}[^\|]+)\|([^\|]+\|){2}({activity}[^\|]+)""",
-    """shost=({src_host}[^=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
-    """usrName=({user_id}[^=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
-    """usrName=\w+-({user_fullname}[^=]+?)\s{0,100}-"""
-    """resource=\s{0,100}({resource}[^=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[^\s]{1,2000})""",
+    """({host}[\w.\-]{1,2000}) LEEF:([^\|]{0,2000}\|)({app}[^\|]{1,2000})\|([^\|]{0,2000}\|){2}({activity}[^\|]{1,2000})""",
+    """({host}[\w.\-]{1,2000}),"{1,20}LEEF:[^\|]{1,2000}\|({app}[^\|]{1,2000})\|([^\|]{1,2000}\|){2}({activity}[^\|]{1,2000})""",
+    """shost=({src_host}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """usrName=({user_id}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """usrName=\w+-({user_fullname}[^=]{1,2000}?)\s{0,100}-"""
+    """resource=\s{0,100}({resource}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
     """devTime=({time}\w+ \d{1,100} \d\d\d\d \d\d:\d\d:\d\d)""",
-    """E3MID=({record_id}[^=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
-    """LOGIN_LDAP_ID=({user}[^=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
-    """IP=(?:({dest_ip}[a-fA-F\d.:]+)\/)?({src_ip}[a-fA-F\d.:]+)""",
-    """LOGINERROR=({failure_reason}[^\s]*?)(\s{1,100}\w+=|\s{0,100}$)""",
-    """ERRMSG=({failure_reason}[^\s]*?)(\s{1,100}\w+=|\s{0,100}$)""",
-    """UID=({user_id}[^=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
-    """NEWDEPARTMENT=({object}[^=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
-    """BTGNOACCESSREAS=({additional_info}[^=]+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """E3MID=({record_id}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """LOGIN_LDAP_ID=({user}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """IP=(?:({dest_ip}[a-fA-F\d.:]{1,2000})\/)?({src_ip}[a-fA-F\d.:]{1,2000})""",
+    """LOGINERROR=({failure_reason}[^\s]{0,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """ERRMSG=({failure_reason}[^\s]{0,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """UID=({user_id}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """NEWDEPARTMENT=({object}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """BTGNOACCESSREAS=({additional_info}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
 ```

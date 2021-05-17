@@ -5,7 +5,7 @@ Name = sophos-app-activity-failed-1
   DataType = "app-activity"
   Conditions = [ """Action=Blocked;""", """EventType=Adware or PUA;""", """ReportingName=""", """ComputerIPAddress="""  ] 
   Fields=${SophosParserTemplates.sophos-endpoint-events.Fields}[
-    """SubType=({failure_reason}[^;]+)"""
+    """SubType=({failure_reason}[^;]{1,2000})"""
   ]
 }
 sophos-endpoint-events = {
@@ -14,17 +14,17 @@ sophos-endpoint-events = {
   Lms = Splunk
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Fields = [
-     """EventID=({event_code}[\d]+);""",
+     """EventID=({event_code}[\d]{1,2000});""",
      """EventTime=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-     """EventType=({activity}[^;]+);""",
-     """Name=({app}[^;]+);""",
-     """UserName=([^\\]+\\+)?({user}[^;]+);""",
-     """Action=({result}[^;]+);""",
-     """({additional_info}SubType=[^;]+)""",
-     """ComputerName=({src_host}[^;]+);""",
+     """EventType=({activity}[^;]{1,2000});""",
+     """Name=({app}[^;]{1,2000});""",
+     """UserName=([^\\]{1,2000}\\+)?({user}[^;]{1,2000});""",
+     """Action=({result}[^;]{1,2000});""",
+     """({additional_info}SubType=[^;]{1,2000})""",
+     """ComputerName=({src_host}[^;]{1,2000});""",
      """ComputerIPAddress=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-     """exabeam_host=({host}[\w\-.]+)""",
-     """ComputerDomain=({domain}[^;]+)""",
+     """exabeam_host=({host}[\w\-.]{1,2000})""",
+     """ComputerDomain=({domain}[^;]{1,2000})""",
    ]
 
 ```

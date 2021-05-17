@@ -10,8 +10,8 @@ Name = unix-auth-event-1
   Conditions = [ """ sshd[""", """]: AD authentication succeeded for user""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
-    """AD authentication ({outcome}succeeded) for user ({user}[^""]+)"""
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """AD authentication ({outcome}succeeded) for user ({user}[^""]{1,2000})"""
   ]
 }
 ```

@@ -14,13 +14,13 @@ q-pan-vpn-parser = {
   Lms = QRadar
   TimeFormat = "MMM dd yyyy HH:mm:ss z"
   Fields = [
-    """User name:\s{1,100}({user}[\w.'\-\\$]+?)\.?(\s|,|"|$)""",
-    """User name:\s{1,100}({user_email}[^@\s]+@[^\s,]+),""",
+    """User name:\s{1,100}({user}[\w.'\-\\$]{1,2000}?)\.?(\s|,|"|$)""",
+    """User name:\s{1,100}({user_email}[^@\s]{1,2000}@[^\s,]{1,2000}),""",
     """\|devTime=({time}\w{3}\s{1,100}\d{1,100} \d\d\d\d \d\d:\d\d:\d\d \w+)\|""",
-    """exabeam_host=([^=]+@\s{0,100})?({host}[^\s]+)""",
-    """DeviceName=({host}[\w\-.]+)""",
-    """Client OS( version)?:\s{1,100}({os}[^":]+)(,|\.)""",
-    """Login from:\s{0,100}({src_ip}[a-fA-F\d.:]+)"""
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[^\s]{1,2000})""",
+    """DeviceName=({host}[\w\-.]{1,2000})""",
+    """Client OS( version)?:\s{1,100}({os}[^":]{1,2000})(,|\.)""",
+    """Login from:\s{0,100}({src_ip}[a-fA-F\d.:]{1,2000})"""
   ]
 
 ```

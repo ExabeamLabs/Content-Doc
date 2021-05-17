@@ -16,15 +16,15 @@ digital-guardian-activity = {
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"
   Fields = [
     """Agent_Local_Time="({time}\d{1,100}\/\d{1,100}\/\d\d\d\d\s\d{1,100}:\d{1,100}:\d{1,100}\s(AM|PM|am|pm))""",
-    """\w+\s\d\d\s\d\d:\d\d:\d\d\s{0,100}({host}[\w\-.]+)\s\w+=""",
-    """\sComputer_Name="(({domain}[^\\]+)?\\?({src_host}[^"]+))""",
-    """\sUser_Name="(({domain}[^\\]+)?\\?({user}[^"]+))""",
-    """\sSource_Directory="({src_file_dir}[^=]+?)\s{0,100}"\s{0,100}\w+=""",
-    """\sDestination_Directory="({file_parent}[^=]+?)\s{0,100}"\s{0,100}\w+=""",
-    """\sDestination_File="({file_name}[^=]+?)\s{0,100}"\s{0,100}\w+=""",
+    """\w+\s\d\d\s\d\d:\d\d:\d\d\s{0,100}({host}[\w\-.]{1,2000})\s\w+=""",
+    """\sComputer_Name="(({domain}[^\\]{1,2000})?\\?({src_host}[^"]{1,2000}))""",
+    """\sUser_Name="(({domain}[^\\]{1,2000})?\\?({user}[^"]{1,2000}))""",
+    """\sSource_Directory="({src_file_dir}[^=]{1,2000}?)\s{0,100}"\s{0,100}\w+=""",
+    """\sDestination_Directory="({file_parent}[^=]{1,2000}?)\s{0,100}"\s{0,100}\w+=""",
+    """\sDestination_File="({file_name}[^=]{1,2000}?)\s{0,100}"\s{0,100}\w+=""",
     """\sOperation="({event_code}\d{1,100})""",
-    """\sApplication="({process_name}[^"]+)""",
-    """\sSource_File="({src_file_name}[^=]+?)\s{0,100}"\s{0,100}\w+=""",
+    """\sApplication="({process_name}[^"]{1,2000})""",
+    """\sSource_File="({src_file_name}[^=]{1,2000}?)\s{0,100}"\s{0,100}\w+=""",
   ]
 
 ```

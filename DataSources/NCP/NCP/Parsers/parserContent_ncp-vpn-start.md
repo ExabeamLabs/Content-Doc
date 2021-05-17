@@ -11,9 +11,9 @@ Name = ncp-vpn-start
   Fields = [
     """<.+?>\w+ \d{1,100} \d\d:\d\d:\d\d ({host}\S+)\s{1,100}connect""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """incoming\s{0,100}:\s{0,100}({user}[^\s@]+)(@({domain}[^\s@]+)\s{0,100}:)""",
-    """IP=({src_ip}[a-fA-F\d.:]+)""",
-    """VpnEp=({dest_ip}[a-fA-F\d.:]+)""",
+    """incoming\s{0,100}:\s{0,100}({user}[^\s@]{1,2000})(@({domain}[^\s@]{1,2000})\s{0,100}:)""",
+    """IP=({src_ip}[a-fA-F\d.:]{1,2000})""",
+    """VpnEp=({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """Group=({realm}\w+)"""
   ]
   DupFields = ["user->account"]

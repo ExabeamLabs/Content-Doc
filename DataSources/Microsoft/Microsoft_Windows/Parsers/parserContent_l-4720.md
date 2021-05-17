@@ -11,8 +11,8 @@ Name = l-4720
   Fields = [
     """({event_name}A user account was created)""",
     	     """SystemTime=\'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-             """<Computer>({host}[^<]+)</Computer>""",
-             """<EventID>({event_code}[^<]+)</EventID>""",
+             """<Computer>({host}[^<]{1,2000})</Computer>""",
+             """<EventID>({event_code}[^<]{1,2000})</EventID>""",
              """Subject:.+?Account Name:\s{0,100}({user}.+?)\s{0,100}Account Domain:\s{0,100}({domain}.+?)\s{0,100}Logon ID:\s{0,100}({logon_id}.+?)\s{0,100}New Account:""",
              """New Account:.+?Security ID:\s{0,100}({account_id}.+?)\s{0,100}Account Name:\s{0,100}({account_name}.+?)\s{0,100}Account Domain:\s{0,100}({account_domain}.+?)\s{0,100}Attributes""" ]
     DupFields = ["host->dest_host"]

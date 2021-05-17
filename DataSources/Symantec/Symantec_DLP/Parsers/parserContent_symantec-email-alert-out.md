@@ -10,8 +10,8 @@ Name = symantec-email-alert-out
   Conditions = [ """protocol=SMTP""","""incident_id=""", """sender=""", """recipient=""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """({host}[\w.\-]+)\s{1,100}incident_id=""",
-    """recipient=({recipient}[^,@]+@({external_domain}[^,]+)),""",
-    """sender=({sender}[^,]+),""",
+    """({host}[\w.\-]{1,2000})\s{1,100}incident_id=""",
+    """recipient=({recipient}[^,@]{1,2000}@({external_domain}[^,]{1,2000})),""",
+    """sender=({sender}[^,]{1,2000}),""",
     """Subject=({subject}.+?)\s{0,100}
 ```

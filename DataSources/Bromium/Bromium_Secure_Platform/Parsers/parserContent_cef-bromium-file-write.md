@@ -17,16 +17,16 @@ cef-bromium-file-operations = {
     TimeFormat = "yyyy-MM-dd HH:mm:ss.SSSZ"
     Fields = [
       """\Wrt=({time}\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100})""",
-      """\s({host}[\w\-.]+)\sCEF:\d{1,100}\|Bromium, Inc.\|""",
+      """\s({host}[\w\-.]{1,2000})\sCEF:\d{1,100}\|Bromium, Inc.\|""",
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d-\d{1,100})""",
       """\Wshost=({src_host}.+?)\s{0,100}(\w+=|$)""",
-      """\Wsuser=({user}[^@=]+?)\s{0,100}(\w+=|$)""",
-      """\Wsuser=({user_email}[^@=]+?@[^@=]+?)\s{0,100}(\w+=|$)""",
-      """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
+      """\Wsuser=({user}[^@=]{1,2000}?)\s{0,100}(\w+=|$)""",
+      """\Wsuser=({user_email}[^@=]{1,2000}?@[^@=]{1,2000}?)\s{0,100}(\w+=|$)""",
+      """\Wsrc=({src_ip}[a-fA-F\d.:]{1,2000})""",
       """\Wrequest=({file_uri}.+?)\s{0,100}(\w+=|$)""",
       """\Wsproc=({process_name}.+?)\s{0,100}(\w+=|$)""",
       """\Wfname=({file_path}.+?)\s{0,100}(\w+=|$)""",
-      """\Wfname=({file_parent}[^=]+?)[\\\/]+({file_name}[^\\\/=]+?)\s{0,100}(\w+=|$)""",
+      """\Wfname=({file_parent}[^=]{1,2000}?)[\\\/]{1,2000}({file_name}[^\\\/=]{1,2000}?)\s{0,100}(\w+=|$)""",
       """\Wmsg=({additional_info}.+?)\s{0,100}(\w+=|$)"""
     ]
 

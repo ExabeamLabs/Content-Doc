@@ -11,8 +11,8 @@ Name = q-unix-dhcp-1
   Fields = [ 
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\sexabeam_endTime=({time}\d{1,100})""",
-    """\s({host}[^\s]+)\s{1,100}dhcpd""",
-    """({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),Renewed,(|({dest_host}[^,]+))"""
+    """\s({host}[^\s]{1,2000})\s{1,100}dhcpd""",
+    """({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),Renewed,(|({dest_host}[^,]{1,2000}))"""
   ]
   DupFields = [ "dest_host->user" ]
 }

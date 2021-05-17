@@ -8,21 +8,13 @@ Name = snare-577
   DataType = "windows-privileged-access"
   TimeFormat = "MMM dd HH:mm:ss yyyy"
   Conditions = [ "\t577\t", "Privileged Service Called:" ]
-  Fields = [ """exabeam_host=({host}[^\s]+)""",
+  Fields = [ """exabeam_host=({host}[^\s]{1,2000})""",
     """({event_name}Privileged Service Called)""",
     """\s{1,100}(Mon|Tue|Wed|Thu|Fri|Sat|Sun) ({time}\w+ \d{1,100} \d{1,100}:\d{1,100}:\d{1,100} \d{1,100})\s{1,100}""",
-    """\s{1,100}(Information|Audit Success|Success Audit)\s{1,100}({host}[^\s]+)""",
+    """\s{1,100}(Information|Audit Success|Success Audit)\s{1,100}({host}[^\s]{1,2000})""",
     """({event_code}577)""",
-    """Security\t([^\s]+\t){2}({outcome}.+?)\t""",
+    """Security\t([^\s]{1,2000}\t){2}({outcome}.+?)\t""",
     """(?:Information|Audit Success|Success Audit).+?Primary User Name:\s{1,100}({user}.+?)\s{1,100}Primary Domain""",
-    """\s{1,100}Primary Domain:\s{1,100}({domain}[^\s]+)""",
-    """\s{1,100}Primary Logon ID:\s{1,100}\([^,]+,({logon_id}[^)]+)""",
-    """\s{1,100}Privileges:\s{1,100}({privileges}.+?)\s{1,100}\d{1,100}""",
-    """\s{1,100}({ownership_privilege}SeTakeOwnershipPrivilege)""",
-    """\s{1,100}({environment_privilege}SeSystemEnvironmentPrivilege)""",
-    """\s{1,100}({debug_privilege}SeDebugPrivilege)""",
-    """\s{1,100}({tcb_privilege}SeTcbPrivilege)"""
-  ]
-  DupFields = [ "host->dest_host" ]
-}
+    """\s{1,100}Primary Domain:\s{1,100}({domain}[^\s]{1,2000})""",
+    """\s{1,100}Primary Logon ID:\s{1,100}\([^,]{1,2000}
 ```

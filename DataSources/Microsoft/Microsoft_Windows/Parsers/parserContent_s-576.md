@@ -16,7 +16,7 @@ Name = s-576
     """\sComputerName=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\sUser=({user}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\sSid=({user_sid}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
-    """\s{0,100}Domain:\s{0,100}(?:-|({domain}.*?))\s{0,100}Logon ID:\s{0,100}\(?({logon_id}[^)]*)\)?\s{0,100}Privileges:\s{0,100}({privileges}.*?)\s{0,100}$"""
+    """\s{0,100}Domain:\s{0,100}(?:-|({domain}.*?))\s{0,100}Logon ID:\s{0,100}\(?({logon_id}[^)]{0,2000})\)?\s{0,100}Privileges:\s{0,100}({privileges}.*?)\s{0,100}$"""
   ]
   DupFields = ["host->dest_host"]
 }

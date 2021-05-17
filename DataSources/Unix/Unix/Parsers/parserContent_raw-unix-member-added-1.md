@@ -10,8 +10,8 @@ Name = raw-unix-member-added-1
   Conditions = [ "to group", "added by", "gpasswd" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=({host}[\w.\-]+)""",
-    """\d\d:\d\d:\d\d ({host}[\w.\-]+)""",
+    """exabeam_host=({host}[\w.\-]{1,2000})""",
+    """\d\d:\d\d:\d\d ({host}[\w.\-]{1,2000})""",
     """user ({account_name}.+?) added by ({user}.+?) to group ({group_name}.+?)\s{0,100}$""",
   ]
   DupFields=["host->dest_host"]

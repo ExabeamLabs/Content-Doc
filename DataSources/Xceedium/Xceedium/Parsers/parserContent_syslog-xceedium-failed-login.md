@@ -9,6 +9,6 @@ Name = syslog-xceedium-failed-login
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """Message 18002:""", """Bad User ID""" ]
   Fields = [
-    """exabeam_host=([^=]+?@\s{0,100})?({host}[^\s]+)""",
+    """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[^\s]{1,2000})""",
     """"{1,20}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"{1,20}\s{0,100}
 ```

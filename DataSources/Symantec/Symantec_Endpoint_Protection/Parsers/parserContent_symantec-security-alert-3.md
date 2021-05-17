@@ -9,10 +9,5 @@ Name = symantec-security-alert-3
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """,Rule:""", """,Registry Read,Begin:""" ]
   Fields = [
-    """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d),({alert_severity}[^,]+),({alert_type}[^,]+),({host}[^,]+),({outcome}[^,]+),[^,]*,({activity}[^,]+),([^,]*,){2}({alert_name}[^,]+),[^,]*,({file_path}({file_parent}[^,]*?[\\\/]+)?({file_name}[^,\\\/]+?(\.({file_ext}\w+))?)?),""",
-    """,User:\s{0,100}(SYSTEM|({user}[^,]+)),""",
-    """,Domain:\s{0,100}({domain}[^,]+),""",
-    """,File size \(bytes\):\s{0,100}(0|({bytes}\d{1,100})),""",
-  ]
-}
+    """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d),({alert_severity}[^,]{1,2000}),({alert_type}[^,]{1,2000}),({host}[^,]{1,2000}),({outcome}[^,]{1,2000}),[^,]{0,2000}
 ```

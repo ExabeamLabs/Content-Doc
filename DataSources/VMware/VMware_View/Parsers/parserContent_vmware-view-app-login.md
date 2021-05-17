@@ -10,8 +10,8 @@ Name = vmware-view-app-login
   Conditions = [ """View User""", """ has logged in""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\d\d:\d\d:\d\d\s{1,100}({host}[^\s]+)\s{1,100}View User""",
-    """View User\s{1,100}(({domain}[^\\\s]+)\\+)?({user}[^\s]+)""",
+    """\d\d:\d\d:\d\d\s{1,100}({host}[^\s]{1,2000})\s{1,100}View User""",
+    """View User\s{1,100}(({domain}[^\\\s]{1,2000})\\+)?({user}[^\s]{1,2000})""",
     """({app}View)"""
    ]
 }

@@ -9,15 +9,15 @@ Name = cef-checkpoint-alert-3
   TimeFormat = "epoch"
   Conditions = [ """|Check Point|Anti Malware|""",  """cs4Label=""" ]
   Fields = [
-    """exabeam_host=({host}[\w-.]+)""",
-    """({host}[\w.\-]+) CEF:""",
+    """exabeam_host=({host}[\w-.]{1,2000})""",
+    """({host}[\w.\-]{1,2000}) CEF:""",
     """\Wcp_severity=(?:|({alert_severity}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wrt=({time}\d{1,100})""",
-    """\Worigin=({src_ip}[a-fA-F\d.:]+)""",
+    """\Worigin=({src_ip}[a-fA-F\d.:]{1,2000})""",
     """\Woriginsicname=(?:|({user_ou}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wcontract_name=(?:|({alert_name}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-    """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
-    """\Wdst=({dest_ip}[a-fA-F\d.:]+)""",
+    """\Wsrc=({src_ip}[a-fA-F\d.:]{1,2000})""",
+    """\Wdst=({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """\Wcs(3|6)=(?:|({alert_type}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wcs4=(?:|({alert_name}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wcs4Label=Protection Name cs4=({alert_name}.+?)(\s{1,100}\w+=|\s{0,100}$)""",

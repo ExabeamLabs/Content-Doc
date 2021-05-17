@@ -10,13 +10,13 @@ Name = rdirectory-member-added
   Conditions = [ "rdirectoryModify Group:", "Modified by:", "[Member] Add:" ]
   Fields = [
 	"""SystemTime=\'({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-	"""<Computer>({host}[^<]+)""",
-	"""Modified by:({user}.+?)\s{1,100}(\(.+?\))?\s{1,100}\(({domain}[^\/)]+)""",
-	"""Credentials:({account_used_domain}[^\\]+)\\+([^\s.]+\.)*({account}[^\s.]+)""",
-	"""Group:({group_name}.+?)\s{1,100}\(({group_domain}[^\/)]+)""",
-	"""\[Member\]\s{0,100}Add:CN=({account_name}[^,]+)""",
-	"""\[Member\]\s{0,100}Add:({account_dn}CN=.+?,({account_ou}OU.+?DC=[\w-]+))""",
-	"""\[Member\]\s{0,100}Add:(?:CN|({account_name}[^<]+))"""
+	"""<Computer>({host}[^<]{1,2000})""",
+	"""Modified by:({user}.+?)\s{1,100}(\(.+?\))?\s{1,100}\(({domain}[^\/)]{1,2000})""",
+	"""Credentials:({account_used_domain}[^\\]{1,2000})\\+([^\s.]{1,2000}\.)*({account}[^\s.]{1,2000})""",
+	"""Group:({group_name}.+?)\s{1,100}\(({group_domain}[^\/)]{1,2000})""",
+	"""\[Member\]\s{0,100}Add:CN=({account_name}[^,]{1,2000})""",
+	"""\[Member\]\s{0,100}Add:({account_dn}CN=.+?,({account_ou}OU.+?DC=[\w-]{1,2000}))""",
+	"""\[Member\]\s{0,100}Add:(?:CN|({account_name}[^<]{1,2000}))"""
   ]
 }
 ```

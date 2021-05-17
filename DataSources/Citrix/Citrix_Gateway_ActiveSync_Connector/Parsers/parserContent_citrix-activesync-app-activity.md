@@ -10,16 +10,16 @@ Name = citrix-activesync-app-activity
   Conditions = [ """Original Address=""", """devicetype=""", """agent=""", """cmd=""", """action=allow"""]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """Original Address=({host}[^\s]+)\s""",
-    """action=({outcome}[^\s]+)\s""",
-    """deviceid=({device_id}[^\s]+)\s""",
-    """group=({group}[^\s]+)\s""",
-    """user=({domain}[^\/]+)\\({user}[^\s]+)\s""",
-    """devicetype=({device_type}[^\s]+)\s""",
-    """cmd=({activity}[^\s]+)\s""",
-    """agent=({user_agent}[^\s]+)\s""",
-    """ip=({src_ip}[^\s]+)(?:\s|$)""",
-    """user=({user_email}({user}[^@\s]+)@[^@\s]+)\s""",
+    """Original Address=({host}[^\s]{1,2000})\s""",
+    """action=({outcome}[^\s]{1,2000})\s""",
+    """deviceid=({device_id}[^\s]{1,2000})\s""",
+    """group=({group}[^\s]{1,2000})\s""",
+    """user=({domain}[^\/]{1,2000})\\({user}[^\s]{1,2000})\s""",
+    """devicetype=({device_type}[^\s]{1,2000})\s""",
+    """cmd=({activity}[^\s]{1,2000})\s""",
+    """agent=({user_agent}[^\s]{1,2000})\s""",
+    """ip=({src_ip}[^\s]{1,2000})(?:\s|$)""",
+    """user=({user_email}({user}[^@\s]{1,2000})@[^@\s]{1,2000})\s""",
   ]
 }
 ```

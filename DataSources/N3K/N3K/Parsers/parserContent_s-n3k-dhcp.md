@@ -11,9 +11,9 @@ Name = s-n3k-dhcp
     Fields = [
       """"_time":\s{1,100}"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d)""",
       """\sinfo_search_time=({time}\d{1,100}\.\d{1,100})""",
-      """("|\s)Host(":\s{1,100}|=)"?({dest_host}[^",]+)""",
-      """("|\s)maskedIP(":\s{1,100}|=)"({dest_ip}[^"]+)""",
-      """("|\s)MAC(":\s{1,100}|=)"?({src_mac}[^",]+)""",
+      """("|\s)Host(":\s{1,100}|=)"?({dest_host}[^",]{1,2000})""",
+      """("|\s)maskedIP(":\s{1,100}|=)"({dest_ip}[^"]{1,2000})""",
+      """("|\s)MAC(":\s{1,100}|=)"?({src_mac}[^",]{1,2000})""",
     ]
     DupFields = [ "dest_host->user" ]
   }

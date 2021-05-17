@@ -9,6 +9,6 @@ Name = exchange-dlp-email-out
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
   Conditions = [ """,Originating,""", """,STOREDRIVER,""" ]
   Fields = [
-    """exabeam_host=({host}[\w.\-]+)""",
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\d)Z,(?:(?:\s{0,100}'+[^']*'+)\s{0,100}
+    """exabeam_host=({host}[\w.\-]{1,2000})""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\d)Z,(?:(?:\s{0,100}'+[^']{0,2000}'+)\s{0,100}
 ```

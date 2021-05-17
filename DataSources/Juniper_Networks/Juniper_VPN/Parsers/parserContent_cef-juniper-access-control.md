@@ -11,7 +11,7 @@ Name = cef-juniper-access-control
   Fields = [
     """\srt=({time}\d{1,100})""",
     """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\sdvchost=({host}[^\s]+)""",
+    """\sdvchost=({host}[^\s]{1,2000})""",
     """\ssuser=({user}.+?)\s{1,100}sproc=""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sspriv=({resource}.+?)\s{1,100}\w+=""",

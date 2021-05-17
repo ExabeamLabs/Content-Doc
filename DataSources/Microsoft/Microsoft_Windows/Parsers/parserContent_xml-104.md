@@ -10,14 +10,14 @@ Name = xml-104
   Conditions = [ """<EventID>104<""", """log file was cleared.""" ]
   Fields = [
     """<EventID>({event_code}\d{1,100})""",
-    """<Keywords>({outcome}[^<]+)""",
+    """<Keywords>({outcome}[^<]{1,2000})""",
     """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
-    """<Computer>({host}[^<]+)""",
-    """<Security UserID='({user_sid}[^'<\/]+)""",
-    """<SubjectUserName>(SYSTEM|({user}[^<]+))""",
-    """<SubjectDomainName>(NT AUTHORITY|({domain}[^<]+))""",
-    """<Message>({event_name}[^<]+)""",
-    """<Level>({alert_severity}[^<]+)"""
+    """<Computer>({host}[^<]{1,2000})""",
+    """<Security UserID='({user_sid}[^'<\/]{1,2000})""",
+    """<SubjectUserName>(SYSTEM|({user}[^<]{1,2000}))""",
+    """<SubjectDomainName>(NT AUTHORITY|({domain}[^<]{1,2000}))""",
+    """<Message>({event_name}[^<]{1,2000})""",
+    """<Level>({alert_severity}[^<]{1,2000})"""
   ]
   DupFields = [ "host->dest_host" ]
 }

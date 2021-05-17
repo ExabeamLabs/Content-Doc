@@ -10,11 +10,11 @@ Name = citrix-remote-logon
   Conditions = [ """"text":"Shadow user""", """"event":"admin-action"""", """"system":"Citrix-XenApp""""]
   Fields = [
     """"starttime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)"""",
-    """exabeam_host=([^=]+?@\s{0,100})?({host}[\w.-]+)""",
-    """"username":"(({user_email}[^@"]+@[^\."]+\.[^"]+)|(({domain}[^\\"]+)\\+)?({user}[^"]+))"""",
+    """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
+    """"username":"(({user_email}[^@"]{1,2000}@[^\."]{1,2000}\.[^"]{1,2000})|(({domain}[^\\"]{1,2000})\\+)?({user}[^"]{1,2000}))"""",
     """({event_name}admin-action)""",
-    """"text":"({additional_info}[^"]+)",""",
-    """"adminaccountname":"(({account_domain}[^\\"]+)\\+)?({account_name}[^"]+)","""
+    """"text":"({additional_info}[^"]{1,2000})",""",
+    """"adminaccountname":"(({account_domain}[^\\"]{1,2000})\\+)?({account_name}[^"]{1,2000})","""
   ]
 }
 ```

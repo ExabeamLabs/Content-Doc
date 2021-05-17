@@ -10,7 +10,7 @@ Name = wazuh-4779
     """Account Domain:\s{0,100}({domain}\S+)\s{1,100}Logon ID:""",
     """Logon ID:\s{0,100}({logon_id}\S+)""",
     """Service Name:\s{0,100}({dest_host}.+?)\s{0,100}Service ID""",
-    """Client Address:\s{0,100}(::[\w]+:)?({src_ip}[a-fA-F:\d.]+)""",  
+    """Client Address:\s{0,100}(::[\w]{1,2000}:)?({src_ip}[a-fA-F:\d.]{1,2000})""",  
   ]
 }
 wazuh-windows-template = {
@@ -21,17 +21,17 @@ wazuh-windows-template = {
     Fields = [
       """"data.id":"({event_code}\d{1,100})""""
       """"@timestamp":"({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)"""
-      """"data.dstuser":"(\(no user\)|({dest_user}[^"]+))"""
-      """"data.status":"({outcome}[^"]+)"""
-      """"location":"({log_location}[^"]+)"""
-      """"data.data":"({data}[^"]+)"""
-      """"path":"({log_path}[^"]+)"""
-      """"data.system_name":"({host}[^"]+)"""
+      """"data.dstuser":"(\(no user\)|({dest_user}[^"]{1,2000}))"""
+      """"data.status":"({outcome}[^"]{1,2000})"""
+      """"location":"({log_location}[^"]{1,2000})"""
+      """"data.data":"({data}[^"]{1,2000})"""
+      """"path":"({log_path}[^"]{1,2000})"""
+      """"data.system_name":"({host}[^"]{1,2000})"""
       """"agent.id":"({agent_id}\d{1,100})"""
-      """"manager.name":"({wazuh_manager}[^"]+)"""
-      """"data.data":"({data}[^"]+)"""
-      """"rule.description":"({description}[^"]+)"""
-      """"decoder.name":"({decoder_name}[^"]+)"""
+      """"manager.name":"({wazuh_manager}[^"]{1,2000})"""
+      """"data.data":"({data}[^"]{1,2000})"""
+      """"rule.description":"({description}[^"]{1,2000})"""
+      """"decoder.name":"({decoder_name}[^"]{1,2000})"""
     ]
 
 ```

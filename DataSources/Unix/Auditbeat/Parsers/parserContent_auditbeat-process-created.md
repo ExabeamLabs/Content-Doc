@@ -10,17 +10,17 @@ Name = auditbeat-process-created
   Conditions = [""""auditbeat"""",""""action":"process_started"""",""""process":""",""""pid":"""]
   Fields = [
     """timestamp":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}Z)"""",
-    """"hostname":"({host}[^"]+)""""
-    """"action":"({event_name}[^"]+)"""",
+    """"hostname":"({host}[^"]{1,2000})""""
+    """"action":"({event_name}[^"]{1,2000})"""",
     """"pid":({pid}\d{1,100})""",
-    """"process".+?"executable":"({process}(({process_directory}[^"]*?)\/)?[^"\\\/]*?)"""",
-    """"process":.+?"name":"({process_name}[^"]+)"""",
+    """"process".+?"executable":"({process}(({process_directory}[^"]{0,2000}?)\/)?[^"\\\/]{0,2000}?)"""",
+    """"process":.+?"name":"({process_name}[^"]{1,2000})"""",
     """"ppid":({parent_process_id}\d{1,100})""",
-    """"message":"({additional_info}[^"]+)"""",
-    """"args":\["({command_line}[^"]+)""""
-    """"md5":"({md5}[^"]+)"""",
+    """"message":"({additional_info}[^"]{1,2000})"""",
+    """"args":\["({command_line}[^"]{1,2000})""""
+    """"md5":"({md5}[^"]{1,2000})"""",
     """user.+?group":.+?id":"({user_id}\d{1,100})"""",
-    """user.+?group":.+?name":"({user}[^"]+)""""
+    """user.+?group":.+?name":"({user}[^"]{1,2000})""""
   ]
   DupFields = ["process->path","host->dest_host","process_directory->directory"]
 }

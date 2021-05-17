@@ -11,7 +11,7 @@ Name = raw-checkpoint-firewall-allow
   Conditions = [ """logger:""", """product:""", """ allow """ ]
   Fields = [
     """exabeam_indexTime=({time}\d{10})""",
-    """logger:\s{0,100}\d\d:\d\d:\d\d\s{0,100}({action}\w+)\s{0,100}({host}[\w.\-]+)""",
+    """logger:\s{0,100}\d\d:\d\d:\d\d\s{0,100}({action}\w+)\s{0,100}({host}[\w.\-]{1,2000})""",
     """product:\s{0,100}({product_name}.+?);""",
     """\Wsrc:\s{0,100}(|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}));""",
     """\Ws_port:\s{0,100}(|({src_port}\d{1,100}));""",

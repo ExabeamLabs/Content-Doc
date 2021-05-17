@@ -12,7 +12,7 @@ Name = cef-snare-680
     """({event_code}680)""",
     """({event_name}Logon attempt)""",
     """\srt=({time}\d{1,100})""",
-    """ahost=({host}[^\s]+)""",
+    """ahost=({host}[^\s]{1,2000})""",
     """suser=({user}.+?)\s{1,100}\w+=""",
     """dhost=({dest_host}.+?)\s{1,100}\w+="""
   ]

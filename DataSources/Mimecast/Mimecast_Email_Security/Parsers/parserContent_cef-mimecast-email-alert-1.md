@@ -9,20 +9,20 @@ Name = cef-mimecast-email-alert-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """CEF:""", """Mimecast Email Security""", """dproc=SIEM Logs""", """"acc":"""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z) ([\w.\-]+) Skyformation""",
-    """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
-    """"(?i)Route":"({direction}[^"]+)""",
-    """"(?:id|aCode)":"({alert_id}[^"]+)""",
-    """"(recipientAddress|Recipient)":"({recipient}[^"]+)""",
-    """(senderAddress|Sender)":"(<>|({sender}[^"]+))""",
-    """"(?i)Subject":"({subject}[^"]+?)\s{0,100}"""",
-    """"(messageId|MsgId)":"({message_id}[^"]+)""",
-    """"(?:action|actions)":"({outcome}[^"]+)""",
-    """"actionTriggered":"({outcome}[^"]+)""",
-    """"acc":"({user}[^"]+)""",
-    """"SenderDomain":"(<>|({external_domain}[^"]+))"""",
-    """"SourceIP":"({src_ip}[^"]+)""""
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z) ([\w.\-]{1,2000}) Skyformation""",
+    """\Wsrc=({src_ip}[a-fA-F\d.:]{1,2000})""",
+    """"(?i)Route":"({direction}[^"]{1,2000})""",
+    """"(?:id|aCode)":"({alert_id}[^"]{1,2000})""",
+    """"(recipientAddress|Recipient)":"({recipient}[^"]{1,2000})""",
+    """(senderAddress|Sender)":"(<>|({sender}[^"]{1,2000}))""",
+    """"(?i)Subject":"({subject}[^"]{1,2000}?)\s{0,100}"""",
+    """"(messageId|MsgId)":"({message_id}[^"]{1,2000})""",
+    """"(?:action|actions)":"({outcome}[^"]{1,2000})""",
+    """"actionTriggered":"({outcome}[^"]{1,2000})""",
+    """"acc":"({user}[^"]{1,2000})""",
+    """"SenderDomain":"(<>|({external_domain}[^"]{1,2000}))"""",
+    """"SourceIP":"({src_ip}[^"]{1,2000})""""
   ]
   DupFields = ["recipient->user_email", "recipient->email_user"]
 }

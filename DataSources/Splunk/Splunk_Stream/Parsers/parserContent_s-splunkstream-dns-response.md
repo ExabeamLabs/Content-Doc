@@ -12,20 +12,20 @@ Name = s-splunkstream-dns-response
   Fields = [
     """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3})""",
     """"bytes":({bytes}\d{1,100})""",
-    """"dest_ip":"({dest_ip}[a-fA-F\d.:]+)""",
-    """"dest_mac":"({dest_mac}[a-fA-F\d:]+)""",
+    """"dest_ip":"({dest_ip}[a-fA-F\d.:]{1,2000})""",
+    """"dest_mac":"({dest_mac}[a-fA-F\d:]{1,2000})""",
     """"dest_port":({dest_port}\d{1,100})""",
-    """"src_ip":"({src_ip}[a-fA-F\d.:]+)""",
-    """"src_mac":"({src_mac}[a-fA-F\d:]+)""",
+    """"src_ip":"({src_ip}[a-fA-F\d.:]{1,2000})""",
+    """"src_mac":"({src_mac}[a-fA-F\d:]{1,2000})""",
     """"src_port":({src_port}\d{1,100})""",
     """"time_taken":({time_taken}\d{1,100})""",
-    """"transport":"({protocol}[^"]+)""",
+    """"transport":"({protocol}[^"]{1,2000})""",
     """"ttl":\[({response_ttl}\d{1,100})""",
-    """"query":\["({query}[^"]+)""",
-    """"query_type":\["({query_type}[^"]+)""",
-    """"reply_code":"({dns_response_code}[^"]+)""",
-    """"host_addr":\["({host}[^"]+)""",
-    """"hostname":\["({host}[^"]+)"""
+    """"query":\["({query}[^"]{1,2000})""",
+    """"query_type":\["({query_type}[^"]{1,2000})""",
+    """"reply_code":"({dns_response_code}[^"]{1,2000})""",
+    """"host_addr":\["({host}[^"]{1,2000})""",
+    """"hostname":\["({host}[^"]{1,2000})"""
   ]
 }
 ```

@@ -10,15 +10,15 @@ Name = trendmicro-network-connection
   Conditions = ["""TrendMicroDsTenant""" , """TrendMicroDsFrameType=IP"""]
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """\|dvchost=({host}[^\|\s"]+)""",
+    """\|dvchost=({host}[^\|\s"]{1,2000})""",
     """\|dst=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\|dpt=({src_port}\d{1,100})""",
     """\|src=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\|spt=({dest_port}\d{1,100})""",
-    """\|proto=({protocol}[^\|]+)"""
-    """\|smac=({source_mac}[^\|]+)""",
-    """\|in=({bytes}[^\|]+)""",
-    """\|act=({activity}[^\|]+)"""
+    """\|proto=({protocol}[^\|]{1,2000})"""
+    """\|smac=({source_mac}[^\|]{1,2000})""",
+    """\|in=({bytes}[^\|]{1,2000})""",
+    """\|act=({activity}[^\|]{1,2000})"""
   ]
 }
 ```

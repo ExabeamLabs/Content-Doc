@@ -9,17 +9,17 @@ Name = q-ibm-network-alert
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """LEEF:""", """|IBM|NIPS|""", """cat=Attack""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """devTime=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """LEEF:([^\|]*\|){4}({alert_name}[^\|]+)""",
-    """cat=({alert_type}[^=\|\#]+)""",
-    """proto=({protocol}[^\=\|\#]+)""",
-    """sev=({alert_severity}[^\=\|\#]+)""",
-    """src=({src_ip}[A-Fa-f:\d.]+)""",
-    """dst=({dest_ip}[A-Fa-f:\d.]+)""",
+    """LEEF:([^\|]{0,2000}\|){4}({alert_name}[^\|]{1,2000})""",
+    """cat=({alert_type}[^=\|\#]{1,2000})""",
+    """proto=({protocol}[^\=\|\#]{1,2000})""",
+    """sev=({alert_severity}[^\=\|\#]{1,2000})""",
+    """src=({src_ip}[A-Fa-f:\d.]{1,2000})""",
+    """dst=({dest_ip}[A-Fa-f:\d.]{1,2000})""",
     """srcPort=({src_port}\d{1,100})""",
     """dstPort=({dest_port}\d{1,100})""",
-    """status=({action}[^\=\|\#]+)""",
+    """status=({action}[^\=\|\#]{1,2000})""",
   ]
 }
 ```

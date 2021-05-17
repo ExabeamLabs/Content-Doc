@@ -11,14 +11,14 @@ Name = raw-4776-4
     "computer_name"]
     Fields = [
       """({event_name}The (computer|domain controller) attempted to validate the credentials for an account)""",
-      """(?i)(((audit|success|failure)( |_)(success|audit|failure))|information)\s{0,100}(\s|\t|,|#\d{1,100}|<[^>]+>)\s{0,100}(?!(?:[A-Fa-f:\d.]+))[^\t,#<\s.]+\.({domain}[^\s.",]+)""",
-      """"(?:winlog\.)?computer_name\\*":\\*"({host}[^\\"]+)""",
+      """(?i)(((audit|success|failure)( |_)(success|audit|failure))|information)\s{0,100}(\s|\t|,|#\d{1,100}|<[^>]{1,2000}>)\s{0,100}(?!(?:[A-Fa-f:\d.]{1,2000}))[^\t,#<\s.]{1,2000}\.({domain}[^\s.",]{1,2000})""",
+      """"(?:winlog\.)?computer_name\\*":\\*"({host}[^\\"]{1,2000})""",
       """@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """({event_code}4776)""",
       """The ({login_type}computer|domain)(\s\w+)? attempted to validate the credentials""",
-      """Logon (?:a|A)ccount(:|=)\s{0,100}(({user_email}[^@\s]+?@[^\s]+?\.[^\s]+?)|(({user}[^@\s,;=]+?)(?:@({domain}[^\s.;,@=]+).*?)?))[\s;]*Source Workstation(:|=)([\s\\]+|(\s{0,100}\\*((({dest_ip}[A-Fa-f:\d.]+?)(:({dest_port}\d{1,100}))?)|({dest_host}.+?))[\s;]*))Error Code(:|=)""",
-      """Error Code(:|=)\s{0,100}({result_code}[\w\-]+)""",
-      """Source Workstation(:|=)([\s\\]+|(\s{0,100}\\*((({dest_ip}[A-Fa-f:\d.]+?)(:({dest_port}\d{1,100}))?)|({dest_host}.+?))[\s;]*))Error Code(:|=)""",
+      """Logon (?:a|A)ccount(:|=)\s{0,100}(({user_email}[^@\s]{1,2000}?@[^\s]{1,2000}?\.[^\s]{1,2000}?)|(({user}[^@\s,;=]{1,2000}?)(?:@({domain}[^\s.;,@=]{1,2000}).*?)?))[\s;]{0,2000}Source Workstation(:|=)([\s\\]{1,2000}|(\s{0,100}\\*((({dest_ip}[A-Fa-f:\d.]{1,2000}?)(:({dest_port}\d{1,100}))?)|({dest_host}.+?))[\s;]{0,2000}))Error Code(:|=)""",
+      """Error Code(:|=)\s{0,100}({result_code}[\w\-]{1,2000})""",
+      """Source Workstation(:|=)([\s\\]{1,2000}|(\s{0,100}\\*((({dest_ip}[A-Fa-f:\d.]{1,2000}?)(:({dest_port}\d{1,100}))?)|({dest_host}.+?))[\s;]{0,2000}))Error Code(:|=)""",
     ]
   }
 ```

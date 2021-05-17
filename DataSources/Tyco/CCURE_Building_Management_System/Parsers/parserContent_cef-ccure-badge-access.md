@@ -9,9 +9,9 @@ Name = cef-ccure-badge-access
    TimeFormat = "epoch"
    Conditions = ["""CEF:""", """|CCURE|ACS|""", """flexNumber1="""]
    Fields = [
-     """\sdvc=({host}[^\s]+)""",
-     """\sdvchost=({host}[^\s]+)""",
-     """(?:([^\|]*\|)){5}({outcome}[^\|]+)"""
+     """\sdvc=({host}[^\s]{1,2000})""",
+     """\sdvchost=({host}[^\s]{1,2000})""",
+     """(?:([^\|]{0,2000}\|)){5}({outcome}[^\|]{1,2000})"""
      """\srt=({time}\d{1,100})""",
      """\ssuser=(?:N\/A|({user}.+?))\s(\w+=|$)""",
      """\scs1=({first_name}.+?)\s(\w+=|$)""",

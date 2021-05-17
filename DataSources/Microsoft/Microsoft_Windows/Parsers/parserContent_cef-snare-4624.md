@@ -12,16 +12,16 @@ Name = cef-snare-4624
       """({event_name}An account was successfully logged on)""",
       """({event_code}4624)""",
       """\srt=({time}\d{1,100})""",
-      """\sdntdom=({domain}[^\s]+)""",
+      """\sdntdom=({domain}[^\s]{1,2000})""",
       """\sduser=({user}.+?)\s{1,100}\w+=""",
-      """\sduid=({logon_id}[^\s]+)""",
+      """\sduid=({logon_id}[^\s]{1,2000})""",
       """\scn1=({logon_type}\d{1,100})""",
-      """\sdvchost=({host}[^\s]+)""",
-      """\sdproc=(?:-|({process}[\w:\\.\-]+))""",
-      """Service_,ID=({user_sid}[^\s]+)\s""",
-      """cs5=({auth_package}[^\s]+).+?cs5Label=Auth""",
-      """\sdeviceProcessName=({auth_process}[^\s]+)""",
-      """ src=(?:-|({src_ip}[\w:.]+))\s{1,100}\w+="""
+      """\sdvchost=({host}[^\s]{1,2000})""",
+      """\sdproc=(?:-|({process}[\w:\\.\-]{1,2000}))""",
+      """Service_,ID=({user_sid}[^\s]{1,2000})\s""",
+      """cs5=({auth_package}[^\s]{1,2000}).+?cs5Label=Auth""",
+      """\sdeviceProcessName=({auth_process}[^\s]{1,2000})""",
+      """ src=(?:-|({src_ip}[\w:.]{1,2000}))\s{1,100}\w+="""
     ]
     DupFields = ["host->dest_host"]
   }

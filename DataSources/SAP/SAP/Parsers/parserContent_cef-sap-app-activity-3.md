@@ -15,19 +15,19 @@ cef-sap-app-activity = {
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-    """\|Security Audit Log\|6.0\|({activity_id}[^\|]+)\|({activity}[^\|]+)\|({severity}[^\|]+)"""
+    """\|Security Audit Log\|6.0\|({activity_id}[^\|]{1,2000})\|({activity}[^\|]{1,2000})\|({severity}[^\|]{1,2000})"""
     """cat=\/*({category}.*?)\s\w+=""",
     """categoryOutcome=\/*({outcome}.*?)\s\w+=""",
     """categoryObject=\/*({object}.*?)\s\w+=""",
     """ahost=\/*({host}.*?)\s\w+=""",
     """agt=\/*({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
-    """aid=\/*({aid}[^\\]+)""",
-    """duser=({user}[^\s]+)""",
+    """aid=\/*({aid}[^\\]{1,2000})""",
+    """duser=({user}[^\s]{1,2000})""",
     """shost=({host}.*?)\s\w+=""",
     """src=({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
-    """suser=({user}[^\s]+)""",
+    """suser=({user}[^\s]{1,2000})""",
     """filePath=({server}.*?)\s\w+=""",
     """AttackUserName=({username}.*?)\s\w+=""",
     """TargetUserName=({username}.*?)\s\w+=""",

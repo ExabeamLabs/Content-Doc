@@ -9,10 +9,10 @@ Name = cef-crowdstrike-app-activity
   TimeFormat = "epoch"
   Conditions = [ """CEF:""", """|CrowdStrike|FalconHost|""", """cat=UserActivityAuditEvent""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """\Wrt=({time}\d{1,100})""",
-    """\Wduser=({user}[^=@]+?)(@({domain}[^@]+?))?\s{0,100}(\w+=|$)""",
-    """CrowdStrike\|([^|]+\|){3}({activity}[^|]+)""",
+    """\Wduser=({user}[^=@]{1,2000}?)(@({domain}[^@]{1,2000}?))?\s{0,100}(\w+=|$)""",
+    """CrowdStrike\|([^|]{1,2000}\|){3}({activity}[^|]{1,2000})""",
     """({app}FalconHost)""",
   ]
   DupFields = ["domain->email_domain"]

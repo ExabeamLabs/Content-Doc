@@ -10,13 +10,13 @@ Name = s-physical-badge-access-6
     Conditions = ["AccessDescription","PersonnelID"]
     Fields = [
       """AccessFormatedTime"{1,20}:"{1,20}({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d)""",
-      """AccesshostName":"({host}[^"]+)""",
-      """PersonnelID":"({user}[^"]+)""",
-      """PersonName":"({user_fullname}[^"]+)""",
-      """PersonID":"({employee_id}[^"]+)""",
-      """AccessDescription":"({outcome}[^"]+)""",
+      """AccesshostName":"({host}[^"]{1,2000})""",
+      """PersonnelID":"({user}[^"]{1,2000})""",
+      """PersonName":"({user_fullname}[^"]{1,2000})""",
+      """PersonID":"({employee_id}[^"]{1,2000})""",
+      """AccessDescription":"({outcome}[^"]{1,2000})""",
       """ReaderName":"({location_city}\w+)""",
-      """ReaderName":"({location_door}[^"]+)"""
+      """ReaderName":"({location_door}[^"]{1,2000})"""
     ]
   }
 ```

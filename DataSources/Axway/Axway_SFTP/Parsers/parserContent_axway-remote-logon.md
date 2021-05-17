@@ -10,11 +10,11 @@ Name = axway-remote-logon
   Conditions = [ """user:INFO""", """SSH: Successful login on""", """Username:""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
-    """\d\d:\d\d:\d\d\s({src_ip}[\dA-Fa-f.:]+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """\d\d:\d\d:\d\d\s({src_ip}[\dA-Fa-f.:]{1,2000})""",
     """({event_name}Successful login)""",
-    """Successful login on\s{0,100}\[?({dest_ip}[a-fA-F\d.:]+)\]?""",
-    """Username:\s{0,100}"{1,20}({user}[^"]+)""",
+    """Successful login on\s{0,100}\[?({dest_ip}[a-fA-F\d.:]{1,2000})\]?""",
+    """Username:\s{0,100}"{1,20}({user}[^"]{1,2000})""",
     """({auth_package}SSH)"""
   ]
 }

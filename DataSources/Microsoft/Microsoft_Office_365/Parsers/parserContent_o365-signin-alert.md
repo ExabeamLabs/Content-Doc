@@ -9,14 +9,14 @@ Name = o365-signin-alert
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|anomalous-signin|""", """"riskEventType":"""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}[\w\-.]+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
     """"riskEventDateTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """requestClientApplication=({process}.+?)\s{0,100}(\w+=|$)""",
-    """"userPrincipalName":"({user_email}[^@"\s]+?@[^"\s]+?)""""
-    """"id":"({alert_id}[^"]+?)""""
-    """"riskLevel":"({alert_severity}[^"]+?)""""
-    """"ipAddress":"({src_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]*:[A-Fa-f0-9%.:]+(th0)?))""""
-    """"riskEventType":"({alert_name}[^"]+?)""""
+    """"userPrincipalName":"({user_email}[^@"\s]{1,2000}?@[^"\s]{1,2000}?)""""
+    """"id":"({alert_id}[^"]{1,2000}?)""""
+    """"riskLevel":"({alert_severity}[^"]{1,2000}?)""""
+    """"ipAddress":"({src_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]{0,2000}:[A-Fa-f0-9%.:]{1,2000}(th0)?))""""
+    """"riskEventType":"({alert_name}[^"]{1,2000}?)""""
     """({alert_type}anomalous-signin)"""
     """"location":\{"({additional_info}.*?)\}+"""
   ]

@@ -12,15 +12,15 @@ Name = json-4768-3
     """({event_name}A Kerberos authentication ticket \(TGT\) was requested)""",
     """({event_code}4768)""",
     """"TimeCreated"{1,20}:"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """"Computer"{1,20}:"{1,20}({host}[^"]+)"""",
-    """"TicketOptions":"({ticket_options}[^"]+)""",
-    """"TicketEncryptionType":"({ticket_encryption_type}[^"]+)""",
-    """"ServiceName":"({service_name}[^"]+)""",
-    """"Status":"({result_code}[^"]+)""",
-    """"IpAddress":"({dest_ip}[a-fA-F.:\d]+)""",
-    """TargetUserName":"(?:-|(?i)(system|anonymous logon|LOCAL SERVICE|LOCAL SYSTEM)|({user}[^"]+))"""",
-    """TargetDomainNam":"(?:-|({domain}[^"]+?))"""",
-    """TargetSid":"({user_sid}[^"\\]+)""""
+    """"Computer"{1,20}:"{1,20}({host}[^"]{1,2000})"""",
+    """"TicketOptions":"({ticket_options}[^"]{1,2000})""",
+    """"TicketEncryptionType":"({ticket_encryption_type}[^"]{1,2000})""",
+    """"ServiceName":"({service_name}[^"]{1,2000})""",
+    """"Status":"({result_code}[^"]{1,2000})""",
+    """"IpAddress":"({dest_ip}[a-fA-F.:\d]{1,2000})""",
+    """TargetUserName":"(?:-|(?i)(system|anonymous logon|LOCAL SERVICE|LOCAL SYSTEM)|({user}[^"]{1,2000}))"""",
+    """TargetDomainNam":"(?:-|({domain}[^"]{1,2000}?))"""",
+    """TargetSid":"({user_sid}[^"\\]{1,2000})""""
   ]
 }
 ```

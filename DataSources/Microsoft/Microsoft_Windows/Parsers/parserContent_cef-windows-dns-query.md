@@ -11,11 +11,11 @@ Name = cef-windows-dns-query
   Conditions = [ """CEF:""", """|Microsoft|DNS Server|""", """app=DNS Query""" ]
   Fields = [
     """\Wrt=({time}\d{1,100})""",
-    """\Wdvc=({host}[A-Fa-f:\d.]+)""",
-    """\Wdvchost=({host}[\w\-.]+)""",
+    """\Wdvc=({host}[A-Fa-f:\d.]{1,2000})""",
+    """\Wdvchost=({host}[\w\-.]{1,2000})""",
     """\Wapp=({event_code}DNS Query)""",
     """\Wrequest=({query}.+?)\s{1,100}(\w+=|$)""",
-    """\Wsrc=({src_ip}[A-Fa-f:\d.]+)""",
+    """\Wsrc=({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """\Wcs1=({query_type}.+?)\s{1,100}(\w+=|$)""",
     """\Wcs5=({query_flags}.+?)\s{1,100}(\w+=|$)""",
     """\Wproto=({protocol}.+?)\s{1,100}(\w+=|$)""",

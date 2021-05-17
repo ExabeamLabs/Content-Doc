@@ -15,18 +15,18 @@ Name = raw-4771
     """"event_time":"({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d)""",
     """({time}\d\d\/\d\d\/\d\d\d\d\s\d\d:\d\d:\d\d\s(AM|PM))""",
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
-    """exabeam_host=(::ffff:)?({host}[\w.-]+)""",
-    """(?i)(((audit|failure)( |_)(audit|failure))|information)(,|s+)(::ffff:)?({host}[\w.-]+)(\s|,|"|$)""",
-    """__li_source_path="{0,20}(::ffff:)?({host}[^"]+)"""",
-    """(::ffff:)?({host}[^\/\s]+)\/Microsoft-Windows-Security-Auditing\s{0,100}\(""",
-    """<?Computer>?(Name)?["\s:=]*(::ffff:)?({host}[\w\.-]+)(\s|,|"|</Computer>|$)""",
-    """Computer(\w+)?["\s]*(:|=)\s{0,100}"?(::ffff:)?({host}.+?)("|\s|;)""",
+    """exabeam_host=(::ffff:)?({host}[\w.-]{1,2000})""",
+    """(?i)(((audit|failure)( |_)(audit|failure))|information)(,|s+)(::ffff:)?({host}[\w.-]{1,2000})(\s|,|"|$)""",
+    """__li_source_path="{0,20}(::ffff:)?({host}[^"]{1,2000})"""",
+    """(::ffff:)?({host}[^\/\s]{1,2000})\/Microsoft-Windows-Security-Auditing\s{0,100}\(""",
+    """<?Computer>?(Name)?["\s:=]{0,2000}(::ffff:)?({host}[\w\.-]{1,2000})(\s|,|"|</Computer>|$)""",
+    """Computer(\w+)?["\s]{0,2000}(:|=)\s{0,100}"?(::ffff:)?({host}.+?)("|\s|;)""",
     """({event_code}4771)""",
     """Account Information(:|=)\s{0,100};*Security ID(:|=)\s{0,100}({user_sid}.+?)\s{0,100};*Account""",
     """Account Name(:|=)\s{0,100}({user}.+?)\s{0,100};*Service Information""",
     """Service Name(:|=)\s{0,100}\w+\/(?=\w)({domain}.+?)\s{0,100};*Network Information""",
-    """Client Address(:|=)\s{0,100}(::[\w]+:)?({dest_ip}[a-fA-F:\d.]+)""",
-    """Failure Code(:|=)\s{0,100}({result_code}[\w]+)"""
+    """Client Address(:|=)\s{0,100}(::[\w]{1,2000}:)?({dest_ip}[a-fA-F:\d.]{1,2000})""",
+    """Failure Code(:|=)\s{0,100}({result_code}[\w]{1,2000})"""
   ]
   DupFields = ["host->dest_host"]
 }

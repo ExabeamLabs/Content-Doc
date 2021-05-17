@@ -11,14 +11,14 @@ Name = syslog-json-4720
   Fields = [ 
     """({event_name}A user account was created)""",
 	      """"EventTime":\s{0,100}"({time}\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})"""",
-              """"Hostname":"({host}[^."]*)""",
+              """"Hostname":"({host}[^."]{0,2000})""",
               """({event_code}4720)""",
-	      """"SubjectUserName":"({user}[^"]+)""",
-	      """"SubjectDomainName":"({domain}[^"]+)""",
-	      """"SubjectLogonId":"({logon_id}[^"]+)""",
-	      """"TargetSid":"({account_id}[^"]+)""",
-	      """"TargetUserName":"({account_name}[^"]+)""",
-	      """"TargetDomainName":"({account_domain}[^"]+)"""
+	      """"SubjectUserName":"({user}[^"]{1,2000})""",
+	      """"SubjectDomainName":"({domain}[^"]{1,2000})""",
+	      """"SubjectLogonId":"({logon_id}[^"]{1,2000})""",
+	      """"TargetSid":"({account_id}[^"]{1,2000})""",
+	      """"TargetUserName":"({account_name}[^"]{1,2000})""",
+	      """"TargetDomainName":"({account_domain}[^"]{1,2000})"""
 	]
     DupFields = ["host->dest_host"]
 }

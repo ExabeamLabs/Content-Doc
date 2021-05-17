@@ -9,9 +9,9 @@ Name = mcafee-epp-alert
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = ["%ePolicy-", "VIRUSCAN" ]
     Fields = [
-      """({alert_id}[^\s\^]+)[\s\^]+({host}[^\^\s]+)[\s\^]+({time}\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}).+?({alert_type}(?:hip|av|fw)\.\w+)[\s\^]+\d{1,100}[\s\^]+\d{1,100}[\s\^]+({alert_name}BO\:(Stack|Writable BO:Heap|Image|Memory)|[^\:\^]+)""",
-      """VIRUSCAN\d{1,100}[\s\^]+VirusScan Enterprise[\s\^]+\d{1,100}\.\d{1,100}[\s\^]+({src_host}[^\s\^]+)[\s\^]+(?:(?!\(null\))({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))?""",
-      """(?:OAS|ODS)(?:[\^\s]+[^\^\s]+){4}[\s\^]+(?:[\s\w]+\\)?({user}[^\^\s]+)"""
+      """({alert_id}[^\s\^]{1,2000})[\s\^]{1,2000}({host}[^\^\s]{1,2000})[\s\^]{1,2000}({time}\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}).+?({alert_type}(?:hip|av|fw)\.\w+)[\s\^]{1,2000}\d{1,100}[\s\^]{1,2000}\d{1,100}[\s\^]{1,2000}({alert_name}BO\:(Stack|Writable BO:Heap|Image|Memory)|[^\:\^]{1,2000})""",
+      """VIRUSCAN\d{1,100}[\s\^]{1,2000}VirusScan Enterprise[\s\^]{1,2000}\d{1,100}\.\d{1,100}[\s\^]{1,2000}({src_host}[^\s\^]{1,2000})[\s\^]{1,2000}(?:(?!\(null\))({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))?""",
+      """(?:OAS|ODS)(?:[\^\s]{1,2000}[^\^\s]{1,2000}){4}[\s\^]{1,2000}(?:[\s\w]{1,2000}\\)?({user}[^\^\s]{1,2000})"""
     ]
     SOAR {
       IncidentType = "malware"

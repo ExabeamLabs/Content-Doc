@@ -11,17 +11,17 @@ Name = citrix-endpoint-mgmt-activity
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\d)""",
     """Original Address=({host}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
-    """app.name="({app}[^"]+)"""",
-    """client.ip="({src_ip}[^"]+)"""",
-    """device.id="({src_host}[^"]+)"""",
-    """event.action="({activity}[^"]+)"""",
-    """event.status="({outcome}[^"]+)"""",
-    """http.user-agent="({user_agent}[^"]+)"""",
-    """\[os=({os}[^,\s]+)""",
-    """session.id="({session_id}[^"]+)"""",
-    """push.user="(({user_email}[^@"]+?@[^"]+)|(({domain}[^,\\]+)[\\]+({user}[^"]+))|({=user}[^"]+))""",
-    """user.id="(({user_email}[^@"]+?@[^"]+)|(({domain}[^,\\]+)[\\]+({user}[^"]+))|({=user}[^"]+))""",
-    """arg1":"({additional_info}[^"]+)"""
+    """app.name="({app}[^"]{1,2000})"""",
+    """client.ip="({src_ip}[^"]{1,2000})"""",
+    """device.id="({src_host}[^"]{1,2000})"""",
+    """event.action="({activity}[^"]{1,2000})"""",
+    """event.status="({outcome}[^"]{1,2000})"""",
+    """http.user-agent="({user_agent}[^"]{1,2000})"""",
+    """\[os=({os}[^,\s]{1,2000})""",
+    """session.id="({session_id}[^"]{1,2000})"""",
+    """push.user="(({user_email}[^@"]{1,2000}?@[^"]{1,2000})|(({domain}[^,\\]{1,2000})[\\]{1,2000}({user}[^"]{1,2000}))|({=user}[^"]{1,2000}))""",
+    """user.id="(({user_email}[^@"]{1,2000}?@[^"]{1,2000})|(({domain}[^,\\]{1,2000})[\\]{1,2000}({user}[^"]{1,2000}))|({=user}[^"]{1,2000}))""",
+    """arg1":"({additional_info}[^"]{1,2000})"""
   ]   
 }
 ```

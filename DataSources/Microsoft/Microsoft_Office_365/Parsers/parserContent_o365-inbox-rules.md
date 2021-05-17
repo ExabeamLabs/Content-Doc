@@ -10,13 +10,13 @@ Name = o365-inbox-rules
   Conditions = ["""Operation":"Set-Mailbox""" , """DeliverToMailboxAndForward""" ]
   Fields = [
     """"CreationTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""",
-    """Forward.+?Value":"(smtp:)?({target}[^"]+@({target_domain}[^"]+))""""
-    """"ResultStatus":"({outcome}[^"]+)"""",
-    """"ClientIP":"({src_ip}[^:]+):""",
+    """Forward.+?Value":"(smtp:)?({target}[^"]{1,2000}@({target_domain}[^"]{1,2000}))""""
+    """"ResultStatus":"({outcome}[^"]{1,2000})"""",
+    """"ClientIP":"({src_ip}[^:]{1,2000}):""",
     """({activity}DeliverToMailboxAndForward)"""",
     """msg=({additional_info}.+?)\srequest=""",
-    """"Value":"(smtp:)?.+?@({target_domain}[^"]+)"""",
-    """UserId":"({user_email}[^"\\\s@]+@({user_domain}[^"\\\s@]+))""",
+    """"Value":"(smtp:)?.+?@({target_domain}[^"]{1,2000})"""",
+    """UserId":"({user_email}[^"\\\s@]{1,2000}@({user_domain}[^"\\\s@]{1,2000}))""",
     """({app}Office 365)"""
     """destinationServiceName=({app}.+?)\sdevice"""
   ]

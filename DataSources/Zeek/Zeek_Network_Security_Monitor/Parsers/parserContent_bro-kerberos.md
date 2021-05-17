@@ -9,10 +9,10 @@ Name = bro-kerberos
   TimeFormat = "epoch_sec"
   Conditions = ["/kerberos.log" ]
   Fields = [
-    """exabeam_host=({host}[\w.\-]+)""",
-    """({time}\d{10})\.\d{6}\t({conn_id}[^\t]+)\t(?:-|(({src_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]*:[A-Fa-f0-9%.:]+(th0)?))|[^\t]+))\t(?:-|(({src_port}\d{1,100}?)|[^\t]+))\t(?:-|(({dest_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]*:[A-Fa-f0-9%.:]+(th0)?))|[^\t]+))\t(?:-|(({dest_port}\d{1,100}?)|[^\t]+))\t(?:-|({request_type}[^\t]+))\t(?:-|([^\t]+))\t(?:-|({service_name}[^\/\t]+)).+?\t(?:-|({outcome}[^\t]+))\t(?:-|({result_code}[^\t]+))\t(?:-|({issue_time}[^\t]+))\t(?:-|({expiry_time}[^\t]+))\t(?:-|({ticket_encryption_type}[^\t]+))\t({ticket_options}[^\t]+\t[^\t]+)\t(?:-|({client_cert_subject}[^\t]+))\t(?:-|([^\t]+))\t(?:-|({server_cert_subject}[^\t]+))\t(?:-|([^\t]+?))\s{0,100}$"""
-    """\d{10}\.\d{6}\t([^\t]+\t){6}({user}[^\/]+)\/({domain}[^\t]+)\t""",
-    """\d{10}\.\d{6}\t([^\t]+\t){7}({dest_host}[^\/]+)\$"""
+    """exabeam_host=({host}[\w.\-]{1,2000})""",
+    """({time}\d{10})\.\d{6}\t({conn_id}[^\t]{1,2000})\t(?:-|(({src_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]{0,2000}:[A-Fa-f0-9%.:]{1,2000}(th0)?))|[^\t]{1,2000}))\t(?:-|(({src_port}\d{1,100}?)|[^\t]{1,2000}))\t(?:-|(({dest_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]{0,2000}:[A-Fa-f0-9%.:]{1,2000}(th0)?))|[^\t]{1,2000}))\t(?:-|(({dest_port}\d{1,100}?)|[^\t]{1,2000}))\t(?:-|({request_type}[^\t]{1,2000}))\t(?:-|([^\t]{1,2000}))\t(?:-|({service_name}[^\/\t]{1,2000})).+?\t(?:-|({outcome}[^\t]{1,2000}))\t(?:-|({result_code}[^\t]{1,2000}))\t(?:-|({issue_time}[^\t]{1,2000}))\t(?:-|({expiry_time}[^\t]{1,2000}))\t(?:-|({ticket_encryption_type}[^\t]{1,2000}))\t({ticket_options}[^\t]{1,2000}\t[^\t]{1,2000})\t(?:-|({client_cert_subject}[^\t]{1,2000}))\t(?:-|([^\t]{1,2000}))\t(?:-|({server_cert_subject}[^\t]{1,2000}))\t(?:-|([^\t]{1,2000}?))\s{0,100}$"""
+    """\d{10}\.\d{6}\t([^\t]{1,2000}\t){6}({user}[^\/]{1,2000})\/({domain}[^\t]{1,2000})\t""",
+    """\d{10}\.\d{6}\t([^\t]{1,2000}\t){7}({dest_host}[^\/]{1,2000})\$"""
   ]
 }
 ```

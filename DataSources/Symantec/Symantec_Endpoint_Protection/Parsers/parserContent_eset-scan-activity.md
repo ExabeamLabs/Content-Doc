@@ -11,12 +11,12 @@ Name = eset-scan-activity
   Fields =[
   """({time}\d{1,100}-\d{1,100}-\d{1,100} \d{1,100}:\d{1,100}:\d{1,100})""",
   """Scan ID:\s{0,100}({scan_id}\d{1,100})""",
-  """Computer:\s{0,100}({host}[^,]+)""",
-  """IP Address:\s{0,100}({src_ip}[^,]+)""",
-  """Server Name:\s{0,100}({dest_host}[^.\s,]+)""",
-  """User1:\s{0,100}(SYSTEM|({user}[^,]+))""",
-  """Group Name:\s({group}[^,]+)""",
-  """Domain Name:\s{0,100}({domain}[^,]+)"""
+  """Computer:\s{0,100}({host}[^,]{1,2000})""",
+  """IP Address:\s{0,100}({src_ip}[^,]{1,2000})""",
+  """Server Name:\s{0,100}({dest_host}[^.\s,]{1,2000})""",
+  """User1:\s{0,100}(SYSTEM|({user}[^,]{1,2000}))""",
+  """Group Name:\s({group}[^,]{1,2000})""",
+  """Domain Name:\s{0,100}({domain}[^,]{1,2000})"""
   ]
 }
 ```

@@ -10,11 +10,11 @@ Name = cisco-ssh-login-1
   Conditions = [ """-LOGIN_SUCCESS:""" ]
   Fields = [
     """at ({time}\d\d:\d\d:\d\d \w+ \w+ \w+ \d\d \d\d\d\d)""",
-    """<\d{1,100}>[^:\s]+:\s{1,100}({host}[^:\s]+):""",
-    """dvc=({host}[^\s]+)""",
-    """\[user:\s{0,100}({user}[^\]]+)""",
-    """\[Source:\s{0,100}({src_ip}[^\]]+)""",
-    """\[localport:\s{0,100}({src_port}[^\]]+)""",
+    """<\d{1,100}>[^:\s]{1,2000}:\s{1,100}({host}[^:\s]{1,2000}):""",
+    """dvc=({host}[^\s]{1,2000})""",
+    """\[user:\s{0,100}({user}[^\]]{1,2000})""",
+    """\[Source:\s{0,100}({src_ip}[^\]]{1,2000})""",
+    """\[localport:\s{0,100}({src_port}[^\]]{1,2000})""",
     """({event_code}\S+\d{1,100}-LOGIN_SUCCESS)""",
   ]
 }

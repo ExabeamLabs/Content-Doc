@@ -9,17 +9,17 @@ Name = cisco-auth-successful-2
   TimeFormat = "MMM dd yyyy HH:mm:ss a"
   Conditions = [ """EventType =UserLogging""", """EventStatus =Success""", """Successfully Logged into Cisco CCM Webpages""" ]
   Fields = [
-    """exabeam_host=([^=]+@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """\s({time}\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(AM|PM|am|pm))""",
-    """UserID\s{0,100}=({user}[^\s\]]+)""",
-    """ClientAddress\s{0,100}=({src_ip}[A-Fa-f:\d.]+)""",
-    """EventType\s{0,100}=({activity}[^\]]+)""",
-    """ResourceAccessed\s{0,100}=({object}[^\]]+)""",
-    """EventStatus\s{0,100}=({outcome}[^\]]+)""",
-    """ComponentID\s{0,100}=({target}[^\]]+)""",
-    """AuditDetails\s{0,100}=({event_name}[^\]]+)""",
-    """Node ID=({dest_host}[^\]]+)""",
-    """App ID\s{0,100}=({app}[^\]]+)""",
+    """UserID\s{0,100}=({user}[^\s\]]{1,2000})""",
+    """ClientAddress\s{0,100}=({src_ip}[A-Fa-f:\d.]{1,2000})""",
+    """EventType\s{0,100}=({activity}[^\]]{1,2000})""",
+    """ResourceAccessed\s{0,100}=({object}[^\]]{1,2000})""",
+    """EventStatus\s{0,100}=({outcome}[^\]]{1,2000})""",
+    """ComponentID\s{0,100}=({target}[^\]]{1,2000})""",
+    """AuditDetails\s{0,100}=({event_name}[^\]]{1,2000})""",
+    """Node ID=({dest_host}[^\]]{1,2000})""",
+    """App ID\s{0,100}=({app}[^\]]{1,2000})""",
   ]
 }
 ```

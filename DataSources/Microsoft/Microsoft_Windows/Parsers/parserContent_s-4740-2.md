@@ -11,16 +11,16 @@ Name = s-4740-2
   Fields = [
     """({event_name}Account That Was Locked Out)""",
     """({event_code}4740)""",
-    """\sComputerName=({host}[^\s]+)""",
-    """Locked Out:Security ID=({user_sid}[^\s]+)""",
+    """\sComputerName=({host}[^\s]{1,2000})""",
+    """Locked Out:Security ID=({user_sid}[^\s]{1,2000})""",
     """\sDetectTime=({time}\d\d\d\d-\d{1,100}-\d{1,100} \d{1,100}:\d{1,100}:\d{1,100})\s""",
-    """\sUser=(null|({user}[^\s]+))""",
-    """\sEventType=({outcome}[^\s]+)""",
-    """Caller Computer Name=({src_host}[^\s]+)""",
-    """Account Name=({user}[^\s]+)""",
-    """Account Domain=({domain}[^\s]+)""",
-    """Logon ID=({logon_id}[^\s"]+)""",
-    """Security ID=({sid}[^\s]+)""",
+    """\sUser=(null|({user}[^\s]{1,2000}))""",
+    """\sEventType=({outcome}[^\s]{1,2000})""",
+    """Caller Computer Name=({src_host}[^\s]{1,2000})""",
+    """Account Name=({user}[^\s]{1,2000})""",
+    """Account Domain=({domain}[^\s]{1,2000})""",
+    """Logon ID=({logon_id}[^\s"]{1,2000})""",
+    """Security ID=({sid}[^\s]{1,2000})""",
   ]
   DupFields=[ "host->dest_host", "domain->caller_domain" ]
 }

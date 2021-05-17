@@ -12,7 +12,7 @@ Name = cef-duo-auth
     """\Wrt=({time}\d{1,100})""",
     """\Wreason=({failure_reason}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\Woutcome=({outcome}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
-    """\Wsrc=({src_ip}[a-fA-F\d.:]+)""",
+    """\Wsrc=({src_ip}[a-fA-F\d.:]{1,2000})""",
     """\Wduser=({user}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdvchost=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wcs4=({os}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
