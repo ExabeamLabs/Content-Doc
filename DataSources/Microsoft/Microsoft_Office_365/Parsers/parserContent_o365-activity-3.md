@@ -29,7 +29,7 @@ Name = o365-activity-3
     """"ItemName":"({subject}[^"]{1,2000})""",
     """Sender":"({sender}[^"]{1,2000})""",
     """"Receivers":\[({recipients}"({recipient}[^",]{1,2000})[^\]]{1,2000}?)\],"""",
-    """"ClientIP"{1,20}:"{1,20}({src_ip}[A-Fa-f:\d.]{1,2000})""",
+    """"ClientIP"{1,20}:"{1,20}\[?({src_ip}((\d{1,3}\.){3}\d{1,3}|[A-Fa-f\d]{1,2000}:[a-fA-F\d:]{1,2000}))\]?(:({src_port}\d{1,100}))?"""",
     """UserAgent":\s{0,100}"({user_agent}[^"]{1,2000})"""",
     """DatasetName"{0,20}:\s{0,100}"{0,20}({data_set_name}[^"]{1,2000})""",
     """Workload"{0,20}:\s{0,100}"{0,20}({resource}[^"]{1,2000})"{0,20}""",

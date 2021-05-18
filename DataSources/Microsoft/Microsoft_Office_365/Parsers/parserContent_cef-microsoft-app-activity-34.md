@@ -29,7 +29,7 @@ cef-microsoft-app-activity = {
     """\Wsuser=({user_email}[^@\s]{1,2000}@[^@\s]{1,2000})""",
     """"{1,20}UserId"{1,20}:"{1,20}({user_email}[^@\s"]{1,2000}?@({email_domain}[^@\s"]{1,2000}?))"{1,20}""",
     """"ClientIP":"(::1|\[?({src_ip}[A-Fa-f:\d.]{1,2000}?)(\]:({src_port}\d{1,100}))?)"""",
-    """\Wsrc=({src_ip}[A-Fa-f:\d.]{1,2000})""",
+    """\Wsrc=\[?({src_ip}((\d{1,3}\.){3}\d{1,3}|[A-Fa-f\d]{1,2000}:[a-fA-F\d:]{1,2000}))\]?(:({src_port}\d{1,100}))?\s\w+=""",
     """"ResultStatus":"({result}[^"]{1,2000}?)"""",
     """\WdestinationServiceName\s{0,100}=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\WsourceServiceName=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",

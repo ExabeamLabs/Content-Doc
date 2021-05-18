@@ -12,7 +12,7 @@ Name = o365-inbox-rules
     """"CreationTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""",
     """Forward.+?Value":"(smtp:)?({target}[^"]{1,2000}@({target_domain}[^"]{1,2000}))""""
     """"ResultStatus":"({outcome}[^"]{1,2000})"""",
-    """"ClientIP":"({src_ip}[^:]{1,2000}):""",
+    """"ClientIP":"\[?({src_ip}((\d{1,3}\.){1,3}\d{1,3}|[a-fA-F\d]{1,2000}:[A-Fa-f\d:]{1,2000}))\]?(:({src_port}\d{1,100}))?"""",
     """({activity}DeliverToMailboxAndForward)"""",
     """msg=({additional_info}.+?)\srequest=""",
     """"Value":"(smtp:)?.+?@({target_domain}[^"]{1,2000})"""",
