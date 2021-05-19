@@ -18,12 +18,13 @@ Name = fireeye-cef-email-alert
   	"""\Wdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
     """\Wdvchost=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   	"""\Wsuser=({src_user}[^@\s]{1,2000})""",
-  	"""\Wduser=({dst_user}[^@\s]{1,2000})""",
+  	"""\Wduser=({dest_user}[^@\s]{1,2000})""",
     """\Wduser=({user_email}[^@\s,]{1,2000}@[^@\s,]{1,2000})""",
     """\Wduser=({user}[^@\s,]{1,2000})""",
     """\Wcn2=({alert_id}\d{1,100})""",
     """\Wcs1=({alert_name}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
-    """\Wsproc=({process_name}.+?)(\s{1,100}\w+=|\s{0,100}$)"""
+    """\Wsproc=({process_name}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wact=({action}[^=]{1,2000}?)\s{1,100}\w+="""
   ]
   SOAR {
     IncidentType = "malware"

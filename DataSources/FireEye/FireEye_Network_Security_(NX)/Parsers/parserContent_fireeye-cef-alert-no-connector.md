@@ -24,7 +24,8 @@ Name = fireeye-cef-alert-no-connector
     """\sdhost=({src_host}\S+)""",
     """\sduser=({user}[^@]{1,2000})(@[^\s]{1,2000})?\s{1,100}cn1Label""",
     """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\sdvchost=({host}[^\s]{1,2000})"""
+    """\sdvchost=({host}[^\s]{1,2000})""",
+    """\sact=({action}[^=]{1,2000}?)\s{1,100}\w+="""
   ]
   SOAR {
     IncidentType = "malware"
