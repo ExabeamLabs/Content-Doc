@@ -16,7 +16,7 @@ Name = proofpoint-email-1
       """"subject"{1,20}:\s{0,100}\["{1,20}({subject}[^"]{1,2000})""",
       """"rcpts"{1,20}:\s{0,100}\[({recipients}"{1,20}({recipient}[^"@]{1,2000}@({external_domain_recipient}[^"]{1,2000})).*?)\]""",
       """"ip"{1,20}:\s{0,100}"{1,20}({dest_ip}[a-fA-F\d.:]{1,2000})""",
-      """"filter"{1,20}:.+?"{1,20}disposition"{1,20}:\s{0,100}"{1,20}({outcome}[^"]{1,2000})""",
+      """"filter"{1,20}:.*?"{1,20}disposition"{1,20}:\s{0,100}"{1,20}({outcome}[^"]{1,2000})""",
       """"routeDirection"{1,20}:\s{0,100}"{1,20}({direction}[^"]{1,2000})""",
       """"message-id"{1,20}:\s{0,100}\["{1,20}({message_id}[^"]{1,2000})""",
       """msgParts.+"detectedName"{1,20}:\s{0,100}"{1,20}\s{0,100}({attachment}[^"]{1,2000})""",
