@@ -11,8 +11,8 @@ Name = json-4662-1
     """({event_name}An operation was performed on an object)""",
     """({event_code}4662)""",
     """"ObjectName":"({object}[^"]{1,2000})"""",
-    """"ObjectServer":"({object_server}[^"]{1,2000})"""",
-    """"ObjectType":"({activity_type}[^"]{1,2000})"""",
+    """"ObjectServer":"({object_class}[^"]{1,2000})"""",
+    """"ObjectType":"({object_type}[^"]{1,2000})"""",
     """"LogonID":"({logon_id}[^"]{1,2000})"""",
     """"OperationType":"({activity}[^"]{1,2000})"""",
     """"AdditionalInfo":"(?:-|({additional_info}[^"]{1,2000}))""""

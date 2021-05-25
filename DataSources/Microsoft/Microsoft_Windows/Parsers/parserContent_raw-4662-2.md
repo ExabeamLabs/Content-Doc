@@ -21,7 +21,7 @@ Name = raw-4662-2
     """"4662",("[^"]{0,2000}",){6}"({target_user_sid}[^"]{1,2000})"""",
     """"(An operation was performed on an object)",("[^"]{1,2000}",){2}"({object_class}[^"]{1,2000})""",
     """"(An operation was performed on an object)",("[^"]{1,2000}",){3}"({object}[^"]{1,2000})""",
-    """"(An operation was performed on an object)",("[^"]{1,2000}",){4}"({activity_type}[^"]{1,2000})""",
+    """"(An operation was performed on an object)",("[^"]{1,2000}",){4}"({object_type}[^"]{1,2000})""",
     """"(An operation was performed on an object)",("[^"]{1,2000}",){5}"(LOCAL SERVICE|({user}[^"]{1,2000}))""",
     """"(An operation was performed on an object)",("[^"]{1,2000}",){6}"({logon_id}[^"]{1,2000})""",
     """"(An operation was performed on an object)",("[^"]{1,2000}",){7}"(NT AUTHORITY|({domain}[^"]{1,2000}))""",

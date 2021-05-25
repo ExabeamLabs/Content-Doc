@@ -19,7 +19,7 @@ Name = json-4662
     """"SubjectDomainName":"({domain}[^"]{1,2000})"""",
     """"ObjectName":"({object}[^"]{1,2000})"""",
     """"ObjectServer":"({object_class}[^"]{1,2000})"""",
-    """"ObjectType":"({activity_type}[^"]{1,2000})"""",
+    """"ObjectType":"({object_type}[^"]{1,2000})"""",
     """"LogonID":"({logon_id}[^"]{1,2000})"""",
     """"OperationType":"({activity}[^"]{1,2000})"""",
     """"Properties":"(-|({properties}[^"]{1,2000}))"""",

@@ -16,7 +16,7 @@ Name = s-4662
     """Account Domain:\s{0,100}({domain}.+?)\s{0,100}Logon ID""",
     """Logon ID:\s{0,100}({logon_id}[^\s]{1,2000})""",
     """Object Server:\s{0,100}({object_class}.+?)\s{0,100}Object Type:""",
-    """Object Type:\s{0,100}({activity_type}.+?)\s{0,100}Object Name:""",
+    """Object Type:\s{0,100}({object_type}.+?)\s{0,100}Object Name:""",
     """Object Name:\s{0,100}({object}.+?)\s{0,100}Handle ID:""",
     """Operation Type:\s{0,100}({action}.+?)\s{0,100}Accesses:""",
     """Properties:\s{0,100}(?:-|({properties}.+?))\s{0,100}Additional Information:""",
