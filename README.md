@@ -21,7 +21,7 @@ The Content Library provides navigation from an Exabeam supported data source to
 
 The Content Library currently allows browsing Exabeam content branches: 
  - "master" branch: The master repository with the latest content developed by the Exabeam content team
- - "c2xxx" branches: Out-of-the-box content that was shipped with major Advanced Analytics releases
+ - "cxxxx" branches: Out-of-the-box content that was shipped with major Advanced Analytics releases
 
 Browse the specific branches to see the documentation for the content that is available in the product today or browse the master repository for a peek into what is coming next ("canary" content). Note that the content in the master may not be fully tested as of yet and should be used carefully. 
 
