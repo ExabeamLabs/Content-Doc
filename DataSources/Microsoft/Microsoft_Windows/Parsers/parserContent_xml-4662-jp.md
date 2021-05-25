@@ -21,7 +21,7 @@ Name = xml-4662-jp
     """'SubjectDomainName'>({domain}[^"\s<]{1,2000})<""",
     """'SubjectLogonId'>({logon_id}[^"\s<]{1,2000})<""",
     """'ObjectServer'>({object_class}[^<]{1,2000})<""",
-    """'ObjectType'>\%?\{?({activity_type}[^<>\{\}]{1,2000})""",
+    """'ObjectType'>\%?\{?({object_type}[^<>\{\}]{1,2000})""",
     """'ObjectName'>\%?\{?({object}[^<>\{\}]{1,2000})""",
     """'OperationType'>({activity}[^<]{1,2000})<""",
     """'HandleId'>({handle_id}[^<]{1,2000})<""",

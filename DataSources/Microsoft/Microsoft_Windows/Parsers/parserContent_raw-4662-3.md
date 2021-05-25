@@ -22,7 +22,8 @@ Name = raw-4662-3
     """originalAgentAddress=({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",	
     """amac=({src_mac}[^\s]{1,2000})""",
     """originalAgentMacAddress=({src_mac}[^\s]{1,2000})""",
-    """cs5=({object}[^\s]{1,2000})""",
+    """cs5=({object_type}[^\s]{1,2000})""",
+    """fname=({object}[^\s]{1,2000})""",
     """ad\.Object:Object_,?Server=({object_class}[^=]{1,2000}?)\s{0,100}([^=\s]{1,2000}=|$)""",
     """ad\.Operation:Operation_,?Type=({activity}[^=]{1,2000}?)\s{0,100}([^=\s]{1,2000}=|$)""",
   ]

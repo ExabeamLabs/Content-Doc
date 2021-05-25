@@ -22,7 +22,7 @@ Name = raw-4662-1
     """Account Name:\s{0,100}(|({user}.+?))\s{0,100}Account Domain:""",
     """Account Domain:\s{0,100}(|({domain}.+?))\s{0,100}Logon ID:""",
     """Object Server:\s{0,100}(|({object_class}.+?))\s{0,100}Object Type:""",
-    """Object Type:\s{0,100}(|({activity_type}.+?))\s{0,100}Object Name:""",
+    """Object Type:\s{0,100}(|({object_type}.+?))\s{0,100}Object Name:""",
     """Object Name:\s{0,100}(|({object}.+?))\s{0,100}Handle ID:""",
     """Logon ID:\s{0,100}({logon_id}[^\s]{1,2000})\s""",
     """Operation Type:\s{0,100}({activity}.+?)\s{1,100}Accesses:""",

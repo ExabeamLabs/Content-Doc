@@ -14,7 +14,7 @@ Name = exalms-4662
     """"(?:winlog\.)?computer_name"\s{0,100}:\s{0,100}"({host}.+?)"""",
     """ObjectServer":"({object_class}.+?)"""",
     """ObjectName":"({object}[^"]{1,2000})"""",
-    """ObjectType":"({activity_type}.+?)"""",
+    """ObjectType":"({object_type}.+?)"""",
     """SubjectUserName":"({user}.+?)"""",
     """SubjectLogonId":"({logon_id}[^"]{1,2000})"""",
     """SubjectDomainName":"({domain}[^"]{1,2000})"""",
