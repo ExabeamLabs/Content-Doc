@@ -1,0 +1,21 @@
+#### Parser Content
+```Java
+{
+Name = q-4800
+  Vendor = Microsoft
+  Product = Microsoft Windows
+  Lms = QRadar  
+  DataType = "windows-4800"
+  TimeFormat = "epoch_sec"
+  Conditions = [ "EventIDCode=4800", "The workstation was locked"]
+  Fields = [ """EventID=({event_code}\d{1,100})""",
+    """({event_name}The workstation was locked)""",
+    """TimeGenerated=({time}\d{1,100})""",
+    """Computer=({host}[^\s]{1,2000})""",
+    """Account Name:\s{1,100}({user}.+?)\s{1,100}Account Domain""",
+    """Account Domain:\s{1,100}({domain}.+?)\s{1,100}Logon ID""",
+    """Logon ID:\s{1,100}({logon_id}[^\s]{1,2000})"""
+  ]
+  DupFields = [ "host->dest_host" ]
+}
+```
