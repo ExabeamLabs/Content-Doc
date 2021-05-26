@@ -1,0 +1,31 @@
+#### Parser Content
+```Java
+{
+Name = raw-4662-3
+  Vendor = Microsoft
+  Product = Microsoft Windows
+  Lms = Direct
+  DataType = "object-access"
+  TimeFormat = "epoch"
+  Conditions = [ """CEF:0|""", """|Microsoft-Windows-Security-Auditing:4662|""", """An operation was performed on an object""" ]
+  Fields = [
+    """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
+    """({event_name}An operation was performed on an object)""",
+    """({event_code}4662)""",
+    """\srt=({time}\d{1,100})""",
+    """ahost=({host}[^\s]{1,2000})""",
+    """\sdhost=({dest_host}[^\s]{1,2000})""",
+    """\sdntdom=(-|({domain}[^\s]{1,2000}))""",
+    """duser=(-|({user}[^\s]{1,2000}))""",
+    """\sduid=({logon_id}[^\s]{1,2000})""",
+    """agt=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",	
+    """originalAgentAddress=({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",	
+    """amac=({src_mac}[^\s]{1,2000})""",
+    """originalAgentMacAddress=({src_mac}[^\s]{1,2000})""",
+    """cs5=({object_type}[^\s]{1,2000})""",
+    """fname=({object}[^\s]{1,2000})""",
+    """ad\.Object:Object_,?Server=({object_class}[^=]{1,2000}?)\s{0,100}([^=\s]{1,2000}=|$)""",
+    """ad\.Operation:Operation_,?Type=({activity}[^=]{1,2000}?)\s{0,100}([^=\s]{1,2000}=|$)""",
+  ]
+}
+```
