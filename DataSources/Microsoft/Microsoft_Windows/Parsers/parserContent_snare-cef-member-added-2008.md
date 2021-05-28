@@ -20,7 +20,7 @@ Name = snare-cef-member-added-2008
     """\sdntdom=({account_domain}[^\s]{1,2000})""",
     """\sduser=({account_id}.+?)\s{1,100}\w+=""",
     """\scs6=({group_domain}[^\\]{1,2000})""",
-    """\scs6=.+?\\+({group_name}.+?)\s{1,100}\w+=""",
+    """\scs6=[^=]{1,2000}?\\{1,25}({group_name}[^=]{1,2000}?)\s{1,100}\w+=""",
     """\sdvchost=({host}[^\s]{1,2000})""",
     """ad.Group:Security_,ID=({group_id}[^\s]{1,2000})""",
     """\sduid=(?=\w)({account_dn}.+?)\s{1,100}\w+=""",
