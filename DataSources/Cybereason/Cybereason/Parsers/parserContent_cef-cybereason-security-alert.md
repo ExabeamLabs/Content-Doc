@@ -10,13 +10,13 @@ Name = cef-cybereason-security-alert
   Conditions = [ """destinationServiceName=Cybereason""", """security-threat-detected""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
-    """\Wact=(|({action}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-    """\Wext_simpleValues_detectionType_values_0_=(|({alert_type}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-    """\Wdhost=(|({dest_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-    """\Wduser=(|(({domain}[^\\\/=]{1,2000})[\\\/]{1,2000})?({user}[^=\\\/]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
-    """\Wext_simpleValues_creationTime_values_0_=({time}\d{1,100})""",
+    """\Wact=(|({action}[^=]{1,2000}]?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """"detectionType":\{[^=]+?"values":\["({alert_type}[^"]+)"""",
+    """\Wdhost=(|({dest_host}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wduser=(|(({domain}[^\\\/=]{1,2000})[\\\/]{1,2000})?(system|({user}[^=\\\/]{1,2000}?)))(\s{1,100}\w+=|\s{0,100}$)""",
+    """"creationTime":\{[^]}]+?"values":\["({time}\d{1,2000})"""",
     """\Wmsg=(|({additional_info}({alert_name}[^\.]{1,2000}).+?))(\s{1,100}\w+=|\s{0,100}$)""",
-    """\Wext_simpleValues_malopActivityTypes_values_0_=(|({threat_category}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """"malopActivityTypes":\{"[^]}]+?"values":\["({threat_category}[^"]+)"""",
   ]
 }
 ```

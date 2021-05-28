@@ -15,7 +15,7 @@ Name = cyberark-app-login
     """exabeam_endTime=({time}\d{1,100})""",
     """usrName=(({domain}[^\\=]{1,2000})(\\)+)?({user}.+?)\s{1,100}(\w+=|$)""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\EventMessage=(\s{1,100}|({event_subtype}.+?))\s{1,100}(\w+=|$)""",
+    """\sEventMessage=(\s{1,100}|({event_subtype}[^=]{1,2000}?))\s{1,100}(\w+=|$)""",
     """\sSafe=(\s{1,100}|({safe_value}.*?))\s{1,100}(\w+=|$)""",
     """\sGatewayStation=({gateway_station}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sReason=(\s{1,100}|({reason}[^=]{0,2000}?))\s{1,100}(\w+=|$)""",

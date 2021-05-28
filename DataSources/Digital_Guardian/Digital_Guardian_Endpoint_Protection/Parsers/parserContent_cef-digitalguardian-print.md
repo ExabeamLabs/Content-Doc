@@ -16,7 +16,7 @@ Name = cef-digitalguardian-print
     """\ssproc=({process_name}[^=]{1,2000}?)\s{1,100}(ad\.\S+=|\w+=|$)""",
     """\sfsize=({bytes}\d{1,100})\s{1,100}?""",
     """\sad\.DG__Printer=({printer_name}[^=]{1,2000}?)\s{1,100}(ad\.\S+=|\w+=|$)""",
-    """\sad\.DG__Printer=\\+(.+\|)?({dest_host}\S+?)\\+({printer_name}[^,]{1,2000}?)\s{0,100}(,.*?)?\s{1,100}(ad\.\S+=|\w+=|$)""",
+    """\sad\.DG__Printer=\\{1,25}([^\|]{1,2000}\|)?({dest_host}\S{1,2000}?)\\{1,25}({printer_name}[^,]{1,2000}?)\s{0,100}(,[^=]{0,2000}?)?\s{1,100}(ad\.\S+=|\w+=|$)""",
     """\soldFileName=(|({object}.+?))\s{1,100}(ad\.\S+=|\w+=|$)""",
   ]
   DupFields = [ "host->src_host" ]

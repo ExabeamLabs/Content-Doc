@@ -10,8 +10,8 @@ Name = n-forwarded-cef-symantec-epp-alert
   Conditions = [ "|McAfee|ESM", "|310-2771385440|" ]
   Fields = [ 
     """\srt=({time}\d{1,100})""",
-    """\|McAfee\|ESM\|[^|]{1,2000}?\|[^|]{1,2000}?\|({alert_type}.+?)\|""",
-    """\|McAfee\|ESM\|[^|]{1,2000}?\|[^|]{1,2000}?\|[^|]{1,2000}?\|({alert_severity}.+?)\|""",
+    """\|McAfee\|ESM\|[^|]{1,2000}?\|[^|]{1,2000}?\|({alert_type}[^|]{1,2000}?)\|""",
+    """\|McAfee\|ESM\|[^|]{1,2000}?\|[^|]{1,2000}?\|[^|]{1,2000}?\|({alert_severity}[^|]{1,2000}?)\|""",
     """\sdeviceTranslatedAddress=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sexternalId=({alert_id}\d{1,100})""",
     """\sshost=({src_host}.+?)\s{1,100}\w+=""",
