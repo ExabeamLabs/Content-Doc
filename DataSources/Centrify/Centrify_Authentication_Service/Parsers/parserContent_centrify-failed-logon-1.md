@@ -16,8 +16,8 @@ Name = centrify-failed-logon-1
     """Sid=({user_sid}[^\s]{1,2000}?)\sSidType""",
     """EventCode=({event_code}6034)""",
     """AUDIT_TRAIL\|Centrify Suite\|DirectAuthorize - Windows[^=]{1,2000}?({event_name}Remote login failure)""",
-    """reason=({failure_reason}[^=]{1,2000})\.(\s+\w+=)?""",
-    """Message:\s*({additional_info}[^:]{1,2000})\.\s+""",
+    """reason=({failure_reason}[^=]{1,2000})\.(\s{1,100}\w+=)?""",
+    """Message:\s{0,100}({additional_info}[^:]{1,2000})\.\s{1,100}""",
   ]
 }
 ```

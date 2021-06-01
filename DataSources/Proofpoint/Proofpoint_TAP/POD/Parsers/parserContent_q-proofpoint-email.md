@@ -15,7 +15,7 @@ Name = q-proofpoint-email
       """"from"{1,20}:\s{0,100}\[?"{1,20}?({user_fullname}[^"@\s,<>]{1,2000}\s{1,100}[^"@,<>]{1,2000}?)?\s{0,100}\<?({sender}[^"@\s,<>]{1,2000}@({external_domain_sender}[^"\.@\s,<>]{1,2000}\.[^",<>]{1,2000}))""",
       """"subject"{1,20}:\s{0,100}\["{1,20}({subject}[^"]{1,2000}?)\s{0,100}"""",
       """"rcpts"{1,20}:\s{0,100}\[({recipients}"{1,20}({recipient}[^"@]{1,2000}@({external_domain_recipient}[^"]{1,2000}))[^\]]{0,2000}?"{0,20})\]""",
-      """"filter"{1,20}:.*?"disposition"+:\s*"+({outcome}[^"]+)""",
+      """"filter"{1,20}:.*?"disposition"{1,20}:\s{0,100}"{1,20}({outcome}[^"]{1,2000})""",
       """"routeDirection"{1,20}:\s{0,100}"{1,20}({direction}[^"]{1,2000})""",
       """"message-id"{1,20}:\s{0,100}\["{1,20}<*({message_id}[^>"]{1,2000})""",
       """msgParts.+"detectedName"{1,20}:\s{0,100}"{1,20}\s{0,100}({attachment}[^"]{1,2000})""",

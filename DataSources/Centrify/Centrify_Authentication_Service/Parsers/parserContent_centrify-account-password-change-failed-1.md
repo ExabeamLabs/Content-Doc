@@ -17,7 +17,7 @@ Name = centrify-account-password-change-failed-1
     """EventCode=({event_code}6041)""",
     """AUDIT_TRAIL\|Centrify Suite\|DirectAuthorize - Windows[^=]{1,2000}({event_name}Self-service password reset failure)""",
     """reason=({failure_reason}[^=]{1,2000})\.?"""",
-    """Message:\s*({additional_info}[^:]{1,2000})\.\s+""",
+    """Message:\s{0,100}({additional_info}[^:]{1,2000})\.\s{1,100}""",
   ]
 }
 ```

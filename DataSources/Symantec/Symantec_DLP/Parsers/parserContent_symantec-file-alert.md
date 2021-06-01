@@ -14,7 +14,7 @@ symantec-file-template = {
     Lms = Syslog
     TimeFormat = "epoch"
     Fields = [
-      """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
+      """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
       """"(start_)?time":({time}\d{1,100})""",
       """collector_device_name":"({host}[^"]{1,2000})"""",
       """"path":"({file_path}({file_parent}(?:[^";]{1,2000})?[\\\/;])?({file_name}[^\\\/";]{1,2000}?(\.({file_ext}[^\\\/\.;"]{1,2000}))?))"""",

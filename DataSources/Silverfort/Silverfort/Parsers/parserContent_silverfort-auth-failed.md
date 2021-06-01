@@ -14,7 +14,7 @@ silverfort-authentication-attempt = {
     Lms = Direct
     TimeFormat ="MM/dd/yyyy HH:mm:ss.SSS"
     Fields = [
-      """exabeam_host=([^=]+?@\s*)?({host}[\w.-]+)""",
+      """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
       """\|rt=({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d\.\d\d\d)""",
       """dntdom=(n\/a|({domain}[^=]{1,2000}?))\s{1,100}\w+=""",
       """suser=((({domain}[^\\\s]{1,2000}?)\\({user}[^=]{1,2000}?)\s{1,100}\w+=)|({user_email}[^@]{1,2000}@[^=]{1,2000}?)\s{1,100}\w+=)""",
