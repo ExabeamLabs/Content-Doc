@@ -17,7 +17,7 @@ Name = centrify-authentication-failed-2
     """EventCode=({event_code}54201)""",
     """AUDIT_TRAIL\|Centrify Suite\|MFA\|[^=]{1,2000}({event_name}MFA challenge failed)""",
     """reason=({failure_reason}[^=]{1,2000})\.""",
-    """Message:\s*({additional_info}[^:]{1,2000})\s+\.\s+""",
+    """Message:\s{0,100}({additional_info}[^:]{1,2000})\s{1,100}\.\s{1,100}""",
   ]
 }
 ```

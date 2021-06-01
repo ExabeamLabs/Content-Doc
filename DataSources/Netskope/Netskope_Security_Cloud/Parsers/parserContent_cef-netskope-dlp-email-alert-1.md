@@ -20,7 +20,7 @@ cef-netskope-activity = {
     """exabeam_host=({host}[^\s]{1,2000})""",
     """"hostname":\s{0,100}"({src_host}[^"]{1,2000})"""",
     """"timestamp":\s{0,100}({time}\d{1,100})""",
-    """requestClientApplication=({app}[^=]+?)\s{1,100}(\w+=|$)""",
+    """requestClientApplication=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """"app":\s{0,100}"\[?({app}[^"\]]{1,2000})""",
     """"User Name\s{0,100}":"({user_fullname}[^"]{1,2000})"""",
     """"srcip":\s{0,100}"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
