@@ -3,12 +3,12 @@
 {
 Name = digital-guardian-send-mail
   Product = Digital Guardian Network DLP
-  DataType = "dlp-alert"
+  DataType = "dlp-email-alert"
   Conditions = [ """ Agent_Local_Time="""", """ User_Name="""", """ Operation="28"""" ]
   Fields = ${DGParserTemplates.digital-guardian-activity.Fields}[
     """Email_Sender="({sender}[^@]{1,2000}@[^.]{1,2000}\.[^"]{1,2000})"""",
-    """Email_Subject="({subject}[^"]{1,2000}?)\s{0,100}"""",
-    """Email_Recipient="({recipient}[^"]{1,2000})""""
+    """Email_Subject="\s{0,100}({subject}[^"]{1,2000}?)\s{0,100}"""",
+    """Email_Recipient="(?i)(unknown|({recipient}[^"@]{1,2000}@[^\."]{1,2000}\.[^"]{1,2000}))""""
   ]
 }
 digital-guardian-activity = {
