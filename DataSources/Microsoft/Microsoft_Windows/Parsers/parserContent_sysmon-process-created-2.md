@@ -16,6 +16,7 @@ sysmon-process-events = {
   Fields = [ 
     """UtcTime:\s{0,100}({time}\d\d\d\d\-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[\w.\-]{1,2000})""",
+    """\sComputer="({host}[\w\-.]{1,2000})"""",
     """User=({user}.+?)\s{1,100}(\w+=|$)""",
     """Domain=({domain}.+?)\s{1,100}(\w+=|$)""",
     """User:\s{0,100}(?:(NT AUTHORITY|NT-AUTORITÄT|({domain}[^\\]{1,2000}))\\)?(SYSTEM|(NETWORK|LOCAL) SERVICE|({user}[^:]{1,2000}?))\s{1,100}LogonGuid:""",
