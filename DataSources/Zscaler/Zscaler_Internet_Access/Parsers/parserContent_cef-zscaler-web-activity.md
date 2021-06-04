@@ -43,7 +43,6 @@ Name = cef-zscaler-web-activity
     """\scs5=(None|({threat_name}[^=]{1,2000}?))\s{0,100}(\w+=|$)""",
     """\scs6=(None|({dlp_engine}[^=]{1,2000}?))\s{0,100}(\w+=|$)""",
     """sourcehost=(NA|None|\$NULL|({src_host}[^=]{1,2000}?))\s{1,100}destinationhost=""",
-    """destinationhost=(NA|None|\$NULL|({dest_host}[^=]{1,2000}?))\s{1,100}\w+""",
     """devicehostname=({src_host}[^\s"]{1,2000}?)\s{0,100}(\w+=|$)""",
     """ZscalerNSSWeblogDLPDictionaries=(None|({web_log_dict}[^=]{1,2000}?))\s{0,100}([\w.]{1,2000}=|$)"""
   ]
