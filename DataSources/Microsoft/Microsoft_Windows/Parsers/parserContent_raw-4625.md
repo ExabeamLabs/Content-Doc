@@ -20,7 +20,7 @@ Name = raw-4625
       """Subject(:|=).+?Account Name(:|=)\s{0,100}(-|({caller_user}[^\s@]{1,2000}?))[\s;]{0,2000}Account Domain(:|=)""",
       """Subject(:|=).+?Account Domain(:|=)\s{0,100}(-|({caller_domain}[^:;]{1,2000}?))[\s;]{0,2000}Logon ID(:|=)""",
       """Logon Type(:|=)\s{0,100}({logon_type}[\d]{1,2000})""",
-      """Account For[\s;]{0,2000}Which Logon Failed(:|=)[\s;]{0,2000}Security ID(:|=)\s{0,100}(?:\/?NULL SID|({user_sid}.+?))[\s;]{0,2000}Account Name""",
+      """Account For[\s;]{0,2000}Which Logon Failed(:|=)[\s;]{0,2000}Security ID(:|=)\s{0,100}([\/\\]{0,9}NULL SID|({user_sid}[^=:]{1,2000}?))[\s;]{0,2000}Account Name""",
       """Logon Failed(:|=).+?Account Name(:|=)\s{0,100}(-|\++|SYSTEM|d2\/|({user}[^\s@]{1,2000}?))[\s;]{0,2000}Account Domain(:|=)""",
       """Logon Failed(:|=).+?Account Name(:|=)\s{0,100}({user_email}[^\s@;]{1,2000}?@[^\s@;]{1,2000}?)[\s;]{0,2000}Account Domain(:|=)""",
       """Logon Failed(:|=).+?Account Domain(:|=)\s{0,100}(|-|\?|({domain}[^\s]{1,2000}?))[\s;]{0,2000}Failure Information""",

@@ -16,6 +16,7 @@ Name = cef-windows-4625
     """"eventRecordID":"({record_id}\d{1,100})""",
     """"severityValue":"({outcome}[^"]{1,2000}?)\s{0,100}"""",
     """"status":"({result_code}[^"]{1,2000}?)\s{0,100}"""",
+    """"subStatus":"({result_code}[^"]{1,2000}?)\s{0,100}"""",
     """"failureReason":"({failure_reason}[^"]{1,2000}?)\s{0,100}"""",
     """"subjectUserSid":"({user_sid}[^"\s]{1,2000}?)\s{0,100}"""",
     """"targetUserName":"({user}[^"\s]{1,2000}?)\s{0,100}"""",

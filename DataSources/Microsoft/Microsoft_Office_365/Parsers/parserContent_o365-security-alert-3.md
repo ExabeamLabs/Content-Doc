@@ -14,7 +14,7 @@ Name = o365-security-alert-3
     """"event-name":"({event_name}[^"]{1,2000})"""",
     """"riskType":"({alert_name}[^"]{1,2000})""",
     """"ipAddress":"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
-    """"userDisplayName":"({user}[^"]{1,2000})"""",
+    """"userDisplayName":"({user_fullname}[^"]{1,2000})"""",
     """"userPrincipalName":"({user_email}[^@]{1,2000}@({email_domain}[^"]{1,2000}))"""",
     """"severity":({alert_severity}\d{1,100})""",
     """"requestId":"({alert_id}[^"]{1,2000})"""",

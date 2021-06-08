@@ -9,6 +9,7 @@ Name = o365-powerbi-activity
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """Workload""", """PowerBI""", """WorkspaceId""" ]
   Fields = [
+    """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
     """"{0,20}CreationTime"{0,20}:\s{0,100}"{0,20}({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100})"{0,20}""",
     """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}.\d{1,100}Z)\s{1,100}[\w\-.]{1,2000}\s{1,100}Skyformation""",
     """destinationServiceName=({app}.*?)\s{0,100}deviceInboundInterface""",
