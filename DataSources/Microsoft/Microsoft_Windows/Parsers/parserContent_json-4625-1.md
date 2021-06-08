@@ -8,6 +8,7 @@ Name = json-4625-1
     """"auth-package":"({auth_package}[^"]{1,2000})""",
     """"workstation-name":"({src_host_windows}[^"]{1,2000})""",
     """"ad":\{[^\}]{0,2000}?"status":"({result_code}[^"]{1,2000})""",
+    """"ad":\{[^\}]{0,2000}?"sub-status":"({result_code}[^"]{1,2000})""",
   ]
 }
 json-windows-events = {

@@ -20,7 +20,8 @@ Name = s-o365-dlp-alert-1
     """"FileName":\s{0,100}"(|({file_name}[^"]{1,2000}))"(,|\})""",
     """"From":\s{0,100}"({user_email}[^@"]{1,2000}?@[^@"]{1,2000}?)"""",
     """"To":\s{0,100}\[({target}[^\]]{1,2000})\]""",
-    """src-account-name":"({account_name}[^"]{1,2000})"""
+    """src-account-name":"({account_name}[^"]{1,2000})""",
+    """Operation":\s{0,100}"({additional_info}[^"]{1,2000})""""
   ]
 }
 ```

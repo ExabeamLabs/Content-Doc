@@ -11,7 +11,8 @@ Name = json-4625-2
     """TargetUserSid\\?"{1,20}:\\?"({user_sid}[^\\]{1,2000})\\?"""",
     """TargetUserName\\?"{1,20}:\\?"{1,20}(?:-|(?i)(system|anonymous logon|LOCAL SERVICE|LOCAL SYSTEM)|((({user}[^@\s\\]{1,2000}?)(?:@({domain}[^\\]{1,2000}))?)|({user_email}[^@\s]{1,2000}?@[^\s\.]{1,2000}?\.[^\s\\]{1,2000}?)))\\?"""",
     """TargetDomainName\\?"{1,20}:\\?"(?:-|\.|NT AUTHORITY| |({domain}[^\s\\]{1,2000}?))\\?"""",
-    """IpAddress\\?"{1,20}:\\?"(?:-|(::[\w]{1,2000}:)?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))"""
+    """IpAddress\\?"{1,20}:\\?"(?:-|(::[\w]{1,2000}:)?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))""",
+    """SubStatus\\?"{1,20}:\\?"{1,20}({result_code}[^\\]{1,2000})\\?"""
   ]
   DupFields=[ "host->dest_host","src_host_windows->src_host" ]
 }

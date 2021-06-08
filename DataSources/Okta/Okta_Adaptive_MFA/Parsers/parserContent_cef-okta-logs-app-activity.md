@@ -14,6 +14,8 @@ Name = cef-okta-logs-app-activity
     """"displayMessage"\s{0,100}:\s{0,100}"({event_name}[^"]{1,2000})""",
     """"eventType"\s{0,100}:\s{0,100}"({activity}[^"]{1,2000})""",
     """"legacyEventType":"({activity}[^"]{1,2000})"""",
+    """actor":\s{0,100}\{[^\}]{1,2000}?alternateId":\s{0,100}"({user}[^"]{1,2000})",[^\}]{1,2000}?"type":\s{0,100}"User"""",
+    """actor":\s{0,100}\{[^\}]{1,2000}?displayName":\s{0,100}"({user_fullname}[^"]{1,2000})"[^\}]{1,2000}?type":\s{0,100}"User"""",
     """request"{1,20}:.+?User.+?"{1,20}displayName"{1,20}:(null|"{1,20}(Okta System|(?:({user_firstname}[^,"]{1,2000}),\s{0,100}({user_lastname}[^"]{1,2000})|((?i)Unknown|RSA-OKTA Admin|AD-OKTA Admin|({user_fullname}[^"]{1,2000}))))")""",
     """"actor"{1,20}.+?"{1,20}type"{1,20}:"{1,20}User.+?displayName"{1,20}:(null|"{1,20}(Okta System|Okta Admin|(?:({user_lastname}[^,"]{1,2000}),\s{0,100}({user_firstname}[^"]{1,2000})|((?i)Unknown|RSA-OKTA Admin|AD-OKTA Admin|AD Agent|({user_fullname}[^"]{1,2000})))))""",
     """"client":[^\]]{0,2000}?"browser"\s{0,100}:\s{0,100}"((?i)unknown|({browser}[^"]{1,2000}))""",

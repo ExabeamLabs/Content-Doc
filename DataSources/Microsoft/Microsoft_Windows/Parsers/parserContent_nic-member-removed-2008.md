@@ -11,6 +11,7 @@ Name = nic-member-removed-2008
   Fields = [
     """({event_name}A member was removed from a security-enabled [\w\s]{1,2000} group)""",
     """({time}\w{3}\s\d{2}\s\d{2}:\d{2}:\d{2}\s\d{4})""",
+    """({event_code}4757|4729|4733)""",
     """({event_code}\d{1,100})\s{1,100}Microsoft-Windows-Security-Auditing""",
     """({host}[^\s=]{1,2000})\sMSWinEventLog""",
     """Information\s{1,100}({host}[\w.\-]{1,2000})\s{1,100}""",

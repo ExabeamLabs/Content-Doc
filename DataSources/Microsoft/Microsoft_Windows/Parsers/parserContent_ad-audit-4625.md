@@ -26,6 +26,8 @@ Name = ad-audit-4625
     """CALLER_PROCESS_NAME\s{0,100}=\s{0,100}(|null|-|({process}({directory}(\w:)?(?:[^:\]]{1,2000})?[\\\/])?({process_name}[^\\\/"\]]{1,2000}?)))\s{0,100}\]""",
     """CALLER_USER_NAME\s{0,100}=\s{0,100}(-|({caller_user}[^\s]{1,2000}))""",
     """CALLER_USER_DOMAIN\s{0,100}=\s{0,100}(-|({caller_domain}[^\s]{1,2000}))""",
+    """FAILURE_STATUS\s{0,100}=\s{0,100}({result_code}[^\s]{1,2000})"""
+    """FAILURE_SUB_STATUS\s{0,100}=\s{0,100}({result_code}[^\s]{1,2000})"""
   ]
   DupFields = [ "directory->process_directory" ]
 }

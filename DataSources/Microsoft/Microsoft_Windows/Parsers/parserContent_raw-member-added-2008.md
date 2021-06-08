@@ -30,7 +30,7 @@ Name = raw-member-added-2008
     """Account Name:\s{0,100}(?:-|({account_dn}CN=.+?,({account_ou}OU.+?DC=[\w-]{1,2000})))?\s{0,100}Group:""",
     """Group:\s{0,100}Security ID:\s{0,100}(None|({group_id}[^\s]{1,2000}))\s{0,100}(Group|Account) Name:\s{0,100}(None|({group_name}.+?))?\s{0,100}(Group|Account) Domain:\s{0,100}(None|({group_domain}[^\s]{1,2000}))""",
     """Subject:\s{1,100}[^:]{1,2000}:\s{1,100}\S+\s{1,100}Account Name:\s{1,100}({user}[^:]{1,2000}?)\s{1,100}Account Domain:\s{1,100}({domain}[^:]{1,2000}?)\s{1,100}Logon ID:""",
-    """Member:\s{1,100}[^:]{1,2000}:\s{1,100}\S+\s{1,100}Account Name:\s{1,100}CN=({account}[^,]{1,2000})""",
+    """Member:\s{1,100}[^:]{1,2000}:\s{1,100}\S+\s{1,100}Account Name:\s{1,100}CN=({account}[^,\\]{1,2000})""",
     """Security(,|\s{1,100})({record_id}\d{1,100})""",
     """"Account":"(({domain}[^\\\s"]{1,2000})\\+)?({user}[^\\\s"]{1,2000})""",
     """"MemberName":"(?:-|({account_dn}CN=.+?,({account_ou}OU.+?DC=[\w-]{1,2000})))?""",
