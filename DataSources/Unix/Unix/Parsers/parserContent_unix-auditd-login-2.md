@@ -12,6 +12,7 @@ Name = unix-auditd-login-2
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """,({time}\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})""",
     """exabeam_host=({host}[^\s]{1,2000})""",
+    """({host}[\w\-.]{1,2000})\s{0,100}tag_audit_log:""",
     """({time}\d{2}\/\d{2}\/\d{4}\s{1,100}\d{2}:\d{2}:\d{2})""",
     """msg=audit\(({time}\d{10})""",
     """\spid=({process_id}\d{1,100})""",

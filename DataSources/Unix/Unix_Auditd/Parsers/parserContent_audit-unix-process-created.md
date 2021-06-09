@@ -11,6 +11,8 @@ Name = audit-unix-process-created
   Fields = [
     """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[^\s]{1,2000})""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+    """({host}[\w\-.]{1,2000})\s{0,100}tag_audit_log:""",
+    """msg=audit\(({time}\d{10})""",
     """uid=({user_id}[^\s]{1,2000})""",
     """auid=({account_used_id}[^\s]{1,2000})""",
     """pid=({process_id}[^\s]{1,2000})""",
