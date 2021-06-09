@@ -10,6 +10,7 @@ Name = unix-auditd-account-switch
   Conditions = [ """type=USER_START""","""op=PAM:session_open""","""res=success""" ]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
+    """({host}[\w\-.]{1,2000})\s{0,100}tag_audit_log:""",
     """msg=audit\(({time}\d{1,100})\.\d{3}""",
     """\sacct="({account}[^"]{1,2000})"""",
     """\sauid="?({account_used_id}\d{1,100})""",

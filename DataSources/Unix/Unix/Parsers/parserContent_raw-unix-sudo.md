@@ -9,5 +9,6 @@ Name = raw-unix-sudo
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """sudo:""", """; USER""","""; COMMAND""" ]
   Fields = [
+    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """({time}\w{3} \d{1,2}
 ```
