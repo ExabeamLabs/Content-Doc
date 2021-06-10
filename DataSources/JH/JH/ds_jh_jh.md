@@ -6,10 +6,9 @@ Product: JH
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      1      |    1    |
 
-|                              Use-Case                              | Event Types/Parsers                                                                    | MITRE TTP                  | Content                                                                    |
-|:------------------------------------------------------------------:| -------------------------------------------------------------------------------------- | -------------------------- | -------------------------------------------------------------------------- |
-|     [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)     |  file-download<br> ↳ [jh-file-download](Parsers/parserContent_jh-file-download.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_jh_jh_Privilege_Abuse.md)     |
-| [Privileged Activity](../../../UseCases/uc_privileged_activity.md) |  file-download<br> ↳ [jh-file-download](Parsers/parserContent_jh-file-download.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_jh_jh_Privileged_Activity.md) |
+|                Use-Case                | Event Types/Parsers                                                                    | MITRE TTP                  | Content                                                      |
+|:--------------------------------------:| -------------------------------------------------------------------------------------- | -------------------------- | ------------------------------------------------------------ |
+| [Other](../../../UseCases/uc_other.md) |  file-download<br> ↳ [jh-file-download](Parsers/parserContent_jh-file-download.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_jh_jh_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

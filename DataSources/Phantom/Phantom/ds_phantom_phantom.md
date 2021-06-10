@@ -6,10 +6,9 @@ Product: Phantom
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      1      |    1    |
 
-|                              Use-Case                              | Event Types/Parsers                                                                                     | MITRE TTP                  | Content                                                                              |
-|:------------------------------------------------------------------:| ------------------------------------------------------------------------------------------------------- | -------------------------- | ------------------------------------------------------------------------------------ |
-|     [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)     |  dlp-email-alert-in<br> ↳ [s-phantom-dlp-email-in](Parsers/parserContent_s-phantom-dlp-email-in.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_phantom_phantom_Privilege_Abuse.md)     |
-| [Privileged Activity](../../../UseCases/uc_privileged_activity.md) |  dlp-email-alert-in<br> ↳ [s-phantom-dlp-email-in](Parsers/parserContent_s-phantom-dlp-email-in.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_phantom_phantom_Privileged_Activity.md) |
+|                Use-Case                | Event Types/Parsers                                                                                     | MITRE TTP                  | Content                                                                |
+|:--------------------------------------:| ------------------------------------------------------------------------------------------------------- | -------------------------- | ---------------------------------------------------------------------- |
+| [Other](../../../UseCases/uc_other.md) |  dlp-email-alert-in<br> ↳ [s-phantom-dlp-email-in](Parsers/parserContent_s-phantom-dlp-email-in.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_phantom_phantom_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

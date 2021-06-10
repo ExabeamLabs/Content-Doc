@@ -6,9 +6,9 @@ Product: ASUPIM
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      1      |    1    |
 
-|                    Use-Case                    | Event Types/Parsers                                                                                 | MITRE TTP                                     | Content                                                                  |
-|:----------------------------------------------:| --------------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------------------ |
-| [Data Leak](../../../UseCases/uc_data_leak.md) |  print-activity<br> ↳ [cef-asupim-print-event](Parsers/parserContent_cef-asupim-print-event.md)<br> | T1052 - Exfiltration Over Physical Medium<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_asupim_asupim_Data_Leak.md) |
+|                Use-Case                | Event Types/Parsers                                                                                 | MITRE TTP                                     | Content                                                              |
+|:--------------------------------------:| --------------------------------------------------------------------------------------------------- | --------------------------------------------- | -------------------------------------------------------------------- |
+| [Other](../../../UseCases/uc_other.md) |  print-activity<br> ↳ [cef-asupim-print-event](Parsers/parserContent_cef-asupim-print-event.md)<br> | T1052 - Exfiltration Over Physical Medium<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_asupim_asupim_Other.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
