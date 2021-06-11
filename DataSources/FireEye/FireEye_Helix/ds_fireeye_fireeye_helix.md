@@ -4,11 +4,12 @@ Product: FireEye Helix
 ----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  11   |   6    |     2      |      1      |    1    |
+|   9   |   6    |     2      |      1      |    1    |
 
-|                Use-Case                | Event Types/Parsers                                                                                        | MITRE TTP                                                                                               | Content                                                                                                 |
-|:--------------------------------------:| ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) |  network-alert<br> ↳ [json-fireeye-alert-network](Parsers/parserContent_json-fireeye-alert-network.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>T1204 - User Execution<br> | [<ul><li>11 Rules</li></ul><ul><li>6 Models</li></ul>](Rules_Models/r_m_fireeye_fireeye_helix_Other.md) |
+|                                  Use-Case                                  | Event Types/Parsers                                                                                        | MITRE TTP                                                                     | Content                                                                                                                  |
+|:--------------------------------------------------------------------------:| ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  network-alert<br> ↳ [json-fireeye-alert-network](Parsers/parserContent_json-fireeye-alert-network.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br> | [<ul><li>5 Rules</li></ul><ul><li>4 Models</li></ul>](Rules_Models/r_m_fireeye_fireeye_helix_Compromised_Credentials.md) |
+|                 [Malware](../../../UseCases/uc_malware.md)                 |  network-alert<br> ↳ [json-fireeye-alert-network](Parsers/parserContent_json-fireeye-alert-network.md)<br> | T1204 - User Execution<br>                                                    | [<ul><li>4 Rules</li></ul><ul><li>2 Models</li></ul>](Rules_Models/r_m_fireeye_fireeye_helix_Malware.md)                 |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

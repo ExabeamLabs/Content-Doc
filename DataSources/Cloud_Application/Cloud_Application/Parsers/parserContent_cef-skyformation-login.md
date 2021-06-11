@@ -10,9 +10,10 @@ Name = cef-skyformation-login
   Conditions = [ """|Skyformation|""", """|login-success|""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
-    """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
+    """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",   
     """\Wend=({time}\d{1,100})""",
     """(created_at|eventTime)"{1,20}:"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
+    """\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}\w [\w\-.]{1,2000} Skyformation""",
     """([^\|]{0,2000}\|){5}({activity}[^\|]{1,2000})""",
     """\WdestinationServiceName=(|({event_subtype}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdproc=(|({dproc}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
