@@ -6,9 +6,9 @@ Product: BlueCat Networks Adonis
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   2   |   0    |     2      |      1      |    1    |
 
-|                Use-Case                | Event Types/Parsers                                                            | MITRE TTP                                                                                                       | Content                                                                                         |
-|:--------------------------------------:| ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) |  dns-query<br> ↳ [leef-dns-query](Parsers/parserContent_leef-dns-query.md)<br> | T1071.004 - Application Layer Protocol: DNS<br>T1568.002 - Dynamic Resolution: Domain Generation Algorithms<br> | [<ul><li>2 Rules</li></ul>](Rules_Models/r_m_bluecat_networks_bluecat_networks_adonis_Other.md) |
+|                  Use-Case                  | Event Types/Parsers                                                            | MITRE TTP                                                                                                       | Content                                                                                           |
+|:------------------------------------------:| ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| [Malware](../../../UseCases/uc_malware.md) |  dns-query<br> ↳ [leef-dns-query](Parsers/parserContent_leef-dns-query.md)<br> | T1071.004 - Application Layer Protocol: DNS<br>T1568.002 - Dynamic Resolution: Domain Generation Algorithms<br> | [<ul><li>2 Rules</li></ul>](Rules_Models/r_m_bluecat_networks_bluecat_networks_adonis_Malware.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

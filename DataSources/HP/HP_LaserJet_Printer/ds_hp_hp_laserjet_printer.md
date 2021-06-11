@@ -6,9 +6,9 @@ Product: HP LaserJet Printer
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      1      |    1    |
 
-|                Use-Case                | Event Types/Parsers                                                                       | MITRE TTP                                     | Content                                                                       |
-|:--------------------------------------:| ----------------------------------------------------------------------------------------- | --------------------------------------------- | ----------------------------------------------------------------------------- |
-| [Other](../../../UseCases/uc_other.md) |  print-activity<br> ↳ [gm-print-activity](Parsers/parserContent_gm-print-activity.md)<br> | T1052 - Exfiltration Over Physical Medium<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_hp_hp_laserjet_printer_Other.md) |
+|                    Use-Case                    | Event Types/Parsers                                                                       | MITRE TTP                                     | Content                                                                           |
+|:----------------------------------------------:| ----------------------------------------------------------------------------------------- | --------------------------------------------- | --------------------------------------------------------------------------------- |
+| [Data Leak](../../../UseCases/uc_data_leak.md) |  print-activity<br> ↳ [gm-print-activity](Parsers/parserContent_gm-print-activity.md)<br> | T1052 - Exfiltration Over Physical Medium<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_hp_hp_laserjet_printer_Data_Leak.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
