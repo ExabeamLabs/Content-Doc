@@ -9,6 +9,7 @@ Name = raw-member-removed-2008-2
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"
   Conditions = [ "Security ID:", "Logon ID:", "A member was removed from a security-enabled", "_raw" ]
   Fields = [
+    """EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""",
     """({event_name}A member was removed from a security-enabled [\w\s]{1,2000} group)""",
     """"_raw":"({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d (AM|PM|am|pm))""",
     """exabeam_host=({host}[\w\-.]{1,2000})""",

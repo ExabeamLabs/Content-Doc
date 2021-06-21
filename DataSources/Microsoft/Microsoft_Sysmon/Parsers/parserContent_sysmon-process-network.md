@@ -11,6 +11,7 @@ Name = sysmon-process-network
   Conditions = [ """Microsoft-Windows-Sysmon""", """Network connection detected:""" ]
   Fields = [ 
     """UtcTime:\s{0,100}({time}\d\d\d\d\-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)""",
+    """Hostname":"({host}[^"]{1,2000}?)"""",
     """\sComputer(?:Name)?\s{0,100}=\s{0,100}"?({host}[^\s"]{1,2000})""",
     """Computer>({host}[^<]{1,2000})<\/Computer""",
     """Message\s{0,100}=\s{0,100}"?({activity_type}[^:]{1,2000})""",
@@ -26,9 +27,11 @@ Name = sysmon-process-network
     """SourceHostname:\s{0,100}({src_host}[^\s]{1,2000}?)\s{0,100}(Source|$)""",
     """SourcePort:\s{0,100}({src_port}\d{1,100})""",
     """DestinationIp:\s{0,100}({dest_ip}[a-fA-F0-9.:]{1,2000})""",
-    """DestinationHostname:\s{0,100}({dest_host}[^\s]{1,2000}?)\s{0,100}(Destination|$)""",
+    """DestinationHostname:\s{0,100}(-|({dest_host}[^\s]{1,2000}?))\s{0,100}(Destination|$)""",
     """DestinationPort:\s{0,100}({dest_port}\d{1,100})""",
-    """\sInitiated:\s{0,100}({initiated}[^\s]{1,2000})"""
+    """\sInitiated:\s{0,100}({initiated}[^\s]{1,2000})""",
+    """EventID":({event_code}\d{1,100}),""",
+    """"Image":"({process}(({directory}[^"]{0,2000}?)[\\\/]{1,20})?({process_name}[^"\\\/]{1,2000}))""""
   ]
   DupFields = [ "directory->process_directory" ]
 }

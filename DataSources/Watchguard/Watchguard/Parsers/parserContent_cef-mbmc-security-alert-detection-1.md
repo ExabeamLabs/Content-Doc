@@ -22,7 +22,6 @@ cef-malwarebytes-security-alert = {
     """([^\|]{0,2000}\|){6}({alert_severity}\d{1,100})""",
     """\Wdvchost=({src_host}[\w\-.]{1,2000})""",
     """\Wdvc=({src_ip}[A-Fa-f:\d.]{1,2000})""",
-    """\WfilePath=({malware_url}[^=]{1,2000}?)\s{0,100}(\w+=|$)""",
     """\WfileType=({additional_info}[^=]{1,2000}?)\s{0,100}(\w+=|$)""",
     """Process name:\s{0,100}({process}({directory}[^=]{0,2000}?)(\\+({process_name}[^\\]{1,2000}?))?)\s{0,100}(\w+=|$)""",
     """\Wcs1=({alert_name}[^=]{1,2000}?)\s{0,100}(\w+=|$)""",

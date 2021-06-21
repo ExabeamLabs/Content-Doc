@@ -20,6 +20,7 @@ Name = crowdstrike-network-connection
       """"ConnectionDirection":"({direction}1).*"LocalAddressIP(4|6)":"(0:0:0:0:0:0:0:0|0.0.0.0|127.0.0.1|({dest_ip}[^"]{1,2000})).*"LocalPort":"({dest_port}\d{1,100}).*"RemoteAddressIP(4|6)":"(0:0:0:0:0:0:0:0|0.0.0.0|127.0.0.1|({src_ip}[^"]{1,2000})).*"RemotePort":"({src_port}\d{1,100})""",
       """"Protocol":"({protocol}[^"]{1,2000})""",
       """src-account-name":"({account_name}[^"]{1,2000})""",
+      """"ContextProcessId":"({process_guid}[^"]{1,2000})""""
     ]
   }
 ```

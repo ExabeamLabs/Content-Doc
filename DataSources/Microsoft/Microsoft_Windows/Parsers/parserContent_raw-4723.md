@@ -11,6 +11,7 @@ Name = raw-4723
     Fields = [
       """({event_name}An attempt was made to change an account's password)""",
       """exabeam_host=({host}[\w.\-]{1,2000})""",
+      """EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""",
       """timestamp"{1,20}:"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d\+\d\d\d\d)""",
       """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
       """\Wrt=({time}\d{1,100})""",

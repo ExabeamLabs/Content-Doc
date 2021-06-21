@@ -7,7 +7,7 @@ Name = raw-windows-account-624
   Lms = Direct
   DataType = "windows-account-created"
   TimeFormat = "MMM dd HH:mm:ss yyyy"
-  Conditions = [ "User Account Created" ]
+  Conditions = [ "User Account Created", "Caller Logon ID:", "Attributes:", "New Account Name:" ]
   Fields = [ 
     """({event_name}User Account Created)""",
              """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",

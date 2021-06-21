@@ -10,6 +10,7 @@ Name = raw-4778
     Conditions = ["A session was reconnected to a Window Station", "Session Name"]
     Fields = [
       """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
+      """EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""",
       """({event_name}A session was reconnected to a Window Station)""",
       """({host}[\w\-.]{1,2000})\s{1,100}({time}\d{1,100}\/\d{1,100}\/\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(am|AM|pm|PM))""",
       """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
@@ -23,7 +24,8 @@ Name = raw-4778
       """Account Name(:|=)\s{0,100}({user}[^\s;]{1,2000})[\s;]{0,2000}Account Domain(:|=)""",
       """Account Domain(:|=)\s{0,100}({domain}[^\s;]{1,2000})[\s;]{0,2000}Logon ID(:|=)""",
       """Service Name(:|=)\s{0,100}({dest_host}.+?)[\s;]{0,2000}Service ID""",
-      """Client Address(:|=)\s{0,100}(::[\w]{1,2000}:)?({src_ip}[a-fA-F:\d.]{1,2000})"""
+      """Client Address(:|=)\s{0,100}(::[\w]{1,2000}:)?({src_ip}[a-fA-F:\d.]{1,2000})""",
+      """Hostname":"({dest_host}[^"]{1,2000}?)"""",
     ]
   }
 ```

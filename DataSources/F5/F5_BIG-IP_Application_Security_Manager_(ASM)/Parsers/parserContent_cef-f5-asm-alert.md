@@ -17,14 +17,15 @@ Name = cef-f5-asm-alert
     """\Wspt=({src_port}\d{1,100})""",
     """\Wdpt=({dest_port}\d{1,100})""",
     """\Wact=({outcome}.+?)\s{1,100}(\w+=|$)""",
-    """\Wcs4=({alert_name}.+?)\s{1,100}(\w+=|$)""",
-    """\Wapp=({protocol}.+?)\s{1,100}(\w+=|$)""",
+    """\Wcs4=(N/A|({alert_name}[^=]{1,2000}?))\s{1,100}(\w+=|$)""",
+    """\Wapp=({protocol}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\Wrequest=({malware_url}.+?)\s{1,100}(\w+=|$)""",
-    """\WexternalId=({alert_id}.+?)\s{1,100}(\w+=|$)""",
-    """(\\r\\n|\s)Host:\s{0,100}({domain}[^"]{1,2000}?)((\\r\\n|\s{1,100})[\w\-]{1,2000}:|")""",
-    """(\\r\\n|\s)User-Agent:\s{0,100}({user_agent}[^"]{1,2000}?)(\\r\\n[\w\-]{1,2000}:|")""",
+    """\WexternalId=({alert_id}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
+    """(\\r\\n|\s)(?i)User-Agent:\s{0,100}({user_agent}[^"]{1,2000}?)(\\r\\n[\w\-\.]{1,2000}:|")""",
     """(\\r\\n|\s)User-Agent:\s{0,100}Mozilla\/.+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
     """CEF:([^\|]{0,2000}\|){4}({alert_type}[^\|]{1,2000})""",
+    """CEF:([^\|]{0,2000}\|){6}({alert_severity}\d{1,100})""",
+    """"username":"({user}[^"]{1,2000})""",
   ]
   DupFields = [ "browser->process" ]
   SOAR {

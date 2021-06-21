@@ -5,6 +5,8 @@ Name = win-external-device-recog
   DataType = "usb-insert"
   Conditions = [ """A new external device was recognized by the system.""" ]
   Fields = ${WinParserTemplates.d-xml-windows-device.Fields} [
+    """EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""",
+    """Hostname":"({dest_host}[^"]{1,2000})"""",
     """({event_code}6416)""",
     """>({event_code}6416)<\/EventID>""",
     """({event_name}A new external device was recognized by the system.)"""
@@ -25,7 +27,7 @@ d-xml-windows-device = {
     """Device Name:\s{1,100}({device_name}.*?)\s{1,100}Class ID:"""
     """Device ID:\s{1,100}({device_id}.*?)\s{1,100}Device Name:"""    
     """Account Domain:\s{1,100}(-\s{0,100}|({domain}.*?)\s{1,100})Logon ID:"""    
-    """Location Information:\s{1,100}(-|({additional_info}[^\s]{0,2000}?)\s{1,100})"""  
+    """Location Information:\s{1,100}(|-|({additional_info}[^\s]{0,2000}?))(\s{1,100}|\s{0,100}")"""  
     """Class Name:\s{1,100}({device_type}.*?)\s{1,100}(Vendor IDs:|Hardware IDs:)"""   
   ]
 

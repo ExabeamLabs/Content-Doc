@@ -10,6 +10,7 @@ Name = raw-member-added-2008
   Conditions = [ """A member was added to a security-enabled""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+    """EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""",
     """({event_name}A member was added to a security-enabled [\w\s]{1,2000} group)""",
     """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
     """({time}\w+ \d{1,100} \d{1,100}:\d{1,100}:\d{1,100} \d{4})\s{1,100}47\d\d\s{1,100}Microsoft""",
@@ -25,7 +26,7 @@ Name = raw-member-added-2008
     """EventCode\\=({event_code}\d{1,100})""",
     """Account Name:\s{0,100}({user}[^\s]{1,2000})\s{0,100}Account Domain:\s{0,100}({domain}[^\s]{1,2000})\s{0,100}Logon ID:""",
     """Logon ID:\s{0,100}({logon_id}[^\s]{1,2000})""",
-    """Member:\s{0,100}Security ID:\s{0,100}({account_id}(?=[^\\]{1,2000}\\)({sid_domain}[^\\]{1,2000})\\+({sid_user}.+?)|(?:.+?))\s{0,100}Account Name:""",
+    """Member:\s{0,100}Security ID:\s{0,100}({account_id}(?=[^\\]{1,2000}\\)({sid_domain}[^\\\s]{1,2000})\\+({sid_user}.+?)|(?:.+?))\s{0,100}Account Name:""",
     """A member was added to a security-enabled ({group_type}\w+) group""",
     """Account Name:\s{0,100}(?:-|({account_dn}CN=.+?,({account_ou}OU.+?DC=[\w-]{1,2000})))?\s{0,100}Group:""",
     """Group:\s{0,100}Security ID:\s{0,100}(None|({group_id}[^\s]{1,2000}))\s{0,100}(Group|Account) Name:\s{0,100}(None|({group_name}.+?))?\s{0,100}(Group|Account) Domain:\s{0,100}(None|({group_domain}[^\s]{1,2000}))""",

@@ -21,7 +21,7 @@ Name = json-sysmon-file-create-1
     """"Keywords":({outcome}[^,"]{1,2000})""",
     """ProcessGuid:\s{0,100}\{({process_guid}[^\s\}]{1,2000})""",
     """ProcessId:\s{0,100}({pid}\d{1,100})""",
-    """"Image"{1,20}:"{1,20}({process}({process_directory}[^"]{1,2000})\\+({process_name}[^"]{1,2000}))""",
+    """"Image"{1,20}:"{1,20}({process}(directory}[^"]{1,2000})\\{1,20}({process_name}[^"]{1,2000}))"""",
     """"TargetFilename":"({file_path}({file_parent}[^"]{1,2000}?[\\\/]{1,2000})?({file_name}[^"\\\/]{1,2000}?(\.({file_ext}\w+))?))"""",
   ]
   DupFields = [ "host->dest_host", "directory->process_directory", "process->path" ]
