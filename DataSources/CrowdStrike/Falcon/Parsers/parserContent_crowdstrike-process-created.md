@@ -16,5 +16,10 @@ Name = crowdstrike-process-created
       """"timestamp":\s{0,100}"({time}\d{1,100})""",
       """"event_simpleName":\s{0,100}"({event_code}[^"]{1,2000})""",
       """"aid":\s{0,100}"({aid}[^"]{1,2000})""",
-      """"CommandLine":\s{0,100}"\s{0,100}({command_line}[^,]{1,2000}?)\s{0,100}"{0,20}
+      """"CommandLine":\s{0,100}"\s{0,100}({command_line}[^\n]{1,2000}?)\s{0,100}"?,"""",
+      """"CommandLine":\s{0,100}"\s{0,100}({process}({directory}[^,="]{0,2000}?[\\\/]{1,2000})({process_name}[^\\\/=]{0,2000}?))\s{0,100}",""",
+      """"CommandLine":\s{0,100}"\s{0,100}[^",]{0,2000}"({process}({directory}[^"=]{0,2000}[\\\/]{1,2000}?)({process_name}[^\\\/"=]{1,2000}))""",
+      """"CommandLine":\s{0,100}"\s{0,100}(?=[\\\/\w.]{1,2000}\s{1,100})(({directory}[^"=]{0,2000}[\\\/]{1,2000}?)({process_name}[^\s"=]{1,2000}))""",
+      """"CommandLine":\s{0,100}"\s{0,100}(?=[\w.]{1,2000}\s{1,100})({process_name}[^\s"=]{1,2000})""",
+      """"CommandLine":\s{0,100}"\s{0,100}({process}({directory}[^,="-]{0,2000}?[\\\/]{1,2000})({process_name}[^\\\/=]{0,2000}?))(?:\s{0,100}-+\w+.*)"{1,20}
 ```

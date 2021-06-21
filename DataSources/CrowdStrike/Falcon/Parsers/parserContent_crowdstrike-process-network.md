@@ -18,7 +18,7 @@ Name = crowdstrike-process-network
     """"RemotePort":"({dest_port}\d{1,100})""",
     """"ConnectionDirection":"({direction}[^"]{1,2000})""",
     """"ContextProcessId":"({process_guid}[^"]{1,2000})""",
-    """"event_simpleName":"({event_name}[^"]{1,2000})""",
+    """"event_simpleName":"({event_code}[^"]{1,2000})""",
     """"name":"({process_name}[^"]{1,2000})""",
     """"LocalAddressIP6":"(0.0.0.0|0:0:0:0:0:0:0:0|({dest_ip}[A-Fa-f:\d.]{1,2000}))""",
     """"RemoteAddressIP6":"(0.0.0.0|0:0:0:0:0:0:0:0|({dest_ip}[A-Fa-f:\d.]{1,2000}))""",

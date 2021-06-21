@@ -9,6 +9,8 @@ Name = raw-7045
   TimeFormat = "MMM dd HH:mm:ss yyyy"
   Conditions = [ """7045""", """A service was installed in the system.""" ]
   Fields = [
+    """EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""",
+    """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",   
     """({event_name}A service was installed in the system)""",
     """ComputerName=({host}[\w-.]{1,2000})\s""",
     """\WComputer=({host}[\w\-.]{1,2000})\s""",
@@ -17,6 +19,7 @@ Name = raw-7045
     """\]\s{1,100}\w{3}\s({time}\w{3}\s\d{1,100}\s\d\d:\d\d:\d\d\s\d\d\d\d)""",
     """TimeGenerated=({time}\d{1,10})""",
     """({event_code}7045)""",
+    """AccountName":"(SYSTEM|({user}[^"]{1,2000}))"""",
     """User=({user}[^\s]{1,2000})""",
     """\w{3}\s\w{3}\s\d\d\s\d\d:\d\d:\d\d\s\d\d\d\d:\s({domain}[^\\]{1,2000})\\(\\)?({user}[^\/]{1,2000})""",
     """Service Name:\s{1,100}({service_name}[^=:]{1,2000}?)\s{0,100}Service File Name:""",

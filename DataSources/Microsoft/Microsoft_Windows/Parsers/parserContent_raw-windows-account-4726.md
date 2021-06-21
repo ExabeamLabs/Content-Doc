@@ -7,8 +7,9 @@ Name = raw-windows-account-4726
     Lms = Direct
     DataType = "windows-account-deleted"
     TimeFormat = "MMM dd HH:mm:ss yyyy"
-    Conditions = [ "A user account was deleted" ]
+    Conditions = [ "A user account was deleted", "Security ID:", "Account Name:" ]
     Fields = [
+      """EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""",
       """({event_name}A user account was deleted)""",
       """({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|pm|PM))""",
       """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",

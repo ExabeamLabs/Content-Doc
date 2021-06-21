@@ -24,7 +24,7 @@ d-xml-windows-device = {
     """Device Name:\s{1,100}({device_name}.*?)\s{1,100}Class ID:"""
     """Device ID:\s{1,100}({device_id}.*?)\s{1,100}Device Name:"""    
     """Account Domain:\s{1,100}(-\s{0,100}|({domain}.*?)\s{1,100})Logon ID:"""    
-    """Location Information:\s{1,100}(-|({additional_info}[^\s]{0,2000}?)\s{1,100})"""  
+    """Location Information:\s{1,100}(|-|({additional_info}[^\s]{0,2000}?))(\s{1,100}|\s{0,100}")"""  
     """Class Name:\s{1,100}({device_type}.*?)\s{1,100}(Vendor IDs:|Hardware IDs:)"""   
   ]
 

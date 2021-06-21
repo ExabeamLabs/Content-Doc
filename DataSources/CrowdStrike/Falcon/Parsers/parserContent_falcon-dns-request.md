@@ -21,9 +21,11 @@ Name = falcon-dns-request
       """"LocalPort":\s{0,100}"({src_port}\d{1,100})""",
       """"RemotePort":\s{0,100}"({dest_port}\d{1,100})""",
       """"aid":\s{0,100}"({aid}[^\"]{1,2000})"""",
-      """"aip":\s{0,100}"({agent_ip}[a-fA-F:\d.]{1,2000})""",
+      """"aip":\s{0,100}"({aip}[a-fA-F:\d.]{1,2000})""",
       """"event_simpleName":\s{0,100}"({event_code}[^\"]{1,2000})"""",
       """src-account-name":"({account_name}[^"]{1,2000})""",
+      """"IP4Records":"({response}[^"]{1,2000})"""",
+      """"ContextProcessId":"({process_guid}[^"]{1,2000})""""
     ]
   }
 ```

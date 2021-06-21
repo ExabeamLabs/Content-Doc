@@ -25,9 +25,9 @@ Name = raw-4663-4
       """"Account":"(({domain}[^\\\s"]{1,2000})\\+)?({user}[^\\\s"]{1,2000})""",
       """"SubjectUserSid":"({user_sid}[^\s"]{1,2000})""",
       """"SubjectLogonId":"({logon_id}[^\s"]{1,2000})""",
-      """"ObjectName":"(-|({file_path}({file_parent}[^"]{1,2000}?)({file_name}[^\\\/;]{1,2000}?(\.({file_ext}[^\.;]{1,2000}?))?)))\s{0,100}"""",
+      """"ObjectName":"(-|({file_path}({file_parent}[^"]{1,2000}?)({file_name}[^\\\/;]{1,2000}?(\.({file_ext}[^\.;\\"]{1,2000}?))?)))\s{0,100}"""",
       """"ObjectType":"(-|({file_type}[^\s"]{1,2000}))""",
-      """"ProcessName":"(?: |({process}({directory}(?:[^";]{1,2000})?[\\\/])?({process_name}[^\\\/";]{1,2000}?)))\s{0,100}"""",
+      """"ProcessName":"(?: |({process}(({directory}(?:[^";]{1,2000}))?[\\\/]{1,20})?({process_name}[^\\\/";]{1,2000}?)))\s{0,100}"""",
       """(?i)\w+\s{0,100}\d{1,100}\s{0,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(am|pm|({dest_host}[\w\-.]{1,2000})))"""
     ]
     DupFields = ["host->dest_host","directory->process_directory"]

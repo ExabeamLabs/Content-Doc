@@ -9,7 +9,9 @@ Name = sysmon-file-create
   IsHVF = true
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """Microsoft-Windows-Sysmon""", """File created:""" ]
-  Fields = [ """UtcTime:\s{0,100}({time}\d\d\d\d\-\d\d-\d\d \d\d:\d\d:\d\d)""",
+  Fields = [ 
+    """Hostname":"({host}[^"]{1,2000}?)"""",
+    """UtcTime:\s{0,100}({time}\d\d\d\d\-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\sComputer(?:Name)?\s{0,100}=\s{0,100}"?({host}[^\s"]{1,2000})""",
     """Message\s{0,100}=\s{0,100}"?({activity_type}[^:]{1,2000})""",
     """User\s{0,100}=\s{0,100}"(({domain}[^"]{1,2000}?)[\\\/]{1,2000})?({user}[^"\\\/]{1,2000})""",
@@ -18,6 +20,11 @@ Name = sysmon-file-create
     """ParentProcessGuid:\s{0,100}\{({parent_process_guid}[^\s\}]{1,2000})""",
     """\s{1,100}Image:\s{0,100}({process}({directory}(?:(\w+:)?[^:]{1,2000})?[\\\/])?({process_name}.+?))\s{1,100}TargetFilename:""",
     """\sTargetFilename:\s{0,100}({file_path}(({file_parent}.+?)[\\\/]{1,2000})?({file_name}[^\\\/]{0,2000}?(\.({file_ext}\w+))?))\s{1,100}CreationUtcTime:""",
+    """EventID":({event_code}\d{1,100}),""",
+    """Domain":"({domain}[^"]{1,2000}?)"""",
+    """AccountName":"({user}[^"]{1,2000}?)"""",
+    """"Image":"({process}(({directory}[^"]{0,2000}?)[\\\/]{1,20})?({process_name}[^"\\\/]{1,2000}))"""",
+    """"TargetFilename":"({file_path}(({file_parent}[^"]{1,2000}?)[\\\/]{1,20})?({file_name}[^"\\\/]{1,2000}?(\.({file_ext}\w+))?))""""
   ]
   DupFields = [ "host->dest_host", "directory->process_directory", "process->path" ]
 }

@@ -7,9 +7,11 @@ Name = raw-windows-account-4722
   Lms = Direct
   DataType = "windows-account-enabled"
   TimeFormat = "MMM dd HH:mm:ss yyyy"
-  Conditions = [ "A user account was enabled" ]
+  Conditions = [ "A user account was enabled", "Account", "Target" ]
   Fields = [
-    """({event_name}A user account was enabled)""",
+     """({event_name}A user account was enabled)""",
+     """EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""",
+     """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
      """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
      """"_raw":"({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d (AM|PM|am|pm))""",
      """exabeam_source=({host}[A-Fa-f:\d.]{1,2000})""",

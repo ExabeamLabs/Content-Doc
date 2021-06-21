@@ -9,7 +9,9 @@ Name = sysmon-process-created
   IsHVF = true
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """Microsoft-Windows-Sysmon""", """Process Create:""", """Event ID: 1""" ]
-  Fields = [ """UtcTime:\s{0,100}({time}\d\d\d\d\-\d\d-\d\d \d\d:\d\d:\d\d)""",
+  Fields = [ 
+    """Hostname":"({host}[^"]{1,2000}?)"""",
+    """UtcTime:\s{0,100}({time}\d\d\d\d\-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\sComputer(?:Name)?\s{0,100}=\s{0,100}"?({host}[^\s"]{1,2000})""",
     """Message\s{0,100}=\s{0,100}"?({activity_type}[^:]{1,2000})""",
     """User=({user}.+?)\s{1,100}(\w+=|$)""",
@@ -39,7 +41,10 @@ Name = sysmon-process-created
     """CommandLine:.*\s{1,100}"({parameter_csproj}.+\.csproj)"""",
     """CommandLine:.+?\/u\s{0,100}["\s]({parameter_exe}.+?\.exe)\s{1,100}CurrentDirectory:""",
     """CommandLine:.+?\/u\s{0,100}["\s]({parameter_dll}.+?\.dll)\s{1,100}CurrentDirectory:"""
-    """IntegrityLevel:\s{0,100}({integrity}.+?)\s{0,100}\w+:"""
+    """IntegrityLevel:\s{0,100}({integrity}.+?)\s{0,100}\w+:""",
+    """EventID":({event_code}\d{1,100}),""",
+    """"Image":"({process}(({directory}[^"]{0,2000}?)[\\\/]{1,20})?({process_name}[^"\\\/]{1,2000}))"""",
+    """"ParentImage":"({parent_process}(({parent_directory}[^"]{0,2000}?)[\\\/]{1,20})?({parent_process_name}[^"\\\/]{1,2000}))""""
   ]
   DupFields = [ "host->dest_host", "directory->process_directory", "process->path" ]
 }

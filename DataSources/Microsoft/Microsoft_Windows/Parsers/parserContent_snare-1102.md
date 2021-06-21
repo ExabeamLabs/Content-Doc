@@ -17,9 +17,11 @@ raw-1102 = {
   DataType = "windows-audit"
   Fields = [
     """exabeam_host=({host}[\w\-.]{1,2000})""",
+    """EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""",
+    """Hostname":"({host}[^"]{1,2000})"""",
     """({event_code}1102)""",
     """({event_name}The audit log was cleared)""",
-    """\s{1,100}Account Name:\s{1,100}({user}.+?)\s{1,100}Domain""",
+    """\s{1,100}Account Name:\s{1,100}({user}[^:]{1,2000}?)\s{1,100}Domain""",
     """\s{1,100}Domain Name:\s{1,100}({domain}[^\s]{1,2000})""",
     """\s{1,100}Logon ID:\s{1,100}({logon_id}[^\s]{1,2000})""",
   ]
