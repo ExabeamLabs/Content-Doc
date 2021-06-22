@@ -32,8 +32,9 @@ Name = json-4624
       """"TargetUserSid":"({user_sid}[^"]{0,2000})""",
       """Workstation Name:((\\)[rnt])*\s{0,100}(|([A-Fa-f:\d.]{1,2000}|-|({src_host_windows}[^\\\s]{1,2000}?))\s{0,100}((\\)[rnt])*)?Source""",
       """"WorkstationName":"(?:|[A-Fa-f:\d.]{1,2000}|-|({src_host_windows}[^"]{1,2000}))"""",
-      """"KeyLength":"({key_length}[^"]{1,2000})""",
-      """"SubjectUserSid":"({subject_sid}[^"]{1,2000})"""
+      """"KeyLength":"?({key_length}\d{1,2000})"?,""",
+      """"SubjectUserSid":"({subject_sid}[^"]{1,2000})""",
+      """"Process":"(-|({process_name}[^"]{1,2000}))""""
     ]
     DupFields = ["host->dest_host"]
   }

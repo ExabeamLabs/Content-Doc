@@ -18,7 +18,8 @@ Name = n-forwarded-cef-4624
       """suser=({user}.+?)\s{1,100}\w+=""",
       """duser=({user}.+?)\s{1,100}\w+=""",
       """nitroLogon_Type=({logon_type}\d{1,100})""",
-      """nitroDestination_Logon_ID=({logon_id}.+?)(\s|0\||\))"""
+      """nitroDestination_Logon_ID=({logon_id}.+?)(\s|0\||\))""",
+      """nitroSecurity_ID=({user_sid}[^\s]{1,2000})\s\w+="""
     ]
     DupFields = ["host->dest_host"]
   }

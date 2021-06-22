@@ -9,9 +9,12 @@ Name = raw-4624-8
     TimeFormat = "MM/dd/yyy HH:mm:ss"
     Conditions = ["An account was successfully logged on", "Account Name", "Computer"]
     Fields = [
-      """({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d)""",
+      """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,3}Z)""",
+      """ComputerHOST644=({host}[^\s]{1,2000})\s\w+=""",
+      """({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d)""",
       """({event_name}An account was successfully logged on)""",
-      """ComputerName=({host}({dest_host}[\w\-]{1,2000})[^\s]{0,2000})\s""",
+      """Computer_name:({host}[^\s]{1,2000})""",
+      """ComputerName=({host}({dest_host}[\w\-\.]{1,2000}))([^\s]{0,2000}\s|;)""",
       """({event_code}4624)""",
       """Logon Type(:|=)\s{0,100}({logon_type}[\d]{1,2000})""",
       """New Logon[^\}]{0,2000}?Account Name(:|=)\s{0,100}(-|SYSTEM|({user}[^\s]{1,2000}?))[\s;]{0,2000}Account Domain(:|=)""",

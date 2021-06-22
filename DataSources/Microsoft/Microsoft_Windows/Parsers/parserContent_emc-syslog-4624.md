@@ -20,7 +20,8 @@ Name = emc-syslog-4624
     """Logon Process:\s{0,100}({auth_process}[^\s]{1,2000})\s{1,100}Authentication Package:\s{0,100}({auth_package}[^\s]{1,2000})""",
     """Logon ID:\s{1,100}({logon_id}[^\s]{1,2000})\s{1,100}Logon GUID""",
     """New Logon:\s{1,100}Security ID:\s{1,100}({user_sid}[^\s]{1,2000})\s""",
-    """Workstation Name:\s{1,100}([A-Fa-f:\d.]{1,2000}|({src_host_windows}[^\s]{1,2000}))\s{1,100}Source Network"""
+    """Workstation Name:\s{1,100}([A-Fa-f:\d.]{1,2000}|({src_host_windows}[^\s]{1,2000}))\s{1,100}Source Network""",
+    """Key Length:\s{1,100}({key_length}\d{1,2000})\s"""
   ]
   DupFields = [ "host->dest_ip" ]
 }
