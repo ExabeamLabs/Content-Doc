@@ -11,6 +11,7 @@ Name = raw-4624-2
     Fields = [
       """({event_name}An account was successfully logged on)""",
       """TimeGenerated:\s{0,100}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+      """Computer:({host}[^\|]{1,2000})""",
       """({host}[^\s\/]{1,2000})\/Microsoft-Windows-Security-Auditing \(4624\)""",
       """({event_code}4624)""",
       """Logon Type(:|=)\s{0,100}({logon_type}[\d]{1,2000})""",

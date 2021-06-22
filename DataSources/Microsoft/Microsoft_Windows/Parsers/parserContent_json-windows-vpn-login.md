@@ -43,7 +43,9 @@ json-windows-events = {
     """"user-sid":"({user_sid}[^"]{1,2000})""",
     """"status":"({result_code}[^"]{1,2000})""",
     """"service-name":"({dest_host}[^"]{1,2000}\$)""",
-    """"service-name":"({service_name}[^"]{1,2000})"""
+    """"service-name":"({service_name}[^"]{1,2000})""",
+    """auth-package":"({auth_package}[^"]{1,2000})"""",
+    """workstation-name":"(-|({src_host_windows}[^"]{1,2000}))""""
   ]
 
 ```

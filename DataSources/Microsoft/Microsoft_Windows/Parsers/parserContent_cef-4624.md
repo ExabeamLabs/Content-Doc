@@ -17,7 +17,7 @@ Name = cef-4624
       """\sduid=({logon_id}[^\s]{1,2000})""",
       """\scn1=({logon_type}\d{1,100})""",
       """\sdvchost=({host}[^\s]{1,2000})""",
-      """\sdproc=(?:-|({process}[\w:\\.\-]{1,2000}))""",
+      """\sdproc=(?:-|({process}[\w:\\.\-]{1,2000}[\\]{1,20}({process_name}[^\\=]{1,2000}?)?))\s\w+=""",
       """Service_,ID=({user_sid}[^\s]{1,2000})\s""",
       """cs5=({auth_package}[^\s]{1,2000}).+?cs5Label=Auth""",
       """\sdeviceProcessName=({auth_process}[^\s]{1,2000})""",

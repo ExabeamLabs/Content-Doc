@@ -24,8 +24,10 @@ Name = ad-audit-4624
     """LOGON_TYPE\s{0,100}=\s{0,100}({logon_type}\d{1,100})""",
     """LOGON_PROCESS\s{0,100}=\s{0,100}(null|-|({auth_process}[^\s]{1,2000}))""",
     """AUTHENTICATION_PACKAGE\s{0,100}=\s{0,100}(null|-|({auth_package}[^\s]{1,2000}))""",
-    """CALLER_PROCESS_NAME\s{0,100}=\s{0,100}(?:-|null|({process}[\w:\\.\-]{1,2000}))""",
+    """CALLER_PROCESS_NAME\s{0,100}=\s{0,100}(?:-|null|({process}[\w:\\.\-]{1,2000}?\\{1,20}({process_name}[^\\\]]{1,2000})))\s{1,100}\]""",
     """USER_SAM_ACCOUNT_NAME\s{0,100}=\s{0,100}(-|null|({account}[^\s\]]{1,2000}))""",
+    """REMARKS\s{0,100}=\s{0,100}({event_name}[^\]]{1,2000}?)\s{0,100}\]""",
+    """KEY_LENGTH\s{0,100}=\s{0,100}({key_length}\d{1,2000})\s{1,100}\]"""
   ]
 }
 ```

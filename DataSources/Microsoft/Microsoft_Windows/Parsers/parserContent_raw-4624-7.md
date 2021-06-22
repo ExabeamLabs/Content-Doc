@@ -9,6 +9,8 @@ Name = raw-4624-7
     TimeFormat = "yyyyy-MM-dd'T'HH:mm:ss"
     Conditions = ["An account was successfully logged on", "Account Name", "Microsoft-Windows-Security-Auditing"]
     Fields = [
+      """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+      """({time}\w{1,10}\s\d{1,2}\s\d{1,2}:\d{1,2}:\d{1,2}\s\d{4})\s{1,100}4624\s{1,100}Microsoft-Windows-Security-Auditing""",
       """({event_name}An account was successfully logged on)""",
       """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
