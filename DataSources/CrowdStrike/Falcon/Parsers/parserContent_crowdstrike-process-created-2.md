@@ -5,7 +5,7 @@ Name = crowdstrike-process-created-2
   DataType = "process-created"
   Conditions = [ """"event_simpleName\":\"SyntheticProcessRollup2\"""", """"@timestamp"""" ]
   Fields = ${CrowdStrikeParserTemplates.crowdstrike-auth-activity.Fields} [
-         """"ImageFileName\\*":\\*"({process}[^"\\]{1,2000}\/*({process_name}[^"\\]{1,2000}))""",
+         """"ImageFileName\\{0,20}":\\{0,20}"({process}[^"]{1,2000}(\/|\\)({process_name}[^"\\]{1,2000}))\\{0,20}"\S"""
   ]
 }
 crowdstrike-auth-activity = {
