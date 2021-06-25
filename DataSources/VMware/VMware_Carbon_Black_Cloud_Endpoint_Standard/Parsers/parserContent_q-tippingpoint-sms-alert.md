@@ -17,7 +17,7 @@ Name = q-tippingpoint-sms-alert
 }
 tippingpoint-sms-alert-template = {
     Vendor = Trend Micro
-    Product = Trend Micro TippingPoint NGIPS
+    Product = TippingPoint NGIPS
     Lms = Direct
     DataType = "alert"
     TimeFormat = "epoch"
