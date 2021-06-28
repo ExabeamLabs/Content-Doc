@@ -6,10 +6,10 @@ Name = pan-alert
   Product = WildFire
   Lms = Splunk
   DataType = "alert"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
+  TimeFormat = "yyyy/MM/dd HH:mm:ss"
   Conditions = [ """,THREAT,wildfire""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
     """\d\d:\d\d:\d\d\s({host}[\w.-]{1,2000})\s""",
-    """THREAT,([^,]{1,2000}
+    """THREAT,({alert_type}[^,]{1,2000}),[^,]{1,2000}
 ```

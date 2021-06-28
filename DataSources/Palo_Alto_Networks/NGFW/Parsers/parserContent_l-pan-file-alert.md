@@ -7,9 +7,9 @@ Name = l-pan-file-alert
   Lms = Direct
   DataType = "file-alert"
   IsHVF = true
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
+  TimeFormat = "yyyy/MM/dd HH:mm:ss"
   Conditions = [ """,THREAT,file,""" ]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
-    """THREAT,file,\d{1,100}
+    """THREAT,[^,]{1,2000}
 ```
