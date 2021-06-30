@@ -11,7 +11,7 @@ Name = json-sysmon-process-created-1
   Conditions = [ """Microsoft-Windows-Sysmon""", """CreateRemoteThread detected:""", """"TargetImage":"""" ]
   Fields = [
     """"UtcTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """"Image":"({process}(({directory}[^"]{0,2000}?)[\\\/]{1,2000})?({process_name}[^"\\\/]{1,2000}))"""",
+    """"(Source)?Image":"({process}(({directory}[^"]{0,2000}?)[\\\/]{1,2000})?({process_name}[^"\\\/]{1,2000}))"""",
     """"TargetFilename":"({file_path}(({file_parent}[^"]{0,2000}?)[\\\/]{1,2000})?({file_name}[^"\\\/]{1,2000}?(\.({file_ext}\w+))?))"""",
     """"Domain":"(NT AUTHORITY|({domain}[^"]{1,2000}))""",
     """"AccountName":"(SYSTEM|({user}[^"]{1,2000}))""",
