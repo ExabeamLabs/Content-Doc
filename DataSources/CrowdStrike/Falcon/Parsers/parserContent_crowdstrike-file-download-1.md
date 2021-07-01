@@ -32,7 +32,8 @@ crowdstrike-file-operations = {
       """"((?i)SHA256String|SHA256HashData)":"({sha256}[^"]{1,2000})"""",
       """"name":"({event_name}[^"]{1,2000})"""",
       """UserName":"({user}[^"]{1,2000})"""",
-      """"ContextProcessId":"({process_guid}[^"]{1,2000})""""
+      """"ContextProcessId":"({process_guid}[^"]{1,2000})"""",
+      """"aip":"({src_ip}[a-fA-F\d:.]{1,2000})""""
     ]
 
 ```
