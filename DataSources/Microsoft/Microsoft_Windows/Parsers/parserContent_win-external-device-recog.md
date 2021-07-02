@@ -21,7 +21,7 @@ d-xml-windows-device = {
   Fields = [
     """exabeam_host=({host}[\w\-.]{1,2000})""",
     """<TimeCreated SystemTime=\'({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{9}Z)\'\/>"""
-    """<Computer>({dest_host}.*?)<\/Computer>"""
+    """<Computer>({dest_host}[^<>"']+?)<\/Computer>"""
     """Security ID:\s{1,100}({user_sid}[^\s]{1,2000}?)\s{1,100}Account Name:"""
     """Account Name:\s{1,100}(-\s{0,100}|({user}.*?)\s{1,100})Account Domain:"""
     """Device Name:\s{1,100}({device_name}.*?)\s{1,100}Class ID:"""

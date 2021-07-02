@@ -3,7 +3,7 @@
 {
 Name = cisco-asa-connection-built-302013
   Vendor = Cisco
-  Product = Cisco Adaptive Security Appliance
+  Product = Adaptive Security Appliance
   Lms = Direct
   DataType = "network-connection"
   TimeFormat = "MMM dd yyyy HH:mm:ss"

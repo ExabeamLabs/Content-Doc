@@ -30,7 +30,7 @@ s-xml-windows-member = {
     """<Data Name(\\)?='SubjectDomainName'>({domain}[^<]{1,2000})</Data>""",
     """<Data Name(\\)?='SubjectLogonId'>({logon_id}[^<]{1,2000})</Data>""",
     """<Data Name(\\)?='RemoteIPAddress'>({dest_ip}[^<]{1,2000})""",
-    """<Data Name(\\)?='LocalIPAddress'>({src_ip}[^<]{1,2000})""",
+    """<Data Name(\\)?='LocalIPAddress'>({src_ip}[a-fA-F:\d.]{1,2000})<""",
     """<Data Name(\\)?='RemotePort'>({dest_port}[^<]{1,2000})""",
     """<Data Name(\\)?='LocalPort'>({src_port}[^<]{1,2000})""",
     """<Message>({additional_info}[^<]{1,2000})""",

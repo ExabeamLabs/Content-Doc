@@ -10,7 +10,7 @@ Name = xml-4672
   Conditions = [ """<EventID>4672</EventID>""", """'SubjectUserName'>""" ]
   Fields = [    
     """<TimeCreated SystemTime(\\)?='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """<Computer>({host}({dest_host}[\w\-]{1,2000})[\w\-\.]{0,2000})</Computer>""",
+    """<Computer>({host}({dest_host}[\w\-]{1,2000})[^<]{0,2000})</Computer>""",
     """<Keywords>({outcome}[^<]{1,2000})</Keywords>""",
     """<Keywords><Keyword>({outcome}[^<]{1,2000})</Keyword></Keywords>""",
     """<EventID>({event_code}[^<]{1,2000})</EventID>""",
