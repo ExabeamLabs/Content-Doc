@@ -19,6 +19,7 @@ Name = cef-o365-security-alert
     """"riskLevel":"({alert_severity}[^"]{1,2000})"""",
     """"riskType":"({threat_category}[^"]{1,2000})"""",
     """"ipAddress":"({src_ip}[A-Fa-f:\d.]{1,2000})"""",
+    """"f3u":"({user_email}[^"@\s]{1,2000}@({email_domain}[^"@\s.]{1,2000}\.[^"@\s]{1,2000}))"""",
     """\ssuser=({user_email}[^@]{1,2000}@[^\s]{1,2000})\s""",
     """"userDisplayName":"({user_fullname}[^"]{1,2000}?)\s{0,100}"""",
     """"userPrincipalName":"({user_email}[^"@\s]{1,2000}@[^"@\s]{1,2000})"""",
