@@ -7,7 +7,7 @@ Name = s-xml-7045
   Lms = Splunk
   DataType = "windows-service-created"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ ">7045</EventID>", "<Data Name='AccountName'>"]
+  Conditions = [ """>7045</EventID>""", """<Data Name='AccountName'"""]
   Fields = [
     """SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """ProcessID='({process_id}[^']{1,2000})""",
