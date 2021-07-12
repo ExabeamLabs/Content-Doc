@@ -25,7 +25,8 @@ Name = falcon-dns-request
       """"event_simpleName":\s{0,100}"({event_code}[^\"]{1,2000})"""",
       """src-account-name":"({account_name}[^"]{1,2000})""",
       """"IP4Records":"({response}[^"]{1,2000})"""",
-      """"ContextProcessId":"({process_guid}[^"]{1,2000})""""
+      """"ContextProcessId":"({process_guid}[^"]{1,2000})"""",
+      """"FirstIP4Record":"({dest_ip}[a-fA-F:\d.]{1,2000})""""
     ]
   }
 ```
