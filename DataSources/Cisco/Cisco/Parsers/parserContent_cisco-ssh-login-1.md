@@ -3,7 +3,7 @@
 {
 Name = cisco-ssh-login-1
   Vendor = Cisco
-  Product = Cisco Adaptive Security Appliance
+  Product = Cisco
   Lms = Direct
   DataType = "ssh-login"
   TimeFormat = "HH:mm:ss Z EEE MMM dd yyyy"
