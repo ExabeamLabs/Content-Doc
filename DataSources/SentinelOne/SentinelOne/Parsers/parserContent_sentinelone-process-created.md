@@ -10,5 +10,6 @@ Name = sentinelone-process-created
     """parent.*?path:\s{0,100}\\?"{1,20}\s{0,100}({parent_process}({parent_process_directory}[^@]{1,2000}?)[\\\/]{0,2000}({parent_process_name}[^"\\\/]{1,2000}))\\*".*commandLine:\s{0,100}\\?"{1,20}\s{0,100}({parent_command_line}.+?)"\\n?""",
     """\sparent[^\}]{1,2000}?value:\s"{0,20}({parent_process_guid}[^"]{1,2000})"""
   ]
+  DupFields = ["host->dest_host"]
 }
 ```

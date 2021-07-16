@@ -8,5 +8,6 @@ Name = sentinelone-file-modify
     """({event_name}fileModification)""",
     """\spath:\s{0,100}"{1,20}({file_path}(({file_parent}\w+:[^"].+?)\\+)?({file_name}[^\\.]{1,2000}\.({file_ext}[^"\\,:]{1,2000})))"""",
   ]
+  DupFields = ["host->dest_host"]
 }
 ```
