@@ -6,6 +6,7 @@ Name = sentinelone-network-connection-1
   Conditions = [ """"SentinelOne"""", """Deep Visibility Endpoint""", """ntcpv4 {""" ]
   Fields = ${SentinelOneParserTemplates.sentinelone-activity.Fields} [
     """({event_name}tcpv4)""",
+    """({protocol}tcp)"""
   ]
 }
 ```

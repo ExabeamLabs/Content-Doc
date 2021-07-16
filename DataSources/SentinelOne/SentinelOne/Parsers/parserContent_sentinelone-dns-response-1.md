@@ -9,5 +9,6 @@ Name = sentinelone-dns-response-1
     """query:\s{0,100}\\?"{1,20}({query}[^"]{1,2000}?)\.?\\?"""",
     """results:\s{0,100}\\?"{1,20}({response}[^"]{1,2000}?)\\?""""
   ]
+  DupFields = ["host->dest_host"]
 }
 ```

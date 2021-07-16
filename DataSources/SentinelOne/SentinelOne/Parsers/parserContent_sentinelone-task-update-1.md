@@ -9,5 +9,6 @@ Name = sentinelone-task-update-1
     """commandLine:\s{0,100}\\?["\\]{0,2000}"{1,20}({command_line}[^"]{1,2000}?)\\*"""",
     """taskName:\s{0,100}\\?"{1,20}\\*({task_name}[^"]{1,2000}?)\\*""""
   ]
+  DupFields = ["host->dest_host"]
 }
 ```
