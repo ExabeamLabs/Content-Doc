@@ -6,10 +6,11 @@ Name = fortinet-network-connection
   Product = Fortinet Enterprise Firewall
   Lms = Direct
   DataType = "network-connection"
-  TimeFormat = "yyyy-MM-dd' time='HH:mm:ss"
+  TimeFormat = "epoch"
   Conditions = [ """type=""", """traffic""", """action=""", """service=""", """date=""" ]
   Fields = [
     """\Wdate=({time}\d\d\d\d-\d\d-\d\d time\=\d\d:\d\d:\d\d)""",
+    """eventtime=({time}\d{1,20})""",
     """\Wdevname="?({host}[^"]{1,2000}?)"?(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wsrcip=({src_ip}[a-fA-F\d.:]{1,2000})""",
     """\Wdstip=({dest_ip}[a-fA-F\d.:]{1,2000})""",
