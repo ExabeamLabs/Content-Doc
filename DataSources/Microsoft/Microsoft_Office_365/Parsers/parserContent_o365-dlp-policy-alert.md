@@ -27,6 +27,6 @@ Name = o365-dlp-policy-alert
     """FileName"{0,20}:\s{0,100}"{0,20}(|({file_name}.+?[^"]))"""",
     """RecipientCount"{0,20}:\s{0,100}({recipient_count}\d{1,100})"""
     ]
-    DupFields = [ "sender->user_email", "recipient->recipients" ]
+    DupFields = [ "sender->user_email", "recipient->recipients", "activity->alert_type" ]
 }
 ```
