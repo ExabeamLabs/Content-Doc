@@ -6,9 +6,9 @@ Product: Microsoft Radius
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   4   |   3    |     2      |      1      |    1    |
 
-|                                           Use-Case                                           | Event Types/Parsers                                                                                      | MITRE TTP                                             | Content                                                                                                                                |
-|:--------------------------------------------------------------------------------------------:| -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  nac-logon<br> ↳ [s-radius-wireless-nac-logon](Parsers/parserContent_s-radius-wireless-nac-logon.md)<br> | T1021 - Remote Services<br>T1078 - Valid Accounts<br> | [<ul><li>4 Rules</li></ul><ul><li>3 Models</li></ul>](Rules_Models/r_m_microsoft_microsoft_radius_Abnormal_Authentication_&_Access.md) |
+|    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
+|:----:| ---- | ---- | ---- |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  nac-logon<br> ↳[s-radius-wireless-nac-logon](Ps/pC_sradiuswirelessnaclogon.md)<br> | T1021 - Remote Services<br>T1078 - Valid Accounts<br> | [<ul><li>4 Rules</li></ul><ul><li>3 Models</li></ul>](RM/r_m_microsoft_microsoft_radius_Abnormal_Authentication_&_Access.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

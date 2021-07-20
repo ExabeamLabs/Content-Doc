@@ -6,11 +6,11 @@ Product: Cisco CloudLock
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |  19   |   11   |     3      |      1      |    1    |
 
-|                            Use-Case                            | Event Types/Parsers                                                                                | MITRE TTP                                                                                                      | Content                                                                                                             |
-|:--------------------------------------------------------------:| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| [Data Exfiltration](../../../UseCases/uc_data_exfiltration.md) |  dlp-alert<br> ↳ [json-cisco-cloudlock-dlp](Parsers/parserContent_json-cisco-cloudlock-dlp.md)<br> | T1020 - Automated Exfiltration<br>T1048 - Exfiltration Over Alternative Protocol<br>T1204 - User Execution<br> | [<ul><li>15 Rules</li></ul><ul><li>9 Models</li></ul>](Rules_Models/r_m_cisco_cisco_cloudlock_Data_Exfiltration.md) |
-|         [Data Leak](../../../UseCases/uc_data_leak.md)         |  dlp-alert<br> ↳ [json-cisco-cloudlock-dlp](Parsers/parserContent_json-cisco-cloudlock-dlp.md)<br> | T1020 - Automated Exfiltration<br>T1048 - Exfiltration Over Alternative Protocol<br>T1204 - User Execution<br> | [<ul><li>15 Rules</li></ul><ul><li>9 Models</li></ul>](Rules_Models/r_m_cisco_cisco_cloudlock_Data_Leak.md)         |
-|           [Malware](../../../UseCases/uc_malware.md)           |  dlp-alert<br> ↳ [json-cisco-cloudlock-dlp](Parsers/parserContent_json-cisco-cloudlock-dlp.md)<br> | T1204 - User Execution<br>                                                                                     | [<ul><li>4 Rules</li></ul><ul><li>2 Models</li></ul>](Rules_Models/r_m_cisco_cisco_cloudlock_Malware.md)            |
+|    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
+|:----:| ---- | ---- | ---- |
+| [Data Exfiltration](../../../UseCases/uc_data_exfiltration.md) |  dlp-alert<br> ↳[json-cisco-cloudlock-dlp](Ps/pC_jsonciscocloudlockdlp.md)<br> | T1020 - Automated Exfiltration<br>T1048 - Exfiltration Over Alternative Protocol<br>T1204 - User Execution<br> | [<ul><li>15 Rules</li></ul><ul><li>9 Models</li></ul>](RM/r_m_cisco_cisco_cloudlock_Data_Exfiltration.md) |
+|         [Data Leak](../../../UseCases/uc_data_leak.md)         |  dlp-alert<br> ↳[json-cisco-cloudlock-dlp](Ps/pC_jsonciscocloudlockdlp.md)<br> | T1020 - Automated Exfiltration<br>T1048 - Exfiltration Over Alternative Protocol<br>T1204 - User Execution<br> | [<ul><li>15 Rules</li></ul><ul><li>9 Models</li></ul>](RM/r_m_cisco_cisco_cloudlock_Data_Leak.md)         |
+|    [Malware](../../../UseCases/uc_malware.md)    |  dlp-alert<br> ↳[json-cisco-cloudlock-dlp](Ps/pC_jsonciscocloudlockdlp.md)<br> | T1204 - User Execution<br>    | [<ul><li>4 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_cisco_cisco_cloudlock_Malware.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

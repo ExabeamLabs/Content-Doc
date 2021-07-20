@@ -6,10 +6,10 @@ Product: RS2
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   2   |   1    |     1      |      1      |    1    |
 
-|                                           Use-Case                                           | Event Types/Parsers                                                                                                                                                                                     | MITRE TTP                  | Content                                                                                                             |
-|:--------------------------------------------------------------------------------------------:| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  failed-physical-access<br> ↳ [rs2-physical-access](Parsers/parserContent_rs2-physical-access.md)<br><br> physical-access<br> ↳ [rs2-physical-access](Parsers/parserContent_rs2-physical-access.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](Rules_Models/r_m_rs2_rs2_Abnormal_Authentication_&_Access.md) |
-|                [Physical Security](../../../UseCases/uc_physical_security.md)                |  failed-physical-access<br> ↳ [rs2-physical-access](Parsers/parserContent_rs2-physical-access.md)<br><br> physical-access<br> ↳ [rs2-physical-access](Parsers/parserContent_rs2-physical-access.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_rs2_rs2_Physical_Security.md)                                          |
+|    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
+|:----:| ---- | ---- | ---- |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  failed-physical-access<br> ↳[rs2-physical-access](Ps/pC_rs2physicalaccess.md)<br><br> physical-access<br> ↳[rs2-physical-access](Ps/pC_rs2physicalaccess.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_rs2_rs2_Abnormal_Authentication_&_Access.md) |
+|    [Physical Security](../../../UseCases/uc_physical_security.md)    |  failed-physical-access<br> ↳[rs2-physical-access](Ps/pC_rs2physicalaccess.md)<br><br> physical-access<br> ↳[rs2-physical-access](Ps/pC_rs2physicalaccess.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_rs2_rs2_Physical_Security.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

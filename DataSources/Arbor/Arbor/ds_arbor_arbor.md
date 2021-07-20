@@ -6,12 +6,12 @@ Product: Arbor
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |  14   |   7    |     4      |      1      |    1    |
 
-|                           Use-Case                           | Event Types/Parsers                                                                                    | MITRE TTP                                                                                                | Content                                                                                                  |
-|:------------------------------------------------------------:| ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-|     [Cryptomining](../../../UseCases/uc_cryptomining.md)     |  network-connection-failed<br> ↳ [arbor-network-fail](Parsers/parserContent_arbor-network-fail.md)<br> | T1496 - Resource Hijacking<br>                                                                           | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_arbor_arbor_Cryptomining.md)                                |
-| [Lateral Movement](../../../UseCases/uc_lateral_movement.md) |  network-connection-failed<br> ↳ [arbor-network-fail](Parsers/parserContent_arbor-network-fail.md)<br> | T1071 - Application Layer Protocol<br>T1090.002 - Proxy: External Proxy<br>T1571 - Non-Standard Port<br> | [<ul><li>12 Rules</li></ul><ul><li>7 Models</li></ul>](Rules_Models/r_m_arbor_arbor_Lateral_Movement.md) |
-|          [Malware](../../../UseCases/uc_malware.md)          |  network-connection-failed<br> ↳ [arbor-network-fail](Parsers/parserContent_arbor-network-fail.md)<br> | T1071 - Application Layer Protocol<br>                                                                   | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_arbor_arbor_Malware.md)                                     |
-|       [Ransomware](../../../UseCases/uc_ransomware.md)       |  network-connection-failed<br> ↳ [arbor-network-fail](Parsers/parserContent_arbor-network-fail.md)<br> | T1071 - Application Layer Protocol<br>                                                                   | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_arbor_arbor_Ransomware.md)                                  |
+|    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
+|:----:| ---- | ---- | ---- |
+|     [Cryptomining](../../../UseCases/uc_cryptomining.md)     |  network-connection-failed<br> ↳[arbor-network-fail](Ps/pC_arbornetworkfail.md)<br> | T1496 - Resource Hijacking<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_arbor_arbor_Cryptomining.md)    |
+| [Lateral Movement](../../../UseCases/uc_lateral_movement.md) |  network-connection-failed<br> ↳[arbor-network-fail](Ps/pC_arbornetworkfail.md)<br> | T1071 - Application Layer Protocol<br>T1090.002 - Proxy: External Proxy<br>T1571 - Non-Standard Port<br> | [<ul><li>12 Rules</li></ul><ul><li>7 Models</li></ul>](RM/r_m_arbor_arbor_Lateral_Movement.md) |
+|          [Malware](../../../UseCases/uc_malware.md)          |  network-connection-failed<br> ↳[arbor-network-fail](Ps/pC_arbornetworkfail.md)<br> | T1071 - Application Layer Protocol<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_arbor_arbor_Malware.md)    |
+|       [Ransomware](../../../UseCases/uc_ransomware.md)       |  network-connection-failed<br> ↳[arbor-network-fail](Ps/pC_arbornetworkfail.md)<br> | T1071 - Application Layer Protocol<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_arbor_arbor_Ransomware.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
