@@ -6,11 +6,11 @@ Product: CounterBreach
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |  19   |   11   |     3      |      1      |    1    |
 
-|                                  Use-Case                                  | Event Types/Parsers                                                                                         | MITRE TTP                                                                | Content                                                                                                                   |
-|:--------------------------------------------------------------------------:| ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  database-alert<br> ↳ [cef-counterbreach-db-alert](Parsers/parserContent_cef-counterbreach-db-alert.md)<br> | T1078 - Valid Accounts<br>T1213 - Data from Information Repositories<br> | [<ul><li>14 Rules</li></ul><ul><li>8 Models</li></ul>](Rules_Models/r_m_imperva_counterbreach_Compromised_Credentials.md) |
-|             [Data Access](../../../UseCases/uc_data_access.md)             |  database-alert<br> ↳ [cef-counterbreach-db-alert](Parsers/parserContent_cef-counterbreach-db-alert.md)<br> | T1213 - Data from Information Repositories<br>                           | [<ul><li>5 Rules</li></ul><ul><li>5 Models</li></ul>](Rules_Models/r_m_imperva_counterbreach_Data_Access.md)              |
-|                 [Malware](../../../UseCases/uc_malware.md)                 |  database-alert<br> ↳ [cef-counterbreach-db-alert](Parsers/parserContent_cef-counterbreach-db-alert.md)<br> | T1078 - Valid Accounts<br>T1204 - User Execution<br>                     | [<ul><li>5 Rules</li></ul><ul><li>3 Models</li></ul>](Rules_Models/r_m_imperva_counterbreach_Malware.md)                  |
+|    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
+|:----:| ---- | ---- | ---- |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  database-alert<br> ↳[cef-counterbreach-db-alert](Ps/pC_cefcounterbreachdbalert.md)<br> | T1078 - Valid Accounts<br>T1213 - Data from Information Repositories<br> | [<ul><li>14 Rules</li></ul><ul><li>8 Models</li></ul>](RM/r_m_imperva_counterbreach_Compromised_Credentials.md) |
+|    [Data Access](../../../UseCases/uc_data_access.md)    |  database-alert<br> ↳[cef-counterbreach-db-alert](Ps/pC_cefcounterbreachdbalert.md)<br> | T1213 - Data from Information Repositories<br>    | [<ul><li>5 Rules</li></ul><ul><li>5 Models</li></ul>](RM/r_m_imperva_counterbreach_Data_Access.md)    |
+|    [Malware](../../../UseCases/uc_malware.md)    |  database-alert<br> ↳[cef-counterbreach-db-alert](Ps/pC_cefcounterbreachdbalert.md)<br> | T1078 - Valid Accounts<br>T1204 - User Execution<br>    | [<ul><li>5 Rules</li></ul><ul><li>3 Models</li></ul>](RM/r_m_imperva_counterbreach_Malware.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

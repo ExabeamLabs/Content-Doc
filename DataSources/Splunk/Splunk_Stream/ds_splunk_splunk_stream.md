@@ -6,9 +6,9 @@ Product: Splunk Stream
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   4   |   0    |     2      |      3      |    3    |
 
-|                  Use-Case                  | Event Types/Parsers                                                                                                                                                                                                                                                                                    | MITRE TTP                                                                                                       | Content                                                                       |
-|:------------------------------------------:| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| [Malware](../../../UseCases/uc_malware.md) |  computer-logon<br> ↳ [s-stream-dhcp](Parsers/parserContent_s-stream-dhcp.md)<br><br> dns-query<br> ↳ [s-splunkstream-dns-query](Parsers/parserContent_s-splunkstream-dns-query.md)<br><br> dns-response<br> ↳ [s-splunkstream-dns-response](Parsers/parserContent_s-splunkstream-dns-response.md)<br> | T1071.004 - Application Layer Protocol: DNS<br>T1568.002 - Dynamic Resolution: Domain Generation Algorithms<br> | [<ul><li>4 Rules</li></ul>](Rules_Models/r_m_splunk_splunk_stream_Malware.md) |
+|    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
+|:----:| ---- | ---- | ---- |
+| [Malware](../../../UseCases/uc_malware.md) |  computer-logon<br> ↳[s-stream-dhcp](Ps/pC_sstreamdhcp.md)<br><br> dns-query<br> ↳[s-splunkstream-dns-query](Ps/pC_ssplunkstreamdnsquery.md)<br><br> dns-response<br> ↳[s-splunkstream-dns-response](Ps/pC_ssplunkstreamdnsresponse.md)<br> | T1071.004 - Application Layer Protocol: DNS<br>T1568.002 - Dynamic Resolution: Domain Generation Algorithms<br> | [<ul><li>4 Rules</li></ul>](RM/r_m_splunk_splunk_stream_Malware.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

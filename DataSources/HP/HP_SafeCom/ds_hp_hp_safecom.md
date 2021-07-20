@@ -6,9 +6,9 @@ Product: HP SafeCom
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      1      |    1    |
 
-|                    Use-Case                    | Event Types/Parsers                                                                                                                                                       | MITRE TTP                                     | Content                                                                  |
-|:----------------------------------------------:| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------------------ |
-| [Data Leak](../../../UseCases/uc_data_leak.md) |  print-activity<br> ↳ [safecom-print-activity](Parsers/parserContent_safecom-print-activity.md)<br> ↳ [hp-print-activity](Parsers/parserContent_hp-print-activity.md)<br> | T1052 - Exfiltration Over Physical Medium<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_hp_hp_safecom_Data_Leak.md) |
+|    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
+|:----:| ---- | ---- | ---- |
+| [Data Leak](../../../UseCases/uc_data_leak.md) |  print-activity<br> ↳[safecom-print-activity](Ps/pC_safecomprintactivity.md)<br> ↳[hp-print-activity](Ps/pC_hpprintactivity.md)<br> | T1052 - Exfiltration Over Physical Medium<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_hp_hp_safecom_Data_Leak.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

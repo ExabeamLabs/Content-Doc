@@ -6,10 +6,10 @@ Product: Threat Response
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |  21   |   11   |     3      |      1      |    1    |
 
-|                                  Use-Case                                  | Event Types/Parsers                                                                            | MITRE TTP                                                                                                                                | Content                                                                                                                   |
-|:--------------------------------------------------------------------------:| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  process-alert<br> ↳ [tanium-process-alert](Parsers/parserContent_tanium-process-alert.md)<br> | T1003 - OS Credential Dumping<br>T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>T1204 - User Execution<br> | [<ul><li>4 Rules</li></ul><ul><li>2 Models</li></ul>](Rules_Models/r_m_tanium_threat_response_Compromised_Credentials.md) |
-|                 [Malware](../../../UseCases/uc_malware.md)                 |  process-alert<br> ↳ [tanium-process-alert](Parsers/parserContent_tanium-process-alert.md)<br> | T1204 - User Execution<br>                                                                                                               | [<ul><li>17 Rules</li></ul><ul><li>10 Models</li></ul>](Rules_Models/r_m_tanium_threat_response_Malware.md)               |
+|    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
+|:----:| ---- | ---- | ---- |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  process-alert<br> ↳[tanium-process-alert](Ps/pC_taniumprocessalert.md)<br> | T1003 - OS Credential Dumping<br>T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>T1204 - User Execution<br> | [<ul><li>4 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_tanium_threat_response_Compromised_Credentials.md) |
+|    [Malware](../../../UseCases/uc_malware.md)    |  process-alert<br> ↳[tanium-process-alert](Ps/pC_taniumprocessalert.md)<br> | T1204 - User Execution<br>    | [<ul><li>17 Rules</li></ul><ul><li>10 Models</li></ul>](RM/r_m_tanium_threat_response_Malware.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

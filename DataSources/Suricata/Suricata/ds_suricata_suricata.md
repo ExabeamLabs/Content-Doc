@@ -6,10 +6,10 @@ Product: Suricata
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |  11   |   6    |     2      |      1      |    1    |
 
-|                                  Use-Case                                  | Event Types/Parsers                                                                                    | MITRE TTP                                                                     | Content                                                                                                              |
-|:--------------------------------------------------------------------------:| ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  network-alert<br> ↳ [suricata-network-alert-1](Parsers/parserContent_suricata-network-alert-1.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br> | [<ul><li>7 Rules</li></ul><ul><li>4 Models</li></ul>](Rules_Models/r_m_suricata_suricata_Compromised_Credentials.md) |
-|                 [Malware](../../../UseCases/uc_malware.md)                 |  network-alert<br> ↳ [suricata-network-alert-1](Parsers/parserContent_suricata-network-alert-1.md)<br> | T1204 - User Execution<br>                                                    | [<ul><li>4 Rules</li></ul><ul><li>2 Models</li></ul>](Rules_Models/r_m_suricata_suricata_Malware.md)                 |
+|    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
+|:----:| ---- | ---- | ---- |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  network-alert<br> ↳[suricata-network-alert-1](Ps/pC_suricatanetworkalert1.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br> | [<ul><li>7 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_suricata_suricata_Compromised_Credentials.md) |
+|    [Malware](../../../UseCases/uc_malware.md)    |  network-alert<br> ↳[suricata-network-alert-1](Ps/pC_suricatanetworkalert1.md)<br> | T1204 - User Execution<br>    | [<ul><li>4 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_suricata_suricata_Malware.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

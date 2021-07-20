@@ -6,9 +6,9 @@ Product: PostScript
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      1      |    1    |
 
-|                    Use-Case                    | Event Types/Parsers                                                                                               | MITRE TTP                                     | Content                                                                          |
-|:----------------------------------------------:| ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | -------------------------------------------------------------------------------- |
-| [Data Leak](../../../UseCases/uc_data_leak.md) |  print-activity<br> ↳ [cef-postscript-print-activity](Parsers/parserContent_cef-postscript-print-activity.md)<br> | T1052 - Exfiltration Over Physical Medium<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_postscript_postscript_Data_Leak.md) |
+|    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
+|:----:| ---- | ---- | ---- |
+| [Data Leak](../../../UseCases/uc_data_leak.md) |  print-activity<br> ↳[cef-postscript-print-activity](Ps/pC_cefpostscriptprintactivity.md)<br> | T1052 - Exfiltration Over Physical Medium<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_postscript_postscript_Data_Leak.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

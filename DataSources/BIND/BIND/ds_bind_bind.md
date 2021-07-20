@@ -6,9 +6,9 @@ Product: BIND
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   2   |   0    |     2      |      1      |    1    |
 
-|                  Use-Case                  | Event Types/Parsers                                                                                                                                                                                                                                                                        | MITRE TTP                                                                                                       | Content                                                            |
-|:------------------------------------------:| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| [Malware](../../../UseCases/uc_malware.md) |  dns-query<br> ↳ [bind-dns-query-2](Parsers/parserContent_bind-dns-query-2.md)<br> ↳ [bind-dns-query-4](Parsers/parserContent_bind-dns-query-4.md)<br> ↳ [bind-dns-query-3](Parsers/parserContent_bind-dns-query-3.md)<br> ↳ [bind-dns-query](Parsers/parserContent_bind-dns-query.md)<br> | T1071.004 - Application Layer Protocol: DNS<br>T1568.002 - Dynamic Resolution: Domain Generation Algorithms<br> | [<ul><li>2 Rules</li></ul>](Rules_Models/r_m_bind_bind_Malware.md) |
+|    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
+|:----:| ---- | ---- | ---- |
+| [Malware](../../../UseCases/uc_malware.md) |  dns-query<br> ↳[bind-dns-query-2](Ps/pC_binddnsquery2.md)<br> ↳[bind-dns-query-4](Ps/pC_binddnsquery4.md)<br> ↳[bind-dns-query-3](Ps/pC_binddnsquery3.md)<br> ↳[bind-dns-query](Ps/pC_binddnsquery.md)<br> | T1071.004 - Application Layer Protocol: DNS<br>T1568.002 - Dynamic Resolution: Domain Generation Algorithms<br> | [<ul><li>2 Rules</li></ul>](RM/r_m_bind_bind_Malware.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

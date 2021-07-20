@@ -6,10 +6,10 @@ Product: TrapX
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |  11   |   6    |     2      |      1      |    1    |
 
-|                                  Use-Case                                  | Event Types/Parsers                                                          | MITRE TTP                                                                     | Content                                                                                                        |
-|:--------------------------------------------------------------------------:| ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  network-alert<br> ↳ [trapx-alert](Parsers/parserContent_trapx-alert.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br> | [<ul><li>7 Rules</li></ul><ul><li>4 Models</li></ul>](Rules_Models/r_m_trapx_trapx_Compromised_Credentials.md) |
-|                 [Malware](../../../UseCases/uc_malware.md)                 |  network-alert<br> ↳ [trapx-alert](Parsers/parserContent_trapx-alert.md)<br> | T1204 - User Execution<br>                                                    | [<ul><li>4 Rules</li></ul><ul><li>2 Models</li></ul>](Rules_Models/r_m_trapx_trapx_Malware.md)                 |
+|    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
+|:----:| ---- | ---- | ---- |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  network-alert<br> ↳[trapx-alert](Ps/pC_trapxalert.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br> | [<ul><li>7 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_trapx_trapx_Compromised_Credentials.md) |
+|    [Malware](../../../UseCases/uc_malware.md)    |  network-alert<br> ↳[trapx-alert](Ps/pC_trapxalert.md)<br> | T1204 - User Execution<br>    | [<ul><li>4 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_trapx_trapx_Malware.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
