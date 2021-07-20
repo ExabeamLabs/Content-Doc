@@ -15,10 +15,11 @@ Name = azure-process-created-1
     """Machine"{1,20}:"{1,20}({src_host}[^"]{1,2000})""",
     """ExecutableName"{1,20}:"{1,20}({process_name}[^"]{1,2000})""",
     """FirstPid"{1,20}:({pid}\d{1,100})""",
-    """ExecutablePath"{1,20}:"{1,20}({process_directory}[^.]{1,2000})\\({process}.+?)"{1,20}"""
-    """CommandLine"{1,20}:"{1,20}({command_line}[^"]{1,2000})"{1,20}"""
-    """UserName"{1,20}:"{1,20}(SYSTEM|({user}[^"]{1,2000}))"""
+    """"ExecutablePath":"({process}((|({directory}[^"]{0,2000}?))[\\\/]{1,20})?({process_name}[^"\\\/]{1,2000}?))\s{0,100}""""
+    """CommandLine":"\s{0,100}({command_line}[^\n]{1,2000}?)\s{0,100}","\w{1,100}""""
+    """UserName"{1,20}:"{1,20}((?i)SYSTEM|({user}[^"]{1,2000}))"""
     """UserDomain"{1,20}:"{1,20}({domain}[^"]{1,2000})"""
     ]
+    DupFields = [ "directory->process_directory" ]
 }
 ```
