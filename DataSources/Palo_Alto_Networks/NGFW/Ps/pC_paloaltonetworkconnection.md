@@ -10,5 +10,5 @@ Name = paloalto-network-connection
   Conditions = [ """,THREAT,url,"""]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
-    """THREAT,[^,]{1,2000}
+    """THREAT,url,[^,]{1,2000}
 ```
