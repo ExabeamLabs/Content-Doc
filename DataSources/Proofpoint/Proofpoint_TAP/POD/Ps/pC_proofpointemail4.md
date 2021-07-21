@@ -16,13 +16,14 @@ Name = proofpoint-email-4
     """rcpts":\[({recipients}"({recipient}[^@"]{1,2000}@({external_domain_recipient}[^"]{1,2000}))"[^\]]{0,2000})\]""",
     """filter":[^\n]{0,30000}?"disposition":"({outcome}[^"]{1,2000})"""",
     """routeDirection":"({direction}[^"]{1,2000})"""",
-    """"message-id":\["<({message_id}[^">]{1,2000})>"""",
+    """"message-id":\["<({message_id}[^">]{1,2000}?)\s{0,100}>"""",
     """msgParts":[^\n]{0,30000}?"detectedName":"({attachment}[^"]{1,2000})"""",
     """msgParts":[^\n]{0,30000}?"sizeDecodedBytes":({bytes}\d{1,2000}),""",
     """"ip":"({src_ip}[a-fA-F\d:.]{1,2000})"""",
     """"host":"({host}[^"]{1,2000})"""",
     """"rule":"({rule_name}[^"]{1,2000})"""",
-    """fromDisplayNames":\["({user_fullname}[^"]{1,2000})""""
+    """fromDisplayNames":\["({user_fullname}[^"]{1,2000})"""",
+    """"return-path":\["(<>|({return_path}[^"]{1,2000}))""""
   ]
   DupFields = [ "attachment->attachments" ]
 }

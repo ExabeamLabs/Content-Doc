@@ -1,16 +1,12 @@
 #### Parser Content
 ```Java
 {
-Name = s-okta-app-login-1
+Name = s-okta-app-login-2
     DataType = "authentication-successful"
-    Conditions = [ """"displayMessage": "User login to Okta"""", """"legacyEventType": "core.user_auth.login_success"""" ]
+    Conditions = [ """"displayMessage": "Authenticate user with AD agent"""", """"result": "SUCCESS"""", """app.ad.agent.user_auth""" ]
     Fields = ${OktaParserTemplates.s-okta-app-login.Fields}[
-      """"country":\s{0,100}"({location_country}[^"]{1,2000})""",
-      """"state":\s{0,100}"({location_state}[^"]{1,2000})""",
-      """"city":\s{0,100}"({location_city}[^"]{1,2000})""",
-      """({app}Okta)""",
-      """({event_name}User login to Okta)""",
-      """({activity}core.user_auth.login_success)""",
+      """({event_name}Authenticate user with AD agent)""",
+      """({activity}app.ad.agent.user_auth)""",
     ]
   }
 s-okta-app-login = {
