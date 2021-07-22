@@ -22,7 +22,7 @@ Name = checkpoint-url-filtering
     """\|DIP=(?:-|({dest_ip}[A-Fa-f:\d.]{1,2000}))""",
     """\|SPort=(?:-|({src_port}\d{1,100}))""",
     """\|DPort=(?:-|({dest_port}\d{1,100}))""",
-    """web_client_type.+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident|Internet Explorer)""",
+    """web_client_type=({user_agent}[^|\s]{1,2000})""",
     """Protocol=(?:-|({protocol}[^|\s]{1,2000}))""",
     """IFDirection=(?:-|({direction}[^|\s]{1,2000}))""",
     """Source=(?:[-\d.]{1,2000}|({src_host}[^|\s]{1,2000}))""",

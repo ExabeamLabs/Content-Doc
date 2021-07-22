@@ -14,9 +14,10 @@ Name = raw-pan-vpn-end
     """User name:\s{0,100}({user_email}[^@\s]{1,2000}@[^\s,]{1,2000}),""",
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[^\s]{1,2000})""",
     """DeviceName=({host}[\w\-.]{1,2000})""",
-    """globalprotectgateway-\S+?,({host}.+?),""",
+    """globalprotectgateway-\S+?,({host}[\w.-]{1,2000}?),""",
     """SYSTEM,({vpn_client}[^,]{1,2000}),""",
-    """\WReason:\s{0,100}({reason}[^",]{1,2000}?)\.?(\s{1,100}\w+=|[",]|\s{0,100}$)"""
+    """\WReason:\s{0,100}({reason}[^",]{1,2000}?)\.?(\s{1,100}\w+=|[",]|\s{0,100}$)""",
+    """:\d\d:\d\d (-|({host}[\w.-]{1,2000}))\s"""
   ]
 }
 ```

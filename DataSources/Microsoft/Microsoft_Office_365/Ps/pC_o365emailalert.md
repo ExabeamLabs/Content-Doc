@@ -13,7 +13,6 @@ Name = o365-email-alert
     """TS=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """RECIPIENT=({recipient}[^\s]{1,2000})""",
     """SENDER=({sender}[^\s]{1,2000})""",
-    """DOMAIN=({external_domain}[^\s]{1,2000})""",
     """SIP=({src_ip}[a-fA-F\d.:]{1,2000})""",
     """DIP=({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """SUBJECT=(|({subject}.+?))\s{1,100}\w+=""",

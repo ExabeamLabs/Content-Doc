@@ -18,9 +18,6 @@ Name = windows-dns-response
     """QTYPE\s{1,100}({query_type}\w+)""",
     """RCODE\s{1,100}[^(]{0,2000}?\(({dns_response_code}[^(]{1,2000})\)""",
     """QUESTION SECTION:.*?Name\s{1,100}"({query}[^"]{1,2000})"""",
-    """QUESTION SECTION:.*?Name\s{1,100}"[^"]{0,2000}({top_query}(\(\d{1,100}\)[^\(\)"]{1,2000})\(0\))"""",
-    """QUESTION SECTION:.*?Name\s{1,100}"[^"]{0,2000}({top_query}(\(\d{1,100}\)[^\(\)"]{1,2000}){2}\(0\))"""",
-    """QUESTION SECTION:.*?Name\s{1,100}"(\(\d{1,100}\)[^\)\)]{1,2000})*({top_query}\(\d{1,100}\)[^\(\)\/\s]{1,2000}(?i)(\(\d{1,100}\)(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+\(0\))"""",
     """Buf length\s{0,100}=\s{0,100}\S+\s{0,100}\(({bytes}\d{1,100})""",
     """ANSWER SECTION:(\s{0,100}empty|.+?DATA\s{1,100}({response}\S+))"""
   ]

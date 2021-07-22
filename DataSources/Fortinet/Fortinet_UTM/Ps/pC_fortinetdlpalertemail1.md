@@ -11,8 +11,8 @@ Name = fortinet-dlp-alert-email-1
   Fields = [
     """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}Z)\s{1,100}({host}[\w\-.]{1,2000})""",
     """\Waction=({action}[^;]{1,2000})""",
-    """\Wfrom=({sender}[^\s@;]{1,2000}@({external_domain_sender}[^\s@;]{1,2000}))""",
-    """\Wto=({recipients}({recipient}[^\s@;,]{1,2000}@({external_domain_recipient}[^\s@;,]{1,2000}))[^;]{0,2000})""",
+    """\Wfrom=({sender}[^\s@;]{1,2000}@[^\s@;]{1,2000})""",
+    """\Wto=({recipients}({recipient}[^\s@;,]{1,2000}@[^\s@;,]{1,2000})[^;]{0,2000})""",
     """\Wsubject=({subject}.*?);\s{1,100}(\w+=|$)""",
     """\Wmessage_name=({message_name}.*?);\s{1,100}(\w+=|$)""",
     """\Wmessage_size=({bytes}\d{1,100})""",

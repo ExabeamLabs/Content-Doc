@@ -21,7 +21,6 @@ Name = cef-catonetworks-web-activity
     """\Wact=({outcome}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """destinationDnsDomain=({web_domain}[^=]{1,2000}?)\s\w+=""",
     """\Wshost=({user_fullname}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
-    """\WdestinationDnsDomain=[^\=\s]{0,2000}?({top_domain}[^\/\.\s]{1,2000}(?i)(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|ai|am|be|bid|blog|bot|ch|cloud|ec|goog|hosting|il|im|la|link|live|ly|market|media|mobi|ms|network|ninja|pe|ph|place|pro|se|site|space|stream|tech|to|top|ua|vc|video|watch|ws|wtf|xyz|zone))+)\s{1,100}(\w+=|$)""",
     """\Wsuser=({src_host}[\w\-.]{1,2000})""",
     """user_email=({user_email}[^@]{1,2000}@[^=]{1,2000}?)\s\w+="""
   ]

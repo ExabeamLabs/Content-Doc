@@ -19,7 +19,6 @@ Name = s-vontu-dlp-email-alert
     """\Wpolicy="[^"\-]{1,2000}\-\s{0,100}({protocol}[^"]{1,2000})""",
     """\Wrecipients="({recipients}[^"]{1,2000})""",
     """\Wrecipients="({external_address}[^,"]{1,2000})""",
-    """\Wrecipients="[^@]{1,2000}@({external_domain}[^,"]{1,2000})""",
     """\Wsender="({user}[^@"]{1,2000})""",
     """\Wsender="({sender}[^"]{1,2000})""",
     """\Wseverity="({alert_severity}[^"]{1,2000})""",
