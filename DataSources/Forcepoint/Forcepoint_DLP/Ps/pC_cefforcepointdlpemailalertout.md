@@ -15,7 +15,7 @@ Name = cef-forcepoint-dlp-email-alert-out
     """\Wdvchost=(N\/A|({host}[\w\-.]{1,2000}))""",
     """({host}[\w\-.]{1,2000})\s{1,100}CEF:""",
     """\Wact=({outcome}.+?)(\s\-\s|\s{1,100}[\w\.]{1,2000}=|$)""",
-    """\Wduser=(N\/A|({recipient}[^\s;@]{1,2000}@({external_domain}[^\s;@]{1,2000})))""",
+    """\Wduser=(N\/A|({recipient}[^\s;@]{1,2000}@[^\s;@]{1,2000}))""",
     """\Wfname=\s{0,100}({attachment}[^;]{1,2000}?)(;.*?)?\s{0,100}([\w\.]{1,2000}=|$)"""
     """\Wfname=\s{0,100}({attachments}.+?)\s{0,100}([\w\.]{1,2000}=|$)"""
     """\Wmsg=\s{0,100}({subject}.+?)(\s{1,100}\-\s|\s{1,100}[\w\.]{1,2000}=|$)""",

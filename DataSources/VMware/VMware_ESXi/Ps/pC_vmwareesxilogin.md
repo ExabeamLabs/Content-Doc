@@ -15,7 +15,6 @@ Name = vmware-esxi-login
     """({event_name}logged in)""",
     """:\s{1,100}({additional_info}User.+?)\s{0,100}$""",
     """logged in\s{0,100}as\s{0,100}({user_agent}.+?)\s{0,100}$""",
-    """logged in as\s(?:-|Mozilla\/.+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
     """({app}ESX)"""
   ]
   DupFields = [ "event_name->activity", "host->dest_host" ]

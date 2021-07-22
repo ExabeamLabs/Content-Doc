@@ -28,7 +28,6 @@ Name = sourcefire-network-alert-1
     """AccessControlRuleAction:\s{0,100}({outcome}[^,]{1,2000})""",
     """UserName:\s{0,100}(No Authentication Required|({user}[^,]{1,2000}))""",
     """UserAgent:\s{0,100}({user_agent}.+?), Client:""",
-    """UserAgent:\s{0,100}(Mozilla.+({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
     """ApplicationProtocol:\s{0,100}({app_protocol}[^,]{1,2000})""",
     """WebApplication:\s{0,100}({web_application}[^,]{1,2000})""",
     """InitiatorPackets:\s{0,100}({initiator_packets}[^,]{1,2000})""",

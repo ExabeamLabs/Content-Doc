@@ -22,12 +22,10 @@ Name = cef-f5-asm-alert
     """\Wrequest=({malware_url}.+?)\s{1,100}(\w+=|$)""",
     """\WexternalId=({alert_id}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """(\\r\\n|\s)(?i)User-Agent:\s{0,100}({user_agent}[^"]{1,2000}?)(\\r\\n[\w\-\.]{1,2000}:|")""",
-    """(\\r\\n|\s)User-Agent:\s{0,100}Mozilla\/.+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
     """CEF:([^\|]{0,2000}\|){4}({alert_type}[^\|]{1,2000})""",
     """CEF:([^\|]{0,2000}\|){6}({alert_severity}\d{1,100})""",
     """"username":"({user}[^"]{1,2000})""",
   ]
-  DupFields = [ "browser->process" ]
   SOAR {
     IncidentType = "malware"
     DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->malwareName", "alert_type->malwareCategory", "malware_url->malwareAttackerFile", "dest_ip->malwareAttackerIp", "alert_id->sourceId"]

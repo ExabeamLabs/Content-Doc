@@ -21,7 +21,6 @@ Name = cef-mimecast-email-alert-1
     """"(?:action|actions)":"({outcome}[^"]{1,2000})""",
     """"actionTriggered":"({outcome}[^"]{1,2000})""",
     """"acc":"({user}[^"]{1,2000})""",
-    """"SenderDomain":"(<>|({external_domain}[^"]{1,2000}))"""",
     """"SourceIP":"({src_ip}[^"]{1,2000})""""
   ]
   DupFields = ["recipient->user_email", "recipient->email_user"]

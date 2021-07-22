@@ -10,11 +10,11 @@ Name = cef-O365-dlp-email-out-1
   Conditions = [ """|resource-event|""", """msg=EmailMessage send by User email""", """act=send""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
-    """\Wsuser=({sender}[^@]{1,2000}@({external_domain_sender}[^@\s]{1,2000}))""",
-    """\Wcs2=({recipient}[^@]{1,2000}@({external_domain_recipient}[^@=]{1,2000}?))\s{1,100}(\w+=|$)""",
+    """\Wsuser=({sender}[^@]{1,2000}@[^@\s]{1,2000})""",
+    """\Wcs2=({recipient}[^@]{1,2000}@[^@=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """ToAddress\\=({to_address}.+?)(;\w+\\=|\s{1,100}\w+=|\s{0,100}$)""",
     """CcAddress\\=(?:null|({cc_address}.+?))(;\w+\\=|\s{1,100}\w+=|\s{0,100}$)""",
-    """\Wcs2=.*?"user-email":"({recipient}[^@"]{1,2000}@({external_domain_recipient}[^"]{1,2000}))""",
+    """\Wcs2=.*?"user-email":"({recipient}[^@"]{1,2000}@[^"]{1,2000})""",
     """Subject\\=({subject}[^;]{1,2000}?)(\s{0,100}\[\s{0,100}ref:.*?\])?\s{0,100}(;|\s{1,100}\w+=|\s{1,100}$)""",
     """LastModifiedDate\\=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100})""",
     """\Wact=({alert_name}.+?)\s{1,100}(\w+=|$)""",

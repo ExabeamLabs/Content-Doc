@@ -8,8 +8,6 @@ Name = cef-microsoft-app-login
     """"1":[^=]{1,2000}?"displayName":"\s{0,100}(_splunk_exo|({user_fullname}({user_lastname}[^, "]{1,2000})[,\s]{1,2000}({user_firstname}[^"\(]{1,2000}?))\s{0,100}|({user_email}[^@"]{1,2000}@({email_domain}[^@"]{1,2000}?))|({user}[^"\s]{1,2000}))(\([^"]{1,2000}\))?"""",
     """device <b>({dest_host}[^<]{1,2000})""",
     """"userAgent":";*({user_agent}[^"]{1,2000}?);*"""",
-    """"userAgent":\{"family":"(UNKNOWN|({browser}[^"]{1,2000}))"""",
-    """"operatingSystem":\{"name":"(Unknown|({os}[^"]{1,2000}))"""",
     """"countryCode":"(--|({country_code}[^"]{1,2000}))"""",
     """"Upn":"(anonymous|email|({user_email}[^@"]{1,2000}@({email_domain}[^@"]{1,2000}?))|({user}[^"\s]{1,2000}?))"""",
     """"aadTenantId":"(Unknown|Personal|({host}[^",]{1,2000}))"""",

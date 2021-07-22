@@ -29,7 +29,6 @@ Name = f5-asm-alert-1
     """virus_name="(N\/A|({malware_file_name}[^"]{1,2000}))"""",
     """Host:\s{0,100}({domain}[^"]{1,2000}?)((\\r\\n|\s{1,100})[\w\-]{1,2000}:|")""",
     """User-Agent:\s{0,100}({user_agent}[^"]{1,2000}?)\s{0,100}(\\r\\n[\w\-]{1,2000}:|")""",
-    """User-Agent:\s{0,100}Mozilla\/.+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
     """geo_location="(N\/A|({country}[^"]{1,2000}))"""",
     """ip_address_intelligence="(N\/A|({ip_reputation}[^"]{1,2000}))""""
   ]
