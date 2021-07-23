@@ -35,7 +35,9 @@ Name = o365-activity-3
     """Workload"{0,20}:\s{0,100}"{0,20}({resource}[^"]{1,2000})"{0,20}""",
     """"TargetUserOrGroupName":"({target}[^"]{1,2000})"""",
     """cs2=({group_name}[^=]{1,2000})\s{1,100}\w+=""",
-    """"IsSuccess":({outcome}[^\s,]{1,2000})"""
+    """"IsSuccess":({outcome}[^\s,]{1,2000})""",
+    """SourceRelativeUrl":"({dest_path}[^"]{1,2000}?)\s{0,100}"""",
+    """SiteUrl":"({site_url}[^"]{1,2000})""""
   ]
 }
 ```
