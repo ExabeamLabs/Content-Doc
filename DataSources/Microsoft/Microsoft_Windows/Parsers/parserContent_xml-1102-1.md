@@ -1,0 +1,23 @@
+#### Parser Content
+```Java
+{
+Name = xml-1102-1
+  Vendor = Microsoft
+  Product = Microsoft Windows
+  Lms = Splunk
+  DataType = "windows-audit"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSSZ"
+  Conditions = ["""<EventID>1102""", """LogFileCleared""" ]
+  Fields = [
+    """SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\d\d\d\d\d\d\dZ)""",
+    """<Computer>({host}[^<]{1,2000})""",
+    """<SubjectLogonId>({logon_id}[^<]{1,2000})""",
+    """({event_code}1102)""",
+    """({event_name}LogFileCleared)""",
+    """<SubjectUserName>({user}[^<]{1,2000})""",
+    """<SubjectUserSid>({user_sid}[^<]{1,2000})""",
+    """<SubjectDomainName>({domain}[^<]{1,2000})""",
+  ]
+  DupFields = [ "host->dest_host" ]
+}
+```
