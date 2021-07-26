@@ -1,1 +1,422 @@
-{"domain": "mitre-enterprise", "version": "4.2", "techniques": [{"color": "#6dbb51", "comment": "14 rules", "techniqueID": "T1077"}, {"color": "#6dbb51", "comment": "1 rules", "techniqueID": "T1196"}, {"color": "#6dbb51", "comment": "2 rules", "techniqueID": "T1117"}, {"color": "#6dbb51", "comment": "2 rules", "techniqueID": "T1218"}, {"color": "#6dbb51", "comment": "2 rules", "techniqueID": "T1191"}, {"color": "#6dbb51", "comment": "2 rules", "techniqueID": "T1192"}, {"color": "#6dbb51", "comment": "2 rules", "techniqueID": "T1096"}, {"color": "#6dbb51", "comment": "59 rules", "techniqueID": "T1098"}, {"color": "#6dbb51", "comment": "4 rules", "techniqueID": "T1140"}, {"color": "#6dbb51", "comment": "1 rules", "techniqueID": "T1035"}, {"color": "#6dbb51", "comment": "2 rules", "techniqueID": "T1177"}, {"color": "#6dbb51", "comment": "2 rules", "techniqueID": "T1222"}, {"color": "#6dbb51", "comment": "24 rules", "techniqueID": "T1036"}, {"color": "#6dbb51", "comment": "6 rules", "techniqueID": "T1097"}, {"color": "#6dbb51", "comment": "3 rules", "techniqueID": "T1033"}, {"color": "#6dbb51", "comment": "14 rules", "techniqueID": "T1208"}, {"color": "#6dbb51", "comment": "36 rules", "techniqueID": "T1083"}, {"color": "#6dbb51", "comment": "13 rules", "techniqueID": "T1030"}, {"color": "#6dbb51", "comment": "2 rules", "techniqueID": "T1550"}, {"color": "#6dbb51", "comment": "2 rules", "techniqueID": "T1202"}, {"color": "#6dbb51", "comment": "47 rules", "techniqueID": "T1204"}, {"color": "#6dbb51", "comment": "6 rules", "techniqueID": "T1205"}, {"color": "#6dbb51", "comment": "6 rules", "techniqueID": "T1207"}, {"color": "#6dbb51", "comment": "6 rules", "techniqueID": "T1055"}, {"color": "#6dbb51", "comment": "5 rules", "techniqueID": "T1018"}, {"color": "#6dbb51", "comment": "145 rules", "techniqueID": "T1071"}, {"color": "#6dbb51", "comment": "9 rules", "techniqueID": "T1070"}, {"color": "#6dbb51", "comment": "2 rules", "techniqueID": "T1118"}, {"color": "#6dbb51", "comment": "30 rules", "techniqueID": "T1050"}, {"color": "#6dbb51", "comment": "19 rules", "techniqueID": "T1053"}, {"color": "#6dbb51", "comment": "27 rules", "techniqueID": "T1052"}, {"color": "#6dbb51", "comment": "1 rules", "techniqueID": "T1114"}, {"color": "#6dbb51", "comment": "46 rules", "techniqueID": "T1133"}, {"color": "#6dbb51", "comment": "246 rules", "techniqueID": "T1078"}, {"color": "#6dbb51", "comment": "28 rules", "techniqueID": "T1110"}, {"color": "#6dbb51", "comment": "22 rules", "techniqueID": "T1075"}, {"color": "#6dbb51", "comment": "5 rules", "techniqueID": "T1016"}, {"color": "#6dbb51", "comment": "3 rules", "techniqueID": "T1107"}, {"color": "#6dbb51", "comment": "13 rules", "techniqueID": "T1059"}, {"color": "#6dbb51", "comment": "21 rules", "techniqueID": "T1136"}, {"color": "#6dbb51", "comment": "1 rules", "techniqueID": "T1082"}, {"color": "#6dbb51", "comment": "8 rules", "techniqueID": "T1073"}, {"color": "#6dbb51", "comment": "7 rules", "techniqueID": "T1074"}, {"color": "#6dbb51", "comment": "29 rules", "techniqueID": "T1086"}, {"color": "#6dbb51", "comment": "5 rules", "techniqueID": "T1087"}, {"color": "#6dbb51", "comment": "2 rules", "techniqueID": "T1085"}, {"color": "#6dbb51", "comment": "6 rules", "techniqueID": "T1088"}, {"color": "#6dbb51", "comment": "2 rules", "techniqueID": "T1562"}, {"color": "#6dbb51", "comment": "5 rules", "techniqueID": "T1134"}, {"color": "#6dbb51", "comment": "49 rules", "techniqueID": "T1021"}, {"color": "#6dbb51", "comment": "2 rules", "techniqueID": "T1189"}, {"color": "#6dbb51", "comment": "16 rules", "techniqueID": "T1188"}, {"color": "#6dbb51", "comment": "3 rules", "techniqueID": "T1008"}, {"color": "#6dbb51", "comment": "38 rules", "techniqueID": "T1219"}, {"color": "#6dbb51", "comment": "4 rules", "techniqueID": "T1027"}, {"color": "#6dbb51", "comment": "2 rules", "techniqueID": "T1121"}, {"color": "#6dbb51", "comment": "4 rules", "techniqueID": "T1102"}, {"color": "#6dbb51", "comment": "9 rules", "techniqueID": "T1213"}, {"color": "#6dbb51", "comment": "2 rules", "techniqueID": "T1211"}, {"color": "#6dbb51", "comment": "3 rules", "techniqueID": "T1076"}, {"color": "#6dbb51", "comment": "14 rules", "techniqueID": "T1046"}, {"color": "#6dbb51", "comment": "5 rules", "techniqueID": "T1047"}, {"color": "#6dbb51", "comment": "2 rules", "techniqueID": "T1127"}, {"color": "#6dbb51", "comment": "4 rules", "techniqueID": "T1100"}, {"color": "#6dbb51", "comment": "58 rules", "techniqueID": "T1068"}, {"color": "#6dbb51", "comment": "2 rules", "techniqueID": "T1105"}, {"color": "#6dbb51", "comment": "14 rules", "techniqueID": "T1040"}, {"color": "#6dbb51", "comment": "3 rules", "techniqueID": "T1041"}, {"color": "#6dbb51", "comment": "2 rules", "techniqueID": "T1124"}, {"color": "#6dbb51", "comment": "12 rules", "techniqueID": "T1003"}, {"color": "#6dbb51", "comment": "26 rules", "techniqueID": "T1066"}, {"color": "#6dbb51", "comment": "2 rules", "techniqueID": "T1500"}, {"color": "#6dbb51", "comment": "4 rules", "techniqueID": "T1043"}, {"color": "#6dbb51", "comment": "1 rules", "techniqueID": "T1022"}, {"color": "#6dbb51", "comment": "124 rules", "techniqueID": "T1048"}, {"color": "#6dbb51", "comment": "1 rules", "techniqueID": "T1005"}, {"color": "#6dbb51", "comment": "4 rules", "techniqueID": "T1496"}, {"color": "#6dbb51", "comment": "19 rules", "techniqueID": "T1065"}, {"color": "#6dbb51", "comment": "1 rules", "techniqueID": "T1094"}, {"color": "#6dbb51", "comment": "1 rules", "techniqueID": "T1135"}, {"color": "#6dbb51", "comment": "1 rules", "techniqueID": "T1168"}], "name": "Exabeam MITRE Map", "description": "Exabeam MITRE Map"}
+{
+    "domain": "mitre-enterprise", 
+    "sorting": 3, 
+    "name": "Exabeam MITRE Map", 
+    "gradient": {
+        "colors": [
+            "#d8edd1", 
+            "#6dbb51"
+        ], 
+        "maxValue": 20, 
+        "minValue": 0
+    }, 
+    "version": "4.2", 
+    "techniques": [
+        {
+            "comment": "14 rules", 
+            "techniqueID": "T1077", 
+            "score": 14
+        }, 
+        {
+            "comment": "1 rules", 
+            "techniqueID": "T1196", 
+            "score": 1
+        }, 
+        {
+            "comment": "2 rules", 
+            "techniqueID": "T1117", 
+            "score": 2
+        }, 
+        {
+            "comment": "2 rules", 
+            "techniqueID": "T1218", 
+            "score": 2
+        }, 
+        {
+            "comment": "2 rules", 
+            "techniqueID": "T1191", 
+            "score": 2
+        }, 
+        {
+            "comment": "2 rules", 
+            "techniqueID": "T1192", 
+            "score": 2
+        }, 
+        {
+            "comment": "2 rules", 
+            "techniqueID": "T1096", 
+            "score": 2
+        }, 
+        {
+            "comment": "59 rules", 
+            "techniqueID": "T1098", 
+            "score": 59
+        }, 
+        {
+            "comment": "4 rules", 
+            "techniqueID": "T1140", 
+            "score": 4
+        }, 
+        {
+            "comment": "1 rules", 
+            "techniqueID": "T1035", 
+            "score": 1
+        }, 
+        {
+            "comment": "2 rules", 
+            "techniqueID": "T1177", 
+            "score": 2
+        }, 
+        {
+            "comment": "2 rules", 
+            "techniqueID": "T1222", 
+            "score": 2
+        }, 
+        {
+            "comment": "24 rules", 
+            "techniqueID": "T1036", 
+            "score": 24
+        }, 
+        {
+            "comment": "6 rules", 
+            "techniqueID": "T1097", 
+            "score": 6
+        }, 
+        {
+            "comment": "3 rules", 
+            "techniqueID": "T1033", 
+            "score": 3
+        }, 
+        {
+            "comment": "14 rules", 
+            "techniqueID": "T1208", 
+            "score": 14
+        }, 
+        {
+            "comment": "36 rules", 
+            "techniqueID": "T1083", 
+            "score": 36
+        }, 
+        {
+            "comment": "13 rules", 
+            "techniqueID": "T1030", 
+            "score": 13
+        }, 
+        {
+            "comment": "2 rules", 
+            "techniqueID": "T1550", 
+            "score": 2
+        }, 
+        {
+            "comment": "2 rules", 
+            "techniqueID": "T1202", 
+            "score": 2
+        }, 
+        {
+            "comment": "47 rules", 
+            "techniqueID": "T1204", 
+            "score": 47
+        }, 
+        {
+            "comment": "6 rules", 
+            "techniqueID": "T1205", 
+            "score": 6
+        }, 
+        {
+            "comment": "6 rules", 
+            "techniqueID": "T1207", 
+            "score": 6
+        }, 
+        {
+            "comment": "6 rules", 
+            "techniqueID": "T1055", 
+            "score": 6
+        }, 
+        {
+            "comment": "5 rules", 
+            "techniqueID": "T1018", 
+            "score": 5
+        }, 
+        {
+            "comment": "145 rules", 
+            "techniqueID": "T1071", 
+            "score": 145
+        }, 
+        {
+            "comment": "9 rules", 
+            "techniqueID": "T1070", 
+            "score": 9
+        }, 
+        {
+            "comment": "2 rules", 
+            "techniqueID": "T1118", 
+            "score": 2
+        }, 
+        {
+            "comment": "30 rules", 
+            "techniqueID": "T1050", 
+            "score": 30
+        }, 
+        {
+            "comment": "19 rules", 
+            "techniqueID": "T1053", 
+            "score": 19
+        }, 
+        {
+            "comment": "27 rules", 
+            "techniqueID": "T1052", 
+            "score": 27
+        }, 
+        {
+            "comment": "1 rules", 
+            "techniqueID": "T1114", 
+            "score": 1
+        }, 
+        {
+            "comment": "46 rules", 
+            "techniqueID": "T1133", 
+            "score": 46
+        }, 
+        {
+            "comment": "246 rules", 
+            "techniqueID": "T1078", 
+            "score": 246
+        }, 
+        {
+            "comment": "28 rules", 
+            "techniqueID": "T1110", 
+            "score": 28
+        }, 
+        {
+            "comment": "22 rules", 
+            "techniqueID": "T1075", 
+            "score": 22
+        }, 
+        {
+            "comment": "5 rules", 
+            "techniqueID": "T1016", 
+            "score": 5
+        }, 
+        {
+            "comment": "3 rules", 
+            "techniqueID": "T1107", 
+            "score": 3
+        }, 
+        {
+            "comment": "13 rules", 
+            "techniqueID": "T1059", 
+            "score": 13
+        }, 
+        {
+            "comment": "21 rules", 
+            "techniqueID": "T1136", 
+            "score": 21
+        }, 
+        {
+            "comment": "1 rules", 
+            "techniqueID": "T1082", 
+            "score": 1
+        }, 
+        {
+            "comment": "8 rules", 
+            "techniqueID": "T1073", 
+            "score": 8
+        }, 
+        {
+            "comment": "7 rules", 
+            "techniqueID": "T1074", 
+            "score": 7
+        }, 
+        {
+            "comment": "29 rules", 
+            "techniqueID": "T1086", 
+            "score": 29
+        }, 
+        {
+            "comment": "5 rules", 
+            "techniqueID": "T1087", 
+            "score": 5
+        }, 
+        {
+            "comment": "2 rules", 
+            "techniqueID": "T1085", 
+            "score": 2
+        }, 
+        {
+            "comment": "6 rules", 
+            "techniqueID": "T1088", 
+            "score": 6
+        }, 
+        {
+            "comment": "2 rules", 
+            "techniqueID": "T1562", 
+            "score": 2
+        }, 
+        {
+            "comment": "5 rules", 
+            "techniqueID": "T1134", 
+            "score": 5
+        }, 
+        {
+            "comment": "49 rules", 
+            "techniqueID": "T1021", 
+            "score": 49
+        }, 
+        {
+            "comment": "2 rules", 
+            "techniqueID": "T1189", 
+            "score": 2
+        }, 
+        {
+            "comment": "16 rules", 
+            "techniqueID": "T1188", 
+            "score": 16
+        }, 
+        {
+            "comment": "3 rules", 
+            "techniqueID": "T1008", 
+            "score": 3
+        }, 
+        {
+            "comment": "38 rules", 
+            "techniqueID": "T1219", 
+            "score": 38
+        }, 
+        {
+            "comment": "4 rules", 
+            "techniqueID": "T1027", 
+            "score": 4
+        }, 
+        {
+            "comment": "2 rules", 
+            "techniqueID": "T1121", 
+            "score": 2
+        }, 
+        {
+            "comment": "4 rules", 
+            "techniqueID": "T1102", 
+            "score": 4
+        }, 
+        {
+            "comment": "9 rules", 
+            "techniqueID": "T1213", 
+            "score": 9
+        }, 
+        {
+            "comment": "2 rules", 
+            "techniqueID": "T1211", 
+            "score": 2
+        }, 
+        {
+            "comment": "3 rules", 
+            "techniqueID": "T1076", 
+            "score": 3
+        }, 
+        {
+            "comment": "14 rules", 
+            "techniqueID": "T1046", 
+            "score": 14
+        }, 
+        {
+            "comment": "5 rules", 
+            "techniqueID": "T1047", 
+            "score": 5
+        }, 
+        {
+            "comment": "2 rules", 
+            "techniqueID": "T1127", 
+            "score": 2
+        }, 
+        {
+            "comment": "4 rules", 
+            "techniqueID": "T1100", 
+            "score": 4
+        }, 
+        {
+            "comment": "58 rules", 
+            "techniqueID": "T1068", 
+            "score": 58
+        }, 
+        {
+            "comment": "2 rules", 
+            "techniqueID": "T1105", 
+            "score": 2
+        }, 
+        {
+            "comment": "14 rules", 
+            "techniqueID": "T1040", 
+            "score": 14
+        }, 
+        {
+            "comment": "3 rules", 
+            "techniqueID": "T1041", 
+            "score": 3
+        }, 
+        {
+            "comment": "2 rules", 
+            "techniqueID": "T1124", 
+            "score": 2
+        }, 
+        {
+            "comment": "12 rules", 
+            "techniqueID": "T1003", 
+            "score": 12
+        }, 
+        {
+            "comment": "26 rules", 
+            "techniqueID": "T1066", 
+            "score": 26
+        }, 
+        {
+            "comment": "2 rules", 
+            "techniqueID": "T1500", 
+            "score": 2
+        }, 
+        {
+            "comment": "4 rules", 
+            "techniqueID": "T1043", 
+            "score": 4
+        }, 
+        {
+            "comment": "1 rules", 
+            "techniqueID": "T1022", 
+            "score": 1
+        }, 
+        {
+            "comment": "124 rules", 
+            "techniqueID": "T1048", 
+            "score": 124
+        }, 
+        {
+            "comment": "1 rules", 
+            "techniqueID": "T1005", 
+            "score": 1
+        }, 
+        {
+            "comment": "4 rules", 
+            "techniqueID": "T1496", 
+            "score": 4
+        }, 
+        {
+            "comment": "19 rules", 
+            "techniqueID": "T1065", 
+            "score": 19
+        }, 
+        {
+            "comment": "1 rules", 
+            "techniqueID": "T1094", 
+            "score": 1
+        }, 
+        {
+            "comment": "1 rules", 
+            "techniqueID": "T1135", 
+            "score": 1
+        }, 
+        {
+            "comment": "1 rules", 
+            "techniqueID": "T1168", 
+            "score": 1
+        }
+    ], 
+    "description": "Exabeam MITRE Map"
+}
