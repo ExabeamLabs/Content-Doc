@@ -7,15 +7,14 @@ Welcome to the Exabeam Content Library.
 The Content Library is an online repository of knowledge and content that organizations can use to learn about available log source integrations and security use cases.
 
 This is a programmatic generation of content documentation from Exabeam's content repository. As new content is committed to the content repository, the Content Library is automatically updated to provide fast and easy access.
-
-|Branch|Version|Content|
-|--|--|--|
-|master|canary|[Data Sources](Exabeam%20Data%20Sources.md), [Use Cases](Exabeam%20Use%20Cases.md)|
-|c2102.5|i56|[Data Sources](https://github.com/ExabeamLabs/Content-Doc/blob/c2102.5/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Doc/blob/c2102.5/Exabeam%20Use%20Cases.md)|
-|c2010.6|i55|[Data Sources](https://github.com/ExabeamLabs/Content-Doc/tree/c2010.6/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Doc/tree/c2010.6/Exabeam%20Use%20Cases.md)|
-|c2006.4|i54|[Data Sources](https://github.com/ExabeamLabs/Content-Doc/tree/c2006.4/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Doc/tree/c2006.4/Exabeam%20Use%20Cases.md)|
-|c2002|i53|[Data Sources](https://github.com/ExabeamLabs/Content-Doc/tree/c2002/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Doc/tree/c2002/Exabeam%20Use%20Cases.md)|
-|c1907|i52|[Data Sources](https://github.com/ExabeamLabs/Content-Doc/tree/c1907/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Doc/tree/c1907/Exabeam%20Use%20Cases.md)|
+|Version|Content|MITRE|
+|--|--|--|--|
+|master|canary|[Data Sources](Exabeam%20Data%20Sources.md), [Use Cases](Exabeam%20Use%20Cases.md)|[MITRE MAP](https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/ExabeamLabs/Content-Doc/master/resources/mitre_map.json)|
+|c2102.5|i56|[Data Sources](https://github.com/ExabeamLabs/Content-Doc/blob/c2102.5/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Doc/blob/c2102.5/Exabeam%20Use%20Cases.md)|[MITRE MAP](https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/ExabeamLabs/Content-Doc/c2102.5/resources/mitre_map.json)|
+|c2010.6|i55|[Data Sources](https://github.com/ExabeamLabs/Content-Doc/tree/c2010.6/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Doc/tree/c2010.6/Exabeam%20Use%20Cases.md)|[MITRE MAP](https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/ExabeamLabs/Content-Doc/c2010.6/resources/mitre_map.json)|
+|c2006.4|i54|[Data Sources](https://github.com/ExabeamLabs/Content-Doc/tree/c2006.4/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Doc/tree/c2006.4/Exabeam%20Use%20Cases.md)|[MITRE MAP](https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/ExabeamLabs/Content-Doc/c2006.4/resources/mitre_map.json)|
+|c2002|i53|[Data Sources](https://github.com/ExabeamLabs/Content-Doc/tree/c2002/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Doc/tree/c2002/Exabeam%20Use%20Cases.md)|[MITRE MAP](https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/ExabeamLabs/Content-Doc/c2002/resources/mitre_map.json)|
+|c1907|i52|[Data Sources](https://github.com/ExabeamLabs/Content-Doc/tree/c1907/Exabeam%20Data%20Sources.md), [Use Cases](https://github.com/ExabeamLabs/Content-Doc/tree/c1907/Exabeam%20Use%20Cases.md)|[MITRE MAP](https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/ExabeamLabs/Content-Doc/c1907/resources/mitre_map.json)|
 
 ## How do I use it?
 The Content Library provides navigation from an Exabeam supported data source to a use case (or use case to data source) showing the event types and parsers for each.
