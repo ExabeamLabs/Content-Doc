@@ -11,7 +11,7 @@ Name = json-5158
   Fields = [
     """({event_code}5158)""",
     """({event_name}The Windows Filtering Platform has permitted a bind to a local port)""",
-    """"EventTime"{1,20}:"{1,20}({time}[^",]{1,2000})""",
+    """"EventTime"{1,20}:\s{0,100}"{1,20}({time}[^",]{1,2000})""",
     """"Hostname"{1,20}:"{1,20}({host}[^",]{1,2000})""",
     """"ProcessId"{1,20}:"{1,20}({pid}[^"]{1,2000})""",
     """"Application"{1,20}:"{1,20}({process}({directory}[^,"]{0,2000}?[\\\/]{1,2000})?({process_name}[^\\\/\s"]{1,2000}?))"""",

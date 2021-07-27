@@ -10,7 +10,7 @@ Name = json-4648
     Conditions = ["""4648""", """"TargetServerName":"""]
     Fields = [
       """({event_name}A logon was attempted using explicit credentials)""",
-      """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+      """"EventTime":\s{0,100}"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]{1,2000}\sSkyformation""",
       """"EventReceivedTime":\s{0,100}({time}\d{1,100})""",
       """"timestamp":\s{0,100}({time}\d{1,100})""",

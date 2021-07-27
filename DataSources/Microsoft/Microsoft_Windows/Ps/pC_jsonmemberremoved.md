@@ -10,6 +10,7 @@ Name = json-member-removed
   Conditions = [ """"EventID":""", """A member was removed from a security-enabled""", """"MemberSid":""", """"MemberName":""" ]
   Fields = [
     """"EventTime":({time}\d{1,100})""",
+    """"EventTime":\s{0,100}"({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d)"""",
     """"Hostname":"({host}[\w.-]{1,2000}?)"""",
     """"EventID":({event_code}\d{1,100})""",
     """({event_name}A member was removed from a security-enabled ({group_type}[\w\s]{1,2000}) group)""",

@@ -24,6 +24,7 @@ Name = s-xml-4663
     """<Data Name(\\)?=('|")ProcessName('|")>({process}({directory}(?:[^<]{1,2000})?[\\\/])?({process_name}[^\\\/"<]{1,2000}?))</Data>""",
     """<Data Name(\\)?=('|")AccessList('|")>([^\d\w]{1,2000})?({accesses}[\d\w]{1,2000})""",
     """<Data Name(\\)?='AccessMask'>({access_mask}[^<]{1,2000})""",
+    """Accesses:\s{0,100}({accesses}[^:]{1,2000}?)\s{0,100}Access Mask:"""
   ]
   DupFields = [ "host->dest_host","directory->process_directory" ]
 }

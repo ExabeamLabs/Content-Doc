@@ -9,7 +9,7 @@ Name = json-4674
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = [""""EventID":4674""","An operation was attempted on a privileged object"]
     Fields = [
-	""""EventTime"{0,20}:"{0,20}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+	""""EventTime"{0,20}:\s{0,100}"{0,20}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
 	""""EventID"{0,20}:({event_code}\d{1,100})""",
 	"""({event_name}An operation was attempted on a privileged object)""",
 	""""Hostname"{0,20}:"{0,20}({host}[^"]{1,2000})""",

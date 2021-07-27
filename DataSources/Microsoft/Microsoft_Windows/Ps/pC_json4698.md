@@ -9,7 +9,7 @@ Name = json-4698
   TimeFormat = "epoch"
   Conditions = [ """"EventID":4698""", """A scheduled task was created""" ]
   Fields = [
-    """"EventTime":"?({time}[^",]{1,2000})""",
+    """"EventTime":\s{0,100}"?({time}[^",]{1,2000})""",
     """"Hostname":"({host}[\w.-]{1,2000}?)"""",
     """"EventID":({event_code}\d{1,100})""",
     """({event_name}A scheduled task was created)""",
