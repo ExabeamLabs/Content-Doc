@@ -10,6 +10,7 @@ Name = json-4778
     Conditions = ["""A session was reconnected to a Window Station""", """"EventID":4778"""]
     Fields = [
       """"EventTime":({time}\d{1,100})""",
+      """"EventTime":\s{0,100}"({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d)"""",
       """"Hostname":"({host}[\w.-]{1,2000}?)"""",
       """"EventID":({event_code}\d{1,100})""",
       """({event_name}A session was reconnected to a Window Station)""",

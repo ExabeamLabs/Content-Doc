@@ -11,7 +11,7 @@ Name = json-4776
     Fields = [
       """({event_name}The (computer|domain controller) attempted to validate the credentials for an account)""",
       """"EventTime":({time}\d{1,100})""",
-      """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+      """"EventTime":\s{0,100}"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """"(Hostname|MachineName)":"({host}[^"]{0,2000})""",
       """"Computer"{1,20}:"{1,20}({host}[^"]{1,2000})"""",
       """({event_code}4776)""",

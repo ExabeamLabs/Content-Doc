@@ -18,6 +18,7 @@ Name = json-4624
       """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """"EventReceivedTime":\s{0,100}({time}\d{1,100})""",
       """"timestamp":\s{0,100}({time}\d{1,100})""",
+      """EventTime":\s{0,100}"({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d)"""",
       """"(Hostname|MachineName|hostname)":"({host}[^"]{0,2000})""",
       """({event_code}4624)""",
       """"LogonType":"?({logon_type}[^",]{1,2000})""",

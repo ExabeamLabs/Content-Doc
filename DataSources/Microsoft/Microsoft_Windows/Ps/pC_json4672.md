@@ -14,7 +14,7 @@ Name = json-4672
       """"TimeCreated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """"Computer":"({host}[^"]{1,2000})"""",
       """"timestamp":\s{0,100}({time}\d{1,100})""",
-      """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+      """"EventTime":\s{0,100}"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """"(Hostname|MachineName)":"({host}[^"]{0,2000})""",
       """({event_code}4672)""",
       """"(Event|Entry)Type":"({outcome}[^"]{1,2000})""",
