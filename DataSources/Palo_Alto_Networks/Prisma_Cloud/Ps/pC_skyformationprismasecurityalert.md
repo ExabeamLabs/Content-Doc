@@ -2,7 +2,7 @@
 ```Java
 {
 Name = skyformation-prisma-security-alert
- Vendor = Prisma Cloud
+ Vendor = Palo Alto Networks
  Product = Prisma Cloud
  Lms = Direct
  DataType = "alert"

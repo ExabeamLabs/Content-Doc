@@ -1,6 +1,6 @@
-Vendor: Prisma Cloud
-====================
-### Product: [Prisma Cloud](../ds_prisma_cloud_prisma_cloud.md)
+Vendor: Palo Alto Networks
+==========================
+### Product: [Prisma Cloud](../ds_palo_alto_networks_prisma_cloud.md)
 ### Use-Case: [Privileged Activity](../../../../UseCases/uc_privileged_activity.md)
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |

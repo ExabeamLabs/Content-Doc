@@ -7,7 +7,7 @@ Name = s-pan-incident-alert
     Lms = Splunk
     DataType = "dlp-alert"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-    Conditions = [ """"incident"""", "cloud_app_instance" ]
+    Conditions = [ """"incident"""", """"cloud_app_instance"""", """"item_owner":""", """"item_creator_email":""" ]
     Fields = [
       """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)Z""",
       """exabeam_host=({host}[^\s]{1,2000})""",
@@ -25,7 +25,7 @@ Name = s-pan-incident-alert
       """"item_owner":"({user}[^",\s@]{1,2000})"""",
       """"cloud_app_instance":"({alert_type}[^"]{1,2000})""",
       """"item_creator":"(|({item_creator}[^"]{1,2000}))"""",
-      """"item_creator_email":"(|({user_email}[^"]{1,2000}))"""",
+      """"item_creator_email":"(|({user_email}[^\s",@]{1,2000}\@[\w\.\-]{1,2000}))"""",
       """"collaborators":"(|({collaborators}[^"]{1,2000}))"""",
       """ext_severity=({alert_severity}[^\s]{1,2000})"""
     ]
