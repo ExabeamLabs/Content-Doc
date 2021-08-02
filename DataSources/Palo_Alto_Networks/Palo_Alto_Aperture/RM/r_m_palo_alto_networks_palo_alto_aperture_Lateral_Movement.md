@@ -1,11 +1,11 @@
-Vendor: Prisma Cloud
-====================
-### Product: [Prisma Cloud](../ds_prisma_cloud_prisma_cloud.md)
+Vendor: Palo Alto Networks
+==========================
+### Product: [Palo Alto Aperture](../ds_palo_alto_networks_palo_alto_aperture.md)
 ### Use-Case: [Lateral Movement](../../../../UseCases/uc_lateral_movement.md)
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     1      |      1      |    1    |
+|   1   |   0    |     1      |      8      |    8    |
 
 | Event Type     | Rules                                                                                                                                                            | Models |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
