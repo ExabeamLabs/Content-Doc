@@ -17,6 +17,8 @@ Name = cef-okta-logs-app-alert
     """cat=({alert_type}[^\s]{1,2000})"""
     """"actor":\s{0,100}[^\]]{0,2000}?"displayName"\s{0,100}:\s{0,100}"(?:({user_lastname}[^,"]{1,2000}),\s{0,100}({user_firstname}[^"]{1,2000})|({user_fullname}[^"]{1,2000}))"""",
     """"actor":[^\]]{0,2000}?"alternateId"\s{0,100}:\s{0,100}"(?:({user_email}[^"@]{1,2000}@({domain}[^"]{1,2000}))|({user}[^"]{1,2000}))"""",
+    """"client":[^\]]{0,2000}?"browser"\s{0,100}:\s{0,100}"(?:UNKNOWN|({browser}[^"]{1,2000}))""",
+    """"client":[^\]]{0,2000}?"os"\s{0,100}:\s{0,100}"(Unknown|({os}[^"]{1,2000}))""",
     """"client":[^\]]{0,2000}?"rawUserAgent"\s{0,100}:\s{0,100}"({user_agent}[^"]{1,2000})""",
     """"client":[^\]]{0,2000}?"ipAddress"\s{0,100}:\s{0,100}"({src_ip}[^"]{1,2000})""",
     """"outcome":[^\]]{0,2000}?"result"\s{0,100}:\s{0,100}"FAILURE","reason":"({failure_reason}[^"]{1,2000})""",

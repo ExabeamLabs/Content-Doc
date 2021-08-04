@@ -31,6 +31,7 @@ Name = skyformation-cloudflare-waf
     """"ClientRequestPath":"({uri_path}[^"]{1,2000})""",
     """"ClientRequestProtocol":"({protocol}[^"]{1,2000})""",
     """"SecurityLevel":"({alert_severity}[^"]{1,2000})""",
+    """"ClientRequestUserAgent[":]{1,2000}.+({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)(.+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))?"""
  ]
 }
 ```

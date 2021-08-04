@@ -18,8 +18,8 @@ Name = s-ironport-dlp-email-alert
       """\('to',\s{0,100}'.*?<({recipients}.*?)>'\)""",
       """\('to',\s{0,100}'[\<]?({recipient}[^>,\';]{1,2000})""",
       """\('to',\s{0,100}'[\"][^\<]{1,2000}[\<]?({recipient}[^>,\';]{1,2000})""",
-      """\('to',\s{0,100}'({external_address}[^@<>]{1,2000}@[^>,<']{1,2000}).*?'\)""",
-      """\('to',\s{0,100}'.*?<({external_address}[^@><]{1,2000}@[^>,<']{1,2000}).*?'\)""",
+      """\('to',\s{0,100}'({external_address}[^@<>]{1,2000}@({external_domain}[^>,<']{1,2000})).*?'\)""",
+      """\('to',\s{0,100}'.*?<({external_address}[^@><]{1,2000}@({external_domain}[^>,<']{1,2000})).*?'\)""",
       """\('(subject|Subject)',\s{0,100}'({subject}.*?)'\)""",
       """\('(x-fr({direction}o)m-mailhub|X-Fr({=direction}o)m-MailHub)',\s{0,100}'true'\)"""
     ]

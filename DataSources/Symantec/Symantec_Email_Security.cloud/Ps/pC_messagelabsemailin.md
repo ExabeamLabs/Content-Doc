@@ -11,7 +11,7 @@ Name = messagelabs-email-in
   Fields = [
     """exabeam_host=([^@=]{1,2000}@\s{0,100})?({host}[\w.\-]{1,2000})""",
     """"mailProcessingStartTime"{1,20}:({time}\d{1,100})""",
-    """"headerFrom":"({sender}[^"@]{1,2000}@[^@"]{1,2000})",""",
+    """"headerFrom":"({sender}[^"@]{1,2000}@({external_domain}[^@"]{1,2000}))",""",
     """"subject":"({subject}[^"]{1,2000})",""",
     """"messageSize":({bytes}\d{1,100})""",
     """"messageId":"({alert_id}[^"]{1,2000})",""",

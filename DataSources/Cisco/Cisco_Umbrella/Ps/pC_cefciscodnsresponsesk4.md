@@ -19,6 +19,7 @@ Name = cef-cisco-dns-response-sk4
     """"action":"({outcome}[^"]{1,2000})"""",
     """"queryType":"[^"]{0,2000}\(({query_type}[^"\)]{1,2000})\)"""",
     """"responseCode":"({dns_response_code}[^"]{1,2000})"""",
+    """"domain":"(|({query}[^"]{0,2000}?\.({top_query}\w+\.(?i)(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))))\.?"""",
     """"domain":"({query}[^"]{0,2000}?)\.?"""",
     """"categories":\s{0,100}\[({categories}"{0,20}({category}[^"\],]{1,2000})[^\]]{0,2000})\]""",
     """"externalIp"{1,20}:"{1,20}({dest_ip}[^"]{1,2000})"""

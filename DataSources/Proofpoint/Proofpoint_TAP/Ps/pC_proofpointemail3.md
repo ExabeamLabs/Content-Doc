@@ -16,9 +16,12 @@ Name = proofpoint-email-3
       """"msg_normalizedHeader_from_s":"(\[|\s|\\|")*[^\]]{1,2000}?<({sender}[^>]{1,2000}?)>"""
       """"msg_normalizedHeader_from_s":"(\[|\s|\\|")*({sender}[<^,"]{1,2000}?@[^>]{1,2000}?)\\""""
       """"envelope_from_s":"({sender}[^"]{1,2000})""""
+      """"envelope_from_s":"[^"]{1,2000}@({external_domain_sender}[^"]{1,2000})""""
       """"smtp\.mailfrom": "({sender}[^"]{1,2000})""""
+      """"smtp\.mailfrom": "[^"]{1,2000}@({external_domain_sender}[^"]{1,2000})""""
       """"filter_verified_rcpts_s":"\[\s{0,100}\\*"({recipients}.+?)\\*"\s{0,100}\]","""
-      """"filter_verified_rcpts_s":"\[[\s\\"]{0,2000}({recipient}[^,]{1,2000}?@[^,]{1,2000}?)[\s\\"]{1,2000}"""
+      """"filter_verified_rcpts_s": "[^"]{1,2000}@({external_domain_recipient}[^"]{1,2000})""""
+      """"filter_verified_rcpts_s":"\[[\s\\"]{0,2000}({recipient}[^,]{1,2000}?@({external_domain_recipient}[^,]{1,2000}?))[\s\\"]{1,2000}"""
       """"msg_header_subject_s":"\[\s{0,100}\\*"({subject}[^\]]{1,2000}?)\\*"\s{0,100}\]",""""
       """"filter_routeDirection_s":"({direction}[^"]{1,2000})""""
       """"filter_disposition_s":"({outcome}[^"]{1,2000})""",

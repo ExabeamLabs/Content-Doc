@@ -15,7 +15,7 @@ Name = cef-moveit-app-login
     """\ssuser=({account_id}.+?)\s(\w+=|$)""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sshost=({src_host}[^\s]{1,2000})\s\w+=""",
-    """requestClientApplication=({user_agent}.+?)\s\w+=""",
+    """requestClientApplication=({browser}.+?)\s\w+=""",
     """({app}MoveIt)"""
   ]
    DupFields=["account_id->user"]
