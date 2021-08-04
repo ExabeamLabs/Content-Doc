@@ -22,6 +22,7 @@ Name = s-vontu-email-dlp
       """\|\sprotocol="({protocol}[^"]{1,2000})"""",
       """\|\srecipient="({recipients}[^"]{1,2000})"""",
       """\|\srecipient="({external_address}[^,"]{1,2000})""",
+      """\|\srecipient="[^@]{1,2000}@({external_domain}[^,"]{1,2000})""",
       """\|\sBusiness_Unit="({additional_info}[^"]{1,2000})"""",
       """\|\sfilename="(N/A|(?i)unknown|({target}[^"]{1,2000}?))\s{0,100}"""",
       """\|\sfilename="(N/A|(?i)unknown|({file_name}[^"]{1,2000}?\.\w+))""",

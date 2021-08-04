@@ -16,7 +16,7 @@ Name = cef-mimecast-security-alert
     """"(?i)Route":"({direction}[^"]{1,2000})""",
     """"(?:id|aCode)":"({alert_id}[^"]{1,2000})""",
     """"(recipientAddress|Recipient)":"({recipient}[^"]{1,2000})""",
-    """(senderAddress|Sender)":"(<>|({sender}[^@"]{1,2000}@[^"]{1,2000}))""",
+    """(senderAddress|Sender)":"(<>|({sender}[^@"]{1,2000}@({external_domain}[^"]{1,2000})))""",
     """"(?i)Subject":"({subject}[^"]{1,2000}?)\s{0,100}"""",
     """"(messageId|MsgId)":"({message_id}[^"]{1,2000})""",
     """"fileName":"({file_name}[^"]{1,2000})""",
@@ -25,6 +25,7 @@ Name = cef-mimecast-security-alert
     """"(?:action|actions)":"({outcome}[^"]{1,2000})""",
     """"actionTriggered":"(none|({outcome}[^"]{1,2000}))""",
     """"acc":"({user}[^"]{1,2000})""",
+    """"SenderDomain":"(<>|({external_domain}[^"]{1,2000}))"""",
     """"SourceIP":"({src_ip}[^"]{1,2000})"""",
     """"result":"({outcome}[^"]{1,2000})""",
     """"subject":"({subject}[^"]{1,2000})"""

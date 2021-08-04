@@ -12,18 +12,18 @@ Name = o365-activity-3
     """"CreationTime\\*"{1,20}:[\s\\]{0,2000}"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[^\s]{1,2000})""",
     """"Operation\\*"{1,20}:[\s\\]{0,2000}"{1,20}({activity}[^"\\\.]{0,2000})""",
-    """"UserId\\*"{1,20}:[\s\\]{0,2000}"{1,20}(({domain}[^"\\]{1,2000})\\+)?(({user_email}[^@"]{1,2000}@[^."]{1,2000}\.[^"]{1,2000}?)|(SecurityComplianceAlerts|(Unknown|Sync|({user}[^"@\\\s]{0,2000}))))"""",
+    """"UserId\\*"{1,20}:[\s\\]{0,2000}"{1,20}(({domain}[^"\\]{1,2000})\\+)?(({user_email}[^@"]{1,2000}@[^."]{1,2000}\.[^"]{1,2000}?)|(SecurityComplianceAlerts|(Unknown|Sync|AirInvestigation|({user}[^"@\\\s]{0,2000}))))"""",
     """\ssuser=[^"@=\s]{0,2000}?@([\.\w+]{1,2000}\.)?({email_domain}[^\.\s"]{1,2000}?\.[^\s"\.\\]{1,2000})""",
     """"UserId\\*"{1,20}:[\s\\]{0,2000}"{1,20}({user_email}[^@"]{1,2000}@[^."]{1,2000}\.[^"]{1,2000}?)"""",
     """"UserId\\*"{1,20}:[\s\\"]{0,2000}"{1,20}[^"]{0,2000}?@([\.\w+]{1,2000}\.)?({email_domain}[^\.\s"]{1,2000}?\.[^\s"\.>]{1,2000})>?\s{0,100}"{1,20}""",
-    """"UserId":"\\*"(?![^@"]{1,2000}?@[^\s"]{1,2000})({domain}[^"\\\/]{1,2000})[^"]{0,2000}?(Unknown|Sync|({user}[^"\\\/@\s]{1,2000}))\\"""",
+    """"UserId":"\\*"(?![^@"]{1,2000}?@[^\s"]{1,2000})({domain}[^"\\\/]{1,2000})[^"]{0,2000}?(Unknown|Sync|AirInvestigation|({user}[^"\\\/@\s]{1,2000}))\\"""",
     """"(Workload|Application|Client)\\*"{1,20}:[\s\\]{0,2000}"{1,20}({app}[^"\\]{0,2000})""",
     """requestClientApplication=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\WdestinationServiceName\s{0,100}=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\WsourceServiceName=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """"ObjectId\\*"{1,20}:"?[\s\\]{0,2000}"{1,20}(Unknown|Not Available|({object}[^"\\]{0,2000}))""",
     """"SourceFileName":"({object}[^",]{1,2000})""",
-    """\ssuser=(anonymous|SecurityComplianceAlerts|({user_email}[^\s]{1,2000}@[^\s]{1,2000}\.[^\s]{1,2000})|(Unknown|Sync|({user}[^"\s@]{1,2000}?)))\s""",
+    """\ssuser=(anonymous|SecurityComplianceAlerts|({user_email}[^\s]{1,2000}@[^\s]{1,2000}\.[^\s]{1,2000})|(Unknown|Sync|AirInvestigation|({user}[^"\s@]{1,2000}?)))\s""",
     """\ssuser=({user_email}[^=@"]{1,2000}@[^.="]{1,2000}\.[^=]{1,2000}?)\s\w+=""",
     """\ssuser=[^=\s]{0,2000}?@([\.\w+]{1,2000}\.)?({email_domain}[^\.\s"]{1,2000}?\.[^\s"\.>]{1,2000})""",
     """"ItemName":"({subject}[^"]{1,2000})""",
@@ -37,7 +37,8 @@ Name = o365-activity-3
     """cs2=({group_name}[^=]{1,2000})\s{1,100}\w+=""",
     """"IsSuccess":({outcome}[^\s,]{1,2000})""",
     """SourceRelativeUrl":"({dest_path}[^"]{1,2000}?)\s{0,100}"""",
-    """SiteUrl":"({site_url}[^"]{1,2000})""""
+    """SiteUrl":"({site_url}[^"]{1,2000})"""",
+    """"MailboxPrimaryAddress":"({user_email}[^@"]{1,2000}@[^."]{1,2000}\.[^"]{1,2000}?)""""
   ]
 }
 ```

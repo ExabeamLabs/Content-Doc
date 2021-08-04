@@ -20,7 +20,7 @@ Name = q-exchange-dlp-email-out-1
     """event-id=({outcome}\w+)""",
     """\tinternal-message-id=(?:|({alert_id}.+?))\t[\w\-]{1,2000}=""",
     """recipient-address=({recipients}\S+)""",
-    """recipient-address=({recipient}[^\s;@]{1,2000}@[^@\s;]{1,2000})""",
+    """recipient-address=({recipient}[^\s;@]{1,2000}@({external_domain}[^@\s;]{1,2000}))""",
     """total-bytes=({bytes}\d{1,100})""",
     """recipient-count=({num_recipients}\d{1,100})""",
     """message-subject="{0,20}({subject}.+?)"{0,20}\s{1,100}((\w+-)*\w+=|$)""",

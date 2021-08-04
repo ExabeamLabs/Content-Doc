@@ -14,6 +14,7 @@ Name = cef-proofpoint-email-in
       """^([^|]{0,2000}\|){4}({outcome}[^|]{1,2000})""",
       """\ssrc=({src_ip}[a-fA-F\d.:]{1,2000})""",
       """\ssuser=({sender}\S+)""",
+      """\ssuser=\S+@({external_domain}\S+)""",
       """\sduser=({user}\S+)""",
       """({alert_name}Proofpoint)""",
       """"threatType":"({alert_type}[^"]{1,2000})""",

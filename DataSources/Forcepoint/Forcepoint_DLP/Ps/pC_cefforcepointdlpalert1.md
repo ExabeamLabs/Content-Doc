@@ -16,10 +16,10 @@ Name = cef-forcepoint-dlp-alert-1
     """({host}[\w\-.]{1,2000})\s{1,100}CEF:""",
     """\Wact=({outcome}.+?)(\s\-\s|\s{1,100}[\w\.]{1,2000}=|$)""",
     """\Wduser=(N\/A|({target}[^\s;]{1,2000}))""",
+    """\Wduser=[^\s@]{0,2000}?({top_domain}[^\/\.\s@]{1,2000}(?i)(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)\s{1,100}\w+=""",
     """\Wfname=(N\/A|.*?[\/\\]{0,2000}({file_name}[^\\\/=]{1,2000}?))\s{1,100}\- [\d.]{1,2000} """,
     """\Wfname=(N\/A|.*? - ({bytes_num}[\d.]{1,2000})\s{1,100}({bytes_unit}[^\s;]{1,2000}))""",
     """\Wfname=(N\/A|.*? - ({bytes_val}[\d.]{1,2000}\s{1,100}[^\s;]{1,2000}))""",
-    """\Wmsg=\s{0,100}(({full_url}({web_domain}http(s)?:\/\/[^\/]{0,2000}).+?)(\s{1,100}\-\s|\s{1,100}[\w\.]{1,2000}=|$))"""
     """\Wmsg=\s{0,100}({additional_info}.+?)(\s{1,100}\-\s|\s{1,100}[\w\.]{1,2000}=|$)""",
     """\Wcat=({alert_name}.+?)(\s\-\s|\s{1,100}[\w\.]{1,2000}=|$)""",
     """\WsourceServiceName=({alert_type}.+?)\s{1,100}(on |\w+=)""",

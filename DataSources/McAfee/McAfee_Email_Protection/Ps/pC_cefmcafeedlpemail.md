@@ -23,6 +23,7 @@ Name = cef-mcafee-dlp-email
       """\ssuser=(?:<>|<?({orig_user}.+?)>?)\s{1,100}\w+=""",
       """\sduser=(?:<>|({recipients_unfixed}.+?))\s{1,100}\w+=""",
       """\sduser=<?({external_address}[^\s>,]{1,2000})""",
+      """\sduser=<?[^@]{1,2000}@({external_domain}[^\s>,]{1,2000})""",
       """\sapp=({protocol}.+?)\s{1,100}\w+=""",
       """\sdeviceDirection=({direction_code}\d{1,100})""",
       """\scs6=({subject}.+?)\s{1,100}(?:cs6Label=email-subject|\w+=.*cs6Label=email-subject)""",

@@ -15,6 +15,7 @@ Name = cef-infowatch-web-activity-1
     """\Wsntdom=({user_email}.+?)(\s{1,100}[\w\.]{1,2000}=|\s{0,100}$)""",
     """\Wduser=({web_domain}.+?)(\s{1,100}[\w\.]{1,2000}=|\s{0,100}$)""",
     """\Wrequest=({full_url}(\w+:\/\/)?[^\/]{1,2000}?({uri_path}\/[^\?\s]{0,2000}?)({uri_query}\?.*?)?)(\s{1,100}[\w\.]{1,2000}=|\s{0,100}$)""",
+    """\Wduser=[^=]{0,2000}?({top_domain}[^\/\.\s]{1,2000}(?i)(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)(\s{1,100}[\w\.]{1,2000}=|\s{0,100}$)""",
     """\Wdvchost=({host}.+?)(\s{1,100}[\w\.]{1,2000}=|\s{0,100}$)""",
     """\Wdvc=({host}.+?)(\s{1,100}[\w\.]{1,2000}=|\s{0,100}$)""",   
   ]

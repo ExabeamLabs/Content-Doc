@@ -17,6 +17,7 @@ Name = s-proofpoint-email-in
       """- ProofpointTAP -\s{1,100}CLKBLK\s{1,100}-.*?\smessageID=({alert_id}\S+)""",
       """\srecipient="{0,20}({recipient}[^\s"]{1,2000})""",
       """\ssender="{0,20}(null|({sender}[^\s"]{1,2000}))""",
+      """\ssender="{0,20}[^@"\s]{1,2000}@({external_domain}[^\s"]{1,2000})""",
       """\ssenderIP="{0,20}(null|({src_ip}[a-fA-F\d.:]{1,2000}))""",
       """\sthreatsInfoMap=\[\{.+?,({alert_type}.+?)\}""",
       """\sthreatsInfoMap="{0,20}\[\{.+?,\\"{0,20}classification\\"{0,20}:\\"{0,20}({alert_type}[^\\"]{1,2000})""",

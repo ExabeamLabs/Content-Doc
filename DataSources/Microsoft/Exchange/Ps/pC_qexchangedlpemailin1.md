@@ -24,7 +24,7 @@ Name = q-exchange-dlp-email-in-1
     """total-bytes=({bytes}\d{1,100})""",
     """recipient-count=({num_recipients}\d{1,100})""",
     """message-subject="{0,20}({subject}.+?)"{0,20}\s{1,100}((\w+-)*\w+=|$)""",
-    """sender-address=({sender}[^\s@]{1,2000}@[^@\s]{1,2000})""",
+    """sender-address=({sender}[^\s@]{1,2000}@({external_domain}[^@\s]{1,2000}))""",
     """directionality=({direction}\w+)"""
   ]
   DupFields = [ "alert_name->alert_type", "sender->external_address", "recipient->user", "recipient->orig_user" ]

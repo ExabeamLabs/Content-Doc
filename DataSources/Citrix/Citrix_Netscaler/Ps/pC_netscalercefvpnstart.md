@@ -22,6 +22,8 @@ Name = netscaler-cef-vpn-start
     """cn1=({session_id}\d{1,100})""",
     """Browser_type "{1,20}({user_agent}[^"]{1,2000})""",
     """Browser_type\s{0,100}({user_agent}[^\-]{1,2000}?)\s{0,100}\-""",
+    """Browser_type (\")+(?:-|({browser}[^\/]{1,2000}).+({os}iOS|Android|BlackBerry|iPhone OS|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin))""",
+    """Browser_type (\")+(?:-|Mozilla\/.+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
     """requestClientApplication=({user_agent}.+?)\s{1,100}\w+=""",
     """SSLVPN_client_type\s{0,100}({vpn_client_type}[^\-]{1,2000}?)\s\-""", 
     """Group\(s\) "{1,20}(N\/A|({realm}[^"]{1,2000}))""",

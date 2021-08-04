@@ -17,7 +17,11 @@ Name = raw-netscaler-vpn-start
      """User ({user}[^@\s]{1,2000}) - Client_ip ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
      """ Nat_ip ({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
      """SSLVPN_client_type\s{0,100}({vpn_client_type}[^\s]{1,2000}) - Group""",
-     """Browser_type (\")+(?:-|({user_agent}[^"]{1,2000}))""",
+     """Browser_type (\")+(?:-|({browser}[\w\-]{1,2000}))""",
+     """Browser_type (\")+(?:-|({browser}[\w\-]{1,2000})\/[\d\._]{1,2000})""",
+     """Browser_type (\")+(?:-|({browser}[^\/]{1,2000}).+({os}iOS|Android|BlackBerry|iPhone OS|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin))""",
+     """Browser_type (\")+(?:-|Mozilla\/.+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
+     """Browser_type (\")+(?:-|Mozilla\/.+\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+Gecko\/\d{1,100}\s{1,100}({browser}\w+))""",
      """Vserver\s{0,100}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
      ]
  DupFields = [ "vpn_client_type->app" ]

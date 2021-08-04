@@ -11,6 +11,7 @@ Name = okta-app-login-1
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """"userAgent":\s{0,100}"({user_agent}[^"]{1,2000})""",
+    """"userAgent":\s{0,100}"[^"]{0,2000}({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^"]{1,2000}?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
     """"requestTime":\s{0,100}"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     """"deviceType":\s{0,100}"(login_type)""",
     """"systemAccount":\s{0,100}";*({user}[^;"]{1,2000})""",
