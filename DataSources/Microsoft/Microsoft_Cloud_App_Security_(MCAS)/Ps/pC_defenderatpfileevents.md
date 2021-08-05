@@ -10,7 +10,7 @@ Name = defender-atp-file-events
 }
 defender-atp-events = {
     Vendor = Microsoft
-    Product = Microsoft Defender ATP
+    Product = Defender ATP
     Lms = Splunk
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
     Fields = [
