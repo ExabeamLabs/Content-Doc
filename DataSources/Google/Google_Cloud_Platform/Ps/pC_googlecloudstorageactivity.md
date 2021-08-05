@@ -11,12 +11,12 @@ Name = googlecloud-storage-activity
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
-    """"callerIp":"({src_ip}[^"]{1,2000})""",
-    """"({service}storage.googleapis.com)""",
-    """"methodName":"({activity}[^"]{1,2000})""",
-    """"principalEmail":"(?:({user_email}[^"@]{1,2000}?@({email_domain}[^"@]{1,2000}))|({user}[^"]{1,2000}))"""",
-    """"callerSuppliedUserAgent":"({user_agent}[^"]{1,2000})""",
-    """"resource".+?location":"({region}[^"]{1,2000})""",
-    """policyDelta.+?"role":"roles\/({role}[^"\\\/]{1,2000})""",
+    """callerIp":"({src_ip}[^"]{1,2000})""",
+    """({service}storage.googleapis.com)""",
+    """methodName":"({activity}[^"]{1,2000})""",
+    """principalEmail":"(?:({user_email}[^"@]{1,2000}?@({email_domain}[^"@]{1,2000}))|({user}[^"]{1,2000}))"""",
+    """callerSuppliedUserAgent":"({user_agent}[^"]{1,2000})""",
+    """resource"[^\}]{1,2000}?location":"({region}[^"]{1,2000})""",
+    """policyDelta"[^\}]{1,2000}?role":"roles\/({role}[^"\\\/]{1,2000})""",
     """status.+?"code":\d{1,100}
 ```

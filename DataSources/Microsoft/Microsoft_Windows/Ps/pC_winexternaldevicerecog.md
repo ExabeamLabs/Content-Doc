@@ -15,7 +15,7 @@ Name = win-external-device-recog
 }
 d-xml-windows-device = {
   Vendor = Microsoft
-  Product = Microsoft Windows
+  Product = Windows
   Lms = Direct
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSSZ"
   Fields = [

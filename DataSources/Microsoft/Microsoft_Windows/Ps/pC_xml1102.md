@@ -14,7 +14,7 @@ Name = xml-1102
 }
 raw-1102 = {
   Vendor = Microsoft
-  Product = Microsoft Windows
+  Product = Windows
   DataType = "windows-audit"
   Fields = [
     """exabeam_host=({host}[\w\-.]{1,2000})""",

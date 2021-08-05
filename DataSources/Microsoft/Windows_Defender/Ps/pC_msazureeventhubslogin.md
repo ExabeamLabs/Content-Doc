@@ -17,7 +17,7 @@ Name = ms-azure-eventhubs-login
 }
 ms-azure-eventhubs-activity = {
   Vendor = Microsoft
-  Product = Microsoft Azure
+  Product = Azure
   Lms = QRadar
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
   Fields = [
