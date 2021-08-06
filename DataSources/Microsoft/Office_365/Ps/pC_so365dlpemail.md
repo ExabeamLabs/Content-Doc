@@ -7,7 +7,7 @@ Name = s-O365-dlp-email
   Lms = QRadar
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """"RecipientAddress"""", """"SenderAddress"""", """"MessageTraceId"""" ]
+  Conditions = [ """"RecipientAddress"""", """"SenderAddress"""", """"MessageTraceId"""", """"Subject": """ ]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """"Received"{1,20}:\s{0,100}"{1,20}({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d{1,100})""",
