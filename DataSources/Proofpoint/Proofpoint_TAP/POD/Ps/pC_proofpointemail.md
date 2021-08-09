@@ -19,7 +19,7 @@ Name = proofpoint-email
       """"ip"{1,20}:\s{0,100}"{1,20}({dest_ip}[a-fA-F\d.:]{1,2000})""",
       """"filter"{1,20}:[^=]+?"{1,20}disposition"{1,20}:\s{0,100}"{1,20}({outcome}[^"]{1,2000})""",
       """"routeDirection"{1,20}:\s{0,100}"{1,20}({direction}[^"]{1,2000})""",
-      """"message-id"{1,20}:\s{0,100}\["{1,20}<*({message_id}[^>"]{1,2000})""",
+      """"message-id"{1,20}:\s{0,100}\["{1,20}<{0,100}({message_id}[^>"]{1,2000})""",
       """msgParts.+"detectedName"{1,20}:\s{0,100}"{1,20}\s{0,100}({attachment}[^"]{1,2000})""",
       """msgParts.+"sizeDecodedBytes":\s{0,99}({bytes}\d{1,100})""",
       """"ip"{1,20}:\s{0,100}"{1,20}({src_ip}[A-Fa-f:\d.]{1,2000})""",
