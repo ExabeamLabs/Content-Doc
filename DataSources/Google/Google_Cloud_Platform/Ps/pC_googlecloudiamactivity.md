@@ -17,7 +17,7 @@ Name = googlecloud-iam-activity
      """"methodName":"({activity}[^"]{1,2000})""",
      """"principalEmail":"(?:({user_email}[^"@]{1,2000}?@({email_domain}[^"@]{1,2000}))|({user}[^"]{1,2000}))"""",
      """"callerSuppliedUserAgent":"({user_agent}[^"]{1,2000})""",
-     """"resource".+?location":"({region}[^"]{1,2000})""",
-     """policyDelta.+?"role":"roles\/({role}[^"\\\/]{1,2000})""",
-     """status.+?"code":\d{1,100}
+     """"resource"[^=]{1,2000}?location":"({region}[^"]{1,2000})""",
+     """"policyDelta"[^=]{1,2000}?"role":"roles\/({role}[^"\\\/]{1,2000})""",
+     """"status"[^=]{1,2000}?"code":\d{1,100}
 ```
