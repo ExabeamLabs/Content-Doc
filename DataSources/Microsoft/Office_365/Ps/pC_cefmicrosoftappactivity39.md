@@ -5,9 +5,9 @@ Name = cef-microsoft-app-activity-39
   Product = Office 365
   Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """"Operation":"MoveToDeletedItems"""" ]
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields} [
+    """fname=\s{0,100}({object}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """"ParentFolder":[^=]{1,2000}?"Path":"\\*({object}[^"]{1,2000})"""",
     """"DestFolder":[^=]{1,2000}?"Path":"\\*({object}[^"]{1,2000})"""",
-    """fname=\s{0,100}({object}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """"target_object":"({object}[^"]{1,2000}?)""""
     """sourceServiceName=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """requestMethod=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",   
