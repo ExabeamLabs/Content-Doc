@@ -9,6 +9,8 @@ Name = raw-process-created-1
   TimeFormat = "MMM dd HH:mm:ss yyyy"
   Conditions = ["""A new process has been created""", """Account Name:""" ]
   Fields = [
+    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+    """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
     """"timestamp":"({time}[^"]{1,2000})""",
     """"host":"({host}[^"]{1,2000})""",
     """({event_name}A new process has been created)""",
