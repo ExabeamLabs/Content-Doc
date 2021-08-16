@@ -34,6 +34,7 @@ json-microsoft-security-events = {
      """"{1,20}hostStates"{1,20}:[^}\]]{1,2000}?privateIpAddress"{1,20}:\s{0,100}"{1,20}({src_ip}[a-fA-F:\d.]{1,2000})""",
      """"{1,20}hostStates"{1,20}:[^}\]]{1,2000}?publicIpAddress"{1,20}:\s{0,100}"{1,20}({dest_ip}[a-fA-F:\d.]{1,2000})""",
      """"description": "An actor on\s{0,100}({src_host}\S+)\s{0,100}performed suspicious""",
+     """"fileStates":[^]]{1,2000}?"name":\s{1,100}"({file_name}[^."]{1,2000}([\.\w]{1,100})?)"""",
      ]
 
 ```
