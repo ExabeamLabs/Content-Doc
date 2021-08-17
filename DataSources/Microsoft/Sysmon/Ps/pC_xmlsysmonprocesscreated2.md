@@ -24,7 +24,8 @@ Name = xml-sysmon-process-created-2
     """<Data Name='SourceImage'>({parent_process}(({parent_directory}[^<]{0,2000})\\+)?({parent_process_name}[^<]{1,2000}?))</Data>""",
     """<Data Name='TargetImage'>({process}(({directory}[^<]{0,2000})\\+)?({process_name}[^<]{1,2000}?))</Data>""",
     """<Data Name='GrantedAccess'>({outcome}[^<]{1,2000})</Data>""",
-    """<EventID>({event_code}\d{1,100})"""
+    """<EventID>({event_code}\d{1,100})""",
+    """CallTrace:\s{0,20}({additional_info}[^<]{1,4000})</Message>"""
   ]
   DupFields = [ "directory->process_directory" ]
 }
