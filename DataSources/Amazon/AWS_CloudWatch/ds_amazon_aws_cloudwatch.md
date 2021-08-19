@@ -4,7 +4,7 @@ Product: AWS CloudWatch
 -----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  94   |   46   |     13     |      3      |    3    |
+|  91   |   46   |     13     |      3      |    3    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
