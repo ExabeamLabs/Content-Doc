@@ -11,7 +11,7 @@ Name = cef-okta-logs-app-activity
   Fields=[
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"published"\s{0,100}:\s{0,100}"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\d)""",
-    """"displayMessage"\s{0,100}:\s{0,100}"({event_name}[^"]{1,2000})""",
+    """"displayMessage"\s{0,100}:\s{0,100}"({event_name}(Kerberos[^",]{1,2000}user)|([^"]{1,2000}))""",
     """"eventType"\s{0,100}:\s{0,100}"({activity}[^"]{1,2000})""",
     """"legacyEventType":"({activity}[^"]{1,2000})"""",
     """actor":\s{0,100}\{[^\}]{1,2000}?alternateId":\s{0,100}"({user}[^"]{1,2000})",[^\}]{1,2000}?"type":\s{0,100}"User"""",
