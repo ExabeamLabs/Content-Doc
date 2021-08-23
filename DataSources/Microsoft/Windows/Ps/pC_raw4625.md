@@ -9,6 +9,7 @@ Name = raw-4625
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
     Conditions = ["An account failed to log on", "Failure Reason"]
     Fields = [
+      """\s({host}[\w-.]{1,2000})\s{0,100}Microsoft-Windows-Security-Auditing""",
       """EVENT_HOST="{1,100}({host}[\w.-]{1,2000})"""",
       """({event_name}An account failed to log on)""",
       """({event_code}4625)""",
@@ -28,7 +29,8 @@ Name = raw-4625
       """Source Network Address(:|=)\s{0,100}(?:-|(::ffff:)?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))[\s;]{0,2000}Source Port(:|=)""",
       """Logon Process(:|=)\s{0,100}({auth_process}[^\s;]{1,2000})[\s;]{0,2000}Authentication Package(:|=)""",
       """Authentication Package(:|=)\s{0,100}({auth_package}.+?)[\s;]{0,2000}Transited Services(:|=)""",
-      """(?i):\d{1,100}:\d{1,100}\s{1,100}(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(am|pm|\d{1,100}|({dest_host}[\w\-.]{1,2000})))\s"""
+      """(?i):\d{1,100}:\d{1,100}\s{1,100}(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(am|pm|\d{1,100}|({dest_host}[\w\-.]{1,2000})))\s""",
+      """EventType="({outcome}[^"]{1,2000})"""
     ]
     DupFields = ["host->dest_host","src_host_windows->src_host"]
   }
