@@ -5,6 +5,6 @@ Name = azure-security-center-security-alert
   Product = Azure Security Center
   DataType = "security-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """"category": "SQL.DB_PrincipalAnomaly"""", """"title": """, """"vendor": "Microsoft"""", """"provider": "ASC""""  ]
+  Conditions = [ """"category":""", """"SQL.DB_PrincipalAnomaly"""", """"title":""", """"vendor":""", """"Microsoft"""", """"provider":""", """"ASC""""  ]
 }
 ```

@@ -25,6 +25,9 @@ Name = raw-ssh-login
     """sshd\[({logon_id}\d{1,100})""",
     """({event_code}ssh)""",
     """\d{1,100}\s{1,100}\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}\w+>\s{1,100}<(::ffff:)?({dest_host}[\w\-.]{1,2000})""",
+    """(::ffff:)?"computer_name":"({host}[\w\-.]{1,2000})"""",
+    """(::ffff:)?"computer_name":"({dest_host}[\w\-.]{1,2000})""""
+
   ]
   DupFields = ["dest_host->original_dest_host"]
 }

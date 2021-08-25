@@ -5,7 +5,7 @@ Name = cef-security-graph-alert
  Product = Microsoft Azure Security Center
  DataType = "database-alert"
  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
- Conditions = [ """"category": "SQL.DB_GeoAnomaly"""", """"title": """, """"vendor": "Microsoft"""", """"provider": "ASC"""" ]
+ Conditions = [ """"category":""", """"SQL.DB_GeoAnomaly"""", """"title":""", """"vendor":""", """"Microsoft"""", """"provider":""", """"ASC"""" ]
  Fields = ${MicrosoftParserTemplates.json-microsoft-security-events.Fields} [
  """"securityResources":[\{"resource":"[^"]{1,2000}\/databases\/({database_name}[^"\/]{1,2000})","resourceType":""attacked""""
  """"Someone logged on to your SQL server \'({server_group}[^\']{1,2000})\' from an unusual location.""""

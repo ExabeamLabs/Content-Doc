@@ -10,6 +10,7 @@ Name = json-4768
     Conditions = [""":4768""", """"ServiceName":"""", """Pre-Authentication"""]
     Fields = [
       """({event_name}A Kerberos authentication ticket \(TGT\) was requested)""",
+      """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """"EventReceivedTime":\s{0,100}({time}\d{1,100})""",
       """"timestamp":\s{0,100}({time}\d{1,100})""",
