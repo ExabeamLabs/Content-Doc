@@ -7,6 +7,6 @@ Name = json-microsoft-o365-alert-10
   Lms = Splunk
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """"category": "InfectedDeviceLogin"""", """"title": """, """"vendor": "Microsoft"""", """"provider": "IPC"""" ]
+  Conditions = [ """"category":""", """"InfectedDeviceLogin"""", """"title":""", """"vendor":""", """"Microsoft"""", """"provider":""", """"IPC"""" ]
 }
 ```

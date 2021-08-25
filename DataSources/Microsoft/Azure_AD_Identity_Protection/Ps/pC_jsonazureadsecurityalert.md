@@ -7,7 +7,7 @@ Name = json-azure-ad-security-alert
   Lms = Splunk
   DataType = "security-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
-  Conditions = [ """"category": "UnfamiliarLocation"""", """"title": """, """"vendor": "Microsoft"""", """"provider": "IPC""""  ]
+  Conditions = [ """"category":""", """"UnfamiliarLocation"""", """"title":""", """"vendor":""", """"Microsoft"""", """"provider":""", """"IPC""""  ]
   Fields = [
      """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
      """"id":\s{0,100}"({alert_id}[^"]{1,2000})"""",

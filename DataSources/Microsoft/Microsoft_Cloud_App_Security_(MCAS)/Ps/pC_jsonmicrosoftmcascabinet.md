@@ -7,6 +7,6 @@ Name = json-microsoft-mcas-cabinet
   Lms = Splunk
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """"category": "MCAS_ALERT_CABINET_""", """"title": """, """"vendor": "Microsoft"""", """"provider": "MCAS"""" ]
+  Conditions = [ """"category":""", """"MCAS_ALERT_CABINET_""", """"title":""", """"vendor":""", """"Microsoft"""", """"provider":""", """"MCAS"""" ]
 }
 ```

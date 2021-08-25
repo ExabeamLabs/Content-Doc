@@ -7,6 +7,6 @@ Name = json-microsoft-o365-alert-5
   Lms = Splunk
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """"category": "CredentialAccess"""", """"title": """, """"vendor": "Microsoft"""", """"provider": "Microsoft Defender ATP"""" ]
+  Conditions = [ """"category":""", """"CredentialAccess"""", """"title":""", """"vendor":""", """"Microsoft"""", """"provider":""", """"Microsoft Defender ATP"""" ]
 }
 ```
