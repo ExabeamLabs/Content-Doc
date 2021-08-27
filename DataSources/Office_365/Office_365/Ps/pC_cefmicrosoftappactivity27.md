@@ -3,6 +3,6 @@
 {
 Name = cef-microsoft-app-activity-27
   Product = Office 365
-  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """flexString1=MemberRoleChanged""" ]
+  Conditions= [ """CEF:""", """destinationServiceName=Office 365""", """"MemberRoleChanged""" ]
 }
 ```

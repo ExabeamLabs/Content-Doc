@@ -4,7 +4,7 @@
 Name = cef-microsoft-app-activity-37
   Product = Office 365
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """dproc=Graph Directory Audit""" ]
+  Conditions = [ """CEF:""", """destinationServiceName=Office 365""", """"Add device""" ]
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields}[
     """\WsourceServiceName=(|({app}[^=]{1,2000}?))\s{1,100}(\w+=|$)""",
     """"result"{1,20}:"{1,20}({result}[^"]{1,2000})""",
