@@ -1,18 +1,17 @@
 #### Parser Content
 ```Java
 {
-Name = cef-microsoft-app-activity-39
+Name = cef-microsoft-app-activity-41
   Product = Office 365
-  Conditions= [ """CEF:""","""destinationServiceName=Office 365""", """"MoveToDeletedItems""" ]
+  Conditions= [ """CEF:""", """destinationServiceName=Office 365""", """"HardDelete""" ]
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields} [
-    """fname=\s{0,100}({object}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
-    """"ParentFolder":[^=]{1,2000}?"Path":"\\*({object}[^"]{1,2000})"""",
-    """"DestFolder":[^=]{1,2000}?"Path":"\\*({object}[^"]{1,2000})"""",
-    """"target_object":"({object}[^"]{1,2000}?)""""
-    """sourceServiceName=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
-    """requestMethod=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",   
-    """ext_userAgent_name=({resource}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
-    """({activity}MoveToDeletedItems)""" 
+    """"ParentFolder":[^\}]{1,2000}?"Path":"\\*({object}[^"]{1,2000})"""",
+    """"DestFolder":[^\}]{1,2000}?"Path":"\\*({object}[^"]{1,2000})"""",
+    """\srequest=({outcome}[^\s]{1,2000})\s""",
+    """"ClientIP":"({src_ip}[A-Fa-f:\d.]{1,2000})"""",
+    """"Operation":"({activity}[^"]{1,2000})"""",
+    """LogonUserSid":"({user_sid}[^"]{1,2000})"""",
+    """Subject":"\s{0,100}({subject}[^"]{1,2000}?)\s{0,100}"""",
   ]
 }
 cef-microsoft-app-activity = {

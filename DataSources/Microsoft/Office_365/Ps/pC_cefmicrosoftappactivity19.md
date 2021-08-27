@@ -3,7 +3,7 @@
 {
 Name = cef-microsoft-app-activity-19
   Product = Office 365
-  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|resource-deleted|""" ]
+  Conditions= [ """CEF:""", """destinationServiceName=Office 365""", """"FileDeleted""" ]
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields} [
     """"ParentFolder":[^\}]{1,2000}?"Path":"\\*({object}[^"]{1,2000})"""",
     """"DestFolder":[^\}]{1,2000}?"Path":"\\*({object}[^"]{1,2000})"""",

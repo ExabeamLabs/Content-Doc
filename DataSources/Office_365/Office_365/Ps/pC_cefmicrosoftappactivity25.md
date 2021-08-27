@@ -3,7 +3,7 @@
 {
 Name = cef-microsoft-app-activity-25
   Product = Office 365
-  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """flexString1=MemberAdded""" ]
+  Conditions= [ """CEF:""", """destinationServiceName=Office 365""", """"MemberAdded""" ]
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields}[
     """"UPN":"({object}[^"]{1,2000})""", 
     """"TeamName"{1,20}:"{1,20}({group}[^"]{1,2000})""",

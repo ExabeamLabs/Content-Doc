@@ -3,7 +3,7 @@
 {
 Name = cef-microsoft-app-activity-2
   Product = Office 365
-  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|authz-group-created|""" ]
+  Conditions= [ """CEF:""","""destinationServiceName=Office 365""", """"Add group""" ]
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields} [
     """"targetResources":[^\}]{1,2000}?"displayName":"({object}[^"]{1,2000})""""
   ]
