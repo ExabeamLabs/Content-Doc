@@ -30,8 +30,7 @@ Name = s-nac-failed-logon-2
     """ad.User=({user}[^\s]{1,2000})""",
     """NetworkDeviceName\\*=({network}[^,\s]{1,2000})"""
     """dvchost=({dest_host}[^\s]{1,2000})""",
-    """dvc=({dest_ip}[A-Fa-f:\d.]{1,2000})\s""",
-    
+    """dvc=({dest_ip}[A-Fa-f:\d.]{1,2000})\s""" 
   ]
   DupFields = ["dest_host->auth_server"]
 }
