@@ -7,7 +7,7 @@ Name = o365-inbox-activity
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = ["""destinationServiceName=Office 365""" , """SkyFormation Cloud Apps Security""" , """permissions-updated""", """"ResultStatus"""" , """Add-MailboxPermission"""]
+  Conditions = ["""destinationServiceName=Office 365""", """"ResultStatus"""" , """Add-MailboxPermission"""]
   Fields = [
      """"CreationTime":\s{0,100}"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
      """flexString1=({activity}[^\s]{0,2000})\srequest""",
