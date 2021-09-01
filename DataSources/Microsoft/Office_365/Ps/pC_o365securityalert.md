@@ -7,7 +7,7 @@ Name = o365-security-alert
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ """AlertTriggered""", """AlertType=""", """AlertId""", """destinationServiceName=Office 365"""]
+  Conditions = [ """AlertTriggered""", """"AlertType":""", """AlertId""", """destinationServiceName=Office 365"""]
   Fields = [
    """"(ts|CreationTime)":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
    """exabeam_host=({host}[^\s]{1,2000})""",

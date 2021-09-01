@@ -3,7 +3,7 @@
 {
 Name = cef-microsoft-app-activity-12
   Product = Office 365
-  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|user-updated|""" ]
+  Conditions= [ """CEF:""", """destinationServiceName=Office 365""", """"Update user""" ]
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields} [
     """"targetResources":[^\}]{1,2000}"userPrincipalName":"({object}[^"]{1,2000})""""
   ]

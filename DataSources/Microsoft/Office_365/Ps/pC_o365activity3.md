@@ -7,7 +7,7 @@ Name = o365-activity-3
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ """"Workload""", """flexString1Label=application-action""", """"Operation""" ]
+  Conditions = [ """"Workload""", """"Operation""", """destinationServiceName=Office 365""" ]
   Fields = [
     """"CreationTime\\*"{1,20}:[\s\\]{0,2000}"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[^\s]{1,2000})""",
@@ -18,7 +18,6 @@ Name = o365-activity-3
     """"UserId\\*"{1,20}:[\s\\"]{0,2000}"{1,20}[^"]{0,2000}?@([\.\w+]{1,2000}\.)?({email_domain}[^\.\s"]{1,2000}?\.[^\s"\.>]{1,2000})>?\s{0,100}"{1,20}""",
     """"UserId":"\\*"(?![^@"]{1,2000}?@[^\s"]{1,2000})({domain}[^"\\\/]{1,2000})[^"]{0,2000}?(Unknown|Sync|AirInvestigation|({user}[^"\\\/@\s]{1,2000}))\\"""",
     """"(Workload|Application|Client)\\*"{1,20}:[\s\\]{0,2000}"{1,20}({app}[^"\\]{0,2000})""",
-    """requestClientApplication=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\WdestinationServiceName\s{0,100}=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\WsourceServiceName=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """"ObjectId\\*"{1,20}:"?[\s\\]{0,2000}"{1,20}(Unknown|Not Available|({object}[^"\\]{0,2000}))""",

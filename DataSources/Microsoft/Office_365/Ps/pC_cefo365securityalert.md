@@ -7,7 +7,7 @@ Name = cef-o365-security-alert
   Lms = ArcSight
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """|security-threat-detected|""", """cat=security-alert""", """destinationServiceName=Office 365""","""Security Alert Detected""", """act=detect""" ]
+  Conditions = [ """destinationServiceName=Office 365""", """"detectedDateTime":"""", """dproc=graph-identity-protection-risk-detection""" ]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d{1,100}Z\s{1,100}[\w\-.]{1,2000}\s{1,100}Skyformation"""

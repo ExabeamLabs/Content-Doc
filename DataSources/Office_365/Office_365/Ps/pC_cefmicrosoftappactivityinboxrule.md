@@ -3,7 +3,7 @@
 {
 Name = cef-microsoft-app-activity-inbox-rule
   Product = Office 365
-  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|resource-property-updated|""", """"New-InboxRule"""" ]
+  Conditions= [ """CEF:""", """destinationServiceName=Office 365""", """"New-InboxRule"""" ]
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields}[
     """"(?i)({activity}ForwardTo|delivertomailboxandforward)""""
     """"ForwardTo":"{1,20}(smtp:)?({target}[^"]{1,2000}@({target_domain}[^"]{1,2000}))""""

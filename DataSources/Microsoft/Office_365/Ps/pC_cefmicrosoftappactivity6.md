@@ -3,6 +3,6 @@
 {
 Name = cef-microsoft-app-activity-6
   Product = Office 365
-  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Office 365""", """|authz-group-updated|""" ]
+  Conditions= [ """CEF:""", """destinationServiceName=Office 365""", """"Update group""" ]
 }
 ```

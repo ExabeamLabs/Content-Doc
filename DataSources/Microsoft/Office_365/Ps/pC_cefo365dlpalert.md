@@ -7,7 +7,7 @@ Name = cef-o365-dlp-alert
   Lms = Direct
   DataType = "dlp-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ """|security-threat-detected|""", """flexString1=DlpRuleMatch""" , """destinationServiceName=Office 365"""]
+  Conditions = [ """"Operation":"DlpRuleMatch"""" , """destinationServiceName=Office 365"""]
   Fields = [
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """ext_CreationTime=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
