@@ -8,7 +8,7 @@ Name = cef-cisco-dns-response
   DataType = "dns-response"
   IsHVF = true
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = ["""requestClientApplication=Cisco_Umbrella""", """ext_action=""","""ext_queryType="""]
+  Conditions = ["""requestClientApplication=Cisco_Umbrella""", """"action"""",""""queryType""""]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"responseCode":"({dns_response_code}[^"]{1,2000})"""",

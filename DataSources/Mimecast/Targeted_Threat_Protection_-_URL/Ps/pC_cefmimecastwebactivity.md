@@ -8,9 +8,10 @@ Name = cef-mimecast-web-activity
   DataType = "web-activity"
   IsHVF = true
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """dproc=TTP URL Logs""", """"action":"""" ]
+  Conditions = ["""CEF:""", """destinationServiceName=Mimecast Email Security""", """"action":"""", """"url":"""", """"category":""" ]
   Fields = [
     """"date":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100})""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"userEmailAddress":"({user_email}[^\s@"]{1,2000}@[^\s@"]{1,2000})""",
     """"action":"({action}[^"]{1,2000})""",
     """"category":"(Unknown|({category}[^"]{1,2000}))""",

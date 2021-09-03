@@ -14,7 +14,7 @@ Name = crowdstrike-config-change
       """"event_simpleName":"({activity}[^"]{1,2000})""",
       """"aid":"({aid}[^"]{1,2000})""",
       """"FirewallRule":"({object}[^"]{1,2000})""",
-      """ext_UserName=({user}[^\s"]{1,2000})\s{1,100}(\w+=|$)""",
+      """"UserName":"({user}[^"]{1,2000})"""",
       """src-account-name":"({account_name}[^"]{1,2000})""",
     ]
     DupFields = ["activity->event_code"]
