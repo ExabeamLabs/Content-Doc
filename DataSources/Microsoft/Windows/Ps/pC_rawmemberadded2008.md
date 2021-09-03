@@ -41,7 +41,8 @@ Name = raw-member-added-2008
     """"SubjectLogonId":"({logon_id}[^\s"]{1,2000})""",
     """"TargetSid":"({group_id}[^\s"]{1,2000})""",
     """"data\.system_name":"({host}[^"]{1,2000})"""",
-    """"data\.id":"({event_code}\d{1,100})""""
+    """"data\.id":"({event_code}\d{1,100})"""",
+    """EventType="{0,100}({outcome}[^"\s]{1,2000})"""
   ]
   DupFields = [ "host->dest_host" ]
 }
