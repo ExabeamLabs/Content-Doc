@@ -2,6 +2,6 @@
 ```Java
 {
 Name = cef-servicenow-login-failed
-  Conditions = [ """CEF:""", """|Skyformation|""", """destinationServiceName=ServiceNow""", """"name":"login.failed"""" ]
+  Conditions = [ """destinationServiceName=ServiceNow""", """"name":"login.failed"""" ]
 }
 ```
