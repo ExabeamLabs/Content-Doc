@@ -17,7 +17,6 @@ Name = raw-pan-vpn-start
     """globalprotectgateway-\S+?,({host}[\w.-]{1,2000}?),""",
     """SYSTEM,({vpn_client}[^,]{1,2000}),""",
     """Source region:\s{0,100}({src_country}[^,]{1,2000})""",
-    """:\d\d:\d\d (-|({host}[\w.-]{1,2000}))\s"""
-  ]
-}
+    """:\d\d:\d\d (-|({host}[\w.-]{1,2000}))\s""",
+    """SYSTEM,([^,]{0,2000}
 ```
