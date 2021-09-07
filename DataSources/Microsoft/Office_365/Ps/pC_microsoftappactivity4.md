@@ -9,7 +9,7 @@ Name = microsoft-app-activity-4
 }
 microsoft-app-activity-3 = {
     Vendor = Microsoft
-    Product = Microsoft Office 365
+    Product = Office 365
     Lms = Direct
     DataType = "app-activity"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
