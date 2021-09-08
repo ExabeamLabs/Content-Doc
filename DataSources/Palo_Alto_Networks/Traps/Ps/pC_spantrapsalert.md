@@ -12,7 +12,6 @@ Name = s-pantraps-alert
     """\w+ \d\d \d\d:\d\d:\d\d ({host}[^\s]{1,2000})\s{0,100}Palo""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """User: (({domain}[^\\]{1,2000})\\)?({user}[^,]{1,2000})""",
-    """from Computer: ({src_host}[^,]{1,2000})""",
     """eventID=({alert_name}[^\s]{1,2000}) \w+="""
     """Module Name: ({alert_type}[^,]{1,2000}),"""
     """sev=({alert_severity}\d{1,100})"""
