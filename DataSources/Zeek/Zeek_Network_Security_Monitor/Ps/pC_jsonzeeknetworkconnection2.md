@@ -1,18 +1,15 @@
 #### Parser Content
 ```Java
 {
-Name = json-zeek-kerberos
+Name = json-zeek-network-connection-2
   Product = Zeek Network Security Monitor
-  DataType = "remote-access"
-  Conditions = [ """ zeek_kerberos """, """"id.orig_h""", """"id.resp_h""" ]
+  DataType = "network-connection"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
+  Conditions = [ """"_path":"dpd""",""""id.orig_h":"""",""""uid":"""",""""id.resp_p":""" ]
   Fields = ${BroParserTemplates.json-zeek-activity.Fields}[
-    """"client\\?"{1,20}:\\?"{1,20}({user}[^"\\]{1,2000})""",
-    """"request_type\\?"{1,20}:\\?"{1,20}({request_type}[^"\\]{1,2000})""",
-    """"client\\?"{1,20}:\\?"{1,20}({user}[^"\/\\]{1,2000})(\/({domain}[^"\\]{1,2000}))?""",
-    """"service\\?"{1,20}:\\?"{1,20}({service_name}[^"\/\\@]{1,2000})""",
-    """"success\\?"{1,20}:({outcome}\w+)""",
-    """"cipher\\?"{1,20}:\\?"{1,20}({ticket_encryption_type}[^"\\]{1,2000})"""
+    """"ts":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)"""",
   ]
+
 }
 json-zeek-activity = {
   Vendor = Zeek
