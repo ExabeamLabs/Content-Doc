@@ -3,7 +3,7 @@
 {
 Name = cef-netskope-app-activity-40
   DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"UPDATE_GROUP_MEMBER"""" ]
+  Conditions = [ """"type":"""", """destinationServiceName=Netskope""", """"activity":"UPDATE_GROUP_MEMBER"""" ]
   DupFields = [ "activity->accesses", "object->file_name" ]
 }
 ```

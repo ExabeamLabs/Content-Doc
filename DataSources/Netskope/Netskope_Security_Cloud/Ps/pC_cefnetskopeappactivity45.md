@@ -3,6 +3,6 @@
 {
 Name = cef-netskope-app-activity-45
   DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"PutObject"""" ]
+  Conditions = [ """"type":"""", """destinationServiceName=Netskope""", """"activity":"PutObject"""" ]
 }
 ```

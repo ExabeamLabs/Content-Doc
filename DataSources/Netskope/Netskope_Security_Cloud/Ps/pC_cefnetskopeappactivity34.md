@@ -3,7 +3,7 @@
 {
 Name = cef-netskope-app-activity-34
   DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"DRIVE_DATA_RESTORE"""" ]
+  Conditions = [ """"type":"""", """destinationServiceName=Netskope""", """"activity":"DRIVE_DATA_RESTORE"""" ]
   DupFields = [ "activity->accesses", "object->file_name" ]
 }
 ```
