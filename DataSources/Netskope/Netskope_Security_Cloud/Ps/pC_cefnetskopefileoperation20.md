@@ -3,7 +3,7 @@
 {
 Name = cef-netskope-file-operation-20
   DataType = "file-operations"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName=Netskope""", """"activity":"ListCreated"""" ]
+  Conditions = [ """"type":"""", """destinationServiceName=Netskope""", """"activity":"ListCreated"""" ]
   DupFields = [ "activity->accesses", "object->file_name" ]
 }
 ```
