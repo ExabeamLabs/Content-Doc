@@ -1,17 +1,17 @@
 Vendor: Microsoft
 =================
-Product: Microsoft Defender ATP
--------------------------------
+Product: Defender Antivirus
+---------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |  26   |   11   |     5      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  security-alert<br> ↳[defender-atp-security-alert-8](Ps/pC_defenderatpsecurityalert8.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>T1059.001 - Command and Scripting Interperter: PowerShell<br>T1078 - Valid Accounts<br> | [<ul><li>18 Rules</li></ul><ul><li>8 Models</li></ul>](RM/r_m_microsoft_microsoft_defender_atp_Compromised_Credentials.md) |
-|        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  security-alert<br> ↳[defender-atp-security-alert-8](Ps/pC_defenderatpsecurityalert8.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_microsoft_microsoft_defender_atp_Lateral_Movement.md)    |
-|    [Malware](../../../UseCases/uc_malware.md)    |  security-alert<br> ↳[defender-atp-security-alert-8](Ps/pC_defenderatpsecurityalert8.md)<br> | T1078 - Valid Accounts<br>T1204 - User Execution<br>    | [<ul><li>6 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_microsoft_microsoft_defender_atp_Malware.md)    |
-|     [Privileged Activity](../../../UseCases/uc_privileged_activity.md)     |  security-alert<br> ↳[defender-atp-security-alert-8](Ps/pC_defenderatpsecurityalert8.md)<br> | T1068 - Exploitation for Privilege Escalation<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_microsoft_microsoft_defender_atp_Privileged_Activity.md)    |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  security-alert<br> ↳[raw-defender-av-1116](Ps/pC_rawdefenderav1116.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>T1059.001 - Command and Scripting Interperter: PowerShell<br>T1078 - Valid Accounts<br> | [<ul><li>18 Rules</li></ul><ul><li>8 Models</li></ul>](RM/r_m_microsoft_defender_antivirus_Compromised_Credentials.md) |
+|        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  security-alert<br> ↳[raw-defender-av-1116](Ps/pC_rawdefenderav1116.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_microsoft_defender_antivirus_Lateral_Movement.md)    |
+|    [Malware](../../../UseCases/uc_malware.md)    |  security-alert<br> ↳[raw-defender-av-1116](Ps/pC_rawdefenderav1116.md)<br> | T1078 - Valid Accounts<br>T1204 - User Execution<br>    | [<ul><li>6 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_microsoft_defender_antivirus_Malware.md)    |
+|     [Privileged Activity](../../../UseCases/uc_privileged_activity.md)     |  security-alert<br> ↳[raw-defender-av-1116](Ps/pC_rawdefenderav1116.md)<br> | T1068 - Exploitation for Privilege Escalation<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_microsoft_defender_antivirus_Privileged_Activity.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

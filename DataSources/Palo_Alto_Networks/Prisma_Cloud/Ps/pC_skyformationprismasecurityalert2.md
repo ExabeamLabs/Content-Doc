@@ -7,7 +7,7 @@ Name = skyformation-prisma-security-alert-2
  Lms = Direct
  DataType = "alert"
  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
- Conditions = [ """|Skyformation|""", """destinationServiceName=""", """"service":"Prisma Cloud"""", """"policy":""", """"policyType":""" ]
+ Conditions = [  """destinationServiceName=""", """"service":"Prisma Cloud"""", """"policy":""", """"policyType":""" ]
  Fields = [
    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S{1,2000})""",
    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d{1,100}Z)\s[\w\-.]{1,2000}\s{1,100}Skyformation""",
