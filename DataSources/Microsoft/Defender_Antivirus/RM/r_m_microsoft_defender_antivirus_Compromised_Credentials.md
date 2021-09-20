@@ -1,6 +1,6 @@
 Vendor: Microsoft
 =================
-### Product: [Microsoft Defender ATP](../ds_microsoft_microsoft_defender_atp.md)
+### Product: [Defender Antivirus](../ds_microsoft_defender_antivirus.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |

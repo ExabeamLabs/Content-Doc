@@ -1,6 +1,6 @@
 Vendor: Microsoft
 =================
-### Product: [Microsoft Defender ATP](../ds_microsoft_microsoft_defender_atp.md)
+### Product: [Defender Antivirus](../ds_microsoft_defender_antivirus.md)
 ### Use-Case: [Lateral Movement](../../../../UseCases/uc_lateral_movement.md)
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |

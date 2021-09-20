@@ -2,7 +2,7 @@
 ```Java
 {
 Name = defender-atp-security-alert-8
-  Product = Microsoft Defender ATP
+  Product = Defender ATP
   DataType = "security-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
   Conditions = [ """"category":"Malware"""", """"title":""", """"vendor":"Microsoft"""", """"provider":"Microsoft Defender ATP"""" ]
