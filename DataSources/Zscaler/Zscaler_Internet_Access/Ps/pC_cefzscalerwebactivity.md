@@ -39,8 +39,8 @@ Name = cef-zscaler-web-activity
     """\scn1=({risk_level}\d{1,100})""",
     """reqsize=({bytes_out}\d{1,100})""",
     """respsize=({bytes_in}\d{1,100})""",
-    """\sout=({bytes_in}\d{1,100})""",
-    """\sin=({bytes_out}\d{1,100})""",
+    """\sout=({bytes_out}\d{1,100})""",
+    """\sin=({bytes_in}\d{1,100})""",
     """\scat=({category}[^=]{1,2000}?)\s{0,20}\w+=""",
     """\sfileType=(None|({mime}[^=]{1,2000}?))\s{0,100}(\w+=|$)""",
     """\soutcome=({result_code}\d{1,100})""",
@@ -51,7 +51,7 @@ Name = cef-zscaler-web-activity
     """\scs5=(None|({threat_name}[^=]{1,2000}?))\s{0,100}(\w+=|$)""",
     """\scs6=(None|({dlp_engine}[^=]{1,2000}?))\s{0,100}(\w+=|$)""",
     """sourcehost=(NA|None|\$NULL|({src_host}[^=]{1,2000}?))\s{1,100}destinationhost=""",
-    """devicehostname=({src_host}[^\s"]{1,2000}?)\s{0,100}(\w+=|$)""",
+    """devicehostname=(NA|({src_host}[^\s"]{1,2000}?))\s{0,100}(\w+=|$)""",
     """ZscalerNSSWeblogDLPDictionaries=(None|({web_log_dict}[^=]{1,2000}?))\s{0,100}([\w.]{1,2000}=|$)"""
   ]
   DupFields = ["ransomware_name->threat_category", "risk_level->suspicious_content"]

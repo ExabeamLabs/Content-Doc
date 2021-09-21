@@ -20,8 +20,12 @@ Name = oracle-db-login
     """"username\\?"{1,20}:\\?"{1,20}({db_user}[^"\\]{1,2000})""",
     """"os_username\\?"{1,20}:\\?"{1,20}({os_user}[^"\\]{1,2000})""",
     """PROTOCOL=({protocol}\w+)""",
-    """"returncode\\?"{1,20}:\\?"{1,20}({return_code}[^"\\]{1,2000})"""
+    """"returncode\\?"{1,20}:\\?"{1,20}({return_code}[^"\\]{1,2000})""",
+    """"exa_jdbc_database":"({database_name}[^"]{1,2000})"""",
+    """"exa_jdbc_type":"({app}[^"]{1,2000})"""",
+    """"exa_jdbc_hostname":"({dest_host}[^"]{1,2000})"""",
+    """"exa_jdbc_port":"({dest_port}\d{1,100})""""
   ]
-  DupFields = [ "database_id->database_name", "os_user->user", "db_user->account" ]
+  DupFields = [ "os_user->user", "db_user->account" ]
 }
 ```
