@@ -22,7 +22,7 @@ windows-kinesis-firehose = {
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Fields = [
     """"EventId":({event_code}\d{1,5})"""
-    """"MachineName":"({host}[^"]+)"""",
+    """"MachineName":"({host}[^"]{1,2000})"""",
     """"TimeCreated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""
   ]
 
