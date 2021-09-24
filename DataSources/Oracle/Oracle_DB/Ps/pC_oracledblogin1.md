@@ -10,7 +10,7 @@ Name = oracle-db-login-1
   Conditions = [ """Oracle Audit""", """ACTION:""", """USERID:""", """LENGTH:""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """({host}[\w\-.]{1,2000})\s{1,100}Oracle Audit""",
+    """\d\d:\d\d:\d\d\s({host}[^\s]{1,2000})""",
     """SESSIONID:\[\d{1,100}\]\s{0,100}"{1,20}({session_id}[^":]{1,2000})""",
     """USERID:\[\d{1,100}\]\s{0,100}"{1,20}({db_user}[^":]{1,2000})""",
     """USERHOST:\[\d{1,100}\]\s{0,100}"{1,20}({src_host}[^":]{1,2000})""",
