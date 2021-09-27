@@ -10,8 +10,10 @@ Name = raw-ssh-login
   Conditions = [ """ssh""", """Accepted """, """ for """, """ from """ ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}[^\s]{1,2000})""",
-    """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?(({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})|({dest_host}[^\s]{1,2000}))""",
+    """exabeam_host=(gcs-topic|([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}[^\s]{1,2000}))""",
+    """exabeam_host=(gcs-topic|([^=]{1,2000}@\s{0,100})?(::ffff:)?(({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})|({dest_host}[^\s]{1,2000})))""",
+    """"host":"({dest_host}({host}[^"]+))""""
+    """"host":\{"name":"({dest_host}({host}[^"]+))""""
     """<({time}\d{1,100}\s{1,100}\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100})\s""",
     """\d\d:\d\d:\d\d \d\d\d\d ({host}[^\s]{1,2000})""",
     """\d\d:\d\d:\d\d \d\d\d\d ({dest_host}[^\s]{1,2000})""",
