@@ -7,8 +7,8 @@ Name = cef-microsoft-app-activity-25
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields}[
     """"UPN":"({object}[^"]{1,2000})""", 
     """"TeamName"{1,20}:"{1,20}({group}[^"]{1,2000})""",
-]
-}
+    """"Workload"{1,20}:"{1,20}({app}[^"]{1,2000})"""
+    """"Key"{1,20}:"{1,20}ClientName"{1,20}
 cef-microsoft-app-activity = {
   Vendor = Microsoft
   Lms = ArcSight
