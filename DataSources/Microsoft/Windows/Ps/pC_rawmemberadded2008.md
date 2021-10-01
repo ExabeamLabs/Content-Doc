@@ -15,7 +15,7 @@ Name = raw-member-added-2008
     """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
     """({time}\w+ \d{1,100} \d{1,100}:\d{1,100}:\d{1,100} \d{4})\s{1,100}47\d\d\s{1,100}Microsoft""",
     """"_raw":"({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d (AM|PM|am|pm))""",
-    """exabeam_host=({host}[\w\-.]{1,2000})""",
+    """exabeam_host=(gcs-topic|({host}[\w\-.]{1,2000}))""",
     """exabeam_source=({host}[A-Fa-f:\d.]{1,2000})""",
     """\s(?i)(((audit|success)( |_)(success|audit))|information)(\s{1,100}|,)({host}[\w.\-]{1,2000})""",
     """ComputerName\\=({host}[\w\-.]{1,2000})""",

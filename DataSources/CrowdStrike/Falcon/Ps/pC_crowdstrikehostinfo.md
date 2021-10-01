@@ -9,7 +9,7 @@ Name = crowdstrike-host-info
     TimeFormat = "epoch"
     Conditions = [ """"event_simpleName":"HostInfo"""", """"aid"""" ]
     Fields = [
-      """"timestamp":"({time}\d{1,100})""",
+      """"timestamp":"({time}\d{1,100})"""",
       """"{1,20}MachineDn"{1,20}:"{1,20}CN\\*(=|u003d)?({dest_host}[^,]{1,2000})""",   
       """"aid":"({aid}[^"]{1,2000})""",
       """"event_simpleName":"({event_code}[^"]{1,2000})""",

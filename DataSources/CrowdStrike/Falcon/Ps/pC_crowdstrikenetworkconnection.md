@@ -11,7 +11,7 @@ Name = crowdstrike-network-connection
     Fields = [
       """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
       """hostname":"({host}[^"]{1,2000})"""",
-      """"timestamp":"({time}\d{1,100})""",
+      """"timestamp":"({time}\d{1,100})"""",
       """"event_simpleName":"({event_code}[^"]{1,2000})""",
       """"aid":"({aid}[^"]{1,2000})""",
       """"name":"({event_name}[^"]{1,2000})"""",
