@@ -26,7 +26,7 @@ crowdstrike-auth-activity = {
     """"CommandLine\\*"{1,20}:\\*"{1,20}\s{0,100}({command_line}.+?)\s{0,100}["\\]""",
     """"TargetProcessId\\*"{1,20}:\\*"{1,20}({pid}[^"\\]{1,2000})""",
     """"name\\*"{1,20}:\\*"{1,20}({name}[^"\\]{1,2000})""",
-    """"(ImageFileName|TargetFileName)\\*"{1,20}:\\*"{1,20}(({file_path}[^"]{1,2000}))""",
+    """"(ImageFileName|TargetFileName)\\*"{1,20}:\\*"{1,20}(({file_path}[^"]{1,2000}?))\\{0,20}"""",
     """"(ImageFileName|TargetFileName)\\*"{1,20}:\\*"{1,20}({file_parent}[^"]{0,2000}[\\\/]{1,2000})({file_name}[^\\\/"]{1,2000}\.({file_ext}[^\\\/"]{1,2000}))""",
     """"ConfigStateHash\\*"{1,20}:\\*"{1,20}({old_hash}[^\\"]{1,2000})""",
     """"ContextProcessId\\*"{1,20}:\\*"{1,20}({process_guid}[^\\"]{1,2000})""",

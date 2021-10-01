@@ -9,7 +9,9 @@ Name = raw-4724
     TimeFormat = "MMM dd HH:mm:ss yyyy"
     Conditions = [ "An attempt was made to reset an account's password" ]
     Fields = [
-      """exabeam_host=({host}[\w.\-]{1,2000})""",
+      """exabeam_host=(gcs-topic|({host}[\w.\-]{1,2000}))""",
+      """"agent_hostname":"({host}[^"]{1,200})"""",
+      """"computer":"({host}[^"]{1,200})"""",
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""",
       """<\d{1,100}>(?i)\w+\s{0,100}\d{1,100}\s{0,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(am\s{1,100}|pm\s{1,100})?(::ffff:)?({host}[\w\-.]{1,2000})\s"""
