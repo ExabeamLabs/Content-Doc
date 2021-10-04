@@ -1,11 +1,11 @@
 Vendor: Bitdefender
 ===================
-### Product: [Bitdefender](../ds_bitdefender_bitdefender.md)
+### Product: [GravityZone](../ds_bitdefender_gravityzone.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   0    |     1      |      2      |    2    |
+|   2   |   0    |     1      |      3      |    3    |
 
 | Event Type | Rules                                                                                                                                                                             | Models |
 | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |

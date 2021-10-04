@@ -1,11 +1,11 @@
 Vendor: Bitdefender
 ===================
-### Product: [Bitdefender GravityZone](../ds_bitdefender_bitdefender_gravityzone.md)
+### Product: [GravityZone](../ds_bitdefender_gravityzone.md)
 ### Use-Case: [Phishing](../../../../UseCases/uc_phishing.md)
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     2      |      2      |    2    |
+|   1   |   0    |     2      |      3      |    3    |
 
 | Event Type          | Rules                                                                                                                                                                                                   | Models |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |

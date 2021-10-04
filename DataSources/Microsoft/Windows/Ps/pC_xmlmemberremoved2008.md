@@ -6,7 +6,7 @@ Name = xml-member-removed-2008
   Product = Windows
   Lms = Splunk
   DataType = "windows-member-removed"
-  TimeFormat = "yyyy-MM-DD'T'HH:mm:ss.SSS"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
   Conditions = [ "Security ID:", "Logon ID:", "A member was removed from a security-enabled", "<EventID>"]
   Fields = [
     """({event_name}A member was removed from a security-enabled [\w\s]{1,2000} group)""",

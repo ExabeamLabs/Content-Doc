@@ -5,6 +5,6 @@ Vendor: Snowflake
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   0   |   0    |     0      |      2      |    2    |
+|   0   |   0    |     0      |      3      |    3    |
 
 | Event Type | Rules | Models || ---------- | ----- | ------ |
