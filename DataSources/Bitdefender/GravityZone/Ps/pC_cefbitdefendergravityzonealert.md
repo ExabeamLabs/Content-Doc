@@ -3,7 +3,7 @@
 {
 Name = cef-bitdefender-gravityzone-alert
   Vendor = Bitdefender
-  Product = Bitdefender GravityZone
+  Product = GravityZone
   Lms = Direct
   DataType = "alert"
   TimeFormat = "MMM dd yyyy HH:mm:ss"

@@ -3,7 +3,7 @@
 {
 Name = gravityzone-web-activity-denied
   Vendor = Bitdefender
-  Product = Bitdefender GravityZone
+  Product = GravityZone
   Lms = Direct
   DataType = "web-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
