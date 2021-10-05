@@ -9,9 +9,8 @@ Name = fortinet-network-connection
   TimeFormat = "epoch"
   Conditions = [ """type=""", """traffic""", """action=""", """service=""", """date=""" ]
   Fields = [
-    """\Wdate=({time}\d\d\d\d-\d\d-\d\d time\=\d\d:\d\d:\d\d)""",
-    """eventtime=({time}\d{1,20})""",
-    """\Wdevname="{0,20}({host}[^"]{1,2000}?)"{0,20}(\s{1,100}\w{1,100}=|\s{0,100}$)""",
+    """eventtime=({time}\d{1,10})""",
+    """\Wdevname="?({host}[^"]{1,2000}?)"?(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wsrcip=({src_ip}[a-fA-F\d.:]{1,2000})""",
     """\Wdstip=({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """\Wsrcport=({src_port}\d{1,100})""",

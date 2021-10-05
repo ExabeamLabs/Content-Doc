@@ -4,7 +4,7 @@ Product: Zeek Network Security Monitor
 --------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  310  |  129   |     43     |     24      |   24    |
+|  311  |  129   |     43     |     24      |   24    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

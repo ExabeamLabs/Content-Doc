@@ -4,7 +4,7 @@ Product: OneSpan
 ----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  27   |   4    |     9      |      1      |    1    |
+|  28   |   4    |     9      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
@@ -12,7 +12,7 @@ Product: OneSpan
 |    [Brute Force Attack](../../../UseCases/uc_brute_force_attack.md)    |  failed-logon<br> ↳[onespan-failed-logon](Ps/pC_onespanfailedlogon.md)<br> | T1021.001 - Remote Services: Remote Desktop Protocol<br>T1110 - Brute Force<br>    | [<ul><li>8 Rules</li></ul>](RM/r_m_onespan_onespan_Brute_Force_Attack.md)    |
 |          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  failed-logon<br> ↳[onespan-failed-logon](Ps/pC_onespanfailedlogon.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_onespan_onespan_Compromised_Credentials.md)          |
 |    [Evasion](../../../UseCases/uc_evasion.md)    |  failed-logon<br> ↳[onespan-failed-logon](Ps/pC_onespanfailedlogon.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_onespan_onespan_Evasion.md)    |
-|    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  failed-logon<br> ↳[onespan-failed-logon](Ps/pC_onespanfailedlogon.md)<br> | T1021.001 - Remote Services: Remote Desktop Protocol<br>T1078 - Valid Accounts<br>T1110 - Brute Force<br>T1550.002 - Use Alternate Authentication Material: Pass the Hash<br>T1550.003 - Use Alternate Authentication Material: Pass the Ticket<br>T1550.004 - Use Alternate Authentication Material: Web Session Cookie<br> | [<ul><li>12 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_onespan_onespan_Lateral_Movement.md)    |
+|    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  failed-logon<br> ↳[onespan-failed-logon](Ps/pC_onespanfailedlogon.md)<br> | T1021.001 - Remote Services: Remote Desktop Protocol<br>T1078 - Valid Accounts<br>T1110 - Brute Force<br>T1550.002 - Use Alternate Authentication Material: Pass the Hash<br>T1550.003 - Use Alternate Authentication Material: Pass the Ticket<br>T1550.004 - Use Alternate Authentication Material: Web Session Cookie<br> | [<ul><li>13 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_onespan_onespan_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  failed-logon<br> ↳[onespan-failed-logon](Ps/pC_onespanfailedlogon.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>T1210 - Exploitation of Remote Services<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_onespan_onespan_Malware.md)    |
 |    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  failed-logon<br> ↳[onespan-failed-logon](Ps/pC_onespanfailedlogon.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_onespan_onespan_Privilege_Abuse.md)    |
 |    [Privilege Escalation](../../../UseCases/uc_privilege_escalation.md)    |  failed-logon<br> ↳[onespan-failed-logon](Ps/pC_onespanfailedlogon.md)<br> | T1210 - Exploitation of Remote Services<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_onespan_onespan_Privilege_Escalation.md)    |
