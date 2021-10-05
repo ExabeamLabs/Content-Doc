@@ -4,7 +4,7 @@ Product: Centrify Authentication Service
 ----------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  91   |   36   |     16     |      6      |    6    |
+|  92   |   36   |     16     |      6      |    6    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -4,7 +4,7 @@ Product: ESET Endpoint Security
 -------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  123  |   38   |     20     |      6      |    6    |
+|  124  |   38   |     20     |      6      |    6    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

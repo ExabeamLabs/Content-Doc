@@ -203,9 +203,9 @@
             "score": 13
         }, 
         {
-            "comment": "26 rules", 
+            "comment": "27 rules", 
             "techniqueID": "T1027.005", 
-            "score": 26
+            "score": 27
         }, 
         {
             "comment": "2 rules", 
@@ -398,9 +398,9 @@
             "score": 2
         }, 
         {
-            "comment": "36 rules", 
+            "comment": "37 rules", 
             "techniqueID": "T1027", 
-            "score": 36
+            "score": 37
         }, 
         {
             "comment": "1 rules", 

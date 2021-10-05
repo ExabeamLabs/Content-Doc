@@ -4,7 +4,7 @@ Product: Cisco Adaptive Security Appliance
 ------------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  601  |  131   |    122     |     13      |   13    |
+|  602  |  131   |    122     |     13      |   13    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

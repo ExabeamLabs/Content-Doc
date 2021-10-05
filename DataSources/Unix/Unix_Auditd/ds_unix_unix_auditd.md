@@ -4,7 +4,7 @@ Product: Unix Auditd
 --------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  565  |  114   |    110     |     16      |   16    |
+|  566  |  114   |    110     |     16      |   16    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
