@@ -10,6 +10,6 @@ Name = pan-virus-alert
   Conditions = [ """,THREAT,virus,""" ]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
-    """"host":\{.*?"name":"({host}[^"]{1,2000})".*?\}""",
+    """"host":\{[^=]{0,2000}?"name":"({host}[^"]{1,2000})"[^=]{0,2000}?\}""",
     """({host}[\w\-\.]{1,2000})\s{1,100}\d{1,100}
 ```
