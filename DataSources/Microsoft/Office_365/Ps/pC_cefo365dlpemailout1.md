@@ -7,7 +7,7 @@ Name = cef-O365-dlp-email-out-1
   Lms = ArcSight
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
-  Conditions = [ """ToAddress\\=""", """Subject\\=""", """type\\=EmailMessage""", """FromName\\=""", """FromAddress\\="""]
+  Conditions = [ """ToAddress\=""", """Subject\=""", """type\=EmailMessage""", """FromName\=""", """FromAddress\="""]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """\Wsuser=({sender}[^@]{1,2000}@({external_domain_sender}[^@\s]{1,2000}))""",
