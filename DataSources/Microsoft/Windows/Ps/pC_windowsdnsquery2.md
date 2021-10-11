@@ -27,5 +27,5 @@ windows-dns = {
     """\sQuestion Type=({query_type}[^\t]{1,2000})""",
     """\sQuestion Name=({query}[^\t"]{1,2000})"""
   ]
-
+}
 ```

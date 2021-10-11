@@ -34,5 +34,14 @@ cef-netskope-alert = {
     """"url":"({malware_url}[^"]{1,2000})""",
     """"userip":"({src_ip}[A-Fa-f:\d.]{1,2000})"""
   ]
-
+  SOAR {
+    IncidentType = "malware"
+    DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->malwareName", "src_host->malwareVictimHost", "alert_type->description", "malware_url->malwareAttackerUrl"]
+    NameTemplate = """Netskope Alert ${alert_name} found"""
+    ProjectName = "SOC"
+    EntityFields = [
+      {EntityType="device", Name="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]},
+      {EntityType="user", Name="windows_id", Fields=["user->windows_id"]},
+    ]
+ 
 ```

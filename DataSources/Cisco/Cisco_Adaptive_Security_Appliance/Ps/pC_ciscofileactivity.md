@@ -22,5 +22,9 @@ Name = cisco-file-activity
     """Client:\s{0,100}({user_agent}[^,]{1,2000})""",
     """Protocol:\s{0,100}({protocol}[^,]{1,2000})""",
     """FileSize:\s{0,100}({bytes}[^,]{1,2000})""",
-    """FilePolicy:\s{0,100}({policy}[^,]{1,2000}?)\s{0,100}
+    """FilePolicy:\s{0,100}({policy}[^,]{1,2000}?)\s{0,100},""",
+    """FileDirection:\s{0,100}({direction}[^,]{1,2000})""",
+    """FileName:\s{0,100}(|({file_path}(|({file_parent}[^",]{0,2000}?))[\\\/]{0,2000}({file_name}[^\\\/",]{1,2000}?(\.({file_ext}[^\\\/\.\s",]{1,2000}))?)))\s{0,100},""",
+  ]
+}
 ```

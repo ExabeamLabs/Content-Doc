@@ -22,5 +22,5 @@ goanywhere-events = {
       """GoAnywhereServicesuser_name="(({user_email}[^@"]{1,2000}@[^\.]{1,2000}\.[^"]{1,2000})|(admin|666666|guest|({user}[^"]{1,2000})))"""",
       """GoAnywhereServicesevent_type="({event_name}[^"]{1,2000})"""",
     ]
-
+ 
 ```

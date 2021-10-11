@@ -25,5 +25,5 @@ windows-kinesis-firehose = {
     """"MachineName":"({host}[^"]{1,2000})"""",
     """"TimeCreated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""
   ]
-
+}
 ```

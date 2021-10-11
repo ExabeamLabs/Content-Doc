@@ -16,5 +16,8 @@ Name = symantec-dlp-alert
     """\[CA Name: Account Name\], \[CA value:\s{0,100}({user}[^\]\s]{1,2000})""",
     """\[CA Name: Email\], \[CA value:\s{0,100}({user_email}[^\]\s@]{1,2000}@[^\]\s@]{1,2000})""",
     """\[CA Name: Risk Severity\], \[CA value:\s{0,100}(|({alert_severity}[^\]]{1,2000}?))\s{0,100}\]""",
-    """, violatedPolicyRuleName:\s{0,100}({alert_name}[^\],]{1,2000}?)\s{0,100}
+    """, violatedPolicyRuleName:\s{0,100}({alert_name}[^\],]{1,2000}?)\s{0,100},""",
+  ]
+  DupFields = [ "alert_name->alert_type" ]
+}
 ```

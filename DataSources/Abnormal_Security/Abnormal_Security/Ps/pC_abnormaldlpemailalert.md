@@ -26,5 +26,5 @@ abnormal-security-alert = {
       """"abx_portal_url":\s{0,100}"({additional_info}[^"]{1,2000})"""",
 	  
     ]
-
+ 
 ```

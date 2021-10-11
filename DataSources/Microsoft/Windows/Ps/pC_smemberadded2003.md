@@ -20,5 +20,9 @@ Name = s-member-added-2003
     """Target Account ID:\s{1,100}({group_id}.+?)\s{1,100}Caller""",
     """Caller User Name:\s{1,100}({user}.+?)\s{1,100}Caller""",
     """Caller Domain:\s{1,100}({domain}.+?)\s{1,100}Caller""",
-    """Caller Logon ID:\s{1,100}\([^,]{1,2000}
+    """Caller Logon ID:\s{1,100}\([^,]{1,2000},({logon_id}[^)]{1,2000})""",
+    """Group Member.+?Member Name:\s{1,100}({account_dn}CN=.+?,({account_ou}OU.+?DC=[\w-]{1,2000}))\s{1,100}Member ID""",
+  ]
+  DupFields = [ "host->dest_host" ]
+}
 ```

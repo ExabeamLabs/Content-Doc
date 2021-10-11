@@ -26,5 +26,5 @@ auth0-authentication-template = {
       """user_agent"{1,20}:"{1,20}({user_agent}([^\/]{1,2000}\/\s{1,100}(?i)({os}iOS|Android|BlackBerry|Windows Phone|BeOS|x11|windows|linux|macintosh|darwin))?[^"]{1,2000})""",         
       """severity"{1,20}:"{1,20}({alert_severity}[^"]{1,2000})""", 
     ]
-
+ 
 ```

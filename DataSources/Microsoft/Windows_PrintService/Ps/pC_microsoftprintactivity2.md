@@ -19,5 +19,12 @@ Name = microsoft-print-activity-2
     """[\[\(]{1,2000}({access}Read-Only)[\]\)]{1,2000}""",
     """({event_code}307)""",
     """exabeam_host=({host}[^\s]{1,2000})""",
-    """Document \d{1,100}
+    """Document \d{1,100},\s{1,100}({object}.+?)\s{0,100}owned by""",
+    """\s({time}\w+\s{1,100}\d\d\s{1,100}\d\d:\d\d:\d\d\s{1,100}\d\d\d\d),""",
+    """PrintService,({user_sid}\w+-\w+-\w+-\w+-\w+-\w+-\w+-\w+),""",
+    """,({host}[^,]{1,2000}),Printing a document""",
+    """({event_name}Printing a document)"""
+  ]
+  DupFields = ["event_name->activity"]
+}
 ```

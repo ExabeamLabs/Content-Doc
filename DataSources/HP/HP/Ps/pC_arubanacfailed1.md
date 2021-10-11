@@ -28,5 +28,5 @@ cef-aruba-nac-logon-2 = {
       """servername\\*=({auth_server}[^=]{1,2000})\s{1,100}\w+\\*=""",
       """username\\*=({user}\w+)\s"""
     ]
-
+ 
 ```

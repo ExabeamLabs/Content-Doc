@@ -15,5 +15,10 @@ Name = openvpn-app-activity
     """User\\*=({user}[^\s&%"]{1,2000})""",
     """DeviceType\\*=({src_host}[\w\-.]{1,2000})""",
     """request size:\s{0,100}({bytes}\d{1,100})""",
-    """mapping:\s{0,100}({app}.+?)\s{0,100}
+    """mapping:\s{0,100}({app}.+?)\s{0,100},""",
+    """ip:\s{0,100}({src_ip}[A-Fa-f:\d.]{1,2000})""",
+    """({additional_info}[^\s,]{1,2000}?)\s{0,100},\s{0,100}status:""",
+    """status:\s{0,100}({outcome}\d{1,100})""",
+  ]
+}
 ```

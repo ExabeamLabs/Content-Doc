@@ -25,5 +25,6 @@ raw-1102 = {
     """\s{1,100}Domain Name:\s{1,100}({domain}[^\s]{1,2000})""",
     """\s{1,100}Logon ID:\s{1,100}({logon_id}[^\s]{1,2000})""",
   ]
-
+  DupFields = [ "host->dest_host" ]
+}
 ```

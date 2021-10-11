@@ -34,5 +34,5 @@ mcafee-dlp-alert = {
       """,eventname=({alert_name}[^,]{1,2000})""",
       """,Vulnerability Name=({alert_name}[^,]{1,2000})"""
     ]
-
+ 
 ```

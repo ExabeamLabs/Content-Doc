@@ -25,5 +25,10 @@ Name = raw-failed-logon-2003
       """Workstation Name:\s{0,100}(-|({src_host_windows}[^\s]{1,2000}))\s{0,100}Caller User Name:""",
       """Workstation Name:\s{0,100}({src_host}[^\s]{1,2000})\s{0,100}Caller User Name:.*?Source Network Address:\s{0,100}-\s{1,100}""",
       """Caller User Name:\s{0,100}(?:-|({caller_user}.+?))\s{0,100}Caller Domain:""",
-      """Caller Domain:\s{0,100}({caller_domain}.+?)\s{0,100}Caller Logon ID:\s{0,100}\([^,]{1,2000}
+      """Caller Domain:\s{0,100}({caller_domain}.+?)\s{0,100}Caller Logon ID:\s{0,100}\([^,]{1,2000},({logon_id}[^\)]{1,2000})""",
+      """Source Network Address:\s{0,100}({src_ip}[a-fA-F:\d.]{1,2000})"""
+    ]
+    DupFields = ["host->dest_host",
+      "event_code->result_code"]
+  }
 ```
