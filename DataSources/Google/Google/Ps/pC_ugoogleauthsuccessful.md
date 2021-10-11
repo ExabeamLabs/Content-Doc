@@ -14,5 +14,7 @@ Name = u-google-auth-successful
     """"ipAddress"\s{0,100}:\s{0,100}"({src_ip}[\da-fA-F\.:]{1,2000})""",
     """"profileId"\s{0,100}:\s{0,100}"({user_id}\d{1,100})""",
     """"actor"\s{0,100}:\s{0,100}\{.*?"email"\s{0,100}:\s{0,100}"({user_email}({user}[^@"]{1,2000})@[^"]{1,2000})"""",
-    """"events"\s{0,100}:.*?"name"\s{0,100}:\s{0,100}"login_type"\s{0,100}
+    """"events"\s{0,100}:.*?"name"\s{0,100}:\s{0,100}"login_type"\s{0,100},\s{0,100}"value"\s{0,100}:\s{0,100}"({login_type}.+?)"""",
+  ]
+}
 ```

@@ -26,5 +26,5 @@ q-okta-app-login = {
     """"displayName"{1,20}:"{1,20}({app}[^"]{1,2000})",[^\{\}]{0,2000}?"objectType"{1,20}:"{1,20}AppInstance"""",
     """"categories.*?objectType"{1,20}:"{1,20}({activity}[^"]{1,2000})"""",
   ]
-
+}
 ```

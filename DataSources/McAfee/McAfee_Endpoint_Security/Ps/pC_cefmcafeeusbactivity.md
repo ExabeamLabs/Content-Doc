@@ -14,5 +14,10 @@ Name = cef-mcafee-usb-activity
 	"""\sdhost=({dest_host}.+?)\s\w+=""",
 	"""\sdst=({dest_ip}.+?)\s\w+=""",
 	"""\sduser=(({domain}[^\\]{1,2000})\\+)?({user}[^=]{1,2000})\s\w+=""",
-	"""\scs4=([^,]{0,2000}
+	"""\scs4=([^,]{0,2000},){4}\s{0,100}({device_id}.+?)(\s\w+=|&\d|,)""",
+	"""\scs4=([^,]{0,2000},)\s{0,100}({device_type}[^,]{1,2000})""",
+	"""\scs4=([^,]{0,2000},\s{0,100}){2}({activity_details}[^,]{1,2000})""",
+	"""\|McAfee\|Host Data Loss Prevention\|([^|]{0,2000}\|)({activity}[^|]{1,2000})""",
+    ]
+  }
 ```

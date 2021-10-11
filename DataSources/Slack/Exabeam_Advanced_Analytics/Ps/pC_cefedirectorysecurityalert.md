@@ -27,5 +27,5 @@ cef-edirectory-events = {
     """\Woutcome=({outcome}\w+)""",
     """\Wcs1=(({protocol}\w+):\s{0,100})?({dest_ip}[A-Fa-f:\d.]{1,2000}?):({dest_port}\d{1,100})""",
   ]
-
+}
 ```

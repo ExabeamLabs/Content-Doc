@@ -24,5 +24,6 @@ openvms-file-operations = {
     """Access requested:\s{1,100}({accesses}[^\s]{1,2000})\s{1,100}(\w{1,100}|$)""",
     """Terminal name:\s{1,100}({additional_info}[^\s]{1,2000})\s{1,100}(\w{1,100}|$)"""
   ]
-
+  DupFields = [ "event_name->activity" ]
+}
 ```

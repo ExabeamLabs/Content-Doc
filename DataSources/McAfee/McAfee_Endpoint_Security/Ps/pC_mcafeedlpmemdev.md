@@ -6,7 +6,9 @@ Name = mcafee-dlp-mem-dev
   Conditions = [ """RulesToDisplay=""", """Portable and Memory Devices""", """ViolationUTCTime=""", """Destination=""", """Username=""", """ViolationTimezone=""", """ViolationLocalTime=""" ]
 
   Fields = ${McAfeeParserTemplates.mcafee-dlp-activity.Fields} [
-    """,\sDestination="{0,20}({device_type}[^"]{1,2000})"{0,20}
+    """,\sDestination="{0,20}({device_type}[^"]{1,2000})"{0,20},\s"""
+  ]
+}
 mcafee-dlp-activity = {
       Vendor = McAfee
       Product = McAfee DLP
@@ -22,5 +24,26 @@ mcafee-dlp-activity = {
         """,\sFileName="{0,20}({file_name}.+?)"{0,20},\s""",
         """,\sFileSize="{0,20}({bytes}\d{1,100})"{0,20}"""
         ]
+    }
 
+  cef-mcafee-skyhigh-activity = {
+    Vendor = McAfee
+    Product = Skyhigh Networks CASB
+    Lms =ArcSight
+    DataType = "app-activity"
+    TimeFormat = "MMM dd yyyy HH:mm:ss.SSS z"
+    Fields = [
+      """\Wcat=(|({activity}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+      """({host}[\w.\-]{1,2000})\s{1,100}(LEEF|CEF):""",
+      """CEF:([^\|]{0,2000}\|){5}({activity}[^\|]{1,2000})""",
+      """({app}Skyhigh)""",
+      """\W(start|devTime)=({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d\.\d{1,100} \w+)""",
+      """\W(suser|usrName)=(N\/A|({user_email}[^@=]{1,2000}?@[^@=]{1,2000}?)|({user}[^\s]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
+      """\Wdescription=(|({additional_info}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+      """\WobjectName=(|null|({object}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+      """\WuserInfoEmail=(|({user_email}[^@]{1,2000}({email_domain}.+?)))(\s{1,100}\w+=|\s{0,100}$)""",
+      """\WuserInfoFirstName=(|({user_firstname}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+      """\WuserInfoLastName=(|({user_lastname}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    ]
+ 
 ```

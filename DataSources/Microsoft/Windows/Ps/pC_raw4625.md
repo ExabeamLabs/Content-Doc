@@ -9,6 +9,8 @@ Name = raw-4625
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
     Conditions = ["An account failed to log on", "Failure Reason"]
     Fields = [
+      """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
+      """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """\s({host}[\w-.]{1,2000})\s{0,100}Microsoft-Windows-Security-Auditing""",
       """EVENT_HOST="{1,100}({host}[\w.-]{1,2000})"""",
       """({event_name}An account failed to log on)""",

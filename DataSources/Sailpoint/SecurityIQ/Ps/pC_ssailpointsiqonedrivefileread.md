@@ -24,5 +24,5 @@ s-sailpointsiqonedrive-activity = {
     """objectname\s:\s({file_name}[^|]{1,2000}) \|""",
     """\spath\s:\s({file_parent}[^|]{1,2000})\s\|"""
   ]
-
+}
 ```

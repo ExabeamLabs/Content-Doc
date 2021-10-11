@@ -21,5 +21,5 @@ s-sailpointsiqad-activity = {
     """actiontype\s:\s({event_name}[^|]{1,2000})\s\|""",
     """originatingserver\s:\s({host}[^|]{1,2000})\s\|"""
   ]
-
+}
 ```

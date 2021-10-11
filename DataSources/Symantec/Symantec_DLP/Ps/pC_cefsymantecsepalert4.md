@@ -25,5 +25,5 @@ cef-symantec-sep-alert = {
     """\Wfname=({malware_file_name}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
     """"feature_name":"({alert_type}[^"]{1,2000})""",
   ]
-
+}
 ```

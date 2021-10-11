@@ -30,5 +30,5 @@ juniper-firewall-network-connection = {
     """\Wdst-xlated ip=({dest_translated_ip}[A-Fa-f:\d.]{1,2000})""",
     """\Wsession_id=({session_id}.+?)\s{1,100}(\w+=|$)""",
   ]
-
+}
 ```

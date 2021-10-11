@@ -25,5 +25,6 @@ symantec-usb-activity = {
     """"size":({bytes}\d{1,100})""",
     """({device_type}(CD-DVD|USB))""",
   ]
-
+  DupFields = [ "directory->process_directory" ]
+}
 ```

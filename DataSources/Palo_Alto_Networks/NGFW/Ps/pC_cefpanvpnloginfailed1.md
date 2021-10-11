@@ -23,5 +23,5 @@ cef-pan-vpn-event = {
     """User name:\s{1,100}({user_email}[^@\s]{1,2000}@[^\s,]{1,2000}),""",
     """Client OS( version)?:\s{1,100}({os}[^":]{1,2000})(,|\.)"""
   ]
-
+}
 ```

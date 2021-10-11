@@ -26,5 +26,5 @@ sophos-endpoint-events = {
      """exabeam_host=({host}[\w\-.]{1,2000})""",
      """ComputerDomain=({domain}[^;]{1,2000})""",
    ]
-
+}
 ```
