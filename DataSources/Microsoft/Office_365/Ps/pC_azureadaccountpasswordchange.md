@@ -27,5 +27,5 @@ azure-ad-activity = {
       """"app":\{.*?displayName":"({app}[^",]{1,2000})""",
       """loggedByService":"({app}[^",]{1,2000})"""
    ]
- 
+
 ```

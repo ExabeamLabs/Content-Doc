@@ -16,7 +16,5 @@ Name = s-microsoft-isa-proxy-1
     """(?:[^\t\,]{1,2000}[\s\,]{1,2000}){2}.*({browser}[^\/]{1,2000}).+({os}iOS|Android|BlackBerry|Windows Phone|BeOS|Windows|Linux|Macintosh|Darwin)""",
     """(?:[^\t\,]{1,2000}[\s\,]{1,2000}){2}.*Mozilla\/.+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|X11|Linux|Windows|Macintosh).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
     """(?:[^\t\,]{1,2000}[\s\,]{1,2000}){2}.*Mozilla\/.+\((?:BeOS|X11|Linux|Windows|Macintosh).+Gecko\/\d{1,100}\s{1,100}({browser}\w+)""",
-    """(?:[^,]{1,2000},){11}(.*?)({top_domain}(?!(?:\d{1,100}\.){3}\d{1,100})[^\.\s]{1,2000}?(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)[^\/\,]{1,2000})(?:\/[^,]{1,2000})?,"""
-  ]
-}
+    """(?:[^,]{1,2000}
 ```

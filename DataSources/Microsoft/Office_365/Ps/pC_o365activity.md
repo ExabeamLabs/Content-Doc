@@ -25,26 +25,5 @@ Name = o365-activity
     """"ObjectId\\{0,20}"{1,20}:"?[\s\\]{0,2000}"{1,20}(Unknown|Not Available|({object}[^"\\]{0,2000}?))\s{0,100}"""",
     """"Client\\{0,20}"{1,20}:[\s\\]{0,2000}"{1,20}({user_agent}[^"]{0,2000})""",
     """"UserAgent\\{0,20}"{1,20}:[\s\\]{0,2000}"(|({user_agent}[^=]{0,2000}?))\\*",""",
-    """\{"{1,20}Name"{1,20}:[\s\\]{0,2000}"{1,20}UserAgent"{1,20},"{1,20}Value"{1,20}:"{1,20}({user_agent}[^"]{1,2000})"{1,20}\}""",
-    """"{1,20}Value"{1,20}:\s{0,100}"{1,20}({user_agent}[^"]{1,2000})"{1,20},\s{0,100}"{1,20}Name"{1,20}:[\s\\]{0,2000}"{1,20}UserAgent"{1,20}\},""",
-    """"Parameters"{1,20}:[\s\\]{0,2000}\[({additional_info}[^=]{1,2000}?)\s{0,100}\]""",
-    """"ExtendedProperties"[^]]{0,2000}?UserAgent"{1,20},\s{0,100}"{1,20}Value"{1,20}:\s{0,100}"{1,20}({user_agent}[^"]{1,2000})""",
-    """"AffectedItems"{1,20}:[\s\\]{0,2000}\[({additional_info}[^=]{1,2000}?)\s{0,100}\],""",
-    """"ClientIP\\{0,20}"{1,20}:[\s\\]{0,2000}"{1,20}\[?((0\.0\.0\.0|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))\]?(:({src_port}\d{1,100}))|((0\.0\.0\.0|({=src_ip}[a-fA-F\d.:]{1,2000}))\]?(:({=src_port}\d{1,100}))?))"""",
-    """\ssuser=((Not Available|anonymous|SecurityComplianceAlerts|({user_email}[^\s\\@"]{1,2000}@({email_domain}[^\\\s@\."]{1,2000}\.[^\s"]{1,2000}))|(Unknown|(\w+?_)?(\w+-)?\w+-\w+-\w+-\w+|((({domain}[^\\\s]{1,2000})\\)?({user}[^"\s@]{1,2000}?)))))\s""",
-    """"ClientIPAddress\\{0,20}"{1,20}:[\s\\]{0,2000}"{1,20}\[?(::1|({src_ip}[a-fA-F\d.:]{1,2000}))\]?(:({src_port}\d{1,100}))?""",
-    """\sreason=(?:None|({failure_reason}[^\s]{1,2000}))""",
-    """\{"Value": "(?:None|({failure_reason}[^"]{1,2000}))", "Name": "MethodExecutionResult."\}""",
-    """"Path":"(\\+)?(\?+|({object}[^=]{1,2000}?))\s{0,100}"""",
-    """"Subject":"\s{0,100}({additional_info}[^"]{1,2000}?)\s{0,100}"""",
-    """"trc":"({user_email}[^"\s@]{1,2000}@[^"\s@]{1,2000})""",
-    """src-account-name":"({account_name}[^"]{1,2000})""",
-    """OriginatingServer":"({src_host}[^\s"]{1,2000})""",
-    """Workload"{0,20}:\s{0,100}"{0,20}({resource}[^"]{1,2000})"""",
-    """"Path":"(\\+)?(\?+|({target}[^"\}\]]{1,2000}?))\s{0,100}"""",
-    """Recipients":\[?"({target}[^\s,;@"]{1,2000}@({target_domain}[^\s;,"]{1,2000}))""",
-    """"ResultStatus":\s{0,100}"({outcome}Success|Succeeded|Failed|Failure)"""
-  ]
-  DupFields = ["outcome->result","activity->event_name"]
-}
+    """\{"{1,20}Name"{1,20}:[\s\\]{0,2000}"{1,20}UserAgent"{1,20}
 ```

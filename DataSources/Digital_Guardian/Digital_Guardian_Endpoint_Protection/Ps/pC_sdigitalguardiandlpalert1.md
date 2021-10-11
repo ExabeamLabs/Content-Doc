@@ -34,16 +34,5 @@ splunk-digitalguardian-dlp-alert = {
     """[^_]Email_Recipient="(?:|({target}[^"]{1,2000}))"""",
     """[^_]Computer_Type="(?:|({os}[^"]{1,2000}))""""
   ]
-  DupFields = [ "host->src_host" ]
-  SOAR {
-    IncidentType = "dlp"
-    DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "user->dlpUser", "alert_name->dlpPolicy", "protocol->dlpProtocol", "src_host->dlpDeviceName", "file_name->dlpFileName", "bytes->dlpFileSize"]
-    NameTemplate = """Digital Guardian DLP Alert ${alert_name} found"""
-    ProjectName = "SOC"
-    EntityFields = [
-      {EntityType="device", Name="src_address", Fields=["src_host->host_name"]},
-      {EntityType="device", Name="dest_address", Fields=["dest_ip->ip_address"]},
-      {EntityType="user", Name="windows_id", Fields=["user->windows_id"]}
-    ]
- 
+
 ```

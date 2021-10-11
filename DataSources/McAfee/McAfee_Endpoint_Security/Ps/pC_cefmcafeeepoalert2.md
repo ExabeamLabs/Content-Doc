@@ -36,6 +36,5 @@ cef-mcafee-epo-alert = {
     """\|McAfee\|ePolicy[^|]{1,2000}?\|[^|]{1,2000}?\|[^|]{1,2000}?\|[^|]{1,2000}?\|({alert_severity}[^\|]{1,2000})""",
     """\scategoryOutcome=/?({outcome}.+?)\s{1,100}(\w+=|$)""",
   ]
-  DupFields = ["malware_file_name->file_name"]
-}
+
 ```

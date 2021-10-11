@@ -27,5 +27,5 @@ moveit-activity = {
     """\s:\s{1,100}({activity}[^,]{1,2000}),\s{1,100}ID:""",
     """\sUsername:\s{0,100}(Automation|({user}[^,]{1,2000}))"""
   ]
-}
+
 ```

@@ -26,5 +26,5 @@ cef-dropbox-activity = {
     """"ip_address":\s{0,100}"({src_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]{0,2000}:[A-Fa-f0-9%.:]{1,2000}))""",
     """({app}Dropbox)""",
   ]
-}
+
 ```

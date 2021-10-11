@@ -43,6 +43,5 @@ json-okta-auth = {
     """"outcome":[^\]]{0,2000}?"result"\s{0,100}:\s{0,100}"({outcome}[^"]{1,2000})"""",
     """outcome":[^\]]{0,2000}?"result":"?(null|({outcome_result_at}[^\"]{1,2000}))"?,"reason":"?(null|({outcome_reason_at}[^"]{1,2000}))""",
   ]
-  DupFields = ["domain->email_domain", "failure_reason->additional_info"]
-}
+
 ```

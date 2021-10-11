@@ -30,6 +30,5 @@ sonicwall-vpn-login = {
     """\sbytesOut=({bytes_out}\d{1,100})""",
     """\sbytesTotal=({bytes}\d{1,100})"""
   ]
-  DupFields = ["user->account"]
-}
+
 ```

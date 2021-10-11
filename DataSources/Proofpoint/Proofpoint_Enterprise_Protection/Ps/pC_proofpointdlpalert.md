@@ -29,5 +29,5 @@ proofpoint-alert = {
     """"id":\s{0,100}"({alert_id}[^"]{1,2000})"""",
     """"description":\s{0,100}"({additional_info}[^"]{1,2000})"""",
     ]
- 
+
 ```

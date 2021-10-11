@@ -28,10 +28,5 @@ Name = s-github-unicorn-activity
     """({app}github)""",
     """accept=({mime}[^\s]{1,2000})"""
   ]
-}, 
-
-${GithubParserTemplates.github-app-activity}{
-   Name = github-app-activity-1
-   Conditions = [ """issue_comment.update,""" ]
 }
 ```

@@ -40,6 +40,5 @@ s-xml-windows-member = {
     """<Data Name(\\)?='RemoteMachineAccount'>({dest_host}[^<]{1,2000})"""
     
   ]
-  DupFields = [ "host->dest_host" ]
-}
+
 ```

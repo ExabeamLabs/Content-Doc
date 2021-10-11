@@ -51,17 +51,5 @@ s-cisco-amp-alert = {
     """\Woutcome=(|({outcome}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """"connector_guid":"({connector_guid}[^"]{1,2000})""",
   ]
-  DupFields = [ "file_path->malware_url", "alert_type->category" ]
-    SOAR {
-    IncidentType = "malware"
-    DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_type->description", "alert_severity->sourceSeverity", "additional_info->sourceUrl", "file_path->malwareAttackerFile", "src_host->malwareVictimHost", "alert_name->malwareName"]
-    NameTemplate = """Cisco AMP Alert ${alert_name} found"""
-    ProjectName = "SOC"
-    EntityFields = [
-      {EntityType="device", Name="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]},
-      {EntityType="device", Name="dest_address", Fields=["dest_ip->ip_address"]},
-      {EntityType="user", Name="windows_id", Fields=["user->windows_id"]},
-      {EntityType="file", Name="file_name", Fields=["file_name->file_name"]}
-    ]
- 
+
 ```

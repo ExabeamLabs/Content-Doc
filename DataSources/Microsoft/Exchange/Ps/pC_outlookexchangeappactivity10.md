@@ -32,5 +32,5 @@ outlook-exchange-app-activity = {
     """"Attachments\\*"{1,20}:[\s\\]{0,2000}"{1,20}\s{0,100}({attachments}[^"\\]{1,2000})\s{0,100}""",
     """"Attachments\\*"{1,20}:[\s\\]{0,2000}"{1,20}\s{0,100}({attachment}[^"\\;]{1,2000})\s{0,100}""",
 ]
-}
+
 ```

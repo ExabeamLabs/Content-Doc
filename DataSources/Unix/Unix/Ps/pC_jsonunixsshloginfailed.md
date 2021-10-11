@@ -23,5 +23,5 @@ unix-activity-json = {
       """"pid":"({pid}\d{1,100})""",
       """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
     ]
- 
+
 ```

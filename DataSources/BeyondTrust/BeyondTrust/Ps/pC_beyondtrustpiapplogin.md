@@ -23,5 +23,5 @@ beyondtrust-pi-events = {
     """CEF:\d{1,100}\|([^\|]{1,2000}\|){3}({event_name}[^\|]{1,2000})\|""",
     """cs1=.+?({outcome}Success|Failure)"""
   ]
-}
+
 ```

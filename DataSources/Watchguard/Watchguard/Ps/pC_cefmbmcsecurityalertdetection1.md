@@ -29,6 +29,5 @@ cef-malwarebytes-security-alert = {
     """\Wsuser=({user}[^=]{0,2000}?)\s{0,100}(\w+=|$)""",
     """\Wact=({action}[^=]{1,2000}?)\s{0,100}(\w+=|$)"""
   ]
-  DupFields = ["action->outcome"]
-}
+
 ```

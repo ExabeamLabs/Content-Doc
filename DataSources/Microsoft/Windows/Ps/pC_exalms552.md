@@ -25,9 +25,5 @@ Name = exalms-552
     """"(param5|Target User Name)"\s{0,100}:\s{0,100}"(-|({account}.+?))\s{0,100}"""",
     """"(param6|Target Domain)"\s{0,100}:\s{0,100}"(-|({account_domain}.+?))\s{0,100}"""",
     """"(param3|Logon ID|logon_id)"\s{0,100}:\s{0,100}"(-|({logon_id}.+?))\s{0,100}"""",
-    """"(param3|Logon ID|logon_id)"\s{0,100}:\s{0,100}"\(([\dxA-F]{1,2000},)?(-|({logon_id}.+?)\))\s{0,100}"""",
-    """"(param4|Logon GUID)"\s{0,100}:\s{0,100}"(-|({user_logon_guid}.+?))"""",
-    """record_number"\s{0,100}:\s{0,100}"({record_id}\d{1,100})"""
-  ]
-}
+    """"(param3|Logon ID|logon_id)"\s{0,100}:\s{0,100}"\(([\dxA-F]{1,2000}
 ```

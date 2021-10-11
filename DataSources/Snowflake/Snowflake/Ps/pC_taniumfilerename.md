@@ -21,5 +21,5 @@ tanium-file-operations = {
     """Process-Path="({process}[^"]{1,2000}(\\|\/)({process_name}[^"]{1,2000}))"""",
     """File-Path="(|({file_path}[^=]{1,2000}?))"\s\w{1,2000}="""
   ]
-}
+
 ```

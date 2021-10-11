@@ -36,5 +36,5 @@ cef-google-app-activity = {
     """"name":"client_id","value":"({object}[^"]{1,2000})"""",
     """"id":\{({additional_info}[^\}]{1,2000})\}"""
   ]
-}
+
 ```

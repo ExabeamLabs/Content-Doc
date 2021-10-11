@@ -35,5 +35,5 @@ cef-o365-app-login-1 = {
      """"src-account-name":"({account}[^"]{1,2000})""",
      """"src-account-name":"({account_name}[^"]{1,2000})""",
    ]
- 
+
 ```

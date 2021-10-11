@@ -24,24 +24,5 @@ Name = syslog-vontu-dlp-alert
       """,\sendpoint_username="{1,20}\s{0,100}(?:N\/A|(({domain}[^\\]{1,2000})\\+)?({user}[^"\\]{1,2000}))""",
       """[\s,]sender="{1,20}\s{0,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
       """,\smachine_ip="{1,20}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s{0,100}",\s""",
-      """,\sdestination_ip="{1,20}(?:N\/A|null\s{0,100}|({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))\s{0,100}"{0,20},\s""",
-      """[\s,]recipients="{1,20}\s{0,100}(?:N\/A|Unknown|({target}[^",]{1,2000}?))"{0,20},""",
-      """[\s,]recipients="{1,20}\s{0,100}({recipients}(?:({external_address}[^\s"@,]{1,2000}@({external_domain}[^\s@",]{1,2000}?)))(?:\s{0,100},\s{0,100}[^\s"@,]{1,2000}@[^\s@",]{1,2000}?\s{0,100}?)*)\s{0,100}"{0,20},""",
-      """[\s,]recipients="{1,20}\s{0,100}(?:[^"\s]{0,2000}?)({top_domain}(?!(?:\d{1,100}\.){3}\d{1,100})(?:[^\.\s@]{1,2000})(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)(?::|"|\/)""",
-      """[\s,]recipients="{1,20}\s{0,100}({protocol}\w+):\/\/""",
-      """,\sprotocol="{1,20}(?:N\/A|({protocol}[^",]{1,2000}?))\s{0,100}"{0,20},""",
-      """[\s,]subject="{1,20}(?:N\/A|({additional_info}(?:[^",]|"")+?))\s{0,100}"{0,20},""",
-      """,\sfile_name="{1,20}(?:N\/A|({file_name}[^",]{1,2000}?))\s{0,100}"{0,20},""",
-      """,\sattachment_filename="{1,20}(?:N\/A|({file_name}[^.",]{1,2000}?(?:\.({file_ext}[^",]{1,2000}?))?))\s{0,100}"{0,20},""",
-      """,\sendpoint_machine="{1,20}(?:N\/A|({device_id}[^",]{1,2000}?))\s{0,100}"{0,20},\s""",
-      """\sZID="{1,20}({user}[^",\s]{1,2000}?)"{0,20},"""
-    ]
-    DupFields = [ "additional_info->subject", "external_address->recipient", "alert_id->email_id", "sender->user_email" , "file_name->attachment","device_id->src_host"]
-    SOAR {
-      IncidentType = "dlp"
-      DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "user->dlpUser", "alert_name->dlpPolicy", "alert_severity->sourceSeverity", "protocol->dlpProtocol", "src_ip->dlpDeviceName", "outcome->dlpActionTaken"]
-      NameTemplate = """Symantec DLP Alert ${alert_name} found"""
-      ProjectName = "SOC"
-      EntityFields = [
-        {EntityType="device", Name="src_address", Fields=["src_ip->ip_address"]}
+      """,\sdestination_ip="{1,20}(?:N\/A|null\s{0,100}|({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))\s{0,100}"{0,20}
 ```

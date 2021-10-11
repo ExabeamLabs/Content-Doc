@@ -26,16 +26,5 @@ tippingpoint-sms-alert-template = {
           """00000001-0001-0001-0001-00000\d{1,100}\s{1,100}.+?\s{1,100}\d{1,100}\s{1,100}[^\s]{1,2000}\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s{1,100}({src_port}\d{1,100})""",
           """00000001-0001-0001-0001-00000\d{1,100}\s{1,100}.+?\s{1,100}\d{1,100}\s{1,100}([^\s]{1,2000}\s{1,100}){3}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s{1,100}({dest_port}\d{1,100})""",
     ]
-    SOAR {
-      IncidentType = "generic"
-      DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->description", "alert_severity->sourceSeverity"]
-      NameTemplate = """TippingPoint Alert ${alert_name} found"""
-      ProjectName = "SOC"
-      EntityFields = [
-        {EntityType="device", Name="src_address", Fields=["src_ip->ip_address"]},
-        {EntityType="device", Name="dest_address", Fields=["dest_ip->ip_address"]},
-      ]
-    }
-  }
-}
+
 ```

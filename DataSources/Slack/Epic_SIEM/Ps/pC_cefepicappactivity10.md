@@ -26,5 +26,5 @@ cef-epic-app-activity = {
     """PREVUSER=({user}[^\s,]{1,2000})""",
     """NEWUSER=({account}[^\s,]{1,2000})""",
   ]
-}
+
 ```

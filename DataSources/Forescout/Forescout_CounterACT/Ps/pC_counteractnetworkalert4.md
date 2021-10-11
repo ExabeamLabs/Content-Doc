@@ -13,9 +13,5 @@ Name = counteract-network-alert-4
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """(\w{1,100}\s\d\d\s\d\d:\d\d:\d\d)\s{1,100}(({host_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({host}[\w\-.]{1,2000}))""",
     """Source:\s{0,100}({dest_ip}[a-fA-F\d.:]{1,2000})""",
-    """Rule:\s{0,100}(|({alert_name}Policy\s{1,100}"{0,20}[^"]{1,2000}?\s{0,100}"{0,20}))\s{0,100},""",
-    """Details:\s{0,100}({additional_info}.+?)\s{0,100}(\.\s{1,100}\w+:|$)""",
-  ]
-  DupFields = [ "alert_name->alert_type" ]
-}
+    """Rule:\s{0,100}(|({alert_name}Policy\s{1,100}"{0,20}[^"]{1,2000}?\s{0,100}"{0,20}))\s{0,100}
 ```

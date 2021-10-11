@@ -33,6 +33,5 @@ symantec-critical-sys-protection = {
     """\sHOSTADDR:\s{0,100}"{1,20}({dest_ip}[^"\s]{1,2000})""",
     """\sSVA_IP_ADDRESS:\s{0,100}"{1,20}({src_ip}[^"\s]{1,2000})""",
   ]
-  DupFields = ["host->dest_host"]
-}
+
 ```

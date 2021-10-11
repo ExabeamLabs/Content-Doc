@@ -32,5 +32,5 @@ ms-azure-eventhubs-activity = {
     """"{1,20}result"{1,20}:"{1,20}({outcome}[^"]{1,2000})"{1,20}""",
     """({app}eventHubsAzureRecord)""" 
   ]
-}
+
 ```

@@ -45,8 +45,5 @@ Name = cef-forcepoint-proxy
       """\srequestClientApplication=(?:-|Mozilla\/[^=]{1,2000}\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]{1,2000}?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
       """\srequestClientApplication=(?:-|Mozilla\/[^=]{1,2000}\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]{1,2000}Gecko\/\d{1,100}\s{1,100}({browser}\w+))""",
       """suser=(-|({user_lastname}[^,]{1,2000}),\s({user_firstname}([A-Za-z]{1,2000}){1}(\s\w){0,1}))\s""",
-      """suser=\w+:\/+([^\s]{1,2000})?\s{0,100}((CN|OU)\\+=[^,]{1,2000},){1,2}DC\\=[^,]{1,2000},DC\\=[^\/]{1,2000}\/({user_fullname}({user_lastname}[^\\]{1,2000})\\+,\s{0,100}({user_firstname}[^=]{1,2000}?))\s\w+=""",
-      """loginID=(-|({user}[^\s=]{1,2000}?))\s\w+="""
-    ]
-  }
+      """suser=\w+:\/+([^\s]{1,2000})?\s{0,100}((CN|OU)\\+=[^,]{1,2000}
 ```
