@@ -23,5 +23,5 @@ Swift-Alliance-Web-Platform = {
       """\Wsrc=({src_ip}[A-Fa-f:\d.]{1,2000})""",
       """msg=({additional_info}[^=]{1,2000}?)\.?(\s{0,100}\w+=|\s{0,100}$)"""
     ]
-
+ 
 ```

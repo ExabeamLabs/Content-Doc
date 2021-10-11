@@ -23,5 +23,5 @@ mastersam-pam-events = {
     """\Wfailed_message=({failure_reason}.+?)\s{1,100}(\w+=|$)""",
     """\WActivity:\s{0,100}({activity}.+?)\s{1,100}User:""",
   ]
-
+}
 ```

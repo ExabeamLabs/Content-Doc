@@ -25,7 +25,7 @@ Name = raw-4771
     """Computer(\w+)?["\s]{0,2000}(:|=)\s{0,100}"?(::ffff:)?({host}.+?)("|\s|;)""",
     """({event_code}4771)""",
     """Account Information(:|=)\s{0,100};*Security ID(:|=)\s{0,100}({user_sid}.+?)\s{0,100};*Account""",
-    """Account Name(:|=)\s{0,100}({user}.+?)\s{0,100};*Service Information""",
+    """Account Name(:|=)\s{0,100}(({user_fullname}[^:]{1,2000}?\s[^\s]{1,2000}?)|({user}[^\:]{1,2000}?))\s{0,100};{0,100}Service Information""",
     """Service Name(:|=)\s{0,100}\w+\/(?=\w)({domain}.+?)\s{0,100};*Network Information""",
     """Client Address(:|=)\s{0,100}(::[\w]{1,2000}:)?({dest_ip}[a-fA-F:\d.]{1,2000})""",
     """Failure Code(:|=)\s{0,100}({result_code}[\w]{1,2000})"""

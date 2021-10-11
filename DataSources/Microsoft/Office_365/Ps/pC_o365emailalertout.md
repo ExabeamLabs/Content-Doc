@@ -25,5 +25,5 @@ O365-email-alert = {
     """"(internal|external)_recipients":"({recipients}({recipient}[^"\s@;,]{1,2000}@[^"\s@;,]{1,2000})[^"]{0,2000})"""",
     """ from ({sender}[^"\s@]{1,2000}@[^"\s@]{1,2000})""",
   ]
-
+}
 ```

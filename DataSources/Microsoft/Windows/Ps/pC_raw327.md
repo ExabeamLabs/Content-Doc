@@ -13,5 +13,8 @@ Name = raw-327
       """TimeStamp:\s{0,100}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """Event ID:\s{0,100}({event_code}\d{1,100})""",
       """\(({process_id}\d{1,100}).*\)""",
-      """({activity}The database engine detached a database)\s{1,100}\(\d{1,100}
+      """({activity}The database engine detached a database)\s{1,100}\(\d{1,100},\s{1,100}({file_path}({file_parent}(?:[^";]{1,2000})?[\\\/;])?({file_name}[^\\\/";]{1,2000}?(\.({file_ext}[^\\\/\.;"]{1,2000}))))\)\."""
+    ]
+    DupFields = [ "host->dest_host" ]
+  }
 ```

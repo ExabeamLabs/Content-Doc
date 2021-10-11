@@ -15,5 +15,13 @@ Name = snare-576
     """Security\t([^\s]{1,2000}\t){2}({outcome}.+?)\t""",
     """(?:Information|Audit Success|Success Audit).+?User Name:\s{1,100}({user}.+?)\s{1,100}Domain""",
     """\s{1,100}Domain:\s{1,100}({domain}[^\s]{1,2000})""",
-    """\s{1,100}Logon ID:\s{1,100}\([^,]{1,2000}
+    """\s{1,100}Logon ID:\s{1,100}\([^,]{1,2000},({logon_id}[^)]{1,2000})""",
+    """\s{1,100}Privileges:\s{1,100}({privileges}.+?)\s{1,100}\d{1,100}""",
+    """\s{1,100}({ownership_privilege}SeTakeOwnershipPrivilege)""",
+    """\s{1,100}({environment_privilege}SeSystemEnvironmentPrivilege)""",
+    """\s{1,100}({debug_privilege}SeDebugPrivilege)""",
+    """\s{1,100}({tcb_privilege}SeTcbPrivilege)"""
+  ]
+  DupFields = [ "host->dest_host" ]
+}
 ```

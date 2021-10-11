@@ -26,5 +26,6 @@ q-kiteworks-file-activity = {
       """Activity:\s{0,100}({activity}.+?)\."{0,20}\s{0,100}$""",
       """Activity Type:\s{1,100}({activity}[^\s,]{1,2000})"""
     ]
-
+    DupFields = [ "host->dest_host" ]
+ 
 ```

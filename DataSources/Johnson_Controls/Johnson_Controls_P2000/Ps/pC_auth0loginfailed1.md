@@ -6,7 +6,9 @@ Name = auth0-login-failed-1
   Conditions = [ """"type":"f"""", """"user_id"""", """"client_name"""", """"client_id"""" ]
   Fields=${Auth0AAParserTemplates.auth0-authentication-template.Fields}[
     """"({activity_type}f)"""",
-    """message"{1,20}:"{1,20}({failure_reason}[^"]{1,2000})"{1,20}
+    """message"{1,20}:"{1,20}({failure_reason}[^"]{1,2000})"{1,20},""",
+  ]
+}
 auth0-authentication-template = {
     Vendor = Auth0
     Product = Auth0
@@ -24,5 +26,5 @@ auth0-authentication-template = {
       """user_agent"{1,20}:"{1,20}({user_agent}([^\/]{1,2000}\/\s{1,100}(?i)({os}iOS|Android|BlackBerry|Windows Phone|BeOS|x11|windows|linux|macintosh|darwin))?[^"]{1,2000})""",         
       """severity"{1,20}:"{1,20}({alert_severity}[^"]{1,2000})""", 
     ]
-
+ 
 ```

@@ -23,5 +23,6 @@ airwatch-auth-activity = {
       """DeviceFriendlyName:"{1,20}((N\/A)|(DELETE IN PROGRESS...)|({device_name}[^"]{1,2000}))"""",
       """Reason=({failure_reason}[^"]{1,2000})"""",
     ]
-
+     DupFields = ["device_name->src_host"]
+ 
 ```

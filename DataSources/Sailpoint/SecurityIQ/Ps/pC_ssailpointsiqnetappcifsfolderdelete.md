@@ -25,5 +25,5 @@ s-sailpointsiqnetappcifs-activity = {
     """fileextension\s:\s({file_ext}[^|]{1,2000})\s\|""",
     """userfullname\s:\s({user_sid}(?=[^\\]{1,2000}\\)({domain}[^\\]{1,2000})\\({user}.+?)|(?:.+?))\s\|"""
   ]
-
+}
 ```

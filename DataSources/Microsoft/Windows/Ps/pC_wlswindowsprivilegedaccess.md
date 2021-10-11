@@ -16,5 +16,13 @@ Name = wls-windows-privileged-access
       """SubjectUserName="{1,20}({user}[^"]{1,2000})"""",
       """SubjectDomainName="{1,20}({domain}[^"]{1,2000})"""",
       """SubjectLogonId="{1,20}({logon_id}[^"]{1,2000})"""",
-      """ProcessName="{1,20}(?: |({process}({directory}(?:[^"]{1,2000})?[\\\/])?({process_name}[^"]{1,2000})))"{1,20}
+      """ProcessName="{1,20}(?: |({process}({directory}(?:[^"]{1,2000})?[\\\/])?({process_name}[^"]{1,2000})))"{1,20},""",
+      """PrivilegeList="{1,20}({privileges}[^"]{1,2000})"""",
+      """AccessMask="{1,20}({accesses}[^"]{1,2000})"""",
+      """ObjectName="{1,20}(?:-|({object}[^"]{1,2000}))"""",
+      """ObjectType="{1,20}(?:-|({object_type}[^"]{1,2000}))"""",
+      """ObjectServer="{1,20}(?:-|({object_server}[^"]{1,2000}))""""
+    ]
+    DupFields = ["host->dest_host","directory->process_directory"]
+  }
 ```

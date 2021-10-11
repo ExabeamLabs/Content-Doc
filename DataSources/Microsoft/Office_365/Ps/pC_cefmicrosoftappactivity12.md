@@ -35,5 +35,5 @@ cef-microsoft-app-activity = {
     """\ssourceServiceName=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """"User-Agent\\?"{1,20}:\\?"{1,20}({user_agent}[^"\\]{1,2000})"""
   ]
-
+}
 ```

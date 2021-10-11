@@ -8,7 +8,13 @@ Name = cef-microsoft-app-activity-37
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields}[
     """\WsourceServiceName=(|({app}[^=]{1,2000}?))\s{1,100}(\w+=|$)""",
     """"result"{1,20}:"{1,20}({result}[^"]{1,2000})""",
-    """modifiedProperties"{1,20}:\[\{[^\}]{1,2000}\}
+    """modifiedProperties"{1,20}:\[\{[^\}]{1,2000}\},\{[^\}]{1,2000}?"{1,20}newValue"{1,20}:"{1,20}\\"{1,20}({object}[^\\"]{1,2000})""",
+    """"targetResources"{1,20}:\[[^\]]{1,2000}?"{1,20}displayName"{1,20}:"{1,20}({target}[^"]{1,2000})""",
+    """"category"{1,20}:"{1,20}({additional_info}[^"]{1,2000})""",
+    """"ipAddress":"({src_ip}[A-Fa-f:\d.]{1,2000})"""",
+    """"userPrincipalName":"({user_email}[^"@\s]{1,2000}@[^"@\s]{1,2000})"""",
+  ]
+}
 cef-microsoft-app-activity = {
   Vendor = Microsoft
   Lms = ArcSight
@@ -36,5 +42,5 @@ cef-microsoft-app-activity = {
     """\ssourceServiceName=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """"User-Agent\\?"{1,20}:\\?"{1,20}({user_agent}[^"\\]{1,2000})"""
   ]
-
+}
 ```

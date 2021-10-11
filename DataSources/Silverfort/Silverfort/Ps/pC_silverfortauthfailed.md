@@ -24,5 +24,5 @@ silverfort-authentication-attempt = {
       """\scs2=({action}[^=]{1,2000}?)\s{1,100}\w+=""",
       """\sapp=({auth_method}[^=]{1,2000}?)\s{1,100}\w+="""
     ]
-
+ 
 ```

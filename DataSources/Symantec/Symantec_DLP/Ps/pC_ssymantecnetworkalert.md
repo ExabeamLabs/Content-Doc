@@ -27,5 +27,5 @@ s-symantec-alert = {
       """\sEvent_Description="({additional_info}[^"]{1,2000})""",
       """\sdest_port=({dest_port}\d{1,100})""", 
     ]
-
+ 
 ```

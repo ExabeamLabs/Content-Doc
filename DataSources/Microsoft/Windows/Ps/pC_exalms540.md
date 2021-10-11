@@ -23,5 +23,9 @@ Name = exalms-540
     """"(param5|LogonProcess)"\s{0,100}:\s{0,100}"({auth_process}.+?)\s{0,100}"""",
     """"(param6|AuthenticationPackage|authentication_package)"\s{0,100}:\s{0,100}"({auth_package}.+?)\s{0,100}"""",
     """"(param3|LogonId|logon_id)"\s{0,100}:\s{0,100}"({logon_id}.+?)\s{0,100}"""",
-    """"(param3|LogonId|logon_id)"\s{0,100}:\s{0,100}"\(([\dxA-F]{1,2000}
+    """"(param3|LogonId|logon_id)"\s{0,100}:\s{0,100}"\(([\dxA-F]{1,2000},)?({logon_id}.+?)\)\s{0,100}"""",
+    """"(param4|LogonType)"\s{0,100}:\s{0,100}"({logon_type}\d{1,100})\s{0,100}"""",
+  ]
+  DupFields = [ "host->dest_host" ]
+}
 ```

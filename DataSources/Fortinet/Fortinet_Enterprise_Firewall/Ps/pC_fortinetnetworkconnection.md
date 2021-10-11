@@ -6,7 +6,7 @@ Name = fortinet-network-connection
   Product = Fortinet Enterprise Firewall
   Lms = Direct
   DataType = "network-connection"
-  TimeFormat = "epoch"
+  TimeFormat = "epoch_sec"
   Conditions = [ """type=""", """traffic""", """action=""", """service=""", """date=""" ]
   Fields = [
     """eventtime=({time}\d{1,10})""",

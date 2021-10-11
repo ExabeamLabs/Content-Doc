@@ -25,5 +25,5 @@ quest-change-auditor-events = {
       """event=({event_name}[^=]{1,2000}?)\s\w+=""",
       """msg=({additional_info}[^=]{1,2000}?)\s{0,100}\w+="""
     ]
-
+ 
 ```

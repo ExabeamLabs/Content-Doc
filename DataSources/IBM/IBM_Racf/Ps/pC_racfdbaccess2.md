@@ -24,5 +24,7 @@ Fields = [
   """EVNTCOMMAND=(\-*N\/A\-*|({db_query}[^=]{1,2000}?))(\s\w+=|\s{0,100}$)""",
   """EVNTCLASSNAME=(\-*N\/A\-*|({database_object}[^=]{1,2000}?))\s{0,100}\w+="""
   ]
-
+  DupFields = ["event_name->db_operation"]
+ }
+}
 ```
