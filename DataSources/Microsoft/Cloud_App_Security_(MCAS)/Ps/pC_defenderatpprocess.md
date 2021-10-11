@@ -26,5 +26,6 @@ defender-atp-events = {
       """"RemoteIP":"({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
       """"Protocol":"({protocol}[^"]{1,2000})""""
     ]
-
+    DupFields = ["host->dest_host"]
+ 
 ```

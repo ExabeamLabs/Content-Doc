@@ -36,5 +36,5 @@ json-microsoft-security-events = {
      """"description": "An actor on\s{0,100}({src_host}\S+)\s{0,100}performed suspicious""",
      """"fileStates":[^]]{1,2000}?"name":\s{1,100}"({file_name}[^."]{1,2000}([\.\w]{1,100})?)"""",
      ]
-
+ 
 ```

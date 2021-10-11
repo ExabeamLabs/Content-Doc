@@ -15,5 +15,11 @@ Name = symantec-av-dlp-alert
     """,Local:\s{0,100}({src_ip}[a-fA-F:\.\d]{1,2000}),Local:\s{0,100}({src_port}\d{1,100}),Local:\s{0,100}(0.0.0.0|({=src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[\w\-\.]{1,2000})),""",
     """,Remote:\s{0,100}(0.0.0.0|({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})),Remote:\s{0,100}(|({dest_host}[\w\-\.]{1,2000})),Remote:\s{0,100}({dest_port}\d{1,100}),""",
     """({protocol}[^,]{1,2000}),({direction}[^,]{1,2000}),Begin:""",
-    """\WApplication:\s{0,100}({process}({directory}[^",]{1,2000}?)?([\\\/]{1,2000}({process_name}[^\\\/,"]{1,2000})))\s{0,100}
+    """\WApplication:\s{0,100}({process}({directory}[^",]{1,2000}?)?([\\\/]{1,2000}({process_name}[^\\\/,"]{1,2000})))\s{0,100},""",
+    """\WRule:\s{0,100}({event_name}[^,]{1,2000})""",
+    """\WAction:\s{0,100}({outcome}[^,]{1,2000}?)"{0,20}\s{0,100}$""",
+    """\WUser:\s{0,100}(none|({user}[^,]{1,2000})),Domain:\s{0,100}(|({domain}[^,]{1,2000}?))\s{0,100},"""
+  ]
+  DupFields = [ "outcome->action" ]
+}
 ```

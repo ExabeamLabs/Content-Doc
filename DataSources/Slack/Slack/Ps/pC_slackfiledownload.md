@@ -32,5 +32,5 @@ slack-events = {
     """"ua":\s{0,100}"[^"]{0,2000}({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)""",
     """"ua":\s{0,100}"[^"]{0,2000}({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
   ]
-
+}
 ```

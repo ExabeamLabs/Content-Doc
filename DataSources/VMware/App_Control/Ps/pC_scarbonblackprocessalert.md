@@ -32,5 +32,15 @@ Name = s-carbonblack-process-alert
     """"{1,20}org_key"{1,20}:\s{0,100}"{1,20}({primary_key}[^"]{1,2000}?)"{1,20}""",
     """"{1,20}not_blocked_threat_category"{1,20}:\s{0,100}"{1,20}(UNKNOWN|({outcome}[^"]{1,2000}?))"{1,20}""",
     """"{1,20}blocked_threat_category"{1,20}:\s{0,100}"{1,20}(UNKNOWN|({outcome}[^"]{1,2000}?))"{1,20}""",
-    """"{1,20}id"{1,20}:\s{0,100}"{1,20}({pid}[^"]{1,2000}?)"{1,20}
+    """"{1,20}id"{1,20}:\s{0,100}"{1,20}({pid}[^"]{1,2000}?)"{1,20},"{1,20}legacy_alert_id""",
+    """"{1,20}changed_by"{1,20}:\s{0,100}"{1,20}({process_vendor}[^"]{1,2000}?)"{1,20}""",
+    """"{1,20}ioc_id"{1,20}:\s{0,100}"{1,20}({ioc}[^"]{1,2000}?)"{1,20}""",
+    """"{1,20}report_name"{1,20}:\s{0,100}"{1,20}({alert_name}[^,]{1,2000}?)",""",
+    """"{1,20}report_id"{1,20}:\s{0,100}"{1,20}({alert_id}[^"]{1,2000}?)"{1,20}""",
+    """"process_name"{1,20}:"{1,20}({process_name}[^"]{1,2000})""",
+    """"threat_cause_actor_name"{1,20}:"{1,20}({process}({process_directory}[^"]{1,2000})\\({process_name}[^"]{1,2000}))"""",
+    """"threat_cause_actor_process_pid"{1,20}:"{1,20}({pid}[^"]{1,2000})""",
+    """device_internal_ip"{1,20}:"{1,20}({src_ip}[A-Fa-f.:\d]{1,2000})"""
+  ]
+}
 ```

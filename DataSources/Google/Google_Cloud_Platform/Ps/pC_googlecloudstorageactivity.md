@@ -18,5 +18,9 @@ Name = googlecloud-storage-activity
     """callerSuppliedUserAgent":"({user_agent}[^"]{1,2000})""",
     """resource"[^\}]{1,2000}?location":"({region}[^"]{1,2000})""",
     """policyDelta"[^\}]{1,2000}?role":"roles\/({role}[^"\\\/]{1,2000})""",
-    """status.+?"code":\d{1,100}
+    """status.+?"code":\d{1,100},"message":"({failure_reason}[^"]{1,2000})""",
+    """resource"[^\}]{1,2000}?"bucket_name":"({bucket}[^"]{1,2000})""",
+    """resource":"[^"]{1,2000}objects\/({object}[^"\\\/]{1,2000})"""
+    ]
+}
 ```

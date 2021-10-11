@@ -48,5 +48,6 @@ cef-palo-alto-networks-firewall = {
     """\scategoryOutcome=\/?({outcome}.+?)\s{1,100}(\w+=|$)""",
     """\sreason=(?:n\/a|({reason}.+?))\s{1,100}(\w+=|$)""",
   ]
-
+  DupFields = [ "subtype->action" ]
+}
 ```

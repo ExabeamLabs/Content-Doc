@@ -10,5 +10,10 @@ Name = syslog-xceedium-login
   Conditions = [  """Message 18019:""", """logged in successfully""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[^\s]{1,2000})""",
-    """"{1,20}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"{1,20}\s{0,100}
+    """"{1,20}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"{1,20}\s{0,100},""",
+    ""","(|[- ]{1,2000}|({src_ip}\S+?))",((\s{0,100}"([^"]|"")+")\s{0,100},|[^",]{1,2000}?,|\s{0,100},){9}\s{0,100}"Message 18019:""",
+    """"Message 18019:\s{0,100}User\s{1,100}({user}.+?)\s{1,100}logged in successfully""",
+  ]
+  DupFields = ["host->dest_host"]
+}
 ```

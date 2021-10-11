@@ -8,7 +8,13 @@ Name = symantec-alert-jp-2
     """SymantecServer:\s{0,100}({alert_type}[^,]{1,2000})""",
     """信頼度:\s{0,100}({additional_info}[^,]{1,2000})""",
     """重要度:\s{0,100}({alert_severity}[^\s,]{1,2000})""",
-    """件数:[^,]{0,2000}
+    """件数:[^,]{0,2000},({malware_url}[^,]{1,2000})""",
+    """,IP アドレス:\s{0,100}({src_ip}[a-fA-F\d.:]{1,2000})""",
+    """送信元 IP:\s{0,100}({dest_ip}[a-fA-F\d.:]{1,2000})""",
+    """({file_path}({file_parent}[^,]{0,2000}?[\\\/]{1,2000})?(|({file_name}[^\\\/,]{0,2000}?(\.({file_ext}\w*))?)?)),,実際の処理"""
+  ]
+  DupFields = [ "host->src_host" ]
+}
 symantec-alert-jp = {
   Vendor = Symantec
   Product = Symantec Endpoint Protection
@@ -28,5 +34,5 @@ symantec-alert-jp = {
     """,アプリケーションハッシュ:\s{0,100}({sha256}[^,]{1,2000}?)(,|\s{0,100}$)""",
     """,件数:[^,]{0,2000},({file_path}({file_parent}[^,]{0,2000}?[\\\/]{1,2000})?({file_name}[^\.\\\/]{0,2000}?(\.({file_ext}\w+))?))\s{0,100}(,|\s{0,100}$)""",
   ]
-
+}
 ```

@@ -23,5 +23,23 @@ Name = symantec-epp-ntp-alert
     """Application:(?:\s{1,100}|\s{0,100}({process}({directory}(?:[^,]{1,2000})?[\\\/])?({process_name}[^\\\/,]{1,2000}?))),""",
     """CIDS Signature ID:\s{0,100}({alert_name}\d{1,100}),""",
     """Intrusion ID:\s{0,100}({alert_id}\d{1,100}),""",
-    """CIDS Signature string:\s{0,100}(|({alert_type}[^:,]{1,2000}?))\s{0,100}
+    """CIDS Signature string:\s{0,100}(|({alert_type}[^:,]{1,2000}?))\s{0,100},""",
+    """CIDS Signature string:\s{0,100}(|({alert_name}[^:,]{1,2000})),""",
+    """CIDS Signature string:\s{0,100}({alert_type}[^:,]{1,2000}?)\s{0,100}:\s{0,100}({alert_name}[^,]{1,2000})""",
+    """Intrusion URL:(?:\s{1,100}|\s{0,100}({malware_url}[^,]{1,2000})),""",
+    """CIDS Signature ID:\s{0,100}({alert_id}\d{1,100}),""",
+    """\d\d:\d\d:\d\d,\s{0,100}({alert_severity}Minor|Info|Critical|Major|Security risk found|Virus found)""",
+    """Attack:\s{0,100}({additional_info}[^\.:]{1,2000})""",
+    """exabeam_host=({host}[\w.\-]{1,2000})""",
+    """\w{3}\s{1,100}\d{1,2}\s\d{1,2}:\d{1,2}:\d{1,2}\s({host}[\w\.-]{1,2000})\s""",
+    """({host}[^\s,]{1,2000}),SHA-256:""",
+  ]
+  DupFields = ["directory->process_directory"]
+  SOAR {
+    IncidentType = "malware"
+    DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->malwareName", "alert_id->sourceId", "src_ip->malwareVictimHost", "malware_url->malwareAttackerUrl", "dest_ip->malwareAttackerIp"]
+    NameTemplate = """Symantec Alert ${alert_name} found"""
+    ProjectName = "SOC"
+    EntityFields = [
+      {EntityType="device", Name="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]}
 ```

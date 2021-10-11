@@ -30,5 +30,5 @@ s-crowdstrike-app-login = {
     """"ServiceName":\s{0,100}"({app}[^"]{1,2000})""",
     """"Success":\s{0,100}({outcome}[^",]{1,2000})"""
   ]
-
+}
 ```

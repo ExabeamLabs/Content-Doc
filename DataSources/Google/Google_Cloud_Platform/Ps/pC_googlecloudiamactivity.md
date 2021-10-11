@@ -19,5 +19,10 @@ Name = googlecloud-iam-activity
      """"callerSuppliedUserAgent":"({user_agent}[^"]{1,2000})""",
      """"resource"[^=]{1,2000}?location":"({region}[^"]{1,2000})""",
      """"policyDelta"[^=]{1,2000}?"role":"roles\/({role}[^"\\\/]{1,2000})""",
-     """"status"[^=]{1,2000}?"code":\d{1,100}
+     """"status"[^=]{1,2000}?"code":\d{1,100},"message":"({failure_reason}[^"]{1,2000}?)\s{0,100}"""",
+     """"logName":".*\/cloudaudit.googleapis.com\/({log_type}[^"]{1,2000})""",
+     """"resource"[^=]{0,2000}?project_id":"({account}[^"]{1,2000})""",
+     """"resource"[^=]{0,2000}?"type":"({resource_type}[^"]{1,2000})"""
+  ]
+}
 ```

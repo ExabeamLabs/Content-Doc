@@ -16,5 +16,14 @@ Name = cef-member-added-2003
     """\srt=({time}\d{1,100})""",
     """\ssntdom=({domain}[^\s]{1,2000})""",
     """\ssuser=({user}.+?)\s{1,100}\w+=""",
-    """\ssuid=\([^,]{1,2000}
+    """\ssuid=\([^,]{1,2000},({logon_id}[^\)]{1,2000})""",
+    """\sdntdom=({group_domain}[^\s]{1,2000})""",
+    """duser=({group_name}.+?)\s{1,100}\w+=""",
+    """\scs6=({account_dn}.+?)\s{1,100}\w+=""",
+    """\scs6=(.+?CN\\?=.+?,({account_ou}(OU)?.+?DC\\?=[\w-]{1,2000}))\s\w+=""",
+    """\sdvchost=({host}[^\s]{1,2000})""",
+    """\sduid=({group_id}.+?)\s{1,100}\w+=""",
+  ]
+  DupFields = [ "host->dest_host" ]
+}
 ```

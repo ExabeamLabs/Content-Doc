@@ -33,5 +33,29 @@ Name = crowdstrike-security-alert-2
       """"SHA256String":"({sha256}[^"]{1,2000})""",
       """SensorId":"({sensor_id}[^"]{1,2000})""",
       """"GrandparentImageFileName\\*":\\*"({grandparent_image_filename}[^,]{1,2000}?)\\*"{1,20}""",
-      """"GrandparentCommandLine\\*"{1,20}:\s{0,100}\\*"{1,20}({grandparent_command_line}[^,]{1,2000}?)\\*"{1,20}
+      """"GrandparentCommandLine\\*"{1,20}:\s{0,100}\\*"{1,20}({grandparent_command_line}[^,]{1,2000}?)\\*"{1,20},""",
+      """"ParentImageFileName\\*":\s{0,100}\\*"({parent_image_filename}[^,]{1,2000}?)\\*"{1,20},""",
+      """"ParentCommandLine\\*":\s{0,100}\\*"({parent_command_line}[^,]{1,2000}?)"{1,20},""",
+      """"PatternDispositionDescription\\*":\s{0,100}\\*"({pattern_disposition_description}[^"]{1,2000})""",
+      """"FalconHostLink\\*":\s{0,100}\\*"({falcon_host_link}[^"]{1,2000})""",
+      """"BootupSafeguardEnabled":\s{0,100}({bootup_safeguard_enabled}true|false)""",
+      """"QuarantineFile"{1,20}:\s{0,100}({quarantine_file}true|false)""",
+      """"QuarantineMachine"{1,20}:\s{0,100}({quarantine_machine}true|false)""",
+      """"Detect"{1,20}:\s{0,100}({detect}true|false)""",
+      """"RegistryOperationBlocked"{1,20}:\s{0,100}({registry_operation_blocked}true|false)""",
+      """"KillParent"{1,20}:\s{0,100}({kill_parent}true|false)""",
+      """"FsOperationBlocked"{1,20}:\s{0,100}({fs_operation_blocked}true|false)""",
+      """"OperationBlocked"{1,20}:\s{0,100}({operation_blocked}true|false)""",
+      """"KillProcess"{1,20}:\s{0,100}({kill_process}true|false)""",
+      """"ProcessBlocked"{1,20}:\s{0,100}({process_blocked}true|false)""",
+      """"PolicyDisabled"{1,20}:\s{0,100}({policy_disabled}true|false)""",
+      """"SensorOnly"{1,20}:\s{0,100}({sensor_only}true|false)""",
+      """"CriticalProcessDisabled"{1,20}:\s{0,100}({critical_process_disabled}true|false)""",
+      """"KillSubProcess"{1,20}:\s{0,100}({kill_sub_process}true|false)""",
+      """"Rooting"{1,20}:\s{0,100}({rooting}true|false)""",
+      """"InddetMask"{1,20}:\s{0,100}({inddet_mask}true|false)""",
+      """"Indicator"{1,20}:\s{0,100}({indicator}true|false)"""
+    ]
+    DupFields = [ "directory->process_directory", "alert_type->technique", "falcon_host_link->additional_info" ]
+  }
 ```

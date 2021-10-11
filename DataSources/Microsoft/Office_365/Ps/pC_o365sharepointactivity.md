@@ -21,5 +21,21 @@ Name = o365-sharepoint-activity
     """"UserId\\*"{1,20}:\\*\s{0,100}"{1,20}(({user_email}[^"@]{1,2000}@({email_domain}[^@"\\\.]{1,2000}\.[^"]{1,2000}))|({user}[^@"]{1,2000})(@({domain}[^"]{1,2000}))?)"""",
     """"UserId\\*"{1,20}:\\*\s{0,100}"{1,20}(Teams Meeting Anonymous Participant|(({domain}[^\\\s@"]{1,2000})\\+)?({user}[^\\\s@"]{1,2000})\s)""",
     """"ClientIP\\*"{1,20}:\\*\s{0,100}"{1,20}({src_ip}[a-fA-F:\d.]{1,2000})""",
-    """"UserAgent\\*"{1,20}:\\*\s{0,100}"{1,20}({user_agent}[^"\\]{1,2000})"{1,20}
+    """"UserAgent\\*"{1,20}:\\*\s{0,100}"{1,20}({user_agent}[^"\\]{1,2000})"{1,20},""",
+    """"UserSharedWith\\*"{1,20}:\\*\s{0,100}"{1,20}({object}[^"@\\]{1,2000})""",
+    """"SourceFileName\\*"{1,20}:\\*\s{0,100}"{1,20}\s{0,100}({file_name}[^"\\]{1,2000}?)\s{0,100}"""",
+    """"SourceFileExtension\\*"{1,20}:\\*\s{0,100}"{1,20}({file_ext}[^"\\,]{1,2000})"""",
+    """"ItemType\\*"{1,20}:\\*\s{0,100}"{1,20}({file_type}[^"\\]{1,2000})""",
+    """"Workload\\*"{1,20}:\\*\s{0,100}"{1,20}({app}[^"\\]{1,2000})""",
+    """"NewValue\\*"{1,20}:\\*\s{0,100}"{1,20}({object}[^"@\\]{1,2000})""",
+    """\WfilePath=\{.*?"ObjectUrl":"({file_path}[^"]{1,2000})"""",
+    """\WfileType=({file_type}[^\s]{1,2000})""",
+    """\Wsproc=(|({user_email}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\WfilePermission=(|({permission_type}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wduser=(|({action_performer}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wsuser=(|({affected_user}[^@\s]{1,2000}@[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """src-account-name":"({account_name}[^"]{1,2000})""",
+  ]
+  DupFields = [ "accesses->activity" ]
+}
 ```
