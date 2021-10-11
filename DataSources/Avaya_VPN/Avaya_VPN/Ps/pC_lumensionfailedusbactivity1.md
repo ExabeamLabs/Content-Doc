@@ -25,6 +25,5 @@ lumension-usb-activity = {
     """Reason="({activity_details}[^"]{1,2000})""",
     """({bytes}\d{1,100}) bytes""",
   ]
-  DupFields = [ "host->dest_host" ]
-}
+
 ```

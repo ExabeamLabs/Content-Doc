@@ -41,5 +41,5 @@ checkpoint-auth = {
     """\Wsrc_machine_name:"({src_host}[\w\-.]{1,2000})""",
     """\Wifdir:"({direction}[^"]{1,2000})""",
   ]
-}
+
 ```

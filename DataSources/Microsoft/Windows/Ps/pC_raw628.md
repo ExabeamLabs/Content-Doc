@@ -18,9 +18,5 @@ Name = raw-628
       """ComputerName=({host}[\w.\-]{1,2000})""",
       """({event_code}628)""",
       """Target Account Name:\s{1,100}({target_user}.+?)\s{1,100}Target Domain:\s{1,100}({target_domain}.+?)\s{1,100}Target Account ID:\s\%\{({target_user_sid}[^}]{1,2000})\}""",
-      """Caller User Name:\s{1,100}(?=\w)({user}.+?)\s{1,100}Caller Domain:\s{1,100}(?=\w)({domain}.+?)\s{1,100}Caller Logon ID:\s{1,100}\([^,]{1,2000},({logon_id}[^\)]{1,2000})""",
-      """Caller User Name:\s{1,100}({user}.+?)\s{1,100}Caller Domain:\s{1,100}({domain}.+?)\s{1,100}Caller Logon ID:\s{1,100}\(.+?\s{1,100}({logon_id}[^\s)]{1,2000})\)"""
-    ]
-    DupFields=["host->dest_host" ]
-  }
+      """Caller User Name:\s{1,100}(?=\w)({user}.+?)\s{1,100}Caller Domain:\s{1,100}(?=\w)({domain}.+?)\s{1,100}Caller Logon ID:\s{1,100}\([^,]{1,2000}
 ```

@@ -38,5 +38,5 @@ cef-sap-app-activity = {
     """cs4=({result_code}\d{1,100})""", 
     """amac=({mac}.*?)\s\w+="""
   ]
-}
+
 ```

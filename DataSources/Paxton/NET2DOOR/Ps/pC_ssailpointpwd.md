@@ -30,5 +30,5 @@ s-sailpoint-activity = {
     """"id":\s{0,100}"({fingerprint}[^"]{1,2000})",""",
     """"type":\s{0,100}"((NONE)|({event_subtype}[^"]{1,2000}))""""
   ]
-}
+
 ```

@@ -4,20 +4,7 @@
 Name = s-proofpoint-email-alert-2
   Conditions = [ """CEF:""", """destinationServiceName=Proofpoint""", """cat=security-alert""", """"threat""" ]
   Fields = ${PPParserTemplates.s-proofpoint-email-in-1.Fields}[
-    """"sha256"{1,20}:"{1,20}({sha256}[^"]{1,2000})"{1,20},"md5"{1,20}:"{1,20}({md5}[^"]{1,2000})"{1,20},\s{0,100}"filename":\s{0,100}"(?!text(\.txt|\.html|-calendar))""",
-    """ Category \[({category}[^\]]{1,2000}?)\]""",
-    """"url":"\s{0,100}"({malware_url}[^"]{1,2000})""",
-    """"threat":\s{0,100}"({malware_url}[^"]{1,2000})""",
-    """"threatUrl":\s{0,100}"({threat_url}[^"]{1,2000}?)"""",
-    """fromAddress":\s{0,100}\[?"({sender}[^"\s,@]{1,2000}@({external_domain}[^"\s,@]{1,2000}))"\]?""",
-    """toAddresses":\s{0,100}\[({recipients}"({recipient}[^"\s@,;]{1,2000}@({external_domain_recipient}[^"\s,;]{1,2000}))[^\]]{0,2000}?)\]""",
-    """proto=({alert_name}[^"]{1,2000}?)\s\w+=""",
-    """\Woutcome=({outcome}[^"]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
-    """"fromArray":"({outcome}clicksBlocked|clicksPermitted|messagesBlocked|messagesDelivered)""""
-  ]
-  DupFields = [ "attachment->file_name", "sender->external_address", "recipient->user_email" ]
-
-}
+    """"sha256"{1,20}:"{1,20}({sha256}[^"]{1,2000})"{1,20}
 s-proofpoint-email-in-1 = {
   Vendor = Proofpoint
   Product = Proofpoint TAP
@@ -53,6 +40,5 @@ s-proofpoint-email-in-1 = {
     """"messageID":\s{0,100}"<?({message_id}[^>"]{1,2000})""",
     """src-account-name":"({account_name}[^"]{1,2000})"""
   ]
-  DupFields = [ "attachment->file_name", "sender->external_address" ]
-}
+
 ```

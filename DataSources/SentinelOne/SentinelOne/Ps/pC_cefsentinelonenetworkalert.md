@@ -27,5 +27,5 @@ cef-sentinelone-security-alert = {
       """\sprocessName:(|({process_name}.+?))(\s{1,100}\w+:|\s{0,100}$)""",
       """\sid:(|({alert_id}.+?))(\s{1,100}\w+:|\s{0,100}$)""",
     ]
- 
+
 ```

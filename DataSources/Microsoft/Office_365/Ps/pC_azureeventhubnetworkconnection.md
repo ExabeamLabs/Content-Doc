@@ -49,5 +49,5 @@ azure-event-hub-network-events = {
       """"app":\{.*?displayName":"({app}[^",]{1,2000})""",
       """loggedByService":"({app}[^",]{1,2000})"""
    ]
- 
+
 ```

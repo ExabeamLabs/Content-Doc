@@ -6,9 +6,7 @@ Name = raw-pan-vpn-app-activity
   Conditions = [ """,GLOBALPROTECT,"""]
   Fields = ${PaloAltoParserTemplates.raw-pan-vpn-event.Fields}[
     """,({app}GLOBALPROTECT),""",
-    """GLOBALPROTECT,([^,]{0,2000},){10}({src_host}[\w\-.]{1,2000}),"""
-  ]
-}
+    """GLOBALPROTECT,([^,]{0,2000}
 raw-pan-vpn-event = {
   Vendor = Palo Alto Networks
   Product = GlobalProtect
@@ -30,5 +28,5 @@ raw-pan-vpn-event = {
     """GLOBALPROTECT,([^,]{0,2000},){19}"{0,20}(|({device_type}[^=]{1,2000}?))"{0,20}\s{0,100},""",
     """GLOBALPROTECT,([^,]{0,2000},){10}({src_host}[^,]{1,2000})"""
   ]
-}
+
 ```

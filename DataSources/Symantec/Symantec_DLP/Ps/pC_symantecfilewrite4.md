@@ -34,4 +34,10 @@ symantec-file-template = {
     ]  
   }
 }
+SymantecParsers = [
+
+${SymantecParserTemplates.symantec-usb-activity}{
+  Name = symantec-usb-read-1
+  Conditions = [ """type":"""", ""","device":"""", """"action":"File Read"""" ]
+
 ```

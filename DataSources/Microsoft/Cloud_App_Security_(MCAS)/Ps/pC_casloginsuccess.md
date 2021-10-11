@@ -23,6 +23,5 @@ cas-template = {
       """ACTION: ({activity}[^#\s]{1,2000})"""
       """service=({object}[^,]{1,2000})"""
     ]
-    DupFields = ["domain->email_domain"]
- 
+
 ```

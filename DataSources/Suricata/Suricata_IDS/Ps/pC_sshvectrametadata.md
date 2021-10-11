@@ -26,6 +26,5 @@ vectra-meta-data = {
     """orig_hostname="{1,20}({src_host}[^"]{1,2000})"{1,20}"""
     """resp_hostname="{1,20}(null|((IP-)*({dest_host}[^"]{1,2000})))"""
   ]
- }
-}
+
 ```

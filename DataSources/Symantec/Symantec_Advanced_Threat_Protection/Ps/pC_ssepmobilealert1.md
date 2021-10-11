@@ -29,6 +29,5 @@ s-sep-mobile-alert = {
     """"severity":\s{0,100}"({alert_severity}[^"]{1,2000})".+?"id":\s{0,100}({alert_id}\d{1,100})""",
     """"model":\s{0,100}"({device_model}[^"]{1,2000})"""",
   ]
-  DupFields = [ "src_host->device_name" ]
-}
+
 ```

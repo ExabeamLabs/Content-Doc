@@ -42,6 +42,5 @@ symantec-epp-cef-alert-1 = {
       """\scs3=({secondary_action}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
       """\scs5=((?i)(\(Unknown\) \[-1\])|({process_name}[^=]{1,2000}?))\s{1,100}(\w+=|$)""",
     ]
-    DupFields = [ "alert_type->protection_name" ]
- 
+
 ```

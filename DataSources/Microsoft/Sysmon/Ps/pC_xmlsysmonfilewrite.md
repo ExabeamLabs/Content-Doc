@@ -29,5 +29,5 @@ xml-sysmon-activity = {
     """<Data Name='ProcessGuid'>\{({process_guid}.+?)\}<\/Data>""",
     """<Data Name='ProcessId'>({pid}\d{1,100})""",
   ]
-}
+
 ```

@@ -34,5 +34,5 @@ leef-pan-alert = {
     """\|SourceZone=({src_network_zone}[^\|]{1,2000}?)\|""",
     """\|DestinationZone=({dest_network_zone}[^\|]{1,2000}?)\|""",
     ]
-}
+
 ```

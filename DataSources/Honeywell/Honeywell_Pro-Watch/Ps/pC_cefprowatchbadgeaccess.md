@@ -12,8 +12,5 @@ Name = cef-prowatch-badge-access
       """exabeam_host=([^=]{0,2000}@\s{0,100})?({host}[^\s]{1,2000})""",
       """\srt=({time}\d{1,100})""",
       """\|ProWatch\|Access System\|([^\|]{0,2000}\|){2}({outcome}[^\|]{1,2000})\|""",
-      """\sduser=\s{0,100}({last_name}[^,]{1,2000}?)\s{0,100},\s{0,100}({first_name}.+?)\s{1,100}\w+=""",
-      """\scs6=\s{0,100}(Empty|({location_door}\S.*?))\s{1,100}\w+=""",
-    ]
-  }
+      """\sduser=\s{0,100}({last_name}[^,]{1,2000}?)\s{0,100}
 ```

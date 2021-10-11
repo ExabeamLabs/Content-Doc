@@ -35,5 +35,5 @@ citrix-app-activity = {
       """"Action":"({action}[^"]{1,2000})""",
       """"Company":"(\\|({company}[^"]{1,2000}?))\s{0,100}"""",
     ]
- 
+
 ```

@@ -31,5 +31,5 @@ s-mvision-dlp-alert = {
       """"threatactiontaken":\s{0,100}"({outcome}[^"]{1,2000})"""",
       """"RuleNames":\s{1,100}"({rule_name}[^"]{1,2000})"""",
     ]
- 
+
 ```

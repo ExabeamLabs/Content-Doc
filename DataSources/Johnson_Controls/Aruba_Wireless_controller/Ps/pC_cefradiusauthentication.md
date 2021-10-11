@@ -26,7 +26,5 @@ cef-aruba-nac-logon-1 = {
     """cs1=({dest_ip}.+?)\s\w+=""",
     """cs4=({service}.+?)\s\w+=""",
    ]
-  DupFields = [ "dest_ip->auth_server" ]  
- }
-}
+
 ```

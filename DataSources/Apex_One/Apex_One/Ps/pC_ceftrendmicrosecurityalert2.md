@@ -39,5 +39,5 @@ cef-trendmicro-security-alert = {
     """\sfilePath=({malware_url}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\sfileHash=({md5}\w+)(\s{1,100}\w+=|\s{0,100}$)"""
   ]
-}
+
 ```

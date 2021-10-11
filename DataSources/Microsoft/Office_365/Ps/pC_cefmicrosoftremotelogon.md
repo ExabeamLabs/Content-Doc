@@ -36,5 +36,5 @@ cef-azure-app-activity-1 = {
     """"DestinationIpAddress","value":"({dest_ip}[a-fA-F\d.:]{1,2000})"""",
     """"Protocol","value":"({protocol}[^"]{1,2000})""""
   ]
-}
+
 ```

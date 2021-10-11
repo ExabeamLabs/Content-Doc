@@ -22,5 +22,5 @@ q-pan-vpn-parser = {
     """Client OS( version)?:\s{1,100}({os}[^":]{1,2000})(,|\.)""",
     """Login from:\s{0,100}({src_ip}[a-fA-F\d.:]{1,2000})"""
   ]
-}
+
 ```

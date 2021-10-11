@@ -29,5 +29,5 @@ digital-guardian-activity = {
     """\sApplication="({process_name}[^"]{1,2000})""",
     """\sSource_File="({src_file_name}[^=]{1,2000}?)\s{0,100}"\s{0,100}\w+=""",
   ]
-}
+
 ```

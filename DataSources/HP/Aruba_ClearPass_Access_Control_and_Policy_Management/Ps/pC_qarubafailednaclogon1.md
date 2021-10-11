@@ -23,6 +23,5 @@ q-aruba-nac-logon = {
     """Common\.Host-MAC-Address=({src_mac}\w+)""",
     """Common\.NAS-IP-Address=({dest_ip}[A-Fa-f:\d.]{1,2000})"""
   ]
-  DupFields = [ "host->auth_server" ]
-}
+
 ```

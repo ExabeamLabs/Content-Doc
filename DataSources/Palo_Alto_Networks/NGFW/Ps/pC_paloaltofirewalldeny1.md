@@ -4,11 +4,7 @@
 Name = paloalto-firewall-deny-1
     Conditions = [""",TRAFFIC,deny,"""]
     Fields = ${PaloAltoParserTemplates.paloalto-firewall.Fields}[
-     """TRAFFIC,([^,]{0,2000},){42}({outcome}.*?)\s{0,100}(,|$)"""
-     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[^\s]{1,2000})""",
-     """\s({host}[\w.-]{1,2000})[\s-]{1,2000}(\[.*?\]\s{1,100})?\d{1,100},([^,]{0,2000},){2}TRAFFIC,""",
-    ]
-}
+     """TRAFFIC,([^,]{0,2000}
 paloalto-firewall = {
    Vendor = Palo Alto Networks
    Product = NGFW
@@ -48,6 +44,5 @@ paloalto-firewall = {
      """TRAFFIC,([^,]{0,2000},){37}({src_country}[^\.:]{0,2000}?)\s{0,100},""",
      """TRAFFIC,([^,]{0,2000},){38}({dest_country}[^\.:]{0,2000}?)\s{0,100},""",
    ]
-   DupFields = [ "src_user->user" ]
-}
+
 ```

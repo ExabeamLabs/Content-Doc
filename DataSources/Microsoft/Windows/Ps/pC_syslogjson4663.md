@@ -21,11 +21,5 @@ Name = syslog-json-4663
     """"SubjectLogonId":"({logon_id}[^"]{1,2000})""",
     """"ObjectType":"({file_type}[^"]{1,2000})""",
     """"ObjectName":"({file_path}[^"]{1,2000})""",
-    """"ObjectName"{1,20}:".*\\({file_name}(?:[^\\:]{1,2000}(?=\.))({file_ext}\.[^\\:\s]{1,2000})?|[^\\:\s]{1,2000})"{1,20},"{1,20}HandleId""",
-    """"ObjectName":"{1,20}(?:({file_parent}.+?)\\+[^\\]{1,2000})","HandleId"""",
-    """"ProcessName":"({process}({directory}(?:[^"]{1,2000})?[\\\/])?({process_name}[^\\\/"]{1,2000}))"""",
-    """Access Request Information:[rnt\\]{0,2000}Accesses:[rnt\\]{0,2000}({accesses}[^:]{1,2000}?)[rnt\\]{0,2000}Access Mask:[rnt\\]{0,2000}({access_mask}\w+)"""
-  ]
-  DupFields = [ "host->dest_host","directory->process_directory" ]
-}
+    """"ObjectName"{1,20}:".*\\({file_name}(?:[^\\:]{1,2000}(?=\.))({file_ext}\.[^\\:\s]{1,2000})?|[^\\:\s]{1,2000})"{1,20}
 ```

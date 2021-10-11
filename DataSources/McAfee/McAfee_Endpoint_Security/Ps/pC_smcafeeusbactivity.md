@@ -14,11 +14,5 @@ Name = s-mcafee-usb-activity
         """UTCTime:\s{0,100}"({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
 	"""exabeam_host=({host}[^\s]{1,2000})""",
 	"""ComputerName(=|:)\s{0,100}"({dest_host}[^"]{1,2000})"""",
-	"""Evidence(=|:)\s{0,100}"([^,]{0,2000},){4}\s{0,100}({device_id}.+?)(\"|&\d|,)""",
-	"""Evidence(=|:)\s{0,100}"([^,]{0,2000},)\s{0,100}({device_type}[^,]{1,2000})""",
-	"""EventType_LocalizationKey(=|:)\s{0,100}"({activity}[^"]{1,2000})"""",
-	"""UserName(=|:)\s{0,100}"(({domain}[^\\]{1,2000})\\)?({user}[^"]{1,2000})"""",
-	"""FocusDisplay(=|:)\s{0,100}"({activity_details}[^"]{1,2000})"""",
-    ]
-  }
+	"""Evidence(=|:)\s{0,100}"([^,]{0,2000}
 ```

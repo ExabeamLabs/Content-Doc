@@ -40,6 +40,5 @@ sonicwall-firewall = {
     """\srule="({rule}[^"]{1,2000})""",
     """\sfw_action="(NA|({action}[^"]{1,2000}))"""
   ]
-  DupFields = [ "message_id->alert_type" ]
-}
+
 ```

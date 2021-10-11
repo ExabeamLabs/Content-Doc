@@ -9,8 +9,5 @@ Name = r-syslog-chkpnt-vpn-end
   TimeFormat = "ddMMMyyyy HH:mm:ss"
   Conditions = [ """%CHKPNT-6-031085: authcrypt""", """disconnected from gateway""" ]
   Fields = [
-    """disconnected from gateway,([^,]{0,2000},){14}({time}[^,]{1,2000})""",
-    """exabeam_host=({host}[^\s]{1,2000})""",
-    """disconnected from gateway,([^,]{0,2000}?,)({user}[^,]{1,2000})""" ]
-}
+    """disconnected from gateway,([^,]{0,2000}
 ```

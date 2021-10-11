@@ -21,12 +21,5 @@ Name = wls-4663
     """SubjectLogonId="{1,20}({logon_id}[^"]{1,2000})"""",
     """ObjectType="{1,20}({file_type}[^"]{1,2000})""",
     """ObjectName="{1,20}({file_path}[^"]{1,2000})""",
-    """ObjectName="{1,20}.*\\({file_name}(?:[^\\:]{1,2000}(?=\.))({file_ext}\.[^\\:]{1,2000})?|[^\\:]{1,2000})"{1,20},\s{0,100}ObjectServer=""",
-    """ObjectName="{1,20}(?:({file_parent}.+?)\\+[^\\]{1,2000})",""",
-    """ProcessName="{1,20}({process}({directory}(?:[^"]{1,2000})?[\\\/])?({process_name}[^\\\/"]{1,2000}))"""",
-    """AccessList="({accesses}[^"]{1,2000})""",
-    """AccessMask="({access_mask}[^"]{1,2000})"""
-  ]
-  DupFields = [ "host->dest_host","directory->process_directory" ]
-}
+    """ObjectName="{1,20}.*\\({file_name}(?:[^\\:]{1,2000}(?=\.))({file_ext}\.[^\\:]{1,2000})?|[^\\:]{1,2000})"{1,20}
 ```

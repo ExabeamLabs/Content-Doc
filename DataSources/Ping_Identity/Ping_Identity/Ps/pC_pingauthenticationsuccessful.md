@@ -21,5 +21,5 @@ ping-authentication_events = {
       """exabeam_host=({host}[^\s]{1,2000})""",
       """"name":\s"({user}[^"]{1,2000})"""",
     ]
- 
+
 ```
