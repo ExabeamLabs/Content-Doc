@@ -21,7 +21,7 @@ cef-microsoft-app-activity = {
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
-    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}\S{1,2000})""",
     """activityDate":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """env_time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """"CreationTime\\*"{1,20}:[\s\\]{0,2000}"{1,20}({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100})""",
@@ -40,7 +40,8 @@ cef-microsoft-app-activity = {
     """"ResultStatus":"({result}[^"]{1,2000}?)"""",
     """\sdestinationServiceName\s{0,100}=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\ssourceServiceName=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
-    """"User-Agent\\?"{1,20}:\\?"{1,20}({user_agent}[^"\\]{1,2000})"""
+    """"User-Agent\\?"{1,20}:\\?"{1,20}({user_agent}[^"\\]{1,2000})""",
+    """"ipAddress":"({dest_ip}[A-Fa-f.:\d]{1,2000})""""
   ]
 }
 ```

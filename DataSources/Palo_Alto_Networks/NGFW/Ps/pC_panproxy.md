@@ -27,7 +27,7 @@ Name = pan-proxy
     """THREAT,url,([^,]{0,2000},){26}"[^"]{0,2000}?({top_domain}(?!(?:\d{1,100}\.){3}\d{1,100})[^,"\.\s:]{1,2000}(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|digital|cool|network|im|as|ke|fm|mx|br|citrix|live|ms))+(\"|\/|:))[^\/]{1,2000}).*?",\(9999\),""",
     """\(9999\),([^,]{0,2000},){16}(|"?({referrer}[^,"\s]{1,2000}?)"?)\s{0,100},([^,]{0,2000},){13}(|({method}[^,"\s]{1,2000}?))\s{0,100},""",
     """,(?i)({method}connect|get|head|post),"""
-    """THREAT,url,([^,]{0,2000},){26}("{1,20})?[^\s"]{1,2000}?({web_domain}[^\/\.\s]{1,2000}(?i)(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|ai|ms|mx|))+)[\\\/\s:"]""",
+    """THREAT,url,([^,]{0,2000},){26}("{1,20})?[^\s"]{0,2000}?({web_domain}[^\/\.\s]{1,2000}(?i)(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|ai|ms|mx|))+)[\\\/\s:"]""",
     """\(9999\),(("[^"]{1,2000}?"|[^,]{0,2000}),){36}(N/A|unknown|({threat_category}[^,]{1,2000})),""",
     """\(9999\),({category}[^,]{1,2000}),"""
     """THREAT,url,([^,]{0,2000},){6}({rule}[^,]{1,2000})""",
