@@ -32,7 +32,7 @@ Name = cef-o365-app-login-1
       """countryOrRegion":"({country_code}[^",]{1,2000})""",
       """"browser":"({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident|IE|Edge)""",
       """"operatingSystem":"({os}[^",]{1,2000})"""",
-      """deviceDetail":\{[^\}]{1,2000}?displayName":"({src_host}[^",]{1,2000})"""",
+      """deviceDetail":\{[^\}]{1,2000}?displayName":"({src_host}[^",]{1,2000}?)\s{0,100}"""",
       """conditionalAccessStatus":"({status}[^",]{1,2000})"""",
       """"clientAppUsed":"({object}[^",]{1,2000})""",
       """"resourceDisplayName":"({resource}[^",]{1,2000})"""
