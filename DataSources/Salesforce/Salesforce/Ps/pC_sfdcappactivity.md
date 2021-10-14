@@ -17,7 +17,6 @@ Name = sfdc-app-activity
     """METHOD_NAME="?({activity}[^",]{1,2000})""",
     """action="?({activity}[^",]{1,2000})""",
     """CLIENT_NAME="?({user_agent}[^",]{1,2000})""",
-    """CLIENT_NAME="?[^",]{1,2000}?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)""",
     """CLIENT_IP="?({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """Username="?({user_email}[^"\s,@]{1,2000}@[^"\s,]{1,2000})""",
     """USER_ID="?({user}[^"\s,]{1,2000})""",

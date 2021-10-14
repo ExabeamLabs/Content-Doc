@@ -18,7 +18,6 @@ Name = s-dropbox-logins-activity
       """"event_type_description":\s{0,100}"({additional_info}[^"]{1,2000})"""",
       """"ip_address":\s{0,100}"({src_ip}[a-fA-F\d.:]{1,2000})""",
       """"display_name":\s{0,100}"({user_agent}[^"]{1,2000})"""",
-      """"display_name":\s{0,100}"Mozilla[^"]{0,2000}?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^"]{0,2000}?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
     ]
   }
 ```

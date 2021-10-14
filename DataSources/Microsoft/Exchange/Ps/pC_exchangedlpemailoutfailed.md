@@ -14,7 +14,7 @@ Name = exchange-dlp-email-out-failed
     """({additional_info}\w+,FAIL),""",
     """({action}FAIL)""",
     """,FAIL,\s{0,100}({alert_id}\d{1,100})""",
-    """,\s{0,100}(?:'|")?([^,]{1,2000}Recipients_cn\=)?({recipients}({recipient}[^,;'"\s@]{1,2000}@({external_domain}[^,;'"\s@]{1,2000}))[^,]{0,2000}?)\s{0,100}(?:'|")?,([^,]{0,2000},){9}Originating,""",
+    """,\s{0,100}(?:'|")?([^,]{1,2000}Recipients_cn\=)?({recipients}({recipient}[^,;'"\s@]{1,2000}@[^,;'"\s@]{1,2000})[^,]{0,2000}?)\s{0,100}(?:'|")?,([^,]{0,2000},){9}Originating,""",
     """,\s{0,100}(({bytes}\d{1,100})|)\s{0,100},\s{0,100}(({num_recipients}\d{1,100})|)\s{0,100},([^,]{0,2000},){6}Originating,""",
     """,\s{0,100}({subject}[^,]{1,2000}?)\s{0,100},([^,]{0,2000},){3}Originating,""",
     """,\s{0,100}'({subject}(?:[^']|'')+?)\s{0,100}'\s{0,100},([^,]{0,2000},){3}Originating,""",

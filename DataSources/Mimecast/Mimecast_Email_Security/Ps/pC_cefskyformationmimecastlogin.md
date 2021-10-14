@@ -23,8 +23,6 @@ Name = cef-skyformation-mimecast-login
     """\WIP:\s{0,100}({src_ip}[A-Fa-f\d:.]{1,2000})""",
     """"user":"({user_email}[^"]{1,2000})""",
     """"user(A|a)gent"\s{0,100}:\s{0,100}"({user_agent}[^"]{1,2000}?)"\s{0,100}[,\}\]]""",
-    """"user(A|a)gent"\s{0,100}:\s{0,100}"({browser}[\w\-]{1,2000})\/[\d\._]{1,2000}""",
-    """"user(A|a)gent"\s{0,100}:\s{0,100}"Mozilla\/[^"]{1,2000}\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^"]{1,2000}?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
   ]
 }
 ```

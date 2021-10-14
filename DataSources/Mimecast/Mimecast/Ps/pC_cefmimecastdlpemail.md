@@ -19,8 +19,9 @@ Name = cef-mimecast-dlp-email
     """"Dir":"({direction}[^"]{1,2000}?)""""
     """"IP":"({src_ip}[A-Fa-f\d:.]{1,2000})"""",
     """"aCode":"(|({alert_id}[^"]{1,2000}?))"""",
-    """"Rcpt":"({external_address}[^\s@;,]{1,2000}@({external_domain}[^\s@;,"]{1,2000}))""",
-    """"Sender":"(<>|({sender}({external_address}[^\s@;,]{1,2000}@({external_domain}[^\s@;,"]{1,2000}))))"""", 
+    """"Rcpt":"({external_address}[^\s@;,]{1,2000}@[^\s@;,"]{1,2000})""",
+    """Dir=Inbound[^\}]{1,2000}?"Sender":"(<>|({external_address}[^\s@;,]{1,2000}@[^\s@;,"]{1,2000}))"""", 
+    """"Sender":"(<>|({sender}[^"]{1,2000}))""""
   ]
 }
 ```

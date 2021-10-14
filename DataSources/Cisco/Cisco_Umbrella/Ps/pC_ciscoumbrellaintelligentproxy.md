@@ -26,7 +26,6 @@ Name = cisco-umbrella-intelligent-proxy
    """"InternalIP_s"{1,20}:"{1,20}({src_ip}[^"]{1,2000})?"{1,20},"""
    """URL_s"{1,20}:"{1,20}\s{0,100}[^"]{1,2000}?({uri_query}\?[^\s"]{1,2000})""",
    """URL_s"{1,20}:"{1,20}\s{0,100}(?:-|\w+:\/+)({web_domain}[^\s\/"]{1,2000})""",
-   """URL_s"{1,20}:"{1,20}([^.\s"]{1,2000}?.)({top_domain}[^\.]{1,2000}(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)""",
    """"{1,20}URL_s"{1,20}:"{1,20}.[^"]{1,2000}?:\/*([^\/"]{1,2000})\/({uri_path}[^\s"]{1,2000})"""
    ]
 }

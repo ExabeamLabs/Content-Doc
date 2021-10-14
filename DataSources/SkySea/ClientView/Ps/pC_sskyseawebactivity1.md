@@ -15,6 +15,6 @@ Name = s-skysea-web-activity-1
     """Web書き込み,([^,]{0,2000},){23}({uri_query}[^,]{0,2000}),""",
     """({method}Web書き込み)""",
   ]
-  DupFields = ["web_domain->top_domain", "method->action"]
+  DupFields = ["method->action"]
 }
 ```

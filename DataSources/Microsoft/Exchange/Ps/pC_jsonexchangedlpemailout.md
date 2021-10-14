@@ -20,7 +20,6 @@ Name = json-exchange-dlp-email-out
     """internal_message_id":"{0,20}(?:|({alert_id}[^",]{1,2000}))"{0,20},""",
     """recipient_address":"(?:|({recipients}[^\"]{1,2000}))",""",
     """recipient_address":"(?:|({external_address}[^,;@]{1,2000}@[^;,"']{1,2000}))",""",
-    """recipient_address":"[^@]{1,2000}@({external_domain}[^";,]{1,2000})""",
     """total_bytes":"{0,20}(?:|({bytes}\d{1,100}))"{0,20},""",
     """recipient_count":"{0,20}(?:|({num_recipients}\d{1,100}))"{0,20},""",
     """message_subject":"(?:|({subject}[^\"]{1,2000}))",""",

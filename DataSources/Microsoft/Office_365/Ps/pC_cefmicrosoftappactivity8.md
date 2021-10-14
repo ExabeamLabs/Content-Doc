@@ -23,7 +23,7 @@ cef-microsoft-app-activity = {
     """CEF:([^\|"]{0,2000}\|){5}({activity}[^\|"]{1,2000})""",
     """\sflexString1=({activity}[^=]{1,2000}?)\.?\s{1,100}(\w+=|$)""",
     """"ObjectId":"(Unknown|Not Available|({object}[^"]{1,2000}?))\s{0,100}"""",
-    """\sfname=\s{0,100}({object}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
+    """\sfname=\s{0,100}({object}[^=]{1,2000}?)\s{0,100}(\w+=|$)""",
     """\sfname=\s{0,100}({file_name}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\Wmsg=({additional_info}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\ssuser=((\w+?_)?(\w+-)?\w+-\w+-\w+-\w+|(Unknown|Microsoft Intune|Microsoft Teams Services|Microsoft Online Services|Office 365 SharePoint Online|anonymous|EMPTY\.*|({user_email}[^@\s]{1,2000}@[^@\s]{1,2000})|(({domain}[^\\\s@]{1,2000})\\)?(system|({user}[^@\s]{1,2000}))|(Sync Client|Office365 Backend Process|Device Registration Service|({user_fullname}[\w,\s]{1,2000}?))))\s{1,100}(\w+=|$)""",
@@ -33,7 +33,8 @@ cef-microsoft-app-activity = {
     """"ResultStatus":"({result}[^"]{1,2000}?)"""",
     """\sdestinationServiceName\s{0,100}=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\ssourceServiceName=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
-    """"User-Agent\\?"{1,20}:\\?"{1,20}({user_agent}[^"\\]{1,2000})""",
+    """"User-Agent\\?"{1,20}:\\?"{1,20}({user_agent}[^"\\]{1,2000})"""
+    """"UserAgent":"({user_agent}[^"]+)"""",
     """"ipAddress":"({dest_ip}[A-Fa-f.:\d]{1,2000})""""
   ]
 }

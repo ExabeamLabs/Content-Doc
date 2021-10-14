@@ -14,6 +14,6 @@ Name = s-skysea-web-activity-2
     """,Webアクセス,[^,]{0,2000},[^,]{0,2000},({full_url}(({protocol}[^:\\\/\s,"]{1,2000}):[\\\/]{1,2000})?({web_domain}[^\\\/\s:,"]{1,2000})?(:({dest_port}\d{1,100}))?({uri_path}\/[^,]{0,2000})?)""",
     """({method}Webアクセス)""",
   ]
-  DupFields = ["web_domain->top_domain", "method->action"]
+  DupFields = ["method->action"]
 }
 ```

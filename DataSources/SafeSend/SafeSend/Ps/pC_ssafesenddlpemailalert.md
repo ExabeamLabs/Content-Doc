@@ -17,7 +17,7 @@ Name = s-safesend-dlp-email-alert
     """\Wnr_total_recipients=({num_recipients}\d{1,100})""",
     """\Wnr_internal_recipients=({num_internal_recipients}\d{1,100})""",
     """\Wnr_external_recipients=({num_external_recipients}\d{1,100})""",
-    """\Wexternal_recipients="({recipients}[^"]{0,2000}?<?({recipient}[^"\s;,@>']{1,2000}@({external_domain}[^"\s;,>']{1,2000}))[^"]{0,2000})"""",
+    """\Wexternal_recipients="({recipients}[^"]{0,2000}?<?({recipient}[^"\s;,@>']{1,2000}@[^"\s;,>']{1,2000})[^"]{0,2000})"""",
     """\Wattachments="(|({attachments}[^"]{1,2000}))""",
   ]
   DupFields = [ "recipient->external_address" ]

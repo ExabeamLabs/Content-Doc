@@ -13,8 +13,8 @@ Name = s-salesforce-app-login
     """\|LoginTime="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\|SourceIp="({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\|LoginUrl="({dest_host}[^"]{1,2000})"""",
-    """\|Browser="({browser}[^"]{1,2000})"""",
-    """\|Platform="({os}[^"]{1,2000})"""",
+    """\|Browser="(Unknown|({browser}[^"]{1,2000}))"""",
+    """\|Platform="(Unknown|({os}[^"]{1,2000}))"""",
     """\|Status="({outcome}[^"]{1,2000})"""",
     """\|Application="({app}[^"]{1,2000})"""",
   ]
