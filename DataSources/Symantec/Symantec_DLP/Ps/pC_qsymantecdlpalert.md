@@ -35,7 +35,7 @@ Name = q-symantec-dlp-alert
     """\|EmailAddress=({user_email}[^\|]{1,2000}?)\s{0,100}(\||$)""",
     """\|recipients=({target}[^\|]{1,2000}?)\s{0,100}(\||$)""",
     """\|destination=({target}[^\|]{1,2000}?)\s{0,100}(\||$)""",
-    """\|incidentSnapshot=\w+:\/+[^\s]{0,2000}?((?!\d{1,3}\.\d{1,3}\.\d{1,3})({top_domain}[^\/\.\s]{1,2000}(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+))(\/|\|)""",
+    """\|incidentSnapshot=\w+:\/+[^\s]{0,2000}?((?!\d{1,3}\.\d{1,3}\.\d{1,3})({full_url}[^\s]{1,2000}))\s{0,100}(\||$)""",
     """\|matchCount=({match_count}[^\|]{1,2000}?)\s{0,100}(\||$)""",
   ]
   DupFields = [ "protocol->alert_type" ]

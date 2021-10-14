@@ -21,7 +21,6 @@ Name = watchguard-web-activity-drop
     """\srcvd_bytes="({bytes_out}\d{1,100})""",
     """\scats="({category}[^"]{1,2000})"""",
     """\ssrc_user="({user_email}[^"]{1,2000})"""",
-    """\sdstname="(?!\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})[^"]{0,2000}?({top_domain}[^\s."]{1,2000}(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)"""",
     """msg="{1,20}({proxy_action}Proxy[^"]{1,2000})"""
   ]
   DupFields = [ "user_email->user" ]

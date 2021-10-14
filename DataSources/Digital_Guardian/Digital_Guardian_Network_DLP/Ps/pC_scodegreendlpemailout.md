@@ -14,7 +14,6 @@ Name = s-codegreen-dlp-email-out
     """source="(?:\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|({user}[^"\\;]{1,2000}))"""",
     """email_sender="(?:|({sender}[^"\\]{1,2000}))"""",
     """email_recipients="({external_address}[^";]{1,2000})""",
-    """email_recipients="[^@]{1,2000}@({external_domain}[^";]{1,2000})""",
     """email_recipients="({recipients}.+?)"""",
     """inspected_document="(?:|({file_name}.+?))"""",
     """inspected_document="(?:|({attachment}.+?))"""",

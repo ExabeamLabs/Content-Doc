@@ -24,7 +24,6 @@ Name = json-exchange-dlp-email-in
     """message_subject":"(?:|({subject}[^\"]{1,2000}))",""",
     """sender_address":"(?:|({sender}[^\"]{1,2000}))",""",
     """sender_address":"(?:|({external_address}[^,;@]{1,2000}@[^;,"']{1,2000}))",""",
-    """sender_address":"[^@]{1,2000}@({external_domain}[^";,]{1,2000})""",
     """return_path":"(?:|<>|({return_path}[^\"]{1,2000}))",""",
     """recipient_address":"({recipient}[^,;@]{1,2000}@([^;,"]{1,2000}))"""
   ]

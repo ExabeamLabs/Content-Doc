@@ -16,7 +16,6 @@ Name = cef-mimecast-web-activity
     """"action":"({action}[^"]{1,2000})""",
     """"category":"(Unknown|({category}[^"]{1,2000}))""",
     """"url":"(-|({full_url}(({protocol}[^:\\\/\s,"]{1,2000}):[\\\/]{1,2000})?[\\\/]{0,2000}(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({web_domain}[^\\\/\s:,"]{1,2000}))(:({dest_port}\d{1,100}))?({uri_path}\/[^\?",]{0,2000}?)?({uri_query}\?[^"]{0,2000}?)?))\s{0,100}"""",
-    """"url":"[^\s"]{0,2000}?({top_domain}[^\\\/\.\s":]{1,2000}(?i)(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|be|gd|zip|to|live|mp|aws))+)(\/|:|")""",
   ]
 }
 ```

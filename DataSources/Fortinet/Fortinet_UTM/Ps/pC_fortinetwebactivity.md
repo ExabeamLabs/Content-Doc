@@ -32,7 +32,6 @@ Name = fortinet-web-activity
     """\Wmsg="{0,20}({additional_info}[^=]{1,2000}?)["\s]{0,2000}(\w+=|$)""",
     """\Waction="{0,20}blocked"{0,20}[^=]{1,2000}?\Wmsg="{0,20}({reason}[^=]{1,2000}?)["\s]{0,2000}(\w+=|$)""",
     """\Wmsg="{0,20}({reason}[^=]{1,2000}?)["\s]{0,2000}(\w+=|$)[^=]{1,2000}?\Waction="{0,20}blocked"{0,20}""",
-    """\Whostname="{0,20}(?!\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})([^"\s]{0,2000}\.)?({top_domain}[^\s\/."]{1,2000}(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|by|mx))+)""",
     """\Wurl="({full_url}[^"]{1,2000})"""",
     """policyid=({policy_id}\d{1,100})"""
   ]

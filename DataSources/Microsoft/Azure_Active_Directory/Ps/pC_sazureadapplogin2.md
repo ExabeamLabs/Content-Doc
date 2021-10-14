@@ -14,8 +14,6 @@ Name = s-azure-ad-app-login-2
     """ms:aad:signin"{1,20},"{1,20}({host}[^"]{1,2000})""",
     """"userPrincipalName"{1,20}:\s{0,100}"{1,20}({user_email}[^"\s@]{1,2000}@({email_domain}[^"\s@]{1,2000}))""",
     """"ipAddress"{1,20}:\s{0,100}"{1,20}({src_ip}[A-Fa-f:\d.]{1,2000})""",
-    """"browser"{1,20}:\s{0,100}"{1,20}({browser}[^"]{1,2000})""",
-    """"operatingSystem"{1,20}:\s{0,100}"{1,20}({os}[^"]{1,2000})""",
     """"userDisplayName"{1,20}:\s{0,100}"{1,20}({user_fullname}[^"]{1,2000})""",
     """"failureReason"{1,20}:\s{0,100}"{1,20}(Other|({failure_reason}[^"]{1,2000}))""",
     """"errorCode"{1,20}:\s{0,100}({error_code}\d{1,100})""",

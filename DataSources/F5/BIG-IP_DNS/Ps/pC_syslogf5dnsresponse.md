@@ -16,7 +16,6 @@ Name = syslog-f5-dns-response
     """qid\s{1,100}({query_id}\d{1,100})\s{1,100}to\s{1,100}({dest_ip}[\da-fA-F\.:]{1,2000})(#({dest_port}\d{1,100}))?:""",
     """\[({dns_response_code}\S+)\s{1,100}({response_flags}.+?)\]\s{1,100}response:""",
     """response:\s{0,100}({query}\S+?)\.?\s{1,100}({response_ttl}\d{1,100})\s{1,100}IN\s{1,100}({query_type}\S+)\s{1,100}({response}\S+);""",
-    """response:\s{1,100}([^.\s]{1,2000}\.)*({top_query}[^.\s]{1,2000}\.(?i)(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za)+)""",
     """response:\s{0,100}({full_response}.+?)\s{0,100}$"""
   ]
   DupFields = ["src_ip->host", "src_host->host"]

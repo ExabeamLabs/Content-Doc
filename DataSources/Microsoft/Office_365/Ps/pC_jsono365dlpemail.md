@@ -14,8 +14,6 @@ Name = json-o365-dlp-email
     """"Subject":"\s{0,100}({subject}[^"]{1,2000}?)\s{0,100}",""",
     """"Direction":"({direction}[^"]{1,2000})"""",
     """"SenderAddress":"({sender}[^",]{1,2000})"""",
-    """"SenderAddress":"[^@]{1,2000}@({external_domain_sender}[^",]{1,2000})"""",
-    """"RecipientAddress":"[^@]{1,2000}@({external_domain_recipient}[^",]{1,2000})"""",
     """"RecipientAddress":"({recipients}[^"]{1,2000})"""",
     """"RecipientAddress":"({recipient}[^"\s,;]{1,2000})""",
     """"Size":"?({bytes}\d{1,100})""",
