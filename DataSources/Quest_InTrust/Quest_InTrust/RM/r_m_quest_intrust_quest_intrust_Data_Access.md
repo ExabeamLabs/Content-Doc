@@ -7,6 +7,6 @@ Vendor: Quest InTrust
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      3      |    3    |
 
-| Event Type      | Rules                                                                                                                              | Models |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| process-created | <b>T1003 - OS Credential Dumping</b><br> ↳ <b>A-CP-Sensitive-Files</b>: Copying sensitive files with credential data on this asset |        |
+| Event Type      | Rules                                                                                                              | Models |
+| --------------- | ------------------------------------------------------------------------------------------------------------------ | ------ |
+| process-created | <b>T1003 - OS Credential Dumping</b><br> ↳ <b>CP-Sensitive-Files</b>: Copying sensitive files with credential data |        |

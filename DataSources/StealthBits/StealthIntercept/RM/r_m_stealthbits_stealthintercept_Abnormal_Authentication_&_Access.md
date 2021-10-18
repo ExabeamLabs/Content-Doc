@@ -5,11 +5,11 @@ Vendor: StealthBits
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   1    |     1      |      9      |    9    |
+|   3   |   1    |     1      |      9      |    9    |
 
-| Event Type       | Rules                                                                                                                                | Models                                  |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------- |
-| account-disabled | <b>T1078 - Valid Accounts</b><br> ↳ <b>AE-UA-F</b>: First activity type for user                                                     |  • <b>AE-UA</b>: All activity for users |
-| account-enabled  | <b>T1078 - Valid Accounts</b><br> ↳ <b>AE-UA-F</b>: First activity type for user                                                     |  • <b>AE-UA</b>: All activity for users |
-| member-added     | <b>T1078 - Valid Accounts</b><br> ↳ <b>AE-UA-F</b>: First activity type for user<br> ↳ <b>NEW-USER-F</b>: User with no event history |  • <b>AE-UA</b>: All activity for users |
-| member-removed   | <b>T1078 - Valid Accounts</b><br> ↳ <b>AE-UA-F</b>: First activity type for user                                                     |  • <b>AE-UA</b>: All activity for users |
+| Event Type       | Rules                                                                                                                                                                        | Models                                  |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| account-disabled | <b>T1078 - Valid Accounts</b><br> ↳ <b>DORMANT-USER</b>: Dormant User<br> ↳ <b>AE-UA-F</b>: First activity type for user                                                     |  • <b>AE-UA</b>: All activity for users |
+| account-enabled  | <b>T1078 - Valid Accounts</b><br> ↳ <b>DORMANT-USER</b>: Dormant User<br> ↳ <b>AE-UA-F</b>: First activity type for user                                                     |  • <b>AE-UA</b>: All activity for users |
+| member-added     | <b>T1078 - Valid Accounts</b><br> ↳ <b>DORMANT-USER</b>: Dormant User<br> ↳ <b>AE-UA-F</b>: First activity type for user<br> ↳ <b>NEW-USER-F</b>: User with no event history |  • <b>AE-UA</b>: All activity for users |
+| member-removed   | <b>T1078 - Valid Accounts</b><br> ↳ <b>DORMANT-USER</b>: Dormant User<br> ↳ <b>AE-UA-F</b>: First activity type for user                                                     |  • <b>AE-UA</b>: All activity for users |

@@ -4,14 +4,15 @@ Product: Synology NAS
 ---------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  21   |   7    |     6      |      1      |    1    |
+|  23   |   7    |     5      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 | [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  share-access<br> ↳[nas-share-access-1](Ps/pC_nasshareaccess1.md)<br> ↳[nas-share-access](Ps/pC_nasshareaccess.md)<br> | T1187 - Forced Authentication<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_synology_nas_synology_nas_Compromised_Credentials.md)    |
-|        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  share-access<br> ↳[nas-share-access-1](Ps/pC_nasshareaccess1.md)<br> ↳[nas-share-access](Ps/pC_nasshareaccess.md)<br> | T1021.002 - Remote Services: SMB/Windows Admin Shares<br>    | [<ul><li>13 Rules</li></ul><ul><li>7 Models</li></ul>](RM/r_m_synology_nas_synology_nas_Lateral_Movement.md) |
-|    [Malware](../../../UseCases/uc_malware.md)    |  share-access<br> ↳[nas-share-access-1](Ps/pC_nasshareaccess1.md)<br> ↳[nas-share-access](Ps/pC_nasshareaccess.md)<br> | T1569 - System Services<br>T1569.002 - T1569.002<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_synology_nas_synology_nas_Malware.md)    |
-|    [Privilege Escalation](../../../UseCases/uc_privilege_escalation.md)    |  share-access<br> ↳[nas-share-access-1](Ps/pC_nasshareaccess1.md)<br> ↳[nas-share-access](Ps/pC_nasshareaccess.md)<br> | T1021.002 - Remote Services: SMB/Windows Admin Shares<br>T1087 - Account Discovery<br>T1484 - Group Policy Modification<br> | [<ul><li>4 Rules</li></ul>](RM/r_m_synology_nas_synology_nas_Privilege_Escalation.md)    |
+|        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  share-access<br> ↳[nas-share-access-1](Ps/pC_nasshareaccess1.md)<br> ↳[nas-share-access](Ps/pC_nasshareaccess.md)<br> | T1021.002 - Remote Services: SMB/Windows Admin Shares<br>    | [<ul><li>14 Rules</li></ul><ul><li>7 Models</li></ul>](RM/r_m_synology_nas_synology_nas_Lateral_Movement.md) |
+|    [Malware](../../../UseCases/uc_malware.md)    |  share-access<br> ↳[nas-share-access-1](Ps/pC_nasshareaccess1.md)<br> ↳[nas-share-access](Ps/pC_nasshareaccess.md)<br> | T1569.002 - T1569.002<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_synology_nas_synology_nas_Malware.md)    |
+|    [Other](../../../UseCases/uc_other.md)    |  share-access<br> ↳[nas-share-access-1](Ps/pC_nasshareaccess1.md)<br> ↳[nas-share-access](Ps/pC_nasshareaccess.md)<br> |    | [<ul><li>1 Rules</li></ul>](RM/r_m_synology_nas_synology_nas_Other.md)    |
+|    [Privilege Escalation](../../../UseCases/uc_privilege_escalation.md)    |  share-access<br> ↳[nas-share-access-1](Ps/pC_nasshareaccess1.md)<br> ↳[nas-share-access](Ps/pC_nasshareaccess.md)<br> | T1021.002 - Remote Services: SMB/Windows Admin Shares<br>T1087 - Account Discovery<br>T1484 - Group Policy Modification<br> | [<ul><li>5 Rules</li></ul>](RM/r_m_synology_nas_synology_nas_Privilege_Escalation.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

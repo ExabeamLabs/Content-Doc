@@ -4,12 +4,13 @@ Product: McAfee IDPS
 --------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  11   |   6    |     2      |      1      |    1    |
+|  26   |   11   |     2      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  network-alert<br> ↳[mcafee-idps-network-alert](Ps/pC_mcafeeidpsnetworkalert.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br> | [<ul><li>7 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_mcafee_mcafee_idps_Compromised_Credentials.md) |
-|    [Malware](../../../UseCases/uc_malware.md)    |  network-alert<br> ↳[mcafee-idps-network-alert](Ps/pC_mcafeeidpsnetworkalert.md)<br> | T1204 - User Execution<br>    | [<ul><li>4 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_mcafee_mcafee_idps_Malware.md)    |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  network-alert<br> ↳[mcafee-idps-network-alert](Ps/pC_mcafeeidpsnetworkalert.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br> | [<ul><li>19 Rules</li></ul><ul><li>9 Models</li></ul>](RM/r_m_mcafee_mcafee_idps_Compromised_Credentials.md) |
+|    [Malware](../../../UseCases/uc_malware.md)    |  network-alert<br> ↳[mcafee-idps-network-alert](Ps/pC_mcafeeidpsnetworkalert.md)<br> | T1204 - User Execution<br>    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_mcafee_mcafee_idps_Malware.md)    |
+|    [Other](../../../UseCases/uc_other.md)    |  network-alert<br> ↳[mcafee-idps-network-alert](Ps/pC_mcafeeidpsnetworkalert.md)<br> |    | [<ul><li>5 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_mcafee_mcafee_idps_Other.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

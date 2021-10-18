@@ -5,8 +5,8 @@ Vendor: Forescout
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     1      |      6      |    6    |
+|   2   |   1    |     2      |      6      |    6    |
 
-| Event Type  | Rules                                                                                                             | Models |
-| ----------- | ----------------------------------------------------------------------------------------------------------------- | ------ |
-| file-delete | <b>T1078 - Valid Accounts</b><br> ↳ <b>FA-Account-deactivated</b>: File Activity from a de-activated user account |        |
+| Event Type  | Rules                                                                                                                                                                                                                                      | Models                                  |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------- |
+| file-delete | <b>T1083 - File and Directory Discovery</b><br> ↳ <b>FA-FT-EXEC</b>: Non-Executive user accessed executive folder<br><br><b>T1078 - Valid Accounts</b><br> ↳ <b>FA-Account-deactivated</b>: File Activity from a de-activated user account |  • <b>FA-FT-EXEC</b>: Executive Folders |
