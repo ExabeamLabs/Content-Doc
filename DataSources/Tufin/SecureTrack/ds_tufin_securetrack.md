@@ -4,12 +4,12 @@ Product: SecureTrack
 --------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  10   |   4    |     3      |      1      |    1    |
+|  18   |   5    |     3      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  authentication-successful<br> ↳[secure-system-login](Ps/pC_securesystemlogin.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>5 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_tufin_securetrack_Abnormal_Authentication_&_Access.md) |
-|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  authentication-successful<br> ↳[secure-system-login](Ps/pC_securesystemlogin.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>2 Rules</li></ul>](RM/r_m_tufin_securetrack_Compromised_Credentials.md)    |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  authentication-successful<br> ↳[secure-system-login](Ps/pC_securesystemlogin.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>11 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_tufin_securetrack_Abnormal_Authentication_&_Access.md) |
+|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  authentication-successful<br> ↳[secure-system-login](Ps/pC_securesystemlogin.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>4 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_tufin_securetrack_Compromised_Credentials.md)    |
 |    [Evasion](../../../UseCases/uc_evasion.md)    |  authentication-successful<br> ↳[secure-system-login](Ps/pC_securesystemlogin.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_tufin_securetrack_Evasion.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  authentication-successful<br> ↳[secure-system-login](Ps/pC_securesystemlogin.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_tufin_securetrack_Malware.md)    |
 |    [Ransomware](../../../UseCases/uc_ransomware.md)    |  authentication-successful<br> ↳[secure-system-login](Ps/pC_securesystemlogin.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_tufin_securetrack_Ransomware.md)    |

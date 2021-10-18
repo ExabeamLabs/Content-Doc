@@ -4,11 +4,11 @@ Product: Armis
 --------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   3   |   0    |     1      |      1      |    1    |
+|   3   |   2    |     1      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  alert-iot<br> ↳[armis-alert-iot](Ps/pC_armisalertiot.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>3 Rules</li></ul>](RM/r_m_armis_armis_Compromised_Credentials.md) |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  alert-iot<br> ↳[armis-alert-iot](Ps/pC_armisalertiot.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>3 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_armis_armis_Compromised_Credentials.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

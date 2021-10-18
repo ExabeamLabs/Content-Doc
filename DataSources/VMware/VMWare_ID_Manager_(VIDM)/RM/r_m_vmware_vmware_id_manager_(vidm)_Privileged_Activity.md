@@ -1,0 +1,12 @@
+Vendor: VMware
+==============
+### Product: [VMWare ID Manager (VIDM)](../ds_vmware_vmware_id_manager_(vidm).md)
+### Use-Case: [Privileged Activity](../../../../UseCases/uc_privileged_activity.md)
+
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   1   |   1    |     1      |      1      |    1    |
+
+| Event Type               | Rules                                                                                                                                                                        | Models                                                                                       |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| privileged-object-access | <b>T1059 - Command and Scripting Interperter</b><br> ↳ <b>WPA-OH-F</b>: First execution of critical windows command using privileged access on this host in the organization |  • <b>WPA-OH</b>: Assets on which critical windows commands are executed in the organization |

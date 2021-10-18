@@ -4,11 +4,11 @@ Product: Portnox CLEAR
 ----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   4   |   3    |     2      |      2      |    2    |
+|  12   |   6    |     2      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  nac-failed-logon<br> ↳[portox-nac-failed-logon](Ps/pC_portoxnacfailedlogon.md)<br> ↳[portox-nac-failed-logon-2](Ps/pC_portoxnacfailedlogon2.md)<br> ↳[portox-nac-failed-logon-3](Ps/pC_portoxnacfailedlogon3.md)<br><br> nac-logon<br> ↳[portox-nac-logon](Ps/pC_portoxnaclogon.md)<br> | T1021 - Remote Services<br>T1078 - Valid Accounts<br> | [<ul><li>4 Rules</li></ul><ul><li>3 Models</li></ul>](RM/r_m_portnox_portnox_clear_Abnormal_Authentication_&_Access.md) |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  nac-failed-logon<br> ↳[portox-nac-failed-logon](Ps/pC_portoxnacfailedlogon.md)<br> ↳[portox-nac-failed-logon-2](Ps/pC_portoxnacfailedlogon2.md)<br> ↳[portox-nac-failed-logon-3](Ps/pC_portoxnacfailedlogon3.md)<br><br> nac-logon<br> ↳[portox-nac-logon](Ps/pC_portoxnaclogon.md)<br> | T1021 - Remote Services<br>T1078 - Valid Accounts<br> | [<ul><li>12 Rules</li></ul><ul><li>6 Models</li></ul>](RM/r_m_portnox_portnox_clear_Abnormal_Authentication_&_Access.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

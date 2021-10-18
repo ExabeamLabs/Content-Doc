@@ -4,14 +4,15 @@ Product: Cognitas CrossLink
 ---------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  12   |   5    |     3      |      1      |    1    |
+|  24   |   8    |     3      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  vpn-login<br> ↳[cognitas-vpn-start](Ps/pC_cognitasvpnstart.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>6 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_cognitas_crosslink_cognitas_crosslink_Abnormal_Authentication_&_Access.md) |
-|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  vpn-login<br> ↳[cognitas-vpn-start](Ps/pC_cognitasvpnstart.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_cognitas_crosslink_cognitas_crosslink_Compromised_Credentials.md)          |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  vpn-login<br> ↳[cognitas-vpn-start](Ps/pC_cognitasvpnstart.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>15 Rules</li></ul><ul><li>7 Models</li></ul>](RM/r_m_cognitas_crosslink_cognitas_crosslink_Abnormal_Authentication_&_Access.md) |
+|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  vpn-login<br> ↳[cognitas-vpn-start](Ps/pC_cognitasvpnstart.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>6 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_cognitas_crosslink_cognitas_crosslink_Compromised_Credentials.md)    |
 |    [Evasion](../../../UseCases/uc_evasion.md)    |  vpn-login<br> ↳[cognitas-vpn-start](Ps/pC_cognitasvpnstart.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_cognitas_crosslink_cognitas_crosslink_Evasion.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  vpn-login<br> ↳[cognitas-vpn-start](Ps/pC_cognitasvpnstart.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_cognitas_crosslink_cognitas_crosslink_Malware.md)    |
+|    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  vpn-login<br> ↳[cognitas-vpn-start](Ps/pC_cognitasvpnstart.md)<br> | T1133 - External Remote Services<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_cognitas_crosslink_cognitas_crosslink_Privilege_Abuse.md)    |
 |    [Ransomware](../../../UseCases/uc_ransomware.md)    |  vpn-login<br> ↳[cognitas-vpn-start](Ps/pC_cognitasvpnstart.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_cognitas_crosslink_cognitas_crosslink_Ransomware.md)    |
 
 ATT&CK Matrix for Enterprise

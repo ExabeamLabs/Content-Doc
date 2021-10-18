@@ -4,11 +4,11 @@ Product: Unix Sendmail
 ----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  33   |   15   |     4      |      2      |    2    |
+|  39   |   18   |     4      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-|    [Data Leak](../../../UseCases/uc_data_leak.md)    |  dlp-email-alert-in<br> ↳[q-sendmail-dlp-email-alert](Ps/pC_qsendmaildlpemailalert.md)<br><br> dlp-email-alert-out<br> ↳[q-sendmail-dlp-email-alert](Ps/pC_qsendmaildlpemailalert.md)<br> | T1020 - Automated Exfiltration<br>T1048 - Exfiltration Over Alternative Protocol<br>T1048.003 - Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol<br> | [<ul><li>29 Rules</li></ul><ul><li>14 Models</li></ul>](RM/r_m_unix_unix_sendmail_Data_Leak.md)          |
+|    [Data Leak](../../../UseCases/uc_data_leak.md)    |  dlp-email-alert-in<br> ↳[q-sendmail-dlp-email-alert](Ps/pC_qsendmaildlpemailalert.md)<br><br> dlp-email-alert-out<br> ↳[q-sendmail-dlp-email-alert](Ps/pC_qsendmaildlpemailalert.md)<br> | T1020 - Automated Exfiltration<br>T1048 - Exfiltration Over Alternative Protocol<br>T1048.003 - Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol<br> | [<ul><li>35 Rules</li></ul><ul><li>17 Models</li></ul>](RM/r_m_unix_unix_sendmail_Data_Leak.md)          |
 |    [Phishing](../../../UseCases/uc_phishing.md)    |  dlp-email-alert-in<br> ↳[q-sendmail-dlp-email-alert](Ps/pC_qsendmaildlpemailalert.md)<br><br> dlp-email-alert-out<br> ↳[q-sendmail-dlp-email-alert](Ps/pC_qsendmaildlpemailalert.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1048.003 - Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol<br>    | [<ul><li>14 Rules</li></ul><ul><li>7 Models</li></ul>](RM/r_m_unix_unix_sendmail_Phishing.md)    |
 |      [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)      |  dlp-email-alert-in<br> ↳[q-sendmail-dlp-email-alert](Ps/pC_qsendmaildlpemailalert.md)<br><br> dlp-email-alert-out<br> ↳[q-sendmail-dlp-email-alert](Ps/pC_qsendmaildlpemailalert.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_unix_unix_sendmail_Privilege_Abuse.md)    |
 |  [Privileged Activity](../../../UseCases/uc_privileged_activity.md)  |  dlp-email-alert-in<br> ↳[q-sendmail-dlp-email-alert](Ps/pC_qsendmaildlpemailalert.md)<br><br> dlp-email-alert-out<br> ↳[q-sendmail-dlp-email-alert](Ps/pC_qsendmaildlpemailalert.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_unix_unix_sendmail_Privileged_Activity.md)    |

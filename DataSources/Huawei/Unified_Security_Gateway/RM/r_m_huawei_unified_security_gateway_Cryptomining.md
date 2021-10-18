@@ -5,8 +5,8 @@ Vendor: Huawei
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     1      |      4      |    4    |
+|   2   |   0    |     1      |      4      |    4    |
 
-| Event Type      | Rules                                                                                                               | Models |
-| --------------- | ------------------------------------------------------------------------------------------------------------------- | ------ |
-| process-created | <b>T1496 - Resource Hijacking</b><br> ↳ <b>EPA-Shadow-Mining-name</b>: Process ending with 'miner.exe' has been run |        |
+| Event Type      | Rules                                                                                                                                                                                                                 | Models |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| process-created | <b>T1496 - Resource Hijacking</b><br> ↳ <b>A-EPA-Shadow-Mining-name</b>: Process ending with 'miner.exe' has been run on this asset<br> ↳ <b>EPA-Shadow-Mining-name</b>: Process ending with 'miner.exe' has been run |        |
