@@ -7,10 +7,10 @@ Name = s-zscaler-web-activity-4
   Lms = Syslog
   DataType = "web-activity"
   Conditions = [ """dlpeng="None"""", """recordid="""", """saction="""", """url="""" ]
-  TimeFormat = "MMM  dd HH:mm:ss yyyy z"
+  TimeFormat = "MMM dd HH:mm:ss yyyy z"
   Fields = [
-    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
-    """time="\w+\s{0,100}({time}\w+  \d{1,100} \d\d:\d\d:\d\d \d\d\d\d \w+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}\S+)""",
+    """((::ffff:)?({host}[\w\-.]{1,2000})\s{0,100}")?\s{0,100}time="\w{1,100}\s({time}\w{1,100}\s{1,100}\d{1,10}\s\d\d:\d\d:\d\d\s\d\d\d\d\s\w{1,100})"""",
     """urlcat="({category}[^"]{1,2000})""",
     """respsize="({bytes_in}\d{1,100})""",
     """reqsize="({bytes_out}\d{1,100})""",
