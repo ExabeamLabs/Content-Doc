@@ -2,14 +2,14 @@
 ```Java
 {
 Name = leef-crowdstrike-documentsaccessed
-  Conditions = [ """0|CrowdStrike|FalconHost|""", """cat=DocumentsAccessed""" ]
+  DataType = "file-read"
+  Conditions = [ """LEEF:""", """|CrowdStrike|FalconHost|""", """cat=DocumentsAccessed""" ]
   Fields = ${CrowdStrikeParserTemplates.leef-crowdstrike-alert-t.Fields} [
     """CrowdStrike\|([^|]{1,2000}\|){2}({alert_name}[^|]{1,2000})""",
-    """\WdocAccessedFileName=({file_name}[^|"]{1,2000}?)\s{0,100}(\||\w+=|$|"{1,20}\s{0,100}$)""",
-    """\WdocAccessedFilePath=({file_parent}.+?)\s{0,100}(\||\w+=|$|"{1,20}\s{0,100}$)""",
-    """\Wdescription=({additional_info}.+?)\s{0,100}(\||\w+=|$|"{1,20}\s{0,100}$)"""
-  ]
-   DupFields = ["file_parent->malware_url", "category->alert_type"]
+    """\WdocAccessedFileName=({file_name}[^|"]{1,2000}?)\s{0,100}(\||\w{1,1000}=|$|"{1,20}\s{0,100}$)""",
+    """\WdocAccessedFilePath=({file_parent}[^=]{1,2000}?)\s{0,100}(\||\w{1,1000}=|$|"{1,20}\s{0,100}$)""",
+    """\Wdescription=({additional_info}[^=]{1,2000}?)\s{0,100}(\||\w{1,1000}=|$|"{1,20}\s{0,100}$)"""
+  ] 
 }
 leef-crowdstrike-alert-t = {
     Vendor = CrowdStrike
