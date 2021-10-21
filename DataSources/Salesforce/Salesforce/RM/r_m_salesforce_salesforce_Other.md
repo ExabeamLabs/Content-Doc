@@ -5,6 +5,6 @@ Vendor: Salesforce
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     0      |      5      |    5    |
+|   1   |   0    |     0      |      6      |    6    |
 
 | Event Type | Rules | Models || ---------- | ----- | ------ |
