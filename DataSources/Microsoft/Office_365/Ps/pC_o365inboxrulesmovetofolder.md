@@ -9,7 +9,7 @@ Name = o365-inbox-rules-move-to-folder
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = ["""New-InboxRule""" , """MoveToFolder"""]
   Fields = [
-    """exabeam_host=(.+?@\s*)?(::ffff:)?({host}[^\s]+)""",
+    """exabeam_host=(::ffff:)?({host}[^\s]{1,2000})""",
     """timestamp="({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)"""",
     """"CreationTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""",
     """MoveToFolder",.+?Value":"({target}[^\s"]{1,2000})""""
