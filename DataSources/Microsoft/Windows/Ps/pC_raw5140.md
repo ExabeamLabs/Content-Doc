@@ -9,7 +9,6 @@ Name = raw-5140
     TimeFormat = "epoch"
     Conditions = ["""A network share object was accessed""", """Account Name:"""]
     Fields = [
-      """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """({event_name}A network share object was accessed)""",
       """({event_code}5140)""",
@@ -26,6 +25,7 @@ Name = raw-5140
       """\sTimeGenerated=({time}\d{1,100})""",
       """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100})""",
       """(?i)\w+\s{0,100}\d{1,100}\s\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(::ffff:)?(am|pm|({host}[\w\-.]{1,2000}))""",
+      """({host}[^\s]{1,2000}?)\s{1,100}(Detailed File Share|File Share)""",
       """Logon ID:\s{0,100}((\\)[rnt])*({logon_id}\S+?)((\\)[rnt])*\s{0,100}Network Information:""",
       """Account Name:\s{0,100}((\\)[rnt])*({user}\S+?)((\\)[rnt])*\s{0,100}Account Domain:""",
       """Account Domain:\s{0,100}((\\)[rnt])*({domain}\S+?)((\\)[rnt])*\s{0,100}Logon ID:""",
