@@ -11,8 +11,8 @@ Name = o365-sharepoint-activity
   Conditions = [ """Workload""", """SharePoint""", """ItemType""" ]
   Fields = [
     """"CreationTime\\*"{1,20}:\\*\s{0,100}"{1,20}({time}[^\\"]{1,2000})""",
-    """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}\S{1,2000})""",
-    """"host\\*"{1,20}:\\*\s{0,100}"{1,20}(::ffff:)?({host}[^"\\]{1,2000})""",
+    """exabeam_host=({host}[^\s]{1,2000})""",
+    """"host\\*"{1,20}:\\*\s{0,100}"{1,20}({host}[^"\\]{1,2000})""",
     """"SourceRelativeUrl\\*"{1,20}:\\*\s{0,100}"{1,20}({file_parent}[^"]{1,2000})""",
     """"ObjectId\\*"{1,20}:\\*\s{0,100}"{1,20}({file_path}[^"]{1,2000})[\\"](?!\\u\d{1,100})""",
     """"ObjectId\\*"{1,20}:\\*\s{0,100}"{1,20}({file_parent}[^"]{1,2000})[\\\/](?!u\d{1,100})""",
@@ -36,6 +36,6 @@ Name = o365-sharepoint-activity
     """\Wsuser=(|({affected_user}[^@\s]{1,2000}@[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
     """src-account-name":"({account_name}[^"]{1,2000})""",
   ]
-  DupFields = [ "accesses->activity", "file_name->object" ]
+  DupFields = [ "accesses->activity" ]
 }
 ```
