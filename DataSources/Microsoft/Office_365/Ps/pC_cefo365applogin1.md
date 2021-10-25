@@ -30,7 +30,7 @@ Name = cef-o365-app-login-1
       """city":"({location_city}[^",]{1,2000})""",
       """state":"({location_state}[^",]{1,2000})""",
       """countryOrRegion":"({country_code}[^",]{1,2000})""",
-      """deviceDetail":\{[^\}]{1,2000}?displayName":"({src_host}[^",]{1,2000})"""",
+      """deviceDetail":\{[^\}]{1,2000}?displayName":"({src_host}[^",]{1,2000}?)\s{0,100}"""",
       """conditionalAccessStatus":"({status}[^",]{1,2000})"""",
       """"clientAppUsed":"({object}[^",]{1,2000})""",
       """"resourceDisplayName":"({resource}[^",]{1,2000})"""
