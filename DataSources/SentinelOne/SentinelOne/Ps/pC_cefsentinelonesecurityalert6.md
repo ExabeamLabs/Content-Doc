@@ -23,7 +23,7 @@ Name = cef-sentinelone-security-alert-6
      """"processUser":"((NT AUTHORITY|({domain}[^\\"]{1,2000}))\\+)?(SYSTEM|({user}[^"]{1,2000}))",""",
      """username":"((NT AUTHORITY|({domain}[^\\"]{1,2000}))\\+)?(SYSTEM|({user}[^"]{1,2000}))",""",
      """"rank":({alert_severity}\d{1,100})""",
-     """"mitigationReport":\{"({outcome}[^"]{1,2000})"""",
+     """"mitigationReport":({additional_info}\{.{1,400}?\}\}),""",
      """"fileContentHash":"({md5}[^"]{1,2000})"""",
      """"id":"({alert_id}\d+)""""
      """"action":"quarantine".*?"status":"({quarantine_status}\w+)""""
