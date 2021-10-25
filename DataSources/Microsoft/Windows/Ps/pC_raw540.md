@@ -18,6 +18,7 @@ Name = raw-540
     """Computer(\w+)?["\s]{0,2000}(:|=)\s{0,100}"?({host}.+?)("|\s)""",
     """({event_code}540)""",
     """User Name\s{0,100}:\s{0,100}(-|<null>|({user}[^\s]{1,2000}))\s{1,100}Domain\s{0,100}:\s{0,100}(-|({domain}[^\s]{1,2000}))\s""",
+    """({user}ANONYMOUS LOGON)""",
     """Source Network Address\s{0,100}:\s{0,100}(?:-|({src_ip}[\w:.]{1,2000}))\s{1,100}Source Port:""",
     """Workstation Name\s{0,100}:\s{0,100}(-|({src_host_windows}[^\s]{1,2000}))\s{1,100}Logon GUID:""",
     """Workstation Name\s{0,100}:\s{0,100}({src_host}[^\s]{1,2000})\s{1,100}Logon GUID:.*?Source Network Address:\s{0,100}-\s{1,100}""",

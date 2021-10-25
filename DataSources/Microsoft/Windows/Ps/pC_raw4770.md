@@ -20,10 +20,10 @@ Name = raw-4770
     """Account Name(:|=)\s{0,100}({user}[^@;\s]{1,2000}).+?[\s;]{0,2000}Account Domain""",
     """Account Domain(:|=)\s{0,100}({domain}.+?)[\s;]{0,2000}Service Information""",
     """Service Name(:|=)\s{0,100}({service_name}.+?)[\s;]{0,2000}Service ID(:|=)""",
-    """Service Name(:|=)\s{0,100}(::ffff:)?({dest_host}.+?\$)[\s;]{0,2000}Service ID(:|=)""",
+    """Service Name(:|=)\s{0,100}({dest_host}.+?\$)[\s;]{0,2000}Service ID(:|=)""",
     """Ticket Options(:|=)\s{0,100}({ticket_options}.+?)[\s;]{0,2000}Ticket Encryption Type(:|=)"""
     """Ticket Encryption Type(:|=)\s{0,100}({ticket_encryption_type}[^\s;]{1,2000})"""
-    """Client Address(:|=)\s{0,100}(::[\w]{1,2000}:)?(::ffff:)?({src_ip}[a-fA-F:\d.]{1,2000})"""
+    """Client Address(:|=)\s{0,100}(::[\w]{1,2000}:)?({src_ip}[a-fA-F:\d.]{1,2000})"""
   ]
 }
 ```
