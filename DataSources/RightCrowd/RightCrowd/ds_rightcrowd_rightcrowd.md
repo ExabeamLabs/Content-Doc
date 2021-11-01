@@ -1,0 +1,19 @@
+Vendor: RightCrowd
+==================
+Product: RightCrowd
+-------------------
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  12   |   6    |     1      |      1      |    1    |
+
+|    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
+|:----:| ---- | ---- | ---- |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  failed-physical-access<br> ↳[cef-rightcrowd-failed-physical-access](Ps/pC_cefrightcrowdfailedphysicalaccess.md)<br> ↳[cef-rightcrowd-failed-physical-access-3](Ps/pC_cefrightcrowdfailedphysicalaccess3.md)<br> ↳[cef-rightcrowd-failed-physical-access-2](Ps/pC_cefrightcrowdfailedphysicalaccess2.md)<br> ↳[cef-rightcrowd-failed-physical-access-1](Ps/pC_cefrightcrowdfailedphysicalaccess1.md)<br><br> physical-access<br> ↳[cef-rightcrowd-physical-access](Ps/pC_cefrightcrowdphysicalaccess.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>3 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_rightcrowd_rightcrowd_Abnormal_Authentication_&_Access.md) |
+|    [Physical Security](../../../UseCases/uc_physical_security.md)    |  failed-physical-access<br> ↳[cef-rightcrowd-failed-physical-access](Ps/pC_cefrightcrowdfailedphysicalaccess.md)<br> ↳[cef-rightcrowd-failed-physical-access-3](Ps/pC_cefrightcrowdfailedphysicalaccess3.md)<br> ↳[cef-rightcrowd-failed-physical-access-2](Ps/pC_cefrightcrowdfailedphysicalaccess2.md)<br> ↳[cef-rightcrowd-failed-physical-access-1](Ps/pC_cefrightcrowdfailedphysicalaccess1.md)<br><br> physical-access<br> ↳[cef-rightcrowd-physical-access](Ps/pC_cefrightcrowdphysicalaccess.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>9 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_rightcrowd_rightcrowd_Physical_Security.md)    |
+|    [Workforce Protection](../../../UseCases/uc_workforce_protection.md)    |  failed-physical-access<br> ↳[cef-rightcrowd-failed-physical-access](Ps/pC_cefrightcrowdfailedphysicalaccess.md)<br> ↳[cef-rightcrowd-failed-physical-access-3](Ps/pC_cefrightcrowdfailedphysicalaccess3.md)<br> ↳[cef-rightcrowd-failed-physical-access-2](Ps/pC_cefrightcrowdfailedphysicalaccess2.md)<br> ↳[cef-rightcrowd-failed-physical-access-1](Ps/pC_cefrightcrowdfailedphysicalaccess1.md)<br><br> physical-access<br> ↳[cef-rightcrowd-physical-access](Ps/pC_cefrightcrowdphysicalaccess.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_rightcrowd_rightcrowd_Workforce_Protection.md)    |
+
+ATT&CK Matrix for Enterprise
+----------------------------
+| Initial Access                                                      | Execution | Persistence                                                         | Privilege Escalation                                                | Defense Evasion                                                     | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration | Impact |
+| ------------------------------------------------------------------- | --------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ------------------- | ------------ | ------ |
+| [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |           | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   |           |                  |            |                     |              |        |
