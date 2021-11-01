@@ -51,15 +51,5 @@ s-proofpoint-email-in-1 = {
     """src-account-name":"({account_name}[^"]{1,2000})"""
   ]
   DupFields = [ "attachment->file_name", "sender->external_address" ]
-  SOAR {
-    IncidentType = "dlp"
-    DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "recipient->dlpUser", "sender->emailFrom", "subject->emailSubject", "recipients->emailTo", "outcome->dlpActionTaken","host->dlpDeviceName"]
-    NameTemplate = """Proofpoint DLP email ${subject} found"""
-    ProjectName = "SOC"
-    EntityFields = [
-      {EntityType="device", Name="src_address", Fields=["src_ip->ip_address"]},
-      {EntityType="device", Name="dest_address", Fields=["dest_ip->ip_address"]},
-      {EntityType="user", Name="email", Fields=["recipient->email"]}
-    ]
- 
+}
 ```

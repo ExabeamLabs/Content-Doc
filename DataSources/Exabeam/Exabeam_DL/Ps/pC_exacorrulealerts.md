@@ -35,6 +35,7 @@ Name = exa-cor-rule-alerts
     """exa_addRiskToUser(=|:){0,100}"{0,100}({add_risk_to_user}\w{1,2000})""",
     """exa_addRiskToAsset(=|:){0,100}"{0,100}({add_risk_to_asset}\w{1,2000})"""
   ]
+  DupFields = ["risk_score->score"]
   SOAR {
     IncidentType = "ueba"
     DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "top_reasons->uebaRiskReasons","dl_exa_link_alert->uebaSessionLink", "user->uebaUserId", "risk_score->uebaSessionRiskScore", "rule_description->description", "alert_severity->sourceSeverity", "alert_id->sourceId"]

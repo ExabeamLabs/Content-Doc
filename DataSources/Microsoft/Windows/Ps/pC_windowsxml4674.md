@@ -6,10 +6,10 @@ Name = windows-xml-4674
   Product = Windows
   Lms = Splunk
   DataType = "windows-privileged-access"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSSZ"
   Conditions = [ """<EventID>4674</EventID>""", """<Data Name='SubjectUserName'>""", """<Message>An operation was attempted on a privileged object""" ]
   Fields = [
-    """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
+    """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d\d\d\d\d\d\dZ)""",
     """<Keywords>({outcome}[^<]{1,2000})<""",
     """<Computer>({host}[\w.\-]{1,2000})<""",
     """({event_code}4674)""",
