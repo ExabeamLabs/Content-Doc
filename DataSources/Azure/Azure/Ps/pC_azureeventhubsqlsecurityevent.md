@@ -2,6 +2,7 @@
 ```Java
 {
 Name = azure-event-hub-sql-security-event
+  Product = Azure
   DataType = "database-query"
   Conditions = ["""ext_category=SQLSecurityAuditEvent""" ]
   Fields = ${MSParserTemplates.cef-azure-event-hub.Fields}[

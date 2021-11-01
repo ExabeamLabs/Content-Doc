@@ -17,6 +17,8 @@ Name = azure-app-logon
     """"conditionalAccessStatus"{1,20}:"{1,20}({outcome}[^"]{1,2000})"""",
     """"tokenIssuerType"{1,20}:"{1,20}({app}[^"]{1,2000})"""",
     """"failureReason"{1,20}:"{1,20}({failure_reason}[^"]{1,2000}?)(\.)?"""",
+    """"browser"{1,20}:"{1,20}({browser}[^"]{1,2000})"""",
+    """"operatingSystem"{1,20}:"{1,20}({os}[^"]{1,2000})"""",
     """"userAgent"{1,20}:"{1,20}({user_agent}[^"]{1,2000})\s{0,100}"""",
     """"operationName"{1,20}:"{1,20}({event_name}[^",]{1,2000})""",
     """"authenticationMethod":"({auth_method}[^"]{1,2000})"""",

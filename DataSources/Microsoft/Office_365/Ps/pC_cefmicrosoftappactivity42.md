@@ -3,7 +3,7 @@
 {
 Name = cef-microsoft-app-activity-42
   Product = Office 365
-  Conditions= [ """CEF:""", """destinationServiceName=Office 365""", """"Update""" ]
+  Conditions= [ """CEF:""", """destinationServiceName=Office 365""", """"Operation":"Update"""", """"ModifiedProperties"""" ]
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields} [
     """"Recipients":\[({recipients}"({recipient}[^",\]]{1,2000})[^\]]{0,2000})\]"""
   ]
