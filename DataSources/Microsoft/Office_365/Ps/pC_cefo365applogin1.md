@@ -34,8 +34,8 @@ Name = cef-o365-app-login-1
       """conditionalAccessStatus":"({status}[^",]{1,2000})"""",
       """"clientAppUsed":"({object}[^",]{1,2000})""",
       """"resourceDisplayName":"({resource}[^",]{1,2000})"""
-      """"errorCode":({error_code}\d{1,2000})"""
-      """"signinErrorCode":({error_code}\d{1,2000})"""
+      """"errorCode":"{0,20}({error_code}\d{1,100})"""
+      """"signinErrorCode":"{0,20}({error_code}\d{1,100})"""
     ]
 }
 ```
