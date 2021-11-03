@@ -10,11 +10,10 @@ Name = raw-4771
   Conditions = [ "Kerberos pre-authentication failed" ]
   Fields = [
     """({event_name}Kerberos pre-authentication failed)""",
-    """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
     """"event_time":"({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d)""",
     """({time}\d\d\/\d\d\/\d\d\d\d\s\d\d:\d\d:\d\d\s(AM|PM))""",
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
+    """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
     """exabeam_host=(::ffff:)?(gcs-topic|({host}[\w.-]{1,2000}))""",
     """"agent_hostname":"({host}[^"]{1,200})"""",
     """"computer":"({host}[^"]{1,200})"""",
