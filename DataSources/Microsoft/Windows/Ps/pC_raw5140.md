@@ -9,7 +9,7 @@ Name = raw-5140
     TimeFormat = "epoch"
     Conditions = ["""A network share object was accessed""", """Account Name:"""]
     Fields = [
-      """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+      """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
       """({event_name}A network share object was accessed)""",
       """({event_code}5140)""",
       """(::ffff:)?({host}[^\s=]{1,2000})\sMSWinEventLog""",
@@ -19,7 +19,6 @@ Name = raw-5140
       """"system_name":"(::ffff:)?({host}[^"]{1,2000})"""",
       """"Hostname":"(::ffff:)?({host}[^"]{1,2000})"""",
       """({time}\d\d\/\d\d\/\d\d\d\d\s\d\d:\d\d:\d\d\s(AM|PM))""",
-      """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
       """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """<TimeCreated SystemTime='({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d)""",
       """\sTimeGenerated=({time}\d{1,100})""",

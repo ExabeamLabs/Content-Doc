@@ -10,8 +10,10 @@ Name = json-o365-dlp-email
   Conditions = [ """"MessageTraceId":"""", """"SenderAddress":"""", """"RecipientAddress":"""", """"Subject":""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
+    """"StartDate":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)""",
     """"StartDate":"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
-    """"Subject":"\s{0,100}({subject}[^"]{1,2000}?)\s{0,100}",""",
+    """"Subject":"\s{0,100}({subject}.+?)\s{0,100}"}""",
+    """"Subject":"\s{0,100}({subject}.+?)\s{0,100}",""",
     """"Direction":"({direction}[^"]{1,2000})"""",
     """"SenderAddress":"({sender}[^",]{1,2000})"""",
     """"RecipientAddress":"({recipients}[^"]{1,2000})"""",

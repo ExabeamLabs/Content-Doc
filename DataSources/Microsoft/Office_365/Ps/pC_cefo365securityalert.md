@@ -48,6 +48,7 @@ Name = cef-o365-security-alert
     """"PolicyName":"({alert_type}[^"]{1,2000})"""",
     """"RuleName":"({alert_name}[^"]{1,2000})"""",
     """"Id":"({alert_id}[^"]{1,2000})"""",
+    """"riskEventType":"({alert_name}[^"]{1,2000})"""
   ]
 }
 ```
