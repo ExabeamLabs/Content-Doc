@@ -12,8 +12,5 @@ Name = ccure-app-login-1
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"messageutc":"({time}[^"]{1,2000})""",
     """"statecode":"({event_name}[^"]{1,2000})""",
-    """"primaryobjectname":"{0,20}(null|({last_name}[^",]{1,2000}?)\s{0,100},\s{0,100}({first_name}[^",]{1,2000}?))\s{0,100}"""",
-    """<ApplicationName[^>]{0,2000}>({app}[^<"]{1,2000})<\/ApplicationName>""",
-  ]
-}
+    """"primaryobjectname":"{0,20}(null|({last_name}[^",]{1,2000}?)\s{0,100}
 ```

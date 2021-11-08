@@ -10,21 +10,7 @@ Name = s-aws-cloudtrail-assumedrole-json
     """\Wext_userIdentity_sessionContext_sessionIssuer_type=(|({activity}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\WflexString1=(|({activity}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """"{1,20}userName"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({target}[^"].+?))"{1,20}\s{0,100}[,\]\}]""",
-    """"requestParameters":\{"userName":"({target}[^"]{1,2000})"\},""",
-    """"sessionIssuer"\s{0,100}:\s{0,100}[^@]{0,2000}?"arn":"[^"]{0,2000}?role/({role}[^"\\\/]{1,2000})""",
-    """"UserId":\s"({user_email}[^@]{1,2000}@({email_domain}[^"]{1,2000}))"""
-    """requestParameters"{1,20}:.+?"{1,20}instanceId"{1,20}:"{1,20}({request_id}[^"]{1,2000})","attribute":"({request_action}[^"]{1,2000})"""",
-    """\sresource:\s{1,100}({additional_info}[^\s"]{1,2000})(\s|")""",
-    """"responseElements":[^@]{1,2000}?"name":"({object_name}[^"]{1,2000})"""",
-    """"responseElements":[^@]{1,2000}?"s3BucketName":"({object}[^"]{1,2000})"""",
-    """"responseElements":[^@]{1,2000}?"s3KeyPrefix":"({object_key_prefix}[^"]{1,2000})"""",
-    """"responseElements":[^@]{1,2000}?"snsTopicName":"({sns_topic_name}[^"]{1,2000})"""",
-    """"awsRegion":"({region}[^"]{1,2000})"""",
-    """\srequestClientApplication=({app}[^\s]{1,2000})\s""",
-    """"policyName":"({policy}[^"]{1,2000})"""",
-    """"configRuleName":"({rule_name}[^"]{1,2000})"""",
-  ]
-}
+    """"requestParameters":\{"userName":"({target}[^"]{1,2000})"\}
 s-aws-cloudtrail-activity-json = {
   Vendor = Amazon
   Lms = Splunk

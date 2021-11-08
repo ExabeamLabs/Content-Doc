@@ -4,9 +4,7 @@
 Name = paloalto-firewall-allow
    Conditions = [""",TRAFFIC,""", """,allow,""", """APC-PANORAMA-LOGS"""]
     Fields = ${PaloAltoParserTemplates.paloalto-firewall.Fields}[
-     """TRAFFIC,([^,]{0,2000},){48}({host}.*?)\s{0,100},""",
-    ]
-}
+     """TRAFFIC,([^,]{0,2000}
 paloalto-firewall = {
    Vendor = Palo Alto Networks
    Product = NGFW

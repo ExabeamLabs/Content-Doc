@@ -6,9 +6,7 @@ Name = mcafee-dlp-upload
   Conditions = [ """ViolationUTCTime=""", """Destination=""", """RulesToDisplay=""", """Username=""", """ViolationTimezone=""", """ViolationLocalTime=""" ]
 
   Fields =${McAfeeParserTemplates.mcafee-dlp-activity.Fields} [
-     """\,\sDestination="{0,20}({target}[^"]{1,2000})"{0,20},\s"""
-  ]
-}
+     """\,\sDestination="{0,20}({target}[^"]{1,2000})"{0,20}
 mcafee-dlp-activity = {
       Vendor = McAfee
       Product = McAfee DLP

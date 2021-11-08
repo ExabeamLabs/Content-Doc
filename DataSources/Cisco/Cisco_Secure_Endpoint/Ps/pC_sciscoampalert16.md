@@ -4,9 +4,7 @@
 Name = s-cisco-amp-alert-16
   Conditions = [ """"event_type"""", """Threat Detection""", """"trajectory":""", """"timestamp_nanoseconds":""" ]
   Fields=${CiscoParsersTemplates.s-cisco-amp-alert.Fields}[
-    """"file":\{"name":\["({process_name}[^",]{1,2000})[^\s]{1,1000},"path":\["({process}[^"]{1,2000})"""
-  ]
-}
+    """"file":\{"name":\["({process_name}[^",]{1,2000})[^\s]{1,1000}
 s-cisco-amp-alert = {
   Vendor = Cisco
   Product = Cisco Secure Endpoint

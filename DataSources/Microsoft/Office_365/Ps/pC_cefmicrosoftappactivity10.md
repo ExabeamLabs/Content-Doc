@@ -5,9 +5,7 @@ Name = cef-microsoft-app-activity-10
   Product = Office 365
   Conditions= [ """CEF:""", """destinationServiceName=Office 365""", """"Delete user""" ]
    Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields} [
-     """modifiedProperties"{1,20}:\[\{[^\}]{1,2000}\},\{[^\}]{1,2000}?"{1,20}newValue"{1,20}:"{1,20}\\"{1,20}({object}[^\\"]{1,2000})"""
-  ]
-}
+     """modifiedProperties"{1,20}:\[\{[^\}]{1,2000}\}
 cef-microsoft-app-activity = {
   Vendor = Microsoft
   Lms = ArcSight

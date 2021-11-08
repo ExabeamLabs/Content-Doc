@@ -7,10 +7,7 @@ Name = s-crowdstrike-app-dll-alert
   Fields = ${CrowdStrikeParserTemplates.cef-crowdstrike-app-activity-temp.Fields} [
   """"id":"({alert_id}[\w-]{1,2000}?)"""",
   """"name":"({alert_name}[^"]{1,2000}?)""""
-  """"CommandLine"{1,20}:\s{0,100}"{1,20}\\{0,25}"{0,20}({command_line}[^\n]{1,2000}?)\\{0,25}\s{0,100}"{1,20},""",
-  """"ImageFileName\\*"{1,20}:\\*"{1,20}({image_file_name}[^"]{1,2000}?)\\*","""
-  ]
-}
+  """"CommandLine"{1,20}:\s{0,100}"{1,20}\\{0,25}"{0,20}({command_line}[^\n]{1,2000}?)\\{0,25}\s{0,100}"{1,20}
 cef-crowdstrike-app-activity-temp = {
   Vendor = CrowdStrike
   Product = Falcon

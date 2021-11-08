@@ -39,8 +39,5 @@ Name = cef-forcepoint-proxy
       """\sflexString2=(?:User Defined.+?|({sub_category}.+?))\s{1,100}\w+=""",
       """\scs3=(?:-|({mime}[^=]{1,2000}?))(\s{1,100}\w+=|;)""",
       """suser=(-|({user_lastname}[^,]{1,2000}),\s({user_firstname}([A-Za-z]{1,2000}){1}(\s\w){0,1}))\s""",
-      """suser=\w+:\/+([^\s]{1,2000})?\s{0,100}((CN|OU)\\+=[^,]{1,2000},){1,2}DC\\=[^,]{1,2000},DC\\=[^\/]{1,2000}\/({user_fullname}({user_lastname}[^\\]{1,2000})\\+,\s{0,100}({user_firstname}[^=]{1,2000}?))\s\w+=""",
-      """loginID=(-|({user}[^\s=]{1,2000}?))\s\w+="""
-    ]
-  }
+      """suser=\w+:\/+([^\s]{1,2000})?\s{0,100}((CN|OU)\\+=[^,]{1,2000}
 ```

@@ -17,7 +17,5 @@ Name = n-forwarded-cef-552
       """duser=({account}[\w\-\.]{1,2000}(?:\w+)?\$?)\s{1,100}suser""",
       """suser=({user}[\w\-\.\s]{1,2000}(?:\w+)?\$?)\s{1,100}nitroSource"""
       """sntdom=({domain}.+?)\s{1,100}shost""",
-      """nitroSource_Logon_ID=\([^,]{1,2000},({logon_id}[^\)]{1,2000})"""
-    ]
-  }
+      """nitroSource_Logon_ID=\([^,]{1,2000}
 ```

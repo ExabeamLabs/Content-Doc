@@ -7,9 +7,7 @@ Name = mcafee-dlp-print
 
   Fields = ${McAfeeParserTemplates.mcafee-dlp-activity.Fields} [
      """,\sDestination="{0,20}({printer_name}[^"]{1,2000})*",\s""",
-     """,\sFileName="{0,20}({object}.+?)"{0,20},\s"""
-  ]
-}
+     """,\sFileName="{0,20}({object}.+?)"{0,20}
 mcafee-dlp-activity = {
       Vendor = McAfee
       Product = McAfee DLP

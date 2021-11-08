@@ -15,9 +15,5 @@ Name = snare-612
     """({event_code}612)""",
     """\s{1,100}User Name:\s{1,100}({user}.+?)\s{1,100}Domain""",
     """\s{1,100}Domain Name:\s{1,100}({domain}[^\s]{1,2000})""",
-    """\s{1,100}Logon ID:\s{1,100}\([^,]{1,2000},({logon_id}[^)]{1,2000})""",
-    """\s{1,100}New Policy:\s{1,100}({policy}.+?)\s{1,100}Changed By"""
-  ]
-  DupFields = [ "host->dest_host" ]
-}
+    """\s{1,100}Logon ID:\s{1,100}\([^,]{1,2000}
 ```

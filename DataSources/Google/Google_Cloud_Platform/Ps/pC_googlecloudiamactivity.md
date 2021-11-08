@@ -9,20 +9,15 @@ Name = googlecloud-iam-activity
   TimeFormat = """yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"""
   Conditions = [ """googleapis.com""",       """"serviceName":"iam"""    ]
   Fields = [
-     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+     """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}\S{1,2000})""",
      """"timestamp":({time}\d{1,100})""",
      """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
-     """"callerIp":"({src_ip}[^"]{1,2000})""",
+     """"callerIp":"({src_ip}[A-Fa-f\d:.]{1,2000})""",
      """"({service}iam.googleapis.com)""",
      """"methodName":"({activity}[^"]{1,2000})""",
      """"principalEmail":"(?:({user_email}[^"@]{1,2000}?@({email_domain}[^"@]{1,2000}))|({user}[^"]{1,2000}))"""",
      """"callerSuppliedUserAgent":"({user_agent}[^"]{1,2000})""",
      """"resource"[^=]{1,2000}?location":"({region}[^"]{1,2000})""",
      """"policyDelta"[^=]{1,2000}?"role":"roles\/({role}[^"\\\/]{1,2000})""",
-     """"status"[^=]{1,2000}?"code":\d{1,100},"message":"({failure_reason}[^"]{1,2000}?)\s{0,100}"""",
-     """"logName":".*\/cloudaudit.googleapis.com\/({log_type}[^"]{1,2000})""",
-     """"resource"[^=]{0,2000}?project_id":"({account}[^"]{1,2000})""",
-     """"resource"[^=]{0,2000}?"type":"({resource_type}[^"]{1,2000})"""
-  ]
-}
+     """"status"[^=]{1,2000}?"code":\d{1,100}
 ```
