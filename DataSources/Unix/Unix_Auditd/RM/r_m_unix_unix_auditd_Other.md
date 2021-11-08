@@ -5,10 +5,11 @@ Vendor: Unix
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  110  |   8    |     0      |     16      |   16    |
+|  110  |   8    |     0      |     17      |   17    |
 
 | Event Type             | Rules | Models                                                                                                                                                                                                                                                                            |
 | ---------------------- | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| account-creation       |       |  • <b>A-AM-DhU-system</b>: System accounts performing account management activities                                                                                                                                                                                               |
 | account-switch         |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset                                                                                                                                                                                                   |
 | file-write             |       |  • <b>A-FW-ProcessName-FileName</b>: File creations for process<br> • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset                                                                                                                                |
 | local-logon            |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset<br> • <b>A-AL-DhU</b>: Users per Host                                                                                                                                                             |

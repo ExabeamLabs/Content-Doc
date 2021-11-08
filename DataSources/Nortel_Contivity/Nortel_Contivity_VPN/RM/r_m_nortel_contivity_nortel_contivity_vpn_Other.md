@@ -5,6 +5,6 @@ Vendor: Nortel Contivity
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   0    |     0      |      1      |    1    |
+|   2   |   0    |     0      |      2      |    2    |
 
 | Event Type | Rules | Models || ---------- | ----- | ------ |

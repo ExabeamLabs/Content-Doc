@@ -12,11 +12,5 @@ Name = ur-authmgr-auth-successful
     """exabeam_raw=.*?({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """,({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),AUTHN_LOGIN_EVENT""",
     """,({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),AUTHN_LOGIN_EVENT""",
-    """,({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),[^,]{0,2000},AUTHN_LOGIN_EVENT""",
-    """AUTHN_LOGIN_EVENT,([^,]{0,2000},){7}({user}[^,]{1,2000})""",
-    """AUTHN_LOGIN_EVENT,([^,]{0,2000},){12}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """AUTHN_LOGIN_EVENT,([^,]{0,2000},){13}({dest_host}[^.,]{1,2000})""",
-    """AUTHN_LOGIN_EVENT,([^,]{0,2000},){16}({auth_method}[^.,]{1,2000})"""
-  ]
-}
+    """,({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),[^,]{0,2000}
 ```

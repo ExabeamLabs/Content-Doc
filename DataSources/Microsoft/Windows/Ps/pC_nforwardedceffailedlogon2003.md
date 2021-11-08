@@ -20,10 +20,5 @@ Name = n-forwarded-cef-failed-logon-2003
       """suser=({user}.+?)\s{1,100}\w+=""",
       """duser=({user}.+?)\s{1,100}\w+=""",
       """src=({src_ip}[a-fA-F:\d.]{1,2000})""",
-      """nitroSource_Logon_ID=\([^,]{1,2000},({logon_id}[^\)]{1,2000})""",
-      """nitroDestination_Logon_ID=({logon_id}\d{1,100})"""
-    ]
-    DupFields = ["host->dest_host",
-      "event_code->result_code"]
-  }
+      """nitroSource_Logon_ID=\([^,]{1,2000}
 ```

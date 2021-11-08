@@ -19,13 +19,5 @@ Name = netskope-activity
     """"activity": "({activity}[^"]{1,2000})"""",
     """"from_user": "(?![^\s]{1,2000}@[^\s]{1,2000})({user}[^"\s]{1,2000})"""",
     """"from_user": "(?=[^\s]{1,2000}@[^\s]{1,2000})({user_email}[^"\s@]{1,2000}@({email_domain}[^"\s@]{1,2000}))"""",
-    """"object": ["\\:, ]{1,2000}({file_name}.+?)["\\:, ]{1,2000}, """",
-    """"object_type": "({file_type}[^"]{1,2000})"""",
-    """"url": "({additional_info}[^"]{1,2000})""""
-    """"browser": "(unknown|({user_agent}[^"]{1,2000}))"""",
-  ]
-   DupFields=["file_name->object_value",
-     "additional_info->file_parent",
-     "activity->accesses"]
-}
+    """"object": ["\\:, ]{1,2000}({file_name}.+?)["\\:, ]{1,2000}
 ```

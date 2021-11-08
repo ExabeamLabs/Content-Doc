@@ -15,7 +15,5 @@ Name = s-icpam-badge-access
       """Trigger:\s{0,100}({outcome}.+?)\s{0,100}(#012|Time)""",
       """Device:\s{0,100}({location_door}.+?)\s{1,100}(#012|Personnel)""",
       """Badge Id\s{0,100}:\s{0,100}({badge_id}\d{1,100}\s{0,100}\d{1,100})""",
-      """Personnel record:\s{0,100}({last_name}.+?)\s{0,100},\s{1,100}({first_name}.+?)\s{0,100}(#012|Credential)"""
-    ]
-  }
+      """Personnel record:\s{0,100}({last_name}.+?)\s{0,100}
 ```

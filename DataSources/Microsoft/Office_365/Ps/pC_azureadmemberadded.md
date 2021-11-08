@@ -6,11 +6,7 @@ Name = azure-ad-member-added
   Conditions = [ """Microsoft.aadiam""", """Add member to group""", """tenantId":""""]
   Fields = ${MSParserTemplates.azure-ad-activity.Fields} [
     """({event_name}Add member to group)""",
-    """targetResources"{1,20}:\[\{([^,]{1,2000},){3}"{1,20}userPrincipalName"{1,20}:"{1,20}({target_user}[^"]{1,2000})"""",
-    """targetResources"{1,20}:\[\{[^\}]{1,2000}\},\{[^:]{1,2000}:"{1,20}Group.DisplayName"{1,20},[^,]{1,2000},"{1,20}newValue"{1,20}:"{1,20}\\*"{1,20}({group_name}[^\\"]{1,2000})""",
-    """targetResources"{1,20}:\[\{"{1,20}id"{1,20}:"{1,20}({account_id}[^",]{1,2000})"""
-  ]
-}
+    """targetResources"{1,20}:\[\{([^,]{1,2000}
 azure-ad-activity = {
    Vendor = Microsoft
    Product = Azure Active Directory

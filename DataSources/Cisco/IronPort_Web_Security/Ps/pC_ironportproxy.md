@@ -31,10 +31,5 @@ Name = ironport-proxy
       """\smsg=(?:-|(\w+\s{1,100}\w+:\/+[^?]{1,2000}({uri_query}\?.+?)))\sin=""",
       """\scs2=(?:-|({user_agent}.+?))\s\w+=""",
       """\scs3=(?:ns|({score}.+?))\s\w+=""",
-      """\scs4=.+?(KHTML,)?([^,]{0,2000},){19}(?:(-|nc|Unknown)|({category}[^,]{1,2000}))""",
-      """\scs4=.+?(KHTML,)?([^,]{0,2000},){22}"{0,20}(?:(-|Unknown|nc)|({category}[^",]{1,2000}))""",
-      """\sfileType=(?:-|({mime}.+?))\s\w+=""",
-    ]
-    DupFields = [ "user->orig_user" ]
-  }
+      """\scs4=.+?(KHTML,)?([^,]{0,2000}
 ```

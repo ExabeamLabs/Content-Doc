@@ -16,14 +16,5 @@ Name = snare-578
     """({event_code}578)""",
     """Security\t([^\s]{1,2000}\t){2}({outcome}.+?)\t""",
     """\s{1,100}Primary Domain:\s{1,100}({domain}[^\s]{1,2000})""",
-    """\s{1,100}Primary Logon ID:\s{1,100}\([^,]{1,2000},({logon_id}[^)]{1,2000})""",
-    """\s{1,100}Object Server:\s{1,100}(?:-|({object_server}.+?))\s{1,100}Object Handle""",
-    """\s{1,100}Privileges:\s{1,100}({privileges}.+?)\s{1,100}\d{1,100}""",
-    """\s{1,100}({ownership_privilege}SeTakeOwnershipPrivilege)""",
-    """\s{1,100}({environment_privilege}SeSystemEnvironmentPrivilege)""",
-    """\s{1,100}({debug_privilege}SeDebugPrivilege)""",
-    """\s{1,100}({tcb_privilege}SeTcbPrivilege)"""
-  ]
-  DupFields = [ "host->dest_host" ]
-}
+    """\s{1,100}Primary Logon ID:\s{1,100}\([^,]{1,2000}
 ```

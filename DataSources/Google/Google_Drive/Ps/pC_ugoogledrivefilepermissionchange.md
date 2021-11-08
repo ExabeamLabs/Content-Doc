@@ -10,7 +10,8 @@ Name = u-googledrive-file-permission-change
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """"applicationName":""", """"drive"""", """"uniqueQualifier":""",  """"acl_change"""" ]
   Fields = [
-    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}\S{1,2000})""",
+    """\w{3}\s\d\d\s\d\d:\d\d:\d\d\s(::ffff:)?({host}[\w\-.]{1,2000})\s\d{1,100}\s""",
     ""","time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     ""","ipAddress":"({src_ip}[\da-fA-F\.:]{1,2000})"""",
     ""","profileId":"({user_id}\d{1,100})""",

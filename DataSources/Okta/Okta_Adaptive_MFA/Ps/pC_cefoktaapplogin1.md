@@ -27,11 +27,5 @@ Name = cef-okta-app-login-1
     """({app}(?i)Okta)""",
     """requestClientApplication=({app}[^=]{1,2000}?)\s{0,100}\w+=""",
     """"type":"AppInstance"[^\}\]]{0,2000}"displayName":"({app}[^"]{1,2000}?)\s{0,100}"""",
-    """request"{1,20}:[^\]]{0,2000}?"{1,20}type"{1,20}:"{1,20}User"{1,20},"{1,20}alternateId"{1,20}:(null|"{1,20}(system@okta\.com|unknown|(?:({user_email}[^"@]{1,2000}@({domain}[^"]{1,2000}))|({user}[^"]{1,2000}))))""",
-    """"actor"{1,20}:[^\]]{0,2000}?"{1,20}type"{1,20}:"{1,20}User"{1,20},"{1,20}alternateId"{1,20}\s{0,100}:\s{0,100}"{1,20}(system@okta\.com|(?:({user_email}[^"@]{1,2000}@({domain}[^"]{1,2000}))|({user}[^"]{1,2000})))"""",
-    """(s|d)?user\\*=({user_email}[^\s@,]{1,2000}@({email_domain}[^\s@,]{1,2000}))""",
-    """(s|d)?user\\*=(anonymous|system|({user}[^\s@,]{1,2000}))(\s|\||,)""",
-    """\Wsuid=(anonymous|email|system|({user_email}[^@=]{1,2000}@[^@=]{1,2000}?)|({user}[^\s=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
-  ]
-}
+    """request"{1,20}:[^\]]{0,2000}?"{1,20}type"{1,20}:"{1,20}User"{1,20}
 ```

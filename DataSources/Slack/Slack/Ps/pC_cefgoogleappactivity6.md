@@ -14,7 +14,8 @@ cef-google-app-activity = {
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
-    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}\S{1,2000})""",
+    """\w{3}\s\d\d\s\d\d:\d\d:\d\d\s(::ffff:)?({host}[\w\-.]{1,2000})\s\d{1,100}\s""",
     """"time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     """"ipAddress":"({src_ip}[\da-fA-F\.:]{1,2000})""",
     """"profileId":"({user_id}\d{1,100})""",
@@ -23,6 +24,7 @@ cef-google-app-activity = {
     """"name":"event_id","value":"({additional_info}[^"]{1,2000})"""",
     """"name":"EMAIL_LOG_SEARCH_RECIPIENT","value":"(unknown|({object}[^"]{1,2000}))"""",
     """"name":"EMAIL_LOG_SEARCH_MSG_ID","value":"<?(unknown|({object}[^"]{1,2000}?))>?"""",
+    """"applicationName":"({app}[^"]{1,2000})"""",
     """"name":"app_name","value":"(unknown|({app}[^"]{1,2000}?))\s{0,100}"""",
     """"name":"notification_type","value":"(unknown|({object}[^"]{1,2000}))"""",
     """"name":"user_agent","value":"(unknown|({object}[^"]{1,2000}))"""",

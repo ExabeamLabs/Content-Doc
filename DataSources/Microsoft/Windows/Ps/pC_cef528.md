@@ -17,11 +17,5 @@ Name = cef-528
     """\ssuser=({user}.+?)\s{1,100}\w+=""",
     """\ssproc=({auth_process}.+?)\s{1,100}\w+=""",
     """\sdntdom=({domain}[^\s]{1,2000})""",
-    """\sduid=\([^,]{1,2000},({logon_id}[^\)]{1,2000})""",
-    """\scn1=({logon_type}\d{1,100})""",
-    """\sdvchost=({host}[^\s]{1,2000})""",
-    """\sduser=(.*?\\+)?({account}.*?)\s{1,100}\w+=""",
-  ]
-  DupFields = [ "host->dest_host"]
-}
+    """\sduid=\([^,]{1,2000}
 ```

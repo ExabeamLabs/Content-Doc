@@ -7,10 +7,7 @@ Name = s-lanscope-process-created
   IsHVF = true
   Conditions = [ """"リアルタイムイベントログ"""", """"ACTIVE"""" ]
   Fields = ${LanScopeParserTemplates.s-lanscope-app-activity.Fields}[
-    ""","{0,20}リアルタイムイベントログ"{0,20},"{0,20}ACTIVE"{0,20},("{0,20}[^"]{0,2000}"{0,20},){5}"{0,20}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):({dest_port}\d{1,100})\s{1,100}\-\s{1,100}({account}[^\s@]{1,2000})@({dest_host}[^:]{1,2000}):({command_line}[^"]{1,2000})"{0,20},"""
-  ]
-  DupFields = [ "app->process_name" ]
-}
+    ""","{0,20}リアルタイムイベントログ"{0,20}
 s-lanscope-app-activity = {
   Vendor = LanScope
   Lms = Splunk

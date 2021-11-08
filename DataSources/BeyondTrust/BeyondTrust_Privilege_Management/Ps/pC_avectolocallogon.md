@@ -18,8 +18,5 @@ Name = avecto-local-logon
       """Administrator:\s{0,100}({admin}.*?)\s{1,100}Power User""",
       """Power User:\s{0,100}({power_user}.*?)\s{1,100}Workstyle""",
       """Workstyle:\s{0,100}({account_info}.*?)\s{1,100}Workstyle""",
-      """IP4 Addresses:\s{0,100}[^,]{1,2000},({src_ip}.+?)(,|$|\s)""",
-    ]
-  DupFields = [ "host->dest_host" ]
-  }
+      """IP4 Addresses:\s{0,100}[^,]{1,2000}
 ```
