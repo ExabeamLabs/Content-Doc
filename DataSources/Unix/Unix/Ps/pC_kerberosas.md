@@ -15,4 +15,5 @@ Name = kerberos-as
       """AS_REQ.+?(,|:)\s{1,100}({user}[^\s]{1,2000})@({domain}[^\s]{1,2000}) for ({kerberos_service}[^/]{1,2000})"""
     ]
  }
+}
 ```

@@ -25,6 +25,5 @@ sophos-endpoint-events = {
      """ComputerIPAddress=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
      """exabeam_host=({host}[\w\-.]{1,2000})""",
      """ComputerDomain=({domain}[^;]{1,2000})""",
-   ]
-}
+   ]}
 ```

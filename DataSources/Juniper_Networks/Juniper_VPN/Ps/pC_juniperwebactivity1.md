@@ -22,4 +22,5 @@ Name = juniper-web-activity-1
     """\WHost:\s{0,100}({web_domain}[^\s",:]{1,2000})""",
   ]
 }
+}
 ```

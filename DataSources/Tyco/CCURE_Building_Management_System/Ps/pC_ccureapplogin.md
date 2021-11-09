@@ -16,4 +16,5 @@ Name = ccure-app-login
      """\ssuser=(?:|({user_fullname}.+?))\s(\w+=|$)"""
 	]
 }
+}
 ```

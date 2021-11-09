@@ -24,4 +24,5 @@ Name = cef-syslog-sharepoint-activity
   ]
   DupFields = [ "accesses->event_code" ]
 }
+}
 ```

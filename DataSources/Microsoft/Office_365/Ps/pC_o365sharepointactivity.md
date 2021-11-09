@@ -22,4 +22,5 @@ Name = o365-sharepoint-activity
     """"UserId\\*"{1,20}:\\*\s{0,100}"{1,20}(Teams Meeting Anonymous Participant|(({domain}[^\\\s@"]{1,2000})\\+)?({user}[^\\\s@"]{1,2000}?)\s{0,20})"""",
     """"ClientIP\\*"{1,20}:\\*\s{0,100}"{1,20}({src_ip}[a-fA-F:\d.]{1,2000})""",
     """"UserAgent\\*"{1,20}:\\*\s{0,100}"{1,20}({user_agent}[^"\\]{1,2000})"{1,20}
+}
 ```

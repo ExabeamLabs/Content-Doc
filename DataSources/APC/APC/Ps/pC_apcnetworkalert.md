@@ -14,4 +14,5 @@ Name = apc-network-alert
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

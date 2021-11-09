@@ -15,4 +15,5 @@ Name = unix-password-change-4
     """keyring password: ({failure_reason}.+?)\s{0,100}$""",
   ]
 }
+}
 ```

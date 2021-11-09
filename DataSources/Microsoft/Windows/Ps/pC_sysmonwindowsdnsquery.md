@@ -19,4 +19,5 @@ Name = sysmon-windows-dns-query
     """Image:\s{0,100}(?:<unknown process>|({process}({directory}[^"]{0,2000}[\\\/]{1,2000})?({process_name}[^"\\\/]{1,2000})))\s""",
 	]
 }
+}
 ```

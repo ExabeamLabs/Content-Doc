@@ -23,4 +23,5 @@ Name = cef-trendmicro-usb-write
     """\scs5=({activity_details}.+?)\s{1,100}(\w+=|$)"""
   ]
 }
+}
 ```

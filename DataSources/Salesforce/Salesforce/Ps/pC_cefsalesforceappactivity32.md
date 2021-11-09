@@ -23,4 +23,5 @@ Name = cef-salesforce-app-activity-32
   ]
   DupFields = [ "object->resource" ]
 }
+}
 ```

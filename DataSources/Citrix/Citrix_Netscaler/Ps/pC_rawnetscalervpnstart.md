@@ -22,4 +22,5 @@ Name = raw-netscaler-vpn-start
      ]
  DupFields = [ "vpn_client_type->app" ]
 }
+}
 ```

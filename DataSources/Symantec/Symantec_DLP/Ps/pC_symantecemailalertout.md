@@ -14,4 +14,5 @@ Name = symantec-email-alert-out
     """recipient=({recipient}[^,@]{1,2000}@[^,]{1,2000}),""",
     """sender=({sender}[^,]{1,2000}),""",
     """Subject=({subject}.+?)\s{0,100}
+}
 ```

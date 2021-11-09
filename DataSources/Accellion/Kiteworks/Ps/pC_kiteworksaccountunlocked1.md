@@ -16,4 +16,5 @@ Name = kiteworks-account-unlocked-1
     """Activity:\s({additional_info}User reactivated)""",
   ]
 }
+}
 ```

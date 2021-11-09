@@ -27,4 +27,5 @@ Name = cef-pingid-auth
   ]
   DupFields = [ "auth_method->activity" ]
 }
+}
 ```

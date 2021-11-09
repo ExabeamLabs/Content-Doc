@@ -10,4 +10,5 @@ Name = palo-alto-app-activity
   Conditions = [ """,globalprotectgateway-agent-msg,""", """,SYSTEM,""" ]
   Fields = [
     """({host}[\w.\-]{1,2000})\s{1,100}\d{1,100}
+}
 ```

@@ -27,4 +27,5 @@ Name = cef-attivo-network-connection
     """CEF:([^\|]{0,2000}\|){5}\s{0,100}({activity}[^\|]{0,2000}?)\s{0,100}\|""",
    ]
 }
+}
 ```

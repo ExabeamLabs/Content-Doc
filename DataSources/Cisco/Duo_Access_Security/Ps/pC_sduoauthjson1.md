@@ -20,4 +20,5 @@ Name = s-duo-auth-json-1
     """"{1,20}reason"{1,20}:\s"{1,20}({failure_reason}[^"]{1,2000})""""
   ]
 }
+}
 ```

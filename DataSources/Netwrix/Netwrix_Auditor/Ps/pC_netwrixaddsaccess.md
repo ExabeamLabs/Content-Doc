@@ -13,4 +13,5 @@ Name = netwrix-ad-ds-access
     """msg=Object Path changed from "{1,20}({old_value}[^"]{1,2000})"{1,20} to "{1,20}({new_value}[^"]{1,2000})"{1,20}""",
   ]
 }
+}
 ```

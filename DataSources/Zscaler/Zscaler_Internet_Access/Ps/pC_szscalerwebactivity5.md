@@ -29,4 +29,5 @@ Name = s-zscaler-web-activity-5
     """\sappname=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
   ]
 }
+}
 ```

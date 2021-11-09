@@ -23,4 +23,5 @@ Name = cef-carbonblack-edr-process-alert
     """ cs3=({additional_info}[^\s]{1,2000})"""
   ]
 }
+}
 ```

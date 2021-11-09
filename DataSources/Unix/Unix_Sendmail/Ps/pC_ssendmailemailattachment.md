@@ -15,4 +15,5 @@ Name = s-sendmail-email-attachment
     """\sattach_filename="({attachment}[^"]{1,2000})""",
   ]
 }
+}
 ```

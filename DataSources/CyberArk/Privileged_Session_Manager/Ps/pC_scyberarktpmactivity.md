@@ -19,4 +19,5 @@ Name = s-cyberark-tpm-activity
 		"""Role:\s({app_group}.+?)\s"""
     ]
 }
+}
 ```

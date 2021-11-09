@@ -14,4 +14,5 @@ Name = powersentry-app-login
     """connection source ({src_ip}[A-Fa-f:\d.]{1,2000}) using ({protocol}[^\s]{1,2000})""",
   ]
 }
+}
 ```

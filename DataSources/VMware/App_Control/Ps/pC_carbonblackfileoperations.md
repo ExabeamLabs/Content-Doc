@@ -26,4 +26,5 @@ Name = carbonblack-file-operations
   ]
   DupFields = [ "event_code->accesses","directory->process_directory" ]
 }
+}
 ```

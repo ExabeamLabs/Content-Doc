@@ -24,4 +24,5 @@ Name = fireeye-dlp-email
     """"id":"({alert_id}[^"]{1,2000})""",
   ]
 }
+}
 ```

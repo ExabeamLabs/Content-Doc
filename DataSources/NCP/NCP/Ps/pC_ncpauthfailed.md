@@ -14,4 +14,5 @@ Name = ncp-auth-failed
     """\[?({user}[^\s@\[]{1,2000})(@({domain}[^\s@\]]{1,2000}))?\]?\s{1,100}\S+\s{1,100}\(VPN\) PKI: Verification failed!\s{0,100}({failure_reason}[^\.]{1,2000})(\.|\s{0,100}$)"""
   ]
 }
+}
 ```

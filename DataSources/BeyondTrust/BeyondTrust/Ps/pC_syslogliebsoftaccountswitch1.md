@@ -19,4 +19,5 @@ Name = syslog-liebsoft-account-switch-1
     """sEventID="({event_name}[^"]{1,2000})"""
     ]
   }
+}
 ```

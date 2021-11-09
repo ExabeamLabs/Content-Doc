@@ -10,4 +10,5 @@ Name = s-skysea-print-activity
   Conditions = [ ",プリント," ]
   Fields = [
     """({host}[\w\-.]{1,2000}),\d{1,100}
+}
 ```

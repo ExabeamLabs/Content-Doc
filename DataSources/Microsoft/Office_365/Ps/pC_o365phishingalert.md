@@ -25,4 +25,5 @@ Name = o365-phishing-alert
   ] 
  DupFields = [ "user_email->recipient", "additional_info->subject" ]
 }
+}
 ```

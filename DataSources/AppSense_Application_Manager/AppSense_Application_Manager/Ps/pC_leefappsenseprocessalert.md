@@ -20,4 +20,5 @@ Name = leef-appsense-process-alert
   ]
   DupFields = ["dest_host->host"]
 }
+}
 ```

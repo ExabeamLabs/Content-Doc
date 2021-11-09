@@ -24,4 +24,5 @@ Name = exalms-540
     """"(param6|AuthenticationPackage|authentication_package)"\s{0,100}:\s{0,100}"({auth_package}.+?)\s{0,100}"""",
     """"(param3|LogonId|logon_id)"\s{0,100}:\s{0,100}"({logon_id}.+?)\s{0,100}"""",
     """"(param3|LogonId|logon_id)"\s{0,100}:\s{0,100}"\(([\dxA-F]{1,2000}
+}
 ```

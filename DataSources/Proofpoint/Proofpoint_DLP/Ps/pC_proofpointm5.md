@@ -19,4 +19,5 @@ Name = proofpoint-m5
     """\sadultscore=({adult_score}[^=]{1,2000}?)\s{1,100}(\w+=|$)"""
   ]
 }
+}
 ```

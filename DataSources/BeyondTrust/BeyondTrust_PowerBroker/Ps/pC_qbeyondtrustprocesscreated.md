@@ -15,4 +15,5 @@ Name = q-beyondtrust-process-created
     """accepted ({process}({proccess_directory}.+?[\\\/])?({process_name}[^\\\/]{1,2000}?)) from ({user}[^\s@]{1,2000})@({src_host}[\w\-.]{1,2000}) to ({account}[^\s@]{1,2000})@({dest_host}[\w\-.]{1,2000})""",
   ]
 }
+}
 ```

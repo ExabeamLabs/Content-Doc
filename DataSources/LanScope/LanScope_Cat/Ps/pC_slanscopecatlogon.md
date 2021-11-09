@@ -18,4 +18,5 @@ Name = s-lanscopecat-logon
     """\sIPAddress="({src_ip}[a-fA-F\d.:]{1,2000})""",
   ]
 }
+}
 ```

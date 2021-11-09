@@ -37,6 +37,5 @@ cef-google-app-activity = {
     """"name":"status","value":"({object}[^"]{1,2000})"""",
     """"name":"client_id","value":"({object}[^"]{1,2000})"""",
     """"id":\{({additional_info}[^\}]{1,2000})\}"""
-  ]
-}
+  ]}
 ```

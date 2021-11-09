@@ -11,4 +11,5 @@ Name = s-db-login
   Conditions = [ """","\N","1"""", """","No"""" ]
   Fields = [
     """([^,]{0,2000}
+}
 ```

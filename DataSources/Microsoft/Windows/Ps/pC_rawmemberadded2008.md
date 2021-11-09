@@ -46,4 +46,5 @@ Name = raw-member-added-2008
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

@@ -15,4 +15,5 @@ Name = microsoft-print-activity-1
     """<Opcode>({outcome}[^\d<]{1,2000})""",
     """<EventID>({event_code}\d{1,100})""",
     """<Message>({activity_1}.*?\s{0,100}(?i)Document) \d{1,100}
+}
 ```

@@ -20,4 +20,5 @@ Name = snow-app-activity
     """({app}ServiceNow)""",
   ]
 }
+}
 ```

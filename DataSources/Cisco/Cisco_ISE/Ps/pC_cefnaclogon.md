@@ -21,4 +21,5 @@ Name = cef-nac-logon
   ]
   DupFields = [ "dest_ip->auth_server" , "dest_host->computer_name"]
 }
+}
 ```

@@ -16,4 +16,5 @@ Name = pmp-account-switch
     """\sSuccess\s[^\s]{1,2000}\s{1,100}({safe_value}[^:]{1,2000}):({account}[^:]{1,2000}):""",
   ]
 }
+}
 ```

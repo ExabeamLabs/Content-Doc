@@ -24,4 +24,5 @@ Name = cylance-alert-3
   ]
   DupFields = [ "file_name->malware_file_name" ]
 }
+}
 ```

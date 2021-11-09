@@ -16,4 +16,5 @@ Name = s-mcafee-process-alert
     ]
     DupFields = [ "host->dest_host","directory->process_directory" ]
   }
+}
 ```

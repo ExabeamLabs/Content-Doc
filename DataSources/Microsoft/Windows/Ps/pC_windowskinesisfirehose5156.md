@@ -24,6 +24,5 @@ windows-kinesis-firehose = {
     """"EventId":({event_code}\d{1,5})"""
     """"MachineName":"({host}[^"]{1,2000})"""",
     """"TimeCreated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""
-  ]
-}
+  ]}
 ```

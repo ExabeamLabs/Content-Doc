@@ -16,4 +16,5 @@ Name = cef-rangeraudit-app-login
     """({app}ranger)""",
   ]
 }
+}
 ```

@@ -34,4 +34,5 @@ Name = cef-fortinet-web-activity-1
     """\Wmsg\\="{0,20}({reason}.+?)["\s]{0,2000}(\w+\\=|$).+?\Waction\\="{0,20}blocked"{0,20}""",
   ]
 }
+}
 ```

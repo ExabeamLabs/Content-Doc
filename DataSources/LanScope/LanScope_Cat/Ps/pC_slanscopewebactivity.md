@@ -11,4 +11,5 @@ Name = s-lanscope-web-activity
   Conditions = [ """"Webアクセスログ"""" ]
   Fields = [
      ""","{0,20}(|({host}[^"]{1,2000}))"{0,20}
+}
 ```

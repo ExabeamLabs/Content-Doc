@@ -21,4 +21,5 @@ Name = raw-windows-account-644
       """Target Account Name:\s{1,100}(?=\w)({user}.+?)\s{1,100}Target Account ID:\s{1,100}(%\{)?({user_sid}([\w\d\-]{1,2000}?)|([^\s]{1,2000}))\}?\s{1,100}Caller Machine""",
       """Caller Machine Name:\s{1,100}({src_host}.+?)\s{1,100}Caller User""",
       """Caller User Name:\s{1,100}({caller_user}.+?)\s{1,100}Caller Domain:\s{1,100}(?=\w)({caller_domain}.+?)\s{1,100}Caller Logon ID:\s{1,100}\([^,]{1,2000}
+}
 ```

@@ -30,4 +30,5 @@ Name = cef-symantec-web-activity-2
     """cn2=({result_code}\d{1,100}) cn2Label=Response Status Code"""
   ]
 }
+}
 ```

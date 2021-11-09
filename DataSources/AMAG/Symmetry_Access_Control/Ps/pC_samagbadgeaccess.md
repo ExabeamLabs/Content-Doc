@@ -21,4 +21,5 @@ Name = s-amag-badge-access
       """[^\w]EmployeeNumber="(\s{1,100}|({employee_id}[^"]{1,2000}))"""",
     ]
   }
+}
 ```

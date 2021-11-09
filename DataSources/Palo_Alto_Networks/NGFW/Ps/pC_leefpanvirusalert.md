@@ -33,6 +33,5 @@ leef-pan-alert = {
     """usrName=({domain}[^\\\|]{1,2000})\\({user}[^\s\|]{1,2000})""",
     """\|SourceZone=({src_network_zone}[^\|]{1,2000}?)\|""",
     """\|DestinationZone=({dest_network_zone}[^\|]{1,2000}?)\|""",
-    ]
-}
+    ]}
 ```

@@ -15,4 +15,5 @@ Name = s-azure-storage-access
   ]
   DupFields = ["file_name->object"]
 }
+}
 ```

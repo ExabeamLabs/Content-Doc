@@ -22,4 +22,5 @@ Name = netwrix-db-activity
     """Application name:\s{0,100}({app}.+?)\s{0,100}$"""
   ]
 }
+}
 ```

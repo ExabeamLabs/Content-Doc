@@ -19,4 +19,5 @@ Name = s-cisco-acs-app-activity
       """task_id=\w+@(::ffff:)?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
 	]
 }
+}
 ```

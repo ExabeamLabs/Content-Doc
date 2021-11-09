@@ -20,4 +20,5 @@ Name = fortinet-app-activity
     """\Wmsg="({additional_info}[^"]{1,2000})"""",
   ]
 }
+}
 ```

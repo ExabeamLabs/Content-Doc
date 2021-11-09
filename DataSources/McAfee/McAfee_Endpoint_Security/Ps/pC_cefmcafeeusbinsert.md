@@ -20,4 +20,5 @@ Name = cef-mcafee-usb-insert
           """\Wfsize=({bytes}\d{1,100})""",
         ]
     }
+}
 ```

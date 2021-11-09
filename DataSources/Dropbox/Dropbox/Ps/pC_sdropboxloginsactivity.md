@@ -20,4 +20,5 @@ Name = s-dropbox-logins-activity
       """"display_name":\s{0,100}"({user_agent}[^"]{1,2000})"""",
     ]
   }
+}
 ```

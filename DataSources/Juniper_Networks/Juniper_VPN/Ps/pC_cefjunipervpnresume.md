@@ -21,4 +21,5 @@ Name = cef-juniper-vpn-resume
   ]
   DupFields = [ "host->dest_host" , "user->account"]
 }
+}
 ```

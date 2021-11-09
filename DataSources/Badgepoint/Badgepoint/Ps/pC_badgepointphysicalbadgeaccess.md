@@ -17,4 +17,5 @@ Name = badgepoint-physical-badge-access
     """([^\|]{0,2000}\|){5}({outcome}[^\|]{1,2000})""",
   ]
 }
+}
 ```

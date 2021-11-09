@@ -18,4 +18,5 @@ Name = n-forwarded-cef-680
       """shost=({dest_host}.+?)\s{1,100}\w+="""
     ]
   }
+}
 ```

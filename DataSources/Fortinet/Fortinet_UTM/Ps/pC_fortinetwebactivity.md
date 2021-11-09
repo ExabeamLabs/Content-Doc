@@ -36,4 +36,5 @@ Name = fortinet-web-activity
     """policyid=({policy_id}\d{1,100})"""
   ]
 }
+}
 ```

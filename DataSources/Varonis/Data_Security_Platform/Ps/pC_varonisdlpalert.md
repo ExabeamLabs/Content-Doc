@@ -23,4 +23,5 @@ Name = varonis-dlp-alert
       """Path:\s{0,100}({additional_info}.+?)\s{0,100}Affected Object:"""
     ]
   }
+}
 ```

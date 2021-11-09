@@ -19,4 +19,5 @@ Name = cef-forcepoint-email-outcome
     """\WmessageId=({alert_id}\d{1,100})""",
   ]
 }
+}
 ```

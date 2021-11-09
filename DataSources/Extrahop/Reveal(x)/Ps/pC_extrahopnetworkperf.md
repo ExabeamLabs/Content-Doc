@@ -23,4 +23,5 @@ Name = extrahop-network-perf
 ]
   DupFields = ["alert_name->alert_type"]
 }
+}
 ```

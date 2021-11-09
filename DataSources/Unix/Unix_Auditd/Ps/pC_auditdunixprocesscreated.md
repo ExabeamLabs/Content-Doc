@@ -21,4 +21,5 @@ Name = auditd-unix-process-created
   ]
   DupFields = ["host->dest_host"]
 }
+}
 ```

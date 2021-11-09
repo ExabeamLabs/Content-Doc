@@ -16,4 +16,5 @@ Name = entrust-identityguard-auth-failed-3
     """({additional_info}Invalid response to a challenge.[^\.]{1,2000})""",
   ]
 }
+}
 ```

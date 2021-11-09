@@ -19,4 +19,5 @@ Name = s-4674-jp
     ]
     DupFields = [ "host->dest_host","directory->process_directory" ]
   }
+}
 ```

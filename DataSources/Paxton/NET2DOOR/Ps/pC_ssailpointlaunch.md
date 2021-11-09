@@ -28,6 +28,5 @@ s-sailpoint-activity = {
     """"source":\s{0,100}"((unknown|Not Available)|({user}[^\s,"]{1,2000}))"""",
     """"id":\s{0,100}"({fingerprint}[^"]{1,2000})",""",
     """"type":\s{0,100}"((NONE)|({event_subtype}[^"]{1,2000}))""""
-  ]
-}
+  ]}
 ```

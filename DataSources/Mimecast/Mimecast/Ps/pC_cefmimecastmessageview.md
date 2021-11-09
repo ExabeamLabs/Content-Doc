@@ -22,4 +22,5 @@ Name = cef-mimecast-message-view
     """"({additional_info}contentViewed[^}]{1,2000}?)\}"""
   ]
 }
+}
 ```

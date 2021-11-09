@@ -20,4 +20,5 @@ Name = foxt-file-download
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

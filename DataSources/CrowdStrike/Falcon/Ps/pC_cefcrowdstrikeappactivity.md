@@ -17,4 +17,5 @@ Name = cef-crowdstrike-app-activity
   ]
   DupFields = ["domain->email_domain"]
 }
+}
 ```

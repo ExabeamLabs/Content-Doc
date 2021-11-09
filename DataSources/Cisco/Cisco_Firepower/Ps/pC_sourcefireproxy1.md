@@ -38,4 +38,5 @@ Name = sourcefire-proxy-1
     """IntrusionPolicy: ({alert_name}[^,]{1,2000}),"""
   ]
 }
+}
 ```

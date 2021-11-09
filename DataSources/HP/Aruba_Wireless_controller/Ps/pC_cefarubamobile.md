@@ -18,4 +18,5 @@ Name = cef-aruba-mobile
      """\s{1,100}at=({activity}[^\s]{1,2000})""",
   ]
 }
+}
 ```

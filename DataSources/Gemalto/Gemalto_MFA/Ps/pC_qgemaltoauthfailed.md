@@ -15,4 +15,5 @@ Name = q-gemalto-auth-failed
     """resulting in ({outcome}AUTH_FAILURE)\.(\s{0,100}({failure_reason}.+?))?\s{0,100}""""",
   ]
 }
+}
 ```

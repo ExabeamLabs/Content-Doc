@@ -33,4 +33,5 @@ Name = leef-mwg-proxy
 		"""\|(?:mType|mime)=(?:|({mime}.+?))\s{0,100}(\||$)"""
     ]
   }
+}
 ```

@@ -28,6 +28,5 @@ cef-windows-dns-query-1 = {
     """\scs3=({query_flags}.+)\scs4=""",
     """\sdvc=({host}[\w\-.]{1,2000})\s""",
     """\sdvchost=({host}[\w\-.]{1,2000})\s""",
-  ]
-}
+  ]}
 ```

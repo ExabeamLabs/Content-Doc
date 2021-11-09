@@ -36,4 +36,5 @@ Name = forcepoint-proxy-1
       """\WloginID=(-|({user}[^\s]{1,2000}))""",
     ]
   }
+}
 ```

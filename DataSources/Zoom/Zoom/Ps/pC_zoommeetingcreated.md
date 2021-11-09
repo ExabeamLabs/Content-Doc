@@ -22,4 +22,5 @@ Name = zoom-meeting-created
     """"timezone"\s{0,100}:\s{0,100}"({meeting_timezone}[^"]{1,2000})""""
   ]
 }
+}
 ```

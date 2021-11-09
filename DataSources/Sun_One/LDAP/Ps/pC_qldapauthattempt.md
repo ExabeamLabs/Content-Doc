@@ -24,4 +24,5 @@ Name = q-ldap-auth-attempt
       """\WauthDN="({user_ou}[^"]{1,2000})""",
     ]
   }
+}
 ```

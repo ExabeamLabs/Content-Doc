@@ -27,4 +27,5 @@ Name = safend-usb-read
     """File Size:\s{0,100}({bytes}[^,]{1,2000})"""
   ]
 }
+}
 ```

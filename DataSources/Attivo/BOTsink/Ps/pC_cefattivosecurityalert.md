@@ -20,4 +20,5 @@ Name = cef-attivo-security-alert
     """\Wdhost=(|({src_shost}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
+}
 ```

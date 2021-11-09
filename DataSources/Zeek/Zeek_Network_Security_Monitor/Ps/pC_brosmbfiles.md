@@ -23,4 +23,5 @@ Name = bro-smb-files
     """"name":"({file_path}({file_parent}[^"]{0,2000}?(\\u005c))?({file_name}[^"\\\/]{0,2000}?(\.({file_ext}\w+))?))"""",
   ]
 }
+}
 ```

@@ -25,4 +25,5 @@ Name = cef-proofpoint-dlp-alert-1
   ]
   DupFields = [ "sender->user_email", "recipient->target" ]
 }
+}
 ```

@@ -20,4 +20,5 @@ Name = raw-pan-vpn-set-ip
     """Device name:\s({src_host}[^,]{1,2000})"""
   ]
 }
+}
 ```

@@ -21,4 +21,5 @@ Name = cef-cyberark-security-alert
     """AuditId=\[({alert_id}.+?)\]""",
   ]
 }
+}
 ```

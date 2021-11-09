@@ -19,4 +19,5 @@ Name = sfdc-app-login-1
     """USER_NAME="({user_email}[^@]{1,2000}({email_domain}[^"]{1,2000}))""", 
   ]
 }
+}
 ```

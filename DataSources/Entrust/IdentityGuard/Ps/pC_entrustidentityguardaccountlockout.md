@@ -16,4 +16,5 @@ Name = entrust-identityguard-account-lockout
     """User (({user_email}[^\@\s]{1,2000}@[^\s]{1,2000})|(({domain}[^\\\/]{1,2000})[\\\/]{1,2000})?({user}[^\s]{1,2000})) is locked.""",
   ]
 }
+}
 ```

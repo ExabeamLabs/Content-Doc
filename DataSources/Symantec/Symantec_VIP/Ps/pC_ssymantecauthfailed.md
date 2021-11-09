@@ -15,4 +15,5 @@ Name = s-symantec-auth-failed
     """({failure_reason}Authentication Failed)"""
   ]
 }
+}
 ```

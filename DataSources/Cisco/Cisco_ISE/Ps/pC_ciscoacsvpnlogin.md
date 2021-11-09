@@ -20,4 +20,5 @@ Name = cisco-acs-vpn-login
     """\:\d\d\s({dest_host}.+?)\sCSCOacs"""
   ]
 }
+}
 ```

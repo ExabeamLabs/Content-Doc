@@ -19,4 +19,5 @@ Name = cef-cisco-acs-auth-successful
       """AuthenticationMethod=(?:|({auth_method}.+?))\s[\w.]{1,2000}="""
 	]
 }
+}
 ```

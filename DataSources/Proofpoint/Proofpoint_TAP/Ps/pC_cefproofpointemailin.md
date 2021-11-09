@@ -25,4 +25,5 @@ Name = cef-proofpoint-email-in
       "sender->external_address",
     ]
   }
+}
 ```

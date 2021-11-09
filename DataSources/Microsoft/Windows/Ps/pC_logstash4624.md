@@ -29,4 +29,5 @@ Name = logstash-4624
     ]
     DupFields = ["src_host_windows->dest_host", "user->account"]
   }
+}
 ```

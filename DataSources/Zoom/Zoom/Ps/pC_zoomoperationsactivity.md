@@ -18,4 +18,5 @@ Name = zoom-operations-activity
     """"operation_detail"\s{0,100}:\s{0,100}".*?\s{1,100}({object}[^\s@"]{1,2000}@[^\s@"]{1,2000})\s{1,100}"""
   ]
 }
+}
 ```

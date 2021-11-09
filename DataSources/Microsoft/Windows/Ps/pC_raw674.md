@@ -13,4 +13,5 @@ Name = raw-674
     """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} \d{4})""",
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """(?i)(((audit|success|failure)( |_)(success|audit|failure))|information)\s{0,100}
+}
 ```

@@ -16,4 +16,5 @@ Name = osirium-app-login
     """({app}osirium)"""
   ]
 }
+}
 ```

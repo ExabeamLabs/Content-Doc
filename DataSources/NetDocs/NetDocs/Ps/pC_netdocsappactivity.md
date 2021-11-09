@@ -14,4 +14,5 @@ Name = netdocs-app-activity
     """<user id="(|({user_email}[^@"]{1,2000}?@({email_domain}[^"]{1,2000}))|({user}[^"]{1,2000}))" guid="(|({guid}[^"]{1,2000}))" name="(|({user_fullname}[^"]{1,2000}))""""
   ]
 }
+}
 ```

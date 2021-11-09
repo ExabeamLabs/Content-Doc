@@ -22,4 +22,5 @@ Name = secureauth-auth-successful-1
     """UserAgent="({user_agent}[^"]+)""",
   ]
 }
+}
 ```

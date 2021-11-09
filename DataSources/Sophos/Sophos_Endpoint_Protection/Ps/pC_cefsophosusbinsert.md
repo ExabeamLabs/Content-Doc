@@ -18,4 +18,5 @@ Name = cef-sophos-usb-insert
     """\Wid=({device_id}[^\s]{1,2000})""",
   ]
 }
+}
 ```

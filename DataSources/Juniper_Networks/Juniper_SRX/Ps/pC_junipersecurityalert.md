@@ -23,4 +23,5 @@ Name = juniper-security-alert
       """\sname="({alert_name}[^"]{1,2000})""",
     ]
 }
+}
 ```

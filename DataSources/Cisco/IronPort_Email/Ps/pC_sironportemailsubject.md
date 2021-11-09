@@ -16,4 +16,5 @@ Name = s-ironport-email-subject
       """MID ({alert_id}\d{1,100}) Subject '?({subject}[^']{1,2000}?)\s{0,100}('|$)"""
     ]
   }
+}
 ```

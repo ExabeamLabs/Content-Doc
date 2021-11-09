@@ -22,4 +22,5 @@ Name = crowdstrike-process-created
       """"CommandLine":\s{0,100}"\s{0,100}(?=[\\\/\w.]{1,2000}\s{1,100})(({directory}[^"=]{0,2000}[\\\/]{1,2000}?)({process_name}[^\s"=]{1,2000}))""",
       """"CommandLine":\s{0,100}"\s{0,100}(?=[\w.]{1,2000}\s{1,100})({process_name}[^\s"=]{1,2000})""",
       """"CommandLine":\s{0,100}"\s{0,100}({process}({directory}[^,="-]{0,2000}?[\\\/]{1,2000})({process_name}[^\\\/=]{0,2000}?))(?:\s{0,100}-+\w+.*)"{1,20}
+}
 ```

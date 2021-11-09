@@ -13,4 +13,5 @@ Name = syslog-brightmail-email-return-path
       """\s{0,100}({time}\d{1,100})\|(|({alert_id}[^\|]{1,2000}))\|MSGID\|\s{0,100}(|<?({return_path}.+?)>?)(\||\s{0,100}$)""",
     ]
   }
+}
 ```

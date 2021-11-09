@@ -24,4 +24,5 @@ Name = cef-iis-web-activity
     """\scs1=({referrer}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
+}
 ```

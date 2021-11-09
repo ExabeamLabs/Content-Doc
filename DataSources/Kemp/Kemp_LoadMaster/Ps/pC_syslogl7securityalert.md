@@ -17,4 +17,5 @@ Name = syslog-l7-security-alert
   ]
   DupFields = [ alert_name->alert_type ]
 }
+}
 ```

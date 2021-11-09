@@ -23,4 +23,5 @@ Name = microsoft-npc-failed-logon-1
   ]
   DupFields = [ "host->dest_host","outcome->event_code" ]
 }
+}
 ```

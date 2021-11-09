@@ -20,4 +20,5 @@ Name = unix-file-operation
   ]
   DupFields = ["activity->action"]
 }
+}
 ```

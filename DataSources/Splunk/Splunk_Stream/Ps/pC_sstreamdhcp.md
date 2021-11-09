@@ -31,4 +31,5 @@ Name = s-stream-dhcp
     """"host_name":"({host}[^"]{1,2000})"""",
   ]
 }
+}
 ```

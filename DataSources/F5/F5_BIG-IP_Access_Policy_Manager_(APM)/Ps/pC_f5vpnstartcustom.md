@@ -13,4 +13,5 @@ Name = f5-vpn-start-custom
     """Username:({user}[^\s][^\|]{0,2000}?)\|""",
     """Username:\s({user}[^\s][^\|]{0,2000}?)\|""",
     """Username: n/a.+emailAddress=[^,]{1,2000}
+}
 ```

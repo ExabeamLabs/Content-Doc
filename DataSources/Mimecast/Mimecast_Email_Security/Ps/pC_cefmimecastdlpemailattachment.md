@@ -23,4 +23,5 @@ Name = cef-mimecast-dlp-email-attachment
     """"Hld":"({outcome}[^"]{1,2000})"""
   ]
 }
+}
 ```

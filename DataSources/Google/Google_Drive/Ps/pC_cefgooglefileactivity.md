@@ -29,4 +29,5 @@ Name = cef-google-file-activity
   ]
   DupFields = [ "user_email->user" ]
 }
+}
 ```

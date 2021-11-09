@@ -14,4 +14,5 @@ Name = citrix-appfw-starturl
   ]
   DupFields = ["event_name->alert_name"]
 }
+}
 ```

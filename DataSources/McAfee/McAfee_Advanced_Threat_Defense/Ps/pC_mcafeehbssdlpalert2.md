@@ -21,4 +21,5 @@ Name = mcafee-hbss-dlp-alert-2
     """"threat_type":"({alert_name}[^"]{1,2000})"""",
   ]
 }
+}
 ```

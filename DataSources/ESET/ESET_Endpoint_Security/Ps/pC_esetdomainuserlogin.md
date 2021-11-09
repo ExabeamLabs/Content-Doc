@@ -24,4 +24,5 @@ Name = eset-domain-user-login
       """\d{1,100}Z\s{0,100}({host}\w+)\s""",
     ]
   }
+}
 ```

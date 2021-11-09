@@ -11,4 +11,5 @@ Name = zscaler-vpn-start
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """([^,]{0,2000}
+}
 ```

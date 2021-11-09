@@ -19,4 +19,5 @@ Name = unix-auditd-account-created
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

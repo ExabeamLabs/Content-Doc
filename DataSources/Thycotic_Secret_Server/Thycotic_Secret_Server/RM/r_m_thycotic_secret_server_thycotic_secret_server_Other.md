@@ -5,8 +5,9 @@ Vendor: Thycotic Secret Server
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   3   |   1    |     0      |      4      |    4    |
+|   2   |   1    |     0      |      4      |    4    |
 
 | Event Type     | Rules | Models                                                                          |
 | -------------- | ----- | ------------------------------------------------------------------------------- |
 | account-switch |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset |
+| file-alert     |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset |

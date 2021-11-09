@@ -21,6 +21,5 @@ goanywhere-events = {
       """GoAnywhereServicesremote_ip="({src_ip}[A-Fa-f\d.:]{1,2000})"""",
       """GoAnywhereServicesuser_name="(({user_email}[^@"]{1,2000}@[^\.]{1,2000}\.[^"]{1,2000})|(admin|666666|guest|({user}[^"]{1,2000})))"""",
       """GoAnywhereServicesevent_type="({event_name}[^"]{1,2000})"""",
-    ]
- 
+    ]}
 ```

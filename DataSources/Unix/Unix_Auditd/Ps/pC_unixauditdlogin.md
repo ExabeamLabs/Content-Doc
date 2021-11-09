@@ -25,4 +25,5 @@ Name = unix-auditd-login
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

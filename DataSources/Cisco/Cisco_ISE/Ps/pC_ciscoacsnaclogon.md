@@ -21,4 +21,5 @@ Name = cisco-acs-nac-logon
     """,\s{0,100}Framed-IP-Address=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
 }
+}
 ```

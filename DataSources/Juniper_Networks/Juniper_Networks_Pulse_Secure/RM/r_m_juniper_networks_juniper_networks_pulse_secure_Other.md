@@ -5,6 +5,8 @@ Vendor: Juniper Networks
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     0      |      3      |    3    |
+|   9   |   2    |     0      |      7      |    7    |
 
-| Event Type | Rules | Models || ---------- | ----- | ------ |
+| Event Type                    | Rules | Models                                                                                                                                                |
+| ----------------------------- | ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| network-connection-successful |       |  • <b>A-NET-OdPort-Outbound</b>: Outbound destination ports per organization<br> • <b>A-NET-HdPort-Outbound</b>: Outbound destination ports per asset |

@@ -19,4 +19,5 @@ Name = cef-azure-siem-app-logon
     """exabeam_host=({host}[^\s]{1,2000})"""
   ]
 }
+}
 ```

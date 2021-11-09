@@ -20,4 +20,5 @@ Name = github-audit-repo-activity
     """({app}github)"""
   ]
 }
+}
 ```

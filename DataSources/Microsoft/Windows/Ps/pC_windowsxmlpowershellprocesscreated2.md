@@ -25,4 +25,5 @@ Name = windows-xml-powershell-process-created-2
   ]
   DupFields = [ "host->dest_host", "directory->process_directory" ]
 }
+}
 ```

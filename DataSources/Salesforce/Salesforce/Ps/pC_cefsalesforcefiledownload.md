@@ -20,4 +20,5 @@ Name = cef-salesforce-file-download
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

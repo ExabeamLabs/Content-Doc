@@ -17,4 +17,5 @@ Name = cisco-asa-vpn-login
     ]
     DupFields = ["user->account"]
   }
+}
 ```

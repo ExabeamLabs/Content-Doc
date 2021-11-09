@@ -14,4 +14,5 @@ Name = juniper-firewall-network-connection-close-1
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     ]
 }
+}
 ```

@@ -22,4 +22,5 @@ Name = json-cisco-netflow-connection-1
     """"prot":({protocol}\d{1,100})"""
   ]
 }
+}
 ```

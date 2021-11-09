@@ -31,4 +31,5 @@ Name = barracuda-firewall-network-connection-1
     """application=({app}[^\|]{1,2000})"""
    ]
 }
+}
 ```

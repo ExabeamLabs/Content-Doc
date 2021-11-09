@@ -38,4 +38,5 @@ Name = trendmicro-network-conn-failed
   ]
   DupFields = ["rule->failure_reason"]
 }
+}
 ```

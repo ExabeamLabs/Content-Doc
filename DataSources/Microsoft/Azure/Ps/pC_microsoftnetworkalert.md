@@ -27,4 +27,5 @@ Name = microsoft-network-alert
   ]
    DupFields = ["event_hub_namespace->host", "action->outcome"]
 }
+}
 ```

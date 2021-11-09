@@ -23,6 +23,5 @@ authmgr-authentication = {
       """,browser_ip_address=({dest_ip}[A-Fa-f:\d.]{1,2000})""",
       """,client_port=({src_port}\d{1,100})""",
       """,result_code=({result_code}\d{1,100})"""
-    ]
- 
+    ]}
 ```

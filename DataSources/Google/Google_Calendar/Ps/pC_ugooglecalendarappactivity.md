@@ -19,4 +19,5 @@ Name = u-googlecalendar-app-activity
     """"type"\s{0,100}:\s{0,100}"event_change".*?"name"\s{0,100}:\s{0,100}"event_title",\s{0,100}"value"\s{0,100}:\s{0,100}"({object}[^"]{1,2000})"""",
   ]
 }
+}
 ```

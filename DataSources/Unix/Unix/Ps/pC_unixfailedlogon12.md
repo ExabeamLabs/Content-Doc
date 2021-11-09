@@ -17,4 +17,5 @@ Name = unix-failed-logon-12
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

@@ -25,4 +25,5 @@ Name = f5-network-connection
     """\Werrdefs_msg_name="({event_name}[^"]{1,2000})""",
   ]
 }
+}
 ```

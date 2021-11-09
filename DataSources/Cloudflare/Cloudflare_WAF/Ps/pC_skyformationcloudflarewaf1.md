@@ -40,4 +40,5 @@ Name = skyformation-cloudflare-waf-1
     """"ClientRequestReferer":"({referrer}[^"]{1,2000}?)",""",
     ]
 }
+}
 ```

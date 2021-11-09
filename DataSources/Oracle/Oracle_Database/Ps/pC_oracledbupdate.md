@@ -23,4 +23,5 @@ Name = oracle-db-update
   ]
   DupFields = [ "db_user->account", "schema->database_name" ]
 }
+}
 ```

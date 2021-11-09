@@ -13,4 +13,5 @@ Name = f5-vpn-additional-info
     """\s{1,100}01490005:5:.*?({session_id}[^\s:]{1,2000}):\s{1,100}({additional_info}.+?)\s{0,100}$"""
   ]
 }
+}
 ```

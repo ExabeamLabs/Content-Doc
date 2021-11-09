@@ -16,4 +16,5 @@ Name = asa-svc-vpn-713050-end
     """%ASA-({priority}\d{1,100})-({event_code}\d{1,100})""",
    ]
 }
+}
 ```

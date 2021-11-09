@@ -14,4 +14,5 @@ Name = ibm-lotus-database-update
     """Updating .*? into database '({database_name}[^']{1,2000})"""
   ]
 }
+}
 ```

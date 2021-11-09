@@ -14,4 +14,5 @@ Name = microsoft-rra-auth-successful
     """:\s{0,100}The user (({domain}[^\\\/]{1,2000}?)[\\\/]{1,2000})?({user}[^\\\/]{1,2000}?) has connected""",
   ]
 }
+}
 ```

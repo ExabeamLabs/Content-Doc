@@ -16,4 +16,5 @@ Name = bastion-failed-logon
     """:\s{1,100}({failure_reason}.+?)\s{0,100}$"""
   ]
 }
+}
 ```

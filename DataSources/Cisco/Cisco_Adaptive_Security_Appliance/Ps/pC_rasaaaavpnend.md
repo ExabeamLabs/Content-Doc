@@ -13,4 +13,5 @@ Name = r-asa-aaa-vpn-end
                """exabeam_source=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
                """Authen Session End: user '({user}[^']{1,2000})'""" ]
   }
+}
 ```

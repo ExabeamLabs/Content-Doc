@@ -14,4 +14,5 @@ Name = infoblox-remote-logon
     """group=({group}.+?)\s{1,100}(\w+=|$)""",
   ]
 }
+}
 ```

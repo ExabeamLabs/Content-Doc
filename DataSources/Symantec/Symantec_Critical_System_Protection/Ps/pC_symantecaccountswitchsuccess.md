@@ -27,4 +27,5 @@ Name = symantec-account-switch-success
   ]
   DupFields = ["host->dest_host"]
 }
+}
 ```

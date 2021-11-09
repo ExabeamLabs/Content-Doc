@@ -18,4 +18,5 @@ Name = cef-ccure-badge-access-1
      """\scs3=(?:|({location_city}.+?))\s(\w+=|$)"""
    ]
  }
+}
 ```

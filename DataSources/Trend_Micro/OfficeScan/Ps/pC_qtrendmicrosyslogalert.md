@@ -14,4 +14,5 @@ Name = q-trendmicro-syslog-alert
   ]
   DupFields = [ "src_host->host" ]
 }
+}
 ```

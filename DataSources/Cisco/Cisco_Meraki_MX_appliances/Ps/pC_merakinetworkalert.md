@@ -22,4 +22,5 @@ Name = meraki-network-alert
   ]
   DupFields = [ "alert_name->alert_type"]
 }
+}
 ```

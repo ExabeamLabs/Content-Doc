@@ -24,4 +24,5 @@ Name = cef-nsx-fw-logs-1
     """dtz=({dest_country}[^\s]{1,2000})"""
   ]
 }
+}
 ```

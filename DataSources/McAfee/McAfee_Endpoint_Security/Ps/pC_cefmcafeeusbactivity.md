@@ -15,4 +15,5 @@ Name = cef-mcafee-usb-activity
 	"""\sdst=({dest_ip}.+?)\s\w+=""",
 	"""\sduser=(({domain}[^\\]{1,2000})\\+)?({user}[^=]{1,2000})\s\w+=""",
 	"""\scs4=([^,]{0,2000}
+}
 ```

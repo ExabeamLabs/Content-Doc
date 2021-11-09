@@ -23,4 +23,5 @@ Name = cef-infowatch-usb-write
     """\Wsuid=({user_fullname}.+?)(\s{1,100}[\w\.]{1,2000}=|\s{0,100}$)""",
   ]
 }
+}
 ```

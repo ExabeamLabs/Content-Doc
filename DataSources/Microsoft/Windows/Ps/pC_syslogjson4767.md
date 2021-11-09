@@ -23,4 +23,5 @@ Name = syslog-json-4767
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

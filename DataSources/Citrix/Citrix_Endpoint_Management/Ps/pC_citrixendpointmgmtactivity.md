@@ -23,4 +23,5 @@ Name = citrix-endpoint-mgmt-activity
     """arg1":"({additional_info}[^"]{1,2000})"""
   ]   
 }
+}
 ```

@@ -27,4 +27,5 @@ Name = cef-netapp-file-delete
     """\Wcs1=(-|({accesses}.+?))\s{0,100}(\w+=|$)"""
   ]
 }
+}
 ```

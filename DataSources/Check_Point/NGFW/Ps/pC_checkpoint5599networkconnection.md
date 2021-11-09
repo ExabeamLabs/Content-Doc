@@ -26,4 +26,5 @@ Name = checkpoint-5599-network-connection
 	"""ifname:"({src_interface}[^"]{1,2000})"""
   ]
 }
+}
 ```

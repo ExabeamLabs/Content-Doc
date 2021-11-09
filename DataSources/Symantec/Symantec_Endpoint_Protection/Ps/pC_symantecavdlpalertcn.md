@@ -22,4 +22,5 @@ Name = symantec-av-dlp-alert-cn
   ]
   DupFields = [ "outcome->action" ]
 }
+}
 ```

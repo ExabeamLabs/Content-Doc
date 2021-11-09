@@ -15,4 +15,5 @@ Name = s-ccure-badge-access
     """,\s{0,100}MessageType="({outcome}[^"]{1,2000})""",
     """,\s{0,100}Name="({user_fullname}[^"]{1,2000})"""",
     """,\s{0,100}Name="({last_name}[^",]{1,2000})\s{0,100}
+}
 ```

@@ -25,4 +25,5 @@ Name = s-radius-wireless-nac-logon
     """Result:\s{1,100}(?:-|({access_type}.+?))\s{1,100}Session Identifier:"""
   ]
 }
+}
 ```

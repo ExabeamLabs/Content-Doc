@@ -21,4 +21,5 @@ Name = cloudflare-network-alert
     """dpt=({dest_port}[^\s]{1,2000})""",
   ]
 }
+}
 ```

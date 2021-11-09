@@ -15,4 +15,5 @@ Name = windows-dns-query-1
     """<Identifier>\S+\s{1,100}({host}\S+?)<\/Identifier>"""
   ]
 }
+}
 ```

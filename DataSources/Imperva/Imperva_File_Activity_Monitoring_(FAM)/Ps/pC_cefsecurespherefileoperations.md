@@ -33,4 +33,5 @@ Name = cef-securesphere-file-operations
     """\Wcat=({category}.+?)\s{1,100}(\w+=|$)""",
   ]
 }
+}
 ```

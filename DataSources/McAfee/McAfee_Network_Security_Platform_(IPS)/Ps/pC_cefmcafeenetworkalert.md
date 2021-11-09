@@ -26,4 +26,5 @@ Name = cef-mcafee-network-alert
   ]
   DupFields = [ "alert_name->policy" ]
 }
+}
 ```

@@ -26,4 +26,5 @@ Name = cef-cas-security-alert
     """\srequestClientApplication=({app}[^=]{1,2000}?)\s{0,100}\w+="""
   ]
 }
+}
 ```

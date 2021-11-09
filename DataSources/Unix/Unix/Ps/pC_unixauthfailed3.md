@@ -16,4 +16,5 @@ Name = unix-auth-failed-3
     """({outcome}failure)""",
   ]
 }
+}
 ```

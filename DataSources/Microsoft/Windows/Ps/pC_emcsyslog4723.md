@@ -20,4 +20,5 @@ Name = emc-syslog-4723
     """keywords="({outcome}[^"]{1,2000})""""]
   DupFields = [ "host->dest_ip" ]
 }
+}
 ```

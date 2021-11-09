@@ -17,4 +17,5 @@ Name = s-ironport-email-file-verdict
       """file reputation verdict\s{0,100}:\s{0,100}(?:UNKNOWN|({file_verdict}[^,\s]{1,2000}))""",
     ]
   }
+}
 ```

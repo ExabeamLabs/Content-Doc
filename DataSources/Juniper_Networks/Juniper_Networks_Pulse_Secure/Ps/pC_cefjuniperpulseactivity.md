@@ -21,4 +21,5 @@ Name = cef-juniper-pulse-activity
     """&DeviceType\\=({additional_info}[^&]{1,2000})"""
   ]
 }
+}
 ```

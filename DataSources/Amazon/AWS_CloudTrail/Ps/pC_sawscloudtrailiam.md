@@ -35,4 +35,5 @@ Name = s-aws-cloudtrail-iam
      """\srequestClientApplication=({app}[^\s]{1,2000})\s""",
  ]
 }
+}
 ```

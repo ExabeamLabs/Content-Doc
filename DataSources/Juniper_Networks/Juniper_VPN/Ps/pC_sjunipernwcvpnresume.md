@@ -13,4 +13,5 @@ Name = s-juniper-nwc-vpn-resume
     """({event_code}Session resumed)"""
   ]
 }
+}
 ```

@@ -34,4 +34,5 @@ Name = auditbeat-process-creation
  ]
  DupFields = [ "process_directory->directory", "process->path", "host->dest_host", "pid->process_id" ]
 }
+}
 ```

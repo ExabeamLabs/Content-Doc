@@ -14,4 +14,5 @@ Name = r-nic-4771
     """Security,(rn=)?({record_id}[\d]{1,2000})""",
     """Failure Audit,({host}[^,]{1,2000})""",
     """\d{2}:\d{2}:\d{2} \d{4}
+}
 ```

@@ -17,4 +17,5 @@ Name = cef-kaba-badge-access
     """\Wcs2=({badge_id}\d{1,100})"""
   ]
 }
+}
 ```

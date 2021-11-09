@@ -33,4 +33,5 @@ Name = crowdstrike-network-connection
       """"ContextProcessId":"({process_guid}[^"]{1,2000})""""
     ]
   }
+}
 ```

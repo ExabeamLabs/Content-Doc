@@ -20,4 +20,5 @@ Name = extrahop-4770
     """"dest_ip":"(::1|({dest_ip}[a-fA-F:\d.]{1,2000}))""",
   ]
 }
+}
 ```

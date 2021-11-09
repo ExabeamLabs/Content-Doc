@@ -16,4 +16,5 @@ Name = galaxy-physical-badge-access
     """Access_Info\s{0,100}=\s{0,100}({outcome}[^,]{1,2000}?)[\s,]{0,2000}([\w\s]{1,2000}=|$)""",
   ]
 }
+}
 ```

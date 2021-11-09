@@ -20,4 +20,5 @@ Name = oracle-db-access-1
     """\(PROGRAM=({process}[^\)]{1,2000}?)\)"""
   ]
 }
+}
 ```

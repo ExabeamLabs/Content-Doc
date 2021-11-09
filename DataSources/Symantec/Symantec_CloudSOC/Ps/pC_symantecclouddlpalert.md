@@ -28,4 +28,5 @@ Name = symantec-cloud-dlp-alert
   ]
   DupFields = ["file_path->resource"]
 }
+}
 ```

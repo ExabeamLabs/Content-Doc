@@ -26,4 +26,5 @@ Name = json-o365-activity-3
   ]
   DupFields = ["activity->operation"]
 }
+}
 ```

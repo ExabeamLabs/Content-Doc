@@ -24,4 +24,5 @@ Name = digitalguardian-process-created
   ]
   DupFields = [ "directory->process_directory" ]
 }
+}
 ```

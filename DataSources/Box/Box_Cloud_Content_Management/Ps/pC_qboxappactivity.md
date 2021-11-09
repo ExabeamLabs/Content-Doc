@@ -31,4 +31,5 @@ Name = q-box-app-activity
   ]
   DupFields = [ "user_email->user", "accesses->activity", "host->dest_host" ]
 }
+}
 ```

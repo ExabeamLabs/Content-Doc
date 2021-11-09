@@ -29,4 +29,5 @@ Name = checkpoint-firewall-allow-2
   ]
   DupFields = [ "action->event_name", "action->outcome" ]
 }
+}
 ```

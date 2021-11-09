@@ -26,4 +26,5 @@ Name = cef-defender-graph-security-alert
      """"id"{1,20}:"{1,20}({alert_id}[^"]{1,2000})""""
    ]
 }
+}
 ```

@@ -8,4 +8,5 @@ Name = cef-carbonblack-network-connection-failed-1
     """({outcome}failed)""",
   ]
 }
+}
 ```

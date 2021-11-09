@@ -23,4 +23,5 @@ Name = f5-asm-web-activity
     """http_request="(\w{1,2000}\s)?({uri_path}\/[^"\s?]{1,2000}?)(\?({uri_query}[^\s]{1,2000}))?\s"""
   ]
 }
+}
 ```

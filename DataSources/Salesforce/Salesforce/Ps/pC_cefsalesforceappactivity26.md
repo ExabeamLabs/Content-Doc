@@ -23,4 +23,5 @@ Name = cef-salesforce-app-activity-26
     """({app}Sales Cloud)""",
   ]
 }
+}
 ```

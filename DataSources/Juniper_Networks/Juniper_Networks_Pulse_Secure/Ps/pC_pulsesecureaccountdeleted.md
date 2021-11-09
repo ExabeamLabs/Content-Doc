@@ -14,4 +14,5 @@ Name = pulsesecure-account-deleted
   ]
   DupFields = [ "target_user->account_name" , "host->dest_host"]
 }
+}
 ```

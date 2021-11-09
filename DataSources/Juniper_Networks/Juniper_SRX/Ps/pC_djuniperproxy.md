@@ -28,4 +28,5 @@ Name = d-juniper-proxy
  ]
   DupFields = [ "action->outcome" ]
 }
+}
 ```

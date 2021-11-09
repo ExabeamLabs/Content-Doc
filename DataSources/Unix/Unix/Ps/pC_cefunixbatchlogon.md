@@ -16,4 +16,5 @@ Name = cef-unix-batch-logon
   ]
   DupFields = [ "dest_host->host"]
 }
+}
 ```

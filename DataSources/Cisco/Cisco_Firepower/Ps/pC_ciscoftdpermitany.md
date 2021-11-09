@@ -34,4 +34,5 @@ Name = cisco-ftd-permit-any
   ]
   DupFields = [ "outcome->action" ]
 }
+}
 ```

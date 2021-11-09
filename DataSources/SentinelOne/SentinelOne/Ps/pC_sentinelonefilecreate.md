@@ -10,4 +10,5 @@ Name = sentinelone-file-create
   ]
   DupFields = ["host->dest_host"]
 }
+}
 ```

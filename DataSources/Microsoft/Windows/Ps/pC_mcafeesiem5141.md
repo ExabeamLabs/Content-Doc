@@ -26,4 +26,5 @@ Name = mcafee-siem-5141
     ]
     DupFields = [ "host->dest_host" ]
   }
+}
 ```

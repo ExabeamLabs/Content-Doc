@@ -32,4 +32,5 @@ Name = s-symantec-dlp-alert
     ]
     DupFields = [ "external_address->recipient", "sender->user_email", "recipients->target", "subject->additional_info" ]
   }
+}
 ```

@@ -20,4 +20,5 @@ Name = q-duo-auth-failed
     """\Wnew_enrollment=\s{0,100}({new_enrollment}[^;]{1,2000}?)(?:;|\})""",
   ]
 }
+}
 ```

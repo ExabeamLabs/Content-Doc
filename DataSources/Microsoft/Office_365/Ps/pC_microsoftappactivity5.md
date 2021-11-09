@@ -24,6 +24,5 @@ microsoft-app-activity-3 = {
       """"src-application-name":"({app}[^"]{1,2000})"""",
       """key":"User-Agent","value":"({user_agent}[^"]{1,2000})"""",
       """ipAddress":"({src_ip}[a-fA-F\d.:]{1,2000})""""
-    ]
- 
+    ]}
 ```

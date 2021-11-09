@@ -15,4 +15,5 @@ Name = opendj-auth-uid
     """uid=({user_uid}\d{1,100})"""
   ]
 }
+}
 ```

@@ -22,4 +22,5 @@ Name = mcafee-usb-write
 	"""EventTypeDisplayName(=|:)\s{0,100}"({activity_details}[^"]{1,2000})"""",
     ]
   }
+}
 ```

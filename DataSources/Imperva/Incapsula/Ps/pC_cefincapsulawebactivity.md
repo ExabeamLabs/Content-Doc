@@ -24,4 +24,5 @@ Name = cef-incapsula-web-activity
     """\Wdproc=({category}.+?)\s{1,100}(\w+=|$)"""
   ]
 }
+}
 ```

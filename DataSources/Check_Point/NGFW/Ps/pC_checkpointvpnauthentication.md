@@ -21,4 +21,5 @@ Name = checkpoint-vpn-authentication
           
     ]
 }
+}
 ```

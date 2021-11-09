@@ -36,6 +36,5 @@ tippingpoint-sms-alert-template = {
         {EntityType="device", Name="dest_address", Fields=["dest_ip->ip_address"]},
       ]
     }
-  }
-}
+  }}
 ```

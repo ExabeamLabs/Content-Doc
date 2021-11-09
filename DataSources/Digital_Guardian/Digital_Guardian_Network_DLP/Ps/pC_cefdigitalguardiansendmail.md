@@ -24,4 +24,5 @@ Name = cef-digitalguardian-send-mail
     "user->email_user",
   ]
 }
+}
 ```

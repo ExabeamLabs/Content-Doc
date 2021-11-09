@@ -23,4 +23,5 @@ Name = s-onelogin-app-activity
   ]
   DupFields = ["user_fullname->user"]
 }
+}
 ```

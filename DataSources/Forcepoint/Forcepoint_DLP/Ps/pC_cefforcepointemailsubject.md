@@ -24,4 +24,5 @@ Name = cef-forcepoint-email-subject
     """\Wurl="(|({url}[^"]{1,2000}))"""",
   ]
 }
+}
 ```

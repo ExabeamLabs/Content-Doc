@@ -34,4 +34,5 @@ Name = cef-netskope-alert-1
   ]
   DupFields = [ "malware_url->full_url", "malware_file_name->file_path_at" ]
 }
+}
 ```

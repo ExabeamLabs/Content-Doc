@@ -21,4 +21,5 @@ Name = vectra-alert-1
 	"""\sUTCTimeStart="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""
   ]
 }
+}
 ```

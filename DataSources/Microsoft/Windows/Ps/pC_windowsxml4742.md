@@ -22,4 +22,5 @@ Name = windows-xml-4742
   ]
   DupFields = [ "host->dest_host"]
 }
+}
 ```

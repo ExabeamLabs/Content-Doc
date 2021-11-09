@@ -22,4 +22,5 @@ Name = logrhythm-0365-failed-app-login
     """USERAGENT=\s{0,100}(|({user_agent}[^\n]{1,2000}?))\s{0,100}(\w+=|$)"""
   ]
 }
+}
 ```

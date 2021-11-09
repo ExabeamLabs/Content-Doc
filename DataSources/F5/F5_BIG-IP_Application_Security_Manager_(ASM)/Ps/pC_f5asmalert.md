@@ -24,4 +24,5 @@ Name = f5-asm-alert
   ]
   DupFields = ["protocol->alert_type"]
 }
+}
 ```

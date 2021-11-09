@@ -20,4 +20,5 @@ Name = foxt-file-remove
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

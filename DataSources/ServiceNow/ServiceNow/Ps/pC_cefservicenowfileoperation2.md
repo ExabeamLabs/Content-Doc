@@ -33,4 +33,5 @@ Name = cef-servicenow-file-operation-2
   ]
   DupFields = [ "host->dest_host", "file_name->object", "activity->accesses" ]
 }
+}
 ```

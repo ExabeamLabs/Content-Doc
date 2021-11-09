@@ -22,4 +22,5 @@ Name = symantec-edr-alert-1
   ]
   DupFields = ["file_name -> alert_name"]
 }
+}
 ```

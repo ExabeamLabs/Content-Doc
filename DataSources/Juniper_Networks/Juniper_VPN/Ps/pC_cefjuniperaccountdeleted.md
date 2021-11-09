@@ -19,4 +19,5 @@ Name = cef-juniper-account-deleted
   ]
   DupFields = [ "target_user->account_name" ]
 }
+}
 ```

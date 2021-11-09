@@ -10,4 +10,5 @@ Name = symantec-epp-alert-japanese
   Conditions = [ """,SHA-256:""", """,MD-5:""", """,CIDS シグネチャ文字列:""", """,アプリケーション:""", """シグネチャ ID:""" ]
   Fields = [
     """({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d),[^,]{0,2000}
+}
 ```

@@ -13,4 +13,5 @@ Name = citrix-device-aaa-auth-failed
     """GMT\s{0,100}({host}[^:]{1,2000})\s:\s{0,100}({event_code}(\w+\s{1,100}){3})[^:]{1,2000}:\s{0,100}"{1,20}({failure_reason}.+)\s{0,100}for user\s{0,100}({user}[^\s]{1,2000})"""
   ]
 }
+}
 ```

@@ -15,4 +15,5 @@ Name = vmware-view-app-login
     """({app}View)"""
    ]
 }
+}
 ```

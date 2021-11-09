@@ -20,4 +20,5 @@ Name = cef-connectra-vpn-logout
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

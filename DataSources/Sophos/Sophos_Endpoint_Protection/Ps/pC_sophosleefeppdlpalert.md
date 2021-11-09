@@ -22,4 +22,5 @@ Name = sophos-leef-epp-dlp-alert
           """DestinationValue=({target}.+?)\s{1,100}(\w+=|$)""",
           ]
 }
+}
 ```

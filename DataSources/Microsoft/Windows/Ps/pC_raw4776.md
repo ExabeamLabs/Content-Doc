@@ -26,4 +26,5 @@ Name = raw-4776
       """Source Workstation(:|=)([\s\\]{1,2000}|(\s{0,100}\\*((({dest_ip}[A-Fa-f:\d.]{1,2000}?)(:({dest_port}\d{1,100}))?)|({dest_host}.+?))[\s;]{0,2000}))Error Code(:|=)""",
     ]
   }
+}
 ```

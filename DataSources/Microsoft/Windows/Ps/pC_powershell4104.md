@@ -16,4 +16,5 @@ Name = powershell-4104
     """({process_name}PowerShell)"""
   ]
 }
+}
 ```

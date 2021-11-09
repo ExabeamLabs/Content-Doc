@@ -19,4 +19,5 @@ Name = cef-bitglass-dlp-alert
     """ext_filelink=({additional_info}.+?)\s{1,100}(\w+=|$)""",
   ]
 }
+}
 ```

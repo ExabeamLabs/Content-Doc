@@ -20,4 +20,5 @@ Name = cef-lyrix-badge-access
     """\Wsuid=({user_fullname}.+?)\s{1,100}(\w+=|$)"""
   ]
 }
+}
 ```

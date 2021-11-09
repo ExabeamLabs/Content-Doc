@@ -11,4 +11,5 @@ Name = symantec-usb-write
   Fields = [
     """exabeam_host=({host}[^,\s]{1,2000})""",
     """,(0.0.0.0|({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^,]{0,2000})),([^,]{0,2000}
+}
 ```

@@ -9,4 +9,5 @@ Name = cef-defender-atp-member-added
   """AccountDomain":"({group_domain}[^"]{1,2000})"""
 ]
 }
+}
 ```

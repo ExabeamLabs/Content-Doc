@@ -23,4 +23,5 @@ Name = securesphere-db-failed-login-2
   ]
   DupFields = [ "user->db_user" ]
 }
+}
 ```

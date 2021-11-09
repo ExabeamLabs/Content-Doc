@@ -78,6 +78,5 @@ cef-ad-fs-audit = {
     """\sduser=(NETWORK SERVICE|({user}.+?))(\s{1,100}[\w\.]{1,2000}=|\s{0,100}$)""",
     """CEF:([^\|]{0,2000}\|){5}({failure_reason}[^\|]{1,2000}).*Audit_failure""",
     """Audit_failure.*\scs5=[^=\-]{0,2000}?-(|({failure_reason}.+?))(\s{1,100}[\w\.]{1,2000}=|\s{0,100}$)""",
-  ]
-}
+  ]}
 ```

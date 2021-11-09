@@ -20,4 +20,5 @@ Name = checkpoint-vpn-login-1
     """'service':\s{0,100}({dest_port}\d{1,100})""",
   ]
 }
+}
 ```

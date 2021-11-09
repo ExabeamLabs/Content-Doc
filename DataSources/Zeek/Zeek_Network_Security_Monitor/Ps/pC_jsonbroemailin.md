@@ -20,4 +20,5 @@ Name = json-bro-email-in
   ]
   DupFields = [ "sender->external_address" ]
 }
+}
 ```

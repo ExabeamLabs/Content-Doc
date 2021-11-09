@@ -19,4 +19,5 @@ Name = s-physical-badge-access-4
       """Door="{1,20}({location_door}[^"]{1,2000})"""
     ]
   }
+}
 ```

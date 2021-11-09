@@ -21,4 +21,5 @@ Name = cef-ata-ticket-alert
     """\Wshost=(?:({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w.\-]{1,2000}))\s{1,100}(\w+=|$)"""
   ]
 }
+}
 ```

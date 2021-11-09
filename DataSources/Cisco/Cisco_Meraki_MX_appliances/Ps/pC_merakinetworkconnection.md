@@ -22,4 +22,5 @@ Name = meraki-network-connection
     """\smac=({src_mac}[a-fA-F\d.:]{1,2000})""",
   ]
 }
+}
 ```

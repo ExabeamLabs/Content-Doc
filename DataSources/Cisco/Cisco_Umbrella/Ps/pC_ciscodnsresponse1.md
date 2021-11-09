@@ -25,4 +25,5 @@ Name = cisco-dns-response-1
   ]
   DupFields = [ "host->src_host" ]
 }
+}
 ```

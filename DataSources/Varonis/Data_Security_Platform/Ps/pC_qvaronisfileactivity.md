@@ -24,4 +24,5 @@ Name = q-varonis-file-activity
   ]
   DupFields = [ "accesses->event_code" ]
 }
+}
 ```

@@ -18,4 +18,5 @@ Name = s-guardium-db-access
   ]
   DupFields = ["user->db_user"]
 }
+}
 ```

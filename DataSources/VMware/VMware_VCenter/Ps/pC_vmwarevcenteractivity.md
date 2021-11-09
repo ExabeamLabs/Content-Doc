@@ -17,4 +17,5 @@ Name = vmware-vcenter-activity
       """({app}VM_VCenter)"""
   ]
 }
+}
 ```

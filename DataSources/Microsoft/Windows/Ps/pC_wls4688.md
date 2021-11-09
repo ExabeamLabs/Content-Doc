@@ -26,4 +26,5 @@ Name = wls-4688
     ]
     DupFields = [ "process_guid->pid","directory->process_directory" ]
   }
+}
 ```

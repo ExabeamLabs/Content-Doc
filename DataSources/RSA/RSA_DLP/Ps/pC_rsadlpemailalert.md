@@ -21,4 +21,5 @@ Name = rsa-dlp-email-alert
     """sessionEmailSubject=({subject}.+?)\s{1,100}\w+="""
   ]
 }
+}
 ```

@@ -26,4 +26,5 @@ Name = cef-postgresql-audit
     """\ssrc=({src_ip}.+?)\s{0,100}\w+=""",
   ] 
 }
+}
 ```

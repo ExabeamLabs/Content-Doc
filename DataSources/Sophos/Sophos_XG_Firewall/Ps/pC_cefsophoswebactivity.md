@@ -35,4 +35,5 @@ Name = cef-sophos-web-activity
     """\Wcontenttype="({mime}[^"]{1,2000})""", 
   ]
 }
+}
 ```

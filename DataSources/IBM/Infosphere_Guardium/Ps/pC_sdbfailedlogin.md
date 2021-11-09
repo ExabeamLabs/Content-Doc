@@ -11,4 +11,5 @@ Name = s-db-failed-login
   Conditions = [ ""","LOGIN_FAILED",""" ]
   Fields = [
     """([^,]{0,2000}
+}
 ```

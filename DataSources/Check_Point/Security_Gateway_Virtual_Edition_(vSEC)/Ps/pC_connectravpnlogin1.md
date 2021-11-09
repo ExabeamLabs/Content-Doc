@@ -22,4 +22,5 @@ Name = connectra-vpn-login-1
   ]
    DupFields = [ "action->event_name", "account->user" ]
 }
+}
 ```

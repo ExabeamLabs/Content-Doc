@@ -20,4 +20,5 @@ Name = securesphere-alert
     """\|g=({process_name}.+?)\s{0,100}\|"""
   ]
 }
+}
 ```

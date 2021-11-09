@@ -31,4 +31,5 @@ Name = mcafee-ips-network-alert
     """\WDetection Mech:\s{0,100}({detection_mech}[^;]{1,2000});"""
   ]
 }
+}
 ```

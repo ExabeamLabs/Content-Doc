@@ -31,4 +31,5 @@ Name = r-syslog-vontu-dlp-1
     ProjectName = "SOC"
     EntityFields = [
       {EntityType="user", Name="windows_id", Fields=["user_email->windows_id"]}
+}
 ```

@@ -22,4 +22,5 @@ Name = s-safesend-dlp-email-alert
   ]
   DupFields = [ "recipient->external_address" ]
 }
+}
 ```

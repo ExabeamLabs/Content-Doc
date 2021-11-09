@@ -33,4 +33,5 @@ Name = s-symantec-web-activity-1
     """"action":"({action}[^"]{1,2000})""""
   ]
 }
+}
 ```

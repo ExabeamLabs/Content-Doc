@@ -24,4 +24,5 @@ Name = cef-carbonblack-process-created
   ]
   DupFields = [ "directory->process_directory" ]
 }
+}
 ```

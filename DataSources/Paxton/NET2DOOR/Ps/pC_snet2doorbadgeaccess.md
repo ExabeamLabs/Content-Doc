@@ -21,4 +21,5 @@ Name = s-net2door-badge-access
      """\(({direction}[^\)]{1,2000})\)"""
    ]
  }
+}
 ```

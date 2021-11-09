@@ -11,4 +11,5 @@ Name = pan-data-alert
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """THREAT,({alert_type}[^,]{1,2000}),[^,]{0,2000}
+}
 ```

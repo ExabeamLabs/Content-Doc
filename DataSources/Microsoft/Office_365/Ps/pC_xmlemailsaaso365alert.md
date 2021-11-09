@@ -22,4 +22,5 @@ Name = xml-email-saas-o365-alert
   ]
   DupFields = [ "subject->alert_name" ]
 }
+}
 ```

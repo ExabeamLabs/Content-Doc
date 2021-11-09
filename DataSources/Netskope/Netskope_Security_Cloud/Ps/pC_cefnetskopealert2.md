@@ -30,4 +30,5 @@ Name = cef-netskope-alert-2
     """"q_shared_with"{1,20}:"{1,20}({shared_with_at}[^"]{1,2000})""""
   ]
 }
+}
 ```

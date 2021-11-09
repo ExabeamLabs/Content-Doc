@@ -21,4 +21,5 @@ Name = s-xml-4725
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

@@ -20,4 +20,5 @@ Name = cef-catonetworks-vpn-login
     """\Wcs3=({account}.*?)\s\w+=.*?cs3Label=CATOAccountName""",
   ]
 }
+}
 ```

@@ -19,4 +19,5 @@ Name = cef-mssql-database-login
     """\scategoryOutcome=/({outcome}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
+}
 ```

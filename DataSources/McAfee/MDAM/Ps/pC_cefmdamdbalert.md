@@ -23,4 +23,5 @@ Name = cef-mdam-db-alert
     """\|alert\|({alert_name}[^\|]{1,2000})""",
   ]
 }
+}
 ```

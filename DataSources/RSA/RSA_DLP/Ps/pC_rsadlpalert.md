@@ -23,4 +23,5 @@ Name = rsa-dlp-alert
   ]
   DupFields = ["directory->process_directory"]
 }
+}
 ```

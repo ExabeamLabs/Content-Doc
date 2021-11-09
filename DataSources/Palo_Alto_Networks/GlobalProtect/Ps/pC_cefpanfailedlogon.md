@@ -19,4 +19,5 @@ Name = cef-pan-failed-logon
     """error:\s{1,100}({failure_reason}[^":]{1,2000})(,|\.)"""
   ]
 }
+}
 ```

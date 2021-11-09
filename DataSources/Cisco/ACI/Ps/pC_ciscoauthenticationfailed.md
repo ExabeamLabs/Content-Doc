@@ -15,4 +15,5 @@ Name = cisco-authentication-failed
 	"""({outcome}Failure)"""
   ]
 }
+}
 ```

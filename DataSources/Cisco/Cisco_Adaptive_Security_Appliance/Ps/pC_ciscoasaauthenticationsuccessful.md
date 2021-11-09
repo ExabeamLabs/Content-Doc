@@ -16,4 +16,5 @@ Name = cisco-asa-authentication-successful
     """aaa.c:({event_code}3083)"""
   ]
 }
+}
 ```

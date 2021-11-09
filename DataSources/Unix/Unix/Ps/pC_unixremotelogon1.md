@@ -18,4 +18,5 @@ Name = unix-remote-logon-1
     """channel: ({event_name}[^:]{1,2000}?)\s{1,100}\w+:"""	
   ]
 }
+}
 ```

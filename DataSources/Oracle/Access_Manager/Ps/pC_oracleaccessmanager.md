@@ -23,4 +23,5 @@ Name = oracle-access-manager
     """destinationServiceName=({service}.+?)\s{0,100}"{0,20}(\w+=|$)""",
   ]
 }
+}
 ```

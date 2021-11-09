@@ -32,4 +32,5 @@ Name = fortinet-dlp-alert-email
   ]
   DupFields = ["bytes_out->bytes", "recipient->recipients"]
 }
+}
 ```

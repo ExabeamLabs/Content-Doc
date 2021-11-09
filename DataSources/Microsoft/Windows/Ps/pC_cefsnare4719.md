@@ -20,4 +20,5 @@ Name = cef-snare-4719
       """cs6=({audit_category}.+?)\s{1,100}\w+="""
     ]
   }
+}
 ```

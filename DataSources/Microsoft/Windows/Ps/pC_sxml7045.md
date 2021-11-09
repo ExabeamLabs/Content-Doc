@@ -23,4 +23,5 @@ Name = s-xml-7045
   ]
   DupFields = [ "host->dest_host", "directory->process_directory" ]
 }
+}
 ```

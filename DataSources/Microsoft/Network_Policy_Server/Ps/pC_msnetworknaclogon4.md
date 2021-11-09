@@ -11,4 +11,5 @@ Name = msnetwork-nac-logon-4
   Fields = [
     """"({host}[^,"]{1,2000})","RAS",({time}\d\d\/\d\d\/\d\d\d\d,\d\d:\d\d:\d\d)""",
     """\d\d:\d\d:\d\d,\d{0,100}
+}
 ```

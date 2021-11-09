@@ -8,4 +8,5 @@ Name = cef-carbonblack-network-connection-successful-2
     """({outcome}successful)""",
   ]
 }
+}
 ```

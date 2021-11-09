@@ -34,4 +34,5 @@ Name = cef-counterbreach-db-alert
   ]
   DupFields = [ "db_user->account" ]
 }
+}
 ```

@@ -30,4 +30,5 @@ Name = cisco-netflow-connection-1
   ]
   DupFields = [ "outcome->action" ]
 }
+}
 ```

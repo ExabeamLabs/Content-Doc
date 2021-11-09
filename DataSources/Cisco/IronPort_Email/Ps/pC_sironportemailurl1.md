@@ -18,4 +18,5 @@ Name = s-ironport-email-url-1
       """URL ({url}.+?) has reputation ({url_score}.+?) matched Condition: URL Reputation Rule"""
     ]
   }
+}
 ```

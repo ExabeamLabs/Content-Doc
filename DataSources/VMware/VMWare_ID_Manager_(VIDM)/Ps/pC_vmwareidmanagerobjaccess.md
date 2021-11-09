@@ -20,4 +20,5 @@ Name = vmware-id-manager-obj-access
     """product=\\*"({app}[^\\"=:]{1,2000})\\*"""",
   ]
 }
+}
 ```

@@ -19,4 +19,5 @@ Name = centrify-failed-logon
     """reason=:?\s{0,100}({failure_reason}.+?)\s{1,100}(\w+=|$)""",
   ]
 }
+}
 ```

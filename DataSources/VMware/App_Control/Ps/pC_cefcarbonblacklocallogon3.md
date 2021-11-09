@@ -18,4 +18,5 @@ Name = cef-carbonblack-local-logon-3
     """\WEvent\[({event_code}\d{1,100})\]\s{0,100}Type\[Session"""
   ]
 }
+}
 ```

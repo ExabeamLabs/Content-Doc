@@ -18,4 +18,5 @@ Name = cef-trendmicro-security-alert-3
     """({alert_type}Malware)""",
   ]
 }
+}
 ```

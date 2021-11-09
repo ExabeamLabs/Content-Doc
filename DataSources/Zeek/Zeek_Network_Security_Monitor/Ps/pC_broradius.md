@@ -19,4 +19,5 @@ Name = bro-radius
     """"result":"({outcome}[^"]{1,2000})""",
   ]
 }
+}
 ```

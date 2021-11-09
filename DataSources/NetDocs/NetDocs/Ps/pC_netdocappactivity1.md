@@ -10,4 +10,5 @@ Name = netdoc-app-activity-1
  Conditions = [ """netdocs""", """memberType": """, """storageObject":""", """cabinet": """ ]
  Fields =[
    """"{1,20}host"{1,20}:\s"{1,20}({host}[^"]{1,2000})"{1,20}
+}
 ```

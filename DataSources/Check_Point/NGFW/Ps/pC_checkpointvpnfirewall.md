@@ -25,4 +25,5 @@ Name = checkpoint-vpn-firewall
     """community="{1,20}(|({community}[^"]{1,2000}))"{1,20}\s(\w+=|$)""",
   ]
 }
+}
 ```

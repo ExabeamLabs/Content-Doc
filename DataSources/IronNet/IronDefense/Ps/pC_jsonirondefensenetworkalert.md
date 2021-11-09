@@ -22,4 +22,5 @@ Name = json-irondefense-network-alert
     """"body":"({additional_info}[^",]{1,2000})""""
   ]
 }
+}
 ```

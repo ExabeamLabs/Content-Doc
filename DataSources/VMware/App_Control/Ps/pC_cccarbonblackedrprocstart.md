@@ -11,4 +11,5 @@ Name = cc-carbonblack-edr-procstart
   ]
   DupFields = ["activity_type->event_name"]
 }
+}
 ```

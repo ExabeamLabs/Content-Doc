@@ -5,9 +5,9 @@ Vendor: Cisco
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   1    |     2      |     13      |   13    |
+|   3   |   0    |     2      |     14      |   14    |
 
-| Event Type | Rules                                                                                                                                                         | Models                                                                              |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| vpn-login  | <b>T1133 - External Remote Services</b><br> ↳ <b>SL-UA-F-VPN</b>: First VPN connection for service account                                                    |                                                                                     |
-| vpn-logout | <b>T1098.002 - Account Manipulation: Exchange Email Delegate Permissions</b><br> ↳ <b>EM-InB-Perm-A</b>: Abnormal number of mailbox permission given by user. |  • <b>EM-InB-Perm</b>: Models the number of mailbox permissions given by this user. |
+| Event Type | Rules                                                                                                                                                                             | Models |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| app-login  | <b>T1078 - Valid Accounts</b><br> ↳ <b>APP-Account-deactivated</b>: Activity from a de-activated user account<br> ↳ <b>APP-F-SA-NC</b>: New service account access to application |        |
+| vpn-login  | <b>T1133 - External Remote Services</b><br> ↳ <b>SL-UA-F-VPN</b>: First VPN connection for service account                                                                        |        |

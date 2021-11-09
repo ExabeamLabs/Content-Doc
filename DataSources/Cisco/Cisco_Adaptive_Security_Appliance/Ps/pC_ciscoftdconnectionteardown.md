@@ -21,4 +21,5 @@ Name = cisco-ftd-connection-teardown
   ]
   DupFields = [ "event_name->activity" ]
 }
+}
 ```

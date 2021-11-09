@@ -47,4 +47,5 @@ Name = sourcefire-network-alert-1
   ]
   DupFields = [ "rule->alert_name", "user_agent->additional_info" ]
 }
+}
 ```

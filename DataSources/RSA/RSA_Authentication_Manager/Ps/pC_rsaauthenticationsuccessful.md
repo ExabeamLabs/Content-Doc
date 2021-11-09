@@ -16,4 +16,5 @@ Name = rsa-authentication-successful
     """({outcome}Success)"""
   ]
 }
+}
 ```

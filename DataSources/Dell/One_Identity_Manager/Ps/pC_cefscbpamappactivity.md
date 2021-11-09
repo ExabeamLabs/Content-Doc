@@ -21,4 +21,5 @@ Name = cef-scbpam-app-activity
     """({app}PAM)""",
   ]
 }
+}
 ```

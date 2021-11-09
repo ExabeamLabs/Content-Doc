@@ -22,4 +22,5 @@ Name = s-crowdstrike-failed-logon
     """"LogonDomain":"({domain}[^"]{1,2000})""""
   ]
 }
+}
 ```

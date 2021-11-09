@@ -18,4 +18,5 @@ Name = juniper-owa
     """agent="{1,20}({user_agent}[^"]{1,2000})"""",
   ]
 }
+}
 ```

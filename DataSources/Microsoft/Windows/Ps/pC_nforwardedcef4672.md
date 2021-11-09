@@ -22,4 +22,5 @@ Name = n-forwarded-cef-4672
     ]
     DupFields = ["dest_ip->host", "dest_host->host"]
   }
+}
 ```

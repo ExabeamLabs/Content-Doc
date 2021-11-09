@@ -15,4 +15,5 @@ Name = cef-duo-app-login
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
 }
+}
 ```

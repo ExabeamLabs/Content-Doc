@@ -33,4 +33,5 @@ Name = leef-incapsula-web-activity
     """qstr=({uri_query}[^\s]{1,2000})""",
    ]
 }
+}
 ```

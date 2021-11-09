@@ -25,4 +25,5 @@ Name = cef-unix-dlp-email-alert
   ]
   DupFields = [ "alert_name->alert_type" ]
 }
+}
 ```

@@ -24,4 +24,5 @@ Name = fortinet-dlp-alert
     """\Wservice="({protocol}[^"]{1,2000})"""",
   ]
 }
+}
 ```

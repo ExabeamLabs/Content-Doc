@@ -24,4 +24,5 @@ Name = s-o365-dlp-alert-1
     """Operation":\s{0,100}"({additional_info}[^"]{1,2000})""""
   ]
 }
+}
 ```

@@ -35,4 +35,5 @@ Name = sysmon-process-network
   ]
   DupFields = [ "directory->process_directory" ]
 }
+}
 ```

@@ -18,4 +18,5 @@ Name = raw-4700
     """Task Content:\s{0,100}({additional_info}[^<]{1,2000}?)\s{0,100}<"""
   ]
 }
+}
 ```

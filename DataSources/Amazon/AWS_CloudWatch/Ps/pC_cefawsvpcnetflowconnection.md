@@ -15,4 +15,5 @@ Name = cef-aws-vpc-netflow-connection
     """requestClientApplication=({app}.+?)\s\w+="""
   ]
 }
+}
 ```

@@ -23,4 +23,5 @@ Name = cef-onedrive-app-activity
     """\WdestinationServiceName=({event_subtype}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
   ]
 }
+}
 ```

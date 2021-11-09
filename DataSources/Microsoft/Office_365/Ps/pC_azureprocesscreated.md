@@ -20,4 +20,5 @@ Name = azure-process-created
     """"ComputerName":"({host}[^"]{1,2000})""",
   ]
 }
+}
 ```

@@ -23,4 +23,5 @@ Name = zscaler-network-connection
     """cat=(Miscellaneous or Unknown|({ip_category}[^=]{1,2000}?))\s{1,100}(\w+=|$)"""
     ]
 }
+}
 ```

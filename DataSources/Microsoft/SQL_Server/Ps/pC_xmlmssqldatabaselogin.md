@@ -32,4 +32,5 @@ Name = xml-mssql-database-login
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

@@ -17,4 +17,5 @@ Name = graylog-ras-vpn-start
   ]
   DupFields = ["user->account"]
 }
+}
 ```

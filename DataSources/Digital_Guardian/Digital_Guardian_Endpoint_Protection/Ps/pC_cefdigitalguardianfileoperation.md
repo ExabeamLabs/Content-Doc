@@ -39,4 +39,5 @@ Name = cef-digitalguardian-file-operation
     """\sad\.DG__BytesWritten=(0|({bytes}\d{1,100}))\s{1,100}(ad\.\S+=|\w+=|$)""",
   ]
 }
+}
 ```

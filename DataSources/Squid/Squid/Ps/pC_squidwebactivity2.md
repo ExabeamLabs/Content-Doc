@@ -28,4 +28,5 @@ Name = squid-web-activity-2
     """\[({outcome}EVT_\w+)\s{0,100}\|""",
   ]
 }
+}
 ```

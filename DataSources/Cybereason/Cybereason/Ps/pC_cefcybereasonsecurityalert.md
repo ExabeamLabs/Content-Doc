@@ -19,4 +19,5 @@ Name = cef-cybereason-security-alert
     """"malopActivityTypes":\{"[^]}]{1,2000}?"values":\["({threat_category}[^"]{1,2000})"""",
   ]
 }
+}
 ```

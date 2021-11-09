@@ -24,4 +24,5 @@ Name = fortinet-dlp-alert-email-1
   ]
   DupFields = [ "file_name->attachments" ]
 }
+}
 ```

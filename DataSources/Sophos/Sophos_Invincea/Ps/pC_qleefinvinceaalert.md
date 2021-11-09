@@ -22,4 +22,5 @@ Name = q-leef-invincea-alert
   ]
   DupFields = [ "alert_name->alert_type" ]
 }
+}
 ```

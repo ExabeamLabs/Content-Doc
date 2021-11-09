@@ -19,4 +19,5 @@ Name = ossec-security-alert-1
     """\sCurrent MD5:\s{0,100}'({md5_sum}[^;']{1,2000})"""
   ]
 }
+}
 ```

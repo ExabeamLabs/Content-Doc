@@ -17,4 +17,5 @@ Name = aruba-nac-logon
       """\sauth server=({auth_server}[^\s]{1,2000})""",
    ]
   }
+}
 ```

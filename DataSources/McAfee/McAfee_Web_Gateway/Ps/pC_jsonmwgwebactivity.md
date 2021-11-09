@@ -33,4 +33,5 @@ Name = json-mwg-web-activity
         """"byteC2P":"({bytes_in}\d{1,100})"""",
     ]
 }
+}
 ```

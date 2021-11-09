@@ -22,4 +22,5 @@ Name = bro-ntlm-1
     """"success":({outcome}[^,]{1,2000})""",
   ]
 }
+}
 ```

@@ -21,4 +21,5 @@ Name = crowdstrike-security-alert-6
       """"FileName":\s{0,100}"({file_name}[^"]{1,2000}?)"""",
       """"FilePath":\s{0,100}"({file_path}[^"]{1,2000}?)\\?"""",
       """"CommandLine"{1,20}:\s{0,100}"{1,20}\\{0,25}"{0,20}({command_line}[^\n]{1,2000}?)\\{0,25}\s{0,100}"{1,20}
+}
 ```

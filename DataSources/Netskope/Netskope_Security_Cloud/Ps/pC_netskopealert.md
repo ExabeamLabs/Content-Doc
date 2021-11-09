@@ -26,4 +26,5 @@ Name = netskope-alert
     """"site":\s{0,100}"({site_at}[^"]{1,2000})""""
   ]
 }
+}
 ```

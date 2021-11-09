@@ -24,4 +24,5 @@ Name = s-process-network-carbonblack
     """domain":"({web_domain}[^"]{1,2000})"""
   ]
 }
+}
 ```

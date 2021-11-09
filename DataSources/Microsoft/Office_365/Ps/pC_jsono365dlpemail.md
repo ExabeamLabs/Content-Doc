@@ -29,4 +29,5 @@ Name = json-o365-dlp-email
   ]
   DupFields = [ "alert_type->alert_name" ]
 }
+}
 ```

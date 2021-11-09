@@ -26,4 +26,5 @@ Name = juniper-network-alert-1
     """\srulebase-name="({alert_type}[^"]{1,2000})"""
   ]
 }
+}
 ```

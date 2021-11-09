@@ -23,4 +23,5 @@ Name = cef-salesforce-failed-app-login
     """({app}Sales Cloud)""",
   ]
 }
+}
 ```

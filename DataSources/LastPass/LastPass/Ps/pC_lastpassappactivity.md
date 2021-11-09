@@ -21,4 +21,5 @@ Name = lastpass-app-activity
       ]
       DupFields = [ "event_name->activity" ]
 }
+}
 ```

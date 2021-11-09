@@ -8,4 +8,5 @@ Name = netwrix-failed-app-login
     """CEF:0\|Netwrix\|(AD FS|Logon Activity|Self-audit)\|[^\|]{1,2000}\|[^\|]{1,2000}\|({activity}[^\|]{1,2000})\|""",
   ]
 }
+}
 ```

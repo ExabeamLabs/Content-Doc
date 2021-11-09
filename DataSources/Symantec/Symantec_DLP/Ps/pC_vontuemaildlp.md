@@ -24,4 +24,5 @@ Name = vontu-email-dlp
       """\sBlocked:\s{1,100}({outcome}[^\s,]{1,2000})"""
     ]
   }
+}
 ```

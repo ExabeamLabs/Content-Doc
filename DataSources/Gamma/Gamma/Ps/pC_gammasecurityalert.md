@@ -23,4 +23,5 @@ Name = gamma-security-alert
     """'violation_id':\s{0,100}({alert_id}[^,}]{1,2000})"""
   ]
 }
+}
 ```

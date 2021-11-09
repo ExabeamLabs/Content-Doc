@@ -32,4 +32,5 @@ Name = cef-ibm-racf-app-activity
   ]
   DupFields = [ "terminal->app" ]
 }
+}
 ```

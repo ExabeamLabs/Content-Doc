@@ -22,4 +22,5 @@ Name = xml-4719
     """<Data Name='AuditPolicyChanges'>({policy}[^<]{1,2000})""",
   ]
 }
+}
 ```

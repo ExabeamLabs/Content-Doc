@@ -21,4 +21,5 @@ Name = snort-network-alert-2
     """Priority:.+?\{(PROTO:)?({protocol}[^\}]{1,2000})\}"""
   ]
 }
+}
 ```

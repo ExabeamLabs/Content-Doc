@@ -16,4 +16,5 @@ Name = huawei-vpn-login-1
   ]
   DupFields = ["user->account"]
 }
+}
 ```

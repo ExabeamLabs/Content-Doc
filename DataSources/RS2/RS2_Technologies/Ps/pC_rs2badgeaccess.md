@@ -20,4 +20,5 @@ Name = rs2-badge-access
     """\sLastName="\s{0,100}({last_name}[^"]{1,2000}?)\s{0,100}"""",
   ]
 }
+}
 ```

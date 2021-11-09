@@ -24,4 +24,5 @@ Name = symantec-edr-alert-2
     """"event_desc":"({additional_info}[^"]{1,2000})"""",
   ]
 }
+}
 ```

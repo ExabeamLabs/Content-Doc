@@ -21,4 +21,5 @@ Name = cef-dropbox-app-activity-9
     """"assets":\s{0,100}\[[^\]]{0,2000}?"contextual":\s{0,100}"({resource}[^"]{1,2000})""""
   ]
  }
+}
 ```

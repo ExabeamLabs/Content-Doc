@@ -21,4 +21,5 @@ Name = unix-as
   ]
   DupFields = [ "host->dest_host", "user_uid->user_id"]
 }
+}
 ```

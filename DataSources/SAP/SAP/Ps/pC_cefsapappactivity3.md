@@ -37,6 +37,5 @@ cef-sap-app-activity = {
     """DeviceCustomString2=({transaction}.*?)\s\w+=""",
     """cs4=({result_code}\d{1,100})""", 
     """amac=({mac}.*?)\s\w+="""
-  ]
-}
+  ]}
 ```

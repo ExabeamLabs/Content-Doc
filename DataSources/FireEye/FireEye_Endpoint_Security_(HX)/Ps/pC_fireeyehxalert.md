@@ -23,4 +23,5 @@ Name = fireeye-hx-alert
     """"deviceSensor":"({sensor}[^"]{1,2000})""",
   ]
 }
+}
 ```

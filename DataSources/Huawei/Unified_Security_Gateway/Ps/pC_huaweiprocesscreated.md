@@ -16,4 +16,5 @@ Name = huawei-process-created
      """\sresult=({outcome}\w+)""",
   ]
 }
+}
 ```

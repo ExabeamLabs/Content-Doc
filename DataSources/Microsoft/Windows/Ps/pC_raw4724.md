@@ -34,4 +34,5 @@ Name = raw-4724
     ]
     DupFields=[ "host->dest_host" ]
   }
+}
 ```

@@ -13,4 +13,5 @@ Name = raw-scep-alert
     """exabeam_source=({host}[\w.\-]{1,2000})""",
     """exabeam_host=(.+?@\s{0,100})?({host}[^\s]{1,2000})""",
     """(?:([^",]{0,2000}
+}
 ```

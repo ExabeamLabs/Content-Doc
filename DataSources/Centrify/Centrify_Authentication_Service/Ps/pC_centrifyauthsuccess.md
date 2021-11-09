@@ -20,4 +20,5 @@ Name = centrify-auth-success
     """service=({protocol}.+?)\s\w+=""",
   ]
 }
+}
 ```

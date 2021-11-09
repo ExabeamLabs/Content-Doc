@@ -22,4 +22,5 @@ Name = xml-5143
     """<Message>({event_name}A network share object was modified)"""
   ]
 }
+}
 ```

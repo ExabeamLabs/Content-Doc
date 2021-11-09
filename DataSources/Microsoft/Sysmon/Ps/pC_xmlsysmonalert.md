@@ -21,4 +21,5 @@ Name = xml-sysmon-alert
   ]
   DupFields = ["directory->process_directory","pid->process_id","host->dest_host"]
 }
+}
 ```

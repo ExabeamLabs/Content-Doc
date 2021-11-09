@@ -20,4 +20,5 @@ Name = foxt-sshruncmd-process-created
   ]
   DupFields = [ "host->dest_host", "process_guid->pid", "path->process", "directory->process_directory" ]
 }
+}
 ```

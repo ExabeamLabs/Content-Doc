@@ -24,4 +24,5 @@ Name = skyformation-prisma-security-alert
    """"alertRuleName":"({alert_type}[^"]{1,2000})"""
  ]
 }
+}
 ```

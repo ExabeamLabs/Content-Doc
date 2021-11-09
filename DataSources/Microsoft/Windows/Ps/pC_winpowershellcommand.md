@@ -25,4 +25,5 @@ Name = win-powershell-command
    ]
    DupFields = ["directory->process_directory"]
  }
+}
 ```

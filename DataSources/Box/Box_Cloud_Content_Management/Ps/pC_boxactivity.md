@@ -20,4 +20,5 @@ box-activity = {
     """({app}Dropbox)""",
   ]
 }
+}
 ```

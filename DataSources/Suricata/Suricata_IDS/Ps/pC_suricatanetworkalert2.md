@@ -30,4 +30,5 @@ Name = suricata-network-alert-2
     
   ]
 }
+}
 ```

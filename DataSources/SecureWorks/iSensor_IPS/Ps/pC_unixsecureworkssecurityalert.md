@@ -22,4 +22,5 @@ Name = unix-secureworks-security-alert
   ]
   DupFields = [ "alert_name->alert_type" ]
 }
+}
 ```

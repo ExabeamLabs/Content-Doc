@@ -27,4 +27,5 @@ Name = cef-netapp-file-read
     """\Wcs1=(-|({accesses}.+?))\s{0,100}(\w+=|$)"""
   ]
 }
+}
 ```

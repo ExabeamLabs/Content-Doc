@@ -24,4 +24,5 @@ Name = googlecloud-web-activity
     """"instance_id":"(-|({host}[^"]{1,2000}))"""
   ]
 }
+}
 ```

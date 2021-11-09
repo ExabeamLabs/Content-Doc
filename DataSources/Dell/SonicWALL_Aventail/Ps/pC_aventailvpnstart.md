@@ -13,4 +13,5 @@ Name = aventail-vpn-start
     """:\s.+?\]\s{1,100}({host}[^\s]{1,2000}).+?\sUser.+?\(({user}[^\)]{1,2000}).+connecting from.+?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):.+access to.+?({dest_host}[\w.-]{1,2000})"""
   ]
 }
+}
 ```

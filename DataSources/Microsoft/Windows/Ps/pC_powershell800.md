@@ -20,4 +20,5 @@ Name = powershell-800
     """({event_code}800)"""
   ]
 }
+}
 ```

@@ -21,4 +21,5 @@ Name = googlecloud-app-activity
     """\sdproc=({app}[^=]{1,2000})\s\w{1,2000}="""
   ]
 }
+}
 ```

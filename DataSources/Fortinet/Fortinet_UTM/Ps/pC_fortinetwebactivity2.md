@@ -31,4 +31,5 @@ Name = fortinet-web-activity-2
     """requestContext=({category}[^=]{1,2000}?)\s{1,100}([\w.]{1,2000}=|$)"""
   ]
 }
+}
 ```

@@ -26,4 +26,5 @@ Name = eset-alert
 	]
    DupFields = ["host->dest_host"]
    }
+}
 ```

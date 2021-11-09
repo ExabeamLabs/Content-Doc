@@ -16,4 +16,5 @@ Name = cef-securesphere-app-login
     """\ssuser=({user}.+?)\s{0,100}(\w+=|$)"""
   ]
 }
+}
 ```

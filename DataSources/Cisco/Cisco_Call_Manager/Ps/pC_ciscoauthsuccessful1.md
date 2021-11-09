@@ -18,4 +18,5 @@ Name = cisco-auth-successful-1
     """Login Interface=({app}[^\]]{1,2000})""",
   ]
 }
+}
 ```

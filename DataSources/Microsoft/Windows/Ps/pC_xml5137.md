@@ -22,4 +22,5 @@ Name = xml-5137
     """({event_name}A directory service object was created)""",
   ]
 }
+}
 ```

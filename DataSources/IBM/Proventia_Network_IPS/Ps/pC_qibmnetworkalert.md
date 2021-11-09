@@ -22,4 +22,5 @@ Name = q-ibm-network-alert
     """status=({action}[^\=\|\#]{1,2000})""",
   ]
 }
+}
 ```

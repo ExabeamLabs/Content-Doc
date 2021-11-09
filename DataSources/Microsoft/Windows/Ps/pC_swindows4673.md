@@ -15,4 +15,5 @@ Name = s-windows-4673
     ]
     DupFields=[ "host->dest_host" ]
   }
+}
 ```

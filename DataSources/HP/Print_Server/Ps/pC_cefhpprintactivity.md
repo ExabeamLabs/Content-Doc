@@ -26,4 +26,5 @@ Name = cef-hp-print-activity
     """CEF:([^\|]{0,2000}\|){5}({activity}[^\|]{1,2000})\|""",
   ]
 }
+}
 ```

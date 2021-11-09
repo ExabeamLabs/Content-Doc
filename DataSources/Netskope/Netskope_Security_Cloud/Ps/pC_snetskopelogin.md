@@ -15,4 +15,5 @@ Name = s-netskope-login
     """"user": "(?=[^\s]{1,2000}@[^\s]{1,2000})({user_email}[^"\s@]{1,2000}@({email_domain}[^"\s@]{1,2000}))"""",
   ]
 }
+}
 ```

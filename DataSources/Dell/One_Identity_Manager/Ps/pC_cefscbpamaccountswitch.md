@@ -17,4 +17,5 @@ Name = cef-scbpam-account-switch
     """\srt=({time}\d{1,100})""",
   ]
 }
+}
 ```

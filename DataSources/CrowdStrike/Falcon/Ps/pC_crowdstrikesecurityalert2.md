@@ -34,4 +34,5 @@ Name = crowdstrike-security-alert-2
       """SensorId":"({sensor_id}[^"]{1,2000})""",
       """"GrandparentImageFileName\\*":\\*"({grandparent_image_filename}[^,]{1,2000}?)\\*"{1,20}""",
       """"GrandparentCommandLine\\*"{1,20}:\s{0,100}\\*"{1,20}({grandparent_command_line}[^,]{1,2000}?)\\*"{1,20}
+}
 ```

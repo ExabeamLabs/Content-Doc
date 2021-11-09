@@ -17,4 +17,5 @@ Name = swivel-authentication-failed
     """error:\s({failure_reason}.+?)\s{0,100}$""",
 	]
 }
+}
 ```

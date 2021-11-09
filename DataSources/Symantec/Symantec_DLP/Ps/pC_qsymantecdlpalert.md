@@ -12,4 +12,5 @@ Name = q-symantec-dlp-alert
     """exabeam_endTime=({time}\d{1,100})""",
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """\|occurredon=({time}\w+ \d{1,100}
+}
 ```

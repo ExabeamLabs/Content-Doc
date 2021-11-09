@@ -20,4 +20,5 @@ Name = mssql-database-query-3
     """ApplicationName="{1,20}({app}[^"]{1,2000})"""
 	]
 }
+}
 ```

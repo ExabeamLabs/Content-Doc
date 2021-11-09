@@ -16,4 +16,5 @@ Name = openvpn-auth-failed-2
     """status=({outcome}\d{1,100})"""
   ]
 }
+}
 ```

@@ -20,4 +20,5 @@ Name = f5-network-alert-4
   ]
   DupFields = [ "alert_name->alert_type" ]
 }
+}
 ```

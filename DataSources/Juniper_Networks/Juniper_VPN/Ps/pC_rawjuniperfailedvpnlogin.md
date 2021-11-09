@@ -25,4 +25,5 @@ Name = raw-juniper-failed-vpn-login
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

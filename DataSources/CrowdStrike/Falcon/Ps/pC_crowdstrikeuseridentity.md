@@ -17,4 +17,5 @@ Name = crowdstrike-user-identity
       """"LogonType":\s{0,100}"({logon_type}\d{1,100})""",
       """"UserName":\s{0,100}"({user}[^"]{1,2000})""",
       """"{1,20}AuthenticationPackage"{1,20}:\s{0,100}"{1,20}({auth_package}[^"]{1,2000})"{1,20}
+}
 ```

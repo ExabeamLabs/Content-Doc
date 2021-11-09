@@ -25,4 +25,5 @@ Name = xml-microsoft-dns-query
     """<Data Name='BufferSize'>({bytes}\d{1,100})<\/Data>""",
   ]
 }
+}
 ```

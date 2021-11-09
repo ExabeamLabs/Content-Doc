@@ -14,4 +14,5 @@ Name = bind-dns-query-3
     """({src_ip}[a-fA-F\d.:]{1,2000})\#({src_port}\d{1,100}):\s{1,100}query:\s{1,100}({query}.+?)\s{1,100}IN\s{1,100}({query_type}\S+)""",
   ]
 }
+}
 ```

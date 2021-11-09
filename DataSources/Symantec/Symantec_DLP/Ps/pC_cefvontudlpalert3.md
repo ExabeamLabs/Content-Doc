@@ -33,4 +33,5 @@ Name = cef-vontu-dlp-alert-3
       ProjectName = "SOC"
       EntityFields = [
         {EntityType="user", Name="windows_id", Fields=["user->windows_id"]}
+}
 ```

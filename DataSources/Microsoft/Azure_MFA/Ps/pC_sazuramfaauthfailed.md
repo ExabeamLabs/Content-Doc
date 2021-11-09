@@ -17,4 +17,5 @@ Name = s-azura-mfa-auth-failed
     """({auth_method}Pfauth)""",
   ]
 }
+}
 ```

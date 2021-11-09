@@ -16,4 +16,5 @@ Name = raw-unix-member-removed
   ]
   DupFields=["host->dest_host"]
 }
+}
 ```

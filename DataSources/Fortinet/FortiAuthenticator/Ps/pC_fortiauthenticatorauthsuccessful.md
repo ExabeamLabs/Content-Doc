@@ -20,4 +20,5 @@ Name = fortiauthenticator-auth-successful
       """status="Failed" ({failure_reason}.+?)( to .*?)?\s{0,100}$""",
     ]
   }
+}
 ```

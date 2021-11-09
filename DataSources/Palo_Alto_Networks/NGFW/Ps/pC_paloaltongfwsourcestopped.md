@@ -15,4 +15,5 @@ Name = paloalto-ngfw-source-stopped
     """({alert_name}A device has stopped emitting events)"""
   ]
 }
+}
 ```

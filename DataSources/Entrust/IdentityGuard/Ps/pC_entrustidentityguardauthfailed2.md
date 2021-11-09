@@ -18,4 +18,5 @@ Name = entrust-identityguard-auth-failed-2
     """Remote Address: ({src_ip}[a-fA-F\d\.:]{1,2000})""",
   ]
 }
+}
 ```

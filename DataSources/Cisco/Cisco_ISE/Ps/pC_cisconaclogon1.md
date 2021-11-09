@@ -20,4 +20,5 @@ Name = cisco-nac-logon-1
     """, AuthenticationMethod=({auth_type}[^,]{1,2000})"""
   ]
 }
+}
 ```

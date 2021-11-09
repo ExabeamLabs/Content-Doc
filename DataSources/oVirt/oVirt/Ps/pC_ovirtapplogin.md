@@ -15,4 +15,5 @@ Name = ovirt-app-login
     """({app}ovirt)"""
   ]
 }
+}
 ```

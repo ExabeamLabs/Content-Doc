@@ -7,4 +7,5 @@ Name = sentinelone-file-delete-1
   Fields = ${SentinelOneParserTemplates.sentinelone-activity.Fields} [
     """({event_name}fileDeletion)""",
     """type"{1,20}:"{1,20}file"{1,20}
+}
 ```

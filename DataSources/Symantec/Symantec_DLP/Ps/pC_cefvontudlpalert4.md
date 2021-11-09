@@ -10,4 +10,5 @@ Name = cef-vontu-dlp-alert-4
   TimeFormat = "MMM dd, yyyy HH:mm:ss a"
   Fields = [
     """OCCURRED_ON\|({time}\w+\s{1,100}\d{1,2}
+}
 ```

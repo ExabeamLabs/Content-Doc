@@ -21,4 +21,5 @@ Name = crowdstrike-file-write-1
       """src-account-name":"({account_name}[^"]{1,2000})"""
     ]
   }
+}
 ```

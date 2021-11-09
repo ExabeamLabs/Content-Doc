@@ -22,4 +22,5 @@ Name = n-forwarded-cef-trendmicro-security-alert-2
     """\Wcat=({alert_type}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
+}
 ```

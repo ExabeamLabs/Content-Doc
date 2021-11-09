@@ -23,4 +23,5 @@ Name = s-common-ftp-delete
   ]
   DupFields = [ "host->dest_host", "file_ext->host_file_ext" ]
 }
+}
 ```

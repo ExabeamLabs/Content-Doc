@@ -25,4 +25,5 @@ Name = syslog-bit9-file-alert
     """\sprocess="({process}[^"]{1,2000})"""",
   ]
 }
+}
 ```

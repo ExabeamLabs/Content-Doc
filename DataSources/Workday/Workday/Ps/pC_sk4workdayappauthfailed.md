@@ -19,4 +19,5 @@ Name = sk4-workday-app-auth-failed
     """({app}Workday)"""
   ]
 }
+}
 ```

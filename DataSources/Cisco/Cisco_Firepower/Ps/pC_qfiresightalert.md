@@ -18,4 +18,5 @@ Name = q-firesight-alert
       """\s\[Classification: ({alert_type}[^\]]{1,2000})\]"""
   ]
 }
+}
 ```

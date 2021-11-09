@@ -21,4 +21,5 @@ Name = cef-forcepoint-email-spam-score
     """\WmessageId=({alert_id}\d{1,100})""",
   ]
 }
+}
 ```

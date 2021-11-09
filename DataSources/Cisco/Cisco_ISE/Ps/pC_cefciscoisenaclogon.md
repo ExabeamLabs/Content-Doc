@@ -20,4 +20,5 @@ Name = cef-cisco-ise-nac-logon
     """\ssrc=({src_ip}[^\s]{1,2000})"""
   ]
 }
+}
 ```

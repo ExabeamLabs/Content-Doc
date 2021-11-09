@@ -14,4 +14,5 @@ Name = syslog-juniper-vpn-login-failed
   ]
   DupFields = [ "dest_ip->host" ]
 }
+}
 ```

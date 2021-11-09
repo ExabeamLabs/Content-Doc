@@ -21,4 +21,5 @@ Name = mcafee-security-alert-1027
   ]
   DupFields = ["alert_type->alert_name"]
  }
+}
 ```

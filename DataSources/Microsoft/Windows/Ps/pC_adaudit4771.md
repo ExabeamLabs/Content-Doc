@@ -24,4 +24,5 @@ Name = ad-audit-4771
     """EVENT_TYPE_TEXT\s{0,100}=\s{0,100}({outcome}.+?)\s{0,100}\]""",
   ]
 }
+}
 ```

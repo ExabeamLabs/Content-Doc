@@ -22,4 +22,5 @@ Name = ping-federate-auth
     """"{1,20}ERROR"{1,20}:"{1,20}({failure_reason}[^"]{1,2000})""",
   ]
 }
+}
 ```

@@ -18,4 +18,5 @@ Name = s-physical-badge-access-5
       """(?:([^\|]{0,2000}\|)){6}\s{1,100}({location_building}.+?)\s{1,100}$"""
     ]
   }
+}
 ```

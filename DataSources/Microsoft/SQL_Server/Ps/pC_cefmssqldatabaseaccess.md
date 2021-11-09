@@ -18,4 +18,5 @@ Name = cef-mssql-database-access
     """\srt=({time}\d{1,100})""",
   ]
 }
+}
 ```

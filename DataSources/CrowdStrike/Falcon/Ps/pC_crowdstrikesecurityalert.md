@@ -17,4 +17,5 @@ Name = crowdstrike-security-alert
     ]
     DupFields = ["event_code->alert_name", "event_code->alert_type", "falcon_host_link->additional_info"]
   }
+}
 ```

@@ -19,4 +19,5 @@ Name = eset-scan-activity
   """Domain Name:\s{0,100}({domain}[^,]{1,2000})"""
   ]
 }
+}
 ```

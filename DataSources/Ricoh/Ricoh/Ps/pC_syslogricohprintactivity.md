@@ -19,4 +19,5 @@ Name = syslog-ricoh-print-activity
     """\WSTORED_HOST=({printer_name}[^,]{1,2000})(,|\s{0,100}$)"""
   ]
 }
+}
 ```

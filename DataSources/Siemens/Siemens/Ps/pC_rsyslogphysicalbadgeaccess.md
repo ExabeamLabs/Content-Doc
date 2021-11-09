@@ -19,4 +19,5 @@ Name = r-syslog-physical-badge-access
       """%SIEMENS_FUSION_AC:(.+?(\^){2}){14}({location_city}.+?)(\^)+"""
     ]
   }
+}
 ```

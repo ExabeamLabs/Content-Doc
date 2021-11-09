@@ -19,4 +19,5 @@ Name = s-ssh-login-failed
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

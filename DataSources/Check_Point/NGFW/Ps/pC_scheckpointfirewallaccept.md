@@ -24,4 +24,5 @@ Name = s-checkpoint-firewall-accept
     """\|xlatedport=({dest_translated_port}\d{1,100})"""
   ]
 }
+}
 ```

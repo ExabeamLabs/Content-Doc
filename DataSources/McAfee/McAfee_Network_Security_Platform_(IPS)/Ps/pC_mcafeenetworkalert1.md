@@ -22,4 +22,5 @@ Name = mcafee-network-alert-1
     """Result:\s{0,100}((?i)(n\/a)|({outcome}[^\|]{1,2000}))""",
   ]
 }
+}
 ```

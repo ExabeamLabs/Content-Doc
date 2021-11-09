@@ -21,4 +21,5 @@ Name = r-nic-damballa-alert
     """\|cs6=({alert_id}[^\|]{1,2000})"""
   ]
 }
+}
 ```

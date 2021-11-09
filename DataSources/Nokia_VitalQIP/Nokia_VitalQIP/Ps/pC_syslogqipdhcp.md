@@ -10,4 +10,5 @@ Name = syslog-qip-dhcp
     Conditions = [ "QIP[-]: " ]
     Fields = [
       """QIP\[\-\]:([^,]{0,2000}
+}
 ```

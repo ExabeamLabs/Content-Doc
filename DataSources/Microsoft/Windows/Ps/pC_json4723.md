@@ -19,4 +19,5 @@ Name = json-4723
     """"TargetSid":"({target_user_sid}[^\s"]{1,2000})""",
   ]
 }
+}
 ```

@@ -17,4 +17,5 @@ Name = bro-httpeth0
     """({protocol}http)"""
   ]
 }
+}
 ```

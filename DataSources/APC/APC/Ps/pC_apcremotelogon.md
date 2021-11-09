@@ -16,4 +16,5 @@ Name = apc-remote-logon
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

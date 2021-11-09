@@ -22,4 +22,5 @@ Name = cef-stealthwatch-network-alert
     """\sexternalId=({alert_id}.+?)\s{1,100}\w+="""
   ]
 }
+}
 ```

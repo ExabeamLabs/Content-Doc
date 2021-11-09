@@ -14,4 +14,5 @@ Name = netscalar-remote-access
   """({event_name}ns_sslvpn_process_sso_conn)""" 
  ]
 }
+}
 ```

@@ -27,4 +27,5 @@ Name = xml-powershell-4104
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

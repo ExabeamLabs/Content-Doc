@@ -31,4 +31,5 @@ Name = sophos-proxy
 		"""\scat="(-|0x2({risk_level}\d)({category}[^"]{1,2000}))""",
     ]
   }
+}
 ```

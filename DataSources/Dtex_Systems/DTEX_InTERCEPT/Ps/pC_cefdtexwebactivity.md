@@ -26,4 +26,5 @@ Name = cef-dtex-web-activity
   ]
   DupFields = [ "host->src_host" ]
 }
+}
 ```

@@ -21,4 +21,5 @@ Name = centrify-ssh-login
     """EntityName=(.+\\+)?({dest_host}[^"\s]{1,2000})(\s|$)"""
   ]
 }
+}
 ```

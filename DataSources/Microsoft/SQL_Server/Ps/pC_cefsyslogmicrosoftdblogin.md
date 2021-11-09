@@ -21,4 +21,5 @@ Name = cef-syslog-microsoft-db-login
     """\sdhost=({dest_host}[^\s]{1,2000})"""
   ]
 }
+}
 ```

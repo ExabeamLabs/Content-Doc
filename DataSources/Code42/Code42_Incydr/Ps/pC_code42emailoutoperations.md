@@ -26,4 +26,5 @@ Name = code42-email-out-operations
   ]
   DupFields = ["sender->email_user", "recipient->recipients" ]
 }
+}
 ```

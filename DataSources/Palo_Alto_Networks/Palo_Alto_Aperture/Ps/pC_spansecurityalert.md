@@ -23,4 +23,5 @@ Name = s-pan-security-alert
 	  """msg=({additional_info}[^=]{1,2000})\s\w+=""",
      ]
   }
+}
 ```

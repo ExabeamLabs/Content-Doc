@@ -47,6 +47,5 @@ paloalto-firewall = {
      """TRAFFIC,([^,]{0,2000},){37}({src_country}[^\.:]{0,2000}?)\s{0,100},""",
      """TRAFFIC,([^,]{0,2000},){38}({dest_country}[^\.:]{0,2000}?)\s{0,100},""",
    ]
-   DupFields = [ "src_user->user" ]
-}
+   DupFields = [ "src_user->user" ]}
 ```

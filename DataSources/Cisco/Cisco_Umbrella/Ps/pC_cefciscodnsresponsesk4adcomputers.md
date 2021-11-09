@@ -7,4 +7,5 @@ Name = cef-cisco-dns-response-sk4-ad-computers
     """"mostGranularIdentity":"({src_host}[^"]+)"""",
   ]
 }
+}
 ```

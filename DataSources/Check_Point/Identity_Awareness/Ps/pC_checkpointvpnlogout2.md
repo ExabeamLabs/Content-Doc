@@ -26,4 +26,5 @@ Name = checkpoint-vpn-logout-2
     """\|originsicname=({user_ou}[^\|]{1,2000})""",
   ]
 }
+}
 ```

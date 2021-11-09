@@ -17,4 +17,5 @@ Name = syslog-mcafee-usb-activity
         """"EPO[^"]{1,2000}"\|(".*?"\||[^|]{0,2000}\|){5}\s{0,100}"({activity_details}[^"]{1,2000})""""
       ]
     }
+}
 ```

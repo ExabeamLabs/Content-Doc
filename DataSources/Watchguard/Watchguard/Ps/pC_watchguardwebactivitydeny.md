@@ -25,4 +25,5 @@ Name = watchguard-web-activity-deny
   ]
   DupFields = [ "user_email->user" ]
 }
+}
 ```

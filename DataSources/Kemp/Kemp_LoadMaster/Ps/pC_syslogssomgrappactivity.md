@@ -18,4 +18,5 @@ Name = syslog-ssomgr-app-activity
     """\sssomgr:\s{0,100}({activity}.+?)\s{0,100}\["""
   ]
 }
+}
 ```

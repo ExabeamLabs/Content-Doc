@@ -24,4 +24,5 @@ Name = xml-8004
   ]
   DupFields = ["resource->dest_host"]
 }
+}
 ```

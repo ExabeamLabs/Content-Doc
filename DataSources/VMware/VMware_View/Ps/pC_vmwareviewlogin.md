@@ -18,4 +18,5 @@ Name = vmware-view-login
     """UserDisplayName="(({domain}[^\\]{1,2000})\\+)?({user}[^"]{1,2000})"""",
    ]
 }
+}
 ```

@@ -22,4 +22,5 @@ Name = s-xml-4770
     """<Data Name='TicketEncryptionType'>({ticket_encryption_type}[^<]{1,2000})</Data>"""
   ]
 }
+}
 ```

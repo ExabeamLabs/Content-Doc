@@ -21,4 +21,5 @@ Name = cisco-ise-tacacs-login
     """ad.Remote-Address=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
         ]
 }
+}
 ```

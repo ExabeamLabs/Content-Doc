@@ -21,4 +21,5 @@ Name = s-hp-print-activity
     """PRINTER_lab_Type="(Unspecified|({activity}[^"]{1,2000}))""",
   ]
 }
+}
 ```

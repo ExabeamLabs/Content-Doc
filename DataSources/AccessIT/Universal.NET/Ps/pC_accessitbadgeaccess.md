@@ -18,4 +18,5 @@ Name = accessit-badge-access
     """"eventdescription":"({outcome}[^"]{1,2000})""",
   ]
 }
+}
 ```

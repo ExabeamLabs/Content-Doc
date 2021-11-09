@@ -45,6 +45,5 @@ s-aws-cloudtrail-activity-json = {
     """items":\[[^\]]{1,2000}?fromPort":({src_port}\d{1,100}),""",
     """items":\[[^\]]{1,2000}?toPort":({dest_port}\d{1,100}),""",
     """items":\[[^\]]{1,2000}?ipProtocol":"({protocol}[^"]{1,2000})""""
-  ]
-}
+  ]}
 ```

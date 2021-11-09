@@ -15,4 +15,5 @@ Name = unix-failed-logon-4
     """\sport ({src_port}\d{1,100})""",
   ]
 }
+}
 ```

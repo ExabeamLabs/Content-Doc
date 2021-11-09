@@ -24,4 +24,5 @@ Name = bitglass-file-read
     """"url":\s{0,100}"({file_uri}.+?)",""",
   ]
 }
+}
 ```

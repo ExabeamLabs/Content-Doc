@@ -10,4 +10,5 @@ Name = wazuh-ssh-failed-login
   ]
   DupFields = [ "description->failure_reason" ]
 }
+}
 ```

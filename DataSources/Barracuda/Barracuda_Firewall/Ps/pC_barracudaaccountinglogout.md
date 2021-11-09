@@ -19,4 +19,5 @@ Name = barracuda-accounting-logout
     """\soutBytes=({bytes_out}\d{1,100})""",
   ]
 }
+}
 ```

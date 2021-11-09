@@ -23,4 +23,5 @@ Name = lexmark-print-activity
     """\sfname=(?:|({object}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
+}
 ```

@@ -26,4 +26,5 @@ Name = zscaler-network-connection-1
     """out=({bytes_out}\d{1,100})"""
     ]
 }
+}
 ```

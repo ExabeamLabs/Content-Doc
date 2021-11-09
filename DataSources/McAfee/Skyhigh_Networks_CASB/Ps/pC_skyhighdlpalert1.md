@@ -23,4 +23,5 @@ Name = skyhigh-dlp-alert-1
     """,size=({bytes}\d{1,100})"""
   ]
 }
+}
 ```

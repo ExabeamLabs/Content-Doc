@@ -23,4 +23,5 @@ Name = o365-mal-url-click
     """"AlertId":"({alert_id}[^"]{1,2000})"""",
   ]
 }
+}
 ```

@@ -23,4 +23,5 @@ Name = cisco-asa-connection-stop
   ]
   DupFields = [ "event_name->activity" ]
 }
+}
 ```

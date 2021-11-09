@@ -23,4 +23,5 @@ Name = xml-sysmon-dns-query
   ]
    
 }
+}
 ```

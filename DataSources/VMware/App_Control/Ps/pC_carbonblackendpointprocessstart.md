@@ -8,4 +8,5 @@ Name = carbonblack-endpoint-process-start
   Fields = ${CarbonBlackParserTemplates.carbonblack-endpoint.Fields} [
     ]
 }
+}
 ```

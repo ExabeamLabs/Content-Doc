@@ -19,4 +19,5 @@ Name = unix-ssh-login
     """({event_code}SSH)"""
   ]
 }
+}
 ```

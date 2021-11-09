@@ -21,4 +21,5 @@ Name = cef-symantec-atp-alert-1
     ]
 
 }
+}
 ```

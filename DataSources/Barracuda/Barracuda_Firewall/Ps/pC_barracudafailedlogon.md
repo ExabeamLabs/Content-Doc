@@ -8,4 +8,5 @@ Name = barracuda-failed-logon
     """Denied:\s({failure_reason}[^$]{1,2000}?)\s{0,100}$"""
   ]
 }
+}
 ```

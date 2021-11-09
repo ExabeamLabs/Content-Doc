@@ -20,4 +20,5 @@ Name = symantec-security-alert
     """"action":"({outcome}[^"]{1,2000})""",
   ]
 }
+}
 ```

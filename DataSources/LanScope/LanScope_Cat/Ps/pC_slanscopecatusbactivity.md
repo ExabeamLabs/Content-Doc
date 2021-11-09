@@ -20,4 +20,5 @@ Name = s-lanscopecat-usb-activity
     """\sWindowTitle="({file_path}(({file_parent}[^"]{1,2000}?)[\\\/]{1,2000})?({file_name}[^"\\\/]{1,2000}))"""",
   ]
 }
+}
 ```

@@ -15,4 +15,5 @@ Name = s-mcafee-usb-activity
 	"""exabeam_host=({host}[^\s]{1,2000})""",
 	"""ComputerName(=|:)\s{0,100}"({dest_host}[^"]{1,2000})"""",
 	"""Evidence(=|:)\s{0,100}"([^,]{0,2000}
+}
 ```

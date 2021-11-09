@@ -17,4 +17,5 @@ Name = cef-member-added-2003
     """\ssntdom=({domain}[^\s]{1,2000})""",
     """\ssuser=({user}.+?)\s{1,100}\w+=""",
     """\ssuid=\([^,]{1,2000}
+}
 ```

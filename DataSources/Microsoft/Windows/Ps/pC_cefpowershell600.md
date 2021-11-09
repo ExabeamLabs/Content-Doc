@@ -17,4 +17,5 @@ Name = cef-powershell-600
     """\smsg=({additional_info}.+?)\sart=""",
   ]
 }
+}
 ```

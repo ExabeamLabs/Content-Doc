@@ -14,4 +14,5 @@ Name = linux-dhcp-request
   ]
   DupFields = [ "host->auth_server" ]
 }
+}
 ```

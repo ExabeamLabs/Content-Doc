@@ -9,4 +9,5 @@ Name = esector-file-write-1
     """({event_name}ファイル移動)"""
   ]
 }
+}
 ```

@@ -22,4 +22,5 @@ Name = counteract-network-alert-5
     """"desc":"({additional_info}[^"]{1,2000})""""
   ]
 }
+}
 ```

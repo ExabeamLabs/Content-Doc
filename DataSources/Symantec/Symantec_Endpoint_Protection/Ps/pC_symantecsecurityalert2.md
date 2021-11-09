@@ -28,4 +28,5 @@ Name = symantec-security-alert-2
     """,\s{0,100}Intrusion URL:\s{0,100}({malware_url}[^,]{1,2000})""",
   ]
 }
+}
 ```

@@ -19,4 +19,5 @@ Name = cef-infowatch-web-activity-1
     """\Wdvc=({host}.+?)(\s{1,100}[\w\.]{1,2000}=|\s{0,100}$)""",   
   ]
 }
+}
 ```

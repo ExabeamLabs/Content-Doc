@@ -22,4 +22,5 @@ Name = json-bro-ssl
     """"established\\?"{1,20}:({outcome}\w+)""" 
   ]
 }
+}
 ```

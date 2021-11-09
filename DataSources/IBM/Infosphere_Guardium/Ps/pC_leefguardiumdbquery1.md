@@ -26,4 +26,5 @@ Name = leef-guardium-db-query-1
   ]
   DupFields = [ "db_user->account" ]
 }
+}
 ```

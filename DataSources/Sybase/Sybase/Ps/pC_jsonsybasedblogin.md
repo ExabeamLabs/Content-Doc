@@ -20,4 +20,5 @@ Name = json-sybase-db-login
      """"user_name"{1,20}:"{1,20}({user}[^"]{1,2000}?)""""
     ]
 }
+}
 ```

@@ -26,4 +26,5 @@ Name = raw-4662
     """Additional Information:\s{0,100}({attribute}.+?)\s{0,100}(<\/Message>|\s{1,100}User:|$)"""
   ]
 }
+}
 ```

@@ -22,4 +22,5 @@ Name = crowdstrike-file-alert
   ]
   DupFields = [ "alert_name->alert_type" ]
 }
+}
 ```

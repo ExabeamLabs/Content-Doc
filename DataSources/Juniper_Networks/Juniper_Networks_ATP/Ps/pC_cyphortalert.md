@@ -25,4 +25,5 @@ Name = cyphort-alert
   ]
   DupFields = ["file_name->process_name"]
 }
+}
 ```

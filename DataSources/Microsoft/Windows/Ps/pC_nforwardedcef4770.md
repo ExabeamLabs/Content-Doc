@@ -20,4 +20,5 @@ Name = n-forwarded-cef-4770
     """nitroAppID=({service_name}[^\s]{1,2000})"""
   ]
 }
+}
 ```

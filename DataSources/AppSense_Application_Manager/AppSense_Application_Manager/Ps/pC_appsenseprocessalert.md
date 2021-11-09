@@ -28,4 +28,5 @@ Name = appsense-process-alert
 		   "sid_user->account_id",
                    "directory->process_directory" ]
   }
+}
 ```

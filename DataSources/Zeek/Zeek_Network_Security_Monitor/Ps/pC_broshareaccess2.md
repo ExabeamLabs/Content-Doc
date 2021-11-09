@@ -16,4 +16,5 @@ Name = bro-share-access-2
      """({protocol}SMB)"""
     ]
 }
+}
 ```

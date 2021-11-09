@@ -16,4 +16,5 @@ Name = citrix-appfw-400-resp
   ]
   DupFields = ["event_name->alert_name"]
 }
+}
 ```

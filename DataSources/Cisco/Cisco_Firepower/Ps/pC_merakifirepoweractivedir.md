@@ -15,4 +15,5 @@ Name = meraki-firepower-active-dir
     """connected to server ({dest_host}[^\s]{1,2000}) \(({dest_ip}.*?)\)\sas ({domain}[^\/]{1,2000})\/({user}[^\s]{1,2000})""",
   ]
 }
+}
 ```

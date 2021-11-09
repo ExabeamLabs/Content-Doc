@@ -22,4 +22,5 @@ Name = n-forwarded-cef-4625
       """nitroMessage_Text=({result_code}[^\s]{1,2000})\s{1,100}\w+="""
     ]
   }
+}
 ```

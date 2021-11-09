@@ -17,4 +17,5 @@ Name = cortex-xdr-app-activity
     """cs3=({outcome}[^\s]{1,2000})\s{1,100}""",
   ]
 }
+}
 ```

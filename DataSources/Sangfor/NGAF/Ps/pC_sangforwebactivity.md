@@ -22,4 +22,5 @@ Name = sangfor-web-activity
   ]
   DupFields = [ "action->outcome" ]
 }
+}
 ```

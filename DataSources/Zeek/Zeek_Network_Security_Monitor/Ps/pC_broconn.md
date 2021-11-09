@@ -14,4 +14,5 @@ Name = bro-conn
   ]
   DupFields = [ "id_orig_h->src_ip", "id_orig_p->src_port", "id_resp_h->dest_ip", "id_resp_p->dest_port", "sensorname->src_interface", "orig_ip_bytes->bytes_out", "resp_ip_bytes->bytes_in" ]
 }
+}
 ```

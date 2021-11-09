@@ -27,4 +27,5 @@ Name = q-mcafee-epo-dlp-alert
     """[=\s^]ThreatActionTaken:\s"{0,20}({outcome}[^"]{1,2000})""",
   ]
 }
+}
 ```

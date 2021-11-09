@@ -15,4 +15,5 @@ Name = s-duo-auth-set-ip
     """\]\s{1,100}\(\(\'.+?\',\s{0,100}({session_id}\d{1,100})\)""",
     """login attempt for username.*?\'({user}[^']{1,2000})\'""" ]
 }
+}
 ```

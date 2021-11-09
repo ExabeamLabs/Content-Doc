@@ -23,4 +23,5 @@ Name = cisco-ftd-connection-stop
   ]
   DupFields = [ "event_name->activity" ]
 }
+}
 ```

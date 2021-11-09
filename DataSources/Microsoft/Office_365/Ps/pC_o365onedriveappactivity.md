@@ -11,4 +11,5 @@ Name = o365-onedrive-app-activity
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     ""","({app}OneDrive)","\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d{1,100})?Z"(,("[^"]{0,2000}"|[^,]{0,2000})){2}
+}
 ```

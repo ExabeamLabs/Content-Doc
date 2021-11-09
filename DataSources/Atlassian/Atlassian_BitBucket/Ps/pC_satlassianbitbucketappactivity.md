@@ -18,4 +18,5 @@ Name = s-atlassian-bitbucket-app-activity
     """([^\|]{0,2000}\|){10}\s{0,100}({additional_info}[^\|]{1,2000}?)\s{0,100}\|""",
   ]
 }
+}
 ```

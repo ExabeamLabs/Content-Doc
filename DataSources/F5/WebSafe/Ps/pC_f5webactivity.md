@@ -19,4 +19,5 @@ Name = f5-web-activity
     """cookiemonster=.+?(\}|\=\=)\s{1,100}.+?METHOD=({method}\w+)""",
   ]
 }
+}
 ```

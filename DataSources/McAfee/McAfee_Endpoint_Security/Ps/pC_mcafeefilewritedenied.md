@@ -23,4 +23,5 @@ Name = mcafee-file-write-denied
     """<OSName>({os}.+?)</OSName>""",
   ]
 }
+}
 ```

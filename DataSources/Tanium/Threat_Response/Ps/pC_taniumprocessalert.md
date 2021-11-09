@@ -23,4 +23,5 @@ Name = tanium-process-alert
  ]
  DupFields = [ "process_directory->directory", "process->path" ]
 }
+}
 ```

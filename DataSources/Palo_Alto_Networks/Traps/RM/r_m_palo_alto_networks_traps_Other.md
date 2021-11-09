@@ -5,8 +5,8 @@ Vendor: Palo Alto Networks
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   4   |   1    |     0      |      1      |    1    |
+|   9   |   4    |     0      |      1      |    1    |
 
-| Event Type     | Rules | Models                                                                          |
-| -------------- | ----- | ------------------------------------------------------------------------------- |
-| security-alert |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset |
+| Event Type   | Rules | Models                                                                                                                                                                                                                                                                            |
+| ------------ | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| remote-logon |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset<br> • <b>A-KL-UToE</b>: Ticket options and encryption type combination for asset<br> • <b>A-AE-NTLM</b>: Models the NTLM hostnames seen in the organization<br> • <b>A-AL-DhU</b>: Users per Host |

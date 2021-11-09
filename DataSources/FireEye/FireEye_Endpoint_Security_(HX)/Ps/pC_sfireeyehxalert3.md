@@ -25,4 +25,5 @@ Name = s-fireeye-hx-alert-3
      """infected-object":[^}]{1,2000}?sha256sum":\s{0,100}"({sha256}[^"]{1,2000})""",
   ]
 }
+}
 ```

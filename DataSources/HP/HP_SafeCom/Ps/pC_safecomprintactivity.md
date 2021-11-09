@@ -24,4 +24,5 @@ Name = safecom-print-activity
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

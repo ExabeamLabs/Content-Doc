@@ -23,4 +23,5 @@ Name = json-xml-5140
     ]
     DupFields = ["host->dest_host", "accesses_code->accesses"]
   }
+}
 ```

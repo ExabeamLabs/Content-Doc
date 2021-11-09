@@ -16,4 +16,5 @@ Name = s-ironport-email-outcome
       """Message finished MID ({alert_id}\d{1,100}) ({outcome}[^=]{1,2000}?)("|\s{1,100}\w+(=)?|\s{0,100}$)"""
     ]
   }
+}
 ```

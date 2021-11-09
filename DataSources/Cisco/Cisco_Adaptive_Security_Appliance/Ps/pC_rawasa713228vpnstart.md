@@ -16,4 +16,5 @@ Name = raw-asa-713228-vpn-start
     """%ASA-({priority}\d{1,100})-({event_code}\d{1,100}): Group =\s{0,100}({realm}[^,]{1,2000}),\s{0,100}Username = ({user}[^,@]{1,2000}?),?\s{1,100}IP = ({src_ip}[^\s,]{1,2000})[,\s]{1,2000}Assigned private IP address ({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) to"""
   ]
 }
+}
 ```

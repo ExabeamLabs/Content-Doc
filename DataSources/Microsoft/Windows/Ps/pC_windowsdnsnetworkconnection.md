@@ -25,4 +25,5 @@ Name = windows-dns-network-connection
     """UserId=({user_id}.+?)\s{0,100}HeaderSizeBytes=""",
   ]
 }
+}
 ```

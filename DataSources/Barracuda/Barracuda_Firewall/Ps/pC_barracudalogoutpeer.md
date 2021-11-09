@@ -15,4 +15,5 @@ Name = barracuda-logout-peer
     """\sserver=(|({dest_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
+}
 ```

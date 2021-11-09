@@ -16,4 +16,5 @@ Name = s-4726-jp
     ]
     DupFields = [ "host->dest_host", "target_user->account_name" ]
   }
+}
 ```

@@ -29,6 +29,5 @@ digitalguardian-file-operation = {
     """DestinationFile=(|({file_name}.+?(\.({file_ext}[^\.]{1,2000}?))?))\s{0,100}(\w+=|$)""",
     """SourceDirectory=(|({src_file_dir}.+?))\s{0,100}(\w+=|$)""",
     """SourceFile=(|({src_file_name}.+?))\s{0,100}(\w+=|$)""",
-  ]
-}
+  ]}
 ```

@@ -15,4 +15,5 @@ Name = ibm-auth-successful
     """client:\s{0,100}((:0|::1|({src_ip}[A-Fa-f:\d.]{1,2000}?))(:({src_port}\d{1,100}))?)\-*connectionID:""",
   ]
 }
+}
 ```

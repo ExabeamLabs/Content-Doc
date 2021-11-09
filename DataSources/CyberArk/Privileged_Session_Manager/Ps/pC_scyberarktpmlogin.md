@@ -19,4 +19,5 @@ Name = s-cyberark-tpm-login
 		"""ObjectType:\s({event_subtype}.+)\sTarget:"""
     ]
 }
+}
 ```

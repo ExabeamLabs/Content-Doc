@@ -32,4 +32,5 @@ Name = cef-sysmon-process-network
   ]
   DupFields = [ "directory->process_directory" ]
 }
+}
 ```

@@ -19,4 +19,5 @@ Name = q-o365-dlp-email
     """Subject=({subject}.+?)\s{0,100}\}""",
   ]
 }
+}
 ```

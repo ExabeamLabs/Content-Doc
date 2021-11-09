@@ -28,4 +28,5 @@ Name = leef-trendmicro-privileged-object-access
   ]
   DupFields = [ "directory->process_directory" ]
 }
+}
 ```

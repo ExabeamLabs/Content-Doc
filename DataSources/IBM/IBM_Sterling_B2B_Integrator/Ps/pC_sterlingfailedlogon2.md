@@ -16,4 +16,5 @@ Name = sterling-failed-logon-2
     """({event_name}Failed login)""",
   ]
 }
+}
 ```

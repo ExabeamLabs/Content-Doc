@@ -16,4 +16,5 @@ Name = s-azure-authentication
     """Azure MFA response:\s{0,100}({failure_reason}\w+)""",
   ]
 }
+}
 ```

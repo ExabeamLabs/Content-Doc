@@ -37,4 +37,5 @@ Name = xml-4688
   ]
   DupFields = [ "host->dest_host","process_guid->pid","directory->process_directory","process->path" ]
 }
+}
 ```

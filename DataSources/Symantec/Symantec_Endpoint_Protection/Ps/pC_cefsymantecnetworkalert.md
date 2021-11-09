@@ -29,4 +29,5 @@ Name = cef-symantec-network-alert
       """"product_name":"({product_name}[^"]{1,2000})"""",
     ]
   }
+}
 ```

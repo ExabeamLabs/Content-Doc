@@ -28,4 +28,5 @@ Name = s-splunkstream-dns-response
     """"hostname":\["({host}[^"]{1,2000})"""
   ]
 }
+}
 ```

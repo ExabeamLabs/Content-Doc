@@ -14,4 +14,5 @@ Name = s-f5-vpn-p2
     """\d\d:\d\d:\d\d\s{1,100}([^\/\s]{1,2000}\/)?({host}[^\s]{1,2000}).+?access_type=({vpn_type}[^\s]{1,2000})\suser=({user}[^\s]{1,2000}).+?vpngroup=({realm}[^\s]{1,2000})\ssession_id=({session_id}[^\s]{1,2000})\s{0,100}$"""
   ]
 }
+}
 ```

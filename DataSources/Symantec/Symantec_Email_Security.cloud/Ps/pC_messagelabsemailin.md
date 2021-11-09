@@ -22,4 +22,5 @@ Name = messagelabs-email-in
   ]
   DupFields = [ "recipient->email_user", "recipient->user_email", "sender->external_address" ]
 }
+}
 ```

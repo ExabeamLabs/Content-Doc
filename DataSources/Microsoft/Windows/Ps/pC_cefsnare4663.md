@@ -26,4 +26,5 @@ Name = cef-snare-4663
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

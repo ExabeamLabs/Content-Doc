@@ -34,4 +34,5 @@ Name = cef-mwg-proxy
     """\|McAfee\|Web Gateway\|[^\|]{0,2000}\|({result_code}[^\|]{1,2000})""",
   ]
 }
+}
 ```

@@ -21,4 +21,5 @@ Name = microsoft-scep-epp-alert
   ]
   DupFields=[ "dest_ip->src_ip", "dest_host->src_host" ]
 }
+}
 ```

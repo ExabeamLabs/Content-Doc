@@ -24,4 +24,5 @@ Name = mimecast-dlp-email
     """MsgSize=({bytes}\d{1,100})"""
   ]
 }
+}
 ```

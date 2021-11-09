@@ -21,4 +21,5 @@ Name = p2000-physical-badge-access
     """"site":"({location_city}[^"]{1,2000}?)\s{0,100}"""",
   ]
 }
+}
 ```

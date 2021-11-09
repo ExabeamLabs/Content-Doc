@@ -18,4 +18,5 @@ Name = leef-dns-query
       """url=\s{0,100}({query}[^\s]{1,2000})""",
     ]
   }
+}
 ```

@@ -10,4 +10,5 @@ Name = symantec-security-alert-3
   Conditions = [ """,Rule:""", """,Registry Read,Begin:""" ]
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d),({alert_severity}[^,]{1,2000}),({alert_type}[^,]{1,2000}),({host}[^,]{1,2000}),({outcome}[^,]{1,2000}),[^,]{0,2000}
+}
 ```

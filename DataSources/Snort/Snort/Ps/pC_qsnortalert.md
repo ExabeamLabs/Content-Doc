@@ -24,4 +24,5 @@ Name = q-snort-alert
      """\[Impact:\s{0,100}(Unknown|({impact}[^\]]{1,2000}))""",
   ]
 }
+}
 ```

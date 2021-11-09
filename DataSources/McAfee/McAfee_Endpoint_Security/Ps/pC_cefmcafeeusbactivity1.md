@@ -25,4 +25,5 @@ Name = cef-mcafee-usb-activity-1
         """(\s|\|)ad\.AppProductName=({process_name}.+?)\s{1,100}([\w\.-]{1,2000}=|$)""",
       ]
     }
+}
 ```

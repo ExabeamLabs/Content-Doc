@@ -17,4 +17,5 @@ Name = unix-auth-event-2
     """auth=({auth_method}[^\s]{1,2000})""",
   ]
 }
+}
 ```

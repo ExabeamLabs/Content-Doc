@@ -27,4 +27,5 @@ Name = leef-guardium-db-failed-login
   ]
   DupFields = [ "db_user->account" ]
 }
+}
 ```

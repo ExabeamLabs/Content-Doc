@@ -23,4 +23,5 @@ Name = cef-syslog-oracle-db-login
     ]
     DupFields = ["host->dest_host", "account->db_user"]
   }
+}
 ```

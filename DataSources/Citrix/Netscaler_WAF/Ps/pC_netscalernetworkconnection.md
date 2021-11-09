@@ -24,4 +24,5 @@ Name = netscaler-network-connection
   ]
   DupFields = ["event_name->activity"]
 }
+}
 ```

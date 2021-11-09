@@ -15,4 +15,5 @@ Name = s-failed-physical-access-unknown
   ]
   DupFields = [ "outcome->event_name" ]
 }
+}
 ```

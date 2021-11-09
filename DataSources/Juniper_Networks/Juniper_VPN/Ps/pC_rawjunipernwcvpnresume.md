@@ -22,4 +22,5 @@ Name = raw-juniper-nwc-vpn-resume
   ] 
   DupFields = ["user->account"]
 }
+}
 ```

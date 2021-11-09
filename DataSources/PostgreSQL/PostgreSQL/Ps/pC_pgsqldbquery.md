@@ -27,4 +27,5 @@ Name = pgsql-db-query
   ]
   DupFields = [ "user->db_user" ]
 }
+}
 ```

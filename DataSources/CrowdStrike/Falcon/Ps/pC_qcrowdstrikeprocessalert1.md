@@ -28,4 +28,5 @@ Name = q-crowdstrike-process-alert-1
  ]
    DupFields = ["falcon_host_link->additional_info","command_line->process"]
 }
+}
 ```

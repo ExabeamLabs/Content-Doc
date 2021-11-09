@@ -17,4 +17,5 @@ Name = s-cisco-acs-auth-failed
       """Authen-Failure-Code=({failure_reason}[^,]{1,2000})"""
 	]
 }
+}
 ```

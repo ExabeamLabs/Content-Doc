@@ -27,4 +27,5 @@ Name = zscaler-proxy
       """\snitroURL=(?:[^:?]{1,2000}:\/+)?({web_domain}[^\/:\s]{1,2000})""",
     ]
   }
+}
 ```

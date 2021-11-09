@@ -18,4 +18,5 @@ Name = s-scep-epp-alert
     """exabeam_host=({host}[\w\-.]{1,2000})"""
   ]
 }
+}
 ```

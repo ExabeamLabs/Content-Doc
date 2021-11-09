@@ -29,4 +29,5 @@ Name = s-process-created-carbonblack
   ]
   DupFields = [ "directory->process_directory" ]
 }
+}
 ```

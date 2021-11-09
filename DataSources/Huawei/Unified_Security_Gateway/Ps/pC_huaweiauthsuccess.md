@@ -15,4 +15,5 @@ Name = huawei-auth-success
      """\slogin ({outcome}succeeded)""",
   ]
 }
+}
 ```

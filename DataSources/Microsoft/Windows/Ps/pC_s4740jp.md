@@ -16,4 +16,5 @@ Name = s-4740-jp
     ]
     DupFields = [ "host->dest_host", "caller_domain->domain" ]
   }
+}
 ```

@@ -25,4 +25,5 @@ Name = s-ironport-dlp-email-alert
     ]
     DupFields = [ "user->sender" ]
   }
+}
 ```

@@ -23,4 +23,5 @@ Name = l-sysmon-file-create
   ]
   DupFields = [ "host->dest_host","directory->process_directory" ]
 }
+}
 ```

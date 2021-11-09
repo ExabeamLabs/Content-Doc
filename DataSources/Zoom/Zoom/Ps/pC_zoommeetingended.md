@@ -21,4 +21,5 @@ Name = zoom-meeting-ended
     """"host_id"\s{0,100}:\s{0,100}"({meeting_host_id}[^"]{1,2000})""""
   ]
 }
+}
 ```

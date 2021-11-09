@@ -24,4 +24,5 @@ Name = redcanary-security-alert
     """u'summary':\s{0,100}u'({additional_info}[^']{1,2000})""",
   ]
 }
+}
 ```

@@ -25,4 +25,5 @@ Name = cef-mcafee-dlp-email-alert-failed
   ]
   DupFields = [ "alert_name->alert_type" ]
 }
+}
 ```

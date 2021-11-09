@@ -14,4 +14,5 @@ Name = citrix-appfw-fieldconsistency
   ]
   DupFields = ["event_name->alert_name"]
 }
+}
 ```

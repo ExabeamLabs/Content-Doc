@@ -16,4 +16,5 @@ Name = cisco-netflow-connection
     """({packets}\d{1,100})\s{1,100}packets?\s{0,100}$""",
   ]
 }
+}
 ```

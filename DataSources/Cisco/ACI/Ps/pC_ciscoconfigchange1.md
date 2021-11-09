@@ -15,4 +15,5 @@ Name = cisco-config-change-1
 	"""info\].+?\s({additional_info}.+?)\s{0,100}$"""
   ]
 }
+}
 ```

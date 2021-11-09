@@ -22,4 +22,5 @@ Name = s-symantec-dlp-alert-1
       """一致件数:\s{0,100}({number_of_violations}\d{1,100})""",
     ]
   }
+}
 ```

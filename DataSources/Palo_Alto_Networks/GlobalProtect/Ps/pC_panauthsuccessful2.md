@@ -10,4 +10,5 @@ Name = pan-auth-successful-2
   Conditions = [ """panorama-auth-success""", """,SYSTEM,tls,""" ]
   Fields = [
     """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]{1,2000})\s{1,100}\d{1,100}
+}
 ```

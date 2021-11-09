@@ -18,4 +18,5 @@ Name = brivo-badge-access
     """"description":\s{0,100}"({outcome}[^"]{1,2000})""",
   ]
 }
+}
 ```

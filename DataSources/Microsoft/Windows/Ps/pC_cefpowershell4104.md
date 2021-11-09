@@ -23,4 +23,5 @@ Name = cef-powershell-4104
     """duser=({user}[^\s]{1,2000})""", 
   ]
 }
+}
 ```

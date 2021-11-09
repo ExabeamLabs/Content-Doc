@@ -23,4 +23,5 @@ Name = cef-syslog-guardium-db-query
   ]
   DupFields = [ "db_user->account" ]
 }
+}
 ```

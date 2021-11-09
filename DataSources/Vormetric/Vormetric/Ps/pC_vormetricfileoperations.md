@@ -22,4 +22,5 @@ Name = vormetric-file-operations
   ]
   DupFields = [ "directory->process_directory" ]
 }
+}
 ```

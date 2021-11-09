@@ -19,4 +19,5 @@ Name = securityexpert-badge-access
     """ControllerName="({device_name}[^"]{1,2000})""",
   ]
 }
+}
 ```

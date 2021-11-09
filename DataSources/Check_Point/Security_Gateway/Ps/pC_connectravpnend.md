@@ -16,4 +16,5 @@ Name = connectra-vpn-end
     """\|reason=({failure_reason}[^\|]{1,2000})\|"""
   ]
 }
+}
 ```

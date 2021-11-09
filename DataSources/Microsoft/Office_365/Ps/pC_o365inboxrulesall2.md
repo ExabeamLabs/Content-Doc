@@ -27,4 +27,5 @@ Name = o365-inbox-rules-all-2
   ]
   DupFields = ["user_domain->email_domain"]
 }
+}
 ```

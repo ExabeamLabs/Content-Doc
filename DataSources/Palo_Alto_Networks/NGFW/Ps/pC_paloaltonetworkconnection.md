@@ -11,4 +11,5 @@ Name = paloalto-network-connection
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """THREAT,url,[^,]{1,2000}
+}
 ```

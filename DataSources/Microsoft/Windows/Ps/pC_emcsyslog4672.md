@@ -25,4 +25,5 @@ Name = emc-syslog-4672
   ]
   DupFields = [ "host->dest_ip" ]
 }
+}
 ```

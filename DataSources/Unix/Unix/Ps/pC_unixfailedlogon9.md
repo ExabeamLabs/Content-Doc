@@ -17,4 +17,5 @@ Name = unix-failed-logon-9
     """apparentlyi_via=({logon_type_text}[^\s]{1,2000})""",
   ]
 }
+}
 ```

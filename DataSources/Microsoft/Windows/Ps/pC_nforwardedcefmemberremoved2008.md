@@ -23,4 +23,5 @@ Name = n-forwarded-cef-member-removed-2008
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

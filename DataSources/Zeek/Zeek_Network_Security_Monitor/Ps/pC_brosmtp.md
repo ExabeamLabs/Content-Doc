@@ -16,4 +16,5 @@ Name = bro-smtp
     """\d{10}\.\d{6}\t([^\t]{1,2000}\t){20}({result_code}\d{1,100})\s{1,100}({outcome}.+?)(\s{0,100}\t|\s{0,100}\[)((\[InternalId=({alert_id}\d{1,100}),\s{0,100}Hostname=({dest_host}[^\]]{1,2000})\]))?"""
   ]
 }
+}
 ```

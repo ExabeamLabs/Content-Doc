@@ -16,4 +16,5 @@ Name = s-azura-pri-auth-successful
     """({auth_method}Primary auth)""",
   ]
 }
+}
 ```

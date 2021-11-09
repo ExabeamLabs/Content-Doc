@@ -28,4 +28,5 @@ Name = crowdstrike-logon
     ]
     DupFields = ["user->account"]
   }
+}
 ```

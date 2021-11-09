@@ -18,4 +18,5 @@ Name = trend-micro-alert-2
     """\[({alert_type}[^@]{1,2000})""",
   ]
 }
+}
 ```

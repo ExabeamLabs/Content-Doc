@@ -20,4 +20,5 @@ Name = bro-ftp-app-activity
     """\t21\t([^\t]{1,2000}\t){7}(?:-|({additional_info}[^\(\t]{1,2000}))"""
   ]
 }
+}
 ```

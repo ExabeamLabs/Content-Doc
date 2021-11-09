@@ -19,4 +19,5 @@ Name = mssql-database-login
     """ApplicationName="{1,20}({app}[^"]{1,2000})"""
 	]
 }
+}
 ```

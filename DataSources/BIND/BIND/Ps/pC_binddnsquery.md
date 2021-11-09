@@ -15,4 +15,5 @@ Name = bind-dns-query
       """query:\s{0,100}({query}[^\s]{1,2000})"""
     ]
   }
+}
 ```

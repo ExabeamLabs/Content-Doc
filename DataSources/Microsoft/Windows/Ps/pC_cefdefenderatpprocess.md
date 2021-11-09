@@ -13,4 +13,5 @@ Name = cef-defender-atp-process
      """MD5":"({md5}[^"]{1,2000})""",
  ]
 }
+}
 ```

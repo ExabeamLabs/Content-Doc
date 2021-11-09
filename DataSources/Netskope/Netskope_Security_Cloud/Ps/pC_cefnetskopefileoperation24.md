@@ -6,4 +6,5 @@ Name = cef-netskope-file-operation-24
   Conditions = [ """"type":"""", """destinationServiceName=Netskope""", """"activity":"FolderDeleted""" ]
   DupFields = [ "activity->accesses", "object->file_name" ]
 }
+}
 ```

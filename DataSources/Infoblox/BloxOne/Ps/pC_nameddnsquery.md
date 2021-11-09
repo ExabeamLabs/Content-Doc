@@ -23,4 +23,5 @@ Name = named-dns-query
       """ CNAME ({cname}[^;]{1,2000}?)\.?;""",
     ]
   }
+}
 ```

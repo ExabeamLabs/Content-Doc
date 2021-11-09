@@ -22,4 +22,5 @@ Name = cef-mcafee-dns-query
       """\WnitroRequest_Type=(-|({query_flags}.+?))\s{0,100}([\w\\]{1,2000}=|$)""",
     ]
   }
+}
 ```

@@ -16,4 +16,5 @@ Name = cef-540
     """\ssproc=({auth_process}.+?)\s{1,100}\w+=""",
     """\sduser=({user}.+?)\s{1,100}\w+=""",
     """\sduid=\([^,]{1,2000}
+}
 ```

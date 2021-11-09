@@ -21,4 +21,5 @@ Name = n-forwarded-cef-mcafee-epo-usb
     ]
     DupFields = ["directory->process_directory"]
   }
+}
 ```

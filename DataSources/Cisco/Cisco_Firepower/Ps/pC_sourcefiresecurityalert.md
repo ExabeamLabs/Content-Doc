@@ -21,4 +21,5 @@ Name = sourcefire-security-alert
     """ From \\"({src_host}[\w\-.]{1,2000})\\""",
   ]
 }
+}
 ```

@@ -17,4 +17,5 @@ Name = s-physical-badge-access-2
       """({outcome}CardAdmitted)"""
     ]
   }
+}
 ```

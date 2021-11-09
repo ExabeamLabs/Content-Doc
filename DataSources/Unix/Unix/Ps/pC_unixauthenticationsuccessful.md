@@ -14,4 +14,5 @@ Name = unix-authentication-successful
     """({outcome}successful) pam web login:"""
   ]
 }
+}
 ```

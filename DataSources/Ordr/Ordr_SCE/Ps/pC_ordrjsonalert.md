@@ -25,4 +25,5 @@ Name = ordr-json-alert
     """"srcMac":\s"({src_mac}[^"]{1,2000})""""
   ]
 }
+}
 ```

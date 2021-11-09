@@ -18,4 +18,5 @@ Name = u-okta-failed-app-login
         """({app}Okta)"""
     ]
 }
+}
 ```

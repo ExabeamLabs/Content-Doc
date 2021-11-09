@@ -16,4 +16,5 @@ Name = vmware-vcenter-login
       """({app}VM_VCenter)"""
   ]
 }
+}
 ```

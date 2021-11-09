@@ -24,4 +24,5 @@ Name = cef-mcafee-epo-dlp-alert
         """\Wsproc=({additional_info}.+?)\s{0,100}(\w+=|$)"""
       ]
     }
+}
 ```

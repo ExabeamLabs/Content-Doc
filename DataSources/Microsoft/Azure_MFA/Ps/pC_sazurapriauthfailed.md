@@ -17,4 +17,5 @@ Name = s-azura-pri-auth-failed
     """Logon failure:\s{0,100}({failure_reason}.+?)(\s{0,100}\(|$)""",
   ]
 }
+}
 ```

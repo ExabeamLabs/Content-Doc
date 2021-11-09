@@ -18,4 +18,5 @@ Name = unix-auditd-account-deleted
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

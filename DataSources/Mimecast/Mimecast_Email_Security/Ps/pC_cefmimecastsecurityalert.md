@@ -30,4 +30,5 @@ Name = cef-mimecast-security-alert
     """"subject":"({subject}[^"]{1,2000})"""
   ]
 }
+}
 ```

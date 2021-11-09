@@ -25,4 +25,5 @@ Name = cef-mimecast-email-alert-1
   ]
   DupFields = ["recipient->user_email", "recipient->email_user"]
 }
+}
 ```

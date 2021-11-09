@@ -15,4 +15,5 @@ Name = juniper-commit-events
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

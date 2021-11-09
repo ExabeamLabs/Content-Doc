@@ -22,4 +22,5 @@ Name = badgepoint-physical-badge-access-1
     """\WBadgeNumber="({badge_id}[^"]{1,2000})""",
   ]
 }
+}
 ```

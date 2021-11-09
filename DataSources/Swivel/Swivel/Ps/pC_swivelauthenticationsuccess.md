@@ -16,4 +16,5 @@ Name = swivel-authentication-success
     """INFO\s{0,100}({additional_info}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).+?({outcome}successful).+?)\.?\s{0,100}$""",
 	]
 }
+}
 ```

@@ -22,4 +22,5 @@ Name = websense-usb-activity
     """({device_type}(USB|DVD|Removable Media))"""
   ]
 }
+}
 ```

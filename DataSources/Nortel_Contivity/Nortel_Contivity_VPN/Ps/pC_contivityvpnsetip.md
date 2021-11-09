@@ -12,4 +12,5 @@ Name = contivity-vpn-set-ip
              """({time}\d{1,100}/\d{1,100}/\d{1,100} \d{1,100}:\d{1,100}:\d{1,100})""",
              """\[({user}[\w.'\-]{1,2000})\]:({contivity_session_id}\d{1,100}) assigned IP address ({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""" ]
 }
+}
 ```

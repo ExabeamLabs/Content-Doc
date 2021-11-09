@@ -14,4 +14,5 @@ Name = bro-smb_mapping
      """({protocol}smb)"""
   ]
 }
+}
 ```

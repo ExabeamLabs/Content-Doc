@@ -10,4 +10,5 @@ Name = pan-auth-successful
   Conditions = [ """,SYSTEM,auth,""", """,auth-success,""" ]
   Fields = [
     """SYSTEM,auth,[^,]{1,2000}
+}
 ```

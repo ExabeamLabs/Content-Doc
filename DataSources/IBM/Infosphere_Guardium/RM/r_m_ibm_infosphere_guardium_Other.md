@@ -5,8 +5,9 @@ Vendor: IBM
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   1    |     0      |      4      |    4    |
+|   5   |   1    |     0      |      3      |    3    |
 
 | Event Type     | Rules | Models                                                                          |
 | -------------- | ----- | ------------------------------------------------------------------------------- |
 | database-alert |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset |
+| network-alert  |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset |

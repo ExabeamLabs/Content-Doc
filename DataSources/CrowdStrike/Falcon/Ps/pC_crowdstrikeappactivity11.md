@@ -30,6 +30,5 @@ crowdstrike-app-activity = {
     """suser=(system|({user}[^\s]{1,2000}))""",
     """"Success":({outcome}true|false)""",
     """"UserId":"({user_email}[^@]{1,2000}@({email_domain}[^"]{1,2000}))""", 
-  ]
-}
+  ]}
 ```

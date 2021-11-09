@@ -18,4 +18,5 @@ Name = checkpoint-dlp-alert-out
     """\Wemail_session_id:"({email_id}[^"]{1,2000})""",
   ]
 }
+}
 ```

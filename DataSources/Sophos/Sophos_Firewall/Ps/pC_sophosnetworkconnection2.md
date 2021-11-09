@@ -28,4 +28,5 @@ Name = sophos-network-connection-2
     """severity="({alert_severity}[^"]{1,2000})"""
   ]
 }
+}
 ```

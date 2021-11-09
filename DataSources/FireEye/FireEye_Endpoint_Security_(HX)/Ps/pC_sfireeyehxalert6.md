@@ -24,4 +24,5 @@ Name = s-fireeye-hx-alert-6
     ]      
     DupFields = ["alert_name->alert_type"]
   }
+}
 ```

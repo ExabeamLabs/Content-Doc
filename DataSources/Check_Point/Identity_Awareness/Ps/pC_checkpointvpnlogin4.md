@@ -31,4 +31,5 @@ Name = checkpoint-vpn-login-4
     """description=(-|({additional_info}[^\|]{1,2000}))\|""",
   ]
 }
+}
 ```

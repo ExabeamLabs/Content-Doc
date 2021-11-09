@@ -5,8 +5,9 @@ Vendor: Check Point
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   1    |     1      |      5      |    5    |
+|   2   |   1    |     2      |      6      |    6    |
 
-| Event Type | Rules                                                                                                       | Models                                                          |
-| ---------- | ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| vpn-logout | <b>T1078 - Valid Accounts</b><br> ↳ <b>WPA-UACount</b>: Abnormal number of privilege access events for user |  • <b>WPA-UACount</b>: Count of admin privilege events for user |
+| Event Type     | Rules                                                                                                         | Models                                                          |
+| -------------- | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| security-alert | <b>T1068 - Exploitation for Privilege Escalation</b><br> ↳ <b>ALERT-EXEC</b>: Security violation by Executive |                                                                 |
+| vpn-logout     | <b>T1078 - Valid Accounts</b><br> ↳ <b>WPA-UACount</b>: Abnormal number of privilege access events for user   |  • <b>WPA-UACount</b>: Count of admin privilege events for user |

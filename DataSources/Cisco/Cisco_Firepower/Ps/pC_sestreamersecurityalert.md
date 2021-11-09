@@ -32,4 +32,5 @@ Name = s-estreamer-security-alert
   ]
   DupFields = [ "alert_name->alert_type" , "process->process_name"]
 }
+}
 ```

@@ -27,4 +27,5 @@ Name = fidelis-email-alert
           ]
   DupFields = [ "email_user->user_email" ]
 }
+}
 ```

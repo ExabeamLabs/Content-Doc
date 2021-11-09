@@ -32,4 +32,5 @@ Name = leef-eset-security-alert
     ]
     DupFields = ["action->additional_info", "host->dest_host", "malware_url->process_name"]
   }
+}
 ```

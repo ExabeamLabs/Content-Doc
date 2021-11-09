@@ -22,4 +22,5 @@ Name = jsonar-database-login
 	"""Client IP":"({src_ip}[^"]{1,2000})""",
   ]
 }
+}
 ```

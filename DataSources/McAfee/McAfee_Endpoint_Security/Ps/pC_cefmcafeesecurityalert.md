@@ -26,4 +26,5 @@ Name = cef-mcafee-security-alert
     ]
     DupFields = [ "process_directory->directory" ]
   }
+}
 ```

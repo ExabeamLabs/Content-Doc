@@ -20,4 +20,5 @@ Name = q-o365-siem-security-alert
       """DestinationServiceName=({process_name}.*?)\s\w+=""", 
     ]
   }
+}
 ```

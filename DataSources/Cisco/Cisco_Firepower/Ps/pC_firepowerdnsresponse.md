@@ -27,4 +27,5 @@ Name = firepower-dns-response
   ]
    DupFields = ["alert_type -> alert_name"]
 }
+}
 ```

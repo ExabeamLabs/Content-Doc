@@ -26,4 +26,5 @@ Name = cylance-protect-security-alert
     ProjectName = "SOC"
     EntityFields = [
       {EntityType="device", Name="src_address", Fields=["src_host->host_name"]}
+}
 ```

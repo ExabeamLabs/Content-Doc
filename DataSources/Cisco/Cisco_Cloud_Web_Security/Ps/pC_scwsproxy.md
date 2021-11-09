@@ -23,4 +23,5 @@ Name = s-cws-proxy
       """\scs-user-agent=\s{1,100}"(?:-|({user_agent}[^"]{1,2000}))"""",
     ]
   }
+}
 ```

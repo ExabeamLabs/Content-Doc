@@ -20,4 +20,5 @@ Name = cef-siteminder-auth-failed
     """suser=({user}\S+)"""
   ]
 }
+}
 ```

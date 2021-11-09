@@ -28,4 +28,5 @@ Name = raw-member-removed-2008-2
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

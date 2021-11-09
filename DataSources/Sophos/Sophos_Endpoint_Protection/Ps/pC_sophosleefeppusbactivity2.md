@@ -19,4 +19,5 @@ Name = sophos-leef-epp-usb-activity-2
           """FileSize=({bytes}\d{1,100})"""
           ]
 }
+}
 ```

@@ -19,4 +19,5 @@ Name = avecto-local-logon
       """Power User:\s{0,100}({power_user}.*?)\s{1,100}Workstyle""",
       """Workstyle:\s{0,100}({account_info}.*?)\s{1,100}Workstyle""",
       """IP4 Addresses:\s{0,100}[^,]{1,2000}
+}
 ```

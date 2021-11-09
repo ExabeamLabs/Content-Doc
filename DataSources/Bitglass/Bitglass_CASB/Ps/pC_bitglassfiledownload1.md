@@ -23,4 +23,5 @@ Name = bitglass-file-download-1
     """useragent=({user_agent}[^,"]{1,2000})"""
 	]
 }
+}
 ```

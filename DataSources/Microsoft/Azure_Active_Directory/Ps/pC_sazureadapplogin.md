@@ -18,4 +18,5 @@ Name = s-azure-ad-app-login
     """"errorCode":\s{0,100}({error_code}\d{1,100})""",
     """"appDisplayName":\s{0,100}"({app}[^"]{1,2000})""",
     """"location":\s{0,100}\{"({additional_info}.+?)\}
+}
 ```

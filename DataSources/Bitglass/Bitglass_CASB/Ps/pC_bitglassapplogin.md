@@ -20,4 +20,5 @@ Name = bitglass-app-login
     """"useragent":\s{0,100}"({user_agent}.+?)",""",
   ]
 }
+}
 ```

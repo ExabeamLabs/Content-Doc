@@ -9,4 +9,5 @@ Vendor: RangerAudit
 
 | Event Type | Rules | Models                                                                                                                                             |
 | ---------- | ----- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| dlp-alert  |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset                                                                    |
 | file-write |       |  • <b>A-FW-ProcessName-FileName</b>: File creations for process<br> • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset |

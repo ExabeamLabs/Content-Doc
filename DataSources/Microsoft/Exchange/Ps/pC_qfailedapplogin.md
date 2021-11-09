@@ -22,4 +22,5 @@ Name = q-failed-app-login
     """s-port=({protocol}.+?)\s{0,100}([\w\-\(\)]{1,2000}=|$)""",
   ]
 }
+}
 ```

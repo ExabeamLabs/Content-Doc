@@ -20,4 +20,5 @@ Name = json-okta-member-added
      """"email":\s{0,100}"({user_email}[^@"\s]{1,2000}@({email_domain}[^@"\s]{1,2000}))""""
   ]
 }
+}
 ```

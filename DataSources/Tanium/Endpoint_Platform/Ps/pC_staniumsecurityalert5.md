@@ -30,4 +30,5 @@ Name = s-tanium-security-alert-5
       """"Intel Labels":"({additional_info}[^"]{1,2000})"""
     ]
 }
+}
 ```

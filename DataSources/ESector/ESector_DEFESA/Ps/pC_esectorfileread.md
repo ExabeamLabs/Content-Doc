@@ -9,4 +9,5 @@ Name = esector-file-read
     """({event_name}ファイル参照)"""
   ]
 }
+}
 ```

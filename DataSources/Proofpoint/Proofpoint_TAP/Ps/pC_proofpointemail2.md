@@ -33,4 +33,5 @@ Name = proofpoint-email-2
    ]
     DupFields = ["attachment->attachments"]
  }
+}
 ```

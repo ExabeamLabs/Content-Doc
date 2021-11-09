@@ -21,4 +21,5 @@ Name = cef-mcafee-epo-alert-1
     """CEF:([^\|]{0,2000}\|){5}({alert_type}[^\|]{1,2000})""",
   ]
 }
+}
 ```

@@ -28,4 +28,5 @@ Name = s-cyberark-app-activity
   ]
   DupFields=[ "file_name->object_value", "file_path->additional_info", "activity->accesses", "host->dest_host" ]
 }
+}
 ```

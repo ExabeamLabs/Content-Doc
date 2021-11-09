@@ -20,4 +20,5 @@ Name = citrix-app-login-4
     """"application":"({app}[^"]{1,2000})""""
   ]
 }
+}
 ```

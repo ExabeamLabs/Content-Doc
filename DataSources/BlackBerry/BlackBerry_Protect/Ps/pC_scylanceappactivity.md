@@ -21,4 +21,5 @@ Name = s-cylance-app-activity
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

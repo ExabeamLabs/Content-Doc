@@ -18,4 +18,5 @@ Name = cef-microsoft-database-login
     """<address>({src_ip}[a-fA-F\d.:]{1,2000})</address>""",
   ]
 }
+}
 ```

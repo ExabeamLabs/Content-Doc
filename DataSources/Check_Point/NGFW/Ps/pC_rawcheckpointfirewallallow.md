@@ -31,4 +31,5 @@ Name = raw-checkpoint-firewall-allow
   ]
    DupFields = [ "action->event_name" ]
 }
+}
 ```

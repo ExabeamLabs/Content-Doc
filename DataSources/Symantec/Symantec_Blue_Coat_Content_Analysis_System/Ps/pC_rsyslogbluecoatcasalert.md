@@ -17,4 +17,5 @@ Name = r-syslog-bluecoatcas-alert
     """URL: ({malware_url}[^,]{1,2000})"""
   ]
 }
+}
 ```

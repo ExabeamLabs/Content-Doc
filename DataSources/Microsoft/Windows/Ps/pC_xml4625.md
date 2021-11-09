@@ -31,4 +31,5 @@ Name = xml-4625
     ]
     DupFields = ["src_host_windows->src_host"]
   }
+}
 ```

@@ -19,4 +19,5 @@ Name = zscaler-vpn-end-1
     """"SessionStatus":\s{0,100}"({event_name}[^"]{1,2000})""""
   ]
 }
+}
 ```

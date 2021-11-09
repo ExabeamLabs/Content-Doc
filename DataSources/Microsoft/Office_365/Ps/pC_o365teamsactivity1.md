@@ -23,4 +23,5 @@ Name = o365-teams-activity-1
     """UserAgent","Value":"({user_agent}[^"]{1,2000})""",
     ]
 }
+}
 ```

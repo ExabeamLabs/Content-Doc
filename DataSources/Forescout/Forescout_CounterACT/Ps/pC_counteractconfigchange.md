@@ -17,4 +17,5 @@ Name = counteract-config-change
     """from\[({src_ip}[a-fA-F\d.:]{1,2000})\]\s{1,100}to\[({dest_ip}[a-fA-F\d.:]{1,2000})\]""",
   ]
 }
+}
 ```

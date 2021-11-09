@@ -10,4 +10,5 @@ Name = s-cyberark-app-login
   ]
   DupFields=[ "host->dest_host" ]
 }
+}
 ```

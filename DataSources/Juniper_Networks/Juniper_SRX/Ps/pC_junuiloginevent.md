@@ -16,4 +16,5 @@ Name = jun-ui-login-event
         """({event_name}UI_LOGIN_EVENT)"""
     ]
 }
+}
 ```

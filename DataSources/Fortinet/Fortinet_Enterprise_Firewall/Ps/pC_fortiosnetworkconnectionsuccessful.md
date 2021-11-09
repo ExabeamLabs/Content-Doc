@@ -35,4 +35,5 @@ Name = fortios-network-connection-successful
     """\ssrcname="{0,20}({src_host}[^\s"]{0,2000})"{0,20}"""
   ]
 }
+}
 ```

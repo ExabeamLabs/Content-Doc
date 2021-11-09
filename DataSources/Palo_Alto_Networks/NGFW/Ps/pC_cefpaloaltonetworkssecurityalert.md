@@ -25,4 +25,5 @@ Name = cef-palo-alto-networks-security-alert
   ]
   DupFields = [ "alert_name->alert_type" ]
 }
+}
 ```

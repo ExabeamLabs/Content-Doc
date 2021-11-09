@@ -25,4 +25,5 @@ Name = s-cisco-acs-nac-failed-logon
       """\WFailed-Attempt:\s{0,100}({failure_reason}[^,]{1,2000}),"""
     ]
   }
+}
 ```

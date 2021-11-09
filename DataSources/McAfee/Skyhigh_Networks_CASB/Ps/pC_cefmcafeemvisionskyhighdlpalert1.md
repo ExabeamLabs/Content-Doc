@@ -23,4 +23,5 @@ Name = cef-mcafee-mvision-skyhigh-dlp-alert-1
     """totalMatchCount=({total_match_count}\d{1,100})\s{1,100}\w+=""",
     ]
 }
+}
 ```

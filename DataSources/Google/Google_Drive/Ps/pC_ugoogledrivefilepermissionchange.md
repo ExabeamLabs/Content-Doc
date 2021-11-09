@@ -23,4 +23,5 @@ Name = u-googledrive-file-permission-change
   ]
   DupFields = [ "file_name->object", "privileges->activity"  ]
 }
+}
 ```

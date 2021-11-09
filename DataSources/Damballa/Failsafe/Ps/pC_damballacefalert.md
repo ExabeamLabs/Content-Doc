@@ -24,4 +24,5 @@ Name = damballa-cef-alert
     """\sreason=({alert_type}[^\s]{1,2000})"""
   ]
 }
+}
 ```

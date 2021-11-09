@@ -19,4 +19,5 @@ Name = crowdstrike-file-write-6
       """({accesses}Modified)"""
     ]
   }
+}
 ```

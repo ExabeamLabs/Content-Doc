@@ -14,4 +14,5 @@ Name = raw-325
       """Event ID:\s{0,100}({event_code}\d{1,100})""",
       """\(({process_id}\d{1,100}).*\)""",
       """({activity}The database engine created a new database)\s{1,100}\(\d{1,100}
+}
 ```

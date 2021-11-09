@@ -17,4 +17,5 @@ Name = unix-priv-command-5
   ]
   DupFields = ["directory->process_directory"]
 }
+}
 ```

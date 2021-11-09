@@ -18,4 +18,5 @@ Name = ipsec-vpn-user
   ]
   DupFields = ["user->account"]
 }
+}
 ```

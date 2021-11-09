@@ -15,4 +15,5 @@ Name = apache-failed-app-login-1
     """for user "{1,20}({user}[^"]{1,2000})"{1,20} failed""",
     ]
 }
+}
 ```

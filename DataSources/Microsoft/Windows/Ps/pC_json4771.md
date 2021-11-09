@@ -27,4 +27,5 @@ Name = json-4771
   ]
   DupFields = ["host->dest_host"]
 }
+}
 ```

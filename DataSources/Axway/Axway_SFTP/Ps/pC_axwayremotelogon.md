@@ -18,4 +18,5 @@ Name = axway-remote-logon
     """({auth_package}SSH)"""
   ]
 }
+}
 ```

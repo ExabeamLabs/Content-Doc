@@ -15,4 +15,5 @@ Name = sterling-remote-logon
     """({event_name}User session created)""",
   ]
 }
+}
 ```

@@ -26,4 +26,5 @@ Name = xml-4738
     """User Account Control:\s{0,100}({uac_status}[^:]{1,2000}?)\s{0,100}User Parameters:"""
   ]
 }
+}
 ```

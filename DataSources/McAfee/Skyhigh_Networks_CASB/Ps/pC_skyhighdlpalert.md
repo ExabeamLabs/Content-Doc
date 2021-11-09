@@ -21,4 +21,5 @@ Name = skyhigh-dlp-alert
            ]
     DupFields = [ "alert_name->alert_type" ]
 }
+}
 ```

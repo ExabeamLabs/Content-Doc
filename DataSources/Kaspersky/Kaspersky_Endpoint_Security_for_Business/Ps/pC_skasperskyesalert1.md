@@ -30,4 +30,5 @@ Name = s-kaspersky-es-alert-1
 	
     ]
 }
+}
 ```

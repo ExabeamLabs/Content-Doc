@@ -21,4 +21,5 @@ Name = mcafee-siem-4770
       """({event_code}4770)"""
     ]
   }
+}
 ```

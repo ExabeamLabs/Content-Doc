@@ -25,4 +25,5 @@ Name = cef-snare-577
     """ComputerName\\=({host}[\w.\-]{1,2000})""",
   ]
 }
+}
 ```

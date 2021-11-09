@@ -33,6 +33,5 @@ oracle-database-event = {
       """"sessionid":"({session_id}[^"]{1,2000})"""",
       """"priv_used":"({additional_info}[^"]{1,2000})"""",
     ]
-    DupFields = [ "db_operation->activity" ]
- 
+    DupFields = [ "db_operation->activity" ]}
 ```

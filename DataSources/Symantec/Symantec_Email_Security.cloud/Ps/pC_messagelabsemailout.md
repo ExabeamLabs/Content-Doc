@@ -23,4 +23,5 @@ Name = messagelabs-email-out
   ]
   DupFields = [ "sender->email_user", "sender->user_email", "recipient->external_address" , "file_name->attachment"]
 }
+}
 ```

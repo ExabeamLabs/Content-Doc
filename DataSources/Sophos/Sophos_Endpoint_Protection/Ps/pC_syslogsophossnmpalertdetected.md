@@ -19,4 +19,5 @@ Name = syslog-sophos-snmp-alert-detected
   ]
   DupFields = [ "file_path->malware_url" ]
 }
+}
 ```

@@ -22,4 +22,5 @@ Name = proofpoint-dlp-email-to
   ]
   DupFields = ["host->dest_host"]
 }
+}
 ```

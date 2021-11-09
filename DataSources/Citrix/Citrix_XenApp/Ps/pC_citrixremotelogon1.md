@@ -19,4 +19,5 @@ Name = citrix-remote-logon-1
     """"connectedviaipaddress":"({src_translated_ip}[a-fA-F:\d.]{1,2000})""""
   ]
 }
+}
 ```

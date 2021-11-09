@@ -41,6 +41,5 @@ json-windows-events = {
     """"service-name":"({service_name}[^"]{1,2000})""",
     """auth-package":"({auth_package}[^"]{1,2000})"""",
     """workstation-name":"(-|({src_host_windows}[^"]{1,2000}))""""
-  ]
-}
+  ]}
 ```

@@ -35,4 +35,5 @@ Name = code42-file-operations-4
   ]
   DupFields = ["file_path->file_parent", "dest_host->device_name"]
 }
+}
 ```

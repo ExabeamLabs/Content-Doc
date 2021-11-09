@@ -19,4 +19,5 @@ Name = cef-moveit-app-failed-login
     """({app}MoveIt)"""
   ]
 }
+}
 ```

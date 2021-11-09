@@ -22,4 +22,5 @@ Name = okta-app-activity-ad
 
   ]
 }
+}
 ```

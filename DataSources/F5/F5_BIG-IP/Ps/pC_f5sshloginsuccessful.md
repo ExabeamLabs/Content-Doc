@@ -18,4 +18,5 @@ Name = f5-ssh-login-successful
     """\s({protocol}\w+)\(pam_audit\)\[""",
   ]
 }
+}
 ```

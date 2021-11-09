@@ -24,4 +24,5 @@ Name = sigsci-web-activity
     """"{1,20}responseSize"{1,20}:({bytes_out}\d{1,100})"""
     ]
 }
+}
 ```

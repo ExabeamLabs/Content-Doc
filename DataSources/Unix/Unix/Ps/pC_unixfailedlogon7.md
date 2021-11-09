@@ -14,4 +14,5 @@ Name = unix-failed-logon-7
     """({event_name}Too many authentication failures for ({user}\S+))""",
   ]
 }
+}
 ```

@@ -19,4 +19,5 @@ Name = netiq-app-login
     """({app}NetIQ)""",
  ]
 }
+}
 ```

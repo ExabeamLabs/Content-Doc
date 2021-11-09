@@ -38,4 +38,5 @@ Name = s-zscaler-web-activity-3
     """"malwarecat=(None|({malware_category}[^"]{1,2000}))"""
     ]
 }
+}
 ```

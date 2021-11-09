@@ -22,4 +22,5 @@ Name = cisco-vpn-start
     """ Group\s{1,100}<({realm}.+?)>""",
   ]
 }
+}
 ```

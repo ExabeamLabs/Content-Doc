@@ -17,4 +17,5 @@ Name = s-sendmail-email-recipients
     """\ssubject="({subject}.+?)"(,\s|\s{0,100}$)""",
   ]
 }
+}
 ```

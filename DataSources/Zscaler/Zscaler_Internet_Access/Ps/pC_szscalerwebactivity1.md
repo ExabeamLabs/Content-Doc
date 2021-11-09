@@ -30,4 +30,5 @@ Name = s-zscaler-web-activity-1
     """"respdatasize":({bytes_in}\d{1,100})""",
   ]
 }
+}
 ```

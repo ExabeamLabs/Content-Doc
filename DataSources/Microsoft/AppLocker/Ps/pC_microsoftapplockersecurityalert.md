@@ -22,4 +22,5 @@ Name = microsoft-applocker-security-alert
   ]
   DupFields = ["malware_url->process_name"]
 }
+}
 ```

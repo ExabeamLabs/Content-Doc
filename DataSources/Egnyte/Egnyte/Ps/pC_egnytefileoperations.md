@@ -21,4 +21,5 @@ Name = egnyte-file-operations
     """({app}Egnyte)"""
   ]
 }
+}
 ```

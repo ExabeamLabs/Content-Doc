@@ -20,4 +20,5 @@ Name = s-salesforce-app-login
   ]
   DupFields = [ "outcome->failure_reason" ]
 }
+}
 ```

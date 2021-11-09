@@ -18,4 +18,5 @@ Name = q-winpak-badge-access
       """({outcome}Access Granted)""",
     ]
   }
+}
 ```

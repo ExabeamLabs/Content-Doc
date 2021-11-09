@@ -21,4 +21,5 @@ Name = sysmon-file-delete
     """SHA256=({sha256}[^,]{1,2000}),""",
   ]
 }
+}
 ```

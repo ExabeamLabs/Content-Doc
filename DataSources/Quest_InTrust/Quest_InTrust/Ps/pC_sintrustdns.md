@@ -15,4 +15,5 @@ Name = s-intrust-dns
     ]
     DupFields = [ "dest_host->user" ]
   }
+}
 ```

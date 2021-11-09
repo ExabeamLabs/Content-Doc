@@ -14,4 +14,5 @@ Name = bastion-remote-logon
     """({event_name}logging onto)""",
     """bastion:({hostname}[^:]{1,2000}):({user}[^:]{1,2000}):\s""",
     """([^,]{1,2000}
+}
 ```

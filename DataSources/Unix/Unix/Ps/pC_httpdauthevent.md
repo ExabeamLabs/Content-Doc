@@ -17,4 +17,5 @@ Name = httpd-auth-event
     """({event_code}httpd)""",
   ]
 }
+}
 ```

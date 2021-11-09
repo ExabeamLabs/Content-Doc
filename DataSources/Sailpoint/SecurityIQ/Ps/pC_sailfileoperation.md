@@ -22,4 +22,5 @@ Name = sail-file-operation
    """"{1,20}action type\\"{1,20}:\\"{1,20}({activity}[^\\"]{1,2000})"""
  ]
 }
+}
 ```

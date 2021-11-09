@@ -30,4 +30,5 @@ Name = fortinet-network-connection
   ]
   DupFields = [ "action->outcome" ]
 }
+}
 ```

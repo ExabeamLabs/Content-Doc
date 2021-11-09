@@ -18,4 +18,5 @@ Name = github-audit-hook-activity
     """({object}"{1,20}hook_id"{1,20}:[^,]{1,2000})""",
     """"{1,20}actor_ip"{1,20}:"{1,20}({src_ip}[^"]{1,2000})""",
     """"{1,20}config"{1,20}:\{({additional_info}.+?)\}
+}
 ```

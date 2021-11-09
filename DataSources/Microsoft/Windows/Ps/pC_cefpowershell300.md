@@ -24,4 +24,5 @@ Name = cef-powershell-300
     """CommandLine\\*=({command_line}[^\s]{1,2000})""",
   ]
 }
+}
 ```

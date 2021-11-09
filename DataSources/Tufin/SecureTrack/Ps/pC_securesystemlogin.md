@@ -14,4 +14,5 @@ Name = secure-system-login
    """Login was done by\s{1,100}({user}[^,\s].+?)\.,""",
    ]  
 }
+}
 ```

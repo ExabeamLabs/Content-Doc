@@ -23,4 +23,5 @@ Name = xml-4672
     """<Data Name(\\)?='SubjectUserSid'>({user_sid}[^<]{1,2000})</Data>"""
   ]
 }
+}
 ```

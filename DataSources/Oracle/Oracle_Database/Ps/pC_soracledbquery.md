@@ -24,4 +24,5 @@ Name = s-oracle-db-query
   ]
   DupFields = [ "os_user->user", "db_user->account", "database_id->database_name" ]
  }
+}
 ```

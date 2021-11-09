@@ -21,4 +21,5 @@ Name = n-forwarded-cef-4776
       """shost=({dest_host}.+?)\s{1,100}\w+="""
     ]
   }
+}
 ```

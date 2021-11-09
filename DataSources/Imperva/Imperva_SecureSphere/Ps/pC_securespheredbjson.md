@@ -38,4 +38,5 @@ Name = securesphere-db-json
   ]
   DupFields = [ "user->account", "user->db_user" ]
 }
+}
 ```

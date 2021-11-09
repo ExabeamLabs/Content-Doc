@@ -5,9 +5,9 @@ Vendor: Trend Micro
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     1      |      7      |    7    |
+|   2   |   0    |     2      |      7      |    7    |
 
-| Event Type          | Rules                                                                                                         | Models |
-| ------------------- | ------------------------------------------------------------------------------------------------------------- | ------ |
-| dlp-email-alert-in  | <b>T1078 - Valid Accounts</b><br> ↳ <b>APP-Account-deactivated</b>: Activity from a de-activated user account |        |
-| dlp-email-alert-out | <b>T1078 - Valid Accounts</b><br> ↳ <b>APP-Account-deactivated</b>: Activity from a de-activated user account |        |
+| Event Type              | Rules                                                                                                         | Models |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------- | ------ |
+| account-password-change | <b>T1098 - Account Manipulation</b><br> ↳ <b>AM-UA-APLocU-F</b>: First account password change for local user |        |
+| dlp-email-alert-out     | <b>T1078 - Valid Accounts</b><br> ↳ <b>APP-Account-deactivated</b>: Activity from a de-activated user account |        |

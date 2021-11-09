@@ -22,4 +22,5 @@ Name = workday-app-activity-1
     """({app}(W|w)orkday)"""
   ]
 }
+}
 ```

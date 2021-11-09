@@ -25,4 +25,5 @@ Name = cef-mcafee-dlp-alert-3
         """\Wcatdt=(|({alert_type}.+?))(\s{1,100}\w+=|\s{0,100}$)"""
       ]
     }
+}
 ```

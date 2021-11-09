@@ -29,4 +29,5 @@ Name = o365-dlp-policy-alert
     ]
     DupFields = [ "sender->user_email", "recipient->recipients", "activity->alert_type" ]
 }
+}
 ```

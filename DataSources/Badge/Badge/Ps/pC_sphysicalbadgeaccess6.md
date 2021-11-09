@@ -19,4 +19,5 @@ Name = s-physical-badge-access-6
       """ReaderName":"({location_door}[^"]{1,2000})"""
     ]
   }
+}
 ```

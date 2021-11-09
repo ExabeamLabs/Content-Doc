@@ -21,4 +21,5 @@ Name = cef-netskope-alert-compromise
     """"type":"({alert_type}[^"]{1,2000})"""
   ]
 }
+}
 ```

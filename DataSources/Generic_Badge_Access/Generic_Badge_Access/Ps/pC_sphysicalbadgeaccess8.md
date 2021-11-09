@@ -17,4 +17,5 @@ Name = s-physical-badge-access-8
     """Name:\s{0,100}"{0,20}({location_full}[^"]{1,2000})""",
   ]
 }
+}
 ```

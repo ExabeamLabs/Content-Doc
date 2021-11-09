@@ -16,4 +16,5 @@ Name = cisco-meraki-vpn-start
       """connected from ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
    ]
   }
+}
 ```

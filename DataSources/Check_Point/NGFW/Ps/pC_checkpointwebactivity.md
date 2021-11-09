@@ -33,4 +33,5 @@ Name = checkpoint-web-activity
     """\Wuser:"({user}[^"]{1,2000}?)\s{0,100}"""",
   ]
 }
+}
 ```

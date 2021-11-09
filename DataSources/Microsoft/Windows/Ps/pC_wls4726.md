@@ -24,4 +24,5 @@ Name = wls-4726
     ]
     DupFields = [ "target_user->account_name" ]
   }
+}
 ```

@@ -18,4 +18,5 @@ Name = rsa-auth-successful-3
     """RESULT="({outcome}[^"]{1,2000})""",
   ]
 }
+}
 ```

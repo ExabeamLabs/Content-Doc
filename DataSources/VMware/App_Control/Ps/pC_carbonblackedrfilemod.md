@@ -7,4 +7,5 @@ Name = carbonblack-edr-filemod
   Fields = ${CarbonBlackParserTemplates.carbonblack-edr.Fields} [
   ]
 }
+}
 ```

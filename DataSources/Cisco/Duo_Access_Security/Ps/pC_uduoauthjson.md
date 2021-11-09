@@ -20,4 +20,5 @@ Name = u-duo-auth-json
     """\Wnewenrollment="({new_enrollment}True|False)"""
   ]
 }
+}
 ```

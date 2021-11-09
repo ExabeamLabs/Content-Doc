@@ -13,4 +13,5 @@ Name = secure-envoy-failed
     """TORVMVERIFY01\s({server_name}[^\s]{1,2000})\sUserID=(({user}[^\s@]{1,2000}?)@({domain}[^\s]{1,2000})|({=user}[^\s]{1,2000}))\sAccess\s({auth_method}Denied)\s({failure_reason}.+)ClientIP=({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})\sRemoteID=({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
   ]
 }
+}
 ```

@@ -14,4 +14,5 @@ Name = cisco-ftd-746015
     """\]\s({response}({query}\S+)\s({dns_response_code}resolved)[^=]{1,2000}?)\s{0,100}$"""
   ]
 }
+}
 ```

@@ -16,4 +16,5 @@ Name = fortinet-ipsec-vpn-end
     """xauth_?user="(?:N\/A|({user}[^"]{1,2000}))""""
   ]
 }
+}
 ```

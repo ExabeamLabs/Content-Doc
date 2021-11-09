@@ -28,4 +28,5 @@ Name = f5-silverline-waf
     """violations="({alert_name}[^"]{1,2000})"""
   ]
 }
+}
 ```

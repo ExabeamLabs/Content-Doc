@@ -18,4 +18,5 @@ Name = emc-syslog-4776
     """Error Code:\s{1,100}({result_code}[\w\-]{1,2000})""",
      ]
 }
+}
 ```

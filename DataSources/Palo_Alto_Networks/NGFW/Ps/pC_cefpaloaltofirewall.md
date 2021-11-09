@@ -23,4 +23,5 @@ Name = cef-paloalto-firewall
      """cat=({object}.+?)\snitro"""
    ]
 }
+}
 ```

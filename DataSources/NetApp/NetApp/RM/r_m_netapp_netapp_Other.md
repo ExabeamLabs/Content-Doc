@@ -5,9 +5,8 @@ Vendor: NetApp
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   4   |   2    |     0      |      4      |    4    |
+|   6   |   1    |     0      |      4      |    4    |
 
-| Event Type | Rules | Models                                                                                                                                             |
-| ---------- | ----- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| file-alert |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset                                                                    |
-| file-write |       |  • <b>A-FW-ProcessName-FileName</b>: File creations for process<br> • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset |
+| Event Type     | Rules | Models                                                                          |
+| -------------- | ----- | ------------------------------------------------------------------------------- |
+| security-alert |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset |

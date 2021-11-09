@@ -21,4 +21,5 @@ Name = cef-connectra-vpn-login
   ]
   DupFields = [ "host->dest_host", "user->account"]
 }
+}
 ```

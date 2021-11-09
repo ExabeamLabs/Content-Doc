@@ -21,4 +21,5 @@ Name = syslog-morphisec-security-alert
   ]
   DupFields = ["alert_name->alert_type"]
 }
+}
 ```

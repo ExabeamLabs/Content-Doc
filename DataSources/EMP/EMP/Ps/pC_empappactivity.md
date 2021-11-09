@@ -13,4 +13,5 @@ Name = emp-app-activity
   ]
   DupFields = [ "app->app_code" ]
 }
+}
 ```

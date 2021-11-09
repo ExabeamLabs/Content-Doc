@@ -26,4 +26,5 @@ Name = safend-dlp-alert
     """Details:\s{0,100}({process_name}[^=:,]{1,2000}?)(,|\s{0,100}$)"""
   ]
 }
+}
 ```

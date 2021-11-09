@@ -18,4 +18,5 @@ Name = cef-cisco-asa-113039-vpn-start
   ]
   DupFields = [ "host->dest_host" , "user->account"]
 }
+}
 ```

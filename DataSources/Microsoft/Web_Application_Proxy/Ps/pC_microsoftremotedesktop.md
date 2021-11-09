@@ -17,4 +17,5 @@ Name = microsoft-remote-desktop
     """Connection protocol used: "{1,20}({protocol}[^"]{1,2000})"""
   ]
 }
+}
 ```

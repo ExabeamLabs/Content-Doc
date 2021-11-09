@@ -34,4 +34,5 @@ Name = cef-carbonblack-security-alert-1
   ]
   DupFields = [ "directory->process_directory" ]
 }
+}
 ```

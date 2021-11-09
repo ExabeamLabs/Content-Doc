@@ -10,4 +10,5 @@ Name = sentinelone-dns-query
   ]
   DupFields = ["host->src_host"]
 }
+}
 ```

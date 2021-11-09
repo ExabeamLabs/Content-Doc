@@ -26,4 +26,5 @@ Name = json-cisco-netflow-connection
   ]
   DupFields = [ "bytes_in->bytes", "packets_in->packets"]
 }
+}
 ```

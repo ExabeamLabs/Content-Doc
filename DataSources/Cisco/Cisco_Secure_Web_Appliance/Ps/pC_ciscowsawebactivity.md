@@ -14,4 +14,5 @@ Name = cisco-wsa-web-activity
   ]
   DupFields = ["dest_ip->web_domain"]
 }
+}
 ```

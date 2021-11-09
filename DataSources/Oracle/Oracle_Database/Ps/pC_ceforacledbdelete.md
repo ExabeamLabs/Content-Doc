@@ -21,4 +21,5 @@ Name = cef-oracle-db-delete
   ]
   DupFields = [ "db_user->account" ]
 }
+}
 ```

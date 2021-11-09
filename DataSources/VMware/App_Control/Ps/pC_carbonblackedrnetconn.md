@@ -7,4 +7,5 @@ Name = carbonblack-edr-netconn
   Fields = ${CarbonBlackParserTemplates.carbonblack-edr.Fields} [
   ]
 }
+}
 ```

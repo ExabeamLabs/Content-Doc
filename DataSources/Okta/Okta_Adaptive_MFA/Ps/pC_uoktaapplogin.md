@@ -18,4 +18,5 @@ Name = u-okta-app-login
         """cs3=({user_agent}.+?), \w+=""",
     ]
 }
+}
 ```

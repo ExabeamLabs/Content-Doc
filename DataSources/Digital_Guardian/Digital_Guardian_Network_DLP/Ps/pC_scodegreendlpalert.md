@@ -24,4 +24,5 @@ Name = s-codegreen-dlp-alert
     """matched_policies_by_severity="\w+:({alert_name}[^,;\/]{1,2000})"""
   ]
 }
+}
 ```

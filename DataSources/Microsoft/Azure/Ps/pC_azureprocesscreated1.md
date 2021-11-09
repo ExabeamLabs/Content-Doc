@@ -22,4 +22,5 @@ Name = azure-process-created-1
     ]
     DupFields = [ "directory->process_directory" ]
 }
+}
 ```

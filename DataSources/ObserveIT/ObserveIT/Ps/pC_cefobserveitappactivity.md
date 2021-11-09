@@ -24,4 +24,5 @@ Name = cef-observeit-app-activity
     """\Wdst=({dest_ip}[a-fA-F\d.:]{1,2000})""",
   ]
 }
+}
 ```

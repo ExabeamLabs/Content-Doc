@@ -10,4 +10,5 @@ Name = json-bluecoat-proxy-web-activity
   Conditions = [ """filter_result_CF""", """action_CF""", """BlueCoat_CL""" ]
   Fields = [
     """"TimeGenerated"{1,20}:"{1,20}({time}[^"]{1,2000})"{1,20}
+}
 ```

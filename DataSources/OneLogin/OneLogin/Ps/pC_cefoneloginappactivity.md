@@ -25,4 +25,5 @@ Name = cef-onelogin-app-activity
     """\Wmsg=\s{0,100}({additional_info}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
+}
 ```

@@ -23,4 +23,5 @@ Name = n-forwarded-cef-4662
     """\WnitroLogon_Type=({logon_type}.+?)\s{1,100}(\w+=|$)"""
   ]
 }
+}
 ```

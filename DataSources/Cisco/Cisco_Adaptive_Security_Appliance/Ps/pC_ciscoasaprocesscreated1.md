@@ -18,4 +18,5 @@ Name = cisco-asa-process-created-1
     """from IP ({src_ip}[a-fA-F0-9.:]{1,2000})"""
   ]
 }
+}
 ```

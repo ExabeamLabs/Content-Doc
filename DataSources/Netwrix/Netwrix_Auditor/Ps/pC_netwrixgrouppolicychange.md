@@ -9,4 +9,5 @@ Name = netwrix-group-policy-change
     """cat=GroupPolicy.+?filePath=({policy}.+?) start=""",
   ]
 }
+}
 ```

@@ -31,4 +31,5 @@ Name = cds-process-creation
  ]
  DupFields = [ "process_directory->directory", "host->dest_host" ]
 }
+}
 ```

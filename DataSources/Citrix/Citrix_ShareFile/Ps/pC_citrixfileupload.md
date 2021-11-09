@@ -35,6 +35,5 @@ citrix-app-activity = {
       """"AdditionalInfo"{1,20}:"({additional_info}[^"]{1,2000})""",
       """"Action":"({action}[^"]{1,2000})""",
       """"Company":"(\\|({company}[^"]{1,2000}?))\s{0,100}"""",
-    ]
- 
+    ]}
 ```

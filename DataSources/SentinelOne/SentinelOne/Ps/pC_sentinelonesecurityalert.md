@@ -27,4 +27,5 @@ Name = sentinelone-security-alert
   ]
   DupFields = ["file_name->process_name", "malware_url->process"]
 }
+}
 ```

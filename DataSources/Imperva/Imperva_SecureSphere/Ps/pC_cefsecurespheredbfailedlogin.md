@@ -29,4 +29,5 @@ Name = cef-securesphere-db-failed-login
   ]
   DupFields = [ "db_user->account" ]
 }
+}
 ```

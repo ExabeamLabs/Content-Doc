@@ -18,4 +18,5 @@ Name = n-forwarded-cef-528
     """suser=({user}.+?)\s{1,100}nitro[\w]{1,2000}=""",
     """nitroLogon_Type=({logon_type}\d{1,100})""",
     """nitroDestination_Logon_ID=\([^,]{1,2000}
+}
 ```

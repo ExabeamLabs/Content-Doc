@@ -22,4 +22,5 @@ Name = cef-symantec-dlp-alert-1
       """"product_name":"({product_name}[^"]{1,2000})"""",
     ]
   }
+}
 ```

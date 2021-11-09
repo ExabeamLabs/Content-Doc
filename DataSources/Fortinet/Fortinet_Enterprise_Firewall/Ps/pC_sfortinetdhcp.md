@@ -16,4 +16,5 @@ Name = s-fortinet-dhcp
     """\Whostname="({user}[^"\s]{1,2000})"""
   ]
 }
+}
 ```

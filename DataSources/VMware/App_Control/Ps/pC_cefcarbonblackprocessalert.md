@@ -32,4 +32,5 @@ Name = cef-carbonblack-process-alert
     ProjectName = "SOC"
     EntityFields = [
       {EntityType="device", Name="dest_address", Fields=["dest_ip->ip_address", "dest_host->host_name"]}
+}
 ```

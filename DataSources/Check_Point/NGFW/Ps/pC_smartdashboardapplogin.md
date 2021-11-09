@@ -17,4 +17,5 @@ Name = smartdashboard-app-login
     """\|product=({app}SmartDashboard)"""
   ]
 }
+}
 ```

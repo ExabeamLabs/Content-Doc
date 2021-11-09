@@ -28,4 +28,5 @@ Name = s-mcafee-epo-alert-2
             ProjectName = "SOC"
             EntityFields = [
               {EntityType="device", Name="src_address", Fields=["src_ip->ip_address"]}
+}
 ```

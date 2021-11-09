@@ -16,4 +16,5 @@ Name = imsva-dlp-email-out
   ]
   DupFields = [ "recipient->external_address" ]
 }
+}
 ```

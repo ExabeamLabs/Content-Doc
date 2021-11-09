@@ -19,4 +19,5 @@ Name = centrify-remote-logon-1
     """Message:\s{0,100}({additional_info}[^:]{1,2000})\.\s{1,100}""",
   ]
 }
+}
 ```

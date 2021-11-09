@@ -34,4 +34,5 @@ Name = fireeye-mps-json-generic-alert-1
         ProjectName = "SOC"
         EntityFields = [
           {EntityType="device", Name="dest_address", Fields=["dest_ip->ip_address"]}
+}
 ```

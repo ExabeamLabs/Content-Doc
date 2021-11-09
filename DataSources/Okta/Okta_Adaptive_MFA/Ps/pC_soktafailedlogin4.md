@@ -28,4 +28,5 @@ Name = s-okta-failed-login-4
     ]
     DupFields = [ "additional_info->failure_reason" ]
 }
+}
 ```

@@ -19,4 +19,5 @@ Name = q-trendmicro-dlp-alert
         """Rule:\s{0,100}({alert_name}.+?)\s{0,100}$"""
        ]
 }
+}
 ```

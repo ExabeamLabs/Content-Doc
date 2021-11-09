@@ -27,4 +27,5 @@ Name = raw-windows-account-4722
      """"SubjectLogonId":"({logon_id}[^\s"]{1,2000})""",
   ]
 }
+}
 ```

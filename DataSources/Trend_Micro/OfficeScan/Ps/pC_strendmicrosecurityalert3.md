@@ -19,4 +19,5 @@ Name = s-trendmicro-security-alert-3
   ]
   DupFields = [ "alert_type->alert_name" ]
 }
+}
 ```

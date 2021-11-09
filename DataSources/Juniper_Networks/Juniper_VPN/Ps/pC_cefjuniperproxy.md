@@ -23,4 +23,5 @@ Name = cef-juniper-proxy
 	"""\Wcn1=({category}[^\s]{1,2000})""",
   ]
 }
+}
 ```

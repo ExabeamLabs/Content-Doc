@@ -19,4 +19,5 @@ Name = syslog-liebsoft-account-switch
     """sNamespace"\s{1,100}value="({account_domain}[^"]{1,2000})"""
     ]
   }
+}
 ```

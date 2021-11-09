@@ -26,4 +26,5 @@ Name = xml-6272
     """'QuarantineState'>(?:-|({access_type}[^\<]{1,2000}))""",
   ]
 }
+}
 ```

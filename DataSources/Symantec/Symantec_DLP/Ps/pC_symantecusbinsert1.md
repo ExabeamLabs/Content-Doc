@@ -29,4 +29,5 @@ Name = symantec-usb-insert-1
     ProjectName = "SOC"
     EntityFields = [
       {EntityType="device", Name="dest_address", Fields=["dest_host->host_name", "dest_ip->ip_address"]}
+}
 ```

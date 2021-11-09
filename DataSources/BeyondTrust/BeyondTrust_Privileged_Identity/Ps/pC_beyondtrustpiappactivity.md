@@ -19,4 +19,5 @@ Name = beyondtrust-pi-app-activity
     """OriginatingApplicationName="({app}[^"]{1,2000})"""
   ]
 }
+}
 ```

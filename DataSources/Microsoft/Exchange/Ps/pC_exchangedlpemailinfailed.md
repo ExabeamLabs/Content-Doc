@@ -10,4 +10,5 @@ Name = exchange-dlp-email-in-failed
   Conditions = [ """,Incoming,""", """,FAIL,""" ]
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\d)Z,[^,]{0,2000}
+}
 ```

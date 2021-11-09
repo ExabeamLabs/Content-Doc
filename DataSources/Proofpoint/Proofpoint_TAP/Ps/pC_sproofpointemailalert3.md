@@ -35,4 +35,5 @@ Name = s-proofpoint-email-alert-3
   ]
   DupFields = [ "recipient->user_email" ]
 }
+}
 ```

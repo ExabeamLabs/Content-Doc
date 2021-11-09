@@ -31,4 +31,5 @@ Name = xml-4649
   ]
   DupFields = [ "event_name->alert_name", "auth_process->alert_type" ]
 }
+}
 ```

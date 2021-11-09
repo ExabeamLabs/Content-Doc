@@ -13,4 +13,5 @@ Name = raw-scep-epp-alert-csv
     """({time}\w+\s{1,100}\d{1,100}\s{1,100}\d\d\d\d\s{1,100}\d{1,2}:\d\d(AM|am|PM|pm))\,({alert_id}[^\,]{1,2000})\,({alert_name}[^\,]{1,2000})\,\w+\,({src_host}[^\,]{1,2000})\,[^,]{1,2000}\,({additional_info}[^\,]{1,2000})\,(?:NA|({domain}[^\\]{1,2000}))\\({user}[^\,]{1,2000})\,({alert_type}[^\,]{1,2000})\,({alert_severity}[^\,]{1,2000})\,SystemCenterEndpointProtection"""
   ]
 }
+}
 ```

@@ -23,4 +23,5 @@ Name = physical-badge-access-1
     """\Wpersonaldata10="({employee_type}[^"]{1,2000})""",
   ]
 }
+}
 ```

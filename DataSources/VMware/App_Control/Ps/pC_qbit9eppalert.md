@@ -29,4 +29,5 @@ Name = q-bit9-epp-alert
       ProjectName = "SOC"
       EntityFields = [
         {EntityType="device", Name="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]}
+}
 ```

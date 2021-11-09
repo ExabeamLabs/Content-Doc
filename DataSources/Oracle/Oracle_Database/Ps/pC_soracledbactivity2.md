@@ -8,4 +8,5 @@ Name = s-oracle-db-activity-2
      """STATEMENT_TYPE="({activity}[^"]{1,2000})"""
    ]
  }
+}
 ```

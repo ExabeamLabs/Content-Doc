@@ -19,4 +19,5 @@ Name = workday-app-login-2
     """wd_ipaddress":"({src_ip}[a-fA-F0-9.:]{1,2000})"""",
    ]
 }
+}
 ```

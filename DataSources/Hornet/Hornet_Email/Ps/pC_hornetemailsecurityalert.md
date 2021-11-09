@@ -26,4 +26,5 @@ Name = hornet-email-security-alert
   ]
   DupFields = [ "alert_type->alert_severity" ]
 }
+}
 ```

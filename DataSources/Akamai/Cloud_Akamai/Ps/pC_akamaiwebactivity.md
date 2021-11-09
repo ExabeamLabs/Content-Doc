@@ -24,4 +24,5 @@ Name = akamai-web-activity
     """"bytes":"({bytes}\d{1,100})""",
   ]
 }
+}
 ```

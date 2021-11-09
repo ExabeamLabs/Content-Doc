@@ -22,4 +22,5 @@ Name = observeit-sessions
     """\sViewerURL=({additional_info}[^;]{1,2000}?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
   ]
 }
+}
 ```

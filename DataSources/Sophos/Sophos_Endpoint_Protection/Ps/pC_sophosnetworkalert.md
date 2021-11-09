@@ -23,4 +23,5 @@ Name = sophos-network-alert
    ]
   DupFields = [ "outcome->alert_severity" ] 
 }
+}
 ```

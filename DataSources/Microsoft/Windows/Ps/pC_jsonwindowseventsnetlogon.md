@@ -28,4 +28,5 @@ Name = json-windows-events-netlogon
     """The following error occurred:(\s|\\r|\\n)*({failure_reason}[^."]{1,2000})"""
   ]
 }
+}
 ```

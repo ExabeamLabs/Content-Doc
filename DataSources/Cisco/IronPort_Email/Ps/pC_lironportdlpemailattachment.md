@@ -17,4 +17,5 @@ Name = l-ironport-dlp-email-attachment
     """MID ({alert_id}\d{1,100})"""
   ]
 }
+}
 ```

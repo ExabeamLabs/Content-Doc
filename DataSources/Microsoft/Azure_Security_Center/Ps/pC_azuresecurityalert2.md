@@ -25,4 +25,5 @@ Name = azure-security-alert-2
     """"AlertLink":"({malware_url}[^"]{1,2000})"""
     ]
 }
+}
 ```

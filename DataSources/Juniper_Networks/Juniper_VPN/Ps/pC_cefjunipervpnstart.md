@@ -22,4 +22,5 @@ Name = cef-juniper-vpn-start
   ]
   DupFields = ["user->account"]
 }
+}
 ```

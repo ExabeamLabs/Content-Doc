@@ -8,4 +8,5 @@ Name = netwrix-app-activity-5
     """cat=({object_type}.+?) \w+=.+?filePath=({object}.+?) \w+=""",
   ]
 }
+}
 ```

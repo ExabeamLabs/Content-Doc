@@ -6,4 +6,5 @@ Name = cef-netskope-file-operation-2
   Conditions = [ """"type":"""", """destinationServiceName=Netskope""", """"activity":"Introspection Scan"""", """"object_type":"File"""" ]
   DupFields = [ "activity->accesses", "object->file_name" ]
 }
+}
 ```

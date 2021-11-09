@@ -18,4 +18,5 @@ Name = citrix-app-login-3
     """\sProtocol="({protocol}[^",]{1,2000})""""
   ]
 }
+}
 ```

@@ -15,4 +15,5 @@ Name = foxt-local-logon
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

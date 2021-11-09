@@ -22,4 +22,5 @@ Name = cef-snort-network-alert
   ]
   DupFields = [ "alert_name->alert_type" ]
 }
+}
 ```

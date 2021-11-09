@@ -13,4 +13,5 @@ Name = syslog-brightmail-email-attachment-1
       """\s{0,100}({time}\d{1,100})\|(|({alert_id}[^\|]{1,2000}))\|ATTACH\|({attachments}({attachment}[^\|\s]{1,2000}).*?)\s{0,100}$"""
     ]
   }
+}
 ```

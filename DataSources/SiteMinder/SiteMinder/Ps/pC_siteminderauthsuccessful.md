@@ -15,4 +15,5 @@ Name = siteminder-auth-successful
     """authlevel=({auth_level}[^;\]]{1,2000})"""
   ]
 }
+}
 ```

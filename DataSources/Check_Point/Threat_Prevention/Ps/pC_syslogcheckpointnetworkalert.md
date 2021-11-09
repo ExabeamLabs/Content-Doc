@@ -23,4 +23,5 @@ Name = syslog-checkpoint-network-alert
   ]
   #DupFields = [ "protocol->alert_name", "protocol->alert_type"]
 }
+}
 ```

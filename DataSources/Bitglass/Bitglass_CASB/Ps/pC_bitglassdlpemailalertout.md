@@ -26,4 +26,5 @@ Name = bitglass-dlp-email-alert-out
     """"emailsubject":\s{0,100}"({subject}[^"]{1,2000})""""
   ]
 }
+}
 ```

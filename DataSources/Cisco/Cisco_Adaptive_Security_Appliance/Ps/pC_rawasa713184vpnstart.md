@@ -18,4 +18,5 @@ Name = raw-asa-713184-vpn-start
     """\s{1,100}Client Type:\s{1,100}({client_system}.+?)\s{1,100}Client Application Version:\s{1,100}({client_system_version}.+?)\s{1,100}$"""
   ]
 }
+}
 ```

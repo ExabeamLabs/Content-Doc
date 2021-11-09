@@ -20,4 +20,5 @@ Name = cef-logrhythm-process-created
       """LOCALIP=({src_ip}[A-Fa-f:\d.]{1,2000})\sLOCALPORT=({src_port}\d{1,100})\sREMOTEIP=({dest_ip}[A-Fa-f:\d.]{1,2000})\sREMOTEPORT=({dest_port}\d{1,100})""",
           ]
 }
+}
 ```

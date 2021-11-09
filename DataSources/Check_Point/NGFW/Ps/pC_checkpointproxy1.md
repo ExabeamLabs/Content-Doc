@@ -30,4 +30,5 @@ Name = checkpoint-proxy-1
     """app_properties:\s{1,100}(?:-|({category}[^,;]{1,2000}));""",
   ]
 }
+}
 ```

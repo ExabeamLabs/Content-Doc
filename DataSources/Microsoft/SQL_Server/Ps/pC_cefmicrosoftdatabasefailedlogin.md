@@ -20,4 +20,5 @@ Name = cef-microsoft-database-failed-login
     """CLIENT:\s{0,100}({src_ip}[a-fA-F\d.:]{1,2000})""",
   ]
 }
+}
 ```

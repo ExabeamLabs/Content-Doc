@@ -27,4 +27,5 @@ Name = mcafee-process-created-failed
     """<OSName>({os}.+?)</OSName>""",
   ]
 }
+}
 ```

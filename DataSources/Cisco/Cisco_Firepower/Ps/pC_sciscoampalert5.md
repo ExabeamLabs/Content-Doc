@@ -63,6 +63,5 @@ s-cisco-amp-alert = {
       {EntityType="device", Name="dest_address", Fields=["dest_ip->ip_address"]},
       {EntityType="user", Name="windows_id", Fields=["user->windows_id"]},
       {EntityType="file", Name="file_name", Fields=["file_name->file_name"]}
-    ]
- 
+    ]}
 ```

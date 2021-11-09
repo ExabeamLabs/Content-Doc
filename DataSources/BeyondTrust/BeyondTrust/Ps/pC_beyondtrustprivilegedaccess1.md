@@ -28,4 +28,5 @@ Name = beyondtrust-privileged-access-1
   ]
   DupFields = ["dest_user->account"]
 }
+}
 ```

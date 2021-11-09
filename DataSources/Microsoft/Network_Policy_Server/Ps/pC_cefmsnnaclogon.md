@@ -23,4 +23,5 @@ Name = cef-msn-nac-logon
     """\ssourceGeoCountryCode=({src_country_code}\w+)"""
   ]
 }
+}
 ```

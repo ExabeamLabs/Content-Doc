@@ -13,4 +13,5 @@ Name = lumension-failed-usb-activity-4
     ""","({process_name}[^"]{1,2000})"\s{0,100}$""",
   ]
 }
+}
 ```

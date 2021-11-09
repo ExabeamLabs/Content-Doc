@@ -14,4 +14,5 @@ Name = unix-auth-event-1
     """AD authentication ({outcome}succeeded) for user ({user}[^""]{1,2000})"""
   ]
 }
+}
 ```

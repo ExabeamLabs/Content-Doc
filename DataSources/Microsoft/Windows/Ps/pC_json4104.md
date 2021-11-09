@@ -21,4 +21,5 @@ Name = json-4104
     """({process_name}PowerShell)"""
   ]
 }
+}
 ```

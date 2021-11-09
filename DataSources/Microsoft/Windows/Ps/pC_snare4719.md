@@ -22,4 +22,5 @@ Name = snare-4719
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

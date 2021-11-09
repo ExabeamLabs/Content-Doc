@@ -23,4 +23,5 @@ Name = sophos-threat-alert
     """Status=({alert_severity}[^;]{1,2000})""",
   ]
 }
+}
 ```

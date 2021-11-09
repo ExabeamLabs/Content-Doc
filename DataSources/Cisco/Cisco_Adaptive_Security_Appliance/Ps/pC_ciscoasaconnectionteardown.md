@@ -23,4 +23,5 @@ Name = cisco-asa-connection-teardown
   ]
   DupFields = [ "event_name->activity" ]
 }
+}
 ```

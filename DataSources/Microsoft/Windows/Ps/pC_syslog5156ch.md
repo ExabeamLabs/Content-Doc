@@ -25,4 +25,5 @@ Name = syslog-5156-ch
     ]
     DupFields = ["directory->process_directory"]
   }
+}
 ```

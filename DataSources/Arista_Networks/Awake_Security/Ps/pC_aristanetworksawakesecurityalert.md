@@ -22,4 +22,5 @@ Name = arista-networks-awake-security-alert
     """CEF:([^\|]{0,2000}\|){4}({alert_id}[^\|]{1,2000})\|"""
   ]
 }
+}
 ```

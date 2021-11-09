@@ -14,4 +14,5 @@ Name = raw-673
     """({event_code}673)""",
     """exabeam_source=({host}[A-Fa-f:\d.]{1,2000})""",
     """(?i)(((audit|success|failure)( |_)(success|audit|failure))|information)\s{0,100}
+}
 ```

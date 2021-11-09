@@ -17,4 +17,5 @@ Name = q-microsoft-dhcp-renew
   ]
   DupFields = [ "dest_host->user" ]
 }
+}
 ```

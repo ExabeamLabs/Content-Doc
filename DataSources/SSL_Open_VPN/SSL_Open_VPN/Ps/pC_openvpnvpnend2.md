@@ -15,4 +15,5 @@ Name = openvpn-vpn-end-2
     """({additional_info}Connection reset, restarting)""",
   ]
 }
+}
 ```

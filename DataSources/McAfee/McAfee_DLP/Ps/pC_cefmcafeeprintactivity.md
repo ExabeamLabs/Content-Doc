@@ -22,4 +22,5 @@ Name = cef-mcafee-print-activity
         """(\s|\|)({activity}Printing)""",
       ]
     }
+}
 ```

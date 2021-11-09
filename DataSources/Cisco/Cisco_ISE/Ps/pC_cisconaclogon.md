@@ -26,4 +26,5 @@ Name = cisco-nac-logon
   ]
   DupFields = [ "computer_name->dest_host" ]
 }
+}
 ```

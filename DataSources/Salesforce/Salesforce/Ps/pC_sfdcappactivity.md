@@ -23,4 +23,5 @@ Name = sfdc-app-activity
     """REQUEST_SIZE="?({bytes}\d{1,100})""",
   ]
 }
+}
 ```

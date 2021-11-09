@@ -23,4 +23,5 @@ Name = o365-security-alert-3
   ]
   DupFields = ["alert_name->alert_type"]
 }
+}
 ```

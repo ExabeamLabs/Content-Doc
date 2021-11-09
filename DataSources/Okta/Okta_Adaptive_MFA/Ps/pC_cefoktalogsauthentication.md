@@ -29,4 +29,5 @@ Name = cef-okta-logs-authentication
     """request"{1,20}:.+?User.+?"{1,20}displayName"{1,20}:(null|"{1,20}(Okta System|(?i)unknown|(?:({user_firstname}[^,"]{1,2000}),\s{0,100}({user_lastname}[^"]{1,2000})|({user_fullname}[^"]{1,2000})))")""",
     """"actor"{1,20}.+?"{1,20}type"{1,20}:"{1,20}User.+?displayName"{1,20}:(null|"{1,20}(Okta System|Okta Admin|(?i)unknown|(?:({user_lastname}[^,"]{1,2000}),\s{0,100}({user_firstname}[^"]{1,2000})|({user_fullname}[^"]{1,2000}))))""",
     """request"{1,20}:.+?"{1,20}type"{1,20}:"{1,20}User"{1,20}
+}
 ```

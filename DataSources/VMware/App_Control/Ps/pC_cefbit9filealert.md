@@ -31,4 +31,5 @@ Name = cef-bit9-file-alert
   ]
   DupFields = [ "old_hash->new_hash" ]
 }
+}
 ```

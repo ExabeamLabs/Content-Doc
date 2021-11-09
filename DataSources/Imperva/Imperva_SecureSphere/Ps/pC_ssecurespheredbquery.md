@@ -23,4 +23,5 @@ Name = s-securesphere-db-query
   ]
   DupFields = [ "db_user->account" ]
 }
+}
 ```

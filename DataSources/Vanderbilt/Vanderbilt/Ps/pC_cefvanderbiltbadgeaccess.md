@@ -21,4 +21,5 @@ Name = cef-vanderbilt-badge-access
       """\Wreason=({outcome_reason}.+?)\s{0,100}(\w+=|$)"""
     ]
   }
+}
 ```

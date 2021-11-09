@@ -20,4 +20,5 @@ Name = centrify-account-password-change-failed-1
     """Message:\s{0,100}({additional_info}[^:]{1,2000})\.\s{1,100}""",
   ]
 }
+}
 ```

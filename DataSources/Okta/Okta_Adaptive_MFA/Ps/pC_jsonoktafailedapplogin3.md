@@ -12,4 +12,5 @@ ${OktaParserTemplates.q-okta-app-login}{
     """Client ID:\s{0,100}({src_host}[^"\s]{1,2000})""",
   ]
 }
+}
 ```

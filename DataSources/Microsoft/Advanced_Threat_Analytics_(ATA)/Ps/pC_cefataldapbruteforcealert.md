@@ -18,4 +18,5 @@ Name = cef-ata-ldap-bruteforce-alert
     """cs1=({additional_info}[^=]{1,2000}?)\s{0,100}"{0,20}(\w+=|$)"""
   ]
 }
+}
 ```

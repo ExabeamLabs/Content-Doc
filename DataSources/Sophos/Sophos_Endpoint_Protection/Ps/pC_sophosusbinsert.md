@@ -21,4 +21,5 @@ Name = sophos-usb-insert
     """"id":\s{0,100}"({device_id}[^"]{1,2000})""",
   ]
 }
+}
 ```

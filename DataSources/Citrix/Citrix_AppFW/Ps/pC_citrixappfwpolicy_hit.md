@@ -14,4 +14,5 @@ Name = citrix-appfw-policy_hit
   ]
   DupFields = ["event_name->alert_name"]
 }
+}
 ```

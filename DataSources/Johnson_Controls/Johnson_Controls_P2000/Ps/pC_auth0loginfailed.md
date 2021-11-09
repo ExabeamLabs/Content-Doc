@@ -25,6 +25,5 @@ auth0-authentication-template = {
       """client_name"{1,20}:"{1,20}({app}[^"]{1,2000})""",
       """user_agent"{1,20}:"{1,20}({user_agent}[^"]{1,2000})""",         
       """severity"{1,20}:"{1,20}({alert_severity}[^"]{1,2000})""", 
-    ]
- 
+    ]}
 ```

@@ -17,4 +17,5 @@ Name = cef-trendmicro-database-failed-login
     """Reason:\s{0,100}({failure_reason}.+?)\s{0,100}\.""",
   ]
 }
+}
 ```

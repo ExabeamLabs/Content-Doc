@@ -14,4 +14,5 @@ Name = tfcs-web-activity
   ]
   DupFields = [ "action->resource" ]
 }
+}
 ```

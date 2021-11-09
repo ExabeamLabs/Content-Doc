@@ -21,4 +21,5 @@ Name = cef-ecat-security-alert
   ]
   DupFields = [ "dest_host->host" , "malware_url->process_name"]
 }
+}
 ```

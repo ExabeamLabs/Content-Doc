@@ -20,4 +20,5 @@ Name = github-audit-org-activity
     """({app}github)"""
   ]
 }
+}
 ```

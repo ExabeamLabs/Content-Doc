@@ -19,4 +19,5 @@ Name = rsa-auth-successful-1
     """USER_AGENT="({user_agent}[^"]{1,2000})""",
   ]
 }
+}
 ```

@@ -13,4 +13,5 @@ Name = pan-remote-logon
     """SYSTEM,.+?({time}\d\d\d\d\/\d\d\/\d\d \d\d:\d\d:\d\d)""",
     """User ({user}.+?) logged in .+?from (({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[^,]{1,2000}))""",
     """,SYSTEM,([^,]{0,2000}
+}
 ```

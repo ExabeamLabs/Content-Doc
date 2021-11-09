@@ -11,4 +11,5 @@ Name = exchange-dlp-email-out
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\d)Z,(?:(?:\s{0,100}'+[^']{0,2000}'+)\s{0,100}
+}
 ```

@@ -22,4 +22,5 @@ Name = q-firesight-alert-4
     """\WrecordType=({alert_type}.+?)\s{1,100}([\w\.]{1,2000}=|$)""",
   ]
 }
+}
 ```

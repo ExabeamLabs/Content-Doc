@@ -16,4 +16,5 @@ Name = cisco-authentication-successful
 	"""({outcome}Success)"""
   ]
 }
+}
 ```

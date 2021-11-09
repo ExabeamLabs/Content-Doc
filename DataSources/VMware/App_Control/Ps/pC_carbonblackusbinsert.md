@@ -22,4 +22,5 @@ Name = carbonblack-usb-insert
   ]
   DupFields = [ "directory->process_directory" ]
 }
+}
 ```

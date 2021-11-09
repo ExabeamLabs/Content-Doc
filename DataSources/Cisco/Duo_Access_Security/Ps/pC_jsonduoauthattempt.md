@@ -19,4 +19,5 @@ Name = json-duo-auth-attempt
     """({service}\w+[^\-"]{0,2000}?) authentication succeeded"""
   ]
 }
+}
 ```

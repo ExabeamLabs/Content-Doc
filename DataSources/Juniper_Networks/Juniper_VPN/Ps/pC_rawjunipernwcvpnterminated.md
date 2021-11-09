@@ -19,4 +19,5 @@ Name = raw-juniper-nwc-vpn-terminated
     """Session for user\s{1,100}(({domain}[^\\]{1,2000})\\)?({user}.+?)\s{1,100}on host ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) has been terminated""",
   ]
 }
+}
 ```

@@ -22,4 +22,5 @@ Name = sophos-network-connection-1
   ]
   DupFields = ["host->src_host","action->outcome"]
 }
+}
 ```

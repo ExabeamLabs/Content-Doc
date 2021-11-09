@@ -22,4 +22,5 @@ Name = syslog-json-4663
     """"ObjectType":"({file_type}[^"]{1,2000})""",
     """"ObjectName":"({file_path}[^"]{1,2000})""",
     """"ObjectName"{1,20}:".*\\({file_name}(?:[^\\:]{1,2000}(?=\.))({file_ext}\.[^\\:\s]{1,2000})?|[^\\:\s]{1,2000})"{1,20}
+}
 ```

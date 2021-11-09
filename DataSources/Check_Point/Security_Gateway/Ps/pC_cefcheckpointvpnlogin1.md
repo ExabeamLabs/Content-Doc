@@ -17,4 +17,5 @@ Name = cef-checkpoint-vpn-login-1
     """\Wsrc=({src_translated_ip}[A-Fa-f:\d.]{1,2000})""",
   ]
 }
+}
 ```

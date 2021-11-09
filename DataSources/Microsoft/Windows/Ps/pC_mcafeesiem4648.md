@@ -24,4 +24,5 @@ Name = mcafee-siem-4648
       """"PID":"({process_id}[^"]{1,2000})""",
     ]
   }
+}
 ```

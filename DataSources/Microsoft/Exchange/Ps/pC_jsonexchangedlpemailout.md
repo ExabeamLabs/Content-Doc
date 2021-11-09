@@ -18,4 +18,5 @@ Name = json-exchange-dlp-email-out
     """exchange_source":"(?:|({alert_name}[^\"]{1,2000}))",""",
     """event_id":"(?:|({action}[^\"]{1,2000}))",""",
     """internal_message_id":"{0,20}(?:|({alert_id}[^",]{1,2000}))"{0,20}
+}
 ```

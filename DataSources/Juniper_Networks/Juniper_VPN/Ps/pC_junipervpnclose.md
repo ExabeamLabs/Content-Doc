@@ -44,4 +44,5 @@ Name = juniper-vpn-close
     """\smsg="({additional_info}[^"]{1,2000})""",
   ]
 }
+}
 ```

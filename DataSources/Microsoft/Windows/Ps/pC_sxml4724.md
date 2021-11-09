@@ -23,4 +23,5 @@ Name = s-xml-4724
     """({event_name}An attempt was made to reset an account's password)"""
   ]
 }
+}
 ```

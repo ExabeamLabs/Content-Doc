@@ -19,4 +19,5 @@ Name = fortinet-ipsec-vpn-start
   ]
   DupFields = ["user->account"]
 }
+}
 ```

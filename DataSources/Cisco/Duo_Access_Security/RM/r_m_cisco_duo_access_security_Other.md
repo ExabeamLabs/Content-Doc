@@ -5,8 +5,6 @@ Vendor: Cisco
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   1    |     0      |      6      |    6    |
+|   2   |   0    |     0      |      5      |    5    |
 
-| Event Type       | Rules | Models                                                                              |
-| ---------------- | ----- | ----------------------------------------------------------------------------------- |
-| account-creation |       |  • <b>A-AM-DhU-system</b>: System accounts performing account management activities |
+| Event Type | Rules | Models || ---------- | ----- | ------ |

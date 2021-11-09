@@ -20,4 +20,5 @@ Name = cef-azure-onedrive-file-upload
     """exabeam_host=({host}[^\s]{1,2000})"""
   ]
 }
+}
 ```

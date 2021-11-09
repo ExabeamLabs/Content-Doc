@@ -25,4 +25,5 @@ Name = json-o365-app-login
     """login-({outcome}success)""",
   ]
 }
+}
 ```

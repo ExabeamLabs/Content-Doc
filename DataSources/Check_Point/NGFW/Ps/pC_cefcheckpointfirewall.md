@@ -24,4 +24,5 @@ Name = cef-checkpoint-firewall
     """\Wcs1=(?:\s\&|({rule}.+?))\s{1,100}(\w+=|$)"""
   ]
 }
+}
 ```

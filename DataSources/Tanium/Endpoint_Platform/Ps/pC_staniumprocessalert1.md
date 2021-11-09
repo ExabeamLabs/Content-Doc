@@ -23,4 +23,5 @@ Name = s-tanium-process-alert-1
     """({app}Tanium)"""
     ]
 }
+}
 ```

@@ -24,4 +24,5 @@ Name = visma-physical-access
     """"sourceArea".*?"name":"({source_location_full}[^"]{1,2000})"""",
   ]
 }
+}
 ```

@@ -18,4 +18,5 @@ Name = googlecloud-cloudresourcemanager-activity
     """"message":"({failure_reason}[^"]{1,2000})""""
   ]
 }
+}
 ```

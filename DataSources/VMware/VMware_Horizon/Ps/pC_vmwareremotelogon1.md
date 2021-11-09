@@ -16,4 +16,5 @@ Name = vmware-remote-logon-1
     """for user (?:({domain}[^\\\s]{1,2000})\\+)?(({user_email}[^@\\\s]{1,2000}@[^@\\\s]{1,2000})|({user}[^\\\s]{1,2000}))"""
    ]
 }
+}
 ```

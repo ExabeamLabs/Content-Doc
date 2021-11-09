@@ -17,4 +17,5 @@ Name = s-ironport-email-recipient
       """ To: <({recipients}[^>]{1,2000}?)>"""
     ]
   }
+}
 ```

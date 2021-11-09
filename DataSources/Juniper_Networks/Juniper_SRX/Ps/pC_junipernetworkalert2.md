@@ -19,4 +19,5 @@ Name = juniper-network-alert-2
     """\sname=({alert_name}[^,\s]{1,2000})"""
   ]
 }
+}
 ```

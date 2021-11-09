@@ -15,4 +15,5 @@ Name = upm-account-switch
     """ to ({account}[^@\s]{1,2000})@(eth0\.)?({dest_host}[^@\s]{1,2000})""",
   ]
 }
+}
 ```

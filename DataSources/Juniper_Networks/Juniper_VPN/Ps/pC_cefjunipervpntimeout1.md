@@ -17,4 +17,5 @@ Name = cef-juniper-vpn-timeout-1
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

@@ -14,4 +14,5 @@ Name = bro-dns
     ]
   DupFields = [ "id_orig_h->src_ip", "id_orig_p->src_port", "id_resp_h->dest_ip", "id_resp_p->dest_port", "proto->protocol", "qtype->query_type", "rejected->outcome" ]
 }
+}
 ```

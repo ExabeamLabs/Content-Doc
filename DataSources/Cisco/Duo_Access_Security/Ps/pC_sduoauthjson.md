@@ -24,4 +24,5 @@ Name = s-duo-auth-json
     """"{0,20}integration"{0,20}:\s{0,100}"{0,20}({service}[^"]{1,2000})"""
   ]
 }
+}
 ```

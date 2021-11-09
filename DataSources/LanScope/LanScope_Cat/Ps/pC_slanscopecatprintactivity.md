@@ -22,4 +22,5 @@ Name = s-lanscopecat-print-activity
     """\sAlertType="({alert_type}[^"]{1,2000})""",
   ]
 }
+}
 ```

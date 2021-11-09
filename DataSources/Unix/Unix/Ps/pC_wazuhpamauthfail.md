@@ -13,4 +13,5 @@ Name = wazuh-pam-auth-fail
 ]
   DupFields=["host->dest_host", "description->event_name"]
 }
+}
 ```

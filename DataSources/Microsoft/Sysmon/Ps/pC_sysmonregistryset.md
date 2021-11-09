@@ -24,4 +24,5 @@ Name = sysmon-registry-set
   ]
   DupFields = [ "directory->process_directory", "host->dest_host" ]
 }
+}
 ```

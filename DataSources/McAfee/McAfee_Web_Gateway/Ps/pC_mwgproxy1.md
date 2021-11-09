@@ -32,4 +32,5 @@ Name = mwg-proxy-1
 		""""content_type":"(?:|({mime}[^"]{1,2000}))""""
     ]
   }
+}
 ```

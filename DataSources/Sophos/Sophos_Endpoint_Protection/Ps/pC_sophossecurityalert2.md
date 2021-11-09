@@ -28,4 +28,5 @@ Name = sophos-security-alert-2
   ]
   DupFields = [ "host->src_host" ]
 }
+}
 ```

@@ -18,4 +18,5 @@ Name = cef-snowflake-db-query
     """suser=(anonymous|({user}[^\s]{1,2000}))""",
   ]
 }
+}
 ```

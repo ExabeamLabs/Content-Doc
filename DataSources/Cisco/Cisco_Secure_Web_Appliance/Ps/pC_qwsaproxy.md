@@ -18,4 +18,5 @@ Name = q-wsa-proxy
     """dst\s(-|({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}))\sdstPort\s(-|({dest_port}\d{1,100}))"""
   ]
 }
+}
 ```

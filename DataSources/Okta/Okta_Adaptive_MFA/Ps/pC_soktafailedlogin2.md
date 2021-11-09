@@ -6,4 +6,5 @@ Name = s-okta-failed-login-2
   Conditions = [ """"displayMessage": "Authenticate user with AD agent"""", """"result": "FAILURE"""" ]
   DupFields = [ "additional_info->failure_reason" ]
 }
+}
 ```

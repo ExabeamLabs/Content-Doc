@@ -13,4 +13,5 @@ Name = netscalar-remote-access-1
    """({event_name}HTTPREQUEST)"""
  ]
 }
+}
 ```

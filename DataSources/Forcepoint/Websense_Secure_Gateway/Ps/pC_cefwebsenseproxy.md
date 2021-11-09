@@ -37,6 +37,5 @@ wp-web-activity = {
       """\s(requestProtocol|app)=(?:-|({protocol}.+?))\s\w+=""",
       """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sdvchost=({host}[^\s]{1,2000})"""
-  ]
-}
+  ]}
 ```

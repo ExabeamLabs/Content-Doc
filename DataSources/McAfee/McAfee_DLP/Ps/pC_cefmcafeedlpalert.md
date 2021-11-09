@@ -17,4 +17,5 @@ Name = cef-mcafee-dlp-alert
 	"""\sact=({alert_type}.+?)\s\w+=""",
 	"""\scs1=({alert_name}.+?)(,|\s\w+=)""",
 	"""\scs4=([^,]{0,2000}
+}
 ```

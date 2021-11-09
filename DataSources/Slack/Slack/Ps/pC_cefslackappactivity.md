@@ -21,4 +21,5 @@ Name = cef-slack-app-activity
     """"domain":"({domain}[^"]{1,2000})"""",
   ]
 }
+}
 ```

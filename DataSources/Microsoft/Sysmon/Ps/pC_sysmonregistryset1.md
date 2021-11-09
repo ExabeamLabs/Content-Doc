@@ -23,4 +23,5 @@ Name = sysmon-registry-set-1
     ]      
     DupFields = [ "file_path->process", "host->dest_host", "file_name->process_name", "activity->event_name" ]
 }
+}
 ```

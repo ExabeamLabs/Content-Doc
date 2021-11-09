@@ -16,4 +16,5 @@ Name = kemp-lb-remote-login
     """({log_type}logger)"""
   ]
 }
+}
 ```

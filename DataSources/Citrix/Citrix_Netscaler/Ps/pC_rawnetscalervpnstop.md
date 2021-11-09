@@ -18,4 +18,5 @@ Name = raw-netscaler-vpn-stop
     """ Nat_ip ({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """ SSLVPN_client_type ({vpn_client_type}[^\s]{1,2000}) -"""]
 }
+}
 ```

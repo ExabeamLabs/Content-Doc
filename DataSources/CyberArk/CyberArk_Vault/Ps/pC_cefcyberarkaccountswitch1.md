@@ -26,4 +26,5 @@ Name = cef-cyberark-account-switch-1
     """cs2="?({safe_value}[^"]{1,2000}?)"?\s{1,100}\w+="""
   ]
 }
+}
 ```

@@ -17,4 +17,5 @@ Name = cisco-asa-auth-successful
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

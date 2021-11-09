@@ -21,4 +21,5 @@ Name = json-okta-account-lockout
   ]
   DupFields = ["host->dest_host"]
 }
+}
 ```

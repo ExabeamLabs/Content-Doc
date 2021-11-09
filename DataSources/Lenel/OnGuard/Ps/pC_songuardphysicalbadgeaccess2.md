@@ -21,4 +21,5 @@ Name = s-onguard-physical-badge-access-2
     """"badgekey":({badge_id}\d{1,100})"""
   ]
 }
+}
 ```

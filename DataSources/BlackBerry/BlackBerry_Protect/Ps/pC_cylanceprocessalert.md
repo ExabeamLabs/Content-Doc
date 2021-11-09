@@ -26,4 +26,5 @@ Name = cylance-process-alert
   ]
   DupFields = [ "directory->process_directory", "file_hash->sha256_at", "file_name->name_at" ]
 }
+}
 ```

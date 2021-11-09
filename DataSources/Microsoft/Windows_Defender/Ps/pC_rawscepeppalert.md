@@ -26,4 +26,5 @@ Name = raw-scep-epp-alert
   ]
   DupFields = ["host->dest_host"]
 }
+}
 ```

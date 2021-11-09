@@ -11,4 +11,5 @@ Name = raw-unix-sudo
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """({time}\w{3} \d{1,2}
+}
 ```

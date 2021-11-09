@@ -18,4 +18,5 @@ Name = q-symantec-dlp-email-out
   ]
   DupFields = [ "recipient->external_address" ]
 }
+}
 ```

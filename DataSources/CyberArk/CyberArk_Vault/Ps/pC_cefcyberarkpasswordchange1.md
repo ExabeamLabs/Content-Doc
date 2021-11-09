@@ -22,4 +22,5 @@ Name = cef-cyberark-password-change-1
     """({app}Cyber-Ark)"""
   ]
 }
+}
 ```

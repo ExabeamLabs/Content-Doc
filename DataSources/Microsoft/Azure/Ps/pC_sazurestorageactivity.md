@@ -22,4 +22,5 @@ Name = s-azure-storage-activity
   ]
    DupFields = ["event_hub_namespace->host"]
 }
+}
 ```

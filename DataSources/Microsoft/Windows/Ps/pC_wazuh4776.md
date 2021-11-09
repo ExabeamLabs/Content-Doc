@@ -31,6 +31,5 @@ wazuh-windows-template = {
       """"data.data":"({data}[^"]{1,2000})"""
       """"rule.description":"({description}[^"]{1,2000})"""
       """"decoder.name":"({decoder_name}[^"]{1,2000})"""
-    ]
- 
+    ]}
 ```

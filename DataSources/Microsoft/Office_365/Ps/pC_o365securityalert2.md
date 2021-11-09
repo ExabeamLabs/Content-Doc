@@ -26,4 +26,5 @@ Name = o365-security-alert-2
     """"id":({alert_id}\d{1,100})"""
   ]
 }
+}
 ```

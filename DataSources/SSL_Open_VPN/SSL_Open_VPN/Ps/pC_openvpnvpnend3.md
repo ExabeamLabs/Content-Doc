@@ -16,4 +16,5 @@ Name = openvpn-vpn-end-3
     """({additional_info}client-instance restarting)""",
   ]
 }
+}
 ```

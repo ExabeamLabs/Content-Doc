@@ -35,4 +35,5 @@ Name = armis-alert-iot
   ]
   DupFields = ["device_name->src_host"]
 }
+}
 ```

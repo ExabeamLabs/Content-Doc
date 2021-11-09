@@ -15,4 +15,5 @@ Name = unix-password-change
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

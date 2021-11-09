@@ -7,4 +7,5 @@ Name = xml-sysmon-file-create
   Conditions = [ """<Provider Name='Microsoft-Windows-Sysmon'""", """<EventID>11</EventID>""" ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

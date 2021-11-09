@@ -47,4 +47,5 @@ Name = leef-paloalto-firewall-allow
     """\|SourceLocation=({src_location}[^\|]{1,2000})\|""",
   ]
 }
+}
 ```

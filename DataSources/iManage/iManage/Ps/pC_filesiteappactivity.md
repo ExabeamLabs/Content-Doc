@@ -20,4 +20,5 @@ Name = filesite-app-activity
     """DOCLOC\s{0,100}=\s{0,100}({file_path}({file_parent}.+?)[\\\/]{0,2000}({file_name}[^\\\/]{1,2000}?))\s{1,100}(\w+\s{1,100}=|$)""",
   ]
 }
+}
 ```
