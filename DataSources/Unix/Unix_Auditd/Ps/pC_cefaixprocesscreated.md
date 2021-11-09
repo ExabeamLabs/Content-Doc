@@ -25,6 +25,5 @@ cef-unix-template = {
       """\WeventId=({alert_id}\d{1,100})""",
       """\Wsuser=({user}[^\s]{1,2000})""",
       """\Wdhost=({dest_host}[\w\-.]{1,2000})""",
-    ]
- 
+    ]}
 ```

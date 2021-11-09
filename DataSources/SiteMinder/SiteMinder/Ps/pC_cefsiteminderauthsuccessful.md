@@ -20,4 +20,5 @@ Name = cef-siteminder-auth-successful
     """suser=({user}\S+)"""
   ]
 }
+}
 ```

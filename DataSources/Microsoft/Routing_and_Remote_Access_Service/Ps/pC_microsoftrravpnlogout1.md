@@ -18,4 +18,5 @@ Name = microsoft-rra-vpn-logout-1
     """\sThe reason for disconnecting was ({reason}[^\.]{1,2000})""",
   ]
 }
+}
 ```

@@ -10,4 +10,5 @@ Name = s-cyberark-security-alert-2
   ]
   DupFields = [ "activity->alert_name", "activity->alert_type" ]
 }
+}
 ```

@@ -21,6 +21,5 @@ q-pan-vpn-parser = {
     """DeviceName=({host}[\w\-.]{1,2000})""",
     """Client OS( version)?:\s{1,100}({os}[^":]{1,2000})(,|\.)""",
     """Login from:\s{0,100}({src_ip}[a-fA-F\d.:]{1,2000})"""
-  ]
-}
+  ]}
 ```

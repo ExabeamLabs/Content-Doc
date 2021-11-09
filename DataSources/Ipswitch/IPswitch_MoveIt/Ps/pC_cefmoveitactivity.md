@@ -31,4 +31,5 @@ Name = cef-moveit-activity
      "browser->user_agent",
      "activity->accesses"]
 }
+}
 ```

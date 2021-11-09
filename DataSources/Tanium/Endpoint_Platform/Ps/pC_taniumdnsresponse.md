@@ -19,4 +19,5 @@ Name = tanium-dns-response
       """\sResponse="(\[unresolved\]|(::ffff:)?({dest_ip}[a-fA-F\d.:]{1,2000}))"""",
     ]
   }
+}
 ```

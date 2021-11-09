@@ -36,4 +36,5 @@ Name = checkpoint-firewall-2
     """\Wdpt=({dest_port}\d{1,100})""",
   ]
 }
+}
 ```

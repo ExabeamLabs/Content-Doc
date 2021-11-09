@@ -23,4 +23,5 @@ Name = s-github-activity
     """\Wuser_agent="({user_agent}[^"]{1,2000})""""
   ]
 }
+}
 ```

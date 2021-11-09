@@ -24,4 +24,5 @@ Name = zscaler-dlp-alert-1
   ]
   DupFields = [ "alert_name->alert_type" ]
 }
+}
 ```

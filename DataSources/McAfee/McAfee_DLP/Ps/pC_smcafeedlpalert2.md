@@ -26,4 +26,5 @@ Name = s-mcafee-dlp-alert-2
     
   ]
 }
+}
 ```

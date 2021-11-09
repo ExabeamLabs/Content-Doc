@@ -32,4 +32,5 @@ Name = cws-proxy
       """\sfileType=(?:-|({mime}.+?))\s\w+=""",
     ]
   }
+}
 ```

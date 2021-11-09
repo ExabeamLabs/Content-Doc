@@ -23,4 +23,5 @@ Name = q-unix-audispd-logon
   ]
   DupFields=[ "host->dest_host" ]
 }
+}
 ```

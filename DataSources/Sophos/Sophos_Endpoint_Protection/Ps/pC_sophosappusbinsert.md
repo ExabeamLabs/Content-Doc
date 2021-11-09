@@ -24,4 +24,5 @@ Name = sophos-app-usb-insert
   ]
   DupFields = ["result->activity_details"]
 }
+}
 ```

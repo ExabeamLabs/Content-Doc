@@ -10,4 +10,5 @@ Name = pan-flood-alert
   Conditions = [ """,THREAT,flood,""" ]
   Fields = [
     """\s{1,100}({host}[^\s]{1,2000})\s{1,100}\d{1,100}
+}
 ```

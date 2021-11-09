@@ -8,4 +8,5 @@ Name = cef-sophos-security-alert-18
     """"name"{0,20}:"{0,20}'({alert_name}[^"]{1,2000})\s"""
   ]
 }
+}
 ```

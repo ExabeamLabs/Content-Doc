@@ -21,6 +21,5 @@ badge-physical-access = {
       """<PERSONNAME><!\[CDATA\[({user_fullname}({last_name}[^,]{1,2000}),\s({first_name}[^\]]{1,2000}))\]{1,2000}><\/PERSONNAME>""",
       """<PERSONID>\s{0,100}({badge_id}[^>]{1,2000}?)\s{0,100}<\/PERSONID>""",
       """<RDRNAME><!\[CDATA\[({location_door}[^\]]{1,2000})\]{1,2000}><\/RDRNAME>"""
-    ]
- 
+    ]}
 ```

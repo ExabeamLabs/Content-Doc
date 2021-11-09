@@ -18,4 +18,5 @@ Name = symantec-app-activity
     """CUST_LOGIN_ID:\s{0,100}""(({user_email}[^"@]{1,2000}@({email_domain}[^"@]{1,2000}))|({user}[^"]{1,2000}))""",
   ]
 }
+}
 ```

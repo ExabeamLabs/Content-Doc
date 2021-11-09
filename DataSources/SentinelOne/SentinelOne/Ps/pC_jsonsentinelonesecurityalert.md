@@ -28,4 +28,5 @@ Name = json-sentinelone-security-alert
   ]
   DupFields = ["file_name->process_name", "file_path->process"]
 }
+}
 ```

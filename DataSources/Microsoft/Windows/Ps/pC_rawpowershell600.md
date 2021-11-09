@@ -17,4 +17,5 @@ Name = raw-powershell-600
     """sourceip="({src_ip}[a-fA-F\d:.]{1,2000})"""
   ]
 }
+}
 ```

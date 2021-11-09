@@ -30,4 +30,5 @@ Name = forcepoint-web-activity-2
     """File_Type="((?i)Unknown|({file_type}[^"]{1,2000}))"""
   ]
 }
+}
 ```

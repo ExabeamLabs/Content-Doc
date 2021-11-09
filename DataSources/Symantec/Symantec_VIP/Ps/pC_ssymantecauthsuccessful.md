@@ -14,4 +14,5 @@ Name = s-symantec-auth-successful
     """for user \[({user}[^\]\s]{1,2000})"""
   ]
 }
+}
 ```

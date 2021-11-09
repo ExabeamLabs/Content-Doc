@@ -21,4 +21,5 @@ Name = s-4688-jp
   ]
   DupFields = [ "directory->process_directory","directory->path" ]
 }
+}
 ```

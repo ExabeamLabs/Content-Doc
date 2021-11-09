@@ -22,4 +22,5 @@ Name = sophos-dlp-alert-1
     """"id":\s{0,100}"({alert_id}[^"]{1,2000})""",
   ]
 }
+}
 ```

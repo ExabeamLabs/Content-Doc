@@ -29,4 +29,5 @@ Name = cef-securesphere-db-alert-1
   ]
   DupFields = [ "alert_name->alert_type" ]
 }
+}
 ```

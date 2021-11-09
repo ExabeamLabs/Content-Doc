@@ -15,4 +15,5 @@ Name = unix-authentication-fail
     """AD authentication for user ({user}[^\s]{1,2000}) failed"""
   ]
 }
+}
 ```

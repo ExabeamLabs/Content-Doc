@@ -27,4 +27,5 @@ Name = cef-skyformation-file-activity
     """owned_by"{1,20}:.+?"login"{1,20}:"{1,20}({target_user}[^\s@"]{1,2000}@[^\s@"]{1,2000})"""
   ]
 }
+}
 ```

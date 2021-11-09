@@ -23,4 +23,5 @@ Name = json-4673
     ]
     DupFields = ["host->dest_host","directory->process_directory"]
   }
+}
 ```

@@ -17,4 +17,5 @@ Name = s-ironport-email-sender
       """(F|f)rom[:'].+?<({sender}[^@>]{1,2000}@[^>]{1,2000})>"""
     ]
   }
+}
 ```

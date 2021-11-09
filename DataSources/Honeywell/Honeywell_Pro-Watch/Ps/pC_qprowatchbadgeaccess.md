@@ -19,4 +19,5 @@ Name = q-prowatch-badge-access
       """\sCARDNO:\s{0,100}"({badge_id}[^"].*?)"\s{0,100}(\w+:|$)""",
     ]
   }
+}
 ```

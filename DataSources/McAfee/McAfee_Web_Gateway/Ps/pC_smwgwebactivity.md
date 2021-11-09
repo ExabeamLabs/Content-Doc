@@ -35,4 +35,5 @@ Name = s-mwg-web-activity
     """\Wbytes_from_client="({bytes_out}\d{1,100})""",
   ]
 }
+}
 ```

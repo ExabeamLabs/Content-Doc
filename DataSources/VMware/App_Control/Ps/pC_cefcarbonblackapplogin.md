@@ -18,4 +18,5 @@ Name = cef-carbonblack-app-login
     """(\||\s)msg=.+from\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
 }
+}
 ```

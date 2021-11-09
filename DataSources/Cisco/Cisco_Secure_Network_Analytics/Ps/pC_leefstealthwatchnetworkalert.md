@@ -22,4 +22,5 @@ Name = leef-stealthwatch-network-alert
     """\Wfullmessage=({additional_info}[^\|]{1,2000}?)\s{0,100}(\||$)"""
   ]
 }
+}
 ```

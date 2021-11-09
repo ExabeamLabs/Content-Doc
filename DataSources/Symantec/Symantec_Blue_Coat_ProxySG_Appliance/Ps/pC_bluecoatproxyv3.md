@@ -27,4 +27,5 @@ Name = bluecoat-proxy-v3
     """latest\(url\)="{0,20}(|({full_url}[^"]{1,2000}))""""
   ]
 }
+}
 ```

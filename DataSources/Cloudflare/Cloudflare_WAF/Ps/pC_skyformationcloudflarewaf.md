@@ -33,4 +33,5 @@ Name = skyformation-cloudflare-waf
     """"SecurityLevel":"({alert_severity}[^"]{1,2000})""",
  ]
 }
+}
 ```

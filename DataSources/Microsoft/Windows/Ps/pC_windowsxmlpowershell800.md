@@ -21,4 +21,5 @@ Name = windows-xml-powershell-800
     ]
     DupFields = ["directory->process_directory"]
 }
+}
 ```

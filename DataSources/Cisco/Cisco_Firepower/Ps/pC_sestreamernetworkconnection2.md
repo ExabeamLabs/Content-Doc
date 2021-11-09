@@ -31,4 +31,5 @@ Name = s-estreamer-network-connection-2
   ]
   DupFields = [ "outcome->action" ]
 }
+}
 ```

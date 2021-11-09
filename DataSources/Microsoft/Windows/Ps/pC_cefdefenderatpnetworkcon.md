@@ -11,4 +11,5 @@ Name = cef-defender-atp-network-con
      """({category}AdvancedHunting-DeviceNetworkEvents)"""
   ]
 }
+}
 ```

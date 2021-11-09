@@ -34,4 +34,5 @@ Name = leef-carbonblack-file-alert
   ]
   DupFields = [ "old_hash->new_hash" ]
 }
+}
 ```

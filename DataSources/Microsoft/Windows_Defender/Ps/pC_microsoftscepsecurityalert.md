@@ -21,4 +21,5 @@ Name = microsoft-scep-security-alert
   ]
   DupFields = ["directory->process_directory"]
 }
+}
 ```

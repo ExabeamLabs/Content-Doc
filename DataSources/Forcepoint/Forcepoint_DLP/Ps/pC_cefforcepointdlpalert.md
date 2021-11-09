@@ -25,4 +25,5 @@ Name = cef-forcepoint-dlp-alert
     """\sact=({outcome}[^\s]{0,2000})"""
   ]
 }
+}
 ```

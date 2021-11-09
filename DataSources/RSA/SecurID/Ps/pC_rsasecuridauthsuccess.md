@@ -17,4 +17,5 @@ Name = rsa-securid-auth-success
     """STATUS="({outcome}[^"]{1,2000})"""
     ]
 }
+}
 ```

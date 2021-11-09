@@ -20,4 +20,5 @@ Name = s-physical-badge-access
       """Location="{1,20}({location_city}[^"]{1,2000})"""
     ]
   }
+}
 ```

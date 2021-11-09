@@ -31,4 +31,5 @@ Name = cef-windows-defender
      
   ]
 }
+}
 ```

@@ -15,4 +15,5 @@ Name = websense-proxy-3
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""
     ]
   }
+}
 ```

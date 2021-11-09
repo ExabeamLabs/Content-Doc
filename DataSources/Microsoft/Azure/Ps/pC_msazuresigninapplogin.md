@@ -29,4 +29,5 @@ Name = ms-azure-signin-app-login
         """"{1,20}result"{1,20}:"{1,20}({outcome}[^"]{1,2000})"{1,20}""",
 	]
 }
+}
 ```

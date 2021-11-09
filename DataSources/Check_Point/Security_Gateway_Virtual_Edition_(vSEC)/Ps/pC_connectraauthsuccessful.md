@@ -24,4 +24,5 @@ Name = connectra-auth-successful
   ]
    DupFields = [ "action->event_name", "account->user" ]
 }
+}
 ```

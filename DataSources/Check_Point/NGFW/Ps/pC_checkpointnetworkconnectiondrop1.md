@@ -30,4 +30,5 @@ Name = checkpoint-network-connection-drop-1
   ]
   DupFields = [ "action->event_name" ]
 }
+}
 ```

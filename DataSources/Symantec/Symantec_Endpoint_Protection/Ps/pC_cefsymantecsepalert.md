@@ -27,4 +27,5 @@ Name = cef-symantec-sep-alert
     """"sender_ip":"({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
   ]
 }
+}
 ```

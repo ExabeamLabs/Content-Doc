@@ -33,4 +33,5 @@ Name = s-carbonblack-process-alert
     """"{1,20}not_blocked_threat_category"{1,20}:\s{0,100}"{1,20}(UNKNOWN|({outcome}[^"]{1,2000}?))"{1,20}""",
     """"{1,20}blocked_threat_category"{1,20}:\s{0,100}"{1,20}(UNKNOWN|({outcome}[^"]{1,2000}?))"{1,20}""",
     """"{1,20}id"{1,20}:\s{0,100}"{1,20}({pid}[^"]{1,2000}?)"{1,20}
+}
 ```

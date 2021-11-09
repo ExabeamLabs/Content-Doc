@@ -19,4 +19,5 @@ Name = cef-ibm-sense
     """dst=({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})\s"""
   ]
 }
+}
 ```

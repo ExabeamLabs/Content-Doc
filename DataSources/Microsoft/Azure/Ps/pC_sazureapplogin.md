@@ -21,4 +21,5 @@ Name = s-azure-app-login
     """"failureReason":\s{0,100}"{0,20}(null|({failure_reason}[^,"]{1,2000}))""",
   ]
 }
+}
 ```

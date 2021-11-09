@@ -10,4 +10,5 @@ Name = pan-azure-auth-successful
   Conditions = [ """,SYSTEM,auth,""", """AUTH_PROFILE_AZURE""", """,saml-signature-validated,""" ]
   Fields = [
     """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]{1,2000})\s{1,100}\d{1,100}
+}
 ```

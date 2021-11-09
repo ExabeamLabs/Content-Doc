@@ -13,4 +13,5 @@ Name = s-juniper-vpn-timeout
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

@@ -12,4 +12,5 @@ Name = s-pan-correlation-alert
     """exabeam_host=({host}[\w\-.]{1,2000})""",
     """\d\d:\d\d:\d\d ({host}[\w\-.]{1,2000})""",
     """,CORRELATION,([^,]{0,2000}
+}
 ```

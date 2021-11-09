@@ -24,4 +24,5 @@ Name = cef-db2-auth-failed
     """({event_code}DB2_AU07)""",
   ]
 }
+}
 ```

@@ -23,4 +23,5 @@ Name = bitglass-failed-login
     """useragent=({user_agent}[^",]{1,2000})"""
 	]
 }
+}
 ```

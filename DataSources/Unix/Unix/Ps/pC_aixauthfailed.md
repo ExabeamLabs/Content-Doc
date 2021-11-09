@@ -14,4 +14,5 @@ Name = aix-auth-failed
     """\suser=({user}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
+}
 ```

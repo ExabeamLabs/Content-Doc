@@ -21,4 +21,5 @@ Name = s-sailpointsiq-sponline-file-operations
   ]
   DupFields = [ "host->dest_ip", "activity->accesses" ]
 }
+}
 ```

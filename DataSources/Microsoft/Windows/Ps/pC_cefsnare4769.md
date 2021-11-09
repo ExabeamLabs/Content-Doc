@@ -22,4 +22,5 @@ Name = cef-snare-4769
       """Ticket_,Options=({ticket_options}[^\s]{1,2000})"""
     ]
   }
+}
 ```

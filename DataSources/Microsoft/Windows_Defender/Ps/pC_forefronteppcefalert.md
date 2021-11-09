@@ -25,4 +25,5 @@ Name = forefront-epp-cef-alert
   ]
   DupFields = ["host->dest_host", "malware_url->process_name"]
 }
+}
 ```

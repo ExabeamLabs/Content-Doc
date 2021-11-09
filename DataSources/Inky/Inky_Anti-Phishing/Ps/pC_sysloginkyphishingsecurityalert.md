@@ -26,4 +26,5 @@ Name = syslog-inky-phishing-security-alert
   ]
   DupFields = ["recipient->user_email"]
 }
+}
 ```

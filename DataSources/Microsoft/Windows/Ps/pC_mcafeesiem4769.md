@@ -22,4 +22,5 @@ Name = mcafee-siem-4769
       """"CommandID":"({result_code}[^"]{1,2000})""",
     ]
   }
+}
 ```

@@ -17,4 +17,5 @@ Name = crowdstrike-host-info
     ]
     DupFields = [ "dest_host->host" ] 
   }
+}
 ```

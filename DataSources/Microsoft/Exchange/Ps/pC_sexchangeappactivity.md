@@ -23,4 +23,5 @@ Name = s-exchange-app-activity
     """\WSuccess="({outcome}[^"]{1,2000})""""
   ]
 }
+}
 ```

@@ -19,4 +19,5 @@ Name = extrahop-4771
     """"event_code":({event_code}\d{1,100})""",
   ]
 }
+}
 ```

@@ -18,4 +18,5 @@ Name = syslog-l7-app-activity-get
     """\srequested ({activity}GET) ({object}.+?)\s{0,100}$""",
   ]
 }
+}
 ```

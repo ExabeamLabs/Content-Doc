@@ -20,4 +20,5 @@ Name = s-rapid7-security-alert
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

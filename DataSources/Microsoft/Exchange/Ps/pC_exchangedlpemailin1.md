@@ -14,4 +14,5 @@ Name = exchange-dlp-email-in-1
   ]
   DupFields = [ "recipient->recipients" ]
 }
+}
 ```

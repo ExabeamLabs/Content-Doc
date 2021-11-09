@@ -21,4 +21,5 @@ Name = cef-carbonblack-alert-2
   ]
   DupFields = ["host->dest_host"]
 }
+}
 ```

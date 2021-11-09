@@ -29,4 +29,5 @@ Name = cef-securesphere-database-operations
     """proto=({protocol}[^\s=]{1,2000}?)\s\w+=""",
     ]
 }
+}
 ```

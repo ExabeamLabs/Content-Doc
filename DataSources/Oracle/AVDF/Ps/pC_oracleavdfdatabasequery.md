@@ -26,6 +26,5 @@ s-oracle-avdf-events = {
       """RECORD_ID="({event_code}[^"]{1,2000})"""",
       """SECURED_TARGET_TYPE="({app}[^"]{1,2000})"""",
       """SERVICE_NAME="(unknown_service|({database_name}[^"]{1,2000}))""""
-    ]
- 
+    ]}
 ```

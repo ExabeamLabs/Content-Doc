@@ -17,4 +17,5 @@ Name = s-ironport-email-av-result-2
       """AV verdict using\s.+?\s({malware_score}[^\s"]{1,2000})"""
     ]
   }
+}
 ```

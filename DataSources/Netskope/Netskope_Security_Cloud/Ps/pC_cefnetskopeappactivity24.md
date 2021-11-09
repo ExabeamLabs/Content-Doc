@@ -6,4 +6,5 @@ Name = cef-netskope-app-activity-24
   Conditions = [ """"type":"""", """destinationServiceName=Netskope""", """"activity":"Disable Strong Authentication"""" ]
   DupFields = [ "activity->accesses", "object->file_name" ]
 }
+}
 ```

@@ -15,4 +15,5 @@ Name = unix-member-added
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

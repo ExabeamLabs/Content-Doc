@@ -27,4 +27,5 @@ Name = checkpoint-network-connection-5
     """(U|u)ser=(-|({user_fullname}[^\(]{1,2000})\s{1,100}\(({user}[^\)]{1,2000}))""",
   ]
 }
+}
 ```

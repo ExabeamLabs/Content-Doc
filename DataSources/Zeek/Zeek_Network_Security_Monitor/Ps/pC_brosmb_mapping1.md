@@ -19,4 +19,5 @@ Name = bro-smb_mapping-1
     """"share_type":"({share_type}[^"]{1,2000})""",
   ]
 }
+}
 ```

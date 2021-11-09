@@ -17,4 +17,5 @@ Name = zscaler-status
      """TotalBytesTx":\s{0,100}({bytes_out}[^,]{1,2000}),""",
      """"PublicIP":\s{0,100}"({src_ip}[^"]{1,2000})""",
      """Hostname"{1,20}:\s{0,100}"{1,20}({host}[^,"]{1,2000})"{0,20}
+}
 ```

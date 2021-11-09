@@ -30,4 +30,5 @@ Name = netskope-dlp-alert
   ]
   DupFields = [ "file_path->file_path_at", "additional_info->shared_with_at" ]
 }
+}
 ```

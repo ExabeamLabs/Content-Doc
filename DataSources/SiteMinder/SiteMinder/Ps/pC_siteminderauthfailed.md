@@ -12,4 +12,5 @@ Name = siteminder-auth-failed
     """({outcome}AuthAttempt) ({host}[\w\-.]{1,2000}) \[({time}\d{1,100}\/\w+\/\d\d\d\d:\d\d:\d\d:\d\d [+-]\d{1,100})\] "({src_ip}[A-Fa-f:\d.]{1,2000}) ({user}[^\s,]{1,2000})" "({app}.+?) \S+ ({resource}[^"\s]{1,2000})""""
   ]
 }
+}
 ```

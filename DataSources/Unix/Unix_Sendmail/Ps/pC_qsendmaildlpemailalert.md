@@ -21,4 +21,5 @@ Name = q-sendmail-dlp-email-alert
     """files:\s{0,100}.*?[\\\/]{0,2000}({attachment}.+?)\s{0,100}\(({bytes_num}[\d\.]{1,2000})\s{0,100}({bytes_unit}[^\s\)]{1,2000})""",
   ]
 }
+}
 ```

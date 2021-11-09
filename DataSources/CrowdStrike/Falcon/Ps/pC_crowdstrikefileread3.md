@@ -20,4 +20,5 @@ Name = crowdstrike-file-read-3
       """"aid":"({aid}[^"]{1,2000})""""
     ]
   }
+}
 ```

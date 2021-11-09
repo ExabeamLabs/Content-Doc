@@ -20,4 +20,5 @@ Name = counteract-nac-logon-successful
     """cs2=({event_name}[^=]{1,2000}?)\s\w+="""
   ]
 }
+}
 ```

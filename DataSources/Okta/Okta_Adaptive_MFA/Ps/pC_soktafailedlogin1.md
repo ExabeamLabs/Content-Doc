@@ -6,4 +6,5 @@ Name = s-okta-failed-login-1
     Conditions = [ """"displayMessage": "Authenticate user via inbound delauth"""", """"result": "FAILURE"""" ]
     DupFields = [ "additional_info->failure_reason" ]
 }
+}
 ```

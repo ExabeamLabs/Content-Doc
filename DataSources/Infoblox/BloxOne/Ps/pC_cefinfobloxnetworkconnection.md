@@ -21,4 +21,5 @@ Name = cef-infoblox-network-connection
     """fqdn=({src_host}[\w\-.]{1,2000})""",
   ]
 }
+}
 ```

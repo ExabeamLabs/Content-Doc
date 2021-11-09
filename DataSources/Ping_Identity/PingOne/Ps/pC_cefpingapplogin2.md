@@ -18,4 +18,5 @@ Name = cef-ping-app-login-2
     """flexString2=({auth_method}.*?)\s\w+="""
   ]
 }
+}
 ```

@@ -25,4 +25,5 @@ Name = cef-azure-process-created
     """"DeviceId":"({device_id}[^"]{1,2000})"""",
   ]
 }
+}
 ```

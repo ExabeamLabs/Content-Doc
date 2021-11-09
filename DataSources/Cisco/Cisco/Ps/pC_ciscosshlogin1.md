@@ -18,4 +18,5 @@ Name = cisco-ssh-login-1
     """({event_code}\S+\d{1,100}-LOGIN_SUCCESS)""",
   ]
 }
+}
 ```

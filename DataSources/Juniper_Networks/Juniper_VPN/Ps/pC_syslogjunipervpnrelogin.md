@@ -16,4 +16,5 @@ Name = syslog-juniper-vpn-relogin
   ]
   DupFields = [ "dest_host->host" ]
 }
+}
 ```

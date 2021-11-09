@@ -20,4 +20,5 @@ Name = cef-salesforce-file-upload
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

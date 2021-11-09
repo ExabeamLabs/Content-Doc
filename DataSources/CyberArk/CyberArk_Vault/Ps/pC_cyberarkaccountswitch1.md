@@ -20,4 +20,5 @@ Name = cyberark-account-switch-1
     """;UsuarioCyberArk="({user}[^\s"]{1,2000})""",
   ]
 }
+}
 ```

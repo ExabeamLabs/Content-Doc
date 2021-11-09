@@ -26,4 +26,5 @@ Name = crowdstrike-process-network
     """"aid":"({aid}[^"]{1,2000})""",
   ]
 }
+}
 ```

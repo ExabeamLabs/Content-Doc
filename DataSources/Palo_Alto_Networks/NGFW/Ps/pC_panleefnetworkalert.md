@@ -19,4 +19,5 @@ Name = pan-leef-network-alert
     """msg="(C|c)lient\s'({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})'""",
   ]
 }
+}
 ```

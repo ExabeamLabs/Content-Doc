@@ -27,4 +27,5 @@ Name = cef-carbonblack-network-connection
   ]
   DupFields = [ "directory->process_directory" ]
 }
+}
 ```

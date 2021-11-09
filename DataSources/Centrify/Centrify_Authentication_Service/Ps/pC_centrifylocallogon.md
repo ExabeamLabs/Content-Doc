@@ -19,4 +19,5 @@ Name = centrify-local-logon
     """server=(({protocol}[^\\\/\s]{1,2000})[\\\/]{1,2000})?({dest_host}[^\\\/\s]{1,2000}?)\s{1,100}(\w+=|$)""",
   ]
 }
+}
 ```

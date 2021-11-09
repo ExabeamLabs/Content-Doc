@@ -17,4 +17,5 @@ Name = cef-juniper-vpn-authfailed
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

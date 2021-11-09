@@ -8,4 +8,5 @@ Name = wazuh-ssh-login
     """sshd\[.+?Accepted ({auth}\S+) for (({domain}[^\\:]{1,2000})\\+)?({user}[\w.'\-\\$]{1,2000})"""
   ]
 }
+}
 ```

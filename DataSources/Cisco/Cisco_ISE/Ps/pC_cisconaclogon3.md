@@ -26,4 +26,5 @@ Name = cisco-nac-logon-3
     """\sAcsSessionID=({session_id}[^,]{1,2000})""",
   ]
 }
+}
 ```

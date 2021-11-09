@@ -20,4 +20,5 @@ Name = cef-unix-auth-failed
     """\WcategoryOutcome=\/?({outcome}.+?)\s{1,100}(\w+=|$)""",
   ]
 }
+}
 ```

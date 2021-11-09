@@ -25,4 +25,5 @@ Name = cef-5140
           """\WfileType=({file_type}\w+)""",
         ]
 }
+}
 ```

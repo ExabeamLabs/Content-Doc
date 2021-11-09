@@ -22,4 +22,5 @@ Name = cef-lyrix-badge-access-1
   ]
   DupFields=[ "user->user_fullname" ]
 }
+}
 ```

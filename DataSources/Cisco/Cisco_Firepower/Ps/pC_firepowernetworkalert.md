@@ -25,4 +25,5 @@ Name = firepower-network-alert
   ]
 DupFields = ["alert_type -> alert_name"]
 }
+}
 ```

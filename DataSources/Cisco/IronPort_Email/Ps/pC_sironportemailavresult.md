@@ -17,4 +17,5 @@ Name = s-ironport-email-av-result
       """ antivirus -[^-]{0,2000}?- Result '({malware_score}.+?)'"""
     ]
   }
+}
 ```

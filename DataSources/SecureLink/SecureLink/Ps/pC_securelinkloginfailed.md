@@ -8,4 +8,5 @@ Name = securelink-login-failed
   """({event_name}Login failed):\s({failure_reason}[^.]{1,2000})""" 
   ]
 }
+}
 ```

@@ -27,4 +27,5 @@ Name = cef-azure-authentication
     """"RemoteDeviceName":"(|({src_host}[\w\-.]{1,2000}))"""",
   ]
 }
+}
 ```

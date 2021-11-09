@@ -21,4 +21,5 @@ Name = cef-rangeraudit-app-activity
     """cluster_name"{0,20}:"({dest_host}[^"]{1,2000})""",
   ]
 }
+}
 ```

@@ -23,4 +23,5 @@ Name = cef-juniper-vpn-close
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

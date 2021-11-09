@@ -30,4 +30,5 @@ Name = cisco-acs-vpn-login-failed
   ]
   DupFields = ["user->account"]
 }
+}
 ```

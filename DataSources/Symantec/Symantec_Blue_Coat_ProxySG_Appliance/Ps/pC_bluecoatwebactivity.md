@@ -31,4 +31,5 @@ Name = bluecoat-web-activity
     """"Destination_Logon_ID":"({app_user}[^"]{1,2000})""",
   ]
 }
+}
 ```

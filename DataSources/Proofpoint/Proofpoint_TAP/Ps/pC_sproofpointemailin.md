@@ -32,4 +32,5 @@ Name = s-proofpoint-email-in
       "sender->external_address",
     ]
   }
+}
 ```

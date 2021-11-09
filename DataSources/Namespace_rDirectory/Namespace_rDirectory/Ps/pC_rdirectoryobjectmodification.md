@@ -20,4 +20,5 @@ Name = rdirectory-object-modification
 	"""rdirectoryModify User:({object}.+?)\s{0,100}\("""
   ]
 }
+}
 ```

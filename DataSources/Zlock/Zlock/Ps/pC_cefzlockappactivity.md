@@ -27,4 +27,5 @@ Name = cef-zlock-app-activity
 	]  
   DupFields = [ "file_name->object" ]
 }
+}
 ```

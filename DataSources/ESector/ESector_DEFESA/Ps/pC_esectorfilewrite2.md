@@ -9,4 +9,5 @@ Name = esector-file-write-2
     """({event_name}ファイルコピー)"""
   ]
 }
+}
 ```

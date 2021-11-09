@@ -23,4 +23,5 @@ Name = q-xgs-network-alert
     """(\||\W)nvpdata=({additional_info}.+?)\s(\w+=|$)"""
   ]
 }
+}
 ```

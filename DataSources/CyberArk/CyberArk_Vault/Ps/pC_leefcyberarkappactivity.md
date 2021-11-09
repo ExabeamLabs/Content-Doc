@@ -25,4 +25,5 @@ Name = leef-cyberark-app-activity
   ]
   DupFields = [ "activity->accesses" ]
 }
+}
 ```

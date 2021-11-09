@@ -22,4 +22,5 @@ Name = mcafee-security-alert-5
   ]
   DupFields = [ "alert_type->threat_category" ]
 }
+}
 ```

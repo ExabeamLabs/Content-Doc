@@ -29,4 +29,5 @@ Name = juniper-firewall-network-connection-create
 	"""service-name="({service}[^"]{0,2000})"""
     ]
 }
+}
 ```

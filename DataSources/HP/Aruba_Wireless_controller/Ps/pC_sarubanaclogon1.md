@@ -18,4 +18,5 @@ Name = s-aruba-nac-logon-1
   ]
   DupFields = [ "host->auth_server" ]
 }
+}
 ```

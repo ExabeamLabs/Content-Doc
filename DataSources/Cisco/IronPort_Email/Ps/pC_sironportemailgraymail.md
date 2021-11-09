@@ -17,4 +17,5 @@ Name = s-ironport-email-graymail
       """GRAYMAIL\s({graymail_score}[^\s"]{1,2000})"""
     ]
   }
+}
 ```

@@ -18,4 +18,5 @@ Name = proofpoint-email-5
       """"routeDirection"{1,20}:\s{0,100}"{1,20}({direction}[^"]{1,2000})""",
       """"msgid"{1,20}:\s{0,100}"{1,20}<?({message_id}[^>"]{1,2000})""",
       """"detectedName"{1,20}:\s{0,100}"{1,20}\s{0,100}({attachment}[^"]{1,2000})"{1,20}
+}
 ```

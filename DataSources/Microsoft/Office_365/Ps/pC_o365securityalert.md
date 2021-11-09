@@ -21,4 +21,5 @@ Name = o365-security-alert
   ]
   DupFields = ["process->process_name"]
 }
+}
 ```

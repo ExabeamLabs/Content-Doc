@@ -20,4 +20,5 @@ Name = s-swipes-badge-access
     ]
     DupFields = ["location_area->location_building"]
   }
+}
 ```

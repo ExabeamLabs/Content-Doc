@@ -22,4 +22,5 @@ Name = centrify-ssh-login-failed
     """reason=({failure_reason}[^=\|]{1,2000}?)(\s{1,100}\w+=|\|)"""
   ]
 }
+}
 ```

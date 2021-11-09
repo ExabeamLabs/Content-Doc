@@ -21,4 +21,5 @@ Name = xml-5141
     """<Data Name='ObjectClass'>(|({object_class}[^<]{1,2000}?))</Data>""",
   ]
 }
+}
 ```

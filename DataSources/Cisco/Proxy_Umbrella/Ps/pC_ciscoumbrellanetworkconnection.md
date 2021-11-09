@@ -20,4 +20,5 @@ Name = cisco-umbrella-network-connection
     """"identity"{1,20}:"{1,20}({dest_host}[^"]{1,2000})"""",
   ]
 }
+}
 ```

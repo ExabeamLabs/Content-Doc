@@ -23,4 +23,5 @@ Name = estreamer-dns-query
       """\sflowStatistics\.bytesSent=({bytes}\d{1,100})""",
     ]
   }
+}
 ```

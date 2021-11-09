@@ -4,14 +4,18 @@ Product: ProxySG
 ----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   6   |   3    |     3      |      1      |    1    |
+|   8   |   3    |     3      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  authentication-failed<br> ↳[proxysg-auth-failed-1](Ps/pC_proxysgauthfailed1.md)<br> ↳[proxysg-auth-failed-2](Ps/pC_proxysgauthfailed2.md)<br> | T1133 - External Remote Services<br>   | [<ul><li>3 Rules</li></ul><ul><li>3 Models</li></ul>](RM/r_m_proxysg_proxysg_Abnormal_Authentication_&_Access.md) |
-|    [Evasion](../../../UseCases/uc_evasion.md)    |  authentication-failed<br> ↳[proxysg-auth-failed-1](Ps/pC_proxysgauthfailed1.md)<br> ↳[proxysg-auth-failed-2](Ps/pC_proxysgauthfailed2.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_proxysg_proxysg_Evasion.md)    |
-|    [Malware](../../../UseCases/uc_malware.md)    |  authentication-failed<br> ↳[proxysg-auth-failed-1](Ps/pC_proxysgauthfailed1.md)<br> ↳[proxysg-auth-failed-2](Ps/pC_proxysgauthfailed2.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_proxysg_proxysg_Malware.md)    |
-|    [Ransomware](../../../UseCases/uc_ransomware.md)    |  authentication-failed<br> ↳[proxysg-auth-failed-1](Ps/pC_proxysgauthfailed1.md)<br> ↳[proxysg-auth-failed-2](Ps/pC_proxysgauthfailed2.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_proxysg_proxysg_Ransomware.md)    |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  failed-app-login<br> ↳[proxysg-auth-failed-1](Ps/pC_proxysgauthfailed1.md)<br> ↳[proxysg-auth-failed-2](Ps/pC_proxysgauthfailed2.md)<br> | T1133 - External Remote Services<br>   | [<ul><li>3 Rules</li></ul><ul><li>3 Models</li></ul>](RM/r_m_proxysg_proxysg_Abnormal_Authentication_&_Access.md) |
+|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  failed-app-login<br> ↳[proxysg-auth-failed-1](Ps/pC_proxysgauthfailed1.md)<br> ↳[proxysg-auth-failed-2](Ps/pC_proxysgauthfailed2.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_proxysg_proxysg_Compromised_Credentials.md)    |
+|    [Data Access](../../../UseCases/uc_data_access.md)    |  failed-app-login<br> ↳[proxysg-auth-failed-1](Ps/pC_proxysgauthfailed1.md)<br> ↳[proxysg-auth-failed-2](Ps/pC_proxysgauthfailed2.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_proxysg_proxysg_Data_Access.md)    |
+|    [Evasion](../../../UseCases/uc_evasion.md)    |  failed-app-login<br> ↳[proxysg-auth-failed-1](Ps/pC_proxysgauthfailed1.md)<br> ↳[proxysg-auth-failed-2](Ps/pC_proxysgauthfailed2.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_proxysg_proxysg_Evasion.md)    |
+|    [Malware](../../../UseCases/uc_malware.md)    |  failed-app-login<br> ↳[proxysg-auth-failed-1](Ps/pC_proxysgauthfailed1.md)<br> ↳[proxysg-auth-failed-2](Ps/pC_proxysgauthfailed2.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_proxysg_proxysg_Malware.md)    |
+|    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  failed-app-login<br> ↳[proxysg-auth-failed-1](Ps/pC_proxysgauthfailed1.md)<br> ↳[proxysg-auth-failed-2](Ps/pC_proxysgauthfailed2.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_proxysg_proxysg_Privilege_Abuse.md)    |
+|    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  failed-app-login<br> ↳[proxysg-auth-failed-1](Ps/pC_proxysgauthfailed1.md)<br> ↳[proxysg-auth-failed-2](Ps/pC_proxysgauthfailed2.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_proxysg_proxysg_Privileged_Activity.md)    |
+|    [Ransomware](../../../UseCases/uc_ransomware.md)    |  failed-app-login<br> ↳[proxysg-auth-failed-1](Ps/pC_proxysgauthfailed1.md)<br> ↳[proxysg-auth-failed-2](Ps/pC_proxysgauthfailed2.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_proxysg_proxysg_Ransomware.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

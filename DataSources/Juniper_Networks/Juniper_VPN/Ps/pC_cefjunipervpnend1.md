@@ -19,4 +19,5 @@ Name = cef-juniper-vpn-end-1
     """\Wmsg=({additional_info}.+?)\s{1,100}end=""",
   ]
 }
+}
 ```

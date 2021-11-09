@@ -16,4 +16,5 @@ Name = kiteworks-account-lockout-1
     """Activity:\s({additional_info}User account locked)""",
   ]
 }
+}
 ```

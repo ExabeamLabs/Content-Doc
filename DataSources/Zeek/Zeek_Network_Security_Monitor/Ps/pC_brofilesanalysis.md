@@ -26,4 +26,5 @@ Name = bro-files-analysis
     """"filename":"({file_name}[^"]{1,2000}?(\.({file_ext}\w+))?)"""",
   ]
 }
+}
 ```

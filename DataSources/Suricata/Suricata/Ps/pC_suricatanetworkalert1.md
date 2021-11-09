@@ -37,4 +37,5 @@ Name = suricata-network-alert-1
     """"{1,20}action"{1,20}:\s{0,100}"{1,20}({action}[^"]{1,2000})"""
  ]
 }
+}
 ```

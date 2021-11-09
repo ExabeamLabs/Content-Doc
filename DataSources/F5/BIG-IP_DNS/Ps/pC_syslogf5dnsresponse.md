@@ -20,4 +20,5 @@ Name = syslog-f5-dns-response
   ]
   DupFields = ["src_ip->host", "src_host->host"]
 }
+}
 ```

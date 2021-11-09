@@ -27,4 +27,5 @@ Name = cef-trendmicro-security-alert-1
     """CEF:(?:[^\|]{0,2000}\|){5}({alert_name}[^\|]{1,2000})\|(Unknown|({alert_severity}[^\|]{1,2000}))\|\w+="""
   ]
 }
+}
 ```

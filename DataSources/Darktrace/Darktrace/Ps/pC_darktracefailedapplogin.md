@@ -19,4 +19,5 @@ Name = darktrace-failed-app-login
    """"{1,20}description"{1,20}:"{1,20}({additional_info}[^"]{1,2000})"""
    ]
 }
+}
 ```

@@ -24,4 +24,5 @@ Name = cef-guardium-db-alert-1
      """AlertDetails=(\s{1,100}|({db_query}[^$]{1,2000}?))(?:\s{0,100}\w+=|\s{0,100}$)"""
   ]
 }
+}
 ```

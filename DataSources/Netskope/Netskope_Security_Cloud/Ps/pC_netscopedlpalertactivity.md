@@ -37,4 +37,5 @@ Name = netscope-dlp-alert-activity
       """"site"{1,20}:"{1,20}({site_at}[^"]{1,2000})""""
     ]
 }
+}
 ```

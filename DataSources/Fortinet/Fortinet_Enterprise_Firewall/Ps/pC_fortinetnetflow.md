@@ -28,4 +28,5 @@ Name = fortinet-netflow
      """"src_hostname":"({src_host}[^"]{1,2000})""",
   ]
 }
+}
 ```

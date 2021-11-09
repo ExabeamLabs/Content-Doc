@@ -24,4 +24,5 @@ Name = cyberark-password-change
   ]
   DupFields=[ "host->dest_host" ]
 }
+}
 ```

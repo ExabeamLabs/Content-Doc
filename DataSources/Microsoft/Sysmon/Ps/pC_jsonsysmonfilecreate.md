@@ -22,4 +22,5 @@ Name = json-sysmon-file-create
     """EventID":({event_code}\d{1,100})""",
   ]
 }
+}
 ```

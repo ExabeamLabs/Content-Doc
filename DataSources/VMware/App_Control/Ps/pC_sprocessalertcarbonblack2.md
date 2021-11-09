@@ -23,4 +23,5 @@ Name = s-process-alert-carbonblack-2
     """process_name='({process_name}[^']{1,2000})'""",
   ]
 }
+}
 ```

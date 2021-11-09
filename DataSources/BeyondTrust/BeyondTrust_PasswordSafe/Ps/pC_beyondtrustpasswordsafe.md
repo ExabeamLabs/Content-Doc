@@ -19,4 +19,5 @@ Name = beyondtrust-passwordsafe
     """Agent ID:\s{0,100}({event_code}PBPS)"""
   ]
 }
+}
 ```

@@ -24,4 +24,5 @@ Name = bro-share-access
     """"size\\?"{1,20}:({bytes}\d{1,100})""",
   ]
 }
+}
 ```

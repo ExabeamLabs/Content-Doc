@@ -19,4 +19,5 @@ Name = entrust-identityguard-auth-successful
     """({additional_info}Token Used: [^,]{1,2000})""",
   ]
 }
+}
 ```

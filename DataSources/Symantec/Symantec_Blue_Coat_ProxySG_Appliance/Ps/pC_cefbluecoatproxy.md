@@ -36,4 +36,5 @@ Name = cef-bluecoat-proxy
   ]
   DupFields = [ "user->orig_user" ]
 }
+}
 ```

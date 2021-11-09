@@ -21,4 +21,5 @@ Name = websense-dlp-email-alert-in
   ]
   DupFields = [ "sender->user" ]
 }
+}
 ```

@@ -20,4 +20,5 @@ Name = n-forwarded-cef-4769
       """suser=({user}[^\s]{1,2000})"""
     ]
   }
+}
 ```

@@ -22,4 +22,5 @@ Name = netwrix-file-activity
     """Workstation\s{0,100}:\s{0,100}(|({src_ip}[A-Fa-f:\d.]{1,2000}))\s{0,100}Details\s{0,100}:""",
   ]
 }
+}
 ```

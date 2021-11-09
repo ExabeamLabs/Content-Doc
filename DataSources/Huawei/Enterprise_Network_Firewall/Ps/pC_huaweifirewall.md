@@ -20,4 +20,5 @@ Name = huawei-firewall
     """rule-name=({rule}[^.]{1,2000})"""
   ]
 }
+}
 ```

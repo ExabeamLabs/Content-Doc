@@ -19,4 +19,5 @@ Name = vmware-esxi-login
   ]
   DupFields = [ "event_name->activity", "host->dest_host" ]
 }
+}
 ```

@@ -18,4 +18,5 @@ Name = crowdstrike-security-alert-4
     ]
     DupFields = [ "alert_name->alert_type","alert_name->event_code" ]
   }
+}
 ```

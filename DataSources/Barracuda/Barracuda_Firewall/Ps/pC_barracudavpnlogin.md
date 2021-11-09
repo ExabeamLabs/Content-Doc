@@ -19,4 +19,5 @@ Name = barracuda-vpn-login
   ]
   DupFields = ["user->account"]
 }
+}
 ```

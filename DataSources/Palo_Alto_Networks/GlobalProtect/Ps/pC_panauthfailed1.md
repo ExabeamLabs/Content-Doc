@@ -10,4 +10,5 @@ Name = pan-auth-failed-1
   Conditions = [ """,SYSTEM,auth,""", """,auth-fail,""" ]
   Fields = [
     """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]{1,2000})\s{1,100}\d{1,100}
+}
 ```

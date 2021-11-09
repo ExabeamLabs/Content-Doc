@@ -23,4 +23,5 @@ Name = syslog-cisco-wsa-web-activity
     """\Wuserag\s{0,100}"{0,20}(?:[\s-]|({user_agent}[^"]{1,2000}))""",
   ]
 }
+}
 ```

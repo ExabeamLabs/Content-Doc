@@ -26,4 +26,5 @@ Name = s-digitalguardian-file-read
     """Email_Address="({user_email}[^@]{1,2000}@[^.]{1,2000}\.[^"]{1,2000})""""
   ]
 }
+}
 ```

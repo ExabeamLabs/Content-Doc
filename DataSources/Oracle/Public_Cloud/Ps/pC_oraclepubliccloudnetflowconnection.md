@@ -20,4 +20,5 @@ Name = oracle-public-cloud-netflow-connection
     """"protocolName":"({protocol}[^"]{1,2000})"""",
 ]
 }
+}
 ```

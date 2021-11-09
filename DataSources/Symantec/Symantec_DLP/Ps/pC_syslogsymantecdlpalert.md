@@ -65,6 +65,5 @@ syslog-symantec-dlp-alert = {
       """\sseverity=({alert_severity}[^,]{1,2000}?)\s{0,100}(,|$)""",
       """\sEvent_Description="({additional_info}[^"]{1,2000})""",
       """\sdest_port=({dest_port}\d{1,100})""", 
-    ]
- 
+    ]}
 ```

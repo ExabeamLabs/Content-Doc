@@ -21,4 +21,5 @@ Name = n-forwarded-cef-damballa-alert
     """\snitroURL=({additional_info}.+?)\s{1,100}\w+="""
   ]
 }
+}
 ```

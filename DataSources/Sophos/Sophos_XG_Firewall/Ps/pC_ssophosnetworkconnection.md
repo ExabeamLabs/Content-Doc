@@ -38,4 +38,5 @@ Name = s-sophos-network-connection
   ]
   DupFields = [ "action->outcome" ]
 }
+}
 ```

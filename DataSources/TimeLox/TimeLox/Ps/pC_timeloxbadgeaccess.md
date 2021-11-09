@@ -22,4 +22,5 @@ Name = timelox-badge-access
       """"user group":"({user_group}[^"]{1,2000})"""
     ]
   }
+}
 ```

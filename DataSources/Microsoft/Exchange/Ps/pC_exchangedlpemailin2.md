@@ -11,4 +11,5 @@ Name = exchange-dlp-email-in-2
   Fields = [
     """,({time}\d\d\d\d-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d{1,100})""",
     """\d{1,100}:\d{1,100}\.\d{1,100}Z,[A-Fa-f:\d.]{1,2000}
+}
 ```

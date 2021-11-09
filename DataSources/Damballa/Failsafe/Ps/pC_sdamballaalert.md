@@ -22,4 +22,5 @@ Name = s-damballa-alert
     """\|src=({src_ip}[^\|]{1,2000})"""
   ]
 }
+}
 ```

@@ -20,4 +20,5 @@ Name = tanium-process-created
       """\sProcess-Path="(-|({process}({directory}[^"]{0,2000}?[\\\/]{1,2000})?({process_name}[^"\\\/]{1,2000})))"""",
     ]
   }
+}
 ```

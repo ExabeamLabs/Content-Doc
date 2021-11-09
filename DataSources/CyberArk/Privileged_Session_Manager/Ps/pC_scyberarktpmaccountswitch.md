@@ -18,4 +18,5 @@ Name = s-cyberark-tpm-account-switch
     ]
     DupFields = [ "host->dest_host" ]
 }
+}
 ```

@@ -20,4 +20,5 @@ Name = leef-digitalguardian-process-created
   ]
   DupFields = [ "directory->process_directory" ]
 }
+}
 ```

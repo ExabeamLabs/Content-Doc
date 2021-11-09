@@ -25,4 +25,5 @@ Name = leef-securesphere-db-alert
   ]
   DupFields = [ "alert_type->alert_name" ]
 }
+}
 ```

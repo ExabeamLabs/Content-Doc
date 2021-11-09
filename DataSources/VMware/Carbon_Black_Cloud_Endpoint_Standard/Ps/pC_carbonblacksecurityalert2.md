@@ -28,4 +28,5 @@ Name = carbonblack-security-alert-2
     """deviceId\\"{1,20}:({sensor_id}[^,]{1,2000})"""
   ]
 }
+}
 ```

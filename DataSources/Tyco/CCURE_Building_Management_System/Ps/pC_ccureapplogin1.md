@@ -13,4 +13,5 @@ Name = ccure-app-login-1
     """"messageutc":"({time}[^"]{1,2000})""",
     """"statecode":"({event_name}[^"]{1,2000})""",
     """"primaryobjectname":"{0,20}(null|({last_name}[^",]{1,2000}?)\s{0,100}
+}
 ```

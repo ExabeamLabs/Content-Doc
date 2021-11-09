@@ -16,4 +16,5 @@ Name = syslog-microsoft-dhcp
   ]
   DupFields = [ "dest_host->user" ]
 }
+}
 ```

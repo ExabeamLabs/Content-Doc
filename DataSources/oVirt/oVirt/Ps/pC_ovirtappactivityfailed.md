@@ -17,4 +17,5 @@ Name = ovirt-app-activity-failed
     """({app}ovirt)"""
   ]
 }
+}
 ```

@@ -25,4 +25,5 @@ Name = leef-lastline-security-alert
   ]
   DupFields = [ "user_email->recipient" , "host->dest_host", "sender->target"]
 }
+}
 ```

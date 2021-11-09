@@ -11,4 +11,5 @@ Name = sentinelone-dns-response
   ]
   DupFields = ["host->dest_host"]
 }
+}
 ```

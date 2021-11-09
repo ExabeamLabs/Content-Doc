@@ -18,4 +18,5 @@ Name = cef-mimecast-failed-app-login
     """"user":"({user_email}[^"]{1,2000})"""
   ]
 }
+}
 ```

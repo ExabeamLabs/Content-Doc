@@ -17,4 +17,5 @@ Name = u-google-auth-failed
     """"events"\s{0,100}:.*?"name"\s{0,100}:\s{0,100}"login_failure_type",\s{0,100}"value"\s{0,100}:\s{0,100}"({failure_reason}[^"]{1,2000})"""",
   ]
 }
+}
 ```

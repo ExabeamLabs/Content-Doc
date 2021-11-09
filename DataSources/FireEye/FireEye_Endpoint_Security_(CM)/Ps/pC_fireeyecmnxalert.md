@@ -23,4 +23,5 @@ Name = fireeyecm-nx-alert
     """"srcPort":"({src_port}\d{1,100})""",
   ]
 }
+}
 ```

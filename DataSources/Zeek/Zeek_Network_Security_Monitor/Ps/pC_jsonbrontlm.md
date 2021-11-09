@@ -22,4 +22,5 @@ Name = json-bro-ntlm
     """"success\\?"{1,20}:({outcome}\w+)"""
   ]
 }
+}
 ```

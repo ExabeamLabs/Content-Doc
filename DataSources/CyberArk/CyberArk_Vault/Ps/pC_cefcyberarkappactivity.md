@@ -26,4 +26,5 @@ Name = cef-cyberark-app-activity
   ]
   DupFields=[ "file_name->object", "file_path->additional_info", "activity->accesses" ]
 }
+}
 ```

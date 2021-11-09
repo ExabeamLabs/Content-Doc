@@ -36,6 +36,5 @@ cef-unix-template-1 = {
       """\sduser=(\(unknown\)|({user}.+?))\s{1,100}\w+=""",
       """dhost=({dest_host}[^\s]{1,2000})""",
       """shost=({src_host}[^\s]{1,2000})"""
-      ]
-}
+      ]}
 ```

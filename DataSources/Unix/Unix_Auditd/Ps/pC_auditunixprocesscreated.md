@@ -20,4 +20,5 @@ Name = audit-unix-process-created
     """res=({outcome}[^\s'"]{1,2000})"""
   ]
 }
+}
 ```

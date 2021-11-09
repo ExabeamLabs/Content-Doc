@@ -22,4 +22,5 @@ Name = cef-honeywell-physical-badge-access
   ]
     DupFields = ["user_id->badge_id"]
 }
+}
 ```

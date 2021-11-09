@@ -31,4 +31,5 @@ Name = cef-okta-logs-app-alert
     """"country":"({location_country}[^"]{1,2000})""",
   ]
 }
+}
 ```

@@ -33,4 +33,5 @@ Name = cef-mcafee-dlp-prevent
     ]
     DupFields = [ "sender->user_email", "recipient->external_address" ]
   }
+}
 ```

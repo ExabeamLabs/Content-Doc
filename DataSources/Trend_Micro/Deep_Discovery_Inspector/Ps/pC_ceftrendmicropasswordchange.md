@@ -17,4 +17,5 @@ Name = cef-trendmicro-password-change
     """\Wsrc=({src_ip}[a-fA-F\d.:]{1,2000})""",
   ]
 }
+}
 ```

@@ -18,4 +18,5 @@ Name = dhcpd-dhcpack-logon
   ]
   DupFields = [ "dest_host->user" ]
 }
+}
 ```

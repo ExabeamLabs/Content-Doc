@@ -23,4 +23,5 @@ Name = checkpoint-vpn-logout
   ]
   DupFields = [ "action->event_name" ]
 }
+}
 ```

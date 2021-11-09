@@ -17,4 +17,5 @@ Name = s-ironport-email-bytes
       """({bytes}\d{1,100}) bytes from <({sender}[^@>]{1,2000}@[^>]{1,2000})>"""
     ]
   }
+}
 ```

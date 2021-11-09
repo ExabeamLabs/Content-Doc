@@ -11,4 +11,5 @@ Name = sentinelone-task-register
   ]
   DupFields = ["host->dest_host"]
 }
+}
 ```

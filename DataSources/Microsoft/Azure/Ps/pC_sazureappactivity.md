@@ -14,4 +14,5 @@ Name = s-azure-app-activity
     """"httpRequest":\s{0,100}\{[^\}]{0,2000}?"clientIpAddress":\s{0,100}"({src_ip}[a-fA-F\d.:]{1,2000})""",
   ]
 }
+}
 ```

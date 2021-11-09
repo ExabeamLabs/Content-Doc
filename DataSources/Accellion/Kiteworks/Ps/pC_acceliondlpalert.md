@@ -29,4 +29,5 @@ Name = accelion-dlp-alert
     """, mail_status=({outcome}[^,]{1,2000})""",
   ]
 }
+}
 ```

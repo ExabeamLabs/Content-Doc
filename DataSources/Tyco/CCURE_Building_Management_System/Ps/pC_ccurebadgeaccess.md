@@ -14,4 +14,5 @@ Name = ccure-badge-access
     """"statecode":"({event_name}[^"]{1,2000})""",
     """"messagetype":"({outcome}[^"]{1,2000})""",
     """"primaryobjectname":"{0,20}(null|({last_name}[^",]{1,2000}?)\s{0,100}
+}
 ```

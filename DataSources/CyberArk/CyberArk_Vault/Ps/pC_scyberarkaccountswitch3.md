@@ -9,4 +9,5 @@ Name = s-cyberark-account-switch-3
     """Retrieve password\|([^\|]{1,2000}\|){1}({src_ip}[A-Za-z0-9.:]{1,2000})""",
     ]
  }
+}
 ```

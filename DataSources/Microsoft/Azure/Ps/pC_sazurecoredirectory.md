@@ -18,4 +18,5 @@ Name = s-azure-core-directory
       """initiatedBy.+?"user".+?"id"{1,20}:\s{0,100}"{1,20}({user}[^"]{1,2000})""""
       """initiatedBy.+?"user".+?"userPrincipalName"{1,20}:\s{0,100}"{1,20}({user_email}[^"@]{1,2000}@[^"]{1,2000})""""
       """additionalDetails.+?User-Agent"{1,20}
+}
 ```

@@ -20,4 +20,5 @@ Name = s-xml-4771
     """({event_name}Kerberos pre-authentication failed)""",
   ]
 }
+}
 ```

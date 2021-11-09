@@ -19,4 +19,5 @@ Name = nnt-ct-app-login
     """({auth_type}AD)"""
   ]
 }
+}
 ```

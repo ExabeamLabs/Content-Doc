@@ -15,4 +15,5 @@ Name = wazuh-unix-su
   ]
   DupFields=["host->dest_host", "description->event_name"]
 }
+}
 ```

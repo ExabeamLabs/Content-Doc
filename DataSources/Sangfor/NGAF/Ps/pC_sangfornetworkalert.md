@@ -24,4 +24,5 @@ Name = sangfor-network-alert
     """, action:\s{0,100}({outcome}[^,\s]{1,2000})""",
   ]
 }
+}
 ```

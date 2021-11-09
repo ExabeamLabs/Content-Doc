@@ -24,4 +24,5 @@ Name = cef-cyberark-account-switch
     """\sdhost=({dest_host}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
+}
 ```

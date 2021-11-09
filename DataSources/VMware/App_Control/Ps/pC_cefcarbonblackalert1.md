@@ -28,4 +28,5 @@ Name = cef-carbonblack-alert-1
       ProjectName = "SOC"
       EntityFields = [
         {EntityType="device", Name="src_address", Fields=["src_host->host_name"]}
+}
 ```

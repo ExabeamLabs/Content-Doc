@@ -25,4 +25,5 @@ Name = cef-fsecure-security-alert
     """(\s|\|)msg=({additional_info}[^\s].+?)\s{1,100}(\w+=|$)"""
   ]
 }
+}
 ```

@@ -39,4 +39,5 @@ Name = trendmicro-cef-alert
   ]
   DupFields = [ "attachment->file_name" ]
 }
+}
 ```

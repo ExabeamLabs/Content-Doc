@@ -26,4 +26,5 @@ Name = exalms-552
     """"(param6|Target Domain)"\s{0,100}:\s{0,100}"(-|({account_domain}.+?))\s{0,100}"""",
     """"(param3|Logon ID|logon_id)"\s{0,100}:\s{0,100}"(-|({logon_id}.+?))\s{0,100}"""",
     """"(param3|Logon ID|logon_id)"\s{0,100}:\s{0,100}"\(([\dxA-F]{1,2000}
+}
 ```

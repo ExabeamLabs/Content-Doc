@@ -11,4 +11,5 @@ Name = symantec-network-connection-1
   Fields = [
     """({direction}Inbound|Outbound),Begin:\s{1,100}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\+\d{1,100}:\d{1,100}
+}
 ```

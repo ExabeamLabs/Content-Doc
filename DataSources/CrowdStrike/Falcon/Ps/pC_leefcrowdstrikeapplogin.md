@@ -19,4 +19,5 @@ Name = leef-crowdstrike-app-login
   ]
   DupFields = ["domain->email_domain"]
 }
+}
 ```

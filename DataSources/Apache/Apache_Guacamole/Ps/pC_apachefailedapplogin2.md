@@ -17,4 +17,5 @@ Name = apache-failed-app-login-2
     """({outcome}failed):\s({failure_reason}Too many failed logins)"""
     ]
 }
+}
 ```

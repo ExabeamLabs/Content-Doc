@@ -21,4 +21,5 @@ Name = raw-unix-process-created
   ]
   DupFields = [ "process_directory->directory","host->dest_host" ]
 }
+}
 ```

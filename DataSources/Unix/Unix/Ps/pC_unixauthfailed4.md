@@ -14,4 +14,5 @@ Name = unix-auth-failed-4
     """expired password for user ({account}.+?) \(({failure_reason}.+?)\)""",
   ]
 }
+}
 ```

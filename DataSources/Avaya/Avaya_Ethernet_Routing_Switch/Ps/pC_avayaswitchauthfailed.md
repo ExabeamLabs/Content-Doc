@@ -15,4 +15,5 @@ Name = avaya-switch-auth-failed
       """IP address:\s{1,100}({src_ip}[a-fA-F\d.:]{1,2000})""",
     ]
   }
+}
 ```

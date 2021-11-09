@@ -29,4 +29,5 @@ Name = cef-syslog-guardium-db-alert-1
   ]
   DupFields = [ "db_user->account" ]
 }
+}
 ```

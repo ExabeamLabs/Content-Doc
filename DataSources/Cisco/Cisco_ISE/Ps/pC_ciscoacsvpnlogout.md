@@ -24,4 +24,5 @@ Name = cisco-acs-vpn-logout
     """Acct-Terminate-Cause=({additional_info}.*?),\sNAS-Port""",
   ]
 }
+}
 ```

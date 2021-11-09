@@ -21,4 +21,5 @@ Name = gm-print-activity
    """job_lab_ntusermachine"{1,20}:"{1,20}(?:Unspecified|({src_host}[^"]{1,2000}))""",
  ]
 }
+}
 ```

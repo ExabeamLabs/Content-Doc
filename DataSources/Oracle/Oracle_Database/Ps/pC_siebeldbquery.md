@@ -22,4 +22,5 @@ Name = siebel-db-query
     ]
     DupFields = [ "db_user->account", "database_id->database_name" ]
 }
+}
 ```

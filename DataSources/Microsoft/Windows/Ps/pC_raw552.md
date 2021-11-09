@@ -29,4 +29,5 @@ Name = raw-552
       """Source Network Address:\s{1,100}(?:-|({src_ip}[a-fA-F:\d.]{1,2000}))"""
     ]
   }
+}
 ```

@@ -16,4 +16,5 @@ Name = spanish-raw-4688
    """Nombre del nuevo proceso:\s{0,100}(?:|({process}({directory}(?:[^"]{1,2000})?[\\\/])?({process_name}[^\\\/\s]{1,2000})))\s{1,100}Tipo de elevación de token:""",
   ]
 }
+}
 ```

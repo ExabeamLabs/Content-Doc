@@ -13,4 +13,5 @@ Name = pfsense-network-connection-failed
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """filterlog:(?:[^,]{0,2000}
+}
 ```

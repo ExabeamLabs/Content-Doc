@@ -23,4 +23,5 @@ Name = cyberark-process-alert
     ]
     DupFields = ["host->dest_host","file_name->process_name","file_path->path"]
   }
+}
 ```

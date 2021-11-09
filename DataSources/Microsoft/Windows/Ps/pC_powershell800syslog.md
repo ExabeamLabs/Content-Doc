@@ -19,4 +19,5 @@ Name = powershell-800-syslog
     """({event_code}800)"""
   ]
 }
+}
 ```

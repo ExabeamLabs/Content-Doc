@@ -37,4 +37,5 @@ Name = syslog-juniper-vpn-realm-1
   ]
   DupFields = [ "dest_ip->host" , "user->account"]
 }
+}
 ```

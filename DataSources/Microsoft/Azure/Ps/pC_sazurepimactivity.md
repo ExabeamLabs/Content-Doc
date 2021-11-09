@@ -23,4 +23,5 @@ Name = s-azure-pim-activity
     """"result": "({outcome}[^"]{1,2000})", "resultReason""""
  ]
 }
+}
 ```

@@ -28,4 +28,5 @@ Name = cef-okta-app-login-1
     """requestClientApplication=({app}[^=]{1,2000}?)\s{0,100}\w+=""",
     """"type":"AppInstance"[^\}\]]{0,2000}"displayName":"({app}[^"]{1,2000}?)\s{0,100}"""",
     """request"{1,20}:[^\]]{0,2000}?"{1,20}type"{1,20}:"{1,20}User"{1,20}
+}
 ```

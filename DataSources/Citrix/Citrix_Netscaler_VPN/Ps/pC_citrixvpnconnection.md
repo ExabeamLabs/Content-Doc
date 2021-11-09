@@ -28,4 +28,5 @@ Name = citrix-vpn-connection
       """\sGroup\(s\)\s{0,100}("|&quot;)({access_group}[^"]{1,2000}?)(&quot;|")"""
     ]
 }
+}
 ```

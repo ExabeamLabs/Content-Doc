@@ -25,4 +25,5 @@ Name = cef-onedrive-file-activity
     """\Wmsg=[^=]{0,2000}?\swas ({accesses}[^=]{1,2000}?) by"""
   ]
 }
+}
 ```

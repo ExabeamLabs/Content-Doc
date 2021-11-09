@@ -22,4 +22,5 @@ Name = centrify-auth-denied
 
   ]
 }
+}
 ```

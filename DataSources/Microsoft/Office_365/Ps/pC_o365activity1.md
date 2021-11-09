@@ -21,4 +21,5 @@ Name = o365-activity-1
   ]
   DupFields = [ "result->outcome" ]
 }
+}
 ```

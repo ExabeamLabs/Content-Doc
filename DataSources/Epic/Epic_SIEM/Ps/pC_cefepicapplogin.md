@@ -21,4 +21,5 @@ Name = cef-epic-app-login
     """USERJOB=(|({resource}.+?))\s{1,100}(\w+=|$)""",
   ]
 }
+}
 ```

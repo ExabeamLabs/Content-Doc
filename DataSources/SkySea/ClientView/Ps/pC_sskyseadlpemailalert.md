@@ -10,4 +10,5 @@ Name = s-skysea-dlp-email-alert
   Conditions = [ """,メール,""" ]
   Fields = [
     """({host}[\w\-.]{1,2000}),\d{1,100}
+}
 ```

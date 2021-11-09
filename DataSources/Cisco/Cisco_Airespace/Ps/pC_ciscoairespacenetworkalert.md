@@ -24,4 +24,5 @@ Name = cisco-airespace-network-alert
     """dvc=({host_ip}[a-fA-F:\d.]{1,2000})"""
   ] 
 }
+}
 ```

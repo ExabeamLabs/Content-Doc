@@ -15,4 +15,5 @@ Name = pmp-password-change
     """\sSuccess\s[^\s]{1,2000}\s{1,100}({safe_value}[^:]{1,2000}):({target_user}[^:]{1,2000}):""",
   ]
 }
+}
 ```

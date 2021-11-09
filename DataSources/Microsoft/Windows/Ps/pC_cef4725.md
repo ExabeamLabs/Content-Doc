@@ -24,4 +24,5 @@ Name = cef-4725
       """Security_,ID=({target_user_sid}[^\s]{1,2000})"""
     ]
   }
+}
 ```

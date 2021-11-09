@@ -30,4 +30,5 @@ Name = s-xml-1102
     """ThreadID(\\)?='({thread_id}\d{1,100})"""
   ]
 }
+}
 ```

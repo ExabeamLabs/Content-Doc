@@ -7,4 +7,5 @@ Name = carbonblack-edr-crossproc
   Fields = ${CarbonBlackParserTemplates.carbonblack-edr.Fields} [
   ]
 }
+}
 ```

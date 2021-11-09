@@ -15,4 +15,5 @@ Name = zebra-wlm-ssh-failed
   ]
   DupFields = ["host->dest_host"]
 }
+}
 ```

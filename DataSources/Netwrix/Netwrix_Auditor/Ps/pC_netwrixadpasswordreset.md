@@ -9,4 +9,5 @@ Name = netwrix-ad-password-reset
     """cat=user.+?filePath=\\*?([^\\]{1,2000}\\+)*?({target_user}[^\\]{1,2000}) start=""",
   ]
 }
+}
 ```

@@ -18,4 +18,5 @@ Name = pro-file-object
   ]
   DupFields = ["host->dest_host"]
 }
+}
 ```

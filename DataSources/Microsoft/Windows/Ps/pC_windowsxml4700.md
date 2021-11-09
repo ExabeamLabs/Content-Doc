@@ -20,4 +20,5 @@ Name = windows-xml-4700
     """<Data Name='TaskContent'>({additional_info}[^<]{1,2000})<"""
   ]
 }
+}
 ```

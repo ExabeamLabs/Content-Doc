@@ -22,4 +22,5 @@ Name = cef-epic-failed-app-login
     """LOGINERROR=({failure_reason}.+?)\s{1,100}(\w+=|$)""",
   ]
 }
+}
 ```

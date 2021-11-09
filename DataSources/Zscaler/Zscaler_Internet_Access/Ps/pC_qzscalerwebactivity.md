@@ -34,4 +34,5 @@ Name = q-zscaler-web-activity
     """riskscore=({risk_level}\d{1,100})""",
    ]
 }
+}
 ```

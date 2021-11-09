@@ -13,4 +13,5 @@ Name = cc-carbonblack-process-alert-1
     """"eventTime"{1,20}:\s{0,100}({time}\d{1,100})""",
     """deviceName"{1,20}:\s{0,100}"{1,20}({dest_host}[^"]{1,2000})""",
     """"email"{1,20}:\s{0,100}"{1,20}({user_email}[^@"]{1,2000}@[^"]{1,2000})"{1,20}
+}
 ```

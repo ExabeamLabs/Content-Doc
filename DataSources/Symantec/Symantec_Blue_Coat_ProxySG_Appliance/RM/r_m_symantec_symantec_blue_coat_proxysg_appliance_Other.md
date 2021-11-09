@@ -5,8 +5,6 @@ Vendor: Symantec
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  10   |   2    |     0      |      3      |    3    |
+|   6   |   0    |     0      |      2      |    2    |
 
-| Event Type                | Rules | Models                                                                                                                                                |
-| ------------------------- | ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| network-connection-failed |       |  • <b>A-NET-OdPort-Outbound</b>: Outbound destination ports per organization<br> • <b>A-NET-HdPort-Outbound</b>: Outbound destination ports per asset |
+| Event Type | Rules | Models || ---------- | ----- | ------ |

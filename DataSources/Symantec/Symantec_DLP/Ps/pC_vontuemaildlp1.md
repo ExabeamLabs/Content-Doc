@@ -21,4 +21,5 @@ Name = vontu-email-dlp-1
     ]
     DupFields = [ "protocol->alert_type" ]
   }
+}
 ```

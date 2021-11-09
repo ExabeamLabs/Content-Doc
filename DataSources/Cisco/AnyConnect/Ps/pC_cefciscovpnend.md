@@ -18,4 +18,5 @@ Name = cef-cisco-vpn-end
     """\sdvchost=({host}[^\s]{1,2000})"""
   ]
 }
+}
 ```

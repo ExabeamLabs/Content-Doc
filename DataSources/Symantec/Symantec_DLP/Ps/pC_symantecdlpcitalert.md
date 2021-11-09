@@ -26,4 +26,5 @@ Name = symantec-dlp-cit-alert
     ]
     DupFields = [ "alert_type->alert_name" , "recipient->external_address" ]
   }
+}
 ```

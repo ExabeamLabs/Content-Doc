@@ -21,4 +21,5 @@ Name = symantec-epp-alert
          """Sensitivity:\s({alert_severity}[^,]{1,2000})""",
          """Risk Level:\s{0,100}(N\/A|({alert_severity}[^,]{1,2000}))""",
          """Occurrences:\s{0,100}\d{1,100}
+}
 ```

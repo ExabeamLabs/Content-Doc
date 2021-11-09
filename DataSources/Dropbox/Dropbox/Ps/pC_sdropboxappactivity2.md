@@ -21,4 +21,5 @@ Name = s-dropbox-app-activity-2
       """"recipient_email":\s{0,100}"({resource}[^"]{1,2000})""""
     ]
   }
+}
 ```

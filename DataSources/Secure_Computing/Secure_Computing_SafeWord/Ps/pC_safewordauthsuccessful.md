@@ -15,4 +15,5 @@ Name = safeword-auth-successful
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
 }
+}
 ```

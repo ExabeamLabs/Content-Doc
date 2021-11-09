@@ -19,4 +19,5 @@ Name = s-mimecast-app-activity
     """\sIP:\s{0,100}({src_ip}[a-fA-F\d\.:]{1,2000})"""
   ]
 }
+}
 ```

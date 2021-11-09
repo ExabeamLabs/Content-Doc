@@ -23,4 +23,5 @@ Name = cef-symantec-sep-alert-1
     """"signature_name":"({alert_name}[^"]{1,2000})""",
   ]
 }
+}
 ```

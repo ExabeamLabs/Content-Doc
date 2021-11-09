@@ -20,4 +20,5 @@ Name = s-dropbox-app-activity-1
       """"folder_name":\s{0,100}"({object}[^"]{1,2000})""""
     ]
   }
+}
 ```

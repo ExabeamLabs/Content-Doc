@@ -25,4 +25,5 @@ Name = syslog-5140-ch
       """({accesses}Read)"""
     ]
   }
+}
 ```

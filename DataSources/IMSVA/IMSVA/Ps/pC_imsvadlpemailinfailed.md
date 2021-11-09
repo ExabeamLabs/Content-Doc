@@ -16,4 +16,5 @@ Name = imsva-dlp-email-in-failed
   ]
   DupFields = [ "sender->external_address" ]
 }
+}
 ```

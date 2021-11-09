@@ -23,4 +23,5 @@ Name = cef-securesphere-db-query-2
     """\Wcn2=({response_size}.+?)\s{1,100}(\w+=|$)""",
   ]
 }
+}
 ```

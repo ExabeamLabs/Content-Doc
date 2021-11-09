@@ -19,4 +19,5 @@ Name = github-audit-failed-login
     """({app}github)"""
   ]
 }
+}
 ```

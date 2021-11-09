@@ -13,4 +13,5 @@ Name = syslog-barracuda-email
     ]
     DupFields = [ "sender->external_address", "sender->email_user" ]
   }
+}
 ```

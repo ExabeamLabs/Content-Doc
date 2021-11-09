@@ -21,4 +21,5 @@ Name = sfdc-app-login
     """Application":\s{0,100}"({protocol}[^"]{1,2000})""",
   ]
 }
+}
 ```

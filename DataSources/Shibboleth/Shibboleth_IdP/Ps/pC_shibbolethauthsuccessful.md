@@ -16,4 +16,5 @@ Name = shibboleth-auth-successful
   ]
   DupFields = [ "request_binding->action" ]
 }
+}
 ```

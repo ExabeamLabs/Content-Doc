@@ -23,6 +23,5 @@ cef-kaspersky-security-alert = {
     """\Wdhost=(|({dest_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdst=({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """\Wmsg=(|({additional_info}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-   ]
-}
+   ]}
 ```

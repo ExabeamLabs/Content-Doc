@@ -24,4 +24,5 @@ Name = gcpvpc-netflow-connection
     """"reporter":"({reporter}[^"]{1,2000})""",
   ]
 }
+}
 ```

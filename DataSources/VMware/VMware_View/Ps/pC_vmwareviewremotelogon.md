@@ -17,4 +17,5 @@ Name = vmware-view-remote-logon
     """MachineName="({dest_host}[^"]{1,2000})"""",
    ]
 }
+}
 ```

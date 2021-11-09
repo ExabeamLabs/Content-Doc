@@ -17,4 +17,5 @@ Name = rdirectory-password-change
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

@@ -24,4 +24,5 @@ Name = json-bro-dns-query
     """"rejected\\?"{1,20}:({outcome}\w+)"""
   ]
 }
+}
 ```

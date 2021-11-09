@@ -20,4 +20,5 @@ Name = s-mimecast-app-login
     """\|action=(|({outcome}.+?))\|"""
   ]
 }
+}
 ```

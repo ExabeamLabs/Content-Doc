@@ -32,4 +32,5 @@ Name = securesphere-db-alert-2
   ]
   DupFields = [ "db_user->account"]
 }
+}
 ```

@@ -15,4 +15,5 @@ Name = l-ironport-email-outcome
       """MID ({alert_id}\d{1,100})"""
     ]
   }
+}
 ```

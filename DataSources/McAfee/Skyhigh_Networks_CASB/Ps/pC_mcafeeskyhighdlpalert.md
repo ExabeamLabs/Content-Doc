@@ -25,4 +25,5 @@ Name = mcafee-skyhigh-dlp-alert
     """activityName=\[({alert_type}[^\]]{1,2000}?)\]"""
   ]
 }
+}
 ```

@@ -24,4 +24,5 @@ Name = s-juniper-pulse-activity
     """agent="({user_agent}[^"]{1,2000})"""",
    ]
 }
+}
 ```

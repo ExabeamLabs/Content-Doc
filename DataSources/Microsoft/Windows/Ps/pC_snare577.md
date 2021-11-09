@@ -17,4 +17,5 @@ Name = snare-577
     """(?:Information|Audit Success|Success Audit).+?Primary User Name:\s{1,100}({user}.+?)\s{1,100}Primary Domain""",
     """\s{1,100}Primary Domain:\s{1,100}({domain}[^\s]{1,2000})""",
     """\s{1,100}Primary Logon ID:\s{1,100}\([^,]{1,2000}
+}
 ```

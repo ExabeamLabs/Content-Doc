@@ -11,4 +11,5 @@ Name = s-skysea-file-copied
   Fields = [
     """exabeam_raw=({host}[^\,]{1,2000})\,""",
     """(^|,)"?({host}[^,]{1,2000})"?,([^,]{0,2000}
+}
 ```

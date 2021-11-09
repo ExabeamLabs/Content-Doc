@@ -26,4 +26,5 @@ Name = json-o365-failed-app-login
     """login-({outcome}failed)"""
   ]
 }
+}
 ```

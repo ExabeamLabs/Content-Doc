@@ -21,4 +21,5 @@ Name = raw-asa-113005
     """({event_name}AAA user authentication Rejected)""",
  ]
 }
+}
 ```

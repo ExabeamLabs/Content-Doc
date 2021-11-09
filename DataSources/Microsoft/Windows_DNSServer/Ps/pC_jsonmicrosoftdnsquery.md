@@ -28,4 +28,5 @@ Name = json-microsoft-dns-query
     """"UserID":"({user_sid}[^"]{1,2000})""",
   ]
 }
+}
 ```

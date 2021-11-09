@@ -17,4 +17,5 @@ Name = s-netscaler-auth-failed
     """Browser .*?({user_agent}[^"]{1,2000})""",
   ]
 }
+}
 ```

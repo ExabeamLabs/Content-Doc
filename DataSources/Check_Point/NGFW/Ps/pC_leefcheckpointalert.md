@@ -45,4 +45,5 @@ Name = leef-checkpoint-alert
   ]
   DupFields = [ "event_name->protection_name" ]
 }
+}
 ```

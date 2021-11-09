@@ -18,4 +18,5 @@ Name = vmware-view-failed-login
     """USER_AUTHFAILED_({failure_reason}[^"]{1,2000})""""
    ]
 }
+}
 ```

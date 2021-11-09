@@ -20,4 +20,5 @@ Name = greenbay-4776
     """"The ({login_type}computer|domain)(\s\w+)? attempted to validate the credentials""",
   ]
 }
+}
 ```

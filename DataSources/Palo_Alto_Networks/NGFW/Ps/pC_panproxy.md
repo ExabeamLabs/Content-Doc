@@ -12,4 +12,5 @@ Name = pan-proxy
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """({host}[\w\-\.]{1,2000})[\s\-]{1,2000}\d{1,100}
+}
 ```

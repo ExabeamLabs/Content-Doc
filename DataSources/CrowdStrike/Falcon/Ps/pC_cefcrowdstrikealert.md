@@ -44,4 +44,5 @@ Name = cef-crowdstrike-alert
     ]
     DupFields = ["falcon_host_link->additional_info"]
   }
+}
 ```

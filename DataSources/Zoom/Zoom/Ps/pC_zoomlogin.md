@@ -20,4 +20,5 @@ Name = zoom-login
     """"version"\s{0,100}:\s{0,100}"({app_version}[^"]{1,2000})""""
   ]
 }
+}
 ```

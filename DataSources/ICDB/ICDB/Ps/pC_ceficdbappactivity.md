@@ -22,4 +22,5 @@ Name = cef-icdb-app-activity
     """\Wfname=({additional_info}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
+}
 ```

@@ -19,4 +19,5 @@ Name = cef-pan-auth-failed
     """Reason:\s{1,100}({failure_reason}[^"\.,]{1,2000}?)\s{0,100}(,|\.)"""
   ]
 }
+}
 ```

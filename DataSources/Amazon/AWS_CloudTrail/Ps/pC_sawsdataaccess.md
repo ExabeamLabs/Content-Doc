@@ -24,4 +24,5 @@ Name = s-aws-data-access
   ]
   DupFields = [ "accesses->role", "file_path->object" ]
 }
+}
 ```

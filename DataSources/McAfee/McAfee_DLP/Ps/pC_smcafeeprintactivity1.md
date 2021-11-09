@@ -20,4 +20,5 @@ Name = s-mcafee-print-activity-1
      """\sUsername_NTLM="{0,20}(({domain}[^\\]{1,2000})\\*)?({user}[^"]{1,2000})"""
   ]
 }
+}
 ```

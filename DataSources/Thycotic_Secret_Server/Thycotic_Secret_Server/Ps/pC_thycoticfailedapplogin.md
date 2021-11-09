@@ -19,4 +19,5 @@ Name = thycotic-failed-app-login
     """({app}Thycotic Software)"""
   ]
 }
+}
 ```

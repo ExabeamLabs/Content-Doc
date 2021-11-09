@@ -21,4 +21,5 @@ Name = extrahop-dns-query
      """"rspBytes":({bytes}\d{1,100})""",
 ]
 }
+}
 ```

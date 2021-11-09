@@ -25,4 +25,5 @@ Name = s-mcafee-epo-dlp-alert
   ]
   DupFields = [ "directory->process_directory" ]
 }
+}
 ```

@@ -18,4 +18,5 @@ Name = cef-ssh-login-1
     """\Wcs4=({logon_id}\d{1,100})""",
   ]
 }
+}
 ```

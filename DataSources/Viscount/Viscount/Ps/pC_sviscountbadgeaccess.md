@@ -20,4 +20,5 @@ Name = s-viscount-badge-access
     """result="({outcome}[^"]{1,2000})""",
   ]
 }
+}
 ```

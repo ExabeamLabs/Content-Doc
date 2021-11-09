@@ -24,4 +24,5 @@ Name = cef-citrix-xenapp-app-login
     """\scs4=({os}.+?)\s{1,100}\w+="""
   ]
 }
+}
 ```

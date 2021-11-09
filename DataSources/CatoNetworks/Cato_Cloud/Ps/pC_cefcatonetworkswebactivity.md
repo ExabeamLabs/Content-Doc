@@ -25,4 +25,5 @@ Name = cef-catonetworks-web-activity
     """user_email=({user_email}[^@]{1,2000}@[^=]{1,2000}?)\s\w+="""
   ]
 }
+}
 ```

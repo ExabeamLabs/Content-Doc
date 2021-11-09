@@ -18,4 +18,5 @@ Name = cef-snowflake-db-login
     """"IS_SUCCESS":"({outcome}[^"]{1,2000})"""",
   ]
 }
+}
 ```

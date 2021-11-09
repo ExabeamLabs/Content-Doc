@@ -33,4 +33,5 @@ Name = cef-trendmicro-security-alert-4
     """\WinterestedIp=({dest_ip}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
+}
 ```

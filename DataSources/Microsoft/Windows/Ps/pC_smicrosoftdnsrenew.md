@@ -20,4 +20,5 @@ Name = s-microsoft-dns-renew
   ]
   DupFields = [ "dest_host->user" ]
 }
+}
 ```

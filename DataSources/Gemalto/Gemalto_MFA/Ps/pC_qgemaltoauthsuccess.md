@@ -15,4 +15,5 @@ Name = q-gemalto-auth-success
     """resulting in ({outcome}AUTH_SUCCESS)""",
   ]
 }
+}
 ```

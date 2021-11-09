@@ -20,4 +20,5 @@ Name = zoom-meeting-updated
     """"time_stamp"\s{0,100}:\s{0,100}"({time}\d{1,100})"""
   ]
 }
+}
 ```

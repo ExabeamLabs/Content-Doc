@@ -20,4 +20,5 @@ Name = amag-badge-access
     """"db_ip":"({dest_ip}[a-fA-F\d.:]{1,2000})""",
   ]
 }
+}
 ```

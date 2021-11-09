@@ -24,4 +24,5 @@ Name = syslog-symantec-dlp-alert-6
      """match_count="{1,20}({match_count}[^"]{1,2000})""",
      ]
 }
+}
 ```

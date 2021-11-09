@@ -28,4 +28,5 @@ Name = s-xml-4660-netapp
    ]
     DupFields = ["event_name->activity"]
 }
+}
 ```

@@ -22,4 +22,5 @@ Name = raw-5138
     """\d\d:\d\d:\d\d\s{1,100}(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^<]{1,2000}))\s{1,100}Microsoft-Windows-Security-Auditing"""
   ]
 }
+}
 ```

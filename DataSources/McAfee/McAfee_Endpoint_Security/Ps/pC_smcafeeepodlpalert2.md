@@ -13,4 +13,5 @@ Name = s-mcafee-epo-dlp-alert-2
       """exabeam_host=({host}[\w.\-]{1,2000})""",
       """AutoID="{0,20}({alert_id}\d{1,100})""",
       """signature="{0,20}\s{0,100}(_|({alert_name}.+?))\s{0,100}"{0,20}
+}
 ```

@@ -20,4 +20,5 @@ Name = s-duo-failed-app-login-1
     """"error\\"{1,20}:\s{0,100}\\"{1,20}({failure_reason}[^"]{1,2000}?)\\"{1,20}"""
   ]
 }
+}
 ```

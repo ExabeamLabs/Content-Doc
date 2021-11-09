@@ -15,4 +15,5 @@ Name = vmware-remote-logon
     """User ({user}.+?) starting channel"""
    ]
 }
+}
 ```

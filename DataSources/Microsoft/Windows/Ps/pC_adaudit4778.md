@@ -24,4 +24,5 @@ Name = ad-audit-4778
     """CLIENT_IP_ADDRESS\s{0,100}=\s{0,100}(null|-|({src_ip}[a-fA-F:\d.]{1,2000}))"""
   ]
 }
+}
 ```

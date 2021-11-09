@@ -29,4 +29,5 @@ Name = observeit-alerts
     """\sProcessName=({process}[^;]{1,2000}?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
   ]
 }
+}
 ```

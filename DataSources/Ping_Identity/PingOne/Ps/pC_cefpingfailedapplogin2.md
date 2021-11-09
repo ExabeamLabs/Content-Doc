@@ -20,4 +20,5 @@ Name = cef-ping-failed-app-login-2
     """msg=({reason}.*?)\s\w+=""",
   ]
 }
+}
 ```

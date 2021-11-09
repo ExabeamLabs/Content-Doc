@@ -16,4 +16,5 @@ Name = f5-vpn-assign-ip
     """\sClient IP:\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
 }
+}
 ```

@@ -33,4 +33,5 @@ Name = cef-forcepoint-dlp-email-alert-out
   ]
   DupFields = [ "recipient->external_address" ]
 }
+}
 ```

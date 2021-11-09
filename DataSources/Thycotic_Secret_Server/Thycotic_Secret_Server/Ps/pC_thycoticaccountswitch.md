@@ -21,4 +21,5 @@ Name = thycotic-account-switch
   ]
 	DupFields=["host->dest_host"]
 }
+}
 ```

@@ -20,4 +20,5 @@ Name = connectra-vpn-login
   ]
   DupFields = ["user->account"]
 }
+}
 ```

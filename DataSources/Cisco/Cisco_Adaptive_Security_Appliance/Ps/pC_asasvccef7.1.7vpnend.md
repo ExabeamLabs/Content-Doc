@@ -22,4 +22,5 @@ Name = asa-svc-cef-7.1.7-vpn-end
       """\sout=({bytes_out}\d{1,100})""",
     ]
   }
+}
 ```

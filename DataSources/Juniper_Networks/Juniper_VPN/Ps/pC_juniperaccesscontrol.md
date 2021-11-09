@@ -20,4 +20,5 @@ Name = juniper-access-control
     """({os}iOS|Android|BlackBerry|iPhone OS|Windows Phone|BeOS|(?:W|w)indows\s{0,20}\d{1,2}|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)"""
   ]
 }
+}
 ```

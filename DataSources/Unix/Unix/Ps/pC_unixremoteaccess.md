@@ -19,4 +19,5 @@ Name = unix-remote-access
     """User=({user}[^>=]{1,2000}?)><\w+="""
   ]
 }
+}
 ```

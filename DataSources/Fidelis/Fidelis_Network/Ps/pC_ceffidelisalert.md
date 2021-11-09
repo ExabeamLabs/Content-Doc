@@ -34,4 +34,5 @@ Name = cef-fidelis-alert
     """"MD5":"({md5_sum}[^"]{1,2000})""""
   ]
 }
+}
 ```

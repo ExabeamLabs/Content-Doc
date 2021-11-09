@@ -35,4 +35,5 @@ Name = s-aws-cloudtrail-s3-activity
          """\srequestClientApplication=({app}[^\s]{1,2000})\s""",
  ]
 }
+}
 ```

@@ -25,4 +25,5 @@ Name = json-azure-ad-security-alert
      """"userPrincipalName":\s{0,100}"({user_upn}[^"]{1,2000}?)"""",
   ]
 }
+}
 ```

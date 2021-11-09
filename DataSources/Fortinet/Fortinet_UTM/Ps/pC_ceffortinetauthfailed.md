@@ -19,4 +19,5 @@ Name = cef-fortinet-auth-failed
     """\sdevid\\="({dest_host}[^"]{1,2000})""",
   ]
 }
+}
 ```

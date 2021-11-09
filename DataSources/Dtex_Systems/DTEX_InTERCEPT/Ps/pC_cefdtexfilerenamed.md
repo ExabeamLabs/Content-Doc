@@ -28,4 +28,5 @@ Name = cef-dtex-file-renamed
   ]
   DupFields = [ "host->dest_host","directory->process_directory" ]
 }
+}
 ```

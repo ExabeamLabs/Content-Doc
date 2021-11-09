@@ -26,4 +26,5 @@ Name = s-azure-api-management
  ]
 DupFields= ["event_hub_namespace->host"]
 }
+}
 ```

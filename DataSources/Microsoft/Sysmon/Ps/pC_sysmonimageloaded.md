@@ -26,4 +26,5 @@ Name = sysmon-image-loaded
     ]
     DupFields = [ "host->dest_host","directory->process_directory" ]
   }
+}
 ```

@@ -20,4 +20,5 @@ Name = s-microsoft-database-login
       """exabeam_host=({host}[\w.\-]{1,2000})""",
     ]
 }
+}
 ```

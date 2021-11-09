@@ -20,4 +20,5 @@ Name = microsoft-print-activity-2
     """({event_code}307)""",
     """exabeam_host=({host}[^\s]{1,2000})""",
     """Document \d{1,100}
+}
 ```

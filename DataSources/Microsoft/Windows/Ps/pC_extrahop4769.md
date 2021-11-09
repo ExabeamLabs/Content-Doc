@@ -21,4 +21,5 @@ Name = extrahop-4769
   ]
   DupFields = [ "service_name->dest_host" ]
 }
+}
 ```

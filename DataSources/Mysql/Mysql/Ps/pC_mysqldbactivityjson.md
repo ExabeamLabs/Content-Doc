@@ -27,4 +27,5 @@ Name = mysql-db-activity-json
     ]
     DupFields = [ "dest_host->host" ]
   }
+}
 ```

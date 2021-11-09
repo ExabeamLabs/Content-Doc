@@ -48,4 +48,5 @@ Name = sysmon-process-created
   ]
   DupFields = [ "host->dest_host", "directory->process_directory", "process->path" ]
 }
+}
 ```

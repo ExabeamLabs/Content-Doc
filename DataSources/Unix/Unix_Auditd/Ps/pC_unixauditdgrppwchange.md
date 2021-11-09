@@ -18,4 +18,5 @@ Name = unix-auditd-grp-pw-change
   ]
   DupFields = ["group_name->group"]
 }
+}
 ```

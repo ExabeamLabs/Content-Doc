@@ -22,4 +22,5 @@ Name = cef-stealthbits-file-operations
     """\WOperation=\s{0,100}(|({accesses}.+?))(\s{1,100}\w+=|\s{0,100}$)"""
   ]
 }
+}
 ```

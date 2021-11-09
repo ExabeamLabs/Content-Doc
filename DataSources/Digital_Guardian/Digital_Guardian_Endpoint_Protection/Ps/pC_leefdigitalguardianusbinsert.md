@@ -22,4 +22,5 @@ Name = leef-digitalguardian-usb-insert
     """SourceDeviceFriendlyName=(|({activity_details}.+?))\s{0,100}(\w+=|$)""",
   ]
 }
+}
 ```

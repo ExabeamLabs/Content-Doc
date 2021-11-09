@@ -33,4 +33,5 @@ Name = cef-mcafee-dlp-email-alert-2
     ]
     DupFields = [ "user_email->sender", "recipient->target", "file_name->attachments"]
 }
+}
 ```

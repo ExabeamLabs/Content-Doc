@@ -13,4 +13,5 @@ Name = asa-aaa-vpn-start
       """Authentication succeeded for user '({user}[^']{1,2000})' from ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).+?to ({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""" ]
     DupFields = ["user->account"]
   }
+}
 ```

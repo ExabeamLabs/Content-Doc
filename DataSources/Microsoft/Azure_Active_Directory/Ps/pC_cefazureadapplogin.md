@@ -27,4 +27,5 @@ Name = cef-azure-ad-app-login
     """CEF:([^\|]{0,2000}\|){4}({activity}[^\|]{1,2000})""",
   ]
 }
+}
 ```

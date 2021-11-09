@@ -23,4 +23,5 @@ Name = lieberman-erpm
   ]
   DupFields = ["account->object"]
 }
+}
 ```

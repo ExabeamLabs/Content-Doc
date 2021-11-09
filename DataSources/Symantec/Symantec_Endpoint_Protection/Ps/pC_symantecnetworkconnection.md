@@ -28,4 +28,5 @@ Name = symantec-network-connection
     """MD-5:\s{0,100}({md5}[^\s,]{1,2000})""",
   ]
 }
+}
 ```

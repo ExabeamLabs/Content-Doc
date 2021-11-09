@@ -14,4 +14,5 @@ Name = nexthink-security-alert-1
     """display_name="({user_fullname}[^"]{1,2000})""",
   ]
 }
+}
 ```

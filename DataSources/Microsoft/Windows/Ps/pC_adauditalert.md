@@ -26,4 +26,5 @@ Name = ad-audit-alert
   ]
   DupFields=[ "alert_type->alert_name" ]
 }
+}
 ```

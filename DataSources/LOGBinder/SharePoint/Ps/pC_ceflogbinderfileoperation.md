@@ -20,4 +20,5 @@ Name = cef-logbinder-file-operation
     """({app}LOGbinder)""",
   ]
 }
+}
 ```

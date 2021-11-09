@@ -15,4 +15,5 @@ Name = f5-vpn-session-data
     """bytes out:\s{0,100}({bytes_out}\d{1,100})"""
   ]
 }
+}
 ```

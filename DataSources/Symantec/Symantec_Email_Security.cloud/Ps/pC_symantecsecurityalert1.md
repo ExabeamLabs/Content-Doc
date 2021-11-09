@@ -20,4 +20,5 @@ Name = symantec-security-alert-1
   ]
   DupFields = [ "alert_name->alert_type" ]
 }
+}
 ```

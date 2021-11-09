@@ -20,4 +20,5 @@ Name = googlecloud-iam-activity
      """"resource"[^=]{1,2000}?location":"({region}[^"]{1,2000})""",
      """"policyDelta"[^=]{1,2000}?"role":"roles\/({role}[^"\\\/]{1,2000})""",
      """"status"[^=]{1,2000}?"code":\d{1,100}
+}
 ```

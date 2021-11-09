@@ -28,4 +28,5 @@ Name = xml-sysmon-process-created
   ]
   DupFields = [ "host->dest_host","directory->process_directory","path->process" ]
 }
+}
 ```

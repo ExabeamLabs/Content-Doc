@@ -10,4 +10,5 @@ Name = s-cyberark-password-reset
   ]
   DupFields=[ "host->dest_host" ]
 }
+}
 ```

@@ -19,4 +19,5 @@ Name = trend-micro-alert-7
   ]
   DupFields = [ "alert_type->alert_name" ]
 }
+}
 ```

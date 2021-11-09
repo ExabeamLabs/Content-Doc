@@ -20,4 +20,5 @@ Name = sophos-leef-epp-usb-activity
           """Model=(?:\s|({device_type}.+?))\s{1,100}(\w+=|$)"""
           ]
 }
+}
 ```

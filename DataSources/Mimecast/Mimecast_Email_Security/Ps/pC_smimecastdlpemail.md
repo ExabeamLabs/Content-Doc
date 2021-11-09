@@ -29,4 +29,5 @@ Name = s-mimecast-dlp-email
       """\|IP=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     ]
 }
+}
 ```

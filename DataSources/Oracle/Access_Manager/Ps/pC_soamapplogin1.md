@@ -14,4 +14,5 @@ Name = s-oam-app-login-1
     """- 2uid=({user}[^\s]{1,2000})""" 
   ]
 }
+}
 ```

@@ -21,4 +21,5 @@ Name = crowdstrike-config-change
     ]
     DupFields = ["activity->event_code"]
   }
+}
 ```

@@ -24,4 +24,5 @@ Name = cef-o365-app-login-1
       """"failureReason":"({failure_reason}[^"]{1,2000})""",
       """"userDisplayName":"({user_fullname}({user_firstname}[^\s"]{1,2000}?)\s{1,100}({user_lastname}[^\s"\(\),]{1,2000}))\s{0,100}[^"]{0,2000}?"""",
       """"userDisplayName":"({user_fullname}({user_lastname}[^",\s]{1,2000})\s{0,100}
+}
 ```

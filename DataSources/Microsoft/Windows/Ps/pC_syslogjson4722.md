@@ -21,4 +21,5 @@ Name = syslog-json-4722
 	      """"TargetDomainName":"({target_domain}[^"]{1,2000})"""
 	]
 }
+}
 ```

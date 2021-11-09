@@ -26,4 +26,5 @@ Name = cisco-netflow-connection-2
   ]
   DupFields = [ "bytes_in->bytes", "packets_in->packets"  ]
 }
+}
 ```

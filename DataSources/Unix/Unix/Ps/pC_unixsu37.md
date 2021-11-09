@@ -15,4 +15,5 @@ Name = unix-su-37
     """su: from ({user}\w+) to ({account}\w+) at ({process_directory}.*?)\?*\s{0,100}$"""
   ]
 }
+}
 ```

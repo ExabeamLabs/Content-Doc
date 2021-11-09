@@ -27,4 +27,5 @@ Name = ssh-remote-logon
   ]
   DupFields = [ "event_name->event_type" ]
 }
+}
 ```

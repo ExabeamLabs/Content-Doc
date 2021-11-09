@@ -30,4 +30,5 @@ Name = s-nac-failed-logon
     """, AuthenticationIdentityStore=({auth_server}[^,]{1,2000})""",
   ]
 }
+}
 ```

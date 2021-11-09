@@ -27,4 +27,5 @@ Name = sentinelone-security-alert-1
     """\sdata.filePath="({process}[^"]{1,2000}\\({process_name}[^"]{1,2000}))""",
   ]
 }
+}
 ```

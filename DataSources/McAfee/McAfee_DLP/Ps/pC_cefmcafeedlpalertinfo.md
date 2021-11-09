@@ -24,4 +24,5 @@ Name = cef-mcafee-dlp-alert-info
         """(\s|\|)eventId=({alert_id}\d{1,100})\s"""
       ]
     }
+}
 ```

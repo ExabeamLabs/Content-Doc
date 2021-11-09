@@ -20,4 +20,5 @@ Name = json-alertlogic-network-alert
     """"facts_url":\s{0,100}"({additional_info}[^"]{1,2000})""",
   ]
 }
+}
 ```

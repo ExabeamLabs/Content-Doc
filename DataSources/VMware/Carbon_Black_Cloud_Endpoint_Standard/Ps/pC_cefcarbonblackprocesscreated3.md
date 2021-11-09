@@ -32,4 +32,5 @@ Name = cef-carbonblack-process-created-3
   ]
   DupFields = ["directory->process_directory", "alert_name->alert_type"]
 }
+}
 ```

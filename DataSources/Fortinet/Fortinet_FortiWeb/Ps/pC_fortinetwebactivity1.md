@@ -27,4 +27,5 @@ Name = fortinet-web-activity-1
     """http_retcode=({result_code}\d{1,100})"""
   ]
 }
+}
 ```

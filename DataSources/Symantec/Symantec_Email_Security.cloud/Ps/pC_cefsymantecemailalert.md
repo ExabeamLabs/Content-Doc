@@ -26,4 +26,5 @@ Name = cef-symantec-email-alert
     ]
     DupFields = [ "recipient->external_address" ]
   }
+}
 ```

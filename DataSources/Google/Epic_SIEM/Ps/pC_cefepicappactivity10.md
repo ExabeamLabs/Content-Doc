@@ -25,6 +25,5 @@ cef-epic-app-activity = {
     """MASKMODE=({result}.+?)\s{1,100}(\w+=|$)""",
     """PREVUSER=({user}[^\s,]{1,2000})""",
     """NEWUSER=({account}[^\s,]{1,2000})""",
-  ]
-}
+  ]}
 ```

@@ -14,4 +14,5 @@ Name = unix-password-change-1
     """changed password for '({account}[^']{1,2000})'""",
   ]
 }
+}
 ```

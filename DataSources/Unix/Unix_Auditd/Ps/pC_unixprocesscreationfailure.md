@@ -25,4 +25,5 @@ Name = unix-process-creation-failure
     ]
         DupFields=[ "host->dest_host", "process_directory->directory" ]
   }
+}
 ```

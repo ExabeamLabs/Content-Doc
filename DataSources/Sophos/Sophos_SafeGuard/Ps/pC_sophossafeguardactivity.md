@@ -26,4 +26,5 @@ Name = sophos-safeguard-activity
   ]
   DupFields = ["host->src_host"]
 }
+}
 ```

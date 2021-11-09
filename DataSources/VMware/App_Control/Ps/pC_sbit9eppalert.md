@@ -23,4 +23,5 @@ Name = s-bit9-epp-alert
     """c:\\+users\\+({user}[^"\\]{1,2000})""",
   ]
 }
+}
 ```

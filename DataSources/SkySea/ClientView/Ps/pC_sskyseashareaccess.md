@@ -17,4 +17,5 @@ Name = s-skysea-share-access
     """^([^\,]{0,2000}\,){11}({file_path}({file_parent}([^\,]{1,2000}\\)?)({file_name}[^\,]{1,2000}))\,"""
   ]
 }
+}
 ```

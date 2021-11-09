@@ -10,4 +10,5 @@ Name = r-syslog-chkpnt-vpn-end
   Conditions = [ """%CHKPNT-6-031085: authcrypt""", """disconnected from gateway""" ]
   Fields = [
     """disconnected from gateway,([^,]{0,2000}
+}
 ```

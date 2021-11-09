@@ -18,4 +18,5 @@ Name = cef-xps-print-activity-1
     ]
     DupFields = [ "printer_name->dest_host" ]
 }
+}
 ```

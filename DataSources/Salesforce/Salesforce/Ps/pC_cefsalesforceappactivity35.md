@@ -19,4 +19,5 @@ Name = cef-salesforce-app-activity-35
   ]
   DupFields = [ "user_email->user" ]
 }
+}
 ```

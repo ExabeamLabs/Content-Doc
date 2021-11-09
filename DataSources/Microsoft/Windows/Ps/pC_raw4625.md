@@ -35,4 +35,5 @@ Name = raw-4625
     ]
     DupFields = ["host->dest_host","src_host_windows->src_host"]
   }
+}
 ```

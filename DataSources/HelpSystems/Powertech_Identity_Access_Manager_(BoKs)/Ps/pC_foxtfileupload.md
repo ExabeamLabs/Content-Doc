@@ -20,4 +20,5 @@ Name = foxt-file-upload
   ]
   DupFields = [ "host->dest_host", "src_file_name->file_name" ]
 }
+}
 ```

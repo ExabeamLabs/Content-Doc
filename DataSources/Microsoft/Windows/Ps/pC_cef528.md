@@ -18,4 +18,5 @@ Name = cef-528
     """\ssproc=({auth_process}.+?)\s{1,100}\w+=""",
     """\sdntdom=({domain}[^\s]{1,2000})""",
     """\sduid=\([^,]{1,2000}
+}
 ```

@@ -15,4 +15,5 @@ Name = unix-auth-failed
     """password check failed for user \(({user}[^\s\)]{1,2000})""",
   ]
 }
+}
 ```

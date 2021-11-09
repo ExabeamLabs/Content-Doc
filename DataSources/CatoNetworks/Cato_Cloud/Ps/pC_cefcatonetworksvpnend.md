@@ -19,4 +19,5 @@ Name = cef-catonetworks-vpn-end
     """\Wtunnel_device_type=({os}.+?)\s{1,100}(\w+=|$)""",
   ]
 }
+}
 ```

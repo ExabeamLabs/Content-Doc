@@ -17,4 +17,5 @@ Name = ovirt-app-activity-13
     """({app}ovirt)"""
   ]
 }
+}
 ```

@@ -7,4 +7,5 @@ Name = carbonblack-edr-procstart
   Fields = ${CarbonBlackParserTemplates.carbonblack-edr.Fields} [
   ]
 }
+}
 ```

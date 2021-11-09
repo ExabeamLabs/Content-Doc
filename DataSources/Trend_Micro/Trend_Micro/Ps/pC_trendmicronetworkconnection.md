@@ -21,4 +21,5 @@ Name = trendmicro-network-connection
     """\|act=({activity}[^\|]{1,2000})"""
   ]
 }
+}
 ```

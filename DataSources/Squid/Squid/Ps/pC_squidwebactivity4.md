@@ -23,4 +23,5 @@ Name = squid-web-activity-4
       """http_mime_type":"(-|({mime}[^"]{1,2000}?))","""
    ]
 }
+}
 ```

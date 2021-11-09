@@ -21,4 +21,5 @@ Name = s-pan-networks-file-activity
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

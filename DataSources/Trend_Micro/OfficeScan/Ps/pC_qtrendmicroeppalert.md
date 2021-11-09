@@ -19,4 +19,5 @@ Name = q-trendmicro-epp-alert
         """User name:\s({user}[^\s]{1,2000})"""
        ]
 }
+}
 ```

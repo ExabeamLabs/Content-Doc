@@ -14,4 +14,5 @@ Name = raw-540
     """\s(Mon|Tue|Wed|Thu|Fri|Sat|Sun) ({time}\w+ \d{1,100} \d{1,100}:\d{1,100}:\d{1,100} \d{1,100})\s{1,100}540\s{1,100}Security""",
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """(?i)(((audit|success)( |_)(success|audit))|information)\s{0,100}
+}
 ```

@@ -20,4 +20,5 @@ Name = s-trendmicro-security-alert-2
     """Process="({process}[^"]{1,2000})""",
   ]
 }
+}
 ```

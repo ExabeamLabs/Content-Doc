@@ -13,4 +13,5 @@ Name = s-4648-jp
       """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d),({event_code}4648),""",
       """EventCode=({event_code}\w+)""",
       """(?!\d{1,100})({host}[\w\-.]{1,2000}),([^,]{0,2000}
+}
 ```

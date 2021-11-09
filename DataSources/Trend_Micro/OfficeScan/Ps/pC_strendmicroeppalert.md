@@ -20,4 +20,5 @@ Name = s-trendmicro-epp-alert
   ]
   DupFields = [ "alert_name->alert_type" ]
 }
+}
 ```

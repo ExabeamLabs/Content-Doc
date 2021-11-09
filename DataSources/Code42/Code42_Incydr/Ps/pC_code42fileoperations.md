@@ -13,4 +13,5 @@ Name = code42-file-operations
 ]
   DupFields = ["file_path->file_parent"]
 }
+}
 ```

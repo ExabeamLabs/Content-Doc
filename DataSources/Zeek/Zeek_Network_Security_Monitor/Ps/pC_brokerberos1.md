@@ -24,4 +24,5 @@ Name = bro-kerberos-1
     """"cipher":"({ticket_encryption_type}[^"]{1,2000})""",
   ]
 }
+}
 ```

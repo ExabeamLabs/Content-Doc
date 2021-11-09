@@ -26,4 +26,5 @@ Name = json-sysmon-file-create-1
   ]
   DupFields = [ "host->dest_host", "directory->process_directory", "process->path" ]
 }
+}
 ```

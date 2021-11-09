@@ -18,4 +18,5 @@ Name = barracuda-failed-vpn-login
     """({outcome}failed)"""
   ]
 }
+}
 ```

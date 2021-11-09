@@ -12,4 +12,5 @@ Name = usb-file-write
     """exabeam_host=({host}[^,\s]{1,2000})""",
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """({device_id}USB[^"]{1,2000})",\d{1,100}
+}
 ```

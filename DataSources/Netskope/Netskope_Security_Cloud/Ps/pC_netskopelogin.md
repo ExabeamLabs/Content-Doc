@@ -21,4 +21,5 @@ Name = netskope-login
     """"os": "(unknown|({os}[^"]{1,2000}))""""
   ]
 }
+}
 ```

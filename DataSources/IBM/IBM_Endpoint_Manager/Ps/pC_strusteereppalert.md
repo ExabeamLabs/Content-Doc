@@ -19,4 +19,5 @@ Name = s-trusteer-epp-alert
     """suspicious_(item_details|process_path|file_path)=({malware_url}.+?)\s{1,100}suspicious_(item|process|file)"""
   ]
 }
+}
 ```

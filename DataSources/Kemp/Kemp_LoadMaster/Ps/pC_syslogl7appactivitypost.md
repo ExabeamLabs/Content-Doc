@@ -18,4 +18,5 @@ Name = syslog-l7-app-activity-post
     """\srequested ({activity}POST) ({object}.+?)\s{0,100}$""",
   ]
 }
+}
 ```

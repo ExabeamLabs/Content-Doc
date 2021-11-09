@@ -14,4 +14,5 @@ Name = powersentry-app-activity
     """({activity}primary host changed)""",
   ]
 }
+}
 ```

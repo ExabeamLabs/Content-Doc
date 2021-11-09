@@ -18,4 +18,5 @@ Name = evntslog-680
 	"""Error Code:\s{1,100}({result_code}[^\s]{1,2000})"""
   ]
 }
+}
 ```

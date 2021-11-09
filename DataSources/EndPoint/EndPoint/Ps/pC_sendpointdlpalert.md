@@ -26,4 +26,5 @@ Name = s-endpoint-dlp-alert
       """\s\[hasseibi="({time}\d\d\d\d\/\d\d\/\d\d \d{1,100}:\d{1,100}:\d{1,100})""",
     ]
   }
+}
 ```

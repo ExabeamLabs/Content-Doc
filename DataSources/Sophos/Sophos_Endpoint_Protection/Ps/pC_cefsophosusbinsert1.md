@@ -20,4 +20,5 @@ Name = cef-sophos-usb-insert-1
     """"ip":"({src_ip}[A-Fa-f:\d.]{1,2000})""""
   ]
 }
+}
 ```

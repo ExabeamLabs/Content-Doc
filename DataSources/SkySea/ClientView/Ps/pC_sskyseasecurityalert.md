@@ -25,4 +25,5 @@ Name = s-skysea-security-alert
   ]
   DupFields = [ "directory->process_directory" ]
 }
+}
 ```

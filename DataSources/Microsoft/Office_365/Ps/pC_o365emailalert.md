@@ -21,4 +21,5 @@ Name = o365-email-alert
     """SESSID=({message_id}[^\s]{1,2000})""",
   ]
 }
+}
 ```

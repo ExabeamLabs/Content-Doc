@@ -20,4 +20,5 @@ Name = s-liebsoft-account-switch
         """sOriginatingSystem="({dest_host}[^"]{1,2000})"""
     ]
   }
+}
 ```

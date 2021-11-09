@@ -26,6 +26,5 @@ Fields = [
   """EVNTCLASSNAME=(\-*N\/A\-*|({database_object}[^=]{1,2000}?))\s{0,100}\w+="""
   ]
   DupFields = ["event_name->db_operation"]
- }
-}
+ }}
 ```

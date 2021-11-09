@@ -27,4 +27,5 @@ Name = cef-forcepoint-dlp-email-alert
     """CEF:([^\|]{0,2000}\|){6}({alert_severity}[^\|]{1,2000})""",
   ]
 }
+}
 ```

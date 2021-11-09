@@ -20,4 +20,5 @@ Name = unix-process-created
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

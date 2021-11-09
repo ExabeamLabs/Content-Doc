@@ -22,4 +22,5 @@ Name = s-honeywell-physical-badge-access
     ]
     DupFields = ["location_area->location_building"]
   }
+}
 ```

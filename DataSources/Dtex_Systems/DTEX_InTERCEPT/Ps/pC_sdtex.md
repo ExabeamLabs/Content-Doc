@@ -11,4 +11,5 @@ Name = s-dtex
   Conditions = [ "User_Department", "User_Location"]
   Fields = [
     """(?:[^,]{0,2000}
+}
 ```

@@ -17,4 +17,5 @@ Name = secureauth-auth-successful
         """requestClientApplication=(?:-|({user_agent}[\s]{1,2000}))""",
     ]
   }
+}
 ```

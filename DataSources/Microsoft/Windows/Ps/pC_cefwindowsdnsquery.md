@@ -22,4 +22,5 @@ Name = cef-windows-dns-query
     """\WdeviceSeverity=({dns_response_code}.+?)\s{1,100}(\w+=|$)""",
   ]
 }
+}
 ```

@@ -16,4 +16,5 @@ Name = duo-app-activity
     """exabeam_raw=({additional_info}.*?)\s{0,100}$"""
   ]
 }
+}
 ```

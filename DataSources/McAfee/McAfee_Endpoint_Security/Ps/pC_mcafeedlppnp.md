@@ -42,6 +42,5 @@ mcafee-dlp-activity = {
       """\WuserInfoEmail=(|({user_email}[^@]{1,2000}({email_domain}.+?)))(\s{1,100}\w+=|\s{0,100}$)""",
       """\WuserInfoFirstName=(|({user_firstname}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
       """\WuserInfoLastName=(|({user_lastname}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-    ]
- 
+    ]}
 ```

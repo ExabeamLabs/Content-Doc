@@ -32,4 +32,5 @@ Name = cef-forcepoint-dlp-alert-3
     ProjectName = "SOC"
     EntityFields = [
       {EntityType="user", Name="user", Fields=["user->windows_id"]}
+}
 ```

@@ -14,4 +14,5 @@ Name = graylog-ras-auth-successful
     """ radiusd\[\d{1,100}\]:\s{0,100}\(\d{1,100}\) Login ({outcome}OK):\s{0,100}\[({user}[^\s\/\]]{1,2000})\] \(from client ({src_host}[\w\-.]{1,2000}) port ({src_port}\d{1,100})""",
   ]
 }
+}
 ```

@@ -16,4 +16,5 @@ Name = syslog-l7-remote-logon
     """\sUser\s{1,100}({user}.+?)\s{1,100}logged""",
   ]
 }
+}
 ```

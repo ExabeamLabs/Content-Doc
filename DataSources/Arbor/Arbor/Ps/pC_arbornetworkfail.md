@@ -21,4 +21,5 @@ Name = arbor-network-fail
      """arbor-networks-aps:\s{0,100}({outcome}[^:]{0,2000}):\s"""
    ]
 }
+}
 ```

@@ -31,4 +31,5 @@ Name = cef-tripwire-file-alert
   ]
   DupFields = [ "directory->process_directory" ]
 }
+}
 ```

@@ -11,4 +11,5 @@ Name = ur-authmgr-auth-failed-addition
   Fields = [
     """exabeam_raw=.*?({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """,({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),AUTH_FAILED_[A-Z_]{1,2000}
+}
 ```

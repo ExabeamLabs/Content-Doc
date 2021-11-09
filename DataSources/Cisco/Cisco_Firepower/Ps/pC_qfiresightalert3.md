@@ -23,4 +23,5 @@ Name = q-firesight-alert-3
   ]
   DupFields = [ "alert_name->alert_type" ]
 }
+}
 ```

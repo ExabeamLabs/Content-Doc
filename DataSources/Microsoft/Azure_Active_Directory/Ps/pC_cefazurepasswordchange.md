@@ -18,4 +18,5 @@ Name = cef-azure-password-change
     """\Wcs5=.+?\|/Target/ID:"({target_user}[^"]{1,2000})"""
   ]
 }
+}
 ```

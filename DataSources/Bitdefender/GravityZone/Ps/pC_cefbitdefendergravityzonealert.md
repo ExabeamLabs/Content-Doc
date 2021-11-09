@@ -31,4 +31,5 @@ Name = cef-bitdefender-gravityzone-alert
   ]
   DupFields = ["alert_severity->detection_level", "activity->bitdefender_activity_type￼"]
 }
+}
 ```

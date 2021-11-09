@@ -16,4 +16,5 @@ Name = s-cisco-acs-auth-successful
       """NAS-IP-Address=(::ffff:)?({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
 	]
 }
+}
 ```

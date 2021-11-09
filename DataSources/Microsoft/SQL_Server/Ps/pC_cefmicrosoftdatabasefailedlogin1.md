@@ -20,4 +20,5 @@ Name = cef-microsoft-database-failed-login-1
     """\sshost=({src_host}[\w\.\-]{1,200}?)\s{0,100}[\w\-\.]{1,2000}="""
   ]
 }
+}
 ```

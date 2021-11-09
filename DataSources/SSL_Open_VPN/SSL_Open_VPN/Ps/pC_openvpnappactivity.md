@@ -16,4 +16,5 @@ Name = openvpn-app-activity
     """DeviceType\\*=({src_host}[\w\-.]{1,2000})""",
     """request size:\s{0,100}({bytes}\d{1,100})""",
     """mapping:\s{0,100}({app}.+?)\s{0,100}
+}
 ```

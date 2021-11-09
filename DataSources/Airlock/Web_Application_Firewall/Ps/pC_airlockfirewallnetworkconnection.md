@@ -30,4 +30,5 @@ Name = airlock-firewall-network-connection
   ]
   DupFields = [ "action->outcome" ]
 }
+}
 ```

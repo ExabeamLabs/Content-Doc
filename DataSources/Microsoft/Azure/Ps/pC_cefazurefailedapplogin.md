@@ -22,4 +22,5 @@ Name = cef-azure-failed-app-login
     """CEF:([^\|]{0,2000}\|){2}({app}[^\|]{1,2000})""",
   ]
 }
+}
 ```

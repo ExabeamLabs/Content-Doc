@@ -23,4 +23,5 @@ Name = cef-darktrace
       """\|({alert_severity}\d{1,100})\|external"""
       ]
  }
+}
 ```

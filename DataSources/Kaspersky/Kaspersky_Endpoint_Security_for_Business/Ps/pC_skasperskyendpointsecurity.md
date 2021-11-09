@@ -25,4 +25,5 @@ Name = s-kaspersky-endpoint-security
   ]
   DupFields=[ "alert_name->alert_type" ]
 }
+}
 ```

@@ -18,4 +18,5 @@ Name = lmc-vpn-login
   ]
   DupFields = ["user->account"]
 }
+}
 ```

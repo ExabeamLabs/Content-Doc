@@ -29,4 +29,5 @@ Name = s-tanium-security-alert-3
       """properties"{1,20}:[^\]]{1,2000}?fullpath"{1,20}:"{1,20}({process}({process_directory}[^"]{1,2000})\\+({process_name}[^"]{1,2000}))""",
     ]
   }
+}
 ```

@@ -20,4 +20,5 @@ Name = mcafee-siem-4779
       """"Source_Logon_ID":"({logon_id}[^"]{1,2000})""",
     ]
   }
+}
 ```

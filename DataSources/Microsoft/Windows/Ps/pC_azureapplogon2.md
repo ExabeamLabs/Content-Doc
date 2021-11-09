@@ -25,4 +25,5 @@ Name = azure-app-logon-2
     """"failureReason":"({failure_reason}.+?)(\.)?"""",
   ]
 }
+}
 ```

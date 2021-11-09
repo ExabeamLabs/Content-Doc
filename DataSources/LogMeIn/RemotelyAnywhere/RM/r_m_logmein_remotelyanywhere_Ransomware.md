@@ -9,4 +9,4 @@ Vendor: LogMeIn
 
 | Event Type   | Rules                                                                                                                     | Models |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------- | ------ |
-| remote-logon | <b>T1078 - Valid Accounts</b><br> ↳ <b>Auth-Ransomware-Shost</b>: User authentication or login from a known ransomware IP |        |
+| app-activity | <b>T1078 - Valid Accounts</b><br> ↳ <b>Auth-Ransomware-Shost</b>: User authentication or login from a known ransomware IP |        |

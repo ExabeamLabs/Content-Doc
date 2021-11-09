@@ -15,4 +15,5 @@ Name = raw-cisco-vpnconcentrator-start
     """User\s{1,100}\[({user}[^\]]{1,2000})"""
   ]
 }
+}
 ```

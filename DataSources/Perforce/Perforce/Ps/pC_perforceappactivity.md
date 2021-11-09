@@ -20,4 +20,5 @@ Name = perforce-app-activity
     """\s\/\/([^\/]{1,2000}\/){2}({resource}.+?)$"""
   ]
 }
+}
 ```

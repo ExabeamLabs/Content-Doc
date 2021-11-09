@@ -29,4 +29,5 @@ Name = s-xml-4656-netapp
    ]
     DupFields = ["event_name->activity", "object_class-> alert_type"]
 }
+}
 ```

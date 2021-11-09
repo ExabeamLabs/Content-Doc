@@ -18,4 +18,5 @@ Name = evntslog-673
   	     """Ticket Options:\s{1,100}({ticket_options}[^\s]{1,2000})""",
   	     """Ticket Encryption Type:\s{1,100}({ticket_encryption_type}[^\s]{1,2000})""" ]
 }
+}
 ```

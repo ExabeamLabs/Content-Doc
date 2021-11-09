@@ -20,4 +20,5 @@ Name = barracuda-email
       """reason=({alert_name}\d{1,100})""",
     ]
 }
+}
 ```

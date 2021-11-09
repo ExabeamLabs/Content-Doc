@@ -18,4 +18,5 @@ Name = rdirectory-account-created
         """Add:13=({user_type}\d{1,100})\[Employee Type\]"""
   ]
 }
+}
 ```

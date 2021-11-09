@@ -28,4 +28,5 @@ Name = s-azure-authorization-activity-2
  ]
 DupFields= ["event_hub_namespace->host"]
 }
+}
 ```

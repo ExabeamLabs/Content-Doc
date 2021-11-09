@@ -18,4 +18,5 @@ Name = checkpoint-connectra-failed-vpn-login
     """\,Hostname=({host}[^\,]{1,2000})""",
   ]
 }
+}
 ```

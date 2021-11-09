@@ -34,4 +34,5 @@ Name = s-nac-failed-logon-2
   ]
   DupFields = ["dest_host->auth_server"]
 }
+}
 ```

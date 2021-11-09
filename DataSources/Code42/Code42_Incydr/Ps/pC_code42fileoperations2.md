@@ -27,4 +27,5 @@ Name = code42-file-operations-2
     """"userUid":\s"({user_uid}[^"]{1,2000})""",
   ]
 }
+}
 ```

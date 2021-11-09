@@ -18,4 +18,5 @@ Name = hp-ndcl-process-created
     ]
     DupFields = [ "host->dest_host" ]
   }
+}
 ```

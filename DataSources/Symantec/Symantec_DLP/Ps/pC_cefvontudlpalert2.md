@@ -11,4 +11,5 @@ Name = cef-vontu-dlp-alert-2
     Fields = [
       """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
       """OCCURRED_ON=({time}\w+\s{1,100}\d{1,100}
+}
 ```

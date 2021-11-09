@@ -21,4 +21,5 @@ Name = s-dropbox-devices-activity
       """"info_dict":\s{0,100}\{[^\}]{0,2000}?"name":\s{0,100}"({app}[^"]{1,2000})""""
     ]
   }
+}
 ```

@@ -27,4 +27,5 @@ Name = s-json-4697
   ]
   DupFields = [ "host->dest_host", "directory->process_directory" ]
 }
+}
 ```

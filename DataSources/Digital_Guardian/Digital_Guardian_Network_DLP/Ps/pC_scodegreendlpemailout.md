@@ -28,4 +28,5 @@ Name = s-codegreen-dlp-email-out
     """action_taken="(?:|({outcome}[^"]{1,2000}))""""
   ]
 }
+}
 ```

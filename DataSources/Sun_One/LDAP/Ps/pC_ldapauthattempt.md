@@ -16,4 +16,5 @@ Name = ldap-auth-attempt
       """\sBIND .*?\sRESULT err=({outcome}\d{1,100})"""
     ]
   }
+}
 ```

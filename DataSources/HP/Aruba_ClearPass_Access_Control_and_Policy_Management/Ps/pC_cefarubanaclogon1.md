@@ -18,4 +18,5 @@ Name = cef-aruba-nac-logon-1
     """\WdestinationServiceName=({network}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
+}
 ```

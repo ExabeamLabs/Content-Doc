@@ -19,4 +19,5 @@ Name = thycotic-app-login
     """({app}Thycotic Software)"""
   ]
 }
+}
 ```

@@ -29,4 +29,5 @@ Name = juniper-firewall-network-connection-deny
 	"""service-name="({service}[^"]{0,2000})"""
     ]
 }
+}
 ```

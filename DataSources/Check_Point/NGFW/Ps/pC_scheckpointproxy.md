@@ -31,4 +31,5 @@ Name = s-checkpoint-proxy
     """\Wreceived_bytes="({bytes_in}\d{1,100})""",
   ]
 }
+}
 ```

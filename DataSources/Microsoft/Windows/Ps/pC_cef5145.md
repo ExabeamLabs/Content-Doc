@@ -30,4 +30,5 @@ Name = cef-5145
           """\Wad\.ObjectType=({file_type}\w+)""",
         ]
 }
+}
 ```

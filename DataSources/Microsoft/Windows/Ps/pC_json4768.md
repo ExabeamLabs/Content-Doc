@@ -28,4 +28,5 @@ Name = json-4768
       """"ServiceName":"({service_name}[^"]{1,2000})""",
     ]
   }
+}
 ```

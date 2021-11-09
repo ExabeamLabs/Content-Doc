@@ -20,4 +20,5 @@ Name = sophos-leef-epp-virus-alert
           """ActionName=({outcome}.*?)\s{1,100}\w+=""", 
   ]
 }
+}
 ```

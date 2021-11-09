@@ -25,4 +25,5 @@ Name = watchguard-web-activity-2
   ]
   
 }
+}
 ```

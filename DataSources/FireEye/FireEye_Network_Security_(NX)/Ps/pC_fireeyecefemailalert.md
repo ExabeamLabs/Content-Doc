@@ -33,4 +33,5 @@ Name = fireeye-cef-email-alert
     ProjectName = "SOC"
     EntityFields = [
       {EntityType="device", Name="url", Fields=["malware_url->url"]}
+}
 ```

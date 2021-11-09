@@ -22,4 +22,5 @@ Name = q-oracle-db-login
   ]
   DupFields = [ "os_user->user", "db_user->account" ]
 }
+}
 ```

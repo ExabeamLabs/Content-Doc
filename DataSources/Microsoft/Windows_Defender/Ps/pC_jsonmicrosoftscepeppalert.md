@@ -29,4 +29,5 @@ Name = json-microsoft-scep-epp-alert
     """"@version":"({version}[^"]{1,2000})""",
   ]
 }
+}
 ```

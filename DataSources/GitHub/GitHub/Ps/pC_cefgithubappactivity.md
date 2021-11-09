@@ -21,4 +21,5 @@ Name = cef-github-app-activity
     """\Wmsg=({additional_info}[^=]{1,2000}?)\s{0,100}(\w+=|$)""",
   ]
 }
+}
 ```

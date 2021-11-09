@@ -20,4 +20,5 @@ Name = json-azure-storage-access
     """operationName":\s{0,100}"({activity}[^"]{1,2000})"""
   ]
 }
+}
 ```

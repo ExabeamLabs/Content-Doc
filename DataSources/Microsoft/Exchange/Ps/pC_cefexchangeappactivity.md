@@ -21,4 +21,5 @@ Name = cef-exchange-app-activity
   ]
   DupFields = [ "user->user_email" ]
 }
+}
 ```

@@ -24,4 +24,5 @@ Name = fortinet-network-alert-1
     """\Waction="({action}[^"]{1,2000})"""",
   ]
 }
+}
 ```

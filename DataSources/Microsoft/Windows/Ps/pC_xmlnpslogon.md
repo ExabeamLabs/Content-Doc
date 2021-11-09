@@ -24,4 +24,5 @@ Name = xml-nps-logon
      """NAS Identifier:\s{0,100}({location}[^\s]]{1,2000})\s"""
   ]
 }
+}
 ```

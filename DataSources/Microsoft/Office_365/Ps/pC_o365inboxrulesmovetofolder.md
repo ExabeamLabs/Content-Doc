@@ -29,4 +29,5 @@ Name = o365-inbox-rules-move-to-folder
   ]
   DupFields = ["user_domain->email_domain"]
 }
+}
 ```

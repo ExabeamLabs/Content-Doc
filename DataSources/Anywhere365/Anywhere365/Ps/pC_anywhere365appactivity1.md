@@ -16,4 +16,5 @@ Name = anywhere365-app-activity-1
   ]
   DupFields = ["user_email->caller_user", "user->caller_user"]
 }
+}
 ```

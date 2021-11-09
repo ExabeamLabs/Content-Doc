@@ -18,4 +18,5 @@ Name = s-xenapp-ica-login
       """UserName=\"{1,20}({user}[^"]{1,2000})"""
     ]
   }
+}
 ```

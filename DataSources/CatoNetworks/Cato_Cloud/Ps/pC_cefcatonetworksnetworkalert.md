@@ -24,4 +24,5 @@ Name = cef-catonetworks-network-alert
     """\Wurl=({malware_url}.+?)\s{1,100}(\w+=|$)""",
   ]
 }
+}
 ```

@@ -22,4 +22,5 @@ Name = cef-duo-auth
     """\Wcs6=({new_enrollment}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
+}
 ```

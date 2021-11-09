@@ -14,4 +14,5 @@ Name = f5-vpn-auth-failed
     """authenticate with '({user}[^']{1,2000})' failed""",
   ]
 }
+}
 ```

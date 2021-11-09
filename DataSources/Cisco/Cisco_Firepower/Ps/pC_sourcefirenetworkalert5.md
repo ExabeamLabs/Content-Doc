@@ -16,4 +16,5 @@ Name = sourcefire-network-alert-5
     """caused by MAC address ({src_mac}[a-fA-F\d.:]{1,2000}) on port ({src_interface}[^\.]{1,2000})"""
   ]
 }
+}
 ```

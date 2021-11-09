@@ -29,4 +29,5 @@ Name = cef-checkpoint-alert
     """\Wrequest=(|({malware_url}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
+}
 ```

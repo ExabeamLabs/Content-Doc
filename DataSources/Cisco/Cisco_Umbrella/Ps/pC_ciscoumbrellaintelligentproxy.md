@@ -12,4 +12,5 @@ Name = cisco-umbrella-intelligent-proxy
    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
    """TimeGenerated"{1,20}:"{1,20}({time}[^"]{1,2000})""",
    """"Computer"{1,20}:"{1,20}({host}[^"]{1,2000})?"{1,20}
+}
 ```

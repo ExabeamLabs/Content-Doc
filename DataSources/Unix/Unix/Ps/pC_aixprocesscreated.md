@@ -20,4 +20,5 @@ Name = aix-process-created
   ]
   DupFields = [ "account->user" ]
 }
+}
 ```

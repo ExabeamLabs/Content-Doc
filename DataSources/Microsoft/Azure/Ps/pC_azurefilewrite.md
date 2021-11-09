@@ -24,4 +24,5 @@ Name = azure-file-write
    """msg=({additional_info}.+?)\s{1,100}\w+="""
   ]
 }
+}
 ```

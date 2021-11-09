@@ -19,4 +19,5 @@ Name = connectra-failed-vpn-login
     """\|reason=({failure_reason}[^\|]{1,2000})\|"""
   ]
 }
+}
 ```

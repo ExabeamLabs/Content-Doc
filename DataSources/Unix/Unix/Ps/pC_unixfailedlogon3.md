@@ -18,4 +18,5 @@ Name = unix-failed-logon-3
     """ port ({src_port}\d{1,100})""",
   ]
 }
+}
 ```

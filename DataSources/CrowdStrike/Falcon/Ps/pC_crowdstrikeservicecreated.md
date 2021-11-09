@@ -20,4 +20,5 @@ Name = crowdstrike-service-created
   ]
   DupFields = [ "directory->process_directory" , "host->dest_host"]
 }
+}
 ```

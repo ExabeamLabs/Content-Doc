@@ -31,4 +31,5 @@ Name = cef-duo-authentication
   ]
   DupFields = ["object->device", "app->service", "factor->auth_method"]
 }
+}
 ```

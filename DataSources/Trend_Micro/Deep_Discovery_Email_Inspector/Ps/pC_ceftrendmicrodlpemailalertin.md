@@ -23,4 +23,5 @@ Name = cef-trendmicro-dlp-email-alert-in
   ]
   DupFields = [ "sender->external_address" ]
 }
+}
 ```

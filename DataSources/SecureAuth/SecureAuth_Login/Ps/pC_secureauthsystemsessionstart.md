@@ -21,4 +21,5 @@ Name = secureauth-system-session-start
     """resource=({event_name}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
+}
 ```

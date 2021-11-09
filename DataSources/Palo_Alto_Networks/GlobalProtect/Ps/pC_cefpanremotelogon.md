@@ -18,4 +18,5 @@ Name = cef-pan-remote-logon
     """Client OS( version)?:\s{1,100}({os}[^":]{1,2000})(,|\.)"""
   ]
 }
+}
 ```

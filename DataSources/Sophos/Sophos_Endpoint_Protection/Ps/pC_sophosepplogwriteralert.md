@@ -24,4 +24,5 @@ Name = sophos-epp-logwriter-alert
      """;\s{0,100}ReferringURL=({additional_info}[^;]{1,2000}?)\s{0,100}(;|$)"""
   ]
 }
+}
 ```

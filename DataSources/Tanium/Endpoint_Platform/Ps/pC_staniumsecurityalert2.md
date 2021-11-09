@@ -27,4 +27,5 @@ Name = s-tanium-security-alert-2
       """"payload=\{({additional_info}.+?[^\\]")\}"""
     ]
   }
+}
 ```

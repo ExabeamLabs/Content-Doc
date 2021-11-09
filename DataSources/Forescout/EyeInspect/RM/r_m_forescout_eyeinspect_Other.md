@@ -5,6 +5,6 @@ Vendor: Forescout
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   5   |   0    |     0      |      1      |    1    |
+|   4   |   0    |     0      |      1      |    1    |
 
 | Event Type | Rules | Models || ---------- | ----- | ------ |

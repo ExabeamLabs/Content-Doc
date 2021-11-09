@@ -21,4 +21,5 @@ Name = cisco-asa-connection-built-302013
     """Built inbound.*?for\s{1,100}({src_interface}.+?):((::ffff:)?({src_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]{0,2000}:[A-Fa-f0-9%.:]{1,2000}(th0)?))|(::ffff:)?\(?({src_host}[^\)\s]{1,2000}?)\)?)((\/({src_port}\d{1,100})\s{1,100})|\s{1,100})\(((::ffff:)?({src_translated_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]{0,2000}:[A-Fa-f0-9%.:]{1,2000}(th0)?))|(::ffff:)?({src_translated_host}[^\s]{1,2000}?))(\/({src_translated_port}\d{1,100}))?\)(\(.+?\))?\s{1,100}to\s{1,100}({dest_interface}.+?):((::ffff:)?({dest_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]{0,2000}:[A-Fa-f0-9%.:]{1,2000}(th0)?))|(::ffff:)?({dest_host}[^\s]{1,2000}?))((\/({dest_port}\d{1,100})\s{1,100})|\s{1,100})\(((::ffff:)?({dest_translated_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]{0,2000}:[A-Fa-f0-9%.:]{1,2000}(th0)?))|(::ffff:)?({dest_translated_host}[^\s]{1,2000}?))(\/({dest_translated_port}\d{1,100}))?\)(\s{1,100}\(({user}.+?)\))?"""
  ]
 }
+}
 ```

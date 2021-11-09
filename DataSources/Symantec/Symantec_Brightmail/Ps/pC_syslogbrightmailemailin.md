@@ -17,4 +17,5 @@ Name = syslog-brightmail-email-in
     ]
     DupFields = [ "sender->external_address" ]
   }
+}
 ```

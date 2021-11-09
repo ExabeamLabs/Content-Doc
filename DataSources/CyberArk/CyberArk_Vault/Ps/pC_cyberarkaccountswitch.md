@@ -24,4 +24,5 @@ Name = cyberark-account-switch
   ]
   DupFields=[ "host->dest_host" ]
 }
+}
 ```

@@ -16,4 +16,5 @@ Name = cisco-ssh-login
     """({outcome}Succeeded|Failed)""",
   ]
 }
+}
 ```

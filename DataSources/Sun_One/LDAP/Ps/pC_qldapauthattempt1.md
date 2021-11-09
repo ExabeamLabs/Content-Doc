@@ -23,4 +23,5 @@ Name = q-ldap-auth-attempt-1
     """"domain":"({domain}[^"\s]{1,2000})""",
   ]
 }
+}
 ```

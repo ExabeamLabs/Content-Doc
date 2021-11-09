@@ -6,4 +6,5 @@ Name = cef-netskope-app-activity-23
   Conditions = [ """"type":"""", """destinationServiceName=Netskope""", """"activity":"Delete application password for user"""" ]
   DupFields = [ "activity->accesses", "object->file_name" ]
 }
+}
 ```

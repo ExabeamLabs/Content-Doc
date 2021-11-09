@@ -22,4 +22,5 @@ Name = workday-app-login-1
     """"target":\s{0,100}\{[^\}]{0,2000}"descriptor":\s{0,100}"({user}[^\/"]{1,2000}?)\s{0,100}\/\s{0,100}({user_fullname}[^"]{1,2000})""",
   ]
 }
+}
 ```

@@ -20,4 +20,5 @@ Name = raw-pan-vpn-start
     """:\d\d:\d\d (-|({host}[\w.-]{1,2000}))\s"""
   ]
 }
+}
 ```

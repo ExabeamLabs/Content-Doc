@@ -14,4 +14,5 @@ Name = f5-vpn-user-agent
     """Received User-Agent header:\s{0,100}({user_agent}.+?)\s{0,100}$""",
   ]
 }
+}
 ```

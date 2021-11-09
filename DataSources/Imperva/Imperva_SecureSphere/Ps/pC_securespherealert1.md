@@ -25,4 +25,5 @@ Name = securesphere-alert-1
     """Alert\.username=(n\/a|({user}[^;]{1,2000}))""", 
   ]
 }
+}
 ```

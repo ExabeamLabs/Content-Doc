@@ -19,4 +19,5 @@ Name = q-duo-auth-successful
     """\Wnew_enrollment=\s{0,100}({new_enrollment}[^;]{1,2000}?)(?:;|\})""",
   ]
 }
+}
 ```

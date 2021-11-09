@@ -20,4 +20,5 @@ Name = cef-cisco-acs-auth-failed
       """FailureReason=(?:|({failure_reason}.+?))\s[\w.]{1,2000}="""
 	]
 }
+}
 ```

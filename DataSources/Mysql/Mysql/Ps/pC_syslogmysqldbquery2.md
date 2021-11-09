@@ -13,4 +13,5 @@ Name = syslog-mysql-dbquery-2
     """ttam_reporter":"({host}[^"]{1,2000})"""",
     """message":"\s{0,100}({db_query}({db_operation}\w+)[^"]{0,2000}?)\s{0,100}"(,"\w+":|\})""",
     """message":"([^,]{1,2000}
+}
 ```

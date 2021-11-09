@@ -21,4 +21,5 @@ Name = cef-kaspersky-security-alert-1
     """CEF:\s{0,100}\d\|([^\|]{1,2000}\|){3}({alert_type}[^\|]{1,2000})\|({alert_name}[^\|]{1,2000})\|({alert_severity}[^\|]{1,2000})\|"""
     ]
 }
+}
 ```

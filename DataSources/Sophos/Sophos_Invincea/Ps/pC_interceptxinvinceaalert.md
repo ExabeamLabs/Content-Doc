@@ -21,4 +21,5 @@ Name = intercept-x-invincea-alert
   ]
   DupFields = ["host->dest_host", "malware_url->process_name"]
 }
+}
 ```

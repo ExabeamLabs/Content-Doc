@@ -34,4 +34,5 @@ Name = raw-7045
   ]
   DupFields = [ "host->dest_host", "directory->process_directory", "command_line->service_command_line"]
 }
+}
 ```

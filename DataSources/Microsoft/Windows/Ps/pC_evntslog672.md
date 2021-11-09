@@ -17,4 +17,5 @@ Name = evntslog-672
   ]
   DupFields = ["host->dest_host"]
 }
+}
 ```

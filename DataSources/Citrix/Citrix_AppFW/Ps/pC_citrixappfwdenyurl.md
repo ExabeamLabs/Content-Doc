@@ -14,4 +14,5 @@ Name = citrix-appfw-denyurl
   ]
   DupFields = ["event_name->alert_name"]
 }
+}
 ```

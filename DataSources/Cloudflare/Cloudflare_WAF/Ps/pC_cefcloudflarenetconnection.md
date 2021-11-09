@@ -33,4 +33,5 @@ Name = cef-cloudflare-net-connection
     """destinationServiceName=({dest_host}[^\s]{1,2000})\s"""
  ]
 }
+}
 ```

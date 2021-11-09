@@ -16,4 +16,5 @@ Name = n-forwarded-cef-infoblox-dhcp
   ]
   DupFields = [ "dest_host->user" ]
 }
+}
 ```

@@ -14,4 +14,5 @@ Name = citrix-appfw-content-type
   ]
   DupFields = ["event_name->alert_name"]
 }
+}
 ```

@@ -23,4 +23,5 @@ Name = n-forwarded-cef-fidelis-alert
 	"""\ssntdom=(?:<n\/a>|({malware_url}.+?))\s{1,100}\w+="""
           ]
 }
+}
 ```

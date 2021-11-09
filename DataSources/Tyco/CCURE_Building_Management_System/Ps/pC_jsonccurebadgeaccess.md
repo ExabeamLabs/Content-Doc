@@ -21,4 +21,5 @@ Name = json-ccure-badge-access
   ]
   DupFields = [ "location_door->location_full" ]
 }
+}
 ```

@@ -15,4 +15,5 @@ Name = s-ironport-email-attachment
       """MID ({alert_id}\d{1,100}) attachment '({attachment}[^']{1,2000})'"""
     ]
   }
+}
 ```

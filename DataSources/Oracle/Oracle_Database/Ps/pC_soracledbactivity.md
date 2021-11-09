@@ -6,4 +6,5 @@ Name = s-oracle-db-activity
    Conditions = [ """ACTION_NAME="""", """ACTION="""", """DBID="""]
    DupFields = ["activity->db_operation"]
  }
+}
 ```

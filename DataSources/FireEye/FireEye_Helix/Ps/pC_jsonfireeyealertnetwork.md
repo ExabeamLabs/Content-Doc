@@ -22,4 +22,5 @@ Name = json-fireeye-alert-network
     """"description":"({policy}[^"]{1,2000})"""
   ]
 }
+}
 ```

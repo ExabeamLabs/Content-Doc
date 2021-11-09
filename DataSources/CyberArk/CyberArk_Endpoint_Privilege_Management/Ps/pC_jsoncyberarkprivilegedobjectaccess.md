@@ -24,4 +24,5 @@ Name = json-cyberark-privileged-object-access
     """"RestrictedObjectId"{1,20}:"{1,20}\{({object_id}[^"}]{1,2000})""",
   ]
 }
+}
 ```

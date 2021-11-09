@@ -14,4 +14,5 @@ Name = vmware-failed-auth
     """User (?:({domain}[^\\\s]{1,2000})\\+)?({user}[^\\\s]{1,2000})""",
    ]
 }
+}
 ```

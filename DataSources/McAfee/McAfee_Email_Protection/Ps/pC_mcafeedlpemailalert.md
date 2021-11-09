@@ -22,4 +22,5 @@ Name = mcafee-dlp-email-alert
       """\snumber-attachment\(s\)='({num_attachments}\d{1,100})"""
     ]
   }
+}
 ```

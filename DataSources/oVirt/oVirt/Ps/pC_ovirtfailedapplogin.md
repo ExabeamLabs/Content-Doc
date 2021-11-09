@@ -15,4 +15,5 @@ Name = ovirt-failed-app-login
     """({app}ovirt)"""
   ]
 }
+}
 ```

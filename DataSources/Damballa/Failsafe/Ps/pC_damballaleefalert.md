@@ -22,4 +22,5 @@ Name = damballa-leef-alert
     """\tdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
 }
+}
 ```

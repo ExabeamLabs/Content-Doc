@@ -33,4 +33,5 @@ Name = s-symantec-web-activity
     """\Wmalicious:\s{0,100}({malicious}[^,]{1,2000})""",
   ]
 }
+}
 ```

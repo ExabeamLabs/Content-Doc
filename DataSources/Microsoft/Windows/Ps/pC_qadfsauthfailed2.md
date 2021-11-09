@@ -33,6 +33,5 @@ q-adfs-auth = {
       """<Server>({auth_server}[^<]{1,2000})</Server>""",
       """:({service}[^:>]{1,2000})</RelyingParty>""",
       """<PrimaryAuth>(N\/A|[^<]{1,2000}?\/({auth_method}[^<\/]{1,2000}))</PrimaryAuth>""",
-    ]
- 
+    ]}
 ```

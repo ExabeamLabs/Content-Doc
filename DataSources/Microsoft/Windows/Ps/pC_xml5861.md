@@ -19,4 +19,5 @@ Name = xml-5861
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

@@ -24,4 +24,5 @@ Name = json-defender-email-events
     """({file_verdict}Malicious Payload)"""
     ]
 }
+}
 ```

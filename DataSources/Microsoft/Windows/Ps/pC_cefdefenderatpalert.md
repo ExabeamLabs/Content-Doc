@@ -16,4 +16,5 @@ Name = cef-defender-atp-alert
   ]
   DupFields = [ "category->alert_type" ]
 }
+}
 ```

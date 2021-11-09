@@ -33,4 +33,5 @@ Name = cisco-umbrella-proxy
     """"categories"{1,20}:\["{1,20}({categories}[^"]{1,2000})"""", 
   ]
 }
+}
 ```

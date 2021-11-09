@@ -7,4 +7,5 @@ Name = cef-cisco-dns-response-sk4-roaming-computer
     """"mostGranularIdentity":"({src_host}[^"]+)"""",
   ]
 }
+}
 ```

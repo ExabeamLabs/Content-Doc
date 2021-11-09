@@ -19,4 +19,5 @@ Name = fortinet-auth-successful
     """\sserver="({dest_host}[^"]{1,2000})""",
   ]
 }
+}
 ```

@@ -26,4 +26,5 @@ Name = cylance-protect-file-alert
   ]
   DupFields = [ "host->src_host", "old_hash->new_hash" ]
 }
+}
 ```

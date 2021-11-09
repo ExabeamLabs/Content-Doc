@@ -15,4 +15,5 @@ Name = gravityzone-web-activity-denied
     """"url":"({full_url}({web_domain}[^"\\\/:]{1,2000})(:({dest_port}\d{1,100}))?({uri_path}[\\\/]{1,2000}[^"\?]{0,2000}?)({uri_query}\?[^"]{0,2000})?)"""",
   ]
 }
+}
 ```

@@ -26,4 +26,5 @@ Name = cef-mcafee-dlp-alert-2
       ]
       DupFields = ["alert_type->alert_name"]
     }
+}
 ```

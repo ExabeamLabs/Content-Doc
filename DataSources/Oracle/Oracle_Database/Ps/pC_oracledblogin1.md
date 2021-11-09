@@ -24,4 +24,5 @@ Name = oracle-db-login-1
   ]
   DupFields = [ "user->os_user" ]
 }
+}
 ```

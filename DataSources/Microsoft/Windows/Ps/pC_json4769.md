@@ -30,4 +30,5 @@ Name = json-4769
       """"Status":"({result_code}[^"]{1,2000})"""
     ]
   }
+}
 ```

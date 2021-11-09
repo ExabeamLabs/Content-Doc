@@ -20,4 +20,5 @@ Name = cef-kaspersky-dlp-email
     """msg=\w+\s{1,100}"{1,20}({attachment}[^"]{1,2000})""",
     ]
 }
+}
 ```

@@ -15,4 +15,5 @@ Name = unix-failed-logon-11
     """No authentication methods succeeded for user ({user}[^""]{1,2000})"""
   ]
 }
+}
 ```

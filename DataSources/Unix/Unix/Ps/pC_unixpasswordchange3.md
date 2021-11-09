@@ -14,4 +14,5 @@ Name = unix-password-change-3
     """couldn't change password for '({account}[^']{1,2000})""",
   ]
 }
+}
 ```

@@ -16,4 +16,5 @@ Name = symantec-av-dlp-alert
     """,Remote:\s{0,100}(0.0.0.0|({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})),Remote:\s{0,100}(|({dest_host}[\w\-\.]{1,2000})),Remote:\s{0,100}({dest_port}\d{1,100}),""",
     """({protocol}[^,]{1,2000}),({direction}[^,]{1,2000}),Begin:""",
     """\WApplication:\s{0,100}({process}({directory}[^",]{1,2000}?)?([\\\/]{1,2000}({process_name}[^\\\/,"]{1,2000})))\s{0,100}
+}
 ```

@@ -17,4 +17,5 @@ Name = azure-mfa-admin-activity
     """changed user "{1,20}({target}[^"]{1,2000})"{1,20}\s{1,100}({additional_info}value\s{1,100}({activity}[^=]{1,2000}?)\s{1,100}from "{1,20}[^"]{1,2000}"{1,20} to "{1,20}[^"]{1,2000}"{1,20})\."""
     ]
 }
+}
 ```

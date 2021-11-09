@@ -17,4 +17,5 @@ Name = foxt-ssh-login
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

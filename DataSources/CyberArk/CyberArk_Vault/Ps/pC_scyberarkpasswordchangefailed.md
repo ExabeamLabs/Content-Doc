@@ -10,4 +10,5 @@ Name = s-cyberark-password-change-failed
   ]
   DupFields=[ "host->dest_host" ]
 }
+}
 ```

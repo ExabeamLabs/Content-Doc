@@ -39,4 +39,5 @@ Name = cisco-process-network
     """\sst=({system_type}[^\s]{1,2000})\s"""
   ]
 }
+}
 ```

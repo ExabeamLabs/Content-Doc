@@ -26,4 +26,5 @@ Name = cef-sybase-db-login
   ]
   DupFields = [ "os_user->user" ]
 }
+}
 ```

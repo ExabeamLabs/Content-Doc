@@ -17,4 +17,5 @@ Name = cisco-sourcefire-alert
   ]
   DupFields = [ "policy->alert_name" ]
 }
+}
 ```

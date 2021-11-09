@@ -25,4 +25,5 @@ Name = s-vontu-dlp-email-alert
     """\Wsubject="({subject}[^"]{1,2000})"""
   ]
 }
+}
 ```

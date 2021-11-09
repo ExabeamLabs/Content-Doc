@@ -29,4 +29,5 @@ Name = cef-netskope-alert
   ]
   DupFields = ["process->process_name"]
 }
+}
 ```

@@ -15,4 +15,5 @@ Name = citrix-device-aaa-auth-success
   ]
   DupFields = ["host->src_host"]
 }
+}
 ```

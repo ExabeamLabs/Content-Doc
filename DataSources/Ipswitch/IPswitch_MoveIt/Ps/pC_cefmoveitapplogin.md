@@ -20,4 +20,5 @@ Name = cef-moveit-app-login
   ]
    DupFields=["account_id->user"]
 }
+}
 ```

@@ -25,4 +25,5 @@ Name = n-cef-bluecoat-proxy
     """\Wduser=({user_agent}.+?)\s{1,100}(\w+=|$)""",
   ]
 }
+}
 ```

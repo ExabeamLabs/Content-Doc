@@ -11,4 +11,5 @@ Name = ccure-app-activity
   Fields = [
               """exabeam_raw=({activity}[^,]{1,2000})""",
               """exabeam_raw=[^,]{0,2000}
+}
 ```

@@ -34,4 +34,5 @@ Name = endgame-edr-security-alert
     """"operating_system":\s{0,100}"({os}[^"]{1,2000})""",
   ]
 }
+}
 ```

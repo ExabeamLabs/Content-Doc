@@ -19,4 +19,5 @@ Name = cef-salesforce-app-activity-34
   ]
   DupFields = [ "sender->email_user", "sender->orig_user", "recipient->external_address", "recipients->to_address" ]
 }
+}
 ```

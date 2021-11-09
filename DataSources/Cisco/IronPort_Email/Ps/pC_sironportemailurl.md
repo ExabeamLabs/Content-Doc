@@ -17,4 +17,5 @@ Name = s-ironport-email-url
       """Custom Log Entry:\s{0,100}({url_verdict}.+?)\s{0,100}URL""",
     ]
   }
+}
 ```

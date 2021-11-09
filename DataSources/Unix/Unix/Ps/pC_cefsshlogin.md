@@ -21,4 +21,5 @@ Name = cef-ssh-login
     """({event_code}ssh)"""
   ]
 }
+}
 ```

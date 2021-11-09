@@ -12,4 +12,5 @@ Name = contivity-vpn-end
              """({time}\d{1,100}/\d{1,100}/\d{1,100} \d{1,100}:\d{1,100}:\d{1,100})""",
              """\[({user}[\w.'\-]{1,2000})\]:({contivity_session_id}\d{1,100}) logged out""" ]
 }
+}
 ```

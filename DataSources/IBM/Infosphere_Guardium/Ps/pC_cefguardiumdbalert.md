@@ -22,4 +22,5 @@ Name = cef-guardium-db-alert
   ]
   DupFields = [ "alert_name->alert_type", "db_user->account" ]
 }
+}
 ```

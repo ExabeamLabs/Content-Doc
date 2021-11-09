@@ -18,4 +18,5 @@ Name = asa-nap-cef-7.1.7-vpn-start
       """\sdvchost=({host}.+?)\s{1,100}(\w+=|$)"""
     ]
   }
+}
 ```

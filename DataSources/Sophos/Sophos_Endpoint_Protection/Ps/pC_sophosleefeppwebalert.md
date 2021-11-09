@@ -19,4 +19,5 @@ Name = sophos-leef-epp-web-alert
           """src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
 }
+}
 ```

@@ -14,4 +14,5 @@ Name = json-exchange-scanmail-alert
    """"level":"({alert_severity}[^"]{1,2000})""", 
   ]
 }
+}
 ```

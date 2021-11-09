@@ -27,4 +27,5 @@ Name = ad-audit-4743
  ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

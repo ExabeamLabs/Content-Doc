@@ -25,4 +25,5 @@ Name = raw-juniper-nwc-vpn-connected
   ]
   DupFields = [ "host->dest_host" , "user->account"]
 }
+}
 ```

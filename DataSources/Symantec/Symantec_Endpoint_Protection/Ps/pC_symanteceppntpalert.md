@@ -24,4 +24,5 @@ Name = symantec-epp-ntp-alert
     """CIDS Signature ID:\s{0,100}({alert_name}\d{1,100}),""",
     """Intrusion ID:\s{0,100}({alert_id}\d{1,100}),""",
     """CIDS Signature string:\s{0,100}(|({alert_type}[^:,]{1,2000}?))\s{0,100}
+}
 ```

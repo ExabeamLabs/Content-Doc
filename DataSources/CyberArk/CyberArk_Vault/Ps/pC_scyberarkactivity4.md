@@ -9,4 +9,5 @@ Name = s-cyberark-activity-4
   ]
   
  }
+}
 ```

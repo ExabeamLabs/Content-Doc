@@ -15,4 +15,5 @@ Name = raw-675
       """rn=({record_id}\d{1,100})""",
       """exabeam_host=({host}[\w.\-]{1,2000})""",
       """(?i)(((audit|success|failure)( |_)(success|audit|failure))|information)(\s{1,100}|\s{0,100}
+}
 ```

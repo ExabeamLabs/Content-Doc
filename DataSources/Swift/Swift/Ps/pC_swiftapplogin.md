@@ -21,4 +21,5 @@ Name = swift-app-login
       """msg=.+?using\s{0,100}\'({platform}[^\']{1,2000})"""
     ]
   }
+}
 ```

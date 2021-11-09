@@ -19,4 +19,5 @@ Name = s-snowflake-db-query-1
     """SCHEMA_NAME="({database_schema}[^"]{1,2000})"""",
   ]
 }
+}
 ```

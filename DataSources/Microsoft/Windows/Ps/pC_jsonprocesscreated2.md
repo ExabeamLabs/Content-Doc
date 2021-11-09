@@ -26,4 +26,5 @@ Name = json-process-created-2
     ]
     DupFields = [ "host->dest_host", "directory->process_directory" ]
   }
+}
 ```

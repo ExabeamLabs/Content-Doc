@@ -30,4 +30,5 @@ Name = checkpoint-proxy
     """app_properties:\s{1,100}(?:-|({category}[^,;]{1,2000})).*matched_category:\s{1,100}High Risk""",
   ]
 }
+}
 ```

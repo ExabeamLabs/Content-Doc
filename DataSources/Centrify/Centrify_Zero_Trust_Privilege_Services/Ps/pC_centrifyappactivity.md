@@ -28,4 +28,5 @@ Name = centrify-app-activity
     """cat=({event_name}[^\s]{1,2000})""",
         ]
 }
+}
 ```

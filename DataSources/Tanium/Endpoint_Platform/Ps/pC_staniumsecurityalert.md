@@ -27,4 +27,5 @@ Name = s-tanium-security-alert
       """Match-Details.*"{1,20}properties"{1,20}:\{"{1,20}args"{1,20}:"({command_line}.*?)","{1,20}cwd"""
     ]
   }
+}
 ```

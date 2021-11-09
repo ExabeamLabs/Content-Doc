@@ -21,4 +21,5 @@ Name = o365-powerbi-activity
     """"ipAddress":"({src_ip}[A-Fa-f:\d.]{1,2000})"""",
     """"ClientIP"{1,20}:"{1,20}({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """UserAgent"{0,20}:\s{0,100}"{0,20}({user_agent}[^"]{1,2000})"{0,20}
+}
 ```

@@ -25,4 +25,5 @@ Name = cef-cortex-xdr-alert
   ]
   DupFields = [ "process->path","directory->process_directory" ]
 }
+}
 ```

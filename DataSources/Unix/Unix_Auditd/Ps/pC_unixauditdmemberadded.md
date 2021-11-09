@@ -19,4 +19,5 @@ Name = unix-auditd-member-added
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

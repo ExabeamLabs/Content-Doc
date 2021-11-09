@@ -19,4 +19,5 @@ Name = raw-5805
     """The following error occurred:\s{1,100}({failure_reason}[^<]{1,2000})\.<\/Message>"""
   ]
 }
+}
 ```

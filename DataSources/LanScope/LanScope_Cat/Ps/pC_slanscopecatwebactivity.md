@@ -17,4 +17,5 @@ Name = s-lanscopecat-web-activity
     """\sIPAddress="({src_ip}[a-fA-F\d.:]{1,2000})""",
   ]
 }
+}
 ```

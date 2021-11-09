@@ -22,4 +22,5 @@ Name = jh-file-download
   ]
   DupFields = [ "accesses->activity" ]
 }
+}
 ```

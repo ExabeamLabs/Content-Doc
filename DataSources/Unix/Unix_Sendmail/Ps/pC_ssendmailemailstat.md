@@ -19,4 +19,5 @@ Name = s-sendmail-email-stat
     """({bytes}\d{1,100})\sbytes"""
   ]
 }
+}
 ```

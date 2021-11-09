@@ -18,4 +18,5 @@ Name = json-lenel-badge-access
     """"description":"({outcome}[^"]{1,2000})""",
   ]
 }
+}
 ```

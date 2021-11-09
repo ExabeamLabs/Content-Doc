@@ -24,4 +24,5 @@ Name = illumio-network-connection
     """"{1,20}loc"{1,20}:"{1,20}({location}[^"]{1,2000})"{1,20}""",
   ]
 }
+}
 ```

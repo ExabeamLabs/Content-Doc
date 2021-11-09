@@ -34,4 +34,5 @@ Name = zscaler-firewall
   ]
   DupFields = ["outcome->action"]
 }
+}
 ```

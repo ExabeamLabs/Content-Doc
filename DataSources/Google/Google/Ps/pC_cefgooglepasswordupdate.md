@@ -18,4 +18,5 @@ Name = cef-google-password-update
     """destinationServiceName=({app}[^=]{1,2000}?)\s{0,10}(\w{1,2000}=|$)"""    
   ]
 }
+}
 ```

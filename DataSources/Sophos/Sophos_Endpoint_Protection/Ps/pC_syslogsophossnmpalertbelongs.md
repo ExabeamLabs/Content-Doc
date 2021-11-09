@@ -18,4 +18,5 @@ Name = syslog-sophos-snmp-alert-belongs
   ]
   DupFields = [ "file_path->malware_url" ]
 }
+}
 ```

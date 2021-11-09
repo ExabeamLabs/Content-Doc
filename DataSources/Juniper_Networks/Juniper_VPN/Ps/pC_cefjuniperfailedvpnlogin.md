@@ -16,4 +16,5 @@ Name = cef-juniper-failed-vpn-login
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """Reason:\s{1,100}({failure_reason}.+?)(\|[^\s]{0,2000})?\s\w+=""" ]
 }
+}
 ```

@@ -6,4 +6,5 @@ Name = cef-netskope-app-activity-25
   Conditions = [ """"type":"""", """destinationServiceName=Netskope""", """"activity":"SearchQueryPerformed"""" ]
   DupFields = [ "activity->accesses", "object->file_name" ]
 }
+}
 ```

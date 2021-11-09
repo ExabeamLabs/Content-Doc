@@ -11,4 +11,5 @@ Name = syslog-symantec-dlp-alert-7
   Fields = [
     """({host}[^\s]{1,2000})\s{0,100}Incident_Snapshot:""",
     """Occurred:\s{0,100}({time}\w+ \d{1,100}
+}
 ```

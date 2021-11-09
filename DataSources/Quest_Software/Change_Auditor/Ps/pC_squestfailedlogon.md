@@ -25,4 +25,5 @@ Name = s-quest-failed-logon
      """suid=({user_sid}[^\s]{1,2000})"""
   ]
 }
+}
 ```

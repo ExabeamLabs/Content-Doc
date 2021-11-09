@@ -20,4 +20,5 @@ Name = syslog-physical-badge-access
       """(?:[^;]{0,2000};){3}(?:[^.]{0,2000}.){5}({location_door}[^;]{1,2000})"""
     ]
   }
+}
 ```

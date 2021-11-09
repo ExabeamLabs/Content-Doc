@@ -5,8 +5,8 @@ Vendor: HP
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     1      |      1      |    1    |
+|   2   |   0    |     2      |      1      |    1    |
 
-| Event Type      | Rules                                                                                                                                                       | Models |
-| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| process-created | <b>T1059 - Command and Scripting Interperter</b><br> ↳ <b>EPA-OH-CS</b>: First execution of critical windows command on a Domain Controller/Critical System |        |
+| Event Type   | Rules                                                                                                                                                                                                          | Models |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| failed-logon | <b>T1078 - Valid Accounts</b><br> ↳ <b>SEQ-UH-12</b>: Logon attempt on a disabled account<br><br><b>T1068 - Exploitation for Privilege Escalation</b><br> ↳ <b>ALERT-EXEC</b>: Security violation by Executive |        |

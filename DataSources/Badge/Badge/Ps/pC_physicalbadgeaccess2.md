@@ -19,4 +19,5 @@ Name = physical-badge-access-2
       """\sEventType="({outcome}[^"]{1,2000})""",
     ]
   }
+}
 ```

@@ -16,4 +16,5 @@ Name = json-ping-id-auth-failed-1
     """"application-msg"{1,20}:"{1,20}({failure_reason}[^}\]]{1,2000}?)\s{0,100}"[,\]}]"""
   ]
 }
+}
 ```

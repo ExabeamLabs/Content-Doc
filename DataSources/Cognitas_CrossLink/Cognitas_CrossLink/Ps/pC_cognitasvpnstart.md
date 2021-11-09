@@ -16,4 +16,5 @@ Name = cognitas-vpn-start
       """\sdvchost=({host}[^\s]{1,2000})"""
     ]
   }
+}
 ```

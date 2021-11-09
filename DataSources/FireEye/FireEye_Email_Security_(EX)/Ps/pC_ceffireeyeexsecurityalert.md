@@ -20,4 +20,5 @@ Name = cef-fireeye-ex-security-alert
      """\scs5Label=cncHost cs5=(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^\s]{1,2000}))""",
      """\sdst=({dest_ip}[A-Fa-f:\d.]{1,2000})""",
      """\sfname=(?:[^,]{1,2000}
+}
 ```

@@ -28,6 +28,5 @@ cef-bromium-file-operations = {
       """\Wfname=({file_path}.+?)\s{0,100}(\w+=|$)""",
       """\Wfname=({file_parent}[^=]{1,2000}?)[\\\/]{1,2000}({file_name}[^\\\/=]{1,2000}?)\s{0,100}(\w+=|$)""",
       """\Wmsg=({additional_info}.+?)\s{0,100}(\w+=|$)"""
-    ]
- 
+    ]}
 ```

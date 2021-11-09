@@ -21,4 +21,5 @@ Name = pan-fw-packet-logs
       """\sdst_port=({dest_port}\d{1,100})"""
     ]
   }
+}
 ```

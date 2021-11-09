@@ -16,4 +16,5 @@ Name = cef-powershell-4102
     """\|Microsoft-Windows-PowerShell:4102\|({additional_info}[^|]{1,2000})\|""",
   ]
 }
+}
 ```

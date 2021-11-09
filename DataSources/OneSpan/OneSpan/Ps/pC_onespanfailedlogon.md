@@ -21,4 +21,5 @@ Name = onespan-failed-logon
     """\{Reason\s{0,100}:\s{0,100}({failure_reason}[^\}]{1,2000})""",
   ]
 }
+}
 ```

@@ -25,4 +25,5 @@ Name = remotelyanywhere-remote-login
   ]
   DupFields = [ "event_name->event_type" ]
 }
+}
 ```

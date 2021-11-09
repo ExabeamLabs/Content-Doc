@@ -22,4 +22,5 @@ Name = cef-cisco-ise-nac-failed-logon
   ]
   DupFields = [ "host->auth_server" ]
 }
+}
 ```

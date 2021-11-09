@@ -19,4 +19,5 @@ Name = s-microsoft-dns-update
   ]
   DupFields = [ "dest_host->user" ]
 }
+}
 ```

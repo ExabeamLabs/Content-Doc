@@ -23,4 +23,5 @@ Name = vontu-dlp-1
       """({alert_type}DLP ALERT)""",
     ]
   }
+}
 ```

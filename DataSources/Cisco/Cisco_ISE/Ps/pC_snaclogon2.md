@@ -29,4 +29,5 @@ Name = s-nac-logon-2
   ]
   DupFields = ["dest_host->auth_server"]
 }
+}
 ```

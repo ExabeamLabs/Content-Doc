@@ -26,4 +26,5 @@ Name = skyformation-cloudflare-waf-2
     """"clientRequestHTTPProtocol":"({protocol}[^"//]{1,2000})""",
     ]
 }
+}
 ```

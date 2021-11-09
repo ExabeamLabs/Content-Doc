@@ -26,4 +26,5 @@ Name = cef-vectra-alert
     """\scs4=({additional_info}[^|]{1,2000}?)\s\w{1,2000}="""
  ]
 }
+}
 ```

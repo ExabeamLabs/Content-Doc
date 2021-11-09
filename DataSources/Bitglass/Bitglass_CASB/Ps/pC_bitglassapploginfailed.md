@@ -21,4 +21,5 @@ Name = bitglass-app-login-failed
     """"details":\s{0,100}"({failure_reason}.+?)","""
   ]
 }
+}
 ```

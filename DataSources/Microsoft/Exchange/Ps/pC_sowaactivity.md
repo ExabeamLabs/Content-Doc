@@ -22,4 +22,5 @@ Name = s-owa-activity
       """User=({domain}[^%]{1,2000})%5C"""
     ]
   }
+}
 ```

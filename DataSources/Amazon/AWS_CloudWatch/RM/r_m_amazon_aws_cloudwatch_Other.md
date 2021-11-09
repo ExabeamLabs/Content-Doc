@@ -5,9 +5,8 @@ Vendor: Amazon
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   7   |   2    |     0      |      3      |    3    |
+|   4   |   1    |     0      |      3      |    3    |
 
-| Event Type         | Rules | Models                                                                          |
-| ------------------ | ----- | ------------------------------------------------------------------------------- |
-| file-alert         |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset |
-| netflow-connection |       |  • <b>A-NETFLOW-dHdP</b>: Destination Ports per asset                           |
+| Event Type     | Rules | Models                                                                          |
+| -------------- | ----- | ------------------------------------------------------------------------------- |
+| security-alert |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset |

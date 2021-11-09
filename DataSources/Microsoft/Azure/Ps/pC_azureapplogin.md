@@ -22,4 +22,5 @@ Name = azure-app-login
   ]
     DupFields= ["event_hub_namespace->host"]
 }
+}
 ```

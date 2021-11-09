@@ -16,4 +16,5 @@ Name = raw-juniper-nwc-vpn-authsuccess-1
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

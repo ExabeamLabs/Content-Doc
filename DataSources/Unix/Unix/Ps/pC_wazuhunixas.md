@@ -16,4 +16,5 @@ Fields = ${WazuhParserTemplates.wazuh-common-fields.Fields} [
   ]
   DupFields = [ "host->dest_host", "user_uid->user_id", "description->event_name"]
 }
+}
 ```

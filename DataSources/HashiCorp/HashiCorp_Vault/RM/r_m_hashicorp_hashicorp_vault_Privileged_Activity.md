@@ -5,8 +5,8 @@ Vendor: HashiCorp
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     1      |      2      |    2    |
+|   1   |   1    |     1      |      2      |    2    |
 
-| Event Type | Rules                                                                                                         | Models |
-| ---------- | ------------------------------------------------------------------------------------------------------------- | ------ |
-| app-login  | <b>T1078 - Valid Accounts</b><br> ↳ <b>APP-Account-deactivated</b>: Activity from a de-activated user account |        |
+| Event Type               | Rules                                                                                                                                                                        | Models                                                                                       |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| privileged-object-access | <b>T1059 - Command and Scripting Interperter</b><br> ↳ <b>WPA-OH-F</b>: First execution of critical windows command using privileged access on this host in the organization |  • <b>WPA-OH</b>: Assets on which critical windows commands are executed in the organization |

@@ -17,4 +17,5 @@ Name = f5-vpn-session-start
     """client IP ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
 }
+}
 ```

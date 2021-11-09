@@ -19,4 +19,5 @@ Name = cef-pan-auth-successful
     """Client OS( version)?:\s{1,100}({os}[^":]{1,2000})(,|\.)"""
   ]
 }
+}
 ```

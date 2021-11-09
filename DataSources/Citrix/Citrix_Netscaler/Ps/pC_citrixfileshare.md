@@ -20,4 +20,5 @@ Name = citrix-file-share
       """msg=({additional_info}.+?)\s{0,100}\w+=""",
   ]
 }
+}
 ```

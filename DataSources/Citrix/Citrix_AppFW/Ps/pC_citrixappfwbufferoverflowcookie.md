@@ -14,4 +14,5 @@ Name = citrix-appfw-bufferoverflow-cookie
   ]
   DupFields = ["event_name->alert_name"]
 }
+}
 ```

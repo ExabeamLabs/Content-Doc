@@ -22,4 +22,5 @@ Name = cef-mimecast-dlp-email
     """"Sender":"(<>|({sender}[^"]{1,2000}))""""
   ]
 }
+}
 ```

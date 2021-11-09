@@ -20,4 +20,5 @@ Name = cef-carbonblack-file-write-4
     """fname=({file_path}(({file_parent}[^=]{0,2000}?[\\\/]{1,2000})?({file_name}[^\\\/=]{1,2000}?(\.({file_ext}\w+))?)))\s{1,100}\w+="""
   ]
 }
+}
 ```

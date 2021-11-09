@@ -24,4 +24,5 @@ Name = q-cisco-acs-nac-logon
     """,\s{0,100}AuthenticationMethod=({auth_type}[^,]{1,2000})""",
   ]
 }
+}
 ```

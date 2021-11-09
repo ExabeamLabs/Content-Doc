@@ -26,4 +26,5 @@ Name = cef-syslog-oracle-db-query
     ]
     DupFields = ["host->dest_host", "account->db_user"]
   }
+}
 ```

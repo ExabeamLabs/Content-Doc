@@ -21,4 +21,5 @@ Name = cef-unix-sudo
       """({event_code}sudo)"""
     ]
   }
+}
 ```

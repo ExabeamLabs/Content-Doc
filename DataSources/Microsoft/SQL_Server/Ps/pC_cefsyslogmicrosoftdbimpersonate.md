@@ -22,4 +22,5 @@ Name = cef-syslog-microsoft-db-impersonate
     """\sdhost=({dest_host}[^\s]{1,2000})"""
   ]
 }
+}
 ```

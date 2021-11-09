@@ -25,4 +25,5 @@ Name = cisco-esa-dlp-alert
   ]
   DupFields = [ "sender->user_email" ]
 }
+}
 ```

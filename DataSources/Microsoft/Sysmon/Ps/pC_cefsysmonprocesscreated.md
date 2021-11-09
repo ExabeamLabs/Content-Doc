@@ -30,4 +30,5 @@ Name = cef-sysmon-process-created
   ]
   DupFields = [ "directory->process_directory" ]
 }
+}
 ```

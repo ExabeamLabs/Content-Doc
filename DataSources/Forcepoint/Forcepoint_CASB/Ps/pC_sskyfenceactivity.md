@@ -25,4 +25,5 @@ Name = s-skyfence-activity
     """\smsg="{1,20}({additional_info}[^"]{1,2000})"""
   ]
 }
+}
 ```

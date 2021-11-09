@@ -21,4 +21,5 @@ Name = centrify-file-access
     """reason=({failure_reason}.+?)\s{0,100}$"""
   ]
 }
+}
 ```

@@ -18,4 +18,5 @@ Name = asa-svc-cef-vpn-close
       """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     ]
   }
+}
 ```

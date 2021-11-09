@@ -24,4 +24,5 @@ Name = raw-asa-svc-vpn-end
     """%ASA-({priority}\d{1,100})-({event_code}\d{1,100})""",
     ]
 }
+}
 ```

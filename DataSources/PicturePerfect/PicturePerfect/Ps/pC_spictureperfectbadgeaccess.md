@@ -19,4 +19,5 @@ Name = s-pictureperfect-badge-access
     ]
     DupFields = [ "location_full->location_door" ]
   }
+}
 ```

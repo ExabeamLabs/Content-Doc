@@ -33,4 +33,5 @@ Name = cef-defender-atp-process-1
   ]
   DupFields = ["category->event_name", "event_hub_namespace->host"]
 }
+}
 ```

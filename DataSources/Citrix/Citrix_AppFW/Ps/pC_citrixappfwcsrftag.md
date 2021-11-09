@@ -14,4 +14,5 @@ Name = citrix-appfw-csrf-tag
   ]
   DupFields = ["event_name->alert_name"]
 }
+}
 ```

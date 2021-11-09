@@ -19,4 +19,5 @@ Name = json-f5-auth-attempt
     """({event_name}Login)""",
   ]
 }
+}
 ```

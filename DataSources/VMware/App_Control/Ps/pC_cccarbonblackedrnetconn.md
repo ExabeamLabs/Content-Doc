@@ -8,4 +8,5 @@ Name = cc-carbonblack-edr-netconn
     """"parent_path":"({parent_process}({parent_directory}[^"]{1,2000}(\\|\/)+)?({parent_process_name}[^"]{1,2000}))"""",
   ]
 }
+}
 ```

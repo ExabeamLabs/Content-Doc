@@ -22,4 +22,5 @@ Name = symantec-dlp-alert-1
     """user=({user_email}[^,]{1,2000}),"""
   ]
 }
+}
 ```

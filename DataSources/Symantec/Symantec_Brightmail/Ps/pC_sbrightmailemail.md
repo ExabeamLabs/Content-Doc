@@ -16,4 +16,5 @@ Name = s-brightmail-email
       """to\s{1,100}<?({recipient}[^\s@<]{1,2000}@[^\s@>]{1,2000})>?\s{1,100}using""",
     ]
   }
+}
 ```

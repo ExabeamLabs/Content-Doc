@@ -14,4 +14,5 @@ Name = carbonblack-endpoint-process-network
     ]
     DupFields = ["activity_type->event_name"]
 }
+}
 ```

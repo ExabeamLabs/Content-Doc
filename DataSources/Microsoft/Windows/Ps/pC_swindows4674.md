@@ -15,4 +15,5 @@ Name = s-windows-4674
     ]
       DupFields=[ "host->dest_host","process_directory->directory" ]
   }
+}
 ```

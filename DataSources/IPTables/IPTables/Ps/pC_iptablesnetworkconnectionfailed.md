@@ -22,4 +22,5 @@ Name = iptables-network-connection-failed
     """\sDPT=({dest_port}\d{1,100})""",
   ]
 }
+}
 ```

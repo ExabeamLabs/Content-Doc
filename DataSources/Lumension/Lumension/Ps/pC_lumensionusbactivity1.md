@@ -22,4 +22,5 @@ Name = lumension-usb-activity-1
     """suser=({user}[^\s]{1,2000})""",
   ]
 }
+}
 ```

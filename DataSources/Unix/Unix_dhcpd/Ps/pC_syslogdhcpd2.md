@@ -15,4 +15,5 @@ Name = syslog-dhcpd-2
   ]
   DupFields = [ "dest_host->user" ]
 }
+}
 ```

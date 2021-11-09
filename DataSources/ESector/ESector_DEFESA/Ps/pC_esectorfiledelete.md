@@ -9,4 +9,5 @@ Name = esector-file-delete
     """({event_name}ファイル削除)"""
   ]
 }
+}
 ```

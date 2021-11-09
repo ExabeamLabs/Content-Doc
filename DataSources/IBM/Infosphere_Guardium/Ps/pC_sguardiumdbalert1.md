@@ -28,4 +28,5 @@ Name = s-guardium-db-alert-1
   ]
   DupFields = [ "db_user->account","directory->process_directory" ]
 }
+}
 ```

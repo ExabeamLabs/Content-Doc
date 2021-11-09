@@ -19,4 +19,5 @@ Name = nas-share-access-1
     """accessed the shared ({file_type}folder) \[({share_name}.+?)\]"""
   ]
 }
+}
 ```

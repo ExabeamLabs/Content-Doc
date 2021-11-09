@@ -27,4 +27,5 @@ Name = checkpoint-vpn-login-5
     """({action}Successful)"""
   ]
 }
+}
 ```

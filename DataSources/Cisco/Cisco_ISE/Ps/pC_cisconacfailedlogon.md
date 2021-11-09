@@ -29,4 +29,5 @@ Name = cisco-nac-failed-logon
     """NAS-IP-Address=({nas_ip_address}[A-Fa-f\d:.]{1,2000})"""
   ]
 }
+}
 ```

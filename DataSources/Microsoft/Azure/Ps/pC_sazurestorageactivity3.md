@@ -21,4 +21,5 @@ Name = s-azure-storage-activity-3
          """"resourceId".+?\/containers\/({bucket}[^\/"])""",
  ]
 }
+}
 ```

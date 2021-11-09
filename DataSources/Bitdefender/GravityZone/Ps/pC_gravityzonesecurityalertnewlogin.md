@@ -20,4 +20,5 @@ Name = gravityzone-security-alert-new-login
   ]
   DupFields = ["domain->email_domain"]
 }
+}
 ```

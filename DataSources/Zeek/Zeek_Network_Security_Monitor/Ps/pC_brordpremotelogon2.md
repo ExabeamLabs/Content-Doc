@@ -17,4 +17,5 @@ Name = bro-rdp-remote-logon-2
     """3389\t(?:\(empty\)|(({domain}[^\\]{1,2000})\\+)?({user}.*?))\tSuccess"""
   ]
 }
+}
 ```

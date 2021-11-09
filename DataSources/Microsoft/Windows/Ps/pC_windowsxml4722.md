@@ -22,4 +22,5 @@ Name = windows-xml-4722
     """<Data Name='SubjectLogonId'>({logon_id}[^<]{1,2000})<"""
   ]
 }
+}
 ```

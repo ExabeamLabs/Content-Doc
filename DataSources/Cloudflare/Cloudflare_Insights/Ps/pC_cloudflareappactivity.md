@@ -18,4 +18,5 @@ Name = cloudflare-app-activity
     """msg=({additional_info}.+?)\s\w+=""",
   ]
 }
+}
 ```

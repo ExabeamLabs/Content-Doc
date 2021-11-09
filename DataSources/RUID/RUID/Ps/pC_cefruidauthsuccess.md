@@ -21,4 +21,5 @@ Name = cef-ruid-auth-success
     """\Wdst=({dest_ip}[a-fA-F\d.:]{1,2000})""",
   ]
 }
+}
 ```

@@ -24,4 +24,5 @@ Name = cef-trendmicro-security-alert-9
     """\Wcs1=(|({alert_name}.+?))\s\w+=""",
   ]
 }
+}
 ```

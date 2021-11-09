@@ -20,4 +20,5 @@ Name = unix-auditd-account-switch
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

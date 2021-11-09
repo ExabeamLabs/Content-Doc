@@ -14,4 +14,5 @@ Name = citrix-appfw-malformed-req-err
   ]
   DupFields = ["event_name->alert_name"]
 }
+}
 ```

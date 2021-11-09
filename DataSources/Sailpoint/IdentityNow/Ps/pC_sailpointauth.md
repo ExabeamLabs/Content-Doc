@@ -7,4 +7,5 @@ Name = sailpoint-auth
      """"info":\s{0,100}"(NONE|({additional_info}[^",]{1,2000}))""""
   ]
 }
+}
 ```

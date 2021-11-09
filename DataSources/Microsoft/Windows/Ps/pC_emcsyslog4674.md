@@ -26,4 +26,5 @@ Name = emc-syslog-4674
   ]
   DupFields = [ "host->dest_ip","directory->process_directory" ]
 }
+}
 ```

@@ -20,4 +20,5 @@ Name = vmware-horizon-logon
     """ApplicationId="{0,20}({object}[^"]{1,2000})"""
   ]
 }
+}
 ```

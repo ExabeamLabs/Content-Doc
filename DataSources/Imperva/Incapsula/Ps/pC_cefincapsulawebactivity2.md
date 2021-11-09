@@ -27,4 +27,5 @@ Name = cef-incapsula-web-activity-2
 
   DupFields = [ "uri_path ->full_url" ]
 }
+}
 ```

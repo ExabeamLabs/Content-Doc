@@ -22,4 +22,5 @@ Name = s-sailpointsiq-sponpremise-file-delete
   ]
   DupFields = [ "host->dest_ip", "activity->accesses" ]
 }
+}
 ```

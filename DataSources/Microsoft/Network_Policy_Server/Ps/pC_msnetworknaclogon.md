@@ -18,4 +18,5 @@ Name = msnetwork-nac-logon
     """,31,({src_mac}[^\,]{1,2000}),"""
   ]
 }
+}
 ```

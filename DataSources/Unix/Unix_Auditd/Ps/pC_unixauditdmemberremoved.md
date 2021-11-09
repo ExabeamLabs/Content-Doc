@@ -19,4 +19,5 @@ Name = unix-auditd-member-removed
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

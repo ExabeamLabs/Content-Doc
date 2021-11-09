@@ -9,4 +9,5 @@ Name = netwrix-ad-account-lockout
     """cat=user.+?filePath=\\+?([^\\]{1,2000}\\+)*?({target_user}[^\\]{1,2000}) start=""",
   ]
 }
+}
 ```

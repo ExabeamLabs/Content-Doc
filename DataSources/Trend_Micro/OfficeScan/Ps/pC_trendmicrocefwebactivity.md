@@ -21,4 +21,5 @@ Name = trendmicro-cef-web-activity
     """\WdeviceFacility=({activity}.+?)\s{1,100}(\w+=|$)""",
   ]
 }
+}
 ```

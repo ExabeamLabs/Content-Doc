@@ -8,4 +8,5 @@ Name = cef-sophos-dlp-alert-7
     """"name"{0,20}:"{0,20}({alert_name}[^"]{1,2000}).\sUsername:"""
   ]
 }
+}
 ```

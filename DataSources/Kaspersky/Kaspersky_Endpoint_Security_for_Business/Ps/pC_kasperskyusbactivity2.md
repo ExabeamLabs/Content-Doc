@@ -21,4 +21,5 @@ Name = kaspersky-usb-activity-2
   ]
   DupFields = [ "activity_details->alert_name","action->alert_type","activity->outcome" ]
 }
+}
 ```

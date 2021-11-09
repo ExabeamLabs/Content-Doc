@@ -24,4 +24,5 @@ Name = mcafee-siem-process-created
     ]
     DupFields = [ "host->dest_host", "directory->process_directory" ]
   }
+}
 ```

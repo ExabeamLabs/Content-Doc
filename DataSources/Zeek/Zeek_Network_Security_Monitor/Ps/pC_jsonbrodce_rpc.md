@@ -21,4 +21,5 @@ Name = json-bro-dce_rpc
     """"operation\\?"{1,20}:\\?"{1,20}({process_name}[^"\\]{1,2000})"""
   ]
 }
+}
 ```

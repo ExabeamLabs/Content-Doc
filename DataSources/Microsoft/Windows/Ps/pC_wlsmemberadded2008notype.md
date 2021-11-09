@@ -26,4 +26,5 @@ Name = wls-member-added-2008-notype
   ]
   DupFields = [ "event_code->group_type", "host->dest_host" ]
 }
+}
 ```

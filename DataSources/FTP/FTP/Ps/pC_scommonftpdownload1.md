@@ -24,4 +24,5 @@ Name = s-common-ftp-download-1
   ]
   DupFields = [ "host->dest_host", "file_ext->host_file_ext" ]
 }
+}
 ```

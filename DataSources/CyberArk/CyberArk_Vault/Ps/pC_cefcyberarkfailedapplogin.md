@@ -24,4 +24,5 @@ Name = cef-cyberark-failed-app-login
     """({app}Cyber-Ark)"""
   ]
 }
+}
 ```

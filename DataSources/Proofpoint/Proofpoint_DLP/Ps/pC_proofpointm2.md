@@ -16,4 +16,5 @@ Name = proofpoint-m2
     """\srcpt=({recipient}[^@=]{1,2000}?@.+?)\s{1,100}(\w+=|$)"""
   ]
 }
+}
 ```

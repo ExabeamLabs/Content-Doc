@@ -27,4 +27,5 @@ Name = cef-fortinet-network-connection
   ]
   DupFields = [ "action->outcome" ]
 }
+}
 ```

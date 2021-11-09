@@ -21,4 +21,5 @@ Name = aruba-controller-failed-nac-logon
    """User\sAuthentication\s({outcome}[\w]{1,2000})"""
   ]
 }
+}
 ```

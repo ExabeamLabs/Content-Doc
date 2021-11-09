@@ -15,4 +15,5 @@ Name = s-windows-4648
     ]
       DupFields=[ "directory->process_directory" ]
   }
+}
 ```

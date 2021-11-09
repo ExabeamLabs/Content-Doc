@@ -25,4 +25,5 @@ Name = syslog-symantec-usb-write
   ]
   DupFields = ["directory->process_directory"]
 }
+}
 ```

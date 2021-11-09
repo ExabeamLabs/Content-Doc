@@ -17,4 +17,5 @@ Name = ccure-badge-access-1
     """<SecondaryObjectName>({location_door}[^<]{1,2000})""",
   ]
 }
+}
 ```

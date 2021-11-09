@@ -18,4 +18,5 @@ Name = xml-sophos-security-alert
     """</Message><Level>({alert_severity}[^\<]{1,2000})""",
   ]
 }
+}
 ```

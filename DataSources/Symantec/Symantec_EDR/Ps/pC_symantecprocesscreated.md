@@ -28,4 +28,5 @@ Name = symantec-process-created
     """cmd_line":"({command_line}[^\n]{1,2000}?)\s{0,100}","""
   ]
 }
+}
 ```

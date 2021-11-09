@@ -22,4 +22,5 @@ Name = s-mcafee-print-activity
      """exabeam_host=({host}[^\s]{1,2000})"""
   ]
 }
+}
 ```

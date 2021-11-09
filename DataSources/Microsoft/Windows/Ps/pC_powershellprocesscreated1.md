@@ -20,4 +20,5 @@ Name = powershell-process-created-1
   ]
   DupFields = [ "host->dest_host", "directory->process_directory" ]
 }
+}
 ```

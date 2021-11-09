@@ -13,4 +13,5 @@ Name = wazuh-unix-password-change
 ]
   DupFields=["host->dest_host", "description->event_name"]
 }
+}
 ```

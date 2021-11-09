@@ -21,4 +21,5 @@ Name = mcafee-siem-4722
       """"UserIDDst":"({target_user}[^"]{1,2000})"""
     ]
   }
+}
 ```

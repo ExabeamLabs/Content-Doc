@@ -20,4 +20,5 @@ Name = cef-juniper-vpn-end
     """Session ended for user with IP(v4)? address ({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
 }
+}
 ```

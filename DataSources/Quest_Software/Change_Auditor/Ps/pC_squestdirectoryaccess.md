@@ -27,4 +27,5 @@ Name = s-quest-directory-access
     """CN\\=.+?({object_ou}OU\\=.+?).\s{0,100}\w+=""",
   ]
 }
+}
 ```

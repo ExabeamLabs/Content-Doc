@@ -18,4 +18,5 @@ Name = secureauth-app-login
      	"""<UserAgent>(?:-|({user_agent}[^<]{1,2000}))""",
     ]
   }
+}
 ```

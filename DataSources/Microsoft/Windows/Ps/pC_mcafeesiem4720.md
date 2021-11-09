@@ -24,4 +24,5 @@ Name = mcafee-siem-4720
       """Enabled,({user_type}.*?)\s-\sEnabled"""
     ]
   }
+}
 ```

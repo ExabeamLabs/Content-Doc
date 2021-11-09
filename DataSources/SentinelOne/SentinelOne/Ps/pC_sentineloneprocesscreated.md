@@ -12,4 +12,5 @@ Name = sentinelone-process-created
   ]
   DupFields = ["host->dest_host"]
 }
+}
 ```

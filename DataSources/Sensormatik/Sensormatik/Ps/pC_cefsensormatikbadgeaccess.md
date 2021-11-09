@@ -17,4 +17,5 @@ Name = cef-sensormatik-badge-access
     """\Wcs2=({direction}.+?)\s{0,100}(\w+=|$)"""
   ]
 }
+}
 ```

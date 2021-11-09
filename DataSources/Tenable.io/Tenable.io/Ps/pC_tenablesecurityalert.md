@@ -26,4 +26,5 @@ Name = tenable-security-alert
     """"solution"{1,20}:\s{1,100}"{1,20}((?i)n\/a|({solution}[^"]{1,2000}))"""
   ]
 }
+}
 ```

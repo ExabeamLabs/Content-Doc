@@ -26,6 +26,5 @@ seclore-file-operations = {
     """"file_name":"({src_file_name}[^"]{1,2000})"""",
     """"activity_comments":"{0,20}(null|({additional_info}[^",]{1,2000}))""",
     """"authorized":({outcome}\d{1,100})"""
-  ]
-}
+  ]}
 ```

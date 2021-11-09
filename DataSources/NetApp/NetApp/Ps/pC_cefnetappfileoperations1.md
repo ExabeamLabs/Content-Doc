@@ -23,4 +23,5 @@ Name = cef-netapp-file-operations-1
   ]
   DupFields = [ "activity->accesses" ]
 }
+}
 ```

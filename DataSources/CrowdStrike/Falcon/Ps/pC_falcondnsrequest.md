@@ -29,4 +29,5 @@ Name = falcon-dns-request
       """"FirstIP4Record":"({dest_ip}[a-fA-F:\d.]{1,2000})""""
     ]
   }
+}
 ```

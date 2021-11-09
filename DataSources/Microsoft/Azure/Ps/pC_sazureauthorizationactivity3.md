@@ -28,4 +28,5 @@ Name = s-azure-authorization-activity-3
 
   ]
 }
+}
 ```

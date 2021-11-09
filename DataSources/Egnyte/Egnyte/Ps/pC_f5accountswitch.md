@@ -22,6 +22,5 @@ f5-waf-activity = {
       """"@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
       """"host":"(::ffff:)?({host}[^"]{1,2000})""",
       """\d\d:\d\d:\d\d ({host}[^\s]{1,2000}) \w+ \w+\["""
-    ]
- 
+    ]}
 ```

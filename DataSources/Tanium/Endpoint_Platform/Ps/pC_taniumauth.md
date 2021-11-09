@@ -21,4 +21,5 @@ Name = tanium-auth
       """\sSource-IP-Address="(::1|({src_ip}[a-fA-F\d.:]{1,2000}))"""",
     ]
   }
+}
 ```

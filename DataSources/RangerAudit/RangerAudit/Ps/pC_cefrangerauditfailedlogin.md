@@ -16,4 +16,5 @@ Name = cef-rangeraudit-failed-login
     """({app}ranger)""",
   ]
 }
+}
 ```

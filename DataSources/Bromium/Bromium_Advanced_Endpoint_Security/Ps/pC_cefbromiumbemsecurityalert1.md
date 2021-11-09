@@ -21,4 +21,5 @@ Name = cef-bromium-bem-security-alert-1
   ]
   DupFields = [ "alert_name->alert_type","directory->process_directory" ]
 }
+}
 ```

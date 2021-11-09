@@ -25,4 +25,5 @@ Name = cef-sophos-network-connection
     """\Wreason=({failure_reason}.+?)\s{1,100}(\w+=|$)""",
   ]
 }
+}
 ```

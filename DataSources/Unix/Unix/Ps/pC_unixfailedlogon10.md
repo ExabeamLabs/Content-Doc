@@ -16,4 +16,5 @@ Name = unix-failed-logon-10
     """ port ({src_port}\d{1,100})({failure_reason}.*?)"""",
   ]
 }
+}
 ```

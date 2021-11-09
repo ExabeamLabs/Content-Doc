@@ -25,6 +25,5 @@ cef-o365-app-login-2 = {
       """"ResultStatus":"({outcome}[^"]{1,2000})"""",
       """destinationServiceName=({app}Office 365)""",
       """"Name":"UserAgent","Value":"({user_agent}[^"]{1,2000}?)\s{0,100}""""
-    ]
- 
+    ]}
 ```

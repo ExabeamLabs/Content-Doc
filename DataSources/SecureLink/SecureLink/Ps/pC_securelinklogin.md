@@ -8,4 +8,5 @@ Name = securelink-login
   """({event_name}Logged in)"""
   ]
 }
+}
 ```

@@ -17,4 +17,5 @@ Name = s-azura-mfa-auth-successful
     """({auth_method}Pfauth)""",
   ]
 }
+}
 ```

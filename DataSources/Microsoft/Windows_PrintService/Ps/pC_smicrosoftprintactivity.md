@@ -14,4 +14,5 @@ Name = s-microsoft-print-activity
      """\smachine="{1,20}\\*(({src_ip}[A-Fa-f:\d.]{1,2000})|({src_host}[^"]{1,2000}))\s{0,100}"{1,20}\s{0,100}\w+=""",
      """\suser="({user}[^"]{1,2000})"""",
      """\sstatus="([^,]{1,2000}
+}
 ```

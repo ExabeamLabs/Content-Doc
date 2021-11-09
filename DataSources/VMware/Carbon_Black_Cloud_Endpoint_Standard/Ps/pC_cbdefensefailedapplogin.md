@@ -17,4 +17,5 @@ Name = cb-defense-failed-app-login
     """({app}CB Defense)""",
   ]
 }
+}
 ```

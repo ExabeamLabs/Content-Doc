@@ -26,4 +26,5 @@ Name = json-bro-kerberos
     """"cipher\\?"{1,20}:\\?"{1,20}({ticket_encryption_type}[^"\\]{1,2000})"""
   ]
 }
+}
 ```

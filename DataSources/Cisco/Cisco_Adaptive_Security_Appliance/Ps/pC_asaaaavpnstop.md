@@ -12,4 +12,5 @@ Name = asa-aaa-vpn-stop
     Conditions = [ "Authen Session End:" ]
     Fields = [ """\s({host}[^\s]{1,2000})\s({time}[a-zA-Z]{3} \d\d \d\d\d\d \d\d:\d\d:\d\d).+Authen Session End: user '({user}[^']{1,2000})'""" ]
   }
+}
 ```

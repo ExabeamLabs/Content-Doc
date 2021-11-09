@@ -18,4 +18,5 @@ Name = raw-netscaler-ica-login
     """applicationName\s({app}.+?) - startTime"""
   ]
 }
+}
 ```

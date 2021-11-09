@@ -22,4 +22,5 @@ Name = cef-ccure-badge-access
      """\smsg=({location_door}.+?)\s(\w+=|$)"""
    ]
  }
+}
 ```

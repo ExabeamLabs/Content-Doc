@@ -30,4 +30,5 @@ Name = checkpoint-network-connection-accept-1
   ]
   DupFields = [ "action->event_name" ]
 }
+}
 ```

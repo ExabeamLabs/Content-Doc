@@ -21,4 +21,5 @@ Name = s-bro-email-in
   ]
   DupFields = [ "alert_name->alert_type", "user->orig_user", "sender->external_address" ]
 }
+}
 ```

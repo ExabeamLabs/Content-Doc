@@ -18,4 +18,5 @@ Name = rsa-securid-auth-fail
     ]
   DupFields = ["additional_info->failure_reason"]
 }
+}
 ```

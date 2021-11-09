@@ -18,4 +18,5 @@ Name = bind-dns-query-4
     """({event_name}rewrite)""",
       ]
 }
+}
 ```

@@ -19,4 +19,5 @@ Name = q-firesight-alert-2
       """\sclassification.name=({alert_type}.+?)\sclassification"""
   ]
 }
+}
 ```

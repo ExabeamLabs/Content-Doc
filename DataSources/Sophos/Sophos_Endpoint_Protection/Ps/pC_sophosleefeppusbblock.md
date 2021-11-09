@@ -22,4 +22,5 @@ Name = sophos-leef-epp-usb-block
           """ActionName=({outcome}.+?)\s{1,100}(?:\w+=|$)"""
   ]
 }
+}
 ```

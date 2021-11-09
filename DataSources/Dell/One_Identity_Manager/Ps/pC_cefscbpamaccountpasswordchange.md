@@ -18,4 +18,5 @@ Name = cef-scbpam-account-password-change
     """\sOtherInfo:\s{0,100}({outcome}.+?)(\s{1,100}\w+=|\s{0,100}$)"""
   ]
 }
+}
 ```

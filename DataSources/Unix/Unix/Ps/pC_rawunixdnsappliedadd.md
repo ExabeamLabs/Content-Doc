@@ -14,4 +14,5 @@ Name = raw-unix-dns-appliedadd
   ]
   DupFields = [ "dest_host->user" ]
 }
+}
 ```

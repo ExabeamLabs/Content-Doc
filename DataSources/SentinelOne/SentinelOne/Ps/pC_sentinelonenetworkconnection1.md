@@ -9,4 +9,5 @@ Name = sentinelone-network-connection-1
     """({protocol}tcp)"""
   ]
 }
+}
 ```

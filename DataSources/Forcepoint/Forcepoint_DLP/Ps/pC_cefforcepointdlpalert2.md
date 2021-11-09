@@ -18,4 +18,5 @@ Name = cef-forcepoint-dlp-alert-2
     """\Wact=({outcome}.+?)\s{1,100}(\w+=|$)""",
   ]
 }
+}
 ```

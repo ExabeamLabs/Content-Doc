@@ -18,4 +18,5 @@ Name = s-common-ftp-failed-login-1
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

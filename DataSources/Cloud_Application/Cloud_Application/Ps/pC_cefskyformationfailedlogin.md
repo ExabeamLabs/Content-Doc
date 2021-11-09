@@ -25,4 +25,5 @@ Name = cef-skyformation-failed-login
   ]
   DupFields = ["app->event_subtype"]
 }
+}
 ```

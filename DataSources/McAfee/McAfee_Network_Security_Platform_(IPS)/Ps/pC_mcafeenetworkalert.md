@@ -26,4 +26,5 @@ Name = mcafee-network-alert
     """"threat_type":"({additional_info}[^"]{1,2000})""""
   ]
 }
+}
 ```

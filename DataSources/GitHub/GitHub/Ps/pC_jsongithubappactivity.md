@@ -22,4 +22,5 @@ Name = json-github-app-activity
     """"source_branch":"({object}[^"]{1,2000})""",
   ]
 }
+}
 ```

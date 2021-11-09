@@ -20,4 +20,5 @@ Name = o365-url-click-alert
     """"Url":"({malware_url}[^"]{1,2000}?)""""
   ]
 }
+}
 ```

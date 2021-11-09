@@ -18,4 +18,5 @@ Name = axway-sftp-file-upload
     """message=({event_name}[^\.]{1,2000})"""
   ]
 }
+}
 ```

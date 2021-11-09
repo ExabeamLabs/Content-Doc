@@ -26,4 +26,5 @@ Name = cef-netskope-alert-anomaly
   ]
   DupFields = ["process->process_name","site_at->app"]
 }
+}
 ```

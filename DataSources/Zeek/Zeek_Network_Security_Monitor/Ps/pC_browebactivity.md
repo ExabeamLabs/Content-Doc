@@ -25,4 +25,5 @@ Name = bro-web-activity
     """"method":"({method}[^"]{1,2000})""",
   ]
 }
+}
 ```

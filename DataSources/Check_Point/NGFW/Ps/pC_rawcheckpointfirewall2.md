@@ -61,6 +61,5 @@ checkpoint-firewall-1 = {
     """\Wsent_bytes:"({bytes_out}\d{1,100})""",
     """\Wifname:"({interface_name}[^"]{1,2000})""",
   ]
-  DupFields = [ "action->event_name", "action->outcome" ]
-}
+  DupFields = [ "action->event_name", "action->outcome" ]}
 ```

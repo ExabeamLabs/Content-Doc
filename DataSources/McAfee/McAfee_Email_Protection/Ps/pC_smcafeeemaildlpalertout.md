@@ -20,4 +20,5 @@ Name = s-mcafee-email-dlp-alert-out
      """exabeam_host=({host}[^\s]{1,2000})"""
   ]
 }
+}
 ```

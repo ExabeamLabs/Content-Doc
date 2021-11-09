@@ -25,4 +25,5 @@ Name = s-zscaler-dlp-alert
   ]
   DupFields = [ user_agent->browser ]
 }
+}
 ```

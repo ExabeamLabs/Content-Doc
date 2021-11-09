@@ -15,4 +15,5 @@ Name = counteract-network-connection-1
     """Source:\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
 }
+}
 ```

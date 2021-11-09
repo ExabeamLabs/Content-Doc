@@ -23,4 +23,5 @@ Name = sourcefire-network-alert-4
     """\sFileType:\s{0,100}({file_type}[^,]{1,2000}?)(,|\s{0,100}$)""",
   ]
 }
+}
 ```

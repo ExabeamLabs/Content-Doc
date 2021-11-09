@@ -23,4 +23,5 @@ Name = cef-oracle-db-query
   ]
   DupFields = ["db_user->account"]
 }
+}
 ```

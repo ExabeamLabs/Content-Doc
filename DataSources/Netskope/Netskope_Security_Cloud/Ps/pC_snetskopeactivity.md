@@ -17,4 +17,5 @@ Name = s-netskope-activity
   ]
   DupFields = [ "activity->accesses" ]
 }
+}
 ```

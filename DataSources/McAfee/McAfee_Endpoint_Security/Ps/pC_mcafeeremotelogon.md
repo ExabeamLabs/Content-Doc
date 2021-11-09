@@ -18,4 +18,5 @@ Name = mcafee-remote-logon
     """"HTTPAgent":\s{0,100}"({user_agent}[^"]{1,2000})""",
   ]
 }
+}
 ```

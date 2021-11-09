@@ -18,4 +18,5 @@ Name = cef-salesforce-app-activity-6
     """({app}Sales Cloud)""",
   ]
 }
+}
 ```

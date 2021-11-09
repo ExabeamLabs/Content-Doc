@@ -24,4 +24,5 @@ Name = s-aws-cloudtrail-login-json
     """\srequestClientApplication=({app}[^\s]{1,2000})\s""",
   ]
 }
+}
 ```

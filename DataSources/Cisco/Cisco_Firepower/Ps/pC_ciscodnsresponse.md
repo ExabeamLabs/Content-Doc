@@ -29,4 +29,5 @@ Name = cisco-dns-response
     """EgressInterface: ({dest_interface}[^\s,]{1,2000}?),""",
   ]
 }
+}
 ```

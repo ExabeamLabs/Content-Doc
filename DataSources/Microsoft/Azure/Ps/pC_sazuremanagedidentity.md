@@ -27,4 +27,5 @@ Name = s-azure-managed-identity
    ]
 DupFields= ["event_hub_namespace->host"]
 }
+}
 ```

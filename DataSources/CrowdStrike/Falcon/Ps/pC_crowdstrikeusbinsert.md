@@ -11,4 +11,5 @@ Name = crowdstrike-usb-insert
     Fields = [
       """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
       """"{1,20}aip"{1,20}:"{1,20}({host}[^"]{1,2000})"{1,20}
+}
 ```

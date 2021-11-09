@@ -28,4 +28,5 @@ Name = code42-usb-insert
     """"volumeName":\s"(unknown|[^\(]{0,2000}?({drive_letter}[^"]{1,2000}))"""
   ]
 }
+}
 ```

@@ -16,4 +16,5 @@ Name = asa-nap-cef-vpn-end
       """\sdvchost=({host}[^\s]{1,2000})"""
     ]
   }
+}
 ```

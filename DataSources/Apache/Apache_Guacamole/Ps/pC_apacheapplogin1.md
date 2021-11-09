@@ -15,4 +15,5 @@ Name = apache-app-login-1
     """successfully authenticated from\s\[({src_ip}[a-fA-F0-9\.:]{1,2000}),\s({dest_ip}[a-fA-F0-9\.:]{1,2000})\]""",
     ]
 }
+}
 ```

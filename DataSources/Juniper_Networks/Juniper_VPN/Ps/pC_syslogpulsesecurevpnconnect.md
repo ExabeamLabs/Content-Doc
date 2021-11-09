@@ -42,4 +42,5 @@ Name = syslog-pulsesecure-vpn-connect
   ]
   DupFields = ["user->account"]
 }
+}
 ```

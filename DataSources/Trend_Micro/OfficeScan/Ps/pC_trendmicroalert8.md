@@ -19,4 +19,5 @@ Name = trend-micro-alert-8
   ]
   DupFields = [ "alert_name->alert_type", "src_host->host" ]
 }
+}
 ```

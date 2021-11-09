@@ -21,4 +21,5 @@ Name = s-member-added-2003
     """Caller User Name:\s{1,100}({user}.+?)\s{1,100}Caller""",
     """Caller Domain:\s{1,100}({domain}.+?)\s{1,100}Caller""",
     """Caller Logon ID:\s{1,100}\([^,]{1,2000}
+}
 ```

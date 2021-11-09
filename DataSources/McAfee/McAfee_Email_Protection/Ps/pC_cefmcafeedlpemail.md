@@ -37,4 +37,5 @@ Name = cef-mcafee-dlp-email
     ]
     DupFields = [ "orig_user->sender", "orig_user->user" ]
   }
+}
 ```

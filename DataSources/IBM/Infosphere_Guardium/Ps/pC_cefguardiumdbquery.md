@@ -22,4 +22,5 @@ Name = cef-guardium-db-query
   ]
   DupFields = [ "db_user->account" ]
 }
+}
 ```

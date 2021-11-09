@@ -15,4 +15,5 @@ Name = s-avaya-failed-vpn-login
       """\sError="({failure_reason}[^"]{1,2000})""",
     ]
   }
+}
 ```

@@ -15,4 +15,5 @@ Name = securelink-app-login
       """AUDIT:.+?\(({user_email}[^@]{1,2000}@({email_domain}[^)]{1,2000}))\)"""
     ]
   }
+}
 ```

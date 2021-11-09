@@ -21,4 +21,5 @@ Name = cef-egnyte-file-operations
     """({app}Egnyte)"""
   ]
 }
+}
 ```

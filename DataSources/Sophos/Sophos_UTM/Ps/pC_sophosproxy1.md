@@ -29,4 +29,5 @@ Name = sophos-proxy-1
     """content-type="({mime}[^"]{1,2000})""", 
   ]
 }
+}
 ```

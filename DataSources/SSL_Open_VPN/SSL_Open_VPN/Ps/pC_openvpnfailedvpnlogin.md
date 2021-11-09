@@ -15,4 +15,5 @@ Name = openvpn-failed-vpn-login
     """({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).*?\[({user}[^\s\]]{1,2000})\] Peer Connection Initiated with""",
   ]
 }
+}
 ```

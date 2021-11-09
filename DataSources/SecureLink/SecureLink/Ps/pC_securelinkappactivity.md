@@ -18,4 +18,5 @@ Name = securelink-app-activity
       """duration: ({duration}\w+)""",
     ]
   }
+}
 ```

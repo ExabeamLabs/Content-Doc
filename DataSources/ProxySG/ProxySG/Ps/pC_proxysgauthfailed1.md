@@ -16,4 +16,5 @@ Name = proxysg-auth-failed-1
     """realm:\s{0,100}'({realm}[^']{1,2000})""",
   ]
 }
+}
 ```

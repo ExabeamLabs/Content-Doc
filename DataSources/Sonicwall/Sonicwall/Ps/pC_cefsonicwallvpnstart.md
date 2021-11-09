@@ -21,4 +21,5 @@ Name = cef-sonicwall-vpn-start
   ]
   DupFields = ["user->account"]
 }
+}
 ```

@@ -28,4 +28,5 @@ Name = ironport-dlp-email-alert
     """\Wfname=(|({attachment}.*?))\s{1,100}(\w+=|$)""",
   ]
 }
+}
 ```

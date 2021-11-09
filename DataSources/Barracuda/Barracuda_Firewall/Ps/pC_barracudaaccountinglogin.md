@@ -16,4 +16,5 @@ Name = barracuda-accounting-login
     """\sstart="({time}\d\d\d\d/\d\d/\d\d \d\d:\d\d:\d\d)""",
   ]
 }
+}
 ```

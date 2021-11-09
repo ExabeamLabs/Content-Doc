@@ -19,4 +19,5 @@ Name = safend-usb-insert
     """Policy:\s{0,100}({activity_details}[^,]{1,2000})""",
   ]
 }
+}
 ```

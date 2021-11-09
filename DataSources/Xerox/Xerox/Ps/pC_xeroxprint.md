@@ -23,4 +23,5 @@ Name = xerox-print
     """document_title:\s{0,100}"{1,20}({document_name}({object}[^"]{1,2000}))"{1,20}"""
   ]
 }
+}
 ```

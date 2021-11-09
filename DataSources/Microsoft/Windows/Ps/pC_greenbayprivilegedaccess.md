@@ -22,4 +22,5 @@ Name = greenbay-privileged-access
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

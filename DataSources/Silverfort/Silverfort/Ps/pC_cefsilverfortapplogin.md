@@ -20,4 +20,5 @@ Name = cef-silverfort-app-login
     """cs2=({outcome}[^\s]{1,2000})""",
   ]
 }
+}
 ```

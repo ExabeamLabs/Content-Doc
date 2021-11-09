@@ -18,4 +18,5 @@ Name = cef-juniper-vpn-relogin
   ]
   DupFields = [ "dest_ip->host", "dest_host->host" ]
 }
+}
 ```

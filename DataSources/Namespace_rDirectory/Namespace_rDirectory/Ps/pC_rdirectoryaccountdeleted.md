@@ -17,4 +17,5 @@ Name = rdirectory-account-deleted
   ]
   DupFields = [ "host->dest_host" , "target_user->account_name"]
 }
+}
 ```

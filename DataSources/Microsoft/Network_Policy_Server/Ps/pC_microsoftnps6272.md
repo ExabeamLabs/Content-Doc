@@ -26,4 +26,5 @@ Name = microsoft-nps-6272
     """'QuarantineState'>(?:-|({access_type}[^\<]{1,2000}))"""
   ]
 }
+}
 ```

@@ -5,8 +5,8 @@ Vendor: CyberArk
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   1    |     1      |      2      |    2    |
+|   2   |   1    |     2      |      2      |    2    |
 
-| Event Type               | Rules                                                                                                                                                                        | Models                                                                                       |
-| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| privileged-object-access | <b>T1059 - Command and Scripting Interperter</b><br> ↳ <b>WPA-OH-F</b>: First execution of critical windows command using privileged access on this host in the organization |  • <b>WPA-OH</b>: Assets on which critical windows commands are executed in the organization |
+| Event Type  | Rules                                                                                                                                                                                                                                      | Models                                  |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------- |
+| file-delete | <b>T1083 - File and Directory Discovery</b><br> ↳ <b>FA-FT-EXEC</b>: Non-Executive user accessed executive folder<br><br><b>T1078 - Valid Accounts</b><br> ↳ <b>FA-Account-deactivated</b>: File Activity from a de-activated user account |  • <b>FA-FT-EXEC</b>: Executive Folders |

@@ -24,4 +24,5 @@ Name = s-github-unicorn-activity
     """accept=({mime}[^\s]{1,2000})"""
   ]
 }
+}
 ```

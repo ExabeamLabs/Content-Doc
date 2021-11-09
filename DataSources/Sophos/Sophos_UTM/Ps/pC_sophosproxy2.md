@@ -28,4 +28,5 @@ Name = sophos-proxy-2
     """category="({category}[^"]{1,2000})""",
   ]
 }
+}
 ```

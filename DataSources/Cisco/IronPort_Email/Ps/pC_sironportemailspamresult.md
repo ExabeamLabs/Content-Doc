@@ -17,4 +17,5 @@ Name = s-ironport-email-spam-result
       """CASE spam ({spam_score}.+?)(\s{1,100}\w+=|\s{0,100}$)"""
     ]
   }
+}
 ```

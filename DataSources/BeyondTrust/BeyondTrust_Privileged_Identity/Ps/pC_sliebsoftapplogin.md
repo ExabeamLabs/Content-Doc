@@ -17,4 +17,5 @@ Name = s-liebsoft-app-login
         """sOriginatingSystem="({dest_host}[^"]{1,2000})"""
     ]
   }
+}
 ```

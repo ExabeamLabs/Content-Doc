@@ -31,4 +31,5 @@ Name = cef-microsoft-print-activity
   ]
   DupFields = [ """host->dest_host""" ]
 }
+}
 ```

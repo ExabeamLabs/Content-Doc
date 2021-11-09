@@ -24,4 +24,5 @@ Name = cef-cyberark-app-login
     """({app}Cyber-Ark)"""
   ]
 }
+}
 ```

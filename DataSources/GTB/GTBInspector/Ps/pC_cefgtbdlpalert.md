@@ -25,4 +25,5 @@ Name = cef-gtb-dlp-alert
     """\sduser=([\s"]{1,2000}suser=|[\s"]{0,2000}({target}.*?)[\s"]{0,2000}suser=)"""
   ]
 }
+}
 ```

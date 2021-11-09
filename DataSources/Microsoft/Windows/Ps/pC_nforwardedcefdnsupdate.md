@@ -16,4 +16,5 @@ Name = n-forwarded-cef-dns-update
   ]
   DupFields = [ "dest_host->user" ]
 }
+}
 ```

@@ -23,4 +23,5 @@ Name = watchguard-web-activity-1
   ]
   DupFields = [ "user_email->user" ]
 }
+}
 ```

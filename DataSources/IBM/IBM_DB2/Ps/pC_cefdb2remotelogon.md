@@ -23,4 +23,5 @@ Name = cef-db2-remote-logon
     """({event_name}DB2Aud005_Login_Logout_Activity)""",
   ]
 }
+}
 ```

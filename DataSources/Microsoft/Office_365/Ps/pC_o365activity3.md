@@ -41,4 +41,5 @@ Name = o365-activity-3
     """"MailboxPrimaryAddress":"({user_email}[^@"]{1,2000}@[^."]{1,2000}\.[^"]{1,2000}?)""""
   ]
 }
+}
 ```

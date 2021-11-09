@@ -20,4 +20,5 @@ Name = cef-infowatch-app-login
   ]
   DupFields = [ "host->app" ]
 }
+}
 ```

@@ -21,4 +21,5 @@ Name = lenel-badge-access
   ]
     DupFields = [ "location_full->location_door" ]
 }
+}
 ```

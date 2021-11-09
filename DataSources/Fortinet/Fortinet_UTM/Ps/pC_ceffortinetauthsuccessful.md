@@ -19,4 +19,5 @@ Name = cef-fortinet-auth-successful
     """\sdevid\\="({dest_host}[^"]{1,2000})""",
   ]
 }
+}
 ```

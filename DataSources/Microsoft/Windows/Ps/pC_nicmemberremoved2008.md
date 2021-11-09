@@ -22,4 +22,5 @@ Name = nic-member-removed-2008
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

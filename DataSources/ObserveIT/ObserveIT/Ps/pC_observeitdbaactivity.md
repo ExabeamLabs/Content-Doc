@@ -29,4 +29,5 @@ Name = observeit-dba-activity
   ]
   DupFields = [ "user->os_user" , "process_name->service_name"]
 }
+}
 ```

@@ -19,4 +19,5 @@ Name = openvms-failed-logon
     """failure\s{1,100}[^"]{1,2000}Terminal name:\s{1,100}({additional_info}[^\s]{1,2000})\s{1,100}(\w{1,100}|$)""",
     """failure\s{1,100}[^"]{1,2000}Host:\s{1,100}({host}[A-Fa-f\d\.:]{1,2000})\s{1,100}(\w{1,100}|$)""",
     """failure\s{1,100}[^"]{1,2000}Status:\s{1,100}[^"]{1,100}
+}
 ```

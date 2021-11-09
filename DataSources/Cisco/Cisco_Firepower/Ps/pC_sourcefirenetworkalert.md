@@ -52,4 +52,5 @@ Name = sourcefire-network-alert
   ]
   DupFields = [ "host->sensor", "classification_name->alert_type"]
 }
+}
 ```

@@ -23,4 +23,5 @@ Name = s-o365-dlp-alert
   ]
   DupFields = [ "user_email->user" ]
 }
+}
 ```

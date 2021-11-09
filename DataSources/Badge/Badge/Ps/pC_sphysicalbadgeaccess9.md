@@ -17,4 +17,5 @@ Name = s-physical-badge-access-9
       """\sReader="({location_door}[^"]{1,2000}?)\s{0,100}"""",
     ]
   }
+}
 ```

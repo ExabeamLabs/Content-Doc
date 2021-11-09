@@ -7,4 +7,5 @@ Name = sentinelone-file-modify-1
   Fields = ${SentinelOneParserTemplates.sentinelone-activity.Fields} [
     """({event_name}fileModification)""",
     """type"{1,20}:"{1,20}file"{1,20}
+}
 ```

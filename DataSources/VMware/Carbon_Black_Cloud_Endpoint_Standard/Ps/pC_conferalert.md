@@ -24,4 +24,5 @@ Name = confer-alert
     """applicationName":\s"({process_name}[^"]{1,2000})""",
   ]
 }
+}
 ```

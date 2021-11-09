@@ -19,4 +19,5 @@ Name = paxton-badge-access
     """EventTypeDescription="({outcome}[^"\-]{1,2000}?) - ({auth_method}[^"]{1,2000})"""",
   ]
 }
+}
 ```

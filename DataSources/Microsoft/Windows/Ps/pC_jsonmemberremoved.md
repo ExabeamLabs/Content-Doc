@@ -26,4 +26,5 @@ Name = json-member-removed
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

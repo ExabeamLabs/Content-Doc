@@ -27,4 +27,5 @@ Name = windows-4768-1
   ]
      DupFields = [ "host->dest_host" ]
 }
+}
 ```

@@ -17,4 +17,5 @@ Name = cef-snare-680
     """dhost=({dest_host}.+?)\s{1,100}\w+="""
   ]
 }
+}
 ```

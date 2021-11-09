@@ -17,4 +17,5 @@ Name = citrix-remote-logon
     """"adminaccountname":"(({account_domain}[^\\"]{1,2000})\\+)?({account_name}[^"]{1,2000})","""
   ]
 }
+}
 ```

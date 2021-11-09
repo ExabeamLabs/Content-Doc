@@ -22,4 +22,5 @@ Name = s-mcafee-dlp-alert-3
     """Computer_IP="({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""""
   ]
 }
+}
 ```

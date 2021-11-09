@@ -19,4 +19,5 @@ Name = s-github-audit
     """({app}github)"""
   ]
 }
+}
 ```

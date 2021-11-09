@@ -17,4 +17,5 @@ Name = exalms-sqlserver-failed-login
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

@@ -19,4 +19,5 @@ Name = beyondtrust-privileged-access
   ]
   DupFields = [ "directory->process_directory" ]
 }
+}
 ```

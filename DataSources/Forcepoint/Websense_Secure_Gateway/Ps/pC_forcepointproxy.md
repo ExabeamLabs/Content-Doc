@@ -34,4 +34,5 @@ Name = forcepoint-proxy
       """cat=({category_id}\d{1,100})""", 
     ]
   }
+}
 ```

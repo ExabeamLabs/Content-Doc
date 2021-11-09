@@ -14,4 +14,5 @@ Name = citrix-appfw-sql
   ]
   DupFields = ["event_name->alert_name"]
 }
+}
 ```

@@ -20,4 +20,5 @@ Name = raw-defender-av-1116
    """Severity:\s{0,100}({alert_severity}[^\s]{1,2000})"""
  ]
 }
+}
 ```

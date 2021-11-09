@@ -27,4 +27,5 @@ Name = symantec-cloud-activity
   ]
   DupFields = ["file_path->resource", "app->service", "activity->accesses"]
 }
+}
 ```

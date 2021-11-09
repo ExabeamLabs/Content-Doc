@@ -19,4 +19,5 @@ Name = palo-alto-networks-leef-vpn-login
     """Client OS ( version)?.+?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)"""   
   ]
 }
+}
 ```

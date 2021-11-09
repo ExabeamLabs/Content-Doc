@@ -17,4 +17,5 @@ Name = fireeye-mps-xml-extended-body-alert
     """<dst>.+?<ip>({dest_ip}[^<]{1,2000})</ip""" 
   ]
 }
+}
 ```

@@ -19,4 +19,5 @@ Name = netwrix-app-activity-4
     """({app}VMware)""",
   ]
 }
+}
 ```

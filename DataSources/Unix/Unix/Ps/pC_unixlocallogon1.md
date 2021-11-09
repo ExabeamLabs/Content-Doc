@@ -18,4 +18,5 @@ Name = unix-local-logon-1
     """\d\d:\d\d:\d\d\s{1,100}({host}[^\s]{1,2000})\s"""
   ]
 }
+}
 ```

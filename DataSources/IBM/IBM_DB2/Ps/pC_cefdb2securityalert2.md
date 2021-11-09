@@ -22,4 +22,5 @@ Name = cef-db2-security-alert-2
   ]
   DupFields = [ "alert_name->alert_type" ]
 }
+}
 ```

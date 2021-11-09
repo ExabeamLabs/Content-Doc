@@ -19,4 +19,5 @@ Name = cef-sonicwall-rdp-logon
     """\scs2=(|({logon_type_text}.+?))\s{1,100}(\w+=|$)""",
   ]
 }
+}
 ```

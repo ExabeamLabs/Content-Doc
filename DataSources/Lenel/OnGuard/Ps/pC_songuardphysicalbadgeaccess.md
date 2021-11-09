@@ -24,4 +24,5 @@ Name = s-onguard-physical-badge-access
     """({direction}IN|OUT)""",
   ]
 }
+}
 ```

@@ -23,4 +23,5 @@ Name = json-cisco-cloudlock-dlp
     """"entity_direct_url":\s{0,100}"({additional_info}[^"]{1,2000})"""",
   ]
 }
+}
 ```

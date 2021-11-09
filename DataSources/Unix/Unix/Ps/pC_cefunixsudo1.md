@@ -21,4 +21,5 @@ Name = cef-unix-sudo-1
     ]
     DupFields = [ "event_code->process_name" ]
   }
+}
 ```

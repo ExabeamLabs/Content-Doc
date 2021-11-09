@@ -16,4 +16,5 @@ Name = counteract-network-connection
     """({event_name}Connection has been established)"""
   ]
 }
+}
 ```

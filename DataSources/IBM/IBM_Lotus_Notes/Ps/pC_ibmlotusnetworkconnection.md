@@ -14,4 +14,5 @@ Name = ibm-lotus-network-connection
     """SMTP Server:\s{0,100}({dest_host}.+?) \(({dest_ip}[a-fA-F\d.:]{1,2000})\)""",
   ]
 }
+}
 ```

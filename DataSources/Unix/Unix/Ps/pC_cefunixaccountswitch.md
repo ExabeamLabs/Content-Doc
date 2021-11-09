@@ -18,4 +18,5 @@ Name = cef-unix-account-switch
   ]
   DupFields = [ "process_name->event_code" ]
 }
+}
 ```

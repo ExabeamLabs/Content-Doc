@@ -20,4 +20,5 @@ Name = q-okta-failed-app-login
   ]
   DupFields = [ "host->dest_host" ]
 }
+}
 ```

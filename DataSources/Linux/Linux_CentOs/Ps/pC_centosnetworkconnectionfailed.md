@@ -24,4 +24,5 @@ Name = centos-network-connection-failed
     """RES=({outcome}[^\s]{1,2000})"""
  ]
 }
+}
 ```

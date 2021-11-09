@@ -23,4 +23,5 @@ Name = symantec-usb-activity
     """Blocked:\s{0,100}({outcome}.+?)\s{0,100}Device Instance ID:"""
   ]
 }
+}
 ```

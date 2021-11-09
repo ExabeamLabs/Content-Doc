@@ -17,4 +17,5 @@ Name = cb-defense-app-login
     """({app}CB Defense)"""
   ]
 }
+}
 ```

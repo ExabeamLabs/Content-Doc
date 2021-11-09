@@ -10,4 +10,5 @@ Name = exchange-dlp-email-in-sd
   Conditions = [ """,STOREDRIVER,DELIVER,""" ]
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\d)Z,(?:(?:\s{0,100}'(?:[^']|'')+')\s{0,100}
+}
 ```

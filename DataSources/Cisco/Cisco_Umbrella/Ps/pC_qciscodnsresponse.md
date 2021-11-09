@@ -22,4 +22,5 @@ Name = q-cisco-dns-response
     """"Categories"{0,20}:"{0,20}({category}[^"]{1,2000})""",
   ]
 }
+}
 ```

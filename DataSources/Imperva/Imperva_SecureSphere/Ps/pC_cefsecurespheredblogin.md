@@ -31,4 +31,5 @@ Name = cef-securesphere-db-login
     """\sproto=({protocol}[^\s]{1,2000})"""
   ]
 }
+}
 ```

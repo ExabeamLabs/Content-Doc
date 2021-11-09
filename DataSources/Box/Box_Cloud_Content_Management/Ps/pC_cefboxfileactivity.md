@@ -27,4 +27,5 @@ Name = cef-box-file-activity
     """(\||\s)requestClientApplication=({app}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 }
+}
 ```

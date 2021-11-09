@@ -21,4 +21,5 @@ Name = syslog-sophos-snmp-denied
   ]
   DupFields = ["alert_name->alert_type"]
 }
+}
 ```

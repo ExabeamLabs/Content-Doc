@@ -18,4 +18,5 @@ Name = cef-epic-auth-successful
     """shost=({src_host}[\w\-.]{1,2000})""",
   ]
 }
+}
 ```

@@ -26,4 +26,5 @@ Name = avecto-process-created
     ]
   DupFields = [ "host->dest_host","process_guid->pid","directory->process_directory" ]
   }
+}
 ```

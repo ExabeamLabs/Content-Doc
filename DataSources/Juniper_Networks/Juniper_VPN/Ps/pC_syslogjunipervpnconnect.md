@@ -18,4 +18,5 @@ Name = syslog-juniper-vpn-connect
   ]
   DupFields = ["user->account"]
 }
+}
 ```

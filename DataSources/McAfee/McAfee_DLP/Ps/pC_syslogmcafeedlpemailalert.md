@@ -25,4 +25,5 @@ Name = syslog-mcafee-dlp-email-alert
       ]
       DupFields = [ "sender->email_user" ]
     }
+}
 ```

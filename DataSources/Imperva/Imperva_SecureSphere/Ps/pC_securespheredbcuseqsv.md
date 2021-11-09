@@ -37,4 +37,5 @@ Name = securesphere-db-cuseqsv
   ]
   DupFields = [ "db_user->account" ]
 }
+}
 ```

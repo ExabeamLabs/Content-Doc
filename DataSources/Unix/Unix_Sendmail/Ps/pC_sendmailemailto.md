@@ -17,4 +17,5 @@ Name = sendmail-email-to
     """\sdsn=({outcome}[^,]{1,2000})""",
   ]
 }
+}
 ```

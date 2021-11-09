@@ -24,4 +24,5 @@ Name = cef-lightcyber-alert
   ]
   DupFields = ["host->dest_host", "malware_url->process_name"]
 }
+}
 ```

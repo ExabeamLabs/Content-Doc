@@ -23,4 +23,5 @@ Name = n-forwarded-cef-mcafee-epo-dlp
     ]
     DupFields = ["directory->process_directory"]
   }
+}
 ```

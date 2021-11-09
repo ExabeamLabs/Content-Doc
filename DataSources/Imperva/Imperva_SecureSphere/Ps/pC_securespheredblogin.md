@@ -30,4 +30,5 @@ Name = securesphere-db-login
   ]
   DupFields = [ "db_user->account", "os_user->user" ]
 }
+}
 ```

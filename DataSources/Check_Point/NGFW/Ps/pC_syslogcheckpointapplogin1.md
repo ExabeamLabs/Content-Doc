@@ -16,4 +16,5 @@ Name = syslog-checkpoint-app-login-1
     """\ssrc:\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
 }
+}
 ```

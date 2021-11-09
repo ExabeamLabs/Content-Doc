@@ -20,4 +20,5 @@ Name = s-microsoft-print-activity-1
      """through port (({dest_ip}[A-Fa-f:\d.]{1,2000})|({dest_host}[^\s]{1,2000}))(_\d{1,100})?\."""
   ]
 }
+}
 ```

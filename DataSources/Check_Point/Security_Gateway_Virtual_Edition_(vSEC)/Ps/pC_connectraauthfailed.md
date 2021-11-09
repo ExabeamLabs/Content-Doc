@@ -25,4 +25,5 @@ Name = connectra-auth-failed
   ]
    DupFields = [ "action->event_name", "account->user" ]
 }
+}
 ```

@@ -23,4 +23,5 @@ Name = cisco-file-activity
     """Protocol:\s{0,100}({protocol}[^,]{1,2000})""",
     """FileSize:\s{0,100}({bytes}[^,]{1,2000})""",
     """FilePolicy:\s{0,100}({policy}[^,]{1,2000}?)\s{0,100}
+}
 ```

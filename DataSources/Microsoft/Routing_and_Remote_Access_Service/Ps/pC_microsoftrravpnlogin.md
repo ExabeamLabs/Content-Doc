@@ -15,4 +15,5 @@ Name = microsoft-rra-vpn-login
     """has been assigned address ({src_translated_ip}[a-fA-F\d.:]{1,2000})""",
   ]
 }
+}
 ```

@@ -28,4 +28,5 @@ SOAR {
     ProjectName = "SOC"
     EntityFields = [
       {EntityType="device", Name="dest_address", Fields=["dest_host->host_name"]}
+}
 ```

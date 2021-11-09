@@ -5,8 +5,9 @@ Vendor: Trend Micro
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     1      |      3      |    3    |
+|   2   |   1    |     2      |      3      |    3    |
 
-| Event Type     | Rules                                                                                                         | Models |
-| -------------- | ------------------------------------------------------------------------------------------------------------- | ------ |
-| security-alert | <b>T1068 - Exploitation for Privilege Escalation</b><br> ↳ <b>ALERT-EXEC</b>: Security violation by Executive |        |
+| Event Type               | Rules                                                                                                                                                                        | Models                                                                                       |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| privileged-object-access | <b>T1059 - Command and Scripting Interperter</b><br> ↳ <b>WPA-OH-F</b>: First execution of critical windows command using privileged access on this host in the organization |  • <b>WPA-OH</b>: Assets on which critical windows commands are executed in the organization |
+| security-alert           | <b>T1068 - Exploitation for Privilege Escalation</b><br> ↳ <b>ALERT-EXEC</b>: Security violation by Executive                                                                |                                                                                              |

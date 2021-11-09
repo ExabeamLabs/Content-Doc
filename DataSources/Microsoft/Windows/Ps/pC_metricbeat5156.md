@@ -25,4 +25,5 @@ Name = metricbeat-5156
   ]
   DupFields = ["directory->process_directory"]
 }
+}
 ```

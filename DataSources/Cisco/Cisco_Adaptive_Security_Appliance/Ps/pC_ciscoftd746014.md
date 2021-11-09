@@ -14,4 +14,5 @@ Name = cisco-ftd-746014
     """\]\s({response}({query}\S+)[^=]{1,2000}?({dns_response_code}obsolete))"""
   ]
 }
+}
 ```

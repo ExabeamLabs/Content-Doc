@@ -18,4 +18,5 @@ Name = cef-forcepoint-it-dlp-alert
     """SIEM Notification\|(?:[^\|]{1,2000}\|){6}\s{1,100}({target}[^\|]{1,2000})\s{1,100}\|"""
   ]
 }
+}
 ```

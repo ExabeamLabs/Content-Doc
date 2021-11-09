@@ -24,4 +24,5 @@ Name = crowdstrike-security-alert-5
       """"cmdline":"({additional_info}.+?)\s{0,100}","""",
       """"tactic":"({category}[^"]{1,2000})""",
       """"((?i)SHA256|SHA256String|SHA256HashData)\\*"{1,20}:\s{0,100}\\*"{1,20}({sha256}[^,]{1,2000}?)\\*"{1,20}
+}
 ```

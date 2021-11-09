@@ -17,4 +17,5 @@ Name = cb-defense-auth-successfull
     """({app}CB Defense)"""
   ]
 }
+}
 ```

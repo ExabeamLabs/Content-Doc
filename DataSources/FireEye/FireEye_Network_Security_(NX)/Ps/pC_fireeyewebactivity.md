@@ -26,4 +26,5 @@ Name = fireeye-web-activity
     """"useragent":\s{0,100}"({user_agent}[^"]{1,2000})""",
   ]
 }
+}
 ```

@@ -7,6 +7,6 @@ Vendor: Unix
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   2   |   1    |     0      |      1      |    1    |
 
-| Event Type     | Rules | Models                                                                          |
-| -------------- | ----- | ------------------------------------------------------------------------------- |
-| account-switch |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset |
+| Event Type | Rules | Models                                                                          |
+| ---------- | ----- | ------------------------------------------------------------------------------- |
+| dlp-alert  |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset |

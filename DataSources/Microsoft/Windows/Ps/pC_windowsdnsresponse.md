@@ -22,4 +22,5 @@ Name = windows-dns-response
     """ANSWER SECTION:(\s{0,100}empty|.+?DATA\s{1,100}({response}\S+))"""
   ]
 }
+}
 ```

@@ -20,4 +20,5 @@ Name = auditbeat-authentication-successful
   ]
   DupFields = ["host->dest_host"]
 }
+}
 ```

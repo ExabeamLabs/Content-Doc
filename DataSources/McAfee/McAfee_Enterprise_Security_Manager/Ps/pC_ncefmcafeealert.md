@@ -22,4 +22,5 @@ Name = n-cef-mcafee-alert
     """\Wsntdom=({domain}.*?)\s{1,100}(\w+=|$)"""
   ]
 }
+}
 ```

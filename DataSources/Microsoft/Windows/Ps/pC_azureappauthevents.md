@@ -28,4 +28,5 @@ Name = azure-app-auth-events
     """"\$table"{1,20}:"{1,20}({database_name}[^"]{1,2000})""",
   ]
 }
+}
 ```

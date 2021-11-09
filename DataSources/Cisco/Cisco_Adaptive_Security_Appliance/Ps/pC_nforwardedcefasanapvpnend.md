@@ -14,4 +14,5 @@ Name = n-forwarded-cef-asa-nap-vpn-end
       """\ssuser=({user}[^\r\n]{1,2000})\s{1,100}"""
     ]
   }
+}
 ```

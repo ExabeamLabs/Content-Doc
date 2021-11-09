@@ -11,4 +11,5 @@ Name = netwrix-ad-member-added-2
     """Group Type: "{1,20}({group_type}[^"]{1,2000})"{1,20}""",
   ]
 }
+}
 ```

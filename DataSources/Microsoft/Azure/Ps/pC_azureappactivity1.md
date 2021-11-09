@@ -21,4 +21,5 @@ Name = azure-app-activity-1
     """"newValue":"\[({additional_info}\{[\\]?"PhoneNumber[^]]{1,2000})"""
   ]
 }
+}
 ```

@@ -21,4 +21,5 @@ Name = solaris-audit-process
     """argv\s{0,100}({command_line}[^"]{1,2000})"""
   ]
 }
+}
 ```

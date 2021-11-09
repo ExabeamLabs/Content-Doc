@@ -22,4 +22,5 @@ Name = chcom-web-activity
     """location":"(-|({full_url}[^"]))""""
   ]
 }
+}
 ```

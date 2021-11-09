@@ -29,4 +29,5 @@ Name = s-stealthwatch-network-alert
   ]
   DupFields = [ "alert_type->alert_name" ]
 }
+}
 ```

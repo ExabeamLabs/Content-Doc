@@ -19,4 +19,5 @@ Name = s-unix-auth-event
     """Caused by:\s{0,100}({failure_reason}[^\s\(:>]{1,2000})"""
   ]
 }
+}
 ```

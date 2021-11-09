@@ -26,4 +26,5 @@ Name = cef-o365-dlp-email
  ]
    DupFields=["sender->user_email"]
 }
+}
 ```

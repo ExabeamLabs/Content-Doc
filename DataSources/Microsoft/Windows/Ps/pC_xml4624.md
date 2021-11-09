@@ -29,4 +29,5 @@ Name = xml-4624
     ]
     DupFields = ["process_directory->directory"]
   }
+}
 ```

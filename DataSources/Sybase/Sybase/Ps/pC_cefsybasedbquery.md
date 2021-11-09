@@ -28,4 +28,5 @@ Name = cef-sybase-db-query
   ]
   DupFields = [ "os_user->user", "db_user->account"]
 }
+}
 ```

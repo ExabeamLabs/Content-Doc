@@ -10,4 +10,5 @@ Name = pan-auth-failed
   Conditions = [ """,globalprotect,""", """user authentication failed""" ]
   Fields = [
     """,globalprotect,\d{1,100}
+}
 ```

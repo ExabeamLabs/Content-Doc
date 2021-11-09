@@ -30,4 +30,5 @@ Name = cef-securesphere-db-query-1
   ]
   DupFields = [ "db_user->account" ]
 }
+}
 ```

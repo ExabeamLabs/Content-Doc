@@ -26,4 +26,5 @@ Name = cef-infowatch-print-activity
   ]
   DupFields = [ object->file_name ]
 }
+}
 ```

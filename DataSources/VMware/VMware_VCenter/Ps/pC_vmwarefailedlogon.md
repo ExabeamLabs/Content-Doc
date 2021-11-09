@@ -16,4 +16,5 @@ Name = vmware-failed-logon
     """\[Cannot login (user )?(({domain}[^\\]{1,2000})\\({user}[^@]{1,2000})|({=user}[^@]{1,2000})@({=domain}[^@]{1,2000}))@({dest_ip}[a-fA-F\d:.]{1,2000})(:\s({failure_reason}[^\]]{1,2000}))?\]"""
   ]
 }
+}
 ```

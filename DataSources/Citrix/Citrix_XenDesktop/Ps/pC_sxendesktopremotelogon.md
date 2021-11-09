@@ -23,4 +23,5 @@ Name = s-xendesktop-remote-logon
   ]
   DupFields = ["dest_ip->host", "dest_host->host"]
 }
+}
 ```

@@ -25,4 +25,5 @@ Name = cisco-ise-vpn-logout
     """\sin=({bytes_in}[+-]?\d{1,100})"""
   ]
 }
+}
 ```

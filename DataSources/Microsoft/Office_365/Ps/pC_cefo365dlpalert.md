@@ -24,4 +24,5 @@ Name = cef-o365-dlp-alert
   ]
   DupFields = [ "recipient->target", "alert_name->event_name" ]
 }
+}
 ```

@@ -30,4 +30,5 @@ Name = sourcefire-proxy
       """URL:\s{0,100}.*?({uri_query}\?[^\s"]{1,2000})""",
     ]
   }
+}
 ```

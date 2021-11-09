@@ -25,4 +25,5 @@ Name = s-symantec-email-alert
     """"messageSize":\s{0,100}({bytes}\d{1,100})""",
   ]
 }
+}
 ```

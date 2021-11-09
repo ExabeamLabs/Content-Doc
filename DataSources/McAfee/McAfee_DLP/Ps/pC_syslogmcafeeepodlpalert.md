@@ -21,4 +21,5 @@ Name = syslog-mcafee-epo-dlp-alert
     ]
     DupFields = [ "src_host->host" ]
   }
+}
 ```

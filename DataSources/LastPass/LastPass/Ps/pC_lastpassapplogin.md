@@ -17,4 +17,5 @@ Name = lastpass-app-login
 		""""{1,20}Data"{1,20}:"{1,20}({additional_info}[^"]{1,2000})"""  
   ]
 }
+}
 ```

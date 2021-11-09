@@ -39,6 +39,5 @@ cef-netskope-activity = {
     """"page_site":\s{0,100}"({app}[^"]{1,2000})"""",
     """"dstport":"\s{0,100}({dest_port}\d{1,100})""""
   ]
-  DupFields = ["domain->email_domain", "file_type->mime"]
-}
+  DupFields = ["domain->email_domain", "file_type->mime"]}
 ```

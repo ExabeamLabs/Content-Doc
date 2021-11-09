@@ -19,4 +19,5 @@ Name = proofpoint-m1
     """\sip=({src_ip}[a-fA-F\d.:]{1,2000})"""
   ]
 }
+}
 ```

@@ -21,4 +21,5 @@ Name = q-ccure-badge-access
      """<RejectCode>\s{0,100}({outcome_reason}.+?)\s{0,100}</RejectCode>"""
    ]
  }
+}
 ```

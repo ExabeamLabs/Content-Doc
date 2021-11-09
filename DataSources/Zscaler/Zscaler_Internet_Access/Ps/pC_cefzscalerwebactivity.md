@@ -54,4 +54,5 @@ Name = cef-zscaler-web-activity
   ]
   DupFields = ["ransomware_name->threat_category", "risk_level->suspicious_content"]
 }
+}
 ```

@@ -14,4 +14,5 @@ Name = citrix-appfw-multiple-header
   ]
   DupFields = ["event_name->alert_name"]
 }
+}
 ```

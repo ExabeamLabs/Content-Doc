@@ -16,4 +16,5 @@ Name = assetview-file-download-activity
     """("\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d.\d\d\d",){2}("[^"]{0,2000}",){3}"({asset_id}[^"]{1,2000})"""",
   ]
 }
+}
 ```

@@ -23,4 +23,5 @@ Name = json-4776
       """"Workstation":"\\*({dest_host}[^"]{1,2000})""",
     ]
   }
+}
 ```

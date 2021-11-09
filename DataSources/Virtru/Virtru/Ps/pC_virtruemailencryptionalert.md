@@ -22,4 +22,5 @@ Name = virtru-email-encryption-alert
   ]
   DupFields = [ "sender->user_email" ]
 }
+}
 ```

@@ -26,4 +26,5 @@ Name = cef-meraki-network-alert
     """destIp":"({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}):({dest_port}\d{1,100})""",
   ]
 }
+}
 ```

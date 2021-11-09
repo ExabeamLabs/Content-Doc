@@ -22,4 +22,5 @@ Name = microsoft-npc-nac-logon-1
   ]
   DupFields = [ "host->dest_host","outcome->event_code" ]
 }
+}
 ```

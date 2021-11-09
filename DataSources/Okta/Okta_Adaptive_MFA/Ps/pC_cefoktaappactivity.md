@@ -37,4 +37,5 @@ Name = cef-okta-app-activity
     """requestUri":\s{0,100}"({request_uri}[^"]{1,2000}?)\s{0,100}"""",
   ]
 }
+}
 ```

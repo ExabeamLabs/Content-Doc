@@ -37,4 +37,5 @@ Name = leef-crowdstrike-alert
     """\WfilePath=(|({process}[^\s]{1,2000}\\+({process_name}[^\s]{1,2000})))""",
   ]
 }
+}
 ```

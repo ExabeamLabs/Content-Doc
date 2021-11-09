@@ -19,4 +19,5 @@ Name = physical-badge-access-3
     """DoorName="({location_door}[^"]{1,2000})""""
   ]
 }
+}
 ```
