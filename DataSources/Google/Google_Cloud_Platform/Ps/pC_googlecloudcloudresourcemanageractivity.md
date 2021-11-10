@@ -6,9 +6,11 @@ Name = googlecloud-cloudresourcemanager-activity
   Product = Google Cloud Platform
   Lms = Direct
   DataType = "cloud-admin-activity"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """"protoPayload":""", """googleapis.com""", """"serviceName":"cloudresourcemanager""" ]
   Fields = [
+    """\w{3}\s\d\d\s\d\d:\d\d:\d\d\s(::ffff:)?({host}[\w\-.]{1,2000})\s\d{1,100}\s""",
+    """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """"callerIp":"({src_ip}[a-fA-F\d.:]{1,2000})"""",
     """:"({service}cloudresourcemanager.googleapis.com)""",
     """"methodName":"({activity}[^"]{1,2000})"""",

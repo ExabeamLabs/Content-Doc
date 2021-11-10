@@ -6,12 +6,12 @@ Name = googlecloud-storage-activity
   Product = Google Cloud Platform
   Lms = Direct
   DataType = "cloud-storage-activity"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """googleapis.com""", """"serviceName":"storage""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}\S{1,2000})""",
     """\w{3}\s\d\d\s\d\d:\d\d:\d\d\s(::ffff:)?({host}[\w\-.]{1,2000})\s\d{1,100}\s""",
-    """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
+    """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """callerIp":"({src_ip}[^"]{1,2000})""",
     """({service}storage.googleapis.com)""",
     """methodName":"({activity}[^"]{1,2000})""",
