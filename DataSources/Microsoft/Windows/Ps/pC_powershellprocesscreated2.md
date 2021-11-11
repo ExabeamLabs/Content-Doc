@@ -14,7 +14,7 @@ Name = powershell-process-created-2
     """({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|pm|PM))""",
     """<TimeCreated SystemTime='({time}\d{1,100}\-\d{1,100}\-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{3})""",
     """EventCode=({event_code}\d{1,100})""",
-    """ComputerName=({host}[\w.\-]{1,2000})""",
+    """ComputerName =({host}[\w.\-]{1,2000})""",
     """<EventID[^>]{0,2000}>({event_code}\d{1,100})</EventID>""",
     """<Computer>({host}[^<>]{1,2000})</Computer>""",
     """Sid=({user_sid}[\w\-]{1,2000})""",

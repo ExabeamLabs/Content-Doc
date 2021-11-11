@@ -6,7 +6,7 @@ Name = cef-sap-app-activity-3
   DataType = "file-download"
   Conditions = [ """CEF:""", """|SAP|Security Audit Log|""", """AUY""" ]
   Fields = ${SAPParserTemplates.cef-sap-app-activity.Fields} [
-    """oldFileName=({file_name}.*?)\s\w+="""
+    """oldFileName =({file_name}.*?)\s\w+="""
   ]
 }
 cef-sap-app-activity = {
@@ -29,8 +29,8 @@ cef-sap-app-activity = {
     """src=({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
     """suser=({user}[^\s]{1,2000})""",
     """filePath=({server}.*?)\s\w+=""",
-    """AttackUserName=({username}.*?)\s\w+=""",
-    """TargetUserName=({username}.*?)\s\w+=""",
+    """AttackUserName =({username}.*?)\s\w+=""",
+    """TargetUserName =({username}.*?)\s\w+=""",
     """DeviceCustomString=({host}.*?)\s\w+=""",
     """flexString2=({sid}.*?)\s\w+=""",
     """DeviceCustomString4=({client}.*?)\s\w+=""",

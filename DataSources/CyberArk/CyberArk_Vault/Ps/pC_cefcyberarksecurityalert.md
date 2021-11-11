@@ -12,7 +12,7 @@ Name = cef-cyberark-security-alert
     """\Wact=({alert_type}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wfname=({additional_info}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
     """Date=\[({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d \w+ \w+)\]""",
-    """EventName=\[({alert_name}.+?)\]""",
+    """EventName =\[({alert_name}.+?)\]""",
     """TargetAddress=\[(?:None|({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}.+?))\]""",
     """SourceAddress=\[(?:None|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}.+?))\]""",
     """\Wduser=({user}[^=@]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",

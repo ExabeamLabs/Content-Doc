@@ -13,7 +13,7 @@ Name = s-pan-vpn-start-1
     """Login from:\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """({time}\d\d\d\d/\d\d/\d\d \d{1,100}:\d{1,100}:\d{1,100})""",
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[^\s]{1,2000})""",
-    """DeviceName=({host}[\w\-.]{1,2000})""",
+    """DeviceName =({host}[\w\-.]{1,2000})""",
     """globalprotect\w*-\S+?,({host}.+?),""",
     """:\d\d:\d\d\s{1,100}({host}[^\s]{1,2000})""",
     """SYSTEM,({vpn_client}[^,]{1,2000}),""",

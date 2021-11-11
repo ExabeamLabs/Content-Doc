@@ -26,8 +26,8 @@ Name = q-vontu-dlp-alert
       """\|(dst|duser)=(?=[^\s@]{1,2000}@(?!\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))({recipients}[^|]{1,2000})""",
       """\|(dst|duser)=(?=[^\s@]{1,2000}@(?!\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))({external_address}[^|,]{1,2000})""",
       """\|endpoint=(?:N\/A|({src_host}[^$|\s]{1,2000}))""",
-      """\|fileName=(?:N\/A|({file_name}[^|]{1,2000}))""",
-      """\|fileName=(?=http(s)?:)({protocol}[^:|]{1,2000})""",
+      """\|fileName =(?:N\/A|({file_name}[^|]{1,2000}))""",
+      """\|fileName =(?=http(s)?:)({protocol}[^:|]{1,2000})""",
       """\stype=({additional_info}[^|]{1,2000})""",
       """\|blocked=({outcome}[^|]{1,2000})"""
     ]
@@ -37,6 +37,6 @@ Name = q-vontu-dlp-alert
       NameTemplate = """Symantec DLP Alert ${alert_name} found"""
       ProjectName = "SOC"
       EntityFields = [
-        {EntityType="device", Name="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]}
+        {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]}
 }
 ```

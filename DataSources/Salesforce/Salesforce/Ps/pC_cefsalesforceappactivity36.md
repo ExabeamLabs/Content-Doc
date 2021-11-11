@@ -10,7 +10,7 @@ Name = cef-salesforce-app-activity-36
   Conditions = [ """Action\=resetpassword;""", """Sales Cloud""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",  
-    """destinationServiceName=({host}.+?)\s{0,100}(\w+=|$)""",
+    """destinationServiceName =({host}.+?)\s{0,100}(\w+=|$)""",
     """CreatedDate\\=({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     """CreatedBy\.Username\\=({user_email}[^@]{1,2000}@({email_domain}[^\s;]{1,2000}))""",
     """Action\\=({activity}[^;]{1,2000})""",

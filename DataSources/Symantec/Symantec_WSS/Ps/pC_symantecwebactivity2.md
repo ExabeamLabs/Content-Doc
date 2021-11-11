@@ -7,7 +7,7 @@ Name = symantec-web-activity-2
   Lms = Splunk
   DataType = "web-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ """destinationServiceName=Symantec WSS""", """OBSERVED""", """http"""  ]
+  Conditions = [ """destinationServiceName =Symantec WSS""", """OBSERVED""", """http"""  ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[^\s]{1,2000})""",

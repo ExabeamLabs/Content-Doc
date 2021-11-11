@@ -18,7 +18,7 @@ Name = cef-pantraps-alert
     """\|Palo Alto Networks\|([^|]{1,2000}\|){4}({alert_severity}[^|]{1,2000})""",
     """(subtype|cs2)=(?: |({alert_type}.+?))\s{0,100}\w+=""",
     """Prevention Key: (?: |({alert_id}.+?))\s{0,100}($|\w+=)""",
-    """deviceProcessName=(?: |({malware_url}.+?))\s{0,100}\w+=""",
+    """deviceProcessName =(?: |({malware_url}.+?))\s{0,100}\w+=""",
     """msg=(?: |({additional_info}.+?))(\.|:)"""
   ]
   SOAR {
@@ -27,6 +27,6 @@ Name = cef-pantraps-alert
     NameTemplate = """Palo Alto Alert ${alert_name} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="device", Name="src_address", Fields=["src_host->host_name"]}
+      {EntityType="device", Name ="src_address", Fields=["src_host->host_name"]}
 }
 ```

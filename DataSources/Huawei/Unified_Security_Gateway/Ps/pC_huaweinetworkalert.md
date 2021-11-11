@@ -2,7 +2,7 @@
 ```Java
 {
 Name = huawei-network-alert
-  Conditions = ["""SignName=""" , """SignId=""" , """Os=""" ,  """ASSOC/"""]
+  Conditions = ["""SignName =""" , """SignId=""" , """Os=""" ,  """ASSOC/"""]
 }
 huawei-ids = {
   Vendor = Huawei
@@ -19,7 +19,7 @@ huawei-ids = {
      """DstIp=({dest_ip}[^,]{1,2000})""",
      """Protocol=({protocol}[^,]{1,2000})""",
      """Application="({app}[^"]{1,2000})""",
-     """SignName="({alert_name}[^"]{1,2000})""",
+     """SignName ="({alert_name}[^"]{1,2000})""",
      """Severity=({alert_severity}[^,]{1,2000})""",
      """Category=({alert_type}[^,]{1,2000})""",
      """Policy="({policy}[^"]{1,2000})""",

@@ -10,7 +10,7 @@ Name = pan-leef-network-alert
   Conditions = [ """LEEF:""", """|Palo Alto Networks|PAN-OS Syslog Integration|""" ,"""|Severity="""]
   Fields = [
     """Severity=({alert_severity}[^\s|]{1,2000})""",
-    """DeviceName=({host}[\w\-.]{1,2000})""",
+    """DeviceName =({host}[\w\-.]{1,2000})""",
     """LEEF:([^|]{0,2000}\|){4}({alert_name}[^\|]{1,2000})""",
     """Subtype=({alert_type}[^\s\|]{1,2000})\s{0,100}\|""",
     """devTime=({time}[^\|]{1,2000})\s{0,100}\|""",

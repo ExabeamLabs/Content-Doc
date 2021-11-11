@@ -16,7 +16,7 @@ Name = cef-bitdefender-gravityzone-alert
     """dvchost=({dest_host}.*?)\s\w+=""",
     """dvc=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """BitdefenderGZAttackType=({alert_type}.*?)\s\w+=""",
-    """BitdefenderGZMalwareName=({alert_name}.*?)\s\w+=""",
+    """BitdefenderGZMalwareName =({alert_name}.*?)\s\w+=""",
     """act=({outcome}.*?)\s\w+=""",
     """filePath=({file_path}.*?)\s\w+=""",
     """BitdefenderGZMalwareName.*?filePath=({malware_url}.*?)\s\w+=""",

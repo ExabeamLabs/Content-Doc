@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-proofpoint-email-alert-2
-  Conditions = [ """CEF:""", """destinationServiceName=Proofpoint""", """cat=security-alert""", """"threat""" ]
+  Conditions = [ """CEF:""", """destinationServiceName =Proofpoint""", """cat=security-alert""", """"threat""" ]
   Fields = ${PPParserTemplates.s-proofpoint-email-in-1.Fields}[
     """"sha256"{1,20}:"{1,20}({sha256}[^"]{1,2000})"{1,20}
 s-proofpoint-email-in-1 = {

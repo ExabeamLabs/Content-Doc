@@ -12,7 +12,7 @@ Name = raw-7045
     """EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""",
     """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",   
     """({event_name}A service was installed in the system)""",
-    """ComputerName=({host}[\w-.]{1,2000})\s""",
+    """ComputerName =({host}[\w-.]{1,2000})\s""",
     """\WComputer=({host}[\w\-.]{1,2000})\s""",
     """({host}\S+)\sEvntSLog""",
     """({time}\d\d\/\d\d\/\d\d\d\d\s{1,100}\d\d:\d\d:\d\d\s{1,100}(?i)(AM|PM))""",

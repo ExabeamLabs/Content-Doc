@@ -11,7 +11,7 @@ Name = o365-teams-activity-1
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """"CreationTime\\*"{1,20}:[\s\\]{0,2000}"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """destinationServiceName=({app}.+?)\s{0,100}deviceInboundInterface""",
+    """destinationServiceName =({app}.+?)\s{0,100}deviceInboundInterface""",
     """Workload"{0,20}:"{0,20}({app}[^"]{1,2000})""",
     """Workload"{0,20}:\s{0,100}"{0,20}({app}[^"]{1,2000})"{0,20}\}""",
     """ObjectId"{0,20}:\s{0,100}"{0,20}((?i)(Unknown)|({object}[^"]{1,2000}))"{0,20}""",

@@ -11,7 +11,7 @@ Name = s-checkpoint-alert
   Fields = [
     """date=({time}\d{1,100});""",
     """exabeam_host=({host}[\w-.]{1,2000})""",
-    """\|Protection Name=({alert_name}[^\|]{1,2000})\|""",
+    """\|Protection Name =({alert_name}[^\|]{1,2000})\|""",
     """\|Attack Info=({alert_type}[^\|]{1,2000})\|""",
     """\|Severity=({alert_severity}[^\|]{1,2000})\|""",
     """\|src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
@@ -29,6 +29,6 @@ Name = s-checkpoint-alert
     NameTemplate = """Check Point Alert ${alert_name} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="device", Name="src_address", Fields=["src_ip->ip_address"]}
+      {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address"]}
 }
 ```

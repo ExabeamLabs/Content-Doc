@@ -8,10 +8,10 @@ Name = avecto-process-created
     DataType = "process-created"
     IsHVF = true
     TimeFormat = "MM/dd/yyyy HH:mm:ss a"
-    Conditions = [ """SourceName=Avecto Defendpoint Service""", """Message=Process started"""]
+    Conditions = [ """SourceName =Avecto Defendpoint Service""", """Message=Process started"""]
     Fields = [
       """exabeam_raw=({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|pm|PM))""",
-      """ComputerName=({host}[^\s]{1,2000})""",
+      """ComputerName =({host}[^\s]{1,2000})""",
       """Message=({activity_type}.+?)\s{1,100}Command Line:""",
       """User Name:\s{0,100}(?:[A-F\d\-]{36}|({user}.+?))\s{1,100}User Domain SID:""",
       """User Domain Name:\s{0,100}({domain}.*?)\s{1,100}User Domain Name""",

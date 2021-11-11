@@ -17,7 +17,7 @@ Name = cef-nac-logon
     """\Wdst=({dest_ip}[A-Fa-f:\d.]{1,2000})""",
     """\Wcs6=Location#All Locations#AL#({location}[^,;]{1,2000})"""
     """\Wsource-ip\\=({src_ip}[A-Fa-f:\d.]{1,2000})""",
-    """\Wad\.NetworkDeviceName=({network}[^,\s]{1,2000})"""
+    """\Wad\.NetworkDeviceName =({network}[^,\s]{1,2000})"""
   ]
   DupFields = [ "dest_ip->auth_server" , "dest_host->computer_name"]
 }

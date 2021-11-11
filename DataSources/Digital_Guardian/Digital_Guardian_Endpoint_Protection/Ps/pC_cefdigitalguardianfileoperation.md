@@ -30,12 +30,12 @@ Name = cef-digitalguardian-file-operation
     """\|Digital Guardian\|(.*?\|){2}({event_code}.+?)\|""",
     """\soldFilePath=(|\?:\\+|({src_file_dir}.+?))\\*\s{1,100}(ad\.\S+=|\w+=|$)""",   
     """\sfilePath=(|\?:\\+|({file_parent}.+?))\\*\s{1,100}(ad\.\S+=|\w+=|$)""",
-    """\soldFileName=(|({src_file_name}.+?))\s{1,100}(ad\.\S+=|\w+=|$)""",
+    """\soldFileName =(|({src_file_name}.+?))\s{1,100}(ad\.\S+=|\w+=|$)""",
     """\sfname=(|({file_name}.+?(\.({file_ext}[^\.]{1,2000}?))?))\s{1,100}(ad\.\S+=|\w+=|$)""",
     """\sfileType=(|({file_ext}.+?))\s{1,100}(ad\.\S+=|\w+=|$)""",
     """\|(File Recycle|File Delete)\|.*\soldFilePath=(|({file_parent}.+?))\\*\s{1,100}(ad\.\S+=|\w+=|$)""",
-    """\|(File Recycle|File Delete)\|.*\soldFileName=(|({file_name}.+?(\.({file_ext}[^\.]{1,2000}?))?))\s{1,100}(ad\.\S+=|\w+=|$)""",
-    """\sad\.DG__ProductName=(|({app}.+?))\s{1,100}(ad\.\S+=|\w+=|$)""",
+    """\|(File Recycle|File Delete)\|.*\soldFileName =(|({file_name}.+?(\.({file_ext}[^\.]{1,2000}?))?))\s{1,100}(ad\.\S+=|\w+=|$)""",
+    """\sad\.DG__ProductName =(|({app}.+?))\s{1,100}(ad\.\S+=|\w+=|$)""",
     """\sad\.DG__BytesWritten=(0|({bytes}\d{1,100}))\s{1,100}(ad\.\S+=|\w+=|$)""",
   ]
 }

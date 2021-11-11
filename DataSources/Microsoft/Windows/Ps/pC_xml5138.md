@@ -19,8 +19,8 @@ Name = xml-5138
     """Object:[^\{\}]{1,2000}?New DN:\s{1,100}({object_dn}[^\s]{1,2000})""",
     """Object:\s{1,100}Old DN:[^\{\}]{1,2000}?({object_ou}OU[^\s]{1,2000}?)\s{1,100}GUID:""",
     """Directory Service:\s{0,100}Name:\s{0,100}({service_name}[^\s]{1,2000})\s{1,100}Type:\s{0,100}({service_type}[^:]{0,2000}?Services)""",
-    """<Data Name='ObjectGUID'>\{({guid}[^<\}]{1,2000})\}<""",
-    """<Data Name='OpCorrelationID'>\{({correlation_id}[^\}<]{1,2000})\}<""",
+    """<Data Name ='ObjectGUID'>\{({guid}[^<\}]{1,2000})\}<""",
+    """<Data Name ='OpCorrelationID'>\{({correlation_id}[^\}<]{1,2000})\}<""",
   ]
 }
 }

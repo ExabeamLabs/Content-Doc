@@ -3,7 +3,7 @@
 {
 Name = cef-okta-account-unlocked
   DataType = "account-password-reset"
-  Conditions = ["""CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Okta""", """"eventType":"user.account.reset_password""""]
+  Conditions = ["""CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName =Okta""", """"eventType":"user.account.reset_password""""]
   Fields = ${OktaParserTemplates.json-okta-auth.Fields}[
     """target(s)?"{1,20}:[^\]]{1,2000}?"{1,20}type"{1,20}:"{1,20}User"{1,20}[^\]\}]{1,2000}?"{1,20}(alternateId|emailAddress)"{1,20}:(null|"{1,20}({target_user}[^"@]{1,2000}@({target_domain}[^"]{1,2000})))""",
     """target(s)?"{1,20}:[^\]]{1,2000}?"{1,20}type"{1,20}:"{1,20}User"{1,20}[^\]\}]{1,2000}?"{1,20}(alternateId|emailAddress)"{1,20}:(null|"{1,20}(({target_domain}[^\\\/]{1,2000})[\/\\]{1,2000})?({target_user}[^"]{1,2000}))"""

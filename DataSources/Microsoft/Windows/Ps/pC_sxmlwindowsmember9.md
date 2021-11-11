@@ -3,9 +3,9 @@
 {
 Name = s-xml-windows-member-9
   DataType = "vpn-start"
-  Conditions = [ "<EventID>2000</EventID>", "<Data Name='IPsecTrafficMode'>" ]
+  Conditions = [ "<EventID>2000</EventID>", "<Data Name ='IPsecTrafficMode'>" ]
   Fields =${WinParserTemplates.s-xml-windows-member.Fields}[
-    """<Data Name='RemoteUserAccount'>([^<>]{1,2000}?\\)?(-|[^\$\s<>]{1,2000}\$|({account}[^\s<>]{1,2000}))"""
+    """<Data Name ='RemoteUserAccount'>([^<>]{1,2000}?\\)?(-|[^\$\s<>]{1,2000}\$|({account}[^\s<>]{1,2000}))"""
   ]
 }
 s-xml-windows-member = {

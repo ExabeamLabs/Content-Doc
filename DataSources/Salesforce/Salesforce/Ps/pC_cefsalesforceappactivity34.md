@@ -7,7 +7,7 @@ Name = cef-salesforce-app-activity-34
   Lms = ArcSight
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """destinationServiceName=Sales Cloud""", """type\=EmailMessage""" ]
+  Conditions = [ """destinationServiceName =Sales Cloud""", """type\=EmailMessage""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
     """LastModifiedDate\\=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,3}Z)""",

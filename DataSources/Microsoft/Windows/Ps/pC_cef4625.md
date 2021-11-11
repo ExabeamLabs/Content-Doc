@@ -20,7 +20,7 @@ Name = cef-4625
       """\ssrc=(?:-|({src_ip}[\w:.]{1,2000}))\s{1,100}\w+=""",
       """\scn1=({logon_type}\d{1,100})""",
       """\scs5=({auth_package}[^\s]{1,2000})""",
-      """\sdeviceProcessName=({auth_process}[^\s]{1,2000})""",
+      """\sdeviceProcessName =({auth_process}[^\s]{1,2000})""",
       """Sub_,Status=({result_code}[^\s]{1,2000})""",
       """Account locked out.+?flexString1=({result_code}[^\s]{1,2000})"""
       """Key_,Length=({key_length}\d{1,100})"""

@@ -7,13 +7,13 @@ Name = cef-aws-cloudwatch-netflow-connection
   Lms = ArcSight
   DataType = "netflow-connection"
   TimeFormat = "epoch"
-  Conditions = [ """CEF:""", """destinationServiceName=AWS""", """dproc=CloudWatch Logs""" ]
+  Conditions = [ """CEF:""", """destinationServiceName =AWS""", """dproc=CloudWatch Logs""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """\Wstart=({time}\d{1,100})""",
     """\Wcat=(|({category}[^=]{1,2000}?))(\s{1,100}\w{1,100}=|\s{0,100}$)""",
     """\Wcn2=({bytes}\d{1,100})""",
-    """\WdestinationServiceName=(|({service}[^=]{1,2000}?))(\s{1,100}\w{1,100}=|\s{0,100}$)""",
+    """\WdestinationServiceName =(|({service}[^=]{1,2000}?))(\s{1,100}\w{1,100}=|\s{0,100}$)""",
     """\Wdpt=({dest_port}\d{1,100})""",
     """\Wdst=({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """\Wspt=({src_port}\d{1,100})""",

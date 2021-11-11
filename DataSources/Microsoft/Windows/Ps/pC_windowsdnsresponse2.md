@@ -22,6 +22,6 @@ windows-dns = {
     """\sFlags \(char codes\)=({query_flags}[^\t]{1,2000})""",
     """\sResponseCode=({dns_response_code}[^\t]{1,2000})""",
     """\sQuestion Type=({query_type}[^\t]{1,2000})""",
-    """\sQuestion Name=({query}[^\t"]{1,2000})"""
+    """\sQuestion Name =({query}[^\t"]{1,2000})"""
   ]}
 ```

@@ -18,7 +18,7 @@ Name = cef-fortinet-network-connection
     """\Wdhost=(|({dest_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdst=({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """\Wdpt=({dest_port}\d{1,100})""",
-    """\WdestinationServiceName=(|({service}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\WdestinationServiceName =(|({service}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdvchost=(|({host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\WdeviceOutboundInterface=({dest_interface}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\WdeviceInboundInterface=({src_interface}.+?)(\s{1,100}\w+=|\s{0,100}$)""",

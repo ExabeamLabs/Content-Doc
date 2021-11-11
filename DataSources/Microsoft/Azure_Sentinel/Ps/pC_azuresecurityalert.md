@@ -7,7 +7,7 @@ Name = azure-security-alert
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """"ProductName":"Azure Sentinel"""", """destinationServiceName=Azure""", """dproc=Log Analytics OMS Workspace""" ]
+  Conditions = [ """"ProductName":"Azure Sentinel"""", """destinationServiceName =Azure""", """dproc=Log Analytics OMS Workspace""" ]
   Fields=[
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """"{1,20}AlertName"{1,20}:"{1,20}({alert_name}[^"]{1,2000})""",
@@ -40,6 +40,6 @@ Name = azure-security-alert
     NameTemplate = """Microsoft azure security Alert ${alert_name} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="device", Name="src_address", Fields=["src_host->host_name"]}
+      {EntityType="device", Name ="src_address", Fields=["src_host->host_name"]}
 }
 ```

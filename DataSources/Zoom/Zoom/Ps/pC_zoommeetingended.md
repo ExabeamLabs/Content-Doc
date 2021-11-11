@@ -10,7 +10,7 @@ Name = zoom-meeting-ended
   Conditions = [ """|Skyformation|""", """"event":"meeting.ended"""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
-    """\WdestinationServiceName=({app}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\WdestinationServiceName =({app}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """"end_time"\s{0,100}:\s{0,100}({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}Z)"""",
     """"event"\s{0,100}:\s{0,100}"meeting.({activity}ended)"""",
     """"id"\s{0,100}:\s{0,100}"({meeting_number}\d{1,100})""",

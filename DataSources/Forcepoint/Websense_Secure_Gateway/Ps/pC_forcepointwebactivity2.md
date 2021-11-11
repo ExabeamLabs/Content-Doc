@@ -14,7 +14,7 @@ Name = forcepoint-web-activity-2
     """Action="(?:-|({action}[^"]{1,2000}))""",
     """Bytes_Sent="({bytes_in}\d{1,100})"""",
     """Bytes_Received="({bytes_out}\d{1,100})"""",
-    """Category_Name="(Unknown|({category}[^"]{1,2000}))"""",
+    """Category_Name ="(Unknown|({category}[^"]{1,2000}))"""",
     """Destination_IP="(0\.0\.0\.0|({dest_ip}[\da-fA-F:\.]{1,2000}))"""",
     """Source_IP="({src_ip}[\da-fA-F:\.]{1,2000})"""",
     """\sURL_-_Full="({full_url}({protocol}[^:]{1,2000}):\/\/({web_domain}[^\/:\s]{1,2000}))?({uri_path}\/?[^\?"]{1,2000})?(\?({uri_query}[^"]{1,2000}))?"""",
@@ -26,7 +26,7 @@ Name = forcepoint-web-activity-2
     """HTTP_Status_Code="({result_code}\d{1,100})"""",
     """Workstation="(Not available|({src_host}[^"]{1,2000}))"""",
     """User="(Not available|({user_email}[^@\s"]{1,2000}@[^@\s"]{1,2000})|({user}[^"\s]{1,2000}))""""
-    """File_Name="((?i)none|({file_name}[^"]{1,2000}))"""",
+    """File_Name ="((?i)none|({file_name}[^"]{1,2000}))"""",
     """File_Type="((?i)Unknown|({file_type}[^"]{1,2000}))"""
   ]
 }

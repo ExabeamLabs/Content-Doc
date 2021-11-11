@@ -7,10 +7,10 @@ Name = trend-micro-alert-8
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ """[LogNetworkVirus""", """Network Virus Name=""", """Victim IP=""" ]
+  Conditions = [ """[LogNetworkVirus""", """Network Virus Name =""", """Victim IP=""" ]
   Fields = [
     """\d{1,100} ({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-    """Network Virus Name="({alert_name}[^"]{1,2000})"""",
+    """Network Virus Name ="({alert_name}[^"]{1,2000})"""",
     """Domain="({domain}[^"]{1,2000})""",
     """User="({user}[^"]{1,2000})""",
     """Attacker IP="({dest_ip}[a-fA-F\d.:]{1,2000})""",

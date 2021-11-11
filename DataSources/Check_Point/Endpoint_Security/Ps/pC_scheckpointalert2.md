@@ -12,7 +12,7 @@ Name = s-checkpoint-alert-2
     """time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[\w-.]{1,2000})""",
     """\|orig=({host}[^\|]{1,2000})\|""",
-    """\|Protection Name=({alert_name}[^\|]{1,2000})\|""",
+    """\|Protection Name =({alert_name}[^\|]{1,2000})\|""",
     """Malware signature matched \(\s{0,100}({alert_name}.+?)\s{0,100}\)""",
     """\|Protection Type=({alert_type}[^\|]{1,2000})\|""",
     """\|severity=({alert_severity}[^\|]{1,2000})\|""",
@@ -33,6 +33,6 @@ Name = s-checkpoint-alert-2
     NameTemplate = """Check Point Alert ${alert_name} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="device", Name="src_address", Fields=["src_ip->ip_address"]}
+      {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address"]}
 }
 ```

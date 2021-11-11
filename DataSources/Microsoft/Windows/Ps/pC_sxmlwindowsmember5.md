@@ -3,7 +3,7 @@
 {
 Name = s-xml-windows-member-5
   DataType = "windows-member-removed"
-  Conditions = [ "<EventID>4733</EventID>", "<Data Name='TargetSid'>" ]
+  Conditions = [ "<EventID>4733</EventID>", "<Data Name ='TargetSid'>" ]
 }
 s-xml-windows-member = {
   Vendor = Microsoft

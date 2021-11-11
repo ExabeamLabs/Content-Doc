@@ -3,13 +3,13 @@
 {
 Name = cef-microsoft-app-activity-39
   Product = Office 365
-  Conditions= [ """CEF:""","""destinationServiceName=Office 365""", """"MoveToDeletedItems""" ]
+  Conditions= [ """CEF:""","""destinationServiceName =Office 365""", """"MoveToDeletedItems""" ]
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields} [
     """fname=\s{0,100}({object}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """"ParentFolder":[^=]{1,2000}?"Path":"\\*({object}[^"]{1,2000})"""",
     """"DestFolder":[^=]{1,2000}?"Path":"\\*({object}[^"]{1,2000})"""",
     """"target_object":"({object}[^"]{1,2000}?)""""
-    """sourceServiceName=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
+    """sourceServiceName =({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """requestMethod=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",   
     """ext_userAgent_name=({resource}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """({activity}MoveToDeletedItems)""" 
@@ -40,7 +40,7 @@ cef-microsoft-app-activity = {
     """"result":"({result}[^"]{1,2000})""",
     """"ResultStatus":"({result}[^"]{1,2000}?)"""",
     """\sdestinationServiceName\s{0,100}=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
-    """\ssourceServiceName=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
+    """\ssourceServiceName =({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """"User-Agent\\?"{1,20}:\\?"{1,20}({user_agent}[^"\\]{1,2000})"""
     """"UserAgent":"({user_agent}[^"]+)"""",
     """"ipAddress":"({dest_ip}[A-Fa-f.:\d]{1,2000})""""

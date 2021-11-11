@@ -27,8 +27,8 @@ Name = cef-mcafee-dlp-prevent
       """(\s|\|)sMcAfeeDLPEmailSender=<?({sender}[^\s@<>]{1,2000}?@[^\s@<>]{1,2000})"""
       """(\s|\|)sMcAfeeDLPEmailRecipients=<?({recipient}[^\s@<>]{1,2000}?@[^\s@<>]{1,2000})"""      
       """\sMcAfeeDLPEmailRecipients=(\s{1,100}|((recipients}.+?)\s{0,100}))(\w+=|$)"""
-      """\sMcAfeeDLPHostDomainName=({domain}[\w\-\.]{1,2000}?)\s{0,100}(\w+=|$)"""
-      """\sMcAfeeDLPHostName=({host}[\w\-\.]{1,2000}?)\s{0,100}(\w+=|$)"""
+      """\sMcAfeeDLPHostDomainName =({domain}[\w\-\.]{1,2000}?)\s{0,100}(\w+=|$)"""
+      """\sMcAfeeDLPHostName =({host}[\w\-\.]{1,2000}?)\s{0,100}(\w+=|$)"""
       """({additional_info}Unable to deliver message.)"""
     ]
     DupFields = [ "sender->user_email", "recipient->external_address" ]

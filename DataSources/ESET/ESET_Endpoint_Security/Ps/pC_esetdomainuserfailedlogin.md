@@ -15,7 +15,7 @@ Name = eset-domain-user-failed-login
       """\Wsrc=({src_ip}[a-fA-F:\d.]{1,2000})""",
       """\Waction=({activity}[^\s]{1,2000})\s""",
       """\Wresult=({outcome}[^=]{1,2000}?)\s{0,100}(\w+=|$)""",
-      """\WdeviceName=({host}[^\s]{1,2000})\s""",
+      """\WdeviceName =({host}[^\s]{1,2000})\s""",
       """\Wtarget=({object}[^\s]{1,2000})\s{0,100}""",
       """\Wdetail=({additional_info}[^.]{1,2000}).""",
       """\Wuser '\w+\\({user}[^\s]{1,2000})'.""",

@@ -16,7 +16,7 @@ Name = cef-salesforce-app-activity-41
     """\Wfname=({object}.+?)\s{1,100}(\w+=|$)""",
     """\Wcs1=\{({new_value}[^\}]{1,2000})""",
     """\Wcs2=\{({old_value}[^\}]{1,2000})""",
-    """\WdestinationServiceName=({app}.+?)\s{0,100}(\w+=|$)""",
+    """\WdestinationServiceName =({app}.+?)\s{0,100}(\w+=|$)""",
   ]
   DupFields = [ "object->resource" ]
 }

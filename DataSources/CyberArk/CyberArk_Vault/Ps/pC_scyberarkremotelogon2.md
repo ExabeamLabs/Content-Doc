@@ -20,7 +20,7 @@ s-cyberark-events {
     """;Issuer="({user}[^"]{1,2000})""",
     """;Station="({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """;Safe="(|({safe_value}[^"]{1,2000}))"""",
-    """;UserName="(|(({domain}[^\s\\"]{1,2000})\\+)?({account}[^\s\\"]{1,2000}))"""",
+    """;UserName ="(|(({domain}[^\s\\"]{1,2000})\\+)?({account}[^\s\\"]{1,2000}))"""",
     """;LogonDomain="(|[\d\.]{1,2000}|({account_domain}[^"]{1,2000}?))"""",
     """;DeviceType="(|({dest_service}[^"]{1,2000}))"""",
     """;Address="(|(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(\:({dest_port}\d{1,100}))?|({dest_host}[\w\-.]{1,2000})))""""

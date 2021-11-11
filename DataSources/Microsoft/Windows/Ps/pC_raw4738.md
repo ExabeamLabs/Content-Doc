@@ -12,7 +12,7 @@ Name = raw-4738
     """({event_name}A user account was changed)""",
     """({event_code}4738)""",
     """Computer(Name)?\s{0,100}\\*"?(=|:|>)\s{0,100}"{0,20}(::ffff:)?({host}[\w\.-]{1,2000})(\s|,|"|</Computer>|$)""",
-    """\sComputerName=(::ffff:)?({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\sComputerName =(::ffff:)?({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """({time}\d\d\/\d\d\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|pm|PM))""",
     """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100})""",
     """(?i)\w+\s{0,100}\d{1,100}\s\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(::ffff:)?(am|pm|({host}[\w\-.]{1,2000}))\s""",

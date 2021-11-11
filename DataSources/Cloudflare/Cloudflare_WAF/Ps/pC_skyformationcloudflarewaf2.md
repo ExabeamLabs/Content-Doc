@@ -8,7 +8,7 @@ Name = skyformation-cloudflare-waf-2
   DataType = "web-activity"
   IsHVF = true
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """destinationServiceName=Cloudflare""", """"clientIP":"""", """"source":""", """"clientRequestHTTPMethodName":"""" ]
+  Conditions = [ """destinationServiceName =Cloudflare""", """"clientIP":"""", """"source":""", """"clientRequestHTTPMethodName":"""" ]
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s{1,100}[^\s]{1,2000}\s{1,100}Skyformation""",
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",

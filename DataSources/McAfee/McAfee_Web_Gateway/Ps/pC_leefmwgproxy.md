@@ -12,7 +12,7 @@ Name = leef-mwg-proxy
     Fields = [
 		"""\|devTime=({time}\d{1,100})""",
 		"""\d\d:\d\d:\d\d\s({host}[^\s]{1,2000})\s(mwg:\s)?LEEF:""",
-		"""\|usrName=(?:|({user}[^|]{1,2000}))\|""",
+		"""\|usrName =(?:|({user}[^|]{1,2000}))\|""",
 		"""\|src=(?:|({src_ip}[^|]{1,2000}))\|""",
 		"""\|dst=(?:|({dest_ip}[^|]{1,2000}))\|""",
 		"""\|httpStatus=(?:|({result_code}[^|]{1,2000}))\|""",

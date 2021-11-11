@@ -15,7 +15,7 @@ Name = xml-4649
     """<Computer>({host}[^<>]{1,2000})<\/Computer>""",
     """<Execution ProcessID='({process_id}[^']{1,2000})""",
     """ProcessID='({process_id}\d{1,100})""",
-    """Name='LogonProcessName'>({auth_process}[^<]{1,2000})""",
+    """Name ='LogonProcessName'>({auth_process}[^<]{1,2000})""",
     """<Message>({event_name}.+?)\s{0,100}\.(\s|</Message>)""",
     """<Message>({event_name}.+?)\s{1,100}Subject:""",
     """<Keywords?>({outcome}[^<]{1,2000})<\/Keywords?>""",

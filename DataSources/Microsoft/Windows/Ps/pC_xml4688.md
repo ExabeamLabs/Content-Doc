@@ -33,7 +33,7 @@ Name = xml-4688
     """<Data Name(\\)?='CommandLine'>"?[^<]{0,2000}?\s{1,100}"({parameter_csproj}[^<]{1,2000}?\.csproj)"""",
     """<Data Name(\\)?='CommandLine'>"?[^<]{0,2000}?\s{1,100}["\s]({parameter_exe}[^<]{1,2000}?\.exe)""",
     """<Data Name(\\)?='CommandLine'>"?[^<]{0,2000}?\s{1,100}["\s]({parameter_dll}[^<]{1,2000}?\.dll)""",
-    """<Data Name='ParentProcessName'>({parent_process}({parent_directory}[^<]{1,2000}[\\\/]{1,2000})?({parent_process_name}[^<]{1,2000}))<\/Data>"""
+    """<Data Name ='ParentProcessName'>({parent_process}({parent_directory}[^<]{1,2000}[\\\/]{1,2000})?({parent_process_name}[^<]{1,2000}))<\/Data>"""
   ]
   DupFields = [ "host->dest_host","process_guid->pid","directory->process_directory","process->path" ]
 }

@@ -7,7 +7,7 @@ Name = cef-mimecast-dlp-email
   Lms = ArcSight
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """destinationServiceName=Mimecast Email Security""", """"Dir":"""", """"Sender":"""", """"Rcpt":"""","""dproc=""" ]
+  Conditions = [ """destinationServiceName =Mimecast Email Security""", """"Dir":"""", """"Sender":"""", """"Rcpt":"""","""dproc=""" ]
   Fields = [
     """"acc":"({host}[^",]{1,2000})"""",
     """"datetime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d[+-]\d{1,100})"""",

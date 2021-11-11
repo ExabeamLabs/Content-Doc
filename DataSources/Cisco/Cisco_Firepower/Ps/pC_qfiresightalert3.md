@@ -13,7 +13,7 @@ Name = q-firesight-alert-3
     """\WDeviceAddress=({host}[\w\-.]{1,2000})""",
     """\WfileEventData.sourceAddress=({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """\WfileEventData.destinationAddress=({dest_ip}[A-Fa-f:\d.]{1,2000})""",
-    """\WfileEventData.fileName=({file_name}.+?)\s{1,100}([\w\.]{1,2000}=|$)""",
+    """\WfileEventData.fileName =({file_name}.+?)\s{1,100}([\w\.]{1,2000}=|$)""",
     """\WfileEventData.uri=({malware_url}.+?)\s{1,100}fileEventData.signature=""",
     """\WfileEventData.sourcePort=({src_port}\d{1,100})""",
     """\WfileEventData.destinationPort=({dest_port}\d{1,100})""",

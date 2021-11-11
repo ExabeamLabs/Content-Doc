@@ -20,7 +20,7 @@ Name = q-ldap-auth-attempt
       """\WtargetPort=({dest_port}\d{1,100})""",
       """\WtargetProtocol="{1,20}({protocol}[^"]{1,2000}?)"{1,20}(\s{1,100}\w+=|\s{0,100}$)""",
       """\WrequesterIP="({src_ip}[a-fA-F\d.:]{1,2000})""",
-      """\WinstanceName="({host}[^"]{1,2000})""",
+      """\WinstanceName ="({host}[^"]{1,2000})""",
       """\WauthDN="({user_ou}[^"]{1,2000})""",
     ]
   }

@@ -7,7 +7,7 @@ Name = cb-defense-app-login
   Lms = Direct
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """destinationServiceName=CB Defense""", """"loginName":""", """logged in successfully""" ]
+  Conditions = [ """destinationServiceName =CB Defense""", """"loginName":""", """logged in successfully""" ]
   Fields = [
     """exabeam_host=({host}[\w\-.]{1,2000})""",   
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",

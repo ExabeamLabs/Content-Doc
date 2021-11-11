@@ -9,7 +9,7 @@ Name = s-salesforce-app-login
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """LoginGeoId=""","""|Quicklook_ID__c=""" ]
   Fields = [
-    """\|Name="({user}[^"]{1,2000})"""",
+    """\|Name ="({user}[^"]{1,2000})"""",
     """\|LoginTime="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\|SourceIp="({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\|LoginUrl="({dest_host}[^"]{1,2000})"""",

@@ -20,7 +20,7 @@ Name = cef-4624
       """\sdproc=(?:-|({process}[\w:\\.\-]{1,2000}[\\]{1,20}({process_name}[^\\=]{1,2000}?)?))\s\w+=""",
       """Service_,ID=({user_sid}[^\s]{1,2000})\s""",
       """cs5=({auth_package}[^\s]{1,2000}).+?cs5Label=Auth""",
-      """\sdeviceProcessName=({auth_process}[^\s]{1,2000})""",
+      """\sdeviceProcessName =({auth_process}[^\s]{1,2000})""",
       """ src=(?:-|({src_ip}[\w:.]{1,2000}))\s{1,100}\w+=""",
       """shost=({src_host}[^\s]{1,2000})""",
       """Key_,Length=({key_length}\d{1,100})""" 

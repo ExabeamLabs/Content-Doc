@@ -7,7 +7,7 @@ Name = cef-ping-failed-app-login-2
   Lms = Direct
   DataType = "failed-app-login"
   TimeFormat = "epoch"
-  Conditions = [ """destinationServiceName=Ping""", """|login-failed|"""]
+  Conditions = [ """destinationServiceName =Ping""", """|login-failed|"""]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """end=({time}\d{1,100})""",

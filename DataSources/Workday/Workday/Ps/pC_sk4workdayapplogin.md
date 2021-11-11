@@ -14,7 +14,7 @@ sk4-workday-login-template = {
     Fields = [
       """exabeam_host=({host}[\w.\-]{1,2000})""",
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """destinationServiceName=({app}[^ ]{1,2000})""",
+      """destinationServiceName =({app}[^ ]{1,2000})""",
       """msg=({additional_info}[^=]{1,2000}?)\s\w+=.""",
       """"signonIPAddress":"({src_ip}[A-Fa-f.\d:]{1,2000})""",
       """"userName":"({user}[^"]{1,2000})""",

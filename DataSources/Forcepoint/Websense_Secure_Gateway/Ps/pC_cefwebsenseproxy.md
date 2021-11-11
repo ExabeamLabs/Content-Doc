@@ -29,7 +29,7 @@ wp-web-activity = {
       """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sdpt=({dest_port}\d{1,100})\s\w+=""",
       """\srequest=(-|({full_url}(({protocol}[^:\\\/\s,"]{1,2000}):[\\\/]{1,2000})?({web_domain}[^\\\/\s:,"]{1,2000})(:\d{1,100})?({uri_path}\/[^\s\?"]{0,2000})?({uri_query}\?[^"\s]{0,2000})?))\s{1,100}(\w+=|$)""",
-      """\srequestUrlFileName=(?:(-|)|({uri_path}.+?))\s\w+=""",
+      """\srequestUrlFileName =(?:(-|)|({uri_path}.+?))\s\w+=""",
       """\srequestUrlQuery=(?:-|({uri_query}.+?))\s\w+=""",
       """\srequestMethod=({method}.+?)\s\w+=""",
       """\srequestClientApplication=(?:-|({user_agent}.+?))\s\w+=""",

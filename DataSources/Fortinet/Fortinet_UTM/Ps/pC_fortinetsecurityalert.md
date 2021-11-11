@@ -33,6 +33,6 @@ Name = fortinet-security-alert
     NameTemplate = """Fortinet Alert ${alert_name} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="device", Name="src_address", Fields=["src_ip->ip_address"]}
+      {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address"]}
 }
 ```

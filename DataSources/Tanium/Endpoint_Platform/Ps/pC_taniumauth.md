@@ -10,7 +10,7 @@ Name = tanium-auth
     Conditions = [ """ Tanium """, """Question="Exabeam-Logon-Even-Test"""" ]
     Fields = [
       """({host}[\w.\-]{1,2000})\s{1,100}Tanium """,
-      """\sEndpoint-Name="(-|({dest_host}[^"]{1,2000}))"""",
+      """\sEndpoint-Name ="(-|({dest_host}[^"]{1,2000}))"""",
       """\sTimestamp="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{1,100}(\+|\-)\d\d:\d\d)""",
       """\sTarget-User="(-|({user}[^"]{1,2000}))"""",
       """\sTarget-Domain="(-|({domain}[^"]{1,2000}))"""",

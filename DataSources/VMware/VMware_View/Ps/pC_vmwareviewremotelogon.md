@@ -13,8 +13,8 @@ Name = vmware-view-remote-logon
     """({app}View)""",
     """\s{1,100}({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
     """\sUserSID="({user_sid}[^"]{1,2000})"""",
-    """UserDisplayName="(({domain}[^\\]{1,2000})\\+)?({user}[^"]{1,2000})"""",
-    """MachineName="({dest_host}[^"]{1,2000})"""",
+    """UserDisplayName ="(({domain}[^\\]{1,2000})\\+)?({user}[^"]{1,2000})"""",
+    """MachineName ="({dest_host}[^"]{1,2000})"""",
    ]
 }
 }

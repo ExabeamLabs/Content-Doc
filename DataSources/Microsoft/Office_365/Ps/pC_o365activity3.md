@@ -7,7 +7,7 @@ Name = o365-activity-3
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ """"Workload""", """"Operation""", """destinationServiceName=Office 365""" ]
+  Conditions = [ """"Workload""", """"Operation""", """destinationServiceName =Office 365""" ]
   Fields = [
     """"CreationTime\\*"{1,20}:[\s\\]{0,2000}"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}\S{1,2000})""",
@@ -20,7 +20,7 @@ Name = o365-activity-3
     """"UserId":"\\*"(?![^@"]{1,2000}?@[^\s"]{1,2000})({domain}[^"\\\/]{1,2000})[^"]{0,2000}?(Unknown|Sync|AirInvestigation|({user}[^"\\\/@\s]{1,2000}))\\"""",
     """"(Workload|Application|Client)\\*"{1,20}:[\s\\]{0,2000}"{1,20}({app}[^"\\]{0,2000})""",
     """\WdestinationServiceName\s{0,100}=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
-    """\WsourceServiceName=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
+    """\WsourceServiceName =({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """"ObjectId\\*"{1,20}:"?[\s\\]{0,2000}"{1,20}(Unknown|Not Available|({object}[^"\\]{0,2000}))""",
     """"SourceFileName":"({object}[^",]{1,2000})""",
     """\ssuser=(anonymous|SecurityComplianceAlerts|({user_email}[^\s]{1,2000}@[^\s]{1,2000}\.[^\s]{1,2000})|(Unknown|Sync|AirInvestigation|({user}[^"\s@]{1,2000}?)))\s""",

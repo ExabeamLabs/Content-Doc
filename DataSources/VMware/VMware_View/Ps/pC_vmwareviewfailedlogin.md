@@ -14,7 +14,7 @@ Name = vmware-view-failed-login
     """({app}View)""",
     """\s{1,100}({dest_host}[^\s]{1,2000})\s{1,100}View - """,
     """\s{1,100}ClientIpAddress="({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
-    """UserDisplayName="(({domain}[^\\]{1,2000})\\+)?({user}[^"]{1,2000})"""",
+    """UserDisplayName ="(({domain}[^\\]{1,2000})\\+)?({user}[^"]{1,2000})"""",
     """USER_AUTHFAILED_({failure_reason}[^"]{1,2000})""""
    ]
 }

@@ -18,7 +18,7 @@ Name = cef-checkpoint-firewall
     """\Wspt=({src_port}\d{1,100})""",
     """\Wdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\Wdpt=({dest_port}\d{1,100})""",
-    """\WdestinationServiceName=({service}.+?)\s{1,100}(\w+=|$)""",
+    """\WdestinationServiceName =({service}.+?)\s{1,100}(\w+=|$)""",
     """\Wdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\Wreason=(?:;|({failure_reason}.+?))\s{1,100}(\w+=|$)""",
     """\Wcs1=(?:\s\&|({rule}.+?))\s{1,100}(\w+=|$)"""

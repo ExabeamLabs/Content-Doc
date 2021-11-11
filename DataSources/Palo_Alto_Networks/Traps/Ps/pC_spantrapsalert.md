@@ -24,6 +24,6 @@ Name = s-pantraps-alert
     NameTemplate = """Palo Alto Alert ${alert_name} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="device", Name="src_address", Fields=["src_host->host_name"]}
+      {EntityType="device", Name ="src_address", Fields=["src_host->host_name"]}
 }
 ```

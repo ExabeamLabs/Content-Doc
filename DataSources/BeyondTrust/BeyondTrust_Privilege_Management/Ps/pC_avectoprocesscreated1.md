@@ -11,13 +11,13 @@ Name = avecto-process-created-1
   Conditions = [ """, ProcessStartTime="""", """, ProcessStartTimeMs="""" ]
   Fields = [
     """\WProcessStartTime="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{1,100})""",
-    """\WHostName="({host}[^"]{1,2000})""",
+    """\WHostName ="({host}[^"]{1,2000})""",
     """\WEventNumber="({event_code}\d{1,100})""",
-    """\WUserName="(({domain}[^\\"]{1,2000})\\)?({user}[^\\"]{1,2000})""",
+    """\WUserName ="(({domain}[^\\"]{1,2000})\\)?({user}[^\\"]{1,2000})""",
     """\WEventDescription="({additional_info}[^"]{1,2000})""",
-    """\WFileName="({process}({directory}(?:(\w+:)?[^:"]{1,2000})?[\\\/])?({process_name}.+?))"""",
+    """\WFileName ="({process}({directory}(?:(\w+:)?[^:"]{1,2000})?[\\\/])?({process_name}.+?))"""",
     """\WCommandLine="({command_line}.+?)",""",
-    """\WProductName="(<None>|({product_name}[^"]{1,2000}))""",
+    """\WProductName ="(<None>|({product_name}[^"]{1,2000}))""",
     """\WPublisher="(<None>|({publisher}[^"]{1,2000}))""",
     """\WReason="(<None>|({reason}[^"]{1,2000}))""",
     """\WProcessGUID="({process_guid}[^"]{1,2000})""",

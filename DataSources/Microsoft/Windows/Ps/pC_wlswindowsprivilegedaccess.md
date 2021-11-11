@@ -13,9 +13,9 @@ Name = wls-windows-privileged-access
       """"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """EventID="{1,20}({event_code}[^"]{1,2000})"""",
       """Keywords="{1,20}({outcome}[^"]{1,2000})"""",
-      """SubjectUserName="{1,20}({user}[^"]{1,2000})"""",
-      """SubjectDomainName="{1,20}({domain}[^"]{1,2000})"""",
+      """SubjectUserName ="{1,20}({user}[^"]{1,2000})"""",
+      """SubjectDomainName ="{1,20}({domain}[^"]{1,2000})"""",
       """SubjectLogonId="{1,20}({logon_id}[^"]{1,2000})"""",
-      """ProcessName="{1,20}(?: |({process}({directory}(?:[^"]{1,2000})?[\\\/])?({process_name}[^"]{1,2000})))"{1,20}
+      """ProcessName ="{1,20}(?: |({process}({directory}(?:[^"]{1,2000})?[\\\/])?({process_name}[^"]{1,2000})))"{1,20}
 }
 ```

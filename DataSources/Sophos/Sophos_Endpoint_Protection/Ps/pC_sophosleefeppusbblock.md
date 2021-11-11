@@ -14,12 +14,12 @@ Name = sophos-leef-epp-usb-block
           """devTime=({time}\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})""",
           """LEEF:[^|]{0,2000}\|Sophos\|Enterprise Console\|[^|]{0,2000}\|({alert_name}[^|]{0,2000})\|""",
           """Model=({alert_type}.+?)\s{1,100}(\w+=|$)""",
-          """usrName=[^\\]{0,2000}\\({user}.+?)\s{1,100}(\w+=|$)""",
-          """ComputerName=({dest_host}.+?)\s{1,100}(\w+=|$)""",
+          """usrName =[^\\]{0,2000}\\({user}.+?)\s{1,100}(\w+=|$)""",
+          """ComputerName =({dest_host}.+?)\s{1,100}(\w+=|$)""",
           """src=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
           """domain=({domain}.+?)\s{1,100}(\w+=|$)""",
           """DeviceID=(?:\s|({device_id}.+?))\s{1,100}(\w+=|$)""",
-          """ActionName=({outcome}.+?)\s{1,100}(?:\w+=|$)"""
+          """ActionName =({outcome}.+?)\s{1,100}(?:\w+=|$)"""
   ]
 }
 }

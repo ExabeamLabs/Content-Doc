@@ -16,8 +16,8 @@ Name = n-forwarded-cef-4688
       """shost=({host}[^\s]{1,2000})""",
       """sntdom=({domain}[^\s]{1,2000})""",
       """suser=({user}.+?)\s{1,100}\w+=""",      
-      """nitroProcess_Name=({process}({directory}(?:[^"]{1,2000})?[\\\/])?({process_name}[^\\\/"]{1,2000}?))\s{1,100}\w+=""",
-      """nitroProcess_Name=({path}.+?)\s{1,100}\w+=""",
+      """nitroProcess_Name =({process}({directory}(?:[^"]{1,2000})?[\\\/])?({process_name}[^\\\/"]{1,2000}?))\s{1,100}\w+=""",
+      """nitroProcess_Name =({path}.+?)\s{1,100}\w+=""",
       """nitroSource_Logon_ID=({logon_id}.+?)(\s|0\|)"""
     ]
     DupFields=[ "host->dest_host","directory->process_directory" ]

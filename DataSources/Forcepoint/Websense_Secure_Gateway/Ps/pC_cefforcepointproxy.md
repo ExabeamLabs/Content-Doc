@@ -29,7 +29,7 @@ Name = cef-forcepoint-proxy
       """\sdhost=(?:|({web_domain}[^=]{1,2000}?))\s\w+=""",
       """\srequest=({full_url}\S+)""",
       """\srequest=(?:-|(\w+:\/+[^\/]{1,2000}({uri_path}\/[^\s\?]{1,2000})({uri_query}\?[^\s]{1,2000})?))\s{1,100}\w+=""",
-      """\srequestUrlFileName=(?:|({uri_path}[^=]{1,2000}?))\s\w+=""",
+      """\srequestUrlFileName =(?:|({uri_path}[^=]{1,2000}?))\s\w+=""",
       """\srequestUrlQuery=(?:|({uri_query}[^=]{1,2000}?))\s\w+=""",
       """\srequestClientApplication=(?:-|({user_agent}[^=]{1,2000}?))\s{1,100}(\w+=|$)""",
       """CEF:([^\|]{1,2000}\|){4}({category}[^\|]{1,2000})\|""",

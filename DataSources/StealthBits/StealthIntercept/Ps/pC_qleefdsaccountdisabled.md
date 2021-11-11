@@ -13,7 +13,7 @@ Name = q-leef-ds-account-disabled
     """devTime=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """dst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """usrName=(({domain}[^\\]{1,2000})\\)?({user}.+?)\s{1,100}\w+=""",
+    """usrName =(({domain}[^\\]{1,2000})\\)?({user}.+?)\s{1,100}\w+=""",
     """AffectedObject=(({target_domain}[^\\]{1,2000})\\)?({target_user}.+?)\s{1,100}\w+=""",
     """OrigServer=([^\\]{1,2000}\\)?({dest_host}.+?)\s{1,100}\w+="""
   ]

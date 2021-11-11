@@ -13,7 +13,7 @@ Name = raw-5137
     """({event_name}A directory service object was created)""",
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """({event_code}5137)""",
-    """ComputerName=({host}[^\s]{1,2000})""",
+    """ComputerName =({host}[^\s]{1,2000})""",
     """Account Name(:|=)\s{0,100}({user}[^\s]{1,2000})""",
     """Security ID(:|=)\s{0,100}({user_sid}[^\s]{1,2000})""",
     """Account Domain(:|=)\s{0,100}({domain}[^\s]{1,2000})""",

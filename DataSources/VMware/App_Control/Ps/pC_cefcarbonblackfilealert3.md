@@ -24,7 +24,7 @@ cef-carbonblack-file-alert = {
     """Carbon Black\|(Protection|App Control)\|([^|]{0,2000}\|){2}({alert_name}[^\|]{1,2000})\|""",
     """Carbon Black\|(Protection|App Control)\|([^|]{0,2000}\|){3}({alert_severity}[^\|]{1,2000})\|""",
     """cat=({alert_type}[^=]{1,2000})\s{1,100}(\w+=|$)""",
-    """deviceProcessName=\s{0,20}({process}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
+    """deviceProcessName =\s{0,20}({process}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """filePath=({file_path}(({file_parent}[^=]{1,2000}[^\\])\\{1,2000})?({file_name}[^=]{1,2000}))\s{1,100}(\w+=|$)""",
     """fname=({file_name}[^=]{1,2000})\s{1,100}(\w+=|$)""",
     """fileHash=({old_hash}[^=]{1,2000})\s{1,100}(\w+=)""",

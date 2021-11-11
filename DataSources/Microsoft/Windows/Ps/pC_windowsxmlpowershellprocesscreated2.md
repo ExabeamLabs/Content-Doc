@@ -8,7 +8,7 @@ Name = windows-xml-powershell-process-created-2
   DataType = "process-created"
   IsHVF = true
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
-  Conditions = [ """Microsoft-Windows-PowerShell""", """Context:""", """<Provider Name=""", """<EventID>4103<""" ]
+  Conditions = [ """Microsoft-Windows-PowerShell""", """Context:""", """<Provider Name =""", """<EventID>4103<""" ]
   Fields = [
     """<TimeCreated SystemTime='({time}\d{1,100}\-\d{1,100}\-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{3})""",
     """({event_code}4103)""",

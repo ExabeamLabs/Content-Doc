@@ -18,7 +18,7 @@ Name = centrify-ssh-login-failed
     """status=({outcome}.+?)\s\w+=""",
     """pid=({process_id}\d{1,100})""",
     """service=({process}.+?)\s\w+=""",
-    """EntityName=(.+\\+)?({dest_host}[^"\s]{1,2000})(\s|$)"""
+    """EntityName =(.+\\+)?({dest_host}[^"\s]{1,2000})(\s|$)"""
     """reason=({failure_reason}[^=\|]{1,2000}?)(\s{1,100}\w+=|\|)"""
   ]
 }

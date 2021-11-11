@@ -7,7 +7,7 @@ Name = cef-symantec-web-activity-2
   Lms = QRadar
   DataType = "web-activity"
   TimeFormat = "MMM dd yyyy HH:mm:ss.SSS"
-  Conditions = [ """|Symantec|Threat Isolation|""", """CEF:""", """sntdom=""", """cs4Label=URL Categories""", """sourceServiceName="""]
+  Conditions = [ """|Symantec|Threat Isolation|""", """CEF:""", """sntdom=""", """cs4Label=URL Categories""", """sourceServiceName ="""]
   Fields = [
     """\|rt=({time}\w+\s\d\d\s\d\d\d\d\s\d\d:\d\d:\d\d\.\d{1,100})""",
     """src=({src_ip}[a-fA-F\d:\.]{1,2000})""",

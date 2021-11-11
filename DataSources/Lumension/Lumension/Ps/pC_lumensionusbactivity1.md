@@ -18,7 +18,7 @@ Name = lumension-usb-activity-1
     """cs1=({device_type}[^\s]{1,2000})""",
     """cs2=({device_name}[^\s]{1,2000})""",
     """cs3=({device_id}[^\s]{1,2000})""",
-    """sourceServiceName=({user_sid}[^\s]{1,2000})""",
+    """sourceServiceName =({user_sid}[^\s]{1,2000})""",
     """suser=({user}[^\s]{1,2000})""",
   ]
 }

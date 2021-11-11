@@ -16,7 +16,7 @@ Name = raw-552
       """({host}[^\s\/]{1,2000})\/Security \(552\)""",
       """<Computer>({host}[^<]{1,2000})</Computer>""",
       """Computer(\w+)?["\s]{0,2000}(:|=)\s{0,100}"?({host}.+?)("|\s)""",
-      """ComputerName=({host}[\w.\-]{1,2000})""",
+      """ComputerName =({host}[\w.\-]{1,2000})""",
       """User Name:\s{0,100}({user}[\w\-\.]{1,2000}(?:\s{0,100}\w+)?\$?)\s{0,100}Domain:""",
       """Domain:\s{0,100}({domain}[\w\-\.]{1,2000}(?:[\s\.\-\w])*?)\s{0,100}Logon ID:""",
       """Logon ID:\s{0,100}\(\w+(\,|\s)({logon_id}\w+)\)\s{0,100}Logon GUID:""",

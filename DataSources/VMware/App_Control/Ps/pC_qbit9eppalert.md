@@ -15,12 +15,12 @@ Name = q-bit9-epp-alert
     """sev=({alert_severity}[\d]{1,2000})""",
     """externalId=({alert_id}[\d]{1,2000})""",
     """src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """srcHostName=({domain}[^\\]{1,2000})\\?({src_host}[^\s]{1,2000})""",
-    """usrName=({user}[^\s]{1,2000})""",
+    """srcHostName =({domain}[^\\]{1,2000})\\?({src_host}[^\s]{1,2000})""",
+    """usrName =({user}[^\s]{1,2000})""",
     """filePath=({malware_url}.+?)\s{1,100}fileName""",
     """filePath=({malware_url_path}\w+:\/\/.+?)\s{1,100}fileName""",
     """filePath=({file_path}(?!\w+:\/\/).+?)\s{1,100}fileName""",
-    """dstHostName=({dest_host}[^\s]{1,2000})"""
+    """dstHostName =({dest_host}[^\s]{1,2000})"""
   ]
   SOAR {
       IncidentType = "malware"
@@ -28,6 +28,6 @@ Name = q-bit9-epp-alert
       NameTemplate = """Carbon Black Alert ${alert_name} found"""
       ProjectName = "SOC"
       EntityFields = [
-        {EntityType="device", Name="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]}
+        {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]}
 }
 ```

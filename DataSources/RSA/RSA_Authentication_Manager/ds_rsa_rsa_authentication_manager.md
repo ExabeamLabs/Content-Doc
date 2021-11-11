@@ -4,13 +4,13 @@ Product: RSA Authentication Manager
 -----------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   7   |   4    |     4      |      2      |    2    |
+|   7   |   4    |     4      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-|    [Data Leak](../../../UseCases/uc_data_leak.md)    |  database-access<br> ↳[abnormal-security-alert](Ps/pC_abnormalsecurityalert.md)<br><br> dlp-email-alert-out-failed<br> ↳[rsa-authentication-successful](Ps/pC_rsaauthenticationsuccessful.md)<br> ↳[rsa-authentication-successful-1](Ps/pC_rsaauthenticationsuccessful1.md)<br> | T1020 - Automated Exfiltration<br>T1048 - Exfiltration Over Alternative Protocol<br>T1048.003 - Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol<br> | [<ul><li>6 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_rsa_rsa_authentication_manager_Data_Leak.md) |
-|     [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)     |  database-access<br> ↳[abnormal-security-alert](Ps/pC_abnormalsecurityalert.md)<br><br> dlp-email-alert-out-failed<br> ↳[rsa-authentication-successful](Ps/pC_rsaauthenticationsuccessful.md)<br> ↳[rsa-authentication-successful-1](Ps/pC_rsaauthenticationsuccessful1.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_rsa_rsa_authentication_manager_Privilege_Abuse.md)    |
-| [Privileged Activity](../../../UseCases/uc_privileged_activity.md) |  database-access<br> ↳[abnormal-security-alert](Ps/pC_abnormalsecurityalert.md)<br><br> dlp-email-alert-out-failed<br> ↳[rsa-authentication-successful](Ps/pC_rsaauthenticationsuccessful.md)<br> ↳[rsa-authentication-successful-1](Ps/pC_rsaauthenticationsuccessful1.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_rsa_rsa_authentication_manager_Privileged_Activity.md)    |
+|    [Data Leak](../../../UseCases/uc_data_leak.md)    |  dlp-email-alert-out-failed<br> ↳[rsa-authentication-successful](Ps/pC_rsaauthenticationsuccessful.md)<br> ↳[rsa-authentication-successful-1](Ps/pC_rsaauthenticationsuccessful1.md)<br> | T1020 - Automated Exfiltration<br>T1048 - Exfiltration Over Alternative Protocol<br>T1048.003 - Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol<br> | [<ul><li>6 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_rsa_rsa_authentication_manager_Data_Leak.md) |
+|     [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)     |  dlp-email-alert-out-failed<br> ↳[rsa-authentication-successful](Ps/pC_rsaauthenticationsuccessful.md)<br> ↳[rsa-authentication-successful-1](Ps/pC_rsaauthenticationsuccessful1.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_rsa_rsa_authentication_manager_Privilege_Abuse.md)    |
+| [Privileged Activity](../../../UseCases/uc_privileged_activity.md) |  dlp-email-alert-out-failed<br> ↳[rsa-authentication-successful](Ps/pC_rsaauthenticationsuccessful.md)<br> ↳[rsa-authentication-successful-1](Ps/pC_rsaauthenticationsuccessful1.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_rsa_rsa_authentication_manager_Privileged_Activity.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

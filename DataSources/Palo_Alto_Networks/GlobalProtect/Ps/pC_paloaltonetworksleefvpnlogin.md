@@ -12,7 +12,7 @@ Name = palo-alto-networks-leef-vpn-login
     """\|ReceiveTime=({time}\d\d\d\d\/\d\d\/\d\d\s\d\d:\d\d:\d\d)""",
     """User name:\s{0,100}({user}[^,\s@]{1,2000})""",
     """User name:\s{0,100}({user_email}[^@\s]{1,2000}@[^\s,]{1,2000}),""",
-    """DeviceName=({host}[\w\-.]{1,2000})""",
+    """DeviceName =({host}[\w\-.]{1,2000})""",
     """from:\s{0,100}({src_ip}[a-fA-F\d.:]{1,2000})""",
     """Severity=({severity}[^\s|]{1,2000})""",
     """cat=({category}[^\s|]{1,2000})""", 

@@ -22,7 +22,7 @@ Name = cef-syslog-guardium-db-alert-1
     """\Wdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\Wsuser="?(({domain}[^\s\\"]{1,2000})\\+)?(\?|({user}[^\\\s"]{1,2000}))"?\s{0,100}(\w+=|$)""",
     """\Wduser="?(({domain}[^\s\\"]{1,2000})\\+)?(\?|({db_user}[^\\\s"]{1,2000}))"?\s{0,100}(\w+=|$)""",
-    """\WdestinationServiceName=({service_name}.+?)\s{0,100}(\w+=|$)""",
+    """\WdestinationServiceName =({service_name}.+?)\s{0,100}(\w+=|$)""",
     """\Wcs1=({alert_type}.+?)\s{0,100}(\w+=|$)""",
     """\Wcs2=({server_group}.+?)\s{0,100}(\w+=|$)""",
     """\Wcs5=(|({database_name}.+?))\s{0,100}(\w+=|$)"""

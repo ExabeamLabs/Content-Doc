@@ -8,7 +8,7 @@ Name = skyformation-cloudflare-waf
   DataType = "web-activity"
   IsHVF = true
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """destinationServiceName=Cloudflare""", """ResponseStatus"""", """FirewallMatchesActions""" ]
+  Conditions = [ """destinationServiceName =Cloudflare""", """ResponseStatus"""", """FirewallMatchesActions""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"EdgeStartTimestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",

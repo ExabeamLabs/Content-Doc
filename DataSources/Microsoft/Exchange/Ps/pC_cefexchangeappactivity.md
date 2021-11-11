@@ -14,7 +14,7 @@ Name = cef-exchange-app-activity
     """\Wsrc=({src_ip}[a-fA-F\d.:]{1,2000})""",
     """\Wsuser=({user}.+?)\s{1,100}(\w+=|$)""",
     """\Wfname=({object}.+?)\s{1,100}(\w+=|$)""",
-    """\WsourceServiceName=({app}.+?)\s{1,100}(\w+=|$)""",
+    """\WsourceServiceName =({app}.+?)\s{1,100}(\w+=|$)""",
     """\WflexString1=({activity}.+?)\s{1,100}(\w+=|$)""",
     """\Wmsg=({additional_info}.+?)\s{1,100}(\w+=|$)""",
     """\WdestinationServiceName =({event_subtype}.+?)\s{1,100}(\w+=|$)""",

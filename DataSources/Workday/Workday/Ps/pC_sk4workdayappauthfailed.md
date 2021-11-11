@@ -7,7 +7,7 @@ Name = sk4-workday-app-auth-failed
   Lms = Direct
   DataType = "authentication-failed"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ """"proxyUserName":""", """"authenticationType":""", """destinationServiceName=Workday""", """"authenticationFailureMessage":"""]
+  Conditions = [ """"proxyUserName":""", """"authenticationType":""", """destinationServiceName =Workday""", """"authenticationFailureMessage":"""]
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d{1,100}Z\s{1,100}[\w\-.]{1,2000}\s{1,100}Skyformation""",
     """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",

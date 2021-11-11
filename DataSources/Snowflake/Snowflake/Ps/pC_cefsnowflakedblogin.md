@@ -7,7 +7,7 @@ Name = cef-snowflake-db-login
   Lms = Splunk
   DataType = "database-login"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """ destinationServiceName=Snowflake""", """dproc=LOGIN HISTORY""", """"EVENT_TYPE":"LOGIN"""" ]
+  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """ destinationServiceName =Snowflake""", """dproc=LOGIN HISTORY""", """"EVENT_TYPE":"LOGIN"""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"EVENT_TIMESTAMP":"({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d.\d\d\d)"""",

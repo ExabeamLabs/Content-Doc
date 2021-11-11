@@ -14,12 +14,12 @@ Name = wls-4740
       """Computer="{1,20}({dest_host}[^"]{1,2000})"""",
       """EventID="{1,20}({event_code}[^"]{1,2000})"""",
       """EventRecordID="{1,20}({record_id}[^"]{1,2000})"""",
-      """SubjectUserName="{1,20}({caller_user}[^"]{1,2000})"""",
-      """SubjectDomainName="{1,20}({caller_domain}[^"]{1,2000})"""",
+      """SubjectUserName ="{1,20}({caller_user}[^"]{1,2000})"""",
+      """SubjectDomainName ="{1,20}({caller_domain}[^"]{1,2000})"""",
       """SubjectLogonId="{1,20}({logon_id}[^"]{1,2000})"""",
       """TargetUserSid="{1,20}({user_sid}[^"]{1,2000})"""",
-      """TargetDomainName="{1,20}({src_host}[^"]{1,2000})"""",
-      """TargetUserName="{1,20}({user}[^"]{1,2000})""""
+      """TargetDomainName ="{1,20}({src_host}[^"]{1,2000})"""",
+      """TargetUserName ="{1,20}({user}[^"]{1,2000})""""
     ]
     DupFields=[ "caller_domain->domain" ]
   }

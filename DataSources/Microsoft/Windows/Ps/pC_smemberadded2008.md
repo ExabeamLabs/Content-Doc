@@ -7,11 +7,11 @@ Name = s-member-added-2008
   Lms = Splunk
   DataType = "windows-member-added"
   TimeFormat = "MM/dd/yyyy hh:mm:ss a"
-  Conditions = [ """LogName=""", """SourceName=""", "EventCode=", "A member was added to a security-enabled" ]
+  Conditions = [ """LogName =""", """SourceName =""", "EventCode=", "A member was added to a security-enabled" ]
   Fields = [
     """({event_name}A member was added to a security-enabled [\w\s]{1,2000} group)""",
     """exabeam_raw=.*?({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d (am|AM|pm|PM))""",
-    """ComputerName=({host}[\w.\-]{1,2000})""",
+    """ComputerName =({host}[\w.\-]{1,2000})""",
     """EventCode=({event_code}[\w]{1,2000})""",
     """A member was added to a security-enabled ({group_type}[^\s]{1,2000}) group""",
     """Subject:.+?Account Name:\s{1,100}({user}[^\s]{1,2000})""",

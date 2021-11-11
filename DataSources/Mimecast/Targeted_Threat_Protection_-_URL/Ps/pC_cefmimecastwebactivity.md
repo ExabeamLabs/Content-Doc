@@ -8,7 +8,7 @@ Name = cef-mimecast-web-activity
   DataType = "web-activity"
   IsHVF = true
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = ["""destinationServiceName=Mimecast Email Security""", """"action":"""", """"url":"""", """"category":""","""dproc=""" ]
+  Conditions = ["""destinationServiceName =Mimecast Email Security""", """"action":"""", """"url":"""", """"category":""","""dproc=""" ]
   Fields = [
     """"date":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100})""",
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",

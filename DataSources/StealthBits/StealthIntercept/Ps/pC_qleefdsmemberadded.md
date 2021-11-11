@@ -13,9 +13,9 @@ Name = q-leef-ds-member-added
     """devTime=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """dst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """usrName=(({domain}[^\\]{1,2000})\\)?({user}.+?)\s{1,100}\w+=""",
+    """usrName =(({domain}[^\\]{1,2000})\\)?({user}.+?)\s{1,100}\w+=""",
     """AffectedObject=(({group_domain}[^\\]{1,2000})\\)?({group_name}.+?)\s{1,100}\w+=""",
-    """DistinguishedName=(({group_dn}CN=.+?,({group_ou}OU.+?DC=.+?))|(?:.+?))\s{1,100}\w+=""",
+    """DistinguishedName =(({group_dn}CN=.+?,({group_ou}OU.+?DC=.+?))|(?:.+?))\s{1,100}\w+=""",
     """AttrNewValue=(({account_dn}CN=.+?({account_ou}OU.+?DC=.+?))|(?:.+?))\s{1,100}\w+=""",
     """OrigServer=([^\\]{1,2000}\\)?({dest_host}.+?)\s{1,100}\w+="""
   ]

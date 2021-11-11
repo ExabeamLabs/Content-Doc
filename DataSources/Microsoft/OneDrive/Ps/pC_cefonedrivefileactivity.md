@@ -8,7 +8,7 @@ Name = cef-onedrive-file-activity
     DataType = "file-operations"
     IsHVF = true
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-    Conditions = [ """|Skyformation|SkyFormation Cloud Apps Security|""", """flexString1=FileAccessed""", """sourceServiceName=OneDrive""" ]
+    Conditions = [ """|Skyformation|SkyFormation Cloud Apps Security|""", """flexString1=FileAccessed""", """sourceServiceName =OneDrive""" ]
     Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """"CreationTime\\*"{1,20}:\\*\s{0,100}"{1,20}({time}[^\\"]{1,2000})""",

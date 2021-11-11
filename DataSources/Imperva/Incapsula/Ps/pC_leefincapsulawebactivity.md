@@ -13,7 +13,7 @@ Name = leef-incapsula-web-activity
     """\Wstart=({time}\d{1,100})"""  
     """siteid=({site_id}\d{1,100})""",
     """requestMethod=({method}[^\s]{1,2000})""",
-    """\WsourceServiceName=({web_domain}.+?)\s{1,100}(\w+=|$)""",
+    """\WsourceServiceName =({web_domain}.+?)\s{1,100}(\w+=|$)""",
     """\WrequestClientApplication=({user_agent}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """ref=({referrer}[^\s]{1,2000})""",
     """proto=({protocol}[^\s]{1,2000})""",

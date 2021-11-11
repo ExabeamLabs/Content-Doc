@@ -7,7 +7,7 @@ Name = cisco-umbrella-proxy
   Lms = Direct
   DataType = "web-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ """destinationServiceName=Cisco Umbrella """, """dproc=Proxy """, """"url":""" ]
+  Conditions = [ """destinationServiceName =Cisco Umbrella """, """dproc=Proxy """, """"url":""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """\W(destinationServiceName|requestClientApplication)=({app}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",

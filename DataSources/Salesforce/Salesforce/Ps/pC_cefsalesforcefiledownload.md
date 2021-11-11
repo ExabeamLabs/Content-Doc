@@ -16,7 +16,7 @@ Name = cef-salesforce-file-download
     """\Wsuser=({user_email}[^@\s;]{1,2000}?@[^@\s;]{1,2000})\s{0,100}(\w+=|$)""",
     """\Wfname=({file_name}.+?(?:\.({file_ext}[^".]{1,2000}?))?)\s{1,100}(\w+=|$)""",
     """\WfileType=({file_type}.+?)\s{1,100}(\w+=|$)""",
-    """\WdestinationServiceName=({app}.+?)\s{0,100}(\w+=|$)""",
+    """\WdestinationServiceName =({app}.+?)\s{0,100}(\w+=|$)""",
   ]
   DupFields = [ "host->dest_host" ]
 }

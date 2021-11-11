@@ -13,8 +13,8 @@ splunk-digitalguardian-usb-activity ={
   
   Fields = [
     """Agent_Local_Time="({time}\d{1,100}/\d{1,100}/\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(am|AM|pm|PM))""",
-    """\WComputer_Name="([^\\=]{1,2000}(\/)+)?({host}[\w\.-]{1,2000})"""",
-    """\WUser_Name="(({domain}[^\/]{1,2000})\/+)?({user}.+?)"""",
+    """\WComputer_Name ="([^\\=]{1,2000}(\/)+)?({host}[\w\.-]{1,2000})"""",
+    """\WUser_Name ="(({domain}[^\/]{1,2000})\/+)?({user}.+?)"""",
     """\WDestination_Device_ID="({device_id}[^"]{1,2000})"""",
     """\WDestination_Drive_Type="({device_type}[^"]{1,2000})"""",
     """\WOperation="({activity}[^"]{1,2000})"""",

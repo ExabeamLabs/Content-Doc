@@ -11,7 +11,7 @@ Name = microsoft-applocker-security-alert
   Fields = [
     """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """<Computer>({host}.+?)</Computer>""",
-    """<Data Name='User'>(({domain}[^\\<]{1,2000}?)\\)?({user}.+?)</Data>""",
+    """<Data Name ='User'>(({domain}[^\\<]{1,2000}?)\\)?({user}.+?)</Data>""",
     """<Security UserID='({user_sid}.+?)'/>""",
     """<Level>({alert_severity}[^"<]{1,2000})""",
     """<FilePath>({malware_url}[^"<]{1,2000})""",

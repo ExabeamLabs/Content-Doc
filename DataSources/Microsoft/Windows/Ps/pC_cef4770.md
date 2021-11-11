@@ -18,8 +18,8 @@ Name = cef-4770
     """\sdvc=({host}[a-fA-F:\d.]{1,2000})""",
     """\sdvchost=({host}[^\s]{1,2000})""",
     """\scs3=(::[\w]{1,2000}:)?({src_ip}[a-fA-F:\d.]{1,2000})""",
-    """\sdestinationServiceName=({service_name}\S+)""",
-    """\sdestinationServiceName=({dest_host}\S+\$)""",
+    """\sdestinationServiceName =({service_name}\S+)""",
+    """\sdestinationServiceName =({dest_host}\S+\$)""",
     """ncryption_,Type=({ticket_encryption_type}[^\s]{1,2000})""",
     """Ticket_,Options=({ticket_options}[^\s]{1,2000})"""
   ]

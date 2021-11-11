@@ -20,7 +20,7 @@ Name = cef-snare-4624
       """\sdproc=(?:-|({process}[\w:\\.\-]{1,2000}))""",
       """Service_,ID=({user_sid}[^\s]{1,2000})\s""",
       """cs5=({auth_package}[^\s]{1,2000}).+?cs5Label=Auth""",
-      """\sdeviceProcessName=({auth_process}[^\s]{1,2000})""",
+      """\sdeviceProcessName =({auth_process}[^\s]{1,2000})""",
       """ src=(?:-|({src_ip}[\w:.]{1,2000}))\s{1,100}\w+="""
     ]
     DupFields = ["host->dest_host"]

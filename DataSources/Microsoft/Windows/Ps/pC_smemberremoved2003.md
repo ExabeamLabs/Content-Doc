@@ -11,7 +11,7 @@ Name = s-member-removed-2003
   Fields = [
     """({event_name}Security Enabled [\w\s]{1,2000} Group Member Removed)""",
     """exabeam_raw=({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d (am|AM|pm|PM))""",
-    """ComputerName=({host}[\w.\-]{1,2000})""",
+    """ComputerName =({host}[\w.\-]{1,2000})""",
     """EventCode=({event_code}\w+)""",
     """Security Enabled ({group_type}[^\s]{1,2000}) Group Member""",
     """Group Member.+?Member ID:\s{1,100}({account_id}(?=[^\\]{1,2000}\\)({sid_domain}[^\\]{1,2000})\\({sid_user}.+?)|(?:.+?))\s{1,100}Target""",

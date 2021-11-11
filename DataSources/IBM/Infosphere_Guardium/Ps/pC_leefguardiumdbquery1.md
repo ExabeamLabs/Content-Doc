@@ -14,7 +14,7 @@ Name = leef-guardium-db-query-1
     """\|ruleDesc=({rule_description}[^\|]{1,2000})""",
     """\|serverType=({server_type}[^\|]{1,2000})""",
     """\|dbUser=(({domain}[^\|\\]{1,2000})\\)?({db_user}[^\|\\]{1,2000})""",
-    """\|usrName=(|({user}[^\|]{1,2000}))""",
+    """\|usrName =(|({user}[^\|]{1,2000}))""",
     """\|sourceProgram=({source_program}[^\|]{1,2000})""",
     """\|dst=({dest_ip}[a-fA-F\d:.]{1,2000})""",
     """\|dstPort=({dest_port}\d{1,100})""",
@@ -22,7 +22,7 @@ Name = leef-guardium-db-query-1
     """\|srcPort=({src_port}\d{1,100})""",
     """\|sql=\s{0,20}({db_operation}[^\|]{1,2000}?)\s{0,20}\|""",
     """\|protocol=({protocol}[^\|]{1,2000})""",
-    """\|usrName=({service_name}[^;\|]{1,2000}?)\s{0,20}(;|\|)"""
+    """\|usrName =({service_name}[^;\|]{1,2000}?)\s{0,20}(;|\|)"""
   ]
   DupFields = [ "db_user->account" ]
 }

@@ -3,7 +3,7 @@
 {
 Name = s-xml-windows-member-7
   DataType = "vpn-start"
-  Conditions = [ "<EventID>2002</EventID>", "<Data Name='Protocol'>" ]
+  Conditions = [ "<EventID>2002</EventID>", "<Data Name ='Protocol'>" ]
 }
 s-xml-windows-member = {
   Vendor = Microsoft

@@ -24,15 +24,15 @@ eset-activity = {
       """\Wresult=({outcome}[^=]{1,2000}?)\s{0,100}(\w+=|$)""",
       """\Wdetail=({additional_info}[^.]{1,2000})\.""",
       """objectUri=({full_url}[^\s]{1,2000}?)\s{0,100}(\w+=|$)""",
-      """deviceName=({host}[^\s]{1,2000})""",
+      """deviceName =({host}[^\s]{1,2000})""",
       """hash=({sha256}[^\s]{1,2000})""",
       """inbound=({direction}\d{1,100})""",
       """\Waction=({activity}[^\s]{1,2000})\s""",
       """\Wcat=({category}[^=]{1,2000}?)\s{0,100}(\w+=|$)""",
       """\Wuser=({user}[^\s=]{1,2000}?)\s{0,100}(\w+=|$)""",
-      """processName=({process}({directory}(?:(\w+:)*([\\\/]{1,2000}[^=\\\/"]{1,2000})+)?[\\\/]{1,2000})({process_name}[^=\,\\\/]{1,2000}?))\s{0,100}(\w+=|$)""",
+      """processName =({process}({directory}(?:(\w+:)*([\\\/]{1,2000}[^=\\\/"]{1,2000})+)?[\\\/]{1,2000})({process_name}[^=\,\\\/]{1,2000}?))\s{0,100}(\w+=|$)""",
       """proto=({protocol}[^\s]{1,2000})""",
       """\Wuser '(({domain}[^\s\\]{1,2000})\\)?({user}[^\s]{1,2000})'.""",
-      """accountName=(NT AUTHORITY\\+|({domain}[^\\]{1,2000}?)\\+)?(SYSTEM|({user}[^=\s]{1,2000}?))\s{0,100}(\w+=|$)"""
+      """accountName =(NT AUTHORITY\\+|({domain}[^\\]{1,2000}?)\\+)?(SYSTEM|({user}[^=\s]{1,2000}?))\s{0,100}(\w+=|$)"""
     ]}
 ```

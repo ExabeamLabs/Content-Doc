@@ -25,7 +25,7 @@ Name = cef-bluecoat-proxy
     """\srequestProtocol=(?:-|({protocol}.+?))\s\w+=""",
     """\sdhost=(?:-|({web_domain}.+?))\s\w+=""",
     """\srequest=(?:(-|)|({full_url}.+?))\s\w+=""",
-    """\srequestUrlFileName=(?:(-|)|({uri_path}.+?))\s\w+=""",
+    """\srequestUrlFileName =(?:(-|)|({uri_path}.+?))\s\w+=""",
     """\srequestUrlQuery=(?:-|({uri_query}.+?))\s\w+=""",
     """\srequestClientApplication=(?:-|({user_agent}.+?))\s\w+=""",
     """\scat=(?:(none)|({category}.+?)(;.+?)?)\s{1,100}\w+=""",

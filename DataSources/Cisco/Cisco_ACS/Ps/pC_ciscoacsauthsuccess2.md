@@ -23,7 +23,7 @@ cef-acs-auth={
    """\ssrc=({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
    """\sapp=({app}.+?)\s{0,100}\w+=""",
    """\sdeviceSeverity=\\*(Unknown|({alert_severity}.+?))\s{0,100}\w+=""",
-   """\sdestinationServiceName=({service}.+?)\s{0,100}\w+=""",
+   """\sdestinationServiceName =({service}.+?)\s{0,100}\w+=""",
    """\sdst=({dest_ip}.+?)\s{0,100}\w+=""",
    """\sdtz=({dtz}.+?)\s{0,100}\w+=""",
    """\scategoryOutcome=\/({outcome}[^\s]{1,2000})""",

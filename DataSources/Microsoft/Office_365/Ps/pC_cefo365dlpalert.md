@@ -7,7 +7,7 @@ Name = cef-o365-dlp-alert
   Lms = Direct
   DataType = "dlp-alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
-  Conditions = [ """"Operation":"DlpRuleMatch"""" , """destinationServiceName=Office 365"""]
+  Conditions = [ """"Operation":"DlpRuleMatch"""" , """destinationServiceName =Office 365"""]
   Fields = [
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[^\s]{1,2000})""",

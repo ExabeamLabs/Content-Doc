@@ -18,7 +18,7 @@ Name = o365-inbox-rules
     """"Value":"(smtp:)?.+?@({target_domain}[^"]{1,2000})"""",
     """UserId":"({user_email}[^"\\\s@]{1,2000}@({user_domain}[^"\\\s@]{1,2000}))""",
     """({app}Office 365)"""
-    """destinationServiceName=({app}.+?)\sdevice"""
+    """destinationServiceName =({app}.+?)\sdevice"""
   ]
   DupFields = ["user_domain->email_domain"]
 }

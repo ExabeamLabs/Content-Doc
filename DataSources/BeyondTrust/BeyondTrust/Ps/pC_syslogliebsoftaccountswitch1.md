@@ -10,7 +10,7 @@ Name = syslog-liebsoft-account-switch-1
     Conditions = [ """sEventID="EVENT_ID_PASSWORD_CHECKED_OUT"""","""<Event"""]
     Fields = [
     """dtPostTime="({time}\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})""",
-    """sLoginName="(({domain}[^"\\]{1,2000})\\+)?({user}[^"]{1,2000})""",
+    """sLoginName ="(({domain}[^"\\]{1,2000})\\+)?({user}[^"]{1,2000})""",
     """sIpAddress="({src_ip}[^"]{1,2000})""",
     """sOriginatingSystem="({host}[^"]{1,2000})""",
     """sOriginatingSystem="({dest_host}[^"]{1,2000})""",

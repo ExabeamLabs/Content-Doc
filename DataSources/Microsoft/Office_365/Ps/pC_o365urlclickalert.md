@@ -7,7 +7,7 @@ Name = o365-url-click-alert
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [""""Operation":"TIUrlClickData"""", """destinationServiceName=Office 365"""]
+  Conditions = [""""Operation":"TIUrlClickData"""", """destinationServiceName =Office 365"""]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
     """"CreationTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""",

@@ -13,9 +13,9 @@ splunk-digitalguardian-dlp-email-out = {
   Fields = [
     """(\s|exabeam_\w+=)?(Agent_UTC_Time|Server_UTC_Timestamp)="({time}\d{1,100}\/\d{1,100}\/\d\d\d\d \d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM))"""",
     """exabeam_host=([^@=]{1,2000}?@\s{0,100})?({host}[^\s]{1,2000})""",
-    """(\s|exabeam_\w+=)Computer_Name="([^\/\\"]{1,2000}[\\\/])?({host}[^"]{1,2000})"""",
-    """(\s|exabeam_\w+=)User_Name="(?:|(({domain}[^"\/\\]{1,2000})[\/\\]{1,2000})?({user}[^"]{1,2000}))"""",
-    """(\s|exabeam_\w+=)Domain_Name="(?:|({domain}[^"]{1,2000}))"""",
+    """(\s|exabeam_\w+=)Computer_Name ="([^\/\\"]{1,2000}[\\\/])?({host}[^"]{1,2000})"""",
+    """(\s|exabeam_\w+=)User_Name ="(?:|(({domain}[^"\/\\]{1,2000})[\/\\]{1,2000})?({user}[^"]{1,2000}))"""",
+    """(\s|exabeam_\w+=)Domain_Name ="(?:|({domain}[^"]{1,2000}))"""",
     """(\s|exabeam_\w+=)Email_Sender="(?:|({sender}[^"]{1,2000}))"""",
     """(\s|exabeam_\w+=)Email_Address="(?:|({sender}[^"]{1,2000}))"""",
     """(\s|exabeam_\w+=)Email_Recipient="([^"]{1,2000}\-)?({recipients}({recipient}[^"@\s;,]{1,2000}@[^"@\s;,]{1,2000}[^"]{0,2000}))"""",
@@ -33,6 +33,6 @@ splunk-digitalguardian-dlp-email-out = {
     NameTemplate = """Digital Guardian DLP Email Alert ${subject} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="user", Name="email", Fields=["sender->email"]}
+      {EntityType="user", Name ="email", Fields=["sender->email"]}
     ]}
 ```

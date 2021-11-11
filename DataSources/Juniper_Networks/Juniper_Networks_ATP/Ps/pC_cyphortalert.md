@@ -18,7 +18,7 @@ Name = cyphort-alert
     """\seventId=({alert_id}\d{1,100})""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\sfileName=({file_name}.+?)\s{1,100}\w+=""",
+    """\sfileName =({file_name}.+?)\s{1,100}\w+=""",
     """\surl=({malware_url}[^\r\n]{1,2000})\s{1,100}""",
     """\smalwareSeverity=({alert_severity}.+?)\s{1,100}\w+=""",
     """\smalwareCategory=({alert_type}.+?)\s{1,100}\w+="""

@@ -9,8 +9,8 @@ Name = s-mcafee-email-dlp-alert-out
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """OUTGOING_EMAIL""", """DLP: Email Protection""" ]
   Fields = [
-     """UserName="({domain}[^\\]{1,2000})\\({user}[^"]{1,2000})"""",
-     """ComputerName="({src_host}[^"]{1,2000})"""",
+     """UserName ="({domain}[^\\]{1,2000})\\({user}[^"]{1,2000})"""",
+     """ComputerName ="({src_host}[^"]{1,2000})"""",
      """EMAIL_RECIPIENT.+?>({recipient}[^<]{1,2000})<""",
      """EMAIL_SUBJECT.+?>({subject}[^<]{1,2000})<""",
      """FILE_NAME.+?>({attachment}[^<]{1,2000})<""",

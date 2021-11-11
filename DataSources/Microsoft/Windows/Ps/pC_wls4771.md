@@ -15,10 +15,10 @@ Name = wls-4771
     """EventID="{1,20}({event_code}[^"]{1,2000})"""",
     """EventRecordID="{1,20}({record_id}[^"]{1,2000})"""",
     """IpAddress="{1,20}(?:::[\w]{1,2000}:)?({dest_ip}[a-fA-F:\d.]{1,2000})"""",
-    """ServiceName="{1,20}\w+\/(?=\w)({domain}[^"]{1,2000})"""",
+    """ServiceName ="{1,20}\w+\/(?=\w)({domain}[^"]{1,2000})"""",
     """Status="{1,20}({result_code}[^"]{1,2000})"""",
     """TargetSid="{1,20}({user_sid}[^"]{1,2000})"""",
-    """TargetUserName="{1,20}(?=\w)({user}[^"]{1,2000})""""
+    """TargetUserName ="{1,20}(?=\w)({user}[^"]{1,2000})""""
   ]
 }
 }

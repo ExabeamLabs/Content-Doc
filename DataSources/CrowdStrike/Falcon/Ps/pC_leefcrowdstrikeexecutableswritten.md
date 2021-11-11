@@ -6,7 +6,7 @@ Name = leef-crowdstrike-executableswritten
   Conditions = [ """LEEF:""", """|CrowdStrike|FalconHost|""", """cat=ExecutablesWritten""" ]
   Fields = ${CrowdStrikeParserTemplates.leef-crowdstrike-alert-t.Fields} [
     """CrowdStrike\|([^|]{1,2000}\|){2}({alert_name}[^|]{1,2000})""",
-    """\WexeWrittenFileName=({file_name}[^|"]{1,2000}?)(\t|\s{1,100}\w{1,1000}=|\s{0,100}\||\s{0,100}$|\s{0,100}"{1,20}\s{0,100}$)""",
+    """\WexeWrittenFileName =({file_name}[^|"]{1,2000}?)(\t|\s{1,100}\w{1,1000}=|\s{0,100}\||\s{0,100}$|\s{0,100}"{1,20}\s{0,100}$)""",
     """\WexeWrittenFilePath=({file_path}[^=]{1,2000}?)(\t|\s{1,100}\w{1,1000}=|\s{0,100}\||\s{0,100}$|\s{0,100}"{1,20}\s{0,100}$)""",
   ]
 }
@@ -20,7 +20,7 @@ leef-crowdstrike-alert-t = {
       """exabeam_host=({host}[\w\-.]{1,2000})""",
       """\WdevTime=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
       """\Wduser=(?!N\/A)({user}[^=@]{1,2000}?)(@({domain}[^@]{1,2000}?))?(\t|\s{1,100}\w+=|\s{0,100}\||\s{0,100}$|\s{0,100}"{1,20}\s{0,100}$)""",
-      """\WusrName=(?!N\/A)({user}[^=@]{1,2000}?)(@({domain}[^@]{1,2000}?))?(\t|\s{1,100}\w+=|\s{0,100}\||\s{0,100}$|\s{0,100}"{1,20}\s{0,100}$)""",
+      """\WusrName =(?!N\/A)({user}[^=@]{1,2000}?)(@({domain}[^@]{1,2000}?))?(\t|\s{1,100}\w+=|\s{0,100}\||\s{0,100}$|\s{0,100}"{1,20}\s{0,100}$)""",
       """\Wdomain=(?!N\/A)({domain}[^=]{1,2000}?)(\t|\s{1,100}\w+=|\s{0,100}\||\s{0,100}$|\s{0,100}"{1,20}\s{0,100}$)""",
       """\Wsrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\Wdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
@@ -28,7 +28,7 @@ leef-crowdstrike-alert-t = {
       """\WdstPort=({dest_port}\d{1,100})""",
       """\Wcat=({category}[^\|]{1,2000}?)\s{0,100}(\||\w+=|$|"{1,20}\s{0,100}$)""",
       """\Wproto=({protocol}[^\s]{1,2000}?)\s{0,100}(\||\w+=|$|"{1,20}\s{0,100}$)""",
-      """\WfileName=({file_name}.+?)\s{0,100}(\||\w+=|$|"{1,20}\s{0,100}$)""",
+      """\WfileName =({file_name}.+?)\s{0,100}(\||\w+=|$|"{1,20}\s{0,100}$)""",
       """\Wresource=({src_host}.+?)\s{0,100}(\||\w+=|$|"{1,20}\s{0,100}$)""",
       """\Wsev=({alert_severity}.+?)\s{0,100}(\||\w+=|$|"{1,20}\s{0,100}$)""",
       """CrowdStrike\|([^|]{1,2000}\|){2}({alert_name}[^|]{1,2000})""",

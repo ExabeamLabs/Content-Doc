@@ -7,7 +7,7 @@ Name = cef-github-app-activity
   Lms = ArcSight
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """CEF:""", """destinationServiceName=GitHub""" ]
+  Conditions = [ """CEF:""", """destinationServiceName =GitHub""" ]
   Fields = [
     """"created_at":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)"""",
     """exabeam_host=({host}[\w.\-]{1,2000})""",

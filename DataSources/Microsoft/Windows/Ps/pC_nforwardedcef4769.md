@@ -14,8 +14,8 @@ Name = n-forwarded-cef-4769
       """shost=({host}[^\s]{1,2000})""",
       """nitroCommandID=({result_code}.+?)\s{1,100}\w+=""",
       """src=({src_ip}[a-fA-F:\d.]{1,2000})""",
-      """nitroService_Name=({dest_host}\S+\$)\s""",
-      """nitroService_Name=({service_name}\S+)""",
+      """nitroService_Name =({dest_host}\S+\$)\s""",
+      """nitroService_Name =({service_name}\S+)""",
       """sntdom=({domain}[^\s]{1,2000})""",
       """suser=({user}[^\s]{1,2000})"""
     ]

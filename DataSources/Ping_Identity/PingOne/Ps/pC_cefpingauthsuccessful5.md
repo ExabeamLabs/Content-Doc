@@ -3,7 +3,7 @@
 {
 Name = cef-ping-auth-successful-5
   DataType = "authentication-successful"
-  Conditions = [ """destinationServiceName=Ping""","""flexString2=Authentication""", """request=Success"""]
+  Conditions = [ """destinationServiceName =Ping""","""flexString2=Authentication""", """request=Success"""]
 }
 cef-ping-events-2 = {
   Vendor = Ping Identity

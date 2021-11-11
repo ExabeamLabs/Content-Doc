@@ -7,7 +7,7 @@ Name = symantec-web-activity-1
   Lms = Syslog
   DataType = "web-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """destinationServiceName=Symantec WSS""", """requestClientApplication=Broadcom WSS API""", """|Skyformation|""" ]
+  Conditions = [ """destinationServiceName =Symantec WSS""", """requestClientApplication=Broadcom WSS API""", """|Skyformation|""" ]
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)\s[^\s]{1,2000}\sSkyformation""",
     """cs6=.+?\d\d:\d\d:\d\d,\s{0,100}({host}[^,\s]{1,2000})""",
