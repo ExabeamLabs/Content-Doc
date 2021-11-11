@@ -7,7 +7,7 @@ Name = s-crowdstrike-app-login-5
     """"UserName":\s{0,100}"({user_email}[^"@]{1,2000}@[^"@]{1,2000})"""",
     """"UserName":\s{0,100}"({user}[^"@]{1,2000})"""",
     """"HostnameField":\s{0,100}"({host}[^"@]{1,2000})"""",
-    """destinationServiceName=({app}[^=]{1,2000})\s\w+=""",
+    """destinationServiceName =({app}[^=]{1,2000})\s\w+=""",
     """({event_name}RemoteResponseSessionStartEvent)""",
     """"SessionId":"({session_id}[^",]{1,2000})"""",
     """"(?i)EventType":\s{0,100}"({activity_details}[^",]{1,2000})""""

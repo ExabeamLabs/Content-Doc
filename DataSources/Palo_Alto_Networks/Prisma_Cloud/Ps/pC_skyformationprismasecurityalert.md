@@ -8,7 +8,7 @@ Name = skyformation-prisma-security-alert
  DataType = "alert"
  IsHVF = true
  TimeFormat = """yyyy-MM-dd'T'HH:mm:ss.SSSZ"""
- Conditions = ["""|Skyformation|""", """destinationServiceName=""", """"source":"Prisma Cloud"""", """"policyName":"""]
+ Conditions = ["""|Skyformation|""", """destinationServiceName =""", """"source":"Prisma Cloud"""", """"policyName":"""]
  Fields = [
    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d{1,100}Z)\s[\w\-.]{1,2000}\s{1,100}Skyformation""",

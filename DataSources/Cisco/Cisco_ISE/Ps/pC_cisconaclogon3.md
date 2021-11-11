@@ -14,7 +14,7 @@ Name = cisco-nac-logon-3
     """({host}[^\s]{1,2000})\s{0,100}CISE_TACACS_Accounting""",
     """({event_name}CISE_TACACS_Accounting)""",
     """Host:\s{0,100}({host}\S+)""",
-    """, NetworkDeviceName=({network}[^,]{1,2000}),""",
+    """, NetworkDeviceName =({network}[^,]{1,2000}),""",
     """, Device IP Address=({auth_server}[^,]{1,2000})""",
     """, Device IP Address=({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """, NetworkDeviceGroups=Location#All Locations#({location}[^,]{1,2000})""",

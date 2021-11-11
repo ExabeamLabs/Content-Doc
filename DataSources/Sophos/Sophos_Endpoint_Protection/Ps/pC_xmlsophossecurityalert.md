@@ -7,7 +7,7 @@ Name = xml-sophos-security-alert
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
-  Conditions = [ """<Provider Name='Sophos Anti-Virus'/>""", """<EventData><Data>""" ]
+  Conditions = [ """<Provider Name ='Sophos Anti-Virus'/>""", """<EventData><Data>""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3})""",

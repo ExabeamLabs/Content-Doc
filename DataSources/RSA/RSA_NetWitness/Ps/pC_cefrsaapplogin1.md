@@ -16,7 +16,7 @@ Name = cef-rsa-app-login-1
    """sessionId=({session_id}\d{1,100})""",
    """({app}NetWitness)""",
    """\Wsuser=((?i)system|({user}[^=\(]{1,2000}))(\s\w+=|\()""",
-   """sourceServiceName=({service_name}[^=]{1,2000}?)\s\w+=""",
+   """sourceServiceName =({service_name}[^=]{1,2000}?)\s\w+=""",
    """outcome=({outcome}[^=]{1,2000}?)\s\w+=""",
    """userRole=({role}[^=]{1,2000}?)\s{0,100}(\w+=|$)""",
    """CEF:\d{1,100}\|([^\|]{1,2000}\|){4}({event_name}[^\|]{1,2000})"""

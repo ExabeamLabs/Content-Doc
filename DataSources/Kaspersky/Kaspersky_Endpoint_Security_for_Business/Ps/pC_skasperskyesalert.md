@@ -9,7 +9,7 @@ Name = s-kaspersky-es-alert
   TimeFormat =  "MM/dd/yyyy hh:mm:ss a"
   Conditions = [ """Kaspersky Event Log""","""Result\Name:""" ]
   Fields = [
-	   """ComputerName=({host}[\w.\-]{1,2000})""",
+	   """ComputerName =({host}[\w.\-]{1,2000})""",
            """exabeam_raw=({time}\d{1,100}/\d{1,100}/\d{1,100} \d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM))""",
 	   """Message=({src_host}.+?)\s{0,100}\[""",
            """User:\s{1,100}({domain}[^\\]{0,2000})\\({user}.+?)\s{0,100}\(""",

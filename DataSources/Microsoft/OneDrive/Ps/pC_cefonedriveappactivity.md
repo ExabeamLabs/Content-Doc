@@ -17,10 +17,10 @@ Name = cef-onedrive-app-activity
     """"{1,20}UserId"{1,20}:"{1,20}({user_email}[^@\s"]{1,2000}?@[^@\s"]{1,2000}?)"{1,20}""",
     """\WfilePath=({object}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\WObjectUrl":"({object}[^"]{1,2000}?)"""",
-    """\WsourceServiceName=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
+    """\WsourceServiceName =({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\WflexString1=({activity}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\Wmsg=({additional_info}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
-    """\WdestinationServiceName=({event_subtype}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
+    """\WdestinationServiceName =({event_subtype}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
   ]
 }
 }

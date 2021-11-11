@@ -15,7 +15,7 @@ Name = cef-syslog-microsoft-db-login
     """\sdvchost=({host}[^\s]{1,2000})""",
     """\sduser=({user}.+?)\s{1,100}\w+=""",
     """\sdntdom=({domain}.+?)\s{1,100}\w+=""",
-    """\ssourceServiceName=(?: |({service_name}.+?))\s{1,100}\w+=""",
+    """\ssourceServiceName =(?: |({service_name}.+?))\s{1,100}\w+=""",
     """\scs3=(?: |({database_name}.+?))\s{1,100}\w+=""",
     """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sdhost=({dest_host}[^\s]{1,2000})"""

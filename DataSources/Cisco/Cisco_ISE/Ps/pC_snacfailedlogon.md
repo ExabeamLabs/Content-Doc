@@ -12,7 +12,7 @@ Name = s-nac-failed-logon
     """exabeam_host=({host}[^\s]{1,2000})""",
     """({host}[\w\-.]{1,2000})\s{1,100}CISE_Failed_Attempts""",
     """\d{1,100}\s{1,100}({time}\d\d\d\d\-\d\d\-\d\d \d{1,100}:\d{1,100}:\d{1,100})""",
-    """, UserName=(({user_type}host)\/)?(({domain}[^\s\\]{1,2000})\\+)?(({user_email}[^,@]{1,2000}@[^,@]{1,2000})|({user}[^,]{1,2000}))""",
+    """, UserName =(({user_type}host)\/)?(({domain}[^\s\\]{1,2000})\\+)?(({user_email}[^,@]{1,2000}@[^,@]{1,2000})|({user}[^,]{1,2000}))""",
     """, Calling-Station-ID=({dest_host}[^,]{1,2000})""",
     """, Called-Station-ID=({src_host}[^,]{1,2000}):({ssid}[^,]{1,2000})""",
     """, AD-Host-Resolved-Identities=({dest_host}[^@,]{1,2000})""",

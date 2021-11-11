@@ -15,7 +15,7 @@ Name = vmware-view-login
     """\s{1,100}({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
     """\s{1,100}ForwardedClientIpAddress="[^"]{0,2000}?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
     """\s{1,100}({dest_host}[^\s]{1,2000})\s{1,100}View - """,
-    """UserDisplayName="(({domain}[^\\]{1,2000})\\+)?({user}[^"]{1,2000})"""",
+    """UserDisplayName ="(({domain}[^\\]{1,2000})\\+)?({user}[^"]{1,2000})"""",
    ]
 }
 }

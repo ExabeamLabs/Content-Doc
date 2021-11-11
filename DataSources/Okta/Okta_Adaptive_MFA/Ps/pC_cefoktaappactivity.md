@@ -7,7 +7,7 @@ Name = cef-okta-app-activity
   Lms = ArcSight
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName=Okta""", """cs6=""", """"targets":""", """"eventId":""" ]
+  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName =Okta""", """cs6=""", """"targets":""", """"eventId":""" ]
   Fields=[
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"published":"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",

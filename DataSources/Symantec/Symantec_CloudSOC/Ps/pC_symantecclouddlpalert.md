@@ -7,7 +7,7 @@ Name = symantec-cloud-dlp-alert
   Lms = Direct
   DataType = "dlp-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = ["""Security Alert Detected by""" , """SkyFormation Cloud Apps Security""" , """destinationServiceName=Symantec CloudSOC""" ]
+  Conditions = ["""Security Alert Detected by""" , """SkyFormation Cloud Apps Security""" , """destinationServiceName =Symantec CloudSOC""" ]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """ext__inserted_timestamp_=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""

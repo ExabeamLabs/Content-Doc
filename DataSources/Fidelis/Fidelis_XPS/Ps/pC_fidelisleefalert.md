@@ -24,7 +24,7 @@ Name = fidelis-leef-alert
 	     """target=(?:(<n\/a>)|({malware_url}.+?))\s{0,100}(\w+=|$)""",
 	     """fname=(?:(<n\/a>)|({malware_url}.+?))\s{0,100}(\w+=|$).+?proto=SMB""",
        """duser=(?:(<n\/a>)|({target}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-       """usrName=(?:(<n\/a>)|({user_email}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+       """usrName =(?:(<n\/a>)|({user_email}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
        """fname=(?:|(<n\/a>)|({process_name}.+?))\s{1,100}(\w+=|\s{0,100}$)"""
           ]
   DupFields = ["host->dest_host"]
@@ -34,6 +34,6 @@ Name = fidelis-leef-alert
     NameTemplate = """Fidelis Alert ${alert_name} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="device", Name="src_address", Fields=["src_ip->ip_address"]}
+      {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address"]}
 }
 ```

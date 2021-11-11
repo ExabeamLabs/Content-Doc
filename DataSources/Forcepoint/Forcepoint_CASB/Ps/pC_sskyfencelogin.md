@@ -14,7 +14,7 @@ Name = s-skyfence-login
     """\srt="{1,20}({time}\d{1,100})""",
     """\sduser="{1,20}({user}[^"]{1,2000})""",
     """\sduser="{1,20}[^@"]{1,2000}@({domain}[^".]{1,2000})""",
-    """\sdestinationServiceName="({app}[^"]{1,2000})"""",
+    """\sdestinationServiceName ="({app}[^"]{1,2000})"""",
     """\sapp="({app}[^"]{1,2000})"""",
     """\srequestClientApplication=({user_agent}.+?)\s{1,100}rt=""",
     """\sdst="{1,20}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",

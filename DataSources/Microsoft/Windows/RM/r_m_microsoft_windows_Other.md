@@ -5,13 +5,12 @@ Vendor: Microsoft
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  137  |   11   |     0      |     60      |   60    |
+|  137  |   11   |     0      |     58      |   58    |
 
 | Event Type                | Rules | Models                                                                                                                                                                                                                                                                            |
 | ------------------------- | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | account-creation          |       |  • <b>A-AM-DhU-system</b>: System accounts performing account management activities                                                                                                                                                                                               |
 | account-switch            |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset                                                                                                                                                                                                   |
-| batch-logon               |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset                                                                                                                                                                                                   |
 | dlp-alert                 |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset                                                                                                                                                                                                   |
 | file-write                |       |  • <b>A-FW-ProcessName-FileName</b>: File creations for process<br> • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset                                                                                                                                |
 | kerberos-logon            |       |  • <b>A-KL-UToE</b>: Ticket options and encryption type combination for asset<br> • <b>A-AL-DhU</b>: Users per Host                                                                                                                                                               |

@@ -28,7 +28,7 @@ Name = cef-okta-logs-app-activity
     """"target(s)?"{1,20}:[^\}\]]{1,2000}?"{1,20}displayName"{1,20}\s{0,100}:\s{0,100}"{1,20}((?i)unknown|({object}[^"]{1,2000}[^\s]))"""",
     """"target":[^}\]]{1,2000}?"type"\s{0,100}:\s{0,100}"({object_type}[^"]{1,2000})"""",
     """({app}(?i)Okta)""",
-    """destinationServiceName=({app}[^=]{1,2000}?)\s{0,100}\w+=""",
+    """destinationServiceName =({app}[^=]{1,2000}?)\s{0,100}\w+=""",
     """"type":"AppInstance"[^\}\]]{0,2000}"displayName":"({app}[^"]{1,2000}?)\s{0,100}"""",
     """"city":"({location_city}[^"]{1,2000})""",
     """"state":"({location_state}[^"]{1,2000})""",

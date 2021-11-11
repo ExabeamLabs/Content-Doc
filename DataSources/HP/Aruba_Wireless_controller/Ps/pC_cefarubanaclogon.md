@@ -17,7 +17,7 @@ cef-aruba-nac-logon-1 = {
     """duser=({user}.+?)\s\w+=""",
     """dmac=({dest_mac}.+?)\s\w+=""",
     """src=({src_ip}.+?)\s\w+=""",
-    """destinationServiceName=({app}.+?)\s\w+=""",
+    """destinationServiceName =({app}.+?)\s\w+=""",
     """reason=({failure_reason}.+?)(\s\w+=|\s{0,100}$)""",
     """msg=({additional_info}.+?)\s{0,100}$"""
     """cs1=({dest_ip}.+?)\s\w+=""",

@@ -20,7 +20,7 @@ Name = leef-lastline-security-alert
     """fname=({file_name}.+?)\s{1,100}(\w+=|$)""",
     """EventDetailLink=({additional_info}.+?)\s{1,100}(\w+=|$)""",
     """(mailUrlHash|fileHash)=({md5}.+?)\s{1,100}(\w+=|$)""",
-    """usrName=({user_email}[^\s@]{1,2000}@[^\s@]{1,2000})""",
+    """usrName =({user_email}[^\s@]{1,2000}@[^\s@]{1,2000})""",
     """\Wcat=({activity}.+?)\s{1,100}(\w+=|$)""",
   ]
   DupFields = [ "user_email->recipient" , "host->dest_host", "sender->target"]

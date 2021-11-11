@@ -7,7 +7,7 @@ Name = gcp-ids-network-alert
   Lms = Direct
   DataType = "network-alert"
   TimeFormat = "epoch"
-  Conditions = [ """ destinationServiceName=Google Cloud Platform (GCP) """, """"type":"ids.googleapis.com""", """"type":"vulnerability"""", """"source_ip_address":""", """"alert_severity":""" ]
+  Conditions = [ """ destinationServiceName =Google Cloud Platform (GCP) """, """"type":"ids.googleapis.com""", """"type":"vulnerability"""", """"source_ip_address":""", """"alert_severity":""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """"timestamp":({time}\d{1,100})\,""",

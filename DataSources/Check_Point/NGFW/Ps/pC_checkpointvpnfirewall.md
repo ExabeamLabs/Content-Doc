@@ -7,7 +7,7 @@ Name = checkpoint-vpn-firewall
   Lms = Direct
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   DataType = "network-connection"
-  Conditions = [ """ProductName="VPN-1 & FireWall-1""", """ProductFamily="Network"""" ]
+  Conditions = [ """ProductName ="VPN-1 & FireWall-1""", """ProductFamily="Network"""" ]
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\S+\s({host}\d{1,100}.\d{1,100}.\d{1,100}.\d{1,100})\s""",
     """src="({src_ip}\d{1,100}.\d{1,100}.\d{1,100}.\d{1,100})""",

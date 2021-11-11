@@ -7,7 +7,7 @@ Name = cef-servicenow-file-operation-2
   Lms = ArcSight
   DataType = "file-operations"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = ["""destinationServiceName=ServiceNow""", """"sys_created_on"""", """"sys_created_by""""]
+  Conditions = ["""destinationServiceName =ServiceNow""", """"sys_created_on"""", """"sys_created_by""""]
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """"sys_created_on":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",

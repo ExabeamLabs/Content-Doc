@@ -28,7 +28,7 @@ cef-o365-file-write = {
     """\WfilePath=(({file_parent}.+?)\/({file_name}[^\/]{1,2000}?))\s{0,100}(\w+=|$)""",
     """\WfilePath=.*?(\.({file_ext}[^\/\.]{0,2000}?))?\s{0,100}(\w+=|$)""",
     """\WfileType=({file_type}.+?)\s{0,100}(\w+=|$)""",
-    """\WoldFileName=({src_file_name}.+?)\s{0,100}(\w+=|$)""",
+    """\WoldFileName =({src_file_name}.+?)\s{0,100}(\w+=|$)""",
     """\WoldFilePath=({src_file_dir}.+?)\s{0,100}(\w+=|$)""",
     """\WrequestClientApplication=({user_agent}.+?)\s{0,100}(\w+=|$)""",
   ]}

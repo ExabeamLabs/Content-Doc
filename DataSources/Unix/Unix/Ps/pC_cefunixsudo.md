@@ -7,7 +7,7 @@ Name = cef-unix-sudo
     Lms = ArcSight
     DataType = "unix-account-switch"
     TimeFormat = "epoch"
-    Conditions = [ """CEF:""", """|Unix|Unix|""", """|User Executed Command|""", """ deviceProcessName=sudo """ ]
+    Conditions = [ """CEF:""", """|Unix|Unix|""", """|User Executed Command|""", """ deviceProcessName =sudo """ ]
     Fields = [
       """\srt=({time}\d{1,100})""",
       """\sdvc=({host}\S+)(\s{1,100}\w+=|\s{0,100}$)""",

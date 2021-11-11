@@ -7,7 +7,7 @@ Name = cef-mimecast-email-alert
   Lms = Direct
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """destinationServiceName=Mimecast Email Security""", """"userEmailAddress":"""" , """"ttpDefinition":"""", """"url":"""", """"scanResult":"""","""dproc=""",""""subject"""" ]
+  Conditions = [ """destinationServiceName =Mimecast Email Security""", """"userEmailAddress":"""" , """"ttpDefinition":"""", """"url":"""", """"scanResult":"""","""dproc=""",""""subject"""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"date":"({time}[^"]{1,2000})""",

@@ -12,7 +12,7 @@ Name = q-microsoft-dhcp
     """exabeam_host=(.+?@\s{0,100})?({host}[^\s]{1,2000})""",
     """exabeam_endTime=({time}\d{1,100})""",
     """IP Address=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """Host Name=({dest_host}[^\s]{1,2000})"""
+    """Host Name =({dest_host}[^\s]{1,2000})"""
   ]
   DupFields = [ "dest_host->user" ]
 }

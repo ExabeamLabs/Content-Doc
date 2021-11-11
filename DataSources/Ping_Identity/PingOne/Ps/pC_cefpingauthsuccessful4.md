@@ -7,7 +7,7 @@ Name = cef-ping-auth-successful-4
   Lms = Direct
   DataType = "authentication-successful"
   TimeFormat = "epoch"
-  Conditions = [ """destinationServiceName=Ping""", """flexString2=SSO""", """request=Success""" ]
+  Conditions = [ """destinationServiceName =Ping""", """flexString2=SSO""", """request=Success""" ]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """end=({time}\d{1,100})""",

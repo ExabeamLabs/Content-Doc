@@ -17,10 +17,10 @@ Name = oracle-access-manager
     """\ssrc=({src_ip}[\da-fA-F.:]{1,2000})\s{0,100}"{0,20}(\w+=|$)""",
     """duser=(uid\\=)+({user}[^,]{1,2000})""",
     """({app}Access Manager)""",
-    """requestUrlFileName=({file_path}({file_parent}[^\s]{1,2000}?)[\/]({file_name}[^\/\s]{1,2000}?))\s{0,100}"{0,20}(\w+=|$)""",
+    """requestUrlFileName =({file_path}({file_parent}[^\s]{1,2000}?)[\/]({file_name}[^\/\s]{1,2000}?))\s{0,100}"{0,20}(\w+=|$)""",
     """CEF[^|]{1,2000}\|([^|]{0,2000}\|){4}({event_name}.+?)\s{0,100}\|""",
     """eventId=({event_code}\d{1,100})\s{0,100}"{0,20}(\w+=|$)""",
-    """destinationServiceName=({service}.+?)\s{0,100}"{0,20}(\w+=|$)""",
+    """destinationServiceName =({service}.+?)\s{0,100}"{0,20}(\w+=|$)""",
   ]
 }
 }

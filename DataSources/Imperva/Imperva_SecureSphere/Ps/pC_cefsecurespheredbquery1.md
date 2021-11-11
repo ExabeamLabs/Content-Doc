@@ -18,14 +18,14 @@ Name = cef-securesphere-db-query-1
     """\WOperationType="table"[^=]{1,100}object="(|({table_name}[^"]{1,2000}))"""",
     """\Wobject="(|({table_name}[^"]{1,2000}))[^"]{1,100}OperationType="table"""",
     """\WdbUsername="(|({domain}[^"\\]{1,2000})\\)?(|({db_user}[^"\\]{1,2000}))"""",
-    """\WserviceName="(|({service_name}[^"]{1,2000}))"""",
-    """\WappName="(|({app}[^"]{1,2000}))"""",
+    """\WserviceName ="(|({service_name}[^"]{1,2000}))"""",
+    """\WappName ="(|({app}[^"]{1,2000}))"""",
     """\WosUser="(|({user}[^"]{1,2000}))"""",
     """\WsrcHost="(|({domain}[^"\\]{1,2000})\\)?(|({src_host}[^"\\]{1,2000}))"""",
-    """\WdatabaseName="(|({database_name}[^"]{1,2000}))"""",
+    """\WdatabaseName ="(|({database_name}[^"]{1,2000}))"""",
     """\WresponseSize=({response_size}\d{1,100})""",
     """\Woperation="(|(?i)(Logout)|({db_operation}[^"]{1,2000}))"""",
-    """\WschemaName="(|({schema}[^"]{1,2000}))"""",
+    """\WschemaName ="(|({schema}[^"]{1,2000}))"""",
     """\WparsedQuery="(|(N\/A \(logout\))|({db_query}[^\n]{1,2000})?)"\s{0,10}$""" 
   ]
   DupFields = [ "db_user->account" ]

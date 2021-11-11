@@ -7,7 +7,7 @@ Name = microsoft-scep-security-alert
   Lms = Direct
   DataType = "alert"
   TimeFormat = "epoch_sec"
-  Conditions = [ """Name=MalwareInfection""", """RemediationPendingAction=""" ]
+  Conditions = [ """Name =MalwareInfection""", """RemediationPendingAction=""" ]
   Fields = [
     """exabeam_host=({host}[\w\-.]{1,2000})""",
     """exabeam_time=({time}[^,=]{1,2000}?)exabeam_""",

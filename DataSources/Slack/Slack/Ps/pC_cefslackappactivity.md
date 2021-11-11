@@ -7,10 +7,10 @@ Name = cef-slack-app-activity
   Lms = ArcSight
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """CEF:""", """destinationServiceName=Slack""", """|Skyformation|""" ]
+  Conditions = [ """CEF:""", """destinationServiceName =Slack""", """|Skyformation|""" ]
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)\s{1,100}[\w.\-]{1,2000}\s{1,100}Skyformation""",
-    """\WdestinationServiceName=({app}Slack)""",
+    """\WdestinationServiceName =({app}Slack)""",
     """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
     """user":\{"id":"({user_id}[^"]{1,2000})","name":"({user_fullname}[^"]{1,2000})"""",
     """\Wsuser=(|({user_email}[^@]{1,2000}@({email_domain}[^=]{1,2000}?)))(\s{1,100}\w+=|\s{0,100}$)""",

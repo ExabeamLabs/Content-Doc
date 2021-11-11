@@ -22,10 +22,10 @@ Name = q-quest-directory-access
     """origin=(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[\w\-.]{1,2000}))""",
     """originIPv4=({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """objectClass=({object_class}[^\^]{1,2000})""",
-    """objectName=({object}[^\^]{1,2000})""",
+    """objectName =({object}[^\^]{1,2000})""",
     """objectDn=({object_dn}[^\^]{1,2000})""",
     """objectDn=CN=[^\^]{1,2000}?({object_ou}OU=[^\^]{1,2000})""",
-    """attributeName=({attribute}[^\^]{1,2000})""",
+    """attributeName =({attribute}[^\^]{1,2000})""",
     """adUsnChangedPre=({old_attribute}[^\^]{1,2000})""",
     """adUsnChangedPost=({new_attribute}[^\^]{1,2000})""",
   ]

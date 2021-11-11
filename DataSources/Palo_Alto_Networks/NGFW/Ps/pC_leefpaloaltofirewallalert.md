@@ -20,8 +20,8 @@ Name = leef-paloalto-firewall-alert
     """\|dst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\|""",
     """\|srcPostNAT=(0\.0\.0\.0|({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))\|""",
     """\|dstPostNAT=(0\.0\.0\.0|({dest_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))\|""",
-    """\|RuleName=({rule}[^\|][^\|]{1,2000})""",
-    """\|usrName=(|((({domain}[^\|\\]{1,2000})\\)?({user}[^\|\\]{1,2000})))\|""",
+    """\|RuleName =({rule}[^\|][^\|]{1,2000})""",
+    """\|usrName =(|((({domain}[^\|\\]{1,2000})\\)?({user}[^\|\\]{1,2000})))\|""",
     """\|SourceUser=(|((({src_domain}[^\|\\]{1,2000})\\)?({src_user}[^\|\\]{1,2000})))\|""",
     """\|DestinationUser=(|((({dest_domain}[^\|\\]{1,2000})\\)?({dest_user}[^\|\\]{1,2000})))\|""",
     """\|Application=({network_app}[^\|]{1,2000})""",
@@ -51,6 +51,6 @@ Name = leef-paloalto-firewall-alert
     NameTemplate = """Palo Alto Alert ${alert_name} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="device", Name="src_address", Fields=["src_ip->ip_address"]}
+      {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address"]}
 }
 ```

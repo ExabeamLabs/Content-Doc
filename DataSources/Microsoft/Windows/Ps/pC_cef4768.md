@@ -18,7 +18,7 @@ Name = cef-4768
       """\sdvchost=({host}[^\s]{1,2000})""",
       """\sdntdom=({domain}[^\s]{1,2000})""",
       """Service_,ID=({user_sid}[^\s]{1,2000})\s""",
-      """\sdestinationServiceName=({service_name}\S+)""",
+      """\sdestinationServiceName =({service_name}\S+)""",
       """ncryption_,Type=({ticket_encryption_type}[^\s]{1,2000})""",
       """Ticket_,Options=({ticket_options}[^\s]{1,2000})"""
     ]

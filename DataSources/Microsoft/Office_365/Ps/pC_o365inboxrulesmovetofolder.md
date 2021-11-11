@@ -21,7 +21,7 @@ Name = o365-inbox-rules-move-to-folder
     """user_email="({user_email}[^"@\s]{1,2000}@({user_domain}[^"@\s]{1,2000}))"""",
     """UserId":"({user_email}[^"\\]{1,2000}@({user_domain}[^"]{1,2000}))""",
     """app="({app}[^"]{1,2000})"""",
-    """destinationServiceName=({app}.+?)\sdevice""",
+    """destinationServiceName =({app}.+?)\sdevice""",
     """UserId":"(\\.+)?\/({user_fullname}[^,\\"]{1,2000})\\"\s{0,100}on behalf""",
     """UserId":"(\\.+)?\/({user_lastname}[^,]{1,2000}),\s{0,100}({user_firstname}[^\\"]{1,2000})\\"\s{0,100}on behalf"""
     """"SubjectOrBodyContainsWords":"({filter_key_words}[^"]{1,2000})"""

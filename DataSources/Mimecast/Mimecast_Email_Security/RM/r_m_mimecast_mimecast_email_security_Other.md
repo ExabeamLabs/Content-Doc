@@ -5,10 +5,9 @@ Vendor: Mimecast
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  11   |   2    |     0      |     14      |   14    |
+|  10   |   1    |     0      |     10      |   10    |
 
-| Event Type    | Rules | Models                                                                                                                                             |
-| ------------- | ----- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| file-write    |       |  • <b>A-FW-ProcessName-FileName</b>: File creations for process<br> • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset |
-| network-alert |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset                                                                    |
-| process-alert |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset                                                                    |
+| Event Type    | Rules | Models                                                                          |
+| ------------- | ----- | ------------------------------------------------------------------------------- |
+| network-alert |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset |
+| process-alert |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset |

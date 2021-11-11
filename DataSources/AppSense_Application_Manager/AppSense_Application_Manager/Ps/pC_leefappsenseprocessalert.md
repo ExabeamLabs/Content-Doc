@@ -14,7 +14,7 @@ Name = leef-appsense-process-alert
     """resource=({dest_host}[^=]{1,2000}?)\s{0,100}\w+=""",
     """application=({app}[^=]{1,2000}?)\s{0,100}\w+=""",
     """message=({alert_name}[^"]{1,2000}?)\s{0,100}$""",
-    """usrName=(N\/A|(({domain}[^\\\s]{1,2000})\\)?({user}[^\s]{1,2000}))\s{0,100}\w+=""",
+    """usrName =(N\/A|(({domain}[^\\\s]{1,2000})\\)?({user}[^\s]{1,2000}))\s{0,100}\w+=""",
     """LEEF\s({event_code}\d{1,100})""",
     """sev=({alert_severity}\d{1,100})"""
   ]

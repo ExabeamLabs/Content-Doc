@@ -7,7 +7,7 @@ Name = cb-defense-failed-app-login
   Lms = Direct
   DataType = "failed-app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """destinationServiceName=CB Defense""", """"loginName":""", """Login failed""" ]
+  Conditions = [ """destinationServiceName =CB Defense""", """"loginName":""", """Login failed""" ]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",

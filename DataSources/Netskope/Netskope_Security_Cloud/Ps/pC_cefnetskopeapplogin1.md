@@ -3,7 +3,7 @@
 {
 Name = cef-netskope-app-login-1
   DataType = "app-login"
-  Conditions = [  """"type":"page"""", """destinationServiceName=Netskope""" ]
+  Conditions = [  """"type":"page"""", """destinationServiceName =Netskope""" ]
   Fields = ${NetskopeParserTemplates.cef-netskope-activity.Fields} [
     """"useragent":"({user_agent}[^"]{1,2000})""""
   ]

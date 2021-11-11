@@ -10,7 +10,7 @@ Name = s-safesend-dlp-email-alert
   Conditions = [ """action=email_external""", """external_recipients="""" ]
   Fields = [
     """({time}\d{1,100}\/\d{1,100}\/\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(AM|PM|am|pm))""",
-    """\WComputerName=({host}[\w\-.]{1,2000})""",
+    """\WComputerName =({host}[\w\-.]{1,2000})""",
     """\Wuser="({user}[^"\s]{1,2000})""",
     """\Wfrom="({sender}[^"\s@]{1,2000}@[^"\s@]{1,2000})""",
     """\Wsubject="({subject}[^"]{1,2000}?)\s{0,100}"""",

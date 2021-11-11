@@ -3,7 +3,7 @@
 {
 Name = mcafee-security-alert-3
   DataType = "alert"
-  Conditions = [ """DetectingProductName=McAfee Endpoint Security""" ]
+  Conditions = [ """DetectingProductName =McAfee Endpoint Security""" ]
 }
 mcafee-dlp-alert = {
     Vendor = McAfee
@@ -15,7 +15,7 @@ mcafee-dlp-alert = {
       """processname=({process}({directory}[^,]{0,2000}[\\\/]{1,2000})?({process_name}[^,\\\/]{1,2000}))""",
       """username=(({domain}[^,\\\/]{1,2000})[\\\/]{1,2000})?({user}[^,\\\/]{1,2000}),""",
       """,sourcehostname=({dest_host}[^,]{1,2000})""",
-      """,HostName=({dest_host}[^,\.]{1,2000})""",
+      """,HostName =({dest_host}[^,\.]{1,2000})""",
       """,_DB_HOST=({dest_host}[^,\.]{1,2000})""",
       """,FilePath=({malware_file_name}[^,]{1,2000})"""
       """,threatseverity=({alert_severity}[^,]{1,2000})""",
@@ -23,12 +23,12 @@ mcafee-dlp-alert = {
       """,eventseverity=({alert_severity}[^,]{1,2000})""",
       """,ThreatSeverity=({alert_severity}[^,]{1,2000})""",
       """,producthostname=({host}[^,]{1,2000})""",
-      """,DetectingProductHostName=({host}[^,]{1,2000})""",
+      """,DetectingProductHostName =({host}[^,]{1,2000})""",
       """,targethostname=({src_host}[^,]{1,2000})""",
-      """,ThreatSourceProcessName=({process_name}[^,]{1,2000})""",
+      """,ThreatSourceProcessName =({process_name}[^,]{1,2000})""",
       """,threatname=({alert_name}[^,]{1,2000})""",
-      """,ThreatName=({alert_name}[^,]{1,2000})""",
+      """,ThreatName =({alert_name}[^,]{1,2000})""",
       """,eventname=({alert_name}[^,]{1,2000})""",
-      """,Vulnerability Name=({alert_name}[^,]{1,2000})"""
+      """,Vulnerability Name =({alert_name}[^,]{1,2000})"""
     ]}
 ```

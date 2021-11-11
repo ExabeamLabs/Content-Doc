@@ -7,7 +7,7 @@ Name = cef-netskope-alert-anomaly
   Lms = Direct
   DataType = "alert"
   TimeFormat = "epoch_sec"
-  Conditions = [ """"alert_type":"anomaly"""", """destinationServiceName=Netskope""" ]
+  Conditions = [ """"alert_type":"anomaly"""", """destinationServiceName =Netskope""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"timestamp":({time}\d{1,100})""",

@@ -5,7 +5,7 @@ Name = windows-dns-query-2
   DataType = "dns-query"
   Conditions = [ """Query/Response=Q""", """Flags (char codes)=""", """Question Type=""" ]
   Fields = ${MicrosoftParserTemplates.windows-dns.Fields}[
-     """\sQuestion Name=({query}[^\t"]{1,2000})""",
+     """\sQuestion Name =({query}[^\t"]{1,2000})""",
   ]
 }
 windows-dns = {
@@ -25,6 +25,6 @@ windows-dns = {
     """\sFlags \(char codes\)=({query_flags}[^\t]{1,2000})""",
     """\sResponseCode=({dns_response_code}[^\t]{1,2000})""",
     """\sQuestion Type=({query_type}[^\t]{1,2000})""",
-    """\sQuestion Name=({query}[^\t"]{1,2000})"""
+    """\sQuestion Name =({query}[^\t"]{1,2000})"""
   ]}
 ```

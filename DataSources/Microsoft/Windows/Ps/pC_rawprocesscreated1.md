@@ -17,7 +17,7 @@ Name = raw-process-created-1
     """({time}\d\d\/\d\d\/\d\d\d\d\s{1,100}\d\d:\d\d:\d\d\s{1,100}(?i)(AM|PM))""",
     """\w+\s{1,100}({time}\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}\d{1,100})\s""",
     """({event_code}4688)""",
-    """ComputerName=({host}[\w-.]{1,2000})\s""",
+    """ComputerName =({host}[\w-.]{1,2000})\s""",
     """(Success Audit|information)\s{1,100}({host}[^\s]{1,2000})""",
     """Process Name:\s{0,100}({process}({directory}(?:[^";]{1,2000})?[\\\/])?({process_name}[^\\\/";]{1,2000}?))[\s;]{0,2000}Token Elevation Type:""",
     """Account Name:\s{0,100}(-|SYSTEM|({user}[^\s]{1,2000}?))[\s;]{0,2000}Account Domain:""",

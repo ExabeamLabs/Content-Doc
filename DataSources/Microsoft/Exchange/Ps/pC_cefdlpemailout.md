@@ -22,8 +22,8 @@ Name = cef-dlp-email-out
     """\|RECEIVE\|RECEIVE\|.+?in=({bytes}\d{1,100})""",
     """\|SEND\|SEND\|.+?out=({bytes}\d{1,100})""",
     """\seventId=({alert_id}\d{1,100})"""
-    """\ssourceServiceName=({alert_name}[^\s]{1,2000})""",
-    """\ssourceServiceName=({alert_type}[^\s]{1,2000})""",
+    """\ssourceServiceName =({alert_name}[^\s]{1,2000})""",
+    """\ssourceServiceName =({alert_type}[^\s]{1,2000})""",
     """CEF([^\|]{0,2000}\|){6}({alert_severity}[^|]{1,2000})""",
     """CEF([^\|]{0,2000}\|){5}({action}[^|]{1,2000})""",
     """({direction}o)""",

@@ -14,7 +14,7 @@ Name = u-okta-app-login
   """instance=({host}[^,]{1,2000})""",
         """duid=({user}[^,]{1,2000})""",
         """duid=[^@,]{1,2000}@({domain}[^,.]{1,2000})""",
-        """destinationServiceName=({app}[^,]{1,2000})""",
+        """destinationServiceName =({app}[^,]{1,2000})""",
         """cs3=({user_agent}.+?), \w+=""",
     ]
 }

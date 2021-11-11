@@ -7,13 +7,13 @@ Name = cef-guardium-db-alert-1
   Lms = Syslog
   DataType = "database-alert"
   TimeFormat = "epoch"
-  Conditions = [ """CEF:""", """|IBM|Guardium|""", """DatabaseName=""", """DBUser="""  ]
+  Conditions = [ """CEF:""", """|IBM|Guardium|""", """DatabaseName =""", """DBUser="""  ]
   Fields=[
      """exabeam_host=({host}[^\s]{1,2000})""",
      """\|IBM\|Guardium\|[^|]{1,2000}\|({alert_name}[^|]{1,2000})""",
      """Severity=({alert_severity}[^=]{1,2000}?)(?:\s{0,100}\w+=|\s{0,100}$)""",
      """Category=({alert_type}[^=]{1,2000}?)(?:\s{0,100}\w+=|\s{0,100}$)""",
-     """DatabaseName=({database_name}[^=]{1,2000}?)(?:\s{0,100}\w+=|\s{0,100}$)""",
+     """DatabaseName =({database_name}[^=]{1,2000}?)(?:\s{0,100}\w+=|\s{0,100}$)""",
      """DBUser=\s{0,100}(?:|(({domain}[^\\=]{1,2000})\\+)?({db_user}[^=\\\/]{1,2000}?))(?:\s{0,100}\w+=|\s{0,100}$)""",
      """ServerIP=({dest_ip}[A-Fa-f:\d.]{1,2000})""",
      """ServerHostname=({host}[^=]{1,2000}?)(?:\s{0,100}\w+=|\s{0,100}$)""",

@@ -26,8 +26,8 @@ Name = xml-4625
       """<Data Name(\\)?='AuthenticationPackageName'>({auth_package}[^<]{1,2000})</Data>""",
       """({event_name}An account failed to log on)""",
       """<Data Name(\\)?='FailureReason'>({failure_reason}[^<]{1,2000})</Data>"""
-      """<Data Name=('|")SubjectUserSid('|")>({subject_sid}[^<]{1,2000})</Data>""",
-      """<Data Name=('|")KeyLength('|")>({key_length}[^<]{1,2000})</Data>"""
+      """<Data Name =('|")SubjectUserSid('|")>({subject_sid}[^<]{1,2000})</Data>""",
+      """<Data Name =('|")KeyLength('|")>({key_length}[^<]{1,2000})</Data>"""
     ]
     DupFields = ["src_host_windows->src_host"]
   }

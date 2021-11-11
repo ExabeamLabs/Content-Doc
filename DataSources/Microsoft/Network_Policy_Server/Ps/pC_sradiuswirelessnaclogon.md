@@ -11,7 +11,7 @@ Name = s-radius-wireless-nac-logon
   Fields = [
     """({time}\d{1,100}/\d{1,100}/\d{1,100} \d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM))""",
     """exabeam_host=({host}[^\s]{1,2000})""",
-    """ComputerName=({host}[\w\-.]{1,2000})""",
+    """ComputerName =({host}[\w\-.]{1,2000})""",
     """EventCode=({event_code}\d{1,100})""",
     """User:.+?Account Name:\s{1,100}(\w+(\\)+)?(?:-|({user}.+?))\s{1,100}Account Domain:""",
     """User:.+?Account Domain:\s{1,100}(?:-|({domain}.+?))\s{1,100}Fully""",

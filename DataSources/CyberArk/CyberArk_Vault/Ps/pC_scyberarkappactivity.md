@@ -22,7 +22,7 @@ Name = s-cyberark-app-activity
     """;File="[^"]{0,2000}?({file_name}[^\\"]{1,2000}?)"""",
     """;File="[^"]{0,2000}?\.({file_ext}[a-zA-Z]{1,2000}?)";Safe=""",
     """;Safe="({safe_value}[^"]{1,2000})""",
-    """;UserName="({account}[^"]{1,2000})""",
+    """;UserName ="({account}[^"]{1,2000})""",
     """;LogonDomain="({domain}[^"]{1,2000})""",
     """;DeviceType="({dest_service}[^"]{1,2000})"""
   ]

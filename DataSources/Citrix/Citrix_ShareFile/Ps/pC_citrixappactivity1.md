@@ -4,7 +4,7 @@
 Name = citrix-app-activity-1
   DataType = "app-activity"
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"
-  Conditions = ["""destinationServiceName=Citrix ShareFile""", """"ActivityType":""", """flexString1Label=application-action"""]
+  Conditions = ["""destinationServiceName =Citrix ShareFile""", """"ActivityType":""", """flexString1Label=application-action"""]
   Fields = ${CitrixParserTemplates.citrix-app-activity.Fields}[
     """({activity}resource-acl-updated)""",
     """"ActivityType"{1,20}:"{1,20}({activity}[^"]{1,2000})"""",
@@ -25,7 +25,7 @@ citrix-app-activity = {
       """src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """"{1,20}EventID"{1,20}:"{1,20}({event_code}[^"]{1,2000})"{1,20}""",
       """act=({action}.+?)\s{0,100}\w+=""",
-      """destinationServiceName=({app}.+?)\s{0,100}\w+=""",
+      """destinationServiceName =({app}.+?)\s{0,100}\w+=""",
       """msg=({additional_info}.+?)\s{0,100}\w+=""",
       """filePermission=({file_permissions}.+?)\s{0,100}\w+=""",
       """"Location"{1,20}:"{1,20}(-|({country_code}[^,]{1,2000})),""",

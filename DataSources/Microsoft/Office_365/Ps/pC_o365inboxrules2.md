@@ -19,7 +19,7 @@ Name = o365-inbox-rules-2
     """msg=({additional_info}[^=]{1,2000}?)\s\w+=""",
     """"Value":"(?:smtp:)?[^@]{1,2000}?@({target_domain}[^;"]{1,2000})"""",
     """UserId":"({user_email}[^"\\\s@]{1,2000}@({user_domain}[^"\\\s@]{1,2000}))""",
-    """destinationServiceName=({app}[^=]{1,2000}?)\s{0,100}filePath"""
+    """destinationServiceName =({app}[^=]{1,2000}?)\s{0,100}filePath"""
     """({app}Office 365)"""
   ]
   DupFields = ["user_domain->email_domain"]

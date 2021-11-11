@@ -36,7 +36,7 @@ Name = leef-checkpoint-alert
     """\Wdst_machine_name=({dest_host}[^@=]{1,2000}?)(@({domain}.+?))?(\s{1,100}\w+:?=|\s{0,100}$)""",
     """\Wdst_user_name=({user_fullname}.+?)\s{0,100}\(({user}.+?)\)""",
     """\Wsrc_user_name=({user_fullname}.+?)\s{0,100}\(({user}.+?)\)""",
-    """\WusrName=({user_fullname}.+?)\s{0,100}\(({user}.+?)\)""",
+    """\WusrName =({user_fullname}.+?)\s{0,100}\(({user}.+?)\)""",
     """LEEF:([^\|]{0,2000}\|){2}({product_name}[^\|]{1,2000})""",
     """\Wsignature=({event_name}.+?)(\s{1,100}\w+:?=|\s{0,100}$)""",
     """\Wsmartdefense_profile=({smartdefense_profile}.+?)(\s{1,100}\w+:?=|\s{0,100}$)""",

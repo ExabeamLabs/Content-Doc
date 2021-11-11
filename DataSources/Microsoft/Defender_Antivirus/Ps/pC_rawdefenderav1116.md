@@ -7,9 +7,9 @@ Name = raw-defender-av-1116
  Lms = Direct
  DataType = "security-alert"
  TimeFormat = "yyyy-MM-dd HH:mm:ss"
- Conditions = [ """EventCode=1116""", """LogName=Microsoft-Windows-Windows Defender/Operational""", """Detection Origin:""", """Detection Type:""", """Detection Source:""", """Signature Version:""" ]
+ Conditions = [ """EventCode=1116""", """LogName =Microsoft-Windows-Windows Defender/Operational""", """Detection Origin:""", """Detection Type:""", """Detection Source:""", """Signature Version:""" ]
  Fields = [
-   """ComputerName=({host}[^\s]{1,2000})""",
+   """ComputerName =({host}[^\s]{1,2000})""",
    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
    """EventCode=({event_code}\d{1,100})""",
    """User:\s{0,100}(NT AUTHORITY|({domain}[^\\]{1,2000}))(\\)?(SYSTEM|({user}[^\s]{1,2000}))""",

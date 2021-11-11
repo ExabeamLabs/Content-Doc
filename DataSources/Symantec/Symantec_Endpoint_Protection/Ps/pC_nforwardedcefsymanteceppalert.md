@@ -16,7 +16,7 @@ Name = n-forwarded-cef-symantec-epp-alert
     """\sexternalId=({alert_id}\d{1,100})""",
     """\sshost=({src_host}.+?)\s{1,100}\w+=""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\snitroThreat_Name=({alert_name}.+?)\s{1,100}\w+=""",
+    """\snitroThreat_Name =({alert_name}.+?)\s{1,100}\w+=""",
     """\snitroDestination_Filename=({malware_url}.+?)\s{1,100}\w+="""
   ]
   SOAR {
@@ -25,6 +25,6 @@ Name = n-forwarded-cef-symantec-epp-alert
     NameTemplate = """Symantec Alert ${alert_name} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="device", Name="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]}
+      {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]}
 }
 ```

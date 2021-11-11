@@ -13,7 +13,7 @@ Name = cef-meraki-network-alert
     """\Wend=({time}\d{1,100})""",
     """\Wact=(|({alert_type}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\WrequestClientApplication=(|({app}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-    """\WdestinationServiceName=(|({event_subtype}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\WdestinationServiceName =(|({event_subtype}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\WdeviceMacAddress=(|({src_mac_address}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdst=({dest_ip}[A-Fa-f:\d.]{1,2000})""",
     """\Wsrc=({src_ip}[A-Fa-f:\d.]{1,2000}?)(:({src_port}\d{1,100}))?(\s{1,100}\w+=|\s{0,100}$)""",

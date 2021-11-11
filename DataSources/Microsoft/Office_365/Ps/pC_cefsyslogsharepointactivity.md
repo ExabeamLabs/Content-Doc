@@ -19,7 +19,7 @@ Name = cef-syslog-sharepoint-activity
     """\sfilePath=({file_path}.+?)\s{1,100}\w+=""",
     """\sfilePath=(?: |({file_parent}[^=]{1,2000})[\\\/]{1,2000}[^\\\/=]{1,2000})\s{1,100}\w+=""",
     """\sfileType=({file_type}.+?)\s{1,100}\w+=""",
-    """\soldFileName=({file_name}.+?)\s{1,100}\w+=""",
+    """\soldFileName =({file_name}.+?)\s{1,100}\w+=""",
     """\soldFileType=({file_ext}.+?)\s{1,100}\w+=""",
   ]
   DupFields = [ "accesses->event_code" ]

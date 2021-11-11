@@ -7,7 +7,7 @@ Name = s-mcafee-dlp-alert-1
     Lms = Splunk
     DataType = "dlp-alert"
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
-    Conditions = [ """, classification""", """, dlpAgentVersion=""", """, incidentId=""", """, policyName=""" ]
+    Conditions = [ """, classification""", """, dlpAgentVersion=""", """, incidentId=""", """, policyName =""" ]
     Fields = [
       """exabeam_host=({host}[^\s]{1,2000})""",
       """\Wclassification="({pci_hits}\S+)\s{1,100}\[({phi_hits}.+?)\](\s{1,100}\(({pii_hits}\d{1,100})\))?""",
@@ -17,11 +17,11 @@ Name = s-mcafee-dlp-alert-1
       """\Wseverity="({alert_severity}[^"]{1,2000})""",
       """\WtotalContentSize="({bytes}[^"]{1,2000})""",
       """\Wdestination="({additional_info}[^"]{1,2000})""",
-      """\WcomputerName="({src_host}[^"]{1,2000})""",
+      """\WcomputerName ="({src_host}[^"]{1,2000})""",
       """\WipAddress="({src_ip}[^"]{1,2000})""",
-      """\WuserName="({user}[^"]{1,2000})""",
-      """\WpolicyName="({policy}[^"]{1,2000})""",
-      """\WfileName="({target}[^"]{1,2000})""",
+      """\WuserName ="({user}[^"]{1,2000})""",
+      """\WpolicyName ="({policy}[^"]{1,2000})""",
+      """\WfileName ="({target}[^"]{1,2000})""",
       """\WeventType="({alert_type}[^"]{1,2000})""",
     ]
     SOAR {
@@ -30,6 +30,6 @@ Name = s-mcafee-dlp-alert-1
       NameTemplate = """McAfee DLP Alert ${alert_name} found"""
       ProjectName = "SOC"
       EntityFields = [
-        {EntityType="device", Name="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]}
+        {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]}
 }
 ```

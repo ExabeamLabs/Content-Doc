@@ -4,7 +4,7 @@
 Name = azure-file-read-2
   Product = Azure
   DataType = "file-read"
-  Conditions= [ """destinationServiceName=Azure""", """"_ResourceId":"""", """"CorrelationId":"""", """dproc=Log Analytics OMS Workspace""", """"OperationName":"VaultGet"""" ]
+  Conditions= [ """destinationServiceName =Azure""", """"_ResourceId":"""", """"CorrelationId":"""", """dproc=Log Analytics OMS Workspace""", """"OperationName":"VaultGet"""" ]
   Fields = ${MSParserTemplates.azure-file-read.Fields} [
     """"ResourceId":"({file_path}({file_parent}(?:[^";]{1,2000})?[\/;])?({file_name}[^\/";]{1,2000}))"""",
   ]

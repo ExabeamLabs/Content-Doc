@@ -24,7 +24,7 @@ Name = cef-bit9-file-alert
     """\|Bit9\|Security Platform\|(.*?\|){2}({accesses}[^\|]{1,2000}?)(\s{0,100}\([^|]{1,2000})?\|""",
     """\s<USER:({alert_severity}.+?)>\s""",
     """(\||\s)cat=(|({alert_type}.+?))\s{1,100}(\w+=|$)""",
-    """(\||\s)deviceProcessName=(|({process}.+?))\s{1,100}(\w+=|$)""",
+    """(\||\s)deviceProcessName =(|({process}.+?))\s{1,100}(\w+=|$)""",
     """(\||\s)filePath=(|({file_path}(({file_parent}[^=]{1,2000}[^\\])\\+)?({file_name}.+?)))\s{1,100}(\w+=|$)""",
     """(\||\s)fname=(|({file_name}.+?))\s{1,100}(\w+=|$)""",
     """(\||\s)fileHash=(|({old_hash}.+?))\s{1,100}(\w+=|$)""",

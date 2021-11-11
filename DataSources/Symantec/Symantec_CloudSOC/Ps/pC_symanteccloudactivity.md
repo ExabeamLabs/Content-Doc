@@ -7,7 +7,7 @@ Name = symantec-cloud-activity
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = ["""SkyFormation Cloud Apps Security""" , """destinationServiceName=Symantec CloudSOC""" ]
+  Conditions = ["""SkyFormation Cloud Apps Security""" , """destinationServiceName =Symantec CloudSOC""" ]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """ext__inserted_timestamp_=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""

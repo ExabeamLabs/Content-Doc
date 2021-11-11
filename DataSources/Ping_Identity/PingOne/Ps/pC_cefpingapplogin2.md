@@ -7,7 +7,7 @@ Name = cef-ping-app-login-2
   Lms = Direct
   DataType = "app-login"
   TimeFormat = "epoch"
-  Conditions = [ """destinationServiceName=Ping""", """|login-success|""" ]
+  Conditions = [ """destinationServiceName =Ping""", """|login-success|""" ]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """end=({time}\d{1,100})""",

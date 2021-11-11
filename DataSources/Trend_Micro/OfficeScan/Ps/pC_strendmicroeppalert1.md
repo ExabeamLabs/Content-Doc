@@ -7,10 +7,10 @@ Name = s-trendmicro-epp-alert-1
   Lms = Splunk
   DataType = "alert"
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"
-  Conditions = [ "C&C callback detected" , "SourceName=Trend Micro OfficeScan Server" ]
+  Conditions = [ "C&C callback detected" , "SourceName =Trend Micro OfficeScan Server" ]
   Fields = [
     """exabeam_raw=.*?({time}\d{1,100}\/\d{1,100}\/\d\d\d\d \d\d:\d\d:\d\d (am|AM|PM|pm))""",
-    """ComputerName=({host}[^\s\n]{1,2000})""",
+    """ComputerName =({host}[^\s\n]{1,2000})""",
     """\sType=({alert_severity}[^\s\n]{1,2000})""",
     """User=(?:SYSTEM|NOT_TRANSLATED|({user}[^\s\n]{1,2000}))""",
     """RecordNumber=({alert_id}\d{1,100})""",

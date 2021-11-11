@@ -11,7 +11,7 @@ Name = rapid7-security-alert
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """\Wapp=(|({app}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-    """\WdestinationServiceName=(|({event_subtype}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\WdestinationServiceName =(|({event_subtype}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\WdeviceNtDomain=(|({os}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdpriv=(|({category}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdproc=(|({process}.+?))(\s{1,100}\w+=|\s{0,100}$)""",

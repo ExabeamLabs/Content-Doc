@@ -7,7 +7,7 @@ Name = centrify-authentication-failed-1
   Lms = Splunk
   DataType = "authentication-failed"
   TimeFormat = "MM/dd/yyyy HH:mm:ss a"
-  Conditions = [ """SourceName=Centrify AuditTrail""", """AUDIT_TRAIL|Centrify Suite|MFA|""" , """|MFA challenge failed|""", """EventCode=54207""" ]
+  Conditions = [ """SourceName =Centrify AuditTrail""", """AUDIT_TRAIL|Centrify Suite|MFA|""" , """|MFA challenge failed|""", """EventCode=54207""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """:\d\d\s\w+\s({time}\d\d\/\d\d\/\d\d\d\d\s\d\d:\d\d:\d\d\s(?i)(AM|PM))""",

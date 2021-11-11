@@ -17,7 +17,7 @@ Name = q-o365-siem-security-alert
       """\WexternalId=({alert_id}[^\s]{1,2000})\s{1,100}(\w+=|$)""",
       """\Wsuser=({user_email}[^\s]{1,2000})\s{1,100}(\w+=|$)""",
       """\Wcs1=({additional_info}.+?)\s{1,100}(\w+=|$)""",
-      """DestinationServiceName=({process_name}.*?)\s\w+=""", 
+      """DestinationServiceName =({process_name}.*?)\s\w+=""", 
     ]
   }
 }

@@ -21,7 +21,7 @@ Name = cef-cylance-alert
     """\WfilePath=(|({malware_url}.+?))\s{1,100}(\w+=|$)""",
     """\Wmsg=(|({additional_info}.+?))\s{1,100}(\w+=|$)""",
     """\Wact=(|({outcome}.+?))\s{1,100}(\w+=|$)""",
-    """\Wad\.Process_,Name=(|({process}({directory}(?:(\w+:)*([\\\/]{1,2000}[^\\\/"]{1,2000}?)+?)?[\\\/]{1,2000})({process_name}[^"\\\/]{1,2000}?)))\s{1,100}(\w+=|$)""",
+    """\Wad\.Process_,Name =(|({process}({directory}(?:(\w+:)*([\\\/]{1,2000}[^\\\/"]{1,2000}?)+?)?[\\\/]{1,2000})({process_name}[^"\\\/]{1,2000}?)))\s{1,100}(\w+=|$)""",
   ]
   DupFields = [ "alert_name->alert_type" ]
 }

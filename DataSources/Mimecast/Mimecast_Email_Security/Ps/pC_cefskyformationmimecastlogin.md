@@ -7,11 +7,11 @@ Name = cef-skyformation-mimecast-login
   Lms = ArcSight
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """"auditType":""", """"User Logged On"""",  """destinationServiceName=Mimecast Email Security""","""dproc="""]
+  Conditions = [ """"auditType":""", """"User Logged On"""",  """destinationServiceName =Mimecast Email Security""","""dproc="""]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"eventTime":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}.\d{1,100})""",
-    """\WdestinationServiceName=(|({event_subtype}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\WdestinationServiceName =(|({event_subtype}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdproc=(|({dproc}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
     """"auditType":"({activity}[^"]{1,2000})""",
     """({outcome}(?i)success)""",

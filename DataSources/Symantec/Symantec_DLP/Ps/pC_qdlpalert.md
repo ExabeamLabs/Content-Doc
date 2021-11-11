@@ -15,10 +15,10 @@ Name = q-dlp-alert
       """\|incidentID=({alert_id}\d{1,100})""",
       """\|Symantec\|DLP\|({alert_severity}[^\|]{1,2000})\|""",
       """\|Symantec\|DLP\|[^|]{1,2000}?\|({alert_name}[^|]{1,2000}?)\s{0,100}\|""",
-      """\|usrName=(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({user_email}[^\|@]{1,2000}@[^\|@]{1,2000})|(N/A|({user}[^\|]{1,2000})))""",
+      """\|usrName =(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({user_email}[^\|@]{1,2000}@[^\|@]{1,2000})|(N/A|({user}[^\|]{1,2000})))""",
       """\|suser=((NT AUTHORITY|({domain}[^\|\\\/]{1,2000}))[\\\/]{1,2000})?(system|N/A|({user}[^\|\\\/]{1,2000}))\|"""
-      """\|usrName=(N/A|({user}[^\|@]{1,2000}))@""",
-      """\|usrName=(?=[\w.]{1,2000}@[\w.])({sender}[^\|]{1,2000})""",
+      """\|usrName =(N/A|({user}[^\|@]{1,2000}))@""",
+      """\|usrName =(?=[\w.]{1,2000}@[\w.])({sender}[^\|]{1,2000})""",
       """\|duser=(?=[\w.]{1,2000}@[\w.])({recipients}[^\|]{1,2000})""",
       """\|duser=(?=[\w.]{1,2000}@[\w.])({external_address}[^,\|]{1,2000})""",
       """\|subject=\s{0,100}((?!SFTP|HTTP|FTP|TCP|N/A)({subject}[^\|]{1,2000}?))\s{0,100}\|""",
@@ -29,7 +29,7 @@ Name = q-dlp-alert
       """\|incidentSnapshot=((?!\d{1,3}\.\d{1,3}\.\d{1,3})({full_url}(\w+:\/+)?({web_domain}[^\\\/]{1,2000})[^\s]{1,2000}))\s{1,100}(\w+=|$)""",
       """\|subject=({protocol}TCP:Pop3|SFTP)\|""",
       """\|Protocol=.+?({protocol}SMTP|FTP|HTTP|HTTPS)\|""",
-      """\|fileName=(N\/A|({file_name}[^\|]{1,2000}))""",
+      """\|fileName =(N\/A|({file_name}[^\|]{1,2000}))""",
       """\|parentPath=(N\/A|({file_path}[^\|]{1,2000}))""",
       """\|blocked=(None|({outcome}[^\|]{1,2000}?))\s{0,100}\|""",
     ]
@@ -39,6 +39,6 @@ Name = q-dlp-alert
       NameTemplate = """Symantec DLP Alert ${alert_name} found"""
       ProjectName = "SOC"
       EntityFields = [
-        {EntityType="device", Name="src_address", Fields=["src_ip->ip_address"]}
+        {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address"]}
 }
 ```

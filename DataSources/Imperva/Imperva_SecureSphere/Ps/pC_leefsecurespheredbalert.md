@@ -17,11 +17,11 @@ Name = leef-securesphere-db-alert
     """(\s|\|)Alert type=({alert_type}[^\|]{1,2000})""",
     """(\s|\|)src=({src_ip}[a-fA-F:\d\.]{1,2000})""",
     """(\s|\|)dst=({dest_ip}[a-fA-F:\d\.]{1,2000})""",
-    """(\s|\|)usrName="{0,20}({user}[^\s\|"]{1,2000})""",
+    """(\s|\|)usrName ="{0,20}({user}[^\s\|"]{1,2000})""",
     """(\s|\|)Application name=({app}[^\|]{1,2000})""",
     """(\s|\|)Alert Description=({additional_info}[^\|]{1,2000})""",
     """(\s|\|)Severity=({alert_severity}[^\|]{1,2000})""",
-    """(\s|\|)ServerGroupName=({server_group}[^\|]{1,2000})"""
+    """(\s|\|)ServerGroupName =({server_group}[^\|]{1,2000})"""
   ]
   DupFields = [ "alert_type->alert_name" ]
 }

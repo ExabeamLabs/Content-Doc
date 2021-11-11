@@ -10,7 +10,7 @@ Name = leef-crowdstrike-alert
   Conditions = [ """LEEF:""", """|CrowdStrike|FalconHost|""" ]
   Fields = [
     """exabeam_host=({host}[\w\-.]{1,2000})""",
-    """\WscanResultName=(|({additional_info}.+?))\s{0,100}(\||\w+=|["\s]{0,2000}$)""",
+    """\WscanResultName =(|({additional_info}.+?))\s{0,100}(\||\w+=|["\s]{0,2000}$)""",
     """\Wdescription=(|({additional_info}.+?))\s{0,100}(\||\w+=|["\s]{0,2000}$)""",
     """\Wurl=(|({url}[^\s]{1,2000}?))\s{0,100}(\||\w+=|["\s]{0,2000}$)""",
     """\Wsev=({alert_severity}\d{1,100})""",
@@ -19,7 +19,7 @@ Name = leef-crowdstrike-alert
     """\WdevTime=({time}\d\d\d\d\-\d\d\-\d\d\s{1,100}\d\d\:\d\d\:\d\d)\s""",
     """\Wcat=(|({alert_type}.+?))\s{0,100}(\||\w+=|["\s]{0,2000}$)""",
     """\Wdomain=(?:|N\/A|({domain}[^\s]{1,2000}?))\s{0,100}(\||\w+=|["\s]{0,2000}$)""",
-    """\WusrName=(|N\/A|({user_email}[^@=\|\s]{1,2000}@[^"@\|\s=]{1,2000}?)|({user}[^\s]{1,2000}?))\s{0,100}(\||\w+=|["\s]{0,2000}$)""",
+    """\WusrName =(|N\/A|({user_email}[^@=\|\s]{1,2000}@[^"@\|\s=]{1,2000}?)|({user}[^\s]{1,2000}?))\s{0,100}(\||\w+=|["\s]{0,2000}$)""",
     """\WscanResultDetected=(|({scan_result_detected}[^\s]{1,2000}?))\s{0,100}(\||\w+=|["\s]{0,2000}$)""",
     """\WscanResultEngine=(|({scan_result_engine}[^=|\s]{1,2000}?))\s{0,100}(\||\w+=|["\s]{0,2000}$)""",
     """\WcommandLine=(|({command_line}.+?))\s{0,100}(\||\w+=|["\s]{0,2000}$)""",

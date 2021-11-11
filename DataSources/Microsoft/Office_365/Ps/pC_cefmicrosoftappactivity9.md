@@ -3,7 +3,7 @@
 {
 Name = cef-microsoft-app-activity-9
   Product = Office 365
-  Conditions= [ """CEF:""", """destinationServiceName=Office 365""", """"Add user""" ]
+  Conditions= [ """CEF:""", """destinationServiceName =Office 365""", """"Add user""" ]
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields} [
     """"targetResources":[^\}]{1,2000}"userPrincipalName":"({object}[^"]{1,2000})""""
   ]
@@ -33,7 +33,7 @@ cef-microsoft-app-activity = {
     """"result":"({result}[^"]{1,2000})""",
     """"ResultStatus":"({result}[^"]{1,2000}?)"""",
     """\sdestinationServiceName\s{0,100}=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
-    """\ssourceServiceName=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
+    """\ssourceServiceName =({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """"User-Agent\\?"{1,20}:\\?"{1,20}({user_agent}[^"\\]{1,2000})"""
     """"UserAgent":"({user_agent}[^"]+)"""",
     """"ipAddress":"({dest_ip}[A-Fa-f.:\d]{1,2000})""""

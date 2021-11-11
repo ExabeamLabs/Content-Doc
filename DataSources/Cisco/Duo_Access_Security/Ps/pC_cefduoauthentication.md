@@ -7,7 +7,7 @@ Name = cef-duo-authentication
   Lms = ArcSight
   DataType = "authentication-successful"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """ destinationServiceName=DUO """, """dproc=authentication-logs""" ]
+  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """ destinationServiceName =DUO """, """dproc=authentication-logs""" ]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """"timestamp":({time}\d{1,100})""",

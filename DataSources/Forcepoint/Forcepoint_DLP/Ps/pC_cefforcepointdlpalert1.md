@@ -7,7 +7,7 @@ Name = cef-forcepoint-dlp-alert-1
   Lms = Direct
   DataType = "dlp-alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
-  Conditions = [ "|Forcepoint|Forcepoint DLP|", "sourceServiceName=" ]
+  Conditions = [ "|Forcepoint|Forcepoint DLP|", "sourceServiceName =" ]
   Fields = [
     """timeStamp=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{1,100})""",
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
@@ -22,9 +22,9 @@ Name = cef-forcepoint-dlp-alert-1
     """\Wfname=(N\/A|.*? - ({bytes_val}[\d.]{1,2000}\s{1,100}[^\s;]{1,2000}))""",
     """\Wmsg=\s{0,100}({additional_info}.+?)(\s{1,100}\-\s|\s{1,100}[\w\.]{1,2000}=|$)""",
     """\Wcat=({alert_name}.+?)(\s\-\s|\s{1,100}[\w\.]{1,2000}=|$)""",
-    """\WsourceServiceName=({alert_type}.+?)\s{1,100}(on |\w+=)""",
-    """\WloginName=(N\/A|({user_fullname}[^@\(=\\]{1,2000}?)\s{0,100}(\([^\)]{1,2000}\)?)?(@({domain}[^@\s]{1,2000}))?)(\s\-\s|\s{1,100}[\w\.]{1,2000}=|$)""",
-    """\WloginName=(?:N\/A|(({domain}[^\\,]{1,2000})\\+)?({user}[^\\\s,]{1,2000}))(\s\-\s|\s{1,100}[\w\.]{1,2000}=|$)""",
+    """\WsourceServiceName =({alert_type}.+?)\s{1,100}(on |\w+=)""",
+    """\WloginName =(N\/A|({user_fullname}[^@\(=\\]{1,2000}?)\s{0,100}(\([^\)]{1,2000}\)?)?(@({domain}[^@\s]{1,2000}))?)(\s\-\s|\s{1,100}[\w\.]{1,2000}=|$)""",
+    """\WloginName =(?:N\/A|(({domain}[^\\,]{1,2000})\\+)?({user}[^\\\s,]{1,2000}))(\s\-\s|\s{1,100}[\w\.]{1,2000}=|$)""",
     """\Wsuser=(({domain}[^\\\s,@=]{1,2000})\\+)?({user}[^\\\s,@=]{1,2000})\s{1,100}(\w+=|$)""",
     """\Wsuser=(Executive Inquiry Mailbox|({user_fullname}[^\\\s,@=]{1,2000}?\s{1,100}[^\\,@=]{1,2000}?))\s{1,100}(\w+=|$)""",
     """\Wsuser=({user_lastname}[^\\,=]{1,2000}?),\s{1,100}({user_firstname}[^\\,=]{1,2000}?)\s{1,100}(\w+=|$)""",
@@ -40,6 +40,6 @@ Name = cef-forcepoint-dlp-alert-1
     NameTemplate = """Forcepoint DLP Alert ${alert_name} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="device", Name="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]}
+      {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]}
 }
 ```

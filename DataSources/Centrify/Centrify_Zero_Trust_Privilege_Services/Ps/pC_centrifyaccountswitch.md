@@ -18,7 +18,7 @@ Name = centrify-account-switch
     """pid=({process_id}\d{1,100})""",
     """service=({service}.+?)\s\w+=""",
     """runas=({account}.+?)\s\w+=""",
-    """EntityName=({object}.+?)\s{0,100}$""",
+    """EntityName =({object}.+?)\s{0,100}$""",
     """command=({process}({directory}.*?)(\/+({process_name}[^\/]{1,2000}?))?)\s{0,100}(\w+=|$)"""
   ]
 }

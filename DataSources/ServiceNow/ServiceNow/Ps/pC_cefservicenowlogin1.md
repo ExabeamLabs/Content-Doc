@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-servicenow-login-1
-  Conditions = [ """destinationServiceName=ServiceNow""", """"name":"login"""" ]
+  Conditions = [ """destinationServiceName =ServiceNow""", """"name":"login"""" ]
 }
 servicenow-login-template = {
     Vendor = ServiceNow

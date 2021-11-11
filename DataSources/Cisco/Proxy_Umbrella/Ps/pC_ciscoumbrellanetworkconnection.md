@@ -7,7 +7,7 @@ Name = cisco-umbrella-network-connection
   Lms = Direct
   DataType = "network-connection"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ """destinationServiceName=Cisco Umbrella """, """dproc=IP """, """"identity":"""" ]
+  Conditions = [ """destinationServiceName =Cisco Umbrella """, """dproc=IP """, """"identity":"""" ]
   Fields = [
     """\W(destinationServiceName|requestClientApplication)=({app}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """"timestamp"{1,20}:"{1,20}({time}[^",]{1,2000})"""",

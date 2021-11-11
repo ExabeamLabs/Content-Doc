@@ -18,7 +18,7 @@ Name = cef-fortinet-app-activity
     """\Wdhost=(|({dest_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdst=({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """\Wdpt=({dest_port}\d{1,100})""",
-    """\WdestinationServiceName=(|({service}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\WdestinationServiceName =(|({service}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdvchost=(|({host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wcat=({event_subtype}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wapp\\?="({app}[^"]{1,2000})"""",

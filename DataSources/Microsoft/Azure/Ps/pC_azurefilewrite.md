@@ -7,7 +7,7 @@ Name = azure-file-write
   Lms = Splunk
   DataType = "file-write"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """destinationServiceName=Azure""", """"OperationName":"SecretSet""" ]
+  Conditions = [ """destinationServiceName =Azure""", """"OperationName":"SecretSet""" ]
   Fields = [
    """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}.\d{1,100}Z)""",
    """"ResourceProvider":"({object}[^"]{1,2000})""",

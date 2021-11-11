@@ -8,10 +8,10 @@ Name = appsense-process-alert
     DataType = "process-alert"
     IsHVF = true
     TimeFormat = "MM/dd/yyyy hh:mm:ss a"
-    Conditions = [ """AppSense Application Manager""", """SourceName=""", """Message=""", """EventCode=""" ]
+    Conditions = [ """AppSense Application Manager""", """SourceName =""", """Message=""", """EventCode=""" ]
     Fields = [
       """({time}\d{1,100}/\d{1,100}/\d{1,100} \d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM))""",
-      """ComputerName=({dest_host}[^\s]{1,2000})""",
+      """ComputerName =({dest_host}[^\s]{1,2000})""",
       """Sid=({sid_user}[^\s]{1,2000})""",
       """\s{1,100}Type=({alert_severity}[^\s]{1,2000})""",
       """\'\w+:\\+(?i)users\\+({user}[^\\]{1,2000})""",

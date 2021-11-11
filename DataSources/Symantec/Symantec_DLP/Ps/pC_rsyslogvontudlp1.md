@@ -30,6 +30,6 @@ Name = r-syslog-vontu-dlp-1
     NameTemplate = """Vontu DLP Alert ${alert_name} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="user", Name="windows_id", Fields=["user_email->windows_id"]}
+      {EntityType="user", Name ="windows_id", Fields=["user_email->windows_id"]}
 }
 ```

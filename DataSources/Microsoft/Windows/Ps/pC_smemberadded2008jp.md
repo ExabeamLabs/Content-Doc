@@ -9,7 +9,7 @@ Name = s-member-added-2008-jp
     TimeFormat = "MM/dd/yyyy hh:mm:ss a"
     Conditions = [ """exabeam_raw""", "EventCode=", "セキュリティが有効な" ]
     Fields = [ """exabeam_raw=({time}\d{1,100}/\d{1,100}/\d{1,100} \d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM))""",
-      """ComputerName=({host}[\w.\-]{1,2000})""",
+      """ComputerName =({host}[\w.\-]{1,2000})""",
       """EventCode=({event_code}[\w]{1,2000})""",
       """セキュリティが有効な({group_type}[^\s]{1,2000}) グループにメンバーが追加されました。""",
       """サブジェクト:.+?アカウント名:\s{1,100}({user}[^\s]{1,2000})""",

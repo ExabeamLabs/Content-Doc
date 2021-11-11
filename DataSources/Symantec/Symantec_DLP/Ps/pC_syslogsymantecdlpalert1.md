@@ -42,8 +42,8 @@ syslog-symantec-dlp-alert = {
       NameTemplate = """Vontu DLP Alert ${alert_name} found"""
       ProjectName = "SOC"
       EntityFields = [
-        {EntityType="device", Name="dest_address", Fields=["dest_ip->ip_address","dest_host->host_name"]},
-        {EntityType="user", Name="windows_id", Fields=["user->windows_id"]},
+        {EntityType="device", Name ="dest_address", Fields=["dest_ip->ip_address","dest_host->host_name"]},
+        {EntityType="user", Name ="windows_id", Fields=["user->windows_id"]},
       ]
     }
   },
@@ -56,7 +56,7 @@ syslog-symantec-dlp-alert = {
     Fields = [
       """exabeam_host=({host}[^\s]{1,2000})""",
       """\sEnd_Time="({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-      """\sHost_Name=({host}[^,]{1,2000}?)\s{0,100}(,|$)""",
+      """\sHost_Name =({host}[^,]{1,2000}?)\s{0,100}(,|$)""",
       """\sdest=({dest_host}[^,]{1,2000}?)\s{0,100}(,|$)""",
       """\suser=({user}[^,]{1,2000}?)\s{0,100}(,|$)""",
       """\saction=({action}[^,]{1,2000}?)\s{0,100}(,|$)""",

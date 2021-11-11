@@ -7,7 +7,7 @@ Name = checkpoint-vpn-authentication
   Lms = Direct
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   DataType = "vpn-login"
-  Conditions = [ """ProductName="Connectra""", """ProductFamily="Network"""", """status=""", """vpn_category=""" ]
+  Conditions = [ """ProductName ="Connectra""", """ProductFamily="Network"""", """status=""", """vpn_category=""" ]
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\S+\s({host}\d{1,100}.\d{1,100}.\d{1,100}.\d{1,100})\s""",
     """src="({src_ip}\d{1,100}.\d{1,100}.\d{1,100}.\d{1,100})""",

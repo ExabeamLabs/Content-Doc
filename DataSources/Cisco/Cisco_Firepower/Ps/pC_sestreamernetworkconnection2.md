@@ -8,7 +8,7 @@ Name = s-estreamer-network-connection-2
   DataType = "network-connection"
   IsHVF = true
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
-  Conditions = [ """ FirePower """, """Protocol="""", """AccessControlRuleName="""", """AccessControlRuleAction="""" ]
+  Conditions = [ """ FirePower """, """Protocol="""", """AccessControlRuleName ="""", """AccessControlRuleAction="""" ]
   Fields = [
     """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}Z)\s{1,100}({host}[\w\.-]{1,2000})\s{1,100}FirePower""",
     """\WProtocol(:|=")\s{0,100}({protocol}[^,"]{1,2000})""",

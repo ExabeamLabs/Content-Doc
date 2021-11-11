@@ -7,11 +7,11 @@ Name = cef-duo-app-activity
   Lms = ArcSight
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """ destinationServiceName=DUO """ ]
+  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """ destinationServiceName =DUO """ ]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """"isotimestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """\WdestinationServiceName=(|({app}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\WdestinationServiceName =(|({app}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wcat=({activity}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wduser=(({user_email}[^@\s]{1,2000}@[^\s@]{1,2000})|({user}[^\s]{1,2000}))""",
     """\Wsuser=(|anonymous|({user_fullname}(?!AD Sync:)[^@=]{1,2000}?\s[^@=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",

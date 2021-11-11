@@ -3,7 +3,7 @@
 {
 Name = azure-event-hub-application-gateway-firewall-log
   DataType = "network-connection"
-  Conditions = [""""category":"ApplicationGatewayFirewallLog"""", """destinationServiceName=Azure""" ]
+  Conditions = [""""category":"ApplicationGatewayFirewallLog"""", """destinationServiceName =Azure""" ]
   Fields = ${MSParserTemplates.cef-azure-event-hub.Fields}[
     """"clientIp":"({src_ip}[^"]{1,2000})""",
     """"clientPort":"({src_port}[^"]{1,2000})""",
@@ -31,7 +31,7 @@ cef-azure-event-hub = {
       """\Wact=({activity}[^=]{1,2000})\s{1,100}(\w+=|$)""",
       """([^\|]{0,2000}\|){5}({activity}[^\|]{1,2000})""",
       """\WflexString1=({activity}[^=]{1,2000})\s{1,100}(\w+=|$)""",
-      """\WdestinationServiceName=({app}[^=]{1,2000})\s{1,100}(\w+=|$)""",
+      """\WdestinationServiceName =({app}[^=]{1,2000})\s{1,100}(\w+=|$)""",
       """\Wfname=({object}[^=]{1,2000})\s{1,100}(\w+=|$)""",
       """\Wmsg=({additional_info}[^=]{1,2000})\s{1,100}(\w+=|$)""",
       """\Wduser=(anonymous|({user_email}[^@=]{1,2000}@[^@=]{1,2000}?)|({user}.+?))(\s{1,100}[\S]=|\s{0,100}$)""",

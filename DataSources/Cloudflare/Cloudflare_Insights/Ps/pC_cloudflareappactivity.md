@@ -7,7 +7,7 @@ Name = cloudflare-app-activity
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """CEF:""", """destinationServiceName=cloudflare""", """"when":"""" ]
+  Conditions = [ """CEF:""", """destinationServiceName =cloudflare""", """"when":"""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"when":"({time}[^"]{1,2000})"""",

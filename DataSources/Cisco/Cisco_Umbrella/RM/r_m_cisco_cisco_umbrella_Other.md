@@ -5,9 +5,6 @@ Vendor: Cisco
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  17   |   3    |     0      |      6      |    6    |
+|   8   |   0    |     0      |      3      |    3    |
 
-| Event Type                    | Rules | Models                                                                                                                                                |
-| ----------------------------- | ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| network-connection-successful |       |  • <b>A-NET-OdPort-Outbound</b>: Outbound destination ports per organization<br> • <b>A-NET-HdPort-Outbound</b>: Outbound destination ports per asset |
-| security-alert                |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset                                                                       |
+| Event Type | Rules | Models || ---------- | ----- | ------ |

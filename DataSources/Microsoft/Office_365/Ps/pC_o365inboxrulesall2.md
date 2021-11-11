@@ -21,7 +21,7 @@ Name = o365-inbox-rules-all-2
     """UserId":"(\\.+)?\/({user_fullname}[^,\\"]{1,2000})\\"\s{0,100}on behalf""",
     """UserId":"(\\.+)?\/({user_lastname}[^,]{1,2000}),\s{0,100}({user_firstname}[^\\"]{1,2000})\\"\s{0,100}on behalf""",
     """UserId":"({user_email}[^"\\]{1,2000}@({user_domain}[^"]{1,2000})[^"]{1,2000})"""",   
-    """destinationServiceName=({app}.+?)\s{0,100}filePath"""
+    """destinationServiceName =({app}.+?)\s{0,100}filePath"""
     """({app}Office 365)"""
     """"SubjectOrBodyContainsWords":"({filter_key_words}[^"]{1,2000})"""
   ]

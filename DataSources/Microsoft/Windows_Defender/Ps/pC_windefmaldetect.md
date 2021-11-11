@@ -26,6 +26,6 @@ Name = win-def-mal-detect
     NameTemplate = """Windows Defender ${alert_name} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="user", Name="windows_id", Fields=["user->windows_id"]}
+      {EntityType="user", Name ="windows_id", Fields=["user->windows_id"]}
 }
 ```

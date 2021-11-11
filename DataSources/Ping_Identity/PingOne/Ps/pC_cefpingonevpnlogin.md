@@ -3,7 +3,7 @@
 {
 Name = cef-pingone-vpn-login
   DataType = "vpn-login"
-  Conditions = [ """destinationServiceName=Ping""","""flexString2=Authentication""", """Requested Application Name: VPN""" , """request=Success"""]
+  Conditions = [ """destinationServiceName =Ping""","""flexString2=Authentication""", """Requested Application Name: VPN""" , """request=Success"""]
 }
 cef-ping-events-2 = {
   Vendor = Ping Identity

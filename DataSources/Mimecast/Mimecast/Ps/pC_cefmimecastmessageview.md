@@ -7,7 +7,7 @@ Name = cef-mimecast-message-view
   Lms = ArcSight
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """destinationServiceName=Mimecast Email Security""",""""viewer":"""", """"discoveryCase":""", """"contentViewed":""","""dproc="""]
+  Conditions = [ """destinationServiceName =Mimecast Email Security""",""""viewer":"""", """"discoveryCase":""", """"contentViewed":""","""dproc="""]
   Fields = [
     """"viewed":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d[+-]\d{1,100})"""",
     """exabeam_host=({host}[\w.\-]{1,2000})""",

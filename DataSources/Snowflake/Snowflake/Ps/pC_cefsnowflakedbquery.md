@@ -7,7 +7,7 @@ Name = cef-snowflake-db-query
   Lms = Splunk
   DataType = "database-query"
   TimeFormat = "epoch"
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """ destinationServiceName=Snowflake""", """dproc=QUERY HISTORY""" ]
+  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """ destinationServiceName =Snowflake""", """dproc=QUERY HISTORY""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """end=({time}\d{1,100})""",

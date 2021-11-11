@@ -7,7 +7,7 @@ Name = cef-forcepoint-dlp-email-alert-out
   Lms = ArcSight
   DataType = "dlp-email-alert"
   TimeFormat = "epoch"
-  Conditions = [ "|Forcepoint|Forcepoint DLP|", "sourceServiceName=", "sourceServiceName=SMTP" ]
+  Conditions = [ "|Forcepoint|Forcepoint DLP|", "sourceServiceName =", "sourceServiceName =SMTP" ]
   Fields = [
     """\Wrt=({time}\d{1,100})""",
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
@@ -20,8 +20,8 @@ Name = cef-forcepoint-dlp-email-alert-out
     """\Wfname=\s{0,100}({attachments}.+?)\s{0,100}([\w\.]{1,2000}=|$)"""
     """\Wmsg=\s{0,100}({subject}.+?)(\s{1,100}\-\s|\s{1,100}[\w\.]{1,2000}=|$)""",
     """\Wcat=({alert_name}.+?)(\s\-\s|\s{1,100}[\w\.]{1,2000}=|$)""",
-    """\WsourceServiceName=({alert_type}.+?)\s{1,100}(on |\w+=)""",
-    """\WloginName=(?:N\/A|(({domain}[^\\,]{1,2000})\\+)?({user}[^\\\s,]{1,2000}))(\s\-\s|\s{1,100}[\w\.]{1,2000}=|$)""",
+    """\WsourceServiceName =({alert_type}.+?)\s{1,100}(on |\w+=)""",
+    """\WloginName =(?:N\/A|(({domain}[^\\,]{1,2000})\\+)?({user}[^\\\s,]{1,2000}))(\s\-\s|\s{1,100}[\w\.]{1,2000}=|$)""",
     """\WsourceIp=(?:N\/A|({src_ip}[A-Fa-f:\d.]{1,2000}))""",
     """\WseverityType=({alert_severity}[^\s]{1,2000})""",
     """\WsourceHost=(?:N\/A|({src_host}[\w\-.]{1,2000}))""",

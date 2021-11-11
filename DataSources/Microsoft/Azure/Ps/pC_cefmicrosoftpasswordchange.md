@@ -3,7 +3,7 @@
 {
 Name = cef-microsoft-password-change
   DataType = "password-change"
-  Conditions = [ """CEF:""", """destinationServiceName=Office 365""", """description":"Change password:""" ]
+  Conditions = [ """CEF:""", """destinationServiceName =Office 365""", """description":"Change password:""" ]
   Fields = ${MSParserTemplates.cef-azure-app-activity-1.Fields}[
     """"description":"[^"]{0,2000}?device <b>({src_host}[^"<]{1,2000})""",
   ]
@@ -25,7 +25,7 @@ cef-azure-app-activity-1 = {
     """\Wsuser=(anonymous|Unknown|email|({user_email}[^@=]{1,2000}@({email_domain}[^@=]{1,2000}?))|({user}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Woutcome=({outcome}[^\s]{1,2000})\s{1,100}(\w+=|$)""",
     """CEF:([^\|]{0,2000}\|){2}({app}[^\|]{1,2000})""",
-    """destinationServiceName=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
+    """destinationServiceName =({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """"description":"({additional_info}[^"]{1,2000}?)\s{0,100}"""",
     """"SourceAccountDisplayName","value":"({user_fullname}({user_firstname}[^\s"]{1,2000})\s({user_lastname}[^\s"]{1,2000}))"""",

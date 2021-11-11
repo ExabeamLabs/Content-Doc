@@ -11,7 +11,7 @@ Name = s-member-removed-2008
   Fields = [
     """({event_name}A member was removed from a security-enabled [\w\s]{1,2000} group)""",
     """exabeam_raw=({time}\d\d/\d\d/\d\d\d\d \d\d:\d\d:\d\d (am|AM|pm|PM))""",
-    """ComputerName=({host}[\w.\-]{1,2000})""",
+    """ComputerName =({host}[\w.\-]{1,2000})""",
     """EventCode=({event_code}[\w]{1,2000})""",
     """A member was removed from a security-enabled ({group_type}[^\s]{1,2000}) group""",
     """Subject:.+?Account Name:\s{1,100}({user}[^\s]{1,2000})""",

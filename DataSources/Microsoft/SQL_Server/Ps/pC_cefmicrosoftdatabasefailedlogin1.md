@@ -14,7 +14,7 @@ Name = cef-microsoft-database-failed-login-1
     """Reason:\s{0,100}({reason}[^;\.]{1,2000})""",
     """src=({src_ip}[A-Fa-f:\d\.]{1,2000})""",
     """externalId=({event_code}18456)""",
-    """\ssourceServiceName=({service_name}[^=]{1,2000}?)\s{0,100}\w+=""",
+    """\ssourceServiceName =({service_name}[^=]{1,2000}?)\s{0,100}\w+=""",
     """\Wdvchost=({dest_host}[\w\-.]{1,2000})""",
     """\sahost=({host}[^=]{1,2000}?)(\s{0,100}[\w\.]{1,2000}=)""",
     """\sshost=({src_host}[\w\.\-]{1,200}?)\s{0,100}[\w\-\.]{1,2000}="""

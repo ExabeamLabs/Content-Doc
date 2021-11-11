@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-mcafee-usb-insert-dd
-  Conditions = [ """DeviceClassName="Disk drives""", """InsertionTime="""", """destination="""", """RulesToDisplay="""" ]
+  Conditions = [ """DeviceClassName ="Disk drives""", """InsertionTime="""", """destination="""", """RulesToDisplay="""" ]
 }
 splunk-mcafee-usb-insert-activity = {
       Vendor = McAfee
@@ -15,11 +15,11 @@ splunk-mcafee-usb-insert-activity = {
         """InsertionTime="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
         """RulesToDisplay="({activity}[^"]{1,200})""",
         """IP="({dest_ip}[A-Fa-f.\d:]{1,200})""",
-        """\sName="({dest_host}[^"]{1,200})""",
+        """\sName ="({dest_host}[^"]{1,200})""",
         """Username_NTLM="((({domain}[^\\]{1,200})\\)?({user}[^"]{1,200}))""",
         """USBVendorId="(\s{0,100}|({device_id}[^"]{1,200}))"""",
-        """DeviceName="({device_type}[^"]{1,200})""",
-        """\sFileName="({file_name}[^"]{1,2000})""",
+        """DeviceName ="({device_type}[^"]{1,200})""",
+        """\sFileName ="({file_name}[^"]{1,2000})""",
         """({action}Block)""",
         """TotalContentSize="({bytes}\d{1,200})""" 
 
@@ -53,9 +53,9 @@ McAfeeParsers = [
       NameTemplate = """McAfee EPO Alert ${alert_name} found"""
       ProjectName = "SOC"
       EntityFields = [
-        {EntityType="device", Name="src_address", Fields=["src_host->host_name"]},
-        {EntityType="user", Name="windows_id", Fields=["user->windows_id"]},
-        {EntityType="file", Name="file_name", Fields=["malware_file_name->file_name"]}
+        {EntityType="device", Name ="src_address", Fields=["src_host->host_name"]},
+        {EntityType="user", Name ="windows_id", Fields=["user->windows_id"]},
+        {EntityType="file", Name ="file_name", Fields=["malware_file_name->file_name"]}
       ]
     }
   }, 
@@ -79,9 +79,9 @@ McAfeeParsers = [
       NameTemplate = """McAfee EPO Alert ${alert_name} found"""
       ProjectName = "SOC"
       EntityFields = [
-        {EntityType="device", Name="src_address", Fields=["src_host->host_name"]},
-        {EntityType="user", Name="windows_id", Fields=["user->windows_id"]},
-        {EntityType="file", Name="file_name", Fields=["malware_file_name->file_name"]}
+        {EntityType="device", Name ="src_address", Fields=["src_host->host_name"]},
+        {EntityType="user", Name ="windows_id", Fields=["user->windows_id"]},
+        {EntityType="file", Name ="file_name", Fields=["malware_file_name->file_name"]}
       ]
     }
   },
@@ -105,9 +105,9 @@ McAfeeParsers = [
       NameTemplate = """McAfee EPO Alert ${alert_name} found"""
       ProjectName = "SOC"
       EntityFields = [
-        {EntityType="device", Name="src_address", Fields=["src_host->host_name"]},
-        {EntityType="user", Name="windows_id", Fields=["user->windows_id"]},
-        {EntityType="file", Name="file_name", Fields=["malware_file_name->file_name"]}
+        {EntityType="device", Name ="src_address", Fields=["src_host->host_name"]},
+        {EntityType="user", Name ="windows_id", Fields=["user->windows_id"]},
+        {EntityType="file", Name ="file_name", Fields=["malware_file_name->file_name"]}
       ]
     }
   }, 

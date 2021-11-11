@@ -27,6 +27,6 @@ Name = cef-carbonblack-alert-1
       NameTemplate = """Carbon Black Alert ${alert_name} found"""
       ProjectName = "SOC"
       EntityFields = [
-        {EntityType="device", Name="src_address", Fields=["src_host->host_name"]}
+        {EntityType="device", Name ="src_address", Fields=["src_host->host_name"]}
 }
 ```

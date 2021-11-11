@@ -7,7 +7,7 @@ Name = egnyte-app-login
   Lms = ArcSight
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ """|Skyformation|""", """|login-success|""", """destinationServiceName=Egnyte""", """CEF:""", """sk4-login-success""", """"event":"Login""""]
+  Conditions = [ """|Skyformation|""", """|login-success|""", """destinationServiceName =Egnyte""", """CEF:""", """sk4-login-success""", """"event":"Login""""]
   Fields = [
     """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
     """"time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)Z"""",
@@ -16,7 +16,7 @@ Name = egnyte-app-login
     """dproc=({dproc}[^=]{1,2000})\s\w+=""",
     """src=({src_ip}[a-fA-F\d:.]{1,2000})""",
     """suser=({user_email}[^@]{1,2000}@({email_domain}[^\s]{1,2000}))\s\w+=""",
-    """destinationServiceName=({event_subtype}[^=]{1,2000})\s\w+=""",
+    """destinationServiceName =({event_subtype}[^=]{1,2000})\s\w+=""",
     """dtz=({dtz}[^=]{1,2000})\s\w+=""",
     """([^\|]{0,2000}\|){5}({activity}[^\|]{1,2000})\|""",
     """"username":"({user_fullname}[^\(]{1,2000})\s\(\s{0,100}({user_email}[^@]{1,2000}@({email_domain}[^\s\)]{1,2000}))\s{0,100}\)"""",	

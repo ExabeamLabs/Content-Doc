@@ -7,7 +7,7 @@ Name = cef-cybereason-security-alert
   Lms = ArcSight
   DataType = "alert"
   TimeFormat = "epoch"
-  Conditions = [ """destinationServiceName=Cybereason""", """security-threat-detected""" ]
+  Conditions = [ """destinationServiceName =Cybereason""", """security-threat-detected""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """\Wact=(|({action}[^=]{1,2000}]?))(\s{1,100}\w+=|\s{0,100}$)""",

@@ -17,7 +17,7 @@ Name = sophos-proxy
 		"""\ss=({result_code}\d{1,100})""",
 		"""\su="(-|(({domain}[^\\]{1,2000})\\+)?({user}[^"]{1,2000}))""",
 		"""\sact=(-|({action}.+?))\s{1,100}(\w+=|$)""",
-	        """exabeam_qidName=({proxy_action}.+?)\s{1,100}exabeam_""",
+	        """exabeam_qidName =({proxy_action}.+?)\s{1,100}exabeam_""",
 		"""\smeth="{0,20}(-|({method}[^"\s]{1,2000}))""",
 		"""\sout=(-|({bytes_out}\d{1,100}))""",
 		"""\sin=(-|({bytes_in}\d{1,100}))""",

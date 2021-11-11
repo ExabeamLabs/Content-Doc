@@ -11,7 +11,7 @@ Name = huawei-vpn-login-1
   Fields = [
      """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}(\+|\-)\d\d:\d\d),\S+\s{1,100}({host}[\w\.\-]{1,2000})""",
      """: User logon ({outcome}succeeded)""",
-     """User Name=(?!\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(?:unknown|({user_email}[^@,]{1,2000}@[^@,]{1,2000})|({user}[^,]{1,2000})),""",
+     """User Name =(?!\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(?:unknown|({user_email}[^@,]{1,2000}@[^@,]{1,2000})|({user}[^,]{1,2000})),""",
      """Source IP=({src_ip}[a-fA-F\d.:]{1,2000})""",
   ]
   DupFields = ["user->account"]

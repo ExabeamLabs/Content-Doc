@@ -26,7 +26,7 @@ Name = cef-trendmicro-security-alert-4
     """\Wsmac=({src_mac}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\WmalType=((?i)(OTHERS)|({alert_type}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\WmalType=((?i)(OTHERS)|({alert_name}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-    """\WruleName=({alert_name}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\WruleName =({alert_name}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\WcompressedFileHash=({md5}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\WhostSeverity=({alert_severity}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\WpeerIp=({src_ip}.+?)(\s{1,100}\w+=|\s{0,100}$)""",

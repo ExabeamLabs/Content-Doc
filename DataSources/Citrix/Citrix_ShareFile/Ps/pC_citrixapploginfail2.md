@@ -23,7 +23,7 @@ citrix-app-activity = {
       """src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """"{1,20}EventID"{1,20}:"{1,20}({event_code}[^"]{1,2000})"{1,20}""",
       """act=({action}.+?)\s{0,100}\w+=""",
-      """destinationServiceName=({app}.+?)\s{0,100}\w+=""",
+      """destinationServiceName =({app}.+?)\s{0,100}\w+=""",
       """msg=({additional_info}.+?)\s{0,100}\w+=""",
       """filePermission=({file_permissions}.+?)\s{0,100}\w+=""",
       """"Location"{1,20}:"{1,20}(-|({country_code}[^,]{1,2000})),""",

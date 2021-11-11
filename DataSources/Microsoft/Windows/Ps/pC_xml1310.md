@@ -9,7 +9,7 @@ Name = xml-1310
  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSSZ"
  Conditions = [ """<EventID Qualifiers='16640'>1310<""", """Failed NTLM Authentication"""]
  Fields = [
-   """<Provider Name='({provider_name}[^']{1,2000})""",
+   """<Provider Name ='({provider_name}[^']{1,2000})""",
    """<EventID Qualifiers='16640'>({event_code}[^<]{1,2000})""",
    """<Keywords>({outcome}[^<]{1,2000})""",
    """<TimeCreated SystemTime='({time}.+?)'""",

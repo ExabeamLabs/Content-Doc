@@ -14,7 +14,7 @@ Name = q-zscaler-web-activity
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """src=({src_ip}[a-fA-F\d:\.]{1,2000})""",
     """dst=(0\.0\.0\.0|({dest_ip}[a-fA-F\d:\.]{1,2000}))""",
-    """usrName=({user_email}[^\s@]{1,2000}@[^=\|]{1,2000}?)\s{0,100}(\w+=|\|)""",
+    """usrName =({user_email}[^\s@]{1,2000}@[^=\|]{1,2000}?)\s{0,100}(\w+=|\|)""",
     """cat=({action}[^\s\|]{1,2000})""",
     """policy=({proxy_action}[^=\|]{1,2000}?)\s{0,100}(\w+=|$|\|)""",
     """urlcategory=({categories}({category}[^=\|]{1,2000}?))\s{0,100}(\w+=|$|\|)""",

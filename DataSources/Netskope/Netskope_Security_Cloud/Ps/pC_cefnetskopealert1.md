@@ -7,7 +7,7 @@ Name = cef-netskope-alert-1
   Lms = Direct
   DataType = "alert"
   TimeFormat = "epoch_sec"
-  Conditions = [ """destinationServiceName=Netskope""", """"alert":"yes"""" ]
+  Conditions = [ """destinationServiceName =Netskope""", """"alert":"yes"""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """"_insertion_epoch_timestamp"{1,10}:({time}\d{1,100})""",

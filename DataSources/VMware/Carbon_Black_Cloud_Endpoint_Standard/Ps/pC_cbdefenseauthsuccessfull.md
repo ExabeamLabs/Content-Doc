@@ -7,7 +7,7 @@ Name = cb-defense-auth-successfull
   Lms = Direct
   DataType = "authentication-successful"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """destinationServiceName=CB Defense""", """"loginName":""", """Logged in successfully""" ]
+  Conditions = [ """destinationServiceName =CB Defense""", """"loginName":""", """Logged in successfully""" ]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",

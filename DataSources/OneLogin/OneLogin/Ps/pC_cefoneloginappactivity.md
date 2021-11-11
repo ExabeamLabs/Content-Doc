@@ -12,7 +12,7 @@ Name = cef-onelogin-app-activity
     """"created_at":\s{0,100}"({time}\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z)""",
     """CEF:([^\|]{0,2000}\|){5}({activity}[^\|]{1,2000})""",
     """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[^\s]{1,2000})""",
-    """\WdestinationServiceName=({app}\w+)""",
+    """\WdestinationServiceName =({app}\w+)""",
     """"app_name":\s{0,100}"\s{0,100}({app}([^\\"]|(\\\\)*\\"|\\\\)+?)\s{0,100}"""",
     """"event_type_id":\s{0,100}({activity_code}\d{1,100})""",
     """"user_name":\s{0,100}"\s{0,100}({user_fullname}([^\\"]|(\\\\)*\\"|\\\\)+?)\s{0,100}"""",

@@ -7,7 +7,7 @@ Name = cef-cloudflare-net-connection
   Lms = Direct
   DataType = "network-connection"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """CEF:""", """|Skyformation|""", """requestClientApplication=""", """destinationServiceName=Cloudflare""", """dproc=Firewall""" , """cat=network-traffic"""]
+  Conditions = [ """CEF:""", """|Skyformation|""", """requestClientApplication=""", """destinationServiceName =Cloudflare""", """dproc=Firewall""" , """cat=network-traffic"""]
   Fields = [
     """ext__occurred_at_=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
     """ext_action=({activity}[^\s]{1,2000})\s""",
@@ -30,7 +30,7 @@ Name = cef-cloudflare-net-connection
     """ext_method=({method}[^\s]{1,2000})""",
     """cat=({category}[^\s]{1,2000})\s""",
     """cn2=({bytes}[^\s]{1,2000})\s""",
-    """destinationServiceName=({dest_host}[^\s]{1,2000})\s"""
+    """destinationServiceName =({dest_host}[^\s]{1,2000})\s"""
  ]
 }
 }

@@ -17,7 +17,7 @@ Name = q-pan-leef-alert
     """Severity=({alert_severity}\d{1,100})""",
     """Severity=({alert_severity}[^\|]{1,2000})\|""",
     """(URLCategory|Severity)=({alert_severity}benign|informational)""",
-    """usrName=(({domain}[^\\]{1,2000})\\)?(|({user}[^\|]{1,2000}))\|(SerialNumber|SourceUser)""",
+    """usrName =(({domain}[^\\]{1,2000})\\)?(|({user}[^\|]{1,2000}))\|(SerialNumber|SourceUser)""",
     """DestinationUser=(?:[^\\/]{1,2000}[\\/])?({user}[^|]{1,2000})\|Application=""",
     """\|src=({src_ip}[^|]{1,2000})\|dst=({dest_ip}[^|]{1,2000})\|""",
     """SessionID=({alert_id}[^|]{1,2000})\|""",
@@ -32,6 +32,6 @@ Name = q-pan-leef-alert
     NameTemplate = """Palo Alto Alert ${alert_name} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="device", Name="src_address", Fields=["src_ip->ip_address"]}
+      {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address"]}
 }
 ```

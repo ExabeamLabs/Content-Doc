@@ -14,7 +14,7 @@ Name = cef-carbonblack-alert-2
     """\Wmsg=(|({alert_type}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wsuser=(|({user}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]{1,2000})""",
-    """\WdeviceProcessName=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """\WdeviceProcessName =({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\Wshost=(|({src_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wrequest=(|({malware_url}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\WrequestUrlPort=({dest_port}\d{1,100})""",

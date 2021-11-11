@@ -8,9 +8,9 @@ Name = l-sysmon-process-created
   DataType = "process-created"
   IsHVF = true
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
-  Conditions = [ """<Provider Name='Microsoft-Windows-Sysmon'""", """<EventID>1</EventID>""" ]
+  Conditions = [ """<Provider Name ='Microsoft-Windows-Sysmon'""", """<EventID>1</EventID>""" ]
   Fields = [
-    """<Provider Name='Microsoft-Windows-Sysmon' Guid='\{({process_guid}[^}]{1,2000}?)\}""",
+    """<Provider Name ='Microsoft-Windows-Sysmon' Guid='\{({process_guid}[^}]{1,2000}?)\}""",
     """<EventID>({event_code}\d{1,100})</EventID>""",
     """<Task>({activity}.*?)</Task>""",
     """<Execution ProcessID='({pid}\d{1,100})""",

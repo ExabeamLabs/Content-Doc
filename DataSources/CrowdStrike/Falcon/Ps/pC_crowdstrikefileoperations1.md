@@ -20,7 +20,7 @@ cef-crowdstrike-app-activity-temp = {
     """"timestamp":\s{0,100}"{0,20}({time}\d{1,100})"""",
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """"UserIp":\s{0,100}"({src_ip}[^"]{1,2000})""",
-    """\WdestinationServiceName=({app}.+?)\s{1,100}\w+="""
+    """\WdestinationServiceName =({app}.+?)\s{1,100}\w+="""
     """"event_simpleName":"({event_code}[^"]{1,2000})""",
     """"aid":"({aid}[^"]{1,2000})""",
     """"(ImageFileName|TargetFileName)":"({file_path}[^"]{1,2000})""",

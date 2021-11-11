@@ -9,7 +9,7 @@ Name = q-xgs-network-alert
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ """|IBM|ISNP|""", """|cat=""" ]
   Fields = [
-    """(\||\W)SensorName=(.+?@\s{0,100})?({host}[^\s]{1,2000})\s{0,100}(\w+=|$)""",
+    """(\||\W)SensorName =(.+?@\s{0,100})?({host}[^\s]{1,2000})\s{0,100}(\w+=|$)""",
     """\W({host}[\w\-\.]{1,2000})\s{0,100}LEEF:""",
     """(\||\W)devTime=({time}\w{3} \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
     """(\||\W)src=({src_ip}[\da-fA-F\.:]{1,2000})\s{1,100}""",

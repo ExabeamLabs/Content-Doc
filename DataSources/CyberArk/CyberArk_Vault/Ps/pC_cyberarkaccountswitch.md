@@ -14,7 +14,7 @@ Name = cyberark-account-switch
     """(\d\d:\d\d:\d\d|\d\d\d\d-\d\d-\d\d\w\d\d:\d\d:\d\d\w) ({host}[\w\-.]{1,2000}) (LEEF|CEF)""",
     """(LEEF|CEF):([^\|]{0,2000}?\|){4}({event_code}\d{1,100})""",
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
-    """usrName=(({domain}[^\\=]{1,2000})(\\)+)?({user}.+?)\s{1,100}\w+=""",
+    """usrName =(({domain}[^\\=]{1,2000})(\\)+)?({user}.+?)\s{1,100}\w+=""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sFile=({account}.+?)\s{1,100}\w+=""",
     """\sFile=[^=]{1,2000}\-({account}[^\s-]{1,2000})\s{1,100}\w+=""",

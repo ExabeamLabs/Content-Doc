@@ -13,7 +13,7 @@ Name = cisco-ise-nac-ssh-login
     """dvchost=({host}[^\s]{1,2000})""",
     """({event_name}A SSH CLI user has successfully logged in)""",
     """Cisco ISE\|*({event_code}\d{1,100})\|""",
-    """destinationServiceName=({app}[^\s]{1,2000})""",
+    """destinationServiceName =({app}[^\s]{1,2000})""",
     """cat=({category}[^\s]{1,2000})\s""",
     """deviceSeverity=({severity}[^\s]{1,2000})""",
     """({outcome}Success)""",

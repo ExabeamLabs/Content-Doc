@@ -24,7 +24,7 @@ cef-unix-template-1 = {
       """\ssuid=({user_id}\d{1,100})""",
       """auid=({account_id}\d{1,100})""",
       """cat=({activity}[^\|\s]{1,2000})""",
-      """destinationServiceName=({service_name}[^\s]{1,2000})""",
+      """destinationServiceName =({service_name}[^\s]{1,2000})""",
       """\WeventId=({log_id}\d{1,100})"""
       """\Wcs4=({pid}\d{1,100})""",
       """\sdproc=({process}({directory}[^\s]{0,2000}?[\\\/]{1,2000})?({process_name}[^\s\\\/]{1,2000}))\s{1,100}\w+=""",

@@ -38,7 +38,7 @@ leef-checkpoint-firewall = {
     """\Wdst_machine_name=({dest_host}[^@=]{1,2000}?)(@({domain}.+?))?(\s{1,100}\w+:?=|\s{0,100}$)""",
     """\Wdst_user_name=({user_fullname}.+?)\s{0,100}\(\s{0,100}({user}.+?)\s{0,100}\)""",
     """\Wsrc_user_name=({user_fullname}.+?)\s{0,100}\(\s{0,100}({user}.+?)\s{0,100}\)""",
-    """\WusrName=({user_fullname}.+?)\s{0,100}\(\s{0,100}({user}.+?)\s{0,100}\)""",
+    """\WusrName =({user_fullname}.+?)\s{0,100}\(\s{0,100}({user}.+?)\s{0,100}\)""",
     """LEEF:([^\|]{0,2000}\|){2}({product_name}[^\|]{1,2000})\|[^\|]{0,2000}\|({action}[^\|]{1,2000})""",
     """\Wrule_action=({outcome}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]}

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-netskope-alert-policy
-  Conditions = [ """"alert_type":"policy"""", """destinationServiceName=Netskope""", """"alert":"yes"""" ]
+  Conditions = [ """"alert_type":"policy"""", """destinationServiceName =Netskope""", """"alert":"yes"""" ]
   Fields = ${NetskopeParserTemplates.cef-netskope-alert.Fields}[
     """exabeam_host=({host}[^\s]{1,2000})""",
     """"srcip":"({src_translated_ip}[A-Fa-f:\d.]{1,2000})""",
@@ -40,7 +40,7 @@ cef-netskope-alert = {
     NameTemplate = """Netskope Alert ${alert_name} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="device", Name="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]},
-      {EntityType="user", Name="windows_id", Fields=["user->windows_id"]},
+      {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]},
+      {EntityType="user", Name ="windows_id", Fields=["user->windows_id"]},
     ]}
 ```

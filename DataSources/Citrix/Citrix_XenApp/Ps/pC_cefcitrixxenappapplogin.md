@@ -19,7 +19,7 @@ Name = cef-citrix-xenapp-app-login
     """\sexternalId=({alert_id}.+?)\s{1,100}\w+=""",
     """\ssuser=({user}.+?)\s{1,100}\w+=""",
     """\|Citrix\|({app}[^\|]{1,2000})\|""",
-    """\ssourceServiceName=({app}.+?)\s{1,100}\w+=""",
+    """\ssourceServiceName =({app}.+?)\s{1,100}\w+=""",
     """\ssuid=({user_fullname}.+?)\s{1,100}\w+=""",
     """\scs4=({os}.+?)\s{1,100}\w+="""
   ]

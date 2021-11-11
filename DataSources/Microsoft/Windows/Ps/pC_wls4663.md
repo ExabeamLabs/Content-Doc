@@ -15,12 +15,12 @@ Name = wls-4663
     """"({time}\d\d\d\d\-\d{1,100}\-\d{1,100}T\d\d:\d\d:\d\d)""",
     """EventID="{1,20}({event_code}[^"]{1,2000})"""",
     """EventRecordID="{1,20}({record_id}[^"]{1,2000})"""",
-    """SubjectUserName="{1,20}({user}[^"]{1,2000})"""",
+    """SubjectUserName ="{1,20}({user}[^"]{1,2000})"""",
     """SubjectUserSid="{1,20}({user_sid}[^"]{1,2000})"""",
-    """SubjectDomainName="{1,20}({domain}[^"]{1,2000})"""",
+    """SubjectDomainName ="{1,20}({domain}[^"]{1,2000})"""",
     """SubjectLogonId="{1,20}({logon_id}[^"]{1,2000})"""",
     """ObjectType="{1,20}({file_type}[^"]{1,2000})""",
-    """ObjectName="{1,20}({file_path}[^"]{1,2000})""",
-    """ObjectName="{1,20}.*\\({file_name}(?:[^\\:]{1,2000}(?=\.))({file_ext}\.[^\\:]{1,2000})?|[^\\:]{1,2000})"{1,20}
+    """ObjectName ="{1,20}({file_path}[^"]{1,2000})""",
+    """ObjectName ="{1,20}.*\\({file_name}(?:[^\\:]{1,2000}(?=\.))({file_ext}\.[^\\:]{1,2000})?|[^\\:]{1,2000})"{1,20}
 }
 ```

@@ -16,7 +16,7 @@ Name = o365-inbox-rules-forward-to
     """({activity}ForwardTo)"""",
     """msg=({additional_info}.+?)\srequest=""",
     """UserId":"({user_email}[^"\\]{1,2000}@({user_domain}[^"]{1,2000}))""",
-    """destinationServiceName=({app}.+?)\s(device|filePath)""",
+    """destinationServiceName =({app}.+?)\s(device|filePath)""",
     """({app}Office 365)"""
     """"SubjectOrBodyContainsWords":"({filter_key_words}[^"]{1,2000})"""
   ]

@@ -7,7 +7,7 @@ Name = cef-forcepoint-dlp-alert-2
   Lms = Splunk
   DataType = "dlp-alert"
   TimeFormat = "epoch"
-  Conditions = [ """CEF:""", """|Forcepoint CASB|""", """sourceServiceName=""" ]
+  Conditions = [ """CEF:""", """|Forcepoint CASB|""", """sourceServiceName =""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """CEF:([^\|]{0,2000}\|){2}({alert_type}[^\|]{1,2000})\|[^\|]{0,2000}\|({alert_id}[^\|]{1,2000})\|[^\|]{0,2000}\|({alert_severity}[^\|]{1,2000})\|""",

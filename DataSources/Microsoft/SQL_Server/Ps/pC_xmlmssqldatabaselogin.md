@@ -8,10 +8,10 @@ Name = xml-mssql-database-login
   DataType = "database-login"
   IsHVF = true
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ """<Event xmlns=""", """<Provider Name='MSSQL""", """<Keyword>Audit """ ]
+  Conditions = [ """<Event xmlns=""", """<Provider Name ='MSSQL""", """<Keyword>Audit """ ]
   Fields = [
     """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """<Provider Name='({database_name}[^']{1,2000})'""",
+    """<Provider Name ='({database_name}[^']{1,2000})'""",
     """<Computer>({host}.+?)<\/Computer>""",
     """<EventData><Data>(({domain}[^\\\/<>]{1,2000}?)[\\\/]{1,2000})?({user}[^\\\/]{1,2000}?)</Data>""",
     """<Data>\s{0,100}\[CLIENT:\s{0,100}({src_ip}[a-fA-F\d.:]{1,2000})""",

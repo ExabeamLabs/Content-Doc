@@ -7,7 +7,7 @@ Name = cef-skyformation-gmail-in
   Lms = Direct
   DataType = "dlp-email-alert"
   TimeFormat = "epoch"
-  Conditions = [ """destinationServiceName=Google Apps""", """act=receive""", """dproc=Gmail""" ]
+  Conditions = [ """destinationServiceName =Google Apps""", """act=receive""", """dproc=Gmail""" ]
   Fields = [
     """"timestamp_usec":({time}\d{1,100})""",
     """\d\d\d\d-\d\d-\d\d-\d{1,100}:\w{3}\s\d\d\s\d\d:\d\d:\d\d\s{0,100}[^\s]{1,2000}\sSkyformation""", 

@@ -13,7 +13,7 @@ Name = s-liebsoft-account-switch
         """dtPostTime="({time}\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})""",
         """sEventID="({event_code}[^"]{1,2000})""",
         """sIpAddress="({src_ip}[a-fA-F\d.:]{1,2000})""",
-        """sLoginName="(({domain}[^"\\]{1,2000})\\+)?({user}[^"]{1,2000})""",
+        """sLoginName ="(({domain}[^"\\]{1,2000})\\+)?({user}[^"]{1,2000})""",
         """key="sNamespace"\s{1,100}value="({safe_value}[^"]{1,2000})""",
         """key="sSystemName"\s{1,100}value="({dest_service}[^"]{1,2000})""",
         """key="sAccountName"\s{1,100}value="({account}[^"]{1,2000})""",
