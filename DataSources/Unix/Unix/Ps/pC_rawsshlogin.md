@@ -10,12 +10,12 @@ Name = raw-ssh-login
   Conditions = [ """ ssh2""", """Accepted """, """ for """, """ from """ ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=(gcs-topic|([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}(({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})|({dest_host}[^\s]{1,2000}))))""",
+    """exabeam_host=(gcs-topic|([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^\s]{1,2000}))))""",
     """"host":"(::ffff:)?({dest_host}({host}[^"]{1,2000}))""""
     """"host":\{"name":"(::ffff:)?({dest_host}({host}[^"]{1,2000}))""""
     """<({time}\d\d\d\d\s{1,100}\w{3}\s{1,100}\d\d\s{1,100}\d\d:\d\d:\d\d)\s""",
     """\d\d:\d\d:\d\d \d\d\d\d (::ffff:)?({host}({dest_host}[^\s]{1,2000}))""",
-    """\s(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\.-]{1,2000})):?\s{1,100}sshd\[""",
+    """\s(::ffff:)?({host}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\.-]{1,2000})):?\s{1,100}sshd\[""",
     """\d{2}:\d{2}:\d{2}\s{1,100}(::ffff:)?({dest_host}[\w\.-]{1,2000})\s{1,100}auth\|""",
     """Accepted ({auth}\S{1,2000}) for (({domain}[^\\:]{1,2000})\\+)?({user}[\w.'\-\\$]{1,2000})(\s|$)""",
     """Accepted ({auth}\S{1,2000}) for (({user}[^\s@]{1,2000}?)@({domain}[^\s]{1,2000}))""",

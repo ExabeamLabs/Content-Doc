@@ -10,7 +10,8 @@ Name = s-sendmail-email-from
   Conditions = [ """ msgid=""", """ from=""", """ nrcpts=""" ]
   Fields = [
     """exabeam_host=(::ffff:)?({host}[\w.\-]{1,2000})""",
-    """sendmail\S*:\s{1,100}({alert_id}\S+?):\s""",
+    """\w{3}\s\d\d\s\d\d:\d\d:\d\d\s(::ffff:)?(Message|({host}[\w\-.]{1,2000}))\s""",
+    """sendmail\S{0,2000}:\s{1,100}({alert_id}\S{1,2000}?):\s""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\s{1,100}from=<?({sender}[^@=<>,]{1,2000}@[^\s@=<>,]{1,2000})""",
     """\ssize=({bytes}\d{1,100})""",
