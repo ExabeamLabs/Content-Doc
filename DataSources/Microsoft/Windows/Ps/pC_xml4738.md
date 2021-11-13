@@ -25,6 +25,7 @@ Name = xml-4738
     """Changed Attributes:\s{0,100}(|({attribute}[^:]{1,2000}?))\s{1,100}SAM Account Name:""",
     """User Account Control:\s{0,100}({uac_status}[^:]{1,2000}?)\s{0,100}User Parameters:"""
   ]
-}
+
+
 }
 ```

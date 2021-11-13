@@ -23,6 +23,7 @@ Name = q-snort-alert
      """dst=({dest_ip}[A-Fa-f\d\.\:]{1,100})""",
      """\[Impact:\s{0,100}(Unknown|({impact}[^\]]{1,2000}))""",
   ]
-}
+
+
 }
 ```

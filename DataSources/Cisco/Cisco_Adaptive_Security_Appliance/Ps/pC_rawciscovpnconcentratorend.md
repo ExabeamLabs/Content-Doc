@@ -14,6 +14,7 @@ Name = raw-cisco-vpnconcentrator-end
     """RPT=\d{1,100}\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """User\s{1,100}\[({user}[^\]]{1,2000})"""
   ]
-}
+
+
 }
 ```

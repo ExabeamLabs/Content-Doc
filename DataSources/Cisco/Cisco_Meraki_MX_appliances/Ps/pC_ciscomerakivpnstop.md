@@ -15,6 +15,7 @@ Name = cisco-meraki-vpn-stop
       """local ip ({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """connected from ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
    ]
-  }
+  
+
 }
 ```

@@ -3,7 +3,7 @@
 {
 Name = cef-mcafee-skyhigh-app-activity-7
     Conditions = [ """|McAfee (Skyhigh)|Dashboard Audit Logs|""", """User deleted""" ]
-  }
+  
 cef-mcafee-skyhigh-activity = {
     Vendor = McAfee
     Product = Skyhigh Networks CASB
@@ -22,5 +22,6 @@ cef-mcafee-skyhigh-activity = {
       """\WuserInfoEmail=(|({user_email}[^@]{1,2000}({email_domain}.+?)))(\s{1,100}\w+=|\s{0,100}$)""",
       """\WuserInfoFirstName =(|({user_firstname}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
       """\WuserInfoLastName =(|({user_lastname}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-    ]}
+    
+}
 ```

@@ -20,6 +20,7 @@ Name = n-forwarded-cef-damballa-alert
     """\snitroObject_Type=({alert_type}.+?)\s{1,100}\w+=""",
     """\snitroURL=({additional_info}.+?)\s{1,100}\w+="""
   ]
-}
+
+
 }
 ```

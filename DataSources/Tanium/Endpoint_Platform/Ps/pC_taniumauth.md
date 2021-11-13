@@ -20,6 +20,7 @@ Name = tanium-auth
       """\sProcess="(-|({process}({directory}[^"]{0,2000}?[\\\/]{1,2000})?({process_name}[^"\\\/]{1,2000})))"""",
       """\sSource-IP-Address="(::1|({src_ip}[a-fA-F\d.:]{1,2000}))"""",
     ]
-  }
+  
+
 }
 ```

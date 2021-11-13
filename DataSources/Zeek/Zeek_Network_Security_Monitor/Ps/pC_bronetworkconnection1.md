@@ -11,7 +11,7 @@ Name = bro-network-connection-1
     """"mbps":\s{0,100}({mbps}[\d\.]{1,2000})""",
     """"age_of_conn":\s{0,100}({age_of_conn}[\d\.]{1,2000})""",
   ]
-}
+
 json-bro-activity = {
   Vendor = Zeek
   Lms = Direct
@@ -26,5 +26,6 @@ json-bro-activity = {
     """"id\.resp_h\\?"{1,20}:\\?"{1,20}({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """"id\.resp_p\\?"{1,20}:({dest_port}\d{1,100})""",
     """"proto\\?"{1,20}:\\?"{1,20}({protocol}[^"]{1,2000})""",
-  ]}
+  
+}
 ```

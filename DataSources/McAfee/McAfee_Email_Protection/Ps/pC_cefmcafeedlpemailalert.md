@@ -26,6 +26,7 @@ Name = cef-mcafee-dlp-email-alert
     """\Wnumber-attachment\(s\)='({num_attachments}\d{1,100})""", 
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

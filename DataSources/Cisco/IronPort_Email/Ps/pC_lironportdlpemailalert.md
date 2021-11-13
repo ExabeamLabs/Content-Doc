@@ -17,6 +17,7 @@ Name = l-ironport-dlp-email-alert
     """RemoteIP=({dest_ip}[A-Fa-f.:\d]{1,2000})""",
     """MID ({alert_id}\d{1,100})"""
   ]
-}
+
+
 }
 ```

@@ -25,6 +25,7 @@ Name = juniper-network-alert-1
     """\susername="(N\/A|({user}[^"]{1,2000}))"""",
     """\srulebase-name="({alert_type}[^"]{1,2000})"""
   ]
-}
+
+
 }
 ```

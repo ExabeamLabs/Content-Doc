@@ -9,7 +9,7 @@ Name = win-enable-device-request
     """>({event_code}6421)<\/EventID>"""
     """({event_name}A request was made to enable a device.)"""
   ]
-}
+
 d-xml-windows-device = {
   Vendor = Microsoft
   Product = Windows
@@ -26,5 +26,6 @@ d-xml-windows-device = {
     """Account Domain:\s{1,100}(-\s{0,100}|({domain}[^:]{1,2000}?)\s{1,100})Logon ID:"""    
     """Location Information:\s{1,100}(|-|({additional_info}[^\s]{0,2000}?))(\s{1,100}|\s{0,100}")"""  
     """Class Name:\s{1,100}({device_type}[^:]{1,2000}?)\s{1,100}(Vendor IDs:|Hardware IDs:)"""   
-  ]}
+  
+}
 ```

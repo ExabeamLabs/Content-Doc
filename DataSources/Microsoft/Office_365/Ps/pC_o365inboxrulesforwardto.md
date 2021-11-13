@@ -21,6 +21,7 @@ Name = o365-inbox-rules-forward-to
     """"SubjectOrBodyContainsWords":"({filter_key_words}[^"]{1,2000})"""
   ]
   DupFields = ["user_domain->email_domain"]
-}
+
+
 }
 ```

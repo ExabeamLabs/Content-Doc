@@ -10,7 +10,7 @@ Name = cef-unix-crypto-1
     """spt=({src_port}\d{1,100})""",
     """dpt=({dest_port}\d{1,100})"""
     ]
-}
+
 cef-unix-template-1 = {
     Vendor = Unix
     Product = Unix Auditd
@@ -36,5 +36,6 @@ cef-unix-template-1 = {
       """\sduser=(\(unknown\)|({user}.+?))\s{1,100}\w+=""",
       """dhost=({dest_host}[^\s]{1,2000})""",
       """shost=({src_host}[^\s]{1,2000})"""
-      ]}
+      
+}
 ```

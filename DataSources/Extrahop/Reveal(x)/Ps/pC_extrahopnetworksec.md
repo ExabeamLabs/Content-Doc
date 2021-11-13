@@ -22,6 +22,7 @@ Name = extrahop-network-sec
      """"riskScore":(null|({alert_severity}\d{1,100}))""",
 ]
   DupFields = ["alert_name->alert_type"]
-}
+
+
 }
 ```

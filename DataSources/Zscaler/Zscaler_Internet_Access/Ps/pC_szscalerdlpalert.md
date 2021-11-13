@@ -24,6 +24,7 @@ Name = s-zscaler-dlp-alert
     """\surl=({target}.+?)\s{0,100}(\w+=|$)""",
   ]
   DupFields = [ user_agent->browser ]
-}
+
+
 }
 ```

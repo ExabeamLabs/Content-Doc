@@ -4,7 +4,7 @@
 Name = s-titanftp-app-activity-4
   DataType = "app-activity"
   Conditions = [ """ COMMAND: """, """szInPath="""", """SFTP->SSH_FXP_LSTAT""" ]
-}
+
 s-titanftp-events = {
   Vendor = TitanFTP
   Product = TitanFTP
@@ -15,5 +15,6 @@ s-titanftp-events = {
     """COMMAND:\s{0,100}({accesses}.+?)\s{1,100}([\w\-]{1,2000}=|$)""",
     """szInPath="(|({file_path}({file_parent}[^"]{1,2000}?)[\\\/]{0,2000}({file_name}[^\\\/"]{1,2000}?(\.({file_ext}[^\\\.\s"]{1,2000}))?)?))"""",
   ]
-  DupFields = [ "dest_ip->host" ]}
+  DupFields = [ "dest_ip->host" 
+}
 ```

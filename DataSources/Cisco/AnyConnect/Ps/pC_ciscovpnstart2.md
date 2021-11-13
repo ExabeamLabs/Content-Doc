@@ -20,6 +20,7 @@ Name = cisco-vpn-start-2
     """ Group\s{1,100}<({realm}.+?)>""",
     """Cisco AnyConnect VPN Agent for ({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(X|x)11|(W|w)indows|(L|l)inux|(M|m)acintosh|(D|d)arwin)""", 
   ]
-}
+
+
 }
 ```

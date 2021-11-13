@@ -31,6 +31,7 @@ Name = cef-carbonblack-process-created-3
     """"targetApp":\{[^}]{1,2000}"md5Hash":"({md5}[^"]{1,2000})"""",
   ]
   DupFields = ["directory->process_directory", "alert_name->alert_type"]
-}
+
+
 }
 ```

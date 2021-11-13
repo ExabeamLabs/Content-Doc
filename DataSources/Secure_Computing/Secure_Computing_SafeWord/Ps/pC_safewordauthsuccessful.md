@@ -14,6 +14,7 @@ Name = safeword-auth-successful
     """\sshost=({src_host}[^\s]{1,2000})""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
-}
+
+
 }
 ```

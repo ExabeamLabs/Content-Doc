@@ -25,6 +25,7 @@ Name = cef-postgresql-audit
     """\ssuser=(N\/A|-|\[unknown\]|({user}.+?))\s{0,100}\w+=""",
     """\ssrc=({src_ip}.+?)\s{0,100}\w+=""",
   ] 
-}
+
+
 }
 ```

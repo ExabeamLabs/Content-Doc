@@ -24,6 +24,7 @@ Name = zscaler-vpn-activity
     """Policy":\s{0,100}"\s{0,100}({policy}[^"]{1,2000})"""",
     """ConnectionStatus":\s{0,100}"({outcome}[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

@@ -4,7 +4,7 @@
 Name = syslog-rsa-auth-failed
   DataType = "authentication-failed"
   Conditions = [ """ SINGLEPOINT """, """ USER_AUTHZ """, """RESULT="NOT_AUTHORIZED"""" ]
-}
+
 syslog-rsa-auth {
   Vendor = Dell
   Product = RSA Authentication Manager
@@ -21,5 +21,6 @@ syslog-rsa-auth {
     """NameID=({name_id}[^,]{1,2000})""",
     """sAMAccountName =({sam_accountname}[^,]{1,2000})""",
     """POLICY="{0,20}({policy}[^"]{1,2000}?)\s{0,100}"""",
-  ]}
+  
+}
 ```

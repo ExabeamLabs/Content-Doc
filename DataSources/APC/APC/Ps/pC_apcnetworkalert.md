@@ -13,6 +13,7 @@ Name = apc-network-alert
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

@@ -32,6 +32,7 @@ Name = checkpoint-web-activity
     """\Wsrc_machine_name:"({src_host}[^"@]{1,2000})@({domain}[^"]{1,2000})""",
     """\Wuser:"({user}[^"]{1,2000}?)\s{0,100}"""",
   ]
-}
+
+
 }
 ```

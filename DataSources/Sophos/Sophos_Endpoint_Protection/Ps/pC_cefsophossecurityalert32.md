@@ -4,7 +4,7 @@
 Name = cef-sophos-security-alert-32
   DataType = "alert"
   Conditions = [ """CEF:""", """"Event::Endpoint::CorePua""", """"group":"PUA"""" ]
-}
+
 cef-sophos-dlp-alert-1 = {
   Vendor = Sophos
   Product = Sophos Endpoint Protection
@@ -29,5 +29,6 @@ cef-sophos-dlp-alert-1 = {
     """"source":"(n\/a|(([^\\\s"]{0,2000}\s{1,100}[^\\"]{0,2000}|({domain}[^\\"]{1,2000}))\\+)?(?:Administrator|({user}[^\\\s"]{1,2000})))"""",
     """"source":"(n\/a|({src_host}[\w\-.]{1,2000})\s{0,100}(\(({src_ip}[A-Fa-f:\d.]{1,2000})\))?)"""",
     """"ip":"({src_ip}[A-Fa-f:\d.]{1,2000})""""
-  ]}
+  
+}
 ```

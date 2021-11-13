@@ -3,7 +3,7 @@
 {
 Name = exa-syslog-nac-logon-4
   Conditions = [ """ roams out to """, """ WLAN[""", """ AP[""", """User[""" ]
-}
+
 exa-syslog-nac-logon = {
   Vendor = Ruckus
   Product = Ruckus
@@ -19,5 +19,6 @@ exa-syslog-nac-logon = {
     """WLAN\[({ssid}[^\]]{1,2000})""",
     """AP\[({wifiap}[^@\]]{1,2000})""",
   ]
-  DupFields = [ "host->auth_server", "ssid->network", "wifiap->dest_host" ]}
+  DupFields = [ "host->auth_server", "ssid->network", "wifiap->dest_host" 
+}
 ```

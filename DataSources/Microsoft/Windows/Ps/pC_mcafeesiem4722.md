@@ -20,6 +20,7 @@ Name = mcafee-siem-4722
       """"Source_Logon_ID":"({logon_id}[^"]{1,2000})""",
       """"UserIDDst":"({target_user}[^"]{1,2000})"""
     ]
-  }
+  
+
 }
 ```

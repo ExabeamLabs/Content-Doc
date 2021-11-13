@@ -15,6 +15,7 @@ Name = ovirt-app-activity-2
     """EVENT_ID:.*?User ({user}[^\s\(\)"]{1,2000}) is connected to VM ({object}[^\s"]{1,2000})""",
     """({app}ovirt)"""
   ]
-}
+
+
 }
 ```

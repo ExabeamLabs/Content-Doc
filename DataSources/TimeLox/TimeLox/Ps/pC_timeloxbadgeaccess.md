@@ -21,6 +21,7 @@ Name = timelox-badge-access
       """"@version":"({version}[^"]{1,2000})""",
       """"user group":"({user_group}[^"]{1,2000})"""
     ]
-  }
+  
+
 }
 ```

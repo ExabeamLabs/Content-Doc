@@ -16,6 +16,7 @@ Name = cef-digitalguardian-local-logon
     """({event_code}User Logon)""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

@@ -19,6 +19,7 @@ Name = unix-file-operation
     """name="{1,20}({file_path}({file_parent}(?:[^";]{1,2000})?[\\\/;])?({file_name}[^\\\/";]{1,2000}(\.({file_ext}[^\\\/\.;"]{1,2000}))))"""
   ]
   DupFields = ["activity->action"]
-}
+
+
 }
 ```

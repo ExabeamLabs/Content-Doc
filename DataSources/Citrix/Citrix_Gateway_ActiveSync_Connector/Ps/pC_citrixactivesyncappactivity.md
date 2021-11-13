@@ -21,6 +21,7 @@ Name = citrix-activesync-app-activity
     """ip=({src_ip}[^\s]{1,2000})(?:\s|$)""",
     """user=({user_email}({user}[^@\s]{1,2000})@[^@\s]{1,2000})\s""",
   ]
-}
+
+
 }
 ```

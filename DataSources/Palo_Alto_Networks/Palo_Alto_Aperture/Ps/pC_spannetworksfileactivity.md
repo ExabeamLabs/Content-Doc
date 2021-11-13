@@ -20,6 +20,7 @@ Name = s-pan-networks-file-activity
     """\Witem_type"?\s{0,100}(=|:)\s{0,100}"({file_type}[^"]{1,2000})"""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

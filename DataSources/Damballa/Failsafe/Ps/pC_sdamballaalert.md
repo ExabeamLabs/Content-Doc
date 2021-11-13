@@ -21,6 +21,7 @@ Name = s-damballa-alert
     """\|shost=({src_host}[^\|]{1,2000})""",
     """\|src=({src_ip}[^\|]{1,2000})"""
   ]
-}
+
+
 }
 ```

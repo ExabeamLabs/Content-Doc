@@ -18,6 +18,7 @@ Name = crowdstrike-file-write-6
       """"TargetFileName":"({file_parent}[^"]{0,2000}[\\\/]{1,2000})({file_name}[^\\\/"]{1,2000})""",
       """({accesses}Modified)"""
     ]
-  }
+  
+
 }
 ```

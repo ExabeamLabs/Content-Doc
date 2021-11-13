@@ -11,7 +11,7 @@ Fields = ${SymantecParserTemplates.symantec-critical-sys-protection.Fields} [
   """({new_attribute}New Entry: [^"]{1,2000})"""
 ]
   DupFields = ["object->group_name"]
-}
+
 symantec-critical-sys-protection = {
   Vendor = Symantec
   Product = Symantec Critical System Protection
@@ -31,5 +31,6 @@ symantec-critical-sys-protection = {
     """\sHOSTADDR:\s{0,100}"{1,20}({dest_ip}[^"\s]{1,2000})""",
     """\sSVA_IP_ADDRESS:\s{0,100}"{1,20}({src_ip}[^"\s]{1,2000})""",
   ]
-  DupFields = ["host->dest_host"]}
+  DupFields = ["host->dest_host"
+}
 ```

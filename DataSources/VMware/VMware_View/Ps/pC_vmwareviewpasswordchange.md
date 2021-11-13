@@ -14,6 +14,7 @@ Name = vmware-view-password-change
     """\s{1,100}({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
     """UserDisplayName ="(({domain}[^\\]{1,2000})\\+)?({user}[^"]{1,2000})"""",
    ]
-}
+
+
 }
 ```

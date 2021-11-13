@@ -10,7 +10,7 @@ Name = leef-eset-network-alert
     """\Wsev=({alert_severity}\d{1,100})"""
   ]
   DupFields = ["event_name->alert_type"]
-}
+
 eset-activity = {
     Vendor = ESET
     Product = ESET Endpoint Security
@@ -37,5 +37,6 @@ eset-activity = {
       """proto=({protocol}[^\s]{1,2000})""",
       """\Wuser '(({domain}[^\s\\]{1,2000})\\)?({user}[^\s]{1,2000})'.""",
       """accountName =(NT AUTHORITY\\+|({domain}[^\\]{1,2000}?)\\+)?(SYSTEM|({user}[^=\s]{1,2000}?))\s{0,100}(\w+=|$)"""
-    ]}
+    
+}
 ```

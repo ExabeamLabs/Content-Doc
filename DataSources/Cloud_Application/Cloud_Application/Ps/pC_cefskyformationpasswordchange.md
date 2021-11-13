@@ -19,6 +19,7 @@ Name = cef-skyformation-password-change
     """\Wsuser=({user_email}[^@\s]{1,2000}@[^@\s]{1,2000})""",
     """\Wsuser=({user_fullname}\w+(\s{1,100}\w+)+)""",
   ]
-}
+
+
 }
 ```

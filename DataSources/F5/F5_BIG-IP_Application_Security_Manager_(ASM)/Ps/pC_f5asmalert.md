@@ -23,6 +23,7 @@ Name = f5-asm-alert
     """(\\r\\n|\s)User-Agent:\s{0,100}({user_agent}[^"]{1,2000}?)(\\r\\n[\w\-]{1,2000}:|")""",
   ]
   DupFields = ["protocol->alert_type"]
-}
+
+
 }
 ```

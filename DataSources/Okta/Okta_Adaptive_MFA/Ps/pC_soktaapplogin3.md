@@ -9,7 +9,7 @@ Name = s-okta-app-login-3
     """"state":\s{0,100}"({location_state}[^"]{1,2000})""",
     """"city":\s{0,100}"({location_city}[^"]{1,2000})""",
   ]
-}
+
 s-okta-app-login = {
   Vendor = Okta
   Product = Okta Adaptive MFA
@@ -40,5 +40,6 @@ s-okta-app-login = {
     """"state":\s{0,100}"({location_state}[^"]{1,2000})""",
     """"country":\s{0,100}"({location_country}[^"]{1,2000})"""
   ]
-    DupFields=["app->object"]}
+    DupFields=["app->object"
+}
 ```

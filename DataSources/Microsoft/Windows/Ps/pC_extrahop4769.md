@@ -20,6 +20,7 @@ Name = extrahop-4769
     """"event_code":({event_code}\d{1,100})""",
   ]
   DupFields = [ "service_name->dest_host" ]
-}
+
+
 }
 ```

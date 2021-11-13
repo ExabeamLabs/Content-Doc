@@ -36,6 +36,7 @@ Name = leef-crowdstrike-alert
     """\WrequestType=(|({dns_request_type}[^\s]{1,2000}?))\s{0,100}(\||\w+=|["\s]{0,2000}$)"""
     """\WfilePath=(|({process}[^\s]{1,2000}\\+({process_name}[^\s]{1,2000})))""",
   ]
-}
+
+
 }
 ```

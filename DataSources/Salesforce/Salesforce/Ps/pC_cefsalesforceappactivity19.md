@@ -17,6 +17,7 @@ Name = cef-salesforce-app-activity-19
     """Display\\=Changed profile ({object}.+?): ({resource}.+?) object""",
     """({app}Sales Cloud)""",
   ]
-}
+
+
 }
 ```

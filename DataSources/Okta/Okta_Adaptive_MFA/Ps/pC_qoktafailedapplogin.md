@@ -19,6 +19,7 @@ Name = q-okta-failed-app-login
     """"actors":\[\{[^\]\}]{0,2000}?"id":"({user_agent}.+?),displayName":""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

@@ -19,6 +19,7 @@ Name = powershell-800
     """Details:.+?CommandInvocation\(.+?\):\s{0,100}\\*"({command_invocation}[^"\\]{1,2000})""",
     """({event_code}800)"""
   ]
-}
+
+
 }
 ```

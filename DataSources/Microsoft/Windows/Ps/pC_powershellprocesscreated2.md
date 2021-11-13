@@ -28,6 +28,7 @@ Name = powershell-process-created-2
     """Context[^@]{1,2000}?Script Name\s{0,100}=\s{1,100}({script_name}\S[^=]{1,2000}?)\s{1,100}Command Path =""",
   ]
   DupFields = [ "host->dest_host", "directory->process_directory" ]
-}
+
+
 }
 ```

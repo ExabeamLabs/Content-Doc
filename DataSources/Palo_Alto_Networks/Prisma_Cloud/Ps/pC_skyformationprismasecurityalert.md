@@ -23,6 +23,7 @@ Name = skyformation-prisma-security-alert
    """"accountName":"({user}[^"]{1,2000})"""",
    """"alertRuleName":"({alert_type}[^"]{1,2000})"""
  ]
-}
+
+
 }
 ```

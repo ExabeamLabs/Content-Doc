@@ -11,7 +11,7 @@ Name = cef-websense-proxy
       """\ssuid=LDAP:\/\/\S+\s{1,100}({user_ou}[^\/]{1,2000}?)\/.+?\s{1,100}\w+=""",
       """\scs6=(?:-|({web_domain}.+?))\s\w+="""
   ]
-  }
+  
 wp-web-activity = {
   Vendor = Forcepoint
   Product = Websense Secure Gateway
@@ -37,5 +37,6 @@ wp-web-activity = {
       """\s(requestProtocol|app)=(?:-|({protocol}.+?))\s\w+=""",
       """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sdvchost=({host}[^\s]{1,2000})"""
-  ]}
+  
+}
 ```

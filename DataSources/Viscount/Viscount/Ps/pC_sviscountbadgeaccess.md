@@ -19,6 +19,7 @@ Name = s-viscount-badge-access
     """cardnumber="({badge_id}\d{1,100})""",
     """result="({outcome}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

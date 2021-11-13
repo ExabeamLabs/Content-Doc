@@ -17,6 +17,7 @@ Name = evntslog-680
 	"""Logon account:\s{1,100}({user}[^@]{1,2000}?)(?:@({domain}[^\s.]{1,2000})[^\s]{0,2000})?\s{1,100}Source Workstation:\s{1,100}({dest_host}[^\s.]{1,2000})""",
 	"""Error Code:\s{1,100}({result_code}[^\s]{1,2000})"""
   ]
-}
+
+
 }
 ```

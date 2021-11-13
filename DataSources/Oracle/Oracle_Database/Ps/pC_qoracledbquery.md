@@ -25,6 +25,7 @@ Name = q-oracle-db-query
     """\sPRIVILEGE:\[\d{1,100}\]\s{0,100}'({privilege}[^']{1,2000})'""",
   ]
   DupFields = [ "user->os_user", "account->db_user" ]
-}
+
+
 }
 ```

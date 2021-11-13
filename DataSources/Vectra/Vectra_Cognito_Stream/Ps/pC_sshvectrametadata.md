@@ -10,7 +10,7 @@ Name = ssh-vectra-meta-data
     """cipher_alg="{1,20}({cipher_algorithm}[^"]{1,2000})"{1,20}""",
     """compression_alg="{1,20}(none|({compression_algotithm}[^"]{1,2000}))"{1,20}"""
   ]
-}
+
 vectra-meta-data = {
   Vendor = Vectra
   Product = Vectra Cognito Stream
@@ -26,5 +26,6 @@ vectra-meta-data = {
     """orig_hostname="{1,20}({src_host}[^"]{1,2000})"{1,20}"""
     """resp_hostname="{1,20}(null|((IP-)*({dest_host}[^"]{1,2000})))"""
   ]
- }}
+ 
+}
 ```

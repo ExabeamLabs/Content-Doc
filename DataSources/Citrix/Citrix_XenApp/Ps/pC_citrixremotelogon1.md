@@ -18,6 +18,7 @@ Name = citrix-remote-logon-1
     """"clientplatform":"({os}[^"]{1,2000})"""",
     """"connectedviaipaddress":"({src_translated_ip}[a-fA-F:\d.]{1,2000})""""
   ]
-}
+
+
 }
 ```

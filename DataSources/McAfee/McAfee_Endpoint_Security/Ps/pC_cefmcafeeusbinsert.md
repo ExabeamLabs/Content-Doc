@@ -19,6 +19,7 @@ Name = cef-mcafee-usb-insert
           """\WfilePath=({file_path}.*?[\\\/]{0,2000}({file_name}[^\\\/]{0,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
           """\Wfsize=({bytes}\d{1,100})""",
         ]
-    }
+    
+
 }
 ```

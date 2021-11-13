@@ -27,6 +27,7 @@ Name = guardium-db-query
     """\WVerb=({db_operation}[^;\|]{1,2000}?)\s{0,100}(?:;|\||$)""",
   ]
   DupFields = [ "db_user->account", "os_user->user" ]
-}
+
+
 }
 ```

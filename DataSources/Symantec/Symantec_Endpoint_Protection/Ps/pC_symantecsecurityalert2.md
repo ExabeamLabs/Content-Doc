@@ -13,6 +13,7 @@ Name = symantec-security-alert-2
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """Begin:\s{0,20}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\d\d:\d\d:\d\d\s({host}[\w.\-]{1,2000})\s{1,100}SymantecServer:\s{0,100}({src_host}[^,]{1,2000})""",
-    """\s{0,100}\w{1,2000}
+    """\s{0,100}\w{1,2000
+
 }
 ```

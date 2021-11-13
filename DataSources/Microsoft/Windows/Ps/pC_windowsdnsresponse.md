@@ -21,6 +21,7 @@ Name = windows-dns-response
     """Buf length\s{0,100}=\s{0,100}\S+\s{0,100}\(({bytes}\d{1,100})""",
     """ANSWER SECTION:(\s{0,100}empty|.+?DATA\s{1,100}({response}\S+))"""
   ]
-}
+
+
 }
 ```

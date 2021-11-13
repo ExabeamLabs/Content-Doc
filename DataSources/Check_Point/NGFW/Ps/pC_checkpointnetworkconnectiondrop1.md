@@ -29,6 +29,7 @@ Name = checkpoint-network-connection-drop-1
     """\Wrule_uid:\{?({rule_id}[^"\}\;]{1,2000})""",
   ]
   DupFields = [ "action->event_name" ]
-}
+
+
 }
 ```

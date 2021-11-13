@@ -30,6 +30,7 @@ Name = s-stream-dhcp
     """"ip_lease_time":({ip_lease_time}\d{1,100}),""",
     """"host_name":"({host}[^"]{1,2000})"""",
   ]
-}
+
+
 }
 ```

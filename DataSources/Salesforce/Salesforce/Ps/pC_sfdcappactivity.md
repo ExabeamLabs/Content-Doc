@@ -22,6 +22,7 @@ Name = sfdc-app-activity
     """USER_ID="?({user}[^"\s,]{1,2000})""",
     """REQUEST_SIZE="?({bytes}\d{1,100})""",
   ]
-}
+
+
 }
 ```

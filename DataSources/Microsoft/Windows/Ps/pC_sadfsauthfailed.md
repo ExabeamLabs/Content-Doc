@@ -16,6 +16,7 @@ Name = s-adfs-auth-failed
     """Error message:\s{0,100}({user}.+?)-The user name""",
     """Error message:\s{0,100}({failure_reason}.+?)\s{1,100}Exception details:"""
   ]
-}
+
+
 }
 ```

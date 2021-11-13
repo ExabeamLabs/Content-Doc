@@ -18,6 +18,7 @@ Name = safend-usb-insert
     """Distinct ID:\s{0,100}(|({device_id}[^,]{1,2000})),""",
     """Policy:\s{0,100}({activity_details}[^,]{1,2000})""",
   ]
-}
+
+
 }
 ```

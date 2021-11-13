@@ -16,6 +16,7 @@ Name = graylog-ras-vpn-start
     """hostname":"({host}[^"]{1,2000})""", 
   ]
   DupFields = ["user->account"]
-}
+
+
 }
 ```

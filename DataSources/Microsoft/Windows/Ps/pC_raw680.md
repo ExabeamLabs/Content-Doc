@@ -13,6 +13,7 @@ Name = raw-680
       """({time}\w{3}\s\d{2}\s\d{2}:\d{2}:\d{2}\s\d{4})""",
       """({event_code}680)""",
       """exabeam_source=({host}[A-Fa-f:\d.]{1,2000})""",
-      """(?i)(((audit|success|failure)( |_)(success|audit|failure))|information)(\s{1,100}|\s{0,100}
+      """(?i)(((audit|success|failure)( |_)(success|audit|failure))|information)(\s{1,100}|\s{0,100
+
 }
 ```

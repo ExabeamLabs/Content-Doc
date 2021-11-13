@@ -3,7 +3,7 @@
 {
 Name = s-digitalguardian-usb-insert-2
   Conditions = [ """Operation="Device Added"""" , """Agent_UTC_Time=""" ]
-}
+
 splunk-digitalguardian-usb-insert = {
   Vendor = Digital Guardian
   Product = Digital Guardian Endpoint Protection
@@ -31,5 +31,6 @@ splunk-digitalguardian-usb-insert = {
     EntityFields = [
       {EntityType="device", Name ="dest_address", Fields=["dest_host->host_name"]},
       {EntityType="user", Name ="windows_id", Fields=["user->windows_id"]}
-    ]}
+    
+}
 ```

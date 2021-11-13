@@ -23,6 +23,7 @@ Name = cef-unix-auditd-login
     """({event_code}ssh)""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

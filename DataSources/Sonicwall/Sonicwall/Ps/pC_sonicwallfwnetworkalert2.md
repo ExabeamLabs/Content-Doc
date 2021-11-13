@@ -5,7 +5,7 @@ Name = sonicwall-fw-network-alert-2
   Product = Sonicwall
   DataType = "network-alert"
   Conditions = [ """ m=""", """id=""", """ fw=""", """ c=""" ,""" msg="""", """ pri=2 """, """ src=""", """ dst="""]
-}
+
 sonicwall-firewall = {
   Vendor = Sonicwall
   Product = Sonicwall
@@ -35,5 +35,6 @@ sonicwall-firewall = {
     """\srule="({rule}[^"]{1,2000})""",
     """\sfw_action="(NA|({action}[^"]{1,2000}))"""
   ]
-  DupFields = [ "message_id->alert_type" ]}
+  DupFields = [ "message_id->alert_type" 
+}
 ```

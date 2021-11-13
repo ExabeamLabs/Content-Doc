@@ -22,6 +22,7 @@ Name = mcafee-file-write-denied
     """<IPAddress>({src_ip}.+?)</IPAddress>""",
     """<OSName>({os}.+?)</OSName>""",
   ]
-}
+
+
 }
 ```

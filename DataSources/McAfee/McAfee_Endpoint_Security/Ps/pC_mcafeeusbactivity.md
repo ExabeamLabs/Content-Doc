@@ -3,7 +3,7 @@
 {
 Name = mcafee-usb-activity
   Conditions = [ """<DeviceSN>""", """<EventID>20504</EventID>""" ]
-}
+
 mcafee-usb-insert = {
     Vendor = McAfee
     Product = McAfee Endpoint Security
@@ -23,5 +23,6 @@ mcafee-usb-insert = {
       """<DeviceSN>({device_id}[^<]{1,2000})""",
       """<SyncFolder>({file_parent}[^<]{1,2000})""",
       """<Severity>({alert_severity}\d{1,100})"""
-    ]}
+    
+}
 ```

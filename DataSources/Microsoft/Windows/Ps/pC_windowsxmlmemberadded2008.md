@@ -25,6 +25,7 @@ Name = windows-xml-member-added-2008
     """Member:(.+?({account_dn}CN=.+?,({account_ou}OU.+?DC=[\w-]{1,2000}))|(?:.+?))\s{0,100}Group:"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

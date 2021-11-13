@@ -9,7 +9,7 @@ Name = oracle-avdf-database-query
     """COMMAND_CLASS="({db_operation}[^"]{1,2000})"""",
     """COMMAND_TEXT="(\s{1,100}|({db_query}[^"]{1,2000}?))\s{0,100}("|$)""",
   ]
-}
+
 s-oracle-avdf-events = {
     Vendor = Oracle
     Product = AVDF
@@ -26,5 +26,6 @@ s-oracle-avdf-events = {
       """RECORD_ID="({event_code}[^"]{1,2000})"""",
       """SECURED_TARGET_TYPE="({app}[^"]{1,2000})"""",
       """SERVICE_NAME="(unknown_service|({database_name}[^"]{1,2000}))""""
-    ]}
+    
+}
 ```

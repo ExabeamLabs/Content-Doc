@@ -3,7 +3,7 @@
 {
 Name = cef-netskope-web-activity-1
   Conditions = [ """"page":"""", """"traffic_type":"CloudApp"""", """"url":"""" ]
-}
+
 cef-netskope-web = {
   Vendor = Netskope
   Product = Netskope Security Cloud
@@ -28,5 +28,6 @@ cef-netskope-web = {
     """"src_country":"({src_country}[^"]{1,2000})""",
     """"os":"({os}[^"]{1,2000})""",
     """"referer":"({referrer}[^"]{1,2000})"""
-  ]}
+  
+}
 ```

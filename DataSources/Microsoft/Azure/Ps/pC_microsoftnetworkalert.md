@@ -26,6 +26,7 @@ Name = microsoft-network-alert
     """"msg":"({alert_name}[^"]{1,2000})""""
   ]
    DupFields = ["event_hub_namespace->host", "action->outcome"]
-}
+
+
 }
 ```

@@ -32,6 +32,7 @@ Name = barracuda-firewall-network-connection
     """\/box_Firewall_Activity:\s{1,100}([^\s]{1,2000}\s{1,100}){3}([^\|]{0,2000}\|){17}({bytes_out}\d{1,100})""",
     """\/box_Firewall_Activity:\s{1,100}([^\s]{1,2000}\s{1,100}){3}([^\|]{0,2000}\|){20}({user}[^\|]{1,2000})\|"""
   ]
-}
+
+
 }
 ```

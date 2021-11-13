@@ -13,6 +13,7 @@ Name = cylance-alert-1
     """\[({host}[\w\-.]{1,2000})\]\s{0,100}Event Type:""",
     """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{3})\d{1,100}""",
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3})\d{1,100}""",
-    """Event Type:\s{0,100}({alert_type}[^,]{1,2000})\s{0,100}
+    """Event Type:\s{0,100}({alert_type}[^,]{1,2000})\s{0,100
+
 }
 ```

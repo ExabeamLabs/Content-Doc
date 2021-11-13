@@ -21,6 +21,7 @@ Name = cef-cyberark-password-change-1
     """\sduser="?(({domain}[^\\="]{1,2000})(\\)+)?({user}[^"]{1,2000}?)"?\s{1,100}\w+=""",
     """({app}Cyber-Ark)"""
   ]
-}
+
+
 }
 ```

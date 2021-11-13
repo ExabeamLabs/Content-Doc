@@ -23,6 +23,7 @@ Name = sigsci-web-activity
     """"{1,20}Content-Type"{1,20}:"{1,20}({mime}[^";]{1,2000})""",
     """"{1,20}responseSize"{1,20}:({bytes_out}\d{1,100})"""
     ]
-}
+
+
 }
 ```

@@ -25,6 +25,7 @@ Name = raw-4663
       """Accesses:\s{0,100}({accesses}.+?)[\s;]{0,2000}Access Mask:\s{0,100}({access_mask}\w+)""",
     ]
     DupFields = ["host->dest_host","directory->process_directory"]
-  }
+  
+
 }
 ```

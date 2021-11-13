@@ -19,6 +19,7 @@ Name = vmware-horizon-logon
     """Module="{0,20}({resource}[^"]{1,2000})""",
     """ApplicationId="{0,20}({object}[^"]{1,2000})"""
   ]
-}
+
+
 }
 ```

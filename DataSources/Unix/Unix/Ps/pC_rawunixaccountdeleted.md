@@ -15,6 +15,7 @@ Name = raw-unix-account-deleted
     """delete user \'({target_user}[^']{1,2000})\'"""
   ]
   DupFields=["host->dest_host", "target_user->account_name"]
-}
+
+
 }
 ```

@@ -30,6 +30,7 @@ Name = s-mcafee-dlp-alert-1
       NameTemplate = """McAfee DLP Alert ${alert_name} found"""
       ProjectName = "SOC"
       EntityFields = [
-        {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]}
+        {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]
+
 }
 ```

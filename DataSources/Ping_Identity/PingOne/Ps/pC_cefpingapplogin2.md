@@ -17,6 +17,7 @@ Name = cef-ping-app-login-2
     """suser=({user}[^\s]{1,2000})""",
     """flexString2=({auth_method}.*?)\s\w+="""
   ]
-}
+
+
 }
 ```

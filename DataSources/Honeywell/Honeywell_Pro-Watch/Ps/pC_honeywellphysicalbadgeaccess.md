@@ -26,6 +26,7 @@ Name = honeywell-physical-badge-access
     """"zoneentered":"({location_door}[^"]{1,2000})""",
   ]
   DupFields = [ "location_area->location_building" ]
-}
+
+
 }
 ```

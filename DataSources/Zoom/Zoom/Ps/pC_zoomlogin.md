@@ -19,6 +19,7 @@ Name = zoom-login
     """"client_type"\s{0,100}:\s{0,100}"({client_type}[^"]{1,2000})"""",
     """"version"\s{0,100}:\s{0,100}"({app_version}[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

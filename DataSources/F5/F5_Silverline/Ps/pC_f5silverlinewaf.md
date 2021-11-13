@@ -27,6 +27,7 @@ Name = f5-silverline-waf
     """sub_violations="(({additional_info}[^"]{1,2000}))"""",
     """violations="({alert_name}[^"]{1,2000})"""
   ]
-}
+
+
 }
 ```

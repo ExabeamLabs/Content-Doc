@@ -3,7 +3,7 @@
 {
 Name = cef-bromium-security-alert-1
   Conditions = [ """|Bromium, Inc.|vSentry|""", """suser=""", """Isolation threat recorded""" ]
-}
+
 cef-bromium-security-alert = {
     Vendor = Bromium
     Product = Bromium Advanced Endpoint Security
@@ -24,5 +24,6 @@ cef-bromium-security-alert = {
       """\Wmsg=({additional_info}.+?)\s{0,100}(\w+=|$)"""
       """\Wsproc=({process}.*?)\s{0,100}\w+=""",
     ]
-    DupFields = [ "alert_name->alert_type" ]}
+    DupFields = [ "alert_name->alert_type" 
+}
 ```

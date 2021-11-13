@@ -33,6 +33,7 @@ Name = endgame-edr-security-alert
     """"ip_address":\s{0,100}"({src_ip}[^"]{1,2000})""",
     """"operating_system":\s{0,100}"({os}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

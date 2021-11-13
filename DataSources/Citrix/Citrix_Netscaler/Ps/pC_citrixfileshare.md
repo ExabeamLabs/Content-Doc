@@ -19,6 +19,7 @@ Name = citrix-file-share
       """"CreatorEmail":"({user_email}[^@"]{1,2000}@({email_domain}[^@"]{1,2000}))"""", 
       """msg=({additional_info}.+?)\s{0,100}\w+=""",
   ]
-}
+
+
 }
 ```

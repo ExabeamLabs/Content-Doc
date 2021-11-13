@@ -22,6 +22,7 @@ Name = s-tanium-process-alert-1
     """suser=(anonymous|({user}[^\s]{1,2000}))""",
     """({app}Tanium)"""
     ]
-}
+
+
 }
 ```

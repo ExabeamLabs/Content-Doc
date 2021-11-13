@@ -28,6 +28,7 @@ Name = o365-inbox-rules-move-to-folder
     """"Name":"MoveToFolder","Value":"({object}[^"]{1,2000}?)\s{0,20}""""
   ]
   DupFields = ["user_domain->email_domain"]
-}
+
+
 }
 ```

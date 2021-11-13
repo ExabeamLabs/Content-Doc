@@ -19,6 +19,7 @@ Name = s-pharos-print-activity
     """\sDeviceName =({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(\s{1,100}\w+=|\s{0,100}$)""",
     """\sApplicationName =(Unknown|({process_name}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
   ]
-}
+
+
 }
 ```

@@ -3,7 +3,7 @@
 {
 Name = checkpoint-network-alert-4
   Conditions = [ """product:""", """SmartDefense""", """CheckPoint""", """sequencenum""", """attack:""" ]
-}
+
 checkpoint-network-alert = {
   Vendor = Check Point 
   Product = Threat Prevention
@@ -41,5 +41,6 @@ checkpoint-network-alert = {
     """\Wuser:"({user}[^"\(\)]{1,2000}?)\s{0,100}"""",
     """ifdir:"{1,20}({direction}[^"]{1,2000})""",
     """originsicname:"{1,20}({user_ou}[^"]{1,2000})"""
-  ]}
+  
+}
 ```

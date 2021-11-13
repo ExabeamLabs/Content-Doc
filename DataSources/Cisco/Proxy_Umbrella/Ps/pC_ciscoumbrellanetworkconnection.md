@@ -19,6 +19,7 @@ Name = cisco-umbrella-network-connection
     """"destinationPort"{1,20}:"{1,20}({dest_port}\d{1,100})""",
     """"identity"{1,20}:"{1,20}({dest_host}[^"]{1,2000})"""",
   ]
-}
+
+
 }
 ```

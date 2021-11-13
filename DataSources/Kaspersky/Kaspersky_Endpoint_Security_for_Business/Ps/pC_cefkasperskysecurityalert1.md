@@ -20,6 +20,7 @@ Name = cef-kaspersky-security-alert-1
     """cs4=({alert_id}.+?)\s\w+=""",
     """CEF:\s{0,100}\d\|([^\|]{1,2000}\|){3}({alert_type}[^\|]{1,2000})\|({alert_name}[^\|]{1,2000})\|({alert_severity}[^\|]{1,2000})\|"""
     ]
-}
+
+
 }
 ```

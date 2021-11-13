@@ -21,6 +21,7 @@ Name = cef-ccure-badge-access
      """\scs5=({company}.+?)\s(\w+=|$)""",
      """\smsg=({location_door}.+?)\s(\w+=|$)"""
    ]
- }
+ 
+
 }
 ```

@@ -17,6 +17,7 @@ Name = citrix-app-login-3
     """\sOS_Type="({os}[^",]{1,2000})"""",
     """\sProtocol="({protocol}[^",]{1,2000})""""
   ]
-}
+
+
 }
 ```

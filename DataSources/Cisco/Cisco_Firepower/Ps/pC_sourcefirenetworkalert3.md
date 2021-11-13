@@ -21,6 +21,7 @@ Name = sourcefire-network-alert-3
     """\sClassification:\s{0,100}({alert_type}[^,]{1,2000}?)(,|\s{0,100}$)""",
     """\sIntrusionPolicy:\s{0,100}({alert_name}[^,]{1,2000}?)(,|\s{0,100}$)""",
   ]
-}
+
+
 }
 ```

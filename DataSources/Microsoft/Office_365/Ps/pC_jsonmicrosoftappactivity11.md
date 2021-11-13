@@ -4,7 +4,7 @@
 Name = json-microsoft-app-activity-11
   Product = Office 365
   Conditions= [ """"activityType":"User"""", """"activityOperationType":"Restore"""", """"targetResourceType":"""" ]
-}
+
 json-microsoft-app-activity = {
   Vendor = Microsoft
   Lms = ArcSight
@@ -25,5 +25,6 @@ json-microsoft-app-activity = {
     """\WdestinationServiceName\s{0,100}=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\WsourceServiceName =({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)"""
   ]
-  DupFields = [ "object->resource" ]}
+  DupFields = [ "object->resource" 
+}
 ```

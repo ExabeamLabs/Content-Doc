@@ -18,6 +18,7 @@ Name = cef-ping-auth-successful-4
     """flexString2=({auth_method}.*?)\s\w+"""
     """message":"({auth_method}[^\\]{1,2000})\s\\"({device}[^\\]{1,2000})"""
   ]
-}
+
+
 }
 ```

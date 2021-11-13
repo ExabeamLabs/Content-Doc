@@ -4,7 +4,7 @@
 Name = leef-carbonblack-workstation-locked
   DataType = "workstation-locked"
   Conditions = [ """LEEF:""", """|Carbon_Black|Protection|""", """Event[00000007] Type[SessionLock]""" ]
-}
+
 leef-carbonblack-events = {
   Vendor = VMware
   Product = App Control
@@ -19,5 +19,6 @@ leef-carbonblack-events = {
     """\WdstHostName =({dest_host}[\w\-.]{1,2000})""",
     """\WEvent\[({event_code}\d{1,100})\]\s{0,100}Type\[""",
     """\WUser\[(({domain}[^\\\s\]]{1,2000})\\+)?(|({user}[^\\\s\]]{1,2000}))\]""",
-  ]}
+  
+}
 ```

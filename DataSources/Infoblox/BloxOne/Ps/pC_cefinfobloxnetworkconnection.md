@@ -20,6 +20,7 @@ Name = cef-infoblox-network-connection
     """dst=({dest_ip}[A-Fa-f:\d.]{1,2000})""",
     """fqdn=({src_host}[\w\-.]{1,2000})""",
   ]
-}
+
+
 }
 ```

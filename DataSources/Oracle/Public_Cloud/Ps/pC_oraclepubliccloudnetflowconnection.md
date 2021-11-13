@@ -19,6 +19,7 @@ Name = oracle-public-cloud-netflow-connection
     """"bytesOut":({bytes_out}\d{1,100})""",
     """"protocolName":"({protocol}[^"]{1,2000})"""",
 ]
-}
+
+
 }
 ```

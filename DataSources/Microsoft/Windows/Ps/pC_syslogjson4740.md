@@ -21,6 +21,7 @@ Name = syslog-json-4740
     """Additional Information:[rnt\\]{0,2000}Caller Computer Name:[rnt\\]{0,2000}({src_host}[^"]{1,2000})"""
   ]
   DupFields = [ "host->dest_host","caller_domain->domain" ]
-}
+
+
 }
 ```

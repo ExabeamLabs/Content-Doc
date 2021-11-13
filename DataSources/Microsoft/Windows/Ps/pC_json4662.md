@@ -25,6 +25,7 @@ Name = json-4662
     """"Properties":"(-|({properties}[^"]{1,2000}))"""",
     """"AdditionalInfo":"(?:-|({additional_info}[^"]{1,2000}))""""
   ]
-}
+
+
 }
 ```

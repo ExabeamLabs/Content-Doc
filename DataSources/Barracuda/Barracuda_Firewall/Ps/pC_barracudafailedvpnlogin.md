@@ -17,6 +17,7 @@ Name = barracuda-failed-vpn-login
     """Session PHS:\s{0,100}({event_name}[^:=\(]{1,2000}?)\s{0,100}(:|\w+=|\(|$)""",
     """({outcome}failed)"""
   ]
-}
+
+
 }
 ```

@@ -9,7 +9,7 @@ Name = json-4768-1
     """"ticket-encryption-type":"({ticket_encryption_type}[^"]{1,2000})""",
   ]
   DupFields = ["host->dest_host"]
-}
+
 json-windows-events = {
   Vendor = Microsoft
   Product = Windows
@@ -40,5 +40,6 @@ json-windows-events = {
     """"service-name":"({service_name}[^"]{1,2000})""",
     """auth-package":"({auth_package}[^"]{1,2000})"""",
     """workstation-name":"(-|({src_host_windows}[^"]{1,2000}))""""
-  ]}
+  
+}
 ```

@@ -22,6 +22,7 @@ Name = cef-mcafee-skyhigh-dlp-alert
       """\WcontentItemName =(|({malware_file_name}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
       """\WtotalMatchCount=(|({total_match_count}.+?))(\s{1,100}\w+=|\s{0,100}$)"""
     ]
-  }
+  
+
 }
 ```

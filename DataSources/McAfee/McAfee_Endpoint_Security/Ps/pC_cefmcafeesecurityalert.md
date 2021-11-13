@@ -25,6 +25,7 @@ Name = cef-mcafee-security-alert
       """\Wdvchost=({host}.+?)\s{1,100}(\w+=|$)"""
     ]
     DupFields = [ "process_directory->directory" ]
-  }
+  
+
 }
 ```

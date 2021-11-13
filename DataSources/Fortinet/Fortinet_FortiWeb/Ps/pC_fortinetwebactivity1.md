@@ -26,6 +26,7 @@ Name = fortinet-web-activity-1
     """http_url="{0,20}(\w+:\/{2})?[^\/]{1,2000}({uri_path}\/[^?\s"]{1,2000})?(\?({uri_query}[^"]{1,2000}))?"""",
     """http_retcode=({result_code}\d{1,100})"""
   ]
-}
+
+
 }
 ```

@@ -41,6 +41,7 @@ Name = json-cisco-firesight-alert-1
    NameTemplate = """Cisco Sourcefire Alert ${alert_name} found"""
    ProjectName = "SOC"
    EntityFields = [
-     {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address"]}
+     {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address"]
+
 }
 ```

@@ -3,7 +3,7 @@
 {
 Name = ad-audit-5141
   Conditions = [ """ADAuditPlus""", """[ EVENT_NUMBER = 5141 ]""", """[ SOURCE =""", """[ FORMAT_MESSAGE =""" ]
-}
+
 ad-audit-ds-access = {
   Vendor = Microsoft
   Product = Windows
@@ -31,5 +31,6 @@ ad-audit-ds-access = {
     """ATTRIBUTES_OLD_VALUE\s{0,100}=\s{0,100}(null|-|({old_attribute}[^\]]{1,2000}?))\s{0,100}\]""",
     """CLIENT_IP_ADDRESS\s{0,100}=\s{0,100}(null|-|({src_ip}[a-fA-F:\d.]{1,2000}))""" 
   ]
-  DupFields =[ "host->dest_host", "activity_type->event_name", "object_class->additional_info" ]}
+  DupFields =[ "host->dest_host", "activity_type->event_name", "object_class->additional_info" 
+}
 ```

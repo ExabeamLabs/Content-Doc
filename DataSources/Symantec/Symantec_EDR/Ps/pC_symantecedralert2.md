@@ -23,6 +23,7 @@ Name = symantec-edr-alert-2
     """"data_source_ip":"({src_ip}[^"]{1,2000})"""",
     """"event_desc":"({additional_info}[^"]{1,2000})"""",
   ]
-}
+
+
 }
 ```

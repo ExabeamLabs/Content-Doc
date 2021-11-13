@@ -18,6 +18,7 @@ Name = beyondtrust-privileged-access
     """deviceExternalId=({event_code}pbw|pbmac)""",
   ]
   DupFields = [ "directory->process_directory" ]
-}
+
+
 }
 ```

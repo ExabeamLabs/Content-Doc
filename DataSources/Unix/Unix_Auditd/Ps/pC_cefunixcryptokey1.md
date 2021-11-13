@@ -7,7 +7,7 @@ Name = cef-unix-crypto-key-1
   Fields = ${UnixParserTemplates.cef-unix-template-1.Fields}[
     """CEF:([^\|]{0,2000}\|){4}({event_name}[^|]{1,2000})\\"""
     ]
-}
+
 cef-unix-template-1 = {
     Vendor = Unix
     Product = Unix Auditd
@@ -33,5 +33,6 @@ cef-unix-template-1 = {
       """\sduser=(\(unknown\)|({user}.+?))\s{1,100}\w+=""",
       """dhost=({dest_host}[^\s]{1,2000})""",
       """shost=({src_host}[^\s]{1,2000})"""
-      ]}
+      
+}
 ```

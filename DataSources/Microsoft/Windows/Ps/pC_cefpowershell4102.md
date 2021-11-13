@@ -15,6 +15,7 @@ Name = cef-powershell-4102
     """\sad.ProcessID=({pid}[^\s]{1,2000})\s""",
     """\|Microsoft-Windows-PowerShell:4102\|({additional_info}[^|]{1,2000})\|""",
   ]
-}
+
+
 }
 ```

@@ -21,6 +21,7 @@ Name = symantec-av-dlp-alert-cn
     """\W用户:\s{0,100}({user}[^,]{1,2000}),域:\s{0,100}({domain}[^,]{1,2000})"""
   ]
   DupFields = [ "outcome->action" ]
-}
+
+
 }
 ```

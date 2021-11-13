@@ -17,6 +17,7 @@ Name = cloudflare-app-activity
     """src=({src_ip}\d{1,100}.\d{1,100}.\d{1,100}.\d{1,100})""",
     """msg=({additional_info}.+?)\s\w+=""",
   ]
-}
+
+
 }
 ```

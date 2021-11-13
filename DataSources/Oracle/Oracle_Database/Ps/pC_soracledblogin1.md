@@ -21,6 +21,7 @@ Name = s-oracle-db-login-1
     """SPARE1="({os_user}[^"]{1,2000})""",
   ]
   DupFields = [ "db_user->account", "os_user->user" ]
-}
+
+
 }
 ```

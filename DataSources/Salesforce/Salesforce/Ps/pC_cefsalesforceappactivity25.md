@@ -17,6 +17,7 @@ Name = cef-salesforce-app-activity-25
     """Display\\=({object}.+?) record type was changed from""",
     """({app}Sales Cloud)""",
   ]
-}
+
+
 }
 ```

@@ -15,7 +15,7 @@ Name = cef-kaspersky-security-alert
     """User:\s{0,100}([^\\]{1,2000}\\*)?(SYSTEM|({user}[^\s]{1,2000}))""",
     """Result\\*Description:\s{0,100}({outcome}[^\\]{1,2000})"""
   ]
-}
+
 cef-kaspersky-security-alert = {
   Vendor = Kaspersky
   Product = Kaspersky AV
@@ -31,5 +31,6 @@ cef-kaspersky-security-alert = {
     """\Wdhost=(|({dest_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdst=({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """\Wmsg=(|({additional_info}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-   ]}
+   
+}
 ```

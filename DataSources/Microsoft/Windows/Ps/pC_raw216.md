@@ -16,6 +16,7 @@ Name = raw-216
       """({activity}A database location change) was detected from\s{1,100}\'({src_file_path}({src_file_dir}(?:[^";]{1,2000})?[\\\/;])?({src_file_name}[^\\\/";]{1,2000}?(\.({src_file_ext}[^\\\/\.;"]{1,2000}))))'\s{1,100}to\s{1,100}\'({file_path}({file_parent}(?:[^";]{1,2000})?[\\\/;])?({file_name}[^\\\/";]{1,2000}?(\.({file_ext}[^\\\/\.;"]{1,2000}))))\'\."""
     ]
     DupFields = [ "host->dest_host" ]
-  }
+  
+
 }
 ```

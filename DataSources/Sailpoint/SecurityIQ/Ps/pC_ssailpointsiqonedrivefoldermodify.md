@@ -10,7 +10,7 @@ Name = s-sailpointsiq-onedrive-folder-modify
     """itemtype\s:\s({file_type}[^|]{1,2000})\s\|"""
   ]
   DupFields = [ "host->dest_ip", "activity->accesses" ]
-}
+
 s-sailpointsiqonedrive-activity = {
   Vendor = Sailpoint
   Product = SecurityIQ
@@ -24,5 +24,6 @@ s-sailpointsiqonedrive-activity = {
     """userfullname\s:\s({user_email}[^|]{1,2000})\s\|""",
     """objectname\s:\s({file_name}[^|]{1,2000}) \|""",
     """\spath\s:\s({file_parent}[^|]{1,2000})\s\|"""
-  ]}
+  
+}
 ```

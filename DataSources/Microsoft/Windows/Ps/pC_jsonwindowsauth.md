@@ -10,7 +10,7 @@ Name = json-windows-auth
     """"environment":"({realm}[^"]{1,2000})""",
     """"host":"({host}[^"]{1,2000})","@version"""",
   ]
-}
+
 json-windows-events = {
   Vendor = Microsoft
   Product = Windows
@@ -41,5 +41,6 @@ json-windows-events = {
     """"service-name":"({service_name}[^"]{1,2000})""",
     """auth-package":"({auth_package}[^"]{1,2000})"""",
     """workstation-name":"(-|({src_host_windows}[^"]{1,2000}))""""
-  ]}
+  
+}
 ```

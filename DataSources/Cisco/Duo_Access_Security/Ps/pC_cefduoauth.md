@@ -21,6 +21,7 @@ Name = cef-duo-auth
     """\WflexString1=(?:n\/a|({factor}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wcs6=({new_enrollment}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
-}
+
+
 }
 ```

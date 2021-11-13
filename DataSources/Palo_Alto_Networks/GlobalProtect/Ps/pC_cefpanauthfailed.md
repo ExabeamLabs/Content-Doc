@@ -18,6 +18,7 @@ Name = cef-pan-auth-failed
     """Client OS( version)?:\s{1,100}({os}[^":]{1,2000})(,|\.)""",
     """Reason:\s{1,100}({failure_reason}[^"\.,]{1,2000}?)\s{0,100}(,|\.)"""
   ]
-}
+
+
 }
 ```

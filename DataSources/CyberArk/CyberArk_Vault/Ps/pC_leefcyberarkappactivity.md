@@ -24,6 +24,7 @@ Name = leef-cyberark-app-activity
     """ProcessName =({process_name}[^;=]{1,2000})""",
   ]
   DupFields = [ "activity->accesses" ]
-}
+
+
 }
 ```

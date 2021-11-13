@@ -22,6 +22,7 @@ Name = s-common-ftp-delete-1
     """\]dele\s{1,100}(\S+\s{1,100}){2}({outcome}\d{1,100})""",
   ]
   DupFields = [ "host->dest_host", "file_ext->host_file_ext" ]
-}
+
+
 }
 ```

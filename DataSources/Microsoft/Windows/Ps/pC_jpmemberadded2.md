@@ -3,7 +3,7 @@
 {
 Name = jp-member-added-2
   Conditions = [ "4732", "セキュリティが有効なローカル" ]
-}
+
 jp-member-added = {
   Vendor = Microsoft
   Product = Windows
@@ -23,5 +23,6 @@ jp-member-added = {
     """グループ:.+?グループ ドメイン:\s{1,100}({group_domain}[^\s]{1,2000})""",
     """セキュリティが有効な({group_type}[^\s]{1,2000})\s{1,100}グループにメンバーが追加されました。""",
   ]
-  DupFields = [ "host->dest_host" ]}
+  DupFields = [ "host->dest_host" 
+}
 ```

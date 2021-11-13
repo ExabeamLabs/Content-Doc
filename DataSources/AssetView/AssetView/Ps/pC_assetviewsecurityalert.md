@@ -17,6 +17,7 @@ Name = assetview-security-alert
     """("\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d.\d\d\d",){2}("[^"]{0,2000}",){58}"({usb_vendor}[^"]{1,2000})""",
     """("\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d.\d\d\d",){2}("[^"]{0,2000}",){3}"({asset_id}[^"]{1,2000})"""",
   ]
-}
+
+
 }
 ```

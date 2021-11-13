@@ -16,6 +16,7 @@ Name = cef-absolute-security-alert
     """\Wcn1=(|({alert_id}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wmsg=(|({additional_info}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
   ]
-}
+
+
 }
 ```

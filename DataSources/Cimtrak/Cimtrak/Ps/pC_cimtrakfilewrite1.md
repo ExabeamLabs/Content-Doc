@@ -3,7 +3,7 @@
 {
 Name = cimtrak-file-write-1
   Conditions = [ """CTK:""", """|Cimcor|CimTrak|""", """|File Added|""" ]
-}
+
 cimtrak-file-operations {
   Vendor = Cimtrak
   Product = Cimtrak
@@ -19,5 +19,6 @@ cimtrak-file-operations {
     """filePath=(|({file_path}({file_parent}[^"]{0,2000}?)[\\\/]{0,2000}({file_name}[^\\\/"]{1,2000}?(\.({file_ext}[^\\\/\.\s"]{1,2000}))?)))\s{1,100}(\w+=|$)""",
     """processName =(|({process}({directory}.*?)(\/+({process_name}[^\/]{1,2000}?))?))\s{1,100}(\w+=|$)""",
     """processID=({process_id}[^\s]{1,2000})""",
-  ]}
+  
+}
 ```

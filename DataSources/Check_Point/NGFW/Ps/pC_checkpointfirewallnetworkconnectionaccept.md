@@ -9,6 +9,7 @@ Name = checkpoint-firewall-network-connection-accept
   TimeFormat = "ddMMMyyyy','HH:mm:ss"
   Conditions = [ """,log,accept,""" ]
   Fields = [
-    """({time}\d{1,100}\w+\d\d\d\d,\d{1,100}:\d{1,100}:\d{1,100}),(|({host}[^,]{0,2000})),log,({action}accept),([^,]{0,2000}
+    """({time}\d{1,100}\w+\d\d\d\d,\d{1,100}:\d{1,100}:\d{1,100}),(|({host}[^,]{0,2000})),log,({action}accept),([^,]{0,2000
+
 }
 ```

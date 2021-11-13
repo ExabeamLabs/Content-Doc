@@ -20,6 +20,7 @@ Name = microsoft-scep-epp-alert
     """process="({process}[^"]{1,2000}\\({process_name}[^"]{1,2000}))"""",
   ]
   DupFields=[ "dest_ip->src_ip", "dest_host->src_host" ]
-}
+
+
 }
 ```

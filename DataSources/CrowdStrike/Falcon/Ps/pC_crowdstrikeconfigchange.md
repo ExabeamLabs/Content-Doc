@@ -20,6 +20,7 @@ Name = crowdstrike-config-change
       """"FirewallOption":"({object}[^"]{1,2000})""""
     ]
     DupFields = ["activity->event_code"]
-  }
+  
+
 }
 ```

@@ -7,7 +7,7 @@ Name = ping-auth-failed-1
   Fields = ${PingParserTemplates.ping-events.Fields} [
     """(\|\s{0,100}(AUTHN_ATTEMPT|OAuth|SSO)\s{0,100}\|)\s{0,100}([^\|]{0,2000}\|){9}\s{0,100}(|({failure_reason}[^\|]{0,2000}?))\s{0,100}\|""",
   ]
-}
+
 ping-events = {
   Vendor = Ping Identity
   Product = Ping Identity
@@ -24,5 +24,6 @@ ping-events = {
     """"PingHost":\s{0,100}"({host}[^"]{1,2000})""",
     """"EventType":\s{0,100}"({activity}[^"]{1,2000})""",
     """"DescriptionFail":\s{0,100}"({failure_reason}[^"]{1,2000})""",
-  ]}
+  
+}
 ```

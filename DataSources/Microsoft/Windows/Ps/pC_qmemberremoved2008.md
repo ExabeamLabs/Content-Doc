@@ -20,6 +20,7 @@ Name = q-member-removed-2008
     """EventType="{0,100}({outcome}[^"\s]{1,2000})"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

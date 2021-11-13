@@ -20,6 +20,7 @@ Name = cisco-nac-logon-2
     """,\s{0,100}EndPointMACAddress=({mac_addrress}[^\s,]{1,2000})""",
     """, AuthenticationMethod=({auth_type}[^,\s]{1,2000})"""
   ]
-}
+
+
 }
 ```

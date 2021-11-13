@@ -36,6 +36,7 @@ Name = proofpoint-email
     NameTemplate = """Proofpoint DLP email ${subject} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address"]}
+      {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address"]
+
 }
 ```

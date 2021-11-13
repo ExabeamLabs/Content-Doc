@@ -24,6 +24,7 @@ Name = observeit-useractivity
     """\sProcessName =({process_name}[^;]{1,2000}?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
     """\sViewerURL=({additional_info}[^;]{1,2000}?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
   ]
-}
+
+
 }
 ```

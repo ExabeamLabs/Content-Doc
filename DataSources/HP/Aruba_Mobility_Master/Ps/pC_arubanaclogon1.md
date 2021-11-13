@@ -4,7 +4,7 @@
 Name = aruba-nac-logon-1
   DataType = "nac-logon"
   Conditions = [ """CEF:""", """"ident":""", """"extradata":""", """"ttam_file":""", """"ttam_reporter":""", """Result\=Successful""", """method"""]
-}
+
 cef-aruba-nac-logon-2 = {
     Vendor = HP
     Product = Aruba Mobility Master
@@ -24,5 +24,6 @@ cef-aruba-nac-logon-2 = {
       """server\\*=({auth_server}[^"]{1,2000})"""",
       """servername\\*=({auth_server}[^=]{1,2000})\s{1,100}\w+\\*=""",
       """username\\*=({user}\w+)\s"""
-    ]}
+    
+}
 ```

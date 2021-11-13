@@ -22,6 +22,7 @@ Name = s-process-alert-carbonblack-2
     """process_path='({process}({process_directory}(?:[^=]{1,2000})?[\\\/])?({process_name}[^\\\/=]{1,2000}))'\s{1,100}\w+=""",
     """process_name='({process_name}[^']{1,2000})'""",
   ]
-}
+
+
 }
 ```

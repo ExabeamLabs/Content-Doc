@@ -19,6 +19,7 @@ Name = microsoft-print-activity-2
     """[\[\(]{1,2000}({access}Read-Only)[\]\)]{1,2000}""",
     """({event_code}307)""",
     """exabeam_host=({host}[^\s]{1,2000})""",
-    """Document \d{1,100}
+    """Document \d{1,100
+
 }
 ```

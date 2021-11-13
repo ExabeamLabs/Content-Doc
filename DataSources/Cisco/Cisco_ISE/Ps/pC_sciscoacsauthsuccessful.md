@@ -15,6 +15,7 @@ Name = s-cisco-acs-auth-successful
       """User-Name =(?!host\/)(?:[a-f0-9]{12}|({user}[^,]{1,2000}))""",
       """NAS-IP-Address=(::ffff:)?({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
 	]
-}
+
+
 }
 ```

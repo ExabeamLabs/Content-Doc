@@ -22,6 +22,7 @@ Name = skyhigh-dlp-alert-2
     """,serviceNames=\[({service_name}[^,\]]{1,2000})""",
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

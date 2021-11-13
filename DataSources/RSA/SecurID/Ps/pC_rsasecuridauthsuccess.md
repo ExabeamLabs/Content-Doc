@@ -16,6 +16,7 @@ Name = rsa-securid-auth-success
     """POLICY_ID="({policy}[^"]{1,2000})""",
     """STATUS="({outcome}[^"]{1,2000})"""
     ]
-}
+
+
 }
 ```

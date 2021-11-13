@@ -14,6 +14,7 @@ Name = cef-duo-app-login
     """\sintegration=({app}.+?)\s{1,100}\w+=""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
-}
+
+
 }
 ```

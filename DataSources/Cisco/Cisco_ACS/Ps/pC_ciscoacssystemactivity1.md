@@ -6,8 +6,8 @@ Name = cisco-acs-system-activity-1
   Product = Cisco ACS
   DataType = "app-activity"
   Conditions = [ """|Cisco Secure ACS|""", """categoryOutcome=/Success""" ]
-}
-cef-acs-auth={
+
+cef-acs-auth= {
  Vendor = Cisco ACS
  Lms = Direct
  TimeFormat = "epoch"
@@ -29,5 +29,6 @@ cef-acs-auth={
    """\scategoryOutcome=\/({outcome}[^\s]{1,2000})""",
    """\sahost=({src_host}[^\s]{1,2000})""",
    """\sdvchost=({host}[^\s]{1,2000})"""
-   ]}
+   
+}
 ```

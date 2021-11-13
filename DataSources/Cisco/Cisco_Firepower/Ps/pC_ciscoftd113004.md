@@ -15,6 +15,7 @@ Name = cisco-ftd-113004
     """-113004:\s{0,100}({event_name}AAA user authentication Successful)"""
     """user\s{0,100}=\s{0,100}(({user_email}[^@]{1,2000}@[^\s]{1,2000})|({user}[^\s]{1,2000}))"""
   ]
-}
+
+
 }
 ```

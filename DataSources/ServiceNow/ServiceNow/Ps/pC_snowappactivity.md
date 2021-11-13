@@ -19,6 +19,7 @@ Name = snow-app-activity
     """,dv_assigned_to="(|({user}[^"]{1,2000}))""",
     """({app}ServiceNow)""",
   ]
-}
+
+
 }
 ```

@@ -21,6 +21,7 @@ Name = microsoft-applocker-security-alert
     """<FileHash>({md5}[^"<]{1,2000})""",
   ]
   DupFields = ["malware_url->process_name"]
-}
+
+
 }
 ```

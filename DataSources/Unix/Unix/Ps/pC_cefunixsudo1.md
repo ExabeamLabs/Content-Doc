@@ -20,6 +20,7 @@ Name = cef-unix-sudo-1
       """({event_code}sudo)"""
     ]
     DupFields = [ "event_code->process_name" ]
-  }
+  
+
 }
 ```

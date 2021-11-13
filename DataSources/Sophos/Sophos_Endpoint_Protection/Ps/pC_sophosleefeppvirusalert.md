@@ -19,6 +19,7 @@ Name = sophos-leef-epp-virus-alert
           """src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
           """ActionName =({outcome}.*?)\s{1,100}\w+=""", 
   ]
-}
+
+
 }
 ```

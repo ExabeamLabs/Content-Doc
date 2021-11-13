@@ -3,7 +3,7 @@
 {
 Name = juniper-process-created-2
   Conditions = [ """]: UI_JUNOSCRIPT_CMD: User """, """ client to run command """ ]
-}
+
 juniper-process-created = {
   Vendor = Juniper Networks
   Product = Juniper Networks
@@ -15,5 +15,6 @@ juniper-process-created = {
     """\s{1,100}\d{1,100}\s\d\d:\d\d:\d\d\s({host}[^\s]{1,2000})\s""",
     """User '({user}[^']{1,2000})'""",
     """ command '({command_line}[^']{1,2000}?)\s{0,100}'""",
-  ]}
+  
+}
 ```

@@ -17,6 +17,7 @@ Name = s-guardium-db-access
     """({process_name}[^\|]{1,2000})\|App\sUser\sName =({user}[^\|]{1,2000})\|Service\sName =({service_name}[^\|]{1,2000})\|Object\/Field=({database_object}[^\|]{1,2000})\|Sum\sOf\sRecord\sAffected=({sql_count}\d{1,100})""",
   ]
   DupFields = ["user->db_user"]
-}
+
+
 }
 ```

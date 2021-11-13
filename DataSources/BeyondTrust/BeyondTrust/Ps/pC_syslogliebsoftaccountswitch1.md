@@ -18,6 +18,7 @@ Name = syslog-liebsoft-account-switch-1
     """sMessage="checked-out password for\s{0,100}\([^\)]{0,2000}\)'(({account_domain}[^\\\s']{1,2000})\\+)?({account}[^\\\s']{1,2000})""",
     """sEventID="({event_name}[^"]{1,2000})"""
     ]
-  }
+  
+
 }
 ```

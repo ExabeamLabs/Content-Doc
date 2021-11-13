@@ -6,7 +6,7 @@ Name = cas-login-failed
   Conditions = ["""ACTION: AUTHENTICATION_FAILED""", """ACTION: """, """WHO: """, """WHEN: """, """CLIENT IP ADDRESS: """, """SERVER IP ADDRESS: """]
   Fields = ${CASParserTemplates.cas-template.Fields} [
   ]
-}
+
 cas-template = {
     Vendor = Microsoft
     Product = Cloud App Security (MCAS)
@@ -23,5 +23,6 @@ cas-template = {
       """ACTION: ({activity}[^#\s]{1,2000})"""
       """service=({object}[^,]{1,2000})"""
     ]
-    DupFields = ["domain->email_domain"]}
+    DupFields = ["domain->email_domain"
+}
 ```

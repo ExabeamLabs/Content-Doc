@@ -25,6 +25,7 @@ Name = cef-hp-print-activity
     """\sdvchost=({host}.+?)\s{1,100}(\w+=|$)""",
     """CEF:([^\|]{0,2000}\|){5}({activity}[^\|]{1,2000})\|""",
   ]
-}
+
+
 }
 ```

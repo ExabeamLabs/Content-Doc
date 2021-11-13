@@ -14,6 +14,7 @@ Name = proxysg-auth-failed-2
     """Authentication failed from ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}): user '({user}[^\s']{1,2000})""",
     """\(realm ({realm}[^\)]{1,2000})""",
   ]
-}
+
+
 }
 ```

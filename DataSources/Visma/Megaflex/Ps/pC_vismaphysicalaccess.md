@@ -23,6 +23,7 @@ Name = visma-physical-access
     """"sourceArea".*?"id":({source_location_door_id}[^,]{1,2000}),""",
     """"sourceArea".*?"name":"({source_location_full}[^"]{1,2000})"""",
   ]
-}
+
+
 }
 ```

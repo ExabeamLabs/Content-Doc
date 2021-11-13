@@ -11,7 +11,7 @@ Name = xml-1102
     """<Computer>({host}[^<]{1,2000}?)<\/Computer>""",
     """Security ID:\s{0,100}({user_sid}[^\s:]{1,2000})""",
   ]
-}
+
 raw-1102 = {
   Vendor = Microsoft
   Product = Windows
@@ -26,5 +26,6 @@ raw-1102 = {
     """\s{1,100}Domain Name:\s{1,100}({domain}[^\s]{1,2000})""",
     """\s{1,100}Logon ID:\s{1,100}({logon_id}[^\s]{1,2000})""",
   ]
-  DupFields = [ "host->dest_host" ]}
+  DupFields = [ "host->dest_host" 
+}
 ```

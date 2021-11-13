@@ -26,6 +26,7 @@ Name = proofpoint-email-4
     """"return-path":\["(<>|({return_path}[^"]{1,2000}))""""
   ]
   DupFields = [ "attachment->attachments" ]
-}
+
+
 }
 ```

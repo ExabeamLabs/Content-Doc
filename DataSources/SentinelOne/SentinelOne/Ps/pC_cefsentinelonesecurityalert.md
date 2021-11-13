@@ -33,6 +33,7 @@ Name = cef-sentinelone-security-alert
     """threatClassification=({alert_type}[^\|]{1,2000})""", 
   ]
   DupFields = ["file_name->process_name", "file_path->process"]
-}
+
+
 }
 ```

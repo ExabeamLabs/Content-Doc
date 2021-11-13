@@ -26,6 +26,7 @@ Name = s-tanium-security-alert
       """\sMatch-Details.*"{1,20}properties"{1,20}:\{"{1,20}args"{1,20}:.*?\{"{1,20}fullpath"{1,20}:"{1,20}({path}(({directory}[^"]{1,2000})[\\/])?({process_name}[^"]{1,2000}?))"{1,20}""",
       """Match-Details.*"{1,20}properties"{1,20}:\{"{1,20}args"{1,20}:"({command_line}.*?)","{1,20}cwd"""
     ]
-  }
+  
+
 }
 ```

@@ -19,6 +19,7 @@ Name = s-physical-badge-access
       """Reader_Description="{1,20}({location_door}[^"]{1,2000})""",
       """Location="{1,20}({location_city}[^"]{1,2000})"""
     ]
-  }
+  
+
 }
 ```

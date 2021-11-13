@@ -21,6 +21,7 @@ Name = q-cisco-dns-response
     """"Domain"{0,20}:"{0,20}({query}[^"]{1,2000})""",
     """"Categories"{0,20}:"{0,20}({category}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

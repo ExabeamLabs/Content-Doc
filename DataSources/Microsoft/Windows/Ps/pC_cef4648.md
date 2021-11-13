@@ -23,6 +23,7 @@ Name = cef-4648
       """\ssrc=({src_ip}[a-fA-F:\d.]{1,2000})"""
     ]
     DupFields = ["dest_ip->host", "dest_host->host","directory->process_directory"]
-  }
+  
+
 }
 ```

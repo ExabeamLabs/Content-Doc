@@ -15,6 +15,7 @@ Name = s-infoblox-dhcp-3
     """ for ({dest_ip}[A-Fa-f:\d.]{1,2000}) \(({dest_mac}\S+)\)""",
   ]
   DupFields = [ "dest_host->user" ]
-}
+
+
 }
 ```

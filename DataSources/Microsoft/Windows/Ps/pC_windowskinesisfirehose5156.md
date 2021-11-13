@@ -14,7 +14,7 @@ Name = windows-kinesis-firehose-5156
     """Layer Name:\s{0,100}({layer_name}[^\s]{0,2000})""",    
   ]
   DupFields = [ "host->local_asset" ] 
-}
+
 windows-kinesis-firehose = {
   Vendor = Microsoft
   Product = Windows
@@ -24,5 +24,6 @@ windows-kinesis-firehose = {
     """"EventId":({event_code}\d{1,5})"""
     """"MachineName":"({host}[^"]{1,2000})"""",
     """"TimeCreated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""
-  ]}
+  
+}
 ```

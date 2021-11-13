@@ -4,7 +4,7 @@
 Name = quest-change-account-password-change
      DataType = "password-change"
      Conditions = [ """CEF:""", """Quest Software""", """|Change Auditor|""", """|Active Directory|""", """User password changed"""  ]	 
-}
+
 quest-change-auditor-events = {
     Vendor = Quest Software
     Product = Change Auditor
@@ -21,5 +21,6 @@ quest-change-auditor-events = {
       """suser=(({domain}[^\\]{1,2000})\\*)?({user}[^=]{1,2000}?)\s\w+=""",
       """event=({event_name}[^=]{1,2000}?)\s\w+=""",
       """msg=({additional_info}[^=]{1,2000}?)\s{0,100}\w+="""
-    ]}
+    
+}
 ```

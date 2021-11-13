@@ -28,6 +28,7 @@ Name = symantec-usb-insert-1
     NameTemplate = """Symantec ${device_type} insert found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="device", Name ="dest_address", Fields=["dest_host->host_name", "dest_ip->ip_address"]}
+      {EntityType="device", Name ="dest_address", Fields=["dest_host->host_name", "dest_ip->ip_address"]
+
 }
 ```

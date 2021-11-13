@@ -32,6 +32,7 @@ Name = s-symantec-web-activity-1
     """"total_bytes":({bytes}\d{1,100})""",
     """"action":"({action}[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

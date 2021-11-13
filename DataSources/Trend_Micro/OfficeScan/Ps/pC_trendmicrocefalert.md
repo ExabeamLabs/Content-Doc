@@ -38,6 +38,7 @@ Name = trendmicro-cef-alert
     """\sfileHash=({md5}\S+)""",
   ]
   DupFields = [ "attachment->file_name" ]
-}
+
+
 }
 ```

@@ -22,6 +22,7 @@ Name = s-xml-4724
     """<Keyword>({outcome}[^<]{1,2000}?)<\/Keyword>""",
     """({event_name}An attempt was made to reset an account's password)"""
   ]
-}
+
+
 }
 ```

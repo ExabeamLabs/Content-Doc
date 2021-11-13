@@ -20,6 +20,7 @@ Name = swift-app-login
       """msg=({additional_info}.+?)Operator Profiles:\s{0,100}({profiles}.+?)(\s{0,100}\w+=|\s{0,100}$)"""
       """msg=.+?using\s{0,100}\'({platform}[^\']{1,2000})"""
     ]
-  }
+  
+
 }
 ```

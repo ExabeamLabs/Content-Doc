@@ -14,6 +14,7 @@ Name = raw-unix-dhcp-reversemap
     """Added reverse map from ({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).+? to ({dest_host}[^\s"$]{1,2000})"""
   ]
   DupFields = [ "dest_host->user" ]
-}
+
+
 }
 ```

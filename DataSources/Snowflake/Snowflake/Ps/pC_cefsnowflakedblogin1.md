@@ -17,6 +17,7 @@ Name = cef-snowflake-db-login-1
     """"REPORTED_CLIENT_TYPE":"({app}[^"]{1,2000})"""",
     """"IS_SUCCESS":"({outcome}[^"]{1,2000})"""",
   ]
-}
+
+
 }
 ```

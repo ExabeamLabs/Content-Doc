@@ -30,6 +30,7 @@ Name = cef-cortex-xdr-alert-1
     """\Wrequest=({malware_url}[^\=]{1,2000})\s{1,100}\w{1,100}=""",
     """\Wincident=({additional_info}[^\s]{1,2000})\s{1,100}\w{1,100}="""
   ]
-}
+
+
 }
 ```

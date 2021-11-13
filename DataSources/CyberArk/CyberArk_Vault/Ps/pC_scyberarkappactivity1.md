@@ -4,7 +4,7 @@
 Name = s-cyberark-app-activity-1
   DataType = "app-activity"
   Conditions = [ """%CYBERARK:""", """Message="Window Title""", """;Safe=""" ]
-}
+
 s-cyberark-events {
   Vendor = CyberArk
   Product = CyberArk Vault
@@ -24,5 +24,6 @@ s-cyberark-events {
     """;LogonDomain="(|[\d\.]{1,2000}|({account_domain}[^"]{1,2000}?))"""",
     """;DeviceType="(|({dest_service}[^"]{1,2000}))"""",
     """;Address="(|(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(\:({dest_port}\d{1,100}))?|({dest_host}[\w\-.]{1,2000})))""""
-  ]}
+  
+}
 ```

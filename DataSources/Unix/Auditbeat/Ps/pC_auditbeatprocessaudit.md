@@ -28,6 +28,7 @@ Name = auditbeat-process-audit
     """tags"{1,20}:"{1,20}\[({tags}[^"]{1,2000})\]""",
     """os"{1,20}:"{1,20}({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin|Ubuntu)""",
 	]
-}
+
+
 }
 ```

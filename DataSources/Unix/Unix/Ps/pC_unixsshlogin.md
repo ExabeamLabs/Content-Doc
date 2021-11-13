@@ -18,6 +18,7 @@ Name = unix-ssh-login
     """SSH: ({event_name}[^<]{1,2000})\s{1,100}<""",
     """({event_code}SSH)"""
   ]
-}
+
+
 }
 ```

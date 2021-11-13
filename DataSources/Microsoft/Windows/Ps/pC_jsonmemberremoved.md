@@ -25,6 +25,7 @@ Name = json-member-removed
     """"TargetSid":"({group_id}[^"]{1,2000})"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

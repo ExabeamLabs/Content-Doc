@@ -18,6 +18,7 @@ Name = zscaler-vpn-end-1
     """"TotalBytesTx":\s{0,100}({bytes_out}\d{1,100}),""",
     """"SessionStatus":\s{0,100}"({event_name}[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

@@ -24,6 +24,7 @@ Name = raw-5157
     """\sUser:\s{0,100}(N/A|({user}.+?))\s{0,100}ComputerName:""",
   ]
   DupFields = [ "host->local_asset" ]
-}
+
+
 }
 ```

@@ -4,7 +4,7 @@
 Name = mastersam-pam-auth-successful-3
   DataType = "authentication-successful"
   Conditions = [ """ Activity:login_verified_otp """ ]
-}
+
 mastersam-pam-events = {
   Vendor = MasterSAM
   Product = MasterSAM PAM
@@ -19,5 +19,6 @@ mastersam-pam-events = {
     """\Wstatus=({outcome}.+?)\s{1,100}(\w+=|$)""",
     """\Wfailed_message=({failure_reason}.+?)\s{1,100}(\w+=|$)""",
     """\WActivity:\s{0,100}({activity}.+?)\s{1,100}User:""",
-  ]}
+  
+}
 ```

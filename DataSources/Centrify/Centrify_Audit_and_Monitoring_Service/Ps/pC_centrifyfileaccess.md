@@ -20,6 +20,7 @@ Name = centrify-file-access
     """arguments=({file_path}({file_parent}.*?)(\/+({file_name}[^\/]{1,2000}?))?)\s{0,100}(\w+=|$)""",
     """reason=({failure_reason}.+?)\s{0,100}$"""
   ]
-}
+
+
 }
 ```

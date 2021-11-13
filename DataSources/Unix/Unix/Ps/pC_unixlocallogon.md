@@ -15,6 +15,7 @@ Name = unix-local-logon
     """({event_code}Started Session)"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

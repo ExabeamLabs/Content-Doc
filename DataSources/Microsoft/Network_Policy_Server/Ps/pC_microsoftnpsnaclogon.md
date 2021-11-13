@@ -16,6 +16,7 @@ Name = microsoft-nps-nac-logon
     """\sdntdom=({domain}[^\s]{1,2000})""",
     """\sdestinationZoneURI=({network}.+?)\s{1,100}\w+="""
   ]
-}
+
+
 }
 ```

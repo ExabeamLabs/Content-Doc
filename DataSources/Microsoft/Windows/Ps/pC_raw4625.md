@@ -34,6 +34,7 @@ Name = raw-4625
       """(EventType|EVENT_TYPE)="({outcome}[^"]{1,2000})"""
     ]
     DupFields = ["host->dest_host","src_host_windows->src_host"]
-  }
+  
+
 }
 ```

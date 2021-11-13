@@ -22,6 +22,7 @@ Name = rsa-dlp-alert
     """usageApplication=({process}({directory}(?:(\w+:)?[^:]{1,2000})?[\\\/])?({process_name}.+?))\s{1,100}\w+="""
   ]
   DupFields = ["directory->process_directory"]
-}
+
+
 }
 ```

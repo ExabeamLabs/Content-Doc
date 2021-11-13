@@ -19,6 +19,7 @@ Name = cef-skyformation-login-2
     """\Wsuser=({user_email}[^@\s]{1,2000}@({email_domain}[^@\s]{1,2000}))""",
     """\Wsuser=({user_fullname}\w+(\s{1,100}\w+)+)""",
   ]
-}
+
+
 }
 ```

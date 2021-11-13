@@ -3,8 +3,8 @@
 {
 Name = s-digitalguardian-file-upload
   Conditions = [ """Operation_ID="21"""", """Agent_UTC_Time""" ]
-}
-splunk-digitalguardian-file-upload ={
+
+splunk-digitalguardian-file-upload = {
   Vendor = Digital Guardian
   Product = Digital Guardian Endpoint Protection
   Lms = Splunk
@@ -32,5 +32,6 @@ splunk-digitalguardian-file-upload ={
     """Source_IP_Address="(?:|({src_ip}[^"]{1,2000}))"""",
     """Operation_ID="({event_code}[^"]{1,2000})""""
   ]
-  DupFields = [ "host->dest_host" ]}
+  DupFields = [ "host->dest_host" 
+}
 ```

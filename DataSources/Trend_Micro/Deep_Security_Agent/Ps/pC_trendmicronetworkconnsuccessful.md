@@ -36,6 +36,7 @@ Name = trendmicro-network-conn-successful
      """act=detectOnly""",
      """CEF:"""
   ]
-}
+
+
 }
 ```

@@ -26,6 +26,7 @@ Name = s-windows-5157
     """\s{0,100}Application Name:\s{0,100}({process}(({directory}.+)[\\\/])?({process_name}.+?))\s{0,100}Network Information:"""    
   ]
   DupFields = [ "host->local_asset","directory->process_directory" ]
-}
+
+
 }
 ```

@@ -15,6 +15,7 @@ Name = syslog-f5-dns-query
     """:\s{0,100}view\s{1,100}({view}.+?)\s{0,100}:""",
     """query:\s{0,100}({query}\S+?)\s{1,100}IN\s{1,100}({query_type}\S+)\s{1,100}({query_flags}\S+)\s{1,100}(\(({dest_ip}.+?)(%\d{1,100}?)\))?""",
   ]
-}
+
+
 }
 ```

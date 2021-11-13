@@ -19,6 +19,7 @@ Name = foxt-file-download
     """({event_code}sshftl_download_ok)"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

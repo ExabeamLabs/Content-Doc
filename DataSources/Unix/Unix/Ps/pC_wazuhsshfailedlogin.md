@@ -9,6 +9,7 @@ Name = wazuh-ssh-failed-login
     """sshd\[.+?Failed.+?for (({domain}[^\\:]{1,2000})\\+)?({user}[\w.'\-\\$]{1,2000})"""
   ]
   DupFields = [ "description->failure_reason" ]
-}
+
+
 }
 ```

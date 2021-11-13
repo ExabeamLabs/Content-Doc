@@ -23,6 +23,7 @@ Name = sangfor-network-alert
     """, threat level:\s{0,100}({alert_severity}[^,]{1,2000})""",
     """, action:\s{0,100}({outcome}[^,\s]{1,2000})""",
   ]
-}
+
+
 }
 ```

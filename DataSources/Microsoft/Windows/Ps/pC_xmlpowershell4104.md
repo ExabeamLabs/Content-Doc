@@ -26,6 +26,7 @@ Name = xml-powershell-4104
     """"ScriptBlockText":"({scriptblock_text}[^"]{1,2000}?)\s{0,20}""""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

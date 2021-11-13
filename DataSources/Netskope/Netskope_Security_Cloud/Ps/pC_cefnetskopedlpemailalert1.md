@@ -10,7 +10,7 @@ Name = cef-netskope-dlp-email-alert-1
     """"site":"({site_at}[^"]{1,2000})""""
   ]
   DupFields = [ "object->file_name", "recipient->external_address", "sender->from_user_at" ]
-}
+
 cef-netskope-activity = {
   Vendor = Netskope
   Product = Netskope Security Cloud
@@ -39,5 +39,6 @@ cef-netskope-activity = {
     """"page_site":\s{0,100}"({app}[^"]{1,2000})"""",
     """"dstport":"\s{0,100}({dest_port}\d{1,100})""""
   ]
-  DupFields = ["domain->email_domain", "file_type->mime"]}
+  DupFields = ["domain->email_domain", "file_type->mime"
+}
 ```

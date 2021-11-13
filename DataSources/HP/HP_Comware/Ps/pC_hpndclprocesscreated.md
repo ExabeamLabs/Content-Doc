@@ -17,6 +17,7 @@ Name = hp-ndcl-process-created
       """Command\s{0,100}is\s{0,100}({command_line}.+?)\s{0,100}Source:"""
     ]
     DupFields = [ "host->dest_host" ]
-  }
+  
+
 }
 ```

@@ -19,6 +19,7 @@ Name = n-forwarded-cef-4769
       """sntdom=({domain}[^\s]{1,2000})""",
       """suser=({user}[^\s]{1,2000})"""
     ]
-  }
+  
+
 }
 ```

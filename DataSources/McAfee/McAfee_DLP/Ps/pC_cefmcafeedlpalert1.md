@@ -29,6 +29,7 @@ Name = cef-mcafee-dlp-alert-1
         """(\s|\|)ad\.IncidentId\.l=({alert_id}\d{1,100})\s""",
         """(\s|\|)act=({outcome}[^=]{1,2000}?)\s{1,100}([\w\.-]{1,2000}=|$)"""
       ]
-    }
+    
+
 }
 ```

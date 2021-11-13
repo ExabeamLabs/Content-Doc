@@ -18,6 +18,7 @@ Name = cisco-ftd-connection-built-302013
 """Built inbound.*?for\s{1,100}({src_interface}.+?):(({src_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]{0,2000}:[A-Fa-f0-9%.:]{1,2000}(th0)?))|({src_host}[^\s]{1,2000}?))((\/({src_port}\d{1,100})\s{1,100})|\s{1,100})\((({src_translated_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]{0,2000}:[A-Fa-f0-9%.:]{1,2000}(th0)?))|({src_translated_host}[^\s]{1,2000}?))(\/({src_translated_port}\d{1,100}))?\)(\(.+?\))?\s{1,100}to\s{1,100}({dest_interface}.+?):(({dest_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]{0,2000}:[A-Fa-f0-9%.:]{1,2000}(th0)?))|({dest_host}[^\s]{1,2000}?))((\/({dest_port}\d{1,100})\s{1,100})|\s{1,100})\((({dest_translated_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]{0,2000}:[A-Fa-f0-9%.:]{1,2000}(th0)?))|({dest_translated_host}[^\s]{1,2000}?))(\/({dest_translated_port}\d{1,100}))?\)(\s{1,100}\(({user}.+?)\))?"""
 
  ]
-}
+
+
 }
 ```

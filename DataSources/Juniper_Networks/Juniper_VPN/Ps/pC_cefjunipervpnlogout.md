@@ -17,6 +17,7 @@ Name = cef-juniper-vpn-logout
     """\sshost=({src_host}.+?)(\s{1,100}\w+=|$)""",
   ]
   DupFields = [ "dest_ip->host", "dest_host->host" ]
-}
+
+
 }
 ```

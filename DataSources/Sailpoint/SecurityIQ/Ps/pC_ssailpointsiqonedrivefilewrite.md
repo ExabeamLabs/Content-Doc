@@ -9,7 +9,7 @@ Name = s-sailpointsiq-onedrive-file-write
     """actiontype\s:\sFile\s({activity}[^\s]{1,2000})(\s|\sExtended\s)\|"""
   ]
   DupFields = [ "host->dest_ip" ]
-}
+
 s-sailpointsiqonedrive-activity = {
   Vendor = Sailpoint
   Product = SecurityIQ
@@ -23,5 +23,6 @@ s-sailpointsiqonedrive-activity = {
     """userfullname\s:\s({user_email}[^|]{1,2000})\s\|""",
     """objectname\s:\s({file_name}[^|]{1,2000}) \|""",
     """\spath\s:\s({file_parent}[^|]{1,2000})\s\|"""
-  ]}
+  
+}
 ```

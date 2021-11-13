@@ -19,6 +19,7 @@ Name = vmware-id-manager-obj-access
     """CN=(Not Available|({user_fullname}\w+(\s{1,100}\w+)+)|({user}[^,]{1,2000})),(?:OU|DC|CN)=""",
     """product=\\*"({app}[^\\"=:]{1,2000})\\*"""",
   ]
-}
+
+
 }
 ```

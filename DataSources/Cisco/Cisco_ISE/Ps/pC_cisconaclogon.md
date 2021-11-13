@@ -25,6 +25,7 @@ Name = cisco-nac-logon
     """(?i)(MacAddress)=({mac_address}[^,\s]{1,2000}),""",
   ]
   DupFields = [ "computer_name->dest_host" ]
-}
+
+
 }
 ```

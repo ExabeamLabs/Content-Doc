@@ -23,6 +23,7 @@ Name = cef-observeit-app-activity
     """\Wdntdom=(|({domain}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdst=({dest_ip}[a-fA-F\d.:]{1,2000})""",
   ]
-}
+
+
 }
 ```

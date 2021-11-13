@@ -30,6 +30,7 @@ Name = barracuda-firewall-network-connection-1
     """user=((NT AUTHORITY|({domain}[^\\]{1,2000}))\\+)?(SYSTEM|({user}[^\|]{1,2000}))""",
     """application=({app}[^\|]{1,2000})"""
    ]
-}
+
+
 }
 ```

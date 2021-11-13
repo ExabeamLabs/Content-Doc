@@ -17,6 +17,7 @@ Name = xml-sophos-security-alert
     """C:\\Users\\({user}[^\\<>]{1,2000})""",
     """</Message><Level>({alert_severity}[^\<]{1,2000})""",
   ]
-}
+
+
 }
 ```

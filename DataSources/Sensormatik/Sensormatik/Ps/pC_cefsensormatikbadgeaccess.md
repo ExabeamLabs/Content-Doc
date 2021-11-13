@@ -16,6 +16,7 @@ Name = cef-sensormatik-badge-access
     """\Wcs3=({location_door}.+?)\s{0,100}(\w+=|$)""",
     """\Wcs2=({direction}.+?)\s{0,100}(\w+=|$)"""
   ]
-}
+
+
 }
 ```

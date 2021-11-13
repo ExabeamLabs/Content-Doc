@@ -22,6 +22,7 @@ Name = syslog-json-4767
     """"TargetSid":"({target_user_sid}[^"]{1,2000})"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

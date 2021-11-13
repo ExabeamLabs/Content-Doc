@@ -25,6 +25,7 @@ Name = json-o365-activity-3
     """"UserAgent":"({user_agent}[^"]{1,2000})""""
   ]
   DupFields = ["activity->operation"]
-}
+
+
 }
 ```

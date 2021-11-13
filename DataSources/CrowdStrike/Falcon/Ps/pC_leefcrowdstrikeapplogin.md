@@ -18,6 +18,7 @@ Name = leef-crowdstrike-app-login
     """({app}FalconHost)""",
   ]
   DupFields = ["domain->email_domain"]
-}
+
+
 }
 ```

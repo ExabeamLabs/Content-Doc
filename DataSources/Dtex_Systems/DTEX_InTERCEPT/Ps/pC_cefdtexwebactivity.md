@@ -25,6 +25,7 @@ Name = cef-dtex-web-activity
     """([^\|]{0,2000}\|){5}({action}[^\|]{1,2000})""",
   ]
   DupFields = [ "host->src_host" ]
-}
+
+
 }
 ```

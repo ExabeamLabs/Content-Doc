@@ -16,7 +16,7 @@ Name = oracle-database-delete
     """"terminal":"({terminal}[^"]{1,2000})""""
   ]
   DupFields = [ "user->os_user", "db_user->account" ]
-}
+
 oracle-database-event = {
     Vendor = Oracle
     Product = Oracle Database
@@ -33,5 +33,6 @@ oracle-database-event = {
       """"sessionid":"({session_id}[^"]{1,2000})"""",
       """"priv_used":"({additional_info}[^"]{1,2000})"""",
     ]
-    DupFields = [ "db_operation->activity" ]}
+    DupFields = [ "db_operation->activity" 
+}
 ```

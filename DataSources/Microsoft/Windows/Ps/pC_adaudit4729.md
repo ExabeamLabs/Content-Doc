@@ -22,6 +22,7 @@ Name = ad-audit-4729
     """MEMBER_NAME\s{0,100}=\s{0,100}(?:-|({account_dn}CN=.+?,({account_ou}OU.+?DC=[\w-]{1,2000})))""",
   ]
   DupFields=[ "host->dest_host" ]
-}
+
+
 }
 ```

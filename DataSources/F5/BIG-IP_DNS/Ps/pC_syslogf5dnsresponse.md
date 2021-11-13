@@ -19,6 +19,7 @@ Name = syslog-f5-dns-response
     """response:\s{0,100}({full_response}.+?)\s{0,100}$"""
   ]
   DupFields = ["src_ip->host", "src_host->host"]
-}
+
+
 }
 ```

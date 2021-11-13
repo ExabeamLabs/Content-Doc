@@ -13,6 +13,7 @@ Name = s-symantec-auth-successful
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """for user \[({user}[^\]\s]{1,2000})"""
   ]
-}
+
+
 }
 ```

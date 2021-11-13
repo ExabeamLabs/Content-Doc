@@ -17,6 +17,7 @@ Name = syslog-juniper-vpn-realm
     """PulseSecure:.*?\[(127\.0\.0\.1|({src_ip}[a-fA-F:\d.]{1,2000}))\]\s{1,100}(({domain}[^\\\/]{1,2000})[\\\/])?({user}[^\s\\\/]{1,2000})[\\\/]?\((?:unknown|({realm}[^\)]{1,2000}))?""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

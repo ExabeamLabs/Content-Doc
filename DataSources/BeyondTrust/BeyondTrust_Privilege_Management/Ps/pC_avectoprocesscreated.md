@@ -25,6 +25,7 @@ Name = avecto-process-created
       """Parent Process File Name:\s{0,100}({parent_process}({parent_process_directory}(?:(\w+:)?[^:]{1,2000})?[\\\/])?({parent_process_name}.+?))\s{1,100}COM CLSID:"""
     ]
   DupFields = [ "host->dest_host","process_guid->pid","directory->process_directory" ]
-  }
+  
+
 }
 ```

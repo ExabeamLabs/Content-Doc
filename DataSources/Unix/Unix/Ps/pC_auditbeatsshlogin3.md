@@ -4,7 +4,7 @@
 Name = auditbeat-ssh-login-3
   DataType = "ssh-login"
   Conditions = ["""logstash-auditbeat""", """"process"""",  """"op":"key"""", """ssh"""]
-}
+
 auditbeat-events = {
   Vendor = Unix
   Product = Unix
@@ -34,5 +34,6 @@ auditbeat-events = {
     """"file":\{.*?"path":"(|({file_path}[^"]{1,2000}))"""",
     """"file":\{.*?"owner":"(|({file_owner}[^"]{1,2000}))"""" 
  ]
- DupFields = [ "process_directory->directory", "process->path", "host->dest_host", "pid->process_id" ]}
+ DupFields = [ "process_directory->directory", "process->path", "host->dest_host", "pid->process_id" 
+}
 ```

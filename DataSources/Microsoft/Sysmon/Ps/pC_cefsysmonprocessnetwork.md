@@ -31,6 +31,7 @@ Name = cef-sysmon-process-network
     """\Wdpid=({pid}\d{1,100})""",
   ]
   DupFields = [ "directory->process_directory" ]
-}
+
+
 }
 ```

@@ -3,7 +3,7 @@
 {
 Name = cef-o365-file-delete-1
   Conditions = [ """|Microsoft|""", """|FileDeleted|""", """eventId=""" ]
-}
+
 cef-o365-file-delete = {
   Vendor = Microsoft
   Product = Office 365
@@ -29,5 +29,6 @@ cef-o365-file-delete = {
     """\WfilePath=.*?(\.({file_ext}[^\/\.]{0,2000}?))?\s{0,100}(\w+=|$)""",
     """\WfileType=({file_type}.+?)\s{0,100}(\w+=|$)""",
     """\WrequestClientApplication=({user_agent}.+?)\s{0,100}(\w+=|$)""",
-  ]}
+  
+}
 ```

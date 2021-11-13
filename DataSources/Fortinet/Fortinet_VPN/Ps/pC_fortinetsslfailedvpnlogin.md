@@ -8,7 +8,7 @@ Name = fortinet-ssl-failed-vpn-login
   Fields = ${FortinetParserTemplates.fortinet-ssl-vpn.Fields} [
     """reason="({failure_reason}[^"]{1,2000})""",
   ]
-}
+
 fortinet-ssl-vpn = {
   Vendor = Fortinet
   Product = Fortinet VPN
@@ -26,5 +26,6 @@ fortinet-ssl-vpn = {
     """\Wrcvdbyte=({bytes_in}\d{1,100})""",
     """\Wgroup="({realm}[^"]{1,2000})""", 
   ]
-  DupFields = ["host->dest_host", "user->account"]}
+  DupFields = ["host->dest_host", "user->account"
+}
 ```

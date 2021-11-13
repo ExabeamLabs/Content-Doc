@@ -45,6 +45,7 @@ Name = raw-member-added-2008
     """EventType="{0,100}({outcome}[^"\s]{1,2000})"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

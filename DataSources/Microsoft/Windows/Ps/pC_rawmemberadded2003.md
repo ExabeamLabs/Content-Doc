@@ -34,6 +34,7 @@ Name = raw-member-added-2003
     """\sexabeam_UserIDDst=({account_dn}CN=.+?,({account_ou}OU.+?DC=[\w-]{1,2000}))\sexabeam_Source_Logon_ID="""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

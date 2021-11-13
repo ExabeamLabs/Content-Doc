@@ -20,6 +20,7 @@ Name = xml-mssql-database-login-1
     """\[CLIENT:\s{1,100}({src_ip}[a-fA-F\d:\.]{1,2000})"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

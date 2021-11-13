@@ -23,6 +23,7 @@ Name = mcafee-siem-process-created
       """"Source_Logon_ID":"({logon_id}[^"]{1,2000})"""
     ]
     DupFields = [ "host->dest_host", "directory->process_directory" ]
-  }
+  
+
 }
 ```

@@ -13,6 +13,7 @@ Name = cef-carbonblack-endpoint-process
     """"sensor_id"{1,20}:"{1,20}({sensor_id}[^"]{1,2000})""",
     """"{1,20}process_path"{1,20}:"{1,20}({process}({directory}[^"]{1,2000}(\\|\/)+)?({process_name}[^"]{1,2000}))""",
     """"host_name"{1,20}:"{1,20}({host}[^"]{1,2000})""",
-    """"process_command_line"{1,20}:"{1,20}({command_line}[^"]{1,2000})"{0,20}
+    """"process_command_line"{1,20}:"{1,20}({command_line}[^"]{1,2000})"{0,20
+
 }
 ```

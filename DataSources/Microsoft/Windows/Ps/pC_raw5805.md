@@ -18,6 +18,7 @@ Name = raw-5805
     """({event_name}The session setup from the computer ({src_host}[^\s]{1,2000})\sfailed to authenticate)""",
     """The following error occurred:\s{1,100}({failure_reason}[^<]{1,2000})\.<\/Message>"""
   ]
-}
+
+
 }
 ```

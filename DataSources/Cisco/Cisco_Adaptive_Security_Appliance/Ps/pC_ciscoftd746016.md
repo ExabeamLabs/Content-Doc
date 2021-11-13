@@ -15,6 +15,7 @@ Name = cisco-ftd-746016
     """({event_name}DNS lookup) for ({query}\S+)\s({dns_response_code}failed)""",
     """,\s{0,100}reason\s{0,100}:\s{0,100}(UNKNOWN|({reason}[^=]{1,2000}?))\s{0,100}($|")"""
   ]
-}
+
+
 }
 ```

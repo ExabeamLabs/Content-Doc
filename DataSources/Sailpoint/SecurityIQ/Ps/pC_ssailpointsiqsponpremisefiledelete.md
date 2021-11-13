@@ -21,6 +21,7 @@ Name = s-sailpointsiq-sponpremise-file-delete
     """actiontype\s:\s({activity}[^\ ]{1,2000})(\s|\s\([^\)]{1,2000}\)\s)\|"""
   ]
   DupFields = [ "host->dest_ip", "activity->accesses" ]
-}
+
+
 }
 ```

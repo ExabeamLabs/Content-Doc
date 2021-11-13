@@ -21,6 +21,7 @@ Name = cef-skyformation-mimecast-login
     """"user":"({user_email}[^"]{1,2000})""",
     """"user(A|a)gent"\s{0,100}:\s{0,100}"({user_agent}[^"]{1,2000}?)"\s{0,100}[,\}\]]""",
   ]
-}
+
+
 }
 ```

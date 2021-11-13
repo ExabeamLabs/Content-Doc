@@ -16,6 +16,7 @@ Name = unix-failed-logon-12
     """because of ({failure_reason}[^.]{1,2000})\s{1,100}"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

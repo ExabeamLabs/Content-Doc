@@ -26,6 +26,7 @@ Name = n-forwarded-cef-lastline
     """\snitroDevice_URL=({additional_info}[^\s]{1,2000}?)(\s{1,100}\w+=|"{0,20}\s{0,100}$)"""
   ]
   DupFields = ["host->dest_host"]
-}
+
+
 }
 ```

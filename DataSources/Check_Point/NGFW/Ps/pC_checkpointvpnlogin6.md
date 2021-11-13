@@ -8,7 +8,7 @@ Name = checkpoint-vpn-login-6
     """action:"{1,20}({activity}[^"]{1,2000})"""
   ]
   DupFields = [ "activity->event_name" ]
-}
+
 checkpoint-auth = {
   Vendor = Check Point 
   Product = NGFW
@@ -32,5 +32,6 @@ checkpoint-auth = {
     """reason:"({failure_reason}[^"]{1,2000})""",
     """\Wsrc_machine_name:"({src_host}[\w\-.]{1,2000})""",
     """\Wifdir:"({direction}[^"]{1,2000})""",
-  ]}
+  
+}
 ```

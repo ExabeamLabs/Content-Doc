@@ -18,6 +18,7 @@ Name = s-trendmicro-epp-alert-2
     """(Endpoint|Computer):\s{1,100}({src_host}[^\s\n]{1,2000})"""
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

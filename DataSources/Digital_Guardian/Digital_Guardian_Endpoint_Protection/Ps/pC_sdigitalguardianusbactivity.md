@@ -3,8 +3,8 @@
 {
 Name = s-digitalguardian-usb-activity
   Conditions = [ "Data Egress to Removable", """Block_Code="Not Blocked"""",""" Policy=""" , """ Resolution_Status="""]
-}
-splunk-digitalguardian-usb-activity ={
+
+splunk-digitalguardian-usb-activity = {
   Vendor = Digital Guardian
   Product = Digital Guardian Endpoint Protection
   Lms = Splunk
@@ -27,5 +27,6 @@ splunk-digitalguardian-usb-activity ={
     """\WSource_File="({file_name}[^"]{1,2000})"""",
     """\WApplication="({process_name}[^"]{1,2000})"""",
   ]
-    DupFields = [ "host->dest_host" ]}
+    DupFields = [ "host->dest_host" 
+}
 ```

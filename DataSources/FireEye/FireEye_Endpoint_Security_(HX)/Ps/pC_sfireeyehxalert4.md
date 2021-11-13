@@ -21,6 +21,7 @@ Name = s-fireeye-hx-alert-4
        """"event_type":\s{0,100}"({alert_name}[^"]{1,2000})"""
     ]      
     DupFields = ["alert_name->alert_type"]
-}
+
+
 }
 ```

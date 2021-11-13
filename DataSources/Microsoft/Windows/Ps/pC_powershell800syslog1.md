@@ -19,6 +19,7 @@ Name = powershell-800-syslog-1
     """Details:[^@]{1,2000}?CommandInvocation\([^\)]{1,2000}\):\s{0,100}\\*"{1,20}\s{0,100}({command_invocation}[^"\\]{1,2000})\s{0,100}""",
     """\(EventID ({event_code}800)"""
   ]
-}
+
+
 }
 ```

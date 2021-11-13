@@ -30,6 +30,7 @@ Name = raw-windows-account-4726
       """Target Account.+?Account Name:\s{1,100}({target_user}.+?)\s{1,100}Account Domain:\s{1,100}({target_domain}.+?)\s{1,100}Additional"""
     ]
     DupFields=[ "host->dest_host", "target_user->account_name" ]
-  }
+  
+
 }
 ```

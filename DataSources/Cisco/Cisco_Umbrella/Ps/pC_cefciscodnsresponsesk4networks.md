@@ -3,7 +3,7 @@
 {
 Name = cef-cisco-dns-response-sk4-networks
   Conditions = ["""CEF:""", """|Skyformation""", """destinationServiceName =Cisco Umbrella""", """cs6Label=raw-event""", """"queryType":"""", """"responseCode":"""", """"mostGranularIdentityType":"Networks""""]  
-}
+
 cef-cisco-dns-response-sk4-src-template {
   Vendor = Cisco
   Product = Cisco Umbrella
@@ -23,5 +23,6 @@ cef-cisco-dns-response-sk4-src-template {
     """"domain":"({query}[^"]{0,2000}?)\.?"""",
     """"categories":\s{0,100}\[({categories}"{0,20}({category}[^"\],]{1,2000})[^\]]{0,2000})\]""",
     """"externalIp"{1,20}:"{1,20}({dest_ip}[^"]{1,2000})"""
-  ]}
+  
+}
 ```

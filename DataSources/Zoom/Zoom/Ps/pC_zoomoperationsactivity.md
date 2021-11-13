@@ -17,6 +17,7 @@ Name = zoom-operations-activity
     """"category_type"\s{0,100}:\s{0,100}"({object_type}[^"]{1,2000})"""",
     """"operation_detail"\s{0,100}:\s{0,100}".*?\s{1,100}({object}[^\s@"]{1,2000}@[^\s@"]{1,2000})\s{1,100}"""
   ]
-}
+
+
 }
 ```

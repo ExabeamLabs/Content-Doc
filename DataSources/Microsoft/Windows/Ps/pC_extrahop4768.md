@@ -18,6 +18,7 @@ Name = extrahop-4768
     """"domain":"({domain}[^"]{1,2000})""",
     """"event_code":({event_code}\d{1,100})""",
   ]
-}
+
+
 }
 ```

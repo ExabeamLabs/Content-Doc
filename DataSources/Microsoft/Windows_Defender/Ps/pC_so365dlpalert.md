@@ -22,6 +22,7 @@ Name = s-o365-dlp-alert
     """"To":\s{0,100}\[({target}[^\]]{1,2000}?)\]"""
   ]
   DupFields = [ "user_email->user" ]
-}
+
+
 }
 ```

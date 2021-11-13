@@ -27,6 +27,7 @@ Name = json-sysmon-process-created-1
     """"Category":"({event_name}[^"]{1,2000})""",
   ]
   DupFields = [ "host->dest_host", "directory->process_directory", "process->path", "target_process->target_path" ]
-}
+
+
 }
 ```

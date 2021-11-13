@@ -5,7 +5,7 @@ Name = s-aws-cloudtrail-activity-json
   Product = AWS CloudTrail
   DataType = "app-activity"
   Conditions = [  "\"AwsApiCall\"", "\"eventName\"", "\"awsRegion\"" ]
-}
+
 s-aws-cloudtrail-activity-json = {
   Vendor = Amazon
   Lms = Splunk
@@ -40,5 +40,6 @@ s-aws-cloudtrail-activity-json = {
     """items":\[[^\]]{1,2000}?fromPort":({src_port}\d{1,100}),""",
     """items":\[[^\]]{1,2000}?toPort":({dest_port}\d{1,100}),""",
     """items":\[[^\]]{1,2000}?ipProtocol":"({protocol}[^"]{1,2000})""""
-  ]}
+  
+}
 ```

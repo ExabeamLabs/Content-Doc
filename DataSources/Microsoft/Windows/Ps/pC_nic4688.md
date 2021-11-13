@@ -26,6 +26,7 @@ Name = nic-4688
       """TaskCategory=({activity_type}Process Creation)"""
     ]
     DupFields = [ "host->dest_host","process_guid->pid","directory->process_directory" ]
-}
+
+
 }
 ```

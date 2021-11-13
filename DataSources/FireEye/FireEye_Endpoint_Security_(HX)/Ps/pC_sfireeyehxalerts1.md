@@ -3,7 +3,7 @@
 {
 Name = s-fireeye-hx-alert-s-1
   Conditions = [ """msg""", """alert""","""product""" , """"HX""""]
-}
+
 s-fireeye-hx-alert-s = {
   Vendor = FireEye
   Product = FireEye Endpoint Security (HX)
@@ -35,5 +35,6 @@ s-fireeye-hx-alert-s = {
     """"event_type"{1,20}:\s{0,100}"{1,20}({alert_type}[^"]{1,2000})"""",
     """"{1,20}appliance"{1,20}:\s{0,100}"{1,20}({host}[^"]{1,2000})"{1,20}"""
   ]
-  DupFields = [ "event_name->alert_name" ]}
+  DupFields = [ "event_name->alert_name" 
+}
 ```

@@ -17,6 +17,7 @@ Name = cef-salesforce-app-activity-30
     """Display\\=({additional_info}Created new user ({object}.+?))\s{0,100}(\w+=|$)""",
   ]
   DupFields = [ "user_email->user" ]
-}
+
+
 }
 ```

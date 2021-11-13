@@ -24,6 +24,7 @@ Name = s-ironport-dlp-email-alert
       """\('(x-fr({direction}o)m-mailhub|X-Fr({=direction}o)m-MailHub)',\s{0,100}'true'\)"""
     ]
     DupFields = [ "user->sender" ]
-  }
+  
+
 }
 ```

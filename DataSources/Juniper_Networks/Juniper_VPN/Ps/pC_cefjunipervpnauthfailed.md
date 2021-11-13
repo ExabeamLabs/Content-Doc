@@ -16,6 +16,7 @@ Name = cef-juniper-vpn-authfailed
 	"""\Wsuser=(System|({user}[^\s]{1,2000}))""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

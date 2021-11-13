@@ -27,6 +27,7 @@ Name = xml-sysmon-process-created
     """<Data Name ='ParentImage'>({parent_process}(({parent_process_directory}[^<]{1,2000})\\)?({parent_process_name}[^<]{1,2000}?))<\/Data>"""
   ]
   DupFields = [ "host->dest_host","directory->process_directory","path->process" ]
-}
+
+
 }
 ```

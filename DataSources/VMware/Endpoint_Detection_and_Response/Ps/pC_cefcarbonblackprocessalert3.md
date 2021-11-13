@@ -3,7 +3,7 @@
 {
 Name = cef-carbonblack-process-alert-3
   Conditions = [ """CEF:""", """|CarbonBlack|Response|""", """alert.watchlist.hit.ingress.process""" ]
-}
+
 cef-carbonblack-process-alert = {
   Vendor = VMware
   Product = Endpoint Detection and Response 
@@ -25,5 +25,6 @@ cef-carbonblack-process-alert = {
     """\WfileHash=(|({md5}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wcs2=(|({additional_info}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wcn2=(|({alert_severity}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-  ]}
+  
+}
 ```

@@ -3,7 +3,7 @@
 {
 Name = s-mcafee-usb-activity-dvd-1
   Conditions = [ """|USB/CD/DVD File Write PC|""", """|40102|""" ]
-}
+
 splunk-mcafee-usb-activity = {
       Vendor = McAfee
       Product = McAfee Endpoint Security
@@ -61,5 +61,6 @@ splunk-mcafee-usb-activity = {
       """\WuserInfoEmail=(|({user_email}[^@]{1,2000}({email_domain}.+?)))(\s{1,100}\w+=|\s{0,100}$)""",
       """\WuserInfoFirstName =(|({user_firstname}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
       """\WuserInfoLastName =(|({user_lastname}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-    ]}
+    
+}
 ```

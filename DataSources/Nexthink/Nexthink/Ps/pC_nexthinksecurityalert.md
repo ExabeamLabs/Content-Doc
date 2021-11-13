@@ -14,6 +14,7 @@ Name = nexthink-security-alert
     """os_name="({os}[^"]{1,2000})""",
     """last_login_user="({user}[^@"]{1,2000})@({domain}[^@"]{1,2000})""",
   ]
-}
+
+
 }
 ```

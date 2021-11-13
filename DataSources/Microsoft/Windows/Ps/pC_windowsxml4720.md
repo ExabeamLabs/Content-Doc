@@ -22,6 +22,7 @@ Name = windows-xml-4720
     """({event_name}A user account was created)"""
   ]
   DupFields = ["host->dest_host"]
-}
+
+
 }
 ```

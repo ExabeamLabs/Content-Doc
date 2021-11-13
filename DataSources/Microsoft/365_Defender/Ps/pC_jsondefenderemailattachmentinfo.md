@@ -19,6 +19,7 @@ Name = json-defender-email-attachment-info
     """"NetworkMessageId":\s{0,10}"({message_id}[^"]{1,2000}?)""""
     ]
   DupFields = [ "file_name->attachment"]
-}
+
+
 }
 ```

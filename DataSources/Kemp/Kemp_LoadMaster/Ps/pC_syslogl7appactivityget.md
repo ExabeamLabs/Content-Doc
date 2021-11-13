@@ -17,6 +17,7 @@ Name = syslog-l7-app-activity-get
     """\sUser\s{0,100}\'({user}[^\s@]{1,2000}@[^\s]{1,2000})\'""",
     """\srequested ({activity}GET) ({object}.+?)\s{0,100}$""",
   ]
-}
+
+
 }
 ```

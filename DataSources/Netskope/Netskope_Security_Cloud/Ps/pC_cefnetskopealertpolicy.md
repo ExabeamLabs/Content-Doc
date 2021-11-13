@@ -18,7 +18,7 @@ Name = cef-netskope-alert-policy
     """"file_path":"({file_path_at}[^"]{1,2000})"""",
     """"site":"({site_at}[^"]{1,2000})""""
   ]
-}
+
 cef-netskope-alert = {
   Vendor = Netskope
   Product = Netskope Security Cloud
@@ -42,5 +42,6 @@ cef-netskope-alert = {
     EntityFields = [
       {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]},
       {EntityType="user", Name ="windows_id", Fields=["user->windows_id"]},
-    ]}
+    
+}
 ```

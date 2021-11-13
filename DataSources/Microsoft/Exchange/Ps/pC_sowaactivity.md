@@ -21,6 +21,7 @@ Name = s-owa-activity
       """DeviceType=({src_host}[^&\t]{1,2000})"""
       """User=({domain}[^%]{1,2000})%5C"""
     ]
-  }
+  
+
 }
 ```

@@ -31,6 +31,7 @@ Name = mwg-proxy-1
 		""""is_virus":"(?:|({malicious}[^"]{1,2000}))"""",
 		""""content_type":"(?:|({mime}[^"]{1,2000}))""""
     ]
-  }
+  
+
 }
 ```

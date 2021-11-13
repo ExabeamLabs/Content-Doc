@@ -5,8 +5,8 @@ Name = cef-duo-VPN-login-failed
   Product = Duo Access Security
   DataType ="failed-vpn-login"
   Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """ destinationServiceName =DUO ""","""VPN""" ,"""FAILURE""" ]
-}
-cef-duo-app-activity-2 ={
+
+cef-duo-app-activity-2 = {
   Vendor = Cisco
   Lms = ArcSight
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
@@ -34,5 +34,6 @@ cef-duo-app-activity-2 ={
     """"country":\s{0,100}"({country}[^"]{1,2000})""",
 	"""\sext_integration=({service}.*?)(\s\w+=|\s{0,100}$)""",
     """ext_factor=({factor}.*?)(\s\w+=|\s{0,100}$)"""
-  ]}
+  
+}
 ```

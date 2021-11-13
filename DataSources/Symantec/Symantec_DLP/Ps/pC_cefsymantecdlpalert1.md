@@ -21,6 +21,7 @@ Name = cef-symantec-dlp-alert-1
       """"severity_id":({alert_severity}\d{1,100})""",
       """"product_name":"({product_name}[^"]{1,2000})"""",
     ]
-  }
+  
+
 }
 ```

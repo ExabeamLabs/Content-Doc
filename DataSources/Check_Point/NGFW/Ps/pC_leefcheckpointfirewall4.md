@@ -3,7 +3,7 @@
 {
 Name = leef-checkpoint-firewall-4
   Conditions = [ """LEEF""", """|Check Point|VPN-1 & FireWall-1|""" ]
-}
+
 leef-checkpoint-firewall = {
   Vendor = Check Point 
   Product = NGFW
@@ -41,5 +41,6 @@ leef-checkpoint-firewall = {
     """\WusrName =({user_fullname}.+?)\s{0,100}\(\s{0,100}({user}.+?)\s{0,100}\)""",
     """LEEF:([^\|]{0,2000}\|){2}({product_name}[^\|]{1,2000})\|[^\|]{0,2000}\|({action}[^\|]{1,2000})""",
     """\Wrule_action=({outcome}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
-  ]}
+  
+}
 ```

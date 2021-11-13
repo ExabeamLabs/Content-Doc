@@ -4,7 +4,7 @@
 Name = s-nasuni-file-write-2
   Product = Nasuni
     Conditions = [ """,CIFS,""", """,Truncate File,""" ]
-  }
+  
 s-nasuni-file-operations = {
   Vendor = Nasuni
   Lms = Splunk
@@ -22,5 +22,6 @@ s-nasuni-file-operations = {
     """({file_path}[^,]{1,2000}),([^,"]{0,2000},){3}("[^"]{1,2000}"|[^,]{0,2000}),CIFS,""",
     """(({file_parent}[^,]{1,2000})[\/]{1,2000})?({file_name}[^\/,]{1,2000}?(\.({file_ext}[^\/,\.]{1,2000}))?),([^,"]{0,2000},){3}("[^"]{1,2000}"|[^,]{0,2000}),CIFS,""",
   ]
-  DupFields = [ "host->dest_host" ]}
+  DupFields = [ "host->dest_host" 
+}
 ```

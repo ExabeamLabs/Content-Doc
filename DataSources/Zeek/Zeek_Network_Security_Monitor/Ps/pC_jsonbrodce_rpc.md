@@ -20,6 +20,7 @@ Name = json-bro-dce_rpc
     """"endpoint\\?"{1,20}:\\?"{1,20}({dest_host}[^"\\]{1,2000})""",
     """"operation\\?"{1,20}:\\?"{1,20}({process_name}[^"\\]{1,2000})"""
   ]
-}
+
+
 }
 ```

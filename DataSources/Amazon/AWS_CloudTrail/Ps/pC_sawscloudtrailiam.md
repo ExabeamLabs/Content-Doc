@@ -34,6 +34,7 @@ Name = s-aws-cloudtrail-iam
      """"awsRegion":"({region}[^"]{1,2000})""",
      """\srequestClientApplication=({app}[^\s]{1,2000})\s""",
  ]
-}
+
+
 }
 ```

@@ -16,6 +16,7 @@ Name = ovirt-app-activity-failed
     """Reasons:\s{0,100}({failure_reason}[^"]{1,2000}?)\s{0,100}$""",
     """({app}ovirt)"""
   ]
-}
+
+
 }
 ```

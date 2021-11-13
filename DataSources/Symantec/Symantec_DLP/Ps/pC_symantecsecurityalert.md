@@ -19,6 +19,7 @@ Name = symantec-security-alert
     """"userID":"(system|({user}[^"]{1,2000}))""",
     """"action":"({outcome}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

@@ -29,6 +29,7 @@ Name = json-4648
       """"IpAddress":"(?:-|({src_ip}[^"]{0,2000}))"""
     ]
     DupFields = ["directory->process_directory"]
-  }
+  
+
 }
 ```

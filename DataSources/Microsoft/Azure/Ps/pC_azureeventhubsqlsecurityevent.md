@@ -16,7 +16,7 @@ Name = azure-event-hub-sql-security-event
   	""""client_ip":"({src_ip}.*?[^\\])"""",
   	""""additional_information":"(""|({additional_info}.*?[^\\]))"""",
   ]
-}
+
 cef-azure-event-hub = {
   Vendor = Microsoft
   Product = Azure
@@ -46,5 +46,6 @@ cef-azure-event-hub = {
       """Namespace:\s{0,100}(|({event_hub_namespace}[^\]]{1,2000}?))\s{0,100}[\];]""",
       """EventHub name:\s{0,100}(|({event_hub_name}[^\]]{1,2000}?))\s{0,100}\]""",
       """\[Namespace:\s{0,100}({host}\S+) ; EventHub name:"""
-  ]}
+  
+}
 ```

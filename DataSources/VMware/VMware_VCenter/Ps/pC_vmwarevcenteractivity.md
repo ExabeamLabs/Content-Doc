@@ -16,6 +16,7 @@ Name = vmware-vcenter-activity
       """\[User.+?@({src_ip}[^\s\]]{1,2000})""",
       """({app}VM_VCenter)"""
   ]
-}
+
+
 }
 ```

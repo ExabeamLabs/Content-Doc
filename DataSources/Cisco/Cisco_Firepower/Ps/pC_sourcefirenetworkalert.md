@@ -51,6 +51,7 @@ Name = sourcefire-network-alert
     """"blocked":\s{0,100}"({blocked}[^"]{1,2000})""",
   ]
   DupFields = [ "host->sensor", "classification_name->alert_type"]
-}
+
+
 }
 ```

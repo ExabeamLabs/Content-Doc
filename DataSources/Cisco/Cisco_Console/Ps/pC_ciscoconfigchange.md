@@ -18,6 +18,7 @@ Name = cisco-config-change
 		"""Configured from console by ({user}[^\s]{1,2000}) on""",
 		""" on .+?\((({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[^)]{1,2000}))\)"""
   	   ]
-}
+
+
 }
 ```

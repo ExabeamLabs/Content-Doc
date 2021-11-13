@@ -19,6 +19,7 @@ Name = symantec-security-alert-1
     """"eventType":\s{0,100}"({alert_name}[^"]{1,2000})"""",
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

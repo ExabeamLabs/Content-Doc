@@ -22,6 +22,7 @@ Name = json-4776
       """"Status":"({result_code}[^"]{0,2000})""",
       """"Workstation":"\\*({dest_host}[^"]{1,2000})""",
     ]
-  }
+  
+
 }
 ```

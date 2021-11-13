@@ -16,6 +16,7 @@ Name = kemp-lb-failed-login
     """({log_type}logger)""",
     """({failure_reason}Invalid user\/password)""",
   ]
-}
+
+
 }
 ```

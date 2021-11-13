@@ -19,6 +19,7 @@ Name = cisco-acs-vpn-login
     """,\s{0,100}Device IP Address=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\:\d\d\s({dest_host}.+?)\sCSCOacs"""
   ]
-}
+
+
 }
 ```

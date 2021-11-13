@@ -14,6 +14,7 @@ Name = zebra-wlm-ssh-failed
     """\s{1,100}({host}[^\s]{1,2000})\s{1,100}({event_code}%\d{0,20}SYSTEM-3-LOGIN_FAIL):\s{1,100}Log-in ({outcome}failed) for user '({user}[^']{1,2000})'\s{1,100}from '({protocol}[^']{1,2000})\'"""
   ]
   DupFields = ["host->dest_host"]
-}
+
+
 }
 ```

@@ -6,7 +6,7 @@ Name = juniper-firewall-network-connection-failed
   Fields = ${JuniperParserTemplates.juniper-firewall-network-connection.Fields} [
     """\Wreason=({failure_reason}.+?)\s{1,100}(\w+=|$)""",
   ]
-}
+
 juniper-firewall-network-connection = {
   Vendor = Juniper Networks
   Product = Juniper SRX
@@ -29,5 +29,6 @@ juniper-firewall-network-connection = {
     """\Wsrc-xlated ip=({src_translated_ip}[A-Fa-f:\d.]{1,2000})""",
     """\Wdst-xlated ip=({dest_translated_ip}[A-Fa-f:\d.]{1,2000})""",
     """\Wsession_id=({session_id}.+?)\s{1,100}(\w+=|$)""",
-  ]}
+  
+}
 ```

@@ -24,6 +24,7 @@ Name = cef-snare-4624
       """ src=(?:-|({src_ip}[\w:.]{1,2000}))\s{1,100}\w+="""
     ]
     DupFields = ["host->dest_host"]
-  }
+  
+
 }
 ```

@@ -8,7 +8,7 @@ Name = crowdstrike-file-process-alert-2
     """event_simpleName\\":\\"({alert_name}[^"\\]{1,2000})""",
     """"ImageFileName\\*"{1,20}:\\*"{1,20}({image_file_name}[^"]{1,2000}?)\\*","""
   ]
-}
+
 crowdstrike-auth-activity = {
   Vendor = CrowdStrike
   Product = Falcon
@@ -35,5 +35,6 @@ crowdstrike-auth-activity = {
     """"UserName\\*"{1,20}:\\*"{1,20}({user}[^"\\]{1,2000})""",
     """"FalconHostLink\\*"{1,20}:\s{0,100}\\*"{1,20}({falcon_host_link}[^"]{1,2000})"""
   ]
-  DupFields = ["event_name->event_code","falcon_host_link->additional_info", "file_parent->directory", "file_name->process_name"]}
+  DupFields = ["event_name->event_code","falcon_host_link->additional_info", "file_parent->directory", "file_name->process_name"
+}
 ```

@@ -26,6 +26,7 @@ Name = s-tanium-security-alert-2
       """"md5\\":\\"({md5}[^"]{1,2000}?)\\*"""",
       """"payload=\{({additional_info}.+?[^\\]")\}"""
     ]
-  }
+  
+
 }
 ```

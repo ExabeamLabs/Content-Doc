@@ -22,6 +22,7 @@ Name = cef-carbonblack-edr-process-alert
     """\|({event_name}Process [^\|]{1,2000} was detected by the report[^\|]{1,2000})\|""",
     """ cs3=({additional_info}[^\s]{1,2000})"""
   ]
-}
+
+
 }
 ```

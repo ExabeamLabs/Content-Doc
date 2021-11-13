@@ -28,6 +28,7 @@ Name = cef-securesphere-database-operations
     """\Wduser=(({domain}[^\\\s@]{1,2000})\\+)?({user}[^\\\s@]{1,2000})\s{1,100}(\w+=|$)""",
     """proto=({protocol}[^\s=]{1,2000}?)\s\w+=""",
     ]
-}
+
+
 }
 ```

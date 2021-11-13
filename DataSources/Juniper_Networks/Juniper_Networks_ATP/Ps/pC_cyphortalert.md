@@ -24,6 +24,7 @@ Name = cyphort-alert
     """\smalwareCategory=({alert_type}.+?)\s{1,100}\w+="""
   ]
   DupFields = ["file_name->process_name"]
-}
+
+
 }
 ```

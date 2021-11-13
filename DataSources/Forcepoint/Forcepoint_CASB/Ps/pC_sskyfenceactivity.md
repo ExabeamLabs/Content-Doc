@@ -24,6 +24,7 @@ Name = s-skyfence-activity
     """\sdeviceProcessName ="({object}[^"]{1,2000})"{1,20}\s\w+=""",
     """\smsg="{1,20}({additional_info}[^"]{1,2000})"""
   ]
-}
+
+
 }
 ```

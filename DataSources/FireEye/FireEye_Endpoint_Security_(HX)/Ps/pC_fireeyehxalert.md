@@ -22,6 +22,7 @@ Name = fireeye-hx-alert
     """"malwareMD5":"({md5}[^"]{1,2000})""",
     """"deviceSensor":"({sensor}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

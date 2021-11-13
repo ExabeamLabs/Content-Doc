@@ -4,7 +4,7 @@
 Name = s-xml-windows-member-16
   DataType = "config-change"
   Conditions = [ """<EventID>4957</EventID>""", """<EventRecordID>""" ]
-}
+
 s-xml-windows-member = {
   Vendor = Microsoft
   Product = Windows
@@ -35,5 +35,6 @@ s-xml-windows-member = {
     """<Data Name(\\)?='RemoteMachineAccount'>({dest_host}[^<]{1,2000})"""
     
   ]
-  DupFields = [ "host->dest_host" ]}
+  DupFields = [ "host->dest_host" 
+}
 ```

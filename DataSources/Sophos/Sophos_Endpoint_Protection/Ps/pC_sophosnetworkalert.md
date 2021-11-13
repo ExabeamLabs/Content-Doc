@@ -22,6 +22,7 @@ Name = sophos-network-alert
     """exabeam_host=({host}[\w\-.]{1,2000})""",
    ]
   DupFields = [ "outcome->alert_severity" ] 
-}
+
+
 }
 ```

@@ -14,6 +14,7 @@ Name = vmware-remote-logon
     """connecting to target (?:({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^\s:]{1,2000}))""",
     """User ({user}.+?) starting channel"""
    ]
-}
+
+
 }
 ```

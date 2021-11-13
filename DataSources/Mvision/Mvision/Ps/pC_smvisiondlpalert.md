@@ -24,6 +24,7 @@ Name = s-mvision-dlp-alert
     """\Wresponse=\[({outcome}[^\[\]]{1,2000}?)\]""",
     """\W({additional_info}totalMatchCount=[^,]{1,2000})""",
   ]
-}
+
+
 }
 ```

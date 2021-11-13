@@ -23,6 +23,7 @@ Name = stealthwatch-network-alert-3
     """dest=({dest_host}[^\s]{1,2000})""",
     """dest_port=({dest_port}\d{1,100})"""
   ]
-}
+
+
 }
 ```

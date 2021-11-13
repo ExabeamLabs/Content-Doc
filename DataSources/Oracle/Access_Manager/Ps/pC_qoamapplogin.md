@@ -4,7 +4,7 @@
 Name = q-oam-app-login
   DataType = "app-login"
   Conditions = [ """ IAU_RESOURCEHOST: """", """IAU_USERID: """", """ IAU_EVENTTYPE: "Login""""  ]
-}
+
 oam-app-activity = {
   Vendor = Oracle
   Product = Access Manager
@@ -24,5 +24,6 @@ oam-app-activity = {
     """IAU_AUTHENTICATIONPOLICYID: "(null|({object}[^"]{1,2000}))"""",
     """IAU_AUTHORIZATIONPOLICYID: "(null|({object}[^"]{1,2000}))"""",
     """IAU_RESOURCEID: "(null|({resource}[^"]{1,2000}))"""",
-  ]}
+  
+}
 ```

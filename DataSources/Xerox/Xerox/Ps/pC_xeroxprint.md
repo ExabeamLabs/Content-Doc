@@ -22,6 +22,7 @@ Name = xerox-print
     """full_name:\s{0,100}"{1,20}({user_fullname}[^"]{1,2000})"{1,20}""",
     """document_title:\s{0,100}"{1,20}({document_name}({object}[^"]{1,2000}))"{1,20}"""
   ]
-}
+
+
 }
 ```

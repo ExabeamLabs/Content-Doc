@@ -17,6 +17,7 @@ Name = cef-salesforce-app-activity-20
     """Display\\=Changed profile ({object}.+?): administrative permission ({resource}.+?) was changed from""",
     """({app}Sales Cloud)""",
   ]
-}
+
+
 }
 ```

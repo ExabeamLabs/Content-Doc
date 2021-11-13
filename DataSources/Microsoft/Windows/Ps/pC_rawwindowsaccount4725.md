@@ -33,6 +33,7 @@ Name = raw-windows-account-4725
       """"TargetUserName":"({target_user}[^"]{1,2000})""",
     ]
     DupFields=[ "host->dest_host" ]
-  }
+  
+
 }
 ```

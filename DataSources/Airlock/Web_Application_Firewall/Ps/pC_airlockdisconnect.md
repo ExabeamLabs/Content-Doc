@@ -5,7 +5,7 @@ Name = airlock-disconnect
   Product = Web Application Firewall
   DataType = "vpn-end"
   Conditions = [ """ Audit Log [""", """ event_type="""", """" time_taken="""", """" system_name="""", """"Disconnect"""" ]
-}
+
 AirlockEvent = {
     Vendor = Airlock
     Product = Web Application Firewall 
@@ -30,5 +30,6 @@ AirlockEvent = {
       """\sfile_path="(\w+:_)?({file_path}({file_parent}(?:[^";]{1,2000})?[\\\/;])?({file_name}[^\\\/";]{1,2000}?(\.({file_ext}[^\\\/\.;"]{1,2000}))))"""
       """\sfile_path="(\w+:_)?({file_path}({file_parent}(?:[^";]{1,2000})?[\\\/;])?({file_name}[^\\\/";]{1,2000}(\.({file_ext}[^\\\/\.;"]{1,2000}))))""" 
     ]
-    DupFields = ["host->dest_host"]}
+    DupFields = ["host->dest_host"
+}
 ```

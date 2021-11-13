@@ -22,6 +22,7 @@ Name = varonis-dlp-alert
       """Affected Object:\s{0,100}({file_name}.+?)\s{0,100}Event Type:""",
       """Path:\s{0,100}({additional_info}.+?)\s{0,100}Affected Object:"""
     ]
-  }
+  
+
 }
 ```

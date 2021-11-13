@@ -21,6 +21,7 @@ Name = cef-cisco-asa-722041-vpn-login
     """\sc6a3=({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}).*?c6a3Label=Destination""", 
   ]
   DupFields = ["user->account"]
-}
+
+
 }
 ```

@@ -16,6 +16,7 @@ Name = f5-vpn-session-start
     """\s{1,100}01490500:5:.*?({session_id}[^\s:]{1,2000}): New session""",
     """client IP ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
-}
+
+
 }
 ```

@@ -19,6 +19,7 @@ Name = centrify-authentication-failed-1
     """reason=({failure_reason}[^=]{1,2000})\.\s{1,100}""",
     """Message:\s{0,100}({additional_info}[^:]{1,2000})\.\s{1,100}""",
   ]
-}
+
+
 }
 ```

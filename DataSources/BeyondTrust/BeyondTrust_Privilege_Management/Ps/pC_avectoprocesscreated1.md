@@ -28,6 +28,7 @@ Name = avecto-process-created-1
     """\WActivityType="({activity_type}[^"]{1,2000})""",
   ]
   DupFields = [ "host->dest_host", "directory->process_directory" ]
-}
+
+
 }
 ```

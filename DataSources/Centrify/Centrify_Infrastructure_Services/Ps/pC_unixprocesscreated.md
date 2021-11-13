@@ -19,6 +19,7 @@ Name = unix-process-created
     """ClientName:\s{0,100}"{1,20}(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[^"]{1,2000}))""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

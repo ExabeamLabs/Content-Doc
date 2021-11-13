@@ -23,6 +23,7 @@ Name = securesphere-db-login-2
     """\WschemaName ="(|({schema}[^"]{1,2000}))""""
   ]
   DupFields = [ "db_user->account" ]
-}
+
+
 }
 ```

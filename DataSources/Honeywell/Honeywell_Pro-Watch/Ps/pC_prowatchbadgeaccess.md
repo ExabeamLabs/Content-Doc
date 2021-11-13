@@ -5,7 +5,7 @@ Name = prowatch-badge-access
   Product = Honeywell Pro-Watch
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """"evnt_dat":"""", """"evnt_descrp":"""", """"badge_employeeid":"""", """"cardstatus_descrp":"""" ]
-}
+
 prowatch-badge-access = {
   Vendor = Honeywell
   Lms = Direct
@@ -27,5 +27,6 @@ prowatch-badge-access = {
     """"((?i)lname)":"\s{0,100}({last_name}[^"]{1,2000}?)\s{0,100}"""",
     """"((?i)badge_employeeid)":"\s{0,100}({employee_id}[^"]{1,2000}?)\s{0,100}"""",
     """"((?i)cardstatus_descrp)":"\s{0,100}({card_status}[^"]{1,2000}?)\s{0,100}""""
-  ]}
+  
+}
 ```

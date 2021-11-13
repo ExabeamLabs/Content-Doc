@@ -38,6 +38,7 @@ Name = cisco-process-network
     """\ssm=({system_manufacturer}[^\s]{1,2000})\s""",
     """\sst=({system_type}[^\s]{1,2000})\s"""
   ]
-}
+
+
 }
 ```

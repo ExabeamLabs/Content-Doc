@@ -21,6 +21,7 @@ Name = json-github-app-activity
     """"target_branch":"({object}[^"]{1,2000})""",
     """"source_branch":"({object}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

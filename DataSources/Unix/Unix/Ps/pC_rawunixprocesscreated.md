@@ -21,6 +21,7 @@ Name = raw-unix-process-created
     """; COMMAND=({process}({process_directory}[^\s]{1,2000}[\\\/]{1,2000})?({process_name}[^";\\\/\s]{1,2000}))[\s"](?:|;|$)"""
   ]
   DupFields = [ "process_directory->directory","host->dest_host" ]
-}
+
+
 }
 ```

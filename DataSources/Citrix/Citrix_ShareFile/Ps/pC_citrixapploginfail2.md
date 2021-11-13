@@ -8,7 +8,7 @@ Name = citrix-app-login-fail-2
   Fields = ${CitrixParserTemplates.citrix-app-activity.Fields}[
     """"Date":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
   ]
-}
+
 citrix-app-activity = {
     Vendor = Citrix
     Product =  Citrix ShareFile
@@ -34,5 +34,6 @@ citrix-app-activity = {
       """"AdditionalInfo"{1,20}:"({additional_info}[^"]{1,2000})""",
       """"Action":"({action}[^"]{1,2000})""",
       """"Company":"(\\|({company}[^"]{1,2000}?))\s{0,100}"""",
-    ]}
+    
+}
 ```

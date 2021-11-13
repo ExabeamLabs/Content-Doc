@@ -25,6 +25,7 @@ Name = wls-4688
       """CommandLine="{1,20}(|-|(sc|((?:[^"]{1,2000})?[\\\/])?sc.exe)\s{0,100}(?:\\*[\w.\-]{1,2000})?\s{0,100}create\s{0,100}({service_name}.+?))\s{1,100}binPath= ({process}({directory}(?:[^"]{1,2000})?[\\\/])?({process_name}[^\\\/"]{1,2000}))"""
     ]
     DupFields = [ "process_guid->pid","directory->process_directory" ]
-  }
+  
+
 }
 ```

@@ -21,6 +21,7 @@ Name = cef-guardium-db-query
     """\smsg=.*?({db_operation}(?i)(insert|delete|truncate|drop|alter|create|update|enable|disable|merge|delete|merge|select|dbcc))"""
   ]
   DupFields = [ "db_user->account" ]
-}
+
+
 }
 ```

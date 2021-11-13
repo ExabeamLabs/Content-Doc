@@ -20,6 +20,7 @@ Name = syslog-sophos-snmp-denied
     """({alert_name}denied access)""",
   ]
   DupFields = ["alert_name->alert_type"]
-}
+
+
 }
 ```

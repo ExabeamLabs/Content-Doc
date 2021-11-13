@@ -8,7 +8,7 @@ Name = json-4776-1
     """"workstation-name":"({dest_host}[^"]{1,2000})""",
     """"status-description":"({result_code}[^"\.]{1,2000})"""
   ]
-}
+
 json-windows-events = {
   Vendor = Microsoft
   Product = Windows
@@ -39,5 +39,6 @@ json-windows-events = {
     """"service-name":"({service_name}[^"]{1,2000})""",
     """auth-package":"({auth_package}[^"]{1,2000})"""",
     """workstation-name":"(-|({src_host_windows}[^"]{1,2000}))""""
-  ]}
+  
+}
 ```

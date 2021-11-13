@@ -23,6 +23,7 @@ Name = cef-digitalguardian-send-mail
     "external_address->recipients",
     "user->email_user",
   ]
-}
+
+
 }
 ```

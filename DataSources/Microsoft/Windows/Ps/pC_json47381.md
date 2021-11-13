@@ -9,7 +9,7 @@ Name = json-4738-1
     """"TargetSid"{1,20}:"{1,20}({target_user_sid}[^"]{1,2000})""",
     """"TargetDomainName"{1,20}:"{1,20}({target_domain}[^"]{1,2000})""",
   ]
-}
+
 json-windows-events-1 = {
   Vendor = Microsoft
   Product = Windows
@@ -47,5 +47,6 @@ json-windows-events-1 = {
     """"{1,20}SidHistory"{1,20}:"{1,20}(-|({sid_history}[^"]{1,2000}))""",
     """"Keywords":"({outcome}[^"]{1,2000})"""
   ]
-  DupFields = ["event_id->event_code"]}
+  DupFields = ["event_id->event_code"
+}
 ```

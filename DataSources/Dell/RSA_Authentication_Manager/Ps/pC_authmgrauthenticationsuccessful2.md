@@ -4,7 +4,7 @@
 Name = authmgr-authentication-successful-2
   DataType = "authentication-successful"
   Conditions = [ """client_ip_address=""", """result_action=User Token Created""" ]
-}
+
 authmgr-authentication = {
     Vendor = Dell
     Product = RSA Authentication Manager
@@ -20,5 +20,6 @@ authmgr-authentication = {
       """,browser_ip_address=({dest_ip}[A-Fa-f:\d.]{1,2000})""",
       """,client_port=({src_port}\d{1,100})""",
       """,result_code=({result_code}\d{1,100})"""
-    ]}
+    
+}
 ```

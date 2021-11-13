@@ -23,6 +23,7 @@ Name = azure-file-write
    """({accesses}resource-created)"""
    """msg=({additional_info}.+?)\s{1,100}\w+="""
   ]
-}
+
+
 }
 ```

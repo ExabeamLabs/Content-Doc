@@ -28,6 +28,7 @@ Name = cef-symantec-network-alert
       """"device_os_name":"({os}[^"]{1,2000})"""",
       """"product_name":"({product_name}[^"]{1,2000})"""",
     ]
-  }
+  
+
 }
 ```

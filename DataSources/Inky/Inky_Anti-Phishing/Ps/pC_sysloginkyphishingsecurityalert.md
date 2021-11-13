@@ -25,6 +25,7 @@ Name = syslog-inky-phishing-security-alert
      """"threat_level":({threat_level}\d{1,100})"""
   ]
   DupFields = ["recipient->user_email"]
-}
+
+
 }
 ```

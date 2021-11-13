@@ -17,6 +17,7 @@ Name = avi-lb-app-login
     """login\s\(({outcome}Success)\)""",
     """object\s({object}[^\s]{1,2000})""",
   ]
-}
+
+
 }
 ```

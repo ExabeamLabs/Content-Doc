@@ -4,7 +4,7 @@
 Name = cef-defender-atp-service-logon
   DataType = "logon"
   Conditions = ["""CEF""", """AdvancedHunting-DeviceLogonEvents""", """"LogonType":"Service"""", """"InitiatingProcessParentFileName":"""]
-}
+
 cef-defender-atp-events = {
     Vendor = Microsoft
     Product = Defender ATP
@@ -22,5 +22,6 @@ cef-defender-atp-events = {
       """"RemoteIP":"({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
       """"Protocol":"({protocol}[^"]{1,2000})""""
     ]
-    DupFields = ["host->dest_host"]}
+    DupFields = ["host->dest_host"
+}
 ```

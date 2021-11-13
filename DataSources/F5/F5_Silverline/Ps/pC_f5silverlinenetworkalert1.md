@@ -24,6 +24,7 @@ Name = f5-silverline-network-alert-1
     """src_port\s{0,100}=\s{0,100}({src_port}\d{1,100})""",
     """username\s{0,100}=\s{0,100}(N\/A|({user}[^\s,>]{1,2000})),""",
   ]
-}
+
+
 }
 ```

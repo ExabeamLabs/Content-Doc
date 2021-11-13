@@ -3,7 +3,7 @@
 {
 Name = crowdstrike-app-activity-4
   Conditions = [ """CEF:""", """|Skyformation|""", """"event_simpleName":"AwsEc2NetworkAcl"""" ]
-}
+
 crowdstrike-app-activity-temp = {
   Vendor = CrowdStrike
   Product = Falcon
@@ -22,5 +22,6 @@ crowdstrike-app-activity-temp = {
     """"UserName":"({user}[^"]{1,2000}?)""""
     """"aip":"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""""
     """"ClientComputerName":"({src_host}[^"]{1,2000})"""
-  ]}
+  
+}
 ```

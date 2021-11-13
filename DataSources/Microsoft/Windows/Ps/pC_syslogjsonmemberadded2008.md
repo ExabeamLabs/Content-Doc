@@ -26,6 +26,7 @@ Name = syslog-json-member-added-2008
     """"MemberName":"CN=.*,({account_ou}OU=.+?DC=.+?[^"]{1,2000})""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

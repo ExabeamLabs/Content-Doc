@@ -4,7 +4,7 @@
 Name = lumension-usb-read
   TimeFormat = "yyyy-MM-dd'T'HH-mm-ssZ"
   Conditions = [ """ READ-GRANTED """, """ DeviceType="""", """ DeviceName ="""" ]
-}
+
 lumension-usb-activity = {
   Vendor = Lumension
   Product = Lumension
@@ -22,5 +22,6 @@ lumension-usb-activity = {
     """Reason="({activity_details}[^"]{1,2000})""",
     """({bytes}\d{1,100}) bytes""",
   ]
-  DupFields = [ "host->dest_host" ]}
+  DupFields = [ "host->dest_host" 
+}
 ```

@@ -17,6 +17,7 @@ Name = q-symantec-dlp-email-out
     """\|N\/AN\/A((N\/A)|(null)|({file_name}(?!null|N\/A).+?))\snull"""
   ]
   DupFields = [ "recipient->external_address" ]
-}
+
+
 }
 ```

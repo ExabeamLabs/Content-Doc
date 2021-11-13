@@ -26,6 +26,7 @@ Name = cef-azure-ad-app-login
     """\Wad\.azureconditionalAccessStatus=({outcome}[^"\=\.]{1,2000}?)\s{1,100}([\w\.]{1,2000}=|$)""",
     """CEF:([^\|]{0,2000}\|){4}({activity}[^\|]{1,2000})""",
   ]
-}
+
+
 }
 ```

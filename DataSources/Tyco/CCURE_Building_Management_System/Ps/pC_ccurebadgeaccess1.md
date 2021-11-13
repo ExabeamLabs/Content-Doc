@@ -16,6 +16,7 @@ Name = ccure-badge-access-1
     """<PrimaryObjectName>({last_name}[^<,]{1,2000}),\s{0,100}({first_name}[^<,]{1,2000})""",
     """<SecondaryObjectName>({location_door}[^<]{1,2000})""",
   ]
-}
+
+
 }
 ```

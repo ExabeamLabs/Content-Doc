@@ -27,6 +27,7 @@ Name = json-4768
       """"TicketEncryptionType":"({ticket_encryption_type}[^"]{1,2000})""",
       """"ServiceName":"({service_name}[^"]{1,2000})""",
     ]
-  }
+  
+
 }
 ```

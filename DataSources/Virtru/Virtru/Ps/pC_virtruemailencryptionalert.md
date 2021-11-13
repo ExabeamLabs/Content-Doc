@@ -21,6 +21,7 @@ Name = virtru-email-encryption-alert
      """"type"{1,20}:\s{0,100}"{1,20}({alert_type}[^"]{1,2000})""""
   ]
   DupFields = [ "sender->user_email" ]
-}
+
+
 }
 ```

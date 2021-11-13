@@ -3,7 +3,7 @@
 {
 Name = cef-servicenow-login-2
   Conditions = [ """destinationServiceName =ServiceNow""", """"name":"impersonation.start"""" ]
-}
+
 servicenow-login-template = {
     Vendor = ServiceNow
     Product = ServiceNow
@@ -20,5 +20,6 @@ servicenow-login-template = {
       """"queue":"({event_name}[^"]{1,2000})""",
       """"parm1":"\s{0,100}(|-|({resource}[^",]{1,2000}?[^\\\s])\s{0,100})",""",
       """"parm2":"({src_ip}[A-Fa-f\d:.]{1,2000})"""",
-    ]}
+    
+}
 ```

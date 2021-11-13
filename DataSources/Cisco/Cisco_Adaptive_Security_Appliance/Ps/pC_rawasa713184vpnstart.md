@@ -17,6 +17,7 @@ Name = raw-asa-713184-vpn-start
     """Username = ({user}[^,@]{1,2000}).+?IP = ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\s{1,100}Client Type:\s{1,100}({client_system}.+?)\s{1,100}Client Application Version:\s{1,100}({client_system_version}.+?)\s{1,100}$"""
   ]
-}
+
+
 }
 ```

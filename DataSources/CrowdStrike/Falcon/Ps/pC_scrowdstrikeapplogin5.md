@@ -13,7 +13,7 @@ Name = s-crowdstrike-app-login-5
     """"(?i)EventType":\s{0,100}"({activity_details}[^",]{1,2000})""""
   ]
   DupFields = ["event_name->activity"]
-}
+
 s-crowdstrike-app-login = {
   Vendor = CrowdStrike
   Product = Falcon
@@ -29,5 +29,6 @@ s-crowdstrike-app-login = {
     """"UserIp":\s{0,100}"({src_ip}[^"]{1,2000})""",
     """"ServiceName":\s{0,100}"({app}[^"]{1,2000})""",
     """"Success":\s{0,100}({outcome}[^",]{1,2000})"""
-  ]}
+  
+}
 ```

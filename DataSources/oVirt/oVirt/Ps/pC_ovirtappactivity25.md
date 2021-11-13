@@ -15,6 +15,7 @@ Name = ovirt-app-activity-25
     """EVENT_ID:.*? Storage Domain ({object}[^\s"]{1,2000}) was updated by ({user}[^\s\(\)]{1,2000}?)(\)|\s|\.\s|\.$)""",
     """({app}ovirt)"""
   ]
-}
+
+
 }
 ```

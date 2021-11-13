@@ -14,6 +14,7 @@ Name = syslog-dhcpd-2
     """"message":"DHCPREQUEST for ({dest_ip}[A-Fa-f:\d.]{1,2000})( \(({dest_host}[^\s\)]{1,2000})\))? from ({dest_mac}\S+)( \(({=dest_host}[^\s\)]{1,2000})\))? via ({dest_interface}[^\\"]{1,2000})""",
   ]
   DupFields = [ "dest_host->user" ]
-}
+
+
 }
 ```

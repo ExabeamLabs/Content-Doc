@@ -17,6 +17,7 @@ Name = s-lanscopecat-logon
     """\sStatus="({status}[^"]{1,2000})""",
     """\sIPAddress="({src_ip}[a-fA-F\d.:]{1,2000})""",
   ]
-}
+
+
 }
 ```

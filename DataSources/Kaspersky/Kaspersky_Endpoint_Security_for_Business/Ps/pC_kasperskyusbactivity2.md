@@ -20,6 +20,7 @@ Name = kaspersky-usb-activity-2
     """etdn="({activity_details}[^"]{1,2000})""",
   ]
   DupFields = [ "activity_details->alert_name","action->alert_type","activity->outcome" ]
-}
+
+
 }
 ```

@@ -8,7 +8,7 @@ Name = bro-ssl-activity-2
   Fields = ${BroParserTemplates.bro-activity-1.Fields}[
     """"{1,20}server"{1,20}.+?name"{1,20}:"{1,20}({server}[^"]{1,2000})""",
     """zeek"{1,20}.+?established"{1,20}:({outcome}[^,]{1,2000})""",
-    """zeek"{1,20}.+?version"{1,20}:"{1,20}({version}[^"]{1,2000})"{1,20}
+    """zeek"{1,20}.+?version"{1,20}:"{1,20}({version}[^"]{1,2000})"{1,20
 bro-activity-1 = {
   Vendor = Zeek
   Lms = Direct
@@ -21,5 +21,6 @@ bro-activity-1 = {
     """"destination":\{"address"{1,20}:"{1,20}({dest_ip}[^"]{1,2000})"{1,20},"{1,20}port"{1,20}:({dest_port}\d{1,100})""",
     """"source":\{"address"{1,20}:"{1,20}({src_ip}[^"]{1,2000})"{1,20},"{1,20}port"{1,20}:({src_port}\d{1,100})""",
     """"{1,20}protocol"{1,20}:"{1,20}({protocol}[^"]{1,2000})"""
-    ]}
+    
+}
 ```

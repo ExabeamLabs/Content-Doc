@@ -9,6 +9,7 @@ Name = pan-vpn-login-failed
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
   Conditions = [ """,globalprotectgateway-regist-fail,""", """GlobalProtect gateway user login failed""" ]
   Fields = [
-    """({host}[\w.\-]{1,2000})\s{1,100}\d{1,100}
+    """({host}[\w.\-]{1,2000})\s{1,100}\d{1,100
+
 }
 ```

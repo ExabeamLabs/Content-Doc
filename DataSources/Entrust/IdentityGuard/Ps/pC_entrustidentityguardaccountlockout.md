@@ -15,6 +15,7 @@ Name = entrust-identityguard-account-lockout
     """({event_description}Maximum authentication.+?is locked.)""",
     """User (({user_email}[^\@\s]{1,2000}@[^\s]{1,2000})|(({domain}[^\\\/]{1,2000})[\\\/]{1,2000})?({user}[^\s]{1,2000})) is locked.""",
   ]
-}
+
+
 }
 ```

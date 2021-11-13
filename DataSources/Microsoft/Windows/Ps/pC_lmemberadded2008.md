@@ -27,6 +27,7 @@ Name = l-member-added-2008
     """Group:.+?(Group|Account) Domain:\s{0,100}(\#011)*({group_domain}[^\s#]{1,2000})\s{0,100}(\#011)*\s{0,100}(Additional Information:)?""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

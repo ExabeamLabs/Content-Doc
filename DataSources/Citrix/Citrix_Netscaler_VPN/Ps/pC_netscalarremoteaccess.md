@@ -13,6 +13,7 @@ Name = netscalar-remote-access
    """SSO\s{1,100}({event_name}[^:]{1,2000}): After Initialization user ({user}.+?)\s{1,100}clientip\s{1,100}(127.0.0.1|({src_ip}[^\s]{1,2000}))\s"""
   """({event_name}ns_sslvpn_process_sso_conn)""" 
  ]
-}
+
+
 }
 ```

@@ -13,6 +13,7 @@ Name = infoblox-remote-logon
     """ip=({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """group=({group}.+?)\s{1,100}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

@@ -32,6 +32,7 @@ Name = cef-mcafee-dlp-email-alert-2
       """(\s|\|)act=({outcome}[^=]{1,2000}?)\s{1,100}([\w\.-]{1,2000}=|$)"""
     ]
     DupFields = [ "user_email->sender", "recipient->target", "file_name->attachments"]
-}
+
+
 }
 ```

@@ -16,6 +16,7 @@ Name = ovirt-app-activity-35
     """EVENT_ID:.*? Storage Domain ({object}[^\s"]{1,2000}) was detached from Data Center Exabeam by ({user}[^\s\(\)]{1,2000}?)(\)|\s|\.\s|\.$)""",
     """({app}ovirt)"""
   ]
-}
+
+
 }
 ```

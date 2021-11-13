@@ -29,6 +29,7 @@ Name = raw-4624
       """Subject(:|=)[\s;]{0,2000}Security ID(:|=)\s{0,100}({subject_sid}[^;:=]{1,2000}?)(\s{1,100}|;)Account Name(:|=)"""
     ]
     DupFields = ["directory->process_directory"]
-  }
+  
+
 }
 ```

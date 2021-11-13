@@ -30,6 +30,7 @@ Name = cef-tripwire-file-alert
     """\|fileHash=(?:not available|({new_hash}[^|]{1,2000}))\|"""
   ]
   DupFields = [ "directory->process_directory" ]
-}
+
+
 }
 ```

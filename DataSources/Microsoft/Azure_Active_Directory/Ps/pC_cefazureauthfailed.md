@@ -18,6 +18,7 @@ Name = cef-azure-auth-failed
     """\Wshost=({src_host}[\w\-.]{1,2000})""",
     """\Wsrc=({src_ip}[A-Fa-f:\d.]{1,2000})""",
   ]
-}
+
+
 }
 ```

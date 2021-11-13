@@ -20,6 +20,7 @@ Name = auditd-unix-process-created
     """res=({outcome}[^\s'"]{1,2000})"""
   ]
   DupFields = ["host->dest_host"]
-}
+
+
 }
 ```

@@ -20,6 +20,7 @@ Name = cef-bromium-bem-security-alert
     """(\s|\|)msg=({additional_info}.+?)\s{1,100}(\w+=|$)"""
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

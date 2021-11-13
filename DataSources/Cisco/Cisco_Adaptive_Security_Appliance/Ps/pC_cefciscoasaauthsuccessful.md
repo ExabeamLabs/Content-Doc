@@ -19,6 +19,7 @@ Name = cef-cisco-asa-auth-successful
     """\sdvchost=({host}.+?)\s{1,100}([\w.]{1,2000}=|$)"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

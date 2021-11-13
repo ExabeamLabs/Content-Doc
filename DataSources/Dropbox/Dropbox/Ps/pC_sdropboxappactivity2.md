@@ -20,6 +20,7 @@ Name = s-dropbox-app-activity-2
       """"doc_title":\s{0,100}"({object}[^"]{1,2000})"""",
       """"recipient_email":\s{0,100}"({resource}[^"]{1,2000})""""
     ]
-  }
+  
+
 }
 ```

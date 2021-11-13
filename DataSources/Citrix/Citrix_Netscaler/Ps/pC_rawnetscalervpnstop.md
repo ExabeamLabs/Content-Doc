@@ -17,6 +17,7 @@ Name = raw-netscaler-vpn-stop
     """User ({user}[^@\s]{1,2000}) - Client_ip ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """ Nat_ip ({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """ SSLVPN_client_type ({vpn_client_type}[^\s]{1,2000}) -"""]
-}
+
+
 }
 ```

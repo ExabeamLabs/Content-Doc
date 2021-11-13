@@ -16,6 +16,7 @@ Name = exalms-sqlserver-failed-login
     """"message":".*?({failure_reason}because[^.]{1,2000})\.""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

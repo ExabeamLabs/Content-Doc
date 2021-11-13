@@ -17,6 +17,7 @@ Name = postfix-dlp-email-from
     """"@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     """"host(_name)?":"({host}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

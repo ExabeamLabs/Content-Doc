@@ -30,6 +30,7 @@ Name = ad-audit-4801
     """\WAUTHENTICATION_PACKAGE\s{0,100}=\s{0,100}(null|-|({auth_package}[^\s]{1,2000}))""",
   ]
   DupFields = [ "host->dest_host", "directory->process_directory" ]
-}
+
+
 }
 ```

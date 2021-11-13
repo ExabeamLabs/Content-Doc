@@ -19,6 +19,7 @@ Name = cef-logbinder-file-operation
     """\Wmsg=({additional_info}.+?)\s{1,100}(\w+=|$)""",
     """({app}LOGbinder)""",
   ]
-}
+
+
 }
 ```

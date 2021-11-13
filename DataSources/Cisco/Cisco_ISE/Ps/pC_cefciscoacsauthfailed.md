@@ -19,6 +19,7 @@ Name = cef-cisco-acs-auth-failed
       """AuthenticationMethod=(?:|({auth_method}.+?))\s[\w.]{1,2000}=""",
       """FailureReason=(?:|({failure_reason}.+?))\s[\w.]{1,2000}="""
 	]
-}
+
+
 }
 ```

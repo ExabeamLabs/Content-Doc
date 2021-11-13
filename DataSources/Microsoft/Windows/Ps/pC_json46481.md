@@ -12,7 +12,7 @@ Name = json-4648-1
     """"ad":\{[^\}]{0,2000}?"subject-domain-name":"({domain}[^"]{1,2000})""",
     """"target-server-name":"({dest_service}[^"]{1,2000})""",
   ]
-}
+
 json-windows-events = {
   Vendor = Microsoft
   Product = Windows
@@ -43,5 +43,6 @@ json-windows-events = {
     """"service-name":"({service_name}[^"]{1,2000})""",
     """auth-package":"({auth_package}[^"]{1,2000})"""",
     """workstation-name":"(-|({src_host_windows}[^"]{1,2000}))""""
-  ]}
+  
+}
 ```

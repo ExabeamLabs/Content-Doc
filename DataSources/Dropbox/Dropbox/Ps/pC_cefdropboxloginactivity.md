@@ -17,6 +17,7 @@ Name = cef-dropbox-login-activity
     """"description":\s{0,100}"({additional_info}[^"]{1,2000})"""",
     """"ip_address":\s{0,100}"{1,100}({src_ip}[A-Fa-f.:\d]{1,200})""",  
 ]
- }
+ 
+
 }
 ```

@@ -18,6 +18,7 @@ Name = vectra-alert
     """currentIP="{1,20}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
     """DestinationIP="{1,20}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""""
   ]
-}
+
+
 }
 ```

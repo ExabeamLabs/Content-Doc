@@ -18,6 +18,7 @@ Name = q-aruba-nac-logon-3
     """RADIUS\.Acct-Framed-IP-Address=({src_ip}[A-Fa-f:\d.]{1,2000})""",
   ]
   DupFields = [ "host->auth_server" ]
-}
+
+
 }
 ```

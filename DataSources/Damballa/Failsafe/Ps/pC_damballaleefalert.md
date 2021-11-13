@@ -21,6 +21,7 @@ Name = damballa-leef-alert
     """\texternalId=({alert_id}[^\t]{1,2000})""",
     """\tdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
-}
+
+
 }
 ```

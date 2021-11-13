@@ -18,6 +18,7 @@ Name = thycotic-failed-app-login
     """Details:\s{0,100}({failure_reason}.+?)\s\w+=""",
     """({app}Thycotic Software)"""
   ]
-}
+
+
 }
 ```

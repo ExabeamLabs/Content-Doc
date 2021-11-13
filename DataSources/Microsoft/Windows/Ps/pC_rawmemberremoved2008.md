@@ -26,6 +26,7 @@ Name = raw-member-removed-2008
     """Group:.+?(Group|Account) Name\s{0,100}:\s{0,100}({group_name}.+?)?\s{0,100}(Group|Account) Domain\s{0,100}:\s{0,100}({group_domain}[^\s]{1,2000})\s{0,100}""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

@@ -13,6 +13,7 @@ Name = f5-vpn-auth-failed
     """exabeam_host=({host}[\w\.\-]{1,2000})""",
     """authenticate with '({user}[^']{1,2000})' failed""",
   ]
-}
+
+
 }
 ```

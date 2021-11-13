@@ -16,6 +16,7 @@ Name = azure-mfa-auth-failed-2
     """({failure_reason}OATH Code Incorrect)""",
     """user\s{1,10}(({user_email}[^@\s]{1,2000}@[^\s]{1,2000})|(({domain}[^\\\s']{1,2000})\\)?({user}[^\s']{1,2000}))\s{1,10}updated"""
     ]
-}
+
+
 }
 ```

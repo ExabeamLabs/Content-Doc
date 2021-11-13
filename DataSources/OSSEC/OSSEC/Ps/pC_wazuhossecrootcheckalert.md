@@ -14,6 +14,7 @@ Name = wazuh-ossec-rootcheck-alert
     """"agent.labels.network.ipv4.primary":"({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"""",
     """"agent.labels.agent_hostname":"({src_host}[^"]{1,2000})"""", 
   ]
-}
+
+
 }
 ```

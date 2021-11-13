@@ -24,6 +24,7 @@ Name = xml-microsoft-dns-query
     """<Data Name ='Flags'>({query_flags}.+?)<\/Data>""",
     """<Data Name ='BufferSize'>({bytes}\d{1,100})<\/Data>""",
   ]
-}
+
+
 }
 ```

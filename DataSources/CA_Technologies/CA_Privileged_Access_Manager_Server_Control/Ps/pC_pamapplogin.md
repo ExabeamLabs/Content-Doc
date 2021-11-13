@@ -7,7 +7,7 @@ Name = pam-app-login
   Fields = ${PamParserTemplates.pam-authentication.Fields}[
     """({event_name}Auto-login)""",
   ]
-}
+
 pam-authentication = {
     Vendor = CA Technologies
     Product = CA Privileged Access Manager Server Control
@@ -29,5 +29,6 @@ pam-authentication = {
       """\sAccess/Protocol\s{0,100}:\s{0,100}(?:\- \-|({protocol}[^,]{1,2000}))""",
       """\sService/App\s{0,100}:\s{0,100}(?:\- \-|({app}[^,]{1,2000}))""",
     ]
-    DupFields = [ "dest_host->host" ]}
+    DupFields = [ "dest_host->host" 
+}
 ```

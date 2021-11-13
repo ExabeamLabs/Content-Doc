@@ -21,6 +21,7 @@ Name = s-okta-failed-app-login
       """"id":\s{0,100}"({user_agent}[^"]{1,2000})([^\}\{]{1,2000}"Client")""",
       """(Client"[^\}\{]{1,2000})"id":\s{0,100}"({user_agent}[^"]{1,2000})"""
     ]
-}
+
+
 }
 ```

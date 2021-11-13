@@ -23,6 +23,7 @@ Name = cyberark-password-change
     """\sExtraDetails=address=((\d{1,3}\.){3}\d{1,3}|({src_host}[^;]{1,2000}));username=({account}[^;]{1,2000})"""
   ]
   DupFields=[ "host->dest_host" ]
-}
+
+
 }
 ```

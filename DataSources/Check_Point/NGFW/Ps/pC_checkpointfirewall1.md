@@ -4,7 +4,7 @@
 Name = checkpoint-firewall-1
   DataType = "alert"
   Conditions = [ """|Check Point|VPN-1 & FireWall-1|""" , """layer_name="""]
-}
+
 checkpoint-firewall-3 {
   Vendor = Check Point 
   Product = NGFW
@@ -24,5 +24,6 @@ checkpoint-firewall-3 {
     """originsicname=CN\\=({host}[^\s,;\\]{1,2000})""",
     """act=({result}.+?)\s\w+=""",
     """categoryOutcome=(\/)?({outcome}.+?)\s\w+="""
-  ]}
+  
+}
 ```

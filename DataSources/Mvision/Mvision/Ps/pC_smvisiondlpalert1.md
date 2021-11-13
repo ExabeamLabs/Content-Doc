@@ -7,7 +7,7 @@ Name = s-mvision-dlp-alert-1
   Fields = ${MvisionParserTemplates.s-mvision-dlp-alert.Fields}[
     """"PrinterName":\s{0,100}"({printer_name}[^"]{1,2000})""""
   ]
-}
+
 s-mvision-dlp-alert = {
     Vendor = Mvision
     Product = Mvision
@@ -28,5 +28,6 @@ s-mvision-dlp-alert = {
       """"targetfilename":\s{0,100}"({target}[^"]{1,2000})"""",
       """"threatactiontaken":\s{0,100}"({outcome}[^"]{1,2000})"""",
       """"RuleNames":\s{1,100}"({rule_name}[^"]{1,2000})"""",
-    ]}
+    
+}
 ```

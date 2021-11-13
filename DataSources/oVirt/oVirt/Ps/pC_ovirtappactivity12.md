@@ -15,6 +15,7 @@ Name = ovirt-app-activity-12
     """EVENT_ID:.*? Add-Disk operation of ({resource}[^\s]{1,2000}) was initiated on VM ({object}[^\s"]{1,2000}) by ({user}[^\s\(\)]{1,2000}?)(\)|\s|\.\s|\.$)""",
     """({app}ovirt)"""
   ]
-}
+
+
 }
 ```

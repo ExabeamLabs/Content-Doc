@@ -17,6 +17,7 @@ Name = cisco-asa-process-created-1
     """({event_name}executed)\s{1,100}'({command_line}[^']{1,2000})\s{0,100}'""",
     """from IP ({src_ip}[a-fA-F0-9.:]{1,2000})"""
   ]
-}
+
+
 }
 ```

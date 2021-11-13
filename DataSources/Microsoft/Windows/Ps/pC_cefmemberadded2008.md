@@ -27,6 +27,7 @@ Name = cef-member-added-2008
     """\sduid=(?=\w)(.+?CN\\?=.+?,({account_ou}(OU)?.+?DC\\?=[\w-]{1,2000}))\s\w+=""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

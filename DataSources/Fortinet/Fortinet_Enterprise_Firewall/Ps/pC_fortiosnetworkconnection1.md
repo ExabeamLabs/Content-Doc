@@ -24,6 +24,7 @@ Name = fortios-network-connection-1
     """\sstatus="{0,20}({outcome}[^\s"]{0,2000})"{0,20}""",
     """\sdir="{0,20}({direction}[^\s"]{0,2000})"{0,20}"""
   ]
-}
+
+
 }
 ```

@@ -35,6 +35,7 @@ Name = cef-bluecoat-proxy
     """requestContext=(?:-|({referrer}[^\s]{1,2000}))""",
   ]
   DupFields = [ "user->orig_user" ]
-}
+
+
 }
 ```

@@ -15,6 +15,7 @@ Name = huawei-process-created
      """\scommand=({command_line}({process}({directory}[^,]{0,2000}?[\\\/]{1,2000})?({process_name}[^\\\/\s]{1,2000}))[^,]{0,2000}?),""",
      """\sresult=({outcome}\w+)""",
   ]
-}
+
+
 }
 ```

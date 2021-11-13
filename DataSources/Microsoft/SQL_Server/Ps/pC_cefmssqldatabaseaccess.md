@@ -17,6 +17,7 @@ Name = cef-mssql-database-access
     """\sshost=(|({host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\srt=({time}\d{1,100})""",
   ]
-}
+
+
 }
 ```

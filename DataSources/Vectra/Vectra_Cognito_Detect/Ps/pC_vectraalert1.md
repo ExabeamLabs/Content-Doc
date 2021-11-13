@@ -20,6 +20,7 @@ Name = vectra-alert-1
 	"""\sBytesRcvd="({bytes_in}\d{1,100})""",
 	"""\sUTCTimeStart="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""
   ]
-}
+
+
 }
 ```

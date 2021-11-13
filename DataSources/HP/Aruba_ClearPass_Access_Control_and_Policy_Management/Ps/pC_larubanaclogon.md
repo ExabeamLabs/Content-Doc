@@ -20,6 +20,7 @@ Name = l-aruba-nac-logon
       """method=({auth_type}[^\,\s]{1,2000})""",
       """server=({auth_server}[\w\d]{1,2000})""",
    ]
-}
+
+
 }
 ```

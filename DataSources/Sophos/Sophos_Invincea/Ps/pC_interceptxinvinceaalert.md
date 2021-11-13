@@ -20,6 +20,7 @@ Name = intercept-x-invincea-alert
         """src_user=({user}.+?)\s{1,100}src_host"""
   ]
   DupFields = ["host->dest_host", "malware_url->process_name"]
-}
+
+
 }
 ```

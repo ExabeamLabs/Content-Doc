@@ -19,6 +19,7 @@ Name = citrix-app-login-4
     """"connectedviaipaddress":"({src_translated_ip}[a-fA-F:\d.]{1,2000})"""",
     """"application":"({app}[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

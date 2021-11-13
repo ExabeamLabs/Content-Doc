@@ -4,7 +4,7 @@
 Name = cef-rangeraudit-db-query-1
   Product = RangerAudit
   Conditions = [ """"RangerAudit"""", """access""", """"SELECT"""" ]
-}
+
 cef-rangeraudit-db-query = {
   Vendor = RangerAudit
   Lms = ArcSight
@@ -23,5 +23,6 @@ cef-rangeraudit-db-query = {
     """resType"{0,20}:"({resource}[^"]{1,2000})""",
     """result"{0,20}:"{0,20}({outcome}[^",]{1,2000})""",
   ]
-  DupFields = [ "db_operation->activity", "db_query->additional_info" ]}
+  DupFields = [ "db_operation->activity", "db_query->additional_info" 
+}
 ```

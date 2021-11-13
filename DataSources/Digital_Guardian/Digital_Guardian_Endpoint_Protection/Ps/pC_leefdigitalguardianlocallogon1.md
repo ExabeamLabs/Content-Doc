@@ -3,7 +3,7 @@
 {
 Name = leef-digitalguardian-local-logon-1
   Conditions = [ """LEEF:""", """|Digital Guardian|Digital Guardian|""", """DigitalGuardian-Events""", """|23|""" ]
-}
+
 leef-digitalguardian-local-logon = {
   Vendor = Digital Guardian
   Product = Digital Guardian Endpoint Protection
@@ -17,5 +17,6 @@ leef-digitalguardian-local-logon = {
     """IdentHostName =([^\\]{1,2000}\\+)?({dest_host}[\w\-.]{1,2000}?)\s{0,100}(\w+=|$)""",
     """Application=({process_name}.+?)\s{0,100}(\w+=|$)""",
     """({event_code}User Logon)""",
-  ]}
+  
+}
 ```

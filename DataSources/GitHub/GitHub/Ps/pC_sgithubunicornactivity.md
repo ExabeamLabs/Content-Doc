@@ -23,6 +23,7 @@ Name = s-github-unicorn-activity
     """({app}github)""",
     """accept=({mime}[^\s]{1,2000})"""
   ]
-}
+
+
 }
 ```

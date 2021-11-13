@@ -7,7 +7,7 @@ Name = s-sailpoint-fam-file-read
   Fields = ${SailPointSIQNetAppCIFSTemplates.sailpoint-file-operation.Fields} [   
     """({accesses}Read)"""
   ]
-}
+
 sailpoint-file-operation = {
   Vendor = Sailpoint
   Product = FAM
@@ -27,5 +27,6 @@ sailpoint-file-operation = {
     """cs3=({file_ext}[^=]{1,2000})\s{1,1000}\w{1,2000}=""",
     """fileType=({file_type}[^=]{1,2000})\s{1,1000}\w{1,1000}="""
   ]
-    DupFields = [ "event_name->activity" ]}
+    DupFields = [ "event_name->activity" 
+}
 ```

@@ -19,6 +19,7 @@ Name = cef-siteminder-auth-successful
     """duser=(uid\\=)?({user}[^=\\\s,]{1,2000})""",
     """suser=({user}\S+)"""
   ]
-}
+
+
 }
 ```

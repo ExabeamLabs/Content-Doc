@@ -25,6 +25,7 @@ Name = cef-o365-security-alert
     """"userPrincipalName":"({user_email}[^"@\s]{1,2000}@[^"@\s]{1,2000})"""",
     """msg=({additional_info}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """activity":"({activity}[^"]{1,2000})""",
-    """"{1,20}userAgent"{1,20}
+    """"{1,20}userAgent"{1,20
+
 }
 ```

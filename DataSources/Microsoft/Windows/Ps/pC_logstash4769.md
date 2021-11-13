@@ -22,6 +22,7 @@ Name = logstash-4769
       """"additional_information-TicketOptions":"\s{0,100}({ticket_options}[^"]{1,2000})""""
       """"additional_information-TicketEncryptionType":"\s{0,100}({ticket_encryption_type}[^"]{1,2000})\s{0,100}""""
     ]
-  }
+  
+
 }
 ```

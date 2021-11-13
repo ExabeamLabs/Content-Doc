@@ -23,6 +23,7 @@ Name = cef-carbonblack-process-created
     """\Wmsg=({additional_info}.+?)\s{1,100}(\w+=|$)""",
   ]
   DupFields = [ "directory->process_directory" ]
-}
+
+
 }
 ```

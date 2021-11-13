@@ -14,6 +14,7 @@ Name = avaya-switch-auth-failed
       """({event_name}Failed login)""",
       """IP address:\s{1,100}({src_ip}[a-fA-F\d.:]{1,2000})""",
     ]
-  }
+  
+
 }
 ```

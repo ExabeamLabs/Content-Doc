@@ -26,6 +26,7 @@ Name = cef-forcepoint-dlp-email-alert
     """\Wcs6=({direction}.+?)\s{1,100}(\w+=|$)""",
     """CEF:([^\|]{0,2000}\|){6}({alert_severity}[^\|]{1,2000})""",
   ]
-}
+
+
 }
 ```

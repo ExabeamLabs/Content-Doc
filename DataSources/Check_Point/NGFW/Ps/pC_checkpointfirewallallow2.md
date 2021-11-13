@@ -28,6 +28,7 @@ Name = checkpoint-firewall-allow-2
     """\Wweb_client_type:\\"Other:\s{0,100}({user_agent}[^"\\]{1,2000})""",
   ]
   DupFields = [ "action->event_name", "action->outcome" ]
-}
+
+
 }
 ```

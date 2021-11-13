@@ -7,7 +7,7 @@ Name = sk4-workday-failed-app-login
   Fields = ${WorkdayParserTemplates.sk4-workday-login-template.Fields}[
     """"authenticationFailureMessage":"({failure_reason}[^"]{1,2000})""",
   ]
-}
+
 sk4-workday-login-template = {
     Vendor = Workday
     Product =  Workday
@@ -25,5 +25,6 @@ sk4-workday-login-template = {
       """"signonDateTime"{1,20}:({time}\d{1,100})""",
       """([^\|]{0,2000}\|){5}({activity}[^\|]{1,2000})""",
       """\Wdproc=(|({dproc}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
-    ]}
+    
+}
 ```

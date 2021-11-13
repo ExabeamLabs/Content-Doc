@@ -10,6 +10,7 @@ Name = exchange-dlp-email-in-2
   Conditions = [ """,SMTP,SEND,""", """,Incoming,""" ]
   Fields = [
     """,({time}\d\d\d\d-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d{1,100})""",
-    """\d{1,100}:\d{1,100}\.\d{1,100}Z,[A-Fa-f:\d.]{1,2000}
+    """\d{1,100}:\d{1,100}\.\d{1,100}Z,[A-Fa-f:\d.]{1,2000
+
 }
 ```

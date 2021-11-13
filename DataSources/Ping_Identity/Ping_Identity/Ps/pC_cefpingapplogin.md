@@ -4,7 +4,7 @@
 Name = cef-ping-app-login
   DataType = "app-login"
   Conditions = [ """CEF:""", """|Ping Identity|Ping Federate|""", """|SSO|""", """cs6=success""" ]
-}
+
 cef-ping-events-skyformation = {
   Vendor = Ping Identity
   Product = Ping Identity
@@ -24,5 +24,6 @@ cef-ping-events-skyformation = {
     """"idpEntityId"{0,20}:"{0,20}({url}[^"]{1,2000})"""",
     """"client"{0,20}:\{"{0,20}id"{0,20}:"{0,20}({user_agent}[^"]{1,2000})"""",
     """msg=({additional_info}.+?)\soldFile=""",
-  ]}
+  
+}
 ```

@@ -3,7 +3,7 @@
 {
 Name = cef-exchange-app-activity-2
   Conditions = [ """CEF:""", """|Exchange Online|""", """|Update|""" ]
-}
+
 cef-exchange-app-activity-1 = {
   Vendor = Microsoft
   Product = Exchange
@@ -21,5 +21,6 @@ cef-exchange-app-activity-1 = {
     """\Wsuid=({user_email}[^@\s]{1,2000}@({email_domain}[^\s@]{1,2000}))""",
     """\Woutcome=({outcome}.+?)\s{1,100}(\w+=|$)""",
     """CEF:([^\|]{0,2000}\|){2}({app}[^\|]{1,2000})""",
-  ]}
+  
+}
 ```

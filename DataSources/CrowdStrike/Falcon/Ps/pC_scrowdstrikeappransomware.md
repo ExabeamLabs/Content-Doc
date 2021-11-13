@@ -9,7 +9,7 @@ Name = s-crowdstrike-app-ransomware
   """"name":"({alert_name}[^"]{1,2000}?)""""
   ]
   DupFields = ["file_path->additional_info"]
-}
+
 cef-crowdstrike-app-activity-temp = {
   Vendor = CrowdStrike
   Product = Falcon
@@ -28,5 +28,6 @@ cef-crowdstrike-app-activity-temp = {
     """"UserName":"({user}[^"]{1,2000}?)""""
     """"aip":"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""""
     """"ClientComputerName":"({src_host}[^"]{1,2000})"""
-  ]}
+  
+}
 ```

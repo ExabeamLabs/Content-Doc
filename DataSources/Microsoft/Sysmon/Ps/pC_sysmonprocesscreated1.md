@@ -28,6 +28,7 @@ Name = sysmon-process-created-1
     """Domain":"({domain}[^"]{1,2000}?)""""
   ]
   DupFields = [ "host->dest_host", "directory->process_directory", "process->path" ]
-}
+
+
 }
 ```

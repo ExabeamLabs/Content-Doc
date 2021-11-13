@@ -9,6 +9,7 @@ Name = exchange-dlp-email-out-sd
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
   Conditions = [ """,STOREDRIVER,RECEIVE,""" ]
   Fields = [
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\d)Z,(?:(?:\s{0,100}'(?:[^']|'')+')\s{0,100}
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\d)Z,(?:(?:\s{0,100}'(?:[^']|'')+')\s{0,100
+
 }
 ```

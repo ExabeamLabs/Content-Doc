@@ -27,6 +27,7 @@ Name = s-guardium-db-alert-1
     """Database Name:\s{1,100}({database_name}.+?)\s{1,100}([#\d\n]{1,2000})?([\w\s]{1,2000}:)"""
   ]
   DupFields = [ "db_user->account","directory->process_directory" ]
-}
+
+
 }
 ```

@@ -21,6 +21,7 @@ Name = logrhythm-0365-account-password-change
     """RESULTCODE=({outcome}[^=]{1,2000}?)\s{1,100}\w+=""",
     """USERAGENT=\s{0,100}(|({user_agent}[^\n]{1,2000}?))\s{0,100}(\w+=|$)"""
   ]
-}
+
+
 }
 ```

@@ -5,7 +5,7 @@ Name = unix-account-switch-1
   DataType = "unix-account-switch"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """"type":"USER_START"""", """res\=success""", """PAM:session_open""", """CEF:""", """|Skyformation|SkyFormation""", """Cloud Apps Security|""", """|audit-event|""" ]
-}
+
 unix-template = {
     Vendor = Unix
     Product = Unix Auditd
@@ -21,5 +21,6 @@ unix-template = {
       """\WeventId=({alert_id}\d{1,100})""",
       """\Wsuser=({user}[^\s]{1,2000})""",
       """\Wdhost=({dest_host}[\w\-.]{1,2000})""",
-    ]}
+    
+}
 ```

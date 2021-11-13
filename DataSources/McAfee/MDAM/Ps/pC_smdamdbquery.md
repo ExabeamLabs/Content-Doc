@@ -25,6 +25,7 @@ Name = s-mdam-db-query
     """accessed_objects="(NULL|({additional_info}[^"]{1,2000}))""""
   ]
   DupFields = [ "db_user->account", "os_user->user" ]
-}
+
+
 }
 ```

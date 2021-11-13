@@ -15,6 +15,7 @@ Name = bro-rdp-remote-logon-1
     """([^\t]{1,2000}\t){4}(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^\t]{1,2000}))\t({dest_port}\d{1,100})""",
     """3389\t(?:\(empty\)|(({domain}[^\\]{1,2000})\\+)?({user}.*?))\tencrypted"""
   ]
-}
+
+
 }
 ```

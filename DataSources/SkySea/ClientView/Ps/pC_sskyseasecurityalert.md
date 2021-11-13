@@ -24,6 +24,7 @@ Name = s-skysea-security-alert
     """^([^\,]{0,2000}\,){72}({additional_info}[^\,]{1,2000})\,""",
   ]
   DupFields = [ "directory->process_directory" ]
-}
+
+
 }
 ```

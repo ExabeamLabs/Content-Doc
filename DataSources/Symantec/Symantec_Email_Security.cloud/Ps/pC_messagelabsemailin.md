@@ -21,6 +21,7 @@ Name = messagelabs-email-in
     """"senderIp":"({src_ip}[a-fA-F\d.:]{1,2000})"""
   ]
   DupFields = [ "recipient->email_user", "recipient->user_email", "sender->external_address" ]
-}
+
+
 }
 ```

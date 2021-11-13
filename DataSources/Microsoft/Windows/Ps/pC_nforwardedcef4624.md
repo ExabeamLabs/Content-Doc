@@ -22,6 +22,7 @@ Name = n-forwarded-cef-4624
       """nitroSecurity_ID=({user_sid}[^\s]{1,2000})\s\w+="""
     ]
     DupFields = ["host->dest_host"]
-  }
+  
+
 }
 ```

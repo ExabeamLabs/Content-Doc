@@ -8,7 +8,7 @@ Name = syslog-symantec-dlp-alert-4
     """(?i)application_name="{0,20}(?:N\/A|({process_name}.+?))\s{0,100}("|,|\s{0,100}$)""",
     """\s{0,100}(?i)file_name="{0,20}(?:N\/A|({file_name}[^",]{1,2000}))\s{0,100}("|,|\s{0,100}$)"""
   ]
-}
+
 syslog-symantec-dlp-alert = {
     Vendor = Symantec
     Product = Symantec DLP
@@ -66,5 +66,6 @@ syslog-symantec-dlp-alert = {
       """\sseverity=({alert_severity}[^,]{1,2000}?)\s{0,100}(,|$)""",
       """\sEvent_Description="({additional_info}[^"]{1,2000})""",
       """\sdest_port=({dest_port}\d{1,100})""", 
-    ]}
+    
+}
 ```

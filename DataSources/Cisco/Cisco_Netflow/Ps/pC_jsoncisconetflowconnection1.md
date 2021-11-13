@@ -21,6 +21,7 @@ Name = json-cisco-netflow-connection-1
     """"tcp_flags":({tcp_flags}\d{1,100})""",
     """"prot":({protocol}\d{1,100})"""
   ]
-}
+
+
 }
 ```

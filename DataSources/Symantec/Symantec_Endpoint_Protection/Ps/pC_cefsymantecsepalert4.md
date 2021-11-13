@@ -8,7 +8,7 @@ Name = cef-symantec-sep-alert-4
     """"file":.*?"name":"({malware_file_name}[^"]{1,2000})""",
     """"data_source_url_domain":"({additional_info}[^"]{1,2000})""",
   ]
-}
+
 cef-symantec-sep-alert = {
   Vendor = Symantec
   Product = Symantec Endpoint Protection
@@ -24,5 +24,6 @@ cef-symantec-sep-alert = {
     """\Wuser_name=({user}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wfname=({malware_file_name}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
     """"feature_name":"({alert_type}[^"]{1,2000})""",
-  ]}
+  
+}
 ```

@@ -26,6 +26,7 @@ Name = checkpoint-vpn-login-5
     """\|domain_name=({domain}[^\|]{1,2000})""",
     """({action}Successful)"""
   ]
-}
+
+
 }
 ```

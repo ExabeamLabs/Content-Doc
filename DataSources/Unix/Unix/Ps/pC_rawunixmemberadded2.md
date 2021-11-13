@@ -15,6 +15,7 @@ Name = raw-unix-member-added-2
     """add \'({account_name}[^']{1,2000})\' to group \'({group_name}[^']{1,2000})\'""",
   ]
   DupFields=["host->dest_host"]
-}
+
+
 }
 ```

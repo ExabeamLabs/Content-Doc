@@ -24,6 +24,7 @@ Name = cef-catonetworks-web-activity
     """\Wsuser=({src_host}[\w\-.]{1,2000})""",
     """user_email=({user_email}[^@]{1,2000}@[^=]{1,2000}?)\s\w+="""
   ]
-}
+
+
 }
 ```

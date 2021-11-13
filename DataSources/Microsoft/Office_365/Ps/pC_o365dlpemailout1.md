@@ -3,7 +3,7 @@
 {
 Name = o365-dlp-email-out-1
   Conditions = [ """"Workload""", """"ClientProcessName"""", """"Subject"""", """"SendOnBehalf"""" ]
-}
+
 o365-dlp-email-out = {
   Vendor = Microsoft
   Product = Office 365
@@ -26,5 +26,6 @@ o365-dlp-email-out = {
     """"ClientInfoString\\*"{1,20}:[\s\\]{0,2000}"{1,20}Client\\*=({alert_name}[^"\\;]{1,2000})""",
     """src-account-name":"({account_name}[^"]{1,2000})"""
   ]
-  DupFields = [ "alert_name->alert_type" ]}
+  DupFields = [ "alert_name->alert_type" 
+}
 ```

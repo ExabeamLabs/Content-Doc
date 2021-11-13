@@ -30,6 +30,7 @@ Name = symantec-atp-alert
     """"atp_incident_id":({alert_id}\d{1,100})"""
   ]
   DupFields = ["host->dest_host", "file_name->process_name"]
-}
+
+
 }
 ```

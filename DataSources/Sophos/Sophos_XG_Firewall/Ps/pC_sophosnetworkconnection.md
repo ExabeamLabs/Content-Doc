@@ -26,6 +26,7 @@ Name = sophos-network-connection
     """\Wout_interface=(({dest_interface}\d{1,100})|"({=dest_interface}[^"]{1,2000}?)")""",
     """\Wreason=({failure_reason}.+?)\s{1,100}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

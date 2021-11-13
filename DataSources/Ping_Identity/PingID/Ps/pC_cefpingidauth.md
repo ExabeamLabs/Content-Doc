@@ -26,6 +26,7 @@ Name = cef-pingid-auth
     """\WSAML_SUBJECT\\=(|({user_email}[^=@]{1,2000}?@[^=@]{1,2000}?),?|({user}.+?))(\s{1,100}\w+\\=|\s{0,100}$)""",
   ]
   DupFields = [ "auth_method->activity" ]
-}
+
+
 }
 ```

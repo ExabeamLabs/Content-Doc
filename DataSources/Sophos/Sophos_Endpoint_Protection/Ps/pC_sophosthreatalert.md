@@ -22,6 +22,7 @@ Name = sophos-threat-alert
     """FullFilePath=({malware_url}[^;]{1,2000}\\({malware_file_name}[^;]{1,2000}))""",
     """Status=({alert_severity}[^;]{1,2000})""",
   ]
-}
+
+
 }
 ```

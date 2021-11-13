@@ -28,6 +28,7 @@ Name = cef-syslog-guardium-db-alert-1
     """\Wcs5=(|({database_name}.+?))\s{0,100}(\w+=|$)"""
   ]
   DupFields = [ "db_user->account" ]
-}
+
+
 }
 ```

@@ -26,6 +26,7 @@ Name = leef-fireeye-alert
     NameTemplate = """FireEye Alert ${alert_name} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="device", Name ="url", Fields=["malware_url->url"]}
+      {EntityType="device", Name ="url", Fields=["malware_url->url"]
+
 }
 ```

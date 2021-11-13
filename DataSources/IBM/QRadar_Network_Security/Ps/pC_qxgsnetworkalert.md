@@ -22,6 +22,7 @@ Name = q-xgs-network-alert
     """(\||\W)sev=({alert_severity}.*?)\s{0,100}(\w+=|$)""",
     """(\||\W)nvpdata=({additional_info}.+?)\s(\w+=|$)"""
   ]
-}
+
+
 }
 ```

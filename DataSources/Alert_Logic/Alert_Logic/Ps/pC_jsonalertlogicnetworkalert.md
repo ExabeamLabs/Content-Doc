@@ -19,6 +19,7 @@ Name = json-alertlogic-network-alert
     """"incident":\s{0,100}\{.*?"type":\s{0,100}"({alert_type}[^"]{1,2000})""",
     """"facts_url":\s{0,100}"({additional_info}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

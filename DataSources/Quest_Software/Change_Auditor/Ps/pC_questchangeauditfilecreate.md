@@ -4,7 +4,7 @@
 Name = quest-change-audit-file-create
         DataType = "file-operations"
         Conditions = [ """"action": "Add Object"""", """"folderPath": """", """"timeDetected": """" ]
-}
+
 quest-change-auditor-file-activity = {
     Vendor = Quest Software
     Product = Change Auditor
@@ -29,5 +29,6 @@ quest-change-auditor-file-activity = {
       """"event": "(EMC )?(File|Folder) ({accesses}(opened|deleted|moved|renamed|created|contents written))"""
       """"action": "({accesses}(Delete|Move|Rename|Add)) Object""""
     ]
-    DupFields = ["file_path->file_parent"]}
+    DupFields = ["file_path->file_parent"
+}
 ```

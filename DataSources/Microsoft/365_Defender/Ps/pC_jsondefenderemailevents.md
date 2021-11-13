@@ -23,6 +23,7 @@ Name = json-defender-email-events
     """"DeliveryAction":\s{0,10}"({outcome}[^"]{1,2000}?)"""",
     """({file_verdict}Malicious Payload)"""
     ]
-}
+
+
 }
 ```

@@ -22,6 +22,7 @@ Name = meraki-network-connection-1
     """\sdhcp_ip\\*='({dhcp_ip}[^']{1,2000})""",
     """\sidentity\\*='(({user_email}[^@'\s]{1,2000}@({email_domain}[^\s'.]{1,2000}\.[^\s']{1,2000}))|((({domain}[^'\s\\\/]{1,2000})[\\\/])?({user}[^']{1,2000})))'"""
   ]
-}
+
+
 }
 ```

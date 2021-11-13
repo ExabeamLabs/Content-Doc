@@ -22,6 +22,7 @@ Name = vontu-dlp-1
       """\sEndpoint Username:\s{1,20}(({domain}[^\\]{1,2000})\\)?({user}[^\s]{1,2000})""",
       """({alert_type}DLP ALERT)""",
     ]
-  }
+  
+
 }
 ```

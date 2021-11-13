@@ -19,6 +19,7 @@ Name = cef-kaspersky-dlp-email
     """src=({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
     """msg=\w+\s{1,100}"{1,20}({attachment}[^"]{1,2000})""",
     ]
-}
+
+
 }
 ```

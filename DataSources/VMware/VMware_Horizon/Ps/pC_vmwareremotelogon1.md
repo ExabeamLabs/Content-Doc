@@ -15,6 +15,7 @@ Name = vmware-remote-logon-1
     """The agent running on machine\s{1,100}({dest_host}[\w\-.]{1,2000})\s{1,100}has accepted an allocated session""",
     """for user (?:({domain}[^\\\s]{1,2000})\\+)?(({user_email}[^@\\\s]{1,2000}@[^@\\\s]{1,2000})|({user}[^\\\s]{1,2000}))"""
    ]
-}
+
+
 }
 ```

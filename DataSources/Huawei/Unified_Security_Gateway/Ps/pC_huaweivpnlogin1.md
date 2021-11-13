@@ -15,6 +15,7 @@ Name = huawei-vpn-login-1
      """Source IP=({src_ip}[a-fA-F\d.:]{1,2000})""",
   ]
   DupFields = ["user->account"]
-}
+
+
 }
 ```

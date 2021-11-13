@@ -33,6 +33,7 @@ Name = s-checkpoint-alert-2
     NameTemplate = """Check Point Alert ${alert_name} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address"]}
+      {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address"]
+
 }
 ```

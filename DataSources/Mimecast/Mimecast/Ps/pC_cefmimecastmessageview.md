@@ -21,6 +21,7 @@ Name = cef-mimecast-message-view
     """"source":"({resource}[^"]{1,2000}?)"""",
     """"({additional_info}contentViewed[^}]{1,2000}?)\}"""
   ]
-}
+
+
 }
 ```

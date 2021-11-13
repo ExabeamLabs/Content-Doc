@@ -3,7 +3,7 @@
 {
 Name = l-lenel-badge-access-1
   Conditions = [ """"EVTDESCR":"Access Denied"""", """"BADGENAME":""", """"EMPID":""", """"CARDNUM":""", """leaf""" ]
-}
+
 lenel-physical-access = {
     Vendor = Lenel
     Product = OnGuard
@@ -20,5 +20,6 @@ lenel-physical-access = {
        """"EVENT_TIME_UTC":\s{0,100}"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{6})""",
        """"EMPID":\s{0,100}"({employee_id}[^"]{1,2000}?)\s{0,100}""""
     ]
-    DupFields = [ "location_door->location_full" ]}
+    DupFields = [ "location_door->location_full" 
+}
 ```

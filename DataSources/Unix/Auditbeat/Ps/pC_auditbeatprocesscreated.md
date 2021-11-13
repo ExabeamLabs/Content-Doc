@@ -23,6 +23,7 @@ Name = auditbeat-process-created
     """user.+?group":.+?name":"({user}[^"]{1,2000})""""
   ]
   DupFields = ["process->path","host->dest_host","process_directory->directory"]
-}
+
+
 }
 ```

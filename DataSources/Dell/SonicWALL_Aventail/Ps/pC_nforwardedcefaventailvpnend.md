@@ -17,6 +17,7 @@ Name = n-forwarded-cef-aventail-vpn-end
     """src=({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""", 
   ]
   DupFields = ["user->account"]
-}
+
+
 }
 ```

@@ -18,6 +18,7 @@ Name = windows-xml-powershell-process-created
     """<EventRecordID>({record_id}[^<]{1,2000})"""
   ]
   DupFields = [ "host->dest_host", "process->command_line" ]
-}
+
+
 }
 ```

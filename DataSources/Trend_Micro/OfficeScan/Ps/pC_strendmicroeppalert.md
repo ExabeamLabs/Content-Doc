@@ -19,6 +19,7 @@ Name = s-trendmicro-epp-alert
     """File:\s{1,100}({malware_url}.+?)\s{1,100}Date"""
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

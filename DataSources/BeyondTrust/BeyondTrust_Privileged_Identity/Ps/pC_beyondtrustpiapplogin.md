@@ -7,7 +7,7 @@ Name = beyondtrust-pi-app-login
   Fields = ${BeyondTrustParserTemplates.beyondtrust-pi-events.Fields}[
     """Impersonating user (({target_domain}[^\\]{1,2000})(\\)+)?({target_user}[^\s)]{1,2000})\)"""
 ]
-}
+
 beyondtrust-pi-events = {
   Vendor = BeyondTrust
   Product = BeyondTrust Privileged Identity
@@ -22,5 +22,6 @@ beyondtrust-pi-events = {
     """cs3=({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """CEF:\d{1,100}\|([^\|]{1,2000}\|){3}({event_name}[^\|]{1,2000})\|""",
     """cs1=.+?({outcome}Success|Failure)"""
-  ]}
+  
+}
 ```

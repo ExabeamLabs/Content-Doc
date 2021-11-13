@@ -24,6 +24,7 @@ Name = q-unix-as
     """\d\d:\d\d:\d\d (::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^\s]{1,2000}))\s{1,100}sshd\["""
   ]
   DupFields = [ "user_uid->user_id"]
-}
+
+
 }
 ```

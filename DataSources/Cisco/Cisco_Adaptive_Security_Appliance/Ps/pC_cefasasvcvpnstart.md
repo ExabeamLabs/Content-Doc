@@ -22,6 +22,7 @@ Name = cef-asa-svc-vpn-start
 	"""\sc6a3=(?: |0:0:0:0:0:0:0:0|({src_translated_ip}.+?))\s{1,100}\w+="""
   ]
   DupFields = ["user->account"]
-}
+
+
 }
 ```

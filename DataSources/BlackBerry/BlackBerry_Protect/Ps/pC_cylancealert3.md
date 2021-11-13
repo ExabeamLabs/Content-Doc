@@ -23,6 +23,7 @@ Name = cylance-alert-3
     """"file_size":({bytes}\d{1,100})""",
   ]
   DupFields = [ "file_name->malware_file_name" ]
-}
+
+
 }
 ```

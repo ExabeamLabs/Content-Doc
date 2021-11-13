@@ -15,6 +15,7 @@ Name = syslog-juniper-vpn-relogin
     """\suser started new session from IP \(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\)""",
   ]
   DupFields = [ "dest_host->host" ]
-}
+
+
 }
 ```

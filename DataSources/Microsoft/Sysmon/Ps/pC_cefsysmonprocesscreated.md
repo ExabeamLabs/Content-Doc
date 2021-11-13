@@ -29,6 +29,7 @@ Name = cef-sysmon-process-created
     """\WfileHash=({md5}\S+)""",
   ]
   DupFields = [ "directory->process_directory" ]
-}
+
+
 }
 ```

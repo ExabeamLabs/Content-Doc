@@ -21,6 +21,7 @@ Name = s-member-added-2008-jp
       """グループ:.+?グループ名:\s{1,100}({group_name}.+?)?\s{1,100}グループ ドメイン:""",
       """グループ:.+?グループ ドメイン:\s{1,100}({group_domain}[^\s]{1,2000})"""]
     DupFields = [ "host->computer_name" ]
-  }
+  
+
 }
 ```

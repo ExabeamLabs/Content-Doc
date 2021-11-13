@@ -4,7 +4,7 @@
 Name = s-windows-event-4624
   DataType = "windows-4624"
   Conditions = [ """LogType="WLS"""", """EventID="4624"""" ]
- }
+ 
 windows-events-wls= {
   Vendor = Microsoft
   Product = Windows
@@ -44,5 +44,6 @@ windows-events-wls= {
     """AuthenticationPackageName ="({auth_package}[^"]{1,2000})"""",
     """IpAddress="(-|({src_ip}[a-fA-F\d:.]{1,2000}))""""
     ]
-    DupFields = [ "dest_host->host" ]}
+    DupFields = [ "dest_host->host" 
+}
 ```

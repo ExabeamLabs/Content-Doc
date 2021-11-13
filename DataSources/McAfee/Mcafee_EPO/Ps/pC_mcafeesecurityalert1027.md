@@ -20,6 +20,7 @@ Name = mcafee-security-alert-1027
     """<MD5>({md5}[^<]{1,2000})<\/MD5>""",
   ]
   DupFields = ["alert_type->alert_name"]
- }
+ 
+
 }
 ```

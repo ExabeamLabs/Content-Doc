@@ -28,6 +28,7 @@ Name = cef-securesphere-db-alert-1
     """\Wcs14=(|({database_schema}.+?))\s{0,100}(\w+=|\||$)"""
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

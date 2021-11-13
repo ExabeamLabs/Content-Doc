@@ -19,6 +19,7 @@ Name = audit-unix-process-created
     """cmd="?({process}[^"]{0,2000}?)\s{0,100}("|\w+=|$)""",
     """res=({outcome}[^\s'"]{1,2000})"""
   ]
-}
+
+
 }
 ```

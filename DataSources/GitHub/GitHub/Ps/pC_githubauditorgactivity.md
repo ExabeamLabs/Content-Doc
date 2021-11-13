@@ -19,6 +19,7 @@ Name = github-audit-org-activity
     """"{1,20}org"{1,20}:"{1,20}({object}[^"]{1,2000})""",
     """({app}github)"""
   ]
-}
+
+
 }
 ```

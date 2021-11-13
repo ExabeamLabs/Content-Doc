@@ -19,6 +19,7 @@ Name = juniper-access-control
     """PulseSecure:[^\[\]]{0,2000}?\[({src_ip}[a-fA-F:\d.]{1,2000})\]\s{1,100}(({domain}[^\\]{1,2000})\\)?(?:({user_email}[^@\s]{1,2000}@[^@\(]{1,2000})|({user}[^\s\\]{1,2000}))\(({realm}[^\)]{1,2000})?""",
     """({os}iOS|Android|BlackBerry|iPhone OS|Windows Phone|BeOS|(?:W|w)indows\s{0,20}\d{1,2}|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)"""
   ]
-}
+
+
 }
 ```

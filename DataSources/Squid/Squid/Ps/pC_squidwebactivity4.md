@@ -22,6 +22,7 @@ Name = squid-web-activity-4
       """http_received_size":({bytes_in}\d{1,100})""",
       """http_mime_type":"(-|({mime}[^"]{1,2000}?))","""
    ]
-}
+
+
 }
 ```

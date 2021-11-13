@@ -20,6 +20,7 @@ Name = json-4104
     """"ScriptBlockId":"({scriptblock_id}[^"]{1,2000})"""",
     """({process_name}PowerShell)"""
   ]
-}
+
+
 }
 ```

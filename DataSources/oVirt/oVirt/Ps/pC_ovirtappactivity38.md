@@ -15,6 +15,7 @@ Name = ovirt-app-activity-38
     """EVENT_ID:.*?Interface nic1 \(({resource}[^\)]{1,2000})\) was updated for VM ({object}[^\s"]{1,2000}?)\.\s{1,100}\(User: ({user}[^\s\(\)"]{1,2000})""",
     """({app}ovirt)"""
   ]
-}
+
+
 }
 ```

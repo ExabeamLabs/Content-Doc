@@ -20,6 +20,7 @@ Name = json-ccure-badge-access
     """"admitReject":\s{0,100}"({outcome}[^"]{1,2000})""""
   ]
   DupFields = [ "location_door->location_full" ]
-}
+
+
 }
 ```

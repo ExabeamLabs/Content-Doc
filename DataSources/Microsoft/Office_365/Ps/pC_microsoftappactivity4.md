@@ -6,7 +6,7 @@ Name = microsoft-app-activity-4
   Fields = ${MSParserTemplates.microsoft-app-activity-3.Fields}[
     """targetResources":\[\{[^\}]{1,2000}?userPrincipalName":"({target_user}[^@"]{1,2000}@[^"]{1,2000})"""" 
   ]
-}
+
 microsoft-app-activity-3 = {
     Vendor = Microsoft
     Product = Office 365
@@ -24,5 +24,6 @@ microsoft-app-activity-3 = {
       """"src-application-name":"({app}[^"]{1,2000})"""",
       """key":"User-Agent","value":"({user_agent}[^"]{1,2000})"""",
       """ipAddress":"({src_ip}[a-fA-F\d.:]{1,2000})""""
-    ]}
+    
+}
 ```

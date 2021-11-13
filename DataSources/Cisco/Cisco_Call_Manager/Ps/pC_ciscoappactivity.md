@@ -5,7 +5,7 @@ Name = cisco-app-activity
   Product = Cisco Call Manager
   DataType = "app-activity"
   Conditions = [ """EventType =UserAccess""", """ResourceAccessed=""", """EventStatus =""" ]
-}
+
 cisco-events = {
   Vendor = Cisco
   Product = Cisco
@@ -23,5 +23,6 @@ cisco-events = {
     """AuditDetails\s{0,100}=({additional_info}[^\]]{1,2000})""",
     """App ID\s{0,100}=({app}[^\]]{1,2000})""",
     """userPrincipalName"{1,20}:\s{0,100}"{1,20}({user_email}[^@]{1,2000}@({email_domain}[^"]{1,2000}))""",
-  ]}
+  
+}
 ```

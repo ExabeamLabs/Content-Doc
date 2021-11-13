@@ -19,6 +19,7 @@ Name = aix-process-created
     """\sCMD \(\s{0,100}[^\/]{0,2000}?({process}({directory}\/[^\)]{0,2000}?)({process_name}[^\/\s]{0,2000}?[^\\\/])?)((\\\\)*\s|\))"""
   ]
   DupFields = [ "account->user" ]
-}
+
+
 }
 ```

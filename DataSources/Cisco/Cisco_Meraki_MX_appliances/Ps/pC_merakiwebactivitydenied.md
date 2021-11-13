@@ -15,6 +15,7 @@ Name = meraki-web-activity-denied
     """\sserver='({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):({dest_port}\d{1,100})""",
     """\surl='({full_url}(({protocol}\w+):\/+)?({web_domain}[^\/']{1,2000})({uri_path}[^\?']{1,2000}?)?({uri_query}\?.+?)?)'""",
   ]
-}
+
+
 }
 ```

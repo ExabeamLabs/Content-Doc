@@ -21,6 +21,7 @@ Name = mcafee-security-alert-5
     """:epoEventOsType:\s{0,100}'STRING:\s{0,100}\\?"({os}[^"']{1,2000}?)\\?""""
   ]
   DupFields = [ "alert_type->threat_category" ]
-}
+
+
 }
 ```

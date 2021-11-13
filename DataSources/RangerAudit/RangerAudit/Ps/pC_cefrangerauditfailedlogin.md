@@ -15,6 +15,7 @@ Name = cef-rangeraudit-failed-login
     """Ip Address:({src_ip}[A-Fa-f:\d.]{1,2000})\s{0,100}\|\s{0,100}({failure_reason}.+?)\s{0,100}$""",
     """({app}ranger)""",
   ]
-}
+
+
 }
 ```

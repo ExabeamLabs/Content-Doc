@@ -4,7 +4,7 @@
 Name = cef-carbonblack-network-connection-successful-1
   DataType = "network-connection"
   Conditions = [ """CEF:""", """threatIndicators""" , """|security-threat-detected""", """act=run""", """attempted a network connect""" ]
-}
+
 cef-carbonblack-events-1 {
   Vendor = VMware
   Product = Carbon Black Cloud Endpoint Standard
@@ -43,5 +43,6 @@ cef-carbonblack-events-1 {
     """"selectedApp":\{[^}]{1,2000}"md5Hash":"({selected_md5hash}[^"]{1,2000})"""",
     """"selectedApp":\{[^}]{1,2000}"sha256Hash":"({selected_sha256}[^"]{1,2000})"""",
   ]
-  DupFields = [ "directory->process_directory" ]}
+  DupFields = [ "directory->process_directory" 
+}
 ```

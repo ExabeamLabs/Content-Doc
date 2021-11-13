@@ -33,6 +33,7 @@ Name = cef-mwg-proxy
     """\Wcs5=({action}[^=]{1,2000}?)\s{1,100}(?:cs5Label=Block Reason|[\w\.]{1,2000}=.+?cs5Label=Block Reason)""",
     """\|McAfee\|Web Gateway\|[^\|]{0,2000}\|({result_code}[^\|]{1,2000})""",
   ]
-}
+
+
 }
 ```

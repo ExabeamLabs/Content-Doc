@@ -13,6 +13,7 @@ Name = cisco-ftd-746015
     """%FTD-({priority}\d)-({event_code}[^:]{1,2000})""",
     """\]\s({response}({query}\S+)\s({dns_response_code}resolved)[^=]{1,2000}?)\s{0,100}$"""
   ]
-}
+
+
 }
 ```

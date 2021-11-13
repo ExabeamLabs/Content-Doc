@@ -18,6 +18,7 @@ Name = centrify-remote-logon-1
     """AUDIT_TRAIL\|Centrify Suite\|DirectAuthorize - Windows[^=]{1,2000}?({event_name}Remote login success)""",
     """Message:\s{0,100}({additional_info}[^:]{1,2000})\.\s{1,100}""",
   ]
-}
+
+
 }
 ```

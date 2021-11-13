@@ -25,6 +25,7 @@ Name = safend-dlp-alert
     """Details:\s{0,100}Disk size = (?i)({bytes}\d{1,100}\s{1,100}\w+)""",
     """Details:\s{0,100}({process_name}[^=:,]{1,2000}?)(,|\s{0,100}$)"""
   ]
-}
+
+
 }
 ```

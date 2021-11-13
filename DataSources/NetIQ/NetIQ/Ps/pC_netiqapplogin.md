@@ -18,6 +18,7 @@ Name = netiq-app-login
     """((U|u)ser\s{0,100}Agent)\\"{0,20}:\\"{0,20}({user_agent}[^"]{1,2000}?)\\*"""",
     """({app}NetIQ)""",
  ]
-}
+
+
 }
 ```

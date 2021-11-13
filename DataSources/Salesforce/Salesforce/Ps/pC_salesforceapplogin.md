@@ -10,6 +10,7 @@ Name = salesforce-app-login
   Conditions = [ ""","Success"""", ""","login.salesforce.com"""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
-    """([^,]{0,2000}
+    """([^,]{0,2000
+
 }
 ```

@@ -22,6 +22,7 @@ Name = oracle-access-manager
     """eventId=({event_code}\d{1,100})\s{0,100}"{0,20}(\w+=|$)""",
     """destinationServiceName =({service}.+?)\s{0,100}"{0,20}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

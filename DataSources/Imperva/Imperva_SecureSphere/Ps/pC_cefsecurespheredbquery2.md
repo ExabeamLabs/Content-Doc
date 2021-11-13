@@ -22,6 +22,7 @@ Name = cef-securesphere-db-query-2
     """\Wdproc=({database_name}.+?)\s{1,100}(\w+=|$)""",
     """\Wcn2=({response_size}.+?)\s{1,100}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

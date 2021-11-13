@@ -19,6 +19,7 @@ Name = fortinet-app-activity
     """\Waction="{0,20}({activity}.+?)"{0,20}(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wmsg="({additional_info}[^"]{1,2000})"""",
   ]
-}
+
+
 }
 ```

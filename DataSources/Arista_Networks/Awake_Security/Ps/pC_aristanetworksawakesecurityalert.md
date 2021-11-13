@@ -21,6 +21,7 @@ Name = arista-networks-awake-security-alert
     """cs2=({additional_info}[^\n]{1,2000})\s{1,100}cs2Label=""",
     """CEF:([^\|]{0,2000}\|){4}({alert_id}[^\|]{1,2000})\|"""
   ]
-}
+
+
 }
 ```

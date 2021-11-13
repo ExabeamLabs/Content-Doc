@@ -18,6 +18,7 @@ Name = s-cyberark-tpm-login
 		"""PAR\[({event_code}\d{1,100})""",
 		"""ObjectType:\s({event_subtype}.+)\sTarget:"""
     ]
-}
+
+
 }
 ```

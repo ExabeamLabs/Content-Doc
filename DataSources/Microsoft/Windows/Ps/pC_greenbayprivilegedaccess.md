@@ -21,6 +21,7 @@ Name = greenbay-privileged-access
     """"computer":"({host}[^"]{1,2000})""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

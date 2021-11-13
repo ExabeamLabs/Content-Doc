@@ -17,6 +17,7 @@ Name = axway-sftp-file-upload
     """Client Hostname=({dest_ip}[\da-fA-F.:]{1,2000})""",
     """message=({event_name}[^\.]{1,2000})"""
   ]
-}
+
+
 }
 ```

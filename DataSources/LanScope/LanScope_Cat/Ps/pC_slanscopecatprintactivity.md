@@ -21,6 +21,7 @@ Name = s-lanscopecat-print-activity
     """\sIPAddress="({src_ip}[a-fA-F\d.:]{1,2000})""",
     """\sAlertType="({alert_type}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

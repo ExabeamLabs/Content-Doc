@@ -25,6 +25,7 @@ Name = tenable-security-alert-1
     """"state"{1,20}:\s{0,100}"{1,20}({outcome}[^"]{1,2000})""",
     """"solution"{1,20}:\s{0,100}"{1,20}((?i)n\/a|({solution}[^"]{1,2000}))"""
   ]
-}
+
+
 }
 ```

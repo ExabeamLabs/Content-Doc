@@ -17,6 +17,7 @@ Name = unix-auth-failed-5
     """rhost=({src_ip}[\da-fA-F.:]{1,2000})""",
     """({failure_reason}authentication ({outcome}failure))"""
   ]
-}
+
+
 }
 ```

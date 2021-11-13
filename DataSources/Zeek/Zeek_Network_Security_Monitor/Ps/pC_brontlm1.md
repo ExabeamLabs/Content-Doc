@@ -21,6 +21,7 @@ Name = bro-ntlm-1
     """"username":"?({user}[^,"]{1,2000})""",
     """"success":({outcome}[^,]{1,2000})""",
   ]
-}
+
+
 }
 ```

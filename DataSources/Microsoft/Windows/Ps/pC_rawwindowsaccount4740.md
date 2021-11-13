@@ -29,6 +29,7 @@ Name = raw-windows-account-4740
         """Caller Computer Name:\s{1,100}(\\+)?(::ffff:)?({src_host}[^\#\s",<]{1,2000})""",
         ]
         DupFields=["host->dest_host", "caller_domain->domain" ]
- }
+ 
+
 }
 ```

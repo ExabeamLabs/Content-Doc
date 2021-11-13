@@ -7,7 +7,7 @@ Name = q-kiteworks-file-read-1
   Fields = ${KiteWorksParserTemplates.q-kiteworks-file-activity.Fields}[
     """\s({accesses}View) file\s{1,100}({file_name}.+?(\.({file_ext}\w+)))(\s{1,100}from email.|\.\s{1,100}File:)""",
   ]
-}
+
 q-kiteworks-file-activity = {
     Vendor = Accellion
     Lms = QRadar
@@ -24,5 +24,6 @@ q-kiteworks-file-activity = {
       """Activity:\s{0,100}({activity}.+?)\."{0,20}\s{0,100}$""",
       """Activity Type:\s{1,100}({activity}[^\s,]{1,2000})"""
     ]
-    DupFields = [ "host->dest_host" ]}
+    DupFields = [ "host->dest_host" 
+}
 ```

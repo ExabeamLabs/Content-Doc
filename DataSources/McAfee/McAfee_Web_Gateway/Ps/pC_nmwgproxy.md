@@ -29,6 +29,7 @@ Name = n-mwg-proxy
       """\|block_reason=(?:|({failure_reason}[^|]{1,2000}))\|""",
       """\|media_type=(?:|({mime}[^|]{1,2000}?))\s{0,100}(\||$)"""
     ]
-  }
+  
+
 }
 ```

@@ -6,7 +6,7 @@ Name = airwatch-authentication
   Conditions = [ """AirWatch""", """Event Category:"Authentication"""", """Event:""""]
   Fields = ${AirWatchParserTemplates.airwatch-auth-activity.Fields}[]
   DupFields = ["event_type->auth_type"]
-}
+
 airwatch-auth-activity = {
     Vendor = AirWatch
     Product = AirWatch
@@ -23,5 +23,6 @@ airwatch-auth-activity = {
       """DeviceFriendlyName:"{1,20}((N\/A)|(DELETE IN PROGRESS...)|({device_name}[^"]{1,2000}))"""",
       """Reason=({failure_reason}[^"]{1,2000})"""",
     ]
-     DupFields = ["device_name->src_host"]}
+     DupFields = ["device_name->src_host"
+}
 ```

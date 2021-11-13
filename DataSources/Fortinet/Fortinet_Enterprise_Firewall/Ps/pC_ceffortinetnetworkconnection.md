@@ -26,6 +26,7 @@ Name = cef-fortinet-network-connection
     """\Win=({bytes_in}\d{1,100})""",
   ]
   DupFields = [ "action->outcome" ]
-}
+
+
 }
 ```

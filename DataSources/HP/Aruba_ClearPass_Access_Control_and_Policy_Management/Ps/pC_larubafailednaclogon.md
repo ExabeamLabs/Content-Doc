@@ -18,6 +18,7 @@ Name = l-aruba-failed-nac-logon
       """server=({auth_server}[\w\d]{1,2000})""",
       """user=({src_mac}[a-fA-F\d:]{1,2000})""",
    ]
-}
+
+
 }
 ```

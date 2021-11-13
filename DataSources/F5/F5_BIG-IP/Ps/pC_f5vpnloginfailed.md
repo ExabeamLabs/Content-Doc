@@ -13,6 +13,7 @@ Name = f5-vpn-login-failed
     """exabeam_host=({host}[\w\.\-]{1,2000})""",
     """\sprincipal name:\s{0,100}({user}[^@\.]{1,2000})(@({domain}.+?))?\.\s{1,100}({failure_reason}[^\.]{1,2000})""",
   ]
-}
+
+
 }
 ```

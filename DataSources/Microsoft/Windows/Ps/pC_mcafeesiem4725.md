@@ -22,6 +22,7 @@ Name = mcafee-siem-4725
       """"UserIDDst":"({target_user}[^"]{1,2000})"""
     ]
     DupFields = [ "host->dest_host" ]
-  }
+  
+
 }
 ```

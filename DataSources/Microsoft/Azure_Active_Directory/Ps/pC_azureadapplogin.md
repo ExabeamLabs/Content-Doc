@@ -15,7 +15,7 @@ Name = azure-ad-app-login
     """userAgent":"({user_agent}.+?)"?,\w+":""",
     """"failureReason":"({failure_reason}[^"]{1,200})"""
   ]
-}
+
 azure-ad-activity = {
    Vendor = Microsoft
    Product = Azure Active Directory
@@ -32,5 +32,6 @@ azure-ad-activity = {
       """category":"({category}[^",]{1,2000})"{0,20},correlationId"""",
       """"app":\{.*?displayName":"({app}[^",]{1,2000})""",
       """loggedByService":"({app}[^",]{1,2000})"""
-   ]}
+   
+}
 ```

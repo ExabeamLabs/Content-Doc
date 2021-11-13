@@ -21,6 +21,7 @@ Name = q-firesight-alert-4
     """\WpriorityRef=({alert_severity}.+?)\s{1,100}([\w\.]{1,2000}=|$)""",
     """\WrecordType=({alert_type}.+?)\s{1,100}([\w\.]{1,2000}=|$)""",
   ]
-}
+
+
 }
 ```

@@ -22,6 +22,7 @@ Name = citrix-endpoint-mgmt-activity
     """user.id="(({user_email}[^@"]{1,2000}?@[^"]{1,2000})|(({domain}[^,\\]{1,2000})[\\]{1,2000}({user}[^"]{1,2000}))|({=user}[^"]{1,2000}))""",
     """arg1":"({additional_info}[^"]{1,2000})"""
   ]   
-}
+
+
 }
 ```

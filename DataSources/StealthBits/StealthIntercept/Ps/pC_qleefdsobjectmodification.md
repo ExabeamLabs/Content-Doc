@@ -26,6 +26,7 @@ Name = q-leef-ds-object-modification
     """ClassName =({object_class}.+?)\s{1,100}OrigServer=""",
     """OrigServer=([^\\]{1,2000}\\)?({dest_host}.+?)\s{1,100}(\w+=|$)"""
   ]
-}
+
+
 }
 ```

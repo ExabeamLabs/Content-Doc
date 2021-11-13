@@ -20,6 +20,7 @@ Name = bitglass-app-login-failed
     """"useragent":\s{0,100}"({user_agent}.+?)",""",
     """"details":\s{0,100}"({failure_reason}.+?)","""
   ]
-}
+
+
 }
 ```

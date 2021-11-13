@@ -19,6 +19,7 @@ Name = s-trendmicro-security-alert-2
     """\sC&C channel="({protocol}[^"]{1,2000})""", 
     """Process="({process}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

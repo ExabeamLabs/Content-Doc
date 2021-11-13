@@ -46,6 +46,7 @@ Name = zscaler-activity
   ]
   DupFields = ["outcome->conn_status", "app_group->activity_type", "rx_connector_total_bytes->bytes_in", "tx_connector_total_bytes->bytes_out"]
  
-}
+
+
 }
 ```

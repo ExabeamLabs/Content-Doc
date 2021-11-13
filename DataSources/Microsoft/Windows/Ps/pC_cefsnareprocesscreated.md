@@ -23,6 +23,7 @@ Name = cef-snare-process-created
     """User\\=(-|({user}[^=&]{1,2000}))""",
     """ComputerName\\=({host}[\w.\-]{1,2000})""",
   ]
-}
+
+
 }
 ```

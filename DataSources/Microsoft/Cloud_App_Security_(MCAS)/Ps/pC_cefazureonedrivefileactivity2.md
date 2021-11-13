@@ -3,7 +3,7 @@
 {
 Name = cef-azure-onedrive-file-activity-2
   Conditions = [ """CEF:""", """|MCAS|SIEM_Agent|""", """|Download file|""" ]
-}
+
 cef-azure-onedrive-file-activity = {
   Vendor = Microsoft
   Product = Cloud App Security (MCAS)
@@ -24,5 +24,6 @@ cef-azure-onedrive-file-activity = {
     """\Wmsg=({additional_info}.*?)\s{1,100}(\w+=|$)""",
     """\Wmsg=(.+?):\s{0,100}({file_type}[^\s]{1,2000})\s{1,100}({file_path}({file_parent}[^=]{1,2000}?)[\\\/]{1,2000}(|({file_name}[^\\\/]{0,2000}?(\.({file_ext}[^\\\/:\s\.]{1,2000}))?)))(\s{0,100}(with|folder|to file|;)\s{1,100}.*?)?\s{1,100}(?:$|\w+=)""",
 
-  ]}
+  
+}
 ```

@@ -4,7 +4,7 @@
 Name = cef-palo-alto-networks-firewall-drop
   DataType = "network-connection"
   Conditions = [ """Palo Alto Networks|PAN-OS|""", """|drop|TRAFFIC|""" ]
-}
+
 cef-palo-alto-networks-firewall = {
   Vendor = Palo Alto Networks
   Product = NGFW
@@ -45,5 +45,6 @@ cef-palo-alto-networks-firewall = {
     """\scategoryOutcome=\/?({outcome}.+?)\s{1,100}(\w+=|$)""",
     """\sreason=(?:n\/a|({reason}.+?))\s{1,100}(\w+=|$)""",
   ]
-  DupFields = [ "subtype->action" ]}
+  DupFields = [ "subtype->action" 
+}
 ```

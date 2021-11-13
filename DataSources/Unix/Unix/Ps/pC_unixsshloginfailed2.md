@@ -17,6 +17,7 @@ Name = unix-ssh-login-failed-2
     """({event_code}ssh)""",
     """({protocol}ssh(d)?)"""
   ]
-}
+
+
 }
 ```

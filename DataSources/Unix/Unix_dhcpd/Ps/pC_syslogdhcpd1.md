@@ -14,6 +14,7 @@ Name = syslog-dhcpd-1
     """"message":"DHCPACK on ({dest_ip}[A-Fa-f:\d.]{1,2000}) to ({dest_mac}\S+)( \(({dest_host}[^\s\)]{1,2000})\))? via ({dest_interface}[^\\"]{1,2000})""",
   ]
   DupFields = [ "dest_host->user" ]
-}
+
+
 }
 ```

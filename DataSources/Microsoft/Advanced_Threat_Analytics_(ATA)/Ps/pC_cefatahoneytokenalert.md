@@ -17,6 +17,7 @@ Name = cef-ata-honeytoken-alert
     """\Wmsg=({additional_info}.+?)\s{1,100}(\w+=|$)""",
     """\Wmsg=[^=]{1,2000}?performed by .+?(login to| from) (?:({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[\w.\-]{1,2000}))""",
   ]
-}
+
+
 }
 ```

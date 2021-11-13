@@ -15,7 +15,7 @@ Name = wazuh-4673
     """"full_log":".*?\s{0,100}Privileges:\s{0,100}({privileges}.+?)(\s{1,100}\d{1,100}|\"|,)"""
   ]
   DupFields = ["directory->process_directory"]
-}
+
 wazuh-windows-template = {
     Vendor = Microsoft
     Product = Windows
@@ -35,5 +35,6 @@ wazuh-windows-template = {
       """"data.data":"({data}[^"]{1,2000})"""
       """"rule.description":"({description}[^"]{1,2000})"""
       """"decoder.name":"({decoder_name}[^"]{1,2000})"""
-    ]}
+    
+}
 ```

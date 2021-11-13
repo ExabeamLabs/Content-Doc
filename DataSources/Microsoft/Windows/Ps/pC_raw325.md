@@ -13,6 +13,7 @@ Name = raw-325
       """TimeStamp:\s{0,100}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """Event ID:\s{0,100}({event_code}\d{1,100})""",
       """\(({process_id}\d{1,100}).*\)""",
-      """({activity}The database engine created a new database)\s{1,100}\(\d{1,100}
+      """({activity}The database engine created a new database)\s{1,100}\(\d{1,100
+
 }
 ```

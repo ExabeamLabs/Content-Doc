@@ -3,7 +3,7 @@
 {
 Name = vbcorp-security-alert
   Conditions = ["""Product=VBCorp""" , """不正プログラム"""]
-}
+
 vbcorp-security-alert = {
   Vendor = VBCorp
   Product = VBCorp
@@ -22,5 +22,6 @@ vbcorp-security-alert = {
     """ドメイン:\s{0,100}({domain}.+?)\\?\s{0,100}(ファイル:|日時:)""",
     """ファイル:\s{0,100}(|({malware_url}.+?))\s{1,100}(日時:|\w+)\s{0,100}\d\d\d\d\/\d\d\/\d\d""",
     """結果:\s{0,100}(|({outcome}[^"]{1,2000}?))\s{0,100}"""",
-  ]}
+  
+}
 ```

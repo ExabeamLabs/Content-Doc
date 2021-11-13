@@ -10,7 +10,7 @@ Name = bro-dhcp-1
     """"lease_time":\s{0,100}({lease_time}[\d\.]{1,2000})""",
     """"trans_id":\s{0,100}({trans_id}\d{1,100})""",
   ]
-}
+
 json-bro-activity = {
   Vendor = Zeek
   Lms = Direct
@@ -25,5 +25,6 @@ json-bro-activity = {
     """"id\.resp_h\\?"{1,20}:\\?"{1,20}({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """"id\.resp_p\\?"{1,20}:({dest_port}\d{1,100})""",
     """"proto\\?"{1,20}:\\?"{1,20}({protocol}[^"]{1,2000})""",
-  ]}
+  
+}
 ```

@@ -20,6 +20,7 @@ Name = s-onguard-physical-badge-access-2
     """"emp_id"{1,20}:({employee_id}\d{1,100})""",
     """"badgekey":({badge_id}\d{1,100})"""
   ]
-}
+
+
 }
 ```

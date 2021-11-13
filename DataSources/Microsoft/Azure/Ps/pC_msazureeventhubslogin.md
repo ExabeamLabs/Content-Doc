@@ -14,7 +14,7 @@ Name = ms-azure-eventhubs-login
     """"{1,20}location"{1,20}:(\{"{1,20}geoCoordinates"{1,20}:\{\}\}|({additional_info}\{.*?\}))"""
     """"{1,20}failureReason"{1,20}:"{1,20}({failure_reason}[^"]{1,2000})"{1,20}"""
   ]
-}
+
 ms-azure-eventhubs-activity = {
   Vendor = Microsoft
   Product = Azure
@@ -31,5 +31,6 @@ ms-azure-eventhubs-activity = {
     """"{1,20}operationName"{1,20}:"{1,20}({activity}[^"]{1,2000})"{1,20}""",
     """"{1,20}result"{1,20}:"{1,20}({outcome}[^"]{1,2000})"{1,20}""",
     """({app}eventHubsAzureRecord)""" 
-  ]}
+  
+}
 ```

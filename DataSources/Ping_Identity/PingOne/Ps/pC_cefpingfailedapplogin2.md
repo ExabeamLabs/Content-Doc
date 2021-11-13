@@ -19,6 +19,7 @@ Name = cef-ping-failed-app-login-2
     """message":"({auth_method}[^\\]{1,2000})\s\\"({device}[^\\]{1,2000})""",
     """msg=({reason}.*?)\s\w+=""",
   ]
-}
+
+
 }
 ```

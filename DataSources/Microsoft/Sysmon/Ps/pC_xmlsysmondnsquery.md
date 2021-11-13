@@ -22,6 +22,7 @@ Name = xml-sysmon-dns-query
     """<Data Name ='Image'>({path}(({directory}[^<]{0,2000})\\+)?({process_name}.+?))</Data>""",
   ]
    
-}
+
+
 }
 ```

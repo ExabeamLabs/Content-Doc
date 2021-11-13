@@ -13,6 +13,7 @@ Name = contivity-vpn-start
              """\[({user}[\w.'\-]{1,2000})\]:({contivity_session_id}\d{1,100})""",
              """physical addresses: remote ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) local ({dest_host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""" ]
   DupFields = [ "dest_host->dest_ip" ]
-}
+
+
 }
 ```

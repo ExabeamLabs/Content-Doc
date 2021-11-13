@@ -19,6 +19,7 @@ Name = unix-auditd-account-switch
     """UID="{0,20}({user}[^"]{1,2000})"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

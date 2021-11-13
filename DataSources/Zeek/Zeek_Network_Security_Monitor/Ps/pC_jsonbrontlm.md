@@ -21,6 +21,7 @@ Name = json-bro-ntlm
     """"hostname\\?"{1,20}:\\?"{1,20}({src_host}[^"\\]{1,2000})""",
     """"success\\?"{1,20}:({outcome}\w+)"""
   ]
-}
+
+
 }
 ```

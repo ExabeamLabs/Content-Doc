@@ -20,6 +20,7 @@ Name = extrahop-dns-query
      """"error":"({error_code}[^"]{1,2000})""",
      """"rspBytes":({bytes}\d{1,100})""",
 ]
-}
+
+
 }
 ```

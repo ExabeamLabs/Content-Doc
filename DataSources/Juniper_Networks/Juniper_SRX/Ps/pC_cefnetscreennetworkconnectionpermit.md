@@ -3,7 +3,7 @@
 {
 Name = cef-netscreen-network-connection-permit
   Conditions = [ """CEF:""", """|NetScreen Traffic Permit|""" ]
-}
+
 cef-netscreen-network-connection = {
   Vendor = Juniper Networks
   Product = Juniper SRX
@@ -22,5 +22,6 @@ cef-netscreen-network-connection = {
     """\Wsuser=({user}.+?)(\s{1,100}[\w\-]{1,2000}=|\s{0,100}$)""",
     """\Wcat=({rule}.+?)(\s{1,100}[\w\-]{1,2000}=|\s{0,100}$)""",
     """\WnitroReason=({reason}.+?)(\s{1,100}[\w\-]{1,2000}=|\s{0,100}$)""",
-  ]}
+  
+}
 ```

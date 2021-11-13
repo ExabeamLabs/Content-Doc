@@ -19,6 +19,7 @@ Name = s-xml-4771
     """<Data Name ='IpAddress'>(::[\w]{1,2000}:)?({dest_ip}[a-fA-F:\d.]{1,2000})</Data>""",
     """({event_name}Kerberos pre-authentication failed)""",
   ]
-}
+
+
 }
 ```

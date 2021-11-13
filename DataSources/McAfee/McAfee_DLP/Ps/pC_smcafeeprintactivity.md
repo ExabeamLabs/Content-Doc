@@ -21,6 +21,7 @@ Name = s-mcafee-print-activity
      """UTCTime="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
      """exabeam_host=({host}[^\s]{1,2000})"""
   ]
-}
+
+
 }
 ```

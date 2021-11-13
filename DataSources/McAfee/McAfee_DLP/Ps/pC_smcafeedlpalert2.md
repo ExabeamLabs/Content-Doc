@@ -25,6 +25,7 @@ Name = s-mcafee-dlp-alert-2
     """device_description="({device_id}[^"]{1,2000})"""
     
   ]
-}
+
+
 }
 ```

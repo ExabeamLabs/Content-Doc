@@ -15,6 +15,7 @@ Name = q-duo-failed-app-login
     """username=({user_fullname}[^;\}]{1,2000})""",
     """username=({user_firstname}[^;\}\s]{1,2000})\s{1,100}({user_lastname}[^;\}]{1,2000})""",
     """object=\s{0,100}({object}[^;]{1,2000}?)(?:;|\})""",
-    """"email"{1,20}:\s{0,100}"{1,2}({user_email}[^"]{1,2000}?)"{1,20}
+    """"email"{1,20}:\s{0,100}"{1,2}({user_email}[^"]{1,2000}?)"{1,20
+
 }
 ```

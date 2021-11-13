@@ -8,7 +8,7 @@ Name = leef-digitalguardian-local-logon
   DataType = "local-logon"
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ """LEEF:""", """|Digital Guardian|Digital Guardian|""", """DigitalGuardian-Events""", """|User Logon|""" ]
-}
+
 leef-digitalguardian-local-logon = {
   Vendor = Digital Guardian
   Product = Digital Guardian Endpoint Protection
@@ -22,5 +22,6 @@ leef-digitalguardian-local-logon = {
     """IdentHostName =([^\\]{1,2000}\\+)?({dest_host}[\w\-.]{1,2000}?)\s{0,100}(\w+=|$)""",
     """Application=({process_name}.+?)\s{0,100}(\w+=|$)""",
     """({event_code}User Logon)""",
-  ]}
+  
+}
 ```

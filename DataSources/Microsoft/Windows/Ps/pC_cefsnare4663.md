@@ -25,6 +25,7 @@ Name = cef-snare-4663
     """\scs3=({access_mask}\w+)"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

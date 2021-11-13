@@ -39,6 +39,7 @@ Name = skyformation-cloudflare-waf-1
     """"SecurityLevel":"({alert_severity}[^"]{1,2000})""",
     """"ClientRequestReferer":"({referrer}[^"]{1,2000}?)",""",
     ]
-}
+
+
 }
 ```

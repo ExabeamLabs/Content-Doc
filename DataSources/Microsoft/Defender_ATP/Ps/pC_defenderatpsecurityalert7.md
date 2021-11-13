@@ -10,7 +10,7 @@ Name = defender-atp-security-alert-7
     """"title":\s{0,100}"({alert_type}[^"]{1,2000})"""",
     """"category":\s{0,100}"(None|({alert_type}[^"]{1,2000}))"""",
   ]
-}
+
 json-microsoft-security-events = {
      Vendor = Microsoft
      Lms = Splunk
@@ -35,5 +35,6 @@ json-microsoft-security-events = {
      """"{1,20}hostStates"{1,20}:[^}\]]{1,2000}?publicIpAddress"{1,20}:\s{0,100}"{1,20}({dest_ip}[a-fA-F:\d.]{1,2000})""",
      """"description":\s{0,100}"An actor on\s{0,100}({src_host}\S{1,2000})\s{0,100}performed suspicious""",
      """"fileStates":[^]]{1,2000}?"name":\s{0,100}"({file_name}[^."]{1,2000}([\.\w]{1,100})?)""""
-     ]}
+     
+}
 ```

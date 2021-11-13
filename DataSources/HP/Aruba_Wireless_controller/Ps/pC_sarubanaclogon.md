@@ -15,6 +15,7 @@ Name = s-aruba-nac-logon
     """,attr_name=Connection:Src-IP-Address,attr_value=({src_ip}[A-Fa-f:\d.]{1,2000})""",
   ]
   DupFields = [ "host->auth_server" ]
-}
+
+
 }
 ```

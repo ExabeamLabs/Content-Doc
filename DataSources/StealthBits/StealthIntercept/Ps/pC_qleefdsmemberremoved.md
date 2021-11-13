@@ -19,6 +19,7 @@ Name = q-leef-ds-member-removed
     """AttrNewValue=(({account_dn}CN=.+?({account_ou}OU.+?DC=.+?))|(?:.+?))\s{1,100}\w+=""",
     """OrigServer=([^\\]{1,2000}\\)?({dest_host}.+?)\s{1,100}\w+="""
   ]
-}
+
+
 }
 ```

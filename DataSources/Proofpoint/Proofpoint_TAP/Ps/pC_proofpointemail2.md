@@ -32,6 +32,7 @@ Name = proofpoint-email-2
       """'host':\s{0,100}'\[?({host}[\w\-.]{1,2000})"""
    ]
     DupFields = ["attachment->attachments"]
- }
+ 
+
 }
 ```

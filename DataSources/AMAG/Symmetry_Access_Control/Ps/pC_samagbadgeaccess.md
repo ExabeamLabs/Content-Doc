@@ -20,6 +20,7 @@ Name = s-amag-badge-access
       """[^\w]CardNumber="(\s{1,100}|({employee_id}[^"]{1,2000}))"""",
       """[^\w]EmployeeNumber="(\s{1,100}|({employee_id}[^"]{1,2000}))"""",
     ]
-  }
+  
+
 }
 ```

@@ -33,6 +33,7 @@ Name = cef-okta-logs-app-activity
     """"city":"({location_city}[^"]{1,2000})""",
     """"state":"({location_state}[^"]{1,2000})""",
     """"country":"({location_country}[^"]{1,2000})""",
-    """request"{1,20}:.+?"{1,20}type"{1,20}:"{1,20}User"{1,20}
+    """request"{1,20}:.+?"{1,20}type"{1,20}:"{1,20}User"{1,20
+
 }
 ```

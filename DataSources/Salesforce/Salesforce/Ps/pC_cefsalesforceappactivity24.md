@@ -17,6 +17,7 @@ Name = cef-salesforce-app-activity-24
     """Display\\=Logged out using Login-As access for ({object}.+?)\s{0,100}(\w+=|$)""",
     """({app}Sales Cloud)""",
   ]
-}
+
+
 }
 ```

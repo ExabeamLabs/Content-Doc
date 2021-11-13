@@ -4,7 +4,7 @@
 Name = proofpoint-security-alert-1
   DataType = "security-alert"
   Conditions = [ """"sub_type": "Suspicious Activity"""", """"related_events_0_event_id":""", """"related_events_0_user_email":""", """"severity":""" ] 
-}
+
 proofpoint-alert = {
   Vendor = Proofpoint
   Product = Proofpoint CASB
@@ -22,5 +22,6 @@ proofpoint-alert = {
     """"related_events_0_user_email":\s{0,100}"({user_email}[^@]{1,2000}@[^.]{1,2000}\.[^"]{1,2000})"""",
     """"id":\s{0,100}"({alert_id}[^"]{1,2000})"""",
     """"description":\s{0,100}"({additional_info}[^"]{1,2000})"""",
-    ]}
+    
+}
 ```

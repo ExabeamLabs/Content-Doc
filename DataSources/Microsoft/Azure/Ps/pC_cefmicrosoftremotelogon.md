@@ -8,7 +8,7 @@ Name = cef-microsoft-remote-logon
     """\Wext_resolvedActorAccount_name=({user_lastname}[^,=]{1,2000}),\s{0,100}({user_firstname}.+?)(\s{0,100}\([^\(\)]{1,2000}\))?(\s{1,100}\w+=|\s{0,100}$)""",
     """device <b>({dest_host}[^<]{1,2000})"""
   ]
-}
+
 cef-azure-app-activity-1 = {
   Vendor = Microsoft
   Product = Azure
@@ -35,5 +35,6 @@ cef-azure-app-activity-1 = {
     """"DestinationComputerDnsName","value":"({dest_host}[^"]{1,2000})"""",
     """"DestinationIpAddress","value":"({dest_ip}[a-fA-F\d.:]{1,2000})"""",
     """"Protocol","value":"({protocol}[^"]{1,2000})""""
-  ]}
+  
+}
 ```

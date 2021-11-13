@@ -4,7 +4,7 @@
 Name = cef-epic-app-activity-8
   Product = Epic SIEM
   Conditions = [ """CEF:""", """|Epic|Security-SIEM|""", """|ROVER_FAILED_LOGIN|""" ]
-}
+
 cef-epic-app-activity = {
   Vendor = Epic
   Product = Epic SIEM
@@ -22,5 +22,6 @@ cef-epic-app-activity = {
     """MASKMODE=({result}.+?)\s{1,100}(\w+=|$)""",
     """PREVUSER=({user}[^\s,]{1,2000})""",
     """NEWUSER=({account}[^\s,]{1,2000})""",
-  ]}
+  
+}
 ```

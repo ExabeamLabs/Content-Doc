@@ -28,6 +28,7 @@ Name = s-xml-4656-netapp
       """<Data Name ="{0,20}DesiredAccess"{0,20}>\s{0,100}({accesses}.+?)\s{0,100}<\/Data>"""
    ]
     DupFields = ["event_name->activity", "object_class-> alert_type"]
-}
+
+
 }
 ```

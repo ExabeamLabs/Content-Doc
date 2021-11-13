@@ -19,6 +19,7 @@ Name = cef-salesforce-app-activity-27
     """Display\\=Created new role Field Service\s{0,100}\-\s{0,100}({object}.+?)\s{1,100}(\w+=|$)""",
     """({app}Sales Cloud)""",
   ]
-}
+
+
 }
 ```

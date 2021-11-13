@@ -19,6 +19,7 @@ Name = leef-digitalguardian-process-created
     """SourceFile=({process_name}.+?)\s{0,100}(\w+=|$)""",
   ]
   DupFields = [ "directory->process_directory" ]
-}
+
+
 }
 ```

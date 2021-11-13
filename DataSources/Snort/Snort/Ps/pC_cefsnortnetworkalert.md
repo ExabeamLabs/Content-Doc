@@ -21,6 +21,7 @@ Name = cef-snort-network-alert
     """proto=({protocol}[^=]{1,2000}?)\s{0,100}(\w+=|$)""",
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

@@ -23,6 +23,7 @@ Name = s-fireeye-hx-alert-6
        """"ipv4NetworkEvent/username":\s{0,100}"(({domain}[^"\\\/]{1,2000})[\\\/]{1,2000})?({user}[^"]{1,2000})"""
     ]      
     DupFields = ["alert_name->alert_type"]
-  }
+  
+
 }
 ```

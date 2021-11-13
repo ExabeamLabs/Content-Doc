@@ -25,6 +25,7 @@ Name = ad-audit-alert
     """\WFORMAT_MESSAGE\s{0,100}=\s{0,100}({additional_info}.+?)\s{0,100}\]"""
   ]
   DupFields=[ "alert_type->alert_name" ]
-}
+
+
 }
 ```

@@ -7,7 +7,7 @@ Name = defender-atp-file-events
   Fields = ${MicrosoftParserTemplates.defender-atp-events.Fields}[
 ]
   DupFields = ["outcome->accesses"]
-}
+
 defender-atp-events = {
     Vendor = Microsoft
     Product = Defender ATP
@@ -25,5 +25,6 @@ defender-atp-events = {
       """"RemoteIP":"({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
       """"Protocol":"({protocol}[^"]{1,2000})""""
     ]
-    DupFields = ["host->dest_host"]}
+    DupFields = ["host->dest_host"
+}
 ```

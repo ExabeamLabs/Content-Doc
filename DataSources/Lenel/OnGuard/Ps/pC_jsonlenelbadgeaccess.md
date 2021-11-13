@@ -17,6 +17,7 @@ Name = json-lenel-badge-access
     """"device_name":"({location_door}[^"]{1,2000})""",
     """"description":"({outcome}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

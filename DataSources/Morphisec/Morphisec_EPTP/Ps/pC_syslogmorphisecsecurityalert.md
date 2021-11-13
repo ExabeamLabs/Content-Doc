@@ -20,6 +20,7 @@ Name = syslog-morphisec-security-alert
     """"Computer Name":\["({src_host}[^"]{1,2000})"""",
   ]
   DupFields = ["alert_name->alert_type"]
-}
+
+
 }
 ```

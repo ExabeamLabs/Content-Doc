@@ -18,6 +18,7 @@ Name = xml-5861
     """Consumer:\s{0,100} instance of\s{0,100}({process}.+?)\s{0,100}\{"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

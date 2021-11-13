@@ -23,6 +23,7 @@ Name = cisco-airespace-network-alert
     """dmac=({dest_mac}[^=]{1,2000}?)\s{1,100}\w+=""",
     """dvc=({host_ip}[a-fA-F:\d.]{1,2000})"""
   ] 
-}
+
+
 }
 ```

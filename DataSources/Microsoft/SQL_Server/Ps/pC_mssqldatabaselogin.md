@@ -18,6 +18,7 @@ Name = mssql-database-login
     """EventClass="{1,20}({event_code}\d{1,100})""",
     """ApplicationName ="{1,20}({app}[^"]{1,2000})"""
 	]
-}
+
+
 }
 ```

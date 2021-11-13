@@ -22,6 +22,7 @@ Name = s-xml-7045
     """({event_name}A service was installed in the system)""",
   ]
   DupFields = [ "host->dest_host", "directory->process_directory" ]
-}
+
+
 }
 ```

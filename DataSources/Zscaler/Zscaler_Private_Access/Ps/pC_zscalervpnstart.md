@@ -10,6 +10,7 @@ Name = zscaler-vpn-start
   Conditions = [ """,ZPN_STATUS_AUTHENTICATED,""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
-    """([^,]{0,2000}
+    """([^,]{0,2000
+
 }
 ```

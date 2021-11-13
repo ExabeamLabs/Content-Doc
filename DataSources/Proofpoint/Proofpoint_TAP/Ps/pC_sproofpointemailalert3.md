@@ -34,6 +34,7 @@ Name = s-proofpoint-email-alert-3
     """"SourceSystem"{1,20}:"{1,20}({log_source}[^"]{1,2000})"""
   ]
   DupFields = [ "recipient->user_email" ]
-}
+
+
 }
 ```

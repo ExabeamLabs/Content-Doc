@@ -21,6 +21,7 @@ Name = raw-netscaler-vpn-start
      """Vserver\s{0,100}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
      ]
  DupFields = [ "vpn_client_type->app" ]
-}
+
+
 }
 ```

@@ -16,6 +16,7 @@ Name = cisco-ftd-process-created-1
     """({event_name}executed)""",
     """ cmd:\s{0,100}({command_line}.+?)\s{1,100}$""",
   ]
-}
+
+
 }
 ```

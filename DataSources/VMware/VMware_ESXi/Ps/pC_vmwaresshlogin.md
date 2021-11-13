@@ -15,6 +15,7 @@ Name = vmware-ssh-login
     """(exabeam_\w+=|^).+?Accepted ({auth}\S+) for user ({user}[^\s]{1,2000})""",
     """\s{1,100}from\s{1,100}(::[\w]{1,2000}:)?({src_ip}(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|::1))"""
   ]
-}
+
+
 }
 ```

@@ -29,6 +29,7 @@ Name = securesphere-db-login
     """\sduser=({db_user}[^\s]{1,2000})""", 
   ]
   DupFields = [ "db_user->account", "os_user->user" ]
-}
+
+
 }
 ```

@@ -21,6 +21,7 @@ Name = cef-mimecast-dlp-email
     """"Dir":"Inbound"[^\}]{1,2000}?"Sender":"(<>|({external_address}[^\s@;,]{1,2000}@[^\s@;,"]{1,2000}))"""", 
     """"Sender":"(<>|({sender}[^"]{1,2000}))""""
   ]
-}
+
+
 }
 ```

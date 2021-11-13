@@ -21,6 +21,7 @@ Name = carbonblack-usb-insert
     """\(S\/N:\s{0,100}({device_id}[^)]{1,2000})\)"""
   ]
   DupFields = [ "directory->process_directory" ]
-}
+
+
 }
 ```

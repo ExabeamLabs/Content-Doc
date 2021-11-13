@@ -26,6 +26,7 @@ Name = cef-azure-authentication
     """"DeviceId":"({device_id}[^"]{1,2000})"""",
     """"RemoteDeviceName":"(|({src_host}[\w\-.]{1,2000}))"""",
   ]
-}
+
+
 }
 ```

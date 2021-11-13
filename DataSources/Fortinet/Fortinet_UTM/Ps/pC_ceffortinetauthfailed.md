@@ -18,6 +18,7 @@ Name = cef-fortinet-auth-failed
     """\slogdesc\\="({event_name}[^"]{1,2000})""",
     """\sdevid\\="({dest_host}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

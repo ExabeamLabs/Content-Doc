@@ -26,6 +26,7 @@ Name = cef-trendmicro-security-alert-1
     """\Wcat=({alert_type}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
     """CEF:(?:[^\|]{0,2000}\|){5}({alert_name}[^\|]{1,2000})\|(Unknown|({alert_severity}[^\|]{1,2000}))\|\w+="""
   ]
-}
+
+
 }
 ```

@@ -22,6 +22,7 @@ Name = securesphere-db-failed-login-2
     """"service-name":\s{0,100}"({service_name}[^"]{1,2000})"""
   ]
   DupFields = [ "user->db_user" ]
-}
+
+
 }
 ```

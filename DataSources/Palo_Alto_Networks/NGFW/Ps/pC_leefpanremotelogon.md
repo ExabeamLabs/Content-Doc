@@ -15,6 +15,7 @@ Name = leef-pan-remote-logon
     """msg=".+?using\s{0,100}({auth_method}[^"]{1,2000})"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

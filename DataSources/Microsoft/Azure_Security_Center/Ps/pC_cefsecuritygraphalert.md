@@ -10,7 +10,7 @@ Name = cef-security-graph-alert
  """"securityResources":[\{"resource":"[^"]{1,2000}\/databases\/({database_name}[^"\/]{1,2000})","resourceType":""attacked""""
  """"Someone logged on to your SQL server \'({server_group}[^\']{1,2000})\' from an unusual location.""""
  ]
-}
+
 json-microsoft-security-events = {
      Vendor = Microsoft
      Lms = Splunk
@@ -35,5 +35,6 @@ json-microsoft-security-events = {
      """"{1,20}hostStates"{1,20}:[^}\]]{1,2000}?publicIpAddress"{1,20}:\s{0,100}"{1,20}({dest_ip}[a-fA-F:\d.]{1,2000})""",
      """"description":\s{0,100}"An actor on\s{0,100}({src_host}\S{1,2000})\s{0,100}performed suspicious""",
      """"fileStates":[^]]{1,2000}?"name":\s{0,100}"({file_name}[^."]{1,2000}([\.\w]{1,100})?)""""
-     ]}
+     
+}
 ```

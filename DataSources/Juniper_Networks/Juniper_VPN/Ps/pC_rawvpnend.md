@@ -20,6 +20,7 @@ Name = raw-vpn-end
     """Logout from ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

@@ -28,6 +28,7 @@ Name = cisco-nac-failed-logon
     """, Device IP Address=(::ffff:)?({src_ip}[^,]{1,2000}),""",
     """NAS-IP-Address=({nas_ip_address}[A-Fa-f\d:.]{1,2000})"""
   ]
-}
+
+
 }
 ```

@@ -21,6 +21,7 @@ Name = counteract-network-alert-5
     """"severity":"({alert_severity}[^"]{1,2000})"""",
     """"desc":"({additional_info}[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

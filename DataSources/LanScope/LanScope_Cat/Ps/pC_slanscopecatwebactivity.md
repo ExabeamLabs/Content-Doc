@@ -16,6 +16,7 @@ Name = s-lanscopecat-web-activity
     """\sURL="({full_url}(\w+:\/+)?({web_domain}[^\/"]{1,2000}?)(:({dest_port}\d{1,100}))?({uri_path}\/[^"\?]{0,2000})?({uri_query}\?[^"]{0,2000})?)"""",
     """\sIPAddress="({src_ip}[a-fA-F\d.:]{1,2000})""",
   ]
-}
+
+
 }
 ```

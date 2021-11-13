@@ -16,6 +16,7 @@ Name = ovirt-app-activity-13
     """EVENT_ID:.*? VM ({object}[^\s"]{1,2000}) was powered off ungracefully by ({user}[^\s\(\)]{1,2000}) \(Host: ({resource}[^\)]{1,2000})""",
     """({app}ovirt)"""
   ]
-}
+
+
 }
 ```

@@ -19,6 +19,7 @@ Name = barracuda-email
       """duser=(-|({recipient}[^\s]{1,2000}))"""
       """reason=({alert_name}\d{1,100})""",
     ]
-}
+
+
 }
 ```

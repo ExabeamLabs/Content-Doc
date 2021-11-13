@@ -24,6 +24,7 @@ Name = n-forwarded-cef-4648
       """nitroAppID=\s{0,100}(?: |({process}({directory}(?:[^"]{1,2000})?[\\\/])?({process_name}[^\\\/"]{1,2000}?)))\s{1,100}\w+="""
     ]
     DupFields = ["directory->process_directory"]
-  }
+  
+
 }
 ```

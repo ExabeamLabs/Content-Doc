@@ -16,6 +16,7 @@ Name = cb-defense-failed-app-login
     """description":"({failure_reason}[^"]{1,2000})""",
     """({app}CB Defense)""",
   ]
-}
+
+
 }
 ```

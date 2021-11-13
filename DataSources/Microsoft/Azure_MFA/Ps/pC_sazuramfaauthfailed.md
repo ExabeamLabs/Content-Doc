@@ -16,6 +16,7 @@ Name = s-azura-mfa-auth-failed
     """\WCall status:\s{0,100}({call_status}\S+)\s{1,100}-\s{0,100}"({failure_reason}[^"]{1,2000})"\.""",
     """({auth_method}Pfauth)""",
   ]
-}
+
+
 }
 ```

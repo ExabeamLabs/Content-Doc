@@ -22,6 +22,7 @@ Name = s-pan-security-alert
 	  """"item_sha256":"({file_hash}[^"]{1,2000})"""",
 	  """msg=({additional_info}[^=]{1,2000})\s\w+=""",
      ]
-  }
+  
+
 }
 ```

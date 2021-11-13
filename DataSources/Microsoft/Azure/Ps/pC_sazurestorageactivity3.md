@@ -20,6 +20,7 @@ Name = s-azure-storage-activity-3
          """"status": \{"value": "({outcome}[^"]{1,2000})""",
          """"resourceId".+?\/containers\/({bucket}[^\/"])""",
  ]
-}
+
+
 }
 ```

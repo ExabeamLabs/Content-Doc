@@ -20,6 +20,7 @@ Name = zoom-meeting-ended
     """"timezone"\s{0,100}:\s{0,100}"({meeting_timezone}[^"]{1,2000})"""",
     """"host_id"\s{0,100}:\s{0,100}"({meeting_host_id}[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

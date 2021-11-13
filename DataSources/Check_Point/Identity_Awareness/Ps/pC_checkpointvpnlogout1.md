@@ -29,6 +29,7 @@ Name = checkpoint-vpn-logout-1
     """duration=(-|({session_duration}[^\|]{1,2000}))\|""",
     """description=(-|({additional_info}[^\|]{1,2000}))\|""",
   ]
-}
+
+
 }
 ```

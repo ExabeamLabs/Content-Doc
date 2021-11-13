@@ -11,6 +11,7 @@ Name = l-pan-file-alert
   Conditions = [ """,THREAT,file,""" ]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
-    """THREAT,[^,]{1,2000}
+    """THREAT,[^,]{1,2000
+
 }
 ```

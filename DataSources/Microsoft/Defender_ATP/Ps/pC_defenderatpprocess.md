@@ -8,7 +8,7 @@ Name = defender-atp-process
     """"FileName"{1,20}:\s{0,100}"{1,20}({process_name}[^"]{1,2000})""",
     """"FolderPath"{1,20}:\s{0,100}"{1,20}({file_path}({file_parent}[^"]{0,2000}?[\\\/]{1,2000})?({file_name}[^"\\\/]{1,2000}?(\.({file_ext}\w+))?))"""",
 ]
-}
+
 defender-atp-events = {
     Vendor = Microsoft
     Product = Defender ATP
@@ -26,5 +26,6 @@ defender-atp-events = {
       """"RemoteIP":"({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
       """"Protocol":"({protocol}[^"]{1,2000})""""
     ]
-    DupFields = ["host->dest_host"]}
+    DupFields = ["host->dest_host"
+}
 ```

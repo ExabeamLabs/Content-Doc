@@ -11,6 +11,7 @@ Name = s-azure-ad-password-change-2
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"createdDateTime"{1,20}:\s{0,100}"{1,20}({time}[^"]{1,2000})""",
-	"""ms:aad:audit"{1,20}
+	"""ms:aad:audit"{1,20
+
 }
 ```

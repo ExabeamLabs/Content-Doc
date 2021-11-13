@@ -16,6 +16,7 @@ Name = s-cisco-acs-auth-failed
       """NAS-IP-Address=(::ffff:)?({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """Authen-Failure-Code=({failure_reason}[^,]{1,2000})"""
 	]
-}
+
+
 }
 ```

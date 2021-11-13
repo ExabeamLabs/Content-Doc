@@ -27,6 +27,7 @@ Name = carbonblack-security-alert-2
     """email\\"{1,20}:\\s{0,100}"{1,20}(({domain}[^\\"]{1,2000})\\+)?({user}[^"]{1,2000})\\""",
     """deviceId\\"{1,20}:({sensor_id}[^,]{1,2000})"""
   ]
-}
+
+
 }
 ```

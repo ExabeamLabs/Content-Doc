@@ -20,6 +20,7 @@ Name = crowdstrike-file-write-1
       """suser=(system|({user}[^\s]{1,2000}))""",
       """src-account-name":"({account_name}[^"]{1,2000})"""
     ]
-  }
+  
+
 }
 ```

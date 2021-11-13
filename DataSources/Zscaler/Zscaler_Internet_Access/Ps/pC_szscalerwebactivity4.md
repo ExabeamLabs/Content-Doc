@@ -29,6 +29,7 @@ Name = s-zscaler-web-activity-4
     """reason="(Allowed|({failure_reason}[^"]{1,2000}))""",
     """cs-username="({user_email}[^@"]{1,2000}@[^\."]{1,2000}\.[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

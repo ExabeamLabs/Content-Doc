@@ -14,6 +14,7 @@ Name = openvpn-vpn-login
     """'user':\s{0,100}.*?'({user}[^\s,]{1,2000})',""",
     """auth succeeded on.*?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
-}
+
+
 }
 ```

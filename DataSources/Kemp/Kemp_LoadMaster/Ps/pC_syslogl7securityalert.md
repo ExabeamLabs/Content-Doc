@@ -16,6 +16,7 @@ Name = syslog-l7-security-alert
     """\sAttempted\s{1,100}({alert_name}.+?)\s{1,100}on""",
   ]
   DupFields = [ alert_name->alert_type ]
-}
+
+
 }
 ```

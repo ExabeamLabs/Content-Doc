@@ -23,6 +23,7 @@ Name = eset-domain-user-login
       """({service}RemoteAdministrator)""", 
       """\d{1,100}Z\s{0,100}({host}\w+)\s""",
     ]
-  }
+  
+
 }
 ```

@@ -3,7 +3,7 @@
 {
 Name = leef-checkpoint-alert-2
   Conditions = [ """|Check Point|New Anti Virus|""", """signature=""" ]
-}
+
 leef-checkpoint-alert-1 = {
   Vendor = Check Point 
   Product = Endpoint Security
@@ -25,5 +25,6 @@ leef-checkpoint-alert-1 = {
     """\Wsrc=({src_ip}[a-fA-F\d.:]{1,2000})""",
     """\Wproto=(|({protocol}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wmalware_action=(|({alert_type}.+?))(\s{1,100}\w+=|\s{0,100}$)"""
-  ]}
+  
+}
 ```

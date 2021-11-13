@@ -15,6 +15,7 @@ Name = syslog-microsoft-dhcp
     """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
   DupFields = [ "dest_host->user" ]
-}
+
+
 }
 ```

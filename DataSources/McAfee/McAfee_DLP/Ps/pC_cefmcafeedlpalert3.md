@@ -24,6 +24,7 @@ Name = cef-mcafee-dlp-alert-3
         """\|McAfee\|IntruShield\|([^|]{1,2000}?\|){2}({alert_name}[^|]{1,2000})\|""",
         """\Wcatdt=(|({alert_type}.+?))(\s{1,100}\w+=|\s{0,100}$)"""
       ]
-    }
+    
+
 }
 ```

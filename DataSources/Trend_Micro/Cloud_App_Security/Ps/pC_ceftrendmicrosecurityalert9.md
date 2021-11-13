@@ -23,6 +23,7 @@ Name = cef-trendmicro-security-alert-9
     """\Wcs2=(|({alert_name}.+?))\s\w+=""",
     """\Wcs1=(|({alert_name}.+?))\s\w+=""",
   ]
-}
+
+
 }
 ```

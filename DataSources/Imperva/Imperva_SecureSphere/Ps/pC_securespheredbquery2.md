@@ -31,6 +31,7 @@ Name = securesphere-db-query-2
     """\srawdata=#\(({db_query}[^\)]{1,2000})""",
   ]
   DupFields = [ "db_user->account", "os_user->user" ]
-}
+
+
 }
 ```

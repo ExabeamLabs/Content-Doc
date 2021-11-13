@@ -21,6 +21,7 @@ Name = unix-secureworks-security-alert
     """\[EX HTTP_HOSTNAME 10:\s{1,100}({target_host}[^\s\]]{1,2000})""",
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

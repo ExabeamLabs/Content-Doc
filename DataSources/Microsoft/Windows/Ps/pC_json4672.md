@@ -25,6 +25,7 @@ Name = json-4672
       """"Keywords":"({outcome}[^"]{1,2000})"""
     ]
     DupFields = ["host->dest_host"]
-  }
+  
+
 }
 ```

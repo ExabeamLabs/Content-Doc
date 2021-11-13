@@ -4,7 +4,7 @@
 Name = portox-nac-logon-1
   DataType = "nac-logon"
   Conditions = [ """|Portnox""","""|CLEAR|""","""|Guest authentication success|""","""act=Access ""","""successfully authenticated""" ]
-}
+
 portox-logon-events = {
     Vendor = Portnox
     Product =  Portnox CLEAR
@@ -20,5 +20,6 @@ portox-logon-events = {
       """cs4=(unknown|({auth_method}[^=]{1,2000}?))\s\w+=""",
       """cs2=({policy}[^=]{1,2000}?)\s\w+=""",
       """msg=({additional_info}[^=]{1,2000}?)\s\w+=""",
-    ]}
+    
+}
 ```

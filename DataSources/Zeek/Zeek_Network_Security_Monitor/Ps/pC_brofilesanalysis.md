@@ -25,6 +25,7 @@ Name = bro-files-analysis
     """"sha1":"({sha1}[^"]{1,2000})""",
     """"filename":"({file_name}[^"]{1,2000}?(\.({file_ext}\w+))?)"""",
   ]
-}
+
+
 }
 ```

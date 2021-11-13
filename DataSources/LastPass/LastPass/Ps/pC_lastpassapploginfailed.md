@@ -17,6 +17,7 @@ Name = lastpass-app-login-failed
                 """"Username"{1,20}:"{1,20}({user_email}[^@"]{1,2000}@[^\.]{1,2000}\.[^"]{1,2000})""",
                 """msg=({additional_info}[^=]{1,2000}?)\s\w{1,2000}="""
   ]
-}
+
+
 }
 ```

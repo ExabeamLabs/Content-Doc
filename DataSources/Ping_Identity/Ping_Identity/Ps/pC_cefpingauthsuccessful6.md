@@ -4,7 +4,7 @@
 Name = cef-ping-auth-successful-6
   DataType = "authentication-successful"
   Conditions = [ """CEF""", """|Ping Identity|PingFederate|""", """|AUTHN_SESSION_USED|AUTHN_SESSION_USED|""", """msg=success""" ]
-}
+
 cef-ping-events-1 = {
   Vendor = Ping Identity
   Product = Ping Identity
@@ -21,5 +21,6 @@ cef-ping-events-1 = {
     """\Wmsg=(|({outcome}[^=]{1,2000}?))\s{1,100}(\w+=|$)""",
     """\|Ping Identity\|PingFederate\|([^\|]{0,200}){3}\|({event_name}[^\|]{1,200})""",
     """cs6=(|({additional_info}[^"]{1,2000}?))\s{1,100}(\w+=|$)""",
-  ]}
+  
+}
 ```

@@ -22,6 +22,7 @@ Name = oracle-db-query-3
     """"userID":"({db_user}[^"]{1,2000})""",
   ]
   DupFields = [ "os_user->user" ]
-}
+
+
 }
 ```

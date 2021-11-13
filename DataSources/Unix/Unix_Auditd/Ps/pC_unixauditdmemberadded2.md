@@ -18,6 +18,7 @@ Name = unix-auditd-member-added-2
     """\sses=({session_id}\d{1,100})""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

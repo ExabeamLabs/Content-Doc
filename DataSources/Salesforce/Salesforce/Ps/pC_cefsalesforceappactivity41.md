@@ -19,6 +19,7 @@ Name = cef-salesforce-app-activity-41
     """\WdestinationServiceName =({app}.+?)\s{0,100}(\w+=|$)""",
   ]
   DupFields = [ "object->resource" ]
-}
+
+
 }
 ```

@@ -19,6 +19,7 @@ Name = mssql-database-query-3
     """TextData.+?({db_operation}UPDATE|REMOVE|INSERT|ADD_USER|DELETE)""",
     """ApplicationName ="{1,20}({app}[^"]{1,2000})"""
 	]
-}
+
+
 }
 ```

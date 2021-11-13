@@ -27,6 +27,7 @@ Name = sysmon-file-create
     """"TargetFilename":"({file_path}(({file_parent}[^"]{1,2000}?)[\\\/]{1,20})?({file_name}[^"\\\/]{1,2000}?(\.({file_ext}\w+))?))""""
   ]
   DupFields = [ "host->dest_host", "directory->process_directory", "process->path" ]
-}
+
+
 }
 ```

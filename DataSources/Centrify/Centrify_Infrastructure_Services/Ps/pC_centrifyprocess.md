@@ -18,6 +18,7 @@ Name = centrify-process
     """status=({outcome}.+?)\s\w+=""",
     """parameters=({command_line}.+?)$"""
   ]
-}
+
+
 }
 ```

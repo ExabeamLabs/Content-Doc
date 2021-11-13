@@ -17,6 +17,7 @@ Name = cef-salesforce-app-activity-10
     """Display\\=Added value .*? to ({object}.+?) picklist""",
     """({app}Sales Cloud)""",
   ]
-}
+
+
 }
 ```

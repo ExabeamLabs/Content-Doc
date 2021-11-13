@@ -8,7 +8,7 @@ Name = sk4-json-4800
     """({event_name}The workstation was locked)""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
 json-windows-events-1 = {
   Vendor = Microsoft
   Product = Windows
@@ -46,5 +46,6 @@ json-windows-events-1 = {
     """"{1,20}SidHistory"{1,20}:"{1,20}(-|({sid_history}[^"]{1,2000}))""",
     """"Keywords":"({outcome}[^"]{1,2000})"""
   ]
-  DupFields = ["event_id->event_code"]}
+  DupFields = ["event_id->event_code"
+}
 ```

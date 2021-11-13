@@ -19,6 +19,7 @@ Name = cef-microsoft-database-failed-login
     """<address>({src_ip}[a-fA-F\d.:]{1,2000})</address>""",
     """CLIENT:\s{0,100}({src_ip}[a-fA-F\d.:]{1,2000})""",
   ]
-}
+
+
 }
 ```

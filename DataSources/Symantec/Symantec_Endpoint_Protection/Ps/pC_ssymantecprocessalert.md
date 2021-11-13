@@ -9,7 +9,7 @@ Name = s-symantec-process-alert
     """\sCaller_Process_ID=({process_guid}\d{1,100})""",
   ]
   DupFields = [ "alert_name->alert_type", "directory->process_directory", "process_guid->pid" ]
-}
+
 s-symantec-alert = {
     Vendor = Symantec
     Product = Symantec Endpoint Protection
@@ -27,5 +27,6 @@ s-symantec-alert = {
       """\sseverity=({alert_severity}[^,]{1,2000}?)\s{0,100}(,|$)""",
       """\sEvent_Description="({additional_info}[^"]{1,2000})""",
       """\sdest_port=({dest_port}\d{1,100})""", 
-    ]}
+    
+}
 ```

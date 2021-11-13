@@ -21,6 +21,7 @@ Name = windows-xml-4722
     """<Data Name ='SubjectDomainName'>({domain}[^<]{1,2000})<""",
     """<Data Name ='SubjectLogonId'>({logon_id}[^<]{1,2000})<"""
   ]
-}
+
+
 }
 ```

@@ -16,6 +16,7 @@ Name = cef-cisco-asa-721016-vpn-start
     """\sdhost=({dest_host}.+?)\s{1,100}\w+=""",  
   ]
   DupFields = ["user->account"]
-}
+
+
 }
 ```

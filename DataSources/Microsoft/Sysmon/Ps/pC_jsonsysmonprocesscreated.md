@@ -33,6 +33,7 @@ Name = json-sysmon-process-created
     """"ParentCommandLine":"\s{0,100}({parent_command_line}[^,]{1,2000}?)\s{0,100}",""",
   ]
   DupFields = [ "host->dest_host", "directory->process_directory", "process->path" ]
-}
+
+
 }
 ```

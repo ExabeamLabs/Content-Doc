@@ -19,6 +19,7 @@ Name = cef-cisco-ise-nac-logon
     """\sshost=({src_host}[^\s]{1,2000})""",
     """\ssrc=({src_ip}[^\s]{1,2000})"""
   ]
-}
+
+
 }
 ```

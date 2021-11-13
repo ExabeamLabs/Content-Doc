@@ -22,6 +22,7 @@ Name = s-exchange-app-activity
     """\WParam="-Server\s{0,100}'({object}[^'"]{1,2000})""",
     """\WSuccess="({outcome}[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

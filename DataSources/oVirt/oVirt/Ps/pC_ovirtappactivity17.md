@@ -15,6 +15,7 @@ Name = ovirt-app-activity-17
     """EVENT_ID:.*? was plugged to VM ({object}[^\s"]{1,2000}?)\.?\s\(User: ({user}[^\s\(\)"]{1,2000}?)(\)|\s|\.\s|\.$)""",
     """({app}ovirt)"""
   ]
-}
+
+
 }
 ```

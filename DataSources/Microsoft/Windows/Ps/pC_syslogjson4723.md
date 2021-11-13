@@ -23,6 +23,7 @@ Name = syslog-json-4723
         """"TargetDomainName":"({target_domain}[^"]{1,2000})"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

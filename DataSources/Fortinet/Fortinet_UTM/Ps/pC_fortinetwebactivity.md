@@ -35,6 +35,7 @@ Name = fortinet-web-activity
     """\Wurl="({full_url}[^"]{1,2000})"""",
     """policyid=({policy_id}\d{1,100})"""
   ]
-}
+
+
 }
 ```

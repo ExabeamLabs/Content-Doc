@@ -18,6 +18,7 @@ Name = cylance-security-alert-1
     """IP:\s({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""", 
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

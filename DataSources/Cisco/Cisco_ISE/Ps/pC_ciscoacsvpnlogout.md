@@ -23,6 +23,7 @@ Name = cisco-acs-vpn-logout
     """Acct-Session-Time=({session_duration}\d{1,100}),""",
     """Acct-Terminate-Cause=({additional_info}.*?),\sNAS-Port""",
   ]
-}
+
+
 }
 ```

@@ -21,6 +21,7 @@ Name = n-forwarded-cef-4722
       """\snitroSource_Logon_ID=({logon_id}.+?)(\s|0\||$)""",
     ]
     DupFields=[ "dest_ip->host", "dest_host->host" ]
-  }
+  
+
 }
 ```

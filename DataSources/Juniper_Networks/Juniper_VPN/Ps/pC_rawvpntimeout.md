@@ -20,6 +20,7 @@ Name = raw-vpn-timeout
     """PulseSecure:.*?\[({src_ip}[a-fA-F:\d.]{1,2000})\]\s{1,100}(({domain}[^\\]{1,2000})\\)?(?:({user_email}[^@\\\/]{1,2000}@[^@\(\s]{1,2000}?)|({user}[^\s]{1,2000}))\(({realm}[^\)]{1,2000})?"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

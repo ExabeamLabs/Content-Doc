@@ -25,6 +25,7 @@ Name = cef-o365-dlp-email
     """Category\s{1,100}\[({category}[^\]]{1,2000})\]"""	
  ]
    DupFields=["sender->user_email"]
-}
+
+
 }
 ```

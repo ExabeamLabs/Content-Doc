@@ -9,7 +9,7 @@ Name = openvms-batch-logon
   ]
   DupFields = [ "event_name->activity" ]
 
-}
+
 openvms-logon = {
   Vendor = VMS Software
   Product = OpenVMS
@@ -21,5 +21,6 @@ openvms-logon = {
     """Username:\s{1,100}({user}[^\s]{1,2000})\s{1,100}(\w{1,100}|$)""",
     """PID:\s{1,100}({pid}[\w]{1,2000})\s{1,100}(\w{1,100}|$)""",
     """Process name:\s{1,100}({process_name}[^\s]{1,2000})\s{1,100}(\w{1,100}|$)"""   
-  ]}
+  
+}
 ```

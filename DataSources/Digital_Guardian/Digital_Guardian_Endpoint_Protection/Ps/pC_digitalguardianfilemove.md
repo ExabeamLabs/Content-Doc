@@ -7,7 +7,7 @@ Name = digital-guardian-file-move
   Conditions = [ """ Agent_Local_Time="""", """ User_Name ="""", """ Operation="12"""" ]
   Fields = ${DGParserTemplates.digital-guardian-activity.Fields}[
   ]
-}
+
 digital-guardian-activity = {
   Vendor = Digital Guardian
   Product = Digital Guardian
@@ -25,5 +25,6 @@ digital-guardian-activity = {
     """\sOperation="({event_code}\d{1,100})""",
     """\sApplication="({process_name}[^"]{1,2000})""",
     """\sSource_File="({src_file_name}[^=]{1,2000}?)\s{0,100}"\s{0,100}\w+=""",
-  ]}
+  
+}
 ```

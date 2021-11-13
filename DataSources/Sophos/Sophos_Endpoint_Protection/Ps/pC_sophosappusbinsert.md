@@ -23,6 +23,7 @@ Name = sophos-app-usb-insert
      """ComputerDomain=({domain}[^;]{1,2000})""",
   ]
   DupFields = ["result->activity_details"]
-}
+
+
 }
 ```

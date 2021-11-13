@@ -12,7 +12,7 @@ Name = cef-mcafee-process-alert
     """\ssproc=({process}({directory}[^=]{0,2000}?[\\\/]{1,2000})?({process_name}[^=\\\/]{1,2000}))(\s{1,100}\w+=|\s{0,100}$)""",
   ]
   DupFields = [ "directory->process_directory" ]
-}
+
 cef-mcafee-epo-alert = {
   Vendor = McAfee
   Product = McAfee Endpoint Security
@@ -39,5 +39,6 @@ cef-mcafee-epo-alert = {
     """\|McAfee\|ePolicy[^|]{1,2000}?\|[^|]{1,2000}?\|[^|]{1,2000}?\|[^|]{1,2000}?\|({alert_severity}[^\|]{1,2000})""",
     """\scategoryOutcome=/?({outcome}.+?)\s{1,100}(\w+=|$)""",
   ]
-  DupFields = ["malware_file_name->file_name"]}
+  DupFields = ["malware_file_name->file_name"
+}
 ```

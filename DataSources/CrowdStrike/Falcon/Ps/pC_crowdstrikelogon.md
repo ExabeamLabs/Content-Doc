@@ -27,6 +27,7 @@ Name = crowdstrike-logon
       """"LogonDomain":"(NT AUTHORITY|({domain}[^"]{1,2000}))""",
     ]
     DupFields = ["user->account"]
-  }
+  
+
 }
 ```

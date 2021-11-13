@@ -17,6 +17,7 @@ Name = cisco-asa-746016
     """({event_name}DNS lookup) for ({query}\S+)""",
     """,\s{0,100}reason\s{0,100}:\s{0,100}(UNKNOWN|({reason}.+?))\s{0,100}$"""
   ]
-}
+
+
 }
 ```

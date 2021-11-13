@@ -22,6 +22,7 @@ Name = microsoft-npc-failed-logon-1
     """<Reason-Code[^>]{1,2000}>({failure_reason}\d{1,100})"""
   ]
   DupFields = [ "host->dest_host","outcome->event_code" ]
-}
+
+
 }
 ```

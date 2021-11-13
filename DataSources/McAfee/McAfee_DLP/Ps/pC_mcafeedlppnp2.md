@@ -6,7 +6,7 @@ Name = mcafee-dlp-pnp-2
   Conditions = [ """RulesToDisplay="Plug and Play""", """ViolationUTCTime=""", """Destination=""", """Username=""", """ViolationTimezone=""", """ViolationLocalTime=""" ]
 
   Fields = ${McAfeeParserTemplates.mcafee-dlp-activity.Fields} [
-    """,\sDestination="{0,20}({device_type}[^"]{1,2000})"{0,20}
+    """,\sDestination="{0,20}({device_type}[^"]{1,2000})"{0,20
 mcafee-dlp-activity = {
       Vendor = McAfee
       Product = McAfee DLP
@@ -42,5 +42,6 @@ mcafee-dlp-activity = {
       """\WuserInfoEmail=(|({user_email}[^@]{1,2000}({email_domain}.+?)))(\s{1,100}\w+=|\s{0,100}$)""",
       """\WuserInfoFirstName =(|({user_firstname}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
       """\WuserInfoLastName =(|({user_lastname}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-    ]}
+    
+}
 ```

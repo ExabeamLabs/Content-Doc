@@ -15,6 +15,7 @@ Name = s-failed-physical-access-unknown-1
     """"Card number\s{0,100}\(({badge_id}[^\s\)]{1,2000})""",
   ]
   DupFields = [ "outcome->event_name" ]
-}
+
+
 }
 ```

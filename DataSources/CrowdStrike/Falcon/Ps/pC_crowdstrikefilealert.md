@@ -21,6 +21,7 @@ Name = crowdstrike-file-alert
     """"ImageFileName":"({file_parent}[^"]{0,2000}[\\\/]{1,2000})({file_name}[^\\\/"]{1,2000}?\.({file_ext}[^\\\.\s"]{1,2000})?)"""",
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

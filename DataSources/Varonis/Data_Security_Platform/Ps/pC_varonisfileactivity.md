@@ -22,6 +22,7 @@ Name = varonis-file-activity
       """\sPath:\s{0,100}({file_parent}.+?)\\[^\\]{1,2000}\s{1,100}Affected Object:"""
     ]
     DupFields = [ "accesses->event_code" ]
-  }
+  
+
 }
 ```

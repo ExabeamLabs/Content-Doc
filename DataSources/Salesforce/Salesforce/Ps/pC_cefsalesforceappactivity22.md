@@ -17,6 +17,7 @@ Name = cef-salesforce-app-activity-22
     """Display\\=Changed ({resource}.+?) of ({object}.+?) to""",
     """({app}Sales Cloud)""",
   ]
-}
+
+
 }
 ```

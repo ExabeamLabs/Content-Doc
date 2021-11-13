@@ -15,6 +15,7 @@ Name = o365-teams-app-login
     """"UserId":"({user_email}[^@]{1,2000}@({email_domain}[^"]{1,2000}))"""",
     """\Wsuser=({user_email}[^@]{1,2000}@({email_domain}[^\s]{1,2000}))\s{1,100}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

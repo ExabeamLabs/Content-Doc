@@ -18,6 +18,7 @@ Name = bro-radius
     """"id\.resp_p":({dest_port}\d{1,100})""",
     """"result":"({outcome}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

@@ -21,6 +21,7 @@ Name = cef-lyrix-badge-access-1
     """\Wsuser=({user}.+?)\s{1,100}(\w+=|$)"""
   ]
   DupFields=[ "user->user_fullname" ]
-}
+
+
 }
 ```

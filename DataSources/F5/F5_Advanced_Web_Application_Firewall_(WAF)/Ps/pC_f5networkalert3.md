@@ -23,6 +23,7 @@ Name = f5-network-alert-3
     """username\s{0,100}=\s{0,100}(N\/A|({user}[^\s,>]{1,2000})),""",
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

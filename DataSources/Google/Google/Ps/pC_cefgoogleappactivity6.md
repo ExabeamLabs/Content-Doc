@@ -6,7 +6,7 @@ Name = cef-google-app-activity-6
   Fields = ${GoogleParserTemplates.cef-google-app-activity.Fields} [
     """"events":.*?"name":"method_name"[^\}]{1,2000}?"value":"({activity}[^"]{1,2000}?)""""
   ]
-}
+
 cef-google-app-activity = {
   Vendor = Google
   Product = Google
@@ -35,5 +35,6 @@ cef-google-app-activity = {
     """"name":"status","value":"({object}[^"]{1,2000})"""",
     """"name":"client_id","value":"({object}[^"]{1,2000})"""",
     """"id":\{({additional_info}[^\}]{1,2000})\}"""
-  ]}
+  
+}
 ```

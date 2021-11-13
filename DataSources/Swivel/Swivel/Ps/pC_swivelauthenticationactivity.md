@@ -16,6 +16,7 @@ Name = swivel-authentication-activity
     """INFO\s{0,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s{1,100}(-\s{1,100})?({activity}.+?)\s{0,100}$""",
     """({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):({src_port}\d{1,100})\s{1,100}({activity}.+?)\s{0,100}$"""
 	]
-}
+
+
 }
 ```

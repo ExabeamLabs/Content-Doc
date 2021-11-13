@@ -17,6 +17,7 @@ Name = raw-1149
       """Source Network Address:\s{0,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
     ]
     DupFields = [ "host->dest_host" ]
-  }
+  
+
 }
 ```

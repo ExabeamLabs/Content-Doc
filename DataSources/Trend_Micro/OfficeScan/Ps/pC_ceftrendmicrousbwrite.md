@@ -22,6 +22,7 @@ Name = cef-trendmicro-usb-write
     """\sflexString1=({action}.+?)\s{1,100}(\w+=|$)""",
     """\scs5=({activity_details}.+?)\s{1,100}(\w+=|$)"""
   ]
-}
+
+
 }
 ```

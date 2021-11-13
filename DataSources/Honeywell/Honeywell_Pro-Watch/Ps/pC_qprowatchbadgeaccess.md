@@ -18,6 +18,7 @@ Name = q-prowatch-badge-access
       """\sLOOP_DESCRP:\s{0,100}"({location_building}[^"].*?)"\s{0,100}(\w+:|$)""",
       """\sCARDNO:\s{0,100}"({badge_id}[^"].*?)"\s{0,100}(\w+:|$)""",
     ]
-  }
+  
+
 }
 ```

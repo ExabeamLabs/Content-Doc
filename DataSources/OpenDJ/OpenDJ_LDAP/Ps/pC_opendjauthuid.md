@@ -14,6 +14,7 @@ Name = opendj-auth-uid
     """conn=({conn_id}\d{1,100})""",
     """uid=({user_uid}\d{1,100})"""
   ]
-}
+
+
 }
 ```

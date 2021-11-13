@@ -17,6 +17,7 @@ Name = trend-micro-alert-2
     """Subject="({process}({directory}[^"]{1,2000}?)\\({process_name}[^\\"]{1,2000}))"""",
     """\[({alert_type}[^@]{1,2000})""",
   ]
-}
+
+
 }
 ```

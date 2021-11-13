@@ -19,6 +19,7 @@ Name = s-swipes-badge-access
       """exabeam_raw=([^\|]{0,2000}\|){7}({badge_id}[^\|]{1,2000})\|""",
     ]
     DupFields = ["location_area->location_building"]
-  }
+  
+
 }
 ```

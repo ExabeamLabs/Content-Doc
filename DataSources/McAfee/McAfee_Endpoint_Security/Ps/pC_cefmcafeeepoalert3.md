@@ -3,7 +3,7 @@
 {
 Name = cef-mcafee-epo-alert-3
   Conditions = [ """CEF""","""|McAfee|ePolicy Orchestrator|""", """Port blocking""" ]
-}
+
 cef-mcafee-epo-alert = {
   Vendor = McAfee
   Product = McAfee Endpoint Security
@@ -30,5 +30,6 @@ cef-mcafee-epo-alert = {
     """\|McAfee\|ePolicy[^|]{1,2000}?\|[^|]{1,2000}?\|[^|]{1,2000}?\|[^|]{1,2000}?\|({alert_severity}[^\|]{1,2000})""",
     """\scategoryOutcome=/?({outcome}.+?)\s{1,100}(\w+=|$)""",
   ]
-  DupFields = ["malware_file_name->file_name"]}
+  DupFields = ["malware_file_name->file_name"
+}
 ```

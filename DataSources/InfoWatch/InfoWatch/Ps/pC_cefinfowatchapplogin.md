@@ -19,6 +19,7 @@ Name = cef-infowatch-app-login
     """"login":"({user}[^"]{1,2000})"""",
   ]
   DupFields = [ "host->app" ]
-}
+
+
 }
 ```

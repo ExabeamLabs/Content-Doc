@@ -21,6 +21,7 @@ Name = nic-member-removed-2008
     """Member:.+?Account Name:\s{0,100}CN=.+?({account_ou}OU.+?DC.+?)\s{1,100}Group:""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

@@ -19,6 +19,7 @@ Name = o365-mip-label-activity
     """Receivers"{0,20}:\s{0,100}\["{0,20}({recipient}[^"]{1,2000})"""
     ]
     DupFields = [ "sender->user_email", "recipient->recipients" ]
-}
+
+
 }
 ```

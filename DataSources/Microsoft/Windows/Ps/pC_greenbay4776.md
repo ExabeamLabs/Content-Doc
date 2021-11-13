@@ -19,6 +19,7 @@ Name = greenbay-4776
     """"event_id":"({event_code}\d{1,100})""",
     """"The ({login_type}computer|domain)(\s\w+)? attempted to validate the credentials""",
   ]
-}
+
+
 }
 ```

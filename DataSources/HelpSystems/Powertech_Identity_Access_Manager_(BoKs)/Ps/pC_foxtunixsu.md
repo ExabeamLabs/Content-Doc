@@ -18,6 +18,7 @@ Name = foxt-unix-su
     """({event_code}su)"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

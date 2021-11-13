@@ -21,6 +21,7 @@ Name = n-cef-mcafee-alert
     """\WnitroCategory=({threat_category}.*?)\s{1,100}(\w+=|$)""",
     """\Wsntdom=({domain}.*?)\s{1,100}(\w+=|$)"""
   ]
-}
+
+
 }
 ```

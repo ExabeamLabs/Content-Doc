@@ -26,6 +26,7 @@ Name = fortinet-security-alert-2
     """\Waction="({action}[^"]{1,2000})"""",
   ]
   DupFields = ["malware_url->process_name"]
-}
+
+
 }
 ```

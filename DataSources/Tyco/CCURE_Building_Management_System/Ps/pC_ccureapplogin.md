@@ -15,6 +15,7 @@ Name = ccure-app-login
      """\ssuid=(?:Unknown|(({domain}[^\\]{1,2000})\\?)?({user}.+?))\s(\w+=|$)""",
      """\ssuser=(?:|({user_fullname}.+?))\s(\w+=|$)"""
 	]
-}
+
+
 }
 ```

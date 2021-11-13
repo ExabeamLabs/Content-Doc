@@ -28,6 +28,7 @@ Name = logstash-4624
       """KeyLength":"\s{0,100}({key_length}[^"]{1,2000})\s{0,100}""""
     ]
     DupFields = ["src_host_windows->dest_host", "user->account"]
-  }
+  
+
 }
 ```

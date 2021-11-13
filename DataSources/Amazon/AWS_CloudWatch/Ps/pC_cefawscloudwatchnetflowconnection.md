@@ -22,6 +22,7 @@ Name = cef-aws-cloudwatch-netflow-connection
     """\Wsuser=(|anonymous|({user}[^=]{1,2000}?))(\s{1,100}\w{1,100}=|\s{0,100}$)""",
     """\Wact=(|({outcome}[^=]{1,2000}?))(\s{1,100}\w{1,100}=|\s{0,100}$)"""
   ]
-}
+
+
 }
 ```

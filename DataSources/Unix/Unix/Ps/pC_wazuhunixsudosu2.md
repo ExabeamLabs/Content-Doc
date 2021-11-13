@@ -13,6 +13,7 @@ Name = wazuh-unix-sudo-su-2
     """"data.srcuser":"({user}[^"]{1,2000})""",
   ]
   DupFields=["host->dest_host", "description->event_name"]
-}
+
+
 }
 ```

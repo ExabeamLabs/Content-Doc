@@ -16,6 +16,7 @@ Name = s-physical-badge-access-9
       """\sPanel="({location_building}[^"]{1,2000}?)\s{0,100}"""",
       """\sReader="({location_door}[^"]{1,2000}?)\s{0,100}"""",
     ]
-  }
+  
+
 }
 ```

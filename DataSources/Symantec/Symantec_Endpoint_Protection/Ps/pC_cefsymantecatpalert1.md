@@ -20,6 +20,7 @@ Name = cef-symantec-atp-alert-1
     """"incident_priority_level":"({alert_severity}[^"]{1,2000})"""
     ]
 
-}
+
+
 }
 ```

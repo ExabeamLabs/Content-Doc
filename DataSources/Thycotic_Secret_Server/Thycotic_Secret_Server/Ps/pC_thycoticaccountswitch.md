@@ -20,6 +20,7 @@ Name = thycotic-account-switch
     """cs3=({safe_value}.+?)\s{1,100}(\w+=|$)"""
   ]
 	DupFields=["host->dest_host"]
-}
+
+
 }
 ```

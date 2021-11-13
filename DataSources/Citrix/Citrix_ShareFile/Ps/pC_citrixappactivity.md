@@ -9,7 +9,7 @@ Name = citrix-app-activity
     """"Activity"{1,20}:"{1,20}({activity}[^"]{1,2000})"""",
     """"Date"{1,20}:"({time}[^"]{1,2000})""",
   ]
-}
+
 citrix-app-activity = {
     Vendor = Citrix
     Product =  Citrix ShareFile
@@ -35,5 +35,6 @@ citrix-app-activity = {
       """"AdditionalInfo"{1,20}:"({additional_info}[^"]{1,2000})""",
       """"Action":"({action}[^"]{1,2000})""",
       """"Company":"(\\|({company}[^"]{1,2000}?))\s{0,100}"""",
-    ]}
+    
+}
 ```

@@ -26,6 +26,7 @@ Name = cef-sophos-dlp-alert-13
     """"name".+?File type:\s{0,100}({file_type}.+?)\s{1,100}File size:\s{0,100}({bytes}\d{1,100})\s""",
     """"name".+?Source path:\s{0,100}({target}.+?)\s{0,100}(\w+\s{1,100}\w+:|")"""
   ]
-}
+
+
 }
 ```

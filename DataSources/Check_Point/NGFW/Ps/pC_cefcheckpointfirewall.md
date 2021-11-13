@@ -23,6 +23,7 @@ Name = cef-checkpoint-firewall
     """\Wreason=(?:;|({failure_reason}.+?))\s{1,100}(\w+=|$)""",
     """\Wcs1=(?:\s\&|({rule}.+?))\s{1,100}(\w+=|$)"""
   ]
-}
+
+
 }
 ```

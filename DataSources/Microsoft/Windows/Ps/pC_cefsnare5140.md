@@ -28,6 +28,7 @@ Name = cef-snare-5140
     """\WShare Name:\s{0,100}({share_name}.+?)\s{1,100}Share Path:""",
     """\WShare Path:\s{0,100}(|({share_path}({d_parent}.*?[\\\/]{1,2000})?(|({d_name}[^\\]{1,2000}?))))\s{1,100}Access Request Information:""",
   ]
-}
+
+
 }
 ```

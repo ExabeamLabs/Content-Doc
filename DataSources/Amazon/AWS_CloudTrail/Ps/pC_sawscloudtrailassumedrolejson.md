@@ -10,7 +10,7 @@ Name = s-aws-cloudtrail-assumedrole-json
     """\Wext_userIdentity_sessionContext_sessionIssuer_type=(|({activity}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\WflexString1=(|({activity}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """"{1,20}userName"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({target}[^"].+?))"{1,20}\s{0,100}[,\]\}]""",
-    """"requestParameters":\{"userName":"({target}[^"]{1,2000})"\}
+    """"requestParameters":\{"userName":"({target}[^"]{1,2000})"\
 s-aws-cloudtrail-activity-json = {
   Vendor = Amazon
   Lms = Splunk
@@ -45,5 +45,6 @@ s-aws-cloudtrail-activity-json = {
     """items":\[[^\]]{1,2000}?fromPort":({src_port}\d{1,100}),""",
     """items":\[[^\]]{1,2000}?toPort":({dest_port}\d{1,100}),""",
     """items":\[[^\]]{1,2000}?ipProtocol":"({protocol}[^"]{1,2000})""""
-  ]}
+  
+}
 ```

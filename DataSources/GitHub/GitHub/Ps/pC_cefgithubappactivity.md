@@ -20,6 +20,7 @@ Name = cef-github-app-activity
     """\WfileType=({additional_info}[^=]{1,2000}?)\s{0,100}(\w+=|$)""",
     """\Wmsg=({additional_info}[^=]{1,2000}?)\s{0,100}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

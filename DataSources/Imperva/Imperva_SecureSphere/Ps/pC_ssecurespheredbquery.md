@@ -22,6 +22,7 @@ Name = s-securesphere-db-query
     """response_size=({response_size}\d{1,100})""",
   ]
   DupFields = [ "db_user->account" ]
-}
+
+
 }
 ```

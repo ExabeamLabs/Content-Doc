@@ -37,6 +37,7 @@ Name = securesphere-db-json
     """"policy-id"\s{0,100}:\s{0,100}\[\s{0,100}"({policy_id}[^"]{1,2000})"""",
   ]
   DupFields = [ "user->account", "user->db_user" ]
-}
+
+
 }
 ```

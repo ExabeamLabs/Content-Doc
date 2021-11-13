@@ -46,6 +46,7 @@ Name = sourcefire-network-alert-1
     """\WURLReputation:\s{0,100}({reputation}[^,]{1,2000}?)(,|\s{0,100}$)""",
   ]
   DupFields = [ "rule->alert_name", "user_agent->additional_info" ]
-}
+
+
 }
 ```

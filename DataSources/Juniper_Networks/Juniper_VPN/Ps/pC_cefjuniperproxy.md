@@ -22,6 +22,7 @@ Name = cef-juniper-proxy
 	"""\WrequestMethod=({method}[^\s]{1,2000})""",
 	"""\Wcn1=({category}[^\s]{1,2000})""",
   ]
-}
+
+
 }
 ```

@@ -24,6 +24,7 @@ Name = cef-fsecure-security-alert
     """(\s|\|)suser=(({domain}[^\\=]{1,2000})[\\]{1,2000})?({user}[^\\\s]{1,2000})""",
     """(\s|\|)msg=({additional_info}[^\s].+?)\s{1,100}(\w+=|$)"""
   ]
-}
+
+
 }
 ```

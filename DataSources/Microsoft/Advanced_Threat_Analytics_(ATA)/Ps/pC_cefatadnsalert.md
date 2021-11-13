@@ -21,6 +21,7 @@ Name = cef-ata-dns-alert
     """\Wrequest=({malware_url}.+?)\s{1,100}(\w+=|$)""",
     """\Wshost=(?:({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[\w.\-]{1,2000}))\s{1,100}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

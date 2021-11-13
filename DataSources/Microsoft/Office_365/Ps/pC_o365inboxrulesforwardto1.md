@@ -21,6 +21,7 @@ Name = o365-inbox-rules-forward-to-1
     """Forward.+?Recipients\\?":\[?\\?"({target}[^\@]{1,2000}@({target_domain}[^",;\\]{1,2000}))"""
   ]
   DupFields = ["user_domain->email_domain"]
-}
+
+
 }
 ```

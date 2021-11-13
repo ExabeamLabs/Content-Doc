@@ -25,6 +25,7 @@ Name = eset-alert
              """"processname":"({process}[^"]{1,2000}\\({process_name}[^"]{1,2000}))"""", 
 	]
    DupFields = ["host->dest_host"]
-   }
+   
+
 }
 ```

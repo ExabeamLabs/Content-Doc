@@ -23,6 +23,7 @@ Name = s-juniper-pulse-activity
     """DeviceType\\*=({src_host}[^"&]{1,2000})""",
     """agent="({user_agent}[^"]{1,2000})"""",
    ]
-}
+
+
 }
 ```

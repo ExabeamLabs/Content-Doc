@@ -18,6 +18,7 @@ Name = n-forwarded-cef-4771
     """suser=({user}.+?)\s{1,100}\w+=""",
     """nitroCommandID=({result_code}.+?)\s{1,100}\w+="""
   ]
-}
+
+
 }
 ```

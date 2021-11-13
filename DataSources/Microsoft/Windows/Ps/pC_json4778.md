@@ -21,6 +21,7 @@ Name = json-4778
       """"ClientAddress":"({src_ip}[a-fA-F\d.:]{1,2000}?)""""
     ]
     DupFields = [ "host->dest_host" ]
-  }
+  
+
 }
 ```

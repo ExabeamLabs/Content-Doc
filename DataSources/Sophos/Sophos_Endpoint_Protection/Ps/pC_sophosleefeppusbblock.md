@@ -21,6 +21,7 @@ Name = sophos-leef-epp-usb-block
           """DeviceID=(?:\s|({device_id}.+?))\s{1,100}(\w+=|$)""",
           """ActionName =({outcome}.+?)\s{1,100}(?:\w+=|$)"""
   ]
-}
+
+
 }
 ```

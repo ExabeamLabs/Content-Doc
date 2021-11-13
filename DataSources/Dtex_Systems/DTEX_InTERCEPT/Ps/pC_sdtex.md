@@ -10,6 +10,7 @@ Name = s-dtex
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ "User_Department", "User_Location"]
   Fields = [
-    """(?:[^,]{0,2000}
+    """(?:[^,]{0,2000
+
 }
 ```

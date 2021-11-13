@@ -15,6 +15,7 @@ Name = tacacs-process-created
     """cmd=\S+\s{1,100}({command_line}.+?)\s{1,100}$""",
     """cmd=\S+\s{1,100}({process_name}[^\s]{1,2000})"""
   ]
-}
+
+
 }
 ```

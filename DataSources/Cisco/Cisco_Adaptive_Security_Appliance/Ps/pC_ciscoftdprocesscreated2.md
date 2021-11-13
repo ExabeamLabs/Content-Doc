@@ -16,6 +16,7 @@ Name = cisco-ftd-process-created-2
     """({event_name}executed)\s{1,100}'({command_line}[^']{1,2000}?)\s{0,100}'""",
     """from IP (0.0.0.0|({src_ip}[A-Fa-f:\d.]{1,2000}))"""
   ]
-}
+
+
 }
 ```

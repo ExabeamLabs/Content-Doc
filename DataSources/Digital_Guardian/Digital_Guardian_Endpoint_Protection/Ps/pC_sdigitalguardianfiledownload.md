@@ -3,8 +3,8 @@
 {
 Name = s-digitalguardian-file-download
   Conditions = [ """Operation_ID="2"""", """Agent_UTC_Time""" ]
-}
-splunk-digitalguardian-file-download ={
+
+splunk-digitalguardian-file-download = {
   Vendor = Digital Guardian
   Product = Digital Guardian Endpoint Protection
   Lms = Splunk
@@ -32,5 +32,6 @@ splunk-digitalguardian-file-download ={
     """Source_IP_Address="(?:|({src_ip}[^"]{1,2000}))"""",
     """Operation_ID="({event_code}[^"]{1,2000})""""
   ]
-  DupFields = [ "host->dest_host" ]}
+  DupFields = [ "host->dest_host" 
+}
 ```

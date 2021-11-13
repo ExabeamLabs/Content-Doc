@@ -29,6 +29,7 @@ Name = cef-syslog-guardium-db-alert
     """\sdvchost=(localhost|({host}[\w\-.]{1,2000}))"""
   ]
   DupFields = [ "alert_name->alert_type", "db_user->account", "db_query->additional_info" ]
-}
+
+
 }
 ```

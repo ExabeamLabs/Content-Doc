@@ -17,6 +17,7 @@ Name = raw-asa-nap-vpn-end
     """IP = ({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """%ASA-({priority}\d{1,100})-({event_code}\d{1,100})""",
   ]
-}
+
+
 }
 ```

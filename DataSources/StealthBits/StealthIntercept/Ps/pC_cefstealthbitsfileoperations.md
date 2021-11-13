@@ -21,6 +21,7 @@ Name = cef-stealthbits-file-operations
     """\WBlocked=\s{0,100}(|({blocked}[^\s]{1,2000}))\sAttribute""",
     """\WOperation=\s{0,100}(|({accesses}.+?))(\s{1,100}\w+=|\s{0,100}$)"""
   ]
-}
+
+
 }
 ```

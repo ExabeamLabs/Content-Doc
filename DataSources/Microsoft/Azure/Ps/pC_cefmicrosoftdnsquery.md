@@ -7,7 +7,7 @@ Name = cef-microsoft-dns-query
   Fields = ${MSParserTemplates.cef-azure-app-activity-1.Fields}[
     """<b>DNS query</b> <b>({query}.+?)</b>""",
   ]
-}
+
 cef-azure-app-activity-1 = {
   Vendor = Microsoft
   Product = Azure
@@ -34,5 +34,6 @@ cef-azure-app-activity-1 = {
     """"DestinationComputerDnsName","value":"({dest_host}[^"]{1,2000})"""",
     """"DestinationIpAddress","value":"({dest_ip}[a-fA-F\d.:]{1,2000})"""",
     """"Protocol","value":"({protocol}[^"]{1,2000})""""
-  ]}
+  
+}
 ```

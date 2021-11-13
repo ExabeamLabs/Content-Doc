@@ -21,6 +21,7 @@ Name = json-bro-ssl
     """"cipher\\?"{1,20}:\\?"{1,20}({auth_method}[^"\\]{1,2000})"""
     """"established\\?"{1,20}:({outcome}\w+)""" 
   ]
-}
+
+
 }
 ```

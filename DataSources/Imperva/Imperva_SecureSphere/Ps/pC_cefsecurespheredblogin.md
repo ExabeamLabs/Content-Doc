@@ -30,6 +30,7 @@ Name = cef-securesphere-db-login
     """\sshost=({src_host}[^\s]{1,2000})""",
     """\sproto=({protocol}[^\s]{1,2000})"""
   ]
-}
+
+
 }
 ```

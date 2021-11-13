@@ -20,6 +20,7 @@ Name = s-hp-print-activity
     """JOB_lab_DocumentName ="(Unspecified|[\s-]{0,2000}({object}[^"]{1,2000}?))\s{0,100}"""",
     """PRINTER_lab_Type="(Unspecified|({activity}[^"]{1,2000}))""",
   ]
-}
+
+
 }
 ```

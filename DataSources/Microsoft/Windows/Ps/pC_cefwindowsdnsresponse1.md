@@ -7,7 +7,7 @@ Name = cef-windows-dns-response-1
   Fields = ${MicrosoftParserTemplates.cef-windows-dns-query-1.Fields}[
     """\s{1,100}({protocol}\S+)\s{1,100}({activity}\S+)\s{1,100}({src_ip}[a-fA-F\d.:]{1,2000})\s{1,100}\S+\s{1,100}(R)? (Q|U)\s{1,100}\[\S+\s{1,100}({response_flags}.+?)\s{1,100}({dns_response_code}\S+)\]\s{1,100}(NULL|({query_type}\S+))\s{1,100}({query}.+?)\s"""
   ]
-}
+
 cef-windows-dns-query-1 = {
   Vendor = Microsoft
   Product = Windows
@@ -28,5 +28,6 @@ cef-windows-dns-query-1 = {
     """\scs3=({query_flags}.+)\scs4=""",
     """\sdvc=({host}[\w\-.]{1,2000})\s""",
     """\sdvchost=({host}[\w\-.]{1,2000})\s""",
-  ]}
+  
+}
 ```

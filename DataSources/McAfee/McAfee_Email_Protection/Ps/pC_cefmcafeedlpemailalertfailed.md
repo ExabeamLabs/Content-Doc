@@ -24,6 +24,7 @@ Name = cef-mcafee-dlp-email-alert-failed
     """\Wattachment\(s\)\\='(|({attachment}[^,']{1,2000})),""",
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

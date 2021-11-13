@@ -3,7 +3,7 @@
 {
 Name = cef-atp-alert-21
   Conditions = [ """CEF""", """|Microsoft|Azure ATP|""", """|MaliciousServiceCreationSecurityAlert|""" ]
-}
+
 cef-atp-alert = {
   Vendor = Microsoft
   Product = Advanced Threat Protection
@@ -23,5 +23,6 @@ cef-atp-alert = {
     """\Wsuser=({user}[^\s]{1,2000})\s""",
     """\Wcs2=({outcome}[^\s]{1,2000})""",
     
-  ]}
+  
+}
 ```

@@ -19,6 +19,7 @@ Name = foxt-file-remove
     """({event_code}sshftl_remove_ok)"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

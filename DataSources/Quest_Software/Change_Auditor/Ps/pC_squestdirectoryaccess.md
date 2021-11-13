@@ -26,6 +26,7 @@ Name = s-quest-directory-access
     """duser=({object}.+?)\s{0,100}(\w+=|$)"""
     """CN\\=.+?({object_ou}OU\\=.+?).\s{0,100}\w+=""",
   ]
-}
+
+
 }
 ```

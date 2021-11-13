@@ -17,6 +17,7 @@ Name = cef-trendmicro-security-alert-3
     """\Wact=({outcome}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """({alert_type}Malware)""",
   ]
-}
+
+
 }
 ```

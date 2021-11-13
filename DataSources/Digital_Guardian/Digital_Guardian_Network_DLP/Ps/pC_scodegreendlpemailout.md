@@ -27,6 +27,7 @@ Name = s-codegreen-dlp-email-out
     """({direction}o)""",
     """action_taken="(?:|({outcome}[^"]{1,2000}))""""
   ]
-}
+
+
 }
 ```

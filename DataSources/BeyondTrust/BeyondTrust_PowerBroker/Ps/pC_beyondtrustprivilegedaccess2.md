@@ -19,6 +19,7 @@ Name = beyondtrust-privileged-access-2
     """RuleName":"(NONE|({event_name}[^"]{1,2000}?))"""",
     ]
     DupFields = [ "directory->process_directory" ]
-}
+
+
 }
 ```

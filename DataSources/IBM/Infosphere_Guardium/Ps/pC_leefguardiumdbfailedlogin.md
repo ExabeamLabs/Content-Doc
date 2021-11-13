@@ -26,6 +26,7 @@ Name = leef-guardium-db-failed-login
     """\Werror=({reason}[^\|]{1,2000}?)("|\s{0,20}$)"""
   ]
   DupFields = [ "db_user->account" ]
-}
+
+
 }
 ```

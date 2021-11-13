@@ -18,6 +18,7 @@ Name = nas-share-access-1
     """from .*?IP:({src_ip}[a-fA-F\d.:]{1,2000})""",
     """accessed the shared ({file_type}folder) \[({share_name}.+?)\]"""
   ]
-}
+
+
 }
 ```

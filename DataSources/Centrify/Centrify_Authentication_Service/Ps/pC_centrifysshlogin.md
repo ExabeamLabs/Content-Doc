@@ -20,6 +20,7 @@ Name = centrify-ssh-login
     """service=({process}.+?)\s\w+=""",
     """EntityName =(.+\\+)?({dest_host}[^"\s]{1,2000})(\s|$)"""
   ]
-}
+
+
 }
 ```

@@ -25,6 +25,7 @@ Name = carbonblack-file-operations
     """\sfile_hash="({file_hash}\w+)"""
   ]
   DupFields = [ "event_code->accesses","directory->process_directory" ]
-}
+
+
 }
 ```

@@ -23,6 +23,7 @@ Name = l-sysmon-process-created
     """,MD5=({md5}[^,]{1,2000})(,|\s{0,100}$)""",
   ]
   DupFields = [ "host->dest_host","directory->process_directory" ]
-}
+
+
 }
 ```

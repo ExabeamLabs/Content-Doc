@@ -18,6 +18,7 @@ Name = securityexpert-badge-access
     """EventName ="({event_name}[^"]{1,2000}?)\s{0,100}"""",
     """ControllerName ="({device_name}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

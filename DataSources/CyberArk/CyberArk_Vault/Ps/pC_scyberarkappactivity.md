@@ -27,6 +27,7 @@ Name = s-cyberark-app-activity
     """;DeviceType="({dest_service}[^"]{1,2000})"""
   ]
   DupFields=[ "file_name->object_value", "file_path->additional_info", "activity->accesses", "host->dest_host" ]
-}
+
+
 }
 ```

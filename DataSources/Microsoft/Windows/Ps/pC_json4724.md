@@ -22,6 +22,7 @@ Name = json-4724
         """"1":"({target_domain}[^"]{1,2000})"""
   ]
   DupFields = [ "host->dest_host" ]  
-}
+
+
 }
 ```

@@ -28,6 +28,7 @@ Name = netscaler-cef-vpn-start
     """ Nat_ip ({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
   DupFields = ["user->account"]
-}
+
+
 }
 ```

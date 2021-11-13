@@ -29,6 +29,7 @@ Name = cef-symantec-web-activity-2
     """requestContext=({referrer}[^\s]{1,2000})\s\w+=""",
     """cn2=({result_code}\d{1,100}) cn2Label=Response Status Code"""
   ]
-}
+
+
 }
 ```

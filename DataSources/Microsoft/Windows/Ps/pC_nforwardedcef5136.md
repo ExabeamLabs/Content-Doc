@@ -23,6 +23,7 @@ Name = n-forwarded-cef-5136
     """nitroObjectID=.*?({object_ou}(OU|ou).+?)(\s{1,100}\w+=|"{0,20}\s{0,100}$)""",
     """nitroTarget_Class=({object_class}.+?)(\s{1,100}\w+=|"{0,20}\s{0,100}$)"""
 ]
-}
+
+
 }
 ```

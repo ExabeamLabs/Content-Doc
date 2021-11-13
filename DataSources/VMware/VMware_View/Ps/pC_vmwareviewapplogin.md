@@ -14,6 +14,7 @@ Name = vmware-view-app-login
     """View User\s{1,100}(({domain}[^\\\s]{1,2000})\\+)?({user}[^\s]{1,2000})""",
     """({app}View)"""
    ]
-}
+
+
 }
 ```

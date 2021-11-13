@@ -20,6 +20,7 @@ Name = q-ccure-badge-access
      """<AdmitCode>\s{0,100}({outcome_reason}.+?)\s{0,100}</AdmitCode>""",
      """<RejectCode>\s{0,100}({outcome_reason}.+?)\s{0,100}</RejectCode>"""
    ]
- }
+ 
+
 }
 ```

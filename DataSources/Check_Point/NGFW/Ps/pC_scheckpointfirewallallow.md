@@ -3,7 +3,7 @@
 {
 Name = s-checkpoint-firewall-allow
   Conditions = [ """product=VPN-1 & FireWall-1""", """|i/f_name=""", """|action=allow""" ]
-}
+
 s-checkpoint-firewall = {
   Vendor = Check Point 
   Product = NGFW
@@ -26,5 +26,6 @@ s-checkpoint-firewall = {
     """\|src_machine_name=({src_host}[^\|]{1,2000})""",
     """\|src_user_name=[^(]{1,2000}\(({user}[^)]{1,2000})""",
     """\|user=[^(]{1,2000}\(({user}[^)]{1,2000})"""
-  ]}
+  
+}
 ```

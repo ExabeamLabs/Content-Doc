@@ -5,7 +5,7 @@ Name = wazuh-ssh-failed-login-2
   Product = Unix
   DataType = "authentication-failed"
   Conditions = [ """"decoder.name":"sshd"""", "Too many authentication failures for", """"type":"wazuh-alerts"""" ]
-}
+
 wazuh-ssh-login {
     Vendor = Unix
     Lms = Direct
@@ -31,5 +31,6 @@ wazuh-ssh-login {
       """"agent.id":"({agent_id}[^"]{1,2000})"""
       """"data.srcip":"({src_ip}[:0-9a-fA-F\.]{1,2000})"""
     ]
-    DupFields = ["dest_host->original_dest_host", "description->event_name"]}
+    DupFields = ["dest_host->original_dest_host", "description->event_name"
+}
 ```

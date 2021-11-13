@@ -15,6 +15,7 @@ Name = cef-f5-vpn-end
     """\WSession-ID:\s{0,100}(|({session_id}[^\s,]{1,2000})),""",
     """\WFramed-IP-Address:\s{0,100}(|({src_translated_ip}[A-Fa-f:\d.]{1,2000})),""",
   ]
-}
+
+
 }
 ```

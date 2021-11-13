@@ -16,6 +16,7 @@ Name = cef-paloalto-firewall-global-protect
      """suser=({user}.+?)\s""",
      """cat=({object}.+?)\snitro"""
    ]
-}
+
+
 }
 ```

@@ -24,6 +24,7 @@ Name = emc-syslog-4624
     """Key Length:\s{1,100}({key_length}\d{1,2000})\s"""
   ]
   DupFields = [ "host->dest_ip" ]
-}
+
+
 }
 ```

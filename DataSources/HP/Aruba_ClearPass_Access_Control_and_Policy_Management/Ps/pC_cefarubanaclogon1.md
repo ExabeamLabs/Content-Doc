@@ -17,6 +17,7 @@ Name = cef-aruba-nac-logon-1
     """\Wdst=({dest_ip}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\WdestinationServiceName =({network}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
-}
+
+
 }
 ```

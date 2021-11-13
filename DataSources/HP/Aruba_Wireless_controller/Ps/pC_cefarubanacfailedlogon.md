@@ -19,6 +19,7 @@ Name = cef-aruba-nac-failed-logon
     """\Wdpriv=({access_type}.+?)\s{1,100}([\w\.]{1,2000}=|$)""",
     """\Wdmac=({dest_mac}.+?)\s{1,100}([\w\.]{1,2000}=|$)""",
   ]
-}
+
+
 }
 ```

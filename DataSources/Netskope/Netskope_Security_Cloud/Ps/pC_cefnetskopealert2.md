@@ -29,6 +29,7 @@ Name = cef-netskope-alert-2
     """"file_path"{1,20}:"{1,20}({file_path_at}[^"]{1,2000})"""",
     """"q_shared_with"{1,20}:"{1,20}({shared_with_at}[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

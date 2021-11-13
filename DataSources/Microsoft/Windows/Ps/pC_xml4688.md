@@ -36,6 +36,7 @@ Name = xml-4688
     """<Data Name ='ParentProcessName'>({parent_process}({parent_directory}[^<]{1,2000}[\\\/]{1,2000})?({parent_process_name}[^<]{1,2000}))<\/Data>"""
   ]
   DupFields = [ "host->dest_host","process_guid->pid","directory->process_directory","process->path" ]
-}
+
+
 }
 ```

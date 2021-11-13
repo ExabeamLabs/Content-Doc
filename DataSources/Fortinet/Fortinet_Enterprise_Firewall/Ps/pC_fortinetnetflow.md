@@ -27,6 +27,7 @@ Name = fortinet-netflow
      """\Wtraffic_locality"{0,20}:"{0,20}\s{0,100}(|({locality}[^",]{0,2000}?))\s{0,100}("|,|$)""",
      """"src_hostname":"({src_host}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

@@ -21,6 +21,7 @@ Name = s-crowdstrike-failed-logon
     """"name":"({event_name}[^"]{1,2000})"""",
     """"LogonDomain":"({domain}[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

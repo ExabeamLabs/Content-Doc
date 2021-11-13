@@ -35,6 +35,7 @@ Name = cef-duo-app-activity
     """"os":\s{0,100}"({os}[^"]{1,2000})"""",
   ]
     DupFields = ["object->device", "service->object"]
-}
+
+
 }
 ```

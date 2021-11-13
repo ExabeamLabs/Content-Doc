@@ -23,6 +23,7 @@ Name = s-aws-cloudtrail-login-json
     """"awsRegion":"({region}[^"]{1,2000})"""",
     """\srequestClientApplication=({app}[^\s]{1,2000})\s""",
   ]
-}
+
+
 }
 ```

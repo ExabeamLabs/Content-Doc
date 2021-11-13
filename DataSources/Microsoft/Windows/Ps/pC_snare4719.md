@@ -21,6 +21,7 @@ Name = snare-4719
     """\s{1,100}Changes:\s{1,100}({policy}.+?)\s{1,100}\d{1,100}"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

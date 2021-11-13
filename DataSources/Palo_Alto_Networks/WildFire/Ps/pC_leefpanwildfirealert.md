@@ -3,7 +3,7 @@
 {
 Name = leef-pan-wildfire-alert
   Conditions = [ """|Palo Alto Networks|PAN-OS""", """|Subtype=wildfire""" ]
-}
+
 leef-pan-alert = {
   Vendor = Palo Alto Networks
   Product = WildFire
@@ -30,5 +30,6 @@ leef-pan-alert = {
     """usrName =({domain}[^\\\|]{1,2000})\\({user}[^\s\|]{1,2000})""",
     """\|SourceZone=({src_network_zone}[^\|]{1,2000}?)\|""",
     """\|DestinationZone=({dest_network_zone}[^\|]{1,2000}?)\|""",
-    ]}
+    
+}
 ```

@@ -3,7 +3,7 @@
 {
 Name = crowdstrike-file-write-3
     Conditions = [ """"event_simpleName":"AsepFileChange"""" ]
-  }
+  
 crowdstrike-file-operations = {
     Vendor = CrowdStrike
     Product = Falcon
@@ -26,5 +26,6 @@ crowdstrike-file-operations = {
       """UserName":"({user}[^"]{1,2000})"""",
       """"ContextProcessId":"({process_guid}[^"]{1,2000})"""",
       """"aip":"({src_ip}[a-fA-F\d:.]{1,2000})""""
-    ]}
+    
+}
 ```

@@ -24,6 +24,7 @@ Name = emc-syslog-4688
     """TaskCategory=({activity_type}Process Creation)"""
     ]
   DupFields = [ "host->dest_ip","process_guid->pid","directory->process_directory" ]
-}
+
+
 }
 ```

@@ -19,6 +19,7 @@ Name = q-member-added-2008
     """Member:.*?Account Name:\s{0,100}(?:-|({account_dn}(CN|cn)=.+?,({account_ou}(OU|ou).+?(DC|dc)=[\w-]{1,2000})))?\s{0,100}Group:\s{0,100}Security ID:\s{0,100}({group_id}.+?)\s{0,100}(Group|Account) Name:\s{0,100}({group_name}.+?)?\s{0,100}(Group|Account) Domain:\s{0,100}({group_domain}.+?)\s{0,100}Additional Information:""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

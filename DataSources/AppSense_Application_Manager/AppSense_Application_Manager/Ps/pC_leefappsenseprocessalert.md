@@ -19,6 +19,7 @@ Name = leef-appsense-process-alert
     """sev=({alert_severity}\d{1,100})"""
   ]
   DupFields = ["dest_host->host"]
-}
+
+
 }
 ```

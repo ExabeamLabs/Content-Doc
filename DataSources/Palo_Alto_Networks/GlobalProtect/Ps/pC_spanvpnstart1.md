@@ -19,6 +19,7 @@ Name = s-pan-vpn-start-1
     """SYSTEM,({vpn_client}[^,]{1,2000}),""",
     """Source region:\s{0,100}({src_country}[^,]{1,2000})?""",
   ]
-}
+
+
 }
 ```

@@ -20,6 +20,7 @@ Name = cef-dropbox-app-activity-9
     """"assets":\s{0,100}\[[^\]]{0,2000}?"display_name":\s{0,100}"({object}[^"]{1,2000})"""",
     """"assets":\s{0,100}\[[^\]]{0,2000}?"contextual":\s{0,100}"({resource}[^"]{1,2000})""""
   ]
- }
+ 
+
 }
 ```

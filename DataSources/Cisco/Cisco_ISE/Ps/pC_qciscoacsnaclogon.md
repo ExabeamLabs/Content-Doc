@@ -23,6 +23,7 @@ Name = q-cisco-acs-nac-logon
     """,\s{0,100}SelectedAuthorizationProfiles=({access_type}[^,]{1,2000})""",
     """,\s{0,100}AuthenticationMethod=({auth_type}[^,]{1,2000})""",
   ]
-}
+
+
 }
 ```

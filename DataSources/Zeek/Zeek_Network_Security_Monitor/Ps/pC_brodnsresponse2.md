@@ -24,6 +24,7 @@ Name = bro-dns-response-2
      """answers="({answers}[^"]{1,2000})""",
      """answers=({response}.+?)\s\w+=(\s|")"""
   ] 
-}
+
+
 }
 ```

@@ -20,6 +20,7 @@ Name = mcafee-siem-4776
       """"src_ip":"({src_ip}[^"]{1,2000})""",
     ]
     DupFields = [ "host->dest_host" ]
-  }
+  
+
 }
 ```

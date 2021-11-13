@@ -23,6 +23,7 @@ Name = mcafee-siem-4624
       """"ObjectID":"({auth_package}[^"]{1,2000})""",
     ]
     DupFields = [ "host->dest_host" ]
-  }
+  
+
 }
 ```

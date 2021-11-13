@@ -28,6 +28,7 @@ Name = cef-netskope-alert
     """"site":"({site_at}[^"]{1,2000})""""
   ]
   DupFields = ["process->process_name"]
-}
+
+
 }
 ```

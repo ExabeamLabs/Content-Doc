@@ -7,7 +7,7 @@ Name = cef-pan-vpn-login-failed-1
   Fields = ${PaloAltoParserTemplates.cef-pan-vpn-event.Fields}[
     """\Wreason=({failure_reason}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
-}
+
 cef-pan-vpn-event = {
   Vendor = Palo Alto Networks
   Product = GlobalProtect
@@ -22,5 +22,6 @@ cef-pan-vpn-event = {
     """User name:\s{1,100}(({domain}[^\\]{1,2000})\\+)?({user}[\w.'\-\\$]{1,2000}?)\.?(\s|,|"|$)""",
     """User name:\s{1,100}({user_email}[^@\s]{1,2000}@[^\s,]{1,2000}),""",
     """Client OS( version)?:\s{1,100}({os}[^":]{1,2000})(,|\.)"""
-  ]}
+  
+}
 ```

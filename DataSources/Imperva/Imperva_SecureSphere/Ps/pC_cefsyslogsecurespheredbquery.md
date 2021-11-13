@@ -25,6 +25,7 @@ Name = cef-syslog-securesphere-db-query
     """\sshost=({src_host}[^\s]{1,2000})""",
     """\sdhost=({dest_host}[^\s]{1,2000})"""
   ]
-}
+
+
 }
 ```

@@ -16,6 +16,7 @@ Name = cb-defense-app-login
     """description":"({event_name}[^"]{1,2000})""",
     """({app}CB Defense)"""
   ]
-}
+
+
 }
 ```

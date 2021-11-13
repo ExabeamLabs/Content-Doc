@@ -35,6 +35,7 @@ Name = forcepoint-proxy-1
 	    """\shttp_proxy_status_code=({result_code}\d{1,100})""",
       """\WloginID=(-|({user}[^\s]{1,2000}))""",
     ]
-  }
+  
+
 }
 ```

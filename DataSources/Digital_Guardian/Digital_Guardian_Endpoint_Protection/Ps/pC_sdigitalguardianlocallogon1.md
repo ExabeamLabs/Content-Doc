@@ -3,7 +3,7 @@
 {
 Name = s-digitalguardian-local-logon-1
   Conditions = [ """Operation="23"""" , """Agent_UTC_Time=""" ]
-}
+
 splunk-digitalguardian-local-logon = {
   Vendor = Digital Guardian
   Product = Digital Guardian Endpoint Protection
@@ -19,5 +19,6 @@ splunk-digitalguardian-local-logon = {
     """(\s|exabeam_\w+=)Application="(?:|({process_name}[^"]{1,2000}))"""",
     """(\s|exabeam_\w+=)Operation="(?:|({event_code}[^"]{1,2000}))"""",
   ]
-  DupFields = [ "host->dest_host" ]}
+  DupFields = [ "host->dest_host" 
+}
 ```

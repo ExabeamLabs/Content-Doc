@@ -29,6 +29,7 @@ Name = airlock-firewall-network-connection
     """"resp_size":"({bytes_out}\d{1,100})""",
   ]
   DupFields = [ "action->outcome" ]
-}
+
+
 }
 ```

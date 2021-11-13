@@ -16,6 +16,7 @@ Name = unix-auth-event-2
     """group=({group}[^\s"]{1,2000})""",
     """auth=({auth_method}[^\s]{1,2000})""",
   ]
-}
+
+
 }
 ```

@@ -25,6 +25,7 @@ Name = ad-audit-4723
     """EVENT_TYPE_TEXT\s{0,100}=\s{0,100}({outcome}[^\s]{1,2000})""",
     ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

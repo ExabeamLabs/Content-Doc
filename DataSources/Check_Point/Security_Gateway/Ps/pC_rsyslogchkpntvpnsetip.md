@@ -9,6 +9,7 @@ Name = r-syslog-chkpnt-vpn-set-ip
   TimeFormat = "ddMMMyyyy  HH:mm:ss"
   Conditions = [ """%CHKPNT-6-031085: decrypt""" ]
   Fields = [
-    """decrypt,([^,]{0,2000}
+    """decrypt,([^,]{0,2000
+
 }
 ```

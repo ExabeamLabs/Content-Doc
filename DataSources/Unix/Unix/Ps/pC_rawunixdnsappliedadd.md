@@ -13,6 +13,7 @@ Name = raw-unix-dns-appliedadd
     """applied ADD for '({dest_host}[^']{1,2000}).+? IN A ({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
   DupFields = [ "dest_host->user" ]
-}
+
+
 }
 ```

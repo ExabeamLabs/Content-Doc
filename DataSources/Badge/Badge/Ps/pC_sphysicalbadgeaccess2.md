@@ -16,6 +16,7 @@ Name = s-physical-badge-access-2
       """exabeam_raw=[^\s]{1,2000}\s{1,100}[^\s]{1,2000}\s{1,100}\d{1,100}\s{1,100}\d{1,100}\s{1,100}[^\s]{1,2000}\s{1,100}[^\s]{1,2000}\s{1,100}({location_city}.+?)\s{1,100}\w+-\w+""",
       """({outcome}CardAdmitted)"""
     ]
-  }
+  
+
 }
 ```

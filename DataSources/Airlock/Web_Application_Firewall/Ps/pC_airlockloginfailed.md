@@ -8,7 +8,7 @@ Name = airlock-login-failed
   Fields = ${AirlockTemplates.AirlockEvent.Fields}[
     """\sremarks="({failure_reason}[^"]{1,2000})"""", 
   ]
-}
+
 AirlockEvent = {
     Vendor = Airlock
     Product = Web Application Firewall 
@@ -33,5 +33,6 @@ AirlockEvent = {
       """\sfile_path="(\w+:_)?({file_path}({file_parent}(?:[^";]{1,2000})?[\\\/;])?({file_name}[^\\\/";]{1,2000}?(\.({file_ext}[^\\\/\.;"]{1,2000}))))"""
       """\sfile_path="(\w+:_)?({file_path}({file_parent}(?:[^";]{1,2000})?[\\\/;])?({file_name}[^\\\/";]{1,2000}(\.({file_ext}[^\\\/\.;"]{1,2000}))))""" 
     ]
-    DupFields = ["host->dest_host"]}
+    DupFields = ["host->dest_host"
+}
 ```

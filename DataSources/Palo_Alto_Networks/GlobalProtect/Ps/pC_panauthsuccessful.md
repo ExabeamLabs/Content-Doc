@@ -9,6 +9,7 @@ Name = pan-auth-successful
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
   Conditions = [ """,SYSTEM,auth,""", """,auth-success,""" ]
   Fields = [
-    """SYSTEM,auth,[^,]{1,2000}
+    """SYSTEM,auth,[^,]{1,2000
+
 }
 ```

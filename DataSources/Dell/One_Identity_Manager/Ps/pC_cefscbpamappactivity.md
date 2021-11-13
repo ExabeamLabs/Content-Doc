@@ -20,6 +20,7 @@ Name = cef-scbpam-app-activity
     """\sOtherInfo:\s{0,100}({additional_info}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """({app}PAM)""",
   ]
-}
+
+
 }
 ```

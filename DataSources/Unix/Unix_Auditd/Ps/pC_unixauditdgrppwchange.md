@@ -17,6 +17,7 @@ Name = unix-auditd-grp-pw-change
     """\sgrp="({group_name}[^"]{1,2000})"""",
   ]
   DupFields = ["group_name->group"]
-}
+
+
 }
 ```

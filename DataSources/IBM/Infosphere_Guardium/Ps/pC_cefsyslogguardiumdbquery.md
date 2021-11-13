@@ -22,6 +22,7 @@ Name = cef-syslog-guardium-db-query
     """\scn1=({response_size}\d{1,100})"""
   ]
   DupFields = [ "db_user->account" ]
-}
+
+
 }
 ```

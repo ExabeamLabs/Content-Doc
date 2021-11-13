@@ -34,6 +34,7 @@ Name = s-aws-cloudtrail-s3-activity
          """resources":[^@]{0,2000}?"ARN":\s{1,100}"({file_name}[^"]{1,2000})""",
          """\srequestClientApplication=({app}[^\s]{1,2000})\s""",
  ]
-}
+
+
 }
 ```

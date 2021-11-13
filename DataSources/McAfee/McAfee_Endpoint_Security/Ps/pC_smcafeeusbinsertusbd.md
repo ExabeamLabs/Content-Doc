@@ -3,7 +3,7 @@
 {
 Name = s-mcafee-usb-insert-usbd
   Conditions = [ """DeviceClassName ="Universal Serial Bus devices"""", """InsertionTime="""", """destination="""", """RulesToDisplay="""" ]
-}
+
 splunk-mcafee-usb-insert-activity = {
       Vendor = McAfee
       Product = McAfee Endpoint Security
@@ -179,5 +179,6 @@ McAfeeParsers = [
       """app=SMTP.+?cs2="{0,20}({subject}[^"]{0,2000})""",
       """app=SMTP.+?fname=(?:Unknown|({attachment}.+?))\s{1,100}$""",
       """app=HTTP.+?fname=({target}.+?)\s{1,100}$""",
-    ]}
+    
+}
 ```

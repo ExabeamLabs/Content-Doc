@@ -3,7 +3,7 @@
 {
 Name = cef-egnyte-app-activity-8
   Conditions = [ """CEF:""", """destinationServiceName =Egnyte""", """ext_action=Password Change""" ]
-}
+
 cef-egnyte-app-activity = {
   Vendor = Egnyte
   Product = Egnyte
@@ -19,5 +19,6 @@ cef-egnyte-app-activity = {
     """"action":"({activity}[^"]{1,2000})""",
     """\Wext_actionInfo=(|({additional_info}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wfname=({object}[^=]{1,2000}?)\s{1,100}\w+="""
-  ]}
+  
+}
 ```

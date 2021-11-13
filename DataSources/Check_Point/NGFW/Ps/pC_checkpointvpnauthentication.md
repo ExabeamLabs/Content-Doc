@@ -20,6 +20,7 @@ Name = checkpoint-vpn-authentication
     """\WUser="{1,20}(({user_fullname}[^\(]{1,2000})\s\()?(({user_email}[^@"]{1,2000}@[^"]{1,2000})|({user}[^"\)]{1,2000}))\)?"{1,20} auth_method="""
           
     ]
-}
+
+
 }
 ```

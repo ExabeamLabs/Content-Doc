@@ -20,6 +20,7 @@ Name = s-net2door-badge-access
      """"userid"{0,20}:"{0,20}({employee_id}[^",]{1,2000})"{0,20}(,|$)""",
      """\(({direction}[^\)]{1,2000})\)"""
    ]
- }
+ 
+
 }
 ```

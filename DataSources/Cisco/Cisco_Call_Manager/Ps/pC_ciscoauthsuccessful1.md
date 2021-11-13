@@ -17,6 +17,7 @@ Name = cisco-auth-successful-1
     """Node ID=({dest_host}[^\]]{1,2000})""",
     """Login Interface=({app}[^\]]{1,2000})""",
   ]
-}
+
+
 }
 ```

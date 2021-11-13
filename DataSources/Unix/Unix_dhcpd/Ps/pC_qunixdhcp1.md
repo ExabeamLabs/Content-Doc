@@ -15,6 +15,7 @@ Name = q-unix-dhcp-1
     """({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),Renewed,(|({dest_host}[^,]{1,2000}))"""
   ]
   DupFields = [ "dest_host->user" ]
-}
+
+
 }
 ```

@@ -20,6 +20,7 @@ Name = onespan-failed-logon
     """\{Input Details:.+?\{Domain Name\s{0,100}:\s{0,100}({domain}[^\}]{1,2000})""",
     """\{Reason\s{0,100}:\s{0,100}({failure_reason}[^\}]{1,2000})""",
   ]
-}
+
+
 }
 ```

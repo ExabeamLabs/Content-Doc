@@ -3,7 +3,7 @@
 {
 Name = huawei-network-alert
   Conditions = ["""SignName =""" , """SignId=""" , """Os=""" ,  """ASSOC/"""]
-}
+
 huawei-ids = {
   Vendor = Huawei
   Product = Unified Security Gateway
@@ -24,5 +24,6 @@ huawei-ids = {
      """Category=({alert_type}[^,]{1,2000})""",
      """Policy="({policy}[^"]{1,2000})""",
      """User="(?!\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(?:unknown|({user_email}[^@"]{1,2000}@[^@"]{1,2000})|({user}[^"]{1,2000}))""""
-  ]}
+  
+}
 ```

@@ -32,6 +32,7 @@ Name = leef-incapsula-web-activity
     """cn1=({result_code}\d{1,100})""",
     """qstr=({uri_query}[^\s]{1,2000})""",
    ]
-}
+
+
 }
 ```

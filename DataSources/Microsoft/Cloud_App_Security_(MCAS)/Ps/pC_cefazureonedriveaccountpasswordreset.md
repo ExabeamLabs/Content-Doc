@@ -4,7 +4,7 @@
 Name = cef-azure-onedrive-account-password-reset
   DataType = "account-password-reset"
   Conditions = [ """CEF:""", """|MCAS|SIEM_Agent|""", """|Reset password|""" ]
-}
+
 cef-azure-onedrive-account-password = {
   Vendor = Microsoft
   Product = Cloud App Security (MCAS)
@@ -21,5 +21,6 @@ cef-azure-onedrive-account-password = {
     """\Wsuser=({user_email}[^@\s]{1,2000}@[^@\s]{1,2000})\s{1,100}(\w+=|$)""",
     """\Wc6a1=\s{0,100}({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """\Wmsg=({additional_info}.*?)\s{1,100}(\w+=|$)""",
-  ]}
+  
+}
 ```

@@ -16,6 +16,7 @@ Name = smartdashboard-app-login
     """\|Additional Info=({additional_info}[^\|]{1,2000})\|""",
     """\|product=({app}SmartDashboard)"""
   ]
-}
+
+
 }
 ```

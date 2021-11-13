@@ -29,6 +29,7 @@ Name = s-nac-failed-logon
     """, SSID=({ssid}[^,]{1,2000})""",
     """, AuthenticationIdentityStore=({auth_server}[^,]{1,2000})""",
   ]
-}
+
+
 }
 ```

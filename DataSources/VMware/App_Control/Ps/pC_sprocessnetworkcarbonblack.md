@@ -23,6 +23,7 @@ Name = s-process-network-carbonblack
     """remote_port":({dest_port}[^\,"]{1,2000})""",
     """domain":"({web_domain}[^"]{1,2000})"""
   ]
-}
+
+
 }
 ```

@@ -24,6 +24,7 @@ Name = f5-network-connection
     """\Wip_protocol="({protocol}[^"]{1,2000})""",
     """\Werrdefs_msg_name="({event_name}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

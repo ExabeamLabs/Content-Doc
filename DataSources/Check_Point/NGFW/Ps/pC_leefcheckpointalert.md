@@ -44,6 +44,7 @@ Name = leef-checkpoint-alert
     """\Wresource_probing=({ips_desc}.+?)(\s{1,100}\w+:?=|\s{0,100}$)""",
   ]
   DupFields = [ "event_name->protection_name" ]
-}
+
+
 }
 ```

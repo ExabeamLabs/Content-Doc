@@ -22,6 +22,7 @@ Name = cisco-asa-connection-stop
     """%ASA-.*?\((({domain}[^\\\/]{1,2000})[\\\/]{1,2000})?(?:({user_email}[^@\\\/]{1,2000}@[^@\\\/]{1,2000}?)|({user}[^\\\/]{1,2000}?))\)"""
   ]
   DupFields = [ "event_name->activity" ]
-}
+
+
 }
 ```

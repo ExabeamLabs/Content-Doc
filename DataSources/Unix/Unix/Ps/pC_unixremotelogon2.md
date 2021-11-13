@@ -16,6 +16,7 @@ Name = unix-remote-logon-2
     """logged in from ({src_ip}[a-fA-F:\d\.]{1,2000})\."""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

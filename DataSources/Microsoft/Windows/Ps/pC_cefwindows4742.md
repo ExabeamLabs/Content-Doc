@@ -24,6 +24,7 @@ Name = cef-windows-4742
     """"subjectLogonId":"({logon_id}[^"\s]{1,2000}?)\s{0,100}""""
   ]
    DupFields = ["host-> dest_host"]
-}
+
+
 }
 ```

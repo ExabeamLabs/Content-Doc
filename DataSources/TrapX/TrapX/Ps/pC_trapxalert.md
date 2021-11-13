@@ -20,6 +20,7 @@ Name = trapx-alert
      """\sexternalId=({alert_id}\d{1,100})""",
      """exabeam_host=({host}[^\s]{1,2000})""",
   ]
-}
+
+
 }
 ```

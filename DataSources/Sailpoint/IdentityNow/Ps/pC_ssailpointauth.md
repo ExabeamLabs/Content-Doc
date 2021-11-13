@@ -6,7 +6,7 @@ Name = s-sailpoint-auth
   Fields = ${SailPointParserTemplates.s-sailpoint-activity.Fields} [
     """"info":\s{0,100}"((NONE)|({outcome}[^"]{1,2000}))""""
   ]
-}
+
 s-sailpoint-activity = {
   Vendor = Sailpoint
   Product = IdentityNow
@@ -27,5 +27,6 @@ s-sailpoint-activity = {
     """"source":\s{0,100}"((unknown|Not Available)|({user}[^\s,"]{1,2000}))"""",
     """"id":\s{0,100}"({fingerprint}[^"]{1,2000})",""",
     """"type":\s{0,100}"((NONE)|({event_subtype}[^"]{1,2000}))""""
-  ]}
+  
+}
 ```

@@ -41,6 +41,7 @@ Name = syslog-pulsesecure-vpn-connect
     """\Wmsg="({additional_info}[^"]{1,2000})""",
   ]
   DupFields = ["user->account"]
-}
+
+
 }
 ```

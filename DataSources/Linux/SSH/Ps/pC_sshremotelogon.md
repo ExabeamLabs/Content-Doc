@@ -26,6 +26,7 @@ Name = ssh-remote-logon
     """PROCESS_ID:\s{1,100}"{1,20}(null|unknown|({pid}[^"]{1,2000}))"{1,20}\s"""
   ]
   DupFields = [ "event_name->event_type" ]
-}
+
+
 }
 ```

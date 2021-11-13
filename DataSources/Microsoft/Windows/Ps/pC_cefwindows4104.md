@@ -21,6 +21,7 @@ Name = cef-windows-4104
     """Creating Scriptblock text\s{0,100}\([^\)]{1,2000}\):\s{0,100}({scriptblock_text}.+?)\s{0,100}ScriptBlock ID:""",
   ]
   DupFields = ["event_id->event_code"]
-}
+
+
 }
 ```

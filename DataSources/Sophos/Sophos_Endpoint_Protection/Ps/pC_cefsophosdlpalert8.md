@@ -4,7 +4,7 @@
 Name = cef-sophos-dlp-alert-8
   DataType = "dlp-alert"
   Conditions = [ """CEF:""", """ext_type=Event::Endpoint::Denc::EncryptionSuspendedEvent""" ]
-}
+
 cef-sophos-security-alert-1 {
   Vendor = Sophos
   Product = Sophos Endpoint Protection
@@ -33,5 +33,6 @@ cef-sophos-security-alert-1 {
     """fname=({process}[^\s]{1,2000}\\({process_name}[^\s]{1,2000}))""", 
     """ext_source=[^\\]{1,2000}\\({user}[^\s]{1,2000})""",
     """CEF:\d{1,100}\|([^\|]{1,2000}\|){4}({category}[^\|]{1,2000})"""
-  ]}
+  
+}
 ```

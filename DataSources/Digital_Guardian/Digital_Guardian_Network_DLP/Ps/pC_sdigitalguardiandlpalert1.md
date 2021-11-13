@@ -8,7 +8,7 @@ Name = s-digitalguardian-dlp-alert-1
     """[^_]Block_Code="({alert_type}[^"]{1,2000})""",
     """[^_]Bytes_Read="(?:|({bytes}[^"]{1,2000}))"""",
   ]
-}
+
 splunk-digitalguardian-dlp-alert = {
   Vendor = Digital Guardian
   Product = Digital Guardian Network DLP
@@ -44,5 +44,6 @@ splunk-digitalguardian-dlp-alert = {
       {EntityType="device", Name ="src_address", Fields=["src_host->host_name"]},
       {EntityType="device", Name ="dest_address", Fields=["dest_ip->ip_address"]},
       {EntityType="user", Name ="windows_id", Fields=["user->windows_id"]}
-    ]}
+    
+}
 ```

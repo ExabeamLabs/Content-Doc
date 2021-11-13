@@ -4,7 +4,7 @@
 Name = jp-share-access-5140
   DataType = "share-access"
   Conditions = [ """5140""", """ネットワーク共有オブジェクトにアクセスしました。""" ]
-}
+
 jp-event = {
   Vendor = Microsoft
   Product = Windows
@@ -21,5 +21,6 @@ jp-event = {
     """\sアカウント名:\s{0,100}({user}[^:]{1,2000}?)\s{0,100}アカウント ドメイン:""",
     """\sアカウント ドメイン:\s{0,100}({domain}[^:]{1,2000}?)\s{0,100}ログオン ID:""",
     """\sログオン ID:\s{0,100}({logon_id}\S+)""",
-  ]}
+  
+}
 ```

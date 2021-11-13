@@ -26,6 +26,7 @@ Name = xml-5157
     """<Data Name(\\)?='LayerName'>({layer_name}[^<]{1,2000})"""
   ]
   DupFields = [ "host->local_asset" ]
-}
+
+
 }
 ```

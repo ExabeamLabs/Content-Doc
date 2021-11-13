@@ -30,6 +30,7 @@ Name = fortinet-web-activity-2
     """\sad.agent=({user_agent}[^=]{1,2000}?)\s{1,100}[\w.]{1,2000}=""",
     """requestContext=({category}[^=]{1,2000}?)\s{1,100}([\w.]{1,2000}=|$)"""
   ]
-}
+
+
 }
 ```

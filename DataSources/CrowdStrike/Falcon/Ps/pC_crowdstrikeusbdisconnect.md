@@ -11,7 +11,7 @@ Name = crowdstrike-usb-disconnect
   """"DeviceInstanceId":"({device_id}[^"]{1,2000})"""
   """"DevicePropertyDeviceDescription":"({device_type}[^"]{1,2000})"""
   ]
-}
+
 cef-crowdstrike-app-activity-temp = {
   Vendor = CrowdStrike
   Product = Falcon
@@ -30,5 +30,6 @@ cef-crowdstrike-app-activity-temp = {
     """"UserName":"({user}[^"]{1,2000}?)""""
     """"aip":"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""""
     """"ClientComputerName":"({src_host}[^"]{1,2000})"""
-  ]}
+  
+}
 ```

@@ -23,6 +23,7 @@ Name = cisco-esa-dlp-alert-1
     """\Wact=({action}[^=]{1,2000}?)\s{0,100}\w+="""
   ]
   DupFields = [ "sender->user_email", "action->outcome" ]
-}
+
+
 }
 ```

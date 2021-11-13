@@ -16,6 +16,7 @@ Name = ovirt-app-activity-23
     """EVENT_ID:.*? Activation of host ({object}[^\s"]{1,2000}) initiated by ({user}[^\s\(\)]{1,2000}?)(\)|\s|\.\s|\.$)""",
     """({app}ovirt)"""
   ]
-}
+
+
 }
 ```

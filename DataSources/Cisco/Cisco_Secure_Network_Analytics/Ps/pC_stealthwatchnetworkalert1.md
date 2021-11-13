@@ -27,6 +27,7 @@ Name = stealthwatch-network-alert-1
       """\|protocol=(|({protocol}[^\|]{1,2000}))\|""",
       """\|alert_id=({alert_id}[^\|]{1,2000}?)(\||\s{0,100}$)""",
     ]
-  }
+  
+
 }
 ```

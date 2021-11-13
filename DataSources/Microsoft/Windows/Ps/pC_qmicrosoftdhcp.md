@@ -15,6 +15,7 @@ Name = q-microsoft-dhcp
     """Host Name =({dest_host}[^\s]{1,2000})"""
   ]
   DupFields = [ "dest_host->user" ]
-}
+
+
 }
 ```

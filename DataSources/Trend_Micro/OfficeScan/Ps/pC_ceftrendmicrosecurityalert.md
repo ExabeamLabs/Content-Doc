@@ -4,7 +4,7 @@
 Name = cef-trendmicro-security-alert
   Lms = ArcSight
   Conditions = [ """|Trend Micro|Deep Security Manager|""","cat=" ]
-}
+
 trendmicro-security-alert = {
   Vendor = Trend Micro
   Product = OfficeScan
@@ -19,5 +19,6 @@ trendmicro-security-alert = {
     """\Wdvchost=({host}.+?)\s{0,100}(\w+=|$)""",
     """\WfilePath=({malware_url}.+?)\s{0,100}(\w+=|$)""",
 	]
-  DupFields = [ "threat_category->alert_type", "host->src_host" ]}
+  DupFields = [ "threat_category->alert_type", "host->src_host" 
+}
 ```

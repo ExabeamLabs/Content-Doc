@@ -23,6 +23,7 @@ Name = cef-mcafee-epo-dlp-alert
         """\WcategoryOutcome=[\\\/]{0,2000}({outcome}[^\\\/]{1,2000}?)\s{0,100}(\w+=|$)""",
         """\Wsproc=({additional_info}.+?)\s{0,100}(\w+=|$)"""
       ]
-    }
+    
+
 }
 ```

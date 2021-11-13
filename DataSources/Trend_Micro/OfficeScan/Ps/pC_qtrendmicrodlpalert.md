@@ -18,6 +18,7 @@ Name = q-trendmicro-dlp-alert
         """Channel:\s{0,100}({protocol}.+?)\s{1,100}\w+:""",
         """Rule:\s{0,100}({alert_name}.+?)\s{0,100}$"""
        ]
-}
+
+
 }
 ```

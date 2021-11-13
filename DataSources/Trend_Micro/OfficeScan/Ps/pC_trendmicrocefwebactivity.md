@@ -20,6 +20,7 @@ Name = trendmicro-cef-web-activity
     """\Wshost=({src_host}[\w\-.]{1,2000})""",
     """\WdeviceFacility=({activity}.+?)\s{1,100}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

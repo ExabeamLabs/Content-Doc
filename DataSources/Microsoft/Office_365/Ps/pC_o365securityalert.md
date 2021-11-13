@@ -20,6 +20,7 @@ Name = o365-security-alert
    """requestClientApplication=({process}.*?)\s\w+="""
   ]
   DupFields = ["process->process_name"]
-}
+
+
 }
 ```

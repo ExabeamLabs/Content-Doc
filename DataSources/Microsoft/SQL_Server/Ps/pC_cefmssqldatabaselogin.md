@@ -18,6 +18,7 @@ Name = cef-mssql-database-login
     """\srt=({time}\d{1,100})""",
     """\scategoryOutcome=/({outcome}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
-}
+
+
 }
 ```

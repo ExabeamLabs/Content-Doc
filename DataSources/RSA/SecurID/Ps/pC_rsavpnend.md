@@ -19,6 +19,7 @@ Name = rsa-vpn-end
     """({dest_ip}[a-fA-F\d.:]{1,2000})(\s{1,100}\S+){2}\s{1,100}USER_SESSION_REMOVED_TIMEOUT"""
   ]
   DupFields = ["host->dest_host"]
-}
+
+
 }
 ```

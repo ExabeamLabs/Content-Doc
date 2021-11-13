@@ -21,6 +21,7 @@ Name = s-honeywell-physical-badge-access
       """exabeam_raw=([^\|]{0,2000}\|){13}({location_area}[^\|]{1,2000}?)(\||\s{0,100}$)""",
     ]
     DupFields = ["location_area->location_building"]
-  }
+  
+
 }
 ```

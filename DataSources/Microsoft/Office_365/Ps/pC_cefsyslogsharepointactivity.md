@@ -23,6 +23,7 @@ Name = cef-syslog-sharepoint-activity
     """\soldFileType=({file_ext}.+?)\s{1,100}\w+=""",
   ]
   DupFields = [ "accesses->event_code" ]
-}
+
+
 }
 ```

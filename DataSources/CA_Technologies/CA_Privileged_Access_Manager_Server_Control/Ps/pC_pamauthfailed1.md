@@ -8,7 +8,7 @@ Name = pam-auth-failed-1
     """({event_name}Bad User ID)""",
   ]
   DupFields = [ "event_name->failure_reason" ]
-}
+
 pam-authentication = {
     Vendor = CA Technologies
     Product = CA Privileged Access Manager Server Control
@@ -30,5 +30,6 @@ pam-authentication = {
       """\sAccess/Protocol\s{0,100}:\s{0,100}(?:\- \-|({protocol}[^,]{1,2000}))""",
       """\sService/App\s{0,100}:\s{0,100}(?:\- \-|({app}[^,]{1,2000}))""",
     ]
-    DupFields = [ "dest_host->host" ]}
+    DupFields = [ "dest_host->host" 
+}
 ```

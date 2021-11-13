@@ -21,6 +21,7 @@ Name = xml-5137
     """<Data Name ='ObjectClass'>(|({object_class}[^<]{1,2000}?))</Data>""",
     """({event_name}A directory service object was created)""",
   ]
-}
+
+
 }
 ```

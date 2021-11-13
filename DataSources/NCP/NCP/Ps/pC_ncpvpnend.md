@@ -13,6 +13,7 @@ Name = ncp-vpn-end
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """incoming\s{0,100}:\s{0,100}({user}[^\s@]{1,2000})(@({domain}[^\s@]{1,2000})\s{0,100}:)"""
   ]
-}
+
+
 }
 ```

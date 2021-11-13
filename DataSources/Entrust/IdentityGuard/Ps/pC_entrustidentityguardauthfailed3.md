@@ -15,6 +15,7 @@ Name = entrust-identityguard-auth-failed-3
     """ user (({user_email}[^\@\s]{1,2000}@[^\s]{1,2000})|(({domain}[^\\\/]{1,2000})[\\\/]{1,2000})?({user}[^\s]{1,2000}))\. """,
     """({additional_info}Invalid response to a challenge.[^\.]{1,2000})""",
   ]
-}
+
+
 }
 ```

@@ -16,6 +16,7 @@ Name = mssql-database-query-2
     """"{1,20}statement"{1,20}:"{1,20}({db_query}.+?)\s{0,100}"{1,20}""",
     """"{1,20}server_principal_sid"{1,20}:"{1,20}\s{0,100}({db_user_sid}.+?)\s{0,100}"{1,20}""",
     """"{1,20}action_id"{1,20}:"{1,20}({db_operation}.+?)\s{0,100}"{1,20}"""
-    """"{1,20}database_name"{1,20}:"{1,20}({database_name}[^"]{1,2000})"{1,20}
+    """"{1,20}database_name"{1,20}:"{1,20}({database_name}[^"]{1,2000})"{1,20
+
 }
 ```

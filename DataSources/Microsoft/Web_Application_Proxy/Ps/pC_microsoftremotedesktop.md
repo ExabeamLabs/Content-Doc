@@ -16,6 +16,7 @@ Name = microsoft-remote-desktop
     """The user "{1,20}({domain}[^\\]{1,2000})?(\\)?({user}[^"]{1,2000})""",
     """Connection protocol used: "{1,20}({protocol}[^"]{1,2000})"""
   ]
-}
+
+
 }
 ```

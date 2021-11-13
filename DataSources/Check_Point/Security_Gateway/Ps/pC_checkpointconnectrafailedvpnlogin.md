@@ -17,6 +17,7 @@ Name = checkpoint-connectra-failed-vpn-login
     """\,user_group=({realm}[^\,]{1,2000})""",
     """\,Hostname=({host}[^\,]{1,2000})""",
   ]
-}
+
+
 }
 ```

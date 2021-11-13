@@ -5,7 +5,7 @@ Name = cef-netapp-file-read-2
   Product = NetApp
   DataType = file-operations
   Conditions = [ """|NetApp|NetApp-Security-Auditing|""", """|Open Object|""" ]
-}
+
 cef-netapp-file-operations = {
   Vendor = NetApp
   Lms = ArcSight
@@ -32,5 +32,6 @@ cef-netapp-file-operations = {
     """CEF:([^\|]{0,2000}\|){6}((?i)unknown|({severity}[^\|]{1,2000}))""",
     """filePermission=({file_permissions}.+?)\s{0,100}cs1""",
   ]
- }}
+ 
+}
 ```

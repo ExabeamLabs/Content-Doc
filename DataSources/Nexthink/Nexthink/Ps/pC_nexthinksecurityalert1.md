@@ -13,6 +13,7 @@ Name = nexthink-security-alert-1
     """name="({user}[^@"]{1,2000})@({domain}[^@"]{1,2000})""",
     """display_name="({user_fullname}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

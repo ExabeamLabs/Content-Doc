@@ -15,6 +15,7 @@ Name = ovirt-app-activity-1
     """EVENT_ID:.*?User ({user}[^\s\(\)"]{1,2000}) initiated console session for VM ({object}[^\s"]{1,2000})""",
     """({app}ovirt)"""
   ]
-}
+
+
 }
 ```

@@ -22,6 +22,7 @@ Name = cef-trendmicro-dlp-email-alert-in
     """\Wcs5=({alert_name}.+?)\s{1,100}(\w+=|$)""",
   ]
   DupFields = [ "sender->external_address" ]
-}
+
+
 }
 ```

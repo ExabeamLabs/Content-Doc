@@ -15,6 +15,7 @@ Name = ovirt-app-activity-33
     """EVENT_ID:.*? Failed to run VM ({object}[^\s"]{1,2000}).*?The following disks are locked: ({resource}[^\s]{1,2000}?)\.\s.*?\(User: ({user}[^\s\(\)"]{1,2000})""",
     """({app}ovirt)"""
   ]
-}
+
+
 }
 ```

@@ -34,6 +34,7 @@ Name = fortios-network-connection-failed
     """\stranip=({dest_translated_ip}[a-fA-F\d.:]{1,2000})""",
     """\ssrcname="{0,20}({src_host}[^\s"]{0,2000})"{0,20}"""
   ]
-}
+
+
 }
 ```

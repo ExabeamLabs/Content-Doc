@@ -26,6 +26,7 @@ Name = cef-box-file-activity
     """"{1,20}event_type"{1,20}:"{1,20}({accesses}[^\"]{1,2000})"{1,20}""",
     """(\||\s)requestClientApplication=({app}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
-}
+
+
 }
 ```

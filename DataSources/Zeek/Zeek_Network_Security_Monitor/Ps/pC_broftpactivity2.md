@@ -11,7 +11,7 @@ Name = bro-ftp-activity-2
     """"{1,20}command"{1,20}:"{1,20}({activity}[^"]{1,2000})"""
     """ftp"{1,20}:\{"{1,20}reply.+?code"{1,20}:({trans_id}\d{1,100})"""
   ]
-}
+
 bro-activity-1 = {
   Vendor = Zeek
   Lms = Direct
@@ -24,5 +24,6 @@ bro-activity-1 = {
     """"destination":\{"address"{1,20}:"{1,20}({dest_ip}[^"]{1,2000})"{1,20},"{1,20}port"{1,20}:({dest_port}\d{1,100})""",
     """"source":\{"address"{1,20}:"{1,20}({src_ip}[^"]{1,2000})"{1,20},"{1,20}port"{1,20}:({src_port}\d{1,100})""",
     """"{1,20}protocol"{1,20}:"{1,20}({protocol}[^"]{1,2000})"""
-    ]}
+    
+}
 ```

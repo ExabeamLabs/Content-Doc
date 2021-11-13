@@ -17,6 +17,7 @@ Name = u-okta-failed-app-login
         """cs3=({user_agent}.+?), \w+=""",
         """({app}Okta)"""
     ]
-}
+
+
 }
 ```

@@ -18,6 +18,7 @@ Name = json-f5-auth-attempt
     """"dst_host":"({dest_host}[^"]{1,2000})""",
     """({event_name}Login)""",
   ]
-}
+
+
 }
 ```

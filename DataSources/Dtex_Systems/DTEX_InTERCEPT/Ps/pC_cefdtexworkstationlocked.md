@@ -15,6 +15,7 @@ Name = cef-dtex-workstation-locked
     """\|Dtex\|([^\|]{0,2000}\|){2}(SessionActivity\|)?({event_code}[^\|]{1,2000})\|""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

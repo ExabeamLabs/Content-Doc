@@ -9,7 +9,7 @@ Name = q-kiteworks-file-download-2
     """({accesses}Downloaded)""",
     """with Files:\s{0,100}({file_name}[^,]{1,2000}?(\.({file_ext}\w+))?.*?)\.\s{0,100}$""",
   ]
-}
+
 q-kiteworks-file-activity = {
     Vendor = Accellion
     Lms = QRadar
@@ -26,5 +26,6 @@ q-kiteworks-file-activity = {
       """Activity:\s{0,100}({activity}.+?)\."{0,20}\s{0,100}$""",
       """Activity Type:\s{1,100}({activity}[^\s,]{1,2000})"""
     ]
-    DupFields = [ "host->dest_host" ]}
+    DupFields = [ "host->dest_host" 
+}
 ```

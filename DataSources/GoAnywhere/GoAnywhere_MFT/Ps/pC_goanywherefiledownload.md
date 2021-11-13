@@ -8,7 +8,7 @@ Name = goanywhere-file-download
      """GoAnywhereServicesvirtual_path="({file_path}[^"]{0,2000}\/({file_name}[^"]{0,2000}))"""",
      """"({activity}Download)""""
   ]
-}
+
 goanywhere-events = {
     Vendor = GoAnywhere
     Product = GoAnywhere MFT
@@ -21,5 +21,6 @@ goanywhere-events = {
       """GoAnywhereServicesremote_ip="({src_ip}[A-Fa-f\d.:]{1,2000})"""",
       """GoAnywhereServicesuser_name="(({user_email}[^@"]{1,2000}@[^\.]{1,2000}\.[^"]{1,2000})|(admin|666666|guest|({user}[^"]{1,2000})))"""",
       """GoAnywhereServicesevent_type="({event_name}[^"]{1,2000})"""",
-    ]}
+    
+}
 ```

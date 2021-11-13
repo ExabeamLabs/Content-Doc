@@ -26,6 +26,7 @@ Name = cef-forcepoint-dlp-email-alert-1
     """ad.fnameAndfileHash=({attachments}[^|]{1,2000}?)\s{0,100}\|\s{0,100}({file_hash}[^|\s]{1,2000})""",
     """ad.cc=\s{0,100}(Email_in_CC|({recipients}[^=]{1,2000}))\s{1,100}[\w.\-]{1,2000}="""
   ]
-}
+
+
 }
 ```

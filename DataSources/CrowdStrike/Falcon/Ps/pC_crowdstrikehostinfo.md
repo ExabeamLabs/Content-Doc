@@ -16,6 +16,7 @@ Name = crowdstrike-host-info
       """suser=(system|({user}[^\s]{1,2000}))"""
     ]
     DupFields = [ "dest_host->host" ] 
-  }
+  
+
 }
 ```

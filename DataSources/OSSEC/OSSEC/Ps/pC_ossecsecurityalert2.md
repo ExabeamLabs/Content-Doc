@@ -18,6 +18,7 @@ Name = ossec-security-alert-2
     """\d\d:\d\d:\d\d\s{0,100}({host}[^\s]{1,2000})\s{0,100}ossec:""",
     """classification:\s{0,100}({alert_type}[^,]{1,2000})""",
   ]
-}
+
+
 }
 ```

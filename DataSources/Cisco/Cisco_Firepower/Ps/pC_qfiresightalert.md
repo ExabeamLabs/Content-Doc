@@ -17,6 +17,7 @@ Name = q-firesight-alert
       """\simpactAlertData.description=\[[^\]]{1,2000}\] "({alert_name}[^"]{1,2000})""",
       """\s\[Classification: ({alert_type}[^\]]{1,2000})\]"""
   ]
-}
+
+
 }
 ```

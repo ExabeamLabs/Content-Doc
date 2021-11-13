@@ -3,7 +3,7 @@
 {
 Name = cef-microsoft-graph-activity-4
   Conditions = [ """"app-user-displayname":""", """"src-endpoint":"mcas-activities"""",  """"activityResult":""", """event-name":"login-success""" ]
-}
+
 cef-o365-app-login-1 = {
    Vendor = Microsoft
    Product = Office 365
@@ -30,5 +30,6 @@ cef-o365-app-login-1 = {
      """"src-endpoint":"({endpoint}[^"]{1,2000})""",
      """"src-account-name":"({account}[^"]{1,2000})""",
      """"src-account-name":"({account_name}[^"]{1,2000})""",
-   ]}
+   
+}
 ```

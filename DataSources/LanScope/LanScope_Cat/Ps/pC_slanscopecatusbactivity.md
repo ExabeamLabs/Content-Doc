@@ -19,6 +19,7 @@ Name = s-lanscopecat-usb-activity
     """\sIPAddress="({src_ip}[a-fA-F\d.:]{1,2000})""",
     """\sWindowTitle="({file_path}(({file_parent}[^"]{1,2000}?)[\\\/]{1,2000})?({file_name}[^"\\\/]{1,2000}))"""",
   ]
-}
+
+
 }
 ```

@@ -15,6 +15,7 @@ Name = raw-unix-member-removed
     """user ({account_name}.+?) removed by ({user}.+?) from group ({group_name}.+?)\s{0,100}$""",
   ]
   DupFields=["host->dest_host"]
-}
+
+
 }
 ```

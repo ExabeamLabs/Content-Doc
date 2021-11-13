@@ -3,7 +3,7 @@
 {
 Name = s-nac-logon-1
  Conditions = [ """Device-Administration: """, """ succeeded""" , """Protocol="""]
-}
+
 s-nac-logon = {
   Vendor = Cisco
   Product = Cisco ISE
@@ -35,5 +35,6 @@ s-nac-logon = {
     """, NetworkDeviceGroups=Location#All Locations#({location}[^,]{1,2000})""",
     """(?i)(MacAddress)=({mac_address}[^,\s]{1,2000}),""",
     """NAS-IP-Address=({nas_ip_address}[A-Fa-f\d:.]{1,2000})"""
-  ]}
+  
+}
 ```

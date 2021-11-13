@@ -17,6 +17,7 @@ Name = leef-dns-query
       """src=({src_ip}[\da-fA-F\.:]{1,2000})""",
       """url=\s{0,100}({query}[^\s]{1,2000})""",
     ]
-  }
+  
+
 }
 ```

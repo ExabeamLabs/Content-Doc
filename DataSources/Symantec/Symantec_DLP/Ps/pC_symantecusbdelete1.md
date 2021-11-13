@@ -3,7 +3,7 @@
 {
 Name = symantec-usb-delete-1
   Conditions = [ """type":"""", ""","device":"""", """"action":"File Delete"""" ]
-}
+
 symantec-usb-activity = {
   Vendor = Symantec
   Product = Symantec DLP
@@ -22,5 +22,6 @@ symantec-usb-activity = {
     """"size":({bytes}\d{1,100})""",
     """({device_type}(CD-DVD|USB))""",
   ]
-  DupFields = [ "directory->process_directory" ]}
+  DupFields = [ "directory->process_directory" 
+}
 ```

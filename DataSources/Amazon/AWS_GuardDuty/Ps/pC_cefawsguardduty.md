@@ -26,6 +26,7 @@ Name = cef-aws-guardduty
     """\sext_service_action_networkConnectionAction_({outcome}blocked=(false|true))""",
     """\smsg=({additional_info}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
-}
+
+
 }
 ```

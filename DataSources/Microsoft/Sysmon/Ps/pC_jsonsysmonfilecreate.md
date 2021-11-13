@@ -21,6 +21,7 @@ Name = json-sysmon-file-create
     """"CreationUtcTime":"({creation_utc_time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d.\d\d\d)""",
     """EventID":({event_code}\d{1,100})""",
   ]
-}
+
+
 }
 ```

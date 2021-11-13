@@ -3,7 +3,7 @@
 {
 Name = s-digitalguardian-print-activity-2
   Conditions = [ """Operation="22"""" , """Agent_UTC_Time=""" ]
-}
+
 splunk-digitalguardian-print-activity = {
   Vendor = Digital Guardian
   Product = Digital Guardian Endpoint Protection
@@ -23,5 +23,6 @@ splunk-digitalguardian-print-activity = {
     """(\s|exabeam_\w+=)Bytes_Written="(?:|({bytes}\d{1,100}))"""",
     """Operation_ID="({event_code}[^"]{1,2000})""""
   ]
-  DupFields = [ "host->src_host" ]}
+  DupFields = [ "host->src_host" 
+}
 ```

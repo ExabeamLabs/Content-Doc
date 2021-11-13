@@ -23,6 +23,7 @@ Name = mcafee-siem-4723
       """"action":"({outcome}[^"]{1,2000})"""
     ]
     DupFields = [ "host->dest_host" ]
-  }
+  
+
 }
 ```

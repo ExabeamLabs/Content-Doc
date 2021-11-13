@@ -26,6 +26,7 @@ Name = pgsql-db-query
     """"connection received:\s{0,100}host=({dest_host}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})\sport=({dest_ip}\d{1,100})"""",
   ]
   DupFields = [ "user->db_user" ]
-}
+
+
 }
 ```

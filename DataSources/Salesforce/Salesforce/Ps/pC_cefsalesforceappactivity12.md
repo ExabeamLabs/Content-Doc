@@ -17,6 +17,7 @@ Name = cef-salesforce-app-activity-12
     """Display\\=Deleted profile ({object}.+?)\s{0,100}(\w+=|$)""",
     """({app}Sales Cloud)""",
   ]
-}
+
+
 }
 ```

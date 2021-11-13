@@ -32,6 +32,7 @@ Name = cef-servicenow-file-operation-2
     """newvalue"{1,20}:"\s{0,100}({new_value}[^"]{1,2000}?)\s{0,100}",""",
   ]
   DupFields = [ "host->dest_host", "file_name->object", "activity->accesses" ]
-}
+
+
 }
 ```

@@ -4,7 +4,7 @@
 Name = s-prowatch-badge-access-2
   Product = Honeywell Pro-Watch
   Conditions = [ """REFID_TYP=""", """EVNT_DESCRP=""", """CARDNO="""" ]
-}
+
 s-prowatch-badge-access = {
     Vendor = Honeywell
     Lms = Splunk
@@ -19,5 +19,6 @@ s-prowatch-badge-access = {
       """LOOP_DESCRP="({location_building}[^"]{1,2000})"""",
       """EVNT_DESCRP="({outcome}[^"]{1,2000})"""",
       """exabeam_host=([^=]{0,2000}@\s{0,100})?({host}[^\s]{1,2000})"""
-    ]}
+    
+}
 ```

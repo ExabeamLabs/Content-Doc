@@ -21,6 +21,7 @@ Name = siebel-db-query
       """<Sql_Text>({db_query}.+?)\s{0,100}</Sql_Text>"""
     ]
     DupFields = [ "db_user->account", "database_id->database_name" ]
-}
+
+
 }
 ```

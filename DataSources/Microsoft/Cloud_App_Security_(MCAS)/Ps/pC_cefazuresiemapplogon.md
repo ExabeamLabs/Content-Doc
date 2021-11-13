@@ -18,6 +18,7 @@ Name = cef-azure-siem-app-logon
     """\sdvc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """exabeam_host=({host}[^\s]{1,2000})"""
   ]
-}
+
+
 }
 ```

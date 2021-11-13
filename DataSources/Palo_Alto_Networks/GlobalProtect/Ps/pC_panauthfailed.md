@@ -9,6 +9,7 @@ Name = pan-auth-failed
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
   Conditions = [ """,globalprotect,""", """user authentication failed""" ]
   Fields = [
-    """,globalprotect,\d{1,100}
+    """,globalprotect,\d{1,100
+
 }
 ```

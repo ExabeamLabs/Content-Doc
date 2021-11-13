@@ -4,7 +4,7 @@
 Name = oracle-avdf-database-login
   DataType = "database-login"
   Conditions = [  """TARGET_TYPE="USER"""", """ EVENT_NAME="LOGIN SUCCEEDED"""", """ COMMAND_CLASS="LOGIN"""", """ SECURED_TARGET_NAME="""  ]
-}
+
 s-oracle-avdf-events = {
     Vendor = Oracle
     Product = AVDF
@@ -21,5 +21,6 @@ s-oracle-avdf-events = {
       """RECORD_ID="({event_code}[^"]{1,2000})"""",
       """SECURED_TARGET_TYPE="({app}[^"]{1,2000})"""",
       """SERVICE_NAME="(unknown_service|({database_name}[^"]{1,2000}))""""
-    ]}
+    
+}
 ```

@@ -9,7 +9,7 @@ Name = ping-authentication-successful
     """IP Address:\s{0,100}({src_ip}[A-Fa-f\d.:]{1,2000})""",
     """Accessing Device UserAgent:\s{0,100}(N\/A|({user_agent}[^:]{1,2000}))\\[nt]"""
   ]
-}
+
 ping-authentication_events = {
     Vendor = Ping Identity
     Product = Ping Identity
@@ -19,5 +19,6 @@ ping-authentication_events = {
       """"recorded":\s{1,100}"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)"""",
       """exabeam_host=({host}[^\s]{1,2000})""",
       """"name":\s"({user}[^"]{1,2000})"""",
-    ]}
+    
+}
 ```

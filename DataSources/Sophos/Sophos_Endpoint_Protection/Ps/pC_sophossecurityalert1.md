@@ -3,7 +3,7 @@
 {
 Name = sophos-security-alert-1
   Conditions = [ """Event::Endpoint::Threat::""" ]
-  }
+  
 sophos-security-alert = {
   Vendor = Sophos
   Product = Sophos Endpoint Protection
@@ -26,5 +26,6 @@ sophos-security-alert = {
     """"(suser|source)":\s{0,100}"(n\/a|({src_host}[\w\-.]{1,2000})\s{0,100}(\(({src_ip}[A-Fa-f:\d.]{1,2000})\))?)"""",
     """"id":\s{0,100}"({alert_id}[^"]{1,2000})""",
     """filePath":\s"({process}[^"]{1,2000}\\+({process_name}[^"]{1,2000}))""",
-  ]}
+  
+}
 ```

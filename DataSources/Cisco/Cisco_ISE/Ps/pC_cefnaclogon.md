@@ -20,6 +20,7 @@ Name = cef-nac-logon
     """\Wad\.NetworkDeviceName =({network}[^,\s]{1,2000})"""
   ]
   DupFields = [ "dest_ip->auth_server" , "dest_host->computer_name"]
-}
+
+
 }
 ```

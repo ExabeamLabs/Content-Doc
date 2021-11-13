@@ -16,6 +16,7 @@ Name = raw-powershell-600
     """HostApplication=({command_line}[^\n]{1,2000}?)\s{1,100}EngineVersion=""",
     """sourceip="({src_ip}[a-fA-F\d:.]{1,2000})"""
   ]
-}
+
+
 }
 ```

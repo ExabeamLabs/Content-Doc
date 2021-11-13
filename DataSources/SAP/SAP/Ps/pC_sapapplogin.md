@@ -4,7 +4,7 @@
 Name = sap-app-login
   DataType = "app-login"
   Conditions = [ """CEF:""", """|SECUDE|C-Bus|""", """dvchost=""", """|AU1|Dialog Logon Successful|""" ]
-}
+
 sap-login-activity = {
   Vendor = SAP
   Product = SAP
@@ -21,5 +21,6 @@ sap-login-activity = {
     """requestClientApplication=({app}[^"]{1,2000}?)\s\w+=""",
     """msg=({additional_info}[^"]{1,2000}?)\s{1,100}\w+="""
   ]
-  DupFields = [ "activity_id->event_code" ]}
+  DupFields = [ "activity_id->event_code" 
+}
 ```

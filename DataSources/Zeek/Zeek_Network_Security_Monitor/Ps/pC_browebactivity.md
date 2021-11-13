@@ -24,6 +24,7 @@ Name = bro-web-activity
     """"status_code":({result_code}\d{1,100})""",
     """"method":"({method}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

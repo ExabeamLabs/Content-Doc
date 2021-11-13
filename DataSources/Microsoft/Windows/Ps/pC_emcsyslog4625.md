@@ -23,6 +23,7 @@ Name = emc-syslog-4625
     """Source Network Address:\s{1,100}({src_ip}[a-fA-F:\d.]{1,2000})""",
     """Logon Process:\s{1,100}({auth_process}[^\s]{1,2000})\s{1,100}Authentication Package:\s{1,100}({auth_package}[^\s]{1,2000})""" ]
   DupFields = [ "host->dest_ip" ]
-}
+
+
 }
 ```

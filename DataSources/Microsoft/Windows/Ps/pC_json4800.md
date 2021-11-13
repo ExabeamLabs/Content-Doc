@@ -18,6 +18,7 @@ Name = json-4800
     """Logon ID:\s{0,100}((\\)[rnt])*({logon_id}.+?)((\\)[rnt])*\s{0,100}Session"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

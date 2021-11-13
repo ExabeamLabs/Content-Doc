@@ -24,6 +24,7 @@ Name = checkpoint-vpn-firewall
     """service_id="{1,20}({service_id}[^"]{1,2000})"""",
     """community="{1,20}(|({community}[^"]{1,2000}))"{1,20}\s(\w+=|$)""",
   ]
-}
+
+
 }
 ```

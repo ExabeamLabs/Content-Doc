@@ -19,6 +19,7 @@ Name = centrify-auth-success
     """pid=({process_id}\d{1,100})""",
     """service=({protocol}.+?)\s\w+=""",
   ]
-}
+
+
 }
 ```

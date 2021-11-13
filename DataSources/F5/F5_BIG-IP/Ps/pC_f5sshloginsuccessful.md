@@ -17,6 +17,7 @@ Name = f5-ssh-login-successful
     """(?:u|U)ser=({user}[^\s]{1,2000})\s""",
     """\s({protocol}\w+)\(pam_audit\)\[""",
   ]
-}
+
+
 }
 ```

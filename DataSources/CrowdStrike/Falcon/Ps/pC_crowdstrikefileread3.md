@@ -19,6 +19,7 @@ Name = crowdstrike-file-read-3
       """"FileObject":"({object}[^"]{1,2000})"""",
       """"aid":"({aid}[^"]{1,2000})""""
     ]
-  }
+  
+
 }
 ```

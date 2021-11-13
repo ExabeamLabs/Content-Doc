@@ -27,6 +27,7 @@ Name = symantec-process-created
     """size":({file_size}\d{1,100})""",
     """cmd_line":"({command_line}[^\n]{1,2000}?)\s{0,100}","""
   ]
-}
+
+
 }
 ```

@@ -16,6 +16,7 @@ Name = u-google-auth-failed
     """"actor"\s{0,100}:\s{0,100}\{.*?"email"\s{0,100}:\s{0,100}"({user_email}({user}[^@"]{1,2000})@[^"]{1,2000})"""",
     """"events"\s{0,100}:.*?"name"\s{0,100}:\s{0,100}"login_failure_type",\s{0,100}"value"\s{0,100}:\s{0,100}"({failure_reason}[^"]{1,2000})"""",
   ]
-}
+
+
 }
 ```

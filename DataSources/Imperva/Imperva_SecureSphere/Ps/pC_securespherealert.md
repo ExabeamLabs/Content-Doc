@@ -19,6 +19,7 @@ Name = securesphere-alert
     """\|u=(?:n\/a|({user}[^|]{1,2000}))""",
     """\|g=({process_name}.+?)\s{0,100}\|"""
   ]
-}
+
+
 }
 ```

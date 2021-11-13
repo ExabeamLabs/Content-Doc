@@ -21,6 +21,7 @@ Name = mcafee-network-alert-1
     """\|Source Port:\s{0,100}({src_port}\d{1,100})""",
     """Result:\s{0,100}((?i)(n\/a)|({outcome}[^\|]{1,2000}))""",
   ]
-}
+
+
 }
 ```

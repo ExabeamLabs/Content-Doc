@@ -23,6 +23,7 @@ Name = emc-syslog-4648
     """Additional Information:\s{1,100}({dest_service}[^\s]{1,2000})\s{1,100}Process Information:"""
   ]
   DupFields = ["directory->process_directory"]
-}
+
+
 }
 ```

@@ -17,6 +17,7 @@ Name = evntslog-675
       """Client Address:\s{1,100}(::[\w]{1,2000}:)?({dest_ip}[a-fA-F:\d.]{1,2000})"""
     ]
     DupFields = ["host->dest_host"]
-  }
+  
+
 }
 ```

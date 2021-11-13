@@ -15,6 +15,7 @@ Name = cisco-asa-authentication-successful
     """%AAA-({priority}5)-({event_name}AAA_AUTH_ADMIN_USER)""",
     """aaa.c:({event_code}3083)"""
   ]
-}
+
+
 }
 ```

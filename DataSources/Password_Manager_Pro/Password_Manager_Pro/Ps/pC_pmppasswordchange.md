@@ -14,6 +14,7 @@ Name = pmp-password-change
     """\w+ \d{1,100} \d\d:\d\d:\d\d\s{1,100}({host}[^\s]{1,2000})""",
     """\sSuccess\s[^\s]{1,2000}\s{1,100}({safe_value}[^:]{1,2000}):({target_user}[^:]{1,2000}):""",
   ]
-}
+
+
 }
 ```

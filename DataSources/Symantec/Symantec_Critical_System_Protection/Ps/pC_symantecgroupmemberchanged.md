@@ -8,7 +8,7 @@ Fields = ${SymantecParserTemplates.symantec-critical-sys-protection.Fields} [
   """({event_name}Group_Membership_Changed)""",
   """Group Membership for "{1,20}({user}[^\s"]{1,2000})"{1,20} CHANGED from\s{1,100}'*({old_attribute}.+?)\s{0,100}to\s{0,100}'*({new_attribute}[^'"]{1,2000})"""
 ]
-}
+
 symantec-critical-sys-protection = {
   Vendor = Symantec
   Product = Symantec Critical System Protection
@@ -28,5 +28,6 @@ symantec-critical-sys-protection = {
     """\sHOSTADDR:\s{0,100}"{1,20}({dest_ip}[^"\s]{1,2000})""",
     """\sSVA_IP_ADDRESS:\s{0,100}"{1,20}({src_ip}[^"\s]{1,2000})""",
   ]
-  DupFields = ["host->dest_host"]}
+  DupFields = ["host->dest_host"
+}
 ```

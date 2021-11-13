@@ -53,6 +53,7 @@ Name = cef-zscaler-web-activity
     """ZscalerNSSWeblogDLPDictionaries=(None|({web_log_dict}[^=]{1,2000}?))\s{0,100}([\w.]{1,2000}=|$)"""
   ]
   DupFields = ["ransomware_name->threat_category", "risk_level->suspicious_content"]
-}
+
+
 }
 ```

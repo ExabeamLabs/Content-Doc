@@ -14,6 +14,7 @@ Name = counteract-network-connection-1
     """Connection Status:\s{1,100}({action}({outcome}[^\s]{1,2000}).+?)\.\s{1,100}Type""",
     """Source:\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
-}
+
+
 }
 ```

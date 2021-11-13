@@ -21,6 +21,7 @@ Name = bro-ssh-1
     """"server":"({server}[^"]{1,2000})""",
     """"auth_success":({outcome}[^,]{1,2000})""",
   ]
-}
+
+
 }
 ```

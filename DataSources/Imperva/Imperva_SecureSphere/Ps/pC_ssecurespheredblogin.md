@@ -23,6 +23,7 @@ Name = s-securesphere-db-login
     """\ssource-host=({src_host}[^,]{1,2000})"""
   ]
   DupFields = [ "db_user->account" ]
-}
+
+
 }
 ```

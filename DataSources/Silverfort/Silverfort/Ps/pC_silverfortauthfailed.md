@@ -7,7 +7,7 @@ Name = silverfort-auth-failed
   Fields = ${SilverfortParserTemplates.silverfort-authentication-attempt.Fields}[
 	"""\scs5=({failure_reason}[^=]{1,2000}?)\s{1,100}\w+="""
   ]
-}
+
 silverfort-authentication-attempt = {
     Vendor = Silverfort
     Product = Silverfort
@@ -23,5 +23,6 @@ silverfort-authentication-attempt = {
       """dhost=(({dest_ip}[a-fA-F\d:.]{1,2000})|({dest_host}[^=]{1,2000}?))\s{1,100}\w+=""",
       """\scs2=({action}[^=]{1,2000}?)\s{1,100}\w+=""",
       """\sapp=({auth_method}[^=]{1,2000}?)\s{1,100}\w+="""
-    ]}
+    
+}
 ```

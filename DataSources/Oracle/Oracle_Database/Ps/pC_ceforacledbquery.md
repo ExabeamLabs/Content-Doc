@@ -22,6 +22,7 @@ Name = cef-oracle-db-query
     """\Wcs3=({database_name}[^\s]{1,2000})"""
   ]
   DupFields = ["db_user->account"]
-}
+
+
 }
 ```

@@ -25,6 +25,7 @@ Name = leef-securesphere-db-alert-1
     """(\s|\||\\t)Protocol=(|({protocol}.+?))(\\t\w+=|\s{0,100}$)""",
     """(\s|\||\\t)RuleName =(|({alert_name}.+?))(\\t\w+=|\s{0,100}$)"""
   ]
-}
+
+
 }
 ```

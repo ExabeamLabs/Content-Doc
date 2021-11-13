@@ -7,7 +7,7 @@ Name = s-checkpoint-fw-network-connection
   Fields = ${CheckpointParserTemplates.s-checkpoint-firewall.Fields}[
     """time=({time}\d{1,100})\|"""
   ]
-}
+
 s-checkpoint-firewall = {
   Vendor = Check Point 
   Product = NGFW
@@ -30,5 +30,6 @@ s-checkpoint-firewall = {
     """\|src_machine_name=({src_host}[^\|]{1,2000})""",
     """\|src_user_name=[^(]{1,2000}\(({user}[^)]{1,2000})""",
     """\|user=[^(]{1,2000}\(({user}[^)]{1,2000})"""
-  ]}
+  
+}
 ```

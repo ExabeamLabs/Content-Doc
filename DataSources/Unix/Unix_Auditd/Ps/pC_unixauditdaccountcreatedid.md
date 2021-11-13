@@ -15,6 +15,7 @@ Name = unix-auditd-account-created-id
     """\sses=({session_id}\d{1,100})""",
     """\spid=({process_id}\d{1,100})""",
   ]
-}
+
+
 }
 ```

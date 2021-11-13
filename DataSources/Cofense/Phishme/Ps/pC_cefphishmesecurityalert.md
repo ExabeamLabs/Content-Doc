@@ -17,6 +17,7 @@ Name = cef-phishme-security-alert
     """\Wcs2=(|({alert_name}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wcs4=(|({additional_info}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
   ]
-}
+
+
 }
 ```

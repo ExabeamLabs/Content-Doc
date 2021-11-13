@@ -23,6 +23,7 @@ Name = wls-4726
       """TargetSid="{1,20}({target_user_sid}[^"]{1,2000})""""
     ]
     DupFields = [ "target_user->account_name" ]
-  }
+  
+
 }
 ```

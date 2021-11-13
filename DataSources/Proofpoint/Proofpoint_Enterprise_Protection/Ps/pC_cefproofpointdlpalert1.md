@@ -24,6 +24,7 @@ Name = cef-proofpoint-dlp-alert-1
     """\WeventId=({alert_id}\d{1,100})"""
   ]
   DupFields = [ "sender->user_email", "recipient->target" ]
-}
+
+
 }
 ```

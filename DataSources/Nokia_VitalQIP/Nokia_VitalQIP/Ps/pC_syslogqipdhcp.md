@@ -9,6 +9,7 @@ Name = syslog-qip-dhcp
     TimeFormat = "dd/MM/yyyy HH:mm:ss"
     Conditions = [ "QIP[-]: " ]
     Fields = [
-      """QIP\[\-\]:([^,]{0,2000}
+      """QIP\[\-\]:([^,]{0,2000
+
 }
 ```

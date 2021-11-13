@@ -23,6 +23,7 @@ Name = s-common-ftp-upload-1
     """\]created\s{1,100}(\S+\s{1,100}){4}({bytes}\d{1,100})""",
   ]
   DupFields = [ "host->dest_host", "file_ext->host_file_ext" ]
-}
+
+
 }
 ```

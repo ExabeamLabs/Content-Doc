@@ -26,6 +26,7 @@ Name = cef-attivo-network-connection
     """({protocol}RDP|TCP|tcp)""",
     """CEF:([^\|]{0,2000}\|){5}\s{0,100}({activity}[^\|]{0,2000}?)\s{0,100}\|""",
    ]
-}
+
+
 }
 ```

@@ -25,6 +25,7 @@ Name = cylance-protect-security-alert
     NameTemplate = """Cylance Alert ${alert_name} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="device", Name ="src_address", Fields=["src_host->host_name"]}
+      {EntityType="device", Name ="src_address", Fields=["src_host->host_name"]
+
 }
 ```

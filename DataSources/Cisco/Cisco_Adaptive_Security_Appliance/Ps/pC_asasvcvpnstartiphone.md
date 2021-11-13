@@ -13,6 +13,7 @@ Name = asa-svc-vpn-start-iPhone
       """exabeam_host=({host}[\w.\-]{1,2000})""",
       """User[\s\t]{1,2000}<({user}.+?)-({src_host}[\w]{1,2000}-iPhone)>[\s\t]{1,2000}IP[\s\t]{1,2000}<({src_ip}[^>]{1,2000})>[\s\t]{1,2000}(?:IPv4[\s\t])?Address[\s\t]{1,2000}<({src_translated_ip}[^>]{1,2000})>"""
     ]
-  }
+  
+
 }
 ```

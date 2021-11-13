@@ -3,7 +3,7 @@
 {
 Name = cef-liebsoft-app-activity-1
   Conditions = [ """CEF:""", """|Liebsoft|""", """|EVENT_ID_JOB_ACCOUNT_ELEVATION_FAILED|""" ]
-}
+
 cef-liebsoft-app-activity = {
   Vendor = BeyondTrust
   Product = BeyondTrust Privileged Identity
@@ -24,5 +24,6 @@ cef-liebsoft-app-activity = {
     """group '({object}[^\']{1,2000})' on system """,
     """dhost=({dest_host}[\w\-.]{1,2000})""",
     """({app}Liebsoft)""",
-  ]}
+  
+}
 ```

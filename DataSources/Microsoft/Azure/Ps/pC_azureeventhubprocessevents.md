@@ -6,7 +6,7 @@ Name = azure-event-hub-process-events
   Conditions = ["""|beatname=eventhubbeat|""", """|device_type=eventhubbeat|""", """|subject=AdvancedHunting-DeviceProcessEvents|""", """vmid=""", """@timestamp""", """@metadata""", """"ActionType":"ProcessCreated""""]
   Fields = ${MSParserTemplates.azure-event-hub.Fields} [
   ]
-}
+
 azure-event-hub = {
   Vendor = Microsoft
   Product = Azure
@@ -36,5 +36,6 @@ azure-event-hub = {
       """Namespace:\s{0,100}(|({event_hub_namespace}[^\]]{1,2000}?))\s{0,100}[\];]""",
       """EventHub name:\s{0,100}(|({event_hub_name}[^\]]{1,2000}?))\s{0,100}\]""",
       """\[Namespace:\s{0,100}({host}\S+) ; EventHub name:"""
-  ]}
+  
+}
 ```

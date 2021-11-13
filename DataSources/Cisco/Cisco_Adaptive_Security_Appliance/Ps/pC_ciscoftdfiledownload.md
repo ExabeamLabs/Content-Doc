@@ -17,6 +17,7 @@ Name = cisco-ftd-file-download
     """user\s{1,100}({user}[^\s]{1,2000})""",
     """Retrieved file\s{1,100}(|({file_path}({file_parent}[^"]{0,2000}?)[\\\/]{0,2000}({file_name}[^\\\/"]{1,2000}?(\.({file_ext}[^\\\/\.\s"]{1,2000}))?)))\s{1,100}$""",
   ]
-}
+
+
 }
 ```

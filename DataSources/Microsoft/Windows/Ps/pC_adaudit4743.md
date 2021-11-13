@@ -26,6 +26,7 @@ Name = ad-audit-4743
     """Category\s{0,100}=\s{0,100}({category}[^\s]{1,2000})"""
  ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

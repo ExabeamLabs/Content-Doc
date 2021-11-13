@@ -10,6 +10,7 @@ Name = paloalto-web-activity
   Conditions = [ """,THREAT,url,""", """web-browsing,"""]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
-    """THREAT,[^,]{1,2000}
+    """THREAT,[^,]{1,2000
+
 }
 ```

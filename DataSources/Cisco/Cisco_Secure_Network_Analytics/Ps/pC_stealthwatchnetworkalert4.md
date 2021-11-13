@@ -21,6 +21,7 @@ Name = stealthwatch-network-alert-4
     """CEF:([^\|]{1,2000}\|){5}({alert_name}[^\|]{1,2000})""",
   ]
   DupFields = [ "alert_name->alert_type", "alert_name->event_name"]
-}
+
+
 }
 ```

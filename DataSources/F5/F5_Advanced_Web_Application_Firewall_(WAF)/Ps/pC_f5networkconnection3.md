@@ -13,6 +13,7 @@ Name = f5-network-connection-3
     """\d\d:\d\d:\d\d ({host}[^\s]{1,2000})""",
     """({event_name}Connection error: ssl_passthru)"""
   ]
-}
+
+
 }
 ```

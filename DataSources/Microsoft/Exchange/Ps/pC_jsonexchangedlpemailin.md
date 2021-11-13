@@ -17,6 +17,7 @@ Name = json-exchange-dlp-email-in
     """server_hostname":"(?:|({dest_host}[^\"]{1,2000}))",""",
     """exchange_source":"(?:|({alert_name}[^\"]{1,2000}))",""",
     """event_id":"(?:|({action}[^\"]{1,2000}))",""",
-    """internal_message_id":"{0,20}(?:|({alert_id}[^",]{1,2000}))"{0,20}
+    """internal_message_id":"{0,20}(?:|({alert_id}[^",]{1,2000}))"{0,20
+
 }
 ```

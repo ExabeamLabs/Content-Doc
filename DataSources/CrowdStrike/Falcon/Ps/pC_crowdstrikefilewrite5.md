@@ -7,7 +7,7 @@ Name = crowdstrike-file-write-5
     """"VolumeName":"({file_path}[^"]{1,2000})""",
     """"VolumeName":"({file_parent}[^"]{0,2000}[\\\/]{1,2000})({file_name}[^\\\/"]{1,2000}(\.({file_ext}[^\\\/"]{1,2000}))?)""",
     ]
-  }
+  
 crowdstrike-file-operations = {
     Vendor = CrowdStrike
     Product = Falcon
@@ -30,5 +30,6 @@ crowdstrike-file-operations = {
       """UserName":"({user}[^"]{1,2000})"""",
       """"ContextProcessId":"({process_guid}[^"]{1,2000})"""",
       """"aip":"({src_ip}[a-fA-F\d:.]{1,2000})""""
-    ]}
+    
+}
 ```

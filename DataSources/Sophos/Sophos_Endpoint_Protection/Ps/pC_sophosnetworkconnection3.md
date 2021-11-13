@@ -23,6 +23,7 @@ Name = sophos-network-connection-3
     """Event::Endpoint::WindowsFirewall::({action}Blocked)""",
   ]
   DupFields = [ "host->src_host","action->outcome" ]
-}
+
+
 }
 ```

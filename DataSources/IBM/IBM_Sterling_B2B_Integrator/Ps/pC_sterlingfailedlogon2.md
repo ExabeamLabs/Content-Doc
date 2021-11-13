@@ -15,6 +15,7 @@ Name = sterling-failed-logon-2
     """Login failure for :[^:]{1,2000}:({src_ip}[^,]{1,2000})""",
     """({event_name}Failed login)""",
   ]
-}
+
+
 }
 ```

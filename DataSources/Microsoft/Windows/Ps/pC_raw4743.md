@@ -18,6 +18,7 @@ Name = raw-4743
     """\sTarget Computer:[^=]{1,2000}?Account Name:\s{0,100}({src_host}[^$:]{1,2000}?)\$""",
   ]
   DupFields = [ "host-> dest_host"]
-}
+
+
 }
 ```

@@ -21,6 +21,7 @@ Name = spanish-raw-4625
    """Nombre de estación de trabajo:\s{0,100}({src_host}[^\s]{1,2000})\s{0,100}Dirección de red de origen:\s{0,100}({src_ip}[a-fA-F\d.:]{1,2000})\s{0,100}Puerto de orig""",
   ]
   DupFields = ["host->dest_host"]
-}
+
+
 }
 ```

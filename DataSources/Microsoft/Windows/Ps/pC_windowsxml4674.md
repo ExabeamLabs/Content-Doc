@@ -23,6 +23,7 @@ Name = windows-xml-4674
     """({event_name}An operation was attempted on a privileged object)"""
   ]
   DupFields = ["host->dest_host","directory->process_directory"]
-}
+
+
 }
 ```

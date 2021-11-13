@@ -23,6 +23,7 @@ Name = s-O365-email
     """({alert_name}Office365)""",
     """({alert_type}o365_mail)""",
   ]
-}
+
+
 }
 ```

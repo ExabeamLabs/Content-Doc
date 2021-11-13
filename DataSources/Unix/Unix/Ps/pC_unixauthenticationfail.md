@@ -14,6 +14,7 @@ Name = unix-authentication-fail
     """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]{1,2000})\s{1,100}""",
     """AD authentication for user ({user}[^\s]{1,2000}) failed"""
   ]
-}
+
+
 }
 ```

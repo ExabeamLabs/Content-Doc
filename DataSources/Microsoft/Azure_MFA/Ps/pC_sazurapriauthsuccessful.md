@@ -15,6 +15,7 @@ Name = s-azura-pri-auth-successful
     """\suser\s{1,100}'({user}[^']{1,2000})'""",
     """({auth_method}Primary auth)""",
   ]
-}
+
+
 }
 ```

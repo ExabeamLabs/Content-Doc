@@ -25,6 +25,7 @@ Name = raw-4770
     """Ticket Encryption Type(:|=)\s{0,100}({ticket_encryption_type}[^\s;]{1,2000})"""
     """Client Address(:|=)\s{0,100}(::[\w]{1,2000}:)?(::ffff:)?({src_ip}[a-fA-F:\d.]{1,2000})"""
   ]
-}
+
+
 }
 ```

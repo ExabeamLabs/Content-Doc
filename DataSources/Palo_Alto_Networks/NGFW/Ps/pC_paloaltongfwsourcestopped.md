@@ -14,6 +14,7 @@ Name = paloalto-ngfw-source-stopped
     """'PaSeries @ ({src_host}[^\s']{1,2000})( \(({src_ip}[^\)]{1,2000})\))?'"""
     """({alert_name}A device has stopped emitting events)"""
   ]
-}
+
+
 }
 ```

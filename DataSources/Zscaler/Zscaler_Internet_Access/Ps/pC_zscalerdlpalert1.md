@@ -23,6 +23,7 @@ Name = zscaler-dlp-alert-1
     """policy=(None|({policy}[^=]{1,2000}?))\s{0,100}\w+="""
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

@@ -14,7 +14,7 @@ Name = paloalto-firewall-alert-1
     """"VendorSeverity":"({alert_severity}[^"]{1,2000})"""",
     """"DirectionOfAttack":"({direction}[^"]{1,2000})""""
   ]
-}
+
 paloalto-vpn = {
   Vendor = Palo Alto Networks
   Product = NGFW
@@ -31,5 +31,6 @@ paloalto-vpn = {
     """"SourcePort":({src_port}\d{1,100})""",
     """"DestinationPort":({dest_port}\d{1,100})""",
     """"Protocol":"({protocol}[^"]{1,2000})"""",
-  ]}
+  
+}
 ```

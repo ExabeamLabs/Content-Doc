@@ -20,6 +20,7 @@ Name = cef-oracle-db-delete
     """CEF:([^\|]{0,2000}\|){5}({db_operation}[^\|]{1,2000})""",
   ]
   DupFields = [ "db_user->account" ]
-}
+
+
 }
 ```

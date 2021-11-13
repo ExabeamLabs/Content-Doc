@@ -25,6 +25,7 @@ Name = bro-dns-response
     """"answers\\?"{1,20}:\[({response}.+?)\]""",
     """"rejected\\?"{1,20}:({outcome}\w+)""",
   ]
-}
+
+
 }
 ```

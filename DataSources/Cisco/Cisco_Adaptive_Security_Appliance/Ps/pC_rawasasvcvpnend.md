@@ -23,6 +23,7 @@ Name = raw-asa-svc-vpn-end
     """\sDuration:\s{0,100}(({session_day}\d{1,100})d )?({session_hour}\d{1,100})h:({session_min}\d{1,100})m:({session_sec}\d{1,100})s""",
     """%ASA-({priority}\d{1,100})-({event_code}\d{1,100})""",
     ]
-}
+
+
 }
 ```

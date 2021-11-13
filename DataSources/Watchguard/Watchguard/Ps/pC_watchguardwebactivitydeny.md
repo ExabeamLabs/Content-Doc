@@ -24,6 +24,7 @@ Name = watchguard-web-activity-deny
     """msg="{1,20}({proxy_action}Proxy[^"]{1,2000})"""
   ]
   DupFields = [ "user_email->user" ]
-}
+
+
 }
 ```

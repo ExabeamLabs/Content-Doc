@@ -15,6 +15,7 @@ Name = ovirt-app-activity-30
     """EVENT_ID:.*? was initiated by ({user}[^\s\(\)]{1,2000}?)(\)|\s|\.\s|\.$)""",
     """({app}ovirt)"""
   ]
-}
+
+
 }
 ```

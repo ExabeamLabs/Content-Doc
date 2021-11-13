@@ -23,6 +23,7 @@ Name = proofpoint-email-3
       """"filter_routeDirection_s":"({direction}[^"]{1,2000})""""
       """"filter_disposition_s":"({outcome}[^"]{1,2000})""",
       """"detectedName":\s{0,100}"({attachment}(?!text)[^"]{1,2000})""",
-      """"filter_isMsgReinjected_b":[\s"]{0,2000}({is_consolidated}\w+)[\s"]{0,2000}
+      """"filter_isMsgReinjected_b":[\s"]{0,2000}({is_consolidated}\w+)[\s"]{0,2000
+
 }
 ```

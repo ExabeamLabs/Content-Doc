@@ -22,6 +22,7 @@ Name = xml-4672
     """<Data Name(\\)?='PrivilegeList'>({privileges}[^<]{1,2000})</Data>""",
     """<Data Name(\\)?='SubjectUserSid'>({user_sid}[^<]{1,2000})</Data>"""
   ]
-}
+
+
 }
 ```

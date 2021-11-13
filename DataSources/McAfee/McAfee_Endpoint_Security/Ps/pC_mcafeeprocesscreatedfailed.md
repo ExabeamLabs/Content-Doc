@@ -26,6 +26,7 @@ Name = mcafee-process-created-failed
     """<IPAddress>({src_ip}.+?)</IPAddress>""",
     """<OSName>({os}.+?)</OSName>""",
   ]
-}
+
+
 }
 ```

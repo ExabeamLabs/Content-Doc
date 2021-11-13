@@ -20,6 +20,7 @@ Name = cef-rangeraudit-file-operations
     """cliIP"{0,20}:"({src_ip}[^"]{1,2000})""",
     """cluster_name"{0,20}:"({dest_host}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

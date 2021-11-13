@@ -21,6 +21,7 @@ Name = xml-email-saas-o365-alert
     """<d:Status>({outcome}.+?)<\/d:Status>""",
   ]
   DupFields = [ "subject->alert_name" ]
-}
+
+
 }
 ```

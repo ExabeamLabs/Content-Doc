@@ -3,7 +3,7 @@
 {
 Name = fileauditor-file-write-2
   Conditions = [ """[ FILE_ATTRIBUTES=""", """[ CREATION_TIME=""", """[ MESSAGE=Modify ]""" ]
-}
+
 fileauditor-file-operations = {
   Vendor = FileAuditor
   Product = FileAuditor
@@ -21,5 +21,6 @@ fileauditor-file-operations = {
     """\[ MESSAGE=({accesses}.+?)\s{0,100}\]""",
     """\[ USERNAME=({user}[^\s\]]{1,2000}?)\s{0,100}\]""",
   ]
-  DupFields = [ "host->dest_host" ]}
+  DupFields = [ "host->dest_host" 
+}
 ```

@@ -20,6 +20,7 @@ Name = cef-snare-552
       """OriginalAgentAddress=({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
       """dvc=({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"""
     ]
-  }
+  
+
 }
 ```

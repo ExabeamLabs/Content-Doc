@@ -19,6 +19,7 @@ Name = observeit-audit-logins
     """\sLoginStatus=({outcome}[^;]{1,2000}?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
     """\sLoginStatusDescrition=({failure_reason}[^;]{1,2000}?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
   ]
-}
+
+
 }
 ```

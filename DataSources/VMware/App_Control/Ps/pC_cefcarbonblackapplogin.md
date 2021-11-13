@@ -17,6 +17,7 @@ Name = cef-carbonblack-app-login
     """(\||\s)dvchost=(|({host}.+?))(\s\w+=|\s{0,100}$)""",
     """(\||\s)msg=.+from\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
-}
+
+
 }
 ```

@@ -3,7 +3,7 @@
 {
 Name = cef-o365-app-activity-5
   Conditions = [ """|Microsoft|""", """|GroupAdded|""", """eventId=""" ]
-}
+
 cef-o365-app-activity = {
   Vendor = Microsoft
   Product = Office 365
@@ -31,5 +31,6 @@ cef-o365-app-activity = {
     """\WfilePath=({resource}.+?)\s{0,100}(\w+=|$)""",
     """\W(categoryOutcome|outcome)=\/?({outcome}.+?)\s{0,100}(\w+=|$)""",
     """\WrequestClientApplication=({user_agent}.+?)\s{0,100}(\w+=|$)""",
-  ]}
+  
+}
 ```

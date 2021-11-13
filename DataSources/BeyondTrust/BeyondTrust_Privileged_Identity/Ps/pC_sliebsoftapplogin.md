@@ -16,6 +16,7 @@ Name = s-liebsoft-app-login
         """sLoginName ="(({domain}[^"]{1,2000})\\)?({user}[^"]{1,2000})""",
         """sOriginatingSystem="({dest_host}[^"]{1,2000})"""
     ]
-  }
+  
+
 }
 ```

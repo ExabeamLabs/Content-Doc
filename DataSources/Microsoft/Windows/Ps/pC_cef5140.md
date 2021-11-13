@@ -24,6 +24,7 @@ Name = cef-5140
           """\Wad\.ShareLocalPath=(?:[\\\?]{1,2000})?(?:\s{0,100}|({share_path}({d_parent}.*?)({d_name}[^\\]{1,2000}?))(\\+)?)(\s{1,100}(\w+|\w+\.\w+)=|\s{0,100}$)""",
           """\WfileType=({file_type}\w+)""",
         ]
-}
+
+
 }
 ```

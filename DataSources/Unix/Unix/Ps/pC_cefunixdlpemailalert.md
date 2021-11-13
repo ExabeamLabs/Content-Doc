@@ -24,6 +24,7 @@ Name = cef-unix-dlp-email-alert
     """\Wproto=({protocol}[^\s,]{1,2000})"""
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

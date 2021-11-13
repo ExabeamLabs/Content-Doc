@@ -22,6 +22,7 @@ Name = syslog-mcafee-network-alert
     """\sdetected\s(Unknown|({direction}[^\s]{1,2000}))\s""",
     """\d\d:\d\d:\d\d\s{1,100}(::ffff:)?\s{0,100}({host}[A-Fa-f:\d.]{1,2000})\s{1,100}\w+"""
   ]
-}
+
+
 }
 ```

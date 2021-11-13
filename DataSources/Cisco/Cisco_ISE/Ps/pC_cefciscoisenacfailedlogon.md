@@ -21,6 +21,7 @@ Name = cef-cisco-ise-nac-failed-logon
     """\ssuser=(({user_email}[^\s@]{1,2000}@[^\s@]{1,2000})|({user}[^\s\(\[]{1,2000}))"""
   ]
   DupFields = [ "host->auth_server" ]
-}
+
+
 }
 ```

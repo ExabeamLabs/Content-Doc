@@ -8,7 +8,7 @@ Name = cef-okta-account-unlocked
     """target(s)?"{1,20}:[^\]]{1,2000}?"{1,20}type"{1,20}:"{1,20}User"{1,20}[^\]\}]{1,2000}?"{1,20}(alternateId|emailAddress)"{1,20}:(null|"{1,20}({target_user}[^"@]{1,2000}@({target_domain}[^"]{1,2000})))""",
     """target(s)?"{1,20}:[^\]]{1,2000}?"{1,20}type"{1,20}:"{1,20}User"{1,20}[^\]\}]{1,2000}?"{1,20}(alternateId|emailAddress)"{1,20}:(null|"{1,20}(({target_domain}[^\\\/]{1,2000})[\/\\]{1,2000})?({target_user}[^"]{1,2000}))"""
   ]
-}
+
 json-okta-auth = {
   Vendor = Okta
   Product = Okta Adaptive MFA
@@ -40,5 +40,6 @@ json-okta-auth = {
     """"outcome":[^\]]{0,2000}?"result"\s{0,100}:\s{0,100}"({outcome}[^"]{1,2000})"""",
     """outcome":[^\]]{0,2000}?"result":"?(null|({outcome_result_at}[^\"]{1,2000}))"?,"reason":"?(null|({outcome_reason_at}[^"]{1,2000}))""",
   ]
-  DupFields = ["domain->email_domain", "failure_reason->additional_info"]}
+  DupFields = ["domain->email_domain", "failure_reason->additional_info"
+}
 ```

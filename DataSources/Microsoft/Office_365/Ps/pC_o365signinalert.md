@@ -21,6 +21,7 @@ Name = o365-signin-alert
     """"location":\{"({additional_info}.*?)\}+"""
   ]
   DupFields = [ "process->vendor_value", "alert_type->alert_name" ] 
-}
+
+
 }
 ```

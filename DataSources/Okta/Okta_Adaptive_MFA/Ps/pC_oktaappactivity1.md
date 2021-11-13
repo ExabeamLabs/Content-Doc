@@ -3,7 +3,7 @@
 {
 Name = okta-app-activity-1
     Conditions = [ """"objectType":"app.""", """"published":""" ]
-  }
+  
 okta-app-activity = {
     Vendor = Okta
     Product = Okta Adaptive MFA
@@ -43,5 +43,6 @@ okta-app-activity = {
       """"id":"({object}[^"]{1,2000})"[^\}\]]{0,2000}"objectType":"AppInstance"""",
       """"objectType":"AppInstance"[^\}\]]{0,2000}"id":"({object}[^"]{1,2000})"""",
     ]
-    DupFields = ["target_user->account_name", "target_domain->account_domain"]}
+    DupFields = ["target_user->account_name", "target_domain->account_domain"
+}
 ```

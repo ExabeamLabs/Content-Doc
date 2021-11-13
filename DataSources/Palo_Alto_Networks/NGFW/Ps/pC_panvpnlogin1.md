@@ -4,7 +4,7 @@
 Name = pan-vpn-login-1
   DataType = "vpn-login"
   Conditions = [ """"LogType":"USERID"""", """"DeviceSN":"""", """"Subtype":"login"""" ]
-}
+
 paloalto-vpn = {
   Vendor = Palo Alto Networks
   Product = NGFW
@@ -21,5 +21,6 @@ paloalto-vpn = {
     """"SourcePort":({src_port}\d{1,100})""",
     """"DestinationPort":({dest_port}\d{1,100})""",
     """"Protocol":"({protocol}[^"]{1,2000})"""",
-  ]}
+  
+}
 ```

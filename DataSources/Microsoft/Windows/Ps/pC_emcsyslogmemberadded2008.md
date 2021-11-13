@@ -24,6 +24,7 @@ Name = emc-syslog-member-added-2008
     """Group:.+?(Group|Account) Domain:\s{1,100}({group_domain}[^\s]{1,2000})""",
   ]
   DupFields = [ "host->dest_ip" ]
-}
+
+
 }
 ```

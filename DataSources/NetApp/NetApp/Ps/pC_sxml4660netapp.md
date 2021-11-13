@@ -27,6 +27,7 @@ Name = s-xml-4660-netapp
       """<Data Name ="{0,20}(HandleID|HandleId)"{0,20}>({object_id}.+?)</Data>"""
    ]
     DupFields = ["event_name->activity"]
-}
+
+
 }
 ```

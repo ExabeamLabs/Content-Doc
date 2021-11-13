@@ -18,6 +18,7 @@ Name = s-trusteer-epp-alert
     """username=(?=\w+)({user}.+?)\s{1,100}(digitally_signed_by|target_ip)""",
     """suspicious_(item_details|process_path|file_path)=({malware_url}.+?)\s{1,100}suspicious_(item|process|file)"""
   ]
-}
+
+
 }
 ```

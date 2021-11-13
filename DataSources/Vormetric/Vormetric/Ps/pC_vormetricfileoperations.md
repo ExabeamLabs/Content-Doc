@@ -21,6 +21,7 @@ Name = vormetric-file-operations
     """({alert_name}DENIED)"""
   ]
   DupFields = [ "directory->process_directory" ]
-}
+
+
 }
 ```

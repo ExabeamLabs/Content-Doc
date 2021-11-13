@@ -8,7 +8,7 @@ Name = s-symantec-network-alert
     """Local_Host_IP_masked=({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
     """Remote_Host_IP_masked=({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
   ]
-}
+
 s-symantec-alert = {
     Vendor = Symantec
     Product = Symantec Endpoint Protection
@@ -26,5 +26,6 @@ s-symantec-alert = {
       """\sseverity=({alert_severity}[^,]{1,2000}?)\s{0,100}(,|$)""",
       """\sEvent_Description="({additional_info}[^"]{1,2000})""",
       """\sdest_port=({dest_port}\d{1,100})""", 
-    ]}
+    
+}
 ```

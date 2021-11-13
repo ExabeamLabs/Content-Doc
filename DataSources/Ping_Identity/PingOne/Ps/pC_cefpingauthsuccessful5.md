@@ -4,7 +4,7 @@
 Name = cef-ping-auth-successful-5
   DataType = "authentication-successful"
   Conditions = [ """destinationServiceName =Ping""","""flexString2=Authentication""", """request=Success"""]
-}
+
 cef-ping-events-2 = {
   Vendor = Ping Identity
   Product = PingOne
@@ -24,5 +24,6 @@ cef-ping-events-2 = {
     """Country:\s({country}.*?)\s{0,100}(\\n)*New Device""",
     """Mobile OS Version:\s({os}.*?)\s{0,100}(\\n)*Device Model""",
     """Device Model:\s(N\/A|({device}.*?))\s{0,100}(\\n)*Device Lock""",
-  ]}
+  
+}
 ```

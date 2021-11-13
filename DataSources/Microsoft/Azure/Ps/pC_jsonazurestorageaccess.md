@@ -19,6 +19,7 @@ Name = json-azure-storage-access
     """requestUri":"({full_url}(({protocol}[^:]{1,2000}):\/\/)?({web_domain}[^\/:\s]{1,2000})({uri_path}\/[^\?"]{1,2000})?(\?({uri_query}[^"]{1,2000}))?)""",
     """operationName":\s{0,100}"({activity}[^"]{1,2000})"""
   ]
-}
+
+
 }
 ```

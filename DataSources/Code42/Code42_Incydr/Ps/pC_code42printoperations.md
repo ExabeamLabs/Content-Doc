@@ -25,6 +25,7 @@ Name = code42-print-operations
     """"printJobName":"{1,20}\s{0,100}({object}[^"]{1,2000})"""",
   ]
   DupFields = ["dest_host->device_name"]
-}
+
+
 }
 ```

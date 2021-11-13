@@ -15,6 +15,7 @@ Name = osirium-app-login
     """address\s{0,100}\'({src_ip}[a-fA-F:\d.]{1,2000})\'\s{0,100}logged""",
     """({app}osirium)"""
   ]
-}
+
+
 }
 ```

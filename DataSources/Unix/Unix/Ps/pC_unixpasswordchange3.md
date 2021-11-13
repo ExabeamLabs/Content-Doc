@@ -13,6 +13,7 @@ Name = unix-password-change-3
     """({host}[\w.\-]{1,2000})\s{1,100}passwd:""",
     """couldn't change password for '({account}[^']{1,2000})""",
   ]
-}
+
+
 }
 ```

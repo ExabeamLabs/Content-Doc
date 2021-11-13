@@ -16,6 +16,7 @@ Name = syslog-brightmail-email-in
       """\|SENDER\|({sender}[^@\|]{1,2000}@[^@\|]{1,2000})\|"""
     ]
     DupFields = [ "sender->external_address" ]
-  }
+  
+
 }
 ```

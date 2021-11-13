@@ -24,6 +24,7 @@ Name = cisco-dns-response-1
     """src-account-name":"({account_name}[^"]{1,2000})"""
   ]
   DupFields = [ "host->src_host" ]
-}
+
+
 }
 ```

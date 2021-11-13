@@ -24,6 +24,7 @@ Name = o365-phishing-alert
     """"P1Sender":"({sender}[^@",]{1,2000}@[^",]{1,2000})""""
   ] 
  DupFields = [ "user_email->recipient", "additional_info->subject" ]
-}
+
+
 }
 ```

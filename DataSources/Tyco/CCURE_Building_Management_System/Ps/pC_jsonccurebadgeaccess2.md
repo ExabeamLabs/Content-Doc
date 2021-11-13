@@ -20,6 +20,7 @@ Name = json-ccure-badge-access-2
       """"badge_id":({badge_id}\d{1,100})""",
       """"direction":\s{0,100}"({direction}[^"]{1,2000})"""",
     ]
-  }
+  
+
 }
 ```

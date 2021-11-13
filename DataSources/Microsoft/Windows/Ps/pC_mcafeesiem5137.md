@@ -25,6 +25,7 @@ Name = mcafee-siem-5137
       """"Process_Name":"({process_name}[^"]{1,2000})""",
     ]
     DupFields = [ "host->dest_host" ]
-  }
+  
+
 }
 ```

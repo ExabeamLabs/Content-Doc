@@ -21,6 +21,7 @@ Name = microsoft-npc-nac-logon-1
     """<NP-Policy-Name[^>]{1,2000}>({network}[^<]{1,2000})<""",
   ]
   DupFields = [ "host->dest_host","outcome->event_code" ]
-}
+
+
 }
 ```

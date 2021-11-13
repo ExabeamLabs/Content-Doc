@@ -4,7 +4,7 @@
 Name = unix-auditd-login-1
   DataType = "ssh-login"
   Conditions = ["""audit_id""" , """PAM:authentication"""]
-}
+
 unix-auditd  = {
     Vendor = Unix
     Product = Unix Auditd
@@ -40,5 +40,6 @@ unix-auditd  = {
       """\[\d{1,100}\]\w+\s{1,100}(\S+\s{1,100}){2}({outcome}\d{1,100})""",
       """\[\d{1,100}\]\w+\s{1,100}(\S+\s{1,100}){4}({bytes}\d{1,100})"""
     ]
-    DupFields = [ "host->dest_host" ]}
+    DupFields = [ "host->dest_host" 
+}
 ```

@@ -22,6 +22,7 @@ Name = q-firesight-alert-3
     """\WfileEventData.threatScore=({alert_severity}\d{1,100})""",
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

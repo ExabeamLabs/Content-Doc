@@ -3,7 +3,7 @@
 {
 Name = symantec-alert-jp-1
   Conditions = [ """,SONAR 検出を許可しました,""", """SHA2,会社名""" ]
-}
+
 symantec-alert-jp = {
   Vendor = Symantec
   Product = Symantec Endpoint Protection
@@ -22,5 +22,6 @@ symantec-alert-jp = {
     """,カテゴリの種類:\s{0,100}({threat_category}[^,]{1,2000}?)(,|\s{0,100}$)""",
     """,アプリケーションハッシュ:\s{0,100}({sha256}[^,]{1,2000}?)(,|\s{0,100}$)""",
     """,件数:[^,]{0,2000},({file_path}({file_parent}[^,]{0,2000}?[\\\/]{1,2000})?({file_name}[^\.\\\/]{0,2000}?(\.({file_ext}\w+))?))\s{0,100}(,|\s{0,100}$)""",
-  ]}
+  
+}
 ```

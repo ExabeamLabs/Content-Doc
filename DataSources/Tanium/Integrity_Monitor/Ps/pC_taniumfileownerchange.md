@@ -7,7 +7,7 @@ Name = tanium-file-owner-change
   Fields = ${TaniumParserTemplates.tanium-file-operations.Fields}[
     """({accesses}FileOwnershipChange)""" 
   ]
-}
+
 tanium-file-operations = {
   Vendor = Tanium
   Product = Integrity Monitor
@@ -20,5 +20,6 @@ tanium-file-operations = {
     """File-Path="({file_path}({file_parent}[^"]{1,2000}\\)({file_name}[^"]{1,2000}\.({file_ext}[^"]{1,2000})))""",
     """Process-Path="({process}[^"]{1,2000}(\\|\/)({process_name}[^"]{1,2000}))"""",
     """File-Path="(|({file_path}[^=]{1,2000}?))"\s\w{1,2000}="""
-  ]}
+  
+}
 ```

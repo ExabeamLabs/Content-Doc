@@ -14,7 +14,7 @@ Name = crowdstrike-app-activity-11
     """"Success":\s{0,100}({outcome}[^",]{1,2000})""",
     """"OperationName":"({event_name}[^"]{1,2000})"""
 ]
-}
+
 crowdstrike-app-activity = {
   Vendor = CrowdStrike
   Product = Falcon
@@ -30,5 +30,6 @@ crowdstrike-app-activity = {
     """suser=(system|({user}[^\s]{1,2000}))""",
     """"Success":({outcome}true|false)""",
     """"UserId":"({user_email}[^@]{1,2000}@({email_domain}[^"]{1,2000}))""", 
-  ]}
+  
+}
 ```

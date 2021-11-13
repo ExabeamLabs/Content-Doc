@@ -18,6 +18,7 @@ Name = syslog-liebsoft-account-switch
     """dwAppSpecificEventID="({event_code}[^"]{1,2000})""",
     """sNamespace"\s{1,100}value="({account_domain}[^"]{1,2000})"""
     ]
-  }
+  
+
 }
 ```

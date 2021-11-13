@@ -20,6 +20,7 @@ Name = windows-xml-powershell-800
     """<Data>CommandInvocation[^:]{1,2000}:\s{0,100}"{1,100}({command_invocation}[^"]{1,2000})"""
     ]
     DupFields = ["directory->process_directory"]
-}
+
+
 }
 ```

@@ -15,6 +15,7 @@ Name = apc-remote-logon
     """\slogged in from ({src_ip}[a-fA-F\d.:]{1,2000}?)\.?\s{1,100}"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

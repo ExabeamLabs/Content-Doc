@@ -17,6 +17,7 @@ Name = cef-ata-ldap-bruteforce-alert
     """msg=[^=]{0,2000}? from (?:({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[^\.\s]{1,2000}))""",
     """cs1=({additional_info}[^=]{1,2000}?)\s{0,100}"{0,20}(\w+=|$)"""
   ]
-}
+
+
 }
 ```

@@ -25,6 +25,7 @@ Name = cef-symantec-email-alert-1
       """"messageSize":({bytes}\d{1,100})""",
     ]
     DupFields = [ "recipient->external_address" ]
-  }
+  
+
 }
 ```

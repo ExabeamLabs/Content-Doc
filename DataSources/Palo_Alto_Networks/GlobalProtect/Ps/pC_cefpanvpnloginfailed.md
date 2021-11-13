@@ -18,6 +18,7 @@ Name = cef-pan-vpn-login-failed
     """Client OS( version)?:\s{1,100}({os}[^":]{1,2000})(,|\.)""",
     """error:\s{1,100}({failure_reason}[^":]{1,2000})(,|\.)"""
   ]
-}
+
+
 }
 ```

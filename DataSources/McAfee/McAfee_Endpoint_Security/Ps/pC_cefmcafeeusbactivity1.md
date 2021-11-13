@@ -24,6 +24,7 @@ Name = cef-mcafee-usb-activity-1
         """(\s|\|)msg=.+?to\s{1,100}({activity}[^,=]{1,2000})(,\s|\s|$)""",
         """(\s|\|)ad\.AppProductName =({process_name}.+?)\s{1,100}([\w\.-]{1,2000}=|$)""",
       ]
-    }
+    
+
 }
 ```

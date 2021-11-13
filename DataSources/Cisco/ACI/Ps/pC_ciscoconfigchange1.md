@@ -14,6 +14,7 @@ Name = cisco-config-change-1
 	"""remoteuser-({user}[^,\s]{1,2000})""",
 	"""info\].+?\s({additional_info}.+?)\s{0,100}$"""
   ]
-}
+
+
 }
 ```

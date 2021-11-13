@@ -3,7 +3,7 @@
 {
 Name = lastline-security-alert-1
   Conditions = [ """CEF:""", """|Lastline|""", """|dns-resolution|""", """|Suspicious DNS Resolution|""" ]
-}
+
 lastline-security-alert = {
     Vendor = Lastline
     Product = Lastline
@@ -29,5 +29,6 @@ lastline-security-alert = {
           """fname=({file_name}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
           """(mailUrlHash|fileHash)=({md5}.+?)\s{1,100}(\w+=|$)""",
           """\sact=({outcome}[^=]{1,2000}?)\s{0,100}\w+=""",
-    ]}
+    
+}
 ```

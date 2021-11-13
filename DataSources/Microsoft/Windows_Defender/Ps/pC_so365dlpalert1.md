@@ -23,6 +23,7 @@ Name = s-o365-dlp-alert-1
     """src-account-name":"({account_name}[^"]{1,2000})""",
     """Operation":\s{0,100}"({additional_info}[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

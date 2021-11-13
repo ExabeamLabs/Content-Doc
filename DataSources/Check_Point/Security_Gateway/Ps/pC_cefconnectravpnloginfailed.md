@@ -19,6 +19,7 @@ Name = cef-connectra-vpn-login-failed
     """\smsg=({failure_reason}.+?)(\s{1,100}[\w\.:]{1,2000}=|$)""",
   ]
   DupFields = [ "host->dest_host" , "user->account"]
-}
+
+
 }
 ```

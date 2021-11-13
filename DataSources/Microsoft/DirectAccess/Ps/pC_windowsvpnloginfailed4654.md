@@ -8,7 +8,7 @@ Name = windows-vpn-login-failed-4654
     """({event_name}An IPsec quick mode negotiation failed)"""
     """({outcome}failed)""",
   ]
-}
+
 windows-vpn-direct-access = {
   Vendor = Microsoft
   Product = DirectAccess
@@ -21,5 +21,6 @@ windows-vpn-direct-access = {
     """({log_type}Microsoft-Windows-Security-Auditing)""",
     """Local Network Address:\s{0,100}({src_ip}[^\s]{1,2000})\s""",
     """Remote Network Address:\s{0,100}({dest_ip}[^\s]{1,2000})\s""",
-  ]}
+  
+}
 ```

@@ -13,6 +13,7 @@ Name = pulsesecure-vpn-login
     """changed from (::ffff:)?({src_ip}[A-Fa-f:\d.]{1,2000}) to (::ffff:)?({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
   DupFields = ["user->account"]
-}
+
+
 }
 ```

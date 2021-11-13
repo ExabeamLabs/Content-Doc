@@ -14,6 +14,7 @@ Name = anywhere365-app-activity
     """\s({log_id}\w+-\w+-\w+-\w+-\w+)\s""",
     """CallReceivedOnEndpoint:\s'sip:({recipient}[^@]{1,2000}[^\.]{1,2000}\.[^,\s;']{1,2000})""",
   ]
-}
+
+
 }
 ```
