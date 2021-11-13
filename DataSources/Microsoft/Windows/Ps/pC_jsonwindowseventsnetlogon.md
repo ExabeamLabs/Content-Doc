@@ -27,6 +27,7 @@ Name = json-windows-events-netlogon
     """"Message"{0,20}:"{0,20}The session setup from the computer ({src_host}[^\s]{1,2000})\s""",
     """The following error occurred:(\s|\\r|\\n)*({failure_reason}[^."]{1,2000})"""
   ]
-}
+
+
 }
 ```

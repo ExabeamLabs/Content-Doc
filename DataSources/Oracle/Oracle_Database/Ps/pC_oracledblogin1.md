@@ -23,6 +23,7 @@ Name = oracle-db-login-1
     """COMMENT\$+TEXT:\[\d{1,100}\]\s{0,100}.+?PORT=({dest_port}\d{1,100})""",
   ]
   DupFields = [ "user->os_user" ]
-}
+
+
 }
 ```

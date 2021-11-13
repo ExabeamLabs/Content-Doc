@@ -7,7 +7,7 @@ Name = s-xml-windows-member-9
   Fields =${WinParserTemplates.s-xml-windows-member.Fields}[
     """<Data Name ='RemoteUserAccount'>([^<>]{1,2000}?\\)?(-|[^\$\s<>]{1,2000}\$|({account}[^\s<>]{1,2000}))"""
   ]
-}
+
 s-xml-windows-member = {
   Vendor = Microsoft
   Product = Windows
@@ -38,5 +38,6 @@ s-xml-windows-member = {
     """<Data Name(\\)?='RemoteMachineAccount'>({dest_host}[^<]{1,2000})"""
     
   ]
-  DupFields = [ "host->dest_host" ]}
+  DupFields = [ "host->dest_host" 
+}
 ```

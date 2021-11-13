@@ -29,6 +29,7 @@ Name = netskope-dlp-alert
     """"site":\s{0,100}"({site_at}[^"]{1,2000})""""
   ]
   DupFields = [ "file_path->file_path_at", "additional_info->shared_with_at" ]
-}
+
+
 }
 ```

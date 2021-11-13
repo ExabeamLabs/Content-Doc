@@ -18,6 +18,7 @@ Name = physical-badge-access-2
       """\sCardNumber="({badge_id}\d{1,100})""",
       """\sEventType="({outcome}[^"]{1,2000})""",
     ]
-  }
+  
+
 }
 ```

@@ -25,6 +25,7 @@ Name = sysmon-image-loaded
       """Signed:\s{0,100}({signed}.+?)\s{0,100}\w+:"""
     ]
     DupFields = [ "host->dest_host","directory->process_directory" ]
-  }
+  
+
 }
 ```

@@ -26,6 +26,7 @@ Name = raw-windows-account-4722
      """"TargetAccount":"(({target_domain}[^\\\s"]{1,2000})\\+)?({target_user}[^\\\s"]{1,2000})""",
      """"SubjectLogonId":"({logon_id}[^\s"]{1,2000})""",
   ]
-}
+
+
 }
 ```

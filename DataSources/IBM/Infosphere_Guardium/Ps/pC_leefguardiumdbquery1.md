@@ -25,6 +25,7 @@ Name = leef-guardium-db-query-1
     """\|usrName =({service_name}[^;\|]{1,2000}?)\s{0,20}(;|\|)"""
   ]
   DupFields = [ "db_user->account" ]
-}
+
+
 }
 ```

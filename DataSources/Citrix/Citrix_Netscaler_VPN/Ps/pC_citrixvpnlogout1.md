@@ -18,6 +18,7 @@ Name = citrix-vpn-logout-1
     """\sTotal_bytes_recv\s{1,100}({bytes_in}\d{1,100})""",
     """\sconnectionId\s{1,100}({sconnection_id}\S+)""",
   ]
-}
+
+
 }
 ```

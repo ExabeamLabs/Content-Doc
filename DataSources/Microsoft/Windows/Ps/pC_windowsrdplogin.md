@@ -19,6 +19,7 @@ Name = windows-rdp-login
     """<SessionID>({session_id}\d{1,100})<""",
     """<Address>({src_ip}[a-fA-F\d.-]{1,2000})<""",
   ]
-}
+
+
 }
 ```

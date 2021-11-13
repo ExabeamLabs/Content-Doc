@@ -27,6 +27,7 @@ Name = symantec-cloud-dlp-alert
     """src=({src_ip}[^\s]{1,2000})""",
   ]
   DupFields = ["file_path->resource"]
-}
+
+
 }
 ```

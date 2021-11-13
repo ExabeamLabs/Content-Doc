@@ -26,6 +26,7 @@ Name = symantec-cloud-activity
     """ext__shared_with_=({target}[^\s]{1,2000})\s\w+="""
   ]
   DupFields = ["file_path->resource", "app->service", "activity->accesses"]
-}
+
+
 }
 ```

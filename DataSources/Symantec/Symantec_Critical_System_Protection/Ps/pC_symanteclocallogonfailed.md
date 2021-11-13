@@ -8,7 +8,7 @@ Name = symantec-local-logon-failed
     """({outcome}(F|f)ailed)""",
     """({event_name}Failed Login)"""
   ]
-}
+
 symantec-critical-sys-protection = {
     Vendor = Symantec
     Product = Symantec Critical System Protection
@@ -29,5 +29,6 @@ symantec-critical-sys-protection = {
       """\sSVA_IP_ADDRESS:\s{0,100}"{1,20}({src_ip}[^"\s]{1,2000})""",
       """\sDOMAIN_NAME\s{0,100}:\s{0,100}"{1,20}({domain}[^"\s]{1,2000})""",
     ]
-    DupFields = ["host->dest_host"]}
+    DupFields = ["host->dest_host"
+}
 ```

@@ -24,6 +24,7 @@ Name = n-cef-bluecoat-proxy
     """\WnitroURL=({uri_path}[^=\?]{0,2000}?)(\?({uri_query}.*?))?\s{1,100}(\w+=|$)""",
     """\Wduser=({user_agent}.+?)\s{1,100}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

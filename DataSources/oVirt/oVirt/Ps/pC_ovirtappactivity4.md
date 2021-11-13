@@ -15,6 +15,7 @@ Name = ovirt-app-activity-4
     """EVENT_ID:.*?User ({user}[^\s\(\)"]{1,2000}) got disconnected from VM ({object}[^\s"]{1,2000})""",
     """({app}ovirt)"""
   ]
-}
+
+
 }
 ```

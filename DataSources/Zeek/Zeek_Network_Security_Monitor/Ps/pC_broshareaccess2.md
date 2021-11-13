@@ -15,6 +15,7 @@ Name = bro-share-access-2
      """\d{10}\.\d{6}\t([^\t]{1,2000}\t){8}({file_path}({file_parent}[^\t]{0,2000}?(\\u005c|[\\\/])*)({file_name}[^\t\\\/]{1,2000}?(\.({file_ext}[^\t\\\/\.]{1,2000}))?))\t""",
      """({protocol}SMB)"""
     ]
-}
+
+
 }
 ```

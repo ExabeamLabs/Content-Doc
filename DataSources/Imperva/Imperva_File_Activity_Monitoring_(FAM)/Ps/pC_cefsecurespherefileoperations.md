@@ -32,6 +32,7 @@ Name = cef-securesphere-file-operations
     """\Wcs10=({access_type}.+?)\s{1,100}(\w+=|$)""",
     """\Wcat=({category}.+?)\s{1,100}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

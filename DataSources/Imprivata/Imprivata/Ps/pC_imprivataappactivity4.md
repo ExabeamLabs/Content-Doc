@@ -4,7 +4,7 @@
 Name = imprivata-app-activity-4
   DataType = "app-activity"
   Conditions = [ """Event: Application Password Change""" ]
-}
+
 imprivata-app-activity = {
   Vendor = Imprivata
   Product = Imprivata
@@ -16,5 +16,6 @@ imprivata-app-activity = {
     """User:\s{0,100}({user}[^\s\#]{1,2000})""",
     """Event:\s{0,100}({activity}.+?)\s{1,100}ServerIP:""",
     """({app}Imprivata)""",
-  ]}
+  
+}
 ```

@@ -16,6 +16,7 @@ Name = aix-task-created
     """\sCMD\s{1,100}\(({task_name}[^\s\)]{1,2000})""",
     """\sCMD \(\s{0,100}({command_line}[^\)]{1,2000})\s{0,100}\)""",
   ]
-}
+
+
 }
 ```

@@ -20,6 +20,7 @@ Name = sourcefire-security-alert
     """\[Impact:\s{0,100}(Unknown|({impact}[^\]]{1,2000}))""",
     """ From \\"({src_host}[\w\-.]{1,2000})\\""",
   ]
-}
+
+
 }
 ```

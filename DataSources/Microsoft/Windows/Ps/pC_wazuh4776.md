@@ -11,7 +11,7 @@ Name = wazuh-4776
       """Error Code:\s{0,100}({result_code}[\w\-]{1,2000})"""
       """Source Workstation:\s{0,100}\\*(?:\s{1,100}Error Code:|(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s{0,100}Error Code:)|(\s{0,100}({dest_host}[^\s]{1,2000}?)\s{0,100}Error Code:))\s{0,100}""" 
   ]
-}
+
 wazuh-windows-template = {
     Vendor = Microsoft
     Product = Windows
@@ -31,5 +31,6 @@ wazuh-windows-template = {
       """"data.data":"({data}[^"]{1,2000})"""
       """"rule.description":"({description}[^"]{1,2000})"""
       """"decoder.name":"({decoder_name}[^"]{1,2000})"""
-    ]}
+    
+}
 ```

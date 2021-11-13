@@ -8,7 +8,7 @@ Name = q-aruba-failed-nac-logon-1
   Fields = ${HPEParserTemplates.q-aruba-nac-logon.Fields} [
     """Common\.Request-Timestamp=({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d-\d{1,100})"""
 ]
-}
+
 q-aruba-nac-logon = {
   Vendor = HP
   Product = Aruba ClearPass Access Control and Policy Management
@@ -23,5 +23,6 @@ q-aruba-nac-logon = {
     """Common\.Host-MAC-Address=({src_mac}\w+)""",
     """Common\.NAS-IP-Address=({dest_ip}[A-Fa-f:\d.]{1,2000})"""
   ]
-  DupFields = [ "host->auth_server" ]}
+  DupFields = [ "host->auth_server" 
+}
 ```

@@ -4,7 +4,7 @@
 Name = cef-rightcrowd-failed-physical-access
   DataType = "failed-physical-access"
   Conditions = [ """CEF:""","""|RightCrowd|RightCrowd|""","""|Invalid reader|""","""eventId=""" ]  
-}
+
 rightcrowd-physical-access = {
     Vendor = RightCrowd
     Product = RightCrowd
@@ -27,5 +27,6 @@ rightcrowd-physical-access = {
       """cs3=({site_name}[^=]{1,2000})\s{1,100}\w+=""",
       """cs2=({badge_status}[^=]{1,2000})\s{1,100}\w+="""
     ]
-    DupFields = [ "badge_reader->location_door" ]}
+    DupFields = [ "badge_reader->location_door" 
+}
 ```

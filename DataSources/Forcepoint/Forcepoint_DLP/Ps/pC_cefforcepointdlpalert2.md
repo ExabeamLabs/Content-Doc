@@ -17,6 +17,7 @@ Name = cef-forcepoint-dlp-alert-2
     """\Wsuser=({user}.+?)\s{1,100}(\w+=|$)""",
     """\Wact=({outcome}.+?)\s{1,100}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

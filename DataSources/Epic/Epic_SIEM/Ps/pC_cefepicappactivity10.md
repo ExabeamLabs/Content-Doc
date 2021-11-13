@@ -7,7 +7,7 @@ Name = cef-epic-app-activity-10
   Fields = ${EpicParserTemplates.cef-epic-app-activity.Fields} [
     """PRTCTDSRCUSERID=({user}[^\s]{1,2000})""",
   ]
-}
+
 cef-epic-app-activity = {
   Vendor = Epic
   Product = Epic SIEM
@@ -25,5 +25,6 @@ cef-epic-app-activity = {
     """MASKMODE=({result}.+?)\s{1,100}(\w+=|$)""",
     """PREVUSER=({user}[^\s,]{1,2000})""",
     """NEWUSER=({account}[^\s,]{1,2000})""",
-  ]}
+  
+}
 ```

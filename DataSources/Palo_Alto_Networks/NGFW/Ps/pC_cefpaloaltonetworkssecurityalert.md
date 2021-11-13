@@ -24,6 +24,7 @@ Name = cef-palo-alto-networks-security-alert
     """\ssuser=((({domain}[^\\\/=]{1,2000})[\\\/]{1,2000})?({user}[^\s]{1,2000}))"""
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

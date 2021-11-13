@@ -23,6 +23,7 @@ Name = cef-iis-web-activity
     """\srequestClientApplication=({user_agent}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\scs1=({referrer}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
-}
+
+
 }
 ```

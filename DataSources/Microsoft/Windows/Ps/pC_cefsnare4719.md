@@ -19,6 +19,7 @@ Name = cef-snare-4719
       """cs5=({subcategory}.+?)\s{1,100}\w+="""
       """cs6=({audit_category}.+?)\s{1,100}\w+="""
     ]
-  }
+  
+
 }
 ```

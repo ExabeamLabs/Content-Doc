@@ -27,6 +27,7 @@ Name = json-sentinelone-security-alert
     """mitigationStatus":\s"({alert_severity}[^"]{1,2000})""", 
   ]
   DupFields = ["file_name->process_name", "file_path->process"]
-}
+
+
 }
 ```

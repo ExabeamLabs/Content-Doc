@@ -21,6 +21,7 @@ Name = o365-inbox-rules
     """destinationServiceName =({app}.+?)\sdevice"""
   ]
   DupFields = ["user_domain->email_domain"]
-}
+
+
 }
 ```

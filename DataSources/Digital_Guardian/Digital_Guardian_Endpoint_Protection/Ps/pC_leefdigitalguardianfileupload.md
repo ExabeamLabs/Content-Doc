@@ -3,7 +3,7 @@
 {
 Name = leef-digitalguardian-file-upload
   Conditions = [ """LEEF:""", """|Digital Guardian|Digital Guardian|""", """DigitalGuardian-Events""", """|Network Transfer Upload|""" ]
-}
+
 leef-digitalguardian-file-operation = {
   Vendor = Digital Guardian
   Product = Digital Guardian Endpoint Protection
@@ -25,5 +25,6 @@ leef-digitalguardian-file-operation = {
     """DestinationFile=(|({file_name}.+?(\.({file_ext}[^\.]{1,2000}?))?))\s{0,100}(\w+=|$)""",
     """SourceDirectory=(|({src_file_dir}.+?))\s{0,100}(\w+=|$)""",
     """SourceFile=(|({src_file_name}.+?))\s{0,100}(\w+=|$)""",
-  ]}
+  
+}
 ```

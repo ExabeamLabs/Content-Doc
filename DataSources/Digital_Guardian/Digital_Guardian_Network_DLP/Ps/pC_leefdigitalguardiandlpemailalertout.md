@@ -7,7 +7,7 @@ Name = leef-digitalguardian-dlp-email-alert-out
   Lms = QRadar
   DataType = "dlp-email-alert"
   Conditions = [ """LEEF:""", """|Digital Guardian|Digital Guardian|""", """DigitalGuardian-Events""", """|Send Mail|""" ]
-}
+
 leef-digitalguardian-dlp-email-alert-out = {
   Vendor = Digital Guardian
   Product = Digital Guardian Endpoint Protection
@@ -33,5 +33,6 @@ leef-digitalguardian-dlp-email-alert-out = {
     """FileSizeMB=({bytes_num}\d{1,100})""",
     """FileSize({bytes_unit}MB)""",
     """DestinationFile=(|({attachments}[^\.]{1,2000}\.({file_ext}.+?)))\s{0,100}(\w+=|$)""",
-  ]}
+  
+}
 ```

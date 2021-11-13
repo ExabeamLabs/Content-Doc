@@ -16,6 +16,7 @@ Name = checkpoint-connectra-vpn-login
     """\,assigned_IP:=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\,orig=({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
-}
+
+
 }
 ```

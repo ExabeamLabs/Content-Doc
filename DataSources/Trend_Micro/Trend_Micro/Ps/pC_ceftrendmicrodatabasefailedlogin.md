@@ -16,6 +16,7 @@ Name = cef-trendmicro-database-failed-login
     """Login failed for user\s{0,100}'(({domain}[^']{1,2000}?)\\+)?({user}[^'\\]{1,2000})'""",
     """Reason:\s{0,100}({failure_reason}.+?)\s{0,100}\.""",
   ]
-}
+
+
 }
 ```

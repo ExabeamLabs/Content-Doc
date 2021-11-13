@@ -23,6 +23,7 @@ Name = damballa-cef-alert
     """\sdvchost=({host}[^\s]{1,2000})""",
     """\sreason=({alert_type}[^\s]{1,2000})"""
   ]
-}
+
+
 }
 ```

@@ -19,6 +19,7 @@ Name = cef-netskope-app-activity-51
     """"activity":\s{0,100}"({activity}[^"]{1,2000})"""",
     """msg=({additional_info}[^=\.]{1,2000})""",
   ]
-}
+
+
 }
 ```

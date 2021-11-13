@@ -19,6 +19,7 @@ Name = cef-logrhythm-process-created
       """logonusers=(({domain}[^\\]{1,2000}?)\\+)?({user}[^\s,]{1,2000})""",
       """LOCALIP=({src_ip}[A-Fa-f:\d.]{1,2000})\sLOCALPORT=({src_port}\d{1,100})\sREMOTEIP=({dest_ip}[A-Fa-f:\d.]{1,2000})\sREMOTEPORT=({dest_port}\d{1,100})""",
           ]
-}
+
+
 }
 ```

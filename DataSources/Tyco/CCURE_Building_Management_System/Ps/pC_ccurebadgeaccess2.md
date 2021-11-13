@@ -17,6 +17,7 @@ Name = ccure-badge-access-2
       """<StateCode>({outcome}.+?)</StateCode>""",
       """<Direction.*?>({direction}.+?)</Direction>""",
     ]
-  }
+  
+
 }
 ```

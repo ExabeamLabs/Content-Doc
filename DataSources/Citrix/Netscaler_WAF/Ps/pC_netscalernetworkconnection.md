@@ -23,6 +23,7 @@ Name = netscaler-network-connection
     """Total_bytes_recv\s({bytes_in}\d{1,100})""",
   ]
   DupFields = ["event_name->activity"]
-}
+
+
 }
 ```

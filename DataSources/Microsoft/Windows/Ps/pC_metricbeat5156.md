@@ -24,6 +24,7 @@ Name = metricbeat-5156
     """"filter_information-LayerName":"({layer_name}[^"]{1,2000})"""",
   ]
   DupFields = ["directory->process_directory"]
-}
+
+
 }
 ```

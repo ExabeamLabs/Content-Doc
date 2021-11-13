@@ -36,6 +36,7 @@ Name = syslog-juniper-vpn-realm-1
     """\smsg="({additional_info}[^"]{1,2000})""",
   ]
   DupFields = [ "dest_ip->host" , "user->account"]
-}
+
+
 }
 ```

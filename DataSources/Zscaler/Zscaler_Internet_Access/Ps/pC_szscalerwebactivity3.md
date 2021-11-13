@@ -37,6 +37,7 @@ Name = s-zscaler-web-activity-3
     """"dept=(None|({department}[^"]{1,2000}))""",
     """"malwarecat=(None|({malware_category}[^"]{1,2000}))"""
     ]
-}
+
+
 }
 ```

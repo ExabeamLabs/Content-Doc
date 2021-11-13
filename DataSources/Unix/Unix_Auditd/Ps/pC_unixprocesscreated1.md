@@ -11,7 +11,7 @@ Name = unix-process-created-1
     """exe\\?=\\?"({command_line}[^"]{1,2000})""",
     """\ssuccess\\?=({outcome}[^\s]{1,2000})\s\w+"""
   ]	
-}
+
 unix-template = {
     Vendor = Unix
     Product = Unix Auditd
@@ -27,5 +27,6 @@ unix-template = {
       """\WeventId=({alert_id}\d{1,100})""",
       """\Wsuser=({user}[^\s]{1,2000})""",
       """\Wdhost=({dest_host}[\w\-.]{1,2000})""",
-    ]}
+    
+}
 ```

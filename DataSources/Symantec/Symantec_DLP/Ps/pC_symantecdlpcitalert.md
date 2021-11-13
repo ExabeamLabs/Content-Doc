@@ -25,6 +25,7 @@ Name = symantec-dlp-cit-alert
     """\sRECIPIENTS\s(?:N\/A|https:\/\/.+?|http:\/\/.+?|Unknown|({recipients}.+?))\s""",
     ]
     DupFields = [ "alert_type->alert_name" , "recipient->external_address" ]
-  }
+  
+
 }
 ```

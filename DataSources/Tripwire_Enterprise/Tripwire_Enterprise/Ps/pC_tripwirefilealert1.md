@@ -27,6 +27,7 @@ SOAR {
     NameTemplate = """Tripwire Alert ${alert_name} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="device", Name ="dest_address", Fields=["dest_host->host_name"]}
+      {EntityType="device", Name ="dest_address", Fields=["dest_host->host_name"]
+
 }
 ```

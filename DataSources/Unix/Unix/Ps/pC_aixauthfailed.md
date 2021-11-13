@@ -13,6 +13,7 @@ Name = aix-auth-failed
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """\suser=({user}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
-}
+
+
 }
 ```

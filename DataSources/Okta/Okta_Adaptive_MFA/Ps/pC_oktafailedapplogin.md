@@ -20,6 +20,7 @@ okta-failed-app-login = {
       """"DisplayName":"({user_fullname}[^"]{1,2000}?\s[^"]{1,2000})""""
       """"DisplayName":\["({user_fullname}[^,"]{1,2000}?\s[^,"]{1,2000})"""
     ]
-}
+
+
 }
 ```

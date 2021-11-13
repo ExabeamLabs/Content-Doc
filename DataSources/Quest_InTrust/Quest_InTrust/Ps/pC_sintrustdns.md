@@ -14,6 +14,7 @@ Name = s-intrust-dns
       """\s(New )?DNS Record Data[:\s]{0,2000}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
     ]
     DupFields = [ "dest_host->user" ]
-  }
+  
+
 }
 ```

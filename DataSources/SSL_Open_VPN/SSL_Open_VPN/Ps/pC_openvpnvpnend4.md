@@ -16,6 +16,7 @@ Name = openvpn-vpn-end-4
     """({event_name}Inactivity timeout)""",
     """Inactivity timeout\s({additional_info}[^\"]{1,2000}?)\s{0,100}("|$)""",
   ]
-}
+
+
 }
 ```

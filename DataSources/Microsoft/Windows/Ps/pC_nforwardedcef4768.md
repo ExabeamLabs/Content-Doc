@@ -18,6 +18,7 @@ Name = n-forwarded-cef-4768
       """suser=({user}.+?)\s{1,100}\w+="""
       """nitroService_Name =({service_name}\S+)"""
     ]
-  }
+  
+
 }
 ```

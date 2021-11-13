@@ -4,7 +4,7 @@
 Name = sophos-app-activity-failed
   DataType = "app-activity"
   Conditions = [ """Action=Blocked;""", """EventType=Application control;""", """ReportingName =""", """ComputerIPAddress="""  ] 
-}
+
 sophos-endpoint-events = {
   Vendor = Sophos
   Product = Sophos Endpoint Protection
@@ -22,5 +22,6 @@ sophos-endpoint-events = {
      """ComputerIPAddress=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
      """exabeam_host=({host}[\w\-.]{1,2000})""",
      """ComputerDomain=({domain}[^;]{1,2000})""",
-   ]}
+   
+}
 ```

@@ -33,6 +33,7 @@ Name = cisco-ftd-permit-any
     """User="{1,20}(No Authentication Required|({user}[^"]{1,2000}))"{1,20}""",
   ]
   DupFields = [ "outcome->action" ]
-}
+
+
 }
 ```

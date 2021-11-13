@@ -7,7 +7,7 @@ Name = windows-dns-query-2
   Fields = ${MicrosoftParserTemplates.windows-dns.Fields}[
      """\sQuestion Name =({query}[^\t"]{1,2000})""",
   ]
-}
+
 windows-dns = {
   Vendor = Microsoft
   Product = Windows
@@ -26,5 +26,6 @@ windows-dns = {
     """\sResponseCode=({dns_response_code}[^\t]{1,2000})""",
     """\sQuestion Type=({query_type}[^\t]{1,2000})""",
     """\sQuestion Name =({query}[^\t"]{1,2000})"""
-  ]}
+  
+}
 ```

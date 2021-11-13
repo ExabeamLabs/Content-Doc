@@ -4,7 +4,7 @@
 Name = s-oracle-db-login
    DataType = "database-login"
    Conditions = [ """ACTION_NAME="LOGON"""", """ACTION="100"""" ]
- }
+ 
 s-oracle-db-template{
     Vendor = Oracle
     Product = Oracle Database
@@ -23,5 +23,6 @@ s-oracle-db-template{
       """\sUSERHOST="{1,20}([^\\]{1,2000}\\)?({src_host}[^"]{1,2000})""",
       """ACTION_NAME="({activity}[^"]{1,2000})""",
       """DBID="({database_id}\d{1,100})"""
-    ]}
+    
+}
 ```

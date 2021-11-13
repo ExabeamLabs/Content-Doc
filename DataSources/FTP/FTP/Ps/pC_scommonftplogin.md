@@ -18,6 +18,7 @@ Name = s-common-ftp-login
     """\]pass\s{1,100}(\S+\s{1,100}){2}({outcome}\d{1,100})""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

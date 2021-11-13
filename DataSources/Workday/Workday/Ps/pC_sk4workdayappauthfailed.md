@@ -18,6 +18,7 @@ Name = sk4-workday-app-auth-failed
     """dproc=({event_name}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """({app}Workday)"""
   ]
-}
+
+
 }
 ```

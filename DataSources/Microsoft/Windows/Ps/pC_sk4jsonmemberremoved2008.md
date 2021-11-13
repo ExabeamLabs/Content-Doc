@@ -13,7 +13,7 @@ Name = sk4-json-member-removed-2008
     """"{1,20}MemberName"{1,20}:"{1,20}CN\\=({account_id}[^,"]{1,2000})""",
     """"{1,20}MemberName"{1,20}:"{1,20}CN\\=({account_dn}[^,"]{1,2000})""",
   ]
-}
+
 json-windows-events-1 = {
   Vendor = Microsoft
   Product = Windows
@@ -51,5 +51,6 @@ json-windows-events-1 = {
     """"{1,20}SidHistory"{1,20}:"{1,20}(-|({sid_history}[^"]{1,2000}))""",
     """"Keywords":"({outcome}[^"]{1,2000})"""
   ]
-  DupFields = ["event_id->event_code"]}
+  DupFields = ["event_id->event_code"
+}
 ```

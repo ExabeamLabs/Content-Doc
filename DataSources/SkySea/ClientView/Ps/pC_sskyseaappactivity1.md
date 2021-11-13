@@ -9,6 +9,7 @@ Name = s-skysea-app-activity-1
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
   Conditions = [ """,クリップボード,""" ]
   Fields = [
-    """({host}[\w\-.]{1,2000}),\d{1,100}
+    """({host}[\w\-.]{1,2000}),\d{1,100
+
 }
 ```

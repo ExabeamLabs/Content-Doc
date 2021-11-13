@@ -13,7 +13,7 @@ Name = bro-ftp-1
     """"reply_msg":\s{0,100}"({additional_info}[^=]{1,2000}?)",""",
     """"data_channel\.resp_p":\s{0,100}({dest_port}\d{1,100})""",
   ]
-}
+
 json-bro-activity = {
   Vendor = Zeek
   Lms = Direct
@@ -28,5 +28,6 @@ json-bro-activity = {
     """"id\.resp_h\\?"{1,20}:\\?"{1,20}({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """"id\.resp_p\\?"{1,20}:({dest_port}\d{1,100})""",
     """"proto\\?"{1,20}:\\?"{1,20}({protocol}[^"]{1,2000})""",
-  ]}
+  
+}
 ```

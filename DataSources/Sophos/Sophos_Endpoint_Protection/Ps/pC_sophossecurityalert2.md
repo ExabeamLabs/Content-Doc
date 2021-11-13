@@ -27,6 +27,7 @@ Name = sophos-security-alert-2
     """"id":\s{0,100}"({alert_id}[^"]{1,2000})""",
   ]
   DupFields = [ "host->src_host" ]
-}
+
+
 }
 ```

@@ -16,6 +16,7 @@ Name = s-infoblox-dhcp-1
     """: DHCPACK on ({dest_ip}[A-Fa-f:\d.]{1,2000}) to ({dest_mac}[^\s]{1,2000}) (\(({dest_host}[\w\-.]{1,2000})\))?""",
   ]
   DupFields = [ "dest_host->user" ]
-}
+
+
 }
 ```

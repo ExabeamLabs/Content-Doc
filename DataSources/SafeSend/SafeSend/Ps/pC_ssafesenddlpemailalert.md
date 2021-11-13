@@ -21,6 +21,7 @@ Name = s-safesend-dlp-email-alert
     """\Wattachments="(|({attachments}[^"]{1,2000}))""",
   ]
   DupFields = [ "recipient->external_address" ]
-}
+
+
 }
 ```

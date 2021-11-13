@@ -25,6 +25,7 @@ Name = mcafee-network-alert
     """"threat_target_host_name":"({dest_host}[^"]{1,2000})"""",
     """"threat_type":"({additional_info}[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

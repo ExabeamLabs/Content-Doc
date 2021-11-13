@@ -22,6 +22,7 @@ Name = cef-juniper-vpn-close
     """Closed connection to=({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

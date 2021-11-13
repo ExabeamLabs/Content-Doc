@@ -7,7 +7,7 @@ Name = mcafee-security-alert-4
   Fields = ${McAfeeParserTemplates.mcafee-dlp-alert.Fields}[
     """serverhostname=({host}[^,]{1,2000})""",
   ]
-}
+
 mcafee-dlp-alert = {
     Vendor = McAfee
     Product = McAfee Endpoint Security
@@ -33,5 +33,6 @@ mcafee-dlp-alert = {
       """,ThreatName =({alert_name}[^,]{1,2000})""",
       """,eventname=({alert_name}[^,]{1,2000})""",
       """,Vulnerability Name =({alert_name}[^,]{1,2000})"""
-    ]}
+    
+}
 ```

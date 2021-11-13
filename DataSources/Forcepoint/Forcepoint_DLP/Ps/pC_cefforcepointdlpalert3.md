@@ -31,6 +31,7 @@ Name = cef-forcepoint-dlp-alert-3
     NameTemplate = """Forcepoint DLP Alert ${alert_name} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="user", Name ="user", Fields=["user->windows_id"]}
+      {EntityType="user", Name ="user", Fields=["user->windows_id"]
+
 }
 ```

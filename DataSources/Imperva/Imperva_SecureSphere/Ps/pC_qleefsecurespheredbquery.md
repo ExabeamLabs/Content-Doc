@@ -23,6 +23,7 @@ Name = q-leef-securesphere-db-query
     """\|Response Size=({response_size}\d{1,100})"""
   ]
   DupFields = [ "src_ip->host" ]
-}
+
+
 }
 ```

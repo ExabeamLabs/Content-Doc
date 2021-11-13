@@ -16,6 +16,7 @@ Name = httpd-auth-event
     """pam_(sss|unix)\(httpd:auth\):\s{1,100}authentication\s{1,100}({outcome}success|failure);""",
     """({event_code}httpd)""",
   ]
-}
+
+
 }
 ```

@@ -31,6 +31,7 @@ Name = fortinet-dlp-alert-email
     """\Wsessionid=({alert_id}\d{1,100})"""
   ]
   DupFields = ["bytes_out->bytes", "recipient->recipients"]
-}
+
+
 }
 ```

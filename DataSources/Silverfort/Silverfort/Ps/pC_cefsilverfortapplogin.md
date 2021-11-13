@@ -19,6 +19,7 @@ Name = cef-silverfort-app-login
     """app=(n\/a|({app}[^\s]{1,2000}))""",
     """cs2=({outcome}[^\s]{1,2000})""",
   ]
-}
+
+
 }
 ```

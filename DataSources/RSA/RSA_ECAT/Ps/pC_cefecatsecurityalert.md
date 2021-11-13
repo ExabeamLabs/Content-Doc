@@ -20,6 +20,7 @@ Name = cef-ecat-security-alert
     """\stargetModule=({malware_url}.+?)\s{1,100}(\w+=|$)""",
   ]
   DupFields = [ "dest_host->host" , "malware_url->process_name"]
-}
+
+
 }
 ```

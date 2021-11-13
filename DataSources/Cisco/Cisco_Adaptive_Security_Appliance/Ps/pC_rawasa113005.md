@@ -20,6 +20,7 @@ Name = raw-asa-113005
     """%ASA-\d{1,100}-({event_code}113005)""",
     """({event_name}AAA user authentication Rejected)""",
  ]
-}
+
+
 }
 ```

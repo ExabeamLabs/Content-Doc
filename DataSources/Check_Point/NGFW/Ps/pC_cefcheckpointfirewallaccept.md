@@ -4,7 +4,7 @@
 Name = cef-checkpoint-firewall-accept
   DataType = "network-connection"
   Conditions = [ """CEF:""", """|Check Point|""", """act=Accept""" ]
-}
+
 cef-checkpoint-firewall = {
   Vendor = Check Point 
   Product = NGFW
@@ -42,5 +42,6 @@ cef-checkpoint-firewall = {
     """\Win=({bytes_in}\d{1,100})""",
     """\Wout=({bytes_out}\d{1,100})""",
     """categoryOutcome=(\/)?({outcome}.+?)\s\w+="""
-  ]}
+  
+}
 ```

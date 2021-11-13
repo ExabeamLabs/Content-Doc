@@ -22,6 +22,7 @@ Name = cef-symantec-sep-alert-1
     """"severity":({alert_severity}\d{1,100})""",
     """"signature_name":"({alert_name}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

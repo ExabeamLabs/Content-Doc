@@ -18,6 +18,7 @@ Name = s-postfix-dlp-email-1
     """\Wto=<({recipient}[^\s\>,;]{1,2000})""",
     """\Wrelay=({dest_host}[\w\-.]{1,2000})\[({dest_ip}[a-fA-F:\d.]{1,2000})""",
   ]
-}
+
+
 }
 ```

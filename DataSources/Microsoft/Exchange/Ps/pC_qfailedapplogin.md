@@ -21,6 +21,7 @@ Name = q-failed-app-login
     """sc-status=({failure_reason}.+?)\s{0,100}([\w\-\(\)]{1,2000}=|$)""",
     """s-port=({protocol}.+?)\s{0,100}([\w\-\(\)]{1,2000}=|$)""",
   ]
-}
+
+
 }
 ```

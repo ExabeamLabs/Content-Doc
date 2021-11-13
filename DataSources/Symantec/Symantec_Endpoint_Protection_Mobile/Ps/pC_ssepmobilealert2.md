@@ -7,7 +7,7 @@ Name = s-sep-mobile-alert-2
     """"severity":\s{0,100}"({alert_severity}[^"]{1,2000})".+?"id":\s{0,100}({alert_id}\d{1,100})""",
     """"type":\s{0,100}"({alert_type}[^"]{1,2000})""",
   ]
-}
+
 s-sep-mobile-alert = {
   Vendor = Symantec
   Product = Symantec Endpoint Protection Mobile
@@ -27,5 +27,6 @@ s-sep-mobile-alert = {
     """"severity":\s{0,100}"({alert_severity}[^"]{1,2000})".+?"id":\s{0,100}({alert_id}\d{1,100})""",
     """"model":\s{0,100}"({device_model}[^"]{1,2000})"""",
   ]
-  DupFields = [ "src_host->device_name" ]}
+  DupFields = [ "src_host->device_name" 
+}
 ```

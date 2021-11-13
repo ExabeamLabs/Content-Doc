@@ -19,6 +19,7 @@ Name = s-mcafee-email-dlp-alert-out
      """Evidence="({recipients}[^=]{1,2000}@[^,]{1,2000}),""",
      """exabeam_host=({host}[^\s]{1,2000})"""
   ]
-}
+
+
 }
 ```

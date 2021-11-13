@@ -33,6 +33,7 @@ Name = leef-carbonblack-file-alert
     """\|Carbon_Black\|Protection\|([^\|]{0,2000}?\|){1}({accesses}[^\|]{1,2000}?)(\s{0,100}\([^|]{1,2000})?\|""",
   ]
   DupFields = [ "old_hash->new_hash" ]
-}
+
+
 }
 ```

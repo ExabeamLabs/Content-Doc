@@ -21,6 +21,7 @@ Name = s-sendmail-email-from
     """\srelay=(::ffff:)?({dest_host}[\w\-.]{1,2000})\s{0,100}\[(::ffff:)?({dest_ip}[a-fA-F:\d.]{1,2000})""",
   ]
   DupFields = [ "sender->user_email" ]
-}
+
+
 }
 ```

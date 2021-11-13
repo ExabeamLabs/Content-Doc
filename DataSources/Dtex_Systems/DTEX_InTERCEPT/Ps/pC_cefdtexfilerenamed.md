@@ -27,6 +27,7 @@ Name = cef-dtex-file-renamed
     """"ImageDetails":\s{0,100}\{.*?"ProductName":\s{0,100}"({app}[^"]{1,2000})""""
   ]
   DupFields = [ "host->dest_host","directory->process_directory" ]
-}
+
+
 }
 ```

@@ -23,6 +23,7 @@ Name = cef-powershell-300
     """-file\s({process}({process_directory}[^\s]{1,2000}\\\\({process_name}[^\s\\]{1,2000})))""",
     """CommandLine\\*=({command_line}[^\s]{1,2000})""",
   ]
-}
+
+
 }
 ```

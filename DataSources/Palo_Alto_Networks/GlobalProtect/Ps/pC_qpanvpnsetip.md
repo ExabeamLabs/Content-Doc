@@ -7,7 +7,7 @@ Name = q-pan-vpn-setip
   Fields = ${PAParserTemplates.q-pan-vpn-parser.Fields} [
     """Private IP:\s?({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
-}
+
 q-pan-vpn-parser = {
   Vendor = Palo Alto Networks
   Product = GlobalProtect
@@ -21,5 +21,6 @@ q-pan-vpn-parser = {
     """DeviceName =({host}[\w\-.]{1,2000})""",
     """Client OS( version)?:\s{1,100}({os}[^":]{1,2000})(,|\.)""",
     """Login from:\s{0,100}({src_ip}[a-fA-F\d.:]{1,2000})"""
-  ]}
+  
+}
 ```

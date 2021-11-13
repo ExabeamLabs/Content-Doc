@@ -18,6 +18,7 @@ Name = trend-micro-alert-7
     """\[({alert_type}[^@]{1,2000})""",
   ]
   DupFields = [ "alert_type->alert_name" ]
-}
+
+
 }
 ```

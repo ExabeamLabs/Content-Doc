@@ -4,7 +4,7 @@
 Name = checkpoint-firewall-network-connection-4
   DataType = "network-connection"
   Conditions = [ """product="VPN-1 & FireWall-1"""", """,i/f_name=""", """action=drop""" ]
-}
+
 checkpoint-firewall-2 = {
   Vendor = Check Point 
   Product = NGFW
@@ -24,5 +24,6 @@ checkpoint-firewall-2 = {
     """\Wproto=({protocol}[^,]{1,2000})""",
     """\Wmessage_info="({alert_name}[^"]{1,2000})""",
   ]
-  DupFields = [ "alert_name->alert_type" ]}
+  DupFields = [ "alert_name->alert_type" 
+}
 ```

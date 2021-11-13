@@ -4,7 +4,7 @@
 Name = microsoft-dns-renew-jp
   TimeFormat = "MM/dd/yy,HH:mm:ssZ"
   Conditions = [ """,更新,""" ]
-}
+
 microsoft-dns-renew-jp = {
   Vendor = Microsoft
   Product = Windows
@@ -18,5 +18,6 @@ microsoft-dns-renew-jp = {
     """<Identifier>({host}[^<]{1,2000})<\/Identifier>""",
     """,(DNS.*)?(更新|要求|成功|更新成功)([^,]{1,2000})?,({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}),({dest_host}[^,]{1,2000}),(|({mac_address}[^,]{1,2000}))?,"""
   ]
-  DupFields = [ "dest_host->user" ]}
+  DupFields = [ "dest_host->user" 
+}
 ```

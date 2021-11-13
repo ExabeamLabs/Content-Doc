@@ -9,7 +9,7 @@ Name = windows-vpn-login-4981
     """Remote Endpoint: Principal Name:\s{0,100}(\w+(\\+|\/+))?({dest_host}[^\s]{1,2000})\s""",
     """Remote Principal Name:\s{0,100}(({domain}[^\\]{1,2000})\\)?({user}[^\s]{1,2000})\s""",
   ]
-}
+
 windows-vpn-direct-access = {
   Vendor = Microsoft
   Product = DirectAccess
@@ -22,5 +22,6 @@ windows-vpn-direct-access = {
     """({log_type}Microsoft-Windows-Security-Auditing)""",
     """Local Network Address:\s{0,100}({src_ip}[^\s]{1,2000})\s""",
     """Remote Network Address:\s{0,100}({dest_ip}[^\s]{1,2000})\s""",
-  ]}
+  
+}
 ```

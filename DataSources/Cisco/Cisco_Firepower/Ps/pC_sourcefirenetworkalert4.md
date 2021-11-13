@@ -22,6 +22,7 @@ Name = sourcefire-network-alert-4
     """\sFileSize:\s{0,100}({file_size}\d{1,100})""",
     """\sFileType:\s{0,100}({file_type}[^,]{1,2000}?)(,|\s{0,100}$)""",
   ]
-}
+
+
 }
 ```

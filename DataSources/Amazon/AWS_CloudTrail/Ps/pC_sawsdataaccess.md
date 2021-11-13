@@ -23,6 +23,7 @@ Name = s-aws-data-access
     """\s({activity}(REST|BATCH)\.\w+\.\w+)""",
   ]
   DupFields = [ "accesses->role", "file_path->object" ]
-}
+
+
 }
 ```

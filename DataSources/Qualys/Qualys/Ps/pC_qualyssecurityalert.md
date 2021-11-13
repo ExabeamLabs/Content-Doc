@@ -17,6 +17,7 @@ Name = qualys-security-alert
     """\sTAGS="({alert_name}[^",]{1,2000})""",
     """\sTAGS="({additional_info}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

@@ -18,6 +18,7 @@ Name = bro-smb_mapping-1
     """"id\.resp_p":({dest_port}\d{1,100})""",
     """"share_type":"({share_type}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

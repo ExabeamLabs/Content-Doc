@@ -23,6 +23,7 @@ Name = nic-5136
     """Object:\s{0,100}DN:.+?({object_ou}OU.+?)\s{0,100}GUID:"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

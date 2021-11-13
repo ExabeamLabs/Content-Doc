@@ -11,6 +11,7 @@ Name = wazuh-sys-auth-fail
     """login failures for user ({user}[^\s]{1,2000})"""
 ]
   DupFields=["host->dest_host", "description->event_name"]
-}
+
+
 }
 ```

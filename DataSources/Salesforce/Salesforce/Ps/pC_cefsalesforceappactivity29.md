@@ -19,6 +19,7 @@ Name = cef-salesforce-app-activity-29
     """Display\\=Change.*?:\s{0,100}({object}[^:]{1,2000}?)\s{1,100}was changed""",
     """({app}Sales Cloud)""",
   ]
-}
+
+
 }
 ```

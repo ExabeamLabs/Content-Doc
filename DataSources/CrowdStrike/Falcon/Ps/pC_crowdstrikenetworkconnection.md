@@ -32,6 +32,7 @@ Name = crowdstrike-network-connection
       """src-account-name":"({account_name}[^"]{1,2000})""",
       """"ContextProcessId":"({process_guid}[^"]{1,2000})""""
     ]
-  }
+  
+
 }
 ```

@@ -18,6 +18,7 @@ Name = symantec-print-activity
     """\WAPP_NAME\s{1,100}({app}.+?)\s{1,100}MACHINE_IP""",
     """\WMACHINE_IP\s{1,100}({src_ip}[A-Fa-f:\d.]{1,2000})""",
   ]
-}
+
+
 }
 ```

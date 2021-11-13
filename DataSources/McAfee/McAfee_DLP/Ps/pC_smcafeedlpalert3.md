@@ -21,6 +21,7 @@ Name = s-mcafee-dlp-alert-3
     """Domain_Account_OU="({additional_info}[^"]{1,2000})"""",
     """Computer_IP="({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""""
   ]
-}
+
+
 }
 ```

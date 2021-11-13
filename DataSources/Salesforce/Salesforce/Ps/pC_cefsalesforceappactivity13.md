@@ -17,6 +17,7 @@ Name = cef-salesforce-app-activity-13
     """Display\\=Deployed Change Set: ({object}.+?)\s{0,100}(\w+=|$)""",
     """({app}Sales Cloud)""",
   ]
-}
+
+
 }
 ```

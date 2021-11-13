@@ -3,7 +3,7 @@
 {
 Name = s-digitalguardian-dlp-email-out-2
   Conditions = [ """Operation="28"""" , """Agent_UTC_Time=""" ]
-}
+
 splunk-digitalguardian-dlp-email-out = {
   Vendor = Digital Guardian
   Product = Digital Guardian Network DLP
@@ -34,5 +34,6 @@ splunk-digitalguardian-dlp-email-out = {
     ProjectName = "SOC"
     EntityFields = [
       {EntityType="user", Name ="email", Fields=["sender->email"]}
-    ]}
+    
+}
 ```

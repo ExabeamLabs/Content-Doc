@@ -4,7 +4,7 @@
 Name = forcepoint-network-connection-failed-2
   DataType = "network-connection-failed"
   Conditions = [ """"Connection discarded"""", """Event=""", """Src=""", """Dst=""" ]
-}
+
 forcepoint-network-connection-template = {
   Vendor = Forcepoint
   Product = Forcepoint NGFW 
@@ -27,5 +27,6 @@ forcepoint-network-connection-template = {
     """Action="({action}[^"]{1,2000})""",
   ]
   DupFields = ["action->outcome"]
- }}
+ 
+}
 ```

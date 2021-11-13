@@ -21,6 +21,7 @@ Name = zoom-meeting-participant-joined
     """"participant":\{[^\}]{0,2000}"id":"({participant_id}[^"]{1,2000})"""",
     """"timezone"\s{0,100}:\s{0,100}"({meeting_timezone}[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

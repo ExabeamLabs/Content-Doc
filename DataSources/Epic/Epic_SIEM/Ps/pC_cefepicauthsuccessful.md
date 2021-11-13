@@ -17,6 +17,7 @@ Name = cef-epic-auth-successful
     """workstationID=({dest_host}[\w\-.]{1,2000})""",
     """shost=({src_host}[\w\-.]{1,2000})""",
   ]
-}
+
+
 }
 ```

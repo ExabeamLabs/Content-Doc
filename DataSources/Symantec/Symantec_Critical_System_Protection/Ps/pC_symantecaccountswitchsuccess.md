@@ -26,6 +26,7 @@ Name = symantec-account-switch-success
     """({event_name}successful SU to [^"]{1,2000}?)\s{0,100}Event"""
   ]
   DupFields = ["host->dest_host"]
-}
+
+
 }
 ```

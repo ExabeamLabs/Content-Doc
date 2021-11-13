@@ -15,6 +15,7 @@ Name = citrix-appfw-400-resp
     """\s\d\d\/\d\d\/\d\d\d\d:\d\d:\d\d:\d\d\s{1,100}(\S+\s{1,100}){12}({rule}\S+)\s{1,100}({full_url}[^\s]{1,2000})\s{1,100}({result}[^<]{1,2000})\s{1,100}<({action}[^>]{1,2000})>""",
   ]
   DupFields = ["event_name->alert_name"]
-}
+
+
 }
 ```

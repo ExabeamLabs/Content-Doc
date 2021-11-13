@@ -19,6 +19,7 @@ Name = cef-cyberark-password-change
     """act=Set Password\s{1,100}duser=(({domain}[^\\=]{1,2000})(\\)+)?({user}.+?)\s{1,100}\w+=""",
     """({app}Cyber-Ark)""",
   ]
-}
+
+
 }
 ```

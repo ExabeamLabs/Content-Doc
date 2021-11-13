@@ -23,6 +23,7 @@ Name = darktrace-alert-1
     """filterType"{1,20}:?"{1,20}Destination IP.+?value"{1,20}:"{1,20}({dest_ip}[^"]{1,2000})""",
     """"{1,20}description"{1,20}:"{1,20}({additional_info}[^"]{1,2000})"""
     ]
-}
+
+
 }
 ```

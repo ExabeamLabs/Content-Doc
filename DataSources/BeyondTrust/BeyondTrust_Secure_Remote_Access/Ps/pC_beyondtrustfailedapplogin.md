@@ -5,7 +5,7 @@ Name = beyondtrust-failed-app-login
   Product = BeyondTrust Secure Remote Access
   DataType = "failed-app-login"
   Conditions = [ """;status=failure;""", """;target=""", """;when=""", """;who_ip=""", """;who=""", """event=login""" ]
-}
+
 beyondtrust-events = {
   Vendor = BeyondTrust
   Product = BeyondTrust
@@ -24,5 +24,6 @@ beyondtrust-events = {
     """\Wwho=[^;\(]{0,2000}?\(({user_email}[^;\s\)@\\\/]{1,2000}@[^;\s\)@\\\/]{1,2000})(\s|;|\))""",
     """\Wusername=(({domain}[^;\s\)@\\\/]{1,2000})\\+)?({user}[^;\s\)@\\\/]{1,2000})(\s|;|\))""",
     """\Wusername=({user_email}[^;\s\)@\\\/]{1,2000}@[^;\s\)@\\\/]{1,2000})(\s|;|\))""",
-  ]}
+  
+}
 ```

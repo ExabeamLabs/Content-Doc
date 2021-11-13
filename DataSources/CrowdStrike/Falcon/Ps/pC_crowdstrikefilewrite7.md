@@ -10,7 +10,7 @@ Name = crowdstrike-file-write-7
        """"ConfigStateHash":"({old_hash}[^"]{1,2000})""",
        """"SHA256HashData":"({new_hash}[^"]{1,2000})""",
     ]
-  }
+  
 crowdstrike-file-operations = {
     Vendor = CrowdStrike
     Product = Falcon
@@ -33,5 +33,6 @@ crowdstrike-file-operations = {
       """UserName":"({user}[^"]{1,2000})"""",
       """"ContextProcessId":"({process_guid}[^"]{1,2000})"""",
       """"aip":"({src_ip}[a-fA-F\d:.]{1,2000})""""
-    ]}
+    
+}
 ```

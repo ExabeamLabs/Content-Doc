@@ -18,6 +18,7 @@ Name = github-audit-failed-login
     """"{1,20}actor_ip"{1,20}:"{1,20}({src_ip}[^"]{1,2000})""",
     """({app}github)"""
   ]
-}
+
+
 }
 ```

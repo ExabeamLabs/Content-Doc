@@ -24,6 +24,7 @@ Name = azure-app-logon-2
     """src-application-name"{1,20}:"{1,20}({app}[^"]{1,2000})""",
     """"failureReason":"({failure_reason}.+?)(\.)?"""",
   ]
-}
+
+
 }
 ```

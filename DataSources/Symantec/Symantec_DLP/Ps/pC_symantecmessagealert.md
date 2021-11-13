@@ -23,6 +23,7 @@ Name = symantec-message-alert
     """endpoint_machine_ip=({src_ip}[^,]{1,2000})""",
     """endpoint_user_id=({domain}[^\\]{1,2000})\\({user}[^,]{1,2000})"""
    ]
-}
+
+
 }
 ```

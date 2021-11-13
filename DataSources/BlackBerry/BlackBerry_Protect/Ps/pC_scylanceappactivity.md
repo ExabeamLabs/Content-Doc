@@ -20,6 +20,7 @@ Name = s-cylance-app-activity
     """\sDevice:\s{0,100}({object}[^;]{1,2000})""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

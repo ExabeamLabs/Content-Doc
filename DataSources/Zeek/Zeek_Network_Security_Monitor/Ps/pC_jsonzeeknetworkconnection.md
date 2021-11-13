@@ -9,7 +9,7 @@ Name = json-zeek-network-connection
   Fields = ${BroParserTemplates.json-zeek-activity.Fields}[
     """"ts":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)"""",
   ]
-}
+
 json-zeek-activity = {
   Vendor = Zeek
   Product = Zeek Network Security Monitor
@@ -24,5 +24,6 @@ json-zeek-activity = {
     """"id\.orig_p\\?"{1,20}:({src_port}\d{1,100})""",
     """"id\.resp_h\\?"{1,20}:\\?"{1,20}({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """"id\.resp_p\\?"{1,20}:({dest_port}[a-fA-F\d.:]{1,2000})""",
-  ]}
+  
+}
 ```

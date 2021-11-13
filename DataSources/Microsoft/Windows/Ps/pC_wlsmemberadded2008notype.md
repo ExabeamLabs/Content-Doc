@@ -25,6 +25,7 @@ Name = wls-member-added-2008-notype
     """TargetSid="({group_id}[^"]{1,2000})""",
   ]
   DupFields = [ "event_code->group_type", "host->dest_host" ]
-}
+
+
 }
 ```

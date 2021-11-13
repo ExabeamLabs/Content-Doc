@@ -26,6 +26,7 @@ Name = s-tanium-security-alert-4
       """"name\\":\\"({file_name}[^"]{1,2000}?)\\*"""",
       """"source\\":\\"({log_source}[^"]{1,2000}?)\\*"""",
     ]
-  }
+  
+
 }
 ```

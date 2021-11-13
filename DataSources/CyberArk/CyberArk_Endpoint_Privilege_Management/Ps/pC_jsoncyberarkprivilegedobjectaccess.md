@@ -23,6 +23,7 @@ Name = json-cyberark-privileged-object-access
     """"eventId"{1,20}:"{1,20}({event_code}[^"]{1,2000})""",
     """"RestrictedObjectId"{1,20}:"{1,20}\{({object_id}[^"}]{1,2000})""",
   ]
-}
+
+
 }
 ```

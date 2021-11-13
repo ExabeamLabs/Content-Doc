@@ -17,6 +17,7 @@ Name = bind-dns-query-4
     """rpz ({triggers}[^\s]{1,2000})\s({action}[^\s]{1,2000})\s""",
     """({event_name}rewrite)""",
       ]
-}
+
+
 }
 ```

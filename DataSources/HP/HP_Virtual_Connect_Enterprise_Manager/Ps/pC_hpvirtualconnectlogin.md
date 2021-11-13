@@ -15,6 +15,7 @@ Name = hp-virtual-connect-login
      """({event_name}user login)""",
      """({app}VCM)"""
   ]
-}
+
+
 }
 ```

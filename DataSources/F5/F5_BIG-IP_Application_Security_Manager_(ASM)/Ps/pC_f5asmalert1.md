@@ -32,6 +32,7 @@ Name = f5-asm-alert-1
     """geo_location="(N\/A|({country}[^"]{1,2000}))"""",
     """ip_address_intelligence="(N\/A|({ip_reputation}[^"]{1,2000}))""""
   ]
-}
+
+
 }
 ```

@@ -21,6 +21,7 @@ Name = cef-honeywell-physical-badge-access
     """CEF:([^\|]{0,2000}\|){5}({event_name}[^\|]{1,2000})""",
   ]
     DupFields = ["user_id->badge_id"]
-}
+
+
 }
 ```

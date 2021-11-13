@@ -27,6 +27,7 @@ Name = squid-web-activity-2
     """\Wtk_filter_action=({action}[^,"\s]{1,2000})""",
     """\[({outcome}EVT_\w+)\s{0,100}\|""",
   ]
-}
+
+
 }
 ```

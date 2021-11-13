@@ -22,6 +22,7 @@ Name = zscaler-network-connection
     """out=({bytes_out}\d{1,100})""",
     """cat=(Miscellaneous or Unknown|({ip_category}[^=]{1,2000}?))\s{1,100}(\w+=|$)"""
     ]
-}
+
+
 }
 ```

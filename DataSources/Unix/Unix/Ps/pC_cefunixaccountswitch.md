@@ -17,6 +17,7 @@ Name = cef-unix-account-switch
     """\Wdhost=({dest_host}.+?)\s{1,100}(\w+=|$)""",
   ]
   DupFields = [ "process_name->event_code" ]
-}
+
+
 }
 ```

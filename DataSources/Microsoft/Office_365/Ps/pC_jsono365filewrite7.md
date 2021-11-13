@@ -4,7 +4,7 @@
 Name = json-o365-file-write-7
   Product = Office 365
   Conditions= [ """"Operation":"FileUploaded"""", """"Workload":"""", """"SourceFileName":"""" ]
-}
+
 json-microsoft-app-activity = {
   Vendor = Microsoft
   Lms = ArcSight
@@ -25,5 +25,6 @@ json-microsoft-app-activity = {
     """\WdestinationServiceName\s{0,100}=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\WsourceServiceName =({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)"""
   ]
-  DupFields = [ "object->resource" ]}
+  DupFields = [ "object->resource" 
+}
 ```

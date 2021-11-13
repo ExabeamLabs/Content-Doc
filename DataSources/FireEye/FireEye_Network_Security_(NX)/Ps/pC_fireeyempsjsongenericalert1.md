@@ -33,6 +33,7 @@ Name = fireeye-mps-json-generic-alert-1
         NameTemplate = """FireEye Alert ${alert_name} found"""
         ProjectName = "SOC"
         EntityFields = [
-          {EntityType="device", Name ="dest_address", Fields=["dest_ip->ip_address"]}
+          {EntityType="device", Name ="dest_address", Fields=["dest_ip->ip_address"]
+
 }
 ```

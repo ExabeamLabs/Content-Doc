@@ -15,6 +15,7 @@ Name = vmware-view-remote-logon-1
     """({app}View)""",
     """new session on machine\s{1,100}({dest_host}[\w.-]{1,2000})"""
    ]
-}
+
+
 }
 ```

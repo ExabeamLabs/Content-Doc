@@ -21,6 +21,7 @@ Name = netwrix-db-activity
     """DataSource\s{0,100}:\s{0,100}({app}.+?)\s{0,100}\w+\s{0,100}:"""
     """Application name:\s{0,100}({app}.+?)\s{0,100}$"""
   ]
-}
+
+
 }
 ```

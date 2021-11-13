@@ -23,6 +23,7 @@ Name = ad-audit-4740
     """ACCOUNT_DOMAIN\s{0,100}=\s{0,100}(null|({caller_domain}[^\s]{1,2000}))""",
   ]
   DupFields=[ "host->dest_host" ]
-}
+
+
 }
 ```

@@ -25,6 +25,7 @@ Name = checkpoint-5599-network-connection
 	"""dst:"({dest_ip}[^"]{1,2000})"""",
 	"""ifname:"({src_interface}[^"]{1,2000})"""
   ]
-}
+
+
 }
 ```

@@ -24,6 +24,7 @@ Name = mcafee-skyhigh-dlp-alert
     """usrName =(({user_email}[^@]{1,2000}@[^@\s]{1,2000})|({user}[^\s]{1,2000}))\s{1,100}sev""",
     """activityName =\[({alert_type}[^\]]{1,2000}?)\]"""
   ]
-}
+
+
 }
 ```

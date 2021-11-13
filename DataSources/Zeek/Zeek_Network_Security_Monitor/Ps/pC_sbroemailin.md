@@ -20,6 +20,7 @@ Name = s-bro-email-in
     """({alert_name}bro_smtp)""",
   ]
   DupFields = [ "alert_name->alert_type", "user->orig_user", "sender->external_address" ]
-}
+
+
 }
 ```

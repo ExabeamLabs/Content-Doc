@@ -16,6 +16,7 @@ Name = unix-failed-logon-9
     """auth=({event_name}[^""]{1,2000})""",
     """apparentlyi_via=({logon_type_text}[^\s]{1,2000})""",
   ]
-}
+
+
 }
 ```

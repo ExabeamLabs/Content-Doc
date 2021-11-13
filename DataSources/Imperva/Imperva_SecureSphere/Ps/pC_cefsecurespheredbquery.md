@@ -30,6 +30,7 @@ Name = cef-securesphere-db-query
     """\Wcs19=({response_size}\d{1,100})""",
   ]
   DupFields = [ "db_user->account" ]
-}
+
+
 }
 ```

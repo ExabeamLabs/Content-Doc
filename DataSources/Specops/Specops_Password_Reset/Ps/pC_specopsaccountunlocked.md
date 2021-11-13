@@ -16,6 +16,7 @@ Name = specops-account-unlocked
     """<Computer>({host}[^<]{1,2000})</Computer>""",
     """From client:\s{1,100}'({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})'""",
   ]
-}
+
+
 }
 ```

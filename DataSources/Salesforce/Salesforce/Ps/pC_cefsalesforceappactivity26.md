@@ -22,6 +22,7 @@ Name = cef-salesforce-app-activity-26
     """Display\\=({additional_info}.+?)\s{0,100}(\w+=|$)""",
     """({app}Sales Cloud)""",
   ]
-}
+
+
 }
 ```

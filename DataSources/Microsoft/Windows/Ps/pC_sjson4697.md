@@ -26,6 +26,7 @@ Name = s-json-4697
     """"ProcessID":({process_id}\d{1,100})"""
   ]
   DupFields = [ "host->dest_host", "directory->process_directory" ]
-}
+
+
 }
 ```

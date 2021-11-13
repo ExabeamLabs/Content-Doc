@@ -5,7 +5,7 @@ Name = sftp-file-download
   DataType = "file-operations"
   IsHVF = true
   Conditions = [ """ sftp-""", """"File Downloaded"""" ]
-}
+
 sftp-events = {
   Vendor = SFTP
   Product = SFTP
@@ -26,5 +26,6 @@ sftp-events = {
     """ sftp-.*?("[^"]{0,2000}",){13}"(|({src_file_dir}[^"]{1,2000}\\+)?({src_file_name}[^"\\\/]{1,2000}))"""",
     """ sftp-.*?("[^"]{0,2000}",){14}"(|({file_path}({file_parent}[^"]{0,2000}?)[\\\/]{0,2000}({file_name}[^\\"]{1,2000}?(\.({file_ext}[^\.\s"]{1,2000}))?)))"""",
   ]
-  DupFields = [ "host->dest_host", "accesses->action" ]}
+  DupFields = [ "host->dest_host", "accesses->action" 
+}
 ```

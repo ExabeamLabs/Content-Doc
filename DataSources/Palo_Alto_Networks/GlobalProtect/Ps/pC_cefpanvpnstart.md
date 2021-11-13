@@ -4,7 +4,7 @@
 Name = cef-pan-vpn-start
   DataType = "vpn-start"
   Conditions = [ """CEF:""", """|Palo Alto Networks|""", """globalprotect""", """GlobalProtect gateway user login succeeded""" ]
-}
+
 cef-pan-vpn-event = {
   Vendor = Palo Alto Networks
   Product = GlobalProtect
@@ -19,5 +19,6 @@ cef-pan-vpn-event = {
     """User name:\s{1,100}(({domain}[^\\]{1,2000})\\+)?({user}[\w.'\-\\$]{1,2000}?)\.?(\s|,|"|$)""",
     """User name:\s{1,100}({user_email}[^@\s]{1,2000}@[^\s,]{1,2000}),""",
     """Client OS( version)?:\s{1,100}({os}[^":]{1,2000})(,|\.)"""
-  ]}
+  
+}
 ```

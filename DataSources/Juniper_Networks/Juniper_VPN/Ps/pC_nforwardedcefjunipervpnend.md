@@ -14,6 +14,7 @@ Name = n-forwarded-cef-juniper-vpn-end
     """\ssuser=({user}.+?)\s{0,100}$""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
-}
+
+
 }
 ```

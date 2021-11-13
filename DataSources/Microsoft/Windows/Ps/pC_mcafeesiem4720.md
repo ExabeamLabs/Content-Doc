@@ -23,6 +23,7 @@ Name = mcafee-siem-4720
       """"Event_Class":"({additional_info}[^"]{1,2000})"""
       """Enabled,({user_type}.*?)\s-\sEnabled"""
     ]
-  }
+  
+
 }
 ```

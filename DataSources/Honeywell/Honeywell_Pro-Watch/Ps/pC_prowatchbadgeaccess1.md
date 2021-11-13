@@ -4,7 +4,7 @@
 Name = prowatch-badge-access-1
   Product = Honeywell Pro-Watch
   Conditions = [ """"BADGENO":""", """"EVNT_DESCRP":""", """"LOCATION":""" ]
-}
+
 prowatch-badge-access = {
   Vendor = Honeywell
   Lms = Direct
@@ -26,5 +26,6 @@ prowatch-badge-access = {
     """"((?i)lname)":"\s{0,100}({last_name}[^"]{1,2000}?)\s{0,100}"""",
     """"((?i)badge_employeeid)":"\s{0,100}({employee_id}[^"]{1,2000}?)\s{0,100}"""",
     """"((?i)cardstatus_descrp)":"\s{0,100}({card_status}[^"]{1,2000}?)\s{0,100}""""
-  ]}
+  
+}
 ```

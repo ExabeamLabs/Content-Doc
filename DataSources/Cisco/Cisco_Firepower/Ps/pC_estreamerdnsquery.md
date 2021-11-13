@@ -22,6 +22,7 @@ Name = estreamer-dns-query
       """\sflowStatistics\.dnsTTL=({response_ttl}\d{1,100})""",
       """\sflowStatistics\.bytesSent=({bytes}\d{1,100})""",
     ]
-  }
+  
+
 }
 ```

@@ -4,7 +4,7 @@
 Name = digipass-app-login
   DataType = "app-login"
   Conditions = [ """, Authentication, """, """"User authentication was successful."""", """ Input Details ["""", """ Output Details ["""", """ Back-End Authentication ["""  ]   
-}
+
 digipass-events  = {
     Vendor = OneSpan
     Product = Digipass
@@ -23,5 +23,6 @@ digipass-events  = {
       """Error Message:\s{1,100}'({failure_reason}[^']{1,2000})""",
       """Policy ID\s{1,100}\["({auth_method}[^"]{1,2000})"""",
       """Protocol ID\s:\s{0,100}({protocol}[^},]{1,2000})"""
-    ]}
+    
+}
 ```

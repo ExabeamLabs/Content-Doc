@@ -19,6 +19,7 @@ Name = s-skysea-app-activity
     """^([^\,]{0,2000}\,){8}({additional_info}[^\,]{1,2000})\,"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

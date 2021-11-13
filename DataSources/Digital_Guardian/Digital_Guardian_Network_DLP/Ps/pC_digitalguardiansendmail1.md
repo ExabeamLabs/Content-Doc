@@ -10,7 +10,7 @@ Name = digital-guardian-send-mail-1
     """"Email Sender":"({sender}[^@"]{1,2000}@[^@."]{1,2000}?\.[^"]{1,2000}?)""""
   ]
   DupFields = [ "event_code->alert_name", "event_code->alert_type", "directory->process_directory" ]
-}
+
 digitalguardian-file-operation = {
   Vendor = Digital Guardian
   Product = Digital Guardian Endpoint Protection
@@ -32,5 +32,6 @@ digitalguardian-file-operation = {
     """DestinationFile=(|({file_name}.+?(\.({file_ext}[^\.]{1,2000}?))?))\s{0,100}(\w+=|$)""",
     """SourceDirectory=(|({src_file_dir}.+?))\s{0,100}(\w+=|$)""",
     """SourceFile=(|({src_file_name}.+?))\s{0,100}(\w+=|$)""",
-  ]}
+  
+}
 ```

@@ -15,6 +15,7 @@ Name = wls-627
       """EventID="{1,20}({event_code}[^"]{1,2000})"""",
       """EventRecordID="{1,20}({record_id}[^"]{1,2000})"""",
       """CallerDomain="{1,20}({domain}[^"]{1,2000})"""",
-      """CallerLogonId="{1,20}\([^,]{1,2000}
+      """CallerLogonId="{1,20}\([^,]{1,2000
+
 }
 ```

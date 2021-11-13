@@ -3,7 +3,7 @@
 {
 Name = cef-proofpoint-dlp-alert-2
   Conditions = [ """CEF:""", """|ProofPoint|FilterLog|""", """|Email Delivery|""" ]
-}
+
 cef-proofpoint-dlp-alert = {
   Vendor = Proofpoint
   Product = Proofpoint Enterprise Protection
@@ -27,5 +27,6 @@ cef-proofpoint-dlp-alert = {
     """\Wcn1=({bytes}\d{1,100})""",
     """({outcome}quarantine)""",
   ]
-  DupFields = [ "sender->email_user", "sender->user_email", "recipient->target", "attachment->file_name", "alert_name->alert_type" ]}
+  DupFields = [ "sender->email_user", "sender->user_email", "recipient->target", "attachment->file_name", "alert_name->alert_type" 
+}
 ```

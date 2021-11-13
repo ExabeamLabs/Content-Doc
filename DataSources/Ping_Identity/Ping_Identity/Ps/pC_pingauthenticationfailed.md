@@ -8,7 +8,7 @@ Name = ping-authentication-failed
     """"status":\s{0,100}"({outcome}FAILURE)""",
     """"message":\s{1,100}"({failure_reason}[^}]{1,2000}?)"\s{0,100}\}""",
   ]
-}
+
 ping-authentication_events = {
     Vendor = Ping Identity
     Product = Ping Identity
@@ -18,5 +18,6 @@ ping-authentication_events = {
       """"recorded":\s{1,100}"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)"""",
       """exabeam_host=({host}[^\s]{1,2000})""",
       """"name":\s"({user}[^"]{1,2000})"""",
-    ]}
+    
+}
 ```

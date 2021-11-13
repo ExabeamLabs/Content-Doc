@@ -17,6 +17,7 @@ Name = dhcpd-dhcpack-logon
     """DHCPACK on ({dest_ip}[a-fA-F\d.:]{1,2000}) to ({dest_mac}[a-fA-F\d.:]{1,2000}) (\(({dest_host}[\w\-.]{1,2000})\))?\s{0,100}via ({dest_interface}[^\s"]{1,2000})""",
   ]
   DupFields = [ "dest_host->user" ]
-}
+
+
 }
 ```

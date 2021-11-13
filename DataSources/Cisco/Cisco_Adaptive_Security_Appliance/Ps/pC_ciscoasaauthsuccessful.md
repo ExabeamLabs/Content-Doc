@@ -16,6 +16,7 @@ Name = cisco-asa-auth-successful
     """IP address:\s{0,100}({src_ip}[a-fA-F0-9.:]{1,2000})"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

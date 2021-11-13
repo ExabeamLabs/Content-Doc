@@ -13,6 +13,7 @@ Name = r-nic-4771
     """(Mon|Tue|Wed|Thu|Fri|Sat|Sun) ({time}\w+ \d{1,100} \d{1,100}:\d{1,100}:\d{1,100} \d{1,100})""",
     """Security,(rn=)?({record_id}[\d]{1,2000})""",
     """Failure Audit,({host}[^,]{1,2000})""",
-    """\d{2}:\d{2}:\d{2} \d{4}
+    """\d{2}:\d{2}:\d{2} \d{4
+
 }
 ```

@@ -4,7 +4,7 @@
 Name = ping-app-login
   DataType = "app-login"
   Conditions = [ """|SSO|""", """success|""" ]
-}
+
 ping-events = {
   Vendor = Ping Identity
   Product = Ping Identity
@@ -21,5 +21,6 @@ ping-events = {
     """"PingHost":\s{0,100}"({host}[^"]{1,2000})""",
     """"EventType":\s{0,100}"({activity}[^"]{1,2000})""",
     """"DescriptionFail":\s{0,100}"({failure_reason}[^"]{1,2000})""",
-  ]}
+  
+}
 ```

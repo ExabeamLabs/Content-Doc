@@ -19,6 +19,7 @@ Name = q-o365-siem-security-alert
       """\Wcs1=({additional_info}.+?)\s{1,100}(\w+=|$)""",
       """DestinationServiceName =({process_name}.*?)\s\w+=""", 
     ]
-  }
+  
+
 }
 ```

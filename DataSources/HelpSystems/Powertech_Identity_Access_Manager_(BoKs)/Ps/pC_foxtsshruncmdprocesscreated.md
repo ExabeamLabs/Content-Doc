@@ -19,6 +19,7 @@ Name = foxt-sshruncmd-process-created
     """({event_code}ssh_runcmd)"""
   ]
   DupFields = [ "host->dest_host", "process_guid->pid", "path->process", "directory->process_directory" ]
-}
+
+
 }
 ```

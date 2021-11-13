@@ -20,6 +20,7 @@ Name = cef-connectra-vpn-login
     """\sad.office__mode__ip=({src_translated_ipnum}.+?)(\s{1,100}[\w\.:]{1,2000}=|$)""",
   ]
   DupFields = [ "host->dest_host", "user->account"]
-}
+
+
 }
 ```

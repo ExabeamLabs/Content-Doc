@@ -22,6 +22,7 @@ Name = json-4768-3
     """TargetDomainNam":"(?:-|({domain}[^"]{1,2000}?))"""",
     """TargetSid":"({user_sid}[^"\\]{1,2000})""""
   ]
-}
+
+
 }
 ```

@@ -26,6 +26,7 @@ Name = o365-security-alert-1
     """"status":\s{0,100}"(unknown|({outcome}[^"]{1,2000}))""",
     """"logonLocation":\s{0,100}"({location}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

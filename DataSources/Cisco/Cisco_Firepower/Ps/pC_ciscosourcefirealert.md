@@ -16,6 +16,7 @@ Name = cisco-sourcefire-alert
     """FireSIGHT SI Category: ({category}\w+)"""
   ]
   DupFields = [ "policy->alert_name" ]
-}
+
+
 }
 ```

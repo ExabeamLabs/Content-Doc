@@ -26,6 +26,7 @@ Name = json-4771
     """"((IpAddress)|(ip))\\?":\\?"(?:::[\w]{1,2000}:)?({dest_ip}[a-fA-F:\d.]{1,2000})\\?""""
   ]
   DupFields = ["host->dest_host"]
-}
+
+
 }
 ```

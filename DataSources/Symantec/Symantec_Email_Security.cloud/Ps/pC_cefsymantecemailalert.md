@@ -25,6 +25,7 @@ Name = cef-symantec-email-alert
       """"product_name":"({product_name}[^"]{1,2000})"""",
     ]
     DupFields = [ "recipient->external_address" ]
-  }
+  
+
 }
 ```

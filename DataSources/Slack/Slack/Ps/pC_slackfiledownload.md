@@ -10,7 +10,7 @@ Name = slack-file-download
     """"file":\s{0,100}\{[^\}]{0,2000}"name":\s{0,100}"({file_name}[^"]{1,2000}?(\.({file_ext}[^"\s\.]{1,2000})?))""",
   ]
   DupFields = [ "activity->accesses" ]
-}
+
 slack-events = {
   Vendor = Slack
   Product = Slack
@@ -29,5 +29,6 @@ slack-events = {
     """"file":\s{0,100}\{[^\}]{0,2000}"filetype":\s{0,100}"({file_type}[^"]{1,2000})""",
     """"file":\s{0,100}\{[^\}]{0,2000}"name":\s{0,100}"({file_name}[^"]{1,2000}?(\.({file_ext}[^"\s\.]{1,2000})?))""",
     """"ua":\s{0,100}"({user_agent}[^"]{1,2000})""",
-  ]}
+  
+}
 ```

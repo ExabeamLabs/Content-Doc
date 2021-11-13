@@ -27,6 +27,7 @@ Name = raw-checkpoint-firewall-1
     """\Wsport_svc:\s{0,100}({src_port}\d{1,100})""",
   ]
    DupFields = [ "action->event_name" ]
-}
+
+
 }
 ```

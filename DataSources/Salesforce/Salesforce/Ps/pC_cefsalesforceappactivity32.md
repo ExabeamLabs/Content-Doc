@@ -22,6 +22,7 @@ Name = cef-salesforce-app-activity-32
     """({app}Sales Cloud)""",
   ]
   DupFields = [ "object->resource" ]
-}
+
+
 }
 ```

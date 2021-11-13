@@ -17,6 +17,7 @@ Name = netscaler-process-created
       """\sCommand\s{1,100}"({process}({directory}[^\s"]{0,2000}?[\\\/]{1,2000})?({process_name}[^\s\\\/"]{1,2000}))(\s|")""",
     ]
     DupFields = [ "directory->process_directory" ]
-  }
+  
+
 }
 ```

@@ -26,6 +26,7 @@ Name = o365-inbox-rules-all-2
     """"SubjectOrBodyContainsWords":"({filter_key_words}[^"]{1,2000})"""
   ]
   DupFields = ["user_domain->email_domain"]
-}
+
+
 }
 ```

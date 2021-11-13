@@ -25,6 +25,7 @@ Name = fireeye-web-activity
     """"dstdomain":\s{0,100}"({web_domain}[^"]{1,2000})""",
     """"useragent":\s{0,100}"({user_agent}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

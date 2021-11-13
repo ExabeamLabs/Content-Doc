@@ -21,6 +21,7 @@ Name = q-leef-invincea-alert
 	"""\surl=(?:|({malware_url}.+?))\s{1,100}\w+="""
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

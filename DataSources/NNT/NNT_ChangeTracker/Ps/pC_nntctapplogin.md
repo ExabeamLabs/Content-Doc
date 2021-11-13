@@ -18,6 +18,7 @@ Name = nnt-ct-app-login
     """suser=({user}\S+)\s\(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """({auth_type}AD)"""
   ]
-}
+
+
 }
 ```

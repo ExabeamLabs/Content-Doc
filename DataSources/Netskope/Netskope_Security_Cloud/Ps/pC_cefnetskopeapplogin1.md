@@ -7,7 +7,7 @@ Name = cef-netskope-app-login-1
   Fields = ${NetskopeParserTemplates.cef-netskope-activity.Fields} [
     """"useragent":"({user_agent}[^"]{1,2000})""""
   ]
-}
+
 cef-netskope-activity = {
   Vendor = Netskope
   Product = Netskope Security Cloud
@@ -36,5 +36,6 @@ cef-netskope-activity = {
     """"page_site":\s{0,100}"({app}[^"]{1,2000})"""",
     """"dstport":"\s{0,100}({dest_port}\d{1,100})""""
   ]
-  DupFields = ["domain->email_domain", "file_type->mime"]}
+  DupFields = ["domain->email_domain", "file_type->mime"
+}
 ```

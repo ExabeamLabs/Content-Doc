@@ -24,6 +24,7 @@ Name = raw-juniper-nwc-vpn-authsuccess
     """user=(({user_email}[^@\s\/]{1,2000}@[^@\s\/]{1,2000})|({user}[^\/\s]{1,2000}))"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

@@ -30,6 +30,7 @@ Name = raw-checkpoint-firewall-allow
     """\Wservice_id:\s{0,100}(|({protocol}.+?));""",
   ]
    DupFields = [ "action->event_name" ]
-}
+
+
 }
 ```

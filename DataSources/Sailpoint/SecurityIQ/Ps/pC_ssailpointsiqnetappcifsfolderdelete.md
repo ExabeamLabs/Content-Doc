@@ -12,7 +12,7 @@ Name = s-sailpointsiq-netappcifs-folder-delete
     """actiontype\s:\s({event_name}[^|]{1,2000})\sFolder\s\|"""
   ]
   DupFields = [ "host->dest_ip", "event_name->accesses" ]
-}
+
 s-sailpointsiqnetappcifs-activity = {
   Vendor = Sailpoint
   Product = SecurityIQ
@@ -24,5 +24,6 @@ s-sailpointsiqnetappcifs-activity = {
     """applicationtype\s:\s({app}[^|]{1,2000})\s\|""",
     """fileextension\s:\s({file_ext}[^|]{1,2000})\s\|""",
     """userfullname\s:\s({user_sid}(?=[^\\]{1,2000}\\)({domain}[^\\]{1,2000})\\({user}.+?)|(?:.+?))\s\|"""
-  ]}
+  
+}
 ```

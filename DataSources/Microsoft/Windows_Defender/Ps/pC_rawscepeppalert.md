@@ -25,6 +25,7 @@ Name = raw-scep-epp-alert
     """((?i)TargetProcess)"?(:|=)\s{0,100}"{1,20}({process}[^"]{1,2000}\\({process_name}[^"]{1,2000}))""",
   ]
   DupFields = ["host->dest_host"]
-}
+
+
 }
 ```

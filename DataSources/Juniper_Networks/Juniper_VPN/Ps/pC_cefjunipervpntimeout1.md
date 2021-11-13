@@ -16,6 +16,7 @@ Name = cef-juniper-vpn-timeout-1
     """\Wsproc=({realm}.+?)\s{1,100}\w+=""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

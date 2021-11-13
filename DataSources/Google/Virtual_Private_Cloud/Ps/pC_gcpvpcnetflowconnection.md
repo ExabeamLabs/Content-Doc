@@ -23,6 +23,7 @@ Name = gcpvpc-netflow-connection
     """"src_instance":\{[^\}]{0,2000}?"vm_name":"({src_host}[^"]{1,2000})""",
     """"reporter":"({reporter}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

@@ -16,6 +16,7 @@ Name = cef-qip-dhcp
       """\ssntdom=({domain}.+?)\s{1,100}([\w\.]{1,2000}=|$)"""
     ]
     DupFields = [ "dest_host->user" ]
-  }
+  
+
 }
 ```

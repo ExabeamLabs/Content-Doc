@@ -25,6 +25,7 @@ Name = o365-security-alert-2
     """Workload":"({app}[^"]{1,2000})""",
     """"id":({alert_id}\d{1,100})"""
   ]
-}
+
+
 }
 ```

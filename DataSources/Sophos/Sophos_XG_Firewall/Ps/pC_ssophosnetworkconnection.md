@@ -37,6 +37,7 @@ Name = s-sophos-network-connection
     """\stran_dst_port=({dest_translated_port}\d{1,100})?\s""",
   ]
   DupFields = [ "action->outcome" ]
-}
+
+
 }
 ```

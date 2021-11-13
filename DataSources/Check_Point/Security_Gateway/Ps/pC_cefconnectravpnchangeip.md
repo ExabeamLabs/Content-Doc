@@ -20,6 +20,7 @@ Name = cef-connectra-vpn-changeip
     """\sad.assigned__IP:=({src_translated_ipnum}.+?)(\s{1,100}[\w\.:]{1,2000}=|$)""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

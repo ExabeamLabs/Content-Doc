@@ -10,7 +10,7 @@ Name = leef-crowdstrike-documentsaccessed
     """\WdocAccessedFilePath=({file_parent}[^=]{1,2000}?)\s{0,100}(\||\w{1,1000}=|$|"{1,20}\s{0,100}$)""",
     """\Wdescription=({additional_info}[^=]{1,2000}?)\s{0,100}(\||\w{1,1000}=|$|"{1,20}\s{0,100}$)"""
   ] 
-}
+
 leef-crowdstrike-alert-t = {
     Vendor = CrowdStrike
     Product = Falcon
@@ -37,5 +37,6 @@ leef-crowdstrike-alert-t = {
       """\Wmd5=({md5}[^\s]{1,2000}?)\s{0,100}(\||\w+=|$|"{1,20}\s{0,100}$)""",
       """({app}FalconHost)"""
     ]
-  DupFields = [ "category->alert_type" ]}
+  DupFields = [ "category->alert_type" 
+}
 ```

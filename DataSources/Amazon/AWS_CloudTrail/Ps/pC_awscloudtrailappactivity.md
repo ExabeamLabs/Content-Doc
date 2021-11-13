@@ -27,6 +27,7 @@ Name = aws-cloudtrail-app-activity
     """assumed-role({role}.+?)\\""""
   ]
 
-}
+
+
 }
 ```

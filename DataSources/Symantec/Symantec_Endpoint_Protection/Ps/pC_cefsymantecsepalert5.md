@@ -6,7 +6,7 @@ Name = cef-symantec-sep-alert-5
   Fields = ${SymantecParserTemplates.cef-symantec-sep-alert.Fields}[
     """({host}[\w.\-]{1,2000})\s{1,100}sep_proxy_av_event:""",
   ]
-}
+
 cef-symantec-sep-alert = {
   Vendor = Symantec
   Product = Symantec Endpoint Protection
@@ -22,5 +22,6 @@ cef-symantec-sep-alert = {
     """\Wuser_name=({user}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wfname=({malware_file_name}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
     """"feature_name":"({alert_type}[^"]{1,2000})""",
-  ]}
+  
+}
 ```

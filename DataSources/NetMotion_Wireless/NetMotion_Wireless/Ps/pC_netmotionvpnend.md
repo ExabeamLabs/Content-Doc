@@ -14,6 +14,7 @@ Name = netmotion-vpn-end
       """Device_Name ="{1,20}({src_host}[^"]{1,2000})""",
       """User_Name ="{1,20}([^\\]{1,2000}\\)?({user}[^"]{1,2000})"""
     ]
-  }
+  
+
 }
 ```

@@ -19,6 +19,7 @@ Name = kaspersky-es-alert
     """User:\s{1,100}(({domain}[^\\]{0,2000})\\+)?({user}[^\\\s]{1,2000})\s{0,100}\(""",
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

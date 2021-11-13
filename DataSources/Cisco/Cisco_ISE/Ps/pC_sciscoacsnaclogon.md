@@ -17,6 +17,7 @@ Name = s-cisco-acs-nac-logon
            """NAS-IP-Address = ({dest_ip}[\da-fA-F\.:]{1,2000})""",
            """Framed-IP-Address = ({dest_ip}[\da-fA-F\.:]{1,2000})""",
   ]
-}
+
+
 }
 ```

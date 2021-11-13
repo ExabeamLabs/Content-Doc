@@ -21,6 +21,7 @@ Name = raw-5143
     """Share Name:\s{1,100}[\\\*]{0,2000}({share_name}[^\s]{1,2000})\s{1,100}Share Path:""",
     """Share Path:\s{0,100}[\\\?]{0,2000}({share_path}(({d_parent}[^@]{1,2000}?)\\)?(|({d_name}[^\\]{1,2000}?)))\s{0,100}Old Remark:"""
   ]
-}
+
+
 }
 ```

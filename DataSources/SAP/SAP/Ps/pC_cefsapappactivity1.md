@@ -5,7 +5,7 @@ Name = cef-sap-app-activity-1
   Product = SAP
   DataType = "remote-logon"
   Conditions = [ """CEF:""", """|SAP|Security Audit Log|""", """Logon""" ]
-}
+
 cef-sap-app-activity = {
   Vendor = SAP
   Lms = Direct
@@ -34,5 +34,6 @@ cef-sap-app-activity = {
     """DeviceCustomString2=({transaction}.*?)\s\w+=""",
     """cs4=({result_code}\d{1,100})""", 
     """amac=({mac}.*?)\s\w+="""
-  ]}
+  
+}
 ```

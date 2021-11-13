@@ -17,6 +17,7 @@ Name = cef-salesforce-app-activity-16
     """Display\\=Created permission set ({object}.+?): with no license""",
     """({app}Sales Cloud)""",
   ]
-}
+
+
 }
 ```

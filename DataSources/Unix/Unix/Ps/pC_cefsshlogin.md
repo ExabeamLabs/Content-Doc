@@ -20,6 +20,7 @@ Name = cef-ssh-login
     """\|Accepted ({auth}.+?)\|""",
     """({event_code}ssh)"""
   ]
-}
+
+
 }
 ```

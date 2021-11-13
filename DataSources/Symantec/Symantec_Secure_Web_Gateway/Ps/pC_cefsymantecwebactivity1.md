@@ -3,7 +3,7 @@
 {
 Name = cef-symantec-web-activity-1
   Conditions = [ """|Symantec|Symantec Web Security Service|""", """"device_time":""" ]
-}
+
 cef-symantec-web-activity = {
   Vendor = Symantec
   Product = Symantec Secure Web Gateway
@@ -28,5 +28,6 @@ cef-symantec-web-activity = {
     """"url":\{.*?"host":"({web_domain}[^"]{1,2000})"""",
     """"product_name":"({product_name}[^"]{1,2000})"""",
   ]
-  DupFields = [ "web_domain->full_url" ]}
+  DupFields = [ "web_domain->full_url" 
+}
 ```

@@ -25,6 +25,7 @@ Name = raw-5137
     """Object:\s{0,100}.*?Class(:|=)\s{0,100}({object_class}[^\s]{1,2000})"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

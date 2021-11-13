@@ -21,6 +21,7 @@ Name = json-email-saas-o365-alert
     """"d:Status":\s{0,100}"({outcome}[^"]{1,2000})"""",
   ]
   DupFields = [ "subject->alert_name" ]
-}
+
+
 }
 ```

@@ -21,6 +21,7 @@ Name = netwrix-file-activity
     """What\s{0,100}:\s{0,100}(|({file_path}({file_parent}[^"]{0,2000}?)[\\\/]{0,2000}({file_name}[^\\"]{1,2000}?(\.({file_ext}[^\\\.\s"]{1,2000}))?)))\s{0,100}When\s{0,100}:""",
     """Workstation\s{0,100}:\s{0,100}(|({src_ip}[A-Fa-f:\d.]{1,2000}))\s{0,100}Details\s{0,100}:""",
   ]
-}
+
+
 }
 ```

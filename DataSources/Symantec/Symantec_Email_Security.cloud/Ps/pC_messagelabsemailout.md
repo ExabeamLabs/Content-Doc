@@ -22,6 +22,7 @@ Name = messagelabs-email-out
     """\[\{"fileNameOrURL":"({file_name}[^\.]{1,2000}\.({file_ext}[^"]{1,2000}))""",
   ]
   DupFields = [ "sender->email_user", "sender->user_email", "recipient->external_address" , "file_name->attachment"]
-}
+
+
 }
 ```

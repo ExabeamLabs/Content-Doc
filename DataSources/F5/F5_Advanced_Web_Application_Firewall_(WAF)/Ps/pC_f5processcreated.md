@@ -10,7 +10,7 @@ Name = f5-process-created
     """\sCMD \(\s{0,100}[^\/]{0,2000}?({process}({directory}\/[^\)]{0,2000}?)({process_name}[^\/]{0,2000}?[^\\]))((\\\\)*\s|\))"""
   ]
   DupFields = [ "directory->process_directory" ]
-}
+
 f5-waf-activity = {
     Vendor = F5
     Product = F5 Advanced Web Application Firewall (WAF)
@@ -22,5 +22,6 @@ f5-waf-activity = {
       """"@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
       """"host":"(::ffff:)?({host}[^"]{1,2000})""",
       """\d\d:\d\d:\d\d ({host}[^\s]{1,2000}) \w+ \w+\["""
-    ]}
+    
+}
 ```

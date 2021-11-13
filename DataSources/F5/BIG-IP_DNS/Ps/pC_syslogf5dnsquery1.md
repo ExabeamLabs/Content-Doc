@@ -18,6 +18,7 @@ Name = syslog-f5-dns-query-1
     """,question_name=({query_1}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})({query_2}[^,]{0,2000})""",
     """,question_type=({query_type}[^,"]{1,2000})""",
   ]
-}
+
+
 }
 ```

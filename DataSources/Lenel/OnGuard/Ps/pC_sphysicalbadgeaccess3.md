@@ -26,6 +26,7 @@ Name = s-physical-badge-access-3
       """location="({location_building}[A-Z]{1,2000}\s[A-Z]{1,2000})""",
       """location="({location_building}[\w\s-]{1,2000}\.-?\d)"""
     ]
-  }
+  
+
 }
 ```

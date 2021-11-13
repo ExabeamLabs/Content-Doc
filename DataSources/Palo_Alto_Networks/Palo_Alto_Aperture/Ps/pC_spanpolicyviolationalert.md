@@ -34,6 +34,7 @@ Name = s-pan-policyviolation-alert
     NameTemplate = """Palo Alto DLP Alert ${alert_name} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="user", Name ="windows_id", Fields=["user->windows_id"]}
+      {EntityType="user", Name ="windows_id", Fields=["user->windows_id"]
+
 }
 ```

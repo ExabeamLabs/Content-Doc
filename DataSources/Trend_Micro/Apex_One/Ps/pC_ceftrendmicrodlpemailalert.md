@@ -23,6 +23,7 @@ Name = cef-trendmicro-dlp-email-alert
     """fname=({attachments}[^=]{1,2000})\s{1,100}\w+="""
   ]
   DupFields = [ "sender->user_email" ]
-}
+
+
 }
 ```

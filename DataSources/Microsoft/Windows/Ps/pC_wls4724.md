@@ -22,6 +22,7 @@ Name = wls-4724
       """TargetDomainName ="{1,20}({target_domain}[^"]{1,2000})"""",
       """TargetUserName ="{1,20}({target_user}[^"]{1,2000})""""
     ]
-  }
+  
+
 }
 ```

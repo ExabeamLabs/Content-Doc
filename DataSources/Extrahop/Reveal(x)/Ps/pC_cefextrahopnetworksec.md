@@ -21,6 +21,7 @@ Name = cef-extrahop-network-sec
     """src=(({src_mac}([a-fA-F\d]{2}[-:]){5}[a-fA-F\d]{2})|({src_ip}[A-Fa-f:\d\.]{1,2000}))"""
 ]
   DupFields = ["alert_name->alert_type"]
-}
+
+
 }
 ```

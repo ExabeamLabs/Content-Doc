@@ -3,7 +3,7 @@
 {
 Name = s-digitalguardian-app-login-1
   Conditions = [ """Operation="27"""" , """Agent_UTC_Time=""" ]
-}
+
 splunk-digitalguardian-app-login = {
   Vendor = Digital Guardian
   Product = Digital Guardian Endpoint Protection
@@ -18,5 +18,6 @@ splunk-digitalguardian-app-login = {
     """(\s|exabeam_\w+=)Domain_Name ="(?:|({domain}[^"]{1,2000}))"""",
     """(\s|exabeam_\w+=)Application="(?:|({app}[^"]{1,2000}))"""",
     """(\s|exabeam_\w+=)Operation="(?:|({event_code}[^"]{1,2000}))"""",
-  ]}
+  
+}
 ```

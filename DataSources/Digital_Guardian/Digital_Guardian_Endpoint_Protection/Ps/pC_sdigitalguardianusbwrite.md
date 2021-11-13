@@ -25,6 +25,7 @@ Name = s-digitalguardian-usb-write
     """Surname="({last_name}[^"]{1,2000})"""",
     """Email_Address="({user_email}[^@]{1,2000}@[^.]{1,2000}\.[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

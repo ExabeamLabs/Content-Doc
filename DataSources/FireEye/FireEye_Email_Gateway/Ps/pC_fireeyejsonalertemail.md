@@ -28,6 +28,7 @@ Name = fireeye-json-alert-email
         DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->malwareName", "alert_id->sourceId", "alert_type->malwareCategory", "alert_severity->sourceSeverity", "additional_info->sourceUrl"]
         NameTemplate = """FireEye Email MPS Alert ${alert_name} found"""
         ProjectName = "SOC"
-  }
+  
+
 }
 ```

@@ -20,6 +20,7 @@ Name = o365-activity-1
     """User=(({domain}[^\\]{1,2000})\\)?({user}[^\s,]{1,2000})""", 
   ]
   DupFields = [ "result->outcome" ]
-}
+
+
 }
 ```

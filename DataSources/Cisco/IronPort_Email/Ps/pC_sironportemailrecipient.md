@@ -16,6 +16,7 @@ Name = s-ironport-email-recipient
       """MID ({alert_id}\d{1,100}) .*? To: <({recipient}[^@>,;]{1,2000}?@[^>,;]{1,2000})""",
       """ To: <({recipients}[^>]{1,2000}?)>"""
     ]
-  }
+  
+
 }
 ```

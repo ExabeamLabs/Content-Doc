@@ -14,6 +14,7 @@ Name = q-gemalto-auth-failed
     """using\s{1,100}({auth_method}\S+)""",
     """resulting in ({outcome}AUTH_FAILURE)\.(\s{0,100}({failure_reason}.+?))?\s{0,100}""""",
   ]
-}
+
+
 }
 ```

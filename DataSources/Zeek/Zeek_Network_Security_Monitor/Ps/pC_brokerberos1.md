@@ -23,6 +23,7 @@ Name = bro-kerberos-1
     """"error_msg":"({result_code}[^"]{1,2000})""",
     """"cipher":"({ticket_encryption_type}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

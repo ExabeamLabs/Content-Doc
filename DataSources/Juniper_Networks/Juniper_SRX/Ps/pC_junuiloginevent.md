@@ -15,6 +15,7 @@ Name = jun-ui-login-event
         """ssh-connection="({src_ip}(\d{1,3}\.){3}\d{1,3})\s({src_port}\d{1,100})\s({dest_ip}(\d{1,3}\.){3}\d{1,3})\s({dest_port}\d{1,100})"\s""",
         """({event_name}UI_LOGIN_EVENT)"""
     ]
-}
+
+
 }
 ```

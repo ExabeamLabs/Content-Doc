@@ -4,7 +4,7 @@
 Name = netmotion-vpn-start-1
   DataType = "vpn-start"
   Conditions = [ """MobilityAnalytics""", """event="Start"""", """srv_name=""", """ plat="""", """ m_pid="""" ]
-}
+
 netmotion-vpn = {
   Vendor = NetMotion Wireless
   Product = NetMotion Wireless
@@ -24,5 +24,6 @@ netmotion-vpn = {
      """\sm_user="{0,20}(\[None\\*\]|({domain}[^\\"]{1,2000}?)\\+({user}[^\s"]{1,2000}))"""",
      """prot="{0,20}({protocol}[^"=]{1,2000})""",
      """event="{0,20}({event_name}[^"]{1,2000})"""
-  ]}
+  
+}
 ```

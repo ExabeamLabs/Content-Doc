@@ -5,7 +5,7 @@ Name = cef-carbonblack-file-read-1
   DataType = "file-operations"
   IsHVF = true
   Conditions = [ """CEF:""", """threatIndicators""" , """|security-threat-detected""", """act=access""" ]
-}
+
 cef-carbonblack-events-1 {
   Vendor = VMware
   Product = Carbon Black Cloud Endpoint Standard
@@ -44,5 +44,6 @@ cef-carbonblack-events-1 {
     """"selectedApp":\{[^}]{1,2000}"md5Hash":"({selected_md5hash}[^"]{1,2000})"""",
     """"selectedApp":\{[^}]{1,2000}"sha256Hash":"({selected_sha256}[^"]{1,2000})"""",
   ]
-  DupFields = [ "directory->process_directory" ]}
+  DupFields = [ "directory->process_directory" 
+}
 ```

@@ -21,6 +21,7 @@ Name = cef-azure-failed-app-login
     """\ssuid=({user_email}.+?)\s{1,100}(\w+=|$)""",
     """CEF:([^\|]{0,2000}\|){2}({app}[^\|]{1,2000})""",
   ]
-}
+
+
 }
 ```

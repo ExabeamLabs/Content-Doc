@@ -26,6 +26,7 @@ Name = json-4770
     """"TicketEncryptionType\\?":\\?"({ticket_encryption_type}[^"\\]{0,2000})""",
     """"IpAddress\\?":\\?"(?:::[\w]{1,2000}:)?({src_ip}[a-fA-F:\d.]{1,2000})\\?""""
   ]
-}
+
+
 }
 ```

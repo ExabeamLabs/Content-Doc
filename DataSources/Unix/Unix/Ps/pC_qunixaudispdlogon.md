@@ -22,6 +22,7 @@ Name = q-unix-audispd-logon
     """\sres=({outcome}.+?)('\s{0,100}$|'?\s{1,100}\w+=)""",
   ]
   DupFields=[ "host->dest_host" ]
-}
+
+
 }
 ```

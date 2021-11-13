@@ -3,7 +3,7 @@
 {
 Name = s-trendmicro-security-alert-1
   Conditions = [ """TMCM:SLF_INCIDENT_EVT_GRAYWARE_FOUND_CLEAN_SUCCESS""" ]
-}
+
 s-trendmicro-security-alert = {
   Vendor = Trend Micro
   Product = OfficeScan
@@ -26,5 +26,6 @@ s-trendmicro-security-alert = {
     """\sInfection destination="({dest_host}[^"]{1,2000})""",
     """\sInfection destination IP="({dest_ip}[a-fA-F\d.:]{1,2000})""",
   ]
-  DupFields = ["file_name->process_name"]}
+  DupFields = ["file_name->process_name"
+}
 ```

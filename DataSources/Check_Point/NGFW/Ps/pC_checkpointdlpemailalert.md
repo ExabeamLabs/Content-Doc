@@ -9,7 +9,7 @@ Name = checkpoint-dlp-email-alert
     """\Wemail_recipients_num:"({num_recipients}\d{1,100})""",
     """\Wfrom:"({sender}[^"\s]{1,2000})""",
   ]
-}
+
 checkpoint-firewall-1 = {
   Vendor = Check Point 
   Product = NGFW
@@ -63,5 +63,6 @@ checkpoint-firewall-1 = {
     """\Wsent_bytes:"({bytes_out}\d{1,100})""",
     """\Wifname:"({interface_name}[^"]{1,2000})""",
   ]
-  DupFields = [ "action->event_name", "action->outcome" ]}
+  DupFields = [ "action->event_name", "action->outcome" 
+}
 ```

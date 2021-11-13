@@ -19,6 +19,7 @@ Name = cef-dtex-print-activity
     """([^\|]{0,2000}\|){5}({activity}[^\|]{1,2000})""",
   ]
   DupFields = [ "host->src_host" ]
-}
+
+
 }
 ```

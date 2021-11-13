@@ -10,7 +10,7 @@ Name = s-okta-failed-login-3
     """"city":\s{0,100}"({location_city}[^"]{1,2000})""",
   ]
   DupFields = [ "additional_info->failure_reason" ]
-}
+
 s-okta-app-login = {
   Vendor = Okta
   Product = Okta Adaptive MFA
@@ -41,5 +41,6 @@ s-okta-app-login = {
     """"state":\s{0,100}"({location_state}[^"]{1,2000})""",
     """"country":\s{0,100}"({location_country}[^"]{1,2000})"""
   ]
-    DupFields=["app->object"]}
+    DupFields=["app->object"
+}
 ```

@@ -4,7 +4,7 @@
 Name = jp-process-network
   DataType = "process-network"
   Conditions = [ """,5156,""", """フィルターリング プラットフォームで、接続が許可されました。""" ]
-}
+
 jp-event = {
   Vendor = Microsoft
   Product = Windows
@@ -21,5 +21,6 @@ jp-event = {
     """\sアカウント名:\s{0,100}({user}[^:]{1,2000}?)\s{0,100}アカウント ドメイン:""",
     """\sアカウント ドメイン:\s{0,100}({domain}[^:]{1,2000}?)\s{0,100}ログオン ID:""",
     """\sログオン ID:\s{0,100}({logon_id}\S+)""",
-  ]}
+  
+}
 ```

@@ -18,6 +18,7 @@ Name = thycotic-app-login
     """\sduser=(({domain}[^\\=]{1,2000})(\\)+)?({user}.+?)\s{1,100}\w+=""",
     """({app}Thycotic Software)"""
   ]
-}
+
+
 }
 ```

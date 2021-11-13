@@ -23,6 +23,7 @@ Name = s-oracle-db-logon
     """PORT=({src_port}\d{1,100})""",
   ]
   DupFields = [ "os_user->user", "db_user->account"]
- }
+ 
+
 }
 ```

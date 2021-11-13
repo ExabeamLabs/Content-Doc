@@ -14,6 +14,7 @@ Name = ovirt-app-login
     """USER_VDC_LOGIN.+? User (?:({user_email}[^\s@]{1,2000}@({email_domain}[^\s@]{1,2000}))\S*|({user}[^\s]{1,2000})) connecting from '({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """({app}ovirt)"""
   ]
-}
+
+
 }
 ```

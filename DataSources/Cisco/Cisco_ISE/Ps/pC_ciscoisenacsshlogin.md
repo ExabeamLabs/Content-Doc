@@ -20,6 +20,7 @@ Name = cisco-ise-nac-ssh-login
     """ad.User=({user}[^\s]{1,2000})""",
     """suser=({user}[^\s]{1,2000})""",
   ]
-}
+
+
 }
 ```

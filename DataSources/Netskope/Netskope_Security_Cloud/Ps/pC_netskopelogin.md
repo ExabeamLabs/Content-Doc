@@ -20,6 +20,7 @@ Name = netskope-login
     """"browser": "(unknown|({browser}[^"]{1,2000}))"""",
     """"os": "(unknown|({os}[^"]{1,2000}))""""
   ]
-}
+
+
 }
 ```

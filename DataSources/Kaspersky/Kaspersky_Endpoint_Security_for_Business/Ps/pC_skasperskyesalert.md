@@ -19,6 +19,7 @@ Name = s-kaspersky-es-alert
            """Result\\Name:\s{0,100}({alert_name}.+?)\s{0,100}Result\\""",
 	   """Result\\Threat level:\s{0,100}({alert_severity}.+?)\s{0,100}Result\\"""
            ]
-}
+
+
 }
 ```

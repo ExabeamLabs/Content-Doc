@@ -21,6 +21,7 @@ Name = websense-usb-activity
     """\sduser=(?:|({device_id}.+?))\s{1,100}(\w+=|$)""",
     """({device_type}(USB|DVD|Removable Media))"""
   ]
-}
+
+
 }
 ```

@@ -18,6 +18,7 @@ Name = centrify-authentication-success-1
     """AUDIT_TRAIL\|Centrify Suite\|MFA\|[^=]{1,2000}({event_name}MFA challenge succeeded)""",
     """Message:\s{0,100}({additional_info}[^:]{1,2000})\.\s{1,100}""",
   ]
-}
+
+
 }
 ```

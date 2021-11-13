@@ -4,7 +4,7 @@
 Name = cef-checkpoint-firewall-3
   DataType = "network-connection"
   Conditions = [ """CEF:""", """|Check Point|Log Update|""" ]
-}
+
 cef-checkpoint-firewall = {
   Vendor = Check Point 
   Product = NGFW
@@ -42,5 +42,6 @@ cef-checkpoint-firewall = {
     """\Win=({bytes_in}\d{1,100})""",
     """\Wout=({bytes_out}\d{1,100})""",
     """categoryOutcome=(\/)?({outcome}.+?)\s\w+="""
-  ]}
+  
+}
 ```

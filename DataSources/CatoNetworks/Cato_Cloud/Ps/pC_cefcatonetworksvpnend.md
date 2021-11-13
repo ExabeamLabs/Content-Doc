@@ -18,6 +18,7 @@ Name = cef-catonetworks-vpn-end
     """\Wshost=({user_fullname}.+?)\s{1,100}(\w+=|$)""",
     """\Wtunnel_device_type=({os}.+?)\s{1,100}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

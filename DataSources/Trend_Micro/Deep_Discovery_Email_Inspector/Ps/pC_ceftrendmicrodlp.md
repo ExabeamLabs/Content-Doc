@@ -22,6 +22,7 @@ Name = cef-trendmicro-dlp
         """cs1=({return_path}[^\s]{1,2000})\s"""
   ]
   DupFields = [ "sender->external_address", "user_email->email_user"]
-}
+
+
 }
 ```

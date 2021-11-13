@@ -18,6 +18,7 @@ Name = raw-4723
       """Security,(rn=)?({record_id}[\d]{1,2000})""",
       """({host}[\w.\-]{1,2000})\s{0,100}:\s{1,100}An attempt was made to change""",
       """\scategoryOutcome=(|/({outcome}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-      """({outcome}((Success|Failure|Audit)\s{1,100}\w+)|Information)(\s{1,100}|\s{0,100}
+      """({outcome}((Success|Failure|Audit)\s{1,100}\w+)|Information)(\s{1,100}|\s{0,100
+
 }
 ```

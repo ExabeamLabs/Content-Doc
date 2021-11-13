@@ -4,7 +4,7 @@
 Name = s-windows-event-633
   DataType = "windows-member-removed"
   Conditions = [ """LogType="WLS"""", """EventID="633"""" ]
-}
+
 windows-events-wls= {
   Vendor = Microsoft
   Product = Windows
@@ -44,5 +44,6 @@ windows-events-wls= {
     """AuthenticationPackageName ="({auth_package}[^"]{1,2000})"""",
     """IpAddress="(-|({src_ip}[a-fA-F\d:.]{1,2000}))""""
     ]
-    DupFields = [ "dest_host->host" ]}
+    DupFields = [ "dest_host->host" 
+}
 ```

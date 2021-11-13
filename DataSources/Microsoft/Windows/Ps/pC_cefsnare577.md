@@ -24,6 +24,7 @@ Name = cef-snare-577
     """User\\=(SYSTEM|({user}[^=&]{1,2000}))""",
     """ComputerName\\=({host}[\w.\-]{1,2000})""",
   ]
-}
+
+
 }
 ```

@@ -5,7 +5,7 @@ Name = pan-cef-alert-5
   DataType = "network-alert"
   TimeFormat = "MMM dd yyyy HH:mm:ss zzz"
   Conditions = [ """Palo Alto Networks|PAN-OS|""","""HTTP Non-RFC Compliant Request(39143)|THREAT|""" ]
-}
+
 pan-cef-alert = {
   Vendor = Palo Alto Networks
   Product = WildFire
@@ -46,5 +46,6 @@ pan-cef-alert = {
       {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address"]},
       {EntityType="device", Name ="dest_address", Fields=["dest_ip->ip_address"]},
       {EntityType="user", Name ="windows_id", Fields=["user->windows_id"]}
-    ]}
+    
+}
 ```

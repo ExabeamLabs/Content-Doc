@@ -28,6 +28,7 @@ Name = s-zscaler-web-activity-5
     """\shostname=(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|({web_domain}\S+))""",
     """\sappname=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

@@ -5,7 +5,7 @@ Name = microsoft-app-activity-2
   Product = Office 365
   DataType = "app-activity"
   Conditions= [ """"src-application-name":"Office 365"""","""event-name":"user-updated"""",""""src-event-id""""]
-}
+
 microsoft-app-activity = {
   Vendor = Microsoft
   Lms = ArcSight
@@ -35,5 +35,6 @@ microsoft-app-activity = {
     """"User-Agent\\?"{1,20}:\\?"{1,20}({user_agent}[^"\\]{1,2000})"""
     """"UserAgent":"({user_agent}[^"]+)"""",
     """"ipAddress":"({dest_ip}[A-Fa-f.:\d]{1,2000})""""
-  ]}
+  
+}
 ```

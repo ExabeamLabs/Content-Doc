@@ -5,7 +5,7 @@ Name = s-sonicwall-remote-logon
   Product = Sonicwall
   DataType = "remote-logon"
   Conditions = [ """msg="RDP""", "SSLVPN:", "id=sslvpn"]
-}
+
 sonicwall-vpn-login = {
   Vendor = Sonicwall
   Lms = Splunk
@@ -27,5 +27,6 @@ sonicwall-vpn-login = {
     """\sbytesOut=({bytes_out}\d{1,100})""",
     """\sbytesTotal=({bytes}\d{1,100})"""
   ]
-  DupFields = ["user->account"]}
+  DupFields = ["user->account"
+}
 ```

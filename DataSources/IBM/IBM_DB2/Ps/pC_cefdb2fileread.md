@@ -23,6 +23,7 @@ Name = cef-db2-file-read
     """duser=({user}.+?)\s{0,100}\w+=""",
   ]
   DupFields = [ "file_name->object" ]
-}
+
+
 }
 ```

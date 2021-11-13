@@ -15,6 +15,7 @@ Name = cef-securesphere-app-login
     """0\|([^\|]{0,2000}\|){4}User ({user}[^\s]{1,2000}) logged in from""",
     """\ssuser=({user}.+?)\s{0,100}(\w+=|$)"""
   ]
-}
+
+
 }
 ```

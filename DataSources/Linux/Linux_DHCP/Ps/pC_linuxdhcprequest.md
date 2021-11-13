@@ -13,6 +13,7 @@ Name = linux-dhcp-request
     """\d\d:\d\d:\d\d\s{1,100}({host}[^\s]{1,2000})\s{1,100}dhcpd(\[\d{1,100}\])?:\s{1,100}DHCPREQUEST for ({dest_ip}[a-fA-F\d\.:]{1,2000})\s.*?from ({dest_mac}[a-fA-F\d\.:]{1,2000})(\s\(({dest_host}\S+)\))?( via (({src_ip}[\d.:a-fA-F]{1,2000}[\da-fA-F]):?|({dest_interface}[\w-]{1,2000})))\s{0,100}""",
   ]
   DupFields = [ "host->auth_server" ]
-}
+
+
 }
 ```

@@ -3,7 +3,7 @@
 {
 Name = cef-carbonblack-file-alert-3
   Conditions = [ """CEF:""", """|VMware Carbon Black|App Control|""", """cat=""", """externalId=""" ]
-}
+
 cef-carbonblack-file-alert = {
   Vendor = VMware
   Product = App Control
@@ -29,5 +29,6 @@ cef-carbonblack-file-alert = {
     """fname=({file_name}[^=]{1,2000})\s{1,100}(\w+=|$)""",
     """fileHash=({old_hash}[^=]{1,2000})\s{1,100}(\w+=)""",
     """msg=({additional_info}[^=]{1,2000}?)\s{1,100}(\w+=|$)"""
-  ]}
+  
+}
 ```

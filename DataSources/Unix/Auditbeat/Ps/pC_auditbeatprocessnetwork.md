@@ -26,6 +26,7 @@ Name = auditbeat-process-network
     """"action":"({action}[^"]{1,2000})""""
   ]
   DupFields = ["action->event_name"]
-}
+
+
 }
 ```

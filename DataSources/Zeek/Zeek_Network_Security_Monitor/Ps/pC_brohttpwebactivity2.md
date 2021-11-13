@@ -12,7 +12,7 @@ Name = bro-http-web-activity-2
     """"{1,20}domain"{1,20}:"{1,20}({web_domain}[^"]{1,2000})""",
     """"{1,20}resp_mime_types"{1,20}:\["{1,20}({mime}[^"]{1,2000})"""	
   ]
-}
+
 bro-activity-1 = {
   Vendor = Zeek
   Lms = Direct
@@ -25,5 +25,6 @@ bro-activity-1 = {
     """"destination":\{"address"{1,20}:"{1,20}({dest_ip}[^"]{1,2000})"{1,20},"{1,20}port"{1,20}:({dest_port}\d{1,100})""",
     """"source":\{"address"{1,20}:"{1,20}({src_ip}[^"]{1,2000})"{1,20},"{1,20}port"{1,20}:({src_port}\d{1,100})""",
     """"{1,20}protocol"{1,20}:"{1,20}({protocol}[^"]{1,2000})"""
-    ]}
+    
+}
 ```

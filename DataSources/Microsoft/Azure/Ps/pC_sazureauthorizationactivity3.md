@@ -27,6 +27,7 @@ Name = s-azure-authorization-activity-3
     """resourceGroupName": "({account_id}[^"]{1,2000})"""
 
   ]
-}
+
+
 }
 ```

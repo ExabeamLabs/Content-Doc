@@ -24,6 +24,7 @@ Name = cef-mimecast-email-alert-1
     """"SourceIP":"({src_ip}[^"]{1,2000})""""
   ]
   DupFields = ["recipient->user_email", "recipient->email_user"]
-}
+
+
 }
 ```

@@ -22,6 +22,7 @@ Name = cef-netapp-file-operations-1
     """"host\\{0,20}":\\{0,20}"({dest_ip}[a-fA-F\d:.]{1,2000})\\{0,20}""""
   ]
   DupFields = [ "activity->accesses" ]
-}
+
+
 }
 ```

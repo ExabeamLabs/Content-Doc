@@ -5,7 +5,7 @@ Name = fortinet-ssl-vpn-start
   DataType = "vpn-start"
   TimeFormat = "yyyy-MM-dd 'time='HH:mm:ss"
   Conditions = [ "SSL tunnel established", "tunnel-up", "user=" ]
-}
+
 fortinet-ssl-vpn = {
   Vendor = Fortinet
   Product = Fortinet VPN
@@ -23,5 +23,6 @@ fortinet-ssl-vpn = {
     """\Wrcvdbyte=({bytes_in}\d{1,100})""",
     """\Wgroup="({realm}[^"]{1,2000})""", 
   ]
-  DupFields = ["host->dest_host", "user->account"]}
+  DupFields = ["host->dest_host", "user->account"
+}
 ```

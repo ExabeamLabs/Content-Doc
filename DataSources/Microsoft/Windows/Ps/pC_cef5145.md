@@ -29,6 +29,7 @@ Name = cef-5145
           """\Wad\.RelativeTargetName =(({f_parent}.*?)({file_name}[^\\:]{1,2000}?(\.({file_ext}[^\\.]{1,2000}?))?))(\s{1,100}(\w+|\w+\.\w+)=|\s{0,100}$)""",
           """\Wad\.ObjectType=({file_type}\w+)""",
         ]
-}
+
+
 }
 ```

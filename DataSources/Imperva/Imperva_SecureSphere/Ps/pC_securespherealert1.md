@@ -24,6 +24,7 @@ Name = securesphere-alert-1
     """EventNumber=({alert_id}\d{1,100})""",
     """Alert\.username=(n\/a|({user}[^;]{1,2000}))""", 
   ]
-}
+
+
 }
 ```

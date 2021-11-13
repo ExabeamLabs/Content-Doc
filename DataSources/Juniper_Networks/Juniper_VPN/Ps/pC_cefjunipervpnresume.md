@@ -20,6 +20,7 @@ Name = cef-juniper-vpn-resume
     """dst=({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""", 
   ]
   DupFields = [ "host->dest_host" , "user->account"]
-}
+
+
 }
 ```

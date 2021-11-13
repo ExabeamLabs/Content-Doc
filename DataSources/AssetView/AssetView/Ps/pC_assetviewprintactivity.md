@@ -17,6 +17,7 @@ Name = assetview-print-activity
     """("\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d.\d\d\d",){2}("[^"]{0,2000}",){15}"({number_of_page}[^"]{1,2000})""",
     """("\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d.\d\d\d",){2}("[^"]{0,2000}",){3}"({asset_id}[^"]{1,2000})"""",
   ]
-}
+
+
 }
 ```

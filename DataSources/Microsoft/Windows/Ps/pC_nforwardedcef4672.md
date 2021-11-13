@@ -21,6 +21,7 @@ Name = n-forwarded-cef-4672
       """\snitroPrivileges=({privileges}.+?)(\s{1,100}\w+=|0\|\s{0,100}$)""",
     ]
     DupFields = ["dest_ip->host", "dest_host->host"]
-  }
+  
+
 }
 ```

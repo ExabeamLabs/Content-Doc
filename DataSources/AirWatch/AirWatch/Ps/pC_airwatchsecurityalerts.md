@@ -5,7 +5,7 @@ Name = airwatch-security-alerts
   DataType = "security-alerts"
   Conditions = [ """AirWatch""", """Event Category:"""", """Event:"""" ]
 
-}
+
 airwatch-auth-activity = {
     Vendor = AirWatch
     Product = AirWatch
@@ -22,5 +22,6 @@ airwatch-auth-activity = {
       """DeviceFriendlyName:"{1,20}((N\/A)|(DELETE IN PROGRESS...)|({device_name}[^"]{1,2000}))"""",
       """Reason=({failure_reason}[^"]{1,2000})"""",
     ]
-     DupFields = ["device_name->src_host"]}
+     DupFields = ["device_name->src_host"
+}
 ```

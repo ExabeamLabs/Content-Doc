@@ -20,6 +20,7 @@ Name = checkpoint-proxy-2
     """src_machine_name:\\"({host}[^"\\@]{1,2000})(@({domain}\w+)?)""",
     """src_user_name:\\"({user_fullname}[^"\\\(]{1,2000}?)\s{0,100}(\(|\\)""",
   ]
-}
+
+
 }
 ```

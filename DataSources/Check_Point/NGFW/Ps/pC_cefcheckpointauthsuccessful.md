@@ -4,7 +4,7 @@
 Name = cef-checkpoint-auth-successful
   DataType = "authentication-successful"
   Conditions = [ """CEF:""", """|Check Point|Identity Awareness|""", """act=Log In""" ]
-}
+
 cef-checkpoint-firewall = {
   Vendor = Check Point 
   Product = NGFW
@@ -42,5 +42,6 @@ cef-checkpoint-firewall = {
     """\Win=({bytes_in}\d{1,100})""",
     """\Wout=({bytes_out}\d{1,100})""",
     """categoryOutcome=(\/)?({outcome}.+?)\s\w+="""
-  ]}
+  
+}
 ```

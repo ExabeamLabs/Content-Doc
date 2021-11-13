@@ -13,6 +13,7 @@ Name = powersentry-app-login
     """\d\d:\d\d:\d\d ({host}[^\s]{1,2000}) \[({src_host}[^\]]{1,2000})\].+?User "({user}[^\s"]{1,2000})""",
     """connection source ({src_ip}[A-Fa-f:\d.]{1,2000}) using ({protocol}[^\s]{1,2000})""",
   ]
-}
+
+
 }
 ```

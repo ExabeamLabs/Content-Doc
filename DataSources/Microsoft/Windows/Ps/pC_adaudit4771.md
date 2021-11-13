@@ -23,6 +23,7 @@ Name = ad-audit-4771
     """ERROR_CODE\s{0,100}=\s{0,100}({result_code}[^\s]{1,2000})""",
     """EVENT_TYPE_TEXT\s{0,100}=\s{0,100}({outcome}.+?)\s{0,100}\]""",
   ]
-}
+
+
 }
 ```

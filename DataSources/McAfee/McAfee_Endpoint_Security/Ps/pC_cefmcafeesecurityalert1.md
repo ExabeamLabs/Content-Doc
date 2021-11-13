@@ -34,6 +34,7 @@ Name = cef-mcafee-security-alert-1
       """\Wact=({outcome}[^=]{1,2000}?)\s{1,100}([\w\.-]{1,2000}=|$)"""
     ]
     DupFields = [ "process_directory->directory" ]
-  }
+  
+
 }
 ```

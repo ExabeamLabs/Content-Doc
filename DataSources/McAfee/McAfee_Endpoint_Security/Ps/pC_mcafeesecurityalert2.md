@@ -4,7 +4,7 @@
 Name = mcafee-security-alert-2
   DataType = "alert"
   Conditions = [ """DetectingProductName =MOVE AV Offload Server""" ]
-}
+
 mcafee-dlp-alert = {
     Vendor = McAfee
     Product = McAfee Endpoint Security
@@ -30,5 +30,6 @@ mcafee-dlp-alert = {
       """,ThreatName =({alert_name}[^,]{1,2000})""",
       """,eventname=({alert_name}[^,]{1,2000})""",
       """,Vulnerability Name =({alert_name}[^,]{1,2000})"""
-    ]}
+    
+}
 ```

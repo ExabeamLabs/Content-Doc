@@ -17,6 +17,7 @@ Name = vmware-view-failed-login
     """UserDisplayName ="(({domain}[^\\]{1,2000})\\+)?({user}[^"]{1,2000})"""",
     """USER_AUTHFAILED_({failure_reason}[^"]{1,2000})""""
    ]
-}
+
+
 }
 ```

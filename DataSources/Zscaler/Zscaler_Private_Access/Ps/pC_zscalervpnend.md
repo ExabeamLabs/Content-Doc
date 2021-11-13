@@ -10,6 +10,7 @@ Name = zscaler-vpn-end
   Conditions = [ """,ZPN_STATUS_DISCONNECTED,""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
-    """([^,]{0,2000}
+    """([^,]{0,2000
+
 }
 ```

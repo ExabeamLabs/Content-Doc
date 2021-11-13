@@ -26,6 +26,7 @@ Name = cisco-firesight-alert
     NameTemplate = """Cisco Firesight Alert ${alert_type} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]}
+      {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]
+
 }
 ```

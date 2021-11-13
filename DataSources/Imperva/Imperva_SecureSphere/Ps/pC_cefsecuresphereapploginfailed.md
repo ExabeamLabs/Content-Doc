@@ -15,6 +15,7 @@ Name = cef-securesphere-app-login-failed
     """\|Login failed for user ({user}[^\s\(\)]{1,2000})""",
     """\|Login failed for user.*?\(IP: ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\) Reason: ({failure_reason}[^\|]{1,2000})\|"""
   ]
-}
+
+
 }
 ```

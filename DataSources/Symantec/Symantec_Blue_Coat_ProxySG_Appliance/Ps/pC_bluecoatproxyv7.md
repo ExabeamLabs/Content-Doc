@@ -3,7 +3,7 @@
 {
 Name = bluecoat-proxy-v7
   Conditions = [ """method="GET"""", """OBSERVED""", """event_type="web-activity-allowed"""", """http""" ]
-}
+
 bluecoat-proxy-1 = {
   Vendor = Symantec
   Product = Symantec Blue Coat ProxySG Appliance
@@ -30,5 +30,6 @@ bluecoat-proxy-1 = {
     """uri_path="({uri_path}[^"]{1,2000})"""",
     """uri_query="({uri_query}[^"]{1,2000})"""",
     """referrer="({referrer}[^"]{1,2000})""""
-  ]}
+  
+}
 ```

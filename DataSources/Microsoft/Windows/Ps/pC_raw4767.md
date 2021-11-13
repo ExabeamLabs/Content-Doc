@@ -18,6 +18,7 @@ Name = raw-4767
     """Subject:.+?Account Name:\s{0,100}({user}.+?)\s{0,100}Account Domain:\s{0,100}({domain}.+?)\s{0,100}Logon ID:\s{0,100}({logon_id}.+?)\s{0,100}Target Account:""",
     """Target Account:\s{0,100}Security ID:\s{0,100}({user_sid}.+?)\s{0,100}Account Name:\s{0,100}({target_user}.+?)\s{0,100}Account Domain:\s{0,100}({target_domain}.+?)\s"""
   ]
-}
+
+
 }
 ```

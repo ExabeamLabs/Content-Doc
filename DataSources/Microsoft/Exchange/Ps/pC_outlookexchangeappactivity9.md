@@ -9,7 +9,7 @@ Name = outlook-exchange-app-activity-9
     """SENDASUSER=({target}[^\s]{1,2000})""",
   ]
   DupFields = [ "subject->object", "attachments->additional_info" ]
-}
+
 outlook-exchange-app-activity = {
   Vendor = Microsoft
   Product = Exchange
@@ -31,5 +31,6 @@ outlook-exchange-app-activity = {
     """"Subject":"\s{0,100}({subject}[^"}]{1,2000}?)\s{0,100}"""",
     """"Attachments\\*"{1,20}:[\s\\]{0,2000}"{1,20}\s{0,100}({attachments}[^"\\]{1,2000})\s{0,100}""",
     """"Attachments\\*"{1,20}:[\s\\]{0,2000}"{1,20}\s{0,100}({attachment}[^"\\;]{1,2000})\s{0,100}""",
-]}
+
+}
 ```

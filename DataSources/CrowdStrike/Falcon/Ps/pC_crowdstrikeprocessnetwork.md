@@ -25,6 +25,7 @@ Name = crowdstrike-process-network
     """src-account-name":"({account_name}[^"]{1,2000})""",
     """"aid":"({aid}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

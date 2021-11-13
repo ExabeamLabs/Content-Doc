@@ -3,7 +3,7 @@
 {
 Name = cef-azure-onedrive-app-activity-4
   Conditions = [ """CEF:""", """|MCAS|SIEM_Agent|""", """|Add permission to mailbox|""" ]
-}
+
 cef-azure-onedrive-app-activity = {
   Vendor = Microsoft
   Product = Cloud App Security (MCAS)
@@ -23,5 +23,6 @@ cef-azure-onedrive-app-activity = {
     """\Wmsg=({additional_info}.*?)\s{1,100}(\w+=|$)""",
     """\Wmsg=.*?\s{1,100}folder\s{1,100}(\([^\)]{0,2000}\):\s{0,100})?({object}.*?)\s{1,100}(\w+=|$)""",
     """\WrequestClientApplication=(|({user_agent}.*?))\s{1,100}(\w+=|$)""",
-  ]}
+  
+}
 ```

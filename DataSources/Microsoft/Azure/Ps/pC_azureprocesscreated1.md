@@ -21,6 +21,7 @@ Name = azure-process-created-1
     """UserDomain"{1,20}:"{1,20}({domain}[^"]{1,2000})"""
     ]
     DupFields = [ "directory->process_directory" ]
-}
+
+
 }
 ```

@@ -21,6 +21,7 @@ Name = s-fireeye-hx-alert-5
        """"fileWriteEvent\/fullPath":\s{0,100}"({file_path}[^"]{1,2000})""",
        """"fileWriteEvent\/process":\s{0,100}"({process}[^"]{1,2000})"""
     ]      
-  }
+  
+
 }
 ```

@@ -17,6 +17,7 @@ Name = s-postfix-dlp-email
     """\Wto=<({recipient}[^\s\>,;]{1,2000})""",
     """\Wfrom (unknown|({src_host}[\w\-.]{1,2000}))\[({src_ip}[a-fA-F:\d.]{1,2000})""",
   ]
-}
+
+
 }
 ```

@@ -19,6 +19,7 @@ Name = counteract-nac-logon-successful
     """dmac=({dest_mac}[^\s]{1,2000})\s\w+=""",
     """cs2=({event_name}[^=]{1,2000}?)\s\w+="""
   ]
-}
+
+
 }
 ```

@@ -17,6 +17,7 @@ Name = q-leef-ds-account-enabled
     """AffectedObject=(({target_domain}[^\\]{1,2000})\\)?({target_user}.+?)\s{1,100}\w+=""",
     """OrigServer=([^\\]{1,2000}\\)?({dest_host}.+?)\s{1,100}\w+="""
   ]
-}
+
+
 }
 ```

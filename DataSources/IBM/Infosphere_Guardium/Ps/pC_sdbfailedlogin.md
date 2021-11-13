@@ -10,6 +10,7 @@ Name = s-db-failed-login
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ ""","LOGIN_FAILED",""" ]
   Fields = [
-    """([^,]{0,2000}
+    """([^,]{0,2000
+
 }
 ```

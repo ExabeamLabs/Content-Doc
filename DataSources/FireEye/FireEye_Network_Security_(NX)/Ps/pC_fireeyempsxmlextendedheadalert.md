@@ -15,6 +15,7 @@ Name = fireeye-mps-xml-extended-head-alert
     """<malware name="({alert_name}[^"]{1,2000})"""",
     """xsi:schemaLocation=.+?name="({alert_type}[^"]{1,2000})".*severity="({alert_severity}[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

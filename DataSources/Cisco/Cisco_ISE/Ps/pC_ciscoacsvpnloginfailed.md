@@ -29,6 +29,7 @@ Name = cisco-acs-vpn-login-failed
     """({event_code}5400)""",
   ]
   DupFields = ["user->account"]
-}
+
+
 }
 ```

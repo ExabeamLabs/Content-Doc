@@ -16,6 +16,7 @@ Name = cef-crowdstrike-app-activity
     """({app}FalconHost)""",
   ]
   DupFields = ["domain->email_domain"]
-}
+
+
 }
 ```

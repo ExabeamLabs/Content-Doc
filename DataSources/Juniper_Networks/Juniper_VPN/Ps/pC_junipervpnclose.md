@@ -43,6 +43,7 @@ Name = juniper-vpn-close
     """\sduration=({session_duration}\d{1,100})""",
     """\smsg="({additional_info}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

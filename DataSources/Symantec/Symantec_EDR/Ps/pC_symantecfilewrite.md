@@ -4,7 +4,7 @@
 Name = symantec-file-write
   DataType = "file-write"
   Conditions = [ """"event_id":8003001""", """"type_id":8003""", """"Symantec Endpoint Detection and Response"""", """collector_device_ip""" ]
-}
+
 symantec-file-template = {
     Vendor = Symantec
     Product = Symantec EDR
@@ -29,5 +29,6 @@ symantec-file-template = {
       """size":({file_size}\d{1,100})""",
       """cmd_line":"({command_line}[^\n]{1,2000}?)\s{0,100}","""
     ]  
-  }}
+  
+}
 ```

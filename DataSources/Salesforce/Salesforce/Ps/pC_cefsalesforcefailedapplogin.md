@@ -22,6 +22,7 @@ Name = cef-salesforce-failed-app-login
     """dvchost=({src_host}.+?)\s{0,100}(\w+=|$)""",
     """({app}Sales Cloud)""",
   ]
-}
+
+
 }
 ```

@@ -3,8 +3,8 @@
 {
 Name = s-digitalguardian-network-connection
   Conditions = [ """Operation_ID="4"""" , """Agent_UTC_Time=""" ]
-}
-splunk-digitalguardian-network-connection ={
+
+splunk-digitalguardian-network-connection = {
   Vendor = Digital Guardian
   Product = Digital Guardian Endpoint Protection
   Lms = Splunk
@@ -33,5 +33,6 @@ splunk-digitalguardian-network-connection ={
     """Was_Blocked="(?:|({outcome}[^"]{1,2000}))"""",
      """Operation_ID="({event_code}[^"]{1,2000})""""
   ]
-  DupFields = [ "host->dest_host" ]}
+  DupFields = [ "host->dest_host" 
+}
 ```

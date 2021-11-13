@@ -33,6 +33,7 @@ Name = forcepoint-proxy
       """\sproxyStatus-code=({result_code}\d{1,100})""",
       """cat=({category_id}\d{1,100})""", 
     ]
-  }
+  
+
 }
 ```

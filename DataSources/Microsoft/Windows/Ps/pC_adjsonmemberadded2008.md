@@ -10,7 +10,7 @@ Name = ad-json-member-added-2008
     """"{1,20}MemberSid"{1,20}:"{1,20}({account_id}[^"]{1,2000})""",
     """"TargetSid":"({group_id}[^\s"]{1,2000})"""
   ]
-}
+
 json-windows-events-1 = {
   Vendor = Microsoft
   Product = Windows
@@ -48,5 +48,6 @@ json-windows-events-1 = {
     """"{1,20}SidHistory"{1,20}:"{1,20}(-|({sid_history}[^"]{1,2000}))""",
     """"Keywords":"({outcome}[^"]{1,2000})"""
   ]
-  DupFields = ["event_id->event_code"]}
+  DupFields = ["event_id->event_code"
+}
 ```

@@ -23,6 +23,7 @@ Name = logstash-4768
       """"additional_information-TicketOptions":"({ticket_options}[^"]{1,2000})"""
     ]
     DupFields = ["host->dest_host"]
-  }
+  
+
 }
 ```

@@ -26,6 +26,7 @@ Name = s-securesphere-db-alert
     """\sDescription=({additional_info}.+?)\s{1,100}$"""
   ]
   DupFields = [ "db_user->account" ]
-}
+
+
 }
 ```

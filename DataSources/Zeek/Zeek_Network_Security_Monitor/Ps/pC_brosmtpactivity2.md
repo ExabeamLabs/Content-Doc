@@ -7,7 +7,7 @@ Name = bro-smtp-activity-2
   Conditions = [ """protocol""", """"smtp"""", """zeek""", """type""" ]
   Fields = ${BroParserTemplates.bro-activity-1.Fields}[
     ]
-}
+
 bro-activity-1 = {
   Vendor = Zeek
   Lms = Direct
@@ -20,5 +20,6 @@ bro-activity-1 = {
     """"destination":\{"address"{1,20}:"{1,20}({dest_ip}[^"]{1,2000})"{1,20},"{1,20}port"{1,20}:({dest_port}\d{1,100})""",
     """"source":\{"address"{1,20}:"{1,20}({src_ip}[^"]{1,2000})"{1,20},"{1,20}port"{1,20}:({src_port}\d{1,100})""",
     """"{1,20}protocol"{1,20}:"{1,20}({protocol}[^"]{1,2000})"""
-    ]}
+    
+}
 ```

@@ -3,8 +3,8 @@
 {
 Name = s-digitalguardian-file-write-1
   Conditions = [ """Operation_ID="11"""" , """Agent_UTC_Time=""" ]
-}
-splunk-digitalguardian-file-write ={
+
+splunk-digitalguardian-file-write = {
   Vendor = Digital Guardian
   Product = Digital Guardian Endpoint Protection
   Lms = Splunk
@@ -29,5 +29,6 @@ splunk-digitalguardian-file-write ={
     """(\s|exabeam_\w+=)Operation((_ID)?)="(?:|({event_code}[^"]{1,2000}))"""",
      """Operation_ID="({event_code}[^"]{1,2000})""""
   ]
-  DupFields = [ "host->dest_host" ]}
+  DupFields = [ "host->dest_host" 
+}
 ```

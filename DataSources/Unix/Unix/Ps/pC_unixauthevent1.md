@@ -13,6 +13,7 @@ Name = unix-auth-event-1
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """AD authentication ({outcome}succeeded) for user ({user}[^""]{1,2000})"""
   ]
-}
+
+
 }
 ```

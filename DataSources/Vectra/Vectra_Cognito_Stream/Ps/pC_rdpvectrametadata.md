@@ -7,7 +7,7 @@ Name = rdp-vectra-meta-data
   Fields = ${VectraParserTemplates.vectra-meta-data.Fields} [
     """result="{1,20}({outcome}[^"]{1,2000})"{1,20}"""
   ]
-}
+
 vectra-meta-data = {
   Vendor = Vectra
   Product = Vectra Cognito Stream
@@ -23,5 +23,6 @@ vectra-meta-data = {
     """orig_hostname="{1,20}({src_host}[^"]{1,2000})"{1,20}"""
     """resp_hostname="{1,20}(null|((IP-)*({dest_host}[^"]{1,2000})))"""
   ]
- }}
+ 
+}
 ```

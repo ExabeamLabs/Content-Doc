@@ -4,7 +4,7 @@
 Name = openvpn-vpn-end-1
   DataType = "vpn-end"
   Conditions = [ """id=ArrayOS""", """TCP tunnel""", """has been terminated for""", """type=vpn""" ]
-}
+
 openvpn-events = {
   Vendor = SSL Open VPN
   Product = SSL Open VPN
@@ -27,5 +27,6 @@ openvpn-events = {
     """\WTCP tunnel\(({src_translated_ip}[A-Fa-f:\d.]{1,2000})\)""",
     """\Wclientip\(({src_translated_ip}[A-Fa-f:\d.]{1,2000})\)""",
   ]
-  DupFields = ["user->account"]}
+  DupFields = ["user->account"
+}
 ```

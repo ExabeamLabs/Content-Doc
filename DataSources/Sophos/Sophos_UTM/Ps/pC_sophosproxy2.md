@@ -27,6 +27,7 @@ Name = sophos-proxy-2
     """ua="(|({user_agent}[^"]{1,2000}))"""",
     """category="({category}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

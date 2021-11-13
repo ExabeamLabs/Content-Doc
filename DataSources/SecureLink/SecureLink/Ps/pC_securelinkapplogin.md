@@ -14,6 +14,7 @@ Name = securelink-app-login
       """connected to Application ({app}[^.]{1,2000})""",
       """AUDIT:.+?\(({user_email}[^@]{1,2000}@({email_domain}[^)]{1,2000}))\)"""
     ]
-  }
+  
+
 }
 ```

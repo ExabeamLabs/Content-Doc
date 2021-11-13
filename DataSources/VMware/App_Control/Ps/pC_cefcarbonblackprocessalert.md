@@ -31,6 +31,7 @@ Name = cef-carbonblack-process-alert
     NameTemplate = """Carbon Black Alert ${alert_name} found"""
     ProjectName = "SOC"
     EntityFields = [
-      {EntityType="device", Name ="dest_address", Fields=["dest_ip->ip_address", "dest_host->host_name"]}
+      {EntityType="device", Name ="dest_address", Fields=["dest_ip->ip_address", "dest_host->host_name"]
+
 }
 ```

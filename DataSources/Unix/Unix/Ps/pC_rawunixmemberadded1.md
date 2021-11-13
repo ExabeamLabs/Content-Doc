@@ -15,6 +15,7 @@ Name = raw-unix-member-added-1
     """user ({account_name}.+?) added by ({user}.+?) to group ({group_name}.+?)\s{0,100}$""",
   ]
   DupFields=["host->dest_host"]
-}
+
+
 }
 ```

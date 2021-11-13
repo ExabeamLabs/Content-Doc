@@ -24,6 +24,7 @@ Name = leef-securesphere-db-alert
     """(\s|\|)ServerGroupName =({server_group}[^\|]{1,2000})"""
   ]
   DupFields = [ "alert_type->alert_name" ]
-}
+
+
 }
 ```

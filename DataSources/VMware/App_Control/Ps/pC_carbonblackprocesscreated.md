@@ -22,6 +22,7 @@ Name = carbonblack-process-created
     """\sfile_name="({file_name}[^"]{1,2000})"""",
   ]
   DupFields = [ "directory->process_directory" ]
-}
+
+
 }
 ```

@@ -10,6 +10,7 @@ Name = symantec-web-activity
   Conditions = [ """requestClientApplication=Symantec WSS"""]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
-    """({action}OBSERVED|PROXIED|DENIED),"{0,20}\s{0,100}({category}.+?)"{0,20}
+    """({action}OBSERVED|PROXIED|DENIED),"{0,20}\s{0,100}({category}.+?)"{0,20
+
 }
 ```

@@ -37,6 +37,7 @@ Name = sourcefire-proxy-1
     """ApplicationProtocol: ({app_protocol}[^,]{1,2000}),""",
     """IntrusionPolicy: ({alert_name}[^,]{1,2000}),"""
   ]
-}
+
+
 }
 ```

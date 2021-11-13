@@ -18,6 +18,7 @@ Name = cef-cybereason-security-alert
     """\Wmsg=(|({additional_info}({alert_name}[^\.]{1,2000}).+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """"malopActivityTypes":\{"[^]}]{1,2000}?"values":\["({threat_category}[^"]{1,2000})"""",
   ]
-}
+
+
 }
 ```

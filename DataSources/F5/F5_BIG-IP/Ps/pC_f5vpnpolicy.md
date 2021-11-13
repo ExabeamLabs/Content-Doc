@@ -13,6 +13,7 @@ Name = f5-vpn-policy
     """\s{1,100}01490102:5:.*?({session_id}[^\s:]{1,2000}): Access policy result""",
     """\sAccess policy result:\s{0,100}({policy}.+?)\s{0,100}$""",
   ]
-}
+
+
 }
 ```

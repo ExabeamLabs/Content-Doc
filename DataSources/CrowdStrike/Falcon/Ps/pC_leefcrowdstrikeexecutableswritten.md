@@ -9,7 +9,7 @@ Name = leef-crowdstrike-executableswritten
     """\WexeWrittenFileName =({file_name}[^|"]{1,2000}?)(\t|\s{1,100}\w{1,1000}=|\s{0,100}\||\s{0,100}$|\s{0,100}"{1,20}\s{0,100}$)""",
     """\WexeWrittenFilePath=({file_path}[^=]{1,2000}?)(\t|\s{1,100}\w{1,1000}=|\s{0,100}\||\s{0,100}$|\s{0,100}"{1,20}\s{0,100}$)""",
   ]
-}
+
 leef-crowdstrike-alert-t = {
     Vendor = CrowdStrike
     Product = Falcon
@@ -36,5 +36,6 @@ leef-crowdstrike-alert-t = {
       """\Wmd5=({md5}[^\s]{1,2000}?)\s{0,100}(\||\w+=|$|"{1,20}\s{0,100}$)""",
       """({app}FalconHost)"""
     ]
-  DupFields = [ "category->alert_type" ]}
+  DupFields = [ "category->alert_type" 
+}
 ```

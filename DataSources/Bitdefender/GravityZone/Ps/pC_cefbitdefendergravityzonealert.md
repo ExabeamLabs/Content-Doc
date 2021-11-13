@@ -30,6 +30,7 @@ Name = cef-bitdefender-gravityzone-alert
     """BitdefenderGZExploitType=({alert_type}.*?)\s\w+=""",
   ]
   DupFields = ["alert_severity->detection_level", "activity->bitdefender_activity_type￼"]
-}
+
+
 }
 ```

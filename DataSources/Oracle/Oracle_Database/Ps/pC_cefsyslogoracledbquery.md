@@ -25,6 +25,7 @@ Name = cef-syslog-oracle-db-query
       """\smsg=\s{0,100}({db_query}([^\\=]|(\\\\)*\\=|\\)+?)\s{1,100}(\w+=|$)""",
     ]
     DupFields = ["host->dest_host", "account->db_user"]
-  }
+  
+
 }
 ```

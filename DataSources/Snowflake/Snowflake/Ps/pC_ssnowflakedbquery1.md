@@ -18,6 +18,7 @@ Name = s-snowflake-db-query-1
     """QUERY_TYPE="(UNKNOWN|({db_operation}[^"]{1,2000}))"""",
     """SCHEMA_NAME="({database_schema}[^"]{1,2000})"""",
   ]
-}
+
+
 }
 ```

@@ -5,7 +5,7 @@ Name = azure-file-read-3
   Product = Azure
   DataType = "file-read"
   Conditions= [ """destinationServiceName =Azure""", """"_ResourceId":"""", """"CorrelationId":"""", """dproc=Log Analytics OMS Workspace""", """"OperationName":"KeyListVersions"""" ]
-}
+
 azure-file-read = {
     Vendor = Microsoft
     Product = Azure
@@ -23,5 +23,6 @@ azure-file-read = {
       """"ResultType":"({outcome}[^"]{1,2000})""",
       """"OperationName":"({event_name}[^"]{1,2000})"""",
       """"identity_claim_unique_name_s":"(({user_email}[^@"]{1,2000}@[^\.]{1,2000}\.[^"]{1,2000})|({user}[^"]{1,2000}))""""
-    ]}
+    
+}
 ```

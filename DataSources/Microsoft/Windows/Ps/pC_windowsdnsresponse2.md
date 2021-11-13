@@ -4,7 +4,7 @@
 Name = windows-dns-response-2
   DataType = "dns-response"
   Conditions = [ """Query/Response=R""", """Flags (char codes)=""", """Question Type=""" ]
-}
+
 windows-dns = {
   Vendor = Microsoft
   Product = Windows
@@ -23,5 +23,6 @@ windows-dns = {
     """\sResponseCode=({dns_response_code}[^\t]{1,2000})""",
     """\sQuestion Type=({query_type}[^\t]{1,2000})""",
     """\sQuestion Name =({query}[^\t"]{1,2000})"""
-  ]}
+  
+}
 ```

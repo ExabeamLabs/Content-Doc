@@ -21,6 +21,7 @@ Name = mssql-database-login-1
     """({event_name}LGIF)""",
     """statement:({additional_info}.+?)\sadditional_information:""",
   ]
-}
+
+
 }
 ```

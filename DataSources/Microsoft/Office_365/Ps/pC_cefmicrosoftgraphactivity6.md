@@ -8,7 +8,7 @@ Name = cef-microsoft-graph-activity-6
     """"userName"{1,20}:"{1,20}({user_email}[^@",\s]{1,2000}@[^",]{1,2000})""",
     """"userAgent"{1,20}:"{1,20}({user_agent}[^",]{1,2000})"""
   ]
-}
+
 cef-o365-app-login-1 = {
    Vendor = Microsoft
    Product = Office 365
@@ -35,5 +35,6 @@ cef-o365-app-login-1 = {
      """"src-endpoint":"({endpoint}[^"]{1,2000})""",
      """"src-account-name":"({account}[^"]{1,2000})""",
      """"src-account-name":"({account_name}[^"]{1,2000})""",
-   ]}
+   
+}
 ```

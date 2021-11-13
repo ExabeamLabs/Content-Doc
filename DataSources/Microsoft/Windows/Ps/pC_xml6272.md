@@ -25,6 +25,7 @@ Name = xml-6272
     """'EAPType'>(?:-|({auth_type}[^\<]{1,2000}))""",
     """'QuarantineState'>(?:-|({access_type}[^\<]{1,2000}))""",
   ]
-}
+
+
 }
 ```

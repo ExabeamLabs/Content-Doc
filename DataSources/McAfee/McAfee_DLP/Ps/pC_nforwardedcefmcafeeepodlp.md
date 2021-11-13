@@ -22,6 +22,7 @@ Name = n-forwarded-cef-mcafee-epo-dlp
       """\snitroProcess_Name =({process}({directory}(?:[^=]{1,2000})?[\\\/])?({process_name}[^\\\/=]{1,2000}))\s[^\s]{1,2000}="""
     ]
     DupFields = ["directory->process_directory"]
-  }
+  
+
 }
 ```

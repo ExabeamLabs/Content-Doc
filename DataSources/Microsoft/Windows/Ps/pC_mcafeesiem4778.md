@@ -19,6 +19,7 @@ Name = mcafee-siem-4778
       """"UserIDSrc":"({user}[^"]{1,2000})""",
       """"Source_Logon_ID":"({logon_id}[^"]{1,2000})""",
     ]
-  }
+  
+
 }
 ```

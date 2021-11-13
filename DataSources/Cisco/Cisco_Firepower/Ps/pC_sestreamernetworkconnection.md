@@ -28,6 +28,7 @@ Name = s-estreamer-network-connection
     """"clientUrl":[^\]]{1,2000}?"data": "({additional_info}[^"]{1,2000})"""",
     """"initiatorPort": ({src_port}\d{1,100})""",
   ]
-}
+
+
 }
 ```

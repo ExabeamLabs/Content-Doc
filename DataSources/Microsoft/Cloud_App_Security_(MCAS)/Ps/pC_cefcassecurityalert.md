@@ -25,6 +25,7 @@ Name = cef-cas-security-alert
     """shost=({country_code}[^=]{1,2000}?)\s\w+=""",
     """\srequestClientApplication=({app}[^=]{1,2000}?)\s{0,100}\w+="""
   ]
-}
+
+
 }
 ```

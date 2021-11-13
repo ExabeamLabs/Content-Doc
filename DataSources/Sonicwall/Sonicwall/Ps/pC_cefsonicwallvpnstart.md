@@ -20,6 +20,7 @@ Name = cef-sonicwall-vpn-start
     """\scs5=({realm}.+?)\s{1,100}(|\w+=.*)cs5Label=Portal\s""",
   ]
   DupFields = ["user->account"]
-}
+
+
 }
 ```

@@ -19,6 +19,7 @@ Name = emc-syslog-4723
     """Target Account.+?Account Name:\s{1,100}({target_user}.+?)\s{1,100}Account Domain:\s{1,100}({target_domain}.+?)\s{1,100}Additional""",
     """keywords="({outcome}[^"]{1,2000})""""]
   DupFields = [ "host->dest_ip" ]
-}
+
+
 }
 ```

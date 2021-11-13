@@ -26,6 +26,7 @@ Name = cef-symantec-sep-alert
     """"file":.+?"name":"({malware_file_name}[^"]{1,2000})""",
     """"sender_ip":"({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
   ]
-}
+
+
 }
 ```

@@ -28,6 +28,7 @@ Name = cef-securesphere-db-failed-login
     """\Wcs18=(|({reason}.+?))\s{0,100}(\w+=|$)""",
   ]
   DupFields = [ "db_user->account" ]
-}
+
+
 }
 ```

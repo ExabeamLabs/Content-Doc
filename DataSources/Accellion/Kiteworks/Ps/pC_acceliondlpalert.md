@@ -28,6 +28,7 @@ Name = accelion-dlp-alert
     """, recipient-url1=({malware_url}[^,]{1,2000})""",
     """, mail_status=({outcome}[^,]{1,2000})""",
   ]
-}
+
+
 }
 ```

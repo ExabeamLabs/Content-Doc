@@ -18,6 +18,7 @@ Name = netscalar-remote-access-2
     """({event_name}HTTPREQUEST)""",
     """ahost=({src_host}[^\s]{1,2000})""",
  ]
-}
+
+
 }
 ```

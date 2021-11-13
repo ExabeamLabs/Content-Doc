@@ -6,7 +6,7 @@ Name = racf-db-access
   Conditions = [ """EVNTPRODESCR=VANGUARD_ACTIVE_ALERTS""", """EVNTNAME=Access""", """EVNTTEXT=Failed due to PROTECTALL""" ]
   Fields = ${IBMracfParserTemplates.ibm-racf-activity.Fields} [
   ]
-}
+
 ibm-racf-activity = {
 Vendor = IBM
 Product = IBM Racf
@@ -25,5 +25,6 @@ Fields = [
   """EVNTCLASSNAME=(\-*N\/A\-*|({database_object}[^=]{1,2000}?))\s{0,100}\w+="""
   ]
   DupFields = ["event_name->db_operation"]
- }}
+ 
+}
 ```

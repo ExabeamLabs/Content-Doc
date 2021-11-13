@@ -21,6 +21,7 @@ Name = cef-guardium-db-alert
     """CEF.+?([^|]{1,2000}\|){6}({alert_severity}[^|]{1,2000})"""
   ]
   DupFields = [ "alert_name->alert_type", "db_user->account" ]
-}
+
+
 }
 ```

@@ -26,6 +26,7 @@ Name = windows-4768-1
     """"TicketEncryptionType":"({ticket_encryption_type}[^"]{1,2000})""",
   ]
      DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

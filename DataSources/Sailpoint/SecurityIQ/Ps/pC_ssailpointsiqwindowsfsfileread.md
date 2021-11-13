@@ -11,7 +11,7 @@ Name = s-sailpointsiq-windowsfs-file-read
     """\spath\s:\s({file_parent}[^|]{1,2000})\s\|"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
 s-sailpointsiqwindowsfs-activity = {
   Vendor = Sailpoint
   Product = SecurityIQ
@@ -25,5 +25,6 @@ s-sailpointsiqwindowsfs-activity = {
     """userfullname\s:\s({user_sid}(?=[^\\]{1,2000}\\)({domain}[^\\]{1,2000})\\({user}.+?)|(?:.+?))\s\|""",
     """membername\s:\s({account_id}(?=[^\\]{1,2000}\\)({sid_domain}[^\\]{1,2000})\\({sid_user}\S+)|(?:.+?))\s$""",
     """actiontype\s:\s({event_name}[^|]{1,2000})\s\|"""
-  ]}
+  
+}
 ```

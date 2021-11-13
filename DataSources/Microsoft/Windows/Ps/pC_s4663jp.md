@@ -22,6 +22,7 @@ Name = s-4663-jp
     """アクセス:\s{0,100}({accesses}.+?)\s{0,100}アクセス マスク:""",
   ]
   DupFields = [ "host->dest_host", "directory->process_directory" ]
-}
+
+
 }
 ```

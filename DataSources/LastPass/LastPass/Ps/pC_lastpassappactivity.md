@@ -20,6 +20,7 @@ Name = lastpass-app-activity
                 """"Username"{1,20}:"{1,20}API:\s{0,100}({user}[^"]{1,2000})"""
       ]
       DupFields = [ "event_name->activity" ]
-}
+
+
 }
 ```

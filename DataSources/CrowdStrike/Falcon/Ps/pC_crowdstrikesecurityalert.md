@@ -16,6 +16,7 @@ Name = crowdstrike-security-alert
       """"FalconHostLink\\*"{1,20}:\s{0,100}\\*"{1,20}({falcon_host_link}[^"]{1,2000})"""
     ]
     DupFields = ["event_code->alert_name", "event_code->alert_type", "falcon_host_link->additional_info"]
-  }
+  
+
 }
 ```

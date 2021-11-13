@@ -4,7 +4,7 @@
 Name = q-kiteworks-email-out-1
   Product = Kiteworks
   Conditions = [ """Activity: Created draft""", """with files""" ]
-}
+
 q-kiteworks-email = {
   Vendor = Accellion
   Lms = QRadar
@@ -20,5 +20,6 @@ q-kiteworks-email = {
     """\sTo:\s{0,100}({recipient}[^,@]{1,2000}@[^\s,]{1,2000})""",
 
   ]
-  DupFields = [ "recipient->external_address", "user_email->sender" ]}
+  DupFields = [ "recipient->external_address", "user_email->sender" 
+}
 ```

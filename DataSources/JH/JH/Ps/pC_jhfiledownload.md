@@ -21,6 +21,7 @@ Name = jh-file-download
     """source:\s{0,100}"{0,20}({download_source}[^"]{1,2000})""",
   ]
   DupFields = [ "accesses->activity" ]
-}
+
+
 }
 ```

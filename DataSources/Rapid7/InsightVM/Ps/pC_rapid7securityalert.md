@@ -33,6 +33,7 @@ Name = rapid7-security-alert
     """"site":\{[^\{\}]{0,2000}?"name":"({site_name}[^"]{1,2000})"""",
     """\Wmsg=(|({additional_info}.+?))(\s{1,100}\w+=|\s{0,100}$)"""
   ]
-}
+
+
 }
 ```

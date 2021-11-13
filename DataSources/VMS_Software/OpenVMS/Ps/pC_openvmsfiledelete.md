@@ -8,7 +8,7 @@ Name = openvms-file-delete
     """File name:\s{1,100}({file_name}[^\s]{1,2000})\s{1,100}(\w{1,100}|$)""",
     """({event_name}Object deletion)"""
   ]
-}
+
 openvms-file-operations = {
   Vendor = VMS Software
   Product = OpenVMS
@@ -24,5 +24,6 @@ openvms-file-operations = {
     """Access requested:\s{1,100}({accesses}[^\s]{1,2000})\s{1,100}(\w{1,100}|$)""",
     """Terminal name:\s{1,100}({additional_info}[^\s]{1,2000})\s{1,100}(\w{1,100}|$)"""
   ]
-  DupFields = [ "event_name->activity" ]}
+  DupFields = [ "event_name->activity" 
+}
 ```

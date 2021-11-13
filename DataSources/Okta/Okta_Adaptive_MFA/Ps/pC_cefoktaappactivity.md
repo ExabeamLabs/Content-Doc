@@ -36,6 +36,7 @@ Name = cef-okta-app-activity
     """\Wsuid=(anonymous|({user_email}[^@=]{1,2000}@[^@=]{1,2000}?)|({user}[^\s=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
     """requestUri":\s{0,100}"({request_uri}[^"]{1,2000}?)\s{0,100}"""",
   ]
-}
+
+
 }
 ```

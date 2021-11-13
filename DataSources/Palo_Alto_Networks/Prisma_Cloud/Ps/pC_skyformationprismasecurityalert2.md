@@ -12,6 +12,7 @@ Name = skyformation-prisma-security-alert-2
    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S{1,2000})""",
    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d{1,100}Z)\s[\w\-.]{1,2000}\s{1,100}Skyformation""",
    """"name":"({alert_name}[^"]{1,2000})","policyTs":"""",
-   """"policy":\{[^\}]{1,2000}
+   """"policy":\{[^\}]{1,2000
+
 }
 ```

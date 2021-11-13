@@ -26,6 +26,7 @@ Name = sentinelone-security-alert-1
     """\Wcat="({category}[^"]{1,2000})""",
     """\sdata.filePath="({process}[^"]{1,2000}\\({process_name}[^"]{1,2000}))""",
   ]
-}
+
+
 }
 ```

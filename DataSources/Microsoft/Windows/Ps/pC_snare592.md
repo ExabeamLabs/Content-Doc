@@ -16,6 +16,7 @@ Name = snare-592
       """(Information|Audit Success|Success Audit)\s{1,100}({host}[^\s]{1,2000})""",
       """Image File Name:\s{1,100}({process}({directory}(?:[^"]{1,2000})?[\\\/])?({process_name}[^\\\/"]{1,2000}?))\s{1,100}Creator Process ID:""",
       """Image File Name:\s{1,100}({path}.+?)\s{1,100}Creator Process ID:""",
-      """User Name:\s{1,100}({user}.+?)\s{1,100}Domain:\s{1,100}({domain}.+?)\s{1,100}Logon ID:\s{1,100}\([^,]{1,2000}
+      """User Name:\s{1,100}({user}.+?)\s{1,100}Domain:\s{1,100}({domain}.+?)\s{1,100}Logon ID:\s{1,100}\([^,]{1,2000
+
 }
 ```

@@ -20,6 +20,7 @@ Name = solaris-audit-process
     """obj\s{0,100}(?:({process}({directory}[^\s]{0,2000}?)(\/+({process_name}[^\/]{1,2000}?))?))\s{1,100}""",
     """argv\s{0,100}({command_line}[^"]{1,2000})"""
   ]
-}
+
+
 }
 ```

@@ -4,7 +4,7 @@
 Name = stealthintercept-auth-failed
         DataType = "authentication-failed"
         Conditions = [ """ StealthINTERCEPT """, """ DistinguishedName =""", """ Login failed """ ]
-}
+
 stealthintercept-auth = {
     Vendor = StealthBits
     Product = StealthIntercept
@@ -23,5 +23,6 @@ stealthintercept-auth = {
       """\s(Perpetrator|ModifiedObject)="(({domain}[^\\"]{1,2000})\\)?({user}[^"]{1,2000})"""",
       """\sClientAddress="(unknown|({src_ip}[a-fA-F\d.:]{1,2000}))"""",
       """\sDistinguishedName ="({user_ou}[^"]{1,2000})"""",
-    ]}
+    
+}
 ```

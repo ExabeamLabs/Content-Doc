@@ -22,6 +22,7 @@ Name = s-failed-app-login
     """({event_name}Login failed)""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

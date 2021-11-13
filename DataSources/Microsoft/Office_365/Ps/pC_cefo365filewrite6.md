@@ -3,7 +3,7 @@
 {
 Name = cef-o365-file-write-6
   Conditions = [ """|Microsoft|""", """|FileSyncUploadedFull|""", """eventId=""" ]
-}
+
 cef-o365-file-write = {
   Vendor = Microsoft
   Product = Office 365
@@ -31,5 +31,6 @@ cef-o365-file-write = {
     """\WoldFileName =({src_file_name}.+?)\s{0,100}(\w+=|$)""",
     """\WoldFilePath=({src_file_dir}.+?)\s{0,100}(\w+=|$)""",
     """\WrequestClientApplication=({user_agent}.+?)\s{0,100}(\w+=|$)""",
-  ]}
+  
+}
 ```

@@ -14,6 +14,7 @@ Name = syslog-dhcpd-3
     """"message":"Added new forward map from ({dest_host}[^\s]{1,2000}) to ({dest_ip}[A-Fa-f:\d.]{1,2000})""",
   ]
   DupFields = [ "dest_host->user" ]
-}
+
+
 }
 ```

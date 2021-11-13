@@ -29,6 +29,7 @@ Name = cef-netskope-alert-malsite
     """"_id":"({alert_id}[^"]{1,2000})"""
   ]
   DupFields = ["alert_type->threat_category"]
-}
+
+
 }
 ```

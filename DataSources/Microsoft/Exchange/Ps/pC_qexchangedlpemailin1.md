@@ -28,6 +28,7 @@ Name = q-exchange-dlp-email-in-1
     """directionality=({direction}\w+)"""
   ]
   DupFields = [ "alert_name->alert_type", "sender->external_address", "recipient->user", "recipient->orig_user" ]
-}
+
+
 }
 ```

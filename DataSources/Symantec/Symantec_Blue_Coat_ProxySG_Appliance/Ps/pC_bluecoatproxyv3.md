@@ -26,6 +26,7 @@ Name = bluecoat-proxy-v3
     """http_referrer="{0,20}(|({referrer}[^"]{1,2000}))"""",
     """latest\(url\)="{0,20}(|({full_url}[^"]{1,2000}))""""
   ]
-}
+
+
 }
 ```

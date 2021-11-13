@@ -20,6 +20,7 @@ Name = s-securesphere-db-login-1
     """sqlError="({reason}[^"]{1,2000}?)\s{0,100}(\w+=|$)""",
   ]
   DupFields = [ "db_user->account" ]
-}
+
+
 }
 ```

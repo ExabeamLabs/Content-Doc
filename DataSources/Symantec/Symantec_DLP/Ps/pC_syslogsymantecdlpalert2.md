@@ -15,6 +15,7 @@ Name = syslog-symantec-dlp-alert-2
     """,\s{1,100}.*N\/A\s{1,100}({file_name}[^,]{1,2000}?)\s{1,100}On the Corporate Network"""
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

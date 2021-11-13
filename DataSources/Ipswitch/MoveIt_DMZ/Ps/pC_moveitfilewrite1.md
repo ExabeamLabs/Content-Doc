@@ -6,7 +6,7 @@ Name = moveit-file-write-1
   Conditions = [ """MOVEitDMZ""", """Add Folder"""]
   Fields = ${MoveITParserTemplates.moveit-activity.Fields} [
   ]
-}
+
 moveit-activity = {
   Vendor = Ipswitch
   Product = MoveIt DMZ
@@ -19,5 +19,6 @@ moveit-activity = {
     """User\s'(({user_email}[^@]{1,2000}@[^']{1,2000})|Automation|({user_fullname}[^']{1,2000}))?'\s\(({user}[^\)]{1,2000})?\)""",
     """\s:\s{1,100}({activity}[^,]{1,2000}),\s{1,100}ID:""",
     """\sUsername:\s{0,100}(Automation|({user}[^,]{1,2000}))"""
-  ]}
+  
+}
 ```

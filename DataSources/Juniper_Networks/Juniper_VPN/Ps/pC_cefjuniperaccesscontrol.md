@@ -20,6 +20,7 @@ Name = cef-juniper-access-control
     """\scs6=({realm}.*?)\s{1,100}\w+=.*?cs6Label=Group Name""",
   ]
   DupFields = ["user->account"]
-}
+
+
 }
 ```

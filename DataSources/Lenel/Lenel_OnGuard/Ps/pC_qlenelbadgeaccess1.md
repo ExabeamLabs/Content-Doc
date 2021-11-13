@@ -18,6 +18,7 @@ Name = q-lenel-badge-access-1
     """\sREADERDESC:\s{0,100}"({location_door}[^"]{1,2000})""",
     """PANELNAME:\s{0,100}"({location_building}[^"]{1,2000})"""
   ]
-}
+
+
 }
 ```

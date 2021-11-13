@@ -14,6 +14,7 @@ Name = unix-member-added
     """add '({account_name}[^']{1,2000})' to.+?group '({group_name}[^']{1,2000})'""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

@@ -22,6 +22,7 @@ Name = wls-4769
       """TicketEncryptionType="{1,20}({ticket_encryption_type}[^"]{1,2000})""""
       """TicketOptions="{1,20}({ticket_options}[^"]{1,2000})""""
     ]
-  }
+  
+
 }
 ```

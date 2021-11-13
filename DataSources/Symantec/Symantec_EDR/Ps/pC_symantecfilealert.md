@@ -7,7 +7,7 @@ Name = symantec-file-alert
   Fields = ${SymantecParserTemplates.symantec-file-template.Fields}[
     """message":"({alert_name}Suspicious file)"""
   ]
-}
+
 symantec-file-template = {
     Vendor = Symantec
     Product = Symantec EDR
@@ -32,5 +32,6 @@ symantec-file-template = {
       """size":({file_size}\d{1,100})""",
       """cmd_line":"({command_line}[^\n]{1,2000}?)\s{0,100}","""
     ]  
-  }}
+  
+}
 ```

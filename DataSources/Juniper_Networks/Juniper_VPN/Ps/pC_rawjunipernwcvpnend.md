@@ -29,6 +29,7 @@ Name = raw-juniper-nwc-vpn-end
     """duration=({session_duration}[^\s]{1,2000})\s{1,100}"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

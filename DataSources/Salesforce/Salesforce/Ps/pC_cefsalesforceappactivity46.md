@@ -4,7 +4,7 @@
 Name = cef-salesforce-app-activity-46
   Product = Salesforce
   Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """flexString1=frozeuser""", """destinationServiceName =Sales Cloud""" ]
-}
+
 cef-salesforce-app-activity = {
   Vendor = Salesforce
   Lms = ArcSight
@@ -18,5 +18,6 @@ cef-salesforce-app-activity = {
     """\WflexString2=({additional_info}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """({app}Sales Cloud)""",
     """\Wduser=({object}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
-  ]}
+  
+}
 ```

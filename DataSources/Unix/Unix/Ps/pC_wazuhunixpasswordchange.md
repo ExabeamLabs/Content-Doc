@@ -12,6 +12,7 @@ Name = wazuh-unix-password-change
     """"agent\.labels\.network\.ipv4\.primary":"({src_ip}(\d{1,3}\.){3}\d{1,3})"""
 ]
   DupFields=["host->dest_host", "description->event_name"]
-}
+
+
 }
 ```

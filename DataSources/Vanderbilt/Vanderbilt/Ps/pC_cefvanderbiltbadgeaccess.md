@@ -20,6 +20,7 @@ Name = cef-vanderbilt-badge-access
       """\Wad.CardholderID.l=({badge_id}\d{1,100})""",
       """\Wreason=({outcome_reason}.+?)\s{0,100}(\w+=|$)"""
     ]
-  }
+  
+
 }
 ```

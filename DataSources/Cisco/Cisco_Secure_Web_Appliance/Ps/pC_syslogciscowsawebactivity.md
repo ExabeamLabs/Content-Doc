@@ -22,6 +22,7 @@ Name = syslog-cisco-wsa-web-activity
     """accesslog_syslog:(\s\S+){12}\s<(["-]{1,2000}|nc|({category}[^,>]{1,2000}?))\s{0,100}[,>]""",
     """\Wuserag\s{0,100}"{0,20}(?:[\s-]|({user_agent}[^"]{1,2000}))""",
   ]
-}
+
+
 }
 ```

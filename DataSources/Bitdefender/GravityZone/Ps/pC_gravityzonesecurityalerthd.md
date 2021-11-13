@@ -3,7 +3,7 @@
 {
 Name = gravityzone-security-alert-hd
   Conditions = [ """gravityzone:""", """"module":"hd"""" ]
-}
+
 gravityzone-security-alert = {
     Vendor = Bitdefender
     Product = GravityZone
@@ -24,5 +24,6 @@ gravityzone-security-alert = {
       """"final_status":"({outcome}[^"]{1,2000})""",
       """"malware_type":"({category}[^"]{1,2000})""",
       """"count":({count}\d{1,100})"""
-    ]}
+    
+}
 ```

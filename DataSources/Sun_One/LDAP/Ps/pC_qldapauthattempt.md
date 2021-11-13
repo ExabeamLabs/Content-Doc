@@ -23,6 +23,7 @@ Name = q-ldap-auth-attempt
       """\WinstanceName ="({host}[^"]{1,2000})""",
       """\WauthDN="({user_ou}[^"]{1,2000})""",
     ]
-  }
+  
+
 }
 ```

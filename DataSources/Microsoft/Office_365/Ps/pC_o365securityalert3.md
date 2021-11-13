@@ -22,6 +22,7 @@ Name = o365-security-alert-3
     """"riskEventTypes":\["({alert_name}[^"]{1,2000})"""",
   ]
   DupFields = ["alert_name->alert_type"]
-}
+
+
 }
 ```

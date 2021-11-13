@@ -4,7 +4,7 @@
 Name = cef-sysmon-file-write-2
   DataType = "registry-write"
   Conditions = [ """CEF:""", """|Microsoft Sysmon|Sysmon NXLog|""", """|SysmonTask-SYSMON_REG_SETVALUE|Registry value set|""" ]
-}
+
 cef-sysmon-file-write = {
   Vendor = Microsoft
   Product = Sysmon
@@ -28,5 +28,6 @@ cef-sysmon-file-write = {
     """\Wdpid=({pid}\d{1,100})""",
     """\Wcs1=({object}.+?)\s{1,100}(\w+=|$)""",
   ]
-  DupFields = [ "directory->process_directory", "host->dest_host" ]}
+  DupFields = [ "directory->process_directory", "host->dest_host" 
+}
 ```

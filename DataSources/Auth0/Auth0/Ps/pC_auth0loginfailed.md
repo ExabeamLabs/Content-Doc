@@ -8,7 +8,7 @@ Name = auth0-login-failed
     """"({activity_type}fp)"""",
     """consoleOut"{1,20}:"{1,20}({failure_reason}[^"]{1,2000})"{1,20}""",
   ]
-}
+
 auth0-authentication-template = {
     Vendor = Auth0
     Product = Auth0
@@ -25,5 +25,6 @@ auth0-authentication-template = {
       """client_name"{1,20}:"{1,20}({app}[^"]{1,2000})""",
       """user_agent"{1,20}:"{1,20}({user_agent}[^"]{1,2000})""",         
       """severity"{1,20}:"{1,20}({alert_severity}[^"]{1,2000})""", 
-    ]}
+    
+}
 ```

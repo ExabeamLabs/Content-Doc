@@ -16,6 +16,7 @@ Name = redcloud-physical-badge-access
       """\scs1=({location_building}.+?)\s{1,100}\w+=""",
       """\scs5=({location_door}.+?)\s{1,100}\w+=""",
     ]
-  }
+  
+
 }
 ```

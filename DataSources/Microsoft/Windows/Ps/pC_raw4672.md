@@ -34,6 +34,7 @@ Name = raw-4672
       """EVENT_TYPE="({outcome}[^"]{1,2000})""""
     ]
     DupFields = ["host->dest_host"]
-  }
+  
+
 }
 ```

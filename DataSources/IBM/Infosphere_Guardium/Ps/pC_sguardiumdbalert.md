@@ -26,6 +26,7 @@ Name = s-guardium-db-alert
     """os-user=([^\\\^]{1,2000}\\)?({user}[^\^]{1,2000})(\^+|$)"""
   ]
   DupFields = [ "db_user->account","directory->process_directory" ]
-}
+
+
 }
 ```

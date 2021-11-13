@@ -15,6 +15,7 @@ Name = asa-svc-vpn-713050-end
     """IP\s{0,100}=\s{0,100}({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """%ASA-({priority}\d{1,100})-({event_code}\d{1,100})""",
    ]
-}
+
+
 }
 ```

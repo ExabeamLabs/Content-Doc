@@ -6,7 +6,7 @@ Name = azure-event-hub-network-connection
   Conditions = ["""|beatname=eventhubbeat|""", """|device_type=eventhubbeat|""", """|subject=AdvancedHunting-DeviceNetworkEvents|""", """vmid=""", """@timestamp""", """@metadata"""]
   Fields = ${MSParserTemplates.azure-event-hub-network-events.Fields} [
   ]
-}
+
 azure-event-hub-network-events = {
     Vendor = Microsoft
     Product = Azure
@@ -48,5 +48,6 @@ azure-event-hub-network-events = {
       """category":"({category}[^",]{1,2000})"{0,20},correlationId"""",
       """"app":\{.*?displayName":"({app}[^",]{1,2000})""",
       """loggedByService":"({app}[^",]{1,2000})"""
-   ]}
+   
+}
 ```

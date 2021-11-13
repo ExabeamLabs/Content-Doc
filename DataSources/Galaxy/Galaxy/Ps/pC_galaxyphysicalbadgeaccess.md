@@ -15,6 +15,7 @@ Name = galaxy-physical-badge-access
     """OFFICE\s{0,100}=\s{0,100}({location_building}.+?)\s{1,100}({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).+?, ([\w\s]{1,2000}=|$)""",
     """Access_Info\s{0,100}=\s{0,100}({outcome}[^,]{1,2000}?)[\s,]{0,2000}([\w\s]{1,2000}=|$)""",
   ]
-}
+
+
 }
 ```

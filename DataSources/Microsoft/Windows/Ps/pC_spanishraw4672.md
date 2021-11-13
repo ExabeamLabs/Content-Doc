@@ -17,6 +17,7 @@ Name = spanish-raw-4672
    """Id. de inicio de sesión:\s{0,100}({logon_id}[^\s]{1,2000})\s{0,100}Privilegios:\s{0,100}({privileges}[^\:]{1,2000}?)?\s{0,100}$""",
   ]
   DupFields = ["host->dest_host"]
-}
+
+
 }
 ```

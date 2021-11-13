@@ -25,6 +25,7 @@ Name = hornet-email-security-alert
     """subject="[ \s]{0,2000}({subject}[^"]{1,2000}?)[ \s]{0,2000}"""",
   ]
   DupFields = [ "alert_type->alert_severity" ]
-}
+
+
 }
 ```

@@ -26,6 +26,7 @@ Name = cef-skyformation-file-activity
     """[^\w]created_by"{1,20}\s{0,100}:\s{0,100}[^\}]{1,2000}?[^\w]login"{1,20}\s{0,100}:\s{0,100}"{1,20}.*?@([\.\w+]{1,2000}\.)?({email_domain}[^\.\s]{1,2000}\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|ch))""",
     """owned_by"{1,20}:.+?"login"{1,20}:"{1,20}({target_user}[^\s@"]{1,2000}@[^\s@"]{1,2000})"""
   ]
-}
+
+
 }
 ```

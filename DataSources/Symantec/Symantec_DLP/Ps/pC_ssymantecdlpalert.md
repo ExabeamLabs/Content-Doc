@@ -31,6 +31,7 @@ Name = s-symantec-dlp-alert
       """C:\\Users\\({user}[^\\\s]{1,2000})""",
     ]
     DupFields = [ "external_address->recipient", "sender->user_email", "recipients->target", "subject->additional_info" ]
-  }
+  
+
 }
 ```

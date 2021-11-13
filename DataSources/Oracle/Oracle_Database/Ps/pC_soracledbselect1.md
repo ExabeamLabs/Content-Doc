@@ -4,7 +4,7 @@
 Name = s-oracle-db-select-1
    DataType = "database-query"
    Conditions = [ """action_name""", """SELECT""", """os_username""", """userhost""" ]
-}
+
 s-oracle-db-template-1{
   Vendor = Oracle
   Product = Oracle Database
@@ -26,5 +26,6 @@ s-oracle-db-template-1{
     """"exa_jdbc_type":"({app}[^"]{1,2000})"""",
     """"exa_jdbc_hostname":"({dest_host}[^"]{1,2000})"""",
     """"exa_jdbc_port":"({dest_port}\d{1,100})""""
-    ]}
+    
+}
 ```

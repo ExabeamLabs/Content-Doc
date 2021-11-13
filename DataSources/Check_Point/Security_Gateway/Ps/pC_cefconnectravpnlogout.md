@@ -19,6 +19,7 @@ Name = cef-connectra-vpn-logout
     """\sad.duration=({session_duration}.+?)(\s{1,100}[\w\.:]{1,2000}=|$)""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

@@ -12,6 +12,7 @@ Name = r-nic-528
     """({event_name}Successful Logon)""",
     """(Mon|Tue|Wed|Thu|Fri|Sat|Sun) ({time}\w+ \d{1,100} \d{1,100}:\d{1,100}:\d{1,100} \d{1,100}),""",
     """exabeam_source=({host}[A-Fa-f:\d.]{1,2000})""",
-    """\d{2}:\d{2}:\d{2} \d{4}
+    """\d{2}:\d{2}:\d{2} \d{4
+
 }
 ```

@@ -19,6 +19,7 @@ Name = cyberark-account-switch-1
     """;GatewayStation="(|({gateway_station}[^"]{1,2000}))""",
     """;UsuarioCyberArk="({user}[^\s"]{1,2000})""",
   ]
-}
+
+
 }
 ```

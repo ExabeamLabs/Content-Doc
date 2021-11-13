@@ -4,7 +4,7 @@
 Name = json-sybase-db-query-create
   DataType = "database-query"
   Conditions = [ """object_name""", """"event_desc"""", """"create table"""", """"database_name"""", """"extra_info"""" ]
-}
+
 json-sybase-db = {
     Vendor = Sybase
     Product = Sybase
@@ -20,5 +20,6 @@ json-sybase-db = {
      """"facets_environment"{1,20}:"{1,20}({host}[^"]{1,2000}?)"""",
      """"event_time"{1,20}:"{1,20}({time}[^"]{1,2000}?)"""",
      """"user_name"{1,20}:"{1,20}({user}[^"]{1,2000}?)""""
-    ]}
+    
+}
 ```

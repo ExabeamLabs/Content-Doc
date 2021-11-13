@@ -10,7 +10,7 @@ Name = openvms-remote-login
     """({event_name}Remote interactive login)"""
   ]
   DupFields = [ "event_name->activity","host->dest_ip" ]
-}
+
 openvms-logon = {
   Vendor = VMS Software
   Product = OpenVMS
@@ -22,5 +22,6 @@ openvms-logon = {
     """Username:\s{1,100}({user}[^\s]{1,2000})\s{1,100}(\w{1,100}|$)""",
     """PID:\s{1,100}({pid}[\w]{1,2000})\s{1,100}(\w{1,100}|$)""",
     """Process name:\s{1,100}({process_name}[^\s]{1,2000})\s{1,100}(\w{1,100}|$)"""   
-  ]}
+  
+}
 ```

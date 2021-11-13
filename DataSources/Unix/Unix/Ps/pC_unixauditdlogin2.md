@@ -25,6 +25,7 @@ Name = unix-auditd-login-2
     """\s{0,100}({host}[^\s]{1,2000})\sauditlog""",
     """hostname="{0,20}(\?|({host}[^\s]{1,2000}?))\s{0,100}(\w+=|")"""
  ]
-}
+
+
 }
 ```

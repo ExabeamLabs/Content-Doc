@@ -11,6 +11,7 @@ Name = symantec-web-activity-2
   Fields = [
     """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[^\s]{1,2000})""",
-    """cs6=\[([^,]{1,2000}
+    """cs6=\[([^,]{1,2000
+
 }
 ```

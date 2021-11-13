@@ -27,6 +27,7 @@ Name = s-azure-authorization-activity-2
          """\[Namespace:\s{0,100}({event_hub_namespace}\S+) ; EventHub name:\s{0,100}({event_hub_name}[\w-]{1,2000})"""
  ]
 DupFields= ["event_hub_namespace->host"]
-}
+
+
 }
 ```

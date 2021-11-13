@@ -16,6 +16,7 @@ Name = raw-148
       """({activity}Channel ({channel}[^\s]{1,2000}) has been closed between the server and the client)"""
     ]
     DupFields = [ "host->dest_host" ]
-  }
+  
+
 }
 ```

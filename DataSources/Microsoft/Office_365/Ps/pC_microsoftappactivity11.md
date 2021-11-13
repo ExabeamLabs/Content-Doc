@@ -3,7 +3,7 @@
 {
 Name = microsoft-app-activity-11
   Conditions= [ """"src-application-name":"Office 365"""", """"event-name":"authz-group-renamed"""", """initiatedBy":""", """"src-endpoint":"Graph Directory Audit logs"""", """"category":"GroupManagement"""" ]
-}
+
 microsoft-app-activity-3 = {
     Vendor = Microsoft
     Product = Office 365
@@ -21,5 +21,6 @@ microsoft-app-activity-3 = {
       """"src-application-name":"({app}[^"]{1,2000})"""",
       """key":"User-Agent","value":"({user_agent}[^"]{1,2000})"""",
       """ipAddress":"({src_ip}[a-fA-F\d.:]{1,2000})""""
-    ]}
+    
+}
 ```

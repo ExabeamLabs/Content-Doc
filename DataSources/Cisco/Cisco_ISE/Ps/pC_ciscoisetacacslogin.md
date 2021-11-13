@@ -20,6 +20,7 @@ Name = cisco-ise-tacacs-login
     """ad.Privilege-Level=({privileges}\d{1,100})""",
     """ad.Remote-Address=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
         ]
-}
+
+
 }
 ```

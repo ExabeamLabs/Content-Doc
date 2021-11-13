@@ -12,7 +12,7 @@ Name = q-tippingpoint-sms-alert-1
     """00000001-0001-0001-0001-00000\d{1,100}\s{1,100}.+?\s{1,100}\d{1,100}\s{1,100}http(\s{1,100}[^\s]{1,2000}){11}\s{1,100}({time}\d{1,100})""",
     """00000001-0001-0001-0001-00000\d{1,100}\s{1,100}.+?\s{1,100}\d{1,100}\s{1,100}http(\s{1,100}[^\s]{1,2000}){12}\s{1,100}({alert_id}\d{1,100})"""  
   ]
-}
+
 tippingpoint-sms-alert-template = {
     Vendor = Trend Micro
     Product = TippingPoint NGIPS
@@ -36,5 +36,6 @@ tippingpoint-sms-alert-template = {
         {EntityType="device", Name ="dest_address", Fields=["dest_ip->ip_address"]},
       ]
     }
-  }}
+  
+}
 ```

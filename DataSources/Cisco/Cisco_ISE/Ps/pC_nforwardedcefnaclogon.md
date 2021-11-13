@@ -15,6 +15,7 @@ Name = n-forwarded-cef-nac-logon
     """suser=({user}.+?)\s{1,100}nitroSensor_Name""",
     """nitroSensor_Name =({auth_server}[^\s]{1,2000})"""
   ]
-}
+
+
 }
 ```

@@ -19,6 +19,7 @@ Name = cef-unix-auth-failed
     """\Wagt=({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """\WcategoryOutcome=\/?({outcome}.+?)\s{1,100}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

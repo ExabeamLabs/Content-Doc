@@ -21,6 +21,7 @@ Name = s-azure-storage-activity
     """"resourceId".+?\/containers\/({bucket}[^\/"])""",
   ]
    DupFields = ["event_hub_namespace->host"]
-}
+
+
 }
 ```

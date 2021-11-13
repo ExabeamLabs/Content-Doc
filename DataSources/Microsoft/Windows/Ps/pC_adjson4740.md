@@ -7,7 +7,7 @@ Name = ad-json-4740
   Fields = ${WinParserTemplates.json-windows-events-1.Fields}[
     """({event_name}Account That Was Locked Out)""",
   ]
-}
+
 json-windows-events-1 = {
   Vendor = Microsoft
   Product = Windows
@@ -45,5 +45,6 @@ json-windows-events-1 = {
     """"{1,20}SidHistory"{1,20}:"{1,20}(-|({sid_history}[^"]{1,2000}))""",
     """"Keywords":"({outcome}[^"]{1,2000})"""
   ]
-  DupFields = ["event_id->event_code"]}
+  DupFields = ["event_id->event_code"
+}
 ```

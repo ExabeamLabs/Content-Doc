@@ -22,6 +22,7 @@ Name = cef-syslog-oracle-db-login
       """Oracle Audit.+?DBID:\[\d{1,100}\]\s{0,100}("|')({database_name}\d{1,100})"""
     ]
     DupFields = ["host->dest_host", "account->db_user"]
-  }
+  
+
 }
 ```

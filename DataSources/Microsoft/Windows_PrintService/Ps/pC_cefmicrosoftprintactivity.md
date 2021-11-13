@@ -30,6 +30,7 @@ Name = cef-microsoft-print-activity
     """\smsg=({activity}.+?)\s{0,100}\w+="""
   ]
   DupFields = [ """host->dest_host""" ]
-}
+
+
 }
 ```

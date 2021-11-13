@@ -21,6 +21,7 @@ Name = s-microsoft-dhcp
     """<Identifier>({host}[^<]{1,2000})<\/"""
   ]
   DupFields = [ "dest_host->user" ]
-}
+
+
 }
 ```

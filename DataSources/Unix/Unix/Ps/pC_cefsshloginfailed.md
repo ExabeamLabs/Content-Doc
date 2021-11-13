@@ -22,6 +22,7 @@ Name = cef-ssh-login-failed
     """({auth}password)""",
     """cs1=({event_code}.+?)\s{1,100}(\w+=|$)"""
   ]
-}
+
+
 }
 ```

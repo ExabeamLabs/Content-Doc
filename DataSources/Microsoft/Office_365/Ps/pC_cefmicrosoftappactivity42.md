@@ -7,7 +7,7 @@ Name = cef-microsoft-app-activity-42
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields} [
     """"Recipients":\[({recipients}"({recipient}[^",\]]{1,2000})[^\]]{0,2000})\]"""
   ]
-}
+
 cef-microsoft-app-activity = {
   Vendor = Microsoft
   Lms = ArcSight
@@ -37,5 +37,6 @@ cef-microsoft-app-activity = {
     """"User-Agent\\?"{1,20}:\\?"{1,20}({user_agent}[^"\\]{1,2000})"""
     """"UserAgent":"({user_agent}[^"]+)"""",
     """"ipAddress":"({dest_ip}[A-Fa-f.:\d]{1,2000})""""
-  ]}
+  
+}
 ```

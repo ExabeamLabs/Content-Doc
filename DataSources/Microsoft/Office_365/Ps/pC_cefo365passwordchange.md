@@ -8,7 +8,7 @@ Name = cef-o365-password-change
   Fields = ${MSParserTemplates.cef-o365-app-login-2.Fields} [
     """"ObjectId":"({target_user}[^"]{1,2000})"""",
   ]
-}
+
 cef-o365-app-login-2 = {
     Vendor = Microsoft
     Product = Office 365
@@ -24,5 +24,6 @@ cef-o365-app-login-2 = {
       """"ResultStatus":"({outcome}[^"]{1,2000})"""",
       """destinationServiceName =({app}Office 365)""",
       """"Name":"UserAgent","Value":"({user_agent}[^"]{1,2000}?)\s{0,100}""""
-    ]}
+    
+}
 ```

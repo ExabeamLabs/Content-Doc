@@ -18,6 +18,7 @@ Name = json-4723
     """"SubjectLogonId":"({logon_id}[^\s"]{1,2000})""",
     """"TargetSid":"({target_user_sid}[^\s"]{1,2000})""",
   ]
-}
+
+
 }
 ```

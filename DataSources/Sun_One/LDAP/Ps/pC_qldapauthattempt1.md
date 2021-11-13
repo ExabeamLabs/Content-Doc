@@ -22,6 +22,7 @@ Name = q-ldap-auth-attempt-1
     """"message":"({additional_info}[^"]{1,2000})""",
     """"domain":"({domain}[^"\s]{1,2000})""",
   ]
-}
+
+
 }
 ```

@@ -22,6 +22,7 @@ Name = nxlog-json-4726
     """"SubjectLogonId":"({logon_id}[^"]{1,2000})"""",
     ]
     DupFields=[ "host->dest_host", "target_user->account_name" ]
-  }
+  
+
 }
 ```

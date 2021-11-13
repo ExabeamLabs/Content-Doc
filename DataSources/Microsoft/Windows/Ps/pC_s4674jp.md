@@ -18,6 +18,7 @@ Name = s-4674-jp
       """望ましいアクセス権:\s{0,100}({accesses}.*?)\s{0,100}特権:\s{0,100}({privileges}.*?)\s{0,100}($|")"""
     ]
     DupFields = [ "host->dest_host","directory->process_directory" ]
-  }
+  
+
 }
 ```

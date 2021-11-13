@@ -15,6 +15,7 @@ Name = spanish-raw-4688
    """Firmante creador:\s{0,100}Identificador de seguridad:\s{0,100}({user_sid}[^\s]{1,2000})\s{0,100}Nombre de cuenta:\s{0,100}({user}[^\s]{1,2000})\s{0,100}Dominio de cuenta:\s{0,100}({domain}[^\s]{1,2000})\s{0,100}Identificador de inicio de sesión:\s{0,100}({logon_id}[^\s]{1,2000})""",
    """Nombre del nuevo proceso:\s{0,100}(?:|({process}({directory}(?:[^"]{1,2000})?[\\\/])?({process_name}[^\\\/\s]{1,2000})))\s{1,100}Tipo de elevación de token:""",
   ]
-}
+
+
 }
 ```

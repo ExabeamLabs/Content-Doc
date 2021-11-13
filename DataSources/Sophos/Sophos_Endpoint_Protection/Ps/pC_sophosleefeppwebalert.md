@@ -18,6 +18,7 @@ Name = sophos-leef-epp-web-alert
           """ComputerName =({src_host}.+?)\s{1,100}(\w+=|$)""",
           """src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
-}
+
+
 }
 ```

@@ -19,6 +19,7 @@ Name = s-f5-dns-response
     """\sans="[^";]{0,2000}?IN\s{1,100}\S+\s{1,100}({response}[^"\s;]{1,2000})""",
     """\sans="({response_full}[^"]{1,2000})"""",
   ]
-}
+
+
 }
 ```

@@ -9,7 +9,7 @@ Name = s-sailpointsiq-windowsfs-member-removed
         """objectname\s:\s({group_id}(?=[^\\]{1,2000}\\)({group_domain}[^\\]{1,2000})\\({group_name}.+?)|(?:.+?)) \|"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
 s-sailpointsiqwindowsfs-activity = {
   Vendor = Sailpoint
   Product = SecurityIQ
@@ -23,5 +23,6 @@ s-sailpointsiqwindowsfs-activity = {
     """userfullname\s:\s({user_sid}(?=[^\\]{1,2000}\\)({domain}[^\\]{1,2000})\\({user}.+?)|(?:.+?))\s\|""",
     """membername\s:\s({account_id}(?=[^\\]{1,2000}\\)({sid_domain}[^\\]{1,2000})\\({sid_user}\S+)|(?:.+?))\s$""",
     """actiontype\s:\s({event_name}[^|]{1,2000})\s\|"""
-  ]}
+  
+}
 ```

@@ -18,6 +18,7 @@ Name = paxton-badge-access
     """PeripheralName ="({location_door}[^"\(]{1,2000}?) \(({direction}[^\)"]{1,2000})\)"""",
     """EventTypeDescription="({outcome}[^"\-]{1,2000}?) - ({auth_method}[^"]{1,2000})"""",
   ]
-}
+
+
 }
 ```

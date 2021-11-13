@@ -17,6 +17,7 @@ Name = bind-dns-query-2
     """query:\s{0,100}({query}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
     """\sIN\s({query_type}[^\s]{1,2000})\s{1,100}({query_flags}[^"\s]{1,2000})""",
   ]
-}
+
+
 }
 ```

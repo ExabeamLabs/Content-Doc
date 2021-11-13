@@ -19,6 +19,7 @@ Name = azure-process-created
     """"MD5":"({md5}[^"]{1,2000})""",
     """"ComputerName":"({host}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

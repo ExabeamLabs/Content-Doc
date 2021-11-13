@@ -23,6 +23,7 @@ Name = syslog-symantec-dlp-alert-6
      """attachment="{1,20}({attachments}[^"]{1,2000})\s{1,100}""",
      """match_count="{1,20}({match_count}[^"]{1,2000})""",
      ]
-}
+
+
 }
 ```

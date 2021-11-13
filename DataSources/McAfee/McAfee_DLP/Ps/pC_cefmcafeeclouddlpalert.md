@@ -22,6 +22,7 @@ Name = cef-mcafee-cloud-dlp-alert
         """\Wfname=({file_name}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
         """\Wfsize=({bytes}\d{1,100})""",
       ]
-    }
+    
+
 }
 ```

@@ -8,7 +8,7 @@ Name = q-kiteworks-file-upload
     """({accesses}Uploaded) file ({file_name}.+?(\.({file_ext}\w+))?)\.\s{0,100}File:""",
     """({accesses}Uploaded) file "{1,20}({file_name}[^"]{1,2000}?(\.({file_ext}\w+))?)"""",
   ]
-}
+
 q-kiteworks-file-activity = {
     Vendor = Accellion
     Lms = QRadar
@@ -25,5 +25,6 @@ q-kiteworks-file-activity = {
       """Activity:\s{0,100}({activity}.+?)\."{0,20}\s{0,100}$""",
       """Activity Type:\s{1,100}({activity}[^\s,]{1,2000})"""
     ]
-    DupFields = [ "host->dest_host" ]}
+    DupFields = [ "host->dest_host" 
+}
 ```

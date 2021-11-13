@@ -18,6 +18,7 @@ Name = vmware-esxi-login-1
     """\w+@(127.\d{1,3}\.\d{1,3}\.\d{1,3}|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))"""
   ]
   DupFields = [ "event_name->activity", "host->dest_host" ]
-}
+
+
 }
 ```

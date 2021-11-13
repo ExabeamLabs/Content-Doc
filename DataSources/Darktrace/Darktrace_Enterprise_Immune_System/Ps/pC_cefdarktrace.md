@@ -22,6 +22,7 @@ Name = cef-darktrace
       """\sdvchost=(|({src_host}[^\s]{0,2000}))\s""",
       """\|({alert_severity}\d{1,100})\|external"""
       ]
- }
+ 
+
 }
 ```

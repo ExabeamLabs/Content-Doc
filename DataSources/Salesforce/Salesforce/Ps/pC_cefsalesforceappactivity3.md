@@ -17,6 +17,7 @@ Name = cef-salesforce-app-activity-3
     """Display\\=Reordered ({object}.+?) picklist""",
     """({app}Sales Cloud)""",
   ]
-}
+
+
 }
 ```

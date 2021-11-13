@@ -18,6 +18,7 @@ Name = adfs-auth-failed
     """UserID='({user_id}[^\']{1,2000})""",
     """<\/Data><Data>({user_email}[^\s]{1,2000}?)\s{0,100}\-({failure_reason}.+?)<\/Data><Data>""",
   ]
-}
+
+
 }
 ```

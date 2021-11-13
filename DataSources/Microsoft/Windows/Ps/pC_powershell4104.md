@@ -15,6 +15,7 @@ Name = powershell-4104
     """\(({event_code}4104)\)""",
     """({process_name}PowerShell)"""
   ]
-}
+
+
 }
 ```

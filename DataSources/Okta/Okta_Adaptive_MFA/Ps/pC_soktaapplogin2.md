@@ -8,7 +8,7 @@ Name = s-okta-app-login-2
       """({event_name}Authenticate user with AD agent)""",
       """({activity}app.ad.agent.user_auth)""",
     ]
-  }
+  
 s-okta-app-login = {
   Vendor = Okta
   Product = Okta Adaptive MFA
@@ -39,5 +39,6 @@ s-okta-app-login = {
     """"state":\s{0,100}"({location_state}[^"]{1,2000})""",
     """"country":\s{0,100}"({location_country}[^"]{1,2000})"""
   ]
-    DupFields=["app->object"]}
+    DupFields=["app->object"
+}
 ```

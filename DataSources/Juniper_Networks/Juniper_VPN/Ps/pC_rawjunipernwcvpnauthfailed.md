@@ -20,6 +20,7 @@ Name = raw-juniper-nwc-vpn-authfailed
     """\s(::ffff:)?({host}(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-\.]{1,2000})))\s{1,100}(Juniper|PulseSecure):""",
     """PulseSecure:[^\[\]]{0,2000}?\[(::ffff:)?({src_ip}[a-fA-F:\d.]{1,2000})\]\s{1,100}(({domain}[^\\]{1,2000})\\)?(?:({user_email}[^@\s]{1,2000}@[^@\s]{1,2000})|({user}[^\s]{1,2000}))\(({realm}[^\)]{1,2000})?"""
   ]
-}
+
+
 }
 ```

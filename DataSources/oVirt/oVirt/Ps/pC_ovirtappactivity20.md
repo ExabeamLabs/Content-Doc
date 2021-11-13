@@ -15,6 +15,7 @@ Name = ovirt-app-activity-20
     """EVENT_ID:.*? Data Center Exabeam was updated by ({user}[^\s\(\)]{1,2000}?)(\)|\s|\.\s|\.$)""",
     """({app}ovirt)"""
   ]
-}
+
+
 }
 ```

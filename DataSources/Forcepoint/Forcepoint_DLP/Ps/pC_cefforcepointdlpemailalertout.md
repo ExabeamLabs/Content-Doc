@@ -32,6 +32,7 @@ Name = cef-forcepoint-dlp-email-alert-out
     """\Wsuser=({user_email}[^\\\s,@=]{1,2000}?@[^\\\s,@=]{1,2000}?)\s{1,100}(\w+=|$)""",
   ]
   DupFields = [ "recipient->external_address" ]
-}
+
+
 }
 ```

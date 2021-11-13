@@ -15,6 +15,7 @@ Name = ovirt-app-activity-14
     """EVENT_ID:.*? VM shutdown initiated by ({user}[^\s\(\)]{1,2000}) on VM ({object}[^\s"]{1,2000}) \(Host: ({resource}[^\)]{1,2000})""",
     """({app}ovirt)"""
   ]
-}
+
+
 }
 ```

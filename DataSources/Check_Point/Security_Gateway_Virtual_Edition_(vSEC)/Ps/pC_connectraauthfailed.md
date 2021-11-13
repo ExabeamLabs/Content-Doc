@@ -24,6 +24,7 @@ Name = connectra-auth-failed
     """\Whost_ip:\s{0,100}({dest_ip}[a-fA-F\d.:]{1,2000})""",
   ]
    DupFields = [ "action->event_name", "account->user" ]
-}
+
+
 }
 ```

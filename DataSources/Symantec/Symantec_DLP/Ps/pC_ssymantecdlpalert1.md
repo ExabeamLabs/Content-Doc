@@ -21,6 +21,7 @@ Name = s-symantec-dlp-alert-1
       """添付ファイル名:(N/A|({additional_info}[^,]{1,2000}?))\s{0,100}(,|$)""",
       """一致件数:\s{0,100}({number_of_violations}\d{1,100})""",
     ]
-  }
+  
+
 }
 ```

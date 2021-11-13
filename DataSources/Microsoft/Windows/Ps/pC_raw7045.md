@@ -33,6 +33,7 @@ Name = raw-7045
     """User:\s{0,100}((?i)NOT_TRANSLATED|({user}[^:]{1,2000}?))\s{0,100}\w+:"""
   ]
   DupFields = [ "host->dest_host", "directory->process_directory", "command_line->service_command_line"]
-}
+
+
 }
 ```

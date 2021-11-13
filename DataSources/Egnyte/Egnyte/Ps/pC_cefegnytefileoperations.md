@@ -20,6 +20,7 @@ Name = cef-egnyte-file-operations
     """msg=({additional_info}[^"]{1,2000}?)\s{1,100}(\w+=|$)""",
     """({app}Egnyte)"""
   ]
-}
+
+
 }
 ```

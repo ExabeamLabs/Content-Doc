@@ -28,6 +28,7 @@ Name = s-process-created-carbonblack
     """\Wcommand_line(":"|="?)(\\"{0,20})?(\w+|((([^"]{1,2000})?[\\\/])?([^\\\/"\s]{1,2000})))(?:[^\s]{0,2000})?\s{0,100}\/({arg}[^\s"]{1,2000})""",
   ]
   DupFields = [ "directory->process_directory" ]
-}
+
+
 }
 ```

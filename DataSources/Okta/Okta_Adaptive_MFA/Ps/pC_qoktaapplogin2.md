@@ -4,7 +4,7 @@
 Name = q-okta-app-login-2
   DataType = "app-login"
   Conditions = [ """"message"":""Active Directory authentication succeeded""", """"published"":""""" ]
-}
+
 q-okta-app-login = {
   Vendor = Okta
   Product = Okta Adaptive MFA
@@ -21,5 +21,6 @@ q-okta-app-login = {
     """({app}Okta)""",
     """"displayName"{1,20}:"{1,20}({app}[^"]{1,2000})",[^\{\}]{0,2000}?"objectType"{1,20}:"{1,20}AppInstance"""",
     """"categories.*?objectType"{1,20}:"{1,20}({activity}[^"]{1,2000})"""",
-  ]}
+  
+}
 ```

@@ -21,6 +21,7 @@ Name = q-oracle-db-login
     """DBID:\s{0,100}"{1,20}({database_name}\d{1,100})"""
   ]
   DupFields = [ "os_user->user", "db_user->account" ]
-}
+
+
 }
 ```

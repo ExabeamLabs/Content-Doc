@@ -14,6 +14,7 @@ Name = huawei-auth-success
      """IP:({src_ip}[a-fA-F\d.:]{1,2000})""",
      """\slogin ({outcome}succeeded)""",
   ]
-}
+
+
 }
 ```

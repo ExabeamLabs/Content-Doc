@@ -4,7 +4,7 @@
 Name = auditbeat-file-access
   DataType = "object-access"
   Conditions = ["""logstash-auditbeat""", """"process"""", """"tags":["file_access""""]
-}
+
 auditbeat-events = {
   Vendor = Unix
   Product = Unix
@@ -34,5 +34,6 @@ auditbeat-events = {
     """"file":\{.*?"path":"(|({file_path}[^"]{1,2000}))"""",
     """"file":\{.*?"owner":"(|({file_owner}[^"]{1,2000}))"""" 
  ]
- DupFields = [ "process_directory->directory", "process->path", "host->dest_host", "pid->process_id" ]}
+ DupFields = [ "process_directory->directory", "process->path", "host->dest_host", "pid->process_id" 
+}
 ```

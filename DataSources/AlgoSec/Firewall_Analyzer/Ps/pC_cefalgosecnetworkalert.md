@@ -18,6 +18,7 @@ Name = cef-algosec-network-alert
    """msg=Summary:\s{1,100}\w+\s{0,100}({alert_severity}\d{1,100})""",
    """Unauthorized traffic from\s{1,100}({src_network}.+?)\s{1,100}to\s{1,100}({dest_network}[^\s]{1,2000})\s{1,100}""",
      ]
-}
+
+
 }
 ```

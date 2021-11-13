@@ -24,6 +24,7 @@ Name = cef-member-removed-2008
     """(\||\s)ad\.Group:Security_,ID=({group_id}[^\s]{1,2000})\s{0,100}(\w+=|$)""",
     """(\||\s)cs6=(({group_domain}[^\\]{1,2000}?)\\+)?({group_name}[^\\]{1,2000}?)\s{0,100}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

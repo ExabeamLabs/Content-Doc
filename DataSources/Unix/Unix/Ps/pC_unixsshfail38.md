@@ -19,6 +19,7 @@ Name = unix-ssh-fail-38
     """Login restricted for ({user}[^\s:]{1,2000})""",
     """({failure_reason}There have been too many unsuccessful login attempts)"""
   ]
-}
+
+
 }
 ```

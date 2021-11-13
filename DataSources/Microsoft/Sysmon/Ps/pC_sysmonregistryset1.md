@@ -22,6 +22,7 @@ Name = sysmon-registry-set-1
        """"Domain":\s{0,100}"((?i)NT AUTHORITY|({domain}[^"]{1,2000}))""",
     ]      
     DupFields = [ "file_path->process", "host->dest_host", "file_name->process_name", "activity->event_name" ]
-}
+
+
 }
 ```

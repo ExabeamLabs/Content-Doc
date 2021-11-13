@@ -22,6 +22,7 @@ Name = cef-infowatch-usb-write
     """\Wdvchost=({host}.+?)(\s{1,100}[\w\.]{1,2000}=|\s{0,100}$)""",
     """\Wsuid=({user_fullname}.+?)(\s{1,100}[\w\.]{1,2000}=|\s{0,100}$)""",
   ]
-}
+
+
 }
 ```

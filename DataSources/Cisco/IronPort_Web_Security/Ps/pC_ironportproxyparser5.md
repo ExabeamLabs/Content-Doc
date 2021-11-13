@@ -4,7 +4,7 @@
 Name = ironport-proxy-parser-5
   Product = IronPort Web Security
    Conditions = [ """TCP_CLIENT_REFRESH_MISS/""", """-> - Request Details:""", """xb-accesslog:""" ]
-}
+
 ironport-proxy-2 = {
    Vendor = Cisco
    Lms = Direct
@@ -18,5 +18,6 @@ ironport-proxy-2 = {
       """Auth-scheme = (NONE|({auth_method}\S+))""",
       """AD Group Memberships = \(.+?\) (-|"({group}[^\]]{1,2000})")\s\]""",
    ]
- }}
+ 
+}
 ```

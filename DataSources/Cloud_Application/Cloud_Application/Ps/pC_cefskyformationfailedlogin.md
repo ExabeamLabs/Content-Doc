@@ -24,6 +24,7 @@ Name = cef-skyformation-failed-login
     """(\||\s)requestClientApplication=({app}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
   DupFields = ["app->event_subtype"]
-}
+
+
 }
 ```

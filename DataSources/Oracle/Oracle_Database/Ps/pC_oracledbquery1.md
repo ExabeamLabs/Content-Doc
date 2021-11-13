@@ -22,6 +22,7 @@ Name = oracle-db-query-1
     """"action_name\\"{1,20}:\\"{1,20}({db_operation}[^"\\]{1,2000})""", 
   ]
   DupFields = [ "database_id->database_name", "os_user->user", "db_user->account" ]
-}
+
+
 }
 ```

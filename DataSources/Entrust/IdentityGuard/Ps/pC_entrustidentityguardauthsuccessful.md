@@ -18,6 +18,7 @@ Name = entrust-identityguard-auth-successful
     """Remote Address: ({src_ip}[a-fA-F\d\.:]{1,2000})""",
     """({additional_info}Token Used: [^,]{1,2000})""",
   ]
-}
+
+
 }
 ```

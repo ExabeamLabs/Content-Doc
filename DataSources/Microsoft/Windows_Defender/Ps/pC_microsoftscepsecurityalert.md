@@ -20,6 +20,7 @@ Name = microsoft-scep-security-alert
     """ClassificationCategory=({alert_type}[^,=]{1,2000}),""",
   ]
   DupFields = ["directory->process_directory"]
-}
+
+
 }
 ```

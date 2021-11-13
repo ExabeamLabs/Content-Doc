@@ -20,6 +20,7 @@ Name = cef-syslog-microsoft-db-login
     """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sdhost=({dest_host}[^\s]{1,2000})"""
   ]
-}
+
+
 }
 ```

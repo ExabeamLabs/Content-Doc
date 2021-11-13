@@ -23,6 +23,7 @@ Name = symantec-epp-ntp-alert
     """Application:(?:\s{1,100}|\s{0,100}({process}({directory}(?:[^,]{1,2000})?[\\\/])?({process_name}[^\\\/,]{1,2000}?))),""",
     """CIDS Signature ID:\s{0,100}({alert_name}\d{1,100}),""",
     """Intrusion ID:\s{0,100}({alert_id}\d{1,100}),""",
-    """CIDS Signature string:\s{0,100}(|({alert_type}[^:,]{1,2000}?))\s{0,100}
+    """CIDS Signature string:\s{0,100}(|({alert_type}[^:,]{1,2000}?))\s{0,100
+
 }
 ```

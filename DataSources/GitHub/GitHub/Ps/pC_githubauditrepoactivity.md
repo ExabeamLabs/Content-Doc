@@ -19,6 +19,7 @@ Name = github-audit-repo-activity
     """"{1,20}repo"{1,20}:"{1,20}({object}[^"]{1,2000})""",
     """({app}github)"""
   ]
-}
+
+
 }
 ```

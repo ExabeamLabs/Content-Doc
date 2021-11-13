@@ -3,7 +3,7 @@
 {
 Name = s-proofpoint-email-in-1
   Conditions = [ """"threatsInfoMap":""", """"threatTime":""", """"threat":""", """"default_inbound"""" ]
-}
+
 s-proofpoint-email-in-1 = {
   Vendor = Proofpoint
   Product = Proofpoint TAP
@@ -39,5 +39,6 @@ s-proofpoint-email-in-1 = {
     """"messageID":\s{0,100}"<?({message_id}[^>"]{1,2000})""",
     """src-account-name":"({account_name}[^"]{1,2000})"""
   ]
-  DupFields = [ "attachment->file_name", "sender->external_address" ]}
+  DupFields = [ "attachment->file_name", "sender->external_address" 
+}
 ```

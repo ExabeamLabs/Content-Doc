@@ -15,6 +15,7 @@ Name = raw-unix-password-change
     """\d\d:\d\d:\d\dZ? (::ffff:)?({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[\w.\-]{1,2000})))""",
     """password changed for ({target_user}.+?)\s{0,20}("|$)""",
   ]
-}
+
+
 }
 ```

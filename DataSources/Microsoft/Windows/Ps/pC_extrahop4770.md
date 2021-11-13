@@ -19,6 +19,7 @@ Name = extrahop-4770
     """"event_code":({event_code}\d{1,100})""",
     """"dest_ip":"(::1|({dest_ip}[a-fA-F:\d.]{1,2000}))""",
   ]
-}
+
+
 }
 ```

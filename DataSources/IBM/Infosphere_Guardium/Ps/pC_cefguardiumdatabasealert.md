@@ -27,6 +27,7 @@ Name = cef-guardium-database-alert
     """\WdeviceSeverity=({device_severity}\d{1,100})"""
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

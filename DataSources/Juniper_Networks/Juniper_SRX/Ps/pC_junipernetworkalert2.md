@@ -18,6 +18,7 @@ Name = juniper-network-alert-2
     """attack:.+?username=(N\/A|({user}[^,\s]{1,2000}))""",
     """\sname=({alert_name}[^,\s]{1,2000})"""
   ]
-}
+
+
 }
 ```

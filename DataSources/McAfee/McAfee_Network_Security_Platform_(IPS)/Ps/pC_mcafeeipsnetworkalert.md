@@ -30,6 +30,7 @@ Name = mcafee-ips-network-alert
     """\WSub-Cat:\s{0,100}({sub_category}[^;]{1,2000});""",
     """\WDetection Mech:\s{0,100}({detection_mech}[^;]{1,2000});"""
   ]
-}
+
+
 }
 ```

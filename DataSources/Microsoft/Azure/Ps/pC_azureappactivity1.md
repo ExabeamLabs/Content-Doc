@@ -20,6 +20,7 @@ Name = azure-app-activity-1
     """"resourceId":"({object}[^"]{1,2000})"""",
     """"newValue":"\[({additional_info}\{[\\]?"PhoneNumber[^]]{1,2000})"""
   ]
-}
+
+
 }
 ```

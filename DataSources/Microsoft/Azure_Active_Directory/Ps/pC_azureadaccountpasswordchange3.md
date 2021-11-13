@@ -8,7 +8,7 @@ Name = azure-ad-account-password-change-3
     """({event_name}Change password (self-service))""",
     """TargetResources":\[\{[^\}]{1,2000}?userPrincipalName":"({target_user}[^@"]{1,2000}@[^"]{1,2000})","ipAddress""""
   ]
-}
+
 azure-ad-activity-1 = {
    Vendor = Microsoft
    Product = Azure Active Directory
@@ -23,5 +23,6 @@ azure-ad-activity-1 = {
      """"Category":"({category}[^"]{1,2000})"""",
      """"app":\{[^,]{1,100},"displayName":"({app}[^"]{1,2000})"""", 
      """"LoggedByService":"({app}[^"]{1,2000})""""
-   ]}
+   
+}
 ```

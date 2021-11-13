@@ -21,6 +21,7 @@ Name = cef-snare-4769
       """ncryption_,Type=({ticket_encryption_type}[^\s]{1,2000})""",
       """Ticket_,Options=({ticket_options}[^\s]{1,2000})"""
     ]
-  }
+  
+
 }
 ```

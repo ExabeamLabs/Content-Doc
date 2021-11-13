@@ -27,6 +27,7 @@ Name = code42-usb-removed
     """"vendorName":\s"({usb_vendor}[^"]{1,2000})""",
     """"volumeName":\s"(unknown|[^\(]{0,2000}?({drive_letter}[^"]{1,2000}))"""
   ]
-}
+
+
 }
 ```

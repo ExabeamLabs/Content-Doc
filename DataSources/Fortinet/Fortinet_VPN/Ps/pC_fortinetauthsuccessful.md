@@ -18,6 +18,7 @@ Name = fortinet-auth-successful
     """\slogdesc="({event_name}[^"]{1,2000})""",
     """\sserver="({dest_host}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

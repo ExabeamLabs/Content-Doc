@@ -18,6 +18,7 @@ Name = cef-salesforce-app-activity-34
     """CcAddress\\=(?:null|({cc_address}[^;]{1,2000}?))(;\w{1,1000}\\=|\s{1,10}\w{1,1000}=|\s{0,10}$)"""
   ]
   DupFields = [ "sender->email_user", "sender->orig_user", "recipient->external_address", "recipients->to_address" ]
-}
+
+
 }
 ```

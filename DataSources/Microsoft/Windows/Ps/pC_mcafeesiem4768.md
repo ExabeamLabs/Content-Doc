@@ -21,6 +21,7 @@ Name = mcafee-siem-4768
       """"Service_Name":"({service_name}[^"]{1,2000})""",
     ]
     DupFields = ["host->dest_host"]
-  }
+  
+
 }
 ```

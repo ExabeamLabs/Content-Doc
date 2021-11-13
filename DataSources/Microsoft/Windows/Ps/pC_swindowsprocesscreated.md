@@ -19,6 +19,7 @@ Name = s-windows-process-created
     """ProcessName ="({process_name}[^"]{1,2000})""",
   ]
   DupFields = [ "host->dest_host", "process_guid->pid", "directory->process_directory" ]
-}
+
+
 }
 ```

@@ -31,6 +31,7 @@ Name = raw-juniper-nwc-vpn-start
     """\svpn=[\\"]{0,2000}({vpn}.+?)[\\"]{0,2000}(\s{1,100}\w+=|\s{0,100}")""",
   ]
   DupFields = [ "host->dest_host" , "user->account"]
-}
+
+
 }
 ```

@@ -23,6 +23,7 @@ Name = sysmon-registry-set
     """\s{1,100}Image:\s{0,100}({file_path}({file_parent}(?:(\w+:)?[^:]{1,2000})?[\\\/])?({file_name}.+?))\s{1,100}\w+:"""
   ]
   DupFields = [ "directory->process_directory", "host->dest_host" ]
-}
+
+
 }
 ```

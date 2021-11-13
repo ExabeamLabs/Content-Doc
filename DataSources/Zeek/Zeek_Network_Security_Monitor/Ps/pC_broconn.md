@@ -13,6 +13,7 @@ Name = bro-conn
       """\d{10}\.\d{6}\t([^\t]{1,2000}\t){20}({orig_cc}[^\t]{1,2000})\t({resp_cc}[^\t]{1,2000})\t({sensorname}[^\s]{1,2000})\s{0,100}"""
   ]
   DupFields = [ "id_orig_h->src_ip", "id_orig_p->src_port", "id_resp_h->dest_ip", "id_resp_p->dest_port", "sensorname->src_interface", "orig_ip_bytes->bytes_out", "resp_ip_bytes->bytes_in" ]
-}
+
+
 }
 ```

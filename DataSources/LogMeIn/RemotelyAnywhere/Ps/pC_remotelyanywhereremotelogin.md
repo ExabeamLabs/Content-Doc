@@ -24,6 +24,7 @@ Name = remotelyanywhere-remote-login
     """\sUSER_NAME:\s{1,100}"{1,20}(unknown|null|({user}[^"]{1,2000}))"{1,20}\s"""
   ]
   DupFields = [ "event_name->event_type" ]
-}
+
+
 }
 ```

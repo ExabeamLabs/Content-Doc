@@ -33,6 +33,7 @@ Name = raw-4724
       """Target Account[^=]{1,2000}?Security ID:\s{1,100}(|({target_user_sid}[^:]{1,2000}?))\s{1,100}Account Name:\s{1,100}(|({target_user}[^:]{1,2000}?))\s{1,100}Account Domain:\s{1,100}({target_domain}[^",\s]{1,2000})"""
     ]
     DupFields=[ "host->dest_host" ]
-  }
+  
+
 }
 ```

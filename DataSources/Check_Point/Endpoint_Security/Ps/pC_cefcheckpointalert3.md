@@ -28,6 +28,7 @@ Name = cef-checkpoint-alert-3
     """\Wfname=(|({file_name}.+?(\.({file_ext}\w+))?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wrequest=(|({malware_url}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
   ]
-}
+
+
 }
 ```

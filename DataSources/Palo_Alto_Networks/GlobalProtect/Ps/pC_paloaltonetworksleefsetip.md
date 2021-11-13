@@ -17,6 +17,7 @@ Name = palo-alto-networks-leef-setip
     """cat=({category}[^\s|]{1,2000})""",
     """Client OS ( version)?.+?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)"""
   ]
-}
+
+
 }
 ```

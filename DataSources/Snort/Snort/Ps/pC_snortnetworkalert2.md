@@ -20,6 +20,7 @@ Name = snort-network-alert-2
     """\)\s({alert_name}.+?)\s{0,100}\[Classification""",
     """Priority:.+?\{(PROTO:)?({protocol}[^\}]{1,2000})\}"""
   ]
-}
+
+
 }
 ```

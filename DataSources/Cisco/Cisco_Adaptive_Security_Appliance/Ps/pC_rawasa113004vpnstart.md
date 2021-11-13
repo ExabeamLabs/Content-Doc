@@ -23,6 +23,7 @@ Name = raw-asa-113004-vpn-start
     """\%ASA-\d{1,100}-({event_code}\d{1,100})[:\s]{1,2000}({event_name}[^:]{1,2000})\s"""
  ]
  DupFields = ["user->account"]
-}
+
+
 }
 ```

@@ -15,6 +15,7 @@ Name = ldap-auth-attempt
       """\sconnection from\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):({src_port}\d{1,100})\s{1,100}to\s{1,100}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sBIND .*?\sRESULT err=({outcome}\d{1,100})"""
     ]
-  }
+  
+
 }
 ```

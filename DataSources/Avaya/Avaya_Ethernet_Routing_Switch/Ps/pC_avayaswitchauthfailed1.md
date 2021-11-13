@@ -15,6 +15,7 @@ Name = avaya-switch-auth-failed-1
       """Server IP\s{1,100}({dest_ip}[a-fA-F\d.:]{1,2000})""",
       """Intruder IP\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     ]
-  }
+  
+
 }
 ```

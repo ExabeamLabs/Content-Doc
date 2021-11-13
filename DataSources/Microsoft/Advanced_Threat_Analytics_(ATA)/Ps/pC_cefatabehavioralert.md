@@ -17,6 +17,7 @@ Name = cef-ata-behavior-alert
     """\Wmsg=(?:(({user_lastname}[\w\']{1,2000}), ({user_firstname}\w+))|({user}\w+))\s{1,100}""",
     """\Wsuser=(?:(({user_lastname}[\w\']{1,2000}), ({user_firstname}\w+))|({user}[^\s]{1,2000}))\s{1,100}(\w+=|$)"""
   ]
-}
+
+
 }
 ```

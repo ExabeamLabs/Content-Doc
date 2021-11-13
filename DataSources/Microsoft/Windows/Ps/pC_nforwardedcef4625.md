@@ -21,6 +21,7 @@ Name = n-forwarded-cef-4625
       """nitroLogon_Type=({logon_type}\d{1,100})""",
       """nitroMessage_Text=({result_code}[^\s]{1,2000})\s{1,100}\w+="""
     ]
-  }
+  
+
 }
 ```

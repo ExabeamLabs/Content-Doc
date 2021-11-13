@@ -11,7 +11,7 @@ Name = json-4726
     """"TargetSid\\?"{1,20}:\\?"({target_user_sid}[^"\\]{1,2000})"""
   ]
   DupFields=[ "host->dest_host", "target_user->account_name" ]
-}
+
 json-windows-events-2 = {
   Vendor = Microsoft
   Product = Windows
@@ -31,5 +31,6 @@ json-windows-events-2 = {
     """ProcessId\\?"{1,20}:\\?"{1,20}({process_id}[^:\\]{1,2000}?)\\?"""",
     """LogonProcessName\\?"{1,20}:\\?"{1,20}({auth_process}[^\s\\]{1,2000})\s{0,100}\\?"""",
     """AuthenticationPackageName\\?"{1,20}:\\?"{1,20}({auth_package}[^\s\\]{1,2000})\\?""""
-  ]}
+  
+}
 ```

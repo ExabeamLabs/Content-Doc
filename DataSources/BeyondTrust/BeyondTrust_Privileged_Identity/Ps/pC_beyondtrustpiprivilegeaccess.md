@@ -17,6 +17,7 @@ Name = beyondtrust-pi-privilege-access
         """sOriginatingSystem="({dest_host}[^"]{1,2000})""",
         """key="AccountToElevate"\s{1,100}value="(({account_domain}[^"\\]{1,2000})\\+)?({account}[^"]{1,2000})"""
     ]
-}
+
+
 }
 ```

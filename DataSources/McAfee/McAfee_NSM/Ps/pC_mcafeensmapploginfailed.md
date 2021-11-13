@@ -4,7 +4,7 @@
 Name = mcafee-nsm-app-login-failed
   DataType = "failed-app-login"
   Conditions = [ """Network Security Manager Login; failed;""", """; User;""" ]
-}
+
 mcafee-nsm-app-events = {
     Vendor = McAfee
     Product = McAfee NSM
@@ -22,5 +22,6 @@ mcafee-nsm-app-events = {
       """Login URI:\s{0,100}(null|({uri_path}.+?))\s{0,100},\s{0,100}URI""",
       """({outcome}succeeded|failed);""",
       """({event_name}Network Security Manager Login; (succeeded|failed));""",
-    ]}
+    
+}
 ```

@@ -7,7 +7,7 @@ Name = lumension-failed-usb-activity-2
   Fields = ${LumensionParserTemplates.lumension-usb-activity.Fields} [
     """scomc\s{1,100}(System|({process_name}.+?)) WRITE-DENIED \[""",
   ]
-}
+
 lumension-usb-activity = {
   Vendor = Lumension
   Product = Lumension
@@ -25,5 +25,6 @@ lumension-usb-activity = {
     """Reason="({activity_details}[^"]{1,2000})""",
     """({bytes}\d{1,100}) bytes""",
   ]
-  DupFields = [ "host->dest_host" ]}
+  DupFields = [ "host->dest_host" 
+}
 ```

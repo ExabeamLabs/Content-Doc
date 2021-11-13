@@ -20,6 +20,7 @@ Name = netscaler-cef-vpn-end
     """SessionId:\s{1,100}({session_id}\d{1,100})""",
     """cn1=({session_id}\d{1,100})"""
   ]
-}
+
+
 }
 ```

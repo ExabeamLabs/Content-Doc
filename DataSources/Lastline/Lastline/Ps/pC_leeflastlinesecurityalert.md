@@ -24,6 +24,7 @@ Name = leef-lastline-security-alert
     """\Wcat=({activity}.+?)\s{1,100}(\w+=|$)""",
   ]
   DupFields = [ "user_email->recipient" , "host->dest_host", "sender->target"]
-}
+
+
 }
 ```

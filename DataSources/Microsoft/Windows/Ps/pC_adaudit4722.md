@@ -21,6 +21,7 @@ Name = ad-audit-4722
     """ACCOUNT_NAME\s{0,100}=\s{0,100}({target_user}[^\s]{1,2000})""",
     """ACCOUNT_DOMAIN\s{0,100}=\s{0,100}({target_domain}[^\s]{1,2000})""",
   ]
-}
+
+
 }
 ```

@@ -4,7 +4,7 @@
 Name = cef-ping-events-skyformation-app-activity
   DataType = "app-activity"
   Conditions = [ """CEF:""", """destinationServiceName =ping""", """action""", """suser=""", """"status":""" ]
-}
+
 cef-ping-events-skyformation = {
   Vendor = Ping Identity
   Product = Ping Identity
@@ -24,5 +24,6 @@ cef-ping-events-skyformation = {
     """"idpEntityId"{0,20}:"{0,20}({url}[^"]{1,2000})"""",
     """"client"{0,20}:\{"{0,20}id"{0,20}:"{0,20}({user_agent}[^"]{1,2000})"""",
     """msg=({additional_info}.+?)\soldFile=""",
-  ]}
+  
+}
 ```

@@ -24,6 +24,7 @@ Name = mcafee-siem-5136
       """"Target_Class":"({object_class}[^"]{1,2000})""",
     ]
     DupFields = [ "host->dest_host" ]
-  }
+  
+
 }
 ```

@@ -23,6 +23,7 @@ Name = cef-lightcyber-alert
     """\|LightCyber\|Magna\|[^|]{1,2000}?\|[^|]{1,2000}?\|({alert_type}[^|]{1,2000}?)\|[^"]{1,2000}?\s{1,100}cs2=({alert_name}[^=]{1,2000}?)\s{1,100}fileHash="""
   ]
   DupFields = ["host->dest_host", "malware_url->process_name"]
-}
+
+
 }
 ```

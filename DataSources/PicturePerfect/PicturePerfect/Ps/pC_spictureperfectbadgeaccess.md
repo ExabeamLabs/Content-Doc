@@ -18,6 +18,7 @@ Name = s-pictureperfect-badge-access
       """^[^|]{0,2000}?\|([^|]{0,2000}\|){15}({time}\d{8}\|\d{6})\|"""
     ]
     DupFields = [ "location_full->location_door" ]
-  }
+  
+
 }
 ```

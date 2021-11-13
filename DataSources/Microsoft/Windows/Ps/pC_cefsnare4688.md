@@ -28,6 +28,7 @@ Name = cef-snare-4688
     """\Wcs5=({parent_process_guid}[^\s]{1,2000})\s{0,100}(\w+=|$)""",
   ]
   DupFields = [ "host->dest_host", "process_guid->pid","directory->process_directory" ]
-}
+
+
 }
 ```

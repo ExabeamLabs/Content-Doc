@@ -19,6 +19,7 @@ Name = crowdstrike-service-created
     """"ImageFileName":\s{0,100}"[\\\?]{1,200}(|({process}({directory}[^"]{0,2000}?)(\\+({process_name}[^"\\]{1,2000}?))?))""""
   ]
   DupFields = [ "directory->process_directory" , "host->dest_host"]
-}
+
+
 }
 ```

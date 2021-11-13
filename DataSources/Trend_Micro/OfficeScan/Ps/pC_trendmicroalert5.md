@@ -18,6 +18,7 @@ Name = trend-micro-alert-5
     """Infected Resource="({malware_url}[^"]{1,2000})""",
     """\[({alert_type}[^@]{1,2000})""",
   ]
-}
+
+
 }
 ```

@@ -20,6 +20,7 @@ Name = secureauth-system-session-start
     """sev=({severity}\d{1,100})""",
     """resource=({event_name}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
-}
+
+
 }
 ```

@@ -18,6 +18,7 @@ Name = s-github-audit
     """"{1,20}pubkey_fingerprint"{1,20}:"{1,20}({fingerprint}[^"]{1,2000})""",
     """({app}github)"""
   ]
-}
+
+
 }
 ```

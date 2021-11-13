@@ -26,6 +26,7 @@ Name = cef-zlock-app-activity
     """fname=({file_path}({file_parent}[^=]{0,2000}?[\\\/]{1,2000})?({file_name}[^\\\/=]{1,2000}?(\.({file_ext}\w+))?))\s{1,100}\w+="""
 	]  
   DupFields = [ "file_name->object" ]
-}
+
+
 }
 ```

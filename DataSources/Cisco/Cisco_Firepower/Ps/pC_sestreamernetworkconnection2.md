@@ -30,6 +30,7 @@ Name = s-estreamer-network-connection-2
     """\WDNSResponseType(:|=")\s{0,100}({response_type}[^,"]{1,2000})""",
   ]
   DupFields = [ "outcome->action" ]
-}
+
+
 }
 ```

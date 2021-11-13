@@ -3,7 +3,7 @@
 {
 Name = cef-trendmicro-dlp-alert
   Conditions = [ """|Trend Micro|""", """flexString1=Blocked""", """flexString2=Removable storage""" ]
-}
+
 cef-trendmicro-dlp-alert = {
       Vendor = Trend Micro
       Product = OfficeScan
@@ -46,5 +46,6 @@ trendmicro-security-alert = {
     """\Wdvchost=({host}.+?)\s{0,100}(\w+=|$)""",
     """\WfilePath=({malware_url}.+?)\s{0,100}(\w+=|$)""",
 	]
-  DupFields = [ "threat_category->alert_type", "host->src_host" ]}
+  DupFields = [ "threat_category->alert_type", "host->src_host" 
+}
 ```

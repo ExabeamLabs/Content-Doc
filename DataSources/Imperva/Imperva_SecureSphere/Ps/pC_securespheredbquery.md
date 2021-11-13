@@ -32,6 +32,7 @@ Name = securesphere-db-query
     """\WschemaName =(|({database_schema}[^,]{1,2000})),""",
   ]
   DupFields = [ "db_user->account", "os_user->user" ]
-}
+
+
 }
 ```

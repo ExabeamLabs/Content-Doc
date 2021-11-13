@@ -15,6 +15,7 @@ Name = n-forwarded-cef-asa-nap-vpn-start
       """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sdst=({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
     ]
-  }
+  
+
 }
 ```

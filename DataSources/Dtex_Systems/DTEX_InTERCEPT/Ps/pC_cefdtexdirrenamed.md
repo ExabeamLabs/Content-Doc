@@ -4,7 +4,7 @@
 Name = cef-dtex-dir-renamed
   Product = DTEX InTERCEPT
   Conditions = [ "CEF:", """|Dtex|""", """|DirectoryRenamed|""" ]
-}
+
 cef-dtex-file-operations = {
     Vendor = Dtex Systems
     Lms = ArcSight
@@ -26,5 +26,6 @@ cef-dtex-file-operations = {
       """\WSource_File_Size=({bytes}\d{1,100})""",
       """\WUser_Name =(({domain}[^\\=]{1,2000})\\+)?({user}[^\\\s]{1,2000})\s"""
     ]
-    DupFields = [ "host->dest_host","directory->process_directory" ]}
+    DupFields = [ "host->dest_host","directory->process_directory" 
+}
 ```

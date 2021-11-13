@@ -31,6 +31,7 @@ Name = leef-eset-security-alert
       """hash=({sha256}[^\s]{1,2000})"""
     ]
     DupFields = ["action->additional_info", "host->dest_host", "malware_url->process_name"]
-  }
+  
+
 }
 ```

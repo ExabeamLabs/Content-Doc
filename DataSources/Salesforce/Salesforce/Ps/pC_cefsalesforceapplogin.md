@@ -28,6 +28,7 @@ Name = cef-salesforce-app-login
     """LoginType\\*=({login_type}[^;]{1,2000})""",
     """LoginUrl\\*=({url_host}[^;]{1,2000})""",
   ]
-}
+
+
 }
 ```

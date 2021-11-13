@@ -23,6 +23,7 @@ Name = cef-incapsula-web-activity
     """\WrequestMethod=({method}.+?)\s{1,100}(\w+=|$)""",
     """\Wdproc=({category}.+?)\s{1,100}(\w+=|$)"""
   ]
-}
+
+
 }
 ```

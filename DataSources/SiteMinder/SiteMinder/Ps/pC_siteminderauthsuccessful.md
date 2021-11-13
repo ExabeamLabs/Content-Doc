@@ -14,6 +14,7 @@ Name = siteminder-auth-successful
     """uid=({user}[^\s,]{1,2000}),o=({group}[^,]{1,2000}),dc=({domain}[^,]{1,2000}),.*?" "({app}.+?) \S+ ({resource}[^"\s]{1,2000})" \[.+?""",
     """authlevel=({auth_level}[^;\]]{1,2000})"""
   ]
-}
+
+
 }
 ```

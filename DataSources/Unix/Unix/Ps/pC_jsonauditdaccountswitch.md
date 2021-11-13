@@ -18,6 +18,7 @@ Name = json-auditd-account-switch
     """"host":\{.*?"name":"(|({host}[^"]{1,2000}))""""
   ]
   DupFields = [ "host->dest_host", "pid->process_id" ]
-}
+
+
 }
 ```

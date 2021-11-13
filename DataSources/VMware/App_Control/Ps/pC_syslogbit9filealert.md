@@ -24,6 +24,7 @@ Name = syslog-bit9-file-alert
     """\sfile_hash="({new_hash}[^"]{1,2000})"""",
     """\sprocess="({process}[^"]{1,2000})"""",
   ]
-}
+
+
 }
 ```

@@ -14,6 +14,7 @@ Name = unix-auth-failed-4
     """expired password for user ({account}[^\(]{1,2000}?) \(({failure_reason}[^\)]{1,2000}?)\)"""
   ]
   DupFields = [ "account->user" ]
-}
+
+
 }
 ```

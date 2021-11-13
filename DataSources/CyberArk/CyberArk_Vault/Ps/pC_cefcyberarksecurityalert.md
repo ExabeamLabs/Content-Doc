@@ -20,6 +20,7 @@ Name = cef-cyberark-security-alert
     """Score=\[({alert_severity}\d{1,100})\]""",
     """AuditId=\[({alert_id}.+?)\]""",
   ]
-}
+
+
 }
 ```

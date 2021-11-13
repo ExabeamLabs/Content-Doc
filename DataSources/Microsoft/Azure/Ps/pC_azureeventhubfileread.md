@@ -8,7 +8,7 @@ Name = azure-event-hub-file-read
     """"FolderPath":"({file_path}({file_parent}(?:[^";]{1,2000})?[\\\/;])?({file_name}[^\\\/";]{1,2000}?(\.({file_ext}[^\\\/\.;"]{1,2000}))))""",
     """({accesses}ReadProcessMemoryApiCall)""",
   ]
-}
+
 azure-event-hub = {
   Vendor = Microsoft
   Product = Azure
@@ -38,5 +38,6 @@ azure-event-hub = {
       """Namespace:\s{0,100}(|({event_hub_namespace}[^\]]{1,2000}?))\s{0,100}[\];]""",
       """EventHub name:\s{0,100}(|({event_hub_name}[^\]]{1,2000}?))\s{0,100}\]""",
       """\[Namespace:\s{0,100}({host}\S+) ; EventHub name:"""
-  ]}
+  
+}
 ```

@@ -19,6 +19,7 @@ Name = cef-catonetworks-vpn-login
     """\Wtunnel_device_type=({os}.+?)\s{1,100}(\w+=|$)""",
     """\Wcs3=({account}.*?)\s\w+=.*?cs3Label=CATOAccountName""",
   ]
-}
+
+
 }
 ```

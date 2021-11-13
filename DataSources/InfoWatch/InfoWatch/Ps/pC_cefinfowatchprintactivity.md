@@ -25,6 +25,7 @@ Name = cef-infowatch-print-activity
     """\Wad\.device__name=({printer_name}.*?({dest_host}[^\\\/]{1,2000}?))(\s{1,100}[\w\.]{1,2000}=|\s{0,100}$)""",
   ]
   DupFields = [ object->file_name ]
-}
+
+
 }
 ```

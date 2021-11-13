@@ -21,6 +21,7 @@ Name = checkpoint-vpn-login-2
     """\Wos_name=({os}[^\|]{1,2000}?)\s{0,100}\|""",
     """\Wlogin_option=({auth_type}[^\|]{1,2000}?)\s{0,100}\|""",
   ]
-}
+
+
 }
 ```

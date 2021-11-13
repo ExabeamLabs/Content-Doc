@@ -23,6 +23,7 @@ Name = centos-network-connection-failed
     """OUT=({dest_interface}[^\s]{1,2000})""",
     """RES=({outcome}[^\s]{1,2000})"""
  ]
-}
+
+
 }
 ```

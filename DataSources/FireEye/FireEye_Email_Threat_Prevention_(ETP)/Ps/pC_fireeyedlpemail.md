@@ -23,6 +23,7 @@ Name = fireeye-dlp-email
     """"last_malware":"({malware_name}[^"]{1,2000})""",
     """"id":"({alert_id}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

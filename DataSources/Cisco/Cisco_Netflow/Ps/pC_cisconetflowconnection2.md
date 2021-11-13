@@ -25,6 +25,7 @@ Name = cisco-netflow-connection-2
     """\sprotocol=({protocol}\d{1,100})""",
   ]
   DupFields = [ "bytes_in->bytes", "packets_in->packets"  ]
-}
+
+
 }
 ```

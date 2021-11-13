@@ -4,7 +4,7 @@
 Name = cef-microsoft-database-query
   DataType = "database-query"
   Conditions = [ """CEF:""", """destinationServiceName =Office 365""", """SAMR query""", """Run command:""" ]
-}
+
 cef-azure-app-activity-1 = {
   Vendor = Microsoft
   Product = Azure
@@ -31,5 +31,6 @@ cef-azure-app-activity-1 = {
     """"DestinationComputerDnsName","value":"({dest_host}[^"]{1,2000})"""",
     """"DestinationIpAddress","value":"({dest_ip}[a-fA-F\d.:]{1,2000})"""",
     """"Protocol","value":"({protocol}[^"]{1,2000})""""
-  ]}
+  
+}
 ```

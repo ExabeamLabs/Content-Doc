@@ -24,6 +24,7 @@ Name = windows-dns-network-connection
     """UserName ="{0,20}(unknown|((nt authority|({domain}[^\\\/]{1,2000}))[\\\/])?([Ss]ystem|localsystem|network service|({user}.+?)))"{0,20}\s{0,100}UserSid=""",
     """UserId=({user_id}.+?)\s{0,100}HeaderSizeBytes=""",
   ]
-}
+
+
 }
 ```

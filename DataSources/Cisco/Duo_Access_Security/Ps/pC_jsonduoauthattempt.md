@@ -18,6 +18,7 @@ Name = json-duo-auth-attempt
     """"auth_stage":\s{0,100}"(|({auth_method}[^"]{1,2000}))"""",
     """({service}\w+[^\-"]{0,2000}?) authentication succeeded"""
   ]
-}
+
+
 }
 ```

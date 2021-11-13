@@ -20,6 +20,7 @@ Name = symantec-epp-alert
          """\d\d:\d\d:\d\d,\s{0,100}({alert_severity}Minor|Info|Critical|Major|Security risk found|Virus found)""",
          """Sensitivity:\s({alert_severity}[^,]{1,2000})""",
          """Risk Level:\s{0,100}(N\/A|({alert_severity}[^,]{1,2000}))""",
-         """Occurrences:\s{0,100}\d{1,100}
+         """Occurrences:\s{0,100}\d{1,100
+
 }
 ```

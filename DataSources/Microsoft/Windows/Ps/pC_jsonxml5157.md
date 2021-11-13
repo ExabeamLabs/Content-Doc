@@ -25,6 +25,7 @@ Name = json-xml-5157
     """<Data Name ='LayerName'>({layer_name}[^<>]{1,2000})</Data>"""
   ]
   DupFields = [ "host->local_asset" ]
-}
+
+
 }
 ```

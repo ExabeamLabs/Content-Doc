@@ -31,6 +31,7 @@ Name = cef-ibm-racf-app-activity
     """\Wcs6Label=(|({alert_type}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
   ]
   DupFields = [ "terminal->app" ]
-}
+
+
 }
 ```

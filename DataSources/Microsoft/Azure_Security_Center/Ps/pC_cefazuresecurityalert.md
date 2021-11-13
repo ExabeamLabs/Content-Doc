@@ -19,6 +19,7 @@ Name = cef-azure-security-alert
     """"description":"({event_name}[^"]{1,2000})"""",
     """"Suspicious actions\\":\\"\[[\\"]{1,20}({additional_info}[^\]]{1,2000}?)[\\""]{1,20}\]"""
   ]
-}
+
+
 }
 ```

@@ -30,6 +30,7 @@ Name = xml-4649
     """({additiona_info}Credentials Which Were Replayed:.+)This event indicates that a Kerberos replay attack was detected""",
   ]
   DupFields = [ "event_name->alert_name", "auth_process->alert_type" ]
-}
+
+
 }
 ```

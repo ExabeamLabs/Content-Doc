@@ -18,6 +18,7 @@ Name = powershell-process-created
     """\sHostApplication=({process}(|({directory}[^\s]{1,2000}?))({process_name}[^\s\\\/]{1,2000}).*?)\s{1,100}EngineVersion="""
   ]
   DupFields = [ "host->dest_host", "process->command_line", "directory->process_directory" ]
-}
+
+
 }
 ```

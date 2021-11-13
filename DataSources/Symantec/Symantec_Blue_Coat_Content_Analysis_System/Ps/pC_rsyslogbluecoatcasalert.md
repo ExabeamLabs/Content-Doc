@@ -16,6 +16,7 @@ Name = r-syslog-bluecoatcas-alert
     """Client: (({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[^,\s]{1,2000}))""",
     """URL: ({malware_url}[^,]{1,2000})"""
   ]
-}
+
+
 }
 ```

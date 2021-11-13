@@ -10,6 +10,7 @@ Name = onapsis-db-op
     Conditions = [ """, db_table=""", """, action=""", """, user_name=""", """, user_id=""" ]
     Fields = [
       """<.*?>\w+ \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} ({host}[\w\.-]{1,2000}?) ({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""
-      """, user_name=\s{0,100}({user}[^,]{1,2000}?)\s{0,100}
+      """, user_name=\s{0,100}({user}[^,]{1,2000}?)\s{0,100
+
 }
 ```

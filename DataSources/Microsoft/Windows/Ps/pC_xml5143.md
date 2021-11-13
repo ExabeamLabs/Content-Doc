@@ -21,6 +21,7 @@ Name = xml-5143
     """<Data Name ='ShareLocalPath'>[\\\?]{0,2000}({share_path}(({d_parent}[^@]{1,2000}?)\\)?(|({d_name}[^\\]{1,2000}?)))<""",
     """<Message>({event_name}A network share object was modified)"""
   ]
-}
+
+
 }
 ```

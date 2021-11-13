@@ -20,6 +20,7 @@ Name = cef-windows-4776
     """"workstation":"({dest_host}[^"\s]{1,2000}?)\s{0,100}"""",
     """"status":"({result_code}[^"]{1,2000}?)\s{0,100}"""",
   ]
-}
+
+
 }
 ```

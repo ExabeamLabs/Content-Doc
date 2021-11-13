@@ -3,7 +3,7 @@
 {
 Name = s-zscaler-web-activity-2
   Conditions = [ """threatclass=Clean Transaction""", """bwthrottle=""", """urlsupercategory=""" ]
-}
+
 s-zscaler-web-activity = {
   Vendor = Zscaler
   Product = Zscaler Internet Access
@@ -39,5 +39,6 @@ s-zscaler-web-activity = {
     """\sfileclass=(?:None|({mime}[^=]{1,2000}?))\s{0,100}(\w+=|$)""",
     """\sappname=({app}[^=]{1,2000}?)\s{1,100}(\w+|$)""",
     """\slocation=({location}[^=]{1,2000}?)\s{1,100}\w+="""
-  ]}
+  
+}
 ```

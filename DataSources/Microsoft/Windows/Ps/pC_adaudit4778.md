@@ -23,6 +23,7 @@ Name = ad-audit-4778
     """REMARKS\s{0,100}=\s{0,100}({event_name}[^.\]]{1,2000})(\.)?\s{1,100}\]""",
     """CLIENT_IP_ADDRESS\s{0,100}=\s{0,100}(null|-|({src_ip}[a-fA-F:\d.]{1,2000}))"""
   ]
-}
+
+
 }
 ```

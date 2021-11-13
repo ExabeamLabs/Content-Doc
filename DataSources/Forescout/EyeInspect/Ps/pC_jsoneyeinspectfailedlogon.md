@@ -17,6 +17,7 @@ Name = json-eyeinspect-failed-logon
     """"otherInfo":"({failure_reason}[^",]{1,2000})"""",
     """"action":"({event_name}[^",]{1,2000})""""
   ]
-}
+
+
 }
 ```

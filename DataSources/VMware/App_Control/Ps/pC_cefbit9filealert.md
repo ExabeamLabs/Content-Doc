@@ -30,6 +30,7 @@ Name = cef-bit9-file-alert
     """(\||\s)fileHash=(|({old_hash}.+?))\s{1,100}(\w+=|$)""",
   ]
   DupFields = [ "old_hash->new_hash" ]
-}
+
+
 }
 ```

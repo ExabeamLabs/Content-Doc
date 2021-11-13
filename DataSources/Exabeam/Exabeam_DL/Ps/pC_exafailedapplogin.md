@@ -4,7 +4,7 @@
 Name = exa-failed-app-login
   DataType = "failed-app-login"
   Conditions = [ """"Exabeam Audit Event"""", """"event_type":"failed-app-login"""", """"activity":"Failed log in"""" ]
-}
+
 exa-events = {
   Vendor = Exabeam
   Product = Exabeam DL
@@ -18,5 +18,6 @@ exa-events = {
     """"activity":"({activity}[^"]{1,2000})""",
     """"additional_info":"({additional_info}.+?),?\s{0,100}"\}\}""",
     """"app":"({app}[^"]{1,2000})""",
-  ]}
+  
+}
 ```

@@ -25,6 +25,7 @@ Name = s-endpoint-dlp-alert
       """\s\[tenpu_file_name="[^"]{0,2000}?({malware_file_name}[^"\\\/]{1,2000}?)\s{0,100}"""",
       """\s\[hasseibi="({time}\d\d\d\d\/\d\d\/\d\d \d{1,100}:\d{1,100}:\d{1,100})""",
     ]
-  }
+  
+
 }
 ```

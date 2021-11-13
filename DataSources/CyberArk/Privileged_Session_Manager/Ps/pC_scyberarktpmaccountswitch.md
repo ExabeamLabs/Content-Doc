@@ -17,6 +17,7 @@ Name = s-cyberark-tpm-account-switch
 		"""PAR\[({event_code}\d{1,100})"""
     ]
     DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

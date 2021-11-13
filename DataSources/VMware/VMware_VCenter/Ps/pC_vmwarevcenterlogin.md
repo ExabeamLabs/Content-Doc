@@ -15,6 +15,7 @@ Name = vmware-vcenter-login
       """Authenticated user ({user}[^\s@]{1,2000})""",
       """({app}VM_VCenter)"""
   ]
-}
+
+
 }
 ```

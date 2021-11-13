@@ -19,6 +19,7 @@ Name = s-trendmicro-epp-alert-1
     """IP Address:\s{0,100}({src_ip}[A-Fa-f:\d.]{1,2000})""",
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

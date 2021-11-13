@@ -19,6 +19,7 @@ Name = zoom-meeting-updated
     """"object"\s{0,100}:\s{0,100}\{"id"\s{0,100}:\s{0,100}({meeting_number}\d{1,100})""",
     """"time_stamp"\s{0,100}:\s{0,100}"({time}\d{1,100})"""
   ]
-}
+
+
 }
 ```

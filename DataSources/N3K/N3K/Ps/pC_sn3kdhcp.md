@@ -16,6 +16,7 @@ Name = s-n3k-dhcp
       """("|\s)MAC(":\s{1,100}|=)"?({src_mac}[^",]{1,2000})""",
     ]
     DupFields = [ "dest_host->user" ]
-  }
+  
+
 }
 ```

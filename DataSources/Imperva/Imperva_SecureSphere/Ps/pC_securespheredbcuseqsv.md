@@ -36,6 +36,7 @@ Name = securesphere-db-cuseqsv
     """\Wos_user=({user}[^\s,]{1,2000})"""
   ]
   DupFields = [ "db_user->account" ]
-}
+
+
 }
 ```

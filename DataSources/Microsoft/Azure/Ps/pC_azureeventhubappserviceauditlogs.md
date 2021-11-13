@@ -25,6 +25,7 @@ Name = azure-event-hub-app-service-audit-logs
   ]
 
   DupFields= ["event_hub_namespace->host"]
-}
+
+
 }
 ```

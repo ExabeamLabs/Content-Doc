@@ -18,6 +18,7 @@ Name = cef-moveit-app-failed-login
     """requestClientApplication=({user_agent}.+?)\s\w+=""",
     """({app}MoveIt)"""
   ]
-}
+
+
 }
 ```

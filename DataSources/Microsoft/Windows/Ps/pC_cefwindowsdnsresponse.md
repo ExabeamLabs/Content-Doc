@@ -21,6 +21,7 @@ Name = cef-windows-dns-response
     """\Wproto=({protocol}.+?)\s{1,100}(\w+=|$)""",
     """\WdeviceSeverity=({dns_response_code}.+?)\s{1,100}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

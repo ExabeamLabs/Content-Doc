@@ -27,6 +27,7 @@ Name = raw-5136
     """Object:\s{1,100}DN:\s{1,100}({object_dn}.+?)\s{1,100}GUID:"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

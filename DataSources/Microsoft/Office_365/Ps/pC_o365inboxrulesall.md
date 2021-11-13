@@ -22,6 +22,7 @@ Name = o365-inbox-rules-all
     """({app}Office 365)"""
     """"SubjectOrBodyContainsWords":"({filter_key_words}[^"]{1,2000})"""
   ]
-}
+
+
 }
 ```

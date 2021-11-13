@@ -26,6 +26,7 @@ Name = cef-carbonblack-network-connection
     """\Wmsg=({additional_info}.+?)\s{1,100}(\w+=|$)""",
   ]
   DupFields = [ "directory->process_directory" ]
-}
+
+
 }
 ```

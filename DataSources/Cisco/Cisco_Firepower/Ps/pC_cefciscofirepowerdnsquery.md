@@ -7,7 +7,7 @@ Name = cef-cisco-firepower-dns-query
   Fields = ${CiscoParsersTemplates.cisco-firepower-events.Fields}[
   """destinationDnsDomain=({query}[^\s]{1,2000})""",
   ]
-}
+
 cisco-firepower-events = {
   Vendor = Cisco
   Product = Cisco Firepower
@@ -30,5 +30,6 @@ cisco-firepower-events = {
     """request=({url}[^\s]{1,2000})""",
     """spt=({src_port}\d{1,100})\s{0,100}src=({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """user=(?:No Authentication Required|({user}[^"\s]{1,2000}))""",
-        ]}
+        
+}
 ```

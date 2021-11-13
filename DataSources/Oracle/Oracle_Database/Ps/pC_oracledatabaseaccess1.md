@@ -4,7 +4,7 @@
 Name = oracle-database-access-1
   DataType = "database-access"
   Conditions = [ """action_name":"CREATE USER""", """os_username""", """userhost""", """priv_used""", """db_name""", """extended_timestamp""" ]
-}
+
 oracle-database-event = {
     Vendor = Oracle
     Product = Oracle Database
@@ -21,5 +21,6 @@ oracle-database-event = {
       """"sessionid":"({session_id}[^"]{1,2000})"""",
       """"priv_used":"({additional_info}[^"]{1,2000})"""",
     ]
-    DupFields = [ "db_operation->activity" ]}
+    DupFields = [ "db_operation->activity" 
+}
 ```

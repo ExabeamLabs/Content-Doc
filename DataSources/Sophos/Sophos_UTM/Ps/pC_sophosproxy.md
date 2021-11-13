@@ -30,6 +30,7 @@ Name = sophos-proxy
 		"""\sua="(-|({user_agent}[^"]{1,2000}))""",
 		"""\scat="(-|0x2({risk_level}\d)({category}[^"]{1,2000}))""",
     ]
-  }
+  
+
 }
 ```

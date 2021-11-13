@@ -23,6 +23,7 @@ Name = json-bro-dns-query
     """"qtype_name\\?"{1,20}:\\?"{1,20}({query_type}[^"\\]{1,2000})""",
     """"rejected\\?"{1,20}:({outcome}\w+)"""
   ]
-}
+
+
 }
 ```

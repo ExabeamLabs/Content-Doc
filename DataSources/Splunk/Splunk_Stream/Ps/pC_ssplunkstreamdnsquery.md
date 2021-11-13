@@ -26,6 +26,7 @@ Name = s-splunkstream-dns-query
     """"host_addr":\["({host}[^"]{1,2000})""",
     """"hostname":\["({host}[^"]{1,2000})"""
   ]
-}
+
+
 }
 ```

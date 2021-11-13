@@ -17,6 +17,7 @@ Name = cef-aruba-mobile
      """catdt=({alert_type}[^\s]{1,2000})""",
      """\s{1,100}at=({activity}[^\s]{1,2000})""",
   ]
-}
+
+
 }
 ```

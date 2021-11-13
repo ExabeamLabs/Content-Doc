@@ -16,7 +16,7 @@ Name = checkpoint-network-decrypt
     """dst:"{1,20}({dest_ip}[^"]{1,2000})""",
     """\Wproduct:"({product_name}[^"]{1,2000})\s{0,100}""",
   ]
-}
+
 checkpoint-auth = {
   Vendor = Check Point 
   Product = NGFW
@@ -40,5 +40,6 @@ checkpoint-auth = {
     """reason:"({failure_reason}[^"]{1,2000})""",
     """\Wsrc_machine_name:"({src_host}[\w\-.]{1,2000})""",
     """\Wifdir:"({direction}[^"]{1,2000})""",
-  ]}
+  
+}
 ```

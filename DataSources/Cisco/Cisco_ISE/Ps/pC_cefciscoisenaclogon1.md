@@ -19,6 +19,7 @@ Name = cef-cisco-ise-nac-logon-1
     """({auth_type}TACACS\+ Accounting)"""
   ]
   DupFields = [ "host->auth_server" ]
-}
+
+
 }
 ```

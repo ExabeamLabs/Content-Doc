@@ -24,6 +24,7 @@ Name = ordr-json-alert
     """"srcIp":\s"({src_ip}[^"]{1,2000})"""",
     """"srcMac":\s"({src_mac}[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

@@ -21,6 +21,7 @@ Name = cef-db2-security-alert-2
     """duser=({user}.+?)\s{0,100}\w+=""",
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

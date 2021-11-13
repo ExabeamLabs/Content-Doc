@@ -20,6 +20,7 @@ Name = cef-aruba-nac-logon-4
     """({event_name}(?i)auth)""",
   ]
   DupFields = [ "host->auth_server" ]
-}
+
+
 }
 ```

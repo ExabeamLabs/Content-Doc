@@ -19,6 +19,7 @@ Name = cef-O365-dlp-email-in
     """"EventType":"({alert_type}[^"]{1,2000})""""
   ]
   DupFields = [ "alert_type->alert_name", "alert_type->outcome", "sender->external_address" ]
-}
+
+
 }
 ```

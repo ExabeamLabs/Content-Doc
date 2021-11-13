@@ -23,6 +23,7 @@ Name = s-oracle-db-query
     """<Sql_Text>\s{0,100}({db_query}({db_operation}\w+)\s.+?)\s{0,100}</Sql_Text>""",
   ]
   DupFields = [ "os_user->user", "db_user->account", "database_id->database_name" ]
- }
+ 
+
 }
 ```

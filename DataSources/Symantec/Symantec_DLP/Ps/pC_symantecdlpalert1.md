@@ -21,6 +21,7 @@ Name = symantec-dlp-alert-1
     """protocol=({alert_type}[^,]{0,2000}),""",
     """user=({user_email}[^,]{1,2000}),"""
   ]
-}
+
+
 }
 ```

@@ -15,6 +15,7 @@ Name = cisco-ssh-login
     """SSH2_USERAUTH:\s{0,100}User '(|({user}[^']{1,2000}))' authentication for SSH2 Session from ({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """({outcome}Succeeded|Failed)""",
   ]
-}
+
+
 }
 ```

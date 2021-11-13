@@ -21,6 +21,7 @@ Name = cisco-auth-failed-2
     """Node ID=({dest_host}[^\]]{1,2000})""",
     """App ID\s{0,100}=({app}[^\]]{1,2000})""",
   ]
-}
+
+
 }
 ```

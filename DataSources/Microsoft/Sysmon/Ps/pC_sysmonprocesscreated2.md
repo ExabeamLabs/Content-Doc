@@ -6,7 +6,7 @@ Name = sysmon-process-created-2
   DataType = "process-created"
   Fields = ${MicrosoftParserTemplates.sysmon-process-events.Fields}[
   ]
-}
+
 sysmon-process-events = {
   Vendor = Microsoft
   Product = Sysmon
@@ -33,5 +33,6 @@ sysmon-process-events = {
     """\s{1,100}Image:\s{0,100}({process}({directory}(?:(\w+:)?[^:]{1,2000})?[\\\/])?({process_name}[^:]{1,2000}?))\s{1,100}FileVersion:""",
     """\s{1,100}ParentImage:\s{0,100}({parent_process}({parent_directory}(?:(\w+:)?[^:]{1,2000})?[\\\/])?({parent_process_name}[^:]{1,2000}?))\s{1,100}ParentCommandLine:"""
   ]
-  DupFields = [ "host->dest_host", "directory->process_directory", "process->path" ]}
+  DupFields = [ "host->dest_host", "directory->process_directory", "process->path" 
+}
 ```

@@ -10,7 +10,7 @@ Name = cassandra-db-update
     """\|operation:({additional_info}[^|\.]{1,2000})"""
 ]
   DupFields = [ "additional_info->db_query" ]
-}
+
 cassandra-db-events = {
       Vendor = Apache
       Product = Cassandra
@@ -24,5 +24,6 @@ cassandra-db-events = {
         """\|operation:({additional_info}[^|]{1,2000}?)\s{0,10}$""",
         """\|authenticated:({db_user}[^\|]{1,2000})"""
  ]
-      DupFields =  [ "db_user->user" ]}
+      DupFields =  [ "db_user->user" 
+}
 ```

@@ -19,6 +19,7 @@ Name = cef-salesforce-app-activity-28
     """Display\\=.*?({object}Ip WhiteList)""",
     """({app}Sales Cloud)""",
   ]
-}
+
+
 }
 ```

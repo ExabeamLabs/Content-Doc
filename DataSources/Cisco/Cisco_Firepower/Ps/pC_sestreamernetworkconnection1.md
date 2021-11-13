@@ -36,6 +36,7 @@ Name = s-estreamer-network-connection-1
     """\WURLReputation:\s{0,100}({reputation}[^,]{1,2000}?)(,|\s{0,100}$)""",
   ]
   DupFields = [ "outcome->action" ]
-}
+
+
 }
 ```

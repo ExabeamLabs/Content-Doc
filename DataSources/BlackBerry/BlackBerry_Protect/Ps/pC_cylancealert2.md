@@ -28,6 +28,7 @@ Name = cylance-alert-2
     """"sha256":"({file_hash}[^"]{1,2000})""""
   ]
   DupFields = [ "alert_type->alert_name", "file_name->name_at", "file_hash->sha256_at" ]
-}
+
+
 }
 ```

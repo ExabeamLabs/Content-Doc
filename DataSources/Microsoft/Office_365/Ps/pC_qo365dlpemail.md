@@ -18,6 +18,7 @@ Name = q-o365-dlp-email
     """Size=({bytes}\d{1,100})""",
     """Subject=({subject}.+?)\s{0,100}\}""",
   ]
-}
+
+
 }
 ```

@@ -15,6 +15,7 @@ Name = ovirt-app-activity-11
     """EVENT_ID:.*?Disk Profile ({object}[^\s"]{1,2000}) was successfully added \(User: ({user}[^\s\(\)"]{1,2000}?)(\)|\s|\.\s|\.$)""",
     """({app}ovirt)"""
   ]
-}
+
+
 }
 ```

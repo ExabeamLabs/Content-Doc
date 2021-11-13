@@ -17,6 +17,7 @@ Name = cisco-process-created
     """logged command:[\s\*]{0,2000}({command_line}({process_name}[^\s]{1,2000})?.+?)?[\s\*]{0,2000}(Source:\s{0,100}\/({dest_ip}[A-Fa-f:\d.]{1,2000})|$)""",
     """Original Address=({dest_ip}[A-Fa-f:\d.]{1,2000})""",
   ]
-}
+
+
 }
 ```

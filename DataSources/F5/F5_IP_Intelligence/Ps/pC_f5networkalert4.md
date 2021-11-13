@@ -19,6 +19,7 @@ Name = f5-network-alert-4
     """source_port\s{0,100}=\s{0,100}({src_port}\d{1,100})""",
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

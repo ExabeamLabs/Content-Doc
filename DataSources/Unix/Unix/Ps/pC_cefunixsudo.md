@@ -20,6 +20,7 @@ Name = cef-unix-sudo
       """\sduser=(|({account}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
       """({event_code}sudo)"""
     ]
-  }
+  
+
 }
 ```

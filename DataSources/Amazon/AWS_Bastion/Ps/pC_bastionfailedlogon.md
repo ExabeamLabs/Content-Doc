@@ -15,6 +15,7 @@ Name = bastion-failed-logon
     """bastion\d{0,100}:({hostname}[^:]{1,2000}):({user}[^:]{1,2000}):\s""",
     """:\s{1,100}({failure_reason}.+?)\s{0,100}$"""
   ]
-}
+
+
 }
 ```

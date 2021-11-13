@@ -24,6 +24,7 @@ Name = cef-forcepoint-dlp-alert
     """\|Forcepoint\|([^|]{1,2000}?\|){4}({alert_severity}[^|]{1,2000})""",
     """\sact=({outcome}[^\s]{0,2000})"""
   ]
-}
+
+
 }
 ```

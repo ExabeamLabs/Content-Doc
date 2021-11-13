@@ -13,6 +13,7 @@ Name = bro-dns
     """\d{10}\.\d{6}\t([^\t]{1,2000}\t){14}(?:-|({dns_response_code}[^\t]{1,2000}))\t"""
     ]
   DupFields = [ "id_orig_h->src_ip", "id_orig_p->src_port", "id_resp_h->dest_ip", "id_resp_p->dest_port", "proto->protocol", "qtype->query_type", "rejected->outcome" ]
-}
+
+
 }
 ```

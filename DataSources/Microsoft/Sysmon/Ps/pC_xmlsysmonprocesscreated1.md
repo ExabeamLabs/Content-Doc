@@ -25,6 +25,7 @@ Name = xml-sysmon-process-created-1
     """<Data Name ='TargetImage'>({target_path}(({target_directory}[^<]{0,2000})\\+)?({target_process_name}.+?))</Data>""",
   ]
   DupFields = [ "host->dest_host","directory->process_directory","path->process" ]
-}
+
+
 }
 ```

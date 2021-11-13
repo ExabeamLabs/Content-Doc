@@ -4,7 +4,7 @@
 Name = observeit-dlp-alert-1
   DataType = "dlp-alert"
   Conditions = [ """"observedAt": """", """"sessionUrl": """", """"loginName": """", """"ruleCategoryName": "DATA EXFILTRATION""" ]
-}
+
 observeit-activity = {
   Vendor = Proofpoint
   Product = ObserveIT
@@ -30,5 +30,6 @@ observeit-activity = {
     """"sqlUserName":\s{0,100}"({db_user}[^",]{1,2000})"""",
     """"databaseName":\s{0,100}"({database_name}[^",]{1,2000})"""",
     """"id":\s{0,100}({alert_id}\d{1,100})"""
-  ]}
+  
+}
 ```

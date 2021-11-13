@@ -27,6 +27,7 @@ Name = json-microsoft-dns-query
     """"AccountName":"((?i)SYSTEM|({user}[^"]{1,2000}))""",
     """"UserID":"({user_sid}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

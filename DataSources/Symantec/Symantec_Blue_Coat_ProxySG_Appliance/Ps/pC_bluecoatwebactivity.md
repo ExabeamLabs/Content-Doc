@@ -30,6 +30,7 @@ Name = bluecoat-web-activity
     """"AppID":"({mime}[^"]{1,2000})""",
     """"Destination_Logon_ID":"({app_user}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

@@ -21,6 +21,7 @@ Name = raw-4769
       """Ticket Options:\s{0,100}({ticket_options}.+?)[\s;]{0,2000}Ticket Encryption Type"""
       """Ticket Encryption Type:\s{0,100}({ticket_encryption_type}.+?)[\s;]{0,2000}Failure Code"""
     ]
-  }
+  
+
 }
 ```

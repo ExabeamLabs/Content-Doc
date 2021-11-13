@@ -24,6 +24,7 @@ Name = oracle-db-query
     """"object_name":"({database_object}[^"]{1,2000})""",
   ]
   DupFields = [ "db_user->account", "schema->database_name" ]
-}
+
+
 }
 ```

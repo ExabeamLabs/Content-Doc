@@ -20,6 +20,7 @@ Name = s-4688-jp
     """プロセスのコマンド ライン:\s{0,100}(\s{1,100}|({command_line}[^=]{1,2000}))\s{1,100}トークン昇格の種類は"""
   ]
   DupFields = [ "directory->process_directory","directory->path" ]
-}
+
+
 }
 ```

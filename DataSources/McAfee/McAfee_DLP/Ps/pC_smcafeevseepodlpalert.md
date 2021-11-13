@@ -24,6 +24,7 @@ Name = s-mcafee-vse-epo-dlp-alert
       """SourceIPV4="({src_ip}[^"]{1,2000})""",
       """TargetIPV4="({dest_ip}[^"]{1,2000})"""
     ]
-  }
+  
+
 }
 ```

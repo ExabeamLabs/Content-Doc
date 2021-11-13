@@ -19,6 +19,7 @@ Name = s-microsoft-database-login
       """\sfirst_login="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{1,100})""",
       """exabeam_host=({host}[\w.\-]{1,2000})""",
     ]
-}
+
+
 }
 ```

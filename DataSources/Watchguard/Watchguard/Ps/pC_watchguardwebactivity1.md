@@ -22,6 +22,7 @@ Name = watchguard-web-activity-1
     """action="{1,20}({proxy_action}[^"]{1,2000})""""
   ]
   DupFields = [ "user_email->user" ]
-}
+
+
 }
 ```

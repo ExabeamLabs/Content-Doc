@@ -8,7 +8,7 @@ Name = cef-radius-authentication-failed
     """Reason\\=\[({failure_reason}.+?)\]""",
     
   ]
-}
+
 cef-aruba-nac-logon-1 = {
   Vendor = HP
   Lms = ArcSight
@@ -28,5 +28,6 @@ cef-aruba-nac-logon-1 = {
     """cs4=({service}.+?)\s\w+=""",
    ]
   DupFields = [ "dest_ip->auth_server" ]  
- }}
+ 
+}
 ```

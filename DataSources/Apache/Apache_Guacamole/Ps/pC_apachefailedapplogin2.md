@@ -16,6 +16,7 @@ Name = apache-failed-app-login-2
     """uid=({user_id}[^,]{1,2000})""",
     """({outcome}failed):\s({failure_reason}Too many failed logins)"""
     ]
-}
+
+
 }
 ```

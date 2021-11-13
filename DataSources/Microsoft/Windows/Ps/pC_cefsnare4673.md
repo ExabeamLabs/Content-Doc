@@ -27,6 +27,7 @@ Name = cef-snare-4673
     """\s{0,100}Server(:|=)\s{0,100}({object_server}.+?)[\s;]{0,2000}Service Name""",
   ]
   DupFields = ["host->dest_host"]
-}
+
+
 }
 ```

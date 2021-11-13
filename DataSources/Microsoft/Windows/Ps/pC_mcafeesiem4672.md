@@ -23,6 +23,7 @@ Name = mcafee-siem-4672
       """({event_code}4672)"""
     ]
     DupFields = [ "host->dest_host" ]
-  }
+  
+
 }
 ```

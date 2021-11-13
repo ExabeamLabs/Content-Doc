@@ -23,6 +23,7 @@ Name = s-checkpoint-firewall-drop
     """\|xlatesport=({src_translated_port}\d{1,100})""",
     """\|xlatedport=({dest_translated_port}\d{1,100})"""
   ]
-}
+
+
 }
 ```

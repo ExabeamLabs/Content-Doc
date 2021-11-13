@@ -18,6 +18,7 @@ Name = netwrix-app-activity-4
     """What\s{0,100}:\s{0,100}({resource}.+?)({object}[^\\]{1,2000}?)\s{1,100}When\s{0,100}:""",
     """({app}VMware)""",
   ]
-}
+
+
 }
 ```

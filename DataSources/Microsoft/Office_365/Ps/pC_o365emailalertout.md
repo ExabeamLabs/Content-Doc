@@ -7,7 +7,7 @@ Name = O365-email-alert-out
     """"user":"({sender}[^"\s@]{1,2000}@[^"\s@]{1,2000})""",
     """"user":"({external_address}[^"\s@;,]{1,2000}@[^"\s@;,]{1,2000})""",
   ]
-}
+
 O365-email-alert = {
   Vendor = Microsoft
   Product = Office 365
@@ -24,5 +24,6 @@ O365-email-alert = {
     """"message":"({additional_info}.+?)\s{0,100}",""",
     """"(internal|external)_recipients":"({recipients}({recipient}[^"\s@;,]{1,2000}@[^"\s@;,]{1,2000})[^"]{0,2000})"""",
     """ from ({sender}[^"\s@]{1,2000}@[^"\s@]{1,2000})""",
-  ]}
+  
+}
 ```

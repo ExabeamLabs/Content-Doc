@@ -22,6 +22,7 @@ Name = s-xml-4697
     """<Data Name(\\)?='ServiceType'>(?=\w)({service_type}[^<]{1,2000})</Data>"""
   ]
   DupFields = [ "host->dest_host", "directory->process_directory" ]
-}
+
+
 }
 ```

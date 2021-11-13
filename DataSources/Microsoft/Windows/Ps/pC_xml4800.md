@@ -19,6 +19,7 @@ Name = xml-4800
     """Data Name(\\)?='TargetUserSid'>({user_sid}[^<]{1,2000})""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

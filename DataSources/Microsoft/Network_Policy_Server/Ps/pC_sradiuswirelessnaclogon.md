@@ -24,6 +24,7 @@ Name = s-radius-wireless-nac-logon
     """EAP Type:\s{1,100}(?:-|({auth_type}.+?))\s{1,100}Account Session Identifier:""",
     """Result:\s{1,100}(?:-|({access_type}.+?))\s{1,100}Session Identifier:"""
   ]
-}
+
+
 }
 ```

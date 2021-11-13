@@ -5,7 +5,7 @@ Name = cds-user-login
   Product = CDS
   Conditions = [ """AUDIT:""", """ uid=""", """type=USER_LOGIN""" ]
   DataType = "remote-logon"
-}
+
 cds-user-activity = {
      Vendor = CDS
      Lms = Splunk
@@ -24,5 +24,6 @@ cds-user-activity = {
        """acct="({account}[^"]{1,2000})"""",
        """res=({outcome}failed|success)"""
      ]
-     DupFields = [ "process_directory->directory"]}
+     DupFields = [ "process_directory->directory"
+}
 ```

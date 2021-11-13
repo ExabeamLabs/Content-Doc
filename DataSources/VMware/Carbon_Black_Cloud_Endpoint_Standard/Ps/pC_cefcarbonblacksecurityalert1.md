@@ -33,6 +33,7 @@ Name = cef-carbonblack-security-alert-1
     """>({file_name}[^<"']{1,2000})<\/link><\/share>"{0,20}\s{0,100}was created by the application"""
   ]
   DupFields = [ "directory->process_directory" ]
-}
+
+
 }
 ```

@@ -14,6 +14,7 @@ Name = sterling-failed-logon-1
     """userToAuth\s{1,100}({user_id}[^:]{1,2000})""",
     """({event_name}Failed login)""",
   ]
-}
+
+
 }
 ```

@@ -14,6 +14,7 @@ Name = avaya-switch-auth-successful
       """({event_name}Session opened)""",
       """IP address:\s{1,100}({src_ip}[a-fA-F\d.:]{1,2000})""",
     ]
-  }
+  
+
 }
 ```

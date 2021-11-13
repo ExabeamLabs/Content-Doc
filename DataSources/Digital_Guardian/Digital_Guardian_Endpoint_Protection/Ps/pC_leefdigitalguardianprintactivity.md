@@ -8,7 +8,7 @@ Name = leef-digitalguardian-print-activity
   DataType = "print-activity"
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ """LEEF:""", """|Digital Guardian|Digital Guardian|""", """DigitalGuardian-Events""", """|Print|""" ]
-}
+
 leef-digitalguardian-print-activity = {
   Vendor = Digital Guardian
   Product = Digital Guardian Endpoint Protection
@@ -29,5 +29,6 @@ leef-digitalguardian-print-activity = {
     """SourceFile=({object}.+?)\s{0,100}(\w+=|$)""",
     """domain=({domain}.+?)\s{0,100}(\w+=|$)""",
     """LEEF:([^\|]{0,2000}\|){4}({event_code}[^\|]{1,2000})""",
-  ]}
+  
+}
 ```

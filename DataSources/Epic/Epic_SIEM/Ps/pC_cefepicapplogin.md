@@ -20,6 +20,7 @@ Name = cef-epic-app-login
     """ROLE=({additional_info}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """USERJOB=(|({resource}.+?))\s{1,100}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

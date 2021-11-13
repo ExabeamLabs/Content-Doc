@@ -19,6 +19,7 @@ Name = rdirectory-object-modification
 	"""rdirectoryModify.+?\(.+?\)\[.+?\].+?To:({new_attribute}[^<\[]{1,2000})""",
 	"""rdirectoryModify User:({object}.+?)\s{0,100}\("""
   ]
-}
+
+
 }
 ```

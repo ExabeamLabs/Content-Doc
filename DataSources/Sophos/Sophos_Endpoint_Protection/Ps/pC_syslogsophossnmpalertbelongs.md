@@ -17,6 +17,7 @@ Name = syslog-sophos-snmp-alert-belongs
     """:=\s{0,100}({additional_info}[^"]{1,2000}?)\s{1,100}"({file_path}(({file_parent}.+)[\\\/])?({file_name}.+?))"\s{1,100}belongs to\s{1,100}({alert_type}.+?)\s{1,100}'({alert_name}.+?)'(\s{0,100}\(of type\s{1,100}({=alert_type}.+?)\))?""",
   ]
   DupFields = [ "file_path->malware_url" ]
-}
+
+
 }
 ```

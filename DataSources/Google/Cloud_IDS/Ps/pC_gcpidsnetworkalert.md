@@ -22,6 +22,7 @@ Name = gcp-ids-network-alert
     """"details":"({additional_info}[^"]{1,2000})"""",
     """"threat_id":"({alert_id}[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

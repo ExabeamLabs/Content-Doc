@@ -30,6 +30,7 @@ Name = cef-duo-authentication
     """"reason":\s{0,100}"(({event_name}(?i)User approved|Valid passcode|Remembered device|Trusted network)|({failure_reason}[^"]{1,2000}))"""",
   ]
   DupFields = ["object->device", "app->service", "factor->auth_method"]
-}
+
+
 }
 ```

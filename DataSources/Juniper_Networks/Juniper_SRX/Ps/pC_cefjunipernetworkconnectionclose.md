@@ -26,6 +26,7 @@ Name = cef-Juniper-network-connection-close
       """\sreason=(|({failure_reason}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
       """\sdeviceInboundInterface=(|({dest_interface}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     ]
-  }
+  
+
 }
 ```

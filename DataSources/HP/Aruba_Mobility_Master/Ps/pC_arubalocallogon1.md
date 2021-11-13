@@ -7,7 +7,7 @@ Name = aruba-local-logon-1
   Fields = ${ArubaParserTemplates.cef-aruba-nac-logon-2.Fields}[
     """Administrative user '({user}[^']{1,2000})'"""
   ] 
-}
+
 cef-aruba-nac-logon-2 = {
     Vendor = HP
     Product = Aruba Mobility Master
@@ -27,5 +27,6 @@ cef-aruba-nac-logon-2 = {
       """server\\*=({auth_server}[^"]{1,2000})"""",
       """servername\\*=({auth_server}[^=]{1,2000})\s{1,100}\w+\\*=""",
       """username\\*=({user}\w+)\s"""
-    ]}
+    
+}
 ```

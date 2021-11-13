@@ -28,6 +28,7 @@ Name = s-stealthwatch-network-alert
     """port="({dest_port}[^"]{1,2000})"""", 
   ]
   DupFields = [ "alert_type->alert_name" ]
-}
+
+
 }
 ```

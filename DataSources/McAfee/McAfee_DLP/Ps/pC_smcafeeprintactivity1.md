@@ -19,6 +19,7 @@ Name = s-mcafee-print-activity-1
      """\sdestination="{0,20}({printer_name}[^"]{1,2000})""",
      """\sUsername_NTLM="{0,20}(({domain}[^\\]{1,2000})\\*)?({user}[^"]{1,2000})"""
   ]
-}
+
+
 }
 ```

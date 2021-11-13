@@ -23,6 +23,7 @@ Name = cef-mimecast-email-alert
     """"{1,20}scanResult"{1,20}:"{1,20}(clean|({failure_reason}[^"]{1,2000}))"""
     ]
     DupFields = ["user_email->recipient","user_email->email_user"]
-}
+
+
 }
 ```

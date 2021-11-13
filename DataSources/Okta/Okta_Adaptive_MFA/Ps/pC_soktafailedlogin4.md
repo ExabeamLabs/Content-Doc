@@ -27,6 +27,7 @@ Name = s-okta-failed-login-4
       """"targets"":\s{0,100}\[\{[^\{\}]{0,2000}?""objectType"":\s{0,100}""User""[^\{\}]{0,2000}?""displayName"":\s{0,100}""({user_lastname}[^,"]{1,2000}),\s{0,100}({user_firstname}[^,"\}\]]{1,2000})"""",
     ]
     DupFields = [ "additional_info->failure_reason" ]
-}
+
+
 }
 ```

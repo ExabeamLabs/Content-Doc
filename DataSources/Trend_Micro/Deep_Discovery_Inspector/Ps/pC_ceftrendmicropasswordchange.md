@@ -16,6 +16,7 @@ Name = cef-trendmicro-password-change
     """\Woutcome=({outcome}.+?)\s{1,100}(\w+=|$)""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]{1,2000})""",
   ]
-}
+
+
 }
 ```

@@ -22,6 +22,7 @@ Name = juniper-security-alert
       """\surl="({additional_info}[^"]{1,2000})""",
       """\sname="({alert_name}[^"]{1,2000})""",
     ]
-}
+
+
 }
 ```

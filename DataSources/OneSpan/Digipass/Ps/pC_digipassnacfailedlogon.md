@@ -4,7 +4,7 @@
 Name = digipass-nac-failed-logon
   DataType = "nac-failed-logon"
   Conditions = [ """, Authentication, """, """"User authentication failed."""", """ Input Details ["""", """ Output Details ["""", """ Back-End Authentication [""", """Client Type ["RADIUS Client"]"""    ]   
-}
+
 digipass-events  = {
     Vendor = OneSpan
     Product = Digipass
@@ -23,5 +23,6 @@ digipass-events  = {
       """Error Message:\s{1,100}'({failure_reason}[^']{1,2000})""",
       """Policy ID\s{1,100}\["({auth_method}[^"]{1,2000})"""",
       """Protocol ID\s:\s{0,100}({protocol}[^},]{1,2000})"""
-    ]}
+    
+}
 ```

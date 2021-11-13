@@ -15,6 +15,7 @@ Name = kiteworks-password-change-1
     """Activity Type:\s({event_name}reset_password)""",
     """Activity:\s({additional_info}Reset password)""",
   ]
-}
+
+
 }
 ```

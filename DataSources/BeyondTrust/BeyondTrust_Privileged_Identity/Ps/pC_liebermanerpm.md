@@ -22,6 +22,7 @@ Name = lieberman-erpm
     """sEventType=\\"({log_type}[^"]{1,2000})\\""""
   ]
   DupFields = ["account->object"]
-}
+
+
 }
 ```

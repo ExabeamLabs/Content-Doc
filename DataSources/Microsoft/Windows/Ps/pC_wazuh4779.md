@@ -12,7 +12,7 @@ Name = wazuh-4779
     """Service Name:\s{0,100}({dest_host}.+?)\s{0,100}Service ID""",
     """Client Address:\s{0,100}(::[\w]{1,2000}:)?({src_ip}[a-fA-F:\d.]{1,2000})""",  
   ]
-}
+
 wazuh-windows-template = {
     Vendor = Microsoft
     Product = Windows
@@ -32,5 +32,6 @@ wazuh-windows-template = {
       """"data.data":"({data}[^"]{1,2000})"""
       """"rule.description":"({description}[^"]{1,2000})"""
       """"decoder.name":"({decoder_name}[^"]{1,2000})"""
-    ]}
+    
+}
 ```

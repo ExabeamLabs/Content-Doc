@@ -23,6 +23,7 @@ Name = watchguard-web-activity
     """\ssrc_user="({user_email}[^"]{1,2000})"""",
   ]
   DupFields = [ "user_email->user" ]
-}
+
+
 }
 ```

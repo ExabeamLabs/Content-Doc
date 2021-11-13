@@ -19,6 +19,7 @@ Name = adfs-500-auth-successful
     """\s({user_email}[^@\s]+@[^\.]{1,2000}\.[^\s]{1,200})\s{1,20}\d{1,2000}""",
     """({outcome}Success Audit)"""
   ]
-}
+
+
 }
 ```

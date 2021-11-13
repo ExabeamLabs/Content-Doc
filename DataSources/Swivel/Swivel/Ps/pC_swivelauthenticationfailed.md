@@ -16,6 +16,7 @@ Name = swivel-authentication-failed
     """INFO\s{0,100}(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).+?({outcome}failed)[^"]{1,2000})""",
     """error:\s({failure_reason}.+?)\s{0,100}$""",
 	]
-}
+
+
 }
 ```

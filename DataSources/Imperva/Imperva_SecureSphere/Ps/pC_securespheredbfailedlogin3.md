@@ -26,6 +26,7 @@ Name = securesphere-db-failed-login-3
     """errorValue="({reason}[^"]{1,2000})\.?""""
   ]
   DupFields = [ "db_user->account" ]
-}
+
+
 }
 ```

@@ -22,6 +22,7 @@ Name = thycotic-app-activity
     """Action: \[({activity}[^\]]{1,2000})\]""",
     """\sfileType=({additional_info}[^=]{1,2000}?)\s\w+="""
   ]
-}
+
+
 }
 ```

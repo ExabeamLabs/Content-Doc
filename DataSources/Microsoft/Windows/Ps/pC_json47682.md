@@ -12,7 +12,7 @@ Name = json-4768-2
     """TargetDomainName\\?"{1,20}:\\?"(?:-|({domain}[^\s\\]{1,2000}?))\\?"""",
     """TargetSid\\?"{1,20}:\\?"({user_sid}[^\\]{1,2000})\\?""""
   ]
-}
+
 json-windows-events-2 = {
   Vendor = Microsoft
   Product = Windows
@@ -32,5 +32,6 @@ json-windows-events-2 = {
     """ProcessId\\?"{1,20}:\\?"{1,20}({process_id}[^:\\]{1,2000}?)\\?"""",
     """LogonProcessName\\?"{1,20}:\\?"{1,20}({auth_process}[^\s\\]{1,2000})\s{0,100}\\?"""",
     """AuthenticationPackageName\\?"{1,20}:\\?"{1,20}({auth_package}[^\s\\]{1,2000})\\?""""
-  ]}
+  
+}
 ```

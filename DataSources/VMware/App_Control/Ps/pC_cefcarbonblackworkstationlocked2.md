@@ -17,6 +17,7 @@ Name = cef-carbonblack-workstation-locked-2
     """\Wduser=(({domain}[^\\]{1,2000})\\+)?({user}[^\\\s]{1,2000})""",
     """\WEvent\[({event_code}\d{1,100})\]\s{0,100}Type\[Session"""
   ]
-}
+
+
 }
 ```

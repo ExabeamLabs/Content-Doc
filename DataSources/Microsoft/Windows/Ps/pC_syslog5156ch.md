@@ -24,6 +24,7 @@ Name = syslog-5156-ch
       """方向:\s{0,100}({direction}輸入|輸出)"""
     ]
     DupFields = ["directory->process_directory"]
-  }
+  
+
 }
 ```

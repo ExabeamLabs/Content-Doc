@@ -26,6 +26,7 @@ Name = code42-file-operations-2
     """"sha256":\s"({sha256_sum}[^"]{1,2000})""",
     """"userUid":\s"({user_uid}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

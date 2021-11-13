@@ -41,6 +41,7 @@ Name = raw-sysmon-process-network
     """<EventData>.*?<Data Name ='Initiated'>false</Data>.*?<Data Name ='SourcePort'>({dest_port}\d{1,100})"""
   ]
   DupFields = ["directory->process_directory"]
-}
+
+
 }
 ```

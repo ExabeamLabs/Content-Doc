@@ -28,6 +28,7 @@ Name = s-nac-logon-2
     """dvc=({dest_ip}[A-Fa-f:\d.]{1,2000})\s""" 
   ]
   DupFields = ["dest_host->auth_server"]
-}
+
+
 }
 ```

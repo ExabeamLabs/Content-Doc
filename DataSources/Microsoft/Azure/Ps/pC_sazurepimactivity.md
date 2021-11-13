@@ -22,6 +22,7 @@ Name = s-azure-pim-activity
     """Microsoft.Authorization/policyDefinitions/({policy}[^"\/\\]{1,2000})""",
     """"result": "({outcome}[^"]{1,2000})", "resultReason""""
  ]
-}
+
+
 }
 ```

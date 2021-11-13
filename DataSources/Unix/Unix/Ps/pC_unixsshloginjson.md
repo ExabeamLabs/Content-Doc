@@ -10,7 +10,7 @@ Name = unix-ssh-login-json
     """from ({src_ip}[a-fA-F\d.:]{1,2000})""",
     """\s{1,100}from\s{1,100}(::[\w]{1,2000}:)?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
-}
+
 unix-activity-json = {
     Vendor = Unix
     Lms = Direct
@@ -20,5 +20,6 @@ unix-activity-json = {
       """"ident":"({event_code}[^"]{1,2000})""",
       """"pid":"({pid}\d{1,100})""",
       """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
-    ]}
+    
+}
 ```

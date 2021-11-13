@@ -19,6 +19,7 @@ Name = cef-moveit-app-login
     """({app}MoveIt)"""
   ]
    DupFields=["account_id->user"]
-}
+
+
 }
 ```

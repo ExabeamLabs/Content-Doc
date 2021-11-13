@@ -21,6 +21,7 @@ Name = mobileiron-security-alert
     """ cs1=({additional_info}.+?)\s{1,100}\w+=""",
     """ cs3=\{({src_host}.+?)\}\s{1,100}\w+=""",
   ]
-}
+
+
 }
 ```

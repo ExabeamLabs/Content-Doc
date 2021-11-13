@@ -10,6 +10,7 @@ Name = s-db-login
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """","\N","1"""", """","No"""" ]
   Fields = [
-    """([^,]{0,2000}
+    """([^,]{0,2000
+
 }
 ```

@@ -30,6 +30,7 @@ Name = cef-fortinet-web-activity
     """\Wdpt=({dest_port}.+?)\s{1,100}(\w+=|$)""",
     """\Wdhost=({web_domain}.+?)\s{1,100}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

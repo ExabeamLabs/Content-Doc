@@ -28,6 +28,7 @@ Name = cef-carbonblack-file-create
     """>({file_name}[^<"']{1,2000})<\/link><\/share>"{0,20}\s{0,100}was created by the application"""
   ]
   DupFields = [ "directory->process_directory" ]
-}
+
+
 }
 ```

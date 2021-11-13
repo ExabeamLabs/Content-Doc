@@ -7,7 +7,7 @@ Name = sophos-app-activity-failed-1
   Fields=${SophosParserTemplates.sophos-endpoint-events.Fields}[
     """SubType=({failure_reason}[^;]{1,2000})"""
   ]
-}
+
 sophos-endpoint-events = {
   Vendor = Sophos
   Product = Sophos Endpoint Protection
@@ -25,5 +25,6 @@ sophos-endpoint-events = {
      """ComputerIPAddress=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
      """exabeam_host=({host}[\w\-.]{1,2000})""",
      """ComputerDomain=({domain}[^;]{1,2000})""",
-   ]}
+   
+}
 ```

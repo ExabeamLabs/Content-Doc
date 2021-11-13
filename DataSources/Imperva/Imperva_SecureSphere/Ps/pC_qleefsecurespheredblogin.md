@@ -21,6 +21,7 @@ Name = q-leef-securesphere-db-login
     """Database=({database_name}[^|]{1,2000})""",
   ]
   DupFields = [ "src_ip->host" ]
-}
+
+
 }
 ```

@@ -13,6 +13,7 @@ Name = json-exchange-scanmail-alert
    """"hostname":"({src_host}[^"]{1,2000})""", 
    """"level":"({alert_severity}[^"]{1,2000})""", 
   ]
-}
+
+
 }
 ```

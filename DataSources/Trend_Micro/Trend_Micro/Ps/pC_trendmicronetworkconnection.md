@@ -20,6 +20,7 @@ Name = trendmicro-network-connection
     """\|in=({bytes}[^\|]{1,2000})""",
     """\|act=({activity}[^\|]{1,2000})"""
   ]
-}
+
+
 }
 ```

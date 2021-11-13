@@ -23,6 +23,7 @@ Name = egnyte-failed-app-login
     """cat=({category}[^=]{1,2000})\s\w+=""",
     """"event":"({event_name}[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

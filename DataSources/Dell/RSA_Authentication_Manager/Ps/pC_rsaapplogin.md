@@ -4,7 +4,7 @@
 Name = rsa-app-login
   DataType = "app-login"
   Conditions = [ """ SINGLEPOINT """, """ USER_PROTECTED_APP_AUTHN """ ]
-}
+
 rsa-app-login = {
   Vendor = Dell
   Product = RSA Authentication Manager
@@ -19,5 +19,6 @@ rsa-app-login = {
     """TYPE="({auth_method}[^"]{1,2000})""",
     """SESSION_ID="({session_id}[^"]{1,2000})""",
     """NOT_AUTHNED_REASON="({failure_reason}[^"]{1,2000})""",
-  ]}
+  
+}
 ```

@@ -30,6 +30,7 @@ Name = cef-mcafee-dlp-email-out
       """\sfilePath=(({file_path}[^\s]{1,2000}\\)?({file_name}[^\s]{1,2000}\.({file_ext}[^\s]{1,2000})))""",
     ]
     DupFields = [ "sender->user" ]
-  }
+  
+
 }
 ```

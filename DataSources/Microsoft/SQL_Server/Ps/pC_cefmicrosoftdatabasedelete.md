@@ -17,6 +17,7 @@ Name = cef-microsoft-database-delete
     """\Wcs1=({db_operation}\w+)""",
     """\WdeviceExternalId=(|({dest_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
   ]
-}
+
+
 }
 ```

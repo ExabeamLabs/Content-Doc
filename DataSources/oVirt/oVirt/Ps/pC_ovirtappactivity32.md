@@ -15,6 +15,7 @@ Name = ovirt-app-activity-32
     """EVENT_ID:.*? Disk ({object}[^\s"]{1,2000}).*? was successfully removed from domain ({resource}[^\s]{1,2000}) \(User ({user}[^\s\(\)]{1,2000})""",
     """({app}ovirt)"""
   ]
-}
+
+
 }
 ```

@@ -25,6 +25,7 @@ Name = cef-meraki-network-alert
     """\Wdproc=(|({process}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """destIp":"({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}):({dest_port}\d{1,100})""",
   ]
-}
+
+
 }
 ```

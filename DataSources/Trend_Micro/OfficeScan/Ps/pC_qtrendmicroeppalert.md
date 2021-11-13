@@ -18,6 +18,7 @@ Name = q-trendmicro-epp-alert
         """File:\s{1,100}({malware_url}.+?)\s{1,100}Date""",
         """User name:\s({user}[^\s]{1,2000})"""
        ]
-}
+
+
 }
 ```

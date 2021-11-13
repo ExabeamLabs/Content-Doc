@@ -22,6 +22,7 @@ Name = checkpoint-vpn-logout
     """\W(user|src_user_name|dst_user_name):"{1,20}.+?\(({user}[^)]{1,2000})\)"""
   ]
   DupFields = [ "action->event_name" ]
-}
+
+
 }
 ```

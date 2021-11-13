@@ -9,7 +9,7 @@ Name = s-sailpointsiq-ad-account-creation
     """objectcn\s:\s({account_name}[^|]{1,2000})\s\|"""
   ]
   DupFields = [ "host->dest_host", "domain->account_used_domain", "user->account" ]
-}
+
 s-sailpointsiqad-activity = {
   Vendor = Sailpoint
   Product = SecurityIQ
@@ -21,5 +21,6 @@ s-sailpointsiqad-activity = {
     """userfullname\s:\s({user_sid}(?=[^\\]{1,2000}\\)({domain}[^\\]{1,2000})\\({user}.+?)|(?:.+?))\s\|""",
     """actiontype\s:\s({event_name}[^|]{1,2000})\s\|""",
     """originatingserver\s:\s({host}[^|]{1,2000})\s\|"""
-  ]}
+  
+}
 ```

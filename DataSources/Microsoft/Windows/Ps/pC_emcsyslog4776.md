@@ -17,6 +17,7 @@ Name = emc-syslog-4776
     """Logon (?:a|A)ccount:\s{1,100}({user}[^@]{1,2000}?)(?:@({domain}[^\s.]{1,2000})[^\s]{0,2000})?\s{1,100}Source Workstation""",
     """Error Code:\s{1,100}({result_code}[\w\-]{1,2000})""",
      ]
-}
+
+
 }
 ```

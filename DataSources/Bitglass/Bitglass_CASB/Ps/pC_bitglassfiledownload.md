@@ -22,6 +22,7 @@ Name = bitglass-file-download
     """device=({os}[^",]{1,2000})""",
     """useragent=({user_agent}[^",]{1,2000})"""
   ]
-}
+
+
 }
 ```

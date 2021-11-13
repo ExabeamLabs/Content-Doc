@@ -4,7 +4,7 @@
 Name = q-duo-app-activity-2
   Product = Duo Access Security
   Conditions = [ """action=user_create;""", """object=""", """timestamp=""" ]
-}
+
 q-duo-app-activity = {
   Vendor = Cisco
   Lms = QRadar
@@ -21,5 +21,6 @@ q-duo-app-activity = {
     """"ip_address"{1,20}:\s{0,100}"{1,20}({src_ip}[a-fA-F\d.:]{1,2000})"""",
     """"primary_auth_method"{1,20}:\s{0,100}"{1,2}({auth_method}[^"]{1,2000}?)"{1,20},""",
     """"factor"{1,20}:\s{0,100}"{1,2}({action}[^"]{1,2000}?)"{1,20},""",
-  ]}
+  
+}
 ```

@@ -28,6 +28,7 @@ Name = ms-azure-signin-app-login
         """"{1,20}location"{1,20}:(\{"{1,20}geoCoordinates"{1,20}:\{\}\}|({additional_info}\{.*?\}))"""
         """"{1,20}result"{1,20}:"{1,20}({outcome}[^"]{1,2000})"{1,20}""",
 	]
-}
+
+
 }
 ```

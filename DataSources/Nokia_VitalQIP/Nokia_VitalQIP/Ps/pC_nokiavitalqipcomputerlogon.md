@@ -4,7 +4,7 @@
 Name = nokia-vitalqip-computer-logon
   DataType = "dhcp"
   Conditions = [ """ Lucent_DHCP_Service""", """]: DHCP_GrantLease: """ ]
-}
+
 nokia-vitalqip-logon-events = {
     Vendor = Nokia VitalQIP
     Product = Nokia VitalQIP
@@ -17,5 +17,6 @@ nokia-vitalqip-logon-events = {
       """IP=({dest_ip}[A-Fa-f\d:.]{1,2000})""",
       """MAC=({dest_mac}\S{1,2000})""",
       """Domain=({domain}[^\s]{1,2000})""",
-    ]}
+    
+}
 ```

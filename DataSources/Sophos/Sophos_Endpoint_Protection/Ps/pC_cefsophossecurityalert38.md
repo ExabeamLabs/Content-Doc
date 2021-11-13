@@ -4,7 +4,7 @@
 Name = cef-sophos-security-alert-38
   DataType = "security-alert"
   Conditions = [ """|sophos|sophos central|""", """|Event::Endpoint::Application::Detected|""", """|Controlled application detected:""", """group=APPLICATION_CONTROL""" ]
-}
+
 cef-sophos-dlp-alert = {
   Vendor = Sophos
   Product = Sophos Endpoint Protection
@@ -22,5 +22,6 @@ cef-sophos-dlp-alert = {
     """\Wdhost=({src_host}[\w\-.]{1,2000})\s{1,100}(\w+=|$)""",
     """\Wsuser=((({dest_host}[^\s\\]{1,2000})\\+)({user}[^\s\\]{1,2000})|(n\/a|({user_fullname}[^\\]{1,2000}?)))\s{1,100}(\w+=|$)""",
     """\Wid=({alert_id}[^\s]{1,2000})""",
-  ]}
+  
+}
 ```

@@ -24,6 +24,7 @@ Name = s-mcafee-epo-dlp-alert
     """\Wprocess="{0,20}({process}({directory}(?:(\w+:)?[^:"]{1,2000})?[\\\/])?({process_name}[^\\"]{1,2000}))""",
   ]
   DupFields = [ "directory->process_directory" ]
-}
+
+
 }
 ```

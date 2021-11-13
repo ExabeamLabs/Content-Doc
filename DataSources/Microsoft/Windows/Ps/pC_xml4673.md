@@ -23,6 +23,7 @@ Name = xml-4673
       """<Data Name(\\)?='SubjectLogonId'>({logon_id}[^<>\s=]{1,2000})"""
     ]
     DupFields = ["host->dest_host","directory->process_directory"]
-  }
+  
+
 }
 ```

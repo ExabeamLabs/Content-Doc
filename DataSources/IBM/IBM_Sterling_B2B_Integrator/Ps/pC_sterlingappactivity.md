@@ -4,7 +4,7 @@
 Name = sterling-app-activity
   DataType = "app-activity"
   Conditions = [ """,Edit: Add Permission,""", """sterling"""]
-}
+
 sterling-integrator {
     Vendor = IBM
     Product = IBM Sterling B2B Integrator
@@ -18,5 +18,6 @@ sterling-integrator {
       """sterling(?:\s-){3}\s{1,100}(?:[^,]{1,2000},){3}({action}[^,]{1,2000})""",
       """sterling(?:\s-){3}\s{1,100}(?:[^,]{1,2000},){4}({description}[^,]{1,2000})""",
       """sterling(?:\s-){3}\s{1,100}(?:[^,]{1,2000},){5}({user_id}[^,]{1,2000})""",
-    ]}
+    
+}
 ```

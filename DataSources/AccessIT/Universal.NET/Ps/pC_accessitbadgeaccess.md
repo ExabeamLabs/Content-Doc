@@ -17,6 +17,7 @@ Name = accessit-badge-access
     """"eventlocation":"({location_door}[^"]{1,2000})""",
     """"eventdescription":"({outcome}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

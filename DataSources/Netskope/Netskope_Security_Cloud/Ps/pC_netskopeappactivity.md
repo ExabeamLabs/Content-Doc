@@ -28,6 +28,7 @@ Name = netskope-app-activity
     """"dst_location":\s{0,100}"(N/A|({domain}[^"]{1,2000}))""",
     """"app":\s{0,100}"({app}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

@@ -21,6 +21,7 @@ Name = n-forwarded-cef-4688
       """nitroSource_Logon_ID=({logon_id}.+?)(\s|0\|)"""
     ]
     DupFields=[ "host->dest_host","directory->process_directory" ]
-  }
+  
+
 }
 ```

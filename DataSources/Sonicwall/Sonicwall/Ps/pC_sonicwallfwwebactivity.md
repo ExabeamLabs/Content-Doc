@@ -9,7 +9,7 @@ Name = sonicwall-fw-web-activity
     """Category="({category}[^"]{1,2000})""",
     """dstname=(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|({web_domain}[^"\/\s]{1,2000}))""",
   ]
-}
+
 sonicwall-firewall = {
   Vendor = Sonicwall
   Product = Sonicwall
@@ -39,5 +39,6 @@ sonicwall-firewall = {
     """\srule="({rule}[^"]{1,2000})""",
     """\sfw_action="(NA|({action}[^"]{1,2000}))"""
   ]
-  DupFields = [ "message_id->alert_type" ]}
+  DupFields = [ "message_id->alert_type" 
+}
 ```

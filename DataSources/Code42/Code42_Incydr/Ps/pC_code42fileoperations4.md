@@ -34,6 +34,7 @@ Name = code42-file-operations-4
     """"actor"{1,20}:"{1,20}(({user_email}[^"@]{1,2000}@[^"@]{1,2000})|({user}[^"]{1,2000}))""",
   ]
   DupFields = ["file_path->file_parent", "dest_host->device_name"]
-}
+
+
 }
 ```

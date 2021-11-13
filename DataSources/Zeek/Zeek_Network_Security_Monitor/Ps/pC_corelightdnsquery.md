@@ -21,6 +21,7 @@ Name = corelight-dns-query
     """"query":"({query}[^"]{1,2000})"""",
     """"qtype_name":"({query_type}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

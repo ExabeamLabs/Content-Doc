@@ -16,6 +16,7 @@ Name = snare-517
     """({event_name}The audit log was cleared)""",
     """\s{1,100}Client User Name:\s{1,100}({user}.+?)\s{1,100}Client Domain""",
     """\s{1,100}Client Domain:\s{1,100}({domain}[^\s]{1,2000})""",
-    """\s{1,100}Client Logon ID:\s{1,100}\([^,]{1,2000}
+    """\s{1,100}Client Logon ID:\s{1,100}\([^,]{1,2000
+
 }
 ```

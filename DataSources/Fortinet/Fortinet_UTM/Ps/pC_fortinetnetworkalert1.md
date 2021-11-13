@@ -23,6 +23,7 @@ Name = fortinet-network-alert-1
     """\Wmsg="({additional_info}[^"]{1,2000})"""",
     """\Waction="({action}[^"]{1,2000})"""",
   ]
-}
+
+
 }
 ```

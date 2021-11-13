@@ -34,6 +34,7 @@ Name = cef-sophos-web-activity
     """\W(fname|file_name)="?(|({file_name}[^"]{1,2000}?))"?\s{1,100}(\w+=|$)""",
     """\Wcontenttype="({mime}[^"]{1,2000})""", 
   ]
-}
+
+
 }
 ```

@@ -20,6 +20,7 @@ Name = xml-104
     """<Level>({alert_severity}[^<]{1,2000})"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

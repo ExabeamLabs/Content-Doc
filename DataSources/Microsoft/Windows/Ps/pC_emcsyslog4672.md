@@ -24,6 +24,7 @@ Name = emc-syslog-4672
     """\s{1,100}({tcb_privilege}SeTcbPrivilege)"""
   ]
   DupFields = [ "host->dest_ip" ]
-}
+
+
 }
 ```

@@ -24,6 +24,7 @@ Name = win-powershell-command
     """Details:.+?CommandInvocation.+?ParameterBinding.+?value=\\"(function\s)?({command_module}[^\s\\,"]{1,2000})""",
    ]
    DupFields = ["directory->process_directory"]
- }
+ 
+
 }
 ```

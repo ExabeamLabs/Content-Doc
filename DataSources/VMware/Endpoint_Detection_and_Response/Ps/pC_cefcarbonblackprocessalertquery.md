@@ -5,7 +5,7 @@ Name = cef-carbonblack-process-alert-query
   DataType = "process-alert"
   IsHVF = true
   Conditions = [ """reason=feed.query.""", """host=""" , """feed_id=""", """feed_name=""" ]
-}
+
 cef-carbonblack-process-alert-1 = {
   Vendor = VMware
   Product = Endpoint Detection and Response 
@@ -28,5 +28,6 @@ cef-carbonblack-process-alert-1 = {
   """ioc_value='({additional_info}[^']{1,2000})'""",
   """feed_id=({alert_id}\d{1,100})""", 
   ]
-  DupFields = ["host->dest_host"]}
+  DupFields = ["host->dest_host"
+}
 ```

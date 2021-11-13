@@ -20,6 +20,7 @@ Name = unix-as
     """session opened for user \S+ by ({user}[^\("=,]{1,2000})""",
   ]
   DupFields = [ "host->dest_host", "user_uid->user_id"]
-}
+
+
 }
 ```

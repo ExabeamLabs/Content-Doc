@@ -22,6 +22,7 @@ Name = s-xml-4723
     """<Data Name ='TargetDomainName'>({target_domain}[^<]{1,2000})</Data>"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

@@ -20,6 +20,7 @@ Name = googlecloud-iam-activity
      """"callerSuppliedUserAgent":"({user_agent}[^"]{1,2000})""",
      """"resource"[^=]{1,2000}?location":"({region}[^"]{1,2000})""",
      """"policyDelta"[^=]{1,2000}?"role":"roles\/({role}[^"\\\/]{1,2000})""",
-     """"status"[^=]{1,2000}?"code":\d{1,100}
+     """"status"[^=]{1,2000}?"code":\d{1,100
+
 }
 ```

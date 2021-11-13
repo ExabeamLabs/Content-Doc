@@ -18,7 +18,7 @@ Name = wazuh-4625
     """Sujet.+?Domaine du compte\\u00A0:\s{0,100}(?=\w)({caller_domain}[^:]{1,2000}?)\\s{0,100}ID d\\u2019ouverture de session\\u00A0:"""
     """\s{0,100}Sous-\\u00E9tat\\u00A0:\s{0,100}({result_code}.+?)\s{0,100}Informations sur le processus\\u00A0:"""
     ]
-}
+
 wazuh-windows-template = {
     Vendor = Microsoft
     Product = Windows
@@ -38,5 +38,6 @@ wazuh-windows-template = {
       """"data.data":"({data}[^"]{1,2000})"""
       """"rule.description":"({description}[^"]{1,2000})"""
       """"decoder.name":"({decoder_name}[^"]{1,2000})"""
-    ]}
+    
+}
 ```

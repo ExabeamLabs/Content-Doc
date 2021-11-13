@@ -17,6 +17,7 @@ Name = cef-salesforce-app-activity-11
     """Display\\=Deleted value .*? from ({object}.+?) picklist""",
     """({app}Sales Cloud)""",
   ]
-}
+
+
 }
 ```

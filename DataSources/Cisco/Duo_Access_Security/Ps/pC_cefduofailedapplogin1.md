@@ -18,6 +18,7 @@ Name = cef-duo-failed-app-login-1
     """\sdvc=({host}.+?)\s{1,100}(\w+=|$)""",
     """\sdvchost=({host}.+?)\s{1,100}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

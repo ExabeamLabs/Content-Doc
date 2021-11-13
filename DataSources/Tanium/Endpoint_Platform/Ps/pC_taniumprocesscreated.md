@@ -19,6 +19,7 @@ Name = tanium-process-created
       """\sParent-Process-Path="(-|<Unknown Process>|({parent_process}({parent_process_directory}[^"]{0,2000}?[\\\/]{1,2000})?({parent_process_name}[^"\\\/]{1,2000})))"""",
       """\sProcess-Path="(-|({process}({directory}[^"]{0,2000}?[\\\/]{1,2000})?({process_name}[^"\\\/]{1,2000})))"""",
     ]
-  }
+  
+
 }
 ```

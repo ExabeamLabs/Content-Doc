@@ -24,6 +24,7 @@ Name = unix-process-creation-failure
       """\stype=({activity_type}.+?)\s{1,100}(\w+=|$)"""
     ]
         DupFields=[ "host->dest_host", "process_directory->directory" ]
-  }
+  
+
 }
 ```

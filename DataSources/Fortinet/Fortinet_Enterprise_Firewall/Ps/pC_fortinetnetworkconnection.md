@@ -29,6 +29,7 @@ Name = fortinet-network-connection
     """\Wdstintfrole="{1,20}(undefined|({dest_interface_role}[^"]{1,2000}))"{1,20}"""
   ]
   DupFields = [ "action->outcome" ]
-}
+
+
 }
 ```

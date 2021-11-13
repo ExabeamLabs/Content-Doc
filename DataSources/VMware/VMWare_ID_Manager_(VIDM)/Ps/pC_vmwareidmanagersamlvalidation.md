@@ -4,7 +4,7 @@
 Name = vmware-id-manager-saml-validation
   DataType = "app-activity"
   Conditions = [ """"objectType""", """vidm""", """"organizationId""", """\"SAML_VALIDATION\""""]
-}
+
 vmware-id-manager = {
     Vendor = VMware
     Product = VMWare ID Manager (VIDM)
@@ -42,5 +42,6 @@ vmware-id-manager = {
       """"osFamily\\*":\s{0,100}\\*"({os_type}[^\\]{1,2000})\\*"""",
       """"machineName\\*":\s{0,100}\\*"({host}[^\\]{1,2000})\\*"""",
       """product=\\*"({app}[^\\"=:]{1,2000})\\*"""",
-    ]}
+    
+}
 ```

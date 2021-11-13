@@ -15,6 +15,7 @@ Name = juniper-nwc-vpn-end
     """src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s""",
     """with IP(v4 address)?\s{1,100}({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
-}
+
+
 }
 ```

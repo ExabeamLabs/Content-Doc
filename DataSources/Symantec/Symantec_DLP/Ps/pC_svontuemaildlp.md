@@ -30,6 +30,7 @@ Name = s-vontu-email-dlp
       """\|\sEP_Machine="({src_host}[^"]{1,2000})""",
       """\|\sEP_IP="({src_ip}[a-fA-F:\d.]{1,2000})"""
     ]
-  }
+  
+
 }
 ```

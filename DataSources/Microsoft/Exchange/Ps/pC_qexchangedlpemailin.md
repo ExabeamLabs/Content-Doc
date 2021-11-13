@@ -3,7 +3,7 @@
 {
 Name = q-exchange-dlp-email-in
   Conditions = [ """event-id=DELIVER""", """directionality=Incoming""" ]
-}
+
 q-exchange-dlp-email-in = {
   Vendor = Microsoft
   Product = Exchange
@@ -33,5 +33,6 @@ q-exchange-dlp-email-in = {
   DupFields = [
     "alert_name->alert_type",
     "user_email->orig_user" 
-  ]}
+  
+}
 ```

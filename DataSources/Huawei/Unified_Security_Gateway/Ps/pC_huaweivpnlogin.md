@@ -15,6 +15,7 @@ Name = huawei-vpn-login
      """\sname:(?!\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(({user_email}[^@;]{1,2000}@[^@;]{1,2000})|({user}[^;]{1,2000}));"""
   ]
   DupFields = ["user->account"]
-}
+
+
 }
 ```

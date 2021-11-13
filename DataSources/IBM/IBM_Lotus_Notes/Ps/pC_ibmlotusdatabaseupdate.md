@@ -13,6 +13,7 @@ Name = ibm-lotus-database-update
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """Updating .*? into database '({database_name}[^']{1,2000})"""
   ]
-}
+
+
 }
 ```

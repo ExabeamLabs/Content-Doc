@@ -20,6 +20,7 @@ Name = ad-audit-4779
     """EVENT_NUMBER\s{0,100}=\s{0,100}({event_code}\d{1,100})""",
     """LOGON_ID\s{0,100}=\s{0,100}({logon_id}[^\s]{1,2000})""",
   ]
-}
+
+
 }
 ```

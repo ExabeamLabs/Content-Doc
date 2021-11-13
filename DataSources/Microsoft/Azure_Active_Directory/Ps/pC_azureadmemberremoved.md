@@ -9,7 +9,7 @@ Name = azure-ad-member-removed
     """targetResources":.+?Group\.DisplayName.+?newValue":"\\*"({group_name}[^\\"]{1,2000})""",
     """targetResources":.+?id":"({account_id}[^",]{1,2000})"""
   ]
-}
+
 azure-ad-activity = {
    Vendor = Microsoft
    Product = Azure Active Directory
@@ -26,5 +26,6 @@ azure-ad-activity = {
       """category":"({category}[^",]{1,2000})"{0,20},correlationId"""",
       """"app":\{.*?displayName":"({app}[^",]{1,2000})""",
       """loggedByService":"({app}[^",]{1,2000})"""
-   ]}
+   
+}
 ```

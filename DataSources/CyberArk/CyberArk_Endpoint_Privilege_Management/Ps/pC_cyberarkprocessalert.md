@@ -22,6 +22,7 @@ Name = cyberark-process-alert
       """FilePath\s{1,100}:\s{0,100}({file_path}[^]]{1,2000}?)\s{1,100}\w+\s{1,100}:"""
     ]
     DupFields = ["host->dest_host","file_name->process_name","file_path->path"]
-  }
+  
+
 }
 ```

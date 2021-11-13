@@ -32,6 +32,7 @@ Name = firepower-network-alert-1
     """URLCategory:\s{0,100}({category}[^,]{1,2000})""",
     """\WURLReputation:\s{0,100}({reputation}[^,]{1,2000}?)(,|\s{0,100}$)""",
   ]
-}
+
+
 }
 ```

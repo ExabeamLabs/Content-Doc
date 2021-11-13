@@ -16,6 +16,7 @@ Name = aruba-nac-logon
       """SSID=(N\/A|({network}[^\s]{1,2000}))""",
       """\sauth server=({auth_server}[^\s]{1,2000})""",
    ]
-  }
+  
+
 }
 ```

@@ -27,6 +27,7 @@ Name = centrify-app-activity
     """src=({src_ip}[A-Fa-f\d:.]{1,2000})""",
     """cat=({event_name}[^\s]{1,2000})""",
         ]
-}
+
+
 }
 ```

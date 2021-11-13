@@ -3,7 +3,7 @@
 {
 Name = s-digitalguardian-dlp-alert-2
   Conditions = [ """ Policy=""" , """ Resolution_Status=""" ]
-}
+
 splunk-digitalguardian-dlp-alert = {
   Vendor = Digital Guardian
   Product = Digital Guardian Network DLP
@@ -39,5 +39,6 @@ splunk-digitalguardian-dlp-alert = {
       {EntityType="device", Name ="src_address", Fields=["src_host->host_name"]},
       {EntityType="device", Name ="dest_address", Fields=["dest_ip->ip_address"]},
       {EntityType="user", Name ="windows_id", Fields=["user->windows_id"]}
-    ]}
+    
+}
 ```

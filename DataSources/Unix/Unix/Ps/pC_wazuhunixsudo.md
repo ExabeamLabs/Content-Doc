@@ -4,7 +4,7 @@
 Name = wazuh-unix-sudo
   Product = Unix
   Conditions = [ """"decoder.parent":"sudo"""", """"type":"wazuh-alerts"""" ]
-}
+
 wazuh-unix-sudo-template {
     Vendor = Unix
     Lms = Direct
@@ -29,5 +29,6 @@ wazuh-unix-sudo-template {
       """"rule.level":({level}\d{1,100}),"""
       """"predecoder.hostname":"({host}[^"]{1,2000})""" 
     ]
-    DupFields = ["description->event_name", "dest_user->account"]}
+    DupFields = ["description->event_name", "dest_user->account"
+}
 ```

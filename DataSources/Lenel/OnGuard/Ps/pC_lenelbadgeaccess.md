@@ -20,6 +20,7 @@ Name = lenel-badge-access
     """\sSSNO:\s{0,100}(|NULL|({ssno}.+?))(\s{1,100}\w+:|\s{0,100}$)""",
   ]
     DupFields = [ "location_full->location_door" ]
-}
+
+
 }
 ```

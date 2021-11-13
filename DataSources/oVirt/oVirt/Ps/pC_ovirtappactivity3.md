@@ -15,6 +15,7 @@ Name = ovirt-app-activity-3
     """EVENT_ID:.*? VM ({object}[^\s"]{1,2000}) was started by ({user}[^\s\(\)]{1,2000}) \(Host: ({resource}[^\)]{1,2000})""",
     """({app}ovirt)"""
   ]
-}
+
+
 }
 ```

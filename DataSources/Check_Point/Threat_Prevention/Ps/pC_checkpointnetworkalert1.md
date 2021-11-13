@@ -32,6 +32,7 @@ Name = checkpoint-network-alert-1
 
   ]
   DupFields = [ "protection_name->alert_name", "protection_type->alert_type" ]
-}
+
+
 }
 ```

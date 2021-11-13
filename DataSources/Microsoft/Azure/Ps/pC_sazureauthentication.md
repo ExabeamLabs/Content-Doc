@@ -15,6 +15,7 @@ Name = s-azure-authentication
     """Access ({action}.+?) for user ({user_email}[^\s@]{1,2000}@[^\s@]{1,2000})""",
     """Azure MFA response:\s{0,100}({failure_reason}\w+)""",
   ]
-}
+
+
 }
 ```

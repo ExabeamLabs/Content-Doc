@@ -17,6 +17,7 @@ Name = cef-sophos-usb-insert
     """\Wsuser=((({dest_host}[^\s\\]{1,2000})\\+)({user}[^\s\\]{1,2000})|(n\/a|({user_fullname}[^\\]{1,2000}?)))\s{1,100}(\w+=|$)""",
     """\Wid=({device_id}[^\s]{1,2000})""",
   ]
-}
+
+
 }
 ```

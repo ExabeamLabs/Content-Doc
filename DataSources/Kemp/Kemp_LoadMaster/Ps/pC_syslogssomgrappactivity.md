@@ -17,6 +17,7 @@ Name = syslog-ssomgr-app-activity
     """\[user=({user}[^@]{1,2000}@[^@\]\s]{1,2000})\]""",
     """\sssomgr:\s{0,100}({activity}.+?)\s{0,100}\["""
   ]
-}
+
+
 }
 ```

@@ -21,6 +21,7 @@ Name = cef-mcafee-print-activity
         """(\s|\|)fsize=({bytes}.+?)\s{1,100}([\w\.-]{1,2000}=|$)""",
         """(\s|\|)({activity}Printing)""",
       ]
-    }
+    
+
 }
 ```

@@ -10,6 +10,7 @@ Name = l-pan-scan-alert
   Conditions = [ """,THREAT,scan,""" ]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
-    """THREAT,([^,]{0,2000}
+    """THREAT,([^,]{0,2000
+
 }
 ```

@@ -19,6 +19,7 @@ Name = googlecloud-storage-activity
     """callerSuppliedUserAgent":"({user_agent}[^"]{1,2000}?)\s{0,100}"""",
     """resource"[^\}]{1,2000}?location":"({region}[^"]{1,2000})""",
     """policyDelta"[^\}]{1,2000}?role":"roles\/({role}[^"\\\/]{1,2000})""",
-    """status.+?"code":\d{1,100}
+    """status.+?"code":\d{1,100
+
 }
 ```

@@ -14,6 +14,7 @@ Name = q-microsoft-print-activity
     """\sUser=({user}.+?)\s{1,100}\w+=""",
     """\sDomain=({domain}.+?)\s{1,100}\w+=""",
     """\sEventIDCode=({event_code}\d{1,100})""",
-    """Message=({activity_1}.*?\s{0,100}(?i)Document) \d{1,100}
+    """Message=({activity_1}.*?\s{0,100}(?i)Document) \d{1,100
+
 }
 ```

@@ -5,7 +5,7 @@ Name = cef-onapsis-app-login
   Product = Onapsis
   DataType = "app-login"
   Conditions = [ """CEF:""", """|Onapsis|OSP|""", """|All Successful Logins|""" ]
-}
+
 cef-onapsis-activity = {
     Vendor = Onapsis
     Lms = ArcSight
@@ -25,5 +25,6 @@ cef-onapsis-activity = {
       """\Wshost=(None|({src_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
       """\Wsuser=(None|({user}.+?))(\s{0,100}TAG:|\s{1,100}\w+=|\s{0,100}$)""",
       """\WTAG:\s{0,100}({tag}.+?)(\s{0,100}\w+=|\s{0,100}$)""",
-    ]}
+    
+}
 ```

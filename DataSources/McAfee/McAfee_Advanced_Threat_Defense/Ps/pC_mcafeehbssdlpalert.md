@@ -27,6 +27,7 @@ Name = mcafee-hbss-dlp-alert
     """"evidence_file_path":"(?:None|\w+:\\+([^\\"]{1,2000}\\+)+({file_name}[^"]{1,2000}))"""",
     """"evidence_file_path":"(?:None|({file_path}[^"]{1,2000}))"""",
   ]
-}
+
+
 }
 ```

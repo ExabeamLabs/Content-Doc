@@ -26,6 +26,7 @@ Name = cef-mcafee-epo-alert-solidifier
       """vendor_action="{0,20}(?:none|({action}[^"]{1,2000}))""",
       """AutoID="{0,20}({alert_id}[^"]{1,2000})""",      
     ]
-}
+
+
 }
 ```

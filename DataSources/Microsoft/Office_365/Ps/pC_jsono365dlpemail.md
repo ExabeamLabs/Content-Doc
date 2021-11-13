@@ -28,6 +28,7 @@ Name = json-o365-dlp-email
     """Category\s{1,100}\[({category}[^\]]{1,2000})\]"""
   ]
   DupFields = [ "alert_type->alert_name" ]
-}
+
+
 }
 ```

@@ -5,7 +5,7 @@ Name = exa-app-login-aa
   DataType = "app-login"
   Product = Exabeam Advanced Analytics
   Conditions = [ """"Exabeam Audit Event"""", """"event_type":"app-login"""", """"activity":"Log in"""", """"app":"Exabeam Advanced Analytics"""" ]
-}
+
 exa-events = {
   Vendor = Exabeam
   Product = Exabeam DL
@@ -19,5 +19,6 @@ exa-events = {
     """"activity":"({activity}[^"]{1,2000})""",
     """"additional_info":"({additional_info}.+?),?\s{0,100}"\}\}""",
     """"app":"({app}[^"]{1,2000})""",
-  ]}
+  
+}
 ```

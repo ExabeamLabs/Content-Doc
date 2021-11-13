@@ -10,6 +10,7 @@ Name = raw-unix-sudo
   Conditions = [ """sudo:""", """; USER""","""; COMMAND""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """({time}\w{3} \d{1,2}
+    """({time}\w{3} \d{1,2
+
 }
 ```

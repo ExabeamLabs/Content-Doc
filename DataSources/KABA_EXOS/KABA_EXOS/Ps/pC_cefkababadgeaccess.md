@@ -16,6 +16,7 @@ Name = cef-kaba-badge-access
     """\Wmsg=({location_door}.+?)\s{0,100}(\w+=|$)""",
     """\Wcs2=({badge_id}\d{1,100})"""
   ]
-}
+
+
 }
 ```

@@ -17,6 +17,7 @@ Name = axway-remote-logon
     """Username:\s{0,100}"{1,20}({user}[^"]{1,2000})""",
     """({auth_package}SSH)"""
   ]
-}
+
+
 }
 ```

@@ -8,7 +8,7 @@ Name = s-sonicwall-failed-vpn-login-2
   Fields = ${SonicwallParserTemplates.sonicwall-vpn-login.Fields} [
     """({outcome}Failed)"""
   ]
-}
+
 sonicwall-vpn-login = {
   Vendor = Sonicwall
   Lms = Splunk
@@ -30,5 +30,6 @@ sonicwall-vpn-login = {
     """\sbytesOut=({bytes_out}\d{1,100})""",
     """\sbytesTotal=({bytes}\d{1,100})"""
   ]
-  DupFields = ["user->account"]}
+  DupFields = ["user->account"
+}
 ```

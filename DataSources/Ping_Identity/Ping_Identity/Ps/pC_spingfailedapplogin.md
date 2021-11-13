@@ -4,7 +4,7 @@
 Name = s-ping-failed-app-login
   DataType = "failed-app-login"
   Conditions = [ """"EventType": "SSO"""", """"Status": "failure"""" ]
-}
+
 s-ping-events = {
   Vendor = Ping Identity
   Product = Ping Identity
@@ -21,5 +21,6 @@ s-ping-events = {
     """"PingHost":\s{0,100}"({host}[^"]{1,2000})""",
     """"EventType":\s{0,100}"({activity}[^"]{1,2000})""",
     """"DescriptionFail":\s{0,100}"({failure_reason}[^"]{1,2000})""",
-  ]}
+  
+}
 ```

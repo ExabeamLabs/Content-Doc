@@ -13,7 +13,7 @@ Name = wazuh-4738
     """Target\sAccount.+?Account Domain:\s{0,100}({target_domain}.+?)\s""",
     """Changed Attributes:\s{0,100}(|({attribute}.+?))\s{1,100}SAM Account Name"""
   ]
-}
+
 wazuh-windows-template = {
     Vendor = Microsoft
     Product = Windows
@@ -33,5 +33,6 @@ wazuh-windows-template = {
       """"data.data":"({data}[^"]{1,2000})"""
       """"rule.description":"({description}[^"]{1,2000})"""
       """"decoder.name":"({decoder_name}[^"]{1,2000})"""
-    ]}
+    
+}
 ```

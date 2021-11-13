@@ -18,6 +18,7 @@ Name = s-ssh-login-failed
     """({event_code}ssh)""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

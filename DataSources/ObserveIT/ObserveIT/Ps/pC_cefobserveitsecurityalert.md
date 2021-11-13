@@ -29,6 +29,7 @@ Name = cef-observeit-security-alert
     """CEF:([^\|]{0,2000}\|){5}({alert_name}[^\|]{1,2000})\|({alert_severity}[^\|]{1,2000})""",
   ]
   DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

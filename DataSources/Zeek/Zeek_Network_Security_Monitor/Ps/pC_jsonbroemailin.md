@@ -19,6 +19,7 @@ Name = json-bro-email-in
     """"meta_ts"{1,20}:({time}\d{1,100})""",
   ]
   DupFields = [ "sender->external_address" ]
-}
+
+
 }
 ```

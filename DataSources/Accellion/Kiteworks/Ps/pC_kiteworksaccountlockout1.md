@@ -15,6 +15,7 @@ Name = kiteworks-account-lockout-1
     """Activity Type:\s({event_name}user_login_lockout)""",
     """Activity:\s({additional_info}User account locked)""",
   ]
-}
+
+
 }
 ```

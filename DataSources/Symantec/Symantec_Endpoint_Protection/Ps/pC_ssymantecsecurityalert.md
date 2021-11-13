@@ -8,7 +8,7 @@ Name = s-symantec-security-alert
     """orig_host=({src_host}.*?),\s\w+=""",
     """orig_source="({process}[^"]{1,2000}\\({process_name}[^"]{1,2000}))"""",
   ]
-}
+
 s-symantec-alert = {
     Vendor = Symantec
     Product = Symantec Endpoint Protection
@@ -26,5 +26,6 @@ s-symantec-alert = {
       """\sseverity=({alert_severity}[^,]{1,2000}?)\s{0,100}(,|$)""",
       """\sEvent_Description="({additional_info}[^"]{1,2000})""",
       """\sdest_port=({dest_port}\d{1,100})""", 
-    ]}
+    
+}
 ```

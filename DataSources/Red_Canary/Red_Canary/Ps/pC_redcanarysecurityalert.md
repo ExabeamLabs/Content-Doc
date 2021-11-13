@@ -23,6 +23,7 @@ Name = redcanary-security-alert
     """u'hostname':\s{0,100}u'({src_host}[^']{1,2000})""",
     """u'summary':\s{0,100}u'({additional_info}[^']{1,2000})""",
   ]
-}
+
+
 }
 ```

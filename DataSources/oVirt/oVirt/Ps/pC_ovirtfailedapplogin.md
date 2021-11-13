@@ -14,6 +14,7 @@ Name = ovirt-failed-app-login
     """USER_VDC_LOGIN_FAILED.+? User ({user}[^\s]{1,2000}) connecting from '({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """({app}ovirt)"""
   ]
-}
+
+
 }
 ```

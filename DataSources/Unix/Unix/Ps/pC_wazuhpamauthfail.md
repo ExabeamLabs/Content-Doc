@@ -12,6 +12,7 @@ Name = wazuh-pam-auth-fail
     """"data.uid":"({user_uid}[^"]{1,2000})"""  
 ]
   DupFields=["host->dest_host", "description->event_name"]
-}
+
+
 }
 ```

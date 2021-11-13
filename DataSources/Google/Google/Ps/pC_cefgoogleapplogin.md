@@ -7,7 +7,7 @@ Name = cef-google-app-login
   Fields = ${GoogleParserTemplates.cef-google-app-activity.Fields} [
     """"actor":\{"email":"({object}[^"]{1,2000})""""
   ]
-}
+
 cef-google-app-activity = {
   Vendor = Google
   Product = Google
@@ -36,5 +36,6 @@ cef-google-app-activity = {
     """"name":"status","value":"({object}[^"]{1,2000})"""",
     """"name":"client_id","value":"({object}[^"]{1,2000})"""",
     """"id":\{({additional_info}[^\}]{1,2000})\}"""
-  ]}
+  
+}
 ```

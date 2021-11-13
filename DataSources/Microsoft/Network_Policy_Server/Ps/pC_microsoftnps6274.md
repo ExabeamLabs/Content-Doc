@@ -23,6 +23,7 @@ Name = microsoft-nps-6274
     """'NASIPv4Address'>({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """'Reason'>({reason}[^<]{1,2000})"""
   ]
-}
+
+
 }
 ```

@@ -21,6 +21,7 @@ Name = q-microsoft-4719
     """\s{1,100}Computer=({host}[\w.\-]{1,2000})"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

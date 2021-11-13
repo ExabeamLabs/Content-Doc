@@ -15,6 +15,7 @@ Name = cisco-authentication-successful
 	"""From-({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
 	"""({outcome}Success)"""
   ]
-}
+
+
 }
 ```

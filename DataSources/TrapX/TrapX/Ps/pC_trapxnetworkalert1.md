@@ -4,7 +4,7 @@
 Name = trapx-network-alert-1
   DataType = "network-alert"
   Conditions = [ """|TrapX|TSOC|""", """|TOR Node Access|""","""proto=""" ]
-}
+
 trapx-alert = {
     Vendor = TrapX
     Product = TrapX
@@ -24,5 +24,6 @@ trapx-alert = {
       """dpt=({dest_port}\d{1,100})""",
       """deviceNtDomain=({domain}[^=]{1,200})\s\w+=""",
       """proto=({protocol}[^=]{1,2000})\s\w+="""
-    ]}
+    
+}
 ```

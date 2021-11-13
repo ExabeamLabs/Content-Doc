@@ -24,6 +24,7 @@ Name = cef-gtb-dlp-alert
     """CEF[^\|]{1,2000}?\|GTB\|GTBInspector\|[^\|]{1,2000}?\|({alert_type}[^\|]{1,2000}?)\|({alert_name}[^\|]{1,2000})\|({alert_severity}\d{1,100})"""
     """\sduser=([\s"]{1,2000}suser=|[\s"]{0,2000}({target}.*?)[\s"]{0,2000}suser=)"""
   ]
-}
+
+
 }
 ```

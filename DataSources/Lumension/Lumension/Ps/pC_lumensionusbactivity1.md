@@ -21,6 +21,7 @@ Name = lumension-usb-activity-1
     """sourceServiceName =({user_sid}[^\s]{1,2000})""",
     """suser=({user}[^\s]{1,2000})""",
   ]
-}
+
+
 }
 ```

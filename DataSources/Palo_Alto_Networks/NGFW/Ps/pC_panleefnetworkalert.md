@@ -18,6 +18,7 @@ Name = pan-leef-network-alert
     """sequence=({alert_id}\d{1,100})""",
     """msg="(C|c)lient\s'({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})'""",
   ]
-}
+
+
 }
 ```

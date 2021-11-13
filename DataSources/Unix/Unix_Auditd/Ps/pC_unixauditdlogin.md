@@ -24,6 +24,7 @@ Name = unix-auditd-login
     """hostname="{0,20}(\?|({host}[^\s]{1,2000}?))\s{0,100}(\w+=|")"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

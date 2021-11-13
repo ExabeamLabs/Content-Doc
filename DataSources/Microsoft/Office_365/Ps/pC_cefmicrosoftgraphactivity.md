@@ -7,7 +7,7 @@ Name = cef-microsoft-graph-activity
   Fields = ${MSParserTemplates.cef-o365-app-login.Fields} [
     """"{1,20}status"{1,20}.+?failureReason":"{1,20}({failure_reason}[^"]{1,2000})""",
   ]
-}
+
 cef-o365-app-login = {
    Vendor = Microsoft
    Product = Office 365
@@ -36,5 +36,6 @@ cef-o365-app-login = {
      """"{1,20}src-endpoint"{1,20}:"{1,20}({endpoint}[^"]{1,2000})""",
      """"{1,20}src-account-name"{1,20}:"{1,20}({account}[^"]{1,2000})""",
      """"{1,20}src-account-name"{1,20}:"{1,20}({account_name}[^"]{1,2000})""",
-   ]}
+   
+}
 ```

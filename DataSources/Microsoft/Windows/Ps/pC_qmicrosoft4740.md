@@ -16,6 +16,7 @@ Name = q-microsoft-4740
     """Message=({user}[^\s]{1,2000})\s({src_host}[^\s]{1,2000})\s({user_sid}[^\s]{1,2000})\s(.+?)\s({caller_user}[^\s]{1,2000})\s({caller_domain}[^\s]{1,2000})\s({logon_id}[^\s]{1,2000})\s{0,100}$"""
   ]
   DupFields = ["caller_domain->domain"]
-}
+
+
 }
 ```

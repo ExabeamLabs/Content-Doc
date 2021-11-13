@@ -20,6 +20,7 @@ Name = skyhigh-dlp-alert
             """,response=({outcome}[^,]{1,2000})""",
            ]
     DupFields = [ "alert_name->alert_type" ]
-}
+
+
 }
 ```

@@ -19,6 +19,7 @@ Name = s-salesforce-app-login
     """\|Application="({app}[^"]{1,2000})"""",
   ]
   DupFields = [ "outcome->failure_reason" ]
-}
+
+
 }
 ```

@@ -32,6 +32,7 @@ Name = s-symantec-web-activity
     """\Wreferer_url:\s{0,100}({referrer}[^,\}]{1,2000})""",
     """\Wmalicious:\s{0,100}({malicious}[^,]{1,2000})""",
   ]
-}
+
+
 }
 ```

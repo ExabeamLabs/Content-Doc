@@ -7,6 +7,7 @@ Name = s-lanscope-file-operations
   IsHVF = true
   Conditions = [ """"リアルタイムイベントログ"""" ]
   DupFields = [ "activity->accesses", "app->activity" ]
-}
+
+
 }
 ```

@@ -4,7 +4,7 @@
 Name = s-common-ftp-app-activity-4
   Product = FTP
   Conditions = [ """]size """ ]
-}
+
 s-common-ftp-app-activity = {
     Vendor = FTP
     Lms = Splunk
@@ -21,5 +21,6 @@ s-common-ftp-app-activity = {
       """\[\d{1,100}\]\w+\s{1,100}(\S+\s{1,100}){2}({outcome}\d{1,100})""",
       """\[\d{1,100}\]\w+\s{1,100}(\S+\s{1,100}){4}({bytes}\d{1,100})"""
     ]
-    DupFields = [ "host->dest_host" ]}
+    DupFields = [ "host->dest_host" 
+}
 ```

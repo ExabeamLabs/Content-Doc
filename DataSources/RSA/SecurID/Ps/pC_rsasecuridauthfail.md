@@ -17,6 +17,7 @@ Name = rsa-securid-auth-fail
     """STATUS="({outcome}[^"]{1,2000})"""
     ]
   DupFields = ["additional_info->failure_reason"]
-}
+
+
 }
 ```

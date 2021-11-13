@@ -20,6 +20,7 @@ Name = s-sailpointsiq-sponline-file-operations
     """actiontype\s:\sFile\s({activity}[^\s]{1,2000})(\s|\sExtended\s)\|"""
   ]
   DupFields = [ "host->dest_ip", "activity->accesses" ]
-}
+
+
 }
 ```

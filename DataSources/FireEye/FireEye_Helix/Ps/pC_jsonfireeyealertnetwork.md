@@ -21,6 +21,7 @@ Name = json-fireeye-alert-network
     """"username":"(system_user|({user}[^"]{1,2000}))""",
     """"description":"({policy}[^"]{1,2000})"""
   ]
-}
+
+
 }
 ```

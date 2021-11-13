@@ -42,6 +42,7 @@ Name = raw-process-created-1
     """Command\s{0,100}Line(:|=).+?\/u\s{0,100}["\s]({parameter_dll}.+?\.dll)"""
   ]
   DupFields = [ "host->dest_host","process_guid->pid","directory->process_directory","process->path" ]
-}
+
+
 }
 ```

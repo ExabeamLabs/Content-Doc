@@ -22,6 +22,7 @@ Name = imanage-app-activity
                          """CLIENT_NAME:\s{0,100}"{1,20}({client_name}[^"]{1,2000})"{1,20}""",
                         """SECURED:\s{0,100}"{1,20}({secured}[^"]{1,2000})"{1,20}"""
   ]
-}
+
+
 }
 ```

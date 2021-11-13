@@ -34,6 +34,7 @@ Name = sysmon-process-network
     """"Image":"({process}(({directory}[^"]{0,2000}?)[\\\/]{1,20})?({process_name}[^"\\\/]{1,2000}))""""
   ]
   DupFields = [ "directory->process_directory" ]
-}
+
+
 }
 ```

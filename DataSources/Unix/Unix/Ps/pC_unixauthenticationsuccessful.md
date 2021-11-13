@@ -13,6 +13,7 @@ Name = unix-authentication-successful
     """successful pam web login:\s({user}[^\s@]{1,2000})@({src_ip}[\da-fA-F.:]{1,2000})""",
     """({outcome}successful) pam web login:"""
   ]
-}
+
+
 }
 ```

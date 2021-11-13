@@ -3,7 +3,7 @@
 {
 Name = q-exchange-dlp-email-out-5
   Conditions = [ """event-id=SEND""", """directionality=Originating""" ]
-}
+
 q-exchange-dlp-email-out = {
   Vendor = Microsoft
   Product = Exchange
@@ -33,5 +33,6 @@ q-exchange-dlp-email-out = {
     "sender->user_email",
     "user_email->orig_user",
     "action->outcome" 
-  ]}
+  
+}
 ```

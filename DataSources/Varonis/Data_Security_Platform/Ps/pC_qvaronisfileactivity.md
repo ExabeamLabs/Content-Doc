@@ -23,6 +23,7 @@ Name = q-varonis-file-activity
     """Affected_Object_Path=({file_parent}.+?)\\[^\\]{1,2000}\s{1,100}(\w+=|$)""",
   ]
   DupFields = [ "accesses->event_code" ]
-}
+
+
 }
 ```

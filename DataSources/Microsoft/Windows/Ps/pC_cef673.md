@@ -22,6 +22,7 @@ Name = cef-673
     """Ticket_,Options=({ticket_options}[^\s]{1,2000})""",
     """Ticket_,Encryption_,Type=({ticket_encryption_type}[^\s]{1,2000})"""
   ]
-}
+
+
 }
 ```

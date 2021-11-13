@@ -19,6 +19,7 @@ Name = googlecloud-cloudresourcemanager-activity
     """\{"bindingDeltas"[^=]{1,200}?"role":"roles\/({role}[^"\\\/]{1,200})""",
     """"message":"({failure_reason}[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

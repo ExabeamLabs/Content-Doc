@@ -3,7 +3,7 @@
 {
 Name = json-okta-failed-app-login-1
   Conditions = [ """EventDetails":""", """Sign-in Failed""", """"DisplayName":"""]
-}
+
 json-okta-failed-app-login = {
     Vendor = Okta
     Product = Okta Adaptive MFA
@@ -22,5 +22,6 @@ json-okta-failed-app-login = {
       """({app}(o|O)kta)""",
       """"DisplayName":"({user_fullname}[^"]{1,2000}?\s[^"]{1,2000})""""
       """"DisplayName":\["({user_fullname}[^,"]{1,2000}?\s[^,"]{1,2000})"""
-    ]}
+    
+}
 ```

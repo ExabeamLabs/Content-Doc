@@ -4,7 +4,7 @@
 Name = q-adfs-auth-failed-1
   DataType = "authentication-failed"
   Conditions = [ """Message=The Federation Service failed to issue a valid token""", """EventIDCode=1201""" ]
-}
+
 q-adfs-auth = {
     Vendor = Microsoft
     Product = Windows
@@ -26,5 +26,6 @@ q-adfs-auth = {
       """<Server>({auth_server}[^<]{1,2000})</Server>""",
       """:({service}[^:>]{1,2000})</RelyingParty>""",
       """<PrimaryAuth>(N\/A|[^<]{1,2000}?\/({auth_method}[^<\/]{1,2000}))</PrimaryAuth>""",
-    ]}
+    
+}
 ```

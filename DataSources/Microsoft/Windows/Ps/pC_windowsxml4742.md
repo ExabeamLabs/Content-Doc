@@ -21,6 +21,7 @@ Name = windows-xml-4742
     """<Data Name ='UserPrincipalName'>(-|({attribute}[^<]{1,2000}))<"""
   ]
   DupFields = [ "host->dest_host"]
-}
+
+
 }
 ```

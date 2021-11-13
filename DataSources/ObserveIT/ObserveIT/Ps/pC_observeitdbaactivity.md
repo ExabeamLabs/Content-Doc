@@ -28,6 +28,7 @@ Name = observeit-dba-activity
     """\sWindowTitle=({database_objects}[^;\-]{1,2000}?)\s{0,100}\-[^;]{0,2000}?\-\s{0,100}({app}[^;\-]{1,2000}?)\s{0,100};"""
   ]
   DupFields = [ "user->os_user" , "process_name->service_name"]
-}
+
+
 }
 ```

@@ -23,6 +23,7 @@ Name = cef-db2-auth-failed
     """duser=({user}.+?)\s{0,100}\w+=""",
     """({event_code}DB2_AU07)""",
   ]
-}
+
+
 }
 ```

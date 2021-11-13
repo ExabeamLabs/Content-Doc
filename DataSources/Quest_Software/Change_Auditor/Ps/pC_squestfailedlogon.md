@@ -24,6 +24,7 @@ Name = s-quest-failed-logon
      """userMail=({user_email}[^\s=@]{1,2000}@[^@\s=]{1,2000})""",
      """suid=({user_sid}[^\s]{1,2000})"""
   ]
-}
+
+
 }
 ```

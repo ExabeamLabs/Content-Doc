@@ -19,6 +19,7 @@ Name = s-dropbox-app-activity-1
       """"ip_address":\s{0,100}"({src_ip}[a-fA-F\d.:]{1,2000})""",
       """"folder_name":\s{0,100}"({object}[^"]{1,2000})""""
     ]
-  }
+  
+
 }
 ```

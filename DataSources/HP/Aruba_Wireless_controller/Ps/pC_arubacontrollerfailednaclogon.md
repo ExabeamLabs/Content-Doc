@@ -20,6 +20,7 @@ Name = aruba-controller-failed-nac-logon
    """authmethod=({auth_method}[^\s]{1,2000})""",
    """User\sAuthentication\s({outcome}[\w]{1,2000})"""
   ]
-}
+
+
 }
 ```

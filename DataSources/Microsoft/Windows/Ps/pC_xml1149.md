@@ -18,6 +18,7 @@ Name = xml-1149
       """<Security UserID='({user_sid}[^']{1,2000})'"""
     ]
     DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

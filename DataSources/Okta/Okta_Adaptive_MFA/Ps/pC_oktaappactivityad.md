@@ -21,6 +21,7 @@ Name = okta-app-activity-ad
     """"app":\s\{.*?"name":\s{0,100}"({app}[^"]{1,2000})"""
 
   ]
-}
+
+
 }
 ```

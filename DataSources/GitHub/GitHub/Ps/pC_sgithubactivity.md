@@ -22,6 +22,7 @@ Name = s-github-activity
     """\Wip=({src_ip}[a-fA-F:\d.]{1,2000})""",
     """\Wuser_agent="({user_agent}[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

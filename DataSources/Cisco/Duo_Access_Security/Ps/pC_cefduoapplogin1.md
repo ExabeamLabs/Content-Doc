@@ -18,6 +18,7 @@ Name = cef-duo-app-login-1
     """\sdvc=({host}.+?)\s{1,100}(\w+=|$)""",
     """\sdvchost=({host}.+?)\s{1,100}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

@@ -21,6 +21,7 @@ Name = edocs-app-activity
                         """CLIENT_NAME:\s{0,100}"{1,20}({client_name}[^"]{1,2000})"{1,20}""",
                         """TYPIST_ID:\s{0,100}"{1,20}({user}[^"]{1,2000})"{1,20}""",
   ]
-}
+
+
 }
 ```

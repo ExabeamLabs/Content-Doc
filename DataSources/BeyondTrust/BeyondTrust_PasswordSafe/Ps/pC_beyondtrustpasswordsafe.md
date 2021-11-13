@@ -18,6 +18,7 @@ Name = beyondtrust-passwordsafe
     """RoleUsed:\s{0,100}({privileges}.+?)\s{1,100}\w+:""",
     """Agent ID:\s{0,100}({event_code}PBPS)"""
   ]
-}
+
+
 }
 ```

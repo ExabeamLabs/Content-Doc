@@ -14,6 +14,7 @@ Name = unix-auth-failed
     """\w{3}\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(::ffff:)?({host}[\w\-.]{1,2000})\s{1,100}""",
     """password check failed for user \(({user}[^\s\)]{1,2000})""",
   ]
-}
+
+
 }
 ```

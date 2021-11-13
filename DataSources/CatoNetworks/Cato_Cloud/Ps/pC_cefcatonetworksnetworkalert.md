@@ -23,6 +23,7 @@ Name = cef-catonetworks-network-alert
     """\Wshost=({user_fullname}.+?)\s{1,100}(\w+=|$)""",
     """\Wurl=({malware_url}.+?)\s{1,100}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

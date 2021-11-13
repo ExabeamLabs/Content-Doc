@@ -3,7 +3,7 @@
 {
 Name = cef-proofpoint-email-in-failed
   Conditions = [ """CEF:""", """|ProofPoint|""", """|Failed Email Delivery In|""" ]
-}
+
 cef-proofpoint-email = {
   Vendor = Proofpoint
   Product = Proofpoint Enterprise Protection
@@ -28,5 +28,6 @@ cef-proofpoint-email = {
     """\WeventId=({alert_id}\d{1,100})""",
     """CEF:([^\|]{0,2000}\|){5}({alert_name}[^\|]{1,2000})"""
   ]
-  DupFields = [ "attachment->file_name", "alert_name->alert_type" ]}
+  DupFields = [ "attachment->file_name", "alert_name->alert_type" 
+}
 ```

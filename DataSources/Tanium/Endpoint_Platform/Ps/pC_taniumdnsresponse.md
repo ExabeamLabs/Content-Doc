@@ -18,6 +18,7 @@ Name = tanium-dns-response
       """\sProcess-Name ="(-|({process}({directory}[^"]{0,2000}?[\\\/]{1,2000})?({process_name}[^"\\\/]{1,2000})))"""",
       """\sResponse="(\[unresolved\]|(::ffff:)?({dest_ip}[a-fA-F\d.:]{1,2000}))"""",
     ]
-  }
+  
+
 }
 ```

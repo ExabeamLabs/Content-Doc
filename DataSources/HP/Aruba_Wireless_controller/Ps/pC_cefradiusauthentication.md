@@ -7,7 +7,7 @@ Name = cef-radius-authentication
   Fields=${ArubaClearParserTemplates.cef-aruba-nac-logon-1.Fields}[
    ]
   DupFields = [ "src_ip->dest_ip" ]
-}
+
 cef-aruba-nac-logon-1 = {
   Vendor = HP
   Lms = ArcSight
@@ -27,5 +27,6 @@ cef-aruba-nac-logon-1 = {
     """cs4=({service}.+?)\s\w+=""",
    ]
   DupFields = [ "dest_ip->auth_server" ]  
- }}
+ 
+}
 ```

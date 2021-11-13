@@ -26,6 +26,7 @@ Name = netskope-network-connection
       """"{1,20}browser"{1,20}:\s{0,100}"{1,20}({browser}[^",]{1,2000})""",
       """"{1,20}useragent"{1,20}:\s{0,100}"{1,20}({user_agent}[^"]{1,2000})""",
     ]
-  }
+  
+
 }
 ```

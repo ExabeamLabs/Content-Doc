@@ -24,6 +24,7 @@ Name = mcafee-app-activity
     """({app}MVISION Cloud)""",
     """eventInfo=({additional_info}[^=]{1,2000}?)\s{1,100}\w+="""
   ]
-}
+
+
 }
 ```

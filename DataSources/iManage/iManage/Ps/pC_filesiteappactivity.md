@@ -19,6 +19,7 @@ Name = filesite-app-activity
     """DOCNAME\s{0,100}=\s{0,100}({resource}.+?)\s{1,100}(\w+\s{1,100}=|$)""",
     """DOCLOC\s{0,100}=\s{0,100}({file_path}({file_parent}.+?)[\\\/]{0,2000}({file_name}[^\\\/]{1,2000}?))\s{1,100}(\w+\s{1,100}=|$)""",
   ]
-}
+
+
 }
 ```

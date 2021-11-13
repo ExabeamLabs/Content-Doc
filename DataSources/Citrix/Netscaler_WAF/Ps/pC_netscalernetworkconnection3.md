@@ -16,6 +16,7 @@ Name = netscaler-network-connection-3
     """({outcome}SERVER AUTHENTICATED)""",
   ]
   DupFields = ["event_name->activity"]
-}
+
+
 }
 ```

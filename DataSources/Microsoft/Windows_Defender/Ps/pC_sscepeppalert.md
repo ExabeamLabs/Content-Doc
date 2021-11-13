@@ -17,6 +17,7 @@ Name = s-scep-epp-alert
     """signature=({alert_name}[^\s]{1,2000})\s{1,100}""",
     """exabeam_host=({host}[\w\-.]{1,2000})"""
   ]
-}
+
+
 }
 ```

@@ -17,6 +17,7 @@ Name = cef-salesforce-app-activity-9
     """Display\\=Changed role for user ({object}.+?) from""",
     """({app}Sales Cloud)""",
   ]
-}
+
+
 }
 ```

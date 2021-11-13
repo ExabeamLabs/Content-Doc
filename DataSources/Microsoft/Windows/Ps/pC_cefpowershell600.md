@@ -16,6 +16,7 @@ Name = cef-powershell-600
     """\srequestClientApplication=({parent_process}.+?)\scs2=""",
     """\smsg=({additional_info}.+?)\sart=""",
   ]
-}
+
+
 }
 ```

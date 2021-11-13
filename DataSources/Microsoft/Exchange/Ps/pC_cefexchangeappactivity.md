@@ -20,6 +20,7 @@ Name = cef-exchange-app-activity
     """\WdestinationServiceName =({event_subtype}.+?)\s{1,100}(\w+=|$)""",
   ]
   DupFields = [ "user->user_email" ]
-}
+
+
 }
 ```

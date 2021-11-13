@@ -5,7 +5,7 @@ Name = n-forwarded-cef-juniper-vpn-start-2
   Product = Juniper VPN
 DataType = "vpn-start"
 Conditions = [ "CEF:", "|McAfee|", "|SecureAccess", "VPN Tunneling session started for user" ]
-}
+
 n-forwarded-juniper-vpn = {
   Vendor = Juniper Networks
   Lms = NitroCefSyslog
@@ -23,5 +23,6 @@ n-forwarded-juniper-vpn = {
     """\Wact=({outcome}.+?)\s{1,100}(\w+=|$)""",
     """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
-  DupFields = ["user->account"]}
+  DupFields = ["user->account"
+}
 ```

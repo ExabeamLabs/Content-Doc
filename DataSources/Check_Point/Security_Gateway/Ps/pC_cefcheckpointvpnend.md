@@ -4,7 +4,7 @@
 Name = cef-checkpoint-vpn-end
   DataType = "vpn-end"
   Conditions = [ """CEF:""", """|Check Point|Mobile Access Blade|""", """|RAS Log Out|""" ]
-}
+
 cef-checkpoint-vpn-events = {
   Vendor = Check Point 
   Product = Security Gateway
@@ -20,5 +20,6 @@ cef-checkpoint-vpn-events = {
     """\Wsuser=({user}[^\s]{1,2000})""",
     """\WsourceGeoCountryCode=({src_country_code}\w+)"""
   ]
-   DupFields = [ "action->event_name" ]}
+   DupFields = [ "action->event_name" 
+}
 ```

@@ -21,6 +21,7 @@ Name = leef-stealthwatch-network-alert
     """\Wdomain=({domain}[^\|\=\s]{1,2000}?)\s{0,100}(\||$)""",
     """\Wfullmessage=({additional_info}[^\|]{1,2000}?)\s{0,100}(\||$)"""
   ]
-}
+
+
 }
 ```

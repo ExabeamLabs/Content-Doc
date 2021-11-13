@@ -16,6 +16,7 @@ Name = q-snort-alert-1
     """\[Priority:\s{1,100}({alert_severity}[^\]]{1,2000})""",
     """PROTOCOL-({protocol}[^\s]{1,2000})\s{1,100}({alert_name}.+?)\s{0,100}\[Classification:"""
   ]
-}
+
+
 }
 ```

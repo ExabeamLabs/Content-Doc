@@ -22,6 +22,7 @@ Name = ad-audit-4720
     """ACCOUNT_DOMAIN\s{0,100}=\s{0,100}({account_domain}[^\s]{1,2000})""",
     """ACCOUNT_SID\s{0,100}=\s{0,100}\%\{({account_id}[^\s\}]{1,2000})""",
   ]
-}
+
+
 }
 ```

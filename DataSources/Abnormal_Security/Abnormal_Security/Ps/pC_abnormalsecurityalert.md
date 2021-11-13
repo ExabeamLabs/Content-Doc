@@ -9,7 +9,7 @@ Name = abnormal-security-alert
     """"attack_type": "({alert_name}[^"]{1,2000})"""",	
     """"from_address":\s{0,100}"({user_email}[^@]{1,2000}@[^"]{1,2000})""""
    ]
-}
+
 abnormal-security-alert = {
     Vendor = Abnormal Security
     Product = Abnormal Security
@@ -26,5 +26,6 @@ abnormal-security-alert = {
       """"auto_remediated":\s{0,100}({outcome}true)""",
       """"abx_portal_url":\s{0,100}"({additional_info}[^"]{1,2000})"""",
 	  
-    ]}
+    
+}
 ```

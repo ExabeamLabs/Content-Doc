@@ -17,6 +17,7 @@ Name = cef-microsoft-database-login
     """network protocol:\s{0,100}({protocol}[^;]{1,2000})""",
     """<address>({src_ip}[a-fA-F\d.:]{1,2000})</address>""",
   ]
-}
+
+
 }
 ```

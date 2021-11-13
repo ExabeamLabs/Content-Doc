@@ -23,6 +23,7 @@ Name = digitalguardian-process-created
     """\sCommand_Line="\s{0,100}({command_line}.+?)\s{0,100}" \#\d{1,100}""",
   ]
   DupFields = [ "directory->process_directory" ]
-}
+
+
 }
 ```

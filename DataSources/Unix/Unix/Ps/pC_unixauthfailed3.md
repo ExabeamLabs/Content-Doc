@@ -15,6 +15,7 @@ Name = unix-auth-failed-3
     """\Wuser=({user}[^\s]{1,2000})""",
     """({outcome}failure)""",
   ]
-}
+
+
 }
 ```

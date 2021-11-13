@@ -21,6 +21,7 @@ Name = centrify-ssh-login-failed
     """EntityName =(.+\\+)?({dest_host}[^"\s]{1,2000})(\s|$)"""
     """reason=({failure_reason}[^=\|]{1,2000}?)(\s{1,100}\w+=|\|)"""
   ]
-}
+
+
 }
 ```

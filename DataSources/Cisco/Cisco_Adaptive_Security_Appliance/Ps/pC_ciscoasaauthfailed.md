@@ -17,6 +17,7 @@ Name = cisco-asa-auth-failed
     """Username\s{0,100}:\s{0,100}({user}\S+)""",
     """\sError\s{0,100}:\s{0,100}({failure_reason}.+?)\s{0,100}$"""
   ]
-}
+
+
 }
 ```

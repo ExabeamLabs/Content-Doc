@@ -3,7 +3,7 @@
 {
 Name = cef-sophos-security-alert-33
   Conditions = [  """CEF:""", """|sophos|sophos central|""", """Event::Endpoint::Threat::""" ]
-}
+
 cef-sophos-security-alert = {
   Vendor = Sophos
   Product = Sophos Endpoint Protection
@@ -27,5 +27,6 @@ cef-sophos-security-alert = {
     """\Wid=({alert_id}[^\s]{1,2000})""",
     """source_info_ip=({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """filePath=({process}(([^"]{1,2000})?[\\\/])?({process_name}[^\\\/\s]{1,2000}))\s{1,100}(\w+=|$)""",
-  ]}
+  
+}
 ```

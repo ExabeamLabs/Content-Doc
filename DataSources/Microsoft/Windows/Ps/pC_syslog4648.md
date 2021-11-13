@@ -62,6 +62,7 @@ Name = syslog-4648
       """Network Address(:|=)\s{0,100}(?:-|({src_ip}[a-fA-F:\d.]{1,2000}))"""
     ]
     DupFields = ["directory->process_directory"]
-  }
+  
+
 }
 ```

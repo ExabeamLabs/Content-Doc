@@ -12,6 +12,7 @@ Name = shibboleth-password-change
       """exabeam_host=({host}[^\s]{1,2000})""",
       """\] ({user}.+?)\s{1,100}password change from ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
     ]
-  }
+  
+
 }
 ```

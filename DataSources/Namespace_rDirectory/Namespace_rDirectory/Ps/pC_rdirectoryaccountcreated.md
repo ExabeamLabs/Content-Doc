@@ -17,6 +17,7 @@ Name = rdirectory-account-created
         """Credentials:({account_used_domain}[^\\]{1,2000})\\+([^\s.]{1,2000}\.)*({account}[^\s.]{1,2000})""",
         """Add:13=({user_type}\d{1,100})\[Employee Type\]"""
   ]
-}
+
+
 }
 ```

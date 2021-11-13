@@ -14,6 +14,7 @@ Name = cef-juniper-vpn-close-1
 	"""\Wdst=({dest_ip}[A-Fa-f:\d.]{1,2000})""",
 	"""\Wdhost=({dest_host}[\w\-.]{1,2000})""",
   ]
-}
+
+
 }
 ```

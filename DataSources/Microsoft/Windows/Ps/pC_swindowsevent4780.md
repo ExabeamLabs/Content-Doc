@@ -5,7 +5,7 @@ Name = s-windows-event-4780
   DataType = "windows-audit"
   Conditions = [ """LogType="WLS"""", """EventID="4780"""" ]
  
-}
+
 windows-events-wls= {
   Vendor = Microsoft
   Product = Windows
@@ -45,5 +45,6 @@ windows-events-wls= {
     """AuthenticationPackageName ="({auth_package}[^"]{1,2000})"""",
     """IpAddress="(-|({src_ip}[a-fA-F\d:.]{1,2000}))""""
     ]
-    DupFields = [ "dest_host->host" ]}
+    DupFields = [ "dest_host->host" 
+}
 ```

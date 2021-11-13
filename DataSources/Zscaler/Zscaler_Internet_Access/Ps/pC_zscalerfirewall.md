@@ -33,6 +33,7 @@ Name = zscaler-firewall
      """rulelabel=({rule}.+?)\s{0,100}inbytes"""
   ]
   DupFields = ["outcome->action"]
-}
+
+
 }
 ```

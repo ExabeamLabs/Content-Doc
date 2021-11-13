@@ -24,6 +24,7 @@ Name = cef-onelogin-app-activity
     """"error_description":\s{0,100}"\s{0,100}({additional_info}([^\\"]|(\\\\)*\\"|\\\\)+?)\s{0,100}"""",
     """\Wmsg=\s{0,100}({additional_info}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
-}
+
+
 }
 ```

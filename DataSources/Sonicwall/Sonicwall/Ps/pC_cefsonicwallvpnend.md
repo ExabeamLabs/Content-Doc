@@ -19,6 +19,7 @@ Name = cef-sonicwall-vpn-end
     """\scs4Label=Duration\s.*cs4=({session_duration}\d{1,100})\s{1,100}(\w+=|$)""",
     """\scs4=({session_duration}\d{1,100})\s{1,100}(|\w+=.*)cs4Label=Duration\s""",
   ]
-}
+
+
 }
 ```

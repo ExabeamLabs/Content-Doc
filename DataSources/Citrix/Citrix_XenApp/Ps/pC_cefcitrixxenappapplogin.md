@@ -23,6 +23,7 @@ Name = cef-citrix-xenapp-app-login
     """\ssuid=({user_fullname}.+?)\s{1,100}\w+=""",
     """\scs4=({os}.+?)\s{1,100}\w+="""
   ]
-}
+
+
 }
 ```

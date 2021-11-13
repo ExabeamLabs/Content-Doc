@@ -29,6 +29,7 @@ Name = cef-securesphere-db-query-1
     """\WparsedQuery="(|(N\/A \(logout\))|({db_query}[^\n]{1,2000})?)"\s{0,10}$""" 
   ]
   DupFields = [ "db_user->account" ]
-}
+
+
 }
 ```

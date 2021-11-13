@@ -4,7 +4,7 @@
 Name = azure-mfa-auth-failed
   DataType = authentication-failed
   Conditions = [ """|pfsvc|""", """Pfauth failed for user""", """Call status:""" ]
-}
+
 azure-mfa-auth = {
     Vendor = Microsoft
     Product = Azure MFA
@@ -18,5 +18,6 @@ azure-mfa-auth = {
       """Pfauth failed for user.*?\-\s{0,100}"({failure_reason}[^"]{1,2000})"""",
       """({auth_method}Pfauth)""",
       """\sfrom\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(:({src_port}\d{1,100}))?"""
-    ]}
+    
+}
 ```

@@ -4,7 +4,7 @@
 Name = logrhythm-o365-file-write-8
   DataType = "file-write"
   Conditions = [ """SESSID=""", """RESULTCODE=""", """WORKLOAD=""", """COMMAND=AnonymousLinkCreated""", """ITEMTYPE=File""", """OBJECT=""" ]
-}
+
 logrhythm-o365-file-operation = {
     Vendor = Microsoft
     Product = Office 365
@@ -26,5 +26,6 @@ logrhythm-o365-file-operation = {
       """USERAGENT=\s{0,100}(|({user_agent}[^\n]{1,2000}?))\s{0,100}(\w+=|$)""",
       """ITEMTYPE=({file_type}[^=]{1,2000}?)\s{1,100}\w+="""
     ]
-    DupFields = [ "event_name->activity", "object->file_path" ]}
+    DupFields = [ "event_name->activity", "object->file_path" 
+}
 ```

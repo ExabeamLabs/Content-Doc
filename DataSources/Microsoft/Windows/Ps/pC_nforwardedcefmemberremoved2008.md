@@ -22,6 +22,7 @@ Name = n-forwarded-cef-member-removed-2008
     """nitroSource_Logon_ID=({logon_id}.+?)(\s|0\|)"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

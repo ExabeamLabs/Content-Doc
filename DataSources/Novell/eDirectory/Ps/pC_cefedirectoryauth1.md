@@ -4,7 +4,7 @@
 Name = cef-edirectory-auth-1
   DataType = "authentication-successful"
   Conditions = [ """CEF:""", """|eDirectory|eDirectory|""", """|LOGIN|""" ]
-}
+
 cef-edirectory-events = {
   Vendor = Novell
   Product = eDirectory
@@ -20,5 +20,6 @@ cef-edirectory-events = {
     """\Wduser=CN\\=({user_fullname}[^,]{1,2000}),({user_ou}OU\\=.+?)\s{1,100}(\w+=|$)""",
     """\Woutcome=({outcome}\w+)""",
     """\Wcs1=(({protocol}\w+):\s{0,100})?({dest_ip}[A-Fa-f:\d.]{1,2000}?):({dest_port}\d{1,100})""",
-  ]}
+  
+}
 ```

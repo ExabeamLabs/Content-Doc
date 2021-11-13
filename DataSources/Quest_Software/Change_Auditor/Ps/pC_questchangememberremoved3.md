@@ -7,7 +7,7 @@ Name = quest-change-member-removed-3
      Fields = ${QuestParserTemplates.quest-change-auditor-events.Fields}[
        """msg=The user\s[^\\]{1,2000}\\*({account_id}[^(]{1,2000})[^=]{1,2000}?was removed from the group\s[^\\]{1,2000}\\*({group_name}[^\s\.]{1,2000})"""
 ]
-}
+
 quest-change-auditor-events = {
     Vendor = Quest Software
     Product = Change Auditor
@@ -24,5 +24,6 @@ quest-change-auditor-events = {
       """suser=(({domain}[^\\]{1,2000})\\*)?({user}[^=]{1,2000}?)\s\w+=""",
       """event=({event_name}[^=]{1,2000}?)\s\w+=""",
       """msg=({additional_info}[^=]{1,2000}?)\s{0,100}\w+="""
-    ]}
+    
+}
 ```

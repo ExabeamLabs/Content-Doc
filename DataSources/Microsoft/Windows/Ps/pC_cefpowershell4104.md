@@ -22,6 +22,7 @@ Name = cef-powershell-4104
     """"ProcessID"":""({pid}\d{1,100})"""",
     """duser=({user}[^\s]{1,2000})""", 
   ]
-}
+
+
 }
 ```

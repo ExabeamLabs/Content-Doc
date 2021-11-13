@@ -18,6 +18,7 @@ Name = cef-dropbox-app-activity-10
     """"ip_address":\s{0,100}"{1,100}({src_ip}[A-Fa-f.:\d]{1,200})""",
     """"assets":\s{0,100}\[[^\]]{0,2000}?"display_name":\s{0,100}"({object}[^",]{1,2000})""""
   ]
- }
+ 
+
 }
 ```

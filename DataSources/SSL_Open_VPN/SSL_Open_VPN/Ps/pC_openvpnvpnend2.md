@@ -14,6 +14,7 @@ Name = openvpn-vpn-end-2
     """(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s\d{1,100}\s\d{1,100}:\d{1,100}:\d{1,100}\s\d{1,100}\s({user}[^\/]{1,2000})\/({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}):({src_port}\d{1,100})""",
     """({additional_info}Connection reset, restarting)""",
   ]
-}
+
+
 }
 ```

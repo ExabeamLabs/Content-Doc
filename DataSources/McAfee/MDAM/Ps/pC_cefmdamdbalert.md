@@ -22,6 +22,7 @@ Name = cef-mdam-db-alert
     """\Wcs2=\s{0,100}({additional_info}.+?)\s{1,100}(\w+=|$)""",
     """\|alert\|({alert_name}[^\|]{1,2000})""",
   ]
-}
+
+
 }
 ```

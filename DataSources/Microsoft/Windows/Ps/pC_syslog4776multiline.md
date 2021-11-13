@@ -18,6 +18,7 @@ Name = syslog-4776-multiline
       """Source Workstation:\s{0,100}({dest_host}[^\s\<]{1,2000})\s{0,100}(<14>)?""",
       """Logon Account:\s{0,100}(({user_email}[^<:@]{1,2000}@[^\.]{1,2000}\.[^<:]{1,2000})|({user}[^:<]{1,200}?))\s{0,100}(<14>)?Source Workstation:""",
      ]
-}
+
+
 }
 ```

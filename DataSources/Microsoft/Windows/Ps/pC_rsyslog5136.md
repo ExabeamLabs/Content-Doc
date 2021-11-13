@@ -21,6 +21,7 @@ Name = r-syslog-5136
     """Object:\s{1,100}DN:.+?({object_ou}OU.+?)\s{1,100}GUID:"""
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

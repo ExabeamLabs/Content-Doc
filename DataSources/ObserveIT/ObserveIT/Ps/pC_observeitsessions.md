@@ -21,6 +21,7 @@ Name = observeit-sessions
     """\sClientAddress=({src_ip}[a-fA-F\d.:]{1,2000})""",
     """\sViewerURL=({additional_info}[^;]{1,2000}?)\s{0,100}(;|"{0,20}\s{0,100}$)""",
   ]
-}
+
+
 }
 ```

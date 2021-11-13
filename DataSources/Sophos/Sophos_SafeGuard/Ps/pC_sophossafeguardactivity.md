@@ -25,6 +25,7 @@ Name = sophos-safeguard-activity
     """EVT_MODIFIED_BY="({updated_by}[^."]{1,2000})""",
   ]
   DupFields = ["host->src_host"]
-}
+
+
 }
 ```

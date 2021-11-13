@@ -23,6 +23,7 @@ Name = cef-4725
       """\sdntdom=({target_domain}.+?)\s\w+=""",
       """Security_,ID=({target_user_sid}[^\s]{1,2000})"""
     ]
-  }
+  
+
 }
 ```

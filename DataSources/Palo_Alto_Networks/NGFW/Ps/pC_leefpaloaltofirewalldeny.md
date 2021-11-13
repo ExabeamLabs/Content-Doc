@@ -3,7 +3,7 @@
 {
 Name = leef-paloalto-firewall-deny
   Conditions = [ """LEEF:""", """|Palo Alto Networks|PAN-OS Syslog Integration|""", """|deny|""" ]
-}
+
 leef-paloalto-firewall = {
   Vendor = Palo Alto Networks
   Product = NGFW
@@ -44,5 +44,6 @@ leef-paloalto-firewall = {
     """\|sequence=({sequence}\d{1,100})\|""",
     """\|SessionEndReason=({outcome}[^\|"]{1,2000}?)\|""",
     """\|action=({action}\w{1,2000})\|""",
-  ]}
+  
+}
 ```

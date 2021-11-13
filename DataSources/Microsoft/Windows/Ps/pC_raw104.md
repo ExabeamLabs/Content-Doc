@@ -13,6 +13,7 @@ Name = raw-104
     """({event_name}The.*?log file was cleared.)""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

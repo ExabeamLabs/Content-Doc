@@ -20,6 +20,7 @@ Name = syslog-mcafee-epo-dlp-alert
       """"sourceusername":"(({domain}[^"\\\/]{1,2000}?)[\\\/]{1,2000})?({user}[^"]{1,2000})""""
     ]
     DupFields = [ "src_host->host" ]
-  }
+  
+
 }
 ```

@@ -4,7 +4,7 @@
 Name = clearsense-app-login
   DataType = "app-login"
   Conditions = [ """SUCCESSFUL_LOGIN""", """Login Successful""", """requestClientApplication=ClearSense Audit""", """CEF""" ]
-}
+
 clesarsense-app-activity = {
    Vendor = Clearsense
    Product = Clearsense
@@ -25,5 +25,6 @@ clesarsense-app-activity = {
      """"{1,20}url"{1,20}:"{1,20}({additional_info}[^"]{1,2000}?)""""
 
      ]
- }}
+ 
+}
 ```

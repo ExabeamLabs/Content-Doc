@@ -14,6 +14,7 @@ Name = unix-failed-logon-11
     """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]{1,2000})\s{1,100}""",
     """No authentication methods succeeded for user ({user}[^""]{1,2000})"""
   ]
-}
+
+
 }
 ```

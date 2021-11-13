@@ -12,7 +12,7 @@ Name = cef-sentinelone-security-alert-2
     """parentProcessName:({parent_process_name}[^:"]{1,2000}?)\s{1,100}\w+:""",
   ]
   DupFields = ["directory->process_directory"]
-}
+
 cef-sentinelone-security-alert = {
     Vendor = SentinelOne
     Lms = ArcSight
@@ -28,5 +28,6 @@ cef-sentinelone-security-alert = {
       """\sagentfileFullNameGroupId:(|({file_path}({file_parent}.*?[\\\/]{1,2000})?({file_name}[^\\\/]{1,2000}?(\.({file_ext}\w+))?)))(\s{1,100}\w+:|\s{0,100}$)""",
       """\sprocessName:(|({process_name}.+?))(\s{1,100}\w+:|\s{0,100}$)""",
       """\sid:(|({alert_id}.+?))(\s{1,100}\w+:|\s{0,100}$)""",
-    ]}
+    
+}
 ```

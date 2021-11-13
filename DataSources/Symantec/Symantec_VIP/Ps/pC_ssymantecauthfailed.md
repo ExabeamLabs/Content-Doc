@@ -14,6 +14,7 @@ Name = s-symantec-auth-failed
     """for user \[({user}[^\]\s]{1,2000})""",
     """({failure_reason}Authentication Failed)"""
   ]
-}
+
+
 }
 ```

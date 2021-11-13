@@ -33,6 +33,7 @@ Name = cef-counterbreach-db-alert
     """\sdhost=({dest_host}[^\s]{1,2000})""",
   ]
   DupFields = [ "db_user->account" ]
-}
+
+
 }
 ```

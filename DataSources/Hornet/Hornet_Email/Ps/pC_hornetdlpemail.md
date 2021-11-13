@@ -3,7 +3,7 @@
 {
 Name = hornet-dlp-email
   Conditions = [ """main_domain=""", """owner=""", """smtp_code=""", """crypt_type=""", """from_hdr=""", """update_nr=""", """type=1""" ]
-}
+
 hornet-dlp-email = {
     Vendor = Hornet
     Product = Hornet Email
@@ -25,5 +25,6 @@ hornet-dlp-email = {
       """msgid="({message_id}[^"]{1,2000})""",
       """subject="[\s ]{0,2000}({subject}[^"]{1,2000}?)[\s ]{0,2000}"""",
       """attachments="[^0"]#({attachments}[^"]{1,2000})""",
-    ]}
+    
+}
 ```

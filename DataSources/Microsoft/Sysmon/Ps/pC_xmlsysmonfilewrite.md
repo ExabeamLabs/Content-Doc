@@ -9,7 +9,7 @@ Name = xml-sysmon-file-write
     """<Data Name ='TargetObject'>({file_path}(({file_parent}[^<>]{1,2000}?)[\\\/]{1,2000})?({file_name}[^\\\/<>]{0,2000}?(\.({file_ext}\w+))?))<\/Data>""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
 xml-sysmon-activity = {
   Vendor = Microsoft
   Product = Sysmon
@@ -28,5 +28,6 @@ xml-sysmon-activity = {
     """<Keywords>({outcome}.+?)<\/Keywords>""",
     """<Data Name ='ProcessGuid'>\{({process_guid}.+?)\}<\/Data>""",
     """<Data Name ='ProcessId'>({pid}\d{1,100})""",
-  ]}
+  
+}
 ```

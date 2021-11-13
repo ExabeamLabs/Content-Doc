@@ -5,7 +5,7 @@ Name = n-forwarded-juniper-failed-vpn-login
   Product = Juniper VPN
 DataType = "failed-vpn-login"
 Conditions = [ "CEF:", "|McAfee|", "|SecureAccess", "Primary Authentication For User|", "act=failure" ]
-}
+
 n-forwarded-juniper-vpn = {
   Vendor = Juniper Networks
   Lms = NitroCefSyslog
@@ -23,5 +23,6 @@ n-forwarded-juniper-vpn = {
     """\Wact=({outcome}.+?)\s{1,100}(\w+=|$)""",
     """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
-  DupFields = ["user->account"]}
+  DupFields = ["user->account"
+}
 ```

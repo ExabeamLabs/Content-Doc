@@ -10,7 +10,7 @@ Name = json-4769-1
     """"service-name":"({src_host}[^\$"]{1,2000})""",
     """"ip-address":"(::f+:)?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
   ]
-}
+
 json-windows-events = {
   Vendor = Microsoft
   Product = Windows
@@ -41,5 +41,6 @@ json-windows-events = {
     """"service-name":"({service_name}[^"]{1,2000})""",
     """auth-package":"({auth_package}[^"]{1,2000})"""",
     """workstation-name":"(-|({src_host_windows}[^"]{1,2000}))""""
-  ]}
+  
+}
 ```

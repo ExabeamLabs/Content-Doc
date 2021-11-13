@@ -15,6 +15,7 @@ Name = kiteworks-account-unlocked-2
     """Activity Type:\s({event_name}[^,]{1,2000}?),""",
     """Activity:\s({additional_info}User account unlocked by lockout cooldown)""",
   ]
-}
+
+
 }
 ```

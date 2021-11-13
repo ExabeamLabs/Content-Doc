@@ -24,6 +24,7 @@ Name = cef-cisco-dns-response
     """\Wsuid=({user}[^\s]{1,2000})""",
     """\Wsuser=({user}[^\s]{1,2000})"""
   ]
-}
+
+
 }
 ```

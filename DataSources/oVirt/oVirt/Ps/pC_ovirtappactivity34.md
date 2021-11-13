@@ -15,6 +15,7 @@ Name = ovirt-app-activity-34
     """EVENT_ID:.*? CD was ejected from VM ({object}[^\s"]{1,2000}) by ({user}[^\s\(\)]{1,2000}?)(\)|\s|\.\s|\.$)""",
     """({app}ovirt)"""
   ]
-}
+
+
 }
 ```

@@ -19,6 +19,7 @@ Name = s-dropbox-logins-activity
       """"ip_address":\s{0,100}"({src_ip}[a-fA-F\d.:]{1,2000})""",
       """"display_name":\s{0,100}"({user_agent}[^"]{1,2000})"""",
     ]
-  }
+  
+
 }
 ```

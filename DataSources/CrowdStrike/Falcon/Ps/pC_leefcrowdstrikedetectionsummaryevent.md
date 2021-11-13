@@ -13,7 +13,7 @@ Name = leef-crowdstrike-detectionsummaryevent
     """sha256=({sha256}[^|\s]{1,2000}?)\s{0,100}(\||\w+=)"""
   ]
    DupFields = ["file_parent->malware_url", "category->alert_type"]
-}
+
 leef-crowdstrike-alert-t = {
     Vendor = CrowdStrike
     Product = Falcon
@@ -40,5 +40,6 @@ leef-crowdstrike-alert-t = {
       """\Wmd5=({md5}[^\s]{1,2000}?)\s{0,100}(\||\w+=|$|"{1,20}\s{0,100}$)""",
       """({app}FalconHost)"""
     ]
-  DupFields = [ "category->alert_type" ]}
+  DupFields = [ "category->alert_type" 
+}
 ```

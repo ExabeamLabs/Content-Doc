@@ -24,6 +24,7 @@ Name = raw-juniper-nwc-vpn-hostfailed
     """({failure_reason}Host Checker policy '.+?' failed on host '(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}.+?))' .*? for user '.+?')"""   
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

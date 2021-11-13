@@ -15,6 +15,7 @@ Name = cisco-ftd-process-created
     """User\s{1,100}'({user}[^']{1,2000})'""",
     """({event_name}executed)\s{1,100}the\s{1,100}'({command_line}[^']{1,2000}?)\s{0,100}'"""
   ]
-}
+
+
 }
 ```

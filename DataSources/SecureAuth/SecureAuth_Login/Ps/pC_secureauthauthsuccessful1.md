@@ -21,6 +21,7 @@ Name = secureauth-auth-successful-1
     """({event_name}Authentication Success)""",
     """UserAgent="({user_agent}[^"]+)""",
   ]
-}
+
+
 }
 ```

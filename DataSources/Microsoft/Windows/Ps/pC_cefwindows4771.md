@@ -20,6 +20,7 @@ Name = cef-windows-4771
     """"serviceName":"({src_host}[\w\-.]{1,2000})\/({domain}[^\\\/\s"]{1,2000}?)\s{0,100}"""",
     """"status":"({result_code}[^"]{1,2000}?)\s{0,100}""""
   ]
-}
+
+
 }
 ```

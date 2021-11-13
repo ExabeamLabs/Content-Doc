@@ -22,6 +22,7 @@ Name = cef-dtex-process-created
     """\Wreason=({command_line}.+?)\s{1,100}(\w+=|$)""",
   ]
   DupFields = [ "host->dest_host","directory->process_directory" ]
-}
+
+
 }
 ```

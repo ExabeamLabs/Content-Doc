@@ -24,6 +24,7 @@ Name = syslog-symantec-usb-write
     """({device_type}(CD-DVD|USB))"""
   ]
   DupFields = ["directory->process_directory"]
-}
+
+
 }
 ```

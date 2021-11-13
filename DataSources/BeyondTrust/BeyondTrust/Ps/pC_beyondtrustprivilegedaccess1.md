@@ -27,6 +27,7 @@ Name = beyondtrust-privileged-access-1
     """cmdShellViewUrl=({additional_info}[^\|]{1,2000})"""
   ]
   DupFields = ["dest_user->account"]
-}
+
+
 }
 ```

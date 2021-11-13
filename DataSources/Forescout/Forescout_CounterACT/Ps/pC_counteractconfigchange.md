@@ -16,6 +16,7 @@ Name = counteract-config-change
     """\sDetails:\s{0,100}({additional_info}.+?)(\s{1,100}device\s{1,100}({dest_ip}[a-fA-F\d.:]{1,2000}))?\s{0,100}$""",
     """from\[({src_ip}[a-fA-F\d.:]{1,2000})\]\s{1,100}to\[({dest_ip}[a-fA-F\d.:]{1,2000})\]""",
   ]
-}
+
+
 }
 ```

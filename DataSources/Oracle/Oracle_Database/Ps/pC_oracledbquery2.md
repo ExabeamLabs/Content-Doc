@@ -27,6 +27,7 @@ Name = oracle-db-query-2
     """"exa_jdbc_port":"({dest_port}\d{1,100})""""
   ]
   DupFields = [ "os_user->user", "db_user->account" ]
-}
+
+
 }
 ```

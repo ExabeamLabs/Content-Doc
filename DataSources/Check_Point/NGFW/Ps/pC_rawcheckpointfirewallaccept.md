@@ -4,7 +4,7 @@
 Name = raw-checkpoint-firewall-accept
   DataType = "network-connection"
   Conditions = [ """product:""", """VPN-1 & FireWall-1;""", """ accept """ ]
-}
+
 raw-checkpoint-firewall = {
   Vendor = Check Point 
   Product = NGFW
@@ -36,5 +36,6 @@ raw-checkpoint-firewall = {
     """\Wxlatedport:\s{0,100}(|({dest_translated_port}\d{1,100}));""",
     """\Wservice_id:\s{0,100}(|({protocol}.+?));""",
   ]
-   DupFields = [ "action->event_name" ]}
+   DupFields = [ "action->event_name" 
+}
 ```

@@ -18,6 +18,7 @@ Name = rdirectory-member-added
 	"""\[Member\]\s{0,100}Add:({account_dn}CN=.+?,({account_ou}OU.+?DC=[\w-]{1,2000}))""",
 	"""\[Member\]\s{0,100}Add:(?:CN|({account_name}[^<]{1,2000}))"""
   ]
-}
+
+
 }
 ```

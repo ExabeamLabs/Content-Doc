@@ -7,7 +7,7 @@ Name = crowdstrike-process-created-2
   Fields = ${CrowdStrikeParserTemplates.crowdstrike-auth-activity.Fields} [
          """"ImageFileName\\{0,20}":\\{0,20}"({process}[^"]{1,2000}(\/|\\)({process_name}[^"\\]{1,2000}))\\{0,20}"\S"""
   ]
-}
+
 crowdstrike-auth-activity = {
   Vendor = CrowdStrike
   Product = Falcon
@@ -34,5 +34,6 @@ crowdstrike-auth-activity = {
     """"UserName\\*"{1,20}:\\*"{1,20}({user}[^"\\]{1,2000})""",
     """"FalconHostLink\\*"{1,20}:\s{0,100}\\*"{1,20}({falcon_host_link}[^"]{1,2000})"""
   ]
-  DupFields = ["event_name->event_code","falcon_host_link->additional_info", "file_parent->directory", "file_name->process_name"]}
+  DupFields = ["event_name->event_code","falcon_host_link->additional_info", "file_parent->directory", "file_name->process_name"
+}
 ```

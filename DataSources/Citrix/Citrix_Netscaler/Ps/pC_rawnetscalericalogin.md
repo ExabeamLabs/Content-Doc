@@ -17,6 +17,7 @@ Name = raw-netscaler-ica-login
     """Destination\s({dest_ip}[^:]{1,2000})""",
     """applicationName\s({app}.+?) - startTime"""
   ]
-}
+
+
 }
 ```

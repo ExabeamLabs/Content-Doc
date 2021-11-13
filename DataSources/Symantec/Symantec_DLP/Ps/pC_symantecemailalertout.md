@@ -13,6 +13,7 @@ Name = symantec-email-alert-out
     """({host}[\w.\-]{1,2000})\s{1,100}incident_id=""",
     """recipient=({recipient}[^,@]{1,2000}@[^,]{1,2000}),""",
     """sender=({sender}[^,]{1,2000}),""",
-    """Subject=({subject}.+?)\s{0,100}
+    """Subject=({subject}.+?)\s{0,100
+
 }
 ```

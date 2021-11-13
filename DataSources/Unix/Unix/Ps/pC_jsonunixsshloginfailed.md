@@ -12,7 +12,7 @@ Name = json-unix-ssh-login-failed
     """({outcome}failed)"""
 
   ]
-}
+
 unix-activity-json = {
     Vendor = Unix
     Lms = Direct
@@ -22,5 +22,6 @@ unix-activity-json = {
       """"ident":"({event_code}[^"]{1,2000})""",
       """"pid":"({pid}\d{1,100})""",
       """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
-    ]}
+    
+}
 ```

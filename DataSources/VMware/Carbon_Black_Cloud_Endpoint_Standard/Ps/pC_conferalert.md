@@ -23,6 +23,7 @@ Name = confer-alert
     """externalIpAddress"{1,20}:\s{0,100}"{1,20}({dest_ip}[^"]{1,2000})"""",
     """applicationName":\s"({process_name}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

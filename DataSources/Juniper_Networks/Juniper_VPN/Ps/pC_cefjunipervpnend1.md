@@ -18,6 +18,7 @@ Name = cef-juniper-vpn-end-1
 	"""\Wshost=({src_host}[\w\-.]{1,2000})""",
     """\Wmsg=({additional_info}.+?)\s{1,100}end=""",
   ]
-}
+
+
 }
 ```

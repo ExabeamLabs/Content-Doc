@@ -29,6 +29,7 @@ Name = q-quest-directory-access
     """adUsnChangedPre=({old_attribute}[^\^]{1,2000})""",
     """adUsnChangedPost=({new_attribute}[^\^]{1,2000})""",
   ]
-}
+
+
 }
 ```

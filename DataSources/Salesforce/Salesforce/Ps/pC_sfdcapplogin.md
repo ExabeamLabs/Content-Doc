@@ -20,6 +20,7 @@ Name = sfdc-app-login
     """Platform":\s{0,100}"(Unknown|({os}[^"]{1,2000}))""",
     """Application":\s{0,100}"({protocol}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

@@ -24,6 +24,7 @@ Name = cef-cortex-xdr-alert
     """\Wrequest=({additional_info}.*?)\s{1,100}"""
   ]
   DupFields = [ "process->path","directory->process_directory" ]
-}
+
+
 }
 ```

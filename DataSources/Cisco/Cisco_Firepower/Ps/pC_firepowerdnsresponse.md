@@ -26,6 +26,7 @@ Name = firepower-dns-response
     """\sDNSSICategory:\s({alert_type}[^\s]{1,2000})""",
   ]
    DupFields = ["alert_type -> alert_name"]
-}
+
+
 }
 ```

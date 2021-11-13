@@ -19,6 +19,7 @@ Name = cisco-nac-logon-1
     """, Remote-Address=({src_ip}[^,]{1,2000})""",
     """, AuthenticationMethod=({auth_type}[^,]{1,2000})"""
   ]
-}
+
+
 }
 ```

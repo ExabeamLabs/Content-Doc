@@ -17,6 +17,7 @@ Name = cef-contrast-security-alert
     """\Wapp=(|({process_name}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Woutcome=(|({outcome}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
   ]
-}
+
+
 }
 ```

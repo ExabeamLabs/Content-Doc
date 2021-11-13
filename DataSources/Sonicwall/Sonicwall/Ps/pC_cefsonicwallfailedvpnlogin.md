@@ -18,6 +18,7 @@ Name = cef-sonicwall-failed-vpn-login
     """\sduser=(|({user}.+?))\s{1,100}(\w+=|$)""",
     """\|User login failed - ({failure_reason}.+?)\|""",
   ]
-}
+
+
 }
 ```

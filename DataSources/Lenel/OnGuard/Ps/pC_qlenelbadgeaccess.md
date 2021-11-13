@@ -19,6 +19,7 @@ Name = q-lenel-badge-access
       """\sREADERDESC:\s{0,100}"{1,20}({location_full}[^"]{1,2000})"""
     ]
     DupFields = [ "location_full->location_door" ]
-  }
+  
+
 }
 ```

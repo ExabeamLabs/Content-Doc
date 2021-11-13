@@ -15,6 +15,7 @@ Name = openvpn-vpn-end-3
     """\[soft,connection-reset\]\s{0,100}({outcome}[^,]{1,2000})""",
     """({additional_info}client-instance restarting)""",
   ]
-}
+
+
 }
 ```

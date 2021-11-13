@@ -4,7 +4,7 @@
 Name = checkpoint-firewall-network-alert-1
   DataType = "network-alert"
   Conditions = [ """product="VPN-1 & FireWall-1"""", """Action="monitor"""" ]
-}
+
 checkpoint-firewall-4 = {
   Vendor = Check Point 
   Product = NGFW
@@ -32,5 +32,6 @@ checkpoint-firewall-4 = {
     """\W(user|dst_user_name)="({user}[^"]{1,2000})""",
     """\W(user|dst_user_name)="({user_fullname}[^"\(]{1,2000}?)\s{0,100}\(({user}[^\)]{1,2000})""",
   ]
-  DupFields = [ "action->event_name" ]}
+  DupFields = [ "action->event_name" 
+}
 ```

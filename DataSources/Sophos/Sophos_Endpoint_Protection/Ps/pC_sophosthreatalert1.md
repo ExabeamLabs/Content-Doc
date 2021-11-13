@@ -20,6 +20,7 @@ Name = sophos-threat-alert-1
     """ComputerName ="({src_host}[\w\-.]{1,2000})""",
     """FullFilePath="({malware_url}[^"]{1,2000}?({malware_file_name}[^"\\]{1,2000}))"""",
   ]
-}
+
+
 }
 ```

@@ -10,7 +10,7 @@ Name = f5-ssh-login-successful-1
     """sshd\[({logon_id}\d{1,100})""",
     """SHA256:({sha256}[^"]{1,2000})""""
   ]
-}
+
 f5-waf-activity = {
     Vendor = F5
     Product = F5 Advanced Web Application Firewall (WAF)
@@ -22,5 +22,6 @@ f5-waf-activity = {
       """"@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
       """"host":"(::ffff:)?({host}[^"]{1,2000})""",
       """\d\d:\d\d:\d\d ({host}[^\s]{1,2000}) \w+ \w+\["""
-    ]}
+    
+}
 ```

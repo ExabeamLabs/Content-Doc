@@ -13,6 +13,7 @@ Name = unix-password-change-1
     """({host}[\w.\-]{1,2000})\s{1,100}passwd:""",
     """changed password for '({account}[^']{1,2000})'""",
   ]
-}
+
+
 }
 ```

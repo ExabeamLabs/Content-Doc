@@ -23,6 +23,7 @@ Name = fortinet-dlp-alert-email-1
     """Sent To:\s{0,100}({src_ip}[A-Fa-f:\d.]{1,2000})""",
   ]
   DupFields = [ "file_name->attachments" ]
-}
+
+
 }
 ```

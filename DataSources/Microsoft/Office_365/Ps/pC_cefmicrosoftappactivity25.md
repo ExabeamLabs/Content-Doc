@@ -8,7 +8,7 @@ Name = cef-microsoft-app-activity-25
     """"UPN":"({object}[^"]{1,2000})""", 
     """"TeamName"{1,20}:"{1,20}({group}[^"]{1,2000})""",
     """"Workload"{1,20}:"{1,20}({app}[^"]{1,2000})"""
-    """"Key"{1,20}:"{1,20}ClientName"{1,20}
+    """"Key"{1,20}:"{1,20}ClientName"{1,20
 cef-microsoft-app-activity = {
   Vendor = Microsoft
   Lms = ArcSight
@@ -38,5 +38,6 @@ cef-microsoft-app-activity = {
     """"User-Agent\\?"{1,20}:\\?"{1,20}({user_agent}[^"\\]{1,2000})"""
     """"UserAgent":"({user_agent}[^"]+)"""",
     """"ipAddress":"({dest_ip}[A-Fa-f.:\d]{1,2000})""""
-  ]}
+  
+}
 ```

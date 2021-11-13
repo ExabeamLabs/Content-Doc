@@ -17,6 +17,7 @@ Name = cef-salesforce-app-activity-17
     """Display\\=Created profile ({object}.+?): Cloned from""",
     """({app}Sales Cloud)""",
   ]
-}
+
+
 }
 ```

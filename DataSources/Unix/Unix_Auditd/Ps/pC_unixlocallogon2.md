@@ -8,7 +8,7 @@ Name = unix-local-logon-2
   Fields = ${UnixParserTemplates.unix-template.Fields}[
     """\spid\\?=({process_id}[^\s]{1,2000})\s\w+"""
   ]
-}
+
 unix-template = {
     Vendor = Unix
     Product = Unix Auditd
@@ -24,5 +24,6 @@ unix-template = {
       """\WeventId=({alert_id}\d{1,100})""",
       """\Wsuser=({user}[^\s]{1,2000})""",
       """\Wdhost=({dest_host}[\w\-.]{1,2000})""",
-    ]}
+    
+}
 ```

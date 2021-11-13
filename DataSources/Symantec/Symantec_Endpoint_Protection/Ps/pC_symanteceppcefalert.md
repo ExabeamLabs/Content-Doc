@@ -14,7 +14,7 @@ Name = symantec-epp-cef-alert
       NameTemplate = """Symantec Alert ${alert_name} found"""
       ProjectName = "SOC"
       EntityFields = [
-        {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]}
+        {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]
 symantec-epp-cef-alert-1 = {
     Vendor = Symantec
     Product = Symantec Endpoint Protection
@@ -42,5 +42,6 @@ symantec-epp-cef-alert-1 = {
       """\scs3=({secondary_action}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
       """\scs5=((?i)(\(Unknown\) \[-1\])|({process_name}[^=]{1,2000}?))\s{1,100}(\w+=|$)""",
     ]
-    DupFields = [ "alert_type->protection_name" ]}
+    DupFields = [ "alert_type->protection_name" 
+}
 ```

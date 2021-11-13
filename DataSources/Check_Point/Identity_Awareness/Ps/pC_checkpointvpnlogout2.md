@@ -25,6 +25,7 @@ Name = checkpoint-vpn-logout-2
     """\|origin=({origin_ip}[^\|]{1,2000})""",
     """\|originsicname=({user_ou}[^\|]{1,2000})""",
   ]
-}
+
+
 }
 ```

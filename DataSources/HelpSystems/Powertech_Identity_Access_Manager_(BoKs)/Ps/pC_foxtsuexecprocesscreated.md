@@ -19,6 +19,7 @@ Name = foxt-suexec-process-created
     """({event_code}suexec)"""
   ]
   DupFields = [ "host->dest_host", "process_guid->pid", "path->process","directory->process_directory" ]
-}
+
+
 }
 ```

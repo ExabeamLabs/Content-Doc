@@ -5,7 +5,7 @@ Name = cef-trendmicro-security-alert-8
   Product = Deep Security Agent
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSSSSSZ"
   Conditions = [ """CEF:""", """WordPress Social Warfare Unauthenticated Settings Update Vulnerability (CVE-2019-9978)""" ]
-}
+
 cef-trendmicro-security-alert = {
   Vendor = Trend Micro
   Lms = ArcSight
@@ -33,5 +33,6 @@ cef-trendmicro-security-alert = {
     """\sduser=((\d{1,3}\.){3}\d{1,3}|({user_email}[^@\s]{1,2000}@[^\.\s]{1,2000}\.[^\s]{1,2000}?)|((({domain}[^\s\\\/=]{1,2000})[\\\/]{1,2000})?({user}[^\s]{1,2000}?)))(\s{1,100}\w+=|\s{0,100}$)""",
     """\sfilePath=({malware_url}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\sfileHash=({md5}\w+)(\s{1,100}\w+=|\s{0,100}$)"""
-  ]}
+  
+}
 ```

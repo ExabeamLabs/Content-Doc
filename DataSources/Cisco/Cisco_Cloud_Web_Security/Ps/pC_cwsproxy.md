@@ -31,6 +31,7 @@ Name = cws-proxy
       """\scs2=(?:unclassified|({category}.+?))\s\w+=""",
       """\sfileType=(?:-|({mime}.+?))\s\w+=""",
     ]
-  }
+  
+
 }
 ```

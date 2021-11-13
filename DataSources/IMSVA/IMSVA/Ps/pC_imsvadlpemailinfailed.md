@@ -15,6 +15,7 @@ Name = imsva-dlp-email-in-failed
     """\d\d\d\d \w+ \d\d \d\d:\d\d:\d\d (\+|\-)\d\d:\d\d\s{1,100}\d{1,100}\s{1,100}({attachments}({attachment}[^\s;]{1,2000})(;\s{1,100}[^;]{1,2000})*?)\s{0,100}$""",
   ]
   DupFields = [ "sender->external_address" ]
-}
+
+
 }
 ```

@@ -20,6 +20,7 @@ Name = crowdstrike-service-created-1
     """"ServiceImagePath":"({command_line}[^"]{1,2000})"""
   ]
   DupFields = [ "directory->process_directory" ]
-}
+
+
 }
 ```

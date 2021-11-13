@@ -23,6 +23,7 @@ Name = cef-cyberark-app-login
     """act=Logon\s{1,100}duser=(({domain}[^\\=]{1,2000})(\\)+)?({user}.+?)\s{1,100}\w+=""",
     """({app}Cyber-Ark)"""
   ]
-}
+
+
 }
 ```

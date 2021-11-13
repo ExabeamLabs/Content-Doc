@@ -17,6 +17,7 @@ Name = cef-salesforce-app-activity-1
     """Display\\=Changed Account page layout ({object}.+?)\s{0,100}(\w+=|$)""",
     """({app}Sales Cloud)""",
   ]
-}
+
+
 }
 ```

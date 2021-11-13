@@ -11,7 +11,7 @@ Name = mcafee-security-alert-1
       """,ThreatSourceUserName =(({domain}[^,\\\/]{1,2000})[\\\/]{1,2000})?({user}[^,\\\/]{1,2000}),""",
     """\WThreatSourceURL=({malware_url}[^,]{1,2000})""",
   ]
-}
+
 mcafee-dlp-alert = {
     Vendor = McAfee
     Product = McAfee Endpoint Security
@@ -37,5 +37,6 @@ mcafee-dlp-alert = {
       """,ThreatName =({alert_name}[^,]{1,2000})""",
       """,eventname=({alert_name}[^,]{1,2000})""",
       """,Vulnerability Name =({alert_name}[^,]{1,2000})"""
-    ]}
+    
+}
 ```

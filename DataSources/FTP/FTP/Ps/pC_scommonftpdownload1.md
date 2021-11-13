@@ -23,6 +23,7 @@ Name = s-common-ftp-download-1
     """\]sent\s{1,100}(\S+\s{1,100}){3}({bytes}\d{1,100})""",
   ]
   DupFields = [ "host->dest_host", "file_ext->host_file_ext" ]
-}
+
+
 }
 ```

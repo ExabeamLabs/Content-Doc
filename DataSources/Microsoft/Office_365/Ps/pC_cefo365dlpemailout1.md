@@ -22,6 +22,7 @@ Name = cef-O365-dlp-email-out-1
     """({direction}o)"""
   ]
   DupFields = [ "sender->email_user", "sender->orig_user", "alert_name->alert_type", "recipient->external_address", "to_address->recipients" ]
-}
+
+
 }
 ```

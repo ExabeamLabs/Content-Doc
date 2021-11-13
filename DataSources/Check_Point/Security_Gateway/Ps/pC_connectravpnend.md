@@ -15,6 +15,7 @@ Name = connectra-vpn-end
     """\|src=(?:({src_ip}[a-fA-F\d.:]{1,2000})|({src_host}[\w.\-]{1,2000}))\|""",
     """\|reason=({failure_reason}[^\|]{1,2000})\|"""
   ]
-}
+
+
 }
 ```

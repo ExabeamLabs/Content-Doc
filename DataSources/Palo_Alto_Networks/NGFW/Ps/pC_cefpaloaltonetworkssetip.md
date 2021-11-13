@@ -7,7 +7,7 @@ Name = cef-palo-alto-networks-setip
   Fields = ${PaloAltoParserTemplates.cef-palo-alto-networks-firewall.Fields}[
     """Private IP:\s{0,100}({src_translated_ip}[a-fA-F\d.:]{1,2000}[^\.\s])""",
   ]
-}
+
 cef-palo-alto-networks-firewall = {
   Vendor = Palo Alto Networks
   Product = NGFW
@@ -48,5 +48,6 @@ cef-palo-alto-networks-firewall = {
     """\scategoryOutcome=\/?({outcome}.+?)\s{1,100}(\w+=|$)""",
     """\sreason=(?:n\/a|({reason}.+?))\s{1,100}(\w+=|$)""",
   ]
-  DupFields = [ "subtype->action" ]}
+  DupFields = [ "subtype->action" 
+}
 ```

@@ -9,7 +9,7 @@ Name = cef-aix-process-created
     """\sfname=({process}({directory}\/.*?)({process_name}[^\/]{0,2000}?[^\\]))((\\\\)*\s|\))"""
     """\Wcs4=({pid}\d{1,100})"""
   ]
-}
+
 cef-unix-template = {
     Vendor = Unix
     Product = Unix Auditd
@@ -25,5 +25,6 @@ cef-unix-template = {
       """\WeventId=({alert_id}\d{1,100})""",
       """\Wsuser=({user}[^\s]{1,2000})""",
       """\Wdhost=({dest_host}[\w\-.]{1,2000})""",
-    ]}
+    
+}
 ```

@@ -28,6 +28,7 @@ Name = xml-sysmon-process-created-2
     """CallTrace:\s{0,20}({additional_info}[^<]{1,4000})</Message>"""
   ]
   DupFields = [ "directory->process_directory" ]
-}
+
+
 }
 ```

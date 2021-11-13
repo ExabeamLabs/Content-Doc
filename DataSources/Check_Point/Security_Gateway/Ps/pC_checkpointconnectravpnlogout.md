@@ -16,6 +16,7 @@ Name = checkpoint-connectra-vpn-logout
     """\,reason=({reason}[^\,]{1,2000})""",
     """exabeam_host=({host}[^\s]{1,2000})"""
   ]
-}
+
+
 }
 ```

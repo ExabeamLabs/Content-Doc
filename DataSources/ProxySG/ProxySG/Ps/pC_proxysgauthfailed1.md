@@ -15,6 +15,7 @@ Name = proxysg-auth-failed-1
     """dn:\s{0,100}'CN=({user_fullname}[^=]{1,2000}?),\s{0,100}({user_ou}OU=[^\s']{1,2000})""",
     """realm:\s{0,100}'({realm}[^']{1,2000})""",
   ]
-}
+
+
 }
 ```

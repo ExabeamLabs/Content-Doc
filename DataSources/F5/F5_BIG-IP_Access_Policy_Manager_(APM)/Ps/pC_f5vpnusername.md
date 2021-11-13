@@ -13,6 +13,7 @@ Name = f5-vpn-username
     """\s{1,100}01490143:5:.*?({session_id}[^\s:]{1,2000}): Logging Agent""",
     """\susername:\s{1,100}({user}\S+)""",
   ]
-}
+
+
 }
 ```

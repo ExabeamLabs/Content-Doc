@@ -25,6 +25,7 @@ Name = json-process-created-1
       """"SubjectDomainName":"(-|({domain}[^"]{1,2000}?))""""
     ]
     DupFields = [ "host->dest_host", "directory->process_directory" ]
-  }
+  
+
 }
 ```

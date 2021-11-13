@@ -17,6 +17,7 @@ Name = cef-google-password-update
     """"name"\s{0,10}:\s{0,10}"USER_EMAIL"[^"]{0,10}"value"\s{0,10}:\s{0,10}"({target_user}[^"@]{1,2000}@[^"]{1,2000})"""", 
     """destinationServiceName =({app}[^=]{1,2000}?)\s{0,10}(\w{1,2000}=|$)"""    
   ]
-}
+
+
 }
 ```

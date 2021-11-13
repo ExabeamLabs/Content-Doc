@@ -4,7 +4,7 @@
 Name = portox-nac-failed-logon-1
   DataType = "nac-failed-logon"
   Conditions = [ """|Portnox""","""|CLEAR|""","""act=Access""","""RADIUS failed to authenticate""","""'Authentication rejected'""" ]
-}
+
 portox-logon-events = {
     Vendor = Portnox
     Product =  Portnox CLEAR
@@ -20,5 +20,6 @@ portox-logon-events = {
       """cs4=(unknown|({auth_method}[^=]{1,2000}?))\s\w+=""",
       """cs2=({policy}[^=]{1,2000}?)\s\w+=""",
       """msg=({additional_info}[^=]{1,2000}?)\s\w+=""",
-    ]}
+    
+}
 ```

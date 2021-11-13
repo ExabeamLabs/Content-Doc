@@ -3,7 +3,7 @@
 {
 Name = cef-sysmon-file-write-1
   Conditions = [ """CEF:""", """|Microsoft Sysmon|Sysmon NXLog|""", """|SysmonTask-SYSMON_FILE_CREATE|File created|""" ]
-}
+
 cef-sysmon-file-write = {
   Vendor = Microsoft
   Product = Sysmon
@@ -27,5 +27,6 @@ cef-sysmon-file-write = {
     """\Wdpid=({pid}\d{1,100})""",
     """\Wcs1=({object}.+?)\s{1,100}(\w+=|$)""",
   ]
-  DupFields = [ "directory->process_directory", "host->dest_host" ]}
+  DupFields = [ "directory->process_directory", "host->dest_host" 
+}
 ```

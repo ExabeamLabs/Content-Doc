@@ -4,7 +4,7 @@
 Name = q-adfs-auth-successful-1
   DataType = "authentication-successful"
   Conditions = [ """Message=The Federation Service issued a valid token""", """EventIDCode=1200""" ]
-}
+
 q-adfs-auth = {
     Vendor = Microsoft
     Product = Windows
@@ -26,5 +26,6 @@ q-adfs-auth = {
       """<Server>({auth_server}[^<]{1,2000})</Server>""",
       """:({service}[^:>]{1,2000})</RelyingParty>""",
       """<PrimaryAuth>(N\/A|[^<]{1,2000}?\/({auth_method}[^<\/]{1,2000}))</PrimaryAuth>""",
-    ]}
+    
+}
 ```

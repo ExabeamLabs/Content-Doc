@@ -23,6 +23,7 @@ Name = auditd-unix-account-switch
     """res=({outcome}[^\s'"]{1,2000})"""
   ]
   DupFields = ["host->dest_host"]
-}
+
+
 }
 ```

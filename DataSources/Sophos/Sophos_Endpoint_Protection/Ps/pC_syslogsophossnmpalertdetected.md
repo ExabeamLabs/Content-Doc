@@ -18,6 +18,7 @@ Name = syslog-sophos-snmp-alert-detected
     """:=\s{0,100}({additional_info}[^"]{1,2000}?)\s{1,100}"({file_path}(({file_parent}.+)[\\\/])?({file_name}.+?))"\s{1,100}of\s{1,100}controlled application\s{1,100}'({alert_name}.+?)'\s{0,100}\(of type\s{1,100}({alert_type}.+?)\)\s{1,100}has been detected\.""",
   ]
   DupFields = [ "file_path->malware_url" ]
-}
+
+
 }
 ```

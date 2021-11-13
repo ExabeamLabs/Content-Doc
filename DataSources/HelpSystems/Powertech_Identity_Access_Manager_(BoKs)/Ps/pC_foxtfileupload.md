@@ -19,6 +19,7 @@ Name = foxt-file-upload
     """({event_code}sshftl_upload_ok)"""
   ]
   DupFields = [ "host->dest_host", "src_file_name->file_name" ]
-}
+
+
 }
 ```

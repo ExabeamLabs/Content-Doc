@@ -19,6 +19,7 @@ Name = cef-carbonblack-usb-activity
     """(\||\s)msg=Device\s{1,100}'({device_id}.+?)'""",
     """(\||\s)msg=Device\s{1,100}'({device_id}[^']{1,2000}?)\s{0,100}\([^']{1,2000}'""",
   ]
-}
+
+
 }
 ```

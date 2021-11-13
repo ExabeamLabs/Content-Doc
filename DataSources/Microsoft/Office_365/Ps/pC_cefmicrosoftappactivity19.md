@@ -13,7 +13,7 @@ Name = cef-microsoft-app-activity-19
     """LogonUserSid":"({user_sid}[^"]{1,2000})"""",
     """Subject":"\s{0,100}({subject}[^"]{1,2000}?)\s{0,100}"""",
   ]
-}
+
 cef-microsoft-app-activity = {
   Vendor = Microsoft
   Lms = ArcSight
@@ -43,5 +43,6 @@ cef-microsoft-app-activity = {
     """"User-Agent\\?"{1,20}:\\?"{1,20}({user_agent}[^"\\]{1,2000})"""
     """"UserAgent":"({user_agent}[^"]+)"""",
     """"ipAddress":"({dest_ip}[A-Fa-f.:\d]{1,2000})""""
-  ]}
+  
+}
 ```

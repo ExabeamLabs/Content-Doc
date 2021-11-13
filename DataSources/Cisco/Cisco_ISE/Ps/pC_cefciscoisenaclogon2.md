@@ -22,6 +22,7 @@ Name = cef-cisco-ise-nac-logon-2
     """({auth_type}Radius-Accounting)"""
   ]
   DupFields = [ "host->auth_server" ]
-}
+
+
 }
 ```

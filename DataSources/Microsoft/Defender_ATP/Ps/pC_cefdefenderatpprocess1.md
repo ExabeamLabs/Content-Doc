@@ -32,6 +32,7 @@ Name = cef-defender-atp-process-1
      """"FolderPath"{1,100}:"{1,100}({process}({directory}(\w:)?(?:[^:\]]{1,2000})?[\\\/])?({process_name}[^\\\/"\]]{1,2000}?))"""",    
   ]
   DupFields = ["category->event_name", "event_hub_namespace->host"]
-}
+
+
 }
 ```

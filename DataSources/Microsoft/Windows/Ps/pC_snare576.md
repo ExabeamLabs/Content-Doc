@@ -15,6 +15,7 @@ Name = snare-576
     """Security\t([^\s]{1,2000}\t){2}({outcome}.+?)\t""",
     """(?:Information|Audit Success|Success Audit).+?User Name:\s{1,100}({user}.+?)\s{1,100}Domain""",
     """\s{1,100}Domain:\s{1,100}({domain}[^\s]{1,2000})""",
-    """\s{1,100}Logon ID:\s{1,100}\([^,]{1,2000}
+    """\s{1,100}Logon ID:\s{1,100}\([^,]{1,2000
+
 }
 ```

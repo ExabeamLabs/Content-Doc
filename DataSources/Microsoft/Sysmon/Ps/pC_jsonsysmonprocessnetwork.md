@@ -30,6 +30,7 @@ Name = json-sysmon-process-network
     """"Image":"({process}({directory}[^"]{0,2000}?[\\\/]{1,2000})?({process_name}[^"\\\/]{1,2000}))"""",
   ]
   DupFields = [ "host->dest_host", "directory->process_directory", "process->path" ]
-}
+
+
 }
 ```

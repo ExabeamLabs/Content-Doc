@@ -11,6 +11,7 @@ Name = wazuh-unix-chkpwd-fail
     """password check failed for user \(({user}[^)]{1,2000})"""
   ]
   DupFields=["host->dest_host", "description->event_name"]
-}
+
+
 }
 ```

@@ -21,6 +21,7 @@ Name = mcafee-siem-4769
       """"Service_Name":"({dest_host}[^"]{1,2000}\$)""",
       """"CommandID":"({result_code}[^"]{1,2000})""",
     ]
-  }
+  
+
 }
 ```

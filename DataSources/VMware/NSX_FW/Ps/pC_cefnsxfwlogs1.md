@@ -23,6 +23,7 @@ Name = cef-nsx-fw-logs-1
     """categoryBehavior=\/({activity}[^\s]{1,2000})""",
     """dtz=({dest_country}[^\s]{1,2000})"""
   ]
-}
+
+
 }
 ```

@@ -23,6 +23,7 @@ Name = cyberark-account-switch
     """\sReason=({reason}[^=]{1,2000}?)\s{1,100}\w+="""
   ]
   DupFields=[ "host->dest_host" ]
-}
+
+
 }
 ```

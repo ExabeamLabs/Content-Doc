@@ -21,6 +21,7 @@ Name = chcom-web-activity
     """user_agent":"(-|({user_agent}[^"]{1,2000}))"""",
     """location":"(-|({full_url}[^"]))""""
   ]
-}
+
+
 }
 ```

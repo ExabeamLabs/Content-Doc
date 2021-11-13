@@ -21,6 +21,7 @@ Name = sophos-leef-epp-dlp-alert
           """FileSize=({bytes}\d{1,100})""",
           """DestinationValue=({target}.+?)\s{1,100}(\w+=|$)""",
           ]
-}
+
+
 }
 ```

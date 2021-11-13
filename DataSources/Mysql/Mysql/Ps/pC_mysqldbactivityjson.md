@@ -26,6 +26,7 @@ Name = mysql-db-activity-json
       """"query":"({db_query}[^"]{1,2000})""",
     ]
     DupFields = [ "dest_host->host" ]
-  }
+  
+
 }
 ```

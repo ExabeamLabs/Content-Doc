@@ -22,6 +22,7 @@ Name = s-xendesktop-remote-logon
     """\sUserSID="({user_sid}[^"]{1,2000}?)"""",
   ]
   DupFields = ["dest_ip->host", "dest_host->host"]
-}
+
+
 }
 ```

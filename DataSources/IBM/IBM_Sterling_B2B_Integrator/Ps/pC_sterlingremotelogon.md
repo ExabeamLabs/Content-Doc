@@ -14,6 +14,7 @@ Name = sterling-remote-logon
     """User session created for\s{1,100}({user_id}[^,]{1,2000})""",
     """({event_name}User session created)""",
   ]
-}
+
+
 }
 ```

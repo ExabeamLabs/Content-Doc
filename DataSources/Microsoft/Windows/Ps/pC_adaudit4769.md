@@ -22,6 +22,7 @@ Name = ad-audit-4769
     """TICKET_ENCRYPTION_TYPE\s{0,100}=\s{0,100}(null|-|({ticket_encryption_type}[^\s\]]{1,2000}))""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

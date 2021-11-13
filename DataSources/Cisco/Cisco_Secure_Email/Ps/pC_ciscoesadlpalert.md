@@ -24,6 +24,7 @@ Name = cisco-esa-dlp-alert
     """deviceDirection=({direction}\d)""",
   ]
   DupFields = [ "sender->user_email" ]
-}
+
+
 }
 ```

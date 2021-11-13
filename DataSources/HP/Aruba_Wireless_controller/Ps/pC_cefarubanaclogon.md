@@ -4,7 +4,7 @@
 Name = cef-aruba-nac-logon
   Product = Aruba Wireless controller
   Conditions = [ """|Aruba Networks|ClearPass|""", """|RADIUS Accounting|""" ]
-}
+
 cef-aruba-nac-logon-1 = {
   Vendor = HP
   Lms = ArcSight
@@ -24,5 +24,6 @@ cef-aruba-nac-logon-1 = {
     """cs4=({service}.+?)\s\w+=""",
    ]
   DupFields = [ "dest_ip->auth_server" ]  
- }}
+ 
+}
 ```

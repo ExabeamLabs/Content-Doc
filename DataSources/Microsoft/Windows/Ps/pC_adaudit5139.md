@@ -22,6 +22,7 @@ Name = ad-audit-5139
     """ACCOUNT_SID\s{0,100}=\s{0,100}(({user_sid}[^]]{1,2000}?))\s{0,100}\]""",	
   ]
   DupFields = [ "host->dest_host"]
-}
+
+
 }
 ```

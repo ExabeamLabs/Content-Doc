@@ -10,6 +10,7 @@ Name = cef-vontu-dlp-alert-2
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Fields = [
       """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-      """OCCURRED_ON=({time}\w+\s{1,100}\d{1,100}
+      """OCCURRED_ON=({time}\w+\s{1,100}\d{1,100
+
 }
 ```

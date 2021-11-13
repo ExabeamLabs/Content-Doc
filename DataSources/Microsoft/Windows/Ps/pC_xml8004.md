@@ -23,6 +23,7 @@ Name = xml-8004
      """security policy Network Security:\s{0,100}Restrict NTLM:\s{0,100}({policy}[^\.:]{1,2000})""",
   ]
   DupFields = ["resource->dest_host"]
-}
+
+
 }
 ```

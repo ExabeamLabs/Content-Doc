@@ -11,6 +11,7 @@ Name = s-lumension-usb
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[^\s]{1,2000})""",
-    """\sraw_g_hostname="{1,20}({dest_host}[^"]{1,2000})"{1,20}
+    """\sraw_g_hostname="{1,20}({dest_host}[^"]{1,2000})"{1,20
+
 }
 ```

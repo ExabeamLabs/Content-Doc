@@ -25,6 +25,7 @@ Name = cisco-nac-logon-3
     """\sAuthen-Method=({auth_method}[^,]{1,2000})""",
     """\sAcsSessionID=({session_id}[^,]{1,2000})""",
   ]
-}
+
+
 }
 ```

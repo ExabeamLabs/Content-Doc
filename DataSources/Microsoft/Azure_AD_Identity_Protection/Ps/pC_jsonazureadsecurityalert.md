@@ -24,6 +24,7 @@ Name = json-azure-ad-security-alert
      """"logonLocation"{1,20}:\s{0,100}"{1,20}({location}[^"]{1,2000})""""
      """"userPrincipalName":\s{0,100}"({user_upn}[^"]{1,2000}?)"""",
   ]
-}
+
+
 }
 ```

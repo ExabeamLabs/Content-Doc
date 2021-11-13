@@ -4,7 +4,7 @@
 Name = checkpoint-auth-successful
   DataType = "authentication-successful"
   Conditions = [ """CheckPoint""", """product:"""", """action:"Log In"""" ] 
-}
+
 checkpoint-auth = {
   Vendor = Check Point 
   Product = NGFW
@@ -28,5 +28,6 @@ checkpoint-auth = {
     """reason:"({failure_reason}[^"]{1,2000})""",
     """\Wsrc_machine_name:"({src_host}[\w\-.]{1,2000})""",
     """\Wifdir:"({direction}[^"]{1,2000})""",
-  ]}
+  
+}
 ```

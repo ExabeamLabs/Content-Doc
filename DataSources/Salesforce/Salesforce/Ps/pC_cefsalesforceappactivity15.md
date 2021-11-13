@@ -17,6 +17,7 @@ Name = cef-salesforce-app-activity-15
     """Display\\=Permission set ({resource}.+?): assigned to user ({object}.+?)\s{0,100}(\w+=|$)""",
     """({app}Sales Cloud)""",
   ]
-}
+
+
 }
 ```

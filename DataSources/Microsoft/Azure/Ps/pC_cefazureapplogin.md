@@ -21,6 +21,7 @@ Name = cef-azure-app-login
     """\ssuid=(Unknown|({user_email}[^@]{1,2000}@({email_domain}.+?)))\s{1,100}(\w+=|$)""",
     """CEF:([^\|]{0,2000}\|){2}({app}[^\|]{1,2000})""",
   ]
-}
+
+
 }
 ```

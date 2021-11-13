@@ -35,6 +35,7 @@ Name = juniper-nwc-vpn-start
     """hostname\s{1,100}({src_host}[^"]{1,2000})"""
   ]
   DupFields = ["user->account"]
-}
+
+
 }
 ```

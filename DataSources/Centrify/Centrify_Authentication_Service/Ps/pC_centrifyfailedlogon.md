@@ -18,6 +18,7 @@ Name = centrify-failed-logon
     """server=(({protocol}[^\\\/\s]{1,2000})[\\\/]{1,2000})?({dest_host}[^\\\/\s]{1,2000}?)\s{1,100}(\w+=|$)""",
     """reason=:?\s{0,100}({failure_reason}.+?)\s{1,100}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

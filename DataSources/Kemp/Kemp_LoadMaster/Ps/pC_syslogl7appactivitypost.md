@@ -17,6 +17,7 @@ Name = syslog-l7-app-activity-post
     """\sUser\s{0,100}\'({user}[^\s@]{1,2000}@[^\s@]{1,2000})\'""",
     """\srequested ({activity}POST) ({object}.+?)\s{0,100}$""",
   ]
-}
+
+
 }
 ```

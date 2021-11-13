@@ -14,6 +14,7 @@ Name = apache-failed-app-login-1
     """Authentication attempt from \[({src_ip}[a-fA-F0-9\.:]{1,2000})\,\s({dest_ip}[a-fA-F0-9\.:]{1,2000})\]""",
     """for user "{1,20}({user}[^"]{1,2000})"{1,20} failed""",
     ]
-}
+
+
 }
 ```

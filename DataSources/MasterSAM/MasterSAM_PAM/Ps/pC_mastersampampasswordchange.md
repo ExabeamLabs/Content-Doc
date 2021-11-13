@@ -7,7 +7,7 @@ Name = mastersam-pam-password-change
   Fields = ${MasterSAMParserTemplates.mastersam-pam-events.Fields} [
     """account=({target_user}[^"\s]{1,2000})""",
   ]
-}
+
 mastersam-pam-events = {
   Vendor = MasterSAM
   Product = MasterSAM PAM
@@ -22,5 +22,6 @@ mastersam-pam-events = {
     """\Wstatus=({outcome}.+?)\s{1,100}(\w+=|$)""",
     """\Wfailed_message=({failure_reason}.+?)\s{1,100}(\w+=|$)""",
     """\WActivity:\s{0,100}({activity}.+?)\s{1,100}User:""",
-  ]}
+  
+}
 ```

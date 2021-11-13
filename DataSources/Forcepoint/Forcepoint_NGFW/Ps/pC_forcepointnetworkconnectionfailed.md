@@ -8,7 +8,7 @@ Name = forcepoint-network-connection-failed
   Fields = ${ForcepointParserTemplates.forcepoint-template.Fields} [
     """proto=\s{0,100}({protocol}.+?)(\s\w+=)""",
     ]
-}
+
 forcepoint-template = {
   Vendor = Forcepoint
   Product = Forcepoint
@@ -55,5 +55,6 @@ forcepoint-template = {
     """Action="({action}[^"]{1,2000})""",
   ]
   DupFields = ["action->outcome"]
- }}
+ 
+}
 ```

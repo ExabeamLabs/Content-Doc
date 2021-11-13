@@ -22,6 +22,7 @@ Name = cef-tippingPoint-network-alert-1
     """app=({app}[^=]{1,2000}?)\s{0,100}\w+=""",
     """\sact=({outcome}[^=\s]{1,2000}?)\s{0,100}\w+="""
   ]
-}
+
+
 }
 ```

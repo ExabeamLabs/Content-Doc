@@ -23,6 +23,7 @@ Name = s-onguard-physical-badge-access
     """\WSEQ="({seq_num}[^"]{1,2000})""",
     """({direction}IN|OUT)""",
   ]
-}
+
+
 }
 ```

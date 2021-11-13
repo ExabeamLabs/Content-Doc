@@ -23,6 +23,7 @@ Name = akamai-web-activity
     """"edgeIP":"({dest_ip}[A-Fa-f:\d.]{1,2000})""",
     """"bytes":"({bytes}\d{1,100})""",
   ]
-}
+
+
 }
 ```

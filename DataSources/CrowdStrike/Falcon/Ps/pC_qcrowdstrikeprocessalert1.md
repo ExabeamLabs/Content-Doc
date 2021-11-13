@@ -27,6 +27,7 @@ Name = q-crowdstrike-process-alert-1
     """CrowdStrike-MD5=({md5}[^\s]{1,2000})""",
  ]
    DupFields = ["falcon_host_link->additional_info","command_line->process"]
-}
+
+
 }
 ```

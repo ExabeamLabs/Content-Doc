@@ -20,6 +20,7 @@ Name = vontu-email-dlp-1
       """\sBlocked="({outcome}[^"]{1,2000})"""
     ]
     DupFields = [ "protocol->alert_type" ]
-  }
+  
+
 }
 ```

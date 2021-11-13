@@ -23,6 +23,7 @@ Name = s-okta-app-activity
         """(Client"[^\}\{]{1,2000})"id":\s{0,100}"({user_agent}[^"]{1,2000})""",
         """requestUri":\s{0,100}"({request_uri}[^"]{1,2000}?)\s{0,100}"""",
     ]
-}
+
+
 }
 ```

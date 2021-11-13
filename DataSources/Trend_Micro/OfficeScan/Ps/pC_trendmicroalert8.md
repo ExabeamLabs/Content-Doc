@@ -18,6 +18,7 @@ Name = trend-micro-alert-8
     """Victim IP="({src_ip}[a-fA-F\d.:]{1,2000})"""
   ]
   DupFields = [ "alert_name->alert_type", "src_host->host" ]
-}
+
+
 }
 ```

@@ -21,6 +21,7 @@ Name = vmware-view-app-activity
     """\] ({additional_info}.+?)\s{0,100}$""",
     """Severity="({alert_severity}[^"]{1,2000})"""",
   ]
-}
+
+
 }
 ```

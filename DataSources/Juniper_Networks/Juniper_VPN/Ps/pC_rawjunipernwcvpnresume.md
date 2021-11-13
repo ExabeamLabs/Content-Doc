@@ -21,6 +21,7 @@ Name = raw-juniper-nwc-vpn-resume
     """({event_code}Session resumed)""",
   ] 
   DupFields = ["user->account"]
-}
+
+
 }
 ```

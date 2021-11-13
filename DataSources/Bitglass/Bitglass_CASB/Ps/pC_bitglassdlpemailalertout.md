@@ -25,6 +25,7 @@ Name = bitglass-dlp-email-alert-out
     """"emailto":\s{0,100}"({external_address}[^",@]{1,2000}@[^",]{1,2000})""",
     """"emailsubject":\s{0,100}"({subject}[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

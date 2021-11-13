@@ -17,6 +17,7 @@ Name = unix-auditd-account-deleted
     """\sses=({session_id}\d{1,100})""",
   ]
   DupFields = [ "host->dest_host" ]
-}
+
+
 }
 ```

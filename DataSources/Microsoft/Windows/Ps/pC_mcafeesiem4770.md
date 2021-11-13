@@ -20,6 +20,7 @@ Name = mcafee-siem-4770
       """"Service_Name":"({dest_host}[^"]{1,2000}\$)""",
       """({event_code}4770)"""
     ]
-  }
+  
+
 }
 ```

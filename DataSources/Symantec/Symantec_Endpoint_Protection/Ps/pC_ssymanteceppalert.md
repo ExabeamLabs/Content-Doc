@@ -21,6 +21,7 @@ Name = s-symantec-epp-alert
       """感染:\s{0,100}({infection_num}[^,]{1,2000})""",
     ]
     DupFields = [ "alert_name->alert_type" ]
-  }
+  
+
 }
 ```

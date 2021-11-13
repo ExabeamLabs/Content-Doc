@@ -19,6 +19,7 @@ Name = s-mimecast-app-login
     """\|src=(|({src_ip}[a-fA-F\d.:]{1,2000}))\|""",
     """\|action=(|({outcome}.+?))\|"""
   ]
-}
+
+
 }
 ```

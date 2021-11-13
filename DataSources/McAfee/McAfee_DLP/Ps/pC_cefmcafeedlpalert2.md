@@ -25,6 +25,7 @@ Name = cef-mcafee-dlp-alert-2
         """\WrequestProtocol=(|({protocol}.+?))\s\w+=""", 
       ]
       DupFields = ["alert_type->alert_name"]
-    }
+    
+
 }
 ```

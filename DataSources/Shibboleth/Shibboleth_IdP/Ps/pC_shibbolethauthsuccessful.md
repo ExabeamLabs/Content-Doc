@@ -15,6 +15,7 @@ Name = shibboleth-auth-successful
     """\d{8}T\d{6}Z\|([^\|]{0,2000}\|){7}({user}(?!\d{1,100})[^\|]{1,2000})\|""",
   ]
   DupFields = [ "request_binding->action" ]
-}
+
+
 }
 ```

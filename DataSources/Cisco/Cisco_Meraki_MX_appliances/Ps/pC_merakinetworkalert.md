@@ -21,6 +21,7 @@ Name = meraki-network-alert
     """\sdhost=({dest_host}\S+)""",
   ]
   DupFields = [ "alert_name->alert_type"]
-}
+
+
 }
 ```

@@ -16,6 +16,7 @@ Name = netscaler-failed-vpn-login
     """ Failure_reason "({failure_reason}[^"]{1,2000})""",
     """Browser .*?({user_agent}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

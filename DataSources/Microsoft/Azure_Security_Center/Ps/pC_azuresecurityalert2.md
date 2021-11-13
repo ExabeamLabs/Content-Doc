@@ -24,6 +24,7 @@ Name = azure-security-alert-2
     """"City":\s{0,100}"({location_city}[^"]{1,2000})""",
     """"AlertLink":"({malware_url}[^"]{1,2000})"""
     ]
-}
+
+
 }
 ```

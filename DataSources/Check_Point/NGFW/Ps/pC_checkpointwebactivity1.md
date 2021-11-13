@@ -32,6 +32,7 @@ Name = checkpoint-web-activity-1
     """\|server_outbound_bytes=({bytes_out}\d{1,100})""",
     """(U|u)ser=(-|({user_fullname}[^\(]{1,2000})\s{1,100}\(({user}[^\)]{1,2000}))""",
   ]
-}
+
+
 }
 ```

@@ -17,6 +17,7 @@ Name = assetview-usb-activity
     """("\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d.\d\d\d",){2}("[^"]{0,2000}",){56}"({usb_serial_number}[^"]{1,2000})""",
     """("\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d.\d\d\d",){2}("[^"]{0,2000}",){58}"({usb_vendor}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

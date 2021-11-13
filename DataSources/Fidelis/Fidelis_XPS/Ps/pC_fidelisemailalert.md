@@ -26,6 +26,7 @@ Name = fidelis-email-alert
         """DestPort="({dest_port}[^"]\d{1,100})""""
           ]
   DupFields = [ "email_user->user_email" ]
-}
+
+
 }
 ```

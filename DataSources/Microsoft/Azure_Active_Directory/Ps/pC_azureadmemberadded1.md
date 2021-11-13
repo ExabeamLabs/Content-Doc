@@ -9,7 +9,7 @@ Name = azure-ad-member-added-1
     """Group\.DisplayName\\[^}]{1,1000}"newValue\\":[\\"]{1,1000}({group_name}[^"\\]{1,2000})""",
     """"TargetResources":"\[\{\\"id\\":\\"({account_id}[^"\\]{1,2000})"""
   ]
-}
+
 azure-ad-activity-1 = {
    Vendor = Microsoft
    Product = Azure Active Directory
@@ -24,5 +24,6 @@ azure-ad-activity-1 = {
      """"Category":"({category}[^"]{1,2000})"""",
      """"app":\{[^,]{1,100},"displayName":"({app}[^"]{1,2000})"""", 
      """"LoggedByService":"({app}[^"]{1,2000})""""
-   ]}
+   
+}
 ```

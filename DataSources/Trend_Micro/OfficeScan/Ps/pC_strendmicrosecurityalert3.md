@@ -18,6 +18,7 @@ Name = s-trendmicro-security-alert-3
     """\sSource IP="({src_ip}[^"]{1,2000})""", 
   ]
   DupFields = [ "alert_type->alert_name" ]
-}
+
+
 }
 ```

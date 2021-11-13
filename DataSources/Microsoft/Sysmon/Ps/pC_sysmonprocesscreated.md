@@ -47,6 +47,7 @@ Name = sysmon-process-created
     """"ParentImage":"({parent_process}(({parent_directory}[^"]{0,2000}?)[\\\/]{1,20})?({parent_process_name}[^"\\\/]{1,2000}))""""
   ]
   DupFields = [ "host->dest_host", "directory->process_directory", "process->path" ]
-}
+
+
 }
 ```

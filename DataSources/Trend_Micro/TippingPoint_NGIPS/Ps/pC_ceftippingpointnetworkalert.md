@@ -21,6 +21,7 @@ Name = cef-tippingPoint-network-alert
     """\Wdst=({dest_ip}[\da-fA-F\.:]{1,2000})""",
     """\WdeviceSeverity=({alert_severity}.+?)\s{0,100}(\w+=|$)"""
   ]
-}
+
+
 }
 ```

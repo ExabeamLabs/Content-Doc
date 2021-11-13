@@ -20,6 +20,7 @@ Name = xml-sysmon-alert
     """<Data Name ='Image'>({process}({directory}[^<>"]{0,2000}?[\\\/]{1,2000})?({process_name}[^"<>\\\/]{0,2000}))<\/Data>"""
   ]
   DupFields = ["directory->process_directory","pid->process_id","host->dest_host"]
-}
+
+
 }
 ```

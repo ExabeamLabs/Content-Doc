@@ -4,7 +4,7 @@
 Name = s-xml-windows-member-3
   DataType = "windows-member-added"
   Conditions = [ "4756", "<Data Name ='TargetSid'>", """A member was added to a security-enabled universal group""" ]
-}
+
 s-xml-windows-member = {
   Vendor = Microsoft
   Product = Windows
@@ -35,5 +35,6 @@ s-xml-windows-member = {
     """<Data Name(\\)?='RemoteMachineAccount'>({dest_host}[^<]{1,2000})"""
     
   ]
-  DupFields = [ "host->dest_host" ]}
+  DupFields = [ "host->dest_host" 
+}
 ```

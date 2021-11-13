@@ -8,7 +8,7 @@ Name = cef-sap-app-activity-3
   Fields = ${SAPParserTemplates.cef-sap-app-activity.Fields} [
     """oldFileName =({file_name}.*?)\s\w+="""
   ]
-}
+
 cef-sap-app-activity = {
   Vendor = SAP
   Lms = Direct
@@ -37,5 +37,6 @@ cef-sap-app-activity = {
     """DeviceCustomString2=({transaction}.*?)\s\w+=""",
     """cs4=({result_code}\d{1,100})""", 
     """amac=({mac}.*?)\s\w+="""
-  ]}
+  
+}
 ```

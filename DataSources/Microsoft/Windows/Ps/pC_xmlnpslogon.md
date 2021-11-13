@@ -23,6 +23,7 @@ Name = xml-nps-logon
      """NAS IPv6 Address:\s{0,100}({dest_ip}[^\s-]{1,2000})\s""",
      """NAS Identifier:\s{0,100}({location}[^\s]]{1,2000})\s"""
   ]
-}
+
+
 }
 ```

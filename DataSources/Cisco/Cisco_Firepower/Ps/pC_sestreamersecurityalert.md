@@ -31,6 +31,7 @@ Name = s-estreamer-security-alert
     """"recordType"{1,20}:\s{0,100}({record_type}\d{1,100})"""
   ]
   DupFields = [ "alert_name->alert_type" , "process->process_name"]
-}
+
+
 }
 ```

@@ -13,6 +13,7 @@ Name = n-forwarded-cef-asa-nap-vpn-end
       """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\ssuser=({user}[^\r\n]{1,2000})\s{1,100}"""
     ]
-  }
+  
+
 }
 ```

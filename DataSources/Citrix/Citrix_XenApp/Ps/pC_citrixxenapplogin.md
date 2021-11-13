@@ -17,6 +17,7 @@ Name = citrix-xenapp-login
       """CTX_Application=({app}.+?)&CT""",
       """CTX_AppFriendlyNameURLENcoded=({app}.+?)&CT"""
     ]
-  }
+  
+
 }
 ```

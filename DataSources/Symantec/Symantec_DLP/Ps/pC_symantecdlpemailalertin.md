@@ -22,6 +22,7 @@ Name = symantec-dlp-email-alert-in
     """\+\d{1,100};\w+;({attachments}[^;]{1,2000};([^;]{0,2000};){3}([^;]{1,2000};){0,8})""",
   ]
   DupFields = [ "sender->external_address" ]
-}
+
+
 }
 ```

@@ -20,6 +20,7 @@ Name = n-forwarded-cef-failed-logon-2003
       """suser=({user}.+?)\s{1,100}\w+=""",
       """duser=({user}.+?)\s{1,100}\w+=""",
       """src=({src_ip}[a-fA-F:\d.]{1,2000})""",
-      """nitroSource_Logon_ID=\([^,]{1,2000}
+      """nitroSource_Logon_ID=\([^,]{1,2000
+
 }
 ```

@@ -25,6 +25,7 @@ Name = cylance-protect-file-alert
     """"({hash_type}SHA256)"{1,20}\s{0,100}:\s{0,100}"{1,20}({old_hash}[0-9A-Za-z]{1,2000})"{1,20}\s{0,100}[,\]\}]""",
   ]
   DupFields = [ "host->src_host", "old_hash->new_hash" ]
-}
+
+
 }
 ```

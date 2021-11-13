@@ -4,7 +4,7 @@
 Name = forcepoint-network-connection-successful-1
   DataType = "network-connection-successful"
   Conditions = [ """"New connection"""", """Action=""", """Event=""", """"Allow"""" ]
-}
+
 forcepoint-network-connection-template = {
   Vendor = Forcepoint
   Product = Forcepoint NGFW 
@@ -27,5 +27,6 @@ forcepoint-network-connection-template = {
     """Action="({action}[^"]{1,2000})""",
   ]
   DupFields = ["action->outcome"]
- }}
+ 
+}
 ```

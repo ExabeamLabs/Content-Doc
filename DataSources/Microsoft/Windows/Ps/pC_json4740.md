@@ -21,6 +21,7 @@ Name = json-4740
            ]
         DupFields = [ "host->dest_host",
                       "caller_domain->domain"]
-}
+
+
 }
 ```

@@ -18,6 +18,7 @@ Name = barracuda-vpn-login
     """({outcome}succeeded)"""
   ]
   DupFields = ["user->account"]
-}
+
+
 }
 ```

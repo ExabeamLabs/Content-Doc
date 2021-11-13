@@ -31,6 +31,7 @@ Name = ad-audit-4663
     """\WACCESSES\s{0,100}=\s{0,100}(null|({accesses}[^\]]{1,2000}?))\s{0,100}\]""",
   ]
   DupFields = [ "host->dest_host", "directory->process_directory", "object->file_path" ]
-}
+
+
 }
 ```

@@ -4,7 +4,7 @@
 Name = cef-juniper-access-control-3
   DataType = "access-control"
   Conditions = [ """CEF:""", """|McAfee|ESM|""", """|SecureAccess_v7 Removed User from Authentication Server|""" ]
-}
+
 cef-juniper-vpn-events = {
   Vendor = Juniper Networks
   Product = Juniper SRX
@@ -22,5 +22,6 @@ cef-juniper-vpn-events = {
     """\Wsuser=({user_email}[^\s@]{1,2000}@[^\s@]{1,2000})""",
     """\Wact=({outcome}.+?)\s{1,100}(\w+=|$)""",
   ]
-  DupFields = ["user->account"]}
+  DupFields = ["user->account"
+}
 ```

@@ -15,6 +15,7 @@ Name = sourcefire-network-alert-5
     """({alert_type}PSECURE_VIOLATION):\s{0,100}({alert_name}[^,]{1,2000}?),""",
     """caused by MAC address ({src_mac}[a-fA-F\d.:]{1,2000}) on port ({src_interface}[^\.]{1,2000})"""
   ]
-}
+
+
 }
 ```

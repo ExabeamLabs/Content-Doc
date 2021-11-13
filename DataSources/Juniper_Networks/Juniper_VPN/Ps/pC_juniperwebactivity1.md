@@ -21,6 +21,7 @@ Name = juniper-web-activity-1
     """\WRequest:\s{0,100}({method}[^\s"]{1,2000})\s{1,100}({uri_path}\/[^",\s]{0,2000})""",
     """\WHost:\s{0,100}({web_domain}[^\s",:]{1,2000})""",
   ]
-}
+
+
 }
 ```

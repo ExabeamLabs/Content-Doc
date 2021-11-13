@@ -27,6 +27,7 @@ Name = json-fireeye-alert-endpoint
     """"file_name":"({file_path}({file_parent}.*?)({file_name}[^\\\."]{1,2000}(\.({file_ext}[^\\\."]{1,2000}))?))"""",
     """"file_name":"({file_name}[^\\\."]{1,2000}(\.({file_ext}[^\\\."]{1,2000}))?)""""
   ]
-}
+
+
 }
 ```

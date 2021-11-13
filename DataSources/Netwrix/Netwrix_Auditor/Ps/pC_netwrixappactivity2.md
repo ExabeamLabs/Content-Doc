@@ -3,7 +3,7 @@
 {
 Name = netwrix-app-activity-2
   Conditions = [ """NetWrix""", """>1002</EventID>""", """The following audit event was detected:""" ]
-}
+
 netwrix-app-activity = {
   Vendor = Netwrix
   Product = Netwrix Auditor
@@ -21,5 +21,6 @@ netwrix-app-activity = {
     """Detected by:\s{0,100}({host}[\w\-.]{1,2000})""",
     """>({event_code}[^\<]{1,2000})<\/EventID>""",
     """<EventRecordID>({record_id}[^\<]{1,2000})<\/EventRecordID>""",
-  ]}
+  
+}
 ```

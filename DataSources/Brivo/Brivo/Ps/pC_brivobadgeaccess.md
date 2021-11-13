@@ -17,6 +17,7 @@ Name = brivo-badge-access
     """"lastName":\s{0,100}"({last_name}[^"]{1,2000})""",
     """"description":\s{0,100}"({outcome}[^"]{1,2000})""",
   ]
-}
+
+
 }
 ```

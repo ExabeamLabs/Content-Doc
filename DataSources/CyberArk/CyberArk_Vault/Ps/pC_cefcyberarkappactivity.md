@@ -25,6 +25,7 @@ Name = cef-cyberark-app-activity
     """\Wact="?({activity}[^"=\[\]]{1,2000}?)"?(\[|\]|\s{1,100}\w+=|\s{0,100}$)"""
   ]
   DupFields=[ "file_name->object", "file_path->additional_info", "activity->accesses" ]
-}
+
+
 }
 ```

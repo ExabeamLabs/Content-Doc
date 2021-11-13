@@ -5,7 +5,7 @@ Name = pan-cef-alert-1
   TimeFormat = "MMM dd yyyy HH:mm:ss z"
   DataType = "network-alert"
   Conditions = [ """|Palo Alto Networks|PAN-OS|""","""file|THREAT|""" ]
-}
+
 pan-cef-alert = {
   Vendor = Palo Alto Networks
   Product = WildFire
@@ -46,5 +46,6 @@ pan-cef-alert = {
       {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address"]},
       {EntityType="device", Name ="dest_address", Fields=["dest_ip->ip_address"]},
       {EntityType="user", Name ="windows_id", Fields=["user->windows_id"]}
-    ]}
+    
+}
 ```

@@ -22,6 +22,7 @@ Name = github-audit-team-activity
     """({additional_info}"{1,20}ldap_mapped"{1,20}:[^,]{1,2000})""",
     """({app}github)"""
   ]
-}
+
+
 }
 ```

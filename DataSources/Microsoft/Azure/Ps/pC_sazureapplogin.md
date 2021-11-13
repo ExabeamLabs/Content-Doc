@@ -20,6 +20,7 @@ Name = s-azure-app-login
     """"userPrincipalName":\s{0,100}"({user_email}[^\s"@]{1,2000}@({email_domain}[^\s"@]{1,2000}))""",
     """"failureReason":\s{0,100}"{0,20}(null|({failure_reason}[^,"]{1,2000}))""",
   ]
-}
+
+
 }
 ```

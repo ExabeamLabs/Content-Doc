@@ -19,6 +19,7 @@ Name = netscaler-cef-failed-vpn-login
     """\Wsuser=({user}\S+)""",
     """\Wreason=({failure_reason}.+?)\s{0,100}(\w+=|$)""",
   ]
-}
+
+
 }
 ```

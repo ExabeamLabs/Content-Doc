@@ -21,6 +21,7 @@ Name = n-forwarded-cef-4724
       """src=({src_ip}[A-Fa-f:\d.]{1,2000})""",
     ]
     DupFields=[ "host->dest_host" ]
-  }
+  
+
 }
 ```

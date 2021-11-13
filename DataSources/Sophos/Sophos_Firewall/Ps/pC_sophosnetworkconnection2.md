@@ -27,6 +27,7 @@ Name = sophos-network-connection-2
     """name="({event_name}[^"]{1,2000})""",
     """severity="({alert_severity}[^"]{1,2000})"""
   ]
-}
+
+
 }
 ```

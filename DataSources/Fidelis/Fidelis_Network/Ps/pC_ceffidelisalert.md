@@ -33,6 +33,7 @@ Name = cef-fidelis-alert
     """"APPLICATION_USER":"(({user_email}[^@]{1,2000}?@[^"]{1,2000})|({user}[^"]{1,2000}?))"""",
     """"MD5":"({md5_sum}[^"]{1,2000})""""
   ]
-}
+
+
 }
 ```

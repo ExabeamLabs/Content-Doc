@@ -25,6 +25,7 @@ Name = cef-mcafee-network-alert
     """\Wdpt=({dest_port}\d{1,100})""",
   ]
   DupFields = [ "alert_name->policy" ]
-}
+
+
 }
 ```
