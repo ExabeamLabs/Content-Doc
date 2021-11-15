@@ -16,9 +16,9 @@ ping-authentication_events = {
     Lms = Splunk
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
     Fields = [
-      """"recorded":\s{1,100}"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)"""",
+      """"recorded":\s{0,100}"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)"""",
       """exabeam_host=({host}[^\s]{1,2000})""",
-      """"name":\s"({user}[^"]{1,2000})"""",
+      """"name":\s{0,100}"({user}[^"]{1,2000})"""",
     
 }
 ```
