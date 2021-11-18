@@ -11,6 +11,7 @@ Name = lieberman-erpm
   Fields = [
     """"@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d)Z"""",
     """\d\d:\d\d:\d\d\s({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """"hostname":"({host}[^"]{1,2000})"""",
     """sEventID=\\"({event_name}[^"]{1,2000})\\"""",
     """sOriginatingSystem=\\"({src_host}[^"]{1,2000})\\"""",
     """"(sSystemName|TargetSystem)\\"\svalue=\\"({dest_host}[^"]{1,2000})\\"""",  
