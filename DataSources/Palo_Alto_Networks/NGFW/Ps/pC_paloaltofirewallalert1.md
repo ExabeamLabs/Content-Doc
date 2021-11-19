@@ -3,7 +3,7 @@
 {
 Name = paloalto-firewall-alert-1
   DataType = "alert"
-  Conditions = [ """"LogType":"THREAT"""", """"VendorSeverity":"""", """DirectionOfAttack":"""", """"Action":"alert"""" ]
+  Conditions = [ """"LogType":"THREAT"""", """"VendorSeverity":"""", """DirectionOfAttack":"""", """"Subtype":"url"""" ]
   Fields = ${PaloAltoParserTemplates.paloalto-vpn.Fields}[
     """"Action":"({action}[^"]{1,20000})"""",
     """"NATSource":"({src_translated_ip}[a-fA-F\d:.]{1,2000})""",
@@ -23,6 +23,7 @@ paloalto-vpn = {
   Fields = [
     """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,9}Z)""",
     """"host":"({host}[^"]{1,2000})"""",
+    """"DeviceName":"({host}[^"\s]{1,2000})"""",
     """"PrivateIPv(4|6)":"({src_ip}[a-fA-F\d:.]{1,2000})""",
     """"PublicIPv(4|6)":"({dest_ip}[1-fA-F\d.:]{1,2000})""",
     """"SourceAddress":"({src_ip}[a-fA-F\d:.]{1,2000})""",

@@ -15,7 +15,8 @@ Name = unix-auth-failed-5
     """({host}[\w\.\-]{1,2000})?:?\s{0,100}sudo:""",
     """ruser=({user}[^\s]{1,2000})""",
     """rhost=({src_ip}[\da-fA-F.:]{1,2000})""",
-    """({failure_reason}authentication ({outcome}failure))"""
+    """({failure_reason}authentication ({outcome}failure))""",
+    """\suid=({user_id}[^\s]{1,2000})\s"""
   ]
 
 
