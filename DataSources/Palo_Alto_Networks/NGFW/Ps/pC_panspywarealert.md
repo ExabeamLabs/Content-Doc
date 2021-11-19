@@ -1,9 +1,18 @@
 #### Parser Content
 ```Java
 {
-Name = pan-vpn-login-1
-  DataType = "vpn-login"
-  Conditions = [ """"LogType":"USERID"""", """"DeviceSN":"""", """"Subtype":"login"""" ]
+Name = pan-spyware-alert
+  DataType = "alert"
+  Conditions = [ """"LogType":"THREAT"""", """"Subtype":"spyware"""" ]
+  Fields = ${PaloAltoParserTemplates.paloalto-vpn.Fields}[
+    """"Action":"({action}[^"]{1,20000})"""",
+    """"VendorSeverity":"({alert_severity}[^"]{1,2000})"""",
+    """"({alert_name}spyware)"""",
+    """"Subtype":"({alert_type}[^"]{1,2000})"""",
+    """"ThreatCategory":"({threat_category}[^"]{1,2000})"""",
+    """"DirectionOfAttack":"({direction}[^"]{1,2000})"""",
+    """"ThreatID":"({alert_name}[^"\(]{1,20000})(\(({alert_id}\d{1,100})\))?"""
+  ]
 
 paloalto-vpn = {
   Vendor = Palo Alto Networks

@@ -1,9 +1,16 @@
 #### Parser Content
 ```Java
 {
-Name = pan-vpn-login-1
-  DataType = "vpn-login"
-  Conditions = [ """"LogType":"USERID"""", """"DeviceSN":"""", """"Subtype":"login"""" ]
+Name = pan-file-alert
+  DataType = "file-alert"
+  Conditions = [ """"LogType":"THREAT"""", """"SubType":"file"""", """"Action":"alert"""" ]
+  Fields = ${PaloAltoParserTemplates.paloalto-vpn.Fields}[
+    """"Action":"({action}[^"]{1,20000})"""",
+    """"VendorSeverity":"({alert_severity}[^"]{1,2000})"""",
+    """"FileName":"({file_name}[^"]{0,2000}?(\.({file_ext}[^"\.]{1,2000}))?)"""",
+    """"Rule":"({alert_name}[^"]{1,2000})"""",
+    """"SubType":"({alert_type}[^"]{1,2000})""""
+  ]
 
 paloalto-vpn = {
   Vendor = Palo Alto Networks
