@@ -5,6 +5,6 @@ Vendor: Avaya
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   0    |     0      |      2      |    2    |
+|   3   |   0    |     0      |      2      |    2    |
 
 | Event Type | Rules | Models || ---------- | ----- | ------ |

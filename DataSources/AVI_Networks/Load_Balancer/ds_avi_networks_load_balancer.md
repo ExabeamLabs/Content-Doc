@@ -4,16 +4,16 @@ Product: Load Balancer
 ----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  16   |   9    |     5      |      1      |    1    |
+|  18   |   10   |     5      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  account-switch<br> ↳[avi-lb-app-login](Ps/pC_avilbapplogin.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_avi_networks_load_balancer_Abnormal_Authentication_&_Access.md) |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  account-switch<br> ↳[avi-lb-app-login](Ps/pC_avilbapplogin.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>4 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_avi_networks_load_balancer_Abnormal_Authentication_&_Access.md) |
 |    [Brute Force Attack](../../../UseCases/uc_brute_force_attack.md)    |  account-switch<br> ↳[avi-lb-app-login](Ps/pC_avilbapplogin.md)<br> | T1003 - OS Credential Dumping<br>T1078 - Valid Accounts<br>T1098 - Account Manipulation<br>    | [<ul><li>6 Rules</li></ul><ul><li>5 Models</li></ul>](RM/r_m_avi_networks_load_balancer_Brute_Force_Attack.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  account-switch<br> ↳[avi-lb-app-login](Ps/pC_avilbapplogin.md)<br> | T1204 - User Execution<br>    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_avi_networks_load_balancer_Malware.md)    |
 |    [Other](../../../UseCases/uc_other.md)    |  account-switch<br> ↳[avi-lb-app-login](Ps/pC_avilbapplogin.md)<br> |    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_avi_networks_load_balancer_Other.md)    |
-|    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  account-switch<br> ↳[avi-lb-app-login](Ps/pC_avilbapplogin.md)<br> | T1068 - Exploitation for Privilege Escalation<br>T1078 - Valid Accounts<br>    | [<ul><li>4 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_avi_networks_load_balancer_Privilege_Abuse.md)    |
-|    [Privilege Escalation](../../../UseCases/uc_privilege_escalation.md)    |  account-switch<br> ↳[avi-lb-app-login](Ps/pC_avilbapplogin.md)<br> | T1003 - OS Credential Dumping<br>T1068 - Exploitation for Privilege Escalation<br>T1078 - Valid Accounts<br>T1098 - Account Manipulation<br> | [<ul><li>10 Rules</li></ul><ul><li>6 Models</li></ul>](RM/r_m_avi_networks_load_balancer_Privilege_Escalation.md)    |
+|    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  account-switch<br> ↳[avi-lb-app-login](Ps/pC_avilbapplogin.md)<br> | T1068 - Exploitation for Privilege Escalation<br>T1078 - Valid Accounts<br>    | [<ul><li>4 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_avi_networks_load_balancer_Privilege_Abuse.md)    |
+|    [Privilege Escalation](../../../UseCases/uc_privilege_escalation.md)    |  account-switch<br> ↳[avi-lb-app-login](Ps/pC_avilbapplogin.md)<br> | T1003 - OS Credential Dumping<br>T1068 - Exploitation for Privilege Escalation<br>T1078 - Valid Accounts<br>T1098 - Account Manipulation<br> | [<ul><li>10 Rules</li></ul><ul><li>7 Models</li></ul>](RM/r_m_avi_networks_load_balancer_Privilege_Escalation.md)    |
 |    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  account-switch<br> ↳[avi-lb-app-login](Ps/pC_avilbapplogin.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_avi_networks_load_balancer_Privileged_Activity.md)    |
 
 ATT&CK Matrix for Enterprise

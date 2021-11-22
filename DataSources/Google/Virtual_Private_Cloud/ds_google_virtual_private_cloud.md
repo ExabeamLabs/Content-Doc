@@ -4,14 +4,14 @@ Product: Virtual Private Cloud
 ------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  62   |   24   |     9      |      1      |    1    |
+|  44   |   24   |     9      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 | [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  netflow-connection<br> ↳[gcpvpc-netflow-connection](Ps/pC_gcpvpcnetflowconnection.md)<br> | T1021 - Remote Services<br>T1046 - Network Service Scanning<br>    | [<ul><li>3 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_google_virtual_private_cloud_Compromised_Credentials.md) |
 |       [Data Exfiltration](../../../UseCases/uc_data_exfiltration.md)       |  netflow-connection<br> ↳[gcpvpc-netflow-connection](Ps/pC_gcpvpcnetflowconnection.md)<br> | T1048.003 - Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol<br>T1071.002 - Application Layer Protocol: File Transfer Protocols<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_google_virtual_private_cloud_Data_Exfiltration.md)    |
-|    [Evasion](../../../UseCases/uc_evasion.md)    |  netflow-connection<br> ↳[gcpvpc-netflow-connection](Ps/pC_gcpvpcnetflowconnection.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_google_virtual_private_cloud_Evasion.md)    |
-|        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  netflow-connection<br> ↳[gcpvpc-netflow-connection](Ps/pC_gcpvpcnetflowconnection.md)<br> | T1021 - Remote Services<br>T1021.001 - Remote Services: Remote Desktop Protocol<br>T1043 - Commonly Used Port<br>T1046 - Network Service Scanning<br>T1071 - Application Layer Protocol<br>T1090.002 - Proxy: External Proxy<br>T1571 - Non-Standard Port<br> | [<ul><li>54 Rules</li></ul><ul><li>24 Models</li></ul>](RM/r_m_google_virtual_private_cloud_Lateral_Movement.md)      |
+|    [Evasion](../../../UseCases/uc_evasion.md)    |  netflow-connection<br> ↳[gcpvpc-netflow-connection](Ps/pC_gcpvpcnetflowconnection.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_google_virtual_private_cloud_Evasion.md)    |
+|        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  netflow-connection<br> ↳[gcpvpc-netflow-connection](Ps/pC_gcpvpcnetflowconnection.md)<br> | T1021 - Remote Services<br>T1021.001 - Remote Services: Remote Desktop Protocol<br>T1043 - Commonly Used Port<br>T1046 - Network Service Scanning<br>T1071 - Application Layer Protocol<br>T1090.002 - Proxy: External Proxy<br>T1571 - Non-Standard Port<br> | [<ul><li>38 Rules</li></ul><ul><li>24 Models</li></ul>](RM/r_m_google_virtual_private_cloud_Lateral_Movement.md)      |
 |    [Other](../../../UseCases/uc_other.md)    |  netflow-connection<br> ↳[gcpvpc-netflow-connection](Ps/pC_gcpvpcnetflowconnection.md)<br> |    | [<ul><li>4 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_google_virtual_private_cloud_Other.md)    |
 
 ATT&CK Matrix for Enterprise

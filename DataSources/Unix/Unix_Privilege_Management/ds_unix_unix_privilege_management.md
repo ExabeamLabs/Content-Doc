@@ -4,12 +4,12 @@ Product: Unix Privilege Management
 ----------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  33   |   20   |     4      |      1      |    1    |
+|  35   |   19   |     4      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Data Exfiltration](../../../UseCases/uc_data_exfiltration.md) |  dlp-alert<br> ↳[upm-account-switch](Ps/pC_upmaccountswitch.md)<br> | T1020 - Automated Exfiltration<br>T1048 - Exfiltration Over Alternative Protocol<br>T1071 - Application Layer Protocol<br>T1204 - User Execution<br> | [<ul><li>29 Rules</li></ul><ul><li>18 Models</li></ul>](RM/r_m_unix_unix_privilege_management_Data_Exfiltration.md) |
-|         [Data Leak](../../../UseCases/uc_data_leak.md)         |  dlp-alert<br> ↳[upm-account-switch](Ps/pC_upmaccountswitch.md)<br> | T1020 - Automated Exfiltration<br>T1048 - Exfiltration Over Alternative Protocol<br>T1071 - Application Layer Protocol<br>T1204 - User Execution<br> | [<ul><li>29 Rules</li></ul><ul><li>18 Models</li></ul>](RM/r_m_unix_unix_privilege_management_Data_Leak.md)         |
+| [Data Exfiltration](../../../UseCases/uc_data_exfiltration.md) |  dlp-alert<br> ↳[upm-account-switch](Ps/pC_upmaccountswitch.md)<br> | T1020 - Automated Exfiltration<br>T1048 - Exfiltration Over Alternative Protocol<br>T1071 - Application Layer Protocol<br>T1204 - User Execution<br> | [<ul><li>31 Rules</li></ul><ul><li>17 Models</li></ul>](RM/r_m_unix_unix_privilege_management_Data_Exfiltration.md) |
+|         [Data Leak](../../../UseCases/uc_data_leak.md)         |  dlp-alert<br> ↳[upm-account-switch](Ps/pC_upmaccountswitch.md)<br> | T1020 - Automated Exfiltration<br>T1048 - Exfiltration Over Alternative Protocol<br>T1071 - Application Layer Protocol<br>T1204 - User Execution<br> | [<ul><li>31 Rules</li></ul><ul><li>17 Models</li></ul>](RM/r_m_unix_unix_privilege_management_Data_Leak.md)         |
 |    [Malware](../../../UseCases/uc_malware.md)    |  dlp-alert<br> ↳[upm-account-switch](Ps/pC_upmaccountswitch.md)<br> | T1204 - User Execution<br>    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_unix_unix_privilege_management_Malware.md)    |
 |    [Other](../../../UseCases/uc_other.md)    |  dlp-alert<br> ↳[upm-account-switch](Ps/pC_upmaccountswitch.md)<br> |    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_unix_unix_privilege_management_Other.md)    |
 

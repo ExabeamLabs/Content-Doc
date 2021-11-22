@@ -5,9 +5,9 @@ Vendor: Barracuda
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  12   |   2    |     0      |      5      |    5    |
+|  12   |   1    |     0      |      5      |    5    |
 
-| Event Type                    | Rules | Models                                                                                                                                                |
-| ----------------------------- | ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| network-connection-failed     |       |  • <b>A-NET-OdPort-Outbound</b>: Outbound destination ports per organization<br> • <b>A-NET-HdPort-Outbound</b>: Outbound destination ports per asset |
-| network-connection-successful |       |  • <b>A-NET-OdPort-Outbound</b>: Outbound destination ports per organization<br> • <b>A-NET-HdPort-Outbound</b>: Outbound destination ports per asset |
+| Event Type                    | Rules | Models                                                                       |
+| ----------------------------- | ----- | ---------------------------------------------------------------------------- |
+| network-connection-failed     |       |  • <b>A-NET-OdPort-Outbound</b>: Outbound destination ports per organization |
+| network-connection-successful |       |  • <b>A-NET-OdPort-Outbound</b>: Outbound destination ports per organization |

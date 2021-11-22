@@ -4,11 +4,11 @@ Product: Phishme
 ----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  31   |   12   |     5      |      1      |    1    |
+|  31   |   11   |     5      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  security-alert<br> ↳[cef-phishme-security-alert](Ps/pC_cefphishmesecurityalert.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>20 Rules</li></ul><ul><li>10 Models</li></ul>](RM/r_m_cofense_phishme_Compromised_Credentials.md) |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  security-alert<br> ↳[cef-phishme-security-alert](Ps/pC_cefphishmesecurityalert.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>20 Rules</li></ul><ul><li>9 Models</li></ul>](RM/r_m_cofense_phishme_Compromised_Credentials.md) |
 |        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  security-alert<br> ↳[cef-phishme-security-alert](Ps/pC_cefphishmesecurityalert.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_cofense_phishme_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  security-alert<br> ↳[cef-phishme-security-alert](Ps/pC_cefphishmesecurityalert.md)<br> | T1078 - Valid Accounts<br>T1204 - User Execution<br>    | [<ul><li>4 Rules</li></ul><ul><li>3 Models</li></ul>](RM/r_m_cofense_phishme_Malware.md)    |
 |    [Other](../../../UseCases/uc_other.md)    |  security-alert<br> ↳[cef-phishme-security-alert](Ps/pC_cefphishmesecurityalert.md)<br> |    | [<ul><li>4 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_cofense_phishme_Other.md)    |

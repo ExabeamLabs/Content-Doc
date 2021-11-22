@@ -5,6 +5,8 @@ Vendor: F5
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   4   |   0    |     0      |      2      |    2    |
+|   5   |   2    |     0      |      2      |    2    |
 
-| Event Type | Rules | Models || ---------- | ----- | ------ |
+| Event Type | Rules | Models                                                                                                                    |
+| ---------- | ----- | ------------------------------------------------------------------------------------------------------------------------- |
+| vpn-logout |       |  • <b>DC14a</b>: Count of assets accessed by this user<br> • <b>DC07a</b>: Count of assets accessed by this user remotely |

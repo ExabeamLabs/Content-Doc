@@ -4,11 +4,11 @@ Product: Suricata
 -----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  37   |   17   |     5      |      1      |    1    |
+|  39   |   17   |     5      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-login<br> ↳[suricata-network-alert-1](Ps/pC_suricatanetworkalert1.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>23 Rules</li></ul><ul><li>12 Models</li></ul>](RM/r_m_suricata_suricata_Abnormal_Authentication_&_Access.md) |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-login<br> ↳[suricata-network-alert-1](Ps/pC_suricatanetworkalert1.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>25 Rules</li></ul><ul><li>12 Models</li></ul>](RM/r_m_suricata_suricata_Abnormal_Authentication_&_Access.md) |
 |          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  app-login<br> ↳[suricata-network-alert-1](Ps/pC_suricatanetworkalert1.md)<br> | T1020 - Automated Exfiltration<br>T1071 - Application Layer Protocol<br>T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>10 Rules</li></ul><ul><li>6 Models</li></ul>](RM/r_m_suricata_suricata_Compromised_Credentials.md)    |
 |    [Data Access](../../../UseCases/uc_data_access.md)    |  app-login<br> ↳[suricata-network-alert-1](Ps/pC_suricatanetworkalert1.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>4 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_suricata_suricata_Data_Access.md)    |
 |    [Evasion](../../../UseCases/uc_evasion.md)    |  app-login<br> ↳[suricata-network-alert-1](Ps/pC_suricatanetworkalert1.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_suricata_suricata_Evasion.md)    |

@@ -7,7 +7,7 @@ Name = cisco-dns-response-1
   Lms = Syslog
   DataType = "dns-response"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ """Skyformation""", """"src-endpoint":"DNS"""", """"src-application-name":"Cisco Umbrella"""", """"action":""", """"queryType":""" ]
+  Conditions = [ """"src-endpoint":"DNS"""", """"src-application-name":"Cisco Umbrella"""", """"action":""", """"queryType":""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"mostGranularIdentity":"({host}[^"]{1,2000})"""",
