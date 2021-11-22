@@ -5,8 +5,9 @@ Vendor: F5
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   5   |   1    |     0      |      6      |    6    |
+|   5   |   3    |     0      |      6      |    6    |
 
-| Event Type    | Rules | Models                                                                          |
-| ------------- | ----- | ------------------------------------------------------------------------------- |
-| process-alert |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset |
+| Event Type    | Rules | Models                                                                                                                    |
+| ------------- | ----- | ------------------------------------------------------------------------------------------------------------------------- |
+| process-alert |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset                                           |
+| vpn-logout    |       |  • <b>DC14a</b>: Count of assets accessed by this user<br> • <b>DC07a</b>: Count of assets accessed by this user remotely |

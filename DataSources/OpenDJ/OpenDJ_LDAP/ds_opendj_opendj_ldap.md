@@ -4,12 +4,12 @@ Product: OpenDJ LDAP
 --------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  32   |   14   |     5      |      2      |    2    |
+|  20   |   13   |     5      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 | [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  authentication-failed<br> ↳[opendj-auth-uid](Ps/pC_opendjauthuid.md)<br><br> network-alert<br> ↳[opendj-auth-uid](Ps/pC_opendjauthuid.md)<br> ↳[opendj-auth-uid](Ps/pC_opendjauthuid.md)<br> | T1133 - External Remote Services<br>    | [<ul><li>3 Rules</li></ul><ul><li>3 Models</li></ul>](RM/r_m_opendj_opendj_ldap_Abnormal_Authentication_&_Access.md) |
-|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  authentication-failed<br> ↳[opendj-auth-uid](Ps/pC_opendjauthuid.md)<br><br> network-alert<br> ↳[opendj-auth-uid](Ps/pC_opendjauthuid.md)<br> ↳[opendj-auth-uid](Ps/pC_opendjauthuid.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br> | [<ul><li>19 Rules</li></ul><ul><li>9 Models</li></ul>](RM/r_m_opendj_opendj_ldap_Compromised_Credentials.md)         |
+|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  authentication-failed<br> ↳[opendj-auth-uid](Ps/pC_opendjauthuid.md)<br><br> network-alert<br> ↳[opendj-auth-uid](Ps/pC_opendjauthuid.md)<br> ↳[opendj-auth-uid](Ps/pC_opendjauthuid.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br> | [<ul><li>8 Rules</li></ul><ul><li>8 Models</li></ul>](RM/r_m_opendj_opendj_ldap_Compromised_Credentials.md)          |
 |    [Evasion](../../../UseCases/uc_evasion.md)    |  authentication-failed<br> ↳[opendj-auth-uid](Ps/pC_opendjauthuid.md)<br><br> network-alert<br> ↳[opendj-auth-uid](Ps/pC_opendjauthuid.md)<br> ↳[opendj-auth-uid](Ps/pC_opendjauthuid.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_opendj_opendj_ldap_Evasion.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  authentication-failed<br> ↳[opendj-auth-uid](Ps/pC_opendjauthuid.md)<br><br> network-alert<br> ↳[opendj-auth-uid](Ps/pC_opendjauthuid.md)<br> ↳[opendj-auth-uid](Ps/pC_opendjauthuid.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>T1204 - User Execution<br>    | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_opendj_opendj_ldap_Malware.md)    |
 |    [Other](../../../UseCases/uc_other.md)    |  authentication-failed<br> ↳[opendj-auth-uid](Ps/pC_opendjauthuid.md)<br><br> network-alert<br> ↳[opendj-auth-uid](Ps/pC_opendjauthuid.md)<br> ↳[opendj-auth-uid](Ps/pC_opendjauthuid.md)<br> |    | [<ul><li>5 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_opendj_opendj_ldap_Other.md)    |

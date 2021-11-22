@@ -4,11 +4,11 @@ Product: Shibboleth SSO
 -----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  44   |   17   |     5      |      2      |    2    |
+|  46   |   17   |     5      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-login<br> ↳[shibboleth-password-change](Ps/pC_shibbolethpasswordchange.md)<br><br> failed-app-login<br> ↳[s-shibboleth-sso-1](Ps/pC_sshibbolethsso1.md)<br> ↳[s-shibboleth-sso](Ps/pC_sshibbolethsso.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>26 Rules</li></ul><ul><li>12 Models</li></ul>](RM/r_m_shibboleth_shibboleth_sso_Abnormal_Authentication_&_Access.md) |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-login<br> ↳[shibboleth-password-change](Ps/pC_shibbolethpasswordchange.md)<br><br> failed-app-login<br> ↳[s-shibboleth-sso-1](Ps/pC_sshibbolethsso1.md)<br> ↳[s-shibboleth-sso](Ps/pC_sshibbolethsso.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>28 Rules</li></ul><ul><li>12 Models</li></ul>](RM/r_m_shibboleth_shibboleth_sso_Abnormal_Authentication_&_Access.md) |
 |          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  app-login<br> ↳[shibboleth-password-change](Ps/pC_shibbolethpasswordchange.md)<br><br> failed-app-login<br> ↳[s-shibboleth-sso-1](Ps/pC_sshibbolethsso1.md)<br> ↳[s-shibboleth-sso](Ps/pC_sshibbolethsso.md)<br> | T1020 - Automated Exfiltration<br>T1071 - Application Layer Protocol<br>T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>11 Rules</li></ul><ul><li>6 Models</li></ul>](RM/r_m_shibboleth_shibboleth_sso_Compromised_Credentials.md)    |
 |    [Data Access](../../../UseCases/uc_data_access.md)    |  app-login<br> ↳[shibboleth-password-change](Ps/pC_shibbolethpasswordchange.md)<br><br> failed-app-login<br> ↳[s-shibboleth-sso-1](Ps/pC_sshibbolethsso1.md)<br> ↳[s-shibboleth-sso](Ps/pC_sshibbolethsso.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>5 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_shibboleth_shibboleth_sso_Data_Access.md)    |
 |    [Evasion](../../../UseCases/uc_evasion.md)    |  app-login<br> ↳[shibboleth-password-change](Ps/pC_shibbolethpasswordchange.md)<br><br> failed-app-login<br> ↳[s-shibboleth-sso-1](Ps/pC_sshibbolethsso1.md)<br> ↳[s-shibboleth-sso](Ps/pC_sshibbolethsso.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_shibboleth_shibboleth_sso_Evasion.md)    |

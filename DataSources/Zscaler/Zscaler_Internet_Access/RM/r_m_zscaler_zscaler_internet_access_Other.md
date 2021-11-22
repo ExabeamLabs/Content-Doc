@@ -5,10 +5,10 @@ Vendor: Zscaler
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  16   |   3    |     0      |      7      |    7    |
+|  16   |   2    |     0      |      7      |    7    |
 
-| Event Type                    | Rules | Models                                                                                                                                                |
-| ----------------------------- | ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| dlp-alert                     |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset                                                                       |
-| network-connection-failed     |       |  • <b>A-NET-OdPort-Outbound</b>: Outbound destination ports per organization<br> • <b>A-NET-HdPort-Outbound</b>: Outbound destination ports per asset |
-| network-connection-successful |       |  • <b>A-NET-OdPort-Outbound</b>: Outbound destination ports per organization<br> • <b>A-NET-HdPort-Outbound</b>: Outbound destination ports per asset |
+| Event Type                    | Rules | Models                                                                          |
+| ----------------------------- | ----- | ------------------------------------------------------------------------------- |
+| dlp-alert                     |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset |
+| network-connection-failed     |       |  • <b>A-NET-OdPort-Outbound</b>: Outbound destination ports per organization    |
+| network-connection-successful |       |  • <b>A-NET-OdPort-Outbound</b>: Outbound destination ports per organization    |

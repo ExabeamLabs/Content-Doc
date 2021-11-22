@@ -5,8 +5,8 @@ Vendor: HP
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   6   |   2    |     0      |      5      |    5    |
+|   6   |   1    |     0      |      5      |    5    |
 
-| Event Type                | Rules | Models                                                                                                                                                |
-| ------------------------- | ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| network-connection-failed |       |  • <b>A-NET-OdPort-Outbound</b>: Outbound destination ports per organization<br> • <b>A-NET-HdPort-Outbound</b>: Outbound destination ports per asset |
+| Event Type                | Rules | Models                                                                       |
+| ------------------------- | ----- | ---------------------------------------------------------------------------- |
+| network-connection-failed |       |  • <b>A-NET-OdPort-Outbound</b>: Outbound destination ports per organization |

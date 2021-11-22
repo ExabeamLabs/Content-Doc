@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-cisco-dns-response-sk4-networks
-  Conditions = ["""CEF:""", """|Skyformation""", """destinationServiceName =Cisco Umbrella""", """cs6Label=raw-event""", """"queryType":"""", """"responseCode":"""", """"mostGranularIdentityType":"Networks""""]  
+  Conditions = ["""destinationServiceName =Cisco Umbrella""", """"queryType":"""", """"responseCode":"""", """"mostGranularIdentityType":"Networks""""]  
 
 cef-cisco-dns-response-sk4-src-template {
   Vendor = Cisco

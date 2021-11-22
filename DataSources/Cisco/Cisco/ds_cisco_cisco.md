@@ -4,12 +4,12 @@ Product: Cisco
 --------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  49   |   17   |     6      |      2      |    2    |
+|  49   |   16   |     6      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 | [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  authentication-successful<br> ↳[cisco-2960-auth-failed-1](Ps/pC_cisco2960authfailed1.md)<br><br> security-alert<br> ↳[cisco-ssh-login-1](Ps/pC_ciscosshlogin1.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>11 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_cisco_cisco_Abnormal_Authentication_&_Access.md) |
-|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  authentication-successful<br> ↳[cisco-2960-auth-failed-1](Ps/pC_cisco2960authfailed1.md)<br><br> security-alert<br> ↳[cisco-ssh-login-1](Ps/pC_ciscosshlogin1.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>24 Rules</li></ul><ul><li>11 Models</li></ul>](RM/r_m_cisco_cisco_Compromised_Credentials.md)         |
+|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  authentication-successful<br> ↳[cisco-2960-auth-failed-1](Ps/pC_cisco2960authfailed1.md)<br><br> security-alert<br> ↳[cisco-ssh-login-1](Ps/pC_ciscosshlogin1.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>24 Rules</li></ul><ul><li>10 Models</li></ul>](RM/r_m_cisco_cisco_Compromised_Credentials.md)         |
 |    [Evasion](../../../UseCases/uc_evasion.md)    |  authentication-successful<br> ↳[cisco-2960-auth-failed-1](Ps/pC_cisco2960authfailed1.md)<br><br> security-alert<br> ↳[cisco-ssh-login-1](Ps/pC_ciscosshlogin1.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_cisco_cisco_Evasion.md)    |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  authentication-successful<br> ↳[cisco-2960-auth-failed-1](Ps/pC_cisco2960authfailed1.md)<br><br> security-alert<br> ↳[cisco-ssh-login-1](Ps/pC_ciscosshlogin1.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_cisco_cisco_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  authentication-successful<br> ↳[cisco-2960-auth-failed-1](Ps/pC_cisco2960authfailed1.md)<br><br> security-alert<br> ↳[cisco-ssh-login-1](Ps/pC_ciscosshlogin1.md)<br> | T1078 - Valid Accounts<br>T1204 - User Execution<br>    | [<ul><li>5 Rules</li></ul><ul><li>3 Models</li></ul>](RM/r_m_cisco_cisco_Malware.md)    |

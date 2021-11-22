@@ -5,8 +5,8 @@ Vendor: Auth0
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  11   |   2    |     0      |      4      |    4    |
+|  11   |   1    |     0      |      4      |    4    |
 
-| Event Type                    | Rules | Models                                                                                                                                                |
-| ----------------------------- | ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| network-connection-successful |       |  • <b>A-NET-OdPort-Outbound</b>: Outbound destination ports per organization<br> • <b>A-NET-HdPort-Outbound</b>: Outbound destination ports per asset |
+| Event Type                    | Rules | Models                                                                       |
+| ----------------------------- | ----- | ---------------------------------------------------------------------------- |
+| network-connection-successful |       |  • <b>A-NET-OdPort-Outbound</b>: Outbound destination ports per organization |

@@ -5,8 +5,9 @@ Vendor: Citrix
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  15   |   4    |     0      |      7      |    7    |
+|  15   |   5    |     0      |      7      |    7    |
 
-| Event Type   | Rules | Models                                                                                                                                                                                                                                                                            |
-| ------------ | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| remote-logon |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset<br> • <b>A-KL-UToE</b>: Ticket options and encryption type combination for asset<br> • <b>A-AE-NTLM</b>: Models the NTLM hostnames seen in the organization<br> • <b>A-AL-DhU</b>: Users per Host |
+| Event Type   | Rules | Models                                                                                                                                                                                                                                      |
+| ------------ | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| remote-logon |       |  • <b>A-EPA-UP-TEMP</b>: Processes executed from TEMP directories on this asset<br> • <b>A-KL-UToE</b>: Ticket options and encryption type combination for asset<br> • <b>A-AE-NTLM</b>: Models the NTLM hostnames seen in the organization |
+| vpn-logout   |       |  • <b>DC14a</b>: Count of assets accessed by this user<br> • <b>DC07a</b>: Count of assets accessed by this user remotely                                                                                                                   |

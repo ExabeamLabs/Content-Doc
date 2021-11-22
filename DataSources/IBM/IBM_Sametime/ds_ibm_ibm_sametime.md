@@ -4,11 +4,11 @@ Product: IBM Sametime
 ---------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  43   |   21   |     7      |      2      |    2    |
+|  45   |   21   |     7      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-login<br> ↳[ibm-failed-app-login](Ps/pC_ibmfailedapplogin.md)<br><br> dlp-email-alert-out-failed<br> ↳[ibm-app-login](Ps/pC_ibmapplogin.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>23 Rules</li></ul><ul><li>12 Models</li></ul>](RM/r_m_ibm_ibm_sametime_Abnormal_Authentication_&_Access.md) |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-login<br> ↳[ibm-failed-app-login](Ps/pC_ibmfailedapplogin.md)<br><br> dlp-email-alert-out-failed<br> ↳[ibm-app-login](Ps/pC_ibmapplogin.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>25 Rules</li></ul><ul><li>12 Models</li></ul>](RM/r_m_ibm_ibm_sametime_Abnormal_Authentication_&_Access.md) |
 |          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  app-login<br> ↳[ibm-failed-app-login](Ps/pC_ibmfailedapplogin.md)<br><br> dlp-email-alert-out-failed<br> ↳[ibm-app-login](Ps/pC_ibmapplogin.md)<br> | T1020 - Automated Exfiltration<br>T1071 - Application Layer Protocol<br>T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>10 Rules</li></ul><ul><li>6 Models</li></ul>](RM/r_m_ibm_ibm_sametime_Compromised_Credentials.md)    |
 |    [Data Access](../../../UseCases/uc_data_access.md)    |  app-login<br> ↳[ibm-failed-app-login](Ps/pC_ibmfailedapplogin.md)<br><br> dlp-email-alert-out-failed<br> ↳[ibm-app-login](Ps/pC_ibmapplogin.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>4 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_ibm_ibm_sametime_Data_Access.md)    |
 |    [Data Leak](../../../UseCases/uc_data_leak.md)    |  app-login<br> ↳[ibm-failed-app-login](Ps/pC_ibmfailedapplogin.md)<br><br> dlp-email-alert-out-failed<br> ↳[ibm-app-login](Ps/pC_ibmapplogin.md)<br> | T1020 - Automated Exfiltration<br>T1048 - Exfiltration Over Alternative Protocol<br>T1048.003 - Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol<br> | [<ul><li>6 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_ibm_ibm_sametime_Data_Leak.md)    |

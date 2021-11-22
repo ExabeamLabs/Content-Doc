@@ -4,14 +4,14 @@ Product: SecurityExpert
 -----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  49   |   21   |     6      |      1      |    1    |
+|  24   |   20   |     6      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 |     [Cryptomining](../../../UseCases/uc_cryptomining.md)     |  network-connection-successful<br> ↳[securityexpert-badge-access](Ps/pC_securityexpertbadgeaccess.md)<br> | T1496 - Resource Hijacking<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_securityexpert_securityexpert_Cryptomining.md)    |
-|          [Evasion](../../../UseCases/uc_evasion.md)          |  network-connection-successful<br> ↳[securityexpert-badge-access](Ps/pC_securityexpertbadgeaccess.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_securityexpert_securityexpert_Evasion.md)    |
-| [Lateral Movement](../../../UseCases/uc_lateral_movement.md) |  network-connection-successful<br> ↳[securityexpert-badge-access](Ps/pC_securityexpertbadgeaccess.md)<br> | T1071 - Application Layer Protocol<br>T1090.002 - Proxy: External Proxy<br>T1205.001 - T1205.001<br>T1571 - Non-Standard Port<br> | [<ul><li>40 Rules</li></ul><ul><li>19 Models</li></ul>](RM/r_m_securityexpert_securityexpert_Lateral_Movement.md) |
-|    [Other](../../../UseCases/uc_other.md)    |  network-connection-successful<br> ↳[securityexpert-badge-access](Ps/pC_securityexpertbadgeaccess.md)<br> |    | [<ul><li>6 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_securityexpert_securityexpert_Other.md)    |
+|          [Evasion](../../../UseCases/uc_evasion.md)          |  network-connection-successful<br> ↳[securityexpert-badge-access](Ps/pC_securityexpertbadgeaccess.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_securityexpert_securityexpert_Evasion.md)    |
+| [Lateral Movement](../../../UseCases/uc_lateral_movement.md) |  network-connection-successful<br> ↳[securityexpert-badge-access](Ps/pC_securityexpertbadgeaccess.md)<br> | T1071 - Application Layer Protocol<br>T1090.002 - Proxy: External Proxy<br>T1205.001 - T1205.001<br>T1571 - Non-Standard Port<br> | [<ul><li>18 Rules</li></ul><ul><li>19 Models</li></ul>](RM/r_m_securityexpert_securityexpert_Lateral_Movement.md) |
+|    [Other](../../../UseCases/uc_other.md)    |  network-connection-successful<br> ↳[securityexpert-badge-access](Ps/pC_securityexpertbadgeaccess.md)<br> |    | [<ul><li>6 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_securityexpert_securityexpert_Other.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

@@ -4,11 +4,11 @@ Product: Morphisec EPTP
 -----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  61   |   28   |     8      |      1      |    1    |
+|  63   |   28   |     8      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-activity<br> ↳[syslog-morphisec-security-alert](Ps/pC_syslogmorphisecsecurityalert.md)<br> ↳[s-morphisec-security-alert](Ps/pC_smorphisecsecurityalert.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>27 Rules</li></ul><ul><li>14 Models</li></ul>](RM/r_m_morphisec_morphisec_eptp_Abnormal_Authentication_&_Access.md) |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-activity<br> ↳[syslog-morphisec-security-alert](Ps/pC_syslogmorphisecsecurityalert.md)<br> ↳[s-morphisec-security-alert](Ps/pC_smorphisecsecurityalert.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>29 Rules</li></ul><ul><li>14 Models</li></ul>](RM/r_m_morphisec_morphisec_eptp_Abnormal_Authentication_&_Access.md) |
 |    [Account Manipulation](../../../UseCases/uc_account_manipulation.md)    |  app-activity<br> ↳[syslog-morphisec-security-alert](Ps/pC_syslogmorphisecsecurityalert.md)<br> ↳[s-morphisec-security-alert](Ps/pC_smorphisecsecurityalert.md)<br> | T1098.002 - Account Manipulation: Exchange Email Delegate Permissions<br>    | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_morphisec_morphisec_eptp_Account_Manipulation.md)    |
 |          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  app-activity<br> ↳[syslog-morphisec-security-alert](Ps/pC_syslogmorphisecsecurityalert.md)<br> ↳[s-morphisec-security-alert](Ps/pC_smorphisecsecurityalert.md)<br> | T1020 - Automated Exfiltration<br>T1071 - Application Layer Protocol<br>T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>21 Rules</li></ul><ul><li>12 Models</li></ul>](RM/r_m_morphisec_morphisec_eptp_Compromised_Credentials.md)          |
 |    [Data Access](../../../UseCases/uc_data_access.md)    |  app-activity<br> ↳[syslog-morphisec-security-alert](Ps/pC_syslogmorphisecsecurityalert.md)<br> ↳[s-morphisec-security-alert](Ps/pC_smorphisecsecurityalert.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>15 Rules</li></ul><ul><li>10 Models</li></ul>](RM/r_m_morphisec_morphisec_eptp_Data_Access.md)    |
