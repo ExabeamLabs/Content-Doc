@@ -3,9 +3,9 @@
 {
 Name = azure-event-hub-network-security-group-rule-counter
   DataType = "network-connection"
-  Conditions = ["""ext_category=NetworkSecurityGroupRuleCounter""" ]
+  Conditions = [""""category":"NetworkSecurityGroupRuleCounter"""" ]
   Fields = ${MSParserTemplates.cef-azure-event-hub.Fields}[
-     """\WrequestClientApplication=(|({app}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+     """destinationServiceName =({app}[^=]{1,2000}?)\s\w+=""",
     """category":"({activity}.*?[^\\])"""",
     """type":"({outcome}.*?[^\\])"""",
     """rule":"({ruleName}.*?[^\\])"""",
@@ -36,10 +36,9 @@ cef-azure-event-hub = {
       """\Wsuid=(anonymous|({user_email}[^@=]{1,2000}@[^@=]{1,2000}?)|({user}.+?))(\s{1,100}\w{1,100}=|\s{0,100}$)""",
       """\Woutcome=({outcome}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",
       """\Wsrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-      """\Wshost=(|--|({src_host}[^=]{1,2000}))(\s{1,100}\w{1,100}=|\s{0,100}$)""",
+      """\Wshost=(|--|({src_host}[^=]{1,2000}))(\s{1,100}\w+=|\s{0,100}$)""",
+      """"clientIP":"({src_ip}[A-Fa-f.\d]{1,2000})""",
       """"description":"({additional_info}[^"]{1,2000})""",
-      """\Wext_identity_claims_name=(|({user}[^=]{1,2000}))(\s{1,100}\w{1,100}=|\s{0,100}$)""",
-      """\Wext_callerIpAddress=({src_ip}[a-fA-F\d.:]{1,2000})""",
       """Namespace:\s{0,100}(|({event_hub_namespace}[^\]]{1,2000}?))\s{0,100}[\];]""",
       """EventHub name:\s{0,100}(|({event_hub_name}[^\]]{1,2000}?))\s{0,100}\]""",
       """\[Namespace:\s{0,100}({host}\S{1,2000}) ; EventHub name:"""

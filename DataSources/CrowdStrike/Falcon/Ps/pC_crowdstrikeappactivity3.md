@@ -2,7 +2,7 @@
 ```Java
 {
 Name = crowdstrike-app-activity-3
-  Conditions = [ """CEF:""", """|Skyformation|""", """"event_simpleName":"AwsEc2NetworkAclEntry"""" ]
+  Conditions = [ """"event_simpleName":"AwsEc2NetworkAclEntry"""" ]
 
 crowdstrike-app-activity-temp = {
   Vendor = CrowdStrike

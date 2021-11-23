@@ -3,7 +3,10 @@
 {
 Name = cef-okta-app-login
   DataType = "app-login"
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """"displayMessage":"User single sign on to app"""", """"result":"SUCCESS"""" ]
+  Conditions = [  """"displayMessage":"User single sign on to app"""", """"result":"SUCCESS"""" , """destinationServiceName =Okta"""]
+  Fields = ${OktaParserTemplates.s-okta-app-login.Fields}[
+    """"displayMessage":"({event_name}[^"]{1,2000})""",
+  ]
 
 s-okta-app-login = {
   Vendor = Okta
@@ -19,7 +22,7 @@ s-okta-app-login = {
     """"request":\s{0,100}\{[^\}]{1,2000}?"ip":\s{0,100}"({src_ip}[a-fA-F:\d.]{1,2000})"""",
     """"type":\s{0,100}"({app}[^"]{1,2000})""",
     """({app}Okta)""",
-    """requestClientApplication=({app}.+?)\s{0,100}\w+=""",
+    """destinationServiceName({app}.+?)\s{0,100}\w+=""",
     """"target":\s{0,100}\[.*?\{.*?"displayName":\s{0,100}"({app}[^"]{1,2000})"[^\{\}]{0,2000}?"type":\s{0,100}"AppInstance"""",
     """"type":"AppInstance"[^\}\]]{0,2000}"displayName":"({app}[^"]{1,2000}?)\s{0,100}"""",
     """"actor":\s{0,100}\{[^\{\}]{0,2000}?"displayName":\s{0,100}"((?i)okta[^"]{0,2000}|unknown|({user_fullname}[^",]{1,2000}))"[^\{\}]{0,2000}?"type":\s{0,100}"User"""",

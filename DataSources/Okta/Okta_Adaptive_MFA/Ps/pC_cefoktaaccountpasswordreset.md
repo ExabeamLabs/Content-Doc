@@ -3,7 +3,7 @@
 {
 Name = cef-okta-account-password-reset
   DataType = "account-password-reset"
-  Conditions = ["""CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName =Okta""", """"eventType":"system.email.password_reset.sent_message"""", """"legacyEventType":"core.user.email.message_sent.self_service.password_reset""""]
+  Conditions = [ """destinationServiceName =Okta""", """"eventType":"system.email.password_reset.sent_message"""", """"legacyEventType":"core.user.email.message_sent.self_service.password_reset""""]
   Fields = ${OktaParserTemplates.json-okta-auth.Fields}[
     """target(s)?"{1,20}:[^\]]{1,2000}?"{1,20}type"{1,20}:"{1,20}User"{1,20}[^\]\}]{1,2000}?"{1,20}(alternateId|emailAddress)"{1,20}:(null|"{1,20}({target_user}[^"@]{1,2000}@({target_domain}[^"]{1,2000})))""",
     """target(s)?"{1,20}:[^\]]{1,2000}?"{1,20}type"{1,20}:"{1,20}User"{1,20}[^\]\}]{1,2000}?"{1,20}(alternateId|emailAddress)"{1,20}:(null|"{1,20}(({target_domain}[^\\\/]{1,2000})[\/\\]{1,2000})?({target_user}[^"]{1,2000}))"""
@@ -18,7 +18,7 @@ json-okta-auth = {
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"published"{1,20}\s{0,100}:\s{0,100}"{1,20}({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     """({app}(?i)Okta)""",
-    """requestClientApplication=({app}[^=]{1,2000}?)\s{0,100}\w+=""",
+    """destinationServiceName({app}[^=]{1,2000}?)\s{0,100}\w+=""",
     """"city":"({location_city}[^",]{1,2000})""",
     """"state":"({location_state}[^",]{1,2000})""",
     """"country":"({location_country}[^",]{1,2000})""",

@@ -3,7 +3,7 @@
 {
 Name = s-crowdstrike-app-dll-alert
   DataType = "alert"
-  Conditions = [ """"event_simpleName":"ReflectiveDllLoaded"""", """|Skyformation|""" ]
+  Conditions = [ """"event_simpleName":"ReflectiveDllLoaded"""", """ReflectiveDllName"""]
   Fields = ${CrowdStrikeParserTemplates.cef-crowdstrike-app-activity-temp.Fields} [
   """"id":"({alert_id}[\w-]{1,2000}?)"""",
   """"name":"({alert_name}[^"]{1,2000}?)""""

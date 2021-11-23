@@ -16,7 +16,7 @@ Name = cef-dropbox-login-activity
     """"event_type":\s{0,100}\{[^\\]{0,2000}?"\.tag":\s"({activity}[^"]{1,2000})"""",
     """"description":\s{0,100}"({additional_info}[^"]{1,2000})"""",
     """"ip_address":\s{0,100}"{1,100}({src_ip}[A-Fa-f.:\d]{1,200})""",  
-]
+  ]
  
 
 }

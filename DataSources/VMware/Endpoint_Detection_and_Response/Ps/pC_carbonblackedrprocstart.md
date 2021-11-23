@@ -3,9 +3,7 @@
 {
 Name = carbonblack-edr-procstart
   DataType = "process-created"
-  Conditions = [ """CEF:""", """requestClientApplication=Carbon Black EDR""" , """endpoint.event.procstart""", """"process_username":"""" ]
-  Fields = ${CarbonBlackParserTemplates.carbonblack-edr.Fields} [
-  ]
+  Conditions = [ """endpoint.event.procstart""", """"process_username":"""", """"event_origin":"EDR"""", """"childproc_username":"""" ]
 
 carbonblack-edr {
   Vendor = VMware

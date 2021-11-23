@@ -3,10 +3,10 @@
 {
 Name = sentinelone-file-delete
   DataType = "file-delete"
-  Conditions = [ """CEF:""", """dproc=Deep Visibility Endpoint""", """destinationServiceName =SentinelOne""", """fileDeletion {""" ]
+  Conditions = [ """dproc=Deep Visibility Endpoint""", """destinationServiceName =SentinelOne""", """fileDeletion {""" ]
   Fields = ${SentinelOneParserTemplates.sentinelone-activity.Fields} [
     """({event_name}fileDeletion)""",
-    """\Wfname=({file_path}({file_parent}[^=]{0,2000}?)({file_name}[^\\]{1,2000}?(\.({file_ext}[^\\.]{1,2000}?))?))\s{1,100}(\w{1,100}=|$)""",
+    """targetFile[^\n]{1,2000}?path:\s"({file_path}({file_parent}[^"]{0,2000}?)({file_name}[^\\"]{1,2000}?(\.({file_ext}[^\\."]{1,2000}?))?))""""
   ]
 
 sentinelone-activity {
@@ -21,8 +21,6 @@ sentinelone-activity {
       """\\nos_name:\s{0,100}"{1,20}({os}[^"]{1,2000})"""
       """\\nagent_version:\s{0,100}"{1,20}({user_agent}[^"]{1,2000})"""
       """\ssizeBytes:\s{0,100}({bytes}\d{1,100})""",
-      """\smsg=({additional_info}[^=]{1,2000}?)\s{0,100}\w+=""",
-      """\srequestClientApplication=[^@]{1,2000}@({web_domain}[^=]{1,2000}?)\s{0,100}\w+=""",
       """user\s{0,100}\{[^\}]{1,2000}?sid:[^"]{0,2000}?"{1,20}({user_sid}[^"\\]{1,2000})""",
       """user\s{0,100}\{\\n\s{1,100}name:\s{1,100}\\?"{0,20}((NT AUTHORITY|({domain}[^\\"]{1,2000}))\\+)?(SYSTEM|NETWORK SERVICE|LOCAL SERVICE|({user}[^\\"]{1,2000}))""",
       """"app-username":"((NT AUTHORITY|({domain}[^\\"]{1,2000}))\\+)?(SYSTEM|NETWORK SERVICE|LOCAL SERVICE|({user}[^"]{1,2000}?))\s{0,100}"""",
@@ -35,8 +33,7 @@ sentinelone-activity {
       """\sstatus:\s{0,100}({outcome}\w+)""",
       """sourceAddress\s.*?port:\s{0,100}({src_port}\d{1,100})""",
       """sourceAddress\s.*?address:\s{0,100}\\?"{1,20}({src_ip}[^"\\]{1,2000})""",
-      """fileType=({activity_type}[^=]{1,2000}?)\s{0,100}\w+=""",
-      """sha1:\s{0,100}"{0,100}({sha1}[^"]{1,2000})"""",
+      """sha1:\s{0,100}"{0,100}({sha1}[^"]{1,2000})""""
     
 }
 ```

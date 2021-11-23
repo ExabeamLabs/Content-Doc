@@ -3,7 +3,7 @@
 {
 Name = json-okta-security-alert
   DataType = "security-alert"
-  Conditions = [ """"security.threat.detected"""", """requestClientApplication=Okta""", """|Skyformation|""" ]
+  Conditions = [ """"security.threat.detected"""", """destinationServiceName =Okta"""]
   Fields = ${OktaParserTemplates.json-okta-auth.Fields}[
     """"severity"{1,20}:"{1,20}({alert_severity}[^",]{1,2000})""",
     """({alert_type}application-action)"""
@@ -19,7 +19,7 @@ json-okta-auth = {
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"published"{1,20}\s{0,100}:\s{0,100}"{1,20}({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     """({app}(?i)Okta)""",
-    """requestClientApplication=({app}[^=]{1,2000}?)\s{0,100}\w+=""",
+    """destinationServiceName({app}[^=]{1,2000}?)\s{0,100}\w+=""",
     """"city":"({location_city}[^",]{1,2000})""",
     """"state":"({location_state}[^",]{1,2000})""",
     """"country":"({location_country}[^",]{1,2000})""",

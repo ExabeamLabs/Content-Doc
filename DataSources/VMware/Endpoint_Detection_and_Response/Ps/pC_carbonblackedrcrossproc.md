@@ -3,9 +3,7 @@
 {
 Name = carbonblack-edr-crossproc
   DataType = "process-created"
-  Conditions = [ """CEF:""", """requestClientApplication=Carbon Black EDR""" , """endpoint.event.crossproc""", """"process_username":"""" ]
-  Fields = ${CarbonBlackParserTemplates.carbonblack-edr.Fields} [
-  ]
+  Conditions = [ """endpoint.event.crossproc""", """"process_username":"""", """"event_origin":"EDR"""", """"crossproc_reputation":"""" ]
 
 carbonblack-edr {
   Vendor = VMware

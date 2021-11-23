@@ -3,9 +3,7 @@
 {
 Name = carbonblack-edr-netconn
   DataType = "network-connection"
-  Conditions = [ """CEF:""", """requestClientApplication=Carbon Black EDR""" , """endpoint.event.netconn""", """"process_username":"""" ]
-  Fields = ${CarbonBlackParserTemplates.carbonblack-edr.Fields} [
-  ]
+  Conditions = [ """endpoint.event.netconn""", """"process_username":"""", """"event_origin":"EDR"""", """"action":"ACTION_CONNECTION_CREATE"""", """"netconn_domain":"""" ]
 
 carbonblack-edr {
   Vendor = VMware
