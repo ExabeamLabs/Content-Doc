@@ -2,7 +2,10 @@
 ```Java
 {
 Name = cef-egnyte-app-activity-1
-  Conditions = [ """CEF:""", """destinationServiceName =Egnyte""", """ext_actionInfo=Removed from group""" ]
+  Conditions = [ """"action":""", """destinationServiceName =Egnyte""", """:"Removed from group""" ]
+  Fields = ${EgnyteParserTemplates.cef-egnyte-app-activity.Fields}[
+    """"Removed from group\s{0,100}\\"{0,100}({object}[^"]{1,2000}?)\\"{0,100}""",
+  ]
 
 cef-egnyte-app-activity = {
   Vendor = Egnyte
@@ -17,8 +20,8 @@ cef-egnyte-app-activity = {
     """({app}Egnyte)""",
     """"subject":"({user_fullname}[^"\(\)]{1,2000}?)\s{0,100}\(\s{0,100}({user_email}[^@"\(\)]{1,2000}@({email_domain}[^\."\)]{1,2000}\.[^"\)]{1,2000}?))\s{0,100}\)""",
     """"action":"({activity}[^"]{1,2000})""",
-    """\Wext_actionInfo=(|({additional_info}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-    """\Wfname=({object}[^=]{1,2000}?)\s{1,100}\w+="""
+    """actionInfo":"({additional_info}[^,]{1,2000})",""",
+    """action_Info":"({additional_info}[^,]{1,2000})",""",
   
 }
 ```

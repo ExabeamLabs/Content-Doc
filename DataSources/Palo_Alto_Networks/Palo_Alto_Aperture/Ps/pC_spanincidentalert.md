@@ -27,7 +27,7 @@ Name = s-pan-incident-alert
       """"item_creator":"(|({item_creator}[^"]{1,2000}))"""",
       """"item_creator_email":"(|({user_email}[^\s",@]{1,2000}\@[\w\.\-]{1,2000}))"""",
       """"collaborators":"(|({collaborators}[^"]{1,2000}))"""",
-      """ext_severity=({alert_severity}[^\s]{1,2000})"""
+      """"severity":({alert_severity}[\d.]{1,2000})"""
     ]
     SOAR {
     IncidentType = "dlp"

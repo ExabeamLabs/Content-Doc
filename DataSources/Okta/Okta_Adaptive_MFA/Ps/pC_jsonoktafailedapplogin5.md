@@ -3,7 +3,7 @@
 {
 Name = json-okta-failed-app-login-5
   DataType = "failed-app-login"
-  Conditions = [ """"app.rich_client.login_failure"""", """requestClientApplication=Okta""", """|Skyformation|""" ]
+  Conditions = [ """"app.rich_client.login_failure"""", """destinationServiceName =Okta"""]
   Fields = ${OktaParserTemplates.json-okta-auth.Fields}[
     """({outcome}(?i)FAILURE|(?i)INVALID|(?i)failed|(?i)fail)"""
   ]
@@ -17,7 +17,7 @@ json-okta-auth = {
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"published"{1,20}\s{0,100}:\s{0,100}"{1,20}({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     """({app}(?i)Okta)""",
-    """requestClientApplication=({app}[^=]{1,2000}?)\s{0,100}\w+=""",
+    """destinationServiceName({app}[^=]{1,2000}?)\s{0,100}\w+=""",
     """"city":"({location_city}[^",]{1,2000})""",
     """"state":"({location_state}[^",]{1,2000})""",
     """"country":"({location_country}[^",]{1,2000})""",

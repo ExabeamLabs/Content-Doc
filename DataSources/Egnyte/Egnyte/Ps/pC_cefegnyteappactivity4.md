@@ -2,7 +2,10 @@
 ```Java
 {
 Name = cef-egnyte-app-activity-4
-  Conditions = [ """CEF:""", """destinationServiceName =Egnyte""", """ext_actionInfo=Upgraded to Power User""" ]
+  Conditions = [ """"action":""", """destinationServiceName =Egnyte""", """:"Upgraded to Power User"""" ]
+  Fields = ${EgnyteParserTemplates.cef-egnyte-app-activity.Fields}[
+    """({object}Power)""",
+  ]
 
 cef-egnyte-app-activity = {
   Vendor = Egnyte
@@ -17,8 +20,8 @@ cef-egnyte-app-activity = {
     """({app}Egnyte)""",
     """"subject":"({user_fullname}[^"\(\)]{1,2000}?)\s{0,100}\(\s{0,100}({user_email}[^@"\(\)]{1,2000}@({email_domain}[^\."\)]{1,2000}\.[^"\)]{1,2000}?))\s{0,100}\)""",
     """"action":"({activity}[^"]{1,2000})""",
-    """\Wext_actionInfo=(|({additional_info}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-    """\Wfname=({object}[^=]{1,2000}?)\s{1,100}\w+="""
+    """actionInfo":"({additional_info}[^,]{1,2000})",""",
+    """action_Info":"({additional_info}[^,]{1,2000})",""",
   
 }
 ```

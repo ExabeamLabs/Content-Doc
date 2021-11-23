@@ -5,7 +5,7 @@ Name = cef-microsoft-remote-logon
   DataType = "remote-logon"
   Conditions = [ """CEF:""", """destinationServiceName =Office 365""", """description":"Remote desktop: device""" ]
   Fields = ${MSParserTemplates.cef-azure-app-activity-1.Fields}[
-    """\Wext_resolvedActorAccount_name=({user_lastname}[^,=]{1,2000}),\s{0,100}({user_firstname}.+?)(\s{0,100}\([^\(\)]{1,2000}\))?(\s{1,100}\w+=|\s{0,100}$)""",
+    """"resolvedActor":\s{0,100}\{[^\}]{1,2000}?"name":"({user_lastname}[^,"]{1,2000}),\s{0,100}({user_firstname}[^"\(]{1,2000}?)\s{0,100}(\(\w+\))?"""",
     """device <b>({dest_host}[^<]{1,2000})"""
   ]
 

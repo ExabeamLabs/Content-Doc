@@ -11,7 +11,7 @@ Name = cef-microsoft-app-activity-39
     """"target_object":"({object}[^"]{1,2000}?)""""
     """sourceServiceName =({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """requestMethod=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",   
-    """ext_userAgent_name=({resource}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
+    """"userAgent":\s{0,100}\{[^\}]{1,2000}?"name":"({resource}[^"]{1,2000})""",
     """({activity}MoveToDeletedItems)""" 
   ]
 

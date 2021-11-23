@@ -3,7 +3,7 @@
 {
 Name = s-crowdstrike-app-ransomware
   DataType = "file-read"
-  Conditions = [ """"event_simpleName":"RansomwareOpenFile"""", """|Skyformation|""" ]
+  Conditions = [ """"event_simpleName":"RansomwareOpenFile"""", """"TargetFileName":""""]
   Fields = ${CrowdStrikeParserTemplates.cef-crowdstrike-app-activity-temp.Fields} [
   """"id":"({alert_id}[\w-]{1,2000}?)"""",
   """"name":"({alert_name}[^"]{1,2000}?)""""

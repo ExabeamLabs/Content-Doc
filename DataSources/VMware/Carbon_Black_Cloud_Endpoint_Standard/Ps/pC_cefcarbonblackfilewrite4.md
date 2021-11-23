@@ -8,7 +8,7 @@ Name = cef-carbonblack-file-write-4
   TimeFormat = "epoch"
   DataType = "file-operations"
   IsHVF = true
-  Conditions = [ """CEF:""", """threatIndicators""" , """|security-threat-detected""", """act=run""", """attempted to write""" ]
+  Conditions = [ """threatIndicators""" , """"eventType":"SYSTEM_API_CALL"""", """ attempted to write """ ]
   Fields = [
     """exabeam_host=({host}[\w\-.]{1,2000})""",
     """"eventTime":({time}\d{1,100})""",
@@ -17,7 +17,7 @@ Name = cef-carbonblack-file-write-4
     """"email":"(({domain}[^\\",]{1,2000})\\+)?(SYSTEM|({user}[^\s",]{1,2000}))"""",
     """"userName":"(SYSTEM|({user}[^\s",]{1,2000}))"""",
     """({accesses}write)""",
-    """fname=({file_path}(({file_parent}[^=]{0,2000}?[\\\/]{1,2000})?({file_name}[^\\\/=]{1,2000}?(\.({file_ext}\w+))?)))\s{1,100}\w+="""
+    """"name":"({file_path}(({file_parent}[^"]{0,2000}?[\\\/]{1,20})?({file_name}[^\\\/"]{1,2000}?(\.({file_ext}[^"]{1,2000}))?)))""""
   ]
 
 

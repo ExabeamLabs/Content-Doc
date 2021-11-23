@@ -3,9 +3,7 @@
 {
 Name = carbonblack-edr-filemod
   DataType = "file-write"
-  Conditions = [ """CEF:""", """requestClientApplication=Carbon Black EDR""" , """endpoint.event.filemod""", """"process_username":"""" ]
-  Fields = ${CarbonBlackParserTemplates.carbonblack-edr.Fields} [
-  ]
+  Conditions = [ """endpoint.event.filemod""", """"process_username":"""", """"event_origin":"EDR"""", """"filemod_name":"""" ]
 
 carbonblack-edr {
   Vendor = VMware

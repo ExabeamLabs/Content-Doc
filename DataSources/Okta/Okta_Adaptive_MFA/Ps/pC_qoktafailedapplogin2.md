@@ -3,7 +3,7 @@
 {
 Name = q-okta-failed-app-login-2
   DataType = "failed-app-login"
-  Conditions = [ """message""", """Active Directory authentication failed""", """published""" ]
+  Conditions = [ """message""", """Active Directory authentication failed""", """published"":""""" ]
   Fields = ${OktaParserTemplates.q-okta-app-login.Fields}[
     """"Active Directory authentication failed:\s{0,100}({failure_reason}[^"]{1,2000}?)""""
   ]

@@ -3,7 +3,7 @@
 {
 Name = cef-google-app-login
   DataType = "app-login"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"applicationName":"login"""", """"uniqueQualifier":""", """destinationServiceName =Google Apps"""]
+  Conditions = [ """"applicationName":"login"""", """"uniqueQualifier":""", """destinationServiceName =Google Apps"""]
   Fields = ${GoogleParserTemplates.cef-google-app-activity.Fields} [
     """"actor":\{"email":"({object}[^"]{1,2000})""""
   ]
