@@ -9,6 +9,7 @@ Name = cef-carbonblack-workstation-unlocked-2
   TimeFormat = "epoch"
   Conditions = [ """|Carbon Black|App Control|""", """Event[00000008] Type[SessionUnlock]""" ]
   Fields = [
+    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\Wrt=({time}\d{1,100})""",
     """\Wdvc=({host_ip}[a-fA-F:\d.]{1,2000})""",
     """\Wdvchost=({host}[\w\-.]{1,2000})""",

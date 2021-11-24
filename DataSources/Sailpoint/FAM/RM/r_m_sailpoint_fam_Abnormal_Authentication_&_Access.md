@@ -5,8 +5,8 @@ Vendor: Sailpoint
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   0    |     1      |      4      |    4    |
+|   1   |   0    |     1      |      4      |    4    |
 
-| Event Type      | Rules                                                                                                                                                                                          | Models |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| account-lockout | <b>T1110 - Brute Force</b><br> ↳ <b>SEQ-UH-01</b>: Account lockout on an asset that belongs to this user<br> ↳ <b>SEQ-UH-02</b>: Account lockout on an asset that does not belong to this user |        |
+| Event Type      | Rules                                                                                                    | Models |
+| --------------- | -------------------------------------------------------------------------------------------------------- | ------ |
+| account-lockout | <b>T1110 - Brute Force</b><br> ↳ <b>SEQ-UH-01</b>: Account lockout on an asset that belongs to this user |        |

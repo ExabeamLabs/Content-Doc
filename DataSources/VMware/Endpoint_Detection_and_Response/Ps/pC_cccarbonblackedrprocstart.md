@@ -34,6 +34,6 @@ carbonblack-edr {
     """"device_external_ip"{1,20}:"{1,20}({dest_ip}[^",]{1,2000})""",
     """"device_timestamp"{1,20}:"{1,20}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)"""
   ]
-  DupeFields = ["directory->process_directory"
+  DupFields = ["directory->process_directory"
 }
 ```
