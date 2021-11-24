@@ -20,9 +20,9 @@ Name = cef-zscaler-web-activity
     """\sdst=({dest_ip}[a-fA-F:\d.]{1,2000})\s{0,100}(\w+=|$)""",
     """([^\|]{0,2000}\|){5}({action}[^\|]{1,2000})""",
     """(\s|\|)act=({action}[^=]{1,2000}?)\s{0,100}(\w+=|$)""",
-    """\ssuser=(NA|None|\$NULL|(?![^\s]{1,2000}@[^\s]{1,2000})({user}[^=]{1,2000}?))\s{0,100}(\w+=|$)""",
+    """\ssuser=(NA|None|\$NULL|(?![^\s]{1,2000}@[^\s]{1,2000})({user}[^=\s]{1,2000}?))\s{0,100}(\w+=|$)""",
     """\slogin=({user_email}[^@\s]{1,2000}@[^@\s]{1,2000})\s\w+=""",
-    """\ssuser=({user_email}({user}[^\s@]{1,2000})@[^\s]{1,2000})\s{0,100}(\w+=|$)""",
+    """\ssuser=(noauth-protocol[^=]{1,2000}?|({user_email}({user}[^\s@]{1,2000})@[^\s]{1,2000}))\s{0,100}(\w+=|$)""",
     """\|({severity}\d{1,100})\|act=""",
     """proto=({protocol}[^\s]{1,2000})""",
     """\seurl=({full_url}[^\s\/\?]{1,2000}({uri_path}\/[^\?\s]{1,2000})?({uri_query}\?[^\s]{1,2000})?)""",
@@ -50,7 +50,8 @@ Name = cef-zscaler-web-activity
     """\scs6=(None|({dlp_engine}[^=]{1,2000}?))\s{0,100}(\w+=|$)""",
     """sourcehost=(NA|None|\$NULL|({src_host}[^=]{1,2000}?))\s{1,100}destinationhost=""",
     """devicehostname=(NA|({src_host}[^\s"]{1,2000}?))\s{0,100}(\w+=|$)""",
-    """ZscalerNSSWeblogDLPDictionaries=(None|({web_log_dict}[^=]{1,2000}?))\s{0,100}([\w.]{1,2000}=|$)"""
+    """ZscalerNSSWeblogDLPDictionaries=(None|({web_log_dict}[^=]{1,2000}?))\s{0,100}([\w.]{1,2000}=|$)""",
+    """requestContext=(None|({referrer}[^\s]{1,2000}?))(\|[\w-]+\||\s\w+=|\s{0,100}$)"""
   ]
   DupFields = ["ransomware_name->threat_category", "risk_level->suspicious_content"]
 

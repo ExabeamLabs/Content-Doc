@@ -8,7 +8,8 @@ Product: Zebra wireless LAN management
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  account-lockout<br> ↳[zebra-wlm-ssh-failed](Ps/pC_zebrawlmsshfailed.md)<br> | T1110 - Brute Force<br> | [<ul><li>2 Rules</li></ul>](RM/r_m_extreme_networks_zebra_wireless_lan_management_Abnormal_Authentication_&_Access.md) |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  account-lockout<br> ↳[zebra-wlm-ssh-failed](Ps/pC_zebrawlmsshfailed.md)<br> | T1110 - Brute Force<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_extreme_networks_zebra_wireless_lan_management_Abnormal_Authentication_&_Access.md) |
+|    [Brute Force Attack](../../../UseCases/uc_brute_force_attack.md)    |  account-lockout<br> ↳[zebra-wlm-ssh-failed](Ps/pC_zebrawlmsshfailed.md)<br> | T1110 - Brute Force<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_extreme_networks_zebra_wireless_lan_management_Brute_Force_Attack.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

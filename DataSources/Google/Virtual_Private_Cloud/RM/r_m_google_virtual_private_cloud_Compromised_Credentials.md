@@ -5,8 +5,8 @@ Vendor: Google
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   3   |   2    |     2      |      1      |    1    |
+|   1   |   1    |     1      |      1      |    1    |
 
-| Event Type         | Rules                                                                                                                                                                                                                                                                                                 | Models                                                                                                                                                                 |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| netflow-connection | <b>T1046 - Network Service Scanning</b><br> ↳ <b>A-NETFLOW-OsH-SweepScan-A</b>: Abnormal for asset to access 20 assets in 10 seconds<br><br><b>T1021 - Remote Services</b><br> ↳ <b>A-RLA-AA-F</b>: First asset-to-asset communication<br> ↳ <b>A-RLA-AA-A</b>: Abnormal asset-to-asset communication |  • <b>A-NETFLOW-OsH-Scanners</b>: Assets that access multiple assets within seconds in the organization<br> • <b>A-RLA-AA</b>: Asset to asset communication (DISABLED) |
+| Event Type         | Rules                                                                                                                                | Models                                                                                                  |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
+| netflow-connection | <b>T1046 - Network Service Scanning</b><br> ↳ <b>A-NETFLOW-OsH-SweepScan-A</b>: Abnormal for asset to access 20 assets in 10 seconds |  • <b>A-NETFLOW-OsH-Scanners</b>: Assets that access multiple assets within seconds in the organization |

@@ -19,7 +19,7 @@ cef-carbonblack-file-alert = {
     """dvchost=({host}[^=\s]{1,1000})\s{1,100}(\w+=|$)""",
     """dst=({dest_ip}[A-Fa-f:.\d]{1,2000})\s{1,100}(\w+=|$)""",
     """dhost=(([\w+\\]{1,10})\\{1,20})?({dest_host}[^\s=]{1,2000}?)\s{1,100}(\w+=|$)""",
-    """duser=((NT AUTHORITY|({domain}[^\\=]{1,2000}))\\+)?(SYSTEM|NETWORK SERVICE|LOCAL SERVICE|({user}[^\\=]{1,2000}))\s{1,100}(\w+=|$)""",
+    """duser=((NT AUTHORITY|({domain}[^\\=]{1,2000}))\\{1,20})?(SYSTEM|NETWORK SERVICE|LOCAL SERVICE|({user}[^\\=\s]{1,2000}))\s{1,100}(\w+=|$)""",
     """externalId=({alert_id}[^\s=]{1,100})\s{1,100}(\w+=|$)""",
     """Carbon Black\|(Protection|App Control)\|([^|]{0,2000}\|){2}({alert_name}[^\|]{1,2000})\|""",
     """Carbon Black\|(Protection|App Control)\|([^|]{0,2000}\|){3}({alert_severity}[^\|]{1,2000})\|""",

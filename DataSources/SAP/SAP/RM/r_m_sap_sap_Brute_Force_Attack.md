@@ -5,8 +5,8 @@ Vendor: SAP
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   1    |     1      |     10      |   10    |
+|   1   |   0    |     1      |     10      |   10    |
 
-| Event Type   | Rules                                                                                                                              | Models                                                |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| remote-logon | <b>T1078 - Valid Accounts</b><br> ↳ <b>AS-PV-UHWoPC</b>: Access to Password Vault managed asset with no password checkout for user |  • <b>AS-PV-OA</b>: Password retrieval based accounts |
+| Event Type      | Rules                                                                                                            | Models |
+| --------------- | ---------------------------------------------------------------------------------------------------------------- | ------ |
+| account-lockout | <b>T1110 - Brute Force</b><br> ↳ <b>SEQ-UH-02</b>: Account lockout on an asset that does not belong to this user |        |

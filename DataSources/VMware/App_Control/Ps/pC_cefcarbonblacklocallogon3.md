@@ -9,6 +9,7 @@ Name = cef-carbonblack-local-logon-3
   TimeFormat = "epoch"
   Conditions = [ """|Carbon Black|App Control|""", """Event[00000005] Type[SessionLogon]""" ]
   Fields = [
+    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\Wrt=({time}\d{1,100})""",
     """\Wdvc=({host_ip}[a-fA-F:\d.]{1,2000})""",
     """\Wdvchost=({host}[\w\-.]{1,2000})""",

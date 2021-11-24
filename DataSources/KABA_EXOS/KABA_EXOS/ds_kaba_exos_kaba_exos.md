@@ -8,11 +8,11 @@ Product: KABA EXOS
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  file-read<br> ↳[cef-kaba-badge-access](Ps/pC_cefkababadgeaccess.md)<br> | T1003.001 - T1003.001<br>T1003.003 - T1003.003<br>T1083 - File and Directory Discovery<br> | [<ul><li>35 Rules</li></ul><ul><li>18 Models</li></ul>](RM/r_m_kaba_exos_kaba_exos_Compromised_Credentials.md) |
-|    [Data Access](../../../UseCases/uc_data_access.md)    |  file-read<br> ↳[cef-kaba-badge-access](Ps/pC_cefkababadgeaccess.md)<br> | T1083 - File and Directory Discovery<br>    | [<ul><li>31 Rules</li></ul><ul><li>17 Models</li></ul>](RM/r_m_kaba_exos_kaba_exos_Data_Access.md)    |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  file-read<br> ↳[cef-kaba-badge-access](Ps/pC_cefkababadgeaccess.md)<br> | T1003.001 - T1003.001<br>T1003.003 - T1003.003<br>T1083 - File and Directory Discovery<br> | [<ul><li>36 Rules</li></ul><ul><li>19 Models</li></ul>](RM/r_m_kaba_exos_kaba_exos_Compromised_Credentials.md) |
+|    [Data Access](../../../UseCases/uc_data_access.md)    |  file-read<br> ↳[cef-kaba-badge-access](Ps/pC_cefkababadgeaccess.md)<br> | T1083 - File and Directory Discovery<br>    | [<ul><li>32 Rules</li></ul><ul><li>18 Models</li></ul>](RM/r_m_kaba_exos_kaba_exos_Data_Access.md)    |
 |    [Other](../../../UseCases/uc_other.md)    |  file-read<br> ↳[cef-kaba-badge-access](Ps/pC_cefkababadgeaccess.md)<br> |    | [<ul><li>1 Rules</li></ul>](RM/r_m_kaba_exos_kaba_exos_Other.md)    |
 |         [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)         |  file-read<br> ↳[cef-kaba-badge-access](Ps/pC_cefkababadgeaccess.md)<br> | T1078 - Valid Accounts<br>T1083 - File and Directory Discovery<br>    | [<ul><li>3 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_kaba_exos_kaba_exos_Privilege_Abuse.md)    |
-|     [Privileged Activity](../../../UseCases/uc_privileged_activity.md)     |  file-read<br> ↳[cef-kaba-badge-access](Ps/pC_cefkababadgeaccess.md)<br> | T1078 - Valid Accounts<br>T1083 - File and Directory Discovery<br>    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_kaba_exos_kaba_exos_Privileged_Activity.md)       |
+|     [Privileged Activity](../../../UseCases/uc_privileged_activity.md)     |  file-read<br> ↳[cef-kaba-badge-access](Ps/pC_cefkababadgeaccess.md)<br> | T1078 - Valid Accounts<br>T1083 - File and Directory Discovery<br>    | [<ul><li>3 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_kaba_exos_kaba_exos_Privileged_Activity.md)       |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

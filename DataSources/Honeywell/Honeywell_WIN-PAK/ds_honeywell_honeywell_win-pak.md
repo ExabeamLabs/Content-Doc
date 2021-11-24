@@ -10,7 +10,7 @@ Product: Honeywell WIN-PAK
 |:----:| ---- | ---- | ---- |
 | [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  physical-access<br> ↳[q-winpak-badge-access](Ps/pC_qwinpakbadgeaccess.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>5 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_honeywell_honeywell_win-pak_Abnormal_Authentication_&_Access.md) |
 |    [Physical Security](../../../UseCases/uc_physical_security.md)    |  physical-access<br> ↳[q-winpak-badge-access](Ps/pC_qwinpakbadgeaccess.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>7 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_honeywell_honeywell_win-pak_Physical_Security.md)    |
-|    [Workforce Protection](../../../UseCases/uc_workforce_protection.md)    |  physical-access<br> ↳[q-winpak-badge-access](Ps/pC_qwinpakbadgeaccess.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_honeywell_honeywell_win-pak_Workforce_Protection.md)    |
+|    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  physical-access<br> ↳[q-winpak-badge-access](Ps/pC_qwinpakbadgeaccess.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_honeywell_honeywell_win-pak_Privileged_Activity.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

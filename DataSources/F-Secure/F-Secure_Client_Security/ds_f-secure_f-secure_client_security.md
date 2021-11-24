@@ -8,10 +8,10 @@ Product: F-Secure Client Security
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  file-permission-change<br> ↳[cef-fsecure-security-alert](Ps/pC_ceffsecuresecurityalert.md)<br> | T1083 - File and Directory Discovery<br>    | [<ul><li>31 Rules</li></ul><ul><li>17 Models</li></ul>](RM/r_m_f-secure_f-secure_client_security_Compromised_Credentials.md) |
-|    [Data Access](../../../UseCases/uc_data_access.md)    |  file-permission-change<br> ↳[cef-fsecure-security-alert](Ps/pC_ceffsecuresecurityalert.md)<br> | T1083 - File and Directory Discovery<br>    | [<ul><li>31 Rules</li></ul><ul><li>17 Models</li></ul>](RM/r_m_f-secure_f-secure_client_security_Data_Access.md)    |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  file-permission-change<br> ↳[cef-fsecure-security-alert](Ps/pC_ceffsecuresecurityalert.md)<br> | T1083 - File and Directory Discovery<br>    | [<ul><li>32 Rules</li></ul><ul><li>18 Models</li></ul>](RM/r_m_f-secure_f-secure_client_security_Compromised_Credentials.md) |
+|    [Data Access](../../../UseCases/uc_data_access.md)    |  file-permission-change<br> ↳[cef-fsecure-security-alert](Ps/pC_ceffsecuresecurityalert.md)<br> | T1083 - File and Directory Discovery<br>    | [<ul><li>32 Rules</li></ul><ul><li>18 Models</li></ul>](RM/r_m_f-secure_f-secure_client_security_Data_Access.md)    |
 |         [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)         |  file-permission-change<br> ↳[cef-fsecure-security-alert](Ps/pC_ceffsecuresecurityalert.md)<br> | T1078 - Valid Accounts<br>T1083 - File and Directory Discovery<br> | [<ul><li>3 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_f-secure_f-secure_client_security_Privilege_Abuse.md)    |
-|     [Privileged Activity](../../../UseCases/uc_privileged_activity.md)     |  file-permission-change<br> ↳[cef-fsecure-security-alert](Ps/pC_ceffsecuresecurityalert.md)<br> | T1078 - Valid Accounts<br>T1083 - File and Directory Discovery<br> | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_f-secure_f-secure_client_security_Privileged_Activity.md)       |
+|     [Privileged Activity](../../../UseCases/uc_privileged_activity.md)     |  file-permission-change<br> ↳[cef-fsecure-security-alert](Ps/pC_ceffsecuresecurityalert.md)<br> | T1078 - Valid Accounts<br>T1083 - File and Directory Discovery<br> | [<ul><li>3 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_f-secure_f-secure_client_security_Privileged_Activity.md)       |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
