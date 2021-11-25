@@ -26,7 +26,7 @@ Name = symantec-cloud-activity
     """"object_name":"(|\/|({object}({file_path}({file_parent}[^=]{0,2000}?[\\\/]{1,2000}\\\/)?(|({file_name}[^\\\/=]{0,2000}?(\.({file_ext}[^"]{1,2000}))?)?))))""""
     """"name":"(|\/|({object}({file_path}({file_parent}[^=]{0,2000}?[\\\/]{1,2000}\\\/)?(|({file_name}[^\\\/=]{0,2000}?(\.({file_ext}[^"]{1,2000}))?)?))))""""
     """"host(s)?":"({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"""",
-    """ext__shared_with_=({target}[^\s]{1,2000})\s\w+="""
+    """"shared_with":"({target}[^"]{1,2000})""""
   ]
   DupFields = ["file_path->resource", "app->service", "activity->accesses"]
 
