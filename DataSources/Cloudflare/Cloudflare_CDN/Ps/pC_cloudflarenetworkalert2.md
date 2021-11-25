@@ -7,9 +7,9 @@ Name = cloudflare-network-alert-2
   Lms = Direct
   DataType = "network-alert"
   TimeFormat = "epoch"
-  Conditions = [ """CEF:""", """destinationServiceName =cloudflare""", """ext_EdgeStartTimestamp=""" ]
+  Conditions = [ """CEF:""", """destinationServiceName =cloudflare""", """"EdgeStartTimestamp":"""" ]
   Fields = [
-    """ext_EdgeStartTimestamp=({time}[^\s]{1,2000})""",
+    """"EdgeStartTimestamp":"({time}[^"]{1,2000})"""",
     """suser=({user}.+?)\s\w+=""",
     """shost=({host}[^\s]{1,2000})""",
     """act=({alert_type}.+?)\s\w+=""",

@@ -1,14 +1,14 @@
 #### Parser Content
 ```Java
 {
-Name = unix-ssh-login-json
+Name = unix-ssh-login-json-1
   Product = Unix
   DataType = "ssh-login"
-  Conditions = [ """"ident":"sshd""", """Accepted publickey for""" ]
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
+  Conditions = [ """destinationServiceName =Azure""", """"operationName":"LinuxSyslogEvent"""", """ ssh2""", """Accepted """ ]
   Fields = ${UnixParserTemplates.unix-activity-json.Fields}[
-    """Accepted ({auth}\S+) for (({domain}[^\\:]{1,2000})\\+)?({user}[\w.'\-\\$]{1,2000})""",
-    """from ({src_ip}[a-fA-F\d.:]{1,2000})""",
-    """\s{1,100}from\s{1,100}(::[\w]{1,2000}:)?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """Accepted\s({auth}\S{1,2000})\sfor\s(({domain}[^\\"]{1,2000})\\{1,25})?({user}[^\s"]{1,2000})\s""",
+    """\s{1,100}from\s{1,100}(::ffff:)?({src_ip}[A-Fa-f\d:.]{1,2000})\sport\s({src_port}\d{1,100})\s"""
   ]
 
 unix-activity-json = {

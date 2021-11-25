@@ -10,10 +10,10 @@ Name = cef-cloudflare-net-connection
   Conditions = [ """CEF:""", """|Skyformation|""", """requestClientApplication=""", """destinationServiceName =Cloudflare""", """dproc=Firewall""" , """cat=network-traffic"""]
   Fields = [
     """ext__occurred_at_=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
-    """ext_action=({activity}[^\s]{1,2000})\s""",
+    """"action":"({activity}[^"]{1,2000})"""",
     """suser=({user}[^\s]{1,2000})\s""",
-    """ext_ua=({user_agent}.*?)\s{0,100}\w+=""",
-    """ext_country=({country_code}.*?)\s{0,100}\w+=""",
+    """"ua":"({user_agent}[^"]*?)"""",
+    """"country":"({country_code}[^"]*?)"""",
     """deviceInboundInterface=({src_interface}.*?)\s{0,100}\w+=""",
     """dhost=({dest_host}.*?)\s{1,100}\w+=""",
     """dproc=({process}.*?)\s{0,100}\w+=""",
@@ -25,7 +25,7 @@ Name = cef-cloudflare-net-connection
     """src=({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
     """dst=({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
     """requestClientApplication=({app}.+?)\s{0,100}\w+=""",
-    """ext_source=({log_source}.+?)\s{0,100}\w+=""",
+    """"source":"({log_source}[^"]+?)"""",
     """\sin=({bytes}.+?)\s{0,100}\w+=""",
     """ext_method=({method}[^\s]{1,2000})""",
     """cat=({category}[^\s]{1,2000})\s""",

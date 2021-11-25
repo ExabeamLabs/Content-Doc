@@ -26,7 +26,7 @@ Name = cef-skyformation-login
     """\ssuser=[^=]{0,2000}?@([\.\w+]{1,2000}\.)?({email_domain}[^\.\s]{1,2000}\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|ch))\s{1,100}""",
     """\ssuser=([^\s]{1,2000}\/)?({user_email}[^\s@]{1,2000}@[^\s@]{1,2000})\s{1,100}(\w+=|$)""",
     """\Wsuser=(({user_fullname}\w+(\s{1,100}\w+)+)[^\w=]|({user}[^@\s]{1,2000})\s{1,100}\w+=)""",
-    """\Wext_eventType=(|({log_type}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """"eventType":"(|({log_type}[^"]{1,2000}?))"""",
     """"source"\s{0,100}:\s{0,100}\{[^=]{1,2000}?"{1,20}name"{1,20}:"{1,20}({user_fullname}[^\"]{1,2000})"{1,20}""",
     """"user(A|a)gent"\s{0,100}:\s{0,100}"({user_agent}[^"]{1,2000}?)"\s{0,100}[,\}\]]""",
   ]

@@ -40,6 +40,8 @@ cef-azure-event-hub = {
       """\Wshost=(|--|({src_host}[^=]{1,2000}))(\s{1,100}\w+=|\s{0,100}$)""",
       """"clientIP":"({src_ip}[A-Fa-f.\d]{1,2000})""",
       """"description":"({additional_info}[^"]{1,2000})""",
+      """\Wext_identity_claims_name=(|({user}[^=]{1,2000}))(\s{1,100}\w{1,100}=|\s{0,100}$)""",
+      """"callerIpAddress":"({src_ip}[a-fA-F\d.:]{1,2000})"""",
       """Namespace:\s{0,100}(|({event_hub_namespace}[^\]]{1,2000}?))\s{0,100}[\];]""",
       """EventHub name:\s{0,100}(|({event_hub_name}[^\]]{1,2000}?))\s{0,100}\]""",
       """\[Namespace:\s{0,100}({host}\S{1,2000}) ; EventHub name:"""
