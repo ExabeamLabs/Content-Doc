@@ -7,11 +7,11 @@ Name = raw-4768
     Lms = Direct
     DataType = "windows-4768"
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
-    Conditions = ["A Kerberos authentication ticket (TGT) was requested", "Account Name:"]
+    Conditions = ["""A Kerberos authentication ticket (TGT) was requested""", """Account Name:"""]
     Fields = [
       """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+      """({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d)\s({host}[\w\-.]{1,2000})?""",
       """({host}[\w\-.]{1,2000})\s{1,100}({time}\d{1,100}\/\d{1,100}\/\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(am|AM|pm|PM))""",
       """({event_name}A Kerberos authentication ticket \(TGT\) was requested)""",
       """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",

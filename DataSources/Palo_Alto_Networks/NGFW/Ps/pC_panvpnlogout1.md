@@ -1,19 +1,11 @@
 #### Parser Content
 ```Java
 {
-Name = paloalto-firewall-allow-1
-  DataType = "network-connection"
-  Conditions = [ """"LogType":"TRAFFIC"""", """"Action":"allow"""", """"Subtype":"""" ]
+Name = pan-vpn-logout-1
+  DataType = "vpn-logout"
+  Conditions = [ """"LogType":"USERID"""", """"DeviceSN":"""", """"Subtype":"logout"""" ]
   Fields = ${PaloAltoParserTemplates.paloalto-vpn.Fields}[
-    """"Action":"({action}[^"]{1,20000})"""",
-    """"NATSource":"({src_translated_ip}[a-fA-F\d:.]{1,2000})""",
-    """"NATDestination":"({dest_translated_ip}[a-fA-F\d:.]{1,2000})""",
-    """"NATSourcePort":({src_translated_port}\d{1,100})""",
-    """"NATDestinationPort":({src_translated_port}\d{1,100})""",
-    """"Bytes":({bytes}\d{1,100}),""",
-    """"BytesSent":({bytes_out}\d{1,100}),""",
-    """"BytesReceived":({bytes_in}\d{1,100}),""",
-    """"URLCategory":"({category}[^"]{1,2000})""""
+    """"SourceIP":"({src_ip}[A-Fa-f\d\.:]{1,2000})""""
   ]
 
 paloalto-vpn = {

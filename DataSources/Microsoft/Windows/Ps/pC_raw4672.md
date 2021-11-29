@@ -20,6 +20,7 @@ Name = raw-4672
       """\scategoryOutcome=(|/({outcome}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
       """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
       """({outcome}(?i)(((audit|success|failure)( |_)(success|audit|failure))|information))\s{0,100}(\s|\t|,|#\d{1,100}|<[^>]{1,2000}>)\s{0,100}({host}[^=]{1,2000}?)\s{0,100}(\s|\t|,|#\d{1,100}|<[^>]{1,2000}>)\s{0,100}""",
+      """({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d)\s({host}[\w\-.]{1,2000})""",
       """(::ffff:)?({host}[^\s\/]{1,2000})\/Microsoft-Windows-Security-Auditing \(4672\)""",
       """"dhn":"(::ffff:)?({host}[^-"]{1,2000})""",
       """Type\s{0,100}=\s{0,100}"({outcome}[^";]{1,2000})"""",

@@ -7,13 +7,14 @@ Name = raw-4770
   Lms = Direct
   DataType = "windows-4770"
   TimeFormat = "MMM dd HH:mm:ss yyyy"
-  Conditions = [ "A Kerberos service ticket was renewed", "4770" ]
+  Conditions = [ """A Kerberos service ticket was renewed""", """4770""" ]
   Fields = [
     """({event_name}A Kerberos service ticket was renewed)""",
     """({host}[\w\-.]{1,2000})\s{1,100}({time}\d{1,100}\/\d{1,100}\/\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(am|AM|pm|PM))""",
     """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
     """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
     """(?i)(((audit|success|failure)( |_)(success|audit|failure))|information)[\s,]({host}[\w.-]{1,2000})""",
+    """({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d)\s({host}[\w\-.]{1,2000})""",
     """__li_source_path="{0,20}({host}[^"]{1,2000})"""",
     """<?Computer>?(Name)?\s{0,100}=?\s{0,100}"{0,20}({host}[\w\.-]{1,2000})(\s|,|"|</Computer>|$)""",
     """({event_code}4770)""",
