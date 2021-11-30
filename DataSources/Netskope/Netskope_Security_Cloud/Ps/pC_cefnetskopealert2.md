@@ -19,7 +19,7 @@ Name = cef-netskope-alert-2
     """msg=({additional_info}[^=]{1,2000}?)\s{1,100}\w+=""",
     """"malware_type"{1,20}:"{1,20}({alert_name}[^"]{1,2000})"""",
     """"malware_name":"({malware_filename}[^"]{1,2000}?)"""",
-    """ext__quarantine_file_name_=({file_path}[^=]{1,2000}?)\s\w+=""",
+    """"quarantine_file_name":"({file_path}[^"]{1,2000}?)"""",
     """"alert_type"{1,20}:"{1,20}({alert_type}[^"]{1,2000})"""",
     """dpriv=({alert_type}[^=]{1,2000}?)\s\w+=""",
     """outcome=({outcome}[^=]{1,2000}?)\s{1,100}\w+=""",
