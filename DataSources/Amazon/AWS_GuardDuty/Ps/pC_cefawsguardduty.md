@@ -20,11 +20,14 @@ Name = cef-aws-guardduty
     """"id":"({alert_id}[^"]{1,2000}?)"""",
     """"title":"({alert_name}[^"]+?)"""",
     """"severity":"({alert_severity}[^"]{1,2000})"""",
-    """\sext_service_action_portProbeAction_portProbeDetails_0__localPortDetails_port=({dest_port}\d{1,100})""",
+    #"""\sext_service_action_portProbeAction_portProbeDetails_0__localPortDetails_port=({dest_port}\d{1,100})""",
+    """"service".*?"action".*?"portProbeAction".*?"portProbeDetails".*?"localPortDetails".*?"port":"({dest_port}\d{1,100})"""",
     #"""\sext_service_action_networkConnectionAction_localPortDetails_port=({dest_port}\d{1,100})""",
     """"service".*?"action".*?"networkConnectionAction".*?"localPortDetails".*?"port":({dest_port}\d+)"""
-    """\sext_service_action_networkConnectionAction_remotePortDetails_port=({src_port}\d{1,100})""",
-    """\sext_service_action_networkConnectionAction_({outcome}blocked=(false|true))""",
+    #"""\sext_service_action_networkConnectionAction_remotePortDetails_port=({src_port}\d{1,100})""",
+    """"service".*?"action".*?"networkConnectionAction".*?"remotePortDetails".*?"port":"({src_port}\d{1,100})"""", 
+    #"""\sext_service_action_networkConnectionAction_({outcome}blocked=(false|true))""",
+    """"service".*?"action".*?"networkConnectionAction.*?"({outcome}blocked":"(false|true))""",
     """\smsg=({additional_info}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 
