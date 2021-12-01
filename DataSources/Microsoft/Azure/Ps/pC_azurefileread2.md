@@ -26,7 +26,8 @@ azure-file-read = {
       """"CallerIPAddress":"({src_ip}[A-Fa-f\d:.]{1,2000})"""",
       """"ResultType":"({outcome}[^"]{1,2000})""",
       """"OperationName":"({event_name}[^"]{1,2000})"""",
-      """"identity_claim_unique_name_s":"(({user_email}[^@"]{1,2000}@[^\.]{1,2000}\.[^"]{1,2000})|({user}[^"]{1,2000}))""""
+      """"identity_claim_unique_name_s":"(({user_email}[^@"]{1,2000}@[^\.]{1,2000}\.[^"]{1,2000})|({user}[^"]{1,2000}))"""",
+      """suser=({user_email}[^=@]{1,2000}@[^\.]{1,2000}\.[^\s=]{1,2000})"""
     
 }
 ```

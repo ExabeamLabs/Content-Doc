@@ -9,10 +9,10 @@ Name = raw-4625
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
     Conditions = ["An account failed to log on", "Failure Reason"]
     Fields = [
-      """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
+      """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[\w.-]{1,2000})))""",
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-      """\s({host}[\w-.]{1,2000})\s{0,100}Microsoft-Windows-Security-Auditing""",
-      """EVENT_HOST="{1,100}({host}[\w.-]{1,2000})"""",
+      """\s(4625|({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[\w-.]{1,2000}))))\s{0,100}Microsoft-Windows-Security-Auditing""",
+      """EVENT_HOST="{1,100}({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[\w.-]{1,2000})))"""",
       """({event_name}An account failed to log on)""",
       """({event_code}4625)""",
       """\s({time}[a-zA-Z]{3} \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
@@ -33,7 +33,7 @@ Name = raw-4625
       """(?i):\d{1,100}:\d{1,100}\s{1,100}(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(am|pm|\d{1,100}|({dest_host}[\w\-.]{1,2000})))\s""",
       """(EventType|EVENT_TYPE)="({outcome}[^"]{1,2000})"""
     ]
-    DupFields = ["host->dest_host","src_host_windows->src_host"]
+    DupFields = ["src_host_windows->src_host"]
   
 
 }
