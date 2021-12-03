@@ -26,7 +26,7 @@ cef-carbonblack-events-1 {
     """"eventType":"({alert_type}[^"]{1,2000})"""",
     """"threatIndicators":\[?"({alert_type}[^"]{1,2000})"""",
     """"applicationPath":"({process}(({directory}[^"=,]{1,2000}?)[\\\/]{1,20})?({process_name}[^\/\\"]{1,2000}))"""",
-    """"peerFqdn":"({web_domain}[^"]{1,2000})"""",
+    """"peerFqdn":"(::|({web_domain}[^"]{1,2000}))"""",
     """"peerFqdn":"[^"\s]{0,2000}?({top_domain}[^\/\.\s"]{1,2000}(?i)(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za)){1,2000})""",
     """"destAddress":"({dest_ip}[a-fA-F\d:.]{1,2000})"""",
     """"name":"({file_path}(\w:|\\\\)[^"]{1,2000})"""",
