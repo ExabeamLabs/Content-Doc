@@ -21,7 +21,7 @@ cef-o365-app-login = {
      """"{1,20}appDisplayName"{1,20}:"{1,20}({app}[^"]{1,2000})""",
      """"{1,20}ipAddress"{1,20}:"{1,20}({src_ip}[^"]{1,2000})""",
      """"{1,20}clientAppUsed"{1,20}:"{1,20}({object}[^"]{1,2000})""",
-     """"{1,20}resourceDisplayName"{1,20}:"{1,20}({resource}[^"]{1,2000})""",
+     """"{1,20}resourceDisplayName"{1,20}:"{1,20}({resource}[^",]{1,2000})""",
      """"{1,20}additionalDetails":"{1,20}({additional_info}[^"]{1,2000})""",
      """"{1,20}deviceDetail".+?operatingSystem"{1,20}:"{1,20}({os}[^"]{1,2000})""",
      """"{1,20}location".+?city"{1,20}:"{1,20}({location_city}[^",]{1,2000})""",

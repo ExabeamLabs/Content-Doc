@@ -7,7 +7,7 @@ Name = cef-skyformation-gmail-out
   Lms = Direct
   DataType = "dlp-email-alert"
   TimeFormat = "epoch"
-  Conditions = [ """destinationServiceName =Google Apps""", """"selector":"send"""", """dproc=Gmail""" ]
+  Conditions = [ """destinationServiceName =Google Apps""", """act=send""", """dproc=Gmail""" ]
   Fields = [
      """"timestamp_usec":({time}\d{1,100})""",
      """"destination":\[\{"address[":]{0,2000}({external_address}[^",]{1,2000})"""",
