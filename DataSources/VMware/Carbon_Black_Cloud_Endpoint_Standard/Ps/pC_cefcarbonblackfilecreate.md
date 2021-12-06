@@ -7,7 +7,7 @@ Name = cef-carbonblack-file-create
   Lms = ArcSight
   DataType = "file-write"
   TimeFormat = "epoch"
-  Conditions = [ """threatIndicators":""", """fileType=file""", """destinationServiceName =CB Defense""" ]
+  Conditions = [ """threatIndicators":""", """"eventType":"FILE_CREATE"""", """destinationServiceName =CB Defense""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
     """"eventTime":({time}\d{1,20}),""",

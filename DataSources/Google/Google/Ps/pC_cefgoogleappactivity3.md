@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-google-app-activity-3
-  Conditions = [ """CEF:""", """|Skyformation|""", """"applicationName":"token"""", """"uniqueQualifier":""" ]
+  Conditions = [ """destinationServiceName =Google Apps""", """"applicationName":"token"""", """"uniqueQualifier":""" ]
 
 cef-google-app-activity = {
   Vendor = Google

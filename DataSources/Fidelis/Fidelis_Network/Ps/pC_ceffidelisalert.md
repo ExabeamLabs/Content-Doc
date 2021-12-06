@@ -7,7 +7,7 @@ Name = cef-fidelis-alert
   Lms = Splunk
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ """CEF:""", """|skyformation|""", """cat=security-alert""", """destinationServiceName =Fidelis""", """|security-threat-detected|""" ]
+  Conditions = [ """"ALERT_TIME":"""", """destinationServiceName =Fidelis""", """"ACTION":"alert"""" ]
   Fields = [
     """"ALERT_TIME":"({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d)"""",
     """"ALERT_ID":"({alert_id}\d{1,100})"""",

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-google-app-activity-1
-  Conditions = [ """CEF:""", """|Skyformation|""", """"applicationName":"calendar"""", """"uniqueQualifier":""" ]
+  Conditions = [ """destinationServiceName =Google Apps""", """"applicationName":"calendar"""", """"uniqueQualifier":""" ]
   Fields = ${GoogleParserTemplates.cef-google-app-activity.Fields} [
     """({app}calendar)""",
     """"name":"notification_type","value":"({activity}[^"]{1,2000})"""",
