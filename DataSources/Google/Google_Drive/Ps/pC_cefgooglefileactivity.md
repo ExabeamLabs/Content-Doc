@@ -3,12 +3,12 @@
 {
 Name = cef-google-file-activity
     Vendor = Google
-  Product = Google Drive
+    Product = Google Drive
     Lms = ArcSight
     DataType = "file-operations"
     IsHVF = true
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
-    Conditions = ["""|Skyformation|SkyFormation Cloud Apps Security|""", """"applicationName" : "drive""""]
+    Conditions = ["""destinationServiceName =Google Apps""", """"applicationName" : "drive""""]
     Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """([^\|]{1,2000}\|){5}({accesses}[^\|]{1,2000})\|""",

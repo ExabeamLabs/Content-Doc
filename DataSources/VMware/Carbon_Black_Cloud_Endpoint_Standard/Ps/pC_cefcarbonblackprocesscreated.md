@@ -7,7 +7,7 @@ Name = cef-carbonblack-process-created
   Lms = ArcSight
   DataType = "process-created"
   TimeFormat = "epoch"
-  Conditions = [ """destinationServiceName =CB Defense""", """threatIndicators":""", """processDetails":""", """fileType=process"""]
+  Conditions = [ """destinationServiceName =CB Defense""", """threatIndicators":""", """processDetails":""", """"eventType":"CREATE_PROCESS""""]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
     """"eventTime":({time}\d{1,100})""",

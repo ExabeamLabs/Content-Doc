@@ -1,11 +1,11 @@
 #### Parser Content
 ```Java
 {
-Name = cef-carbonblack-network-connection-successful-2
+Name = cef-carbonblack-network-connection-failed-2
   DataType = "network-connection"
-  Conditions = [ """threatIndicators""" , """"eventType":"NETWORK"""", """destinationServiceName =CB Defense""", """"processDetails":""", """"netFlow"""", """ successful"""]
+  Conditions = [ """destinationServiceName =CB Defense""", """threatIndicators""" , """unsuccessfully attempted to establish a""", """"netFlow"""" ]
   Fields = ${CarbonBlackParserTemplates.cef-carbonblack-events-1.Fields} [
-    """({outcome}successful)""",
+    """({outcome}unsuccessful)""",
   ]
 
 cef-carbonblack-events-1 {

@@ -7,12 +7,12 @@ Name = cef-mimecast-security-alert
   Lms = ArcSight
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """CEF:""", """destinationServiceName =Mimecast Email Security""", """"recipientAddress":"""", """"fileName":"""", """"details":"""", """Time taken:""" ]
+  Conditions = [ """destinationServiceName =Mimecast Email Security""", """"recipientAddress":"""", """"fileName":"""", """"details":"""", """Time taken:""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"date":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\+\d{1,100})""",
     """dproc=({dproc}[^=]{1,2000}?)\s{1,100}\w+=""", 
-    """\Wsrc=({src_ip}[a-fA-F\d.:]{1,2000})""",
+    """"senderIpAddress":"({src_ip}[\da-fA-F.:]{1,2000})"""",
     """"(?i)Route":"({direction}[^"]{1,2000})""",
     """"(?:id|aCode)":"({alert_id}[^"]{1,2000})""",
     """"(recipientAddress|Recipient)":"({recipient}[^"]{1,2000})""",

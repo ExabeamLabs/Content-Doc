@@ -7,7 +7,7 @@ Name = syslog-mysql-dbquery-2
   Lms = Direct
   DataType = "database-query"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """CEF:""", """|SkyFormation Cloud Apps Security|""", """"ttam_category":"database/mysql"""", """"ttam_service":"database"""", """logger.account""" ]
+  Conditions = [ """"message":""", """"ttam_category":"database/mysql"""", """"ttam_service":"database"""", """logger.account""" ]
   Fields = [
     """timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)"""",
     """ttam_reporter":"({host}[^"]{1,2000})"""",

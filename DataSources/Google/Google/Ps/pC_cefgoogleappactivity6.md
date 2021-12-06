@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-google-app-activity-6
-  Conditions = [ """CEF:""", """|Skyformation|""", """"applicationName":"token"""", """"uniqueQualifier":""", """flexString1=activity""", """flexString1Label=application-action""" ]
+  Conditions = [ """destinationServiceName =Google Apps""", """"applicationName":"token"""", """"uniqueQualifier":""", """"name":"activity"""" ]
   Fields = ${GoogleParserTemplates.cef-google-app-activity.Fields} [
     """"events":.*?"name":"method_name"[^\}]{1,2000}?"value":"({activity}[^"]{1,2000}?)""""
   ]
