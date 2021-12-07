@@ -17,7 +17,7 @@ cef-o365-app-login-1 = {
    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
    Fields =[
      """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
-     """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}.\d{1,100}Z)\s{1,100}[^\s]{1,2000}\s{1,100}Skyformation""",
+     """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}.\d{1,100}Z)\s{1,100}[^\s]{1,2000}\s{1,100}""",
      """"event-name":"({activity}[^"]{1,2000})""",
      """app-user-displayname":"({user_fullname}[^\s"]{1,2000}\s{1,100}[^"]{1,2000})""",
      """user-email":"({user_email}[^@"]{1,2000}@[^"]{1,2000})""",

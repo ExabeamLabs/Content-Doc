@@ -7,7 +7,7 @@ Name = azure-app-login
   Lms = Splunk
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
-  Conditions = ["""|Skyformation|SkyFormation Cloud Apps Security|""", """"category":"ContainerRegistryLoginEvents"""", """"operationName":"Login""""]
+  Conditions = ["""destinationServiceName =Azure""", """"category":"ContainerRegistryLoginEvents"""", """"operationName":"Login""""]
   Fields = [
     """"loginServer":"({host}[^",]{1,2000})""",
     """"time":"({time}\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{1,100}Z)""",

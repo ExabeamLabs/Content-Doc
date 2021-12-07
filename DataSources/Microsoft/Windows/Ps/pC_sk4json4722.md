@@ -3,7 +3,7 @@
 {
 Name = sk4-json-4722
   DataType = "windows-ds-access"
-  Conditions = [""""event_id":4722""", """|Skyformation""", """Microsoft-Windows-Security-Auditing""", """A user account was enabled"""]
+  Conditions = [""""event_id":4722""", """"provider_name":"Microsoft-Windows-Security-Auditing""", """A user account was enabled""", """ cs6="""]
   Fields = ${WinParserTemplates.json-windows-events-1.Fields}[
     """({event_name}A user account was enabled)""",
   ]
@@ -15,7 +15,7 @@ json-windows-events-1 = {
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
-    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]{1,2000}\sSkyformation""",
+    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]{1,2000}\s""",
     """"{1,20}created"{1,20}:"{1,20}({time}[^"]{1,2000})""",
     """requestClientApplication=({app}[^=]{1,2000}?)\s\w+=""",
     """({event_name}An account was logged off)""",

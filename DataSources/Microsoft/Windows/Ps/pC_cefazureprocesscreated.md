@@ -7,7 +7,7 @@ Name = cef-azure-process-created
   Lms = ArcSight
   DataType = "process-created"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """"ActionType":"ProcessCreated"""" ]
+  Conditions = [ """"DeviceName":""", """"ActionType":"ProcessCreated"""" ]
   Fields = [
     """"Timestamp":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100})""",
     """DeviceName":\s{0,100}"({dest_host}({host}[^"\.]{1,2000})?[^"]{1,2000})""",

@@ -7,7 +7,7 @@ Name = cef-onedrive-app-activity
     Lms = ArcSight
     DataType = "app-activity"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-    Conditions = [ """|Skyformation|SkyFormation Cloud Apps Security|""", """flexString1=PageViewed""" ]
+    Conditions = [ """destinationServiceName =Office 365""", """flexString1=PageViewed""" ]
     Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """"CreationTime\\*"{1,20}:\\*\s{0,100}"{1,20}({time}[^\\"]{1,2000})""",

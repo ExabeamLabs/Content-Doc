@@ -3,7 +3,7 @@
 {
 Name = cef-defender-atp-process
   DataType = "process-created"
-  Conditions = ["""CEF""", """SkyFormation Cloud Apps Security""", """requestClientApplication=""", """AdvancedHunting-DeviceProcessEvents"""]
+  Conditions = [""""FileName":""", """requestClientApplication=""", """AdvancedHunting-DeviceProcessEvents"""]
   Fields = ${MicrosoftParserTemplates.cef-defender-atp.Fields} [
      """ProcessId":({pid}\d{1,100})""",
      """InitiatingProcessFileName":\s{0,100}"({parent_process}[^"]{1,2000})""",
