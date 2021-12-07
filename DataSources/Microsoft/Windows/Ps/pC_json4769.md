@@ -13,7 +13,7 @@ Name = json-4769
       """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """"EventReceivedTime":\s{0,100}({time}\d{1,100})""",
       """"timestamp":\s{0,100}({time}\d{1,100})""",
-      """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]{1,2000}\sSkyformation""",
+      """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]{1,2000}\s""",
       """"{1,20}created"{1,20}:"{1,20}({time}[^"]{1,2000})""",
       """"TimeCreated"{1,20}:"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """"Computer"{1,20}:"{1,20}({host}[^"]{1,2000})""""

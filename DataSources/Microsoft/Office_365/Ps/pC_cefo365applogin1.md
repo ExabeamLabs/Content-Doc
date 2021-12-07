@@ -10,7 +10,7 @@ Name = cef-o365-app-login-1
     Conditions = [ """destinationServiceName =Office 365""", """"isInteractive":""", """"errorCode":""", """"clientAppUsed":""", """"failureReason":""", """dproc=Graph Sign-In"""  ]
     Fields = [
       """exabeam_host=(::ffff:)?({host}[^\s]{1,2000})""",
-      """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}\w) [\w\-.]{1,2000} Skyformation""",
+      """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}\w) [\w\-.]{1,2000} """,
       """"ipAddress":"({src_ip}[A-Fa-f.:\d]{1,2000})""",
       """\WdestinationServiceName\s{0,100}=({app}({event_subtype}[^=]{1,2000}?))\s{1,100}(\w{1,100}=|$)""",
       """"appDisplayName":"(NotApplicable|({app}[^"]{1,2000}))"""",

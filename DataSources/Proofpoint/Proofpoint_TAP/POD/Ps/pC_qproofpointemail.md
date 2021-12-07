@@ -9,6 +9,8 @@ Name = q-proofpoint-email
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
     Conditions = [ """"subject"""", """"from"""", """"rcpts"""", """"rule"""", """"to"""", """:""", """|Proofpoint|ProofpointEmailSecurity|""" ]
     Fields =[ 
+      """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[^\s]{1,2000})""",
+      """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """"timestamp"{1,20}:\s{0,20}"{1,20}({time}\d{1,100}.\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}.\d{1,100}Z)""",
       """"ts"{1,20}:\s{0,100}"{1,20}({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}[\+\-]\d{1,100})""",
       """"sizeBytes"{1,20}:\s{0,100}({bytes}\d{1,100})""",
