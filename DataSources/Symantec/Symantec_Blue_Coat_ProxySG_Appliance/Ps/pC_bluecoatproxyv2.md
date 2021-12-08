@@ -14,6 +14,7 @@ Name = bluecoat-proxy-v2
     """\tcs-userdn=(?:-|(({domain}[^\\\t]{1,2000})\\)?({user}[^\s\t]{1,2000}))""",
     """\Ws-ip="?(-|({host}[^"|]{1,2000}))("|\||$|\t|\s{1,100}[\w\-\(\)]{1,2000}=)""",
     """\Ws-computername="?(-|({host}[^"|]))("|\||$|\t|\s{1,100}[\w\-\(\)]{1,2000}=)""",
+    """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)"""",
     """date="?({time}\d\d\d\d-\d\d-\d\d"?(,|\t|\s)time="?\d\d:\d\d:\d\d)""",
     """\Wdevicetime=\[({time}\d{1,100}\/\d{1,100}\/\d{1,100}:\s{0,100}\d{1,100}:\d{1,100}:\d{1,100} [^\]]{1,2000})""",
     """date="({time}\d\d\/\d\d\/\d\d\d\d:\s\d\d:\d\d:\d\d[^"]{1,2000})"""",
@@ -42,6 +43,7 @@ Name = bluecoat-proxy-v2
     """\Wcs-categories="?((?i)none|-|({categories}[^"|]{1,2000}))"?\s{0,100}("|\||$|\t|\s{1,100}[\w\-\(\)]{1,2000}=)""",
     """\Wcs\(Referer\)"?=("?-"?|"?({referrer}[^"\|\t]{1,2000}?)"?)\s{0,100}("|\||$|\t|\s{1,100}[\w\-\(\)]{1,2000}=)"""
   ]
+  DupFields = [ "external_dest_ip->dest_ip" ]
 
 
 }
