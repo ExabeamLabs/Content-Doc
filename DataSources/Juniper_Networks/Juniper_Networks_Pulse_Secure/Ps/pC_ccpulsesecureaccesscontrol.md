@@ -3,7 +3,7 @@
 {
 Name = cc-pulsesecure-access-control
   DataType = "access-control"
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """"PulseSecure:"""", """Agent login succeeded for""" ]
+  Conditions = [ """"host":""", """"PulseSecure:"""", """Agent login succeeded for""" ]
   Fields = ${JuniperParserTemplates.cef-pulsesecure-vpn-events.Fields} [
     """\[\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\][^\[]{1,2000}?\[({resource}[^\]]{1,2000})\]""",
     """({event_code}Agent login succeeded) for ({user}[^",@\/]{1,2000})(?:@({domain}[^\/]{1,2000}))?.+? from ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
