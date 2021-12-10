@@ -14,14 +14,16 @@ Name = cef-onelogin-app-activity
     """\WdestinationServiceName =({app}\w+)""",
     """"app_name":\s{0,100}"\s{0,100}({app}([^\\"]|(\\\\)*\\"|\\\\)+?)\s{0,100}"""",
     """"event_type_id":\s{0,100}({activity_code}\d{1,100})""",
-    """"user_name":\s{0,100}"\s{0,100}({user_fullname}([^\\"]|(\\\\)*\\"|\\\\)+?)\s{0,100}"""",
+    """"actor_user_name":"({user_fullname}[^"]{1,2000})""",
     """"ipaddr":\s{0,100}"({src_ip}[a-fA-F\d.:]{1,2000})"""",
     """"notes":\s{0,100}"\s{0,100}({failure_reason}([^\\"]|(\\\\)*\\"|\\\\)+?)\s{0,100}"""",
     """"notes":\s{0,100}"\s{0,100}({additional_info}([^\\"]|(\\\\)*\\"|\\\\)+?)\s{0,100}"""",
     """"custom_message":\s{0,100}"\s{0,100}({additional_info}([^\\"]|(\\\\)*\\"|\\\\)+?)\s{0,100}"""",
     """"error_description":\s{0,100}"\s{0,100}({additional_info}([^\\"]|(\\\\)*\\"|\\\\)+?)\s{0,100}"""",
     """"event_type_name":"({activity}[^"]+)"""",
-    """"event_type_description":"({additional_info}[^"]+)""""
+    """"event_type_description":"({additional_info}[^"]+)"""",
+    """suser=({user_email}[^@\s]{1,2000}@[^\s\.]{1,2000}\.[^\s]{1,2000})""",
+    """duser=({target_user}[^@\s]{1,2000}@[^\s\.]{1,2000}\.[^\s]{1,2000})"""
   ]
 
 

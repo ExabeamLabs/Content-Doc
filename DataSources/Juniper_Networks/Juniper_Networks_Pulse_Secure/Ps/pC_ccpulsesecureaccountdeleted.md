@@ -3,7 +3,7 @@
 {
 Name = cc-pulsesecure-account-deleted
   DataType = "account-deleted"
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """"PulseSecure:"""", """User Accounts modified.""" ]
+  Conditions = [ """"host":""", """"PulseSecure:"""", """User Accounts modified.""" ]
   Fields = ${JuniperParserTemplates.cef-pulsesecure-vpn-events.Fields} [
     """Removed username (({target_domain}[^\\\.]{1,2000})\\)?({target_user}[^\\\s]{1,2000})"""
   ]
