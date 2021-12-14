@@ -4,7 +4,7 @@ Product: Cisco Umbrella
 -----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  82   |   26   |     14     |      3      |    3    |
+|  73   |   26   |     14     |      3      |    3    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

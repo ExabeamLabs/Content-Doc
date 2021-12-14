@@ -4,7 +4,7 @@ Product: Citrix ShareFile
 -------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  111  |   32   |     13     |      5      |    5    |
+|  107  |   32   |     13     |      5      |    5    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

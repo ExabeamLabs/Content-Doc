@@ -4,7 +4,7 @@ Product: Nasuni
 ---------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  56   |   25   |     11     |      3      |    3    |
+|  53   |   23   |     11     |      3      |    3    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

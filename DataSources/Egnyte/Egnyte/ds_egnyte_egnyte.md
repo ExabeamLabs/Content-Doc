@@ -4,7 +4,7 @@ Product: Egnyte
 ---------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  176  |   77   |     23     |      8      |    8    |
+|  167  |   73   |     23     |      8      |    8    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

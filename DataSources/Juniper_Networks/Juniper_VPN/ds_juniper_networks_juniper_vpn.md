@@ -4,7 +4,7 @@ Product: Juniper VPN
 --------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  179  |   90   |     18     |      6      |    6    |
+|  174  |   89   |     18     |      6      |    6    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

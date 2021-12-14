@@ -4,7 +4,7 @@ Product: Juniper Networks Pulse Secure
 --------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  173  |   99   |     19     |      7      |    7    |
+|  191  |   98   |     19     |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

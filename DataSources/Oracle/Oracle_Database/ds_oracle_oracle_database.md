@@ -4,7 +4,7 @@ Product: Oracle Database
 ------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  70   |   33   |     8      |      7      |    7    |
+|  66   |   32   |     8      |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -4,7 +4,7 @@ Product: NetDocs
 ----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  121  |   50   |     12     |      5      |    5    |
+|  116  |   48   |     12     |      5      |    5    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

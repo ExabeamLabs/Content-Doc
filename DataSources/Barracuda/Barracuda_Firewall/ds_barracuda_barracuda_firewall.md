@@ -4,7 +4,7 @@ Product: Barracuda Firewall
 ---------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  107  |   50   |     11     |      5      |    5    |
+|  132  |   49   |     11     |      5      |    5    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

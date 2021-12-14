@@ -4,7 +4,7 @@ Product: Cimtrak
 ----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  78   |   32   |     10     |      2      |    2    |
+|  73   |   30   |     10     |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
@@ -14,7 +14,6 @@ Product: Cimtrak
 |    [Data Leak](../../../UseCases/uc_data_leak.md)    |  file-write<br> ↳[cimtrak-file-delete](Ps/pC_cimtrakfiledelete.md)<br><br> security-alert<br> ↳[cimtrak-file-write-1](Ps/pC_cimtrakfilewrite1.md)<br> ↳[cimtrak-file-write-2](Ps/pC_cimtrakfilewrite2.md)<br> | T1114.001 - T1114.001<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_cimtrak_cimtrak_Data_Leak.md)    |
 |        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  file-write<br> ↳[cimtrak-file-delete](Ps/pC_cimtrakfiledelete.md)<br><br> security-alert<br> ↳[cimtrak-file-write-1](Ps/pC_cimtrakfilewrite1.md)<br> ↳[cimtrak-file-write-2](Ps/pC_cimtrakfilewrite2.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_cimtrak_cimtrak_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  file-write<br> ↳[cimtrak-file-delete](Ps/pC_cimtrakfiledelete.md)<br><br> security-alert<br> ↳[cimtrak-file-write-1](Ps/pC_cimtrakfilewrite1.md)<br> ↳[cimtrak-file-write-2](Ps/pC_cimtrakfilewrite2.md)<br> | T1003.002 - T1003.002<br>TA0002 - TA0002<br>    | [<ul><li>6 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_cimtrak_cimtrak_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  file-write<br> ↳[cimtrak-file-delete](Ps/pC_cimtrakfiledelete.md)<br><br> security-alert<br> ↳[cimtrak-file-write-1](Ps/pC_cimtrakfilewrite1.md)<br> ↳[cimtrak-file-write-2](Ps/pC_cimtrakfilewrite2.md)<br> |    | [<ul><li>5 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_cimtrak_cimtrak_Other.md)    |
 |         [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)         |  file-write<br> ↳[cimtrak-file-delete](Ps/pC_cimtrakfiledelete.md)<br><br> security-alert<br> ↳[cimtrak-file-write-1](Ps/pC_cimtrakfilewrite1.md)<br> ↳[cimtrak-file-write-2](Ps/pC_cimtrakfilewrite2.md)<br> | T1078 - Valid Accounts<br>T1083 - File and Directory Discovery<br>    | [<ul><li>3 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_cimtrak_cimtrak_Privilege_Abuse.md)    |
 |     [Privileged Activity](../../../UseCases/uc_privileged_activity.md)     |  file-write<br> ↳[cimtrak-file-delete](Ps/pC_cimtrakfiledelete.md)<br><br> security-alert<br> ↳[cimtrak-file-write-1](Ps/pC_cimtrakfilewrite1.md)<br> ↳[cimtrak-file-write-2](Ps/pC_cimtrakfilewrite2.md)<br> | T1068 - Exploitation for Privilege Escalation<br>T1078 - Valid Accounts<br>T1083 - File and Directory Discovery<br>    | [<ul><li>4 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_cimtrak_cimtrak_Privileged_Activity.md)       |
 |    [Ransomware](../../../UseCases/uc_ransomware.md)    |  file-write<br> ↳[cimtrak-file-delete](Ps/pC_cimtrakfiledelete.md)<br><br> security-alert<br> ↳[cimtrak-file-write-1](Ps/pC_cimtrakfilewrite1.md)<br> ↳[cimtrak-file-write-2](Ps/pC_cimtrakfilewrite2.md)<br> | T1486 - Data Encrypted for Impact<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_cimtrak_cimtrak_Ransomware.md)    |

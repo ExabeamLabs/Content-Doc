@@ -4,7 +4,7 @@ Product: McAfee DLP
 -------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  124  |   54   |     12     |      7      |    7    |
+|  120  |   53   |     12     |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

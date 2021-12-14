@@ -4,7 +4,7 @@ Product: SentinelOne
 --------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  789  |  167   |    132     |     13      |   13    |
+|  685  |  163   |    132     |     13      |   13    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

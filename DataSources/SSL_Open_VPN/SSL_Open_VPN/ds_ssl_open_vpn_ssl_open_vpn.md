@@ -4,7 +4,7 @@ Product: SSL Open VPN
 ---------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  163  |   89   |     17     |      7      |    7    |
+|  169  |   88   |     17     |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

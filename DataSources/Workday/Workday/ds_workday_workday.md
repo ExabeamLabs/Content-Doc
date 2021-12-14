@@ -4,7 +4,7 @@ Product: Workday
 ----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  96   |   39   |     10     |      4      |    4    |
+|  93   |   37   |     10     |      4      |    4    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -4,7 +4,7 @@ Product: TippingPoint NGIPS
 ---------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  77   |   38   |     7      |      3      |    3    |
+|  83   |   37   |     7      |      3      |    3    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -4,14 +4,13 @@ Product: Cisco CloudLock
 ------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  31   |   11   |     5      |      1      |    1    |
+|  27   |   10   |     5      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 | [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  security-alert<br> ↳[json-cisco-cloudlock-dlp](Ps/pC_jsonciscocloudlockdlp.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>22 Rules</li></ul><ul><li>9 Models</li></ul>](RM/r_m_cisco_cisco_cloudlock_Compromised_Credentials.md) |
 |        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  security-alert<br> ↳[json-cisco-cloudlock-dlp](Ps/pC_jsonciscocloudlockdlp.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_cisco_cisco_cloudlock_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  security-alert<br> ↳[json-cisco-cloudlock-dlp](Ps/pC_jsonciscocloudlockdlp.md)<br> | TA0002 - TA0002<br>    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_cisco_cisco_cloudlock_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  security-alert<br> ↳[json-cisco-cloudlock-dlp](Ps/pC_jsonciscocloudlockdlp.md)<br> |    | [<ul><li>4 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_cisco_cisco_cloudlock_Other.md)    |
 |     [Privileged Activity](../../../UseCases/uc_privileged_activity.md)     |  security-alert<br> ↳[json-cisco-cloudlock-dlp](Ps/pC_jsonciscocloudlockdlp.md)<br> | T1068 - Exploitation for Privilege Escalation<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_cisco_cisco_cloudlock_Privileged_Activity.md)    |
 
 ATT&CK Matrix for Enterprise

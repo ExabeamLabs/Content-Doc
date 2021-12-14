@@ -4,7 +4,7 @@ Product: Sophos Endpoint Protection
 -----------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  170  |   68   |     22     |      8      |    8    |
+|  182  |   66   |     22     |      8      |    8    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

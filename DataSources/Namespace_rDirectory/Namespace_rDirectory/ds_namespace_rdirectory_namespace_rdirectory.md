@@ -4,7 +4,7 @@ Product: Namespace rDirectory
 -----------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  105  |   44   |     9      |      7      |    7    |
+|  100  |   42   |     9      |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

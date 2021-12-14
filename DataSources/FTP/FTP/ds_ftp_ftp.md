@@ -4,7 +4,7 @@ Product: FTP
 ------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  122  |   50   |     14     |      7      |    7    |
+|  117  |   48   |     14     |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -4,7 +4,7 @@ Product: Vormetric
 ------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  56   |   29   |     6      |      2      |    2    |
+|  53   |   28   |     6      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
@@ -12,7 +12,6 @@ Product: Vormetric
 |          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  account-switch<br> ↳[vormetric-file-operations](Ps/pC_vormetricfileoperations.md)<br><br> file-read<br> ↳[vormetric-file-operations](Ps/pC_vormetricfileoperations.md)<br> | T1003.001 - T1003.001<br>T1003.003 - T1003.003<br>T1083 - File and Directory Discovery<br> | [<ul><li>36 Rules</li></ul><ul><li>19 Models</li></ul>](RM/r_m_vormetric_vormetric_Compromised_Credentials.md)        |
 |    [Data Access](../../../UseCases/uc_data_access.md)    |  account-switch<br> ↳[vormetric-file-operations](Ps/pC_vormetricfileoperations.md)<br><br> file-read<br> ↳[vormetric-file-operations](Ps/pC_vormetricfileoperations.md)<br> | T1083 - File and Directory Discovery<br>    | [<ul><li>32 Rules</li></ul><ul><li>18 Models</li></ul>](RM/r_m_vormetric_vormetric_Data_Access.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  account-switch<br> ↳[vormetric-file-operations](Ps/pC_vormetricfileoperations.md)<br><br> file-read<br> ↳[vormetric-file-operations](Ps/pC_vormetricfileoperations.md)<br> | TA0002 - TA0002<br>    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_vormetric_vormetric_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  account-switch<br> ↳[vormetric-file-operations](Ps/pC_vormetricfileoperations.md)<br><br> file-read<br> ↳[vormetric-file-operations](Ps/pC_vormetricfileoperations.md)<br> |    | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_vormetric_vormetric_Other.md)    |
 |    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  account-switch<br> ↳[vormetric-file-operations](Ps/pC_vormetricfileoperations.md)<br><br> file-read<br> ↳[vormetric-file-operations](Ps/pC_vormetricfileoperations.md)<br> | T1078 - Valid Accounts<br>T1083 - File and Directory Discovery<br>    | [<ul><li>5 Rules</li></ul><ul><li>3 Models</li></ul>](RM/r_m_vormetric_vormetric_Privilege_Abuse.md)    |
 |    [Privilege Escalation](../../../UseCases/uc_privilege_escalation.md)    |  account-switch<br> ↳[vormetric-file-operations](Ps/pC_vormetricfileoperations.md)<br><br> file-read<br> ↳[vormetric-file-operations](Ps/pC_vormetricfileoperations.md)<br> | T1078 - Valid Accounts<br>T1555.005 - T1555.005<br>    | [<ul><li>10 Rules</li></ul><ul><li>7 Models</li></ul>](RM/r_m_vormetric_vormetric_Privilege_Escalation.md)    |
 |    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  account-switch<br> ↳[vormetric-file-operations](Ps/pC_vormetricfileoperations.md)<br><br> file-read<br> ↳[vormetric-file-operations](Ps/pC_vormetricfileoperations.md)<br> | T1078 - Valid Accounts<br>T1083 - File and Directory Discovery<br>    | [<ul><li>4 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_vormetric_vormetric_Privileged_Activity.md)    |

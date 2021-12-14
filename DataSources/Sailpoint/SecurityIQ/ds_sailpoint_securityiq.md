@@ -4,7 +4,7 @@ Product: SecurityIQ
 -------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  111  |   45   |     16     |     13      |   13    |
+|  106  |   42   |     16     |     13      |   13    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

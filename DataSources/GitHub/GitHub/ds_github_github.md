@@ -4,7 +4,7 @@ Product: GitHub
 ---------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  66   |   28   |     5      |      3      |    3    |
+|  65   |   28   |     5      |      3      |    3    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -4,7 +4,7 @@ Product: Sybase
 ---------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  80   |   33   |     7      |      3      |    3    |
+|  76   |   32   |     7      |      3      |    3    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

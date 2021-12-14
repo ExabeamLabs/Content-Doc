@@ -4,7 +4,7 @@ Product: SAP
 ------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  167  |   68   |     21     |     10      |   10    |
+|  158  |   64   |     21     |     10      |   10    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

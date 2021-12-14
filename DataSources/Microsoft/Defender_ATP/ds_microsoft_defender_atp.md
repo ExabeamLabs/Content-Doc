@@ -4,7 +4,7 @@ Product: Defender ATP
 ---------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  881  |  211   |    139     |     16      |   16    |
+|  781  |  205   |    139     |     16      |   16    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

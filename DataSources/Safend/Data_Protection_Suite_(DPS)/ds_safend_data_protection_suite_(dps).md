@@ -4,13 +4,12 @@ Product: Data Protection Suite (DPS)
 ------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  20   |   6    |     4      |      2      |    2    |
+|  18   |   5    |     4      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 |    [Data Leak](../../../UseCases/uc_data_leak.md)    |  dlp-email-alert-in<br> ↳[safend-dlp-alert](Ps/pC_safenddlpalert.md)<br> ↳[safend-usb-insert](Ps/pC_safendusbinsert.md)<br><br> usb-write<br> ↳[safend-usb-write](Ps/pC_safendusbwrite.md)<br> ↳[safend-usb-read](Ps/pC_safendusbread.md)<br> | T1052.001 - Exfiltration Over Physical Medium: Exfiltration over USB<br>T1091 - Replication Through Removable Media<br> | [<ul><li>15 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_safend_data_protection_suite_(dps)_Data_Leak.md) |
 |    [Malware](../../../UseCases/uc_malware.md)    |  dlp-email-alert-in<br> ↳[safend-dlp-alert](Ps/pC_safenddlpalert.md)<br> ↳[safend-usb-insert](Ps/pC_safendusbinsert.md)<br><br> usb-write<br> ↳[safend-usb-write](Ps/pC_safendusbwrite.md)<br> ↳[safend-usb-read](Ps/pC_safendusbread.md)<br> | TA0002 - TA0002<br>    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_safend_data_protection_suite_(dps)_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  dlp-email-alert-in<br> ↳[safend-dlp-alert](Ps/pC_safenddlpalert.md)<br> ↳[safend-usb-insert](Ps/pC_safendusbinsert.md)<br><br> usb-write<br> ↳[safend-usb-write](Ps/pC_safendusbwrite.md)<br> ↳[safend-usb-read](Ps/pC_safendusbread.md)<br> |    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_safend_data_protection_suite_(dps)_Other.md)      |
 |     [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)     |  dlp-email-alert-in<br> ↳[safend-dlp-alert](Ps/pC_safenddlpalert.md)<br> ↳[safend-usb-insert](Ps/pC_safendusbinsert.md)<br><br> usb-write<br> ↳[safend-usb-write](Ps/pC_safendusbwrite.md)<br> ↳[safend-usb-read](Ps/pC_safendusbread.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_safend_data_protection_suite_(dps)_Privilege_Abuse.md)    |
 | [Privileged Activity](../../../UseCases/uc_privileged_activity.md) |  dlp-email-alert-in<br> ↳[safend-dlp-alert](Ps/pC_safenddlpalert.md)<br> ↳[safend-usb-insert](Ps/pC_safendusbinsert.md)<br><br> usb-write<br> ↳[safend-usb-write](Ps/pC_safendusbwrite.md)<br> ↳[safend-usb-read](Ps/pC_safendusbread.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_safend_data_protection_suite_(dps)_Privileged_Activity.md)    |
 

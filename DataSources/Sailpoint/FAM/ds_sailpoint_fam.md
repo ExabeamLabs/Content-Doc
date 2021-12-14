@@ -4,7 +4,7 @@ Product: FAM
 ------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  54   |   22   |     11     |      4      |    4    |
+|  50   |   20   |     11     |      4      |    4    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-cisco-dns-response-sk4-2
-  Conditions = ["""CEF:0|Skyformation""", """destinationServiceName =Azure""", """dproc=Log Analytics OMS Workspace""", """"QueryType_s":"""", """"Action_s":"Allowed""""]
+  Conditions = [ """destinationServiceName =Azure""", """dproc=Log Analytics OMS Workspace""", """"QueryType_s":"""", """"Action_s":"Allowed""""]
 
 cef-cisco-dns-response-sk4-template {
   Vendor = Cisco

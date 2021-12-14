@@ -4,7 +4,7 @@ Product: Exabeam DL
 -------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  106  |   47   |     10     |      5      |    5    |
+|  103  |   46   |     10     |      5      |    5    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

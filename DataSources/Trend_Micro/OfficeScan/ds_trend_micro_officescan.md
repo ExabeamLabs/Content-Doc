@@ -4,7 +4,7 @@ Product: OfficeScan
 -------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  181  |   66   |     22     |      7      |    7    |
+|  173  |   65   |     22     |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

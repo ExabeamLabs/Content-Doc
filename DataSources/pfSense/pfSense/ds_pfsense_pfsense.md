@@ -4,13 +4,12 @@ Product: pfSense
 ----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  38   |   19   |     4      |      1      |    1    |
+|  37   |   19   |     4      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 | [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  file-read<br> ↳[pfsense-network-connection-failed](Ps/pC_pfsensenetworkconnectionfailed.md)<br> | T1003.001 - T1003.001<br>T1003.003 - T1003.003<br>T1083 - File and Directory Discovery<br> | [<ul><li>36 Rules</li></ul><ul><li>19 Models</li></ul>](RM/r_m_pfsense_pfsense_Compromised_Credentials.md) |
 |    [Data Access](../../../UseCases/uc_data_access.md)    |  file-read<br> ↳[pfsense-network-connection-failed](Ps/pC_pfsensenetworkconnectionfailed.md)<br> | T1083 - File and Directory Discovery<br>    | [<ul><li>32 Rules</li></ul><ul><li>18 Models</li></ul>](RM/r_m_pfsense_pfsense_Data_Access.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  file-read<br> ↳[pfsense-network-connection-failed](Ps/pC_pfsensenetworkconnectionfailed.md)<br> |    | [<ul><li>1 Rules</li></ul>](RM/r_m_pfsense_pfsense_Other.md)    |
 |         [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)         |  file-read<br> ↳[pfsense-network-connection-failed](Ps/pC_pfsensenetworkconnectionfailed.md)<br> | T1078 - Valid Accounts<br>T1083 - File and Directory Discovery<br>    | [<ul><li>3 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_pfsense_pfsense_Privilege_Abuse.md)    |
 |     [Privileged Activity](../../../UseCases/uc_privileged_activity.md)     |  file-read<br> ↳[pfsense-network-connection-failed](Ps/pC_pfsensenetworkconnectionfailed.md)<br> | T1078 - Valid Accounts<br>T1083 - File and Directory Discovery<br>    | [<ul><li>3 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_pfsense_pfsense_Privileged_Activity.md)       |
 

@@ -4,7 +4,7 @@ Product: ObserveIT
 ------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  771  |  169   |    128     |      8      |    8    |
+|  644  |  164   |    128     |      8      |    8    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

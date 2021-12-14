@@ -4,7 +4,7 @@ Product: Fortinet Enterprise Firewall
 -------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  172  |   80   |     18     |      6      |    6    |
+|  185  |   77   |     18     |      6      |    6    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

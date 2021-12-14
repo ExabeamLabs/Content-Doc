@@ -4,7 +4,7 @@ Product: McAfee Solidifier
 --------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  45   |   19   |     7      |      1      |    1    |
+|  41   |   18   |     7      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
@@ -12,7 +12,6 @@ Product: McAfee Solidifier
 |          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  local-logon<br> ↳[cef-mcafee-epo-alert-solidifier](Ps/pC_cefmcafeeepoalertsolidifier.md)<br> | T1078 - Valid Accounts<br>T1078.002 - T1078.002<br>T1078.003 - Valid Accounts: Local Accounts<br>T1550.003 - Use Alternate Authentication Material: Pass the Ticket<br>T1558 - Steal or Forge Kerberos Tickets<br> | [<ul><li>26 Rules</li></ul><ul><li>11 Models</li></ul>](RM/r_m_mcafee_mcafee_solidifier_Compromised_Credentials.md)          |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  local-logon<br> ↳[cef-mcafee-epo-alert-solidifier](Ps/pC_cefmcafeeepoalertsolidifier.md)<br> | T1550.003 - Use Alternate Authentication Material: Pass the Ticket<br>T1558 - Steal or Forge Kerberos Tickets<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_mcafee_mcafee_solidifier_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  local-logon<br> ↳[cef-mcafee-epo-alert-solidifier](Ps/pC_cefmcafeeepoalertsolidifier.md)<br> | T1550.003 - Use Alternate Authentication Material: Pass the Ticket<br>T1558 - Steal or Forge Kerberos Tickets<br>TA0002 - TA0002<br>    | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_mcafee_mcafee_solidifier_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  local-logon<br> ↳[cef-mcafee-epo-alert-solidifier](Ps/pC_cefmcafeeepoalertsolidifier.md)<br> |    | [<ul><li>4 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_mcafee_mcafee_solidifier_Other.md)    |
 |    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  local-logon<br> ↳[cef-mcafee-epo-alert-solidifier](Ps/pC_cefmcafeeepoalertsolidifier.md)<br> | T1078 - Valid Accounts<br>T1078.002 - T1078.002<br>    | [<ul><li>12 Rules</li></ul><ul><li>7 Models</li></ul>](RM/r_m_mcafee_mcafee_solidifier_Privilege_Abuse.md)    |
 |    [Privilege Escalation](../../../UseCases/uc_privilege_escalation.md)    |  local-logon<br> ↳[cef-mcafee-epo-alert-solidifier](Ps/pC_cefmcafeeepoalertsolidifier.md)<br> | T1078 - Valid Accounts<br>T1555.005 - T1555.005<br>    | [<ul><li>2 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_mcafee_mcafee_solidifier_Privilege_Escalation.md)    |
 |    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  local-logon<br> ↳[cef-mcafee-epo-alert-solidifier](Ps/pC_cefmcafeeepoalertsolidifier.md)<br> | T1078 - Valid Accounts<br>T1078.002 - T1078.002<br>    | [<ul><li>14 Rules</li></ul><ul><li>6 Models</li></ul>](RM/r_m_mcafee_mcafee_solidifier_Privileged_Activity.md)    |

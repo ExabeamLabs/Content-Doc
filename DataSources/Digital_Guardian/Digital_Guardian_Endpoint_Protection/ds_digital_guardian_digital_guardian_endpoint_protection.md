@@ -4,7 +4,7 @@ Product: Digital Guardian Endpoint Protection
 ---------------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  228  |  103   |     26     |     14      |   14    |
+|  247  |  100   |     26     |     14      |   14    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

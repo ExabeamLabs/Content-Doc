@@ -4,7 +4,7 @@ Product: McAfee Email Protection
 --------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  78   |   39   |     6      |      5      |    5    |
+|  76   |   38   |     6      |      5      |    5    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

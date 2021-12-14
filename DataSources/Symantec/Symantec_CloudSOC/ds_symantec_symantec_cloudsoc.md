@@ -4,7 +4,7 @@ Product: Symantec CloudSOC
 --------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  129  |   58   |     12     |      7      |    7    |
+|  127  |   57   |     12     |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

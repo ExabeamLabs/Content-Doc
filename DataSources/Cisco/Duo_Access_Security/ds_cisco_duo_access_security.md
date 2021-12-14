@@ -4,7 +4,7 @@ Product: Duo Access Security
 ----------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  183  |   90   |     24     |      7      |    7    |
+|  179  |   90   |     24     |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -4,7 +4,7 @@ Product: Code42 Incydr
 ----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  105  |   44   |     13     |      7      |    7    |
+|  101  |   42   |     13     |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

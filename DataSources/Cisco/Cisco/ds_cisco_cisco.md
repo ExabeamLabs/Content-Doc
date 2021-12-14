@@ -4,7 +4,7 @@ Product: Cisco
 --------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  49   |   16   |     6      |      2      |    2    |
+|  45   |   15   |     6      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
@@ -12,7 +12,6 @@ Product: Cisco
 |          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  authentication-successful<br> ↳[cisco-2960-auth-failed-1](Ps/pC_cisco2960authfailed1.md)<br><br> security-alert<br> ↳[cisco-ssh-login-1](Ps/pC_ciscosshlogin1.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>29 Rules</li></ul><ul><li>13 Models</li></ul>](RM/r_m_cisco_cisco_Compromised_Credentials.md)         |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  authentication-successful<br> ↳[cisco-2960-auth-failed-1](Ps/pC_cisco2960authfailed1.md)<br><br> security-alert<br> ↳[cisco-ssh-login-1](Ps/pC_ciscosshlogin1.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>3 Rules</li></ul>](RM/r_m_cisco_cisco_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  authentication-successful<br> ↳[cisco-2960-auth-failed-1](Ps/pC_cisco2960authfailed1.md)<br><br> security-alert<br> ↳[cisco-ssh-login-1](Ps/pC_ciscosshlogin1.md)<br> | T1078 - Valid Accounts<br>TA0002 - TA0002<br>    | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_cisco_cisco_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  authentication-successful<br> ↳[cisco-2960-auth-failed-1](Ps/pC_cisco2960authfailed1.md)<br><br> security-alert<br> ↳[cisco-ssh-login-1](Ps/pC_ciscosshlogin1.md)<br> |    | [<ul><li>4 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_cisco_cisco_Other.md)    |
 |    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  authentication-successful<br> ↳[cisco-2960-auth-failed-1](Ps/pC_cisco2960authfailed1.md)<br><br> security-alert<br> ↳[cisco-ssh-login-1](Ps/pC_ciscosshlogin1.md)<br> | T1068 - Exploitation for Privilege Escalation<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_cisco_cisco_Privileged_Activity.md)    |
 |    [Ransomware](../../../UseCases/uc_ransomware.md)    |  authentication-successful<br> ↳[cisco-2960-auth-failed-1](Ps/pC_cisco2960authfailed1.md)<br><br> security-alert<br> ↳[cisco-ssh-login-1](Ps/pC_ciscosshlogin1.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_cisco_cisco_Ransomware.md)    |
 

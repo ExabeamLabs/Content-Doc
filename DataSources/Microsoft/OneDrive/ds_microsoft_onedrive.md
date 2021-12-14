@@ -4,7 +4,7 @@ Product: OneDrive
 -----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  141  |   65   |     14     |      4      |    4    |
+|  135  |   64   |     14     |      4      |    4    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

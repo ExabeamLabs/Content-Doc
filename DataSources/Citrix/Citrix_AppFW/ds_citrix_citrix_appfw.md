@@ -4,7 +4,7 @@ Product: Citrix AppFW
 ---------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  43   |   30   |     7      |      2      |    2    |
+|  62   |   29   |     7      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

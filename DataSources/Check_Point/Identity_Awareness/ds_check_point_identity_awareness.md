@@ -4,7 +4,7 @@ Product: Identity Awareness
 ---------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  159  |   64   |     19     |      4      |    4    |
+|  182  |   63   |     19     |      4      |    4    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

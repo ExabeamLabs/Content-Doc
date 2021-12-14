@@ -4,7 +4,7 @@ Product: Apex One
 -----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  112  |   48   |     7      |      5      |    5    |
+|  108  |   47   |     7      |      5      |    5    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

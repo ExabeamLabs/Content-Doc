@@ -4,7 +4,7 @@ Product: SFTP
 -------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  115  |   50   |     14     |      7      |    7    |
+|  110  |   48   |     14     |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

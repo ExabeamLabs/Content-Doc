@@ -4,7 +4,7 @@ Product: BeyondTrust Privileged Identity
 ----------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  124  |   57   |     8      |      7      |    7    |
+|  121  |   56   |     8      |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

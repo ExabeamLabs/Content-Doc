@@ -4,7 +4,7 @@ Product: GoAnywhere MFT
 -----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  171  |   67   |     23     |      5      |    5    |
+|  159  |   64   |     23     |      5      |    5    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

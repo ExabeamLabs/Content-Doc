@@ -4,13 +4,12 @@ Product: honeywell siama
 ------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  31   |   13   |     5      |      1      |    1    |
+|  30   |   12   |     5      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 | [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  account-creation<br> ↳[cef-honeywell-physical-badge-access](Ps/pC_cefhoneywellphysicalbadgeaccess.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_honeywell_honeywell_siama_Abnormal_Authentication_&_Access.md)    |
 |    [Account Manipulation](../../../UseCases/uc_account_manipulation.md)    |  account-creation<br> ↳[cef-honeywell-physical-badge-access](Ps/pC_cefhoneywellphysicalbadgeaccess.md)<br> | T1098 - Account Manipulation<br>T1136 - Create Account<br>T1136.001 - Create Account: Create: Local Account<br>T1136.002 - T1136.002<br> | [<ul><li>28 Rules</li></ul><ul><li>12 Models</li></ul>](RM/r_m_honeywell_honeywell_siama_Account_Manipulation.md) |
-|    [Other](../../../UseCases/uc_other.md)    |  account-creation<br> ↳[cef-honeywell-physical-badge-access](Ps/pC_cefhoneywellphysicalbadgeaccess.md)<br> |    | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_honeywell_honeywell_siama_Other.md)    |
 |    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  account-creation<br> ↳[cef-honeywell-physical-badge-access](Ps/pC_cefhoneywellphysicalbadgeaccess.md)<br> | T1098 - Account Manipulation<br>T1136 - Create Account<br>T1136.001 - Create Account: Create: Local Account<br>T1136.002 - T1136.002<br> | [<ul><li>25 Rules</li></ul><ul><li>11 Models</li></ul>](RM/r_m_honeywell_honeywell_siama_Privilege_Abuse.md)      |
 
 ATT&CK Matrix for Enterprise

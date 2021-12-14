@@ -4,7 +4,7 @@ Product: Netskope Security Cloud
 --------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  851  |  202   |    134     |     17      |   17    |
+|  752  |  198   |    134     |     17      |   17    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

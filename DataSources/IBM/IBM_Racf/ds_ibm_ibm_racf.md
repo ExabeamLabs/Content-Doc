@@ -4,7 +4,7 @@ Product: IBM Racf
 -----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  110  |   32   |     13     |      5      |    5    |
+|  106  |   32   |     13     |      5      |    5    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

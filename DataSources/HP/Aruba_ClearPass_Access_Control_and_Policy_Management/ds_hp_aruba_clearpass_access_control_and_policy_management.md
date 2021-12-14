@@ -4,7 +4,7 @@ Product: Aruba ClearPass Access Control and Policy Management
 -------------------------------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  30   |   15   |     8      |      5      |    5    |
+|  35   |   14   |     8      |      5      |    5    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -4,7 +4,7 @@ Product: Gemalto MFA
 --------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  53   |   24   |     7      |      2      |    2    |
+|  51   |   23   |     7      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
@@ -14,7 +14,6 @@ Product: Gemalto MFA
 |    [Data Leak](../../../UseCases/uc_data_leak.md)    |  authentication-successful<br> ↳[q-gemalto-auth-failed](Ps/pC_qgemaltoauthfailed.md)<br><br> dlp-alert<br> ↳[q-gemalto-auth-success](Ps/pC_qgemaltoauthsuccess.md)<br> | T1020 - Automated Exfiltration<br>T1071 - Application Layer Protocol<br>TA0010 - TA0010<br> | [<ul><li>31 Rules</li></ul><ul><li>17 Models</li></ul>](RM/r_m_gemalto_gemalto_mfa_Data_Leak.md)    |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  authentication-successful<br> ↳[q-gemalto-auth-failed](Ps/pC_qgemaltoauthfailed.md)<br><br> dlp-alert<br> ↳[q-gemalto-auth-success](Ps/pC_qgemaltoauthsuccess.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_gemalto_gemalto_mfa_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  authentication-successful<br> ↳[q-gemalto-auth-failed](Ps/pC_qgemaltoauthfailed.md)<br><br> dlp-alert<br> ↳[q-gemalto-auth-success](Ps/pC_qgemaltoauthsuccess.md)<br> | T1078 - Valid Accounts<br>TA0002 - TA0002<br>    | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_gemalto_gemalto_mfa_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  authentication-successful<br> ↳[q-gemalto-auth-failed](Ps/pC_qgemaltoauthfailed.md)<br><br> dlp-alert<br> ↳[q-gemalto-auth-success](Ps/pC_qgemaltoauthsuccess.md)<br> |    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_gemalto_gemalto_mfa_Other.md)    |
 |    [Ransomware](../../../UseCases/uc_ransomware.md)    |  authentication-successful<br> ↳[q-gemalto-auth-failed](Ps/pC_qgemaltoauthfailed.md)<br><br> dlp-alert<br> ↳[q-gemalto-auth-success](Ps/pC_qgemaltoauthsuccess.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_gemalto_gemalto_mfa_Ransomware.md)    |
 
 ATT&CK Matrix for Enterprise

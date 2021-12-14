@@ -4,7 +4,7 @@ Product: F5 BIG-IP
 ------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  209  |   90   |     19     |      5      |    5    |
+|  201  |   87   |     19     |      5      |    5    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

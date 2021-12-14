@@ -4,7 +4,7 @@ Product: Teradata RDBMS
 -----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  45   |   23   |     5      |      2      |    2    |
+|  43   |   22   |     5      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
@@ -13,7 +13,6 @@ Product: Teradata RDBMS
 |       [Data Exfiltration](../../../UseCases/uc_data_exfiltration.md)       |  database-login<br> ↳[teradata-database-req2](Ps/pC_teradatadatabasereq2.md)<br> ↳[teradata-database-req4](Ps/pC_teradatadatabasereq4.md)<br><br> dlp-alert<br> ↳[teradata-database-req8](Ps/pC_teradatadatabasereq8.md)<br> | T1020 - Automated Exfiltration<br>T1071 - Application Layer Protocol<br>TA0010 - TA0010<br> | [<ul><li>31 Rules</li></ul><ul><li>17 Models</li></ul>](RM/r_m_teradata_teradata_rdbms_Data_Exfiltration.md)      |
 |    [Data Leak](../../../UseCases/uc_data_leak.md)    |  database-login<br> ↳[teradata-database-req2](Ps/pC_teradatadatabasereq2.md)<br> ↳[teradata-database-req4](Ps/pC_teradatadatabasereq4.md)<br><br> dlp-alert<br> ↳[teradata-database-req8](Ps/pC_teradatadatabasereq8.md)<br> | T1020 - Automated Exfiltration<br>T1071 - Application Layer Protocol<br>TA0010 - TA0010<br> | [<ul><li>31 Rules</li></ul><ul><li>17 Models</li></ul>](RM/r_m_teradata_teradata_rdbms_Data_Leak.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  database-login<br> ↳[teradata-database-req2](Ps/pC_teradatadatabasereq2.md)<br> ↳[teradata-database-req4](Ps/pC_teradatadatabasereq4.md)<br><br> dlp-alert<br> ↳[teradata-database-req8](Ps/pC_teradatadatabasereq8.md)<br> | TA0002 - TA0002<br>    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_teradata_teradata_rdbms_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  database-login<br> ↳[teradata-database-req2](Ps/pC_teradatadatabasereq2.md)<br> ↳[teradata-database-req4](Ps/pC_teradatadatabasereq4.md)<br><br> dlp-alert<br> ↳[teradata-database-req8](Ps/pC_teradatadatabasereq8.md)<br> |    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_teradata_teradata_rdbms_Other.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

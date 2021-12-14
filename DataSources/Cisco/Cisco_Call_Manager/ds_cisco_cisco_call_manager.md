@@ -4,7 +4,7 @@ Product: Cisco Call Manager
 ---------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  69   |   28   |     5      |      3      |    3    |
+|  68   |   28   |     5      |      3      |    3    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

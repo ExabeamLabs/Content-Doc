@@ -4,7 +4,7 @@ Product: Password Manager Pro
 -----------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  26   |   13   |     5      |      2      |    2    |
+|  24   |   12   |     5      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
@@ -13,7 +13,6 @@ Product: Password Manager Pro
 |    [Data Access](../../../UseCases/uc_data_access.md)    |  account-switch<br> ↳[pmp-password-change](Ps/pC_pmppasswordchange.md)<br><br> failed-app-login<br> ↳[pmp-account-switch](Ps/pC_pmpaccountswitch.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_password_manager_pro_password_manager_pro_Data_Access.md)    |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  account-switch<br> ↳[pmp-password-change](Ps/pC_pmppasswordchange.md)<br><br> failed-app-login<br> ↳[pmp-account-switch](Ps/pC_pmpaccountswitch.md)<br> | T1078 - Valid Accounts<br>T1090.003 - Proxy: Multi-hop Proxy<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_password_manager_pro_password_manager_pro_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  account-switch<br> ↳[pmp-password-change](Ps/pC_pmppasswordchange.md)<br><br> failed-app-login<br> ↳[pmp-account-switch](Ps/pC_pmpaccountswitch.md)<br> | T1078 - Valid Accounts<br>TA0002 - TA0002<br>    | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_password_manager_pro_password_manager_pro_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  account-switch<br> ↳[pmp-password-change](Ps/pC_pmppasswordchange.md)<br><br> failed-app-login<br> ↳[pmp-account-switch](Ps/pC_pmpaccountswitch.md)<br> |    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_password_manager_pro_password_manager_pro_Other.md)    |
 |    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  account-switch<br> ↳[pmp-password-change](Ps/pC_pmppasswordchange.md)<br><br> failed-app-login<br> ↳[pmp-account-switch](Ps/pC_pmpaccountswitch.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_password_manager_pro_password_manager_pro_Privilege_Abuse.md)    |
 |    [Privilege Escalation](../../../UseCases/uc_privilege_escalation.md)    |  account-switch<br> ↳[pmp-password-change](Ps/pC_pmppasswordchange.md)<br><br> failed-app-login<br> ↳[pmp-account-switch](Ps/pC_pmpaccountswitch.md)<br> | T1078 - Valid Accounts<br>T1555.005 - T1555.005<br>    | [<ul><li>10 Rules</li></ul><ul><li>7 Models</li></ul>](RM/r_m_password_manager_pro_password_manager_pro_Privilege_Escalation.md)    |
 |    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  account-switch<br> ↳[pmp-password-change](Ps/pC_pmppasswordchange.md)<br><br> failed-app-login<br> ↳[pmp-account-switch](Ps/pC_pmpaccountswitch.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_password_manager_pro_password_manager_pro_Privileged_Activity.md)    |

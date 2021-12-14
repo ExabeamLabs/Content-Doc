@@ -4,7 +4,7 @@ Product: Cassandra
 ------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  41   |   15   |     6      |      3      |    3    |
+|  37   |   14   |     6      |      3      |    3    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
@@ -12,7 +12,6 @@ Product: Cassandra
 |    [Data Access](../../../UseCases/uc_data_access.md)    |  database-login<br> ↳[cassandra-db-update](Ps/pC_cassandradbupdate.md)<br><br> database-update<br> ↳[cassandra-db-activity-failed](Ps/pC_cassandradbactivityfailed.md)<br><br> security-alert<br> ↳[cassandra-db-login](Ps/pC_cassandradblogin.md)<br> | T1213 - Data from Information Repositories<br>    | [<ul><li>10 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_apache_cassandra_Data_Access.md)    |
 |        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  database-login<br> ↳[cassandra-db-update](Ps/pC_cassandradbupdate.md)<br><br> database-update<br> ↳[cassandra-db-activity-failed](Ps/pC_cassandradbactivityfailed.md)<br><br> security-alert<br> ↳[cassandra-db-login](Ps/pC_cassandradblogin.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_apache_cassandra_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  database-login<br> ↳[cassandra-db-update](Ps/pC_cassandradbupdate.md)<br><br> database-update<br> ↳[cassandra-db-activity-failed](Ps/pC_cassandradbactivityfailed.md)<br><br> security-alert<br> ↳[cassandra-db-login](Ps/pC_cassandradblogin.md)<br> | TA0002 - TA0002<br>    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_apache_cassandra_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  database-login<br> ↳[cassandra-db-update](Ps/pC_cassandradbupdate.md)<br><br> database-update<br> ↳[cassandra-db-activity-failed](Ps/pC_cassandradbactivityfailed.md)<br><br> security-alert<br> ↳[cassandra-db-login](Ps/pC_cassandradblogin.md)<br> |    | [<ul><li>4 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_apache_cassandra_Other.md)    |
 |     [Privileged Activity](../../../UseCases/uc_privileged_activity.md)     |  database-login<br> ↳[cassandra-db-update](Ps/pC_cassandradbupdate.md)<br><br> database-update<br> ↳[cassandra-db-activity-failed](Ps/pC_cassandradbactivityfailed.md)<br><br> security-alert<br> ↳[cassandra-db-login](Ps/pC_cassandradblogin.md)<br> | T1068 - Exploitation for Privilege Escalation<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_apache_cassandra_Privileged_Activity.md)    |
 
 ATT&CK Matrix for Enterprise

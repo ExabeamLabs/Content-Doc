@@ -4,7 +4,7 @@ Product: EnSilo
 ---------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  71   |   28   |     12     |      1      |    1    |
+|  65   |   25   |     12     |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
@@ -12,7 +12,6 @@ Product: EnSilo
 |          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  remote-access<br> ↳[ensilo-security-alert](Ps/pC_ensilosecurityalert.md)<br> | T1021 - Remote Services<br>T1078 - Valid Accounts<br>T1078.002 - T1078.002<br>T1550 - Use Alternate Authentication Material<br>T1550.003 - Use Alternate Authentication Material: Pass the Ticket<br>T1558 - Steal or Forge Kerberos Tickets<br>    | [<ul><li>9 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_ensilo_ensilo_Compromised_Credentials.md)          |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  remote-access<br> ↳[ensilo-security-alert](Ps/pC_ensilosecurityalert.md)<br> | T1018 - Remote System Discovery<br>T1021 - Remote Services<br>T1078 - Valid Accounts<br>T1550 - Use Alternate Authentication Material<br>T1550.002 - Use Alternate Authentication Material: Pass the Hash<br>T1550.003 - Use Alternate Authentication Material: Pass the Ticket<br>T1558 - Steal or Forge Kerberos Tickets<br>T1558.003 - Steal or Forge Kerberos Tickets: Kerberoasting<br> | [<ul><li>49 Rules</li></ul><ul><li>21 Models</li></ul>](RM/r_m_ensilo_ensilo_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  remote-access<br> ↳[ensilo-security-alert](Ps/pC_ensilosecurityalert.md)<br> | T1550.003 - Use Alternate Authentication Material: Pass the Ticket<br>T1558 - Steal or Forge Kerberos Tickets<br>TA0002 - TA0002<br>    | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_ensilo_ensilo_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  remote-access<br> ↳[ensilo-security-alert](Ps/pC_ensilosecurityalert.md)<br> |    | [<ul><li>7 Rules</li></ul><ul><li>3 Models</li></ul>](RM/r_m_ensilo_ensilo_Other.md)    |
 |    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  remote-access<br> ↳[ensilo-security-alert](Ps/pC_ensilosecurityalert.md)<br> | T1021 - Remote Services<br>T1078 - Valid Accounts<br>T1078.002 - T1078.002<br>    | [<ul><li>9 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_ensilo_ensilo_Privilege_Abuse.md)    |
 |    [Privilege Escalation](../../../UseCases/uc_privilege_escalation.md)    |  remote-access<br> ↳[ensilo-security-alert](Ps/pC_ensilosecurityalert.md)<br> | T1078 - Valid Accounts<br>T1555.005 - T1555.005<br>    | [<ul><li>2 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_ensilo_ensilo_Privilege_Escalation.md)    |
 |    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  remote-access<br> ↳[ensilo-security-alert](Ps/pC_ensilosecurityalert.md)<br> | T1021 - Remote Services<br>T1068 - Exploitation for Privilege Escalation<br>T1078 - Valid Accounts<br>T1078.002 - T1078.002<br>    | [<ul><li>8 Rules</li></ul><ul><li>3 Models</li></ul>](RM/r_m_ensilo_ensilo_Privileged_Activity.md)    |
