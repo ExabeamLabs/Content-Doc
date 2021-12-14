@@ -4,7 +4,7 @@ Product: BlackBerry Protect
 ---------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  179  |   96   |     21     |      4      |    4    |
+|  174  |   95   |     21     |      4      |    4    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

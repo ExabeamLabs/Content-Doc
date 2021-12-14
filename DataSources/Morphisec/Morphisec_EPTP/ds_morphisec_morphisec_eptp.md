@@ -4,7 +4,7 @@ Product: Morphisec EPTP
 -----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  63   |   28   |     5      |      1      |    1    |
+|  62   |   28   |     5      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
@@ -16,7 +16,6 @@ Product: Morphisec EPTP
 |    [Data Leak](../../../UseCases/uc_data_leak.md)    |  app-activity<br> ↳[syslog-morphisec-security-alert](Ps/pC_syslogmorphisecsecurityalert.md)<br> ↳[s-morphisec-security-alert](Ps/pC_smorphisecsecurityalert.md)<br> | T1114.003 - Email Collection: Email Forwarding Rule<br>    | [<ul><li>3 Rules</li></ul>](RM/r_m_morphisec_morphisec_eptp_Data_Leak.md)    |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  app-activity<br> ↳[syslog-morphisec-security-alert](Ps/pC_syslogmorphisecsecurityalert.md)<br> ↳[s-morphisec-security-alert](Ps/pC_smorphisecsecurityalert.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_morphisec_morphisec_eptp_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  app-activity<br> ↳[syslog-morphisec-security-alert](Ps/pC_syslogmorphisecsecurityalert.md)<br> ↳[s-morphisec-security-alert](Ps/pC_smorphisecsecurityalert.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_morphisec_morphisec_eptp_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  app-activity<br> ↳[syslog-morphisec-security-alert](Ps/pC_syslogmorphisecsecurityalert.md)<br> ↳[s-morphisec-security-alert](Ps/pC_smorphisecsecurityalert.md)<br> |    | [<ul><li>1 Rules</li></ul>](RM/r_m_morphisec_morphisec_eptp_Other.md)    |
 |    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  app-activity<br> ↳[syslog-morphisec-security-alert](Ps/pC_syslogmorphisecsecurityalert.md)<br> ↳[s-morphisec-security-alert](Ps/pC_smorphisecsecurityalert.md)<br> | T1078 - Valid Accounts<br>T1098.002 - Account Manipulation: Exchange Email Delegate Permissions<br> | [<ul><li>7 Rules</li></ul><ul><li>3 Models</li></ul>](RM/r_m_morphisec_morphisec_eptp_Privilege_Abuse.md)    |
 |    [Privilege Escalation](../../../UseCases/uc_privilege_escalation.md)    |  app-activity<br> ↳[syslog-morphisec-security-alert](Ps/pC_syslogmorphisecsecurityalert.md)<br> ↳[s-morphisec-security-alert](Ps/pC_smorphisecsecurityalert.md)<br> | T1098.002 - Account Manipulation: Exchange Email Delegate Permissions<br>    | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_morphisec_morphisec_eptp_Privilege_Escalation.md)    |
 |    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  app-activity<br> ↳[syslog-morphisec-security-alert](Ps/pC_syslogmorphisecsecurityalert.md)<br> ↳[s-morphisec-security-alert](Ps/pC_smorphisecsecurityalert.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_morphisec_morphisec_eptp_Privileged_Activity.md)    |

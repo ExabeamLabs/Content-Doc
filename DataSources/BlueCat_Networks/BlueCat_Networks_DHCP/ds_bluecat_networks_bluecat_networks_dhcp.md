@@ -4,7 +4,7 @@ Product: BlueCat Networks DHCP
 ------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  29   |   4    |     10     |      1      |    1    |
+|  25   |   4    |     10     |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
@@ -13,7 +13,6 @@ Product: BlueCat Networks DHCP
 |          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  failed-logon<br> ↳[cef-bcn-bdds-dhcp](Ps/pC_cefbcnbddsdhcp.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_bluecat_networks_bluecat_networks_dhcp_Compromised_Credentials.md)          |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  failed-logon<br> ↳[cef-bcn-bdds-dhcp](Ps/pC_cefbcnbddsdhcp.md)<br> | T1021.001 - Remote Services: Remote Desktop Protocol<br>T1078 - Valid Accounts<br>T1090.003 - Proxy: Multi-hop Proxy<br>T1110 - Brute Force<br>T1110.003 - T1110.003<br>T1550.002 - Use Alternate Authentication Material: Pass the Hash<br>T1550.003 - Use Alternate Authentication Material: Pass the Ticket<br>T1558 - Steal or Forge Kerberos Tickets<br> | [<ul><li>10 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_bluecat_networks_bluecat_networks_dhcp_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  failed-logon<br> ↳[cef-bcn-bdds-dhcp](Ps/pC_cefbcnbddsdhcp.md)<br> | T1078 - Valid Accounts<br>T1210 - Exploitation of Remote Services<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_bluecat_networks_bluecat_networks_dhcp_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  failed-logon<br> ↳[cef-bcn-bdds-dhcp](Ps/pC_cefbcnbddsdhcp.md)<br> |    | [<ul><li>5 Rules</li></ul>](RM/r_m_bluecat_networks_bluecat_networks_dhcp_Other.md)    |
 |    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  failed-logon<br> ↳[cef-bcn-bdds-dhcp](Ps/pC_cefbcnbddsdhcp.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_bluecat_networks_bluecat_networks_dhcp_Privilege_Abuse.md)    |
 |    [Privilege Escalation](../../../UseCases/uc_privilege_escalation.md)    |  failed-logon<br> ↳[cef-bcn-bdds-dhcp](Ps/pC_cefbcnbddsdhcp.md)<br> | T1210 - Exploitation of Remote Services<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_bluecat_networks_bluecat_networks_dhcp_Privilege_Escalation.md)    |
 |    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  failed-logon<br> ↳[cef-bcn-bdds-dhcp](Ps/pC_cefbcnbddsdhcp.md)<br> | T1068 - Exploitation for Privilege Escalation<br>T1078 - Valid Accounts<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_bluecat_networks_bluecat_networks_dhcp_Privileged_Activity.md)    |

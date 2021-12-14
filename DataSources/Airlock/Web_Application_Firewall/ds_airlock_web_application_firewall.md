@@ -4,7 +4,7 @@ Product: Web Application Firewall
 ---------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  136  |   69   |     17     |      9      |    9    |
+|  152  |   66   |     17     |      9      |    9    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

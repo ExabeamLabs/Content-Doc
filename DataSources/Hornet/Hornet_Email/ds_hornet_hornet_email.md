@@ -4,7 +4,7 @@ Product: Hornet Email
 ---------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  63   |   35   |     3      |      5      |    5    |
+|  61   |   34   |     3      |      5      |    5    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

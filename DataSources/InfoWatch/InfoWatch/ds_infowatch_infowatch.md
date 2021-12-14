@@ -4,7 +4,7 @@ Product: InfoWatch
 ------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  191  |   81   |     18     |      6      |    6    |
+|  187  |   81   |     18     |      6      |    6    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

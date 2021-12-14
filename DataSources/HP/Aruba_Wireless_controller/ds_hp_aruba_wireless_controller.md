@@ -4,7 +4,7 @@ Product: Aruba Wireless controller
 ----------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  556  |   76   |    118     |      6      |    6    |
+|  443  |   73   |    118     |      6      |    6    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

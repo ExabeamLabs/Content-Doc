@@ -4,7 +4,7 @@ Product: IronPort Web Security
 ------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  88   |   26   |     14     |      2      |    2    |
+|  83   |   26   |     14     |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -4,7 +4,7 @@ Product: Symmetry Access Control
 --------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  49   |   24   |     5      |      2      |    2    |
+|  47   |   23   |     5      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

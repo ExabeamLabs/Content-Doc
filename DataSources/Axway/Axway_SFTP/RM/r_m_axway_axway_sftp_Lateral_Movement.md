@@ -7,6 +7,6 @@ Vendor: Axway
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      2      |    2    |
 
-| Event Type             | Rules                                                                                                            | Models |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------- | ------ |
-| process-network-failed | <b>T1090.003 - Proxy: Multi-hop Proxy</b><br> ↳ <b>Aggregation</b>: Outbound failed connection to a known TOR IP |        |
+| Event Type             | Rules                                                                                                                    | Models |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------ |
+| process-network-failed | <b>T1090.003 - Proxy: Multi-hop Proxy</b><br> ↳ <b>A-NETF-TOR-Outbound</b>: Outbound failed connection to a known TOR IP |        |

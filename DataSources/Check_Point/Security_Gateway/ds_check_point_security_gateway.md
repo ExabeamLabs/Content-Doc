@@ -4,7 +4,7 @@ Product: Security Gateway
 -------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  200  |   92   |     26     |      5      |    5    |
+|  202  |   91   |     26     |      5      |    5    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -4,7 +4,7 @@ Product: Cloud App Security (MCAS)
 ----------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  152  |   60   |     17     |     12      |   12    |
+|  145  |   58   |     17     |     12      |   12    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

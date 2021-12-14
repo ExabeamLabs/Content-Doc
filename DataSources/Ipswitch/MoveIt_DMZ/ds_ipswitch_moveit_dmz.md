@@ -4,7 +4,7 @@ Product: MoveIt DMZ
 -------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  134  |   50   |     31     |      9      |    9    |
+|  124  |   46   |     31     |      9      |    9    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -4,7 +4,7 @@ Product: Box Cloud Content Management
 -------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  122  |   52   |     15     |      9      |    9    |
+|  117  |   50   |     15     |      9      |    9    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

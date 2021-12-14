@@ -4,7 +4,7 @@ Product: Deep Security Agent
 ----------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  57   |   33   |     12     |      3      |    3    |
+|  72   |   31   |     12     |      3      |    3    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

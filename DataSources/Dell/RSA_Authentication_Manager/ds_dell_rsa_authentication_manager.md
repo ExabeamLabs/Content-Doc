@@ -4,7 +4,7 @@ Product: RSA Authentication Manager
 -----------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  105  |   47   |     9      |      6      |    6    |
+|  102  |   46   |     9      |      6      |    6    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

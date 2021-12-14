@@ -4,7 +4,7 @@ Product: F5 BIG-IP Access Policy Manager (APM)
 ----------------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  171  |   89   |     17     |      6      |    6    |
+|  168  |   88   |     17     |      6      |    6    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

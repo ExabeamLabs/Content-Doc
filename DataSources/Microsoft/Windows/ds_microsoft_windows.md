@@ -4,7 +4,7 @@ Product: Windows
 ----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-| 1281  |  392   |    156     |     58      |   58    |
+| 1178  |  385   |    156     |     58      |   58    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

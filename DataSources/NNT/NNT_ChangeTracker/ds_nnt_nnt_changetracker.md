@@ -4,14 +4,13 @@ Product: NNT ChangeTracker
 --------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  31   |   11   |     5      |      1      |    1    |
+|  27   |   10   |     5      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 | [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  security-alert<br> ↳[nnt-ct-app-login](Ps/pC_nntctapplogin.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>22 Rules</li></ul><ul><li>9 Models</li></ul>](RM/r_m_nnt_nnt_changetracker_Compromised_Credentials.md) |
 |        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  security-alert<br> ↳[nnt-ct-app-login](Ps/pC_nntctapplogin.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_nnt_nnt_changetracker_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  security-alert<br> ↳[nnt-ct-app-login](Ps/pC_nntctapplogin.md)<br> | TA0002 - TA0002<br>    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_nnt_nnt_changetracker_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  security-alert<br> ↳[nnt-ct-app-login](Ps/pC_nntctapplogin.md)<br> |    | [<ul><li>4 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_nnt_nnt_changetracker_Other.md)    |
 |     [Privileged Activity](../../../UseCases/uc_privileged_activity.md)     |  security-alert<br> ↳[nnt-ct-app-login](Ps/pC_nntctapplogin.md)<br> | T1068 - Exploitation for Privilege Escalation<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_nnt_nnt_changetracker_Privileged_Activity.md)    |
 
 ATT&CK Matrix for Enterprise

@@ -4,13 +4,12 @@ Product: Axway SFTP
 -------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   8   |   2    |     3      |      2      |    2    |
+|   4   |   1    |     3      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  file-upload<br> ↳[axway-remote-logon](Ps/pC_axwayremotelogon.md)<br><br> process-network-failed<br> ↳[axway-sftp-file-upload](Ps/pC_axwaysftpfileupload.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_axway_axway_sftp_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  file-upload<br> ↳[axway-remote-logon](Ps/pC_axwayremotelogon.md)<br><br> process-network-failed<br> ↳[axway-sftp-file-upload](Ps/pC_axwaysftpfileupload.md)<br> | TA0002 - TA0002<br>    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_axway_axway_sftp_Malware.md) |
-|    [Other](../../../UseCases/uc_other.md)    |  file-upload<br> ↳[axway-remote-logon](Ps/pC_axwayremotelogon.md)<br><br> process-network-failed<br> ↳[axway-sftp-file-upload](Ps/pC_axwaysftpfileupload.md)<br> |    | [<ul><li>4 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_axway_axway_sftp_Other.md)   |
 |     [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)     |  file-upload<br> ↳[axway-remote-logon](Ps/pC_axwayremotelogon.md)<br><br> process-network-failed<br> ↳[axway-sftp-file-upload](Ps/pC_axwaysftpfileupload.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_axway_axway_sftp_Privilege_Abuse.md)    |
 | [Privileged Activity](../../../UseCases/uc_privileged_activity.md) |  file-upload<br> ↳[axway-remote-logon](Ps/pC_axwayremotelogon.md)<br><br> process-network-failed<br> ↳[axway-sftp-file-upload](Ps/pC_axwaysftpfileupload.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_axway_axway_sftp_Privileged_Activity.md)    |
 

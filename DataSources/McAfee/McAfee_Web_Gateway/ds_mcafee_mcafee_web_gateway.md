@@ -4,7 +4,7 @@ Product: McAfee Web Gateway
 ---------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  91   |   28   |     14     |      3      |    3    |
+|  86   |   28   |     14     |      3      |    3    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

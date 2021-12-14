@@ -4,7 +4,7 @@ Product: Sonicwall
 ------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  216  |   96   |     34     |      5      |    5    |
+|  216  |   95   |     34     |      5      |    5    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

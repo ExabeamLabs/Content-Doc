@@ -4,7 +4,7 @@ Product: Digital Guardian Network DLP
 -------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  78   |   39   |     6      |      4      |    4    |
+|  76   |   38   |     6      |      4      |    4    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

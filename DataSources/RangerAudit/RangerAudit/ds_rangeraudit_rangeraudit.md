@@ -4,7 +4,7 @@ Product: RangerAudit
 --------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  166  |   78   |     16     |      7      |    7    |
+|  161  |   76   |     16     |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

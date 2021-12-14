@@ -4,14 +4,13 @@ Product: Defender Antivirus
 ---------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   5   |   2    |     2      |      1      |    1    |
+|   3   |   1    |     2      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-|   [Data Exfiltration](../../../UseCases/uc_data_exfiltration.md)   |  file-alert<br> ↳[raw-defender-av-1116](Ps/pC_rawdefenderav1116.md)<br> | TA0002 - TA0002<br>        | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_microsoft_defender_antivirus_Data_Exfiltration.md) |
-|    [Other](../../../UseCases/uc_other.md)    |  file-alert<br> ↳[raw-defender-av-1116](Ps/pC_rawdefenderav1116.md)<br> |    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_microsoft_defender_antivirus_Other.md)    |
-|     [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)     |  file-alert<br> ↳[raw-defender-av-1116](Ps/pC_rawdefenderav1116.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_microsoft_defender_antivirus_Privilege_Abuse.md)    |
-| [Privileged Activity](../../../UseCases/uc_privileged_activity.md) |  file-alert<br> ↳[raw-defender-av-1116](Ps/pC_rawdefenderav1116.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_microsoft_defender_antivirus_Privileged_Activity.md)    |
+|   [Data Exfiltration](../../../UseCases/uc_data_exfiltration.md)   |  file-alert<br> ↳[xml-1116](Ps/pC_xml1116.md)<br> ↳[raw-defender-av-1116](Ps/pC_rawdefenderav1116.md)<br> ↳[xml-1117](Ps/pC_xml1117.md)<br> ↳[xml-1009](Ps/pC_xml1009.md)<br> | TA0002 - TA0002<br>        | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_microsoft_defender_antivirus_Data_Exfiltration.md) |
+|     [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)     |  file-alert<br> ↳[xml-1116](Ps/pC_xml1116.md)<br> ↳[raw-defender-av-1116](Ps/pC_rawdefenderav1116.md)<br> ↳[xml-1117](Ps/pC_xml1117.md)<br> ↳[xml-1009](Ps/pC_xml1009.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_microsoft_defender_antivirus_Privilege_Abuse.md)    |
+| [Privileged Activity](../../../UseCases/uc_privileged_activity.md) |  file-alert<br> ↳[xml-1116](Ps/pC_xml1116.md)<br> ↳[raw-defender-av-1116](Ps/pC_rawdefenderav1116.md)<br> ↳[xml-1117](Ps/pC_xml1117.md)<br> ↳[xml-1009](Ps/pC_xml1009.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_microsoft_defender_antivirus_Privileged_Activity.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

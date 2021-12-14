@@ -4,7 +4,7 @@ Product: Okta Adaptive MFA
 --------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  176  |   67   |     20     |     12      |   12    |
+|  175  |   65   |     20     |     12      |   12    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

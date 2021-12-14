@@ -4,13 +4,12 @@ Product: BeyondTrust PasswordSafe
 ---------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  20   |   15   |     2      |      1      |    1    |
+|  18   |   14   |     2      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 | [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  privileged-access<br> ↳[beyondtrust-passwordsafe](Ps/pC_beyondtrustpasswordsafe.md)<br> ↳[beyondtrust-passwordsafe](Ps/pC_beyondtrustpasswordsafe.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_beyondtrust_beyondtrust_passwordsafe_Abnormal_Authentication_&_Access.md) |
 |    [Malware](../../../UseCases/uc_malware.md)    |  privileged-access<br> ↳[beyondtrust-passwordsafe](Ps/pC_beyondtrustpasswordsafe.md)<br> ↳[beyondtrust-passwordsafe](Ps/pC_beyondtrustpasswordsafe.md)<br> | TA0002 - TA0002<br>        | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_beyondtrust_beyondtrust_passwordsafe_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  privileged-access<br> ↳[beyondtrust-passwordsafe](Ps/pC_beyondtrustpasswordsafe.md)<br> ↳[beyondtrust-passwordsafe](Ps/pC_beyondtrustpasswordsafe.md)<br> |    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_beyondtrust_beyondtrust_passwordsafe_Other.md)    |
 |    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  privileged-access<br> ↳[beyondtrust-passwordsafe](Ps/pC_beyondtrustpasswordsafe.md)<br> ↳[beyondtrust-passwordsafe](Ps/pC_beyondtrustpasswordsafe.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>5 Rules</li></ul><ul><li>5 Models</li></ul>](RM/r_m_beyondtrust_beyondtrust_passwordsafe_Privilege_Abuse.md)    |
 |    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  privileged-access<br> ↳[beyondtrust-passwordsafe](Ps/pC_beyondtrustpasswordsafe.md)<br> ↳[beyondtrust-passwordsafe](Ps/pC_beyondtrustpasswordsafe.md)<br> | TA0002 - TA0002<br>        | [<ul><li>10 Rules</li></ul><ul><li>7 Models</li></ul>](RM/r_m_beyondtrust_beyondtrust_passwordsafe_Privileged_Activity.md)    |
 

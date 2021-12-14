@@ -4,7 +4,7 @@ Product: Auditbeat
 ------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  269  |  112   |     41     |      6      |    6    |
+|  274  |  107   |     41     |      6      |    6    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

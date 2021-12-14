@@ -4,7 +4,7 @@ Product: Symantec Brightmail
 ----------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  74   |   37   |     6      |      4      |    4    |
+|  72   |   36   |     6      |      4      |    4    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

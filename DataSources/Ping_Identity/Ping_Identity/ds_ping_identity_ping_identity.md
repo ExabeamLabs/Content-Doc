@@ -4,7 +4,7 @@ Product: Ping Identity
 ----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  77   |   31   |     9      |      8      |    8    |
+|  74   |   30   |     9      |      8      |    8    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

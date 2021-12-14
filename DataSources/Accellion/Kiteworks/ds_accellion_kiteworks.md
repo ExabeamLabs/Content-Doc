@@ -4,7 +4,7 @@ Product: Kiteworks
 ------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  190  |   78   |     18     |     15      |   15    |
+|  183  |   76   |     18     |     15      |   15    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

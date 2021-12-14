@@ -4,7 +4,7 @@ Product: Zscaler Internet Access
 --------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  156  |   66   |     22     |      7      |    7    |
+|  177  |   64   |     22     |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

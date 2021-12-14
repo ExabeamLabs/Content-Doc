@@ -4,14 +4,13 @@ Product: IBM Endpoint Manager
 -----------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  15   |   9    |     5      |      1      |    1    |
+|  20   |   8    |     5      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 |     [Cryptomining](../../../UseCases/uc_cryptomining.md)     |  network-connection-failed<br> ↳[s-trusteer-epp-alert](Ps/pC_strusteereppalert.md)<br> | T1496 - Resource Hijacking<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_ibm_ibm_endpoint_manager_Cryptomining.md)    |
-| [Lateral Movement](../../../UseCases/uc_lateral_movement.md) |  network-connection-failed<br> ↳[s-trusteer-epp-alert](Ps/pC_strusteereppalert.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1090.003 - Proxy: Multi-hop Proxy<br>TA0010 - TA0010<br>TA0011 - TA0011<br> | [<ul><li>8 Rules</li></ul><ul><li>8 Models</li></ul>](RM/r_m_ibm_ibm_endpoint_manager_Lateral_Movement.md) |
+| [Lateral Movement](../../../UseCases/uc_lateral_movement.md) |  network-connection-failed<br> ↳[s-trusteer-epp-alert](Ps/pC_strusteereppalert.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1090.003 - Proxy: Multi-hop Proxy<br>TA0010 - TA0010<br>TA0011 - TA0011<br> | [<ul><li>19 Rules</li></ul><ul><li>8 Models</li></ul>](RM/r_m_ibm_ibm_endpoint_manager_Lateral_Movement.md) |
 |          [Malware](../../../UseCases/uc_malware.md)          |  network-connection-failed<br> ↳[s-trusteer-epp-alert](Ps/pC_strusteereppalert.md)<br> | TA0011 - TA0011<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_ibm_ibm_endpoint_manager_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  network-connection-failed<br> ↳[s-trusteer-epp-alert](Ps/pC_strusteereppalert.md)<br> |    | [<ul><li>6 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_ibm_ibm_endpoint_manager_Other.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

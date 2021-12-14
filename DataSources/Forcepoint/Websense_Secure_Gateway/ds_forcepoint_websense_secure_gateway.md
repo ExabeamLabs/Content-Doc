@@ -4,7 +4,7 @@ Product: Websense Secure Gateway
 --------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  113  |   39   |     19     |      5      |    5    |
+|  115  |   38   |     19     |      5      |    5    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -4,7 +4,7 @@ Product: Clearsense
 -------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  70   |   28   |     6      |      2      |    2    |
+|  66   |   27   |     6      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
@@ -13,7 +13,6 @@ Product: Clearsense
 |    [Data Access](../../../UseCases/uc_data_access.md)    |  app-login<br> ↳[clearsense-app-activity](Ps/pC_clearsenseappactivity.md)<br><br> security-alert<br> ↳[clearsense-app-login](Ps/pC_clearsenseapplogin.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>5 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_clearsense_clearsense_Data_Access.md)    |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  app-login<br> ↳[clearsense-app-activity](Ps/pC_clearsenseappactivity.md)<br><br> security-alert<br> ↳[clearsense-app-login](Ps/pC_clearsenseapplogin.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>3 Rules</li></ul>](RM/r_m_clearsense_clearsense_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  app-login<br> ↳[clearsense-app-activity](Ps/pC_clearsenseappactivity.md)<br><br> security-alert<br> ↳[clearsense-app-login](Ps/pC_clearsenseapplogin.md)<br> | T1078 - Valid Accounts<br>TA0002 - TA0002<br>    | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_clearsense_clearsense_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  app-login<br> ↳[clearsense-app-activity](Ps/pC_clearsenseappactivity.md)<br><br> security-alert<br> ↳[clearsense-app-login](Ps/pC_clearsenseapplogin.md)<br> |    | [<ul><li>4 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_clearsense_clearsense_Other.md)    |
 |    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  app-login<br> ↳[clearsense-app-activity](Ps/pC_clearsenseappactivity.md)<br><br> security-alert<br> ↳[clearsense-app-login](Ps/pC_clearsenseapplogin.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_clearsense_clearsense_Privilege_Abuse.md)    |
 |    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  app-login<br> ↳[clearsense-app-activity](Ps/pC_clearsenseappactivity.md)<br><br> security-alert<br> ↳[clearsense-app-login](Ps/pC_clearsenseapplogin.md)<br> | T1068 - Exploitation for Privilege Escalation<br>T1078 - Valid Accounts<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_clearsense_clearsense_Privileged_Activity.md)    |
 |    [Ransomware](../../../UseCases/uc_ransomware.md)    |  app-login<br> ↳[clearsense-app-activity](Ps/pC_clearsenseappactivity.md)<br><br> security-alert<br> ↳[clearsense-app-login](Ps/pC_clearsenseapplogin.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_clearsense_clearsense_Ransomware.md)    |

@@ -4,7 +4,7 @@ Product: Ordr SCE
 -----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  49   |   22   |     7      |      1      |    1    |
+|  46   |   20   |     7      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
@@ -13,7 +13,6 @@ Product: Ordr SCE
 |       [Data Exfiltration](../../../UseCases/uc_data_exfiltration.md)       |  file-write<br> ↳[ordr-json-alert](Ps/pC_ordrjsonalert.md)<br> | TA0002 - TA0002<br>    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_ordr_ordr_sce_Data_Exfiltration.md)         |
 |    [Data Leak](../../../UseCases/uc_data_leak.md)    |  file-write<br> ↳[ordr-json-alert](Ps/pC_ordrjsonalert.md)<br> | T1114.001 - T1114.001<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_ordr_ordr_sce_Data_Leak.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  file-write<br> ↳[ordr-json-alert](Ps/pC_ordrjsonalert.md)<br> | T1003.002 - T1003.002<br>TA0002 - TA0002<br>    | [<ul><li>4 Rules</li></ul>](RM/r_m_ordr_ordr_sce_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  file-write<br> ↳[ordr-json-alert](Ps/pC_ordrjsonalert.md)<br> |    | [<ul><li>3 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_ordr_ordr_sce_Other.md)    |
 |         [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)         |  file-write<br> ↳[ordr-json-alert](Ps/pC_ordrjsonalert.md)<br> | T1078 - Valid Accounts<br>T1083 - File and Directory Discovery<br>    | [<ul><li>3 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_ordr_ordr_sce_Privilege_Abuse.md)    |
 |     [Privileged Activity](../../../UseCases/uc_privileged_activity.md)     |  file-write<br> ↳[ordr-json-alert](Ps/pC_ordrjsonalert.md)<br> | T1078 - Valid Accounts<br>T1083 - File and Directory Discovery<br>    | [<ul><li>3 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_ordr_ordr_sce_Privileged_Activity.md)       |
 |    [Ransomware](../../../UseCases/uc_ransomware.md)    |  file-write<br> ↳[ordr-json-alert](Ps/pC_ordrjsonalert.md)<br> | T1486 - Data Encrypted for Impact<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_ordr_ordr_sce_Ransomware.md)    |

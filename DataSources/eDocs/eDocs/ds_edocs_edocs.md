@@ -4,7 +4,7 @@ Product: eDocs
 --------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  64   |   15   |     12     |      1      |    1    |
+|  60   |   15   |     12     |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
@@ -15,7 +15,6 @@ Product: eDocs
 |    [Data Leak](../../../UseCases/uc_data_leak.md)    |  web-activity-denied<br> ↳[edocs-app-activity](Ps/pC_edocsappactivity.md)<br> | T1071.001 - Application Layer Protocol: Web Protocols<br>T1567.002 - Exfiltration Over Web Service: Exfiltration to Cloud Storage<br>    | [<ul><li>4 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_edocs_edocs_Data_Leak.md)    |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  web-activity-denied<br> ↳[edocs-app-activity](Ps/pC_edocsappactivity.md)<br> | T1071.001 - Application Layer Protocol: Web Protocols<br>T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>7 Rules</li></ul>](RM/r_m_edocs_edocs_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  web-activity-denied<br> ↳[edocs-app-activity](Ps/pC_edocsappactivity.md)<br> | T1071.001 - Application Layer Protocol: Web Protocols<br>T1189 - Drive-by Compromise<br>T1204.001 - T1204.001<br>T1566.002 - Phishing: Spearphishing Link<br>T1568.002 - Dynamic Resolution: Domain Generation Algorithms<br>    | [<ul><li>24 Rules</li></ul><ul><li>6 Models</li></ul>](RM/r_m_edocs_edocs_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  web-activity-denied<br> ↳[edocs-app-activity](Ps/pC_edocsappactivity.md)<br> |    | [<ul><li>4 Rules</li></ul>](RM/r_m_edocs_edocs_Other.md)    |
 |    [Phishing](../../../UseCases/uc_phishing.md)    |  web-activity-denied<br> ↳[edocs-app-activity](Ps/pC_edocsappactivity.md)<br> | T1189 - Drive-by Compromise<br>T1204.001 - T1204.001<br>T1534 - Internal Spearphishing<br>T1566.002 - Phishing: Spearphishing Link<br>T1598.003 - T1598.003<br>    | [<ul><li>4 Rules</li></ul>](RM/r_m_edocs_edocs_Phishing.md)    |
 |    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  web-activity-denied<br> ↳[edocs-app-activity](Ps/pC_edocsappactivity.md)<br> | T1071.001 - Application Layer Protocol: Web Protocols<br>T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_edocs_edocs_Privilege_Abuse.md)    |
 |    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  web-activity-denied<br> ↳[edocs-app-activity](Ps/pC_edocsappactivity.md)<br> | T1071.001 - Application Layer Protocol: Web Protocols<br>T1078 - Valid Accounts<br>T1102 - Web Service<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_edocs_edocs_Privileged_Activity.md)    |

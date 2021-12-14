@@ -4,7 +4,7 @@ Product: Honeywell Pro-Watch
 ----------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  42   |   16   |     5      |      2      |    2    |
+|  41   |   15   |     5      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

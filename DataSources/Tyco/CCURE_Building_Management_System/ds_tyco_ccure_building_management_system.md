@@ -4,7 +4,7 @@ Product: CCURE Building Management System
 -----------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  71   |   32   |     5      |      4      |    4    |
+|  68   |   32   |     5      |      4      |    4    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -4,7 +4,7 @@ Product: Symantec Endpoint Protection
 -------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  220  |   87   |     26     |      8      |    8    |
+|  231  |   83   |     26     |      8      |    8    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

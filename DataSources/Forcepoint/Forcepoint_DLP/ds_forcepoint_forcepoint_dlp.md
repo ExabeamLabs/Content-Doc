@@ -4,7 +4,7 @@ Product: Forcepoint DLP
 -----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  98   |   46   |     10     |      7      |    7    |
+|  96   |   45   |     10     |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -4,7 +4,7 @@ Product: Symantec VIP
 ---------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  72   |   28   |     5      |      4      |    4    |
+|  68   |   28   |     5      |      4      |    4    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -4,7 +4,7 @@ Product: MasterSAM PAM
 ----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  118  |   48   |     15     |      4      |    4    |
+|  110  |   45   |     15     |      4      |    4    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

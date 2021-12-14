@@ -4,7 +4,7 @@ Product: EMP
 ------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  63   |   28   |     5      |      2      |    2    |
+|  62   |   28   |     5      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
@@ -16,7 +16,6 @@ Product: EMP
 |    [Data Leak](../../../UseCases/uc_data_leak.md)    |  app-activity<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br><br> dlp-email-alert-in-failed<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br> | T1114.003 - Email Collection: Email Forwarding Rule<br>    | [<ul><li>3 Rules</li></ul>](RM/r_m_emp_emp_Data_Leak.md)    |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  app-activity<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br><br> dlp-email-alert-in-failed<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_emp_emp_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  app-activity<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br><br> dlp-email-alert-in-failed<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_emp_emp_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  app-activity<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br><br> dlp-email-alert-in-failed<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br> |    | [<ul><li>1 Rules</li></ul>](RM/r_m_emp_emp_Other.md)    |
 |    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  app-activity<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br><br> dlp-email-alert-in-failed<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br> | T1078 - Valid Accounts<br>T1098.002 - Account Manipulation: Exchange Email Delegate Permissions<br> | [<ul><li>7 Rules</li></ul><ul><li>3 Models</li></ul>](RM/r_m_emp_emp_Privilege_Abuse.md)    |
 |    [Privilege Escalation](../../../UseCases/uc_privilege_escalation.md)    |  app-activity<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br><br> dlp-email-alert-in-failed<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br> | T1098.002 - Account Manipulation: Exchange Email Delegate Permissions<br>    | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_emp_emp_Privilege_Escalation.md)    |
 |    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  app-activity<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br><br> dlp-email-alert-in-failed<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_emp_emp_Privileged_Activity.md)    |

@@ -4,7 +4,7 @@ Product: WebSafe
 ----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  116  |   43   |     15     |      2      |    2    |
+|  112  |   43   |     15     |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
@@ -16,7 +16,6 @@ Product: WebSafe
 |    [Data Leak](../../../UseCases/uc_data_leak.md)    |  app-login<br> ↳[f5-web-activity](Ps/pC_f5webactivity.md)<br><br> web-activity-allowed<br> ↳[f5-web-activity](Ps/pC_f5webactivity.md)<br> | T1041 - Exfiltration Over C2 Channel<br>T1071.001 - Application Layer Protocol: Web Protocols<br>T1567 - Exfiltration Over Web Service<br>T1567.002 - Exfiltration Over Web Service: Exfiltration to Cloud Storage<br>    | [<ul><li>5 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_f5_websafe_Data_Leak.md)    |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  app-login<br> ↳[f5-web-activity](Ps/pC_f5webactivity.md)<br><br> web-activity-allowed<br> ↳[f5-web-activity](Ps/pC_f5webactivity.md)<br> | T1071.001 - Application Layer Protocol: Web Protocols<br>T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>8 Rules</li></ul>](RM/r_m_f5_websafe_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  app-login<br> ↳[f5-web-activity](Ps/pC_f5webactivity.md)<br><br> web-activity-allowed<br> ↳[f5-web-activity](Ps/pC_f5webactivity.md)<br> | T1071 - Application Layer Protocol<br>T1071.001 - Application Layer Protocol: Web Protocols<br>T1078 - Valid Accounts<br>T1189 - Drive-by Compromise<br>T1204.001 - T1204.001<br>T1566.002 - Phishing: Spearphishing Link<br>T1568.002 - Dynamic Resolution: Domain Generation Algorithms<br>    | [<ul><li>25 Rules</li></ul><ul><li>6 Models</li></ul>](RM/r_m_f5_websafe_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  app-login<br> ↳[f5-web-activity](Ps/pC_f5webactivity.md)<br><br> web-activity-allowed<br> ↳[f5-web-activity](Ps/pC_f5webactivity.md)<br> |    | [<ul><li>4 Rules</li></ul>](RM/r_m_f5_websafe_Other.md)    |
 |    [Phishing](../../../UseCases/uc_phishing.md)    |  app-login<br> ↳[f5-web-activity](Ps/pC_f5webactivity.md)<br><br> web-activity-allowed<br> ↳[f5-web-activity](Ps/pC_f5webactivity.md)<br> | T1189 - Drive-by Compromise<br>T1204.001 - T1204.001<br>T1534 - Internal Spearphishing<br>T1566.002 - Phishing: Spearphishing Link<br>T1598.003 - T1598.003<br>    | [<ul><li>4 Rules</li></ul>](RM/r_m_f5_websafe_Phishing.md)    |
 |    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  app-login<br> ↳[f5-web-activity](Ps/pC_f5webactivity.md)<br><br> web-activity-allowed<br> ↳[f5-web-activity](Ps/pC_f5webactivity.md)<br> | T1071.001 - Application Layer Protocol: Web Protocols<br>T1078 - Valid Accounts<br>    | [<ul><li>3 Rules</li></ul>](RM/r_m_f5_websafe_Privilege_Abuse.md)    |
 |    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  app-login<br> ↳[f5-web-activity](Ps/pC_f5webactivity.md)<br><br> web-activity-allowed<br> ↳[f5-web-activity](Ps/pC_f5webactivity.md)<br> | T1071.001 - Application Layer Protocol: Web Protocols<br>T1078 - Valid Accounts<br>T1102 - Web Service<br>    | [<ul><li>3 Rules</li></ul>](RM/r_m_f5_websafe_Privileged_Activity.md)    |

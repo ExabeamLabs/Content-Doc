@@ -4,15 +4,14 @@ Product: Virtual Private Cloud
 ------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  44   |   24   |     12     |      1      |    1    |
+|  58   |   24   |     12     |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 | [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  netflow-connection<br> ↳[gcpvpc-netflow-connection](Ps/pC_gcpvpcnetflowconnection.md)<br> | T1046 - Network Service Scanning<br>    | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_google_virtual_private_cloud_Compromised_Credentials.md) |
 |       [Data Exfiltration](../../../UseCases/uc_data_exfiltration.md)       |  netflow-connection<br> ↳[gcpvpc-netflow-connection](Ps/pC_gcpvpcnetflowconnection.md)<br> | T1048.003 - Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol<br>T1071.002 - Application Layer Protocol: File Transfer Protocols<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_google_virtual_private_cloud_Data_Exfiltration.md)    |
-|        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  netflow-connection<br> ↳[gcpvpc-netflow-connection](Ps/pC_gcpvpcnetflowconnection.md)<br> | T1018 - Remote System Discovery<br>T1021 - Remote Services<br>T1021.001 - Remote Services: Remote Desktop Protocol<br>T1046 - Network Service Scanning<br>T1071 - Application Layer Protocol<br>T1090.003 - Proxy: Multi-hop Proxy<br>T1190 - Exploit Public Fasing Application<br>T1210 - Exploitation of Remote Services<br>TA0008 - TA0008<br>TA0010 - TA0010<br>TA0011 - TA0011<br> | [<ul><li>38 Rules</li></ul><ul><li>24 Models</li></ul>](RM/r_m_google_virtual_private_cloud_Lateral_Movement.md)      |
-|    [Malware](../../../UseCases/uc_malware.md)    |  netflow-connection<br> ↳[gcpvpc-netflow-connection](Ps/pC_gcpvpcnetflowconnection.md)<br> | TA0011 - TA0011<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_google_virtual_private_cloud_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  netflow-connection<br> ↳[gcpvpc-netflow-connection](Ps/pC_gcpvpcnetflowconnection.md)<br> |    | [<ul><li>4 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_google_virtual_private_cloud_Other.md)    |
+|        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  netflow-connection<br> ↳[gcpvpc-netflow-connection](Ps/pC_gcpvpcnetflowconnection.md)<br> | T1018 - Remote System Discovery<br>T1021 - Remote Services<br>T1021.001 - Remote Services: Remote Desktop Protocol<br>T1046 - Network Service Scanning<br>T1071 - Application Layer Protocol<br>T1090.003 - Proxy: Multi-hop Proxy<br>T1190 - Exploit Public Fasing Application<br>T1210 - Exploitation of Remote Services<br>TA0008 - TA0008<br>TA0010 - TA0010<br>TA0011 - TA0011<br> | [<ul><li>56 Rules</li></ul><ul><li>24 Models</li></ul>](RM/r_m_google_virtual_private_cloud_Lateral_Movement.md)      |
+|    [Malware](../../../UseCases/uc_malware.md)    |  netflow-connection<br> ↳[gcpvpc-netflow-connection](Ps/pC_gcpvpcnetflowconnection.md)<br> | TA0011 - TA0011<br>    | [<ul><li>3 Rules</li></ul>](RM/r_m_google_virtual_private_cloud_Malware.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

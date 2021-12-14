@@ -4,14 +4,13 @@ Product: F5 Silverline
 ----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  16   |   9    |     6      |      2      |    2    |
+|  21   |   8    |     6      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 |        [Cryptomining](../../../UseCases/uc_cryptomining.md)        |  dlp-email-alert-in-failed<br> ↳[f5-silverline-network-alert-1](Ps/pC_f5silverlinenetworkalert1.md)<br><br> network-connection-failed<br> ↳[f5-silverline-waf](Ps/pC_f5silverlinewaf.md)<br> | T1496 - Resource Hijacking<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_f5_f5_silverline_Cryptomining.md)    |
-|    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  dlp-email-alert-in-failed<br> ↳[f5-silverline-network-alert-1](Ps/pC_f5silverlinenetworkalert1.md)<br><br> network-connection-failed<br> ↳[f5-silverline-waf](Ps/pC_f5silverlinewaf.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1090.003 - Proxy: Multi-hop Proxy<br>TA0010 - TA0010<br>TA0011 - TA0011<br> | [<ul><li>8 Rules</li></ul><ul><li>8 Models</li></ul>](RM/r_m_f5_f5_silverline_Lateral_Movement.md) |
+|    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  dlp-email-alert-in-failed<br> ↳[f5-silverline-network-alert-1](Ps/pC_f5silverlinenetworkalert1.md)<br><br> network-connection-failed<br> ↳[f5-silverline-waf](Ps/pC_f5silverlinewaf.md)<br> | T1048 - Exfiltration Over Alternative Protocol<br>T1090.003 - Proxy: Multi-hop Proxy<br>TA0010 - TA0010<br>TA0011 - TA0011<br> | [<ul><li>19 Rules</li></ul><ul><li>8 Models</li></ul>](RM/r_m_f5_f5_silverline_Lateral_Movement.md) |
 |    [Malware](../../../UseCases/uc_malware.md)    |  dlp-email-alert-in-failed<br> ↳[f5-silverline-network-alert-1](Ps/pC_f5silverlinenetworkalert1.md)<br><br> network-connection-failed<br> ↳[f5-silverline-waf](Ps/pC_f5silverlinewaf.md)<br> | TA0011 - TA0011<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_f5_f5_silverline_Malware.md)    |
-|    [Other](../../../UseCases/uc_other.md)    |  dlp-email-alert-in-failed<br> ↳[f5-silverline-network-alert-1](Ps/pC_f5silverlinenetworkalert1.md)<br><br> network-connection-failed<br> ↳[f5-silverline-waf](Ps/pC_f5silverlinewaf.md)<br> |    | [<ul><li>6 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_f5_f5_silverline_Other.md)    |
 |     [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)     |  dlp-email-alert-in-failed<br> ↳[f5-silverline-network-alert-1](Ps/pC_f5silverlinenetworkalert1.md)<br><br> network-connection-failed<br> ↳[f5-silverline-waf](Ps/pC_f5silverlinewaf.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_f5_f5_silverline_Privilege_Abuse.md)    |
 | [Privileged Activity](../../../UseCases/uc_privileged_activity.md) |  dlp-email-alert-in-failed<br> ↳[f5-silverline-network-alert-1](Ps/pC_f5silverlinenetworkalert1.md)<br><br> network-connection-failed<br> ↳[f5-silverline-waf](Ps/pC_f5silverlinewaf.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_f5_f5_silverline_Privileged_Activity.md)    |
 

@@ -4,11 +4,11 @@ Product: Websense ESG
 ---------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   3   |   0    |     0      |      1      |    1    |
+|   0   |   0    |     0      |      1      |    1    |
 
-|    Use-Case    | Event Types/Parsers    | MITRE TTP | Content    |
-|:----:| ---- | --------- | ---- |
-| [Other](../../../UseCases/uc_other.md) |  dns-query<br> ↳[websense-dlp-email-alert-in](Ps/pC_websensedlpemailalertin.md)<br> |    | [<ul><li>3 Rules</li></ul>](RM/r_m_forcepoint_websense_esg_Other.md) |
+|  Use-Case  | Event Types/Parsers    | MITRE TTP | Content    |
+|:----------:| ---- | --------- | ---- |
+| Enrichment |  dns-query<br> ↳[websense-dlp-email-alert-in](Ps/pC_websensedlpemailalertin.md)<br> |    | [](RM/r_m_forcepoint_websense_esg_Enrichment.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

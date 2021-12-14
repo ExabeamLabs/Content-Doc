@@ -4,7 +4,7 @@ Product: Fortinet VPN
 ---------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  165  |   72   |     23     |      3      |    3    |
+|  161  |   72   |     23     |      3      |    3    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

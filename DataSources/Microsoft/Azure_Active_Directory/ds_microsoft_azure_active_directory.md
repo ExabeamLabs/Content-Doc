@@ -4,7 +4,7 @@ Product: Azure Active Directory
 -------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  710  |  137   |    121     |     11      |   11    |
+|  589  |  134   |    121     |     11      |   11    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

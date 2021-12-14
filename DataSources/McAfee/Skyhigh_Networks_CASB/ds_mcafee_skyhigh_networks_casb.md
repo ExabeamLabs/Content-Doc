@@ -4,7 +4,7 @@ Product: Skyhigh Networks CASB
 ------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  161  |   68   |     15     |      6      |    6    |
+|  155  |   66   |     15     |      6      |    6    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

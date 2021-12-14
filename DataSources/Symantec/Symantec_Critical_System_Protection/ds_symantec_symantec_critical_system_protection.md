@@ -4,7 +4,7 @@ Product: Symantec Critical System Protection
 --------------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  148  |   61   |     19     |      6      |    6    |
+|  139  |   59   |     19     |      6      |    6    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

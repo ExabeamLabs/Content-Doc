@@ -4,7 +4,7 @@ Product: Bitglass CASB
 ----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  135  |   57   |     11     |      7      |    7    |
+|  131  |   55   |     11     |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

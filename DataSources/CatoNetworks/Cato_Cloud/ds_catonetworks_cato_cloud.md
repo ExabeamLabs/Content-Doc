@@ -4,7 +4,7 @@ Product: Cato Cloud
 -------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  174  |   56   |     25     |      6      |    6    |
+|  173  |   55   |     25     |      6      |    6    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
