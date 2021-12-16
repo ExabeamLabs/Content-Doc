@@ -10,7 +10,7 @@ Name = cef-duo-app-activity
   Conditions = [ """ destinationServiceName =DUO """ ]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
-    """"isotimestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{6}([+-]\d\d:\d\d)?)"""",
+    """"isotimestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d{6})?([+-]\d\d:\d\d)?)"""",
     """\WdestinationServiceName =(|({app}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
     """"username"{1,20}:"{1,20}(?!AD Sync:)(({user_email}[^"\s@]{1,2000}@[^"\s@]{1,2000})|({user_fullname}[^\s]{1,2000}\s[^"]{1,2000})|({user}[^"]{1,2000}))"""",
     """"phone":\s{0,100}"({object}[^"]{1,2000})"""",

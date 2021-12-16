@@ -7,7 +7,7 @@ Name = cef-salesforce-failed-app-login
   Lms = ArcSight
   DataType = "failed-app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """|Skyformation|SkyFormation Cloud Apps Security|""", """|login-failed|""", """Sales Cloud""" ]
+  Conditions = [ """|login-failed|""", """destinationServiceName =Sales Cloud""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """LoginTime\\=({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",

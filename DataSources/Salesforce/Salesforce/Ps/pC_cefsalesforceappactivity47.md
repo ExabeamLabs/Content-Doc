@@ -3,7 +3,7 @@
 {
 Name = cef-salesforce-app-activity-47
   Product = Salesforce
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """flexString1=useremailchangesent""", """destinationServiceName =Sales Cloud""" ]
+  Conditions = [ """flexString1=useremailchangesent""", """destinationServiceName =Sales Cloud""" ]
 
 cef-salesforce-app-activity = {
   Vendor = Salesforce
