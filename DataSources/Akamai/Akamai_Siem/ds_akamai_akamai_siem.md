@@ -4,12 +4,12 @@ Product: Akamai Siem
 --------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  18   |   5    |     3      |      1      |    1    |
+|  16   |   0    |     3      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  authentication-successful<br> ↳[akamai-security-alert](Ps/pC_akamaisecurityalert.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>11 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_akamai_akamai_siem_Abnormal_Authentication_&_Access.md) |
-|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  authentication-successful<br> ↳[akamai-security-alert](Ps/pC_akamaisecurityalert.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>7 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_akamai_akamai_siem_Compromised_Credentials.md)    |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  authentication-successful<br> ↳[akamai-security-alert](Ps/pC_akamaisecurityalert.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>10 Rules</li></ul>](RM/r_m_akamai_akamai_siem_Abnormal_Authentication_&_Access.md) |
+|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  authentication-successful<br> ↳[akamai-security-alert](Ps/pC_akamaisecurityalert.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>5 Rules</li></ul>](RM/r_m_akamai_akamai_siem_Compromised_Credentials.md)    |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  authentication-successful<br> ↳[akamai-security-alert](Ps/pC_akamaisecurityalert.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_akamai_akamai_siem_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  authentication-successful<br> ↳[akamai-security-alert](Ps/pC_akamaisecurityalert.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_akamai_akamai_siem_Malware.md)    |
 |    [Ransomware](../../../UseCases/uc_ransomware.md)    |  authentication-successful<br> ↳[akamai-security-alert](Ps/pC_akamaisecurityalert.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_akamai_akamai_siem_Ransomware.md)    |

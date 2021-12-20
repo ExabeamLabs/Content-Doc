@@ -4,13 +4,13 @@ Product: RSA DLP
 ----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  33   |   18   |     4      |      1      |    1    |
+|  31   |   0    |     4      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Data Exfiltration](../../../UseCases/uc_data_exfiltration.md) |  dlp-alert<br> ↳[rsa-dlp-alert](Ps/pC_rsadlpalert.md)<br> ↳[rsa-dlp-email-alert](Ps/pC_rsadlpemailalert.md)<br> | T1020 - Automated Exfiltration<br>T1071 - Application Layer Protocol<br>TA0010 - TA0010<br> | [<ul><li>31 Rules</li></ul><ul><li>17 Models</li></ul>](RM/r_m_rsa_rsa_dlp_Data_Exfiltration.md) |
-|         [Data Leak](../../../UseCases/uc_data_leak.md)         |  dlp-alert<br> ↳[rsa-dlp-alert](Ps/pC_rsadlpalert.md)<br> ↳[rsa-dlp-email-alert](Ps/pC_rsadlpemailalert.md)<br> | T1020 - Automated Exfiltration<br>T1071 - Application Layer Protocol<br>TA0010 - TA0010<br> | [<ul><li>31 Rules</li></ul><ul><li>17 Models</li></ul>](RM/r_m_rsa_rsa_dlp_Data_Leak.md)         |
-|    [Malware](../../../UseCases/uc_malware.md)    |  dlp-alert<br> ↳[rsa-dlp-alert](Ps/pC_rsadlpalert.md)<br> ↳[rsa-dlp-email-alert](Ps/pC_rsadlpemailalert.md)<br> | TA0002 - TA0002<br>    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_rsa_rsa_dlp_Malware.md)    |
+| [Data Exfiltration](../../../UseCases/uc_data_exfiltration.md) |  dlp-alert<br> ↳[rsa-dlp-alert](Ps/pC_rsadlpalert.md)<br> ↳[rsa-dlp-email-alert](Ps/pC_rsadlpemailalert.md)<br> | T1020 - Automated Exfiltration<br>T1071 - Application Layer Protocol<br>TA0010 - TA0010<br> | [<ul><li>27 Rules</li></ul>](RM/r_m_rsa_rsa_dlp_Data_Exfiltration.md) |
+|         [Data Leak](../../../UseCases/uc_data_leak.md)         |  dlp-alert<br> ↳[rsa-dlp-alert](Ps/pC_rsadlpalert.md)<br> ↳[rsa-dlp-email-alert](Ps/pC_rsadlpemailalert.md)<br> | T1020 - Automated Exfiltration<br>T1071 - Application Layer Protocol<br>TA0010 - TA0010<br> | [<ul><li>27 Rules</li></ul>](RM/r_m_rsa_rsa_dlp_Data_Leak.md)         |
+|    [Malware](../../../UseCases/uc_malware.md)    |  dlp-alert<br> ↳[rsa-dlp-alert](Ps/pC_rsadlpalert.md)<br> ↳[rsa-dlp-email-alert](Ps/pC_rsadlpemailalert.md)<br> | TA0002 - TA0002<br>    | [<ul><li>4 Rules</li></ul>](RM/r_m_rsa_rsa_dlp_Malware.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

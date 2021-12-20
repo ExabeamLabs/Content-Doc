@@ -4,13 +4,12 @@ Product: Vanderbilt
 -------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  12   |   4    |     1      |      1      |    1    |
+|   6   |   0    |     1      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  physical-access<br> ↳[cef-vanderbilt-badge-access](Ps/pC_cefvanderbiltbadgeaccess.md)<br> ↳[cef-vanderbilt-badge-access](Ps/pC_cefvanderbiltbadgeaccess.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>5 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_vanderbilt_vanderbilt_Abnormal_Authentication_&_Access.md) |
-|    [Physical Security](../../../UseCases/uc_physical_security.md)    |  physical-access<br> ↳[cef-vanderbilt-badge-access](Ps/pC_cefvanderbiltbadgeaccess.md)<br> ↳[cef-vanderbilt-badge-access](Ps/pC_cefvanderbiltbadgeaccess.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>7 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_vanderbilt_vanderbilt_Physical_Security.md)    |
-|    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  physical-access<br> ↳[cef-vanderbilt-badge-access](Ps/pC_cefvanderbiltbadgeaccess.md)<br> ↳[cef-vanderbilt-badge-access](Ps/pC_cefvanderbiltbadgeaccess.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_vanderbilt_vanderbilt_Privileged_Activity.md)    |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  physical-access<br> ↳[cef-vanderbilt-badge-access](Ps/pC_cefvanderbiltbadgeaccess.md)<br> ↳[cef-vanderbilt-badge-access](Ps/pC_cefvanderbiltbadgeaccess.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>4 Rules</li></ul>](RM/r_m_vanderbilt_vanderbilt_Abnormal_Authentication_&_Access.md) |
+|    [Physical Security](../../../UseCases/uc_physical_security.md)    |  physical-access<br> ↳[cef-vanderbilt-badge-access](Ps/pC_cefvanderbiltbadgeaccess.md)<br> ↳[cef-vanderbilt-badge-access](Ps/pC_cefvanderbiltbadgeaccess.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>2 Rules</li></ul>](RM/r_m_vanderbilt_vanderbilt_Physical_Security.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

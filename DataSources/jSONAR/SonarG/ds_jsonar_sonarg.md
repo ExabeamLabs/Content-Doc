@@ -4,17 +4,17 @@ Product: SonarG
 ---------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  41   |   18   |     7      |      1      |    1    |
+|  43   |   0    |     7      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  local-logon<br> ↳[jsonar-database-login](Ps/pC_jsonardatabaselogin.md)<br> | T1078 - Valid Accounts<br>T1078.003 - Valid Accounts: Local Accounts<br>    | [<ul><li>24 Rules</li></ul><ul><li>10 Models</li></ul>](RM/r_m_jsonar_sonarg_Abnormal_Authentication_&_Access.md) |
-|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  local-logon<br> ↳[jsonar-database-login](Ps/pC_jsonardatabaselogin.md)<br> | T1078 - Valid Accounts<br>T1078.002 - T1078.002<br>T1078.003 - Valid Accounts: Local Accounts<br>T1550.003 - Use Alternate Authentication Material: Pass the Ticket<br>T1558 - Steal or Forge Kerberos Tickets<br> | [<ul><li>26 Rules</li></ul><ul><li>11 Models</li></ul>](RM/r_m_jsonar_sonarg_Compromised_Credentials.md)          |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  local-logon<br> ↳[jsonar-database-login](Ps/pC_jsonardatabaselogin.md)<br> | T1078 - Valid Accounts<br>T1078.003 - Valid Accounts: Local Accounts<br>    | [<ul><li>23 Rules</li></ul>](RM/r_m_jsonar_sonarg_Abnormal_Authentication_&_Access.md) |
+|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  local-logon<br> ↳[jsonar-database-login](Ps/pC_jsonardatabaselogin.md)<br> | T1078 - Valid Accounts<br>T1078.002 - T1078.002<br>T1078.003 - Valid Accounts: Local Accounts<br>T1550.003 - Use Alternate Authentication Material: Pass the Ticket<br>T1558 - Steal or Forge Kerberos Tickets<br> | [<ul><li>28 Rules</li></ul>](RM/r_m_jsonar_sonarg_Compromised_Credentials.md)          |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  local-logon<br> ↳[jsonar-database-login](Ps/pC_jsonardatabaselogin.md)<br> | T1550.003 - Use Alternate Authentication Material: Pass the Ticket<br>T1558 - Steal or Forge Kerberos Tickets<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_jsonar_sonarg_Lateral_Movement.md)    |
-|    [Malware](../../../UseCases/uc_malware.md)    |  local-logon<br> ↳[jsonar-database-login](Ps/pC_jsonardatabaselogin.md)<br> | T1550.003 - Use Alternate Authentication Material: Pass the Ticket<br>T1558 - Steal or Forge Kerberos Tickets<br>TA0002 - TA0002<br>    | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_jsonar_sonarg_Malware.md)    |
-|    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  local-logon<br> ↳[jsonar-database-login](Ps/pC_jsonardatabaselogin.md)<br> | T1078 - Valid Accounts<br>T1078.002 - T1078.002<br>    | [<ul><li>12 Rules</li></ul><ul><li>7 Models</li></ul>](RM/r_m_jsonar_sonarg_Privilege_Abuse.md)    |
-|    [Privilege Escalation](../../../UseCases/uc_privilege_escalation.md)    |  local-logon<br> ↳[jsonar-database-login](Ps/pC_jsonardatabaselogin.md)<br> | T1078 - Valid Accounts<br>T1555.005 - T1555.005<br>    | [<ul><li>2 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_jsonar_sonarg_Privilege_Escalation.md)    |
-|    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  local-logon<br> ↳[jsonar-database-login](Ps/pC_jsonardatabaselogin.md)<br> | T1078 - Valid Accounts<br>T1078.002 - T1078.002<br>    | [<ul><li>14 Rules</li></ul><ul><li>6 Models</li></ul>](RM/r_m_jsonar_sonarg_Privileged_Activity.md)    |
+|    [Malware](../../../UseCases/uc_malware.md)    |  local-logon<br> ↳[jsonar-database-login](Ps/pC_jsonardatabaselogin.md)<br> | T1550.003 - Use Alternate Authentication Material: Pass the Ticket<br>T1558 - Steal or Forge Kerberos Tickets<br>TA0002 - TA0002<br>    | [<ul><li>5 Rules</li></ul>](RM/r_m_jsonar_sonarg_Malware.md)    |
+|    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  local-logon<br> ↳[jsonar-database-login](Ps/pC_jsonardatabaselogin.md)<br> | T1078 - Valid Accounts<br>T1078.002 - T1078.002<br>    | [<ul><li>11 Rules</li></ul>](RM/r_m_jsonar_sonarg_Privilege_Abuse.md)    |
+|    [Privilege Escalation](../../../UseCases/uc_privilege_escalation.md)    |  local-logon<br> ↳[jsonar-database-login](Ps/pC_jsonardatabaselogin.md)<br> | T1078 - Valid Accounts<br>T1555.005 - T1555.005<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_jsonar_sonarg_Privilege_Escalation.md)    |
+|    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  local-logon<br> ↳[jsonar-database-login](Ps/pC_jsonardatabaselogin.md)<br> | T1078 - Valid Accounts<br>T1078.002 - T1078.002<br>    | [<ul><li>13 Rules</li></ul>](RM/r_m_jsonar_sonarg_Privileged_Activity.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

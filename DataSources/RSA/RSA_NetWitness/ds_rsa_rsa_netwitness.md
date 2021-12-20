@@ -4,13 +4,13 @@ Product: RSA NetWitness
 -----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  35   |   16   |     3      |      1      |    1    |
+|  27   |   0    |     3      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  member-added<br> ↳[cef-rsa-app-login-1](Ps/pC_cefrsaapplogin1.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_rsa_rsa_netwitness_Abnormal_Authentication_&_Access.md) |
-|    [Account Manipulation](../../../UseCases/uc_account_manipulation.md)    |  member-added<br> ↳[cef-rsa-app-login-1](Ps/pC_cefrsaapplogin1.md)<br> | T1098 - Account Manipulation<br>T1136 - Create Account<br> | [<ul><li>32 Rules</li></ul><ul><li>16 Models</li></ul>](RM/r_m_rsa_rsa_netwitness_Account_Manipulation.md)    |
-|    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  member-added<br> ↳[cef-rsa-app-login-1](Ps/pC_cefrsaapplogin1.md)<br> | T1098 - Account Manipulation<br>T1136 - Create Account<br> | [<ul><li>32 Rules</li></ul><ul><li>16 Models</li></ul>](RM/r_m_rsa_rsa_netwitness_Privilege_Abuse.md)    |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  member-added<br> ↳[cef-rsa-app-login-1](Ps/pC_cefrsaapplogin1.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>3 Rules</li></ul>](RM/r_m_rsa_rsa_netwitness_Abnormal_Authentication_&_Access.md) |
+|    [Account Manipulation](../../../UseCases/uc_account_manipulation.md)    |  member-added<br> ↳[cef-rsa-app-login-1](Ps/pC_cefrsaapplogin1.md)<br> | T1098 - Account Manipulation<br>T1136 - Create Account<br> | [<ul><li>24 Rules</li></ul>](RM/r_m_rsa_rsa_netwitness_Account_Manipulation.md)    |
+|    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  member-added<br> ↳[cef-rsa-app-login-1](Ps/pC_cefrsaapplogin1.md)<br> | T1098 - Account Manipulation<br>T1136 - Create Account<br> | [<ul><li>24 Rules</li></ul>](RM/r_m_rsa_rsa_netwitness_Privilege_Abuse.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
