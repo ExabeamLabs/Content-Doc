@@ -4,15 +4,15 @@ Product: FireEye Email Security (EX)
 ------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  39   |   18   |     2      |      1      |    1    |
+|  31   |   0    |     2      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-|    [Data Leak](../../../UseCases/uc_data_leak.md)    |  dlp-email-alert-out<br> ↳[cef-fireeye-ex-security-alert](Ps/pC_ceffireeyeexsecurityalert.md)<br> | T1048.003 - Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol<br> | [<ul><li>35 Rules</li></ul><ul><li>17 Models</li></ul>](RM/r_m_fireeye_fireeye_email_security_(ex)_Data_Leak.md)          |
-|    [Phishing](../../../UseCases/uc_phishing.md)    |  dlp-email-alert-out<br> ↳[cef-fireeye-ex-security-alert](Ps/pC_ceffireeyeexsecurityalert.md)<br> | T1048.003 - Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol<br> | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_fireeye_fireeye_email_security_(ex)_Phishing.md)    |
-|      [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)      |  dlp-email-alert-out<br> ↳[cef-fireeye-ex-security-alert](Ps/pC_ceffireeyeexsecurityalert.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_fireeye_fireeye_email_security_(ex)_Privilege_Abuse.md)    |
-|  [Privileged Activity](../../../UseCases/uc_privileged_activity.md)  |  dlp-email-alert-out<br> ↳[cef-fireeye-ex-security-alert](Ps/pC_ceffireeyeexsecurityalert.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_fireeye_fireeye_email_security_(ex)_Privileged_Activity.md)    |
-| [Workforce Protection](../../../UseCases/uc_workforce_protection.md) |  dlp-email-alert-out<br> ↳[cef-fireeye-ex-security-alert](Ps/pC_ceffireeyeexsecurityalert.md)<br> | T1048.003 - Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol<br> | [<ul><li>4 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_fireeye_fireeye_email_security_(ex)_Workforce_Protection.md) |
+|    [Data Leak](../../../UseCases/uc_data_leak.md)    |  dlp-email-alert-out<br> ↳[cef-fireeye-ex-security-alert](Ps/pC_ceffireeyeexsecurityalert.md)<br> | T1048.003 - Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol<br> | [<ul><li>27 Rules</li></ul>](RM/r_m_fireeye_fireeye_email_security_(ex)_Data_Leak.md)    |
+|    [Phishing](../../../UseCases/uc_phishing.md)    |  dlp-email-alert-out<br> ↳[cef-fireeye-ex-security-alert](Ps/pC_ceffireeyeexsecurityalert.md)<br> | T1048.003 - Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_fireeye_fireeye_email_security_(ex)_Phishing.md)    |
+|      [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)      |  dlp-email-alert-out<br> ↳[cef-fireeye-ex-security-alert](Ps/pC_ceffireeyeexsecurityalert.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_fireeye_fireeye_email_security_(ex)_Privilege_Abuse.md)      |
+|  [Privileged Activity](../../../UseCases/uc_privileged_activity.md)  |  dlp-email-alert-out<br> ↳[cef-fireeye-ex-security-alert](Ps/pC_ceffireeyeexsecurityalert.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_fireeye_fireeye_email_security_(ex)_Privileged_Activity.md)  |
+| [Workforce Protection](../../../UseCases/uc_workforce_protection.md) |  dlp-email-alert-out<br> ↳[cef-fireeye-ex-security-alert](Ps/pC_ceffireeyeexsecurityalert.md)<br> | T1048.003 - Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol<br> | [<ul><li>4 Rules</li></ul>](RM/r_m_fireeye_fireeye_email_security_(ex)_Workforce_Protection.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

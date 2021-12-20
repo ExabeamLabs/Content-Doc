@@ -4,21 +4,20 @@ Product: Xerox
 --------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  62   |   28   |     5      |      1      |    1    |
+|  56   |   0    |     5      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Application Access.Privileged Asset Activity](../../../UseCases/uc_abnormal_application_access.privileged_asset_activity.md) |  app-activity<br> ↳[xerox-print](Ps/pC_xeroxprint.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_xerox_xerox_Abnormal_Application_Access.Privileged_Asset_Activity.md) |
-|    [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md)    |  app-activity<br> ↳[xerox-print](Ps/pC_xeroxprint.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>14 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_xerox_xerox_Abnormal_Authentication_&_Access.md)    |
-|    [Account Manipulation](../../../UseCases/uc_account_manipulation.md)    |  app-activity<br> ↳[xerox-print](Ps/pC_xeroxprint.md)<br> | T1098.002 - Account Manipulation: Exchange Email Delegate Permissions<br>    | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_xerox_xerox_Account_Manipulation.md)    |
-|    [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)    |  app-activity<br> ↳[xerox-print](Ps/pC_xeroxprint.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>40 Rules</li></ul><ul><li>25 Models</li></ul>](RM/r_m_xerox_xerox_Compromised_Credentials.md)    |
-|    [Data Access](../../../UseCases/uc_data_access.md)    |  app-activity<br> ↳[xerox-print](Ps/pC_xeroxprint.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>21 Rules</li></ul><ul><li>13 Models</li></ul>](RM/r_m_xerox_xerox_Data_Access.md)    |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-activity<br> ↳[xerox-print](Ps/pC_xeroxprint.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>13 Rules</li></ul>](RM/r_m_xerox_xerox_Abnormal_Authentication_&_Access.md) |
+|    [Account Manipulation](../../../UseCases/uc_account_manipulation.md)    |  app-activity<br> ↳[xerox-print](Ps/pC_xeroxprint.md)<br> | T1098.002 - Account Manipulation: Exchange Email Delegate Permissions<br>    | [<ul><li>3 Rules</li></ul>](RM/r_m_xerox_xerox_Account_Manipulation.md)    |
+|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  app-activity<br> ↳[xerox-print](Ps/pC_xeroxprint.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>35 Rules</li></ul>](RM/r_m_xerox_xerox_Compromised_Credentials.md)          |
+|    [Data Access](../../../UseCases/uc_data_access.md)    |  app-activity<br> ↳[xerox-print](Ps/pC_xeroxprint.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>19 Rules</li></ul>](RM/r_m_xerox_xerox_Data_Access.md)    |
 |    [Data Leak](../../../UseCases/uc_data_leak.md)    |  app-activity<br> ↳[xerox-print](Ps/pC_xeroxprint.md)<br> | T1114.003 - Email Collection: Email Forwarding Rule<br>    | [<ul><li>3 Rules</li></ul>](RM/r_m_xerox_xerox_Data_Leak.md)    |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  app-activity<br> ↳[xerox-print](Ps/pC_xeroxprint.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_xerox_xerox_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  app-activity<br> ↳[xerox-print](Ps/pC_xeroxprint.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_xerox_xerox_Malware.md)    |
-|    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  app-activity<br> ↳[xerox-print](Ps/pC_xeroxprint.md)<br> | T1078 - Valid Accounts<br>T1098.002 - Account Manipulation: Exchange Email Delegate Permissions<br> | [<ul><li>7 Rules</li></ul><ul><li>3 Models</li></ul>](RM/r_m_xerox_xerox_Privilege_Abuse.md)    |
-|    [Privilege Escalation](../../../UseCases/uc_privilege_escalation.md)    |  app-activity<br> ↳[xerox-print](Ps/pC_xeroxprint.md)<br> | T1098.002 - Account Manipulation: Exchange Email Delegate Permissions<br>    | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_xerox_xerox_Privilege_Escalation.md)    |
-|    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  app-activity<br> ↳[xerox-print](Ps/pC_xeroxprint.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_xerox_xerox_Privileged_Activity.md)    |
+|    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  app-activity<br> ↳[xerox-print](Ps/pC_xeroxprint.md)<br> | T1078 - Valid Accounts<br>T1098.002 - Account Manipulation: Exchange Email Delegate Permissions<br> | [<ul><li>6 Rules</li></ul>](RM/r_m_xerox_xerox_Privilege_Abuse.md)    |
+|    [Privilege Escalation](../../../UseCases/uc_privilege_escalation.md)    |  app-activity<br> ↳[xerox-print](Ps/pC_xeroxprint.md)<br> | T1098.002 - Account Manipulation: Exchange Email Delegate Permissions<br>    | [<ul><li>3 Rules</li></ul>](RM/r_m_xerox_xerox_Privilege_Escalation.md)    |
+|    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  app-activity<br> ↳[xerox-print](Ps/pC_xeroxprint.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_xerox_xerox_Privileged_Activity.md)    |
 |    [Ransomware](../../../UseCases/uc_ransomware.md)    |  app-activity<br> ↳[xerox-print](Ps/pC_xeroxprint.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_xerox_xerox_Ransomware.md)    |
 
 ATT&CK Matrix for Enterprise

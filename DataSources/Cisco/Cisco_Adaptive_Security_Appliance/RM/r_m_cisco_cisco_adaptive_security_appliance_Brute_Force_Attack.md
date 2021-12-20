@@ -5,8 +5,8 @@ Vendor: Cisco
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   1    |     1      |     10      |   10    |
+|   1   |   0    |     1      |     10      |   10    |
 
-| Event Type | Rules                                                                                                    | Models                                                                     |
-| ---------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| vpn-logout | <b>T1110 - Brute Force</b><br> ↳ <b>AUTH-F-COUNT</b>: Abnormal number of failed authentications for user |  • <b>AUTH-F-COUNT</b>: Count of failed authentication events in a session |
+| Event Type | Rules                                                                                                    | Models |
+| ---------- | -------------------------------------------------------------------------------------------------------- | ------ |
+| vpn-logout | <b>T1110 - Brute Force</b><br> ↳ <b>AUTH-F-COUNT</b>: Abnormal number of failed authentications for user |        |

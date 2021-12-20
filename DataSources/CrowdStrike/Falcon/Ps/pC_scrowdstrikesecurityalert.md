@@ -16,9 +16,9 @@ Name = s-crowdstrike-security-alert
     """"Severity":\s{0,100}({alert_severity}[^",]{1,2000})""",
     """"DetectId":\s{0,100}"({alert_id}[^"]{1,2000})""",
     """({additional_info_1}"DocumentsAccessed":\s{0,100}[^\]]{1,2000}\]).*?({additional_info_2}"ExecutablesWritten":\s{0,100}[^\]]{1,2000}\])""",
-    """"FileName":\s{0,100}"(|({process_name}[^"]{1,2000}))"""",
+    """"FileName":\s{0,100}"\s{0,100}({process_name}[^"]{1,2000}?)"""",
     """"FilePath":\s{0,100}"(|({file_path}[^"]{1,2000}))"""",
-    """"CommandLine"{1,20}:\s{0,100}"{1,20}\\{0,25}"{0,20}({command_line}[^\n]{1,2000}?)\\{0,25}\s{0,100}"{1,20
+    """"CommandLine"{1,20}:\s{0,100}"{1,20}\\{0,25}"{0,20}\s{0,100}({command_line}[^\n]{1,2000}?)\\{0,25}\s{0,100}"{1,20
 
 }
 ```
