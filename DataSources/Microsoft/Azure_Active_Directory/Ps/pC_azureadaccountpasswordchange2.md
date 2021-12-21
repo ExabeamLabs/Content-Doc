@@ -6,7 +6,7 @@ Name = azure-ad-account-password-change-2
   Conditions = [ """"Resource":"Microsoft.aadiam"""", """"OperationName":"Change user password"""",  """"TenantId":"""", """"Type":"AuditLogs""""]
   Fields = ${MSParserTemplates.azure-ad-activity-1.Fields} [
     """({event_name}Change user password)""",
-    """TargetResources":\[\{[^\}]{1,2000}?userPrincipalName":"({target_user}[^@"]{1,2000}@[^"]{1,2000})","ipAddress""""
+    """TargetResources":"\[\{[^\]]{1,2000}?userPrincipalName\\?":\\?"({target_user}[^@"]{1,2000}@[^"]{1,2000}?)\\?""""
   ]
 
 azure-ad-activity-1 = {
