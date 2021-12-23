@@ -19,7 +19,7 @@ Name = cisco-dns-response
     """DstPort:\s{0,100}({dest_port}\d{1,100})""",
     """AccessControlRuleAction:\s{0,100}({outcome}[^,]{1,2000})""",
     """Protocol:\s{0,100}({protocol}[^,]{1,2000})""",
-    """User:\s{0,100}(Unknown|No Authentication Required|({user}[^,\s]{1,2000}))""",
+    """User:\s{0,100}(Unknown|Not Found|No Authentication Required|({user}[^,]{1,2000})),""",
     """InitiatorBytes:\s{0,100}({bytes_out}\d{1,100})""",
     """ResponderBytes:\s{0,100}({bytes_in}\d{1,100})""",
     """ACPolicy:\s{0,100}({policy}[^,]{1,2000})""",
