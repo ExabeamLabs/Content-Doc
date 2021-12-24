@@ -7,7 +7,7 @@ Name = cef-skyformation-failed-login
   Lms = ArcSight
   DataType = "failed-app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ """|Skyformation|""", """|login-failed|""" ]
+  Conditions = [ """flexString1=Login Failed""", """destinationServiceName =Netskope""" ]
   Fields = [
     """\Wend=({time}\d{1,100})""",
     """"{1,20}created_at"{1,20}:"{1,20}({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",    

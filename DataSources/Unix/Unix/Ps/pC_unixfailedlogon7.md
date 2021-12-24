@@ -11,7 +11,8 @@ Name = unix-failed-logon-7
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """({host}[\w.\-]{1,2000})\s{1,100}sshd\[""",
-    """({event_name}Too many authentication failures for ({user}\S+))""",
+    """({event_name}Too many authentication failures) for ({user}\S+)""",
+    """({event_code}ssh)"""
   ]
 
 

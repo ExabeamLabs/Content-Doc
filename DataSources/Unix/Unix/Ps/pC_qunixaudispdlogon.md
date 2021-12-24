@@ -20,6 +20,7 @@ Name = q-unix-audispd-logon
     """\sexe="({auth_process}.+?)"\s{1,100}\w+=""",
     """\stype=({audispd_type}USER_\S+)\s{1,100}\w+=""",
     """\sres=({outcome}.+?)('\s{0,100}$|'?\s{1,100}\w+=)""",
+    """({event_code}ssh)"""
   ]
   DupFields=[ "host->dest_host" ]
 

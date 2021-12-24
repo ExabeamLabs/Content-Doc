@@ -2,8 +2,8 @@
 ```Java
 {
 Name = thycotic-app-activity
-  Vendor = Thycotic Secret Server
-  Product = Thycotic Secret Server
+  Vendor = Thycotic Software
+  Product = Secret Server
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "MMM dd yyyy HH:mm:ss"
