@@ -7,7 +7,7 @@ Name = cc-carbonblack-process-alert-1
   Lms = Splunk
   DataType = "process-alert"
   TimeFormat = "epoch_sec"
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """"watchLists"""", """"responseSeverity"""", """"deviceName"""" ]
+  Conditions = [ """"processPath":""", """"watchLists"""", """"responseSeverity"""", """"deviceName"""" ]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """"eventTime"{1,20}:\s{0,100}({time}\d{1,100})""",

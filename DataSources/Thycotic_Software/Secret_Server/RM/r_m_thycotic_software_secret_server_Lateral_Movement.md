@@ -1,6 +1,6 @@
-Vendor: Thycotic Secret Server
-==============================
-### Product: [Thycotic Secret Server](../ds_thycotic_secret_server_thycotic_secret_server.md)
+Vendor: Thycotic Software
+=========================
+### Product: [Secret Server](../ds_thycotic_software_secret_server.md)
 ### Use-Case: [Lateral Movement](../../../../UseCases/uc_lateral_movement.md)
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |

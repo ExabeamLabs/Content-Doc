@@ -1,6 +1,6 @@
-Vendor: Thycotic Secret Server
-==============================
-### Product: [Thycotic Secret Server](../ds_thycotic_secret_server_thycotic_secret_server.md)
+Vendor: Thycotic Software
+=========================
+### Product: [Secret Server](../ds_thycotic_software_secret_server.md)
 ### Use-Case: [Abnormal Authentication & Access](../../../../UseCases/uc_abnormal_authentication_&_access.md)
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |

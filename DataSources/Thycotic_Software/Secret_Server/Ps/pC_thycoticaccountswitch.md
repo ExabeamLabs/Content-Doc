@@ -2,8 +2,8 @@
 ```Java
 {
 Name = thycotic-account-switch
-  Vendor = Thycotic Secret Server
-  Product = Thycotic Secret Server
+  Vendor = Thycotic Software
+  Product = Secret Server
   Lms = Direct
   DataType = "account-switch"
   TimeFormat = "MMM dd yyyy HH:mm:ss"
