@@ -4,7 +4,7 @@
 Name = unix-process-created-1
   DataType = "process-created"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """"type":"SYSCALL"""", """success\=yes""", """CEF:""", """|Skyformation|SkyFormation""", """Cloud Apps Security|""", """|audit-event|""" ]
+  Conditions = [ """"type":"SYSCALL"""", """success\=yes""", """Cloud Apps Security|""", """|audit-event|""" ]
   Fields = ${UnixParserTemplates.unix-template.Fields}[
     """\spid\\?=({pid}[^\s]{1,2000})\s\w+""",
     """ppid\\?=({parent_process_id}[^\s]{1,2000})\s{1,100}\w+""",
