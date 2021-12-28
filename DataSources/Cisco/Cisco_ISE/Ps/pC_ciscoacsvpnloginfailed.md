@@ -25,7 +25,7 @@ Name = cisco-acs-vpn-login-failed
     """device-platform=({os}[^,\s]{1,2000})""",
     """device-platform-version=({os_version}[^,\s]{1,2000})""",
     """Group-Name =({realm}[^,\s]{1,2000})""",
-    """\s{0,100}ConfigVersionId=({badg_id}\d{1,100})""",
+    """\s{0,100}ConfigVersionId=({badge_id}\d{1,100})""",
     """({event_code}5400)""",
   ]
   DupFields = ["user->account"]
