@@ -4,12 +4,12 @@ Product: SecureNet
 ------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  46   |   0    |     3      |      2      |    2    |
+|  46   |   16   |     3      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  failed-app-login<br> ↳[ipsec-vpn-user](Ps/pC_ipsecvpnuser.md)<br><br> vpn-login<br> ↳[ipsec-vpn-user](Ps/pC_ipsecvpnuser.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>   | [<ul><li>14 Rules</li></ul>](RM/r_m_securenet_securenet_Abnormal_Authentication_&_Access.md) |
-|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  failed-app-login<br> ↳[ipsec-vpn-user](Ps/pC_ipsecvpnuser.md)<br><br> vpn-login<br> ↳[ipsec-vpn-user](Ps/pC_ipsecvpnuser.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>   | [<ul><li>30 Rules</li></ul>](RM/r_m_securenet_securenet_Compromised_Credentials.md)          |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  failed-app-login<br> ↳[ipsec-vpn-user](Ps/pC_ipsecvpnuser.md)<br><br> vpn-login<br> ↳[ipsec-vpn-user](Ps/pC_ipsecvpnuser.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>   | [<ul><li>14 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_securenet_securenet_Abnormal_Authentication_&_Access.md) |
+|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  failed-app-login<br> ↳[ipsec-vpn-user](Ps/pC_ipsecvpnuser.md)<br><br> vpn-login<br> ↳[ipsec-vpn-user](Ps/pC_ipsecvpnuser.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>   | [<ul><li>30 Rules</li></ul><ul><li>15 Models</li></ul>](RM/r_m_securenet_securenet_Compromised_Credentials.md)         |
 |    [Data Access](../../../UseCases/uc_data_access.md)    |  failed-app-login<br> ↳[ipsec-vpn-user](Ps/pC_ipsecvpnuser.md)<br><br> vpn-login<br> ↳[ipsec-vpn-user](Ps/pC_ipsecvpnuser.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_securenet_securenet_Data_Access.md)    |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  failed-app-login<br> ↳[ipsec-vpn-user](Ps/pC_ipsecvpnuser.md)<br><br> vpn-login<br> ↳[ipsec-vpn-user](Ps/pC_ipsecvpnuser.md)<br> | T1078 - Valid Accounts<br>T1090.003 - Proxy: Multi-hop Proxy<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_securenet_securenet_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  failed-app-login<br> ↳[ipsec-vpn-user](Ps/pC_ipsecvpnuser.md)<br><br> vpn-login<br> ↳[ipsec-vpn-user](Ps/pC_ipsecvpnuser.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_securenet_securenet_Malware.md)    |

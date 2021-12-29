@@ -4,13 +4,13 @@ Product: BeyondTrust
 --------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   4   |   0    |     2      |      2      |    2    |
+|   4   |   2    |     2      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-|    [Data Leak](../../../UseCases/uc_data_leak.md)    |  dlp-email-alert-out-failed<br> ↳[beyondtrust-privileged-access-1](Ps/pC_beyondtrustprivilegedaccess1.md)<br><br> failed-physical-access<br> ↳[s-liebsoft-account-switch](Ps/pC_sliebsoftaccountswitch.md)<br> ↳[syslog-liebsoft-account-switch-1](Ps/pC_syslogliebsoftaccountswitch1.md)<br> | T1048.003 - Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol<br> | [<ul><li>3 Rules</li></ul>](RM/r_m_beyondtrust_beyondtrust_Data_Leak.md)    |
-|     [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)     |  dlp-email-alert-out-failed<br> ↳[beyondtrust-privileged-access-1](Ps/pC_beyondtrustprivilegedaccess1.md)<br><br> failed-physical-access<br> ↳[s-liebsoft-account-switch](Ps/pC_sliebsoftaccountswitch.md)<br> ↳[syslog-liebsoft-account-switch-1](Ps/pC_syslogliebsoftaccountswitch1.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_beyondtrust_beyondtrust_Privilege_Abuse.md)     |
-| [Privileged Activity](../../../UseCases/uc_privileged_activity.md) |  dlp-email-alert-out-failed<br> ↳[beyondtrust-privileged-access-1](Ps/pC_beyondtrustprivilegedaccess1.md)<br><br> failed-physical-access<br> ↳[s-liebsoft-account-switch](Ps/pC_sliebsoftaccountswitch.md)<br> ↳[syslog-liebsoft-account-switch-1](Ps/pC_syslogliebsoftaccountswitch1.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_beyondtrust_beyondtrust_Privileged_Activity.md) |
+|    [Data Leak](../../../UseCases/uc_data_leak.md)    |  dlp-email-alert-out-failed<br> ↳[beyondtrust-privileged-access-1](Ps/pC_beyondtrustprivilegedaccess1.md)<br><br> failed-physical-access<br> ↳[s-liebsoft-account-switch](Ps/pC_sliebsoftaccountswitch.md)<br> ↳[syslog-liebsoft-account-switch-1](Ps/pC_syslogliebsoftaccountswitch1.md)<br> | T1048.003 - Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol<br> | [<ul><li>3 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_beyondtrust_beyondtrust_Data_Leak.md) |
+|     [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)     |  dlp-email-alert-out-failed<br> ↳[beyondtrust-privileged-access-1](Ps/pC_beyondtrustprivilegedaccess1.md)<br><br> failed-physical-access<br> ↳[s-liebsoft-account-switch](Ps/pC_sliebsoftaccountswitch.md)<br> ↳[syslog-liebsoft-account-switch-1](Ps/pC_syslogliebsoftaccountswitch1.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_beyondtrust_beyondtrust_Privilege_Abuse.md)    |
+| [Privileged Activity](../../../UseCases/uc_privileged_activity.md) |  dlp-email-alert-out-failed<br> ↳[beyondtrust-privileged-access-1](Ps/pC_beyondtrustprivilegedaccess1.md)<br><br> failed-physical-access<br> ↳[s-liebsoft-account-switch](Ps/pC_sliebsoftaccountswitch.md)<br> ↳[syslog-liebsoft-account-switch-1](Ps/pC_syslogliebsoftaccountswitch1.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_beyondtrust_beyondtrust_Privileged_Activity.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

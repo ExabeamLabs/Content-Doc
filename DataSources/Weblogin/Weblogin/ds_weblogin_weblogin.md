@@ -4,14 +4,14 @@ Product: Weblogin
 -----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  24   |   0    |     4      |      1      |    1    |
+|  24   |   10   |     4      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  security-alert<br> ↳[weblogin-app-activity-1](Ps/pC_webloginappactivity1.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>T1078 - Valid Accounts<br> | [<ul><li>18 Rules</li></ul>](RM/r_m_weblogin_weblogin_Compromised_Credentials.md) |
-|        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  security-alert<br> ↳[weblogin-app-activity-1](Ps/pC_webloginappactivity1.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_weblogin_weblogin_Lateral_Movement.md)         |
-|    [Malware](../../../UseCases/uc_malware.md)    |  security-alert<br> ↳[weblogin-app-activity-1](Ps/pC_webloginappactivity1.md)<br> | TA0002 - TA0002<br>    | [<ul><li>4 Rules</li></ul>](RM/r_m_weblogin_weblogin_Malware.md)    |
-|     [Privileged Activity](../../../UseCases/uc_privileged_activity.md)     |  security-alert<br> ↳[weblogin-app-activity-1](Ps/pC_webloginappactivity1.md)<br> | T1068 - Exploitation for Privilege Escalation<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_weblogin_weblogin_Privileged_Activity.md)      |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  security-alert<br> ↳[weblogin-app-activity-1](Ps/pC_webloginappactivity1.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>T1078 - Valid Accounts<br> | [<ul><li>18 Rules</li></ul><ul><li>8 Models</li></ul>](RM/r_m_weblogin_weblogin_Compromised_Credentials.md) |
+|        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  security-alert<br> ↳[weblogin-app-activity-1](Ps/pC_webloginappactivity1.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_weblogin_weblogin_Lateral_Movement.md)    |
+|    [Malware](../../../UseCases/uc_malware.md)    |  security-alert<br> ↳[weblogin-app-activity-1](Ps/pC_webloginappactivity1.md)<br> | TA0002 - TA0002<br>    | [<ul><li>4 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_weblogin_weblogin_Malware.md)    |
+|     [Privileged Activity](../../../UseCases/uc_privileged_activity.md)     |  security-alert<br> ↳[weblogin-app-activity-1](Ps/pC_webloginappactivity1.md)<br> | T1068 - Exploitation for Privilege Escalation<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_weblogin_weblogin_Privileged_Activity.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

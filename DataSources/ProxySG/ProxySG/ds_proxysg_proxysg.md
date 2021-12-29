@@ -4,12 +4,12 @@ Product: ProxySG
 ----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   7   |   0    |     3      |      1      |    1    |
+|   7   |   3    |     3      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  failed-app-login<br> ↳[proxysg-auth-failed-1](Ps/pC_proxysgauthfailed1.md)<br> ↳[proxysg-auth-failed-2](Ps/pC_proxysgauthfailed2.md)<br> | T1133 - External Remote Services<br>    | [<ul><li>3 Rules</li></ul>](RM/r_m_proxysg_proxysg_Abnormal_Authentication_&_Access.md) |
-|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  failed-app-login<br> ↳[proxysg-auth-failed-1](Ps/pC_proxysgauthfailed1.md)<br> ↳[proxysg-auth-failed-2](Ps/pC_proxysgauthfailed2.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_proxysg_proxysg_Compromised_Credentials.md)          |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  failed-app-login<br> ↳[proxysg-auth-failed-1](Ps/pC_proxysgauthfailed1.md)<br> ↳[proxysg-auth-failed-2](Ps/pC_proxysgauthfailed2.md)<br> | T1133 - External Remote Services<br>    | [<ul><li>3 Rules</li></ul><ul><li>3 Models</li></ul>](RM/r_m_proxysg_proxysg_Abnormal_Authentication_&_Access.md) |
+|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  failed-app-login<br> ↳[proxysg-auth-failed-1](Ps/pC_proxysgauthfailed1.md)<br> ↳[proxysg-auth-failed-2](Ps/pC_proxysgauthfailed2.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_proxysg_proxysg_Compromised_Credentials.md)    |
 |    [Data Access](../../../UseCases/uc_data_access.md)    |  failed-app-login<br> ↳[proxysg-auth-failed-1](Ps/pC_proxysgauthfailed1.md)<br> ↳[proxysg-auth-failed-2](Ps/pC_proxysgauthfailed2.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_proxysg_proxysg_Data_Access.md)    |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  failed-app-login<br> ↳[proxysg-auth-failed-1](Ps/pC_proxysgauthfailed1.md)<br> ↳[proxysg-auth-failed-2](Ps/pC_proxysgauthfailed2.md)<br> | T1078 - Valid Accounts<br>T1090.003 - Proxy: Multi-hop Proxy<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_proxysg_proxysg_Lateral_Movement.md)    |
 |    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  failed-app-login<br> ↳[proxysg-auth-failed-1](Ps/pC_proxysgauthfailed1.md)<br> ↳[proxysg-auth-failed-2](Ps/pC_proxysgauthfailed2.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_proxysg_proxysg_Privilege_Abuse.md)    |

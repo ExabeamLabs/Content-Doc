@@ -5,8 +5,8 @@ Vendor: Trend Micro
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     1      |      3      |    3    |
+|   1   |   1    |     1      |      3      |    3    |
 
-| Event Type               | Rules                                                                            | Models |
-| ------------------------ | -------------------------------------------------------------------------------- | ------ |
-| privileged-object-access | <b>T1078 - Valid Accounts</b><br> ↳ <b>AE-UA-F</b>: First activity type for user |        |
+| Event Type               | Rules                                                                            | Models                                  |
+| ------------------------ | -------------------------------------------------------------------------------- | --------------------------------------- |
+| privileged-object-access | <b>T1078 - Valid Accounts</b><br> ↳ <b>AE-UA-F</b>: First activity type for user |  • <b>AE-UA</b>: All activity for users |

@@ -4,11 +4,11 @@ Product: Honeywell WIN-PAK
 --------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   6   |   0    |     1      |      1      |    1    |
+|   6   |   1    |     1      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  physical-access<br> ↳[q-winpak-badge-access](Ps/pC_qwinpakbadgeaccess.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>4 Rules</li></ul>](RM/r_m_honeywell_honeywell_win-pak_Abnormal_Authentication_&_Access.md) |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  physical-access<br> ↳[q-winpak-badge-access](Ps/pC_qwinpakbadgeaccess.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>4 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_honeywell_honeywell_win-pak_Abnormal_Authentication_&_Access.md) |
 |    [Physical Security](../../../UseCases/uc_physical_security.md)    |  physical-access<br> ↳[q-winpak-badge-access](Ps/pC_qwinpakbadgeaccess.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>2 Rules</li></ul>](RM/r_m_honeywell_honeywell_win-pak_Physical_Security.md)    |
 
 ATT&CK Matrix for Enterprise

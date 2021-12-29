@@ -4,11 +4,11 @@ Product: Awake Security
 -----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   3   |   0    |     2      |      1      |    1    |
+|   3   |   1    |     2      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  account-password-reset<br> ↳[arista-networks-awake-security-alert](Ps/pC_aristanetworksawakesecurityalert.md)<br> | T1078 - Valid Accounts<br>       | [<ul><li>2 Rules</li></ul>](RM/r_m_arista_networks_awake_security_Abnormal_Authentication_&_Access.md) |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  account-password-reset<br> ↳[arista-networks-awake-security-alert](Ps/pC_aristanetworksawakesecurityalert.md)<br> | T1078 - Valid Accounts<br>       | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_arista_networks_awake_security_Abnormal_Authentication_&_Access.md) |
 |    [Account Manipulation](../../../UseCases/uc_account_manipulation.md)    |  account-password-reset<br> ↳[arista-networks-awake-security-alert](Ps/pC_aristanetworksawakesecurityalert.md)<br> | T1098 - Account Manipulation<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_arista_networks_awake_security_Account_Manipulation.md)    |
 |    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  account-password-reset<br> ↳[arista-networks-awake-security-alert](Ps/pC_aristanetworksawakesecurityalert.md)<br> | T1098 - Account Manipulation<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_arista_networks_awake_security_Privilege_Abuse.md)    |
 

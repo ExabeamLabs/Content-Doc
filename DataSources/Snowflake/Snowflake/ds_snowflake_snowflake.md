@@ -4,11 +4,11 @@ Product: Snowflake
 ------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   5   |   0    |     3      |      2      |    2    |
+|   5   |   3    |     3      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  authentication-failed<br> ↳[s-snowflake-db-query-1](Ps/pC_ssnowflakedbquery1.md)<br> ↳[cef-snowflake-db-query](Ps/pC_cefsnowflakedbquery.md)<br><br> database-query<br> ↳[s-snowflake-db-login-1](Ps/pC_ssnowflakedblogin1.md)<br> ↳[cef-snowflake-db-login](Ps/pC_cefsnowflakedblogin.md)<br> ↳[cef-snowflake-db-login-1](Ps/pC_cefsnowflakedblogin1.md)<br> | T1133 - External Remote Services<br>    | [<ul><li>3 Rules</li></ul>](RM/r_m_snowflake_snowflake_Abnormal_Authentication_&_Access.md) |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  authentication-failed<br> ↳[s-snowflake-db-query-1](Ps/pC_ssnowflakedbquery1.md)<br> ↳[cef-snowflake-db-query](Ps/pC_cefsnowflakedbquery.md)<br><br> database-query<br> ↳[s-snowflake-db-login-1](Ps/pC_ssnowflakedblogin1.md)<br> ↳[cef-snowflake-db-login](Ps/pC_cefsnowflakedblogin.md)<br> ↳[cef-snowflake-db-login-1](Ps/pC_cefsnowflakedblogin1.md)<br> | T1133 - External Remote Services<br>    | [<ul><li>3 Rules</li></ul><ul><li>3 Models</li></ul>](RM/r_m_snowflake_snowflake_Abnormal_Authentication_&_Access.md) |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  authentication-failed<br> ↳[s-snowflake-db-query-1](Ps/pC_ssnowflakedbquery1.md)<br> ↳[cef-snowflake-db-query](Ps/pC_cefsnowflakedbquery.md)<br><br> database-query<br> ↳[s-snowflake-db-login-1](Ps/pC_ssnowflakedblogin1.md)<br> ↳[cef-snowflake-db-login](Ps/pC_cefsnowflakedblogin.md)<br> ↳[cef-snowflake-db-login-1](Ps/pC_cefsnowflakedblogin1.md)<br> | T1078 - Valid Accounts<br>T1090.003 - Proxy: Multi-hop Proxy<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_snowflake_snowflake_Lateral_Movement.md)    |
 |    [Ransomware](../../../UseCases/uc_ransomware.md)    |  authentication-failed<br> ↳[s-snowflake-db-query-1](Ps/pC_ssnowflakedbquery1.md)<br> ↳[cef-snowflake-db-query](Ps/pC_cefsnowflakedbquery.md)<br><br> database-query<br> ↳[s-snowflake-db-login-1](Ps/pC_ssnowflakedblogin1.md)<br> ↳[cef-snowflake-db-login](Ps/pC_cefsnowflakedblogin.md)<br> ↳[cef-snowflake-db-login-1](Ps/pC_cefsnowflakedblogin1.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_snowflake_snowflake_Ransomware.md)    |
 
