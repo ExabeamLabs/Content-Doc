@@ -4,12 +4,12 @@ Product: Avaya VPN
 ------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  43   |   0    |     5      |      2      |    2    |
+|  43   |   16   |     5      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  dns-query<br> ↳[s-avaya-vpn-login](Ps/pC_savayavpnlogin.md)<br><br> vpn-login<br> ↳[s-avaya-failed-vpn-login](Ps/pC_savayafailedvpnlogin.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>11 Rules</li></ul>](RM/r_m_avaya_avaya_vpn_Abnormal_Authentication_&_Access.md) |
-|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  dns-query<br> ↳[s-avaya-vpn-login](Ps/pC_savayavpnlogin.md)<br><br> vpn-login<br> ↳[s-avaya-failed-vpn-login](Ps/pC_savayafailedvpnlogin.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>29 Rules</li></ul>](RM/r_m_avaya_avaya_vpn_Compromised_Credentials.md)          |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  dns-query<br> ↳[s-avaya-vpn-login](Ps/pC_savayavpnlogin.md)<br><br> vpn-login<br> ↳[s-avaya-failed-vpn-login](Ps/pC_savayafailedvpnlogin.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>11 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_avaya_avaya_vpn_Abnormal_Authentication_&_Access.md) |
+|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  dns-query<br> ↳[s-avaya-vpn-login](Ps/pC_savayavpnlogin.md)<br><br> vpn-login<br> ↳[s-avaya-failed-vpn-login](Ps/pC_savayafailedvpnlogin.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>29 Rules</li></ul><ul><li>15 Models</li></ul>](RM/r_m_avaya_avaya_vpn_Compromised_Credentials.md)         |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  dns-query<br> ↳[s-avaya-vpn-login](Ps/pC_savayavpnlogin.md)<br><br> vpn-login<br> ↳[s-avaya-failed-vpn-login](Ps/pC_savayafailedvpnlogin.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_avaya_avaya_vpn_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  dns-query<br> ↳[s-avaya-vpn-login](Ps/pC_savayavpnlogin.md)<br><br> vpn-login<br> ↳[s-avaya-failed-vpn-login](Ps/pC_savayafailedvpnlogin.md)<br> | T1071 - Application Layer Protocol<br>T1078 - Valid Accounts<br>T1568.002 - Dynamic Resolution: Domain Generation Algorithms<br> | [<ul><li>3 Rules</li></ul>](RM/r_m_avaya_avaya_vpn_Malware.md)    |
 |    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  dns-query<br> ↳[s-avaya-vpn-login](Ps/pC_savayavpnlogin.md)<br><br> vpn-login<br> ↳[s-avaya-failed-vpn-login](Ps/pC_savayafailedvpnlogin.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>3 Rules</li></ul>](RM/r_m_avaya_avaya_vpn_Privilege_Abuse.md)    |

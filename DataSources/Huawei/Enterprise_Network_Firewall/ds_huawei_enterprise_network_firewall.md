@@ -4,12 +4,12 @@ Product: Enterprise Network Firewall
 ------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  13   |   0    |     5      |      2      |    2    |
+|  13   |   10   |     5      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-|     [Cryptomining](../../../UseCases/uc_cryptomining.md)     |  database-query<br> ↳[huawei-firewall](Ps/pC_huaweifirewall.md)<br><br> network-connection-successful<br> ↳[huawei-firewall](Ps/pC_huaweifirewall.md)<br> | T1496 - Resource Hijacking<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_huawei_enterprise_network_firewall_Cryptomining.md)      |
-| [Lateral Movement](../../../UseCases/uc_lateral_movement.md) |  database-query<br> ↳[huawei-firewall](Ps/pC_huaweifirewall.md)<br><br> network-connection-successful<br> ↳[huawei-firewall](Ps/pC_huaweifirewall.md)<br> | T1071 - Application Layer Protocol<br>T1190 - Exploit Public Fasing Application<br>TA0010 - TA0010<br>TA0011 - TA0011<br> | [<ul><li>12 Rules</li></ul>](RM/r_m_huawei_enterprise_network_firewall_Lateral_Movement.md) |
+|     [Cryptomining](../../../UseCases/uc_cryptomining.md)     |  database-query<br> ↳[huawei-firewall](Ps/pC_huaweifirewall.md)<br><br> network-connection-successful<br> ↳[huawei-firewall](Ps/pC_huaweifirewall.md)<br> | T1496 - Resource Hijacking<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_huawei_enterprise_network_firewall_Cryptomining.md)    |
+| [Lateral Movement](../../../UseCases/uc_lateral_movement.md) |  database-query<br> ↳[huawei-firewall](Ps/pC_huaweifirewall.md)<br><br> network-connection-successful<br> ↳[huawei-firewall](Ps/pC_huaweifirewall.md)<br> | T1071 - Application Layer Protocol<br>T1190 - Exploit Public Fasing Application<br>TA0010 - TA0010<br>TA0011 - TA0011<br> | [<ul><li>12 Rules</li></ul><ul><li>10 Models</li></ul>](RM/r_m_huawei_enterprise_network_firewall_Lateral_Movement.md) |
 |          [Malware](../../../UseCases/uc_malware.md)          |  database-query<br> ↳[huawei-firewall](Ps/pC_huaweifirewall.md)<br><br> network-connection-successful<br> ↳[huawei-firewall](Ps/pC_huaweifirewall.md)<br> | TA0011 - TA0011<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_huawei_enterprise_network_firewall_Malware.md)    |
 
 ATT&CK Matrix for Enterprise

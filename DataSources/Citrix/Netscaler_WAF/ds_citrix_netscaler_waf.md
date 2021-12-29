@@ -4,7 +4,7 @@ Product: Netscaler WAF
 ----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  18   |   0    |     7      |      2      |    2    |
+|  18   |   12   |     7      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

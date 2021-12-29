@@ -4,12 +4,12 @@ Product: OneSpan
 ----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  16   |   0    |     3      |      1      |    1    |
+|  16   |   5    |     3      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  authentication-successful<br> ↳[onespan-failed-logon](Ps/pC_onespanfailedlogon.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>10 Rules</li></ul>](RM/r_m_onespan_onespan_Abnormal_Authentication_&_Access.md) |
-|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  authentication-successful<br> ↳[onespan-failed-logon](Ps/pC_onespanfailedlogon.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>5 Rules</li></ul>](RM/r_m_onespan_onespan_Compromised_Credentials.md)    |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  authentication-successful<br> ↳[onespan-failed-logon](Ps/pC_onespanfailedlogon.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>10 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_onespan_onespan_Abnormal_Authentication_&_Access.md) |
+|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  authentication-successful<br> ↳[onespan-failed-logon](Ps/pC_onespanfailedlogon.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>5 Rules</li></ul><ul><li>3 Models</li></ul>](RM/r_m_onespan_onespan_Compromised_Credentials.md)    |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  authentication-successful<br> ↳[onespan-failed-logon](Ps/pC_onespanfailedlogon.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_onespan_onespan_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  authentication-successful<br> ↳[onespan-failed-logon](Ps/pC_onespanfailedlogon.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_onespan_onespan_Malware.md)    |
 |    [Ransomware](../../../UseCases/uc_ransomware.md)    |  authentication-successful<br> ↳[onespan-failed-logon](Ps/pC_onespanfailedlogon.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_onespan_onespan_Ransomware.md)    |
