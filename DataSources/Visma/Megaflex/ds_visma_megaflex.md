@@ -4,15 +4,15 @@ Product: Megaflex
 -----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   9   |   1    |     2      |      2      |    2    |
+|  16   |   5    |     2      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-activity-failed<br> ↳[visma-physical-access](Ps/pC_vismaphysicalaccess.md)<br><br> physical-access<br> ↳[visma-physical-access](Ps/pC_vismaphysicalaccess.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>4 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_visma_megaflex_Abnormal_Authentication_&_Access.md) |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-activity-failed<br> ↳[visma-physical-access](Ps/pC_vismaphysicalaccess.md)<br><br> physical-access<br> ↳[visma-physical-access](Ps/pC_vismaphysicalaccess.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>5 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_visma_megaflex_Abnormal_Authentication_&_Access.md) |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  app-activity-failed<br> ↳[visma-physical-access](Ps/pC_vismaphysicalaccess.md)<br><br> physical-access<br> ↳[visma-physical-access](Ps/pC_vismaphysicalaccess.md)<br> | T1078 - Valid Accounts<br>T1090.003 - Proxy: Multi-hop Proxy<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_visma_megaflex_Lateral_Movement.md)    |
-|    [Physical Security](../../../UseCases/uc_physical_security.md)    |  app-activity-failed<br> ↳[visma-physical-access](Ps/pC_vismaphysicalaccess.md)<br><br> physical-access<br> ↳[visma-physical-access](Ps/pC_vismaphysicalaccess.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_visma_megaflex_Physical_Security.md)    |
+|    [Physical Security](../../../UseCases/uc_physical_security.md)    |  app-activity-failed<br> ↳[visma-physical-access](Ps/pC_vismaphysicalaccess.md)<br><br> physical-access<br> ↳[visma-physical-access](Ps/pC_vismaphysicalaccess.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>8 Rules</li></ul><ul><li>3 Models</li></ul>](RM/r_m_visma_megaflex_Physical_Security.md)    |
 |    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  app-activity-failed<br> ↳[visma-physical-access](Ps/pC_vismaphysicalaccess.md)<br><br> physical-access<br> ↳[visma-physical-access](Ps/pC_vismaphysicalaccess.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_visma_megaflex_Privilege_Abuse.md)    |
-|    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  app-activity-failed<br> ↳[visma-physical-access](Ps/pC_vismaphysicalaccess.md)<br><br> physical-access<br> ↳[visma-physical-access](Ps/pC_vismaphysicalaccess.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_visma_megaflex_Privileged_Activity.md)    |
+|    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  app-activity-failed<br> ↳[visma-physical-access](Ps/pC_vismaphysicalaccess.md)<br><br> physical-access<br> ↳[visma-physical-access](Ps/pC_vismaphysicalaccess.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_visma_megaflex_Privileged_Activity.md)    |
 |    [Ransomware](../../../UseCases/uc_ransomware.md)    |  app-activity-failed<br> ↳[visma-physical-access](Ps/pC_vismaphysicalaccess.md)<br><br> physical-access<br> ↳[visma-physical-access](Ps/pC_vismaphysicalaccess.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_visma_megaflex_Ransomware.md)    |
 
 ATT&CK Matrix for Enterprise
