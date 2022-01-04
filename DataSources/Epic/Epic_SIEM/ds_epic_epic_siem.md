@@ -4,7 +4,7 @@ Product: Epic SIEM
 ------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  63   |   24   |     6      |      5      |    5    |
+|  66   |   26   |     6      |      5      |    5    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

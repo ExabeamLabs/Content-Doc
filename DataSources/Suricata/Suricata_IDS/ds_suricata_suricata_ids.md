@@ -4,12 +4,12 @@ Product: Suricata IDS
 ---------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  35   |   15   |     3      |      1      |    1    |
+|  39   |   17   |     3      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-login<br> ↳[suricata-network-alert](Ps/pC_suricatanetworkalert.md)<br> ↳[suricata-network-alert-2](Ps/pC_suricatanetworkalert2.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>13 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_suricata_suricata_ids_Abnormal_Authentication_&_Access.md) |
-|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  app-login<br> ↳[suricata-network-alert](Ps/pC_suricatanetworkalert.md)<br> ↳[suricata-network-alert-2](Ps/pC_suricatanetworkalert2.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>20 Rules</li></ul><ul><li>13 Models</li></ul>](RM/r_m_suricata_suricata_ids_Compromised_Credentials.md)         |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-login<br> ↳[suricata-network-alert](Ps/pC_suricatanetworkalert.md)<br> ↳[suricata-network-alert-2](Ps/pC_suricatanetworkalert2.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>14 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_suricata_suricata_ids_Abnormal_Authentication_&_Access.md) |
+|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  app-login<br> ↳[suricata-network-alert](Ps/pC_suricatanetworkalert.md)<br> ↳[suricata-network-alert-2](Ps/pC_suricatanetworkalert2.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>24 Rules</li></ul><ul><li>16 Models</li></ul>](RM/r_m_suricata_suricata_ids_Compromised_Credentials.md)         |
 |    [Data Access](../../../UseCases/uc_data_access.md)    |  app-login<br> ↳[suricata-network-alert](Ps/pC_suricatanetworkalert.md)<br> ↳[suricata-network-alert-2](Ps/pC_suricatanetworkalert2.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>5 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_suricata_suricata_ids_Data_Access.md)    |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  app-login<br> ↳[suricata-network-alert](Ps/pC_suricatanetworkalert.md)<br> ↳[suricata-network-alert-2](Ps/pC_suricatanetworkalert2.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_suricata_suricata_ids_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  app-login<br> ↳[suricata-network-alert](Ps/pC_suricatanetworkalert.md)<br> ↳[suricata-network-alert-2](Ps/pC_suricatanetworkalert2.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_suricata_suricata_ids_Malware.md)    |

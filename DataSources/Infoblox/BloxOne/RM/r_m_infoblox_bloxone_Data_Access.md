@@ -7,6 +7,6 @@ Vendor: Infoblox
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   2   |   0    |     1      |      6      |    6    |
 
-| Event Type      | Rules                                                                                                                                                                                                            | Models |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| process-created | <b>T1003 - OS Credential Dumping</b><br> ↳ <b>A-CP-Sensitive-Files</b>: Copying sensitive files with credential data on this asset<br> ↳ <b>CP-Sensitive-Files</b>: Copying sensitive files with credential data |        |
+| Event Type      | Rules                                                                                                                                                                                      | Models |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
+| process-created | <b>T1003 - OS Credential Dumping</b><br> ↳ <b>A-CreateMiniDump-Hacktool</b>: CreateMiniDump Hacktool detected on this asset.<br> ↳ <b>CreateMiniDump-Hacktool</b>: CreateMiniDump Hacktool |        |
