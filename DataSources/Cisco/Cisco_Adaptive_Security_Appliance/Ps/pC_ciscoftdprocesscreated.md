@@ -10,6 +10,8 @@ Name = cisco-ftd-process-created
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ "-111008", "%FTD-" ]
   Fields = [
+    """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
+    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""", 
     """({time}\w+ \d{1,100} \d\d\d\d \d\d:\d\d:\d\d)\s{1,100}({host}[\w\-.]{1,2000})\s{0,100}:\s{0,100}%FTD""",
     """%FTD\-({priority}\d{1,100})\-({event_code}\d{1,100})""",
     """User\s{1,100}'({user}[^']{1,2000})'""",
