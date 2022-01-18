@@ -9,7 +9,7 @@ Name = googlecloud-cloudresourcemanager-activity
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """"protoPayload":""", """googleapis.com""", """"serviceName":"cloudresourcemanager""" ]
   Fields = [
-    """\w{3}\s\d\d\s\d\d:\d\d:\d\d\s(::ffff:)?({host}[\w\-.]{1,2000})\s\d{1,100}\s""",
+    """:\d\d:\d\d\s(::ffff:)?({host}[\w\-.]{1,2000})\s\d{1,100}\s""",
     """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """"callerIp":"({src_ip}[a-fA-F\d.:]{1,2000})"""",
     """:"({service}cloudresourcemanager.googleapis.com)""",
