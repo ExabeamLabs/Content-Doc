@@ -8,7 +8,7 @@ Name = box-skyformation-file-activity
   DataType = "file-operations"
   IsHVF = true
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """destinationServiceName =Box""", """"item_type":"""", """"item_name":"""" ]
+  Conditions = [ """|Skyformation|""", """destinationServiceName =Box""", """"item_type":"""", """"item_name":"""" ]
   Fields = [
     """"{1,20}created_at"{1,20}:"{1,20}({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d([\+\-]\d\d:\d\d)?)""",
     """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",

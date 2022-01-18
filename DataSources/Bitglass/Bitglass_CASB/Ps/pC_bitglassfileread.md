@@ -22,6 +22,7 @@ Name = bitglass-file-read
     """"activity":\s{0,100}"({accesses}[^"]{1,2000})",""",
     """"useragent":\s{0,100}"({user_agent}.+?)",""",
     """"url":\s{0,100}"({file_uri}.+?)",""",
+    """"useragent":\s{0,100}".+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)"""
   ]
 
 

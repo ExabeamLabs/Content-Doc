@@ -7,7 +7,7 @@ Name = cef-salesforce-app-activity-26
   Lms = ArcSight
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """destinationServiceName =Sales Cloud""", """|audit-event|""" ]
+  Conditions = [ """|Skyformation|SkyFormation Cloud Apps Security|""", """Sales Cloud""", """|audit-event|""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",  
     """CreatedDate\\=({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",

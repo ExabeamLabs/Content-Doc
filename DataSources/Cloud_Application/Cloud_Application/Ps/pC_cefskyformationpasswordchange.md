@@ -7,7 +7,7 @@ Name = cef-skyformation-password-change
   Lms = ArcSight
   DataType = "password-change"
   TimeFormat = "epoch"
-  Conditions = [ """ suser=""", """destinationServiceName =""", """"Action":"Password Changed"""" ]
+  Conditions = [ """|Skyformation|""", """"Action":"Password Changed"""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """\WdestinationServiceName =({app}.+?)(\s{1,100}\w+=|\s{0,100}$)""",

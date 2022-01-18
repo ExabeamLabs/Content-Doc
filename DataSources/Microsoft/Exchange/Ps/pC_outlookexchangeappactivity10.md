@@ -2,8 +2,6 @@
 ```Java
 {
 Name = outlook-exchange-app-activity-10
-  Vendor = Microsoft
-  Product = Exchange
   Conditions = [ """Office365""",""" COMMAND=SendOnBehalf ""","""USERKEY=""","""ORGANIZATIONNAME=""","""SENDONBEHALFOFUSER=""" ]
   Fields = ${MSParserTemplates.outlook-exchange-app-activity.Fields} [ 
     """SENDONBEHALFOFUSER=({target}[^=]{1,2000}?)(\s|$)"""

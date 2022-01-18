@@ -20,6 +20,7 @@ Name = juniper-web-activity-1
 	  """\Wroles="({role}[^"]{1,2000})""",
     """\WRequest:\s{0,100}({method}[^\s"]{1,2000})\s{1,100}({uri_path}\/[^",\s]{0,2000})""",
     """\WHost:\s{0,100}({web_domain}[^\s",:]{1,2000})""",
+    """\WHost:\s{0,100}[^\s",:]{0,2000}?({top_domain}(?!(?:\d{1,100}\.){3}\d{1,100})[^\.\s\/:]{1,2000}(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|tr))+(\s|\/|:|,|$))[^\s\/:",]{1,2000})""",
   ]
 
 

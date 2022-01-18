@@ -7,7 +7,6 @@ Name = crowdstrike-app-activity-9
     """"eventCreationTime":({time}\d{1,100})""",
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"eventCreationTime":\s{0,100}({time}\d{1,100})""",
-    """"UTCTimestamp":({time}\d{1,16})""",
     """"UserId":\s{0,100}"({user_email}[^"@]{1,2000}@[^"@]{1,2000})"""",
     """"UserId":\s{0,100}"({user}[^"@]{1,2000})"""",
     """"UserIp":\s{0,100}"({src_ip}[^"]{1,2000})""",

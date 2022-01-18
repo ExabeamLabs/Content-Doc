@@ -11,9 +11,9 @@ Name = falcon-dns-request
     Conditions = [ """"event_simpleName":""", """"DnsRequest"""", """"RequestType":""" ]
     Fields = [
       """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
-      """"hostname":"({host}[\w\-.]{1,2000})"""",
       """"timestamp":\s{0,100}"({time}\d{1,100})"""",
       """"DomainName":\s{0,100}"({query}[^\"]{1,2000})"""",
+      """"DomainName":\s{0,100}"({query}[^\"]{1,2000}\.({top_query}\w+\.(?i)(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za)))"""",
       """"LocalAddressIP6":\s{0,100}"({src_ip}[a-fA-F:\d.]{1,2000})""",
       """"RemoteAddressIP6":\s{0,100}"({dest_ip}[a-fA-F:\d.]{1,2000})""",
       """"LocalAddressIP4":\s{0,100}"({src_ip}[a-fA-F:\d.]{1,2000})""",

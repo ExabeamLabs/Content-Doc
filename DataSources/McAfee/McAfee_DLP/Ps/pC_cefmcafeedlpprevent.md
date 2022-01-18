@@ -18,14 +18,14 @@ Name = cef-mcafee-dlp-prevent
       """(\s|\|)src=({src_ip}(\d{1,3}\.){3}\d{1,3})""",
       """(\s|\|)shost=({src_host}[^\s]{1,2000})""",
       """(\s|\|)suser=<?({sender}[^\s@<>]{1,2000}?@[^\s@<>]{1,2000})"""
-      """(\s|\|)duser=<?({recipient}[^\s@<>]{1,2000}?@[^\s@<>]{1,2000})"""
+      """(\s|\|)duser=<?({recipient}[^\s@<>]{1,2000}?@({external_domain}[^\s@<>]{1,2000}))"""
       """(\s|\|)duser=(\s{1,100}|(({recipients}.+?)\s{0,100}))(\w+=|$)""",
       """(\s|\|)fsize=({bytes}\d{1,100})""",
       """\scs4=(\s{1,100}|(({attachments}.+?)\s{0,100}))(\w+=|$)""",
       """\scs6=(\s{1,100}|(({subject}.+?)\s{0,100}))(\w+=|$)""",
       """\scn3=({num_recipients}\d{1,100})"""
       """(\s|\|)sMcAfeeDLPEmailSender=<?({sender}[^\s@<>]{1,2000}?@[^\s@<>]{1,2000})"""
-      """(\s|\|)sMcAfeeDLPEmailRecipients=<?({recipient}[^\s@<>]{1,2000}?@[^\s@<>]{1,2000})"""      
+      """(\s|\|)sMcAfeeDLPEmailRecipients=<?({recipient}[^\s@<>]{1,2000}?@({external_domain}[^\s@<>]{1,2000}))"""      
       """\sMcAfeeDLPEmailRecipients=(\s{1,100}|((recipients}.+?)\s{0,100}))(\w+=|$)"""
       """\sMcAfeeDLPHostDomainName =({domain}[\w\-\.]{1,2000}?)\s{0,100}(\w+=|$)"""
       """\sMcAfeeDLPHostName =({host}[\w\-\.]{1,2000}?)\s{0,100}(\w+=|$)"""

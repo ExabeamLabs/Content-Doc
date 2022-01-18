@@ -3,7 +3,7 @@
 {
 Name = cc-pulsesecure-authentication-successful-1
   DataType = "authentication-successful"
-  Conditions = [ """"host":""", """"PulseSecure:"""", """Secondary authentication successful""" ]
+  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """"PulseSecure:"""", """Secondary authentication successful""" ]
   Fields = ${JuniperParserTemplates.cef-pulsesecure-vpn-events.Fields} [
     """Secondary authentication successful for\s{1,100}(({domain}[^\\]{1,2000})\\+)?({user}[^@\s\\\/]{1,2000})(\/({realm}[^\s]{1,2000}))\s{1,100}from\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]

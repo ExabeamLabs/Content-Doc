@@ -3,7 +3,7 @@
 {
 Name = cef-netskope-dlp-alert
   DataType = "dlp-alert"
-  Conditions = [ """"type":"""", """destinationServiceName =Netskope""", """"alert_type":"DLP"""" ]
+  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName =Netskope""", """"alert_type":"DLP"""" ]
   Fields = ${NetskopeParserTemplates.cef-netskope-activity.Fields}[
     """"policy":"({alert_name}[^"]{1,2000})""",
     """"dlp_rule_severity":"({alert_severity}[^"]{1,2000})""",
@@ -42,7 +42,6 @@ cef-netskope-activity = {
     """"file_type":\s{0,100}"({file_type}[^"]{1,2000})"""",
     """"page_site":\s{0,100}"({app}[^"]{1,2000})"""",
     """"dstport":"\s{0,100}({dest_port}\d{1,100})""""
-    """"action":"({action}[^"]{1,2000})"""
   ]
   DupFields = ["domain->email_domain", "file_type->mime"
 }

@@ -23,7 +23,7 @@ auth0-authentication-template = {
       """user_name"{1,20}:"{1,20}(({user_email}[^"@]{1,2000}@[^"@]{1,2000})|({user}[^"]{1,2000}))"{1,20},""",     
       """user_id"{1,20}:"{1,20}((({auth_type}[^|"]{1,2000})\|({domain}[^|"]{1,2000})\|({user}[\w-]{1,2000}))|(({=auth_type}[^|"]{1,2000})\|({=user}[\w-]{1,2000})))"""
       """client_name"{1,20}:"{1,20}({app}[^"]{1,2000})""",
-      """user_agent"{1,20}:"{1,20}({user_agent}[^"]{1,2000})""",         
+      """user_agent"{1,20}:"{1,20}({user_agent}([^\/]{1,2000}\/\s{1,100}(?i)({os}iOS|Android|BlackBerry|Windows Phone|BeOS|x11|windows|linux|macintosh|darwin))?[^"]{1,2000})""",         
       """severity"{1,20}:"{1,20}({alert_severity}[^"]{1,2000})""", 
     
 }

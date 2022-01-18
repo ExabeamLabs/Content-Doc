@@ -7,7 +7,7 @@ Name = cef-netskope-alert-malsite
   Lms = Direct
   DataType = "alert"
   TimeFormat = "epoch_sec"
-  Conditions = [ """"alert_type":"malsite"""", """destinationServiceName =Netskope""" ]
+  Conditions = [ """CEF:""", """|Skyformation|""", """"alert_type":"malsite"""", """destinationServiceName =Netskope""", """|security-threat-detected|""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """"timestamp":({time}\d{1,100})""",
@@ -23,12 +23,14 @@ Name = cef-netskope-alert-malsite
     """"severity_level":"({alert_severity}[^"]{1,2000})""",
     """"hostname":"({src_host}[^"]{1,2000})""",
     """"referer":"({referrer}[^"]{1,2000})""",
-    """"url":"({full_url}(\w+:\/+)?({web_domain}[^\\\/]{1,2000})[^"]{1,2000})""",
+    """"url":"(\w+\\*:\/+)?(((\d{1,100}\.){3}\d{1,100}[^\s"]{1,2000})|(www\.)?[^"\/]{0,2000}?({top_domain}[0-9A-Za-z]{2,255}\.[0-9A-Za-z]{2,3}\.[0-9A-Za-z]{2,3}|[0-9A-Za-z]{2,255}\.[0-9A-Za-z]{2,3}))("|\/|\?)"""
+    """"url":"([^"\/]{0,2000}?)({top_domain}[^.\s\/:]{1,2000}(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+))("|\/)""",
+
     """"browser":"({process}[^"]{1,2000})"""",  
     """"site":"({site_at}[^",]{1,2000})"""",
     """"_id":"({alert_id}[^"]{1,2000})"""
   ]
-  DupFields = ["alert_type->threat_category"]
+  DupFields = ["top_domain->additional_info", "alert_type->threat_category"]
 
 
 }

@@ -1,29 +1,15 @@
 #### Parser Content
 ```Java
 {
-Name = paloalto-app-activity
- DataType = "app-activity"
- Conditions = [ """PanOSEventIDValue=gateway-hip-check""", """GLOBALPROTECT""", ]
+Name = palo-alto-app-activity
+  Vendor = Palo Alto Networks
+  Product = GlobalProtect
+  Lms = Direct
+  DataType = "app-activity"
+  TimeFormat = "yyyy/MM/dd HH:mm:ss"
+  Conditions = [ """,globalprotectgateway-agent-msg,""", """,SYSTEM,""" ]
+  Fields = [
+    """({host}[\w.\-]{1,2000})\s{1,100}\d{1,100
 
-paloalto-vpn-event = {
-    Vendor = Palo Alto Networks
-    Product = GlobalProtect
-    Lms = Splunk
-    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSS"
-    Fields = [
-      """"receiveTimestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d\d\d\d)""",
-      """PanOSSourceUserName =({user}[^=]{1,2000}?)\s\w{1,100}=""",
-      """PanOSPrivateIPv(4|6)=({dest_ip}[A-Fa-f\d:.]{1,2000})""",
-      """PanOSPublicIPv(4|6)=({src_ip}[A-Fa-f\d:.]{1,2000})""",
-      """PanOSDeviceName =({host}[\w\-.]{1,2000})""",
-      """PanOSDescription=({additional_info}[^=]{1,2000})\s\w{1,100}=""",
-      """PanOSEventStatus=({outcome}[^=]{1,2000}?)\s\w{1,100}=""",
-      """PanOSEventIDValue=({event_name}[^=]{1,2000}?)\s\w{1,100}=""",
-      """PanOSEndpointDeviceName =({src_host}[\w\-.]{1,2000})""",
-      """PanOSEndpointOSVersion=({os}[^=]{1,2000}?)\s\d""",
-      """PanOSSourceRegion=({src_country}[^=]{1,2000}?)\s\w{1,100}=""",
-      """PanOSAuthMethod=({auth_method}[^=]{1,2000}?)\s\w{1,100}=""",
-      """({app}GLOBALPROTECT)"""
-    
 }
 ```

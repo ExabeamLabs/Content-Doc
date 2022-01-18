@@ -4,7 +4,7 @@
 Name = unix-process-created-failed
   DataType = "process-created-failed"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """"type":"SYSCALL"""", """success\=no""", """Cloud Apps Security|""", """|audit-event|""" ]
+  Conditions = [ """"type":"SYSCALL"""", """success\=no""", """CEF:""", """|Skyformation|SkyFormation""", """Cloud Apps Security|""", """|audit-event|""" ]
   Fields = ${UnixParserTemplates.unix-template.Fields}[
     """ppid\\?=({parent_process_id}[^\s]{1,2000})\s{1,100}\w+""",
     """\spid\\?=({pid}[^\s]{1,2000})\s\w+""",

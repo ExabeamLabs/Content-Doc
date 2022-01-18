@@ -8,8 +8,8 @@ Product: QRadar Network Security
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  authentication-failed<br> ↳[q-xgs-network-alert](Ps/pC_qxgsnetworkalert.md)<br> | T1133 - External Remote Services<br>    | [<ul><li>2 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_ibm_qradar_network_security_Abnormal_Authentication_&_Access.md) |
-|    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  authentication-failed<br> ↳[q-xgs-network-alert](Ps/pC_qxgsnetworkalert.md)<br> | T1078 - Valid Accounts<br>T1090.003 - Proxy: Multi-hop Proxy<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_ibm_qradar_network_security_Lateral_Movement.md)    |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  authentication-failed<br> ↳[q-xgs-network-alert](Ps/pC_qxgsnetworkalert.md)<br> | T1133 - External Remote Services<br>   | [<ul><li>2 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_ibm_qradar_network_security_Abnormal_Authentication_&_Access.md) |
+|    [Evasion](../../../UseCases/uc_evasion.md)    |  authentication-failed<br> ↳[q-xgs-network-alert](Ps/pC_qxgsnetworkalert.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_ibm_qradar_network_security_Evasion.md)    |
 |    [Ransomware](../../../UseCases/uc_ransomware.md)    |  authentication-failed<br> ↳[q-xgs-network-alert](Ps/pC_qxgsnetworkalert.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_ibm_qradar_network_security_Ransomware.md)    |
 
 ATT&CK Matrix for Enterprise

@@ -2,12 +2,12 @@
 ```Java
 {
 Name = leef-crowdstrike-executableswritten
-  DataType = "file-write"
-  Conditions = [ """LEEF:""", """|CrowdStrike|FalconHost|""", """cat=ExecutablesWritten""" ]
+  Conditions = [ """0|CrowdStrike|FalconHost|""", """cat=ExecutablesWritten""" ]
   Fields = ${CrowdStrikeParserTemplates.leef-crowdstrike-alert-t.Fields} [
     """CrowdStrike\|([^|]{1,2000}\|){2}({alert_name}[^|]{1,2000})""",
-    """\WexeWrittenFileName =({file_name}[^|"]{1,2000}?)(\t|\s{1,100}\w{1,1000}=|\s{0,100}\||\s{0,100}$|\s{0,100}"{1,20}\s{0,100}$)""",
-    """\WexeWrittenFilePath=({file_path}[^=]{1,2000}?)(\t|\s{1,100}\w{1,1000}=|\s{0,100}\||\s{0,100}$|\s{0,100}"{1,20}\s{0,100}$)""",
+    """\WexeWrittenFileName =({file_name}[^|"]{1,2000}?)(\t|\s{1,100}\w+=|\s{0,100}\||\s{0,100}$|\s{0,100}"{1,20}\s{0,100}$)""",
+    """\WexeWrittenFilePath=({malware_url}.+?)(\t|\s{1,100}\w+=|\s{0,100}\||\s{0,100}$|\s{0,100}"{1,20}\s{0,100}$)""",
+    """\WexeWrittenFilePath=({process}({directory}[^=]{0,2000}\\+)\s{0,100}({process_name}.+?)?)(\t|\s{1,100}\w+=|\s{0,100}\||\s{0,100}$|\s{0,100}"{1,20}\s{0,100}$)"""
   ]
 
 leef-crowdstrike-alert-t = {

@@ -12,7 +12,7 @@ Name = s-ssh-login-failed
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """({host}[\w\.-]{1,2000}):?\s{1,100}sshd\[""",
-    """({failure_reason}(i|I)nvalid user)\s{1,100}(({domain}[^\s]{1,2000}?)\\+)?(?:({user_email}[^@\s]{1,2000}@[^\.\s]{1,2000}\.[^\s]{1,2000})|({user}[^@\s]{1,2000}))(@({=domain}[^\s]{1,2000}))?""",
+    """({failure_reason}(i|I)nvalid user)\s{1,100}(({domain}.+?)\\+)?({user}\S+)""",
     """\sfrom\s{1,100}(::[\w]{1,2000}:)?(({src_ip}(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|::1))|({src_host}[\w\.\-]{1,2000}))\s""",
     """sshd\[({logon_id}\d{1,100})""",
     """({event_code}ssh)""",

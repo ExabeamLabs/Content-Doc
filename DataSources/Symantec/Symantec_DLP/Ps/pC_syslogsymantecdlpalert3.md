@@ -15,6 +15,7 @@ Name = syslog-symantec-dlp-alert-3
     """(?i)protocol="{0,20}({protocol}[^",]{1,2000})("|,|\s{0,100}$)""",
     """(?i)recipients="{0,20}(?=[\w.]{1,2000}@[\w.])({recipients}[^",]{1,2000})("|,|\s{0,100}$)""",
     """(?i)recipients="{0,20}(?=[\w.]{1,2000}@[\w.])({external_address}[^",]{1,2000})("|,|\s{0,100}$)""",
+    """(?i)recipients="{0,20}[^@]{1,2000}@({external_domain}[^,"@]{1,2000})("|,|\s{0,100}$)""",
     """(?i)recipients="{0,20}(?=\w+:\/+)({target}[^",]{1,2000})("|,|\s{0,100}$)""",
     """(?i)sender="{0,20}(?=[\w.]{1,2000}@[\w.])({sender}[^",]{1,2000})("|,|\s{0,100}$)""",
     """(?i)sender="{0,20}(?=[\w.]{1,2000}@[\w.])({user}[^",]{1,2000})("|,|\s{0,100}$)""",
@@ -26,6 +27,8 @@ Name = syslog-symantec-dlp-alert-3
     """(?i)endpoint_user_name="{0,20}\s{0,100}(N\/A|(({domain}[^\\]{1,2000})\\+)?({user}[^\s",]{1,2000}))("|,|\s{0,100}$)""",
     """(?i)endpoint_user_name="{0,20}\s{0,100}(N\/A|({user}[^\s",@]{1,2000})@({domain}[^\s",@]{1,2000}))""",
     """(?i)incident_snapshot=[^,]{0,2000}?({alert_id}\d{1,100}),""",
+    """(?i)incident_snapshot="{0,20}(\w+:\/+)?[^\s]{0,2000}?((?!\d{1,3}\.\d{1,3}\.\d{1,3})({top_domain}[^\/\.\s]{1,2000}(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|local))+))(\/|\||"|\s{1,100}\w+=|\s{0,100}$)"""
+
     """(?i)machineIP="{0,20}(N\/A|({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))""",
   ]
   DupFields = [ "alert_name->alert_type", "external_address->recipient" ]

@@ -3,10 +3,10 @@
 {
 Name = cef-netskope-dlp-email-alert-1
   DataType = "dlp-email-alert"
-  Conditions = [ """"type":"""", """destinationServiceName =Netskope""", """"object_type":"Mail"""", """"activity":"Send"""" ]
+  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName =Netskope""", """"object_type":"Mail"""", """"activity":"Send"""" ]
   Fields = ${NetskopeParserTemplates.cef-netskope-activity.Fields} [
     """"from_user":"({sender}[^"\s@]{1,2000}@[^"\s@]{1,2000})""",
-    """"to_user":"({recipients}({recipient}[^"\s@;,]{1,2000}@[^"\s@,]{1,2000})[^"]{0,2000})""",
+    """"to_user":"({recipients}({recipient}[^"\s@;,]{1,2000}@({external_domain}[^"\s@,]{1,2000}))[^"]{0,2000})""",
     """"site":"({site_at}[^"]{1,2000})""""
   ]
   DupFields = [ "object->file_name", "recipient->external_address", "sender->from_user_at" ]
@@ -38,7 +38,6 @@ cef-netskope-activity = {
     """"file_type":\s{0,100}"({file_type}[^"]{1,2000})"""",
     """"page_site":\s{0,100}"({app}[^"]{1,2000})"""",
     """"dstport":"\s{0,100}({dest_port}\d{1,100})""""
-    """"action":"({action}[^"]{1,2000})"""
   ]
   DupFields = ["domain->email_domain", "file_type->mime"
 }

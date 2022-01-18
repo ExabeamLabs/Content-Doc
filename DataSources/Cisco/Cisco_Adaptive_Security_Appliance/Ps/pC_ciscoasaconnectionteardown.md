@@ -9,7 +9,6 @@ Name = cisco-asa-connection-teardown
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ "%ASA-", "-30201", """: Teardown """, """ duration """ ]
   Fields = [
-    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d{1,100})""",
     """exabeam_host=(::ffff:)?({host}[^\s]{1,2000})""",
     """(\w{3} (\d\d| \d) \d\d\d\d (\d\d| \d):\d\d:\d\d)\s{1,100}(::ffff:)?({host}[\w\.-]{1,2000})\s{0,100}:\s{0,100}%ASA-""",

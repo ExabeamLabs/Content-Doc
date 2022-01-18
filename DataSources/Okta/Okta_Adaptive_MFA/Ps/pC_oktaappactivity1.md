@@ -35,7 +35,7 @@ okta-app-activity = {
       """"actors":\s{0,100}\[\{[^\]]{0,2000}?"objectType":\s{0,100}"Client"[^\]]{0,2000}?"id":\s{0,100}"({user_agent}[^"]{1,2000})"""",
       """"message":\s{0,100}"({additional_info}[^"]{1,2000}?)\s{0,100}"""",
       """({app}Okta)""",
-      """destinationServiceName({app}.+?)\s{0,100}\w+=""",
+      """requestClientApplication=({app}.+?)\s{0,100}\w+=""",
       """"targets":\[.*?\{.*?"displayName":"({app}[^"]{1,2000})"[^\{\}]{1,2000}?"objectType":"AppInstance".*?\}""",
       """"targets":\s{0,100}\[\{[^\]]{0,2000}?"objectType":\s{0,100}"AppInstance"[^\]]{0,2000}?"displayName":\s{0,100}"({app}[^"]{1,2000})"""",
       """"type":"AppInstance"[^\}\]]{0,2000}"displayName":"({app}[^"]{1,2000}?)\s{0,100}"""",

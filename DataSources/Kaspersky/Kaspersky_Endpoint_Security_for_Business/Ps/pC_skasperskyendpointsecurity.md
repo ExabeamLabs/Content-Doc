@@ -6,7 +6,7 @@ Name = s-kaspersky-endpoint-security
   Product = Kaspersky Endpoint Security for Business
   Lms = Splunk
   DataType = "alert"
-  TimeFormat = "YYYY-MM-dd HH:mm:ssZ"
+  TimeFormat = "YYYY-MM-DD HH:mm:ssZ"
   Conditions = [ """Kaspersky Endpoint Security 10 for Windows""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",

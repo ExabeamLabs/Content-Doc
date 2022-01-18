@@ -4,6 +4,7 @@
 Name = cef-aruba-mobile
   Vendor = HP
   Product = Aruba Wireless controller
+  Source = Mobility Controller
   Lms = Direct
   DataType = "network-alert"
   TimeFormat = "epoch"

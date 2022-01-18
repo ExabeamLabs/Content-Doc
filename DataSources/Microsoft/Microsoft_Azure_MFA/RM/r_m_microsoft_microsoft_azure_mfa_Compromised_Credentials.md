@@ -1,0 +1,12 @@
+Vendor: Microsoft
+=================
+### Product: [Microsoft Azure MFA](../ds_microsoft_microsoft_azure_mfa.md)
+### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
+
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   4   |   1    |     2      |      2      |    2    |
+
+| Event Type                | Rules                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Models                                                        |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| authentication-successful | <b>T1078 - Valid Accounts</b><br> ↳ <b>UA-UI-F</b>: First activity from ISP<br> ↳ <b>UA-UC-Suspicious</b>: Activity from suspicious country<br> ↳ <b>UA-UC-Two</b>: Activity from two different countries<br> ↳ <b>UA-UC-Three</b>: Activity from 3 different countries<br><br><b>T1133 - External Remote Services</b><br> ↳ <b>UA-UI-F</b>: First activity from ISP<br> ↳ <b>UA-UC-Suspicious</b>: Activity from suspicious country<br> ↳ <b>UA-UC-Two</b>: Activity from two different countries<br> ↳ <b>UA-UC-Three</b>: Activity from 3 different countries |  • <b>UA-UI-new</b>: ISP of users during application activity |

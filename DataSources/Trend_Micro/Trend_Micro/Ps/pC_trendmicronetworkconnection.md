@@ -10,17 +10,15 @@ Name = trendmicro-network-connection
   Conditions = ["""TrendMicroDsTenant""" , """TrendMicroDsFrameType=IP"""]
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """[\|\s]dvchost=({host}[^\|\s"]{1,2000})""",
-    """[\|\s]dst=({dest_ip}[a-fA-F\d.:]{1,2000})""",
-    """[\|\s]dpt=({dest_port}\d{1,100})""",
-    """[\|\s]src=({src_ip}[a-fA-F\d.:]{1,2000})""",
-    """[\|\s]spt=({src_port}\d{1,100})""",
-    """[\|\s]proto=({protocol}[^\|\s]{1,2000}?)[\s\|]""",
-    """[\|\s]smac=({source_mac}[^\|\s]{1,2000})""",
-    """[\|\s]in=({bytes}\d{1,100})""",
-    """[\|\s]act=({activity}[^\|\s]{1,2000})""",
-    """[\|\s]dmac=({dest_mac}[^\s\|]{1,2000}?)[\s\|]""",
-    """CEF:(\s{0,10}\d{1,10})\|(([^\|]{1,2000})\|){4}({alert_name}[^\|]{1,2000})""",
+    """\|dvchost=({host}[^\|\s"]{1,2000})""",
+    """\|dst=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """\|dpt=({src_port}\d{1,100})""",
+    """\|src=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """\|spt=({dest_port}\d{1,100})""",
+    """\|proto=({protocol}[^\|]{1,2000})"""
+    """\|smac=({source_mac}[^\|]{1,2000})""",
+    """\|in=({bytes}[^\|]{1,2000})""",
+    """\|act=({activity}[^\|]{1,2000})"""
   ]
 
 

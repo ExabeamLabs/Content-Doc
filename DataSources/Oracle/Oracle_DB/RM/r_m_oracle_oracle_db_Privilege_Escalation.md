@@ -1,0 +1,12 @@
+Vendor: Oracle
+==============
+### Product: [Oracle DB](../ds_oracle_oracle_db.md)
+### Use-Case: [Privilege Escalation](../../../../UseCases/uc_privilege_escalation.md)
+
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   3   |   3    |     3      |      7      |    7    |
+
+| Event Type  | Rules                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Models                                                                                                                                                                                  |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| local-logon | <b>T1078 - Valid Accounts</b><br> ↳ <b>AS-PV-UHWoPC</b>: Access to Password Vault managed asset with no password checkout for user<br> ↳ <b>DC18-new</b>: Account switch by new user<br><br><b>T1021.002 - Remote Services: SMB/Windows Admin Shares</b><br> ↳ <b>DEF-TEMP-DIRECTORY-F</b>: First time process has been executed from a temporary directory by this user<br><br><b>T1087 - Account Discovery</b><br> ↳ <b>DEF-TEMP-DIRECTORY-F</b>: First time process has been executed from a temporary directory by this user |  • <b>DC18</b>: Secondary accounts<br> • <b>AE-UP-TEMP</b>: Process executable TEMP directories for this user during a session<br> • <b>AS-PV-OA</b>: Password retrieval based accounts |

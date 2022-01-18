@@ -3,7 +3,7 @@
 {
 Name = cef-netskope-app-activity-45
   DataType = "app-activity"
-  Conditions = [ """"type":"""", """destinationServiceName =Netskope""", """"activity":"PutObject"""" ]
+  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName =Netskope""", """"activity":"PutObject"""" ]
 
 cef-netskope-activity = {
   Vendor = Netskope
@@ -32,7 +32,6 @@ cef-netskope-activity = {
     """"file_type":\s{0,100}"({file_type}[^"]{1,2000})"""",
     """"page_site":\s{0,100}"({app}[^"]{1,2000})"""",
     """"dstport":"\s{0,100}({dest_port}\d{1,100})""""
-    """"action":"({action}[^"]{1,2000})"""
   ]
   DupFields = ["domain->email_domain", "file_type->mime"
 }

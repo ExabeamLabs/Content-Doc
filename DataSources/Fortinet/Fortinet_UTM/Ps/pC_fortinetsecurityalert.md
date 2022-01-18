@@ -7,7 +7,7 @@ Name = fortinet-security-alert
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd' time='HH:mm:ss"
-  Conditions = [ """subtype=""", """virus=""", """action=""", """dtype="Virus"""" ]
+  Conditions = [ """subtype=""", """virus=""", """action=""" ]
   Fields = [ 
     """\Wdate=({time}\d\d\d\d-\d\d-\d\d time\=\d\d:\d\d:\d\d)""",
     """\Wdevname="{0,20}({host}[^\s"]{1,2000})"{0,20}(\s|")""",

@@ -7,7 +7,7 @@ Name = cylance-alert-2
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """destinationServiceName =CylanceProtect""", """externalID="""]
+  Conditions = [ """|Skyformation|""", """destinationServiceName =CylanceProtect""", """externalID="""]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """\d{1,100}\s{1,100}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3}Z)\s{1,100}""",

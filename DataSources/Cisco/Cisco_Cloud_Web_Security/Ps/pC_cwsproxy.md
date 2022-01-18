@@ -30,6 +30,12 @@ Name = cws-proxy
       """\srequestClientApplication=(?:-|({user_agent}.+?))\s\w+=""",
       """\scs2=(?:unclassified|({category}.+?))\s\w+=""",
       """\sfileType=(?:-|({mime}.+?))\s\w+=""",
+      """\srequest=(.*?)({top_domain}[^.\s\/:]{1,2000}(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+(\/|:|\s)).+?)(\/|:|\s\w+=)"""
+      """\srequestClientApplication=(?:-|({browser}[\w\-]{1,2000}))""",
+      """\srequestClientApplication=(?:-|({browser}[\w\-]{1,2000})\/[\d\._]{1,2000})""",
+      """\srequestClientApplication=(?:-|({browser}.+?)\s{0,100}(for|\(|\d|\/).+({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin))""",
+      """Mozilla\/.+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
+      """Mozilla\/.+\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+Gecko\/\d{1,100}\s{1,100}({browser}\w+)"""
     ]
   
 

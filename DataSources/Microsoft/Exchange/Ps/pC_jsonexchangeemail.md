@@ -15,6 +15,7 @@ Name = json-exchange-email
     """"email_direction":"({direction}[^"]{1,2000})""",
     """"message_subject":"({subject}.+?)\s{0,100}"""",
     """"attachment_name":"(UNKNOWN|({attachment}[^"]{1,2000}))""",
+    """"recipient_domain":"\@({external_domain}[^"]{1,2000})""",
     """"sender_address":"({sender}[^"]{1,2000})""",
     """"total_bytes":({bytes}\d{1,100})""",
     """"email_event":"({action}[^"]{1,2000})"""

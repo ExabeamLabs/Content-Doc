@@ -8,9 +8,9 @@ Product: Forcepoint Insider Threat
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  failed-vpn-login<br> ↳[cef-forcepoint-it-dlp-alert](Ps/pC_cefforcepointitdlpalert.md)<br> | T1133 - External Remote Services<br>    | [<ul><li>2 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_forcepoint_forcepoint_insider_threat_Abnormal_Authentication_&_Access.md) |
-|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  failed-vpn-login<br> ↳[cef-forcepoint-it-dlp-alert](Ps/pC_cefforcepointitdlpalert.md)<br> | T1133 - External Remote Services<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_forcepoint_forcepoint_insider_threat_Compromised_Credentials.md)    |
-|    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  failed-vpn-login<br> ↳[cef-forcepoint-it-dlp-alert](Ps/pC_cefforcepointitdlpalert.md)<br> | T1078 - Valid Accounts<br>T1090.003 - Proxy: Multi-hop Proxy<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_forcepoint_forcepoint_insider_threat_Lateral_Movement.md)    |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  failed-vpn-login<br> ↳[cef-forcepoint-it-dlp-alert](Ps/pC_cefforcepointitdlpalert.md)<br> | T1133 - External Remote Services<br>   | [<ul><li>2 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_forcepoint_forcepoint_insider_threat_Abnormal_Authentication_&_Access.md) |
+|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  failed-vpn-login<br> ↳[cef-forcepoint-it-dlp-alert](Ps/pC_cefforcepointitdlpalert.md)<br> | T1133 - External Remote Services<br>   | [<ul><li>1 Rules</li></ul>](RM/r_m_forcepoint_forcepoint_insider_threat_Compromised_Credentials.md)    |
+|    [Evasion](../../../UseCases/uc_evasion.md)    |  failed-vpn-login<br> ↳[cef-forcepoint-it-dlp-alert](Ps/pC_cefforcepointitdlpalert.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_forcepoint_forcepoint_insider_threat_Evasion.md)    |
 |    [Ransomware](../../../UseCases/uc_ransomware.md)    |  failed-vpn-login<br> ↳[cef-forcepoint-it-dlp-alert](Ps/pC_cefforcepointitdlpalert.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_forcepoint_forcepoint_insider_threat_Ransomware.md)    |
 
 ATT&CK Matrix for Enterprise

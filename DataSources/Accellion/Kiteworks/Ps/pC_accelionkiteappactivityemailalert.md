@@ -2,7 +2,6 @@
 ```Java
 {
 Name = accelion-kite-app-activity-email-alert
-  Product = Kiteworks
   DataType = "dlp-email-alert"
   Conditions = [ """url_host""", """app_host""", """description""", """send_mail""", """event""" ]
   Fields = ${KiteWorksParserTemplates.accelion-kite-app.Fields}[

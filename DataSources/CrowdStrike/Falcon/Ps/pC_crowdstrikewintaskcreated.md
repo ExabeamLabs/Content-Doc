@@ -15,7 +15,7 @@ cef-crowdstrike-app-activity-temp = {
   DataType = "app-login"
   TimeFormat = "epoch"
   Fields = [
-    """"timestamp":\s{0,100}"{0,20}({time}\d{1,100})"""",
+    """"timestamp":\s{0,100}"{0,20}({time}\d{1,100})""",
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """"UserIp":\s{0,100}"({src_ip}[^"]{1,2000})""",
     """\WdestinationServiceName =({app}.+?)\s{1,100}\w+="""

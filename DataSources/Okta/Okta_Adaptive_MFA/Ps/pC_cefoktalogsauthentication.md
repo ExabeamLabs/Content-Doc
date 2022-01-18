@@ -12,7 +12,7 @@ Name = cef-okta-logs-authentication
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"published"{1,20}\s{0,100}:\s{0,100}"{1,20}({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     """({app}(?i)Okta)""",
-    """destinationServiceName({app}[^=]{1,2000}?)\s{0,100}\w+=""",
+    """requestClientApplication=({app}[^=]{1,2000}?)\s{0,100}\w+=""",
     """"city":"((?i)null|({location_city}[^",]{1,2000}))""",
     """"state":"((?i)null|({location_state}[^",]{1,2000}))""",
     """"country":"((?i)null|({location_country}[^",]{1,2000}))""",

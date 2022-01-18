@@ -20,7 +20,7 @@ Name = crowdstrike-logon
       """"LogonServer":"({auth_server}[^"]{1,2000})"""
       """"UserName":"({dest_host}[^"$]{1,2000})\$""",
       """"ClientComputerName\\?"{1,20}:\\?"{1,20}(-|({dest_host}[^"\\,]{1,2000}))""",
-      """"UserPrincipal":"({user_email}[^@"]{1,2000}@[^."]{1,2000}\.[^"]{1,2000})"""",
+      """"UserPrincipal":"({user_email}[^"]{1,2000})""",
       """"UserSid":"({user_sid}[^"]{1,2000})""",
       """"aid":"({aid}[^"]{1,2000})""",
       """"event_simpleName":"({event_code}[^"]{1,2000})""",

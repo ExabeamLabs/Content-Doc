@@ -8,8 +8,7 @@ Name = raw-asa-113005
   DataType = "failed-vpn-login"
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ """%ASA""" , """-113005""", """ AAA user """ ]
-  Fields = [
-    """exabeam_host=(::ffff:)?({host}[^\s]{1,2000})""",
+  Fields = [ 
     """exabeam_time=\s{0,100}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\w+\s{1,100}\d{1,100} \d\d:\d\d:\d\d\s{1,100}(::ffff:)?({host}\S+)\s{0,100}:*\s{1,100}%ASA""",
     """\s({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d)""",

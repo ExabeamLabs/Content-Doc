@@ -4,14 +4,14 @@
 Name = cc-sophos-security-alert
   Lms = Splunk
   DataType = "alert"
-  Conditions = ["""destinationServiceName =Sophos Central""", """"type":"Event::Endpoint::HmpaPrivGuard"""", """We prevented a privilege escalation exploit"""]
+  Conditions = [ """CEF:""", """|SkyFormation Cloud Apps Security|""", """"type":"Event::Endpoint::HmpaPrivGuard"""", """We prevented a privilege escalation exploit""" ]
   Fields = ${SophosParserTemplates.cef-sophos-dlp-alert-1.Fields} [
     """"({alert_name}We prevented a privilege escalation exploit)\s{1,100}in\s{1,100}({process}({directory}[^",]{0,2000}?)(?:\\+({process_name}[^",\\]{1,2000}?))?)"""",
     """"threat":"({alert_type}[^",]{1,2000})"""",
     """"source":"(n\/a|({user_firstname}[^",\s\\]{1,2000}),?\s{0,100}({user_lastname}[^,"\s\\]{1,2000}))"""",
     """"process_path":"({process}({directory}[^",]{0,2000}?)(?:\\+({process_name}[^",\\]{1,2000}?))?)"""",
     """"details":"({additional_info}[^",]{1,2000})"""",
-    """destinationServiceName =({app}[^=]{1,2000})\s{1,100}\w+="""
+    """requestClientApplication=({app}[^=]{1,2000})\s{1,100}\w+="""
   ]
   DupFields = [ "directory->process_directory" ]
 

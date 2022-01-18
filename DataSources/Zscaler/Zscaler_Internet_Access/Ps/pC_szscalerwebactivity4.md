@@ -7,10 +7,10 @@ Name = s-zscaler-web-activity-4
   Lms = Syslog
   DataType = "web-activity"
   Conditions = [ """dlpeng="None"""", """recordid="""", """saction="""", """url="""" ]
-  TimeFormat = "MMM dd HH:mm:ss yyyy z"
+  TimeFormat = "MMM  dd HH:mm:ss yyyy z"
   Fields = [
-    """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}\S+)""",
-    """((::ffff:)?({host}[\w\-.]{1,2000})\s{0,100}")?\s{0,100}time="\w{1,100}\s({time}\w{1,100}\s{1,100}\d{1,10}\s\d\d:\d\d:\d\d\s\d\d\d\d\s\w{1,100})"""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """time="\w+\s{0,100}({time}\w+  \d{1,100} \d\d:\d\d:\d\d \d\d\d\d \w+)""",
     """urlcat="({category}[^"]{1,2000})""",
     """respsize="({bytes_in}\d{1,100})""",
     """reqsize="({bytes_out}\d{1,100})""",
@@ -27,7 +27,8 @@ Name = s-zscaler-web-activity-4
     """proto="({protocol}[^"]{1,2000})""",
     """url="({full_url}[^"]{1,2000})""",
     """reason="(Allowed|({failure_reason}[^"]{1,2000}))""",
-    """cs-username="({user_email}[^@"]{1,2000}@[^\."]{1,2000}\.[^"]{1,2000})""""
+    """cs\(User-Agent\)="[^=]{0,2000}?({browser}(?:C|c)hrome|(?:S|s)afari|(?:O|o)pera|(?:F|f)irefox|MSIE|(?:T|t)rident)""",
+    """cs\(User-Agent\)="[^=]{0,2000}?({os}iOS|Android|BlackBerry|iPhone OS|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)"""
   ]
 
 

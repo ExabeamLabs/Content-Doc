@@ -7,8 +7,7 @@ Name = s-aws-cloudtrail-assumedrole-json
   Conditions = [  "\"AwsApiCall\"", "\"eventName\"", "\"awsRegion\"", "type=AssumedRole" ]
   Fields = ${AWSParserTemplates.s-aws-cloudtrail-activity-json.Fields}[
     """\Wsuser=[^=]{0,2000}?({user}[^\\\/@=]{1,2000})@[^=]{1,2000}?(\s{1,100}\w+=|\s{0,100}$)""",
-    #"""\Wext_userIdentity_sessionContext_sessionIssuer_type=(|({activity}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-    """"userIdentity".*?"sessionContext".*?"sessionIssuer".*?"type":"({activity}[^"]{1,2000})"""",
+    """\Wext_userIdentity_sessionContext_sessionIssuer_type=(|({activity}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\WflexString1=(|({activity}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """"{1,20}userName"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({target}[^"].+?))"{1,20}\s{0,100}[,\]\}]""",
     """"requestParameters":\{"userName":"({target}[^"]{1,2000})"\
@@ -24,8 +23,8 @@ s-aws-cloudtrail-activity-json = {
     """({app}AwsApiCall)""",
     """"{1,20}eventName"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({activity_action}[^"].+?))"{1,20}\s{0,100}[,\]\}]""",
     """"{1,20}eventName"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({activity}[^"].+?))"{1,20}\s{0,100}[,\]\}]""",
-    """"userIdentity\\?".+?"arn\\?"\s{0,100}:\s{0,100}\\?"?(|arn:aws:sts::\d{1,100}:[^\/]{1,2000}\/({user}[^"]{1,2000})\/{1,256}(?!\-\d{1,100})[^\/]{1,2000}?)(@[\w\.]{1,2000})?\\?"\s{0,100}[,\]\}]""",
     """"{1,20}userName"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({user}[^"].+?))"{1,20}\s{0,100}[,\]\}]""",
+    """"userIdentity".+?"arn"\s{0,100}:\s{0,100}"?(|arn:aws:sts::\d{1,100}:([^"]{1,2000}\/){1,256}({user}(?!\-\d{1,100})[^\/]{1,2000}?))(@[\w\.]{1,2000})?"\s{0,100}[,\]\}]""",
     """"eventSource"\s{0,100}:\s{0,100}"(|({service}[^"]{1,2000}))"""",
     """"sessionIssuer"\s{0,100}:\s{0,100}.*?"arn"\s{0,100}:\s{0,100}"(?:|({object}[^"]{1,2000}))"""",
     """"bucketName"\s{0,100}:\s{0,100}"(|({bucket}[^"]{1,2000}))"""",
@@ -37,9 +36,8 @@ s-aws-cloudtrail-activity-json = {
     """"{1,20}accountId"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({resource}[^"].+?))"{1,20}\s{0,100}[,\]\}]""",
     """"requestParameters"\s{0,100}:[^\}]{1,2000}?"instanceId"\s{0,100}:\s{0,100}"({request_id}[^"]{1,2000})",("attribute"\s{0,100}:\s{0,100}"({request_action}[^"]{1,2000})")?""",
     """"awsRegion"\s{0,100}:\s{0,100}"({region}[^"]{1,2000})"""",
-    #"""ext_userIdentity_type=({account_type}.+?)\s{0,100}\w+=""",
-    """"userIdentity".*?"type":"({account_type}[^"]{1,2000}?)"""",
-    """userIdentity.+?type\\?":\s{0,100}\\?"({user_type}[^"]{1,2000}?)\\?"""",
+    """ext_userIdentity_type=({account_type}.+?)\s{0,100}\w+=""",
+    """userIdentity.+?type":"({user_type}[^"]{1,2000})""",
     """assumed-role"[^:]{1,2000}?:role\/({role}[^"]{1,2000})""",
     """bytesTransferredOut":\s{0,100}({bytes_out}\d{1,100}(\.\d{1,100})?)"""
     """bytesTransferredIn":\s{0,100}({bytes_in}\d{1,100}(\.\d{1,100})?)""",

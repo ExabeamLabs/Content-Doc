@@ -7,26 +7,24 @@ Name = symantec-cloud-activity
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = ["""destinationServiceName =Symantec CloudSOC""" ]
+  Conditions = ["""SkyFormation Cloud Apps Security""" , """destinationServiceName =Symantec CloudSOC""" ]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
-    """"inserted_timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""""
-    """suser=({user_email}[^\s]{1,2000}@.+?)\s\w+=""",
-    """"user_name":"({user_fullname}[^"]{1,2000})""",
-    """"user":"({user_email}[^\@]{1,2000}@({email_domain}[^"]{1,2000}))""",
-    """"user":"(system|({user_email}[^\@]{1,2000}@[^"]{1,2000}))""",
-    """"service":"({app}[^"]{1,2000})"""",
-    """"browsers":(\[)?"({browser}[^"]{1,2000})"""",
-    """"user_agent":"({user_agent}[^"]{1,2000})"""",
-    """"activity_type":"({activity}[^"]{1,2000})"""",
-    """"ioi_code":"({alert_type}[^"]{1,2000})"""",
-    """"message":"({additional_info}[^"]{1,2000})"""",
-    """"severity":"({alert_severity}[^"]{1,2000})"""",
-    """"object_type":"({object_type}[^"]{1,2000})"""",
-    """"object_name":"(|\/|({object}({file_path}({file_parent}[^=]{0,2000}?[\\\/]{1,2000}\\\/)?(|({file_name}[^\\\/=]{0,2000}?(\.({file_ext}[^"]{1,2000}))?)?))))""""
-    """"name":"(|\/|({object}({file_path}({file_parent}[^=]{0,2000}?[\\\/]{1,2000}\\\/)?(|({file_name}[^\\\/=]{0,2000}?(\.({file_ext}[^"]{1,2000}))?)?))))""""
-    """"host(s)?":"({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"""",
-    """"shared_with":"({target}[^"]{1,2000})""""
+    """ext__inserted_timestamp_=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""
+    """suser=({user_email}[^\s]{1,2000}@({email_domain}.+?))\s\w+=""",
+    """ext__user_name_=({user_fullname}[^\s@]{1,2000}\s{1,100}[^=]{1,2000})\s\w+=""",
+    """ext_user=({user_email}[^\s]{1,2000}@({email_domain}.+?))\s\w+="""
+    """ext_user=(system|({user}[^\s\@]{1,2000}))\s\w+=""",
+    """ext_service=({app}.+?)\s\w+=""",
+    """ext_browser=(Unknown|({browser}.+?))\s\w+=""",
+    """ext__user_agent_=({user_agent}.+?)\s\w+=""",
+    """ext__object_name_=(|({file_path}({file_parent}[^=]{0,2000}?[\\\/]{1,2000})?(|({file_name}[^\\\/=]{0,2000}?(\.({file_ext}\w*))?)?)))\s{1,100}\w+=""",
+    """flexString1=({activity}.+?)\s\w+=""",
+    """ext_message=({additional_info}.+?)\s\w+=""",
+    """fname=({object}.+?)\s\w+=""",
+    """ext_severity=({alert_severity}.+?)\s\w+=""",
+    """src=({src_ip}[^\s]{1,2000})""",
+    """ext__shared_with_=({target}[^\s]{1,2000})\s\w+="""
   ]
   DupFields = ["file_path->resource", "app->service", "activity->accesses"]
 

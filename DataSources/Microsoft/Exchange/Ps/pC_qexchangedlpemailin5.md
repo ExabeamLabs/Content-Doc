@@ -27,6 +27,7 @@ q-exchange-dlp-email-in = {
     """message-subject="?\s{0,100}(?:|({subject}.+?))\s{0,100}(\"|[\t\s]{0,2000}[\w\-]{1,2000}=)""",
     """\tsender-address=(?:|({sender}.+?))\t[\w\-]{1,2000}=""",
     """\tsender-address=(?:|({external_address}.+?))\t[\w\-]{1,2000}=""",
+    """\tsender-address=(?:|[^@]{1,2000}@({external_domain}.+?))\t[\w\-]{1,2000}=""",
     """\treturn-path=(?:|<>|({return_path}.+?))\t[\w\-]{1,2000}=""",
     """\sevent-id=({outcome}[^\s]{1,2000})""",
   ]

@@ -16,9 +16,8 @@ Name = cef-extrahop-network-sec
     """CEF:\d{1,100}\|([^\|]{1,2000}\|){4}({alert_name}[^\|]{1,2000})""",
     """cn1=({alert_id}\d{1,100})""",
     """cn2=({risk_score}\d{1,100})""",
-    """dst=(({dest_mac}([a-fA-F\d]{2}[-:]){5}[a-fA-F\d]{2})|({dest_ip}[A-Fa-f:\d\.]{1,2000}))""",
+    """dst=({dest_ip}[A-Fa-f.:\d]{1,2000})""",
     """CEF:\d{1,100}\|([^\|]{1,2000}\|){3}({alert_severity}\d{1,100})""",
-    """src=(({src_mac}([a-fA-F\d]{2}[-:]){5}[a-fA-F\d]{2})|({src_ip}[A-Fa-f:\d\.]{1,2000}))"""
 ]
   DupFields = ["alert_name->alert_type"]
 

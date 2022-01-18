@@ -7,16 +7,16 @@ Name = cef-bitglass-dlp-alert
   Lms = ArcSight
   DataType = "dlp-alert"
   TimeFormat = "dd MMM yyyy HH:mm:ss"
-  Conditions = [ """"action":"Alert"""", """"patterns":"""", """"application":"""", """"filelink":"""", """destinationServiceName =Bitglass""" ]
+  Conditions = [ """CEF:""", """|Skyformation|""", """"action":"Alert"""" ]
   Fields = [
-    """"time":"({time}\d\d\s\w{1,3}\s\d\d\d\d\s\d\d:\d\d:\d\d)"""",
-    """"patterns":"({alert_name}[^"]{1,2000})"""",
-    """"status":"({alert_type}[^"]{1,2000})"""",
-    """"folder":"({target}[^"]{1,2000})"""",
-    """"filename":"({file_name}[^"]{1,2000}?(\.({file_ext}[^"]{1,2000}))?)"""",
-    """"application":"({process}[^"]{1,2000})"""",
-    """"owner":"({user_email}[^"]{1,2000})"""",
-    """"filelink":"({additional_info}[^"]{1,2000})""""
+    """ext_time=({time}\d{1,100}\s{1,100}\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100})""",
+    """ext_patterns=({alert_name}.+?)\s{1,100}(\w+=|$)""",
+    """ext_status=({alert_type}.+?)\s{1,100}(\w+=|$)""",
+    """ext_folder=({target}.+?)\s{1,100}(\w+=|$)""",
+    """ext_filename=\s{0,100}(|({file_name}.+?(\.({file_ext}[^\.\s"]{1,2000}))?))\s{1,100}(\w+=|$)""",
+    """ext_application=({process}.+?)\s{1,100}(\w+=|$)""",
+    """ext_owner=({user_email}.+?)\s{1,100}(\w+=|$)""",
+    """ext_filelink=({additional_info}.+?)\s{1,100}(\w+=|$)""",
   ]
 
 

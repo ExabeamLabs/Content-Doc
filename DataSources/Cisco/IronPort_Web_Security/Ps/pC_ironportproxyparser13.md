@@ -17,6 +17,7 @@ ironport-proxy-2 = {
       """User Agent = "({user_agent}[^"]{1,2000})?"""",
       """Auth-scheme = (NONE|({auth_method}\S+))""",
       """AD Group Memberships = \(.+?\) (-|"({group}[^\]]{1,2000})")\s\]""",
+      """\shttp.+?({top_domain}[^\/\.\s]{1,2000}(?i)(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)"""
    ]
  
 }

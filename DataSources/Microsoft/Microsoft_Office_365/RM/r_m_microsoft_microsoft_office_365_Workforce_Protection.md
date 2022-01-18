@@ -1,0 +1,12 @@
+Vendor: Microsoft
+=================
+### Product: [Microsoft Office 365](../ds_microsoft_microsoft_office_365.md)
+### Use-Case: [Workforce Protection](../../../../UseCases/uc_workforce_protection.md)
+
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   4   |   2    |     1      |     20      |   20    |
+
+| Event Type          | Rules                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Models                                                                                                                          |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| dlp-email-alert-out | <b>T1048.003 - Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol</b><br> ↳ <b>EM-Competition</b>: Email to competition<br> ↳ <b>EM-OutSpam-L</b>: Email sent to more recipients than usual, at least one external. (L)<br> ↳ <b>EM-G-EXEC-F</b>: First time this peer group has forwarded/sent an email from an executive user<br> ↳ <b>EM-Personal-Job</b>: Email with job seeking keywords in subject is sent to personal email address from company email address |  • <b>EM-G-EXEC</b>: Peer groups that send emails from executives<br> • <b>EM-Recipients-usr</b>: Recipients per Email for user |
