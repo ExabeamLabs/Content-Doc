@@ -9,8 +9,8 @@ Name = f5-silverline-network-alert-1
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """ type = waf,""", """, policy_name=""", """, request_status=""", """, violations=""" ]
   Fields = [
-    """date_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """dest_ip\s{0,100}=\s{0,100}({dest_ip}[A-Fa-f:\d.]{1,2000})""",
     """dest_port\s{0,100}=\s{0,100}({dest_port}\d{1,100})""",
     """policy_name\s{0,100}=\s{0,100}(|({policy}[^,]{1,2000})),""",

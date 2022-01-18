@@ -3,7 +3,7 @@
 {
 Name = cc-pulsesecure-failed-vpn-login-1
   DataType = "failed-vpn-login"
-  Conditions = [ """"host":""", """"PulseSecure:"""", """Login failed.""", """Reason:""" ]
+  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """"PulseSecure:"""", """Login failed.""", """Reason:""" ]
   Fields = ${JuniperParserTemplates.cef-pulsesecure-vpn-events.Fields} [
     """Reason:\s{1,100}({failure_reason}[^"]{1,2000})""""
   ]

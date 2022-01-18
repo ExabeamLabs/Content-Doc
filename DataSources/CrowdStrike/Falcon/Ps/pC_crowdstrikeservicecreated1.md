@@ -10,14 +10,12 @@ Name = crowdstrike-service-created-1
   Conditions = [ """"event_simpleName":"CreateService"""" ]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
-    """"timestamp":"({time}\d{1,100})"""",
-    """"(ServiceImagePath|CommandLine)":"(|({process}({directory}(?:(\w+:\\{1,20})?[^:"]{1,2000}?)?[\\\/])?({process_name}[^"\\\s]{1,2000}?)))(\s|")""",
+    """"timestamp":"({time}\d{1,100})""",
+    """"(ServiceImagePath|CommandLine)":"(|({process}({directory}(?:(\w+:)?[^:"]{1,2000}?)?[\\\/])?({process_name}[^"\\\s]{1,2000}?)))\s""",
     """"ServiceDisplayName":"({service_name}[^"]{1,2000})""",
     """"UserName":"({user}[^"\s]{1,2000})"""",
     """"ServiceDescription":"({additional_info}[^"]{1,2000})"""
-    """"aid":"({aid}[^"]{1,2000})""",
-    """"event_simpleName":"({event_code}CreateService)"""",
-    """"ServiceImagePath":"({command_line}[^"]{1,2000})"""
+    """"aid":"({aid}[^"]{1,2000})"""
   ]
   DupFields = [ "directory->process_directory" ]
 

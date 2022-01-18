@@ -7,7 +7,7 @@ Name = bitglass-dlp-email-alert-out
   Lms = Direct
   DataType = "dlp-email-alert"
   TimeFormat = "dd MMM yyyy HH:mm:ss"
-  Conditions = [ """Email, Send, Web""", """ api.bitglass.com """, """"application":""", """"Office 365"""" ]
+  Conditions = [ """Email, Send, Web""", """ api.bitglass.com """ ]
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """"time":\s{0,100}"({time}\d{1,100} \w+ \d\d\d\d \d\d:\d\d:\d\d)""",
@@ -22,7 +22,7 @@ Name = bitglass-dlp-email-alert-out
     """"emailfrom":\s{0,100}"({sender}[^"]{1,2000})"""",
     """"emailto":\s{0,100}"({recipients}[^"]{1,2000})"""",
     """"emailto":\s{0,100}"({recipient}[^",]{1,2000})""",
-    """"emailto":\s{0,100}"({external_address}[^",@]{1,2000}@[^",]{1,2000})""",
+    """"emailto":\s{0,100}"({external_address}[^",@]{1,2000}@({external_domain}[^",]{1,2000}))""",
     """"emailsubject":\s{0,100}"({subject}[^"]{1,2000})""""
   ]
 

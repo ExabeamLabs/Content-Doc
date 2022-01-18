@@ -22,6 +22,11 @@ Name = s-juniper-pulse-activity
     """User\\*=({user}[^\s&"]{1,2000})""",
     """DeviceType\\*=({src_host}[^"&]{1,2000})""",
     """agent="({user_agent}[^"]{1,2000})"""",
+    """agent="({browser}[\w\-]{1,2000})""",
+    """agent="({browser}[\w\-]{1,2000})\/[\d\._]{1,2000}""",
+    """agent="(({browser}[^\/]{1,2000}).+)?({os}iOS|Android|BlackBerry|Mac OS X|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)""",
+    """agent="Mozilla\/.+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
+    """agent="Mozilla\/.+\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+Gecko\/\d{1,100}\s{1,100}({browser}\w+)""",
    ]
 
 

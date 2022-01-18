@@ -3,9 +3,6 @@
 {
 Name = leef-pan-virus-alert
   Conditions = [ """|Palo Alto Networks|PAN-OS""", """|Subtype=virus|""" ]
-  Fields = ${PaloAltoParserTemplates.leef-pan-alert.Fields}[
-    """\|DestinationUser=({target_domain}[^\\\|]{1,2000})\\({target_user}[^\s\|]{1,2000})"""
-  ]
 
 leef-pan-alert = {
   Vendor = Palo Alto Networks
@@ -15,8 +12,8 @@ leef-pan-alert = {
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
   Fields = [
     """ReceiveTime=({time}\d\d\d\d\/\d\d\/\d\d \d\d:\d\d:\d\d)""",
-    """({host}[\w\.-]{1,2000})(\s{1,100}|,"{1,100})LEEF:""",
-    """\|DeviceName =({host}[^\|"]{1,2000}?)\s{0,100}(\||"{0,20}$)""",
+    """({host}[\w\.-]{1,2000})\s{1,100}LEEF:""",
+    """\|DeviceName =({host}[^\|]{1,2000}?)\s{0,100}(\||$)""",
     """\|Subtype=({alert_type}[^\|]{1,2000})""",
     """\|src=({src_ip}[a-fA-F\d.:]{1,2000})""",
     """\|dst=({dest_ip}[a-fA-F\d.:]{1,2000})""",
@@ -31,8 +28,6 @@ leef-pan-alert = {
     """\|Severity=({alert_severity}[^\|]{1,2000})""",
     """\|ThreatCategory=(?:unknown|({threat_category}[^\|]{1,2000}))""",
     """usrName =({domain}[^\\\|]{1,2000})\\({user}[^\s\|]{1,2000})""",
-    """\|SourceZone=({src_network_zone}[^\|]{1,2000}?)\|""",
-    """\|DestinationZone=({dest_network_zone}[^\|]{1,2000}?)\|""",
     
 }
 ```

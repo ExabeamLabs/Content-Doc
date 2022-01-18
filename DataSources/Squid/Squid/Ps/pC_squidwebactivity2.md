@@ -25,6 +25,7 @@ Name = squid-web-activity-2
     """\Wtk_scan_type=({scan_type}[^,"]{1,2000})""",
     """\Wtk_rule_name=({rule}[^,"]{1,2000})""",
     """\Wtk_filter_action=({action}[^,"\s]{1,2000})""",
+    """\Wtk_url=[^,\s\?]{0,2000}?({top_domain}[^\\\/:\s.]{1,2000}(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)""",
     """\[({outcome}EVT_\w+)\s{0,100}\|""",
   ]
 

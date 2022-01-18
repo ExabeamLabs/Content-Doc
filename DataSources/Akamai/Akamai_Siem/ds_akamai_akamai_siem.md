@@ -4,18 +4,11 @@ Product: Akamai Siem
 --------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  18   |   5    |     3      |      1      |    1    |
+|   0   |   0    |     0      |      1      |    1    |
 
-|    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
-|:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  authentication-successful<br> ↳[akamai-security-alert](Ps/pC_akamaisecurityalert.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>11 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_akamai_akamai_siem_Abnormal_Authentication_&_Access.md) |
-|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  authentication-successful<br> ↳[akamai-security-alert](Ps/pC_akamaisecurityalert.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>7 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_akamai_akamai_siem_Compromised_Credentials.md)    |
-|    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  authentication-successful<br> ↳[akamai-security-alert](Ps/pC_akamaisecurityalert.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_akamai_akamai_siem_Lateral_Movement.md)    |
-|    [Malware](../../../UseCases/uc_malware.md)    |  authentication-successful<br> ↳[akamai-security-alert](Ps/pC_akamaisecurityalert.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_akamai_akamai_siem_Malware.md)    |
-|    [Ransomware](../../../UseCases/uc_ransomware.md)    |  authentication-successful<br> ↳[akamai-security-alert](Ps/pC_akamaisecurityalert.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_akamai_akamai_siem_Ransomware.md)    |
+|  Use-Case  | Event Types/Parsers    | MITRE TTP | Content    |
+|:----------:| ---- | --------- | ---- |
+| Enrichment |  authentication-successful<br> ↳[akamai-security-alert](Ps/pC_akamaisecurityalert.md)<br> |    | [](RM/r_m_akamai_akamai_siem_Enrichment.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
-| Initial Access                                                                                                                                   | Execution | Persistence                                                                                                                                      | Privilege Escalation                                                | Defense Evasion                                                     | Credential Access | Discovery | Lateral Movement | Collection | Command and Control                                                                                                                       | Exfiltration | Impact |
-| ------------------------------------------------------------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
-| [External Remote Services](https://attack.mitre.org/techniques/T1133)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |           | [External Remote Services](https://attack.mitre.org/techniques/T1133)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   |           |                  |            | [Proxy: Multi-hop Proxy](https://attack.mitre.org/techniques/T1090/003)<br><br>[Proxy](https://attack.mitre.org/techniques/T1090)<br><br> |              |        |

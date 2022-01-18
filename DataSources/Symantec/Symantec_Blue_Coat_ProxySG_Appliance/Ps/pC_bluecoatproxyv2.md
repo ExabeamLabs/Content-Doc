@@ -14,7 +14,6 @@ Name = bluecoat-proxy-v2
     """\tcs-userdn=(?:-|(({domain}[^\\\t]{1,2000})\\)?({user}[^\s\t]{1,2000}))""",
     """\Ws-ip="?(-|({host}[^"|]{1,2000}))("|\||$|\t|\s{1,100}[\w\-\(\)]{1,2000}=)""",
     """\Ws-computername="?(-|({host}[^"|]))("|\||$|\t|\s{1,100}[\w\-\(\)]{1,2000}=)""",
-    """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)"""",
     """date="?({time}\d\d\d\d-\d\d-\d\d"?(,|\t|\s)time="?\d\d:\d\d:\d\d)""",
     """\Wdevicetime=\[({time}\d{1,100}\/\d{1,100}\/\d{1,100}:\s{0,100}\d{1,100}:\d{1,100}:\d{1,100} [^\]]{1,2000})""",
     """date="({time}\d\d\/\d\d\/\d\d\d\d:\s\d\d:\d\d:\d\d[^"]{1,2000})"""",
@@ -41,9 +40,15 @@ Name = bluecoat-proxy-v2
     """\W(sc-)?filter-category="?((?i)none|-|({category}[^"|]{1,2000}))\s{0,100}("|\||$|\t|\s{1,100}[\w\-\(\)]{1,2000}=)""",
     """\Wcs-categories="?((?i)none|-|({category}[^"|]{1,2000}))"?\s{0,100}("|\||$|\t|;|\s{1,100}[\w\-\(\)]{1,2000}=)""",
     """\Wcs-categories="?((?i)none|-|({categories}[^"|]{1,2000}))"?\s{0,100}("|\||$|\t|\s{1,100}[\w\-\(\)]{1,2000}=)""",
+    """\Wcs\(User-Agent\)="?(-|({browser}[\w\-]{1,2000}))""",
+    """\Wcs\(User-Agent\)="?(-|({browser}[\w\-]{1,2000})\/[\d\._]{1,2000})""",
+    """\Wcs\(User-Agent\)="?(-|({browser}[^\/]{1,2000})[^=]{1,2000}({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin))""",
+    """\Wcs\(User-Agent\)="?(-|Mozilla\/[^=]{1,2000}\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]{1,2000}?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
+    """\Wcs\(User-Agent\)="?(-|Mozilla\/[^=]{1,2000}\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]{1,2000}Gecko\/\d{1,100}\s{1,100}({browser}\w+))""",
+    """\Wcs-usr-agent="?(-|Mozilla\/[^=]{1,2000}\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]{1,2000}?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
+    """\Wcs-host="?([^"=]{1,2000}?)({top_domain}(?!(?:\d{1,100}\.){3}\d{1,100})[^\.\s\t]{1,2000}(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)\s{0,100}("|\||$|\t|\s{1,100}[\w\-\(\)]{1,2000}=)""",
     """\Wcs\(Referer\)"?=("?-"?|"?({referrer}[^"\|\t]{1,2000}?)"?)\s{0,100}("|\||$|\t|\s{1,100}[\w\-\(\)]{1,2000}=)"""
   ]
-  DupFields = [ "external_dest_ip->dest_ip" ]
 
 
 }

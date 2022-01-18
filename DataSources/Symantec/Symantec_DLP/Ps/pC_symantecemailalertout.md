@@ -11,7 +11,7 @@ Name = symantec-email-alert-out
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """({host}[\w.\-]{1,2000})\s{1,100}incident_id=""",
-    """recipient=({recipient}[^,@]{1,2000}@[^,]{1,2000}),""",
+    """recipient=({recipient}[^,@]{1,2000}@({external_domain}[^,]{1,2000})),""",
     """sender=({sender}[^,]{1,2000}),""",
     """Subject=({subject}.+?)\s{0,100
 

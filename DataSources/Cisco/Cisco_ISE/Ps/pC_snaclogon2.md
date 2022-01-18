@@ -16,16 +16,14 @@ Name = s-nac-logon-2
     """({event_name}CISE_Passed_Authentications)""",
     """suser=({user}[^\s]{1,2000})""",
     """dhost=({dest_host}[^\s]{1,2000})""",
-    """dst=({dest_ip}[A-Fa-f:\d.]{1,2000})\s""",
-    """dst=({auth_server}[A-Fa-f:\d.]{1,2000})\s""",
+    """dst=({dest_ip}[A-Fa-f:\d.]{1,2000})""",
+    """dst=({auth_server}[A-Fa-f:\d.]{1,2000})""",
     """dpt=({dest_port}\d{1,100})""",
     """Cisco ISE\|(|[^\|]{1,2000})\|({event_code}\d{1,100})\|""",
-    """deviceSeverity=((?i)UNKNOWN|({severity}[^\s]{1,2000}))""",
+    """deviceSeverity=({severity}[^\s]{1,2000})""",
     """cs1=({auth_method}[^\s]{1,2000})""",
     """ad.User=({user}[^\s]{1,2000})""",
     """NetworkDeviceName\\*=({network}[^,\s]{1,2000})"""
-    """dvchost=({dest_host}[^\s]{1,2000})""",
-    """dvc=({dest_ip}[A-Fa-f:\d.]{1,2000})\s""" 
   ]
   DupFields = ["dest_host->auth_server"]
 

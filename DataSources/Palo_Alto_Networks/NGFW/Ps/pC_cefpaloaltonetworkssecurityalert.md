@@ -5,12 +5,11 @@ Name = cef-palo-alto-networks-security-alert
   Vendor = Palo Alto Networks
   Product = NGFW
   Lms = ArcSight
-  DataType = "network-alert"
+  DataType = "alert"
   TimeFormat = "epoch"
   Conditions = [ """|Palo Alto Networks|PAN-OS|""", """|spyware|THREAT|""" ]
   Fields = [
     """\sdvchost=({host}[\w\-.]{1,2000})""",
-    """rt=({time}\w{3}\s\d\d\s\d\d\d\d\s\d\d:\d\d:\d\d\s\w{3})\s{1,100}(\w+=|$)""",
     """\srt=({time}\d{1,100})\s{1,100}(\w+=|$)""",
     """\scat=({alert_name}[^=]{1,2000})\s{1,100}(\w+=|$)""",
     """\sshost=({src_host}[^=]{1,2000})\s{1,100}(\w+=|$)""",
@@ -24,7 +23,13 @@ Name = cef-palo-alto-networks-security-alert
     """\ssuser=((({domain}[^\\\/=]{1,2000})[\\\/]{1,2000})?({user}[^\s]{1,2000}))"""
   ]
   DupFields = [ "alert_name->alert_type" ]
-
+  SOAR {
+    IncidentType = "malware"
+    DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_name->malwareName", "threat_category->malwareCategory", "alert_severity->sourceSeverity", "alert_id->sourceId", "src_host->malwareVictimHost", "alert_type->description", "dest_ip->malwareAttackerIp"]
+    NameTemplate = """Palo Alto Alert ${alert_name} found"""
+    ProjectName = "SOC"
+    EntityFields = [
+      {EntityType="device", Name ="src_address", Fields=["src_ip->ip_address", "src_host->host_name"]
 
 }
 ```

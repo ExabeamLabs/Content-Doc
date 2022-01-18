@@ -4,15 +4,11 @@ Product: MDAM
 -------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  18   |   9    |     1      |      3      |    3    |
+|   0   |   0    |     0      |      3      |    3    |
 
-|    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
-|:----:| ---- | ---- | ---- |
-| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  database-delete<br> ↳[cef-mdam-db-alert](Ps/pC_cefmdamdbalert.md)<br><br> database-query<br> ↳[s-mdam-db-query](Ps/pC_smdamdbquery.md)<br> ↳[s-mdam-db-query](Ps/pC_smdamdbquery.md)<br><br> database-update<br> ↳[s-mdam-db-query](Ps/pC_smdamdbquery.md)<br> | T1213 - Data from Information Repositories<br> | [<ul><li>18 Rules</li></ul><ul><li>9 Models</li></ul>](RM/r_m_mcafee_mdam_Compromised_Credentials.md) |
-|    [Data Access](../../../UseCases/uc_data_access.md)    |  database-delete<br> ↳[cef-mdam-db-alert](Ps/pC_cefmdamdbalert.md)<br><br> database-query<br> ↳[s-mdam-db-query](Ps/pC_smdamdbquery.md)<br> ↳[s-mdam-db-query](Ps/pC_smdamdbquery.md)<br><br> database-update<br> ↳[s-mdam-db-query](Ps/pC_smdamdbquery.md)<br> | T1213 - Data from Information Repositories<br> | [<ul><li>18 Rules</li></ul><ul><li>9 Models</li></ul>](RM/r_m_mcafee_mdam_Data_Access.md)    |
+|  Use-Case  | Event Types/Parsers    | MITRE TTP | Content    |
+|:----------:| ---- | --------- | ---- |
+| Enrichment |  database-delete<br> ↳[cef-mdam-db-alert](Ps/pC_cefmdamdbalert.md)<br><br> database-query<br> ↳[s-mdam-db-query](Ps/pC_smdamdbquery.md)<br> ↳[s-mdam-db-query](Ps/pC_smdamdbquery.md)<br><br> database-update<br> ↳[s-mdam-db-query](Ps/pC_smdamdbquery.md)<br> |    | [](RM/r_m_mcafee_mdam_Enrichment.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
-| Initial Access | Execution | Persistence | Privilege Escalation | Defense Evasion | Credential Access | Discovery | Lateral Movement | Collection                                                                              | Command and Control | Exfiltration | Impact |
-| -------------- | --------- | ----------- | -------------------- | --------------- | ----------------- | --------- | ---------------- | --------------------------------------------------------------------------------------- | ------------------- | ------------ | ------ |
-|                |           |             |                      |                 |                   |           |                  | [Data from Information Repositories](https://attack.mitre.org/techniques/T1213)<br><br> |                     |              |        |

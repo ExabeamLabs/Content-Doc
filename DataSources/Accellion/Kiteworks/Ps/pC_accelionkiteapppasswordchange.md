@@ -2,7 +2,6 @@
 ```Java
 {
 Name = accelion-kite-app-password-change
-  Product = Kiteworks
   DataType = "password-change"
   Conditions = [ """url_host""", """app_host""", """description""", """update_password""", """event""" ]
   Fields = ${KiteWorksParserTemplates.accelion-kite-app.Fields}[

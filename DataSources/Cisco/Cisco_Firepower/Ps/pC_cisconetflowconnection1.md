@@ -28,7 +28,6 @@ Name = cisco-netflow-connection-1
     """InitiatorBytes:\s{0,100}({bytes_in}\d{1,100})""",
     """ResponderBytes:\s{0,100}({bytes_out}\d{1,100})""",
   ]
-  DupFields = [ "outcome->action" ]
 
 
 }

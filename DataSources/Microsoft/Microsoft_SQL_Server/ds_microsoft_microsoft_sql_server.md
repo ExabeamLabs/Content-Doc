@@ -1,0 +1,14 @@
+Vendor: Microsoft
+=================
+Product: Microsoft SQL Server
+-----------------------------
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|   0   |   0    |     0      |      7      |    7    |
+
+|  Use-Case  | Event Types/Parsers    | MITRE TTP | Content    |
+|:----------:| ---- | --------- | ---- |
+| Enrichment |  database-access<br> ↳[cef-mssql-database-login](Ps/pC_cefmssqldatabaselogin.md)<br><br> database-failed-login<br> ↳[xml-mssql-database-login](Ps/pC_xmlmssqldatabaselogin.md)<br><br> database-login<br> ↳[s-database-login-18454](Ps/pC_sdatabaselogin18454.md)<br> ↳[s-database-login-18453](Ps/pC_sdatabaselogin18453.md)<br> ↳[cef-syslog-microsoft-db-login](Ps/pC_cefsyslogmicrosoftdblogin.md)<br> ↳[cef-syslog-microsoft-db-impersonate](Ps/pC_cefsyslogmicrosoftdbimpersonate.md)<br> ↳[s-mssql-database-login-xml](Ps/pC_smssqldatabaseloginxml.md)<br> ↳[s-mssql-database-login](Ps/pC_smssqldatabaselogin.md)<br> ↳[mssql-database-login](Ps/pC_mssqldatabaselogin.md)<br> ↳[cef-microsoft-database-login](Ps/pC_cefmicrosoftdatabaselogin.md)<br> ↳[s-mssql-database-login-1](Ps/pC_smssqldatabaselogin1.md)<br> ↳[xml-mssql-database-login](Ps/pC_xmlmssqldatabaselogin.md)<br> ↳[xml-mssql-database-login-1](Ps/pC_xmlmssqldatabaselogin1.md)<br> ↳[s-mssql-database-login-failed-xml](Ps/pC_smssqldatabaseloginfailedxml.md)<br> ↳[s-mssql-database-login-failed](Ps/pC_smssqldatabaseloginfailed.md)<br> ↳[cef-microsoft-database-failed-login](Ps/pC_cefmicrosoftdatabasefailedlogin.md)<br> ↳[xml-mssql-database-login](Ps/pC_xmlmssqldatabaselogin.md)<br> ↳[xml-mssql-database-login-1](Ps/pC_xmlmssqldatabaselogin1.md)<br> ↳[mssql-database-login-1](Ps/pC_mssqldatabaselogin1.md)<br> ↳[s-microsoft-database-login](Ps/pC_smicrosoftdatabaselogin.md)<br><br> database-query<br> ↳[mssql-database-query-3](Ps/pC_mssqldatabasequery3.md)<br> ↳[s-mssql-database-query-sl-xml](Ps/pC_smssqldatabasequeryslxml.md)<br> ↳[s-mssql-database-query-al](Ps/pC_smssqldatabasequeryal.md)<br> ↳[s-mssql-database-query-dl](Ps/pC_smssqldatabasequerydl.md)<br> ↳[s-mssql-database-query-sl](Ps/pC_smssqldatabasequerysl.md)<br> ↳[s-mssql-database-query-dl-xml](Ps/pC_smssqldatabasequerydlxml.md)<br> ↳[s-mssql-database-query-al-xml](Ps/pC_smssqldatabasequeryalxml.md)<br> ↳[mssql-database-query-2](Ps/pC_mssqldatabasequery2.md)<br> ↳[cef-mssql-database-access](Ps/pC_cefmssqldatabaseaccess.md)<br> ↳[mssql-database-query-2](Ps/pC_mssqldatabasequery2.md)<br><br> failed-app-login<br> ↳[s-failed-app-login](Ps/pC_sfailedapplogin.md)<br> ↳[exalms-sqlserver-failed-login](Ps/pC_exalmssqlserverfailedlogin.md)<br><br> file-read<br> ↳[s-microsoft-database-login](Ps/pC_smicrosoftdatabaselogin.md)<br><br> web-activity-denied<br> ↳[cef-microsoft-database-delete](Ps/pC_cefmicrosoftdatabasedelete.md)<br> |    | [](RM/r_m_microsoft_microsoft_sql_server_Enrichment.md) |
+
+ATT&CK Matrix for Enterprise
+----------------------------

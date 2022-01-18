@@ -2,13 +2,13 @@
 ```Java
 {
 Name = leef-crowdstrike-dnsrequests
-  DataType = "dns-query"
-  Conditions = [ """LEEF:""", """|CrowdStrike|FalconHost|""", """cat=DnsRequests""" ]
+  Conditions = [ """0|CrowdStrike|FalconHost|""", """cat=DnsRequests""" ]
   Fields = ${CrowdStrikeParserTemplates.leef-crowdstrike-alert-t.Fields} [
     """CrowdStrike\|([^|]{1,2000}\|){2}({alert_name}[^|]{1,2000})""",
-    """\WdnsRequestDomain=({query}[^\s|"]{1,2000}?)(\t|\s{1,100}\w{1,1000}=|\s{0,100}\||\s{0,100}$|\s{0,100}"{1,20}\s{0,100}$)""",
-    """\WrequestType=({query_type}[^="|]{1,2000}?)(\t|\s{1,100}\w{1,1000}=|\s{0,100}\||\s{0,100}$|\s{0,100}"{1,20}\s{0,100}$)"""
+    """\WdnsRequestDomain=({query}[^\s|"]{1,2000}?)(\t|\s{1,100}\w+=|\s{0,100}\||\s{0,100}$|\s{0,100}"{1,20}\s{0,100}$)""",
+    """\WrequestType=({query_type}[^="|]{1,2000}?)(\t|\s{1,100}\w+=|\s{0,100}\||\s{0,100}$|\s{0,100}"{1,20}\s{0,100}$)"""
   ]
+   DupFields = ["query->malware_url", "category->alert_type"]
 
 leef-crowdstrike-alert-t = {
     Vendor = CrowdStrike

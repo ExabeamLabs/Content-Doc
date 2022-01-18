@@ -7,7 +7,7 @@ Name = s-mcafee-print-activity-1
   Lms = Splunk
   DataType = "print-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
-  Conditions = [ """IncidentType="""", """ViolationLocalTime="""", """RulesToDisplay=""", """Printing""", """FileName =""" ]  
+  Conditions = [ """IncidentType="""", """ViolationLocalTime="""", """RulesToDisplay=""", """Printing""", """FileName =""", """ShortMatchString=""" ]  
   Fields = [
      """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d{1,100}), IncidentId""",
      """\sApplicationProductName ="{0,20}({app}[^"]{1,2000})""",

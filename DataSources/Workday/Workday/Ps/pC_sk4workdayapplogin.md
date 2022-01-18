@@ -3,7 +3,7 @@
 {
 Name = sk4-workday-app-login
   DataType = "app-login"
-  Conditions = [ """"successful":true""", """"signonDateTime":""", """workday""", """"authenticationChannel":"""]
+  Conditions = [ """sk4-login-success""","""cat=access""","""workday"""]
   Fields = ${WorkdayParserTemplates.sk4-workday-login-template.Fields}[]
 
 sk4-workday-login-template = {
@@ -15,9 +15,10 @@ sk4-workday-login-template = {
       """exabeam_host=({host}[\w.\-]{1,2000})""",
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """destinationServiceName =({app}[^ ]{1,2000})""",
+      """dproc=({host}[^\s]{1,2000})\s{1,100}\w+=""",
       """msg=({additional_info}[^=]{1,2000}?)\s\w+=.""",
-      """"signonIPAddress":"({src_ip}[A-Fa-f.\d:]{1,2000})""",
-      """"userName":"({user}[^"]{1,2000})""",
+      """src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+      """suser=;?({user}[^\s;]{1,2000})""",
       """"{1,20}authenticationType"{1,20}:"{1,20}({auth_method}[^"]{1,2000})"{1,20}""",
       """"authenticationChannel"{1,20}:"{1,20}({auth_method}[^"]{1,2000})""",
       """"signonDateTime"{1,20}:({time}\d{1,100})""",

@@ -11,7 +11,6 @@ Name = vmware-esxi-login-1
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """({host}[^\s]{1,2000})\s{1,100}\d{1,100}\s{1,100}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """({host}[\w\-\.]{1,2000})\s{0,100}vpxd""",
     """User\s{1,100}((({domain}[^\\\s@]{1,2000})\\+)?({user}[^\s\\@]{1,2000})).+?\s{0,100}logged""",
     """\[({event_name}User.+?logged (out|in))""",
     """user agent:\s{1,100}({user_agent}[^)]{1,2000})"""

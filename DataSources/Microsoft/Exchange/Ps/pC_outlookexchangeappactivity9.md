@@ -2,8 +2,6 @@
 ```Java
 {
 Name = outlook-exchange-app-activity-9
-  Vendor = Microsoft
-  Product = Exchange
   Conditions = ["""Office365""",""" COMMAND=SendAs ""","""USERKEY=""","""ORGANIZATIONNAME=""","""SENDASUSER=""" ]
   Fields = ${MSParserTemplates.outlook-exchange-app-activity.Fields} [
     """SENDASUSER=({target}[^\s]{1,2000})""",

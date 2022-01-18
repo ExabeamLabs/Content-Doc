@@ -26,6 +26,7 @@ cef-symantec-web-activity = {
     """"url":\{.*?"method":"(?:unknown|({method}[^"]{1,2000}))"""",
     """"url":\{.*?"port":({dest_port}\d{1,100})""",
     """"url":\{.*?"host":"({web_domain}[^"]{1,2000})"""",
+    """"url":\{.*?"host":"[^"]{0,2000}?(?!\d{1,3}\.\d{1,3}\.\d{1,3})({top_domain}[^"\.\/]{1,2000}(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)"""",
     """"product_name":"({product_name}[^"]{1,2000})"""",
   ]
   DupFields = [ "web_domain->full_url" 

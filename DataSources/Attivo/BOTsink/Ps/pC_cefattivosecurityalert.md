@@ -17,7 +17,7 @@ Name = cef-attivo-security-alert
     """\Wduser=(|({user}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wshostname=(|({dest_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wsmac=(|({dest_mac}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
-    """\Wdhost=(|({src_host}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wdhost=(|({src_shost}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 
 

@@ -18,6 +18,7 @@ Name = s-dlp-email-out
     """sourceServiceName =(SMTP|Endpoint Email).+?loginName =([^\\]{1,2000}\\+)?({sender}.+?)\s{1,100}(\w+=|$)""",
     """\sduser=\\*(({target_domain}[^\\]{1,2000})\\+)?({target}.+?)\s{1,100}fname=.+?sourceServiceName =(?!(SMTP|Endpoint Email))""",
     """\sduser=({external_address}[^\s;]{1,2000}).+?sourceServiceName =(SMTP|Endpoint Email)""",
+    """\sduser=[^@]{1,2000}@({external_domain}[^\s;]{1,2000}).+?sourceServiceName =(SMTP|Endpoint Email)""",
     """\sduser=({recipients}.+?)\s{1,100}(\w+=|$).+?sourceServiceName =(SMTP|Endpoint Email)""",
     """\sfname=(N\/A|.*?[\/\\]{0,2000}({file_name}[^\\\/]{1,2000}))\s{1,100}\- [\d.]{1,2000} """,
     """\sfname=(N\/A|({attachment}.+?))\s{1,100}(\w+=|$).+?sourceServiceName =(SMTP|Endpoint Email)""",

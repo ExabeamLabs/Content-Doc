@@ -20,8 +20,8 @@ Name = meraki-network-connection-1
     """\sduration\\*='({duration}[^']{1,2000})""",
     """\sip_src\\*='({src_ip}[^']{1,2000})""",
     """\sdhcp_ip\\*='({dhcp_ip}[^']{1,2000})""",
-    """\sidentity\\*='(({user_email}[^@'\s]{1,2000}@({email_domain}[^\s'.]{1,2000}\.[^\s']{1,2000}))|((({domain}[^'\s\\\/]{1,2000})[\\\/])?({user}[^']{1,2000})))'"""
   ]
+  DupFields = [ "aid->user" ]
 
 
 }

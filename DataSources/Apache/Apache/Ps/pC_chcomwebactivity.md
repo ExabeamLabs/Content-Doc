@@ -19,6 +19,8 @@ Name = chcom-web-activity
     """bytes":"(-|({bytes_out}\d{1,100}))""",
     """referrer":"(-|({referrer}[^"]{1,2000}))"""",
     """user_agent":"(-|({user_agent}[^"]{1,2000}))"""",
+    """Mozilla\/[^"]{1,2000}\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)""",
+    """Mozilla\/[^"]{1,2000}?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
     """location":"(-|({full_url}[^"]))""""
   ]
 

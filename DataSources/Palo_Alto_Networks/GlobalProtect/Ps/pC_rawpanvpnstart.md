@@ -14,10 +14,9 @@ Name = raw-pan-vpn-start
     """Login from:\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """({time}\d\d\d\d/\d\d/\d\d \d{1,100}:\d{1,100}:\d{1,100})""",
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[^\s]{1,2000})""",
-    """globalprotectgateway-\S+?,({host}[\w.-]{1,2000}?),""",
+    """globalprotectgateway-\S+?,({host}.+?),""",
     """SYSTEM,({vpn_client}[^,]{1,2000}),""",
-    """Source region:\s{0,100}({src_country}[^,]{1,2000})""",
-    """:\d\d:\d\d (-|({host}[\w.-]{1,2000}))\s"""
+    """Source region:\s{0,100}({src_country}[^,]{1,2000})"""
   ]
 
 

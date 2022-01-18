@@ -10,7 +10,7 @@ Name = zscaler-vpn-user
   Conditions = [ """ User Activity zpa-lss:""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
-    """\w+ ({time}\w+\s{1,100}\d{1,100} \d\d:\d\d:\d\d \d\d\d\d) User Activity zpa-lss:([^,]{0,2000
+    """\w+ ({time}\w+ \d{1,100} \d\d:\d\d:\d\d \d\d\d\d) User Activity zpa-lss:([^,]{0,2000
 
 }
 ```

@@ -28,11 +28,17 @@ Name = websense-proxy-1
       """\scat=({category_id}\d{1,100})""",
       """exabeam_qidName =.+?\s\-\s({category}[^=]{1,2000})\s{1,100}exabeam_""",
       """\suserAgent=(?:-|({user_agent}.+?))\s{1,100}\w+=""",
+      """\suserAgent=(?:-|({browser}[\w\-]{1,2000}))""",
+      """\suserAgent=(?:-|({browser}[\w\-]{1,2000})\/[\d\._]{1,2000})""",
+      """\suserAgent=(?:-|({browser}[^\/]{1,2000}).+({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin))""",
+      """\suserAgent=(?:-|Mozilla\/.+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
+      """\suserAgent=(?:-|Mozilla\/.+\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+Gecko\/\d{1,100}\s{1,100}({browser}\w+))""",
       """\surl=(?:-|({full_url}[^\s"]{1,2000}))""",
       """\surl=(?:-|({protocol}[^:]{1,2000}))""",
       """\surl=(?:[^:]{1,2000}:\/+)({web_domain}[^\/:\s]{1,2000})""",
       """\surl=(?:-|\w+:\/+[^\/]{1,2000})({uri_path}\/[^?\s]{1,2000})""",
       """\surl=(?:-|(?=(?)(?:[^?]{1,2000}({uri_query}\?[^\s"]{1,2000}))))""",
+      """\surl=(.*?)({top_domain}(?!(?:\d{1,100}\.){3}\d{1,100})[^\.\s\/:]{1,2000}(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+(\s|\/|$))[^\s\/]{1,2000})""",
     ]
   
 

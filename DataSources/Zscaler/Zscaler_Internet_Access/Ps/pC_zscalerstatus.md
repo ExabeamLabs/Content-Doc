@@ -9,10 +9,10 @@ Name = zscaler-status
   TimeFormat = "MMM dd HH:mm:ss yyyy"
   Conditions = ["""SessionStatus""" , """TimestampAuthentication""" , """CertificateCN"""]
   Fields = [
-     """({time}\w{3}\s{1,100}\d{1,100}\s\d\d:\d\d:\d\d\s\d\d\d\d)""",
+     """({time}\w{3}\s\d{1,100}\s\d\d:\d\d:\d\d\s\d\d\d\d)""",
      """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
-     """"SessionStatus":\s{0,100}"({outcome}[^"]{1,2000})""",
-     """Username":\s{0,100}"(({user_email}[^@"\s]{1,2000}@[^\s"]{0,2000})|((({domain}[^@"]{1,2000})@)?({user}[^\s"@]{1,2000}))|({user_fullname}[^"@]{1,2000}))"""",
+     """"SessionStatus":\s{0,100}"({outcome}[^"]{1,2000})"""
+     """Username":\s{0,100}"(({user_email}[^@]{1,2000}@[^\s]{0,2000})"|({user}[^\s]{1,2000}))(\s|,!?)"""
      """TotalBytesRx":\s{0,100}({bytes_in}[^,]{1,2000}),""",
      """TotalBytesTx":\s{0,100}({bytes_out}[^,]{1,2000}),""",
      """"PublicIP":\s{0,100}"({src_ip}[^"]{1,2000})""",

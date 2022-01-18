@@ -2,12 +2,8 @@
 ```Java
 {
 Name = s-okta-app-login-2
-    DataType = "authentication-successful"
-    Conditions = [ """"displayMessage": "Authenticate user with AD agent"""", """"result": "SUCCESS"""", """app.ad.agent.user_auth""" ]
-    Fields = ${OktaParserTemplates.s-okta-app-login.Fields}[
-      """({event_name}Authenticate user with AD agent)""",
-      """({activity}app.ad.agent.user_auth)""",
-    ]
+    DataType = "app-login"
+    Conditions = [ """"displayMessage": "Authenticate user with AD agent"""", """"result": "SUCCESS"""" ]
   
 s-okta-app-login = {
   Vendor = Okta
@@ -19,11 +15,13 @@ s-okta-app-login = {
     """"published":\s{0,100}"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """"userAgent":\s{0,100}\{[^\{\}]{0,2000}?"rawUserAgent":\s{0,100}"((?i)unknown|({user_agent}[^"]{1,2000}))""",
+    """"userAgent":\s{0,100}\{[^\{\}]{0,2000}?"browser":\s{0,100}"((?i)unknown|({browser}[^"]{1,2000}))""",
+    """"userAgent":\s{0,100}\{[^\{\}]{0,2000}?"os":\s{0,100}"((?i)unknown|({os}[^"]{1,2000}))""",
     """"ip":\s{0,100}"({src_ip}[^"]{1,2000})"""",
     """"request":\s{0,100}\{[^\}]{1,2000}?"ip":\s{0,100}"({src_ip}[a-fA-F:\d.]{1,2000})"""",
     """"type":\s{0,100}"({app}[^"]{1,2000})""",
     """({app}Okta)""",
-    """destinationServiceName({app}.+?)\s{0,100}\w+=""",
+    """requestClientApplication=({app}.+?)\s{0,100}\w+=""",
     """"target":\s{0,100}\[.*?\{.*?"displayName":\s{0,100}"({app}[^"]{1,2000})"[^\{\}]{0,2000}?"type":\s{0,100}"AppInstance"""",
     """"type":"AppInstance"[^\}\]]{0,2000}"displayName":"({app}[^"]{1,2000}?)\s{0,100}"""",
     """"actor":\s{0,100}\{[^\{\}]{0,2000}?"displayName":\s{0,100}"((?i)okta[^"]{0,2000}|unknown|({user_fullname}[^",]{1,2000}))"[^\{\}]{0,2000}?"type":\s{0,100}"User"""",

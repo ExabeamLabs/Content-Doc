@@ -12,7 +12,6 @@ Name = digitalguardian-process-created
   Fields = [
     """\sAgent_Begin_UTC_Time="({time}\d{1,100}/\d{1,100}/\d\d\d\d \d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM))""",
     """<\d{1,100}>\w+ \d{1,100} \d\d:\d\d:\d\d ({host}[\w.\-]{1,2000})""",
-    """Computer_Name ="([^\\]{0,2000}\\)?({host}[^"]{1,2000}?)"""",
     """\sApplication="\s{0,100}({process_name}[^"]{1,2000}?)\s{0,100}"""",
     """\sApplication_Directory="({directory}[^"]{1,2000})""",
     """\sParent_Application="\s{0,100}({parent_process_name}[^"]{1,2000}?)\s{0,100}"""",

@@ -1,0 +1,26 @@
+#### Parser Content
+```Java
+{
+Name = jp-share-access-5145
+  DataType = "share-access"
+  Conditions = [ """5145""", """クライアントに必要なアクセスを付与できるかどうかについて、ネットワーク共有オブジェクトがチェックされました。""" ]
+
+jp-event = {
+  Vendor = Microsoft
+  Product = Microsoft Windows
+  Lms = Direct
+  TimeFormat = "yyyy/MM/dd HH:mm:ss"
+  Fields = [
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """\sTimeGenerated=({time}\d{1,100})""",
+    """情報,({time}\d\d\d\d\/\d\d\/\d\d \d{1,100}:\d\d:\d\d),Microsoft-Windows-Security-Auditing,({event_code}\d{1,100})""",
+    """({event_name}[^,]{1,2000}),"{0,20}({additional_info}[^,"]{1,2000})\s{1,100}$""",
+    """\sアクセス:\s{0,100}({accesses}[^\s:]{1,2000})\s""",
+    """\sMessage=({event_name}\S+)""",
+    """\sセキュリティ ID:\s{0,100}({user_sid}[^:]{1,2000}?)\s{0,100}アカウント名:""",
+    """\sアカウント名:\s{0,100}({user}[^:]{1,2000}?)\s{0,100}アカウント ドメイン:""",
+    """\sアカウント ドメイン:\s{0,100}({domain}[^:]{1,2000}?)\s{0,100}ログオン ID:""",
+    """\sログオン ID:\s{0,100}({logon_id}\S+)""",
+  
+}
+```

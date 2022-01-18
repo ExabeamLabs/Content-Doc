@@ -3,10 +3,7 @@
 {
 Name = cef-netskope-app-login-1
   DataType = "app-login"
-  Conditions = [  """"type":"page"""", """destinationServiceName =Netskope""" ]
-  Fields = ${NetskopeParserTemplates.cef-netskope-activity.Fields} [
-    """"useragent":"({user_agent}[^"]{1,2000})""""
-  ]
+  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"page"""", """destinationServiceName =Netskope""" ]
 
 cef-netskope-activity = {
   Vendor = Netskope
@@ -35,7 +32,6 @@ cef-netskope-activity = {
     """"file_type":\s{0,100}"({file_type}[^"]{1,2000})"""",
     """"page_site":\s{0,100}"({app}[^"]{1,2000})"""",
     """"dstport":"\s{0,100}({dest_port}\d{1,100})""""
-    """"action":"({action}[^"]{1,2000})"""
   ]
   DupFields = ["domain->email_domain", "file_type->mime"
 }

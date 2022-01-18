@@ -9,7 +9,7 @@ Name = crowdstrike-usb-connect
   """DcUsbDevice({activity}Connected)"""
   """"event_simpleName":"({activity_details}[^"]{1,2000})"""
   """"DeviceInstanceId":"({device_id}[^"]{1,2000})"""
-  """"DevicePropertyDeviceDescription":"({device_type}[^"]{1,2000}?)\s{0,100}""""
+  """"DevicePropertyDeviceDescription":"({device_type}[^"]{1,2000})"""
   ]
 
 cef-crowdstrike-app-activity-temp = {
@@ -19,7 +19,7 @@ cef-crowdstrike-app-activity-temp = {
   DataType = "app-login"
   TimeFormat = "epoch"
   Fields = [
-    """"timestamp":\s{0,100}"{0,20}({time}\d{1,100})"""",
+    """"timestamp":\s{0,100}"{0,20}({time}\d{1,100})""",
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """"UserIp":\s{0,100}"({src_ip}[^"]{1,2000})""",
     """\WdestinationServiceName =({app}.+?)\s{1,100}\w+="""

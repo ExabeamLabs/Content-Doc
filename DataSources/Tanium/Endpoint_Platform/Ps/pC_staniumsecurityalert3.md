@@ -17,7 +17,6 @@ Name = s-tanium-security-alert-3
       """"user\\*":\\*"((NT AUTHORITY|({domain}[^"\\]{1,2000}))\\+)?(SYSTEM|({user}[^"]{1,2000}?))\\*"""",
       """"Priority":"({alert_severity}[^",]{1,2000})"""",
       """"Event Name":"({alert_name}[^",]{1,2000})"""",
-      """({alert_name}Reputation Malicious Files)""",
       """"Event Name":"({alert_type}[^",]{1,2000})"""",
       """"type\\*":\\*"({alert_type}[^"]{1,2000}?)\\*"""",
       """"Event Id":"({alert_id}[^",]{1,2000})"""",
@@ -26,7 +25,6 @@ Name = s-tanium-security-alert-3
       """"fullpath\\*":\\*"({malware_url}[^"]{1,2000}?)\\*"""",
       """"name\\*":\\*"({file_name}[^"]{1,2000}?)\\*"""",
       """"source\\*":\\*"({log_source}[^"]{1,2000}?)\\*"""",
-      """properties"{1,20}:[^\]]{1,2000}?fullpath"{1,20}:"{1,20}({process}({process_directory}[^"]{1,2000})\\+({process_name}[^"]{1,2000}))""",
     ]
   
 

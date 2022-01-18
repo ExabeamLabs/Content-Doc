@@ -7,7 +7,7 @@ Name = shibboleth-auth-successful
   Lms = Direct
   DataType = "authentication-successful"
   TimeFormat = "yyyyMMdd'T'HHmmssZ"
-  Conditions= [ """shibboleth:""" , """:SAML:""" ]
+  Conditions= [ """shibboleth""" , """:SAML:""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """({time}\d{8}T\d{6}Z)\|(|({request_binding}[^\|]{1,2000}))\|[^\|]{0,2000}\|(|({relying_party_id}[^\|]{1,2000}))\|([^\|]{0,2000}\|){4}(|({principal_name}[^\|]{1,2000}))\|""",

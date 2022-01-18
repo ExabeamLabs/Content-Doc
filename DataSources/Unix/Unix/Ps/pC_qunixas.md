@@ -21,7 +21,7 @@ Name = q-unix-as
     """({event_code}ssh)""",
     """"host":"(::ffff:)?({host}[^"]{1,2000})""",
     """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
-    """\d\d:\d\d:\d\d (::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^\s]{1,2000}))\s{1,100}sshd\["""
+    """\d\d:\d\d:\d\d (::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^\s]{1,2000}))"""
   ]
   DupFields = [ "user_uid->user_id"]
 

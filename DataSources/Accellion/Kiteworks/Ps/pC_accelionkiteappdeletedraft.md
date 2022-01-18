@@ -2,7 +2,6 @@
 ```Java
 {
 Name = accelion-kite-app-delete-draft
-  Product = Kiteworks
   DataType = "app-activity"
   Conditions = [ """url_host""", """app_host""", """description""", """delete_draft""", """event""" ]
   Fields = ${KiteWorksParserTemplates.accelion-kite-app.Fields}[

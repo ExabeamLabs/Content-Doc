@@ -22,7 +22,6 @@ crowdstrike-app-activity = {
   DataType = "app-activity"
   TimeFormat = "epoch"
   Fields = [
-    """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
     """"timestamp":"({time}\d{1,100})""",
     """"OperationName":"({activity}[^"]{1,2000})""",
     """"event_simpleName":"({activity}[^"]{1,2000})""",

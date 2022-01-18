@@ -7,7 +7,7 @@ Name = cef-skyformation-login-2
   Lms = ArcSight
   DataType = "app-login"
   TimeFormat = "epoch"
-  Conditions = [ """destinationServiceName =""", """suser=""", """"Action":"Login"""" ]
+  Conditions = [ """|Skyformation|""", """"Action":"Login"""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """\WdestinationServiceName =({app}.+?)(\s{1,100}\w+=|\s{0,100}$)""",

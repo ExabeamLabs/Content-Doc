@@ -29,6 +29,7 @@ Name = leef-pan-proxy
     """\|Miscellaneous="{0,20}({web_domain}[^\/\s"]{1,2000}?)(:\d{1,100}|\/|")[^\s]{0,2000}?("{1,20}\|\w+=|"{1,20}\s{0,100}$|\s{0,100}$)""",
     """\|Miscellaneous="{0,20}([^\/\s"]{1,2000})({uri_path}\/[^\s"\?]{1,2000})[^\s]{0,2000}?("{1,20}\|\w+=|"{1,20}\s{0,100}$|\s{0,100}$)""",
     """\|Miscellaneous="{0,20}([^\s\?"]{1,2000})(|({uri_query}\?[^\s]{1,2000}?))("{1,20}\|\w+=|"{1,20}\s{0,100}$|\s{0,100}$)""",
+    """\|Miscellaneous="{0,20}[^\s"\/\?]{0,2000}?({top_domain}[^\.]{1,2000}(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)(\/[^\s]{0,2000}|\s{0,100})("{1,20}\|\w+=|"{1,20}\s{0,100}$|\s{0,100}$)""",
     """\|ContentType=({mime}[^\|]{1,2000})""", 
  ]
 

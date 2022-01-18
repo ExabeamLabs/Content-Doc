@@ -17,7 +17,7 @@ Name = cef-duo-auth
     """\Wdvchost=({host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wcs4=({os}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wshost=({src_host}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
-    """\WrequestClientApplication=({user_agent}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\WrequestClientApplication=({browser}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\WflexString1=(?:n\/a|({factor}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wcs6=({new_enrollment}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]

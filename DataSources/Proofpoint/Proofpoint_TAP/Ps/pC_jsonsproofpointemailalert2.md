@@ -33,22 +33,23 @@ s-proofpoint-email-in-1 = {
     """"threatsInfoMap":\s{0,100}\[\{"[^}\]]{1,2000}?"classification":\s{0,100}"({alert_type}[^"]{1,2000})""",
     """"threatsInfoMap":\s{0,100}\[\{"[^}\]]{1,2000}?"threatType":\s{0,100}"({alert_type}[^"]{1,2000})""",
     """subject":\s{0,100}"(\{\\|({subject}[^",]{1,2000}?))\s{0,100}(,|")""",
-    """suser=({sender}[^"\s,@]{1,2000}@[^"\s,@]{1,2000})""",
-    """duser=({recipient}[^"\s,@]{1,2000}@[^"\s,@]{1,2000})""",
-    """sender":\s{0,100}"({sender}[^"\s,@]{1,2000}@[^"\s,@]{1,2000})""",
+    """suser=({sender}[^"\s,@]{1,2000}@({external_domain}[^"\s,@]{1,2000}))""",
+    """duser=({recipient}[^"\s,@]{1,2000}@[^"\s,@]{1,2000})""", 
+    """sender":\s{0,100}"({sender}[^"\s,@]{1,2000}@({external_domain}[^"\s,@]{1,2000}))""",
     """recipient":\s{0,100}\[?"({recipients}[^",;]{1,2000}@[^",;]{1,2000}[^"]{0,2000})""",
-    """recipient":\s{0,100}\[?"({recipient}[^",;]{1,2000}@[^",;]{1,2000})""",
+    """recipient":\s{0,100}\[?"({recipient}[^",;]{1,2000}@({external_domain_recipient}[^",;]{1,2000}))""",
     """GUID":\s{0,100}"({alert_id}[^",]{1,2000}?)\s{0,100}(,|")""",
     """senderIP":\s{0,100}"({src_ip}[a-fA-F\d.:]{1,2000})""",
-    """url":\s{0,100}"({malware_url}[^",]{1,2000}?)\s{0,100}(,|")""",
+    """url":\s{0,100}"({alert_name}[^",]{1,2000}?)\s{0,100}(,|")""",
+    """proto=({alert_name}[^=]{1,2000}?)\s\w+=""",
     """\scs1=Policy \[id: [^\]]{0,2000}? ; name: ({alert_name}[^\]]{1,2000}?) ; category: ({category}[^\]]{1,2000}?)]""",
-    """threat":\s{0,100}"\s{0,100}({malware_url}[^",]{1,2000}?)\s{0,100}(,|")""",
+    """threat":\s{0,100}"\s{0,100}({alert_name}[^",]{1,2000}?)\s{0,100}(,|")""",
     """,\s{0,100}"filename":\s{0,100}"(?!text(\.txt|\.html|-calendar))\s{0,100}({attachments}({attachment}[^",;]{1,2000})[^"]{0,2000}?)",\s{0,100}"\w+":""",
     ""","fromArray":"({outcome}[^\]]{1,2000}?)","\w+":""",
     """eventType":\s{0,100}"({outcome}[^",]{1,2000}?)\s{0,100}(,|")""",
     """"messageID":\s{0,100}"<?({message_id}[^>"]{1,2000})""",
     """src-account-name":"({account_name}[^"]{1,2000})"""
   ]
-  DupFields = [ "attachment->file_name", "sender->external_address" , "alert_type->alert_name"
+  DupFields = [ "attachment->file_name", "sender->external_address" 
 }
 ```

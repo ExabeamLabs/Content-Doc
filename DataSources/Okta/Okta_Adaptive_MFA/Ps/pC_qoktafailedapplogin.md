@@ -17,6 +17,8 @@ Name = q-okta-failed-app-login
     """"targets"\s{0,100}:\s{0,100}\[\{.*?\Wlogin"\s{0,100}:\s{0,100}"({user_email}[^",]{1,2000})""",
     """({app}Okta)""",
     """"actors":\[\{[^\]\}]{0,2000}?"id":"({user_agent}.+?),displayName":""",
+    """"actors":\[\{[^\]\}]{0,2000}?displayName":"({browser}\w+)""",
+    """"id"\s{0,100}:\s{0,100}"[^"]{1,2000}({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^"]{1,2000}"""",
   ]
   DupFields = [ "host->dest_host" ]
 

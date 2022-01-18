@@ -9,6 +9,7 @@ Name = exchange-dlp-email-in-failed
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
   Conditions = [ """,Incoming,""", """,FAIL,""" ]
   Fields = [
+    """exabeam_host=({host}[\w.\-]{1,2000})""",
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\d)Z,[^,]{0,2000
 
 }
