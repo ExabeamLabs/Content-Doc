@@ -14,7 +14,7 @@ cef-cisco-dns-response-sk4-src-template {
   Fields = [
     """exabeam_host=({host}\S+)""",
     """"timestamp":"({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-    """"identities":\["({host}[\w\-\.]{1,2000})"""",
+    """"identities":\[[^\]]{0,2000}?"({host}[\w\-\.]{1,2000})"""",
     """"identities":\["({user_fullname}[^\("]{1,2000}?)(?:\s{0,100}\(\w{1,100}\)\s{0,100})?(\s{1,100}\(({user_email}[^@"]{1,2000}@[^@"]{1,2000})\))",("({host}[\w\-\.]{1,2000})")?""",
     """"action":"({outcome}[^"]{1,2000})"""",
     """"queryType":"[^"]{0,2000}\(({query_type}[^"\)]{1,2000})\)"""",
