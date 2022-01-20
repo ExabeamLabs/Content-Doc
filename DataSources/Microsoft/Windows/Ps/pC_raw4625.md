@@ -31,7 +31,8 @@ Name = raw-4625
       """Logon Process(:|=)\s{0,100}({auth_process}[^\s;]{1,2000})[\s;]{0,2000}Authentication Package(:|=)""",
       """Authentication Package(:|=)\s{0,100}({auth_package}[^\s;]{1,2000}?)[\s;]{0,2000}Transited Services(:|=)""",
       """(?i):\d{1,100}:\d{1,100}\s{1,100}(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(am|pm|\d{1,100}|({dest_host}[\w\-.]{1,2000})))\s""",
-      """(EventType|EVENT_TYPE)="({outcome}[^"]{1,2000})"""
+      """(EventType|EVENT_TYPE)="({outcome}[^"]{1,2000})""",
+      """Failure Audit ([^:]{1,2000}?)({dest_host}[^\s]{1,2000})\s{1,20}Logon  An account failed to log on""",
     ]
     DupFields = ["src_host_windows->src_host"]
   

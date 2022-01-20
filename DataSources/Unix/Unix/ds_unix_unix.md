@@ -4,7 +4,7 @@ Product: Unix
 -------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  826  |  203   |    137     |     28      |   28    |
+|  842  |  203   |    138     |     28      |   28    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

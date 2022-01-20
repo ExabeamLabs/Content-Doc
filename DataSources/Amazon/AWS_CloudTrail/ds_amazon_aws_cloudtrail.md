@@ -4,7 +4,7 @@ Product: AWS CloudTrail
 -----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  145  |   61   |     19     |      9      |    9    |
+|  148  |   61   |     19     |      9      |    9    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

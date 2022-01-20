@@ -4,7 +4,7 @@ Product: F5 Advanced Web Application Firewall (WAF)
 ---------------------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  544  |   92   |    122     |      6      |    6    |
+|  557  |   92   |    123     |      6      |    6    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
