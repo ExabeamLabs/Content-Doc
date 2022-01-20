@@ -4,7 +4,7 @@ Product: Cloudflare WAF
 -----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  179  |   66   |     20     |      4      |    4    |
+|  184  |   68   |     20     |      4      |    4    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

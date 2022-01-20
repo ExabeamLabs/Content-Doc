@@ -123,9 +123,9 @@
             "score": 3
         }, 
         {
-            "comment": "17 rules", 
+            "comment": "18 rules", 
             "techniqueID": "T1562", 
-            "score": 17
+            "score": 18
         }, 
         {
             "comment": "6 rules", 
@@ -188,9 +188,9 @@
             "score": 2
         }, 
         {
-            "comment": "1 rules", 
+            "comment": "5 rules", 
             "techniqueID": "T1053.003", 
-            "score": 1
+            "score": 5
         }, 
         {
             "comment": "49 rules", 
@@ -323,9 +323,9 @@
             "score": 2
         }, 
         {
-            "comment": "4 rules", 
+            "comment": "12 rules", 
             "techniqueID": "T1547", 
-            "score": 4
+            "score": 12
         }, 
         {
             "comment": "10 rules", 
@@ -338,9 +338,9 @@
             "score": 14
         }, 
         {
-            "comment": "27 rules", 
+            "comment": "28 rules", 
             "techniqueID": "T1027.005", 
-            "score": 27
+            "score": 28
         }, 
         {
             "comment": "10 rules", 
@@ -398,14 +398,14 @@
             "score": 1
         }, 
         {
-            "comment": "6 rules", 
+            "comment": "7 rules", 
             "techniqueID": "T1562.004", 
-            "score": 6
+            "score": 7
         }, 
         {
-            "comment": "44 rules", 
+            "comment": "45 rules", 
             "techniqueID": "T1027", 
-            "score": 44
+            "score": 45
         }, 
         {
             "comment": "1 rules", 
@@ -468,9 +468,9 @@
             "score": 6
         }, 
         {
-            "comment": "7 rules", 
-            "techniqueID": "T1003.003", 
-            "score": 7
+            "comment": "36 rules", 
+            "techniqueID": "T1558", 
+            "score": 36
         }, 
         {
             "comment": "6 rules", 
@@ -513,9 +513,9 @@
             "score": 6
         }, 
         {
-            "comment": "10 rules", 
+            "comment": "31 rules", 
             "techniqueID": "T1190", 
-            "score": 10
+            "score": 31
         }, 
         {
             "comment": "10 rules", 
@@ -568,9 +568,9 @@
             "score": 4
         }, 
         {
-            "comment": "23 rules", 
+            "comment": "27 rules", 
             "techniqueID": "T1053", 
-            "score": 23
+            "score": 27
         }, 
         {
             "comment": "28 rules", 
@@ -583,9 +583,9 @@
             "score": 5
         }, 
         {
-            "comment": "58 rules", 
+            "comment": "63 rules", 
             "techniqueID": "TA0002", 
-            "score": 58
+            "score": 63
         }, 
         {
             "comment": "3 rules", 
@@ -603,9 +603,9 @@
             "score": 9
         }, 
         {
-            "comment": "3 rules", 
+            "comment": "7 rules", 
             "techniqueID": "T1112", 
-            "score": 3
+            "score": 7
         }, 
         {
             "comment": "2 rules", 
@@ -673,9 +673,9 @@
             "score": 2
         }, 
         {
-            "comment": "2 rules", 
+            "comment": "10 rules", 
             "techniqueID": "T1547.001", 
-            "score": 2
+            "score": 10
         }, 
         {
             "comment": "6 rules", 
@@ -893,9 +893,9 @@
             "score": 12
         }, 
         {
-            "comment": "36 rules", 
-            "techniqueID": "T1558", 
-            "score": 36
+            "comment": "7 rules", 
+            "techniqueID": "T1003.003", 
+            "score": 7
         }, 
         {
             "comment": "5 rules", 

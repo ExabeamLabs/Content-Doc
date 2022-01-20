@@ -4,7 +4,7 @@ Product: App Control
 --------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  699  |  155   |    134     |     15      |   15    |
+|  718  |  157   |    135     |     15      |   15    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
