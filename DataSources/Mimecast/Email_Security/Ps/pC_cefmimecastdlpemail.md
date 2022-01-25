@@ -13,13 +13,14 @@ Name = cef-mimecast-dlp-email
     """"datetime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d[+-]\d{1,100})"""",
     """"Act":"({action}[^"]{1,2000})""",
     """"Rcpt":"({recipients}({recipient}[^\s@;,"]{1,2000}@[^\s@;,"]{1,2000})[^"]{0,2000})"""",
-    """"Subject":"(|({subject}[^"]{1,2000}))""""
-    """"Dir":"({direction}[^"]{1,2000}?)""""
+    """"Subject":"(|({subject}[^"]{1,2000}?))\s{0,100}"""",
+    """"Dir":"({direction}[^"]{1,2000}?)"""",
     """"IP":"({src_ip}[A-Fa-f\d:.]{1,2000})"""",
     """"aCode":"(|({alert_id}[^"]{1,2000}?))"""",
     """"Rcpt":"({external_address}[^\s@;,]{1,2000}@[^\s@;,"]{1,2000})""",
     """"Dir":"Inbound"[^\}]{1,2000}?"Sender":"(<>|({external_address}[^\s@;,]{1,2000}@[^\s@;,"]{1,2000}))"""", 
-    """"Sender":"(<>|({sender}[^"]{1,2000}))""""
+    """"Sender":"(<>|({sender}[^"]{1,2000}))"""",
+    """"MsgId":"<({message_id}[^"]{1,2000}?)>""""
   ]
 
 
