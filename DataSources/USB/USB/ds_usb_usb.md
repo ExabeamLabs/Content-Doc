@@ -6,9 +6,9 @@ Product: USB
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   0   |   0    |     0      |      1      |    1    |
 
-|  Use-Case  | Event Types/Parsers    | MITRE TTP | Content    |
-|:----------:| ---- | --------- | ---- |
-| Enrichment |  web-activity-denied<br> ↳[usb-file-write](Ps/pC_usbfilewrite.md)<br> |    | [](RM/r_m_usb_usb_Enrichment.md) |
+|  Use-Case  | Event Types/Parsers                                                               | MITRE TTP | Content                                    |
+|:----------:| --------------------------------------------------------------------------------- | --------- | ------------------------------------------ |
+| Enrichment |  usb-activity<br> ↳ [usb-file-write](Parsers/parserContent_usb-file-write.md)<br> |           | [](Rules_Models/r_m_usb_usb_Enrichment.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

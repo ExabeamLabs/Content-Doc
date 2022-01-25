@@ -4,11 +4,11 @@ Product: Juniper Networks
 -------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   0   |   0    |     0      |      2      |    2    |
+|   0   |   0    |     0      |      1      |    1    |
 
-|  Use-Case  | Event Types/Parsers    | MITRE TTP | Content    |
-|:----------:| ---- | --------- | ---- |
-| Enrichment |  account-deleted<br> ↳[juniper-commit-events](Ps/pC_junipercommitevents.md)<br><br> network-connection-successful<br> ↳[juniper-process-created-2](Ps/pC_juniperprocesscreated2.md)<br> ↳[juniper-process-created-1](Ps/pC_juniperprocesscreated1.md)<br> |    | [](RM/r_m_juniper_networks_juniper_networks_Enrichment.md) |
+|  Use-Case  | Event Types/Parsers                                                                              | MITRE TTP | Content                                                              |
+|:----------:| ------------------------------------------------------------------------------------------------ | --------- | -------------------------------------------------------------------- |
+| Enrichment |  config-change<br> ↳ [juniper-commit-events](Parsers/parserContent_juniper-commit-events.md)<br> |           | [](Rules_Models/r_m_juniper_networks_juniper_networks_Enrichment.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

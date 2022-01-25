@@ -6,9 +6,9 @@ Product: Quest InTrust
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   0   |   0    |     0      |      1      |    1    |
 
-|  Use-Case  | Event Types/Parsers    | MITRE TTP | Content    |
-|:----------:| ---- | --------- | ---- |
-| Enrichment |  computer-logon<br> ↳[s-intrust-dns](Ps/pC_sintrustdns.md)<br> |    | [](RM/r_m_quest_intrust_quest_intrust_Enrichment.md) |
+|  Use-Case  | Event Types/Parsers                                                               | MITRE TTP | Content                                                        |
+|:----------:| --------------------------------------------------------------------------------- | --------- | -------------------------------------------------------------- |
+| Enrichment |  computer-logon<br> ↳ [s-intrust-dns](Parsers/parserContent_s-intrust-dns.md)<br> |           | [](Rules_Models/r_m_quest_intrust_quest_intrust_Enrichment.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

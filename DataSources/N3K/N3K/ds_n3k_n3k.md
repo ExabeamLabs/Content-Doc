@@ -6,9 +6,9 @@ Product: N3K
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   0   |   0    |     0      |      1      |    1    |
 
-|  Use-Case  | Event Types/Parsers    | MITRE TTP | Content    |
-|:----------:| ---- | --------- | ---- |
-| Enrichment |  security-alert<br> ↳[s-n3k-dhcp](Ps/pC_sn3kdhcp.md)<br> |    | [](RM/r_m_n3k_n3k_Enrichment.md) |
+|  Use-Case  | Event Types/Parsers                                                         | MITRE TTP | Content                                    |
+|:----------:| --------------------------------------------------------------------------- | --------- | ------------------------------------------ |
+| Enrichment |  computer-logon<br> ↳ [s-n3k-dhcp](Parsers/parserContent_s-n3k-dhcp.md)<br> |           | [](Rules_Models/r_m_n3k_n3k_Enrichment.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

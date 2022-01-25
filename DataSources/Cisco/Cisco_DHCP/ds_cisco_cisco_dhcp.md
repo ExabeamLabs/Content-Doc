@@ -6,9 +6,9 @@ Product: Cisco DHCP
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   0   |   0    |     0      |      1      |    1    |
 
-|  Use-Case  | Event Types/Parsers    | MITRE TTP | Content    |
-|:----------:| ---- | --------- | ---- |
-| Enrichment |  computer-logon<br> ↳[cisco-dhcp](Ps/pC_ciscodhcp.md)<br> |    | [](RM/r_m_cisco_cisco_dhcp_Enrichment.md) |
+|  Use-Case  | Event Types/Parsers                                                         | MITRE TTP | Content                                             |
+|:----------:| --------------------------------------------------------------------------- | --------- | --------------------------------------------------- |
+| Enrichment |  computer-logon<br> ↳ [cisco-dhcp](Parsers/parserContent_cisco-dhcp.md)<br> |           | [](Rules_Models/r_m_cisco_cisco_dhcp_Enrichment.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

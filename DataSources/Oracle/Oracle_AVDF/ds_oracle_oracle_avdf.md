@@ -4,11 +4,11 @@ Product: Oracle AVDF
 --------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   0   |   0    |     0      |      2      |    2    |
+|   0   |   0    |     0      |      1      |    1    |
 
-|  Use-Case  | Event Types/Parsers    | MITRE TTP | Content    |
-|:----------:| ---- | --------- | ---- |
-| Enrichment |  database-login<br> ↳[oracle-avdf-database-query](Ps/pC_oracleavdfdatabasequery.md)<br><br> failed-app-login<br> ↳[oracle-avdf-database-login](Ps/pC_oracleavdfdatabaselogin.md)<br> |    | [](RM/r_m_oracle_oracle_avdf_Enrichment.md) |
+|  Use-Case  | Event Types/Parsers                                                                                         | MITRE TTP | Content                                               |
+|:----------:| ----------------------------------------------------------------------------------------------------------- | --------- | ----------------------------------------------------- |
+| Enrichment |  database-query<br> ↳ [oracle-avdf-database-query](Parsers/parserContent_oracle-avdf-database-query.md)<br> |           | [](Rules_Models/r_m_oracle_oracle_avdf_Enrichment.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

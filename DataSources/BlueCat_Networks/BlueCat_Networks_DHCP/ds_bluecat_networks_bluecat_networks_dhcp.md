@@ -6,9 +6,9 @@ Product: BlueCat Networks DHCP
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   0   |   0    |     0      |      1      |    1    |
 
-|  Use-Case  | Event Types/Parsers    | MITRE TTP | Content    |
-|:----------:| ---- | --------- | ---- |
-| Enrichment |  failed-logon<br> ↳[cef-bcn-bdds-dhcp](Ps/pC_cefbcnbddsdhcp.md)<br> |    | [](RM/r_m_bluecat_networks_bluecat_networks_dhcp_Enrichment.md) |
+|  Use-Case  | Event Types/Parsers                                                                       | MITRE TTP | Content                                                                   |
+|:----------:| ----------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------- |
+| Enrichment |  computer-logon<br> ↳ [cef-bcn-bdds-dhcp](Parsers/parserContent_cef-bcn-bdds-dhcp.md)<br> |           | [](Rules_Models/r_m_bluecat_networks_bluecat_networks_dhcp_Enrichment.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

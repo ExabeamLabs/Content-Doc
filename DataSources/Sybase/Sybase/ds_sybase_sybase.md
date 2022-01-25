@@ -4,11 +4,11 @@ Product: Sybase
 ---------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   0   |   0    |     0      |      3      |    3    |
+|   0   |   0    |     0      |      2      |    2    |
 
-|  Use-Case  | Event Types/Parsers    | MITRE TTP | Content    |
-|:----------:| ---- | --------- | ---- |
-| Enrichment |  database-login<br> ↳[json-sybase-db-query-create](Ps/pC_jsonsybasedbquerycreate.md)<br> ↳[json-sybase-db-query-delete](Ps/pC_jsonsybasedbquerydelete.md)<br> ↳[json-sybase-db-query-insert](Ps/pC_jsonsybasedbqueryinsert.md)<br> ↳[cef-sybase-db-query](Ps/pC_cefsybasedbquery.md)<br> ↳[json-sybase-db-query-select](Ps/pC_jsonsybasedbqueryselect.md)<br> ↳[json-sybase-db-query-update](Ps/pC_jsonsybasedbqueryupdate.md)<br><br> dlp-email-alert-out<br> ↳[json-sybase-db-access-1](Ps/pC_jsonsybasedbaccess1.md)<br> ↳[json-sybase-db-access](Ps/pC_jsonsybasedbaccess.md)<br><br> security-alert<br> ↳[cef-sybase-db-login](Ps/pC_cefsybasedblogin.md)<br> ↳[json-sybase-db-login](Ps/pC_jsonsybasedblogin.md)<br> |    | [](RM/r_m_sybase_sybase_Enrichment.md) |
+|  Use-Case  | Event Types/Parsers                                                                                                                                                                                                                                                        | MITRE TTP | Content                                          |
+|:----------:| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------ |
+| Enrichment |  database-login<br> ↳ [cef-sybase-db-login](Parsers/parserContent_cef-sybase-db-login.md)<br> ↳ [json-sybase-db-login](Parsers/parserContent_json-sybase-db-login.md)<br><br> database-query<br> ↳ [cef-sybase-db-query](Parsers/parserContent_cef-sybase-db-query.md)<br> |           | [](Rules_Models/r_m_sybase_sybase_Enrichment.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

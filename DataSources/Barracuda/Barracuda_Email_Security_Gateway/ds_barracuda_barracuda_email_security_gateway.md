@@ -4,11 +4,15 @@ Product: Barracuda Email Security Gateway
 -----------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   0   |   0    |     0      |      3      |    3    |
+|   1   |   0    |     1      |      1      |    1    |
 
-|  Use-Case  | Event Types/Parsers    | MITRE TTP | Content    |
-|:----------:| ---- | --------- | ---- |
-| Enrichment |  account-password-change-failed<br> ↳[syslog-barracuda-email](Ps/pC_syslogbarracudaemail.md)<br><br> dlp-email-alert-in<br> ↳[syslog-barracuda-email](Ps/pC_syslogbarracudaemail.md)<br> ↳[barracuda-email](Ps/pC_barracudaemail.md)<br><br> dlp-email-alert-in-failed<br> ↳[barracuda-email](Ps/pC_barracudaemail.md)<br> |    | [](RM/r_m_barracuda_barracuda_email_security_gateway_Enrichment.md) |
+|                                    Use-Case                                    | Event Types/Parsers                                                                       | MITRE TTP                  | Content                                                                                                               |
+|:------------------------------------------------------------------------------:| ----------------------------------------------------------------------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+|    [Disabled Account Abuse](../../../UseCases/uc_disabled_account_abuse.md)    |  dlp-email-alert-in<br> ↳ [barracuda-email](Parsers/parserContent_barracuda-email.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_barracuda_barracuda_email_security_gateway_Disabled_Account_Abuse.md)    |
+| [Disabled Account Activity](../../../UseCases/uc_disabled_account_activity.md) |  dlp-email-alert-in<br> ↳ [barracuda-email](Parsers/parserContent_barracuda-email.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](Rules_Models/r_m_barracuda_barracuda_email_security_gateway_Disabled_Account_Activity.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
+| Initial Access                                                      | Execution | Persistence                                                         | Privilege Escalation                                                | Defense Evasion                                                     | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration | Impact |
+| ------------------------------------------------------------------- | --------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ------------------- | ------------ | ------ |
+| [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |           | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   |           |                  |            |                     |              |        |
