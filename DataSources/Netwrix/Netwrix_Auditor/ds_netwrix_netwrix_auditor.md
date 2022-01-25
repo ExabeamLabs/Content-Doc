@@ -4,7 +4,7 @@ Product: Netwrix Auditor
 ------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  201  |   84   |     29     |     15      |   15    |
+|  202  |   84   |     29     |     15      |   15    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

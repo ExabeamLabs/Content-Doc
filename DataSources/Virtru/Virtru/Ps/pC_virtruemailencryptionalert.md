@@ -11,7 +11,7 @@ Name = virtru-email-encryption-alert
   Fields = [
      """"lastModified"{1,20}:\s{0,100}"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)"""",
      """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
-     """"recipients"{1,20}:\s{0,100}\[([\s\n]{0,2000})?"{1,20}({recipient}[^"\s,@]{1,2000}@({external_domain}[^"\s@,]{1,2000}))""",
+     """"recipients"{1,20}:\s{0,100}\[([\s\n]{0,2000})?"{1,20}({recipient}[^"\s,@]{1,2000}@[^"\s@,]{1,2000})""",
      """"sender"{1,20}:\s{0,100}"{1,20}({sender}[^"\s@]{1,2000}@[^"\s@]{1,2000})"""",
      """"requestIp"{1,20}:\s"{1,20}({src_ip}[a-fA-f\d\.:]{1,2000})"""",
      """"policyId"{1,20}:\s{0,100}"{1,20}({alert_id}[^"]{1,2000})"""",

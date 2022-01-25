@@ -4,7 +4,7 @@ Product: NGFW
 -------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  303  |  122   |     30     |     12      |   12    |
+|  304  |  122   |     30     |     12      |   12    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -3,6 +3,9 @@
 {
 Name = leef-pan-virus-alert
   Conditions = [ """|Palo Alto Networks|PAN-OS""", """|Subtype=virus|""" ]
+  Fields = ${PaloAltoParserTemplates.leef-pan-alert.Fields}[
+    """\|DestinationUser=({target_domain}[^\\\|]{1,2000})\\({target_user}[^\s\|]{1,2000})"""
+  ]
 
 leef-pan-alert = {
   Vendor = Palo Alto Networks

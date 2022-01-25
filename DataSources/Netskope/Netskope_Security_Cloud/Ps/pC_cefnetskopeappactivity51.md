@@ -7,7 +7,7 @@ Name = cef-netskope-app-activity-51
   Lms = ArcSight
   DataType = "app-activity"
   TimeFormat = "epoch_sec"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName =Netskope""", """"activity":""""]
+  Conditions = [ """"type":"""", """destinationServiceName =Netskope""", """"activity":""""]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """"timestamp":\s{0,100}({time}\d{1,100})""",

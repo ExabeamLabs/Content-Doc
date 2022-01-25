@@ -15,7 +15,6 @@ Name = proofpoint-m1
     """"@timestamp"{1,20}:"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)"{1,20}"""
     """\sx=({xid}.+?)\s{1,100}(\w+=|$)""",
     """\svalue=({sender}.+?@[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
-    """\svalue=[^@]{1,2000}?@({external_domain_sender}.+?)\s{1,100}(\w+=|$)""",
     """\shost=({src_host}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\sip=({src_ip}[a-fA-F\d.:]{1,2000})"""
   ]

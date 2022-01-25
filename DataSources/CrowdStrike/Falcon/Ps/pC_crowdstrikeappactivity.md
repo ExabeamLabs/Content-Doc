@@ -18,7 +18,7 @@ Name = crowdstrike-app-activity
     """({app}CrowdStrike)""",
     """"OperationName":\s{0,100}"({activity}[^",]{1,2000})""",
     """"AuditKeyValues":\[({additional_info}.+?)\]""",
-    """"AuditKeyValues":[^\]]{1,2000}?"Value(String)?":"({object}.*?[^\\])"(,|\})""",
+    """"AuditKeyValues":[^\]]{1,2000}?((_name")|(_id")|(Id"+)),"ValueString":"({object}[^"]{1,2000}?)\s{0,100}"(,|\})""", 
   ]
 
 

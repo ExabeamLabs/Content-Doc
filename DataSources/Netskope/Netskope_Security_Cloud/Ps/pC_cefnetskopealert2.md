@@ -7,7 +7,7 @@ Name = cef-netskope-alert-2
   Lms = Direct
   DataType = "alert"
   TimeFormat = "epoch_sec"
-  Conditions = [ """CEF:""", """|Skyformation|""", """SkyFormation Cloud Apps Security""", """destinationServiceName =Netskope""" , """ext__malware_name"""]
+  Conditions = [ """destinationServiceName =Netskope""" , """"malware_type""""]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"timestamp":({time}\d{1,100})""",

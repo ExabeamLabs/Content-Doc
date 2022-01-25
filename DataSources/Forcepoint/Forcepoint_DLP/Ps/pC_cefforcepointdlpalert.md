@@ -16,7 +16,7 @@ Name = cef-forcepoint-dlp-alert
     """loginName =(({domain}[^\\]{1,2000})\\+)?({user}[^,=]{1,2000})\s{1,100}([\w\.]{1,2000}=|$)""",
     """sourceIp=(?:N\/A|({src_ip}.+?))\s{1,100}([\w\.]{1,2000}=|$)""",
     """sourceHost=({src_host}.+?)\s{1,100}([\w\.]{1,2000}=|$)""",
-    """\sduser=[^\s]{0,2000}?({top_domain}[^\/\.\s]{1,2000}(?i)(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)\s{1,100}\w+=""",
+    """\sduser=({full_url}(\w+:\/+)?({web_domain}[^\\\/\s]{1,2000})[^\s]{1,2000})\s\w+=""",
     """\sfname=(N\/A|.*?[\/\\]{0,2000}({file_name}[^\\\/]{1,2000}))\s{1,100}\- [\d.]{1,2000} """,
     """\sfname=(N\/A|.*? - ({bytes_num}[\d.]{1,2000})\s{1,100}({bytes_unit}[^\s;]{1,2000}))""",
     """\ssourceServiceName =({alert_type}.+?)\s{1,100}(on |\w+=)""",

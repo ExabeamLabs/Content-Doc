@@ -2,6 +2,7 @@
 ```Java
 {
 Name = accelion-kite-app-download-1
+  Product = Kiteworks
   DataType = "file-operations"
   Conditions = [ """url_host""", """app_host""", """description""", """download_email""", """event""" ]
   Fields = ${KiteWorksParserTemplates.accelion-kite-app.Fields}[

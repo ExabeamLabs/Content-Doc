@@ -5,7 +5,7 @@ Name = syslog-symantec-dlp-alert
   Conditions = [ """endpoint_machine""", """policy_name""", """incident_snapshot=""" ]
   Fields = ${SymantecParserTemplates.syslog-symantec-dlp-alert.Fields} [
       """(?i)incident_snapshot=[^,]{0,2000}?({alert_id}\d{1,100}),""",
-      """(?i)incident_snapshot="{0,20}\w+:\/+[^\s]{0,2000}?((?!\d{1,3}\.\d{1,3}\.\d{1,3})({top_domain}[^\/\.\s]{1,2000}(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|local))+))(\/|\||"|\s{1,100}\w+=|\s{0,100}$)"""
+      """(?i)incident_snapshot="{0,20}((?!\d{1,3}\.\d{1,3}\.\d{1,3})({full_url}(\w+:\/+)?({web_domain}[^\\\/]{1,2000})[^\s]{1,2000}))\s{1,100}\w+=|\s{0,100}"""
   ]
 
 syslog-symantec-dlp-alert = {
@@ -33,7 +33,6 @@ syslog-symantec-dlp-alert = {
       """(?i)sender="{0,20}(?=[\w.]{1,2000}@[\w.])({user}[^",]{1,2000})("|,|\s{0,100}$)""",
       """(?i)recipients="{0,20}(?=[\w.]{1,2000}@[\w.])({recipients}[^",]{1,2000})("|,|\s{0,100}$)""",
       """(?i)recipients="{0,20}(?=[\w.]{1,2000}@[\w.])({external_address}[^",]{1,2000})("|,|\s{0,100}$)""",
-      """(?i)recipients="{0,20}[^@]{1,2000}@({external_domain}[^,"@]{1,2000})("|,|\s{0,100}$)""",
       """(?i)recipients="{0,20}(?=\w+:\/+)({target}[^",]{1,2000})("|,|\s{0,100}$)"""
     ]
     DupFields = [ "external_address->recipient" ]

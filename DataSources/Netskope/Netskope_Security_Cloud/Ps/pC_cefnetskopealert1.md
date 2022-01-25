@@ -7,13 +7,13 @@ Name = cef-netskope-alert-1
   Lms = Direct
   DataType = "alert"
   TimeFormat = "epoch_sec"
-  Conditions = [ """CEF:""", """|Skyformation|""", """destinationServiceName =Netskope""", """"alert":"yes"""" ]
+  Conditions = [ """destinationServiceName =Netskope""", """"alert":"yes"""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
-    """"_insertion_epoch_timestamp"":({time}\d{1,100})""",
+    """"_insertion_epoch_timestamp"{1,10}:({time}\d{1,100})""",
     """"timestamp":({time}\d{1,100})""",
     """"user":"(({user_email}[^@"\s]{1,2000}@[^@"\s]{1,2000})|(({domain}[^"@\\\/\s]{1,2000})[\\\/]{1,2000})?({user}[^"@\\\/\s]{1,2000}))"""",
-    """duser=({external_address}[^@<]{1,2000}@?({external_domain}[^\s,>]{1,2000}))""",
+    """duser=({external_address}[^@<]{1,2000}@?[^\s,>]{1,2000})""",
     """"app":"({process}[^"]{1,2000})""",
     """"type":"({alert_type}[^"]{1,2000})""",
     """"category":"(n\/a|({alert_type}[^"]{1,2000}))""",

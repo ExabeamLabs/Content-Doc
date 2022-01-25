@@ -14,7 +14,6 @@ Name = cef-O365-dlp-email-in
     """"Subject":"({subject}[^"]{1,2000})"""",
     """"Direction":"({direction}[^"]{1,2000})"""",
     """"SenderAddress":"({sender}[^",]{1,2000})"""",
-    """"SenderAddress":"[^@]{1,2000}@({external_domain}[^",]{1,2000})"""",
     """"RecipientAddress":"({recipients}[^"]{1,2000})"""",
     """"MessageSize":"?({bytes}\d{1,100})""",
     """"EventType":"({alert_type}[^"]{1,2000})""""

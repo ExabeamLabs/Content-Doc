@@ -2,6 +2,7 @@
 ```Java
 {
 Name = accelion-kite-app-file-withdraw
+  Product = Kiteworks
   DataType = "app-activity"
   Conditions = [ """url_host""", """app_host""", """description""", """file_withdrawn""", """event""" ]
   Fields = ${KiteWorksParserTemplates.accelion-kite-app.Fields}[

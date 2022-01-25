@@ -7,7 +7,7 @@ Name = netscope-dlp-alert-activity
   Lms = Direct
   DataType = "dlp-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """SkyFormation Cloud Apps Security""","""destinationServiceName =Netskope""","""alert_type""","""DLP"""]
+  Conditions = [ """destinationServiceName =Netskope""","""alert_type""","""DLP"""]
   Fields =[  
       """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d{1,100}Z),""",
       """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[^\s]{1,2000})""",

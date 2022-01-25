@@ -16,7 +16,6 @@ Name = cisco-dns-response-1
     """"action":"({outcome}[^"]{1,2000})"""",
     """"queryType":"({query_type}[^"]{1,2000})"""",
     """"domain":"({query}[^"]{1,2000})"""",
-    """"domain":"({query}[^"]{1,2000}\.({top_query}\w+\.(?i)(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za)))"""",
     """"categories":\[(|""|({categories}[^\]]{1,2000}))\]""",
     """"categories":\["({category}[^"]{1,2000})"""",
     """"internalIp":"({dest_ip}[a-fA-F:\d.]{1,2000})""",

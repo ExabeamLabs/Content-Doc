@@ -31,7 +31,6 @@ cef-o365-app-activity = {
     """\WfilePath=({resource}.+?)\s{0,100}(\w+=|$)""",
     """\W(categoryOutcome|outcome)=\/?({outcome}.+?)\s{0,100}(\w+=|$)""",
     """\WrequestClientApplication=({user_agent}.+?)\s{0,100}(\w+=|$)""",
-    """\WrequestClientApplication=(?:-|Mozilla\/.+({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
   
 }
 ```

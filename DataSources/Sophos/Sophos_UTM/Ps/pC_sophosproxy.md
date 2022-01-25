@@ -29,12 +29,6 @@ Name = sophos-proxy
 		"""\stype="(-|({mime}[^"]{1,2000}))""",
 		"""\sua="(-|({user_agent}[^"]{1,2000}))""",
 		"""\scat="(-|0x2({risk_level}\d)({category}[^"]{1,2000}))""",
-     		"""\sua="(-|({browser}[\w\-]{1,2000}))""",
-     		"""\sua="(-|({browser}[\w\-]{1,2000})\/[\d\._]{1,2000})""",
-     		"""\sua="(-|({browser}[^\/"]{1,2000}).+({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin))""",
-      		"""\sua="(-|Mozilla\/.+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
-      		"""\sua="(-|Mozilla\/.+\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+Gecko\/\d{1,100}\s{1,100}({browser}\w+))""",
-                """\sdom="(.*?)({top_domain}(?!(?:\d{1,100}\.){3}\d{1,100})[^\.\s]{1,2000}?(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+")[^"]{1,2000})""""
     ]
   
 

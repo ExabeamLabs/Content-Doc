@@ -17,7 +17,7 @@ q-kiteworks-email = {
     """({user_email}[^@\s]{1,2000}@[^\s]{1,2000})\s{1,100}id=[^,]{1,2000},\s{0,100}({src_ip}[a-fA-F\d.:]{1,2000}),\s{0,100}Activity:""",
     """\sSubject:\s{0,100}"{0,20}\s{0,100}({subject}[^"]{1,2000})\s{0,100}"{0,20}""",
     """\sTo:\s{0,100}({recipients}.+?)\s{0,100}with files \[({attachments}.+?)\]""",
-    """\sTo:\s{0,100}({recipient}[^,@]{1,2000}@({external_domain}[^\s,]{1,2000}))""",
+    """\sTo:\s{0,100}({recipient}[^,@]{1,2000}@[^\s,]{1,2000})""",
 
   ]
   DupFields = [ "recipient->external_address", "user_email->sender" 

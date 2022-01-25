@@ -12,7 +12,7 @@ Name = s-sendmail-email-from
     """exabeam_host=(::ffff:)?({host}[\w.\-]{1,2000})""",
     """sendmail\S*:\s{1,100}({alert_id}\S+?):\s""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\s{1,100}from=<?({sender}[^@=<>,]{1,2000}@({external_domain_sender}[^\s@=<>,]{1,2000}))""",
+    """\s{1,100}from=<?({sender}[^@=<>,]{1,2000}@[^\s@=<>,]{1,2000})""",
     """\ssize=({bytes}\d{1,100})""",
     """\snrcpts=({num_recipients}\d{1,100})""",
     """\smsgid=<({return_path}[^>]{1,2000})>""",

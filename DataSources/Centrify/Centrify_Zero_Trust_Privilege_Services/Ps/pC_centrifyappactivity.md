@@ -26,7 +26,6 @@ Name = centrify-app-activity
     """"RequestUserAgent":"({user_agent}[^"]{1,2000})""",
     """src=({src_ip}[A-Fa-f\d:.]{1,2000})""",
     """cat=({event_name}[^\s]{1,2000})""",
-    """"RequestUserAgent":"(?:-|Mozilla\/[^=]{1,2000}\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin))""",
         ]
 
 

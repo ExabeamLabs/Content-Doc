@@ -4,7 +4,7 @@ Product: FireEye Network Security (NX)
 --------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  115  |   44   |     16     |      3      |    3    |
+|  116  |   44   |     16     |      3      |    3    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

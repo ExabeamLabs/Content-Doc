@@ -23,10 +23,7 @@ Name = fireeye-web-activity
     """"srcport":\s{0,100}({src_port}\d{1,100})""",
     """"rawmsghostname":\s{0,100}"({host}[^"]{1,2000})""",
     """"dstdomain":\s{0,100}"({web_domain}[^"]{1,2000})""",
-    """"dstdomain":\s{0,100}"[^"]{0,2000}?({top_domain}(?!(?:\d{1,100}\.){3}\d{1,100})[^\."]{1,2000}(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)"""",
     """"useragent":\s{0,100}"({user_agent}[^"]{1,2000})""",
-    """"useragent":\s{0,100}"[^"]{0,2000}?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)""",
-    """"useragent":\s{0,100}"[^"]{0,2000}?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
   ]
 
 

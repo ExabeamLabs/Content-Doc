@@ -18,7 +18,6 @@ Name = s-dropbox-devices-activity
       """"event_type_description":\s{0,100}"({additional_info}[^"]{1,2000})"""",
       """"ip_address":\s{0,100}"({src_ip}[a-fA-F\d.:]{1,2000})""",
       """"display_name":\s{0,100}"({src_host}[\w\-.]{1,2000})\s{0,100}"""",
-      """"platform":\s{0,100}"({os}[^"]{1,2000})"""",
       """"info_dict":\s{0,100}\{[^\}]{0,2000}?"name":\s{0,100}"({app}[^"]{1,2000})""""
     ]
   

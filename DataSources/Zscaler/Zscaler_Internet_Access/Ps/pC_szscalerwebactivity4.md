@@ -27,8 +27,7 @@ Name = s-zscaler-web-activity-4
     """proto="({protocol}[^"]{1,2000})""",
     """url="({full_url}[^"]{1,2000})""",
     """reason="(Allowed|({failure_reason}[^"]{1,2000}))""",
-    """cs\(User-Agent\)="[^=]{0,2000}?({browser}(?:C|c)hrome|(?:S|s)afari|(?:O|o)pera|(?:F|f)irefox|MSIE|(?:T|t)rident)""",
-    """cs\(User-Agent\)="[^=]{0,2000}?({os}iOS|Android|BlackBerry|iPhone OS|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)"""
+    """cs-username="({user_email}[^@"]{1,2000}@[^\."]{1,2000}\.[^"]{1,2000})""""
   ]
 
 

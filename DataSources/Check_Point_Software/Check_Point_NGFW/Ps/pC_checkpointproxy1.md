@@ -28,7 +28,6 @@ Name = checkpoint-proxy-1
     """resource:\s{1,100}(?:-|(\w+:\/+[^?]{1,2000}\?({uri_query}[^;]{1,2000})));""",
     """matched_category:\s{1,100}(?:-|({category}[^;]{1,2000}))""",
     """app_properties:\s{1,100}(?:-|({category}[^,;]{1,2000}));""",
-    """appi_name:(.*?)({top_domain}(?!(?:\d{1,100}\.){3}\d{1,100})[^\.\s]{1,2000}(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+(;|\/))[^;\/]{1,2000})"""
   ]
 
 

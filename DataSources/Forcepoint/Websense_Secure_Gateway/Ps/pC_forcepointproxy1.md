@@ -33,12 +33,6 @@ Name = forcepoint-proxy-1
 	    """\scategory=({category_id}.+?)\s{1,100}user""",
 	    """\shttp_content_type=(?:-|({mime}.+?))\s{1,100}http_""",
 	    """\shttp_proxy_status_code=({result_code}\d{1,100})""",
-	    """\surl=([^=]{0,2000}?)({top_domain}(?!(?:\d{1,100}\.){3}\d{1,100})[^\.\s\/:]{1,2000}(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|im))+(\s|\/|$))[^\s\/]{1,2000})""",
-	    """\shttp_user_agent=(?:-|({browser}[\w\-]{1,2000}))[^=]{1,2000}?http_proxy""",
-	    """\shttp_user_agent=(?:-|({browser}[\w\-]{1,2000})\/[\d\._]{1,2000})[^=]{1,2000}?http_proxy""",
-	    """\shttp_user_agent=(?:-|({browser}[^\/]{1,2000})[^=]{1,2000}({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin))[^=]{1,2000}?http_proxy""",
-	    """\shttp_user_agent=(?:-|Mozilla\/[^=]{1,2000}\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]{1,2000}?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))[^=]{1,2000}?http_proxy""",
-	    """\shttp_user_agent=(?:-|Mozilla\/[^=]{1,2000}\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]{1,2000}Gecko\/\d{1,100}\s{1,100}({browser}\w+))[^=]{1,2000}?http_proxy""",
       """\WloginID=(-|({user}[^\s]{1,2000}))""",
     ]
   

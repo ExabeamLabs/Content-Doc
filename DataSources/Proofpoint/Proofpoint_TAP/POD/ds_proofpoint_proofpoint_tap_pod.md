@@ -4,7 +4,7 @@ Product: Proofpoint TAP/POD
 ---------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  65   |   28   |     10     |      5      |    5    |
+|  66   |   28   |     10     |      5      |    5    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

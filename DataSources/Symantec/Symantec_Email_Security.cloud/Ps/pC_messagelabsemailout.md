@@ -16,7 +16,7 @@ Name = messagelabs-email-out
     """"messageSize":({bytes}\d{1,100})""",
     """"messageId":"({alert_id}[^"]{1,2000})",""",
     """"headerTo":\[({recipients}[^\]]{1,2000})\],""",
-    """"headerTo":\["({recipient}[^"@]{1,2000}@({external_domain}[^@"]{1,2000}))"""",
+    """"headerTo":\["({recipient}[^"@]{1,2000}@[^@"]{1,2000})"""",
     """"isOutbound":({direction}[^,]{1,2000}),""",
     """"senderIp":"({src_ip}[a-fA-F\d.:]{1,2000})""",
     """\[\{"fileNameOrURL":"({file_name}[^\.]{1,2000}\.({file_ext}[^"]{1,2000}))""",

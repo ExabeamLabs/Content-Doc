@@ -3,7 +3,7 @@
 {
 Name = cef-netskope-app-login-2
   DataType = "app-login"
-  Conditions = [ """CEF:""", """|Skyformation|""", """Login Successful"""", """destinationServiceName =Netskope""" ]
+  Conditions = [ """Login Successful"""", """destinationServiceName =Netskope""" ]
 
 cef-netskope-activity = {
   Vendor = Netskope

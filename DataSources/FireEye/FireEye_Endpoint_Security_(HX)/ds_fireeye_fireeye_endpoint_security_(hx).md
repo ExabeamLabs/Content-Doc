@@ -4,7 +4,7 @@ Product: FireEye Endpoint Security (HX)
 ---------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  143  |   48   |     32     |      4      |    4    |
+|  144  |   48   |     32     |      4      |    4    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

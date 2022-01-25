@@ -21,7 +21,7 @@ Name = cef-mcafee-dlp-email-out
       """(\s|\|)shost=({src_host}[^\s]{1,2000})""",
       """(\s|\|)suser=(?:<>|<?({sender}[^\s>]{1,2000})>?)\s{0,100}(\w+=|$)""",
       """(\s|\|)duser=({recipients}.*?)\s{0,100}(\w+=|$)""",
-      """(\s|\|)duser=<({external_address}[^@<]{1,2000}@?({external_domain}[^\s,>]{1,2000}))>""",
+      """(\s|\|)duser=<({external_address}[^@<]{1,2000}@?[^\s,>]{1,2000})>""",
       """(\s|\|)fsize=({bytes}\d{1,100})""",
       """\scs4=({attachment}.+?)\s{0,100}(\w+=|$)""",
       """\scs6=({subject}.+?)\s{0,100}(\w+=|$)""",

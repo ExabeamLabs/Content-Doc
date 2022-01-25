@@ -8,14 +8,13 @@ Name = cef-cisco-dns-response
   DataType = "dns-response"
   IsHVF = true
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = ["""requestClientApplication=Cisco_Umbrella""", """ext_action=""","""ext_queryType="""]
+  Conditions = ["""requestClientApplication=Cisco_Umbrella""", """"action"""",""""queryType""""]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"responseCode":"({dns_response_code}[^"]{1,2000})"""",
     """"action":"({outcome}[^"]{1,2000})"""",
     """"queryType":"({query_type}[^"]{1,2000})"""",
     """"domain":"({query}[^"]{1,2000})"""",
-    """"domain":"({query}[^"]{1,2000}\.({top_query}\w+\.(?i)(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za)))""",
     """"categories":\[(""|({categories}[^]]{1,2000}))""",
     """"categories":\["({category}[^"]{1,2000})""""
     """"timestamp":"({time}[^"]{1,2000})"""",

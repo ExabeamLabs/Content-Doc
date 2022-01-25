@@ -4,7 +4,7 @@ Product: Check Point NGFW
 -------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  302  |  130   |     31     |     13      |   13    |
+|  303  |  130   |     31     |     13      |   13    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

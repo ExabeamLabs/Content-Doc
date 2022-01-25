@@ -4,7 +4,7 @@ Product: Symantec Email Security.cloud
 --------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  137  |   57   |     26     |      6      |    6    |
+|  138  |   57   |     26     |      6      |    6    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

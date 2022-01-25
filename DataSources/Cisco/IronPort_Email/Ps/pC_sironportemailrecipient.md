@@ -14,7 +14,7 @@ Name = s-ironport-email-recipient
       """\srt=({time}\d{1,100})""",
       """({time}\w+ \d{1,100} \d\d:\d\d:\d\d) mail_logs:""",
       """({time}\w+ \w+ \d{1,100} \d\d:\d\d:\d\d \d\d\d\d) Info: MID""",
-      """MID ({alert_id}\d{1,100}) .*? To: <({recipient}[^@>,;]{1,2000}?@({external_domain_recipient}[^>,;]{1,2000}))""",
+      """MID ({alert_id}\d{1,100}) .*? To: <({recipient}[^@>,;]{1,2000}?@[^>,;]{1,2000})""",
       """ To: <({recipients}[^>]{1,2000}?)>"""
     ]
   

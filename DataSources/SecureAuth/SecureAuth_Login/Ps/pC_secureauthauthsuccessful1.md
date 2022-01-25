@@ -19,7 +19,7 @@ Name = secureauth-auth-successful-1
     """\WPriority="({priority}\d{1,100})""",
     """\WEventID="({event_code}\d{1,100})""",
     """({event_name}Authentication Success)""",
-    """UserAgent="(?:-|Mozilla\/.+({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))"""
+    """UserAgent="({user_agent}[^"]+)""",
   ]
 
 

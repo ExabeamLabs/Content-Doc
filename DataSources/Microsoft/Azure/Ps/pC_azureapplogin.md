@@ -16,9 +16,10 @@ Name = azure-app-login
     """"identity":"(({user_email}[^@,]{1,2000}@[^",]{1,2000})|({user}[^",]{1,2000}))""",
     """"resultDescription":"({result_code}\d{1,100})""",
     """"callerIpAddress":"({src_ip}[A-Fa-f:\d.]{1,2000})""",
+    """"browser"{1,20}:"{1,20}({browser}[^"]{1,2000})"""",
+    """"operatingSystem"{1,20}:"{1,20}({os}[^"]{1,2000})"""",
     """"userAgent":"({user_agent}[^"]{1,2000})"""",
     """"operationName":"({activity}[^",]{1,2000})""",
-    """"userAgent":".+?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin|Ubuntu)""",
     """\[Namespace:\s{0,100}({event_hub_namespace}\S+) ; EventHub name:\s{0,100}({event_hub_name}[\w-]{1,2000})""",
   ]
     DupFields= ["event_hub_namespace->host"]

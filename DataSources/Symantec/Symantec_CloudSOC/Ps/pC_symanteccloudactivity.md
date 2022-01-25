@@ -16,7 +16,6 @@ Name = symantec-cloud-activity
     """ext_user=({user_email}[^\s]{1,2000}@({email_domain}.+?))\s\w+="""
     """ext_user=(system|({user}[^\s\@]{1,2000}))\s\w+=""",
     """ext_service=({app}.+?)\s\w+=""",
-    """ext_browser=(Unknown|({browser}.+?))\s\w+=""",
     """ext__user_agent_=({user_agent}.+?)\s\w+=""",
     """ext__object_name_=(|({file_path}({file_parent}[^=]{0,2000}?[\\\/]{1,2000})?(|({file_name}[^\\\/=]{0,2000}?(\.({file_ext}\w*))?)?)))\s{1,100}\w+=""",
     """flexString1=({activity}.+?)\s\w+=""",

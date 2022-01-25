@@ -16,7 +16,6 @@ Name = vontu-dlp
       """\WProtocol:\s{1,100}({protocol}.+?)(,\s{0,100}\w+:|\s{0,100}$)""",
       """\WRecipient:\s{1,100}(?:N\/A|({target}.+?))(,\s{0,100}\w+:|\s{0,100}$)""",
       """\WRecipient:\s{1,100}({account}[^@]{1,2000})@({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-      """\WRecipient:\s{1,100}\w+:\/+[^\/:]{0,2000}?({top_domain}[^\.]{1,2000}(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)[:\/,]""",
       """\WSender:\s{1,100}(?:N\/A|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({user}[^@,]{1,2000}))""",
       """\WSender:\s{1,100}({os}[^:]{1,2000}):\/+({domain}[^/]{1,2000})\/({user}[^,]{1,2000})""",
       """\WSeverity:\s{1,100}({alert_severity}.+?)(,\s{0,100}\w+:|\s{0,100}$)""",

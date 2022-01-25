@@ -7,7 +7,7 @@ Name = crowdstrike-usb-alert
   Fields = ${CrowdStrikeParserTemplates.cef-crowdstrike-app-activity-temp.Fields} [
   """"id":"({alert_id}[\w-]{1,2000}?)""""
   """"name":"({alert_name}[^"]{1,2000}?)""""
-  """"DeviceProduct":"({additional_info}[^"]{1,2000})"""
+  """"DeviceProduct":"\s{0,100}(\s{1,20}|({additional_info}[^"]{1,2000}?))\s{0,100}""""
   """"DeviceInstanceId":"({target}[^"]{1,2000})""",
   """"event_simpleName":"({alert_type}[^"]{1,2000})""",
   
@@ -20,7 +20,7 @@ cef-crowdstrike-app-activity-temp = {
   DataType = "app-login"
   TimeFormat = "epoch"
   Fields = [
-    """"timestamp":\s{0,100}"{0,20}({time}\d{1,100})""",
+    """"timestamp":\s{0,100}"{0,20}({time}\d{1,100})"""",
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """"UserIp":\s{0,100}"({src_ip}[^"]{1,2000})""",
     """\WdestinationServiceName =({app}.+?)\s{1,100}\w+="""

@@ -11,7 +11,9 @@ Name = raw-5136
   Fields = [ 
     """({time}\d{1,100}/\d{1,100}/\d{1,100} \d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM))""",
     """({event_name}A directory service object was modified)""",
-    """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
+    """exabeam_host=([^=]{1,2000}?@\s{0,100})?(gcs-topic|({host}[\w.-]{1,2000}))""",
+    """"agent_hostname":"({host}[^"]{1,200})"""",
+    """"computer":"({host}[^"]{1,200})"""",
     """(?i)(((audit|success|failure)( |_)(success|audit|failure))|information)[\s,]({host}[\w.-]{1,2000})""",
     """__li_source_path="{0,20}({host}[^"]{1,2000})"""",
     """<Computer>({host}[^<]{1,2000})</Computer>""",

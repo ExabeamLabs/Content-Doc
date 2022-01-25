@@ -4,7 +4,7 @@ Product: Cisco ISE
 ------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  259  |  129   |     28     |     12      |   12    |
+|  260  |  129   |     28     |     12      |   12    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -23,7 +23,7 @@ leef-digitalguardian-dlp-email-alert-out = {
     """usrName =(?=[^\s]{1,2000}@[^\s]{1,2000})({user_email}[^\s@]{1,2000}@[^\s]{1,2000})""",
     """EmailRecipient=(|({recipient}[^\s,;]{1,2000}))""",
     """EmailRecipient=(|({recipients}.+?))\s{0,100}(\w+=|$)""",
-    """EmailRecipient=({external_address}[^@]{1,2000}@({external_domain}[^@\s,;]{1,2000})).*?\s{0,100}(\w+=|$)""",
+    """EmailRecipient=({external_address}[^@]{1,2000}@[^@\s,;]{1,2000}).*?\s{0,100}(\w+=|$)""",
     """EmailSubject=(|({subject}.+?))\s{0,100}(\w+=|$)""",
     """sev=({alert_severity}\d{1,100})""",
     """srcBytes=({bytes}\d{1,100})""",

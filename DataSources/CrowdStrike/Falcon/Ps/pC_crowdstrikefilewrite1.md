@@ -11,7 +11,7 @@ Name = crowdstrike-file-write-1
     Conditions = [ """"event_simpleName":""", """"DirectoryCreate"""" ]
     Fields = [
       """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
-      """"timestamp":\s{0,100}"({time}\d{1,100})""",
+      """"timestamp":\s{0,100}"({time}\d{1,100})"""",
       """"event_simpleName":\s{0,100}"({event_code}[^"]{1,2000})""",
       """"aid":\s{0,100}"({aid}[^"]{1,2000})""",
       """"TargetFileName":\s{0,100}"({file_path}[^"]{1,2000})""",

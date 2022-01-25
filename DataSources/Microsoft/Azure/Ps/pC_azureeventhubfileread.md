@@ -14,7 +14,6 @@ azure-event-hub = {
   Product = Azure
   Lms = Direct 
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [  """CEF:""",   """|Skyformation|SkyFormation Cloud Apps Security|""",   """destinationServiceName =Azure dproc=EventHub""" ]
   Fields = [
       """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d{1,100}Z [\w\-.]{1,2000} Skyformation""",
       """"time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""

@@ -15,10 +15,9 @@ Name = s-trendmicro-security-alert-3
     """\sDestination IP="({dest_ip}[^"]{1,2000})""",
     """\sDomain="({domain}[^"]{1,2000})""",
     """\sClient host name="({src_host}[^"]{1,2000})""",
-    """\sURL="(\w+:\/\/)?[^\/"]{0,2000}?({top_domain}[^\s.]{1,2000}(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)(\/|")""",
     """\sSource IP="({src_ip}[^"]{1,2000})""", 
   ]
-  DupFields = [ "top_domain->alert_name" ]
+  DupFields = [ "alert_type->alert_name" ]
 
 
 }

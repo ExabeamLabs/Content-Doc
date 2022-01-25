@@ -3,7 +3,7 @@
 {
 Name = azure-event-hub-application-gateway-firewall-log
   DataType = "network-connection"
-  Conditions = [""""category":"ApplicationGatewayFirewallLog"""","""CEF:""", """|SkyFormation Cloud Apps Security|""" ]
+  Conditions = [""""category":"ApplicationGatewayFirewallLog"""", """destinationServiceName =Azure""" ]
   Fields = ${MSParserTemplates.cef-azure-event-hub.Fields}[
     """"clientIp":"({src_ip}[^"]{1,2000})""",
     """"clientPort":"({src_port}[^"]{1,2000})""",
@@ -22,7 +22,6 @@ cef-azure-event-hub = {
   Product = Azure
   Lms = Direct 
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [  """CEF:""",   """|Skyformation|SkyFormation Cloud Apps Security|""",   """destinationServiceName =Azure dproc=EventHub""" ]
   Fields = [
       """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d{1,100}Z [\w\-.]{1,2000} Skyformation""",
       """"time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""

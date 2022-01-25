@@ -3,7 +3,7 @@
 {
 Name = azure-event-hub-key-vault-auth
   DataType = "app-login"
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """"operationName":"Authentication"""", """MICROSOFT.KEYVAULT""" ]
+  Conditions = [ """destinationServiceName =Azure""", """"operationName":"Authentication"""", """MICROSOFT.KEYVAULT""" ]
   Fields = ${MSParserTemplates.cef-azure-event-hub.Fields}[
      """(?i)({app}Microsoft.KeyVault)""",
     """operationName":"({event_name}[^"]{1,2000})"""",
@@ -21,7 +21,6 @@ cef-azure-event-hub = {
   Product = Azure
   Lms = Direct 
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [  """CEF:""",   """|Skyformation|SkyFormation Cloud Apps Security|""",   """destinationServiceName =Azure dproc=EventHub""" ]
   Fields = [
       """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d{1,100}Z [\w\-.]{1,2000} Skyformation""",
       """"time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""

@@ -19,9 +19,9 @@ Name = raw-7045
     """\]\s{1,100}\w{3}\s({time}\w{3}\s\d{1,100}\s\d\d:\d\d:\d\d\s\d\d\d\d)""",
     """TimeGenerated=({time}\d{1,10})""",
     """({event_code}7045)""",
-    """AccountName":"(SYSTEM|({user}[^"]{1,2000}))"""",
-    """User=({user}[^\s]{1,2000})""",
-    """\w{3}\s\w{3}\s\d\d\s\d\d:\d\d:\d\d\s\d\d\d\d:\s({domain}[^\\]{1,2000})\\(\\)?({user}[^\/]{1,2000})""",
+    """AccountName":"((?i)SYSTEM|NOT_TRANSLATED|({user}[^"]{1,2000}))"""",
+    """User=((?i)NOT_TRANSLATED|({user}[^\s]{1,2000}))""",
+    """\w{3}\s\w{3}\s\d\d\s\d\d:\d\d:\d\d\s\d\d\d\d:\s({domain}[^\\]{1,2000})\\(\\)?((?i)NOT_TRANSLATED|({user}[^\/]{1,2000}))""",
     """Service Name:\s{1,100}({service_name}[^=:]{1,2000}?)\s{0,100}Service File Name:""",
     """Service File Name:\s{1,100}(|-|({process}({directory}(?:[^"]{1,2000})?[\\\/])?({process_name}[^\\\/\s]{1,2000})))\s{1,100}Service Type:""",
     """Service File Name:\s{0,100}((?:[^";]{1,2000})?[\\\/;])?({process_name}[^\\\/";]{1,2000}?\.[^\\\/\.;"]{1,2000}?)\s.*?\s{0,100}Service Type:""",
@@ -30,7 +30,7 @@ Name = raw-7045
     """Service File Name:\s{0,100}({command_line}[^=]{1,2000}?)\s{0,100}Service Type:""",
     """ComputerName(:|=)\s{0,100}({host}[\w.-]{1,2000})""",
     """TimeStamp:\s{0,100}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """User:\s{0,100}({user}.+?)\s{0,100}\w+:"""
+    """User:\s{0,100}((?i)NOT_TRANSLATED|({user}[^:]{1,2000}?))\s{0,100}\w+:"""
   ]
   DupFields = [ "host->dest_host", "directory->process_directory", "command_line->service_command_line"]
 

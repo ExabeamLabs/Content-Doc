@@ -4,7 +4,7 @@ Product: Cisco Firepower
 ------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  272  |  101   |     32     |     15      |   15    |
+|  273  |  101   |     32     |     15      |   15    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

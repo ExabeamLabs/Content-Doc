@@ -9,6 +9,8 @@ Name = raw-5140
     TimeFormat = "epoch"
     Conditions = ["""A network share object was accessed""", """Account Name:"""]
     Fields = [
+      """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
+      """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """({event_name}A network share object was accessed)""",
       """({event_code}5140)""",
       """(::ffff:)?({host}[^\s=]{1,2000})\sMSWinEventLog""",

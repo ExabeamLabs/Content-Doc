@@ -3,7 +3,7 @@
 {
 Name = cef-netskope-dlp-alert
   DataType = "dlp-alert"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName =Netskope""", """"alert_type":"DLP"""" ]
+  Conditions = [ """"type":"""", """destinationServiceName =Netskope""", """"alert_type":"DLP"""" ]
   Fields = ${NetskopeParserTemplates.cef-netskope-activity.Fields}[
     """"policy":"({alert_name}[^"]{1,2000})""",
     """"dlp_rule_severity":"({alert_severity}[^"]{1,2000})""",

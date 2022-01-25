@@ -9,7 +9,7 @@ Name = cef-o365-app-login-1
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
     Conditions = [ """destinationServiceName =Office 365""", """"isInteractive":""", """"errorCode":""", """"clientAppUsed":""", """"failureReason":""", """dproc=Graph Sign-In"""  ]
     Fields = [
-      """exabeam_host=({host}[^\s]{1,2000})""",
+      """exabeam_host=(::ffff:)?({host}[^\s]{1,2000})""",
       """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}\w) [\w\-.]{1,2000} Skyformation""",
       """\Wsrc=({src_ip}[a-fA-F\d.:]{1,2000})""",
       """\Wsuser=(\w+-\w+-\w+-\w+-\w+|({user_email}[^@\s]{1,2000}?@[^@\s]{1,2000}?)|({user}[^@\s]{1,2000}?))\s{1,100}(\w+=|$)""",    

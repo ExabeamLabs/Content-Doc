@@ -11,7 +11,7 @@ Name = postfix-dlp-email-from
   Fields = [
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d:(\+|-)\d{1,100})\s<"""
     """({host}[\w.\-]{1,2000}) postfix""",
-    """({msg_id}[^\s"]{1,2000}): from=<({sender}[^@>]{1,2000}?@({external_domain_sender}[^>]{1,2000}?))>""",
+    """({msg_id}[^\s"]{1,2000}): from=<({sender}[^@>]{1,2000}?@[^>]{1,2000}?)>""",
     """\ssize=({bytes}\d{1,100})""",
     """\snrcpt=({num_recipients}\d{1,100})""",
     """"@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",

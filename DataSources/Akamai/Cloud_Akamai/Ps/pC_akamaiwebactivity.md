@@ -17,7 +17,6 @@ Name = akamai-web-activity
     """"cliIP":"({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """"reqPort":"({dest_port}\d{1,100})""",
     """"reqHost":"({web_domain}[^"\s]{1,2000})""",
-    """"reqHost":"[^"\s]{0,2000}?({top_domain}[^\/\.\s]{1,2000}(?i)(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)""",
     """"reqMethod":"({method}[^"]{1,2000})""",
     """"reqPath":"({uri_path}[^"]{1,2000})""",
     """"reqQuery":"({uri_query}[^"]{1,2000})""",

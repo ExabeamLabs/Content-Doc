@@ -19,7 +19,6 @@ splunk-digitalguardian-dlp-email-out = {
     """(\s|exabeam_\w+=)Email_Sender="(?:|({sender}[^"]{1,2000}))"""",
     """(\s|exabeam_\w+=)Email_Address="(?:|({sender}[^"]{1,2000}))"""",
     """(\s|exabeam_\w+=)Email_Recipient="([^"]{1,2000}\-)?({recipients}({recipient}[^"@\s;,]{1,2000}@[^"@\s;,]{1,2000}[^"]{0,2000}))"""",
-    """(\s|exabeam_\w+=)Email_Domain_Name ="(?:|({external_domain}[^"]{1,2000}))"""",
     """(\s|exabeam_\w+=)Destination_File="(?:|({file_name}[^"]{1,2000}))"""",
     """(\s|exabeam_\w+=)Destination_File="(?:|message body|({attachment}[^"]{1,2000}))"""",
     """(\s|exabeam_\w+=)Destination_File_Extension="(?:|({extension}[^"]{1,2000}))"""",

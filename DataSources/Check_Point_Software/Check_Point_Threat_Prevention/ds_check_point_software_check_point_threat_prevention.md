@@ -4,7 +4,7 @@ Product: Check Point Threat Prevention
 --------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  101  |   39   |     14     |      4      |    4    |
+|  102  |   39   |     14     |      4      |    4    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

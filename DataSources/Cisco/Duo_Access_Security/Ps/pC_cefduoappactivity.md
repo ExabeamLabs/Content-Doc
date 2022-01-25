@@ -31,6 +31,8 @@ Name = cef-duo-app-activity
     """"reason":\s{0,100}"(User approved|Valid passcode|({failure_reason}[^"]{1,2000}))"""",
     """"context":\s{0,100}"({activity}[^"]{1,2000})"""",
     """\WflexString1=(|({activity}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """"browser":\s{0,100}"({browser}[^"]{1,2000})"""",
+    """"os":\s{0,100}"({os}[^"]{1,2000})"""",
   ]
     DupFields = ["object->device", "service->object"]
 

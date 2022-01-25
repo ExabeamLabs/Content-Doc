@@ -17,7 +17,6 @@ Name = citrix-endpoint-mgmt-activity
     """event.action="({activity}[^"]{1,2000})"""",
     """event.status="({outcome}[^"]{1,2000})"""",
     """http.user-agent="({user_agent}[^"]{1,2000})"""",
-    """\[os=({os}[^,\s]{1,2000})""",
     """session.id="({session_id}[^"]{1,2000})"""",
     """push.user="(({user_email}[^@"]{1,2000}?@[^"]{1,2000})|(({domain}[^,\\]{1,2000})[\\]{1,2000}({user}[^"]{1,2000}))|({=user}[^"]{1,2000}))""",
     """user.id="(({user_email}[^@"]{1,2000}?@[^"]{1,2000})|(({domain}[^,\\]{1,2000})[\\]{1,2000}({user}[^"]{1,2000}))|({=user}[^"]{1,2000}))""",

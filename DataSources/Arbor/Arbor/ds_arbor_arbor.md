@@ -4,12 +4,12 @@ Product: Arbor
 --------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  27   |   11   |     7      |      1      |    1    |
+|  28   |   11   |     7      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 | [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  security-alert<br> ↳[arbor-network-fail](Ps/pC_arbornetworkfail.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>20 Rules</li></ul><ul><li>9 Models</li></ul>](RM/r_m_arbor_arbor_Compromised_Credentials.md) |
-|        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  security-alert<br> ↳[arbor-network-fail](Ps/pC_arbornetworkfail.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_arbor_arbor_Lateral_Movement.md)    |
+|        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  security-alert<br> ↳[arbor-network-fail](Ps/pC_arbornetworkfail.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_arbor_arbor_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  security-alert<br> ↳[arbor-network-fail](Ps/pC_arbornetworkfail.md)<br> | T1078 - Valid Accounts<br>T1204 - User Execution<br>    | [<ul><li>4 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_arbor_arbor_Malware.md)    |
 |    [Privilege Escalation](../../../UseCases/uc_privilege_escalation.md)    |  security-alert<br> ↳[arbor-network-fail](Ps/pC_arbornetworkfail.md)<br> | T1021.002 - Remote Services: SMB/Windows Admin Shares<br>T1087 - Account Discovery<br>    | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_arbor_arbor_Privilege_Escalation.md)     |
 |     [Privileged Activity](../../../UseCases/uc_privileged_activity.md)     |  security-alert<br> ↳[arbor-network-fail](Ps/pC_arbornetworkfail.md)<br> | T1068 - Exploitation for Privilege Escalation<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_arbor_arbor_Privileged_Activity.md)    |

@@ -26,8 +26,6 @@ Name = cef-symantec-web-activity-2
     """outcome=({outcome}[^\s]{1,2000})\s\w+=""",
     """cs4=({category}[^\s]{1,2000})\scs4Label=URL Categories""",
     """requestClientApplication=({user_agent}[^=]{1,2000})\s\w+=""",
-    """requestClientApplication=[^\/=]{1,2000}?\/[^\(]{1,2000}\(({os}iOS|Android|BlackBerry|iPhone OS|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]{1,2000}?\s\w+=""",
-    """requestClientApplication=[^=]{1,2000}?({browser}(?:C|c)hrome|(?:S|s)afari|(?:O|o)pera|(?:F|f)irefox|MSIE|(?:T|t)rident)[^=]{1,2000}?\s\w+=""",
     """requestContext=({referrer}[^\s]{1,2000})\s\w+=""",
     """cn2=({result_code}\d{1,100}) cn2Label=Response Status Code"""
   ]

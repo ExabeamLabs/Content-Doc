@@ -16,11 +16,6 @@ Name = u-okta-app-login
         """duid=[^@,]{1,2000}@({domain}[^,.]{1,2000})""",
         """destinationServiceName =({app}[^,]{1,2000})""",
         """cs3=({user_agent}.+?), \w+=""",
-     	"""cs3=(?:-|({browser}[\w\-]{1,2000}))""",
-     	"""cs3=(?:-|({browser}[\w\-]{1,2000})\/[\d\._]{1,2000})""",
-     	"""cs3=(?:-|({browser}[^\/]{1,2000}).+({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin))""",
-      	"""cs3=(?:-|Mozilla\/.+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
-      	"""cs3=(?:-|Mozilla\/.+\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+Gecko\/\d{1,100}\s{1,100}({browser}\w+))""",
     ]
 
 

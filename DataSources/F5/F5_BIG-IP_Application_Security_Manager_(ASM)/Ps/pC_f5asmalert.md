@@ -21,7 +21,6 @@ Name = f5-asm-alert
     """\sASM:("[^"]{0,2000}",){13}"\w+\s{1,100}({malware_url}[^"]{1,2000}?)(?:\s{1,100}\w+\/\d\.\d|)((\\r\\n|\s{1,100})[\w\-]{1,2000}:|")""",
     """(\\r\\n|\s)Host:\s{0,100}({domain}[^"]{1,2000}?)((\\r\\n|\s{1,100})[\w\-]{1,2000}:|")""",
     """(\\r\\n|\s)User-Agent:\s{0,100}({user_agent}[^"]{1,2000}?)(\\r\\n[\w\-]{1,2000}:|")""",
-    """(\\r\\n|\s)User-Agent:\s{0,100}Mozilla\/.+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)"""
   ]
   DupFields = ["protocol->alert_type"]
 

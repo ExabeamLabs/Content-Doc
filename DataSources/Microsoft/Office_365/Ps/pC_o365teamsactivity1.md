@@ -20,6 +20,7 @@ Name = o365-teams-activity-1
     """UserId"{0,20}:\s{0,100}"{0,20}({user_email}[^@"]{1,2000}@({email_domain}[^"]{1,2000}))"{0,20}""",
     """"ClientIP\\*"{1,20}:[\s\\]{0,2000}"{1,20}(::1|\[?({src_ip}[a-fA-F\d.:]{1,2000}))""",
     """src-account-name":"({account_name}[^"]{1,2000})""",
+    """UserAgent","Value":"({user_agent}[^"]{1,2000})""",
     ]
 
 

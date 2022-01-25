@@ -17,8 +17,8 @@ sentinelone-activity {
     Lms = Splunk
     TimeFormat = "epoch"
     Fields = [
-      """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
-      """\smillisecondsSinceEpoch:\s{0,100}({time}\d+)""",
+      """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}\S{1,2000})""",
+      """\smillisecondsSinceEpoch:\s{0,100}({time}\d{1,20})""",
       """\\ncomputer_name:\s{0,100}"{1,20}({host}[^"]{1,2000})"""
       """\\nos_name:\s{0,100}"{1,20}({os}[^"]{1,2000})"""
       """\\nagent_version:\s{0,100}"{1,20}({user_agent}[^"]{1,2000})"""
@@ -37,7 +37,8 @@ sentinelone-activity {
       """\sstatus:\s{0,100}({outcome}\w+)""",
       """sourceAddress\s.*?port:\s{0,100}({src_port}\d{1,100})""",
       """sourceAddress\s.*?address:\s{0,100}\\?"{1,20}({src_ip}[^"\\]{1,2000})""",
-      """fileType=({activity_type}[^=]{1,2000}?)\s{0,100}\w+="""
+      """fileType=({activity_type}[^=]{1,2000}?)\s{0,100}\w+=""",
+      """sha1:\s{0,100}"{0,100}({sha1}[^"]{1,2000})"""",
     
 }
 ```

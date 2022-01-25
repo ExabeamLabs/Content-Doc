@@ -4,7 +4,7 @@ Product: VMWare ID Manager (VIDM)
 ---------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  145  |   64   |     20     |      4      |    4    |
+|  146  |   64   |     20     |      4      |    4    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

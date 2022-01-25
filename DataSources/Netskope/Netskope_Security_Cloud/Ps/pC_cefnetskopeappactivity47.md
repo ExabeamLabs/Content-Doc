@@ -3,7 +3,7 @@
 {
 Name = cef-netskope-app-activity-47
   DataType = "app-activity"
-  Conditions = [ """CEF:""", """|Skyformation|""", """"type":"""", """destinationServiceName =Netskope""", """"activity":"CreateMultipartUpload"""" ]
+  Conditions = [ """"type":"""", """destinationServiceName =Netskope""", """"activity":"CreateMultipartUpload"""" ]
 
 cef-netskope-activity = {
   Vendor = Netskope

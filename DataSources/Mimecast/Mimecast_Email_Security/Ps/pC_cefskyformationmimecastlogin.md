@@ -7,7 +7,7 @@ Name = cef-skyformation-mimecast-login
   Lms = ArcSight
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """CEF:""", """|Skyformation|""", """|login-success|""",  """destinationServiceName =Mimecast Email Security"""]
+  Conditions = [ """CEF:""",""""auditType":""", """"User Logged On"""",  """destinationServiceName =Mimecast Email Security"""]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"eventTime":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}.\d{1,100})""",
@@ -18,14 +18,11 @@ Name = cef-skyformation-mimecast-login
     """"auditType":"({activity}[^"]{1,2000})""",
     """\Wmsg=(|({additional_info}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
     """({outcome}(?i)success)""",
-    """\WrequestClientApplication=(|({app}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
     """({app}Mimecast Email Security)""",
-    """\WsourceServiceName =(|({service}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
-    """\Wsrc=({src_ip}[a-fA-F\d.:]{1,2000})""",
+    """Application:\s{0,100}({service}[^,]{1,2000})""",
+    """\WIP:\s{0,100}({src_ip}[A-Fa-f\d:.]{1,2000})""",
     """"user":"({user_email}[^"]{1,2000})""",
     """"user(A|a)gent"\s{0,100}:\s{0,100}"({user_agent}[^"]{1,2000}?)"\s{0,100}[,\}\]]""",
-    """"user(A|a)gent"\s{0,100}:\s{0,100}"({browser}[\w\-]{1,2000})\/[\d\._]{1,2000}""",
-    """"user(A|a)gent"\s{0,100}:\s{0,100}"Mozilla\/[^"]{1,2000}\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^"]{1,2000}?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
   ]
 
 

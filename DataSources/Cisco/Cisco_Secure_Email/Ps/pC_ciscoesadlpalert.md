@@ -12,7 +12,6 @@ Name = cisco-esa-dlp-alert
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """suser=({sender}[^\s]{1,2000})""",
-    """\ssourceHostName =({external_domain_sender}[^\s]{1,2000})""",
     """\sduser=({recipients}[^\s]{1,2000})\s{1,100}(\w+=|$)""",
     """\sduser=({recipient}[^,\s;]{1,2000})""",
     """sourceAddress=({src_ip}[^\s]{1,2000})""",

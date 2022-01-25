@@ -2,6 +2,7 @@
 ```Java
 {
 Name = accelion-kite-app-activity-6
+  Product = Kiteworks
   DataType = "file-read"
   Conditions = [ """url_host""", """app_host""", """description""", """filehash_generated""", """event""" ]
   Fields = ${KiteWorksParserTemplates.accelion-kite-app.Fields}[

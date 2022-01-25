@@ -15,7 +15,6 @@ Name = websense-dlp-email-alert-in
     """rt=({time}\d{1,100})""",
     """suser=({sender}\S+)""",
     """suser=({external_address}\S+)""",
-    """suser=[^@]{1,2000}@({external_domain}[^\s;]{1,2000})""",
     """duser=({recipients}\S+)""",
     """msg=({subject}.+?)\s{0,100}(\w+=|$)""",
     """in=({bytes}\d{1,100})"""

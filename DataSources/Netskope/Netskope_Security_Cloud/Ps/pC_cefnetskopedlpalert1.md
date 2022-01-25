@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-netskope-dlp-alert-1
-  Conditions = [ """CEF:""", """|Skyformation|""", """"alert_type":"DLP"""", """destinationServiceName =Netskope""", """"alert_name":""""  ]
+  Conditions = [ """"alert_type":"DLP"""", """destinationServiceName =Netskope""", """"alert_name":""""  ]
   Fields = ${NetskopeParserTemplates.cef-netskope-alert.Fields}[
     """"app":"({app}[^"]{1,2000})""",
     """"_id":"({alert_id}[^"]{1,2000})""",

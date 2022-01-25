@@ -10,8 +10,9 @@ Name = raw-4719
   Conditions = [ "4719", "System audit policy was changed" ]
   Fields = [
     """EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""",
-    """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
+    """exabeam_host=([^=]{1,2000}?@\s{0,100})?(gcs-topic|({host}[\w.-]{1,2000}))""",
     """({event_name}System audit policy was changed)""",
+    """"computer":"({host}[\w\-.]{1,2000})""",
     """({host}[^\s=]{1,2000})\sMSWinEventLog""",
     """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
     """({event_code}4719)""",

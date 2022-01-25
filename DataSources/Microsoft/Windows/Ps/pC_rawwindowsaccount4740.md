@@ -9,7 +9,9 @@ Name = raw-windows-account-4740
         TimeFormat = "MMM dd HH:mm:ss yyyy"
         Conditions = ["Account That Was Locked Out"]
         Fields = [
-          """exabeam_host=({host}[\w\-.]{1,2000})""",
+          """exabeam_host=(gcs-topic|({host}[\w\-.]{1,2000}))""",
+          """"agent_hostname":"({host}[^"]{1,200})"""",
+          """"computer":"({host}[^"]{1,200})"""",
           """<\d{1,100}>(?i)\w+\s{0,100}\d{1,100}\s{0,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(am\s{1,100}|pm\s{1,100})?(::ffff:)?({host}[\w\-.]{1,2000})\s"""
           """<\d{1,100}>(?i)\w+\s{0,100}\d{1,100}\s{0,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(am\s{1,100}|pm\s{1,100})?(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]{1,2000}))\s"""
           """({event_name}Account That Was Locked Out)""",

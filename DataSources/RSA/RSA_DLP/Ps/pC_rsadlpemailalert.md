@@ -18,7 +18,6 @@ Name = rsa-dlp-email-alert
     """userEmail=({sender}[^\s]{1,2000})""",
     """sessionEmailMailto=({recipients}.+?)\s{1,100}\w+=""",
     """sessionEmailMailto=({external_address}[^\s\^]{1,2000})""",
-    """sessionEmailMailto=[^@]{1,2000}@({external_domain}[^\s\^]{1,2000})""",
     """sessionEmailSubject=({subject}.+?)\s{1,100}\w+="""
   ]
 

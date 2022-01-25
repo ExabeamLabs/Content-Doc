@@ -7,7 +7,6 @@ Name = sentinelone-web-activity-1
   Fields = ${SentinelOneParserTemplates.sentinelone-activity.Fields} [
     """method:\s{0,100}\\?"{1,20}({method}[^"\\]{1,2000})""",
     """url:\s{0,100}\\"{1,20}({full_url}({protocol}[^:\\\/\s,"]{1,2000}):\/*({web_domain}[^\\\/\s:,"]{1,2000})(:({dest_port}\d{1,100}))?({uri_path}\/[^\s\?"]{0,2000})?(\?({uri_query}[^"\s]{0,2000}))?)\\"""",
-    """https:.+?({top_domain}[^\/\.\s]{1,2000}(?i)(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)""",
   ]
 
 sentinelone-activity {
@@ -16,8 +15,8 @@ sentinelone-activity {
     Lms = Splunk
     TimeFormat = "epoch"
     Fields = [
-      """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
-      """\smillisecondsSinceEpoch:\s{0,100}({time}\d+)""",
+      """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}\S{1,2000})""",
+      """\smillisecondsSinceEpoch:\s{0,100}({time}\d{1,20})""",
       """\\ncomputer_name:\s{0,100}"{1,20}({host}[^"]{1,2000})"""
       """\\nos_name:\s{0,100}"{1,20}({os}[^"]{1,2000})"""
       """\\nagent_version:\s{0,100}"{1,20}({user_agent}[^"]{1,2000})"""
@@ -36,7 +35,8 @@ sentinelone-activity {
       """\sstatus:\s{0,100}({outcome}\w+)""",
       """sourceAddress\s.*?port:\s{0,100}({src_port}\d{1,100})""",
       """sourceAddress\s.*?address:\s{0,100}\\?"{1,20}({src_ip}[^"\\]{1,2000})""",
-      """fileType=({activity_type}[^=]{1,2000}?)\s{0,100}\w+="""
+      """fileType=({activity_type}[^=]{1,2000}?)\s{0,100}\w+=""",
+      """sha1:\s{0,100}"{0,100}({sha1}[^"]{1,2000})"""",
     
 }
 ```

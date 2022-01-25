@@ -4,7 +4,7 @@ Product: Juniper SRX
 --------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  183  |   59   |     20     |      8      |    8    |
+|  184  |   59   |     20     |      8      |    8    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

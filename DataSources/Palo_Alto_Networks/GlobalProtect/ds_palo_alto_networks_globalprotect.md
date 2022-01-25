@@ -4,7 +4,7 @@ Product: GlobalProtect
 ----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  161  |   67   |     15     |      7      |    7    |
+|  162  |   67   |     15     |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -7,7 +7,7 @@ Name = cef-mimecast-email-alert-1
   Lms = ArcSight
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """CEF:""", """Mimecast Email Security""", """dproc=SIEM Logs""", """"acc":"""" ]
+  Conditions = [ """CEF:""", """destinationServiceName =Mimecast Email Security""", """"acc":"""", """"Route":"""", """"aCode":"""", """"Subject":""""]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z) ([\w.\-]{1,2000}) Skyformation""",
@@ -21,7 +21,6 @@ Name = cef-mimecast-email-alert-1
     """"(?:action|actions)":"({outcome}[^"]{1,2000})""",
     """"actionTriggered":"({outcome}[^"]{1,2000})""",
     """"acc":"({user}[^"]{1,2000})""",
-    """"SenderDomain":"(<>|({external_domain}[^"]{1,2000}))"""",
     """"SourceIP":"({src_ip}[^"]{1,2000})""""
   ]
   DupFields = ["recipient->user_email", "recipient->email_user"]

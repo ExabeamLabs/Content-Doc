@@ -16,7 +16,6 @@ Name = o365-powerbi-activity
     """Workload"{0,20}:\s{0,100}"{0,20}({app}[^"]{1,2000})"{0,20}""",
     """ObjectId"{0,20}:\s{0,100}"{0,20}({object}[^"]{1,2000})"{0,20}""",
     """Operation"{0,20}:\s{0,100}"{0,20}({activity}[^"]{1,2000})"{0,20}""",
-    """UserAgent"{0,20}:\s{0,100}"{0,20}(?:-|Mozilla\/.+({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))"""
     """UserId"{0,20}:\s{0,100}"{0,20}({user_email}[^@]{1,2000}@({email_domain}[^"]{1,2000}))"{0,20}""",
     """"userPrincipalName":"({user_email}[^"@\s]{1,2000}@({email_domain}[^"@\s]{1,2000}))"""",
     """"ipAddress":"({src_ip}[A-Fa-f:\d.]{1,2000})"""",

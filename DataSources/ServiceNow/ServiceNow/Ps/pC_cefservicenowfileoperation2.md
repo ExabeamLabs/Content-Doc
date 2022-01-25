@@ -7,15 +7,13 @@ Name = cef-servicenow-file-operation-2
   Lms = ArcSight
   DataType = "file-operations"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ """CEF:""", """|Skyformation|""", """destinationServiceName =ServiceNow""", """cat=""", """"sys_created_on"""", """"sys_created_by""""]
+  Conditions = ["""destinationServiceName =ServiceNow""", """"sys_created_on"""", """"sys_created_by""""]
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """"sys_created_on":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """requestClientApplication=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
-    """\Wsuser=(anonymous|system|({user_email}[^\s@]{1,2000}@({email_domain}[^\s@]{1,2000}))|({user}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """({app}ServiceNow)""",
     """"srcip":"({src_ip}[^"]{1,2000})""",
     """"name":"({object}[^"]{1,2000})",""",
-    """\Wfname=(|-|({file_name}[^=]{1,2000}?(\.({file_ext}\w+))?))(\s{1,100}\w+=|\s{0,100}$)""",
     """"user(_name)?":"(anonymous|system|({user}[^"\s@]{1,2000}))"""",
     """"user(_name)?":"(anonymous|system|({user_email}[^"\s@]{1,2000}@({email_domain}[^"\s@]{1,2000})))"""",
     """CEF:([^\|]{0,2000}\|){5}({activity}[^\|]{1,2000})""",

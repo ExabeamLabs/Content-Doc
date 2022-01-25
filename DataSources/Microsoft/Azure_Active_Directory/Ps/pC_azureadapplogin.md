@@ -12,9 +12,8 @@ Name = azure-ad-app-login
     """Level":({alert_severity}\d{1,100})""",
     """appDisplayName":"\s{0,100}({app}[^",]{1,2000})""",
     """deviceDetail.+?displayName":"({object}[^",]{1,2000})""",
-    """browser":"({browser}[^",]{1,2000})""",
     """userAgent":"({user_agent}.+?)"?,\w+":""",
-    """operatingSystem.+?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)"""
+    """"failureReason":"({failure_reason}[^"]{1,200})"""
   ]
 
 azure-ad-activity = {

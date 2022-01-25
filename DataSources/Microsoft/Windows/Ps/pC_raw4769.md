@@ -10,6 +10,7 @@ Name = raw-4769
     Conditions = ["A Kerberos service ticket was requested", "Account Name:"]
     Fields = [
       """({event_name}A Kerberos service ticket was requested)""",
+      """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
       """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """({event_code}4769)""",
       """Account Name:\s{0,100}({user}[^@:\s;]{1,2000})(@({domain}[\w._\-]{1,2000}))?[\s;]{0,2000}Account Domain""",

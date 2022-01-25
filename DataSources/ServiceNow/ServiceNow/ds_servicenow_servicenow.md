@@ -4,7 +4,7 @@ Product: ServiceNow
 -------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  132  |   58   |     23     |      9      |    9    |
+|  133  |   58   |     23     |      9      |    9    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

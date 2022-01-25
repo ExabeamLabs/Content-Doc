@@ -21,7 +21,6 @@ Name = cef-iis-web-activity
     """\srequest=({uri_path}[^=\?]{1,2000}?)({uri_query}\?.*?)?(\s{1,100}\w+=|\s{0,100}$)""",
     """\srequestMethod=({method}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """\srequestClientApplication=({user_agent}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
-    """\srequestClientApplication=Mozilla\/[^=]{1,2000}?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]{1,2000}?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
     """\scs1=({referrer}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
   ]
 

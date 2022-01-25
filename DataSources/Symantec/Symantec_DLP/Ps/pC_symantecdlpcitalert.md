@@ -23,7 +23,6 @@ Name = symantec-dlp-cit-alert
     """\sRECIPIENTS\s({target}(http:\/\/|https:\/\/).+?)\/.*?\sFILE_NAME\s""",
     """\sRECIPIENTS\s(?:N\/A|https:\/\/.+?|http:\/\/.+?|Unknown|({recipient}[^,]{1,2000}?))[\s\,]""",
     """\sRECIPIENTS\s(?:N\/A|https:\/\/.+?|http:\/\/.+?|Unknown|({recipients}.+?))\s""",
-    """\sRECIPIENTS\s[^@]{1,2000}@({external_domain}[^\s;,]{1,2000})"""
     ]
     DupFields = [ "alert_type->alert_name" , "recipient->external_address" ]
   

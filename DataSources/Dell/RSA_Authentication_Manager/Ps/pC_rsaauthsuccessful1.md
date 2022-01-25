@@ -17,7 +17,6 @@ Name = rsa-auth-successful-1
     """AUTHN_TYPE="({auth_method}[^"]{1,2000})""",
     """NOT_AUTHNED_REASON="({failure_reason}[^"]{1,2000})""",
     """USER_AGENT="({user_agent}[^"]{1,2000})""",
-    """USER_AGENT="(Mozilla.+({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
   ]
 
 

@@ -2,6 +2,7 @@
 ```Java
 {
 Name = accelion-kite-app-file-delete-1
+  Product = Kiteworks
   DataType = "file-delete"
   Conditions = [ """url_host""", """app_host""", """description""", """delete_folder"""", """event""" ]
   Fields = ${KiteWorksParserTemplates.accelion-kite-app.Fields}[

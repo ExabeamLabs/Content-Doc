@@ -20,7 +20,7 @@ Name = cef-vontu-dlp-alert
     """\Wcs1=(?:({user}[^\s]{1,2000}?)|({user_fullname}\w+(?:\s{1,100}\w+)+))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wsuser=(?:N\/A|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({user_email}[^\s@]{1,2000}@[^\s@]{1,2000}))""",
     """\Wsuser=\w+:\/+({domain}[^\/\\=]{1,2000})[\\\/]{1,2000}(?:({user}[^\\\/\s]{1,2000}?)|({user_fullname}\w+(?:\s{1,100}\w+)+))(\s{1,100}\w+=|\s{0,100}$)""",
-    """\WdestinationDnsDomain=({top_domain}.+?)\s{0,100}(\w+=|$)""",
+    """\WdestinationDnsDomain=({web_domain}.+?)\s{0,100}(\w+=|$)""",
     """\Wduser=(?:N\/A|({target}.+?))\s{0,100}(\w+=|$)""",
     """\Wsrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\Wshost=(?:N\/A|({src_host}.+?))\s{0,100}(\w+=|$)""",

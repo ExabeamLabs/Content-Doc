@@ -27,6 +27,7 @@ Name = cds-process-creation
     """\skey="({object}[^"]{1,2000})""",
     """\smsg=audit\(({command_id}\d{1,100}\.\d{1,100})""",
     """\ssuccess=(|({outcome}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
+    """\skey=({additional_info}[^\s"]{1,2000})"""
  ]
  DupFields = [ "process_directory->directory", "host->dest_host" ]
 

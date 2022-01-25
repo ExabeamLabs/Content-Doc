@@ -22,7 +22,6 @@ Name = s-mcafee-epo-dlp-alert
     """\Wdest_nt_host="{0,20}({src_host}[^\s"]{1,2000})""",
     """\Wsrc_ip="{0,20}({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """\Wprocess="{0,20}({process}({directory}(?:(\w+:)?[^:"]{1,2000})?[\\\/])?({process_name}[^\\"]{1,2000}))""",
-    """\Wos="{0,20}({os}[^"]{1,2000})""",
   ]
   DupFields = [ "directory->process_directory" ]
 

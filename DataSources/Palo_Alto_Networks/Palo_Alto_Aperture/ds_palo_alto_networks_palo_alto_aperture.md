@@ -4,7 +4,7 @@ Product: Palo Alto Aperture
 ---------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  158  |   67   |     21     |      7      |    7    |
+|  159  |   67   |     21     |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

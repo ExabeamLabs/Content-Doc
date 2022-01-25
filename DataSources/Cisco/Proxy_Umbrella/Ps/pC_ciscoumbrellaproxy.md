@@ -7,7 +7,7 @@ Name = cisco-umbrella-proxy
   Lms = Direct
   DataType = "web-activity"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ """destinationServiceName =Cisco Umbrella """, """dproc=Proxy """, """ext_url=""" ]
+  Conditions = [ """destinationServiceName =Cisco Umbrella """, """dproc=Proxy """, """"url":""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """\W(destinationServiceName|requestClientApplication)=({app}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
@@ -23,8 +23,6 @@ Name = cisco-umbrella-proxy
     """"referer"{1,20}:"{1,20}({referrer}[^",]{1,2000})"""",
     """"userAgent"{1,20}:"{1,20}(\s{1,100}|({user_agent}[^"]{1,2000}))"""", 
     """"url"{1,20}:"{1,20}(-|({full_url}(({protocol}[^:\\\/\s,"]{1,2000}):[\\\/]{1,2000})?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({web_domain}[^\\\/\s:,"]{1,2000}))?(:({dest_port}\d{1,100}))?({uri_path}\/[^\s\?"]{0,2000})?({uri_query}\?[^"\s]{0,2000})?))"""",
-    """\Wext_url=\S*?({top_domain}[^\.\s:\/]{1,2000}(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|ch|local|tr))+)(\s|\/)""",
-    """"userAgent"{1,20}:"{1,20}[^=]{0,2000}?\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]{1,2000}?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
     """"url"{1,20}:"{1,20}({protocol}http(s)?)""",
     """"sha"{1,20}:"{1,20}({sha}[^",]{1,2000})"""",
     """"categories"{1,20}:\["{1,20}({category}[^",]{1,2000})""",

@@ -10,7 +10,6 @@ Name = websense-proxy
       """\sdhost=(?:-|({web_domain}.+?))\s\w+=""",
       """\scs4=({category}.+?)\s{1,100}\w+=""",
       """\|Websense\|([^|]{1,2000}\|){2}({category_id}[^|]{1,2000})""",
-      """\sdhost=(.*?)({top_domain}[^.\s\/:]{1,2000}(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|ms))+\s\w+=).+?)\s{1,100}(\w+=|$)""",
   ]
   DupFields = [ "user->orig_user" ]
   
@@ -35,10 +34,7 @@ wp-web-activity = {
       """\srequestUrlQuery=(?:-|({uri_query}.+?))\s\w+=""",
       """\srequestMethod=({method}.+?)\s\w+=""",
       """\srequestClientApplication=(?:-|({user_agent}.+?))\s\w+=""",
-      """requestClientApplication=[^=]{0,2000}?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)[^=]{0,2000}?\s{1,100}(\w+=|$)""",
-      """requestClientApplication=[^=]{0,2000}?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^=]{0,2000}?\s{1,100}(\w+=|$)""",
       """\scs3=(?:-|({mime}.+?))\s\w+=""",
-      """\scs6=(.*?)({top_domain}[^.\s\/:]{1,2000}(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|tr))+\s\w+=).+?)\s\w+=""",
       """\s(requestProtocol|app)=(?:-|({protocol}.+?))\s\w+=""",
       """\sdvc=({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\sdvchost=({host}[^\s]{1,2000})"""

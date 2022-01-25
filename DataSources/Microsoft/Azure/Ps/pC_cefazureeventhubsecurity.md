@@ -3,7 +3,7 @@
 {
 Name = cef-azure-event-hub-security
   DataType = "alert"
-  Conditions = ["""CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""",""""category":"Security"""", """"eventName"""", """EventHub"""]
+  Conditions = [ """"category":"Security"""", """"eventName"""", """EventHub"""]
   Fields = ${MSParserTemplates.cef-azure-event-hub.Fields}[
     """compromisedEntity":"({user_upn}[^"]{1,2000})"""",
     """userName":"(({domain}[^\\"]{1,2000})\\+)?({user}[^"]{1,2000})"""",
@@ -25,7 +25,6 @@ cef-azure-event-hub = {
   Product = Azure
   Lms = Direct 
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [  """CEF:""",   """|Skyformation|SkyFormation Cloud Apps Security|""",   """destinationServiceName =Azure dproc=EventHub""" ]
   Fields = [
       """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d{1,100}Z [\w\-.]{1,2000} Skyformation""",
       """"time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""

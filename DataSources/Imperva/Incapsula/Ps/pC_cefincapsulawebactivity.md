@@ -15,7 +15,7 @@ Name = cef-incapsula-web-activity
     """\Wact=({action}.+?)\s{1,100}(\w+=|$)""",
     """\Wapp=({protocol}.+?)\s{1,100}(\w+=|$)""",
     """\Wref=({referrer}.+?)\s{1,100}(\w+=|$)""",
-    """\WsourceServiceName =({web_domain}([^\s]{1,2000}\.)?({top_domain}[^\s]{1,2000}\.[^\s]{1,2000})?)\s""",
+    """\WsourceServiceName =({web_domain}.+?)\s{1,100}(\w+=|$)""",
     """\WrequestClientApplication=({user_agent}.+?)\s{1,100}(\w+=|$)""",
     """\Wccode=({country_code}.+?)\s{1,100}(\w+=|$)""",
     """\WCustomer=({customer}.+?)\s{1,100}(\w+=|$)""",

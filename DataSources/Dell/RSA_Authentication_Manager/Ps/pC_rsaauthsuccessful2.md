@@ -19,7 +19,6 @@ Name = rsa-auth-successful-2
     """authenticationType=({auth_method}[^",]{1,2000})""",
     """ACTION="({outcome}[^"]{1,2000})""",
     """UserAgent=({user_agent}[^"]{1,2000})""",
-    """UserAgent=(Mozilla.+({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
   ]
 
 

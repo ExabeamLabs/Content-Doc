@@ -22,10 +22,7 @@ Name = n-cef-bluecoat-proxy
     """\WnitroCategory=({category}.*?)\s{1,100}(\w+=|$)""",
     """\WnitroQuery_Response=({action}.*?)\s{1,100}(\w+=|$)""",
     """\WnitroURL=({uri_path}[^=\?]{0,2000}?)(\?({uri_query}.*?))?\s{1,100}(\w+=|$)""",
-    """\Wsntdom=.*?({top_domain}[^.]{1,2000}(\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)\s{1,100}(\w+=|$)""",
     """\Wduser=({user_agent}.+?)\s{1,100}(\w+=|$)""",
-    """\Wduser=[^=]{0,2000}?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)""",
-    """\Wduser=[^=]{0,2000}?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)"""
   ]
 
 

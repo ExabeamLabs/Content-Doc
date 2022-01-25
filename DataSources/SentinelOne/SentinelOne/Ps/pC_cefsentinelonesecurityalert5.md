@@ -8,7 +8,6 @@ Name = cef-sentinelone-security-alert-5
   Fields = ${SentinelOneParserTemplates.cef-sentinelone-security-alert.Fields}[
     """\snetworkUrl:(|({malware_url}.+?))(\s{1,100}\w+:|\s{0,100}$)""",
     """\snetworkMethod:(|({method}.+?))(\s{1,100}\w+:|\s{0,100}$)""",
-    """http.+?({top_domain}[^\/\.\s]{1,2000}(?i)(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)"""
   ]
 
 cef-sentinelone-security-alert = {

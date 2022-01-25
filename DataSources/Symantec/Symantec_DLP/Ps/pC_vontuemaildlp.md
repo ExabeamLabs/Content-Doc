@@ -16,7 +16,6 @@ Name = vontu-email-dlp
       """Subject:\s{1,100}({subject}.+?),\s{1,100}Target:""",
       """Recipient:\s{1,100}({recipients}.+?),\s{1,100}Sender:""",
       """Recipient:\s{1,100}({external_address}[^,]{1,2000}),""",
-      """Recipient:\s{1,100}[^@]{1,2000}@({external_domain}[^,]{1,2000}),""",
       """Severity:\s{1,100}({alert_severity}.+?),\s{1,100}Subject:""",
       """Policy Violated:\s{1,100}({alert_name}.+?),\s{1,100}Count:""",
       """Protocol:\s{1,100}(({alert_type}[^,]{1,2000}))""",

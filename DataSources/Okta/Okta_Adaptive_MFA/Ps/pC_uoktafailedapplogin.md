@@ -15,11 +15,6 @@ Name = u-okta-failed-app-login
         """user:\s({user}[^,]{1,2000})""",
         """msg=Sign-In Failed - ({failure_reason}[^:,]{1,2000})""",
         """cs3=({user_agent}.+?), \w+=""",
-        """cs3=(?:-|({browser}[\w\-]{1,2000}))""",
-        """cs3=(?:-|({browser}[\w\-]{1,2000})\/[\d\._]{1,2000})""",
-        """cs3=(?:-|({browser}[^\/]{1,2000}).+({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin))""",
-        """cs3=(?:-|Mozilla\/.+\(({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident))""",
-        """cs3=(?:-|Mozilla\/.+\((?:BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin).+Gecko\/\d{1,100}\s{1,100}({browser}\w+))""",
         """({app}Okta)"""
     ]
 

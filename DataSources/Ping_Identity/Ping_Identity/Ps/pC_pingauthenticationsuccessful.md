@@ -7,7 +7,6 @@ Name = ping-authentication-successful
   Fields = ${PingParserTemplates.ping-authentication_events.Fields}[
     """"status":\s{0,100}"({outcome}POLICY)""",
     """IP Address:\s{0,100}({src_ip}[A-Fa-f\d.:]{1,2000})""",
-    """Accessing Device Browser:\s{0,100}(N\/A|({browser}[^"]{1,2000}?))\\[nt]""",
     """Accessing Device UserAgent:\s{0,100}(N\/A|({user_agent}[^:]{1,2000}))\\[nt]"""
   ]
 

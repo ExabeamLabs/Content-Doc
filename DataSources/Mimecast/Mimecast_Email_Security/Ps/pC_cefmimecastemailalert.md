@@ -7,10 +7,9 @@ Name = cef-mimecast-email-alert
   Lms = Direct
   DataType = "dlp-email-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """dproc=TTP URL Logs""", """destinationServiceName =Mimecast Email Security""", """"userEmailAddress":"""" ]
+  Conditions = [ """CEF:""","""destinationServiceName =Mimecast Email Security""", """"userEmailAddress":"""" , """"ttpDefinition":"""", """"url":"""", """"scanResult":"""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)\s{0,100}[^\s]{1,2000}\s{0,100}Skyformation""",
     """"date":"({time}[^"]{1,2000})""",
     """"userEmailAddress":"({user_email}[^\s@"]{1,2000}@[^\s@"]{1,2000})""",
     """"action":"({action}[^"]{1,2000})""",

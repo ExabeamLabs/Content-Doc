@@ -16,7 +16,6 @@ Name = cef-dlp-email-out
     """\scs6=({orig_user}.+?)\s{1,100}\w+=""",
     """\ssuser=({user_email}.+?)\s{1,100}\w+=""",
     """\sduser=({external_address}[^\s]{1,2000})""",
-    """\sduser=[^@]{1,2000}@({external_domain}[^\s;]{1,2000})""",
     """\sduser=({recipient}[^\s@;,"]{1,2000}@[^\s@;,"]{1,2000})""",
     """\sduser=({recipients}.+?)\s{1,100}\w+=""",
     """\smsg=({subject}.+?)\s{1,100}\w+=""",

@@ -4,7 +4,7 @@ Product: Change Auditor
 -----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  223  |   91   |     29     |     13      |   13    |
+|  224  |   91   |     29     |     13      |   13    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

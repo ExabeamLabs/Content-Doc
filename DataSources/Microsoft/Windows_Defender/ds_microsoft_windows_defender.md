@@ -4,7 +4,7 @@ Product: Windows Defender
 -------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  490  |   67   |    104     |      4      |    4    |
+|  491  |   67   |    104     |      4      |    4    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

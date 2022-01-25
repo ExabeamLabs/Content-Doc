@@ -23,8 +23,6 @@ cef-azure-onedrive-app-activity = {
     """\Wmsg=({additional_info}.*?)\s{1,100}(\w+=|$)""",
     """\Wmsg=.*?\s{1,100}folder\s{1,100}(\([^\)]{0,2000}\):\s{0,100})?({object}.*?)\s{1,100}(\w+=|$)""",
     """\WrequestClientApplication=(|({user_agent}.*?))\s{1,100}(\w+=|$)""",
-    """\WrequestClientApplication=[^=]{0,2000}?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
-    """\WrequestClientApplication=[^=]{0,2000}?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)""",
   
 }
 ```

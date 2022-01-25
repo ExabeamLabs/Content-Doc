@@ -4,7 +4,7 @@ Product: Kaspersky Endpoint Security for Business
 -------------------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  62   |   24   |     9      |      4      |    4    |
+|  63   |   24   |     9      |      4      |    4    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
