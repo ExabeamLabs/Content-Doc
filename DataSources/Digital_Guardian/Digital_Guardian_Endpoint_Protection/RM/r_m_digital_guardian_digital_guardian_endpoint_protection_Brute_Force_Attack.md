@@ -5,8 +5,8 @@ Vendor: Digital Guardian
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     1      |     14      |   14    |
+|   1   |   1    |     1      |     14      |   14    |
 
-| Event Type     | Rules                                                                                                 | Models |
-| -------------- | ----------------------------------------------------------------------------------------------------- | ------ |
-| print-activity | <b>T1110 - Brute Force</b><br> ↳ <b>PR-SRC-CODE</b>: Printed document with source code file extension |        |
+| Event Type  | Rules                                                                                                                              | Models                                                |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| local-logon | <b>T1078 - Valid Accounts</b><br> ↳ <b>AS-PV-UHWoPC</b>: Access to Password Vault managed asset with no password checkout for user |  • <b>AS-PV-OA</b>: Password retrieval based accounts |

@@ -22,8 +22,7 @@ Name = xml-4648
       """<Data Name(\\)?='ProcessId'>({process_id}[^<]{1,2000})</Data>""",
       """<Data Name(\\)?='ProcessName'>({process}({directory}(?:[^<]{1,2000})?[\\\/])?({process_name}[^\\\/"]{1,2000}?))<\/Data>""",
       """<Data Name(\\)?='IpAddress'>({src_ip}[a-fA-F:\d.]{1,2000})</Data>""",
-      """<Data Name(\\)?='TargetInfo'>({dest_service}[^<]{1,2000})</Data>""",
-      """<Message>({event_name}A logon was attempted using explicit credentials)"""
+      """<Data Name(\\)?='TargetInfo'>({dest_service}[^<]{1,2000})</Data>"""
     ]
     DupFields = ["directory->process_directory"]
   

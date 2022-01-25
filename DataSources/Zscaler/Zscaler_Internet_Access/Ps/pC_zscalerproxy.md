@@ -25,7 +25,7 @@ Name = zscaler-proxy
       """\snitroURL=(\w+:\/{2})?[^\/]{1,2000}({uri_path}\/[^?\s]{1,2000})""",
       """\snitroURL=(\w+:\/+)?[^|\/:]{1,2000}(:\d{1,100})?[^|?]{1,2000}({uri_query}\?[^\s]{1,2000})""",
       """\snitroURL=(?:[^:?]{1,2000}:\/+)?({web_domain}[^\/:\s]{1,2000})""",
-    ]
+      """\snitroURL=[^\s?=]{0,2000}?({top_domain}(?!(?:\d{1,100}\.){3}\d{1,100})[^\.\s]{1,2000}(?=(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za)(?::\d{1,100})?)+(?:\s\w+=|\/))[^\s:\/]{1,2000})""" ]
   
 
 }

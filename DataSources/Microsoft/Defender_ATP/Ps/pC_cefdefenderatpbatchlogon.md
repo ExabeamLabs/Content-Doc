@@ -3,7 +3,7 @@
 {
 Name = cef-defender-atp-batch-logon
   DataType = "batch-logon"
-  Conditions = ["""AdvancedHunting-DeviceLogonEvents""", """"LogonType":"Batch"""", """"InitiatingProcessParentFileName":"""]
+  Conditions = ["""CEF""", """AdvancedHunting-DeviceLogonEvents""", """"LogonType":"Batch"""", """"InitiatingProcessParentFileName":"""]
 
 cef-defender-atp-events = {
     Vendor = Microsoft

@@ -11,7 +11,7 @@ Name = xml-4738
   Fields = [
     """<EventID>({event_code}\d{1,100})""",
     """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """<Message>({event_name}A user account was changed)""",    
+    """({event_name}A user account was changed)""",
     """<Computer>({host}[^<]{1,2000})""",
     """<Data Name ='SubjectUserSid'>({user_sid}[^<]{1,2000})""",
     """<Data Name ='SubjectUserName'>({user}[^<]{1,2000})""",
@@ -23,7 +23,7 @@ Name = xml-4738
     """<Data Name ='OldUacValue'>({old_attribute}[^<]{1,2000})""",
     """<Data Name ='NewUacValue'>({new_attribute}[^<]{1,2000})""",
     """Changed Attributes:\s{0,100}(|({attribute}[^:]{1,2000}?))\s{1,100}SAM Account Name:""",
-    """User Account Control:\s{0,100}(-|({uac_status}[^:]{1,2000}?))\s{0,100}User Parameters:""",
+    """User Account Control:\s{0,100}({uac_status}[^:]{1,2000}?)\s{0,100}User Parameters:"""
   ]
 
 

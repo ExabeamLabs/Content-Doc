@@ -14,6 +14,7 @@ Name = mobileiron-security-alert
     """ cat=({alert_name}[^\s]{1,2000}) """,
     """ suser=({user}.+?)\s{1,100}\w+=""",
     """ act=({action}.+?)\s{1,100}\w+=""",
+    """ platform\\=({os}.+?)(\}|\w+=)""",
     """ dvc=({host}.+?) """,
     """ agt=({src_ip}.+?) """,
     """ act=({alert_name}.+?)\s{1,100}\w+=""",

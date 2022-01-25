@@ -7,7 +7,7 @@ Name = json-4625
     Lms = Direct
     DataType = "windows-failed-logon"
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
-    Conditions = ["""4625""", """"FailureReason":""", """"EventID":"""]
+    Conditions = ["""4625""", """"FailureReason":"""]
     Fields = [
       """({event_name}An account failed to log on)""",
       """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",

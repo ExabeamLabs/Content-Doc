@@ -24,6 +24,8 @@ Name = fortinet-web-activity-1
     """user_name="(Unknown|(({domain}[^\\]{1,2000})\\)?({user}[^"]{1,2000}))""",
     """http_refer="(none|({referrer}[^"]{1,2000}))""",
     """http_url="{0,20}(\w+:\/{2})?[^\/]{1,2000}({uri_path}\/[^?\s"]{1,2000})?(\?({uri_query}[^"]{1,2000}))?"""",
+    """http_agent="(none|(\w+\/[^\(]{1,2000}\()?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)[^"]{1,2000}({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)?)""",
+    """http_agent="(none|({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)[^"]{1,2000}({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin))""",
     """http_retcode=({result_code}\d{1,100})"""
   ]
 

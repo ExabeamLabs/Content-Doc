@@ -3,7 +3,7 @@
 {
 Name = cef-ping-auth-successful
   DataType = "authentication-successful"
-  Conditions = [ """CEF""", """|Ping Identity|Ping Federate|""", """|AUTHN_ATTEMPT|""", """cs6=success""" ]
+  Conditions = [ """CEF:""", """|Ping Identity|Ping Federate|""", """|AUTHN_ATTEMPT|""", """cs6=success""" ]
 
 cef-ping-events-skyformation = {
   Vendor = Ping Identity
@@ -16,8 +16,8 @@ cef-ping-events-skyformation = {
     """cat=(N\/A|({category}[^\s]{1,2000}))""",
     """destinationServiceName =({app}[^\s]{1,2000})""",
     """suser=(anonymous|({user_email}[^\s]{1,2000}))""",
-    """"ipAddress":"({src_ip}[A-Fa-f:\d.]{1,2000})"""",
-    """"source":"({alert_name}[^"]{1,2000})"""",
+    """ext_client_ipAddress=({src_ip}[A-Fa-f:\d.]{1,2000})""",
+    """ext_source=({alert_name}[^\s]{1,2000})""",
     """"action"{0,20}:\{"{0,20}type"{0,20}:"{0,20}({event_name}[^"}]{1,2000})"""",
     """"result"{0,20}:\{"{0,20}status"{0,20}:"{0,20}({outcome}[^",]{1,2000})""",
     """"message"{0,20}:"{0,20}({event_name}[^"]{1,2000})"""",

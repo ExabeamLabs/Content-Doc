@@ -8,11 +8,11 @@ Name = cef-onedrive-file-activity
     DataType = "file-operations"
     IsHVF = true
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-    Conditions = [ """destinationServiceName =Office 365""", """flexString1=FileAccessed""", """sourceServiceName =OneDrive""" ]
+    Conditions = [ """|Skyformation|SkyFormation Cloud Apps Security|""", """flexString1=FileAccessed""", """sourceServiceName =OneDrive""" ]
     Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """"CreationTime\\*"{1,20}:\\*\s{0,100}"{1,20}({time}[^\\"]{1,2000})""",
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}\w) [\w\-.]{1,2000} """,
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}\w) [\w\-.]{1,2000} Skyformation""",
     """\Wfname=\s{0,100}({file_name}.+?(\.({file_ext}[^\.\s]{1,2000}))?)\s{1,100}(\w+=|$)""",
     """\Wsrc=({src_ip}[a-fA-F\d.:]{1,2000})""",
     """\Wsuser=(({user_email}[^\s@]{1,2000}@[^\s@]{1,2000})|({user}[^\s]{1,2000}?))\s{1,100}(\w+=|$)""",

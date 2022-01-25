@@ -8,7 +8,7 @@ Name = cef-box-file-activity
     DataType = "file-operations"
     IsHVF = true
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-    Conditions = ["""destinationServiceName =Box""","""fname=""","""msg=""", """"event_type":"CONTENT_ACCESS"""" ]
+    Conditions = ["""|Skyformation|BOX EXABEAM|""","""fname=""","""msg="""]
     Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
     """([^\|]{1,2000}\|){5}({access_type}[^\|]{1,2000})\|""",

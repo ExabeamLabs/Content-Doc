@@ -24,6 +24,8 @@ Name = ms-azure-signin-app-login
 	"""operationName"{0,20}:\s"{0,20}({activity}[^"]{1,2000})"""",
 	"""userAgent"{0,20}:"{0,20}({user_agent}[^"]{1,2000})"""",
 	"""deviceDetail.+?displayName"{0,20}:\s{0,100}"{0,20}({object}[^"]{1,2000})"""",
+        """operatingSystem.+?({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)""", 
+	"""browser.+?({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
 	"""authenticationMethod"{0,20}:"{0,20}({auth_method}[^"]{1,2000})"""",
         """"{1,20}location"{1,20}:(\{"{1,20}geoCoordinates"{1,20}:\{\}\}|({additional_info}\{.*?\}))"""
         """"{1,20}result"{1,20}:"{1,20}({outcome}[^"]{1,2000})"{1,20}""",

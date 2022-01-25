@@ -23,6 +23,8 @@ slack-events = {
     """"file":\s{0,100}\{[^\}]{0,2000}"filetype":\s{0,100}"({file_type}[^"]{1,2000})""",
     """"file":\s{0,100}\{[^\}]{0,2000}"name":\s{0,100}"({file_name}[^"]{1,2000}?(\.({file_ext}[^"\s\.]{1,2000})?))""",
     """"ua":\s{0,100}"({user_agent}[^"]{1,2000})""",
+    """"ua":\s{0,100}"[^"]{0,2000}({os}iOS|Android|BlackBerry|Windows Phone|BeOS|(?:X|x)11|(?:W|w)indows|(?:L|l)inux|(?:M|m)acintosh|(?:D|d)arwin)""",
+    """"ua":\s{0,100}"[^"]{0,2000}({browser}Chrome|Safari|Opera|(?:F|f)irefox|MSIE|Trident)""",
   
 }
 ```

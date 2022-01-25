@@ -5,7 +5,7 @@ Name = ad-json-member-added-2008
   DataType = "windows-ds-access"
   Conditions = [""""event_id":""", """Microsoft-Windows-Security-Auditing""", """A member was added to a security-enabled"""]
   Fields = ${WinParserTemplates.json-windows-events-1.Fields}[
-    """({event_name}A member was added to a security-enabled)""",
+    """({event_name}A member was removed from a security-enabled)""",
     """event_id"{1,20}:({event_code}\d{1,100})""",
     """"{1,20}MemberSid"{1,20}:"{1,20}({account_id}[^"]{1,2000})""",
     """"TargetSid":"({group_id}[^\s"]{1,2000})"""
@@ -18,7 +18,7 @@ json-windows-events-1 = {
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
-    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]{1,2000}\s""",
+    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]{1,2000}\sSkyformation""",
     """"{1,20}created"{1,20}:"{1,20}({time}[^"]{1,2000})""",
     """requestClientApplication=({app}[^=]{1,2000}?)\s\w+=""",
     """({event_name}An account was logged off)""",

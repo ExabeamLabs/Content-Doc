@@ -9,8 +9,8 @@ Name = cef-o365-security-alert
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """destinationServiceName =Office 365""", """"detectedDateTime":"""", """dproc=graph-identity-protection-risk-detection""" ]
   Fields = [
-    """exabeam_host=(::ffff:)?({host}[^\s]{1,2000})""",
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d{1,100}Z\s{1,100}[\w\-.]{1,2000}\s{1,100}"""
+    """exabeam_host=({host}[^\s]{1,2000})""",
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d{1,100}Z\s{1,100}[\w\-.]{1,2000}\s{1,100}Skyformation"""
     """({alert_type}({alert_name}IdentityProtection))"""
     """({alert_type}({alert_name}graph-identity-protection-risk-detection))"""
     """"source":"(generic|({alert_type}[^"]{1,2000}))"""",

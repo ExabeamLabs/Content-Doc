@@ -7,7 +7,7 @@ Name = cef-netskope-alert-2
   Lms = Direct
   DataType = "alert"
   TimeFormat = "epoch_sec"
-  Conditions = [ """destinationServiceName =Netskope""" , """"malware_type""""]
+  Conditions = [ """CEF:""", """|Skyformation|""", """SkyFormation Cloud Apps Security""", """destinationServiceName =Netskope""" , """ext__malware_name"""]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"timestamp":({time}\d{1,100})""",
@@ -18,14 +18,14 @@ Name = cef-netskope-alert-2
     """suser=(({user_email}[^@"\s]{1,2000}@[^@"\s]{1,2000})|(({domain}[^"@\\\/\s]{1,2000})[\\\/]{1,2000})?({user}[^"@\\\/\s]{1,2000}))""",
     """msg=({additional_info}[^=]{1,2000}?)\s{1,100}\w+=""",
     """"malware_type"{1,20}:"{1,20}({alert_name}[^"]{1,2000})"""",
-    """"malware_name":"({malware_filename}[^"]{1,2000}?)"""",
-    """"quarantine_file_name":"({file_path}[^"]{1,2000}?)"""",
+    """ext__malware_name_=({malware_filename}[^=]{1,2000}?)\s\w+=""",
+    """ext__quarantine_file_name_=({file_path}[^=]{1,2000}?)\s\w+=""",
     """"alert_type"{1,20}:"{1,20}({alert_type}[^"]{1,2000})"""",
     """dpriv=({alert_type}[^=]{1,2000}?)\s\w+=""",
     """outcome=({outcome}[^=]{1,2000}?)\s{1,100}\w+=""",
-    """"category":"({category}[^"]{1,2000}?)"""",
+    """ext_category=({category}[^=]{1,2000}?)\s{1,100}\w+=""",
     """fileHash=({md5}[^=]{1,2000}?)\s{1,100}\w+=""",
-    """"url":"({malware_url}[^"]{1,2000}?)"""",
+    """ext_url=({malware_url}[^=]{1,2000}?)\s{1,100}\w+=""",
     """"file_path"{1,20}:"{1,20}({file_path_at}[^"]{1,2000})"""",
     """"q_shared_with"{1,20}:"{1,20}({shared_with_at}[^"]{1,2000})""""
   ]

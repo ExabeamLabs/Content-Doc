@@ -16,6 +16,7 @@ bluecoat-proxy-1 = {
     """user="({user}[^"]{1,2000})"""",
     """src_host="({src_host}[^"]{1,2000})"""",
     """src_ip="({src_ip}[a-fA-F\d:.]{1,2000})"""",
+    """top_domain="({top_domain}[^"]{1,2000})"""",
     """method="({method}[^"]{1,2000})"""",
     """bytes_in="({bytes_in}\d{1,100})"""",
     """bytes_out="({bytes_out}\d{1,100})"""",

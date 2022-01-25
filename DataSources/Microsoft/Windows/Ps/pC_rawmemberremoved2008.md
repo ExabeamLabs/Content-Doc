@@ -11,9 +11,7 @@ Name = raw-member-removed-2008
   Fields = [
     """({event_name}A member was removed from a security-enabled [\w\s]{1,2000} group)""",
     """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""", 
-    """exabeam_host=(gcs-topic|({host}[\w\-.]{1,2000}))""",
-    """"agent_hostname":"({host}[^"]{1,200})"""",
-    """"computer":"({host}[^"]{1,200})"""",
+    """exabeam_host=({host}[\w\-.]{1,2000})""",
     """(?i)(success|audit)\s{1,100}\w+\s{1,100}({host}[\w\-.]{1,2000})""",
     """"?Event(ID)?Code["\s]{0,2000}(:|=|\\=)\s{0,100}"?({event_code}\d{1,100})""",
     """({event_code}\d{1,100})\s{1,100}Microsoft-Windows-Security-Auditing""",

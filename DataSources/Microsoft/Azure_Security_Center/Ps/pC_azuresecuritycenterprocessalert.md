@@ -12,7 +12,7 @@ json-microsoft-security-events = {
      Lms = Splunk
      TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
      Fields = [
-     """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}\S{1,2000})""",
+     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
      """"id":\s{0,100}"({alert_id}[^"]{1,2000})"""",
      """"title":\s{0,100}"({alert_name}[^"]{1,2000})"""",
      """"severity":\s{0,100}"({alert_severity}[^"]{1,2000})"""",
@@ -29,8 +29,8 @@ json-microsoft-security-events = {
      """"fqdn"{1,20}:\s{0,100}"{1,20}({src_host}[^"]{1,2000})"""",
      """"{1,20}hostStates"{1,20}:[^}\]]{1,2000}?privateIpAddress"{1,20}:\s{0,100}"{1,20}({src_ip}[a-fA-F:\d.]{1,2000})""",
      """"{1,20}hostStates"{1,20}:[^}\]]{1,2000}?publicIpAddress"{1,20}:\s{0,100}"{1,20}({dest_ip}[a-fA-F:\d.]{1,2000})""",
-     """"description":\s{0,100}"An actor on\s{0,100}({src_host}\S{1,2000})\s{0,100}performed suspicious""",
-     """"fileStates":[^]]{1,2000}?"name":\s{0,100}"({file_name}[^."]{1,2000}([\.\w]{1,100})?)""""
+     """"description": "An actor on\s{0,100}({src_host}\S+)\s{0,100}performed suspicious""",
+     """"fileStates":[^]]{1,2000}?"name":\s{1,100}"({file_name}[^."]{1,2000}([\.\w]{1,100})?)"""",
      
 }
 ```

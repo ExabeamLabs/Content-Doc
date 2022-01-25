@@ -12,15 +12,12 @@ Name = crowdstrike-security-alert-2
       """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
       """"ProcessStartTime":({time}\d{1,100})""",
       """({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3}Z)""",
-      """"Tactic":"({category}[^"]{1,2000})"""",
       """"UserName":"(N/A|({user}[^"@]{1,2000}))(@({src_host}[^"]{1,2000}))?"""",
       """"ComputerName":"({src_host}[^"]{1,2000})"""",
       """\\*"DetectDescription\\*":\\*"({alert_name}[^"]{1,2000}?)(\.\s{1,100}|")""",
-      """"DetectName":"({alert_type}[^"]{1,2000})"""",
-      """"IOARuleName":"({alert_name}[^"]{1,2000})"""",
+      """"DetectName":"({alert_name}[^"]{1,2000})"""",
       """"ExternalApiType":"({alert_type}[^"]{1,2000})"""",
       """"DetectDescription":"({additional_info}[^"]{1,2000})"""",
-      """"PatternDispositionDescription":"({additional_info}[^"]{1,2000})"""",
       """"Severity":({alert_severity}\d{1,100})""",
       """"SeverityName":"({alert_severity}[^"]{1,2000}?)"""",
       """"FileName":"({file_name}[^"]{1,2000}?)"""",
@@ -35,8 +32,8 @@ Name = crowdstrike-security-alert-2
       """"MD5String"{1,20}:"{1,20}({md5}[^"]{1,2000})"""",
       """"SHA256String":"({sha256}[^"]{1,2000})""",
       """SensorId":"({sensor_id}[^"]{1,2000})""",
-      """"GrandparentImageFileName\\{0,10}":\\{0,10}"({grandparent_image_filename}[^,]{1,2000}?)\\{0,10}"{1,20}""",
-      """"GrandparentCommandLine\\{0,10}"{1,20}:\s{0,100}\\{0,10}"{1,20}({grandparent_command_line}[^,]{1,2000}?)\\{0,10}"{1,20
+      """"GrandparentImageFileName\\*":\\*"({grandparent_image_filename}[^,]{1,2000}?)\\*"{1,20}""",
+      """"GrandparentCommandLine\\*"{1,20}:\s{0,100}\\*"{1,20}({grandparent_command_line}[^,]{1,2000}?)\\*"{1,20
 
 }
 ```

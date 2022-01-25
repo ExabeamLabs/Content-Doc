@@ -3,7 +3,7 @@
 {
 Name = sk4-json-4724
   DataType = "windows-password-reset"
-  Conditions = [""""event_id":4724""", """"provider_name":"Microsoft-Windows-Security-Auditing""", """An attempt was made to reset an account's password""", """ cs6="""]
+  Conditions = [""""event_id":4724""", """|Skyformation""", """Microsoft-Windows-Security-Auditing""", """An attempt was made to reset an account's password"""]
   Fields = ${WinParserTemplates.json-windows-events-1.Fields}[
     """({event_name}An attempt was made to reset an account's password)""",
     """"TargetDomainName":"({target_domain}[^"]{1,2000})"""",
@@ -17,7 +17,7 @@ json-windows-events-1 = {
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
-    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]{1,2000}\s""",
+    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]{1,2000}\sSkyformation""",
     """"{1,20}created"{1,20}:"{1,20}({time}[^"]{1,2000})""",
     """requestClientApplication=({app}[^=]{1,2000}?)\s\w+=""",
     """({event_name}An account was logged off)""",

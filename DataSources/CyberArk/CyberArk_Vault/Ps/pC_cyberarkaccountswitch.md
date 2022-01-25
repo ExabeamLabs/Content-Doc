@@ -14,14 +14,13 @@ Name = cyberark-account-switch
     """(\d\d:\d\d:\d\d|\d\d\d\d-\d\d-\d\d\w\d\d:\d\d:\d\d\w) ({host}[\w\-.]{1,2000}) (LEEF|CEF)""",
     """(LEEF|CEF):([^\|]{0,2000}?\|){4}({event_code}\d{1,100})""",
     """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
-    """usrName =(({domain}[^\\=]{1,2000})(\\)+)?(({user_email}[^@]{1,2000}@[^.]{1,2000}\.[^=]{1,2000}?)|({user}[^=]{1,2000}?))\s{1,100}\w+=""",
+    """usrName =(({domain}[^\\=]{1,2000})(\\)+)?({user}.+?)\s{1,100}\w+=""",
     """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """\sFile=({account}.+?)\s{1,100}\w+=""",
     """\sFile=[^=]{1,2000}\-({account}[^\s-]{1,2000})\s{1,100}\w+=""",
-    """\sFile=(({domain}[^\\]{1,2000})\\)?({account}[^=]{1,2000}?)\s{1,100}\w+=""",
-    """\sSafe=({safe_value}[^=]{1,2000}?)\s{1,100}\w+=""",
+    """\sSafe=({safe_value}.+?)\s{1,100}\w+=""",
     """\sGatewayStation=({gateway_station}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-    """\sReason=({reason}[^=]{1,2000}?)\s{1,100}\w+=""",
-    """\sAction=({action}[^=]{1,2000}?)\s{1,100}\w{1,100}="""
+    """\sReason=({reason}[^=]{1,2000}?)\s{1,100}\w+="""
   ]
   DupFields=[ "host->dest_host" ]
 

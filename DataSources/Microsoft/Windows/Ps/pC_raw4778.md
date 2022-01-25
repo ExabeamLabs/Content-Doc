@@ -23,8 +23,8 @@ Name = raw-4778
       """({event_code}4778)""",
       """Account Name(:|=)\s{0,100}({user}[^\s;]{1,2000})[\s;]{0,2000}Account Domain(:|=)""",
       """Account Domain(:|=)\s{0,100}({domain}[^\s;]{1,2000})[\s;]{0,2000}Logon ID(:|=)""",
-      """Service Name(:|=)\s{0,100}(::ffff:)?({dest_host}.+?)[\s;]{0,2000}Service ID""",
-      """Client Address(:|=)\s{0,100}(::[\w]{1,2000}:)?(::ffff:)?({src_ip}[a-fA-F:\d.]{1,2000})""",
+      """Service Name(:|=)\s{0,100}({dest_host}.+?)[\s;]{0,2000}Service ID""",
+      """Client Address(:|=)\s{0,100}(::[\w]{1,2000}:)?({src_ip}[a-fA-F:\d.]{1,2000})""",
       """Hostname":"({dest_host}[^"]{1,2000}?)"""",
     ]
   

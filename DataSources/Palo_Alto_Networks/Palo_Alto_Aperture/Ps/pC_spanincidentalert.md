@@ -13,21 +13,21 @@ Name = s-pan-incident-alert
       """exabeam_host=({host}[^\s]{1,2000})""",
       """\Wpolicy_rule_name\s{0,100}=\s{0,100}"({alert_name}[^"]{1,2000})"""",
       """\Witem_type\s{0,100}=\s{0,100}"({item_type}[^"]{1,2000})"""",
-      """\Witem_name\s{0,100}=\s{0,100}"({item_name}[^"]{1,2000}?)\s{0,100}"""",
+      """\Witem_name\s{0,100}=\s{0,100}"({item_name}[^"]{1,2000})"""",
       """\Witem_owner\s{0,100}=\s{0,100}"({user_firstname}[^",\s]{1,2000})\s{1,100}({user_lastname}[^",\s]{1,2000})"""",
       """\Witem_owner\s{0,100}=\s{0,100}"({user_lastname}[^",\s]{1,2000})\s{0,100}\,\s{0,100}({user_firstname}[^",\s]{1,2000})"""",
       """\Witem_owner\s{0,100}=\s{0,100}"({user}[^",\s@]{1,2000})"""",
       """\Wcloud_app_instance\s{0,100}=\s{0,100}"({alert_type}[^"]{1,2000})"""",
       """"policy_rule_name":"({alert_name}[^"]{1,2000})""",
       """"item_type":"({item_type}[^"]{1,2000})""",
-      """"item_name":"({item_name}[^"]{1,2000}?)\s{0,100}"""",
+      """"item_name":"({item_name}[^"]{1,2000})""",
       """"item_owner":"({user_firstname}[^",\s]{1,2000})\s{1,100}({user_lastname}[^",\s]{1,2000})"""",
       """"item_owner":"({user}[^",\s@]{1,2000})"""",
       """"cloud_app_instance":"({alert_type}[^"]{1,2000})""",
       """"item_creator":"(|({item_creator}[^"]{1,2000}))"""",
       """"item_creator_email":"(|({user_email}[^\s",@]{1,2000}\@[\w\.\-]{1,2000}))"""",
       """"collaborators":"(|({collaborators}[^"]{1,2000}))"""",
-      """"severity":({alert_severity}[\d.]{1,2000})"""
+      """ext_severity=({alert_severity}[^\s]{1,2000})"""
     ]
     SOAR {
     IncidentType = "dlp"

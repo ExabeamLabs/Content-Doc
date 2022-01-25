@@ -7,13 +7,13 @@ Name = s-okta-failed-login-4
     Lms = Splunk
     DataType = "failed-app-login"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-    Conditions = [ """Suspicious Activity""",""""published":""", """"objectType""""]
+    Conditions = [ """Suspicious Activity""",""""published":"""]
     Fields = [
       """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
       """"published":\s{0,100}"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
       """"ipAddress":\s{0,100}"({src_ip}[^"]{1,2000})"""",
       """({app}Okta)""",
-      """destinationServiceName({app}[^=]{1,2000}?)\s{0,100}\w+=""",
+      """requestClientApplication=({app}[^=]{1,2000}?)\s{0,100}\w+=""",
       """AppInstance[^\}\{]{1,2000}displayName":\s{0,100}"({app}[^"\}\{]{1,2000})"""",
       """\{[^\{]{1,2000}?displayName":\s{0,100}"({app}[^"]{1,2000}?)\s{0,100}"[^\}\{]{1,2000}AppInstance""",
       """({alert_name}Suspicious Activity)[^=]{1,2000}?objectType":\s{0,100}"({alert_type}[^"]{1,2000})"""",

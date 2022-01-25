@@ -9,7 +9,7 @@ Name = json-azure-ad-security-alert-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
   Conditions = [ """"category":""", """"ImpossibleTravel"""", """"title":""", """"vendor":""", """"Microsoft"""", """"provider":""", """"IPC"""" ]
   Fields = [
-     """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}\S{1,2000})""",
+     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
      """"id":\s{0,100}"({alert_id}[^"]{1,2000})"""",
      """"title":\s{0,100}"({alert_name}[^"]{1,2000})"""",
      """"severity":\s{0,100}"({alert_severity}[^"]{1,2000})"""",

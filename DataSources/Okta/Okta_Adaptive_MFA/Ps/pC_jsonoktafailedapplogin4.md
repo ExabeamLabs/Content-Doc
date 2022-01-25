@@ -3,7 +3,7 @@
 {
 Name = json-okta-failed-app-login-4
   DataType = "failed-app-login"
-  Conditions = [ """"app.ad.login.bad_password"""" , """destinationServiceName =Okta"""]
+  Conditions = [ """"app.ad.login.bad_password"""", """requestClientApplication=Okta""", """|Skyformation|""" ]
   Fields = ${OktaParserTemplates.json-okta-auth.Fields}[
     """({outcome}(?i)FAILURE|(?i)INVALID|(?i)failed|(?i)fail)"""
   ]
@@ -17,12 +17,14 @@ json-okta-auth = {
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"published"{1,20}\s{0,100}:\s{0,100}"{1,20}({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     """({app}(?i)Okta)""",
-    """destinationServiceName({app}[^=]{1,2000}?)\s{0,100}\w+=""",
+    """requestClientApplication=({app}[^=]{1,2000}?)\s{0,100}\w+=""",
     """"city":"({location_city}[^",]{1,2000})""",
     """"state":"({location_state}[^",]{1,2000})""",
     """"country":"({location_country}[^",]{1,2000})""",
     """"ipAddress"{1,20}\s{0,100}:\s{0,100}"{1,20}({src_ip}[^",]{1,2000})""",
     """"rawUserAgent"{1,20}\s{0,100}:\s{0,100}"{1,20}((?i)unknown|({user_agent}[^",]{1,2000}))""",
+    """"browser"{1,20}\s{0,100}:\s{0,100}"{1,20}((?i)unknown|({browser}[^",]{1,2000}))""",
+    """"os"{1,20}\s{0,100}:\s{0,100}"{1,20}((?i)unknown|({os}[^",]{1,2000}))""",
     """"action"{1,20}:.+?"{1,20}message"{1,20}:"{1,20}({event_name}[^",]{1,2000})"""
     """"displayMessage"\s{0,100}:\s{0,100}"({event_name}[^",]{1,2000})""",
     """"action"{1,20}:.+?"{1,20}objectType"{1,20}:"{1,20}({activity}[^",]{1,2000})""",

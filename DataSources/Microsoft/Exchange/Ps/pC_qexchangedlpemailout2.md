@@ -22,6 +22,7 @@ q-exchange-dlp-email-out = {
     """\tinternal-message-id=(?:|({alert_id}.+?))\t[\w\-]{1,2000}=""",
     """\trecipient-address="?(?:|({recipients}({recipient}[^\s@";,]{1,2000}@[^\s@";,]{1,2000}).*?))"?\t[\w\-]{1,2000}=""",
     """\trecipient-address="?(?:|({external_address}.+?))(;|\t[\w\-]{1,2000}=)""",
+    """\trecipient-address="?(?:|[^@]{1,2000}@({external_domain}.+?))(;|\t[\w\-]{1,2000}=)""",
     """\ttotal-bytes=(?: |({bytes}\d{1,100}))""",
     """\trecipient-count=(?: |({num_recipients}\d{1,100}))""",
     """message-subject="?\s{0,100}(?:|({subject}.+?))\s{0,100}(\"|[\t\s]{0,2000}[\w\-]{1,2000}=)""",

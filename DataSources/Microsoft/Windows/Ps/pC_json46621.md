@@ -26,7 +26,7 @@ json-windows-events-1 = {
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
-    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]{1,2000}\s""",
+    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]{1,2000}\sSkyformation""",
     """"{1,20}created"{1,20}:"{1,20}({time}[^"]{1,2000})""",
     """requestClientApplication=({app}[^=]{1,2000}?)\s\w+=""",
     """({event_name}An account was logged off)""",

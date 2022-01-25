@@ -11,11 +11,9 @@ Name = raw-member-added-2003
   Fields = [
     """({event_name}Security Enabled [\w\s]{1,2000} Group Member Added)""",
     """(Mon|Tue|Wed|Thu|Fri|Sat|Sun) ({time}\w+ \d{1,100} \d{1,100}:\d{1,100}:\d{1,100} \d{1,100}),""",
-    """exabeam_host=(gcs-topic|({host}[\w\-.]{1,2000}))""",
+    """exabeam_host=({host}[\w\-.]{1,2000})""",
     """exabeam_source=({host}[A-Fa-f:\d.]{1,2000})""",
     """\sexabeam_HostID=({host}[\w\-.]{1,2000})""",
-    """"agent_hostname":"({host}[^"]{1,200})"""",
-    """"computer":"({host}[^"]{1,200})"""",
     """(?i)(((audit|success|failure)( |_)(success|audit|failure))|information)(,|\s{1,100})({host}[\w.\-]{1,2000})""",
     """Computer=({host}[\w\-.]{1,2000})""",
     """EventID=({event_code}\d{1,100})""",

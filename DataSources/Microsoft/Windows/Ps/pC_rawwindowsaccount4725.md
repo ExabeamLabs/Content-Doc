@@ -13,7 +13,7 @@ Name = raw-windows-account-4725
       """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
       """Security(,|\s{1,100})({record_id}[\d]{1,2000})""",
       """({event_code}4725)""",
-      """exabeam_host=(gcs-topic|({host}[\w.\-]{1,2000}))""",
+      """exabeam_host=({host}[\w.\-]{1,2000})""",
       """(?i)(((audit|success)( |_)(success|audit))|information)(\s{1,100}|,)({host}[^,\s\=]{1,2000})""",
       """Information\s{1,100}({host}[\w.\-]{1,2000})\s{1,100}""",
       """({host}[^\/\s]{1,2000})\/Microsoft-Windows-Security-Auditing""",

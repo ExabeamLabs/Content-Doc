@@ -19,7 +19,7 @@ Name = exa-cor-rule-alerts
     """(?:\W|")compare_key_value"{0,20}(:|=)"{0,20}\s{0,100}({additional_info}[^"|]{1,2000}?)\s{0,100}(?:\||")""",
     """(?:\W|")cardinality_field_value"{0,20}(:|=)"{0,20}\s{0,100}({additional_info}[^"|]{1,2000}?)\s{0,100}(?:\||")""",
     """(?:\W|")exa_rule_id"{0,20}(:|=)"{0,20}\s{0,100}({alert_id}[^"|]{1,2000}?)\s{0,100}(?:\||")""",
-    """(?:\W|")exa_rule_severity"{0,20}(:|=)"{0,20}\s{0,100}({alert_severity}[^"|]{1,2000}?)(AlertSeverity)?\s{0,100}(?:\||")""",
+    """(?:\W|")exa_rule_severity"{0,20}(:|=)"{0,20}\s{0,100}({alert_severity}[^"|]{1,2000}?)\s{0,100}(?:\||")""",
     """(?:\W|")exa_rule_category"{0,20}(=|:)"{0,20}\s{0,100}({alert_type}[^"|]{1,2000}?)\s{0,100}(?:\||")""",
     """(?:\W|")exa_rule_name"{0,20}(:|=)"{0,20}\s{0,100}({alert_name}[^"|]{1,2000}?)\s{0,100}(?:\||")""",
     """(?:\W|")src(_ip)?"{0,20}(:|=)"{0,20}\s{0,100}({src_ip}[a-fA-F:\d.]{1,2000})\s{0,100}(?:\||"|\s{1,100}\w+=)""",
@@ -31,9 +31,7 @@ Name = exa-cor-rule-alerts
     """exa_rule_description(:|=)"{0,20}({top_reasons}[^"\|=]{1,2000}?)\s{0,100}(?:\||"|\s{1,100}\w+=)""",
     """exa_risk_score"{0,20}(:|=)"{0,20}\s{0,100}({risk_score}[^"|]{1,2000}?)\s{0,100}(?:\||")""",
     """(?:\W|")original_doc_message"{0,20}(=|:)\\?"{0,20}(\{({rule_description}[^\}]{1,2000})|\s{0,100}({=rule_description}[^"|]{1,2000}?))\s{0,100}(?:\||\\?"|\})""",
-    """\srule_description=\\?"({rule_description}[^"]{1,2000})"""",
-    """exa_addRiskToUser(=|:){0,100}"{0,100}({add_risk_to_user}\w{1,2000})""",
-    """exa_addRiskToAsset(=|:){0,100}"{0,100}({add_risk_to_asset}\w{1,2000})"""
+    """\srule_description=\\?"({rule_description}[^"]{1,2000})""""
   ]
   DupFields = ["risk_score->score"]
   SOAR {

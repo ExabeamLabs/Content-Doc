@@ -9,10 +9,12 @@ Name = cisco-nac-failed-logon
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """CISE_Failed_Attempts""", """NAS-Port-Type=""" ]
   Fields = [
-    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+    """exabeam_time=({time}\d{1,100}-\d{1,100}-\d{1,100} \d{1,100}:\d{1,100}:\d{1,100})""",
+    """Event-Timestamp=({time}\d{1,100})""",
+    """CISE_Failed_Attempts.+?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """(::ffff:)?({host}[\w\-.]{1,2000}) CISE_Failed_Attempts""",
     """, (NetworkDeviceName|NetworkDeviceProfileName)=({network}[^,]{1,2000}),""",
-    """, User-?Name =((::ffff:)?(host\/))?(({domain}[^\\\/,]{1,2000})[\\\/]{1,2000})?(({user_email}[^,@]{1,2000}@[^,@]{1,2000})|((([a-fA-F\d]{2}[-:]){5}[a-fA-F\d]{2})|({user}[^\\\/\s,]{1,2000})))""",
+    """, User-?Name =((::ffff:)?(host\/))?(({domain}[^\\\/,]{1,2000})[\\\/]{1,2000})?(({user_email}[^,@]{1,2000}@[^,@]{1,2000})|({user}[^\\\/\s,]{1,2000}))""",
     """, Device IP Address=({auth_server}[^,]{1,2000})""",
     """, NAS-IP-Address=(::ffff:)?({dest_ip}[a-fA-F\d.:]{1,2000})""",
     """, DestinationIPAddress=(::ffff:)?({dest_ip}[a-fA-F\d.:]{1,2000})""",

@@ -26,7 +26,7 @@ Name = raw-process-created-1
     """New Process Name:\s{0,100}({process}({directory}(?:[^";]{1,2000})?[\\\/])?({process_name}[^\\\/";]{1,2000}?))[\s;]{0,2000}Token Elevation Type:""",
     """New Process ID:\s{0,100}({process_guid}[^\s;]{1,2000})(\s|;)""",
     """Creator Process ID:\s{0,100}({parent_process_guid}[^\s;]{1,2000})(\s|;)""",
-    """Creator Process Name:\s{0,100}({parent_process}((?:[^";]{1,2000})?[\\\/])?({parent_process_name}[^\\\/";]{1,2000}?))[\s;]{0,2000}Process Command Line:""",
+    """Creator Process Name:\s{0,100}({parent_process}((?:[^";]{1,2000})?[\\\/])?({parent_process_name}[^\\\/";]{1,2000}?))[\s;]{0,2000}Process"""
     """Process Command Line:\s{1,100}"?(\s{0,100}|({command_line}.+?))"?\s{0,100}Token Elevation Type indicates""",
     """Process Command Line:\s{0,100}"{0,20}(|-|(sc|((?:[^"]{1,2000})?[\\\/])?sc.exe)\s{0,100}(?:\\*[\w.\-]{1,2000})?\s{0,100}create\s{0,100}({service_name}.+?))\s{1,100}binPath= \s{0,100}(|-|({process}({directory}(?:[^"]{1,2000})?[\\\/])?({process_name}[^\\\/\s]{1,2000})))"{0,20}\s{0,100}Token Elevation Type""",
     """binPath=\s{0,100}({service_command_line}(?:\"(.+)\")|(?:(\S+)))\s{0,100}""",

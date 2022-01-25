@@ -11,9 +11,8 @@ Name = unix-auth-failed-4
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """({host}[\w.\-]{1,2000})\s{1,100}sshd\[""",
-    """expired password for user ({account}[^\(]{1,2000}?) \(({failure_reason}[^\)]{1,2000}?)\)"""
+    """expired password for user ({account}.+?) \(({failure_reason}.+?)\)""",
   ]
-  DupFields = [ "account->user" ]
 
 
 }

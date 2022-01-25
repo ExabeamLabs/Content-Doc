@@ -17,6 +17,7 @@ Name = barracuda-email
       """\|({alert_severity}[^\|]{1,2000})\|\s{0,100}event"""
       """suser=(-|({sender}[^\s]{1,2000}))""",
       """duser=(-|({recipient}[^\s]{1,2000}))"""
+      """shost=(unknown|UNKNOWN|({external_domain}[^\s]{1,2000}))""",
       """reason=({alert_name}\d{1,100})""",
     ]
 

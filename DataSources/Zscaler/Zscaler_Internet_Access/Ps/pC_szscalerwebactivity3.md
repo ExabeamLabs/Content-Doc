@@ -24,6 +24,7 @@ Name = s-zscaler-web-activity-3
     """(\W|")eurl=((\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})|({web_domain}[^\/:"]{1,2000}))(:({dest_port}\d{1,100}))?({uri_path}[^?"\s]{1,2000})?(\?({uri_query}[^,]{1,2000}))?","""
     """(\W|")eurl=({full_url}[^="]{1,2000})("|\s\w+=)""",
     """(\W|")urlsupercat=({category}[^+=]{1,2000}?)("|\s{1,100}\w+=)""",
+    """(\W|")eurl=[^"]{1,2000}?({top_domain}[^\/\.\s]{1,2000}(?i)(\.(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)""",
     """(\W|")ua=(Unknown|({user_agent}[^"=]{1,2000}?))("|\s{1,100}\w+=)""",
     """reqsize=({bytes_out}\d{1,100})""",
     """respsize=({bytes_in}\d{1,100})""",

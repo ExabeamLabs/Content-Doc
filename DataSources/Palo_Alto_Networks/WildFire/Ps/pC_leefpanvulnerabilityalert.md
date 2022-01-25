@@ -13,7 +13,7 @@ leef-pan-alert = {
   Fields = [
     """ReceiveTime=({time}\d\d\d\d\/\d\d\/\d\d \d\d:\d\d:\d\d)""",
     """({host}[\w\.-]{1,2000})(\s{1,100}|,"{1,100})LEEF:""",
-    """\|DeviceName =({host}[^\|"]{1,2000}?)\s{0,100}(\||"{0,20}$)""",
+    """\|DeviceName =({host}[^\|"]{1,2000}?)\s{0,100}(\||"*$)""",
     """\|Subtype=({alert_type}[^\|]{1,2000})""",
     """\|src=({src_ip}[a-fA-F\d.:]{1,2000})""",
     """\|dst=({dest_ip}[a-fA-F\d.:]{1,2000})""",

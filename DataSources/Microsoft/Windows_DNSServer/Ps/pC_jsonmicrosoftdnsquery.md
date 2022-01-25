@@ -19,7 +19,7 @@ Name = json-microsoft-dns-query
     """"InterfaceIP":"(0\.0\.0\.0|({dest_ip}[a-fA-F\d:.]{1,2000}))""",
     """"Source":"({src_ip}[a-fA-F\d:.]{1,2000})""",
     """"Port":"({src_port}\d{1,100})""",
-    """"QNAME":"({query}[^",]{1,2000})\.",""",
+    """"QNAME":"({query}[^",]{1,2000}?(\.({top_query}\w+\.(?i)(com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za)))?)\.",""",
     """"QTYPE":"({query_type}[^"]{1,2000})""",
     """"Flags":"({query_flags}[^"]{1,2000})""",
     """"BufferSize":"({bytes}\d{1,100})""",

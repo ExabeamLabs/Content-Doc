@@ -7,9 +7,9 @@ Name = cylance-alert-3
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """"src-application-name":"CylanceProtect"""", """"event-name":"""", """"source-device":""" ]
+  Conditions = [ """"src-application-name":"CylanceProtect"""", """ Skyformation """ ]
   Fields = [
-    """\d{1,100}\s{1,100}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3}Z)\s{1,100}[\w\-.]{1,2000}\s{1,100}""",
+    """\d{1,100}\s{1,100}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3}Z)\s{1,100}[\w\-.]{1,2000}\s{1,100}Skyformation""",
     """"event-name":"({alert_name}[^"]{1,2000})""",
     """"event-name":"({alert_type}[^"]{1,2000})""",
     """"classification":"({alert_type}[^"]{1,2000})""",

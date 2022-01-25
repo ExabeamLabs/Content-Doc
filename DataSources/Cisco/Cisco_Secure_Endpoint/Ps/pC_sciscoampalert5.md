@@ -18,7 +18,7 @@ s-cisco-amp-alert = {
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """\Wact=(|({action}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """dpriv=({alert_name}[^=]{1,2000}?)\s\w{1,2000}=""",
-    """"detection":"(|({alert_name}[^"]+?))"""",
+    """\Wext_detection=(|({alert_name}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdproc=(|({process}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Woutcome=(|({outcome}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """timestamp":\s{0,100}({time}\d{1,100})""",

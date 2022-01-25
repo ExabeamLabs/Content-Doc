@@ -5,8 +5,8 @@ Vendor: AssetView
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     1      |      5      |    5    |
+|   2   |   0    |     2      |      5      |    5    |
 
-| Event Type     | Rules                                                                 | Models |
-| -------------- | --------------------------------------------------------------------- | ------ |
-| print-activity | <b>T1078 - Valid Accounts</b><br> ↳ <b>DORMANT-USER</b>: Dormant User |        |
+| Event Type     | Rules                                                                                                                                                                              | Models |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| print-activity | <b>T1110 - Brute Force</b><br> ↳ <b>PR-SRC-CODE</b>: Printed document with source code file extension<br><br><b>T1078 - Valid Accounts</b><br> ↳ <b>DORMANT-USER</b>: Dormant User |        |

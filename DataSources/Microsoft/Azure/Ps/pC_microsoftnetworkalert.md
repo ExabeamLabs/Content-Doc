@@ -7,7 +7,7 @@ Name = microsoft-network-alert
   Lms = Splunk
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
-  Conditions = [ """destinationServiceName =Azure""", """"category":"FrontdoorWebApplicationFirewallLog"""",""""action":"Block"""" ]
+  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName =Azure""", """"category":"FrontdoorWebApplicationFirewallLog"""",""""action":"Block""""]
   Fields = [
     """"time":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100}Z)"""",
     """"host":"({host}[^"]{1,2000})""",

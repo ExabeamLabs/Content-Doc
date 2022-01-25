@@ -18,7 +18,7 @@ Name = q-crowdstrike-process-alert-1
     """CrowdStrike-DetectId=({alert_id}[^\s]{1,2000})""",
     """CrowdStrike-CommandLine="{1,100}({command_line}({process_directory}[^\.]{1,2000})[\\\/][^"]{1,2000})""",
     """CrowdStrike-FilePath=({file_path}[^\s]{1,2000})""",
-    """CrowdStrike-FileName =({process_name}[^\=]{1,2000}?)(\s{1,100}CrowdStrike-SensorId)""",
+    """CrowdStrike-FileName =({process_name}[^\=]{1,2000}?)(\s+CrowdStrike-SensorId)""",
     """CrowdStrike-ComputerName =({src_host}[^\s]{1,2000})""",
     """CrowdStrike-IOCValue=({file_hash}[^\s]{1,2000})""",
     """CrowdStrike-UserName =(N/A|({user}[^\s]{1,2000}))""",

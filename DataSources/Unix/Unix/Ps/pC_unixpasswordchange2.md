@@ -11,9 +11,8 @@ Name = unix-password-change-2
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """({host}[\w.\-]{1,2000})\s{1,100}chage\[""",
-    """changed password expiry for ({account}\S{1,2000})"""
+    """changed password expiry for ({account}\S+)""",
   ]
-  DupFields = [ "account->target_user" ]
 
 
 }

@@ -8,7 +8,7 @@ Name = crowdstrike-file-alert
   DataType = "file-alert"
   IsHVF = true
   TimeFormat = "epoch"
-  Conditions = [ """"event_simpleName":"QuarantinedFileState"""", """QuarantinedFileName":"""" ]
+  Conditions = [ """CEF:""", """|Skyformation|""", """"event_simpleName":"QuarantinedFileState"""" ]
   Fields = [
     """"timestamp":"({time}\d{1,100})""",
     """"event_simpleName":"({alert_name}[^"]{1,2000})""",

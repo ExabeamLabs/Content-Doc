@@ -16,15 +16,16 @@ cef-proofpoint-email = {
     """\Wsrc=({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """\Wshost=({src_host}.+?)\s{0,100}(\w+=|$)""",
     """\Wsuser=({sender}.+?)\s{0,100}(\w+=|$)""",
+    """\Wsuser=([^@]{1,2000}@({external_domain_sender}[^\s]{1,2000}))""",
     """\Wdst=({dest_ip}[A-Fa-f:\d.]{1,2000})""",
     """\Wdhost=({dest_host}.+?)\s{0,100}(\w+=|$)""",
     """\Wduser=({recipients}.+?)\s{0,100}(\w+=|$)""",
-    """\Wduser=({recipient}[^@]{1,2000}@[^\s,]{1,2000})""",
+    """\Wduser=({recipient}[^@]{1,2000}@({external_domain_recipient}[^\s,]{1,2000}))""",
     """\Wcn1=({bytes}\d{1,100})""",
     """\Wcs5=({attachments}.+?)\s{0,100}(\w+=|$)""",
     """\Wcs5="?({attachment}[^,"]{1,2000}?)("|,|\s{0,100}(\w+=|$))""",
     """\Wcs6=({subject}.+?)\s{0,100}(\w+=|$)""",
-    """\Wdproc=({message_id}.+?)\s{0,100}(\w+=|$)""",
+    """\Wdproc=({email_id}.+?)\s{0,100}(\w+=|$)""",
     """\WeventId=({alert_id}\d{1,100})""",
     """CEF:([^\|]{0,2000}\|){5}({alert_name}[^\|]{1,2000})"""
   ]

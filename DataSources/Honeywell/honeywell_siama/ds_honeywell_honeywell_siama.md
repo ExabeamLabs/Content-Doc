@@ -4,16 +4,15 @@ Product: honeywell siama
 ------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  22   |   8    |     6      |      1      |    1    |
+|  22   |   8    |     5      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 | [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  account-creation<br> ↳[cef-honeywell-physical-badge-access](Ps/pC_cefhoneywellphysicalbadgeaccess.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_honeywell_honeywell_siama_Abnormal_Authentication_&_Access.md)    |
-|    [Account Manipulation](../../../UseCases/uc_account_manipulation.md)    |  account-creation<br> ↳[cef-honeywell-physical-badge-access](Ps/pC_cefhoneywellphysicalbadgeaccess.md)<br> | T1098 - Account Manipulation<br>T1136 - Create Account<br>T1136.001 - Create Account: Create: Local Account<br>T1136.002 - T1136.002<br> | [<ul><li>18 Rules</li></ul><ul><li>8 Models</li></ul>](RM/r_m_honeywell_honeywell_siama_Account_Manipulation.md)   |
+|    [Account Manipulation](../../../UseCases/uc_account_manipulation.md)    |  account-creation<br> ↳[cef-honeywell-physical-badge-access](Ps/pC_cefhoneywellphysicalbadgeaccess.md)<br> | T1098 - Account Manipulation<br>T1136 - Create Account<br>T1136.001 - Create Account: Create: Local Account<br> | [<ul><li>18 Rules</li></ul><ul><li>8 Models</li></ul>](RM/r_m_honeywell_honeywell_siama_Account_Manipulation.md) |
 |    [Brute Force Attack](../../../UseCases/uc_brute_force_attack.md)    |  account-creation<br> ↳[cef-honeywell-physical-badge-access](Ps/pC_cefhoneywellphysicalbadgeaccess.md)<br> | T1110 - Brute Force<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_honeywell_honeywell_siama_Brute_Force_Attack.md)    |
-|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  account-creation<br> ↳[cef-honeywell-physical-badge-access](Ps/pC_cefhoneywellphysicalbadgeaccess.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_honeywell_honeywell_siama_Compromised_Credentials.md) |
-|    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  account-creation<br> ↳[cef-honeywell-physical-badge-access](Ps/pC_cefhoneywellphysicalbadgeaccess.md)<br> | T1110 - Brute Force<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_honeywell_honeywell_siama_Lateral_Movement.md)    |
-|    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  account-creation<br> ↳[cef-honeywell-physical-badge-access](Ps/pC_cefhoneywellphysicalbadgeaccess.md)<br> | T1098 - Account Manipulation<br>T1136 - Create Account<br>T1136.001 - Create Account: Create: Local Account<br>T1136.002 - T1136.002<br> | [<ul><li>17 Rules</li></ul><ul><li>7 Models</li></ul>](RM/r_m_honeywell_honeywell_siama_Privilege_Abuse.md)        |
+|    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  account-creation<br> ↳[cef-honeywell-physical-badge-access](Ps/pC_cefhoneywellphysicalbadgeaccess.md)<br> | T1078 - Valid Accounts<br>T1110 - Brute Force<br>    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_honeywell_honeywell_siama_Lateral_Movement.md)      |
+|    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  account-creation<br> ↳[cef-honeywell-physical-badge-access](Ps/pC_cefhoneywellphysicalbadgeaccess.md)<br> | T1098 - Account Manipulation<br>T1136 - Create Account<br>T1136.001 - Create Account: Create: Local Account<br> | [<ul><li>18 Rules</li></ul><ul><li>8 Models</li></ul>](RM/r_m_honeywell_honeywell_siama_Privilege_Abuse.md)      |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

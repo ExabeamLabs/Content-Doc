@@ -3,7 +3,7 @@
 {
 Name = cef-defender-atp-service-logon
   DataType = "logon"
-  Conditions = ["""AdvancedHunting-DeviceLogonEvents""", """"LogonType":"Service"""", """"InitiatingProcessParentFileName":"""]
+  Conditions = ["""CEF""", """AdvancedHunting-DeviceLogonEvents""", """"LogonType":"Service"""", """"InitiatingProcessParentFileName":"""]
 
 cef-defender-atp-events = {
     Vendor = Microsoft

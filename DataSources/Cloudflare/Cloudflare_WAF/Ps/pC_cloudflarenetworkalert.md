@@ -7,7 +7,7 @@ Name = cloudflare-network-alert
   Lms = Direct
   DataType = "network-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """CEF:""", """destinationServiceName =cloudflare""",""""kind":"firewall""""]
+  Conditions = [ """CEF:""", """destinationServiceName =cloudflare""","""ext_kind=firewall"""]
   Fields = [
     """ext__occurred_at_=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
     """suser=({user}.+?)\s\w+=""",

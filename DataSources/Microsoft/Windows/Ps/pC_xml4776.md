@@ -17,8 +17,7 @@ Name = xml-4776
       """<EventID>({event_code}\d{1,100})</EventID>""",
       """<Computer>(?!(?:[A-Fa-f:\d.]{1,2000}))[^<.]{1,2000}(\.({domain}[^<.]{1,2000})[^<]{0,2000})?</Computer>""",
       """<Data Name(\\)?='TargetUserName'>({user}[^@<]{1,2000}?)(?:@({domain}[^<.]{1,2000})[^<]{0,2000})?</Data>""",
-      """<Data Name(\\)?='Status'>({result_code}[^<]{1,2000})</Data>""",
-      """<Keywords><Keyword>({outcome}[^<]{1,2000})<"""
+      """<Data Name(\\)?='Status'>({result_code}[^<]{1,2000})</Data>"""
     ]
   
 

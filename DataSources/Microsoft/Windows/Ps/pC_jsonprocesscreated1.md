@@ -14,7 +14,6 @@ Name = json-process-created-1
       """"EventTime":\s{0,100}"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """"Account":"(({domain}[^"]{1,2000}?)[\\\/]{1,2000})?({user}[^"\\\/]{1,2000})"""",
       """({event_code}4688)""",
-      """({event_name}A new process has been created)""",
       """"Activity":"({event_name}[^"]{1,2000})""",
       """"Hostname":"({host}[^"]{1,2000})""",
       """"CommandLine":"\s{0,100}({command_line}[^"]{1,2000})""",

@@ -9,9 +9,9 @@ Name = crowdstrike-service-created
   TimeFormat = "epoch"
   Conditions = [ """"event_simpleName":""", """"ServiceStarted"""" ]
   Fields = [
-    """exabeam_host=(gcs-topic|({host}[^\s]{1,2000}))""",
-    """"timestamp":\s{0,100}"({time}\d{1,100})"""",
-    """"CommandLine":\s{0,100}"({command_line}.+?)\s{0,100}","TargetProcessId""",
+    """exabeam_host=({host}[^\s]{1,2000})""",
+    """"timestamp":\s{0,100}"({time}\d{1,100})""",
+    """"CommandLine":\s{0,100}"({command_line}.+?)","TargetProcessId""",
     """"name":\s{0,100}"({service_name}[^"]{1,2000})""",
     """"event_simpleName":\s{0,100}"({event_code}[^"]{1,2000})""",
     """"UserName":\s{0,100}"({user}[^"\s]{1,2000})"""",

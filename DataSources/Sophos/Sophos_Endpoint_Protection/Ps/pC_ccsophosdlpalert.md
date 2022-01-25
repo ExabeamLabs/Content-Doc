@@ -4,11 +4,11 @@
 Name = cc-sophos-dlp-alert
   Lms = Splunk
   DataType = "dlp-alert"
-  Conditions = ["""destinationServiceName =Sophos Central""", """"type":"Event::Endpoint::Device::Blocked"""", """Peripheral blocked: """]
+  Conditions = [ """CEF:""", """|SkyFormation Cloud Apps Security|""", """"type":"Event::Endpoint::Device::Blocked"""", """Peripheral blocked: """ ]
   Fields = ${SophosParserTemplates.cef-sophos-dlp-alert-1.Fields} [
     """"name":"({alert_name}Peripheral blocked):\s{1,100}({target}[^",]{1,2000})"""",
     """"source":"(n\/a|({user_firstname}[^",\s\\]{1,2000}),?\s{0,100}({user_lastname}[^,"\s\\]{1,2000}))"""",
-    """destinationServiceName =({app}[^=]{1,2000})\s{1,100}\w+="""
+    """requestClientApplication=({app}[^=]{1,2000})\s{1,100}\w+="""
   ]
 
 cef-sophos-dlp-alert-1 = {

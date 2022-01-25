@@ -7,7 +7,7 @@ Name = cef-defender-atp-process-1
   Product = Defender ATP
   Lms = Splunk
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
-  Conditions = [ """AdvancedHunting-DeviceProcessEvents""", """ActionType""", """ProcessCreated""" ]
+  Conditions = [ """CEF""", """SkyFormation Cloud Apps Security""", """AdvancedHunting-DeviceProcessEvents""", """ActionType""", """ProcessCreated""" ]
   Fields = [
      """time"{1,100}:\s{0,100}"{1,100}({time}[^"]{1,2000})"""",
      """operationName\\?"{1,100}:\s{0,100}\\?"{1,100}({activity}[^"]{1,2000}?)\\?"""",

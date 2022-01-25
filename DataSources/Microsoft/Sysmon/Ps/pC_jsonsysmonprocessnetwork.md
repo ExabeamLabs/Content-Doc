@@ -12,7 +12,7 @@ Name = json-sysmon-process-network
   Fields = [
     """"UtcTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """"TargetFilename":"({file_path}({file_parent}[^"]{0,2000}?[\\\/]{1,2000})?({file_name}[^"\\\/]{1,2000}?(\.({file_ext}\w+))?))"""",
-    """"Protocol":"({protocol}[^"]{1,2000})""",
+    """"Protocol":"({Protocol}[^"]{1,2000})""",
     """"Domain":"(NT AUTHORITY|({domain}[^"]{1,2000}))""",
     """"AccountName":"((?i)SYSTEM|({user}[^"]{1,2000}))""",
     """"ProcessGuid":"({process_guid}[^"]{1,2000})""",

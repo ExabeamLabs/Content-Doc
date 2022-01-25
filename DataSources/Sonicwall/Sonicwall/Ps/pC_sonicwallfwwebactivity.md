@@ -8,6 +8,7 @@ Name = sonicwall-fw-web-activity
   Fields = ${SonicwallParserTemplates.sonicwall-firewall.Fields} [
     """Category="({category}[^"]{1,2000})""",
     """dstname=(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|({web_domain}[^"\/\s]{1,2000}))""",
+    """dstname=(?!\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})[^=]{0,2000}?({top_domain}[^\s."]{1,2000}(?:\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za))+)""" 
   ]
 
 sonicwall-firewall = {

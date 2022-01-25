@@ -7,6 +7,7 @@ Name = cef-microsoft-failed-app-login
   Fields = ${MSParserTemplates.cef-azure-app-activity-1.Fields}[
     """"description":"Failed log on \(({failure_reason}[^\)]{1,2000})""",
     """"failedUserData":\{"userName":"(({user_email}[^@"]{1,2000}@[^\.]{1,2000}\.[^"]{1,2000})|({user}[^"]{1,2000}))"""",
+    """"operatingSystem":\{"name":"((?i)Unknown|({os}[^"]{1,2000}))"""",
     """"userAgent":";?({user_agent}[^"]{1,2000}?)[;]{0,2000}"""",
   ]
 
@@ -22,7 +23,7 @@ cef-azure-app-activity-1 = {
     """\Wdvchost=(?:Unknown|Personal|({host}[\w\-.]{1,2000}))\s{1,100}\w+=""",
     """act=({activity}[^\s]{1,2000})\s{1,100}(\w+=|$)""",
     """\Wrt=({time}\d{1,100})""",
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z) \S+ """,
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z) \S+ Skyformation""",
     """\Wduser=(anonymous|Unknown|email|({user_email}[^@=]{1,2000}@({email_domain}[^@=]{1,2000}?))|({user}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wsuser=(anonymous|Unknown|email|({user_email}[^@=]{1,2000}@({email_domain}[^@=]{1,2000}?))|({user}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Woutcome=({outcome}[^\s]{1,2000})\s{1,100}(\w+=|$)""",

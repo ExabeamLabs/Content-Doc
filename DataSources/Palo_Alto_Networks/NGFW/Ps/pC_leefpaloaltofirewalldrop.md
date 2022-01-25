@@ -13,15 +13,15 @@ leef-paloalto-firewall = {
   TimeFormat = "MMM dd yyyy HH:mm:ss z"
   Fields = [
     """\s({host}[\w\.-]{1,2000})(\s{1,100}|,"{1,100})LEEF:""",
-    """\|DeviceName =({host}[^\|"]{1,2000}?)\s{0,100}(\||"{0,20}$)""",
-    """\|devTime=({time}\w{3}\s{1,100}\d{1,100} \d\d\d\d \d\d:\d\d:\d\d \w{1,2000})\|""",
-    """\|Type=({log_type}\w{1,2000})\|""",
-    """\|Subtype=({subtype}\w{1,2000})\|""",
+    """\|DeviceName =({host}[^\|"]{1,2000}?)\s{0,100}(\||"*$)""",
+    """\|devTime=({time}\w{3}\s{1,100}\d{1,100} \d\d\d\d \d\d:\d\d:\d\d \w+)\|""",
+    """\|Type=({log_type}\w+)\|""",
+    """\|Subtype=({subtype}\w+)\|""",
     """\|src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\|""",
     """\|dst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\|""",
     """\|srcPostNAT=(0\.0\.0\.0|({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))\|""",
     """\|dstPostNAT=(0\.0\.0\.0|({dest_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))\|""",
-    """\|RuleName =({rule}[^\|]{0,2000}?)\|""",
+    """\|RuleName =({rule}[^\|].*?)\|""",
     """\|usrName =(|((({domain}[^\|\\]{1,2000})\\)?({user}[^\|\\]{1,2000})))\|""",
     """\|SourceUser=(|((({src_domain}[^\|\\]{1,2000})\\)?({src_user}[^\|\\]{1,2000})))\|""",
     """\|DestinationUser=(|((({dest_domain}[^\|\\]{1,2000})\\)?({dest_user}[^\|\\]{1,2000})))\|""",
@@ -43,7 +43,7 @@ leef-paloalto-firewall = {
     """\|Direction=({direction}[\w-]{1,2000})\|""",
     """\|sequence=({sequence}\d{1,100})\|""",
     """\|SessionEndReason=({outcome}[^\|"]{1,2000}?)\|""",
-    """\|action=({action}\w{1,2000})\|""",
+    """\|action=({action}\w+)\|""",
   
 }
 ```

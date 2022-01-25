@@ -3,7 +3,7 @@
 {
 Name = cef-microsoft-app-activity-38
   DataType = "app-activity"
-  Conditions = [ """destinationServiceName =Office 365""", """LDAP query""", """Run command:""" ]
+  Conditions = [ """CEF:""", """destinationServiceName =Office 365""", """LDAP query""", """Run command:""" ]
 
 cef-azure-app-activity-1 = {
   Vendor = Microsoft
@@ -17,7 +17,7 @@ cef-azure-app-activity-1 = {
     """\Wdvchost=(?:Unknown|Personal|({host}[\w\-.]{1,2000}))\s{1,100}\w+=""",
     """act=({activity}[^\s]{1,2000})\s{1,100}(\w+=|$)""",
     """\Wrt=({time}\d{1,100})""",
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z) \S+ """,
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z) \S+ Skyformation""",
     """\Wduser=(anonymous|Unknown|email|({user_email}[^@=]{1,2000}@({email_domain}[^@=]{1,2000}?))|({user}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wsuser=(anonymous|Unknown|email|({user_email}[^@=]{1,2000}@({email_domain}[^@=]{1,2000}?))|({user}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Woutcome=({outcome}[^\s]{1,2000})\s{1,100}(\w+=|$)""",

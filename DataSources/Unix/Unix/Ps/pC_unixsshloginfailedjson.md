@@ -16,10 +16,10 @@ unix-activity-json = {
     Lms = Direct
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
     Fields = [
-      """"host(name)?":"({host}[^"]{1,2000})""",
+      """"host":"({host}[^"]{1,2000})""",
       """"ident":"({event_code}[^"]{1,2000})""",
       """"pid":"({pid}\d{1,100})""",
-      """"time(stamp)?":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ?)""",
+      """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
     
 }
 ```

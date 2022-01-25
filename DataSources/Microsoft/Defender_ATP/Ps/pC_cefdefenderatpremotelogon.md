@@ -3,7 +3,7 @@
 {
 Name = cef-defender-atp-remote-logon
   DataType = "remote-logon"
-  Conditions = ["""AdvancedHunting-DeviceLogonEvents""", """"LogonType":"RemoteInteractive"""", """"InitiatingProcessParentFileName":"""]
+  Conditions = ["""CEF""", """AdvancedHunting-DeviceLogonEvents""", """"LogonType":"RemoteInteractive"""", """"InitiatingProcessParentFileName":"""]
 
 cef-defender-atp-events = {
     Vendor = Microsoft

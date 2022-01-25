@@ -11,9 +11,7 @@ Name = raw-4742
   Fields = [
     """EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""",
     """({event_name}A computer account was changed)""",
-    """exabeam_host=([^=]{1,2000}?@\s{0,100})?(::ffff:)?(gcs-topic|({host}[\w.-]{1,2000}))""",
-    """"agent_hostname":"({host}[^"]{1,200})"""",
-    """"computer":"({host}[^"]{1,200})"""",
+    """exabeam_host=([^=]{1,2000}?@\s{0,100})?(::ffff:)?({host}[\w.-]{1,2000})""",
     """<Computer>(::ffff:)?({host}[^<]{1,2000})</Computer>""",
     """SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d)""",
     """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}\.\d{1,100})""",

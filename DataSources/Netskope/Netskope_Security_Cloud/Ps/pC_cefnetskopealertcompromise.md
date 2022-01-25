@@ -7,7 +7,7 @@ Name = cef-netskope-alert-compromise
   Lms = Direct
   DataType = "alert"
   TimeFormat = "epoch_sec"
-  Conditions = [ """"alert_type":"Compromised Credential"""", """destinationServiceName =Netskope""", """"type":"breach"""" ]
+  Conditions = [ """CEF:""", """|Skyformation|""", """"alert_type":"Compromised Credential"""", """destinationServiceName =Netskope""", """|security-threat-detected|""", """"type":"breach"""" ]
  Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"timestamp":({time}\d{1,100})""",

@@ -17,6 +17,7 @@ Name = s-O365-email
     """SenderAddress="({sender}[^"]{1,2000})"""",
     """RecipientAddress="({recipients}[^"]{1,2000})"""",
     """RecipientAddress="({external_address}[^",]{1,2000})"""",
+    """RecipientAddress="[^@]{1,2000}@({external_domain}[^",]{1,2000})"""",
     """FromIP="({src_ip}[^"]{1,2000})"""",
     """ToIP="({dest_ip}[^"]{1,2000})"""",
     """Size="({bytes}\d{1,100})"""",

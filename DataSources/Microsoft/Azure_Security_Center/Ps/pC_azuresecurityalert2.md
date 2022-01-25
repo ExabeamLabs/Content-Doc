@@ -7,7 +7,7 @@ Name = azure-security-alert-2
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """"ProductName":"Azure Security Center"""", """destinationServiceName =Azure""", """dproc=Log Analytics OMS Workspace""", """"Type":"SecurityAlert"""" ]
+  Conditions = [ """"ProductName":"Azure Security Center"""","""CEF""", """|SkyFormation Cloud Apps Security|""", """destinationServiceName =Azure""", """dproc=Log Analytics OMS Workspace""", """"Type":"SecurityAlert"""" ]
   Fields=[
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """"AlertName":"({alert_name}[^"]{1,2000})""",

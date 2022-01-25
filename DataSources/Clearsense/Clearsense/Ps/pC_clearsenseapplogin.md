@@ -3,7 +3,7 @@
 {
 Name = clearsense-app-login
   DataType = "app-login"
-  Conditions = [ """SUCCESSFUL_LOGIN""", """Login Successful""", """requestClientApplication=ClearSense Audit""" ]
+  Conditions = [ """SUCCESSFUL_LOGIN""", """Login Successful""", """requestClientApplication=ClearSense Audit""", """CEF""" ]
 
 clesarsense-app-activity = {
    Vendor = Clearsense
@@ -11,7 +11,7 @@ clesarsense-app-activity = {
    Lms = Direct
    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
    Fields = [
-     """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}.\d{1,100}Z)""",
+     """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}.\d{1,100}Z).*?Skyformation""",
      """requestClientApplication=({app}.*?)\s{0,100}\w+=""",
      """"path":"({object}[^"]{1,2000}?)""""
      """"{1,20}method"{1,20}:"{1,20}({method}[^"]{1,2000})""",

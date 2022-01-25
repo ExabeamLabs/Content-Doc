@@ -7,7 +7,7 @@ Name = zoom-meeting-updated
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "epoch"
-  Conditions = [ """"event":"meeting.updated"""" ]
+  Conditions = [ """|Skyformation|""", """"event":"meeting.updated"""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """\WdestinationServiceName =({app}.+?)(\s{1,100}\w+=|\s{0,100}$)""",

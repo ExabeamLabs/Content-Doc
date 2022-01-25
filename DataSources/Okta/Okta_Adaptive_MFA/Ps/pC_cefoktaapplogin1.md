@@ -25,7 +25,7 @@ Name = cef-okta-app-login-1
     """"outcome":[^\]]{0,2000}?"result"\s{0,100}:\s{0,100}"(FAILURE|DENY)","reason":"({failure_reason}[^"]{1,2000})""",
     """"outcome":[^\]]{0,2000}?"result"\s{0,100}:\s{0,100}"({outcome}[^"]{1,2000})"""",
     """({app}(?i)Okta)""",
-    """destinationServiceName({app}[^=]{1,2000}?)\s{0,100}\w+=""",
+    """requestClientApplication=({app}[^=]{1,2000}?)\s{0,100}\w+=""",
     """"type":"AppInstance"[^\}\]]{0,2000}"displayName":"({app}[^"]{1,2000}?)\s{0,100}"""",
     """request"{1,20}:[^\]]{0,2000}?"{1,20}type"{1,20}:"{1,20}User"{1,20
 

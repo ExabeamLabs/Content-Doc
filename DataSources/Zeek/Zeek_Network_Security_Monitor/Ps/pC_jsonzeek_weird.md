@@ -16,8 +16,7 @@ json-zeek-activity = {
   Lms = Splunk
   TimeFormat = "epoch"
   Fields = [
-    """exabeam_host=([^@=]{1,2000}@\s{0,100})?({host}\S{1,2000})""",
-    """"_system_name":"({host}[\w\-.]{1,2000})"""",
+    """exabeam_host=([^@=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"ts"{1,20}:({time}\d{1,100})""",
     """"uid\\?"{1,20}:\\?"{1,20}({conn_id}[^"\\]{1,2000})""",
     """"id\.orig_h\\?"{1,20}:\\?"{1,20}({src_ip}[a-fA-F\d.:]{1,2000})""",

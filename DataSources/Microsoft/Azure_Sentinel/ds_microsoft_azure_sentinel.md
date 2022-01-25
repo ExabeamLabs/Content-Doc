@@ -8,7 +8,7 @@ Product: Azure Sentinel
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-|    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  app-activity-failed<br> ↳[azure-security-alert](Ps/pC_azuresecurityalert.md)<br> | T1078 - Valid Accounts<br>T1090.003 - Proxy: Multi-hop Proxy<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_microsoft_azure_sentinel_Lateral_Movement.md)    |
+|    [Evasion](../../../UseCases/uc_evasion.md)    |  app-activity-failed<br> ↳[azure-security-alert](Ps/pC_azuresecurityalert.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_microsoft_azure_sentinel_Evasion.md)    |
 |     [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)     |  app-activity-failed<br> ↳[azure-security-alert](Ps/pC_azuresecurityalert.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_microsoft_azure_sentinel_Privilege_Abuse.md)     |
 | [Privileged Activity](../../../UseCases/uc_privileged_activity.md) |  app-activity-failed<br> ↳[azure-security-alert](Ps/pC_azuresecurityalert.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_microsoft_azure_sentinel_Privileged_Activity.md) |
 |          [Ransomware](../../../UseCases/uc_ransomware.md)          |  app-activity-failed<br> ↳[azure-security-alert](Ps/pC_azuresecurityalert.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_microsoft_azure_sentinel_Ransomware.md)          |

@@ -10,11 +10,10 @@ Name = unix-password-change-4
   Conditions = [ """couldn't update the""", """keyring password:""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """({host}[\w.\-]{1,2000})\s{1,100}passwd(:|\[)""",
+    """({host}[\w.\-]{1,2000})\s{1,100}passwd:""",
     """couldn't update the '({account}[^']{1,2000})""",
     """keyring password: ({failure_reason}.+?)\s{0,100}$""",
   ]
-  DupFields = [ "account->target_user" ]
 
 
 }

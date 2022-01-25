@@ -4,7 +4,7 @@
 Name = O365-email-alert-in
   Conditions = [ """"activity_type":"Receive"""" ]
   Fields = ${MSParserTemplates.O365-email-alert.Fields} [
-    """ from ({external_address}[^"\s@]{1,2000}@[^"\s@]{1,2000})""",
+    """ from ({external_address}[^"\s@]{1,2000}@({external_domain}[^"\s@]{1,2000}))""",
   ]
 
 O365-email-alert = {

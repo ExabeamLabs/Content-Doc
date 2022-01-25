@@ -7,7 +7,7 @@ Name = s-aws-data-access
   Lms = Direct
   DataType = "cloud-storage-access"
   TimeFormat = "dd/MMM/yyyy:HH:mm:ss"
-  Conditions = ["""requestClientApplication=AWS Collector""", """ arn:aws""" , """.amazonaws.com """ ]
+  Conditions = ["""requestClientApplication=AWS Collector""", """|SkyFormation Cloud Apps Security|""", """ arn:aws""" , """.amazonaws.com """ ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """\s({bucket}\S+)\s\[\d\d\/\w\w\w\/\d\d\d\d:\d\d:\d\d:\d\d""",

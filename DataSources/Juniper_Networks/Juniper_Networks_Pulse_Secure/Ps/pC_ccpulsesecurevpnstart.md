@@ -3,7 +3,7 @@
 {
 Name = cc-pulsesecure-vpn-start
   DataType = "vpn-start"
-  Conditions = [ """"host":""", """"PulseSecure:"""", """VPN Tunneling: Session started for user""" ]
+  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """"PulseSecure:"""", """VPN Tunneling: Session started for user""" ]
   Fields = ${JuniperParserTemplates.cef-pulsesecure-vpn-events.Fields} [
     """\shostname\s{1,100}({src_host}[^"\s]{1,2000})""",
     """Session started for user with IPv4 address ({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""

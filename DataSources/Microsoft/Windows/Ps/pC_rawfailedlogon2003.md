@@ -19,7 +19,7 @@ Name = raw-failed-logon-2003
       """Event(ID)?Code=({event_code}\d{1,100})""",
       """Caller User Name:\s{0,100}(-|({user}.+?))\s{0,100}Caller Domain:""",
       """Caller Domain:\s{0,100}(-|({domain}.+?))\s{0,100}Caller Logon ID:""",
-      """User Name:\s{0,100}(?=\w)(-|([^\/]{1,2000}?\/)?({user}[^\s]{1,2000}))\s{0,100}Domain.+?Logon Type""",
+      """User Name:\s{0,100}(?=\w)(-|({user}.+?))\s{0,100}Domain.+?Logon Type""",
       """Domain:\s{0,100}(?=\w)({domain}.+?)\s{0,100}Logon Type""",
       """Logon Type:\s{0,100}({logon_type}\d{1,100})\s{1,100}Logon Process:\s{1,100}({auth_process}.*?)\s{1,100}Authentication Package:\s{1,100}({auth_package}.*?)\s{1,100}Workstation Name:""",
       """Workstation Name:\s{0,100}(-|({src_host_windows}[^\s]{1,2000}))\s{0,100}Caller User Name:""",
