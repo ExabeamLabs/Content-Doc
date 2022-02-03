@@ -7,6 +7,6 @@ Vendor: Juniper Networks
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      2      |    2    |
 
-| Event Type                    | Rules                                                                                                                | Models |
-| ----------------------------- | -------------------------------------------------------------------------------------------------------------------- | ------ |
+| Event Type    | Rules    | Models |
+| ---- | ---- | ------ |
 | network-connection-successful | <b>T1496 - Resource Hijacking</b><br> ↳ <b>A-NET-Coin-IP</b>: Connection to IP associated with cryptocurrency mining |        |

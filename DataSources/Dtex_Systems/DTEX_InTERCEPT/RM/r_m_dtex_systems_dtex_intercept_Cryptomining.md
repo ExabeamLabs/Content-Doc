@@ -7,6 +7,6 @@ Vendor: Dtex Systems
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   2   |   0    |     1      |      9      |    9    |
 
-| Event Type      | Rules                                                                                                                                                                                                                 | Models |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| Event Type      | Rules    | Models |
+| ---- | ---- | ------ |
 | process-created | <b>T1496 - Resource Hijacking</b><br> ↳ <b>A-EPA-Shadow-Mining-name</b>: Process ending with 'miner.exe' has been run on this asset<br> ↳ <b>EPA-Shadow-Mining-name</b>: Process ending with 'miner.exe' has been run |        |

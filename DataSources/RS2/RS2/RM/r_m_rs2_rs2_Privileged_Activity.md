@@ -7,7 +7,7 @@ Vendor: RS2
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   2   |   0    |     1      |      2      |    2    |
 
-| Event Type      | Rules                                                                                                         | Models |
-| --------------- | ------------------------------------------------------------------------------------------------------------- | ------ |
+| Event Type      | Rules    | Models |
+| ---- | ---- | ------ |
 | app-login       | <b>T1078 - Valid Accounts</b><br> ↳ <b>APP-Account-deactivated</b>: Activity from a de-activated user account |        |
-| physical-access | <b>T1078 - Valid Accounts</b><br> ↳ <b>PA-DU</b>: Badge access by disabled user                               |        |
+| physical-access | <b>T1078 - Valid Accounts</b><br> ↳ <b>PA-DU</b>: Badge access by disabled user    |        |

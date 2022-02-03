@@ -4,7 +4,7 @@ Product: RS2
 ------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  51   |   21   |     4      |      2      |    2    |
+|  50   |   20   |     4      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
@@ -13,7 +13,7 @@ Product: RS2
 |    [Data Access](../../../UseCases/uc_data_access.md)    |  app-login<br> ↳[rs2-physical-access](Ps/pC_rs2physicalaccess.md)<br><br> physical-access<br> ↳[rs2-physical-access](Ps/pC_rs2physicalaccess.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>5 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_rs2_rs2_Data_Access.md)    |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  app-login<br> ↳[rs2-physical-access](Ps/pC_rs2physicalaccess.md)<br><br> physical-access<br> ↳[rs2-physical-access](Ps/pC_rs2physicalaccess.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_rs2_rs2_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  app-login<br> ↳[rs2-physical-access](Ps/pC_rs2physicalaccess.md)<br><br> physical-access<br> ↳[rs2-physical-access](Ps/pC_rs2physicalaccess.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_rs2_rs2_Malware.md)    |
-|    [Physical Security](../../../UseCases/uc_physical_security.md)    |  app-login<br> ↳[rs2-physical-access](Ps/pC_rs2physicalaccess.md)<br><br> physical-access<br> ↳[rs2-physical-access](Ps/pC_rs2physicalaccess.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>8 Rules</li></ul><ul><li>3 Models</li></ul>](RM/r_m_rs2_rs2_Physical_Security.md)    |
+|    [Physical Security](../../../UseCases/uc_physical_security.md)    |  app-login<br> ↳[rs2-physical-access](Ps/pC_rs2physicalaccess.md)<br><br> physical-access<br> ↳[rs2-physical-access](Ps/pC_rs2physicalaccess.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>7 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_rs2_rs2_Physical_Security.md)    |
 |    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  app-login<br> ↳[rs2-physical-access](Ps/pC_rs2physicalaccess.md)<br><br> physical-access<br> ↳[rs2-physical-access](Ps/pC_rs2physicalaccess.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_rs2_rs2_Privilege_Abuse.md)    |
 |    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  app-login<br> ↳[rs2-physical-access](Ps/pC_rs2physicalaccess.md)<br><br> physical-access<br> ↳[rs2-physical-access](Ps/pC_rs2physicalaccess.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_rs2_rs2_Privileged_Activity.md)    |
 |    [Ransomware](../../../UseCases/uc_ransomware.md)    |  app-login<br> ↳[rs2-physical-access](Ps/pC_rs2physicalaccess.md)<br><br> physical-access<br> ↳[rs2-physical-access](Ps/pC_rs2physicalaccess.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_rs2_rs2_Ransomware.md)    |

@@ -10,7 +10,7 @@
         "maxValue": 20, 
         "minValue": 0
     }, 
-    "version": "4.2", 
+    "version": "4.3", 
     "techniques": [
         {
             "comment": "19 rules", 

@@ -7,7 +7,7 @@ Vendor: Cisco
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   2   |   0    |     1      |      3      |    3    |
 
-| Event Type         | Rules                                                                                                         | Models |
-| ------------------ | ------------------------------------------------------------------------------------------------------------- | ------ |
+| Event Type         | Rules    | Models |
+| ---- | ---- | ------ |
 | dlp-email-alert-in | <b>T1078 - Valid Accounts</b><br> ↳ <b>APP-Account-deactivated</b>: Activity from a de-activated user account |        |
-| physical-access    | <b>T1078 - Valid Accounts</b><br> ↳ <b>PA-DU</b>: Badge access by disabled user                               |        |
+| physical-access    | <b>T1078 - Valid Accounts</b><br> ↳ <b>PA-DU</b>: Badge access by disabled user    |        |

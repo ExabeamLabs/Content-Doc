@@ -5,10 +5,9 @@ Vendor: Cisco
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   3   |   1    |     1      |     12      |   12    |
+|   2   |   1    |     1      |     12      |   12    |
 
-| Event Type      | Rules                                                                                                            | Models                                                                     |
-| --------------- | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| account-lockout | <b>T1110 - Brute Force</b><br> ↳ <b>SEQ-UH-02</b>: Account lockout on an asset that does not belong to this user |                                                                            |
-| print-activity  | <b>T1110 - Brute Force</b><br> ↳ <b>PR-SRC-CODE</b>: Printed document with source code file extension            |                                                                            |
+| Event Type      | Rules    | Models    |
+| ---- | ---- | ---- |
+| account-lockout | <b>T1110 - Brute Force</b><br> ↳ <b>SEQ-UH-02</b>: Account lockout on an asset that does not belong to this user |    |
 | vpn-logout      | <b>T1110 - Brute Force</b><br> ↳ <b>AUTH-F-COUNT</b>: Abnormal number of failed authentications for user         |  • <b>AUTH-F-COUNT</b>: Count of failed authentication events in a session |

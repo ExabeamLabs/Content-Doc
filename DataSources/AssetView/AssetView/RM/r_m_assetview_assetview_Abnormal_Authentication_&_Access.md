@@ -7,6 +7,6 @@ Vendor: AssetView
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      5      |    5    |
 
-| Event Type     | Rules                                                                 | Models |
-| -------------- | --------------------------------------------------------------------- | ------ |
+| Event Type     | Rules    | Models |
+| ---- | ---- | ------ |
 | print-activity | <b>T1078 - Valid Accounts</b><br> ↳ <b>DORMANT-USER</b>: Dormant User |        |
