@@ -7,6 +7,6 @@ Vendor: Namespace rDirectory
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      7      |    7    |
 
-| Event Type | Rules                                                                                                                     | Models |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------- | ------ |
+| Event Type | Rules    | Models |
+| ---------- | ---- | ------ |
 | app-login  | <b>T1078 - Valid Accounts</b><br> ↳ <b>Auth-Ransomware-Shost</b>: User authentication or login from a known ransomware IP |        |

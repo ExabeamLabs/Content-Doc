@@ -7,6 +7,6 @@ Vendor: McAfee
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      7      |    7    |
 
-| Event Type     | Rules                                                                 | Models |
-| -------------- | --------------------------------------------------------------------- | ------ |
+| Event Type     | Rules    | Models |
+| ---- | ---- | ------ |
 | print-activity | <b>T1078 - Valid Accounts</b><br> ↳ <b>DORMANT-USER</b>: Dormant User |        |

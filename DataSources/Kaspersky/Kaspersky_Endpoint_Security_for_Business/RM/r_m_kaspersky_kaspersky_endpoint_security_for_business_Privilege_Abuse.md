@@ -7,6 +7,6 @@ Vendor: Kaspersky
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      4      |    4    |
 
-| Event Type | Rules                                                                                                             | Models |
-| ---------- | ----------------------------------------------------------------------------------------------------------------- | ------ |
+| Event Type | Rules    | Models |
+| ---------- | ---- | ------ |
 | file-alert | <b>T1078 - Valid Accounts</b><br> ↳ <b>FA-Account-deactivated</b>: File Activity from a de-activated user account |        |

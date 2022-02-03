@@ -4,7 +4,7 @@ Product: McAfee IDPS
 --------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  50   |   39   |     13     |      1      |    1    |
+|  49   |   38   |     13     |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
@@ -14,7 +14,7 @@ Product: McAfee IDPS
 |          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  vpn-logout<br> ↳[mcafee-idps-network-alert](Ps/pC_mcafeeidpsnetworkalert.md)<br> | T1021 - Remote Services<br>T1078 - Valid Accounts<br>T1110 - Brute Force<br>T1133 - External Remote Services<br>    | [<ul><li>17 Rules</li></ul><ul><li>9 Models</li></ul>](RM/r_m_mcafee_mcafee_idps_Compromised_Credentials.md)          |
 |    [Data Access](../../../UseCases/uc_data_access.md)    |  vpn-logout<br> ↳[mcafee-idps-network-alert](Ps/pC_mcafeeidpsnetworkalert.md)<br> | T1110 - Brute Force<br>    | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_mcafee_mcafee_idps_Data_Access.md)    |
 |    [Data Exfiltration](../../../UseCases/uc_data_exfiltration.md)    |  vpn-logout<br> ↳[mcafee-idps-network-alert](Ps/pC_mcafeeidpsnetworkalert.md)<br> | T1133 - External Remote Services<br>TA0010 - TA0010<br>    | [<ul><li>4 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_mcafee_mcafee_idps_Data_Exfiltration.md)    |
-|    [Data Leak](../../../UseCases/uc_data_leak.md)    |  vpn-logout<br> ↳[mcafee-idps-network-alert](Ps/pC_mcafeeidpsnetworkalert.md)<br> | T1048.003 - Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol<br>T1052 - Exfiltration Over Physical Medium<br>T1052.001 - Exfiltration Over Physical Medium: Exfiltration over USB<br>T1133 - External Remote Services<br>TA0010 - TA0010<br> | [<ul><li>12 Rules</li></ul><ul><li>12 Models</li></ul>](RM/r_m_mcafee_mcafee_idps_Data_Leak.md)    |
+|    [Data Leak](../../../UseCases/uc_data_leak.md)    |  vpn-logout<br> ↳[mcafee-idps-network-alert](Ps/pC_mcafeeidpsnetworkalert.md)<br> | T1048.003 - Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol<br>T1052 - Exfiltration Over Physical Medium<br>T1052.001 - Exfiltration Over Physical Medium: Exfiltration over USB<br>T1133 - External Remote Services<br>TA0010 - TA0010<br> | [<ul><li>11 Rules</li></ul><ul><li>11 Models</li></ul>](RM/r_m_mcafee_mcafee_idps_Data_Leak.md)    |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  vpn-logout<br> ↳[mcafee-idps-network-alert](Ps/pC_mcafeeidpsnetworkalert.md)<br> | T1021 - Remote Services<br>T1078 - Valid Accounts<br>T1558.003 - Steal or Forge Kerberos Tickets: Kerberoasting<br>    | [<ul><li>7 Rules</li></ul><ul><li>5 Models</li></ul>](RM/r_m_mcafee_mcafee_idps_Lateral_Movement.md)    |
 |    [Phishing](../../../UseCases/uc_phishing.md)    |  vpn-logout<br> ↳[mcafee-idps-network-alert](Ps/pC_mcafeeidpsnetworkalert.md)<br> | T1566 - Phishing<br>    | [<ul><li>2 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_mcafee_mcafee_idps_Phishing.md)    |
 |    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  vpn-logout<br> ↳[mcafee-idps-network-alert](Ps/pC_mcafeeidpsnetworkalert.md)<br> | T1078 - Valid Accounts<br>T1098.002 - Account Manipulation: Exchange Email Delegate Permissions<br>    | [<ul><li>2 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_mcafee_mcafee_idps_Privilege_Abuse.md)    |

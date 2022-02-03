@@ -7,6 +7,6 @@ Vendor: Forcepoint
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      1      |    1    |
 
-| Event Type       | Rules                                                                            | Models |
-| ---------------- | -------------------------------------------------------------------------------- | ------ |
+| Event Type       | Rules    | Models |
+| ---- | ---- | ------ |
 | failed-vpn-login | <b>T1133 - External Remote Services</b><br> ↳ <b>SEQ-UH-15</b>: Failed VPN login |        |

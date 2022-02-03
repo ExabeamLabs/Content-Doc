@@ -7,6 +7,6 @@ Vendor: Check Point
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      4      |    4    |
 
-| Event Type     | Rules                                                                                                         | Models |
-| -------------- | ------------------------------------------------------------------------------------------------------------- | ------ |
+| Event Type     | Rules    | Models |
+| ---- | ---- | ------ |
 | security-alert | <b>T1068 - Exploitation for Privilege Escalation</b><br> ↳ <b>ALERT-EXEC</b>: Security violation by Executive |        |

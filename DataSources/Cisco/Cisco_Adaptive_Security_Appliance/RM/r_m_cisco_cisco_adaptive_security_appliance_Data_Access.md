@@ -7,7 +7,7 @@ Vendor: Cisco
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   3   |   1    |     2      |     10      |   10    |
 
-| Event Type      | Rules                                                                                                                                                                                      | Models                                                                   |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
-| process-created | <b>T1003 - OS Credential Dumping</b><br> ↳ <b>A-CreateMiniDump-Hacktool</b>: CreateMiniDump Hacktool detected on this asset.<br> ↳ <b>CreateMiniDump-Hacktool</b>: CreateMiniDump Hacktool |                                                                          |
-| vpn-logout      | <b>T1110 - Brute Force</b><br> ↳ <b>APP-UFL-COUNT</b>: Abnormal number of failed application logins for user                                                                               |  • <b>APP-UFL-COUNT</b>: Count of failed application logins in a session |
+| Event Type      | Rules    | Models    |
+| ---- | ---- | ---- |
+| process-created | <b>T1003 - OS Credential Dumping</b><br> ↳ <b>A-CP-Sensitive-Files</b>: Copying sensitive files with credential data on this asset<br> ↳ <b>CP-Sensitive-Files</b>: Copying sensitive files with credential data |    |
+| vpn-logout      | <b>T1110 - Brute Force</b><br> ↳ <b>APP-UFL-COUNT</b>: Abnormal number of failed application logins for user    |  • <b>APP-UFL-COUNT</b>: Count of failed application logins in a session |

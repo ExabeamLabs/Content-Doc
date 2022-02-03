@@ -5,8 +5,8 @@ Vendor: Microsoft
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     2      |      5      |    5    |
+|   2   |   0    |     2      |      5      |    5    |
 
-| Event Type     | Rules                                                                                                                                                                                                                                                                                                           | Models |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| registry-write | <b>T1112 - Modify Registry</b><br> ↳ <b>AccountTokenFilterPolicyChange</b>: The LocalAccountTokenFilterPolicy was disabled<br><br><b>T1548.002 - Abuse Elevation Control Mechanism: Bypass User Account Control</b><br> ↳ <b>AccountTokenFilterPolicyChange</b>: The LocalAccountTokenFilterPolicy was disabled |        |
+| Event Type     | Rules    | Models |
+| ---- | ---- | ------ |
+| registry-write | <b>T1112 - Modify Registry</b><br> ↳ <b>A-LocalAccountTokenFilterPolicyChange</b>: The LocalAccountTokenFilterPolicy was disabled on the asset.<br> ↳ <b>AccountTokenFilterPolicyChange</b>: The LocalAccountTokenFilterPolicy was disabled<br><br><b>T1548.002 - Abuse Elevation Control Mechanism: Bypass User Account Control</b><br> ↳ <b>A-LocalAccountTokenFilterPolicyChange</b>: The LocalAccountTokenFilterPolicy was disabled on the asset.<br> ↳ <b>AccountTokenFilterPolicyChange</b>: The LocalAccountTokenFilterPolicy was disabled |        |

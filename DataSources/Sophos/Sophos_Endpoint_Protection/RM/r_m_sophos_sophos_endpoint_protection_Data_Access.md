@@ -7,6 +7,6 @@ Vendor: Sophos
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      8      |    8    |
 
-| Event Type       | Rules                                                                            | Models |
-| ---------------- | -------------------------------------------------------------------------------- | ------ |
+| Event Type       | Rules    | Models |
+| ---- | ---- | ------ |
 | failed-app-login | <b>T1078 - Valid Accounts</b><br> ↳ <b>APP-F-FL</b>: Failed login to application |        |

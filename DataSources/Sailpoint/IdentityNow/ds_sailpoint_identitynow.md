@@ -4,7 +4,7 @@ Product: IdentityNow
 --------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  114  |   64   |     17     |      6      |    6    |
+|  113  |   63   |     17     |      6      |    6    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

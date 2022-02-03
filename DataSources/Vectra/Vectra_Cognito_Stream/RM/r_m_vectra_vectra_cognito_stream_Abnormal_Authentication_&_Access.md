@@ -7,6 +7,6 @@ Vendor: Vectra
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   1    |     1      |      1      |    1    |
 
-| Event Type             | Rules                                                                              | Models                                                                      |
-| ---------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| Event Type    | Rules    | Models    |
+| ---- | ---- | ---- |
 | failed-physical-access | <b>T1078 - Valid Accounts</b><br> ↳ <b>PA-VPN-02</b>: Badge access after VPN login |  • <b>PA-VPN-02</b>: Users who accessed a physical location after vpn login |

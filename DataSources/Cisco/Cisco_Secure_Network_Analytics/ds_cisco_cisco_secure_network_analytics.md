@@ -4,7 +4,7 @@ Product: Cisco Secure Network Analytics
 ---------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  50   |   39   |     13     |      1      |    1    |
+|  49   |   38   |     13     |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -7,6 +7,6 @@ Vendor: Honeywell
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   2   |   0    |     1      |      1      |    1    |
 
-| Event Type       | Rules                                                                                                                     | Models |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------- | ------ |
+| Event Type       | Rules    | Models |
+| ---- | ---- | ------ |
 | account-creation | <b>T1078 - Valid Accounts</b><br> ↳ <b>DORMANT-USER</b>: Dormant User<br> ↳ <b>NEW-USER-F</b>: User with no event history |        |

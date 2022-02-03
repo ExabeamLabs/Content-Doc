@@ -7,7 +7,7 @@ Vendor: Dell
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   2   |   0    |     2      |      3      |    3    |
 
-| Event Type     | Rules                                                                                                         | Models |
-| -------------- | ------------------------------------------------------------------------------------------------------------- | ------ |
+| Event Type     | Rules    | Models |
+| ---- | ---- | ------ |
 | account-switch | <b>T1078 - Valid Accounts</b><br> ↳ <b>AS-UA-F-PRIV</b>: Account switch to a privileged or executive account  |        |
 | security-alert | <b>T1068 - Exploitation for Privilege Escalation</b><br> ↳ <b>ALERT-EXEC</b>: Security violation by Executive |        |
