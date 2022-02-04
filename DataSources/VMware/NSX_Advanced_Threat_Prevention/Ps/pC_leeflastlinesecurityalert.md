@@ -2,8 +2,8 @@
 ```Java
 {
 Name = leef-lastline-security-alert
-  Vendor = Lastline
-  Product = Lastline
+  Vendor = VMware
+  Product = NSX Advanced Threat Prevention
   Lms = Direct
   DataType = "alert"
   TimeFormat = "MMM dd yyyy HH:mm:ss z"

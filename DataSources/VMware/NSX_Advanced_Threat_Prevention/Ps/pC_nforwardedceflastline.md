@@ -2,8 +2,8 @@
 ```Java
 {
 Name = n-forwarded-cef-lastline
-  Vendor = Lastline
-  Product = Lastline
+  Vendor = VMware
+  Product = NSX Advanced Threat Prevention
   Lms = NitroCefSyslog
   DataType = "alert"
   TimeFormat = "epoch"

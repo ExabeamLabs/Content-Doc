@@ -1,6 +1,6 @@
-Vendor: Lastline
-================
-### Product: [Lastline](../ds_lastline_lastline.md)
+Vendor: VMware
+==============
+### Product: [NSX Advanced Threat Prevention](../ds_vmware_nsx_advanced_threat_prevention.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
