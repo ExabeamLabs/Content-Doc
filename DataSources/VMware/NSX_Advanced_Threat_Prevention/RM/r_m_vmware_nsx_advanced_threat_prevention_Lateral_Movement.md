@@ -1,6 +1,6 @@
-Vendor: Lastline
-================
-### Product: [Lastline](../ds_lastline_lastline.md)
+Vendor: VMware
+==============
+### Product: [NSX Advanced Threat Prevention](../ds_vmware_nsx_advanced_threat_prevention.md)
 ### Use-Case: [Lateral Movement](../../../../UseCases/uc_lateral_movement.md)
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |

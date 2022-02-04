@@ -1,12 +1,12 @@
 #### Parser Content
 ```Java
 {
-Name = lastline-security-alert-1
-  Conditions = [ """CEF:""", """|Lastline|""", """|dns-resolution|""", """|Suspicious DNS Resolution|""" ]
+Name = lastline-security-alert-3
+  Conditions = [ """CEF:""", """|Lastline|""", """|signature-match|""", """|IDS Signature Match|""" ]
 
 lastline-security-alert = {
-    Vendor = Lastline
-    Product = Lastline
+    Vendor = VMware
+    Product = NSX Advanced Threat Prevention
     Lms = ArcSight
     DataType = "security-alert"
     TimeFormat = "epoch"
