@@ -1,7 +1,7 @@
 Vendor: CyberArk
 ================
-### Product: [CyberArk Endpoint Privilege Management](../ds_cyberark_cyberark_endpoint_privilege_management.md)
-### Use-Case: [Privileged Activity](../../../../UseCases/uc_privileged_activity.md)
+### Product: [Endpoint Privilege Management](../ds_cyberark_endpoint_privilege_management.md)
+### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|

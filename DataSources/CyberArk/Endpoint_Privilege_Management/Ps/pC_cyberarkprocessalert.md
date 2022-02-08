@@ -3,7 +3,7 @@
 {
 Name = cyberark-process-alert
     Vendor = CyberArk
-    Product = CyberArk Endpoint Privilege Management
+    Product = Endpoint Privilege Management
     Lms = Splunk
     DataType = "process-alert"
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
