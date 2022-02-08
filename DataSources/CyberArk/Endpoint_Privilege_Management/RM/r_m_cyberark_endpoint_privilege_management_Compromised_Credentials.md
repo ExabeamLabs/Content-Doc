@@ -1,6 +1,6 @@
 Vendor: CyberArk
 ================
-### Product: [CyberArk Endpoint Privilege Management](../ds_cyberark_cyberark_endpoint_privilege_management.md)
+### Product: [Endpoint Privilege Management](../ds_cyberark_endpoint_privilege_management.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |

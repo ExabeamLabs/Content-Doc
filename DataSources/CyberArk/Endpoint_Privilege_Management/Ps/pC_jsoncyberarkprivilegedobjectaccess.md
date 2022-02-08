@@ -3,7 +3,7 @@
 {
 Name = json-cyberark-privileged-object-access
   Vendor = CyberArk
-  Product = CyberArk Endpoint Privilege Management
+  Product = Endpoint Privilege Management
   Lms = Syslog
   DataType = "privileged-object-access"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
