@@ -11,6 +11,7 @@ Name = sourcefire-proxy-1
   Conditions = [ """Policy: """, """ApplicationProtocol: HTTP""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\w+\s{1,100}\d{1,100} \d\d:\d\d:\d\d ({host}[\w.\-]{1,2000})""",
     """({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100}Z)\s{1,100}({host}[\w\-.]{1,2000})?\s{0,100}(\(|\%)""",
     """({time}\w+ \d\d \d\d\d\d \d\d:\d\d:\d\d)""",
@@ -19,6 +20,7 @@ Name = sourcefire-proxy-1
     """DstIP:\s{0,100}({web_domain}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """SrcPort:\s{0,100}({src_port}\d{1,100})""",
     """DstPort:\s{0,100}({dest_port}\d{1,100})""",
+    """InlineResult:\s{1,100}({action}[^=]{1,2000}?)\s{0,100}$""",
     """AccessControlRuleAction:\s{0,100}({action}[^,]{1,2000})""",
     """User:\s{0,100}(Unknown|No Authentication Required|({user}[^,\s]{1,2000}))""",
     """UserAgent:\s{0,100}({user_agent}.+?),\s{0,100}Client:""",
@@ -35,7 +37,8 @@ Name = sourcefire-proxy-1
     """Priority: ({priority}\d{1,100}),""",
     """AccessControlRuleName: ({rule}[^,]{1,2000}),""",
     """ApplicationProtocol: ({app_protocol}[^,]{1,2000}),""",
-    """IntrusionPolicy: ({alert_name}[^,]{1,2000}),"""
+    """IntrusionPolicy: ({alert_name}[^,]{1,2000}),""",
+    """Message:\s{0,100}({additional_info}[^,]{1,2000})"""
   ]
 
 
