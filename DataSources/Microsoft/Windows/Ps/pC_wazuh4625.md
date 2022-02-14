@@ -6,8 +6,7 @@ Name = wazuh-4625
   Conditions = [ """"data.id":"4625"""", """"type":"wazuh-alerts"""", """"decoder.parent":"windows""""  ]
     Fields = ${WazuhParserTemplates.wazuh-windows-template.Fields} [
     """Type d\\u2019ouverture de session\\u00A0:\s{0,100}({logon_type}\d{1,100})"""
-    """Nom de la station de travail\\u00A0:\s{0,100}(-|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|({src_host_windows}[^\s]{1,2000}))\s{0,100}Adresse du r\\u00E9seau source\\u00A0:"""
-    """Nom de la station de travail\\u00A0:\s{0,100}(-|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|({src_host}[^\s]{1,2000}))\s{0,100}Adresse du r\\u00E9seau source\\u00A0:\s{0,100}-\s{1,100}"""
+    """Nom de la station de travail\\u00A0:\s{0,100}(-|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|({src_host_windows}[^\s]{1,2000}))\s{0,100}Adresse du r\\u00E9seau source\\u00A0:""" 
     """Adresse du r\\u00E9seau source\\u00A0:\s{0,100}(?:-|({src_ip}[\w:.]{1,2000}))\s{0,100}Port source\\u00A0:"""
     """Processus d\\u2019ouverture de session\\u00A0:\s{0,100}({auth_process}[^\s]{1,2000})\s{0,100}Package d\\u2019authentification\\u00A0:\s{0,100}({auth_package}[^\s]{1,2000})"""
     """\s{0,100}Compte pour lequel l\\u2019ouverture de session a \\u00E9chou\\u00E9\\u00A0:\s{0,100}ID de s\\u00E9curit\\u00E9\\u00A0:\s{0,100}(?:\/?NULL SID|({user_sid}.+?))\s{0,100}Nom du compte\\u00A0"""
