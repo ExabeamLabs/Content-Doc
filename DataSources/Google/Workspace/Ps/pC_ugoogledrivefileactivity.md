@@ -15,7 +15,7 @@ Name = u-googledrive-file-activity
     ""","time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     ""","ipAddress":"({src_ip}[\da-fA-F\.:]{1,2000})"""",
     ""","profileId":"({user_id}\d{1,100})""",
-    """"actor":\{[^=]{0,2000}?"email":"(({user_email}[^@"]{1,2000}@[^@"]{1,2000})|({user}[^@"\s]{1,2000}))"""",
+    """"actor":\{[^=]{0,2000}?"email":"(({user_email}[^@"]{1,2000}@[^@"]{1,2000})|({user}[^@"\s,]{1,2000}))"""",
     ""","events":[^=]{0,2000}?"name"\s{0,100}:\s{0,100}"old_value",\s{0,100}"multiValue"\s{0,100}:\s{0,100}\[\s{0,100}"({src_file_name}[^"]{1,2000})"""",
     ""","events":[^=]{0,2000}?"name"\s{0,100}:\s{0,100}"new_value",\s{0,100}"multiValue"\s{0,100}:\s{0,100}\[\s{0,100}"\s{0,100}({file_name}[^"]{1,2000}?)\s{0,100}"""",
     ""","events":[^=]{0,2000}?"name":"({accesses}[^"]{1,2000})"""",

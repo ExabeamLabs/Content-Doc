@@ -5,7 +5,7 @@ Vendor: Google
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  102  |   51   |     7      |     13      |   13    |
+|  102  |   51   |     7      |     14      |   14    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |
