@@ -4,13 +4,14 @@ Product: Medigate
 -----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   3   |   1    |     2      |      1      |    1    |
+|   6   |   3    |     2      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  account-password-change<br> ↳[medigate-alert-iot](Ps/pC_medigatealertiot.md)<br> | T1078 - Valid Accounts<br>       | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_medigate_medigate_Abnormal_Authentication_&_Access.md) |
-|    [Account Manipulation](../../../UseCases/uc_account_manipulation.md)    |  account-password-change<br> ↳[medigate-alert-iot](Ps/pC_medigatealertiot.md)<br> | T1098 - Account Manipulation<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_medigate_medigate_Account_Manipulation.md)    |
-|    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  account-password-change<br> ↳[medigate-alert-iot](Ps/pC_medigatealertiot.md)<br> | T1098 - Account Manipulation<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_medigate_medigate_Privilege_Abuse.md)    |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  account-password-change<br> ↳[medigate-alert-iot](Ps/pC_medigatealertiot.md)<br><br> alert-iot<br> ↳[medigate-security-alert](Ps/pC_medigatesecurityalert.md)<br> | T1078 - Valid Accounts<br>       | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_medigate_medigate_Abnormal_Authentication_&_Access.md) |
+|    [Account Manipulation](../../../UseCases/uc_account_manipulation.md)    |  account-password-change<br> ↳[medigate-alert-iot](Ps/pC_medigatealertiot.md)<br><br> alert-iot<br> ↳[medigate-security-alert](Ps/pC_medigatesecurityalert.md)<br> | T1098 - Account Manipulation<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_medigate_medigate_Account_Manipulation.md)    |
+|          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  account-password-change<br> ↳[medigate-alert-iot](Ps/pC_medigatealertiot.md)<br><br> alert-iot<br> ↳[medigate-security-alert](Ps/pC_medigatesecurityalert.md)<br> | T1078 - Valid Accounts<br>       | [<ul><li>3 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_medigate_medigate_Compromised_Credentials.md)          |
+|    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  account-password-change<br> ↳[medigate-alert-iot](Ps/pC_medigatealertiot.md)<br><br> alert-iot<br> ↳[medigate-security-alert](Ps/pC_medigatesecurityalert.md)<br> | T1098 - Account Manipulation<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_medigate_medigate_Privilege_Abuse.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
