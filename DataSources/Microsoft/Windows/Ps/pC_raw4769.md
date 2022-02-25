@@ -11,6 +11,7 @@ Name = raw-4769
     Fields = [
       """({event_name}A Kerberos service ticket was requested)""",
       """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
+      """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d)\s({host}[\w\-.]{1,2000})?""",
       """({event_code}4769)""",
       """Account Name:\s{0,100}({user}[^@:\s;]{1,2000})(@({domain}[\w._\-]{1,2000}))?[\s;]{0,2000}Account Domain""",
