@@ -8,7 +8,7 @@ Name = s-panngwf-spyware-alert
   DataType = "alert"
   TimeFormat = "yyyy/MM/dd HH:mm:ss"
   Conditions = [ """,THREAT,spyware,""" ]
-  Fields = [ 
+  Fields = [
     """,THREAT,spyware,[^,]{1,2000
 
 }

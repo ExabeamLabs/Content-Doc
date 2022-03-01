@@ -28,8 +28,8 @@ Name = s-aws-cloudtrail-iam
      """"{1,20}accountId\\?"{1,20}\s{0,100}:\s{0,100}\\?"{1,20}?(|({account_id}[^"]{1,2000}?))\\?"{1,20}\s{0,100}[,\]\}]""",
      """"assumed-role\/({role}[^"]{1,2000})""",
      """"requestParameters[^@]{1,2000}?roleName":"({request_role_name}[^"]{1,2000})","policyName":"({request_policy_name}[^"]{1,2000})"""
-     """"policyName":"({policy_name}[^"]{1,2000})"[^@]{1,2000}?policyDocument[^@]{1,2000}?Allow[^@]{1,2000}?Action[\\"\s:\[]{1,2000}[^"]{1,2000}"{1,20}({policy_action}[^"\\]{1,2000})""",
-     """policyName"{1,20}:"{1,20}({policy_name}[^"]{1,2000})"{1,20}[^@]{1,2000}?policyDocument[^\}]{1,2000}?Resource[\\"\s:\[]{1,2000}[^"]{1,2000}"{1,20}({policy_resource}[^"\\]{1,2000})\\""""
+     """"policyName":"({policy_name}[^"]{1,2000})"[^@]{1,2000}?policyDocument[^@]{1,2000}?Allow[^@]{1,2000}?Action[\\"\s:\[]{1,2000}[^"]{1,2000}"{1,20}({policy_action}[^"\\\],]{1,2000})""",
+     """policyName"{1,20}:"{1,20}({policy_name}[^"]{1,2000})"{1,20}[^@]{1,2000}?policyDocument[^\}]{1,2000}?Resource[\\"\s:\[]{1,2000}[^"]{1,2000}"{1,20}(\*|({policy_resource}[^"\\\],]{1,2000}))\\"""",
      """"vpcEndpointId":"({vpc_id}[^"]{1,2000})""",
      """"awsRegion":"({region}[^"]{1,2000})""",
      """\srequestClientApplication=({app}[^\s]{1,2000})\s""",
