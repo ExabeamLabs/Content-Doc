@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-netskope-alert-policy
-  Conditions = [ """"alert_type":"policy"""", """destinationServiceName =Netskope""", """"alert":"yes"""" ]
+  Conditions = [ """"alert_type":"policy"""", """destinationServiceName =Netskope""", """"alert":"yes"""", """act=detect""" ]
   Fields = ${NetskopeParserTemplates.cef-netskope-alert.Fields}[
     """exabeam_host=({host}[^\s]{1,2000})""",
     """"srcip":"({src_translated_ip}[A-Fa-f:\d.]{1,2000})""",
