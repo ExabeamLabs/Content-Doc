@@ -26,6 +26,7 @@ Name = cef-onelogin-app-activity
     """suser=(({user_id}\d{1,100})|({user_email}[^@\s]{1,2000}@[^\s\.]{1,2000}\.[^\s]{1,2000}))""",
     """duser=({target_user}[^@\s]{1,2000}@[^\s\.]{1,2000}\.[^\s]{1,2000})"""
   ]
+  DupFields = ["user_id->account"]
 
 
 }
