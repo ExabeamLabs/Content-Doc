@@ -1,18 +1,13 @@
 #### Parser Content
 ```Java
 {
-Name = pan-vpn-logout-1
-  DataType = "vpn-logout"
-  Conditions = [ """"LogType":"USERID"""", """"DeviceSN":"""", """"Subtype":"logout"""" ]
-  Fields = ${PaloAltoParserTemplates.paloalto-vpn.Fields}[
-    """"SourceIP":"({src_ip}[A-Fa-f\d\.:]{1,2000})""""
-  ]
-
-paloalto-vpn = {
+Name = pan-virus-alert-1
   Vendor = Palo Alto Networks
   Product = NGFW
   Lms = Direct
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
+  DataType = "alert"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ" 
+  Conditions = [ """"LogType":"THREAT"""", """"Subtype":"virus"""", """"Action":"reset-server"""" ]
   Fields = [
     """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,9}Z)""",
     """"host":"({host}[^"]{1,2000})"""",
@@ -25,7 +20,15 @@ paloalto-vpn = {
     """"SourcePort":({src_port}\d{1,100})""",
     """"DestinationPort":({dest_port}\d{1,100})""",
     """"Protocol":"({protocol}[^"]{1,2000})"""",
-    """"LogType":"({log_type}[^"]{1,2000})""""
-  
+    """"LogType":"({log_type}[^"]{1,2000})"""",
+    """"Action":"({action}[^"]{1,20000})"""",
+    """"VendorSeverity":"({alert_severity}[^"]{1,2000})"""",
+    """"ThreatCategory":"({threat_category}[^"]{1,2000})"""",
+    """"Subtype":"({alert_type}[^"]{1,2000})"""",
+    """"ThreatID":"({alert_name}[^"\(]{1,20000})(\(({alert_id}\d{1,100})\))?""",
+    """"FileName":"({additional_info}[^"]{1,2000})""""
+  ]
+
+
 }
 ```
