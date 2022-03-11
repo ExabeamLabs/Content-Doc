@@ -27,10 +27,11 @@ Name = raw-4672
       """Keywords=({outcome}[^=]{1,2000}?);?\s{0,100}(\w+=)""",
       """<Computer>(::ffff:)?({host}[^<]{1,2000})</Computer>""",
       """Computer(\w+)?["\s]{0,2000}(:|=)\s{0,100}"?(::ffff:)?({host}[^\s";]{1,2000})""",
+      """HOSTNAME:\s{0,100}\\?"{1,100}\(({host}[\w\-\.]{1,2000})""",
       """({event_code}4672)""",
       """Account Name(:|=)\s{0,100}(-|SYSTEM|({user}[^\s]{1,2000}?))[\s;]{0,2000}Account Domain(:|=)""",
       """Account Domain(:|=)\s{0,100}(-|({domain}[^\s]{1,2000}?))[\s;]{0,2000}Logon ID(:|=)""",
-      """\s{0,100}Logon ID(:|=)\s{0,100}({logon_id}[^=]{1,2000}?)[\s;]{0,2000}Privileges(:|=)\s{0,100}({privileges}.+?)(<|\s{0,100}User:|\s{1,100}\d{1,100}|,|\s{0,100}"|;|\s{0,100}$|\s{0,100}\(EventID)""",
+      """\s{0,100}Logon ID(:|=)\s{0,100}({logon_id}[^=]{1,2000}?)[\s;]{0,2000}Privileges(:|=)\s{0,100}({privileges}.+?)(<|\s{0,100}User:|\s{1,100}\d{1,100}|,|\s{0,100}\\?"|;|\s{0,100}$|\s{0,100}\(EventID)""",
       """sourceip="({src_ip}[a-fA-F\d:.]{1,2000})"""",
       """EVENT_TYPE="({outcome}[^"]{1,2000})""""
     ]
