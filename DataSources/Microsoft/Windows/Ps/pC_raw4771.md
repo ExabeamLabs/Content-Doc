@@ -23,6 +23,7 @@ Name = raw-4771
     """<?Computer>?(Name)?["\s:=]{0,2000}(::ffff:)?({host}[\w\.-]{1,2000})(\s|,|"|</Computer>|$)""",
     """Computer(\w+)?["\s]{0,2000}(:|=)\s{0,100}"?(::ffff:)?({host}.+?)("|\s|;)""",
     """({host}[^\s]{1,2000}?)\s{1,100}Kerberos Authentication Service""",
+    """HOSTNAME:\s{0,100}\\?"{1,100}\(({host}[\w\-\.]{1,2000})""",
     """({event_code}4771)""",
     """Account Information(:|=)\s{0,100};*Security ID(:|=)\s{0,100}({user_sid}.+?)\s{0,100};*Account""",
     """Account Name(:|=)\s{0,100}(({user_fullname}[^:]{1,2000}?\s[^\s]{1,2000}?)|({user}[^\:]{1,2000}?))\s{0,100};{0,100}Service Information""",
