@@ -1,9 +1,12 @@
 #### Parser Content
 ```Java
 {
-Name = ms-azure-eventhubs-app-activity
+Name = azure-eventhubbeat-app-activity-2
   DataType = "app-activity"
-  Conditions = [ """eventHubsAzureRecord""", """initiatedBy""" ]
+  Conditions= [ """eventhubbeat_APL_Azure""", """"category":"UserManagement"""", """"operationName":"Add user"""", """"activityDisplayName"""" ]
+  Fields = ${MSParserTemplates.ms-azure-eventhubs-activity.Fields}[
+    """({category}UserManagement)"""
+  ]
 
 ms-azure-eventhubs-activity = {
   Vendor = Microsoft
