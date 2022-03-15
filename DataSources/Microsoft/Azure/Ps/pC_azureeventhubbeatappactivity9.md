@@ -1,11 +1,11 @@
 #### Parser Content
 ```Java
 {
-Name = azure-eventhubbeat-app-activity-3
+Name = azure-eventhubbeat-app-activity-9
   DataType = "app-activity"
-  Conditions= [ """eventhubbeat_APL_Azure""", """"category":"UserManagement"""", """"operationName":"Delete user"""", """"activityDisplayName"""" ]
+  Conditions= [ """eventhubbeat_APL_Azure""", """"category":"GroupManagement"""", """"operationName":"Delete group"""", """"activityDisplayName"""" ]
   Fields = ${MSParserTemplates.ms-azure-eventhubs-activity.Fields}[
-    """({category}UserManagement)"""
+    """({category}GroupManagement)"""
   ]
 
 ms-azure-eventhubs-activity = {
