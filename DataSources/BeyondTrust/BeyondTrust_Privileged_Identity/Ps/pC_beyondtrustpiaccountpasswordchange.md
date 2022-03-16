@@ -5,8 +5,9 @@ Name = beyondtrust-pi-account-password-change
   DataType = "password-change"
   Conditions = [ """EVENT_ID_JOB_SUCCESS_WINDOWS_PASSWORD_UPDATE""", """2023""", """sEventID""", """dwBasicEventType""", """sOriginatingApplicationName""", """dwAppSpecificEventID""", """Privileged Identity""" ]
   Fields = ${LiebsoftParserTemplates.beyondtrust-pi-app-activity.Fields}[
-    """({outcome}SUCCESS)"""
-   ]
+    """({outcome}SUCCESS)""",
+    """"AccountTargetName\\?"\svalue=\\?"({target_user}[^"\\]{1,2000})\\?""""
+  ]
 
 beyondtrust-pi-app-activity = {
   Vendor = BeyondTrust
@@ -23,9 +24,11 @@ beyondtrust-pi-app-activity = {
     """\ssOriginatingApplicationName =\\?"({app}[^"\\]{1,2000}?)\\?"""",
     """dwAppSpecificEventID=\\?"({event_code}\d{1,100})""",
     """\ssOriginatingAccount=\\?"(({domain}[^\\]{1,2000})\\{1,20})?({user}[^"\\]{1,2000}?)\\?"""",
-    """\ssOriginatingSystem=\\?"({dest_host}[^"\\]{1,2000}?)\\?"""",
+    """\ssOriginatingSystem=\\?"({src_host}[^"\\]{1,2000}?)\\?"""",
+    """"sAccountName\\?"\svalue=\\?"({account}[^"\\]{1,2000})\\?"""",
     """key=\\?"AccountToElevate\\?"\svalue=\\?"(({account_domain}[^\\]{1,2000})\\{1,20})?({account}[^"\\]{1,2000}?)\\?"""",
-    """\ssMessage=\\?"({additional_info}[^\n]{1,2000}?)\\r","exa_rsc":"""
+    """\ssMessage=\\?"({additional_info}[^\n]{1,2000}?)\\r","exa_rsc":""",
+    """"(sSystemName|TargetSystem)\\?"\svalue=\\?"({dest_host}[\w\-.]{1,2000})\\?""""
   ]
   DupFields = [ "activity->event_name" 
 }
