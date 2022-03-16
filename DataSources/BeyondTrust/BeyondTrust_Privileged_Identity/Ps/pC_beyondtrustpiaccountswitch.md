@@ -1,8 +1,13 @@
 #### Parser Content
 ```Java
 {
-Name = beyondtrust-pi-app-activity-2
-  Conditions = [ """EVENT_ID_JOB_ACCOUNT_ELEVATED""", """2051""", """sEventID""", """dwBasicEventType""", """sOriginatingApplicationName""", """dwAppSpecificEventID""", """Privileged Identity""" ]
+Name = beyondtrust-pi-account-switch
+  DataType = "account-switch"
+  Conditions = [ """EVENT_ID_PASSWORD_CHECKED_OUT""", """2002""", """sEventID""", """dwBasicEventType""", """sOriginatingApplicationName""", """dwAppSpecificEventID""", """Privileged Identity""" ]
+  Fields = ${LiebsoftParserTemplates.beyondtrust-pi-app-activity.Fields}[
+    """sLoginName =\\?"(({domain}[^\\]{1,2000})\\{1,25})?({user}[^\\"]{1,2000})\\?"""",
+    """sMessage=\\?"checked-out password for\s{0,100}\([^\)]{0,2000}\)'(({account_domain}[^\\']{1,2000})\\{1,25})?({account}[^\\\s']{1,2000})"""
+  ]
 
 beyondtrust-pi-app-activity = {
   Vendor = BeyondTrust
@@ -19,9 +24,11 @@ beyondtrust-pi-app-activity = {
     """\ssOriginatingApplicationName =\\?"({app}[^"\\]{1,2000}?)\\?"""",
     """dwAppSpecificEventID=\\?"({event_code}\d{1,100})""",
     """\ssOriginatingAccount=\\?"(({domain}[^\\]{1,2000})\\{1,20})?({user}[^"\\]{1,2000}?)\\?"""",
-    """\ssOriginatingSystem=\\?"({dest_host}[^"\\]{1,2000}?)\\?"""",
+    """\ssOriginatingSystem=\\?"({src_host}[^"\\]{1,2000}?)\\?"""",
+    """"sAccountName\\?"\svalue=\\?"({account}[^"\\]{1,2000})\\?"""",
     """key=\\?"AccountToElevate\\?"\svalue=\\?"(({account_domain}[^\\]{1,2000})\\{1,20})?({account}[^"\\]{1,2000}?)\\?"""",
-    """\ssMessage=\\?"({additional_info}[^\n]{1,2000}?)\\r","exa_rsc":"""
+    """\ssMessage=\\?"({additional_info}[^\n]{1,2000}?)\\r","exa_rsc":""",
+    """"(sSystemName|TargetSystem)\\?"\svalue=\\?"({dest_host}[\w\-.]{1,2000})\\?""""
   ]
   DupFields = [ "activity->event_name" 
 }
