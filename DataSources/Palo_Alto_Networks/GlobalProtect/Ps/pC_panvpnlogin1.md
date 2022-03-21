@@ -1,9 +1,9 @@
 #### Parser Content
 ```Java
 {
-Name = paloalto-vpn-login-3
- DataType = "vpn-login"
- Conditions = [ """PanOSEventIDValue=gateway-connected""", """GLOBALPROTECT""", ]
+Name = pan-vpn-login-1
+  DataType = "vpn-login"
+  Conditions = [ """"LogType":"USERID"""", """"DeviceSN":"""", """"Subtype":"login"""" ]
 
 paloalto-vpn-event = {
   Vendor = Palo Alto Networks

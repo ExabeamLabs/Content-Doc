@@ -5,7 +5,7 @@ Vendor: Palo Alto Networks
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  10   |   3    |     7      |     13      |   13    |
+|  10   |   3    |     7      |     12      |   12    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

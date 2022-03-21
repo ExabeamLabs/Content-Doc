@@ -1,11 +1,11 @@
 #### Parser Content
 ```Java
 {
-Name = paloalto-vpn-login-3
- DataType = "vpn-login"
- Conditions = [ """PanOSEventIDValue=gateway-connected""", """GLOBALPROTECT""", ]
+Name = leef-paloalto-app-activity-1
+ DataType = "app-activity"
+ Conditions = [ """LEEF:""", """|Palo Alto Networks|""", """globalprotect""", """|gateway-hip-report|""" ]
 
-paloalto-vpn-event = {
+leef-paloalto-vpn-event = {
   Vendor = Palo Alto Networks
   Product = GlobalProtect
   Lms = Splunk
