@@ -3,7 +3,7 @@
 {
 Name = cef-pingid-auth
   Vendor = Ping Identity
-  Product = PingID
+  Product = Ping Identity
   Lms = ArcSight
   DataType = "authentication-attempt"
   TimeFormat = "MMM dd yyyy HH:mm:ss.SSS"
