@@ -31,7 +31,8 @@ cef-netskope-activity = {
     """"file_size":\s{0,100}({bytes}\d{1,100})""",
     """"file_type":\s{0,100}"({file_type}[^"]{1,2000})"""",
     """"page_site":\s{0,100}"({app}[^"]{1,2000})"""",
-    """"dstport":"\s{0,100}({dest_port}\d{1,100})""""
+    """"dstport":"\s{0,100}({dest_port}\d{1,100})"""",
+    """"referer":"({referrer}[^"]{1,2000})"""",
     """"action":"({action}[^"]{1,2000})"""
   ]
   DupFields = ["domain->email_domain", "file_type->mime"
