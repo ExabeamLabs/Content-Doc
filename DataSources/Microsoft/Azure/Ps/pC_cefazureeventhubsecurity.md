@@ -7,15 +7,19 @@ Name = cef-azure-event-hub-security
   Fields = ${MSParserTemplates.cef-azure-event-hub.Fields}[
     """compromisedEntity":"({user_upn}[^"]{1,2000})"""",
     """userName":"(({domain}[^\\"]{1,2000})\\+)?({user}[^"]{1,2000})"""",
-    """clientIPAddress":"({src_ip}[^",]{1,2000})""",
+    """clientIPAddress":"({src_ip}[A-Fa-f\d:.]{1,2000})""",
     """severity":"({alert_severity}[^"]{1,2000})"""",
     """operationId":"({alert_id}[^"]{1,2000})"""",
     """category":"({azure_category}[^"]{1,2000})"""",
     """attackedResourceType":"({azure_resource_type}[^"]{1,2000})"""",
     """eventName":"({alert_type}[^"\\]{1,2000})\\*"""",
-    """resultDescription":"({alert_name}[^"\\]{1,2000})\\*"""",
-    """detailDescription":"({additional_info}[^"\\]{1,2000})\\*"""",
+    """"(detail|result)Description":"({additional_info}[^"]{1,2000})\\{0,25}"""",
+    """"resourceId":"({resource}[^"]{1,2000})"""",
+    """"resourceId":"[^"]{0,2000}\/RESOURCEGROUPS\/({account_id}[^\/]{1,2000})\/""",
+    """"correlationId":"({correlation_id}[^"]{1,2000})"""",
+    """"operationName":"({activity}[^"]{1,2000})""""
   ]
+  DupFields = ["alert_type->alert_name"]
 
 cef-azure-event-hub = {
   Vendor = Microsoft
