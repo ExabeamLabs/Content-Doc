@@ -4,11 +4,11 @@ Product: Darktrace
 ------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  42   |   17   |     4      |      2      |    2    |
+|  40   |   17   |     4      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-login<br> ↳[darktrace-failed-app-login](Ps/pC_darktracefailedapplogin.md)<br><br> dlp-email-alert-in-failed<br> ↳[darktrace-app-login](Ps/pC_darktraceapplogin.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>14 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_darktrace_darktrace_Abnormal_Authentication_&_Access.md) |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-login<br> ↳[darktrace-failed-app-login](Ps/pC_darktracefailedapplogin.md)<br><br> dlp-email-alert-in-failed<br> ↳[darktrace-app-login](Ps/pC_darktraceapplogin.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>12 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_darktrace_darktrace_Abnormal_Authentication_&_Access.md) |
 |          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  app-login<br> ↳[darktrace-failed-app-login](Ps/pC_darktracefailedapplogin.md)<br><br> dlp-email-alert-in-failed<br> ↳[darktrace-app-login](Ps/pC_darktraceapplogin.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1190 - Exploit Public Fasing Application<br> | [<ul><li>27 Rules</li></ul><ul><li>16 Models</li></ul>](RM/r_m_darktrace_darktrace_Compromised_Credentials.md)         |
 |    [Data Access](../../../UseCases/uc_data_access.md)    |  app-login<br> ↳[darktrace-failed-app-login](Ps/pC_darktracefailedapplogin.md)<br><br> dlp-email-alert-in-failed<br> ↳[darktrace-app-login](Ps/pC_darktraceapplogin.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>5 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_darktrace_darktrace_Data_Access.md)    |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  app-login<br> ↳[darktrace-failed-app-login](Ps/pC_darktracefailedapplogin.md)<br><br> dlp-email-alert-in-failed<br> ↳[darktrace-app-login](Ps/pC_darktraceapplogin.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_darktrace_darktrace_Lateral_Movement.md)    |

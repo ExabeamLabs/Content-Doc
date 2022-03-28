@@ -4,7 +4,7 @@ Product: Advanced Threat Analytics (ATA)
 ----------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  504  |   57   |    116     |      1      |    1    |
+|  488  |   55   |    116     |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

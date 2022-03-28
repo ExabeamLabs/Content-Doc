@@ -4,11 +4,11 @@ Product: XPS
 ------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  42   |   17   |     4      |      1      |    1    |
+|  40   |   17   |     4      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-login<br> ↳[cef-xps-print-activity-1](Ps/pC_cefxpsprintactivity1.md)<br> ↳[cef-xps-print-activity](Ps/pC_cefxpsprintactivity.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>14 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_xps_xps_Abnormal_Authentication_&_Access.md) |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-login<br> ↳[cef-xps-print-activity-1](Ps/pC_cefxpsprintactivity1.md)<br> ↳[cef-xps-print-activity](Ps/pC_cefxpsprintactivity.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>12 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_xps_xps_Abnormal_Authentication_&_Access.md) |
 |          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  app-login<br> ↳[cef-xps-print-activity-1](Ps/pC_cefxpsprintactivity1.md)<br> ↳[cef-xps-print-activity](Ps/pC_cefxpsprintactivity.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1190 - Exploit Public Fasing Application<br> | [<ul><li>27 Rules</li></ul><ul><li>16 Models</li></ul>](RM/r_m_xps_xps_Compromised_Credentials.md)         |
 |    [Data Access](../../../UseCases/uc_data_access.md)    |  app-login<br> ↳[cef-xps-print-activity-1](Ps/pC_cefxpsprintactivity1.md)<br> ↳[cef-xps-print-activity](Ps/pC_cefxpsprintactivity.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>5 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_xps_xps_Data_Access.md)    |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  app-login<br> ↳[cef-xps-print-activity-1](Ps/pC_cefxpsprintactivity1.md)<br> ↳[cef-xps-print-activity](Ps/pC_cefxpsprintactivity.md)<br> | T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_xps_xps_Lateral_Movement.md)    |

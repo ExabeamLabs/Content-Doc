@@ -4,11 +4,11 @@ Product: EMP
 ------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  60   |   26   |     5      |      2      |    2    |
+|  58   |   26   |     5      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-activity<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br><br> dlp-email-alert-in-failed<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>14 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_emp_emp_Abnormal_Authentication_&_Access.md) |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-activity<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br><br> dlp-email-alert-in-failed<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>12 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_emp_emp_Abnormal_Authentication_&_Access.md) |
 |    [Account Manipulation](../../../UseCases/uc_account_manipulation.md)    |  app-activity<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br><br> dlp-email-alert-in-failed<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br> | T1098.002 - Account Manipulation: Exchange Email Delegate Permissions<br>    | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_emp_emp_Account_Manipulation.md)    |
 |          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  app-activity<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br><br> dlp-email-alert-in-failed<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>39 Rules</li></ul><ul><li>24 Models</li></ul>](RM/r_m_emp_emp_Compromised_Credentials.md)         |
 |    [Data Access](../../../UseCases/uc_data_access.md)    |  app-activity<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br><br> dlp-email-alert-in-failed<br> ↳[emp-app-activity](Ps/pC_empappactivity.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>19 Rules</li></ul><ul><li>11 Models</li></ul>](RM/r_m_emp_emp_Data_Access.md)    |

@@ -4,11 +4,11 @@ Product: F5 BIG-IP Advanced Firewall Module (AFM)
 -------------------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  100  |   43   |     10     |      2      |    2    |
+|  98   |   43   |     10     |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-activity<br> ↳[f5-network-connection](Ps/pC_f5networkconnection.md)<br><br> network-connection-successful<br> ↳[f5-network-connection](Ps/pC_f5networkconnection.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>14 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_f5_f5_big-ip_advanced_firewall_module_(afm)_Abnormal_Authentication_&_Access.md) |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-activity<br> ↳[f5-network-connection](Ps/pC_f5networkconnection.md)<br><br> network-connection-successful<br> ↳[f5-network-connection](Ps/pC_f5networkconnection.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>12 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_f5_f5_big-ip_advanced_firewall_module_(afm)_Abnormal_Authentication_&_Access.md) |
 |    [Account Manipulation](../../../UseCases/uc_account_manipulation.md)    |  app-activity<br> ↳[f5-network-connection](Ps/pC_f5networkconnection.md)<br><br> network-connection-successful<br> ↳[f5-network-connection](Ps/pC_f5networkconnection.md)<br> | T1098.002 - Account Manipulation: Exchange Email Delegate Permissions<br>    | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_f5_f5_big-ip_advanced_firewall_module_(afm)_Account_Manipulation.md)    |
 |          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  app-activity<br> ↳[f5-network-connection](Ps/pC_f5networkconnection.md)<br><br> network-connection-successful<br> ↳[f5-network-connection](Ps/pC_f5networkconnection.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>39 Rules</li></ul><ul><li>24 Models</li></ul>](RM/r_m_f5_f5_big-ip_advanced_firewall_module_(afm)_Compromised_Credentials.md)         |
 |    [Cryptomining](../../../UseCases/uc_cryptomining.md)    |  app-activity<br> ↳[f5-network-connection](Ps/pC_f5networkconnection.md)<br><br> network-connection-successful<br> ↳[f5-network-connection](Ps/pC_f5networkconnection.md)<br> | T1496 - Resource Hijacking<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_f5_f5_big-ip_advanced_firewall_module_(afm)_Cryptomining.md)    |

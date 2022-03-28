@@ -4,7 +4,7 @@ Product: Symantec WSS
 ---------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  578  |   84   |    126     |      2      |    2    |
+|  562  |   83   |    126     |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

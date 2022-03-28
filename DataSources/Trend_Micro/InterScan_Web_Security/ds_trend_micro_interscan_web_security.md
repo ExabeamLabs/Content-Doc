@@ -4,7 +4,7 @@ Product: InterScan Web Security
 -------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  77   |   28   |     16     |      2      |    2    |
+|  77   |   29   |     16     |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

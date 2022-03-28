@@ -4,7 +4,7 @@ Product: GravityZone
 --------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  611  |   88   |    126     |      4      |    4    |
+|  595  |   88   |    126     |      4      |    4    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
