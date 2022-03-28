@@ -4,11 +4,11 @@ Product: Workday
 ----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  94   |   36   |     13     |      4      |    4    |
+|  92   |   36   |     13     |      4      |    4    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  account-password-change<br> ↳[workday-app-login-1](Ps/pC_workdayapplogin1.md)<br> ↳[sk4-workday-app-login](Ps/pC_sk4workdayapplogin.md)<br> ↳[workday-app-login-2](Ps/pC_workdayapplogin2.md)<br><br> app-login<br> ↳[sk4-workday-failed-app-login](Ps/pC_sk4workdayfailedapplogin.md)<br><br> failed-app-login<br> ↳[workday-app-activity-1](Ps/pC_workdayappactivity1.md)<br> ↳[workday-app-activity-2](Ps/pC_workdayappactivity2.md)<br><br> file-write<br> ↳[sk4-workday-app-auth-failed](Ps/pC_sk4workdayappauthfailed.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>17 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_workday_workday_Abnormal_Authentication_&_Access.md) |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  account-password-change<br> ↳[workday-app-login-1](Ps/pC_workdayapplogin1.md)<br> ↳[sk4-workday-app-login](Ps/pC_sk4workdayapplogin.md)<br> ↳[workday-app-login-2](Ps/pC_workdayapplogin2.md)<br><br> app-login<br> ↳[sk4-workday-failed-app-login](Ps/pC_sk4workdayfailedapplogin.md)<br><br> failed-app-login<br> ↳[workday-app-activity-1](Ps/pC_workdayappactivity1.md)<br> ↳[workday-app-activity-2](Ps/pC_workdayappactivity2.md)<br><br> file-write<br> ↳[sk4-workday-app-auth-failed](Ps/pC_sk4workdayappauthfailed.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br> | [<ul><li>15 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_workday_workday_Abnormal_Authentication_&_Access.md) |
 |    [Account Manipulation](../../../UseCases/uc_account_manipulation.md)    |  account-password-change<br> ↳[workday-app-login-1](Ps/pC_workdayapplogin1.md)<br> ↳[sk4-workday-app-login](Ps/pC_sk4workdayapplogin.md)<br> ↳[workday-app-login-2](Ps/pC_workdayapplogin2.md)<br><br> app-login<br> ↳[sk4-workday-failed-app-login](Ps/pC_sk4workdayfailedapplogin.md)<br><br> failed-app-login<br> ↳[workday-app-activity-1](Ps/pC_workdayappactivity1.md)<br> ↳[workday-app-activity-2](Ps/pC_workdayappactivity2.md)<br><br> file-write<br> ↳[sk4-workday-app-auth-failed](Ps/pC_sk4workdayappauthfailed.md)<br> | T1098 - Account Manipulation<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_workday_workday_Account_Manipulation.md)    |
 [Next Page -->>](2_ds_workday_workday.md)
 

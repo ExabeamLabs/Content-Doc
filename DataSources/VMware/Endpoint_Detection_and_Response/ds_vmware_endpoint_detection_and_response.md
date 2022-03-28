@@ -4,7 +4,7 @@ Product: Endpoint Detection and Response
 ----------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  675  |  115   |    129     |      7      |    7    |
+|  659  |  115   |    129     |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

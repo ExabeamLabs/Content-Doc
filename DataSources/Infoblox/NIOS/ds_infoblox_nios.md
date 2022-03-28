@@ -4,12 +4,12 @@ Product: NIOS
 -------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  37   |   10   |     5      |      1      |    1    |
+|  37   |   11   |     5      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 | [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  process-alert<br> ↳[infoblox-nios-dns-query](Ps/pC_infobloxniosdnsquery.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>TA0002 - TA0002<br>    | [<ul><li>7 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_infoblox_nios_Compromised_Credentials.md) |
-|    [Malware](../../../UseCases/uc_malware.md)    |  process-alert<br> ↳[infoblox-nios-dns-query](Ps/pC_infobloxniosdnsquery.md)<br> | T1053.003 - T1053.003<br>T1190 - Exploit Public Fasing Application<br>T1562.004 - Impair Defenses: Disable or Modify System Firewall<br>TA0002 - TA0002<br> | [<ul><li>32 Rules</li></ul><ul><li>9 Models</li></ul>](RM/r_m_infoblox_nios_Malware.md)    |
+|    [Malware](../../../UseCases/uc_malware.md)    |  process-alert<br> ↳[infoblox-nios-dns-query](Ps/pC_infobloxniosdnsquery.md)<br> | T1053.003 - T1053.003<br>T1190 - Exploit Public Fasing Application<br>T1562.004 - Impair Defenses: Disable or Modify System Firewall<br>TA0002 - TA0002<br> | [<ul><li>32 Rules</li></ul><ul><li>10 Models</li></ul>](RM/r_m_infoblox_nios_Malware.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

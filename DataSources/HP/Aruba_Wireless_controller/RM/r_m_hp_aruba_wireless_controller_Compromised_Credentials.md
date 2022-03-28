@@ -5,7 +5,7 @@ Vendor: HP
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  54   |   8    |     13     |      6      |    6    |
+|  54   |   8    |     12     |      6      |    6    |
 
 | Event Type      | Rules    | Models    |
 | ---- | ---- | ---- |

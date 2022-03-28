@@ -4,11 +4,11 @@ Product: Nexthink
 -----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  15   |   10   |     5      |      1      |    1    |
+|  15   |   11   |     5      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-|    [Malware](../../../UseCases/uc_malware.md)    |  task-created<br> ↳[nexthink-security-alert-1](Ps/pC_nexthinksecurityalert1.md)<br> ↳[nexthink-security-alert](Ps/pC_nexthinksecurityalert.md)<br> | T1053 - Scheduled Task/Job<br>T1053.005 - Scheduled Task/Job: Scheduled Task<br>T1059.001 - Command and Scripting Interperter: PowerShell<br>TA0002 - TA0002<br> | [<ul><li>13 Rules</li></ul><ul><li>8 Models</li></ul>](RM/r_m_nexthink_nexthink_Malware.md)    |
+|    [Malware](../../../UseCases/uc_malware.md)    |  task-created<br> ↳[nexthink-security-alert-1](Ps/pC_nexthinksecurityalert1.md)<br> ↳[nexthink-security-alert](Ps/pC_nexthinksecurityalert.md)<br> | T1053 - Scheduled Task/Job<br>T1053.005 - Scheduled Task/Job: Scheduled Task<br>T1059.001 - Command and Scripting Interperter: PowerShell<br>TA0002 - TA0002<br> | [<ul><li>13 Rules</li></ul><ul><li>9 Models</li></ul>](RM/r_m_nexthink_nexthink_Malware.md)    |
 |     [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)     |  task-created<br> ↳[nexthink-security-alert-1](Ps/pC_nexthinksecurityalert1.md)<br> ↳[nexthink-security-alert](Ps/pC_nexthinksecurityalert.md)<br> | T1053.005 - Scheduled Task/Job: Scheduled Task<br>T1543.003 - Create or Modify System Process: Windows Service<br>    | [<ul><li>1 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_nexthink_nexthink_Privilege_Abuse.md)     |
 | [Privileged Activity](../../../UseCases/uc_privileged_activity.md) |  task-created<br> ↳[nexthink-security-alert-1](Ps/pC_nexthinksecurityalert1.md)<br> ↳[nexthink-security-alert](Ps/pC_nexthinksecurityalert.md)<br> | T1053.005 - Scheduled Task/Job: Scheduled Task<br>T1543.003 - Create or Modify System Process: Windows Service<br>    | [<ul><li>2 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_nexthink_nexthink_Privileged_Activity.md) |
 

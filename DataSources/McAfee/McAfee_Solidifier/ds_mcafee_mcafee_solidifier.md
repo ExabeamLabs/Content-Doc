@@ -4,11 +4,11 @@ Product: McAfee Solidifier
 --------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   3   |   0    |     1      |      1      |    1    |
+|   1   |   0    |     1      |      1      |    1    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  workstation-unlocked<br> ↳[cef-mcafee-epo-alert-solidifier](Ps/pC_cefmcafeeepoalertsolidifier.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>3 Rules</li></ul>](RM/r_m_mcafee_mcafee_solidifier_Abnormal_Authentication_&_Access.md) |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  workstation-unlocked<br> ↳[cef-mcafee-epo-alert-solidifier](Ps/pC_cefmcafeeepoalertsolidifier.md)<br> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](RM/r_m_mcafee_mcafee_solidifier_Abnormal_Authentication_&_Access.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

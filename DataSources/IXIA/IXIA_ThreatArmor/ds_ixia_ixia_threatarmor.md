@@ -4,11 +4,11 @@ Product: IXIA ThreatArmor
 -------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  79   |   33   |     9      |      2      |    2    |
+|  77   |   33   |     9      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-activity<br> ↳[cef-ixia-network-connection](Ps/pC_cefixianetworkconnection.md)<br><br> network-connection-failed<br> ↳[cef-ixia-network-connection](Ps/pC_cefixianetworkconnection.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>14 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_ixia_ixia_threatarmor_Abnormal_Authentication_&_Access.md) |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-activity<br> ↳[cef-ixia-network-connection](Ps/pC_cefixianetworkconnection.md)<br><br> network-connection-failed<br> ↳[cef-ixia-network-connection](Ps/pC_cefixianetworkconnection.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>12 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_ixia_ixia_threatarmor_Abnormal_Authentication_&_Access.md) |
 |    [Account Manipulation](../../../UseCases/uc_account_manipulation.md)    |  app-activity<br> ↳[cef-ixia-network-connection](Ps/pC_cefixianetworkconnection.md)<br><br> network-connection-failed<br> ↳[cef-ixia-network-connection](Ps/pC_cefixianetworkconnection.md)<br> | T1098.002 - Account Manipulation: Exchange Email Delegate Permissions<br>    | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_ixia_ixia_threatarmor_Account_Manipulation.md)    |
 |          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  app-activity<br> ↳[cef-ixia-network-connection](Ps/pC_cefixianetworkconnection.md)<br><br> network-connection-failed<br> ↳[cef-ixia-network-connection](Ps/pC_cefixianetworkconnection.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>39 Rules</li></ul><ul><li>24 Models</li></ul>](RM/r_m_ixia_ixia_threatarmor_Compromised_Credentials.md)         |
 |    [Cryptomining](../../../UseCases/uc_cryptomining.md)    |  app-activity<br> ↳[cef-ixia-network-connection](Ps/pC_cefixianetworkconnection.md)<br><br> network-connection-failed<br> ↳[cef-ixia-network-connection](Ps/pC_cefixianetworkconnection.md)<br> | T1496 - Resource Hijacking<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_ixia_ixia_threatarmor_Cryptomining.md)    |

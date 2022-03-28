@@ -4,11 +4,11 @@ Product: Xceedium
 -----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  63   |   26   |     6      |      2      |    2    |
+|  61   |   26   |     6      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-activity<br> ↳[syslog-xceedium-login](Ps/pC_syslogxceediumlogin.md)<br><br> app-login<br> ↳[syslog-xceedium-failed-login](Ps/pC_syslogxceediumfailedlogin.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>14 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_xceedium_xceedium_Abnormal_Authentication_&_Access.md) |
+| [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-activity<br> ↳[syslog-xceedium-login](Ps/pC_syslogxceediumlogin.md)<br><br> app-login<br> ↳[syslog-xceedium-failed-login](Ps/pC_syslogxceediumfailedlogin.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>12 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_xceedium_xceedium_Abnormal_Authentication_&_Access.md) |
 |    [Account Manipulation](../../../UseCases/uc_account_manipulation.md)    |  app-activity<br> ↳[syslog-xceedium-login](Ps/pC_syslogxceediumlogin.md)<br><br> app-login<br> ↳[syslog-xceedium-failed-login](Ps/pC_syslogxceediumfailedlogin.md)<br> | T1098.002 - Account Manipulation: Exchange Email Delegate Permissions<br>    | [<ul><li>3 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_xceedium_xceedium_Account_Manipulation.md)    |
 |          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  app-activity<br> ↳[syslog-xceedium-login](Ps/pC_syslogxceediumlogin.md)<br><br> app-login<br> ↳[syslog-xceedium-failed-login](Ps/pC_syslogxceediumfailedlogin.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1190 - Exploit Public Fasing Application<br> | [<ul><li>42 Rules</li></ul><ul><li>24 Models</li></ul>](RM/r_m_xceedium_xceedium_Compromised_Credentials.md)         |
 |    [Data Access](../../../UseCases/uc_data_access.md)    |  app-activity<br> ↳[syslog-xceedium-login](Ps/pC_syslogxceediumlogin.md)<br><br> app-login<br> ↳[syslog-xceedium-failed-login](Ps/pC_syslogxceediumfailedlogin.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>19 Rules</li></ul><ul><li>11 Models</li></ul>](RM/r_m_xceedium_xceedium_Data_Access.md)    |
