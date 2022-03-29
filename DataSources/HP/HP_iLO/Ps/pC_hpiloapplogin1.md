@@ -18,7 +18,8 @@ hp-ilo-app-login = {
       """\d\d:\d\d:\d\dZ\s({host}[^\s]{1,2000})\s\#ILO""",
       """({app}ILO)""",
       """\slogin:\s({user}[^\s]{1,2000})""",
-      """\slogin:\s(\S+\s){2}({src_ip}[a-fA-F\d:.]{1,2000})\(({dest_host}[^\)]{1,2000})\)"""
-    
+      """\slogin:\s(\S+\s){2}({src_ip}[a-fA-F\d:.]{1,2000})\(({src_host}[^\)]{1,2000})\)"""
+    ]
+    DupFields = ["host->dest_host"
 }
 ```
