@@ -1,12 +1,17 @@
 #### Parser Content
 ```Java
 {
-Name = cc-carbonblack-edr-crossproc
-  DataType = "process-created"
-  Conditions = [ """"type":"endpoint.event.crossproc"""", """destinationServiceName =""", """"process_username":"""", """"event_origin":"EDR"""" ]
+Name = json-carbonblack-ngav-regmod
+  Product = Carbon Black Cloud Endpoint Standard
+  DataType = "registry-write"
+  TimeFormat = "yyyy-MM-dd HH:mm:ss"
+  Conditions = [ """"type":"endpoint.event.regmod"""", """"process_username":"""", """"event_origin":"NGAV"""" ]
   Fields = ${CarbonBlackParserTemplates.carbonblack-edr.Fields} [
-    """"parent_path":"({parent_process}({parent_directory}[^"]{1,2000}(\\|\/)+)?({parent_process_name}[^"]{1,2000}))"""",
+    """"parent_path":"({parent_process}({parent_directory}[^"]{1,2000}(\\|\/){1,10})?({parent_process_name}[^"]{1,2000}))"""",
+    """"device_timestamp":"({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d)""",
+    """"regmod_name":"({registry_path}[^"]{1,2000}(\\|\/){1,10}?({registry_key}[^"]{1,2000}))""""
   ]
+
 
 carbonblack-edr {
   Vendor = VMware

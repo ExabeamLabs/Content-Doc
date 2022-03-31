@@ -21,7 +21,7 @@ carbonblack-edr {
     """"{1,20}process_pid"{1,20}:({pid}\d{1,100})""",
     """"{1,20}device_name"{1,20}:\s{0,100}"{1,20}(\w+\\+)?({host}[^."]{1,2000})""",
     """"{1,20}sensor_action"{1,20}:"{1,20}({outcome}[^"]{1,2000})"{1,20}""",
-    """"{1,20}process_path"{1,20}:"{1,20}((?i)(SYSTEM)|({process}({directory}[^"]{1,2000}(\\|\/)+)?({process_name}[^"]{1,2000})))"""",
+    """"{1,20}process_path"{1,20}:"{1,20}((?i)(SYSTEM)|({process_path}({directory}[^"]{1,2000}(\\|\/)+)?({process_name}[^"]{1,2000})))"""",
     """"{1,20}action"{1,20}:"{1,20}({action}[^"]{1,2000})?"{0,20}""",
     """"{1,20}parent_cmdline"{1,20}:"{1,20}\s{0,100}({parent_cmd}[^,"]{1,2000})""",
     """"{1,20}parent_pid"{1,20}:({parent_pid}\d{1,100})""",
