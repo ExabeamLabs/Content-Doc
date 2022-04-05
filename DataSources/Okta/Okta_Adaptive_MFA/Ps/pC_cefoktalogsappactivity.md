@@ -29,7 +29,7 @@ Name = cef-okta-logs-app-activity
     """"target":[^}\]]{1,2000}?"type"\s{0,100}:\s{0,100}"({object_type}[^"]{1,2000})"""",
     """({app}(?i)Okta)""",
     """destinationServiceName =({app}[^=]{1,2000}?)\s{0,100}\w+=""",
-    """"type":\s{0,100}"AppInstance"[^\}\]]{0,2000}"displayName":\s{0,100}"({app}[^"]{1,2000}?)\s{0,100}"""",
+    """"type":\s{0,100}"AppInstance"[^\}\]]{0,2000}"displayName":\s{0,100}"(unknown|({app}[^"]{1,2000}?))\s{0,100}"""",
     """"geographicalContext":\s{0,100}\{[^\}]{0,2000}?"city":\s{0,100}"({location_city}[^"]{1,2000})"""",
     """"geographicalContext":\s{0,100}\{[^\}]{0,2000}?"state":\s{0,100}"({location_state}[^"]{1,2000})"""",
     """"geographicalContext":\s{0,100}\{[^\}]{0,2000}?"country":\s{0,100}"({location_country}[^"]{1,2000})"""",
