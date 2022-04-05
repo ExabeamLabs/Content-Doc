@@ -16,7 +16,7 @@ Name = cef-aws-guardduty
     """"privateIpAddress":"({dest_ip}[A-Fa-f\d:.]{1,2000})""",
     """\srequestClientApplication=({app}\S{1,2000})""",
     """\sdhost=({dest_host}\S{1,2000})""",
-    """\ssuser=(|Anonymous|({user}[^=]{1,2000}?))\s{1,100}(\w+=|$)""",
+    """\ssuser=(|Anonymous|({user_email}[^@\s]{1,2000}@[^\s]{1,2000})|({user}[^=]{1,2000}?))\s{1,100}(\w+=|$)""",
     """"type":"({alert_type}[^"]{1,2000}?)"""",
     """"id":"({alert_id}[^"]{1,2000}?)"""",
     """"title":"({alert_name}[^"]{1,2000}?)"""",
@@ -28,7 +28,7 @@ Name = cef-aws-guardduty
     #"""\sext_service_action_networkConnectionAction_remotePortDetails_port=({src_port}\d{1,100})""",
     """"service".*?"action".*?"networkConnectionAction".*?"remotePortDetails".*?"port":"({src_port}\d{1,100})"""", 
     #"""\sext_service_action_networkConnectionAction_({outcome}blocked=(false|true))""",
-    """"service".*?"action".*?"networkConnectionAction.*?"({outcome}blocked":"(false|true))""",
+    """service".*?"action".*?"networkConnectionAction.*?"blocked":({action_blocked}false|true)""",
     """\smsg=({additional_info}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """"tags":[^\]]{1,2000}?\{"key":"Username","value":"({user_email}[^@"]{1,2000}@[^\."]{1,2000}\.[^"]{1,2000})""""
   ]
