@@ -3,7 +3,7 @@
 {
 Name = azure-eventhubbeat-app-activity
   DataType = "app-activity"
-  Conditions= [ """eventhubbeat_APL_Azure""", """"category":"Device"""", """"operationName":"Update device"""", """"activityDisplayName"""" ]
+  Conditions= [ """"category":"Device"""", """"operationName":"Update device"""", """"activityDisplayName"""" ]
   Fields = ${MSParserTemplates.ms-azure-eventhubs-activity.Fields}[
     """({category}Device)""",
     """"operationType":"({activity_type}[^",]{1,2000})""""

@@ -3,7 +3,7 @@
 {
 Name = azure-eventhubbeat-app-activity-8
   DataType = "app-activity"
-  Conditions= [ """eventhubbeat_APL_Azure""", """"category":"GroupManagement"""", """"operationName":"Add owner to group"""", """"activityDisplayName"""" ]
+  Conditions= [ """"category":"GroupManagement"""", """"operationName":"Add owner to group"""", """"activityDisplayName"""" ]
   Fields = ${MSParserTemplates.ms-azure-eventhubs-activity.Fields}[
     """({category}GroupManagement)"""
   ]
