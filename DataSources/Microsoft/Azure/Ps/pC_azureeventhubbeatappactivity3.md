@@ -3,7 +3,7 @@
 {
 Name = azure-eventhubbeat-app-activity-3
   DataType = "app-activity"
-  Conditions= [ """eventhubbeat_APL_Azure""", """"category":"UserManagement"""", """"operationName":"Delete user"""", """"activityDisplayName"""" ]
+  Conditions= [ """"category":"UserManagement"""", """"operationName":"Delete user"""", """"activityDisplayName"""" ]
   Fields = ${MSParserTemplates.ms-azure-eventhubs-activity.Fields}[
     """({category}UserManagement)"""
   ]
