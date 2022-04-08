@@ -14,7 +14,7 @@ Name = json-carbonblack-ngav-procstart
 
 carbonblack-edr {
   Vendor = VMware
-  Product = Endpoint Detection and Response 
+  Product = Carbon Black Cloud Enterprise EDR 
   Lms = Splunk
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSS"
   Fields = [

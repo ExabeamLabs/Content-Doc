@@ -11,7 +11,8 @@ Name = unix-failed-logon-3
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=([^\=]{1,2000}@\s{0,100})?({host}\S+)""",
-    """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}({host}[\w\-.]{1,2000})\s{1,100}""",
+    """\d\d:\d\d:\d\d(\.\S+)?\s({host}[^\s]{1,2000})""",
+    """\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}(\.\S+)?\s{1,100}({host}[\w\-.]{1,2000})\s{1,100}""",
     """Message forwarded from ({host}[^\s:]{1,2000})""",
     """({event_code}ssh)""",
     """Failed password for (({user_email}[^@\s]{1,2000}@[^\.\s]{1,2000}\.[^\s]{1,2000})|({user}[^\s]{1,2000})) from (::ffff:)?({src_ip}[A-Fa-f:\d.]{1,2000})""",

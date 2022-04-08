@@ -11,7 +11,8 @@ Name = unix-pam-ssh-login
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
-    """\w{3}\s{1,100}\d{1,2}\s{1,100}\d\d:\d\d:\d\d\s{1,100}({host}[\w\.-]{1,2000})\s{1,100}[^=]{1,2000}?pam_(sss|unix)\(sshd:auth\):""",
+    """\d\d:\d\d:\d\d(\.\S+)?\s({host}[^\s]{1,2000})""",
+    """\w{3}\s{1,100}\d{1,2}\s{1,100}\d\d:\d\d:\d\d(\.\S+)?\s{1,100}({host}[\w\.-]{1,2000})\s{1,100}[^=]{1,2000}?pam_(sss|unix)\(sshd:auth\):""",
     """timestamp":"({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3})""",
     """pam_(sss|unix)\(sshd:auth\):\s{1,100}authentication\s{1,100}({outcome}success|failure);""",
     """({event_code}ssh)""",
