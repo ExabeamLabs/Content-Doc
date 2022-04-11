@@ -5,7 +5,7 @@ Vendor: VMware
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  70   |   9    |     41     |      5      |    5    |
+|  70   |   9    |     41     |      6      |    6    |
 
 | Event Type      | Rules    | Models    |
 | ---- | ---- | ---- |
