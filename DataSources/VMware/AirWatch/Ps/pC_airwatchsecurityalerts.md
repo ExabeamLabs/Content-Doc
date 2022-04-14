@@ -7,7 +7,7 @@ Name = airwatch-security-alerts
 
 
 airwatch-auth-activity = {
-    Vendor = AirWatch
+    Vendor = VMware
     Product = AirWatch
     Lms = Splunk
     TimeFormat = "MMMM dd, yyyy HH:mm:ss"
