@@ -1,14 +1,12 @@
 #### Parser Content
 ```Java
 {
-Name = airwatch-authentication
-  DataType = "authentication-successful" 
-  Conditions = [ """AirWatch""", """Event Category:"Authentication"""", """Event:""""]
-  Fields = ${AirWatchParserTemplates.airwatch-auth-activity.Fields}[]
-  DupFields = ["event_type->auth_type"]
+Name = airwatch-auth-successful
+  DataType = "authentication-successful"
+  Conditions = [ """AirWatch""", """Event Category:"Login"""", """Event:""""]
 
 airwatch-auth-activity = {
-    Vendor = AirWatch
+    Vendor = VMware
     Product = AirWatch
     Lms = Splunk
     TimeFormat = "MMMM dd, yyyy HH:mm:ss"

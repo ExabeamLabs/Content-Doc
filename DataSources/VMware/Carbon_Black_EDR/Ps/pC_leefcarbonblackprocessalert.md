@@ -3,7 +3,7 @@
 {
 Name = leef-carbonblack-process-alert
   Vendor = VMware
-  Product = Endpoint Detection and Response
+  Product = Carbon Black EDR
   Lms = QRadar
   DataType = "process-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
