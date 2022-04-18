@@ -43,7 +43,9 @@ cef-microsoft-app-activity = {
     """"User-Agent\\?"{1,20}:\\?"{1,20}({user_agent}[^"\\]{1,2000})"""
     """"UserAgent":"({user_agent}[^"]+)"""",
     """"ipAddress":"({dest_ip}[A-Fa-f.:\d]{1,2000})"""",
-    """"SourceFileName":"({src_file_name}[^",]{1,2000})"""
+    """"SourceFileName":"({src_file_name}[^",]{1,2000})""",
+    """"user":\{[^}]{1,20000}?displayName":"({user_fullname}[^"]{1,2000})"""",
+    """"resultReason":"({failure_reason}[^"]{1,2000}?)\s{0,100}""""
   
 }
 ```
