@@ -19,7 +19,7 @@ Name = paloalto-web-activity-1
     """"HTTPMethod":"({method}[^"]{1,2000})"""",
     """"Action":"({action}[^"]{1,2000})"""",
     """"URL":"({full_url}({uri_path}[^?"]{1,2000})\??({uri_query}[^"]{1,2000})?)""",
-    """"Referer":"({referer}[^"]{1,2000})"""",
+    """"Referer":"({referrer}[^"]{1,2000})"""",
     """"Protocol":"({protocol}[^"]{1,2000})"""",
     """"UserAgent":"({user_agent}[^"]{1,2000}?)\s{0,100}"""",
     """"URLCategoryList":"({categories}[^"]{1,2000})"""",
