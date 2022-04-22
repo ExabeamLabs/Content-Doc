@@ -9,7 +9,7 @@ Name = s-crowdstrike-security-alert
   TimeFormat = "epoch"
   Conditions = [ """"eventType":""", """"DetectionSummaryEvent"""" ]
   Fields = [
-    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S{1,2000})""",
     """"eventCreationTime":\s{0,100}({time}\d{1,100})""",
     """"DetectName":\s{0,100}"({alert_type}[^"]{1,2000})""",
     """"Technique":"({alert_name}[^"]{1,2000})"""",
