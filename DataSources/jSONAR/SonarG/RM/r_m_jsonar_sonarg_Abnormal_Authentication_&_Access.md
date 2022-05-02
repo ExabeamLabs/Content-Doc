@@ -5,7 +5,7 @@ Vendor: jSONAR
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  22   |   10   |     2      |      2      |    2    |
+|  22   |   10   |     2      |      3      |    3    |
 
 | Event Type  | Rules    | Models    |
 | ---- | ---- | ---- |
