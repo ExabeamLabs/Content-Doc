@@ -20,7 +20,8 @@ Name = cef-mimecast-dlp-email
     """"Rcpt":"({external_address}[^\s@;,]{1,2000}@[^\s@;,"]{1,2000})""",
     """"Dir":"Inbound"[^\}]{1,2000}?"Sender":"(<>|({external_address}[^\s@;,]{1,2000}@[^\s@;,"]{1,2000}))"""", 
     """"Sender":"(<>|({sender}[^"]{1,2000}))"""",
-    """"MsgId":"<({message_id}[^"]{1,2000}?)>""""
+    """"MsgId":"<({message_id}[^"]{1,2000}?)>"""",
+    """"Virus":"({alert_name}[^"]{1,2000})""""
   ]
 
 
