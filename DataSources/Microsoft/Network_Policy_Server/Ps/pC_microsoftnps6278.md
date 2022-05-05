@@ -15,7 +15,7 @@ Name = microsoft-nps-6278
     """({event_code}6278)""",
     """'SubjectUserName'>((?:host\/)({src_host}[^<]{1,2000})|({user_email}[^@<]{1,2000}@[^<]{1,2000})|(({domain}[^\\<]{1,2000})\\{1,20})?({user}[^<]{1,2000}))""",
     """'SubjectDomainName'>(?:-|({domain}[^\s\<]{1,2000}))""",
-    """FullyQualifiedSubjectUserName'>([^<]{1,2000}(\/|\\)(-|(({user_fullname}({user_firstname}[^\s<]{1,2000})\s({user_lastname}[^<]{1,2000}))|({=user}[^<\s]{1,2000})))|(({domain}[^\\<]{1,2000})\\+)?(?:-|({=user}[^\s\\\<\/]{1,2000})))""",
+    """FullyQualifiedSubjectUserName'>([^<]{1,2000}(\/|\\)(-|(({user_fullname}({user_firstname}[^\s<,]{1,2000}),?\s({user_lastname}[^<]{1,2000}))|({=user}[^<\s]{1,2000})))|(({domain}[^\\<]{1,2000})\\+)?(?:-|({=user}[^\s\\\<\/]{1,2000})))""",
     """'NASIdentifier'>(?:-|({location}[\w\-.]{1,2000}))""",
     """'CallingStationID'>(?:-|({src_mac}[^\<]{1,2000}))""",
     """'AuthenticationProvider'>(?:-|({auth_server}[^\<]{1,2000}))""",
