@@ -22,7 +22,8 @@ Name = xml-4662
     """<Data Name(\\)?='ObjectName'>({object}[^<]{1,2000})""",
     """<Data Name(\\)?='OperationType'>({activity}[^<]{1,2000})""",
     """<Data Name(\\)?='Properties'>(-|({properties}[^<]{1,2000}?))\s{0,100}<""",
-    """<Keyword>({outcome}[^<]{1,2000})<"""
+    """<Keyword>({outcome}[^<]{1,2000})<""",
+    """Accesses:\s{0,100}({accesses}[^:]{1,2000}?)\s{1,100}Access Mask:"""
   ]
    DupFields = ["host-> dest_host"]
 
