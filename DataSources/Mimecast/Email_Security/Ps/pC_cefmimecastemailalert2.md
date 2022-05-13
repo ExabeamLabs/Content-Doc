@@ -15,7 +15,7 @@ Name = cef-mimecast-email-alert-2
     """"recipient":"({recipient}[^@"]{1,2000}@[^\."]{1,2000}\.[^"]{1,2000})"""",
     """"subject":"({subject}[^"]{1,2000})"""",
     """"route":"({direction}[^"]{1,2000})"""",
-    """"action":"({action}[^"]{1,2000})"""",
+    """"action":"({outcome}[^"]{1,2000})"""",
     """"msgid":"<({message_id}[^"]{1,2000})>"""",
     """"sourceIp":"({src_ip}[A-Fa-f\d:.]{1,2000})"""",
     """"url":"({url}[^"]{1,2000})"""",

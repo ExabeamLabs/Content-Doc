@@ -12,7 +12,7 @@ Name = cef-mimecast-email-alert
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"date":"({time}[^"]{1,2000})""",
     """"userEmailAddress":"({user_email}[^\s@"]{1,2000}@[^\s@"]{1,2000})""",
-    """"action":"({action}[^"]{1,2000})""",
+    """"action":"({outcome}[^"]{1,2000})""",
     """"category":"(Unknown|({category}[^"]{1,2000}))""",
     """"{1,20}fromUserEmailAddress"{1,20}:"{1,20}({sender}[^"]{1,2000})""",
     """"{1,20}url"{1,20}:"{1,20}({url}[^"]{1,2000})""",

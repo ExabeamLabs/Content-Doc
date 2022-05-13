@@ -17,9 +17,9 @@ Name = cef-mimecast-message-view
     """"subject":"({object}[^"]{1,2000}?)"""",
     """"to":"({target}[^"]{1,2000}?)"""",
     """"from":"({log_source}[^"]{1,2000}?)"""",
-    """"({result}discoveryCase":\w{1,2000})""" 
+    """"discoveryCase":({result}\w{1,2000})""" 
     """"source":"({resource}[^"]{1,2000}?)"""",
-    """"({additional_info}contentViewed[^}]{1,2000}?)\}"""
+    """({additional_info}"contentViewed[^}]{1,2000}?)\}"""
   ]
 
 
