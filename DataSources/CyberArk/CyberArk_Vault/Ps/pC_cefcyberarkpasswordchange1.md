@@ -10,6 +10,7 @@ Name = cef-cyberark-password-change-1
   Conditions = [  """|Cyber-Ark|Vault|""", """|CPM Change Password|""", """Safe""" ]
   Fields = [
     """\d\d:\d\d:\d\dZ? ({host}[\w\-.]{1,2000}) CEF""",
+    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
     """\srt=({time}\d{1,100})(\s{1,100}\w+=|\s{0,100}$)""",
     """msg=({time}\w{1,100}\s{1,100}\d\d\s{1,100}\d\d:\d\d:\d\d)[^:]{1,100}CEF:""",
     """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)\s\w+\s{1,100}CEF:""",
@@ -20,7 +21,7 @@ Name = cef-cyberark-password-change-1
     """\sfname="?({domain}[^"\\]{1,2000})\\+[^"]{1,2000}"""",
     """\ssuser="?(({domain}[^\\="]{1,2000})(\\)+)?({user}[^"]{1,2000}?)"?(\s{1,100}\w+=|\s{0,100}$)""",
     """\sduser="?(({domain}[^\\="]{1,2000})(\\)+)?(|({user}[^"]{1,2000}?))"?\s{1,100}\w+=""",
-    """({app}Cyber-Ark)"""
+    """({app}Vault)"""
   ]
 
 

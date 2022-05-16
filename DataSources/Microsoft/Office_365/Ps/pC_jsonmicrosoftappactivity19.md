@@ -38,6 +38,7 @@ cef-microsoft-app-activity = {
     """"ResultStatus":"({result}[^"]{1,2000}?)"""",
     """\sdestinationServiceName\s{0,100}=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\ssourceServiceName =({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
+    """"app":\{[^\}]{1,2000}?"displayName":"({app}[^"]{1,2000})"""",
     """"User-Agent\\?"{1,20}:\\?"{1,20}({user_agent}[^"\\]{1,2000})"""
     """"UserAgent":"({user_agent}[^"]+)"""",
     """"ipAddress":"({dest_ip}[A-Fa-f.:\d]{1,2000})"""",
