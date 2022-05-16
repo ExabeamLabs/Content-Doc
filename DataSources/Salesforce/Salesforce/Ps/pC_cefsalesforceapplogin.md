@@ -22,7 +22,7 @@ Name = cef-salesforce-app-login
     """({app}Sales Cloud)""",
     """cs1=({auth_method}[^\s]{1,2000})""",
     """UserId\\*=({user_id}[^;]{1,2000})""",
-    """LoginGeo\.City\\*=({location_city}[^;]{1,2000})""",
+    """LoginGeo\.City\\*=(null|({location_city}[^;]{1,2000}))""",
     """LoginGeo\.Country\\*=({location_country}[^;]{1,2000})""",
     """LoginType\\*=({login_type}[^;]{1,2000})""",
     """LoginUrl\\*=({url_host}[^;]{1,2000})""",
