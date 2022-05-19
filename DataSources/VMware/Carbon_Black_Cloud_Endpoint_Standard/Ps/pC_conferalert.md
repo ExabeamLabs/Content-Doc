@@ -7,7 +7,7 @@ Name = confer-alert
   Lms = Splunk
   DataType = "alert"
   TimeFormat = "epoch"
-  Conditions = [ """"threatInfo":""", """"indicators":""", """"summary":""", """"ruleName":""", """"incidentId":""", """"THREAT"""" ]
+  Conditions = [ """"threatInfo"""",""""indicators"""",""""summary"""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """eventTime"{1,20}:\s{0,100}({time}\d{1,100})""",

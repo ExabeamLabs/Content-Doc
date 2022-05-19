@@ -18,7 +18,7 @@ Name = spanish-raw-4625
    """Cuenta con error de inicio de sesión:\s{0,100}[^=]{1,2000}\s{0,100}Id. de seguridad:\s{0,100}(?:\/?NULL SID|({user_sid}[^\s]{1,2000}))\s{0,100}Nombre de cuenta:""",
    """Nombre de cuenta:\s{0,100}({user}[^\s]{1,2000})\s{0,100}Dominio de cuenta:\s{0,100}({domain}[^\s]{1,2000})\s{0,100}Información de error:""",
    """Estado:\s{0,100}(?:[^\s]{1,2000})\s{0,100}Subestado:\s{0,100}({result_code}[^\s]{1,2000})\s{0,100}Información de proceso:""",
-   """Nombre de estación de trabajo:\s{0,100}({src_host_windows}[^\s]{1,2000})\s{0,100}Dirección de red de origen:\s{0,100}({src_ip}[a-fA-F\d.:]{1,2000})\s{0,100}Puerto de orig""",
+   """Nombre de estación de trabajo:\s{0,100}({src_host}[^\s]{1,2000})\s{0,100}Dirección de red de origen:\s{0,100}({src_ip}[a-fA-F\d.:]{1,2000})\s{0,100}Puerto de orig""",
   ]
   DupFields = ["host->dest_host"]
 

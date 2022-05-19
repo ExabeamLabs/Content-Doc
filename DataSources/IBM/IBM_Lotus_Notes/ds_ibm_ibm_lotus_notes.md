@@ -4,12 +4,12 @@ Product: IBM Lotus Notes
 ------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  41   |   17   |     7      |      2      |    2    |
+|  40   |   17   |     7      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 |        [Cryptomining](../../../UseCases/uc_cryptomining.md)        |  file-upload<br> ↳[ibm-lotus-network-connection](Ps/pC_ibmlotusnetworkconnection.md)<br><br> network-connection-successful<br> ↳[ibm-lotus-database-update](Ps/pC_ibmlotusdatabaseupdate.md)<br> | T1496 - Resource Hijacking<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_ibm_ibm_lotus_notes_Cryptomining.md)    |
-|    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  file-upload<br> ↳[ibm-lotus-network-connection](Ps/pC_ibmlotusnetworkconnection.md)<br><br> network-connection-successful<br> ↳[ibm-lotus-database-update](Ps/pC_ibmlotusdatabaseupdate.md)<br> | T1071 - Application Layer Protocol<br>T1090.003 - Proxy: Multi-hop Proxy<br>T1190 - Exploit Public Fasing Application<br>TA0010 - TA0010<br>TA0011 - TA0011<br> | [<ul><li>39 Rules</li></ul><ul><li>17 Models</li></ul>](RM/r_m_ibm_ibm_lotus_notes_Lateral_Movement.md) |
+|    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  file-upload<br> ↳[ibm-lotus-network-connection](Ps/pC_ibmlotusnetworkconnection.md)<br><br> network-connection-successful<br> ↳[ibm-lotus-database-update](Ps/pC_ibmlotusdatabaseupdate.md)<br> | T1071 - Application Layer Protocol<br>T1090.003 - Proxy: Multi-hop Proxy<br>T1190 - Exploit Public Fasing Application<br>TA0010 - TA0010<br>TA0011 - TA0011<br> | [<ul><li>38 Rules</li></ul><ul><li>17 Models</li></ul>](RM/r_m_ibm_ibm_lotus_notes_Lateral_Movement.md) |
 |    [Malware](../../../UseCases/uc_malware.md)    |  file-upload<br> ↳[ibm-lotus-network-connection](Ps/pC_ibmlotusnetworkconnection.md)<br><br> network-connection-successful<br> ↳[ibm-lotus-database-update](Ps/pC_ibmlotusdatabaseupdate.md)<br> | TA0011 - TA0011<br>    | [<ul><li>3 Rules</li></ul>](RM/r_m_ibm_ibm_lotus_notes_Malware.md)    |
 |     [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)     |  file-upload<br> ↳[ibm-lotus-network-connection](Ps/pC_ibmlotusnetworkconnection.md)<br><br> network-connection-successful<br> ↳[ibm-lotus-database-update](Ps/pC_ibmlotusdatabaseupdate.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_ibm_ibm_lotus_notes_Privilege_Abuse.md)    |
 | [Privileged Activity](../../../UseCases/uc_privileged_activity.md) |  file-upload<br> ↳[ibm-lotus-network-connection](Ps/pC_ibmlotusnetworkconnection.md)<br><br> network-connection-successful<br> ↳[ibm-lotus-database-update](Ps/pC_ibmlotusdatabaseupdate.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_ibm_ibm_lotus_notes_Privileged_Activity.md)    |

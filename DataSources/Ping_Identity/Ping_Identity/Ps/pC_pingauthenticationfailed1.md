@@ -3,7 +3,7 @@
 {
 Name = ping-authentication-failed-1
   DataType = "authentication-failed"
-  Conditions = [ """"source":"PINGID"""",""""type":"user"""",""""status":"FAILURE,authFail"""",""""message":""",""""resources":""",""""result":{""" ]
+  Conditions = [ """"source":"PINGID"""",""""type":"user"""",""""status":"FAILURE,authFail"""",""""message":""",""""resources":""",""""client":""" ]
   Fields = ${PingParserTemplates.ping-authentication_events.Fields}[
     """"status":"({outcome}FAILURE)""",
     """"message":"({failure_reason}[^}]{1,2000}?)"\s{0,100}\}""",

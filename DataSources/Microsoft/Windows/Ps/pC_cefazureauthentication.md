@@ -7,7 +7,7 @@ Name = cef-azure-authentication
   Lms = ArcSight
   DataType = "authentication-successful"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [ """"DeviceName":""", """"ActionType":"Logon""", """"RemoteDeviceName":""" ]
+  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """"ActionType":"Logon""", """"RemoteDeviceName":""" ]
   Fields = [
     """"Timestamp":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100})""",
     """"DeviceName":"({host}[\w\-.]{1,2000})"""",

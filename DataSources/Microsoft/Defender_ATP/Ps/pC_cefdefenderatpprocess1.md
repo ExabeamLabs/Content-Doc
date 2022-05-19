@@ -7,9 +7,8 @@ Name = cef-defender-atp-process-1
   Product = Defender ATP
   Lms = Splunk
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
-  Conditions = [ """AdvancedHunting-DeviceProcessEvents""", """ActionType""", """ProcessCreated""" ]
+  Conditions = [ """CEF""", """SkyFormation Cloud Apps Security""", """AdvancedHunting-DeviceProcessEvents""", """ActionType""", """ProcessCreated""" ]
   Fields = [
-     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
      """time"{1,100}:\s{0,100}"{1,100}({time}[^"]{1,2000})"""",
      """operationName\\?"{1,100}:\s{0,100}\\?"{1,100}({activity}[^"]{1,2000}?)\\?"""",
      """"category\\?"{1,100}:\s{0,100}\\?"{1,100}({category}[^"]{1,2000}?)\\?"""",
@@ -23,15 +22,14 @@ Name = cef-defender-atp-process-1
      """InitiatingProcessAccountName\\?"{1,100}:\s{0,100}\\?"{1,100}(system|SYSTEM|({user}[^"]{1,2000}?))\\?"""",
      """"ProcessIntegrityLevel\\?"{1,100}:\s{0,100}\\?"{1,100}({process_integrity}[^"]{1,2000}?)\\?"""",
      """InitiatingProcessAccountSid\\?"{1,100}:\s{0,100}\\?"{1,100}({user_sid}[^"]{1,2000}?)\\?"""",
-     """InitiatingProcessFileName\\?"{1,100}:\s{0,100}\\?"{1,100}({process_name}[^"\\\/]{1,2000}?)\\?"""",
+     """InitiatingProcessFileName\\?"{1,100}:\s{0,100}\\?"{1,100}({process_name}[^"]{1,2000}?)\\?"""",
      """ProcessId\\?"{1,100}:({pid}\d{1,100})""",
      """InitiatingProcessFileName\\?"{1,100}:\s{0,100}\\?"{1,100}({parent_process}[^"]{1,2000}?)\\?"""",
-     """"FileName\\?"{1,100}:\s{0,100}\\?"{1,100}({process_name}[^\\\/"]{1,2000}?)\\?"""",
-     """ProcessCommandLine\\?"{1,100}:\s{0,100}\\?"\s{0,100}({command_line}.{1,2000}?)\s{0,100}\\*",""",
+     """"FileName\\?"{1,100}:\s{0,100}\\?"{1,100}({process_name}[^"]{1,2000}?)\\?"""",
+     """ProcessCommandLine\\?"{1,100}:\s{0,100}[\\"]{0,2000}"\s{0,100}({command_line}[^"]{1,2000}?)\s{0,100}\\*"""",
      """MD5\\?"{1,100}:\\?"{1,100}({md5}[^"]{1,2000}?)\\?"""",
      """\[Namespace:\s{0,100}({event_hub_namespace}\S+) ; EventHub name:\s{0,100}({event_hub_name}[\w-]{1,2000})"""
-     """"FolderPath"{1,100}:"{1,100}({process}({directory}(\w:)?(?:[^:\]]{1,2000})?[\\\/])?({process_name}[^\\\/"\]]{1,2000}?))"""",
-     """"AccountDomain":"({domain}[^:]{1,2000}?)",""", 
+     """"FolderPath"{1,100}:"{1,100}({process}({directory}(\w:)?(?:[^:\]]{1,2000})?[\\\/])?({process_name}[^\\\/"\]]{1,2000}?))"""",    
   ]
   DupFields = ["category->event_name", "event_hub_namespace->host"]
 

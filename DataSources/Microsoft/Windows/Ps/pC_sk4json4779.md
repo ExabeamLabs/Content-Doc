@@ -3,7 +3,7 @@
 {
 Name = sk4-json-4779
   DataType = "windows-4779"
-  Conditions = [""""event_id":4779""", """"provider_name":"Microsoft-Windows-Security-Auditing""", """"A session was disconnected from a Window Station""", """ cs6="""]
+  Conditions = [""""event_id":4779""", """|Skyformation""", """Microsoft-Windows-Security-Auditing""", """"A session was disconnected from a Window Station"""]
   Fields = ${WinParserTemplates.json-windows-events-1.Fields}[
     """({event_name}"A session was disconnected from a Window Station)""",
   ]
@@ -15,7 +15,7 @@ json-windows-events-1 = {
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
-    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]{1,2000}\s""",
+    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]{1,2000}\sSkyformation""",
     """"{1,20}created"{1,20}:"{1,20}({time}[^"]{1,2000})""",
     """requestClientApplication=({app}[^=]{1,2000}?)\s\w+=""",
     """({event_name}An account was logged off)""",

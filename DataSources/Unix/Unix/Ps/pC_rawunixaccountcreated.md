@@ -11,7 +11,7 @@ Name = raw-unix-account-created
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[\w.\-]{1,2000})""",
-    """\d\d:\d\d:\d\d(\.\S+)? ({host}[\w.\-]{1,2000})""",
+    """\d\d:\d\d:\d\d ({host}[\w.\-]{1,2000})""",
     """new user: name=({account_name}[^,]{1,2000}),""",
     """new user: .+?UID=({account_id}[^,]{1,2000}),""",
   ]

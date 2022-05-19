@@ -4,7 +4,7 @@ Product: BloxOne
 ----------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  579  |   88   |    121     |      6      |    6    |
+|  562  |   88   |    120     |      6      |    6    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

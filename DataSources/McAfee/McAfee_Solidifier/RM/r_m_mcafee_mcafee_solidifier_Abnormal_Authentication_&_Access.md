@@ -5,8 +5,8 @@ Vendor: McAfee
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     1      |      1      |    1    |
+|  22   |   10   |     2      |      1      |    1    |
 
-| Event Type    | Rules    | Models |
-| ---- | ---- | ------ |
-| workstation-unlocked | <b>T1078 - Valid Accounts</b><br> ↳ <b>DORMANT-USER</b>: Dormant User |        |
+| Event Type  | Rules    | Models    |
+| ---- | ---- | ---- |
+| local-logon | <b>T1078 - Valid Accounts</b><br> ↳ <b>DORMANT-USER</b>: Dormant User<br> ↳ <b>AE-UA-F</b>: First activity type for user<br> ↳ <b>AL-UT-F</b>: Logon to New Asset Type<br> ↳ <b>AL-UT-A</b>: Logon to Abnormal asset type<br> ↳ <b>AL-F-F-CS</b>: First logon to a critical system for user<br> ↳ <b>AL-F-A-CS</b>: Abnormal logon to a critical system for user<br> ↳ <b>AL-UH-CS-NC</b>: Logon to a critical system for a user with no information<br> ↳ <b>AL-OU-F-CS</b>: First logon to a critical system that user has not previously accessed<br> ↳ <b>AL-UZ-F</b>: First logon to network zone<br> ↳ <b>AL-UZ-A</b>: Abnormal logon to network zone<br> ↳ <b>AL-F-MultiWs</b>: Multiple workstations in a single session<br> ↳ <b>NEW-USER-F</b>: User with no event history<br> ↳ <b>AL-GZ-F-new</b>: First logon to network zone for new user of group<br> ↳ <b>AL-GZ-A-new</b>: Abnormal logon to network zone for group of new user<br> ↳ <b>PA-IT-NoPA</b>: IT presence without badge access<br><br><b>T1078.003 - Valid Accounts: Local Accounts</b><br> ↳ <b>AL-HLocU-F</b>: First local user logon to this asset<br> ↳ <b>AL-HLocU-A</b>: Abnormal local user logon to this asset<br> ↳ <b>LL-UH-F</b>: First local logon to asset<br> ↳ <b>LL-UH-A</b>: Abnormal local logon to asset<br> ↳ <b>LL-GH-A-new</b>: Abnormal local logon to asset for group by new user<br> ↳ <b>LL-GH-F-new</b>: First local logon to asset for group by new user<br> ↳ <b>LL-HU-F-new</b>: Local logon to private asset for new user |  • <b>PA-OU</b>: Badge access by users in the organization<br> • <b>LL-HU</b>: Local logon users<br> • <b>AL-GZ</b>: Network zones accessed by this peer group<br> • <b>LL-GH</b>: Local logon hosts (peer groups)<br> • <b>LL-UH</b>: Local logons<br> • <b>AL-OU-CS</b>: Logon to critical servers<br> • <b>RA-UH</b>: Assets accessed by this user remotely<br> • <b>AL-UT</b>: Types of hosts<br> • <b>AE-UA</b>: All activity for users<br> • <b>NKL-HU</b>: Users logging into this host remotely |

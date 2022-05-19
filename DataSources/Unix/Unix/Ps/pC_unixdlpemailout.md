@@ -13,7 +13,7 @@ Name = unix-dlp-email-out
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """Sent mail for ({sender}[^\s]{1,2000})""",
     """outbytes=({bytes}\d{1,100})""",
-    """uid=({message_id}[^\s]{1,2000})""",
+    """uid=({email_id}[^\s]{1,2000})""",
     """username=({user}[^\s]{1,2000})"""
   ]
 

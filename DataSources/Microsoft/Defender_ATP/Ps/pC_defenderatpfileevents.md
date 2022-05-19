@@ -24,13 +24,6 @@ defender-atp-events = {
       """"ActionType":"({outcome}[^"]{1,2000})"""",
       """"RemoteIP":"({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
       """"Protocol":"({protocol}[^"]{1,2000})""""
-      """LogonId":(null|({logon_id}[^:]{1,2000}?)),""",
-      """InitiatingProcessFolderPath":"({process}[^"]{1,2000}?)",""",
-      """InitiatingProcessFileName":"({process_name}[^:]{1,2000}?)",""",
-      """InitiatingProcessCommandLine":"({command_line}[^<]{1,2000}?)\s{0,100}","InitiatingProcess""",
-      """InitiatingProcessId":({pid}[^:]{1,2000}?),""",
-      """DeviceId":"({device_id}[^:]{1,2000}?)",""",
-      """InitiatingProcessMD5":"({md5}[^:]{1,2000}?)","""
     ]
     DupFields = ["host->dest_host"
 }

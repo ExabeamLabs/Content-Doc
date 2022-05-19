@@ -16,7 +16,7 @@ sftp-server-activity = {
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Fields = [
         """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-        """\d\d:\d\d:\d\d(\.\S+)? ({host}[^\s]{1,2000}) sftp-server\[""",
+        """\d\d:\d\d:\d\d ({host}[^\s]{1,2000}) sftp-server\[""",
     ]
         DupFields = ["host->dest_host"
 }

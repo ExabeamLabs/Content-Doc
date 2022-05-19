@@ -3,7 +3,7 @@
 {
 Name = cc-pulsesecure-authentication-failed
   DataType = "authentication-failed"
-  Conditions = [ """"host":""", """"PulseSecure:"""", """Primary authentication failed""" ]
+  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """"PulseSecure:"""", """Primary authentication failed""" ]
   Fields = ${JuniperParserTemplates.cef-pulsesecure-vpn-events.Fields} [
     """({failure_reason}Primary authentication failed) for\s{1,100}(({domain}[^\\]{1,2000})\\+)?({user}[^@\s\\\/]{1,2000})(\/({realm}[^\s]{1,2000}))\s{1,100}from\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]

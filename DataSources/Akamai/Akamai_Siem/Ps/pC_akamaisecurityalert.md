@@ -6,7 +6,7 @@ Name = akamai-security-alert
  Vendor = Akamai
  Lms = Direct
  DataType = "alert"
- TimeFormat = "epoch_sec"
+ TimeFormat = "epoch"
  Conditions = [ """CEF:""", """Akamai|akamai_siem""", """requestMethod=""", """ cs2Label=Rule""" ]
  Fields =[
    """start=({time}\d{1,100})""",

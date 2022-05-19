@@ -12,8 +12,7 @@ Name = f5-network-connection-2
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """\d\d:\d\d:\d\d ({host}[^\s]{1,2000})""",
     """peers ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\.({src_port}\d{1,100}):({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\.({dest_port}\d{1,100})""",
-    """({event_name}No shared ciphers between SSL peers)""",
-    """({protocol}SSL)"""
+    """({event_name}No shared ciphers between SSL peers)"""
   ]
 
 

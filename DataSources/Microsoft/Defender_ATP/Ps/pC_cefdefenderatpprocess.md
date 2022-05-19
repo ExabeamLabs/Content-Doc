@@ -3,7 +3,7 @@
 {
 Name = cef-defender-atp-process
   DataType = "process-created"
-  Conditions = [""""FileName":""", """requestClientApplication=""", """AdvancedHunting-DeviceProcessEvents"""]
+  Conditions = ["""CEF""", """SkyFormation Cloud Apps Security""", """requestClientApplication=""", """AdvancedHunting-DeviceProcessEvents"""]
   Fields = ${MicrosoftParserTemplates.cef-defender-atp.Fields} [
      """ProcessId":({pid}\d{1,100})""",
      """InitiatingProcessFileName":\s{0,100}"({parent_process}[^"]{1,2000})""",
@@ -34,7 +34,6 @@ cef-defender-atp {
        """InitiatingProcessAccountName"{1,20}:\s{0,100}"{1,20}((?i)SYSTEM|(?i)network service|({user}[^"]{1,2000}))""",
        """"ProcessIntegrityLevel"{1,20}:\s{0,100}"{1,20}({process_integrity}[^"]{1,2000})""",
        """InitiatingProcessAccountSid"{1,20}:\s{0,100}"{1,20}({user_sid}[^"]{1,2000})""",
-       """"InitiatingProcessFolderPath":\s{0,100}"({process}(({directory}[^"]{1,2000}?)\\{1,20})?({process_name}[^"\\]{1,2000}))""""
        """InitiatingProcessFileName"{1,20}:\s{0,100}"{1,20}({process_name}[^"]{1,2000})""",
      ]
      DupFields = ["category->event_name"

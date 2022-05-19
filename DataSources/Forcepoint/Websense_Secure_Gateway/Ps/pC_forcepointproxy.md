@@ -7,11 +7,11 @@ Name = forcepoint-proxy
     Lms = QRadar
     DataType = "web-activity"
     IsHVF = true
-    TimeFormat = "yyyy-MM-dd HH:mm:ss"
+    TimeFormat = "epoch"
     Conditions = [ """LEEF:""","""|Forcepoint|Security|""","""|transaction:""","""srcBytes=""" ]
     Fields = [
-      """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""", 
-      """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S{1,2000})""", 
+      """exabeam_endTime=({time}\d{1,100})""",
+      """exabeam_host=(.+?@\s{0,100})?({host}[^\s]{1,2000})""",
       """\sdst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\ssrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\ssrcPort=({src_port}\d{1,100})""",

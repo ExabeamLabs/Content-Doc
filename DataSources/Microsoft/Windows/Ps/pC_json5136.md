@@ -19,7 +19,7 @@ Name = json-5136
     """""{1,20}ProviderGuid"{1,20}:"{1,20}\{({process_guid}[^}]{1,2000})""",
     """"{1,20}ActivityID"{1,20}:"{1,20}\{({activity_id}[^}]{1,2000})""",
     """"{1,20}ProcessID"{1,20}:({process_id}\d{1,100})"""
-    """"{1,20}Message"{1,20}:"{1,20}({additional_info}[^"]{1,2000}?)\s{0,100}""",
+    """"{1,20}Message"{1,20}:"{1,20}({aditional_info}[^"]{1,2000}?)\s{0,100}""",
     """"{1,20}Category"{1,20}:"{1,20}({category}[^"]{1,2000})"""
     """"SubjectUserName"{1,20}:"{1,20}({user}[^"]{1,2000})"""",    
     """"SubjectUserSid"{1,20}:"{1,20}({user_sid}[^"]{1,2000})"""",

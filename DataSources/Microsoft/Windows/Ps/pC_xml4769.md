@@ -20,7 +20,7 @@ Name = xml-4769
       """<Data Name ='TicketEncryptionType'>({ticket_encryption_type}[^<]{1,2000})</Data>""",
       """<Data Name ='TargetUserName'>(?=\w)({user}[^<@\s]{1,2000})(@({domain}[^<@\s]{1,2000}?))?<\/Data>""",
       """<Data Name ='TargetDomainName'>(?=\w)({domain}[^<]{1,2000})</Data>""",
-      """<Data Name ='IpAddress'>(::1|(::[\w]{1,2000}:)?({src_ip}[a-fA-F:\d.]{1,2000}))</Data>"""
+      """<Data Name ='IpAddress'>(::[\w]{1,2000}:)?({src_ip}[a-fA-F:\d.]{1,2000})</Data>"""
     ]
   
 

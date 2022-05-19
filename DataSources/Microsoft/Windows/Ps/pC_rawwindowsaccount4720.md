@@ -22,9 +22,9 @@ Name = raw-windows-account-4720
       """Computer(\w+)?["\s]{0,2000}(:|=)\s{0,100}"?({host}.+?)("|\s)""",
       """"system_name":"({host}[^"]{1,2000})"""",
       """Security(,|\srn=|\s{1,100})({record_id}\d{1,100})""",
-      """Account Name:\s{0,100}({user}[^:]{1,2000}?)\s{1,100}Account Domain:\s{0,100}({domain}[^\s]{1,2000}).+?Logon ID:\s{0,100}({logon_id}[^\s]{1,2000}).+?Account Name:\s{0,100}({account_name}[^:]{1,2000}?)\s{1,100}Account Domain:\s{0,100}({account_domain}[^\s]{1,2000})\s{1,100}Attributes""",
-      """Subject:\s{0,100}Security ID:\s{0,100}({user_sid}[^\s]{1,2000}).+?Account Name:\s{0,100}({user}[^:]{1,2000}?)\s{1,100}Account Domain:\s{0,100}({domain}[^\s]{1,2000}).+?Logon ID:\s{0,100}({logon_id}[^\s]{1,2000})""",
-      """New Account:.+?Security ID:\s{0,100}({account_id}[^\s]{1,2000})\s{1,100}Account Name:\s{0,100}({account_name}[\w.'\-]{1,2000})\s{1,100}Account Domain:\s{0,100}({account_domain}[^\s]{1,2000})""",
+      """Account Name:\s{1,100}({user}[^:]{1,2000}?)\s{1,100}Account Domain:\s{1,100}({domain}[^\s]{1,2000}).+?Logon ID:\s{1,100}({logon_id}[^\s]{1,2000}).+?Account Name:\s{1,100}({account_name}[^:]{1,2000}?)\s{1,100}Account Domain:\s{1,100}({account_domain}[^\s]{1,2000})\s{1,100}Attributes""",
+      """Subject:\s{1,100}Security ID:\s{1,100}({user_sid}[^\s]{1,2000}).+?Account Name:\s{1,100}({user}[^:]{1,2000}?)\s{1,100}Account Domain:\s{1,100}({domain}[^\s]{1,2000}).+?Logon ID:\s{1,100}({logon_id}[^\s]{1,2000})""",
+      """New Account:.+?Security ID:\s{1,100}({account_id}[^\s]{1,2000})\s{1,100}Account Name:\s{1,100}({account_name}[\w.'\-]{1,2000})\s{1,100}Account Domain:\s{1,100}({account_domain}[^\s]{1,2000})""",
       """Enabled.*?'({user_type}[^']{1,2000})"""
  ]
  DupFields = ["host->dest_host"]

@@ -5,7 +5,7 @@ Vendor: Illumio
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  15   |   7    |     4      |      2      |    2    |
+|  15   |   7    |     4      |      1      |    1    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

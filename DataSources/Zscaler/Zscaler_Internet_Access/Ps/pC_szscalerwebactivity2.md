@@ -37,7 +37,7 @@ s-zscaler-web-activity = {
     """\shostname=(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|({web_domain}\S{1,2000}))""",    
     """\spagerisk=({risk_level}\d{1,100})""",
     """\sfileclass=(?:None|({mime}[^=]{1,2000}?))\s{0,100}(\w+=|$)""",
-    """\sappname=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
+    """\sappname=({app}[^=]{1,2000}?)\s{1,100}(\w+|$)""",
     """\slocation=({location}[^=]{1,2000}?)\s{1,100}\w+="""
   
 }

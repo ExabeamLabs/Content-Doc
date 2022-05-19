@@ -9,9 +9,8 @@ Name = o365-inbox-activity
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = ["""destinationServiceName =Office 365""", """"ResultStatus"""" , """Add-MailboxPermission"""]
   Fields = [
-     """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
      """"CreationTime":\s{0,100}"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-     """flexString1=({activity}[^=]{0,2000}?)\s\w+=""",
+     """flexString1=({activity}[^\s]{0,2000})\srequest""",
      """\sby\s\[({user_email}[^@]{1,2000}@({email_domain}[^\]]{0,2000}))\]""",
      """ObjectId":"({resource}[^"]{0,2000})"""",
      """ResultStatus":"({outcome}[^"]{0,2000})"""",

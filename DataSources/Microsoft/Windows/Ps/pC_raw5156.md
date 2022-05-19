@@ -11,7 +11,8 @@ Name = raw-5156
   Fields = [
     """EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)"""",
     """Microsoft-Windows-Security-Auditing.*?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)\s{1,100}(::ffff:)?(am|AM|pm|PM|({host}[\w.\-]{1,2000}))""",
-    """(?i)\w+ \d{1,100} \d\d:\d\d:\d\d (::ffff:)?(am |pm |({host}[\w\-.]{1,2000})\s/raw-5156)""",
+    """(?i)\w+ \d{1,100} \d\d:\d\d:\d\d (::ffff:)?(am |pm |({host}[\w\-.]{1,2000})\s/raw-5156
+)""",
     """\WComputer\\*=(::ffff:)?({host}[\w\-.]{1,2000})""",
     """\WComputerName:\s{0,100}(::ffff:)?({host}[\w\-.]{1,2000})""",
     """({time}\w+ \d\d \d\d:\d\d:\d\d \d\d\d\d)\s{1,100}""",

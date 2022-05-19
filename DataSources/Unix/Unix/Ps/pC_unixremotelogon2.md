@@ -10,7 +10,7 @@ Name = unix-remote-logon-2
   Conditions = [ """logged in from """, """SHELL_LOGIN: """ ]
   Fields = [
     """({time}\w+\s{1,100}\d{1,100} \d\d:\d\d:\d\d \d\d\d\d)""",
-    """\d\d:\d\d:\d\d(\.\S+)? \d\d\d\d ({host}[^\s]{1,2000})""",
+    """\d\d:\d\d:\d\d \d\d\d\d ({host}[^\s]{1,2000})""",
     """({event_name}SHELL_LOGIN)""",
     """SHELL_LOGIN: ({user}[^\s]{1,2000})""",
     """logged in from ({src_ip}[a-fA-F:\d\.]{1,2000})\."""

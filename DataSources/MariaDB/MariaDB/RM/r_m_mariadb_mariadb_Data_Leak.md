@@ -5,7 +5,7 @@ Vendor: MariaDB
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  32   |   15   |     1      |      6      |    6    |
+|  32   |   15   |     1      |      5      |    5    |
 
 | Event Type          | Rules    | Models    |
 | ---- | ---- | ---- |

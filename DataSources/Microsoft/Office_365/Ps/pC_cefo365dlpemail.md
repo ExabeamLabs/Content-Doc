@@ -11,7 +11,7 @@ Name = cef-o365-dlp-email
 
   Fields = [
     """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d{1,100}Z\s{1,100}[\w\-.]{1,2000}\s{1,100}"""
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d{1,100}Z\s{1,100}[\w\-.]{1,2000}\s{1,100}Skyformation"""
     """filePath=<*({file_path}.+?)>*\s\w+=""",
     """fname=\s{0,100}({file_name}[^=]{1,2000}?)\s{0,100}\w+=""",
     """"Domain":"({domain}[^"]{1,2000})""",

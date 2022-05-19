@@ -7,19 +7,15 @@ Name = cef-azure-event-hub-security
   Fields = ${MSParserTemplates.cef-azure-event-hub.Fields}[
     """compromisedEntity":"({user_upn}[^"]{1,2000})"""",
     """userName":"(({domain}[^\\"]{1,2000})\\+)?({user}[^"]{1,2000})"""",
-    """clientIPAddress":"({src_ip}[A-Fa-f\d:.]{1,2000})""",
+    """clientIPAddress":"({src_ip}[^",]{1,2000})""",
     """severity":"({alert_severity}[^"]{1,2000})"""",
     """operationId":"({alert_id}[^"]{1,2000})"""",
     """category":"({azure_category}[^"]{1,2000})"""",
     """attackedResourceType":"({azure_resource_type}[^"]{1,2000})"""",
     """eventName":"({alert_type}[^"\\]{1,2000})\\*"""",
-    """"(detail|result)Description":"({additional_info}[^"]{1,2000})\\{0,25}"""",
-    """"resourceId":"({resource}[^"]{1,2000})"""",
-    """"resourceId":"[^"]{0,2000}\/RESOURCEGROUPS\/({account_id}[^\/]{1,2000})\/""",
-    """"correlationId":"({correlation_id}[^"]{1,2000})"""",
-    """"operationName":"({activity}[^"]{1,2000})""""
+    """resultDescription":"({alert_name}[^"\\]{1,2000})\\*"""",
+    """detailDescription":"({additional_info}[^"\\]{1,2000})\\*"""",
   ]
-  DupFields = ["alert_type->alert_name"]
 
 cef-azure-event-hub = {
   Vendor = Microsoft
@@ -27,7 +23,7 @@ cef-azure-event-hub = {
   Lms = Direct 
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Fields = [
-      """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d{1,100}Z [\w\-.]{1,2000} """,
+      """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d{1,100}Z [\w\-.]{1,2000} Skyformation""",
       """"time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
       """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S{1,2000})""",
       """\Wdvc=({host}\S{1,2000})""",
@@ -39,13 +35,14 @@ cef-azure-event-hub = {
       """\Wfname=({object}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",
       """\Wmsg=({additional_info}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",
       """\Wduser=(anonymous|({user_email}[^@=]{1,2000}@[^@=]{1,2000}?)|({user}.+?))(\s{1,100}\w{1,100}=|\s{0,100}$)""",
-      """\Wsuser=(anonymous|({user_email}[^@=]{1,2000}@[^@=\s]{1,2000})|({user}[^\s]{1,2000}))(\s{1,100}|\s{0,100}$)""",
+      """\Wsuser=(anonymous|({user_email}[^@=]{1,2000}@[^@=]{1,2000}?)|({user}.+?))(\s{1,100}\w{1,100}=|\s{0,100}$)""",
       """\Wsuid=(anonymous|({user_email}[^@=]{1,2000}@[^@=]{1,2000}?)|({user}.+?))(\s{1,100}\w{1,100}=|\s{0,100}$)""",
       """\Woutcome=({outcome}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",
       """\Wsrc=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """\Wshost=(|--|({src_host}[^=]{1,2000}))(\s{1,100}\w+=|\s{0,100}$)""",
       """"clientIP":"({src_ip}[A-Fa-f.\d]{1,2000})""",
       """"description":"({additional_info}[^"]{1,2000})""",
+      #"""\Wext_identity_claims_name=(|({user}[^=]{1,2000}))(\s{1,100}\w{1,100}=|\s{0,100}$)""",
       """"identity".*?"claims".*?"name":"({user}[^"]{1,2000})"""",
       """"callerIpAddress":"({src_ip}[a-fA-F\d.:]{1,2000})"""",
       """Namespace:\s{0,100}(|({event_hub_namespace}[^\]]{1,2000}?))\s{0,100}[\];]""",

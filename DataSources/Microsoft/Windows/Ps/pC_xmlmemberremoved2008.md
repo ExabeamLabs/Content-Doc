@@ -15,7 +15,7 @@ Name = xml-member-removed-2008
     """<Computer>({host}[^<]{1,2000})""",
     """<EventID>({event_code}[^<]{1,2000})""",
     """A member was removed from a security-enabled\s{0,100}({group_type}[^\s]{1,2000})\s{1,100}group""",
-    """'MemberName'>(-|({account_dn}({account_id}[^<]{1,2000})))<""",
+    """'MemberName'>(-|({account_id}[^<]{1,2000}))<""",
     """'MemberSid'>({sid_user}[^<]{1,2000})""",
     """'SubjectUserSid'>({user_sid}[^"\s<]{1,2000})<""",
     """'SubjectUserName'>({user}[^"\s<]{1,2000})<""",
@@ -23,6 +23,7 @@ Name = xml-member-removed-2008
     """'SubjectLogonId'>({logon_id}[^"\s<]{1,2000})<""",
     """CN=({account_id}.*?(?=,OU))""",
     """OU=({account_ou}[^,]{1,2000})""",
+    """DC=({account_dn}[^,<]{1,2000})"""
     """'TargetUserName'>({group_name}[^<]{1,2000})""",
     """'TargetDomainName'>({group_domain}[^<]{1,2000})""",
     """'TargetSid'>({group_id}[^<]{1,2000})"""

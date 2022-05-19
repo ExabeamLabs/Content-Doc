@@ -7,7 +7,7 @@ Name = json-o365-app-login
   Lms = Splunk
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
-  Conditions = [ """"appDisplayName":""", """successfully logged in""", """"userPrincipalName":"""" ]
+  Conditions = [ """CEF:""", """|skyformation|""", """successfully logged in""", """"userPrincipalName":"""" ]
   Fields = [
     """exabeam_host=(.+?@\s{0,100})?({host}[^\s]{1,2000})""",
     """"userDisplayName":"({user_fullname}[^"]{1,2000})""",

@@ -6,13 +6,12 @@ Name = s-duo-auth-json
   Product = Duo Access Security
   Lms = Splunk
   DataType = "authentication-attempt"
-  TimeFormat = "epoch_sec"
+  TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """"new_enrollment"""",""""ip"""",""""result""""]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
-    """"timestamp":\s{0,100}({time}\d{1,100})""",
-    """"device":\s{0,100}"{0,20}(null\}?|({device}[^",]{1,2000}))"""",
-    """"{1,20}ip"{1,20}:\s"{1,20}(0.0.0.0|({src_ip}[a-fA-F:\.\d]{1,2000}))"""",
+    """"device":\s{0,100}"{0,20}(null\}?|({host}[\w\-.]{1,2000}))"""",
+    """"ip"\s{0,100}:\s{0,100}"({src_ip}[^"]{1,2000})"""",
     """"username"\s{0,100}:\s{0,100}"(?:({domain}[^\\"]{1,2000})\\)?({user}[^"]{1,2000})"""",
     """"factor"\s{0,100}:\s{0,100}"(?:n\/a|({auth_method}[^"]{1,2000}))"""",
     """"os"\s{0,100}:\s{0,100}"({os}[^"]{1,2000})"""",

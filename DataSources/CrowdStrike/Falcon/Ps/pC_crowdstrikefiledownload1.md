@@ -31,7 +31,7 @@ crowdstrike-file-operations = {
       """src-account-name":"({account_name}[^"]{1,2000})""",
       """"((?i)SHA256String|SHA256HashData)":"({sha256}[^"]{1,2000})"""",
       """"name":"({event_name}[^"]{1,2000})"""",
-      """UserName":"(({user_fullname}({user_firstname}[^\s"]{1,2000})\s({user_lastname}[^"]{1,2000}))|({user}[^"\s]{1,2000}))"""",
+      """UserName":"({user}[^"]{1,2000})"""",
       """"ContextProcessId":"({process_guid}[^"]{1,2000})"""",
       """"aip":"({src_ip}[a-fA-F\d:.]{1,2000})""""
     

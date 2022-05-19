@@ -4,7 +4,7 @@ Product: LanScope Cat
 ---------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  788  |  185   |    141     |     13      |   13    |
+|  767  |  181   |    140     |     13      |   13    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

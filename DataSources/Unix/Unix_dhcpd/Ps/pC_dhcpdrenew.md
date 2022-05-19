@@ -9,8 +9,7 @@ Name = dhcpd-renew
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """ dhcpd: """, """ RENEW """ ]
   Fields = [
-    """\d\d:\d\d:\d\d(\.\S+)?\s({host}[^\s]{1,2000})""",
-    """\w+ \d{1,100} \d\d:\d\d:\d\d(\.\S+)? ({host}[\w.\-]{1,2000}) dhcpd:""",
+    """\w+ \d{1,100} \d\d:\d\d:\d\d ({host}[\w.\-]{1,2000}) dhcpd:""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """({event_name}RENEW)""",
     """\sIP=({dest_ip}[a-fA-F\d.:]{1,2000})""",

@@ -13,7 +13,6 @@ checkpoint-auth = {
   Fields = [
     """\Wtime:"({time}\d{1,100})""",
     """\W({host}[\w\-.]{1,2000}) CheckPoint""",
-    """\Wuser:"({user}[^"\s]{1,2000})"""",
     """\Wuser:"({user_lastname}[^,]{1,2000}),\s{0,100}({user_firstname}[\w\s]{1,2000}\S)\s{0,100}\(({user}.+?)\)""",
     """\Wuser:"({user_fullname}[^,:\("]{1,2000})\s\(({user}[^\)]{1,2000})\)""",
     """\Wsrc:"({src_ip}[A-Fa-f:\d.]{1,2000})""",

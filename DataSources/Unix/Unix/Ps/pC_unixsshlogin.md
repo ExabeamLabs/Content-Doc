@@ -10,7 +10,7 @@ Name = unix-ssh-login
   Conditions = [ """SSH: Completed password Authentication. User logged in""", """SessionID=""", """Listener=""", """Client=""", """<Host=""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\d\d:\d\d:\d\d(\.\S+)? ({host}[^\s]{1,2000}) SSH:""",
+    """\d\d:\d\d:\d\d ({host}[^\s]{1,2000}) SSH:""",
     """Listener=({dest_ip}[\da-fA-F:\.]{1,2000}):({dest_port}\d{1,100}),""",
     """Client=({src_ip}[\da-fA-F:\.]{1,2000}):({src_port}\d{1,100}),""",
     """User=({user}[^>]{1,2000})""",

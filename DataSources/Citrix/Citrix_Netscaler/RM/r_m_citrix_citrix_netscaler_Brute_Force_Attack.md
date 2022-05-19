@@ -9,4 +9,4 @@ Vendor: Citrix
 
 | Event Type | Rules    | Models    |
 | ---------- | ---- | ---- |
-| vpn-logout | <b>T1110 - Brute Force</b><br> ↳ <b>AUTH-F-COUNT</b>: Abnormal number of failed authentications during this user session |  • <b>AUTH-F-COUNT</b>: Count of failed authentication events in a session |
+| vpn-logout | <b>T1110 - Brute Force</b><br> ↳ <b>AUTH-F-COUNT</b>: Abnormal number of failed authentications for user |  • <b>AUTH-F-COUNT</b>: Count of failed authentication events in a session |

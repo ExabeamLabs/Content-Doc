@@ -11,7 +11,7 @@ Name = raw-unix-dhcp-reversemap
   Fields = [ """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """\s({host}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})\s\w+\[""",
-    """Added reverse map from (({ip4}\d{1,3})\.({ip3}\d{1,3})\.({ip2}\d{1,3})\.({ip1}\d{1,3})).+? to ({dest_host}[^\s"$]{1,2000})"""
+    """Added reverse map from ({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).+? to ({dest_host}[^\s"$]{1,2000})"""
   ]
   DupFields = [ "dest_host->user" ]
 

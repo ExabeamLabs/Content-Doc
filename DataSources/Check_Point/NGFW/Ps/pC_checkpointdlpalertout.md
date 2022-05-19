@@ -15,7 +15,7 @@ Name = checkpoint-dlp-alert-out
     """\Worigin:"({src_ip}[^"]{1,2000})""",
     """\Wfrom:"({sender}[^"@]{1,2000}@[^"@]{1,2000})""",
     """\Wto:"({recipients}({recipient}[^@"\s]{1,2000}@[^"@\s]{1,2000})[^"]{0,2000}?)"""",
-    """\Wemail_session_id:"({message_id}[^"]{1,2000})""",
+    """\Wemail_session_id:"({email_id}[^"]{1,2000})""",
   ]
 
 

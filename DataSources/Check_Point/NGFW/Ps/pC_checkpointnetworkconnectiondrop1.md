@@ -18,7 +18,7 @@ Name = checkpoint-network-connection-drop-1
     """\Wdst:({dest_ip}[A-Fa-f:\d.]{1,2000})""",
     """\Wxlatedst:(0\.0\.0\.0|({dest_translated_ip}[A-Fa-f:\d.]{1,2000}))""",
     """\Wservice_id:({app_protocol}[^"\;]{1,2000})""",
-    """\Waction:({outcome}Drop)""",
+    """\Waction:({action}Drop)""",
     """\Wrule_name:({rule}[^"\;]{1,2000}?)\s{0,100}";""",
     """\Ws_port:({src_port}\d{1,100})""",
     """\Wxlatesport:({src_translated_port}\d{1,100})""",
@@ -27,8 +27,8 @@ Name = checkpoint-network-connection-drop-1
     """\Wservice:({dest_port}\d{1,100})""",
     """\Wproto:({protocol}[^"\;]{1,2000})""",
     """\Wrule_uid:\{?({rule_id}[^"\}\;]{1,2000})""",
-    """\Wpolicy_name=({rule}[^"]{1,2000}?)\\\]"""
   ]
+  DupFields = [ "action->event_name" ]
 
 
 }

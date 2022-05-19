@@ -8,8 +8,7 @@ Name = sysmon-registry-set-2
     """Event ID:\s{0,100}({event_code}\d{1,100})""",
     """\s{1,100}Image:\s{0,100}({file_path}({file_parent}(?:(\w+:)?[^:]{1,2000})?[\\\/])?({file_name}.+?))\s{1,100}\w+:""",
     """TargetObject:\s{0,100}({object}({registry_path}({registry_key}.*)\\({registry_value}[^\\.]{1,2000}(\.[^\\.]{1,2000}?)?)))\s{1,100}Details:""",
-    """Details:\s{0,100}({registry_details}.+?)\s{0,100}$""",
-    """Details:\s{0,100}({registry_details_type}DWORD|QWORD|Binary Data)?\s{0,100}({registry_details}.+?)\s{0,100}$""",
+    """Details:\s{0,100}({registry_details_type}DWORD)?\s{0,100}({registry_details}.+?)\s{0,100}$""",
     """ComputerName(:|=)\s{0,100}({host}[\w.-]{1,2000})""",
   ]
   DupFields = [ "host->dest_host","directory->process_directory" ]

@@ -24,7 +24,7 @@ cef-proofpoint-email = {
     """\Wcs5=({attachments}.+?)\s{0,100}(\w+=|$)""",
     """\Wcs5="?({attachment}[^,"]{1,2000}?)("|,|\s{0,100}(\w+=|$))""",
     """\Wcs6=({subject}.+?)\s{0,100}(\w+=|$)""",
-    """\Wdproc=({message_id}.+?)\s{0,100}(\w+=|$)""",
+    """\Wdproc=({email_id}.+?)\s{0,100}(\w+=|$)""",
     """\WeventId=({alert_id}\d{1,100})""",
     """CEF:([^\|]{0,2000}\|){5}({alert_name}[^\|]{1,2000})"""
   ]

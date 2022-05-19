@@ -27,7 +27,7 @@ Name = xml-4649
     """Logon ID:\s{0,100}({logon_id}\S+)\s{1,100}""",
     """Account Name:\s{0,100}(LOCAL SERVICE|({user}\S+))\s{1,100}Account Domain:""",
     """<EventID>({event_code}[^<]{1,2000})<\/EventID>""",
-    """({additional_info}Credentials Which Were Replayed:.+)This event indicates that a Kerberos replay attack was detected""",
+    """({additiona_info}Credentials Which Were Replayed:.+)This event indicates that a Kerberos replay attack was detected""",
   ]
   DupFields = [ "event_name->alert_name", "auth_process->alert_type" ]
 

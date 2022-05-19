@@ -24,7 +24,7 @@ s-okta-app-login = {
     """({app}Okta)""",
     """destinationServiceName({app}.+?)\s{0,100}\w+=""",
     """"target":\s{0,100}\[.*?\{.*?"displayName":\s{0,100}"({app}[^"]{1,2000})"[^\{\}]{0,2000}?"type":\s{0,100}"AppInstance"""",
-    """"type":\s{0,100}"AppInstance"[^\}\]]{0,2000}"displayName":\s{0,100}"({app}[^"]{1,2000}?)\s{0,100}"""",
+    """"type":"AppInstance"[^\}\]]{0,2000}"displayName":"({app}[^"]{1,2000}?)\s{0,100}"""",
     """"actor":\s{0,100}\{[^\{\}]{0,2000}?"displayName":\s{0,100}"((?i)okta[^"]{0,2000}|unknown|({user_fullname}[^",]{1,2000}))"[^\{\}]{0,2000}?"type":\s{0,100}"User"""",
     """"actor":\s{0,100}\{[^\{\}]{0,2000}?"type":\s{0,100}"User"[^\{\}]{0,2000}?"displayName":\s{0,100}"((?i)okta[^"]{0,2000}|unknown|({user_fullname}[^",]{1,2000}))"""",
     """"actor"":\s{0,100}\{[^\{\}]{0,2000}?""type"":\s{0,100}""User""[^\{\}]{0,2000}?""displayName"":\s{0,100}""((?i)okta[^"]{0,2000}|unknown|({user_lastname}[^,]{1,2000}),\s{0,100}({user_firstname}[^,"\}\]]{1,2000}))""""

@@ -5,7 +5,7 @@ Vendor: Okta
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   0    |     1      |     13      |   13    |
+|   2   |   0    |     1      |     12      |   12    |
 
 | Event Type    | Rules    | Models |
 | ---- | ---- | ------ |

@@ -7,7 +7,7 @@ Name = crowdstrike-modify-binary
   Fields = ${CrowdStrikeParserTemplates.cef-crowdstrike-app-activity-temp.Fields} [
     """"ServiceImagePath":"({file_path}({file_parent}[^"]{0,2000}?\\+)({file_name}[^\\\s"]{1,2000}?\.({file_ext}[^\\\s"\.]{1,2000}?)))(\s|")"""
     """"ServiceObjectName":"({additional_info}[^"]{1,2000})"""
-    """({action}ModifyServiceBinaryV2)"""
+    """({accesses}Modify)"""
   ]
 
 cef-crowdstrike-app-activity-temp = {

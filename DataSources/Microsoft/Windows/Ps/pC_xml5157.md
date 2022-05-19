@@ -23,8 +23,7 @@ Name = xml-5157
     """<RenderingInfo.+?<Task>({activity_type}[^<>]{1,2000})</Task>.*?</RenderingInfo>""",
     """<Computer>({src_host}[^<>]{1,2000})</Computer>.+?Direction:\s{0,100}({direction}Outbound)""",
     """<Computer>({dest_host}[^<>]{1,2000})</Computer>.+?Direction:\s{0,100}({direction}Inbound)""",
-    """<Data Name(\\)?='LayerName'>({layer_name}[^<]{1,2000})""",
-    """Layer Name:\s{1,100}({layer_name}[^:]{1,2000}?)\s{1,100}Layer Run-Time ID:"""
+    """<Data Name(\\)?='LayerName'>({layer_name}[^<]{1,2000})"""
   ]
   DupFields = [ "host->local_asset" ]
 

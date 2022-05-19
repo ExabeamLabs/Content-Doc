@@ -11,8 +11,7 @@ Name = aix-process-created
   Conditions = [ """ CMD """, """]: (""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}\S{1,2000})""",
-    """\d\d:\d\d:\d\d(\.\S+)?\s(::ffff:)?({host}[^\s]{1,2000})""",
-    """\w{3}\s{1,100}\d{1,100}\s{1,100}\d\d:\d\d:\d\d(\.\S+)?\s{1,100}(::ffff:)?({host}[\w\-.]{1,2000})""",
+    """\w{3}\s{1,100}\d{1,100}\s{1,100}\d\d:\d\d:\d\d\s{1,100}(::ffff:)?({host}[\w\-.]{1,2000})""",
     """\(({account}[^\)]{1,2000}?)\) CMD""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """time:"({time}\d{1,100})""",

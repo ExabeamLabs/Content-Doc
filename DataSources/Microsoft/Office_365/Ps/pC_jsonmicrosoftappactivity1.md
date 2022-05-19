@@ -20,7 +20,7 @@ json-microsoft-app-activity = {
     """"category":"({category}[^"]{1,2000})"""",
     """"source":"({log_source}[^"]{1,2000})"""",
     """"activityType":"({object_type}[^"]{1,2000})"""",
-    """"objectId":"({object_id}[^"]{1,2000})"""",
+    """"id":"({object_id}[^"]{1,2000})"""",
     """"correlationId":"({conn_id}[^"]{1,2000})"""",
     """\WdestinationServiceName\s{0,100}=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\WsourceServiceName =({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)"""

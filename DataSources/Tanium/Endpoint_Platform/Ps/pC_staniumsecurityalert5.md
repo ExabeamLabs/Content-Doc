@@ -22,14 +22,12 @@ Name = s-tanium-security-alert-5
       """"Event Id":"({alert_id}[^",]{1,2000})"""",
       """"Computer Name":"({src_host}[^"]{1,2000}?)"""",
       """"Computer IP":"({src_ip}[a-fA-F\d.:]{1,2000})"""",
+      """"fullpath\\*":\\*"({malware_url}[^"]{1,2000}?)\\*"""",
       """"name\\*":\\*"({file_name}[^"]{1,2000}?)\\*"""",
       """"source\\*":\\*"({log_source}[^"]{1,2000}?)\\*"""",
       """"Intel Name"{1,20}:"{1,20}({alert_name}[^"]{1,2000})""",
       """"Intel Type"{1,20}:"{1,20}({alert_type}[^"]{1,2000})""",
-      """"Intel Labels":"({additional_info}[^"]{1,2000})""",
-      """"properties\\?"{1,20}:[^\]]{1,2000}?md5\\?"{1,20}:\\?"{1,20}({md5}[^"]{1,2000}?)\\?"""",
-      """"properties\\?"{1,20}:[^\]]{1,2000}?args\\?"{1,20}:"{0,20}\\*"{1,20}({command_line}[^,\]]{1,2000}?)\\?\s{0,100}","cwd""",
-      """"properties\\?"{1,20}:[^\]]{1,2000}?fullpath\\?"{1,20}:\\?"{1,20}({process}({process_directory}[^"]{1,2000})\\{1,2000}({process_name}[^"]{1,2000}))\\{1,2000}""""
+      """"Intel Labels":"({additional_info}[^"]{1,2000})"""
     ]
 
 

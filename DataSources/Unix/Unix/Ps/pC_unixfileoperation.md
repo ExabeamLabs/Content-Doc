@@ -10,7 +10,7 @@ Name = unix-file-operation
   Conditions = [ """ Original Address=""", """ objtype=""", """ name=""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """\d\d:\d\d:\d\d(\.\S+)? ({host}\S+)""",
+    """\d\d:\d\d:\d\d ({host}\S+)""",
     """Original Address=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """node=({host}\S+)""",
     """msg=audit\(({time}\d{1,100})\.\d{1,100}:\d{1,100}\):""",

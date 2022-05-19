@@ -17,11 +17,11 @@ Name = q-unix-as
     """\(uid=({user_uid}\d{1,100})\)""",
     """(::ffff:)?({host}[\w.\-]{1,2000}) sshd ({logon_id}\d{1,100}) authpriv""",
     """sshd\[({logon_id}\d{1,100})""",
-    """\d\d:\d\d:\d\d(\.\S+)? (::ffff:)?({host}[\w.\-]{1,2000})\s{1,100}""",
+    """\d\d:\d\d:\d\d (::ffff:)?({host}[\w.\-]{1,2000})\s{1,100}""",
     """({event_code}ssh)""",
     """"host":"(::ffff:)?({host}[^"]{1,2000})""",
     """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",
-    """\d\d:\d\d:\d\d(\.\S+)? (::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^\s]{1,2000}))\s{1,100}sshd\["""
+    """\d\d:\d\d:\d\d (::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^\s]{1,2000}))\s{1,100}sshd\["""
   ]
   DupFields = [ "user_uid->user_id"]
 

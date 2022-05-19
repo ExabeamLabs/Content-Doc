@@ -11,8 +11,7 @@ Name = dhcpd-dhcpack-logon
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
-    """\d\d:\d\d:\d\d(\.\S+)?\s({host}[^\s]{1,2000})""",
-    """\w+ \d{1,100} \d\d:\d\d:\d\d(\.\S+)? ({host}[\w.\-]{1,2000}) dhcpd:""",
+    """\w+ \d{1,100} \d\d:\d\d:\d\d ({host}[\w.\-]{1,2000}) dhcpd:""",
     """({event_name}DHCPACK)""",
     """DHCPACK to ({dest_ip}[a-fA-F\d.:]{1,2000}) \((<no client hardware address>|({dest_mac}[a-fA-F\d.:]{1,2000}))\) via ({dest_interface}[^\s"]{1,2000})""",
     """DHCPACK on ({dest_ip}[a-fA-F\d.:]{1,2000}) to ({dest_mac}[a-fA-F\d.:]{1,2000}) (\(({dest_host}[\w\-.]{1,2000})\))?\s{0,100}via ({dest_interface}[^\s"]{1,2000})""",

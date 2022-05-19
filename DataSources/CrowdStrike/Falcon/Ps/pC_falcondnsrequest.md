@@ -14,7 +14,6 @@ Name = falcon-dns-request
       """"hostname":"({host}[\w\-.]{1,2000})"""",
       """"timestamp":\s{0,100}"({time}\d{1,100})"""",
       """"DomainName":\s{0,100}"({query}[^\"]{1,2000})"""",
-      """"aip":\s{0,100}"({src_ip}[a-fA-F:\d.]{1,2000})""",
       """"LocalAddressIP6":\s{0,100}"({src_ip}[a-fA-F:\d.]{1,2000})""",
       """"RemoteAddressIP6":\s{0,100}"({dest_ip}[a-fA-F:\d.]{1,2000})""",
       """"LocalAddressIP4":\s{0,100}"({src_ip}[a-fA-F:\d.]{1,2000})""",

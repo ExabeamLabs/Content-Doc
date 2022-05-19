@@ -14,7 +14,7 @@ Name = json-4625-2
     """IpAddress\\?"{1,20}:\\?"(?:-|(::[\w]{1,2000}:)?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}))""",
     """SubStatus\\?"{1,20}:\\?"{1,20}({result_code}[^\\]{1,2000})\\?"""
   ]
-  DupFields=[ "host->dest_host" ]
+  DupFields=[ "host->dest_host","src_host_windows->src_host" ]
 
 json-windows-events-2 = {
   Vendor = Microsoft

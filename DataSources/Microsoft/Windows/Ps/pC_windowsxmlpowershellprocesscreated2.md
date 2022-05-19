@@ -22,7 +22,6 @@ Name = windows-xml-powershell-process-created-2
     """Context[^@]{1,2000}?Command Type\s{0,100}=\s{0,100}(|({command_type}[^=]{1,2000}?))\s{0,100}Script Name =""",
     """Context[^@]{1,2000}?Command Name\s{0,100}=\s{0,100}(|({command_name}[^=]{1,2000}?))\s{0,100}Command Type =""",
     """Context[^@]{1,2000}?Script Name\s{0,100}=\s{1,100}({script_name}\S[^=]{1,2000}?)\s{1,100}Command Path =""",
-    """Engine Version\s{0,10}=\s{0,10}({engine_version}[^\s]{1,2000})\s{0,100}""",
   ]
   DupFields = [ "host->dest_host", "directory->process_directory" ]
 

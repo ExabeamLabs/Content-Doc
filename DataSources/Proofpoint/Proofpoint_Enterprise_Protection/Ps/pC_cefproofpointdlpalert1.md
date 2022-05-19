@@ -18,7 +18,7 @@ Name = cef-proofpoint-dlp-alert-1
     """\Wdhost=({dest_host}.+?)\s{0,100}(\w+=|$)""",
     """\Wduser=({recipients}.+?)\s{0,100}(\w+=|$)""",
     """\Wduser=({recipient}[^,\s]{1,2000})""",
-    """\Wcs1=({message_id}.+?)\s{0,100}(\w+=|$)""",
+    """\Wcs1=({email_id}.+?)\s{0,100}(\w+=|$)""",
     """\WflexString2=({alert_name}.+?)\s{0,100}(\w+=|$)""",
     """({alert_type}Email Quarantine)""",
     """\WeventId=({alert_id}\d{1,100})"""

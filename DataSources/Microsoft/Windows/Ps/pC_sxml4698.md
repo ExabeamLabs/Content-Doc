@@ -25,8 +25,7 @@ Name = s-xml-4698
     """<RegistrationInfo>.+?<Author>(?=\w)({author}[^<]{1,2000})</Author>""",
     """<RegistrationInfo>.+?<Description>(?=\w)({description}[^<]{1,2000})</Description>""",
     """<Command>"?({process}({directory}(?:(\w+:)?[^:<"]{1,2000})?[\\\/])?({process_name}[^<"]{1,2000}))""",
-    """<Arguments>("{1,20})?({arg}[^<"]{1,2000})""",
-    """<Message>({event_name}A scheduled task was created)"""
+    """<Arguments>("{1,20})?({arg}[^<"]{1,2000})"""
   ]
   DupFields = [ "host->dest_host", "directory->process_directory" ]
 

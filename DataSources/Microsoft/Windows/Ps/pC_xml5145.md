@@ -25,7 +25,7 @@ Name = xml-5145
       """<Data Name ='ShareName'>({share_name}[^<]{1,2000})</Data>""",
       """<Data Name ='RelativeTargetName'>({f_parent}[^<]{1,2000}?\\+)?(?:|({file_name}[^\\:<]{0,2000}?(\.\s{0,100}({file_ext}[^\W_\\.]{1,2000}?))?))?\?</Data>""",
       """<Data Name ='AccessList'>\s{0,100}({accesses}[^<]{1,2000})\s{0,100}</Data>""",
-      """Accesses:[\s]{0,100}({accesses}[^:]{0,2000}?)\s{0,100}Access Check Results:""",
+      """Accesses:[^:]{0,2000}?({accesses}SYNCHRONIZE|Execute|Traverse|Read|READ|WRITE_DAC|WRITE_OWNER|WriteAttributes|WriteEA|WriteData|AppendData|delete|Delete)[^:]{0,2000}?Access Check Results:""",
       """<Data Name ='ShareLocalPath'>(?:[\\\?]{1,2000})?(?:\s{0,100}|({share_path}(({d_parent}[^<>]{1,2000})\\)?({d_name}\s{0,100}\S[^\\<>]{1,2000}?)?)\\?)<\/Data>""",
       """<Data Name ='AccessReason'>\s{0,100}(-|({access_reason}[^<]{1,2000}?))\s{0,100}</Data>""",
       """<Keywords><Keyword>({outcome}[^<]{1,2000})</Keyword>"""

@@ -7,7 +7,7 @@ Name = zoom-operations-activity
   Lms = Direct
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """destinationServiceName =Zoom""", """"operation_detail":"""", """"operator":"""" ]
+  Conditions = [ """|Skyformation|""", """destinationServiceName =Zoom""", """"operation_detail":"""", """"operator":"""" ]
   Fields = [
     """\WdestinationServiceName =({app}.+?)(\s{1,100}\w+=|\s{0,100}$)""",
     """time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)""",

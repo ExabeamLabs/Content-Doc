@@ -15,7 +15,7 @@ Name = unix-local-logon-1
     """\suid=({user_id}\d{1,100})""",
     """\sses=({session_id}\d{1,100})""",
     """\sauid=({account_used_id}\d{1,100})""",
-    """\d\d:\d\d:\d\d(\.\S+)?\s{1,100}({host}[^\s]{1,2000})\s"""
+    """\d\d:\d\d:\d\d\s{1,100}({host}[^\s]{1,2000})\s"""
   ]
 
 

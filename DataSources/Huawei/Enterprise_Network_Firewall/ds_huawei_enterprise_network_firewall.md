@@ -4,14 +4,14 @@ Product: Enterprise Network Firewall
 ------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  58   |   27   |     7      |      2      |    2    |
+|  57   |   27   |     7      |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 | [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  database-query<br> ↳[huawei-firewall](Ps/pC_huaweifirewall.md)<br><br> network-connection-successful<br> ↳[huawei-firewall](Ps/pC_huaweifirewall.md)<br> | T1213 - Data from Information Repositories<br>    | [<ul><li>18 Rules</li></ul><ul><li>10 Models</li></ul>](RM/r_m_huawei_enterprise_network_firewall_Compromised_Credentials.md) |
 |    [Cryptomining](../../../UseCases/uc_cryptomining.md)    |  database-query<br> ↳[huawei-firewall](Ps/pC_huaweifirewall.md)<br><br> network-connection-successful<br> ↳[huawei-firewall](Ps/pC_huaweifirewall.md)<br> | T1496 - Resource Hijacking<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_huawei_enterprise_network_firewall_Cryptomining.md)    |
 |    [Data Access](../../../UseCases/uc_data_access.md)    |  database-query<br> ↳[huawei-firewall](Ps/pC_huaweifirewall.md)<br><br> network-connection-successful<br> ↳[huawei-firewall](Ps/pC_huaweifirewall.md)<br> | T1213 - Data from Information Repositories<br>    | [<ul><li>18 Rules</li></ul><ul><li>10 Models</li></ul>](RM/r_m_huawei_enterprise_network_firewall_Data_Access.md)    |
-|        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  database-query<br> ↳[huawei-firewall](Ps/pC_huaweifirewall.md)<br><br> network-connection-successful<br> ↳[huawei-firewall](Ps/pC_huaweifirewall.md)<br> | T1071 - Application Layer Protocol<br>T1090.003 - Proxy: Multi-hop Proxy<br>T1190 - Exploit Public Fasing Application<br>TA0010 - TA0010<br>TA0011 - TA0011<br> | [<ul><li>39 Rules</li></ul><ul><li>17 Models</li></ul>](RM/r_m_huawei_enterprise_network_firewall_Lateral_Movement.md)        |
+|        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  database-query<br> ↳[huawei-firewall](Ps/pC_huaweifirewall.md)<br><br> network-connection-successful<br> ↳[huawei-firewall](Ps/pC_huaweifirewall.md)<br> | T1071 - Application Layer Protocol<br>T1090.003 - Proxy: Multi-hop Proxy<br>T1190 - Exploit Public Fasing Application<br>TA0010 - TA0010<br>TA0011 - TA0011<br> | [<ul><li>38 Rules</li></ul><ul><li>17 Models</li></ul>](RM/r_m_huawei_enterprise_network_firewall_Lateral_Movement.md)        |
 |    [Malware](../../../UseCases/uc_malware.md)    |  database-query<br> ↳[huawei-firewall](Ps/pC_huaweifirewall.md)<br><br> network-connection-successful<br> ↳[huawei-firewall](Ps/pC_huaweifirewall.md)<br> | TA0011 - TA0011<br>    | [<ul><li>3 Rules</li></ul>](RM/r_m_huawei_enterprise_network_firewall_Malware.md)    |
 
 ATT&CK Matrix for Enterprise

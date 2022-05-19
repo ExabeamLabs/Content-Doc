@@ -4,7 +4,7 @@ Product: Falcon
 ---------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  819  |  191   |    139     |     27      |   27    |
+|  795  |  189   |    138     |     27      |   27    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

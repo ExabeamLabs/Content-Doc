@@ -11,7 +11,6 @@ Name = raw-4779
   Fields = [
     """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """({time}(?i)(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2} \d{1,2}:\d{1,2}:\d{1,2} 20\d{2})""",
-    """"timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     """(?i)\w+\s{0,100}\d{1,100}\s{0,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(::ffff:)?(am|pm|({host}[\w\-.]{1,2000}))""",
     """({event_name}A session was disconnected from a Window Station)""",
     """<Computer>({host}[^<]{1,2000})</Computer>""",
@@ -22,7 +21,6 @@ Name = raw-4779
     """Service Name(:|=)\s{0,100}(::ffff:)?({dest_host}.+?)[\s;]{0,2000}Service ID""",
     """Client Address(:|=)\s{0,100}(::[\w]{1,2000}:)?(::ffff:)?(0.0.0.0|({src_ip}[a-fA-F:\d.]{1,2000}))"""
   ]
-   DupFields = [ "host->dest_host" ]
 
 
 }

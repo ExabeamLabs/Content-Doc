@@ -5,7 +5,7 @@ Vendor: Ping Identity
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   3   |   0    |     4      |     10      |   10    |
+|   3   |   0    |     4      |      8      |    8    |
 
 | Event Type    | Rules    | Models |
 | ---- | ---- | ------ |

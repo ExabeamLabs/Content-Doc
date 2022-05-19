@@ -5,7 +5,7 @@ Vendor: Cisco
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   2    |     1      |      8      |    8    |
+|   2   |   2    |     1      |      7      |    7    |
 
 | Event Type | Rules    | Models    |
 | ---------- | ---- | ---- |

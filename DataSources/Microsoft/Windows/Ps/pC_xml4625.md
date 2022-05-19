@@ -16,7 +16,7 @@ Name = xml-4625
       """<Data Name(\\)?='SubjectDomainName'>((?=\w))?(-|({caller_domain}[^<]{1,2000}))<\/Data>""",
       """<Data Name(\\)?='LogonType'>({logon_type}\d{1,100})<\/Data>""",
       """<Data Name(\\)?='TargetUserSid'>({user_sid}[^<]{1,2000})</Data>""",
-      """<Data Name(\\)?='TargetUserName'>(?=\w)(({user_email}[^@]{1,2000}@[^.]{1,2000}\.[^<]{1,2000})|({user}[^<]{1,2000}))<\/Data>""",
+      """<Data Name(\\)?='TargetUserName'>(?=\w)({user}[^<]{1,2000})</Data>""",
       """<Data Name(\\)?='TargetDomainName'>(?=\w)({domain}[^<]{1,2000})</Data>""",
       """<Data Name(\\)?='Status'>({result_code}[^<]{1,2000})</Data>""",
       """<Data Name(\\)?='SubStatus'>({result_code}[^<]{1,2000})</Data>""",
@@ -29,6 +29,7 @@ Name = xml-4625
       """<Data Name =('|")SubjectUserSid('|")>({subject_sid}[^<]{1,2000})</Data>""",
       """<Data Name =('|")KeyLength('|")>({key_length}[^<]{1,2000})</Data>"""
     ]
+    DupFields = ["src_host_windows->src_host"]
   
 
 }

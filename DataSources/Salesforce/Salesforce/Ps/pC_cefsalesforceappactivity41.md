@@ -7,9 +7,9 @@ Name = cef-salesforce-app-activity-41
   Lms = ArcSight
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """|resource-property-updated|""", """destinationServiceName =Sales Cloud""" ]
+  Conditions = [ """CEF:""", """|Skyformation|""", """|resource-property-updated|""", """Sales Cloud""" ]
   Fields = [
-    """({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ) \S+ """,
+    """({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ) \S+ Skyformation -""",
     """([^\|]{0,2000}\|){5}({activity}[^\|]{1,2000})""",
     """\Wsuser=({user}.+?)\s{1,100}(\w+=|$)""",
     """\Wsuser=({user_email}[^@\s;]{1,2000}?@[^@\s;]{1,2000})\s{0,100}(\w+=|$)""",

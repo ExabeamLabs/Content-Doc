@@ -21,10 +21,9 @@ raw-1102 = {
     """Hostname":"({host}[^"]{1,2000})"""",
     """({event_code}1102)""",
     """({event_name}The audit log was cleared)""",
-    """\s{1,100}Account Name:\s{0,100}({user}[^:]{1,2000}?)\s{1,100}Domain""",
+    """\s{1,100}Account Name:\s{1,100}({user}[^:]{1,2000}?)\s{1,100}Domain""",
     """\s{1,100}Domain Name:\s{1,100}({domain}[^\s]{1,2000})""",
-    """\s{1,100}Domain Name:\s{0,100}({domain}[^:]{1,2000}?)\s{1,100}Logon""",
-    """\s{1,100}Logon ID:\s{0,100}({logon_id}[^\s"]{1,2000})""",
+    """\s{1,100}Logon ID:\s{1,100}({logon_id}[^\s]{1,2000})""",
   ]
   DupFields = [ "host->dest_host" 
 }

@@ -5,10 +5,7 @@ Name = cef-microsoft-dns-query
   DataType = "dns-query"
   Conditions = [ """CEF:""", """destinationServiceName =Office 365""", """DNS query""", """Run command:""" ]
   Fields = ${MSParserTemplates.cef-azure-app-activity-1.Fields}[
-    """<b>DNS query</b> <b>({query}[^\n]{1,2000})</b>""",
-    """"SourcePort","value":"({src_port}\d{1,2000})"""",
-    """"DestinationPort","value":"({dest_port}\d{1,2000})""""
-
+    """<b>DNS query</b> <b>({query}.+?)</b>""",
   ]
 
 cef-azure-app-activity-1 = {
@@ -23,7 +20,7 @@ cef-azure-app-activity-1 = {
     """\Wdvchost=(?:Unknown|Personal|({host}[\w\-.]{1,2000}))\s{1,100}\w+=""",
     """act=({activity}[^\s]{1,2000})\s{1,100}(\w+=|$)""",
     """\Wrt=({time}\d{1,100})""",
-    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z) \S+ """,
+    """({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z) \S+ Skyformation""",
     """\Wduser=(anonymous|Unknown|email|({user_email}[^@=]{1,2000}@({email_domain}[^@=]{1,2000}?))|({user}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wsuser=(anonymous|Unknown|email|({user_email}[^@=]{1,2000}@({email_domain}[^@=]{1,2000}?))|({user}[^=]{1,2000}?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Woutcome=({outcome}[^\s]{1,2000})\s{1,100}(\w+=|$)""",

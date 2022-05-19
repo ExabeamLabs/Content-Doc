@@ -24,11 +24,9 @@ Name = fortinet-network-connection
     """\Wsentpkt=({packets_sent}\d{1,100})""",
     """policyid=({policy_id}\d{1,100})"""
     """\Wproto=({protocol}\d{1,100})""",
-    """\Wservice="{0,20}({protocol}[^"\/]{1,2000})""",
+    """\Wservice="{0,20}({protocol}[^"]{1,2000})""",
     """\Wsrcintfrole="{1,20}(undefined|({src_interface_role}[^"]{1,2000}))"{1,20}""",
-    """\Wdstintfrole="{1,20}(undefined|({dest_interface_role}[^"]{1,2000}))"{1,20}""",
-    """\Wsrccountry="(Reserved|({src_country}[^"]{1,2000}))"""",
-    """\Wdstcountry="(Reserved|({dest_country}[^"]{1,2000}))""""
+    """\Wdstintfrole="{1,20}(undefined|({dest_interface_role}[^"]{1,2000}))"{1,20}"""
   ]
   DupFields = [ "action->outcome" ]
 
