@@ -33,6 +33,29 @@ forcepoint-template = {
     """\sproto=({protocol}.+?)\s{0,100}\w+=""",
     ]
  },
+ forcepoint-template-1= {
+  Vendor = Forcepoint
+  Product = Forcepoint NGFW
+  Lms = Splunk
+  TimeFormat = "MMM dd yyyy HH:mm:ss"
+  Fields=[
+    """\Wrt=({time}\w{3}\s\d\d\s\d\d\d\d\s\d\d:\d\d:\d\d)""",
+    """exabeam_host=({host}[\w\-.]{1,2000})""",
+    """dvchost=({host_ip}[A-Fa-f\d:.]{1,2000})""",
+    """act=({action}[^=]{1,2000})\s\w{1,100}=""",
+    """src=({src_ip}[A=Fa-f\d:.]{1,2000})""",
+    """dst=({dest_ip}[A=Fa-f\d:.]{1,2000})""",
+    """spt=({src_port}\d{1,1000})""",
+    """dpt=({dest_port}\d{1,1000})""",
+    """proto=({protocol}[^=]{1,2000}?)\s\w{1,100}=""",
+    """CEF:([^|]{0,2000}\|){4}({event_code}[^|]{1,2000}?)\|({event_name}[^|]{1,2000})\|""",
+    """msg=({additional_info}[^"]{1,2000}?)\s{1,100}\w{1,100}=""",
+    """\Wout=({bytes_out}\d{1,100})""",
+    """\Win=({bytes_in}\d{1,100})""",
+    """deviceInboundInterface=({src_interface}[^=]{1,2000})\s\w{1,100}=""",
+    """deviceOutboundInterface=({dest_interface}[^=]{1,2000})\s\w{1,100}="""
+    ]
+ }
  forcepoint-network-connection-template = {
   Vendor = Forcepoint
   Product = Forcepoint NGFW 

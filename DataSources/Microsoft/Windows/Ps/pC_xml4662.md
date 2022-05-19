@@ -24,6 +24,7 @@ Name = xml-4662
     """<Data Name(\\)?='Properties'>(-|({properties}[^<]{1,2000}?))\s{0,100}<""",
     """<Keyword>({outcome}[^<]{1,2000})<"""
   ]
+   DupFields = ["host-> dest_host"]
 
 
 }

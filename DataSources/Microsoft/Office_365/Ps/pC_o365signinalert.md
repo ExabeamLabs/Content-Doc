@@ -7,7 +7,7 @@ Name = o365-signin-alert
   Lms = Direct
   DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions= [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName =Office 365""", """"riskEventType":"AnonymousIpRiskEvent"""" ]
+  Conditions= [ """destinationServiceName =Office 365""", """"riskEventType":"AnonymousIpRiskEvent"""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
     """"riskEventDateTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",

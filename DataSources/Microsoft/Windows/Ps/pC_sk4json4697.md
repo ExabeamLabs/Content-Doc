@@ -3,7 +3,7 @@
 {
 Name = sk4-json-4697
   DataType = "windows-privileged-access"
-  Conditions = [""""event_id":4697""", """|Skyformation""", """Microsoft-Windows-Security-Auditing""", """A service was installed in the system"""]
+  Conditions = [""""event_id":4697""", """"provider_name":"Microsoft-Windows-Security-Auditing""", """A service was installed in the system""", """ cs6="""]
   Fields = ${WinParserTemplates.json-windows-events-1.Fields}[
     """({event_name}A service was installed in the system)""",
     """"{1,20}ServiceType"{1,20}:"{1,20}({service_type}[^"]{1,2000})""",
@@ -20,7 +20,7 @@ json-windows-events-1 = {
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
-    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]{1,2000}\sSkyformation""",
+    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]{1,2000}\s""",
     """"{1,20}created"{1,20}:"{1,20}({time}[^"]{1,2000})""",
     """requestClientApplication=({app}[^=]{1,2000}?)\s\w+=""",
     """({event_name}An account was logged off)""",

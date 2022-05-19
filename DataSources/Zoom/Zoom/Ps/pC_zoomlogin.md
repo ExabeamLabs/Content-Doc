@@ -7,7 +7,7 @@ Name = zoom-login
   Lms = Direct
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """|Skyformation|""", """"type":"Sign in"""", """destinationServiceName =Zoom""" ]
+  Conditions = [ """"type":"Sign in"""", """destinationServiceName =Zoom""" ]
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """\WdestinationServiceName =({app}.+?)(\s{1,100}\w+=|\s{0,100}$)""",

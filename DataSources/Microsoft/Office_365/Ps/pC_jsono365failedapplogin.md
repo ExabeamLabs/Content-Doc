@@ -7,7 +7,7 @@ Name = json-o365-failed-app-login
   Lms = Splunk
   DataType = "failed-app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
-  Conditions = [ """CEF:""", """|skyformation|""", """failed to login""", """"userPrincipalName":"""" ]
+  Conditions = [ """"appDisplayName":""", """failed to login""", """"userPrincipalName":"""" ]
   Fields = [
     """exabeam_host=(.+?@\s{0,100})?({host}[^\s]{1,2000})""",
     """"userDisplayName":"({user_fullname}[^"]{1,2000})""",

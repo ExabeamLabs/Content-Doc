@@ -17,8 +17,8 @@ Name = lieberman-erpm
     """"(sSystemName|TargetSystem)\\"\svalue=\\"({dest_host}[^"]{1,2000})\\"""",  
     """"AccountTargetName\\"\svalue=\\"({account}[^"]{1,2000})\\"""",
     """sOriginatingAccount=\\"(({domain}[^\\"]{1,2000}?)\\+)?({user}[^"]{1,2000})\\"""",
-    """sLoginName =\\"({target_user}[^"]{1,2000})\\"""",
-    """"AccountToElevate\\"\svalue=\\"({target_user}[^"]{1,2000})\\"""",
+    """sLoginName =\\"(({target_domain}[^\\"]{1,2000})\\{1,20})?({target_user}[^"]{1,2000})\\"""",
+    """"AccountToElevate\\"\svalue=\\"(({target_domain}[^\\"]{1,2000})\\{1,20})?({target_user}[^"]{1,2000})\\"""",
     """ElevationGroup\\"\svalue=\\"({privileges}[^"]{1,2000})\\"""",
     """sEventType=\\"({log_type}[^"]{1,2000})\\""""
   ]

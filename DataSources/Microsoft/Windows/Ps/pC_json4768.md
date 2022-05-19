@@ -14,7 +14,7 @@ Name = json-4768
       """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """"EventReceivedTime":\s{0,100}({time}\d{1,100})""",
       """"timestamp":\s{0,100}({time}\d{1,100})""",
-      """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]{1,2000}\sSkyformation""",
+      """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]{1,2000}\s""",
       """"time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)"""",
       """"(Hostname|MachineName|(?:winlog\.)?computer_name)":"({host}[^"]{0,2000})""",
       """({event_code}4768)""",

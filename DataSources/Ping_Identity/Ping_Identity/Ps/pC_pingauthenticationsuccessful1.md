@@ -3,11 +3,14 @@
 {
 Name = ping-authentication-successful-1
   DataType = "authentication-successful"
-  Conditions = [ """"source":"PINGID"""",""""type":"user"""",""""status":"POLICY"""",""""message":""",""""resources":""",""""client":""" ]
+  Conditions = [ """"source":"PINGID"""",""""type":"user"""",""""status":"POLICY"""",""""message":""",""""resources":""",""""result":{""" ]
   Fields = ${PingParserTemplates.ping-authentication_events.Fields}[
     """"status":"({outcome}POLICY)""",
-    """IP Address:\s{0,100}({src_ip}[A-Fa-f\d.:]{1,2000})""",
-    """Accessing Device UserAgent:\s{0,100}(N\/A|({user_agent}[^:]{1,2000}))\\[nt]"""
+    """Authentication IP:\s{0,100}({src_ip}[A-Fa-f\d.:]{1,2000})""",
+    """Accessing Device UserAgent:\s{0,100}(N\/A|({user_agent}[^:]{1,2000}))\\[nt]""",
+    """Accessing Device OS:\s{0,100}({os}[^:]{1,2000}?)(\\?[\sn])Accessing Device Browser:""",
+    """Accessing Device Browser:\s{0,100}({browser}[^:]{1,2000}?)(\\?[\sn])Time since last Authentication from Office:""",
+    """Device Model:\s{0,100}(N\/A|({device}[^:]{1,2000}?))(\\?[\sn])Device Lock Enabled:""",
   ]
 
 ping-authentication_events = {

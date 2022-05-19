@@ -3,7 +3,7 @@
 {
 Name = cc-pulsesecure-password-restriction-passed
   DataType = "authentication-successful"
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """"PulseSecure:"""", """Password realm restrictions successfully passed""" ]
+  Conditions = [ """"host":""", """"PulseSecure:"""", """Password realm restrictions successfully passed""" ]
   Fields = ${JuniperParserTemplates.cef-pulsesecure-vpn-events.Fields} [
     """Password realm restrictions successfully passed for\s{1,100}({user}[^\/]{1,2000})?\/({realm}[^\s]{1,2000}) , with certificate \'({safe_value}[^\']{1,2000})\'""",
     """\'CN\\=({user_email}[^@',]{1,2000}@[^,']{1,2000})"""

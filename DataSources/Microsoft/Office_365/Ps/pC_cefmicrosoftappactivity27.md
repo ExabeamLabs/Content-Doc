@@ -3,7 +3,7 @@
 {
 Name = cef-microsoft-app-activity-27
   Product = Office 365
-  Conditions= [ """CEF:""", """destinationServiceName =Office 365""", """"MemberRoleChanged""" ]
+  Conditions= [ """destinationServiceName =Office 365""", """"MemberRoleChanged""" ]
 
 cef-microsoft-app-activity = {
   Vendor = Microsoft
@@ -15,7 +15,7 @@ cef-microsoft-app-activity = {
     """activityDate":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """env_time":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """"CreationTime\\*"{1,20}:[\s\\]{0,2000}"{1,20}({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100})""",
-    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z) [\w\-.]{1,2000} Skyformation""",
+    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z) [\w\-.]{1,2000} """,
     """"OriginatingServer":"({host}\w+)\s{0,100}(\([^\)]{1,2000}?\))?(\\r\\n)?"""",
     """CEF:([^\|"]{0,2000}\|){5}({activity}[^\|"]{1,2000})""",
     """\sflexString1=({activity}[^=]{1,2000}?)\.?\s{1,100}(\w+=|$)""",
@@ -33,7 +33,8 @@ cef-microsoft-app-activity = {
     """\ssourceServiceName =({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """"User-Agent\\?"{1,20}:\\?"{1,20}({user_agent}[^"\\]{1,2000})"""
     """"UserAgent":"({user_agent}[^"]+)"""",
-    """"ipAddress":"({dest_ip}[A-Fa-f.:\d]{1,2000})""""
+    """"ipAddress":"({dest_ip}[A-Fa-f.:\d]{1,2000})"""",
+    """"SourceFileName":"({src_file_name}[^",]{1,2000})"""
   
 }
 ```

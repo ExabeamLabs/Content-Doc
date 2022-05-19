@@ -19,7 +19,8 @@ Name = checkpoint-vpn-logout
     """\Wuser:"({user_firstname}[\w\s]{1,2000}[^\s,])\s{1,100}({user_lastname}[^\s,]{1,2000})\s{0,100}\(({account}.+?)\)""",
     """\Wifdir:"({direction}[^"]{1,2000})""",
     """\suser_dn:"{1,20}({user_ou}[^"]{1,2000})""",
-    """\W(user|src_user_name|dst_user_name):"{1,20}.+?\(({user}[^)]{1,2000})\)"""
+    """\W(user|src_user_name|dst_user_name):"{1,20}.+?\(({user}[^)]{1,2000})\)""",
+    """\W(user|src_user_name|dst_user_name):"(?:[^_"\s]{1,2000}_)?({user}[^"\s]{1,2000}?)\s{0,100}""""
   ]
   DupFields = [ "action->event_name" ]
 

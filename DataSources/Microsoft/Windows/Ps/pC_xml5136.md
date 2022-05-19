@@ -17,7 +17,8 @@ Name = xml-5136
     """<Data Name ='AttributeLDAPDisplayName'>\s{0,100}({attribute}[^<]{1,2000}?)\s{0,100}</Data>""",
     """<Data Name ='ObjectClass'>\s{0,100}({object_class}[^<]{1,2000}?)\s{0,100}</Data>""",
     """<Data Name ='ObjectDN'>\s{0,100}({object_dn}[^<]{1,2000}?)\s{0,100}</Data>""",
-    """({event_code}5136)"""
+    """({event_code}5136)""",
+    """<Message>({event_name}A directory service object was modified)"""
     ]
 
 

@@ -7,7 +7,7 @@ Name = cef-salesforce-app-login
   Lms = ArcSight
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [ """SkyFormation Cloud Apps Security|""", """|login-success|""", """Sales Cloud""" ]
+  Conditions = [ """|login-success|""", """destinationServiceName =Sales Cloud""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",  
     """LoginTime\\=({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",

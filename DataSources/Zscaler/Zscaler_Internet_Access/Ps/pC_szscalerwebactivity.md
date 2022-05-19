@@ -3,6 +3,9 @@
 {
 Name = s-zscaler-web-activity
   Conditions = [ """dlpengine=None""", """vendor=Zscaler""", """event_id=""", """url=""" ]
+  Fields = ${ZscalerParserTemplates.s-zscaler-web-activity.Fields}[
+    """({time}\d\d\d\d-\d\d-\d\d\d\d:\d\d:\d\d)\s{1,100}reason="""
+  ]
 
 s-zscaler-web-activity = {
   Vendor = Zscaler

@@ -3,7 +3,7 @@
 {
 Name = cc-pulsesecure-vpn-close
   DataType = "vpn-end"
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """"PulseSecure:"""", """ Closed connection to """, """ bytes read """, """ bytes written """ ]
+  Conditions = [ """"host":""", """"PulseSecure:"""", """ Closed connection to """, """ bytes read """, """ bytes written """ ]
   Fields = ${JuniperParserTemplates.cef-pulsesecure-vpn-events.Fields} [
     """Closed connection to (?:({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w.\-]{1,2000}))""",
     """\safter\s{1,100}({session_duration}\d{1,100})\s{1,100}seconds""",

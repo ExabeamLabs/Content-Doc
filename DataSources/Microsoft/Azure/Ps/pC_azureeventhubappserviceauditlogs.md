@@ -7,7 +7,7 @@ Name = azure-event-hub-app-service-audit-logs
   Lms = Splunk
   DataType = "app-login"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """destinationServiceName =Azure""","""Category":"AppServiceAuditLogs""" ]
+  Conditions = [ """destinationServiceName =Azure""","""Category":"AppServiceAuditLogs""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"time"{1,20}:"{1,20}({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{7}\w+)"""",

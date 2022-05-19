@@ -3,7 +3,7 @@
 {
 Name = cc-pulsesecure-vpn-resume
   DataType = "access-control"
-  Conditions = [ """CEF:""", """|Skyformation|SkyFormation Cloud Apps Security|""", """"PulseSecure:"""", """Session resumed from user agent '""" ]
+  Conditions = [ """"host":""", """"PulseSecure:"""", """Session resumed from user agent '""" ]
   Fields = ${JuniperParserTemplates.cef-pulsesecure-vpn-events.Fields} [
     """\- \[({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]\s{1,100}(Default Network|Root)::(({domain}[^\\]{1,2000})\\)?({user}[^\(]{1,2000})\(({realm}[^\)]{1,2000})?\)(\[({resource}[^\]]{1,2000})\])?"""
   ]

@@ -1,0 +1,12 @@
+Vendor: Gallagher
+=================
+### Product: [Access Control](../ds_gallagher_access_control.md)
+### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
+
+| Rules | Models | MITRE TTPs | Event Types | Parsers |
+|:-----:|:------:|:----------:|:-----------:|:-------:|
+|  13   |   8    |     2      |      2      |    2    |
+
+| Event Type | Rules    | Models    |
+| ---------- | ---- | ---- |
+| vpn-login  | <b>T1133 - External Remote Services</b><br> ↳ <b>SL-UA-F-VPN</b>: First VPN connection for service account<br> ↳ <b>AE-UA-F-VPN</b>: First VPN connection for user<br> ↳ <b>UA-UI-F</b>: First activity from ISP<br> ↳ <b>VPN-GsH-F</b>: First VPN connection from device for peer group<br> ↳ <b>VPN-GsH-A</b>: Abnormal VPN connection from device for peer group<br> ↳ <b>AE-GA-F-VPN-new</b>: First VPN connection for group of new user<br> ↳ <b>UA-UC-new</b>: Abnormal country for user by new user<br> ↳ <b>UA-GC-new</b>: Abnormal country for group by new user<br> ↳ <b>UA-OC-new</b>: Abnormal country for organization by new user<br> ↳ <b>UA-UC-Suspicious</b>: Activity from suspicious country<br> ↳ <b>UA-UC-Two</b>: Activity from two different countries<br> ↳ <b>UA-UC-Three</b>: Activity from 3 different countries<br> ↳ <b>PA-VPN-01</b>: VPN login after badge access<br><br><b>T1078 - Valid Accounts</b><br> ↳ <b>SL-UA-F-VPN</b>: First VPN connection for service account<br> ↳ <b>AE-UA-F-VPN</b>: First VPN connection for user<br> ↳ <b>UA-UI-F</b>: First activity from ISP<br> ↳ <b>UA-UC-new</b>: Abnormal country for user by new user<br> ↳ <b>UA-GC-new</b>: Abnormal country for group by new user<br> ↳ <b>UA-OC-new</b>: Abnormal country for organization by new user<br> ↳ <b>UA-UC-Suspicious</b>: Activity from suspicious country<br> ↳ <b>UA-UC-Two</b>: Activity from two different countries<br> ↳ <b>UA-UC-Three</b>: Activity from 3 different countries |  • <b>PA-VPN-01</b>: Users who vpn-in after badge access<br> • <b>UA-OC</b>: Countries for organization<br> • <b>UA-GC</b>: Countries for peer groups<br> • <b>UA-UC</b>: Countries for user activity<br> • <b>AE-GA</b>: All activity for peer groups<br> • <b>VPN-GsH</b>: VPN endpoints in this peer group<br> • <b>UA-UI-new</b>: ISP of users during application activity<br> • <b>AE-UA</b>: All activity for users |

@@ -14,7 +14,7 @@ Name = vmware-id-manager-obj-access
     """"source":"({log_source}[^"]{1,2000})"""",
     """"sourcetype":"({source_type}[^"]{1,2000})"""",
     """\d{1,100}Z\s{0,100}({host}[^\s]{1,2000})\s""",
-    """filepath=\\"({filepath}[^"]{1,2000})\\"""",
+    """filepath=\\"({file_path}[^"]{1,2000})\\"""",
     """Thread-({thread_id}\d{1,100})""",
     """CN=(Not Available|({user_fullname}\w+(\s{1,100}\w+)+)|({user}[^,]{1,2000})),(?:OU|DC|CN)=""",
     """product=\\*"({app}[^\\"=:]{1,2000})\\*"""",

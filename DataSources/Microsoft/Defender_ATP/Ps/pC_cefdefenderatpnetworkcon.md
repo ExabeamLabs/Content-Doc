@@ -3,7 +3,7 @@
 {
 Name = cef-defender-atp-network-con
   DataType = "network-connection"
-  Conditions = ["""CEF""", """SkyFormation Cloud Apps Security""", """requestClientApplication=""", """AdvancedHunting-DeviceNetworkEvents"""]
+  Conditions = [""""ActionType":""", """requestClientApplication=""", """AdvancedHunting-DeviceNetworkEvents"""]
   Fields = ${MicrosoftParserTemplates.cef-defender-atp.Fields} [
      """RemoteUrl":\s{0,100}"(|(\w+:\/*)?({web_domain}([^"]{1,2000})))"""",
      """DeviceName":\s{0,100}"({dest_host}({host}[^"\.]{1,2000})?[^"]{1,2000})""",

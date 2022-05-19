@@ -11,7 +11,7 @@ Name = raw-4624
     Fields = [
       """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
       """exabeam_time=({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)""",
-      """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+      """({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d)\s({host}[\w\-.]{1,2000})?""",
       """\d\d:\d\d:\d\d(\+|-)\d\d:\d\d\s({host}[^\s]{1,2000})""",
       """(?i)<\d{1,100}>\s{0,100}\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(am|pm|({host}[\w.\-]{1,2000}))""",
       """({event_name}An account was successfully logged on)""",

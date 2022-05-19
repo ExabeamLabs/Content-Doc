@@ -37,7 +37,7 @@ s-aws-cloudtrail-activity-json = {
     """"{1,20}accountId"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({resource}[^"].+?))"{1,20}\s{0,100}[,\]\}]""",
     """"requestParameters"\s{0,100}:[^\}]{1,2000}?"instanceId"\s{0,100}:\s{0,100}"({request_id}[^"]{1,2000})",("attribute"\s{0,100}:\s{0,100}"({request_action}[^"]{1,2000})")?""",
     """"awsRegion"\s{0,100}:\s{0,100}"({region}[^"]{1,2000})"""",
-    #"""userIdentity.+?type\\?":\s{0,100}\\?"({user_type}[^"]{1,2000}?)\\?"""",
+    #"""ext_userIdentity_type=({account_type}.+?)\s{0,100}\w+=""",
     """"userIdentity".*?"type":"({account_type}[^"]{1,2000}?)"""",
     """userIdentity.+?type\\?":\s{0,100}\\?"({user_type}[^"]{1,2000}?)\\?"""",
     """assumed-role"[^:]{1,2000}?:role\/({role}[^"]{1,2000})""",

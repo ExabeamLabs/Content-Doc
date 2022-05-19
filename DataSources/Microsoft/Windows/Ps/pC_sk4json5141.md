@@ -3,7 +3,7 @@
 {
 Name = sk4-json-5141
   DataType = "ds-access"
-  Conditions = [""""event_id":5141""", """|Skyformation""", """Microsoft-Windows-Security-Auditing""", """"A directory service object was deleted"""]
+  Conditions = [""""event_id":5141""", """"provider_name":"Microsoft-Windows-Security-Auditing""", """"A directory service object was deleted""", """ cs6="""]
   Fields = ${WinParserTemplates.json-windows-events-1.Fields}[
     """({event_name}A directory service object was deleted)""",
     """"{1,20}ObjectClass"{1,20}:"{1,20}({object_class}[^"]{1,2000})""",
@@ -20,7 +20,7 @@ json-windows-events-1 = {
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
-    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]{1,2000}\sSkyformation""",
+    """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ)\s[^\s]{1,2000}\s""",
     """"{1,20}created"{1,20}:"{1,20}({time}[^"]{1,2000})""",
     """requestClientApplication=({app}[^=]{1,2000}?)\s\w+=""",
     """({event_name}An account was logged off)""",
