@@ -4,7 +4,7 @@ Product: Security Cloud
 -----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  821  |  189   |    136     |     17      |   17    |
+|  820  |  188   |    136     |     17      |   17    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

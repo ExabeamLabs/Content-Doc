@@ -4,7 +4,7 @@ Product: CyberArk Vault
 -----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  698  |  135   |    132     |     15      |   15    |
+|  697  |  134   |    132     |     15      |   15    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

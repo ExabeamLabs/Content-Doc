@@ -4,7 +4,7 @@ Product: DTEX InTERCEPT
 -----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  634  |  114   |    131     |      9      |    9    |
+|  633  |  113   |    131     |      9      |    9    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

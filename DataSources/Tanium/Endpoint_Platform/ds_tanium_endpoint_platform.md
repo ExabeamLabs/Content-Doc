@@ -4,7 +4,7 @@ Product: Endpoint Platform
 --------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  580  |   88   |    119     |      5      |    5    |
+|  579  |   87   |    119     |      5      |    5    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
