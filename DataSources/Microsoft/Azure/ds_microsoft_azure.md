@@ -4,7 +4,7 @@ Product: Azure
 --------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  874  |  209   |    141     |     32      |   32    |
+|  873  |  208   |    141     |     32      |   32    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

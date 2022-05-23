@@ -5,7 +5,7 @@ Vendor: Exabeam
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   3   |   0    |     1      |      1      |    1    |
+|   3   |   0    |     1      |      4      |    4    |
 
 | Event Type   | Rules    | Models |
 | ---- | ---- | ------ |

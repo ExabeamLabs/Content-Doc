@@ -1,13 +1,13 @@
 #### Parser Content
 ```Java
 {
-Name = exa-app-activity-4
+Name = exa-app-activity-1
   DataType = "app-activity"
-  Conditions = [ """"Exabeam Audit Event"""", """"event_type":"app-activity"""", """"activity":"Threat hunter search""" ]
+  Conditions = [ """"Exabeam Audit Event"""", """"event_type":"app-activity"""", """"activity":"LDAP group modified"""" ]
 
 exa-events = {
   Vendor = Exabeam
-  Product = Exabeam DL
+  Product = Exabeam Advanced Analytics
   Lms = Exabeam
   TimeFormat = "epoch"
   Fields = [
