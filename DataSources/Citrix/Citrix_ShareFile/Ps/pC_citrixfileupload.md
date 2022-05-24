@@ -6,7 +6,7 @@ Name = citrix-file-upload
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = ["""destinationServiceName =Citrix ShareFile""", """"Activity":"Upload"""", """"Email":"""]
   Fields = ${CitrixParserTemplates.citrix-app-activity.Fields}[
-    """"ItemName"{1,20}:"{1,20}({file_path}({file_parent}[^"]{0,2000}?[\/]{1,20})?({file_name}[^\/"]{1,2000}?(\.({file_ext}[^\/"]{1,2000}))?))""""
+    """"ItemName"{1,20}:"{1,20}({file_path}({file_parent}[^"]{0,2000}[\/]{1,20})\s{0,100}({file_name}[^\/"]{1,2000}(\.({file_ext}[^\/"]{1,2000}))))""""
   ]
 
 citrix-app-activity = {
