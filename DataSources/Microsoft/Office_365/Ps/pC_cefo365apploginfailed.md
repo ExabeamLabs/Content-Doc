@@ -8,6 +8,7 @@ Name = cef-o365-app-login-failed
   Fields = ${MSParserTemplates.cef-o365-app-login-2.Fields} [
     """"ResultStatusDetail":"((?i)Success|({failure_reason}[^"]{1,2000}))"""",
     """"LogonError":"({failure_reason}[^"]{1,2000})""",
+    """"Operation":"UserLogin({outcome}[^"]{1,2000})"""
   ]
 
 cef-o365-app-login-2 = {
@@ -22,7 +23,7 @@ cef-o365-app-login-2 = {
       """"UserId":"({user_email}[^@\s"]{1,2000}@[^@\s\."]{1,2000}\.[^\s",]{1,2000})"""",
       """"ClientIP":"\[?({src_ip}[A-Fa-f:\d.]{1,2000}?)(\]:({src_port}\d{1,100}))?"""",
       """"Operation":"({event_name}[^"]{1,2000})""",
-      """"ResultStatus":"({outcome}[^"]{1,2000})"""",
+      """"ResultStatus":"({outcome}[^"]{1,2000})"""", 
       """destinationServiceName =({app}Office 365)""",
       """"Name":"UserAgent","Value":"({user_agent}[^"]{1,2000}?)\s{0,100}""""
     
