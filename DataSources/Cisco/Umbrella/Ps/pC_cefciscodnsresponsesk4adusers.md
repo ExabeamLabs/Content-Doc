@@ -4,7 +4,7 @@
 Name = cef-cisco-dns-response-sk4-ad-users
   Conditions = ["""destinationServiceName =Cisco Umbrella""", """"queryType":"""", """"responseCode":"""", """"mostGranularIdentityType":"AD Users""""]
   Fields=${CiscoParsersTemplates.cef-cisco-dns-response-sk4-src-template.Fields}[
-    """"mostGranularIdentity":"({user_fullname}[^\("]{1,2000}?)(?:\s{0,100}\(\w+\)\s{0,100})?(\s{1,100}\((({user_email}[^@"]{1,2000}@[^@"]{1,2000})|({user}[^"]{1,2000}))\))"""",
+    """"mostGranularIdentity":"({user_fullname}[^\("]{1,2000}?)(?:\s{0,100}\(\w+\)\s{0,100})?\s{1,100}((\([^\)]{1,2000}\))\s\(|\()(({user_email}[^@"]{1,2000}@[^@"]{1,2000})|({user}[^"]{1,2000}))\)""""
   ]
   DupFields = [ "host->src_host" ]
 

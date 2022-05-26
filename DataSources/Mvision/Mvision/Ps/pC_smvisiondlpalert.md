@@ -20,7 +20,7 @@ Name = s-mvision-dlp-alert
     """\WFileSize=({bytes}\d{1,100})""",
     """\WcontentItemId="({target}[^"]{1,2000})""",
     """\WcontentItemName ="({file_name}[^"]{1,2000})""",
-    """\WinstanceName ="({src_host}[^"]{1,2000})""",
+    """\WinstanceName ="({src_host}[\w.-]{1,2000})"""",
     """\Wresponse=\[({outcome}[^\[\]]{1,2000}?)\]""",
     """\W({additional_info}totalMatchCount=[^,]{1,2000})""",
   ]

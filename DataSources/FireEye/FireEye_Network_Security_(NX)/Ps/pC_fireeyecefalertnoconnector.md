@@ -17,7 +17,7 @@ Name = fireeye-cef-alert-no-connector
     """\ssrc=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sshost=({dest_host}[^\s]{1,2000})""",
     """\sfilePath=(?:({malware_url}[^\s.]{1,2000}\.[^\/\s]{1,2000}\/[^=]{1,2000}?)|({malware_file_name}[^=]{1,2000}?))\s\w+=""",
-    """\scs1Label=sname cs1=({alert_name}[^\s]{1,2000})""",
+    """\scs1Label=sname cs1=({alert_name}[^=]{1,2000}?)\s\w+=""",
     """\scs5Label=cncHost cs5=(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[^\s]{1,2000}))""",
     """\srequest=({malware_url}[^\s]{1,2000})""",
     """\sdst=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
