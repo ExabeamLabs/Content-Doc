@@ -30,7 +30,7 @@ cef-microsoft-app-activity = {
     """\sflexString1=({activity}[^=]{1,2000}?)\.?\s{1,100}(\w+=|$)""",
     """"ObjectId":"(Unknown|Not Available|({object}[^"]{1,2000}?))\s{0,100}"""",
     """\sfname=\s{0,100}(N\/A|({object}[^=]{1,2000}?))\s{0,100}(\w+=|$)""",
-    """\sfname=\s{0,100}(N\/A|({file_name}[^=]{1,2000}?))\s{1,100}(\w+=|$)""",
+    """((fileType=(n/a|mail|calendar-event)[^\n]{1,2000}?\sfname=\s{0,100}(N\/A|({subject}[^=]{1,2000}?)))|(fileType=group[^\n]{1,2000}?\sfname=\s{0,100}(N\/A|({group_name}[^=]{1,2000}?)))|\sfname=\s{0,100}(N\/A|({file_name}[^=]{1,2000}?)))\s{1,100}(\w+=|$)""",
     """\Wmsg=({additional_info}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\ssuser=((\w+?_)?(\w+-)?\w+-\w+-\w+-\w+|(Unknown|Microsoft Intune|Microsoft Teams Services|Microsoft Online Services|Office 365 SharePoint Online|anonymous|EMPTY\.*|({user_email}[^@\s"]{1,2000}@[^@\s\."]{1,2000}\.[^\s",]{1,2000})|(({domain}[^\\\s@]{1,2000})\\)?(system|({user}[^@\s]{1,2000}))|(Sync Client|Office365 Backend Process|Device Registration Service|({user_fullname}[\w,\s]{1,2000}?))))\s{1,100}(\w+=|$)""",
     """"{1,20}UserId"{1,20}:"{1,20}({user_email}[^@\s"]{1,2000}?@({email_domain}[^@\s\."]{1,2000}\.[^\s",]{1,2000}))"{1,20}""",

@@ -18,7 +18,7 @@ Name = s-xml-1102
     """<Security UserID(\\)?='({user_sid}[^']{1,2000})""",
     """<Execution ProcessID(\\)?='({process_id}[^']{1,2000})""",
     """<EventID[^<]{0,2000}?>({event_code}\d{1,100})""",
-    """<Keyword>({outcome}[^<]{1,2000})</Keyword>""",
+    """<Keyword>(Classic|({outcome}[^<]{1,2000}))</Keyword>""",
     """<Data Name(\\)?='ProcessName'>({process}({directory}[^<>]{0,2000}?[\\\/]{1,2000})?({process_name}[^<>\\\/]{1,2000}))</Data>""",
     """<Data Name ='TargetProcessName'>({target_process}({target_directory}[^<>]{0,2000}?[\\\/]{1,2000})?({target_process_name}[^<>\\\/]{1,2000}))</Data>""",
     """<Data Name(\\)?='ProcessId'>({pid}[^<]{1,2000}?)\s{0,100}</Data>""",

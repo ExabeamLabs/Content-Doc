@@ -27,7 +27,9 @@ cef-netskope-web = {
     """"src_location":"({src_location}[^"]{1,2000})""",
     """"src_country":"({src_country}[^"]{1,2000})""",
     """"os":"({os}[^"]{1,2000})""",
-    """"referer":"({referrer}[^"]{1,2000})"""
+    """"referer":"({referrer}[^"]{1,2000})""",
+    """"file_size":({bytes}\d{1,100})""",
+    """"activity":"({activity}[^"]{1,2000})""""
   
 }
 ```
