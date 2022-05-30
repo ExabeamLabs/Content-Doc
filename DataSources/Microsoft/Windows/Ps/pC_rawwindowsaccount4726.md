@@ -24,10 +24,10 @@ Name = raw-windows-account-4726
       """"dhn":"({host}[^-"]{1,2000})""",
       """Computer(\w+)?["\s]{0,2000}(:|=)\s{0,100}"?({host}.+?)("|\s)""",
       """"system_name":"({host}[^"]{1,2000})"""",
-      """Subject:\s{1,100}Security ID:\s{1,100}({user_sid}.+?)\s{1,100}Account Name:\s{1,100}(?=\w)({user}.+?)\s{1,100}Account Domain:\s{1,100}(?=\w)({domain}.+?)\s{1,100}Logon ID""",
-      """Logon ID:\s{1,100}({logon_id}[^\s]{1,2000})""",
-      """Target Account.+?Security ID:\s{1,100}(%\{)?({target_user_sid}[\w\d\-]{1,2000}?)\}?\s{1,100}Account Name:"""
-      """Target Account.+?Account Name:\s{1,100}({target_user}.+?)\s{1,100}Account Domain:\s{1,100}({target_domain}.+?)\s{1,100}Additional"""
+      """Subject:\s{1,100}Security ID:\s{0,100}({user_sid}[^:]{1,2000}?)\s{1,100}Account Name:\s{0,100}(?=\w)({user}[^:]{1,2000}?)\s{1,100}Account Domain:\s{0,100}(?=\w)({domain}[^:]{1,2000}?)\s{1,100}Logon ID""",
+      """Logon ID:\s{0,100}({logon_id}[^\s]{1,2000})""",
+      """Target Account.+?Security ID:\s{0,100}(%\{)?({target_user_sid}[\w\d\-]{1,2000}?)\}?\s{1,100}Account Name:"""
+      """Target Account.+?Account Name:\s{0,100}({target_user}[^:]{1,2000}?)\s{1,100}Account Domain:\s{0,100}({target_domain}[^:]{1,2000}?)\s{1,100}Additional"""
     ]
     DupFields=[ "host->dest_host", "target_user->account_name" ]
   
