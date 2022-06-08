@@ -1100,7 +1100,16 @@ Models
 There are no new models in this release.
 
 #### Updated Models
-There are no updated models in this release.
+* [A-NET-HCountry-Outbound](https://github.com/ExabeamLabs/Content-Doc/search?q=A-NET-HCountry-Outbound) &#8211; Outbound country per asset
+
+* [A-NET-OCountry-Outbound](https://github.com/ExabeamLabs/Content-Doc/search?q=A-NET-OCountry-Outbound) &#8211; Outbound country per organization
+
+* [EM-Gcountry](https://github.com/ExabeamLabs/Content-Doc/search?q=EM-Gcountry) &#8211; Email Countries sent to by peer group
+
+* [EM-Ucountry](https://github.com/ExabeamLabs/Content-Doc/search?q=EM-Ucountry) &#8211; Email Countries sent to by user
+
+* [EM-country](https://github.com/ExabeamLabs/Content-Doc/search?q=EM-country) &#8211; Email Countries
+
 
 #### Deprecated Models
 There are no deprecated models in this release.
