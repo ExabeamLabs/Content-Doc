@@ -2385,7 +2385,50 @@ Models
 
 
 #### Updated Models
-There are no updated models in this release.
+* [A-NET-HCountry-Inbound](https://github.com/ExabeamLabs/Content-Doc/search?q=A-NET-HCountry-Inbound) &#8211; Inbound country per asset
+
+* [A-NET-HCountry-Outbound](https://github.com/ExabeamLabs/Content-Doc/search?q=A-NET-HCountry-Outbound) &#8211; Outbound country per asset
+
+* [A-NET-OCountry-Inbound](https://github.com/ExabeamLabs/Content-Doc/search?q=A-NET-OCountry-Inbound) &#8211; Origination country per organization
+
+* [A-NET-OCountry-Outbound](https://github.com/ExabeamLabs/Content-Doc/search?q=A-NET-OCountry-Outbound) &#8211; Outbound country per organization
+
+* [A-NET-ZCountry-Inbound](https://github.com/ExabeamLabs/Content-Doc/search?q=A-NET-ZCountry-Inbound) &#8211; Origination country per zone
+
+* [A-NET-ZCountry-Outbound](https://github.com/ExabeamLabs/Content-Doc/search?q=A-NET-ZCountry-Outbound) &#8211; Outbound country per zone
+
+* [A-NETF-HCountry-Outbound](https://github.com/ExabeamLabs/Content-Doc/search?q=A-NETF-HCountry-Outbound) &#8211; Failed outbound country per asset
+
+* [A-NETF-OCountry-Outbound](https://github.com/ExabeamLabs/Content-Doc/search?q=A-NETF-OCountry-Outbound) &#8211; Failed outbound country per organization
+
+* [A-NETF-ZCountry-Outbound](https://github.com/ExabeamLabs/Content-Doc/search?q=A-NETF-ZCountry-Outbound) &#8211; Failed outbound country per zone
+
+* [EM-EdC](https://github.com/ExabeamLabs/Content-Doc/search?q=EM-EdC) &#8211; Countries per Email Domain
+
+* [EM-Gcountry](https://github.com/ExabeamLabs/Content-Doc/search?q=EM-Gcountry) &#8211; Email Countries from/to peer group
+
+* [EM-Ucountry](https://github.com/ExabeamLabs/Content-Doc/search?q=EM-Ucountry) &#8211; Email Countries from/to user
+
+* [EM-country](https://github.com/ExabeamLabs/Content-Doc/search?q=EM-country) &#8211; Email Countries
+
+* [FA-UA-GC](https://github.com/ExabeamLabs/Content-Doc/search?q=FA-UA-GC) &#8211; Countries for peer groups file activities
+
+* [FA-UA-OC](https://github.com/ExabeamLabs/Content-Doc/search?q=FA-UA-OC) &#8211; Countries for organization file activities
+
+* [FA-UA-UC](https://github.com/ExabeamLabs/Content-Doc/search?q=FA-UA-UC) &#8211; Countries for user file activity
+
+* [UA-GC](https://github.com/ExabeamLabs/Content-Doc/search?q=UA-GC) &#8211; Countries for peer groups
+
+* [UA-OC](https://github.com/ExabeamLabs/Content-Doc/search?q=UA-OC) &#8211; Countries for organization
+
+* [UA-UC](https://github.com/ExabeamLabs/Content-Doc/search?q=UA-UC) &#8211; Countries for user activity
+
+* [WCA-Ucountry](https://github.com/ExabeamLabs/Content-Doc/search?q=WCA-Ucountry) &#8211; Web conference login countries for user
+
+* [WEB-OC](https://github.com/ExabeamLabs/Content-Doc/search?q=WEB-OC) &#8211; Web destination countries for org
+
+* [WEB-UC](https://github.com/ExabeamLabs/Content-Doc/search?q=WEB-UC) &#8211; Web destination countries for user
+
 
 #### Deprecated Models
 There are no deprecated models in this release.
