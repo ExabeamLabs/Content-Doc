@@ -1308,7 +1308,28 @@ Models
 There are no new models in this release.
 
 #### Updated Models
-There are no updated models in this release.
+* [A-NET-HCountry-Outbound](https://github.com/ExabeamLabs/Content-Doc/search?q=A-NET-HCountry-Outbound) &#8211; Outbound country per asset
+
+* [A-NET-OCountry-Outbound](https://github.com/ExabeamLabs/Content-Doc/search?q=A-NET-OCountry-Outbound) &#8211; Outbound country per organization
+
+* [APP-UOb](https://github.com/ExabeamLabs/Content-Doc/search?q=APP-UOb) &#8211; Application objects per user
+
+* [EM-EdC](https://github.com/ExabeamLabs/Content-Doc/search?q=EM-EdC) &#8211; Countries per Email Domain
+
+* [EM-GD](https://github.com/ExabeamLabs/Content-Doc/search?q=EM-GD) &#8211; Domains per group
+
+* [EM-Gcountry](https://github.com/ExabeamLabs/Content-Doc/search?q=EM-Gcountry) &#8211; Email Countries sent to by peer group
+
+* [EM-OD](https://github.com/ExabeamLabs/Content-Doc/search?q=EM-OD) &#8211; Domains per organization
+
+* [EM-UD](https://github.com/ExabeamLabs/Content-Doc/search?q=EM-UD) &#8211; Domains per user
+
+* [EM-Ucountry](https://github.com/ExabeamLabs/Content-Doc/search?q=EM-Ucountry) &#8211; Email Countries sent to by user
+
+* [EM-country](https://github.com/ExabeamLabs/Content-Doc/search?q=EM-country) &#8211; Email Countries
+
+* [FEM-UD](https://github.com/ExabeamLabs/Content-Doc/search?q=FEM-UD) &#8211; Failed Email Domains per User
+
 
 #### Deprecated Models
 There are no deprecated models in this release.
