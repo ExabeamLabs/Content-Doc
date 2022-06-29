@@ -11,6 +11,7 @@ Name = s-duo-app-login
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d(\+|\-)\d{1,100})""",
     """exabeam_host=({host}[^\s]{1,2000})""",
+    """"host":\s{0,20}"({host}[^"]{1,2000})"""",
     """"username":\s{0,100}"({user_fullname}[^"]{1,2000})""",
     """"username":\s{0,100}"({user_firstname}\S+)\s{1,100}({user_lastname}[^\s"\\]{1,2000})""",
     """"action":\s{0,100}"({activity}[^"]{1,2000})"""",

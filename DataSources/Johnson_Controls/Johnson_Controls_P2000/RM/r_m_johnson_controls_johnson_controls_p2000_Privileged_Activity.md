@@ -7,6 +7,6 @@ Vendor: Johnson Controls
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      1      |    1    |
 
-| Event Type     | Rules    | Models |
+| Event Type      | Rules    | Models |
 | ---- | ---- | ------ |
-| security-alert | <b>T1068 - Exploitation for Privilege Escalation</b><br> ↳ <b>ALERT-EXEC</b>: Security violation by Executive |        |
+| physical-access | <b>T1078 - Valid Accounts</b><br> ↳ <b>PA-DU</b>: Badge access by disabled user |        |

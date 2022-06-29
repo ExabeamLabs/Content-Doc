@@ -5,7 +5,7 @@ Vendor: Proofpoint
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  34   |   16   |     1      |      5      |    5    |
+|  34   |   16   |     1      |      4      |    4    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

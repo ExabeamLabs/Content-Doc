@@ -5,7 +5,7 @@ Vendor: HelpSystems
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     1      |      6      |    6    |
+|   1   |   0    |     1      |      7      |    7    |
 
 | Event Type | Rules    | Models |
 | ---------- | ---- | ------ |

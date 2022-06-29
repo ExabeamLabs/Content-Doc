@@ -5,7 +5,7 @@ Vendor: Dtex Systems
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  71   |   9    |     43     |      9      |    9    |
+|  71   |   9    |     43     |     11      |   11    |
 
 | Event Type      | Rules    | Models    |
 | ---- | ---- | ---- |

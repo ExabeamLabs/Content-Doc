@@ -5,7 +5,7 @@ Vendor: Forcepoint
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     2      |      5      |    5    |
+|   1   |   0    |     2      |      2      |    2    |
 
 | Event Type    | Rules    | Models |
 | ---- | ---- | ------ |

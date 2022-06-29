@@ -5,7 +5,7 @@ Vendor: Oracle
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  18   |   10   |     1      |      7      |    7    |
+|  18   |   10   |     1      |      6      |    6    |
 
 | Event Type     | Rules    | Models    |
 | ---- | ---- | ---- |

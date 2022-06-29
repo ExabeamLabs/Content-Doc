@@ -5,7 +5,7 @@ Vendor: Check Point
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   7   |   7    |     2      |     13      |   13    |
+|   7   |   7    |     2      |     14      |   14    |
 
 | Event Type | Rules    | Models    |
 | ---------- | ---- | ---- |

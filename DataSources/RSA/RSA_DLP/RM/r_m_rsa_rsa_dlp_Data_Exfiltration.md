@@ -5,7 +5,7 @@ Vendor: RSA
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  29   |   18   |     3      |      1      |    1    |
+|  29   |   18   |     3      |      2      |    2    |
 
 | Event Type | Rules    | Models    |
 | ---------- | ---- | ---- |

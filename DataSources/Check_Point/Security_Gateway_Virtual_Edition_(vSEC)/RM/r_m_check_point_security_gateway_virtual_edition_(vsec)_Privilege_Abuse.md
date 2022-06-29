@@ -7,6 +7,6 @@ Vendor: Check Point
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     2      |      3      |    3    |
 
-| Event Type    | Rules    | Models |
-| ---- | ---- | ------ |
-| web-activity-allowed | <b>T1071.001 - Application Layer Protocol: Web Protocols</b><br> ↳ <b>WEB-ALERT-EXEC</b>: Security violation by Executive in web activity<br><br><b>T1078 - Valid Accounts</b><br> ↳ <b>WEB-ALERT-EXEC</b>: Security violation by Executive in web activity |        |
+| Event Type | Rules    | Models |
+| ---------- | ---- | ------ |
+| vpn-login  | <b>T1078 - Valid Accounts</b><br> ↳ <b>SL-UA-F-VPN</b>: First VPN connection for service account<br><br><b>T1133 - External Remote Services</b><br> ↳ <b>SL-UA-F-VPN</b>: First VPN connection for service account |        |

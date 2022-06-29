@@ -10,6 +10,7 @@ Name = s-duo-auth-json
   Conditions = [ """"new_enrollment"""",""""ip"""",""""result""""]
   Fields = [
     """exabeam_host=({host}[^\s]{1,2000})""",
+    """"host":\s{0,20}"({host}[^"]{1,2000})"""",
     """"timestamp":\s{0,100}({time}\d{1,100})""",
     """"device":\s{0,100}"{0,20}(null\}?|({device}[^",]{1,2000}))"""",
     """"{1,20}ip"{1,20}:\s"{1,20}(0.0.0.0|({src_ip}[a-fA-F:\.\d]{1,2000}))"""",
@@ -22,7 +23,8 @@ Name = s-duo-auth-json
     """"result"\s{0,100}:\s{0,100}"({outcome}[^"]{1,2000})"""",
     """"reason"\s{0,100}:\s{0,100}"({failure_reason}[^"]{1,2000})"""",
     """"new_enrollment"\s{0,100}:\s{0,100}({new_enrollment}true|false)""",
-    """"{0,20}integration"{0,20}:\s{0,100}"{0,20}({service}[^"]{1,2000})"""
+    """"{0,20}integration"{0,20}:\s{0,100}"{0,20}({service}[^"]{1,2000})""",
+    """"email":\s{0,20}"({user_email}[^@"]{1,2000}@[^"]{1,2000})""""
   ]
 
 

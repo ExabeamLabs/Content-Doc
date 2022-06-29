@@ -5,7 +5,7 @@ Vendor: iManage
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  19   |   11   |     1      |      3      |    3    |
+|  19   |   11   |     1      |      2      |    2    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

@@ -25,7 +25,6 @@ Name = cef-windows-6416
     """\sClass ID:\s{0,100}({class_id}.+?)\s{0,100}Class""",
     """\sClass Name:\s{0,100}({class_name}.+?)\s{0,100}Vendor IDs:""",
   ]
-  DupFields = ["event_id->event_code"]
 
 
 }

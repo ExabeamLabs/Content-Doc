@@ -11,18 +11,18 @@ Name = raw-process-created-1
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
-    """hostname=({host}[^=]{1,2000}?),\s{0,100}\w+=""",
+    """hostname=({host}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w.\-]{1,2000})),\s{0,100}\w+=""",
     """ip=\[({dest_ip}[a-fA-F0-9.:]{1,2000})""",
     """"timestamp":"({time}[^"]{1,2000})""",
-    """"host":"({host}[^"]{1,2000})""",
-    """HOSTNAME:\s{0,100}\\?"{1,100}\(({host}[\w\-\.]{1,2000})""",
+    """"host":"(::ffff:)?({host}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w.\-]{1,2000}))""",
+    """HOSTNAME:\s{0,100}\\?"{1,100}\(({host}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w.\-]{1,2000}))""",
     """({event_name}A new process has been created)""",
     """({time}\d\d\/\d\d\/\d\d\d\d\s{1,100}\d\d:\d\d:\d\d\s{1,100}(?i)(AM|PM))""",
     """\w+\s{1,100}({time}\w+\s{1,100}\d{1,100}\s{1,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}\d{1,100})\s""",
     """timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
     """({event_code}4688)""",
-    """ComputerName =({host}[\w-.]{1,2000})\s""",
-    """(Success Audit|information)\s{1,100}({host}[^\s]{1,2000})""",
+    """ComputerName =({host}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w.\-]{1,2000}))\s""",
+    """(Success Audit|information)\s{1,100}({host}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^\s]{1,2000}))""",
     """Process Name:\s{0,100}({process}({directory}(?:[^";]{1,2000})?[\\\/])?({process_name}[^\\\/";]{1,2000}?\.\w+))(\\n){0,20}[\s;]{0,2000}Token Elevation Type:""",
     """Account Name:\s{0,100}(-|SYSTEM|({user}[^\s]{1,2000}?))(\\n){0,20}[\s;]{0,2000}Account Domain:""",
     """Account Domain:\s{0,100}(-|({domain}[^\s]{1,2000}?))(\\n){0,20}[\s;]{0,2000}Logon ID:""",
@@ -44,7 +44,7 @@ Name = raw-process-created-1
     """Command\s{0,100}Line(:|=).+?\/u\s{0,100}["\s]({parameter_exe}.+?\.exe)""",
     """Command\s{0,100}Line(:|=).+?\/u\s{0,100}["\s]({parameter_dll}.+?\.dll)"""
   ]
-  DupFields = [ "host->dest_host","process_guid->pid","directory->process_directory","process->path" ]
+  DupFields = [ "process_guid->pid","directory->process_directory","process->path" ]
 
 
 }

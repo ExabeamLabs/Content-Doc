@@ -5,7 +5,7 @@ Vendor: Postfix
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  32   |   15   |     1      |      3      |    3    |
+|  32   |   15   |     1      |      2      |    2    |
 
 | Event Type          | Rules    | Models    |
 | ---- | ---- | ---- |

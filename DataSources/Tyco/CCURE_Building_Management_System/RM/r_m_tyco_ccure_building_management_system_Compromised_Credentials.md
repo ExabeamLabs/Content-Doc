@@ -5,7 +5,7 @@ Vendor: Tyco
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  42   |   24   |     3      |      4      |    4    |
+|  42   |   24   |     3      |      3      |    3    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

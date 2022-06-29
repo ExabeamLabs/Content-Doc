@@ -5,7 +5,7 @@ Vendor: Unix
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   9   |   0    |     3      |     15      |   15    |
+|   9   |   0    |     3      |     14      |   14    |
 
 | Event Type   | Rules    | Models |
 | ---- | ---- | ------ |

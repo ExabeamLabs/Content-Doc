@@ -7,7 +7,7 @@ Name = json-4771
   Lms = Direct
   DataType = "windows-4771"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
-  Conditions = [  "4771", """"Kerberos pre-authentication failed.""", """"TicketOptions""" ]
+  Conditions = [  """4771""", """Kerberos pre-authentication failed.""", """"TicketOptions""", """"ServiceName""", """"TargetUserName""" ]
   Fields = [
     """({event_name}Kerberos pre-authentication failed)""",
     """"created":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,3}Z)"""",
@@ -23,6 +23,7 @@ Name = json-4771
     """"(TargetSid|TargetDomainName)\\?":\\?"({user_sid}[^"\\]{0,2000})""",
     """"TargetUserName\\?":\\?"({user}[^"\\]{0,2000})""",
     """"ServiceName\\?":\\?"[^/]{0,2000}\/({domain}[^"\\]{0,2000})""",
+    """"Status_string":"({result_code}[^"]{1,2000})"""",
     """"(Status|TicketOptions)\\?":\\?"({result_code}[^"\\]{0,2000})""",
     """"((IpAddress)|(ip))\\?":\\?"(?:::[\w]{1,2000}:)?({dest_ip}[a-fA-F:\d.]{1,2000})\\?""""
   ]

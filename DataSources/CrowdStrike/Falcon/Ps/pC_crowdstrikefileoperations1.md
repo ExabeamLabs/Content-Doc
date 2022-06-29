@@ -7,7 +7,7 @@ Name = crowdstrike-file-operations-1
   Fields = ${CrowdStrikeParserTemplates.cef-crowdstrike-app-activity-temp.Fields} [
   """"id":"({alert_id}[\w-]{1,2000}?)""""
   """"name":"({alert_name}[^"]{1,2000}?)""""
-  """"File({accesses}Delete|Open|Rename)"""
+  """"File({activity}Delete|Open|Rename)"""
   ]
 
 cef-crowdstrike-app-activity-temp = {

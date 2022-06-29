@@ -20,14 +20,14 @@ Name = cef-crowdstrike-alert
       """(\s|\|)duser=(?:N\/A|({user}.+?))(@({domain}.+?))?\s{1,100}(\w+=|$)""",
       """(\s|\|)dhost=({src_host}[^\s]{1,2000})""",
       """(\s|\|)shost=({src_host}[^\s]{1,2000})""",
-	  """(\s|\|)shost=.+?(\s|\|)dhost=({dest_host}[^\s]{1,2000})""",
+      """(\s|\|)shost=.+?(\s|\|)dhost=({dest_host}[^\s]{1,2000})""",
       """(\s|\|)dhost=({dest_host}[^\s]{1,2000}).+?(\s|\|)shost=""",
       """(\s|\|)src=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """(\s|\|)dst=({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
       """CrowdStrike\|([^|]{1,2000}\|){3}({alert_name}[^|]{1,2000})""",
       """CrowdStrike\|([^|]{1,2000}\|){2}({alert_type}[^|]{1,2000})""",
       """CrowdStrike\|([^|]{1,2000}\|){4}({alert_severity}[^|]{1,2000})""",
-	  """(\s|\|)cat=({alert_name}.+?)\s{1,100}(\w+=|$)""",
+      """(\s|\|)cat=({alert_name}.+?)\s{1,100}(\w+=|$)""",
       """(\s|\|)cs3=({alert_name}.+?)\s{1,100}\w+=.*?cs3Label=ScanResultName""",
       """cs3Label=ScanResultName.*?cs3=({alert_name}.+?)\s{1,100}(\w+=|$)""",
       """(\s|\|)cs1=({alert_name}.+?)\s{1,100}\w+=.*?cs1Label=ScanResultName""",
@@ -42,7 +42,7 @@ Name = cef-crowdstrike-alert
       """(\s|\|)cs6=({falcon_host_link}.+?)\s\w+=.*(?=cs6Label=FalconHostLink)""",
       """(?=cs6Label=FalconHostLink).*cs6=({falcon_host_link}.+?)\s{1,100}(\w+=|$)"""
     ]
-    DupFields = ["falcon_host_link->additional_info"]
+    DupFields = ["falcon_host_link->additional_info","file_name->process_name","file_path->process_directory"]
   
 
 }

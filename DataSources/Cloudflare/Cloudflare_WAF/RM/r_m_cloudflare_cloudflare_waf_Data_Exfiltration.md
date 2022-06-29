@@ -5,7 +5,7 @@ Vendor: Cloudflare
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   8   |   2    |     6      |      4      |    4    |
+|   8   |   2    |     6      |      5      |    5    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

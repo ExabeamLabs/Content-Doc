@@ -6,7 +6,7 @@ Name = cef-o365-password-change
   DataType = "password-change"
   Conditions = [ """destinationServiceName =Office 365""", """"Operation":"Change user password""", """"ResultStatus":""" ]
   Fields = ${MSParserTemplates.cef-o365-app-login-2.Fields} [
-    """"ObjectId":"({target_user}[^"]{1,2000})"""",
+    """"ObjectId":"(({target_user_email}[^@"]{1,2000}@[^"]{1,2000}?)|({target_user}[^"]{1,2000}))""""
   ]
 
 cef-o365-app-login-2 = {

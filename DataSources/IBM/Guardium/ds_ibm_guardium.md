@@ -8,7 +8,7 @@ Product: Guardium
 
 |  Use-Case  | Event Types/Parsers    | MITRE TTP | Content    |
 |:----------:| ---- | --------- | ---- |
-| Enrichment |  database-failed-login<br> ↳[s-guardium-db-access](Ps/pC_sguardiumdbaccess.md)<br> |    | [](RM/r_m_ibm_guardium_Enrichment.md) |
+| Enrichment |  database-access<br> ↳[s-guardium-db-access](Ps/pC_sguardiumdbaccess.md)<br> |    | [](RM/r_m_ibm_guardium_Enrichment.md) |
 
 ATT&CK Matrix for Enterprise
 ----------------------------

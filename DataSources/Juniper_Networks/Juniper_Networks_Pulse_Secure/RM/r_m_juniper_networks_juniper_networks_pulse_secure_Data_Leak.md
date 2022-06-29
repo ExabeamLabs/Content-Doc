@@ -5,7 +5,7 @@ Vendor: Juniper Networks
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  14   |   11   |     6      |      7      |    7    |
+|  14   |   11   |     6      |      8      |    8    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

@@ -21,6 +21,7 @@ paloalto-vpn = {
   Lms = Direct
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
   Fields = [
+    """exabeam_host=({host}[^\s]{1,2000})""",
     """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,9}Z)""",
     """"host":"({host}[^"]{1,2000})"""",
     """"DeviceName":"({host}[^"\s]{1,2000})"""",

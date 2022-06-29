@@ -5,7 +5,7 @@ Vendor: Imprivata
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   3   |   0    |     1      |      2      |    2    |
+|   3   |   0    |     1      |      3      |    3    |
 
 | Event Type   | Rules    | Models |
 | ---- | ---- | ------ |

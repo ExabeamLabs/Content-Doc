@@ -5,7 +5,7 @@ Vendor: AMAG
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   9   |   4    |     1      |      2      |    2    |
+|   9   |   4    |     1      |      1      |    1    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

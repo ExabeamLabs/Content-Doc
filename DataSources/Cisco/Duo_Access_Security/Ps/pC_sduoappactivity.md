@@ -11,6 +11,7 @@ Name = s-duo-app-activity
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d(\+|\-)\d{1,100})""",
     """exabeam_host=({host}[^\s]{1,2000})""",
+    """"host":\s{0,20}"({host}[^"]{1,2000})"""",
     """"action":\s{0,100}"({activity}[^"]{1,2000})"""",
     """"object":\s{0,100}"({object}[^"]{1,2000})"""",
     """"description":\s{0,100}"\{({additional_info}.+?)\}""",

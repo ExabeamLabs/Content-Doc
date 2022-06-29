@@ -8,7 +8,8 @@ Name = cef-o365-app-login-failed
   Fields = ${MSParserTemplates.cef-o365-app-login-2.Fields} [
     """"ResultStatusDetail":"((?i)Success|({failure_reason}[^"]{1,2000}))"""",
     """"LogonError":"({failure_reason}[^"]{1,2000})""",
-    """"Operation":"UserLogin({outcome}[^"]{1,2000})"""
+    """"Operation":"UserLogin({outcome}[^"]{1,2000})""",
+    """CEF:([^\|]{0,2000}\|){5}({activity}[^\|]{1,2000})"""
   ]
 
 cef-o365-app-login-2 = {
