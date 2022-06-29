@@ -12,7 +12,7 @@ Name = zscaler-firewall
      """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
      """({time}\w{3}\s{1,100}\d{1,100}\s\d\d:\d\d:\d\d\s\d\d\d\d)""",
      """action=({outcome}[^\s]{1,2000})""",
-     """user=(({user_email}[^@]{1,2000}@[^\s]{0,2000})|({user}[^\s]{1,2000}))\s""",
+     """user=(\w+(\s\w+)?->\w+(\s\w+)?|({user_email}[^@]{1,2000}@[^\s]{0,2000})|({user}[^\s]{1,2000}))\s""",
      """csip=({src_ip}[^\s]{1,2000})""",
      """sdip=({dest_ip}[^\s]{1,2000})""",
      """sdport=({dest_port}[^\s]{1,2000})""",

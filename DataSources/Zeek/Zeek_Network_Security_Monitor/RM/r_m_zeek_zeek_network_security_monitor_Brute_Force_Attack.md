@@ -5,7 +5,7 @@ Vendor: Zeek
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   9   |   0    |     3      |     23      |   23    |
+|   9   |   0    |     3      |     24      |   24    |
 
 | Event Type   | Rules    | Models |
 | ---- | ---- | ------ |

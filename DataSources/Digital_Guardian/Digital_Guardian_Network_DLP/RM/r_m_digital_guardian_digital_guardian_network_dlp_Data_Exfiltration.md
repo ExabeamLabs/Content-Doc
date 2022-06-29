@@ -5,7 +5,7 @@ Vendor: Digital Guardian
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  29   |   18   |     3      |      4      |    4    |
+|  29   |   18   |     3      |      3      |    3    |
 
 | Event Type | Rules    | Models    |
 | ---------- | ---- | ---- |

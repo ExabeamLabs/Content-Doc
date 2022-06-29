@@ -5,7 +5,7 @@ Vendor: Airlock
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     2      |      9      |    9    |
+|   1   |   0    |     2      |     10      |   10    |
 
 | Event Type  | Rules    | Models |
 | ---- | ---- | ------ |

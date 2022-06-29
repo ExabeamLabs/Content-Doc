@@ -5,7 +5,7 @@ Vendor: SentinelOne
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   4   |   2    |     1      |     15      |   15    |
+|   4   |   2    |     1      |     16      |   16    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

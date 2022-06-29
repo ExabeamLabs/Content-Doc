@@ -5,7 +5,7 @@ Vendor: Fortinet
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   8   |   3    |     2      |     10      |   10    |
+|   8   |   3    |     2      |     13      |   13    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

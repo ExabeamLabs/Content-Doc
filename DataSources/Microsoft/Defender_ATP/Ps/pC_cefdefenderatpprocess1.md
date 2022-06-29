@@ -25,7 +25,8 @@ Name = cef-defender-atp-process-1
      """InitiatingProcessAccountSid\\?"{1,100}:\s{0,100}\\?"{1,100}({user_sid}[^"]{1,2000}?)\\?"""",
      """InitiatingProcessFileName\\?"{1,100}:\s{0,100}\\?"{1,100}({process_name}[^"\\\/]{1,2000}?)\\?"""",
      """ProcessId\\?"{1,100}:({pid}\d{1,100})""",
-     """InitiatingProcessFileName\\?"{1,100}:\s{0,100}\\?"{1,100}({parent_process}[^"]{1,2000}?)\\?"""",
+     """"InitiatingProcessFolderPath"{1,20}:\s{0,100}"{1,20}({parent_process}({parent_directory}[^"]{0,2000}?[\\\/]{1,2000})?({parent_process_name}[^"\\\/]{1,2000}?))""""
+     """InitiatingProcessFileName\\?"{1,100}:\s{0,100}\\?"{1,100}({parent_process_name}[^"\\\/]{1,2000}?)\\?"""",
      """"FileName\\?"{1,100}:\s{0,100}\\?"{1,100}({process_name}[^\\\/"]{1,2000}?)\\?"""",
      """ProcessCommandLine\\?"{1,100}:\s{0,100}\\?"\s{0,100}({command_line}.{1,2000}?)\s{0,100}\\*",""",
      """MD5\\?"{1,100}:\\?"{1,100}({md5}[^"]{1,2000}?)\\?"""",

@@ -5,7 +5,7 @@ Vendor: McAfee
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  32   |   18   |     4      |      6      |    6    |
+|  32   |   18   |     4      |      4      |    4    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

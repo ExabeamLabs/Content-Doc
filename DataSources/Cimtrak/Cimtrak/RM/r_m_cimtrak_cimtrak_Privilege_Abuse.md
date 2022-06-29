@@ -7,6 +7,7 @@ Vendor: Cimtrak
 |:-----:|:------:|:----------:|:-----------:|:-------:|
 |   1   |   0    |     1      |      2      |    2    |
 
-| Event Type | Rules    | Models |
-| ---------- | ---- | ------ |
-| file-write | <b>T1078 - Valid Accounts</b><br> ↳ <b>FA-Account-deactivated</b>: File Activity from a de-activated user account |        |
+| Event Type  | Rules    | Models |
+| ---- | ---- | ------ |
+| file-delete | <b>T1078 - Valid Accounts</b><br> ↳ <b>FA-Account-deactivated</b>: File Activity from a de-activated user account |        |
+| file-write  | <b>T1078 - Valid Accounts</b><br> ↳ <b>FA-Account-deactivated</b>: File Activity from a de-activated user account |        |

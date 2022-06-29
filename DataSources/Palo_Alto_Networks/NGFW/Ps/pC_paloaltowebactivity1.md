@@ -9,6 +9,7 @@ Name = paloalto-web-activity-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
   Conditions = [ """"LogType":"THREAT"""", """"HTTPMethod":""", """"URL":""", """"Subtype":"url"""", """"Application":"web-browsing"""" ]
   Fields = [
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)"""",
     """"host":"({host}[^"]{1,2000})"""",
     """"SourceUser":"({user_email}[^\@]{1,2000}\@[^"]{1,2000})"""",

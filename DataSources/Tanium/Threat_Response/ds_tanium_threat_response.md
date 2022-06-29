@@ -4,11 +4,15 @@ Product: Threat Response
 ------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   0   |   0    |     0      |      1      |    1    |
+|  37   |   11   |     5      |      1      |    1    |
 
-|  Use-Case  | Event Types/Parsers    | MITRE TTP | Content    |
-|:----------:| ---- | --------- | ---- |
-| Enrichment |  web-meeting-ended<br> ↳[tanium-process-alert](Ps/pC_taniumprocessalert.md)<br> |    | [](RM/r_m_tanium_threat_response_Enrichment.md) |
+|    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
+|:----:| ---- | ---- | ---- |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  process-alert<br> ↳[tanium-process-alert](Ps/pC_taniumprocessalert.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>TA0002 - TA0002<br>    | [<ul><li>7 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_tanium_threat_response_Compromised_Credentials.md) |
+|    [Malware](../../../UseCases/uc_malware.md)    |  process-alert<br> ↳[tanium-process-alert](Ps/pC_taniumprocessalert.md)<br> | T1053.003 - T1053.003<br>T1190 - Exploit Public Fasing Application<br>T1562.004 - Impair Defenses: Disable or Modify System Firewall<br>TA0002 - TA0002<br> | [<ul><li>32 Rules</li></ul><ul><li>10 Models</li></ul>](RM/r_m_tanium_threat_response_Malware.md)    |
 
 ATT&CK Matrix for Enterprise
 ----------------------------
+| Initial Access                                                                         | Execution                                                               | Persistence                                                             | Privilege Escalation                                                    | Defense Evasion                                                                                                                                                                                                                                                                                                                                                                           | Credential Access | Discovery | Lateral Movement | Collection | Command and Control | Exfiltration | Impact |
+| -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ------------------- | ------------ | ------ |
+| [Exploit Public Fasing Application](https://attack.mitre.org/techniques/T1190)<br><br> | [Scheduled Task/Job](https://attack.mitre.org/techniques/T1053)<br><br> | [Scheduled Task/Job](https://attack.mitre.org/techniques/T1053)<br><br> | [Scheduled Task/Job](https://attack.mitre.org/techniques/T1053)<br><br> | [Impair Defenses](https://attack.mitre.org/techniques/T1562)<br><br>[Obfuscated Files or Information: Indicator Removal from Tools](https://attack.mitre.org/techniques/T1027/005)<br><br>[Impair Defenses: Disable or Modify System Firewall](https://attack.mitre.org/techniques/T1562/004)<br><br>[Obfuscated Files or Information](https://attack.mitre.org/techniques/T1027)<br><br> |                   |           |                  |            |                     |              |        |

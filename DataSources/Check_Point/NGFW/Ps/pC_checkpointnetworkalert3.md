@@ -9,6 +9,7 @@ Name = checkpoint-network-alert-3
     """protection_name:"({alert_name}[^"]{1,2000})""",
     """severity:"({alert_severity}[^"]{1,2000})""""
   ]
+  DupFields = [ "action->event_name" ]
 
 checkpoint-firewall-1 = {
   Vendor = Check Point 
@@ -64,6 +65,6 @@ checkpoint-firewall-1 = {
     """\Wifname:"({interface_name}[^"]{1,2000})""",
     """\W(user|src_user_name|dst_user_name):"(?:[^_"\s]{1,2000}_)?({user}[^"\s]{1,2000}?)\s{0,100}""""
   ]
-  DupFields = [ "action->event_name", "action->outcome" 
+  DupFields = [ "action->outcome" 
 }
 ```

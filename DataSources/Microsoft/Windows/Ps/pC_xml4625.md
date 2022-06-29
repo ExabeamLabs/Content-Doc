@@ -25,9 +25,11 @@ Name = xml-4625
       """<Data Name(\\)?='WorkstationName'>(-|({src_host_windows}[A-Za-z]{1,2000}[\w.-]{1,2000}))\s{0,100}</Data>""",
       """<Data Name(\\)?='AuthenticationPackageName'>({auth_package}[^<]{1,2000})</Data>""",
       """({event_name}An account failed to log on)""",
-      """<Data Name(\\)?='FailureReason'>({failure_reason}[^<]{1,2000})</Data>"""
+      """<Data Name(\\)?='FailureReason'>({failure_reason}[^<]{1,2000})</Data>""",
+      """Failure Reason:\s{1,100}({failure_reason}[^:]{1,2000}?)\s{1,100}\w+:""",
       """<Data Name =('|")SubjectUserSid('|")>({subject_sid}[^<]{1,2000})</Data>""",
-      """<Data Name =('|")KeyLength('|")>({key_length}[^<]{1,2000})</Data>"""
+      """<Data Name =('|")KeyLength('|")>({key_length}[^<]{1,2000})</Data>""",
+      """<Message>[^<]{1,2000}?Failure Reason:\s{0,100}({failure_reason}[^.]{1,2000}?\.)\s{0,100}\w+:"""
     ]
   
 

@@ -5,7 +5,7 @@ Vendor: Mimecast
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  20   |   11   |     1      |     11      |   11    |
+|  20   |   11   |     1      |      7      |    7    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

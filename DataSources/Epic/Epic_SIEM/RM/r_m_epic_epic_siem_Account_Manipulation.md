@@ -5,7 +5,7 @@ Vendor: Epic
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   4   |   1    |     2      |      5      |    5    |
+|   4   |   1    |     2      |      6      |    6    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

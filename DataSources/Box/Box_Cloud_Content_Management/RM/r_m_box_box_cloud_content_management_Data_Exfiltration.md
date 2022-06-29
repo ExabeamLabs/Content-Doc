@@ -5,7 +5,7 @@ Vendor: Box
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   1    |     1      |      9      |    9    |
+|   2   |   1    |     1      |      8      |    8    |
 
 | Event Type | Rules    | Models    |
 | ---------- | ---- | ---- |

@@ -5,7 +5,7 @@ Vendor: Sailpoint
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  44   |   18   |     5      |     13      |   13    |
+|  44   |   18   |     5      |     12      |   12    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

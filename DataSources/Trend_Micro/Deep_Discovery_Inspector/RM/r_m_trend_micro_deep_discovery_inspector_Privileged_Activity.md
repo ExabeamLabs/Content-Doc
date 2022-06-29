@@ -5,7 +5,7 @@ Vendor: Trend Micro
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   0    |     2      |      2      |    2    |
+|   2   |   0    |     2      |      3      |    3    |
 
 | Event Type     | Rules    | Models |
 | ---- | ---- | ------ |

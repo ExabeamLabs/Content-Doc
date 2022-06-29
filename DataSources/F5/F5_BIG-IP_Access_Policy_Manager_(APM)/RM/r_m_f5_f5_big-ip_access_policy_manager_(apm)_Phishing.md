@@ -5,7 +5,7 @@ Vendor: F5
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   2    |     1      |      6      |    6    |
+|   2   |   2    |     1      |      4      |    4    |
 
 | Event Type | Rules    | Models    |
 | ---------- | ---- | ---- |

@@ -5,7 +5,7 @@ Vendor: Zscaler
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  35   |   20   |     7      |      7      |    7    |
+|  35   |   20   |     7      |      6      |    6    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

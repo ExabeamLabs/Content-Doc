@@ -5,7 +5,7 @@ Vendor: LanScope
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  57   |   26   |     12     |     13      |   13    |
+|  57   |   26   |     12     |     14      |   14    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

@@ -17,9 +17,8 @@ Name = cef-aws-guardduty-discovery-alert
     """Severity:\s{0,100}({alert_severity}[\d.]{1,2000}),""",
     """Region:\s{0,100}({region}[^:]{1,2000}?),\w+?:""",
     """Description:\s{0,100}({additional_info}[^:]{1,2000}?),\w+?:""",
-    """AccountId:\s{0,100}({account_id}[^:]{1,2000}?),\w+?:"""
-  ]
-
+    """AccountId:\s{0,100}({account_id}[^:]{1,2000}?),\w+?:""",
+    """Resource:[^}]{1,2000}PrincipalId:\s{0,100}([^
 
 }
 ```

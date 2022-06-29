@@ -5,7 +5,7 @@ Vendor: Sonicwall
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   7   |   7    |     2      |      5      |    5    |
+|   7   |   7    |     2      |      6      |    6    |
 
 | Event Type | Rules    | Models    |
 | ---------- | ---- | ---- |

@@ -5,7 +5,7 @@ Vendor: Symantec
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   6   |   6    |     1      |      2      |    2    |
+|   6   |   6    |     1      |      3      |    3    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

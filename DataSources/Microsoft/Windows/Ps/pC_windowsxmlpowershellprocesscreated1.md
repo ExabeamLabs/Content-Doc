@@ -11,7 +11,7 @@ Name = windows-xml-powershell-process-created-1
   Fields = [
     """<TimeCreated SystemTime='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d{1,100}Z'\/>""",
     """<Computer>({host}[^<]{1,2000})</Computer>""",
-    """\sHostApplication=({command_line}({process_name}[^\s\\\/]{1,2000})[^\n]{0,2000}?)\s{1,100}EngineVersion=""", 
+    """\sHostApplication\s{0,100}=\s{0,100}({command_line}({process}(({process_directory}[^\;=\s]{1,2000})[\\\/]{1,2000})?({process_name}[^\s\\\/=]{1,2000}))[^\n]{0,2000}?)\s{1,100}EngineVersion=""",
     """<Message>({event_name}[^:=<.]{1,2000})\.""",
     """({event_code}\d{1,20})<\/EventID>""",
     """<Keywords>({outcome}[^<]{1,2000})""",

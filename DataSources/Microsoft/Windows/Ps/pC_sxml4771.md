@@ -14,8 +14,8 @@ Name = s-xml-4771
     """<EventID>({event_code}[^<]{1,2000})</EventID>""",
     """<Data Name ='TargetSid'>(?:NONE_MAPPED|({user_sid}[^<]{1,2000}))</Data>""",
     """<Data Name ='Status'>({result_code}[^<]{1,2000})</Data>""",
-    """<Data Name ='TargetUserName'>(?=\w)({user}[^<]{1,2000})</Data>""",
-    """<Data Name ='ServiceName'>\w+\/(?=\w)({domain}[^<]{1,2000})</Data>""",
+    """<Data Name ='TargetUserName'>({user}[^<]{1,2000})</Data>""",
+    """<Data Name ='ServiceName'>([^\/]{1,2000}?\/)?({domain}[^<]{1,2000})</Data>""",
     """<Data Name ='IpAddress'>(::[\w]{1,2000}:)?({dest_ip}[a-fA-F:\d.]{1,2000})</Data>""",
     """({event_name}Kerberos pre-authentication failed)""",
   ]

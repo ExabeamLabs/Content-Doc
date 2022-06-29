@@ -5,6 +5,10 @@ Name = cef-o365-app-login-2
   Product = Office 365
   DataType = "app-login"
   Conditions = [ """destinationServiceName =Office 365""", """"Operation":"UserLoggedIn"""", """"ResultStatus":""", """"ClientIP":""" ]
+  Fields = ${MSParserTemplates.cef-o365-app-login-2.Fields} [
+    """CEF:([^\|]{0,2000}\|){5}({activity}[^\|]{1,2000})""",
+    """"LogonError":"({failure_reason}[^"]{1,2000})""""
+  ]
 
 cef-o365-app-login-2 = {
     Vendor = Microsoft

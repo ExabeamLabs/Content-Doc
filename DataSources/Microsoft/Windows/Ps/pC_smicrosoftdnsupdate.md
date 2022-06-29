@@ -17,7 +17,6 @@ Name = s-microsoft-dns-update
     """"{1,20}host\\"{1,20}[^}]{1,2000}os[^}]{1,2000}family\\"{1,20}:\\"{1,20}({os}[^\\]{1,2000})""",
     """<Identifier>({host}[^<]{1,2000})<\/"""
   ]
-  DupFields = [ "dest_host->user" ]
 
 
 }

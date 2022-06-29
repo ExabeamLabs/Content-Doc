@@ -11,7 +11,7 @@ Name = cef-aws-guardduty
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)\s""",
-    """\ssrc=({src_ip}[A-Fa-f\d:.]{1,2000})""",
+    """\ssrc=({src_ip}[A-Fa-f\d:.]{1,2000}?)\s""",
     """\sdst=({dest_ip}[A-Fa-f\d:.]{1,2000})""",
     """"privateIpAddress":"({dest_ip}[A-Fa-f\d:.]{1,2000})""",
     """\srequestClientApplication=({app}\S{1,2000})""",

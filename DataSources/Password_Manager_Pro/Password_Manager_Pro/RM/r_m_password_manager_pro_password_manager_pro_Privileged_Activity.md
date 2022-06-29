@@ -5,9 +5,8 @@ Vendor: Password Manager Pro
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   0    |     1      |      2      |    2    |
+|   1   |   0    |     1      |      2      |    2    |
 
-| Event Type       | Rules    | Models |
+| Event Type     | Rules    | Models |
 | ---- | ---- | ------ |
-| account-switch   | <b>T1078 - Valid Accounts</b><br> ↳ <b>AS-UA-F-PRIV</b>: Account switch to a privileged or executive account  |        |
-| failed-app-login | <b>T1078 - Valid Accounts</b><br> ↳ <b>APP-Account-deactivated</b>: Activity from a de-activated user account |        |
+| account-switch | <b>T1078 - Valid Accounts</b><br> ↳ <b>AS-UA-F-PRIV</b>: Account switch to a privileged or executive account |        |

@@ -5,7 +5,7 @@ Vendor: SiteMinder
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   7   |   4    |     2      |      3      |    3    |
+|   7   |   4    |     2      |      2      |    2    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

@@ -5,7 +5,7 @@ Vendor: SSL Open VPN
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  14   |   11   |     6      |      7      |    7    |
+|  14   |   11   |     6      |      6      |    6    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

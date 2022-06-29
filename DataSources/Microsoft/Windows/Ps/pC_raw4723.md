@@ -9,6 +9,7 @@ Name = raw-4723
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
     Conditions = [ "An attempt was made to change" ]
     Fields = [
+      """({time}\d\d\/\d\d\/\d\d\d\d\s\d\d:\d\d:\d\d\s((?i)am|pm))""",
       """({event_name}An attempt was made to change an account's password)""",
       """"agent_hostname":"({host}[^"]{1,200})"""",
       """exabeam_host=(gcs-topic|({host}[\w.\-]{1,2000}))""",

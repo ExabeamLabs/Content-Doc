@@ -5,8 +5,8 @@ Vendor: Armis
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   3   |   1    |     1      |      1      |    1    |
+|   3   |   2    |     1      |      1      |    1    |
 
-| Event Type   | Rules    | Models    |
-| ---- | ---- | ---- |
-| failed-logon | <b>T1078 - Valid Accounts</b><br> ↳ <b>SEQ-UH-04</b>: Failed logon by a service account<br> ↳ <b>SEQ-UH-05</b>: Failed interactive logon by a service account<br> ↳ <b>SEQ-UH-07</b>: Failed logon to an asset that user has not previously accessed |  • <b>AE-UA</b>: All activity for users |
+| Event Type | Rules    | Models    |
+| ---------- | ---- | ---- |
+| alert-iot  | <b>T1078 - Valid Accounts</b><br> ↳ <b>A-SA-AN-ALERT-IOT-F</b>: First security alert name on the IOT/OT device<br> ↳ <b>A-SA-AN-ALERT-IOT-A</b>: Abnormal security alert name on IOT/OT Devices<br> ↳ <b>A-SA-OA-ALERT-IOT-A</b>: Abnormal IOT/OT device triggering security alert for organization |  • <b>A-SA-OA-ALERT-IOT</b>: IOT/OT devices triggering security alerts in the organization<br> • <b>A-SA-AN-ALERT-IOT</b>: Security alert names on IOT/OT devices |

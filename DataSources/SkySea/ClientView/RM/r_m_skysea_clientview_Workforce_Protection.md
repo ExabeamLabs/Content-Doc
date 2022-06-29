@@ -5,7 +5,7 @@ Vendor: SkySea
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   8   |   3    |     2      |     12      |   12    |
+|   8   |   3    |     2      |     15      |   15    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |
