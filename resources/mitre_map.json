@@ -15,7 +15,8 @@
         {
             "comment": "19 rules", 
             "techniqueID": "T1091", 
-            "score": 19
+            "score": 19,
+            "rule names": ""
         }, 
         {
             "comment": "15 rules", 
