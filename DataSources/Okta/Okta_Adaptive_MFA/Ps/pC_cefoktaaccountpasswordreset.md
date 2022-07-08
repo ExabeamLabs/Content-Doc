@@ -5,8 +5,8 @@ Name = cef-okta-account-password-reset
   DataType = "account-password-reset"
   Conditions = [ """destinationServiceName =Okta""", """"eventType":"system.email.password_reset.sent_message"""", """"legacyEventType":"core.user.email.message_sent.self_service.password_reset""""]
   Fields = ${OktaParserTemplates.json-okta-auth.Fields}[
-    """target(s)?"{1,20}:[^\]]{1,2000}?"{1,20}type"{1,20}:"{1,20}User"{1,20}[^\]\}]{1,2000}?"{1,20}(alternateId|emailAddress)"{1,20}:(null|"{1,20}({target_user}[^"@]{1,2000}@({target_domain}[^"]{1,2000})))""",
-    """target(s)?"{1,20}:[^\]]{1,2000}?"{1,20}type"{1,20}:"{1,20}User"{1,20}[^\]\}]{1,2000}?"{1,20}(alternateId|emailAddress)"{1,20}:(null|"{1,20}(({target_domain}[^\\\/]{1,2000})[\/\\]{1,2000})?({target_user}[^"]{1,2000}))"""
+    """target(s)?"{1,20}:[^\]]{1,2000}?"{1,20}type"{1,20}:"{1,20}User"{1,20}[^\]\}]{1,2000}?"{1,20}(alternateId|emailAddress)"{1,20}:(null|"{1,20}({target_user_email}[^"@]{1,2000}@[^"]{1,2000}))""",
+    """target(s)?"{1,20}:[^\]]{1,2000}?"{1,20}type"{1,20}:"{1,20}User"{1,20}[^\]\}]{1,2000}?"{1,20}(alternateId|emailAddress)"{1,20}:(null|"{1,20}(({target_domain}[^\\\/]{1,2000})[\/\\]{1,2000})?({target_user}[^\s"@]{1,2000}))""""
   ]
 
 json-okta-auth = {
