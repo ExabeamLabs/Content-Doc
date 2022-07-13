@@ -23,9 +23,9 @@ json-okta-auth = {
     """"state":"({location_state}[^",]{1,2000})""",
     """"country":"({location_country}[^",]{1,2000})""",
     """"ipAddress"{1,20}\s{0,100}:\s{0,100}"{1,20}({src_ip}[^",]{1,2000})""",
-    """"rawUserAgent"{1,20}\s{0,100}:\s{0,100}"{1,20}((?i)unknown|({user_agent}[^",]{1,2000}))""",
-    """"action"{1,20}:.+?"{1,20}message"{1,20}:"{1,20}({event_name}[^",]{1,2000})"""
-    """"displayMessage"\s{0,100}:\s{0,100}"({event_name}[^",]{1,2000})""",
+    """"rawUserAgent"{1,20}\s{0,100}:\s{0,100}"{1,20}((?i)unknown|({user_agent}[^"]{1,2000}?))"""",
+    """"action"{1,20}:.+?"{1,20}message"{1,20}:"{1,20}({activity}({event_name}[^",]{1,2000}))"""
+    """"displayMessage"\s{0,100}:\s{0,100}"({activity}({event_name}[^",]{1,2000}))""",
     """"action"{1,20}:.+?"{1,20}objectType"{1,20}:"{1,20}({activity}[^",]{1,2000})""", 
     """"reason":"({failure_reason}[^"]{1,2000})"""
     """"target(s)?"{1,20}:[^\}\]]{1,2000}?"{1,20}displayName"{1,20}\s{0,100}:\s{0,100}"{1,20}((?i)unknown|({object}[^"]{1,2000}[^\s]))"""",
@@ -39,6 +39,6 @@ json-okta-auth = {
     """"outcome":[^\]]{0,2000}?"result"\s{0,100}:\s{0,100}"({outcome}[^"]{1,2000})"""",
     """outcome":[^\]]{0,2000}?"result":"?(null|({outcome_result_at}[^\"]{1,2000}))"?,"reason":"?(null|({outcome_reason_at}[^"]{1,2000}))""",
   ]
-  DupFields = ["domain->email_domain", "failure_reason->additional_info", "event_name->activity"
+  DupFields = ["domain->email_domain", "failure_reason->additional_info"
 }
 ```
