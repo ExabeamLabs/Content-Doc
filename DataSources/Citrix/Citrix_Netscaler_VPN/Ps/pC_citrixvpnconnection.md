@@ -9,9 +9,10 @@ Name = citrix-vpn-connection
     TimeFormat = "MM/dd/yyyy:HH:mm:ss"
     Conditions = [""" SSLVPN """, """Access Allowed""", """ Duration """, """ Total_bytes_send """ ]
     Fields = [
-     """exabeam_host=({host}[\w\-.]{1,2000})""",
-     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
-     """\w+\s{1,100}\d{1,100}\s{1,100}\d\d:\d\d:\d\d\s{1,100}({host}[\w\-.]{1,2000})""",
+      """exabeam_host=({host}[\w\-.]{1,2000})""",
+      """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+      """\w+\s{1,100}\d{1,100}\s{1,100}\d\d:\d\d:\d\d\s{1,100}({host}[\w\-.]{1,2000})\s""",
+      """\s({time}\d\d\/\d\d\/\d\d\d\d:\d\d:\d\d:\d\d)""",
       """({host}[^\s]{1,2000})\s{0,100}:\s{0,100}SSLVPN \w+\s""",
       """\sEnd_time(\s{0,100}\&quot;)?\s{0,100}"?({time}\d{1,100}\/\d{1,100}\/\d{1,100}:\d{1,100}:\d{1,100}:\d{1,100})""",
       """\sUser\s{0,100}({user}[^\-\s]{1,2000})\s{0,100}\-""",

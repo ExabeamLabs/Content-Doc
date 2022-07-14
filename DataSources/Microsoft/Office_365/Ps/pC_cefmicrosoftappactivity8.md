@@ -6,7 +6,8 @@ Name = cef-microsoft-app-activity-8
   Conditions= [ """destinationServiceName =Office 365""", """"Add owner to group""" ]
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields} [
     """sourceServiceName =({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
-    """"targetResources":[^\}]{1,2000}?"displayName":"\s{0,20}({object}[^"]{1,2000}?)\s{0,20}""""
+    """"targetResources":[^\}]{1,2000}?"displayName":"\s{0,20}({object}[^"]{1,2000}?)\s{0,20}"""",
+    """duser=(({target_user_email}[^@\s]{1,2000}@[^\.\s]{1,2000}\.[^\s]{1,2000})|({target_user}[^\s]{1,2000}))"""
   ]
 
 cef-microsoft-app-activity = {
