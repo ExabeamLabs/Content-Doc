@@ -4,6 +4,9 @@
 Name = cef-microsoft-app-activity-52
   Product = Office 365
   Conditions= [ """destinationServiceName =Office 365""", """"Add member to group""" ]
+  Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields} [
+    """duser=(({target_user_email}[^@\s]{1,2000}@[^\.\s]{1,2000}\.[^\s]{1,2000})|({target_user}[^\s]{1,2000}))"""
+  ]
 
 cef-microsoft-app-activity = {
   Vendor = Microsoft

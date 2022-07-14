@@ -16,7 +16,7 @@ Name = cef-4740
       """\ssrc=({src_ip}[a-fA-F:\d.]{1,2000})""",
       """\ssntdom=({caller_domain}[^\s]{1,2000})""",
       """\ssuser=({caller_user}.+?)\s{1,100}\w+=""",
-      """\sdntdom=({domain}[^\s]{1,2000})""",
+      """\sdntdom=({domain}[^\s\\]{1,2000})""",
       """\sduser=({user}.+?)\s{1,100}\w+=""",
       """\sduid=({logon_id}[^\s]{1,2000})""",
       """\sdvc=({dest_ip}[a-fA-F:\d.]{1,2000})""",
