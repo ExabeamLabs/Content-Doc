@@ -17,6 +17,7 @@ Name = cef-salesforce-app-login
     """SourceIp\\*=({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """Status\\*=({outcome}[^;]{1,2000})""",
     """Platform\\*=(Unknown|({os}[^;]{1,2000}))""",
+    """deviceNtDomain=({os}[^=]{1,2000}?)\s{1,100}\w{1,2000}=""",
     """TlsProtocol\\*=({protocol}[^;]{1,2000})""",
     """Browser\\*=(Unknown|({browser}.+?))(;|\s\w+=)""", 
     """({app}Sales Cloud)""",
