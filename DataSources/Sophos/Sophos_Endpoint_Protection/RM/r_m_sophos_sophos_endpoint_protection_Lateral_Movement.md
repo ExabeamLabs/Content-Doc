@@ -5,7 +5,7 @@ Vendor: Sophos
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  21   |   7    |     6      |     10      |   10    |
+|  21   |   7    |     6      |     11      |   11    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |
