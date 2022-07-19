@@ -4,7 +4,7 @@ Product: Cloud Platform
 -----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  249  |   99   |     33     |     10      |   10    |
+|  247  |   99   |     33     |     10      |   10    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

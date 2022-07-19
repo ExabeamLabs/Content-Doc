@@ -4,7 +4,7 @@ Product: Fortinet UTM
 ---------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  262  |  110   |     24     |     13      |   13    |
+|  260  |  110   |     24     |     13      |   13    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

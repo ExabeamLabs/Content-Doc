@@ -4,7 +4,7 @@ Product: Meraki MX appliances
 -----------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  230  |   97   |     29     |      7      |    7    |
+|  228  |   97   |     29     |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

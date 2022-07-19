@@ -4,7 +4,7 @@ Product: Sophos XG Firewall
 ---------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  208  |   86   |     27     |      6      |    6    |
+|  206  |   86   |     27     |      6      |    6    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
