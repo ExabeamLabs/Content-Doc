@@ -15,6 +15,8 @@ Name = raw-netscaler-vpn-start
      """exabeam_host=(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^\s]{1,2000}))""",
      """dvchost=({host}[^\s]{1,2000})""",
      """({time}\d\d/\d\d/\d\d\d\d:\d\d:\d\d:\d\d)""",
+     """User ({user_email}[^@\s]{1,2000}@[^@\s]{1,2000}) - Client_ip ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+     """User (({domain}[^@\s\\]{1,2000})\\{1,20})?({user}[^@\s]{1,2000}) - Client_ip ({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
      """ Nat_ip ({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
      """SSLVPN_client_type\s{0,100}({vpn_client_type}[^\s]{1,2000}) - Group""",
      """Browser_type (\")+(?:-|({user_agent}[^"]{1,2000}))""",
