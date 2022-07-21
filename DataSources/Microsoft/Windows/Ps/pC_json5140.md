@@ -11,6 +11,8 @@ Name = json-5140
     Fields = [
       """({event_name}A network share object was accessed)""",
       """({event_code}5140)""",
+      """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,3}Z)"""",
+      """"Computer":"({host}[^"]{1,2000})"""",
       """"Hostname":"({host}[^"]{1,2000})"""",
       """"EventTime":({time}\d{1,100})""",
       """"EventTime":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",

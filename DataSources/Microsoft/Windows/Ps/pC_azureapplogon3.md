@@ -10,12 +10,13 @@ Name = azure-app-logon-3
   Conditions = [ """"OperationName":"Sign-in activity"""", """destinationServiceName =Azure""" ]
   Fields = [
     """exabeam_host=([^=@]{1,2000}@\s{0,100})?({host}\S+)""",
+    """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d{1,3})?Z)"""",
     """"TIMEGENERATED":"({time}\d{4}-\d{1,2}-\d{1,2}\s\d\d:\d\d:\d\d.\d\d\d)"""",
     """"IPAddress":"({src_ip}[A-Fa-f:\d.]{1,2000})"""",
     """"UserPrincipalName":"({user_email}[^"\s@]{1,2000}@({email_domain}[^"\s@]{1,2000}))"""",
     """"ConditionalAccessStatus":"({outcome}[^"]{1,2000})"""",
-    """\sdestinationServiceName =({app}[^=]{1,2000}?)\s{1,100}\w+=""",
-    """"AppDisplayName":"({app}[^"]{1,200}?)\s{0,10}"""",
+    """\sdestinationServiceName =\s{0,20}({app}[^=]{1,2000}?)\s{1,100}\w+=""",
+    """"AppDisplayName":"\s{0,20}({app}[^"]{1,200}?)\s{0,10}"""",
     """UserDisplayName"{1,20}:"{1,20}({user_fullname}[^"]{1,2000})""",
     """UserId"{1,20}:"{1,20}({user_id}[^"]{1,2000})""",
     """"{1,20}IPAddress"{1,20}:"{1,20}({src_ip}[^"]{1,2000})""",
