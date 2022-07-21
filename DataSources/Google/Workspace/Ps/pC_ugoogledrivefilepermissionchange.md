@@ -18,8 +18,9 @@ Name = u-googledrive-file-permission-change
     """"type":"acl_change"[^=]{0,2000}?"name":"({accesses}[^"]{1,2000})"""",
     """"events":[^\}\]]{0,2000}?"name":"({accesses}[^"]{1,2000})[^=]{0,2000}?"""",
     """:"({app}drive)""",
-    ""","parameters":[^=]{0,200}?name":"target_user","value":"(({user_email}[^@",\s]{1,200}@[^@",\s]{1,200})|({user}[^@",\s]{1,200}))"[^=]{0,200}?"""",
+    ""","parameters":[^=]{0,200}?name":"target_user","value":"(({target_user_email}[^@",\s]{1,200}@[^@",\s]{1,200})|({target_user}[^@",\s]{1,200}))"[^=]{0,200}?"""",
     ""","parameters":[^=]{0,2000}?name":"doc_id","value":"({file_id}[^"]{1,200})"[^=]{0,200}?name":"doc_type","value":"((?i)unknown|({file_type}[^"]{1,200}))"[^=]{0,200}?name":"doc_title","value":"({file_name}[^"]{1,200}?(\.\s{0,100}({file_ext}[a-zA-Z]{1,200}?))?)\s{0,100}"[^=]{0,200}?name":"visibility","value":"({privileges}[^"]{1,200})"[^=]{0,200}?name":"owner","value":"({file_owner}[^"]{1,200})\s{0,100}"""",
+    """"actor":\{"email":"({user_email}[^@"]{1,2000}@[^"]{1,2000})"""",
   ]
   DupFields = [ "file_name->object", "accesses->activity"]
 

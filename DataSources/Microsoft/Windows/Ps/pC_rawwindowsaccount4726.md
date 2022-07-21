@@ -19,7 +19,7 @@ Name = raw-windows-account-4726
       """exabeam_host=(gcs-topic|({host}[\w.\-]{1,2000}))""",
       """"agent_hostname":"({host}[^"]{1,200})"""",
       """"computer":"({host}[^"]{1,200})"""",
-      """(?i)(((audit|success)( |_)(success|audit))|information)(\s{1,100}|,)({host}[^\s,]{1,2000})""",
+      """(?i)(((audit|success)( |_)(success|audit))|information)(\s{1,100}|,)({host}[^\s,=]{1,2000})(\s{1,100}|,)""",
       """({host}[^\/\s]{1,2000})\/Microsoft-Windows-Security-Auditing \(4726\)""",
       """"dhn":"({host}[^-"]{1,2000})""",
       """Computer(\w+)?["\s]{0,2000}(:|=)\s{0,100}"?({host}.+?)("|\s)""",

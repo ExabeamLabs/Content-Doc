@@ -10,6 +10,7 @@ Name = azure-event-hub-app-service-audit-logs
   Conditions = [ """destinationServiceName =Azure""","""Category":"AppServiceAuditLogs""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,3}Z)"""",
     """"time"{1,20}:"{1,20}({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{7}\w+)"""",
     """destinationServiceName =({app}[^\s]{1,2000})""",
     """"Category":"({category}[^"]{1,2000})""",
