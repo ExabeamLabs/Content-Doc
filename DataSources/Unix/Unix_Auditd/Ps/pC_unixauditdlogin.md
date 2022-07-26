@@ -10,8 +10,9 @@ Name = unix-auditd-login
   Conditions = [ """type=USER_AUTH""","""PAM:authentication""","""terminal=ssh""" ]
   Fields = [
     """exabeam_host=(gcs-topic|({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[\w.\-]{1,2000}))))""",
-    """hostname="{0,20}(\?|({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[^\s]{1,2000}?))))\s{0,100}(\w+=|")""",
-    """\w{3}\s\d{1,2}\s\d\d:\d\d:\d\d(\.\S+)?\s(::ffff:)?({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[\w\-.]{1,2000})))\s""",
+    """hostname="{0,20}(\?|(({src_ip}(\d{1,3}\.){3}\d{1,3})|({src_host}[^\s]{1,2000}?)))\s{0,100}(\w+=|")""",
+    """\d\d:\d\d:\d\d(\.\S+)?\s(::ffff:)?({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[\w\-.]{1,2000})))\s""",
+
     """({time}\d{2}\/\d{2}\/\d{4}\s{1,100}\d{2}:\d{2}:\d{2})""",
     """msg=audit\(({time}\d{10})""",
     """\saddr=(?:\?|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[^\s]{1,2000}))\s""",

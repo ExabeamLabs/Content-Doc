@@ -13,7 +13,7 @@ Name = cisco-asa-auth-successful
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """%ASA\-({priority}\d{1,100})\-({event_code}\d{1,100})""",
     """({time}\w+ \d{1,100} \d{4} \d\d:\d\d:\d\d):\s{0,100}%ASA""",
-    """Uname:\s{1,100}(({user_email}[^@\s,"]{1,2000}@[^\.\s,"]{1,2000}\.[^\s,"]{1,2000})|({user}[^\s,"]{1,2000}))""",
+    """Uname:\s{1,100}(({user_email}[^@\s,"]{1,2000}@[^\.\s,"]{1,2000}\.[^\s,"]{1,2000})|(({domain}[^\\\s,"]{1,2000})\\{1,20})?({user}[^\s,"]{1,2000}))""",
     """({event_name}User authentication succeeded)""",
     """IP address:\s{0,100}({src_ip}[a-fA-F0-9.:]{1,2000})"""
   ]

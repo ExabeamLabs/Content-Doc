@@ -1,9 +1,12 @@
 #### Parser Content
 ```Java
 {
-Name = cef-microsoft-app-activity-29
+Name = cef-microsoft-app-activity-53
   Product = Office 365
-  Conditions= [ """destinationServiceName =Office 365""", """"TabUpdated""" ]
+  Conditions= [ """destinationServiceName =Office 365""", """"Operation":"AddedToGroup"""", """"UserId":"""" ]
+  Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields} [
+    """duser=(({target_user_email}[^@\s]{1,2000}@[^\.\s]{1,2000}\.[^\s]{1,2000})|({target_user}[^\s@]{1,2000}))\s"""
+  ]
 
 cef-microsoft-app-activity = {
   Vendor = Microsoft
