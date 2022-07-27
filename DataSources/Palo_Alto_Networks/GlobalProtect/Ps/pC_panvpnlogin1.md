@@ -2,8 +2,9 @@
 ```Java
 {
 Name = pan-vpn-login-1
+  Product = GlobalProtect
   DataType = "vpn-login"
-  Conditions = [ """"LogType":"USERID"""", """"DeviceSN":"""", """"Subtype":"login"""" ]
+  Conditions = [ """"LogType":"USERID"""", """"DeviceSN":"""", """"Subtype":"login"""", """"MappingDataSourceType":"globalprotect"""" ]
 
 paloalto-vpn-event = {
   Vendor = Palo Alto Networks

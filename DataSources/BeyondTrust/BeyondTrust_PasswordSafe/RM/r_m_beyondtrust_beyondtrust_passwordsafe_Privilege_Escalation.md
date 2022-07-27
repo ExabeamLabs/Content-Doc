@@ -5,7 +5,7 @@ Vendor: BeyondTrust
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  10   |   6    |     2      |      3      |    3    |
+|  10   |   6    |     2      |      4      |    4    |
 
 | Event Type     | Rules    | Models    |
 | ---- | ---- | ---- |
