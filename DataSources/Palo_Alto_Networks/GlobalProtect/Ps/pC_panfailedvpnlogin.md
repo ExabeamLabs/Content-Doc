@@ -2,6 +2,7 @@
 ```Java
 {
 Name = pan-failed-vpn-login
+  Product = GlobalProtect
   DataType = "failed-vpn-login"
   Conditions = [ """"LogType":"GLOBALPROTECT"""", """"DeviceSN":"""", """"EventStatus":"failure"""" ]
 

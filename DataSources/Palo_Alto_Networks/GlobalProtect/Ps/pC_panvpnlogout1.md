@@ -2,8 +2,9 @@
 ```Java
 {
 Name = pan-vpn-logout-1
+  Product = GlobalProtect
   DataType = "vpn-logout"
-  Conditions = [ """"LogType":"USERID"""", """"DeviceSN":"""", """"Subtype":"logout"""" ]
+  Conditions = [ """"LogType":"USERID"""", """"DeviceSN":"""", """"Subtype":"logout"""", """"MappingDataSourceType":"globalprotect"""" ]
   Fields = ${PaloAltoParserTemplates.paloalto-vpn.Fields}[
     """"SourceIP":"({src_ip}[A-Fa-f\d\.:]{1,2000})""""
   ]
