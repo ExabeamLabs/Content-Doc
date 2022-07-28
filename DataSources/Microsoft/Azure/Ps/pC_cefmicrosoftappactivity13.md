@@ -25,6 +25,7 @@ cef-microsoft-app-activity = {
     """"OriginatingServer":"({host}\w+)\s{0,100}(\([^\)]{1,2000}?\))?(\\r\\n)?"""",
     """CEF:([^\|"]{0,2000}\|){5}({activity}[^\|"]{1,2000})""",
     """\sflexString1=({activity}[^=]{1,2000}?)\.?\s{1,100}(\w+=|$)""",
+    """"Operation":"({activity}[^"]{1,2000}?)\.?"""",
     """"ObjectId":"(Unknown|Not Available|({object}[^"]{1,2000}?))\s{0,100}"""",
     """\sfname=\s{0,100}(N\/A|({object}[^=]{1,2000}?))\s{0,100}(\w+=|$)""",
     """((fileType=(n\/a|N\/A|mail|calendar-event|note|message)[^\n]{0,2000}?\sfname=\s{0,100}(N\/A|({subject}[^=]{1,2000}?)))|(fileType=group[^\n]{0,2000}?\sfname=\s{0,100}(N\/A|({group_name}[^=]{1,2000}?)))|(fileType=(file|folder|attachment|report)[^\n]{0,2000}?\sfname=\s{0,100}(N\/A|({file_name}[^=]{1,2000}?)))|(fileType=process[^\n]{0,2000}?\sfname=\s{0,100}(N\/A|({process_name}[^=]{1,2000}?)))|(fileType=app(lication)?[^\n]{0,2000}?\sfname=\s{0,100}(N\/A|({app}[^=]{1,2000}?))))\s{1,100}(\w+=|$)""",

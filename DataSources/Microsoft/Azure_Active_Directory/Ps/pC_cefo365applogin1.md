@@ -16,8 +16,8 @@ Name = cef-o365-app-login-1
       """"appDisplayName":"(NotApplicable|({app}[^"]{1,2000}?))\s{0,100}"""",
       """\WoldFile=({user_agent}[^,]{1,2000}?)\s{1,100}(\w{1,100}=|$)""",
       """"failureReason":"({failure_reason}[^"]{1,2000})""",
-      """"userDisplayName":"({user_fullname}({user_firstname}[^\s"]{1,2000}?)\s{1,100}({user_lastname}[^"\(\),]{1,2000}))\s{0,100}[^"]{0,2000}?"""",
-      """"userDisplayName":"({user_fullname}({user_lastname}[^",\s]{1,2000})\s{0,100
+      """"userDisplayName":"({user_fullname}({user_firstname}[^\s"]{1,2000}?)\s{1,100}({user_lastname}[^"\(\),]{1,2000}))(\s{1,100}[^"]{0,2000}?"|")""",
+      """"userDisplayName":"({user_fullname}({user_lastname}[^",]{1,2000}?)\s{0,100
 
 }
 ```
