@@ -10,6 +10,7 @@ Name = o365-inbox-rules-2
   Conditions = ["""Operation":"Set-Mailbox""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)Z"""",
     """"CreationTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""",
     """Forward[^\}]{1,2000}?Value":"(smtp:)?({target}[^"]{1,2000}@({target_domain}[^"]{1,2000}))""""
     """"ResultStatus":"({outcome}[^"]{1,2000})"""",

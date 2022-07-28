@@ -9,6 +9,7 @@ Name = asa-svc-vpn-716002-end
     TimeFormat = "MMM dd yyyy HH:mm:ss"
     Conditions = [ "WebVPN session terminated" , "-716002" ]
     Fields = [
+      """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """exabeam_raw=.+?({time}\w+ \d{1,100} \d\d\d\d \d{1,100}:\d{1,100}:\d\d)""",
       """exabeam_host=(.+?@\s{0,100})?({host}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w.\-]{1,2000}))""",
       """\w{1,3}\s{1,2}\d{1,2}\s\d\d:\d\d:\d\d\s({host}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w.\-]{1,2000}))\s%ASA-""",
