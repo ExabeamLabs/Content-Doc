@@ -4,7 +4,7 @@ Product: Powertech Identity Access Manager (BoKs)
 -------------------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  624  |  113   |    128     |      7      |    7    |
+|  625  |  113   |    128     |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
