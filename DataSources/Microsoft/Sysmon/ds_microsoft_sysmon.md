@@ -4,7 +4,7 @@ Product: Sysmon
 ---------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  590  |   96   |    126     |      8      |    8    |
+|  591  |   96   |    126     |      8      |    8    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -4,7 +4,7 @@ Product: Citrix Netscaler
 -------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  604  |  114   |    129     |      6      |    6    |
+|  605  |  114   |    129     |      6      |    6    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -28,9 +28,9 @@
             "score": 2
         }, 
         {
-            "comment": "56 rules", 
+            "comment": "57 rules", 
             "techniqueID": "T1098", 
-            "score": 56
+            "score": 57
         }, 
         {
             "comment": "1 rules", 
@@ -703,9 +703,9 @@
             "score": 5
         }, 
         {
-            "comment": "17 rules", 
+            "comment": "18 rules", 
             "techniqueID": "T1047", 
-            "score": 17
+            "score": 18
         }, 
         {
             "comment": "16 rules", 
