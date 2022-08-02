@@ -15,8 +15,9 @@ Name = sysmon-windows-dns-query
     """QueryName:\s{0,100}({query}[^\s]{1,2000})""",
     """ProcessGuid:\s{0,100}\{({process_guid}[A-F0-9a-f-]{1,2000})\}""",
     """ProcessId:\s{0,100}({pid}\d{1,100})""",
-    """QueryResults:\s({response}.+?)\sImage:""",
-    """Image:\s{0,100}(?:<unknown process>|({process}({directory}[^"]{0,2000}[\\\/]{1,2000})?({process_name}[^"\\\/]{1,2000})))\s""",
+    """QueryResults:\s(-|({response}.+?))\sImage:""",
+    """Image:\s{0,100}(?:<unknown process>|({process}(({directory}[^"]{0,2000}?)[\\\/]{1,2000})?({process_name}[^"\\\/:]{1,2000}?)))\s(User:|$)""",
+    """\sUser:\s(({domain}[^\\"]{1,2000})\\{1,20})?({user}[^"$]{1,2000}?)\s{0,20}$"""
 	]
 
 
