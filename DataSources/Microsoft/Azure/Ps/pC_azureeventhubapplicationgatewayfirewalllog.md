@@ -15,6 +15,7 @@ Name = azure-event-hub-application-gateway-firewall-log
     """"transactionId":"({transaction_id}[^"]{1,2000})""",
     """"file":"({file_path}({file_parent}[^\/"]{1,2000})\/({file_name}[^"]{1,2000}))""",
     """originalHost":"(({src_ip}[A-Fa-f\d.:]{1,2000})|({src_host}.+?[^\\]))"""",
+    """"operationName":"({activity}[^"]{1,2000})""""
   ]
 
 cef-azure-event-hub = {

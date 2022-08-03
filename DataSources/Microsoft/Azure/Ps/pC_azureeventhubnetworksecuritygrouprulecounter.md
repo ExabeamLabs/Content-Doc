@@ -12,6 +12,7 @@ Name = azure-event-hub-network-security-group-rule-counter
     """primaryIPv4Address":"({src_ip}.*?[^\\])"""",
     """ruleName":"({rule}.*?[^\\])"""",
     """direction":"({direction}.*?[^\\])"""",
+    """"operationName":"({activity}[^"]{1,2000})""""
   ]
 
 cef-azure-event-hub = {

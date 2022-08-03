@@ -6,25 +6,23 @@ Name = pan-vpn-login-1
   DataType = "vpn-login"
   Conditions = [ """"LogType":"USERID"""", """"DeviceSN":"""", """"Subtype":"login"""", """"MappingDataSourceType":"globalprotect"""" ]
 
-paloalto-vpn-event = {
+paloalto-vpn-login = {
   Vendor = Palo Alto Networks
   Product = GlobalProtect
-  Lms = Splunk
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSS"
+  Lms = Direct 
+  TimeFormat = "MMM dd yyyy HH:mm:ss zzz"
   Fields = [
-      """devTime=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d\d\d\d)""",
-      """PublicIPv(4|6)=(\s|({src_ip}[A-Fa-f\d:.]{1,2000}))""",
-      """PrivateIPv(4|6)=(\s|({dest_ip}[A-Fa-f\d:.]{1,2000}))""",
-      """AuthMethod=({auth_method}[^=]{1,2000}?)\s\w{1,100}=""",
-      """usrName =((({user_email}({user}[^@]{1,2000})@({domain}[^.]{1,2000})\.\w{1,2000})\s)|(({=domain}[^\\]{1,2000})\\+)?({=user}[^\s]{1,2000}))""", 
-      """DeviceName =({src_host}[\w\-.]{1,2000})""",
-      """Description=({additional_info}[^=]{1,2000})\s\w{1,100}=""",
-      """EventStatus=({outcome}[^=]{1,2000}?)\s\w{1,100}=""",
-      """Palo Alto Networks\|Prisma Access\|2.1\|({event_name}[^|]{1,2000})\|""",
-      """EndpointDeviceName =({host}[\w\-.]{1,2000})""",
-      """EndpointOSVersion=({os}[^=]{1,2000}?)\s\d""",
-      """SourceRegion=({src_country}[^=]{1,2000}?)\s\w{1,100}=""",
-      """Portal=({app}GlobalProtect_External_Gateway)"""
-    
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[^\s]{1,2000})""",
+    """GPClientHostName =(|({host}[\w.-]{0,2000}?))\s{1,100}\w{1,2000}?=""",
+    """rt=({time}\w{3}\s\d{2}\s\d{4}\s(\d{2}:){2}\d{2}\s\S{3})\s""",
+    """GPClientPrivateIPv4=({src_translated_ip}[A-Fa-f0-9.:]{1,2000})""",
+    """ClientPublicIPv4=({src_ip}[A-Fa-f0-9.:]{1,2000})""",
+    """GPSourceUser=(({domain}[^\\\s,]{1,2000})\\+)?({user}[^\\\s,]{1,2000})""",
+    """dvchost=({src_host}[\w.-]{1,2000}?)\s""",
+    """GPClientOS=(|({os}[^=]{0,2000}?))(\s{1,100})?\w{1,2000}?=""",
+    """msg="({additional_info}[^"]{1,2000}?)"""",
+    """GPStatus=({outcome}\S{1,2000}?)\s""",
+    """({app}GLOBALPROTECT)"""
+  
 }
 ```

@@ -15,6 +15,7 @@ Name = azure-event-hub-key-vault-auth
     """claims\/upn":"({user_email}[^"]{1,2000})""",
     """"properties":.+?"id":"({object}[^"]{1,2000})"""
   ]
+   DupFields = ["event_name->activity"]
 
 cef-azure-event-hub = {
   Vendor = Microsoft
