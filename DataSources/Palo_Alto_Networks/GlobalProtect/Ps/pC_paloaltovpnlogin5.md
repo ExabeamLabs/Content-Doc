@@ -1,10 +1,12 @@
 #### Parser Content
 ```Java
 {
-Name = pan-failed-vpn-login
-  Product = GlobalProtect
-  DataType = "failed-vpn-login"
-  Conditions = [ """"LogType":"GLOBALPROTECT"""", """"DeviceSN":"""", """"EventStatus":"failure"""" ]
+Name = paloalto-vpn-login-5
+  DataType = "vpn-login"
+  Conditions = [ """|gateway-prelogin|GLOBALPROTECT|""", """GPSourceUser=""" ]
+  Fields = ${PaloAltoParserTemplates.paloalto-vpn-login.Fields}[
+    """({event_name}gateway-prelogin)"""
+  ]
 
 paloalto-vpn-login = {
   Vendor = Palo Alto Networks

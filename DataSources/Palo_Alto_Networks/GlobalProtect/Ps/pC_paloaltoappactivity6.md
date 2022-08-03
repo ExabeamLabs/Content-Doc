@@ -1,15 +1,18 @@
 #### Parser Content
 ```Java
 {
-Name = pan-failed-vpn-login
-  Product = GlobalProtect
-  DataType = "failed-vpn-login"
-  Conditions = [ """"LogType":"GLOBALPROTECT"""", """"DeviceSN":"""", """"EventStatus":"failure"""" ]
+Name = paloalto-app-activity-6
+  Conditions = [ """|gateway-getconfig|GLOBALPROTECT|""", """GPSourceUser=""" ]
+  Fields = ${PaloAltoParserTemplates.paloalto-app-activity.Fields}[
+    """({event_name}gateway-getconfig)"""
+  ]
+  DupFields = [ "event_name->activity" ]
 
-paloalto-vpn-login = {
+paloalto-app-activity = {
   Vendor = Palo Alto Networks
   Product = GlobalProtect
-  Lms = Direct 
+  Lms = Direct
+  DataType = "app-activity"
   TimeFormat = "MMM dd yyyy HH:mm:ss zzz"
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[^\s]{1,2000})""",
