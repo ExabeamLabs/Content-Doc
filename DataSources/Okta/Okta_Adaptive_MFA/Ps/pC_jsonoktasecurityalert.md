@@ -32,7 +32,7 @@ json-okta-auth = {
     """"target(s)?"{1,20}:[^\}\]]{1,2000}?"{1,20}displayName"{1,20}\s{0,100}:\s{0,100}"{1,20}((?i)unknown|({object}[^"]{1,2000}[^\s]))"""",
     """request"{1,20}:.+?User.+?"{1,20}displayName"{1,20}:(null|"{1,20}(Okta System|(?i)unknown|(?:({user_firstname}[^,"]{1,2000}),\s{0,100}({user_lastname}[^"]{1,2000})|({user_fullname}[^"]{1,2000})))")""",
     """"actor"{1,20}.+?"{1,20}type"{1,20}:"{1,20}User.+?displayName"{1,20}:(null|"{1,20}(Okta System|Okta Admin|(?i)unknown|(?:({user_lastname}[^,"]{1,2000}),\s{0,100}({user_firstname}[^"]{1,2000})|({user_fullname}[^"]{1,2000}))))""",
-    """request"{1,20}:.+?"{1,20}type"{1,20}:"{1,20}User"{1,20},"{1,20}alternateId"{1,20}:(null|"{1,20}(system@okta\.com|(?:({user_email}[^"@]{1,2000}@({domain}[^"]{1,2000}))|(({=domain}[^\\\/]{1,2000})[\/\\]{1,2000})?({user}[^"]{1,2000}))))""",
+    """request"{1,20}:.+?"{1,20}type"{1,20}:"{1,20}User"{1,20},"{1,20}alternateId"{1,20}:(null|"{1,20}(system@okta\.com|(?:({user_email}[^"@]{1,2000}@({domain}[^"]{1,2000}))|(({=domain}[^\\\/"]{1,2000})[\/\\]{1,2000})?({user}[^"]{1,2000}))))""",
     """"actor"{1,20}:[^\]]{0,2000}?"{1,20}type"{1,20}:"{1,20}User"{1,20},"{1,20}alternateId"{1,20}\s{0,100}:\s{0,100}"{1,20}(system@okta\.com|(?:({user_email}[^"@]{1,2000}@({domain}[^"]{1,2000}\.[^"]{1,2000}))|({user}[^@"]{1,2000})@({=domain}[^"@]{1,2000})|(({=domain}[^\\"]{1,2000})\\{1,20})?({=user}[^"]{1,2000})))"""",
     """"login":\s{0,100}"({user_email}[^"\s@]{1,2000}@[^"\s@]{1,2000})"""",
     """"login":\s{0,100}"[^@]{1,2000}@({domain}[^"]{1,2000})""""

@@ -28,7 +28,7 @@ Name = box-skyformation-file-activity
     """"service_name":"({service}[^"]{1,2000})""",
     """"shared_link_id":"({resource}[^,"\s]{1,2000}?)"""",
     """\smsg=({additional_info}.*?)\s\w+=""",
-    """owned_by"{1,20}:.+?"login"{1,20}:"{1,20}({target_user}[^\s@"]{1,2000}@[^\s@"]{1,2000})""",
+    """owned_by"{1,20}:.+?"login"{1,20}:"{1,20}({target_user_email}[^\s@"]{1,2000}@[^\s@"]{1,2000})""",
     """[^\w]created_by"{1,20}\s{0,100}:\s{0,100}[^\}]{1,2000}?[^\w]name"{1,20}\s{0,100}:\s{0,100}"{1,20}(Unknown User|({user_fullname}[^":,]{1,2000}))[",\]\}]""",
     """[^\w]created_by"{1,20}\s{0,100}:\s{0,100}[^\}]{1,2000}?[^\w]login"{1,20}\s{0,100}:\s{0,100}"{1,20}.*?@([\.\w+]{1,2000}\.)?({email_domain}[^\.\s]{1,2000}\.(?:com|net|info|edu|org|gov|co|jp|ru|de|ir|it|in|fr|info|pl|nl|es|gr|cz|eu|tv|me|jp|ca|cn|uk|my|cc|id|us|nz|biz|club|io|gg|fi|au|st|tw|asia|sg|ie|li|za|ch))""",
     """"user":\{[^\}]{1,2000}?"name":"({user_fullname}[^"]{1,2000})","email":"({user_email}[^@]{1,2000}@({email_domain}[^"]{1,2000}))""""
