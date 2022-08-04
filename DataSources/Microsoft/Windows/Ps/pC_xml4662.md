@@ -14,14 +14,14 @@ Name = xml-4662
     """<TimeCreated SystemTime(\\)?='({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """<Computer>({host}[^<]{1,2000})""",
     """<Data Name(\\)?='SubjectUserSid'>({user_sid}[^<]{1,2000})""",
-    """<Data Name(\\)?='SubjectUserName'>(-|({user}[^<]{1,2000}))""",
+    """<Data Name(\\)?='SubjectUserName'>(-|CN=[^<]{1,2000}|({user}[^<]{1,2000}))""",
     """<Data Name(\\)?='SubjectDomainName'>(-|({domain}[^<]{1,2000}))""",
     """<Data Name(\\)?='SubjectLogonId'>({logon_id}[^<]{1,2000})""",
     """<Data Name(\\)?='ObjectServer'>({object_class}[^<]{1,2000})""",
     """<Data Name(\\)?='ObjectType'>({object_type}[^<]{1,2000})""",
     """<Data Name(\\)?='ObjectName'>({object}[^<]{1,2000})""",
     """<Data Name(\\)?='OperationType'>({activity}[^<]{1,2000})""",
-    """<Data Name(\\)?='Properties'>(-|({properties}[^<]{1,2000}?))\s{0,100}<""",
+    """<Data Name(\\)?='Properties'>\s{0,100}(-|({properties}[^<]{1,2000}?))\s{0,100}<""",
     """<Keyword>({outcome}[^<]{1,2000})<""",
     """Accesses:\s{0,100}({accesses}[^:]{1,2000}?)\s{1,100}Access Mask:"""
   ]

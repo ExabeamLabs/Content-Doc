@@ -3,6 +3,10 @@
 {
 Name = s-zscaler-web-activity-2
   Conditions = [ """threatclass=Clean Transaction""", """bwthrottle=""", """urlsupercategory=""" ]
+  Fields = ${ZscalerParserTemplates.s-zscaler-web-activity.Fields}[
+    """\suser=({domain}[\w.\-]{1,2000})->({user}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\suser=(?![^\s]{1,2000}@[^\s]{1,2000})({user}[^\s]{1,2000})\s{0,100}(\w+=|$)"""
+  ]
 
 s-zscaler-web-activity = {
   Vendor = Zscaler
@@ -27,9 +31,7 @@ s-zscaler-web-activity = {
     """\suseragent=(Unknown|({user_agent}[^=]{1,2000}?))\s{0,100}(\w+=|$)""",
     """\sstatus=({result_code}\d{1,100})""",
     """\sclientpublicIP=({src_ip}[A-Fa-f:\d.]{1,2000})""",
-    """\sClientIP=({src_ip}[A-Fa-f\d:.]{1,2000})""",
-    """\suser=({domain}[\w.\-]{1,2000})->({user}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
-    """\suser=(?![^\s]{1,2000}@[^\s]{1,2000})({user}[^\s]{1,2000})\s{0,100}(\w+=|$)""",
+    """\sClientIP=({src_ip}[A-Fa-f\d:.]{1,2000})""", 
     """\suser=(?=[^\s]{1,2000}@[^\s]{1,2000})({user_email}[^\s@]{1,2000}@[^\s@]{1,2000})\s{0,100}(\w+=|$)""",
     """\surl=(?:None|({full_url}[^\s]{1,2000}))\s{0,100}(\w+=|$)""",
     """\surl=(\w{1,2000}:\/{2})?[^\/]{1,2000}({uri_path}\/[^?\s]{1,2000})""",

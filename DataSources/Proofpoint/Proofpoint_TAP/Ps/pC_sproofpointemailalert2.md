@@ -39,6 +39,6 @@ s-proofpoint-email-in-1 = {
     """"messageID":\s{0,100}"<?({message_id}[^>"]{1,2000})""",
     """src-account-name":"({account_name}[^"]{1,2000})"""
   ]
-  DupFields = [ "attachment->file_name", "sender->external_address" , "alert_type->alert_name"
+  DupFields = [ "attachment->file_name", "sender->external_address"
 }
 ```

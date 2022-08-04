@@ -7,7 +7,7 @@ Name = azure-event-hub-application-gateway-access-log
   Fields = ${MSParserTemplates.cef-azure-event-hub.Fields}[
     """host":"({app}[^"\\]{1,2000})\\*"""",
     """operationName":"({activity}.+?[^\\])"""",
-    """originalHost":"(({src_ip}[A-Fa-f\d.:]{1,2000})|({src_host}.+?[^\\]))"""",
+    """originalHost":"(\~\.\*||({src_ip}[A-Fa-f\d.:]{1,2000})|({src_host}.+?[^\\"]))"""",
     """userAgent":"(-|({user_agent}[^"\\]{1,2000}))\\*"""",
     """requestUri":"({request_uri}[^"]{1,2000})"""",
     """receivedBytes":"{0,20}({bytes_in}\d{1,100})""",
