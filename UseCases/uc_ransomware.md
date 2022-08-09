@@ -783,6 +783,10 @@ Use Case: Ransomware
 |                               Product                                | Event Types                                 | MITRE TTP                                                 | Content                                                                                              |
 |:--------------------------------------------------------------------:| ------------------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | [Weblogin](../DataSources/Weblogin/Weblogin/ds_weblogin_weblogin.md) | <ul><li>web-activity-allowed</li></li></ul> | T1071.001 - Application Layer Protocol: Web Protocols<br> | [<ul><li>1 Rules</li></ul>](../DataSources/Weblogin/Weblogin/RM/r_m_weblogin_weblogin_Ransomware.md) |
+### Vendor: Wiz
+|                   Product                   | Event Types                      | MITRE TTP                  | Content                                                                          |
+|:-------------------------------------------:| -------------------------------- | -------------------------- | -------------------------------------------------------------------------------- |
+| [Wiz](../DataSources/Wiz/Wiz/ds_wiz_wiz.md) | <ul><li>app-login</li></li></ul> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](../DataSources/Wiz/Wiz/RM/r_m_wiz_wiz_Ransomware.md) |
 ### Vendor: Workday
 |                             Product                             | Event Types                                                                                                  | MITRE TTP                  | Content                                                                                          |
 |:---------------------------------------------------------------:| ------------------------------------------------------------------------------------------------------------ | -------------------------- | ------------------------------------------------------------------------------------------------ |

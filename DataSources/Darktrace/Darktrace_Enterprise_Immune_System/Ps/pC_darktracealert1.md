@@ -20,7 +20,7 @@ Name = darktrace-alert-1
     """"priority"{1,20}:({alert_severity}\d{1,100})""",
     """"{1,20}typename"{1,20}:"{1,20}({alert_type}[^"]{1,2000})""",
     """"os"{1,20}:"{1,20}({os}[^"]{1,2000})""",
-    """filterType"{1,20}:?"{1,20}Destination IP.+?value"{1,20}:"{1,20}({dest_ip}[^"]{1,2000})""",
+    """filterType"{1,20}:?"{1,20}Destination IP.+?value"{1,20}:"{1,20}({dest_ip}[a-fA-F\d:\.]{1,2000})"\}""",
     """"{1,20}description"{1,20}:"{1,20}({additional_info}[^"]{1,2000})"""
     ]
 
