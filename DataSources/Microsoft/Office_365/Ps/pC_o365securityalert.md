@@ -11,7 +11,7 @@ Name = o365-security-alert
   Fields = [
    """"(ts|CreationTime)":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
    """exabeam_host=({host}[^\s]{1,2000})""",
-   """"f3u":"({user_email}[^"]{1,2000})""",
+   """"f3u":"({user_email}[^@"]{1,2000}@[^\."]{1,2000}\.[^"]{1,2000})"""",
    """"ad":"({additional_info}[^"]{1,2000})""",
    """"(Name|an)":"({alert_name}[^"]{1,2000})""",
    """"AlertId":"({alert_id}[^"]{1,2000})""""

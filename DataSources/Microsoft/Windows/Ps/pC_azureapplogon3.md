@@ -17,7 +17,7 @@ Name = azure-app-logon-3
     """"ConditionalAccessStatus":"({outcome}[^"]{1,2000})"""",
     """\sdestinationServiceName =\s{0,20}({app}[^=]{1,2000}?)\s{1,100}\w+=""",
     """"AppDisplayName":"\s{0,20}({app}[^"]{1,200}?)\s{0,10}"""",
-    """UserDisplayName"{1,20}:"{1,20}({user_fullname}[^"]{1,2000})""",
+    """UserDisplayName"{1,20}:"{1,20}([a-f\d]{1,20}(\-[a-f\d]{1,20}){4}|({user_fullname}[^"]{1,2000}))""",
     """UserId"{1,20}:"{1,20}({user_id}[^"]{1,2000})""",
     """"{1,20}IPAddress"{1,20}:"{1,20}({src_ip}[^"]{1,2000})""",
     """"(Device)?(b|B)rowser":"({browser}[^"]{1,2000})""", 
