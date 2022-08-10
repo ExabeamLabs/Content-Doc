@@ -5,7 +5,7 @@ Vendor: CyberArk
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   7   |   2    |     2      |      2      |    2    |
+|   7   |   2    |     2      |      3      |    3    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

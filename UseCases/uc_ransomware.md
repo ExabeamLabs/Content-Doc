@@ -3,9 +3,9 @@ Use Case: Ransomware
 ====================
 
 ### Vendor: APC
-|                   Product                   | Event Types                                               | MITRE TTP                  | Content                                                                          |
-|:-------------------------------------------:| --------------------------------------------------------- | -------------------------- | -------------------------------------------------------------------------------- |
-| [APC](../DataSources/APC/APC/ds_apc_apc.md) | <ul><li>network-alert</li><li>remote-logon</li></li></ul> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](../DataSources/APC/APC/RM/r_m_apc_apc_Ransomware.md) |
+|                   Product                   | Event Types                                                                                                            | MITRE TTP                  | Content                                                                          |
+|:-------------------------------------------:| ---------------------------------------------------------------------------------------------------------------------- | -------------------------- | -------------------------------------------------------------------------------- |
+| [APC](../DataSources/APC/APC/ds_apc_apc.md) | <ul><li>dlp-email-alert-in</li><li>dlp-email-alert-in-failed</li><li>network-alert</li><li>remote-logon</li></li></ul> | T1078 - Valid Accounts<br> | [<ul><li>1 Rules</li></ul>](../DataSources/APC/APC/RM/r_m_apc_apc_Ransomware.md) |
 ### Vendor: AVI Networks
 |                                           Product                                           | Event Types                      | MITRE TTP                  | Content                                                                                                                |
 |:-------------------------------------------------------------------------------------------:| -------------------------------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
