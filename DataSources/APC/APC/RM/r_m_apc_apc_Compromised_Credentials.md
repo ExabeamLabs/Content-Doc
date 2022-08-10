@@ -5,7 +5,7 @@ Vendor: APC
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  58   |   25   |     10     |      2      |    2    |
+|  58   |   25   |     10     |      4      |    4    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |
