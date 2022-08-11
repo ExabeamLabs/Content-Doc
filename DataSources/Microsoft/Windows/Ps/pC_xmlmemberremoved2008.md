@@ -21,14 +21,7 @@ Name = xml-member-removed-2008
     """'SubjectUserName'>({user}[^"\s<]{1,2000})<""",
     """'SubjectDomainName'>({domain}[^"\s<]{1,2000})<""",
     """'SubjectLogonId'>({logon_id}[^"\s<]{1,2000})<""",
-    """CN=({account_id}.*?(?=,OU))""",
-    """OU=({account_ou}[^,]{1,2000})""",
-    """'TargetUserName'>({group_name}[^<]{1,2000})""",
-    """'TargetDomainName'>({group_domain}[^<]{1,2000})""",
-    """'TargetSid'>({group_id}[^<]{1,2000})"""
-  ]
-  DupFields = [ "host->dest_host" ]
-
+    """CN=({account_id}.*?(?=\s{0,100
 
 }
 ```
