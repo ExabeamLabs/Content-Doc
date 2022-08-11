@@ -5,7 +5,7 @@ Vendor: Amazon
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  20   |   11   |     1      |      9      |    9    |
+|  20   |   11   |     1      |     17      |   17    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

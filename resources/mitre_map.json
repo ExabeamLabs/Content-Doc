@@ -538,6 +538,11 @@
             "score": 5
         }, 
         {
+            "comment": "11 rules", 
+            "techniqueID": "TA0004", 
+            "score": 11
+        }, 
+        {
             "comment": "2 rules", 
             "techniqueID": "T1566.001", 
             "score": 2
@@ -976,6 +981,11 @@
             "comment": "2 rules", 
             "techniqueID": "T1559.002", 
             "score": 2
+        }, 
+        {
+            "comment": "3 rules", 
+            "techniqueID": "TA0007", 
+            "score": 3
         }, 
         {
             "comment": "2 rules", 
