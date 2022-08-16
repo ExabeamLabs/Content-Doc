@@ -31,8 +31,9 @@ Name = skyformation-cloudflare-waf
     """"ClientRequestURI"{1,20}:"{1,20}({uri_query}[^"\s]{1,2000})""",
     """"ClientRequestPath"{1,20}:"{1,20}({uri_path}[^"]{1,2000})""",
     """"ClientRequestProtocol"{1,20}:"{1,20}({protocol}[^"]{1,2000})""",
-    """"SecurityLevel"{1,20}:"{1,20}({alert_severity}[^"]{1,2000})""",
- ]
+    """"SecurityLevel"{1,20}:"{1,20}({alert_severity}[^"]{1,2000})"""
+  ]
+  DupFields = [ "dest_ip->host" ]
 
 
 }
