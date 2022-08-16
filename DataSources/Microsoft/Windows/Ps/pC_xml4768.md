@@ -15,7 +15,7 @@ Name = xml-4768
       """<EventID>({event_code}\d{1,100})</EventID>""",
       """<Data Name ='TargetSid'>(NULL SID|({user_sid}[^<]{1,2000}))</Data>""",
       """<Data Name ='Status'>({result_code}[^<]{1,2000})</Data>""",
-      """<Data Name ='TargetUserName'>(?=\w)({user}[^<=]{1,2000})</Data>""",
+      """<Data Name ='TargetUserName'>(?=\w)(({user_email}[^@]{1,2000}@[^\s<]{1,2000}?)|({user}[^<=]{1,2000}))<\/Data>""",
       """<Data Name ='TargetDomainName'>(?=\w)({domain}[^<]{1,2000})</Data>""",
       """<Data Name ='IpAddress'>(::[\w]{1,2000}:)?({dest_ip}[a-fA-F:\d.]{1,2000})</Data>""",
       """<Data Name ='TicketEncryptionType'>({ticket_encryption_type}[^<]{1,2000})</Data>""",
