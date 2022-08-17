@@ -20,7 +20,7 @@ Name = s-zscaler-dlp-alert-1
     """\sdlpengine=({alert_name}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\surl=({target}[^\s]{1,2000})\s{1,100}(\w+=|$)""",
     """responsesize=({bytes_in}\d{1,20})""",
-    """requestsize==({bytes_out}\d{1,20})""",
+    """requestsize=({bytes_out}\d{1,20})""",
     """requestmethod=({method}[^\s]{1,2000})""",
     """\sodevicehostname=({src_host}[^\s]{1,2000})""",
     """\sodeviceowner=(NA|({device_owner}[^\s]{1,2000}))"""
