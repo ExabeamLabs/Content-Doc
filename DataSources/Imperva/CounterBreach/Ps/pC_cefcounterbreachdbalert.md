@@ -26,7 +26,7 @@ Name = cef-counterbreach-db-alert
     """\smsg=({additional_info}.+?)\s\w+=""",
     """\scat=({alert_type}.+?)\s\w+=""",
     """CounterBreach\|([^|]{1,2000}\|){3}({alert_severity}[^|]{1,2000})""",
-    """\scs3=(\[\\*)?(?:|({malware_url}.+?))\]?\s{0,100}\w+=""",
+    """\scs3=(\[\\*)?(?:|({database_object}.+?))\]?\s{0,100}\w+=""",
     """\|File\|.+?\scs3=(\[\\*)?([^\\]{1,2000}\\+)*(?: |({file_name}.+?))\]?\s{0,100}\w+=""",
     """\sact=(?:|({outcome}.+?))\s\w+=""",
     """\scs5=({response_size}\d{1,100})""",

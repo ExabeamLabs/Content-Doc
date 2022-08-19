@@ -18,7 +18,7 @@ crowdstrike-file-operations = {
       """"aid":\s{0,100}"({aid}[^"]{1,2000})""",
       """"SourceFileName":\s{0,100}"({src_file_dir}[^"]{1,2000}\\+)?({src_file_name}[^\\"]{1,2000})""",
       """"TargetFileName":\s{0,100}"({file_path}[^"]{1,2000})""",
-      """"TargetFileName":\s{0,100}"({file_parent}[^"]{0,2000}[\\\/]{1,2000})({file_name}[^\\\/"]{1,2000}?(\.(\d{1,20}|({file_ext}[^\\\/"\.]{1,2000}?)))?)\s{0,100}"""",
+      """"TargetFileName":\s{0,100}"({file_parent}[^"]{0,2000}[\\\/]{1,2000})({file_name}[^\\\/"]{1,2000}?(\.(unknown|\d{1,20}|({file_ext}[^\\\/"\.\-,]{1,2000}?)))?)\s{0,100}"""",
       """suser=(system|({user}[^\s]{1,2000}))""",
       """src-account-name":"({account_name}[^"]{1,2000})""",
       """"((?i)SHA256String|SHA256HashData)":"({sha256}[^"]{1,2000})"""",

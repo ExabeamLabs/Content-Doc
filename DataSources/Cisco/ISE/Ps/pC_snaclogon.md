@@ -17,14 +17,14 @@ s-nac-logon = {
     """exabeam_host=(::ffff:)?({host}[^\s]{1,2000})""",
     """\s(::ffff:)?({host}(?!\d\d:\d\d:\d\d)[\w.\-]{1,2000})\s{1,100}(\S+\s{1,100}){3}(\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)"""
     """\s(::ffff:)?({host}(?!\d\d:\d\d:\d\d)[\w.\-]{1,2000})\s{1,100}(\S+\s{1,100}){4}(\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)"""
-    """User-?Name =(USERNAME|([a-fA-F\d]{2}[-:]){5}[a-fA-F\d]{2}|({user}[^,;]{1,2000}?))\s{0,100}(,|;)""",
+    """User-?Name =(USERNAME|([a-fA-F\d]{2}[-:]){5}[a-fA-F\d]{2}|host\/({src_host}[\w\-.]{1,2000})|({user}[^,;]{1,2000}?))\s{0,100}(,|;)""",
     """User-?Name =(({domain}[^,;]{1,2000}?)[\\\/]{1,2000})?(USERNAME|([a-fA-F\d]{2}[-:]){5}[a-fA-F\d]{2}|({user}[^,;\\\/@]{1,2000}))""",
     """User-?Name =([^,;]{1,2000}?[\\\/]{1,2000})?({user}[^,;\\\/@]{1,2000})@({domain}[^,;]{1,2000})""",
     """, UserName =host\/[^.]{1,2000}\.({domain}[^,]{1,2000}),\s{0,100}NAS-IP-Address""",
     """, UserName =(({user_type}host)\/)?(({domain}[^\s\\]{1,2000})\\+)?(USERNAME|([a-fA-F\d]{2}[-:]){5}[a-fA-F\d]{2}|({user}[^,@]{1,2000}?))\s{0,100},""",
     """Called-Station-ID=(({dest_mac}([a-fA-F\d]{2}[-:]){5}[a-fA-F\d]{2})|(::ffff:)?({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})|(::ffff:)?({dest_host}[\w\-.]{1,2000}))(:({ssid}[^,]{1,2000}))?,""",
     """, Calling-Station-ID=(({src_mac}([a-fA-F\d]{2}[-:]){5}[a-fA-F\d]{2})|(::ffff:)?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(::ffff:)?({src_host}[\w\-.]{1,2000}))""",
-    """AD-User-Candidate-Identities=((::ffff:)?({dest_ip}[A-Fa-f:\d.]{1,2000})|(::ffff:)?({dest_host}[\w\-.]{1,2000}))""",
+    """AD-User-Candidate-Identities=((::ffff:)?({dest_ip}[A-Fa-f:\d.]{1,2000})|(::ffff:)?({dest_host}[\w\-.]{1,2000})),""",
     """, AD-Host-Resolved-Identities=((::ffff:)?({dest_ip}[A-Fa-f:\d.]{1,2000})|(::ffff:)?({dest_host}[^\s,@]{1,2000})[^,]{0,100}\s{0,100})""",
     """, AD-Host-Resolved-Identities=({computer_name}[^@,]{1,2000})""",
     """, NetworkDeviceName =({network}[^,]{1,2000}),""",

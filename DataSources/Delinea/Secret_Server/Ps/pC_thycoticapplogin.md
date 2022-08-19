@@ -15,7 +15,7 @@ Name = thycotic-app-login
     """\sdvc=({host}[^\s]{1,2000})""",
     """\sdvchost=({host}[^\s]{1,2000})""",
     """\ssrc=({src_ip}[^\s]{1,2000})""",
-    """\sduser=(({domain}[^\\=]{1,2000})(\\)+)?({user}.+?)\s{1,100}\w+=""",
+    """\sduser=(({domain}[^\\=]{1,2000})(\\)+)?(({user_email}[^\s@]{1,2000}@[^\s@]{1,2000})|(({user}.+?)\s{1,100}\w+=))""",
     """({app}Thycotic Software)"""
   ]
 

@@ -22,7 +22,7 @@ Name = cef-o365-dlp-alert
     """"IncidentId":"({alert_id}[^"]{1,2000})"""",
     """"Severity":"({alert_severity}[^"]{1,2000})"""",
   ]
-  DupFields = [ "recipient->target", "alert_name->event_name" ]
+  DupFields = [ "recipient->target_user_email", "alert_name->event_name" ]
 
 
 }
