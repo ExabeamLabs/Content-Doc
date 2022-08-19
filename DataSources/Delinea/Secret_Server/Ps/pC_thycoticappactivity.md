@@ -15,7 +15,7 @@ Name = thycotic-app-activity
     """\sdvc=({host}[^\s]{1,2000})""",
     """\sdvchost=({host}[^\s]{1,2000})""",
     """\ssrc=({src_ip}[a-fA-F\d.:]{1,2000})\s\w+=""",
-    """\ssuser=(({domain}[^\\=]{1,2000})(\\)+)?({user}[^=]{1,2000}?)\s{1,100}\w+=""",
+    """\ssuser=(({domain}[^\\=]{1,2000})(\\)+)?(({user_email}[^\s@]{1,2000}@[^\s@]{1,2000})|(({user}.+?)\s{1,100}\w+=))""",
     """({app}Thycotic Software)"""
     """\sfname=({object}[^=]{1,2000}?)\s{1,100}\w+=""",
     """\sContainer Name:\s{0,100}({resource}[^=]{1,2000}?)\s{0,100}(?:\([^\)]{0,2000}?\))?\s{1,100}(\w+=|\w+:|$)""",

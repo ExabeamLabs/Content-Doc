@@ -6,7 +6,7 @@ Name = cef-microsoft-app-activity-inbox-rule
   Conditions= [ """destinationServiceName =Office 365""", """"New-InboxRule"""" ]
   Fields = ${MSParserTemplates.cef-microsoft-app-activity.Fields}[
     """"(?i)({activity}ForwardTo|delivertomailboxandforward)""""
-    """"ForwardTo":"{1,20}(smtp:)?({target}[^"]{1,2000}@({target_domain}[^"]{1,2000}))""""
+    """"ForwardTo":"{1,20}(smtp:)?({target_user_email}[^"]{1,2000}@({target_domain}[^"]{1,2000}))""""
     """"SubjectOrBodyContainsWords":"({filter_key_words}[^"]{1,2000})"""
     """"ResultStatus":"({outcome}[^"]{1,2000})"""",
   ]
@@ -43,7 +43,7 @@ cef-microsoft-app-activity = {
     """"UserAgent":"({user_agent}[^"]+)"""",
     """"ipAddress":"({dest_ip}[A-Fa-f.:\d]{1,2000})"""",
     """"SourceFileName":"({src_file_name}[^",]{1,2000})""",
-    """"user":\{[^}]{1,20000}?displayName":"(Microsoft Teams Services|({user_fullname}[^"]{1,2000}))"""",
+    """"user":\{[^}]{1,20000}?displayName":"(Microsoft Teams Services|Office 365 SharePoint Online|Office 365 Exchange Online|({user_fullname}[^"]{1,2000}))"""",
     """"resultReason":"({failure_reason}[^"]{1,2000}?)\s{0,100}""""
   
 }

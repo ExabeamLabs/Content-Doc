@@ -14,6 +14,7 @@ Name = q-member-removed-2008
     """({host}[^\s]{1,2000})\sMicrosoft-Windows-Security-Auditing""",
     """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d\d\d\d[+-]\d\d:\d\d)\s{1,100}({host}[\w.-]{1,2000})\s""",
     """TimeGenerated=({time}\d{1,100})""",
+    """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,10}Z)"""",
     """Computer=({host}[^\s]{1,2000})""",
     """"SubjectDomainName":"({domain}[^"]{1,2000})"""",
     """"SubjectUserName":"({user}[^"]{1,2000})"""",

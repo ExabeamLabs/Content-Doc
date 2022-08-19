@@ -38,7 +38,7 @@ cef-microsoft-app-activity = {
     """"UserAgent":"({user_agent}[^"]+)"""",
     """"ipAddress":"({dest_ip}[A-Fa-f.:\d]{1,2000})"""",
     """"SourceFileName":"({src_file_name}[^",]{1,2000})""",
-    """"user":\{[^}]{1,20000}?displayName":"(Microsoft Teams Services|({user_fullname}[^"]{1,2000}))"""",
+    """"user":\{[^}]{1,20000}?displayName":"(Microsoft Teams Services|Office 365 SharePoint Online|Office 365 Exchange Online|({user_fullname}[^"]{1,2000}))"""",
     """"resultReason":"({failure_reason}[^"]{1,2000}?)\s{0,100}""""
   
 }
