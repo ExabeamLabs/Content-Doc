@@ -4,7 +4,7 @@ Product: Citrix Netscaler VPN
 -----------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  215  |   96   |     35     |      7      |    7    |
+|  213  |   96   |     35     |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |

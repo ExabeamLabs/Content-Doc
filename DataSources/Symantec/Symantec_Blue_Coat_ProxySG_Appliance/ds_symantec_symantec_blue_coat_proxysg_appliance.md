@@ -4,7 +4,7 @@ Product: Symantec Blue Coat ProxySG Appliance
 ---------------------------------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  97   |   35   |     17     |      3      |    3    |
+|  95   |   35   |     17     |      3      |    3    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
