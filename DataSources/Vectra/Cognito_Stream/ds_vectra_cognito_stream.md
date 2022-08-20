@@ -4,7 +4,7 @@ Product: Cognito Stream
 -----------------------
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  256  |   98   |     39     |     10      |   10    |
+|  254  |   98   |     39     |     10      |   10    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
 |:----:| ---- | ---- | ---- |
