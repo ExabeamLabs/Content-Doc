@@ -5,7 +5,7 @@ Vendor: Infoblox
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  15   |   7    |     4      |      6      |    6    |
+|  15   |   7    |     4      |      7      |    7    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |
