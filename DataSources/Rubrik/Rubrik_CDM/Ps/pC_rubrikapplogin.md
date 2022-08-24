@@ -20,7 +20,8 @@ Name = rubrik-app-login
       """eventSeverity="({alert_severity}[^"]{1,2000})"""",
       """\]\s{1,100}({user}[^(]{1,2000})\s(\([^\)]{1,2000}\)\s)*in '[^\']{1,2000}' logged in from""",
       """\(({user_ou}[^)]{1,2000})\) in '[^\']{1,2000}' logged in from""",
-      """logged in from\s({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
+      """logged in from\s({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+      """\] ({activity}[^"]{1,2000} logged in from [^"]{1,2000}?)\s{0,100}$"""
     ]
     DupFields = [ "host->dest_host"]
   
