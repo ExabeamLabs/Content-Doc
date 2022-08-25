@@ -5,7 +5,7 @@ Name = s-crowdstrike-app-login-5
   Conditions = [ """"eventType":""", """"RemoteResponseSessionStartEvent"""", """UserName""" ]
   Fields = ${CrowdStrikeParserTemplates.s-crowdstrike-app-login.Fields} [
     """"UserName":\s{0,100}"({user_email}[^"@]{1,2000}@[^"@]{1,2000})"""",
-    """"UserName":\s{0,100}"({user}[^"@]{1,2000})"""",
+    """"UserName":\s{0,100}"(({user_uid}api-client-[^"]{1,2000})|({user}[^"@]{1,2000}))"""",
     """"HostnameField":\s{0,100}"({host}[^"@]{1,2000})"""",
     """destinationServiceName =({app}[^=]{1,2000})\s\w+=""",
     """({event_name}RemoteResponseSessionStartEvent)""",
