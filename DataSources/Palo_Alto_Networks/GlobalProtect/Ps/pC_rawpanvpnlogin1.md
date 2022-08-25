@@ -4,7 +4,7 @@
 Name = raw-pan-vpn-login-1
   Product = GlobalProtect
   DataType = "vpn-login"
-  Conditions = [ """"LogType":"GLOBALPROTECT"""", """"EventStatus":"success"""", """"AuthMethod":""" ]
+  Conditions = [ """"LogType":"GLOBALPROTECT"""", """"EventStatus":"success"""", """"AuthMethod":""", """"Stage":"login"""" ]
   Fields = ${PaloAltoParserTemplates.paloalto-vpn.Fields}[
     """"LogType":"({app}[^"]{1,2000})"""",
     """"EventStatus":"({outcome}[^"]{1,2000})"""",
