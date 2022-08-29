@@ -5,7 +5,7 @@ Vendor: CrowdStrike
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   8   |   0    |     9      |     27      |   27    |
+|   8   |   0    |     9      |     28      |   28    |
 
 | Event Type    | Rules    | Models |
 | ---- | ---- | ------ |

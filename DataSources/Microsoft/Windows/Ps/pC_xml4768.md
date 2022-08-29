@@ -20,7 +20,7 @@ Name = xml-4768
       """<Data Name ='IpAddress'>(::[\w]{1,2000}:)?({dest_ip}[a-fA-F:\d.]{1,2000})</Data>""",
       """<Data Name ='TicketEncryptionType'>({ticket_encryption_type}[^<]{1,2000})</Data>""",
       """<Data Name ='TicketOptions'>({ticket_options}[^<]{1,2000})</Data>""",
-      """<Data Name ='ServiceName'>({service_name}[^<]{1,2000})</Data>"""
+      """<Data Name ='ServiceName'>({service_name}[^\/\\<]{1,2000})"""
     ]
   
 
