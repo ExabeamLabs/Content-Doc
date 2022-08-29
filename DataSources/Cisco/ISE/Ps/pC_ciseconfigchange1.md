@@ -7,10 +7,9 @@ Name = cise-config-change-1
   Fields = ${CiscoParsersTemplates.cise-auth-template.Fields}[
     """({event_code}52000)\s{1,100}({alert_severity}[^\s]{1,2000})\s({activity}[^:]{1,2000}):\s{1,100}({event_name}[^,]{1,2000})""",
     """ConfigChangeData=({action}.+?):*\s{0,100}\w+=""",
-    """ObjectType=({file_type}[^,]{1,2000})""",
-    """ObjectName =({file_name}[^,]{1,2000})""",
+    """ObjectType=({object_type}[^,]{1,2000})""",
+    """ObjectName =({object}[^,]{1,2000})""",
   ]
-  DupFields = [ "file_name->object" ]
 
 cise-auth-template {
   Vendor = Cisco
