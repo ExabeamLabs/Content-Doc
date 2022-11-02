@@ -11,6 +11,7 @@ checkpoint-auth = {
   Lms = Direct
   TimeFormat = "epoch_sec"
   Fields = [
+    """\s({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\dZ)\s""",
     """\Wtime:"({time}\d{1,100})""",
     """\W({host}[\w\-.]{1,2000}) CheckPoint""",
     """\Wuser:"({user}[^"\s]{1,2000})"""",
@@ -26,7 +27,7 @@ checkpoint-auth = {
     """\Worigin:"({origin_ip}[^"]{1,2000})""",
     """\Worigin_sic_name:"CN=({origin_name}[^",]{1,2000})""",
     """\Wproduct:"({product_name}[^"]{1,2000})""",
-    """reason:"({failure_reason}[^"]{1,2000})""",
+    """reason:"({failure_reason}[^"]{1,2000}?)\s{0,100}"""",
     """\Wsrc_machine_name:"({src_host}[\w\-.]{1,2000})""",
     """\Wifdir:"({direction}[^"]{1,2000})""",
   

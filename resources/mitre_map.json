@@ -103,9 +103,9 @@
             "score": 38
         }, 
         {
-            "comment": "11 rules", 
+            "comment": "18 rules", 
             "techniqueID": "T1567", 
-            "score": 11
+            "score": 18
         }, 
         {
             "comment": "9 rules", 
@@ -603,9 +603,9 @@
             "score": 31
         }, 
         {
-            "comment": "9 rules", 
-            "techniqueID": "T1567.002", 
-            "score": 9
+            "comment": "44 rules", 
+            "techniqueID": "T1484", 
+            "score": 44
         }, 
         {
             "comment": "7 rules", 
@@ -623,9 +623,9 @@
             "score": 3
         }, 
         {
-            "comment": "44 rules", 
-            "techniqueID": "T1484", 
-            "score": 44
+            "comment": "16 rules", 
+            "techniqueID": "T1567.002", 
+            "score": 16
         }, 
         {
             "comment": "3 rules", 

@@ -26,7 +26,7 @@ s-mssql-database-login = {
         """\WSid=({user_sid}[^\s]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
         """\Wserver_principal_name:(({domain}[^\\\/]{1,2000}?)[\\\/])?({db_user}[^\\\/\s]{1,2000}?)(\s{1,100}\w+:|\s{0,100}$)""",
         """\Wserver_principal_sid:({db_user_sid}[^\s]{1,2000})""",
-        """\Wserver_instance_name:({dest_host}[^\s]{1,2000})""",
+        """\Wserver_instance_name:({dest_host}[\w\-.]{1,2000})""",
         """\Wadditional_information:.*?<address>({src_ip}[a-fA-F\d.:]{1,2000})""",
         """\Wdatabase_name:({database_name}[^\s]{1,2000})""",
       ]

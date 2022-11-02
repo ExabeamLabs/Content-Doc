@@ -19,7 +19,7 @@ Name = json-4625
       """"SubjectUserName":"(?:-|({caller_user}[^"]{1,2000}))""",
       """"SubjectDomainName":"(?:-|({caller_domain}[^"]{1,2000}))""",
       """"LogonType":"({logon_type}[^"]{1,2000})""",
-      """"TargetUserName":"({user}[^"]{1,2000})""",
+      """"TargetUserName":"(({user_email}[^@"]{1,2000}@[^\."]{1,2000}\.[^"]{1,2000})|({user}[^"]{0,2000}))""",
       """"TargetDomainName":"({domain}[^."]{1,2000})""",
       """"SubStatus":"({result_code}[^"]{1,2000})""",
       """"WorkstationName":"({src_host_windows}[^"]{1,2000})""",

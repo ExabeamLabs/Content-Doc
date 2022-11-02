@@ -11,6 +11,7 @@ Name = raw-process-created-1
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[\w.-]{1,2000})""",
+    """Audit (Success|Failure),({host}[\w\-.]{1,1000}),Process Creation""",
     """hostname=({host}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w.\-]{1,2000})),\s{0,100}\w+=""",
     """ip=\[({dest_ip}[a-fA-F0-9.:]{1,2000})""",
     """"timestamp":"({time}[^"]{1,2000})""",

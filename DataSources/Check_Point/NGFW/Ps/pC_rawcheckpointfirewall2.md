@@ -19,6 +19,7 @@ checkpoint-firewall-1 = {
   TimeFormat = "epoch_sec"
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
+    """\s({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\dZ)\s""",
     """ time:"({time}\d{1,100})""",
     """\W({host}[\w\-.]{1,2000}) CheckPoint""",
     """ src:"({src_ip}[A-Fa-f:\d.]{1,2000})""",

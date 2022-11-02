@@ -21,7 +21,7 @@ Name = o365-activity-3
     """"(Workload|Application|Client)\\*"{1,20}:[\s\\]{0,2000}"{1,20}({app}[^"\\]{0,2000})""",
     """\WdestinationServiceName\s{0,100}=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\WsourceServiceName =({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
-    """"ObjectId\\*"{1,20}:"?[\s\\]{0,2000}"{1,20}(|Unknown|Not Available|({object}[^"\\]{1,2000}))""",
+    """"ObjectId\\*"{1,20}:"?[\s\\]{0,2000}"{1,20}(|Unknown|Not Available|({object}[^,]{1,2000}))("|\\)""",
     """"SourceFileName":"({object}[^",]{1,2000})""",
     """\ssuser=(anonymous|SecurityComplianceAlerts|({user_email}[^\s]{1,2000}@[^\s]{1,2000}\.[^\s]{1,2000})|(Unknown|Sync|AirInvestigation|(({domain}[^\\"\s@]{1,2000})\\{1,20})?({user}[^"\s@]{1,2000}?)))\s""",
     """\ssuser=({user_email}[^=@"]{1,2000}@[^.="]{1,2000}\.[^=]{1,2000}?)\s\w+=""",

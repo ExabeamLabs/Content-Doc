@@ -10,6 +10,7 @@ Name = checkpoint-connectra-vpn-login-1
   Conditions = [ """cvpn_category:"Session"""", """product:"Connectra"""", """action:"IP Changed"""" ]
   Fields = [
     """exabeam_host=({host}[\w\-.]{1,2000})""",
+    """\s({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\dZ)\s""",
     """time:"{1,20}({time}\d{1,20})""",
     """assigned_ip:{1,20}"{1,20}({dest_ip}[A-Fa-f:\d.]{1,2000})""",
     """origin:{1,20}"{1,20}({src_translated_ip}[A-Fa-f:\d.]{1,2000})""",
@@ -17,6 +18,7 @@ Name = checkpoint-connectra-vpn-login-1
     """ifdir:"{1,20}({direction}[^",;]{1,2000})""",
     """src:{1,20}"{1,20}({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """user:{1,20}"{1,20}CN=(?:[^_]{1,2000}_)?({user}[^",\s=\]]{1,2000})""",
+    """user:"{1,20}({user}[^"\s=,]{1,2000})"""",
     """om:{1,20}"{1,20}({event_name}[^",;]{1,2000})"""
   ]
 

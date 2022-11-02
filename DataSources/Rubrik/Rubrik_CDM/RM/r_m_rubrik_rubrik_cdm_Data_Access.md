@@ -5,7 +5,7 @@ Vendor: Rubrik
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   5   |   4    |     1      |      1      |    1    |
+|   5   |   4    |     1      |      3      |    3    |
 
 | Event Type | Rules    | Models    |
 | ---------- | ---- | ---- |

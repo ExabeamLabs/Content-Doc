@@ -1,0 +1,32 @@
+#### Parser Content
+```Java
+{
+Name = tanium-network-connection-successful-1
+  DataType = "network-connection-successful"
+  Conditions = [ """"event":"network_accept"""",""""remote_ip"""",""""tanium_computer_id":"""" ]
+  Fields = ${TaniumParserTemplates.tanium-operations-1.Fields}[
+    """"local_port":({src_port}\d{1,100})""",
+    """"remote_port":({dest_port}\d{1,100})""",
+    """"local_ip":"({src_ip}[A-Fa-f\d:.]{1,2000})"""",
+    """"remote_ip":"({dest_ip}[A-Fa-f\d:.]{1,2000})""""
+  ]
+
+tanium-operations-1 = {
+  Vendor = Tanium
+  Product = Integrity Monitor
+  Lms = Direct
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
+  Fields = [
+	""""timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d\d\d\d[+-]\d\d:\d\d)"""",
+	""""hostname":"({host}[\w\-.]{1,2000})"""",
+	""""login__user_name":"({user}[^"]{1,2000})"""",
+        """"process__login__user_name":"({user}[^"]{1,2000})"""",
+	""""event":"({event_name}[^"]{1,2000})"""",
+	""""file__md5":"({md5}[^"]{1,2000})"""",
+	""""parent_pid":({pid}\d{1,100})""",
+	""""command_line":"({command_line}[^"]{1,2000}?)\s{0,100}"""",
+	""""parent__command_line":"({parent_command_line}[^"]{1,2000})\s{0,100}"""",
+	""""parent_pid":({parent_process_id}\d{1,100})""",
+  
+}
+```

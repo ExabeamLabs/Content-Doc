@@ -12,13 +12,18 @@ Name = o365-usb-write
     """"CreationTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d{1,7}Z)?)""",
     """"DeviceName":"(::ffff:)?({host}[\w\-.]{1,2000})"""",
     """"Operation":"({activity}[^"]{0,2000})"""",
-    """"UserId":"(({user_email}[^@"]{1,2000}@[^"]{1,2000})|({user}[^"]{1,2000}))"""",
+    """"UserId":"(({domain}[^"\\]{1,2000})\\+)?(({user_email}[^@"]{1,2000}@[^".]{1,2000}\.[^"]{1,2000})|({user}[^"]{1,2000}))"""",
     """"ClientIP":"({src_ip}[a-fA-F\d:.]{1,2000})"""",
     """"ObjectId":"({file_path}({file_parent}[^"]{1,2000}?)\\{1,20}({file_name}[^\\"]{1,2000}))"""",
     """"FileExtension":"({file_ext}[^"]{1,2000})"""",
     """"displayName":"({user_fullname}({user_firstname}[^\s"]{1,2000})\s({user_lastname}[^"]{1,2000}))""",
     """"SerialNumber":"({device_id}[^"]{1,2000})"""",
-    """"Model":"({device_type}[^"]{1,2000})""""
+    """"Model":"({device_type}[^"]{1,2000})"""",
+    """"FileSize":({bytes}\d{1,2000}),"""",
+    """"Application":"({process_name}[^"]{0,2000})"""",
+    """"Sha1":"({sha1}[^"]{0,2000})"""",
+    """"Sha256":"({sha256}[^"]{0,2000})"""",
+    """"SensitiveInfoTypeName":"({additional_info}[^"]{0,2000})""""
   ]
   DupFields = ["activity->event_name", "host->dest_host", "file_name->src_file_name", "file_ext->src_file_ext"]
 

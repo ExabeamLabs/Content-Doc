@@ -17,8 +17,8 @@ Name = raw-juniper-nwc-vpn-resume
     """PulseSecure:\s{0,100}({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)\s{1,100}\-\s{1,100}({host}[\w\-.]{1,2000})""",
     """PulseSecure:\s{0,100}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d\s{1,100}\-\s{1,100}({dest_host}[\w\-.]{1,2000})""",
     """\s(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-\.]{1,2000}))\s{1,100}(Juniper|PulseSecure):""",
-    """\- \[({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]\s{1,100}(({domain}[^\\]{1,2000})\\)?({user}[^\(]{1,2000})\(({realm}[^\)]{1,2000})?\)(\[({resource}[^\]]{1,2000})\])?""",
-    """({event_code}Session resumed)""",
+    """\- \[({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s{0,100}\]\s{0,100}(Root::)?(({domain}[^\\]{1,2000})\\)?(({user_email}[^@]{1,2000}@[^\.]{1,2000}\.[^\(]{1,2000})|({user}[^\(]{1,2000}))\(({realm}[^\)]{1,2000})?\)(\[({resource}[^\]]{1,2000})\])?""",
+    """({event_code}Session resumed)"""
   ] 
   DupFields = ["user->account"]
 

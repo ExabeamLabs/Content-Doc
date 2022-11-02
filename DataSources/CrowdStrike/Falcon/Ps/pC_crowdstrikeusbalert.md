@@ -29,7 +29,7 @@ cef-crowdstrike-app-activity-temp = {
     """"(ImageFileName|TargetFileName)":"({file_path}[^"]{1,2000})""",
     """"(ImageFileName|TargetFileName)":"({file_parent}[^"]{0,2000}[\\\/]{1,2000})({file_name}[^\\\/"]{1,2000}\.({file_ext}[^\\\/"]{1,2000}))"""
     """"UserName":"({user}[^"]{1,2000}?)""""
-    """"aip":"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""""
+    """"aip":"({aip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""""
     """"ClientComputerName":"({src_host}[^"]{1,2000})"""
   
 }

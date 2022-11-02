@@ -24,7 +24,8 @@ Name = s-azure-authorization-activity-2
          """resourceId":".*\/RESOURCEGROUPS\/({account_id}[^\/]{1,2000})"""
          """Microsoft.Authorization/policyDefinitions/({policy}[^\/\\"]{1,2000})""",
          """resultType":"({outcome}[^"]{1,2000})""",
-         """\[Namespace:\s{0,100}({event_hub_namespace}\S+) ; EventHub name:\s{0,100}({event_hub_name}[\w-]{1,2000})"""
+         """\[Namespace:\s{0,100}({event_hub_namespace}\S+) ; EventHub name:\s{0,100}({event_hub_name}[\w-]{1,2000})""",
+         """"policyDefinitionId\\?":\\?"({additional_info}[^"]{1,2000})""""
  ]
 DupFields= ["event_hub_namespace->host"]
 

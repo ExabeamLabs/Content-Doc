@@ -8,7 +8,7 @@ Name = azure-event-hub-sql-security-event
   Fields = ${MSParserTemplates.cef-azure-event-hub.Fields}[
         """"host_name":"({host}[^"]{1,2000})"""",
         """"application_name":"({app}[^"]{1,2000})"""",
-        """"statement":"({db_query}[^"]{1,2000})"""",
+        """"statement":"({db_query}[^"]{1,2000}?)\s{0,100}"""",
         """"database_name":"({database_name}[^"]{1,2000})"""",
         """"schema_name":"({database_schema}[^"]{1,2000})"""",
         """"server_principal_name":"({server_group}[^"]{1,2000})"""",
@@ -28,7 +28,6 @@ cef-azure-event-hub = {
       """\Wdvc=({host}\S{1,2000})""",
       """\Wdvchost=({host}[\w\-.]{1,2000})""",
       """\Wact=({activity}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",
-      """([^\|]{0,2000}\|){5}({activity}[^\|]{1,2000})""",
       """\WflexString1=({activity}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",
       """\WdestinationServiceName =({app}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",
       """\Wfname=({object}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",

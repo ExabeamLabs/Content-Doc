@@ -23,7 +23,8 @@ Name = raw-4738
     """Target\sAccount.+?Account Domain:\s{0,100}({target_domain}.+?)\s""",
     """User Account Control:\s{0,100}(-|({uac_status}[^:]{1,2000}?))\s{1,100}User Parameters:""",
     """Changed Attributes:\s{0,100}(|({attribute}.+?))\s{1,100}SAM Account Name""",
-    """(?i)\w+\s{0,100}\d{1,100}\s{0,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(am|pm|({dest_host}[\w\-.]{1,2000})))\s"""
+    """(?i)\w+\s{0,100}\d{1,100}\s{0,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(am|pm|({dest_host}[\w\-.]{1,2000})))\s""",
+    """(?i)(((audit|success)( |_)(success|audit))|information)(,|\s{1,100})(::ffff:)?({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[\w\-\.]{1,2000})))"""
   ]
 
 

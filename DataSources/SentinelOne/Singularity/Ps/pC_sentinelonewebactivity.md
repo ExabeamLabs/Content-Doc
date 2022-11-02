@@ -17,12 +17,12 @@ sentinelone-activity {
     Fields = [
       """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}\S{1,2000})""",
       """\smillisecondsSinceEpoch:\s{0,100}({time}\d{1,20})""",
-      """\\ncomputer_name:\s{0,100}"{1,20}({host}[^"]{1,2000})"""
+      """\\ncomputer_name:\s{0,100}"{1,20}({host}[\w\-.]{1,2000})""""
       """\\nos_name:\s{0,100}"{1,20}({os}[^"]{1,2000})"""
       """\\nagent_version:\s{0,100}"{1,20}({user_agent}[^"]{1,2000})"""
       """\ssizeBytes:\s{0,100}({bytes}\d{1,100})""",
       """user\s{0,100}\{[^\}]{1,2000}?sid:[^"]{0,2000}?"{1,20}({user_sid}[^"\\]{1,2000})""",
-      """user\s{0,100}\{\\n\s{1,100}name:\s{1,100}\\?"{0,20}((NT AUTHORITY|({domain}[^\\"]{1,2000}))\\+)?(SYSTEM|NETWORK SERVICE|LOCAL SERVICE|({user}[^\\"]{1,2000}))""",
+      """user\s{0,100}\{\\n\s{1,100}name:\s{1,100}\\?"{0,20}((NT AUTHORITY|({domain}[^\\"]{1,2000}))\\+)?(SYSTEM|NETWORK SERVICE|LOCAL SERVICE|({user_email}[^@"]{1,2000}@[^\.]{1,2000}\.[^"]{1,2000})|({user}[^\\"]{1,2000}))""",
       """"app-username":"((NT AUTHORITY|({domain}[^\\"]{1,2000}))\\+)?(SYSTEM|NETWORK SERVICE|LOCAL SERVICE|({user}[^"]{1,2000}?))\s{0,100}"""",
       """\ssha256:\s{0,100}\\?"{1,20}({sha256}[^"\\]{1,2000})""",
       """\smd5:\s{0,100}\\?"{1,20}({md5}[^"\\]{1,2000})""",

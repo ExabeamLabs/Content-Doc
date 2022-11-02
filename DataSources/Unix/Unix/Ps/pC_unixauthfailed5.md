@@ -16,7 +16,7 @@ Name = unix-auth-failed-5
     """({host}[\w\.\-]{1,2000})?:?\s{0,100}sudo:""",
     """ruser=({user}[^\s]{1,2000})""",
     """\suser=({user}[^\s"]{1,2000})(\s|"|$)""",
-    """rhost=({src_ip}[\da-fA-F.:]{1,2000})""",
+    """rhost=(::ffff:)?({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})""",
     """({failure_reason}authentication ({outcome}failure))""",
     """\suid=({user_id}[^\s]{1,2000})\s""",
     """({event_code}ssh)"""

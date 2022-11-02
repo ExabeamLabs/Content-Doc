@@ -5,7 +5,7 @@ Vendor: LastPass
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  43   |   24   |     3      |      3      |    3    |
+|  43   |   24   |     3      |      5      |    5    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

@@ -24,6 +24,18 @@ cef-aruba-nac-logon-1 = {
     """cs4=({service}.+?)\s\w+=""",
    ]
   DupFields = [ "dest_ip->auth_server" ]  
- 
+ },
+
+leef-aruba-format = {
+  Vendor = HP
+  Product = Aruba ClearPass Access Control and Policy Management
+  Lms = ArcSight
+  TimeFormat = "MMM dd yyyy HH:mm:ss.SSS z"
+  Fields = [
+    """\d\d:\d\d:\d\d\s{1,100}({host}[\w.-]{1,2000})\s{1,100}LEEF:""",
+    """devTime=({time}[^=]{1,2000}?)\s{1,100}\w+?=""",
+    """action=(None|({activity}[^=]{1,2000}?))\s{1,100}\w+?=""",
+    """src=({dest_ip}[a-fA-F\d.:]{1,2000}?)\s{1,100}\w+?="""
+   
 }
 ```
