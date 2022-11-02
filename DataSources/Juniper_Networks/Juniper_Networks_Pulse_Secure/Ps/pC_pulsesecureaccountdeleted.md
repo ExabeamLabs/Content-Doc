@@ -9,8 +9,8 @@ Name = pulsesecure-account-deleted
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """PulseSecure:""", """User Accounts modified.""" ]
   Fields = [
-    """PulseSecure:.+?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d) - (::ffff:)?({host}\S+) - \[(::ffff:)?({src_ip}[A-Fa-f:\d.]{1,2000})\] (({domain}[^\\]{1,2000})\\)?(System|({user}[^\\\/\s\(]{1,2000}))""", 
-    """Removed username (({target_domain}[^\\]{1,2000})\\)?({target_user}[^\\\s]{1,2000})""",
+    """PulseSecure:.+?({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d) - (::ffff:)?({host}\S+) - \[(::ffff:)?({src_ip}[A-Fa-f:\d.]{1,2000})\] (({domain}[^\\]{1,2000})\\)?(System|({user}[^\\\/\s\(]{1,2000}))""",
+    """Removed username (({target_domain}[^\\]{1,2000})\\)?(({target_user_email}[^@]{1,2000}@[^\.]{1,2000}\.[^\(]{1,2000})|({target_user}[^\(]{1,2000})) from""" 
   ]
   DupFields = [ "target_user->account_name" , "host->dest_host"]
 

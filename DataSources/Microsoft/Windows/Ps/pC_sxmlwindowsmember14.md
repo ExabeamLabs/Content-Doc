@@ -35,7 +35,7 @@ s-xml-windows-member = {
     """<Message>({additional_info}[^<]{1,2000})""",
     """<Provider>({provider_name}[^<]{1,2000})""",
     """<System>.*?Guid(\\)?='\{({process_guid}[^}]{1,2000})""",
-    """<Execution ProcessID(\\)?='({proccess_id}\d{1,100})""",
+    """<Execution ProcessID(\\)?='({process_id}\d{1,100})""",
     """<Security UserID(\\)?='({user_sid}[^']{1,2000})""",
     """<Data Name(\\)?='RemoteMachineAccount'>({dest_host}[^<]{1,2000})"""
     

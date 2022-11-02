@@ -11,6 +11,7 @@ Name = ping-authentication-successful-1
     """Accessing Device OS:\s{0,100}({os}[^:]{1,2000}?)(\\?[\sn])Accessing Device Browser:""",
     """Accessing Device Browser:\s{0,100}({browser}[^:]{1,2000}?)(\\?[\sn])Time since last Authentication from Office:""",
     """Device Model:\s{0,100}(N\/A|({device}[^:]{1,2000}?))(\\?[\sn])Device Lock Enabled:""",
+    """Country:\s({mfa_country}[^:]{1,2000})\\nPrevious Country"""
   ]
 
 ping-authentication_events = {
@@ -22,6 +23,7 @@ ping-authentication_events = {
       """"recorded":\s{0,100}"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)"""",
       """exabeam_host=({host}[^\s]{1,2000})""",
       """"name":\s{0,100}"(({user_email}[^"@\s]{1,2000}@[^"]{1,2000})|({user}[^"]{1,2000}))"""",
+      """"devicemodel":\s*"({mfa_device}.+?)""""
     
 }
 ```

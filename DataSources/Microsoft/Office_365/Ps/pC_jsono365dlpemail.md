@@ -27,7 +27,7 @@ Name = json-o365-dlp-email
     """"triggered-by":\{"user-email":"({user_email}[^",]{1,2000})"""",
     """Category\s{1,100}\[({category}[^\]]{1,2000})\]"""
   ]
-  DupFields = [ "alert_type->alert_name" ]
+  DupFields = [ "alert_type->alert_name" ,"sender->orig_user"]
 
 
 }

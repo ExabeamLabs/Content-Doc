@@ -5,7 +5,7 @@ Vendor: Quest Software
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  40   |   20   |     5      |     13      |   13    |
+|  40   |   20   |     5      |     14      |   14    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

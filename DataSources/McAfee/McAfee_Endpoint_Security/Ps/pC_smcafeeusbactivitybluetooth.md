@@ -2,7 +2,7 @@
 ```Java
 {
 Name = s-mcafee-usb-activity-bluetooth
-  Conditions = [ """|Bluetooth""" ]
+  Conditions = [ """|Bluetooth""","""|10000|""" ]
 
 splunk-mcafee-usb-activity = {
       Vendor = McAfee

@@ -11,6 +11,7 @@ Name = cisco-ftd-connection-stop
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """({host}[\w\-.]{1,2000})\s{0,100}:\s{0,100}%FTD-""",
+    """\s{0,100}({host}[^\s]{1,2000})\s\w{1,3}\s\d{1,2}\s\d\d:\d\d:\d\d\s""",
     """%FTD-({priority}\d{1,100})-({event_code}\d{1,100})""",
     """({event_name}Teardown ({protocol}\w+) connection)""",
     """\sfaddr\s{1,100}((({dest_ip}(\d{1,3}\.){3}\d{1,3}|([A-Fa-f0-9%.]{0,2000}:[A-Fa-f0-9%.:]{1,2000}(th0)?))|({dest_host}[^\s]{1,2000}?))((\/({dest_port}\d{1,100}))|(\s|$))|({icmp_seq_num}\S+))""",

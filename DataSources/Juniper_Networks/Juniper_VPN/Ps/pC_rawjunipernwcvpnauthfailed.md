@@ -14,11 +14,11 @@ Name = raw-juniper-nwc-vpn-authfailed
     """exabeam_host=(.+?@\s{0,100})?(::ffff:)?({host}[^\s]{1,2000})""",
     """\sfw=(::ffff:)?({host}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|({dest_host}[\w\-\.]{1,2000})))""",
     """\s(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-\.]{1,2000}))\s{1,100}(Juniper|PulseSecure):""",
-    """\- \[(::ffff:)?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]\s{1,100}(({domain}[^\\]{1,2000})\\)?(?:({user_email}[^@]{1,2000}@[^@(]{1,2000})|({user}[^\(]{1,2000}))\(({realm}[^\)]{1,2000})?\)""",
-    """({failure_reason}(Primary|Secondary) authentication failed) for\s{1,100}(({domain}[^\\]{1,2000})\\+)?(?:({user_email}[^@\s\/]{1,2000}@[^@\s\/\\]{1,2000})|({user}[^\s\\\/]{1,2000}))(\/({realm}[^=]{1,2000}?))\s{1,100}from\s{1,100}(::ffff:)?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
+    """\- \[(::ffff:)?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]\s{1,100}(Default Network::)?(({domain}[^\\]{1,2000})\\)?(?:({user_email}[^@]{1,2000}@[^@(]{1,2000})|({user}[^\(]{1,2000}))\(({realm}[^\)]{1,2000})?\)""",
+    """({failure_reason}(Primary|Secondary) authentication failed) for\s{1,100}(Default Network::)?(({domain}[^\\]{1,2000})\\+)?(?:({user_email}[^@\s\/]{1,2000}@[^@\s\/\\]{1,2000})|({user}[^\s\\\/]{1,2000}))(\/({realm}[^=]{1,2000}?))\s{1,100}from\s{1,100}(::ffff:)?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """PulseSecure:[^:]{1,2000}?({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)\s{1,100}\-\s{1,100}(::ffff:)?({host}(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]{1,2000})))""",
     """\s(::ffff:)?({host}(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-\.]{1,2000})))\s{1,100}(Juniper|PulseSecure):""",
-    """PulseSecure:[^\[\]]{0,2000}?\[(::ffff:)?({src_ip}[a-fA-F:\d.]{1,2000})\]\s{1,100}(({domain}[^\\]{1,2000})\\)?(?:({user_email}[^@\s]{1,2000}@[^@\s]{1,2000})|({user}[^\s]{1,2000}))\(({realm}[^\)]{1,2000})?"""
+    """PulseSecure:[^\[\]]{0,2000}?\[(::ffff:)?({src_ip}[a-fA-F:\d.]{1,2000})\]\s{1,100}(Default Network::)?(({domain}[^\\]{1,2000})\\)?(?:({user_email}[^@\s]{1,2000}@[^@\s]{1,2000})|({user}[^\s]{1,2000}))\(({realm}[^\)]{1,2000})?"""
   ]
 
 

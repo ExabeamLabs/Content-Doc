@@ -11,8 +11,7 @@ Name = s-mimecast-app-login
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """date=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d[+-].+?)\|""",
-    """\|user=(|({user}.+?))\|""",
-    """\|user=(|({user_email}[^@\|]{1,2000}@({email_domain}[^@\|]{1,2000})))\|""",
+    """\|user=(|({user_email}[^@\|]{1,2000}@({email_domain}[^@\|]{1,2000}\.[^\|]{1,2000}))|({user}[^\|]{1,2000}))\|""",
     """\sApplication:\s{0,100}({app}[^,]{0,2000})(,|\s{0,100}$)""",
     """\|app=(|({app}.+?))\|""",
     """\sIP:\s{0,100}({src_ip}[a-fA-F\d.:]{1,2000})(,|\s{0,100}$)""",

@@ -5,7 +5,7 @@ Vendor: Wiz
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   5   |   4    |     1      |      1      |    1    |
+|   5   |   4    |     1      |      2      |    2    |
 
 | Event Type | Rules    | Models    |
 | ---------- | ---- | ---- |

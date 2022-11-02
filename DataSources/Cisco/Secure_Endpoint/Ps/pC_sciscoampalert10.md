@@ -52,7 +52,7 @@ s-cisco-amp-alert = {
     """\Woutcome=(|({outcome}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """"connector_guid":"({connector_guid}[^"]{1,2000})""",
   ]
-  DupFields = [ "file_path->malware_url", "alert_type->category" ]
+  DupFields = [ "file_path->malware_file_name", "alert_type->category" ]
     SOAR {
     IncidentType = "malware"
     DupFields = ["time->startedDate", "vendor->source", "rawLog->sourceInfo", "alert_type->description", "alert_severity->sourceSeverity", "additional_info->sourceUrl", "file_path->malwareAttackerFile", "src_host->malwareVictimHost", "alert_name->malwareName"]

@@ -13,16 +13,16 @@ Name = s-radius-wireless-nac-logon
     """exabeam_host=({host}[^\s]{1,2000})""",
     """ComputerName =({host}[\w\-.]{1,2000})""",
     """EventCode=({event_code}\d{1,100})""",
-    """User:.+?Account Name:\s{1,100}(\w+(\\)+)?(?:-|({user}.+?))\s{1,100}Account Domain:""",
-    """User:.+?Account Domain:\s{1,100}(?:-|({domain}.+?))\s{1,100}Fully""",
+    """User:.+?Account Name:\s{1,100}(\w+(\\)+)?(?:-|({user_email}[^:@]{1,2000}@[^\.:]{1,2000}\.[^:]{1,2000}?)|({user}[^:]{1,2000}?))\s{1,100}Account Domain:""",
+    """User:.+?Account Domain:\s{1,100}(?:-|({domain}[^:]{1,2000}?))\s{1,100}Fully""",
     """NAS Identifier:\s{1,100}(?:-|({location}[\w\-.]{1,2000}))""",
-    """Calling Station Identifier:\s{1,100}(?:-|({src_mac}.+?))\s{1,100}NAS:""",
-    """Authentication Server:\s{1,100}(?:-|({auth_server}.+?))\s{1,100}Authentication Type:""",
-    """User:.+?Fully Qualified Account Name:\s{1,100}(?:-|({user_type}.+?))(\/[^/\s]{1,2000})?\s{1,100}Client Machine:""",
+    """Calling Station Identifier:\s{1,100}(?:-|({src_mac}[^:]{1,2000}?))\s{1,100}NAS:""",
+    """Authentication Server:\s{1,100}(?:-|({auth_server}[^:]{1,2000}?))\s{1,100}Authentication Type:""",
+    """User:.+?Fully Qualified Account Name:\s{1,100}(?:-|({user_type}[^:]{1,2000}?))(\/[^/\s]{1,2000})?\s{1,100}Client Machine:""",
     """NAS IPv4 Address:\s{1,100}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """NAS IPv6 Address:\s{1,100}({dest_ip}[a-fA-F:\d.]{1,2000})""",
-    """EAP Type:\s{1,100}(?:-|({auth_type}.+?))\s{1,100}Account Session Identifier:""",
-    """Result:\s{1,100}(?:-|({access_type}.+?))\s{1,100}Session Identifier:"""
+    """EAP Type:\s{1,100}(?:-|({auth_type}[^"]{1,2000}?))\s{1,100}Account Session Identifier:""",
+    """Result:\s{1,100}(?:-|({access_type}[^:]{1,2000}?))\s{1,100}Session Identifier:"""
   ]
 
 

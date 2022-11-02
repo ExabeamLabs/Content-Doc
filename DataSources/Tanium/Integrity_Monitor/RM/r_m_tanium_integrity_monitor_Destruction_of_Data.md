@@ -5,7 +5,7 @@ Vendor: Tanium
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     2      |      3      |    3    |
+|   1   |   0    |     2      |      6      |    6    |
 
 | Event Type  | Rules    | Models |
 | ---- | ---- | ------ |

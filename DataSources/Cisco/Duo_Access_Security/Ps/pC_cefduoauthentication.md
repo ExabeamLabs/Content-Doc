@@ -26,7 +26,7 @@ Name = cef-duo-authentication
     """"country":\s{0,100}"({country}[^"]{1,2000})""",
     """"reason":\s{0,100}"(({event_name}(?i)User approved|Valid passcode|Remembered device|Trusted network)|({failure_reason}[^"]{1,2000}))"""",
   ]
-  DupFields = ["object->device", "app->service", "activity->auth_method", "activity->factor"]
+  DupFields = ["object->device", "app->service", "activity->factor"]
 
 
 }

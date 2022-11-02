@@ -6,7 +6,7 @@ Name = s-aws-netflow-connection
   Product = AWS CloudWatch
   Lms = Splunk
   DataType = "netflow-connection"
-  TimeFormat = "epoch"
+  TimeFormat = "epoch_sec"
   Conditions = [ """ eni-""", """ ACCEPT OK"""]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?(gcs-topic|({host}\S+))""",

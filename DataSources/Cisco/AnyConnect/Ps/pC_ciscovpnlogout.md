@@ -11,7 +11,7 @@ Name = cisco-vpn-logout
   Fields = [
     """\d\d:\d\d:\d\d\s({host}[^\s]{1,2000})""",
     """({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d.\d\d\d)""",
-    """UserName =(({user_email}[^@,]{1,2000}@[^,]{1,2000})|({user}[^,]{1,2000}))""",
+    """UserName =(({user_email}[^@,]{1,2000}@[^,]{1,2000})|(({domain}[^\\,]{1,2000})\\{1,20})?({user}[^,]{1,2000}))""",
     """Device\sIP\sAddress=({src_ip}\d{1,100}.\d{1,100}.\d{1,100}.\d{1,100})""",
     """NetworkDeviceName =({src_host}[^,]{1,2000})""",
     """NAS-IP-Address=({dest_ip}\d{1,100}.\d{1,100}.\d{1,100}.\d{1,100})""",

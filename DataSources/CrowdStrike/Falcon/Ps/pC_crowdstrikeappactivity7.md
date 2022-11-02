@@ -27,7 +27,7 @@ crowdstrike-app-activity = {
     """"timestamp":"({time}\d{1,100})""",
     """"OperationName":"({activity}[^"]{1,2000})""",
     """"event_simpleName":"({activity}[^"]{1,2000})""",
-    """"aip":"({src_ip}[A-Fa-f:\d.]{1,2000})""",
+    """"aip":"({aip}[A-Fa-f:\d.]{1,2000})""",
     """suser=(system|({user}[^\s]{1,2000}))""",
     """"Success":({outcome}true|false)""",
     """"UserId":"({user_email}[^@]{1,2000}@({email_domain}[^"]{1,2000}))""", 

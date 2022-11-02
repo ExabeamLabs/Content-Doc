@@ -7,11 +7,11 @@ Name = raw-unix-account-created
   Lms = Direct
   DataType = "unix-account-created"
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
-  Conditions = [ "new user:", "useradd", "UID" ]
+  Conditions = [ """new user:""", """useradd""", """UID""" ]
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=({host}[\w.\-]{1,2000})""",
-    """\d\d:\d\d:\d\d(\.\S+)? ({host}[\w.\-]{1,2000})""",
+    """\d\d:\d\d:\d\d(\.\S+)? ({host}[\w.\-]{1,2000})\suseradd""",
     """new user: name=({account_name}[^,]{1,2000}),""",
     """new user: .+?UID=({account_id}[^,]{1,2000}),""",
   ]

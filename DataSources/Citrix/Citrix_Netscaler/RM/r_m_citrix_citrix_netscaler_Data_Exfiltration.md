@@ -5,7 +5,7 @@ Vendor: Citrix
 
 | Rules | Models | MITRE TTPs | Event Types | Parsers |
 |:-----:|:------:|:----------:|:-----------:|:-------:|
-|  17   |   4    |     13     |      6      |    6    |
+|  17   |   4    |     13     |      5      |    5    |
 
 | Event Type      | Rules    | Models    |
 | ---- | ---- | ---- |

@@ -13,6 +13,7 @@ Name = cef-meraki-network-alert
     """\WdestinationServiceName =(|({event_subtype}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """\Wdproc=(|({process}[^=]?))(\s{1,100}\w+=|\s{0,100}$)""",
     """destIp":"({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}):({dest_port}\d{1,100})""",
+    """"ts":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d{1,6})?Z)"""",
     """"ts":({time}\d{1,100})""",
     """"srcIp":"({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}):({src_port}\d{1,100})""",
     """"protocol":"({protocol}[^"]{1,2000})""",
@@ -21,6 +22,7 @@ Name = cef-meraki-network-alert
     """"deviceMac":"({src_mac_address}[^"]{1,2000})""",
     """"priority":"({alert_severity}\d{1,2000})""",
     """destinationServiceName =({app}Cisco Meraki)""",
+    """"eventType":"({alert_type}[^"]{1,2000})""""
   ]
 
 

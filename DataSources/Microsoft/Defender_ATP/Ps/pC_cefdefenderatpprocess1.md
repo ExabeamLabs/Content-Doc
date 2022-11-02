@@ -28,7 +28,8 @@ Name = cef-defender-atp-process-1
      """"InitiatingProcessFolderPath"{1,20}:\s{0,100}"{1,20}({parent_process}({parent_directory}[^"]{0,2000}?[\\\/]{1,2000})?({parent_process_name}[^"\\\/]{1,2000}?))""""
      """InitiatingProcessFileName\\?"{1,100}:\s{0,100}\\?"{1,100}({parent_process_name}[^"\\\/]{1,2000}?)\\?"""",
      """"FileName\\?"{1,100}:\s{0,100}\\?"{1,100}({process_name}[^\\\/"]{1,2000}?)\\?"""",
-     """ProcessCommandLine\\?"{1,100}:\s{0,100}\\?"\s{0,100}({command_line}.{1,2000}?)\s{0,100}\\*",""",
+     """"ProcessCommandLine\\?"{1,100}:\s{0,100}\\?"\s{0,100}({command_line}.+?)\s{0,100}\\*",""""
+     """"InitiatingProcessCommandLine\\?"{1,100}:\s{0,100}\\?"\s{0,100}({additional_info}.{1,2000}?)\s{0,100}\\*",""""
      """MD5\\?"{1,100}:\\?"{1,100}({md5}[^"]{1,2000}?)\\?"""",
      """\[Namespace:\s{0,100}({event_hub_namespace}\S+) ; EventHub name:\s{0,100}({event_hub_name}[\w-]{1,2000})"""
      """"FolderPath"{1,100}:"{1,100}({process}({directory}(\w:)?(?:[^:\]]{1,2000})?[\\\/])?({process_name}[^\\\/"\]]{1,2000}?))"""",

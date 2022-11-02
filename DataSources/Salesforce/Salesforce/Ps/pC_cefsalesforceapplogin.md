@@ -11,6 +11,7 @@ Name = cef-salesforce-app-login
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",  
     """LoginTime\\=({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
+    """CreatedDate\\=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)"""
     """suser=(({domain}[^\\\s@;=]{1,2000})\\+)?(system|({user}[^\\\=\s;@]{1,2000}))\s{1,100}(\w+=|$)""",
     """suser=({user_email}[^\\\=\s;@]{1,2000}@({email_domain}[^\\\=\s;@]{1,2000}))""",
     """suser=({user_email}[^\\\=\s;@]{1,2000}@[^\\\=\s;@]{1,2000})""",

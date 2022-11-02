@@ -24,7 +24,8 @@ Name = s-duo-auth-json
     """"reason"\s{0,100}:\s{0,100}"({failure_reason}[^"]{1,2000})"""",
     """"new_enrollment"\s{0,100}:\s{0,100}({new_enrollment}true|false)""",
     """"{0,20}integration"{0,20}:\s{0,100}"{0,20}({service}[^"]{1,2000})""",
-    """"email":\s{0,20}"({user_email}[^@"]{1,2000}@[^"]{1,2000})""""
+    """"email":\s{0,20}"({user_email}[^@"]{1,2000}@[^"]{1,2000})"""",
+    """"location":.+?"country": "({mfa_country}[^"]+)"""
   ]
 
 
