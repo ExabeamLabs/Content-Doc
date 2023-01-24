@@ -1,7 +1,7 @@
 {
     "domain": "mitre-enterprise", 
     "sorting": 3, 
-    "name": "Exabeam MITRE Map", 
+    "name": "Exabeam Coverage Map", 
     "gradient": {
         "colors": [
             "#d8edd1", 
