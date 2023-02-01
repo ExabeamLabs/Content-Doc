@@ -3,9 +3,9 @@ Vendor: Citrix
 ### Product: [Citrix XenApp](../ds_citrix_citrix_xenapp.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  59   |   31   |     9      |      2      |    2    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  59   |   31   |         9          |      2      |    2    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

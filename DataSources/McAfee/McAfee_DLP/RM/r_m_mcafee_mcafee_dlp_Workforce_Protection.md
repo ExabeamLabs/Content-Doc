@@ -3,9 +3,9 @@ Vendor: McAfee
 ### Product: [McAfee DLP](../ds_mcafee_mcafee_dlp.md)
 ### Use-Case: [Workforce Protection](../../../../UseCases/uc_workforce_protection.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   4   |   1    |     1      |      7      |    7    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   4   |   1    |         1          |      1      |    1    |
 
 | Event Type          | Rules    | Models    |
 | ---- | ---- | ---- |

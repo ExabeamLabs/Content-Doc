@@ -3,9 +3,9 @@ Vendor: Microsoft
 ### Product: [OneDrive](../ds_microsoft_onedrive.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   7   |   2    |     2      |      3      |    3    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   7   |   2    |         2          |      3      |    3    |
 
 | Event Type          | Rules    | Models    |
 | ---- | ---- | ---- |

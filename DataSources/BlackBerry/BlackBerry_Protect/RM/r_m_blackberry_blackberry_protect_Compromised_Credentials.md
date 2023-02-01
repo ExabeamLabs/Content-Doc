@@ -3,9 +3,9 @@ Vendor: BlackBerry
 ### Product: [BlackBerry Protect](../ds_blackberry_blackberry_protect.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  72   |   36   |     5      |      6      |    6    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  72   |   36   |         5          |      4      |    4    |
 
 | Event Type     | Rules    | Models    |
 | ---- | ---- | ---- |

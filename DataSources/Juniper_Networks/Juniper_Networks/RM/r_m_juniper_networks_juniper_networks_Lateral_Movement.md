@@ -3,9 +3,9 @@ Vendor: Juniper Networks
 ### Product: [Juniper Networks](../ds_juniper_networks_juniper_networks.md)
 ### Use-Case: [Lateral Movement](../../../../UseCases/uc_lateral_movement.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  43   |   2    |     9      |      2      |    2    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  43   |   2    |         9          |      1      |    1    |
 
 | Event Type      | Rules    | Models    |
 | ---- | ---- | ---- |

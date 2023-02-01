@@ -3,9 +3,9 @@ Vendor: Check Point
 ### Product: [Identity Awareness](../ds_check_point_identity_awareness.md)
 ### Use-Case: [Ransomware](../../../../UseCases/uc_ransomware.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     1      |      4      |    4    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   1   |   0    |         1          |      1      |    1    |
 
 | Event Type       | Rules    | Models |
 | ---- | ---- | ------ |

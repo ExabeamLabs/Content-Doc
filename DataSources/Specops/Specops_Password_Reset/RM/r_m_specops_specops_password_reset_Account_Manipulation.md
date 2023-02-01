@@ -3,9 +3,9 @@ Vendor: Specops
 ### Product: [Specops Password Reset](../ds_specops_specops_password_reset.md)
 ### Use-Case: [Account Manipulation](../../../../UseCases/uc_account_manipulation.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     1      |      2      |    2    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   1   |   0    |         1          |      1      |    1    |
 
 | Event Type    | Rules    | Models |
 | ---- | ---- | ------ |

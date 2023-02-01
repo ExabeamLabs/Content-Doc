@@ -3,9 +3,9 @@ Vendor: Watchguard
 ### Product: [Watchguard](../ds_watchguard_watchguard.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  42   |   23   |     8      |      4      |    4    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  42   |   23   |         8          |      2      |    2    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

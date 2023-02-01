@@ -3,9 +3,9 @@ Vendor: AssetView
 ### Product: [AssetView](../ds_assetview_assetview.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  56   |   24   |     7      |      5      |    5    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  56   |   24   |         7          |      2      |    2    |
 
 | Event Type     | Rules    | Models    |
 | ---- | ---- | ---- |

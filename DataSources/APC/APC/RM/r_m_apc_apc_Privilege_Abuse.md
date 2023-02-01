@@ -3,9 +3,9 @@ Vendor: APC
 ### Product: [APC](../ds_apc_apc.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  10   |   6    |     2      |      5      |    5    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  10   |   6    |         2          |      3      |    3    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

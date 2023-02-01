@@ -3,9 +3,9 @@ Vendor: RSA
 ### Product: [RSA](../ds_rsa_rsa.md)
 ### Use-Case: [Data Exfiltration](../../../../UseCases/uc_data_exfiltration.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     2      |      1      |    1    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   1   |   0    |         2          |      1      |    1    |
 
 | Event Type         | Rules    | Models |
 | ---- | ---- | ------ |

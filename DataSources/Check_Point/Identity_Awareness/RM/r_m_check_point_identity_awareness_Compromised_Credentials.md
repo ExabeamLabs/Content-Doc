@@ -3,9 +3,9 @@ Vendor: Check Point
 ### Product: [Identity Awareness](../ds_check_point_identity_awareness.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  26   |   12   |     3      |      4      |    4    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  26   |   12   |         3          |      2      |    2    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

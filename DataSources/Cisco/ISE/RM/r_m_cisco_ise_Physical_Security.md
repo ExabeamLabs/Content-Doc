@@ -3,9 +3,9 @@ Vendor: Cisco
 ### Product: [ISE](../ds_cisco_ise.md)
 ### Use-Case: [Physical Security](../../../../UseCases/uc_physical_security.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   1    |     1      |     11      |   11    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   1   |   1    |         1          |      1      |    1    |
 
 | Event Type | Rules    | Models    |
 | ---------- | ---- | ---- |

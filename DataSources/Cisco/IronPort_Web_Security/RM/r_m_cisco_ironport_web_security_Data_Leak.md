@@ -3,9 +3,9 @@ Vendor: Cisco
 ### Product: [IronPort Web Security](../ds_cisco_ironport_web_security.md)
 ### Use-Case: [Data Leak](../../../../UseCases/uc_data_leak.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   6   |   2    |     4      |      2      |    2    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   6   |   2    |         4          |      2      |    2    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

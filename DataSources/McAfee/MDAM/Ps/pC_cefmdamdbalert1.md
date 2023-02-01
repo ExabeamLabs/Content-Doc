@@ -18,7 +18,10 @@ Name = cef-mdam-db-alert-1
     """DB_Name =\\"({database_name}[^"]{1,2000})\\"""",
     """\sExec_User=\\"(({domain}[^\\]{1,2000})\\+)?({user}[^"\\]{1,200})""",
     """OS_User=\\"([^\\]{1,2000}\\+)?({os_user}[^"\\]{1,200})""",
-    """Statement=\\"({db_query}({db_operation}\w{1,2000})[^,]{1,2000}?)\s{0,100}\\"{1,20
+    """Statement=\\"({db_query}({db_operation}\w{1,2000})[^$]{1,2000})\s{0,100}\\?$"""
+  ]
+  DupFields = ["user -> db_user"]
+
 
 }
 ```

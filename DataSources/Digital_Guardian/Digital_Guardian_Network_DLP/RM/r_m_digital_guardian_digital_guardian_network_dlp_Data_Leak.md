@@ -3,9 +3,9 @@ Vendor: Digital Guardian
 ### Product: [Digital Guardian Network DLP](../ds_digital_guardian_digital_guardian_network_dlp.md)
 ### Use-Case: [Data Leak](../../../../UseCases/uc_data_leak.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  63   |   34   |     4      |      3      |    3    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  63   |   34   |         4          |      3      |    3    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

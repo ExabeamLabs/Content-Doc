@@ -19,8 +19,9 @@ Name = cef-darktrace
       """\d{2}\s({host}[^\s]{0,2000})\s<""",
       """\|externalId=({alert_id}\d{1,100})\s""",
       """\|Darktrace\|DCIP\|[^\|]{1,2000}\|({category_id}\d{1,100})\|""",
-      """\s(dvc|s)host=(|({src_host}[^\s]{0,2000}))\s""",
-      """\sdhost=(|({dest_host}[^\s]{0,2000}))\s"""
+      """\s(dvc|s)host=(|({src_host}[^\s:]{0,2000}))\s""",
+      """\sdhost=(|({dest_host}[^\s]{0,2000}))\s""",
+      """\sdarktraceUrl=({full_url}[^\s]{1,2000})"""
    ]
  
 

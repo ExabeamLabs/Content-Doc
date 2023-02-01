@@ -3,9 +3,9 @@ Vendor: Palo Alto Networks
 ### Product: [NGFW](../ds_palo_alto_networks_ngfw.md)
 ### Use-Case: [Data Leak](../../../../UseCases/uc_data_leak.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  35   |   20   |     7      |     13      |   13    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  35   |   20   |         7          |      3      |    3    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

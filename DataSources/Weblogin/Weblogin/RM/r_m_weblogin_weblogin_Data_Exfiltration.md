@@ -3,9 +3,9 @@ Vendor: Weblogin
 ### Product: [Weblogin](../ds_weblogin_weblogin.md)
 ### Use-Case: [Data Exfiltration](../../../../UseCases/uc_data_exfiltration.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   7   |   2    |     6      |      1      |    1    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   7   |   2    |         6          |      1      |    1    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

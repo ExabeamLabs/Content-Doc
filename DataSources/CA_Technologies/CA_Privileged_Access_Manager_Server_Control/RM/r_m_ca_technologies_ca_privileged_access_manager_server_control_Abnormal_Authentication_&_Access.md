@@ -3,9 +3,9 @@ Vendor: CA Technologies
 ### Product: [CA Privileged Access Manager Server Control](../ds_ca_technologies_ca_privileged_access_manager_server_control.md)
 ### Use-Case: [Abnormal Authentication & Access](../../../../UseCases/uc_abnormal_authentication_&_access.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  35   |   14   |     5      |      5      |    5    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  35   |   14   |         5          |      5      |    5    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

@@ -3,9 +3,9 @@ Vendor: VMware
 ### Product: [VMWare ID Manager (VIDM)](../ds_vmware_vmware_id_manager_(vidm).md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  43   |   24   |     3      |      5      |    5    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  43   |   24   |         3          |      3      |    3    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

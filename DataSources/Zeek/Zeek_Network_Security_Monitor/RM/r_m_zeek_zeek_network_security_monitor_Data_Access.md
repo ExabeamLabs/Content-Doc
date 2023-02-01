@@ -3,9 +3,9 @@ Vendor: Zeek
 ### Product: [Zeek Network Security Monitor](../ds_zeek_zeek_network_security_monitor.md)
 ### Use-Case: [Data Access](../../../../UseCases/uc_data_access.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  43   |   24   |     2      |     24      |   24    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  43   |   24   |         2          |      4      |    4    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

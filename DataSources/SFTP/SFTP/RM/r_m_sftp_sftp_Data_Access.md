@@ -3,9 +3,9 @@ Vendor: SFTP
 ### Product: [SFTP](../ds_sftp_sftp.md)
 ### Use-Case: [Data Access](../../../../UseCases/uc_data_access.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  30   |   17   |     2      |      7      |    7    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  30   |   17   |         2          |      5      |    5    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

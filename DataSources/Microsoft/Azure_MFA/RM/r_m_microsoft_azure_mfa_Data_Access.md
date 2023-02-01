@@ -3,9 +3,9 @@ Vendor: Microsoft
 ### Product: [Azure MFA](../ds_microsoft_azure_mfa.md)
 ### Use-Case: [Data Access](../../../../UseCases/uc_data_access.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  19   |   11   |     1      |      3      |    3    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  19   |   11   |         1          |      1      |    1    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

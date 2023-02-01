@@ -3,9 +3,9 @@ Vendor: Dropbox
 ### Product: [Dropbox](../ds_dropbox_dropbox.md)
 ### Use-Case: [Abnormal Authentication & Access](../../../../UseCases/uc_abnormal_authentication_&_access.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  25   |   6    |     3      |      8      |    8    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  25   |   6    |         3          |      3      |    3    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

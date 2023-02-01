@@ -3,9 +3,9 @@ Vendor: Google
 ### Product: [Workspace](../ds_google_workspace.md)
 ### Use-Case: [Data Leak](../../../../UseCases/uc_data_leak.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  38   |   16   |     3      |     15      |   15    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  38   |   16   |         3          |      4      |    4    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

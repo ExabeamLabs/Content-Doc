@@ -3,9 +3,9 @@ Vendor: Cisco
 ### Product: [TACACS](../ds_cisco_tacacs.md)
 ### Use-Case: [Audit Tampering](../../../../UseCases/uc_audit_tampering.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   7   |   0    |     6      |      2      |    2    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   7   |   0    |         6          |      1      |    1    |
 
 | Event Type      | Rules    | Models |
 | ---- | ---- | ------ |

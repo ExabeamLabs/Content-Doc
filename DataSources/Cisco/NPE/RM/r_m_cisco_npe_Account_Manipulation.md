@@ -3,9 +3,9 @@ Vendor: Cisco
 ### Product: [NPE](../ds_cisco_npe.md)
 ### Use-Case: [Account Manipulation](../../../../UseCases/uc_account_manipulation.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  15   |   6    |     12     |      1      |    1    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  15   |   6    |         12         |      1      |    1    |
 
 | Event Type      | Rules    | Models    |
 | ---- | ---- | ---- |

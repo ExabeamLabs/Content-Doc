@@ -3,9 +3,9 @@ Vendor: LEAP
 ### Product: [LEAP](../ds_leap_leap.md)
 ### Use-Case: [Privilege Escalation](../../../../UseCases/uc_privilege_escalation.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   3   |   1    |     1      |      2      |    2    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   3   |   1    |         1          |      1      |    1    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

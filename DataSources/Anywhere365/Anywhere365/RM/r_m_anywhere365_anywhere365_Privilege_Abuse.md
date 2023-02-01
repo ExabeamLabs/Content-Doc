@@ -3,9 +3,9 @@ Vendor: Anywhere365
 ### Product: [Anywhere365](../ds_anywhere365_anywhere365.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   6   |   2    |     2      |      1      |    1    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   6   |   2    |         2          |      1      |    1    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

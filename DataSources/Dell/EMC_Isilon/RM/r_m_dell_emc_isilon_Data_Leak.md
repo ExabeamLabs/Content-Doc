@@ -3,9 +3,9 @@ Vendor: Dell
 ### Product: [EMC Isilon](../ds_dell_emc_isilon.md)
 ### Use-Case: [Data Leak](../../../../UseCases/uc_data_leak.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     1      |      5      |    5    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   1   |   0    |         1          |      1      |    1    |
 
 | Event Type | Rules    | Models |
 | ---------- | ---- | ------ |

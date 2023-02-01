@@ -3,9 +3,9 @@ Vendor: Check Point
 ### Product: [Security Gateway](../ds_check_point_security_gateway.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   3   |   2    |     3      |      2      |    2    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   3   |   2    |         3          |      2      |    2    |
 
 | Event Type | Rules    | Models    |
 | ---------- | ---- | ---- |

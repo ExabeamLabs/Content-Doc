@@ -3,9 +3,9 @@ Vendor: Dell
 ### Product: [One Identity Manager](../ds_dell_one_identity_manager.md)
 ### Use-Case: [Privilege Escalation](../../../../UseCases/uc_privilege_escalation.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  13   |   7    |     3      |      3      |    3    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  13   |   7    |         3          |      2      |    2    |
 
 | Event Type     | Rules    | Models    |
 | ---- | ---- | ---- |

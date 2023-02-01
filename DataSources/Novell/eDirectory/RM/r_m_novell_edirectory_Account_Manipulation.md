@@ -3,9 +3,9 @@ Vendor: Novell
 ### Product: [eDirectory](../ds_novell_edirectory.md)
 ### Use-Case: [Account Manipulation](../../../../UseCases/uc_account_manipulation.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     1      |      7      |    7    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   1   |   0    |         1          |      1      |    1    |
 
 | Event Type    | Rules    | Models |
 | ---- | ---- | ------ |

@@ -3,9 +3,9 @@ Vendor: BlackBerry
 ### Product: [BlackBerry Protect](../ds_blackberry_blackberry_protect.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   7   |   2    |     2      |      6      |    6    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   7   |   2    |         2          |      3      |    3    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

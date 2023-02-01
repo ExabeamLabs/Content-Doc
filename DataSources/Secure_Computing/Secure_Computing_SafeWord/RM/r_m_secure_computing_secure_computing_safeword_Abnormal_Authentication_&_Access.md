@@ -3,9 +3,9 @@ Vendor: Secure Computing
 ### Product: [Secure Computing SafeWord](../ds_secure_computing_secure_computing_safeword.md)
 ### Use-Case: [Abnormal Authentication & Access](../../../../UseCases/uc_abnormal_authentication_&_access.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  11   |   4    |     2      |      1      |    1    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  11   |   4    |         2          |      1      |    1    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

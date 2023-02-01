@@ -3,9 +3,9 @@ Vendor: IBM
 ### Product: [IBM Racf](../ds_ibm_ibm_racf.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   6   |   2    |     2      |      5      |    5    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   6   |   2    |         2          |      3      |    3    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

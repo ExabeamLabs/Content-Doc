@@ -3,9 +3,9 @@ Vendor: Palo Alto Networks
 ### Product: [NGFW](../ds_palo_alto_networks_ngfw.md)
 ### Use-Case: [Cryptomining](../../../../UseCases/uc_cryptomining.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   0    |     2      |     13      |   13    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   2   |   0    |         2          |      2      |    2    |
 
 | Event Type    | Rules    | Models |
 | ---- | ---- | ------ |

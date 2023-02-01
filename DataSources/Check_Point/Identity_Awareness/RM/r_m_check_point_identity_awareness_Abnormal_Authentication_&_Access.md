@@ -3,9 +3,9 @@ Vendor: Check Point
 ### Product: [Identity Awareness](../ds_check_point_identity_awareness.md)
 ### Use-Case: [Abnormal Authentication & Access](../../../../UseCases/uc_abnormal_authentication_&_access.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  29   |   7    |     3      |      4      |    4    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  29   |   7    |         3          |      2      |    2    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

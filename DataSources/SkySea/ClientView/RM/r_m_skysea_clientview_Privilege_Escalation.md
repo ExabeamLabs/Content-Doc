@@ -3,9 +3,9 @@ Vendor: SkySea
 ### Product: [ClientView](../ds_skysea_clientview.md)
 ### Use-Case: [Privilege Escalation](../../../../UseCases/uc_privilege_escalation.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  77   |   9    |     44     |     15      |   15    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  77   |   9    |         44         |      3      |    3    |
 
 | Event Type      | Rules    | Models    |
 | ---- | ---- | ---- |

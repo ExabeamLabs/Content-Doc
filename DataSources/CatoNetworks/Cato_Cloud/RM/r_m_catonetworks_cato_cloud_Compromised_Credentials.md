@@ -3,9 +3,9 @@ Vendor: CatoNetworks
 ### Product: [Cato Cloud](../ds_catonetworks_cato_cloud.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  89   |   44   |     11     |      6      |    6    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  89   |   44   |         11         |      5      |    5    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

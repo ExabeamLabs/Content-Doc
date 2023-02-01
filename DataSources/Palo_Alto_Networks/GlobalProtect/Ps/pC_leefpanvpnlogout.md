@@ -2,7 +2,7 @@
 ```Java
 {
 Name = leef-pan-vpn-logout
-  DataType = "vpn-logout"
+  DataType = "vpn-end"
   Conditions = [ """LEEF:""", """|Palo Alto Networks|""", """|PAN-OS Syslog Integration|""", """|gateway-logout-success|""", """|Type=GLOBALPROTECT|""" ]
 
 leef-pan-vpn-event = {

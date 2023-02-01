@@ -3,9 +3,9 @@ Vendor: Bitdefender
 ### Product: [GravityZone](../ds_bitdefender_gravityzone.md)
 ### Use-Case: [Data Leak](../../../../UseCases/uc_data_leak.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   4   |   2    |     2      |      3      |    3    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   4   |   2    |         2          |      1      |    1    |
 
 | Event Type          | Rules    | Models    |
 | ---- | ---- | ---- |

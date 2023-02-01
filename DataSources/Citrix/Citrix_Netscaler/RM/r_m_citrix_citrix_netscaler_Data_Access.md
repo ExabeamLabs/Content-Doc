@@ -3,9 +3,9 @@ Vendor: Citrix
 ### Product: [Citrix Netscaler](../ds_citrix_citrix_netscaler.md)
 ### Use-Case: [Data Access](../../../../UseCases/uc_data_access.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   8   |   5    |     3      |      5      |    5    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   8   |   5    |         3          |      3      |    3    |
 
 | Event Type      | Rules    | Models    |
 | ---- | ---- | ---- |

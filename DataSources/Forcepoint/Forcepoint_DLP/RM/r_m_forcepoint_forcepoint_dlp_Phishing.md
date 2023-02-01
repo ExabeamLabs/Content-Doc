@@ -3,9 +3,9 @@ Vendor: Forcepoint
 ### Product: [Forcepoint DLP](../ds_forcepoint_forcepoint_dlp.md)
 ### Use-Case: [Phishing](../../../../UseCases/uc_phishing.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   1    |     1      |      6      |    6    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   1   |   1    |         1          |      1      |    1    |
 
 | Event Type          | Rules    | Models    |
 | ---- | ---- | ---- |

@@ -3,9 +3,9 @@ Vendor: Cisco
 ### Product: [NPE](../ds_cisco_npe.md)
 ### Use-Case: [Ransomware](../../../../UseCases/uc_ransomware.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   5   |   0    |     8      |      1      |    1    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   5   |   0    |         8          |      1      |    1    |
 
 | Event Type      | Rules    | Models |
 | ---- | ---- | ------ |

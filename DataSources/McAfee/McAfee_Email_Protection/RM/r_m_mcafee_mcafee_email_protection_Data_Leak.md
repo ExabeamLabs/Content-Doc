@@ -3,9 +3,9 @@ Vendor: McAfee
 ### Product: [McAfee Email Protection](../ds_mcafee_mcafee_email_protection.md)
 ### Use-Case: [Data Leak](../../../../UseCases/uc_data_leak.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  34   |   16   |     1      |      4      |    4    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  34   |   16   |         1          |      2      |    2    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

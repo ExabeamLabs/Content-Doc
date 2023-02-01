@@ -3,9 +3,9 @@ Vendor: Cisco
 ### Product: [Adaptive Security Appliance](../ds_cisco_adaptive_security_appliance.md)
 ### Use-Case: [Privilege Escalation](../../../../UseCases/uc_privilege_escalation.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  77   |   14   |     45     |     13      |   13    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  77   |   14   |         45         |      4      |    4    |
 
 | Event Type      | Rules    | Models    |
 | ---- | ---- | ---- |

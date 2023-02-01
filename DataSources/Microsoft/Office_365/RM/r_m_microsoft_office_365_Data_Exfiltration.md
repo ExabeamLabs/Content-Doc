@@ -3,9 +3,9 @@ Vendor: Microsoft
 ### Product: [Office 365](../ds_microsoft_office_365.md)
 ### Use-Case: [Data Exfiltration](../../../../UseCases/uc_data_exfiltration.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  44   |   19   |     15     |     19      |   19    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  44   |   19   |         15         |      3      |    3    |
 
 | Event Type      | Rules    | Models    |
 | ---- | ---- | ---- |

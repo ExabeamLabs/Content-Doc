@@ -3,9 +3,9 @@ Vendor: Zscaler
 ### Product: [Zscaler Private Access](../ds_zscaler_zscaler_private_access.md)
 ### Use-Case: [Data Leak](../../../../UseCases/uc_data_leak.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  11   |   11   |     5      |      2      |    2    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  11   |   11   |         5          |      1      |    1    |
 
 | Event Type | Rules    | Models    |
 | ---------- | ---- | ---- |

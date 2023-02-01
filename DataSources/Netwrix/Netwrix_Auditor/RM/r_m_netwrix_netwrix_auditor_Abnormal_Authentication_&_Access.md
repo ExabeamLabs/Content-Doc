@@ -3,9 +3,9 @@ Vendor: Netwrix
 ### Product: [Netwrix Auditor](../ds_netwrix_netwrix_auditor.md)
 ### Use-Case: [Abnormal Authentication & Access](../../../../UseCases/uc_abnormal_authentication_&_access.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  21   |   6    |     3      |     15      |   15    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  21   |   6    |         3          |     10      |   10    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

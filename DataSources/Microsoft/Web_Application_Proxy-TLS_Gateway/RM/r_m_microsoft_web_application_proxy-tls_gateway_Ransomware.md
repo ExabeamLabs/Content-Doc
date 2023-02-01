@@ -3,9 +3,9 @@ Vendor: Microsoft
 ### Product: [Web Application Proxy-TLS Gateway](../ds_microsoft_web_application_proxy-tls_gateway.md)
 ### Use-Case: [Ransomware](../../../../UseCases/uc_ransomware.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     1      |      2      |    2    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   1   |   0    |         1          |      2      |    2    |
 
 | Event Type    | Rules    | Models |
 | ---- | ---- | ------ |

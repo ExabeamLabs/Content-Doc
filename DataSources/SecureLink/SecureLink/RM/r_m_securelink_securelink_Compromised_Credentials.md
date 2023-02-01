@@ -3,9 +3,9 @@ Vendor: SecureLink
 ### Product: [SecureLink](../ds_securelink_securelink.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  43   |   24   |     3      |      3      |    3    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  43   |   24   |         3          |      3      |    3    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

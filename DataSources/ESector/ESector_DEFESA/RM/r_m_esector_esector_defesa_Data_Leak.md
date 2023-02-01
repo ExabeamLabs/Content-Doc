@@ -3,9 +3,9 @@ Vendor: ESector
 ### Product: [ESector DEFESA](../ds_esector_esector_defesa.md)
 ### Use-Case: [Data Leak](../../../../UseCases/uc_data_leak.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     1      |      3      |    3    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   1   |   0    |         1          |      1      |    1    |
 
 | Event Type | Rules    | Models |
 | ---------- | ---- | ------ |

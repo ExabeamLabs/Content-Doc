@@ -3,9 +3,9 @@ Vendor: Microsoft
 ### Product: [Exchange](../ds_microsoft_exchange.md)
 ### Use-Case: [Ransomware](../../../../UseCases/uc_ransomware.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   0    |     1      |      9      |    9    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   2   |   0    |         1          |      4      |    4    |
 
 | Event Type          | Rules    | Models |
 | ---- | ---- | ------ |

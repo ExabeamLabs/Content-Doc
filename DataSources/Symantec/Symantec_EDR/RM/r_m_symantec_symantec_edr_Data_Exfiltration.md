@@ -3,9 +3,9 @@ Vendor: Symantec
 ### Product: [Symantec EDR](../ds_symantec_symantec_edr.md)
 ### Use-Case: [Data Exfiltration](../../../../UseCases/uc_data_exfiltration.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  15   |   1    |     12     |      6      |    6    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  15   |   1    |         12         |      3      |    3    |
 
 | Event Type      | Rules    | Models    |
 | ---- | ---- | ---- |

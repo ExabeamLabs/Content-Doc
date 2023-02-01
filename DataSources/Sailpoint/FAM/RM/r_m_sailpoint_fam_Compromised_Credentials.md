@@ -3,9 +3,9 @@ Vendor: Sailpoint
 ### Product: [FAM](../ds_sailpoint_fam.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  33   |   14   |     4      |      4      |    4    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  33   |   14   |         4          |      4      |    4    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

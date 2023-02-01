@@ -3,9 +3,9 @@ Vendor: Clearswift SEG
 ### Product: [Clearswift SEG](../ds_clearswift_seg_clearswift_seg.md)
 ### Use-Case: [Data Leak](../../../../UseCases/uc_data_leak.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  34   |   16   |     1      |      4      |    4    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  34   |   16   |         1          |      2      |    2    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

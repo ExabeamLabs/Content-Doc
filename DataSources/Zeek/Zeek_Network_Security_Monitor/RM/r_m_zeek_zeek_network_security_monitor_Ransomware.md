@@ -3,9 +3,9 @@ Vendor: Zeek
 ### Product: [Zeek Network Security Monitor](../ds_zeek_zeek_network_security_monitor.md)
 ### Use-Case: [Ransomware](../../../../UseCases/uc_ransomware.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   4   |   0    |     3      |     24      |   24    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   4   |   0    |         3          |      8      |    8    |
 
 | Event Type    | Rules    | Models |
 | ---- | ---- | ------ |

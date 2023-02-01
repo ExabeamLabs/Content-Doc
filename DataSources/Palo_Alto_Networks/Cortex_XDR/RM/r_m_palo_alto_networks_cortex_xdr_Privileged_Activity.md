@@ -3,9 +3,9 @@ Vendor: Palo Alto Networks
 ### Product: [Cortex XDR](../ds_palo_alto_networks_cortex_xdr.md)
 ### Use-Case: [Privileged Activity](../../../../UseCases/uc_privileged_activity.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   3   |   1    |     2      |      3      |    3    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   3   |   1    |         2          |      3      |    3    |
 
 | Event Type     | Rules    | Models    |
 | ---- | ---- | ---- |

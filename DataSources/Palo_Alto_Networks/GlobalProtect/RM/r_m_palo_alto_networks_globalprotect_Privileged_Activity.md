@@ -3,9 +3,9 @@ Vendor: Palo Alto Networks
 ### Product: [GlobalProtect](../ds_palo_alto_networks_globalprotect.md)
 ### Use-Case: [Privileged Activity](../../../../UseCases/uc_privileged_activity.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  18   |   8    |     4      |      8      |    8    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  18   |   8    |         4          |      3      |    3    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

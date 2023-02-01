@@ -3,9 +3,9 @@ Vendor: Tanium
 ### Product: [Endpoint Platform](../ds_tanium_endpoint_platform.md)
 ### Use-Case: [Data Exfiltration](../../../../UseCases/uc_data_exfiltration.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  13   |   0    |     11     |      5      |    5    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  13   |   0    |         11         |      1      |    1    |
 
 | Event Type      | Rules    | Models |
 | ---- | ---- | ------ |

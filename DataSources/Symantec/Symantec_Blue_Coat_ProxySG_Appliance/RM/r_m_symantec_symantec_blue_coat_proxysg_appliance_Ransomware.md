@@ -3,9 +3,9 @@ Vendor: Symantec
 ### Product: [Symantec Blue Coat ProxySG Appliance](../ds_symantec_symantec_blue_coat_proxysg_appliance.md)
 ### Use-Case: [Ransomware](../../../../UseCases/uc_ransomware.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     1      |      3      |    3    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   1   |   0    |         1          |      2      |    2    |
 
 | Event Type    | Rules    | Models |
 | ---- | ---- | ------ |

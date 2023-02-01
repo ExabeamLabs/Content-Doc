@@ -3,9 +3,9 @@ Vendor: NetDocs
 ### Product: [NetDocs](../ds_netdocs_netdocs.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  72   |   38   |     6      |      5      |    5    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  72   |   38   |         6          |      4      |    4    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

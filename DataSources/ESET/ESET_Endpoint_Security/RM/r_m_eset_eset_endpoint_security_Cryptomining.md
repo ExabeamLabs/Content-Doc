@@ -3,9 +3,9 @@ Vendor: ESET
 ### Product: [ESET Endpoint Security](../ds_eset_eset_endpoint_security.md)
 ### Use-Case: [Cryptomining](../../../../UseCases/uc_cryptomining.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   0    |     2      |      7      |    7    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   2   |   0    |         2          |      1      |    1    |
 
 | Event Type          | Rules    | Models |
 | ---- | ---- | ------ |

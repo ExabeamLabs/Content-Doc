@@ -3,9 +3,9 @@ Vendor: ObserveIT
 ### Product: [ObserveIT](../ds_observeit_observeit.md)
 ### Use-Case: [Abnormal Authentication & Access](../../../../UseCases/uc_abnormal_authentication_&_access.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  35   |   14   |     5      |      8      |    8    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  35   |   14   |         5          |      4      |    4    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

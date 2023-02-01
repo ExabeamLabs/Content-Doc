@@ -3,9 +3,9 @@ Vendor: Tanium
 ### Product: [Threat Response](../ds_tanium_threat_response.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   7   |   2    |     2      |      1      |    1    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   7   |   2    |         2          |      1      |    1    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

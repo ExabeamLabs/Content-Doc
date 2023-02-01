@@ -3,9 +3,9 @@ Vendor: Symantec
 ### Product: [Symantec VIP](../ds_symantec_symantec_vip.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  39   |   24   |     2      |      4      |    4    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  39   |   24   |         2          |      2      |    2    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

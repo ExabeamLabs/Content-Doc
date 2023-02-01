@@ -9,7 +9,8 @@ Name = cef-o365-app-login-failed
     """"ResultStatusDetail":"((?i)Success|({failure_reason}[^"]{1,2000}))"""",
     """"LogonError":"({failure_reason}[^"]{1,2000})""",
     """"Operation":"UserLogin({outcome}[^"]{1,2000})""",
-    """CEF:([^\|]{0,2000}\|){5}({activity}[^\|]{1,2000})"""
+    """CEF:([^\|]{0,2000}\|){5}({activity}[^\|]{1,2000})""",
+    """"ErrorNumber":"({error_code}\d{1,20})""""
   ]
 
 cef-o365-app-login-2 = {

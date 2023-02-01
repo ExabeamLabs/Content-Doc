@@ -3,9 +3,9 @@ Vendor: Zscaler
 ### Product: [Zscaler Private Access](../ds_zscaler_zscaler_private_access.md)
 ### Use-Case: [Physical Security](../../../../UseCases/uc_physical_security.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   1    |     1      |      2      |    2    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   1   |   1    |         1          |      1      |    1    |
 
 | Event Type | Rules    | Models    |
 | ---------- | ---- | ---- |

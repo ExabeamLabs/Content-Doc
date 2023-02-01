@@ -3,9 +3,9 @@ Vendor: Microsoft
 ### Product: [Defender ATP](../ds_microsoft_defender_atp.md)
 ### Use-Case: [Data Access](../../../../UseCases/uc_data_access.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  31   |   17   |     3      |     15      |   15    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  31   |   17   |         3          |      4      |    4    |
 
 | Event Type      | Rules    | Models    |
 | ---- | ---- | ---- |

@@ -3,9 +3,9 @@ Vendor: Microsoft
 ### Product: [Defender ATP](../ds_microsoft_defender_atp.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  175  |   65   |     21     |     15      |   15    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  175  |   65   |         21         |     12      |   12    |
 
 | Event Type      | Rules    | Models    |
 | ---- | ---- | ---- |

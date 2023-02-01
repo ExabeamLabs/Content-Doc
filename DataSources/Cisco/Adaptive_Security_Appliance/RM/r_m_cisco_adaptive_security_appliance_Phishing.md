@@ -3,9 +3,9 @@ Vendor: Cisco
 ### Product: [Adaptive Security Appliance](../ds_cisco_adaptive_security_appliance.md)
 ### Use-Case: [Phishing](../../../../UseCases/uc_phishing.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   8   |   2    |     7      |     13      |   13    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   8   |   2    |         7          |      3      |    3    |
 
 | Event Type          | Rules    | Models    |
 | ---- | ---- | ---- |

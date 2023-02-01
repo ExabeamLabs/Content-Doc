@@ -3,9 +3,9 @@ Vendor: Cisco
 ### Product: [Adaptive Security Appliance](../ds_cisco_adaptive_security_appliance.md)
 ### Use-Case: [Data Leak](../../../../UseCases/uc_data_leak.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  15   |   13   |     7      |     13      |   13    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  15   |   13   |         7          |      2      |    2    |
 
 | Event Type          | Rules    | Models    |
 | ---- | ---- | ---- |

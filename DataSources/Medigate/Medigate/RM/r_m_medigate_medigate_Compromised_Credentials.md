@@ -3,9 +3,9 @@ Vendor: Medigate
 ### Product: [Medigate](../ds_medigate_medigate.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  27   |   9    |     4      |      2      |    2    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  27   |   9    |         4          |      2      |    2    |
 
 | Event Type     | Rules    | Models    |
 | ---- | ---- | ---- |

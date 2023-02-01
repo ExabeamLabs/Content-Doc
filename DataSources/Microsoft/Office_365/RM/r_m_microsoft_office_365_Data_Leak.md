@@ -3,9 +3,9 @@ Vendor: Microsoft
 ### Product: [Office 365](../ds_microsoft_office_365.md)
 ### Use-Case: [Data Leak](../../../../UseCases/uc_data_leak.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  82   |   38   |     8      |     19      |   19    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  82   |   38   |         8          |      6      |    6    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

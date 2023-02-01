@@ -3,9 +3,9 @@ Vendor: Microsoft
 ### Product: [Web Application Proxy](../ds_microsoft_web_application_proxy.md)
 ### Use-Case: [Ransomware](../../../../UseCases/uc_ransomware.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   0    |     2      |      3      |    3    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   2   |   0    |         2          |      3      |    3    |
 
 | Event Type    | Rules    | Models |
 | ---- | ---- | ------ |

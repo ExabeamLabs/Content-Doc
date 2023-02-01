@@ -3,9 +3,9 @@ Vendor: IBM
 ### Product: [IBM Sterling B2B Integrator](../ds_ibm_ibm_sterling_b2b_integrator.md)
 ### Use-Case: [Account Manipulation](../../../../UseCases/uc_account_manipulation.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  27   |   13   |     3      |      5      |    5    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  27   |   13   |         3          |      3      |    3    |
 
 | Event Type     | Rules    | Models    |
 | ---- | ---- | ---- |

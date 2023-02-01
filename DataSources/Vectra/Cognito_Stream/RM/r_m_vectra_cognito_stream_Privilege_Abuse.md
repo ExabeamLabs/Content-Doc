@@ -3,9 +3,9 @@ Vendor: Vectra
 ### Product: [Cognito Stream](../ds_vectra_cognito_stream.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  12   |   6    |     3      |     10      |   10    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  12   |   6    |         3          |      8      |    8    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

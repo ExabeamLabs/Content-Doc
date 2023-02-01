@@ -3,9 +3,9 @@ Vendor: Microsoft
 ### Product: [Office 365](../ds_microsoft_office_365.md)
 ### Use-Case: [Privileged Activity](../../../../UseCases/uc_privileged_activity.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   6   |   1    |     3      |     19      |   19    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   6   |   1    |         3          |     16      |   16    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

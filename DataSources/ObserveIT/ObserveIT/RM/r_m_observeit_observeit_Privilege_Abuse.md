@@ -3,9 +3,9 @@ Vendor: ObserveIT
 ### Product: [ObserveIT](../ds_observeit_observeit.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  25   |   14   |     7      |      8      |    8    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  25   |   14   |         7          |      5      |    5    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

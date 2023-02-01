@@ -2,13 +2,13 @@ Vendor: N3K
 ===========
 Product: N3K
 ------------
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   0   |   0    |     0      |      1      |    1    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   0   |   0    |         0          |      0      |    0    |
 
-|  Use-Case  | Event Types/Parsers    | MITRE TTP | Content    |
-|:----------:| ---- | --------- | ---- |
-| Enrichment |  computer-logon<br> ↳[s-n3k-dhcp](Ps/pC_sn3kdhcp.md)<br> |    | [](RM/r_m_n3k_n3k_Enrichment.md) |
+|  Use-Case  | Event Types/Parsers | MITRE ATT&CK® TTP | Content    |
+|:----------:| ---- | ---- | ---- |
+| Enrichment |    |    | [](RM/r_m_n3k_n3k_Enrichment.md) |
 
-ATT&CK Matrix for Enterprise
-----------------------------
+MITRE ATT&CK® Framework for Enterprise
+--------------------------------------

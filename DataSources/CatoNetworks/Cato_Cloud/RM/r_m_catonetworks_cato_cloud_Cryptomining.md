@@ -3,9 +3,9 @@ Vendor: CatoNetworks
 ### Product: [Cato Cloud](../ds_catonetworks_cato_cloud.md)
 ### Use-Case: [Cryptomining](../../../../UseCases/uc_cryptomining.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   0    |     2      |      6      |    6    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   2   |   0    |         2          |      2      |    2    |
 
 | Event Type    | Rules    | Models |
 | ---- | ---- | ------ |

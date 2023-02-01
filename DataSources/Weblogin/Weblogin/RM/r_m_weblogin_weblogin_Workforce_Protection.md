@@ -3,9 +3,9 @@ Vendor: Weblogin
 ### Product: [Weblogin](../ds_weblogin_weblogin.md)
 ### Use-Case: [Workforce Protection](../../../../UseCases/uc_workforce_protection.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   4   |   2    |     1      |      1      |    1    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   4   |   2    |         1          |      1      |    1    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

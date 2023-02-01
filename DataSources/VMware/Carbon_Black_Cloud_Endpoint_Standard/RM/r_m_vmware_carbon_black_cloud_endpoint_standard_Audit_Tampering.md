@@ -3,9 +3,9 @@ Vendor: VMware
 ### Product: [Carbon Black Cloud Endpoint Standard](../ds_vmware_carbon_black_cloud_endpoint_standard.md)
 ### Use-Case: [Audit Tampering](../../../../UseCases/uc_audit_tampering.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   7   |   0    |     6      |      9      |    9    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   7   |   0    |         6          |      1      |    1    |
 
 | Event Type      | Rules    | Models |
 | ---- | ---- | ------ |

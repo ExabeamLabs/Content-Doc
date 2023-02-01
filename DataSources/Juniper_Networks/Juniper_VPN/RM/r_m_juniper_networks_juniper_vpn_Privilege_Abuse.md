@@ -3,9 +3,9 @@ Vendor: Juniper Networks
 ### Product: [Juniper VPN](../ds_juniper_networks_juniper_vpn.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   5   |   3    |     5      |      6      |    6    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   5   |   3    |         5          |      4      |    4    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

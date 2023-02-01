@@ -3,9 +3,9 @@ Vendor: Bitdefender
 ### Product: [GravityZone](../ds_bitdefender_gravityzone.md)
 ### Use-Case: [Abnormal Authentication & Access](../../../../UseCases/uc_abnormal_authentication_&_access.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  15   |   7    |     3      |      3      |    3    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  15   |   7    |         3          |      2      |    2    |
 
 | Event Type          | Rules    | Models    |
 | ---- | ---- | ---- |

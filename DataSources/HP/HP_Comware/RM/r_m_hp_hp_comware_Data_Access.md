@@ -3,9 +3,9 @@ Vendor: HP
 ### Product: [HP Comware](../ds_hp_hp_comware.md)
 ### Use-Case: [Data Access](../../../../UseCases/uc_data_access.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   0    |     1      |      1      |    1    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   2   |   0    |         1          |      1      |    1    |
 
 | Event Type      | Rules    | Models |
 | ---- | ---- | ------ |

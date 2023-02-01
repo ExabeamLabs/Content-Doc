@@ -3,9 +3,9 @@ Vendor: Exabeam
 ### Product: [Exabeam DL](../ds_exabeam_exabeam_dl.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  64   |   34   |     4      |      2      |    2    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  64   |   34   |         4          |      2      |    2    |
 
 | Event Type     | Rules    | Models    |
 | ---- | ---- | ---- |

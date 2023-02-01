@@ -3,9 +3,9 @@ Vendor: F5
 ### Product: [F5 BIG-IP](../ds_f5_f5_big-ip.md)
 ### Use-Case: [Account Manipulation](../../../../UseCases/uc_account_manipulation.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   7   |   7    |     2      |      7      |    7    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   7   |   7    |         2          |      1      |    1    |
 
 | Event Type | Rules    | Models    |
 | ---------- | ---- | ---- |

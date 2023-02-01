@@ -3,9 +3,9 @@ Vendor: Symantec
 ### Product: [Symantec Critical System Protection](../ds_symantec_symantec_critical_system_protection.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  38   |   18   |     4      |      6      |    6    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  38   |   18   |         4          |      5      |    5    |
 
 | Event Type     | Rules    | Models    |
 | ---- | ---- | ---- |

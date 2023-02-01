@@ -3,9 +3,9 @@ Vendor: FTP
 ### Product: [FTP](../ds_ftp_ftp.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  76   |   38   |     7      |      7      |    7    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  76   |   38   |         7          |      6      |    6    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

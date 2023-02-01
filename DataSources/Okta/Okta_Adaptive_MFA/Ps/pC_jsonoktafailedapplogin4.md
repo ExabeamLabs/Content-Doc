@@ -5,7 +5,8 @@ Name = json-okta-failed-app-login-4
   DataType = "failed-app-login"
   Conditions = [ """"app.ad.login.bad_password"""" , """destinationServiceName =Okta"""]
   Fields = ${OktaParserTemplates.json-okta-auth.Fields}[
-    """({outcome}(?i)FAILURE|(?i)INVALID|(?i)failed|(?i)fail)"""
+    """({outcome}(?i)FAILURE|(?i)INVALID|(?i)failed|(?i)fail)""",
+    """({activity}app.ad.login.bad_password)"""
   ]
 
 json-okta-auth = {

@@ -11,10 +11,10 @@ Name = s-netscaler-auth-failed
   Fields = [
     """({host}[\w\-.]{1,2000})\s{1,100}({time}\d\d\/\d\d\/\d\d\d\d:\d\d:\d\d:\d\d \w+) [^\s]{1,2000}""",
     """({host}[\w\-.]{1,2000})\s{1,100}({time}\d\d\d\d\/\d\d\/\d\d:\d\d:\d\d:\d\d \w+) [^\s]{1,2000}""",
-    """User\s{1,100}({user}[^\s]{1,2000})""",
+    """User\s{1,100}(({domain}[^\s\\]{1,2000}?)\\{1,20})?({user}[^\s]{1,2000})""",
     """Client_ip\s{1,100}({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """Failure_reason\s{0,100}"({failure_reason}[^"]{1,2000})""",
-    """Browser .*?({user_agent}[^"]{1,2000})""",
+    """Browser\s{1,100}({user_agent}[^"]{1,2000}?)\s{0,100}("|$)""",
   ]
 
 

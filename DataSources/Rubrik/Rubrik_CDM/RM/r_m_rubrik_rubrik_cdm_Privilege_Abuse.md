@@ -3,9 +3,9 @@ Vendor: Rubrik
 ### Product: [Rubrik CDM](../ds_rubrik_rubrik_cdm.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  24   |   12   |     5      |      3      |    3    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  24   |   12   |         5          |      3      |    3    |
 
 | Event Type        | Rules    | Models    |
 | ---- | ---- | ---- |

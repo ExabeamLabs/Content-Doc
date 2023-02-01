@@ -3,9 +3,9 @@ Vendor: Bitglass
 ### Product: [Bitglass CASB](../ds_bitglass_bitglass_casb.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   3   |   0    |     1      |      7      |    7    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   3   |   0    |         1          |      6      |    6    |
 
 | Event Type          | Rules    | Models |
 | ---- | ---- | ------ |

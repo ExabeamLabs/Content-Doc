@@ -11,7 +11,7 @@ Name = o365-sharepoint-activity
   Conditions = [ """Workload""", """SharePoint""", """ItemType""" ]
   Fields = [
     """"CreationTime\\*"{1,20}:\\*\s{0,100}"{1,20}({time}[^\\"]{1,2000})""",
-    """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}\S{1,2000})""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?(gcs-topic|cc|({host}\S{1,2000}))""",
     """"host\\*"{1,20}:\\*\s{0,100}"{1,20}(::ffff:)?({host}[^"\\]{1,2000})""",
     """"SourceRelativeUrl\\*"{1,20}:\\*\s{0,100}"{1,20}({file_parent}[^"]{1,2000})""",
     """"ObjectId\\*"{1,20}:\\*\s{0,100}"{1,20}({file_path}[^"]{1,2000})[\\"](?!\\u\d{1,100})""",

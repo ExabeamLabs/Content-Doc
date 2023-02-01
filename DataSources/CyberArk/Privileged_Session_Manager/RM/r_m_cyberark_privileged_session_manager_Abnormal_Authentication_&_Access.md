@@ -3,9 +3,9 @@ Vendor: CyberArk
 ### Product: [Privileged Session Manager](../ds_cyberark_privileged_session_manager.md)
 ### Use-Case: [Abnormal Authentication & Access](../../../../UseCases/uc_abnormal_authentication_&_access.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  12   |   4    |     2      |      3      |    3    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  12   |   4    |         2          |      3      |    3    |
 
 | Event Type     | Rules    | Models    |
 | ---- | ---- | ---- |

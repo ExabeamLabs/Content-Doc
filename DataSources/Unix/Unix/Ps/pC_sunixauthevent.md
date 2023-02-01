@@ -21,6 +21,7 @@ Name = s-unix-auth-event
     """\sservice:\s{0,100}<({event_code}[^>]{1,2000})>""",
     """Caused by:\s{0,100}({failure_reason}[^\s\(:>]{1,2000})"""
   ]
+  DupFields = ["account->target_user"]
 
 
 }

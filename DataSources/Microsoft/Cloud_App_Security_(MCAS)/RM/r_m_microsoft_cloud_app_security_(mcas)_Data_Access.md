@@ -3,9 +3,9 @@ Vendor: Microsoft
 ### Product: [Cloud App Security (MCAS)](../ds_microsoft_cloud_app_security_(mcas).md)
 ### Use-Case: [Data Access](../../../../UseCases/uc_data_access.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  44   |   24   |     2      |     12      |   12    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  44   |   24   |         2          |      6      |    6    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

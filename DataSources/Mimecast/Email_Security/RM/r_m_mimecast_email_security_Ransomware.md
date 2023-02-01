@@ -3,9 +3,9 @@ Vendor: Mimecast
 ### Product: [Email Security](../ds_mimecast_email_security.md)
 ### Use-Case: [Ransomware](../../../../UseCases/uc_ransomware.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   0    |     1      |      7      |    7    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   2   |   0    |         1          |      3      |    3    |
 
 | Event Type       | Rules    | Models |
 | ---- | ---- | ------ |

@@ -13,7 +13,6 @@ Name = q-varonis-file-activity
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[^\s]{1,2000})""",
     """devTime=({time}\d{1,100}/\d{1,100}/\d{1,100} \d{1,100}:\d{1,100}:\d{1,100} (am|AM|pm|PM))""",
     """devTime=({time}\w{1,10}\s\d\d\s\d\d\d\d\s\d\d:\d\d:\d\d)""",
-    """accountName =({user}[^=]{1,2000}?)\s{1,10}(\w{1,100}=|$)""",
     """domain=(|({domain}[^=]{1,2000}?))\s{1,10}(\w{1,100}=|$)""",
     """src=({src_ip}[A-Fa-f:\d.]{1,2000})\s{1,10}(\w{1,100}=|$)""",
     """Event_Type=({accesses}[^=]{1,2000}?)\s{1,10}(\w{1,100}=|$)""",
@@ -25,7 +24,8 @@ Name = q-varonis-file-activity
     """cat=({category}[^=]{1,2000}?)\s{1,10}(\w{1,100}=|$)""",
     """DatAdvantage\|[^\\]{1,1000}?\|({additional_info}[^\\]{1,2000}?)\|""",
     """Device_Name =({src_host}[^=]{1,2000}?)\s{1,10}(\w{1,100}=|$)""",
-    """usrName =(({domain}[^\\]{1,100})\\)?({user}[^=]{1,1000}?)\s{1,10}(\w{1,100}=|$)"""
+    """usrName =(({domain}[^\\]{1,100})\\)?({user}[^=]{1,1000}?)\s{1,10}(\w{1,100}=|$)""",
+    """accountName =({user}[^=]{1,2000}?)\s{1,10}(\w{1,100}=|$)""",
   ]
   DupFields = [ "accesses->event_code" ]
 

@@ -3,9 +3,9 @@ Vendor: Extreme Networks
 ### Product: [Zebra wireless LAN management](../ds_extreme_networks_zebra_wireless_lan_management.md)
 ### Use-Case: [Privileged Activity](../../../../UseCases/uc_privileged_activity.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   0    |     2      |      1      |    1    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   2   |   0    |         2          |      1      |    1    |
 
 | Event Type   | Rules    | Models |
 | ---- | ---- | ------ |

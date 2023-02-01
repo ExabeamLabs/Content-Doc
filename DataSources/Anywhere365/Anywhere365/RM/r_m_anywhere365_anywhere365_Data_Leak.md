@@ -3,9 +3,9 @@ Vendor: Anywhere365
 ### Product: [Anywhere365](../ds_anywhere365_anywhere365.md)
 ### Use-Case: [Data Leak](../../../../UseCases/uc_data_leak.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   3   |   0    |     1      |      1      |    1    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   3   |   0    |         1          |      1      |    1    |
 
 | Event Type   | Rules    | Models |
 | ---- | ---- | ------ |

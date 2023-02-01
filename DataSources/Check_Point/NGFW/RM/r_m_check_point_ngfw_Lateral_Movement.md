@@ -3,9 +3,9 @@ Vendor: Check Point
 ### Product: [NGFW](../ds_check_point_ngfw.md)
 ### Use-Case: [Lateral Movement](../../../../UseCases/uc_lateral_movement.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  72   |   23   |     11     |     14      |   14    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  72   |   23   |         11         |     10      |   10    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

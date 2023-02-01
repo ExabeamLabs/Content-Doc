@@ -3,9 +3,9 @@ Vendor: Netwrix
 ### Product: [Netwrix Auditor](../ds_netwrix_netwrix_auditor.md)
 ### Use-Case: [Privileged Activity](../../../../UseCases/uc_privileged_activity.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  12   |   3    |     5      |     15      |   15    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  12   |   3    |         5          |      7      |    7    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

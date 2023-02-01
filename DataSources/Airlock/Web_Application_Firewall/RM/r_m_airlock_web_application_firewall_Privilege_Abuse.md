@@ -3,9 +3,9 @@ Vendor: Airlock
 ### Product: [Web Application Firewall](../ds_airlock_web_application_firewall.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   5   |   2    |     2      |     10      |   10    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   5   |   2    |         2          |      8      |    8    |
 
 | Event Type          | Rules    | Models    |
 | ---- | ---- | ---- |

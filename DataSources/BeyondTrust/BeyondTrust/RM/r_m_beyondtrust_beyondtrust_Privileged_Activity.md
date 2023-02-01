@@ -3,9 +3,9 @@ Vendor: BeyondTrust
 ### Product: [BeyondTrust](../ds_beyondtrust_beyondtrust.md)
 ### Use-Case: [Privileged Activity](../../../../UseCases/uc_privileged_activity.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  11   |   7    |     2      |      2      |    2    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  11   |   7    |         2          |      2      |    2    |
 
 | Event Type        | Rules    | Models    |
 | ---- | ---- | ---- |

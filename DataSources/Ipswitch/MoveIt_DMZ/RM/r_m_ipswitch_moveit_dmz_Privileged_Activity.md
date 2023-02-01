@@ -3,9 +3,9 @@ Vendor: Ipswitch
 ### Product: [MoveIt DMZ](../ds_ipswitch_moveit_dmz.md)
 ### Use-Case: [Privileged Activity](../../../../UseCases/uc_privileged_activity.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   3   |   0    |     2      |      9      |    9    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   3   |   0    |         2          |      5      |    5    |
 
 | Event Type    | Rules    | Models |
 | ---- | ---- | ------ |

@@ -9,7 +9,7 @@ Name = crowdstrike-service-created
   TimeFormat = "epoch"
   Conditions = [ """"event_simpleName":""", """"ServiceStarted"""" ]
   Fields = [
-    """exabeam_host=(gcs-topic|({host}[^\s]{1,2000}))""",
+    """exabeam_host=(gcs-topic|cc|({host}({dest_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}|({dest_host}[^\s]{1,2000}))))""",
     """"timestamp":\s{0,100}"({time}\d{1,100})"""",
     """"CommandLine":\s{0,100}"({command_line}.+?)\s{0,100}","TargetProcessId""",
     """"name":\s{0,100}"({service_name}[^"]{1,2000})""",
@@ -20,7 +20,7 @@ Name = crowdstrike-service-created
     """"ImageFileName":\s{0,100}"[\\\?]{1,200}(|({process}({directory}[^"]{0,2000}?)(\\+({process_name}[^"\\]{1,2000}?))?))"""",
     """"aid":\s{0,100}"({aid}[^"]{1,2000})""""
   ]
-  DupFields = [ "directory->process_directory" , "host->dest_host"]
+  DupFields = [ "directory->process_directory" ]
 
 
 }

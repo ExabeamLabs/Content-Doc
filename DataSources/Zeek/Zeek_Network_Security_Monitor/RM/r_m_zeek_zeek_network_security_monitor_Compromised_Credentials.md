@@ -3,9 +3,9 @@ Vendor: Zeek
 ### Product: [Zeek Network Security Monitor](../ds_zeek_zeek_network_security_monitor.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  184  |   90   |     21     |     24      |   24    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  184  |   90   |         21         |     15      |   15    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

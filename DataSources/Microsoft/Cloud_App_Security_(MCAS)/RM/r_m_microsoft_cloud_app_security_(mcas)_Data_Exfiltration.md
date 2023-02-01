@@ -3,9 +3,9 @@ Vendor: Microsoft
 ### Product: [Cloud App Security (MCAS)](../ds_microsoft_cloud_app_security_(mcas).md)
 ### Use-Case: [Data Exfiltration](../../../../UseCases/uc_data_exfiltration.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  31   |   19   |     4      |     12      |   12    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  31   |   19   |         4          |      2      |    2    |
 
 | Event Type | Rules    | Models    |
 | ---------- | ---- | ---- |

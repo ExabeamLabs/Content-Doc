@@ -3,9 +3,9 @@ Vendor: Microsoft
 ### Product: [Defender ATP](../ds_microsoft_defender_atp.md)
 ### Use-Case: [Privilege Escalation](../../../../UseCases/uc_privilege_escalation.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  72   |   9    |     44     |     15      |   15    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  72   |   9    |         44         |      5      |    5    |
 
 | Event Type      | Rules    | Models    |
 | ---- | ---- | ---- |

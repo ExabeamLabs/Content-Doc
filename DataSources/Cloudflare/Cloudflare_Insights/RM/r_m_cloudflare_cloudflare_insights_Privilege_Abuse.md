@@ -3,9 +3,9 @@ Vendor: Cloudflare
 ### Product: [Cloudflare Insights](../ds_cloudflare_cloudflare_insights.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  30   |   14   |     4      |      4      |    4    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  30   |   14   |         4          |      4      |    4    |
 
 | Event Type     | Rules    | Models    |
 | ---- | ---- | ---- |

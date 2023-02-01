@@ -32,8 +32,8 @@ s-aws-cloudtrail-activity-json = {
     """"policyArn"\s{0,100}:\s{0,100}"(|({object}[^"]{1,2000}))"""",
     """"roleName"\s{0,100}:\s{0,100}"(|({object}[^"]{1,2000}))"""",
     """"userAgent"\s{0,100}:\s{0,100}"\[?(|({user_agent}[^"]{1,2000}?))\]?"""",
-    """"{1,20}errorCode"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({activity_outcome}[^"].+?))"{1,20}\s{0,100}[,\]\}]""",
-    """"{1,20}errorMessage"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({additional_info}[^"].+?))"{1,20}\s{0,100}[,\]\}]""",
+    """"{1,20}errorCode"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({result}[^"]{1,2000}))"{1,20}\s{0,100}[,\]\}]""",
+    """"{1,20}errorMessage"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({additional_info}[^"]{1,2000}))"{1,20}\s{0,100}[,\]\}]""",
     """"{1,20}accountId"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({resource}[^"].+?))"{1,20}\s{0,100}[,\]\}]""",
     """"requestParameters"\s{0,100}:[^\}]{1,2000}?"instanceId"\s{0,100}:\s{0,100}"({request_id}[^"]{1,2000})",("attribute"\s{0,100}:\s{0,100}"({request_action}[^"]{1,2000})")?""",
     """"awsRegion"\s{0,100}:\s{0,100}"({region}[^"]{1,2000})"""",
@@ -46,7 +46,8 @@ s-aws-cloudtrail-activity-json = {
     """\srequestClientApplication=({app}[^\s]{1,2000})\s""",
     """items":\[[^\]]{1,2000}?fromPort":({src_port}\d{1,100}),""",
     """items":\[[^\]]{1,2000}?toPort":({dest_port}\d{1,100}),""",
-    """items":\[[^\]]{1,2000}?ipProtocol":"({protocol}[^"]{1,2000})""""
+    """items":\[[^\]]{1,2000}?ipProtocol":"({protocol}[^"]{1,2000})"""",
+    """"{1,20}userIdentity.+?AssumedRole.+?principalId\\?"{1,20}\s{0,100}:\s{0,100}\\?"{1,20}?[A-Z\d]{1,50}:({user}[^"]{1,2000}@({domain}[^@"]{1,2000}))\\?"{1,20}\s{0,100}[,\]\\\\\}]"""
   
 }
 ```

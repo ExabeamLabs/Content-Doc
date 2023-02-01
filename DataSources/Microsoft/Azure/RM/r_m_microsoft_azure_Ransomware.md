@@ -3,9 +3,9 @@ Vendor: Microsoft
 ### Product: [Azure](../ds_microsoft_azure.md)
 ### Use-Case: [Ransomware](../../../../UseCases/uc_ransomware.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   8   |   0    |     9      |     30      |   30    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   8   |   0    |         9          |      9      |    9    |
 
 | Event Type    | Rules    | Models |
 | ---- | ---- | ------ |

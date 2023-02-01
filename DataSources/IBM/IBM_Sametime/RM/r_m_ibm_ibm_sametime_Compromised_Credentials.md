@@ -3,9 +3,9 @@ Vendor: IBM
 ### Product: [IBM Sametime](../ds_ibm_ibm_sametime.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  28   |   16   |     3      |      2      |    2    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  28   |   16   |         3          |      2      |    2    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

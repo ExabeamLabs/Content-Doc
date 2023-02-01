@@ -3,9 +3,9 @@ Vendor: McAfee
 ### Product: [Skyhigh Networks CASB](../ds_mcafee_skyhigh_networks_casb.md)
 ### Use-Case: [Lateral Movement](../../../../UseCases/uc_lateral_movement.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   0    |     2      |      4      |    4    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   2   |   0    |         2          |      3      |    3    |
 
 | Event Type       | Rules    | Models |
 | ---- | ---- | ------ |

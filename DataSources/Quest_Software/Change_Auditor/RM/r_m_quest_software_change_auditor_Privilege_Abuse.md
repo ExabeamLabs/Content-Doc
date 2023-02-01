@@ -3,9 +3,9 @@ Vendor: Quest Software
 ### Product: [Change Auditor](../ds_quest_software_change_auditor.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  40   |   20   |     5      |     14      |   14    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  40   |   20   |         5          |     10      |   10    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

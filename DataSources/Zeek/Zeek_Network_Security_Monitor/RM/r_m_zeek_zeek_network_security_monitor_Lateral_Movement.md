@@ -3,9 +3,9 @@ Vendor: Zeek
 ### Product: [Zeek Network Security Monitor](../ds_zeek_zeek_network_security_monitor.md)
 ### Use-Case: [Lateral Movement](../../../../UseCases/uc_lateral_movement.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  140  |   48   |     18     |     24      |   24    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  140  |   48   |         18         |     14      |   14    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

@@ -3,9 +3,9 @@ Vendor: LogRhythm
 ### Product: [LogRhythm](../ds_logrhythm_logrhythm.md)
 ### Use-Case: [Data Exfiltration](../../../../UseCases/uc_data_exfiltration.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  13   |   0    |     11     |      1      |    1    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  13   |   0    |         11         |      1      |    1    |
 
 | Event Type      | Rules    | Models |
 | ---- | ---- | ------ |

@@ -3,9 +3,9 @@ Vendor: Citrix
 ### Product: [Citrix Gateway ActiveSync Connector](../ds_citrix_citrix_gateway_activesync_connector.md)
 ### Use-Case: [Lateral Movement](../../../../UseCases/uc_lateral_movement.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   0    |     2      |      2      |    2    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   2   |   0    |         2          |      2      |    2    |
 
 | Event Type          | Rules    | Models |
 | ---- | ---- | ------ |

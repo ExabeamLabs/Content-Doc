@@ -3,9 +3,9 @@ Vendor: SentinelOne
 ### Product: [Singularity](../ds_sentinelone_singularity.md)
 ### Use-Case: [Data Access](../../../../UseCases/uc_data_access.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  45   |   24   |     3      |     16      |   16    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  45   |   24   |         3          |      5      |    5    |
 
 | Event Type      | Rules    | Models    |
 | ---- | ---- | ---- |

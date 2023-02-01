@@ -3,9 +3,9 @@ Vendor: HP
 ### Product: [HP LaserJet Printer](../ds_hp_hp_laserjet_printer.md)
 ### Use-Case: [Data Leak](../../../../UseCases/uc_data_leak.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   4   |   2    |     1      |      1      |    1    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   4   |   2    |         1          |      1      |    1    |
 
 | Event Type     | Rules    | Models    |
 | ---- | ---- | ---- |

@@ -3,9 +3,9 @@ Vendor: Egnyte
 ### Product: [Egnyte](../ds_egnyte_egnyte.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   7   |   2    |     2      |      8      |    8    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   7   |   2    |         2          |      8      |    8    |
 
 | Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |

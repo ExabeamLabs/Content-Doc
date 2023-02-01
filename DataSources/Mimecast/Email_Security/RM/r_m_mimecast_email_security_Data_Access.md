@@ -3,9 +3,9 @@ Vendor: Mimecast
 ### Product: [Email Security](../ds_mimecast_email_security.md)
 ### Use-Case: [Data Access](../../../../UseCases/uc_data_access.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  20   |   11   |     1      |      7      |    7    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  20   |   11   |         1          |      3      |    3    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

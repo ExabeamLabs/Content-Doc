@@ -14,6 +14,7 @@ Name = cef-netskope-alert-2
     """"user_id"{1,20}:"{1,20}(({user_email}[^@]{1,2000}@[^"]{1,2000})|({user_id}[^"]{1,2000}))"""",
     """"app":"({process}[^"]{1,2000})""",
     """"{1,20}malware_sev"{1,20}:"{1,20}({alert_severity}[^"]{1,2000})""",
+    """"{1,20}malware_severity"{1,20}:"{1,20}({alert_severity}[^"]{1,2000})""",
     """"malware_id"{1,20}:"{1,20}({alert_id}[^"]{1,2000})""",
     """suser=(({user_email}[^@"\s]{1,2000}@[^@"\s]{1,2000})|(({domain}[^"@\\\/\s]{1,2000})[\\\/]{1,2000})?({user}[^"@\\\/\s]{1,2000}))""",
     """msg=({additional_info}[^=]{1,2000}?)\s{1,100}\w+=""",
@@ -25,6 +26,7 @@ Name = cef-netskope-alert-2
     """outcome=({outcome}[^=]{1,2000}?)\s{1,100}\w+=""",
     """"category":"({category}[^"]{1,2000}?)"""",
     """fileHash=({md5}[^=]{1,2000}?)\s{1,100}\w+=""",
+    """"md5":"({md5}[^"]{1,2000})"""
     """"url":"({malware_url}[^"]{1,2000}?)"""",
     """"file_path"{1,20}:"{1,20}({file_path_at}[^"]{1,2000})"""",
     """"q_shared_with"{1,20}:"{1,20}({shared_with_at}[^"]{1,2000})""""

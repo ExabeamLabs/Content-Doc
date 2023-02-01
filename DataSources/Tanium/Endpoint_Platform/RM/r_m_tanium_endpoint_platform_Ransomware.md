@@ -3,9 +3,9 @@ Vendor: Tanium
 ### Product: [Endpoint Platform](../ds_tanium_endpoint_platform.md)
 ### Use-Case: [Ransomware](../../../../UseCases/uc_ransomware.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   6   |   0    |     9      |      5      |    5    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   6   |   0    |         9          |      3      |    3    |
 
 | Event Type    | Rules    | Models |
 | ---- | ---- | ------ |

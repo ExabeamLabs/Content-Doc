@@ -16,6 +16,8 @@ s-zscaler-web-activity = {
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S{1,2000})""",
+    """devicehostname=(NA|({host}[\w\.\-]{1,2000}))\s\w+=""",
+    """datetime=({time}\w{1,3}\s\w{1,3}\s{1,5}\d{1,2}\s\d\d:\d\d:\d\d\s\d{4})""",
     """({time}\d\d\d\d-\d\d-\d\d \d{1,100}:\d{1,100}:\d{1,100})\s{1,100}(\w+=|$)""",
     """\sreason=(Allowed|({failure_reason}[^=]{1,2000}?))\s{0,100}(\w+=|$)""",
     """\saction=({action}[^=]{1,2000}?)\s{0,100}(\w+=|$)""",

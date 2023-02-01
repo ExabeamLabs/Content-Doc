@@ -3,9 +3,9 @@ Vendor: Symantec
 ### Product: [Symantec Advanced Threat Protection](../ds_symantec_symantec_advanced_threat_protection.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  25   |   10   |     4      |      1      |    1    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  25   |   10   |         4          |      1      |    1    |
 
 | Event Type     | Rules    | Models    |
 | ---- | ---- | ---- |

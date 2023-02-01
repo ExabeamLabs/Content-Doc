@@ -3,9 +3,9 @@ Vendor: Symantec
 ### Product: [Symantec Critical System Protection](../ds_symantec_symantec_critical_system_protection.md)
 ### Use-Case: [Privilege Escalation](../../../../UseCases/uc_privilege_escalation.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  13   |   7    |     3      |      6      |    6    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  13   |   7    |         3          |      3      |    3    |
 
 | Event Type     | Rules    | Models    |
 | ---- | ---- | ---- |

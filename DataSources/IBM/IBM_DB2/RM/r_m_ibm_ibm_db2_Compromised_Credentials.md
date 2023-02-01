@@ -3,9 +3,9 @@ Vendor: IBM
 ### Product: [IBM DB2](../ds_ibm_ibm_db2.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  89   |   39   |     13     |      4      |    4    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  89   |   39   |         13         |      3      |    3    |
 
 | Event Type     | Rules    | Models    |
 | ---- | ---- | ---- |

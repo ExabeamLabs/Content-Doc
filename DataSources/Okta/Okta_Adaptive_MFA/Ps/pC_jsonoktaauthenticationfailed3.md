@@ -5,7 +5,8 @@ Name = json-okta-authentication-failed-3
   DataType = "authentication-failed"
   Conditions = [ """"app.ad.agent.user_auth.error"""" , """destinationServiceName =Okta"""]
   Fields = ${OktaParserTemplates.json-okta-auth.Fields}[
-    """({outcome}(?i)FAILURE|(?i)INVALID|(?i)failed|(?i)fail)"""
+    """({outcome}(?i)FAILURE|(?i)INVALID|(?i)failed|(?i)fail)""",
+    """({activity}app.ad.agent.user_auth.error)"""
   ]
 
 json-okta-auth = {

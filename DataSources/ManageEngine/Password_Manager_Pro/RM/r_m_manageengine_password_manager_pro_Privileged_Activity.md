@@ -3,9 +3,9 @@ Vendor: ManageEngine
 ### Product: [Password Manager Pro](../ds_manageengine_password_manager_pro.md)
 ### Use-Case: [Privileged Activity](../../../../UseCases/uc_privileged_activity.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   0    |     1      |      3      |    3    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   2   |   0    |         1          |      2      |    2    |
 
 | Event Type     | Rules    | Models |
 | ---- | ---- | ------ |

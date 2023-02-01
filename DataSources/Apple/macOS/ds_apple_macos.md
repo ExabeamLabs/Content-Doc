@@ -2,11 +2,11 @@ Vendor: Apple
 =============
 Product: macOS
 --------------
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  40   |   19   |     7      |      1      |    1    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  40   |   19   |         7          |      1      |    1    |
 
-|    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
+|    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 | [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  local-logon<br> ↳[osx-local-logon](Ps/pC_osxlocallogon.md)<br> | T1078 - Valid Accounts<br>T1078.003 - Valid Accounts: Local Accounts<br>    | [<ul><li>22 Rules</li></ul><ul><li>10 Models</li></ul>](RM/r_m_apple_macos_Abnormal_Authentication_&_Access.md) |
 |          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  local-logon<br> ↳[osx-local-logon](Ps/pC_osxlocallogon.md)<br> | T1078 - Valid Accounts<br>T1078.002 - T1078.002<br>T1078.003 - Valid Accounts: Local Accounts<br>T1550.003 - Use Alternate Authentication Material: Pass the Ticket<br>T1558 - Steal or Forge Kerberos Tickets<br> | [<ul><li>27 Rules</li></ul><ul><li>12 Models</li></ul>](RM/r_m_apple_macos_Compromised_Credentials.md)          |
@@ -16,8 +16,8 @@ Product: macOS
 |    [Privilege Escalation](../../../UseCases/uc_privilege_escalation.md)    |  local-logon<br> ↳[osx-local-logon](Ps/pC_osxlocallogon.md)<br> | T1078 - Valid Accounts<br>T1555.005 - T1555.005<br>    | [<ul><li>2 Rules</li></ul><ul><li>1 Models</li></ul>](RM/r_m_apple_macos_Privilege_Escalation.md)    |
 |    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  local-logon<br> ↳[osx-local-logon](Ps/pC_osxlocallogon.md)<br> | T1078 - Valid Accounts<br>T1078.002 - T1078.002<br>    | [<ul><li>11 Rules</li></ul><ul><li>5 Models</li></ul>](RM/r_m_apple_macos_Privileged_Activity.md)    |
 
-ATT&CK Matrix for Enterprise
-----------------------------
+MITRE ATT&CK® Framework for Enterprise
+--------------------------------------
 | Initial Access                                                      | Execution | Persistence                                                         | Privilege Escalation                                                | Defense Evasion                                                                                                                                                                                                                                                                                                                                                     | Credential Access                                                                                                                                                         | Discovery | Lateral Movement                                                                           | Collection | Command and Control | Exfiltration | Impact |
 | ------------------------------------------------------------------- | --------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------ | ---------- | ------------------- | ------------ | ------ |
 | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |           | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br>[Use Alternate Authentication Material](https://attack.mitre.org/techniques/T1550)<br><br>[Use Alternate Authentication Material: Pass the Ticket](https://attack.mitre.org/techniques/T1550/003)<br><br>[Valid Accounts: Local Accounts](https://attack.mitre.org/techniques/T1078/003)<br><br> | [Steal or Forge Kerberos Tickets](https://attack.mitre.org/techniques/T1558)<br><br>[Credentials from Password Stores](https://attack.mitre.org/techniques/T1555)<br><br> |           | [Use Alternate Authentication Material](https://attack.mitre.org/techniques/T1550)<br><br> |            |                     |              |        |

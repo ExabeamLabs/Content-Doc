@@ -3,9 +3,9 @@ Vendor: BeyondTrust
 ### Product: [BeyondTrust PasswordSafe](../ds_beyondtrust_beyondtrust_passwordsafe.md)
 ### Use-Case: [Privilege Escalation](../../../../UseCases/uc_privilege_escalation.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  10   |   6    |     2      |      4      |    4    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  10   |   6    |         2          |      1      |    1    |
 
 | Event Type     | Rules    | Models    |
 | ---- | ---- | ---- |

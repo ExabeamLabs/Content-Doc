@@ -5,7 +5,7 @@ Name = cef-security-graph-alert
  Product = Azure Security Center
  DataType = "database-alert"
  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
- Conditions = [ """"category":""", """"SQL.DB_GeoAnomaly"""", """"title":""", """"vendor":""", """"Microsoft"""", """"provider":""", """"ASC"""" ]
+ Conditions = [ """CEF:""", """"category":""", """"SQL.DB_GeoAnomaly"""", """"title":""", """"vendor":""", """"Microsoft"""", """"provider":""", """"ASC"""" ]
  Fields = ${MicrosoftParserTemplates.json-microsoft-security-events.Fields} [
  """"securityResources":[\{"resource":"[^"]{1,2000}\/databases\/({database_name}[^"\/]{1,2000})","resourceType":""attacked""""
  """"Someone logged on to your SQL server \'({server_group}[^\']{1,2000})\' from an unusual location.""""
@@ -37,7 +37,8 @@ json-microsoft-security-events = {
      """"description":\s{0,100}"An actor on\s{0,100}({src_host}\S{1,2000})\s{0,100}performed suspicious""",
      """"fileStates":[^]]{1,2000}?"name":\s{0,100}"({file_name}[^."]{1,2000}([\.\w]{1,100})?)"""",
      """"destinationServiceName":"({app}[^"]{1,2000})"""",
-     """"status":"({outcome}[^"]{1,2000})""""
+     """"status":"({outcome}[^"]{1,2000})"""",
+     """"logonLocation"{1,20}:\s{0,100}"{1,20}({location}[^"]{1,2000})""""
      
 }
 ```

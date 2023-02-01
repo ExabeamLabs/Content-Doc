@@ -3,9 +3,9 @@ Vendor: Palo Alto Networks
 ### Product: [Palo Alto Aperture](../ds_palo_alto_networks_palo_alto_aperture.md)
 ### Use-Case: [Privileged Activity](../../../../UseCases/uc_privileged_activity.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   4   |   1    |     2      |      8      |    8    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   4   |   1    |         2          |      7      |    7    |
 
 | Event Type     | Rules    | Models    |
 | ---- | ---- | ---- |

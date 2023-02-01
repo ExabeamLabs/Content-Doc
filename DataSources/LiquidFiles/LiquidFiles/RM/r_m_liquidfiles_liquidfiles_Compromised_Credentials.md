@@ -3,9 +3,9 @@ Vendor: LiquidFiles
 ### Product: [LiquidFiles](../ds_liquidfiles_liquidfiles.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  28   |   16   |     3      |      4      |    4    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  28   |   16   |         3          |      2      |    2    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

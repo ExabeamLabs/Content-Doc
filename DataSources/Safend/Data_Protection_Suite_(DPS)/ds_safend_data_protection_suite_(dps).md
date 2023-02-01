@@ -2,18 +2,18 @@ Vendor: Safend
 ==============
 Product: Data Protection Suite (DPS)
 ------------------------------------
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  48   |   24   |     6      |      4      |    4    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  48   |   24   |         6          |      4      |    4    |
 
-|    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
+|    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Data Exfiltration](../../../UseCases/uc_data_exfiltration.md) |  dlp-alert<br> ↳[safend-dlp-alert](Ps/pC_safenddlpalert.md)<br><br> usb-insert<br> ↳[safend-usb-insert](Ps/pC_safendusbinsert.md)<br><br> usb-read<br> ↳[safend-usb-read](Ps/pC_safendusbread.md)<br><br> usb-write<br> ↳[safend-usb-write](Ps/pC_safendusbwrite.md)<br> | T1020 - Automated Exfiltration<br>T1071 - Application Layer Protocol<br>TA0010 - TA0010<br>    | [<ul><li>29 Rules</li></ul><ul><li>18 Models</li></ul>](RM/r_m_safend_data_protection_suite_(dps)_Data_Exfiltration.md) |
+| [Data Exfiltration](../../../UseCases/uc_data_exfiltration.md) |  dlp-alert<br> ↳[safend-dlp-alert](Ps/pC_safenddlpalert.md)<br>    | T1020 - Automated Exfiltration<br>T1071 - Application Layer Protocol<br>TA0010 - TA0010<br>    | [<ul><li>29 Rules</li></ul><ul><li>18 Models</li></ul>](RM/r_m_safend_data_protection_suite_(dps)_Data_Exfiltration.md) |
 |         [Data Leak](../../../UseCases/uc_data_leak.md)         |  dlp-alert<br> ↳[safend-dlp-alert](Ps/pC_safenddlpalert.md)<br><br> usb-insert<br> ↳[safend-usb-insert](Ps/pC_safendusbinsert.md)<br><br> usb-read<br> ↳[safend-usb-read](Ps/pC_safendusbread.md)<br><br> usb-write<br> ↳[safend-usb-write](Ps/pC_safendusbwrite.md)<br> | T1020 - Automated Exfiltration<br>T1052.001 - Exfiltration Over Physical Medium: Exfiltration over USB<br>T1071 - Application Layer Protocol<br>T1091 - Replication Through Removable Media<br>TA0010 - TA0010<br> | [<ul><li>44 Rules</li></ul><ul><li>22 Models</li></ul>](RM/r_m_safend_data_protection_suite_(dps)_Data_Leak.md)         |
-|    [Malware](../../../UseCases/uc_malware.md)    |  dlp-alert<br> ↳[safend-dlp-alert](Ps/pC_safenddlpalert.md)<br><br> usb-insert<br> ↳[safend-usb-insert](Ps/pC_safendusbinsert.md)<br><br> usb-read<br> ↳[safend-usb-read](Ps/pC_safendusbread.md)<br><br> usb-write<br> ↳[safend-usb-write](Ps/pC_safendusbwrite.md)<br> | TA0002 - TA0002<br>    | [<ul><li>4 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_safend_data_protection_suite_(dps)_Malware.md)    |
+|    [Malware](../../../UseCases/uc_malware.md)    |  dlp-alert<br> ↳[safend-dlp-alert](Ps/pC_safenddlpalert.md)<br><br> usb-read<br> ↳[safend-usb-read](Ps/pC_safendusbread.md)<br><br> usb-write<br> ↳[safend-usb-write](Ps/pC_safendusbwrite.md)<br>    | TA0002 - TA0002<br>    | [<ul><li>4 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_safend_data_protection_suite_(dps)_Malware.md)    |
 
-ATT&CK Matrix for Enterprise
-----------------------------
+MITRE ATT&CK® Framework for Enterprise
+--------------------------------------
 | Initial Access                                                                           | Execution | Persistence | Privilege Escalation | Defense Evasion | Credential Access | Discovery | Lateral Movement                                                                         | Collection | Command and Control                                                             | Exfiltration                                                                                                                                                                                                                                                                       | Impact |
 | ---------------------------------------------------------------------------------------- | --------- | ----------- | -------------------- | --------------- | ----------------- | --------- | ---------------------------------------------------------------------------------------- | ---------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
 | [Replication Through Removable Media](https://attack.mitre.org/techniques/T1091)<br><br> |           |             |                      |                 |                   |           | [Replication Through Removable Media](https://attack.mitre.org/techniques/T1091)<br><br> |            | [Application Layer Protocol](https://attack.mitre.org/techniques/T1071)<br><br> | [Exfiltration Over Physical Medium: Exfiltration over USB](https://attack.mitre.org/techniques/T1052/001)<br><br>[Exfiltration Over Physical Medium](https://attack.mitre.org/techniques/T1052)<br><br>[Automated Exfiltration](https://attack.mitre.org/techniques/T1020)<br><br> |        |

@@ -3,9 +3,9 @@ Vendor: Cisco
 ### Product: [Duo Access Security](../ds_cisco_duo_access_security.md)
 ### Use-Case: [Lateral Movement](../../../../UseCases/uc_lateral_movement.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   0    |     2      |     10      |   10    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   2   |   0    |         2          |      6      |    6    |
 
 | Event Type    | Rules    | Models |
 | ---- | ---- | ------ |

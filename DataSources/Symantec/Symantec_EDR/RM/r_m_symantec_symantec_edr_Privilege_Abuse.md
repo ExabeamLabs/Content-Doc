@@ -3,9 +3,9 @@ Vendor: Symantec
 ### Product: [Symantec EDR](../ds_symantec_symantec_edr.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  20   |   12   |     6      |      6      |    6    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  20   |   12   |         6          |      5      |    5    |
 
 | Event Type      | Rules    | Models    |
 | ---- | ---- | ---- |

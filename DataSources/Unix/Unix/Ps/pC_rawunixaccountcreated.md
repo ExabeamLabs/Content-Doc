@@ -15,7 +15,7 @@ Name = raw-unix-account-created
     """new user: name=({account_name}[^,]{1,2000}),""",
     """new user: .+?UID=({account_id}[^,]{1,2000}),""",
   ]
-  DupFields=["host->dest_host"]
+  DupFields=["host->dest_host","account_name->target_user"]
 
 
 }

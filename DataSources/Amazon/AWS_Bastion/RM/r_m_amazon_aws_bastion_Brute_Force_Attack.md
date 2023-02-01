@@ -3,9 +3,9 @@ Vendor: Amazon
 ### Product: [AWS Bastion](../ds_amazon_aws_bastion.md)
 ### Use-Case: [Brute Force Attack](../../../../UseCases/uc_brute_force_attack.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   9   |   0    |     3      |      2      |    2    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   9   |   0    |         3          |      1      |    1    |
 
 | Event Type   | Rules    | Models |
 | ---- | ---- | ------ |

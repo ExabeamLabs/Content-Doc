@@ -3,9 +3,9 @@ Vendor: Tanium
 ### Product: [Integrity Monitor](../ds_tanium_integrity_monitor.md)
 ### Use-Case: [Ransomware](../../../../UseCases/uc_ransomware.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   6   |   0    |     8      |      6      |    6    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   6   |   0    |         8          |      2      |    2    |
 
 | Event Type      | Rules    | Models |
 | ---- | ---- | ------ |

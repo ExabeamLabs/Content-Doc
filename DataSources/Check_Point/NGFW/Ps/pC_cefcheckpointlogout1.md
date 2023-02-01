@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-checkpoint-logout-1
-  DataType = "vpn-logout"
+  DataType = "vpn-end"
   Conditions = [ """CEF:""", """|Check Point|Identity Awareness|""", """act=Log Out""", """VPN""" ]
 
 cef-checkpoint-firewall = {

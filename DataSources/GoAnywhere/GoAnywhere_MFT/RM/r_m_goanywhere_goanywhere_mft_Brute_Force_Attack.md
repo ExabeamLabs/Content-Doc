@@ -3,9 +3,9 @@ Vendor: GoAnywhere
 ### Product: [GoAnywhere MFT](../ds_goanywhere_goanywhere_mft.md)
 ### Use-Case: [Brute Force Attack](../../../../UseCases/uc_brute_force_attack.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   9   |   0    |     3      |      5      |    5    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   9   |   0    |         3          |      1      |    1    |
 
 | Event Type   | Rules    | Models |
 | ---- | ---- | ------ |

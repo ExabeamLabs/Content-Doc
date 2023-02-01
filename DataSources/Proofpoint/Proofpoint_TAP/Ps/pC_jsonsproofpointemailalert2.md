@@ -8,6 +8,7 @@ Name = json-s-proofpoint-email-alert-2
     """"threatUrl":\s{0,100}"({threat_url}[^"]{1,2000}?)"""",
     """threatStatus":"({status}[^"]{1,2000})"""",
     """\Woutcome=({outcome}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """CEF:([^\|]{0,2000}\|){4}({outcome}[^\|]{1,2000})\|""",
     """CEF:([^\|]{0,2000}\|){6}({alert_severity}[^\|]{1,2000})""",
     """"classification":"({alert_name}[^"]{1,2000})""",
     """"threatType":"({alert_type}[^"]{1,2000})""",

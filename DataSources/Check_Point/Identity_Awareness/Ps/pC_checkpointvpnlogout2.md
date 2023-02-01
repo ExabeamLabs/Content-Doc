@@ -5,7 +5,7 @@ Name = checkpoint-vpn-logout-2
   Vendor = Check Point
   Product = Identity Awareness
   Lms = Direct
-  DataType = "vpn-logout"
+  DataType = "vpn-end"
   TimeFormat = "epoch"
   Conditions = [ """product=Identity Awareness|action=Log Out""" ]
   Fields = [

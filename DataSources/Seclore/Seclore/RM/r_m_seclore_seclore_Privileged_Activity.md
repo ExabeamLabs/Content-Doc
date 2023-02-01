@@ -3,9 +3,9 @@ Vendor: Seclore
 ### Product: [Seclore](../ds_seclore_seclore.md)
 ### Use-Case: [Privileged Activity](../../../../UseCases/uc_privileged_activity.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     1      |      3      |    3    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   1   |   0    |         1          |      3      |    3    |
 
 | Event Type    | Rules    | Models |
 | ---- | ---- | ------ |

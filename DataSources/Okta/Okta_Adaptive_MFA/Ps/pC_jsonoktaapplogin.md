@@ -5,7 +5,8 @@ Name = json-okta-app-login
   DataType = "app-login"
   Conditions = [ """"app.ad.login.success"""" , """destinationServiceName =Okta"""]
   Fields = ${OktaParserTemplates.json-okta-auth.Fields}[
-    """({outcome}(?i)success)"""
+    """({outcome}(?i)success)""",
+    """({activity}app.ad.login.success)"""
   ]
 
 json-okta-auth = {

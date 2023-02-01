@@ -3,9 +3,9 @@ Vendor: Safend
 ### Product: [Data Protection Suite (DPS)](../ds_safend_data_protection_suite_(dps).md)
 ### Use-Case: [Data Leak](../../../../UseCases/uc_data_leak.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  44   |   22   |     5      |      4      |    4    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  44   |   22   |         5          |      4      |    4    |
 
 | Event Type | Rules    | Models    |
 | ---------- | ---- | ---- |

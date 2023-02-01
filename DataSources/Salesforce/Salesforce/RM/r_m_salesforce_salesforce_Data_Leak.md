@@ -3,9 +3,9 @@ Vendor: Salesforce
 ### Product: [Salesforce](../ds_salesforce_salesforce.md)
 ### Use-Case: [Data Leak](../../../../UseCases/uc_data_leak.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  35   |   15   |     2      |      6      |    6    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  35   |   15   |         2          |      2      |    2    |
 
 | Event Type          | Rules    | Models    |
 | ---- | ---- | ---- |

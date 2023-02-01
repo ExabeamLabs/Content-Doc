@@ -3,9 +3,9 @@ Vendor: Citrix
 ### Product: [Citrix Netscaler](../ds_citrix_citrix_netscaler.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  15   |   8    |     7      |      5      |    5    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  15   |   8    |         7          |      4      |    4    |
 
 | Event Type      | Rules    | Models    |
 | ---- | ---- | ---- |

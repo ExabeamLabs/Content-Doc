@@ -3,9 +3,9 @@ Vendor: Proofpoint
 ### Product: [Proofpoint CASB](../ds_proofpoint_proofpoint_casb.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  25   |   10   |     4      |      2      |    2    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  25   |   10   |         4          |      1      |    1    |
 
 | Event Type     | Rules    | Models    |
 | ---- | ---- | ---- |

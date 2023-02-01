@@ -9,7 +9,7 @@ Name = crowdstrike-network-connection
     TimeFormat = "epoch"
     Conditions = [ """"event_simpleName":"NetworkConnectIP""" ]
     Fields = [
-      """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
+      """exabeam_host=([^=]{1,2000}@\s{0,100})?(gcs-topic|cc|({host}[\w\-.]{1,2000}))""",
       """hostname":"({host}[^"]{1,2000})"""",
       """"timestamp":"({time}\d{1,100})"""",
       """"event_simpleName":"({event_code}[^"]{1,2000})""",

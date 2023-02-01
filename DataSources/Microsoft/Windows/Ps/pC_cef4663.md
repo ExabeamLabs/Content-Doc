@@ -21,7 +21,7 @@ Name = cef-4663
     """\sdvchost=({host}[^\s]{1,2000})""",
     """\sfname=({file_path}.+?)\s{1,100}(?:$|\w+=)""",
     """\sfname=({file_parent}.+?)\\+(?:[^\\=]{1,2000}?)\s{1,100}(?:$|\w+=)""",
-    """\sfname=[^=]{0,2000}\\({file_name}.*?({file_ext}\.[^\\:\s.]{1,2000})?)\s{1,100}(?:$|\w+=)""",
+    """\sfname=[^=]{0,2000}\\({file_name}.*?(\.({file_ext}[^\\:\s.]{1,2000}))?)\s{1,100}(?:$|\w+=)""",
     """\scs3=({access_mask}\w+)"""
   ]
   DupFields = [ "host->dest_host" ]

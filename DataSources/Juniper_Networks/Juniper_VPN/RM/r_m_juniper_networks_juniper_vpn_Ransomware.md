@@ -3,9 +3,9 @@ Vendor: Juniper Networks
 ### Product: [Juniper VPN](../ds_juniper_networks_juniper_vpn.md)
 ### Use-Case: [Ransomware](../../../../UseCases/uc_ransomware.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   0    |     2      |      6      |    6    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   2   |   0    |         2          |      4      |    4    |
 
 | Event Type    | Rules    | Models |
 | ---- | ---- | ------ |

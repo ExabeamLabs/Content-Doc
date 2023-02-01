@@ -3,9 +3,9 @@ Vendor: Microsoft
 ### Product: [Azure Security Center](../ds_microsoft_azure_security_center.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  79   |   38   |     6      |      4      |    4    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  79   |   38   |         6          |      4      |    4    |
 
 | Event Type     | Rules    | Models    |
 | ---- | ---- | ---- |

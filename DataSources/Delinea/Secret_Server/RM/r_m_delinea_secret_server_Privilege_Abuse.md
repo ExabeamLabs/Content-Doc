@@ -3,9 +3,9 @@ Vendor: Delinea
 ### Product: [Secret Server](../ds_delinea_secret_server.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   8   |   2    |     2      |      4      |    4    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   8   |   2    |         2          |      4      |    4    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

@@ -3,9 +3,9 @@ Vendor: McAfee
 ### Product: [McAfee Endpoint Security](../ds_mcafee_mcafee_endpoint_security.md)
 ### Use-Case: [Data Leak](../../../../UseCases/uc_data_leak.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  45   |   22   |     6      |      9      |    9    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  45   |   22   |         6          |      4      |    4    |
 
 | Event Type | Rules    | Models    |
 | ---------- | ---- | ---- |

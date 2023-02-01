@@ -3,9 +3,9 @@ Vendor: Microsoft
 ### Product: [Defender ATP](../ds_microsoft_defender_atp.md)
 ### Use-Case: [Abnormal Authentication & Access](../../../../UseCases/uc_abnormal_authentication_&_access.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  46   |   20   |     6      |     15      |   15    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  46   |   20   |         6          |      7      |    7    |
 
 | Event Type     | Rules    | Models    |
 | ---- | ---- | ---- |

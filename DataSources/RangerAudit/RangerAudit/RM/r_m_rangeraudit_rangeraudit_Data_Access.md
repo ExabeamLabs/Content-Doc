@@ -3,9 +3,9 @@ Vendor: RangerAudit
 ### Product: [RangerAudit](../ds_rangeraudit_rangeraudit.md)
 ### Use-Case: [Data Access](../../../../UseCases/uc_data_access.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  62   |   34   |     3      |      7      |    7    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  62   |   34   |         3          |      6      |    6    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

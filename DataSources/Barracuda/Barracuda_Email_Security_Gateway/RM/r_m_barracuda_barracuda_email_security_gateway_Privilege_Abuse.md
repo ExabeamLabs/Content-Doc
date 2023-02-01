@@ -3,9 +3,9 @@ Vendor: Barracuda
 ### Product: [Barracuda Email Security Gateway](../ds_barracuda_barracuda_email_security_gateway.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   1   |   0    |     1      |      4      |    4    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   1   |   0    |         1          |      4      |    4    |
 
 | Event Type    | Rules    | Models |
 | ---- | ---- | ------ |

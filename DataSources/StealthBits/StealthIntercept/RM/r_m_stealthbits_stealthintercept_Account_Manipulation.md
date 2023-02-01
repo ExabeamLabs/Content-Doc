@@ -3,9 +3,9 @@ Vendor: StealthBits
 ### Product: [StealthIntercept](../ds_stealthbits_stealthintercept.md)
 ### Use-Case: [Account Manipulation](../../../../UseCases/uc_account_manipulation.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  59   |   28   |     4      |     11      |   11    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  59   |   28   |         4          |      4      |    4    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

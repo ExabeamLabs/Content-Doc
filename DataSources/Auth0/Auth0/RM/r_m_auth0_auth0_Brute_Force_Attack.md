@@ -3,9 +3,9 @@ Vendor: Auth0
 ### Product: [Auth0](../ds_auth0_auth0.md)
 ### Use-Case: [Brute Force Attack](../../../../UseCases/uc_brute_force_attack.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   9   |   0    |     3      |      4      |    4    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   9   |   0    |         3          |      1      |    1    |
 
 | Event Type   | Rules    | Models |
 | ---- | ---- | ------ |

@@ -3,9 +3,9 @@ Vendor: SFTP
 ### Product: [SFTP](../ds_sftp_sftp.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  61   |   30   |     7      |      7      |    7    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  61   |   30   |         7          |      5      |    5    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

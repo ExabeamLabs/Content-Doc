@@ -3,9 +3,9 @@ Vendor: Salesforce
 ### Product: [Salesforce](../ds_salesforce_salesforce.md)
 ### Use-Case: [Lateral Movement](../../../../UseCases/uc_lateral_movement.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   2   |   0    |     2      |      6      |    6    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   2   |   0    |         2          |      3      |    3    |
 
 | Event Type       | Rules    | Models |
 | ---- | ---- | ------ |

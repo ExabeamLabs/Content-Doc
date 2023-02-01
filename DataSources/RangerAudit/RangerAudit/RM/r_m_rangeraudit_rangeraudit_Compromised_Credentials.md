@@ -3,9 +3,9 @@ Vendor: RangerAudit
 ### Product: [RangerAudit](../ds_rangeraudit_rangeraudit.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  94   |   48   |     8      |      7      |    7    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  94   |   48   |         8          |      6      |    6    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

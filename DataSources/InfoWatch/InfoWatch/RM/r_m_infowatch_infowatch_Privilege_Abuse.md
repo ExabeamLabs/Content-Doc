@@ -3,9 +3,9 @@ Vendor: InfoWatch
 ### Product: [InfoWatch](../ds_infowatch_infowatch.md)
 ### Use-Case: [Privilege Abuse](../../../../UseCases/uc_privilege_abuse.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   3   |   0    |     2      |      6      |    6    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   3   |   0    |         2          |      4      |    4    |
 
 | Event Type    | Rules    | Models |
 | ---- | ---- | ------ |

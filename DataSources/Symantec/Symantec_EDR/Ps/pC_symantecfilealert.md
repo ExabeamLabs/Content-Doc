@@ -32,6 +32,25 @@ symantec-file-template = {
       """size":({file_size}\d{1,100})""",
       """cmd_line":"({command_line}[^\n]{1,2000}?)\s{0,100}","""
     ]  
-  
+  },
+
+  symantec-app-template = {
+    Vendor = Symantec
+    Product = Symantec EDR
+    Lms = Syslog
+    TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
+    Fields = [
+      """\\"time\\":\\"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
+      """\\"message\\":\\"({additional_info}[^"\\]{1,2000})""",
+      """\\"user_name\\":\\"({user}[^\\"]{1,2000})""",
+      """\\"event_id\\":({event_code}\d{1,10})""",
+      """\\"user_uid\\":\\"({uuid}[^\\"]{1,2000})""",
+      """\\"destinationServiceName\\":\\"({app}[^\\"]{1,2000})""",
+      """\\"session_uid\\":\\"({session_id}[^\\"]{1,2000})""",
+      """\\"ipv4\\":\\"({src_ip}[A-Fa-f\d:.]{1,2000})""",
+      """\\"device_os_name\\":\\"({os}[^"\\]{1,2000})""",
+      """\\"device_name\\":\\"({host}[\w\-.]{1,2000})""",
+      """\\"device_domain\\":\\"({domain}[^"\\]{1,2000})"""
+    
 }
 ```

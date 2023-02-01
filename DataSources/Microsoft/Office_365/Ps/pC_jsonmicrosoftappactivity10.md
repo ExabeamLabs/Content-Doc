@@ -23,7 +23,8 @@ json-microsoft-app-activity = {
     """"objectId":"({object_id}[^"]{1,2000})"""",
     """"correlationId":"({conn_id}[^"]{1,2000})"""",
     """\WdestinationServiceName\s{0,100}=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
-    """\WsourceServiceName =({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)"""
+    """\WsourceServiceName =({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
+    """"name":"MethodsUsedForValidation","value":"\[({additional_info}[^"]{1,2000})\]""""
   ]
   DupFields = [ "object->resource" 
 }

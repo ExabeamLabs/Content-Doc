@@ -16,7 +16,7 @@ crowdstrike-auth-activity = {
   Lms = Splunk
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Fields = [
-    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?(gcs-topic|cc|({host}[\w\-.]{1,2000}))""",
     """"@timestamp\\*"{1,20}:\s{0,100}\\*"{1,20}({time}[^"\\]{1,2000})""",
     """"event_simpleName\\*"{1,20}:\\*"{1,20}({event_name}[^"\\]{1,2000})""",
     """"event_platform\\*"{1,20}:\\*"{1,20}({os}[^"\\]{1,2000})""",
@@ -33,8 +33,9 @@ crowdstrike-auth-activity = {
     """"ConfigStateHash\\*"{1,20}:\\*"{1,20}({old_hash}[^\\"]{1,2000})""",
     """"ContextProcessId\\*"{1,20}:\\*"{1,20}({process_guid}[^\\"]{1,2000})""",
     """"Size\\*"{1,20}:\\*"{1,20}({bytes}\d{1,100})""",
-    """"UserName\\*"{1,20}:\\*"{1,20}(({user_fullname}({user_firstname}[^\s"]{1,2000})\s({user_lastname}[^"\\]{1,2000}))|({user}[^"\\\s]{1,2000}))""",
-    """"FalconHostLink\\*"{1,20}:\s{0,100}\\*"{1,20}({falcon_host_link}[^"]{1,2000})"""
+    """"UserName\\*"{1,20}:\\*"{1,20}((?i)system|({user_fullname}({user_firstname}[^\s"]{1,2000})\s({user_lastname}[^"\\]{1,2000}))|({user}[^"\\\s]{1,2000}))""",
+    """"FalconHostLink\\*"{1,20}:\s{0,100}\\*"{1,20}({falcon_host_link}[^"]{1,2000})""",
+    """"aid\\?":\\?"({aid}[^"]{1,2000}?)\\?""""
   ]
   DupFields = ["event_name->event_code","falcon_host_link->additional_info", "file_parent->directory", "file_name->process_name"
 }

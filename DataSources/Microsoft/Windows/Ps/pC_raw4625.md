@@ -13,7 +13,7 @@ Name = raw-4625
       """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """hostname=({host}[^=]{1,2000}?),\s{0,100}\w+=""",
       """ip=\[({dest_ip}[a-fA-F0-9.:]{1,2000})""",
-      """\s(4625|({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[\w-.]{1,2000}))))\s{0,100}Microsoft-Windows-Security-Auditing""",
+      """\s(4625|({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[\w.-]{1,2000}))))\s{0,100}Microsoft-Windows-Security-Auditing""",
       """EVENT_HOST="{1,100}({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[\w.-]{1,2000})))"""",
       """({event_name}An account failed to log on)""",
       """({event_code}4625)""",
@@ -34,7 +34,7 @@ Name = raw-4625
       """Authentication Package(:|=)\s{0,100}({auth_package}[^\s;]{1,2000}?)(\\n){0,20}[\s;]{0,2000}Transited Services(:|=)""",
       """(?i):\d{1,100}:\d{1,100}\s{1,100}(::ffff:)?(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|(am|pm|\d{1,100}|({dest_host}[\w\-.]{1,2000})))\s""",
       """(EventType|EVENT_TYPE)="({outcome}[^"]{1,2000})""",
-      """Failure Audit ([^:]{1,2000}?)({dest_host}[^\s]{1,2000})\s{1,20}Logon  An account failed to log on""",
+      """Failure Audit ({dest_host}[^:]{1,2000})\s{1,20}Logon  An account failed to log on"""
     ] 
   
 

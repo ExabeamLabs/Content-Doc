@@ -2,13 +2,13 @@ Vendor: Cisco
 =============
 Product: DHCP
 -------------
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   0   |   0    |     0      |      1      |    1    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   0   |   0    |         0          |      0      |    0    |
 
-|  Use-Case  | Event Types/Parsers    | MITRE TTP | Content    |
-|:----------:| ---- | --------- | ---- |
-| Enrichment |  computer-logon<br> ↳[cisco-dhcp](Ps/pC_ciscodhcp.md)<br> |    | [](RM/r_m_cisco_dhcp_Enrichment.md) |
+|  Use-Case  | Event Types/Parsers | MITRE ATT&CK® TTP | Content    |
+|:----------:| ---- | ---- | ---- |
+| Enrichment |    |    | [](RM/r_m_cisco_dhcp_Enrichment.md) |
 
-ATT&CK Matrix for Enterprise
-----------------------------
+MITRE ATT&CK® Framework for Enterprise
+--------------------------------------

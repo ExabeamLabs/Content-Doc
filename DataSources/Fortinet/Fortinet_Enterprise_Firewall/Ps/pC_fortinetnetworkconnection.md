@@ -28,7 +28,8 @@ Name = fortinet-network-connection
     """\Wsrcintfrole="{1,20}(undefined|({src_interface_role}[^"]{1,2000}))"{1,20}""",
     """\Wdstintfrole="{1,20}(undefined|({dest_interface_role}[^"]{1,2000}))"{1,20}""",
     """\Wsrccountry="(Reserved|({src_country}[^"]{1,2000}))"""",
-    """\Wdstcountry="(Reserved|({dest_country}[^"]{1,2000}))""""
+    """\Wdstcountry="(Reserved|({dest_country}[^"]{1,2000}))"""",
+    """\ssrcname="{0,10}({src_host}[\w.-]{1,2000}?)""""
   ]
   DupFields = [ "action->outcome" ]
 

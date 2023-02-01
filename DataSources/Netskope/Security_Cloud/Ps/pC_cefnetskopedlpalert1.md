@@ -9,6 +9,8 @@ Name = cef-netskope-dlp-alert-1
     """"category":"({threat_category}[^"]{1,2000})""",
     """"md5":"({md5}[^"\s]{1,2000})"""",
     """"dlp_rule_severity":"({alert_severity}[^"]{1,2000})""",
+    """"attack-severity":\[?"({alert_severity}[^"]{1,2000})"""
+    """"alert_name":"({alert_name}[^"]{1,2000})"""
     """"alert_type":"({alert_type}[^"]{1,2000})""",
     """"policy":"({additional_info}[^"]{1,2000})""",
     """"action":"({outcome}[^"]{1,2000})""",
@@ -28,7 +30,7 @@ cef-netskope-alert = {
   Fields = [
     """"hostname":"({host}[^",]{1,2000})"""",
     """"timestamp":({time}\d{1,100})""",
-    """"user":"(({user_email}[^@"\s]{1,2000}@[^@"\s]{1,2000})|(({domain}[^"@\\\/\s]{1,2000})[\\\/]{1,2000})?({user}[^"@\\\/\s]{1,2000}))"""",
+    """"user":"(({user_email}[^@"\s]{1,2000}@[^@"\s]{1,2000}\.[^"\s]{1,2000})|(({domain}[^"@\\\/\s]{1,2000})[\\\/]{1,2000})?({user}[^"@\\\/\s]{1,2000}))"""",
     """"dstip":"({dest_ip}[A-Fa-f:\d.]{1,2000})""",
     """"alert_name":"({alert_name}[^"]{1,2000})""",
     """"url":"({malware_url}[^"]{1,2000})""",

@@ -20,7 +20,7 @@ json-windows-events-3 = {
   Lms = Syslog
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
   Fields = [
-    """"EventID":"({event_code}\d{1,20})"""",
+    """"EventID":"?({event_code}\d{1,20})"?""",
     """"Computer":"({host}[^"]{1,2000})"""",
     """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,9}Z)"""",
     """"SubjectLogonId":"({logon_id}[^"]{1,2000})""",

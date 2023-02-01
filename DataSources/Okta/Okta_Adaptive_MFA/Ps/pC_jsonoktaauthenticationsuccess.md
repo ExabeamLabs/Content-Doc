@@ -5,7 +5,8 @@ Name = json-okta-authentication-success
   DataType = "authentication-successful"
   Conditions = [ """"core.user.factor.attempt_success"""", """destinationServiceName =Okta"""]
   Fields = ${OktaParserTemplates.json-okta-auth.Fields}[
-    """({outcome}(?i)success)"""
+    """({outcome}(?i)success)""",
+    """({activity}core.user.factor.attempt_success)"""
   ]
 
 json-okta-auth = {

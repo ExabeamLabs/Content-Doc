@@ -2,23 +2,23 @@ Vendor: IBM
 ===========
 Product: IBM Sametime
 ---------------------
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  46   |   17   |     4      |      2      |    2    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  46   |   17   |         4          |      2      |    2    |
 
-|    Use-Case    | Event Types/Parsers    | MITRE TTP    | Content    |
+|    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 | [Abnormal Authentication & Access](../../../UseCases/uc_abnormal_authentication_&_access.md) |  app-login<br> ↳[ibm-app-login](Ps/pC_ibmapplogin.md)<br><br> failed-app-login<br> ↳[ibm-failed-app-login](Ps/pC_ibmfailedapplogin.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>    | [<ul><li>15 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_ibm_ibm_sametime_Abnormal_Authentication_&_Access.md) |
 |          [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md)          |  app-login<br> ↳[ibm-app-login](Ps/pC_ibmapplogin.md)<br><br> failed-app-login<br> ↳[ibm-failed-app-login](Ps/pC_ibmfailedapplogin.md)<br> | T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1190 - Exploit Public Fasing Application<br> | [<ul><li>28 Rules</li></ul><ul><li>16 Models</li></ul>](RM/r_m_ibm_ibm_sametime_Compromised_Credentials.md)         |
 |    [Data Access](../../../UseCases/uc_data_access.md)    |  app-login<br> ↳[ibm-app-login](Ps/pC_ibmapplogin.md)<br><br> failed-app-login<br> ↳[ibm-failed-app-login](Ps/pC_ibmfailedapplogin.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>6 Rules</li></ul><ul><li>4 Models</li></ul>](RM/r_m_ibm_ibm_sametime_Data_Access.md)    |
 |    [Lateral Movement](../../../UseCases/uc_lateral_movement.md)    |  app-login<br> ↳[ibm-app-login](Ps/pC_ibmapplogin.md)<br><br> failed-app-login<br> ↳[ibm-failed-app-login](Ps/pC_ibmfailedapplogin.md)<br> | T1078 - Valid Accounts<br>T1090.003 - Proxy: Multi-hop Proxy<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_ibm_ibm_sametime_Lateral_Movement.md)    |
-|    [Malware](../../../UseCases/uc_malware.md)    |  app-login<br> ↳[ibm-app-login](Ps/pC_ibmapplogin.md)<br><br> failed-app-login<br> ↳[ibm-failed-app-login](Ps/pC_ibmfailedapplogin.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_ibm_ibm_sametime_Malware.md)    |
+|    [Malware](../../../UseCases/uc_malware.md)    |  app-login<br> ↳[ibm-app-login](Ps/pC_ibmapplogin.md)<br>    | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_ibm_ibm_sametime_Malware.md)    |
 |    [Privilege Abuse](../../../UseCases/uc_privilege_abuse.md)    |  app-login<br> ↳[ibm-app-login](Ps/pC_ibmapplogin.md)<br><br> failed-app-login<br> ↳[ibm-failed-app-login](Ps/pC_ibmfailedapplogin.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_ibm_ibm_sametime_Privilege_Abuse.md)    |
 |    [Privileged Activity](../../../UseCases/uc_privileged_activity.md)    |  app-login<br> ↳[ibm-app-login](Ps/pC_ibmapplogin.md)<br><br> failed-app-login<br> ↳[ibm-failed-app-login](Ps/pC_ibmfailedapplogin.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_ibm_ibm_sametime_Privileged_Activity.md)    |
 |    [Ransomware](../../../UseCases/uc_ransomware.md)    |  app-login<br> ↳[ibm-app-login](Ps/pC_ibmapplogin.md)<br><br> failed-app-login<br> ↳[ibm-failed-app-login](Ps/pC_ibmfailedapplogin.md)<br> | T1078 - Valid Accounts<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_ibm_ibm_sametime_Ransomware.md)    |
 
-ATT&CK Matrix for Enterprise
-----------------------------
+MITRE ATT&CK® Framework for Enterprise
+--------------------------------------
 | Initial Access                                                                                                                                                                                                                         | Execution | Persistence                                                                                                                                      | Privilege Escalation                                                | Defense Evasion                                                     | Credential Access | Discovery | Lateral Movement | Collection | Command and Control                                                                                                                       | Exfiltration | Impact |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------- | --------- | ---------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |
 | [External Remote Services](https://attack.mitre.org/techniques/T1133)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br>[Exploit Public Fasing Application](https://attack.mitre.org/techniques/T1190)<br><br> |           | [External Remote Services](https://attack.mitre.org/techniques/T1133)<br><br>[Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> | [Valid Accounts](https://attack.mitre.org/techniques/T1078)<br><br> |                   |           |                  |            | [Proxy: Multi-hop Proxy](https://attack.mitre.org/techniques/T1090/003)<br><br>[Proxy](https://attack.mitre.org/techniques/T1090)<br><br> |              |        |

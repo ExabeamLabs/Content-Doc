@@ -19,6 +19,7 @@ Name = cef-netskope-alert-1
     """"category":"(n\/a|({alert_type}[^"]{1,2000}))""",
     """"url":"({malware_url}[^"]{1,2000})""",
     """"severity":"({alert_severity}[^"]{1,2000})""",
+    """"attack-severity":\[?"({alert_severity}[^"]{1,2000})"""
     """"md5":"({md5}[^"]{1,2000})""",
     """"policy":"({alert_name}[^"]{1,2000})""",
     """"alert_name":"\s{0,100}({additional_info}[^"]{1,2000})"""",

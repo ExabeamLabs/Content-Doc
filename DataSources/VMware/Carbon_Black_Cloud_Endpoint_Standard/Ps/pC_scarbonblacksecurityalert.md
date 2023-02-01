@@ -7,7 +7,7 @@ Name = s-carbonblack-security-alert
   Lms = Splunk
   DataType = "security-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-  Conditions = [ """"legacy_alert_id"""", """"threat_indicators"""", """"reason_code"""", """_threat_category"""", """"type":"CB_ANALYTICS"""" ]
+  Conditions = [ """"legacy_alert_id"""", """"threat_indicators"""", """"reason_code"""", """_threat_category"""", """"type":""",""""CB_ANALYTICS"""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """carbonblack,"({host}[^"]{1,2000}?)"""",
@@ -21,7 +21,6 @@ Name = s-carbonblack-security-alert
     """"{1,20}threat_indicators":[^\}\]]{0,2000}?"process_name"{1,20}:\s{0,100}"{1,20}({process_name}[^"]{1,2000}?)"{1,20}""",
     """"{1,20}reason"{1,20}:\s{0,100}"{1,20}({additional_info}[^"]{1,2000}?)"{1,20}""",
     """"{1,20}threat_indicators":[^\}\]]{0,2000}?"sha256"{1,20}:\s{0,100}"{1,20}({sha256}[^"]{1,2000}?)"{1,20}""",
-    """"{1,20}threat_indicators"{1,20}:[^\}\]]{0,2000}?"{1,20}ttps"{1,20}:\s{0,100}\["{1,20}({process}[^"]{1,2000}?)"{1,20}\]""",
     """"{1,20}policy_name"{1,20}:\s{0,100}"{1,20}({policy}[^"]{1,2000}?)"{1,20}""",
     """"{1,20}state"{1,20}:\s{0,100}"{1,20}({state}[^"]{1,2000}?)"{1,20}""",
     """"{1,20}type"{1,20}:\s{0,100}"{1,20}({alert_type}[^"]{1,2000}?)"{1,20}""",

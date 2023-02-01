@@ -3,9 +3,9 @@ Vendor: VMS Software
 ### Product: [OpenVMS](../ds_vms_software_openvms.md)
 ### Use-Case: [Compromised Credentials](../../../../UseCases/uc_compromised_credentials.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  67   |   30   |     11     |      5      |    5    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  67   |   30   |         11         |      5      |    5    |
 
 | Event Type   | Rules    | Models    |
 | ---- | ---- | ---- |

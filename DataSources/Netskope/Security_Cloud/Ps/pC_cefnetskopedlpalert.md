@@ -12,6 +12,7 @@ Name = cef-netskope-dlp-alert
     """"sha256":"({sha256_at}[^",]{1,2000})"""",
     """"site":"({site_at}[^",]{1,2000})"""",
     """"shared_with":"({shared_with_at}[^"]{1,2000})""""
+    """"md5":"({md5}[^"]{1,2000})"""
   ]
   DupFields = [ "activity->alert_type", "object->file_name" ]
 

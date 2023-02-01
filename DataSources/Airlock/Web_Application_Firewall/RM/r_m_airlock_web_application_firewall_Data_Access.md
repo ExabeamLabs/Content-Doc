@@ -3,9 +3,9 @@ Vendor: Airlock
 ### Product: [Web Application Firewall](../ds_airlock_web_application_firewall.md)
 ### Use-Case: [Data Access](../../../../UseCases/uc_data_access.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  31   |   18   |     3      |     10      |   10    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  31   |   18   |         3          |      5      |    5    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

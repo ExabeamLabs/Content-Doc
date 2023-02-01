@@ -10,7 +10,7 @@ Name = crowdstrike-process-created
     TimeFormat = "epoch"
     Conditions = [ """"event_simpleName":""", """"ProcessRollup2"""" ]
     Fields = [
-      """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
+      """exabeam_host=([^=]{1,2000}@\s{0,100})?(cc|({host}[\w\-.]{1,2000}))""",
       """"aip":\s{0,100}"({host}[^"]{1,2000})""",
       """"aip":\s{0,100}"({dest_ip}[^"]{1,2000})"""
       """"timestamp":\s{0,100}"({time}\d{13})"""",

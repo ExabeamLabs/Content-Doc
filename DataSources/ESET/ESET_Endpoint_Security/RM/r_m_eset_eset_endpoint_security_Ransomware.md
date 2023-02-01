@@ -3,9 +3,9 @@ Vendor: ESET
 ### Product: [ESET Endpoint Security](../ds_eset_eset_endpoint_security.md)
 ### Use-Case: [Ransomware](../../../../UseCases/uc_ransomware.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   3   |   0    |     2      |      7      |    7    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|   3   |   0    |         2          |      5      |    5    |
 
 | Event Type    | Rules    | Models |
 | ---- | ---- | ------ |

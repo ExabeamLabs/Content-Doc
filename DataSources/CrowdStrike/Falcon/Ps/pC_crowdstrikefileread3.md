@@ -9,7 +9,7 @@ Name = crowdstrike-file-read-3
     TimeFormat = "epoch"
     Conditions = [ """"event_simpleName":"RansomwareOpenFile"""", """"timestamp":"""" ]
     Fields = [
-      """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
+      """exabeam_host=([^=]{1,2000}@\s{0,100})?(gcs-topic|cc|({host}[\w\-.]{1,2000}))""",
       """"timestamp":"({time}\d{1,100})"""",
       """requestClientApplication=({app}[^=]{1,2000}?)\s{0,100}\w+=""",
       """"aip":"({aip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",

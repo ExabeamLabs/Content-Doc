@@ -23,6 +23,7 @@ Name = json-azure-ad-security-alert
      """"domainName"{1,20}:\s{0,100}"{1,20}({domain}[^"]{1,2000})"""",
      """"logonLocation"{1,20}:\s{0,100}"{1,20}({location}[^"]{1,2000})""""
      """"userPrincipalName":\s{0,100}"({user_upn}[^"]{1,2000}?)"""",
+     """status=({outcome}[^\s]{1,2000})"""
   ]
 
 

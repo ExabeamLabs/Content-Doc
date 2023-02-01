@@ -3,10 +3,14 @@ Vendor: Google
 ### Product: [Cloud Platform](../ds_google_cloud_platform.md)
 ### Use-Case: [Privilege Escalation](../../../../UseCases/uc_privilege_escalation.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|   3   |   1    |     1      |     10      |   10    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  16   |   11   |         3          |      5      |    5    |
 
-| Event Type   | Rules    | Models    |
+| Event Type    | Rules    | Models    |
 | ---- | ---- | ---- |
-| app-activity | <b>T1098.002 - Account Manipulation: Exchange Email Delegate Permissions</b><br> ↳ <b>EM-InB-Ex</b>: A user has been given mailbox permissions for an executive user<br> ↳ <b>EM-InB-Perm-N-F</b>: First time a user has given mailbox permissions on another mailbox that is not their own<br> ↳ <b>EM-InB-Perm-N-A</b>: Abnormal for user to give mailbox permissions |  • <b>EM-InB-Perm-N</b>: Models users who give mailbox permissions |
+| app-activity    | <b>T1098.002 - Account Manipulation: Exchange Email Delegate Permissions</b><br> ↳ <b>EM-InB-Ex</b>: A user has been given mailbox permissions for an executive user<br> ↳ <b>EM-InB-Perm-N-F</b>: First time a user has given mailbox permissions on another mailbox that is not their own<br> ↳ <b>EM-InB-Perm-N-A</b>: Abnormal for user to give mailbox permissions    |  • <b>EM-InB-Perm-N</b>: Models users who give mailbox permissions    |
+| gcp-instance-setmetadata       | <b>TA0004 - TA0004</b><br> ↳ <b>GCP-UserAddInstanceSSH-Org-F</b>: First time instance SSH key modification for user    |  • <b>GCP-UserAddInstanceSSH-Org</b>: Users who added or modified ssh keys in GCP    |
+| gcp-policy-write    | <b>TA0004 - TA0004</b><br> ↳ <b>GCP-SetIAMAdmin</b>: A cloud resource policy in GCP was modified with high permissions<br> ↳ <b>GCP-UserSetPolicy-Org-F</b>: First time IAM policy modification for user<br> ↳ <b>GCP-UserSetPolicyCritical-Org-F</b>: First time critical IAM policy modification for user<br> ↳ <b>GCP-ResourceSetPolicy-Org-F</b>: First time IAM policy modification for resource<br> ↳ <b>GCP-ResourceSetPolicyCritical-Org-F</b>: First time critical IAM policy modification for resource<br> ↳ <b>GCP-UserSetPolicy-Resource-F</b>: First time IAM policy modification for user on this resource<br> ↳ <b>GCP-DomainSetPolicy-Org-F</b>: First time domain seen in IAM policy modification<br> ↳ <b>GCP-MemberTypeSetPolicy-Org-F</b>: First time user type seen in IAM policy modification<br><br><b>T1530 - Data from Cloud Storage Object</b><br> ↳ <b>GCP-SetIAMPublic</b>: A cloud resource in GCP was set to public<br> ↳ <b>GCP-IAMPublicFound</b>: A public IAM policy was found on cloud resource in GCP |  • <b>GCP-MemberTypeSetPolicy-Org</b>: User type in GCP policy modifications<br> • <b>GCP-DomainSetPolicy-Org</b>: User domains in GCP policy modifications<br> • <b>GCP-UserSetPolicy-Resource</b>: Users who modified IAM policies of resource in GCP<br> • <b>GCP-ResourceSetPolicyCritical-Org</b>: IAM policy critically modified for GCP resources<br> • <b>GCP-ResourceSetPolicy-Org</b>: IAM policy modified for GCP resources<br> • <b>GCP-UserSetPolicyCritical-Org</b>: Users who modified IAM policies in GCP and added critical roles<br> • <b>GCP-UserSetPolicy-Org</b>: Users who modified IAM policies in GCP |
+| gcp-role-write    | <b>TA0004 - TA0004</b><br> ↳ <b>GCP-UserRoleWrite-Org-F</b>: First time role creation or modification for user    |  • <b>GCP-UserRoleWrite-Org</b>: Users who performed IAM role creations and modification in GCP    |
+| gcp-serviceaccount-creds-write | <b>TA0004 - TA0004</b><br> ↳ <b>GCP-UserCreateServiceAccountCreds-Org-F</b>: First time service account key/token creation for user    |  • <b>GCP-UserCreateServiceAccountCreds-Org</b>: Users who created/uploaded service acccount keys and tokens in GCP    |

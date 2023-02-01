@@ -22,7 +22,7 @@ Name = sourcefire-proxy-1
     """DstPort:\s{0,100}({dest_port}\d{1,100})""",
     """InlineResult:\s{1,100}({action}[^=]{1,2000}?)\s{0,100}$""",
     """AccessControlRuleAction:\s{0,100}({action}[^,]{1,2000})""",
-    """User:\s{0,100}(Unknown|No Authentication Required|({user}[^,\s]{1,2000}))""",
+    """User:\s{0,100}(Unknown|No Authentication Required|Not Found|(({domain}[^\\\s,]{1,2000})\\{1,20})?({user}[^,\s]{1,2000}))""",
     """UserAgent:\s{0,100}({user_agent}.+?),\s{0,100}Client:""",
     """Protocol:\s{0,100}({protocol}[^,]{1,2000})""",
     """InitiatorBytes:\s{0,100}({bytes_out}[^,]{1,2000})""",

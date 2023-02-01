@@ -22,7 +22,8 @@ Name = cef-o365-app-login
       """\WsourceServiceName =({app}[^=]{1,2000}?)\s{1,100}(\w{1,100}=|$)""",
       """\WoldFile=({user_agent}[^,]{1,2000}?)\s{1,100}(\w{1,100}=|$)""",
       """"failureReason":"({failure_reason}[^"]{1,2000})""",
-      """"userDisplayName":"({user_fullname}({user_firstname}[^\s"]{1,2000}?)\s{1,100}({user_lastname}[^\s"\(\),]{1,2000}))\s{0,100}[^"]{0,2000}?"""",
+      """"userDisplayName":"({user_fullname}({user_firstname}[^\s"]{1,2000}?)\s{1,100}(\d{1,20}|(({user_lastname}[^\s"\(\),]{1,2000}))))\s{0,100}[^"]{0,2000}?"""",
+      """"userDisplayName":"({user_fullname}({user_lastname}[^\s"]{1,2000}?)\s{1,100}(({user_firstname}[^\-"\(]{1,2000}?)))(\s\([^\)]{1,2000}\))?\s\-[^"]{1,2000}"""",
       """"userDisplayName":"({user_fullname}({user_lastname}[^",\s]{1,2000})\s{0,100
 
 }

@@ -3,9 +3,9 @@ Vendor: Avaya
 ### Product: [Avaya VPN](../ds_avaya_avaya_vpn.md)
 ### Use-Case: [Abnormal Authentication & Access](../../../../UseCases/uc_abnormal_authentication_&_access.md)
 
-| Rules | Models | MITRE TTPs | Event Types | Parsers |
-|:-----:|:------:|:----------:|:-----------:|:-------:|
-|  16   |   5    |     2      |      1      |    1    |
+| Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
+|:-----:|:------:|:------------------:|:-----------:|:-------:|
+|  16   |   5    |         2          |      1      |    1    |
 
 | Event Type       | Rules    | Models    |
 | ---- | ---- | ---- |

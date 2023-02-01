@@ -19,6 +19,7 @@ Name = json-defender-alert-evidence
     """"SHA256":"({sha256}[^"]{1,2000})""",
     """"SHA1":"({file_hash}[^"]{1,2000})""",
     """"DetectionStatus\\?":\\?"({outcome}[^"\\]{1,2000})""",
+    """"Account":[^\}]{1,2000}?"UserPrincipalName":"(({user_email}[^"@\{\}]{1,2000}@[^"@\{\}]{1,2000})|({user}[^"@\{\}]{1,2000}))"""",
     """"AccountName":"(ALL|({user}[^"\s,]{1,2000}))"""",
     """"AccountUpn":"({user_email}[^"]{1,2000})""",
     """"AccountSid":"({user_sid}[^"]{1,2000})""",
@@ -29,7 +30,8 @@ Name = json-defender-alert-evidence
     """"RemoteIP\\?":\\?"({dest_ip}[A-Fa-f:\d.]{1,2000})""",
     """"Application\\?":\\?"({app}[^\\"]{1,2000})""",
     """"Urls\\?":\[\\?"({malware_url}[^\s,"]{1,2000})""",
-    """"ProcessCommandLine":"({command_line}[^\n]{1,2000}?)","""
+    """"ProcessCommandLine":"({command_line}[^\n]{1,2000}?)\s{0,100}",""",
+    """"Title":"({additional_info}[^"]{1,2000})"""
   ]
 
 

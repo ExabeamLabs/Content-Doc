@@ -9,7 +9,7 @@ Name = json-o365-dlp-email
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """"MessageTraceId":"""", """"SenderAddress":"""", """"RecipientAddress":"""", """"Subject":""" ]
   Fields = [
-    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?(gcs-topic|cc|({host}[\w\-.]{1,2000}))""",
     """"StartDate":"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d\.\d\d\d)""",
     """"StartDate":"({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d)""",
     """"Subject":"\s{0,100}({subject}.+?)\s{0,100}"}""",
