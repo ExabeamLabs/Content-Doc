@@ -14,12 +14,13 @@ Name = exalms-4776
     """"(?:winlog\.)?computer_name"{1,20}\s{0,100}:\s{0,100}"{1,20}({host}[^"]{1,2000})"""",
     """"(?:winlog\.)?computer_name"{1,20}\s{0,100}:\s{0,100}"{1,20}[^\.]{1,2000}\.({domain}[^"]{1,2000})""",
     """"event_id"\s{0,100}:\s{0,100}({event_code}\d{1,100})""",
-    """"event_data"\s{0,100}:\s{0,100}\{.*?"Workstation"\s{0,100}:\s{0,100}"(({dest_ip}[A-Fa-f:\d.]{1,2000})|(?:(?!NULL)(\\*({dest_host}[^\s"]{1,2000}))))"""",
+    """"event_data"\s{0,100}:\s{0,100}\{.*?"Workstation"\s{0,100}:\s{0,100}"(({src_ip}[A-Fa-f:\d.]{1,2000})|(?:(?!NULL)(\\*({src_host}[^\s"]{1,2000}))))"""",
     """"event_data"\s{0,100}:\s{0,100}\{.*?"Status"\s{0,100}:\s{0,100}"({result_code}[\w\-]{1,2000})"""",
     """"TargetUserName"\s{0,100}:\s{0,100}"(?![^\s"@]{1,2000}@[^\s"@]{1,2000})({user}[^\s@"]{1,2000})"""",
     """"TargetUserName"\s{0,100}:\s{0,100}"(?=[^\s]{1,2000}@[^\s]{1,2000})({user_email}({user}[^\s"@]{1,2000})@({domain}[^\s"@]{1,2000}))"""",
     """"(record_number|record_id)"\s{0,100}:\s{0,100}"{0,20}({record_id}\d{1,100})""",
   ]
+  DupFields = ["host->dest_host"]
 
 
 }

@@ -9,7 +9,7 @@ Name = o365-teams-activity-1
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """Workload""", """"MicrosoftTeams"""", """Operation""" ]
   Fields = [
-    """exabeam_host=({host}[^\s]{1,2000})""",
+    """exabeam_host=(gcs-topic|cc|({host}[^\s]{1,2000}))""",
     """"CreationTime\\{0,20}"{1,20}:[\s\\]{0,2000}"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """destinationServiceName =({app}[^=]{1,2000}?)\s{0,100}deviceInboundInterface""",
     """Workload"{0,20}:"{0,20}({app}[^"]{1,2000})""",

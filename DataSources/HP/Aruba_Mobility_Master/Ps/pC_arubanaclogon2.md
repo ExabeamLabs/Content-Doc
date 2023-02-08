@@ -3,7 +3,7 @@
 {
 Name = aruba-nac-logon-2
   DataType = "nac-logon"
-  Conditions = [ """CEF:""", """"ident":""", """"extradata":""", """"ttam_file":""", """"ttam_reporter":""", """User Authentication Successful:"""]
+  Conditions = [ """CEF:""", """"ident":""", """"extradata":""", """User Authentication Successful:"""]
 
 cef-aruba-nac-logon-2 = {
     Vendor = HP

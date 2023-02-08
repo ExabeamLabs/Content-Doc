@@ -4,7 +4,7 @@ Product: Reveal
 ---------------
 | Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
 |:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  252  |  109   |         40         |      8      |    8    |
+|  251  |  109   |         40         |      8      |    8    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |

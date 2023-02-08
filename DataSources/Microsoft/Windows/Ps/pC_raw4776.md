@@ -23,8 +23,9 @@ Name = raw-4776
       """The ({login_type}computer|domain)(\s\w+)? attempted to validate the credentials""",
       """Logon (?:a|A)ccount(:|=)\s{0,100}(({user_email}[^@\s]{1,2000}?@[^\s]{1,2000}?\.[^\s]{1,2000}?)|((({user_fullname}[^:]{1,2000}?\s[^\s]{1,2000}?)|({user}[^\:]{1,2000}?))(?:@({domain}[^\s.;,@=]{1,2000}).*?)?))[\s;]{0,2000}Source Workstation(:|=)([\s\\]{1,2000}|(\s{0,100}\\*((({dest_ip}[A-Fa-f:\d.]{1,2000}?)(:({dest_port}\d{1,100}))?)|({dest_host}.+?))[\s;]{0,2000}))Error Code(:|=)""",
       """Error Code(:|=)\s{0,100}({result_code}[\w\-]{1,2000})""",
-      """Source Workstation(:|=)([\s\\]{1,2000}|(\s{0,100}\\*((({dest_ip}[A-Fa-f:\d.]{1,2000}?)(:({dest_port}\d{1,100}))?)|({dest_host}.+?))[\s;]{0,2000}))Error Code(:|=)""",
+      """Source Workstation(:|=)([\s\\]{1,2000}|(\s{0,100}\\*((({src_ip}[A-Fa-f:\d.]{1,2000}?)(:({src_port}\d{1,100}))?)|({src_host}.+?))[\s;]{0,2000}))Error Code(:|=)""",
     ]
+   DupFields = ["host->dest_host"]
   
 
 }

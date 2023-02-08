@@ -11,6 +11,7 @@ Name = o365-activity
   Fields = [
     """"CreationTime\\{0,20}"{1,20}:[\s\\]{0,2000}"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
     """exabeam_host=(gcs-topic|cc|({host}[^\s]{1,2000}))""",
+    """"OriginatingServer":"({host}[\w.-]{1,2000})\s{0,100}(\([^\)]{1,2000}?\))?(\\r\\n)?"""",
     """\sdvc=({host}\S+)""",
     """\sdvchost=(Unknown|({host}[\w\-.]{1,2000}))""",
     """"host\\{0,20}"{1,20}:[\s\\]{0,2000}"{1,20}({host}[^"\\]{1,2000})""",

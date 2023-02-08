@@ -11,9 +11,9 @@ Name = greenbay-4776
   Fields = [
     """({event_name}The computer attempted to validate the credentials for an account)""",
     """"time":"({time}\d{1,100}\/\d{1,100}\/\d\d\d\d \d{1,100}:\d\d:\d\d (am|AM|pm|PM))""",
-    """"computer":"({host}[^"]{1,2000})""",
+    """"computer":"({dest_host}({host}[^"]{1,2000}))""",
     """"computer":"(?!(?:[A-Fa-f:\d.]{1,2000}))[^."]{1,2000}\.({domain}[^"]{1,2000})""",
-    """"source_workstation":"({dest_host}[^"]{1,2000})""",
+    """"source_workstation":"({src_host}[^"]{1,2000})""",
     """"error_code":"({result_code}[^"]{1,2000})""",
     """"logon_account":"({user}[^"]{1,2000})""",
     """"event_id":"({event_code}\d{1,100})""",

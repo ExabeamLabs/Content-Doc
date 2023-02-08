@@ -8,8 +8,8 @@ Product: Mysql
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |
-| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  database-query<br> ↳[syslog-mysql-dbquery-2](Ps/pC_syslogmysqldbquery2.md)<br> ↳[syslog-mysql-dbwrite](Ps/pC_syslogmysqldbwrite.md)<br> ↳[syslog-mysql-dbquery-1](Ps/pC_syslogmysqldbquery1.md)<br> ↳[syslog-mysql-dbquery](Ps/pC_syslogmysqldbquery.md)<br> ↳[mysql-db-activity-json](Ps/pC_mysqldbactivityjson.md)<br> | T1213 - Data from Information Repositories<br> | [<ul><li>18 Rules</li></ul><ul><li>10 Models</li></ul>](RM/r_m_mysql_mysql_Compromised_Credentials.md) |
-|    [Data Access](../../../UseCases/uc_data_access.md)    |  database-query<br> ↳[syslog-mysql-dbquery-2](Ps/pC_syslogmysqldbquery2.md)<br> ↳[syslog-mysql-dbwrite](Ps/pC_syslogmysqldbwrite.md)<br> ↳[syslog-mysql-dbquery-1](Ps/pC_syslogmysqldbquery1.md)<br> ↳[syslog-mysql-dbquery](Ps/pC_syslogmysqldbquery.md)<br> ↳[mysql-db-activity-json](Ps/pC_mysqldbactivityjson.md)<br> | T1213 - Data from Information Repositories<br> | [<ul><li>18 Rules</li></ul><ul><li>10 Models</li></ul>](RM/r_m_mysql_mysql_Data_Access.md)    |
+| [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  database-query<br> ↳[syslog-mysql-dbwrite](Ps/pC_syslogmysqldbwrite.md)<br> ↳[syslog-mysql-dbquery](Ps/pC_syslogmysqldbquery.md)<br> ↳[mysql-db-activity-json](Ps/pC_mysqldbactivityjson.md)<br> | T1213 - Data from Information Repositories<br> | [<ul><li>18 Rules</li></ul><ul><li>10 Models</li></ul>](RM/r_m_mysql_mysql_Compromised_Credentials.md) |
+|    [Data Access](../../../UseCases/uc_data_access.md)    |  database-query<br> ↳[syslog-mysql-dbwrite](Ps/pC_syslogmysqldbwrite.md)<br> ↳[syslog-mysql-dbquery](Ps/pC_syslogmysqldbquery.md)<br> ↳[mysql-db-activity-json](Ps/pC_mysqldbactivityjson.md)<br> | T1213 - Data from Information Repositories<br> | [<ul><li>18 Rules</li></ul><ul><li>10 Models</li></ul>](RM/r_m_mysql_mysql_Data_Access.md)    |
 
 MITRE ATT&CK® Framework for Enterprise
 --------------------------------------

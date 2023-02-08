@@ -3,7 +3,7 @@
 {
 Name = aruba-nac-failed-1
   DataType = "nac-failed-logon"
-  Conditions = [ """CEF:""", """"ident":""", """"extradata":""", """"ttam_file":""", """"ttam_reporter":""", """User Authentication failed.""", """method"""]
+  Conditions = [ """CEF:""", """"ident":""", """"extradata":""", """User Authentication failed.""", """method"""]
   Fields = ${ArubaParserTemplates.cef-aruba-nac-logon-2.Fields}[
     """authmethod\\*=({auth_type}[^=]{1,2000})\s{1,100}\w+\\*=""",
   ]

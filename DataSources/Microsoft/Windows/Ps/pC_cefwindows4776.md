@@ -17,9 +17,10 @@ Name = cef-windows-4776
     """"severityValue":"({outcome}[^"]{1,2000}?)\s{0,100}"""",
     """"targetUserName":"({user}[^"\s@]{1,2000}?)\s{0,100}"""",
     """"targetUserName":"({user_email}[^"\s@]{1,2000}@[^"\s@]{1,2000}?)\s{0,100}"""",
-    """"workstation":"({dest_host}[^"\s]{1,2000}?)\s{0,100}"""",
+    """"workstation":"({src_host}[^"\s]{1,2000}?)\s{0,100}"""",
     """"status":"({result_code}[^"]{1,2000}?)\s{0,100}"""",
   ]
+ DupFields = ["host->dest_host"]
 
 
 }

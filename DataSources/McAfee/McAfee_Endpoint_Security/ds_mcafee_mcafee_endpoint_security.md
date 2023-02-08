@@ -4,7 +4,7 @@ Product: McAfee Endpoint Security
 ---------------------------------
 | Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
 |:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  238  |   95   |         40         |      8      |    8    |
+|  237  |   95   |         40         |      8      |    8    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |

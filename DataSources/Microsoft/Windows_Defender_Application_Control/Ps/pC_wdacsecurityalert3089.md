@@ -1,9 +1,9 @@
 #### Parser Content
 ```Java
 {
-Name = applocker-security-alert-3089
+Name = wdac-security-alert-3089
   Vendor = Microsoft
-  Product = AppLocker
+  Product = Windows Defender Application Control
   Lms = Direct
   DataType = "alert"
   TimeFormat = "EEE MMM dd HH:mm:ss yyyy"

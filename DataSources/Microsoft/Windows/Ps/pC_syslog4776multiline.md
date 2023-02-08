@@ -15,9 +15,10 @@ Name = syslog-4776-multiline
       """Message=({event_name}[^<=]{1,2000}?)\s{0,100}<""",
       """The ({login_type}computer|domain)(\s\w+)? attempted to validate the credentials""",
       """Error Code:\s{0,100}({result_code}[^\s"]{1,2000})\s{0,100}"?""",
-      """Source Workstation:\s{0,100}({dest_host}[^\s\<]{1,2000})\s{0,100}(<14>)?""",
+      """Source Workstation:\s{0,100}({src_host}[^\s\<]{1,2000})\s{0,100}(<14>)?""",
       """Logon Account:\s{0,100}(({user_email}[^<:@]{1,2000}@[^\.]{1,2000}\.[^<:]{1,2000})|({user}[^:<]{1,200}?))\s{0,100}(<14>)?Source Workstation:""",
      ]
+    DupFields = ["host->dest_host"]
 
 
 }
