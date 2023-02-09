@@ -22,12 +22,12 @@ Name = q-varonis-file-activity
     """Affected_Object_Path=(|({file_path}[^=]{1,2000}?))\s{1,10}(\w{1,100}=|$)""",
     """Affected_Object_Path=({file_parent}[^=]{1,2000}?)\\[^\\]{1,2000}\s{1,10}(\w{1,100}=|$)""",
     """cat=({category}[^=]{1,2000}?)\s{1,10}(\w{1,100}=|$)""",
-    """DatAdvantage\|[^\\]{1,1000}?\|({additional_info}[^\\]{1,2000}?)\|""",
+    """DatAdvantage\|[^\\]{1,1000}?\|({alert_name}[^\\]{1,2000}?)\|""",
     """Device_Name =({src_host}[^=]{1,2000}?)\s{1,10}(\w{1,100}=|$)""",
     """usrName =(({domain}[^\\]{1,100})\\)?({user}[^=]{1,1000}?)\s{1,10}(\w{1,100}=|$)""",
     """accountName =({user}[^=]{1,2000}?)\s{1,10}(\w{1,100}=|$)""",
   ]
-  DupFields = [ "accesses->event_code" ]
+  DupFields = [ "accesses->event_code", "alert_name->additional_info" ]
 
 
 }
