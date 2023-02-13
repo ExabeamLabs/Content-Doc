@@ -22,6 +22,7 @@ Name = cef-darktrace
       """\s(dvc|s)host=(|({src_host}[^\s:]{0,2000}))\s""",
       """\sdhost=(|({dest_host}[^\s]{0,2000}))\s""",
       """\sdarktraceUrl=({full_url}[^\s]{1,2000})"""
+      """dvchost=[^\s]{1,2000}?\s({user_email}[^\s@]{1,2000}\@({email_domain}[^\s]{1,2000}))?"""
    ]
  
 

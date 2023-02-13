@@ -30,7 +30,9 @@ paloalto-vpn = {
     """"SourcePort":({src_port}\d{1,100})""",
     """"DestinationPort":({dest_port}\d{1,100})""",
     """"Protocol":"({protocol}[^"]{1,2000})"""",
-    """"LogType":"({log_type}[^"]{1,2000})""""
+    """"LogType":"({log_type}[^"]{1,2000})"""",
+    """"AuthMethod":"({auth_method}[^"]{1,2000})"""",
+    """"EventIDValue":"({event_name}[^"]{1,2000})""""
   
 }
 ```

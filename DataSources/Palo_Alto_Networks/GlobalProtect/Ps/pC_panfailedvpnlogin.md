@@ -5,24 +5,32 @@ Name = pan-failed-vpn-login
   Product = GlobalProtect
   DataType = "failed-vpn-login"
   Conditions = [ """"LogType":"GLOBALPROTECT"""", """"DeviceSN":"""", """"EventStatus":"failure"""" ]
+  Fields = ${PaloAltoParserTemplates.paloalto-vpn.Fields}[
+    """"ConnectionError":"({failure_reason}[^"]{1,2000})""""
+  ]
 
-paloalto-vpn-login = {
+
+paloalto-vpn = {
   Vendor = Palo Alto Networks
-  Product = GlobalProtect
-  Lms = Direct 
-  TimeFormat = "MMM dd yyyy HH:mm:ss zzz"
+  Product = NGFW
+  Lms = Direct
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
   Fields = [
-    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[^\s]{1,2000})""",
-    """GPClientHostName =(|({host}[\w.-]{0,2000}?))\s{1,100}\w{1,2000}?=""",
-    """rt=({time}\w{3}\s\d{2}\s\d{4}\s(\d{2}:){2}\d{2}\s\S{3})\s""",
-    """GPClientPrivateIPv4=({src_translated_ip}[A-Fa-f0-9.:]{1,2000})""",
-    """ClientPublicIPv4=({src_ip}[A-Fa-f0-9.:]{1,2000})""",
-    """GPSourceUser=(({domain}[^\\\s,]{1,2000})\\+)?({user}[^\\\s,]{1,2000})""",
-    """dvchost=({src_host}[\w.-]{1,2000}?)\s""",
-    """GPClientOS=(|({os}[^=]{0,2000}?))(\s{1,100})?\w{1,2000}?=""",
-    """msg="({additional_info}[^"]{1,2000}?)"""",
-    """GPStatus=({outcome}\S{1,2000}?)\s""",
-    """({app}GLOBALPROTECT)"""
+    """exabeam_host=({host}[^\s]{1,2000})""",
+    """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,9}Z)""",
+    """"host":"({host}[^"]{1,2000})"""",
+    """"DeviceName":"({host}[^"\s]{1,2000})"""",
+    """"PrivateIPv(4|6)":"({src_ip}[a-fA-F\d:.]{1,2000})""",
+    """"PublicIPv(4|6)":"({dest_ip}[a-fA-F\d.:]{1,2000})""",
+    """"Source(Address|IP)":"({src_ip}[a-fA-F\d:.]{1,2000})""",
+    """"DestinationAddress":"({dest_ip}[a-fA-F\d:.]{1,2000})""",
+    """"(Source)?User(Name)?":"((na|NA|({domain}[^"\\]{1,2000}))\\{1,20})?(({user_email}[^@"]{1,2000}@[^\."]{1,2000}\.[^"]{1,2000})|({user}[^"]{1,2000}))"""", 
+    """"SourcePort":({src_port}\d{1,100})""",
+    """"DestinationPort":({dest_port}\d{1,100})""",
+    """"Protocol":"({protocol}[^"]{1,2000})"""",
+    """"LogType":"({log_type}[^"]{1,2000})"""",
+    """"AuthMethod":"({auth_method}[^"]{1,2000})"""",
+    """"EventIDValue":"({event_name}[^"]{1,2000})""""
   
 }
 ```
