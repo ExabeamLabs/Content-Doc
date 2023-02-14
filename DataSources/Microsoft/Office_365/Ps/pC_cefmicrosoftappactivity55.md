@@ -14,7 +14,7 @@ cef-microsoft-o365-app-activity = {
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Fields = [
     """"CreationTime\\*"{1,20}:[\s\\]{0,2000}"{1,20}({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100})""",
-    """"OriginatingServer":"({host}\w+)\s{0,100}(\([^\)]{1,2000}?\))?(\\r\\n)?"""",
+    """"OriginatingServer":"({dest_host}({host}\w+))\s{0,100}(\([^\)]{1,2000}?\))?(\\r\\n)?"""",
     """CEF:([^\|"]{0,2000}\|){5}({activity}[^\|"]{1,2000})""",
     """\sflexString1=({event_name}[^=]{1,2000}?)\.?\s{1,100}(\w+=|$)""",
     """"Operation":"({activity}[^"]{1,2000}?)\.?"""",
@@ -28,7 +28,7 @@ cef-microsoft-o365-app-activity = {
     """"ResultStatus":"({result}[^"]{1,2000}?)"""",
     """\sdestinationServiceName\s{0,100}=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\ssourceServiceName =(Core Directory|Account Provisioning|({app}[^=]{1,2000}?))\s{1,100}(\w+=|$)""",
-    """\WfilePath=(((?i)N\/A)|({file_path}[^=]+?))\s{0,100}(\w+=|$)""",
+    """\WfilePath=(((?i)N\/A)|([A-Za-z\d]{1,2000})|({file_path}[^=]+?))\s{0,100}(\w+=|$)""",
     """\WfilePath=(((?i)N\/A)|(({file_parent}[^=]+?)\/({file_name}[^\/=]{1,2000}?)))\s{0,100}(\w+=|$)""",
     """\WfilePath=[^=]*?(\.({file_ext}[^\/\.]{0,2000}?))?\s{0,100}(\w+=|$)""",
     """"ClientProcessName":"({process_name}[^"]{1,2000})"""

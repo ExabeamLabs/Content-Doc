@@ -5,7 +5,8 @@ Name = cef-azure-event-hub-security
   DataType = "alert"
   Conditions = [ """"category":"Security"""", """"eventName"""", """EventHub"""]
   Fields = ${MSParserTemplates.cef-azure-event-hub.Fields}[
-    """compromisedEntity":"({user_upn}[^"]{1,2000})"""",
+    """"compromisedHost":"({dest_host}[\w\-.]{1,2000})"""",
+    """compromisedEntity":"({object}[^"]{1,2000})"""",
     """userName":"(({domain}[^\\"]{1,2000})\\+)?({user}[^"]{1,2000})"""",
     """clientIPAddress":"({src_ip}[A-Fa-f\d:.]{1,2000})""",
     """severity":"({alert_severity}[^"]{1,2000})"""",
