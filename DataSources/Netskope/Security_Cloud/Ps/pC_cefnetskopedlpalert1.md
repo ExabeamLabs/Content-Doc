@@ -6,7 +6,7 @@ Name = cef-netskope-dlp-alert-1
   Fields = ${NetskopeParserTemplates.cef-netskope-alert.Fields}[
     """"app":"({app}[^"]{1,2000})""",
     """"_id":"({alert_id}[^"]{1,2000})""",
-    """"category":"({threat_category}[^"]{1,2000})""",
+    """"category":"({category}[^"]{1,2000})""",
     """"md5":"({md5}[^"\s]{1,2000})"""",
     """"dlp_rule_severity":"({alert_severity}[^"]{1,2000})""",
     """"attack-severity":\[?"({alert_severity}[^"]{1,2000})"""

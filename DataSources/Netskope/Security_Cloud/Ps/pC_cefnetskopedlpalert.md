@@ -13,8 +13,10 @@ Name = cef-netskope-dlp-alert
     """"site":"({site_at}[^",]{1,2000})"""",
     """"shared_with":"({shared_with_at}[^"]{1,2000})""""
     """"md5":"({md5}[^"]{1,2000})"""
+    """"alert_type":"({alert_type}[^"]{1,2000})""""
+    """"category":"({category}[^"]{1,2000})""""
   ]
-  DupFields = [ "activity->alert_type", "object->file_name" ]
+  DupFields = [ "object->file_name" ]
 
 cef-netskope-activity = {
   Vendor = Netskope
