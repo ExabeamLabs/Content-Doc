@@ -16,7 +16,7 @@ Name = cef-netskope-dlp-alert-1
     """"action":"({outcome}[^"]{1,2000})""",
     """"{0,20}hostname"{0,20}:"{0,20}({src_host}[^"]{1,2000})"""",
     """"from_user":"({from_user_at}[^"]{1,2000})"""",
-    """"shared_with":"("shared_with_at}[^"]{1,2000})"""",
+    """"shared_with":"({shared_with_at}[^"]{1,2000})"""",
     """"sha256":"({sha256_at}[^"]{1,2000})"""",
     """"site":"({site_at}[^"]{1,2000})""""
   ]
