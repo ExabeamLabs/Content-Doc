@@ -22,6 +22,8 @@ Name = raw-4742
     """\sComputer Account That Was Changed:.+?Account Name:\s{0,100}(::ffff:)?({src_host}[^$:]{1,2000}?)\$""",
     """\sUser Principal Name:\s{0,100}(|-|({attribute}.+?))\s{0,100}Home Directory:""",
     """(?i)\w+\s{0,100}\d{1,100}\s{0,100}\d{1,100}:\d{1,100}:\d{1,100}\s{1,100}(::ffff:)?((?i)(am|pm)|({host}({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w\-.]{1,2000})))\s"""
+   """Message(":"|>)({additional_info}[^:]{1,2000}?)\s{0,100}\w+:"""
+   """User Workstations:\s{0,100}(-|({src_host_windows}[^\\\s]{1,2000}))\s{0,20}"""
   ]
 
 
