@@ -6,7 +6,7 @@ Name = s-aws-cloudtrail-assumedrole-json
   DataType = "app-activity"
   Conditions = [  "\"AwsApiCall\"", "\"eventName\"", "\"awsRegion\"", "type=AssumedRole" ]
   Fields = ${AwsParserTemplates.s-aws-cloudtrail-activity-json.Fields}[
-    """\Wsuser=[^=]{0,2000}?({user}[^\\\/@=]{1,2000})@[^=]{1,2000}?(\s{1,100}\w+=|\s{0,100}$)""",
+    """\Wsuser=[^=]{0,2000}?(({user_email}[^@=\s\/:]{1,2000}@[^=\.\s\/:]{1,2000}\.[^\s=\/:]{1,2000}?)|({user}[^\\\/@=]{1,2000})@[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
     #"""\Wext_userIdentity_sessionContext_sessionIssuer_type=(|({activity}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """"userIdentity".*?"sessionContext".*?"sessionIssuer".*?"type":"({activity}[^"]{1,2000})"""",
     """\WflexString1=(|({activity}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
@@ -24,8 +24,8 @@ s-aws-cloudtrail-activity-json = {
     """({app}AwsApiCall)""",
     """"{1,20}eventName"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({activity_action}[^"].+?))"{1,20}\s{0,100}[,\]\}]""",
     """"{1,20}eventName"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({activity}[^"].+?))"{1,20}\s{0,100}[,\]\}]""",
-    """"userIdentity\\?".+?"arn\\?"\s{0,100}:\s{0,100}\\?"?(|arn:aws:sts::\d{1,100}:[^\/]{1,2000}\/({user}[^"]{1,2000})\/{1,256}(?!\-\d{1,100})[^\/]{1,2000}?)(@[\w\.]{1,2000})?\\?"\s{0,100}[,\]\}]""",
-    """"{1,20}userName"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|({user}[^"].+?))"{1,20}\s{0,100}[,\]\}]""",
+    """"userIdentity\\?".+?"arn\\?"\s{0,100}:\s{0,100}\\?"?(|arn:aws:sts::\d{1,100}:[^\/]{1,2000}\/((\w{1,20}\-){6}\w{1,20}|({user}[^"]{1,2000}))\/{1,256}(?!\-\d{1,100})[^\/]{1,2000}?)(@[\w\.]{1,2000})?\\?"\s{0,100}[,\]\}]""",
+    """"{1,20}userName"{1,20}\s{0,100}:\s{0,100}"{1,20}?(|(\w{1,20}\-){6}\w{1,20}|({user_email}[^"@]{1,2000}@[^"\.]{1,2000}\.[^"]{1,2000})|({user}[^"].+?))"{1,20}\s{0,100}[,\]\}]""",
     """"eventSource"\s{0,100}:\s{0,100}"(|({service}[^"]{1,2000}))"""",
     """"sessionIssuer"\s{0,100}:\s{0,100}.*?"arn"\s{0,100}:\s{0,100}"(?:|({object}[^"]{1,2000}))"""",
     """"bucketName"\s{0,100}:\s{0,100}"(|({bucket}[^"]{1,2000}))"""",
@@ -47,7 +47,7 @@ s-aws-cloudtrail-activity-json = {
     """items":\[[^\]]{1,2000}?fromPort":({src_port}\d{1,100}),""",
     """items":\[[^\]]{1,2000}?toPort":({dest_port}\d{1,100}),""",
     """items":\[[^\]]{1,2000}?ipProtocol":"({protocol}[^"]{1,2000})"""",
-    """"{1,20}userIdentity.+?AssumedRole.+?principalId\\?"{1,20}\s{0,100}:\s{0,100}\\?"{1,20}?[A-Z\d]{1,50}:({user}[^"]{1,2000}@({domain}[^@"]{1,2000}))\\?"{1,20}\s{0,100}[,\]\\\\\}]"""
+    """"{1,20}userIdentity.+?AssumedRole.+?principalId\\?"{1,20}\s{0,100}:\s{0,100}\\?"{1,20}?[A-Z\d]{1,50}:(({user_email}[^"@]{1,2000}@[^"\.]{1,2000}\.[^"]{1,2000})|({user}[^"]{1,2000})(@({domain}[^@"\.]{1,2000})))\\?"{1,20}\s{0,100}[,\]\\\\\}]"""
   
 }
 ```

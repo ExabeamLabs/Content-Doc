@@ -31,9 +31,11 @@ sentinelone-activity {
       """destinationAddress\s.*?address:\s{0,100}\\?"{1,20}({dest_ip}[^\\"]{1,2000})""",
       """destinationAddress\s.*?port:\s{0,100}({dest_port}\d{1,100})""",
       """\sstatus:\s{0,100}({outcome}\w+)""",
-      """sourceAddress\s.*?port:\s{0,100}({src_port}\d{1,100})""",
-      """sourceAddress\s.*?address:\s{0,100}\\?"{1,20}({src_ip}[^"\\]{1,2000})""",
-      """sha1:\s{0,100}"{0,100}({sha1}[^"]{1,2000})""""
+      """(sourceAddress|\slocal)\s.*?port:\s{0,100}({src_port}\d{1,5})""",
+      """(sourceAddress|\slocal)\s.*?address:\s{0,100}\\?"{1,20}(0\.0\.0\.0|({src_ip}[a-fA-F\d:\.]{1,2000}))"""",
+      """sha1:\s{0,100}"{0,100}({sha1}[^"]{1,2000})"""",
+      """sizeBytes:\s{0,20}({bytes}\d{1,20})""",
+      """commandLine:\s{0,20}"({command_line}[^\{]{1,2000}?)"\\n\s"""
     
 }
 ```
