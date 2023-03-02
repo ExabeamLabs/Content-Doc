@@ -22,8 +22,9 @@ Name = unix-process-creation-failure
       """\sauid=({account_used_id}.+?)\s{1,100}(\w+=|$)""",
       """\sses=({session_id}\d{1,100})\s{1,100}(\w+=|$)""",
       """\stype=({activity_type}.+?)\s{1,100}(\w+=|$)"""
+      """node=({dest_host}[\w\-.]{1,2000})"""
     ]
-        DupFields=[ "host->dest_host", "process_directory->directory" ]
+        DupFields=[ "process_directory->directory" ]
   
 
 }
