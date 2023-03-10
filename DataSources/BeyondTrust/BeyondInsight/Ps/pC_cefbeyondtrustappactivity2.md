@@ -19,7 +19,7 @@ cef-beyondtrust-app-activity-events = {
     """\ssuser=(-|({user_email}[^@"\s]{1,2000}@[^@"\s]{1,2000})|((({domain}[^\s]{1,2000}?)[\\]{1,20})?({user}[\w.-]{1,2000})))""",
     """Operation=({activity}[^=]{1,2000}?)\s\w+=""",
     """ObjectType=({object_type}[^=]{1,2000}?)\s\w+=""",
-    """ObjectID=({object_id}[^=]{1,2000})\s\w+="""",
+    """ObjectID=({object_id}[^=]{1,2000})\s\w+=""",
     """({app}BeyondInsight)"""
   
 }
