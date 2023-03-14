@@ -15,11 +15,12 @@ Name = vontu-email-dlp-2
     """\sSender:\_({sender}[^\s@:]{1,2000}@[^\s\.:]{1,2000}\.[^\s:]{1,2000})""",
     """\sRecipient:\_({recipients}({recipient}[^\s@:,]{1,2000}@[^\s\.:,]{1,2000}\.[^\s:,]{1,2000})[^:]{0,2000}?)\sSubject:""",
     """Subject:\_(N\/A|({subject}[^\n]{1,2000}?))\s{0,20}Attachment:""",
-    """Policy_Violated:\_({alert_type}[^:]{1,2000}?)(\s\-\s|\sSender:)""",
-    """({alert_name}Policy_Violated)""",
+    """Policy_Violated:\_({alert_name}[^:]{1,2000}?)(\s\-\s|\sSender:)""",
+    """({alert_type}Policy_Violated)""",
     """Attachment:\_(N\/A|Unknown|({attachment}[^\n]{1,2000}?\.\w{1,20}?))\s""",
     """Attachment:\_(N\/A|Unknown|({attachments}[^\n]{1,2000}?))\s{1,20}Incident_Link:""",
-    """Message_ID:\_({alert_id}[^\s]{1,2000})"""
+    """Message_ID:\_({alert_id}[^\s]{1,2000})""",
+    """Incident_Link:\_({additional_info}[^\s"]{1,2000}?)\s{0,20}$"""
   ]
   DupFields = ["alert_id->message_id"]
 
