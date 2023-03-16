@@ -5,6 +5,10 @@ Name = s-aws-cloudtrail-activity-json
   Product = AWS CloudTrail
   DataType = "app-activity"
   Conditions = [  "\"AwsApiCall\"", "\"eventName\"", "\"awsRegion\"" ]
+  Fields = ${AwsParserTemplates.s-aws-cloudtrail-activity-json.Fields}[
+  """"userIdentity":\{?[^\}]{1,2000}"type":"IAMUser","userName":"(({user_email}[^@=\s"]{1,2000}@[^\.\s"]{1,2000}\.[^\s"]{1,2000})|({user}[^\s"]{1,2000}))"""
+  """"requestParameters":"\{?[^\}]{1,2000}"userName\\?":\\?"(({target_user_email}[^\@"\\]{1,2000}@[^\."]{1,2000}\.[^"\\]{1,2000})|({target_user}[^"\\]{1,2000}))\\?""""
+  ]
 
 s-aws-cloudtrail-activity-json = {
   Vendor = Amazon

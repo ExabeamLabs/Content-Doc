@@ -18,7 +18,7 @@ Name = o365-inbox-rules-forward-to-1
     """destinationServiceName =({app}[^=]{1,2000}?)\s{1,100}\w+=""",
     """"SubjectOrBodyContainsWords":"({filter_key_words}[^"]{1,2000})""",
     """flexString1=({event_name}[^=]{1,2000}?)\s{1,100}\w+=""",
-    """Forward.+?Recipients\\?":\[?\\?"({target_user_email}[^\@"]{1,2000}@({target_domain}[^",;\\]{1,2000}))"""
+    """"ActionType":"Forward.{1,2000}?Recipients\\?":\[?\\?"({target_user_email}[^\@"]{1,2000}@({target_domain}[^",;\\]{1,2000}))"""
   ]
   DupFields = ["user_domain->email_domain"]
 
