@@ -5,7 +5,7 @@ Name = raw-defender-av-1116
  Vendor = Microsoft
  Product = Defender Antivirus
  Lms = Direct
- DataType = "security-alert"
+ DataType = "alert"
  TimeFormat = "yyyy-MM-dd HH:mm:ss"
  Conditions = [ """EventCode=1116""", """LogName =Microsoft-Windows-Windows Defender/Operational""", """Detection Origin:""", """Detection Type:""", """Detection Source:""", """Signature Version:""" ]
  Fields = [

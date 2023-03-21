@@ -3,7 +3,7 @@
 {
 Name = defender-atp-security-alert-7
   Product = Defender ATP
-  DataType = "security-alert"
+  DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
   Conditions = [ """"category":""", """"vendor": "Microsoft"""", """"provider": "Microsoft Defender ATP"""", """"title":""" ]
   Fields = ${MicrosoftParserTemplates.json-microsoft-security-events.Fields}[

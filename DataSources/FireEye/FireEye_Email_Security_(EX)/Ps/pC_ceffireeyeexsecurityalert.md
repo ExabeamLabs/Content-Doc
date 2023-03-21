@@ -5,7 +5,7 @@ Name = cef-fireeye-ex-security-alert
   Vendor = FireEye
   Product = FireEye Email Security (EX)
   Lms = Splunk
-  DataType = "security-alert"
+  DataType = "alert"
   TimeFormat = "MMM dd yyyy HH:mm:ss"
   Conditions = [ """CEF:""", """|FireEye|""", """flexString2Label=subject""", """|CMS|""", """fileType=""" ]
   Fields = [

@@ -5,7 +5,7 @@ Name = cef-symantec-email-alert-1
     Vendor = Symantec
     Product = Symantec Email Security.cloud
     Lms = ArcSight
-    DataType = "security-alert"
+    DataType = "alert"
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = [ """destinationServiceName =Symantec Email Security.cloud""", """CEF""", """|security-threat-detected|"""]
     Fields = [

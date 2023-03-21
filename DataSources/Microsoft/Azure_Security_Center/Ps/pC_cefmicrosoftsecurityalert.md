@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-microsoft-security-alert
-  DataType = "security-alert"
+  DataType = "alert"
   Conditions = [ """CEF:""", """"category":""", """"Storage.Blob_OpenContainersScanning.FailedAttempt"""", """"title":""", """"vendor":""", """"Microsoft"""", """"provider":""", """"ASC"""" ]
 
 cef-azure-alert = {

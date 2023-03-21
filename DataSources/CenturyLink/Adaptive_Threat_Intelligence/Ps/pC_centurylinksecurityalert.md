@@ -6,7 +6,7 @@ Name = centurylink-security-alert
   Product = Adaptive Threat Intelligence
   Lms=Direct
   TimeFormat = "epoch"
-  DataType = "security-alert"
+  DataType = "alert"
   Conditions=["""ati-threatflow""", """"event_type":"threatflow"""", """"dstAS":"""]
   Fields=[
     """"timestamp":({time}\d{1,100})""",

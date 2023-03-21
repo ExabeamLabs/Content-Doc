@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-sophos-security-alert-37
-  DataType = "security-alert"
+  DataType = "alert"
   Conditions = [ """|sophos|sophos central|""", """|Event::Endpoint::WindowsFirewall::Blocked|""", """group=ENDPOINT_FIREWALL""" ]
 
 cef-sophos-dlp-alert = {

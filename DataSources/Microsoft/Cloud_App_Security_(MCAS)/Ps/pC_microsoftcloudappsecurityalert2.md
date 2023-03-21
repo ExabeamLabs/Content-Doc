@@ -3,7 +3,7 @@
 {
 Name = microsoft-cloud-app-security-alert-2
   Product = Cloud App Security (MCAS)
-  DataType = "security-alert"
+  DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
   Conditions = [ """"category":""", """"MCAS_ALERT_CABINET_EVENT_MATCH_FILE"""", """"title":""", """"vendor":""", """"Microsoft"""", """"provider":""", """"MCAS"""", """"malwareStates":""" ]
 

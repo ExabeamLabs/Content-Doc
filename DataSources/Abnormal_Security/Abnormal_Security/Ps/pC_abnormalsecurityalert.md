@@ -2,7 +2,7 @@
 ```Java
 {
 Name = abnormal-security-alert
-  DataType = "security-alert"
+  DataType = "alert"
   Conditions = [ """"abx_message_id":""", """"abx_portal_url":""", """"attack_type":""", """"attacked_party":""" ]
   Fields = ${Abnormal-securityParserTemplates.abnormal-security-alert.Fields}[
     """"attack_strategy": "({alert_type}[^"]{1,2000})"""",

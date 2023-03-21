@@ -2,7 +2,7 @@
 ```Java
 {
 Name = json-okta-security-alert
-  DataType = "security-alert"
+  DataType = "alert"
   Conditions = [ """"security.threat.detected"""", """destinationServiceName =Okta"""]
   Fields = ${OktaParserTemplates.json-okta-auth.Fields}[
     """"severity"{1,20}:"{1,20}({alert_severity}[^",]{1,2000})""",

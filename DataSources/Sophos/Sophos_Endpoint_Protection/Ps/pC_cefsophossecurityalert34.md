@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-sophos-security-alert-34
-  DataType = "security-alert"
+  DataType = "alert"
   Conditions = [ """CEF:""", """"Event::Endpoint::HmpaCryptoGuard""" ]
 
 cef-sophos-dlp-alert-1 = {

@@ -7,7 +7,7 @@ Name = fortinet-network-connection
   Lms = Direct
   DataType = "network-connection"
   TimeFormat = "epoch"
-  Conditions = [ """type=""", """traffic""", """action=""", """service=""", """date=""" ]
+  Conditions = [ """type=""", """"traffic"""", """action=""", """service=""", """date=""" ]
   Fields = [
     """eventtime=({time}\d{1,10})""",
     """\Wdevname="?({host}[^"]{1,2000}?)"?(\s{1,100}\w+=|\s{0,100}$)""",

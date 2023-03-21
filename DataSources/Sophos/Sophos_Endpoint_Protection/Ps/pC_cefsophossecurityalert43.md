@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-sophos-security-alert-43
-  DataType = "security-alert"
+  DataType = "alert"
   Conditions = [ """CEF:""", """"type":"Event::Endpoint::DownloadReputationUserAuthorised"""", """"group":"DOWNLOAD_REPUTATION"""", """"severity":"""", """destinationServiceName =Sophos Central""" ]
   Fields=${SophosParserTemplates.cef-sophos-security-alert-1.Fields}[
     """"type":"({alert_name}[^"]{1,2000})"""",

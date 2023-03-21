@@ -3,7 +3,7 @@
 {
 Name = defender-atp-security-alert-2
   Product = Defender ATP
-  DataType = "security-alert"
+  DataType = "alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
   Conditions = [ """"category":""", """"SuspiciousActivity"""", """"title":""", """"vendor":""", """"Microsoft"""", """"provider":""", """"Microsoft Defender ATP""""  ]
 

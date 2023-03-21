@@ -2,7 +2,7 @@
 ```Java
 {
 Name = cef-microsoft-security-alert-1
-  DataType = "security-alert"
+  DataType = "alert"
   Conditions = [ """CEF:""", """"category":""", """"MCAS_ALERT_UEBA_INVESTIGATION_PRIORITY_INCREASE"""", """"title":""", """"vendor":""", """"Microsoft"""", """"provider":""" ]
 
 cef-azure-alert = {
