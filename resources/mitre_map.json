@@ -323,9 +323,9 @@
             "score": 34
         }, 
         {
-            "comment": "71 rules", 
+            "comment": "74 rules", 
             "techniqueID": "T1059.001", 
-            "score": 71
+            "score": 74
         }, 
         {
             "comment": "38 rules", 
@@ -553,9 +553,9 @@
             "score": 7
         }, 
         {
-            "comment": "136 rules", 
+            "comment": "139 rules", 
             "techniqueID": "T1059", 
-            "score": 136
+            "score": 139
         }, 
         {
             "comment": "5 rules", 

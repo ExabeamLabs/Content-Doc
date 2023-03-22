@@ -4,7 +4,7 @@ Product: Carbon Black Cloud Enterprise EDR
 ------------------------------------------
 | Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
 |:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  652  |  112   |        123         |      8      |    8    |
+|  654  |  113   |        123         |      8      |    8    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |

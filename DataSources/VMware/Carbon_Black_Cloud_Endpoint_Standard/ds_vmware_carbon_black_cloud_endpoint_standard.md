@@ -4,7 +4,7 @@ Product: Carbon Black Cloud Endpoint Standard
 ---------------------------------------------
 | Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
 |:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  677  |  121   |        123         |      9      |    9    |
+|  679  |  122   |        123         |      9      |    9    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -4,7 +4,7 @@ Product: Firepower
 ------------------
 | Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
 |:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  785  |  171   |        141         |     15      |   15    |
+|  787  |  172   |        141         |     15      |   15    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |

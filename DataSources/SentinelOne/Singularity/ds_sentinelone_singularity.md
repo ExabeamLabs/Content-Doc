@@ -4,7 +4,7 @@ Product: Singularity
 --------------------
 | Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
 |:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  798  |  177   |        137         |     16      |   16    |
+|  800  |  178   |        137         |     16      |   16    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |
