@@ -4,7 +4,7 @@ Product: Carbon Black App Control
 ---------------------------------
 | Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
 |:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  658  |  123   |        126         |     10      |   10    |
+|  663  |  124   |        126         |     10      |   10    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |

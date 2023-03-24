@@ -4,7 +4,7 @@ Product: Symantec EDR
 ---------------------
 | Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
 |:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  649  |  116   |        129         |      7      |    7    |
+|  654  |  117   |        129         |      7      |    7    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |

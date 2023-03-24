@@ -4,7 +4,7 @@ Product: Windows
 ----------------
 | Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
 |:-----:|:------:|:------------------:|:-----------:|:-------:|
-| 1039  |  281   |        150         |     50      |   50    |
+| 1044  |  282   |        150         |     50      |   50    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |
