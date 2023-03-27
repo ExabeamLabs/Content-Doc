@@ -26,6 +26,7 @@ Name = q-ldap-auth-attempt
       """\Wapp='({app}[^']{1,2000}?)'\s\w+="""
       """\WresultCodeName ="{1,20}({result}[^"]{1,2000}?)"\s{0,100}\w+="""
     ]
+    DupFields = ["app->service", "auth_type->auth_method"]
   
 
 }
