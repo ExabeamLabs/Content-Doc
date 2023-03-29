@@ -5,7 +5,7 @@ Name = cef-microsoft-dns-query
   DataType = "dns-query"
   Conditions = [ """CEF:""", """destinationServiceName =Office 365""", """DNS query""", """Run command:""" ]
   Fields = ${MSParserTemplates.cef-azure-app-activity-1.Fields}[
-    """<b>DNS query</b> <b>({query}[^\n]{1,2000})</b>""",
+    """<b>DNS query</b> <b>({query}[^\n]{1,2000}?)</b>""",
     """"SourcePort","value":"({src_port}\d{1,2000})"""",
     """"DestinationPort","value":"({dest_port}\d{1,2000})""""
 

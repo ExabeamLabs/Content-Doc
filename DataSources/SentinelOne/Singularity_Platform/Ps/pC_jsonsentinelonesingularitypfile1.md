@@ -1,10 +1,10 @@
 #### Parser Content
 ```Java
 {
-Name = json-sentinelone-singularityp-file
+Name = json-sentinelone-singularityp-file-1
   Lms = Direct
   DataType = "file-operations"
-  Conditions = [ """"dataSource.name":"SentinelOne"""", """"i.scheme":"edr"""", """"event.category":"file"""", """"event.type":""" ]
+  Conditions = [ """"dataSource.name\":\"SentinelOne\"""", """"i.scheme\":\"edr\"""", """"event.category\":\"file\"""", """"event.type\":""" ]
 
 json-sentinelone-edr-events = {
     Vendor = SentinelOne
