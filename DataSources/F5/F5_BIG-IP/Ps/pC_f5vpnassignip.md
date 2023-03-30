@@ -16,6 +16,7 @@ Name = f5-vpn-assign-ip
     """IPv4:\s{1,100}({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """\sClient IP:\s{1,100}({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""
   ]
+  DupFields = ["host->dest_host","host->realm"]
 
 
 }
