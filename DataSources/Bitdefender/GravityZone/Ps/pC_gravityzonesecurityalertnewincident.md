@@ -1,8 +1,8 @@
 #### Parser Content
 ```Java
 {
-Name = gravityzone-security-alert-aph
-  Conditions = [ """gravityzone:""", """"module":"aph"""" ]
+Name = gravityzone-security-alert-new-incident
+  Conditions = [ """CEF:""", """destinationServiceName =Custom Application""", """"module":"new-incident"""", """Bitdefender""" ]
 
 gravityzone-security-alert = {
     Vendor = Bitdefender
