@@ -11,6 +11,7 @@ Name = raw-ssh-login
   Fields = [
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """exabeam_host=(gcs-topic|([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^\s]{1,2000}))))""",
+    """\s({host}({dest_host}[\w\-\.]{1,2000}))\s({additional_info}Accepted[^:]{1,2000}?)\s{0,100}ssh2""",
     """"host":"(::ffff:)?({dest_host}({host}[^"]{1,2000}))""""
     """"host":\{"name":"(::ffff:)?({dest_host}({host}[^"]{1,2000}))""""
     """<({time}\d\d\d\d\s{1,100}\w{3}\s{1,100}\d\d\s{1,100}\d\d:\d\d:\d\d)\s""",
@@ -26,7 +27,8 @@ Name = raw-ssh-login
     """sshd\[({logon_id}\d{1,100})""",
     """({event_code}ssh)""",
     """\d\d\d\d\s{1,100}\w{3}\s{1,100}\d\d\s{1,100}\d\d:\d\d:\d\d\s{1,100}\w{1,2000}>\s{1,100}<(::ffff:)?({dest_host}[\w\-.]{1,2000})""",
-    """"computer_name":"(::ffff:)?({host}({dest_host}[\w\-.]{1,2000}))""""
+    """"computer_name":"(::ffff:)?({host}({dest_host}[\w\-.]{1,2000}))"""",
+    """\sfrom[^:]{1,2000}?\sport\s({src_port}\d{1,5})"""
   ]
   DupFields = ["dest_host->original_dest_host"]
 
