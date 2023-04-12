@@ -11,6 +11,7 @@ Name = json-4738
   Fields = [
     """({event_name}A user account was changed)""",
     """({event_code}4738)""",
+    """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ)"""",
     """"EventTime":\s{0,100}"({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d)"""",
     """"Host(N|n)ame":"({host}[^"]{1,2000})"""",
     """"{1,20}EventTime"{1,20}:"{1,20}({time}\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2})"{1,20}""",
