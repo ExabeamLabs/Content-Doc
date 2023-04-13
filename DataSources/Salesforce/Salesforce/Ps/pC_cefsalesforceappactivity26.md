@@ -26,7 +26,11 @@ Name = cef-salesforce-app-activity-26
     """CLIENT_IP\\=({src_ip}[a-fA-F\d:.]{1,2000})""",
     """USER_TYPE\\?=({user_type}[^;]{1,2000})""",
     """USER_AGENT\\?=({user_agent}[^\n]{1,2000}?);REQUEST_METHOD""",
-    """REQUEST_METHOD\\?=({method}[^;]{1,2000})"""
+    """REQUEST_METHOD\\?=({method}[^;]{1,2000})""",
+    """OS_NAME\\?=({os}[^;]{1,2000})""",
+    """DEVICE_ID\\?=({device_id}[^;]{1,2000})""",
+    """BROWSER_NAME\\?=({browser}[^;]{1,2000})""",
+    """CLIENT_GEO\\?=({src_country}[^;/]{1,2000})"""
   ]
 
 
