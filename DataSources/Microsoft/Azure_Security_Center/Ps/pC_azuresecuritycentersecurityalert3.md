@@ -3,7 +3,7 @@
 {
 Name = azure-security-center-security-alert-3
   Product = Azure Security Center
-  DataType = "alert"
+  DataType = "security-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
   Conditions = [ """"category":""", """"SQL.DB_GeoAnomaly"""", """"title":""", """"vendor":""", """"Microsoft"""", """"provider":""", """"ASC""""  ]
 
@@ -18,7 +18,6 @@ json-microsoft-security-events = {
      """"severity":\s{0,100}"({alert_severity}[^"]{1,2000})"""",
      """"category":\s{0,100}"({alert_type}[^"]{1,2000})"""",
      """"description":\s{0,100}"({additional_info}[^}\]]{1,2000}?)\s{0,100}"[,\]}]""",
-     """"sourceMaterials":\["({additional_info}[^"]{1,2000})"""",
      """"eventDateTime":\s{0,100}"({time}[^"]{1,2000})"""",
      """"accountName":\s{0,100}"(-|({user_fullname}[^"\s]{1,2000}\s[^"]{1,2000})|({user_email}[^"@]{1,2000}@[^"]{1,2000})|({user}[^\s"]{1,2000}))"""",
      """aadUserId[^}\]]{1,2000}?"accountName":\s{0,100}"(-|({user_fullname}[^"\s]{1,2000}\s[^"]{1,2000})|({user_email}[^"@]{1,2000}@[^"]{1,2000})|({user}[^\s"]{1,2000}))"""",
@@ -31,10 +30,7 @@ json-microsoft-security-events = {
      """"{1,20}hostStates"{1,20}:[^}\]]{1,2000}?privateIpAddress"{1,20}:\s{0,100}"{1,20}({src_ip}[a-fA-F:\d.]{1,2000})""",
      """"{1,20}hostStates"{1,20}:[^}\]]{1,2000}?publicIpAddress"{1,20}:\s{0,100}"{1,20}({dest_ip}[a-fA-F:\d.]{1,2000})""",
      """"description":\s{0,100}"An actor on\s{0,100}({src_host}\S{1,2000})\s{0,100}performed suspicious""",
-     """"fileStates":[^]]{1,2000}?"name":\s{0,100}"({file_name}[^."]{1,2000}([\.\w]{1,100})?)"""",
-     """"destinationServiceName":"({app}[^"]{1,2000})"""",
-     """"status":"({outcome}[^"]{1,2000})"""",
-     """"logonLocation"{1,20}:\s{0,100}"{1,20}({location}[^"]{1,2000})""""
+     """"fileStates":[^]]{1,2000}?"name":\s{0,100}"({file_name}[^."]{1,2000}([\.\w]{1,100})?)""""
      
 }
 ```

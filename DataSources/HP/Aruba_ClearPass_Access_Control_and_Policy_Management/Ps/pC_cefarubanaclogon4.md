@@ -7,7 +7,7 @@ Name = cef-aruba-nac-logon-4
   Lms = Splunk
   DataType = "nac-logon"
   TimeFormat = "yyyy-MM-dd HH:mm:ssZ"
-  Conditions = [ """"network/clearpass/""","""Error-Code""","""Auth-Source""", """Auth-Method""", """"message":""" ]
+  Conditions = [ """"ttam_category":"network/clearpass/""","""Error-Code""","""Auth-Source""" ]
   Fields = [
     """Common\.Request-Timestamp\\=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d[+-]\d{1,100})""",
     """"host":"({host}[^"]{1,2000})"""",

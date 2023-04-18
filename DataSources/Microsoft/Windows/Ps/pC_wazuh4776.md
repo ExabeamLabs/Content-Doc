@@ -9,9 +9,8 @@ Name = wazuh-4776
       """The ({login_type}computer|domain)(\s\w+)? attempted to validate the credentials"""
       """Logon (?:a|A)ccount:(?:\s{1,100}Source Workstation|\s{0,100}({user}[^\s@]{1,2000}?)(?:@({domain}[^\s.]{1,2000}).*?)?\s{0,100}Source Workstation)"""
       """Error Code:\s{0,100}({result_code}[\w\-]{1,2000})"""
-      """Source Workstation:\s{0,100}\\*(?:\s{1,100}Error Code:|(({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s{0,100}Error Code:)|(\s{0,100}({src_host}[^\s]{1,2000}?)\s{0,100}Error Code:))\s{0,100}""" 
+      """Source Workstation:\s{0,100}\\*(?:\s{1,100}Error Code:|(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s{0,100}Error Code:)|(\s{0,100}({dest_host}[^\s]{1,2000}?)\s{0,100}Error Code:))\s{0,100}""" 
   ]
-  DupFields = ["host->dest_host"]
 
 wazuh-windows-template = {
     Vendor = Microsoft

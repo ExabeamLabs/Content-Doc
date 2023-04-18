@@ -10,7 +10,7 @@ Name = o365-activity-3
   Conditions = [ """"Workload""", """"Operation""", """destinationServiceName =Office 365""" ]
   Fields = [
     """"CreationTime\\*"{1,20}:[\s\\]{0,2000}"{1,20}({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""",
-    """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?(gcs-topic|cc|({host}\S{1,2000}))""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}\S{1,2000})""",
     """"DeviceName":"(::ffff:)?({host}[\w\-.]{1,2000})"""",
     """"Operation\\*"{1,20}:[\s\\]{0,2000}"{1,20}({activity}[^"\\\.]{0,2000})""",
     """"UserId\\*"{1,20}:[\s\\]{0,2000}"{1,20}(({domain}[^"\\]{1,2000})\\+)?(({user_email}[^@"]{1,2000}@[^."]{1,2000}\.[^"]{1,2000}?)|(SecurityComplianceAlerts|(Unknown|Sync|AirInvestigation|({user}[^"@\\\s]{0,2000}))))"""",
@@ -21,9 +21,9 @@ Name = o365-activity-3
     """"(Workload|Application|Client)\\*"{1,20}:[\s\\]{0,2000}"{1,20}({app}[^"\\]{0,2000})""",
     """\WdestinationServiceName\s{0,100}=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """\WsourceServiceName =({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
-    """"ObjectId\\*"{1,20}:"?[\s\\]{0,2000}"{1,20}(|Unknown|Not Available|({object}[^,]{1,2000}))("|\\)""",
+    """"ObjectId\\*"{1,20}:"?[\s\\]{0,2000}"{1,20}(Unknown|Not Available|({object}[^"\\]{0,2000}))""",
     """"SourceFileName":"({object}[^",]{1,2000})""",
-    """\ssuser=(anonymous|SecurityComplianceAlerts|({user_email}[^\s]{1,2000}@[^\s]{1,2000}\.[^\s]{1,2000})|(Unknown|Sync|AirInvestigation|(({domain}[^\\"\s@]{1,2000})\\{1,20})?({user}[^"\s@]{1,2000}?)))\s""",
+    """\ssuser=(anonymous|SecurityComplianceAlerts|({user_email}[^\s]{1,2000}@[^\s]{1,2000}\.[^\s]{1,2000})|(Unknown|Sync|AirInvestigation|({user}[^"\s@]{1,2000}?)))\s""",
     """\ssuser=({user_email}[^=@"]{1,2000}@[^.="]{1,2000}\.[^=]{1,2000}?)\s\w+=""",
     """\ssuser=[^=\s]{0,2000}?@([\.\w+]{1,2000}\.)?({email_domain}[^\.\s"]{1,2000}?\.[^\s"\.>]{1,2000})""",
     """"ItemName":"({subject}[^"]{1,2000})""",

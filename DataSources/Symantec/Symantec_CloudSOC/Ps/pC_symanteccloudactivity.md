@@ -12,9 +12,9 @@ Name = symantec-cloud-activity
     """exabeam_host=({host}[^\s]{1,2000})""",
     """"inserted_timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)""""
     """suser=({user_email}[^\s]{1,2000}@.+?)\s\w+=""",
-    """"user_name":"(app\@sharepoint|({user_fullname}[^"]{1,2000}))""",
-    """"user":"(app\@sharepoint|({user_email}[^\@]{1,2000}@({email_domain}[^"\.]{1,2000}\.[^"]{1,2000})))""",
-    """"user":"(system|app\@sharepoint|({user_email}[^\@]{1,2000}@[^"\.]{1,2000}\.[^"]{1,2000}))""",
+    """"user_name":"({user_fullname}[^"]{1,2000})""",
+    """"user":"({user_email}[^\@]{1,2000}@({email_domain}[^"]{1,2000}))""",
+    """"user":"(system|({user_email}[^\@]{1,2000}@[^"]{1,2000}))""",
     """"service":"({app}[^"]{1,2000})"""",
     """"browsers":(\[)?"({browser}[^"]{1,2000})"""",
     """"user_agent":"({user_agent}[^"]{1,2000})"""",
@@ -28,7 +28,7 @@ Name = symantec-cloud-activity
     """"host(s)?":"({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})"""",
     """"shared_with":"({target}[^"]{1,2000})""""
   ]
-  DupFields = ["file_path->resource", "app->service"]
+  DupFields = ["file_path->resource", "app->service", "activity->accesses"]
 
 
 }

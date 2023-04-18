@@ -5,8 +5,7 @@ Name = cef-azure-event-hub-security
   DataType = "alert"
   Conditions = [ """"category":"Security"""", """"eventName"""", """EventHub"""]
   Fields = ${MSParserTemplates.cef-azure-event-hub.Fields}[
-    """"compromisedHost":"({dest_host}[\w\-.]{1,2000})"""",
-    """compromisedEntity":"({object}[^"]{1,2000})"""",
+    """compromisedEntity":"({user_upn}[^"]{1,2000})"""",
     """userName":"(({domain}[^\\"]{1,2000})\\+)?({user}[^"]{1,2000})"""",
     """clientIPAddress":"({src_ip}[A-Fa-f\d:.]{1,2000})""",
     """severity":"({alert_severity}[^"]{1,2000})"""",
@@ -34,6 +33,7 @@ cef-azure-event-hub = {
       """\Wdvc=({host}\S{1,2000})""",
       """\Wdvchost=({host}[\w\-.]{1,2000})""",
       """\Wact=({activity}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",
+      """([^\|]{0,2000}\|){5}({activity}[^\|]{1,2000})""",
       """\WflexString1=({activity}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",
       """\WdestinationServiceName =({app}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",
       """\Wfname=({object}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",

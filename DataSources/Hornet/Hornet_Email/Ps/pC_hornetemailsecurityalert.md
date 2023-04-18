@@ -22,7 +22,7 @@ Name = hornet-email-security-alert
     """src_ip=({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
     """dst_ip=(({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[^\s]{1,2000}))""",
     """attachments="[^0"]#({attachments}[^"]{1,2000})""",
-    """subject="[ \s]{0,2000}({subject}[^"]{1,2000}?)[ \s]{0,2000}"""",
+    """subject="[ \s]{0,2000}({subject}[^"]{1,2000}?)[ \s]{0,2000}"""",
   ]
   DupFields = [ "alert_type->alert_severity" ]
 

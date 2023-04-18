@@ -10,7 +10,7 @@ Name = o365-inbox-rules-forward-to
   Conditions = ["""New-InboxRule""" , """ForwardTo""" ]
   Fields = [
     """"CreationTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""",
-    """Forward.+?Value":"(smtp:)?(({target_user_email}[^"@]{1,2000}@({target_domain}[^"]{1,2000}))|({target_user}[^"]{1,2000}))"""",
+    """Forward.+?Value":"(smtp:)?({target}[^"]{1,2000}@({target_domain}[^"]{1,2000}))""""
     """"ResultStatus":"({outcome}[^"]{1,2000})"""",
     """"ClientIP":"({src_ip}[^:]{1,2000}):""",
     """({activity}ForwardTo)"""",

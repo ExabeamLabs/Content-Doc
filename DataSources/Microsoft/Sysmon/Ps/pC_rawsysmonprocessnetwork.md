@@ -27,12 +27,18 @@ Name = raw-sysmon-process-network
     """<EventData>.*?<Data Name ='Image'>({process}({directory}(?:[^<>]{1,2000})?[\\\/]{1,2000})?({process_name}[^\\\/<>]{1,2000}))</Data>""",
     """<EventData>.*?<Data Name ='User'>(({domain}[^\\>]{1,2000}?)\\)?({user}[^<>]{1,2000})</Data>""",
     """<EventData>.*?<Data Name ='Protocol'>({protocol}[^<>]{1,2000})</Data>""",
-    """<EventData>.*?<Data Name ='SourceIp'>({src_ip}[\da-fA-F\.:]{1,2000})""",
-    """<EventData>.*?<Data Name ='SourceHostname'>({src_host}[^<>]{1,2000})</Data>""",
-    """<EventData>.*?<Data Name ='SourcePort'>({src_port}\d{1,100})""",
-    """<EventData>.*?<Data Name ='DestinationIp'>({dest_ip}[\da-fA-F\.:]{1,2000})""",
-    """<EventData>.*?<Data Name ='DestinationHostname'>({dest_host}[^<>]{1,2000})</Data>""",
-    """<EventData>.*?<Data Name ='DestinationPort'>({dest_port}\d{1,100})""",
+    """<EventData>.*?<Data Name ='Initiated'>true</Data>.*?<Data Name ='SourceIp'>({src_ip}[\da-fA-F\.:]{1,2000})""",
+    """<EventData>.*?<Data Name ='Initiated'>true</Data>.*?<Data Name ='SourceHostname'>({src_host}[^<>]{1,2000})</Data>""",
+    """<EventData>.*?<Data Name ='Initiated'>true</Data>.*?<Data Name ='SourcePort'>({src_port}\d{1,100})""",
+    """<EventData>.*?<Data Name ='Initiated'>true</Data>.*?<Data Name ='DestinationIp'>({dest_ip}[\da-fA-F\.:]{1,2000})""",
+    """<EventData>.*?<Data Name ='Initiated'>true</Data>.*?<Data Name ='DestinationHostname'>({dest_host}[^<>]{1,2000})</Data>""",
+    """<EventData>.*?<Data Name ='Initiated'>true</Data>.*?<Data Name ='DestinationPort'>({dest_port}\d{1,100})""",
+    """<EventData>.*?<Data Name ='Initiated'>false</Data>.*?<Data Name ='DestinationIp'>({src_ip}[\da-fA-F\.:]{1,2000})""",
+    """<EventData>.*?<Data Name ='Initiated'>false</Data>.*?<Data Name ='DestinationHostname'>({src_host}[^<>]{1,2000})</Data>""",
+    """<EventData>.*?<Data Name ='Initiated'>false</Data>.*?<Data Name ='DestinationPort'>({src_port}\d{1,100})""",
+    """<EventData>.*?<Data Name ='Initiated'>false</Data>.*?<Data Name ='SourceIp'>({dest_ip}[\da-fA-F\.:]{1,2000})""",
+    """<EventData>.*?<Data Name ='Initiated'>false</Data>.*?<Data Name ='SourceHostname'>({dest_host}[^<>]{1,2000})</Data>""",
+    """<EventData>.*?<Data Name ='Initiated'>false</Data>.*?<Data Name ='SourcePort'>({dest_port}\d{1,100})"""
   ]
   DupFields = ["directory->process_directory"]
 

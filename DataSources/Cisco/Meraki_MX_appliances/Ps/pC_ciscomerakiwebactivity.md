@@ -17,7 +17,7 @@ Name = cisco-meraki-web-activity
       """\sdst\\*=({dest_ip}[a-fA-F\d.:]{1,2000}):({dest_port}\d{1,100})""",
       """\smac\\*=({mac_address}[a-fA-F\d:]{1,2000})""",
       """\sagent\\*='?({user_agent}.+?)'?\s{0,100}request:""",
-      """\srequest:\s{0,100}(?:UNKNOWN|({method}\w+))\s{1,100}({full_url}(\w+:\/+)?({web_domain}[^\s:\/]{1,2000})(?:\:({dest_port}\d{1,100}))?({uri_path}\/[^\?"]{0,2000}?)?({uri_query}\?.+?)?)(\.\.\.)?\s{0,100}($|"|cs6=)""",
+      """\srequest:\s{0,100}(?:UNKNOWN|({method}\w+))\s{1,100}({full_url}(\w+:\/+)?({web_domain}[^\s:\/]{1,2000})(?:\:({dest_port}\d{1,100}))?({uri_path}\/[^\?"]{0,2000}?)?({uri_query}\?.+?)?)(\.\.\.)?\s{0,100}($|")""",
    ]
   
 

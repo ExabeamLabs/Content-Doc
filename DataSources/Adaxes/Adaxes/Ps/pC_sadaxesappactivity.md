@@ -7,7 +7,7 @@ Name = s-adaxes-app-activity
   Lms = Splunk
   DataType = "app-activity"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-  Conditions = [""" ADAXES """, """|Add""", """|Success""" ]
+  Conditions = [""" ADAXES """]
   Fields = [
   
    """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d.\d{1,100})""",

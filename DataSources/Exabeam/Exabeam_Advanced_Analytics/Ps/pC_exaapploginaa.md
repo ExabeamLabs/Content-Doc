@@ -8,7 +8,7 @@ Name = exa-app-login-aa
 
 exa-events = {
   Vendor = Exabeam
-  Product = Exabeam Advanced Analytics
+  Product = Exabeam DL
   Lms = Exabeam
   TimeFormat = "epoch"
   Fields = [

@@ -9,15 +9,13 @@ Name = o365-inbox-rules-2
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = ["""Operation":"Set-Mailbox""" ]
   Fields = [
-    """exabeam_host=([^=]{1,2000}@\s{0,100})?(gcs-topic|cc|({host}\S+))""",
-    """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)Z"""",
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"CreationTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""",
     """Forward[^\}]{1,2000}?Value":"(smtp:)?({target}[^"]{1,2000}@({target_domain}[^"]{1,2000}))""""
     """"ResultStatus":"({outcome}[^"]{1,2000})"""",
     """"ClientIP":"\[?({src_ip}[^"]{1,2000}?)\]?:({src_port}\d{1,100})"""",
     """({activity}Set-Mailbox)""",
-    """Operation":"({activity}[^"]{1,2000})"""",
-    """cs1=(\[\{"additional-properties"\:)?\{"({policy}[^"]{1,2000})""",
+    """cs1=(\[\{"additional-properties"\:)?\{"({activity}[^"]{1,2000})""",
     """msg=({additional_info}[^=]{1,2000}?)\s\w+=""",
     """"Value":"(?:smtp:)?[^@]{1,2000}?@({target_domain}[^;"]{1,2000})"""",
     """UserId":"({user_email}[^"\\\s@]{1,2000}@({user_domain}[^"\\\s@]{1,2000}))""",

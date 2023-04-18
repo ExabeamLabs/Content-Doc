@@ -7,10 +7,9 @@ Name = json-4776-2
   Fields = ${WinParserTemplates.json-windows-events-2.Fields}[
     """({event_name}The (computer|domain controller) attempted to validate the credentials for an account)""",
     """The ({login_type}computer|domain)(\s\w+)? attempted to validate the credentials""",
-    """Workstation\\?"{1,20}:\\?"{1,20}({src_host}[^\\]{1,2000})\\?"""",
+    """Workstation\\?"{1,20}:\\?"{1,20}({dest_host}[^\\]{1,2000})\\?"""",
     """TargetUserName\\?"{1,20}:\\?"{1,20}((({user}[^@\s\\]{1,2000}?)(?:@({domain}[^\\]{1,2000}))?)|({user_email}[^@\s]{1,2000}?@[^\s\.]{1,2000}?\.[^\s\\]{1,2000}?))\\?""""
   ]
-  DupFields = ["host->dest_host"]
 
 json-windows-events-2 = {
   Vendor = Microsoft

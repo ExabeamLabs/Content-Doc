@@ -9,7 +9,7 @@ Name = proofpoint-email-6
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
   Conditions = [ """"from"""", """"rcpts"""", """"rule"""", """"helo"""", """"actions"""", """"suborgs"""", """"resolveStatus"""" ]
   Fields = [
-    """"ts"{1,20}:\s{0,100}"{1,20}({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,20}[\+\-]\d{1,4})""",
+    """"ts"{1,20}:\s{0,100}"{1,20}({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,3}[\+\-]\d{1,4})""",
     """"host"{1,20}:\s{0,100}"{1,20}\[?({host}[\w\-.]{1,2000})\]?"""",
     """"from"{1,20}:\s{0,100}"{1,20}({sender}[^"@]{1,2000}@[^"@]{1,2000})"""",
     """"rcpts"{1,20}:\s{0,100}\[({recipients}"{1,20}({recipient}[^"@]{1,2000}@[^"]{1,2000})"{0,20}[^\]]{0,2000}?)\]""",

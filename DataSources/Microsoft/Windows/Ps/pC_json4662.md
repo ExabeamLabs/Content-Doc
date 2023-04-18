@@ -9,8 +9,6 @@ Name = json-4662
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = ["""An operation was performed on an object""", """"EventID":4662""", """"OperationType":""""]
   Fields = [
-    """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,3}Z)"""",
-    """"Computer":"({host}[^"]{1,2000})"""",
     """"Hostname":"({host}[^"]{1,2000})""",
     """({event_name}An operation was performed on an object)""",
     """({event_code}4662)""",

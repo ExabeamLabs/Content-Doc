@@ -30,6 +30,7 @@ Name = cef-bluecoat-proxy
     """\srequestClientApplication=(?:-|({user_agent}.+?))\s\w+=""",
     """\scat=(?:(none)|({category}.+?)(;.+?)?)\s{1,100}\w+=""",
     """\s(cs1|fileType)=(?:-|({mime}.+?)(;.+?)?)\s\w+=""",
+    """\scn1=(?:-|({result_code}.+?)(;.+?)?)\s\w+=""",
     """\|Blue Coat\|Proxy SG\|[^|]{0,2000}\|({proxy_action}[^|]{1,2000})\|""",
     """requestContext=(?:-|({referrer}[^\s]{1,2000}))""",
   ]

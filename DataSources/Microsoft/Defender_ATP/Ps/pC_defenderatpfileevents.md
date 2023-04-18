@@ -23,7 +23,7 @@ defender-atp-events = {
       """"category":"({event_name}[^"]{1,2000})"""",
       """"ActionType":"({outcome}[^"]{1,2000})"""",
       """"RemoteIP":"({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"""",
-      """"Protocol":"(MICROSOFT_AUTHENTICATION_PACKAGE_V1_0|({protocol}[^"]{1,2000}))""""
+      """"Protocol":"({protocol}[^"]{1,2000})""""
       """LogonId":(null|({logon_id}[^:]{1,2000}?)),""",
       """InitiatingProcessFolderPath":"({process}[^"]{1,2000}?)",""",
       """InitiatingProcessFileName":"({process_name}[^:]{1,2000}?)",""",

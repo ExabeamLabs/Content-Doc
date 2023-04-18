@@ -5,12 +5,11 @@ Name = checkpoint-vpn-logout
   Vendor = Check Point 
   Product = NGFW
   Lms = Direct
-  DataType = "vpn-end"
+  DataType = "vpn-logout"
   TimeFormat = "epoch_sec"
   Conditions = [ """CheckPoint""", """product:""", """action:"Log Out"""", """vpn_""" ]
   Fields = [
     """\W({host}[\w\-.]{1,2000}) CheckPoint""",
-    """\s({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\dZ)\s""",
     """\Wtime:"({time}\d{1,100})""",
     """\Wdomain_name:"({domain}[^"]{1,2000}?)\s{0,100}"""",
     """\Wtermination_reason:"({failure_reason}[^"]{1,2000}?)\s{0,100}"""",

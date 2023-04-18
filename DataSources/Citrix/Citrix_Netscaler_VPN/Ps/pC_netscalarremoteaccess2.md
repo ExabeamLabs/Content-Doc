@@ -6,7 +6,7 @@ Name = netscalar-remote-access-2
  Product = Citrix Netscaler VPN
  Lms = Direct
  TimeFormat = "MM/dd/yyyy:HH:mm:ss"
- DataType = "web-activity"
+ DataType = "remote-access"
  Conditions = [ """|SSLVPN""" , """|HTTPREQUEST|""" ]
  Fields =[
     """exabeam_host=({host}[\w\-.]{1,2000})""",
@@ -14,10 +14,9 @@ Name = netscalar-remote-access-2
     """User\s{1,100}({user}[^\s]{1,2000})"""
     """Vserver\s{1,100}(127.0.0.1|({host}[^:\s]{1,2000}))"""
     """SSO is ON\s{0,100}:\s{0,100}({method}[^\s]{1,2000})\s{1,100}({object}[^\-\s]{1,2000})""",
-    """SessionId:\s{1,100}({session_id}\d{1,100})""",
-    """SessionId:\s\d{1,100}\-\s{1,10}({web_domain}[^\s]{1,2000})""",
+    """SessionId:\s{1,100}({session_id}\d{1,100})"""
     """({event_name}HTTPREQUEST)""",
-    """ahost=({src_host}[^\s]{1,2000})"""
+    """ahost=({src_host}[^\s]{1,2000})""",
  ]
 
 

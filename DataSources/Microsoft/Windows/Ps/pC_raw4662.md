@@ -25,7 +25,7 @@ Name = raw-4662
     """Logon ID:\s{0,100}({logon_id}[^:]{1,2000}?)[\\n\s]{0,20}Object:""",
     """Operation Type:\s{0,100}({activity}.+?)(\\n){0,20}\s{1,100}Accesses:""",
     """Properties:\s{0,100}({properties}.+?)(\\n){0,20}\s{0,100}Additional""",
-    """Additional Information:\s{0,100}(|({attribute}.*?))(\\n){0,20}\s{0,100}""", 
+    """Additional Information:\s{0,100}({attribute}.*?)(\\n){0,20}\s{0,100}""", 
   ]
 
 

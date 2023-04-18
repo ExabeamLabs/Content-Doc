@@ -22,7 +22,7 @@ Name = cef-zscaler-web-activity
     """(\s|\|)act=({action}[^=]{1,2000}?)\s{0,100}(\w+=|$)""",
     """\ssuser=(NA|None|\$NULL|(?![^\s]{1,2000}@[^\s]{1,2000})({user}[^=\s]{1,2000}?))\s{0,100}(\w+=|$)""",
     """\slogin=({user_email}[^@\s]{1,2000}@[^@\s]{1,2000})\s\w+=""",
-    """\ssuser=(noauth-protocol[^=]{1,2000}?|({user_email}[^\s@=]{1,2000}@[^\s\.]{1,2000}\.[^\s=]{1,2000}?)|({user}[^\s=]{1,2000}?))\s{0,100}(\w+=|$)""",
+    """\ssuser=(noauth-protocol[^=]{1,2000}?|({user_email}({user}[^\s@]{1,2000})@[^\s]{1,2000}))\s{0,100}(\w+=|$)""",
     """\|({severity}\d{1,100})\|act=""",
     """proto=({protocol}[^\s]{1,2000})""",
     """\seurl=({full_url}[^\s\/\?]{1,2000}({uri_path}\/[^\?\s]{1,2000})?({uri_query}\?[^\s]{1,2000})?)""",

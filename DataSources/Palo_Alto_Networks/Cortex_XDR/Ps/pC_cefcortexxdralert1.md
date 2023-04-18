@@ -5,7 +5,7 @@ Name = cef-cortex-xdr-alert-1
   Vendor = Palo Alto Networks
   Product = Cortex XDR
   Lms = Syslog
-  DataType = "alert"
+  DataType = "security-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
   Conditions = [ """CEF:""", """|Palo Alto Networks|Cortex XDR|""", """tenantname=""", """deviceFacility=""" ]
   Fields = [

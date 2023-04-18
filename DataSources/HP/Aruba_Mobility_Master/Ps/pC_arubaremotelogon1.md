@@ -3,7 +3,7 @@
 {
 Name = aruba-remote-logon-1
   DataType = "remote-logon"
-  Conditions = [ """CEF:""", """"ident":""", """"extradata":""", """Authentication Succeeded for User""", """connection type SSH"""]
+  Conditions = [ """CEF:""", """"ident":""", """"extradata":""", """"ttam_file":""", """"ttam_reporter":""", """Authentication Succeeded for User""", """connection type SSH"""]
 
 cef-aruba-nac-logon-2 = {
     Vendor = HP

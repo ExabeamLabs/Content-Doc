@@ -12,7 +12,6 @@ Name = azure-event-hub-network-security-group-rule-counter
     """primaryIPv4Address":"({src_ip}.*?[^\\])"""",
     """ruleName":"({rule}.*?[^\\])"""",
     """direction":"({direction}.*?[^\\])"""",
-    """"operationName":"({activity}[^"]{1,2000})""""
   ]
 
 cef-azure-event-hub = {
@@ -27,6 +26,7 @@ cef-azure-event-hub = {
       """\Wdvc=({host}\S{1,2000})""",
       """\Wdvchost=({host}[\w\-.]{1,2000})""",
       """\Wact=({activity}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",
+      """([^\|]{0,2000}\|){5}({activity}[^\|]{1,2000})""",
       """\WflexString1=({activity}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",
       """\WdestinationServiceName =({app}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",
       """\Wfname=({object}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",

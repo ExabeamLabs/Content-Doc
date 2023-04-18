@@ -41,7 +41,6 @@ Name = raw-member-added-2008
     """"SubjectLogonId":"({logon_id}[^\s"]{1,2000})""",
     """"TargetSid":"({group_id}[^\s"]{1,2000})""",
     """"data\.system_name":"({host}[^"]{1,2000})"""",
-    """\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d\s({host}[^\s]{1,2000})\s"""
     """"data\.id":"({event_code}\d{1,100})"""",
     """EventType="{0,100}({outcome}[^"\s]{1,2000})"""
   ]

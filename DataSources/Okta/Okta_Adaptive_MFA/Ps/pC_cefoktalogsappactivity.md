@@ -24,7 +24,7 @@ Name = cef-okta-logs-app-activity
     """"request":\s{0,100}\{[^\}]{1,2000}?"ip":\s{0,100}"({src_ip}[a-fA-F:\d.]{1,2000})"""",
     """"outcome":[^\]]{0,2000}?"result"\s{0,100}:\s{0,100}"(FAILURE|DENY)","reason":\s{0,100}"({failure_reason}[^"]{1,2000})""",
     """"outcome":[^\]]{0,2000}?"result"\s{0,100}:\s{0,100}"({outcome}[^"]{1,2000})"""",
-    """outcome":[^\]]{0,2000}?"result":\s{0,100}"?(null|({outcome_result_at}[^\"]{1,2000}))"?,"reason":\s{0,100}"?(null|({outcome_reason_at}[^"]{1,2000}))""",
+    """outcome":[^\]]{0,2000}?"result":\s{0,100}"?(null|({outcome_result_at}[^\"]{1,2000}))"?,"reason":\s{0,100}"?(null|({outcome_reason_at}[^"]{1,2000}))""",    
     """"target(s)?"{1,20}:[^\}\]]{1,2000}?"{1,20}displayName"{1,20}\s{0,100}:\s{0,100}"{1,20}((?i)unknown|({object}[^"]{1,2000}[^\s]))"""",
     """"target":[^}\]]{1,2000}?"type"\s{0,100}:\s{0,100}"({object_type}[^"]{1,2000})"""",
     """({app}(?i)Okta)""",

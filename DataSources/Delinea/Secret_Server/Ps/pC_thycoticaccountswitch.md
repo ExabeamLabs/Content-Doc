@@ -15,7 +15,7 @@ Name = thycotic-account-switch
     """\sdvc=({host}[^\s]{1,2000})""",
     """\sdvchost=({host}[^\s]{1,2000})""",
     """\ssrc=({src_ip}[^\s]{1,2000})""",
-    """\ssuser=(({domain}[^\\=]{1,2000})(\\)+)?(({user_email}[^\s@]{1,2000}@[^\s@]{1,2000})|(({user}.+?)\s{1,100}\w+=))""",
+    """\ssuser=(({domain}[^\\=]{1,2000})(\\)+)?({user}.+?)\s{1,100}\w+=""",
     """\sfname=(({account_domain}[^\\=]{1,2000})(\\)+)?({account}.+?)\s{1,100}\w+=""",
     """cs3=({safe_value}.+?)\s{1,100}(\w+=|$)"""
   ]

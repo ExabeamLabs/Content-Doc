@@ -11,7 +11,6 @@ Name = bro-dns-response-2
   Fields = [
      """ts="({time}\d{1,100})""",
      """exabeam_host=([^@=]{1,2000}@\s{0,100})?({host}\S+)""",
-     """orig_hostname="({host}[\w\-\.]{1,2000})""""
      """id\.orig_h="({src_ip}[a-fA-F\d.:]{1,2000})""",
      """id\.orig_p="({src_port}\d{1,100})""",
      """id\.resp_h="({dest_ip}[a-fA-F\d.:]{1,2000})""",
@@ -19,11 +18,11 @@ Name = bro-dns-response-2
      """proto="({protocol}[^"]{1,2000})""",
      """trans_id="({query_id}\d{1,100})""",
      """query="({query}[^"\\]{1,2000})""",
-     """qtype_name="(Unassigned|({query_type}[^"\\]{1,2000}))""",
+     """qtype_name="({query_type}[^"\\]{1,2000})""",
      """rejected="({outcome}[^"]{1,2000})""",
      """rcode="({rcode}[^"]{1,2000})""",
      """answers="({answers}[^"]{1,2000})""",
-     """answers=(|({response}.+?))\s\w+=(\s|")"""
+     """answers=({response}.+?)\s\w+=(\s|")"""
   ] 
 
 

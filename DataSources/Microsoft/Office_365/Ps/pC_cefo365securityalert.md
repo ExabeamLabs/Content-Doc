@@ -25,31 +25,7 @@ Name = cef-o365-security-alert
     """"userPrincipalName":"({user_email}[^"@\s]{1,2000}@[^"@\s]{1,2000})"""",
     """msg=({additional_info}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
     """activity":"({activity}[^"]{1,2000})""",
-    """"userAgent","Value":"(|({user_agent}[^"]{1,2000}?))\s{0,100}"""",
-    """destinationServiceName =({app}[^=]{1,2000}?)\s{0,100}\w+="""
-    """"detectedDateTime":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100})""",
-    """"tokenIssuerType":"({token_issuer_type}[^"]{1,2000})""",
-    """"{1,20}additionalInfo":"\[\{{1,20}({more_info}[^]]{1,2000}?)\s{0,100}\}\]""",
-    """flexString1=({action}[^=]{1,2000}?)\s{0,100}\w+=""",
-    """"Name":"({alert_name}[^"]{1,2000})""",
-    """request=({outcome}[^=]{1,2000}?)\s{0,100}\w+=""",
-    """"Severity":"({alert_severity}[^"]{1,2000})""",
-    """"sev":"({alert_severity}[^"]{1,2000})""",
-    """"riskLevel":"({alert_severity}[^"]{1,2000})""",
-    """"AlertType":"({alert_type}[^"]{1,2000})""",
-    """"tsd\\*"{1,20}:\\*"{1,20}({sender}[^\\"]{1,2000})""",
-    """"sip\\*"{1,20}:\\*"{1,20}({src_ip}[^\\"]{1,2000})""",
-    """"ms\\*":\\*"({subject}[^",]{1,2000}?)\s{0,100}"""",
-    """"city":"({location_city}[^"]{1,2000})""",
-    """"countryOrRegion":"({country_code}[^"]{1,2000})""",
-    """"state":"({location_state}[^"]{1,2000})""",
-    """"suid":"(anonymous|\\|({user_email}[^@="\\]{1,2000}@({email_domain}[^"\\]{1,2000}?))|({user}[^"\\]{1,2000}))\\?"""",
-    """"PolicyName":"({alert_type}[^"]{1,2000})"""",
-    """"RuleName":"({alert_name}[^"]{1,2000})"""",
-    """"Id":"({alert_id}[^"]{1,2000})"""",
-    """"riskEventType":"({alert_name}[^"]{1,2000})"""
-  ]
-
+    """"{1,20}userAgent"{1,20
 
 }
 ```

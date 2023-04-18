@@ -11,9 +11,8 @@ Name = s-zscaler-web-activity-6
   Conditions = [ """|LOGINNAME|""", """|CLIENTIP|""", """|URL|""", """|URLCAT|""", """|ACTION|""", """|ZSCALER|""" ]
   Fields = [
     """HOST\|({host}[^\|]{1,2000})""",
-    """CONTENTTYPE\|([^\|]{0,2000}\|){2}(NA|({user}[^\|]{1,2000}?))\|(NA|({host}[\w\-.]{1,2000}))""",
     """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
-    """LOGINNAME\|(({user_email}[^\|]{1,2000}@[^\|]{1,2000})|({user}[^\|\s]{1,2000}))\|""",
+    """LOGINNAME\|(({user_email}[^\|]{1,2000}@[^\|]{1,2000})|({user}[^\|]{1,2000}))""",
     """REASON\|({proxy_action}[^\|]{1,2000})""",
     """ACTION\|({action}[^\|]{1,2000})""",
     """REQMETHOD\|(NA|({method}[^\|]{1,2000}))""",

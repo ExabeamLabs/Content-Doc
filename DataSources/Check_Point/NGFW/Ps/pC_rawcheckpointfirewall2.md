@@ -5,10 +5,8 @@ Name = raw-checkpoint-firewall-2
   DataType = "network-connection"
   Conditions = [ """product=VPN-1 & FireWall-1""", """product:""", """action:"""" ]
   Fields = ${CheckpointParserTemplates.checkpoint-firewall-1.Fields}[
-    """\Wuser:"({user_firstname}[\w\s]{1,2000}[^\s,\(])\s{1,100}({user_lastname}[^\s,\(]{1,2000})\s{0,100}\(({user}.+?)(\)|@)""",
-    """\Waction:"({event_name}[^"]{1,2000})""",
-    """message_info:"({event_name}[^"]{1,2000})""""
-  ]
+    """\Wuser:"({user_firstname}[\w\s]{1,2000}[^\s,\(])\s{1,100}({user_lastname}[^\s,\(]{1,2000})\s{0,100}\(({user}.+?)(\)|@)"""
+  ] 
 
 checkpoint-firewall-1 = {
   Vendor = Check Point 
@@ -19,7 +17,6 @@ checkpoint-firewall-1 = {
   TimeFormat = "epoch_sec"
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
-    """\s({time}\d{4}-\d\d-\d\dT\d\d:\d\d:\d\dZ)\s""",
     """ time:"({time}\d{1,100})""",
     """\W({host}[\w\-.]{1,2000}) CheckPoint""",
     """ src:"({src_ip}[A-Fa-f:\d.]{1,2000})""",
@@ -65,6 +62,6 @@ checkpoint-firewall-1 = {
     """\Wifname:"({interface_name}[^"]{1,2000})""",
     """\W(user|src_user_name|dst_user_name):"(?:[^_"\s]{1,2000}_)?({user}[^"\s]{1,2000}?)\s{0,100}""""
   ]
-  DupFields = [ "action->outcome" 
+  DupFields = [ "action->event_name", "action->outcome" 
 }
 ```

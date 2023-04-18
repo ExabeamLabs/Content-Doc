@@ -15,7 +15,7 @@ oracle-db-template-2 = {
   TimeFormat = "yyyy-MM-dd HH:mm:ss.SSSSSS"
   Fields = [
     """sql\.EXTENDED_TIMESTAMP="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d.\d{6})"""",
-    """sql\.USERHOST=(({domain}[^\\="]{1,2000})\\{1,20})?({host}[^=]{1,2000}?)\s{0,100}("|,|$)"""
+    """sql\.USERHOST=({host}[^=]{1,2000}?)\s{0,100}("|,|$)"""
     """sql\.OBJECT_NAME=({database_object}[^=]{1,2000}?)\s{1,100}[\w\.]+?=""",
     """sql\.OBJECT_SCHEMA=({schema}[^=]{1,2000}?)\s{1,100}[\w\.]+?=""",
     """sql\.OS_USER=({user}[^=]{1,2000}?)\s{1,100}[\w\.]+?=""",

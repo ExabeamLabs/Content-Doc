@@ -7,7 +7,7 @@ Name = cef-forcepoint-dlp-email-alert
   Lms = ArcSight
   DataType = "dlp-email-alert"
   TimeFormat = "epoch"
-  Conditions = [ """CEF:""", """|Forcepoint|AP-EMAIL|""", """|Message|Message|""", """ cs6=""" ]
+  Conditions = [ """CEF:""", """|Forcepoint|AP-EMAIL|""", """|Message|Message|""" ]
   Fields = [
     """\Wrt=({time}\d{1,100})""",
     """\Wdvc=({host}[\d.]{1,2000})""",

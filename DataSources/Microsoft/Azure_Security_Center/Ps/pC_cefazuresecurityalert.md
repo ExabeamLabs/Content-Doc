@@ -5,7 +5,7 @@ Name = cef-azure-security-alert
   Vendor = Microsoft
   Product = Azure Security Center
   Lms = Splunk
-  DataType = "alert"
+  DataType = "security-alert"
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = ["""dproc=Graph Security Alerts""", """"provider":"ASC"""", """"category":"ARM_UnusedAccountPersistence"""", """PREVIEW - Suspicious management session using an inactive account detected""" ]
   Fields = [

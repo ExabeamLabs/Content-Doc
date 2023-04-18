@@ -9,12 +9,10 @@ Name = unix-auditd-login
   TimeFormat = "epoch_sec"
   Conditions = [ """type=USER_AUTH""","""PAM:authentication""","""terminal=ssh""" ]
   Fields = [
-    """exabeam_host=(gcs-topic|({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[\w.\-]{1,2000}))))""",
-    """hostname="{0,20}(\?|(({src_ip}([A-Fa-f\d:.]{1,2000}))|({src_host}[^\s]{1,2000}?)))\s{0,100}(\w+=|")""",
-    """\d\d:\d\d:\d\d(\.\S+)?\s(::ffff:)?({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[\w\-.]{1,2000})))\s""",
+    """exabeam_host=({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[\w.\-]{1,2000})))""",
     """({time}\d{2}\/\d{2}\/\d{4}\s{1,100}\d{2}:\d{2}:\d{2})""",
     """msg=audit\(({time}\d{10})""",
-    """\saddr=(?:\?|({src_ip}([A-Fa-f\d:.]{1,2000}))|({src_host}[^\s]{1,2000}))\s""",
+    """\saddr=(?:\?|({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[^\s]{1,2000}))\s""",
     """acct=\\?"{0,20}(\?|({user}[^"=]{1,2000}?))\\?\s{0,100}(\w+=|")""", 
     """\sres=({outcome}[^']{1,2000})\'""",
     """\sses=({session_id}\S{1,2000}?)\s{0,100}(\w+=|")""",
@@ -23,6 +21,7 @@ Name = unix-auditd-login
     """\suid=({user_id}\S{1,2000}?)\s{0,100}(\w+=|")""",
     """auid=({account_used_id}\S{1,2000}?)\s{0,100}(\w+=|")""",
     """exe=\\?"{0,20}({process_directory}[^"=]{1,2000}?)\\?\s{0,100}(\w+=|")""",
+    """hostname="{0,20}(\?|({host}(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({dest_host}[^\s]{1,2000}?))))\s{0,100}(\w+=|")""",
     """op=({auth}[^\s=]{1,2000})\s"""
   ]
 

@@ -22,7 +22,7 @@ Name = json-4672
       """"SubjectUserName":"({user}[^"]{0,2000})""",
       """"SubjectDomainName":"({domain}[^"]{0,2000})""",
       """"SubjectLogonId":"({logon_id}[^"]{0,2000})""",
-      """"PrivilegeList":"(-|({privileges}[^"]{0,2000}))""",
+      """"PrivilegeList":"({privileges}[^"]{0,2000})""",
       """"Keywords":"({outcome}[^"]{1,2000})"""
     ]
     DupFields = ["host->dest_host"]

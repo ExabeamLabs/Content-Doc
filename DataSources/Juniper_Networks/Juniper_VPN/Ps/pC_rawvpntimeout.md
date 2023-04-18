@@ -17,7 +17,7 @@ Name = raw-vpn-timeout
     """Session timed out for (?:({user_email}[^@\\\/]{1,2000}@[^@\/\s]{1,2000})|({user}[^/]{1,2000}))""",
     """({host}[\w\-.]{1,2000})\s{1,100}PulseSecure:""",
     """PulseSecure:\s{0,100}({time}\d\d\d\d\-\d\d\-\d\d \d\d:\d\d:\d\d)\s{1,100}\-\s{1,100}({host}[\w\-.]{1,2000})""",
-    """PulseSecure:.*?\[({src_ip}[a-fA-F:\d.]{1,2000})\]\s{1,100}(Default Network::)?(({domain}[^\\]{1,2000})\\)?(?:({user_email}[^@\\\/]{1,2000}@[^@\(\s]{1,2000}?)|(Root::System|({user}[^\s]{1,2000})))\(({realm}[^\)]{1,2000})?"""
+    """PulseSecure:.*?\[({src_ip}[a-fA-F:\d.]{1,2000})\]\s{1,100}(({domain}[^\\]{1,2000})\\)?(?:({user_email}[^@\\\/]{1,2000}@[^@\(\s]{1,2000}?)|({user}[^\s]{1,2000}))\(({realm}[^\)]{1,2000})?"""
   ]
   DupFields = [ "host->dest_host" ]
 

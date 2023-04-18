@@ -3,7 +3,7 @@
 {
 Name = json-microsoft-app-activity-8
   Product = Office 365
-  Conditions= [ """"activityType":"Group"""", """"activityOperationType":"Assign"""", """"targetResourceType":"""", """act=""" ]
+  Conditions= [ """"activityType":"Group"""", """"activityOperationType":"Assign"""", """"targetResourceType":"""" ]
 
 json-microsoft-app-activity = {
   Vendor = Microsoft
@@ -23,8 +23,7 @@ json-microsoft-app-activity = {
     """"objectId":"({object_id}[^"]{1,2000})"""",
     """"correlationId":"({conn_id}[^"]{1,2000})"""",
     """\WdestinationServiceName\s{0,100}=({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
-    """\WsourceServiceName =({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)""",
-    """"name":"MethodsUsedForValidation","value":"\[({additional_info}[^"]{1,2000})\]""""
+    """\WsourceServiceName =({app}[^=]{1,2000}?)\s{1,100}(\w+=|$)"""
   ]
   DupFields = [ "object->resource" 
 }

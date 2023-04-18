@@ -18,7 +18,6 @@ ping-authentication_events = {
       """"recorded":\s{0,100}"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)"""",
       """exabeam_host=({host}[^\s]{1,2000})""",
       """"name":\s{0,100}"(({user_email}[^"@\s]{1,2000}@[^"]{1,2000})|({user}[^"]{1,2000}))"""",
-      """"devicemodel":\s*"({mfa_device}.+?)""""
     
 }
 ```

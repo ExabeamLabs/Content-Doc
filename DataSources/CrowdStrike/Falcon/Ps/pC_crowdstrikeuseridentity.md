@@ -9,7 +9,7 @@ Name = crowdstrike-user-identity
     TimeFormat = "epoch"
     Conditions = [ """"event_simpleName":""", """"UserIdentity"""", """"aid"""" ]
     Fields = [
-      """exabeam_host=([^=]{1,2000}@\s{0,100})?(cc|({host}[\w\-.]{1,2000}))""",
+      """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}[\w\-.]{1,2000})""",
       """"timestamp":\s{0,100}"({time}\d{1,100})""",
       """"UserPrincipal":\s{0,100}"(?:[^"@]{1,2000}@)?({domain}[^"]{1,2000})""",
       """"aid":\s{0,100}"({aid}[^"]{1,2000})""",

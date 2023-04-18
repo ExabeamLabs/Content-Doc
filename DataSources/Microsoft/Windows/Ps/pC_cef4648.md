@@ -14,10 +14,10 @@ Name = cef-4648
       """\srt=({time}\d{1,100})""",
       """\sdvc=({dest_ip}[a-fA-F:\d.]{1,2000})""",
       """\sdvchost=({dest_host}[^\s]{1,2000})""",
-      """\sduser=(-|({user}[^=]{1,2000}?))\s{1,100}\w+=""",
-      """\ssuser=(-|({user}[^=]{1,2000}?))\s{1,100}\w+=""",
+      """\sduser=({user}.+?)\s{1,100}\w+=""",
+      """\ssuser=({user}.+?)\s{1,100}\w+=""",
       """\sduser=({account}.+?)\s{1,100}\w+=""",
-      """\sdntdom=(\.|({domain}[^\s]{1,2000}))""",
+      """\sdntdom=({domain}[^\s]{1,2000})""",
       """\sduid=({logon_id}[^\s]{1,2000})""",
       """dproc=(?: |({process}({directory}(?:[^=]{1,2000})?[\\\/])?({process_name}[^\\\/=]{1,2000})))\s{1,100}\w+=""",
       """\ssrc=({src_ip}[a-fA-F:\d.]{1,2000})"""

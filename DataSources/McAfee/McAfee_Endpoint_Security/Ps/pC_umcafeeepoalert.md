@@ -23,7 +23,7 @@ Name = u-mcafee-epo-alert
       """<ThreatEventID>({event_code}[^<]{1,2000})""",
       """<ThreatSeverity>({alert_severity}[^<]{1,2000})""",
       """<ThreatCategory>({alert_name}[^<]{1,2000})""",
-      """<ThreatName>(-|_|(?i)none|({alert_name}[^<]{1,2000}?)\s{0,100})<\/ThreatName>""" 
+      """<ThreatName>(-|_|(?i)none|({alert_name}[^<]{1,2000}))<\/ThreatName>""" 
       """<ThreatCategory>((?i)none|({alert_type}[^<]{1,2000}))""",
       """<ThreatType>((?i)none|({alert_type}[^<]{1,2000}))""",
       """<TargetFileName>({malware_url}[^=]{0,2000}?[\\\/]{0,2000}\s{0,100}({malware_file_name}[^\s\\\/<][^\\\/<]{0,2000}?))\\?<""",
@@ -32,7 +32,7 @@ Name = u-mcafee-epo-alert
       """<ThreatActionTaken>((?i)none|({outcome}[^<]{1,2000}))<""", 
       """<AnalyzerName>(N\/A|({event_name}[^<]{1,2000}))""",
       """<TaskName>({task_name}[^<]{1,2000})""",
-      """<TargetPath>(|({process}({process_directory}[^<]{0,2000}?)\s{0,100}(({process_name}[^\s<\\\/][^<\\\/]{0,2000}?)?)))<""",
+      """<TargetPath>({process}({process_directory}[^<]{0,2000}?)\s{0,100}(({process_name}[^\s<\\\/][^<\\\/]{0,2000}?)?))<""",
       """<TargetName>\s{0,100}({process_name}[^\s<][^<]{0,2000}?)<""",
       """<SourceProcessName>({src_process_name}[^<]{1,2000})<""",
       """<TargetHash>\s{0,100}({md5}[^\s<][^<]{0,2000})<""",

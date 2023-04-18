@@ -9,12 +9,11 @@ duo-app-activity-2 = {
   Lms = ArcSight
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
     Fields = [
-    """exabeam_host=(cc|({host}[^\s]{1,2000}))""",
+    """exabeam_host=({host}[^\s]{1,2000})""",
     """"isotimestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{6}([+-]\d\d:\d\d)?)"""",
     """\WdestinationServiceName =(|({app}.+?))(\s{1,100}\w+=|\s{0,100}$)""",
     """"factor":\s{0,100}"({activity}[^"]{1,2000})"""",
-    """"alias":"({user}[^"]{1,2000})""""
-    """"username":"(({user_email}[^"@]{1,2000}@[^"\.]{1,2000}\.[^"]{1,2000})|(?!AD Sync:)({user}[^"]{1,2000}))"""
+    """"username":"(?!AD Sync:)({user}[^"]{1,2000})"""
     """"device":\s{0,100}"({object}[^"]{1,2000})""",
     """"object":\s{0,100}"({object}[^"]{1,2000})""",
     """"status":\s{0,100}"({status}[^"]{1,2000})""",

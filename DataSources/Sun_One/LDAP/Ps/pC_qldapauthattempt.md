@@ -19,14 +19,10 @@ Name = q-ldap-auth-attempt
       """\WtargetHost="{1,20}({dest_host}[^"]{1,2000}?)"{1,20}(\s{1,100}\w+=|\s{0,100}$)""",
       """\WtargetPort=({dest_port}\d{1,100})""",
       """\WtargetProtocol="{1,20}({protocol}[^"]{1,2000}?)"{1,20}(\s{1,100}\w+=|\s{0,100}$)""",
-      """\WclientIP='?({src_ip}[A-Fa-f\d:.]{1,2000})"""
       """\WrequesterIP="({src_ip}[a-fA-F\d.:]{1,2000})""",
       """\WinstanceName ="({host}[^"]{1,2000})""",
       """\WauthDN="({user_ou}[^"]{1,2000})""",
-      """\Wapp='({app}[^']{1,2000}?)'\s\w+="""
-      """\WresultCodeName ="{1,20}({result}[^"]{1,2000}?)"\s{0,100}\w+="""
     ]
-    DupFields = ["app->service", "auth_type->auth_method"]
   
 
 }

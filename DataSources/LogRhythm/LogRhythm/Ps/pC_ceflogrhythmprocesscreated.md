@@ -7,7 +7,7 @@ Name = cef-logrhythm-process-created
     Lms = Direct
     DataType = "process-created"
     TimeFormat = "MM/dd/yyyy HH:mm:ss"
-    Conditions = [""" TIMESTAMP=""", """ PNAME=""", """ PID=""" ]
+    Conditions = ["""TIMESTAMP=""", """PNAME=""", """PID=""" ]
     Fields = [
       """TIMESTAMP=({time}\d{1,100}\/\d{1,100}\/\d\d\d\d\s\d{1,100}:\d{1,100}:\d{1,100})""",
       """EVENT=({event_name}[^\s]{1,2000})""",

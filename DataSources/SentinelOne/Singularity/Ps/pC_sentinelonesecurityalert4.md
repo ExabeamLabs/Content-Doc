@@ -8,7 +8,7 @@ sentinelone-security-alert {
     Vendor = SentinelOne
     Product = Singularity
     Lms = Splunk
-    DataType = "alert"
+    DataType = "security-alert"
     TimeFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
     Fields = [
       """exabeam_host=([^=]{1,2000}@\s{0,100})?(::ffff:)?({host}\S{1,2000})""",

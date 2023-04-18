@@ -18,7 +18,7 @@ Name = auditd-unix-account-switch
     """pid=({process_id}[^\s]{1,2000})""",
     """exe="({process}[^"]{0,2000})"""",
     """exe="({process_directory}.+\/)({process_name}.+?)"""",
-    """hostname=(({src_ip}(\d{1,3}\.){3}\d{1,3})|({src_host}[^\s\.]{1,2000}))""",
+    """hostname=({src_host}[^\s\.]{1,2000})""",
     """addr=({src_ip}[^\s]{1,2000})""",
     """res=({outcome}[^\s'"]{1,2000})"""
   ]

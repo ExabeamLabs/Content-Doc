@@ -15,7 +15,7 @@ Name = xml-4688
     """<Computer>({host}[^<]{1,2000})</Computer>""",
     """({event_code}4688)""",
     """<Data Name(\\)?='SubjectUserSid'>({user_sid}[^<]{1,2000}?)</Data>""",
-    """<Data Name(\\)?='SubjectUserName'>(-|LOCAL SERVICE|({user_fullname}[^<\s]{1,2000}\s[^<]{1,2000})|({user}[^<]{1,2000}?))</Data>""",
+    """<Data Name(\\)?='SubjectUserName'>(-|LOCAL SERVICE|({user}[^<]{1,2000}?))</Data>""",
     """<Data Name(\\)?='SubjectDomainName'>(-|NT AUTHORITY|({domain}[^<]{1,2000}?))</Data>""",
     """<Data Name(\\)?='SubjectLogonId'>({logon_id}[^<]{1,2000}?)</Data>""",
     """<Data Name(\\)?='NewProcessId'>({process_guid}[x\da-f]{1,2000})</Data>""",

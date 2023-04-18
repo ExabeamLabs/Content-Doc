@@ -3,10 +3,6 @@
 {
 Name = s-zscaler-web-activity-2
   Conditions = [ """threatclass=Clean Transaction""", """bwthrottle=""", """urlsupercategory=""" ]
-  Fields = ${ZscalerParserTemplates.s-zscaler-web-activity.Fields}[
-    """\suser=({domain}[\w.\-]{1,2000})->({user}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
-    """\suser=(?![^\s]{1,2000}@[^\s]{1,2000})({user}[^\s]{1,2000})\s{0,100}(\w+=|$)"""
-  ]
 
 s-zscaler-web-activity = {
   Vendor = Zscaler
@@ -17,8 +13,6 @@ s-zscaler-web-activity = {
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S{1,2000})""",
-    """devicehostname=(NA|({host}[\w\.\-]{1,2000}))\s\w+=""",
-    """datetime=({time}\w{1,3}\s\w{1,3}\s{1,5}\d{1,2}\s\d\d:\d\d:\d\d\s\d{4})""",
     """({time}\d\d\d\d-\d\d-\d\d \d{1,100}:\d{1,100}:\d{1,100})\s{1,100}(\w+=|$)""",
     """\sreason=(Allowed|({failure_reason}[^=]{1,2000}?))\s{0,100}(\w+=|$)""",
     """\saction=({action}[^=]{1,2000}?)\s{0,100}(\w+=|$)""",
@@ -33,7 +27,9 @@ s-zscaler-web-activity = {
     """\suseragent=(Unknown|({user_agent}[^=]{1,2000}?))\s{0,100}(\w+=|$)""",
     """\sstatus=({result_code}\d{1,100})""",
     """\sclientpublicIP=({src_ip}[A-Fa-f:\d.]{1,2000})""",
-    """\sClientIP=({src_ip}[A-Fa-f\d:.]{1,2000})""", 
+    """\sClientIP=({src_ip}[A-Fa-f\d:.]{1,2000})""",
+    """\suser=({domain}[\w.\-]{1,2000})->({user}[^=]{1,2000}?)(\s{1,100}\w+=|\s{0,100}$)""",
+    """\suser=(?![^\s]{1,2000}@[^\s]{1,2000})({user}[^\s]{1,2000})\s{0,100}(\w+=|$)""",
     """\suser=(?=[^\s]{1,2000}@[^\s]{1,2000})({user_email}[^\s@]{1,2000}@[^\s@]{1,2000})\s{0,100}(\w+=|$)""",
     """\surl=(?:None|({full_url}[^\s]{1,2000}))\s{0,100}(\w+=|$)""",
     """\surl=(\w{1,2000}:\/{2})?[^\/]{1,2000}({uri_path}\/[^?\s]{1,2000})""",

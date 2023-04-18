@@ -9,13 +9,13 @@ Name = juniper-vpn-close
   TimeFormat = "yyyy-MM-dd HH:mm:ss"
   Conditions = [ """ Closed connection to """, """ bytes read """, """ bytes written """ ]
   Fields = [
-    """(Juniper|PulseSecure):(\s{0,100}|(\s\S+){3}\s)({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
+    """(Juniper|PulseSecure):\s{0,100}({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
     """"@timestamp":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{1,100}Z)""",
     """\w{3}\s{1,100}\d{1,2}\s{1,100}\d{2}:\d{2}:\d{2}\s{1,100}({host}[\w\.-]{1,2000})\s{1,100}\S*?[\[:\s]""",
     """exabeam_host=([^=]{1,2000}?@\s{0,100})?({host}[^\s]{1,2000})""",
     """({host}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|[\w\-\.]{1,2000})\s{0,100}(Juniper|PulseSecure):""",
     """:\s{0,100}({time}\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})\s""",
-    """- \[({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]\s{1,100}(Default Network::)?(?:({domain}\w{1,100})\\{1,20})?(({user_email}[^@\(]{1,2000}@[^\s\(]{1,2000}?)|(({user_fullname}[^\s\(]{1,2000}\s{1,20}[^\(]{1,2000})|({user}[^\(\[]{1,2000})))[\(\[]""",
+    """- \[({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]\s{1,100}(?:({domain}\w+)\\)?({user}[^\(\[]{1,2000}?)[\(\[]""",
     """Closed connection to (?:({src_translated_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({dest_host}[\w.\-]{1,2000}))""",
     """- Closed connection to \S+\s{1,100}port ({dest_port}\d{1,100})""",
     """\stime="({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",

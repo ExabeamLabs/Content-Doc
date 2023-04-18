@@ -6,7 +6,7 @@ Name = code42-email-out-operations
   Product = Code42 Incydr
   Lms = Direct
   DataType = "dlp-email-alert"
-  TimeFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+  TimeFormat = "yyyy-MM-dd'T'HH:mm:ss:SSZ"
   Conditions= [ """"fileCategoryByExtension"""",  """"eventType":"EMAILED"""", """"osHostName""", """act=send""" ]
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",

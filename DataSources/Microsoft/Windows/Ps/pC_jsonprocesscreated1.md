@@ -10,8 +10,6 @@ Name = json-process-created-1
     TimeFormat = "yyyy-MM-dd HH:mm:ss"
     Conditions = [ ""","EventID":4688,""", """A new process has been created""" ]
     Fields = [
-      """"TimeGenerated":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d{1,3})?Z)"""",
-      """"Computer":"({host}[^"]{1,2000})"""",
       """"EventTime":({time}\d{1,100})""",
       """"EventTime":\s{0,100}"({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """"Account":"(({domain}[^"]{1,2000}?)[\\\/]{1,2000})?({user}[^"\\\/]{1,2000})"""",

@@ -5,10 +5,9 @@ Name = json-4776-1
   DataType = "windows-4776"
   Conditions = [ """"event-id":4776""", """"message":"The computer attempted to validate the credentials for an account""", """"user":""" ]
   Fields = ${WinParserTemplates.json-windows-events.Fields}[
-    """"workstation-name":"({src_host}[^"]{1,2000})""",
+    """"workstation-name":"({dest_host}[^"]{1,2000})""",
     """"status-description":"({result_code}[^"\.]{1,2000})"""
   ]
-  DupFields=[ "host->dest_host" ]
 
 json-windows-events = {
   Vendor = Microsoft

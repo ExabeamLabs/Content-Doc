@@ -7,7 +7,7 @@ Name = azure-event-hub-application-gateway-access-log
   Fields = ${MSParserTemplates.cef-azure-event-hub.Fields}[
     """host":"({app}[^"\\]{1,2000})\\*"""",
     """operationName":"({activity}.+?[^\\])"""",
-    """originalHost":"(\~\.\*||({src_ip}[A-Fa-f\d.:]{1,2000})|({src_host}.+?[^\\"]))"""",
+    """originalHost":"(({src_ip}[A-Fa-f\d.:]{1,2000})|({src_host}.+?[^\\]))"""",
     """userAgent":"(-|({user_agent}[^"\\]{1,2000}))\\*"""",
     """requestUri":"({request_uri}[^"]{1,2000})"""",
     """receivedBytes":"{0,20}({bytes_in}\d{1,100})""",
@@ -29,6 +29,7 @@ cef-azure-event-hub = {
       """\Wdvc=({host}\S{1,2000})""",
       """\Wdvchost=({host}[\w\-.]{1,2000})""",
       """\Wact=({activity}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",
+      """([^\|]{0,2000}\|){5}({activity}[^\|]{1,2000})""",
       """\WflexString1=({activity}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",
       """\WdestinationServiceName =({app}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",
       """\Wfname=({object}[^=]{1,2000})\s{1,100}(\w{1,100}=|$)""",

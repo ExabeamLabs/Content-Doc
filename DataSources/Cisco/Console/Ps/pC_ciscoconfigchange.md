@@ -15,7 +15,7 @@ Name = cisco-config-change
 		"""({event_code}%SYS-[^\s]{1,2000}):"""
 		"""({log_type}CONFIG)""",
 		"""%SYS-[^\s]{1,2000}: ({event_name}.+?)\s{0,100}$""",
-		"""Configured from console by (({user_email}[^@\s]{1,2000}@[^\.\s]{1,2000}\.[^\s]{1,2000})|(({domain}[^\s\\]{1,2000})\\{1,20})?({user}[^\s]{1,2000})) on""",
+		"""Configured from console by ({user}[^\s]{1,2000}) on""",
 		""" on .+?\((({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})|({src_host}[^)]{1,2000}))\)"""
   	   ]
 

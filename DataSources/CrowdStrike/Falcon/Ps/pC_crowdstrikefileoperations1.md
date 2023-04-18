@@ -7,7 +7,7 @@ Name = crowdstrike-file-operations-1
   Fields = ${CrowdStrikeParserTemplates.cef-crowdstrike-app-activity-temp.Fields} [
   """"id":"({alert_id}[\w-]{1,2000}?)""""
   """"name":"({alert_name}[^"]{1,2000}?)""""
-  """"File({activity}Delete|Open|Rename)"""
+  """"File({accesses}Delete|Open|Rename)"""
   ]
 
 cef-crowdstrike-app-activity-temp = {
@@ -18,7 +18,7 @@ cef-crowdstrike-app-activity-temp = {
   TimeFormat = "epoch"
   Fields = [
     """"timestamp":\s{0,100}"{0,20}({time}\d{1,100})"""",
-    """exabeam_host=(gcs-topic|cc|({host}[\w.\-]{1,2000}))""",
+    """exabeam_host=({host}[\w.\-]{1,2000})""",
     """"UserIp":\s{0,100}"({src_ip}[^"]{1,2000})""",
     """\WdestinationServiceName =({app}.+?)\s{1,100}\w+="""
     """"event_simpleName":"({event_code}[^"]{1,2000})""",
@@ -26,7 +26,7 @@ cef-crowdstrike-app-activity-temp = {
     """"(ImageFileName|TargetFileName)":"({file_path}[^"]{1,2000})""",
     """"(ImageFileName|TargetFileName)":"({file_parent}[^"]{0,2000}[\\\/]{1,2000})({file_name}[^\\\/"]{1,2000}\.({file_ext}[^\\\/"]{1,2000}))"""
     """"UserName":"({user}[^"]{1,2000}?)""""
-    """"aip":"({aip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""""
+    """"aip":"({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""""
     """"ClientComputerName":"({src_host}[^"]{1,2000})"""
   
 }

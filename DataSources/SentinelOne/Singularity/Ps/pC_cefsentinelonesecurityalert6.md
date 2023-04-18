@@ -16,7 +16,7 @@ Name = cef-sentinelone-security-alert-6
      """"title":\s{0,100}"({alert_name}[^"]{1,2000})""",
      """"agentIp(V4|V6)?":\s{0,100}"(::ffff:)?({src_ip}[\da-fA-f\.:]{1,2000})"""",
      """"fileDisplayName":\s{0,100}"({file_name}[^"]{1,2000})""",
-     """"filePath":\s{0,100}"({file_path}[^"]{1,2000})""",
+     """"filePath":\s{0,100}"({malware_url}[^"]{1,2000})""",
      """"agentDomain":\s{0,100}"(unknown|({src_domain}[^"]{1,2000}))""",
      """"agentComputerName":\s{0,100}"({src_host}[^"]{1,2000})""",
      """"fileExtensionType":(\s{0,100}"None|null|\s{0,100}"{1,20}(Unknown|({file_type}[^"]{1,2000}))")""",

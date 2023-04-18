@@ -4,7 +4,7 @@
 Name = microsoft-app-activity-4
   Conditions= [ """"src-application-name":"Office 365"""", """"event-name":"authz-group-assigned"""", """initiatedBy":""", """"src-endpoint":"Graph Directory Audit logs"""", """"category":"GroupManagement"""" ]
   Fields = ${MSParserTemplates.microsoft-app-activity-3.Fields}[
-    """targetResources":\[\{[^\}]{1,2000}?userPrincipalName":"(({target_user_email}[^@"]{1,2000}@[^\.]{1,2000}\.[^"]{1,2000})|({taget_user}[^"]{1,2000}))"""" 
+    """targetResources":\[\{[^\}]{1,2000}?userPrincipalName":"({target_user}[^@"]{1,2000}@[^"]{1,2000})"""" 
   ]
 
 microsoft-app-activity-3 = {

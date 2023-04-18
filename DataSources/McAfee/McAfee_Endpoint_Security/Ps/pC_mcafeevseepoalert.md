@@ -14,17 +14,15 @@ Name = mcafee-vse-epo-alert
       """ServerID="?({host}[^"\|]{1,2000}?)("|\||\s\w+=)""",
       """TargetHostName ="?(?:|None|({src_host}[^"\|]{1,2000}?)|)("|\||\s\w+=)""",     
       """TargetIPV4="?({src_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})""",
-      """TargetUserName ="?(?:|None|(({domain}[^\\"]{1,2000})\\+)?(\s|({user}[^"\|]{1,2000}?)))("|\||\s\w+=)""",
+      """TargetUserName ="?(?:|None|(({domain}[^\\]{1,2000})\\+)?({user}[^"\|]{1,2000}?))("|\||\s\w+=)""",
       """ThreatCategory="?({threat_category}[^"\|]{1,2000}?)("|\||\s\w+=)""",
       """AutoGUID="?({alert_id}[^"]{1,2000}?)("|\s{1,100}\w+=|\s{0,100}$)""",
       """ThreatSeverity="?({alert_severity}[^"\|]{1,2000}?)("|\||\s\w+=)""",
       """ThreatName ="?(?:|none|({alert_name}[^"\|]{1,2000}?))("|\||\s\w+=)""",
       """ThreatType="?(?:|none|({alert_type}[^"\|]{1,2000}?))("|\||\s\w+=)""",
-      """TargetFileName ="?(?:|None|({malware_url}.+?\\(|({malware_file_name}[^\\]{0,2000}?))))("|\||\s\w+=)""",
+      """TargetFileName ="?(?:|None|({malware_url}.+?\\({malware_file_name}[^\\]{1,2000}?)))("|\||\s\w+=)""",
       """OSType="({os}[^"]{1,2000})"""",
       """TargetProcessName ="?(?:|none|({process_name}[^"\|]{1,2000}?))("|\||\s\w+=)""",
-      """TargetHostName ="({dest_host}[^"]+)"""",
-      """ThreatName ="({additional_info}[^"]{1,2000})"""",
     ]
     SOAR {
       IncidentType = "malware"

@@ -5,7 +5,7 @@ Name = cef-kaspersky-security-alert-1
   Vendor = Kaspersky
   Product = Kaspersky Endpoint Security for Business
   Lms = Splunk
-  DataType = "alert"
+  DataType = "security-alert"
   TimeFormat =  "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = [ """CEF""","""|KasperskyLab|SecurityCenter|""","""cs3Label=ProductVersion""", """destinationZoneURI=""" ]
   Fields = [

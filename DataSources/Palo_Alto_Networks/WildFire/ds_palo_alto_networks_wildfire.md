@@ -4,7 +4,7 @@ Product: WildFire
 -----------------
 | Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
 |:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  55   |   22   |         6          |      3      |    3    |
+|  53   |   22   |         6          |      3      |    3    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |

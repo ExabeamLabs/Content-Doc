@@ -15,7 +15,7 @@ Name = cef-salesforce-file-download
     """([^\|]{0,2000}\|){5}({activity}[^\|]{1,2000})""",
     """\Wsuser=(({domain}[^\\\s@;=]{1,2000})\\+)?(system|({user}[^\\\=\s;@]{1,2000}))\s{1,100}(\w+=|$)""",
     """\Wsuser=({user_email}[^@\s;]{1,2000}?@[^@\s;]{1,2000})\s{0,100}(\w+=|$)""",
-    """\Wfname=({file_name}[^=]{1,2000}?(?:\.(null|({file_ext}[^".]{1,2000}?)))?)\s{1,100}(\w+=|$)""",
+    """\Wfname=({file_name}.+?(?:\.(null|({file_ext}[^".]{1,2000}?)))?)\s{1,100}(\w+=|$)""",
     """\WfileType=({file_type}.+?)\s{1,100}(\w+=|$)""",
     """\WdestinationServiceName =({app}.+?)\s{0,100}(\w+=|$)""",
   ]

@@ -11,7 +11,7 @@ Name = cef-azure-authentication
   Fields = [
     """"Timestamp":"({time}\d{1,100}-\d{1,100}-\d{1,100}T\d{1,100}:\d{1,100}:\d{1,100})""",
     """"DeviceName":"({host}[\w\-.]{1,2000})"""",
-    """"AccountName":"(-|system|({user_email}[^@"]{1,2000}@[^\."]{1,2000}\.[^"]{1,2000})|({user}[^"\s]{1,2000}))"""",
+    """"AccountName":"(-|system|({user}[^"\s]{1,2000}))"""",
     """"AccountDomain":"({domain}[^"\s]{1,2000})"""",
     """"AccountSid":"({user_sid}[^"]{1,2000})"""",
     """"RemoteIP":"({src_ip}[A-Fa-f:\d.]{1,2000})"""",

@@ -9,12 +9,11 @@ Name = kerberos-as
     TimeFormat = "epoch_sec"
     Conditions = [ "krb5kdc", "AS_REQ" ]
     Fields = [
-      """exabeam_time=({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)""",
       """authtime ({time}\d{1,100}),""",
       """\d\d:\d\d:\d\d(\.\S+)?\s({host}[^\s]{1,2000})""",
       """\w+ \d{1,100} \d{1,100}:\d{1,100}:\d{1,100}(\.\S+)? ({host}[^\s]{1,2000})""",
       """AS_REQ .+? ({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}):\s{1,100}({outcome}[^:]{1,2000})""",
-      """AS_REQ.+?(,|:)\s{1,100}(?:(host\/)({src_host}[^@\s]{1,2000})@({domain}[^\s]{1,2000})|({user}[^\s]{1,2000}?)\\?@({=domain}[^\s]{1,2000})) for ({kerberos_service}[^/]{1,2000})"""
+      """AS_REQ.+?(,|:)\s{1,100}({user}[^\s]{1,2000})@({domain}[^\s]{1,2000}) for ({kerberos_service}[^/]{1,2000})"""
     ]
  
 

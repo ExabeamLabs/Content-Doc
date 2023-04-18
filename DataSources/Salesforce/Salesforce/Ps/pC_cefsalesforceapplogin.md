@@ -11,14 +11,12 @@ Name = cef-salesforce-app-login
   Fields = [
     """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",  
     """LoginTime\\=({time}\d\d\d\d\-\d\d\-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)""",
-    """CreatedDate\\=({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)"""
     """suser=(({domain}[^\\\s@;=]{1,2000})\\+)?(system|({user}[^\\\=\s;@]{1,2000}))\s{1,100}(\w+=|$)""",
     """suser=({user_email}[^\\\=\s;@]{1,2000}@({email_domain}[^\\\=\s;@]{1,2000}))""",
     """suser=({user_email}[^\\\=\s;@]{1,2000}@[^\\\=\s;@]{1,2000})""",
     """SourceIp\\*=({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """Status\\*=({outcome}[^;]{1,2000})""",
     """Platform\\*=(Unknown|({os}[^;]{1,2000}))""",
-    """deviceNtDomain=({os}[^=]{1,2000}?)\s{1,100}\w{1,2000}=""",
     """TlsProtocol\\*=({protocol}[^;]{1,2000})""",
     """Browser\\*=(Unknown|({browser}.+?))(;|\s\w+=)""", 
     """({app}Sales Cloud)""",

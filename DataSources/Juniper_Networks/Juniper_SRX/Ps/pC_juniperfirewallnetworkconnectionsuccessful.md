@@ -14,7 +14,6 @@ juniper-firewall-network-connection = {
     """\Wstart_time="({time}\d\d\d\d-\d\d-\d\d \d\d\:\d\d:\d\d)""",
     """\Wdevice_id=({host}[\w\-.]{1,2000})""",
     """\Wservice=({protocol}[^\s\/]{1,2000})""",
-    """proto=({protocol}[^"]{0,2000})""",
     """\Waction=({outcome}.+?)\s{1,100}(\w+=|$)""",
     """\Wsent=({bytes_out}\d{1,100})""",
     """\Wrcvd=({bytes_in}\d{1,100})""",

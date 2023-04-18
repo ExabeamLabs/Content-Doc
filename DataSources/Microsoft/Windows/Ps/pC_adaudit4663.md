@@ -27,7 +27,7 @@ Name = ad-audit-4663
     """\WRECORD_NUMBER\s{0,100}=\s{0,100}(null|({record_id}\d{1,100}))""",
     """\WUSER_SID\s{0,100}=\s{0,100}(null|({user_sid}[^\s\]]{1,2000}))""",
     """\WFORMAT_MESSAGE\s{0,100}=\s{0,100}(null|({additional_info}.+?))\s{0,100}\]""",
-    """\WFILE_TYPE\s{0,100}=\s{0,100}(null|(?:\.({file_ext}[^\]]{1,2000}?))|({file_type}[^\]]{1,2000}?))\s{0,100}\]""",
+    """\WFILE_TYPE\s{0,100}=\s{0,100}(null|({file_type}[^\]]{1,2000}?))\s{0,100}\]""",
     """\WACCESSES\s{0,100}=\s{0,100}(null|({accesses}[^\]]{1,2000}?))\s{0,100}\]""",
   ]
   DupFields = [ "host->dest_host", "directory->process_directory", "object->file_path" ]

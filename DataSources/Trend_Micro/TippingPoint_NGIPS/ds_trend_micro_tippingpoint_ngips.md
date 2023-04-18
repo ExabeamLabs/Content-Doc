@@ -4,12 +4,12 @@ Product: TippingPoint NGIPS
 ---------------------------
 | Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
 |:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  52   |   21   |         6          |      2      |    2    |
+|  50   |   21   |         6          |      2      |    2    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 | [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  network-alert<br> ↳[cef-tippingPoint-network-alert-1](Ps/pC_ceftippingpointnetworkalert1.md)<br> ↳[cef-tippingPoint-network-alert](Ps/pC_ceftippingpointnetworkalert.md)<br> ↳[q-tippingpoint-sms-alert-5](Ps/pC_qtippingpointsmsalert5.md)<br> ↳[q-tippingpoint-sms-alert-4](Ps/pC_qtippingpointsmsalert4.md)<br> ↳[q-tippingpoint-sms-alert-3](Ps/pC_qtippingpointsmsalert3.md)<br> ↳[q-tippingpoint-sms-alert](Ps/pC_qtippingpointsmsalert.md)<br> ↳[q-tippingpoint-sms-alert-2](Ps/pC_qtippingpointsmsalert2.md)<br> ↳[q-tippingpoint-sms-alert-1](Ps/pC_qtippingpointsmsalert1.md)<br><br> security-alert<br> ↳[tippingpoint-sms-alert](Ps/pC_tippingpointsmsalert.md)<br> | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1190 - Exploit Public Fasing Application<br> | [<ul><li>43 Rules</li></ul><ul><li>19 Models</li></ul>](RM/r_m_trend_micro_tippingpoint_ngips_Compromised_Credentials.md) |
-|        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  security-alert<br> ↳[tippingpoint-sms-alert](Ps/pC_tippingpointsmsalert.md)<br>    | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>    | [<ul><li>4 Rules</li></ul>](RM/r_m_trend_micro_tippingpoint_ngips_Lateral_Movement.md)    |
+|        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  security-alert<br> ↳[tippingpoint-sms-alert](Ps/pC_tippingpointsmsalert.md)<br>    | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_trend_micro_tippingpoint_ngips_Lateral_Movement.md)    |
 |     [Privileged Activity](../../../UseCases/uc_privileged_activity.md)     |  security-alert<br> ↳[tippingpoint-sms-alert](Ps/pC_tippingpointsmsalert.md)<br>    | T1068 - Exploitation for Privilege Escalation<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_trend_micro_tippingpoint_ngips_Privileged_Activity.md)    |
 [Next Page -->>](2_ds_trend_micro_tippingpoint_ngips.md)
 
