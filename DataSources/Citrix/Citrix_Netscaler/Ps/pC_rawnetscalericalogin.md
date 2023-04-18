@@ -10,7 +10,11 @@ Name = raw-netscaler-ica-login
   Conditions = [ "SSLVPN ICASTART", "username:domainname" ]
   Fields = [
     """exabeam_host=(.+?@\s{0,100})?({host}[^\s]{1,2000}[^\s:])""",
-   """\w+\s{1,100}\d{1,100}\s{1,100}\d\d:\d\d:\d\d\s{1,100}({host}[\w\-.]{1,2000})""",
+    """\w+\s{1,100}\d{1,100}\s{1,100}\d\d:\d\d:\d\d\s{1,100}({host}[\w\-.]{1,2000})\s""",
+    """({host}[^\s]{1,2000})\s{1,20}\d\d\/\d\d\/\d\d:""",
+    """dvchost=({host}[^\s]{1,2000})""",
+    """shost=({src_host}[^\s]{1,2000})""",
+    """dhost=({dest_host}[^\s]{1,2000})""",
     """({time}\d\d/\d\d/\d\d\d\d:\d\d:\d\d:\d\d)""",
     """username:domainname\s({user}[^:@]{1,2000})(:|@)({domain}[^\s]{1,2000}[^\s:])?""",
     """Source\s({src_ip}[\w.:]{1,2000}[^:]):\d{1,100}""",

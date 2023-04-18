@@ -21,7 +21,7 @@ bluecoat-proxy = {
     """\s({user_agent}Mozilla[^\n]{1,2000}?),\s(\d{1,3}\.){3}\d{1,3},\s\d{1,100},\s\d{1,100}""",
     """"({user_agent}Mozilla[^"]{1,2000}?)\\?"\s\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}\s\d{1,100}\s\d{1,100}"""
     """({time}\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d)\s{1,100}\d{1,100}\s{1,100}(?:-|({src_ip}[^\s]{1,2000}))\s{1,100}(\S+\s{1,100})?(?:-|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|\d{1,100}|TUNNELED|DENIED|FAILED|({user}[^\s\_]{1,2000}))\s""",
-    """\s\d{1,100}\s({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})\s{1,100}(-|non-interactive-user|((({domain}[^\\]{1,2000})\\)?({user}[^\s]{1,2000})))\s{1,100}([^\s]{1,2000}\s){2}({action}OBSERVED|PROXIED|DENIED)""",
+    """\s\d{1,100}\s({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})\s{1,100}(-|non-interactive-user|({user_email}[^@\s]{1,2000}@[^\.\s]{1,2000}\.[^\s]{1,2000})|((({domain}[^\\\s]{1,2000})\\{1,20})?({user}[^\s\\,"]{1,2000})))\s{1,100}([^\s]{1,2000}\s){2}({action}OBSERVED|PROXIED|DENIED)""",
     """({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s([^\s]{1,2000}\s){3}({action}OBSERVED|PROXIED|DENIED)""",
     """({dest_ip}\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s{0,100}$""",
     """({time}\d\d\d\d-\d\d-\d\d\s\d\d:\d\d:\d\d)\s\d{1,100}\s({src_ip}\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})\s\S+\s({proxy_action}[^\s]{1,2000})\s(\S+\s){2}(unknown|({method}[^\s]{1,2000}))\s({protocol}[^\s]{1,2000})\s(({dest_ip}(\d{1,3}\.){3}\d{1,3})|({web_domain}[^\s]{1,2000}))\s({full_url}[^\s]{1,2000})\s(\S+\s){5}({action}OBSERVED|PROXIED|DENIED)\s({category}[^\s]{1,2000})\s\S+\s({=dest_ip}[a-fA-F\d:.]{1,2000})""",

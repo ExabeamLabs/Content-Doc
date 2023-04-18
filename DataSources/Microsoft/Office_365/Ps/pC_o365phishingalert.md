@@ -20,8 +20,8 @@ Name = o365-phishing-alert
     """"Verdict":"({verdict}[^"]{1,2000})"""",
     """"Subject":"\s{0,100}({additional_info}[^,"]{1,2000}?)[\s\t]{0,100}"(,|$)"""",
     """"Directionality":"({direction}[^",]{1,2000})"""",
-    """"P2Sender":"({sender}[^@",]{1,2000}@[^",]{1,2000})"""",
-    """"P1Sender":"({sender}[^@",]{1,2000}@[^",]{1,2000})"""",
+    """"P2Sender":"([^@]{1,2000}?\\=)?({sender}[^@",\\=]{1,2000}@[^",]{1,2000})"""",
+    """"P1Sender":"([^@]{1,2000}?\\=)?({sender}[^@",\\=]{1,2000}@[^",]{1,2000})"""",
     """"DeliveryAction":"({outcome}[^"]{1,2000})""""
   ] 
  DupFields = [ "user_email->recipient", "additional_info->subject" ]

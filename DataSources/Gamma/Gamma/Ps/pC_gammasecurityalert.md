@@ -9,7 +9,7 @@ Name = gamma-security-alert
   TimeFormat = "epoch"
   Conditions = [ """'violation_status': """, """'violation_category': """, """'violation_id':""", """'violation_event_timestamp':""" ]
   Fields = [
-    """'violation_event_timestamp':\s{0,100}({time}\d{1,100})""",
+    """'violation_event_timestamp':\s{0,100}({time}\d{10})""",
     """exabeam_host=({host}[^\s]{1,2000})""",
     """'file_labels_map':[^:]{1,2000}:\s{0,100}\['({event_name}[^']{1,2000})'""",
     """'dashboard_url':\s{0,100}'({additional_info}[^']{1,2000})'""",

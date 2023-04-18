@@ -14,7 +14,7 @@ Name = lieberman-erpm
     """"hostname":"({host}[^"]{1,2000})"""",
     """sEventID=\\"({event_name}[^"]{1,2000})\\"""",
     """sOriginatingSystem=\\"({src_host}[^"]{1,2000})\\"""",
-    """"(sSystemName|TargetSystem)\\"\svalue=\\"({dest_host}[^"]{1,2000})\\"""",  
+    """"(sSystemName|TargetSystem)\\"\svalue=\\"({dest_host}[^"]{1,2000})\\"""",
     """"AccountTargetName\\"\svalue=\\"({account}[^"]{1,2000})\\"""",
     """sOriginatingAccount=\\"(({domain}[^\\"]{1,2000}?)\\+)?({user}[^"]{1,2000})\\"""",
     """sLoginName =\\"(({target_domain}[^\\"]{1,2000})\\{1,20})?({target_user}[^"]{1,2000})\\"""",

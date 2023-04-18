@@ -4,7 +4,7 @@ Product: FireEye Network Security (NX)
 --------------------------------------
 | Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
 |:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  112  |   40   |         19         |      3      |    3    |
+|  114  |   40   |         19         |      3      |    3    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |

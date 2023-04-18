@@ -9,6 +9,7 @@ Name = o365-inbox-rules
   TimeFormat = "yyyy-MM-dd'T'HH:mm:ss"
   Conditions = ["""Operation":"Set-Mailbox""" , """DeliverToMailboxAndForward""" ]
   Fields = [
+    """exabeam_host=([^=]{1,2000}@\s{0,100})?({host}\S+)""",
     """"CreationTime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)"""",
     """Forward.+?Value":"(smtp:)?({target}[^"]{1,2000}@({target_domain}[^"]{1,2000}))""""
     """"ResultStatus":"({outcome}[^"]{1,2000})"""",

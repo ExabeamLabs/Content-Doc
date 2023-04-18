@@ -23,9 +23,7 @@ o365-dlp-email-out = {
     """"Attachments\\*"{1,20}:[\s\\]{0,2000}"{1,20}\s{0,100}({attachments}[^\n]{1,2000}?)\s{0,100}\\?","Id"""",
     """"Attachments\\*"{1,20}:[\s\\]{0,2000}"{1,20}\s{0,100}({attachment}[^"\\;]{1,2000})\s{0,100}""",
     """"Subject\\{0,20}"{1,20}:[\s\\]{0,2000}"{1,20}\s{0,100}({subject}[^"]{1,2000}?)\s{0,100}\\?"""",
-    """"ClientInfoString\\*"{1,20}:[\s\\]{0,2000}"{1,20}Client\\*=({alert_name}[^"\\;]{1,2000})""",
     """src-account-name":"({account_name}[^"]{1,2000})"""
-  ]
-  DupFields = [ "alert_name->alert_type" 
+  
 }
 ```

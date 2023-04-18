@@ -13,13 +13,14 @@ Name = q-unix-audispd-logon
     """\s({host}[\w\-.]{1,2000})\s{1,100}audispd:""",
     """msg=audit\(({time}\d{1,100})\.\d{1,100}:\d{1,100}\):""",
     """\snode=({host}[\w\.-]{1,2000})\s""",
-    """\sacct="\(?(unknown|({user}.+?))\)?"\s{1,100}\w+=""",
+    """\sacct="\(?(unknown|({user}[^"]{1,2000}?))\)?"\s{1,100}\w+=""",
     """\shostname=(\?|({src_host}[\w\.-]{1,2000}))\s{1,100}\w+=""",
     """\saddr=(\?|({src_ip}[\d\.:a-fA-F]{1,2000}))\s{1,100}\w+=""",
-    """\sterminal=(\?|({logon_type_text}.+?))\s{1,100}\w+=""",
-    """\sexe="({auth_process}.+?)"\s{1,100}\w+=""",
+    """\sterminal=(\?|({logon_type_text}[^=]{1,2000}?))\s{1,100}\w+=""",
+    """\sexe="({auth_process}[^"]{1,2000}?)"\s{1,100}\w+=""",
+    """\sgrantors=({auth_process}[^=]{1,2000}?)\s{1,100}\w+=""",
     """\stype=({audispd_type}USER_\S+)\s{1,100}\w+=""",
-    """\sres=({outcome}.+?)('\s{0,100}$|'?\s{1,100}\w+=)""",
+    """\sres=({outcome}[^\(\)]{1,2000}?)('\s{0,100}$|'?\s{1,100}\w+=)""",
     """({event_code}ssh)"""
   ]
   DupFields=[ "host->dest_host" ]

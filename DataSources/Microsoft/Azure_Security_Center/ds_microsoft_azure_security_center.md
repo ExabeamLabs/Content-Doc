@@ -4,7 +4,7 @@ Product: Azure Security Center
 ------------------------------
 | Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
 |:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  114  |   48   |         9          |      4      |    4    |
+|  116  |   48   |         9          |      4      |    4    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |

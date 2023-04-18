@@ -4,7 +4,7 @@ Product: Sophos Endpoint Protection
 -----------------------------------
 | Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
 |:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  148  |   60   |         15         |      9      |    9    |
+|  150  |   60   |         15         |      9      |    9    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |

@@ -20,7 +20,6 @@ Name = s-microsoft-dhcp
     """"{1,20}ephemeral_id\\"{1,20}:\\"{1,20}({ephemeral_id}[^\\"]{1,2000})""",
     """<Identifier>({host}[^<]{1,2000})<\/"""
   ]
-  DupFields = [ "dest_host->user" ]
 
 
 }

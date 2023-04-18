@@ -12,6 +12,7 @@ Name = cef-mimecast-dlp-email
     """"acc":"({host}[^",]{1,2000})"""",
     """"datetime":"({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d[+-]\d{1,100})"""",
     """"Act":"({action}[^"]{1,2000})""",
+    """request=({outcome}\S{1,2000})\s""",
     """"Rcpt":"({recipients}({recipient}[^\s@;,"]{1,2000}@[^\s@;,"]{1,2000})[^"]{0,2000})"""",
     """"Subject":"(|({subject}[^"]{1,2000}?))\s{0,100}"""",
     """"Dir":"({direction}[^"]{1,2000}?)"""",

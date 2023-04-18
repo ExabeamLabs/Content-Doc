@@ -4,12 +4,12 @@ Product: Reveal(x)
 ------------------
 | Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
 |:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  53   |   21   |         9          |      3      |    3    |
+|  55   |   21   |         9          |      3      |    3    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |
 | [Compromised Credentials](../../../UseCases/uc_compromised_credentials.md) |  network-alert<br> ↳[extrahop-network-perf](Ps/pC_extrahopnetworkperf.md)<br><br> security-alert<br> ↳[extrahop-network-sec](Ps/pC_extrahopnetworksec.md)<br> ↳[cef-extrahop-network-sec](Ps/pC_cefextrahopnetworksec.md)<br>    | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>T1078 - Valid Accounts<br>T1133 - External Remote Services<br>T1190 - Exploit Public Fasing Application<br> | [<ul><li>43 Rules</li></ul><ul><li>19 Models</li></ul>](RM/r_m_extrahop_reveal(x)_Compromised_Credentials.md) |
-|        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  security-alert<br> ↳[extrahop-network-sec](Ps/pC_extrahopnetworksec.md)<br> ↳[cef-extrahop-network-sec](Ps/pC_cefextrahopnetworksec.md)<br>    | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>    | [<ul><li>2 Rules</li></ul>](RM/r_m_extrahop_reveal(x)_Lateral_Movement.md)    |
+|        [Lateral Movement](../../../UseCases/uc_lateral_movement.md)        |  security-alert<br> ↳[extrahop-network-sec](Ps/pC_extrahopnetworksec.md)<br> ↳[cef-extrahop-network-sec](Ps/pC_cefextrahopnetworksec.md)<br>    | T1027.005 - Obfuscated Files or Information: Indicator Removal from Tools<br>    | [<ul><li>4 Rules</li></ul>](RM/r_m_extrahop_reveal(x)_Lateral_Movement.md)    |
 |    [Malware](../../../UseCases/uc_malware.md)    |  dns-query<br> ↳[extrahop-dns-query](Ps/pC_extrahopdnsquery.md)<br><br> network-alert<br> ↳[extrahop-network-perf](Ps/pC_extrahopnetworkperf.md)<br><br> security-alert<br> ↳[extrahop-network-sec](Ps/pC_extrahopnetworksec.md)<br> ↳[cef-extrahop-network-sec](Ps/pC_cefextrahopnetworksec.md)<br> | T1071 - Application Layer Protocol<br>T1568.002 - Dynamic Resolution: Domain Generation Algorithms<br>T1583.001 - T1583.001<br>TA0002 - TA0002<br>    | [<ul><li>7 Rules</li></ul><ul><li>2 Models</li></ul>](RM/r_m_extrahop_reveal(x)_Malware.md)    |
 |     [Privileged Activity](../../../UseCases/uc_privileged_activity.md)     |  security-alert<br> ↳[extrahop-network-sec](Ps/pC_extrahopnetworksec.md)<br> ↳[cef-extrahop-network-sec](Ps/pC_cefextrahopnetworksec.md)<br>    | T1068 - Exploitation for Privilege Escalation<br>    | [<ul><li>1 Rules</li></ul>](RM/r_m_extrahop_reveal(x)_Privileged_Activity.md)    |
 

@@ -17,8 +17,7 @@ Name = windows-xml-powershell-process-created-2
     """<Security UserID='({user_sid}[\w\-]{1,2000})'/>""",
     """Context[^@]{1,2000}?User\s{0,100}=\s{0,100}(({domain}[^=]{1,2000}?)[\\\/]{1,2000})?(SYSTEM|({user}[^=\/\\]{1,2000}?))\s{0,100}Connected User =""",
     """Context[^@]{1,2000}?Host Application\s{0,100}=\s{0,100}({command_line}.+?)\s{0,100}Engine Version =""",
-    """Context[^@]{1,2000}?Host Application\s{0,100}=\s{0,100}({process}(({directory}[^\;=]{1,2000})[\\\/]{1,2000})?({process_name}[^\s\\\/=]{1,2000}?))\s{1,100}""",
-
+    """Context[^@]{1,2000}?Host Application\s{0,100}=\s{0,100}({command_line}(({directory}[^\;=\s]{1,2000})[\\\/]{1,2000})?({process_name}[^\s]{1,2000})[^\n]{1,2000}?)\s{1,100}Engine Version =""", 
     """Context[^@]{1,2000}?Command Type\s{0,100}=\s{0,100}(|({command_type}[^=]{1,2000}?))\s{0,100}Script Name =""",
     """Context[^@]{1,2000}?Command Name\s{0,100}=\s{0,100}(|({command_name}[^=]{1,2000}?))\s{0,100}Command Type =""",
     """Context[^@]{1,2000}?Script Name\s{0,100}=\s{1,100}({script_name}\S[^=]{1,2000}?)\s{1,100}Command Path =""",

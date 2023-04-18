@@ -23,6 +23,7 @@ Name = xml-powershell-4104
     """({event_code}4104)""",
     """({event_name}Creating Scriptblock text)""",
     """({process_name}PowerShell)""",
+    """<Data Name ='ScriptBlockText'>\s{0,10}({scriptblock_text}[^<]+?)\s{0,10}<\/Data>""",
     """"ScriptBlockText":"({scriptblock_text}[^"]{1,2000}?)\s{0,20}""""
   ]
   DupFields = [ "host->dest_host" ]

@@ -11,7 +11,7 @@ Name = cef-aws-guardduty
   Fields = [
     """exabeam_host=({host}[\w.\-]{1,2000})""",
     """\s({time}\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\dZ)\s""",
-    """\ssrc=({src_ip}[A-Fa-f\d:.]{1,2000})""",
+    """\ssrc=({src_ip}[A-Fa-f\d:.]{1,2000}?)\s""",
     """\sdst=({dest_ip}[A-Fa-f\d:.]{1,2000})""",
     """"privateIpAddress":"({dest_ip}[A-Fa-f\d:.]{1,2000})""",
     """\srequestClientApplication=({app}\S{1,2000})""",
@@ -26,7 +26,7 @@ Name = cef-aws-guardduty
     #"""\sext_service_action_networkConnectionAction_localPortDetails_port=({dest_port}\d{1,100})""",
     """"service".*?"action".*?"networkConnectionAction".*?"localPortDetails".*?"port":({dest_port}\d+)"""
     #"""\sext_service_action_networkConnectionAction_remotePortDetails_port=({src_port}\d{1,100})""",
-    """"service".*?"action".*?"networkConnectionAction".*?"remotePortDetails".*?"port":"({src_port}\d{1,100})"""", 
+    """"service".*?"action".*?"networkConnectionAction".*?"remotePortDetails".*?"port":"({src_port}\d{1,100})"""",
     #"""\sext_service_action_networkConnectionAction_({outcome}blocked=(false|true))""",
     """service".*?"action".*?"networkConnectionAction.*?"blocked":({action_blocked}false|true)""",
     """\smsg=({additional_info}.+?)(\s{1,100}\w+=|\s{0,100}$)""",

@@ -23,7 +23,6 @@ Name = sourcefire-network-alert
     """"transportProtocol":\s{0,100}"({protocol}[^"]{1,2000})""",
     """"sourceIpAddress":\s{0,100}"({src_ip}[A-Fa-f:\d.]{1,2000})""",
     """"destinationIpAddress":\s{0,100}"({dest_ip}[A-Fa-f:\d.]{1,2000})""",
-    """({outcome}"blocked":\s{0,100}"Yes"),""",
     """"applicationProtocol":\s{0,100}"(Unknown|({app_protocol}[^"]{1,2000}))""",
     """"classificationDescription":\s{0,100}"({alert_description}[^"]{1,2000})""",
     """"clientApplication":\s{0,100}"(Unknown|({process_name}[^"]{1,2000}))""",

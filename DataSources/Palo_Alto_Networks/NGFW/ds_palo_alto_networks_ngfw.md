@@ -4,7 +4,7 @@ Product: NGFW
 -------------
 | Rules | Models | MITRE ATT&CK® TTPs | Event Types | Parsers |
 |:-----:|:------:|:------------------:|:-----------:|:-------:|
-|  346  |  154   |         38         |     13      |   13    |
+|  348  |  154   |         38         |     13      |   13    |
 
 |    Use-Case    | Event Types/Parsers    | MITRE ATT&CK® TTP    | Content    |
 |:----:| ---- | ---- | ---- |
