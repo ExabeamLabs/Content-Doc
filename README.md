@@ -1,5 +1,5 @@
 
-![Exabeam](https://user-images.githubusercontent.com/57500390/233128529-af6f7e59-a259-4925-bcb4-4ebf8c6300a6.svg)
+![Exabeam](banner.png)
 
 
 # Exabeam Content Library
