@@ -1,5 +1,7 @@
 
-![Exabeam](banner.png)
+![Exabeam]![Exabeam-logo-emblem-green-2023](https://user-images.githubusercontent.com/57500390/233128512-733e5eb4-bf96-4750-b0a4-9228ed38f027.svg)
+![Exabeam-logo-primary-dark-2023](https://user-images.githubusercontent.com/57500390/233128529-af6f7e59-a259-4925-bcb4-4ebf8c6300a6.svg)
+
 
 # Exabeam Content Library
 Welcome to the Exabeam Content Library.
