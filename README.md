@@ -1,4 +1,4 @@
-![Exabeam](banner.png)
+![Exabeam](https://user-images.githubusercontent.com/57500390/233129963-f6395c81-5c85-458c-b526-368de7b82aae.svg)
 
 # Exabeam Content Library - AA i54 (c2006.4)
 Welcome to the Exabeam Content Library.
