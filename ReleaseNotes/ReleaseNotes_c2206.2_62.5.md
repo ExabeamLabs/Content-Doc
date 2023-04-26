@@ -2449,84 +2449,84 @@ Rules
 There are no updated rules in this release.
 
 #### Deprecated Rules
-* A-ALERT-Log4j &#8211; com.exabeam.releasenotesgeneratortool.UseCase@1dfe2924
+* A-ALERT-Log4j &#8211; Alert associated with an exploitation or post exploitation as seen with Log4j Vulnerability was detected.
 
-* A-APP-Log4j-String &#8211; com.exabeam.releasenotesgeneratortool.UseCase@7fac631b
+* A-APP-Log4j-String &#8211; There was an attempt via app activity to exploit the CVE-2021-44228 vulnerability on this asset.
 
-* A-App-Log4j-String-2 &#8211; com.exabeam.releasenotesgeneratortool.UseCase@3dd4520b
+* A-App-Log4j-String-2 &#8211; There was an attempt via app activity to exploit the CVE-2021-44228 vulnerability using known keywords on the asset.
 
-* A-EPA-HP-Commands-A &#8211; com.exabeam.releasenotesgeneratortool.UseCase@47ef968d
+* A-EPA-HP-Commands-A &#8211; Abnormal execution of process on asset and the command of the process is curl/wget
 
-* A-EPA-HP-Commands-F &#8211; com.exabeam.releasenotesgeneratortool.UseCase@5ae63ade
+* A-EPA-HP-Commands-F &#8211; First execution of process on asset and the command of the process is curl/wget
 
-* A-EPA-HP-CrontabMod-A &#8211; com.exabeam.releasenotesgeneratortool.UseCase@6e0e048a
+* A-EPA-HP-CrontabMod-A &#8211; Abnormal execution of process on asset and the command of the process is crontab modification
 
-* A-EPA-HP-CrontabMod-F &#8211; com.exabeam.releasenotesgeneratortool.UseCase@5b87ed94
+* A-EPA-HP-CrontabMod-F &#8211; First execution of process on asset and the command of the process is crontab modification
 
-* A-EPA-Log4j-String-Command &#8211; com.exabeam.releasenotesgeneratortool.UseCase@731a74c
+* A-EPA-Log4j-String-Command &#8211; There was an attempt via process creation to exploit the CVE-2021-44228 vulnerability on this asset.
 
-* A-EPA-Log4j-String-Command-2 &#8211; com.exabeam.releasenotesgeneratortool.UseCase@1f28c152
+* A-EPA-Log4j-String-Command-2 &#8211; There was an attempt via process creation to exploit the CVE-2021-44228 vulnerability using known keywords on this asset.
 
-* A-FA-StartupFolder-OH-A &#8211; com.exabeam.releasenotesgeneratortool.UseCase@2758fe70
+* A-FA-StartupFolder-OH-A &#8211; Abnormal addition of a program to the startup folder on the asset
 
-* A-FA-StartupFolder-OH-F &#8211; com.exabeam.releasenotesgeneratortool.UseCase@1f36e637
+* A-FA-StartupFolder-OH-F &#8211; A program was added to the startup folder for the first time on this asset
 
-* A-KnownFirewallDisable-Log4j &#8211; com.exabeam.releasenotesgeneratortool.UseCase@578486a3
+* A-KnownFirewallDisable-Log4j &#8211; FireWall disable arguments via command line were detected on this asset.
 
-* A-Log4j-Vul-Alert &#8211; com.exabeam.releasenotesgeneratortool.UseCase@23e028a9
+* A-Log4j-Vul-Alert &#8211; Alert for the CVE-2021-44228 vulnerability on the asset.
 
-* A-NET-Log4j-IP &#8211; com.exabeam.releasenotesgeneratortool.UseCase@67b92f0a
+* A-NET-Log4j-IP &#8211; Asset was accessed by an external IP associated with Log4j exploit
 
-* A-NETF-Log4j-IP &#8211; com.exabeam.releasenotesgeneratortool.UseCase@369f73a2
+* A-NETF-Log4j-IP &#8211; There was a failed attempt to access this asset by an external IP associated with Log4j exploit
 
-* A-RA-LogonRunKeys-OH-A &#8211; com.exabeam.releasenotesgeneratortool.UseCase@6ddf90b0
+* A-RA-LogonRunKeys-OH-A &#8211; Abnormal addition of a program to the registry run key on this asset
 
-* A-RA-LogonRunKeys-OH-F &#8211; com.exabeam.releasenotesgeneratortool.UseCase@3b0143d3
+* A-RA-LogonRunKeys-OH-F &#8211; A program was added to the registry run key on this asset at the first time
 
-* A-WEB-Base64CommandUserAgent &#8211; com.exabeam.releasenotesgeneratortool.UseCase@6325a3ee
+* A-WEB-Base64CommandUserAgent &#8211; User agent with encoded commands was detected from this web activity.
 
-* A-WEB-Log4j-String &#8211; com.exabeam.releasenotesgeneratortool.UseCase@610694f1
+* A-WEB-Log4j-String &#8211; There was an attempt via web activity to exploit the CVE-2021-44228 vulnerability on this asset.
 
-* A-WEB-Log4j-String-2 &#8211; com.exabeam.releasenotesgeneratortool.UseCase@35d176f7
+* A-WEB-Log4j-String-2 &#8211; There was an attempt via web activity to exploit the CVE-2021-44228 vulnerability using known keywords on the asset.
 
-* A-WEB-Mime-Types-Org-F &#8211; com.exabeam.releasenotesgeneratortool.UseCase@57536d79
+* A-WEB-Mime-Types-Org-F &#8211; First occurence of this mime type on this asset for organization
 
-* APP-Log4j-String &#8211; com.exabeam.releasenotesgeneratortool.UseCase@5bc79255
+* APP-Log4j-String &#8211; There was an attempt via app activity to exploit the CVE-2021-44228 vulnerability.
 
-* APP-Log4j-String-2 &#8211; com.exabeam.releasenotesgeneratortool.UseCase@3a5ed7a6
+* APP-Log4j-String-2 &#8211; There was an attempt via app activity to exploit the CVE-2021-44228 vulnerability using known keywords.
 
-* DLP-Log4j-String &#8211; com.exabeam.releasenotesgeneratortool.UseCase@4b4523f8
+* DLP-Log4j-String &#8211; There was an attempt via email message to exploit the CVE-2021-44228 vulnerability.
 
-* DLP-Log4j-String-2 &#8211; com.exabeam.releasenotesgeneratortool.UseCase@887af79
+* DLP-Log4j-String-2 &#8211; There was an attempt via email message to exploit the CVE-2021-44228 vulnerability using known keywords.
 
-* EPA-HP-Commands-F &#8211; com.exabeam.releasenotesgeneratortool.UseCase@7d907bac
+* EPA-HP-Commands-F &#8211; First execution of process on host and the command of the process is curl/wget
 
-* EPA-Log4j-String-Command &#8211; com.exabeam.releasenotesgeneratortool.UseCase@1d16f93d
+* EPA-Log4j-String-Command &#8211; There was an attempt via process creation to exploit the CVE-2021-44228 vulnerability by the user.
 
-* EPA-Log4j-String-Command-2 &#8211; com.exabeam.releasenotesgeneratortool.UseCase@5a8e6209
+* EPA-Log4j-String-Command-2 &#8211; There was an attempt via process creation to exploit the CVE-2021-44228 vulnerability using known keywords.
 
-* EPA-UP-Commands-A &#8211; com.exabeam.releasenotesgeneratortool.UseCase@2b552920
+* EPA-UP-Commands-A &#8211; Abnormal process execution containing wget or curl commands for the user.
 
-* EPA-UP-Commands-F &#8211; com.exabeam.releasenotesgeneratortool.UseCase@3701eaf6
+* EPA-UP-Commands-F &#8211; First execution of this process for user and the command of the process is curl/wget
 
-* EPA-UP-CrontabMod-A &#8211; com.exabeam.releasenotesgeneratortool.UseCase@2b9627bc
+* EPA-UP-CrontabMod-A &#8211; Abnormal execution of of process which contains commands for crontab modification for user.
 
-* EPA-UP-CrontabMod-F &#8211; com.exabeam.releasenotesgeneratortool.UseCase@65e2dbf3
+* EPA-UP-CrontabMod-F &#8211; First execution of process which contains commands for crontab modification for user.
 
-* FA-StartupFolder-OU-A &#8211; com.exabeam.releasenotesgeneratortool.UseCase@61f8bee4
+* FA-StartupFolder-OU-A &#8211; Abnormal program addition to the startup folder by the user.
 
-* FA-StartupFolder-OU-F &#8211; com.exabeam.releasenotesgeneratortool.UseCase@7b49cea0
+* FA-StartupFolder-OU-F &#8211; A program was added to the startup folder for the first time by the user
 
-* Log4j-Vul-Alert &#8211; com.exabeam.releasenotesgeneratortool.UseCase@627551fb
+* Log4j-Vul-Alert &#8211; Alert for the CVE-2021-44228 vulnerability
 
-* RA-LogonRunKeys-OU-A &#8211; com.exabeam.releasenotesgeneratortool.UseCase@5c5a1b69
+* RA-LogonRunKeys-OU-A &#8211; Abnormal addition of a program to the registry run key by the user
 
-* RA-LogonRunKeys-OU-F &#8211; com.exabeam.releasenotesgeneratortool.UseCase@43814d18
+* RA-LogonRunKeys-OU-F &#8211; A program was added to the registry run key for the first time by the user
 
-* WEB-Log4j-String &#8211; com.exabeam.releasenotesgeneratortool.UseCase@7791a895
+* WEB-Log4j-String &#8211; There was an attempt via web activity to exploit the CVE-2021-44228 vulnerability.
 
-* WEB-Log4j-String-2 &#8211; com.exabeam.releasenotesgeneratortool.UseCase@4f970963
+* WEB-Log4j-String-2 &#8211; There was an attempt via web activity to exploit the CVE-2021-44228 vulnerability using known keywords.
 
-* WEB-Mime-Types-Org-F &#8211; com.exabeam.releasenotesgeneratortool.UseCase@551aa95a
+* WEB-Mime-Types-Org-F &#8211; First occurence of this mime type for organization
 
 
