@@ -9,7 +9,7 @@ The Content Library is an online repository of knowledge and content that organi
 
 This is a programmatic generation of content documentation from Exabeam's content repository. As new content is committed to the content repository, the Content Library is automatically updated to provide fast and easy access &ast;.
 
-&ast; If you are using Advanced Analytics i63 or later, see the [Content Library based on the Common Information Model](https://github.com/ExabeamLabs/Content-Library-CIM2).
+&ast; If you are using Advanced Analytics i63 or later, see the [New-Scale Content Library](https://github.com/ExabeamLabs/Content-Library-CIM2).
 
 |Branch|Version|Content|MITRE ATT&CK®|Release Note|
 |--|--|--|--|--|
