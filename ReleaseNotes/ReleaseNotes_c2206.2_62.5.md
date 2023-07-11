@@ -1,7 +1,7 @@
- Security Content c2206.2_62.5 Release Notes
+ Security Content c2206.2_62.5 (i62.5) Release Notes
 ============================================
 
-These Release Notes document security content updates from content package c2206.2 to c2206.2_62.5.
+These Release Notes document security content updates from content package c2206.2 (i62.4) to c2206.2_62.5 (i62.5).
 
 The security content updates listed below include changes to the following areas:
 
