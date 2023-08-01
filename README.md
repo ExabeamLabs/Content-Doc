@@ -3,7 +3,7 @@
 
 
 # Exabeam Content Library
-This location for the Exabeam Content Library has been deprecated. Updated security content is now available at the following new location: https://github.com/ExabeamLabs/Content-Library-CIM1.
+⚠ This location for the Exabeam Content Library has been deprecated. Updated security content is now available at the following new location: https://github.com/ExabeamLabs/Content-Library-CIM1.
 Be sure to bookmark the new site.
 #
 
