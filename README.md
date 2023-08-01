@@ -3,6 +3,10 @@
 
 
 # Exabeam Content Library
+This location for the Exabeam Content Library has been deprecated. Updated security content is now available at the following new location: https://github.com/ExabeamLabs/Content-Library-CIM1.
+Be sure to bookmark the new site.
+#
+
 Welcome to the Exabeam Content Library.
 
 The Content Library is an online repository of knowledge and content that organizations can use to learn about available log source integrations and security use cases.
